@@ -26,10 +26,10 @@ respelling. the ascent is fragmented to occur a couple of divisions at a time
 throughout [E] with rested divisions appearing between occurrences.
 
 there are some really interesting alternations to be had between layers of
-"glissando thicket" (5) and "pf+x points" (7). at the intersection of (5) and (7)
-are the single struck pf attacks played normale, muted or as harmonics in each
-material. (5) and (7) effect different pf rhythms. (5) and (7) effect possibly
-very similar pf color. possibly pf not present in (5) in [E].
+"glissando thicket" (5) and "pf+x points" (7). at the intersection of (5) and
+(7) are the single struck pf attacks played normale, muted or as harmonics in
+each material. (5) and (7) effect different pf rhythms. (5) and (7) effect
+possibly very similar pf color. possibly pf not present in (5) in [E].
 
 how can the alternation between "sponged bass drum" (5.4) and "xylophone
 points" (7.1) work? freely when the bass drum and the xylophone are near each

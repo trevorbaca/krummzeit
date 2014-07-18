@@ -1,0 +1,20 @@
+MATERIAL DESCRIPTION ABBREVIATIONS
+
+    δ   duration
+    Δ   density
+    ε   event
+    E   ensemble
+    Ξ   piece
+    K   articulation
+    Λ   player
+    λ   layer
+    MM  metric modulation
+    μ   material
+    N   dynamic
+    R   register
+    ρ   rhythm
+    T   tempo
+    Te  effective tempo
+    Tw  written tempo
+    φ   section
+    χ   color

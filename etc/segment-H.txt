@@ -11,12 +11,13 @@ leads into "magic oboe melodrama" (2) at the start of [H]. this is the last
 occurrence of "magic oboe melodrama" (2) in the piece. so it may be that the
 beginning of [H] is where (2) is expressed most forcefully.
 
-    [H](2)
+    [H(2)]
     2.1 "oboe block tones" 
-    2.2 "upper register harpsichord counterpoint"
-    2.3 "viola homorhythm accompaniment"
     2.4 "myrkr bcl subtone"
+    2.2 "upper register harpsichord counterpoint"
     2.5 "attackless tam-tam"
+    --
+    2.3 "viola block tones accompaniment"
     2.6 "vc scratch pedal"
 
     (12°)
@@ -30,53 +31,53 @@ beginning of [H] is where (2) is expressed most forcefully.
 
 how do (2) and (12) interact? it's possible that the version of (12) present in
 [H] is a greatly stripped down version of (12). the characteristic layer of
-[H](12) is the harpsichord writing. [H](2) and [H](12) both include a layer of
-harpsichord writing. this suggests that harpsichord writing of both [H](2) and
-[H](12) is fifth octave. the [H](2) / [H](12) interaction may progress by
+[H(12)] is the harpsichord writing. [H(2)] and [H(12)] both include a layer of
+harpsichord writing. this suggests that harpsichord writing of both [H(2)] and
+[H(12)] is fifth octave. the [H(2)] / [H(12)] interaction may progress by
 "oboe block tones" (2.1), "viola homorhythm accompaniment" (2.3) falling out
 while "myrkr bcl subtone" (2.4), "attackless tam-tam" (2.5), "vc scratch
 pedal" (2.6) continue to act as backdrop for the appearance of "fifth octave
 harpsichord" (12.1).
 
-[H](12) appears in stages (a), (b), (c):
+[H(12)] appears in stages (a), (b), (c):
 
-    [H](12)(a)
+    [H(12)](a)
     12.1 "fifth octave harpsichord"
     12.1 "fifth octave violin"
 
-    [H](12)(b)
+    [H(12)](b)
     12.1 "fifth octave harpsichord"
     12.1 "fifth octave violin"
     12.1 "fifth octave Eb clarinet"
 
-    [H](12)(c)
+    [H(12)](c)
     12.1 "fifth octave harpsichord"
     12.1 "fifth octave violin"
     12.1 "fifth octave Eb clarinet"
     12.1 "fifth octave oboe"
 
-this means that [H](2) recedes in stages (a), (b), (c):
+this means that [H(2)] recedes in stages (a), (b), (c):
 
-    [H](2)(a)
+    [H(2)](a)
     2.1 "oboe block tones" 
+    2.4 "myrkr bcl subtone"
     2.2 "upper register harpsichord counterpoint"
+    2.5 "attackless tam-tam"
     2.3 "viola homorhythm accompaniment"
+    2.6 "vc scratch pedal"
+
+    [H(2)](b)
     2.4 "myrkr bcl subtone"
     2.5 "attackless tam-tam"
     2.6 "vc scratch pedal"
 
-    [H](2)(b)
-    2.4 "myrkr bcl subtone"
-    2.5 "attackless tam-tam"
-    2.6 "vc scratch pedal"
-
-    [H](2)(c)
+    [H(2)](c)
     2.4 "myrkr bcl subtone"
     2.5 "attackless tam-tam"
 
 then:
 
-    [H](12)(d)
+    [H(12)](d)
     12.1 "fifth octave harpsichord"
     12.1 "fifth octave violin"
     12.1 "fifth octave Eb clarinet"
@@ -98,40 +99,40 @@ how do "fifth octave interweave" (12) and "glissando thicket" (5) interact in
     5.3 "vc glissando thicket"
     5.4 "sponged bass drum"
 
-[H](12) / [H](5) navigates between (12°) and (5°).
+[H(12)] / [H(5)] navigates between (12°) and (5°).
 
-    [H](12)(e)
+    [H(12)](e)
     12.1 "fifth octave Eb clarinet"
     12.1 "fifth octave oboe"
     12.2 "slow third octave va polyphony"
     12.2 "slow third octave vc polyphony"
 
-        [H](5)(a)
+        [H(5)](a)
         5.4 "sponged bass drum"
 
-    [H](12)(e)
+    [H(12)](e)
     12.1 "fifth octave Eb clarinet"
     12.1 "fifth octave oboe"
     12.2 "slow third octave va polyphony"
     12.2 "slow third octave vc polyphony"
 
-        [H](5)(b)
+        [H(5)](b)
         5.2 "struck pf attacks"
         5.3 "vn glissando thicket"
         5.4 "sponged bass drum"
 
-    [H](12)(f)
+    [H(12)](f)
     12.2 "slow third octave va polyphony"
     12.2 "slow third octave vc polyphony"
 
-        [H](5)(c)
+        [H(5)](c)
         5.2 "struck pf attacks"
         5.3 "vn glissando thicket"
         5.3 "va glissando thicket"
         5.3 "vc glissando thicket"
         5.4 "sponged bass drum"
 
-[H](5) / [H](14) interaction.
+[H(5)] / [H(14)] interaction.
 
     (14°)
     14.1 "oboe reiteration storm"
@@ -146,22 +147,22 @@ how do "fifth octave interweave" (12) and "glissando thicket" (5) interact in
 
 [I: 11-14] happens after [H]. 
 
-    [H](14)(a)
+    [H(14)](a)
     14.1 "oboe reiteration storm"
     14.1 "clarinet reiteration storm"
 
-        [H](5)(d)
+        [H(5)](d)
         5.3 "vn glissando thicket"
         5.3 "va glissando thicket"
         5.3 "vc glissando thicket"
 
-    [H](14)(b)
+    [H(14)](b)
     14.1 "oboe reiteration storm"
     14.1 "clarinet reiteration storm"
     14.1 "piano reiteration storm"
     14.1 "xylophone reiteration storm"
 
-        [H](5)(d)
+        [H(5)](d)
         5.3 "vn glissando thicket"
         5.3 "va glissando thicket"
         5.3 "vc glissando thicket"
@@ -179,7 +180,7 @@ how do "fifth octave interweave" (12) and "glissando thicket" (5) interact in
 
 so:
 
-    [I](11)(a)
+    [I(11)](a)
     11.1 "harpsichord clusters"
     11.1 "violin tremolo"
     11.1 "viola tremolo"

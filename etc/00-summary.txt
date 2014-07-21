@@ -77,11 +77,11 @@ MATERIALS BY LAYER
     (9°)
     --
     --
-    9.1 "pointillism piano / harpsichord"
-    9.1 "pointillism xylophone"
-    9.1 "pointillism violin pizzicati"
-    9.1 "pointillism viola pizzicati"
-    9.1 "pointillism cello pizzicati"
+    9.1 "pointillist piano / harpsichord"
+    9.1 "pointillist xylophone"
+    9.1 "pointillist violin pizzicati"
+    9.1 "pointillist viola pizzicati"
+    9.1 "pointillist cello pizzicati"
 
     (10°)
     10.1 "ppp snare roll"

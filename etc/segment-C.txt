@@ -1,5 +1,5 @@
 [B(...9)]
-[C(6-7-6-10.2)]
+[C(6-7-6-10-1)]
 [D(9...)]
 
     (9°)
@@ -13,7 +13,6 @@
 
     ====
     ====
-
 
     (6°)
     6.1 "ornamented oboe"
@@ -65,18 +64,20 @@
     (9°)
     --
     --
-    9.1 "pointillism piano / harpsichord"
-    9.1 "pointillism xylophone"
-    9.1 "pointillism violin pizzicati"
-    9.1 "pointillism viola pizzicati"
-    9.1 "pointillism cello pizzicati"
+    9.1 "pointillist piano / harpsichord"
+    9.1 "pointillist xylophone"
+    9.1 "pointillist violin pizzicati"
+    9.1 "pointillist viola pizzicati"
+    9.1 "pointillist cello pizzicati"
 
 materials by segment:
 
     (9) tracks [B], [D], [F], [J]
+    ====
     (6) tracks [A], [C], [C], [F]
     (7) tracks [C], [E], [F]
     (10) tracks [C], [D], [G]
+    ====
     (1) tracks [A], [C], [E]
 
 [B(9)] and [D(9)] bookend [C]. but [D(9)] procedes differently than [B(9)] and

@@ -3,7 +3,7 @@ MATERIALS BY LAYER
     (1°)
     1.1 "modulated oboe"
     1.1 "modulated clarinet"
-    1.1 "clusters piano"
+    1.1 "piano clusters"
     1.1 "fff crotales"
     1.1 "chromatic tremolo violin"
     1.1 "chromatic tremolo viola"
@@ -85,9 +85,9 @@ MATERIALS BY LAYER
 
     (10°)
     10.1 "ppp snare roll"
-    10.1 "unrestrained low R violin"
-    10.1 "unrestrained low R viola"
-    10.1 "unrestrained low R cello"
+    10.2 "unrestrained low R violin"
+    10.2 "unrestrained low R viola"
+    10.2 "unrestrained low R cello"
 
     (11°)
     11.1 "oboe fluttertongue"

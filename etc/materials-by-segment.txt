@@ -9,7 +9,7 @@ MATERIALS BY SEGMENT
     (7)  "piano+xylophone points"       [C], [E], [F]
     (8)  "piano cluster sea storm"      [A], [D], [J]
     (9)  "pointillism"                  [B], [D], [F], [J]
-    (10) "unrestrainedd open strings"   [C], [D], [G]
+    (10) "unrestrained open strings"    [C], [D], [G]
     (11) "harpsichord clusters"         [A], [I], [J]
     (12) "fifth octave interweave"      [B], [G], [H] 
     (13) "grace / sustain lines"        n/a

@@ -78,7 +78,7 @@ it is likely that [J] is a reprieve or fantasy or distraction or
 intensification interposed between successive occurrences of (14) in [I(14)]
 and [K(14)].
 
-materials sequence:
+deployment:
 
     [J]
     11.1 "reiterated oboe multiphonic"
@@ -124,7 +124,6 @@ materials sequence:
     3.5 "on-the-bridge violin"
     3.5 "on-the-bridge viola"
     3.5 "on-the-bridge cello"
-
 
     [J]
     --

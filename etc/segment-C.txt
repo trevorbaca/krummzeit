@@ -2,14 +2,14 @@
 [C(6-7-6-10-1)]
 [D(9...)]
 
-    (9°)
+    [B(9)]
     --
     --
-    9.1 "pointillism piano / harpsichord"
-    9.1 "pointillism xylophone"
-    9.1 "pointillism violin pizzicati"
-    9.1 "pointillism viola pizzicati"
-    9.1 "pointillism cello pizzicati"
+    9.1 "pointillist piano / harpsichord"
+    --
+    9.1 "pointillist violin pizzicati"
+    9.1 "pointillist viola pizzicati"
+    9.1 "pointillist cello pizzicati"
 
     ====
     ====

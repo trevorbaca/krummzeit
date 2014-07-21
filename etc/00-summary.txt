@@ -39,7 +39,7 @@ MATERIALS BY LAYER
     (5°)
     5.1 "inflected chromatic line oboe"
     5.1 "inflected chromatic line clarinet"
-    5.2 "struck attacks piano"
+    5.2 "piano attacks"
     5.4 "sponged bass drum"
     5.3 "glissando thicket violin"
     5.3 "glissando thicket viola"

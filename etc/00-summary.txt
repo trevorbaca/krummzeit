@@ -15,7 +15,7 @@ MATERIALS BY LAYER
     2.2 "upper R harpsichord counterpoint"
     2.5 "attackless tam-tam"
     --
-    2.3 "p block viola"
+    2.3 "quiet block viola"
     2.6 "scratch pedal cello"
 
     (3°)
@@ -93,7 +93,7 @@ MATERIALS BY LAYER
     11.1 "oboe fluttertongue"
     11.1 "clarinet portamenti"
     11.1 "harpsichord clusters"
-    11.1 "ff crotales"
+    11.1 "fff crotales"
     11.1 "violin tremolo"
     11.1 "viola tremolo"
     11.1 "cello tremolo"

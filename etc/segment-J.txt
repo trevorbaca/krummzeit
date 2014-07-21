@@ -215,4 +215,4 @@ deployment:
     9.1 "pointillism viola pizzicati" (magic chord T1)
     9.1 "pointillism cello pizzicati" (magic chord T1)
 
-attaca [I(14-4)].
+attaca [K(14-4)].

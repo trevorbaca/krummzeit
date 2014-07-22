@@ -1,24 +1,15 @@
-[H: 2-12-5-14]
+[G(...10)]
+[H(2-12-5-14)]
+[I(11...)]
 
-    "magic oboe melodrama" (2)
-    "fifth octave interweave" (12)
-    "glissando thicket" (5)
-    "reiteration storm" (14)
-
-what leads into "magic oboe melodrama" (2) at the beginning of [H]? [G: 12-10]
-ends with "unrestrained open strings" (10). so "unrestrained open strings" (10)
-leads into "magic oboe melodrama" (2) at the start of [H]. this is the last
-occurrence of "magic oboe melodrama" (2) in the piece. so it may be that the
-beginning of [H] is where (2) is expressed most forcefully.
-
-    [H]
-    2.1 "oboe block tones" 
+    (2°)
+    2.1 "fff block oboe"
     2.4 "myrkr bcl subtone"
-    2.2 "upper register harpsichord counterpoint"
+    2.2 "upper R harpsichord counterpoint"
     2.5 "attackless tam-tam"
     --
-    2.3 "viola block tones accompaniment"
-    2.6 "vc scratch pedal"
+    2.3 "quiet block viola"
+    2.6 "scratch pedal cello"
 
     (12°)
     12.1 "fifth octave harpsichord"
@@ -29,110 +20,14 @@ beginning of [H] is where (2) is expressed most forcefully.
     12.2 "slow third octave vc polyphony"
     12.3 "sponged bass drum"
 
-how do (2) and (12) interact? it's possible that the version of (12) present in
-[H] is a greatly stripped down version of (12). the characteristic layer of
-[H(12)] is the harpsichord writing. [H(2)] and [H(12)] both include a layer of
-harpsichord writing. this suggests that harpsichord writing of both [H(2)] and
-[H(12)] is fifth octave. the [H(2)] / [H(12)] interaction may progress by
-"oboe block tones" (2.1), "viola homorhythm accompaniment" (2.3) falling out
-while "myrkr bcl subtone" (2.4), "attackless tam-tam" (2.5), "vc scratch
-pedal" (2.6) continue to act as backdrop for the appearance of "fifth octave
-harpsichord" (12.1).
-
-[H(12)] appears in stages:
-
-    [H]
-    12.1 "fifth octave harpsichord"
-    12.1 "fifth octave violin"
-
-    [H]
-    12.1 "fifth octave harpsichord"
-    12.1 "fifth octave violin"
-    12.1 "fifth octave Eb clarinet"
-
-    [H]
-    12.1 "fifth octave harpsichord"
-    12.1 "fifth octave violin"
-    12.1 "fifth octave Eb clarinet"
-    12.1 "fifth octave oboe"
-
-this means that [H(2)] recedes in stages:
-
-    [H]
-    2.1 "oboe block tones" 
-    2.4 "myrkr bcl subtone"
-    2.2 "upper register harpsichord counterpoint"
-    2.5 "attackless tam-tam"
-    2.3 "viola homorhythm accompaniment"
-    2.6 "vc scratch pedal"
-
-    [H]
-    2.4 "myrkr bcl subtone"
-    2.5 "attackless tam-tam"
-    2.6 "vc scratch pedal"
-
-    [H]
-    2.4 "myrkr bcl subtone"
-    2.5 "attackless tam-tam"
-
-then:
-
-    [H]
-    12.1 "fifth octave harpsichord"
-    12.1 "fifth octave violin"
-    12.1 "fifth octave Eb clarinet"
-    12.1 "fifth octave oboe"
-    12.2 "slow third octave va polyphony"
-    12.2 "slow third octave vc polyphony"
-
-"sponged bass drum" (12.3) probably tacet in [H].
-
-how do "fifth octave interweave" (12) and "glissando thicket" (5) interact in
-[H]? here's the maximal form of (5):
-
     (5°)
-    5.1 "oboe inflected chromatic line"
-    5.1 "clarinet inflected chromatic line"
-    5.2 "struck pf attacks"
-    5.3 "vn glissando thicket"
-    5.3 "va glissando thicket"
-    5.3 "vc glissando thicket"
+    5.1 "inflected chromatic line oboe"
+    5.1 "inflected chromatic line clarinet"
+    5.2 "piano attacks"
     5.4 "sponged bass drum"
-
-[H(12)] / [H(5)] navigates between (12°) and (5°).
-
-    [H]
-    12.1 "fifth octave Eb clarinet"
-    12.1 "fifth octave oboe"
-    12.2 "slow third octave va polyphony"
-    12.2 "slow third octave vc polyphony"
-
-    [H]
-    5.4 "sponged bass drum"
-
-    [H]
-    12.1 "fifth octave Eb clarinet"
-    12.1 "fifth octave oboe"
-    12.2 "slow third octave va polyphony"
-    12.2 "slow third octave vc polyphony"
-
-    [H]
-    5.2 "struck pf attacks"
-    5.3 "vn glissando thicket"
-    5.4 "sponged bass drum"
-
-    [H]
-    12.2 "slow third octave va polyphony"
-    12.2 "slow third octave vc polyphony"
-
-    [H]
-    5.2 "struck pf attacks"
-    5.3 "vn glissando thicket"
-    5.3 "va glissando thicket"
-    5.3 "vc glissando thicket"
-    5.4 "sponged bass drum"
-
-[H(5)] / [H(14)] interaction.
+    5.3 "glissando thicket violin"
+    5.3 "glissando thicket viola"
+    5.3 "glissando thicket cello"
 
     (14°)
     14.1 "oboe reiteration storm"
@@ -143,34 +38,201 @@ how do "fifth octave interweave" (12) and "glissando thicket" (5) interact in
     14.1 "viola reiteration storm"
     14.1 "cello reiteration storm"
 
-(14) tracks [A], [H], [I], [K].
+materials by segment:
 
-[I(11-14)] happens after [H]. 
+    (2) tracks [A], [D], [H]
+    (12) tracks [B], [G], [H]
+    (5) tracks [E], [F], [H]
+    (14) tracks [A], [H], [I], [K]
 
-    [H]
-    14.1 "oboe reiteration storm"
-    14.1 "clarinet reiteration storm"
+[H(2)] is the last and most forceful appearance of (2).
 
-    [H]
-    5.3 "vn glissando thicket"
-    5.3 "va glissando thicket"
-    5.3 "vc glissando thicket"
+[H(12)] is the last appearance of (12).
 
-    [H]
-    14.1 "oboe reiteration storm"
-    14.1 "clarinet reiteration storm"
-    14.1 "piano reiteration storm"
-    14.1 "xylophone reiteration storm"
+[H(5)] is the last appearance of (5).
+
+[H(14)] is the first real appearance of (14).
+
+deployment:
 
     [H]
-    5.3 "vn glissando thicket"
-    5.3 "va glissando thicket"
-    5.3 "vc glissando thicket"
+    2.1 "oboe block tones"
+    2.4 "myrkr bcl subtone"
+    --
+    2.5 "attackless tam-tam"
+    --
+    2.3 "viola homorhythm accompaniment"
+    --
 
     [H]
-    11.1 "harpsichord clusters"
+    2.1 "oboe block tones"
+    2.4 "myrkr bcl subtone"
+    --
+    2.5 "attackless tam-tam"
+    --
+    2.3 "viola homorhythm accompaniment"
+    2.1 "cello scratch pedal"
+
+    [H]
+    2.1 "oboe block tones"
+    --
+    --
+    --
+    --
+    2.3 "viola homorhythm accompaniment"
+    2.1 "cello scratch pedal"
+
+    [H]
+    2.1 "oboe block tones"
+    2.4 "myrkr bcl subtone"
+    --
+    2.5 "attackless tam-tam"
+    --
+    2.3 "viola homorhythm accompaniment"
+    2.1 "cello scratch pedal"
+
+    [H]
+    2.1 "oboe block tones"
+    2.4 "myrkr bcl subtone"
+    12.1 "fifth octave harpsichord"
+    2.5 "attackless tam-tam"
+    12.1 "fifth octave violin"
+    2.3 "viola homorhythm accompaniment"
+    2.1 "cello scratch pedal"
+
+    [H]
+    2.1 "oboe block tones"
+    --
+    12.1 "fifth octave harpsichord"
+    2.5 "attackless tam-tam"
+    12.1 "fifth octave violin"
+    2.3 "viola homorhythm accompaniment"
+    2.1 "cello scratch pedal"
+
+    [H]
+    2.1 "oboe block tones"
+    12.1 "fifth octave Eb clarinet"
+    12.1 "fifth octave harpsichord"
+    2.5 "attackless tam-tam"
+    12.1 "fifth octave violin"
+    2.3 "viola homorhythm accompaniment"
+    2.1 "cello scratch pedal"
+
+    [H]
+    --
+    12.1 "fifth octave Eb clarinet"
+    12.1 "fifth octave harpsichord"
+    --
+    12.1 "fifth octave violin"
+    --
+    2.1 "cello scratch pedal"
+
+    [H]
+    12.1 "fifth octave oboe" 
+    12.1 "fifth octave Eb clarinet"
+    12.1 "fifth octave harpsichord"
+    --
+    12.1 "fifth octave violin"
+    --
+    2.1 "cello scratch pedal"
+
+    [H]
+    12.1 "fifth octave oboe" 
+    12.1 "fifth octave Eb clarinet"
+    12.1 "fifth octave harpsichord"
+    --
+    12.1 "fifth octave violin"
+    --
+    --
+
+    [H]
+    12.1 "fifth octave oboe" 
+    12.1 "fifth octave Eb clarinet"
+    12.1 "fifth octave harpsichord"
+    --
+    12.1 "fifth octave violin"
+    12.2 "third octave viola polyphony"
+    12.2 "third octave cello polyphony"
+
+    [H]
+    12.1 "fifth octave oboe" 
+    12.1 "fifth octave Eb clarinet"
+    --
+    --
+    12.1 "fifth octave violin"
+    12.2 "third octave viola polyphony"
+    12.2 "third octave cello polyphony"
+
+    [H]
+    --
+    --
+    5.2 "piano attacks"
+    5.4 "sponged + attackless bass drum"
+    --
+    --
+    --
+
+    [H]
+    12.1 "fifth octave oboe" 
+    12.1 "fifth octave Eb clarinet"
+    5.2 "piano attacks"
+    5.4 "sponged + attackless bass drum"
+    --
+    --
+    --
+
+    [H]
+    12.1 "fifth octave oboe" 
+    12.1 "fifth octave Eb clarinet"
+    5.2 "piano attacks"
+    5.4 "sponged + attackless bass drum"
     5.3 "violin glissando thicket"
     5.3 "viola glissando thicket"
     5.3 "cello glissando thicket"
+
+    [H]
+    --
+    --
+    5.2 "piano attacks"
+    5.4 "sponged + attackless bass drum"
+    5.3 "violin glissando thicket"
+    5.3 "viola glissando thicket"
+    5.3 "cello glissando thicket"
+
+    [H]
+    14.1 "oboe reiteration storm"
+    14.1 "clarinet reiteration storm"
+    5.2 "piano attacks"
+    5.4 "sponged + attackless bass drum"
+    5.3 "violin glissando thicket"
+    5.3 "viola glissando thicket"
+    5.3 "cello glissando thicket"
+
+    [H]
+    14.1 "oboe reiteration storm"
+    14.1 "clarinet reiteration storm"
+    5.2 "piano attacks"
+    --
+    5.3 "violin glissando thicket"
+    5.3 "viola glissando thicket"
+    5.3 "cello glissando thicket"
+
+    [H]
+    14.1 "oboe reiteration storm"
+    14.1 "clarinet reiteration storm"
+    5.2 "piano attacks"
+    --
+    5.3 "violin glissando thicket"
+    14.1 "viola reiteration storm"
+    5.3 "cello glissando thicket"
+
+    [H]
+    14.1 "oboe reiteration storm"
+    14.1 "clarinet reiteration storm"
+    --
+    --
+    14.1 "violin reiteration storm"
+    14.1 "viola reiteration storm"
+    14.1 "cello reiteration storm"
 
 attaca [I(11-14)].

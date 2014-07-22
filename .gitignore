@@ -7,3 +7,6 @@
 # Miscellaneous files
 *.bak
 *.pkl
+
+# OSX files
+.DS_Store

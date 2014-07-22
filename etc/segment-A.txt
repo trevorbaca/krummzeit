@@ -1,77 +1,8 @@
 [A(11-8-2-14-6-1)]
-[B(12...)]
 
-    (11°)
-    11.1 "oboe fluttertongue"
-    11.1 "clarinet portamenti"
-    11.1 "harpsichord clusters"
-    11.1 "fff crotales"
-    11.1 "violin tremolo"
-    11.1 "viola tremolo"
-    11.1 "cello tremolo"
+stages:
 
-    (8°)
-    --
-    --
-    8.1a "low R piano cluster sea storm"
-    8.1b "magic piano shadow chord"
-    --
-    --
-    --
-    --
-
-    (2°)
-    2.1 "fff block oboe"
-    2.4 "myrkr bcl subtone"
-    2.2 "upper R harpsichord counterpoint"
-    2.5 "attackless tam-tam"
-    --
-    2.3 "p block viola"
-    2.6 "scratch pedal cello"
-
-    (14°)
-    14.1 "oboe reiteration storm"
-    14.1 "clarinet reiteration storm"
-    14.1 "piano reiteration storm"
-    14.1 "xylophone reiteration storm"
-    14.1 "violin reiteration storm"
-    14.1 "viola reiteration storm"
-    14.1 "cello reiteration storm"
-
-    (6°)
-    6.1 "ornamented oboe"
-    6.2 "unadorned Eb clarinet duet"
-    --
-    6.3a "bright xylophone points"
-    6.3b "circle-scraped slate"
-    6.1 "ornamented violin"
-    6.4 "scratch / flautando color pedal viola"
-    6.5 "scratch / flautando color pedal cello"
-
-    (1°)
-    1.1 "modulated oboe"
-    1.1 "modulated clarinet"
-    1.1 "piano clusters"
-    1.1 "fff crotales"
-    1.1 "chromatic tremolo violin"
-    1.1 "chromatic tremolo viola"
-    1.1 "chromatic tremolo cello"
-
-    ====
-    ====
-
-    (12°)
-    12.1 "fifth octave harpsichord"
-    12.1 "fifth octave oboe"
-    12.1 "fifth octave Eb clarinet"
-    12.1 "fifth octave violin"
-    12.2 "slow third octave va polyphony"
-    12.2 "slow third octave vc polyphony"
-    12.3 "sponged bass drum"
-
-deployment:
-
-    [A]
+    [A1]
     --
     --
     --
@@ -80,7 +11,7 @@ deployment:
     11.1 "viola tremolo"
     11.1 "cello tremolo"
 
-    [A]
+    [A2]
     --
     2.4 "myrkr bcl subtone"
     8.1a "low R piano cluster"
@@ -89,7 +20,7 @@ deployment:
     2.3 "p block viola"
     2.6 "scratch pedal cello"
 
-    [A]
+    [A3]
     --
     2.4 "myrkr bcl subtone"
     --
@@ -98,7 +29,7 @@ deployment:
     2.3 "p block viola"
     2.6 "scratch pedal cello"
 
-    [A]
+    [A4]
     --
     --
     --
@@ -107,7 +38,7 @@ deployment:
     2.3 "quiet block viola"
     --
 
-    [A]
+    [A5]
     14.1 "oboe reiteration storm"
     14.1 "clarinet reiteration storm"
     14.1 "piano reiteration storm"
@@ -116,7 +47,7 @@ deployment:
     2.3 "quiet block viola"
     14.1 "cello reiteration storm"
 
-    [A]
+    [A6]
     6.1 "ornamented oboe"
     6.2 "unadored Eb clarinet duet"
     --
@@ -125,7 +56,7 @@ deployment:
     2.3 "quiet block viola"
     --
 
-    [A]
+    [A7]
     --
     --
     1.1 "piano clusters"
@@ -134,7 +65,7 @@ deployment:
     --
     --
 
-    [A]
+    [A8]
     --
     --
     --
@@ -142,5 +73,3 @@ deployment:
     --
     --
     --
-
-attaca [B(12-3-9)].

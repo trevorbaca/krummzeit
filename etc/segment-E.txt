@@ -1,66 +1,4 @@
-[D(...2)]
 [E(3-5-7-1)]
-[F(6...)]
-
-    [D]
-    --
-    2.4 "myrkr bcl subtone"
-    --
-    2.5 "attackless tam-tam"
-    --
-    --
-    --
-
-    ====
-    ====
-
-    (3°)
-    3.2 "air tone oboe"
-    3.1 "mykr bcl subtone"
-    3.3 "low R piano clusters"
-    3.4 "attackless tam-tam"
-    3.5 "scratch or on-the-bridge violin"
-    3.5 "scratch or on-the-bridge viola"
-    3.5 "scratch or on-the-bridge cello"
-
-    (5°)
-    5.1 "inflected chromatic line oboe"
-    5.1 "inflected chromatic line clarinet"
-    5.2 "piano attacks"
-    5.4 "sponged bass drum"
-    5.3 "glissando thicket violin"
-    5.3 "glissando thicket viola"
-    5.3 "glissando thicket cello"
-
-    (7°)
-    --
-    --
-    7.1 "bright points piano"
-    7.1 "bright points xylophone"
-    --
-    --
-    --
-
-    (1°)
-    1.1 "modulated oboe"
-    1.1 "modulated clarinet"
-    1.1 "piano clusters"
-    1.1 "fff crotales"
-    1.1 "chromatic tremolo violin"
-    1.1 "chromatic tremolo viola"
-    1.1 "chromatic tremolo cello"
-
-    ====
-    ====
-
-    [F]
-    6.1 "ornamented oboe"
-    6.2 "unadorned Eb clarinet duet"
-    --
-    --
-    --
-    --
-    --
 
 materials by segment:
     
@@ -84,21 +22,9 @@ a forceful statement of (5).
 [E(1)] constitutes the final appearance of (1). [E(1)] constitutes a forceful
 statement of (1).
 
-deployment:
+stages:
 
-    [D]
-    --
-    2.4 "myrkr bcl subtone"
-    --
-    2.5 "attackless tam-tam"
-    --
-    --
-    --
-
-    ====
-    ====
-
-    [E]
+    [E1]
     --
     --
     --
@@ -107,7 +33,7 @@ deployment:
     3.5 "scratch or on-the-bridge viola"
     3.5 "scratch or on-the-bridge cello"
     
-    [E]
+    [E2]
     --
     --
     --
@@ -116,7 +42,7 @@ deployment:
     3.5 "scratch or on-the-bridge viola"
     3.5 "scratch or on-the-bridge cello"
 
-    [E]
+    [E3]
     --
     --
     --
@@ -125,7 +51,7 @@ deployment:
     3.5 "scratch or on-the-bridge viola"
     3.5 "scratch or on-the-bridge cello"
 
-    [E]
+    [E4]
     --
     --
     5.2 "piano attacks"
@@ -134,7 +60,7 @@ deployment:
     5.3 "glissando thicket viola"
     3.5 "scratch or on-the-bridge cello"
 
-    [E]
+    [E5]
     5.1 "inflected chromatic oboe"
     5.1 "inflected chromatic clarinet"
     5.2 "piano attacks"
@@ -143,7 +69,7 @@ deployment:
     5.3 "glissando thicket viola"
     3.5 "scratch or on-the-bridge cello"
 
-    [E]
+    [E6]
     5.1 "inflected chromatic oboe"
     5.1 "inflected chromatic clarinet"
     5.2 "piano attacks"
@@ -152,7 +78,7 @@ deployment:
     5.3 "glissando thicket viola"
     5.3 "glissando thicket cello"
 
-    [E]
+    [E7]
     5.1 "inflected chromatic oboe"
     5.1 "inflected chromatic clarinet"
     5.2 "piano attacks"
@@ -161,7 +87,7 @@ deployment:
     5.3 "glissando thicket viola"
     5.3 "glissando thicket cello"
 
-    [E]
+    [E8]
     --
     --
     7.1 "bright piano points"
@@ -170,7 +96,7 @@ deployment:
     --
     --
 
-    [E]
+    [E9]
     --
     --
     5.2 "piano attacks"
@@ -179,7 +105,7 @@ deployment:
     5.3 "glissando thicket viola"
     5.3 "glissando thicket cello"
 
-    [E]
+    [E10]
     5.1 "inflected chromatic oboe"
     5.1 "inflected chromatic clarinet"
     7.1 "bright piano points"
@@ -188,7 +114,7 @@ deployment:
     --
     --
 
-    [E]
+    [E11]
     5.1 "inflected chromatic oboe"
     5.1 "inflected chromatic clarinet"
     7.1 "bright piano points"
@@ -197,7 +123,7 @@ deployment:
     1.1 "chromatic viola tremolo"
     1.1 "chromatic cello tremolo"
 
-    [E]
+    [E12]
     5.1 "inflected chromatic oboe"
     5.1 "inflected chromatic clarinet"
     --
@@ -206,7 +132,7 @@ deployment:
     --
     --
 
-    [E]
+    [E13]
     --
     --
     1.1 "piano clusters"
@@ -214,14 +140,3 @@ deployment:
     1.1 "chromatic violin tremolo"
     1.1 "chromatic viola tremolo"
     1.1 "chromatic cello tremolo"
-
-attaca [F(6-5-7-4-9-4)].
-
-    [F]
-    6.1 "ornamented oboe"
-    6.2 "unadorned Eb clarinet duet"
-    --
-    --
-    --
-    --
-    --

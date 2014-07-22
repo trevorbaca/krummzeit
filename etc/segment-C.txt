@@ -1,74 +1,4 @@
-[B(...9)]
 [C(6-7-6-10-1)]
-[D(9...)]
-
-    [B(9)]
-    --
-    --
-    9.1 "pointillist piano / harpsichord"
-    --
-    9.1 "pointillist violin pizzicati"
-    9.1 "pointillist viola pizzicati"
-    9.1 "pointillist cello pizzicati"
-
-    ====
-    ====
-
-    (6°)
-    6.1 "ornamented oboe"
-    6.2 "unadorned Eb clarinet duet"
-    --
-    6.3a "bright xylophone points"
-    6.3b "circle-scraped slate"
-    6.1 "ornamented violin"
-    6.4 "scratch / flautando color pedal viola"
-    6.5 "scratch / flautando color pedal cello"
-
-    (7°)
-    --
-    --
-    7.1 "bright points piano"
-    7.1 "bright points xylophone"
-    --
-    --
-    --
-
-    (6°)
-    6.1 "ornamented oboe"
-    6.2 "unadorned Eb clarinet duet"
-    --
-    6.3a "bright xylophone points"
-    6.3b "circle-scraped slate"
-    6.1 "ornamented violin"
-    6.4 "scratch / flautando color pedal viola"
-    6.5 "scratch / flautando color pedal cello"
-
-    (10°)
-    10.2 "ppp snare roll"
-    10.2 "unrestrained low R violin"
-    10.2 "unrestrained low R viola"
-    10.2 "unrestrained low R cello"
-
-    (1°)
-    1.1 "modulated oboe"
-    1.1 "modulated clarinet"
-    1.1 "clusters piano"
-    1.1 "fff crotales"
-    1.1 "chromatic tremolo violin"
-    1.1 "chromatic tremolo viola"
-    1.1 "chromatic tremolo cello"
-
-    ===
-    ===
-
-    (9°)
-    --
-    --
-    9.1 "pointillist piano / harpsichord"
-    9.1 "pointillist xylophone"
-    9.1 "pointillist violin pizzicati"
-    9.1 "pointillist viola pizzicati"
-    9.1 "pointillist cello pizzicati"
 
 materials by segment:
 
@@ -90,9 +20,9 @@ piccolo woodblocks but not xylophone.
 piece. [C(10)] and [C(1)] happen simultaneously. [C(10.2)] punctuates
 [C(6-7-6)].
 
-deployment:
+stages:
 
-    [C]
+    [C1]
     6.1 "ornamented oboe"
     6.2 "unadorned Eb clarinet duet"
     --
@@ -101,7 +31,7 @@ deployment:
     --
     --
 
-    [C]
+    [C2]
     --
     --
     --
@@ -110,7 +40,7 @@ deployment:
     6.4 "scratch / flautando color pedal viola"
     6.5 "scratch / flautando color pedal cello"
 
-    [C]
+    [C3]
     --
     --
     7.1 "bright piano points"
@@ -119,7 +49,7 @@ deployment:
     6.4 "scratch / flautando color pedal viola"
     6.5 "scratch / flautando color pedal cello"
 
-    [C]
+    [C4]
     --
     --
     --
@@ -128,7 +58,7 @@ deployment:
     6.4 "scratch / flautando color pedal viola"
     6.5 "scratch / flautando color pedal cello"
 
-    [C]
+    [C5]
     6.1 "ornamented oboe"
     6.2 "unadorned Eb clarinet duet"
     --
@@ -137,7 +67,7 @@ deployment:
     --
     --
 
-    [C]
+    [C6]
     6.1 "ornamented oboe"
     6.2 "unadorned Eb clarinet duet"
     --
@@ -146,7 +76,7 @@ deployment:
     --
     --
 
-    [C]
+    [C7]
     6.1 "ornamented oboe"
     6.2 "unadorned Eb clarinet duet"
     7.1 "bright piano points"
@@ -155,7 +85,7 @@ deployment:
     --
     --
 
-    [C]
+    [C8]
     6.1 "ornamented oboe"
     6.2 "unadorned Eb clarinet duet"
     7.1 "bright piano points"
@@ -164,7 +94,7 @@ deployment:
     10.2 "unrestrained low R viola"
     10.2 "unrestrained low R cello"
 
-    [C]
+    [C9]
     6.1 "ornamented oboe"
     6.2 "unadorned Eb clarinet duet"
     --
@@ -173,7 +103,7 @@ deployment:
     10.2 "unrestrained low R viola"
     10.2 "unrestrained low R cello"
 
-    [C]
+    [C10]
     --
     --
     --
@@ -182,7 +112,7 @@ deployment:
     10.2 "unrestrained low R viola"
     10.2 "unrestrained low R cello"
 
-    [C]
+    [C11]
     --
     --
     1.1 "piano clusters"
@@ -191,7 +121,7 @@ deployment:
     10.2 "unrestrained low R viola"
     10.2 "unrestrained low R cello"
 
-    [C]
+    [C12]
     --
     --
     --
@@ -199,5 +129,3 @@ deployment:
     --
     --
     --
-
-attaca [D(9-8-10-2)].

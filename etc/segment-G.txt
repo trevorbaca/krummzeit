@@ -1,45 +1,6 @@
-[F: ... 4]
 [G: 12-10]
-[H: 2 ...]
 
-    (4°) "third octave interweave"
-    4.1 "oboe homorhythm"
-    4.2 "Bb clarinet 3rd octave interweave"
-    4.2 "piano 3rd octave interweave"
-    4.1 "suspended cymbal homorhythm"
-    4.1 "violin homorhythm"
-    4.2 "viola 3rd octave interweave"
-    4.2 "cello 3rd octave interweave"
-    
-    ====
-    ====
-
-    [G]
-
-    [G](12) "fifth octave interweave"
-    12.1 "fifth octave harpsichord"
-    12.1 "fifth octave oboe"
-    12.1 "fifth octave Eb clarinet"
-    12.1 "fifth octave violin"
-    12.2 "slow third octave va polyphony"
-    12.2 "slow third octave vc polyphony"
-
-    (10°) "unrestrained open strings"
-    10.1 "ppp snare roll"
-    10.1 "unrestrained low R violin"
-    10.1 "unrestrained low R viola"
-    10.1 "unrestrained low R cello"
-
-    ====
-    ====
-
-    [H](2) "magic oboe melodrama"
-    2.1 "oboe block tones" 
-    2.2 "upper register harpsichord counterpoint"
-    2.3 "viola homorhythm accompaniment"
-    2.4 "myrkr bcl subtone"
-    2.5 "attackless tam-tam"
-    2.6 "vc scratch pedal"
+materials by segment:
 
 (4) tracks [F], [F], [K]. the piece closes with (4). it's possible that [F]
 houses the apotheosis of (4).
@@ -54,16 +15,27 @@ houses the apotheosis of (4).
 
 "ppp snare roll" (10.1) back-affects [G(12)].
 
-    [G(12)]
+stages:
+
+    [G1]
+    --
+    --
+    --
+    --
+    --
     12.2 "slow third octave va polyphony"
     12.2 "slow third octave vc polyphony"
 
-    [G(12)][G(10)]
-    12.2 "slow third octave va polyphony"
-    12.2 "slow third octave vc polyphony"
+    [G2]
+    --
+    --
+    --
     10.2 "ppp snare roll"
+    --
+    12.2 "slow third octave va polyphony"
+    12.2 "slow third octave vc polyphony"
 
-    [G(12)][H(2)]
+    [G3]
     12.1 "fifth octave oboe"
     12.1 "fifth octave Eb clarinet"
     2.2 "upper register harpsichord counterpoint"
@@ -72,7 +44,7 @@ houses the apotheosis of (4).
     12.2 "slow third octave va polyphony"
     12.2 "slow third octave vc polyphony"
 
-    [G(12)][G(10)][H(2)]
+    [G4]
     12.1 "fifth octave oboe"
     12.1 "fifth octave Eb clarinet"
     2.2 "upper register harpsichord counterpoint"
@@ -81,7 +53,7 @@ houses the apotheosis of (4).
     --
     --
 
-    [G(12)][G(10)][H(2)]
+    [G5]
     12.1 "fifth octave oboe"
     12.1 "fifth octave Eb clarinet"
     2.2 "upper register harpsichord counterpoint"
@@ -90,7 +62,7 @@ houses the apotheosis of (4).
     --
     --
 
-    [G(12)][G(10)][H(2)]
+    [G6]
     12.1 "fifth octave oboe"
     12.1 "fifth octave Eb clarinet"
     2.2 "upper register harpsichord counterpoint"
@@ -99,7 +71,7 @@ houses the apotheosis of (4).
     12.2 "slow third octave va polyphony"
     10.1 "unrestrained low R cello"
 
-    [G(12)][G(10)][H(2)]
+    [G7]
     12.1 "fifth octave oboe"
     12.1 "fifth octave Eb clarinet"
     --
@@ -109,7 +81,7 @@ houses the apotheosis of (4).
     10.1 "unrestrained low R cello"
 
 
-    [G(10)]
+    [G8]
     --
     --
     --
@@ -118,7 +90,7 @@ houses the apotheosis of (4).
     10.1 "unrestrained low R viola"
     10.1 "unrestrained low R cello"
 
-    [G(10)][H(2)]
+    [G9]
     --
     --
     2.2 "upper register harpsichord counterpoint"
@@ -127,7 +99,7 @@ houses the apotheosis of (4).
     10.1 "unrestrained low R viola"
     10.1 "unrestrained low R cello"
 
-    [G(10)]
+    [G10]
     --
     --
     --
@@ -136,7 +108,7 @@ houses the apotheosis of (4).
     10.1 "unrestrained low R viola"
     10.1 "unrestrained low R cello"
 
-    [G(10)][H(2)]
+    [G11]
     --
     2.4 "myrkr bcl subtone"
     2.2 "upper register harpsichord counterpoint"
@@ -145,7 +117,7 @@ houses the apotheosis of (4).
     10.1 "unrestrained low R viola"
     10.1 "unrestrained low R cello"
     
-    [G(10)][H(2)]
+    [G12]
     --
     2.4 "myrkr bcl subtone"
     --
@@ -154,7 +126,7 @@ houses the apotheosis of (4).
     10.1 "unrestrained low R viola" (increasing scratch)
     10.1 "unrestrained low R cello" (increasing scratch)
 
-    [G(10)][H(2)]
+    [G13]
     --
     2.4 "myrkr bcl subtone"
     --
@@ -163,7 +135,7 @@ houses the apotheosis of (4).
     10.1 "unrestrained low R viola" (increasing scratch)
     10.1 "unrestrained low R cello" (increasing scratch)
 
-    [H(2)]
+    [G14]
     --
     2.4 "myrkr bcl subtone"
     --
@@ -171,17 +143,3 @@ houses the apotheosis of (4).
     --
     --
     --
-
-    attaca [H]:
-    
-    ====
-    ====
-
-    [H(2)]
-    2.1 "oboe block tones" 
-    2.4 "myrkr bcl subtone"
-    2.2 "upper register harpsichord counterpoint"
-    2.5 "attackless tam-tam"
-    --
-    2.3 "viola block tones accompaniment"
-    2.6 "vc scratch pedal"

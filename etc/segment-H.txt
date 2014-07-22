@@ -1,42 +1,4 @@
-[G(...10)]
 [H(2-12-5-14)]
-[I(11...)]
-
-    (2°)
-    2.1 "fff block oboe"
-    2.4 "myrkr bcl subtone"
-    2.2 "upper R harpsichord counterpoint"
-    2.5 "attackless tam-tam"
-    --
-    2.3 "quiet block viola"
-    2.6 "scratch pedal cello"
-
-    (12°)
-    12.1 "fifth octave harpsichord"
-    12.1 "fifth octave oboe"
-    12.1 "fifth octave Eb clarinet"
-    12.1 "fifth octave violin"
-    12.2 "slow third octave va polyphony"
-    12.2 "slow third octave vc polyphony"
-    12.3 "sponged bass drum"
-
-    (5°)
-    5.1 "inflected chromatic line oboe"
-    5.1 "inflected chromatic line clarinet"
-    5.2 "piano attacks"
-    5.4 "sponged bass drum"
-    5.3 "glissando thicket violin"
-    5.3 "glissando thicket viola"
-    5.3 "glissando thicket cello"
-
-    (14°)
-    14.1 "oboe reiteration storm"
-    14.1 "clarinet reiteration storm"
-    14.1 "piano reiteration storm"
-    14.1 "xylophone reiteration storm"
-    14.1 "violin reiteration storm"
-    14.1 "viola reiteration storm"
-    14.1 "cello reiteration storm"
 
 materials by segment:
 
@@ -53,9 +15,9 @@ materials by segment:
 
 [H(14)] is the first real appearance of (14).
 
-deployment:
+stages:
 
-    [H]
+    [H1]
     2.1 "oboe block tones"
     2.4 "myrkr bcl subtone"
     --
@@ -64,7 +26,7 @@ deployment:
     2.3 "viola homorhythm accompaniment"
     --
 
-    [H]
+    [H2]
     2.1 "oboe block tones"
     2.4 "myrkr bcl subtone"
     --
@@ -73,7 +35,7 @@ deployment:
     2.3 "viola homorhythm accompaniment"
     2.1 "cello scratch pedal"
 
-    [H]
+    [H3]
     2.1 "oboe block tones"
     --
     --
@@ -82,7 +44,7 @@ deployment:
     2.3 "viola homorhythm accompaniment"
     2.1 "cello scratch pedal"
 
-    [H]
+    [H4]
     2.1 "oboe block tones"
     2.4 "myrkr bcl subtone"
     --
@@ -91,7 +53,7 @@ deployment:
     2.3 "viola homorhythm accompaniment"
     2.1 "cello scratch pedal"
 
-    [H]
+    [H5]
     2.1 "oboe block tones"
     2.4 "myrkr bcl subtone"
     12.1 "fifth octave harpsichord"
@@ -100,7 +62,7 @@ deployment:
     2.3 "viola homorhythm accompaniment"
     2.1 "cello scratch pedal"
 
-    [H]
+    [H6]
     2.1 "oboe block tones"
     --
     12.1 "fifth octave harpsichord"
@@ -109,7 +71,7 @@ deployment:
     2.3 "viola homorhythm accompaniment"
     2.1 "cello scratch pedal"
 
-    [H]
+    [H7]
     2.1 "oboe block tones"
     12.1 "fifth octave Eb clarinet"
     12.1 "fifth octave harpsichord"
@@ -118,7 +80,7 @@ deployment:
     2.3 "viola homorhythm accompaniment"
     2.1 "cello scratch pedal"
 
-    [H]
+    [H8]
     --
     12.1 "fifth octave Eb clarinet"
     12.1 "fifth octave harpsichord"
@@ -127,7 +89,7 @@ deployment:
     --
     2.1 "cello scratch pedal"
 
-    [H]
+    [H9]
     12.1 "fifth octave oboe" 
     12.1 "fifth octave Eb clarinet"
     12.1 "fifth octave harpsichord"
@@ -136,7 +98,7 @@ deployment:
     --
     2.1 "cello scratch pedal"
 
-    [H]
+    [H10]
     12.1 "fifth octave oboe" 
     12.1 "fifth octave Eb clarinet"
     12.1 "fifth octave harpsichord"
@@ -145,7 +107,7 @@ deployment:
     --
     --
 
-    [H]
+    [H11]
     12.1 "fifth octave oboe" 
     12.1 "fifth octave Eb clarinet"
     12.1 "fifth octave harpsichord"
@@ -154,7 +116,7 @@ deployment:
     12.2 "third octave viola polyphony"
     12.2 "third octave cello polyphony"
 
-    [H]
+    [H12]
     12.1 "fifth octave oboe" 
     12.1 "fifth octave Eb clarinet"
     --
@@ -163,7 +125,7 @@ deployment:
     12.2 "third octave viola polyphony"
     12.2 "third octave cello polyphony"
 
-    [H]
+    [H13]
     --
     --
     5.2 "piano attacks"
@@ -172,7 +134,7 @@ deployment:
     --
     --
 
-    [H]
+    [H14]
     12.1 "fifth octave oboe" 
     12.1 "fifth octave Eb clarinet"
     5.2 "piano attacks"
@@ -181,7 +143,7 @@ deployment:
     --
     --
 
-    [H]
+    [H15]
     12.1 "fifth octave oboe" 
     12.1 "fifth octave Eb clarinet"
     5.2 "piano attacks"
@@ -190,7 +152,7 @@ deployment:
     5.3 "viola glissando thicket"
     5.3 "cello glissando thicket"
 
-    [H]
+    [H16]
     --
     --
     5.2 "piano attacks"
@@ -199,7 +161,7 @@ deployment:
     5.3 "viola glissando thicket"
     5.3 "cello glissando thicket"
 
-    [H]
+    [H17]
     14.1 "oboe reiteration storm"
     14.1 "clarinet reiteration storm"
     5.2 "piano attacks"
@@ -208,7 +170,7 @@ deployment:
     5.3 "viola glissando thicket"
     5.3 "cello glissando thicket"
 
-    [H]
+    [H18]
     14.1 "oboe reiteration storm"
     14.1 "clarinet reiteration storm"
     5.2 "piano attacks"
@@ -217,7 +179,7 @@ deployment:
     5.3 "viola glissando thicket"
     5.3 "cello glissando thicket"
 
-    [H]
+    [H19]
     14.1 "oboe reiteration storm"
     14.1 "clarinet reiteration storm"
     5.2 "piano attacks"
@@ -226,7 +188,7 @@ deployment:
     14.1 "viola reiteration storm"
     5.3 "cello glissando thicket"
 
-    [H]
+    [H20]
     14.1 "oboe reiteration storm"
     14.1 "clarinet reiteration storm"
     --
@@ -234,5 +196,3 @@ deployment:
     14.1 "violin reiteration storm"
     14.1 "viola reiteration storm"
     14.1 "cello reiteration storm"
-
-attaca [I(11-14)].

@@ -1,67 +1,4 @@
-[I(...14)]
 [J(11-3-8-9)]
-[K(14...)]
-
-    (14°)
-    14.1 "oboe reiteration storm"
-    14.1 "clarinet reiteration storm"
-    14.1 "piano reiteration storm"
-    14.1 "xylophone reiteration storm"
-    14.1 "violin reiteration storm"
-    14.1 "viola reiteration storm"
-    14.1 "cello reiteration storm"
-
-    ====
-    ====
-
-    (11°)
-    11.1 "oboe fluttertongue"
-    11.1 "clarinet portamenti"
-    11.1 "harpsichord clusters"
-    11.1 "fff crotales"
-    11.1 "violin tremolo"
-    11.1 "viola tremolo"
-    11.1 "cello tremolo"
-
-    (3°)
-    3.2 "air tone oboe"
-    3.1 "mykr bcl subtone"
-    3.3 "low R piano clusters"
-    3.4 "attackless tam-tam"
-    3.5 "scratch or on-the-bridge violin"
-    3.5 "scratch or on-the-bridge viola"
-    3.5 "scratch or on-the-bridge cello"
-
-    (8°)
-    --
-    --
-    8.1a "low R piano cluster sea storm"
-    8.1b "magic piano shadow chord"
-    --
-    --
-    --
-    --
-
-    (9°)
-    --
-    --
-    9.1 "pointillism piano / harpsichord"
-    9.1 "pointillism xylophone"
-    9.1 "pointillism violin pizzicati"
-    9.1 "pointillism viola pizzicati"
-    9.1 "pointillism cello pizzicati"
-
-    ====
-    ====
-
-    (14°)
-    14.1 "oboe reiteration storm"
-    14.1 "clarinet reiteration storm"
-    14.1 "piano reiteration storm"
-    14.1 "xylophone reiteration storm"
-    14.1 "violin reiteration storm"
-    14.1 "viola reiteration storm"
-    14.1 "cello reiteration storm"
 
 materials by segment:
 
@@ -78,45 +15,45 @@ it is likely that [J] is a reprieve or fantasy or distraction or
 intensification interposed between successive occurrences of (14) in [I(14)]
 and [K(14)].
 
-deployment:
+stages:
 
-    [J]
-    11.1 "reiterated oboe multiphonic"
-    --
-    11.1 "piano clusters"
-    11.1 "fff crotales"
+    [J1]
+    14.1
+    14.1
+    14.1
+    14.1
     11.1 "violin tremolo"
     11.1 "viola tremolo"
     11.1 "cello tremolo"
 
-    (3°)
-    3.2 "air tone oboe"
-    3.1 "mykr bcl subtone"
-    3.3 "low R piano clusters"
-    3.4 "attackless tam-tam"
-    3.5 "scratch or on-the-bridge violin"
-    3.5 "scratch or on-the-bridge viola"
-    3.5 "scratch or on-the-bridge cello"
-
-    [J]
-    11.1 "reiterated oboe multiphonic"
-    3.1 "myrkr bcl subtone"
-    11.1 "piano clusters"
-    11.1 "fff crotales"
+    [J2]
+    --
+    --
+    --
+    --
     11.1 "violin tremolo"
     11.1 "viola tremolo"
     11.1 "cello tremolo"
 
-    [J]
+    [J3]
     --
     3.1 "myrkr bcl subtone"
     11.1 "piano clusters"
-    11.1 "fff crotales"
+    --
+    11.1 "violin tremolo"
+    11.1 "viola tremolo"
+    11.1 "cello tremolo"
+
+    [J4]
+    --
+    3.1 "myrkr bcl subtone"
+    11.1 "piano clusters"
+    --
     --
     --
     --
 
-    [J]
+    [J5]
     --
     3.1 "myrkr bcl subtone"
     --
@@ -125,7 +62,7 @@ deployment:
     3.5 "on-the-bridge viola"
     3.5 "on-the-bridge cello"
 
-    [J]
+    [J6]
     --
     3.1 "myrkr bcl subtone"
     8.1a "low R piano cluster sea storm"
@@ -134,7 +71,7 @@ deployment:
     3.5 "on-the-bridge viola"
     3.5 "on-the-bridge cello"
 
-    [J]
+    [J7]
     --
     3.1 "myrkr bcl subtone"
     --
@@ -143,7 +80,7 @@ deployment:
     3.5 "on-the-bridge viola"
     3.5 "on-the-bridge cello"
 
-    [J]
+    [J8]
     --
     3.1 "myrkr bcl subtone"
     8.1a "low R piano cluster sea storm" (increasing)
@@ -152,7 +89,7 @@ deployment:
     3.5 "on-the-bridge viola"
     3.5 "on-the-bridge cello"
 
-    [J]
+    [J9]
     --
     3.1 "myrkr bcl subtone"
     8.1a "low R piano cluster sea storm" (increasing)
@@ -161,7 +98,7 @@ deployment:
     3.5 "on-the-bridge viola"
     3.5 "on-the-bridge cello"
 
-    [J]
+    [J10]
     --
     3.1 "myrkr bcl tone" (increasing)
     8.1a "low R piano cluster sea storm" (increasing)
@@ -170,7 +107,7 @@ deployment:
     --
     --
 
-    [J]
+    [J11]
     --
     3.1 "fff myrkr bcl tone" (increasing)
     8.1a "low R piano cluster sea storm" (increasing)
@@ -179,7 +116,7 @@ deployment:
     --
     --
 
-    [J]
+    [J12]
     --
     --
     8.1a "low R piano cluster sea storm" (increasing)
@@ -188,7 +125,7 @@ deployment:
     --
     --
 
-    [J]
+    [J13]
     --
     --
     8.1b "magic piano shadow chord"
@@ -197,7 +134,7 @@ deployment:
     --
     --
 
-    [J]
+    [J14]
     --
     --
     8.1b "magic piano shadow chord"
@@ -206,7 +143,7 @@ deployment:
     9.1 "pointillism viola pizzicati" (magic chord T1)
     9.1 "pointillism cello pizzicati" (magic chord T1)
 
-    [J]
+    [J15]
     --
     --
     --
@@ -214,5 +151,3 @@ deployment:
     9.1 "pointillism violin pizzicati" (magic chord T1)
     9.1 "pointillism viola pizzicati" (magic chord T1)
     9.1 "pointillism cello pizzicati" (magic chord T1)
-
-attaca [K(14-4)].

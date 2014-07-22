@@ -1,24 +1,4 @@
-[H(...14)]
 [I(11-14)]
-[J(11...)]
-
-    (14°)
-    14.1 "oboe reiteration storm"
-    14.1 "clarinet reiteration storm"
-    14.1 "piano reiteration storm"
-    14.1 "xylophone reiteration storm"
-    14.1 "violin reiteration storm"
-    14.1 "viola reiteration storm"
-    14.1 "cello reiteration storm"
-
-    (11°)
-    11.1 "oboe fluttertongue"
-    11.1 "clarinet portamenti"
-    11.1 "harpsichord clusters"
-    11.1 "ff crotales"
-    11.1 "violin tremolo"
-    11.1 "viola tremolo"
-    11.1 "cello tremolo"
 
 materials by segment:
 
@@ -32,21 +12,9 @@ culminates (14).
 
 [I] culminates both (11) and (14) even though [I] ends neither (11) nor (14).
 
-deployment:
+stages:
 
-    [H]
-    14.1 "oboe reiteration storm"
-    14.1 "clarinet reiteration storm"
-    --
-    --
-    14.1 "violin reiteration storm"
-    14.1 "viola reiteration storm"
-    14.1 "cello reiteration storm"
-
-    ====
-    ====
-
-    [I]
+    [I1]
     --
     --
     11.1 "harpsichord clusters"
@@ -55,7 +23,7 @@ deployment:
     14.1 "viola reiteration storm"
     14.1 "cello reiteration storm"
 
-    [I]
+    [I2]
     --
     --
     11.1 "harpsichord clusters"
@@ -64,7 +32,7 @@ deployment:
     5.3 "viola tremolo"
     5.3 "cello tremolo"
 
-    [I]
+    [I3]
     11.1 "oboe fluttertongue"
     11.1 "clarinet portamenti"
     11.1 "harpsichord clusters"
@@ -73,7 +41,7 @@ deployment:
     5.3 "viola tremolo"
     5.3 "cello tremolo"
 
-    [I]
+    [I4]
     11.1 "oboe fluttertongue"
     11.1 "clarinet portamenti"
     11.1 "harpsichord clusters"
@@ -82,7 +50,7 @@ deployment:
     5.3 "viola tremolo"
     5.3 "cello tremolo"
 
-    [I]
+    [I5]
     11.1 "oboe fluttertongue"
     11.1 "clarinet portamenti"
     11.1 "harpsichord clusters"
@@ -91,7 +59,7 @@ deployment:
     --
     --
 
-    [I]
+    [I6]
     11.1 "oboe fluttertongue"
     11.1 "clarinet portamenti"
     --
@@ -100,7 +68,7 @@ deployment:
     14.1 "viola reiteration storm"
     14.1 "cello reiteration storm"
 
-    [I]
+    [I7]
     14.1 "oboe reiteration storm"
     14.1 "clarinet reiteration storm"
     --
@@ -109,7 +77,7 @@ deployment:
     14.1 "viola reiteration storm"
     14.1 "cello reiteration storm"
 
-    [I]
+    [I8]
     14.1 "oboe reiteration storm"
     14.1 "clarinet reiteration storm"
     14.1 "piano reiteration storm"
@@ -117,5 +85,3 @@ deployment:
     14.1 "violin reiteration storm"
     14.1 "viola reiteration storm"
     14.1 "cello reiteration storm"
-
-attaca [J(11-3-8-9)].

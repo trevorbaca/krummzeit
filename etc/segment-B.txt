@@ -1,73 +1,8 @@
-[A(...1)]
 [B(12-3-9)]
-[C(6...)]
 
-    [A]
-    --
-    --
-    --
-    12.3 "sponged bass drum"
-    --
-    --
-    --
+stages:
 
-    ====
-    ====
-
-    (12°)
-    12.1 "fifth octave harpsichord"
-    12.1 "fifth octave oboe"
-    12.1 "fifth octave Eb clarinet"
-    12.1 "fifth octave violin"
-    12.2 "slow third octave va polyphony"
-    12.2 "slow third octave vc polyphony"
-    12.3 "sponged bass drum"
-
-    (3°)
-    3.2 "air tone oboe"
-    3.1 "mykr bcl subtone"
-    3.3 "low R piano clusters"
-    3.4 "attackless tam-tam"
-    3.5 "scratch or on-the-bridge violin"
-    3.5 "scratch or on-the-bridge viola"
-    3.5 "scratch or on-the-bridge cello"
-
-    (9°)
-    --
-    --
-    9.1 "pointillist piano / harpsichord"
-    9.1 "pointillist xylophone"
-    9.1 "pointillist violin pizzicati"
-    9.1 "pointillist viola pizzicati"
-    9.1 "pointillist cello pizzicati"
-
-    ====
-    ====
-
-    [C]
-    6.1 "ornamented oboe"
-    6.2 "unadorned Eb clarinet duet"
-    --
-    --
-    6.3b "circle-scraped slate" [nb: violinist]
-    --
-    --
-
-deployment:
-
-    [A]
-    --
-    --
-    --
-    12.3 "sponged bass drum"
-    --
-    --
-    --
-
-    ====
-    ====
-
-    [B]
+    [B1]
     --
     --
     12.1 "fifth octave harpsichord"
@@ -77,7 +12,7 @@ deployment:
     12.2 "slow third octave va polyphony"
     12.2 "slow third octave vc polyphony"
     
-    [B]
+    [B2]
     --
     --
     12.1 "fifth octave harpsichord"
@@ -87,7 +22,7 @@ deployment:
     12.2 "slow third octave va polyphony"
     12.2 "slow third octave vc polyphony"
 
-    [B]
+    [B3]
     --
     12.1 "fifth octave Eb clarinet"
     12.1 "fifth octave harpsichord"
@@ -96,7 +31,7 @@ deployment:
     12.2 "slow third octave va polyphony"
     12.2 "slow third octave vc polyphony"
 
-    [B]
+    [B4]
     --
     12.1 "fifth octave Eb clarinet"
     12.1 "fifth octave harpsichord"
@@ -105,7 +40,7 @@ deployment:
     12.2 "slow third octave va polyphony"
     12.2 "slow third octave vc polyphony"
 
-    [B]
+    [B5]
     12.1 "fifth octave oboe"
     12.1 "fifth octave Eb clarinet"
     12.1 "fifth octave harpsichord"
@@ -114,7 +49,7 @@ deployment:
     12.2 "slow third octave va polyphony"
     12.2 "slow third octave vc polyphony"
 
-    [B]
+    [B6]
     12.1 "fifth octave oboe"
     12.1 "fifth octave Eb clarinet"
     12.1 "fifth octave harpsichord"
@@ -123,7 +58,7 @@ deployment:
     --
     --
 
-    [B]
+    [B7]
     12.1 "fifth octave oboe"
     12.1 "fifth octave Eb clarinet"
     --
@@ -132,7 +67,7 @@ deployment:
     --
     --
 
-    [B]
+    [B8]
     12.1 "fifth octave oboe"
     12.1 "fifth octave Eb clarinet"
     --
@@ -141,7 +76,7 @@ deployment:
     3.5 "on-the-bridge viola"
     3.5 "on-the-bridge cello"
 
-    [B]
+    [B9]
     12.1 "fifth octave oboe"
     --
     --
@@ -150,7 +85,7 @@ deployment:
     3.5 "on-the-bridge viola"
     3.5 "on-the-bridge cello"
 
-    [B]
+    [B10]
     --
     --
     --
@@ -159,7 +94,7 @@ deployment:
     3.5 "on-the-bridge viola"
     3.5 "on-the-bridge cello"
 
-    [B]
+    [B11]
     --
     --
     --
@@ -168,7 +103,7 @@ deployment:
     3.5 "on-the-bridge viola"
     3.5 "on-the-bridge cello"
 
-    [B]
+    [B12]
     --
     --
     --
@@ -177,16 +112,7 @@ deployment:
     3.5 "on-the-bridge viola"
     3.5 "on-the-bridge cello"
     
-    [B]
-    --
-    --
-    --
-    3.4 "attackless tam-tam"
-    3.5 "on-the-bridge violin"
-    3.5 "on-the-bridge viola"
-    3.5 "on-the-bridge cello"
-
-    [B]
+    [B13]
     --
     --
     3.3 "low R piano clusters"
@@ -195,7 +121,7 @@ deployment:
     3.5 "on-the-bridge viola"
     3.5 "on-the-bridge cello"
 
-    [B]
+    [B14]
     --
     --
     3.3 "low R piano clusters"
@@ -204,7 +130,7 @@ deployment:
     9.1 "pointillism viola pizzicati"
     3.5 "on-the-bridge cello"
 
-    [B]
+    [B15]
     --
     --
     3.3 "low R piano clusters"
@@ -213,7 +139,7 @@ deployment:
     9.1 "pointillist viola pizzicati"
     9.1 "pointillist cello pizzicati"
 
-    [B]
+    [B16]
     --
     --
     3.3 "low R piano clusters"
@@ -222,7 +148,7 @@ deployment:
     9.1 "pointillist viola pizzicati"
     9.1 "pointillist cello pizzicati"
 
-    [B]
+    [B17]
     --
     --
     9.1 "pointillist piano"
@@ -231,7 +157,7 @@ deployment:
     9.1 "pointillist viola pizzicati"
     9.1 "pointillist cello pizzicati"
 
-    [B]
+    [B18]
     --
     --
     9.1 "pointillist piano"
@@ -240,7 +166,7 @@ deployment:
     9.1 "pointillist viola pizzicati"
     9.1 "pointillist cello pizzicati"
 
-    [B]
+    [B19]
     --
     6.2 "unadorned Eb clarinet duet"
     9.1 "pointillist piano"
@@ -249,31 +175,11 @@ deployment:
     9.1 "pointillist viola pizzicati"
     9.1 "pointillist cello pizzicati"
 
-    [B]
-    --
-    6.2 "unadorned Eb clarinet duet"
-    9.1 "pointillist piano"
-    6.3b "circle-scraped slate" [percussionist]
-    9.1 "pointillist violin pizzicati"
-    9.1 "pointillist viola pizzicati"
-    9.1 "pointillist cello pizzicati"
-
-    [B]
+    [B20]
     --
     6.2 "unadorned Eb clarinet duet"
     9.1 "pointillist piano"
     6.3b "circle-scraped slate" [percussionst]
     --
-    --
-    --
-
-attaca [C(6-7-6-10-1)]:
-
-    [C]
-    6.1 "ornamented oboe"
-    6.2 "unadorned Eb clarinet duet"
-    --
-    --
-    6.3b "circle-scraped slate" [nb: violinist]
     --
     --

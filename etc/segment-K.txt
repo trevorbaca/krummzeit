@@ -1,57 +1,13 @@
-[J(...9)]
 [K(14-4)]
-
-    (9°)
-    --
-    --
-    9.1 "pointillist piano / harpsichord"
-    9.1 "pointillist xylophone"
-    9.1 "pointillist violin pizzicati"
-    9.1 "pointillist viola pizzicati"
-    9.1 "pointillist cello pizzicati"
-
-    ====
-    ====
-
-    (14°)
-    14.1 "oboe reiteration storm"
-    14.1 "clarinet reiteration storm"
-    14.1 "piano reiteration storm"
-    14.1 "xylophone reiteration storm"
-    14.1 "violin reiteration storm"
-    14.1 "viola reiteration storm"
-    14.1 "cello reiteration storm"
-
-    (4°)
-    4.1 "homorhythm accompaniment oboe"
-    4.2 "third octave interweave Bb clarinet"
-    4.2 "third octave interweave piano"
-    4.1 "homorhythm accompaniment suspended cymbal"
-    4.1 "homorhythm accompaniment violin"
-    4.2 "third octave interweave viola"
-    4.2 "third octave interweave cello"
-
 materials by segment:
 
     (9) tracks [B], [D], [F], [J]
     (14) tracks [A], [H], [I], [K]
     (4) tracks [F], [F], [K]
 
-deployment:
+stages:
 
-    [J]
-    --
-    --
-    --
-    9.1 "pointillism xylophone" (magic chord T1)
-    9.1 "pointillism violin pizzicati" (magic chord T1)
-    9.1 "pointillism viola pizzicati" (magic chord T1)
-    9.1 "pointillism cello pizzicati" (magic chord T1)
-
-    ====
-    ====
-
-    [K]
+    [K1]
     14.1 "oboe reiteration storm"
     14.1 "clarinet reiteration storm"
     14.1 "piano reiteration storm"
@@ -60,7 +16,7 @@ deployment:
     9.1 "pointillism viola pizzicati" (magic chord T1)
     9.1 "pointillism cello pizzicati" (magic chord T1)
 
-    [K]
+    [K2]
     --
     --
     --
@@ -69,7 +25,7 @@ deployment:
     9.1 "pointillism viola pizzicati" (magic chord T1)
     9.1 "pointillism cello pizzicati" (magic chord T1)
 
-    [K]
+    [K3]
     14.1 "oboe reiteration storm"
     14.1 "clarinet reiteration storm"
     14.1 "piano reiteration storm"
@@ -78,7 +34,7 @@ deployment:
     14.1 "viola reiteration storm"
     14.1 "cello reiteration storm"
 
-    [K]
+    [K4]
     14.1 "oboe reiteration storm"
     14.1 "clarinet reiteration storm"
     14.1 "piano reiteration storm"
@@ -87,7 +43,7 @@ deployment:
     14.1 "viola reiteration storm"
     14.1 "cello reiteration storm"
 
-    [K]
+    [K5]
     --
     --
     --

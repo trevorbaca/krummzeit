@@ -1,73 +1,4 @@
-[C(...10+1)]
 [D(9-8-10-2)]
-[E(3...)]
-
-    [C]
-    --
-    --
-    1.1 "piano clusters"
-    10.1 "ppp snare roll"
-    10.2 "unrestrained low R violin"
-    10.2 "unrestrained low R viola"
-    10.2 "unrestrained low R cello"
-
-    [C]
-    --
-    --
-    --
-    10.1 "ppp snare roll"
-    --
-    --
-    --
-
-    ====
-    ====
-
-    (9°)
-    --
-    --
-    9.1 "pointillist piano / harpsichord"
-    9.1 "pointillist xylophone"
-    9.1 "pointillist violin pizzicati"
-    9.1 "pointillist viola pizzicati"
-    9.1 "pointillist cello pizzicati"
-
-    (8°)
-    --
-    --
-    8.1a "low R piano cluster sea storm"
-    8.1b "magic piano shadow chord"
-    --
-    --
-    --
-    --
-
-    (10°)
-    10.1 "ppp snare roll"
-    10.2 "unrestrained low R violin"
-    10.2 "unrestrained low R viola"
-    10.2 "unrestrained low R cello"
-
-    (2°)
-    2.1 "fff block oboe"
-    2.4 "myrkr bcl subtone"
-    2.2 "upper R harpsichord counterpoint"
-    2.5 "attackless tam-tam"
-    --
-    2.3 "p block viola"
-    2.6 "scratch pedal cello"
-
-    ====
-    ====
-
-    (3°)
-    3.2 "air tone oboe"
-    3.1 "mykr bcl subtone"
-    3.3 "low R piano clusters"
-    3.4 "attackless tam-tam"
-    3.5 "scratch or on-the-bridge violin"
-    3.5 "scratch or on-the-bridge viola"
-    3.5 "scratch or on-the-bridge cello"
 
 materials by segment:
 
@@ -86,9 +17,9 @@ materials by segment:
 
 [D(2)] withholds [H(2)]. [D(2)] foreshadows [H(2)].
 
-deployment:
+stages:
 
-    [D]
+    [D1]
     --
     --
     9.1 "pointillist harpsichord"
@@ -97,7 +28,7 @@ deployment:
     --
     --
 
-    [D]
+    [D2]
     --
     --
     9.1 "pointillist harpsichord"
@@ -106,7 +37,7 @@ deployment:
     --
     --
 
-    [D]
+    [D3]
     --
     --
     9.1 "pointillist harpsichord"
@@ -115,7 +46,7 @@ deployment:
     9.1 "pointillist viola pizzicati"
     9.1 "pointillist cello pizzicati"
 
-    [D]
+    [D4]
     --
     --
     --
@@ -124,7 +55,7 @@ deployment:
     9.1 "pointillist viola pizzicati"
     9.1 "pointillist cello pizzicati"
 
-    [D]
+    [D5]
     --
     --
     8.1a "low R piano cluster"
@@ -133,7 +64,7 @@ deployment:
     9.1 "pointillist viola pizzicati"
     9.1 "pointillist cello pizzicati"
 
-    [D]
+    [D6]
     --
     --
     8.1a "low R piano cluster"
@@ -142,7 +73,7 @@ deployment:
     --
     --
 
-    [D]
+    [D7]
     --
     --
     8.1a "low R piano cluster"
@@ -151,7 +82,7 @@ deployment:
     10.2 "unrestrained low R viola"
     --
 
-    [D]
+    [D8]
     --
     --
     8.1a "low R piano cluster"
@@ -160,7 +91,7 @@ deployment:
     10.2 "unrestrained low R viola"
     10.2 "unrestrained low R cello"
 
-    [D]
+    [D9]
     2.1 "fff block oboe"
     --
     8.1a "low R piano cluster"
@@ -169,7 +100,7 @@ deployment:
     10.2 "unrestrained low R viola"
     10.2 "unrestrained low R cello"
 
-    [D]
+    [D10]
     2.1 "fff block oboe"
     --
     --
@@ -178,7 +109,7 @@ deployment:
     10.2 "unrestrained low R viola"
     10.2 "unrestrained low R cello"
 
-    [D]
+    [D11]
     2.1 "fff block oboe"
     2.4 "myrkr bcl subtone"
     --
@@ -187,7 +118,7 @@ deployment:
     10.2 "unrestrained low R viola"
     10.2 "unrestrained low R cello"
 
-    [D]
+    [D12]
     --
     2.4 "myrkr bcl subtone"
     --
@@ -195,5 +126,3 @@ deployment:
     --
     --
     --
-
-attaca [E(3-5-7-1)].

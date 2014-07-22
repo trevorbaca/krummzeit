@@ -77,7 +77,6 @@ materials by segment:
     (6) tracks [A], [C], [C], [F]
     (7) tracks [C], [E], [F]
     (10) tracks [C], [D], [G]
-    ====
     (1) tracks [A], [C], [E]
 
 [B(9)] and [D(9)] bookend [C]. but [D(9)] procedes differently than [B(9)] and

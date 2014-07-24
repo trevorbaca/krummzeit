@@ -168,7 +168,7 @@ stages:
 
     [B19]
     --
-    6.2 "unadorned Eb clarinet duet"
+    6.2 "unadorned Eb clarinet"
     9.1 "pointillist piano"
     6.3b "circle-scraped slate" [percussionist]
     9.1 "pointillist violin pizzicati"
@@ -177,7 +177,7 @@ stages:
 
     [B20]
     --
-    6.2 "unadorned Eb clarinet duet"
+    6.2 "unadorned Eb clarinet"
     9.1 "pointillist piano"
     6.3b "circle-scraped slate" [percussionst]
     --

@@ -1,0 +1,83 @@
+                                 TIME ANALYSIS
+
+delaying the time analysis of [A] until the time behavior of the other sections
+is determined.
+
+first region comprises [B1-5]. first attack of the harpsichord announces the
+start of [B]. the question of how to manage the introduction of the harpsichord
+relative to the piano is answered up front. tempo set to quarter=135. [B5] is a
+type of culmination. [B5] marks the first time all seven players play together
+after the introduction. time dilates during [B5]. time dilation saturates the
+color of (12). sounds like there are two occurrences of [B5] back-to-back.
+denote these [B5] and [B5']. the reason for this will be because the oboe will
+need a chance to establish its color after prior to time dilation in order to
+make the dilation as effective as possible. [B1-5] undergoes a process of
+rushing. the harpsichord becomes increasingly dense in [B1-5]. so do the
+clarinet, violin and oboe over the course of their entrances staggered after.
+at [B5] all four of the instruments of the fifth-octave polyphony of (12.1) are
+at a point of articulatory intensity. the viola and cello layers of the slower
+third-octave polyphony of (12.2) undergo no such process.
+
+after the introduction of the oboe at [B5] the whole of [B1-5] repeats. denote
+these two passes [B1-5] and [B1-5]'. the pitch-classes of all parts in both
+(12.1) and (12.2) up-transposed in [B1-5]'. the resulting pitches expressed in
+the surface move because of this. it sounds like there is an explicit
+accelerando over all of [B1-5] and again over all of [B1-5]'. or perhaps over
+[B2-5] and [B2-5]' after the sponged bass drum in (12.3) drops out. the arrival
+tempo will be faster than quarter=135. the arrival tempo will have to determine
+its relation to the other indications in the inventory. [B1-5]' effects a
+subito change of dynamic to piano.
+
+[B5'] follows [B1-5][B1-5]'. [B5'] dilates time. [B5'] moves subito forte from
+the matte quiet of [B1-5]'. the change of dynamic intensifies the dilation. the
+time dilation of [B5'] includes the lower-register polyphony of (12.2) in the
+viola and cello. the time dilation of [B5'] begins to recede at when the viola
+and cello fall tacet at the onset of [B6].
+
+next region comprises [B6-11]. the upper-register polyphony of the harpsichord,
+clarinet, violin and oboe in (12.1) fall out in a staggered pattern. the
+strings introduce the on-the-bridge bowing of (3.5) incrementally. [B6] effects
+a return to the prevailing tempo of quarter=135 up from the slowpoint effected
+by the dilation in [B5'] before. the draw-down of (12.1) in [B7-10] persists at
+quarter=135 inflected neither by accelerandi nor by decelerandi nor by
+written-out changes in density of any of the parts. the exit of the sponged
+bass drum at the end of [B10] leaves only the on-the-bridge bowing of the three
+strings in (3.5) unmixed with any of the other colors. [B11] is a field. [B11]
+changes the prevailing tempo by 2:3 down to quarter=90. the metric modulation
+is effected during only the on-the-bridge bowing of (3.5). the on-the-bridge
+bowing of (3.5) introduces a new rhythmic character. will be determined later.
+a fermata governs [B11]. quarter=90 governs the fermata.
+
+next region comprises [B12-16]. time becomes unstuck with the entrance of the
+tam at the onset of [B12]. the tam precedes the entrance of the piano clusters.
+what is the interval of preentrance? actually it sounds like there is no
+interval of preentrance. it sounds like [B12-13] should collapse to a single
+stage. the tam and the piano clusters enter at the same time. this subordinates
+the tam to the piano clusters. but this is the color should sound this way.
+it's clear that the rhythmic character of the piano clusters is strikingly
+different than the rhythmic character of materials earlier in [B]. filled-in
+pickets articulate the clusters. the remainder of [B12-16] functions to
+multiply the points in the string and piano pizzicati of (9.1). a global
+accelerando governs [B12-16] or [B13-16]. the irregular articulations of the
+picket rhythms in the string layers of (9.1) contrast with the complete picket
+rhythms in the clusters. sounds like the accelerando is from quarter=90 back by
+3:2 up to quarter=135 in [B15] or [B16] with enough time given to effect the
+feeling of the faster tempo. the caesura (described next) then effects a subito
+ratcheting down of the tempo from quarter=135 to quarter=108. a tutti caesura
+articulates the end of [B16] before the onset of [B17]. the caesura allows the
+piano a moment to change modes of production from (3.3) to (9.1). the tam in
+(3.4) continues through the caesura even though all the other instruments do
+not.
+
+next region comprises [B17-20]. [B17] starts subito in quarter=108. this is the
+first time quarter=108 appears in the piece. after the tam exits at the end of
+[B17] there's a game at play in [B18-19] when the four layers of the pizzicati
+in (9.1) are all present. what characterizes the game? increasing density in
+some parts and decreasing density in others. all four players are
+tempo-inflected with exponential accelerandi on the order of only a measure or
+two at a time. in [B18-19] there's a second case of exact repetition at subito
+quieter dynamic (as in [B1-5]'). the way in which the piano brings (9.1) to a
+close at the end of [B20] is important but can be left until the time of
+writing. when the clarinet and circle-scraped slate enter in [B19] they carry a
+new tempo. the tempo is quarter=72. neither accelerandi nor decelerandi govern
+[B19-20].

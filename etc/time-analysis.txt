@@ -110,3 +110,25 @@ of [C9]. underneath the handling of (6) (10) effects a density decelerando over
 start of [C10]. accelerando during [C10-12]. accelerando inflects both the
 incredibly loud string chord and piano clusters of [C10-12]. [C] ends at
 quater=135.
+
+                                     * * *
+
+the return of (10) during [D7-10] reprises the appearance of (10) in [C7-11].
+the harpsichord and string pointillism of (9) during [D1-5] activates a
+completely different part of the spectrum between the string writing of [C7-11]
+and [D7-10]. [D1-5] starts at quarter=135 and is subject to an uninterrupted
+series of undulating chagnes of tempo. the exit of the pointillism at the end
+of [D5] regularizes the tempo in preparation for the reappearance of the loud
+writing in (10.2) during [D7-10]. there are both pitch and tempo differences
+between the loud string writing in [C7-11] and the reappearance of the loud
+string writing in [D7-10]. the reappearance in [D7-10] is up-transposed. the
+reappearance in [D7-10] is not subject to accelerando. if anything the
+reappearance in [D7-10] is subject to decelarando leading to the introduction
+of the block oboe at the start of [D9]. the block oboe (2.1) in [D9-11]
+constitutes the climax of [D]. the material of the climax is loud and the tempo
+of the climax is quarter=45. the staggered entrances of the tam (2.5) and the
+bass clarinet (2.4) in [D9] and [D11] serve to shadow and to deepen the oboe.
+the climax is effected in the oboe writing itself in [D9-11]. the oboe writing
+in [D9-11] is slow but inflected with momentary pullings-forward and momentary
+holdings-back. a pronounced decelerando governs [D11-12] and brings [D12] to a
+close. timeflow stops phenomenologically at the start of [E].

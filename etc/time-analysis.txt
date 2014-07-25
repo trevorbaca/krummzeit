@@ -145,3 +145,28 @@ returns and governs [E10-12]. so the tempo of the bright piano and xylophone
 points (7) in [E] also governs the appearance of the piano and chromatic string
 clusters (1.1) in [E]. feels like the tempo of (7) and (1.1) in [E] is
 quarter=108.
+
+                                     * * *
+
+the oboe + Eb clarinet duet articulating [F1-2] adds a transient layer on top
+of the piano and chromatic string clusters at the end of [E] and the beginning
+of [F]. feels like [F1-2] starts with a sounding fermata in both instruments to
+build energy and then rushes forward and causing the (1.1) clusters in [F2] to
+carry a faster tempo than the (1.1) clusters in [E10-12]. tempo resets at the
+start of [E3]. the return of the glissando thicket in [F4-11] starts at faster
+tempo than the first occurrence of the glissando thicket in [E4-9]. so if [E4]
+started at quarter=36 and arrived at quarter=108 then [F4] starts at
+quarter=72. [F6] will be removed. the return of the bright piano and xylophone
+points (7.1) in [F8] picks up where (7.1) left off at the end of [E10] but with
+increased density. (7.1) reaches climax as it develops over [E10-15]. the
+points in [E10-15] should be especially striking. quarter=90 for the (7.1) over
+[E10-13]. subito metric modulation by 3:2 up to quarter=135 at the onset of
+[E14-15]. the gradual entrance of the third-octave interweave in the Bb
+clarinet, viola and cello in [F13] plants the seeds of a slower tempo
+underneath the ongoing brilliance of the points in (7.1). it is also clear that
+the third-octave interweave in [F] is actually much lower than that in the
+cello. third-octave interweave (4) operates at quarter=45 when it first appears
+in [F13] and again over [F15-23]. there's a written-out density increase in the
+harpsichord pointillism (9.1) during [F19-20] but no change in tempo.
+quarter=45 persists up through [F21]. metric modulation by 8:5 up to quater=72
+at the onset of [F22]. quarter=72 governs [F22-23] through to the start of [G].

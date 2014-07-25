@@ -81,3 +81,32 @@ close at the end of [B20] is important but can be left until the time of
 writing. when the clarinet and circle-scraped slate enter in [B19] they carry a
 new tempo. the tempo is quarter=72. neither accelerandi nor decelerandi govern
 [B19-20].
+
+                                     * * *
+
+[C1] begins quarter=108 with the entrance of the oboe. [C1] marks the first
+appearance of (6). [C1-9] constitutes a type of staggered and incomplete
+presentation of (6) because (6) does not appear in full anywhere in [C]. the
+oboe + Eb clarinet in [C1] only foreshadow a fuller presentation of the color.
+a pervasive experience of halting is active in [C]. a conductor's fermata
+follows the exit of the oboe and Eb clarinet at the end of [C1]. the
+circle-scraped slate continues during the fermata. the pointillism the piano,
+xylophone and piccolo woodblocks introduce as (7.1) during [C3] is handled as a
+series of short cells each followed by a conductor's fermata. the cells equal
+only single measures and the fermatas are short. the flautando pedals that the
+viola and cello present in [C2-C4] are not subject to this experience of
+halting. the flautando spanners and the circle-scraped slate glue together and
+form an underlayer. when the ornamented violin writing (6.1) enters in [C4]
+halting is suspended and time feels as though it is moving forward
+uninterruptedly for the first time in [C]. uninterrupted timeflow continues
+throughout [C5-6]. the reintroduction of the piano, xylophony and piccolo
+woodblocks at the start of [C7] brings the return of halting. halting persists
+throughout [C7-8] but is relinquished in [C9] to effect the exit of (6). global
+time-handling. tempo constant at quarter=108 over [C1-3]. accelerando during
+[C4-6] from quarter=108 up by 2:1 to quarter=216. tempo games during [C7-8]
+with subito tempo changes after almost every fermata. steady tempo at the start
+of [C9]. underneath the handling of (6) (10) effects a density decelerando over
+[C8-9] culminating in the unrestrained strings (10) in [C10]. quarter=45 at the
+start of [C10]. accelerando during [C10-12]. accelerando inflects both the
+incredibly loud string chord and piano clusters of [C10-12]. [C] ends at
+quater=135.

@@ -10,7 +10,7 @@ stages:
     [K1]
     14.1 "oboe reiteration storm"
     14.1 "clarinet reiteration storm"
-    14.1 "piano reiteration storm"
+    --
     9.1 "pointillism xylophone" (magic chord T1)
     9.1 "pointillism violin pizzicati" (magic chord T1)
     9.1 "pointillism viola pizzicati" (magic chord T1)

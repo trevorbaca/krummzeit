@@ -3,20 +3,22 @@
 delaying the time analysis of [A] until the time behavior of the other sections
 is determined.
 
-first region comprises [B1-5]. first attack of the harpsichord announces the
-start of [B]. the question of how to manage the introduction of the harpsichord
-relative to the piano is answered up front. tempo set to quarter=135. [B5] is a
-type of culmination. [B5] marks the first time all seven players play together
-after the introduction. time dilates during [B5]. time dilation saturates the
-color of (12). sounds like there are two occurrences of [B5] back-to-back.
-denote these [B5] and [B5']. the reason for this will be because the oboe will
-need a chance to establish its color after prior to time dilation in order to
-make the dilation as effective as possible. [B1-5] undergoes a process of
-rushing. the harpsichord becomes increasingly dense in [B1-5]. so do the
-clarinet, violin and oboe over the course of their entrances staggered after.
-at [B5] all four of the instruments of the fifth-octave polyphony of (12.1) are
-at a point of articulatory intensity. the viola and cello layers of the slower
-third-octave polyphony of (12.2) undergo no such process.
+                                     * * *
+
+first attack of the harpsichord announces the start of [B]. the question of how
+to manage the introduction of the harpsichord relative to the piano is answered
+up front. tempo set to quarter=135. [B5] is a type of culmination. [B5] marks
+the first time all seven players play together after the introduction. time
+dilates during [B5]. time dilation saturates the color of (12). sounds like
+there are two occurrences of [B5] back-to-back. denote these [B5] and [B5'].
+the reason for this will be because the oboe will need a chance to establish
+its color prior to time dilation in order to make the dilation as effective as
+possible. [B1-5] undergoes a process of rushing. the harpsichord becomes
+increasingly dense in [B1-5]. so do the clarinet, violin and oboe over the
+course of their entrances staggered after. at [B5] all four of the instruments
+of the fifth-octave polyphony of (12.1) are at a point of articulatory
+intensity. the viola and cello layers of the slower third-octave polyphony of
+(12.2) undergo no such process.
 
 after the introduction of the oboe at [B5] the whole of [B1-5] repeats. denote
 these two passes [B1-5] and [B1-5]'. the pitch-classes of all parts in both
@@ -40,7 +42,7 @@ strings introduce the on-the-bridge bowing of (3.5) incrementally. [B6] effects
 a return to the prevailing tempo of quarter=135 up from the slowpoint effected
 by the dilation in [B5'] before. the draw-down of (12.1) in [B7-10] persists at
 quarter=135 inflected neither by accelerandi nor by decelerandi nor by
-written-out changes in density of any of the parts. the exit of the sponged
+written-out changes in the density of any of the parts. the exit of the sponged
 bass drum at the end of [B10] leaves only the on-the-bridge bowing of the three
 strings in (3.5) unmixed with any of the other colors. [B11] is a field. [B11]
 changes the prevailing tempo by 2:3 down to quarter=90. the metric modulation
@@ -60,78 +62,73 @@ pickets articulate the clusters. the remainder of [B12-16] functions to
 multiply the points in the string and piano pizzicati of (9.1). a global
 accelerando governs [B12-16] or [B13-16]. the irregular articulations of the
 picket rhythms in the string layers of (9.1) contrast with the complete picket
-rhythms in the clusters. sounds like the accelerando is from quarter=90 back by
-3:2 up to quarter=135 in [B15] or [B16] with enough time given to effect the
-feeling of the faster tempo. the caesura (described next) then effects a subito
-ratcheting down of the tempo from quarter=135 to quarter=108. a tutti caesura
-articulates the end of [B16] before the onset of [B17]. the caesura allows the
-piano a moment to change modes of production from (3.3) to (9.1). the tam in
-(3.4) continues through the caesura even though all the other instruments do
-not.
+rhythms in the clusters. sounds like the accelerando is from quarter=90 up by
+3:2 to quarter=135 in [B15] or [B16] with enough time given to effect the
+feeling of the faster tempo. a tutti caesura articulates the end of [B16]
+before the onset of [B17]. the caesura allows the piano a moment to change
+modes of production from (3.3) to (9.1). the caesura effects a subito
+ratcheting down of the tempo from quarter=135 to quarter=108. the tam in (3.4)
+continues through the caesura even though all the other instruments do not.
 
-next region comprises [B17-20]. [B17] starts subito in quarter=108. this is the
-first time quarter=108 appears in the piece. after the tam exits at the end of
-[B17] there's a game at play in [B18-19] when the four layers of the pizzicati
-in (9.1) are all present. what characterizes the game? increasing density in
-some parts and decreasing density in others. all four players are
-tempo-inflected with exponential accelerandi on the order of only a measure or
-two at a time. in [B18-19] there's a second case of exact repetition at subito
-quieter dynamic (as in [B1-5]'). the way in which the piano brings (9.1) to a
-close at the end of [B20] is important but can be left until the time of
-writing. when the clarinet and circle-scraped slate enter in [B19] they carry a
-new tempo. the tempo is quarter=72. neither accelerandi nor decelerandi govern
-[B19-20].
+next region comprises [B17-20]. [B17] starts subito in quarter=108. after the
+tam exits at the end of [B17] there's a game at play in [B18-19] when the four
+layers of the pizzicati in (9.1) are all present. what characterizes the game?
+increasing density in some parts and decreasing density in others. all four
+players are tempo-inflected with exponential accelerandi on the order of only a
+measure or two at a time. in [B18-19] there's a second case of exact repetition
+at subito quieter dynamic (as in [B1-5]'). the way in which the piano brings
+(9.1) to a close at the end of [B20] is important but can be left until the
+time of writing. when the clarinet and circle-scraped slate enter in [B19] they
+carry a new tempo. the tempo is quarter=72. neither accelerandi nor decelerandi
+govern [B19-20].
 
                                      * * *
 
 [C1] begins quarter=108 with the entrance of the oboe. [C1] marks the first
 appearance of (6). [C1-9] constitutes a type of staggered and incomplete
-presentation of (6) because (6) does not appear in full anywhere in [C]. the
-oboe + Eb clarinet in [C1] only foreshadow a fuller presentation of the color.
-a pervasive experience of halting is active in [C]. a conductor's fermata
-follows the exit of the oboe and Eb clarinet at the end of [C1]. the
-circle-scraped slate continues during the fermata. the pointillism the piano,
-xylophone and piccolo woodblocks introduce as (7.1) during [C3] is handled as a
-series of short cells each followed by a conductor's fermata. the cells equal
-only single measures and the fermatas are short. the flautando pedals that the
-viola and cello present in [C2-C4] are not subject to this experience of
-halting. the flautando spanners and the circle-scraped slate glue together and
-form an underlayer. when the ornamented violin writing (6.1) enters in [C4]
-halting is suspended and time feels as though it is moving forward
-uninterruptedly for the first time in [C]. uninterrupted timeflow continues
-throughout [C5-6]. the reintroduction of the piano, xylophony and piccolo
-woodblocks at the start of [C7] brings the return of halting. halting persists
-throughout [C7-8] but is relinquished in [C9] to effect the exit of (6). global
-time-handling. tempo constant at quarter=108 over [C1-3]. accelerando during
-[C4-6] from quarter=108 up by 2:1 to quarter=216. tempo games during [C7-8]
-with subito tempo changes after almost every fermata. steady tempo at the start
-of [C9]. underneath the handling of (6) (10) effects a density decelerando over
-[C8-9] culminating in the unrestrained strings (10) in [C10]. quarter=45 at the
-start of [C10]. accelerando during [C10-12]. accelerando inflects both the
-incredibly loud string chord and piano clusters of [C10-12]. [C] ends at
-quater=135.
+presentation of (6). a pervasive experience of halting is active in [C]. a
+conductor's fermata follows the exit of the oboe and Eb clarinet at the end of
+[C1]. the circle-scraped slate continues during the fermata. the pointillism
+the piano, xylophone and piccolo woodblocks introduce as (7.1) during [C3] is
+handled as a series of short cells each followed by a conductor's fermata. the
+cells equal only single measures and the fermatas are short. the flautando
+pedals that the viola and cello present in [C2-C4] are not subject to this
+experience of halting. the flautando spanners and the circle-scraped slate glue
+together and form an underlayer. when the ornamented violin writing (6.1)
+enters in [C4] halting is suspended and time feels as though it is moving
+forward uninterruptedly for the first time in [C]. uninterrupted timeflow
+continues throughout [C5-6]. the reintroduction of the piano, xylophony and
+piccolo woodblocks at the start of [C7] brings the return of halting. halting
+persists throughout [C7-8] but is relinquished in [C9] to effect the exit of
+(6). global time-handling. tempo constant at quarter=108 over [C1-3].
+accelerando during [C4-6] from quarter=108 up by 2:1 to quarter=216. tempo
+games during [C7-8] with subito tempo changes after almost every fermata.
+steady tempo at the start of [C9]. underneath the handling of (6) (10) effects
+a density decelerando over [C8-9] culminating in the unrestrained strings (10)
+in [C10]. quarter=45 at the start of [C10]. accelerando during [C10-12].
+accelerando inflects both the incredibly loud string chord and piano clusters
+of [C10-12]. [C] ends at quater=135.
 
                                      * * *
 
-the return of (10) during [D7-10] reprises the appearance of (10) in [C7-11].
-the harpsichord and string pointillism of (9) during [D1-5] activates a
-completely different part of the spectrum between the string writing of [C7-11]
-and [D7-10]. [D1-5] starts at quarter=135 and is subject to an uninterrupted
-series of undulating chagnes of tempo. the exit of the pointillism at the end
-of [D5] regularizes the tempo in preparation for the reappearance of the loud
-writing in (10.2) during [D7-10]. there are both pitch and tempo differences
-between the loud string writing in [C7-11] and the reappearance of the loud
-string writing in [D7-10]. the reappearance in [D7-10] is up-transposed. the
-reappearance in [D7-10] is not subject to accelerando. if anything the
-reappearance in [D7-10] is subject to decelarando leading to the introduction
-of the block oboe at the start of [D9]. the block oboe (2.1) in [D9-11]
-constitutes the climax of [D]. the material of the climax is loud and the tempo
-of the climax is quarter=45. the staggered entrances of the tam (2.5) and the
-bass clarinet (2.4) in [D9] and [D11] serve to shadow and to deepen the oboe.
-the climax is effected in the oboe writing itself in [D9-11]. the oboe writing
-in [D9-11] is slow but inflected with momentary pullings-forward and momentary
-holdings-back. a pronounced decelerando governs [D11-12] and brings [D12] to a
-close. timeflow stops phenomenologically at the start of [E].
+the return of (10) in [D7-10] reprises (10) in [C7-11]. the harpsichord and
+string pointillism of (9) in [D1-5] activates a completely different part of
+the spectrum between [C7-11] and [D7-10]. [D1-5] starts at quarter=135 and is
+subject to an uninterrupted series of undulating changes of tempo. the exit of
+the pointillism at the end of [D5] regularizes the tempo in preparation for the
+reappearance of the loud writing in (10.2) during [D7-10]. there are both pitch
+and tempo differences between the loud string writing in [C7-11] and the loud
+string writing in [D7-10]. [D7-10] is up-transposed. the reappearance in
+[D7-10] is not subject to accelerando. if anything the reappearance in [D7-10]
+is subject to decelarando leading to the introduction of the block oboe at the
+start of [D9]. the block oboe (2.1) in [D9-11] constitutes the climax of [D].
+the material of the climax is loud and the tempo of the climax is quarter=45.
+the staggered entrances of the tam (2.5) and the bass clarinet (2.4) in [D9]
+and [D11] serve to shadow and to deepen the oboe. the climax is effected in the
+oboe writing itself in [D9-11]. the oboe writing in [D9-11] is slow but
+inflected with momentary pullings-forward and momentary holdings-back. a
+pronounced decelerando governs [D11-12] and brings [D12] to a close. timeflow
+stops phenomenologically at the start of [E].
 
                                      * * *
 
@@ -158,18 +155,19 @@ tempo than the first occurrence of the glissando thicket in [E4-9]. so if [E4]
 started at quarter=36 and arrived at quarter=108 then [F4] starts at
 quarter=72. [F6] will be removed. the return of the bright piano and xylophone
 points (7.1) in [F8] picks up where (7.1) left off at the end of [E10] but with
-increased density. (7.1) reaches climax as it develops over [E10-15]. the
-points in [E10-15] should be especially striking. quarter=90 for the (7.1) over
-[E10-13]. subito metric modulation by 3:2 up to quarter=135 at the onset of
-[E14-15]. the gradual entrance of the third-octave interweave in the Bb
+increased density. (7.1) reaches climax as it develops over [F10-15]. the
+points in [F10-15] should be especially striking. quarter=90 for the (7.1) over
+[F10-13]. subito metric modulation by 3:2 up to quarter=135 at the onset of
+[F14-15]. the gradual entrance of the third-octave interweave in the Bb
 clarinet, viola and cello in [F13] plants the seeds of a slower tempo
 underneath the ongoing brilliance of the points in (7.1). it is also clear that
 the third-octave interweave in [F] is actually much lower than that in the
-cello. third-octave interweave (4) operates at quarter=45 when it first appears
-in [F13] and again over [F15-23]. there's a written-out density increase in the
-harpsichord pointillism (9.1) during [F19-20] but no change in tempo.
-quarter=45 persists up through [F21]. metric modulation by 8:5 up to quater=72
-at the onset of [F22]. quarter=72 governs [F22-23] through to the start of [G].
+cello. third-octave interweave (4) operates at effective tempo <quarter=45>
+when it first appears in [F13] and again in [F15-23]. there's a written-out
+density increase in the harpsichord pointillism (9.1) during [F19-20] but no
+change in tempo. quarter=45 persists up through [F21]. metric modulation by 8:5
+up to quater=72 at the onset of [F22]. quarter=72 governs [F22-23] through to
+the start of [G].
 
                                      * * *
 
@@ -198,7 +196,7 @@ polyphony (12) can continue at quarter=144. there's clearly a subito tempo
 change at the onset of [H13] with the appearance of the piano and sponged bass
 drum (5). the tempo change is a down-modulation by 5:8 to quarter=90. [H17]
 marks the entrance of the closing material in the form of the retieration storm
-(14.1) in the oboe and Eb clarinet. the first appearances of the material come
+(14.1) in the oboe and Eb clarinet. the first appearances of the material comes
 from the outline of start-attacks in the glissando thicket (5.3) present in the
 other instruments. and probably the first appearances of the closing material
 are subject to a process of either halting or some other type of intermittency.
@@ -224,7 +222,7 @@ degree more dense. the rhythm of the oboe and Eb clarinet (11.1) in [I3-6] is
 more of less exactly the rhythm of the harpsichord clusters (11.1) in [I] and
 is crucially filled in with sustained material between the fluttertongue
 attacks of the principal notes. so there's an accelerando over [I2-5] up from
-quarter=90 by 3:2 to quarter=135. this means that the reetrance of the
+quarter=90 by 3:2 to quarter=135. this means that the reentrance of the
 reiteration storm in the strings (14.1) at the onset of [G6] now happens at
 quarter=135 instead of quarter=90. the handling of the layering back in of the
 reiteration storm over [I6-8] can be left to the time of writing. but it's

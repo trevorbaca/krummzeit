@@ -170,3 +170,20 @@ in [F13] and again over [F15-23]. there's a written-out density increase in the
 harpsichord pointillism (9.1) during [F19-20] but no change in tempo.
 quarter=45 persists up through [F21]. metric modulation by 8:5 up to quater=72
 at the onset of [F22]. quarter=72 governs [F22-23] through to the start of [G].
+
+                                     * * *
+
+[G] starts at quarter=72 with only third-octave polyphony (12.2) in the viola
+and cello. perhaps the predominant dynamic of the opening of [G] is quiet for
+one of the first times in the piece. this may be true even for the fifth-octave
+polyphony (12.1) given to the oboe and Eb clarinet in [G3-7]. it sounds like
+the entrance of the harpsichord (2.2) at the onset of [G3] is a counterpoint of
+rhythm more than a counterpoint of pitch. in fact it sounds like the
+harpsichord in [G] may be confined to a reiterated pitch or to reiteration
+confined to a series of slowly ascending or slowly descending pitches selected
+quasichromatically. it also sounds like the reiteration present in the
+harpsichord in [G] is taken in some way from the ppp snare roll (10.2) in [G].
+[G8] constitutes the climax of the unrestrained strings (10.1) in [G] and
+perhaps in the piece. so it's clear that a substantial accelerando governs all
+of [G8-14]. accelerando begins at quarter=72 and accelerates by 2:1 to
+quarter=144.

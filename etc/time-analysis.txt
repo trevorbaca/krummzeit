@@ -187,3 +187,24 @@ harpsichord in [G] is taken in some way from the ppp snare roll (10.2) in [G].
 perhaps in the piece. so it's clear that a substantial accelerando governs all
 of [G8-14]. accelerando begins at quarter=72 and accelerates by 2:1 to
 quarter=144.
+
+                                     * * *
+
+[H] starts at the fast tempo of quarter=144 which is interesting because the
+opening writing in the oboe (2) and accompanying layers are essentially
+pesante in nature. so the notation will be fast tempo with larger durations to
+give a heaviness of surface. the gradual tapering in of the fifth-octave
+polyphony (12) can continue at quarter=144. there's clearly a subito tempo
+change at the onset of [H13] with the appearance of the piano and sponged bass
+drum (5). the tempo change is a down-modulation by 5:8 to quarter=90. [H17]
+marks the entrance of the closing material in the form of the retieration storm
+(14.1) in the oboe and Eb clarinet. the first appearances of the material come
+from the outline of start-attacks in the glissando thicket (5.3) present in the
+other instruments. and probably the first appearances of the closing material
+are subject to a process of either halting or some other type of intermittency.
+[H20] is special because that stage of the segment gives the complete color of
+(14) in the winds and the strings. so there's a structural or literal fermata
+over [H20]. there is also the feeling of acceleration or indeed literal
+acceleration governing [H20]. the promise of the energy of [K] is first made
+clear in [H20]. quarter=90 holds through the end of [H] even during the
+increases in denisty or energy in [H20].

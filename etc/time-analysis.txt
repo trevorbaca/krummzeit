@@ -232,3 +232,15 @@ clear that [I8] is special in the same way as [H20]. there's a structural
 fermata or literal fermata over [I8] and also increase in density or energy
 during [I8]. whether that requires a change in written tempo will be left to
 the time of writing.
+
+                                     * * *
+
+[J] starts at quarter=135 but probably decreases from there almost immediately
+to allow for [J] to function as reprieve from the ending process of [H], [I],
+[K]. metric modulation at the onset of [J3] from quarter=135 down by 2:3 to
+quarter=90 for all of [J3-4]. metric modulation at the onset of [J5] from
+quarter=90 up by 6:5 to quater=108 for all of [J5-6]. metric modulation at the
+onset of [J7] from quarter=108 down by 2:3 to quarter=72 for all of [J7-8].
+pronounced decelerando during [J9-10] from quarter=72 down to quarter=36 for
+all of [J11-12]. accelerando from quarter=36 up by 4:1 to quarter=144 during
+[J13-15]. [J] ends just before the accelerando achieve quarter=144.

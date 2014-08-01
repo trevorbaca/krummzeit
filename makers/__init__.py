@@ -1,2 +1,2 @@
 # -*- encoding: utf-8 -*-
-from KrummzeitScoreTemplate import KrummzeitScoreTemplate
+from ScoreTemplate import ScoreTemplate

@@ -14,8 +14,8 @@ class ScoreTemplate(abctools.AbjadObject):
     def __call__(self):
         r'''Calls Krummzeit score template.
 
-        >>> from krummzeit.makers import ScoreTemplate
-        >>> template = ScoreTemplate()
+        >>> from krummzeit import makers
+        >>> template = makers.ScoreTemplate()
         >>> score = template()
         >>> f(score)
         \context Score = "Krummzeit Score" <<

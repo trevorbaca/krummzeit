@@ -21,49 +21,49 @@ class ScoreTemplate(abctools.AbjadObject):
         \context Score = "Krummzeit Score" <<
             \context TimeSignatureContext = "Time Signature Context" {
             }
-            \context PianoStaff = "Wind Staff Group" <<
-                \context Staff = "Oboe Staff" {
+            \context WindSectionStaffGroup = "Wind Section Staff Group" <<
+                \context OboeMusicStaff = "Oboe Music Staff" {
                     \set Staff.instrumentName = \markup { Oboe }
                     \set Staff.shortInstrumentName = \markup { Ob. }
-                    \context Voice = "Oboe Voice" {
+                    \context OboeMusicVoice = "Oboe Music Voice" {
                     }
                 }
-                \context Staff = "Clarinet Staff" {
+                \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \set Staff.instrumentName = \markup { Clarinet in B-flat }
                     \set Staff.shortInstrumentName = \markup { Cl. in B-flat }
-                    \context Voice = "Clarinet Voice" {
+                    \context ClarinetMusicVoice = "Clarinet Music Voice" {
                     }
                 }
             >>
-            \context PianoStaff = "Percussion Staff Group" <<
-                \context Staff = "Piano Staff" {
-                    \set PianoStaff.instrumentName = \markup { Piano }
-                    \set PianoStaff.shortInstrumentName = \markup { Pf. }
-                    \context Voice = "Piano Voice" {
+            \context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
+                \context PianoMusicStaff = "Piano Music Staff" {
+                    %%% \set PianoStaff.instrumentName = \markup { Piano } %%%
+                    %%% \set PianoStaff.shortInstrumentName = \markup { Pf. } %%%
+                    \context PianoMusicVoice = "Piano Music Voice" {
                     }
                 }
-                \context Staff = "Percussion Staff" {
-                    \context Voice = "Percussion Voice" {
+                \context PercussionMusicStaff = "Percussion Staff" {
+                    \context PercussionMusicVoice = "Percussion Music Voice" {
                     }
                 }
             >>
-            \context PianoStaff = "String Staff Group" <<
-                \context Staff = "Violin Staff" {
+            \context StringSectionStaffGroup = "String Section Staff Group" <<
+                \context ViolinMusicStaff = "Violin Music Staff" {
                     \set Staff.instrumentName = \markup { Violin }
                     \set Staff.shortInstrumentName = \markup { Vn. }
-                    \context Voice = "Violin Voice" {
+                    \context ViolinMusicVoice = "Violin Music Voice" {
                     }
                 }
-                \context Staff = "Viola Staff" {
+                \context ViolaMusicStaff = "Viola Music Staff" {
                     \set Staff.instrumentName = \markup { Viola }
                     \set Staff.shortInstrumentName = \markup { Va. }
-                    \context Voice = "Viola Voice" {
+                    \context ViolaMusicVoice = "Viola Music Voice" {
                     }
                 }
-                \context Staff = "Cello Staff" {
+                \context CelloMusicStaff = "Cello Music Staff" {
                     \set Staff.instrumentName = \markup { Cello }
                     \set Staff.shortInstrumentName = \markup { Vc. }
-                    \context Voice = "Cello Voice" {
+                    \context CelloMusicVoice = "Cello Music Voice" {
                     }
                 }
             >>
@@ -80,101 +80,115 @@ class ScoreTemplate(abctools.AbjadObject):
             )
 
         # make wind contexts
-        oboe_voice = scoretools.Voice(
+        oboe_music_voice = scoretools.Voice(
             [], 
-            name='Oboe Voice',
+            context_name='OboeMusicVoice',
+            name='Oboe Music Voice',
             )
-        oboe_staff = scoretools.Staff(
-            [oboe_voice], 
-            name='Oboe Staff',
+        oboe_music_staff = scoretools.Staff(
+            [oboe_music_voice], 
+            context_name='OboeMusicStaff',
+            name='Oboe Music Staff',
             )
         oboe = performer_inventory.get_instrument('oboe')
-        attach(oboe, oboe_staff)
-        clarinet_voice = scoretools.Voice(
+        attach(oboe, oboe_music_staff)
+        clarinet_music_voice = scoretools.Voice(
             [],
-            name='Clarinet Voice',
+            context_name='ClarinetMusicVoice',
+            name='Clarinet Music Voice',
             )
-        clarinet_staff = scoretools.Staff(
-            [clarinet_voice],
-            name='Clarinet Staff',
+        clarinet_music_staff = scoretools.Staff(
+            [clarinet_music_voice],
+            context_name='ClarinetMusicStaff',
+            name='Clarinet Music Staff',
             )
         clarinet = performer_inventory.get_instrument('clarinet in B-flat')
-        attach(clarinet, clarinet_staff)
-        wind_staff_group = scoretools.StaffGroup(
-            [oboe_staff, clarinet_staff], 
-            context_name='PianoStaff',
-            name='Wind Staff Group',
+        attach(clarinet, clarinet_music_staff)
+        wind_section_staff_group = scoretools.StaffGroup(
+            [oboe_music_staff, clarinet_music_staff], 
+            context_name='WindSectionStaffGroup',
+            name='Wind Section Staff Group',
             )
 
         # make percussion contexts
-        piano_voice = scoretools.Voice(
+        piano_music_voice = scoretools.Voice(
             [], 
-            name='Piano Voice',
+            context_name='PianoMusicVoice',
+            name='Piano Music Voice',
             )
-        piano_staff = scoretools.Staff(
-            [piano_voice], 
-            name='Piano Staff',
+        piano_music_staff = scoretools.Staff(
+            [piano_music_voice], 
+            context_name='PianoMusicStaff',
+            name='Piano Music Staff',
             )
         piano = performer_inventory.get_instrument('piano')
-        attach(piano, piano_staff)
-        percussion_voice = scoretools.Voice(
+        attach(piano, piano_music_staff)
+        percussion_music_voice = scoretools.Voice(
             [],
-            name='Percussion Voice',
+            context_name='PercussionMusicVoice',
+            name='Percussion Music Voice',
             )
-        percussion_staff = scoretools.Staff(
-            [percussion_voice],
+        percussion_music_staff = scoretools.Staff(
+            [percussion_music_voice],
+            context_name='PercussionMusicStaff',
             name='Percussion Staff',
             )
-        percussion_staff_group = scoretools.StaffGroup(
-            [piano_staff, percussion_staff], 
-            context_name='PianoStaff',
-            name='Percussion Staff Group',
+        percussion_section_staff_group = scoretools.StaffGroup(
+            [piano_music_staff, percussion_music_staff], 
+            context_name='PercussionSectionStaffGroup',
+            name='Percussion Section Staff Group',
             )
 
         # make string contexts
-        violin_voice = scoretools.Voice(
+        violin_music_voice = scoretools.Voice(
             [], 
-            name='Violin Voice',
+            context_name='ViolinMusicVoice',
+            name='Violin Music Voice',
             )
-        violin_staff = scoretools.Staff(
-            [violin_voice], 
-            name='Violin Staff',
+        violin_music_staff = scoretools.Staff(
+            [violin_music_voice], 
+            context_name='ViolinMusicStaff',
+            name='Violin Music Staff',
             )
         violin = performer_inventory.get_instrument('violin')
-        attach(violin, violin_staff)
-        viola_voice = scoretools.Voice(
+        attach(violin, violin_music_staff)
+        viola_music_voice = scoretools.Voice(
             [], 
-            name='Viola Voice',
+            context_name='ViolaMusicVoice',
+            name='Viola Music Voice',
             )
-        viola_staff = scoretools.Staff(
-            [viola_voice], 
-            name='Viola Staff',
+        viola_music_staff = scoretools.Staff(
+            [viola_music_voice], 
+            context_name='ViolaMusicStaff',
+            name='Viola Music Staff',
             )
         viola = performer_inventory.get_instrument('viola')
-        attach(viola, viola_staff)
-        cello_voice = scoretools.Voice(
+        attach(viola, viola_music_staff)
+        cello_music_voice = scoretools.Voice(
             [], 
-            name='Cello Voice',
+            context_name='CelloMusicVoice',
+            name='Cello Music Voice',
             )
-        cello_staff = scoretools.Staff(
-            [cello_voice], 
-            name='Cello Staff',
+        cello_music_staff = scoretools.Staff(
+            [cello_music_voice], 
+            context_name='CelloMusicStaff',
+            name='Cello Music Staff',
             )
         cello = performer_inventory.get_instrument('cello')
-        attach(cello, cello_staff)
-        string_staff_group = scoretools.StaffGroup(
-            [violin_staff, viola_staff, cello_staff], 
-            context_name='PianoStaff',
-            name='String Staff Group',
+        attach(cello, cello_music_staff)
+        string_section_staff_group = scoretools.StaffGroup(
+            [violin_music_staff, viola_music_staff, cello_music_staff], 
+            context_name='StringSectionStaffGroup',
+            name='String Section Staff Group',
             )
         
         # make score
         score = Score(
             [
             time_signature_context,
-            wind_staff_group,
-            percussion_staff_group,
-            string_staff_group,
+            wind_section_staff_group,
+            percussion_section_staff_group,
+            string_section_staff_group,
             ],
             name='Krummzeit Score',
             )

@@ -1,4 +1,5 @@
 # -*- encoding: utf-8 -*-
+import os
 from abjad import *
 from experimental.tools import segmentmakertools
 
@@ -16,7 +17,7 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
         time_signatures=None,
         ):
         superclass = super(SegmentMaker, self)
-        superclass.__init__(self, name=name)
+        superclass.__init__(name=name)
         self._initialize_time_signatures(time_signatures)
         self._initialize_music_makers(music_makers)
 
@@ -27,28 +28,72 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
 
         Returns LilyPond file.
         '''
+        self._make_score()
+        self._make_lilypond_file()
+        self._configure_lilypond_file()
+        self._populate_time_signature_context()
+        self._handle_music_makers()
+        return self.lilypond_file
+
+    def _make_lilypond_file(self):
+        function = lilypondfiletools.make_floating_time_signature_lilypond_file
+        lilypond_file = function(self._score)
+        self._lilypond_file = lilypond_file
+
+    def _make_score(self):
         from krummzeit import makers
         template = makers.ScoreTemplate()
         score = template()
         self._score = score
-        time_signature_context = score['Time Signature Context']
-        measures = self._make_measures()
-        time_signature_context.extend(measures)
-        self._configure_score(score)
-        lilypond_file = \
-            lilypondfiletools.make_floating_time_signature_lilypond_file(
-            score)
-        self._configure_lilypond_file(lilypond_file)
-        self._lilypond_file = lilypond_file
-        return self.lilypond_file
 
     ### PRIVATE METHODS ###
 
     def _configure_lilypond_file(self):
-        pass
+        lilypond_file = self._lilypond_file
+        lilypond_file.use_relative_includes = True
+        path = os.path.join(
+            '..',
+            '..',
+            'stylesheets',
+            'stylesheet.ily',
+            )
+        lilypond_file.file_initial_user_includes.append(path)
+#        layout_block = lilypond_file[1]
+#        assert isinstance(layout_block, lilypondfiletools.LayoutBlock)
+#        lilypond_file.remove(layout_block)
 
-    def _configure_score(self):
-        pass
+#        stylesheet_path = os.path.join(
+#            os.environ.get('TRAIETTORIE'),
+#            'stylesheets',
+#            )
+#        file_names = (
+#            'traiettorie-header.ly',
+#            'traiettorie-miscellaneous.ly',
+#            'traiettorie-paper.ly',
+#            'traiettorie-layout.ly',
+#            )
+#        for file_name in file_names:
+#            file_path = os.path.join(stylesheet_path, file_name)
+#            lilypond_file.file_initial_user_includes.append(file_path)
+
+        title = 'Krummzeit ({})'.format(self.name)
+        lilypond_file.header_block.title = markuptools.Markup(title)
+        if self.name == 'A':
+            string = r'\raise #-5 \italic { for Ensemble Mosaik }'
+            subtitle = markuptools.Markup(string)
+            lilypond_file.header_block.subtitle = subtitle
+        else:
+            lilypond_file.header_block.composer = None
+        #lilypond_file.default_paper_size = '11x17', 'landscape'
+        #lilypond_file.global_staff_size = 16
+
+    def _handle_music_makers(self):
+        if not self.music_makers:
+            for voice in iterate(self._score).by_class(scoretools.Voice):
+                print(voice)
+                measures = scoretools.make_spacer_skip_measures(
+                    self.time_signatures)
+                voice.extend(measures)
 
     def _initialize_music_makers(self, music_makers):
         from krummzeit import makers
@@ -58,7 +103,7 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
             assert isinstance(music_maker, makers.MusicMaker), repr(music_maker)
         self._music_makers = music_makers
 
-    def _initialize_time_signtaures(self, time_signatures):
+    def _initialize_time_signatures(self, time_signatures):
         time_signatures = time_signatures or ()
         time_signatures_ = list(time_signatures)
         time_signatures_ = []
@@ -69,13 +114,18 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
         self._time_signatures = time_signatures_
 
     def _make_measures(self):
-        measures = measuretools.make_spacer_skip_measures(self.time_signatures)
+        measures = scoretools.make_spacer_skip_measures(self.time_signatures)
         return measures
+
+    def _populate_time_signature_context(self):
+        measures = self._make_measures()
+        time_signature_context = self._score['Time Signature Context']
+        time_signature_context.extend(measures)
 
     ### PUBLIC PROPERTIES ###
 
     @property
-    def music_makes(self):
+    def music_makers(self):
         r'''Gets segment maker's music makers.
 
         Returns tuple of music makers.
@@ -88,4 +138,4 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
 
         Returns tuple of time signatures.
         '''
-        return self._time_sigantures
+        return self._time_signatures

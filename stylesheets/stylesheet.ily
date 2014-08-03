@@ -121,9 +121,9 @@
         \alias Staff
         \accepts OboeMusicVoice
         instrumentName = \markup { 
-            \column { \hcenter-in #10 \italic { Oboe } } }
+            \column { \hcenter-in #10 Oboe } }
         shortInstrumentName = \markup { 
-            \column { \hcenter-in #10 \italic { Ob. } } }
+            \column { \hcenter-in #10 Ob. } }
     }
     \context {
         \Voice
@@ -136,11 +136,27 @@
         \name ClarinetMusicStaff
         \type Engraver_group
         \alias Staff
-        \accepts OboeMusicVoice
-        instrumentName = \markup { 
-            \column { \hcenter-in #10 \italic { Clarinet in B \flat } } }
-        shortInstrumentName = \markup { 
-            \column { \hcenter-in #10 \italic { Cl. B \flat } } }
+        \accepts ClarinetMusicVoice
+        instrumentName = \markup { \column {
+            \hcenter-in #10 {
+                Clarinet 
+                \line { 
+                    (B
+                    \hspace #-0.5 \fontsize #-3 \raise #0.5 \flat
+                    \hspace #-0.5 ) 
+                } 
+            }
+        } }
+        shortInstrumentName = \markup { \column {
+            \hcenter-in #10 {
+                Cl.
+                \line { 
+                    (B
+                    \hspace #-0.5 \fontsize #-3 \raise #0.5 \flat
+                    \hspace #-0.5 ) 
+                } 
+            }
+        } }
     }
     \context {
         \PianoStaff
@@ -164,9 +180,9 @@
         \alias Staff
         \accepts PianoMusicVoice
         instrumentName = \markup { 
-            \column { \hcenter-in #10 \italic { Piano } } }
+            \column { \hcenter-in #10 Piano } }
         shortInstrumentName = \markup { 
-            \column { \hcenter-in #10 \italic { Pf. } } }
+            \column { \hcenter-in #10 Pf. } }
     }
     \context {
         \Voice
@@ -181,9 +197,9 @@
         \alias Staff
         \accepts PercussionMusicVoice
         instrumentName = \markup { 
-            \column { \hcenter-in #10 \italic { Percussion } } }
+            \column { \hcenter-in #10 Percussion } }
         shortInstrumentName = \markup { 
-            \column { \hcenter-in #10 \italic { Perc. } } }
+            \column { \hcenter-in #10 Perc. } }
     }
     \context {
         \PianoStaff
@@ -207,9 +223,9 @@
         \alias Staff
         \accepts ViolinMusicVoice
         instrumentName = \markup { 
-            \column { \hcenter-in #10 \italic { Violin } } }
+            \column { \hcenter-in #10 Violin } }
         shortInstrumentName = \markup { 
-            \column { \hcenter-in #10 \italic { Vn. } } }
+            \column { \hcenter-in #10 Vn. } }
     }
     \context {
         \Voice
@@ -224,9 +240,9 @@
         \alias Staff
         \accepts ViolaMusicVoice
         instrumentName = \markup { 
-            \column { \hcenter-in #10 \italic { Viola } } }
+            \column { \hcenter-in #10 Viola } }
         shortInstrumentName = \markup { 
-            \column { \hcenter-in #10 \italic { Va. } } }
+            \column { \hcenter-in #10 Va. } }
     }
     \context {
         \Voice
@@ -241,9 +257,9 @@
         \alias Staff
         \accepts CelloMusicVoice
         instrumentName = \markup { 
-            \column { \hcenter-in #10 \italic { Cello } } }
+            \column { \hcenter-in #10 Cello } }
         shortInstrumentName = \markup { 
-            \column { \hcenter-in #10 \italic { Vc. } } }
+            \column { \hcenter-in #10 Vc. } }
     }
     \context {
         \PianoStaff

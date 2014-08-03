@@ -23,22 +23,16 @@ class ScoreTemplate(abctools.AbjadObject):
             }
             \context WindSectionStaffGroup = "Wind Section Staff Group" <<
                 \context OboeMusicStaff = "Oboe Music Staff" {
-                    \set Staff.instrumentName = \markup { Oboe }
-                    \set Staff.shortInstrumentName = \markup { Ob. }
                     \context OboeMusicVoice = "Oboe Music Voice" {
                     }
                 }
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
-                    \set Staff.instrumentName = \markup { Clarinet in B-flat }
-                    \set Staff.shortInstrumentName = \markup { Cl. in B-flat }
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
                     }
                 }
             >>
             \context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
                 \context PianoMusicStaff = "Piano Music Staff" {
-                    %%% \set PianoStaff.instrumentName = \markup { Piano } %%%
-                    %%% \set PianoStaff.shortInstrumentName = \markup { Pf. } %%%
                     \context PianoMusicVoice = "Piano Music Voice" {
                     }
                 }
@@ -49,20 +43,14 @@ class ScoreTemplate(abctools.AbjadObject):
             >>
             \context StringSectionStaffGroup = "String Section Staff Group" <<
                 \context ViolinMusicStaff = "Violin Music Staff" {
-                    \set Staff.instrumentName = \markup { Violin }
-                    \set Staff.shortInstrumentName = \markup { Vn. }
                     \context ViolinMusicVoice = "Violin Music Voice" {
                     }
                 }
                 \context ViolaMusicStaff = "Viola Music Staff" {
-                    \set Staff.instrumentName = \markup { Viola }
-                    \set Staff.shortInstrumentName = \markup { Va. }
                     \context ViolaMusicVoice = "Viola Music Voice" {
                     }
                 }
                 \context CelloMusicStaff = "Cello Music Staff" {
-                    \set Staff.instrumentName = \markup { Cello }
-                    \set Staff.shortInstrumentName = \markup { Vc. }
                     \context CelloMusicVoice = "Cello Music Voice" {
                     }
                 }
@@ -91,7 +79,7 @@ class ScoreTemplate(abctools.AbjadObject):
             name='Oboe Music Staff',
             )
         oboe = performer_inventory.get_instrument('oboe')
-        attach(oboe, oboe_music_staff)
+        #attach(oboe, oboe_music_staff)
         clarinet_music_voice = scoretools.Voice(
             [],
             context_name='ClarinetMusicVoice',
@@ -103,7 +91,7 @@ class ScoreTemplate(abctools.AbjadObject):
             name='Clarinet Music Staff',
             )
         clarinet = performer_inventory.get_instrument('clarinet in B-flat')
-        attach(clarinet, clarinet_music_staff)
+        #attach(clarinet, clarinet_music_staff)
         wind_section_staff_group = scoretools.StaffGroup(
             [oboe_music_staff, clarinet_music_staff], 
             context_name='WindSectionStaffGroup',
@@ -122,7 +110,7 @@ class ScoreTemplate(abctools.AbjadObject):
             name='Piano Music Staff',
             )
         piano = performer_inventory.get_instrument('piano')
-        attach(piano, piano_music_staff)
+        #attach(piano, piano_music_staff)
         percussion_music_voice = scoretools.Voice(
             [],
             context_name='PercussionMusicVoice',
@@ -151,7 +139,7 @@ class ScoreTemplate(abctools.AbjadObject):
             name='Violin Music Staff',
             )
         violin = performer_inventory.get_instrument('violin')
-        attach(violin, violin_music_staff)
+        #attach(violin, violin_music_staff)
         viola_music_voice = scoretools.Voice(
             [], 
             context_name='ViolaMusicVoice',
@@ -163,7 +151,7 @@ class ScoreTemplate(abctools.AbjadObject):
             name='Viola Music Staff',
             )
         viola = performer_inventory.get_instrument('viola')
-        attach(viola, viola_music_staff)
+        #attach(viola, viola_music_staff)
         cello_music_voice = scoretools.Voice(
             [], 
             context_name='CelloMusicVoice',
@@ -175,7 +163,7 @@ class ScoreTemplate(abctools.AbjadObject):
             name='Cello Music Staff',
             )
         cello = performer_inventory.get_instrument('cello')
-        attach(cello, cello_music_staff)
+        #attach(cello, cello_music_staff)
         string_section_staff_group = scoretools.StaffGroup(
             [violin_music_staff, viola_music_staff, cello_music_staff], 
             context_name='StringSectionStaffGroup',

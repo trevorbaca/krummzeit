@@ -1,4 +1,4 @@
-% 2014-08-01 15:35
+% 2014-08-03 12:09
 
 \version "2.19.10"
 \language "english"
@@ -12,7 +12,7 @@
 
 \header {
 	composer = ##f
-	title = \markup { Krummzeit (None) }
+	title = \markup { Krummzeit (B) }
 }
 
 \layout {
@@ -100,8 +100,6 @@
 		}
 		\context WindSectionStaffGroup = "Wind Section Staff Group" <<
 			\context OboeMusicStaff = "Oboe Music Staff" {
-				\set Staff.instrumentName = \markup { Oboe }
-				\set Staff.shortInstrumentName = \markup { Ob. }
 				\context OboeMusicVoice = "Oboe Music Voice" {
 					{
 						\time 3/4
@@ -132,8 +130,6 @@
 				}
 			}
 			\context ClarinetMusicStaff = "Clarinet Music Staff" {
-				\set Staff.instrumentName = \markup { Clarinet in B-flat }
-				\set Staff.shortInstrumentName = \markup { Cl. in B-flat }
 				\context ClarinetMusicVoice = "Clarinet Music Voice" {
 					{
 						\time 3/4
@@ -166,8 +162,6 @@
 		>>
 		\context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
 			\context PianoMusicStaff = "Piano Music Staff" {
-				%%% \set PianoStaff.instrumentName = \markup { Piano } %%%
-				%%% \set PianoStaff.shortInstrumentName = \markup { Pf. } %%%
 				\context PianoMusicVoice = "Piano Music Voice" {
 					{
 						\time 3/4
@@ -230,8 +224,6 @@
 		>>
 		\context StringSectionStaffGroup = "String Section Staff Group" <<
 			\context ViolinMusicStaff = "Violin Music Staff" {
-				\set Staff.instrumentName = \markup { Violin }
-				\set Staff.shortInstrumentName = \markup { Vn. }
 				\context ViolinMusicVoice = "Violin Music Voice" {
 					{
 						\time 3/4
@@ -262,8 +254,6 @@
 				}
 			}
 			\context ViolaMusicStaff = "Viola Music Staff" {
-				\set Staff.instrumentName = \markup { Viola }
-				\set Staff.shortInstrumentName = \markup { Va. }
 				\context ViolaMusicVoice = "Viola Music Voice" {
 					{
 						\time 3/4
@@ -294,8 +284,6 @@
 				}
 			}
 			\context CelloMusicStaff = "Cello Music Staff" {
-				\set Staff.instrumentName = \markup { Cello }
-				\set Staff.shortInstrumentName = \markup { Vc. }
 				\context CelloMusicVoice = "Cello Music Voice" {
 					{
 						\time 3/4

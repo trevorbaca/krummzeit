@@ -121,9 +121,9 @@
         \alias Staff
         \accepts OboeMusicVoice
         instrumentName = \markup { 
-            \column { \hcenter-in #10 Oboe } }
+            \column { \hcenter-in #12 Oboe } }
         shortInstrumentName = \markup { 
-            \column { \hcenter-in #10 Ob. } }
+            \column { \hcenter-in #12 Ob. } }
     }
     \context {
         \Voice
@@ -138,7 +138,7 @@
         \alias Staff
         \accepts ClarinetMusicVoice
         instrumentName = \markup { \column {
-            \hcenter-in #10 {
+            \hcenter-in #12 {
                 Clarinet 
                 \line { 
                     (B
@@ -148,7 +148,7 @@
             }
         } }
         shortInstrumentName = \markup { \column {
-            \hcenter-in #10 {
+            \hcenter-in #12 {
                 Cl.
                 \line { 
                     (B
@@ -165,7 +165,7 @@
         \alias PianoStaff
         \accepts OboeMusicStaff
         \accepts ClarinetMusicStaff
-        %\override StaffGrouper #'staff-staff-spacing #'minimum-distance = #20
+        \override StaffGrouper #'staff-staff-spacing #'minimum-distance = #12
     }
     \context {
         \Voice
@@ -179,10 +179,8 @@
         \type Engraver_group
         \alias Staff
         \accepts PianoMusicVoice
-        instrumentName = \markup { 
-            \column { \hcenter-in #10 Piano } }
-        shortInstrumentName = \markup { 
-            \column { \hcenter-in #10 Pf. } }
+        instrumentName = \markup { \hcenter-in #12 Piano }
+        shortInstrumentName = \markup { \hcenter-in #12 Pf. }
     }
     \context {
         \Voice
@@ -197,9 +195,9 @@
         \alias Staff
         \accepts PercussionMusicVoice
         instrumentName = \markup { 
-            \column { \hcenter-in #10 Percussion } }
+            \column { \hcenter-in #12 Percussion } }
         shortInstrumentName = \markup { 
-            \column { \hcenter-in #10 Perc. } }
+            \column { \hcenter-in #12 Perc. } }
     }
     \context {
         \PianoStaff
@@ -208,7 +206,7 @@
         \alias PianoStaff
         \accepts PianoMusicStaff
         \accepts PercussionMusicStaff
-        %\override StaffGrouper #'staff-staff-spacing #'minimum-distance = #20
+        \override StaffGrouper #'staff-staff-spacing #'minimum-distance = #12
     }
     \context {
         \Voice
@@ -223,9 +221,9 @@
         \alias Staff
         \accepts ViolinMusicVoice
         instrumentName = \markup { 
-            \column { \hcenter-in #10 Violin } }
+            \column { \hcenter-in #12 Violin } }
         shortInstrumentName = \markup { 
-            \column { \hcenter-in #10 Vn. } }
+            \column { \hcenter-in #12 Vn. } }
     }
     \context {
         \Voice
@@ -240,9 +238,9 @@
         \alias Staff
         \accepts ViolaMusicVoice
         instrumentName = \markup { 
-            \column { \hcenter-in #10 Viola } }
+            \column { \hcenter-in #12 Viola } }
         shortInstrumentName = \markup { 
-            \column { \hcenter-in #10 Va. } }
+            \column { \hcenter-in #12 Va. } }
     }
     \context {
         \Voice
@@ -257,9 +255,9 @@
         \alias Staff
         \accepts CelloMusicVoice
         instrumentName = \markup { 
-            \column { \hcenter-in #10 Cello } }
+            \column { \hcenter-in #12 Cello } }
         shortInstrumentName = \markup { 
-            \column { \hcenter-in #10 Vc. } }
+            \column { \hcenter-in #12 Vc. } }
     }
     \context {
         \PianoStaff
@@ -269,7 +267,7 @@
         \accepts ViolinMusicStaff
         \accepts ViolaMusicStaff
         \accepts CelloMusicStaff
-        %\override StaffGrouper #'staff-staff-spacing #'minimum-distance = #20
+        \override StaffGrouper #'staff-staff-spacing #'minimum-distance = #12
     }
     \context {
         \Score
@@ -305,7 +303,7 @@
         \override TupletNumber #'font-size = #1
         \override TupletNumber #'text = #tuplet-number::calc-fraction-text
         autoBeaming = ##f
-        proportionalNotationDuration = #(ly:make-moment 1 64)
+        proportionalNotationDuration = #(ly:make-moment 1 32)
         tupletFullLength = ##t
     }
 }

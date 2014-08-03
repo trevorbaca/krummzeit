@@ -36,8 +36,10 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
         return self.lilypond_file
 
     def _make_lilypond_file(self):
-        function = lilypondfiletools.make_floating_time_signature_lilypond_file
-        lilypond_file = function(self._score)
+        lilypond_file = lilypondfiletools.make_basic_lilypond_file(self._score)
+        for item in lilypond_file.items[:]:
+            if getattr(item, 'name', None) in ('layout', 'paper'):
+                lilypond_file.items.remove(item)
         self._lilypond_file = lilypond_file
 
     def _make_score(self):
@@ -58,24 +60,6 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
             'stylesheet.ily',
             )
         lilypond_file.file_initial_user_includes.append(path)
-#        layout_block = lilypond_file[1]
-#        assert isinstance(layout_block, lilypondfiletools.LayoutBlock)
-#        lilypond_file.remove(layout_block)
-
-#        stylesheet_path = os.path.join(
-#            os.environ.get('TRAIETTORIE'),
-#            'stylesheets',
-#            )
-#        file_names = (
-#            'traiettorie-header.ly',
-#            'traiettorie-miscellaneous.ly',
-#            'traiettorie-paper.ly',
-#            'traiettorie-layout.ly',
-#            )
-#        for file_name in file_names:
-#            file_path = os.path.join(stylesheet_path, file_name)
-#            lilypond_file.file_initial_user_includes.append(file_path)
-
         title = 'Krummzeit ({})'.format(self.name)
         lilypond_file.header_block.title = markuptools.Markup(title)
         if self.name == 'A':
@@ -84,8 +68,6 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
             lilypond_file.header_block.subtitle = subtitle
         else:
             lilypond_file.header_block.composer = None
-        #lilypond_file.default_paper_size = '11x17', 'landscape'
-        #lilypond_file.global_staff_size = 16
 
     def _handle_music_makers(self):
         if not self.music_makers:

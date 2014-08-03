@@ -152,6 +152,7 @@ class ScoreTemplate(abctools.AbjadObject):
             )
         viola = performer_inventory.get_instrument('viola')
         #attach(viola, viola_music_staff)
+        attach(Clef('alto'), viola_music_staff)
         cello_music_voice = scoretools.Voice(
             [], 
             context_name='CelloMusicVoice',
@@ -164,6 +165,7 @@ class ScoreTemplate(abctools.AbjadObject):
             )
         cello = performer_inventory.get_instrument('cello')
         #attach(cello, cello_music_staff)
+        attach(Clef('bass'), cello_music_staff)
         string_section_staff_group = scoretools.StaffGroup(
             [violin_music_staff, viola_music_staff, cello_music_staff], 
             context_name='StringSectionStaffGroup',

@@ -1,5 +1,7 @@
 # -*- encoding: utf-8 -*-
+from abjad.tools import systemtools
 
-from performer_inventory.output import performer_inventory
-from tempo_inventory.output import tempo_inventory
-from time_signature_inventory.output import time_signature_inventory
+systemtools.ImportManager.import_material_packages(
+    __path__[0],
+    globals(),
+    )

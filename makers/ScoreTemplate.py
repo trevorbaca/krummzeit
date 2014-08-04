@@ -47,10 +47,12 @@ class ScoreTemplate(abctools.AbjadObject):
                     }
                 }
                 \context ViolaMusicStaff = "Viola Music Staff" {
+                    \clef "alto"
                     \context ViolaMusicVoice = "Viola Music Voice" {
                     }
                 }
                 \context CelloMusicStaff = "Cello Music Staff" {
+                    \clef "bass"
                     \context CelloMusicVoice = "Cello Music Voice" {
                     }
                 }

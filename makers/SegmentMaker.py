@@ -5,7 +5,7 @@ from experimental.tools import segmentmakertools
 
 
 class SegmentMaker(segmentmakertools.SegmentMaker):
-    r'''Krummzeit segment maker.
+    r'''Krummzeit segment-maker.
     '''
 
     ### INITIALIZER ###
@@ -24,7 +24,7 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
     ### SPECIAL METHODS ###
 
     def __call__(self):
-        r'''Calls Krummzeit segment maker.
+        r'''Calls Krummzeit segment-maker.
 
         Returns LilyPond file.
         '''
@@ -108,15 +108,15 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
 
     @property
     def music_makers(self):
-        r'''Gets segment maker's music makers.
+        r'''Gets segment-maker's music makers.
 
-        Returns tuple of music makers.
+        Returns tuple of music-makers.
         '''
         return self._music_makers
 
     @property
     def time_signatures(self):
-        r'''Gets segment maker's time signatures.
+        r'''Gets segment-maker's time signatures.
 
         Returns tuple of time signatures.
         '''

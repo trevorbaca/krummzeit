@@ -296,6 +296,7 @@
         \override StemTremolo #'slope = #0.5
         \override StemTremolo #'Y-offset = #-4
         \override TextScript #'Y-extent = #'(-1.5 . 1.5)
+        \override TimeSignature #'style = #'()
         \override TupletBracket #'breakable = ##t
         \override TupletBracket #'direction = #down
         \override TupletBracket #'full-length-to-extent = ##f

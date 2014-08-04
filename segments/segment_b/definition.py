@@ -4,12 +4,8 @@ from krummzeit import makers
 from krummzeit import materials
 
 
-time_signatures = [
-    (3, 4), (3, 4), (4, 8),
-    (6, 4), (3, 4), (5, 8), (5, 8),
-    ]
+segment_maker = makers.SegmentMaker(name='B')
 
-segment_maker = makers.SegmentMaker(
-    name='B',
-    time_signatures=time_signatures,
-    )
+time_signatures = materials.time_signature_inventory[0]
+assert len(time_signatures) == 31
+segment_maker._time_signatures = time_signatures

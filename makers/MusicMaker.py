@@ -3,8 +3,8 @@ from abjad import *
 
 
 class MusicMaker(abctools.AbjadObject):
-   r'''Krummzeit music-maker.
-   '''
+    r'''Krummzeit music-maker.
+    '''
 
     ### INITIALIZER ###    
 

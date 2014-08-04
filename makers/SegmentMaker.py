@@ -79,10 +79,11 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
 
     def _initialize_music_makers(self, music_makers):
         from krummzeit import makers
-        music_makers = music_makers or ()
-        music_makers = tuple(music_makers)
+        music_makers = music_makers or []
+        music_makers = list(music_makers)
         for music_maker in music_makers:
-            assert isinstance(music_maker, makers.MusicMaker), repr(music_maker)
+            assert isinstance(music_maker, makers.MusicMaker), repr(
+                music_maker)
         self._music_makers = music_makers
 
     def _initialize_time_signatures(self, time_signatures):

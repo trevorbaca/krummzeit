@@ -33,6 +33,6 @@ assert sum(measures_per_stage) == len(time_signatures)
 # cello 3rd-octave polyphony in stages 1-4
 maker = makers.MusicMaker()
 maker.stages = 1, 4
-maker.hypermeasure_treatment = (2, 2, 1, 2, 2, 2)
+#maker.hypermeasure_treatment = (2, 2, 1, 2, 2, 2)
 maker.rhythm_maker = None
 #segment_maker.music_makers.append(maker)

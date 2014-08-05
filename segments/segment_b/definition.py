@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
 from abjad import *
+from experimental import *
 from krummzeit import makers
 from krummzeit import materials
 
@@ -13,7 +14,7 @@ assert len(time_signatures) == 64
 # repeat first 11 time signatures
 time_signatures[0:0] = time_signatures[:11]
 assert len(time_signatures) == 75
-segment_maker._time_signatures = time_signatures
+segment_maker.time_signatures = time_signatures
 
 measures_per_stage = [
     3, 1, 3, 4, # 1-4
@@ -29,10 +30,41 @@ measures_per_stage = [
     ]
 assert len(measures_per_stage) == 23
 assert sum(measures_per_stage) == len(time_signatures)
+segment_maker.measures_per_stage = measures_per_stage
+
+### VOICE ABBREVIATIONS ###
+
+ob = 'Oboe Music Voice'
+cl = 'Clarinet Music Voice'
+pf = 'Piano Music Voice'
+perc = 'Percussion Music Voice'
+vn = 'Violin Music Voice'
+va = 'Viola Music Voice'
+vc = 'Cello Music Voice'
+
+### MUSIC-MAKERS ###
+
+division_maker = newmusicmakertools.DivisionMaker(
+    cyclic=True,
+    pattern=[(1, 4)],
+    remainder=Right,
+    )
+hypermeasure_specifier = newmusicmakertools.HypermeasureSpecifier(
+    counts=[2, 2, 1],
+    cyclic=True,
+    )
+division_maker = newmusicmakertools.MeasurewiseDivisionMaker(
+    division_maker=division_maker,
+    hypermeasure_specifier=hypermeasure_specifier,
+    )
+rhythm_maker = rhythmmakertools.TupletRhythmMaker(
+    tuplet_ratios=[(3, 2)],
+    )
 
 # cello 3rd-octave polyphony in stages 1-4
 maker = makers.MusicMaker()
+maker.voice_name = vc
 maker.stages = 1, 4
-#maker.hypermeasure_treatment = (2, 2, 1, 2, 2, 2)
-maker.rhythm_maker = None
-#segment_maker.music_makers.append(maker)
+maker.division_maker = division_maker
+maker.rhythm_maker = rhythm_maker
+segment_maker.music_makers.append(maker)

@@ -6,6 +6,14 @@ class MusicMaker(abctools.AbjadObject):
     r'''Krummzeit music-maker.
     '''
 
+    ### CLASS ATTRIBUTES ###
+
+    __slots__ = (
+        'division_maker',
+        'rhythm_maker',
+        'stages',
+        )
+
     ### INITIALIZER ###    
 
     def __init__(self):

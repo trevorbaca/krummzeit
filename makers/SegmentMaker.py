@@ -8,23 +8,36 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
     r'''Krummzeit segment-maker.
     '''
 
+    ### CLASS ATTRIBUTES ###
+
+    __slots__ = (
+        '_music_makers',
+        '_score',
+        'measures_per_stage',
+        'name',
+        'time_signatures',
+        )
+
     ### INITIALIZER ###
 
     def __init__(
         self,
+        measures_per_stage=None,
         music_makers=None,
         name=None,
         time_signatures=None,
         ):
         superclass = super(SegmentMaker, self)
         superclass.__init__(name=name)
-        self._initialize_time_signatures(time_signatures)
         self._initialize_music_makers(music_makers)
+        self.measures_per_stage = measures_per_stage
+        self.name = name
+        self._initialize_time_signatures(time_signatures)
 
     ### SPECIAL METHODS ###
 
     def __call__(self):
-        r'''Calls Krummzeit segment-maker.
+        r'''Calls segment-maker.
 
         Returns LilyPond file.
         '''
@@ -34,19 +47,6 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
         self._populate_time_signature_context()
         self._handle_music_makers()
         return self.lilypond_file
-
-    def _make_lilypond_file(self):
-        lilypond_file = lilypondfiletools.make_basic_lilypond_file(self._score)
-        for item in lilypond_file.items[:]:
-            if getattr(item, 'name', None) in ('layout', 'paper'):
-                lilypond_file.items.remove(item)
-        self._lilypond_file = lilypond_file
-
-    def _make_score(self):
-        from krummzeit import makers
-        template = makers.ScoreTemplate()
-        score = template()
-        self._score = score
 
     ### PRIVATE METHODS ###
 
@@ -69,13 +69,32 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
         else:
             lilypond_file.header_block.composer = None
 
+    def _get_music_makers_for_voice(self, voice_name):
+        music_makers = []
+        for music_maker in self.music_makers:
+            if music_maker.voice_name == voice_name:
+                music_makers.append(music_maker)
+        return music_makers
+
+    def _get_time_signatures(self, start_stage=None, stop_stage=None):
+        counts = len(self.time_signatures), sum(self.measures_per_stage)
+        assert counts[0] == counts[1], counts
+        stages = sequencetools.partition_sequence_by_counts(
+            self.time_signatures,
+            self.measures_per_stage,
+            )
+        start_index = start_stage - 1
+        if stop_stage is None:
+            time_signatures = stages[start_index]
+        else:
+            stop_index = stop_stage
+            stages = stages[start_index:stop_index]
+            time_signatures = sequencetools.flatten_sequence(stages)
+        return time_signatures
+
     def _handle_music_makers(self):
-        if not self.music_makers:
-            for voice in iterate(self._score).by_class(scoretools.Voice):
-                print(voice)
-                measures = scoretools.make_spacer_skip_measures(
-                    self.time_signatures)
-                voice.extend(measures)
+        for voice in iterate(self._score).by_class(scoretools.Voice):
+            self._make_music_for_voice(voice)
 
     def _initialize_music_makers(self, music_makers):
         from krummzeit import makers
@@ -94,16 +113,62 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
             time_signature = indicatortools.TimeSignature(time_signature)
             time_signatures_.append(time_signature)
         time_signatures_ = tuple(time_signatures_)
-        self._time_signatures = time_signatures_
+        self.time_signatures = time_signatures_
 
-    def _make_measures(self):
+    def _make_empty_measures(self, time_signatures=None):
+        time_signatures = time_signatures or self.time_signatures
         measures = scoretools.make_spacer_skip_measures(self.time_signatures)
         return measures
 
+    def _make_lilypond_file(self):
+        lilypond_file = lilypondfiletools.make_basic_lilypond_file(self._score)
+        for item in lilypond_file.items[:]:
+            if getattr(item, 'name', None) in ('layout', 'paper'):
+                lilypond_file.items.remove(item)
+        self._lilypond_file = lilypond_file
+
+    def _make_music_for_voice(self, voice):
+        assert not len(voice), repr(voice)
+        music_makers = self._get_music_makers_for_voice(voice.name)
+        music_makers.sort(lambda x: x.stages[0])
+        assert self._stages_do_not_overlap(music_makers), music_makers
+        if not music_makers:
+            measures = self._make_empty_measures()
+            voice.extend(measures) 
+        next_stage = 1
+        for music_maker in music_makers:
+            if next_stage < music_maker.start_stage:
+                start_stage = next_stage
+                stop_stage = music_maker.start_stage - 1
+                time_signatures = self._get_time_signatures(
+                    start_stage=next_stage,
+                    stop_stage=stop_stage,
+                    )
+                measures = self._make_empty_measures(time_signatures)
+                voice.extend(measures)
+            time_signatures = self._get_time_signatures(*music_maker.stages)
+            music = music_maker(time_signatures)
+            voice.extend(music)
+            next_stage = music_maker.stop_stage + 1
+
+    def _make_score(self):
+        from krummzeit import makers
+        template = makers.ScoreTemplate()
+        score = template()
+        self._score = score
+
     def _populate_time_signature_context(self):
-        measures = self._make_measures()
+        measures = self._make_empty_measures()
         time_signature_context = self._score['Time Signature Context']
         time_signature_context.extend(measures)
+
+    def _stages_do_not_overlap(self, makers):
+        stage_numbers = []
+        for maker in makers:
+            start_stage, stop_stage = maker.stages
+            stage_numbers_ = range(start_stage, stop_stage+1)
+            stage_numbers.extend(stage_numbers_)
+        return len(stage_numbers) == len(set(stage_numbers))
 
     ### PUBLIC PROPERTIES ###
 
@@ -114,11 +179,3 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
         Returns tuple of music-makers.
         '''
         return self._music_makers
-
-    @property
-    def time_signatures(self):
-        r'''Gets segment-maker's time signatures.
-
-        Returns tuple of time signatures.
-        '''
-        return self._time_signatures

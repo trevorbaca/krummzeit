@@ -36,7 +36,7 @@ segment_maker.measures_per_stage = measures_per_stage
 ### MUSIC-MAKERS ###
 
 hypermeasure_specifier = newmusicmakertools.HypermeasureSpecifier(
-    counts=[2, 2, 1],
+    counts=[2, 3, 1],
     cyclic=True,
     )
 division_maker = newmusicmakertools.HypermeasureDivisionMaker(

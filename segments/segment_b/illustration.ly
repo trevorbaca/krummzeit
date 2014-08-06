@@ -1,4 +1,4 @@
-% 2014-08-06 15:05
+% 2014-08-06 15:10
 
 \version "2.19.11"
 \language "english"
@@ -2070,31 +2070,24 @@
 						c'1.
 						c'1
 					}
-					\times 4/5 {
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 7/10 {
+						c'\breve.
+						c'\breve
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 7/10 {
+						c'1.
+						c'1
+					}
+					{
 						c'1.
 						c'1
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/5 {
-						c'1.
-						c'1
-					}
-					{
-						c'1.
-						c'1
-					}
-					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 5/8 {
 						c'\breve.
 						c'\breve
-					}
-					{
-						c'4.
-						c'4
-					}
-					\times 4/5 {
-						c'2.
-						c'2
 					}
 				}
 			}

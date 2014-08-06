@@ -51,6 +51,7 @@ class MusicMaker(abctools.AbjadObject):
 
     __slots__ = (
         'division_maker',
+        'instrument',
         'rhythm_maker',
         'stages',
         'voice_name',
@@ -61,11 +62,13 @@ class MusicMaker(abctools.AbjadObject):
     def __init__(
         self,
         division_maker=None,
+        instrument=None,
         rhythm_maker=None,
         stages=None,
         voice_name=None,
         ):
         self.division_maker = division_maker
+        self.instrument = instrument
         self.rhythm_maker = rhythm_maker
         self.stages = stages
         self.voice_name = voice_name
@@ -79,12 +82,20 @@ class MusicMaker(abctools.AbjadObject):
         '''
         for time_signature in time_signatures:
             assert isinstance(time_signature, indicatortools.TimeSignature)
-        divisions = self.division_maker(time_signatures) 
+        if self.division_maker is not None:
+            divisions = self.division_maker(time_signatures) 
+        else:
+            divisions = [
+                mathtools.NonreducedFraction(_) for _ in time_signatures
+                ]
         divisions = sequencetools.flatten_sequence(divisions)
         for division in divisions:
             assert isinstance(division, mathtools.NonreducedFraction), division
         music = self.rhythm_maker(divisions)
-        return music
+        pending_indicators = []
+        if self.instrument is not None:
+            pending_indicators.append(self.instrument)
+        return music, pending_indicators
 
     ### PUBLIC PROPERTIES ###
 

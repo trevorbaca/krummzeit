@@ -147,8 +147,13 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
                 measures = self._make_empty_measures(time_signatures)
                 voice.extend(measures)
             time_signatures = self._get_time_signatures(*music_maker.stages)
-            music = music_maker(time_signatures)
+            music, pending_indicators = music_maker(time_signatures)
             voice.extend(music)
+            first_selection = music[0]
+            first_component = first_selection[0]
+            first_leaf = inspect_(first_component).get_leaf(0)
+            for pending_indicator in pending_indicators:
+                attach(pending_indicator, first_leaf)
             next_stage = music_maker.stop_stage + 1
 
     def _make_score(self):

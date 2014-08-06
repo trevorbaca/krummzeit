@@ -227,6 +227,7 @@
         \name ViolaMusicVoice
         \type Engraver_group
         \alias Voice
+        \override TupletBracket.staff-padding = #2
     }
     \context {
         \Staff
@@ -236,6 +237,7 @@
         \accepts ViolaMusicVoice
         instrumentName = \markup { \hcenter-in #12 Viola }
         shortInstrumentName = \markup { \hcenter-in #12 Va. }
+        \override TupletBracket.staff-padding = #2
     }
     \context {
         \Voice

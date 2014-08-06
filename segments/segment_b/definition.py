@@ -3,6 +3,7 @@ from abjad import *
 from experimental import *
 from krummzeit import makers
 from krummzeit import materials
+from krummzeit.segments.abbreviations import *
 
 
 segment_maker = makers.SegmentMaker(name='B')
@@ -31,16 +32,6 @@ measures_per_stage = [
 assert len(measures_per_stage) == 23
 assert sum(measures_per_stage) == len(time_signatures)
 segment_maker.measures_per_stage = measures_per_stage
-
-### VOICE ABBREVIATIONS ###
-
-ob = 'Oboe Music Voice'
-cl = 'Clarinet Music Voice'
-pf = 'Piano Music Voice'
-perc = 'Percussion Music Voice'
-vn = 'Violin Music Voice'
-va = 'Viola Music Voice'
-vc = 'Cello Music Voice'
 
 ### MUSIC-MAKERS ###
 

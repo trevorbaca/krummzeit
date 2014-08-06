@@ -4,6 +4,47 @@ from abjad import *
 
 class MusicMaker(abctools.AbjadObject):
     r'''Krummzeit music-maker.
+
+    ..  container:: example
+
+        ::
+
+            >>> from krummzeit import makers
+            >>> division_maker = newmusicmakertools.HypermeasureDivisionMaker(
+            ...     hypermeasure_specifier=newmusicmakertools.HypermeasureSpecifier(
+            ...         counts=[2, 3, 1],
+            ...         cyclic=True,
+            ...         ),
+            ...     )
+            >>> rhythm_maker = rhythmmakertools.TupletRhythmMaker(
+            ...     tuplet_ratios=[(3, 2)],
+            ...     )
+            >>> music_maker = makers.MusicMaker()
+            >>> music_maker.voice_name = 'Cello Music Voice'
+            >>> music_maker.stages = 1, 4
+            >>> music_maker.division_maker = division_maker
+            >>> music_maker.rhythm_maker = rhythm_maker
+
+        ::
+
+            >>> print(format(music_maker, 'storage'))
+            makers.MusicMaker(
+                division_maker=newmusicmakertools.HypermeasureDivisionMaker(
+                    hypermeasure_specifier=newmusicmakertools.HypermeasureSpecifier(
+                        counts=(2, 3, 1),
+                        cyclic=True,
+                        ),
+                    ),
+                rhythm_maker=rhythmmakertools.TupletRhythmMaker(
+                    tuplet_ratios=(
+                        mathtools.Ratio(3, 2),
+                        ),
+                    ),
+                stages=(1, 4),
+                voice_name='Cello Music Voice',
+                )
+
+    All properties can be configured at or after initialization.
     '''
 
     ### CLASS ATTRIBUTES ###
@@ -17,7 +58,13 @@ class MusicMaker(abctools.AbjadObject):
 
     ### INITIALIZER ###    
 
-    def __init__(self):
+    def __init__(
+        self,
+        division_maker=None,
+        rhythm_maker=None,
+        stages=None,
+        voice_name=None,
+        ):
         self.division_maker = None
         self.rhythm_maker = None
         self.stages = None

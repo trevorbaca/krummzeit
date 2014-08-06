@@ -39,29 +39,36 @@ segment_maker.measures_per_stage = measures_per_stage
 ###############################################################################
 
 
-### cello [B1-4] (3rd-octave polyphony)
-division_maker = newmusicmakertools.HypermeasureDivisionMaker(
+### cello [B1-4] (3rd-octave polyphony) ###
+music_maker = makers.MusicMaker()
+music_maker.voice_name = vc
+music_maker.stages = 1, 4
+music_maker.division_maker = newmusicmakertools.HypermeasureDivisionMaker(
     hypermeasure_specifier=newmusicmakertools.HypermeasureSpecifier(
         counts=[2, 3, 1],
         cyclic=True,
         ),
     )
-rhythm_maker = rhythmmakertools.TupletRhythmMaker(
+music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[(3, 2)],
     )
-music_maker = makers.MusicMaker()
-music_maker.voice_name = vc
-music_maker.stages = 1, 4
-music_maker.division_maker = division_maker
-music_maker.rhythm_maker = rhythm_maker
 segment_maker.music_makers.append(music_maker)
 cello_b_1_4 = music_maker
 
 
-### viola [B1-4] (3rd-octave polyphony)
+### viola [B1-4] (3rd-octave polyphony) ###
 music_maker = new(
     cello_b_1_4,
     rhythm_maker__tuplet_ratios=[(1, 4)],
     voice_name=va,
     )
+segment_maker.music_makers.append(music_maker)
+
+
+### harpsichord [B1-4] (5th-octave polyphony) ###
+music_maker = makers.MusicMaker()
+music_maker.voice_name = pf
+music_maker.instrument = harpsichord
+music_maker.stages = 1, 4
+music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 segment_maker.music_makers.append(music_maker)

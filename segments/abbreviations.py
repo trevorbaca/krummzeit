@@ -1,7 +1,15 @@
 # -*- encoding: utf-8 -*-
+from krummzeit import materials
 
 
-### VOICE ABBREVIATIONS ###
+### INSTRUMENTS ###
+
+harpsichord = materials.performer_inventory.get_instrument('harpsichord')
+harpsichord._default_scope = 'PianoMusicStaff'
+piano = materials.performer_inventory.get_instrument('piano')
+piano._default_scope = 'PianoMusicStaff'
+
+### VOICE NAMES ###
 
 ob = 'Oboe Music Voice'
 cl = 'Clarinet Music Voice'

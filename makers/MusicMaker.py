@@ -65,10 +65,10 @@ class MusicMaker(abctools.AbjadObject):
         stages=None,
         voice_name=None,
         ):
-        self.division_maker = None
-        self.rhythm_maker = None
-        self.stages = None
-        self.voice_name = None
+        self.division_maker = division_maker
+        self.rhythm_maker = rhythm_maker
+        self.stages = stages
+        self.voice_name = voice_name
 
     ### SPECIAL METHODS ###
 

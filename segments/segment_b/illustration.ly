@@ -1,4 +1,4 @@
-% 2014-08-06 12:57
+% 2014-08-06 15:01
 
 \version "2.19.11"
 \language "english"
@@ -2065,205 +2065,36 @@
 			\context CelloMusicStaff = "Cello Music Staff" {
 				\clef "bass"
 				\context CelloMusicVoice = "Cello Music Voice" {
-					\times 4/5 {
-						c'8. [
-						c'8 ]
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 3/5 {
+						c'1.
+						c'1
 					}
 					\times 4/5 {
-						c'8. [
-						c'8 ]
+						c'1.
+						c'1
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 3/5 {
+						c'1.
+						c'1
+					}
+					{
+						c'1.
+						c'1
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/8 {
+						c'\breve.
+						c'\breve
+					}
+					{
+						c'4.
+						c'4
 					}
 					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'16. [
-						c'16 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'16. [
-						c'16 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
-					}
-					\times 4/5 {
-						c'8. [
-						c'8 ]
+						c'2.
+						c'2
 					}
 				}
 			}

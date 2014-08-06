@@ -35,17 +35,11 @@ segment_maker.measures_per_stage = measures_per_stage
 
 ### MUSIC-MAKERS ###
 
-division_maker = newmusicmakertools.DivisionMaker(
-    cyclic=True,
-    pattern=[(1, 4)],
-    remainder=Right,
-    )
 hypermeasure_specifier = newmusicmakertools.HypermeasureSpecifier(
     counts=[2, 2, 1],
     cyclic=True,
     )
-division_maker = newmusicmakertools.MeasurewiseDivisionMaker(
-    division_maker=division_maker,
+division_maker = newmusicmakertools.HypermeasureDivisionMaker(
     hypermeasure_specifier=hypermeasure_specifier,
     )
 rhythm_maker = rhythmmakertools.TupletRhythmMaker(

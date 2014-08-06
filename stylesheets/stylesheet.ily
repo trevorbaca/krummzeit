@@ -251,6 +251,7 @@
         \accepts CelloMusicVoice
         instrumentName = \markup { \hcenter-in #12 Cello }
         shortInstrumentName = \markup { \hcenter-in #12 Vc. }
+        \override TupletBracket.staff-padding = #2
     }
     \context {
         \PianoStaff

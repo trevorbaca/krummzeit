@@ -284,6 +284,16 @@
         \override MetronomeMark.font-size = #3
         \override NoteCollision.merge-differently-dotted = ##t
         \override NoteColumn.ignore-collision = ##t
+
+        \override RehearsalMark.X-extent = #'(0 . 0)
+        \override RehearsalMark.Y-offset = -2.25
+        \override RehearsalMark.X-offset = 8
+        \override RehearsalMark.break-align-symbols = #'(time-signature)
+        \override RehearsalMark.break-visibility = #end-of-line-invisible
+        \override RehearsalMark.font-name = "Didot"
+        \override RehearsalMark.font-size = 10
+        \override RehearsalMark.self-alignment-X = #CENTER
+
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t

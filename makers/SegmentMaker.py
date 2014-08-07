@@ -46,12 +46,23 @@ class SegmentMaker(makertools.SegmentMaker):
         self._configure_lilypond_file()
         self._populate_time_signature_context()
         self._handle_music_makers()
+        self._attach_rehearsal_mark()
         score_block = self.lilypond_file['score']
         score = score_block['Krummzeit Score']
         assert inspect_(score).is_well_formed(), score
         return self.lilypond_file
 
     ### PRIVATE METHODS ###
+
+    def _attach_rehearsal_mark(self):
+        assert len(self.name) == 1 and self.name.upper(), repr(self.name)
+        letter_number = ord(self.name) - ord('A') + 1
+        string = r'mark #{}'.format(letter_number)
+        rehearsal_mark = indicatortools.LilyPondCommand(string)
+        voice = self._score['Time Signature Context']
+        leaves = iterate(voice).by_class(scoretools.Leaf, start=0, stop=1)
+        first_leaf = list(leaves)[0]
+        attach(rehearsal_mark, first_leaf)
 
     def _configure_lilypond_file(self):
         lilypond_file = self._lilypond_file
@@ -63,13 +74,8 @@ class SegmentMaker(makertools.SegmentMaker):
             'stylesheet.ily',
             )
         lilypond_file.file_initial_user_includes.append(path)
-        title = 'Krummzeit ({})'.format(self.name)
-        lilypond_file.header_block.title = markuptools.Markup(title)
-        if self.name == 'A':
-            string = r'\raise #-5 \italic { for Ensemble Mosaik }'
-            subtitle = markuptools.Markup(string)
-            lilypond_file.header_block.subtitle = subtitle
-        else:
+        if not self.name == 'A':
+            lilypond_file.header_block.title = None
             lilypond_file.header_block.composer = None
 
     def _get_music_makers_for_voice(self, voice_name):

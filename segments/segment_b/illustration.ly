@@ -1,4 +1,4 @@
-% 2014-08-07 13:15
+% 2014-08-07 13:43
 
 \version "2.19.11"
 \language "english"
@@ -9,7 +9,7 @@
 
 \header {
 	composer = ##f
-	title = \markup { Krummzeit (B) }
+	title = ##f
 }
 
 \score {
@@ -17,6 +17,7 @@
 		\context TimeSignatureContext = "Time Signature Context" {
 			{
 				\time 3/4
+				\mark #2
 				s1 * 3/4
 			}
 			{

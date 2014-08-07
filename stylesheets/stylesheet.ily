@@ -45,7 +45,7 @@
         (minimum-distance . 0)
         (padding . 8)
         (stretchability . 0))
-    %top-margin = 10\mm
+    top-margin = 10\mm
 }
 
 \header {

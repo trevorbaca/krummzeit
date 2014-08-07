@@ -181,6 +181,7 @@
         \accepts PianoMusicVoice
         instrumentName = \markup { \hcenter-in #12 Piano }
         shortInstrumentName = \markup { \hcenter-in #12 Pf. }
+        \override TupletBracket.staff-padding = #5
     }
     \context {
         \Voice

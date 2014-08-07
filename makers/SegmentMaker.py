@@ -46,6 +46,9 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
         self._configure_lilypond_file()
         self._populate_time_signature_context()
         self._handle_music_makers()
+        score_block = self.lilypond_file['score']
+        score = score_block['Krummzeit Score']
+        assert inspect_(score).is_well_formed(), score
         return self.lilypond_file
 
     ### PRIVATE METHODS ###
@@ -135,6 +138,7 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
         if not music_makers:
             measures = self._make_empty_measures()
             voice.extend(measures) 
+            return
         next_stage = 1
         for music_maker in music_makers:
             if next_stage < music_maker.start_stage:
@@ -155,6 +159,12 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
             for pending_indicator in pending_indicators:
                 attach(pending_indicator, first_leaf)
             next_stage = music_maker.stop_stage + 1
+        #raise Exception((next_stage, self.stage_count))
+        if next_stage <= self.stage_count:
+            time_signatures = self._get_time_signatures(
+                next_stage, self.stage_count)
+            measures = self._make_empty_measures(time_signatures)
+            voice.extend(measures)
 
     def _make_score(self):
         from krummzeit import makers
@@ -184,3 +194,11 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
         Returns tuple of music-makers.
         '''
         return self._music_makers
+
+    @property
+    def stage_count(self):
+        r'''Gets total number of stages in segment.
+
+        Returns nonnegative integer.
+        '''
+        return len(self.measures_per_stage)

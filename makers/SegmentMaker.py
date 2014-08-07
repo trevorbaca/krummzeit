@@ -161,7 +161,12 @@ class SegmentMaker(makertools.SegmentMaker):
             voice.extend(music)
             first_selection = music[0]
             first_component = first_selection[0]
-            first_leaf = inspect_(first_component).get_leaf(0)
+            leaves = iterate(first_component).by_class(
+                scoretools.Leaf,
+                start=0,
+                stop=1,
+                )
+            first_leaf = list(leaves)[0]
             for pending_indicator in pending_indicators:
                 attach(pending_indicator, first_leaf)
             next_stage = music_maker.stop_stage + 1

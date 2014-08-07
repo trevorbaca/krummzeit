@@ -1,4 +1,4 @@
-% 2014-08-07 15:23
+% 2014-08-07 19:32
 
 \version "2.19.11"
 \language "english"
@@ -894,42 +894,264 @@
 		\context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
 			\context PianoMusicStaff = "Piano Music Staff" {
 				\context PianoMusicVoice = "Piano Music Voice" {
-					\set PianoMusicStaff.instrumentName = \markup { Harpsichord }
-					\set PianoMusicStaff.shortInstrumentName = \markup { Hpschd. }
-					c'2
-					c'4
-					c'4.
-					c'4.
-					c'2
-					c'4
-					c'4.
-					c'4
-					c'2 ~
-					c'8
-					c'2
-					c'4.
-					c'2 ~
-					c'8
-					c'4.
-					c'2
-					c'4
-					c'2 ~
-					c'8
-					c'2
-					c'4
-					c'4
-					c'2
-					c'4.
-					c'2 ~
-					c'8
-					c'2
-					c'4.
-					c'2
-					c'4.
-					c'4
-					c'2
-					c'4
-					c'4
+					{
+						\set PianoMusicStaff.instrumentName = \markup { Harpsichord }
+						\set PianoMusicStaff.shortInstrumentName = \markup { Hpschd. }
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16 ]
+					}
+					{
+						c'16 [
+						c'16
+						c'16
+						c'16 ]
+					}
 					{
 						\time 3/4
 						s1 * 3/4

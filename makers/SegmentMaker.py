@@ -212,6 +212,24 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
 
     ### PUBLIC METHODS ###
 
+    def get_music_maker(self, voice_name, stage):
+        r'''Gets music-maker with `voice_name` defined for `stage`.
+
+        Returns music-maker.
+
+        Raises key error when no such music-maker is found.
+        '''
+        music_makers = []
+        for music_maker in self.music_makers:
+            if music_maker.voice_name == voice_name:
+                start = music_maker.start_stage
+                stop = music_maker.stop_stage + 1
+                if stage in range(start, stop):
+                    return music_maker
+        message = 'no music-maker for {!r} found for stage {}.'
+        message = message.format(voice_name, stage)
+        raise KeyError(message)
+
     def make_music_maker(self):
         r'''Makes music-maker and appends music-maker to segment-maker's list
         of music-makers.

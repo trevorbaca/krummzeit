@@ -43,12 +43,11 @@ music_maker.division_maker = newmusicmakertools.HypermeasureDivisionMaker(
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[(3, 2)],
     )
-cello_b_1_4 = music_maker
 
 
 ### viola [B1-4] (3rd-octave polyphony) ###
 music_maker = new(
-    cello_b_1_4,
+    segment_maker.get_music_maker(voice_name=vc, stage=1),
     rhythm_maker__tuplet_ratios=[(1, 4)],
     voice_name=va,
     )

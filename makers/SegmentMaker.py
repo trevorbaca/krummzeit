@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 import os
 from abjad import *
-from experimental.tools import segmentmakertools
+from experimental.tools import makertools
 
 
-class SegmentMaker(segmentmakertools.SegmentMaker):
+class SegmentMaker(makertools.SegmentMaker):
     r'''Krummzeit segment-maker.
     '''
 

@@ -34,8 +34,8 @@ assert segment_maker.validate_time_signatures()
 music_maker = segment_maker.make_music_maker()
 music_maker.voice_name = vc
 music_maker.stages = 1, 4
-music_maker.division_maker = newmusicmakertools.HypermeasureDivisionMaker(
-    hypermeasure_specifier=newmusicmakertools.HypermeasureSpecifier(
+music_maker.division_maker = makertools.HypermeasureDivisionMaker(
+    hypermeasure_specifier=makertools.HypermeasureSpecifier(
         counts=[2, 3, 1],
         cyclic=True,
         ),

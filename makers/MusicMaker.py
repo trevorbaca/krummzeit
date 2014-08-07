@@ -10,8 +10,8 @@ class MusicMaker(abctools.AbjadObject):
         ::
 
             >>> from krummzeit import makers
-            >>> division_maker = newmusicmakertools.HypermeasureDivisionMaker(
-            ...     hypermeasure_specifier=newmusicmakertools.HypermeasureSpecifier(
+            >>> division_maker = makertools.HypermeasureDivisionMaker(
+            ...     hypermeasure_specifier=makertools.HypermeasureSpecifier(
             ...         counts=[2, 3, 1],
             ...         cyclic=True,
             ...         ),
@@ -29,8 +29,8 @@ class MusicMaker(abctools.AbjadObject):
 
             >>> print(format(music_maker, 'storage'))
             makers.MusicMaker(
-                division_maker=newmusicmakertools.HypermeasureDivisionMaker(
-                    hypermeasure_specifier=newmusicmakertools.HypermeasureSpecifier(
+                division_maker=makertools.HypermeasureDivisionMaker(
+                    hypermeasure_specifier=makertools.HypermeasureSpecifier(
                         counts=(2, 3, 1),
                         cyclic=True,
                         ),

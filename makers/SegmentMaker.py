@@ -212,6 +212,17 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
 
     ### PUBLIC METHODS ###
 
+    def make_music_maker(self):
+        r'''Makes music-maker and appends music-maker to segment-maker's list
+        of music-makers.
+
+        Returns music-maker.
+        '''
+        from krummzeit import makers
+        music_maker = makers.MusicMaker()
+        self.music_makers.append(music_maker)
+        return music_maker
+
     def validate_time_signatures(self):
         r'''Is true when the sum of all measures per stage equals
         total number of measures in segment. Otherwise false.

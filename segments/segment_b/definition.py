@@ -59,4 +59,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.voice_name = pf
 music_maker.instrument = harpsichord
 music_maker.stages = 1, 4
+music_maker.division_maker = makertools.DivisionMaker(
+    pattern=[Duration(1, 4)],
+    )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()

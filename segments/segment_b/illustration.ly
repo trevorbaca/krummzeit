@@ -1,4 +1,4 @@
-% 2014-08-07 11:00
+% 2014-08-07 13:15
 
 \version "2.19.11"
 \language "english"
@@ -895,20 +895,57 @@
 				\context PianoMusicVoice = "Piano Music Voice" {
 					\set PianoMusicStaff.instrumentName = \markup { Harpsichord }
 					\set PianoMusicStaff.shortInstrumentName = \markup { Hpschd. }
-					c'2.
-					c'2.
-					c'1 ~
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
 					c'8
-					c'2..
-					c'1.
-					c'1..
-					c'2.
-					c'1..
-					c'1 ~
-					c'4.
-					c'2 ~
+					c'4
+					c'4
+					c'4
 					c'8
-					c'1
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'4
+					c'8
+					c'4
+					c'4
+					c'8
+					c'4
+					c'4
+					c'4
+					c'4
 					{
 						\time 3/4
 						s1 * 3/4

@@ -1,4 +1,4 @@
-% 2014-08-07 19:40
+% 2014-08-07 19:41
 
 \version "2.19.11"
 \language "english"
@@ -915,12 +915,9 @@
 						c'16 ]
 					}
 					{
-						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16 ]
+						c'8 [
+						c'8
+						c'8 ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 6/5 {
@@ -941,20 +938,15 @@
 						c'16
 						c'16 ]
 					}
-					\times 4/5 {
-						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16 ]
+					\times 2/3 {
+						c'8 [
+						c'8
+						c'8 ]
 					}
 					{
-						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16 ]
+						c'8 [
+						c'8
+						c'8 ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 4/3 {
@@ -976,16 +968,12 @@
 						c'16
 						c'16 ]
 					}
-					\times 8/9 {
-						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16 ]
+					\times 4/5 {
+						c'8 [
+						c'8
+						c'8
+						c'8
+						c'8 ]
 					}
 					{
 						c'16 [
@@ -1008,25 +996,18 @@
 						c'16 ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 6/7 {
-						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16 ]
+					\times 3/4 {
+						c'8 [
+						c'8
+						c'8
+						c'8 ]
 					}
-					\times 8/9 {
-						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16 ]
+					\times 4/5 {
+						c'8 [
+						c'8
+						c'8
+						c'8
+						c'8 ]
 					}
 					{
 						c'16 [
@@ -1046,16 +1027,12 @@
 						c'16
 						c'16 ]
 					}
-					\times 8/9 {
-						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16 ]
+					\times 4/5 {
+						c'8 [
+						c'8
+						c'8
+						c'8
+						c'8 ]
 					}
 					\times 4/5 {
 						c'16 [
@@ -1071,24 +1048,17 @@
 						c'16 ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 8/7 {
-						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16 ]
+					\times 4/3 {
+						c'8 [
+						c'8
+						c'8 ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 6/7 {
-						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16 ]
+					\times 3/4 {
+						c'8 [
+						c'8
+						c'8
+						c'8 ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 10/11 {
@@ -1114,13 +1084,10 @@
 						c'16
 						c'16 ]
 					}
-					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 6/5 {
-						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16 ]
+					{
+						c'8 [
+						c'8
+						c'8 ]
 					}
 					\times 8/9 {
 						c'16 [
@@ -1144,20 +1111,14 @@
 						c'16 ]
 					}
 					{
-						c'16 [
-						c'16
-						c'16
-						c'16 ]
+						c'8 [
+						c'8 ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 8/7 {
-						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16 ]
+					\times 4/3 {
+						c'8 [
+						c'8
+						c'8 ]
 					}
 					\times 4/5 {
 						c'16 [

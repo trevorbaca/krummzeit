@@ -1,4 +1,4 @@
-% 2014-08-07 19:32
+% 2014-08-07 19:40
 
 \version "2.19.11"
 \language "english"
@@ -894,7 +894,7 @@
 		\context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
 			\context PianoMusicStaff = "Piano Music Staff" {
 				\context PianoMusicVoice = "Piano Music Voice" {
-					{
+					\times 8/9 {
 						\set PianoMusicStaff.instrumentName = \markup { Harpsichord }
 						\set PianoMusicStaff.shortInstrumentName = \markup { Hpschd. }
 						c'16 [
@@ -904,77 +904,11 @@
 						c'16
 						c'16
 						c'16
-						c'16 ]
-					}
-					{
-						c'16 [
-						c'16
 						c'16
 						c'16 ]
 					}
-					{
+					\times 4/5 {
 						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16 ]
-					}
-					{
-						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16 ]
-					}
-					{
-						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16 ]
-					}
-					{
-						c'16 [
-						c'16
-						c'16
-						c'16 ]
-					}
-					{
-						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16 ]
-					}
-					{
-						c'16 [
-						c'16
-						c'16
-						c'16 ]
-					}
-					{
-						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16 ]
-					}
-					{
-						c'16 [
-						c'16
-						c'16
-						c'16
 						c'16
 						c'16
 						c'16
@@ -988,9 +922,62 @@
 						c'16
 						c'16 ]
 					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 6/5 {
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					\times 8/9 {
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					\times 4/5 {
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
 					{
 						c'16 [
 						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 4/3 {
+						c'16 [
+						c'16
+						c'16 ]
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 10/11 {
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					\times 8/9 {
+						c'16 [
 						c'16
 						c'16
 						c'16
@@ -1008,8 +995,31 @@
 						c'16
 						c'16 ]
 					}
-					{
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 10/9 {
 						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 6/7 {
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					\times 8/9 {
+						c'16 [
+						c'16
 						c'16
 						c'16
 						c'16
@@ -1024,8 +1034,66 @@
 						c'16
 						c'16 ]
 					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 10/9 {
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					\times 8/9 {
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					\times 4/5 {
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
 					{
 						c'16 [
+						c'16
+						c'16
+						c'16 ]
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 8/7 {
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 6/7 {
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 10/11 {
+						c'16 [
+						c'16
 						c'16
 						c'16
 						c'16
@@ -1046,39 +1114,16 @@
 						c'16
 						c'16 ]
 					}
-					{
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 6/5 {
 						c'16 [
-						c'16
-						c'16
-						c'16 ]
-					}
-					{
-						c'16 [
-						c'16
-						c'16
-						c'16 ]
-					}
-					{
-						c'16 [
-						c'16
-						c'16
-						c'16
 						c'16
 						c'16
 						c'16
 						c'16 ]
 					}
-					{
+					\times 8/9 {
 						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16 ]
-					}
-					{
-						c'16 [
-						c'16
 						c'16
 						c'16
 						c'16
@@ -1088,51 +1133,9 @@
 						c'16
 						c'16 ]
 					}
-					{
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 6/7 {
 						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16 ]
-					}
-					{
-						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16 ]
-					}
-					{
-						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16 ]
-					}
-					{
-						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16
-						c'16 ]
-					}
-					{
-						c'16 [
-						c'16
-						c'16
-						c'16 ]
-					}
-					{
-						c'16 [
-						c'16
 						c'16
 						c'16
 						c'16
@@ -1146,8 +1149,26 @@
 						c'16
 						c'16 ]
 					}
-					{
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 8/7 {
 						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					\times 4/5 {
+						c'16 [
+						c'16
+						c'16
+						c'16
+						c'16 ]
+					}
+					\times 4/5 {
+						c'16 [
+						c'16
 						c'16
 						c'16
 						c'16 ]

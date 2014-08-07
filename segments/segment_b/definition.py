@@ -31,7 +31,7 @@ assert segment_maker.validate_time_signatures()
 
 
 ### cello [B1-4] (3rd-octave polyphony) ###
-music_maker = makers.MusicMaker()
+music_maker = segment_maker.make_music_maker()
 music_maker.voice_name = vc
 music_maker.stages = 1, 4
 music_maker.division_maker = newmusicmakertools.HypermeasureDivisionMaker(
@@ -43,7 +43,6 @@ music_maker.division_maker = newmusicmakertools.HypermeasureDivisionMaker(
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[(3, 2)],
     )
-segment_maker.music_makers.append(music_maker)
 cello_b_1_4 = music_maker
 
 
@@ -57,9 +56,8 @@ segment_maker.music_makers.append(music_maker)
 
 
 ### harpsichord [B1-4] (5th-octave polyphony) ###
-music_maker = makers.MusicMaker()
+music_maker = segment_maker.make_music_maker()
 music_maker.voice_name = pf
 music_maker.instrument = harpsichord
 music_maker.stages = 1, 4
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
-segment_maker.music_makers.append(music_maker)

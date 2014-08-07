@@ -46,12 +46,12 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
 
 
 ### viola [B1-4] (3rd-octave polyphony) ###
-music_maker = new(
-    segment_maker.get_music_maker(voice_name=vc, stage=1),
+segment_maker.copy_music_maker(
+    vc,
+    1,
     rhythm_maker__tuplet_ratios=[(1, 4)],
     voice_name=va,
     )
-segment_maker.music_makers.append(music_maker)
 
 
 ### harpsichord [B1-4] (5th-octave polyphony) ###

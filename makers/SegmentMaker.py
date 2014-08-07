@@ -212,6 +212,23 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
 
     ### PUBLIC METHODS ###
 
+    def copy_music_maker(self, _voice_name, _stage, **kwargs):
+        r'''Gets music-maker with `_voice_name` defined for `_stage`.
+        Then makes new music-maker from this with optional `kwargs`.
+
+        Short-cut for get-then-new.
+
+        Uses private positional argument names `_voice_name` and `_stage` 
+        to avoid aliasing public keyword argument names `voice_name`
+        and `stage`.
+
+        Returns music-maker.
+        '''
+        music_maker = self.get_music_maker(_voice_name, _stage)
+        new_music_maker = new(music_maker, **kwargs)
+        self.music_makers.append(new_music_maker)
+        return new_music_maker
+
     def get_music_maker(self, voice_name, stage):
         r'''Gets music-maker with `voice_name` defined for `stage`.
 

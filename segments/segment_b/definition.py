@@ -64,5 +64,6 @@ music_maker.division_maker = makertools.DivisionMaker(
     pattern=[Duration(2, 4), Duration(3, 8), Duration(2, 4), Duration(1, 4)],
     pattern_rotation_index=-1,
     remainder=Right,
+    remainder_fuse_threshold=Duration(1, 8),
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()

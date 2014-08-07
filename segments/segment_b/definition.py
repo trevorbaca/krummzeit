@@ -60,6 +60,7 @@ music_maker.voice_name = pf
 music_maker.instrument = harpsichord
 music_maker.stages = 1, 4
 music_maker.division_maker = makertools.DivisionMaker(
+    fuse_remainder=True,
     pattern=[Duration(1, 4)],
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()

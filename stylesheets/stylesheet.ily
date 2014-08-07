@@ -276,7 +276,7 @@
         \override BarNumber.extra-offset = #'(-6 . -4)
         \override BarNumber.font-size = #1
         \override BarNumber.padding = #4
-        \override BarNumber.transparent = ##t
+        %\override BarNumber.transparent = ##t
         \override Beam.breakable = ##t
         \override DynamicLineSpanner.Y-extent = #'(-1.5 . 1.5)
         \override Glissando.breakable = ##t

@@ -120,7 +120,7 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
 
     def _make_empty_measures(self, time_signatures=None):
         time_signatures = time_signatures or self.time_signatures
-        measures = scoretools.make_spacer_skip_measures(self.time_signatures)
+        measures = scoretools.make_spacer_skip_measures(time_signatures)
         return measures
 
     def _make_lilypond_file(self):
@@ -159,7 +159,6 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
             for pending_indicator in pending_indicators:
                 attach(pending_indicator, first_leaf)
             next_stage = music_maker.stop_stage + 1
-        #raise Exception((next_stage, self.stage_count))
         if next_stage <= self.stage_count:
             time_signatures = self._get_time_signatures(
                 next_stage, self.stage_count)

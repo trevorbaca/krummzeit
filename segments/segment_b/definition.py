@@ -7,7 +7,6 @@ from krummzeit.segments.abbreviations import *
 
 
 segment_maker = makers.SegmentMaker(name='B')
-stage_count = 23
 
 time_signatures = materials.time_signature_inventory[:3]
 time_signatures = sequencetools.flatten_sequence(time_signatures)
@@ -17,21 +16,21 @@ time_signatures[0:0] = time_signatures[:11]
 assert len(time_signatures) == 75
 segment_maker.time_signatures = time_signatures
 
-measures_per_stage = [
-    3, 1, 3, 4, # 1-4
-    3, 1, 3, 4, # 5-8
-    6,          # 9 
-    3, 2,       # 10-11
-    3, 1, 1,    # 12-14
-    6,          # 15
-    3,          # 16
-    4, 2, 3,    # 17-19
-    4, 8,       # 20-21
-    3, 4,       # 22-23
+segment_maker.measures_per_stage = [
+    3, 1, 3, 4, # stages 1-4
+    3, 1, 3, 4, # stages 5-8
+    6,          # stage 9 
+    3, 2,       # stages 10-11
+    3, 1, 1,    # stages 12-14
+    6,          # stage 15
+    3,          # stage 16
+    4, 2, 3,    # stages 17-19
+    4, 8,       # stages 20-21
+    3, 4,       # stages 22-23
     ]
-assert len(measures_per_stage) == 23
-assert sum(measures_per_stage) == len(time_signatures)
-segment_maker.measures_per_stage = measures_per_stage
+assert segment_maker.measure_count == 75
+assert segment_maker.stage_count == 23
+assert segment_maker.validate_time_signatures()
 
 
 ###############################################################################

@@ -187,6 +187,14 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
     ### PUBLIC PROPERTIES ###
 
     @property
+    def measure_count(self):
+        r'''Gets total number of measures in segment.
+
+        Returns nonnegative integer.
+        '''
+        return len(self.time_signatures)
+
+    @property
     def music_makers(self):
         r'''Gets segment-maker's music makers.
 
@@ -201,3 +209,13 @@ class SegmentMaker(segmentmakertools.SegmentMaker):
         Returns nonnegative integer.
         '''
         return len(self.measures_per_stage)
+
+    ### PUBLIC METHODS ###
+
+    def validate_time_signatures(self):
+        r'''Is true when the sum of all measures per stage equals
+        total number of measures in segment. Otherwise false.
+
+        Returns boolean.
+        '''
+        return sum(self.measures_per_stage) == self.measure_count 

@@ -311,7 +311,7 @@
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
         autoBeaming = ##f
         markFormatter = #format-mark-box-alphabet
-        proportionalNotationDuration = #(ly:make-moment 1 24)
+        proportionalNotationDuration = #(ly:make-moment 1 28)
         tupletFullLength = ##t
     }
 }

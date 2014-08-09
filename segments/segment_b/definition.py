@@ -70,6 +70,6 @@ music_maker.rhythm_maker = makertools.EvenDivisionRhythmMaker(
     denominators=[16, 16, 8, 16, 16, 8, 8],
     extra_counts_per_division=[1, 1, 0, -1],
     tie_specifier=rhythmmakertools.TieSpecifier(
-        tie_across_divisions=True,
+        tie_across_divisions=[1, 0],
         ),
     )

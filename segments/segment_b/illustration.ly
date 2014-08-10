@@ -1,4 +1,4 @@
-% 2014-08-10 18:24
+% 2014-08-10 18:28
 
 \version "2.19.11"
 \language "english"
@@ -1903,28 +1903,28 @@
 				\clef "alto"
 				\context ViolaMusicVoice = "Viola Music Voice" {
 					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 3/5 {
-						c'2
-						c'\breve
-					}
-					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 7/10 {
+					\times 6/5 {
+						c'4
 						c'1
-						c'\longa
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 7/10 {
+					\times 7/5 {
 						c'2
 						c'\breve
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 7/5 {
+						c'4
+						c'1
 					}
 					{
 						c'2
 						c'\breve
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 3/5 {
-						c'1
-						c'\longa
+					\times 6/5 {
+						c'2
+						c'\breve
 					}
 					{
 						\time 3/4
@@ -2177,28 +2177,28 @@
 				\clef "bass"
 				\context CelloMusicVoice = "Cello Music Voice" {
 					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 3/5 {
+					\times 6/5 {
+						c'2.
+						c'2
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 7/5 {
 						c'1.
 						c'1
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 7/10 {
-						c'\breve.
-						c'\breve
-					}
-					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 7/10 {
-						c'1.
-						c'1
+					\times 7/5 {
+						c'2.
+						c'2
 					}
 					{
 						c'1.
 						c'1
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 3/5 {
-						c'\breve.
-						c'\breve
+					\times 6/5 {
+						c'1.
+						c'1
 					}
 					{
 						\time 3/4

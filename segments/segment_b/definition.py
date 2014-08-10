@@ -43,6 +43,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[(3, 2)],
     tuplet_spelling_specifier=rhythmmakertools.TupletSpellingSpecifier(
         avoid_dots=True,
+        is_diminution=False,
         ),
     )
 

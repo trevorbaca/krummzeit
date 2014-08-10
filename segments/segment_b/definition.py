@@ -66,7 +66,7 @@ music_maker.division_maker = makertools.DivisionMaker(
     remainder=Right,
     remainder_fuse_threshold=Duration(1, 8),
     )
-music_maker.rhythm_maker = makertools.EvenDivisionRhythmMaker(
+music_maker.rhythm_maker = rhythmmakertools.EvenDivisionRhythmMaker(
     denominators=[16, 16, 8, 16, 16, 8, 8],
     extra_counts_per_division=[4, 3, 0, -1, -2, 0],
     tie_specifier=rhythmmakertools.TieSpecifier(

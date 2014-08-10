@@ -1,4 +1,4 @@
-% 2014-08-08 22:22
+% 2014-08-10 16:43
 
 \version "2.19.11"
 \language "english"
@@ -894,7 +894,7 @@
 		\context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
 			\context PianoMusicStaff = "Piano Music Staff" {
 				\context PianoMusicVoice = "Piano Music Voice" {
-					\times 2/3 {
+					\times 8/12 {
 						\set PianoMusicStaff.instrumentName = \markup { Harpsichord }
 						\set PianoMusicStaff.shortInstrumentName = \markup { Hpschd. }
 						c'16 [
@@ -933,7 +933,7 @@
 						c'16 ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 4/3 {
+					\times 8/6 {
 						c'16 [
 						c'16
 						c'16
@@ -946,11 +946,8 @@
 						c'8 ~ ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 3/7 {
+					\times 3/4 {
 						c'8 [
-						c'8
-						c'8
-						c'8
 						c'8
 						c'8
 						c'8 ~ ]
@@ -983,7 +980,7 @@
 						c'8 ~ ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 3/2 {
+					\times 6/4 {
 						c'16 [
 						c'16
 						c'16
@@ -1002,11 +999,8 @@
 						c'16 ~ ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 3/7 {
+					\times 3/4 {
 						c'8 [
-						c'8
-						c'8
-						c'8
 						c'8
 						c'8
 						c'8 ~ ]
@@ -1050,12 +1044,8 @@
 						c'16
 						c'16 ]
 					}
-					\times 1/2 {
+					{
 						c'16 [
-						c'16
-						c'16
-						c'16
-						c'16
 						c'16
 						c'16
 						c'16 ~ ]
@@ -1087,7 +1077,7 @@
 						c'16 ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 4/3 {
+					\times 8/6 {
 						c'16 [
 						c'16
 						c'16
@@ -1100,7 +1090,7 @@
 						c'8
 						c'8 ~ ]
 					}
-					\times 2/3 {
+					\times 8/12 {
 						c'16 [
 						c'16
 						c'16
@@ -1114,7 +1104,7 @@
 						c'16
 						c'16 ]
 					}
-					\times 2/3 {
+					\times 6/9 {
 						c'16 [
 						c'16
 						c'16

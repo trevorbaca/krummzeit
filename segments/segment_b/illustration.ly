@@ -1,4 +1,4 @@
-% 2014-08-10 17:04
+% 2014-08-10 18:24
 
 \version "2.19.11"
 \language "english"
@@ -1902,25 +1902,29 @@
 			\context ViolaMusicStaff = "Viola Music Staff" {
 				\clef "alto"
 				\context ViolaMusicVoice = "Viola Music Voice" {
-					\times 4/5 {
-						c'4.
-						c'1.
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 3/5 {
+						c'2
+						c'\breve
 					}
-					\times 4/5 {
-						c'2..
-						c'\breve..
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 7/10 {
+						c'1
+						c'\longa
 					}
-					\times 4/5 {
-						c'4..
-						c'1..
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 7/10 {
+						c'2
+						c'\breve
 					}
 					{
 						c'2
 						c'\breve
 					}
-					\times 4/5 {
-						c'2.
-						c'\breve.
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 3/5 {
+						c'1
+						c'\longa
 					}
 					{
 						\time 3/4

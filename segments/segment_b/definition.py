@@ -29,7 +29,6 @@ assert segment_maker.validate_time_signatures()
 ################################ MUSIC-MAKERS #################################
 ###############################################################################
 
-
 ### cello [B1-4] (3rd-octave polyphony) ###
 music_maker = segment_maker.make_music_maker()
 music_maker.voice_name = vc
@@ -42,6 +41,9 @@ music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[(3, 2)],
+    tuplet_spelling_specifier=rhythmmakertools.TupletSpellingSpecifier(
+        avoid_dots=True,
+        ),
     )
 
 

@@ -286,7 +286,7 @@
         \override MetronomeMark.Y-extent = #'(0 . 0)
         %\override MetronomeMark.break-align-symbol = ##f
         %\override MetronomeMark.break-align-symbols = #'(time-signature)
-        %\override MetronomeMark.extra-offset = #'(0 . 3)
+        \override MetronomeMark.extra-offset = #'(-5.5 . 3)
         \override MetronomeMark.font-size = #3
         \override MetronomeMark.outside-staff-priority = #1000
         \override MetronomeMark.self-alignment-X = #center

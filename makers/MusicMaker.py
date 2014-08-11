@@ -20,7 +20,7 @@ class MusicMaker(abctools.AbjadObject):
             ...     tuplet_ratios=[(3, 2)],
             ...     )
             >>> music_maker = makers.MusicMaker()
-            >>> music_maker.voice_name = 'Cello Music Voice'
+            >>> music_maker.context_name = 'Cello Music Voice'
             >>> music_maker.stages = 1, 4
             >>> music_maker.division_maker = division_maker
             >>> music_maker.rhythm_maker = rhythm_maker
@@ -29,6 +29,7 @@ class MusicMaker(abctools.AbjadObject):
 
             >>> print(format(music_maker, 'storage'))
             makers.MusicMaker(
+                context_name='Cello Music Voice',
                 division_maker=makertools.HypermeasureDivisionMaker(
                     hypermeasure_specifier=makertools.HypermeasureSpecifier(
                         counts=(2, 3, 1),
@@ -41,7 +42,6 @@ class MusicMaker(abctools.AbjadObject):
                         ),
                     ),
                 stages=(1, 4),
-                voice_name='Cello Music Voice',
                 )
 
     All properties can be configured at or after initialization.
@@ -50,28 +50,31 @@ class MusicMaker(abctools.AbjadObject):
     ### CLASS ATTRIBUTES ###
 
     __slots__ = (
+        'context_name',
         'division_maker',
         'instrument',
         'rhythm_maker',
         'stages',
-        'voice_name',
+        'start_tempo',
         )
 
     ### INITIALIZER ###    
 
     def __init__(
         self,
+        context_name=None,
         division_maker=None,
         instrument=None,
         rhythm_maker=None,
         stages=None,
-        voice_name=None,
+        start_tempo=None,
         ):
+        self.context_name = context_name
         self.division_maker = division_maker
         self.instrument = instrument
         self.rhythm_maker = rhythm_maker
         self.stages = stages
-        self.voice_name = voice_name
+        self.start_tempo = start_tempo
 
     ### SPECIAL METHODS ###
 

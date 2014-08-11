@@ -86,7 +86,7 @@
         \override TimeSignature.break-align-symbol = ##f
         \override TimeSignature.break-visibility = #end-of-line-invisible
         \override TimeSignature.font-size = #3
-        \override TimeSignature.self-alignment-X = #CENTER
+        \override TimeSignature.self-alignment-X = #center
         \override VerticalAxisGroup.default-staff-staff-spacing = #'(
             (basic-distance . 0)
             (minimum-distance . 14)
@@ -281,8 +281,15 @@
         \override Beam.breakable = ##t
         \override DynamicLineSpanner.Y-extent = #'(-1.5 . 1.5)
         \override Glissando.breakable = ##t
-        \override MetronomeMark.extra-offset = #'(3 . -3)
+        \override MetronomeMark.X-extent = #'(0 . 0)
+        \override MetronomeMark.X-offset = #ly:self-alignment-interface::x-aligned-on-self
+        \override MetronomeMark.Y-extent = #'(0 . 0)
+        %\override MetronomeMark.break-align-symbol = ##f
+        %\override MetronomeMark.break-align-symbols = #'(time-signature)
+        %\override MetronomeMark.extra-offset = #'(0 . 3)
         \override MetronomeMark.font-size = #3
+        \override MetronomeMark.outside-staff-priority = #1000
+        \override MetronomeMark.self-alignment-X = #center
         \override NoteCollision.merge-differently-dotted = ##t
         \override NoteColumn.ignore-collision = ##t
         \override RehearsalMark.X-extent = #'(0 . 0)
@@ -292,6 +299,7 @@
         \override RehearsalMark.break-visibility = #end-of-line-invisible
         \override RehearsalMark.font-name = "Didot"
         \override RehearsalMark.font-size = 10
+        \override RehearsalMark.outside-staff-priority = #500
         \override RehearsalMark.self-alignment-X = #CENTER
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t

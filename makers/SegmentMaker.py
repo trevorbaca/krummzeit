@@ -78,10 +78,10 @@ class SegmentMaker(makertools.SegmentMaker):
             lilypond_file.header_block.title = None
             lilypond_file.header_block.composer = None
 
-    def _get_music_makers_for_voice(self, voice_name):
+    def _get_music_makers_for_context(self, context_name):
         music_makers = []
         for music_maker in self.music_makers:
-            if music_maker.voice_name == voice_name:
+            if music_maker.context_name == context_name:
                 music_makers.append(music_maker)
         return music_makers
 
@@ -102,6 +102,7 @@ class SegmentMaker(makertools.SegmentMaker):
         return time_signatures
 
     def _handle_music_makers(self):
+        self._make_music_for_time_signature_context()
         for voice in iterate(self._score).by_class(scoretools.Voice):
             self._make_music_for_voice(voice)
 
@@ -135,10 +136,25 @@ class SegmentMaker(makertools.SegmentMaker):
             if getattr(item, 'name', None) in ('layout', 'paper'):
                 lilypond_file.items.remove(item)
         self._lilypond_file = lilypond_file
+            
+    def _make_music_for_time_signature_context(self):
+        context_name = 'Time Signature Context'
+        context = self._score[context_name]
+        music_makers = self._get_music_makers_for_context(context_name)
+        for music_maker in music_makers:
+            if music_maker.start_tempo is not None:
+                start_tempo = new(music_maker.start_tempo)
+                leaves = iterate(context).by_class(
+                    scoretools.Leaf,
+                    start=0,
+                    stop=1,
+                    )
+                first_leaf = list(leaves)[0]
+                attach(start_tempo, first_leaf)
 
     def _make_music_for_voice(self, voice):
         assert not len(voice), repr(voice)
-        music_makers = self._get_music_makers_for_voice(voice.name)
+        music_makers = self._get_music_makers_for_context(voice.name)
         music_makers.sort(lambda x: x.stages[0])
         assert self._stages_do_not_overlap(music_makers), music_makers
         if not music_makers:
@@ -223,25 +239,25 @@ class SegmentMaker(makertools.SegmentMaker):
 
     ### PUBLIC METHODS ###
 
-    def copy_music_maker(self, _voice_name, _stage, **kwargs):
-        r'''Gets music-maker with `_voice_name` defined for `_stage`.
+    def copy_music_maker(self, _context_name, _stage, **kwargs):
+        r'''Gets music-maker with `_context_name` defined for `_stage`.
         Then makes new music-maker from this with optional `kwargs`.
 
         Short-cut for get-then-new.
 
-        Uses private positional argument names `_voice_name` and `_stage` 
-        to avoid aliasing public keyword argument names `voice_name`
+        Uses private positional argument names `_context_name` and `_stage` 
+        to avoid aliasing public keyword argument names `context_name`
         and `stage`.
 
         Returns music-maker.
         '''
-        music_maker = self.get_music_maker(_voice_name, _stage)
+        music_maker = self.get_music_maker(_context_name, _stage)
         new_music_maker = new(music_maker, **kwargs)
         self.music_makers.append(new_music_maker)
         return new_music_maker
 
-    def get_music_maker(self, voice_name, stage):
-        r'''Gets music-maker with `voice_name` defined for `stage`.
+    def get_music_maker(self, context_name, stage):
+        r'''Gets music-maker with `context_name` defined for `stage`.
 
         Returns music-maker.
 
@@ -249,13 +265,13 @@ class SegmentMaker(makertools.SegmentMaker):
         '''
         music_makers = []
         for music_maker in self.music_makers:
-            if music_maker.voice_name == voice_name:
+            if music_maker.context_name == context_name:
                 start = music_maker.start_stage
                 stop = music_maker.stop_stage + 1
                 if stage in range(start, stop):
                     return music_maker
         message = 'no music-maker for {!r} found for stage {}.'
-        message = message.format(voice_name, stage)
+        message = message.format(context_name, stage)
         raise KeyError(message)
 
     def make_music_maker(self):

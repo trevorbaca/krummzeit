@@ -29,9 +29,17 @@ assert segment_maker.validate_time_signatures()
 ################################ MUSIC-MAKERS #################################
 ###############################################################################
 
+
+### tempo indicators [B1-4] ###
+music_maker = segment_maker.make_music_maker()
+music_maker.context_name = 'Time Signature Context'
+music_maker.stages = 1, 4
+music_maker.start_tempo = Tempo(Duration(1, 4), 135)
+
+
 ### cello [B1-4] (3rd-octave polyphony) ###
 music_maker = segment_maker.make_music_maker()
-music_maker.voice_name = vc
+music_maker.context_name = vc
 music_maker.stages = 1, 4
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     hypermeasure_specifier=makertools.HypermeasureSpecifier(
@@ -54,13 +62,13 @@ segment_maker.copy_music_maker(
     vc,
     1,
     rhythm_maker__tuplet_ratios=[(1, 4)],
-    voice_name=va,
+    context_name=va,
     )
 
 
 ### harpsichord [B1-4] (5th-octave polyphony) ###
 music_maker = segment_maker.make_music_maker()
-music_maker.voice_name = pf
+music_maker.context_name = pf
 music_maker.instrument = harpsichord
 music_maker.stages = 1, 4
 music_maker.division_maker = makertools.DivisionMaker(

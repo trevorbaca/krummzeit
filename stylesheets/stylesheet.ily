@@ -89,13 +89,25 @@
         \override BarNumber.extra-offset = #'(-6 . -4)
         \override BarNumber.font-size = 1
         \override BarNumber.padding = 4
-        %\override BarNumber.transparent = ##t
-        %\override MetronomeMark.X-extent = #'(0 . 0)
-        \override MetronomeMark.X-offset = #ly:self-alignment-interface::x-aligned-on-self
+        \override MetronomeMark.X-extent = #'(0 . 0)
+        %\override MetronomeMark.X-offset = #ly:self-alignment-interface::x-aligned-on-self
+        %\override MetronomeMark.X-offset = #ly:self-alignment-interface::self-aligned-on-breakable
         \override MetronomeMark.Y-extent = #'(0 . 0)
+        \override MetronomeMark.break-align-symbols = #'(left-edge staff-bar)
         \override MetronomeMark.extra-offset = #'(0 . 4)
         \override MetronomeMark.font-size = 3
-        \override MetronomeMark.self-alignment-X = #left
+        \override MetronomeMark.non-break-align-symbols = #'()
+        %\override MetronomeMark.self-alignment-X = #left
+        \override MetronomeMark.space-alist = #'(
+            (time-signature extra-space . 0.0)
+            (custos minimum-space . 0.0) 
+            (clef minimum-space . 0.0) 
+            (key-signature extra-space . 0.0) 
+            (key-cancellation extra-space . 0.0) 
+            (first-note fixed-space . 0.0) 
+            (next-note semi-fixed-space . 0.0) 
+            (right-edge extra-space . 0.0)
+        )
         \override RehearsalMark.X-extent = #'(0 . 0)
         \override RehearsalMark.Y-offset = -2.25
         \override RehearsalMark.X-offset = 8
@@ -106,13 +118,11 @@
         \override RehearsalMark.outside-staff-priority = 500
         \override RehearsalMark.self-alignment-X = #center
         \override TimeSignature.X-extent = #'(0 . 0)
-        \override TimeSignature.X-offset = #ly:self-alignment-interface::x-aligned-on-self
-        \override TimeSignature.Y-extent = #'(0 . 0)
         \override TimeSignature.break-align-symbol = ##f
         \override TimeSignature.break-visibility = #end-of-line-invisible
         \override TimeSignature.font-size = 3
         \override TimeSignature.self-alignment-X = #center
-        \override TimeSignature.style = #'()
+        \override TimeSignature.style = #'numbered
         \override VerticalAxisGroup.default-staff-staff-spacing = #'(
             (basic-distance . 0)
             (minimum-distance . 14)
@@ -307,6 +317,16 @@
         \remove Mark_engraver
         \remove Metronome_mark_engraver
         \override BarLine.hair-thickness = 0.5
+        \override BarLine.space-alist = #'(
+            (time-signature extra-space . 0.0)
+            (custos minimum-space . 0.0) 
+            (clef minimum-space . 0.0) 
+            (key-signature extra-space . 0.0) 
+            (key-cancellation extra-space . 0.0) 
+            (first-note fixed-space . 0.0) 
+            (next-note semi-fixed-space . 0.0) 
+            (right-edge extra-space . 0.0)
+        )
         \override Beam.breakable = ##t
         \override DynamicLineSpanner.Y-extent = #'(-1.5 . 1.5)
         \override Glissando.breakable = ##t

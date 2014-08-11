@@ -40,7 +40,7 @@ music_maker.division_maker = makertools.HypermeasureDivisionMaker(
         ),
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
-    preferred_denominator_from_divisions=True,
+    preferred_denominator=Duration(1, 4),
     tuplet_ratios=[(3, 2)],
     tuplet_spelling_specifier=rhythmmakertools.TupletSpellingSpecifier(
         avoid_dots=True,

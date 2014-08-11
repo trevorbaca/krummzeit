@@ -56,6 +56,7 @@ class MusicMaker(abctools.AbjadObject):
         'rhythm_maker',
         'stages',
         'start_tempo',
+        'stop_tempo',
         )
 
     ### INITIALIZER ###    
@@ -68,6 +69,7 @@ class MusicMaker(abctools.AbjadObject):
         rhythm_maker=None,
         stages=None,
         start_tempo=None,
+        stop_tempo=None,
         ):
         self.context_name = context_name
         self.division_maker = division_maker
@@ -75,6 +77,7 @@ class MusicMaker(abctools.AbjadObject):
         self.rhythm_maker = rhythm_maker
         self.stages = stages
         self.start_tempo = start_tempo
+        self.stop_tempo = stop_tempo
 
     ### SPECIAL METHODS ###
 

@@ -32,9 +32,16 @@ assert segment_maker.validate_time_signatures()
 
 ### tempo indicators [B1-4] ###
 music_maker = segment_maker.make_music_maker()
-music_maker.context_name = 'Time Signature Context'
-music_maker.stages = 1, 4
-music_maker.start_tempo = Tempo(Duration(1, 4), 135)
+music_maker.context_name = tsc
+music_maker.stages = 1, 2
+music_maker.start_tempo = materials.tempo_inventory[3]
+
+music_maker = segment_maker.copy_music_maker(
+    tsc,
+    1,
+    stages=(2, 4),
+    stop_tempo=Tempo(Duration(1, 4), 144),
+    )
 
 
 ### cello [B1-4] (3rd-octave polyphony) ###

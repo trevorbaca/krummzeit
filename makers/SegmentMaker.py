@@ -54,6 +54,12 @@ class SegmentMaker(makertools.SegmentMaker):
 
     ### PRIVATE METHODS ###
 
+    def _attach_debug_tempo(self):
+        context = self._score['Time Signature Context']
+        third_measure = context[2]
+        tempo = Tempo(Duration(1, 4), 135)
+        attach(tempo, third_measure)
+
     def _attach_rehearsal_mark(self):
         assert len(self.name) == 1 and self.name.upper(), repr(self.name)
         letter_number = ord(self.name) - ord('A') + 1
@@ -151,6 +157,11 @@ class SegmentMaker(makertools.SegmentMaker):
                     )
                 first_leaf = list(leaves)[0]
                 attach(start_tempo, first_leaf)
+            if music_maker.stop_tempo is not None:
+                stop_tempo = new(music_maker.stop_tempo)
+                leaves = iterate(context).by_class(scoretools.Leaf)
+                last_leaf = list(leaves)[-1]
+                attach(stop_tempo, last_leaf)
 
     def _make_music_for_voice(self, voice):
         assert not len(voice), repr(voice)

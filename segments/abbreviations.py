@@ -9,8 +9,9 @@ harpsichord._default_scope = 'PianoMusicStaff'
 piano = materials.performer_inventory.get_instrument('piano')
 piano._default_scope = 'PianoMusicStaff'
 
-### VOICE NAMES ###
+### CONTEXT NAMES ###
 
+tsc = 'Time Signature Context'
 ob = 'Oboe Music Voice'
 cl = 'Clarinet Music Voice'
 pf = 'Piano Music Voice'

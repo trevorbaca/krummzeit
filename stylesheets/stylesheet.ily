@@ -104,9 +104,14 @@
         \override RehearsalMark.outside-staff-priority = 500
         \override RehearsalMark.self-alignment-X = #center
         \override TimeSignature.X-extent = #'(0 . 0)
+        % Setting left-edge causes LilyPond to warn like this ...
+        %     programming error: No spacing entry from Item to `clef'
+        % ... but gives correct visual output.
+        % Warning goes away when time signature space alist has cleft entry
         \override TimeSignature.break-align-symbol = #'left-edge
         \override TimeSignature.break-visibility = #end-of-line-invisible
         \override TimeSignature.font-size = 3
+        \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
         \override TimeSignature.style = #'numbered
         \override VerticalAxisGroup.default-staff-staff-spacing = #'(
             (basic-distance . 0)

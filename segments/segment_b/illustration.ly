@@ -1,4 +1,4 @@
-% 2014-08-11 15:56
+% 2014-08-12 13:20
 
 \version "2.19.11"
 \language "english"
@@ -17,7 +17,6 @@
 		\context TimeSignatureContext = "Time Signature Context" {
 			{
 				\time 3/4
-				\tempo 4=135
 				\mark #2
 				s1 * 3/4
 			}
@@ -303,7 +302,6 @@
 			}
 			{
 				\time 5/4
-				\tempo 4=144
 				s1 * 5/4
 			}
 		}

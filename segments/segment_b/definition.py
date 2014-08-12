@@ -25,23 +25,27 @@ assert segment_maker.stage_count == 23
 assert segment_maker.validate_time_signatures()
 
 
+### tempo indicators [B1-4] ###
+music_maker = segment_maker.make_music_maker()
+segment_maker.tempo_map = {
+    1: materials.tempo_inventory[3],
+    9: materials.tempo_inventory[3] / 2,
+    10: accelerando,
+    12: materials.tempo_inventory[3],
+    15: materials.tempo_inventory[2],
+    15: metric_modulation,
+    16: accelerando,
+    17: materials.tempo_inventory[3],
+    20: materials.tempo_inventory[1],
+    20: metric_modulation,
+    22: materials.tempo_inventory[1],
+    }
+
+
+
 ###############################################################################
 ################################ MUSIC-MAKERS #################################
 ###############################################################################
-
-
-### tempo indicators [B1-4] ###
-music_maker = segment_maker.make_music_maker()
-music_maker.context_name = tsc
-music_maker.stages = 1, 2
-music_maker.start_tempo = materials.tempo_inventory[3]
-
-music_maker = segment_maker.copy_music_maker(
-    tsc,
-    1,
-    stages=(2, 4),
-    stop_tempo=Tempo(Duration(1, 4), 144),
-    )
 
 
 ### cello [B1-4] (3rd-octave polyphony) ###

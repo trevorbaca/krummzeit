@@ -29,7 +29,7 @@ assert segment_maker.validate_time_signatures()
 music_maker = segment_maker.make_music_maker()
 segment_maker.tempo_map = {
     1: materials.tempo_inventory[3],
-    9: materials.tempo_inventory[3] / 2,
+    9: materials.tempo_inventory[4],
     10: accelerando,
     12: materials.tempo_inventory[3],
     15: materials.tempo_inventory[2],

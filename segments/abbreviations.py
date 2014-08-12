@@ -9,6 +9,7 @@ harpsichord._default_scope = 'PianoMusicStaff'
 piano = materials.performer_inventory.get_instrument('piano')
 piano._default_scope = 'PianoMusicStaff'
 
+
 ### CONTEXT NAMES ###
 
 tsc = 'Time Signature Context'
@@ -19,3 +20,10 @@ perc = 'Percussion Music Voice'
 vn = 'Violin Music Voice'
 va = 'Viola Music Voice'
 vc = 'Cello Music Voice'
+
+
+### OTHER ###
+
+accelerando = 'accelerando'
+decelerando = 'decelerando'
+metric_modulation = 'metric_modulation'

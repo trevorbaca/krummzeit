@@ -16,6 +16,7 @@ class SegmentMaker(makertools.SegmentMaker):
         'measures_per_stage',
         'name',
         'time_signatures',
+        'tempo_map',
         )
 
     ### INITIALIZER ###
@@ -25,6 +26,7 @@ class SegmentMaker(makertools.SegmentMaker):
         measures_per_stage=None,
         music_makers=None,
         name=None,
+        tempo_map=None,
         time_signatures=None,
         ):
         superclass = super(SegmentMaker, self)
@@ -33,6 +35,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self.measures_per_stage = measures_per_stage
         self.name = name
         self._initialize_time_signatures(time_signatures)
+        self.tempo_map = tempo_map
 
     ### SPECIAL METHODS ###
 

@@ -1,4 +1,4 @@
-% 2014-08-12 13:58
+% 2014-08-12 15:11
 
 \version "2.19.11"
 \language "english"
@@ -104,7 +104,17 @@
 				s1 * 1
 			}
 			{
-				\tempo 4=67
+				\tempo \markup {
+				\smaller
+					\general-align
+						#Y
+						#DOWN
+						\note-by-number
+							#2
+							#0
+							#1
+				" = 67.5"
+				}
 				\time 6/4
 				s1 * 3/2
 			}

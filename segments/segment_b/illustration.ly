@@ -1,4 +1,4 @@
-% 2014-08-12 13:20
+% 2014-08-12 13:58
 
 \version "2.19.11"
 \language "english"
@@ -16,6 +16,7 @@
 	\context Score = "Krummzeit Score" <<
 		\context TimeSignatureContext = "Time Signature Context" {
 			{
+				\tempo 4=135
 				\time 3/4
 				\mark #2
 				s1 * 3/4
@@ -103,6 +104,7 @@
 				s1 * 1
 			}
 			{
+				\tempo 4=67
 				\time 6/4
 				s1 * 3/2
 			}
@@ -146,6 +148,7 @@
 				s1 * 9/8
 			}
 			{
+				\tempo 4=135
 				\time 5/4
 				s1 * 5/4
 			}
@@ -200,6 +203,7 @@
 				s1 * 1/2
 			}
 			{
+				\tempo 4=135
 				\time 7/4
 				s1 * 7/4
 			}
@@ -280,6 +284,7 @@
 				s1 * 9/8
 			}
 			{
+				\tempo 4=108
 				s1 * 9/8
 			}
 			{

@@ -1,4 +1,5 @@
 # -*- encoding: utf-8 -*-
+import copy
 import os
 from abjad import *
 from experimental.tools import makertools
@@ -73,6 +74,31 @@ class SegmentMaker(makertools.SegmentMaker):
         first_leaf = list(leaves)[0]
         attach(rehearsal_mark, first_leaf)
 
+    def _attach_tempo_indicators(self):
+        if not self.tempo_map:
+            return
+        context = self._score['Time Signature Context']
+        for stage_number, directive in self.tempo_map.iteritems():
+            assert 0 < stage_number <= self.stage_count
+            result = self._stage_number_to_measure_indices(stage_number)
+            start_measure_index, stop_measure_index = result
+            if isinstance(directive, Tempo):
+                start_measure = context[start_measure_index]
+                assert isinstance(start_measure, Measure), start_measure
+                tempo = copy.copy(directive)
+                attach(tempo, start_measure)
+            elif directive == 'accelerando':
+                # TODO
+                pass
+            elif directive == 'decelerando':
+                # TODO
+                pass
+            elif directive == 'metric_modulation':
+                # TODO
+                pass
+            else:
+                raise ValueError(directive)
+
     def _configure_lilypond_file(self):
         lilypond_file = self._lilypond_file
         lilypond_file.use_relative_includes = True
@@ -112,6 +138,7 @@ class SegmentMaker(makertools.SegmentMaker):
 
     def _handle_music_makers(self):
         self._make_music_for_time_signature_context()
+        self._attach_tempo_indicators()
         for voice in iterate(self._score).by_class(scoretools.Voice):
             self._make_music_for_voice(voice)
 
@@ -216,6 +243,13 @@ class SegmentMaker(makertools.SegmentMaker):
         measures = self._make_empty_measures()
         time_signature_context = self._score['Time Signature Context']
         time_signature_context.extend(measures)
+
+    def _stage_number_to_measure_indices(self, stage_number):
+        assert stage_number <= self.stage_count
+        measure_indices = mathtools.cumulative_sums(self.measures_per_stage)
+        start_measure_index = measure_indices[stage_number-1]
+        stop_measure_index = measure_indices[stage_number] - 1
+        return start_measure_index, stop_measure_index
 
     def _stages_do_not_overlap(self, makers):
         stage_numbers = []

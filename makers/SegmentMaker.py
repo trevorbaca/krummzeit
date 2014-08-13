@@ -67,8 +67,7 @@ class SegmentMaker(makertools.SegmentMaker):
     def _attach_rehearsal_mark(self):
         assert len(self.name) == 1 and self.name.upper(), repr(self.name)
         letter_number = ord(self.name) - ord('A') + 1
-        string = r'mark #{}'.format(letter_number)
-        rehearsal_mark = indicatortools.LilyPondCommand(string)
+        rehearsal_mark = indicatortools.RehearsalMark(number=letter_number)
         voice = self._score['Time Signature Context']
         leaves = iterate(voice).by_class(scoretools.Leaf, start=0, stop=1)
         first_leaf = list(leaves)[0]

@@ -41,7 +41,7 @@ clarinet, violin and oboe in (12.1) fall out in a staggered pattern. the
 strings introduce the on-the-bridge bowing of (3.5) incrementally. [B6] effects
 a return to the prevailing tempo of quarter=135 up from the slowpoint effected
 by the dilation in [B5'] before. the draw-down of (12.1) in [B7-10] persists at
-quarter=135 inflected neither by accelerandi nor by decelerandi nor by
+quarter=135 inflected neither by accelerandi nor by ritardandi nor by
 written-out changes in the density of any of the parts. the exit of the sponged
 bass drum at the end of [B10] leaves only the on-the-bridge bowing of the three
 strings in (3.5) unmixed with any of the other colors. [B11] is a field. [B11]
@@ -79,7 +79,7 @@ measure or two at a time. in [B18-19] there's a second case of exact repetition
 at subito quieter dynamic (as in [B1-5]'). the way in which the piano brings
 (9.1) to a close at the end of [B20] is important but can be left until the
 time of writing. when the clarinet and circle-scraped slate enter in [B19] they
-carry a new tempo. the tempo is quarter=72. neither accelerandi nor decelerandi
+carry a new tempo. the tempo is quarter=72. neither accelerandi nor ritardandi
 govern [B19-20].
 
                                      * * *
@@ -104,7 +104,7 @@ persists throughout [C7-8] but is relinquished in [C9] to effect the exit of
 accelerando during [C4-6] from quarter=108 up by 2:1 to quarter=216. tempo
 games during [C7-8] with subito tempo changes after almost every fermata.
 steady tempo at the start of [C9]. underneath the handling of (6) (10) effects
-a density decelerando over [C8-9] culminating in the unrestrained strings (10)
+a density ritardando over [C8-9] culminating in the unrestrained strings (10)
 in [C10]. quarter=45 at the start of [C10]. accelerando during [C10-12].
 accelerando inflects both the incredibly loud string chord and piano clusters
 of [C10-12]. [C] ends at quater=135.
@@ -120,14 +120,14 @@ reappearance of the loud writing in (10.2) during [D7-10]. there are both pitch
 and tempo differences between the loud string writing in [C7-11] and the loud
 string writing in [D7-10]. [D7-10] is up-transposed. the reappearance in
 [D7-10] is not subject to accelerando. if anything the reappearance in [D7-10]
-is subject to decelarando leading to the introduction of the block oboe at the
+is subject to ritardando leading to the introduction of the block oboe at the
 start of [D9]. the block oboe (2.1) in [D9-11] constitutes the climax of [D].
 the material of the climax is loud and the tempo of the climax is quarter=45.
 the staggered entrances of the tam (2.5) and the bass clarinet (2.4) in [D9]
 and [D11] serve to shadow and to deepen the oboe. the climax is effected in the
 oboe writing itself in [D9-11]. the oboe writing in [D9-11] is slow but
 inflected with momentary pullings-forward and momentary holdings-back. a
-pronounced decelerando governs [D11-12] and brings [D12] to a close. timeflow
+pronounced ritardando governs [D11-12] and brings [D12] to a close. timeflow
 stops phenomenologically at the start of [E].
 
                                      * * *
@@ -239,7 +239,7 @@ to allow for [J] to function as reprieve from the ending process of [H], [I],
 quarter=90 for all of [J3-4]. metric modulation at the onset of [J5] from
 quarter=90 up by 6:5 to quater=108 for all of [J5-6]. metric modulation at the
 onset of [J7] from quarter=108 down by 2:3 to quarter=72 for all of [J7-8].
-pronounced decelerando during [J9-10] from quarter=72 down to quarter=36 for
+pronounced ritardando during [J9-10] from quarter=72 down to quarter=36 for
 all of [J11-12]. accelerando from quarter=36 up by 4:1 to quarter=144 during
 [J13-15]. [J] ends just before the accelerando achieve quarter=144.
 

@@ -25,5 +25,5 @@ vc = 'Cello Music Voice'
 ### OTHER ###
 
 accelerando = 'accelerando'
-decelerando = 'decelerando'
+ritardando = 'ritardando'
 metric_modulation = 'metric_modulation'

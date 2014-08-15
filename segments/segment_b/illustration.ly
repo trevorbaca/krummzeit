@@ -1,4 +1,4 @@
-% 2014-08-12 15:11
+% 2014-08-15 18:56
 
 \version "2.19.11"
 \language "english"
@@ -16,10 +16,20 @@
 	\context Score = "Krummzeit Score" <<
 		\context TimeSignatureContext = "Time Signature Context" {
 			{
-				\tempo 4=135
 				\time 3/4
 				\mark #2
-				s1 * 3/4
+				s1 * 3/4 ^ \markup {
+					\smaller
+						\general-align
+							#Y
+							#DOWN
+							\note-by-number
+								#2
+								#0
+								#1
+					\upright
+						" = 135"
+					}
 			}
 			{
 				s1 * 3/4
@@ -104,19 +114,18 @@
 				s1 * 1
 			}
 			{
-				\tempo \markup {
-				\smaller
-					\general-align
-						#Y
-						#DOWN
-						\note-by-number
-							#2
-							#0
-							#1
-				" = 67.5"
-				}
 				\time 6/4
-				s1 * 3/2
+				s1 * 3/2 ^ \markup {
+					\smaller
+						\general-align
+							#Y
+							#DOWN
+							\note-by-number
+								#2
+								#0
+								#1
+					" = 67.5"
+					}
 			}
 			{
 				\time 3/4
@@ -139,7 +148,43 @@
 			}
 			{
 				\time 8/4
-				s1 * 2
+				\once \override TextSpanner.arrow-width = 0.25
+				\once \override TextSpanner.bound-details.left-broken.padding = -2
+				\once \override TextSpanner.bound-details.left-broken.text = \markup {
+					\parenthesize
+					\large
+						{
+							\italic
+								{
+									accel.
+								}
+						}
+					\hspace
+						#0.75
+					}
+				\once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+				\once \override TextSpanner.bound-details.left.text = \markup {
+					\parenthesize
+					\combine
+					\smaller
+						\general-align
+							#Y
+							#DOWN
+							\note-by-number
+								#2
+								#0
+								#1
+					" = 67.5"
+					}
+				\once \override TextSpanner.bound-details.right-broken.arrow = ##f
+				\once \override TextSpanner.bound-details.right-broken.padding = 0
+				\once \override TextSpanner.bound-details.right-broken.text = ##f
+				\once \override TextSpanner.bound-details.right.arrow = ##t
+				\once \override TextSpanner.bound-details.right.padding = 2
+				\once \override TextSpanner.bound-details.right.text = ##f
+				\once \override TextSpanner.dash-fraction = 0.25
+				\once \override TextSpanner.dash-period = 1.5
+				s1 * 2 \startTextSpan
 			}
 			{
 				\time 3/4
@@ -158,9 +203,19 @@
 				s1 * 9/8
 			}
 			{
-				\tempo 4=135
 				\time 5/4
-				s1 * 5/4
+				s1 * 5/4 \stopTextSpan ^ \markup {
+					\smaller
+						\general-align
+							#Y
+							#DOWN
+							\note-by-number
+								#2
+								#0
+								#1
+					\upright
+						" = 135"
+					}
 			}
 			{
 				\time 2/4
@@ -202,7 +257,44 @@
 			}
 			{
 				\time 5/8
-				s1 * 5/8
+				\once \override TextSpanner.arrow-width = 0.25
+				\once \override TextSpanner.bound-details.left-broken.padding = -2
+				\once \override TextSpanner.bound-details.left-broken.text = \markup {
+					\parenthesize
+					\large
+						{
+							\italic
+								{
+									accel.
+								}
+						}
+					\hspace
+						#0.75
+					}
+				\once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+				\once \override TextSpanner.bound-details.left.text = \markup {
+					\parenthesize
+					\combine
+					\smaller
+						\general-align
+							#Y
+							#DOWN
+							\note-by-number
+								#2
+								#0
+								#1
+					\upright
+						" = 135"
+					}
+				\once \override TextSpanner.bound-details.right-broken.arrow = ##f
+				\once \override TextSpanner.bound-details.right-broken.padding = 0
+				\once \override TextSpanner.bound-details.right-broken.text = ##f
+				\once \override TextSpanner.bound-details.right.arrow = ##t
+				\once \override TextSpanner.bound-details.right.padding = 2
+				\once \override TextSpanner.bound-details.right.text = ##f
+				\once \override TextSpanner.dash-fraction = 0.25
+				\once \override TextSpanner.dash-period = 1.5
+				s1 * 5/8 \startTextSpan
 			}
 			{
 				\time 4/4
@@ -213,9 +305,19 @@
 				s1 * 1/2
 			}
 			{
-				\tempo 4=135
 				\time 7/4
-				s1 * 7/4
+				s1 * 7/4 \stopTextSpan ^ \markup {
+					\smaller
+						\general-align
+							#Y
+							#DOWN
+							\note-by-number
+								#2
+								#0
+								#1
+					\upright
+						" = 135"
+					}
 			}
 			{
 				\time 4/4
@@ -294,8 +396,18 @@
 				s1 * 9/8
 			}
 			{
-				\tempo 4=108
-				s1 * 9/8
+				s1 * 9/8 ^ \markup {
+					\smaller
+						\general-align
+							#Y
+							#DOWN
+							\note-by-number
+								#2
+								#0
+								#1
+					\upright
+						" = 108"
+					}
 			}
 			{
 				\time 5/8

@@ -1,6 +1,6 @@
-% 2014-07-24 12:58
+% 2014-08-17 19:03
 
-\version "2.19.9"
+\version "2.19.11"
 \language "english"
 
 \header {
@@ -37,6 +37,20 @@
 			\break
 			c'2
 			\tempo 4=135
+			\break
+			c'2
+			\tempo \markup {
+				\smaller
+					\general-align
+						#Y
+						#DOWN
+						\note-by-number
+							#2
+							#0
+							#1
+				\upright
+					" = 67.5"
+				}
 			\break
 			c'2
 		}

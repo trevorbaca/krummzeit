@@ -20,10 +20,3 @@ perc = 'Percussion Music Voice'
 vn = 'Violin Music Voice'
 va = 'Viola Music Voice'
 vc = 'Cello Music Voice'
-
-
-### OTHER ###
-
-accelerando = 'accelerando'
-ritardando = 'ritardando'
-metric_modulation = 'metric_modulation'

@@ -48,6 +48,12 @@
         (padding . 8)
         (stretchability . 0)
     )
+    top-system-spacing = #'(
+        (basic-distance . 0)
+        (minimum-distance . 20)
+        (padding . 0)
+        (stretchability . 0)
+    )
     top-margin = 10\mm
 }
 
@@ -85,11 +91,9 @@
         \consists Bar_number_engraver
         \consists Mark_engraver
         \consists Metronome_mark_engraver
-        \consists Staff_symbol_engraver
         \consists Text_engraver
         \consists Text_spanner_engraver
         \consists Time_signature_engraver
-        \consists Vertical_align_engraver
         \override BarNumber.extra-offset = #'(-6 . -4)
         \override BarNumber.font-size = 1
         \override BarNumber.padding = 4
@@ -107,12 +111,13 @@
         \override RehearsalMark.font-size = 10
         \override RehearsalMark.outside-staff-priority = 500
         \override RehearsalMark.self-alignment-X = #center
-        \override StaffSymbol.stencil = ##f
-        \override SystemStartBar.stencil = ##f
         \override TextScript.font-size = 3
         \override TextScript.outside-staff-priority = 600
-        \override TextScript.staff-padding = 4
-        \override TextSpanner.staff-padding = 4.75
+        \override TextScript.padding = 6
+        %\override TextScript.staff-padding = 4
+        \override TextSpanner.bound-details.right.attach-dir = #LEFT
+        \override TextSpanner.padding = 6.75
+        %\override TextSpanner.staff-padding = 4.75
         \override TimeSignature.X-extent = #'(0 . 0)
         \override TimeSignature.break-align-symbol = #'left-edge
         \override TimeSignature.break-visibility = #end-of-line-invisible
@@ -125,6 +130,10 @@
             (padding . 0)
             (stretchability . 0)
         )
+        %\override VerticalAxisGroup.Y-extent = #'(-12 . 12)
+        \override VerticalAxisGroup.minimum-Y-extent = #'(-20 . 20)
+        %\alterBroken transparent #'(#t) SystemStartBrace
+        \alterBroken transparent #'(#t) SystemStartBar
     }
     \context {
         \Staff

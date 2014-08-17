@@ -43,7 +43,7 @@ tempo_inventory = indicatortools.TempoInventory(
                                 )
                             )
                         ),
-                    ' = 67.5',
+                    markuptools.MarkupCommand('upright', ' = 67.5'),
                     ),
                 ),
             ),

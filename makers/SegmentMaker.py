@@ -76,7 +76,7 @@ class SegmentMaker(makertools.SegmentMaker):
         skips = list(iterate(context).by_class(scoretools.Leaf))
         tempo_spanner = spannertools.TempoSpanner()
         attach(tempo_spanner, skips)
-        for stage_number, directive in self.tempo_map.iteritems():
+        for stage_number, directive in self.tempo_map:
             assert 0 < stage_number <= self.stage_count
             result = self._stage_number_to_measure_indices(stage_number)
             start_measure_index, stop_measure_index = result
@@ -84,31 +84,8 @@ class SegmentMaker(makertools.SegmentMaker):
             assert isinstance(start_measure, Measure), start_measure
             start_skip = start_measure[0]
             assert isinstance(start_skip, scoretools.Skip), start_skip
-            if isinstance(directive, Tempo):
-                tempo = copy.copy(directive)
-                # TODO: adjust TempoSpanner to make measure attachment work
-                #attach(tempo, start_measure, is_annotation=True)
-                attach(tempo, start_skip, is_annotation=True)
-            elif directive == 'accelerando':
-                accelerando = Accelerando()
-                # TODO: adjust TempoSpanner to make measure attachment work
-                #attach(accelerando, start_measure, is_annotation=True)
-                attach(accelerando, start_skip, is_annotation=True)
-            elif directive == 'ritardando':
-                ritardando = Ritardando()
-                # TODO: adjust TempoSpanner to make measure attachment work
-                #attach(ritardando, start_measure, is_annotation=True)
-                attach(ritardando, start_skip, is_annotation=True)
-            elif directive == 'metric_modulation':
-                # TODO
-                pass
-            else:
-                raise ValueError(directive)
-#        indicators = []
-#        for skip in tempo_spanner:
-#            indicators.append(inspect_(skip).get_indicators())
-        string = format(context)
-        #raise Exception(string)
+            # TODO: adjust TempoSpanner to make measure attachment work
+            attach(directive, start_skip, is_annotation=True)
 
     def _configure_lilypond_file(self):
         lilypond_file = self._lilypond_file

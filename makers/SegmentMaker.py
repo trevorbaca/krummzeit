@@ -149,7 +149,18 @@ class SegmentMaker(makertools.SegmentMaker):
         time_signatures_ = tuple(time_signatures_)
         self.time_signatures = time_signatures_
 
-    def _make_empty_measures(self, time_signatures=None):
+    def _make_rests(self, time_signatures=None):
+        time_signatures = time_signatures or self.time_signatures
+        specifier = rhythmmakertools.DurationSpellingSpecifier(
+            spell_metrically='unassignable',
+            )
+        maker = rhythmmakertools.RestRhythmMaker(
+            duration_spelling_specifier=specifier,
+            )
+        selections = maker(time_signatures)
+        return selections
+
+    def _make_skip_filled_measures(self, time_signatures=None):
         time_signatures = time_signatures or self.time_signatures
         measures = scoretools.make_spacer_skip_measures(time_signatures)
         return measures
@@ -181,7 +192,7 @@ class SegmentMaker(makertools.SegmentMaker):
         music_makers.sort(lambda x: x.stages[0])
         assert self._stages_do_not_overlap(music_makers), music_makers
         if not music_makers:
-            measures = self._make_empty_measures()
+            measures = self._make_rests()
             voice.extend(measures) 
             return
         next_stage = 1
@@ -195,7 +206,7 @@ class SegmentMaker(makertools.SegmentMaker):
                     start_stage=next_stage,
                     stop_stage=stop_stage,
                     )
-                measures = self._make_empty_measures(time_signatures)
+                measures = self._make_rests(time_signatures)
                 voice.extend(measures)
             time_signatures = self._get_time_signatures(*music_maker.stages)
             music = music_maker(time_signatures)
@@ -204,7 +215,7 @@ class SegmentMaker(makertools.SegmentMaker):
         if next_stage <= self.stage_count:
             time_signatures = self._get_time_signatures(
                 next_stage, self.stage_count)
-            measures = self._make_empty_measures(time_signatures)
+            measures = self._make_rests(time_signatures)
             voice.extend(measures)
 
     def _make_score(self):
@@ -214,7 +225,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._score = score
 
     def _populate_time_signature_context(self):
-        measures = self._make_empty_measures()
+        measures = self._make_skip_filled_measures()
         time_signature_context = self._score['Time Signature Context']
         time_signature_context.extend(measures)
 

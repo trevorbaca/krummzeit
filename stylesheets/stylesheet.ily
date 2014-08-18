@@ -104,7 +104,7 @@
         \override MetronomeMark.font-size = 3
         \override RehearsalMark.X-extent = #'(0 . 0)
         \override RehearsalMark.Y-offset = -2.25
-        \override RehearsalMark.X-offset = 8
+        \override RehearsalMark.X-offset = 6
         \override RehearsalMark.break-align-symbols = #'(time-signature)
         \override RehearsalMark.break-visibility = #end-of-line-invisible
         \override RehearsalMark.font-name = "Didot"
@@ -242,6 +242,7 @@
         \accepts PercussionMusicVoice
         instrumentName = \markup { \hcenter-in #12 Percussion }
         shortInstrumentName = \markup { \hcenter-in #12 Perc. }
+        \override TupletBracket.staff-padding = 5
     }
     \context {
         \PianoStaff

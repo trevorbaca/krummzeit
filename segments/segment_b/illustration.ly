@@ -1,4 +1,4 @@
-% 2014-08-17 19:31
+% 2014-08-18 12:38
 
 \version "2.19.11"
 \language "english"
@@ -1629,16 +1629,22 @@
 			}
 			\context PercussionMusicStaff = "Percussion Staff" {
 				\context PercussionMusicVoice = "Percussion Music Voice" {
-					{
-						\time 3/4
-						s1 * 3/4
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 3/4 {
+						\once \override Staff.StaffSymbol #'line-count = #1
+						\clef "percussion"
+						c'2
+						c'2 ~
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 3/5 {
+						c'2
+						c'2
+						c'4 ~
 					}
 					{
-						s1 * 3/4
-					}
-					{
-						\time 9/8
-						s1 * 9/8
+						c'2.
+						c'4.
 					}
 					{
 						\time 7/8

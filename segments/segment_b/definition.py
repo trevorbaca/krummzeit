@@ -25,7 +25,7 @@ assert segment_maker.stage_count == 23
 assert segment_maker.validate_time_signatures()
 
 
-### tempo indicators [B1-4] ###
+### tempo map ###
 music_maker = segment_maker.make_music_maker()
 segment_maker.tempo_map = [
     (1, materials.tempo_inventory[3]),
@@ -95,4 +95,16 @@ music_maker.rhythm_maker = rhythmmakertools.EvenDivisionRhythmMaker(
     tie_specifier=rhythmmakertools.TieSpecifier(
         tie_across_divisions=[0, 1, 0, 1, 1, 0],
         ),
+    )
+
+
+### sponges [B1] ###
+music_maker = segment_maker.make_music_maker()
+music_maker.context_name = perc
+music_maker.stages = 1
+music_maker.instrument = sponges
+music_maker.clef = 'percussion'
+music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
+    talea=rhythmmakertools.Talea([1, 2], 2),
+    extra_counts_per_division=[2, 1, 0],
     )

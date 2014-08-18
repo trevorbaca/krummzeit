@@ -14,6 +14,7 @@ class SegmentMaker(makertools.SegmentMaker):
     __slots__ = (
         '_music_makers',
         '_score',
+        '_stages',
         'measures_per_stage',
         'name',
         'time_signatures',
@@ -63,8 +64,7 @@ class SegmentMaker(makertools.SegmentMaker):
         letter_number = ord(self.name) - ord('A') + 1
         rehearsal_mark = indicatortools.RehearsalMark(number=letter_number)
         voice = self._score['Time Signature Context']
-        leaves = iterate(voice).by_class(scoretools.Leaf, start=0, stop=1)
-        first_leaf = list(leaves)[0]
+        first_leaf = inspect_(voice).get_leaf(0)
         attach(rehearsal_mark, first_leaf)
 
     def _attach_tempo_indicators(self):
@@ -168,17 +168,11 @@ class SegmentMaker(makertools.SegmentMaker):
         for music_maker in music_makers:
             if music_maker.start_tempo is not None:
                 start_tempo = new(music_maker.start_tempo)
-                leaves = iterate(context).by_class(
-                    scoretools.Leaf,
-                    start=0,
-                    stop=1,
-                    )
-                first_leaf = list(leaves)[0]
+                first_leaf = inspect_(context).get_leaf(0)
                 attach(start_tempo, first_leaf)
             if music_maker.stop_tempo is not None:
                 stop_tempo = new(music_maker.stop_tempo)
-                leaves = iterate(context).by_class(scoretools.Leaf)
-                last_leaf = list(leaves)[-1]
+                last_leaf = inspect_(context).get_leaf(-1)
                 attach(stop_tempo, last_leaf)
 
     def _make_music_for_voice(self, voice):
@@ -192,6 +186,8 @@ class SegmentMaker(makertools.SegmentMaker):
             return
         next_stage = 1
         for music_maker in music_makers:
+            if music_maker.stages is None:
+                continue
             if next_stage < music_maker.start_stage:
                 start_stage = next_stage
                 stop_stage = music_maker.start_stage - 1
@@ -202,18 +198,8 @@ class SegmentMaker(makertools.SegmentMaker):
                 measures = self._make_empty_measures(time_signatures)
                 voice.extend(measures)
             time_signatures = self._get_time_signatures(*music_maker.stages)
-            music, pending_indicators = music_maker(time_signatures)
+            music = music_maker(time_signatures)
             voice.extend(music)
-            first_selection = music[0]
-            first_component = first_selection[0]
-            leaves = iterate(first_component).by_class(
-                scoretools.Leaf,
-                start=0,
-                stop=1,
-                )
-            first_leaf = list(leaves)[0]
-            for pending_indicator in pending_indicators:
-                attach(pending_indicator, first_leaf)
             next_stage = music_maker.stop_stage + 1
         if next_stage <= self.stage_count:
             time_signatures = self._get_time_signatures(
@@ -242,6 +228,8 @@ class SegmentMaker(makertools.SegmentMaker):
     def _stages_do_not_overlap(self, makers):
         stage_numbers = []
         for maker in makers:
+            if maker.stages is None:
+                continue
             start_stage, stop_stage = maker.stages
             stage_numbers_ = range(start_stage, stop_stage+1)
             stage_numbers.extend(stage_numbers_)

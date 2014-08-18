@@ -28,7 +28,7 @@ class MusicMaker(abctools.AbjadObject):
         ::
 
             >>> print(format(music_maker, 'storage'))
-            makers.MusicMaker(
+            krummzeit.makers.MusicMaker(
                 context_name='Cello Music Voice',
                 division_maker=makertools.HypermeasureDivisionMaker(
                     hypermeasure_specifier=makertools.HypermeasureSpecifier(
@@ -50,6 +50,8 @@ class MusicMaker(abctools.AbjadObject):
     ### CLASS ATTRIBUTES ###
 
     __slots__ = (
+        '_clef',
+        '_stages',
         'context_name',
         'division_maker',
         'instrument',
@@ -63,6 +65,7 @@ class MusicMaker(abctools.AbjadObject):
 
     def __init__(
         self,
+        clef=None,
         context_name=None,
         division_maker=None,
         instrument=None,
@@ -71,6 +74,7 @@ class MusicMaker(abctools.AbjadObject):
         start_tempo=None,
         stop_tempo=None,
         ):
+        self.clef = clef
         self.context_name = context_name
         self.division_maker = division_maker
         self.instrument = instrument
@@ -97,13 +101,78 @@ class MusicMaker(abctools.AbjadObject):
         divisions = sequencetools.flatten_sequence(divisions)
         for division in divisions:
             assert isinstance(division, mathtools.NonreducedFraction), division
-        music = self.rhythm_maker(divisions)
-        pending_indicators = []
-        if self.instrument is not None:
-            pending_indicators.append(self.instrument)
-        return music, pending_indicators
+        rhythm_maker = self._get_rhythm_maker()
+        music = rhythm_maker(divisions)
+        first_component = music[0][0]
+        first_leaf = inspect_(first_component).get_leaf(0)
+        prototype = instrumenttools.UntunedPercussion
+        if (self.instrument is not None 
+            and not isinstance(self.instrument, prototype)):
+            attach(self.instrument, first_leaf)
+        if self.clef is not None:
+            attach(self.clef, first_leaf)
+        if self.clef == Clef('percussion'):
+            override(first_leaf).staff.staff_symbol.line_count = 1
+        return music
+
+    ### PRIVATE PROPERTIES ###
+
+    @property
+    def _default_rhythm_maker(self):
+        return rhythmmakertools.RestRhythmMaker()
+
+    ### PRIVATE METHODS ###
+
+    def _get_rhythm_maker(self):
+        if self.rhythm_maker is not None:
+            return self.rhythm_maker
+        return self._default_rhythm_maker
 
     ### PUBLIC PROPERTIES ###
+
+    @property
+    def clef(self):
+        '''Gets clef of music maker.
+
+        Returns clef or none.
+        '''
+        return self._clef
+
+    @clef.setter
+    def clef(self, expr):
+        if expr is None:
+            self._clef = expr
+        elif isinstance(expr, Clef):
+            self._clef = expr
+        elif isinstance(expr, str):
+            clef = Clef(expr)
+            self._clef = clef
+        else:
+            message = 'must be clef, string or none: {!r}.'
+            message = message.format(expr)
+            raise TypeError(message)
+
+    @property
+    def stages(self):
+        r'''Gets stages of segment maker.
+
+        Returns pair of positive integers.
+        '''
+        return self._stages
+
+    @stages.setter
+    def stages(self, expr):
+        if expr is None:
+            self._stages = expr
+        elif mathtools.is_positive_integer(expr):
+            self._stages = (expr, expr)
+        elif (mathtools.all_are_positive_integers(expr)
+            and len(expr) == 2):
+            self._stages = tuple(expr)
+        else:
+            message = 'positive integer or pair of positive integers: {!r}.'
+            message = message.format(expr)
+            raise TypeError(message)
 
     @property
     def start_stage(self):

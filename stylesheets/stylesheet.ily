@@ -148,13 +148,6 @@
         \name OboeMusicVoice
         \type Engraver_group
         \alias Voice
-        %\override Beam.positions = #'(-7 . -7)
-        %\override Dots.extra-offset = #'(-1 . -1.5)
-        %\override NoteHead.no-ledgers = ##t
-        %\override NoteHead.transparent = ##t
-        %\override Rest.staff-position = -14
-        %\override TextScript.staff-padding = 13
-        %\override TupletBracket.staff-padding = 8.5
     }
     \context {
         \Staff
@@ -242,6 +235,7 @@
         \accepts PercussionMusicVoice
         instrumentName = \markup { \hcenter-in #12 Percussion }
         shortInstrumentName = \markup { \hcenter-in #12 Perc. }
+        \override TextScript.padding = 2.5
         \override TupletBracket.staff-padding = 5
     }
     \context {

@@ -168,10 +168,10 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='bass drum',
                         short_instrument_name='bass drum',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Untuned percussion',),
+                            contents=('Bass drum',),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Perc.',),
+                            contents=('B. Dr.',),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -189,10 +189,10 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='crotales',
                         short_instrument_name='crotales',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Untuned percussion',),
+                            contents=('Crotales',),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Perc.',),
+                            contents=('Crot.',),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -210,10 +210,10 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='scraped slate',
                         short_instrument_name='scraped slate',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Untuned percussion',),
+                            contents=('Slate',),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Perc.',),
+                            contents=('Slt.',),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -231,10 +231,10 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='snare drum',
                         short_instrument_name='snare drum',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Untuned percussion',),
+                            contents=('Snare drum',),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Perc.',),
+                            contents=('Sn. Dr.',),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -252,10 +252,10 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='sponges',
                         short_instrument_name='sponges',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Untuned percussion',),
+                            contents=('Sponges',),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Perc.',),
+                            contents=('Spg.',),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -273,10 +273,10 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='suspended cymbal',
                         short_instrument_name='suspended cymbal',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Untuned percussion',),
+                            contents=('Suspended cymbal',),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Perc.',),
+                            contents=('Sus. cym.',),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -294,10 +294,10 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='tam-tam',
                         short_instrument_name='tam-tam',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Untuned percussion',),
+                            contents=('Tam-tam',),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Perc.',),
+                            contents=('Tam.',),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [

@@ -1,4 +1,4 @@
-% 2014-08-18 12:38
+% 2014-08-18 12:58
 
 \version "2.19.11"
 \language "english"
@@ -1634,6 +1634,12 @@
 						\once \override Staff.StaffSymbol #'line-count = #1
 						\clef "percussion"
 						c'2
+							^ \markup {
+								\override
+									#'(box-padding . 0.5)
+									\box
+										sponges
+								}
 						c'2 ~
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text

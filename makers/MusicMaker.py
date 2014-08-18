@@ -109,6 +109,8 @@ class MusicMaker(abctools.AbjadObject):
         if (self.instrument is not None 
             and not isinstance(self.instrument, prototype)):
             attach(self.instrument, first_leaf)
+        if isinstance(self.instrument, prototype):
+            self._attach_untuned_percussion_markup(first_leaf)
         if self.clef is not None:
             attach(self.clef, first_leaf)
         if self.clef == Clef('percussion'):
@@ -122,6 +124,15 @@ class MusicMaker(abctools.AbjadObject):
         return rhythmmakertools.RestRhythmMaker()
 
     ### PRIVATE METHODS ###
+
+    def _attach_untuned_percussion_markup(self, leaf):
+        name = self.instrument.instrument_name
+        name = name.lower()
+        command = markuptools.MarkupCommand('box', name)
+        pair = schemetools.SchemePair('box-padding', 0.5)
+        command = markuptools.MarkupCommand('override', pair, command)
+        markup = Markup(contents=command, direction=Up)
+        attach(markup, leaf)
 
     def _get_rhythm_maker(self):
         if self.rhythm_maker is not None:

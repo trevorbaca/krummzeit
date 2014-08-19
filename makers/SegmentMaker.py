@@ -50,6 +50,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._make_lilypond_file()
         self._configure_lilypond_file()
         self._populate_time_signature_context()
+        self._annotate_stages()
         self._handle_music_makers()
         self._attach_rehearsal_mark()
         score_block = self.lilypond_file['score']
@@ -58,6 +59,22 @@ class SegmentMaker(makertools.SegmentMaker):
         return self.lilypond_file
 
     ### PRIVATE METHODS ###
+
+    def _annotate_stages(self):
+        context = self._score['Time Signature Context']
+        for stage_index in range(self.stage_count):
+            stage_number = stage_index + 1
+            if stage_number == 1:
+                continue
+            result = self._stage_number_to_measure_indices(stage_number)
+            start_measure_index, stop_measure_index = result
+            string = '[{}{}]'.format(self.name, stage_number)
+            scheme = schemetools.Scheme('blue')
+            command = markuptools.MarkupCommand('with-color', scheme, string)
+            command = markuptools.MarkupCommand('smaller', command)
+            markup = markuptools.Markup(contents=command, direction=Down)
+            start_measure = context[start_measure_index]
+            attach(markup, start_measure)
 
     def _attach_rehearsal_mark(self):
         assert len(self.name) == 1 and self.name.upper(), repr(self.name)

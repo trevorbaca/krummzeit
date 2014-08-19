@@ -1,4 +1,4 @@
-% 2014-08-18 20:30
+% 2014-08-19 09:57
 
 \version "2.19.12"
 \language "english"
@@ -41,10 +41,22 @@
 			{
 				\time 7/8
 				s1 * 7/8
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B2]
+						}
 			}
 			{
 				\time 6/4
 				s1 * 3/2
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B3]
+						}
 			}
 			{
 				\time 7/4
@@ -57,6 +69,12 @@
 			{
 				\time 7/4
 				s1 * 7/4
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B4]
+						}
 			}
 			{
 				\time 11/8
@@ -73,6 +91,12 @@
 			{
 				\time 3/4
 				s1 * 3/4
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B5]
+						}
 			}
 			{
 				s1 * 3/4
@@ -84,10 +108,22 @@
 			{
 				\time 7/8
 				s1 * 7/8
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B6]
+						}
 			}
 			{
 				\time 6/4
 				s1 * 3/2
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B7]
+						}
 			}
 			{
 				\time 7/4
@@ -100,6 +136,12 @@
 			{
 				\time 7/4
 				s1 * 7/4
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B8]
+						}
 			}
 			{
 				\time 11/8
@@ -115,7 +157,14 @@
 			}
 			{
 				\time 6/4
-				s1 * 3/2 ^ \markup {
+				s1 * 3/2
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B9]
+						}
+					^ \markup {
 					\smaller
 						\general-align
 							#Y
@@ -193,6 +242,12 @@
 				\once \override TextSpanner.dash-fraction = 0.25
 				\once \override TextSpanner.dash-period = 1.5
 				s1 * 2 \startTextSpan
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B10]
+						}
 			}
 			{
 				\time 3/4
@@ -205,6 +260,12 @@
 			{
 				\time 5/8
 				s1 * 5/8
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B11]
+						}
 			}
 			{
 				\time 9/8
@@ -212,7 +273,14 @@
 			}
 			{
 				\time 5/4
-				s1 * 5/4 \stopTextSpan ^ \markup {
+				s1 * 5/4 \stopTextSpan
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B12]
+						}
+					^ \markup {
 					\smaller
 						\general-align
 							#Y
@@ -235,14 +303,33 @@
 			}
 			{
 				s1 * 3/4
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B13]
+						}
 			}
 			{
 				\time 9/8
 				s1 * 9/8
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B14]
+						}
 			}
 			{
 				\time 7/8
-				s1 * 7/8 ^ \markup {
+				s1 * 7/8
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B15]
+						}
+					^ \markup {
 					\line
 						{
 							\smaller
@@ -394,6 +481,12 @@
 				\once \override TextSpanner.dash-fraction = 0.25
 				\once \override TextSpanner.dash-period = 1.5
 				s1 * 5/8 \startTextSpan
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B16]
+						}
 			}
 			{
 				\time 4/4
@@ -405,7 +498,14 @@
 			}
 			{
 				\time 7/4
-				s1 * 7/4 \stopTextSpan ^ \markup {
+				s1 * 7/4 \stopTextSpan
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B17]
+						}
+					^ \markup {
 					\smaller
 						\general-align
 							#Y
@@ -432,6 +532,12 @@
 			{
 				\time 8/4
 				s1 * 2
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B18]
+						}
 			}
 			{
 				\time 4/4
@@ -440,6 +546,12 @@
 			{
 				\time 3/4
 				s1 * 3/4
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B19]
+						}
 			}
 			{
 				\time 4/4
@@ -451,7 +563,14 @@
 			}
 			{
 				\time 9/8
-				s1 * 9/8 ^ \markup {
+				s1 * 9/8
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B20]
+						}
+					^ \markup {
 					\line
 						{
 							\smaller
@@ -555,6 +674,12 @@
 			}
 			{
 				s1 * 3/4
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B21]
+						}
 			}
 			{
 				s1 * 3/4
@@ -583,7 +708,14 @@
 				s1 * 9/8
 			}
 			{
-				s1 * 9/8 ^ \markup {
+				s1 * 9/8
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B22]
+						}
+					^ \markup {
 					\smaller
 						\general-align
 							#Y
@@ -606,6 +738,12 @@
 			}
 			{
 				s1 * 3/4
+					_ \markup {
+						\smaller
+							\with-color
+								#blue
+								[B23]
+						}
 			}
 			{
 				\time 4/4

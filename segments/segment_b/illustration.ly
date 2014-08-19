@@ -1,4 +1,4 @@
-% 2014-08-19 09:57
+% 2014-08-19 19:04
 
 \version "2.19.12"
 \language "english"
@@ -41,7 +41,7 @@
 			{
 				\time 7/8
 				s1 * 7/8
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -51,7 +51,7 @@
 			{
 				\time 6/4
 				s1 * 3/2
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -69,7 +69,7 @@
 			{
 				\time 7/4
 				s1 * 7/4
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -91,7 +91,7 @@
 			{
 				\time 3/4
 				s1 * 3/4
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -108,7 +108,7 @@
 			{
 				\time 7/8
 				s1 * 7/8
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -118,7 +118,7 @@
 			{
 				\time 6/4
 				s1 * 3/2
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -136,7 +136,7 @@
 			{
 				\time 7/4
 				s1 * 7/4
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -158,23 +158,97 @@
 			{
 				\time 6/4
 				s1 * 3/2
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
 								[B9]
 						}
 					^ \markup {
-					\smaller
-						\general-align
-							#Y
-							#DOWN
-							\note-by-number
-								#2
-								#0
-								#1
-					\upright
-						" = 67.5"
+					\line
+						{
+							\smaller
+								\general-align
+									#Y
+									#DOWN
+									\note-by-number
+										#2
+										#0
+										#1
+							\upright
+								" = 67.5"
+							\hspace
+								#0.5
+							\raise
+								#0.35
+								\scale
+									#'(0.75 . 0.75)
+									\override
+										#'(thickness . 0.75)
+										\override
+											#'(padding . 0.5)
+											\parenthesize
+												\line
+													{
+														\score
+															{
+																\new Score \with {
+																	proportionalNotationDuration = ##f
+																} <<
+																	\new RhythmicStaff \with {
+																		\remove Time_signature_engraver
+																		\remove Staff_symbol_engraver
+																		\override Stem #'direction = #up
+																		\override Stem #'length = #4
+																		\override TupletBracket #'bracket-visibility = ##t
+																		\override TupletBracket #'direction = #up
+																		\override TupletBracket #'padding = #1.25
+																		\override TupletBracket #'shorten-pair = #'(-1 . -1.5)
+																		\override TupletNumber #'text = #tuplet-number::calc-fraction-text
+																		fontSize = #-2
+																		tupletFullLength = ##t
+																	} {
+																		c4
+																	}
+																>>
+																\layout {
+																	indent = #0
+																	ragged-right = ##t
+																}
+															}
+														\hspace
+															#-0.5
+														" = "
+														\hspace
+															#-1
+														\score
+															{
+																\new Score \with {
+																	proportionalNotationDuration = ##f
+																} <<
+																	\new RhythmicStaff \with {
+																		\remove Time_signature_engraver
+																		\remove Staff_symbol_engraver
+																		\override Stem #'direction = #up
+																		\override Stem #'length = #4
+																		\override TupletBracket #'bracket-visibility = ##t
+																		\override TupletBracket #'direction = #up
+																		\override TupletBracket #'padding = #1.25
+																		\override TupletBracket #'shorten-pair = #'(-1 . -1.5)
+																		\override TupletNumber #'text = #tuplet-number::calc-fraction-text
+																		fontSize = #-2
+																		tupletFullLength = ##t
+																	} {
+																		c8
+																	}
+																>>
+																\layout {
+																	indent = #0
+																	ragged-right = ##t
+																}
+															}
+													}
+						}
 					}
 			}
 			{
@@ -242,7 +316,7 @@
 				\once \override TextSpanner.dash-fraction = 0.25
 				\once \override TextSpanner.dash-period = 1.5
 				s1 * 2 \startTextSpan
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -260,7 +334,7 @@
 			{
 				\time 5/8
 				s1 * 5/8
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -274,7 +348,7 @@
 			{
 				\time 5/4
 				s1 * 5/4 \stopTextSpan
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -303,7 +377,7 @@
 			}
 			{
 				s1 * 3/4
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -313,7 +387,7 @@
 			{
 				\time 9/8
 				s1 * 9/8
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -323,7 +397,7 @@
 			{
 				\time 7/8
 				s1 * 7/8
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -481,7 +555,7 @@
 				\once \override TextSpanner.dash-fraction = 0.25
 				\once \override TextSpanner.dash-period = 1.5
 				s1 * 5/8 \startTextSpan
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -499,7 +573,7 @@
 			{
 				\time 7/4
 				s1 * 7/4 \stopTextSpan
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -532,7 +606,7 @@
 			{
 				\time 8/4
 				s1 * 2
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -546,7 +620,7 @@
 			{
 				\time 3/4
 				s1 * 3/4
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -564,7 +638,7 @@
 			{
 				\time 9/8
 				s1 * 9/8
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -674,7 +748,7 @@
 			}
 			{
 				s1 * 3/4
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -709,7 +783,7 @@
 			}
 			{
 				s1 * 9/8
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -738,7 +812,7 @@
 			}
 			{
 				s1 * 3/4
-					_ \markup {
+					- \markup {
 						\smaller
 							\with-color
 								#blue
@@ -1404,20 +1478,10 @@
 					{
 						c'4
 					}
-					{
-						c'4
-						c'4 ~
-					}
-					\times 2/3 {
-						c'8 [
-						c'8
-						c'8 ~ ]
-					}
-					\times 2/3 {
-						c'8 [
-						c'8
-						c'8 ]
-					}
+					c'4
+					c'4
+					c'4
+					c'4
 					r1.
 					r2.
 					r1

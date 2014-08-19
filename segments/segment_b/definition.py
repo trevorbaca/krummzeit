@@ -111,6 +111,13 @@ music_maker.rhythm_maker = rhythmmakertools.EvenDivisionRhythmMaker(
         ),
     )
 
+### harpsichord [B5-8] ###
+segment_maker.copy_music_maker(
+    pf,
+    1,
+    stages=(5, 8),
+    )
+
 
 ### sponges [B1] ###
 music_maker = segment_maker.make_music_maker()

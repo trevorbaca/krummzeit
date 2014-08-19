@@ -1,4 +1,4 @@
-% 2014-08-18 20:28
+% 2014-08-18 20:30
 
 \version "2.19.12"
 \language "english"
@@ -1108,27 +1108,178 @@
 						c'8
 						c'8 ]
 					}
-					r2.
-					r2.
-					r4.
-					r4.
-					r4.
-					r2..
-					r1.
-					r1..
-					r2.
-					r1..
-					r4.
-					r4
-					r4
-					r4
-					r4
-					r8
-					r8
-					r8
-					r8
-					r8
-					r1
+					\times 4/7 {
+						\set PianoMusicStaff.instrumentName = \markup { Harpsichord }
+						\set PianoMusicStaff.shortInstrumentName = \markup { Hpschd. }
+						c'8 [
+						c'8
+						c'8
+						c'8
+						c'8
+						c'8
+						c'8 ]
+					}
+					\times 2/3 {
+						c'8 [
+						c'8
+						c'8 ~ ]
+					}
+					{
+						c'4.
+					}
+					{
+						c'4. ~
+					}
+					\times 4/7 {
+						c'8 [
+						c'8
+						c'8
+						c'8
+						c'8
+						c'8
+						c'8 ~ ]
+					}
+					\times 2/3 {
+						c'8 [
+						c'8
+						c'8 ]
+					}
+					{
+						c'8 [
+						c'8
+						c'8 ]
+					}
+					{
+						c'8 [
+						c'8 ~ ]
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/6 {
+						c'4
+						c'4
+						c'4
+					}
+					\times 2/3 {
+						c'4
+						c'4
+						c'4 ~
+					}
+					{
+						c'8 [
+						c'8
+						c'8 ~ ]
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/9 {
+						c'8 [
+						c'8
+						c'8
+						c'8
+						c'8
+						c'8
+						c'8
+						c'8
+						c'8 ]
+					}
+					{
+						c'8 [
+						c'8
+						c'8 ]
+					}
+					\times 4/5 {
+						c'8 [
+						c'8
+						c'8
+						c'8
+						c'8 ~ ]
+					}
+					{
+						c'4
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/4 {
+						c'4
+						c'4 ~
+					}
+					\times 4/7 {
+						c'8 [
+						c'8
+						c'8
+						c'8
+						c'8
+						c'8
+						c'8 ~ ]
+					}
+					\times 2/3 {
+						c'8 [
+						c'8
+						c'8 ]
+					}
+					{
+						c'8 [
+						c'8 ]
+					}
+					{
+						c'8 [
+						c'8
+						c'8
+						c'8 ~ ]
+					}
+					{
+						c'4.
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/6 {
+						c'4
+						c'4
+						c'4 ~
+					}
+					{
+						c'8 [
+						c'8
+						c'8
+						c'8 ~ ]
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 3/4 {
+						c'8 [
+						c'8
+						c'8
+						c'8 ]
+					}
+					\times 4/7 {
+						c'8 [
+						c'8
+						c'8
+						c'8
+						c'8
+						c'8
+						c'8 ]
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 3/4 {
+						c'8 [
+						c'8
+						c'8
+						c'8 ~ ]
+					}
+					{
+						c'4
+					}
+					{
+						c'4
+						c'4 ~
+					}
+					\times 2/3 {
+						c'8 [
+						c'8
+						c'8 ~ ]
+					}
+					\times 2/3 {
+						c'8 [
+						c'8
+						c'8 ]
+					}
 					r1.
 					r2.
 					r1

@@ -1,6 +1,6 @@
-% 2014-08-18 17:48
+% 2014-08-18 20:28
 
-\version "2.19.11"
+\version "2.19.12"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -1600,27 +1600,30 @@
 						c'2
 						c'\breve
 					}
-					r2.
-					r2.
-					r4.
-					r4.
-					r4.
-					r2..
-					r1.
-					r1..
-					r2.
-					r1..
-					r4.
-					r4
-					r4
-					r4
-					r4
-					r8
-					r8
-					r8
-					r8
-					r8
-					r1
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 6/5 {
+						c'4
+						c'1
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 14/10 {
+						c'2
+						c'\breve
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 7/5 {
+						c'4
+						c'1
+					}
+					{
+						c'2
+						c'\breve
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 12/10 {
+						c'2
+						c'\breve
+					}
 					r1.
 					r2.
 					r1
@@ -1760,27 +1763,30 @@
 						c'1.
 						c'1
 					}
-					r2.
-					r2.
-					r4.
-					r4.
-					r4.
-					r2..
-					r1.
-					r1..
-					r2.
-					r1..
-					r4.
-					r4
-					r4
-					r4
-					r4
-					r8
-					r8
-					r8
-					r8
-					r8
-					r1
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 6/5 {
+						c'2.
+						c'2
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 14/10 {
+						c'1.
+						c'1
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 7/5 {
+						c'2.
+						c'2
+					}
+					{
+						c'1.
+						c'1
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 12/10 {
+						c'1.
+						c'1
+					}
 					r1.
 					r2.
 					r1

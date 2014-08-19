@@ -67,6 +67,13 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
+### cello [B5-8] ###
+music_maker = segment_maker.copy_music_maker(
+    vc,
+    1,
+    stages=(5, 8),
+    )
+
 
 ### viola [B1-4] (3rd-octave polyphony) ###
 segment_maker.copy_music_maker(
@@ -74,6 +81,13 @@ segment_maker.copy_music_maker(
     1,
     rhythm_maker__tuplet_ratios=[(1, 4)],
     context_name=va,
+    )
+
+### viola [B5-8] ###
+segment_maker.copy_music_maker(
+    va,
+    1,
+    stages=(5, 8),
     )
 
 

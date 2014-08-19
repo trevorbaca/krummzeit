@@ -30,6 +30,7 @@ music_maker = segment_maker.make_music_maker()
 segment_maker.tempo_map = [
     (1, materials.tempo_inventory[3]),
     (9, materials.tempo_inventory[4]),
+    (9, materials.metric_modulation_inventory['4=8']),
     (10, Accelerando()),
     (12, materials.tempo_inventory[3]),
     (15, materials.tempo_inventory[2]),
@@ -112,11 +113,28 @@ music_maker.rhythm_maker = rhythmmakertools.EvenDivisionRhythmMaker(
     )
 
 ### harpsichord [B5-8] ###
-segment_maker.copy_music_maker(
+music_maker = segment_maker.copy_music_maker(
     pf,
     1,
     stages=(5, 8),
     )
+selector = selectortools.Selector()
+selector = selector.by_class(Tuplet)
+selector = selector.by_logical_measure()
+selector = selector.last()
+selector = selector.flatten()
+music_maker.rhythm_overwrites.append((
+    selector,
+    makertools.DivisionMaker(
+        cyclic=True,
+        pattern=[(1, 4)],
+        ),
+    rhythmmakertools.NoteRhythmMaker(
+        duration_spelling_specifier=rhythmmakertools.DurationSpellingSpecifier(
+            spell_metrically=True,
+            ),
+        ),
+    ))
 
 
 ### sponges [B1] ###

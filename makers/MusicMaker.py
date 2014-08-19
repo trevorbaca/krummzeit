@@ -51,6 +51,7 @@ class MusicMaker(abctools.AbjadObject):
 
     __slots__ = (
         '_clef',
+        '_rhythm_overwrites',
         '_stages',
         'context_name',
         'division_maker',
@@ -70,6 +71,7 @@ class MusicMaker(abctools.AbjadObject):
         division_maker=None,
         instrument=None,
         rhythm_maker=None,
+        rhythm_overwrites=None,
         stages=None,
         start_tempo=None,
         stop_tempo=None,
@@ -79,6 +81,7 @@ class MusicMaker(abctools.AbjadObject):
         self.division_maker = division_maker
         self.instrument = instrument
         self.rhythm_maker = rhythm_maker
+        self.rhythm_overwrites = rhythm_overwrites
         self.stages = stages
         self.start_tempo = start_tempo
         self.stop_tempo = stop_tempo
@@ -92,17 +95,7 @@ class MusicMaker(abctools.AbjadObject):
         '''
         for time_signature in time_signatures:
             assert isinstance(time_signature, indicatortools.TimeSignature)
-        if self.division_maker is not None:
-            divisions = self.division_maker(time_signatures) 
-        else:
-            divisions = [
-                mathtools.NonreducedFraction(_) for _ in time_signatures
-                ]
-        divisions = sequencetools.flatten_sequence(divisions)
-        for division in divisions:
-            assert isinstance(division, mathtools.NonreducedFraction), division
-        rhythm_maker = self._get_rhythm_maker()
-        music = rhythm_maker(divisions)
+        music = self._make_rhythm(time_signatures)
         first_component = music[0][0]
         first_leaf = inspect_(first_component).get_leaf(0)
         prototype = instrumenttools.UntunedPercussion
@@ -116,6 +109,42 @@ class MusicMaker(abctools.AbjadObject):
         if self.clef == Clef('percussion'):
             override(first_leaf).staff.staff_symbol.line_count = 1
         return music
+
+    def _make_rhythm(self, time_signatures):
+        if self.division_maker is not None:
+            divisions = self.division_maker(time_signatures) 
+        else:
+            divisions = [
+                mathtools.NonreducedFraction(_) for _ in time_signatures
+                ]
+        divisions = sequencetools.flatten_sequence(divisions)
+        for division in divisions:
+            assert isinstance(division, mathtools.NonreducedFraction), division
+        rhythm_maker = self._get_rhythm_maker()
+        selections = rhythm_maker(divisions)
+        if not self.rhythm_overwrites:
+            return selections
+        dummy_measures = scoretools.make_spacer_skip_measures(time_signatures)
+        dummy_time_signature_voice = Voice(dummy_measures)
+        dummy_music_voice = Voice()
+        dummy_music_voice.extend(selections)
+        dummy_staff = Staff([dummy_time_signature_voice, dummy_music_voice])
+        dummy_staff.is_simultaneous = True
+        for rhythm_overwrite in self.rhythm_overwrites:
+            selector, division_maker, rhythm_maker = rhythm_overwrite
+            old_music_selection = selector(dummy_music_voice)
+            old_music_selection = selectiontools.SliceSelection(
+                old_music_selection)
+            result = old_music_selection._get_parent_and_start_stop_indices()
+            parent, start_index, stop_index = result
+            old_duration = old_music_selection.get_duration()
+            division_lists = division_maker([old_duration])
+            assert len(division_lists) == 1
+            division_list = division_lists[0]
+            new_music_selection = rhythm_maker(division_list)
+            dummy_music_voice[start_index:stop_index+1] = new_music_selection
+        music = dummy_music_voice[:]
+        return dummy_music_voice
 
     ### PRIVATE PROPERTIES ###
 
@@ -162,6 +191,21 @@ class MusicMaker(abctools.AbjadObject):
             message = 'must be clef, string or none: {!r}.'
             message = message.format(expr)
             raise TypeError(message)
+
+    @property
+    def rhythm_overwrites(self):
+        r'''Gets rhythm overwrites of music maker.
+
+        Returns list.
+        '''
+        return self._rhythm_overwrites
+
+    @rhythm_overwrites.setter
+    def rhythm_overwrites(self, expr):
+        expr = expr or []
+        for item in expr:
+            assert isinstance(item, tuple) and len(tuple) == 2, repr(item)
+        self._rhythm_overwrites = expr
 
     @property
     def stages(self):

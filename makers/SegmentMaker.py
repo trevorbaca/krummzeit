@@ -69,10 +69,9 @@ class SegmentMaker(makertools.SegmentMaker):
             result = self._stage_number_to_measure_indices(stage_number)
             start_measure_index, stop_measure_index = result
             string = '[{}{}]'.format(self.name, stage_number)
-            scheme = schemetools.Scheme('blue')
-            command = markuptools.MarkupCommand('with-color', scheme, string)
-            command = markuptools.MarkupCommand('smaller', command)
-            markup = markuptools.Markup(contents=command, direction=Down)
+            markup = Markup(string)
+            markup = markup.with_color('blue')
+            markup = markup.smaller()
             start_measure = context[start_measure_index]
             attach(markup, start_measure)
 

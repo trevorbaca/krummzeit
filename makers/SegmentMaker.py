@@ -55,7 +55,9 @@ class SegmentMaker(makertools.SegmentMaker):
         self._attach_rehearsal_mark()
         score_block = self.lilypond_file['score']
         score = score_block['Krummzeit Score']
-        assert inspect_(score).is_well_formed(), score
+        if not inspect_(score).is_well_formed():
+            string = inspect_(score).tabulate_well_formedness_violations()
+            raise Exception(string)
         return self.lilypond_file
 
     ### PRIVATE METHODS ###
@@ -303,6 +305,7 @@ class SegmentMaker(makertools.SegmentMaker):
         Returns music-maker.
         '''
         music_maker = self.get_music_maker(_context_name, _stage)
+        music_maker = copy.deepcopy(music_maker)
         new_music_maker = new(music_maker, **kwargs)
         self.music_makers.append(new_music_maker)
         return new_music_maker

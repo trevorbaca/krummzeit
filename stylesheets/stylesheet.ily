@@ -295,6 +295,7 @@
         \accepts ViolinMusicVoice
         instrumentName = \markup { \hcenter-in #12 Violin }
         shortInstrumentName = \markup { \hcenter-in #12 Vn. }
+        \override TupletBracket.staff-padding = 5
     }
     \context {
         \Voice

@@ -12,10 +12,22 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='oboe',
                         short_instrument_name='ob.',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Oboe',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'hcenter-in',
+                                    12,
+                                    'Oboe'
+                                    ),
+                                ),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Ob.',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'hcenter-in',
+                                    12,
+                                    'Ob.'
+                                    ),
+                                ),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -40,10 +52,88 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='clarinet in B-flat',
                         short_instrument_name='cl. in B-flat',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Clarinet in B-flat',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'column',
+                                    [
+                                        markuptools.MarkupCommand(
+                                            'hcenter-in',
+                                            12,
+                                            [
+                                                'Clarinet',
+                                                markuptools.MarkupCommand(
+                                                    'line',
+                                                    [
+                                                        '(B',
+                                                        markuptools.MarkupCommand(
+                                                            'hspace',
+                                                            -0.5
+                                                            ),
+                                                        markuptools.MarkupCommand(
+                                                            'fontsize',
+                                                            -3,
+                                                            markuptools.MarkupCommand(
+                                                                'raise',
+                                                                0.5,
+                                                                markuptools.MarkupCommand(
+                                                                    'flat'
+                                                                    )
+                                                                )
+                                                            ),
+                                                        markuptools.MarkupCommand(
+                                                            'hspace',
+                                                            -0.5
+                                                            ),
+                                                        ')',
+                                                        ]
+                                                    ),
+                                                ]
+                                            ),
+                                        ]
+                                    ),
+                                ),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Cl. in B-flat',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'column',
+                                    [
+                                        markuptools.MarkupCommand(
+                                            'hcenter-in',
+                                            12,
+                                            [
+                                                'Cl.',
+                                                markuptools.MarkupCommand(
+                                                    'line',
+                                                    [
+                                                        '(B',
+                                                        markuptools.MarkupCommand(
+                                                            'hspace',
+                                                            -0.5
+                                                            ),
+                                                        markuptools.MarkupCommand(
+                                                            'fontsize',
+                                                            -3,
+                                                            markuptools.MarkupCommand(
+                                                                'raise',
+                                                                0.5,
+                                                                markuptools.MarkupCommand(
+                                                                    'flat'
+                                                                    )
+                                                                )
+                                                            ),
+                                                        markuptools.MarkupCommand(
+                                                            'hspace',
+                                                            -0.5
+                                                            ),
+                                                        ')',
+                                                        ]
+                                                    ),
+                                                ]
+                                            ),
+                                        ]
+                                    ),
+                                ),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -61,10 +151,88 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='clarinet in E-flat',
                         short_instrument_name='cl. E-flat',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Clarinet in E-flat',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'column',
+                                    [
+                                        markuptools.MarkupCommand(
+                                            'hcenter-in',
+                                            12,
+                                            [
+                                                'Clarinet',
+                                                markuptools.MarkupCommand(
+                                                    'line',
+                                                    [
+                                                        '(E',
+                                                        markuptools.MarkupCommand(
+                                                            'hspace',
+                                                            -0.5
+                                                            ),
+                                                        markuptools.MarkupCommand(
+                                                            'fontsize',
+                                                            -3,
+                                                            markuptools.MarkupCommand(
+                                                                'raise',
+                                                                0.5,
+                                                                markuptools.MarkupCommand(
+                                                                    'flat'
+                                                                    )
+                                                                )
+                                                            ),
+                                                        markuptools.MarkupCommand(
+                                                            'hspace',
+                                                            -0.5
+                                                            ),
+                                                        ')',
+                                                        ]
+                                                    ),
+                                                ]
+                                            ),
+                                        ]
+                                    ),
+                                ),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Cl. E-flat',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'column',
+                                    [
+                                        markuptools.MarkupCommand(
+                                            'hcenter-in',
+                                            12,
+                                            [
+                                                'Cl.',
+                                                markuptools.MarkupCommand(
+                                                    'line',
+                                                    [
+                                                        '(E',
+                                                        markuptools.MarkupCommand(
+                                                            'hspace',
+                                                            -0.5
+                                                            ),
+                                                        markuptools.MarkupCommand(
+                                                            'fontsize',
+                                                            -3,
+                                                            markuptools.MarkupCommand(
+                                                                'raise',
+                                                                0.5,
+                                                                markuptools.MarkupCommand(
+                                                                    'flat'
+                                                                    )
+                                                                )
+                                                            ),
+                                                        markuptools.MarkupCommand(
+                                                            'hspace',
+                                                            -0.5
+                                                            ),
+                                                        ')',
+                                                        ]
+                                                    ),
+                                                ]
+                                            ),
+                                        ]
+                                    ),
+                                ),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -82,10 +250,22 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='bass clarinet',
                         short_instrument_name='bass cl.',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Bass clarinet',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'hcenter-in',
+                                    12,
+                                    'Bass clarinet'
+                                    ),
+                                ),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Bass cl.',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'hcenter-in',
+                                    12,
+                                    'Bass cl.'
+                                    ),
+                                ),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -113,10 +293,22 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='piano',
                         short_instrument_name='pf.',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Piano',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'hcenter-in',
+                                    12,
+                                    'Piano'
+                                    ),
+                                ),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Pf.',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'hcenter-in',
+                                    12,
+                                    'Pf.'
+                                    ),
+                                ),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -137,10 +329,22 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='harpsichord',
                         short_instrument_name='hpschd.',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Harpsichord',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'hcenter-in',
+                                    12,
+                                    'Harpsichord'
+                                    ),
+                                ),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Hpschd.',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'hcenter-in',
+                                    12,
+                                    'Hpschd.'
+                                    ),
+                                ),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -168,10 +372,10 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='bass drum',
                         short_instrument_name='bass drum',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Untuned percussion',),
+                            contents=('Bass drum',),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Perc.',),
+                            contents=('B. Dr.',),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -189,10 +393,10 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='crotales',
                         short_instrument_name='crotales',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Untuned percussion',),
+                            contents=('Crotales',),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Perc.',),
+                            contents=('Crot.',),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -210,10 +414,10 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='scraped slate',
                         short_instrument_name='scraped slate',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Untuned percussion',),
+                            contents=('Slate',),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Perc.',),
+                            contents=('Slt.',),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -231,10 +435,10 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='snare drum',
                         short_instrument_name='snare drum',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Untuned percussion',),
+                            contents=('Snare drum',),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Perc.',),
+                            contents=('Sn. Dr.',),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -252,10 +456,10 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='sponges',
                         short_instrument_name='sponges',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Untuned percussion',),
+                            contents=('Sponges',),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Perc.',),
+                            contents=('Spg.',),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -273,10 +477,10 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='suspended cymbal',
                         short_instrument_name='suspended cymbal',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Untuned percussion',),
+                            contents=('Suspended cymbal',),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Perc.',),
+                            contents=('Sus. cym.',),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -294,10 +498,10 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='tam-tam',
                         short_instrument_name='tam-tam',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Untuned percussion',),
+                            contents=('Tam-tam',),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Perc.',),
+                            contents=('Tam.',),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -343,10 +547,22 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='violin',
                         short_instrument_name='vn.',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Violin',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'hcenter-in',
+                                    12,
+                                    'Violin'
+                                    ),
+                                ),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Vn.',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'hcenter-in',
+                                    12,
+                                    'Vn.'
+                                    ),
+                                ),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -403,10 +619,22 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='viola',
                         short_instrument_name='va.',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Viola',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'hcenter-in',
+                                    12,
+                                    'Viola'
+                                    ),
+                                ),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Va.',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'hcenter-in',
+                                    12,
+                                    'Va.'
+                                    ),
+                                ),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -445,10 +673,22 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='cello',
                         short_instrument_name='vc.',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Cello',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'hcenter-in',
+                                    12,
+                                    'Cello'
+                                    ),
+                                ),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Vc.',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'hcenter-in',
+                                    12,
+                                    'Vc.'
+                                    ),
+                                ),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [

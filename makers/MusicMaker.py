@@ -96,8 +96,17 @@ class MusicMaker(abctools.AbjadObject):
         for time_signature in time_signatures:
             assert isinstance(time_signature, indicatortools.TimeSignature)
         music = self._make_rhythm(time_signatures)
-        first_component = music[0][0]
+        assert isinstance(music, (tuple, list, Voice)), repr(music)
+
+        first_item = music[0]
+        if isinstance(first_item, selectiontools.Selection):
+            first_component = first_item[0]
+        else:
+            first_component = first_item
+        
+        #first_component = music[0][0]
         first_leaf = inspect_(first_component).get_leaf(0)
+
         prototype = instrumenttools.UntunedPercussion
         if (self.instrument is not None 
             and not isinstance(self.instrument, prototype)):
@@ -124,6 +133,9 @@ class MusicMaker(abctools.AbjadObject):
         selections = rhythm_maker(divisions)
         if not self.rhythm_overwrites:
             return selections
+        # TODO: remove after debugging
+        if self.rhythm_overwrites:
+            assert self.context_name == 'Piano Music Voice', repr(self)
         dummy_measures = scoretools.make_spacer_skip_measures(time_signatures)
         dummy_time_signature_voice = Voice(dummy_measures)
         dummy_music_voice = Voice()
@@ -151,6 +163,20 @@ class MusicMaker(abctools.AbjadObject):
     @property
     def _default_rhythm_maker(self):
         return rhythmmakertools.RestRhythmMaker()
+
+    @property
+    def _storage_format_specification(self):
+        from abjad.tools import systemtools
+        manager = systemtools.StorageFormatManager
+        keyword_argument_names = \
+            manager.get_signature_keyword_argument_names(self)
+        if not self.rhythm_overwrites:
+            keyword_argument_names = list(keyword_argument_names)
+            keyword_argument_names.remove('rhythm_overwrites')
+        return systemtools.StorageFormatSpecification(
+            self,
+            keyword_argument_names=keyword_argument_names,
+            )
 
     ### PRIVATE METHODS ###
 
@@ -203,9 +229,10 @@ class MusicMaker(abctools.AbjadObject):
     @rhythm_overwrites.setter
     def rhythm_overwrites(self, expr):
         expr = expr or []
+        assert isinstance(expr, (list, tuple)), repr(expr)
         for item in expr:
             assert isinstance(item, tuple) and len(tuple) == 2, repr(item)
-        self._rhythm_overwrites = expr
+        self._rhythm_overwrites = expr[:]
 
     @property
     def stages(self):

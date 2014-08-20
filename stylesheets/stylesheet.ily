@@ -157,6 +157,7 @@
         \accepts OboeMusicVoice
         instrumentName = \markup { \hcenter-in #12 Oboe }
         shortInstrumentName = \markup { \hcenter-in #12 Ob. }
+        \override TupletBracket.staff-padding = 5
     }
     \context {
         \Voice

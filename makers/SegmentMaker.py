@@ -66,8 +66,6 @@ class SegmentMaker(makertools.SegmentMaker):
         context = self._score['Time Signature Context']
         for stage_index in range(self.stage_count):
             stage_number = stage_index + 1
-            if stage_number == 1:
-                continue
             result = self._stage_number_to_measure_indices(stage_number)
             start_measure_index, stop_measure_index = result
             string = '[{}{}]'.format(self.name, stage_number)

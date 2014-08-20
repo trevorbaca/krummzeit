@@ -182,18 +182,51 @@
                 }
             }
         }
-        shortInstrumentName = \markup {
-            \column {
-                \hcenter-in #12 {
-                    Cl.
-                    \line { 
-                        (B
-                        \hspace #-0.5 \fontsize #-3 \raise #0.5 \flat
-                        \hspace #-0.5 ) 
-                    } 
-                }
+        instrumentName = \markup {
+            \column {                                                           
+                \hcenter-in
+                #12
+                    {
+                        Clarinet                                                    
+                        \line {                                                     
+                            (B                                                      
+                            \hspace
+                                #-0.5
+                            \fontsize
+                                #-3
+                                \raise
+                                    #0.5
+                                    \flat           
+                            \hspace
+                                #-0.5
+                            )                                         
+                        }                                                           
+                    }
             }
         }
+        shortInstrumentName = \markup {
+            \column {                                                           
+                \hcenter-in
+                #12
+                    {
+                        Cl.
+                        \line {                                                     
+                            (B                                                      
+                            \hspace
+                                #-0.5
+                            \fontsize
+                                #-3
+                                \raise
+                                    #0.5
+                                    \flat           
+                            \hspace
+                                #-0.5
+                            )                                         
+                        }                                                           
+                    }
+            }
+        }
+        \override TupletBracket.staff-padding = 5
     }
     \context {
         \PianoStaff

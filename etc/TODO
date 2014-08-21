@@ -1,1 +1,8 @@
 1.  Write test to find redudant instrument attachments.
+
+2.  Change ...
+        instrument=materials.performer_inventory.get_instrument('ob.')
+    ... to something cleaner.
+
+3.  Maker cycic=None always default to true.
+    Probably only needs to change in DivisionMaker. 

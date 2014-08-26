@@ -9,6 +9,7 @@ harpsichord._default_scope = 'PianoMusicStaff'
 piano = materials.performer_inventory.get_instrument('piano')
 piano._default_scope = 'PianoMusicStaff'
 sponges = materials.performer_inventory.get_instrument('sponges')
+tam_tam = materials.performer_inventory.get_instrument('tam-tam')
 
 
 ### CONTEXT NAMES ###

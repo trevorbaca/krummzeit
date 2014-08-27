@@ -1,6 +1,6 @@
-% 2014-08-17 19:03
+% 2014-08-27 10:51
 
-\version "2.19.11"
+\version "2.19.12"
 \language "english"
 
 \header {
@@ -51,6 +51,9 @@
 				\upright
 					" = 67.5"
 				}
+			\break
+			c'2
+			\tempo 4=36
 			\break
 			c'2
 		}

@@ -44,12 +44,12 @@ segment_maker.tempo_map = [
 
 
 
-################################################################################
-################################# MUSIC-MAKERS #################################
-################################################################################
+###############################################################################
+################################ MUSIC-MAKERS #################################
+###############################################################################
 
 
-## cello [B1-4] (3rd-octave polyphony) ###
+### cello [B1-4] (3rd-octave polyphony) ###
 music_maker = segment_maker.make_music_maker()
 music_maker.context_name = vc
 music_maker.stages = 1, 4
@@ -73,7 +73,7 @@ music_maker = segment_maker.copy_music_maker(
     )
 
 
-## viola [B1-4] (3rd-octave polyphony) ###
+### viola [B1-4] (3rd-octave polyphony) ###
 segment_maker.copy_music_maker(
     vc,
     1,
@@ -89,7 +89,7 @@ segment_maker.copy_music_maker(
     )
 
 
-## harpsichord [B1-4] (5th-octave polyphony) ###
+### harpsichord [B1-4] (5th-octave polyphony) ###
 music_maker = segment_maker.make_music_maker()
 music_maker.context_name = pf
 music_maker.instrument = harpsichord
@@ -134,7 +134,7 @@ music_maker.rhythm_overwrites.append((
     ))
 
 
-## sponges [B1] & [B9-14] ###
+### sponges [B1] & [B9-14] ###
 music_maker = segment_maker.make_music_maker()
 music_maker.context_name = perc
 music_maker.stages = 1

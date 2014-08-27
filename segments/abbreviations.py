@@ -10,6 +10,7 @@ piano = materials.performer_inventory.get_instrument('piano')
 piano._default_scope = 'PianoMusicStaff'
 sponges = materials.performer_inventory.get_instrument('sponges')
 tam_tam = materials.performer_inventory.get_instrument('tam-tam')
+e_flat_clarinet = materials.performer_inventory.get_instrument('cl. e-flat')
 
 
 ### CONTEXT NAMES ###

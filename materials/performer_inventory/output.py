@@ -372,10 +372,22 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='bass drum',
                         short_instrument_name='bass drum',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Bass drum',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'hcenter-in',
+                                    12,
+                                    'Bass drum'
+                                    ),
+                                ),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('B. Dr.',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'hcenter-in',
+                                    12,
+                                    'B. dr.'
+                                    ),
+                                ),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [
@@ -519,10 +531,22 @@ performer_inventory = instrumenttools.PerformerInventory(
                         instrument_name='xylophone',
                         short_instrument_name='xyl.',
                         instrument_name_markup=markuptools.Markup(
-                            contents=('Xylophone',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'hcenter-in',
+                                    12,
+                                    'Xylophone'
+                                    ),
+                                ),
                             ),
                         short_instrument_name_markup=markuptools.Markup(
-                            contents=('Xyl.',),
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'hcenter-in',
+                                    12,
+                                    'Xyl.'
+                                    ),
+                                ),
                             ),
                         allowable_clefs=indicatortools.ClefInventory(
                             [

@@ -51,5 +51,67 @@ tempo_inventory = indicatortools.TempoInventory(
             duration=durationtools.Duration(1, 4),
             units_per_minute=36,
             ),
+        indicatortools.Tempo(
+            duration=durationtools.Duration(1, 4),
+            units_per_minute=73,
+            markup=markuptools.Markup(
+                contents=(
+                    markuptools.MarkupCommand(
+                        'override',
+                        schemetools.SchemePair('padding', 0.45),
+                        markuptools.MarkupCommand(
+                            'parenthesize',
+                            markuptools.MarkupCommand(
+                                'line',
+                                [
+                                    markuptools.MarkupCommand(
+                                        'smaller',
+                                        markuptools.MarkupCommand(
+                                            'general-align',
+                                            schemetools.Scheme(
+                                                'Y'
+                                                ),
+                                            schemetools.Scheme(
+                                                'DOWN'
+                                                ),
+                                            markuptools.MarkupCommand(
+                                                'note-by-number',
+                                                2,
+                                                0,
+                                                1
+                                                )
+                                            )
+                                        ),
+                                    markuptools.MarkupCommand('upright', ' = 72'),
+                                    ],
+                                ),
+                            ),
+                        ),
+                    markuptools.MarkupCommand(
+                        'italic',
+                        'subito',
+                        ),
+                    markuptools.MarkupCommand(
+                        'smaller',
+                        markuptools.MarkupCommand(
+                            'general-align',
+                            schemetools.Scheme(
+                                'Y'
+                                ),
+                            schemetools.Scheme(
+                                'DOWN'
+                                ),
+                            markuptools.MarkupCommand(
+                                'note-by-number',
+                                2,
+                                0,
+                                1
+                                )
+                            )
+                        ),
+                    markuptools.MarkupCommand('upright', ' = 108'),
+                    ),
+                ),
+            ),
         ]
     )

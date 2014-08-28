@@ -57,6 +57,7 @@ class MusicMaker(abctools.AbjadObject):
         'division_maker',
         'instrument',
         'rhythm_maker',
+        'staff_line_count',
         'stages',
         'start_tempo',
         'stop_tempo',
@@ -72,6 +73,7 @@ class MusicMaker(abctools.AbjadObject):
         instrument=None,
         rhythm_maker=None,
         rhythm_overwrites=None,
+        staff_line_count=None,
         stages=None,
         start_tempo=None,
         stop_tempo=None,
@@ -82,6 +84,7 @@ class MusicMaker(abctools.AbjadObject):
         self.instrument = instrument
         self.rhythm_maker = rhythm_maker
         self.rhythm_overwrites = rhythm_overwrites
+        self.staff_line_count = staff_line_count
         self.stages = stages
         self.start_tempo = start_tempo
         self.stop_tempo = stop_tempo
@@ -115,8 +118,10 @@ class MusicMaker(abctools.AbjadObject):
             self._attach_untuned_percussion_markup(first_leaf)
         if self.clef is not None:
             attach(self.clef, first_leaf)
-        if self.clef == Clef('percussion'):
-            override(first_leaf).staff.staff_symbol.line_count = 1
+        if self.staff_line_count is not None:
+            self._set_staff_line_count(first_leaf, self.staff_line_count)
+        elif self.clef == Clef('percussion'):
+            self._set_staff_line_count(first_leaf, 1)
         return music
 
     def _make_rhythm(self, time_signatures):
@@ -157,6 +162,16 @@ class MusicMaker(abctools.AbjadObject):
             dummy_music_voice[start_index:stop_index+1] = new_music_selection
         music = dummy_music_voice[:]
         return dummy_music_voice
+
+    def _set_staff_line_count(self, first_leaf, staff_line_count):
+        command = indicatortools.LilyPondCommand('stopStaff')
+        attach(command, first_leaf)
+        string = "override Staff.StaffSymbol #'line-count = #{}"
+        string = string.format(staff_line_count)
+        command = indicatortools.LilyPondCommand(string)
+        attach(command, first_leaf)
+        command = indicatortools.LilyPondCommand('startStaff')
+        attach(command, first_leaf)
 
     ### PRIVATE PROPERTIES ###
 

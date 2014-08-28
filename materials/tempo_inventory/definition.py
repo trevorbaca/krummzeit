@@ -117,5 +117,9 @@ tempo_inventory = indicatortools.TempoInventory(
             duration=durationtools.Duration(1, 4),
             units_per_minute=144,
             ),
+        indicatortools.Tempo(
+            duration=durationtools.Duration(1, 4),
+            units_per_minute=45,
+            ),
         ]
     )

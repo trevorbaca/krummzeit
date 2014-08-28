@@ -40,3 +40,10 @@ time_signatures.insert(20, TimeSignature((1, 4)))
 time_signatures.insert(-27, TimeSignature((1, 4)))
 assert len(time_signatures) == 85
 segment_time_signatures['K'] = time_signatures
+
+
+### F ###
+time_signatures = time_signature_inventory[4]
+time_signatures = sequencetools.flatten_sequence(time_signatures)
+assert len(time_signatures) == 35
+segment_time_signatures['F'] = time_signatures

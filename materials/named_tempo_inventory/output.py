@@ -12,6 +12,13 @@ named_tempo_inventory = datastructuretools.TypedOrderedDict(
                 ),
             ),
         (
+            '45',
+            indicatortools.Tempo(
+                duration=durationtools.Duration(1, 4),
+                units_per_minute=45,
+                ),
+            ),
+        (
             '67.5',
             indicatortools.Tempo(
                 duration=durationtools.Duration(1, 4),

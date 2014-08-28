@@ -349,3 +349,39 @@ segment_maker.copy_music_maker(
     19,
     stages=22,
     )
+
+
+r'''
+108:        3/4 4/4 6/4 9/8 3/4 5/8 9/8 9/8
+            {32 quarters / 108 = 0.30 minutes}
+
+135:        5/8 5/8
+            {5 quarters / 135 = 0.04 minutes}
+
+72:         3/4 4/4 5/4 5/4
+            {17 quarters / 72 = 0.24 minutes}
+
+108:        3/4 3/4
+            {6 quarters / 108 = 0.06 minutes}
+
+90:         4/4
+            {4 quarters / 90 = 0.04 minutes}
+
+108:        11/8 3/4 
+            {8.5 quarters / 108 = 0.08 minutes}
+
+90:         5/8 9/8 9/8 7/8 9/8
+            {19.5 quarters / 90 = 0.22 minutes}
+
+135:        3/4 3/4 
+            {6 quarters / 135 = 0.04 minutes}
+
+45:         3/4 3/4 4/4 5/4 4/4 9/8
+            {23.5 quarters / 45 = 0.52 minutes}
+
+72:         3/4 5/8 9/8
+            {10 quarters / 72 = 0.14 minutes}
+
+sum([0.30, 0.04, 0.24, 0.06, 0.04, 0.08, 0.22, 0.04, 0.52, 0.14])
+1.68 minutes
+'''

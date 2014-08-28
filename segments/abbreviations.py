@@ -11,6 +11,8 @@ piano._default_scope = 'PianoMusicStaff'
 harpsichord = materials.performer_inventory.get_instrument('harpsichord')
 harpsichord._default_scope = 'PianoMusicStaff'
 sponges = materials.performer_inventory.get_instrument('sponges')
+suspended_cymbal = materials.performer_inventory.get_instrument(
+    'suspended cymbal')
 tam_tam = materials.performer_inventory.get_instrument('tam-tam')
 xylophone = materials.performer_inventory.get_instrument('xylophone')
 

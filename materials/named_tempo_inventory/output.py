@@ -55,7 +55,7 @@ named_tempo_inventory = datastructuretools.TypedOrderedDict(
             '72/108',
             indicatortools.Tempo(
                 duration=durationtools.Duration(1, 4),
-                units_per_minute=108,
+                units_per_minute=73,
                 markup=markuptools.Markup(
                     contents=(
                         markuptools.MarkupCommand(
@@ -141,6 +141,13 @@ named_tempo_inventory = datastructuretools.TypedOrderedDict(
             indicatortools.Tempo(
                 duration=durationtools.Duration(1, 4),
                 units_per_minute=135,
+                ),
+            ),
+        (
+            '144',
+            indicatortools.Tempo(
+                duration=durationtools.Duration(1, 4),
+                units_per_minute=144,
                 ),
             ),
         ]

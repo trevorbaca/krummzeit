@@ -11,4 +11,5 @@ named_tempo_inventory = datastructuretools.TypedOrderedDict([
     ('90', tempo_inventory[2]),
     ('108', tempo_inventory[1]),
     ('135', tempo_inventory[3]),
+    ('144', tempo_inventory[7]),
     ])

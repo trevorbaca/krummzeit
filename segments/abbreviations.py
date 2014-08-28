@@ -5,6 +5,7 @@ from krummzeit import materials
 ### INSTRUMENTS ###
 
 e_flat_clarinet = materials.performer_inventory.get_instrument('cl. e-flat')
+clarinet = materials.performer_inventory.get_instrument('cl. in B-flat')
 bass_clarinet = materials.performer_inventory.get_instrument('bass cl.')
 piano = materials.performer_inventory.get_instrument('piano')
 piano._default_scope = 'PianoMusicStaff'

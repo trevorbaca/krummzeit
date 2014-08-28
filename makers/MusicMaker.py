@@ -10,20 +10,13 @@ class MusicMaker(abctools.AbjadObject):
         ::
 
             >>> from krummzeit import makers
-            >>> division_maker = makertools.HypermeasureDivisionMaker(
-            ...     hypermeasure_specifier=makertools.HypermeasureSpecifier(
-            ...         counts=[2, 3, 1],
-            ...         cyclic=True,
-            ...         ),
-            ...     )
-            >>> rhythm_maker = rhythmmakertools.TupletRhythmMaker(
-            ...     tuplet_ratios=[(3, 2)],
-            ...     )
             >>> music_maker = makers.MusicMaker()
             >>> music_maker.context_name = 'Cello Music Voice'
             >>> music_maker.stages = 1, 4
-            >>> music_maker.division_maker = division_maker
-            >>> music_maker.rhythm_maker = rhythm_maker
+            >>> music_maker.division_maker = makertools.HypermeasureDivisionMaker(
+            ...     measure_counts=[2, 3, 1],
+            ...     )
+            >>> music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 
         ::
 
@@ -31,16 +24,9 @@ class MusicMaker(abctools.AbjadObject):
             krummzeit.makers.MusicMaker(
                 context_name='Cello Music Voice',
                 division_maker=makertools.HypermeasureDivisionMaker(
-                    hypermeasure_specifier=makertools.HypermeasureSpecifier(
-                        counts=(2, 3, 1),
-                        cyclic=True,
-                        ),
+                    measure_counts=[2, 3, 1],
                     ),
-                rhythm_maker=rhythmmakertools.TupletRhythmMaker(
-                    tuplet_ratios=(
-                        mathtools.Ratio(3, 2),
-                        ),
-                    ),
+                rhythm_maker=rhythmmakertools.NoteRhythmMaker(),
                 stages=(1, 4),
                 )
 
@@ -139,8 +125,8 @@ class MusicMaker(abctools.AbjadObject):
         if not self.rhythm_overwrites:
             return selections
         # TODO: remove after debugging
-        if self.rhythm_overwrites:
-            assert self.context_name == 'Piano Music Voice', repr(self)
+        #if self.rhythm_overwrites:
+        #    assert self.context_name == 'Piano Music Voice', repr(self)
         dummy_measures = scoretools.make_spacer_skip_measures(time_signatures)
         dummy_time_signature_voice = Voice(dummy_measures)
         dummy_music_voice = Voice()
@@ -150,16 +136,32 @@ class MusicMaker(abctools.AbjadObject):
         for rhythm_overwrite in self.rhythm_overwrites:
             selector, division_maker, rhythm_maker = rhythm_overwrite
             old_music_selection = selector(dummy_music_voice)
-            old_music_selection = selectiontools.SliceSelection(
-                old_music_selection)
-            result = old_music_selection._get_parent_and_start_stop_indices()
-            parent, start_index, stop_index = result
-            old_duration = old_music_selection.get_duration()
-            division_lists = division_maker([old_duration])
-            assert len(division_lists) == 1
-            division_list = division_lists[0]
-            new_music_selection = rhythm_maker(division_list)
-            dummy_music_voice[start_index:stop_index+1] = new_music_selection
+            prototype = selectiontools.ContiguousSelection
+            #if 1 < len(old_music_selection):
+            if True:
+                old_music_selection = selectiontools.SliceSelection(
+                    old_music_selection)
+                result = old_music_selection._get_parent_and_start_stop_indices()
+                parent, start_index, stop_index = result
+                old_duration = old_music_selection.get_duration()
+                division_lists = division_maker([old_duration])
+                assert len(division_lists) == 1
+                division_list = division_lists[0]
+                new_music_selection = rhythm_maker(division_list)
+                dummy_music_voice[start_index:stop_index+1] = \
+                    new_music_selection
+            #elif len(old_music_selection) == 1:
+            #    prototype = selectiontools.Selection
+            #    assert isinstance(old_music_selection[0], prototype)
+            #    old_music_selection = old_music_selection[0]
+            #    old_duration = old_music_selection.get_duration()
+            #    division_lists = division_maker([old_duration])
+            #    assert len(division_lists) == 1
+            #    division_list = division_lists[0]
+            #    new_music_selection = rhythm_maker(division_list)
+            #    old_component = old_music_selection[0]
+            #    index = dummy_music_voice.index(old_component)
+            #    dummy_music_voice[index:index+1] = new_music_selection
         music = dummy_music_voice[:]
         return dummy_music_voice
 

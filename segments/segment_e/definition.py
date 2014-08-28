@@ -374,3 +374,24 @@ segment_maker.copy_music_maker(
     context_name=pf,
     rhythm_maker=rhythmmakertools.NoteRhythmMaker()
     )
+
+
+r'''
+36:             3/4 4/4 9/8 3/4 5/8 9/8 9/8
+                {6.5 * 4 = 26 quarters = 0.72 minutes}
+
+36 --> 72:      5/8 7/8 5/4 3/4 3/4 3/4 3/4 4/4 6/4 9/8 3/4 5/8 9/8
+                9/8 5/8 5/8 3/4
+                {15 * 4 = 60 quarters / 54 = 1.11 minutes}
+
+108:            4/4 5/4
+                {2.25 * 4 = 9 quarters / 108 = 0.08 minutes}
+
+72 --> 108:     5/4 3/4 3/4 4/4 11/8 3/4 5/8 9/8
+                {7.625 * 4 = 30.5 quarters / 90 = 0.34 minutes}
+
+108:            9/8 7/8 9/8 3/4 3/4 3/4 3/4 4/4 5/4 4/4 9/8 3/4 5/8 9/8
+                {13 * 4 = 52 quarters / 108 = 0.48 minutes}
+
+sum([0.72, 1.11, 0.08, 0.34, 0.48]) = 2.73 minutes.
+'''

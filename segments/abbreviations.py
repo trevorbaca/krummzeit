@@ -11,6 +11,7 @@ piano = materials.performer_inventory.get_instrument('piano')
 piano._default_scope = 'PianoMusicStaff'
 harpsichord = materials.performer_inventory.get_instrument('harpsichord')
 harpsichord._default_scope = 'PianoMusicStaff'
+scraped_slate = materials.performer_inventory.get_instrument('scraped slate')
 snare_drum = materials.performer_inventory.get_instrument('snare drum')
 sponges = materials.performer_inventory.get_instrument('sponges')
 suspended_cymbal = materials.performer_inventory.get_instrument(

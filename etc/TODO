@@ -5,3 +5,6 @@
     (Right now appears only at start of next system.)
 
 3.  Add tempo map support for fermatas.
+
+4.  Come up with a semantic way of handling 1/4-type measure inserts.
+    Do in SegmentMaker of next score.

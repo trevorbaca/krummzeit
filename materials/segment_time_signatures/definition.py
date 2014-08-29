@@ -47,3 +47,18 @@ time_signatures = time_signature_inventory[4]
 time_signatures = sequencetools.flatten_sequence(time_signatures)
 assert len(time_signatures) == 35
 segment_time_signatures['F'] = time_signatures
+
+
+### D ###
+time_signatures = time_signature_inventory[2]
+time_signatures = sequencetools.flatten_sequence(time_signatures)
+assert len(time_signatures) == 11
+time_signatures.insert(8, TimeSignature((1, 4)))
+time_signatures.insert(4, TimeSignature((1, 4)))
+time_signatures.insert(3, TimeSignature((1, 4)))
+time_signatures.insert(2, TimeSignature((1, 4)))
+time_signatures.insert(1, TimeSignature((1, 4)))
+assert len(time_signatures) == 16
+time_signatures[-1:-1] = 3 * time_signatures[-1:]
+assert len(time_signatures) == 19
+segment_time_signatures['D'] = time_signatures

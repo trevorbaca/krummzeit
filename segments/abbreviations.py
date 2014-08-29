@@ -18,6 +18,7 @@ suspended_cymbal = materials.performer_inventory.get_instrument(
     'suspended cymbal')
 tam_tam = materials.performer_inventory.get_instrument('tam-tam')
 xylophone = materials.performer_inventory.get_instrument('xylophone')
+violin = materials.performer_inventory.get_instrument('violin')
 
 
 ### CONTEXT NAMES ###

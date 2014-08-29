@@ -62,3 +62,38 @@ assert len(time_signatures) == 16
 time_signatures[-1:-1] = 3 * time_signatures[-1:]
 assert len(time_signatures) == 19
 segment_time_signatures['D'] = time_signatures
+
+
+### C ###
+time_signatures = time_signature_inventory[1:3]
+time_signatures = sequencetools.flatten_sequence(time_signatures)
+assert len(time_signatures) == 33
+'''
+12 stages:
+1: 4 (1/4)
+2: 1 (1/4) 1 (1/4) 1 (1/4) 1 (1/4)
+3: 1 (1/4) 1 (1/4) 1 (1/4) 1 (1/4)
+4: 2
+5: 2
+6: 2
+7: 1 (1/4) 1 (1/4)
+8: 2
+9: 2
+10: 4
+11: 3
+12: 2
+total: 33 semantic measures
+'''
+time_signatures.insert(-14, TimeSignature((1, 4)))
+time_signatures.insert(-13, TimeSignature((1, 4)))
+time_signatures.insert(12, TimeSignature((1, 4)))
+time_signatures.insert(11, TimeSignature((1, 4)))
+time_signatures.insert(10, TimeSignature((1, 4)))
+time_signatures.insert(9, TimeSignature((1, 4)))
+time_signatures.insert(8, TimeSignature((1, 4)))
+time_signatures.insert(7, TimeSignature((1, 4)))
+time_signatures.insert(6, TimeSignature((1, 4)))
+time_signatures.insert(5, TimeSignature((1, 4)))
+time_signatures.insert(4, TimeSignature((1, 4)))
+assert len(time_signatures) == 44
+segment_time_signatures['C'] = time_signatures

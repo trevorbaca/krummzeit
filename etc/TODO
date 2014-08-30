@@ -4,7 +4,12 @@
     So that "bass clarinet" shows up immediately when assigned.
     (Right now appears only at start of next system.)
 
-3.  Add tempo map support for fermatas.
+3.  Add tempo map support for fermatas. And breath marks.
 
-4.  Come up with a semantic way of handling 1/4-type measure inserts.
-    Do in SegmentMaker of next score.
+4.  For next score:
+    Come up with a semantic way of handling 1/4-type measure inserts.
+
+5.  For next score:
+    Make map-making application.
+    Implement object model behind.
+    Provide ASCII or LateX output.

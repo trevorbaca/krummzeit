@@ -4,6 +4,7 @@ from krummzeit import materials
 
 ### INSTRUMENTS ###
 
+oboe = materials.performer_inventory.get_instrument('ob.')
 e_flat_clarinet = materials.performer_inventory.get_instrument('cl. e-flat')
 clarinet = materials.performer_inventory.get_instrument('cl. in B-flat')
 bass_clarinet = materials.performer_inventory.get_instrument('bass cl.')

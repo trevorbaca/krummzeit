@@ -193,3 +193,17 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
         tie_across_divisions=[1, 0, 1, 1, 1],
         ),
     )
+
+
+r'''
+72:         9/8 5/8 5/8 4/4 5/4 3/4 3/4 3/4 9/8 7/8 
+            35.5 quarters / 72 = 0.49 minutes
+
+72 --> 144: 6/4 7/4 3/4 7/4 11/8 5/8 4/4 6/4
+            41 quarters / 108 = 0.38 minutes
+
+144:        3/4 4/4 7/8 7/8
+            14 quarters / 144 = 0.10 minutes
+
+sum([0.49, 0.38, 0.10]) == 0.97 minutes
+'''

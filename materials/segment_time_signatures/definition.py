@@ -97,3 +97,10 @@ time_signatures.insert(5, TimeSignature((1, 4)))
 time_signatures.insert(4, TimeSignature((1, 4)))
 assert len(time_signatures) == 44
 segment_time_signatures['C'] = time_signatures
+
+
+### G ###
+time_signatures = time_signature_inventory[5]
+time_signatures = sequencetools.flatten_sequence(time_signatures)
+assert len(time_signatures) == 22
+segment_time_signatures['G'] = time_signatures

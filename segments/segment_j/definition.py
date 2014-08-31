@@ -88,7 +88,7 @@ segment_maker.copy_music_maker(
     rhythm_maker__tuplet_ratios=[(1, 6)],
     )
 
-### vn, va, vc [J1-3] tremolo (11.1) ###
+### vn, va, vc [J1-3] tremolo clusters (11.1) ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 1, 3
 music_maker.context_name = vn

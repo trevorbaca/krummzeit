@@ -1,4 +1,4 @@
-% 2014-08-29 00:12
+% 2014-08-31 17:16
 
 \version "2.19.12"
 \language "english"
@@ -3011,16 +3011,6 @@
 					r1..
 					r2.
 					{
-						\set Staff.instrumentName = \markup {
-							\hcenter-in
-								#12
-								Violin
-							}
-						\set Staff.shortInstrumentName = \markup {
-							\hcenter-in
-								#12
-								Vn.
-							}
 						c'4.
 					}
 					\times 2/3 {

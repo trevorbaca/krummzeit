@@ -150,16 +150,6 @@ music_maker.clef = 'bass'
 music_maker.division_maker = makertools.RoundedRatioDivisionMaker(
     ratios=[(2, 1), (2, 1), (1, 1, 1)],
     )
-#music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
-#    tuplet_ratios=[
-#        (1, 1, 1, 1, 3, 3),
-#        (3, 4, 1, 1),
-#        ],
-#    tie_specifier=rhythmmakertools.TieSpecifier(
-#        tie_across_divisions=[0, 1],
-#        ),
-#    output_masks=[OutputMask(indices=[5, 6], period=7)],
-#    )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
     tie_specifier=rhythmmakertools.TieSpecifier(
         tie_across_divisions=[0, 1],

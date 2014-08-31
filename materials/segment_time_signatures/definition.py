@@ -121,3 +121,16 @@ time_signatures = time_signature_inventory[7]
 time_signatures = sequencetools.flatten_sequence(time_signatures)
 assert len(time_signatures) == 10
 segment_time_signatures['I'] = time_signatures
+
+
+### J ###
+time_signatures = time_signature_inventory[11]
+time_signatures = sequencetools.flatten_sequence(time_signatures)
+assert len(time_signatures) == 11
+extension = time_signatures[-2:]
+time_signatures.extend(extension)
+assert len(time_signatures) == 13
+time_signatures[10:10] = 4 * [TimeSignature((3, 4))]
+time_signatures[10:10] = 4 * [TimeSignature((4, 4))]
+assert len(time_signatures) == 21
+segment_time_signatures['J'] = time_signatures

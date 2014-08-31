@@ -235,3 +235,32 @@ segment_maker.copy_music_maker(
     context_name=vc,
     rhythm_maker__split_divisions_by_counts=[10, 8],
     )
+
+
+r'''
+135:        4/4 9/8
+            8.5 quarters / 135 = 0.03 minutes
+
+90:         3/4 5/8
+            5.5 quarters / 90 = 0.06 minutes
+
+108:        9/8 9/8
+            9 quarters / 108 = 0.08 minutes
+
+72:         5/8 5/8
+            5 quarters / 72 = 0.07 minutes
+
+72 --> 36:  4/5 5/4
+            9 quarters / 54 = 0.17 minutes
+
+36:         4/4 4/4 4/4 4/4 3/4 3/4 3/4 3/4
+            28 quarters / 36 = 0.78 minutes
+
+36 --> 135: 3/4 5/4 
+            8 quartesr / 85.5 = 0.09 minutes
+
+135:        3/4
+            3 quarters / 135 = 0.02 minutes
+
+sum([0.03, 0.06, 0.08, 0.07, 0.17, 0.78, 0.09, 0.02]) == 1.3 minutes
+'''

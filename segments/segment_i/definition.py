@@ -199,3 +199,14 @@ segment_maker.copy_music_maker(
     instrument=xylophone,
     rhythm_maker__tuplet_ratios=[(1, 6)],
     )
+
+
+r'''
+90 --> 135: 7/8 6/4 7/4 7/4 3/4
+            19.5 quarters / 112.5 = 0.17 minutes
+
+135:        11/8 5/8 4/4 2/4 7/4
+            23 quarters / 135 = 0.17 minutes
+
+sum([0.17, 0.17]] == 0.34 minutes
+'''

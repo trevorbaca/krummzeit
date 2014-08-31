@@ -297,3 +297,14 @@ segment_maker.copy_music_maker(
     context_name=vc,
     rhythm_maker__tuplet_ratios=[(1, 4)],
     )
+
+
+r'''
+144:        9/8 5/8 5/8 4/4 5/4 3/4 3/4 3/4 9/8 7/8 6/4 7/4 1/4
+            49.5 quarters / 144 = 0.34 minutes
+
+90:         3/4 7/4 11/8 5/8 4/4 6/4 3/4 4/4 7/8 7/8 1/4
+            43 quarters / 90 = 0.48 minutes
+
+sum([0.34, 0.48]) == 0.82 minutes.
+'''

@@ -175,7 +175,7 @@ segment_maker.copy_music_maker(
     rhythm_maker__tuplet_ratios=[(1, 4)],
     )
 
-### pf, xylophony [I8] reiteration ###
+### pf, xylophone [I8] reiteration ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 8
 music_maker.context_name = pf

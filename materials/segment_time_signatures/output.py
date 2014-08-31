@@ -437,5 +437,23 @@ segment_time_signatures = datastructuretools.TypedOrderedDict(
                 indicatortools.TimeSignature((3, 4)),
                 ],
             ),
+        (
+            'A',
+            [
+                indicatortools.TimeSignature((4, 4)),
+                indicatortools.TimeSignature((9, 8)),
+                indicatortools.TimeSignature((1, 4)),
+                indicatortools.TimeSignature((3, 4)),
+                indicatortools.TimeSignature((5, 8)),
+                indicatortools.TimeSignature((9, 8)),
+                indicatortools.TimeSignature((9, 8)),
+                indicatortools.TimeSignature((5, 8)),
+                indicatortools.TimeSignature((1, 4)),
+                indicatortools.TimeSignature((5, 8)),
+                indicatortools.TimeSignature((4, 4)),
+                indicatortools.TimeSignature((5, 4)),
+                indicatortools.TimeSignature((3, 4)),
+                ],
+            ),
         ]
     )

@@ -216,7 +216,7 @@ segment_maker.copy_music_maker(
     pf,
     1,
     context_name=vn,
-    instrument=materials.performer_inventory.get_instrument('vn.'),
+    instrument=None,
     division_maker__pattern=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rhythm_maker__denominators=[4, 4, 4, 16],
     stages=4,

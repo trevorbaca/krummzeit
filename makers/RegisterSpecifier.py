@@ -3,7 +3,7 @@ from abjad import *
 
 
 class RegisterSpecifier(abctools.AbjadObject):
-    r'''Octave specifier.
+    r'''Register specifier.
 
     ..  container:: example
 
@@ -82,7 +82,7 @@ class RegisterSpecifier(abctools.AbjadObject):
 
     @property
     def indicator(self):
-        r'''Gets indicator of octave specifier.
+        r'''Gets indicator of register specifier.
 
         ..  container:: example
 

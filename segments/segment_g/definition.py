@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 from abjad import *
-from abjad.tools.rhythmmakertools import OutputMask
+from abjad.tools.rhythmmakertools import BooleanPattern
 from experimental import *
 from krummzeit import makers
 from krummzeit import materials
@@ -69,7 +69,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
     tie_specifier=rhythmmakertools.TieSpecifier(
         tie_across_divisions=True,
         ),
-    output_masks=[OutputMask(indices=[0], period=1)],
+    output_masks=[BooleanPattern(indices=[0], period=1)],
     )
 
 segment_maker.copy_music_maker(
@@ -144,7 +144,7 @@ segment_maker.copy_music_maker(
     5,
     context_name=va,
     rhythm_maker__tuplet_ratios=[(1, 6)],
-    rhythm_maker__output_masks=[OutputMask(indices=[0, 1])],
+    rhythm_maker__output_masks=[BooleanPattern(indices=[0, 1])],
     )
 
 segment_maker.copy_music_maker(
@@ -152,7 +152,7 @@ segment_maker.copy_music_maker(
     5,
     context_name=vc,
     rhythm_maker__tuplet_ratios=[(6, 1)],
-    rhythm_maker__output_masks=[OutputMask(indices=[0, 1])],
+    rhythm_maker__output_masks=[BooleanPattern(indices=[0, 1])],
     )
 
 

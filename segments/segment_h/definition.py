@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 from abjad import *
-from abjad.tools.rhythmmakertools import OutputMask
+from abjad.tools.rhythmmakertools import BooleanPattern
 from experimental import *
 from krummzeit import makers
 from krummzeit import materials
@@ -154,7 +154,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
     tie_specifier=rhythmmakertools.TieSpecifier(
         tie_across_divisions=[0, 1],
         ),
-    output_masks=[OutputMask(indices=[5, 6], period=7)],
+    output_masks=[BooleanPattern(indices=[5, 6], period=7)],
     )
 
 ### tam-tam [H1-7] ###

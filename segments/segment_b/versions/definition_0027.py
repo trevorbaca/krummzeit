@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 from abjad import *
-from abjad.tools.rhythmmakertools import OutputMask
+from abjad.tools.rhythmmakertools import BooleanPattern
 from experimental import *
 from krummzeit import makers
 from krummzeit import materials
@@ -343,7 +343,7 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
     split_divisions_by_counts=[6, 18],
     extra_counts_per_division=[2, 2, 0, 2, 4, 6],
     #output_mask=[1, 0, 0, 0, 1, 1],
-    output_masks=[OutputMask(indices=[1, 2, 3], period=6)],
+    output_masks=[BooleanPattern(indices=[1, 2, 3], period=6)],
     )
 
 segment_maker.copy_music_maker(
@@ -352,7 +352,7 @@ segment_maker.copy_music_maker(
     context_name=vc,
     stages=(18, 19),
     #rhythm_maker__output_mask=[1, 1, 0, 0, 0, 1],
-    rhythm_maker__output_masks=[OutputMask(indices=[2, 3, 4], period=6)],
+    rhythm_maker__output_masks=[BooleanPattern(indices=[2, 3, 4], period=6)],
     )
 
 segment_maker.copy_music_maker(
@@ -361,7 +361,7 @@ segment_maker.copy_music_maker(
     context_name=vn,
     stages=19,
     #rhythm_maker__output_mask=[1, 1, 1, 0, 0, 0],
-    rhythm_maker__output_masks=[OutputMask(indices=[3, 4, 5], period=6)],
+    rhythm_maker__output_masks=[BooleanPattern(indices=[3, 4, 5], period=6)],
     )
 
 music_maker = segment_maker.make_music_maker()
@@ -379,7 +379,7 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
         left_counts=[1],
         ),
     #output_mask=[1, 1, 0, 0, 1, 1],
-    output_masks=[OutputMask(indices=[2, 3], period=6)],
+    output_masks=[BooleanPattern(indices=[2, 3], period=6)],
     )
 
 segment_maker.copy_music_maker(
@@ -388,7 +388,7 @@ segment_maker.copy_music_maker(
     context_name=vc,
     rhythm_maker__extra_counts_per_division=[4, 4, 2, 0, 2, 4],
     #rhythm_maker__output_mask=[0, 1, 0, 1, 1, 1, 1],
-    rhythm_maker__output_masks=[OutputMask(indices=[0, 2], period=7)],
+    rhythm_maker__output_masks=[BooleanPattern(indices=[0, 2], period=7)],
     )
 
 segment_maker.copy_music_maker(
@@ -397,7 +397,7 @@ segment_maker.copy_music_maker(
     context_name=vn,
     rhythm_maker__extra_counts_per_division=[6, 0, 4, 4, 0, 2],
     #rhythm_maker__output_mask=[1, 1, 1, 0, 1, 1, 0, 1],
-    rhythm_maker__output_masks=[OutputMask(indices=[3, 6], period=8)],
+    rhythm_maker__output_masks=[BooleanPattern(indices=[3, 6], period=8)],
     )
 
 ### pf [B20-22] ###
@@ -409,7 +409,7 @@ segment_maker.copy_music_maker(
     stages=(20, 22),
     rhythm_maker__extra_counts_per_division=[4, 0, 2, 4, 6],
     #rhythm_maker__output_mask=[1, 0, 1, 1, 1, 0, 1],
-    rhythm_maker__output_masks=[OutputMask(indices=[1, 5], period=7)],
+    rhythm_maker__output_masks=[BooleanPattern(indices=[1, 5], period=7)],
     )
 
 segment_maker.copy_music_maker(

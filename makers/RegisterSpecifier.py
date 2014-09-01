@@ -2,7 +2,7 @@
 from abjad import *
 
 
-class OctaveSpecifier(abctools.AbjadObject):
+class RegisterSpecifier(abctools.AbjadObject):
     r'''Octave specifier.
 
     ..  container:: example
@@ -12,14 +12,14 @@ class OctaveSpecifier(abctools.AbjadObject):
         ::
 
             >>> import krummzeit
-            >>> specifier = krummzeit.makers.OctaveSpecifier(
+            >>> specifier = krummzeit.makers.RegisterSpecifier(
             ...     indicator=[0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2],
             ...     )
 
         ::
             
             >>> print(format(specifier))
-            krummzeit.makers.OctaveSpecifier(
+            krummzeit.makers.RegisterSpecifier(
                 indicator=(0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2),
                 )
 
@@ -29,7 +29,7 @@ class OctaveSpecifier(abctools.AbjadObject):
 
         ::
 
-            >>> specifier = krummzeit.makers.OctaveSpecifier(
+            >>> specifier = krummzeit.makers.RegisterSpecifier(
             ...     indicator=pitchtools.OctaveTranspositionMapping(
             ...         [('[A0, C4)', 15), ('[C4, C8)', 27)],
             ...         ),
@@ -38,7 +38,7 @@ class OctaveSpecifier(abctools.AbjadObject):
         ::
             
             >>> print(format(specifier, 'storage'))
-            krummzeit.makers.OctaveSpecifier(
+            krummzeit.makers.RegisterSpecifier(
                 indicator=pitchtools.OctaveTranspositionMapping(
                     [
                         pitchtools.OctaveTranspositionMappingComponent(
@@ -89,7 +89,7 @@ class OctaveSpecifier(abctools.AbjadObject):
             ::
 
         
-                >>> specifier = krummzeit.makers.OctaveSpecifier(
+                >>> specifier = krummzeit.makers.RegisterSpecifier(
                 ...     indicator=[0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2],
                 ...     )
 

@@ -75,8 +75,16 @@ class RegisterSpecifier(abctools.AbjadObject):
         prototype = (type(None), pitchtools.OctaveTranspositionMapping)
         if not isinstance(indicator, prototype):
             indicator = tuple(indicator)
-            assert all(isinstance(_, int) for _ in indicator)
+            assert self._is_octave_displacement_vector(indicator)
         self._indicator = indicator
+
+    ### PRIVATE METHODS ###
+
+    def _is_octave_displacement_vector(self, expr):
+        if isinstance(expr, (tuple, list)):
+            if all(isinstance(_, int) for _ in expr):
+                return True
+        return False
 
     ### PUBLIC PROPERTIES ###
 

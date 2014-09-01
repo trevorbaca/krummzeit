@@ -2,7 +2,7 @@
 from abjad import *
 
 
-class OctaveDisplacementSpecifier(abctools.AbjadObject):
+class OctaveTranspositionSpecifier(abctools.AbjadObject):
     r'''Octave displacement specifier.
 
     ..  container:: example
@@ -10,14 +10,14 @@ class OctaveDisplacementSpecifier(abctools.AbjadObject):
         ::
 
             >>> import krummzeit
-            >>> specifier = krummzeit.makers.OctaveDisplacementSpecifier(
+            >>> specifier = krummzeit.makers.OctaveTranspositionSpecifier(
             ...     octaves=[0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2],
             ...     )
 
         ::
             
             >>> print(format(specifier))
-            krummzeit.makers.OctaveDisplacementSpecifier(
+            krummzeit.makers.OctaveTranspositionSpecifier(
                 octaves=(0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2),
                 )
 
@@ -51,7 +51,7 @@ class OctaveDisplacementSpecifier(abctools.AbjadObject):
             ::
 
         
-                >>> specifier = krummzeit.makers.OctaveDisplacementSpecifier(
+                >>> specifier = krummzeit.makers.OctaveTranspositionSpecifier(
                 ...     octaves=[0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2],
                 ...     )
 

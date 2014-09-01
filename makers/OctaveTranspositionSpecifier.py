@@ -7,18 +7,54 @@ class OctaveTranspositionSpecifier(abctools.AbjadObject):
 
     ..  container:: example
 
+        **Example 1.** Initializes with octave displacement vector:
+
         ::
 
             >>> import krummzeit
             >>> specifier = krummzeit.makers.OctaveTranspositionSpecifier(
-            ...     octaves=[0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2],
+            ...     indicator=[0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2],
             ...     )
 
         ::
             
             >>> print(format(specifier))
             krummzeit.makers.OctaveTranspositionSpecifier(
-                octaves=(0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2),
+                indicator=(0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2),
+                )
+
+    ..  container:: example
+
+        **Example 2.** Initializes with octave transposition mapping:
+
+        ::
+
+            >>> specifier = krummzeit.makers.OctaveTranspositionSpecifier(
+            ...     indicator=pitchtools.OctaveTranspositionMapping(
+            ...         [('[A0, C4)', 15), ('[C4, C8)', 27)],
+            ...         ),
+            ...     )
+
+        ::
+            
+            >>> print(format(specifier, 'storage'))
+            krummzeit.makers.OctaveTranspositionSpecifier(
+                indicator=pitchtools.OctaveTranspositionMapping(
+                    [
+                        pitchtools.OctaveTranspositionMappingComponent(
+                            source_pitch_range=pitchtools.PitchRange(
+                                range_string='[A0, C4)',
+                                ),
+                            target_octave_start_pitch=pitchtools.NumberedPitch(15),
+                            ),
+                        pitchtools.OctaveTranspositionMappingComponent(
+                            source_pitch_range=pitchtools.PitchRange(
+                                range_string='[C4, C8)',
+                                ),
+                            target_octave_start_pitch=pitchtools.NumberedPitch(27),
+                            ),
+                        ]
+                    ),
                 )
 
     '''
@@ -26,25 +62,27 @@ class OctaveTranspositionSpecifier(abctools.AbjadObject):
     ### CLASS VARIABLES ##
 
     __slots__ = (
-        '_octaves',
+        '_indicator',
         )
 
     ### INITIALIZER ###
 
     def __init__(
         self,
-        octaves=None,
+        indicator=None,
         ):
-        if octaves is not None:
-            octaves = tuple(octaves)
-            assert all(isinstance(_, int) for _ in octaves)
-        self._octaves = octaves
+        from abjad.tools import pitchtools
+        prototype = (type(None), pitchtools.OctaveTranspositionMapping)
+        if not isinstance(indicator, prototype):
+            indicator = tuple(indicator)
+            assert all(isinstance(_, int) for _ in indicator)
+        self._indicator = indicator
 
     ### PUBLIC PROPERTIES ###
 
     @property
-    def octaves(self):
-        r'''Gets octaves of octave displacement specifier.
+    def indicator(self):
+        r'''Gets indicator of octave displacement specifier.
 
         ..  container:: example
 
@@ -52,14 +90,14 @@ class OctaveTranspositionSpecifier(abctools.AbjadObject):
 
         
                 >>> specifier = krummzeit.makers.OctaveTranspositionSpecifier(
-                ...     octaves=[0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2],
+                ...     indicator=[0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2],
                 ...     )
 
             ::
 
-                >>> specifier.octaves
+                >>> specifier.indicator
                 (0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2)
 
         Set to integers or none.
         '''
-        return self._octaves
+        return self._indicator

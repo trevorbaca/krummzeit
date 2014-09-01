@@ -2,8 +2,8 @@
 from abjad import *
 
 
-class GlissandoSpecifier(abctools.AbjadObject):
-    r'''Glissando specifier.
+class StemTremoloSpecifier(abctools.AbjadObject):
+    r'''Stem tremolo specifier.
 
     ..  container:: example
 
@@ -12,7 +12,7 @@ class GlissandoSpecifier(abctools.AbjadObject):
         ::
 
             >>> import krummzeit
-            >>> specifier = krummzeit.makers.GlissandoSpecifier(
+            >>> specifier = krummzeit.makers.StemTremoloSpecifier(
             ...     patterns=[
             ...         rhythmmakertools.BooleanPattern(
             ...             indices=[0, 1],
@@ -27,7 +27,7 @@ class GlissandoSpecifier(abctools.AbjadObject):
         ::
             
             >>> print(format(specifier))
-            krummzeit.makers.GlissandoSpecifier(
+            krummzeit.makers.StemTremoloSpecifier(
                 patterns=(
                     rhythmmakertools.BooleanPattern(
                         indices=(0, 1),
@@ -64,14 +64,14 @@ class GlissandoSpecifier(abctools.AbjadObject):
 
     @property
     def patterns(self):
-        r'''Gets patterns of glissando specifier.
+        r'''Gets patterns of stem tremolo specifier.
 
         ..  container:: example
 
             ::
 
                 >>> import krummzeit
-                >>> specifier = krummzeit.makers.GlissandoSpecifier(
+                >>> specifier = krummzeit.makers.StemTremoloSpecifier(
                 ...     patterns=[
                 ...         rhythmmakertools.BooleanPattern(
                 ...             indices=[0, 1],

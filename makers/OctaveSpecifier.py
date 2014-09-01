@@ -3,11 +3,11 @@ from abjad import *
 
 
 class OctaveSpecifier(abctools.AbjadObject):
-    r'''Octave displacement specifier.
+    r'''Octave specifier.
 
     ..  container:: example
 
-        **Example 1.** Initializes with octave displacement vector:
+        **Example 1.** Initializes with octave vector:
 
         ::
 
@@ -82,7 +82,7 @@ class OctaveSpecifier(abctools.AbjadObject):
 
     @property
     def indicator(self):
-        r'''Gets indicator of octave displacement specifier.
+        r'''Gets indicator of octave specifier.
 
         ..  container:: example
 

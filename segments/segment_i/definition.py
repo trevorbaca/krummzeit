@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 from abjad import *
-from abjad.tools.rhythmmakertools import OutputMask
+from abjad.tools.rhythmmakertools import BooleanPattern
 from experimental import *
 from krummzeit import makers
 from krummzeit import materials
@@ -130,7 +130,7 @@ music_maker.division_maker = makertools.HypermeasureDivisionMaker(
         ),
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
-    output_masks=[OutputMask(indices=[0])],
+    output_masks=[BooleanPattern(indices=[0])],
     )
 
 ### ob, Eb cl [I3-6] upper pedals ###

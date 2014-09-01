@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 from abjad import *
-from abjad.tools.rhythmmakertools import OutputMask
+from abjad.tools.rhythmmakertools import BooleanPattern
 from experimental import *
 from krummzeit import makers
 from krummzeit import materials

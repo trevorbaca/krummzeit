@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 from abjad import *
-from abjad.tools.rhythmmakertools import OutputMask
+from abjad.tools.rhythmmakertools import BooleanPattern
 from experimental import *
 from krummzeit import makers
 from krummzeit import materials
@@ -58,7 +58,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         (1, 1, 1, 1, 3, 3),
         (3, 4, 1, 1),
         ],
-    output_masks=[OutputMask(indices=[3, 4], period=6)],
+    output_masks=[BooleanPattern(indices=[3, 4], period=6)],
     )
 
 segment_maker.copy_music_maker(
@@ -137,7 +137,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         (1, 4),
         (4, 3),
         ],
-    output_masks=[OutputMask(indices=[5, 6], period=7)],
+    output_masks=[BooleanPattern(indices=[5, 6], period=7)],
     )
 
 segment_maker.copy_music_maker(
@@ -145,7 +145,7 @@ segment_maker.copy_music_maker(
     4,
     context_name=va,
     division_maker__ratios=[(2, 1), (1, 1, 1), (2, 1)],
-    rhythm_maker__output_masks=[OutputMask(indices=[0, 1], period=7)],
+    rhythm_maker__output_masks=[BooleanPattern(indices=[0, 1], period=7)],
     )
 
 segment_maker.copy_music_maker(
@@ -153,7 +153,7 @@ segment_maker.copy_music_maker(
     4,
     context_name=vc,
     division_maker__ratios=[(1, 1, 1), (2, 1), (2, 1)],
-    rhythm_maker__output_masks=[OutputMask(indices=[2, 3], period=7)],
+    rhythm_maker__output_masks=[BooleanPattern(indices=[2, 3], period=7)],
     )
 
 
@@ -195,7 +195,7 @@ segment_maker.copy_music_maker(
         (-3, 4, 1, 12),
         (3, 2),
         ],
-    rhythm_maker__output_masks=[OutputMask(indices=[0])],
+    rhythm_maker__output_masks=[BooleanPattern(indices=[0])],
     )
 
 
@@ -341,7 +341,7 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
         ),
     split_divisions_by_counts=[6, 18],
     extra_counts_per_division=[2, 2, 0, 2, 4, 6],
-    output_masks=[OutputMask(indices=[0, 4, 5], period=6)],
+    output_masks=[BooleanPattern(indices=[0, 4, 5], period=6)],
     )
 
 segment_maker.copy_music_maker(

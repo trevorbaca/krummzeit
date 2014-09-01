@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 from abjad import *
-from abjad.tools.rhythmmakertools import OutputMask
+from abjad.tools.rhythmmakertools import BooleanPattern
 from experimental import *
 from krummzeit import makers
 from krummzeit import materials
@@ -58,7 +58,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         (1, 1, 1, 1, 3, 3),
         (3, 4, 1, 1),
         ],
-    output_masks=[OutputMask(indices=[3, 4], period=6)],
+    output_masks=[BooleanPattern(indices=[3, 4], period=6)],
     )
 
 music_maker = segment_maker.make_music_maker()

@@ -124,9 +124,6 @@ class MusicMaker(abctools.AbjadObject):
         selections = rhythm_maker(divisions)
         if not self.rhythm_overwrites:
             return selections
-        # TODO: remove after debugging
-        #if self.rhythm_overwrites:
-        #    assert self.context_name == 'Piano Music Voice', repr(self)
         dummy_measures = scoretools.make_spacer_skip_measures(time_signatures)
         dummy_time_signature_voice = Voice(dummy_measures)
         dummy_music_voice = Voice()

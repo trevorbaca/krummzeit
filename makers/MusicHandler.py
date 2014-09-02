@@ -11,16 +11,23 @@ class MusicHandler(abctools.AbjadObject):
 
             >>> import krummzeit
             >>> handler = krummzeit.makers.MusicHandler(
-            ...     context_name='Violin Music Voice',
-            ...     stages=(1, 4),
+            ...     scope=('Violin Music Voice', (1, 4)),
+            ...     specifier=krummzeit.makers.DisplacementSpecifier(
+            ...         displacements=[0, 0, 0, 0, 1, 1, 1, 1],
+            ...         ),
             ...     )
 
         ::
 
             >>> print(format(handler))
             krummzeit.makers.MusicHandler(
-                context_name='Violin Music Voice',
-                stages=(1, 4),
+                scope=krummzeit.makers.Scope(
+                    context_name='Violin Music Voice',
+                    stages=(1, 4),
+                    ),
+                specifier=krummzeit.makers.DisplacementSpecifier(
+                    displacements=(0, 0, 0, 0, 1, 1, 1, 1),
+                    ),
                 )
 
     '''
@@ -28,96 +35,58 @@ class MusicHandler(abctools.AbjadObject):
     ### CLASS VARIABLES ###
 
     __slots__ = (
-        '_context_name',
-        '_specifiers',
-        '_stages',
+        '_scope',
+        '_specifier',
         )
 
     ### INITIALIZER ###
 
     def __init__(
         self,
-        context_name=None,
-        specifiers=None,
-        stages=None,
+        scope=None,
+        specifier=None,
         ):
-        assert isinstance(context_name, str), repr(context_name)
-        self._context_name = context_name
-        if specifiers is not None:
-            specifiers = tuple(specifiers)
-        self._specifiers = specifiers
-        if stages is not None:
-            if isinstance(stages, int):
-                stages = (stages, stages)
-            stages = tuple(stages)
-            assert mathtools.all_are_positive_integers(stages)
-        self._stages = stages
+        from krummzeit import makers
+        if isinstance(scope, tuple):
+            scope = makers.Scope(*scope)
+        if scope is not None:
+            assert isinstance(scope, makers.Scope), repr(scope)
+        self._scope = scope
+        self._specifier = specifier
 
     ### PUBLIC PROPERTIES ###
 
     @property
-    def context_name(self):
-        r'''Gets context name of music-handler.
+    def scope(self):
+        r'''Gets scope of music-handler.
 
         ..  container:: example
 
             ::
 
-                >>> handler = krummzeit.makers.MusicHandler(
-                ...     context_name='Violin Music Voice',
-                ...     stages=(1, 4),
-                ...     )
+                >>> print(format(handler.scope))
+                krummzeit.makers.Scope(
+                    context_name='Violin Music Voice',
+                    stages=(1, 4),
+                    )
 
-            ::
-
-                >>> handler.context_name
-                'Violin Music Voice'
-
-        Set to strings or none.
+        Set to scope or none.
         '''
-        return self._context_name
+        return self._scope
 
     @property
-    def specifiers(self):
-        r'''Gets specifiers of music-handler.
+    def specifier(self):
+        r'''Gets specifier of music-handler.
 
         ..  container:: example
 
             ::
 
-                >>> handler = krummzeit.makers.MusicHandler(
-                ...     context_name='Violin Music Voice',
-                ...     stages=(1, 4),
-                ...     )
+                >>> print(format(handler.specifier))
+                krummzeit.makers.DisplacementSpecifier(
+                    displacements=(0, 0, 0, 0, 1, 1, 1, 1),
+                    )
 
-            ::
-
-                >>> handler.specifiers is None
-                True
-
-        Set to specifiers or none.
+        Set to specifier or none.
         '''
-        return self._specifiers
-
-
-    @property
-    def stages(self):
-        r'''Gets stages of music-handler.
-
-        ..  container:: example
-
-            ::
-
-                >>> handler = krummzeit.makers.MusicHandler(
-                ...     context_name='Violin Music Voice',
-                ...     stages=(1, 4),
-                ...     )
-
-            ::
-
-                >>> handler.stages
-                (1, 4)
-
-        Set to positive integers or none.
-        '''
-        return self._stages
+        return self._specifier

@@ -184,7 +184,12 @@ class SegmentMaker(makertools.SegmentMaker):
         return logical_ties
 
     def _interpret_music_handler(self, music_handler):
-        raise NotImplementedError
+        from krummzeit import makers
+        simple_scope = music_handler.scope
+        assert isinstance(simple_scope, makers.SimpleScope), simple_scope
+        compound_scope = makers.CompoundScope(simple_scope)
+        logical_ties = self._compound_scope_to_logical_ties(compound_scope)
+        music_handler.specifier(logical_ties)
 
     def _interpret_pitch_handler(self, pitch_handler):
         compound_scope = pitch_handler.scope

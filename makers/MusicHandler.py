@@ -26,7 +26,9 @@ class MusicHandler(abctools.AbjadObject):
                     stages=(1, 4),
                     ),
                 specifier=krummzeit.makers.DisplacementSpecifier(
-                    displacements=(0, 0, 0, 0, 1, 1, 1, 1),
+                    displacements=datastructuretools.CyclicTuple(
+                        [0, 0, 0, 0, 1, 1, 1, 1]
+                        ),
                     ),
                 )
 
@@ -84,7 +86,9 @@ class MusicHandler(abctools.AbjadObject):
 
                 >>> print(format(handler.specifier))
                 krummzeit.makers.DisplacementSpecifier(
-                    displacements=(0, 0, 0, 0, 1, 1, 1, 1),
+                    displacements=datastructuretools.CyclicTuple(
+                        [0, 0, 0, 0, 1, 1, 1, 1]
+                        ),
                     )
 
         Set to specifier or none.

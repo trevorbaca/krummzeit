@@ -20,7 +20,9 @@ class DisplacementSpecifier(abctools.AbjadObject):
             
             >>> print(format(specifier))
             krummzeit.makers.DisplacementSpecifier(
-                displacements=(0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2),
+                displacements=datastructuretools.CyclicTuple(
+                    [0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2]
+                    ),
                 )
 
     '''
@@ -40,7 +42,21 @@ class DisplacementSpecifier(abctools.AbjadObject):
         from abjad.tools import pitchtools
         displacements = tuple(displacements)
         assert self._is_octave_displacement_vector(displacements)
+        displacements = datastructuretools.CyclicTuple(displacements)
         self._displacements = displacements
+
+    ### SPECIAL METHODS ###
+
+    def __call__(self, logical_ties):
+        for i, logical_tie in enumerate(logical_ties):
+            assert isinstance(logical_tie, selectiontools.LogicalTie)
+            displacement = displacements[i]
+            interval = pitchtools.NumberedInterval(displacement * 12)
+            for note in logical_tie:
+                assert isinstance(note, Note), repr(note)
+                written_pitch = note.written_pitch
+                written_pitch += interval
+                note.written_pitch = written_pitch
 
     ### PRIVATE METHODS ###
 
@@ -68,7 +84,7 @@ class DisplacementSpecifier(abctools.AbjadObject):
             ::
 
                 >>> specifier.displacements
-                (0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2)
+                CyclicTuple([0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2])
 
         Set to integers or none.
         '''

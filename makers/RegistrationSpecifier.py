@@ -7,8 +7,6 @@ class RegistrationSpecifier(abctools.AbjadObject):
 
     ..  container:: example
 
-        **Example 1.** Initializes with octave transposition mapping:
-
         ::
 
             >>> import krummzeit
@@ -58,6 +56,14 @@ class RegistrationSpecifier(abctools.AbjadObject):
         prototype = (type(None), pitchtools.Registration)
         assert isinstance(registration, prototype), repr(registration)
         self._registration = registration
+
+    ### SPECIAL METHODS ###
+
+    def __call__(self, logical_ties):
+        for logical_tie in logical_ties:
+            for note in logical_tie:
+                written_pitch = self.registration([note.written_pitch])
+                note.written_pitch = written_pitch
 
     ### PUBLIC PROPERTIES ###
 

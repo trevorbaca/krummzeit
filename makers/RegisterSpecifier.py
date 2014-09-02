@@ -7,30 +7,13 @@ class RegisterSpecifier(abctools.AbjadObject):
 
     ..  container:: example
 
-        **Example 1.** Initializes with octave vector:
+        **Example 1.** Initializes with octave transposition mapping:
 
         ::
 
             >>> import krummzeit
             >>> specifier = krummzeit.makers.RegisterSpecifier(
-            ...     indicator=[0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2],
-            ...     )
-
-        ::
-            
-            >>> print(format(specifier))
-            krummzeit.makers.RegisterSpecifier(
-                indicator=(0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2),
-                )
-
-    ..  container:: example
-
-        **Example 2.** Initializes with octave transposition mapping:
-
-        ::
-
-            >>> specifier = krummzeit.makers.RegisterSpecifier(
-            ...     indicator=pitchtools.OctaveTranspositionMapping(
+            ...     register=pitchtools.OctaveTranspositionMapping(
             ...         [('[A0, C4)', 15), ('[C4, C8)', 27)],
             ...         ),
             ...     )
@@ -39,7 +22,7 @@ class RegisterSpecifier(abctools.AbjadObject):
             
             >>> print(format(specifier, 'storage'))
             krummzeit.makers.RegisterSpecifier(
-                indicator=pitchtools.OctaveTranspositionMapping(
+                register=pitchtools.OctaveTranspositionMapping(
                     [
                         pitchtools.OctaveTranspositionMappingComponent(
                             source_pitch_range=pitchtools.PitchRange(
@@ -62,50 +45,33 @@ class RegisterSpecifier(abctools.AbjadObject):
     ### CLASS VARIABLES ##
 
     __slots__ = (
-        '_indicator',
+        '_register',
         )
 
     ### INITIALIZER ###
 
     def __init__(
         self,
-        indicator=None,
+        register=None,
         ):
         from abjad.tools import pitchtools
         prototype = (type(None), pitchtools.OctaveTranspositionMapping)
-        if not isinstance(indicator, prototype):
-            indicator = tuple(indicator)
-            assert self._is_octave_displacement_vector(indicator)
-        self._indicator = indicator
-
-    ### PRIVATE METHODS ###
-
-    def _is_octave_displacement_vector(self, expr):
-        if isinstance(expr, (tuple, list)):
-            if all(isinstance(_, int) for _ in expr):
-                return True
-        return False
+        assert isinstance(register, prototype), repr(register)
+        self._register = register
 
     ### PUBLIC PROPERTIES ###
 
     @property
-    def indicator(self):
-        r'''Gets indicator of register specifier.
+    def register(self):
+        r'''Gets register of register specifier.
 
         ..  container:: example
 
             ::
 
-        
-                >>> specifier = krummzeit.makers.RegisterSpecifier(
-                ...     indicator=[0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2],
-                ...     )
+                >>> specifier.register
+                OctaveTranspositionMapping([('[A0, C4)', 15), ('[C4, C8)', 27)])
 
-            ::
-
-                >>> specifier.indicator
-                (0, 0, 0, 1, 1, 0, 0, 0, -1, 1, 1, 2, 2)
-
-        Set to integers or none.
+        Set to octave transposition mapping or none.
         '''
-        return self._indicator
+        return self._register

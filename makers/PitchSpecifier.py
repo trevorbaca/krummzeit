@@ -79,6 +79,7 @@ class PitchSpecifier(abctools.AbjadObject):
             if self.operators:
                 for operator_ in self.operators:
                     pitch_class = operator_(pitch_class)
+            pitch_class = pitchtools.NumberedPitchClass(pitch_class)
             pitch = pitchtools.NamedPitch(pitch_class)
             for note in logical_tie:
                 note.written_pitch = pitch

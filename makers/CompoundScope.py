@@ -81,7 +81,7 @@ class CompoundScope(abctools.AbjadObject):
         component_timespan = inspect_(component).get_timespan()
         for context_name, scope_timespan in self._timespan_map:
             if context_name == voice.name:
-                if component_timespan.starts_during(scope_timespan):
+                if component_timespan.starts_during_timespan(scope_timespan):
                     return True
         return False
 

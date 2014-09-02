@@ -2,8 +2,8 @@
 from abjad import *
 
 
-class RegisterTransitionSpecifier(abctools.AbjadObject):
-    r'''Register transition specifier.
+class RegistrationTransitionSpecifier(abctools.AbjadObject):
+    r'''Registration transition specifier.
 
     ..  container:: example
 
@@ -13,8 +13,8 @@ class RegisterTransitionSpecifier(abctools.AbjadObject):
         ::
 
             >>> import krummzeit
-            >>> specifier = krummzeit.makers.RegisterTransitionSpecifier(
-            ...     registers=[
+            >>> specifier = krummzeit.makers.RegistrationTransitionSpecifier(
+            ...     registrations=[
             ...         pitchtools.OctaveTranspositionMapping(
             ...             [('[A0, C8]', 0)],
             ...             ),
@@ -27,8 +27,8 @@ class RegisterTransitionSpecifier(abctools.AbjadObject):
         ::
             
             >>> print(format(specifier))
-            krummzeit.makers.RegisterTransitionSpecifier(
-                registers=(
+            krummzeit.makers.RegistrationTransitionSpecifier(
+                registrations=(
                     pitchtools.OctaveTranspositionMapping(
                         [
                             pitchtools.OctaveTranspositionMappingComponent(
@@ -60,9 +60,9 @@ class RegisterTransitionSpecifier(abctools.AbjadObject):
 
         ::
 
-            >>> specifier = krummzeit.makers.RegisterTransitionSpecifier(
+            >>> specifier = krummzeit.makers.RegistrationTransitionSpecifier(
             ...     fractions=[Fraction(1, 2)],
-            ...     registers=[
+            ...     registrations=[
             ...         pitchtools.OctaveTranspositionMapping(
             ...             [('[A0, C8]', 0)],
             ...             ),
@@ -75,11 +75,11 @@ class RegisterTransitionSpecifier(abctools.AbjadObject):
         ::
             
             >>> print(format(specifier))
-            krummzeit.makers.RegisterTransitionSpecifier(
+            krummzeit.makers.RegistrationTransitionSpecifier(
                 fractions=(
                     Fraction(1, 2),
                     ),
-                registers=(
+                registrations=(
                     pitchtools.OctaveTranspositionMapping(
                         [
                             pitchtools.OctaveTranspositionMappingComponent(
@@ -112,9 +112,9 @@ class RegisterTransitionSpecifier(abctools.AbjadObject):
 
         ::
 
-            >>> specifier = krummzeit.makers.RegisterTransitionSpecifier(
+            >>> specifier = krummzeit.makers.RegistrationTransitionSpecifier(
             ...     fractions=[Fraction(1, 2)],
-            ...     registers=[
+            ...     registrations=[
             ...         pitchtools.OctaveTranspositionMapping(
             ...             [('[A0, C8]', 0)],
             ...             ),
@@ -130,11 +130,11 @@ class RegisterTransitionSpecifier(abctools.AbjadObject):
         ::
             
             >>> print(format(specifier))
-            krummzeit.makers.RegisterTransitionSpecifier(
+            krummzeit.makers.RegistrationTransitionSpecifier(
                 fractions=(
                     Fraction(1, 2),
                     ),
-                registers=(
+                registrations=(
                     pitchtools.OctaveTranspositionMapping(
                         [
                             pitchtools.OctaveTranspositionMappingComponent(
@@ -174,7 +174,7 @@ class RegisterTransitionSpecifier(abctools.AbjadObject):
 
     __slots__ = (
         '_fractions',
-        '_registers',
+        '_registrations',
         )
 
     ### INITIALIZER ###
@@ -182,7 +182,7 @@ class RegisterTransitionSpecifier(abctools.AbjadObject):
     def __init__(
         self,
         fractions=None,
-        registers=None,
+        registrations=None,
         ):
         from abjad.tools import pitchtools
         if fractions is not None:
@@ -190,24 +190,24 @@ class RegisterTransitionSpecifier(abctools.AbjadObject):
             fractions = tuple(fractions)
         self._fractions = fractions
         prototype = (type(None), pitchtools.OctaveTranspositionMapping)
-        if registers is not None:
-            registers = tuple(registers)
-            assert all(isinstance(_, prototype) for _ in registers)
-        self._registers = registers
+        if registrations is not None:
+            registrations = tuple(registrations)
+            assert all(isinstance(_, prototype) for _ in registrations)
+        self._registrations = registrations
 
     ### PUBLIC PROPERTIES ###
 
     @property
     def fractions(self):
-        r'''Gets fractions of register transition specifier.
+        r'''Gets fractions of registration transition specifier.
 
         ..  container:: example
 
             ::
 
                 >>> import krummzeit
-                >>> specifier = krummzeit.makers.RegisterTransitionSpecifier(
-                ...     registers=[
+                >>> specifier = krummzeit.makers.RegistrationTransitionSpecifier(
+                ...     registrations=[
                 ...         pitchtools.OctaveTranspositionMapping(
                 ...             [('[A0, C8]', 0)],
                 ...             ),
@@ -227,16 +227,16 @@ class RegisterTransitionSpecifier(abctools.AbjadObject):
         return self._fractions
 
     @property
-    def registers(self):
-        r'''Gets registers of register transition specifier.
+    def registrations(self):
+        r'''Gets registrations of registration transition specifier.
 
         ..  container:: example
 
             ::
 
                 >>> import krummzeit
-                >>> specifier = krummzeit.makers.RegisterTransitionSpecifier(
-                ...     registers=[
+                >>> specifier = krummzeit.makers.RegistrationTransitionSpecifier(
+                ...     registrations=[
                 ...         pitchtools.OctaveTranspositionMapping(
                 ...             [('[A0, C8]', 0)],
                 ...             ),
@@ -248,9 +248,9 @@ class RegisterTransitionSpecifier(abctools.AbjadObject):
 
             ::
 
-                >>> specifier.registers
+                >>> specifier.registrations
                 (OctaveTranspositionMapping([('[A0, C8]', 0)]), OctaveTranspositionMapping([('[A0, C8]', 12)]))
 
-        Set to registers or none.
+        Set to registrations or none.
         '''
-        return self._registers
+        return self._registrations

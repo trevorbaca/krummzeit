@@ -174,7 +174,7 @@ class SegmentMaker(makertools.SegmentMaker):
             timespan_map.append((scope.context_name, timespan))
         compound_scope._timespan_map = timespan_map
         context_names = [_[0] for _ in timespan_map]
-        compound_scope._contex_names = tuple(context_names)
+        compound_scope._context_names = tuple(context_names)
         logical_ties = []
         for note in iterate(self._score).by_timeline(Note):
             if note in compound_scope:
@@ -198,8 +198,7 @@ class SegmentMaker(makertools.SegmentMaker):
         music_makers = music_makers or []
         music_makers = list(music_makers)
         for music_maker in music_makers:
-            assert isinstance(music_maker, makers.MusicMaker), repr(
-                music_maker)
+            assert isinstance(music_maker, makers.MusicMaker)
         self._music_makers = music_makers
 
     def _initialize_time_signatures(self, time_signatures):

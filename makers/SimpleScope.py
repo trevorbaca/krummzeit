@@ -2,15 +2,15 @@
 from abjad import *
 
 
-class Scope(abctools.AbjadObject):
-    r'''Scope.
+class SimpleScope(abctools.AbjadObject):
+    r'''SimpleScope.
 
     ..  container:: example
 
         ::
 
             >>> from krummzeit import makers
-            >>> scope = makers.Scope(
+            >>> scope = makers.SimpleScope(
             ...     context_name='Violin Music Voice',
             ...     stages=(1, 9),
             ...     )
@@ -18,7 +18,7 @@ class Scope(abctools.AbjadObject):
         ::
 
             >>> print(format(scope, 'storage'))
-            krummzeit.makers.Scope(
+            krummzeit.makers.SimpleScope(
                 context_name='Violin Music Voice',
                 stages=(1, 9),
                 )

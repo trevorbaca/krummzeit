@@ -23,11 +23,11 @@ class PitchHandler(abctools.AbjadObject):
             >>> print(format(handler))
             krummzeit.makers.PitchHandler(
                 scope=krummzeit.makers.CompoundScope(
-                    krummzeit.makers.Scope(
+                    krummzeit.makers.SimpleScope(
                         context_name='Violin Music Voice',
                         stages=(1, 4),
                         ),
-                    krummzeit.makers.Scope(
+                    krummzeit.makers.SimpleScope(
                         context_name='Viola Music Voice',
                         stages=(1, 4),
                         )
@@ -71,11 +71,11 @@ class PitchHandler(abctools.AbjadObject):
 
                 >>> print(format(handler.scope))
                 krummzeit.makers.CompoundScope(
-                    krummzeit.makers.Scope(
+                    krummzeit.makers.SimpleScope(
                         context_name='Violin Music Voice',
                         stages=(1, 4),
                         ),
-                    krummzeit.makers.Scope(
+                    krummzeit.makers.SimpleScope(
                         context_name='Viola Music Voice',
                         stages=(1, 4),
                         )

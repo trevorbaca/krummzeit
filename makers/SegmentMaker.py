@@ -12,8 +12,8 @@ class SegmentMaker(makertools.SegmentMaker):
     ### CLASS ATTRIBUTES ###
 
     __slots__ = (
+        '_music_handlers',
         '_music_makers',
-        '_pitch_handlers',
         '_score',
         '_stages',
         'measures_per_stage',
@@ -37,7 +37,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._initialize_music_makers(music_makers)
         self.measures_per_stage = measures_per_stage
         self.name = name
-        self._pitch_handlers = []
+        self._music_handlers = []
         self._initialize_time_signatures(time_signatures)
         self.tempo_map = tempo_map
 
@@ -54,7 +54,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._populate_time_signature_context()
         self._annotate_stages()
         self._interpret_music_makers()
-        self._interpret_pitch_handlers()
+        self._interpret_music_handlers()
         #self._transpose_instruments()
         self._attach_rehearsal_mark()
         score_block = self.lilypond_file['score']
@@ -183,15 +183,22 @@ class SegmentMaker(makertools.SegmentMaker):
                     logical_ties.append(logical_tie)
         return logical_ties
 
+    def _interpret_music_handler(self, music_handler):
+        raise NotImplementedError
+
     def _interpret_pitch_handler(self, pitch_handler):
         compound_scope = pitch_handler.scope
         logical_ties = self._compound_scope_to_logical_ties(compound_scope)
         for specifier in pitch_handler.specifiers:
             specifier(logical_ties)
 
-    def _interpret_pitch_handlers(self):
-        for pitch_handler in self.pitch_handlers:
-            self._interpret_pitch_handler(pitch_handler)
+    def _interpret_music_handlers(self):
+        from krummzeit import makers
+        for music_handler in self.music_handlers:
+            if isinstance(music_handler, makers.PitchHandler):
+                self._interpret_pitch_handler(music_handler)
+            else:
+                self._interpret_music_handler(music_handler)
 
     def _initialize_music_makers(self, music_makers):
         from krummzeit import makers
@@ -338,12 +345,12 @@ class SegmentMaker(makertools.SegmentMaker):
         return self._music_makers
     
     @property
-    def pitch_handlers(self):
-        r'''Gets segment-maker's pitch-handlers.
+    def music_handlers(self):
+        r'''Gets segment-maker's music-handlers.
 
-        Returns tuples of pitch-handlers.
+        Returns tuples of music-handlers.
         '''
-        return tuple(self._pitch_handlers)
+        return tuple(self._music_handlers)
 
     @property
     def stage_count(self):
@@ -425,7 +432,7 @@ class SegmentMaker(makertools.SegmentMaker):
             scope=scope,
             specifiers=[pitch_specifier],
             )
-        self._pitch_handlers.append(pitch_handler)
+        self._music_handlers.append(pitch_handler)
         return pitch_handler
 
     def validate_time_signatures(self):

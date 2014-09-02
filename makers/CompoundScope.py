@@ -21,19 +21,19 @@ class CompoundScope(abctools.AbjadObject):
 
             >>> print(format(scope, 'storage'))
             krummzeit.makers.CompoundScope(
-                krummzeit.makers.Scope(
+                krummzeit.makers.SimpleScope(
                     context_name='Piano Music Voice',
                     stages=(5, 9),
                     ),
-                krummzeit.makers.Scope(
+                krummzeit.makers.SimpleScope(
                     context_name='Clarinet Music Voice',
                     stages=(7, 12),
                     ),
-                krummzeit.makers.Scope(
+                krummzeit.makers.SimpleScope(
                     context_name='Violin Music Voice',
                     stages=(8, 12),
                     ),
-                krummzeit.makers.Scope(
+                krummzeit.makers.SimpleScope(
                     context_name='Oboe Music Voice',
                     stages=(9, 12),
                     )
@@ -56,17 +56,17 @@ class CompoundScope(abctools.AbjadObject):
         self._context_names = []
         scopes_ = []
         for scope in scopes:
-            if isinstance(scope, makers.Scope):
+            if isinstance(scope, makers.SimpleScope):
                 scopes_.append(scope)
             elif isinstance(scope, tuple):
                 assert len(scope) == 2, repr(scope)
                 if isinstance(scope[0], str):
-                    scope = makers.Scope(*scope)
+                    scope = makers.SimpleScope(*scope)
                     scopes_.append(scope)
                 elif isinstance(scope[0], (list, tuple)):
                     stages = scope[-1]
                     for context_name in scope[0]:
-                        scope_ = makers.Scope(context_name, stages)
+                        scope_ = makers.SimpleScope(context_name, stages)
                         scopes_.append(scope_)
         self._scopes = tuple(scopes_)
         self._timespan_map = None

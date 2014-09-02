@@ -479,7 +479,7 @@ pitch_handler = segment_maker.make_pitch_handler(
 #    stages=(1, 4),
 #    context_name=pf,
 #    specifiers=[
-#        makers.RegisterSpecifier(
+#        makers.RegistrationSpecifier(
 #            indictor=[0, 0, 0, 0, 0, 0, 0, 0, -1, 1, 1, 1],
 #        ],
 #    )

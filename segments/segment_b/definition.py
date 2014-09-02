@@ -453,24 +453,25 @@ indigo_pitch_classes = materials.indigo_pitch_classes.manifest_payload
 
 ### hpschd, cl, vn [B1-4] pcs ###
 pitch_handler = segment_maker.make_pitch_handler(
-    stages=(1, 4),
-    context_names=[pf, cl, vn],
     pitch_specifier=makers.PitchSpecifier(
-        reverse=True,
         source=indigo_pitch_classes,    
         start_index=0,
         ),
+    scope=makers.CompoundScope(([pf, cl, vn], (1, 4))),
     )
 
 ### hpschd, cl, vn [B5-9] pcs ###
 pitch_handler = segment_maker.make_pitch_handler(
-    stages=(5, 9),
-    context_names=[pf, cl, vn],
     pitch_specifier=makers.PitchSpecifier(
         operators=[pitchtools.Transposition(1)],
-        reverse=True,
         source=indigo_pitch_classes,    
         start_index=0,
+        ),
+    scope=makers.CompoundScope(
+        (pf, (5, 10)),
+        (cl, (7, 12)),
+        (vn, (8, 13)),
+        (ob, (9, 13)),
         ),
     )
 

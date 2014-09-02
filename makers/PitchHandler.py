@@ -52,6 +52,8 @@ class PitchHandler(abctools.AbjadObject):
         specifiers=None,
         ):
         from krummzeit import makers
+        if isinstance(scope, tuple):
+            scope = makers.CompoundScope(scope)
         if scope is not None:
             assert isinstance(scope, makers.CompoundScope), repr(scope)
         self._scope = scope

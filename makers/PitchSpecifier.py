@@ -39,6 +39,7 @@ class PitchSpecifier(abctools.AbjadObject):
         '_reverse',
         '_source',
         '_start_index',
+        '_use_exact_spelling',
         )
 
     ### INITIALIZER ###
@@ -56,7 +57,13 @@ class PitchSpecifier(abctools.AbjadObject):
         self._operators = operators
         assert isinstance(reverse, bool), repr(reverse)
         self._reverse = reverse
+        if isinstance(source, str):
+            self._use_exact_spelling = True
+        else:
+            self._use_exact_spelling = False
         if source is not None:
+            if isinstance(source, str):
+                source = source.split()
             source = [pitchtools.NamedPitch(_) for _ in source]
             source = datastructuretools.CyclicTuple(source)
         self._source = source
@@ -81,8 +88,12 @@ class PitchSpecifier(abctools.AbjadObject):
                 if self.operators:
                     for operator_ in self.operators:
                         pitch_class = operator_(pitch_class)
-                pitch_class = pitchtools.NumberedPitchClass(pitch_class)
-                pitch = pitchtools.NamedPitch(pitch_class)
+                if self._use_exact_spelling:
+                    pitch = pitch_class
+                    assert isinstance(pitch, pitchtools.NamedPitch), pitch
+                else:
+                    pitch_class = pitchtools.NumberedPitchClass(pitch_class)
+                    pitch = pitchtools.NamedPitch(pitch_class)
                 for note in logical_tie:
                     note.written_pitch = pitch
         else:

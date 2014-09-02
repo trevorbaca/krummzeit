@@ -7,164 +7,43 @@ class RegistrationTransitionSpecifier(abctools.AbjadObject):
 
     ..  container:: example
 
-        **Example 1.** Start at the octave of C4; then transition to the octave
-        of C5 over the entire duration of the passage:
+        Starts at the octave of C4 and then transitions to the octave of C5:
 
         ::
 
             >>> import krummzeit
             >>> specifier = krummzeit.makers.RegistrationTransitionSpecifier(
-            ...     registrations=[
-            ...         pitchtools.Registration(
-            ...             [('[A0, C8]', 0)],
-            ...             ),
-            ...         pitchtools.Registration(
-            ...             [('[A0, C8]', 12)],
-            ...             ),
-            ...         ],
+            ...     start_registration=pitchtools.Registration(
+            ...         [('[A0, C8]', 0)],
+            ...          ),
+            ...     stop_registration=pitchtools.Registration(
+            ...         [('[A0, C8]', 12)],
+            ...         ),
             ...     )
 
         ::
             
             >>> print(format(specifier))
             krummzeit.makers.RegistrationTransitionSpecifier(
-                registrations=(
-                    pitchtools.Registration(
-                        [
-                            pitchtools.RegistrationComponent(
-                                source_pitch_range=pitchtools.PitchRange(
-                                    range_string='[A0, C8]',
-                                    ),
-                                target_octave_start_pitch=pitchtools.NumberedPitch(0),
+                start_registration=pitchtools.Registration(
+                    [
+                        pitchtools.RegistrationComponent(
+                            source_pitch_range=pitchtools.PitchRange(
+                                range_string='[A0, C8]',
                                 ),
-                            ]
-                        ),
-                    pitchtools.Registration(
-                        [
-                            pitchtools.RegistrationComponent(
-                                source_pitch_range=pitchtools.PitchRange(
-                                    range_string='[A0, C8]',
-                                    ),
-                                target_octave_start_pitch=pitchtools.NumberedPitch(12),
-                                ),
-                            ]
-                        ),
+                            target_octave_start_pitch=pitchtools.NumberedPitch(0),
+                            ),
+                        ]
                     ),
-                )
-
-    ..  container:: example
-
-        **Example 2.** Start at the octave of C4; then transition to the octave
-        of C5 over the first half of the passage; then remain at the octave of
-        C5 for the second half of the passage:
-
-        ::
-
-            >>> specifier = krummzeit.makers.RegistrationTransitionSpecifier(
-            ...     fractions=[Fraction(1, 2)],
-            ...     registrations=[
-            ...         pitchtools.Registration(
-            ...             [('[A0, C8]', 0)],
-            ...             ),
-            ...         pitchtools.Registration(
-            ...             [('[A0, C8]', 12)],
-            ...             ),
-            ...         ],
-            ...     )
-
-        ::
-            
-            >>> print(format(specifier))
-            krummzeit.makers.RegistrationTransitionSpecifier(
-                fractions=(
-                    Fraction(1, 2),
-                    ),
-                registrations=(
-                    pitchtools.Registration(
-                        [
-                            pitchtools.RegistrationComponent(
-                                source_pitch_range=pitchtools.PitchRange(
-                                    range_string='[A0, C8]',
-                                    ),
-                                target_octave_start_pitch=pitchtools.NumberedPitch(0),
+                stop_registration=pitchtools.Registration(
+                    [
+                        pitchtools.RegistrationComponent(
+                            source_pitch_range=pitchtools.PitchRange(
+                                range_string='[A0, C8]',
                                 ),
-                            ]
-                        ),
-                    pitchtools.Registration(
-                        [
-                            pitchtools.RegistrationComponent(
-                                source_pitch_range=pitchtools.PitchRange(
-                                    range_string='[A0, C8]',
-                                    ),
-                                target_octave_start_pitch=pitchtools.NumberedPitch(12),
-                                ),
-                            ]
-                        ),
-                    ),
-                )
-
-    ..  container:: example
-
-        **Example 3.** Start at the octave of C4; 
-        then transition to the octave of C5 over the first half of the
-        passage; and then transition back to the octave of C4 over the second
-        half of the passage:
-
-        ::
-
-            >>> specifier = krummzeit.makers.RegistrationTransitionSpecifier(
-            ...     fractions=[Fraction(1, 2)],
-            ...     registrations=[
-            ...         pitchtools.Registration(
-            ...             [('[A0, C8]', 0)],
-            ...             ),
-            ...         pitchtools.Registration(
-            ...             [('[A0, C8]', 12)],
-            ...             ),
-            ...         pitchtools.Registration(
-            ...             [('[A0, C8]', 0)],
-            ...             ),
-            ...         ],
-            ...     )
-
-        ::
-            
-            >>> print(format(specifier))
-            krummzeit.makers.RegistrationTransitionSpecifier(
-                fractions=(
-                    Fraction(1, 2),
-                    ),
-                registrations=(
-                    pitchtools.Registration(
-                        [
-                            pitchtools.RegistrationComponent(
-                                source_pitch_range=pitchtools.PitchRange(
-                                    range_string='[A0, C8]',
-                                    ),
-                                target_octave_start_pitch=pitchtools.NumberedPitch(0),
-                                ),
-                            ]
-                        ),
-                    pitchtools.Registration(
-                        [
-                            pitchtools.RegistrationComponent(
-                                source_pitch_range=pitchtools.PitchRange(
-                                    range_string='[A0, C8]',
-                                    ),
-                                target_octave_start_pitch=pitchtools.NumberedPitch(12),
-                                ),
-                            ]
-                        ),
-                    pitchtools.Registration(
-                        [
-                            pitchtools.RegistrationComponent(
-                                source_pitch_range=pitchtools.PitchRange(
-                                    range_string='[A0, C8]',
-                                    ),
-                                target_octave_start_pitch=pitchtools.NumberedPitch(0),
-                                ),
-                            ]
-                        ),
+                            target_octave_start_pitch=pitchtools.NumberedPitch(12),
+                            ),
+                        ]
                     ),
                 )
 
@@ -173,84 +52,37 @@ class RegistrationTransitionSpecifier(abctools.AbjadObject):
     ### CLASS VARIABLES ##
 
     __slots__ = (
-        '_fractions',
-        '_registrations',
+        '_start_registration',
+        '_stop_registration',
         )
 
     ### INITIALIZER ###
 
     def __init__(
         self,
-        fractions=None,
-        registrations=None,
+        start_registration=None,
+        stop_registration=None,
         ):
-        from abjad.tools import pitchtools
-        if fractions is not None:
-            fractions = [Fraction(_) for _ in fractions]
-            fractions = tuple(fractions)
-        self._fractions = fractions
-        prototype = (type(None), pitchtools.Registration)
-        if registrations is not None:
-            registrations = tuple(registrations)
-            assert all(isinstance(_, prototype) for _ in registrations)
-        self._registrations = registrations
+        assert isinstance(start_registration, pitchtools.Registration)
+        assert isinstance(stop_registration, pitchtools.Registration)
+        assert len(start_registration) == len(stop_registration)
+        self._start_registration = start_registration
+        self._stop_registration = stop_registration
 
     ### PUBLIC PROPERTIES ###
 
     @property
-    def fractions(self):
-        r'''Gets fractions of registration transition specifier.
+    def start_registration(self):
+        r'''Gets start registration of registration transition specifier.
 
-        ..  container:: example
-
-            ::
-
-                >>> import krummzeit
-                >>> specifier = krummzeit.makers.RegistrationTransitionSpecifier(
-                ...     registrations=[
-                ...         pitchtools.Registration(
-                ...             [('[A0, C8]', 0)],
-                ...             ),
-                ...         pitchtools.Registration(
-                ...             [('[A0, C8]', 12)],
-                ...             ),
-                ...         ],
-                ...     )
-        
-            ::
-
-                >>> specifier.fractions is None
-                True
-
-        Set to fractions or none.
+        Set to registration.
         '''
-        return self._fractions
+        return self._start_registration
 
     @property
-    def registrations(self):
-        r'''Gets registrations of registration transition specifier.
+    def stop_registration(self):
+        r'''Gets stop registration of registration transition specifier.
 
-        ..  container:: example
-
-            ::
-
-                >>> import krummzeit
-                >>> specifier = krummzeit.makers.RegistrationTransitionSpecifier(
-                ...     registrations=[
-                ...         pitchtools.Registration(
-                ...             [('[A0, C8]', 0)],
-                ...             ),
-                ...         pitchtools.Registration(
-                ...             [('[A0, C8]', 12)],
-                ...             ),
-                ...         ],
-                ...     )
-
-            ::
-
-                >>> specifier.registrations
-                (Registration([('[A0, C8]', 0)]), Registration([('[A0, C8]', 12)]))
-
-        Set to registrations or none.
+        Set to registration.
         '''
-        return self._registrations
+        return self._stop_registration

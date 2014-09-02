@@ -164,29 +164,28 @@ class SegmentMaker(makertools.SegmentMaker):
         for voice in iterate(self._score).by_class(scoretools.Voice):
             self._make_music_for_voice(voice)
 
-    def _interpret_pitch_handler(self, pitch_handler):
-        start_stage, stop_stage = pitch_handler.stages
-        result = self._get_offsets(start_stage, stop_stage)
-        stage_start_offset, stage_stop_offset = result
-        notes = []
-        for note in iterate(self._score).by_timeline(Note):
-            if isinstance(note, scoretools.Skip):
-                continue
-            voice = inspect_(note).get_parentage().get_first(Voice)
-            assert isinstance(voice, Voice), repr(voice)
-            if voice.name not in pitch_handler.context_names:
-                continue
-            timespan = inspect_(note).get_timespan()
-            note_start_offset = timespan.start_offset
-            note_stop_offset = timespan.stop_offset
-            if (stage_start_offset <= note_start_offset and
-                note_stop_offset < stage_stop_offset):
-                notes.append(note)
+    def _compound_scope_to_logical_ties(self, compound_scope):
+        from krummzeit import makers
+        timespan_map = []
+        for scope in compound_scope.scopes:
+            start_stage, stop_stage = scope.stages
+            offsets = self._get_offsets(start_stage, stop_stage)
+            timespan = timespantools.Timespan(*offsets)
+            timespan_map.append((scope.context_name, timespan))
+        compound_scope._timespan_map = timespan_map
+        context_names = [_[0] for _ in timespan_map]
+        compound_scope._contex_names = tuple(context_names)
         logical_ties = []
-        for note in notes:
-            logical_tie = inspect_(note).get_logical_tie()
-            if logical_tie.head is note:
-                logical_ties.append(logical_tie)
+        for note in iterate(self._score).by_timeline(Note):
+            if note in compound_scope:
+                logical_tie = inspect_(note).get_logical_tie()
+                if logical_tie.head is note:
+                    logical_ties.append(logical_tie)
+        return logical_ties
+
+    def _interpret_pitch_handler(self, pitch_handler):
+        compound_scope = pitch_handler.scope
+        logical_ties = self._compound_scope_to_logical_ties(compound_scope)
         for specifier in pitch_handler.specifiers:
             specifier(logical_ties)
 

@@ -391,6 +391,19 @@ class SegmentMaker(makertools.SegmentMaker):
         message = message.format(context_name, stage)
         raise KeyError(message)
 
+    def make_music_handler(self, scope, specifier):
+        r'''Makes music-handler.
+
+        Returns music-handler.
+        '''
+        from krummzeit import makers
+        music_handler = makers.MusicHandler(
+            scope=scope,
+            specifier=specifier,
+            )
+        self._music_handlers.append(music_handler)
+        return music_handler
+
     def make_music_maker(self):
         r'''Makes music-maker and appends music-maker to segment-maker's list
         of music-makers.

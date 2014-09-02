@@ -66,23 +66,35 @@ class PitchSpecifier(abctools.AbjadObject):
     ### SPECIAL METHODS ###
 
     def __call__(self, logical_ties, timespan):
-        source_length = len(self.source)
-        if 0 <= self.start_index:
-            absolute_start_index = self.start_index
+        if self.source:
+            source_length = len(self.source)
+            if 0 <= self.start_index:
+                absolute_start_index = self.start_index
+            else:
+                absolute_start_index = \
+                    source_length - abs(self.start_index) + 1
+            for i, logical_tie in enumerate(logical_ties):
+                if self.reverse:
+                    i = -(i + 1)
+                index = absolute_start_index + i
+                pitch_class = self.source[index]
+                if self.operators:
+                    for operator_ in self.operators:
+                        pitch_class = operator_(pitch_class)
+                pitch_class = pitchtools.NumberedPitchClass(pitch_class)
+                pitch = pitchtools.NamedPitch(pitch_class)
+                for note in logical_tie:
+                    note.written_pitch = pitch
         else:
-            absolute_start_index = source_length - abs(self.start_index) + 1
-        for i, logical_tie in enumerate(logical_ties):
-            if self.reverse:
-                i = -(i + 1)
-            index = absolute_start_index + i
-            pitch_class = self.source[index]
-            if self.operators:
-                for operator_ in self.operators:
-                    pitch_class = operator_(pitch_class)
-            pitch_class = pitchtools.NumberedPitchClass(pitch_class)
-            pitch = pitchtools.NamedPitch(pitch_class)
-            for note in logical_tie:
-                note.written_pitch = pitch
+            assert self.operators, repr(self.operators)
+            for logical_tie in logical_ties:
+                for note in logical_tie:
+                    for operator_ in self.operators:
+                        written_pitch = note.written_pitch
+                        pitch_class = written_pitch.numbered_pitch_class
+                        pitch_class = operator_(pitch_class)
+                        written_pitch = pitchtools.NamedPitch(pitch_class)
+                        note.written_pitch = written_pitch
 
     ### PRIVATE PROPERTIES ###
 

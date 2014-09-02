@@ -59,7 +59,7 @@ class RegistrationSpecifier(abctools.AbjadObject):
 
     ### SPECIAL METHODS ###
 
-    def __call__(self, logical_ties):
+    def __call__(self, logical_ties, timespan):
         for logical_tie in logical_ties:
             for note in logical_tie:
                 written_pitch = self.registration([note.written_pitch])

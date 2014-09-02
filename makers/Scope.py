@@ -23,7 +23,6 @@ class Scope(abctools.AbjadObject):
                 stages=(1, 9),
                 )
 
-    All properties can be configured at or after initialization.
     '''
 
     ### CLASS VARIABLES ###
@@ -40,6 +39,8 @@ class Scope(abctools.AbjadObject):
         context_names=None,
         stages=None,
         ):
+        if isinstance(context_names, str):
+            context_names = (context_names,)
         if context_names is not None:
             context_names = tuple(context_names)
             assert all(isinstance(_, str) for _ in context_names)

@@ -92,6 +92,8 @@ class PitchSpecifier(abctools.AbjadObject):
                 >>> import krummzeit
                 >>> handler = krummzeit.makers.PitchSpecifier(
                 ...     operators_=[
+                ...         pitchtools.Inversion(),
+                ...         pitchtools.Transposition(2),
                 ...         ],
                 ...     source=[7, 1, 3, 4, 5, 11],
                 ...     )
@@ -99,7 +101,7 @@ class PitchSpecifier(abctools.AbjadObject):
             ::
 
                 >>> handler.operators_
-                ()
+                (Inversion(), Transposition(index=2))
 
         Set to operators or none.
         '''

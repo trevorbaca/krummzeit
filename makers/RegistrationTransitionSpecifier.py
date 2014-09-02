@@ -15,10 +15,10 @@ class RegistrationTransitionSpecifier(abctools.AbjadObject):
             >>> import krummzeit
             >>> specifier = krummzeit.makers.RegistrationTransitionSpecifier(
             ...     registrations=[
-            ...         pitchtools.OctaveTranspositionMapping(
+            ...         pitchtools.Registration(
             ...             [('[A0, C8]', 0)],
             ...             ),
-            ...         pitchtools.OctaveTranspositionMapping(
+            ...         pitchtools.Registration(
             ...             [('[A0, C8]', 12)],
             ...             ),
             ...         ],
@@ -29,9 +29,9 @@ class RegistrationTransitionSpecifier(abctools.AbjadObject):
             >>> print(format(specifier))
             krummzeit.makers.RegistrationTransitionSpecifier(
                 registrations=(
-                    pitchtools.OctaveTranspositionMapping(
+                    pitchtools.Registration(
                         [
-                            pitchtools.OctaveTranspositionMappingComponent(
+                            pitchtools.RegistrationComponent(
                                 source_pitch_range=pitchtools.PitchRange(
                                     range_string='[A0, C8]',
                                     ),
@@ -39,9 +39,9 @@ class RegistrationTransitionSpecifier(abctools.AbjadObject):
                                 ),
                             ]
                         ),
-                    pitchtools.OctaveTranspositionMapping(
+                    pitchtools.Registration(
                         [
-                            pitchtools.OctaveTranspositionMappingComponent(
+                            pitchtools.RegistrationComponent(
                                 source_pitch_range=pitchtools.PitchRange(
                                     range_string='[A0, C8]',
                                     ),
@@ -63,10 +63,10 @@ class RegistrationTransitionSpecifier(abctools.AbjadObject):
             >>> specifier = krummzeit.makers.RegistrationTransitionSpecifier(
             ...     fractions=[Fraction(1, 2)],
             ...     registrations=[
-            ...         pitchtools.OctaveTranspositionMapping(
+            ...         pitchtools.Registration(
             ...             [('[A0, C8]', 0)],
             ...             ),
-            ...         pitchtools.OctaveTranspositionMapping(
+            ...         pitchtools.Registration(
             ...             [('[A0, C8]', 12)],
             ...             ),
             ...         ],
@@ -80,9 +80,9 @@ class RegistrationTransitionSpecifier(abctools.AbjadObject):
                     Fraction(1, 2),
                     ),
                 registrations=(
-                    pitchtools.OctaveTranspositionMapping(
+                    pitchtools.Registration(
                         [
-                            pitchtools.OctaveTranspositionMappingComponent(
+                            pitchtools.RegistrationComponent(
                                 source_pitch_range=pitchtools.PitchRange(
                                     range_string='[A0, C8]',
                                     ),
@@ -90,9 +90,9 @@ class RegistrationTransitionSpecifier(abctools.AbjadObject):
                                 ),
                             ]
                         ),
-                    pitchtools.OctaveTranspositionMapping(
+                    pitchtools.Registration(
                         [
-                            pitchtools.OctaveTranspositionMappingComponent(
+                            pitchtools.RegistrationComponent(
                                 source_pitch_range=pitchtools.PitchRange(
                                     range_string='[A0, C8]',
                                     ),
@@ -115,13 +115,13 @@ class RegistrationTransitionSpecifier(abctools.AbjadObject):
             >>> specifier = krummzeit.makers.RegistrationTransitionSpecifier(
             ...     fractions=[Fraction(1, 2)],
             ...     registrations=[
-            ...         pitchtools.OctaveTranspositionMapping(
+            ...         pitchtools.Registration(
             ...             [('[A0, C8]', 0)],
             ...             ),
-            ...         pitchtools.OctaveTranspositionMapping(
+            ...         pitchtools.Registration(
             ...             [('[A0, C8]', 12)],
             ...             ),
-            ...         pitchtools.OctaveTranspositionMapping(
+            ...         pitchtools.Registration(
             ...             [('[A0, C8]', 0)],
             ...             ),
             ...         ],
@@ -135,9 +135,9 @@ class RegistrationTransitionSpecifier(abctools.AbjadObject):
                     Fraction(1, 2),
                     ),
                 registrations=(
-                    pitchtools.OctaveTranspositionMapping(
+                    pitchtools.Registration(
                         [
-                            pitchtools.OctaveTranspositionMappingComponent(
+                            pitchtools.RegistrationComponent(
                                 source_pitch_range=pitchtools.PitchRange(
                                     range_string='[A0, C8]',
                                     ),
@@ -145,9 +145,9 @@ class RegistrationTransitionSpecifier(abctools.AbjadObject):
                                 ),
                             ]
                         ),
-                    pitchtools.OctaveTranspositionMapping(
+                    pitchtools.Registration(
                         [
-                            pitchtools.OctaveTranspositionMappingComponent(
+                            pitchtools.RegistrationComponent(
                                 source_pitch_range=pitchtools.PitchRange(
                                     range_string='[A0, C8]',
                                     ),
@@ -155,9 +155,9 @@ class RegistrationTransitionSpecifier(abctools.AbjadObject):
                                 ),
                             ]
                         ),
-                    pitchtools.OctaveTranspositionMapping(
+                    pitchtools.Registration(
                         [
-                            pitchtools.OctaveTranspositionMappingComponent(
+                            pitchtools.RegistrationComponent(
                                 source_pitch_range=pitchtools.PitchRange(
                                     range_string='[A0, C8]',
                                     ),
@@ -189,7 +189,7 @@ class RegistrationTransitionSpecifier(abctools.AbjadObject):
             fractions = [Fraction(_) for _ in fractions]
             fractions = tuple(fractions)
         self._fractions = fractions
-        prototype = (type(None), pitchtools.OctaveTranspositionMapping)
+        prototype = (type(None), pitchtools.Registration)
         if registrations is not None:
             registrations = tuple(registrations)
             assert all(isinstance(_, prototype) for _ in registrations)
@@ -208,10 +208,10 @@ class RegistrationTransitionSpecifier(abctools.AbjadObject):
                 >>> import krummzeit
                 >>> specifier = krummzeit.makers.RegistrationTransitionSpecifier(
                 ...     registrations=[
-                ...         pitchtools.OctaveTranspositionMapping(
+                ...         pitchtools.Registration(
                 ...             [('[A0, C8]', 0)],
                 ...             ),
-                ...         pitchtools.OctaveTranspositionMapping(
+                ...         pitchtools.Registration(
                 ...             [('[A0, C8]', 12)],
                 ...             ),
                 ...         ],
@@ -237,10 +237,10 @@ class RegistrationTransitionSpecifier(abctools.AbjadObject):
                 >>> import krummzeit
                 >>> specifier = krummzeit.makers.RegistrationTransitionSpecifier(
                 ...     registrations=[
-                ...         pitchtools.OctaveTranspositionMapping(
+                ...         pitchtools.Registration(
                 ...             [('[A0, C8]', 0)],
                 ...             ),
-                ...         pitchtools.OctaveTranspositionMapping(
+                ...         pitchtools.Registration(
                 ...             [('[A0, C8]', 12)],
                 ...             ),
                 ...         ],
@@ -249,7 +249,7 @@ class RegistrationTransitionSpecifier(abctools.AbjadObject):
             ::
 
                 >>> specifier.registrations
-                (OctaveTranspositionMapping([('[A0, C8]', 0)]), OctaveTranspositionMapping([('[A0, C8]', 12)]))
+                (Registration([('[A0, C8]', 0)]), Registration([('[A0, C8]', 12)]))
 
         Set to registrations or none.
         '''

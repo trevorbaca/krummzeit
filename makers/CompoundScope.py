@@ -22,19 +22,19 @@ class CompoundScope(abctools.AbjadObject):
             >>> print(format(scope, 'storage'))
             krummzeit.makers.CompoundScope(
                 krummzeit.makers.Scope(
-                    context_names=('Piano Music Voice',),
+                    context_name='Piano Music Voice',
                     stages=(5, 9),
                     ),
                 krummzeit.makers.Scope(
-                    context_names=('Clarinet Music Voice',),
+                    context_name='Clarinet Music Voice',
                     stages=(7, 12),
                     ),
                 krummzeit.makers.Scope(
-                    context_names=('Violin Music Voice',),
+                    context_name='Violin Music Voice',
                     stages=(8, 12),
                     ),
                 krummzeit.makers.Scope(
-                    context_names=('Oboe Music Voice',),
+                    context_name='Oboe Music Voice',
                     stages=(9, 12),
                     )
                 )
@@ -44,19 +44,46 @@ class CompoundScope(abctools.AbjadObject):
     ### CLASS VARIABLES ###
 
     __slots__ = (
+        '_context_names',
         '_scopes',
+        '_timespan_map',
         )
 
     ### INITIALIZER ###
 
     def __init__(self, *scopes):
         from krummzeit import makers
+        self._context_names = []
         scopes_ = []
         for scope in scopes:
-            scope = makers.Scope(*scope)
-            scopes_.append(scope)
-        scopes_ = tuple(scopes_)
-        self._scopes = scopes_
+            if isinstance(scope, makers.Scope):
+                scopes_.append(scope)
+            elif isinstance(scope, tuple):
+                assert len(scope) == 2, repr(scope)
+                if isinstance(scope[0], str):
+                    scope = makers.Scope(*scope)
+                    scopes_.append(scope)
+                elif isinstance(scope[0], (list, tuple)):
+                    stages = scope[-1]
+                    for context_name in scope[0]:
+                        scope_ = makers.Scope(context_name, stages)
+                        scopes_.append(scope_)
+        self._scopes = tuple(scopes_)
+        self._timespan_map = None
+
+    ### SPECIAL METHODS ###
+
+    def __contains__(self, component):
+        if self._timespan_map is None:
+            message = 'must construct timespan map first.'
+            raise Exception(message)
+        voice = inspect_(component).get_parentage().get_first(Voice)
+        component_timespan = inspect_(component).get_timespan()
+        for context_name, scope_timespan in self._timespan_map:
+            if context_name == voice.name:
+                if component_timespan.starts_during(scope_timespan):
+                    return True
+        return False
 
     ### PRIVATE PROPERTIES ###
     

@@ -11,15 +11,15 @@ class Scope(abctools.AbjadObject):
 
             >>> from krummzeit import makers
             >>> scope = makers.Scope(
+            ...     context_name='Violin Music Voice',
             ...     stages=(1, 9),
-            ...     context_names=['Viola Music Voice', 'Cello Music Voice'],
             ...     )
 
         ::
 
             >>> print(format(scope, 'storage'))
             krummzeit.makers.Scope(
-                context_names=('Viola Music Voice', 'Cello Music Voice'),
+                context_name='Violin Music Voice',
                 stages=(1, 9),
                 )
 
@@ -28,7 +28,7 @@ class Scope(abctools.AbjadObject):
     ### CLASS VARIABLES ###
 
     __slots__ = (
-        '_context_names',
+        '_context_name',
         '_stages',
         )
 
@@ -36,15 +36,12 @@ class Scope(abctools.AbjadObject):
 
     def __init__(
         self,
-        context_names=None,
+        context_name=None,
         stages=None,
         ):
-        if isinstance(context_names, str):
-            context_names = (context_names,)
-        if context_names is not None:
-            context_names = tuple(context_names)
-            assert all(isinstance(_, str) for _ in context_names)
-        self._context_names = context_names
+        if context_name is not None:
+            assert isinstance(context_name, str), repr(context_name)
+        self._context_name = context_name
         if isinstance(stages, int):
             stages = (stages, stages)
         if stages is not None:
@@ -55,12 +52,12 @@ class Scope(abctools.AbjadObject):
     ### PUBLIC PROPERTIES ###
 
     @property
-    def context_names(self):
-        r'''Gets context names of scope.
+    def context_name(self):
+        r'''Gets context name of scope.
 
-        Set to strings or none.
+        Set to string or none.
         '''
-        return self._context_names
+        return self._context_name
 
     @property
     def stages(self):

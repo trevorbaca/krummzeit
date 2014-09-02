@@ -13,6 +13,7 @@ class SegmentMaker(makertools.SegmentMaker):
 
     __slots__ = (
         '_music_makers',
+        '_pitch_handlers',
         '_score',
         '_stages',
         'measures_per_stage',
@@ -36,6 +37,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._initialize_music_makers(music_makers)
         self.measures_per_stage = measures_per_stage
         self.name = name
+        self._pitch_handlers = []
         self._initialize_time_signatures(time_signatures)
         self.tempo_map = tempo_map
 
@@ -51,7 +53,9 @@ class SegmentMaker(makertools.SegmentMaker):
         self._configure_lilypond_file()
         self._populate_time_signature_context()
         self._annotate_stages()
-        self._handle_music_makers()
+        self._interpret_music_makers()
+        self._interpret_pitch_handlers()
+        #self._transpose_instruments()
         self._attach_rehearsal_mark()
         score_block = self.lilypond_file['score']
         score = score_block['Krummzeit Score']
@@ -124,6 +128,20 @@ class SegmentMaker(makertools.SegmentMaker):
                 music_makers.append(music_maker)
         return music_makers
 
+    def _get_offsets(self, start_stage, stop_stage):
+        context = self._score['Time Signature Context']
+        result = self._stage_number_to_measure_indices(start_stage)
+        start_measure_index, stop_measure_index = result
+        start_measure = context[start_measure_index]
+        assert isinstance(start_measure, Measure), start_measure
+        start_offset = inspect_(start_measure).get_timespan().start_offset
+        result = self._stage_number_to_measure_indices(stop_stage)
+        start_measure_index, stop_measure_index = result
+        stop_measure = context[stop_measure_index]
+        assert isinstance(stop_measure, Measure), stop_measure
+        stop_offset = inspect_(stop_measure).get_timespan().stop_offset
+        return start_offset, stop_offset
+
     def _get_time_signatures(self, start_stage=None, stop_stage=None):
         counts = len(self.time_signatures), sum(self.measures_per_stage)
         assert counts[0] == counts[1], counts
@@ -140,11 +158,41 @@ class SegmentMaker(makertools.SegmentMaker):
             time_signatures = sequencetools.flatten_sequence(stages)
         return time_signatures
 
-    def _handle_music_makers(self):
+    def _interpret_music_makers(self):
         self._make_music_for_time_signature_context()
         self._attach_tempo_indicators()
         for voice in iterate(self._score).by_class(scoretools.Voice):
             self._make_music_for_voice(voice)
+
+    def _interpret_pitch_handler(self, pitch_handler):
+        start_stage, stop_stage = pitch_handler.stages
+        result = self._get_offsets(start_stage, stop_stage)
+        stage_start_offset, stage_stop_offset = result
+        notes = []
+        for note in iterate(self._score).by_timeline(Note):
+            if isinstance(note, scoretools.Skip):
+                continue
+            voice = inspect_(note).get_parentage().get_first(Voice)
+            assert isinstance(voice, Voice), repr(voice)
+            if voice.name not in pitch_handler.context_names:
+                continue
+            timespan = inspect_(note).get_timespan()
+            note_start_offset = timespan.start_offset
+            note_stop_offset = timespan.stop_offset
+            if (stage_start_offset <= note_start_offset and
+                note_stop_offset < stage_stop_offset):
+                notes.append(note)
+        logical_ties = []
+        for note in notes:
+            logical_tie = inspect_(note).get_logical_tie()
+            if logical_tie.head is note:
+                logical_ties.append(logical_tie)
+        for specifier in pitch_handler.specifiers:
+            specifier(logical_ties)
+
+    def _interpret_pitch_handlers(self):
+        for pitch_handler in self.pitch_handlers:
+            self._interpret_pitch_handler(pitch_handler)
 
     def _initialize_music_makers(self, music_makers):
         from krummzeit import makers
@@ -262,6 +310,17 @@ class SegmentMaker(makertools.SegmentMaker):
             stage_numbers.extend(stage_numbers_)
         return len(stage_numbers) == len(set(stage_numbers))
 
+    # TODO: implement xylophone
+    def _transpose_instruments(self):
+        clarinet_voice = self._score['Clarinet Music Voice']
+        for leaf in iterate(clarinet_voice).by_class(scoretools.Leaf):
+            if not isinstance(leaf, (Note, Chord)):
+                continue
+            inspector = inspect_(leaf)
+            instrument = inspector.get_effective(instrumenttools.Instrument)
+            assert isinstance(instrument, instrumenttools.Instrument)
+            instrument.transpose_from_written_pitch_to_sounding_pitch(leaf)
+
     ### PUBLIC PROPERTIES ###
 
     @property
@@ -274,11 +333,19 @@ class SegmentMaker(makertools.SegmentMaker):
 
     @property
     def music_makers(self):
-        r'''Gets segment-maker's music makers.
+        r'''Gets segment-maker's music-makers.
 
         Returns tuple of music-makers.
         '''
         return self._music_makers
+    
+    @property
+    def pitch_handlers(self):
+        r'''Gets segment-maker's pitch-handlers.
+
+        Returns tuples of pitch-handlers.
+        '''
+        return tuple(self._pitch_handlers)
 
     @property
     def stage_count(self):
@@ -336,6 +403,21 @@ class SegmentMaker(makertools.SegmentMaker):
         music_maker = makers.MusicMaker()
         self.music_makers.append(music_maker)
         return music_maker
+
+    def make_pitch_handler(
+        self,
+        stages,
+        context_names,
+        pitch_specifier,
+        ):
+        from krummzeit import makers
+        pitch_handler = makers.PitchHandler(
+            stages=stages,
+            context_names=context_names,
+            specifiers=[pitch_specifier],
+            )
+        self._pitch_handlers.append(pitch_handler)
+        return pitch_handler
 
     def validate_time_signatures(self):
         r'''Is true when the sum of all measures per stage equals

@@ -158,6 +158,7 @@
         instrumentName = \markup { \hcenter-in #12 Oboe }
         shortInstrumentName = \markup { \hcenter-in #12 Ob. }
         \override TupletBracket.staff-padding = 5
+        \override Beam.positions = #'(-6 . -6)
     }
     \context {
         \Voice
@@ -228,6 +229,7 @@
             }
         }
         \override TupletBracket.staff-padding = 5
+        \override Beam.positions = #'(-6 . -6)
     }
     \context {
         \PianoStaff
@@ -254,6 +256,7 @@
         instrumentName = \markup { \hcenter-in #12 Piano }
         shortInstrumentName = \markup { \hcenter-in #12 Pf. }
         \override TupletBracket.staff-padding = 5
+        \override Beam.positions = #'(-6 . -6)
     }
     \context {
         \Voice
@@ -271,6 +274,7 @@
         shortInstrumentName = \markup { \hcenter-in #12 Perc. }
         \override TextScript.padding = 2.5
         \override TupletBracket.staff-padding = 5
+        \override Beam.positions = #'(-6 . -6)
     }
     \context {
         \PianoStaff
@@ -297,6 +301,7 @@
         instrumentName = \markup { \hcenter-in #12 Violin }
         shortInstrumentName = \markup { \hcenter-in #12 Vn. }
         \override TupletBracket.staff-padding = 5
+        \override Beam.positions = #'(-6 . -6)
     }
     \context {
         \Voice
@@ -314,6 +319,7 @@
         instrumentName = \markup { \hcenter-in #12 Viola }
         shortInstrumentName = \markup { \hcenter-in #12 Va. }
         \override TupletBracket.staff-padding = 2
+        \override Beam.positions = #'(-6 . -6)
     }
     \context {
         \Voice
@@ -330,6 +336,7 @@
         instrumentName = \markup { \hcenter-in #12 Cello }
         shortInstrumentName = \markup { \hcenter-in #12 Vc. }
         \override TupletBracket.staff-padding = 2
+        \override Beam.positions = #'(-6 . -6)
     }
     \context {
         \PianoStaff

@@ -86,16 +86,12 @@ class MusicMaker(abctools.AbjadObject):
             assert isinstance(time_signature, indicatortools.TimeSignature)
         music = self._make_rhythm(time_signatures)
         assert isinstance(music, (tuple, list, Voice)), repr(music)
-
         first_item = music[0]
         if isinstance(first_item, selectiontools.Selection):
             first_component = first_item[0]
         else:
             first_component = first_item
-        
-        #first_component = music[0][0]
         first_leaf = inspect_(first_component).get_leaf(0)
-
         prototype = instrumenttools.UntunedPercussion
         if (self.instrument is not None 
             and not isinstance(self.instrument, prototype)):

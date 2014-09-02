@@ -18,14 +18,16 @@ class PitchSpecifier(abctools.AbjadObject):
 
             >>> print(format(handler))
             krummzeit.makers.PitchSpecifier(
-                source=[
-                    pitchtools.NamedPitch("g'"),
-                    pitchtools.NamedPitch("cs'"),
-                    pitchtools.NamedPitch("ef'"),
-                    pitchtools.NamedPitch("e'"),
-                    pitchtools.NamedPitch("f'"),
-                    pitchtools.NamedPitch("b'"),
-                    ],
+                source=datastructuretools.CyclicTuple(
+                    [
+                        pitchtools.NamedPitch("g'"),
+                        pitchtools.NamedPitch("cs'"),
+                        pitchtools.NamedPitch("ef'"),
+                        pitchtools.NamedPitch("e'"),
+                        pitchtools.NamedPitch("f'"),
+                        pitchtools.NamedPitch("b'"),
+                        ]
+                    ),
                 )
 
     '''
@@ -33,7 +35,7 @@ class PitchSpecifier(abctools.AbjadObject):
     ### CLASS VARIABLES ###
 
     __slots__ = (
-        '_operators_',
+        '_operators',
         '_reverse',
         '_source',
         '_start_index',
@@ -43,23 +45,43 @@ class PitchSpecifier(abctools.AbjadObject):
 
     def __init__(
         self,
-        operators_=None,
+        operators=None,
         reverse=False,
         source=None,
         start_index=0,
         ):
         from abjad.tools import pitchtools
-        if operators_ is not None:
-            operators_ = tuple(operators_)
-        self._operators_ = operators_
+        if operators is not None:
+            operators = tuple(operators)
+        self._operators = operators
         assert isinstance(reverse, bool), repr(reverse)
         self._reverse = reverse
         if source is not None:
-            source = tuple(source)
             source = [pitchtools.NamedPitch(_) for _ in source]
+            source = datastructuretools.CyclicTuple(source)
         self._source = source
         assert isinstance(start_index, int), repr(start_index)
         self._start_index = start_index
+
+    ### SPECIAL METHODS ###
+
+    def __call__(self, logical_ties):
+        source_length = len(self.source)
+        if 0 <= self.start_index:
+            absolute_start_index = self.start_index
+        else:
+            absolute_start_index = source_length - abs(self.start_index) + 1
+        for i, logical_tie in enumerate(logical_ties):
+            if self.reverse:
+                i = -(i + 1)
+            index = absolute_start_index + i
+            pitch_class = self.source[index]
+            if self.operators:
+                for operator_ in self.operators:
+                    pitch_class = operator_(pitch_class)
+            pitch = pitchtools.NamedPitch(pitch_class)
+            for note in logical_tie:
+                note.written_pitch = pitch
 
     ### PRIVATE PROPERTIES ###
 
@@ -82,7 +104,7 @@ class PitchSpecifier(abctools.AbjadObject):
     ### PUBLIC PROPERTIES ###
 
     @property
-    def operators_(self):
+    def operators(self):
         r'''Gets operators of pitch-handler.
 
         ..  container:: example
@@ -91,7 +113,7 @@ class PitchSpecifier(abctools.AbjadObject):
 
                 >>> import krummzeit
                 >>> handler = krummzeit.makers.PitchSpecifier(
-                ...     operators_=[
+                ...     operators=[
                 ...         pitchtools.Inversion(),
                 ...         pitchtools.Transposition(2),
                 ...         ],
@@ -100,12 +122,12 @@ class PitchSpecifier(abctools.AbjadObject):
 
             ::
 
-                >>> handler.operators_
+                >>> handler.operators
                 (Inversion(), Transposition(index=2))
 
         Set to operators or none.
         '''
-        return self._operators_
+        return self._operators
 
     @property
     def reverse(self):

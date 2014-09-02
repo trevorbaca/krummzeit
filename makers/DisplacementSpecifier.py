@@ -47,7 +47,7 @@ class DisplacementSpecifier(abctools.AbjadObject):
 
     ### SPECIAL METHODS ###
 
-    def __call__(self, logical_ties):
+    def __call__(self, logical_ties, timespan):
         for i, logical_tie in enumerate(logical_ties):
             assert isinstance(logical_tie, selectiontools.LogicalTie)
             displacement = self.displacements[i]

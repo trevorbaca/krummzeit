@@ -65,7 +65,7 @@ class PitchSpecifier(abctools.AbjadObject):
 
     ### SPECIAL METHODS ###
 
-    def __call__(self, logical_ties):
+    def __call__(self, logical_ties, timespan):
         source_length = len(self.source)
         if 0 <= self.start_index:
             absolute_start_index = self.start_index

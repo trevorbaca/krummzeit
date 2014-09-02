@@ -166,12 +166,13 @@ class SegmentMaker(makertools.SegmentMaker):
 
     def _compound_scope_to_logical_ties(self, compound_scope):
         from krummzeit import makers
-        timespan_map = []
+        timespan_map, timespans = [], []
         for scope in compound_scope.scopes:
             start_stage, stop_stage = scope.stages
             offsets = self._get_offsets(start_stage, stop_stage)
             timespan = timespantools.Timespan(*offsets)
             timespan_map.append((scope.context_name, timespan))
+            timespans.append(timespan)
         compound_scope._timespan_map = timespan_map
         context_names = [_[0] for _ in timespan_map]
         compound_scope._context_names = tuple(context_names)
@@ -181,21 +182,29 @@ class SegmentMaker(makertools.SegmentMaker):
                 logical_tie = inspect_(note).get_logical_tie()
                 if logical_tie.head is note:
                     logical_ties.append(logical_tie)
-        return logical_ties
+        start_offset = min(_.start_offset for _ in timespans)
+        stop_offset = max(_.stop_offset for _ in timespans)
+        timespan = timespantools.Timespan(start_offset, stop_offset)
+        return logical_ties, timespan
 
     def _interpret_music_handler(self, music_handler):
         from krummzeit import makers
         simple_scope = music_handler.scope
         assert isinstance(simple_scope, makers.SimpleScope), simple_scope
         compound_scope = makers.CompoundScope(simple_scope)
-        logical_ties = self._compound_scope_to_logical_ties(compound_scope)
-        music_handler.specifier(logical_ties)
+        result = self._compound_scope_to_logical_ties(compound_scope)
+        logical_ties, timespan = result
+        if isinstance(music_handler.specifier, Clef):
+            attach(music_handler.specifier, logical_ties[0].head)
+        else:
+            music_handler.specifier(logical_ties, timespan)
 
     def _interpret_pitch_handler(self, pitch_handler):
         compound_scope = pitch_handler.scope
-        logical_ties = self._compound_scope_to_logical_ties(compound_scope)
+        result = self._compound_scope_to_logical_ties(compound_scope)
+        logical_ties, timespan = result
         for specifier in pitch_handler.specifiers:
-            specifier(logical_ties)
+            specifier(logical_ties, timespan)
 
     def _interpret_music_handlers(self):
         from krummzeit import makers
@@ -409,12 +418,31 @@ class SegmentMaker(makertools.SegmentMaker):
         Returns music-handler.
         '''
         from krummzeit import makers
-        music_handler = makers.MusicHandler(
-            scope=scope,
-            specifier=specifier,
-            )
-        self._music_handlers.append(music_handler)
-        return music_handler
+        assert isinstance(scope, tuple) and len(scope) == 2, repr(scope)
+        if isinstance(scope[0], str):
+            scopes = [scope]
+        elif isinstance(scope, (tuple, list)):
+            scopes = []
+            stages = scope[-1]
+            for context_name in scope[0]:
+                scope = (context_name, stages)
+                scopes.append(scope)
+        else:
+            message = 'must be string or tuple of strings: {!r}.'
+            message = message.format(scope)
+            raise TypeError(message)
+        music_handlers = []
+        for scope in scopes:
+            music_handler = makers.MusicHandler(
+                scope=scope,
+                specifier=specifier,
+                )
+            self._music_handlers.append(music_handler)
+            music_handlers.append(music_handler)
+        if len(music_handlers) == 1:
+            return music_handlers[0]
+        else:
+            return music_handlers
 
     def make_music_maker(self):
         r'''Makes music-maker and appends music-maker to segment-maker's list

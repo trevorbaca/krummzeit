@@ -2,8 +2,8 @@
 from abjad import *
 
 
-class RegisterSpecifier(abctools.AbjadObject):
-    r'''Register specifier.
+class RegistrationSpecifier(abctools.AbjadObject):
+    r'''Registration specifier.
 
     ..  container:: example
 
@@ -12,8 +12,8 @@ class RegisterSpecifier(abctools.AbjadObject):
         ::
 
             >>> import krummzeit
-            >>> specifier = krummzeit.makers.RegisterSpecifier(
-            ...     register=pitchtools.OctaveTranspositionMapping(
+            >>> specifier = krummzeit.makers.RegistrationSpecifier(
+            ...     registration=pitchtools.OctaveTranspositionMapping(
             ...         [('[A0, C4)', 15), ('[C4, C8)', 27)],
             ...         ),
             ...     )
@@ -21,8 +21,8 @@ class RegisterSpecifier(abctools.AbjadObject):
         ::
             
             >>> print(format(specifier, 'storage'))
-            krummzeit.makers.RegisterSpecifier(
-                register=pitchtools.OctaveTranspositionMapping(
+            krummzeit.makers.RegistrationSpecifier(
+                registration=pitchtools.OctaveTranspositionMapping(
                     [
                         pitchtools.OctaveTranspositionMappingComponent(
                             source_pitch_range=pitchtools.PitchRange(
@@ -45,33 +45,33 @@ class RegisterSpecifier(abctools.AbjadObject):
     ### CLASS VARIABLES ##
 
     __slots__ = (
-        '_register',
+        '_registration',
         )
 
     ### INITIALIZER ###
 
     def __init__(
         self,
-        register=None,
+        registration=None,
         ):
         from abjad.tools import pitchtools
         prototype = (type(None), pitchtools.OctaveTranspositionMapping)
-        assert isinstance(register, prototype), repr(register)
-        self._register = register
+        assert isinstance(registration, prototype), repr(registration)
+        self._registration = registration
 
     ### PUBLIC PROPERTIES ###
 
     @property
-    def register(self):
-        r'''Gets register of register specifier.
+    def registration(self):
+        r'''Gets registration of registration specifier.
 
         ..  container:: example
 
             ::
 
-                >>> specifier.register
+                >>> specifier.registration
                 OctaveTranspositionMapping([('[A0, C4)', 15), ('[C4, C8)', 27)])
 
         Set to octave transposition mapping or none.
         '''
-        return self._register
+        return self._registration

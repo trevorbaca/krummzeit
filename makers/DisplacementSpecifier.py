@@ -50,7 +50,7 @@ class DisplacementSpecifier(abctools.AbjadObject):
     def __call__(self, logical_ties):
         for i, logical_tie in enumerate(logical_ties):
             assert isinstance(logical_tie, selectiontools.LogicalTie)
-            displacement = displacements[i]
+            displacement = self.displacements[i]
             interval = pitchtools.NumberedInterval(displacement * 12)
             for note in logical_tie:
                 assert isinstance(note, Note), repr(note)

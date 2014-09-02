@@ -406,14 +406,12 @@ class SegmentMaker(makertools.SegmentMaker):
 
     def make_pitch_handler(
         self,
-        stages,
-        context_names,
         pitch_specifier,
+        scope,
         ):
         from krummzeit import makers
         pitch_handler = makers.PitchHandler(
-            stages=stages,
-            context_names=context_names,
+            scope=scope,
             specifiers=[pitch_specifier],
             )
         self._pitch_handlers.append(pitch_handler)

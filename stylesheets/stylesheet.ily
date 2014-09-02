@@ -308,7 +308,7 @@
         \name ViolaMusicVoice
         \type Engraver_group
         \alias Voice
-        \override TupletBracket.staff-padding = 2
+        \override TupletBracket.staff-padding = 4
     }
     \context {
         \Staff
@@ -335,7 +335,7 @@
         \accepts CelloMusicVoice
         instrumentName = \markup { \hcenter-in #12 Cello }
         shortInstrumentName = \markup { \hcenter-in #12 Vc. }
-        \override TupletBracket.staff-padding = 2
+        \override TupletBracket.staff-padding = 5
         \override Beam.positions = #'(-6 . -6)
     }
     \context {
@@ -372,6 +372,7 @@
         \override Beam.breakable = ##t
         \override DynamicLineSpanner.Y-extent = #'(-1.5 . 1.5)
         \override Glissando.breakable = ##t
+        \override Glissando.thickness = 3
         \override NoteCollision.merge-differently-dotted = ##t
         \override NoteColumn.ignore-collision = ##t
         \override SpacingSpanner.strict-grace-spacing = ##t

@@ -13,7 +13,7 @@ class RegistrationSpecifier(abctools.AbjadObject):
 
             >>> import krummzeit
             >>> specifier = krummzeit.makers.RegistrationSpecifier(
-            ...     registration=pitchtools.OctaveTranspositionMapping(
+            ...     registration=pitchtools.Registration(
             ...         [('[A0, C4)', 15), ('[C4, C8)', 27)],
             ...         ),
             ...     )
@@ -22,15 +22,15 @@ class RegistrationSpecifier(abctools.AbjadObject):
             
             >>> print(format(specifier, 'storage'))
             krummzeit.makers.RegistrationSpecifier(
-                registration=pitchtools.OctaveTranspositionMapping(
+                registration=pitchtools.Registration(
                     [
-                        pitchtools.OctaveTranspositionMappingComponent(
+                        pitchtools.RegistrationComponent(
                             source_pitch_range=pitchtools.PitchRange(
                                 range_string='[A0, C4)',
                                 ),
                             target_octave_start_pitch=pitchtools.NumberedPitch(15),
                             ),
-                        pitchtools.OctaveTranspositionMappingComponent(
+                        pitchtools.RegistrationComponent(
                             source_pitch_range=pitchtools.PitchRange(
                                 range_string='[C4, C8)',
                                 ),
@@ -55,7 +55,7 @@ class RegistrationSpecifier(abctools.AbjadObject):
         registration=None,
         ):
         from abjad.tools import pitchtools
-        prototype = (type(None), pitchtools.OctaveTranspositionMapping)
+        prototype = (type(None), pitchtools.Registration)
         assert isinstance(registration, prototype), repr(registration)
         self._registration = registration
 
@@ -70,7 +70,7 @@ class RegistrationSpecifier(abctools.AbjadObject):
             ::
 
                 >>> specifier.registration
-                OctaveTranspositionMapping([('[A0, C4)', 15), ('[C4, C8)', 27)])
+                Registration([('[A0, C4)', 15), ('[C4, C8)', 27)])
 
         Set to octave transposition mapping or none.
         '''

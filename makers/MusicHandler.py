@@ -21,7 +21,7 @@ class MusicHandler(abctools.AbjadObject):
 
             >>> print(format(handler))
             krummzeit.makers.MusicHandler(
-                scope=krummzeit.makers.Scope(
+                scope=krummzeit.makers.SimpleScope(
                     context_name='Violin Music Voice',
                     stages=(1, 4),
                     ),
@@ -48,9 +48,9 @@ class MusicHandler(abctools.AbjadObject):
         ):
         from krummzeit import makers
         if isinstance(scope, tuple):
-            scope = makers.Scope(*scope)
+            scope = makers.SimpleScope(*scope)
         if scope is not None:
-            assert isinstance(scope, makers.Scope), repr(scope)
+            assert isinstance(scope, makers.SimpleScope), repr(scope)
         self._scope = scope
         self._specifier = specifier
 
@@ -65,7 +65,7 @@ class MusicHandler(abctools.AbjadObject):
             ::
 
                 >>> print(format(handler.scope))
-                krummzeit.makers.Scope(
+                krummzeit.makers.SimpleScope(
                     context_name='Violin Music Voice',
                     stages=(1, 4),
                     )

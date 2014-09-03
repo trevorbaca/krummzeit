@@ -87,15 +87,17 @@ class PitchSpecifier(abctools.AbjadObject):
             else:
                 absolute_start_index = \
                     source_length - abs(self.start_index) + 1
+            source = self.source
+            if self.reverse:
+                source = reversed(source)
+                source = datastructuretools.CyclicTuple(source)
+                absolute_start_index = source_length - absolute_start_index - 1
             current_count_index = 0
             current_count = counts[current_count_index]
             current_logical_tie_index = 0
             for logical_tie in logical_ties:
-                if self.reverse:
-                    current_logical_tie_index = -(
-                        current_logical_tie_index + 1)
                 index = absolute_start_index + current_logical_tie_index
-                pitch_class = self.source[index]
+                pitch_class = source[index]
                 if self.operators:
                     for operator_ in self.operators:
                         pitch_class = operator_(pitch_class)

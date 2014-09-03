@@ -13,7 +13,7 @@ class ColorFingeringSpecifier(abctools.AbjadObject):
         ::
 
             >>> import krummzeit
-            >>> specifier = krummzeit.makers.ColorFingeringSpecifierSpecifier(
+            >>> specifier = krummzeit.makers.ColorFingeringSpecifier(
             ...     number_lists=(
             ...         [0, 1, 2, 1],
             ...         ),
@@ -22,7 +22,7 @@ class ColorFingeringSpecifier(abctools.AbjadObject):
         ::
             
             >>> print(format(specifier))
-            krummzeit.makers.ColorFingeringSpecifier.ColorFingeringSpecifierSpecifier(
+            krummzeit.makers.ColorFingeringSpecifier(
                 number_lists=(
                     [0, 1, 2, 1],
                     ),
@@ -85,7 +85,7 @@ class ColorFingeringSpecifier(abctools.AbjadObject):
 
             ::
 
-            >>> specifier = krummzeit.makers.ColorFingeringSpecifierSpecifier(
+            >>> specifier = krummzeit.makers.ColorFingeringSpecifier(
             ...     number_lists=(
             ...         [0, 1, 2, 1],
             ...         ),

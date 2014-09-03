@@ -10,13 +10,13 @@ class PitchSpecifier(abctools.AbjadObject):
         ::
 
             >>> import krummzeit
-            >>> handler = krummzeit.makers.PitchSpecifier(
+            >>> specifier = krummzeit.makers.PitchSpecifier(
             ...     source=[7, 1, 3, 4, 5, 11],
             ...     )
 
         ::
 
-            >>> print(format(handler))
+            >>> print(format(specifier))
             krummzeit.makers.PitchSpecifier(
                 source=datastructuretools.CyclicTuple(
                     [
@@ -35,6 +35,7 @@ class PitchSpecifier(abctools.AbjadObject):
     ### CLASS VARIABLES ###
 
     __slots__ = (
+        '_counts',
         '_operators',
         '_reverse',
         '_source',
@@ -46,12 +47,16 @@ class PitchSpecifier(abctools.AbjadObject):
 
     def __init__(
         self,
+        counts=None,
         operators=None,
         reverse=False,
         source=None,
         start_index=0,
         ):
         from abjad.tools import pitchtools
+        if counts is not None:
+            assert mathtools.all_are_positive_integers(counts), repr(counts)
+        self._counts = counts
         if operators is not None:
             operators = tuple(operators)
         self._operators = operators
@@ -73,6 +78,8 @@ class PitchSpecifier(abctools.AbjadObject):
     ### SPECIAL METHODS ###
 
     def __call__(self, logical_ties, timespan):
+        counts = self.counts or [1]
+        counts = datastructuretools.CyclicTuple(counts)
         if self.source:
             source_length = len(self.source)
             if 0 <= self.start_index:
@@ -80,10 +87,14 @@ class PitchSpecifier(abctools.AbjadObject):
             else:
                 absolute_start_index = \
                     source_length - abs(self.start_index) + 1
-            for i, logical_tie in enumerate(logical_ties):
+            current_count_index = 0
+            current_count = counts[current_count_index]
+            current_logical_tie_index = 0
+            for logical_tie in logical_ties:
                 if self.reverse:
-                    i = -(i + 1)
-                index = absolute_start_index + i
+                    current_logical_tie_index = -(
+                        current_logical_tie_index + 1)
+                index = absolute_start_index + current_logical_tie_index
                 pitch_class = self.source[index]
                 if self.operators:
                     for operator_ in self.operators:
@@ -96,6 +107,11 @@ class PitchSpecifier(abctools.AbjadObject):
                     pitch = pitchtools.NamedPitch(pitch_class)
                 for note in logical_tie:
                     note.written_pitch = pitch
+                current_count -= 1
+                if current_count == 0:
+                    current_logical_tie_index += 1
+                    current_count_index += 1
+                    current_count = counts[current_count_index]
         else:
             assert self.operators, repr(self.operators)
             for logical_tie in logical_ties:
@@ -128,15 +144,22 @@ class PitchSpecifier(abctools.AbjadObject):
     ### PUBLIC PROPERTIES ###
 
     @property
+    def counts(self):
+        r'''Gets counts of pitch specifier.
+
+        Set to positive integers or none.
+        '''
+        return self._counts
+
+    @property
     def operators(self):
-        r'''Gets operators of pitch-handler.
+        r'''Gets operators of pitch specifier.
 
         ..  container:: example
 
             ::
 
-                >>> import krummzeit
-                >>> handler = krummzeit.makers.PitchSpecifier(
+                >>> specifier = krummzeit.makers.PitchSpecifier(
                 ...     operators=[
                 ...         pitchtools.Inversion(),
                 ...         pitchtools.Transposition(2),
@@ -146,7 +169,7 @@ class PitchSpecifier(abctools.AbjadObject):
 
             ::
 
-                >>> handler.operators
+                >>> specifier.operators
                 (Inversion(), Transposition(index=2))
 
         Set to operators or none.
@@ -162,8 +185,7 @@ class PitchSpecifier(abctools.AbjadObject):
 
             ::
 
-                >>> import krummzeit
-                >>> handler = krummzeit.makers.PitchSpecifier(
+                >>> specifier = krummzeit.makers.PitchSpecifier(
                 ...     reverse=True,
                 ...     source=[7, 1, 3, 4, 5, 11],
                 ...     start_index=-1,
@@ -171,7 +193,7 @@ class PitchSpecifier(abctools.AbjadObject):
 
             ::
 
-                >>> handler.reverse
+                >>> specifier.reverse
                 True
 
         Set to true or false.
@@ -186,13 +208,13 @@ class PitchSpecifier(abctools.AbjadObject):
 
             ::
 
-                >>> handler = krummzeit.makers.PitchSpecifier(
+                >>> specifier = krummzeit.makers.PitchSpecifier(
                 ...     source=[7, 1, 3, 4, 5, 11],
                 ...     )
 
             ::
 
-                >>> for pitch in handler.source:
+                >>> for pitch in specifier.source:
                 ...     pitch
                 NamedPitch("g'")
                 NamedPitch("cs'")
@@ -208,14 +230,13 @@ class PitchSpecifier(abctools.AbjadObject):
 
     @property
     def start_index(self):
-        r'''Gets start index of pitch-handler.
+        r'''Gets start index of pitch specifier.
 
         ..  container:: example
 
             ::
 
-                >>> import krummzeit
-                >>> handler = krummzeit.makers.PitchSpecifier(
+                >>> specifier = krummzeit.makers.PitchSpecifier(
                 ...     reverse=True,
                 ...     source=[7, 1, 3, 4, 5, 11],
                 ...     start_index=-1,
@@ -223,7 +244,7 @@ class PitchSpecifier(abctools.AbjadObject):
 
             ::
 
-                >>> handler.start_index
+                >>> specifier.start_index
                 -1
 
         Set to integer or none.

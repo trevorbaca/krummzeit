@@ -11,10 +11,10 @@ class CompoundScope(abctools.AbjadObject):
 
             >>> from krummzeit import makers
             >>> scope = makers.CompoundScope(
-            ...     ('Piano Music Voice', (5, 9)),
-            ...     ('Clarinet Music Voice', (7, 12)),
-            ...     ('Violin Music Voice', (8, 12)),
-            ...     ('Oboe Music Voice', (9, 12)),
+            ...     makers.SimpleScope('Piano Music Voice', (5, 9)),
+            ...     makers.SimpleScope('Clarinet Music Voice', (7, 12)),
+            ...     makers.SimpleScope('Violin Music Voice', (8, 12)),
+            ...     makers.SimpleScope('Oboe Music Voice', (9, 12)),
             ...     )
 
         ::
@@ -45,84 +45,19 @@ class CompoundScope(abctools.AbjadObject):
 
     __slots__ = (
         '_context_names',
-        '_scopes',
+        '_simple_scopes',
         '_timespan_map',
         )
 
     ### INITIALIZER ###
 
-    def __init__(self, *scopes):
+    def __init__(self, *simple_scopes):
         from krummzeit import makers
+        for simple_scope in simple_scopes:
+            assert isinstance(simple_scope, makers.SimpleScope), simple_scope
         self._context_names = []
-        scopes_ = []
-        for scope_token in scopes:
-            if isinstance(scope_token, makers.SimpleScope):
-                scopes_.append(scope_token)
-            #elif self._is_simple_scope_pair(scope):
-            #    scope = makers.SimpleScope(*scope)
-            #    scopes_.append(scope)
-            elif isinstance(scope_token, tuple):
-                assert len(scope_token) == 2, repr(scope_token)
-                context_names, stage_pairs = scope_token
-                assert isinstance(context_names, (str, list)), context_names
-                if isinstance(context_names, str):
-                    context_names = [context_names]
-                assert isinstance(context_names, list), context_names
-                assert all(isinstance(_, str) for _ in context_names)
-                if isinstance(stage_pairs, int):
-                    stage_pairs = [(stage_pairs, stage_pairs)]
-                elif isinstance(stage_pairs, tuple):
-                    assert self._is_stage_pair(stage_pairs), stage_pairs
-                    stage_pairs = [stage_pairs]
-                elif isinstance(stage_pairs, list):
-                    assert all(self._is_stage_pair(_) for _ in stage_pairs)
-                else:
-                    raise TypeError(stage_pairs)
-                assert isinstance(stage_pairs, list), stage_pairs
-                assert all(self._is_stage_pair(_) for _ in stage_pairs)
-                for context_name in context_names:
-                    for stage_pair in stage_pairs:
-                        scope = makers.SimpleScope(context_name, stage_pair)
-                        scopes_.append(scope)
-
-#                if isinstance(scope[0], str):
-#                    scope = makers.SimpleScope(*scope)
-#                    scopes_.append(scope)
-#                elif isinstance(scope[0], (list, tuple)):
-#                    stages = scope[-1]
-#                    if isinstance(stages, tuple):
-#                        stages = [stages]
-#                    assert isinstance(stages, list), repr(stages)
-#                    for stage_pair in stages:
-#                        assert self._is_stage_pair(stage_pair), repr(stage_pair)
-#                    for context_name in scope[0]:
-#                        for stage_pair in stages:
-#                            scope_ = makers.SimpleScope(
-#                                context_name, 
-#                                stage_pair,
-#                                )
-#                            scopes_.append(scope_)
-
-            else:
-                raise TypeError(scope)
-        self._scopes = tuple(scopes_)
+        self._simple_scopes = tuple(simple_scopes)
         self._timespan_map = None
-
-    def _is_stage_pair(self, expr):
-        if isinstance(expr, tuple):
-            if len(expr) == 2:
-                if isinstance(expr[0], int):
-                    if isinstance(expr[-1], int):
-                        return True
-        return False
-
-    def _is_simple_scope_pair(self, expr):
-        if isinstance(expr, tuple):
-            if len(expr) == 2:
-                if isinstance(expr[0], str):
-                    if self._is_stage_pair(expr[-1]):
-                        return True
-        return False
 
     ### SPECIAL METHODS ###
 
@@ -143,7 +78,7 @@ class CompoundScope(abctools.AbjadObject):
     @property
     def _storage_format_specification(self):
         from abjad.tools import systemtools
-        positional_argument_values = self.scopes
+        positional_argument_values = self.simple_scopes
         return systemtools.StorageFormatSpecification(
             self,
             positional_argument_values=positional_argument_values,
@@ -152,9 +87,9 @@ class CompoundScope(abctools.AbjadObject):
     ### PUBLIC PROPERTIES ###
 
     @property
-    def scopes(self):
-        r'''Gets scopes of compound scope.
+    def simple_scopes(self):
+        r'''Gets simple scopes that comprise compound scope.
 
-        Set to scopes.
+        Set to simple scopes or none.
         '''
-        return self._scopes
+        return self._simple_scopes

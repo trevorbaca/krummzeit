@@ -11,11 +11,7 @@ class PitchHandler(abctools.AbjadObject):
 
             >>> import krummzeit
             >>> handler = krummzeit.makers.PitchHandler(
-            ...     scope=krummzeit.makers.CompoundScope(
-            ...         (['Violin Music Voice', 'Viola Music Voice'],
-            ...             (1, 4),
-            ...             ),
-            ...         ),
+            ...     scope=(['Flute Music Voice', 'Piano Music Voice'], (1, 4)),
             ...     )
 
         ::
@@ -24,16 +20,15 @@ class PitchHandler(abctools.AbjadObject):
             krummzeit.makers.PitchHandler(
                 scope=krummzeit.makers.CompoundScope(
                     krummzeit.makers.SimpleScope(
-                        context_name='Violin Music Voice',
+                        context_name='Flute Music Voice',
                         stages=(1, 4),
                         ),
                     krummzeit.makers.SimpleScope(
-                        context_name='Viola Music Voice',
+                        context_name='Piano Music Voice',
                         stages=(1, 4),
                         )
                     ),
                 )
-
 
     '''
 
@@ -80,6 +75,16 @@ class PitchHandler(abctools.AbjadObject):
             specifiers = tuple(specifiers)
         self._specifiers = specifiers
 
+    ### PRIVATE METHODS ###
+
+    def _is_stage_pair(self, expr):
+        if isinstance(expr, tuple):
+            if len(expr) == 2:
+                if isinstance(expr[0], int):
+                    if isinstance(expr[-1], int):
+                        return True
+        return False
+
     def _scope_token_to_simple_scopes(self, scope_token):
         from krummzeit import makers
         assert isinstance(scope_token, tuple), scope_token
@@ -116,14 +121,6 @@ class PitchHandler(abctools.AbjadObject):
                 simple_scopes.append(simple_scope)
         return simple_scopes
 
-    def _is_stage_pair(self, expr):
-        if isinstance(expr, tuple):
-            if len(expr) == 2:
-                if isinstance(expr[0], int):
-                    if isinstance(expr[-1], int):
-                        return True
-        return False
-
     ### PUBLIC PROPERTIES ###
 
     @property
@@ -137,16 +134,16 @@ class PitchHandler(abctools.AbjadObject):
                 >>> print(format(handler.scope))
                 krummzeit.makers.CompoundScope(
                     krummzeit.makers.SimpleScope(
-                        context_name='Violin Music Voice',
+                        context_name='Flute Music Voice',
                         stages=(1, 4),
                         ),
                     krummzeit.makers.SimpleScope(
-                        context_name='Viola Music Voice',
+                        context_name='Piano Music Voice',
                         stages=(1, 4),
                         )
                     )
 
-        Returns compound scope or none.
+        Set to compound scope.
         '''
         return self._scope
 

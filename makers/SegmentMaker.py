@@ -194,10 +194,33 @@ class SegmentMaker(makertools.SegmentMaker):
         compound_scope = makers.CompoundScope(simple_scope)
         result = self._compound_scope_to_logical_ties(compound_scope)
         logical_ties, timespan = result
-        if isinstance(music_handler.specifier, Clef):
-            attach(music_handler.specifier, logical_ties[0].head)
+        if isinstance(music_handler.specifier, (list, tuple)):
+            specifiers = tuple(music_handler.specifier)
         else:
-            music_handler.specifier(logical_ties, timespan)
+            specifiers = (music_handler.specifier,)
+        indicator_prototype = (
+            Clef,
+            Dynamic,
+            Markup
+            )
+        for specifier in specifiers:
+            if isinstance(specifier, indicator_prototype):
+                attach(specifier, logical_ties[0].head)
+            elif isinstance(specifier, spannertools.Spanner):
+                spanner = specifier
+                assert not len(spanner)
+                spanner = copy.deepcopy(spanner)
+                leaves = self._logical_ties_to_leaves(logical_ties)
+                attach(spanner, leaves)
+            else:
+                specifier(logical_ties, timespan)
+
+    # TODO: will need to extend to handle intervening rests
+    def _logical_ties_to_leaves(self, logical_ties):
+        leaves = []
+        for logical_tie in logical_ties:
+            leaves.extend(logical_tie)
+        return leaves
 
     def _interpret_pitch_handler(self, pitch_handler):
         compound_scope = pitch_handler.scope
@@ -419,22 +442,36 @@ class SegmentMaker(makertools.SegmentMaker):
         '''
         from krummzeit import makers
         assert isinstance(scope, tuple) and len(scope) == 2, repr(scope)
-        if isinstance(scope[0], str):
-            scopes = [scope]
-        elif isinstance(scope, (tuple, list)):
-            scopes = []
-            stages = scope[-1]
-            for context_name in scope[0]:
-                scope = (context_name, stages)
-                scopes.append(scope)
+        context_names = scope[0]
+        if isinstance(context_names, str):
+            context_names = [context_names]
+        elif isinstance(context_names, (tuple, list)):
+            context_names = list(context_names)
         else:
-            message = 'must be string or tuple of strings: {!r}.'
-            message = message.format(scope)
+            message = 'context names must be string or tuple of strings: {!r}.'
+            message = message.format(context_names)
             raise TypeError(message)
+        stage_pairs = scope[-1]
+        if isinstance(stage_pairs, int):
+            stage_pairs = [(stage_pairs, stage_pairs)]
+        elif isinstance(stage_pairs, tuple):
+            assert len(stage_pairs) == 2, repr(stage_pairs)
+            stage_pairs = [stage_pairs]
+        elif isinstance(stage_pairs, list):
+            pass
+        else:
+            raise TypeError(stage_pairs)
+        assert isinstance(context_names, list), context_names
+        assert isinstance(stage_pairs, list), stage_pairs
+        scope_tokens = []
+        for context_name in context_names:
+            for stage_pair in stage_pairs:
+                scope_token = (context_name, stage_pair)
+                scope_tokens.append(scope_token)
         music_handlers = []
-        for scope in scopes:
+        for scope_token in scope_tokens:
             music_handler = makers.MusicHandler(
-                scope=scope,
+                scope=scope_token,
                 specifier=specifier,
                 )
             self._music_handlers.append(music_handler)

@@ -1,4 +1,5 @@
 # -*- encoding: utf-8 -*-
+from abjad import *
 from krummzeit import materials
 from krummzeit import makers
 from abjad.tools import pitchtools
@@ -36,6 +37,15 @@ vn = 'Violin Music Voice'
 va = 'Viola Music Voice'
 vc = 'Cello Music Voice'
 
+
+### MARKUP ###
+molto_flautando = Markup('molto flautando', direction=Up)
+molto_flautando = molto_flautando.italic()
+molto_flautando = molto_flautando.larger()
+
+non_flautando = Markup('non flautando', direction=Up)
+non_flautando = non_flautando.italic()
+non_flautando = non_flautando.larger()
 
 
 ### PITCH ###

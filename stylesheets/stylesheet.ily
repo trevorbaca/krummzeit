@@ -42,19 +42,21 @@
         (padding . 0)
         (stretchability . 0)
     )
-    top-markup-spacing = #'(
-        (basic-distance . 0)
-        (minimum-distance . 0)
-        (padding . 8)
-        (stretchability . 0)
-    )
+    %top-markup-spacing = #'(
+    %    (basic-distance . 0)
+    %    (minimum-distance . 0)
+    %    (padding . 8)
+    %    (stretchability . 0)
+    %)
     top-system-spacing = #'(
         (basic-distance . 0)
-        (minimum-distance . 20)
+        %(minimum-distance . 20)
+        (minimum-distance . 14)
         (padding . 0)
         (stretchability . 0)
     )
-    top-margin = 10\mm
+    %top-margin = 10\mm
+    top-margin = 0\mm
 }
 
 \header {
@@ -132,8 +134,6 @@
         )
         %\override VerticalAxisGroup.Y-extent = #'(-12 . 12)
         \override VerticalAxisGroup.minimum-Y-extent = #'(-20 . 20)
-        %\alterBroken transparent #'(#t) SystemStartBrace
-        \alterBroken transparent #'(#t) SystemStartBar
     }
     \context {
         \Staff
@@ -238,8 +238,10 @@
         \alias PianoStaff
         \accepts OboeMusicStaff
         \accepts ClarinetMusicStaff
-        \override StaffGrouper.staff-staff-spacing.minimum-distance = 18
-        \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 22
+        %\override StaffGrouper.staff-staff-spacing.minimum-distance = 18
+        %\override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 22
+        \override StaffGrouper.staff-staff-spacing.minimum-distance = 22
+        \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 26
     }
     \context {
         \Voice
@@ -283,8 +285,10 @@
         \alias PianoStaff
         \accepts PianoMusicStaff
         \accepts PercussionMusicStaff
-        \override StaffGrouper.staff-staff-spacing.minimum-distance = 18
-        \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 22
+        %\override StaffGrouper.staff-staff-spacing.minimum-distance = 18
+        %\override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 22
+        \override StaffGrouper.staff-staff-spacing.minimum-distance = 22
+        \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 26
     }
     \context {
         \Voice
@@ -300,8 +304,9 @@
         \accepts ViolinMusicVoice
         instrumentName = \markup { \hcenter-in #12 Violin }
         shortInstrumentName = \markup { \hcenter-in #12 Vn. }
-        \override TupletBracket.staff-padding = 5
-        \override Beam.positions = #'(-6 . -6)
+        \override Beam.positions = #'(-7 . -7)
+        \override DynamicLineSpanner.staff-padding = 9
+        \override TupletBracket.staff-padding = 6
     }
     \context {
         \Voice
@@ -346,8 +351,10 @@
         \accepts ViolinMusicStaff
         \accepts ViolaMusicStaff
         \accepts CelloMusicStaff
-        \override StaffGrouper.staff-staff-spacing.minimum-distance = 18
-        \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 22
+        %\override StaffGrouper.staff-staff-spacing.minimum-distance = 18
+        %\override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 22
+        \override StaffGrouper.staff-staff-spacing.minimum-distance = 22
+        \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 26
     }
     \context {
         \Score

@@ -68,6 +68,9 @@ scrape_moderately = Markup(
     )
 scrape_moderately = scrape_moderately.larger()
 
+show_tempo = Markup('allow bowing to convey accelerando', direction=Up)
+show_tempo = show_tempo.larger()
+
 
 ### PITCH ###
 

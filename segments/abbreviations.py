@@ -39,6 +39,12 @@ vc = 'Cello Music Voice'
 
 
 ### MARKUP ###
+fingertips = Markup(
+    'rapid roll with fingertips: keep speed constant during accelerando',
+    direction=Up,
+    )
+fingertips = fingertips.larger()
+
 molto_flautando = Markup('molto flautando', direction=Up)
 molto_flautando = molto_flautando.italic()
 molto_flautando = molto_flautando.larger()

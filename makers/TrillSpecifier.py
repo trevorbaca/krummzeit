@@ -27,7 +27,8 @@ class TrillSpecifier(abctools.AbjadObject):
     ### CLASS VARIABLES ##
 
     __slots__ = (
-        '_avoid_indicators',
+        '_deposit_annotations',
+        '_forbidden_annotations',
         '_maximum_written_duration',
         '_minimum_written_duration',
         )
@@ -36,14 +37,20 @@ class TrillSpecifier(abctools.AbjadObject):
 
     def __init__(
         self,
-        avoid_indicators=None,
+        deposit_annotations=None,
+        forbidden_annotations=None,
         minimum_written_duration=None,
         maximum_written_duration=None,
         ):
-        if avoid_indicators is not None:
-            assert isinstance(avoid_indicators, (tuple, list))
-            avoid_indicators = tuple(avoid_indicators)
-        self._avoid_indicators = avoid_indicators
+        if deposit_annotations is not None:
+            assert isinstance(deposit_annotations, (tuple, list))
+            deposit_annotations = tuple(deposit_annotations)
+        self._deposit_annotations = deposit_annotations
+        if forbidden_annotations is not None:
+            assert isinstance(forbidden_annotations, (tuple, list))
+            assert all(isinstance(_, str) for _ in forbidden_annotations)
+            forbidden_annotations = tuple(forbidden_annotations)
+        self._forbidden_annotations = forbidden_annotations
         if minimum_written_duration is not None:
             minimum_written_duration = durationtools.Duration(
                 minimum_written_duration)
@@ -66,33 +73,47 @@ class TrillSpecifier(abctools.AbjadObject):
             if self.maximum_written_duration is not None:
                 if self.maximum_written_duration <= written_duration :
                     continue
-            avoid_indicators = self.avoid_indicators or ()
-            skip_spanner = False
-            for avoid_indicator in avoid_indicators:
-                for note in logical_tie:
-                    for indicator in inspect_(note).get_indicators():
-                        if isinstance(indicator, avoid_indicator):
-                            skip_spanner = True
-                            break
-            if skip_spanner:
-                continue
             spanner = spannertools.TrillSpanner()
             leaves = []
             for note in logical_tie:
                 leaves.append(note)
+            skip_spanner = False
+            for leaf in leaves:
+                if self._has_forbidden_annotation(leaf):
+                    skip_spanner = True
+                    break
+            if skip_spanner:
+                continue
             next_leaf = inspect_(leaves[-1]).get_leaf(1)
             leaves.append(next_leaf)
             attach(spanner, leaves)
 
+    def _has_forbidden_annotation(self, leaf):
+        if self.forbidden_annotations is None:
+            return False
+        for forbidden_annotation in self.forbidden_annotations:
+            if inspect_(leaf).get_annotation(forbidden_annotation):
+                return True
+        return False
+
     ### PUBLIC PROPERTIES ###
 
     @property
-    def avoid_indicators(self):
-        r'''Gets indicators to avoid.
+    def deposit_annotations(self):
+        r'''Gets annotations to deposit on affected components.
 
-        Set to indicators or none.
+        Set to annotations or none.
         '''
-        return self._avoid_indicators
+        return self._deposit_annotations
+
+    @property
+    def forbidden_annotations(self):
+        r'''Gets annotations that indiate a component is forbidden
+        from being affected.
+
+        Set to annotations or none.
+        '''
+        return self._forbidden_annotations
 
     @property
     def maximum_written_duration(self):

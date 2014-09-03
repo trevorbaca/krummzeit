@@ -46,8 +46,6 @@ class MicrotonalDeviationSpecifier(abctools.AbjadObject):
         from abjad.tools import pitchtools
         if deposit_annotations is not None:
             deposit_annotations = tuple(deposit_annotations)
-            for annotation in deposit_annotations:
-                assert isinstance(annotation, indicatortools.Annotation)
         self._deposit_annotations = deposit_annotations
         if number_lists is not None:
             number_lists = tuple(number_lists)
@@ -74,8 +72,6 @@ class MicrotonalDeviationSpecifier(abctools.AbjadObject):
             number_list = datastructuretools.CyclicTuple(number_list)
             for i, logical_tie in enumerate(values):
                 number = number_list[i]
-                if number == 0:
-                    continue
                 for note in logical_tie:
                     self._adjust_pitch(note, number)
                     self._attach_deposit_annotations(note)
@@ -84,7 +80,9 @@ class MicrotonalDeviationSpecifier(abctools.AbjadObject):
     ### PRIVATE METHODS ###
 
     def _adjust_pitch(self, note, number):
-        assert number in (0.5, -0.5)
+        assert number in (0.5, 0, -0.5)
+        if number == 0:
+            return
         written_pitch = note.written_pitch
         written_pitch = \
             pitchtools.transpose_named_pitch_by_numbered_interval_and_respell(
@@ -94,9 +92,8 @@ class MicrotonalDeviationSpecifier(abctools.AbjadObject):
     def _attach_deposit_annotations(self, note):
         if not self.deposit_annotations:
             return
-        for annotation in self.deposit_annotations:
-            #annotation = new(annotation)
-            annotation = copy.deepcopy(annotation)
+        for annotation_name in self.deposit_annotations:
+            annotation = indicatortools.Annotation(annotation_name, True)
             attach(annotation, note)
 
     ### PUBLIC PROPERTIES ###

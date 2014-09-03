@@ -77,13 +77,22 @@ B1_displacement = makers.DisplacementSpecifier(
     )
 
 color_fingerings = makers.ColorFingeringSpecifier(
+    deposit_annotations=['color fingering'],
     number_lists=(
         [0, 1, 2, 1],
         ),
     )
 
+color_microtones = makers.MicrotonalDeviationSpecifier(
+    deposit_annotations=['color microtone'],
+    number_lists=(
+        [0, -0.5, 0, 0.5],
+        [0, 0.5, 0, -0.5],
+        ),
+    )
+
 trill_quarter_notes = makers.TrillSpecifier(
-    avoid_indicators=[indicatortools.ColorFingering],
+    forbidden_annotations=['color fingering', 'color microtone'],
     minimum_written_duration=Duration(1, 4),
     )
 

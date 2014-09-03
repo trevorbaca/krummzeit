@@ -33,6 +33,7 @@ class ColorFingeringSpecifier(abctools.AbjadObject):
     ### CLASS VARIABLES ##
 
     __slots__ = (
+        '_deposit_annotations',
         '_number_lists',
         )
 
@@ -40,9 +41,13 @@ class ColorFingeringSpecifier(abctools.AbjadObject):
 
     def __init__(
         self,
+        deposit_annotations=None,
         number_lists=None,
         ):
         from abjad.tools import pitchtools
+        if deposit_annotations is not None:
+            deposit_annotations = tuple(deposit_annotations)
+        self._deposit_annotations = deposit_annotations
         if number_lists is not None:
             number_lists = tuple(number_lists)
             for number_list in number_lists:
@@ -68,14 +73,33 @@ class ColorFingeringSpecifier(abctools.AbjadObject):
             number_list = datastructuretools.CyclicTuple(number_list)
             for i, logical_tie in enumerate(values):
                 number = number_list[i]
-                if number == 0:
-                    continue
                 for note in logical_tie:
-                    fingering = indicatortools.ColorFingering(number)
-                    attach(fingering, note)
+                    if not number == 0:
+                        fingering = indicatortools.ColorFingering(number)
+                        attach(fingering, note)
+                    self._attach_deposit_annotations(note)
             number_list_index += 1
 
+    ### PRIVATE METHODS ###
+
+    def _attach_deposit_annotations(self, note):
+        if not self.deposit_annotations:
+            return
+        for annotation_name in self.deposit_annotations:
+            annotation = indicatortools.Annotation(annotation_name, True)
+            attach(annotation, note)
+
     ### PUBLIC PROPERTIES ###
+
+    @property
+    def deposit_annotations(self):
+        r'''Gets deposit annotations of specifier.
+
+        These will be attached to every note affected at call time.
+
+        Set to annotations or none.
+        '''
+        return self._deposit_annotations
 
     @property
     def number_lists(self):

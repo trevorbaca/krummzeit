@@ -254,8 +254,9 @@
         \accepts PianoMusicVoice
         instrumentName = \markup { \hcenter-in #12 Piano }
         shortInstrumentName = \markup { \hcenter-in #12 Pf. }
-        \override TupletBracket.staff-padding = 5
         \override Beam.positions = #'(-6 . -6)
+        \override DynamicLineSpanner.staff-padding = 9
+        \override TupletBracket.staff-padding = 5
     }
     \context {
         \Voice
@@ -271,9 +272,10 @@
         \accepts PercussionMusicVoice
         instrumentName = \markup { \hcenter-in #12 Percussion }
         shortInstrumentName = \markup { \hcenter-in #12 Perc. }
+        \override Beam.positions = #'(-6 . -6)
+        \override DynamicLineSpanner.staff-padding = 9
         \override TextScript.padding = 2.5
         \override TupletBracket.staff-padding = 5
-        \override Beam.positions = #'(-6 . -6)
     }
     \context {
         \PianoStaff
@@ -371,7 +373,8 @@
             (right-edge extra-space . 0.0)
         )
         \override Beam.breakable = ##t
-        \override DynamicLineSpanner.Y-extent = #'(-1.5 . 1.5)
+        %\override DynamicLineSpanner.Y-extent = #'(-1.5 . 1.5)
+        \override DynamicLineSpanner.Y-extent = #'(-4 . 4)
         \override Glissando.breakable = ##t
         \override Glissando.thickness = 3
         \override NoteCollision.merge-differently-dotted = ##t

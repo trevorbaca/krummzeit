@@ -189,3 +189,10 @@ wide_fifth_octave = makers.RegistrationSpecifier(
         [('[A0, F#4)', 4), ('[F#4, C8]', 18)]
         ),
     )
+
+### dynamics
+
+patterned_f_ff = handlertools.TerracedDynamicsHandler(
+    dynamics=['f', 'f', 'ff', 'f', 'ff', 'f', 'f', 'ff', 'ff'],
+    minimum_duration=Duration(1, 8),
+    )

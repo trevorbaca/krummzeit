@@ -167,7 +167,7 @@ class SegmentMaker(makertools.SegmentMaker):
     def _compound_scope_to_logical_ties(self, compound_scope):
         from krummzeit import makers
         timespan_map, timespans = [], []
-        for scope in compound_scope.scopes:
+        for scope in compound_scope.simple_scopes:
             start_stage, stop_stage = scope.stages
             offsets = self._get_offsets(start_stage, stop_stage)
             timespan = timespantools.Timespan(*offsets)

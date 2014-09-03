@@ -456,26 +456,26 @@ pitch_handler = segment_maker.make_pitch_handler(
         source=indigo_pitch_classes,    
         start_index=0,
         ),
-    scope=makers.CompoundScope(([pf, vn, ob, cl], (1, 4))),
+    scope=([pf, vn, ob, cl], (1, 4)),
     )
 pitch_handler = segment_maker.make_pitch_handler(
     pitch_specifier=makers.PitchSpecifier(
         source=indigo_pitch_classes,    
         start_index=0,
         ),
-    scope=makers.CompoundScope(([pf, vn, ob, cl], (5, 13))),
+    scope=([pf, vn, ob, cl], (5, 13)),
     )
 pitch_handler = segment_maker.make_pitch_handler(
     pitch_specifier=makers.PitchSpecifier(
         operators=[pitchtools.Transposition(1)],
         ),
-    scope=makers.CompoundScope(([pf, vn, ob, cl], (5, 8))),
+    scope=([pf, vn, ob, cl], (5, 8)),
     )
 pitch_handler = segment_maker.make_pitch_handler(
     pitch_specifier=makers.PitchSpecifier(
         operators=[pitchtools.Transposition(3)],
         ),
-    scope=makers.CompoundScope(([pf, vn, ob, cl], (9, 13))),
+    scope=([pf, vn, ob, cl], (9, 13)),
     )
 segment_maker.make_music_handler(
     scope=([pf, vn, ob, cl], (1, 13)),
@@ -605,11 +605,11 @@ segment_maker.make_pitch_handler(
         source=violet_pitch_classes,    
         start_index=0,
         ),
-    scope=makers.CompoundScope(
+    scope=[
         (va, (12, 16)),
         (vc, (12, 17)),
         (vn, (14, 18)),
-        ),
+        ],
     )
 segment_maker.make_music_handler(
     scope=(va, (12, 16)),
@@ -680,12 +680,12 @@ segment_maker.make_pitch_handler(
         start_index=60,
         operators=[pitchtools.Transposition(1)],
         ),
-    scope=makers.CompoundScope(
+    scope=[
         (va, (17, 22)),
         (vc, (18, 22)),
         (vn, (19, 22)),
         (pf, (20, 23)),
-        ),
+        ],
     )
 segment_maker.make_music_handler(
     scope=(va, (17, 22)),

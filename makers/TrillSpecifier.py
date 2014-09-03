@@ -27,6 +27,7 @@ class TrillSpecifier(abctools.AbjadObject):
     ### CLASS VARIABLES ##
 
     __slots__ = (
+        '_avoid_indicators',
         '_maximum_written_duration',
         '_minimum_written_duration',
         )
@@ -35,9 +36,14 @@ class TrillSpecifier(abctools.AbjadObject):
 
     def __init__(
         self,
+        avoid_indicators=None,
         minimum_written_duration=None,
         maximum_written_duration=None,
         ):
+        if avoid_indicators is not None:
+            assert isinstance(avoid_indicators, (tuple, list))
+            avoid_indicators = tuple(avoid_indicators)
+        self._avoid_indicators = avoid_indicators
         if minimum_written_duration is not None:
             minimum_written_duration = durationtools.Duration(
                 minimum_written_duration)
@@ -60,10 +66,33 @@ class TrillSpecifier(abctools.AbjadObject):
             if self.maximum_written_duration is not None:
                 if self.maximum_written_duration <= written_duration :
                     continue
+            avoid_indicators = self.avoid_indicators or ()
+            skip_spanner = False
+            for avoid_indicator in avoid_indicators:
+                for note in logical_tie:
+                    for indicator in inspect_(note).get_indicators():
+                        if isinstance(indicator, avoid_indicator):
+                            skip_spanner = True
+                            break
+            if skip_spanner:
+                continue
             spanner = spannertools.TrillSpanner()
-            attach(spanner, logical_tie[:])
+            leaves = []
+            for note in logical_tie:
+                leaves.append(note)
+            next_leaf = inspect_(leaves[-1]).get_leaf(1)
+            leaves.append(next_leaf)
+            attach(spanner, leaves)
 
     ### PUBLIC PROPERTIES ###
+
+    @property
+    def avoid_indicators(self):
+        r'''Gets indicators to avoid.
+
+        Set to indicators or none.
+        '''
+        return self._avoid_indicators
 
     @property
     def maximum_written_duration(self):

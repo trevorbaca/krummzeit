@@ -96,24 +96,24 @@ class RegistrationTransitionSpecifier(abctools.AbjadObject):
         stop_components = self.stop_registration.items
         pairs = zip(start_components, stop_components)
         for start_component, stop_component in pairs:
-            lower_range_pitch = self._get_interpolated_pitch(
-                start_component.source_pitch_range.start_pitch,
-                stop_component.source_pitch_range.start_pitch,
-                fraction,
-                )
-            upper_range_pitch = self._get_interpolated_pitch(
-                start_component.source_pitch_range.stop_pitch,
-                stop_component.source_pitch_range.stop_pitch,
-                fraction,
-                )
+            start_pitch = start_component.source_pitch_range.start_pitch
+            start_pitch = pitchtools.NumberedPitch(start_pitch)
+            stop_pitch = stop_component.source_pitch_range.start_pitch
+            lower_range_pitch = start_pitch.interpolate(stop_pitch, fraction)
+            start_pitch = start_component.source_pitch_range.stop_pitch
+            start_pitch = pitchtools.NumberedPitch(start_pitch)
+            stop_pitch = stop_component.source_pitch_range.stop_pitch
+            upper_range_pitch = start_pitch.interpolate(stop_pitch, fraction)
             range_string = '[{}, {})'
             range_string = range_string.format(
                 lower_range_pitch.pitch_class_octave_label,
                 upper_range_pitch.pitch_class_octave_label,
                 )
-            target_octave_start_pitch = self._get_interpolated_pitch(
-                start_component.target_octave_start_pitch,
-                stop_component.target_octave_start_pitch,
+            start_pitch = start_component.target_octave_start_pitch
+            start_pitch = pitchtools.NumberedPitch(start_pitch)
+            stop_pitch = stop_component.target_octave_start_pitch
+            target_octave_start_pitch = start_pitch.interpolate(
+                stop_pitch,
                 fraction,
                 )
             component = pitchtools.RegistrationComponent(
@@ -124,21 +124,6 @@ class RegistrationTransitionSpecifier(abctools.AbjadObject):
         registration = pitchtools.Registration(components)
         return registration
     
-    def _get_interpolated_pitch(self, start_pitch, stop_pitch, fraction):
-        distance = stop_pitch - start_pitch
-        distance = abs(distance.semitones)
-        distance = fraction * distance
-        distance = int(distance)
-        pitch_number = start_pitch.pitch_number
-        pitch_number = pitch_number + distance
-        pitch = pitchtools.NumberedPitch(pitch_number)
-        if start_pitch <= stop_pitch:
-            triple = (start_pitch, pitch, stop_pitch)
-            assert start_pitch <= pitch <= stop_pitch, triple
-        else:
-            assert start_pitch >= pitch >= stop_pitch, triple
-        return pitch
-
     ### PUBLIC PROPERTIES ###
 
     @property

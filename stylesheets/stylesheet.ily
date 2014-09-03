@@ -308,7 +308,6 @@
         \name ViolaMusicVoice
         \type Engraver_group
         \alias Voice
-        \override TupletBracket.staff-padding = 4
     }
     \context {
         \Staff

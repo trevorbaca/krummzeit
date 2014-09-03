@@ -47,6 +47,11 @@ non_flautando = Markup('non flautando', direction=Up)
 non_flautando = non_flautando.italic()
 non_flautando = non_flautando.larger()
 
+string = 'directly on bridge: each stroke full bow'
+on_bridge = Markup(string, direction=Up)
+on_bridge = on_bridge.italic()
+on_bridge = on_bridge.larger()
+
 
 ### PITCH ###
 
@@ -62,6 +67,13 @@ B1_displacement = makers.DisplacementSpecifier(
     )
 
 ### narrow registrations ###
+
+# +3
+narrow_second_octave = makers.RegistrationSpecifier(
+    registration=pitchtools.Registration(
+        [('[A0, F#4)', -26), ('[F#4, C8]', -23)],
+        ),
+    )
 
 # +3
 narrow_third_octave = makers.RegistrationSpecifier(
@@ -84,6 +96,7 @@ narrow_fifth_octave = makers.RegistrationSpecifier(
         ),
     )
 
+# ascending
 narrow_third_to_fifth_octave = makers.RegistrationTransitionSpecifier(
     start_registration=narrow_third_octave.registration,
     stop_registration=narrow_fifth_octave.registration,
@@ -93,6 +106,28 @@ narrow_fourth_to_fifth_octave = makers.RegistrationTransitionSpecifier(
     start_registration=narrow_fourth_octave.registration,
     stop_registration=narrow_fifth_octave.registration,
     )
+
+# descending
+narrow_fifth_to_fourth_octave = makers.RegistrationTransitionSpecifier(
+    start_registration=narrow_fifth_octave.registration,
+    stop_registration=narrow_fourth_octave.registration,
+    )
+
+narrow_fifth_to_third_octave = makers.RegistrationTransitionSpecifier(
+    start_registration=narrow_fifth_octave.registration,
+    stop_registration=narrow_third_octave.registration,
+    )
+
+narrow_fifth_to_second_octave = makers.RegistrationTransitionSpecifier(
+    start_registration=narrow_fifth_octave.registration,
+    stop_registration=narrow_second_octave.registration,
+    )
+
+# articulation handlers
+alternate_bow_strokes = handlertools.PatternedArticulationsHandler(
+    articulation_lists=(['upbow', 'accent'], ['downbow', 'accent']),
+    )
+    
 
 ### wide registrations ###
 

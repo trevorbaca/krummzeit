@@ -116,10 +116,8 @@
         \override TextScript.font-size = 3
         \override TextScript.outside-staff-priority = 600
         \override TextScript.padding = 6
-        %\override TextScript.staff-padding = 4
         \override TextSpanner.bound-details.right.attach-dir = #LEFT
         \override TextSpanner.padding = 6.75
-        %\override TextSpanner.staff-padding = 4.75
         \override TimeSignature.X-extent = #'(0 . 0)
         \override TimeSignature.break-align-symbol = #'left-edge
         \override TimeSignature.break-visibility = #end-of-line-invisible
@@ -132,7 +130,6 @@
             (padding . 0)
             (stretchability . 0)
         )
-        %\override VerticalAxisGroup.Y-extent = #'(-12 . 12)
         \override VerticalAxisGroup.minimum-Y-extent = #'(-20 . 20)
     }
     \context {
@@ -157,8 +154,9 @@
         \accepts OboeMusicVoice
         instrumentName = \markup { \hcenter-in #12 Oboe }
         shortInstrumentName = \markup { \hcenter-in #12 Ob. }
-        \override TupletBracket.staff-padding = 5
-        \override Beam.positions = #'(-6 . -6)
+        \override Beam.positions = #'(-7 . -7)
+        \override DynamicLineSpanner.staff-padding = 9
+        \override TupletBracket.staff-padding = 6
     }
     \context {
         \Voice
@@ -228,8 +226,9 @@
                     }
             }
         }
-        \override TupletBracket.staff-padding = 5
-        \override Beam.positions = #'(-6 . -6)
+        \override Beam.positions = #'(-7 . -7)
+        \override DynamicLineSpanner.staff-padding = 9
+        \override TupletBracket.staff-padding = 6
     }
     \context {
         \PianoStaff
@@ -238,8 +237,6 @@
         \alias PianoStaff
         \accepts OboeMusicStaff
         \accepts ClarinetMusicStaff
-        %\override StaffGrouper.staff-staff-spacing.minimum-distance = 18
-        %\override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 22
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 22
         \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 26
     }
@@ -285,8 +282,6 @@
         \alias PianoStaff
         \accepts PianoMusicStaff
         \accepts PercussionMusicStaff
-        %\override StaffGrouper.staff-staff-spacing.minimum-distance = 18
-        %\override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 22
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 22
         \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 26
     }
@@ -323,8 +318,9 @@
         \accepts ViolaMusicVoice
         instrumentName = \markup { \hcenter-in #12 Viola }
         shortInstrumentName = \markup { \hcenter-in #12 Va. }
-        \override TupletBracket.staff-padding = 2
-        \override Beam.positions = #'(-6 . -6)
+        \override Beam.positions = #'(-7 . -7)
+        \override DynamicLineSpanner.staff-padding = 9
+        \override TupletBracket.staff-padding = 6
     }
     \context {
         \Voice
@@ -340,8 +336,9 @@
         \accepts CelloMusicVoice
         instrumentName = \markup { \hcenter-in #12 Cello }
         shortInstrumentName = \markup { \hcenter-in #12 Vc. }
-        \override TupletBracket.staff-padding = 5
-        \override Beam.positions = #'(-6 . -6)
+        \override Beam.positions = #'(-7 . -7)
+        \override DynamicLineSpanner.staff-padding = 9
+        \override TupletBracket.staff-padding = 6
     }
     \context {
         \PianoStaff
@@ -351,8 +348,6 @@
         \accepts ViolinMusicStaff
         \accepts ViolaMusicStaff
         \accepts CelloMusicStaff
-        %\override StaffGrouper.staff-staff-spacing.minimum-distance = 18
-        %\override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 22
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 22
         \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 26
     }

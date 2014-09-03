@@ -76,6 +76,17 @@ B1_displacement = makers.DisplacementSpecifier(
         ],
     )
 
+color_fingerings = makers.ColorFingeringSpecifier(
+    number_lists=(
+        [0, 1, 2, 1],
+        ),
+    )
+
+trill_quarter_notes = makers.TrillSpecifier(
+    avoid_indicators=[indicatortools.ColorFingering],
+    minimum_written_duration=Duration(1, 4),
+    )
+
 ### narrow registrations ###
 
 # +3

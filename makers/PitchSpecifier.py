@@ -64,6 +64,9 @@ class PitchSpecifier(abctools.AbjadObject):
         self._reverse = reverse
         if isinstance(source, str):
             self._use_exact_spelling = True
+        elif (isinstance(source, (list, tuple)) and 
+            isinstance(source[0], pitchtools.NamedPitch)):
+            self._use_exact_spelling = True
         else:
             self._use_exact_spelling = False
         if source is not None:

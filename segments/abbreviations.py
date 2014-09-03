@@ -47,10 +47,20 @@ non_flautando = Markup('non flautando', direction=Up)
 non_flautando = non_flautando.italic()
 non_flautando = non_flautando.larger()
 
-string = 'directly on bridge: each stroke full bow'
-on_bridge = Markup(string, direction=Up)
-on_bridge = on_bridge.italic()
+on_bridge = Markup(
+    'directly on bridge: full bow each stroke',
+    direction=Up,
+    )
 on_bridge = on_bridge.larger()
+
+pizz = Markup('pizz', direction=Up)
+pizz = pizz.larger()
+
+scrape_moderately = Markup(
+    'scrape in a circle at moderate speed',
+    direction=Up,
+    )
+scrape_moderately = scrape_moderately.larger()
 
 
 ### PITCH ###
@@ -96,7 +106,19 @@ narrow_fifth_octave = makers.RegistrationSpecifier(
         ),
     )
 
+# +3
+narrow_sixth_octave = makers.RegistrationSpecifier(
+    registration=pitchtools.Registration(
+        [('[A0, F#4)', 22), ('[F#4, C8]', 25)],
+        ),
+    )
+
 # ascending
+narrow_second_to_fifth_octave = makers.RegistrationTransitionSpecifier(
+    start_registration=narrow_second_octave.registration,
+    stop_registration=narrow_fifth_octave.registration,
+    )
+
 narrow_third_to_fifth_octave = makers.RegistrationTransitionSpecifier(
     start_registration=narrow_third_octave.registration,
     stop_registration=narrow_fifth_octave.registration,
@@ -105,6 +127,11 @@ narrow_third_to_fifth_octave = makers.RegistrationTransitionSpecifier(
 narrow_fourth_to_fifth_octave = makers.RegistrationTransitionSpecifier(
     start_registration=narrow_fourth_octave.registration,
     stop_registration=narrow_fifth_octave.registration,
+    )
+
+narrow_fifth_to_sixth_octave = makers.RegistrationTransitionSpecifier(
+    start_registration=narrow_fifth_octave.registration,
+    stop_registration=narrow_sixth_octave.registration,
     )
 
 # descending

@@ -40,6 +40,8 @@ class ClusterSpecifier(abctools.AbjadObject):
         '_stop_pitch',
         )
 
+    _mutates_score = True
+
     ### INITIALIZER ###
 
     def __init__(
@@ -58,6 +60,41 @@ class ClusterSpecifier(abctools.AbjadObject):
         self._include_flat_markup = include_flat_markup
         assert isinstance(include_natural_markup, bool)
         self._include_natural_markup = include_natural_markup
+
+    ### SPECIAL METHODS ###
+
+    def __call__(self, logical_ties, timespan):
+        diatonic_pitches = self._make_tertian_pitches()
+        first_note = logical_ties[0].head
+        root = inspect_(first_note).get_parentage().root
+        with systemtools.ForbidUpdate(component=root):
+            for logical_tie in logical_ties:
+                for note in logical_tie:
+                    chord = scoretools.Chord(
+                        diatonic_pitches, 
+                        note.written_duration,
+                        )
+                    mutate(note).replace(chord)
+                    indicator = indicatortools.KeyCluster(
+                        include_white_keys=self.include_natural_markup,
+                        include_black_keys=self.include_flat_markup,
+                        )
+                    attach(indicator, chord)
+
+    ### PRIVATE METHODS ###
+
+    def _make_tertian_pitches(self):
+        start_pitch_number = self.start_pitch.pitch_number
+        stop_pitch_number = self.stop_pitch.pitch_number
+        diatonic_pitches = []
+        for pitch_number in range(start_pitch_number, stop_pitch_number+1):
+            pitch = pitchtools.NamedPitch(pitch_number)
+            if pitch.accidental == pitchtools.Accidental(''):
+                diatonic_pitches.append(pitch)
+        tertian_pitches = diatonic_pitches[::2]
+        if diatonic_pitches[-1] not in tertian_pitches:
+            tertian_pitches.append(diatonic_pitches[-1])
+        return tertian_pitches
 
     ### PUBLIC PROPERTIES ###
 

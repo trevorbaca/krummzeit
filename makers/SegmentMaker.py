@@ -177,7 +177,8 @@ class SegmentMaker(makertools.SegmentMaker):
         context_names = [_[0] for _ in timespan_map]
         compound_scope._context_names = tuple(context_names)
         logical_ties = []
-        for note in iterate(self._score).by_timeline(Note):
+        prototype = (scoretools.Note, scoretools.Chord)
+        for note in iterate(self._score).by_timeline(prototype):
             if note in compound_scope:
                 logical_tie = inspect_(note).get_logical_tie()
                 if logical_tie.head is note:
@@ -214,12 +215,19 @@ class SegmentMaker(makertools.SegmentMaker):
                 attach(spanner, leaves)
             else:
                 specifier(logical_ties, timespan)
+            if getattr(specifier, '_mutates_score', False):
+                result = self._compound_scope_to_logical_ties(compound_scope)
+                logical_ties, timespan = result
 
-    # TODO: will need to extend to handle intervening rests
     def _logical_ties_to_leaves(self, logical_ties):
+        first_note = logical_ties[0].head
+        last_note = logical_ties[-1][-1]
         leaves = []
-        for logical_tie in logical_ties:
-            leaves.extend(logical_tie)
+        current_leaf = first_note
+        while current_leaf is not last_note:
+            leaves.append(current_leaf)
+            current_leaf = inspect_(current_leaf).get_leaf(1)
+        leaves.append(last_note)
         return leaves
 
     def _interpret_pitch_handler(self, pitch_handler):

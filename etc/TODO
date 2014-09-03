@@ -1,19 +1,23 @@
-1.  Implement SegmentMaker._set_start_instruments() method.
+1.  Maybe change SegmentMaker.make_music_handler(specifier=None)
+    to SegmentMaker.make_music_handler(specifiers=None)
+    and always expect a list.
+
+2.  Implement SegmentMaker._set_start_instruments() method.
     Method find first music-maker in each context.
     And then set that instrument at start of segment.
 
-2.  Write test to find redudant instrument attachments.
+3.  Write test to find redudant instrument attachments.
 
-3.  Add instrument change markup to score.
+4.  Add instrument change markup to score.
     So that "bass clarinet" shows up immediately when assigned.
     (Right now appears only at start of next system.)
 
-4.  Add tempo map support for fermatas. And breath marks.
-
-5.  For next score:
-    Come up with a semantic way of handling 1/4-type measure inserts.
+5.  Add tempo map support for fermatas. And breath marks.
 
 6.  For next score:
+    Come up with a semantic way of handling 1/4-type measure inserts.
+
+7.  For next score:
     Make map-making application.
     Implement object model behind.
     Provide ASCII or LateX output.

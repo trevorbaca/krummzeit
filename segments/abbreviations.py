@@ -131,18 +131,22 @@ white_flautando_spanner = spannertools.TextSpanner(
 	}
 )
 
+left_text = Markup('molto flautando').italic().larger() + Markup.hspace(1)
+right_text = Markup.hspace(1) + Markup('molto gridato').italic().larger()
 molto_flaut_to_molto_grid = spannertools.TextSpanner(
 	overrides = {
-		'text_spanner__dash_period': '1.5',
-		'text_spanner__bound_details__right_broken__padding': '0',
-		'text_spanner__bound_details__left_broken__text': "markuptools.Markup((markuptools.MarkupCommand('italic','(fl.)'),markuptools.MarkupCommand('hspace',1)))",
-		'text_spanner__bound_details__left__stencil_align_dir_y': '0',
-		'text_spanner__bound_details__right__text': "markuptools.Markup((markuptools.MarkupCommand('draw-line',schemetools.SchemePair(0, -1)),))",
-		'text_spanner__bound_details__right_broken__text': 'None',
-		'text_spanner__bound_details__left__text': "markuptools.Markup((markuptools.MarkupCommand('italic','\\xe2\\x80\\x9cwhite\\xe2\\x80\\x9d flautando'),markuptools.MarkupCommand('hspace',1)))",
-		'text_spanner__bound_details__right__padding': '1',
-		'text_spanner__bound_details__left__padding': '-1',
-		'text_spanner__dash_fraction': '0.25',
+		'text_spanner__bound_details__left__padding': -1,
+		'text_spanner__bound_details__left__stencil_align_dir_y': 0,
+		'text_spanner__bound_details__left__text': left_text,
+		'text_spanner__bound_details__left_broken__text': None,
+		'text_spanner__bound_details__right__arrow': True,
+		'text_spanner__bound_details__right__padding': 1,
+		'text_spanner__bound_details__right__stencil_align_dir_y': 0,
+		'text_spanner__bound_details__right__text': right_text,
+		'text_spanner__bound_details__right_broken__padding': 0,
+		'text_spanner__bound_details__right_broken__text': None,
+		'text_spanner__dash_fraction': 0.25,
+		'text_spanner__dash_period': 1.5,
 	}
 )
 

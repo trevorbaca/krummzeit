@@ -39,6 +39,13 @@ vc = 'Cello Music Voice'
 
 
 ### MARKUP ###
+accents = handlertools.ReiteratedArticulationHandler(
+    articulation_list=['>'],
+    )
+
+string = 'accent changes of direction noticeably at each attack'
+accent_changes = Markup(string, direction=Up)
+
 ffff_possibile = Markup('ffff').dynamic() + Markup('possibile').italic()
 
 fingertips = Markup(
@@ -60,6 +67,10 @@ on_bridge = Markup(
     direction=Up,
     )
 on_bridge = on_bridge.larger()
+
+
+string = 'directly on bridge: very slow bow, imperceptible bow changes'
+on_bridge_slow = Markup(string, direction=Up).larger()
 
 pizz = Markup('pizz.', direction=Up)
 pizz = pizz.larger()

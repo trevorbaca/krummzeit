@@ -12,9 +12,11 @@ class MusicHandler(abctools.AbjadObject):
             >>> import krummzeit
             >>> handler = krummzeit.makers.MusicHandler(
             ...     scope=('Violin Music Voice', (1, 4)),
-            ...     specifiers=krummzeit.makers.DisplacementSpecifier(
-            ...         displacements=[0, 0, 0, 0, 1, 1, 1, 1],
-            ...         ),
+            ...     specifiers=[
+            ...         krummzeit.makers.DisplacementSpecifier(
+            ...             displacements=[0, 0, 0, 0, 1, 1, 1, 1],
+            ...             ),
+            ...         ],
             ...     )
 
         ::
@@ -25,11 +27,13 @@ class MusicHandler(abctools.AbjadObject):
                     context_name='Violin Music Voice',
                     stages=(1, 4),
                     ),
-                specifiers=krummzeit.makers.DisplacementSpecifier(
-                    displacements=datastructuretools.CyclicTuple(
-                        [0, 0, 0, 0, 1, 1, 1, 1]
+                specifiers=[
+                    krummzeit.makers.DisplacementSpecifier(
+                        displacements=datastructuretools.CyclicTuple(
+                            [0, 0, 0, 0, 1, 1, 1, 1]
+                            ),
                         ),
-                    ),
+                    ],
                 )
 
     '''
@@ -54,6 +58,7 @@ class MusicHandler(abctools.AbjadObject):
         if scope is not None:
             assert isinstance(scope, makers.SimpleScope), repr(scope)
         self._scope = scope
+        assert isinstance(specifiers, list), repr(specifiers)
         self._specifiers = specifiers
 
     ### PUBLIC PROPERTIES ###
@@ -85,12 +90,8 @@ class MusicHandler(abctools.AbjadObject):
             ::
 
                 >>> print(format(handler.specifiers))
-                krummzeit.makers.DisplacementSpecifier(
-                    displacements=datastructuretools.CyclicTuple(
-                        [0, 0, 0, 0, 1, 1, 1, 1]
-                        ),
-                    )
+                [DisplacementSpecifier(displacements=CyclicTuple([0, 0, 0, 0, 1, 1, 1, 1]))]
 
-        Set to specifiers or none.
+        Set to list of specifiers or none.
         '''
         return self._specifiers

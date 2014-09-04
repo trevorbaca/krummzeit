@@ -68,6 +68,11 @@ scrape_moderately = Markup(
     )
 scrape_moderately = scrape_moderately.larger()
 
+senza_pedale = Markup('senza pedale', direction=Up)
+senza_pedale = senza_pedale.italic()
+senza_pedale = senza_pedale.larger()
+
+
 show_tempo = Markup('allow bowing to convey accelerando', direction=Up)
 show_tempo = show_tempo.larger()
 
@@ -175,37 +180,30 @@ narrow_seventh_to_fifth_octave = makers.RegistrationTransitionSpecifier(
     start_registration=narrow_seventh_octave.registration,
     stop_registration=narrow_fifth_octave.registration,
     )
-
 narrow_sixth_to_fifth_octave = makers.RegistrationTransitionSpecifier(
     start_registration=narrow_sixth_octave.registration,
     stop_registration=narrow_fifth_octave.registration,
     )
-    
 narrow_fifth_to_fourth_octave = makers.RegistrationTransitionSpecifier(
     start_registration=narrow_fifth_octave.registration,
     stop_registration=narrow_fourth_octave.registration,
     )
-
 narrow_fifth_to_third_octave = makers.RegistrationTransitionSpecifier(
     start_registration=narrow_fifth_octave.registration,
     stop_registration=narrow_third_octave.registration,
     )
-
 narrow_fifth_to_second_octave = makers.RegistrationTransitionSpecifier(
     start_registration=narrow_fifth_octave.registration,
     stop_registration=narrow_second_octave.registration,
     )
-
 narrow_fourth_to_third_octave = makers.RegistrationTransitionSpecifier(
     start_registration=narrow_fourth_octave.registration,
     stop_registration=narrow_third_octave.registration,
     )
-
 narrow_fourth_to_second_octave = makers.RegistrationTransitionSpecifier(
     start_registration=narrow_fourth_octave.registration,
     stop_registration=narrow_second_octave.registration,
     )
-
 narrow_third_to_second_octave = makers.RegistrationTransitionSpecifier(
     start_registration=narrow_third_octave.registration,
     stop_registration=narrow_second_octave.registration,
@@ -272,3 +270,9 @@ stem_tremolo = handlertools.StemTremoloHandler(
     )
 
 ottava = spannertools.OctavationSpanner(start=1, stop=0)
+ottava_bassa = spannertools.OctavationSpanner(start=-1, stop=0)
+
+low_piano_cluster = makers.ClusterSpecifier(
+    start_pitch=NamedPitch('C1'),
+    stop_pitch=NamedPitch('C3'),
+    )

@@ -12,7 +12,7 @@ class MusicHandler(abctools.AbjadObject):
             >>> import krummzeit
             >>> handler = krummzeit.makers.MusicHandler(
             ...     scope=('Violin Music Voice', (1, 4)),
-            ...     specifier=krummzeit.makers.DisplacementSpecifier(
+            ...     specifiers=krummzeit.makers.DisplacementSpecifier(
             ...         displacements=[0, 0, 0, 0, 1, 1, 1, 1],
             ...         ),
             ...     )
@@ -25,7 +25,7 @@ class MusicHandler(abctools.AbjadObject):
                     context_name='Violin Music Voice',
                     stages=(1, 4),
                     ),
-                specifier=krummzeit.makers.DisplacementSpecifier(
+                specifiers=krummzeit.makers.DisplacementSpecifier(
                     displacements=datastructuretools.CyclicTuple(
                         [0, 0, 0, 0, 1, 1, 1, 1]
                         ),
@@ -38,7 +38,7 @@ class MusicHandler(abctools.AbjadObject):
 
     __slots__ = (
         '_scope',
-        '_specifier',
+        '_specifiers',
         )
 
     ### INITIALIZER ###
@@ -46,7 +46,7 @@ class MusicHandler(abctools.AbjadObject):
     def __init__(
         self,
         scope=None,
-        specifier=None,
+        specifiers=None,
         ):
         from krummzeit import makers
         if isinstance(scope, tuple):
@@ -54,7 +54,7 @@ class MusicHandler(abctools.AbjadObject):
         if scope is not None:
             assert isinstance(scope, makers.SimpleScope), repr(scope)
         self._scope = scope
-        self._specifier = specifier
+        self._specifiers = specifiers
 
     ### PUBLIC PROPERTIES ###
 
@@ -77,20 +77,20 @@ class MusicHandler(abctools.AbjadObject):
         return self._scope
 
     @property
-    def specifier(self):
-        r'''Gets specifier of music-handler.
+    def specifiers(self):
+        r'''Gets specifiers of music-handler.
 
         ..  container:: example
 
             ::
 
-                >>> print(format(handler.specifier))
+                >>> print(format(handler.specifiers))
                 krummzeit.makers.DisplacementSpecifier(
                     displacements=datastructuretools.CyclicTuple(
                         [0, 0, 0, 0, 1, 1, 1, 1]
                         ),
                     )
 
-        Set to specifier or none.
+        Set to specifiers or none.
         '''
-        return self._specifier
+        return self._specifiers

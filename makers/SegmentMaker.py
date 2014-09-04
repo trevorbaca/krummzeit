@@ -443,7 +443,7 @@ class SegmentMaker(makertools.SegmentMaker):
         message = message.format(context_name, stage)
         raise KeyError(message)
 
-    def make_music_handler(self, scope, specifier):
+    def make_music_handler(self, scope, specifiers):
         r'''Makes music-handler.
 
         Returns music-handler.
@@ -480,7 +480,7 @@ class SegmentMaker(makertools.SegmentMaker):
         for scope_token in scope_tokens:
             music_handler = makers.MusicHandler(
                 scope=scope_token,
-                specifier=specifier,
+                specifier=specifiers,
                 )
             self._music_handlers.append(music_handler)
             music_handlers.append(music_handler)

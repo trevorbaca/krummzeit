@@ -79,6 +79,27 @@ class SegmentMaker(makertools.SegmentMaker):
             start_measure = context[start_measure_index]
             attach(markup, start_measure)
 
+    def _attach_fermatas(self):
+        if not self.tempo_map:
+            return
+        context = self._score['Time Signature Context']
+        prototype = (
+            indicatortools.Fermata,
+            indicatortools.BreathMark,
+            )
+        for stage_number, directive in self.tempo_map:
+            if not isinstance(directive, prototype):
+                continue
+            assert 0 < stage_number <= self.stage_count
+            result = self._stage_number_to_measure_indices(stage_number)
+            start_measure_index, stop_measure_index = result
+            start_measure = context[start_measure_index]
+            assert isinstance(start_measure, Measure), start_measure
+            start_skip = start_measure[0]
+            assert isinstance(start_skip, scoretools.Skip), start_skip
+            directive = new(directive)
+            attach(directive, start_skip)
+        
     def _attach_rehearsal_mark(self):
         assert len(self.name) == 1 and self.name.upper(), repr(self.name)
         letter_number = ord(self.name) - ord('A') + 1
@@ -161,6 +182,7 @@ class SegmentMaker(makertools.SegmentMaker):
     def _interpret_music_makers(self):
         self._make_music_for_time_signature_context()
         self._attach_tempo_indicators()
+        self._attach_fermatas()
         for voice in iterate(self._score).by_class(scoretools.Voice):
             self._make_music_for_voice(voice)
 

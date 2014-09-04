@@ -93,6 +93,7 @@
         \consists Bar_number_engraver
         \consists Mark_engraver
         \consists Metronome_mark_engraver
+        \consists Script_engraver
         \consists Text_engraver
         \consists Text_spanner_engraver
         \consists Time_signature_engraver
@@ -113,6 +114,8 @@
         \override RehearsalMark.font-size = 10
         \override RehearsalMark.outside-staff-priority = 500
         \override RehearsalMark.self-alignment-X = #center
+        \override Script.font-size = 6
+        \override Script.extra-offset = #'(4 . -9)
         \override TextScript.font-size = 3
         \override TextScript.outside-staff-priority = 600
         \override TextScript.padding = 6

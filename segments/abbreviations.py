@@ -78,6 +78,11 @@ fifth_harmonic_of_F1 = fifth_harmonic_of_F1.larger()
 
 gridato_possibile = Markup('gridato possibile', direction=Up).italic().larger()
 
+leggierissimo = Markup('leggierissimo', direction=Up).italic().larger()
+
+string = 'leggierissimo (off-string bowing on staccati)'
+leggierissimo_off_string = Markup(string, direction=Up).italic().larger()
+
 molto_flautando = Markup('molto flautando', direction=Up).italic().larger()
 
 string = 'molto flautando ed estr. sul pont.'
@@ -332,8 +337,14 @@ narrow_third_to_second_octave = makers.RegistrationTransitionSpecifier(
 alternate_bow_strokes = handlertools.PatternedArticulationsHandler(
     articulation_lists=(['upbow', 'accent'], ['downbow', 'accent']),
     )
+staccati = handlertools.ReiteratedArticulationHandler(
+    articulation_list=['staccato'],
+    maximum_duration=Duration(1, 4),
+    skip_ties=True,
+    )
 staccatissimi = handlertools.ReiteratedArticulationHandler(
     articulation_list=['staccatissimo'],
+    skip_ties=True,
     )
 tenuti = handlertools.ReiteratedArticulationHandler(
     articulation_list=['tenuto'],

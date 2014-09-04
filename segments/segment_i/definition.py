@@ -201,6 +201,72 @@ segment_maker.copy_music_maker(
     )
 
 
+###############################################################################
+############################## MUSIC-HANDLERS #################################
+###############################################################################
+
+### (11.1) harpsichord clusters ###
+segment_maker.make_music_handler(
+    scope=(pf, (1, 5)),
+    specifiers=[
+        harpsichord_cluster,
+        ],
+    )
+### (14) string reiteration ###
+segment_maker.make_pitch_handler(
+    scope=(vn, 1),
+    specifiers=[
+        makers.PitchSpecifier(
+            source='Db4',
+            ),
+        ],
+    )
+segment_maker.make_pitch_handler(
+    scope=(va, 1),
+    specifiers=[
+        makers.PitchSpecifier(
+            source='C3',
+            ),
+        ],
+    )
+segment_maker.make_pitch_handler(
+    scope=(vc, 1),
+    specifiers=[
+        makers.PitchSpecifier(
+            source='C2',
+            ),
+        ],
+    )
+segment_maker.make_music_handler(
+    scope=([vn, va, vc], 1),
+    specifiers=[
+        stem_tremolo,
+        fff_possibile
+        ],
+    )
+segment_maker.make_music_handler(
+    scope=(vn, 1),
+    specifiers=[
+        tremolo_down(2),
+        ],
+    )
+segment_maker.make_music_handler(
+    scope=(va, 1),
+    specifiers=[
+        tremolo_down(3),
+        ],
+    )
+segment_maker.make_music_handler(
+    scope=(vc, 1),
+    specifiers=[
+        tremolo_down(3.5),
+        ],
+    )
+
+
+
+
+
 r'''
 90 --> 135: 7/8 6/4 7/4 7/4 3/4
             19.5 quarters / 112.5 = 0.17 minutes

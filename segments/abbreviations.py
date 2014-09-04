@@ -51,7 +51,7 @@ accents = handlertools.ReiteratedArticulationHandler(
     articulation_list=['>'],
     )
 
-attackless = Markup('attackless').larger()
+attackless = Markup('attackless', direction=Up).larger()
 
 string = 'accent changes of direction noticeably at each attack'
 accent_changes = Markup(string, direction=Up)
@@ -199,6 +199,15 @@ color_microtones = makers.MicrotonalDeviationSpecifier(
 trill_quarter_notes = makers.TrillSpecifier(
     forbidden_annotations=['color fingering', 'color microtone'],
     minimum_written_duration=Duration(1, 4),
+    )
+
+pervasive_trills = makers.TrillSpecifier(
+    minimum_written_duration=None,
+    )
+
+pervasive_A5_trills = makers.TrillSpecifier(
+    minimum_written_duration=None,
+    pitch=NamedPitch('A5'),
     )
 
 ### narrow registrations ###
@@ -354,6 +363,10 @@ wide_seventh_octave = makers.RegistrationSpecifier(
 patterned_f_ff = handlertools.TerracedDynamicsHandler(
     dynamics=['f', 'f', 'ff', 'f', 'ff', 'f', 'f', 'ff', 'ff'],
     minimum_duration=Duration(1, 8),
+    )
+
+repeated_p_to_ppp = handlertools.NoteAndChordHairpinHandler(
+    hairpin_token='p > ppp',
     )
 
 ### miscellaneous

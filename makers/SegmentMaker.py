@@ -443,7 +443,11 @@ class SegmentMaker(makertools.SegmentMaker):
         message = message.format(context_name, stage)
         raise KeyError(message)
 
-    def make_music_handler(self, scope, specifiers):
+    def make_music_handler(
+        self, 
+        scope, 
+        specifiers,
+        ):
         r'''Makes music-handler.
 
         Returns music-handler.
@@ -502,16 +506,11 @@ class SegmentMaker(makertools.SegmentMaker):
 
     def make_pitch_handler(
         self,
-        specifiers,
         scope,
+        specifiers,
         ):
         from krummzeit import makers
-        if isinstance(specifiers, makers.PitchSpecifier):
-            specifiers = [specifiers]
-        elif isinstance(specifiers, list):
-            pass
-        else:
-            raise TypeError(specifiers)
+        assert isinstance(specifiers, list), repr(specifiers)
         pitch_handler = makers.PitchHandler(
             scope=scope,
             specifiers=specifiers,

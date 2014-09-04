@@ -453,7 +453,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
 ### definitions (move to abbreviations) ###
 indigo_pitch_classes = materials.indigo_pitch_classes.manifest_payload
 
-B1_displacement = makers.DisplacementSpecifier(
+krummzeit_displacement = makers.DisplacementSpecifier(
     displacements=[
         0, 0, 0, 0, 0, 0, -1, 1, 1, 1, 1,
         0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 
@@ -500,22 +500,22 @@ pitch_handler = segment_maker.make_pitch_handler(
 ### (12) (hpschd, vn, ob, cl) displacement ###
 segment_maker.make_music_handler(
     scope=(pf, (1, 10)),
-    specifier=B1_displacement,
+    specifier=krummzeit_displacement,
     )
 
 segment_maker.make_music_handler(
     scope=(vn, (1, 13)),
-    specifier=B1_displacement,
+    specifier=krummzeit_displacement,
     )
 
 segment_maker.make_music_handler(
     scope=(ob, (9, 13)),
-    specifier=B1_displacement,
+    specifier=krummzeit_displacement,
     )
 
 segment_maker.make_music_handler(
     scope=(cl, (3, 12)),
-    specifier=B1_displacement,
+    specifier=krummzeit_displacement,
     )
 
 ### [B1-8] (12) (hpschd, vn, ob, cl) registration ###

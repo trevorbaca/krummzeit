@@ -352,7 +352,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_music_handler(
     scope=(ob, (1, 3)),
     specifier=[
-        B1_displacement,
+        krummzeit_displacement,
         wide_fifth_octave,
         color_fingerings,
         trill_quarter_notes,
@@ -443,7 +443,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_music_handler(
     scope=(vn, (19, 22)),
     specifier=[
-        B1_displacement,
+        krummzeit_displacement,
         wide_fifth_octave,
         color_microtones,
         trill_quarter_notes,

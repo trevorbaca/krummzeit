@@ -77,7 +77,7 @@ show_tempo = show_tempo.larger()
 indigo_pitch_classes = materials.indigo_pitch_classes.manifest_payload
 violet_pitch_classes = materials.violet_pitch_classes.manifest_payload
 
-B1_displacement = makers.DisplacementSpecifier(
+krummzeit_displacement = makers.DisplacementSpecifier(
     displacements=[
         0, 0, 0, 0, 0, 0, -1, 1, 1, 1, 1,
         0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 

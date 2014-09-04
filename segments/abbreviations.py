@@ -214,3 +214,9 @@ patterned_f_ff = handlertools.TerracedDynamicsHandler(
     dynamics=['f', 'f', 'ff', 'f', 'ff', 'f', 'f', 'ff', 'ff'],
     minimum_duration=Duration(1, 8),
     )
+
+### miscellaneous
+
+stem_tremolo = handlertools.StemTremoloHandler(
+    hash_mark_counts=[32],
+    )

@@ -495,7 +495,7 @@ segment_maker.make_music_handler(
 segment_maker.make_music_handler(
     scope=(perc, (27, 30)),
     specifiers=[
-        handlertools.StemTremoloHandler(hash_mark_counts=[32]),
+        stem_tremolo,
         fingertips,
         Dynamic('ppp'),
         ],

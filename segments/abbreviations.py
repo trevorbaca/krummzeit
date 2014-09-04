@@ -51,6 +51,8 @@ accents = handlertools.ReiteratedArticulationHandler(
     articulation_list=['>'],
     )
 
+attackless = Markup('attackless').larger()
+
 string = 'accent changes of direction noticeably at each attack'
 accent_changes = Markup(string, direction=Up)
 
@@ -65,15 +67,16 @@ fingertips = Markup(
     )
 fingertips = fingertips.larger()
 
-fourth_harmonic_of_C2 = Markup('touch C2 string at 4th harmonic', direction=Up)
-fourth_harmonic_of_C2 = fourth_harmonic_of_C2.larger()
+fifth_harmonic_of_F1 = Markup('touch F1 string at 5th harmonic', direction=Up)
+fifth_harmonic_of_F1 = fifth_harmonic_of_F1.larger()
 
-molto_flautando = Markup('molto flautando', direction=Up)
-molto_flautando = molto_flautando.italic()
-molto_flautando = molto_flautando.larger()
+molto_flautando = Markup('molto flautando', direction=Up).italic().larger()
 
 string = 'molto flautando ed estr. sul pont.'
 molto_flautando_e_pont = Markup(string, direction=Up).italic().larger()
+
+string = 'molto gridato ed estr. sul pont.'
+molto_gridato = Markup(string, direction=Up).italic().larger()
 
 natural_harmonics = handlertools.OverrideHandler(
     grob_name='note_head',
@@ -95,6 +98,8 @@ on_bridge = on_bridge.larger()
 string = 'directly on bridge: very slow bow, imperceptible bow changes'
 on_bridge_slow = Markup(string, direction=Up).larger()
 
+ordinario = Markup('ordinario', direction=Up).larger()
+
 pizz = Markup('pizz.', direction=Up)
 pizz = pizz.larger()
 
@@ -115,6 +120,17 @@ senza_pedale = senza_pedale.larger()
 
 show_tempo = Markup('allow bowing to convey accelerando', direction=Up)
 show_tempo = show_tempo.larger()
+
+tremolo_down_3 = handlertools.OverrideHandler(
+    grob_name='stem_tremolo',
+    attribute_name='extra_offset',
+    attribute_value='(0, -2)',
+    )
+tremolo_down_4 = handlertools.OverrideHandler(
+    grob_name='stem_tremolo',
+    attribute_name='extra_offset',
+    attribute_value='(0, -2)',
+    )
 
 white_flautando_spanner = spannertools.TextSpanner(
 	overrides = {
@@ -352,4 +368,9 @@ ottava_bassa = spannertools.OctavationSpanner(start=-1, stop=0)
 low_piano_cluster = makers.ClusterSpecifier(
     start_pitch=NamedPitch('C1'),
     stop_pitch=NamedPitch('C3'),
+    )
+
+tenor_piano_cluster = makers.ClusterSpecifier(
+    start_pitch=NamedPitch('A2'),
+    stop_pitch=NamedPitch('B3'),
     )

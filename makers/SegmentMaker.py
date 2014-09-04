@@ -195,10 +195,10 @@ class SegmentMaker(makertools.SegmentMaker):
         compound_scope = makers.CompoundScope(simple_scope)
         result = self._compound_scope_to_logical_ties(compound_scope)
         logical_ties, timespan = result
-        if isinstance(music_handler.specifier, (list, tuple)):
-            specifiers = tuple(music_handler.specifier)
+        if isinstance(music_handler.specifiers, (list, tuple)):
+            specifiers = tuple(music_handler.specifiers)
         else:
-            specifiers = (music_handler.specifier,)
+            specifiers = (music_handler.specifiers,)
         indicator_prototype = (
             Clef,
             Dynamic,
@@ -480,7 +480,7 @@ class SegmentMaker(makertools.SegmentMaker):
         for scope_token in scope_tokens:
             music_handler = makers.MusicHandler(
                 scope=scope_token,
-                specifier=specifiers,
+                specifiers=specifiers,
                 )
             self._music_handlers.append(music_handler)
             music_handlers.append(music_handler)

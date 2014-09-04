@@ -502,13 +502,15 @@ class SegmentMaker(makertools.SegmentMaker):
 
     def make_pitch_handler(
         self,
-        pitch_specifier,
+        specifiers,
         scope,
         ):
         from krummzeit import makers
+        assert isinstance(specifiers, makers.PitchSpecifier), specifiers
+        specifiers = [specifiers]
         pitch_handler = makers.PitchHandler(
             scope=scope,
-            specifiers=[pitch_specifier],
+            specifiers=specifiers,
             )
         self._music_handlers.append(pitch_handler)
         return pitch_handler

@@ -56,10 +56,12 @@ attackless = Markup('attackless', direction=Up).larger()
 string = 'accent changes of direction noticeably at each attack'
 accent_changes = Markup(string, direction=Up)
 
+effort_fff = make_effort_dynamic_markup('fff')
 effort_ff = make_effort_dynamic_markup('ff')
 effort_mp = make_effort_dynamic_markup('mp')
 
 ffff_possibile = Markup('ffff').dynamic() + Markup('possibile').italic()
+fff_possibile = Markup('fff').dynamic() + Markup('possibile').italic()
 
 fingertips = Markup(
     'rapid roll with fingertips: keep speed constant during accelerando',
@@ -134,9 +136,12 @@ senza_pedale = senza_pedale.larger()
 show_tempo = Markup('allow bowing to convey accelerando', direction=Up)
 show_tempo = show_tempo.larger()
 
+string = 'subito non armonichi e non gridato'
+subito_non_armonichi = Markup(string, direction=Up).italic().larger()
+
 subito_ordinario = Markup('subito ordinario', direction=Up).larger()
 
-tremolo_down_3 = handlertools.OverrideHandler(
+tremolo_down_2 = handlertools.OverrideHandler(
     grob_name='stem_tremolo',
     attribute_name='extra_offset',
     attribute_value='(0, -2)',
@@ -144,7 +149,7 @@ tremolo_down_3 = handlertools.OverrideHandler(
 tremolo_down_4 = handlertools.OverrideHandler(
     grob_name='stem_tremolo',
     attribute_name='extra_offset',
-    attribute_value='(0, -2)',
+    attribute_value='(0, -4)',
     )
 
 left_text = Markup('molto flautando').italic().larger() + Markup.hspace(1)

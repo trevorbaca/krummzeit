@@ -39,12 +39,23 @@ vc = 'Cello Music Voice'
 
 
 ### MARKUP ###
+def make_effort_dynamic_markup(dynamic_text, direction=Down):
+    left_quotes = Markup('“').italic().larger()
+    dynamic_markup = Markup(dynamic_text).dynamic()
+    right_quotes = Markup('”').italic().larger()
+    markup = left_quotes + dynamic_markup + right_quotes
+    markup._direction = direction
+    return markup
+
 accents = handlertools.ReiteratedArticulationHandler(
     articulation_list=['>'],
     )
 
 string = 'accent changes of direction noticeably at each attack'
 accent_changes = Markup(string, direction=Up)
+
+effort_ff = make_effort_dynamic_markup('ff')
+effort_mp = make_effort_dynamic_markup('mp')
 
 ffff_possibile = Markup('ffff').dynamic() + Markup('possibile').italic()
 
@@ -54,9 +65,15 @@ fingertips = Markup(
     )
 fingertips = fingertips.larger()
 
+fourth_harmonic_of_C2 = Markup('touch C2 string at 4th harmonic', direction=Up)
+fourth_harmonic_of_C2 = fourth_harmonic_of_C2.larger()
+
 molto_flautando = Markup('molto flautando', direction=Up)
 molto_flautando = molto_flautando.italic()
 molto_flautando = molto_flautando.larger()
+
+string = 'molto flautando ed estr. sul pont.'
+molto_flautando_e_pont = Markup(string, direction=Up).italic().larger()
 
 natural_harmonics = handlertools.OverrideHandler(
     grob_name='note_head',
@@ -98,6 +115,36 @@ senza_pedale = senza_pedale.larger()
 
 show_tempo = Markup('allow bowing to convey accelerando', direction=Up)
 show_tempo = show_tempo.larger()
+
+white_flautando_spanner = spannertools.TextSpanner(
+	overrides = {
+		'text_spanner__dash_period': '1.5',
+		'text_spanner__bound_details__right_broken__padding': '0',
+		'text_spanner__bound_details__left_broken__text': "markuptools.Markup((markuptools.MarkupCommand('italic','(fl.)'),markuptools.MarkupCommand('hspace',1)))",
+		'text_spanner__bound_details__left__stencil_align_dir_y': '0',
+		'text_spanner__bound_details__right__text': "markuptools.Markup((markuptools.MarkupCommand('draw-line',schemetools.SchemePair(0, -1)),))",
+		'text_spanner__bound_details__right_broken__text': 'None',
+		'text_spanner__bound_details__left__text': "markuptools.Markup((markuptools.MarkupCommand('italic','\\xe2\\x80\\x9cwhite\\xe2\\x80\\x9d flautando'),markuptools.MarkupCommand('hspace',1)))",
+		'text_spanner__bound_details__right__padding': '1',
+		'text_spanner__bound_details__left__padding': '-1',
+		'text_spanner__dash_fraction': '0.25',
+	}
+)
+
+molto_flaut_to_molto_grid = spannertools.TextSpanner(
+	overrides = {
+		'text_spanner__dash_period': '1.5',
+		'text_spanner__bound_details__right_broken__padding': '0',
+		'text_spanner__bound_details__left_broken__text': "markuptools.Markup((markuptools.MarkupCommand('italic','(fl.)'),markuptools.MarkupCommand('hspace',1)))",
+		'text_spanner__bound_details__left__stencil_align_dir_y': '0',
+		'text_spanner__bound_details__right__text': "markuptools.Markup((markuptools.MarkupCommand('draw-line',schemetools.SchemePair(0, -1)),))",
+		'text_spanner__bound_details__right_broken__text': 'None',
+		'text_spanner__bound_details__left__text': "markuptools.Markup((markuptools.MarkupCommand('italic','\\xe2\\x80\\x9cwhite\\xe2\\x80\\x9d flautando'),markuptools.MarkupCommand('hspace',1)))",
+		'text_spanner__bound_details__right__padding': '1',
+		'text_spanner__bound_details__left__padding': '-1',
+		'text_spanner__dash_fraction': '0.25',
+	}
+)
 
 
 
@@ -237,9 +284,11 @@ narrow_third_to_second_octave = makers.RegistrationTransitionSpecifier(
 alternate_bow_strokes = handlertools.PatternedArticulationsHandler(
     articulation_lists=(['upbow', 'accent'], ['downbow', 'accent']),
     )
-
 staccatissimi = handlertools.ReiteratedArticulationHandler(
     articulation_list=['staccatissimo'],
+    )
+tenuti = handlertools.ReiteratedArticulationHandler(
+    articulation_list=['tenuto'],
     )
     
 

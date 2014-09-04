@@ -129,6 +129,8 @@ senza_pedale = senza_pedale.larger()
 show_tempo = Markup('allow bowing to convey accelerando', direction=Up)
 show_tempo = show_tempo.larger()
 
+subito_ordinario = Markup('subito ordinario', direction=Up).larger()
+
 tremolo_down_3 = handlertools.OverrideHandler(
     grob_name='stem_tremolo',
     attribute_name='extra_offset',

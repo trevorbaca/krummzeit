@@ -58,6 +58,12 @@ molto_flautando = Markup('molto flautando', direction=Up)
 molto_flautando = molto_flautando.italic()
 molto_flautando = molto_flautando.larger()
 
+natural_harmonics = handlertools.OverrideHandler(
+    grob_name='note_head',
+    attribute_name='style',
+    attribute_value="'harmonic'",
+    )
+
 non_flautando = Markup('non flautando', direction=Up)
 non_flautando = non_flautando.italic()
 non_flautando = non_flautando.larger()

@@ -449,154 +449,213 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
 ############################## MUSIC-HANDLERS #################################
 ###############################################################################
 
-
 ### (12) [B1-13] (hpschd, vn, ob, cl) pcs ###
 pitch_handler = segment_maker.make_pitch_handler(
     scope=([pf, vn, ob, cl], (1, 4)),
-    specifiers=makers.PitchSpecifier(
-        source=indigo_pitch_classes,    
-        start_index=0,
-        ),
+    specifiers=[
+        makers.PitchSpecifier(
+            source=indigo_pitch_classes,    
+            start_index=0,
+            ),
+        ],
     )
 pitch_handler = segment_maker.make_pitch_handler(
     scope=([pf, vn, ob, cl], (5, 13)),
-    specifiers=makers.PitchSpecifier(
-        source=indigo_pitch_classes,    
-        start_index=0,
-        ),
+    specifiers=[
+        makers.PitchSpecifier(
+            source=indigo_pitch_classes,    
+            start_index=0,
+            ),
+        ],
     )
 pitch_handler = segment_maker.make_pitch_handler(
     scope=([pf, vn, ob, cl], (5, 8)),
-    specifiers=makers.PitchSpecifier(
-        operators=[pitchtools.Transposition(1)],
-        ),
+    specifiers=[
+        makers.PitchSpecifier(
+            operators=[pitchtools.Transposition(1)],
+            ),
+        ],
     )
 pitch_handler = segment_maker.make_pitch_handler(
     scope=([pf, vn, ob, cl], (9, 13)),
-    specifiers=makers.PitchSpecifier(
-        operators=[pitchtools.Transposition(3)],
-        ),
+    specifiers=[
+        makers.PitchSpecifier(
+            operators=[pitchtools.Transposition(3)],
+            ),
+        ],
     )
 segment_maker.make_music_handler(
     scope=([pf, vn, ob, cl], (1, 13)),
-    specifiers=B1_displacement,
+    specifiers=[
+        B1_displacement,
+        ],
     )
 segment_maker.make_music_handler(
     scope=(pf, (1, 8)),
-    specifiers=wide_fifth_octave,
+    specifiers=[
+        wide_fifth_octave,
+        ],
     )
 segment_maker.make_music_handler(
     scope=([vn, ob, cl], (1, 8)),
-    specifiers=narrow_fifth_octave,
+    specifiers=[
+        narrow_fifth_octave,
+        ],
     )
 segment_maker.make_music_handler(
     scope=(pf, (9, 10)),
-    specifiers=narrow_third_to_fifth_octave,
+    specifiers=[
+        narrow_third_to_fifth_octave,
+        ],
     )
 segment_maker.make_music_handler(
     scope=(pf, 9),
-    specifiers=Clef('bass'),
+    specifiers=[
+        Clef('bass'),
+        ],
     )
 segment_maker.make_music_handler(
     scope=(pf, 10),
-    specifiers=Clef('treble'),
+    specifiers=[
+        Clef('treble'),
+        ],
     )
 segment_maker.make_music_handler(
     scope=([vn, ob, cl], (9, 10)),
-    specifiers=narrow_fourth_to_fifth_octave,
+    specifiers=[
+        narrow_fourth_to_fifth_octave,
+        ],
     )
 segment_maker.make_music_handler(
     scope=([pf, vn, ob, cl], (11, 13)),
-    specifiers=narrow_fifth_octave,
+    specifiers=[
+        narrow_fifth_octave,
+        ],
     )
 segment_maker.make_music_handler(
     scope=(cl, (3, 4)),
-    specifiers=Dynamic('mp'),
+    specifiers=[
+        Dynamic('mp'),
+        ],
     )
 segment_maker.make_music_handler(
     scope=(vn, 4),
-    specifiers=Dynamic('mp'),
+    specifiers=[
+        Dynamic('mp'),
+        ],
     )
 segment_maker.make_music_handler(
     scope=(cl, (7, 8)),
-    specifiers=Dynamic('f'),
+    specifiers=[
+        Dynamic('f'),
+        ],
     )
 segment_maker.make_music_handler(
     scope=(vn, 8),
-    specifiers=Dynamic('f'),
+    specifiers=[
+        Dynamic('f'),
+        ],
     )
 segment_maker.make_music_handler(
     scope=([vn, ob, cl], 9),
-    specifiers=Hairpin(descriptor='f < ff'),
+    specifiers=[
+        Hairpin(descriptor='f < ff'),
+        ],
     )
 segment_maker.make_music_handler(
     scope=([vn, ob, cl], (1, 13)),
-    specifiers=handlertools.ReiteratedArticulationHandler(
-        articulation_list=['.'],
-        maximum_duration=Duration(1, 8),
-        ),
+    specifiers=[
+        handlertools.ReiteratedArticulationHandler(
+            articulation_list=['.'],
+            maximum_duration=Duration(1, 8),
+            ),
+        ],
     )
 
 ### (12) [B1-9] (va, vc) pcs ###
 segment_maker.make_pitch_handler(
     scope=(va, (1, 4)),
-    specifiers=makers.PitchSpecifier(
-        source="d ctqs e dqs cqs b, cqs",
-        ),
+    specifiers=[
+        makers.PitchSpecifier(
+            source="d ctqs e dqs cqs b, cqs",
+            ),
+        ],
     )
 segment_maker.make_pitch_handler(
     scope=(va, (5, 8)),
-    specifiers=makers.PitchSpecifier(
-        source="e dtqs f eqs dqs c dqs",
-        ),
+    specifiers=[
+        makers.PitchSpecifier(
+            source="e dtqs f eqs dqs c dqs",
+            ),
+        ],
     )
 segment_maker.make_pitch_handler(
     scope=(va, 9),
-    specifiers=makers.PitchSpecifier(
-        source="g ftqs a gqs fqs e fqs",
-        ),
+    specifiers=[
+        makers.PitchSpecifier(
+            source="g ftqs a gqs fqs e fqs",
+            ),
+        ],
     )
 segment_maker.make_pitch_handler(
     scope=(vc, (1, 4)),
-    specifiers=makers.PitchSpecifier(
-        source="e, dqs, cqs, b,, cqs, d, ctqs,",
-        ),
+    specifiers=[
+        makers.PitchSpecifier(
+            source="e, dqs, cqs, b,, cqs, d, ctqs,",
+            ),
+        ],
     )
 segment_maker.make_pitch_handler(
     scope=(vc, (5, 8)),
-    specifiers=makers.PitchSpecifier(
-        source="f, eqs, dqs, c, dqs, e, dtqs,",
-        ),
+    specifiers=[
+        makers.PitchSpecifier(
+            source="f, eqs, dqs, c, dqs, e, dtqs,",
+            ),
+        ],
     )
 segment_maker.make_pitch_handler(
     scope=(vc, 9),
-    specifiers=makers.PitchSpecifier(
-        source="a, gqs, fqs, e, fqs, g, ftqs,",
-        ),
+    specifiers=[
+        makers.PitchSpecifier(
+            source="a, gqs, fqs, e, fqs, g, ftqs,",
+            ),
+        ],
     )
 segment_maker.make_music_handler(
     scope=([va, vc], (1, 9)),
-    specifiers=makers.GlissandoSpecifier(
-        patterns=[BooleanPattern(indices=[0], period=1)],
-        ),
+    specifiers=[
+        makers.GlissandoSpecifier(
+            patterns=[BooleanPattern(indices=[0], period=1)],
+            ),
+        ],
     )
 segment_maker.make_music_handler(
     scope=([va, vc], (1, 4)),
-    specifiers=[Dynamic('mf'), molto_flautando],
+    specifiers=[
+        Dynamic('mf'), 
+        molto_flautando,
+        ],
     )
 segment_maker.make_music_handler(
     scope=([va, vc], (5, 8)),
-    specifiers=[Dynamic('f'), non_flautando],
+    specifiers=[
+        Dynamic('f'),
+        non_flautando,
+        ],
     )
 segment_maker.make_music_handler(
     scope=([va, vc], 9),
-    specifiers=Dynamic('ff'),
+    specifiers=[
+        Dynamic('ff'),
+        ],
     )
     
 ### sponges [B1], [B5-10] ###
 segment_maker.make_music_handler(
     scope=(perc, [1, (9, 14)]),
-    specifiers=Dynamic('f'),
+    specifiers=[
+        Dynamic('f'),
+        ],
     )
 
 ### (3) [B1-13] (hpschd, vn, ob, cl) ###
@@ -606,10 +665,12 @@ segment_maker.make_pitch_handler(
         (vc, (12, 17)),
         (vn, (14, 18)),
         ],
-    specifiers=makers.PitchSpecifier(
-        source=violet_pitch_classes,    
-        start_index=0,
-        ),
+    specifiers=[
+        makers.PitchSpecifier(
+            source=violet_pitch_classes,    
+            start_index=0,
+            ),
+        ],
     )
 segment_maker.make_music_handler(
     scope=(va, (12, 16)),
@@ -624,7 +685,9 @@ segment_maker.make_music_handler(
     )
 segment_maker.make_music_handler(
     scope=(va, 15),
-    specifiers=Clef('alto'),
+    specifiers=[
+        Clef('alto'),
+        ],
     )
 segment_maker.make_music_handler(
     scope=(vc, (12, 17)),
@@ -639,7 +702,9 @@ segment_maker.make_music_handler(
     )
 segment_maker.make_music_handler(
     scope=(vc, 16),
-    specifiers=Clef('bass'),
+    specifiers=[
+        Clef('bass'),
+        ],
     )
 segment_maker.make_music_handler(
     scope=(vn, (14, 18)),
@@ -681,11 +746,13 @@ segment_maker.make_pitch_handler(
         (vn, (19, 22)),
         (pf, (20, 23)),
         ],
-    specifiers=makers.PitchSpecifier(
-        source=violet_pitch_classes,    
-        start_index=60,
-        operators=[pitchtools.Transposition(1)],
-        ),
+    specifiers=[
+        makers.PitchSpecifier(
+            source=violet_pitch_classes,    
+            start_index=60,
+            operators=[pitchtools.Transposition(1)],
+            ),
+        ],
     )
 segment_maker.make_music_handler(
     scope=(va, (17, 22)),
@@ -737,13 +804,14 @@ segment_maker.make_music_handler(
         ],
     )
 
-
 ### (6.2) [B22-23] Eb clarinet & slate ###
 segment_maker.make_pitch_handler(
     scope=(cl, (22, 23)),
-    specifiers=makers.PitchSpecifier(
-        source="e'' dtqs'' f'' eqs'' dqs'' c'' dqs''",
-        ),
+    specifiers=[
+        makers.PitchSpecifier(
+            source="e'' dtqs'' f'' eqs'' dqs'' c'' dqs''",
+            ),
+        ],
     )
 segment_maker.make_music_handler(
     scope=(cl, (22, 23)),

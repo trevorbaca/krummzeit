@@ -31,6 +31,7 @@ class TrillSpecifier(abctools.AbjadObject):
         '_forbidden_annotations',
         '_maximum_written_duration',
         '_minimum_written_duration',
+        '_pitch',
         )
 
     ### INITIALIZER ###
@@ -41,6 +42,7 @@ class TrillSpecifier(abctools.AbjadObject):
         forbidden_annotations=None,
         minimum_written_duration=None,
         maximum_written_duration=None,
+        pitch=None,
         ):
         if deposit_annotations is not None:
             assert isinstance(deposit_annotations, (tuple, list))
@@ -59,6 +61,9 @@ class TrillSpecifier(abctools.AbjadObject):
             maximum_written_duration = durationtools.Duration(
                 maximum_written_duration)
         self._maximum_written_duration = maximum_written_duration
+        if pitch is not None:
+            pitch = pitchtools.NamedPitch(pitch)
+        self._pitch = pitch
 
     ### SPECIAL METHODS ###
 
@@ -73,7 +78,7 @@ class TrillSpecifier(abctools.AbjadObject):
             if self.maximum_written_duration is not None:
                 if self.maximum_written_duration <= written_duration :
                     continue
-            spanner = spannertools.TrillSpanner()
+            spanner = spannertools.TrillSpanner(pitch=self.pitch)
             leaves = []
             for note in logical_tie:
                 leaves.append(note)
@@ -130,3 +135,11 @@ class TrillSpecifier(abctools.AbjadObject):
         Set to duration or none.
         '''
         return self._minimum_written_duration
+
+    @property
+    def pitch(self):
+        r'''Gets pitch of trill specifier.
+
+        Set to pitch or none.
+        '''
+        return self._pitch

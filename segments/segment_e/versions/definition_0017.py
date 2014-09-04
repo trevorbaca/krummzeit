@@ -627,13 +627,13 @@ segment_maker.make_music_handler(
 segment_maker.make_music_handler(
     scope=(vn, 11),
     specifiers=[
-        tremolo_down_4,
+        tremolo_down(4),
         ],
     )
 segment_maker.make_music_handler(
     scope=(va, 11),
     specifiers=[
-        tremolo_down_3,
+        tremolo_down(3),
         Clef('alto'),
         ],
     )

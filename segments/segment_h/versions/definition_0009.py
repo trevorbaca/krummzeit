@@ -568,7 +568,7 @@ segment_maker.make_music_handler(
         (vc, 21),
         ],
     specifiers=[
-        tremolo_down_4,
+        tremolo_down(4),
         ],
     )
 

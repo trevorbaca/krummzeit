@@ -141,16 +141,19 @@ subito_non_armonichi = Markup(string, direction=Up).italic().larger()
 
 subito_ordinario = Markup('subito ordinario', direction=Up).larger()
 
-tremolo_down_2 = handlertools.OverrideHandler(
-    grob_name='stem_tremolo',
-    attribute_name='extra_offset',
-    attribute_value='(0, -2)',
-    )
-tremolo_down_4 = handlertools.OverrideHandler(
-    grob_name='stem_tremolo',
-    attribute_name='extra_offset',
-    attribute_value='(0, -4)',
-    )
+def tremolo_down(n):
+    pair = (0, -n)
+    return handlertools.OverrideHandler(
+        grob_name='stem_tremolo',
+        attribute_name='extra_offset',
+        attribute_value=str(pair),
+        maximum_written_duration=Duration(1),
+        maximum_settings={
+            'grob_name': 'stem_tremolo',
+            'attribute_name': 'extra_offset',
+            'attribute_value': str((0, -1.5)),
+            },
+        )
 
 left_text = Markup('molto flautando').italic().larger() + Markup.hspace(1)
 right_text = Markup.hspace(1) + Markup('molto gridato').italic().larger()
@@ -420,4 +423,9 @@ low_piano_cluster = makers.ClusterSpecifier(
 tenor_piano_cluster = makers.ClusterSpecifier(
     start_pitch=NamedPitch('A2'),
     stop_pitch=NamedPitch('B3'),
+    )
+
+harpsichord_cluster = makers.ClusterSpecifier(
+    start_pitch=NamedPitch('D4'),
+    stop_pitch=NamedPitch('E5'),
     )

@@ -340,7 +340,7 @@ segment_maker.make_pitch_handler(
     )
 segment_maker.make_music_handler(
     scope=(ob, (1, 27)),
-    specifier=[
+    specifiers=[
         B1_displacement,
         wide_fifth_octave,
         color_fingerings,
@@ -350,7 +350,7 @@ segment_maker.make_music_handler(
     )
 segment_maker.make_music_handler(
     scope=(ob, 20),
-    specifier=Dynamic('ff'),
+    specifiers=Dynamic('ff'),
     )
 segment_maker.make_pitch_handler(
     scope=(cl, 1),
@@ -360,7 +360,7 @@ segment_maker.make_pitch_handler(
     )
 segment_maker.make_music_handler(
     scope=(cl, 1),
-    specifier=[
+    specifiers=[
         Glissando(),
         Dynamic('f'),
         ],
@@ -379,7 +379,7 @@ segment_maker.make_pitch_handler(
     )
 segment_maker.make_music_handler(
     scope=(cl, (20, 27)),
-    specifier=[
+    specifiers=[
         Glissando(),
         Dynamic('f'),
         ],
@@ -392,14 +392,14 @@ segment_maker.make_pitch_handler(
     )
 segment_maker.make_music_handler(
     scope=(va, (1, 19)),
-    specifier=[
+    specifiers=[
         Glissando(),
         molto_flautando,
         ],
     )
 segment_maker.make_music_handler(
     scope=(va, (1, 9)),
-    specifier=[
+    specifiers=[
         handlertools.NoteAndChordHairpinHandler(
             hairpin_token='ff > pp',
             ),
@@ -407,7 +407,7 @@ segment_maker.make_music_handler(
     )
 segment_maker.make_music_handler(
     scope=(va, (10, 19)),
-    specifier=handlertools.NoteAndChordHairpinHandler(
+    specifiers=handlertools.NoteAndChordHairpinHandler(
         hairpin_token='ff > pp',
         patterns=[BooleanPattern(indices=[0, 1])],
         ),
@@ -420,14 +420,14 @@ segment_maker.make_pitch_handler(
     )
 segment_maker.make_music_handler(
     scope=(vc, (1, 19)),
-    specifier=[
+    specifiers=[
         Glissando(),
         molto_flautando,
         ],
     )
 segment_maker.make_music_handler(
     scope=(vc, (1, 9)),
-    specifier=[
+    specifiers=[
         handlertools.NoteAndChordHairpinHandler(
             hairpin_token='ff > pp',
             ),
@@ -435,7 +435,7 @@ segment_maker.make_music_handler(
     )
 segment_maker.make_music_handler(
     scope=(vc, (10, 19)),
-    specifier=handlertools.NoteAndChordHairpinHandler(
+    specifiers=handlertools.NoteAndChordHairpinHandler(
         hairpin_token='ff > pp',
         patterns=[BooleanPattern(indices=[0, 1])],
         ),
@@ -454,7 +454,7 @@ segment_maker.make_pitch_handler(
     )
 segment_maker.make_music_handler(
     scope=(vn, (19, 22)),
-    specifier=[
+    specifiers=[
         B1_displacement,
         wide_fifth_octave,
         color_microtones,
@@ -464,7 +464,7 @@ segment_maker.make_music_handler(
     )
 segment_maker.make_music_handler(
     scope=(perc, (18, 20)),
-    specifier=Dynamic('mf'),
+    specifiers=Dynamic('mf'),
     )
 
 ### (7) [C3], [C7-8] pf, xylophone ###
@@ -479,7 +479,7 @@ segment_maker.make_pitch_handler(
     )
 segment_maker.make_music_handler(
     scope=((pf, perc), (11, 17)),
-    specifier=[
+    specifiers=[
         Dynamic('ff'),
         handlertools.ReiteratedArticulationHandler(
             articulation_list=['staccatissimo'],
@@ -488,13 +488,13 @@ segment_maker.make_music_handler(
     )
 segment_maker.make_music_handler(
     scope=([pf, perc], 22),
-    specifier=Dynamic('ff'),
+    specifiers=Dynamic('ff'),
     )
 
 ### (10) vn, va, vc, snare ###
 segment_maker.make_music_handler(
     scope=(perc, (27, 30)),
-    specifier=[
+    specifiers=[
         handlertools.StemTremoloHandler(hash_mark_counts=[32]),
         fingertips,
         Dynamic('ppp'),
@@ -520,7 +520,7 @@ segment_maker.make_pitch_handler(
     )
 segment_maker.make_music_handler(
     scope=([vn, va, vc], (26, 29)),
-    specifier=[
+    specifiers=[
         Glissando(),
         show_tempo,
         non_flautando,

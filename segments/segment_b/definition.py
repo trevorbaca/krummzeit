@@ -479,59 +479,59 @@ pitch_handler = segment_maker.make_pitch_handler(
     )
 segment_maker.make_music_handler(
     scope=([pf, vn, ob, cl], (1, 13)),
-    specifier=B1_displacement,
+    specifiers=B1_displacement,
     )
 segment_maker.make_music_handler(
     scope=(pf, (1, 8)),
-    specifier=wide_fifth_octave,
+    specifiers=wide_fifth_octave,
     )
 segment_maker.make_music_handler(
     scope=([vn, ob, cl], (1, 8)),
-    specifier=narrow_fifth_octave,
+    specifiers=narrow_fifth_octave,
     )
 segment_maker.make_music_handler(
     scope=(pf, (9, 10)),
-    specifier=narrow_third_to_fifth_octave,
+    specifiers=narrow_third_to_fifth_octave,
     )
 segment_maker.make_music_handler(
     scope=(pf, 9),
-    specifier=Clef('bass'),
+    specifiers=Clef('bass'),
     )
 segment_maker.make_music_handler(
     scope=(pf, 10),
-    specifier=Clef('treble'),
+    specifiers=Clef('treble'),
     )
 segment_maker.make_music_handler(
     scope=([vn, ob, cl], (9, 10)),
-    specifier=narrow_fourth_to_fifth_octave,
+    specifiers=narrow_fourth_to_fifth_octave,
     )
 segment_maker.make_music_handler(
     scope=([pf, vn, ob, cl], (11, 13)),
-    specifier=narrow_fifth_octave,
+    specifiers=narrow_fifth_octave,
     )
 segment_maker.make_music_handler(
     scope=(cl, (3, 4)),
-    specifier=Dynamic('mp'),
+    specifiers=Dynamic('mp'),
     )
 segment_maker.make_music_handler(
     scope=(vn, 4),
-    specifier=Dynamic('mp'),
+    specifiers=Dynamic('mp'),
     )
 segment_maker.make_music_handler(
     scope=(cl, (7, 8)),
-    specifier=Dynamic('f'),
+    specifiers=Dynamic('f'),
     )
 segment_maker.make_music_handler(
     scope=(vn, 8),
-    specifier=Dynamic('f'),
+    specifiers=Dynamic('f'),
     )
 segment_maker.make_music_handler(
     scope=([vn, ob, cl], 9),
-    specifier=Hairpin(descriptor='f < ff'),
+    specifiers=Hairpin(descriptor='f < ff'),
     )
 segment_maker.make_music_handler(
     scope=([vn, ob, cl], (1, 13)),
-    specifier=handlertools.ReiteratedArticulationHandler(
+    specifiers=handlertools.ReiteratedArticulationHandler(
         articulation_list=['.'],
         maximum_duration=Duration(1, 8),
         ),
@@ -576,27 +576,27 @@ segment_maker.make_pitch_handler(
     )
 segment_maker.make_music_handler(
     scope=([va, vc], (1, 9)),
-    specifier=makers.GlissandoSpecifier(
+    specifiers=makers.GlissandoSpecifier(
         patterns=[BooleanPattern(indices=[0], period=1)],
         ),
     )
 segment_maker.make_music_handler(
     scope=([va, vc], (1, 4)),
-    specifier=[Dynamic('mf'), molto_flautando],
+    specifiers=[Dynamic('mf'), molto_flautando],
     )
 segment_maker.make_music_handler(
     scope=([va, vc], (5, 8)),
-    specifier=[Dynamic('f'), non_flautando],
+    specifiers=[Dynamic('f'), non_flautando],
     )
 segment_maker.make_music_handler(
     scope=([va, vc], 9),
-    specifier=Dynamic('ff'),
+    specifiers=Dynamic('ff'),
     )
     
 ### sponges [B1], [B5-10] ###
 segment_maker.make_music_handler(
     scope=(perc, [1, (9, 14)]),
-    specifier=Dynamic('f'),
+    specifiers=Dynamic('f'),
     )
 
 ### (3) [B1-13] (hpschd, vn, ob, cl) ###
@@ -613,7 +613,7 @@ segment_maker.make_pitch_handler(
     )
 segment_maker.make_music_handler(
     scope=(va, (12, 16)),
-    specifier=[
+    specifiers=[
         narrow_fifth_to_third_octave,
         Glissando(),
         alternate_bow_strokes,
@@ -624,11 +624,11 @@ segment_maker.make_music_handler(
     )
 segment_maker.make_music_handler(
     scope=(va, 15),
-    specifier=Clef('alto'),
+    specifiers=Clef('alto'),
     )
 segment_maker.make_music_handler(
     scope=(vc, (12, 17)),
-    specifier=[
+    specifiers=[
         narrow_fifth_to_second_octave,
         Glissando(),
         alternate_bow_strokes,
@@ -639,11 +639,11 @@ segment_maker.make_music_handler(
     )
 segment_maker.make_music_handler(
     scope=(vc, 16),
-    specifier=Clef('bass'),
+    specifiers=Clef('bass'),
     )
 segment_maker.make_music_handler(
     scope=(vn, (14, 18)),
-    specifier=[
+    specifiers=[
         narrow_fifth_to_fourth_octave,
         Glissando(),
         alternate_bow_strokes,
@@ -655,7 +655,7 @@ segment_maker.make_music_handler(
 ### (3) [B16-20] (pf clusters, tam-tam) ###
 segment_maker.make_music_handler(
     scope=(pf, (16, 19)),
-    specifier=[
+    specifiers=[
         makers.ClusterSpecifier(
             start_pitch=NamedPitch('C1'),
             stop_pitch=NamedPitch('C3'),
@@ -667,7 +667,7 @@ segment_maker.make_music_handler(
     )
 segment_maker.make_music_handler(
     scope=(perc, (16, 20)),
-    specifier=[
+    specifiers=[
         handlertools.ReiteratedDynamicHandler(dynamic_name='p'),
         handlertools.ReiteratedArticulationHandler(articulation_list=['-']),
         ],
@@ -689,7 +689,7 @@ segment_maker.make_pitch_handler(
     )
 segment_maker.make_music_handler(
     scope=(va, (17, 22)),
-    specifier=[
+    specifiers=[
         narrow_fifth_to_sixth_octave,
         Clef('treble'),
         pizz,
@@ -702,7 +702,7 @@ segment_maker.make_music_handler(
     )
 segment_maker.make_music_handler(
     scope=(vc, (18, 22)),
-    specifier=[
+    specifiers=[
         narrow_fifth_to_sixth_octave,
         Clef('treble'),
         pizz,
@@ -715,7 +715,7 @@ segment_maker.make_music_handler(
     )
 segment_maker.make_music_handler(
     scope=(vn, (19, 22)),
-    specifier=[
+    specifiers=[
         narrow_fifth_to_sixth_octave,
         pizz,
         handlertools.ReiteratedArticulationHandler(
@@ -727,7 +727,7 @@ segment_maker.make_music_handler(
     )
 segment_maker.make_music_handler(
     scope=(pf, (20, 23)),
-    specifier=[
+    specifiers=[
         narrow_fifth_to_sixth_octave,
         handlertools.ReiteratedArticulationHandler(
             articulation_list=['staccatissimo'],
@@ -747,14 +747,14 @@ segment_maker.make_pitch_handler(
     )
 segment_maker.make_music_handler(
     scope=(cl, (22, 23)),
-    specifier=[
+    specifiers=[
         Glissando(),
         Dynamic('f'),
         ],
     )
 segment_maker.make_music_handler(
     scope=(vn, 23),
-    specifier=[
+    specifiers=[
         scrape_moderately,
         Dynamic('mf'),
         ],

@@ -9,8 +9,6 @@ class ScopeTokenParser(abctools.AbjadObject):
     ### CLASS VARIABLES ###
 
     __slots__ = (
-        '_scope',
-        '_specifiers',
         )
 
     ### INITIALIZER ###

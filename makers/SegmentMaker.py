@@ -475,33 +475,17 @@ class SegmentMaker(makertools.SegmentMaker):
         Returns music-handler.
         '''
         from krummzeit import makers
-        assert isinstance(scope, tuple) and len(scope) == 2, repr(scope)
-        context_names = scope[0]
-        if isinstance(context_names, str):
-            context_names = [context_names]
-        elif isinstance(context_names, (tuple, list)):
-            context_names = list(context_names)
-        else:
-            message = 'context names must be string or tuple of strings: {!r}.'
-            message = message.format(context_names)
-            raise TypeError(message)
-        stage_pairs = scope[-1]
-        if isinstance(stage_pairs, int):
-            stage_pairs = [(stage_pairs, stage_pairs)]
-        elif isinstance(stage_pairs, tuple):
-            assert len(stage_pairs) == 2, repr(stage_pairs)
-            stage_pairs = [stage_pairs]
-        elif isinstance(stage_pairs, list):
-            pass
-        else:
-            raise TypeError(stage_pairs)
-        assert isinstance(context_names, list), context_names
-        assert isinstance(stage_pairs, list), stage_pairs
+        parser = makers.ScopeTokenParser()
         scope_tokens = []
-        for context_name in context_names:
-            for stage_pair in stage_pairs:
-                scope_token = (context_name, stage_pair)
-                scope_tokens.append(scope_token)
+        if isinstance(scope, tuple):
+            simple_scopes = parser._to_simple_scopes(scope)
+            scope_tokens.extend(simple_scopes)
+        elif isinstance(scope, list):
+            for scope_token in scope:
+                simple_scopes = parser._to_simple_scopes(scope_token)
+                scope_tokens.extend(simple_scopes)
+        else:
+            raise TypeError(scope)
         music_handlers = []
         for scope_token in scope_tokens:
             music_handler = makers.MusicHandler(

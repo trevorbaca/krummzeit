@@ -59,7 +59,7 @@ on_bridge = Markup(
     )
 on_bridge = on_bridge.larger()
 
-pizz = Markup('pizz', direction=Up)
+pizz = Markup('pizz.', direction=Up)
 pizz = pizz.larger()
 
 scrape_moderately = Markup(
@@ -142,6 +142,13 @@ narrow_sixth_octave = makers.RegistrationSpecifier(
         ),
     )
 
+# +3
+narrow_seventh_octave = makers.RegistrationSpecifier(
+    registration=pitchtools.Registration(
+        [('[A0, F#4)', 34), ('[F#4, C8]', 37)],
+        ),
+    )
+
 # ascending
 narrow_second_to_fifth_octave = makers.RegistrationTransitionSpecifier(
     start_registration=narrow_second_octave.registration,
@@ -164,6 +171,16 @@ narrow_fifth_to_sixth_octave = makers.RegistrationTransitionSpecifier(
     )
 
 # descending
+narrow_seventh_to_fifth_octave = makers.RegistrationTransitionSpecifier(
+    start_registration=narrow_seventh_octave.registration,
+    stop_registration=narrow_fifth_octave.registration,
+    )
+
+narrow_sixth_to_fifth_octave = makers.RegistrationTransitionSpecifier(
+    start_registration=narrow_sixth_octave.registration,
+    stop_registration=narrow_fifth_octave.registration,
+    )
+    
 narrow_fifth_to_fourth_octave = makers.RegistrationTransitionSpecifier(
     start_registration=narrow_fifth_octave.registration,
     stop_registration=narrow_fourth_octave.registration,
@@ -179,9 +196,28 @@ narrow_fifth_to_second_octave = makers.RegistrationTransitionSpecifier(
     stop_registration=narrow_second_octave.registration,
     )
 
+narrow_fourth_to_third_octave = makers.RegistrationTransitionSpecifier(
+    start_registration=narrow_fourth_octave.registration,
+    stop_registration=narrow_third_octave.registration,
+    )
+
+narrow_fourth_to_second_octave = makers.RegistrationTransitionSpecifier(
+    start_registration=narrow_fourth_octave.registration,
+    stop_registration=narrow_second_octave.registration,
+    )
+
+narrow_third_to_second_octave = makers.RegistrationTransitionSpecifier(
+    start_registration=narrow_third_octave.registration,
+    stop_registration=narrow_second_octave.registration,
+    )
+
 # articulation handlers
 alternate_bow_strokes = handlertools.PatternedArticulationsHandler(
     articulation_lists=(['upbow', 'accent'], ['downbow', 'accent']),
+    )
+
+staccatissimi = handlertools.ReiteratedArticulationHandler(
+    articulation_list=['staccatissimo'],
     )
     
 
@@ -208,6 +244,20 @@ wide_fifth_octave = makers.RegistrationSpecifier(
         ),
     )
 
+# +14
+wide_sixth_octave = makers.RegistrationSpecifier(
+    registration=pitchtools.Registration(
+        [('[A0, F#4)', 16), ('[F#4, C8]', 30)]
+        ),
+    )
+
+# +14
+wide_seventh_octave = makers.RegistrationSpecifier(
+    registration=pitchtools.Registration(
+        [('[A0, F#4)', 28), ('[F#4, C8]', 42)]
+        ),
+    )
+
 ### dynamics
 
 patterned_f_ff = handlertools.TerracedDynamicsHandler(
@@ -220,3 +270,5 @@ patterned_f_ff = handlertools.TerracedDynamicsHandler(
 stem_tremolo = handlertools.StemTremoloHandler(
     hash_mark_counts=[32],
     )
+
+ottava = spannertools.OctavationSpanner(start=1, stop=0)

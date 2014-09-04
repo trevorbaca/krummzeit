@@ -506,8 +506,12 @@ class SegmentMaker(makertools.SegmentMaker):
         scope,
         ):
         from krummzeit import makers
-        assert isinstance(specifiers, makers.PitchSpecifier), specifiers
-        specifiers = [specifiers]
+        if isinstance(specifiers, makers.PitchSpecifier):
+            specifiers = [specifiers]
+        elif isinstance(specifiers, list):
+            pass
+        else:
+            raise TypeError(specifiers)
         pitch_handler = makers.PitchHandler(
             scope=scope,
             specifiers=specifiers,

@@ -39,6 +39,8 @@ vc = 'Cello Music Voice'
 
 
 ### MARKUP ###
+ffff_possibile = Markup('ffff').dynamic() + Markup('possibile').italic()
+
 fingertips = Markup(
     'rapid roll with fingertips: keep speed constant during accelerando',
     direction=Up,
@@ -62,6 +64,11 @@ on_bridge = on_bridge.larger()
 pizz = Markup('pizz.', direction=Up)
 pizz = pizz.larger()
 
+ppp_ancora = Markup('ppp', direction=Down).dynamic()
+ppp_ancora += Markup('ancora').italic()
+
+ppp_subtone = Markup('ppp').dynamic() + Markup('subtone')
+
 scrape_moderately = Markup(
     'scrape in a circle at moderate speed',
     direction=Up,
@@ -72,9 +79,9 @@ senza_pedale = Markup('senza pedale', direction=Up)
 senza_pedale = senza_pedale.italic()
 senza_pedale = senza_pedale.larger()
 
-
 show_tempo = Markup('allow bowing to convey accelerando', direction=Up)
 show_tempo = show_tempo.larger()
+
 
 
 ### PITCH ###

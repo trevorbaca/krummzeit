@@ -271,17 +271,18 @@ narrow_second_to_fifth_octave = makers.RegistrationTransitionSpecifier(
     start_registration=narrow_second_octave.registration,
     stop_registration=narrow_fifth_octave.registration,
     )
-
 narrow_third_to_fifth_octave = makers.RegistrationTransitionSpecifier(
     start_registration=narrow_third_octave.registration,
     stop_registration=narrow_fifth_octave.registration,
     )
-
 narrow_fourth_to_fifth_octave = makers.RegistrationTransitionSpecifier(
     start_registration=narrow_fourth_octave.registration,
     stop_registration=narrow_fifth_octave.registration,
     )
-
+narrow_fourth_to_sixth_octave = makers.RegistrationTransitionSpecifier(
+    start_registration=narrow_fourth_octave.registration,
+    stop_registration=narrow_sixth_octave.registration,
+    )
 narrow_fifth_to_sixth_octave = makers.RegistrationTransitionSpecifier(
     start_registration=narrow_fifth_octave.registration,
     stop_registration=narrow_sixth_octave.registration,

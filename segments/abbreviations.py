@@ -76,6 +76,8 @@ fingertips = fingertips.larger()
 fifth_harmonic_of_F1 = Markup('touch F1 string at 5th harmonic', direction=Up)
 fifth_harmonic_of_F1 = fifth_harmonic_of_F1.larger()
 
+gridato_possibile = Markup('gridato possibile', direction=Up).italic().larger()
+
 molto_flautando = Markup('molto flautando', direction=Up).italic().larger()
 
 string = 'molto flautando ed estr. sul pont.'
@@ -138,24 +140,28 @@ tremolo_down_4 = handlertools.OverrideHandler(
     attribute_value='(0, -2)',
     )
 
-white_flautando_spanner = spannertools.TextSpanner(
-	overrides = {
-		'text_spanner__dash_period': '1.5',
-		'text_spanner__bound_details__right_broken__padding': '0',
-		'text_spanner__bound_details__left_broken__text': "markuptools.Markup((markuptools.MarkupCommand('italic','(fl.)'),markuptools.MarkupCommand('hspace',1)))",
-		'text_spanner__bound_details__left__stencil_align_dir_y': '0',
-		'text_spanner__bound_details__right__text': "markuptools.Markup((markuptools.MarkupCommand('draw-line',schemetools.SchemePair(0, -1)),))",
-		'text_spanner__bound_details__right_broken__text': 'None',
-		'text_spanner__bound_details__left__text': "markuptools.Markup((markuptools.MarkupCommand('italic','\\xe2\\x80\\x9cwhite\\xe2\\x80\\x9d flautando'),markuptools.MarkupCommand('hspace',1)))",
-		'text_spanner__bound_details__right__padding': '1',
-		'text_spanner__bound_details__left__padding': '-1',
-		'text_spanner__dash_fraction': '0.25',
-	}
-)
-
 left_text = Markup('molto flautando').italic().larger() + Markup.hspace(1)
 right_text = Markup.hspace(1) + Markup('molto gridato').italic().larger()
 molto_flaut_to_molto_grid = spannertools.TextSpanner(
+	overrides = {
+		'text_spanner__bound_details__left__padding': -1,
+		'text_spanner__bound_details__left__stencil_align_dir_y': 0,
+		'text_spanner__bound_details__left__text': left_text,
+		'text_spanner__bound_details__left_broken__text': None,
+		'text_spanner__bound_details__right__arrow': True,
+		'text_spanner__bound_details__right__padding': 1,
+		'text_spanner__bound_details__right__stencil_align_dir_y': 0,
+		'text_spanner__bound_details__right__text': right_text,
+		'text_spanner__bound_details__right_broken__padding': 0,
+		'text_spanner__bound_details__right_broken__text': None,
+		'text_spanner__dash_fraction': 0.25,
+		'text_spanner__dash_period': 1.5,
+	}
+)
+
+left_text = Markup('grid. possibile').italic().larger() + Markup.hspace(1)
+right_text = Markup.hspace(1) + Markup('flaut. possibile').italic().larger()
+grid_poss_to_flaut_poss = spannertools.TextSpanner(
 	overrides = {
 		'text_spanner__bound_details__left__padding': -1,
 		'text_spanner__bound_details__left__stencil_align_dir_y': 0,
@@ -290,6 +296,10 @@ narrow_sixth_to_fifth_octave = makers.RegistrationTransitionSpecifier(
     start_registration=narrow_sixth_octave.registration,
     stop_registration=narrow_fifth_octave.registration,
     )
+narrow_sixth_to_fourth_octave = makers.RegistrationTransitionSpecifier(
+    start_registration=narrow_sixth_octave.registration,
+    stop_registration=narrow_fourth_octave.registration,
+    )
 narrow_fifth_to_fourth_octave = makers.RegistrationTransitionSpecifier(
     start_registration=narrow_fifth_octave.registration,
     stop_registration=narrow_fourth_octave.registration,
@@ -326,7 +336,6 @@ tenuti = handlertools.ReiteratedArticulationHandler(
     articulation_list=['tenuto'],
     )
     
-
 ### wide registrations ###
 
 # +14

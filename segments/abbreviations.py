@@ -67,6 +67,12 @@ fingertips = Markup(
     )
 fingertips = fingertips.larger()
 
+fingertips_only = Markup(
+    'rapid roll with fingertips: keep speed constant during accelerando',
+    direction=Up,
+    )
+fingertips = fingertips.larger()
+
 fifth_harmonic_of_F1 = Markup('touch F1 string at 5th harmonic', direction=Up)
 fifth_harmonic_of_F1 = fifth_harmonic_of_F1.larger()
 

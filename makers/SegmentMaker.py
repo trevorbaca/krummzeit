@@ -55,6 +55,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._annotate_stages()
         self._interpret_music_makers()
         self._interpret_music_handlers()
+        self._move_clefs_from_notes_back_to_rests()
         #self._transpose_instruments()
         self._attach_rehearsal_mark()
         score_block = self.lilypond_file['score']
@@ -128,6 +129,30 @@ class SegmentMaker(makertools.SegmentMaker):
             # TODO: adjust TempoSpanner to make measure attachment work
             attach(directive, start_skip, is_annotation=True)
 
+    def _compound_scope_to_logical_ties(self, compound_scope):
+        from krummzeit import makers
+        timespan_map, timespans = [], []
+        for scope in compound_scope.simple_scopes:
+            start_stage, stop_stage = scope.stages
+            offsets = self._get_offsets(start_stage, stop_stage)
+            timespan = timespantools.Timespan(*offsets)
+            timespan_map.append((scope.context_name, timespan))
+            timespans.append(timespan)
+        compound_scope._timespan_map = timespan_map
+        context_names = [_[0] for _ in timespan_map]
+        compound_scope._context_names = tuple(context_names)
+        logical_ties = []
+        prototype = (scoretools.Note, scoretools.Chord)
+        for note in iterate(self._score).by_timeline(prototype):
+            if note in compound_scope:
+                logical_tie = inspect_(note).get_logical_tie()
+                if logical_tie.head is note:
+                    logical_ties.append(logical_tie)
+        start_offset = min(_.start_offset for _ in timespans)
+        stop_offset = max(_.stop_offset for _ in timespans)
+        timespan = timespantools.Timespan(start_offset, stop_offset)
+        return logical_ties, timespan
+
     def _configure_lilypond_file(self):
         lilypond_file = self._lilypond_file
         lilypond_file.use_relative_includes = True
@@ -186,30 +211,6 @@ class SegmentMaker(makertools.SegmentMaker):
         for voice in iterate(self._score).by_class(scoretools.Voice):
             self._make_music_for_voice(voice)
 
-    def _compound_scope_to_logical_ties(self, compound_scope):
-        from krummzeit import makers
-        timespan_map, timespans = [], []
-        for scope in compound_scope.simple_scopes:
-            start_stage, stop_stage = scope.stages
-            offsets = self._get_offsets(start_stage, stop_stage)
-            timespan = timespantools.Timespan(*offsets)
-            timespan_map.append((scope.context_name, timespan))
-            timespans.append(timespan)
-        compound_scope._timespan_map = timespan_map
-        context_names = [_[0] for _ in timespan_map]
-        compound_scope._context_names = tuple(context_names)
-        logical_ties = []
-        prototype = (scoretools.Note, scoretools.Chord)
-        for note in iterate(self._score).by_timeline(prototype):
-            if note in compound_scope:
-                logical_tie = inspect_(note).get_logical_tie()
-                if logical_tie.head is note:
-                    logical_ties.append(logical_tie)
-        start_offset = min(_.start_offset for _ in timespans)
-        stop_offset = max(_.stop_offset for _ in timespans)
-        timespan = timespantools.Timespan(start_offset, stop_offset)
-        return logical_ties, timespan
-
     def _interpret_music_handler(self, music_handler):
         from krummzeit import makers
         simple_scope = music_handler.scope
@@ -224,7 +225,7 @@ class SegmentMaker(makertools.SegmentMaker):
         indicator_prototype = (
             Clef,
             Dynamic,
-            Markup
+            Markup,
             )
         for specifier in specifiers:
             if isinstance(specifier, indicator_prototype):
@@ -360,6 +361,25 @@ class SegmentMaker(makertools.SegmentMaker):
         score = template()
         self._score = score
 
+    def _move_clefs_from_notes_back_to_rests(self):
+        for leaf in iterate(self._score).by_class(scoretools.Leaf):
+            clefs = inspect_(leaf).get_indicators(indicatortools.Clef)
+            if not clefs:
+                continue
+            assert len(clefs) == 1
+            clef = clefs[0]
+            current_leaf = leaf
+            previous_leaf = inspect_(current_leaf).get_leaf(-1)
+            if not isinstance(previous_leaf, scoretools.Rest):
+                continue
+            detach(clef, leaf)
+            while True:
+                current_leaf = previous_leaf
+                previous_leaf = inspect_(current_leaf).get_leaf(-1)
+                if not isinstance(previous_leaf, scoretools.Rest):
+                    attach(clef, current_leaf)
+                    break
+        
     def _populate_time_signature_context(self):
         measures = self._make_skip_filled_measures()
         time_signature_context = self._score['Time Signature Context']

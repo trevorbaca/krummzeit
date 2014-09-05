@@ -12,6 +12,7 @@ class SegmentMaker(makertools.SegmentMaker):
     ### CLASS ATTRIBUTES ###
 
     __slots__ = (
+        '_do_not_annotate_stages',
         '_music_handlers',
         '_music_makers',
         '_score',
@@ -36,6 +37,7 @@ class SegmentMaker(makertools.SegmentMaker):
         ):
         superclass = super(SegmentMaker, self)
         superclass.__init__(name=name)
+        self._do_not_annotate_stages = False
         self._initialize_music_makers(music_makers)
         self.final_barline = final_barline
         self.measures_per_stage = measures_per_stage
@@ -55,7 +57,8 @@ class SegmentMaker(makertools.SegmentMaker):
         self._make_lilypond_file()
         self._configure_lilypond_file()
         self._populate_time_signature_context()
-        self._annotate_stages()
+        if not self._do_not_annotate_stages:
+            self._annotate_stages()
         self._interpret_music_makers()
         self._interpret_music_handlers()
         self._move_instruments_from_notes_back_to_rests()
@@ -578,6 +581,7 @@ class SegmentMaker(makertools.SegmentMaker):
                     i = instrument.sounding_pitch_of_written_middle_c.pitch_number
                     written_pitch_number = sounding_pitch_number - i
                     leaf.written_pitch = written_pitch_number
+        #raise Exception(temp)
 
     ### PUBLIC PROPERTIES ###
 

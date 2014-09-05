@@ -112,6 +112,8 @@ non_flautando = Markup('non flautando', direction=Up)
 non_flautando = non_flautando.italic()
 non_flautando = non_flautando.larger()
 
+off_string = Markup('off-string bowing on staccati', direction=Up).larger()
+
 on_bridge = Markup(
     'directly on bridge: full bow each stroke',
     direction=Up,
@@ -132,8 +134,14 @@ ppp_ancora += Markup('ancora').italic()
 
 ppp_subtone = Markup('ppp').dynamic() + Markup('subtone')
 
+reiterated_fff = handlertools.ReiteratedDynamicHandler(
+    dynamic_name='fff',
+    )
 reiterated_ff = handlertools.ReiteratedDynamicHandler(
     dynamic_name='ff',
+    )
+reiterated_p = handlertools.ReiteratedDynamicHandler(
+    dynamic_name='p',
     )
 
 scrape_moderately = Markup(
@@ -378,6 +386,10 @@ narrow_third_to_second_octave = makers.RegistrationTransitionSpecifier(
 # articulation handlers
 alternate_bow_strokes = handlertools.PatternedArticulationsHandler(
     articulation_lists=(['upbow', 'accent'], ['downbow', 'accent']),
+    )
+marcati = handlertools.ReiteratedArticulationHandler(
+    articulation_list=['marcato'],
+    skip_ties=True,
     )
 staccati = handlertools.ReiteratedArticulationHandler(
     articulation_list=['staccato'],

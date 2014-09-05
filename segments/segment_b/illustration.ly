@@ -1,4 +1,4 @@
-% 2014-09-05 17:33
+% 2014-09-05 18:25
 
 \version "2.19.12"
 \language "english"
@@ -1251,6 +1251,7 @@
 					r4.
 					r2..
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						\set Staff.instrumentName = \markup {
 							\column
 								{
@@ -1299,99 +1300,146 @@
 										}
 								}
 							}
-						e''4. \mp
+						cs''4. \mp
 					}
 					\times 2/3 {
-						a''4
-						bf''4
-						b''4 ~
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						fs''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						g''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						gs''4 ~
 					}
 					{
-						b''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						gs''4
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
-						fs''8 -\staccato [
-						ef''8 -\staccato
-						f''8 -\staccato
-						g''8 ~ ]
-					}
-					\times 2/3 {
-						g''4
-						fs''4
-						ef''4 ~
-					}
-					{
-						ef''4
-					}
-					{
-						ef''4
-						fs''4
-					}
-					{
-						a''8 [
-						bf''8
-						af''8
-						ef''8 ~ ]
-					}
-					{
-						ef''4
-					}
-					\times 2/3 {
-						g''4
-						a''4
-						c'''4 ~
-					}
-					{
-						c'''4
-						g''4 ~
-					}
-					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 3/4 {
-						g''8 [
-						cs''8 -\staccato
-						e''8 -\staccato
-						b''8 -\staccato ]
-					}
-					\times 2/3 {
-						fs''4
-						g''4
-						af''4
-					}
-					{
-						ef''4. ~
-					}
-					{
-						ef''4.
-					}
-					{
-						af''8 [
-						b''8
-						cs''8
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						ds''8 -\staccato [
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						c''8 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						d''8 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						e''8 ~ ]
 					}
-					{
-						e''4 ~
-					}
-					{
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						e''4
-					}
-					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 5/4 {
-						g''4
-						g''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						ds''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						c''4 ~
 					}
 					{
-						ef''8 [
-						af''8 ~ ]
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						c''4
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						c''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						ds''4
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						fs''8 [
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						g''8
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						f''8
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						c''8 ~ ]
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						c''4
 					}
 					\times 2/3 {
-						af''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						e''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						fs''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						a''4 ~
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						a''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						e''4 ~
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 3/4 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						e''8 [
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						as'8 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						cs''8 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						gs''8 -\staccato ]
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						ds''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						e''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						f''4
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						c''4. ~
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						c''4.
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						f''8 [
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						gs''8
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						as'8
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						cs''8 ~ ]
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						cs''4 ~
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						cs''4
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/4 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						e''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						e''4
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						c''8 [
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						f''8 ~ ]
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						f''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						cs''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						d''4
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						as'4
 					}
 					\set Staff.instrumentName = \markup {
 						\column
@@ -1448,6 +1496,7 @@
 					r4.
 					r2..
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						\set Staff.instrumentName = \markup {
 							\column
 								{
@@ -1496,259 +1545,307 @@
 										}
 								}
 							}
-						f''4. \f
+						d''4. \f
 					}
 					\times 2/3 {
-						bf''4
-						b''4
-						c''4 ~
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						g''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						gs''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						a'4 ~
 					}
 					{
-						c''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						a'4
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
-						g''8 -\staccato [
-						e''8 -\staccato
-						fs''8 -\staccato
-						af''8 ~ ]
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						e''8 -\staccato [
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						cs''8 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						ds''8 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						f''8 ~ ]
 					}
 					\times 2/3 {
-						af''4
-						g''4
-						e''4 ~
-					}
-					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						f''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						e''4
-					}
-					{
-						e''4
-						g''4
-					}
-					{
-						bf''8 [
-						b''8
-						a''8
-						e''8 ~ ]
-					}
-					{
-						e''4
-					}
-					\times 2/3 {
-						af''4
-						bf'4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						cs''4 ~
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						cs''4
-						af''4 ~
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						cs''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						e''4
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						g''8 [
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						gs''8
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						fs''8
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						cs''8 ~ ]
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						cs''4
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						f''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						g'4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						as'4 ~
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						as'4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						f''4 ~
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
-						af''8 [
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						f''8 [
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						b'8 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						d''8 -\staccato
-						f''8 -\staccato
-						c''8 -\staccato ]
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						a'8 -\staccato ]
 					}
 					\times 2/3 {
-						g''4
-						af''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						e''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						f''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						fs''4
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						cs''4. ~
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						cs''4.
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						fs''8 [
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						a''8
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						b'8
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						d''8 ~ ]
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						d''4 ~
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						d''4
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/4 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						f''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						f''4
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						cs''8 [
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						fs''8 ~ ]
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						fs''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						d''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						a''4
 					}
 					{
-						e''4. ~
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						f''4 ~
 					}
 					{
-						e''4.
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						f''4
+						f'4 ~ \< \f
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 3/4 {
+						f'8 [
+						f'8 -\staccato
+						fs'8 -\staccato
+						c'8 -\staccato ]
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/6 {
+						g'4
+						c'4
+						as4
 					}
 					{
-						a''8 [
-						c'''8
-						d''8
-						f''8 ~ ]
+						ds'4. ~
+					}
+					{
+						ds'4.
+					}
+					{
+						e'8 [
+						b8
+						a'8
+						g'8 ~ ]
+					}
+					{
+						g'4 ~
+					}
+					{
+						g'4
+					}
+					{
+						g'4
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/9 {
+						g'8 -\staccato [
+						ds'8 -\staccato
+						c''8 -\staccato
+						f'8 -\staccato
+						cs''8 -\staccato
+						e'8 -\staccato
+						fs'8 -\staccato
+						f'8 -\staccato
+						cs'8 ~ ]
+					}
+					\times 2/3 {
+						cs'4
+						as'4
+						gs'4
+					}
+					{
+						f'4. ~
+					}
+					{
+						f'4. ~
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/9 {
+						f'8 [
+						g'8 -\staccato
+						f'8 -\staccato
+						gs'8 -\staccato
+						a'8 -\staccato
+						c''8 -\staccato
+						g'8 -\staccato
+						ds''8 -\staccato
+						c''8 -\staccato \ff ]
+					}
+					\times 2/3 {
+						as'4
+						fs'4
+						f'4
 					}
 					{
 						f''4 ~
 					}
 					{
 						f''4
-					}
-					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 5/4 {
-						af''4
-						af''4
-					}
-					{
-						e''8 [
-						a''8 ~ ]
-					}
-					\times 2/3 {
-						a''4
 						f''4
-						c'''4
-					}
-					{
-						af''4 ~
-					}
-					{
-						af''4
-						af'4 ~ \< \f
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
-						af'8 [
-						af'8 -\staccato
-						a'8 -\staccato
-						ef'8 -\staccato ]
-					}
-					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 5/6 {
-						bf'4
-						ef'4
-						cs'4
+						ds''8 -\staccato [
+						cs''8 -\staccato
+						cs''8 -\staccato
+						g'8 ~ ]
 					}
 					{
-						fs'4. ~
+						g'4. ~
 					}
 					{
-						fs'4.
+						g'4
 					}
 					{
-						g'8 [
-						d'8
-						c''8
-						bf'8 ~ ]
-					}
-					{
-						bf'4 ~
-					}
-					{
-						bf'4
-					}
-					{
-						bf'4
-					}
-					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 5/9 {
-						bf'8 -\staccato [
-						fs'8 -\staccato
-						ef''8 -\staccato
-						af'8 -\staccato
-						e''8 -\staccato
-						g'8 -\staccato
-						a'8 -\staccato
-						af'8 -\staccato
-						e'8 ~ ]
-					}
-					\times 2/3 {
-						e'4
-						cs''4
-						b'4
-					}
-					{
-						af'4. ~
-					}
-					{
-						af'4. ~
-					}
-					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 5/9 {
-						af'8 [
-						bf'8 -\staccato
-						af'8 -\staccato
-						b'8 -\staccato
-						c''8 -\staccato
-						ef''8 -\staccato
-						bf'8 -\staccato
-						fs''8 -\staccato
-						ef''8 -\staccato \ff ]
-					}
-					\times 2/3 {
-						cs''4
 						a'4
-						af'4
-					}
-					{
-						af''4 ~
-					}
-					{
-						af''4
-						af''4
-					}
-					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 3/4 {
-						fs''8 -\staccato [
-						e''8 -\staccato
-						e''8 -\staccato
-						bf'8 ~ ]
-					}
-					{
-						bf'4. ~
-					}
-					{
-						bf'4
-					}
-					{
-						c''4
-						cs''4
-					}
-					{
-						e''8 [
-						bf''8
-						fs''8
-						b''8 ~ ]
-					}
-					\times 2/3 {
-						b''4
-						cs''4
-						cs''4
-					}
-					{
-						d''4. ~
-					}
-					{
-						d''4 ~
-					}
-					{
-						d''8 [
-						e''8
-						g''8
-						af''8 ]
-					}
-					{
-						cs''4
-					}
-					{
-						b''4. ~
-					}
-					{
-						b''4
+						as'4
 					}
 					{
 						cs''8 [
-						bf''8
-						fs''8
-						g''8 ~ ]
+						g''8
+						ds''8
+						gs''8 ~ ]
 					}
 					\times 2/3 {
-						g''4
-						af''4
-						e''4 ~
+						gs''4
+						as'4
+						as'4
+					}
+					{
+						b'4. ~
+					}
+					{
+						b'4 ~
+					}
+					{
+						b'8 [
+						cs''8
+						e''8
+						f''8 ]
+					}
+					{
+						as'4
+					}
+					{
+						gs''4. ~
+					}
+					{
+						gs''4
+					}
+					{
+						as'8 [
+						g''8
+						ds''8
+						e''8 ~ ]
 					}
 					\times 2/3 {
 						e''4
-						fs''4
-						ef''4
+						f''4
+						cs''4 ~
+					}
+					\times 2/3 {
+						cs''4
+						ds''4
+						c''4
 					}
 					{
-						bf''4.
+						g''4.
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
-						ef''8 -\staccato [
+						c''8 -\staccato [
+						cs''8 -\staccato
 						e''8 -\staccato
-						g''8 -\staccato
-						af''8 -\staccato ]
+						f''8 -\staccato ]
 					}
 					\set Staff.instrumentName = \markup {
 						\column
@@ -1867,6 +1964,7 @@
 					r4.
 					r4.
 					r4.
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					\set Staff.instrumentName = \markup {
 						\column
 							{
@@ -1916,23 +2014,40 @@
 							}
 						}
 					r8
-					e''4. \f \glissando
-					dtqs''4. \glissando
-					f''4. \glissando
-					eqs''4. \glissando
-					dqs''4. \glissando
-					c''4. \glissando
-					dqs''4. \glissando
-					e''4. \glissando
-					dtqs''4. \glissando
-					f''4. \glissando
-					eqs''4. \glissando
-					dqs''4. \glissando
-					c''4. \glissando
-					dqs''4. \glissando
-					e''4. \glissando
-					dtqs''4. \glissando
-					f''4.
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					cs''4. \f \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					btqs'4. \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					d''4. \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					ctqs''4. \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					bqs'4. \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					a'4. \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					bqs'4. \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					cs''4. \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					btqs'4. \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					d''4. \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					ctqs''4. \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					bqs'4. \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					a'4. \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					bqs'4. \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					cs''4. \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					btqs'4. \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					d''4.
 				}
 			}
 		>>
@@ -3024,7 +3139,7 @@
 						\stopStaff
 						\override Staff.StaffSymbol #'line-count = #1
 						\startStaff
-						c'2 \f
+						c'2
 							^ \markup {
 								\override
 									#'(box-padding . 0.5)
@@ -3086,7 +3201,7 @@
 						\stopStaff
 						\override Staff.StaffSymbol #'line-count = #1
 						\startStaff
-						c'2 \f
+						c'2
 							^ \markup {
 								\override
 									#'(box-padding . 0.5)
@@ -3188,11 +3303,13 @@
 					r4
 					r4
 					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					\clef "percussion"
 					\stopStaff
 					\override Staff.StaffSymbol #'line-count = #1
 					\startStaff
 					r16
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					c'16 -\tenuto \p
 						^ \markup {
 							\override
@@ -3200,53 +3317,101 @@
 								\box
 									tam-tam
 							}
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r4.
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r1
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					c'16 -\tenuto \p
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r8.
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r16
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					c'16 -\tenuto \p
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r1.
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r16
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					c'16 -\tenuto \p
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r2.
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r2..
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r2
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					c'16 -\tenuto \p
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r8.
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r16
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					c'16 -\tenuto \p
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r1..
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r16
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					c'16 -\tenuto \p
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r2.
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r2.
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r2.
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					c'16 -\tenuto \p
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r8.
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r16
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					c'16 -\tenuto \p
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r4.
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r16
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					c'16 -\tenuto \p
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r2..
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r1
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					c'16 -\tenuto \p
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r8.
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r16
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					c'16 -\tenuto \p
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #5
 					r2
 					r2.
 					r2.
@@ -3306,62 +3471,101 @@
 					r1..
 					r2.
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						f''4. \mp
+							^ \markup {
+								\larger
+									"off-string bowing on staccati"
+								}
 					}
 					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						f''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						g''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						f''4 ~
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						f''4
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 10/14 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						f''16 -\staccato [
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						c''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						a''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						bf''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						f''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						g''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						bf''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						c''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						af''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						a''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						g''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						cs''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						ef''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						e''16 ~ ]
 					}
 					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						e''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						a''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						c'''4 ~
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						c'''4
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 5/4 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						ef''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						f''4
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						f''16 -\staccato [
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						fs''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						a''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						c''16 ~ ]
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						c''4.
 					}
 					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						c''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						a''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						ef''4 ~
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						ef''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						bf''4
 					}
 					\set Staff.instrumentName = \markup {
@@ -3384,6 +3588,7 @@
 					r1..
 					r2.
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						\set Staff.instrumentName = \markup {
 							\hcenter-in
 								#12
@@ -3395,65 +3600,104 @@
 								Vn.
 							}
 						fs''4. \f
+							^ \markup {
+								\larger
+									"off-string bowing on staccati"
+								}
 					}
 					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						fs''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						af''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						fs''4 ~
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						fs''4
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 10/14 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						fs''16 -\staccato [
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						cs''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						bf''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						b''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						fs''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						af''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						b''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						cs''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						a''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						bf''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						af''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						d''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						e''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						f''16 ~ ]
 					}
 					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						f''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						bf''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						cs''4 ~
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						cs''4
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 5/4 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						e''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						fs''4
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						fs''16 -\staccato [
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						g''16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						bf'16 -\staccato
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						cs''16 ~ ]
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						cs''4.
 					}
 					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						cs''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						bf''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						e''4 ~
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						e''4
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						b''4 ~
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 6/10 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
 						b''16 [
 						c'16 -\staccato \< \f
 						e'16 -\staccato
@@ -3677,83 +3921,157 @@
 						af''16 -\staccato
 						ef''16 -\staccato ]
 					}
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					g''4. -\accent -\upbow \f \glissando
 						^ \markup {
 							\larger
 								"directly on bridge: full bow each stroke"
 							}
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					fs''4. -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					a''4. -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					c''4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					e''4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					b''4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					a''4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					c''4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					af''4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					g''4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					e''4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					d''4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					fs''4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					f''4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					b'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					fs''4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					fs''4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					f''4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					b'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					fs''4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					d''4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					fs''4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					c''4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					a''4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					d''4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					f''4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					af''4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					af''4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					ef''4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					e''4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					a'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					c''4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					af'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					e''4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					a'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					f'4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					d''4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					e'4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					bf'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					f'4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					b'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					fs''4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					f'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					d''4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					af'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					fs'4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					f'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					b'4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					a'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					f'4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					fs'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					g'4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					c''4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					bf'4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					fs'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					e'4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					d'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					fs'4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					c''4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					bf'4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					b'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					af'4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					e'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					ef'4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					d'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					g'4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					f'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					e'4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					fs'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					af'4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					d'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					b'4 -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					af'4 -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					e'8 -\accent -\downbow
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
@@ -3938,6 +4256,7 @@
 						e'''4 -\staccatissimo
 					}
 					r4
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					\clef "percussion"
 					\stopStaff
 					\override Staff.StaffSymbol #'line-count = #1
@@ -3949,13 +4268,17 @@
 								\box
 									"scraped slate"
 							}
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					c'1 \mf ~
 						^ \markup {
 							\larger
 								"scrape in a circle at moderate speed"
 							}
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					c'1 ~
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					c'1 ~
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					c'4
 				}
 			}
@@ -4049,301 +4372,804 @@
 					r4.
 					r4.
 					r4.
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					r4
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					\clef "treble"
 					af''4. -\accent -\upbow \f \glissando
 						^ \markup {
 							\larger
 								"directly on bridge: full bow each stroke"
 							}
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					ef''4. -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					b''4. -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					e''4. -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					af''4. -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					a''4. -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					f''4. -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					b'4. -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					f'4. -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					af'4. -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					fs''4. -\accent -\upbow \glissando
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 7/8 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						\clef "alto"
 						b'4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						af'4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						ef'4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						bf'4 -\accent -\upbow \glissando
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 6/5 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						fs'4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						b'4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						af'4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						fs'4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						af'4 -\accent -\downbow \glissando
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 7/9 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						af'4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						e'4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						bf'4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						a'4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						e'4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						af'4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						f'4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						c'4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						a'4 -\accent -\upbow \glissando
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 7/5 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						e'4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						af'4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						bf4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						e'4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						e'4 -\accent -\downbow \glissando
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						g'4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						e'4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						d'4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						f4 -\accent -\downbow \glissando
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 11/8 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						fs'4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						f4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						g4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						bf4 -\accent -\downbow \glissando
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 5/4 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						c'4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						b4 -\accent -\downbow \glissando
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						ef4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						fs4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						ef4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						af4 -\accent -\downbow \glissando
 					}
 					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						af4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						e4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						ef4 -\accent -\upbow
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						\clef "treble"
 						b''8 -\staccatissimo \fff
 							^ \markup {
 								\larger
 									pizz.
 								}
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						bf''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g''8 -\staccatissimo
 					}
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r1
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r8
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r4
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r8
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 7/9 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f''2 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g''4. ~
 					}
 					\times 2/3 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g''8 [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						a''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						af''8 ~ ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						af''8
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs''8 -\staccatissimo
 					}
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r4
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r2..
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r4.
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 9/11 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						bf''4. -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f''2 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						ef''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						a''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs''8 ~
 					}
 					{
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs''8
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						cs''4 -\staccatissimo
 					}
 					{
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						c'''8 -\staccatissimo
 					}
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r1
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r4.
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r4.
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs''4. -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						a''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						a''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						e''4 -\staccatissimo
 					}
 					\times 2/3 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f''4. ~
 					}
 					{
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f''8
 					}
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r2
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r16
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						a''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						b''16 -\staccatissimo ]
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs''4 -\staccatissimo
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 6/7 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r4
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						cs'''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						c'''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						c'''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						e''8 -\staccatissimo ]
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						bf''4 -\staccatissimo
 					}
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r4.
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r4.
 					\times 2/3 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r8
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f''8 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						c'''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						bf''16 -\staccatissimo ]
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs'''4 -\staccatissimo
 					}
 					\times 4/7 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r4
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						c'''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						bf''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f''8 -\staccatissimo ]
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g''4 -\staccatissimo
 					}
 					{
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r8
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r8
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						c'''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						bf''8 -\staccatissimo
 					}
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r4
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r2.
 					{
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r8
 					}
 					{
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r16
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						c'''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g'''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						af''8 -\staccatissimo ]
 					}
 					\times 2/3 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r4.
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 7/8 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r8
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs'''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						c'''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						c'''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g'''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs'''8 -\staccatissimo ]
 					}
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r4.
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r1
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r8
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/5 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r4
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						af'''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						a''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						cs'''16 -\staccatissimo ]
 					}
 					{
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r8
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 6/7 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r8
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f'''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						e'''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g'''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						cs'''16 -\staccatissimo ]
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						ef'''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g'''4 -\staccatissimo
 					}
 					\times 2/3 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r16
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f'''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g'''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						a'''8 -\staccatissimo ]
 					}
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r4.
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r1
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r8
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/5 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r4
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						c'''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs'''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						cs'''16 -\staccatissimo ]
 					}
 					\times 2/3 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r8
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						a'''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						ef'''2 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g'''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f'''8 -\staccatissimo
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r8
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						af'''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						a'''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						b''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs'''8 -\staccatissimo ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r16
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f'''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						c'''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						bf'''16 -\staccatissimo ]
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g'''4 -\staccatissimo
 					}
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r4.
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r2
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r8
 					{
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r8
 					}
 					{
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r8
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f'''4 -\staccatissimo
 					}
 					\times 2/3 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r16
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f'''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						a'''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs'''8 -\staccatissimo ]
 					}
 					r2.
@@ -4446,317 +5272,842 @@
 					r4.
 					r4.
 					r4.
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					r4
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					\clef "treble"
 					e''4. -\accent -\upbow \f \glissando
 						^ \markup {
 							\larger
 								"directly on bridge: full bow each stroke"
 							}
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					d''4. -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					f''4. -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					fs''4. -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					g''4. -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					fs''4. -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					c''4. -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					bf'4. -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					e'4. -\accent -\upbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					bf'4. -\accent -\downbow \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					\once \override TupletBracket #'staff-padding = #4
 					f'4. -\accent -\upbow \glissando
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 7/4 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						b'4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						d'4 -\accent -\upbow \glissando
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 6/8 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						f'4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						d'4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						e'4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						ef'4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						f'4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						ef'4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						b'4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						e'4 -\accent -\upbow \glissando
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 7/5 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						g'4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						c'4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						f'4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						g'4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						bf4 -\accent -\downbow \glissando
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 7/8 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						ef'4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						b4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						f'4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						b4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						af4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						ef'4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						b4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						fs4 -\accent -\downbow \glissando
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/2 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						b4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						g4 -\accent -\downbow \glissando
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 11/14 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						af4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						fs4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						b4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						bf4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						f4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						fs4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						fs4 -\accent -\upbow \glissando
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 5/4 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						\clef "bass"
 						b4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						af4 -\accent -\upbow \glissando
 					}
 					\times 4/5 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						b4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						a4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						c4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						d4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						e4 -\accent -\downbow \glissando
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						g4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						e4 -\accent -\downbow \glissando
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 7/9 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						b,4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						e4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						af4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						g4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						c4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						bf,4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						fs4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						f,4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						e,4 -\accent -\upbow \glissando
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						af,4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						f,4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						b,4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						a,4 -\accent -\upbow \glissando
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 7/8 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						af,4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						ef,4 -\accent -\upbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						b,4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						f,4 -\accent -\upbow \glissando
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 7/4 {
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						b,4 -\accent -\downbow \glissando
+						\once \override DynamicLineSpanner #'staff-padding = #3
+						\once \override TupletBracket #'staff-padding = #4
 						a,4 -\accent -\upbow
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						\clef "treble"
 						cs''8 -\staccatissimo \fff
 							^ \markup {
 								\larger
 									pizz.
 								}
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						c''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						b''8 ~
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 9/10 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						b''8
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g''2 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						e''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						c''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g''8 -\staccatissimo
 					}
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r4.
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r8
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r1
 					{
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						bf''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f''8 ~
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f''8
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						c''4. ~
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 6/7 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						c''8
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						af''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f''8 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						af''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs''16 -\staccatissimo ]
 					}
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r4
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r8
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r2
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r4.
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r8
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						b''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						ef''8 -\staccatissimo ]
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f''2 -\staccatissimo
 					}
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r4.
 					{
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r16
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						e''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						ef''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g''8 -\staccatissimo ]
 					}
 					\times 4/5 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r16
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						e''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f''16 -\staccatissimo ]
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						af''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f''8 -\staccatissimo
 					}
 					\times 2/3 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r8
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						af''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						cs'''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						b''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						a''8 -\staccatissimo ]
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						ef''4 -\staccatissimo
 					}
 					{
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r8
 					}
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r4.
 					\times 2/3 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r16
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						a''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						ef''8 -\staccatissimo ]
 					}
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r2.
 					{
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r16
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						cs'''16 -\staccatissimo
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/5 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r8
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						b''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						a''4. -\staccatissimo
 					}
 					{
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r8
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f''8 -\staccatissimo
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 7/9 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r8
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						ef'''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						a''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						b''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs'''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						ef'''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						a''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						af''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f''8 -\staccatissimo ]
 					}
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r4.
 					{
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r8
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs'''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g'''2 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						bf''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g'''8 -\staccatissimo
 					}
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r4.
 					{
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r16
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						c'''16 -\staccatissimo
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r16
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						bf''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						a''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						b''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs'''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f'''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						ef'''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						a''8 -\staccatissimo ]
 					}
 					{
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r4
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r4
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f'''4 -\staccatissimo
 					}
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r1
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r8
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r4
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						b''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						bf''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						g'''8 -\staccatissimo ]
 					}
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r2.
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/5 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r8
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						ef'''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs'''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						cs'''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						bf'''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						a'''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						af'''16 -\staccatissimo ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/5 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r16
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs'''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						cs'''4 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						c'''4 -\staccatissimo
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r16
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs'''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						c'''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						e'''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						ef'''8 -\staccatissimo ]
 					}
 					{
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r4.
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f'''4 -\staccatissimo
 					}
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r8
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/5 {
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						r8
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						af'''16 -\staccatissimo [
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						fs'''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						f'''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						ef'''8 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						c'''16 -\staccatissimo
+						\once \override Beam #'positions = #'(-4 . -4)
+						\once \override DynamicLineSpanner #'staff-padding = #6
+						\once \override TupletBracket #'staff-padding = #3
 						a'''16 -\staccatissimo ]
 					}
+					\once \override Beam #'positions = #'(-4 . -4)
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					\once \override TupletBracket #'staff-padding = #3
 					r4
 					r2.
 					r1

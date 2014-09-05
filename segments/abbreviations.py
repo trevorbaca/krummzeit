@@ -155,7 +155,7 @@ def dynamic_line_spanner_staff_padding(n):
         attribute_value=str(n),
         )
 
-def tremolo_down(n):
+def tremolo_down(n, maximum_adjustment=-1.5):
     pair = (0, -n)
     return handlertools.OverrideHandler(
         grob_name='stem_tremolo',
@@ -165,7 +165,7 @@ def tremolo_down(n):
         maximum_settings={
             'grob_name': 'stem_tremolo',
             'attribute_name': 'extra_offset',
-            'attribute_value': str((0, -1.5)),
+            'attribute_value': str((0, maximum_adjustment)),
             },
         )
 

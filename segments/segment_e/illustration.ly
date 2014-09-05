@@ -1,4 +1,4 @@
-% 2014-09-05 00:26
+% 2014-09-05 17:34
 
 \version "2.19.12"
 \language "english"
@@ -1597,8 +1597,11 @@
 					c'4 -\tenuto ~
 					\once \override NoteHead #'style = #'harmonic
 					c'2 -\tenuto
+					\once \override NoteHead #'style = #'harmonic
 					r4
+					\once \override NoteHead #'style = #'harmonic
 					r2
+					\once \override NoteHead #'style = #'harmonic
 					r2
 					\once \override NoteHead #'style = #'harmonic
 					c'4 -\tenuto ~
@@ -1663,7 +1666,6 @@
 					\once \override NoteHead #'style = #'harmonic
 					c'4 -\tenuto
 					\times 4/5 {
-						\clef "treble"
 						\set PianoMusicStaff.instrumentName = \markup {
 							\hcenter-in
 								#12
@@ -1745,7 +1747,6 @@
 					c'4. -\tenuto
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/5 {
-						\clef "treble"
 						\set PianoMusicStaff.instrumentName = \markup {
 							\hcenter-in
 								#12
@@ -1854,7 +1855,6 @@
 						r8
 						fs'''8 -\staccatissimo
 					}
-					\clef "bass"
 					r4
 					r4
 					r4
@@ -2043,7 +2043,6 @@
 					r1
 					r2..
 					c'16
-					\clef "percussion"
 					r8.
 					r2.
 					r8
@@ -2137,7 +2136,6 @@
 						c'1 -\accent
 						c'4. -\accent
 					}
-					\clef "treble"
 					r4.
 					r4.
 					r4.
@@ -2196,7 +2194,6 @@
 						r4
 						fs'''4 -\staccatissimo
 					}
-					\clef "treble"
 					r4
 					r4
 					r4
@@ -2472,8 +2469,11 @@
 						\revert TextSpanner #'dash-fraction
 						\revert TextSpanner #'dash-period
 					}
+					\once \override NoteHead #'style = #'harmonic
 					r2
+					\once \override NoteHead #'style = #'harmonic
 					r2
+					\once \override NoteHead #'style = #'harmonic
 					r2.
 					\times 4/5 {
 						\once \override NoteHead #'style = #'harmonic
@@ -2718,6 +2718,7 @@
 					r4.
 					r4.
 					r2.
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r8
 					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					aqs8 :32 \mp
@@ -2725,18 +2726,25 @@
 							\larger
 								ordinario
 							}
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r2
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r8
 					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					aqs8 :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r4
 					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					aqs8 :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r8
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r2.
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r2.
 					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					aqs8 :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r8
 					r4
 					r4
@@ -2744,34 +2752,45 @@
 					r4
 					r4
 					r1
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r8
 					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					aqs8 :32
 					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					aqs8. :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r4..
 					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					aqs8 :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r8
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r8
 					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					aqs8. :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r8.
 					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					aqs8. :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r16
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r8
 					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					aqs8 :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r4.
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r8
 					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					aqs8 :32
 					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					aqs8. :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r4..
 					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					aqs8 :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r8
 				}
 			}
@@ -2857,8 +2876,11 @@
 						\once \override NoteHead #'style = #'harmonic
 						d''2 \p \f \glissando
 					}
+					\once \override NoteHead #'style = #'harmonic
 					r4
+					\once \override NoteHead #'style = #'harmonic
 					r2
+					\once \override NoteHead #'style = #'harmonic
 					r2
 					\times 4/5 {
 						\once \override NoteHead #'style = #'harmonic
@@ -3201,7 +3223,6 @@
 						\once \override NoteHead #'style = #'harmonic
 						f''8.
 					}
-					\clef "alto"
 					r4.
 					r4.
 					r4.
@@ -3210,6 +3231,7 @@
 					r4.
 					r4.
 					r2.
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r8
 					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					\clef "alto"
@@ -3218,19 +3240,25 @@
 							\larger
 								ordinario
 							}
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r2
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r8
 					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					bf,8 :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r4
 					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					bf,8 :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r8
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r2.
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r2.
 					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					bf,8 :32
-					\clef "alto"
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r8
 					r4
 					r4
@@ -3238,35 +3266,46 @@
 					r4
 					r4
 					r1
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r8
 					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					\clef "alto"
 					bf,8 :32
 					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					bf,8. :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r4..
 					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					bf,8 :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r8
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r8
 					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					bf,8. :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r8.
 					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					bf,8. :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r16
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r8
 					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					bf,8 :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r4.
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r8
 					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					bf,8 :32
 					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					bf,8. :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r4..
 					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					bf,8 :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r8
 				}
 			}
@@ -3336,9 +3375,11 @@
 					cs,4 \glissando
 					f,4 \glissando
 					b,4
-					\clef "treble"
+					\once \override NoteHead #'style = #'harmonic
 					r2
+					\once \override NoteHead #'style = #'harmonic
 					r4
+					\once \override NoteHead #'style = #'harmonic
 					r4
 					\times 2/3 {
 						\once \override NoteHead #'style = #'harmonic
@@ -3392,6 +3433,7 @@
 						\revert TextSpanner #'dash-fraction
 						\revert TextSpanner #'dash-period
 					}
+					\once \override NoteHead #'style = #'harmonic
 					r2.
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 6/7 {
@@ -3623,7 +3665,6 @@
 						\once \override NoteHead #'style = #'harmonic
 						c''8.
 					}
-					\clef "bass"
 					r4.
 					r4.
 					r4.
@@ -3648,7 +3689,6 @@
 					r2.
 					r2.
 					a,8 :32
-					\clef "bass"
 					r8
 					r4
 					r4

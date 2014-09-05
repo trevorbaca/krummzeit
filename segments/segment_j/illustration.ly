@@ -1,4 +1,4 @@
-% 2014-09-05 08:56
+% 2014-09-05 17:36
 
 \version "2.19.12"
 \language "english"
@@ -800,7 +800,6 @@
 										}
 								}
 					}
-					\clef "bass"
 					\set PianoMusicStaff.instrumentName = \markup {
 						\hcenter-in
 							#12
@@ -3513,10 +3512,10 @@
 						\once \override StemTremolo #'extra-offset = #'(0 . 0)
 						fs'''2. :32
 					}
-					\clef "percussion"
 					r4.
 					r4.
 					r4.
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					\clef "percussion"
 					\stopStaff
 					\override Staff.StaffSymbol #'line-count = #1
@@ -3530,49 +3529,77 @@
 								\box
 									tam-tam
 							}
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r2
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r2
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r2..
 					\once \override DynamicLineSpanner #'staff-padding = #3
 					c'16
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r8.
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r16
 					\once \override DynamicLineSpanner #'staff-padding = #3
 					c'16
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r2..
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r16
 					\once \override DynamicLineSpanner #'staff-padding = #3
 					c'16
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r4.
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r2
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r2.
 					\once \override DynamicLineSpanner #'staff-padding = #3
 					c'16
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r8.
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r16
 					\once \override DynamicLineSpanner #'staff-padding = #3
 					c'16
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r1
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r16
 					\once \override DynamicLineSpanner #'staff-padding = #3
 					c'16
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r2.
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r1
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r2.
 					\once \override DynamicLineSpanner #'staff-padding = #3
 					c'16
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r8.
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r16
 					\once \override DynamicLineSpanner #'staff-padding = #3
 					c'16
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r2.
 					r16
 					c'16
@@ -3660,7 +3687,6 @@
 						ef''8 :32
 						ef''8 :32 ]
 					}
-					\clef "treble"
 					r8
 					r8
 					r8
@@ -3810,7 +3836,6 @@
 						a8 :32
 						a8 :32 ]
 					}
-					\clef "treble"
 					r8
 					r8
 					r8
@@ -3991,7 +4016,7 @@
 						\once \override StemTremolo #'extra-offset = #'(0 . -1.5)
 						eqf,8 :32 ]
 					}
-					\clef "treble"
+					\once \override StemTremolo #'extra-offset = #'(0 . -1.5)
 					r8
 					r8
 					r8

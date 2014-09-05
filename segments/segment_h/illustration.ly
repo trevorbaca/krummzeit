@@ -1,4 +1,4 @@
-% 2014-09-05 00:30
+% 2014-09-05 17:36
 
 \version "2.19.12"
 \language "english"
@@ -828,7 +828,6 @@
 						ef'''8 -\staccato
 						bf''8 -\staccato ]
 					}
-					\clef "bass"
 					\set PianoMusicStaff.instrumentName = \markup {
 						\hcenter-in
 							#12
@@ -880,7 +879,11 @@
 					\once \override DynamicLineSpanner #'staff-padding = #4
 					\once \override NoteHead #'style = #'harmonic
 					c'2 -\tenuto
+					\once \override DynamicLineSpanner #'staff-padding = #4
+					\once \override NoteHead #'style = #'harmonic
 					r4.
+					\once \override DynamicLineSpanner #'staff-padding = #4
+					\once \override NoteHead #'style = #'harmonic
 					r2
 					\once \override DynamicLineSpanner #'staff-padding = #4
 					\once \override NoteHead #'style = #'harmonic
@@ -897,7 +900,11 @@
 					\once \override DynamicLineSpanner #'staff-padding = #4
 					\once \override NoteHead #'style = #'harmonic
 					c'2 -\tenuto
+					\once \override DynamicLineSpanner #'staff-padding = #4
+					\once \override NoteHead #'style = #'harmonic
 					r2
+					\once \override DynamicLineSpanner #'staff-padding = #4
+					\once \override NoteHead #'style = #'harmonic
 					r2
 					\once \override DynamicLineSpanner #'staff-padding = #4
 					\once \override NoteHead #'style = #'harmonic

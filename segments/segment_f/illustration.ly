@@ -1,4 +1,4 @@
-% 2014-09-05 00:29
+% 2014-09-05 17:35
 
 \version "2.19.12"
 \language "english"
@@ -1525,7 +1525,6 @@
 										\flat
 									}
 							}
-					\clef "treble"
 					r16
 					r2.
 					r1
@@ -1556,7 +1555,6 @@
 						r4
 						f''4 -\staccatissimo
 					}
-					\clef "treble"
 					r4.
 					r4
 					r4
@@ -1684,7 +1682,6 @@
 					r32
 					bf,,,8..
 					\ottava #0
-					\clef "treble"
 					r32
 					r4.
 					\tweak #'text #tuplet-number::calc-fraction-text
@@ -1817,7 +1814,6 @@
 						c'1 :32
 						c'8 :32
 					}
-					\clef "treble"
 					r2.
 					r2.
 					\tweak #'text #tuplet-number::calc-fraction-text
@@ -1838,7 +1834,6 @@
 						r8
 						f''8 -\staccatissimo
 					}
-					\clef "treble"
 					r4.
 					r4
 					r4
@@ -1948,7 +1943,6 @@
 						r8
 						f''8 -\staccatissimo
 					}
-					\clef "percussion"
 					r2.
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
@@ -2023,6 +2017,7 @@
 					r4.
 					r4.
 					r4.
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r8
 					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					aqs8 :32 \ff
@@ -2030,13 +2025,17 @@
 					aqs8. :32
 					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					aqs8 :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r16
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r8
 					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					aqs8. :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r16
 					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					aqs8. :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -4)
 					r16
 					r2.
 					{
@@ -2075,7 +2074,9 @@
 						\once \override NoteHead #'style = #'harmonic
 						g''2 \ppp \glissando
 					}
+					\once \override NoteHead #'style = #'harmonic
 					r4
+					\once \override NoteHead #'style = #'harmonic
 					r2
 					\times 4/5 {
 						\once \override NoteHead #'style = #'harmonic
@@ -2107,7 +2108,9 @@
 						\once \override NoteHead #'style = #'harmonic
 						e'8. \ppp \glissando
 					}
+					\once \override NoteHead #'style = #'harmonic
 					r2
+					\once \override NoteHead #'style = #'harmonic
 					r4
 					{
 						\once \override NoteHead #'style = #'harmonic
@@ -2139,7 +2142,9 @@
 						\once \override NoteHead #'style = #'harmonic
 						e'4 \ppp
 					}
+					\once \override NoteHead #'style = #'harmonic
 					r8
+					\once \override NoteHead #'style = #'harmonic
 					r4
 					r4.
 					r4.
@@ -2342,6 +2347,7 @@
 					r4.
 					r4.
 					r4.
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r8
 					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					bf,8 :32 \ff
@@ -2349,16 +2355,22 @@
 					bf,8. :32
 					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					bf,8 :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r16
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r8
 					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					bf,8. :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r16
 					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					bf,8. :32
+					\once \override StemTremolo #'extra-offset = #'(0 . -3)
 					r16
 					r2.
+					\once \override NoteHead #'style = #'harmonic
 					r2.
+					\once \override NoteHead #'style = #'harmonic
 					r4
 					\times 4/7 {
 						\once \override NoteHead #'style = #'harmonic
@@ -2396,7 +2408,9 @@
 						\once \override NoteHead #'style = #'harmonic
 						e'2 \ppp \glissando
 					}
+					\once \override NoteHead #'style = #'harmonic
 					r2
+					\once \override NoteHead #'style = #'harmonic
 					r4
 					\times 2/3 {
 						\once \override NoteHead #'style = #'harmonic
@@ -2428,7 +2442,9 @@
 						\once \override NoteHead #'style = #'harmonic
 						cs'4 \ppp \glissando
 					}
+					\once \override NoteHead #'style = #'harmonic
 					r2..
+					\once \override NoteHead #'style = #'harmonic
 					r2
 					\times 4/5 {
 						\once \override NoteHead #'style = #'harmonic
@@ -2581,7 +2597,9 @@
 						\once \override NoteHead #'style = #'harmonic
 						f'2 \ppp \glissando
 					}
+					\once \override NoteHead #'style = #'harmonic
 					r4
+					\once \override NoteHead #'style = #'harmonic
 					r2.
 					\times 4/5 {
 						\once \override NoteHead #'style = #'harmonic
@@ -2614,7 +2632,9 @@
 						\once \override NoteHead #'style = #'harmonic
 						g8. \ppp \glissando
 					}
+					\once \override NoteHead #'style = #'harmonic
 					r4
+					\once \override NoteHead #'style = #'harmonic
 					r2
 					\times 4/7 {
 						\once \override NoteHead #'style = #'harmonic
@@ -2646,7 +2666,9 @@
 						\once \override NoteHead #'style = #'harmonic
 						d4 \ppp \glissando
 					}
+					\once \override NoteHead #'style = #'harmonic
 					r2
+					\once \override NoteHead #'style = #'harmonic
 					r2
 					\times 2/3 {
 						\once \override NoteHead #'style = #'harmonic

@@ -1,4 +1,4 @@
-% 2014-09-05 00:25
+% 2014-09-05 17:34
 
 \version "2.19.12"
 \language "english"
@@ -769,7 +769,6 @@
 						b8 -\staccatissimo
 						c'8 -\staccatissimo \ff ]
 					}
-					\clef "bass"
 					\set PianoMusicStaff.instrumentName = \markup {
 						\hcenter-in
 							#12
@@ -1216,7 +1215,6 @@
 						cs''4 -\staccatissimo
 						a'4 -\staccatissimo \ff
 					}
-					\clef "alto"
 					r4
 					\times 2/3 {
 						r8
@@ -1300,7 +1298,6 @@
 						r8
 						d'4 -\staccatissimo \pp
 					}
-					\clef "bass"
 					r4
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 7/8 {

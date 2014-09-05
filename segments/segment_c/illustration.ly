@@ -1,4 +1,4 @@
-% 2014-09-05 00:23
+% 2014-09-05 17:33
 
 \version "2.19.12"
 \language "english"
@@ -1820,7 +1820,6 @@
 					c'8 ~
 					c'1 ~
 					c'4
-					\clef "treble"
 					r2
 					r2.
 					\times 4/5 {
@@ -1854,7 +1853,6 @@
 						r4
 						cs'''4
 					}
-					\clef "treble"
 					r4
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/5 {
@@ -1959,7 +1957,6 @@
 					c'1 ~
 					c'4 ~
 					c'2.
-					\clef "treble"
 					\set Staff.instrumentName = \markup {
 						\hcenter-in
 							#12

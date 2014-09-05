@@ -27,6 +27,7 @@ class SegmentMaker(makertools.SegmentMaker):
 
     def __init__(
         self,
+        final_barline=False,
         measures_per_stage=None,
         music_makers=None,
         name=None,
@@ -36,6 +37,7 @@ class SegmentMaker(makertools.SegmentMaker):
         superclass = super(SegmentMaker, self)
         superclass.__init__(name=name)
         self._initialize_music_makers(music_makers)
+        self.final_barline = final_barline
         self.measures_per_stage = measures_per_stage
         self.name = name
         self._music_handlers = []

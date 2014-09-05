@@ -180,13 +180,14 @@ segment_maker.copy_music_maker(
     stages=(8, 15),
     )
 
-### bass clarinet [J3-11] (3.1) ###
+### (3.1) bass clarinet [J3-11] ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 3, 11
 music_maker.context_name = cl
 music_maker.instrument = bass_clarinet
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 
+### (9.1) vn, va, vc points [J15] ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 15
 music_maker.context_name = vn

@@ -56,6 +56,9 @@ class SegmentMaker(makertools.SegmentMaker):
         self._interpret_music_makers()
         self._interpret_music_handlers()
         self._move_clefs_from_notes_back_to_rests()
+        self._move_instruments_from_notes_back_to_rests()
+        self._move_untuned_percussion_markup_to_first_note()
+        self._label_instrument_changes()
         #self._transpose_instruments()
         self._attach_rehearsal_mark()
         score_block = self.lilypond_file['score']
@@ -286,6 +289,30 @@ class SegmentMaker(makertools.SegmentMaker):
         time_signatures_ = tuple(time_signatures_)
         self.time_signatures = time_signatures_
 
+    def _label_instrument_changes(self):
+        prototype = instrumenttools.Instrument
+        for leaf in iterate(self._score).by_class(scoretools.Leaf):
+            instruments = inspect_(leaf).get_indicators(prototype)
+            if not instruments:
+                continue
+            assert len(instruments) == 1
+            current_instrument = instruments[0]
+            previous_leaf = inspect_(leaf).get_leaf(-1)
+            if previous_leaf is None:
+                continue
+            result = inspect_(previous_leaf).get_effective(prototype)
+            previous_effective_instrument = result
+            if not previous_effective_instrument == current_instrument:
+                markup = self._make_instrument_change_markup(
+                    current_instrument)
+                attach(markup, leaf)
+
+    def _make_instrument_change_markup(self, instrument):
+        string = 'to {}'.format(instrument.instrument_name)
+        markup = markuptools.Markup(string, direction=Up)
+        markup = markup.box().override(('box-padding', 0.5))
+        return markup
+
     def _make_rests(self, time_signatures=None):
         time_signatures = time_signatures or self.time_signatures
         specifier = rhythmmakertools.DurationSpellingSpecifier(
@@ -379,7 +406,50 @@ class SegmentMaker(makertools.SegmentMaker):
                 if not isinstance(previous_leaf, scoretools.Rest):
                     attach(clef, current_leaf)
                     break
+
+    def _move_instruments_from_notes_back_to_rests(self):
+        prototype = instrumenttools.Instrument
+        for leaf in iterate(self._score).by_class(scoretools.Leaf):
+            instruments = inspect_(leaf).get_indicators(prototype)
+            if not instruments:
+                continue
+            assert len(instruments) == 1
+            instrument = instruments[0]
+            current_leaf = leaf
+            previous_leaf = inspect_(current_leaf).get_leaf(-1)
+            if not isinstance(previous_leaf, scoretools.Rest):
+                continue
+            detach(instrument, leaf)
+            while True:
+                current_leaf = previous_leaf
+                previous_leaf = inspect_(current_leaf).get_leaf(-1)
+                if not isinstance(previous_leaf, scoretools.Rest):
+                    attach(instrument, current_leaf)
+                    break
         
+    def _move_untuned_percussion_markup_to_first_note(self):
+        voice = self._score['Percussion Music Voice']
+        prototype = markuptools.Markup
+        for rest in iterate(voice).by_class(scoretools.Rest):
+            markups = inspect_(rest).get_indicators(prototype)
+            if not markups:
+                continue
+            untuned_percussion_markup = None
+            for markup in markups:
+                if r'\box' in format(markup):
+                    untuned_percussion_markup = markup
+                    break
+            if untuned_percussion_markup is None:
+                continue
+            current_leaf = rest
+            while isinstance(current_leaf, scoretools.Rest):
+                current_leaf = inspect_(current_leaf).get_leaf(1)
+                if current_leaf is None:
+                    break
+            if not isinstance(current_leaf, scoretools.Rest):
+                detach(markup, rest)
+                attach(markup, current_leaf)
+
     def _populate_time_signature_context(self):
         measures = self._make_skip_filled_measures()
         time_signature_context = self._score['Time Signature Context']

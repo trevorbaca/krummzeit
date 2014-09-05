@@ -55,8 +55,8 @@
         (padding . 0)
         (stretchability . 0)
     )
-    %top-margin = 10\mm
-    top-margin = 0\mm
+    top-margin = 10\mm
+    %top-margin = 0\mm
 }
 
 \header {

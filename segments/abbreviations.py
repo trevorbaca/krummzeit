@@ -151,6 +151,13 @@ subito_non_armonichi = Markup(string, direction=Up).italic().larger()
 
 subito_ordinario = Markup('subito ordinario', direction=Up).larger()
 
+def beam_positions(n):
+    return handlertools.OverrideHandler(
+        grob_name='beam',
+        attribute_name='positions',
+        attribute_value=str((n, n)),
+        )
+
 def dynamic_line_spanner_staff_padding(n):
     return handlertools.OverrideHandler(
         grob_name='dynamic_line_spanner',

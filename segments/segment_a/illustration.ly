@@ -1,4 +1,4 @@
-% 2014-09-05 11:12
+% 2014-09-05 18:58
 
 \version "2.19.12"
 \language "english"
@@ -15,14 +15,7 @@
 			{
 				\time 4/4
 				\mark #1
-				s1 * 1
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[A1]
-						}
-					^ \markup {
+				s1 * 1 ^ \markup {
 					\smaller
 						\general-align
 							#Y
@@ -42,12 +35,6 @@
 			{
 				\time 1/4
 				s1 * 1/4 \shortfermata
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[A2]
-						}
 			}
 			{
 				\time 3/4
@@ -87,42 +74,17 @@
 				\once \override TextSpanner.dash-fraction = 0.25
 				\once \override TextSpanner.dash-period = 1.5
 				s1 * 3/4 \startTextSpan
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[A3]
-						}
 			}
 			{
 				\time 5/8
 				s1 * 5/8
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[A4]
-						}
 			}
 			{
 				\time 9/8
 				s1 * 9/8
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[A5]
-						}
 			}
 			{
-				s1 * 9/8 \stopTextSpan
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[A6]
-						}
-					^ \markup {
+				s1 * 9/8 \stopTextSpan ^ \markup {
 					\smaller
 						\general-align
 							#Y
@@ -137,14 +99,7 @@
 			}
 			{
 				\time 5/8
-				s1 * 5/8
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[A7]
-						}
-					^ \markup {
+				s1 * 5/8 ^ \markup {
 					\smaller
 						\general-align
 							#Y
@@ -160,23 +115,10 @@
 			{
 				\time 1/4
 				s1 * 1/4 \shortfermata
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[A8]
-						}
 			}
 			{
 				\time 5/8
-				s1 * 5/8
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[A9]
-						}
-					^ \markup {
+				s1 * 5/8 ^ \markup {
 					\smaller
 						\general-align
 							#Y
@@ -192,12 +134,6 @@
 			{
 				\time 4/4
 				s1 * 1
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[A10]
-						}
 			}
 			{
 				\time 5/4
@@ -275,14 +211,14 @@
 							#12
 							"Bass cl."
 						}
-					b,,2.
+					cs2.
 						- \markup {
 							\dynamic
 								ppp
 							subtone
 							}
-					b,,2 ~
-					b,,8
+					cs2 ~
+					cs8
 					r4.
 					r4.
 					r4.
@@ -384,7 +320,6 @@
 					r4.
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 9/8 {
-						\once \override DynamicLineSpanner #'staff-padding = #8
 						\once \override TupletBracket #'staff-padding = #4
 						\clef "treble"
 						cs''2 :32
@@ -394,7 +329,6 @@
 								\italic
 									possibile
 								}
-						\once \override DynamicLineSpanner #'staff-padding = #8
 						\once \override TupletBracket #'staff-padding = #4
 						cs''2 :32
 					}
@@ -436,22 +370,25 @@
 					r4.
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 9/8 {
-						\once \override DynamicLineSpanner #'staff-padding = #8
-						\once \override TupletBracket #'staff-padding = #4
+						\once \override StemTremolo #'extra-offset = #'(0 . -2.5)
+						\once \override TupletBracket #'staff-padding = #5
+						\clef "treble"
 						\stopStaff
 						\override Staff.StaffSymbol #'line-count = #5
 						\startStaff
-						cs''4 :32
+						cs'4 :32
 							- \markup {
 								\dynamic
 									fff
 								\italic
 									possibile
 								}
-						\once \override DynamicLineSpanner #'staff-padding = #8
-						\once \override TupletBracket #'staff-padding = #4
-						cs''2. :32
+						\once \override StemTremolo #'extra-offset = #'(0 . -2.5)
+						\once \override TupletBracket #'staff-padding = #5
+						cs'2. :32
 					}
+					\set Staff.instrumentName = \markup { Sponges }
+					\set Staff.shortInstrumentName = \markup { Spg. }
 					r8
 					r8
 					r8
@@ -461,6 +398,8 @@
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 5/8 {
 						\clef "percussion"
+						\set Staff.instrumentName = \markup { Sponges }
+						\set Staff.shortInstrumentName = \markup { Spg. }
 						\stopStaff
 						\override Staff.StaffSymbol #'line-count = #1
 						\startStaff

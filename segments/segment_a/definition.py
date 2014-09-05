@@ -8,6 +8,7 @@ from krummzeit.segments.abbreviations import *
 
 
 segment_maker = makers.SegmentMaker(name='A')
+segment_maker._do_not_annotate_stages = True
 segment_maker.time_signatures = materials.segment_time_signatures['A']
 segment_maker.measures_per_stage = [
     2, 1, # stage 1 + halt
@@ -313,14 +314,21 @@ segment_maker.make_music_handler(
     specifiers=[
         stem_tremolo,
         fff_possibile,
-        tuplet_bracket_staff_padding(4),
-        dynamic_line_spanner_staff_padding(8),
         ],
     )
 segment_maker.make_music_handler(
     scope=(pf, 6),
     specifiers=[
         Clef('treble'),
+        tuplet_bracket_staff_padding(4),
+        ],
+    )
+segment_maker.make_music_handler(
+    scope=(perc, 6),
+    specifiers=[
+        Clef('treble'),
+        tremolo_down(2.5),
+        tuplet_bracket_staff_padding(5),
         ],
     )
 

@@ -99,6 +99,7 @@ class MusicMaker(abctools.AbjadObject):
             attach(self.instrument, first_leaf)
         if isinstance(self.instrument, prototype):
             self._attach_untuned_percussion_markup(first_leaf)
+            attach(self.instrument, first_leaf)
         if self.clef is not None:
             attach(self.clef, first_leaf)
         if self.staff_line_count is not None:

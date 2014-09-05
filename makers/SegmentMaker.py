@@ -58,12 +58,11 @@ class SegmentMaker(makertools.SegmentMaker):
         self._annotate_stages()
         self._interpret_music_makers()
         self._interpret_music_handlers()
-        #self._move_clefs_from_notes_back_to_rests()
         self._move_instruments_from_notes_back_to_rests()
         self._attach_instrument_to_first_leaf()
         self._move_untuned_percussion_markup_to_first_note()
         self._label_instrument_changes()
-        #self._transpose_instruments()
+        self._transpose_instruments()
         self._attach_rehearsal_mark()
         self._add_final_barline()
         score_block = self.lilypond_file['score']
@@ -451,42 +450,42 @@ class SegmentMaker(makertools.SegmentMaker):
         score = template()
         self._score = score
 
-    def _move_clefs_from_notes_back_to_rests(self):
-        prototype = indicatortools.Clef
-        for leaf in iterate(self._score).by_class(scoretools.Leaf):
-            clefs = inspect_(leaf).get_indicators(prototype)
-            if not clefs:
-                continue
-            assert len(clefs) == 1
-            clef = clefs[0]
-            current_leaf = leaf
-            previous_leaf = inspect_(current_leaf).get_leaf(-1)
-            if not isinstance(previous_leaf, scoretools.Rest):
-                continue
-            #detach(clef, leaf)
-            while True:
-                current_leaf = previous_leaf
-                previous_leaf = inspect_(current_leaf).get_leaf(-1)
-                if not isinstance(previous_leaf, scoretools.Rest):
-                    if current_leaf._start_offset == 0:
-                        break
-                    already_present_in_parentage = False
-                    parentage = inspect_(current_leaf).get_parentage()
-                    for component in parentage:
-                        if (not component._start_offset ==
-                            current_leaf._start_offset):
-                            continue
-                        if inspect_(component).has_indicator(prototype):
-                            #already_present_in_parentage = True
-                            detach(prototype, component)
-                            break
-                    if already_present_in_parentage:
-                        break
-                    else:
-                        #attach(clef, current_leaf)
-                        new_clef = new(clef)
-                        attach(new_clef, current_leaf)
-                        break
+#    def _move_clefs_from_notes_back_to_rests(self):
+#        prototype = indicatortools.Clef
+#        for leaf in iterate(self._score).by_class(scoretools.Leaf):
+#            clefs = inspect_(leaf).get_indicators(prototype)
+#            if not clefs:
+#                continue
+#            assert len(clefs) == 1
+#            clef = clefs[0]
+#            current_leaf = leaf
+#            previous_leaf = inspect_(current_leaf).get_leaf(-1)
+#            if not isinstance(previous_leaf, scoretools.Rest):
+#                continue
+#            #detach(clef, leaf)
+#            while True:
+#                current_leaf = previous_leaf
+#                previous_leaf = inspect_(current_leaf).get_leaf(-1)
+#                if not isinstance(previous_leaf, scoretools.Rest):
+#                    if current_leaf._start_offset == 0:
+#                        break
+#                    already_present_in_parentage = False
+#                    parentage = inspect_(current_leaf).get_parentage()
+#                    for component in parentage:
+#                        if (not component._start_offset ==
+#                            current_leaf._start_offset):
+#                            continue
+#                        if inspect_(component).has_indicator(prototype):
+#                            #already_present_in_parentage = True
+#                            detach(prototype, component)
+#                            break
+#                    if already_present_in_parentage:
+#                        break
+#                    else:
+#                        #attach(clef, current_leaf)
+#                        new_clef = new(clef)
+#                        attach(new_clef, current_leaf)
+#                        break
 
     def _move_instruments_from_notes_back_to_rests(self):
         prototype = instrumenttools.Instrument

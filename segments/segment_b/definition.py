@@ -536,24 +536,30 @@ segment_maker.make_music_handler(
     scope=(cl, (3, 4)),
     specifiers=[
         Dynamic('mp'),
+        dynamic_line_spanner_staff_padding(3),
         ],
     )
 segment_maker.make_music_handler(
     scope=(vn, 4),
     specifiers=[
         Dynamic('mp'),
+        off_string,
+        dynamic_line_spanner_staff_padding(3),
         ],
     )
 segment_maker.make_music_handler(
     scope=(cl, (7, 8)),
     specifiers=[
         Dynamic('f'),
+        dynamic_line_spanner_staff_padding(3),
         ],
     )
 segment_maker.make_music_handler(
     scope=(vn, 8),
     specifiers=[
         Dynamic('f'),
+        off_string,
+        dynamic_line_spanner_staff_padding(3),
         ],
     )
 segment_maker.make_music_handler(
@@ -650,13 +656,13 @@ segment_maker.make_music_handler(
         ],
     )
     
-### sponges [B1], [B5-10] ###
-segment_maker.make_music_handler(
-    scope=(perc, [1, (9, 14)]),
-    specifiers=[
-        Dynamic('f'),
-        ],
-    )
+#### sponges [B1], [B5-10] ###
+#segment_maker.make_music_handler(
+#    scope=(perc, [1, (9, 14)]),
+#    specifiers=[
+#        effort_f,
+#        ],
+#    )
 
 ### (3) [B1-13] (hpschd, vn, ob, cl) ###
 segment_maker.make_pitch_handler(
@@ -681,6 +687,8 @@ segment_maker.make_music_handler(
         on_bridge,
         Dynamic('f'),
         Clef('treble'),
+        dynamic_line_spanner_staff_padding(3),
+        tuplet_bracket_staff_padding(4),
         ],
     )
 segment_maker.make_music_handler(
@@ -698,6 +706,8 @@ segment_maker.make_music_handler(
         on_bridge,
         Dynamic('f'),
         Clef('treble'),
+        dynamic_line_spanner_staff_padding(3),
+        tuplet_bracket_staff_padding(4),
         ],
     )
 segment_maker.make_music_handler(
@@ -714,6 +724,7 @@ segment_maker.make_music_handler(
         alternate_bow_strokes,
         on_bridge,
         Dynamic('f'),
+        dynamic_line_spanner_staff_padding(3),
         ],
     )
 
@@ -721,20 +732,18 @@ segment_maker.make_music_handler(
 segment_maker.make_music_handler(
     scope=(pf, (16, 19)),
     specifiers=[
-        makers.ClusterSpecifier(
-            start_pitch=NamedPitch('C1'),
-            stop_pitch=NamedPitch('C3'),
-            ),
-        handlertools.ReiteratedDynamicHandler(dynamic_name='fff'),
-        handlertools.ReiteratedArticulationHandler(articulation_list=['^']),
+        low_piano_cluster,
+        reiterated_fff,
+        marcati,
         spannertools.OctavationSpanner(start=-1, stop=0),
         ],
     )
 segment_maker.make_music_handler(
     scope=(perc, (16, 20)),
     specifiers=[
-        handlertools.ReiteratedDynamicHandler(dynamic_name='p'),
-        handlertools.ReiteratedArticulationHandler(articulation_list=['-']),
+        reiterated_p,
+        tenuti,
+        dynamic_line_spanner_staff_padding(5),
         ],
     )
 
@@ -765,6 +774,9 @@ segment_maker.make_music_handler(
             skip_ties=True,
             ),
         Dynamic('fff'),
+        beam_positions(-4),
+        tuplet_bracket_staff_padding(3),
+        dynamic_line_spanner_staff_padding(6),
         ],
     )
 segment_maker.make_music_handler(
@@ -778,6 +790,9 @@ segment_maker.make_music_handler(
             skip_ties=True,
             ),
         Dynamic('fff'),
+        beam_positions(-4),
+        tuplet_bracket_staff_padding(3),
+        dynamic_line_spanner_staff_padding(6),
         ],
     )
 segment_maker.make_music_handler(
@@ -818,6 +833,7 @@ segment_maker.make_music_handler(
     specifiers=[
         Glissando(),
         Dynamic('f'),
+        dynamic_line_spanner_staff_padding(3),
         ],
     )
 segment_maker.make_music_handler(
@@ -825,6 +841,7 @@ segment_maker.make_music_handler(
     specifiers=[
         scrape_moderately,
         Dynamic('mf'),
+        dynamic_line_spanner_staff_padding(3),
         ],
     )
 

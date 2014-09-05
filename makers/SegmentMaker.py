@@ -527,16 +527,28 @@ class SegmentMaker(makertools.SegmentMaker):
             stage_numbers.extend(stage_numbers_)
         return len(stage_numbers) == len(set(stage_numbers))
 
-    # TODO: implement xylophone
     def _transpose_instruments(self):
         clarinet_voice = self._score['Clarinet Music Voice']
-        for leaf in iterate(clarinet_voice).by_class(scoretools.Leaf):
-            if not isinstance(leaf, (Note, Chord)):
-                continue
-            inspector = inspect_(leaf)
-            instrument = inspector.get_effective(instrumenttools.Instrument)
-            assert isinstance(instrument, instrumenttools.Instrument)
-            instrument.transpose_from_written_pitch_to_sounding_pitch(leaf)
+        percussion_voice = self._score['Percussion Music Voice']
+        voices = [clarinet_voice, percussion_voice]
+        for voice in voices:
+            for leaf in iterate(voice).by_class(scoretools.Leaf):
+                if not isinstance(leaf, (Note, Chord)):
+                    continue
+                inspector = inspect_(leaf)
+                prototype = instrumenttools.Instrument
+                instrument = inspector.get_effective(prototype)
+                if instrument is None:
+                    continue
+                assert isinstance(instrument, prototype), repr(instrument)
+                try:
+                    instrument.transpose_from_sounding_pitch_to_written_pitch(
+                        leaf)
+                except KeyError:
+                    sounding_pitch_number = leaf.written_pitch.pitch_number
+                    i = instrument.sounding_pitch_of_written_middle_c.pitch_number
+                    written_pitch_number = sounding_pitch_number - i
+                    leaf.written_pitch = written_pitch_number
 
     ### PUBLIC PROPERTIES ###
 

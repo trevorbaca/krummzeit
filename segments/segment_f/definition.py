@@ -157,7 +157,6 @@ segment_maker.copy_music_maker(
     rhythm_maker__output_masks=[BooleanPattern(indices=[2, 3], period=7)],
     )
 
-
 ### ob, cl [F4-11] ###
 music_maker = segment_maker.make_music_maker()
 music_maker.context_name = ob

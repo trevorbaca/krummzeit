@@ -59,6 +59,9 @@ attackless = Markup('attackless', direction=Up).larger()
 string = 'accent changes of direction noticeably at each attack'
 accent_changes = Markup(string, direction=Up)
 
+string = 'catch resonance (but not attack) with pedal'
+catch_resonance = Markup(string, direction=Up).larger()
+
 effort_fff = make_effort_dynamic_markup('fff')
 effort_ff = make_effort_dynamic_markup('ff')
 effort_f = make_effort_dynamic_markup('f')
@@ -435,6 +438,9 @@ patterned_f_ff = handlertools.TerracedDynamicsHandler(
 
 repeated_p_to_ppp = handlertools.NoteAndChordHairpinHandler(
     hairpin_token='p > ppp',
+    )
+repeated_pp_to_ff = handlertools.NoteAndChordHairpinHandler(
+    hairpin_token='pp < ff',
     )
 
 ### miscellaneous

@@ -92,6 +92,7 @@ class MusicMaker(abctools.AbjadObject):
         else:
             first_component = first_item
         first_leaf = inspect_(first_component).get_leaf(0)
+        assert isinstance(first_leaf, scoretools.Leaf), repr(first_leaf)
         prototype = instrumenttools.UntunedPercussion
         if (self.instrument is not None 
             and not isinstance(self.instrument, prototype)):

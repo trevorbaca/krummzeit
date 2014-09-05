@@ -172,7 +172,11 @@ class SegmentMaker(makertools.SegmentMaker):
             # TODO: adjust TempoSpanner to make measure attachment work
             attach(directive, start_skip, is_annotation=True)
 
-    def _compound_scope_to_logical_ties(self, compound_scope):
+    def _compound_scope_to_logical_ties(
+        self, 
+        compound_scope,
+        include_rests=False,
+        ):
         from krummzeit import makers
         timespan_map, timespans = [], []
         for scope in compound_scope.simple_scopes:
@@ -185,7 +189,10 @@ class SegmentMaker(makertools.SegmentMaker):
         context_names = [_[0] for _ in timespan_map]
         compound_scope._context_names = tuple(context_names)
         logical_ties = []
-        prototype = (scoretools.Note, scoretools.Chord)
+        if include_rests:
+            prototype = (scoretools.Note, scoretools.Chord, scoretools.Rest)
+        else:
+            prototype = (scoretools.Note, scoretools.Chord)
         for note in iterate(self._score).by_timeline(prototype):
             if note in compound_scope:
                 logical_tie = inspect_(note).get_logical_tie()
@@ -281,6 +288,13 @@ class SegmentMaker(makertools.SegmentMaker):
                 attach(spanner, leaves)
             elif isinstance(specifier, instrumenttools.Instrument):
                 attach(specifier, logical_ties[0].head)
+            elif isinstance(specifier, handlertools.OverrideHandler):
+                result = self._compound_scope_to_logical_ties(
+                    compound_scope,
+                    include_rests=True
+                    )
+                logical_ties_with_rests, timespan = result
+                specifier(logical_ties_with_rests)
             else:
                 specifier(logical_ties, timespan)
             if getattr(specifier, '_mutates_score', False):

@@ -133,6 +133,10 @@ assert len(time_signatures) == 13
 time_signatures[10:10] = 4 * [TimeSignature((3, 4))]
 time_signatures[10:10] = 4 * [TimeSignature((4, 4))]
 assert len(time_signatures) == 21
+time_signatures.insert(-2, TimeSignature((3, 4)))
+time_signatures.insert(-2, TimeSignature((3, 4)))
+time_signatures[-1] = TimeSignature((1, 4))
+assert len(time_signatures) == 23
 segment_time_signatures['J'] = time_signatures
 
 

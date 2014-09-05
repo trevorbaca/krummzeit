@@ -1,0 +1,233 @@
+# -*- encoding: utf-8 -*-
+from abjad import *
+from abjad.tools.rhythmmakertools import BooleanPattern
+from experimental import *
+from krummzeit import makers
+from krummzeit import materials
+from krummzeit.segments.abbreviations import *
+
+
+segment_maker = makers.SegmentMaker(name='K')
+segment_maker.time_signatures = materials.segment_time_signatures['K']
+
+segment_maker.measures_per_stage = [
+    14,             # stage 1
+    6,              # stage 2
+    1,              # stage 3
+    12, 12, 12,     # stages 4-6
+    1,              # stage 7
+    22,             # stage 8
+    2,              # stage 9
+    3,              # stage 10
+    ]
+assert segment_maker.measure_count == 85
+assert segment_maker.stage_count == 10
+assert segment_maker.validate_time_signatures()
+
+
+### tempo map ###
+music_maker = segment_maker.make_music_maker()
+segment_maker.tempo_map = [
+    (1, materials.named_tempo_inventory['144']),
+    ]
+
+
+
+###############################################################################
+################################ MUSIC-MAKERS #################################
+###############################################################################
+
+
+### harpsichord, ob, cl [K1] ###
+music_maker = segment_maker.make_music_maker()
+music_maker.context_name = pf
+music_maker.instrument = harpsichord
+music_maker.stages = 1
+music_maker.division_maker = makertools.HypermeasureDivisionMaker(
+    measure_counts=[2, 3, 1],
+    )
+music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
+    preferred_denominator=Duration(1, 4),
+    tuplet_ratios=[(3, 2), (24, -1, 15), (1,)],
+    tuplet_spelling_specifier=rhythmmakertools.TupletSpellingSpecifier(
+        avoid_dots=True,
+        is_diminution=False,
+        ),
+    )
+
+segment_maker.copy_music_maker(
+    pf,
+    1,
+    context_name=ob,
+    instrument=None,
+    division_maker__measure_counts=[3, 1, 2],
+    rhythm_maker__tuplet_ratios=[(24, -1, 15), (1,), (3, 2)],
+    )
+
+segment_maker.copy_music_maker(
+    pf,
+    1,
+    context_name=cl,
+    instrument=e_flat_clarinet,
+    division_maker__measure_counts=[1, 2, 3],
+    rhythm_maker__tuplet_ratios=[(1,), (3, 2), (24, -1, 15)],
+    )
+
+
+### pf, ob, cl [K4-6] ###
+music_maker = segment_maker.make_music_maker()
+music_maker.context_name = pf
+music_maker.instrument = piano
+music_maker.stages = 4
+music_maker.division_maker = makertools.HypermeasureDivisionMaker(
+    measure_counts=[2, 2, 1],
+    )
+music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
+    preferred_denominator=Duration(1, 4),
+    tuplet_ratios=[(3, 2), (24, -1, 15), (1,)],
+    tuplet_spelling_specifier=rhythmmakertools.TupletSpellingSpecifier(
+        avoid_dots=True,
+        is_diminution=False,
+        ),
+    )
+
+segment_maker.copy_music_maker(pf, 4, stages=5)
+segment_maker.copy_music_maker(pf, 4, stages=6)
+
+segment_maker.copy_music_maker(
+    pf,
+    4,
+    context_name=ob,
+    instrument=None,
+    division_maker__measure_counts=[2, 1, 2],
+    rhythm_maker__tuplet_ratios=[(24, -1, 15), (1,), (3, 2)],
+    )
+
+segment_maker.copy_music_maker(ob, 4, stages=5)
+segment_maker.copy_music_maker(ob, 4, stages=6)
+
+segment_maker.copy_music_maker(
+    pf,
+    4,
+    context_name=cl,
+    instrument=bass_clarinet,
+    division_maker__measure_counts=[1, 2, 2],
+    rhythm_maker__tuplet_ratios=[(1,), (3, 2), (24, -1, 15)],
+    )
+
+segment_maker.copy_music_maker(cl, 4, stages=5)
+segment_maker.copy_music_maker(cl, 4, stages=6)
+
+
+### [K8-9] ###
+music_maker = segment_maker.make_music_maker()
+music_maker.context_name = cl
+music_maker.instrument = bass_clarinet
+music_maker.stages = 8, 9
+music_maker.division_maker = makertools.HypermeasureDivisionMaker(
+    measure_counts=mathtools.Infinity,
+    secondary_division_maker=makertools.DivisionMaker(
+        pattern=[(4, 1)],
+        ),
+    )
+music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
+
+segment_maker.copy_music_maker(
+    cl,
+    8,
+    context_name=ob,
+    instrument=None,
+    )
+
+segment_maker.copy_music_maker(
+    ob,
+    8,
+    context_name=vn,
+    division_maker__secondary_division_maker__pattern=[(3, 2), (1, 1), (2, 1)],
+    division_maker__secondary_division_maker__remainder=Right,
+    )
+
+segment_maker.copy_music_maker(
+    vn,
+    8,
+    context_name=va,
+    division_maker__secondary_division_maker__pattern=[(1, 1), (2, 1), (3, 2)],
+    )
+
+segment_maker.copy_music_maker(
+    vn,
+    8,
+    context_name=vc,
+    division_maker__secondary_division_maker__pattern=[(2, 1), (3, 2), (1, 1)],
+    )
+
+music_maker = segment_maker.make_music_maker()
+music_maker.context_name = pf
+music_maker.instrument = piano
+music_maker.stages = 8, 9
+music_maker.division_maker = makertools.HypermeasureDivisionMaker(
+    measure_counts=mathtools.Infinity,
+    secondary_division_maker=makertools.DivisionMaker(
+        pattern=[(1, 2), (7, 2)],
+        ),
+    )
+music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
+
+music_maker = segment_maker.copy_music_maker(
+    pf,
+    8,
+    stages=8,
+    context_name=perc,
+    instrument=xylophone,
+    )
+
+
+### sponges [K9] ###
+music_maker = segment_maker.make_music_maker()
+music_maker.context_name = perc
+music_maker.instrument = sponges
+music_maker.clef = 'percussion'
+music_maker.stages = 9, 10
+music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
+    talea=rhythmmakertools.Talea([1, 2], 2),
+    extra_counts_per_division=[2, 1, 0],
+    )
+
+
+
+r'''
+144:        5/8 7/8 5/4 3/4 3/4 3/4 3/4 4/4 6/4 9/8 3/4 5/8 9/8 9/8
+            {13*4 = 52 quarters}
+
+144:        5/8 5/8 3/4 4/4 5/4 5/4
+            {5.5 * 4 = 22 quarters}
+
+144:        1/4
+            {1 quarter}
+
+144:        3/4 3/4 4/4 11/8 3/4 5/8 9/8 9/8 7/8 9/8 3/4 3/4
+            {11 * 4 = 44 quarters}
+
+144:        3/4 3/4 4/4 11/8 3/4 5/8 9/8 9/8 7/8 9/8 3/4 3/4
+            {11 * 4 = 44 quarters}
+
+144:        3/4 3/4 4/4 11/8 3/4 5/8 9/8 9/8 7/8 9/8 3/4 3/4
+            {11 * 4 = 44 quarters}
+
+144:        1/4
+            {1 quarter}
+
+144:        3/4 3/4 4/4 5/4 4/4 9/8 3/4 5/8 9/8 9/8 5/8 5/8 3/4 3/4 4/4
+            5/4 4/4 9/8 3/4 5/8 9/8 9/8
+            {20.25 * 4 = 81 quarters} 
+
+144:        5/8 5/8
+            {5 quarters}
+
+144:        4/4 5/4 3/4
+            (12 quarters}
+
+
+sum([52, 22, 1, 44, 44, 44, 1, 81, 5, 12]) = 306 quarters
+306 / 144 = 2.125 minutes.
+'''

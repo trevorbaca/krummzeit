@@ -57,6 +57,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._interpret_music_handlers()
         self._move_clefs_from_notes_back_to_rests()
         self._move_instruments_from_notes_back_to_rests()
+        self._attach_instrument_to_first_leaf()
         self._move_untuned_percussion_markup_to_first_note()
         self._label_instrument_changes()
         #self._transpose_instruments()
@@ -103,6 +104,36 @@ class SegmentMaker(makertools.SegmentMaker):
             assert isinstance(start_skip, scoretools.Skip), start_skip
             directive = new(directive)
             attach(directive, start_skip)
+
+    def _attach_instrument_to_first_leaf(self):
+        no_instrument_switches = (
+            'Oboe Music Voice',
+            'Percussion Music Voice',
+            'Violin Music Voice',
+            'Viola Music Voice',
+            'Cello Music Voice',
+            )
+        for voice in iterate(self._score).by_class(scoretools.Voice):
+            if voice.name in no_instrument_switches:
+                continue
+            leaves = iterate(voice).by_class(scoretools.Leaf)
+            leaves = list(leaves)
+            first_leaf = leaves[0]
+            prototype = instrumenttools.Instrument
+            if inspect_(first_leaf).has_indicator(prototype):
+                continue
+            found_instrument = False
+            for leaf in leaves:
+                if inspect_(leaf).has_indicator(prototype):
+                    instrument = inspect_(leaf).get_indicator(prototype)
+                    found_instrument = True
+                    break
+            if not found_instrument:
+                message = 'no instrument found for {!r}.'
+                message = message.format(voice.name)
+                raise Exception(message)
+            instrument = copy.deepcopy(instrument)
+            attach(instrument, first_leaf)
         
     def _attach_rehearsal_mark(self):
         assert len(self.name) == 1 and self.name.upper(), repr(self.name)
@@ -239,6 +270,8 @@ class SegmentMaker(makertools.SegmentMaker):
                 spanner = copy.deepcopy(spanner)
                 leaves = self._logical_ties_to_leaves(logical_ties)
                 attach(spanner, leaves)
+            elif isinstance(specifier, instrumenttools.Instrument):
+                attach(specifier, logical_ties[0].head)
             else:
                 specifier(logical_ties, timespan)
             if getattr(specifier, '_mutates_score', False):

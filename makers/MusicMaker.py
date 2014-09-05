@@ -38,12 +38,12 @@ class MusicMaker(abctools.AbjadObject):
     __slots__ = (
         '_clef',
         '_rhythm_overwrites',
+        '_staff_line_count',
         '_stages',
         'context_name',
         'division_maker',
         'instrument',
         'rhythm_maker',
-        'staff_line_count',
         'stages',
         'start_tempo',
         'stop_tempo',
@@ -70,7 +70,7 @@ class MusicMaker(abctools.AbjadObject):
         self.instrument = instrument
         self.rhythm_maker = rhythm_maker
         self.rhythm_overwrites = rhythm_overwrites
-        self.staff_line_count = staff_line_count
+        self._staff_line_count = staff_line_count
         self.stages = stages
         self.start_tempo = start_tempo
         self.stop_tempo = stop_tempo
@@ -242,6 +242,22 @@ class MusicMaker(abctools.AbjadObject):
         for item in expr:
             assert isinstance(item, tuple) and len(tuple) == 2, repr(item)
         self._rhythm_overwrites = expr[:]
+
+    @property
+    def staff_line_count(self):
+        r'''Gets staff line count of music-maker.
+
+        Returns nonnegative integer or none.
+
+        Xylophone music-maker always returns 5.
+        '''
+        if isinstance(self.instrument, instrumenttools.Xylophone):
+            return 5
+        return self._staff_line_count
+
+    @staff_line_count.setter
+    def staff_line_count(self, expr):
+        self._staff_line_count = expr
 
     @property
     def stages(self):

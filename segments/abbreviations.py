@@ -141,6 +141,13 @@ subito_non_armonichi = Markup(string, direction=Up).italic().larger()
 
 subito_ordinario = Markup('subito ordinario', direction=Up).larger()
 
+def dynamic_line_spanner_staff_padding(n):
+    return handlertools.OverrideHandler(
+        grob_name='dynamic_line_spanner',
+        attribute_name='staff_padding',
+        attribute_value=str(n),
+        )
+
 def tremolo_down(n):
     pair = (0, -n)
     return handlertools.OverrideHandler(
@@ -153,6 +160,13 @@ def tremolo_down(n):
             'attribute_name': 'extra_offset',
             'attribute_value': str((0, -1.5)),
             },
+        )
+
+def tuplet_bracket_staff_padding(n):
+    return handlertools.OverrideHandler(
+        grob_name='tuplet_bracket',
+        attribute_name='staff_padding',
+        attribute_value=str(n),
         )
 
 left_text = Markup('molto flautando').italic().larger() + Markup.hspace(1)

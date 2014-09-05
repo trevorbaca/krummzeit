@@ -380,14 +380,6 @@ segment_maker.make_pitch_handler(
         ],
     )
 segment_maker.make_pitch_handler(
-    scope=(vn, (6, 8)),
-    specifiers=[
-        makers.PitchSpecifier(
-            source='D5 Eb5 Eb5 Eb5',
-            ),
-        ],
-    )
-segment_maker.make_pitch_handler(
     scope=(va, (6, 8)),
     specifiers=[
         makers.PitchSpecifier(

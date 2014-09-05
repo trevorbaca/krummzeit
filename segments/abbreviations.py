@@ -126,6 +126,10 @@ ppp_ancora += Markup('ancora').italic()
 
 ppp_subtone = Markup('ppp').dynamic() + Markup('subtone')
 
+reiterated_ff = handlertools.ReiteratedDynamicHandler(
+    dynamic_name='ff',
+    )
+
 scrape_moderately = Markup(
     'scrape in a circle at moderate speed',
     direction=Up,

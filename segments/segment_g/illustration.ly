@@ -1,4 +1,4 @@
-% 2014-09-04 11:26
+% 2014-09-04 21:16
 
 \version "2.19.12"
 \language "english"
@@ -384,6 +384,54 @@
 			}
 			\context ClarinetMusicStaff = "Clarinet Music Staff" {
 				\context ClarinetMusicVoice = "Clarinet Music Voice" {
+					\set Staff.instrumentName = \markup {
+						\column
+							{
+								\hcenter-in
+									#12
+									{
+										Clarinet
+										\line
+											{
+												(E
+												\hspace
+													#-0.5
+												\fontsize
+													#-3
+													\raise
+														#0.5
+														\flat
+												\hspace
+													#-0.5
+												)
+											}
+									}
+							}
+						}
+					\set Staff.shortInstrumentName = \markup {
+						\column
+							{
+								\hcenter-in
+									#12
+									{
+										Cl.
+										\line
+											{
+												(E
+												\hspace
+													#-0.5
+												\fontsize
+													#-3
+													\raise
+														#0.5
+														\flat
+												\hspace
+													#-0.5
+												)
+											}
+									}
+							}
+						}
 					r4.
 					r4.
 					r4.
@@ -398,54 +446,6 @@
 					r8
 					r8
 					\times 2/3 {
-						\set Staff.instrumentName = \markup {
-							\column
-								{
-									\hcenter-in
-										#12
-										{
-											Clarinet
-											\line
-												{
-													(E
-													\hspace
-														#-0.5
-													\fontsize
-														#-3
-														\raise
-															#0.5
-															\flat
-													\hspace
-														#-0.5
-													)
-												}
-										}
-								}
-							}
-						\set Staff.shortInstrumentName = \markup {
-							\column
-								{
-									\hcenter-in
-										#12
-										{
-											Cl.
-											\line
-												{
-													(E
-													\hspace
-														#-0.5
-													\fontsize
-														#-3
-														\raise
-															#0.5
-															\flat
-													\hspace
-														#-0.5
-													)
-												}
-										}
-								}
-							}
 						ef'4 \< \p
 						cs'4
 						f'4
@@ -512,15 +512,6 @@
 					{
 						c'''4. \ff
 					}
-					r1.
-					r1..
-					r2.
-					r1..
-					r4.
-					r4
-					r4
-					r4
-					r4
 					\set Staff.instrumentName = \markup {
 						\hcenter-in
 							#12
@@ -531,6 +522,21 @@
 							#12
 							"Bass cl."
 						}
+					r1.
+						^ \markup {
+							\override
+								#'(box-padding . 0.5)
+								\box
+									"to bass clarinet"
+							}
+					r1..
+					r2.
+					r1..
+					r4.
+					r4
+					r4
+					r4
+					r4
 					b,,2 ~
 						- \markup {
 							\dynamic
@@ -550,6 +556,16 @@
 		\context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
 			\context PianoMusicStaff = "Piano Music Staff" {
 				\context PianoMusicVoice = "Piano Music Voice" {
+					\set PianoMusicStaff.instrumentName = \markup {
+						\hcenter-in
+							#12
+							Harpsichord
+						}
+					\set PianoMusicStaff.shortInstrumentName = \markup {
+						\hcenter-in
+							#12
+							Hpschd.
+						}
 					r4.
 					r4.
 					r4.
@@ -564,16 +580,6 @@
 					r8
 					r8
 					\times 4/5 {
-						\set PianoMusicStaff.instrumentName = \markup {
-							\hcenter-in
-								#12
-								Harpsichord
-							}
-						\set PianoMusicStaff.shortInstrumentName = \markup {
-							\hcenter-in
-								#12
-								Hpschd.
-							}
 						r16
 						f''16 [
 						fs''16
@@ -615,8 +621,8 @@
 						g'4
 					}
 					\times 4/5 {
-						r8
 						\clef "bass"
+						r8
 						g'8 [
 						f'8 ]
 						b4
@@ -656,20 +662,20 @@
 						r8
 						bf8
 					}
+					\set PianoMusicStaff.instrumentName = \markup {
+						\hcenter-in
+							#12
+							Harpsichord
+						}
+					\set PianoMusicStaff.shortInstrumentName = \markup {
+						\hcenter-in
+							#12
+							Hpschd.
+						}
 					r2..
 					r1.
 					r1..
 					\times 4/5 {
-						\set PianoMusicStaff.instrumentName = \markup {
-							\hcenter-in
-								#12
-								Harpsichord
-							}
-						\set PianoMusicStaff.shortInstrumentName = \markup {
-							\hcenter-in
-								#12
-								Hpschd.
-							}
 						r16
 						d16 [
 						bf16
@@ -682,6 +688,16 @@
 						r4
 						ef4
 					}
+					\set PianoMusicStaff.instrumentName = \markup {
+						\hcenter-in
+							#12
+							Harpsichord
+						}
+					\set PianoMusicStaff.shortInstrumentName = \markup {
+						\hcenter-in
+							#12
+							Hpschd.
+						}
 					r1..
 					r4.
 					r4
@@ -689,16 +705,6 @@
 					r4
 					r4
 					\times 4/5 {
-						\set PianoMusicStaff.instrumentName = \markup {
-							\hcenter-in
-								#12
-								Harpsichord
-							}
-						\set PianoMusicStaff.shortInstrumentName = \markup {
-							\hcenter-in
-								#12
-								Hpschd.
-							}
 						r16
 						f,16 [
 						fs,16
@@ -727,28 +733,44 @@
 					\override Staff.StaffSymbol #'line-count = #1
 					\startStaff
 					r1
-						^ \markup {
-							\override
-								#'(box-padding . 0.5)
-								\box
-									"snare drum"
-							}
 					r8
-					c'2 :32 \ppp ~ ^ \markup { rapid roll with fingertips: keep speed constant during accelerando }
+					\once \override DynamicLineSpanner #'staff-padding = #6
+					c'2 :32 \ppp ~
+						^ \markup {
+							\column
+								{
+									"rapid roll with fingertips: keep speed constant during accelerando"
+									\override
+										#'(box-padding . 0.5)
+										\box
+											"snare drum"
+								}
+							}
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'8 :32 ~
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'2 :32 ~
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'8 :32
 					r1
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'1 :32 ~
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'4 :32 ~
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'2. :32 ~
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'2. :32 ~
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'2. :32 ~
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'1 :32 ~
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'8 :32
 					r2..
 					r1.
 					r1..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'2. :32
 					r1..
 					r4.
@@ -756,10 +778,13 @@
 					r4
 					r4
 					r4
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'2 :32 ~
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'8 :32
 					r1
 					r1.
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'2 \p
 						^ \markup {
 							\column
@@ -772,6 +797,7 @@
 										attackless
 								}
 							}
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'2
 					c'2
 					c'2
@@ -877,38 +903,55 @@
 					r4.
 					r4.
 					r4.
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8.. \< \ppp
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8.. \fff
 					r32
 					r1.
@@ -976,38 +1019,55 @@
 					r4.
 					r4.
 					r4.
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8.. \< \ppp
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
 					r32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8.. \fff
 					r32
 					r1.

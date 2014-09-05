@@ -511,7 +511,7 @@ segment_maker.make_pitch_handler(
         ],
     )
 segment_maker.make_music_handler(
-    scope=((pf, perc), (11, 17)),
+    scope=([pf, perc], (11, 17)),
     specifiers=[
         Dynamic('ff'),
         handlertools.ReiteratedArticulationHandler(

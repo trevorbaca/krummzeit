@@ -1,4 +1,4 @@
-% 2014-09-04 20:36
+% 2014-09-04 21:39
 
 \version "2.19.12"
 \language "english"
@@ -496,9 +496,16 @@
 							}
 						af''4. \pp
 							^ \markup {
-								\larger
-									\italic
-										leggierissimo
+								\column
+									{
+										\larger
+											\italic
+												leggierissimo
+										\override
+											#'(box-padding . 0.5)
+											\box
+												"to clarinet in E-flat"
+									}
 								}
 					}
 					\times 2/3 {
@@ -578,6 +585,12 @@
 								"Bass cl."
 							}
 						c,2 \< \f
+							^ \markup {
+								\override
+									#'(box-padding . 0.5)
+									\box
+										"to bass clarinet"
+								}
 						c,1.
 							^ \markup {
 								\override
@@ -652,9 +665,16 @@
 							}
 						bf''8 -\staccato \pp [
 							^ \markup {
-								\larger
-									\italic
-										leggierissimo
+								\column
+									{
+										\larger
+											\italic
+												leggierissimo
+										\override
+											#'(box-padding . 0.5)
+											\box
+												"to harpsichord"
+									}
 								}
 						fs''8 -\staccato
 						af''8 -\staccato
@@ -765,8 +785,15 @@
 						}
 					c'2 -\tenuto \ff
 						^ \markup {
-							\larger
-								"touch F1 string at 5th harmonic"
+							\column
+								{
+									\larger
+										"touch F1 string at 5th harmonic"
+									\override
+										#'(box-padding . 0.5)
+										\box
+											"to piano"
+								}
 							}
 					\once \override DynamicLineSpanner #'staff-padding = #4
 					\once \override NoteHead #'style = #'harmonic

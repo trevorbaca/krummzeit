@@ -61,6 +61,7 @@ accent_changes = Markup(string, direction=Up)
 
 effort_fff = make_effort_dynamic_markup('fff')
 effort_ff = make_effort_dynamic_markup('ff')
+effort_f = make_effort_dynamic_markup('f')
 effort_mp = make_effort_dynamic_markup('mp')
 
 ffff_possibile = Markup('ffff').dynamic() + Markup('possibile').italic()

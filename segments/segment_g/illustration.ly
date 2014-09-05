@@ -1,4 +1,4 @@
-% 2014-09-05 00:30
+% 2014-09-05 17:35
 
 \version "2.19.12"
 \language "english"
@@ -689,7 +689,6 @@
 						g'4
 					}
 					\times 4/5 {
-						\clef "bass"
 						r8
 						\clef "bass"
 						g'8 [
@@ -841,6 +840,7 @@
 					c'2 :32 ~
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'8 :32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r1
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'1 :32 ~
@@ -856,16 +856,25 @@
 					c'1 :32 ~
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'8 :32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r2..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r1.
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r1..
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'2. :32
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r1..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r4.
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r4
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r4
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r4
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r4
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'2 :32 ~
@@ -994,54 +1003,71 @@
 					r4.
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8.. \< \ppp
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					fs8.. \fff
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					r1.
 					r\breve
@@ -1110,54 +1136,71 @@
 					r4.
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8.. \< \ppp
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c,8.. \fff
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					r32
 					r1.
 					r\breve

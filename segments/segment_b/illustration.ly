@@ -1,4 +1,4 @@
-% 2014-09-05 00:20
+% 2014-09-05 17:33
 
 \version "2.19.12"
 \language "english"
@@ -2554,7 +2554,6 @@
 						c''16
 						fs''16 ]
 					}
-					\clef "bass"
 					\set PianoMusicStaff.instrumentName = \markup {
 						\hcenter-in
 							#12
@@ -2783,7 +2782,6 @@
 									}
 							}
 					\ottava #0
-					\clef "treble"
 					r8
 					r4.
 					\tweak #'text #tuplet-number::calc-fraction-text
@@ -3045,7 +3043,6 @@
 						c'2.
 						c'4.
 					}
-					\clef "percussion"
 					r2..
 					r1.
 					r1..
@@ -3181,7 +3178,6 @@
 						c'2
 						c'4.
 					}
-					\clef "percussion"
 					r2..
 					r1.
 					r1..
@@ -3941,7 +3937,6 @@
 						r4
 						e'''4 -\staccatissimo
 					}
-					\clef "percussion"
 					r4
 					\clef "percussion"
 					\stopStaff
@@ -4043,7 +4038,6 @@
 						g4. \glissando
 						ftqs8 \glissando
 					}
-					\clef "treble"
 					r\breve
 					r2.
 					r1
@@ -4441,7 +4435,6 @@
 						a,8 \glissando
 						gqs,4 \glissando
 					}
-					\clef "treble"
 					r\breve
 					r2.
 					r1

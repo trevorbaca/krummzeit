@@ -1,4 +1,4 @@
-% 2014-09-05 01:42
+% 2014-09-05 17:36
 
 \version "2.19.12"
 \language "english"
@@ -307,6 +307,7 @@
 					d''1.. \ff ~
 					\once \override DynamicLineSpanner #'staff-padding = #3
 					d''2.
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					\set Staff.instrumentName = \markup {
 						\hcenter-in
 							#12
@@ -324,14 +325,23 @@
 								\box
 									"to bass clarinet"
 							}
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r4
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r4
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r4
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r4
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r8
+					\once \override DynamicLineSpanner #'staff-padding = #3
 					r8
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 6/5 {
@@ -2037,6 +2047,7 @@
 					r1.
 					r1..
 					r1..
+					\once \override DynamicLineSpanner #'staff-padding = #6
 					\clef "percussion"
 					\stopStaff
 					\override Staff.StaffSymbol #'line-count = #1
@@ -2064,7 +2075,6 @@
 					c'4 -\accent \ff
 					\once \override DynamicLineSpanner #'staff-padding = #6
 					c'4 -\accent \ff
-					\clef "treble"
 					r8
 					r8
 					r8

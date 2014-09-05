@@ -58,7 +58,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._annotate_stages()
         self._interpret_music_makers()
         self._interpret_music_handlers()
-        self._move_clefs_from_notes_back_to_rests()
+        #self._move_clefs_from_notes_back_to_rests()
         self._move_instruments_from_notes_back_to_rests()
         self._attach_instrument_to_first_leaf()
         self._move_untuned_percussion_markup_to_first_note()

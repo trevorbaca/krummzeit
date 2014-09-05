@@ -106,6 +106,42 @@ class MusicMaker(abctools.AbjadObject):
             self._set_staff_line_count(first_leaf, 1)
         return music
 
+    ### PRIVATE PROPERTIES ###
+
+    @property
+    def _default_rhythm_maker(self):
+        return rhythmmakertools.RestRhythmMaker()
+
+    @property
+    def _storage_format_specification(self):
+        from abjad.tools import systemtools
+        manager = systemtools.StorageFormatManager
+        keyword_argument_names = \
+            manager.get_signature_keyword_argument_names(self)
+        if not self.rhythm_overwrites:
+            keyword_argument_names = list(keyword_argument_names)
+            keyword_argument_names.remove('rhythm_overwrites')
+        return systemtools.StorageFormatSpecification(
+            self,
+            keyword_argument_names=keyword_argument_names,
+            )
+
+    ### PRIVATE METHODS ###
+
+    def _attach_untuned_percussion_markup(self, leaf):
+        name = self.instrument.instrument_name
+        name = name.lower()
+        command = markuptools.MarkupCommand('box', name)
+        pair = schemetools.SchemePair('box-padding', 0.5)
+        command = markuptools.MarkupCommand('override', pair, command)
+        markup = Markup(contents=command, direction=Up)
+        attach(markup, leaf)
+
+    def _get_rhythm_maker(self):
+        if self.rhythm_maker is not None:
+            return self.rhythm_maker
+        return self._default_rhythm_maker
+
     def _make_rhythm(self, time_signatures):
         if self.division_maker is not None:
             divisions = self.division_maker(time_signatures) 
@@ -167,42 +203,6 @@ class MusicMaker(abctools.AbjadObject):
         attach(command, first_leaf)
         command = indicatortools.LilyPondCommand('startStaff')
         attach(command, first_leaf)
-
-    ### PRIVATE PROPERTIES ###
-
-    @property
-    def _default_rhythm_maker(self):
-        return rhythmmakertools.RestRhythmMaker()
-
-    @property
-    def _storage_format_specification(self):
-        from abjad.tools import systemtools
-        manager = systemtools.StorageFormatManager
-        keyword_argument_names = \
-            manager.get_signature_keyword_argument_names(self)
-        if not self.rhythm_overwrites:
-            keyword_argument_names = list(keyword_argument_names)
-            keyword_argument_names.remove('rhythm_overwrites')
-        return systemtools.StorageFormatSpecification(
-            self,
-            keyword_argument_names=keyword_argument_names,
-            )
-
-    ### PRIVATE METHODS ###
-
-    def _attach_untuned_percussion_markup(self, leaf):
-        name = self.instrument.instrument_name
-        name = name.lower()
-        command = markuptools.MarkupCommand('box', name)
-        pair = schemetools.SchemePair('box-padding', 0.5)
-        command = markuptools.MarkupCommand('override', pair, command)
-        markup = Markup(contents=command, direction=Up)
-        attach(markup, leaf)
-
-    def _get_rhythm_maker(self):
-        if self.rhythm_maker is not None:
-            return self.rhythm_maker
-        return self._default_rhythm_maker
 
     ### PUBLIC PROPERTIES ###
 

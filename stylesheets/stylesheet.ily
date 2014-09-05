@@ -173,62 +173,6 @@
         \type Engraver_group
         \alias Staff
         \accepts ClarinetMusicVoice
-        instrumentName = \markup {
-            \column {
-                \hcenter-in #12 {
-                    Clarinet 
-                    \line { 
-                        (B
-                        \hspace #-0.5 \fontsize #-3 \raise #0.5 \flat
-                        \hspace #-0.5 ) 
-                    } 
-                }
-            }
-        }
-        instrumentName = \markup {
-            \column {                                                           
-                \hcenter-in
-                #12
-                    {
-                        Clarinet                                                    
-                        \line {                                                     
-                            (B                                                      
-                            \hspace
-                                #-0.5
-                            \fontsize
-                                #-3
-                                \raise
-                                    #0.5
-                                    \flat           
-                            \hspace
-                                #-0.5
-                            )                                         
-                        }                                                           
-                    }
-            }
-        }
-        shortInstrumentName = \markup {
-            \column {                                                           
-                \hcenter-in
-                #12
-                    {
-                        Cl.
-                        \line {                                                     
-                            (B                                                      
-                            \hspace
-                                #-0.5
-                            \fontsize
-                                #-3
-                                \raise
-                                    #0.5
-                                    \flat           
-                            \hspace
-                                #-0.5
-                            )                                         
-                        }                                                           
-                    }
-            }
-        }
         \override Beam.positions = #'(-7 . -7)
         \override DynamicLineSpanner.staff-padding = 9
         \override TupletBracket.staff-padding = 6
@@ -255,8 +199,8 @@
         \type Engraver_group
         \alias Staff
         \accepts PianoMusicVoice
-        instrumentName = \markup { \hcenter-in #12 Piano }
-        shortInstrumentName = \markup { \hcenter-in #12 Pf. }
+%        instrumentName = \markup { \hcenter-in #12 Piano }
+%        shortInstrumentName = \markup { \hcenter-in #12 Pf. }
         \override Beam.positions = #'(-6 . -6)
         \override DynamicLineSpanner.staff-padding = 9
         \override TupletBracket.staff-padding = 5

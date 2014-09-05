@@ -56,7 +56,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._interpret_music_makers()
         self._interpret_music_handlers()
         self._move_clefs_from_notes_back_to_rests()
-        #self._move_instruments_from_notes_back_to_rests()
+        self._move_instruments_from_notes_back_to_rests()
         self._move_untuned_percussion_markup_to_first_note()
         self._label_instrument_changes()
         #self._transpose_instruments()
@@ -389,8 +389,9 @@ class SegmentMaker(makertools.SegmentMaker):
         self._score = score
 
     def _move_clefs_from_notes_back_to_rests(self):
+        prototype = indicatortools.Clef
         for leaf in iterate(self._score).by_class(scoretools.Leaf):
-            clefs = inspect_(leaf).get_indicators(indicatortools.Clef)
+            clefs = inspect_(leaf).get_indicators(prototype)
             if not clefs:
                 continue
             assert len(clefs) == 1
@@ -399,13 +400,30 @@ class SegmentMaker(makertools.SegmentMaker):
             previous_leaf = inspect_(current_leaf).get_leaf(-1)
             if not isinstance(previous_leaf, scoretools.Rest):
                 continue
-            detach(clef, leaf)
+            #detach(clef, leaf)
             while True:
                 current_leaf = previous_leaf
                 previous_leaf = inspect_(current_leaf).get_leaf(-1)
                 if not isinstance(previous_leaf, scoretools.Rest):
-                    attach(clef, current_leaf)
-                    break
+                    if current_leaf._start_offset == 0:
+                        break
+                    already_present_in_parentage = False
+                    parentage = inspect_(current_leaf).get_parentage()
+                    for component in parentage:
+                        if (not component._start_offset ==
+                            current_leaf._start_offset):
+                            continue
+                        if inspect_(component).has_indicator(prototype):
+                            #already_present_in_parentage = True
+                            detach(prototype, component)
+                            break
+                    if already_present_in_parentage:
+                        break
+                    else:
+                        #attach(clef, current_leaf)
+                        new_clef = new(clef)
+                        attach(new_clef, current_leaf)
+                        break
 
     def _move_instruments_from_notes_back_to_rests(self):
         prototype = instrumenttools.Instrument
@@ -419,12 +437,16 @@ class SegmentMaker(makertools.SegmentMaker):
             previous_leaf = inspect_(current_leaf).get_leaf(-1)
             if not isinstance(previous_leaf, scoretools.Rest):
                 continue
-            detach(instrument, leaf)
+            #detach(instrument, leaf)
             while True:
                 current_leaf = previous_leaf
                 previous_leaf = inspect_(current_leaf).get_leaf(-1)
+                if previous_leaf is None:
+                    break
                 if not isinstance(previous_leaf, scoretools.Rest):
-                    attach(instrument, current_leaf)
+                    #attach(instrument, current_leaf)
+                    new_instrument = copy.deepcopy(instrument)
+                    attach(new_instrument, current_leaf)
                     break
         
     def _move_untuned_percussion_markup_to_first_note(self):

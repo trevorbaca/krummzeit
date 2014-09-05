@@ -220,6 +220,7 @@ segment_maker.make_music_handler(
     scope=([va, vc], (2, 4)),
     specifiers=[
         Hairpin('ppp < fff'),
+        dynamic_line_spanner_staff_padding(6),
         ],
     )
 
@@ -230,6 +231,7 @@ segment_maker.make_music_handler(
         stem_tremolo,
         fingertips_only,
         Dynamic('ppp'),
+        dynamic_line_spanner_staff_padding(6),
         ],
     )
 
@@ -285,6 +287,7 @@ segment_maker.make_music_handler(
     specifiers=[
         Dynamic('p'),
         attackless,
+        dynamic_line_spanner_staff_padding(6),
         ],
     )
 

@@ -64,6 +64,8 @@ effort_ff = make_effort_dynamic_markup('ff')
 effort_f = make_effort_dynamic_markup('f')
 effort_mp = make_effort_dynamic_markup('mp')
 
+fff_ancora = Markup('fff').dynamic() + Markup('ancora').italic()
+
 ffff_possibile = Markup('ffff').dynamic() + Markup('possibile').italic()
 fff_possibile = Markup('fff').dynamic() + Markup('possibile').italic()
 

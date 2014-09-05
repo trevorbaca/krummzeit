@@ -24,21 +24,26 @@ segment_time_signatures['E'] = time_signatures
 
 
 ### K ###
-time_signatures = time_signature_inventory[9:]
-time_signatures = sequencetools.flatten_sequence(time_signatures)
-assert len(time_signatures) == 47
-first_source = time_signatures[20:32]
-first_source *= 3
-assert len(first_source) == 36
-second_source = time_signatures[-15:-3]
-second_source *= 2
-time_signatures[20:32] = first_source
-assert len(time_signatures) == 71
-time_signatures[-15:-3] = second_source
-assert len(time_signatures) == 83
-time_signatures.insert(20, TimeSignature((1, 4)))
-time_signatures.insert(-27, TimeSignature((1, 4)))
-assert len(time_signatures) == 85
+#time_signatures = time_signature_inventory[9:]
+#time_signatures = sequencetools.flatten_sequence(time_signatures)
+#assert len(time_signatures) == 47
+#first_source = time_signatures[20:32]
+#first_source *= 3
+#assert len(first_source) == 36
+#second_source = time_signatures[-15:-3]
+#second_source *= 2
+#time_signatures[20:32] = first_source
+#assert len(time_signatures) == 71
+#time_signatures[-15:-3] = second_source
+#assert len(time_signatures) == 83
+#time_signatures.insert(20, TimeSignature((1, 4)))
+#time_signatures.insert(-27, TimeSignature((1, 4)))
+#assert len(time_signatures) == 85
+#segment_time_signatures['K'] = time_signatures
+time_signatures = [(5, 4), (5, 4), (4, 4), (2, 4)]
+time_signatures *= 12
+time_signatures = [TimeSignature(_) for _ in time_signatures]
+assert len(time_signatures) == 48
 segment_time_signatures['K'] = time_signatures
 
 

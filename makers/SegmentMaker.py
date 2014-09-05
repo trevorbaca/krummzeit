@@ -16,6 +16,7 @@ class SegmentMaker(makertools.SegmentMaker):
         '_music_makers',
         '_score',
         '_stages',
+        'final_barline',
         'measures_per_stage',
         'name',
         'time_signatures',
@@ -62,6 +63,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._label_instrument_changes()
         #self._transpose_instruments()
         self._attach_rehearsal_mark()
+        self._add_final_barline()
         score_block = self.lilypond_file['score']
         score = score_block['Krummzeit Score']
         if not inspect_(score).is_well_formed():
@@ -70,6 +72,11 @@ class SegmentMaker(makertools.SegmentMaker):
         return self.lilypond_file
 
     ### PRIVATE METHODS ###
+
+    def _add_final_barline(self):
+        if not self.final_barline:
+            return
+        self._score.add_final_bar_line(to_each_voice=True)
 
     def _annotate_stages(self):
         context = self._score['Time Signature Context']

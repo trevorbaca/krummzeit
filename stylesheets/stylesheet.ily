@@ -55,8 +55,8 @@
         (padding . 0)
         (stretchability . 0)
     )
-    top-margin = 10\mm
-    %top-margin = 0\mm
+    %top-margin = 10\mm
+    top-margin = 0\mm
 }
 
 \header {
@@ -221,7 +221,6 @@
         shortInstrumentName = \markup { \hcenter-in #12 Perc. }
         \override Beam.positions = #'(-6 . -6)
         \override DynamicLineSpanner.staff-padding = 9
-        \override TextScript.padding = 2.5
         \override TupletBracket.staff-padding = 5
     }
     \context {
@@ -320,7 +319,6 @@
             (right-edge extra-space . 0.0)
         )
         \override Beam.breakable = ##t
-        %\override DynamicLineSpanner.Y-extent = #'(-1.5 . 1.5)
         \override DynamicLineSpanner.Y-extent = #'(-4 . 4)
         \override Glissando.breakable = ##t
         \override Glissando.thickness = 3

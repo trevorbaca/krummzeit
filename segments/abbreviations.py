@@ -198,6 +198,13 @@ def dynamic_line_spanner_staff_padding(n):
         attribute_value=str(n),
         )
 
+def markup_padding(n):
+    return handlertools.OverrideHandler(
+        grob_name='text_script',
+        attribute_name='padding',
+        attribute_value=str(n),
+        )
+
 def stem_direction(direction):
     return handlertools.OverrideHandler(
         grob_name='stem',

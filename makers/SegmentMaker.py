@@ -12,6 +12,8 @@ class SegmentMaker(makertools.SegmentMaker):
     ### CLASS ATTRIBUTES ###
 
     __slots__ = (
+        '_final_markup',
+        '_final_markup_extra_offset',
         '_music_handlers',
         '_music_makers',
         '_score',
@@ -30,6 +32,8 @@ class SegmentMaker(makertools.SegmentMaker):
     def __init__(
         self,
         final_barline=False,
+        final_markup=None,
+        final_markup_extra_offset=None,
         measures_per_stage=None,
         music_makers=None,
         name=None,
@@ -42,6 +46,12 @@ class SegmentMaker(makertools.SegmentMaker):
         superclass.__init__(name=name)
         self._initialize_music_makers(music_makers)
         self.final_barline = final_barline
+        if final_markup is not None:
+            assert isinstance(final_markup, markuptools.Markup)
+        self._final_markup = final_markup
+        if final_markup_extra_offset is not None:
+            assert isinstance(final_markup_extra_offset, tuple)
+        self._final_markup_extra_offset = final_markup_extra_offset
         self.measures_per_stage = measures_per_stage
         self.name = name
         self._music_handlers = []
@@ -75,6 +85,7 @@ class SegmentMaker(makertools.SegmentMaker):
             self._transpose_instruments()
         self._attach_rehearsal_mark()
         self._add_final_barline()
+        self._add_final_markup()
         score_block = self.lilypond_file['score']
         score = score_block['Krummzeit Score']
         if not inspect_(score).is_well_formed():
@@ -88,6 +99,14 @@ class SegmentMaker(makertools.SegmentMaker):
         if not self.final_barline:
             return
         self._score.add_final_bar_line(to_each_voice=True)
+
+    def _add_final_markup(self):
+        if self.final_markup is None:
+            return
+        self._score.add_final_markup(
+            self.final_markup,
+            extra_offset=self.final_markup_extra_offset,
+            )
 
     def _annotate_stages(self):
         context = self._score['Time Signature Context']
@@ -599,6 +618,22 @@ class SegmentMaker(makertools.SegmentMaker):
         #raise Exception(temp)
 
     ### PUBLIC PROPERTIES ###
+
+    @property
+    def final_markup(self):
+        r'''Gets final markup of segment.
+
+        Set to markup or none.
+        '''
+        return self._final_markup
+
+    @property
+    def final_markup_extra_offset(self):
+        r'''Gets extra offset of segment final markup.
+
+        Set to pair or none.
+        '''
+        return self._final_markup_extra_offset
 
     @property
     def measure_count(self):

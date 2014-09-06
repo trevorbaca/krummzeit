@@ -332,7 +332,7 @@
         \override StemTremolo.flag-count = 4
         \override StemTremolo.slope = 0.5
         \override TextScript.Y-extent = #'(-1.5 . 1.5)
-        \override TextScript.padding = 2.5
+        \override TextScript.padding = 2
         \override TrillSpanner.bound-details.right.padding = 2
         \override TupletBracket.breakable = ##t
         \override TupletBracket.direction = #down

@@ -53,6 +53,13 @@ va = 'Viola Music Voice'
 vc = 'Cello Music Voice'
 
 
+### RHYTHM-MAKERS ###
+tied_notes = rhythmmakertools.NoteRhythmMaker(
+    tie_specifier=rhythmmakertools.TieSpecifier(
+        tie_across_divisions=True,
+        ),
+    )
+
 ### MARKUP ###
 def make_effort_dynamic_markup(dynamic_text, direction=Down):
     left_quotes = Markup('“').italic().larger()

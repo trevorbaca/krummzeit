@@ -12,7 +12,7 @@ class SegmentMaker(makertools.SegmentMaker):
     ### CLASS ATTRIBUTES ###
 
     __slots__ = (
-        '_do_not_annotate_stages',
+        '_hide_stage_annotations',
         '_music_handlers',
         '_music_makers',
         '_score',
@@ -37,7 +37,7 @@ class SegmentMaker(makertools.SegmentMaker):
         ):
         superclass = super(SegmentMaker, self)
         superclass.__init__(name=name)
-        self._do_not_annotate_stages = False
+        self._hide_stage_annotations = False
         self._initialize_music_makers(music_makers)
         self.final_barline = final_barline
         self.measures_per_stage = measures_per_stage
@@ -57,7 +57,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._make_lilypond_file()
         self._configure_lilypond_file()
         self._populate_time_signature_context()
-        if not self._do_not_annotate_stages:
+        if not self._hide_stage_annotations:
             self._annotate_stages()
         self._interpret_music_makers()
         self._interpret_music_handlers()

@@ -20,3 +20,8 @@
 
 7.  Extended SegmentMaker with a property to allow [A] to set
     top marging to 0 mm.
+
+8.  ClusterHandler mutate the score.
+    So any ClusterHandler should be applied first before other handlers.
+    Probably best to enforce by processing all cluster handlers immediately
+    after pitch processing (and before other handlers).

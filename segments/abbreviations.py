@@ -55,6 +55,8 @@ accents = handlertools.ReiteratedArticulationHandler(
     articulation_list=['>'],
     )
 
+arco = Markup('arco', direction=Up).larger()
+
 attackless = Markup('attackless', direction=Up).larger()
 
 string = 'accent changes of direction noticeably at each attack'
@@ -175,6 +177,13 @@ def dynamic_line_spanner_staff_padding(n):
         grob_name='dynamic_line_spanner',
         attribute_name='staff_padding',
         attribute_value=str(n),
+        )
+
+def stem_direction(direction):
+    return handlertools.OverrideHandler(
+        grob_name='stem',
+        attribute_name='direction',
+        attribute_value=str(direction),
         )
 
 def tremolo_down(n, maximum_adjustment=-1.5):

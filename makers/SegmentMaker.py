@@ -12,11 +12,12 @@ class SegmentMaker(makertools.SegmentMaker):
     ### CLASS ATTRIBUTES ###
 
     __slots__ = (
-        '_hide_stage_annotations',
         '_music_handlers',
         '_music_makers',
         '_score',
+        '_show_stage_annotations',
         '_stages',
+        '_transpose_score',
         'final_barline',
         'measures_per_stage',
         'name',
@@ -32,19 +33,24 @@ class SegmentMaker(makertools.SegmentMaker):
         measures_per_stage=None,
         music_makers=None,
         name=None,
+        show_stage_annotations=False,
         tempo_map=None,
         time_signatures=None,
+        transpose_score=False,
         ):
         superclass = super(SegmentMaker, self)
         superclass.__init__(name=name)
-        self._hide_stage_annotations = False
         self._initialize_music_makers(music_makers)
         self.final_barline = final_barline
         self.measures_per_stage = measures_per_stage
         self.name = name
         self._music_handlers = []
         self._initialize_time_signatures(time_signatures)
+        assert isinstance(show_stage_annotations, bool)
+        self._show_stage_annotations = show_stage_annotations
         self.tempo_map = tempo_map
+        assert isinstance(transpose_score, bool)
+        self._transpose_score = transpose_score
 
     ### SPECIAL METHODS ###
 
@@ -57,7 +63,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._make_lilypond_file()
         self._configure_lilypond_file()
         self._populate_time_signature_context()
-        if not self._hide_stage_annotations:
+        if self.show_stage_annotations:
             self._annotate_stages()
         self._interpret_music_makers()
         self._interpret_music_handlers()
@@ -65,7 +71,8 @@ class SegmentMaker(makertools.SegmentMaker):
         self._attach_instrument_to_first_leaf()
         self._move_untuned_percussion_markup_to_first_note()
         self._label_instrument_changes()
-        self._transpose_instruments()
+        if self.transpose_score:
+            self._transpose_instruments()
         self._attach_rehearsal_mark()
         self._add_final_barline()
         score_block = self.lilypond_file['score']
@@ -610,12 +617,29 @@ class SegmentMaker(makertools.SegmentMaker):
         return tuple(self._music_handlers)
 
     @property
+    def show_stage_annotations(self):
+        r'''Is true when segment should annotate stages.
+
+        Set to true or false.
+        '''
+        return self._show_stage_annotations
+
+    @property
     def stage_count(self):
         r'''Gets total number of stages in segment.
 
         Returns nonnegative integer.
         '''
         return len(self.measures_per_stage)
+
+    @property
+    def transpose_score(self):
+        r'''Is true when segment should notate transposing instruments
+        as written (rather than as sounding).
+
+        Set to true or false.
+        '''
+        return self._transpose_score
 
     ### PUBLIC METHODS ###
 

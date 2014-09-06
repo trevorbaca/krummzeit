@@ -7,8 +7,11 @@ from krummzeit import materials
 from krummzeit.segments.abbreviations import *
 
 
-segment_maker = makers.SegmentMaker(name='A')
-segment_maker._hide_stage_annotations = True
+segment_maker = makers.SegmentMaker(
+    name='A',
+    show_stage_annotations=False,
+    transpose_score=True,
+    )
 segment_maker.time_signatures = materials.segment_time_signatures['A']
 segment_maker.measures_per_stage = [
     2, 1, # stage 1 + halt
@@ -18,7 +21,6 @@ segment_maker.measures_per_stage = [
 assert segment_maker.measure_count == 13
 assert segment_maker.stage_count == 10
 assert segment_maker.validate_time_signatures()
-
 
 ### tempo map ###
 music_maker = segment_maker.make_music_maker()
@@ -38,7 +40,6 @@ segment_maker.tempo_map = [
 ###############################################################################
 ################################ MUSIC-MAKERS #################################
 ###############################################################################
-
 
 ### vn, va, vc [A1] tremolo clusters (11.1) ###
 music_maker = segment_maker.make_music_maker()
@@ -70,8 +71,8 @@ segment_maker.copy_music_maker(
 
 ### vn, va, vc thicket ###
 music_maker = segment_maker.make_music_maker()
-music_maker.context_name = vn
 music_maker.stages = 3, 7
+music_maker.context_name = vn
 music_maker.division_maker = makertools.RoundedRatioDivisionMaker(
     ratios=[(2, 1), (2, 1), (1, 1, 1)],
     )
@@ -138,8 +139,8 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
 
 ### (14.1) pf, xylophone reiteration [A5] ###
 music_maker = segment_maker.make_music_maker()
-music_maker.context_name = pf
 music_maker.stages = 6
+music_maker.context_name = pf
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=[2, 3, 1],
     )
@@ -162,8 +163,8 @@ segment_maker.copy_music_maker(
 
 ### sponges [A6-8] ###
 music_maker = segment_maker.make_music_maker()
-music_maker.context_name = perc
 music_maker.stages = (9, 10)
+music_maker.context_name = perc
 music_maker.instrument = sponges
 music_maker.clef = 'percussion'
 music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(

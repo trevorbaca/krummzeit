@@ -277,38 +277,46 @@ class SegmentMaker(makertools.SegmentMaker):
         compound_scope = makers.CompoundScope(simple_scope)
         result = self._compound_scope_to_logical_ties(compound_scope)
         logical_ties, timespan = result
+        result = self._compound_scope_to_logical_ties(
+            compound_scope,
+            include_rests=True
+            )
+        logical_ties_with_rests, timespan = result
         if isinstance(music_handler.specifiers, (list, tuple)):
             specifiers = tuple(music_handler.specifiers)
         else:
             specifiers = (music_handler.specifiers,)
-        indicator_prototype = (
-            Clef,
-            Dynamic,
-            Markup,
+        note_indicators = (
+            indicatortools.Dynamic,
+            markuptools.Markup,
+            )
+        leaf_indicators = (
+            indicatortools.Clef,
+            instrumenttools.Instrument,
             )
         for specifier in specifiers:
-            if isinstance(specifier, indicator_prototype):
+            if isinstance(specifier, note_indicators):
                 attach(specifier, logical_ties[0].head)
+            elif isinstance(specifier, leaf_indicators):
+                attach(specifier, logical_ties_with_rests[0].head)
             elif isinstance(specifier, spannertools.Spanner):
                 spanner = specifier
                 assert not len(spanner)
                 spanner = copy.deepcopy(spanner)
                 leaves = self._logical_ties_to_leaves(logical_ties)
                 attach(spanner, leaves)
-            elif isinstance(specifier, instrumenttools.Instrument):
-                attach(specifier, logical_ties[0].head)
             elif isinstance(specifier, handlertools.OverrideHandler):
-                result = self._compound_scope_to_logical_ties(
-                    compound_scope,
-                    include_rests=True
-                    )
-                logical_ties_with_rests, timespan = result
                 specifier(logical_ties_with_rests)
             else:
                 specifier(logical_ties, timespan)
             if getattr(specifier, '_mutates_score', False):
                 result = self._compound_scope_to_logical_ties(compound_scope)
                 logical_ties, timespan = result
+                result = self._compound_scope_to_logical_ties(
+                    compound_scope,
+                    include_rests=True
+                    )
+                logical_ties_with_rests, timespan = result
 
     def _logical_ties_to_leaves(self, logical_ties):
         first_note = logical_ties[0].head

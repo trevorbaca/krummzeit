@@ -7,8 +7,11 @@ from krummzeit import materials
 from krummzeit.segments.abbreviations import *
 
 
-segment_maker = makers.SegmentMaker(name='C')
-segment_maker._hide_stage_annotations = True
+segment_maker = makers.SegmentMaker(
+    name='C',
+    show_stage_annotations=False,
+    transpose_score=True,
+    )
 segment_maker.time_signatures = materials.segment_time_signatures['C']
 assert len(materials.segment_time_signatures['C']) == 44
 
@@ -45,7 +48,6 @@ segment_maker.measures_per_stage = [
 assert segment_maker.measure_count == 44
 assert segment_maker.stage_count == 30
 assert segment_maker.validate_time_signatures()
-
 
 ### tempo map ###
 music_maker = segment_maker.make_music_maker()

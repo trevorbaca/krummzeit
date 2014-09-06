@@ -73,11 +73,11 @@ class ColorFingeringSpecifier(abctools.AbjadObject):
             number_list = datastructuretools.CyclicTuple(number_list)
             for i, logical_tie in enumerate(values):
                 number = number_list[i]
-                for note in logical_tie:
-                    if not number == 0:
-                        fingering = indicatortools.ColorFingering(number)
-                        attach(fingering, note)
-                    self._attach_deposit_annotations(note)
+                note = logical_tie.head
+                if not number == 0:
+                    fingering = indicatortools.ColorFingering(number)
+                    attach(fingering, logical_tie.head)
+                self._attach_deposit_annotations(logical_tie.head)
             number_list_index += 1
 
     ### PRIVATE METHODS ###

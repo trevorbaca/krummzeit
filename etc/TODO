@@ -17,3 +17,6 @@
     Make map-making application.
     Implement object model behind.
     Provide ASCII or LateX output.
+
+7.  Extended SegmentMaker with a property to allow [A] to set
+    top marging to 0 mm.

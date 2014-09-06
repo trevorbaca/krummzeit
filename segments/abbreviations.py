@@ -82,7 +82,8 @@ string = 'accent changes of direction noticeably at each attack'
 accent_changes = Markup(string, direction=Up)
 
 string = 'catch resonance (but not attack) with pedal'
-catch_resonance = Markup(string, direction=Up).larger()
+catch_resonance = Markup(string, direction=Up, stack_priority=1000)
+catch_resonance = catch_resonance.larger()
 
 effort_fff = make_effort_dynamic_markup('fff')
 effort_ff = make_effort_dynamic_markup('ff')
@@ -500,12 +501,12 @@ repeated_pp_to_ff = handlertools.NoteAndChordHairpinHandler(
 
 ### miscellaneous
 
-stem_tremolo = handlertools.StemTremoloHandler(
-    hash_mark_counts=[32],
-    )
+### clusters ###
 
-ottava = spannertools.OctavationSpanner(start=1, stop=0)
-ottava_bassa = spannertools.OctavationSpanner(start=-1, stop=0)
+harpsichord_cluster = makers.ClusterSpecifier(
+    start_pitch=NamedPitch('D4'),
+    stop_pitch=NamedPitch('E5'),
+    )
 
 low_piano_cluster = makers.ClusterSpecifier(
     start_pitch=NamedPitch('C1'),
@@ -517,7 +518,14 @@ tenor_piano_cluster = makers.ClusterSpecifier(
     stop_pitch=NamedPitch('B3'),
     )
 
-harpsichord_cluster = makers.ClusterSpecifier(
-    start_pitch=NamedPitch('D4'),
-    stop_pitch=NamedPitch('E5'),
+### miscellaneous ###
+
+mask_first = [rhythmmakertools.BooleanPattern(indices=[0])]
+mask_last = [rhythmmakertools.BooleanPattern(indices=[-1])]
+
+ottava = spannertools.OctavationSpanner(start=1, stop=0)
+ottava_bassa = spannertools.OctavationSpanner(start=-1, stop=0)
+
+stem_tremolo = handlertools.StemTremoloHandler(
+    hash_mark_counts=[32],
     )

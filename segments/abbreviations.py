@@ -11,20 +11,32 @@ oboe = materials.performer_inventory.get_instrument('ob.')
 e_flat_clarinet = materials.performer_inventory.get_instrument('cl. e-flat')
 clarinet = materials.performer_inventory.get_instrument('cl. in B-flat')
 bass_clarinet = materials.performer_inventory.get_instrument('bass cl.')
+
 piano = materials.performer_inventory.get_instrument('piano')
 piano._default_scope = 'PianoMusicStaff'
 harpsichord = materials.performer_inventory.get_instrument('harpsichord')
 harpsichord._default_scope = 'PianoMusicStaff'
+
 crotales = materials.performer_inventory.get_instrument('crotales')
 scraped_slate = materials.performer_inventory.get_instrument('scraped slate')
-scraped_slate._do_not_format = True
 snare_drum = materials.performer_inventory.get_instrument('snare drum')
 sponges = materials.performer_inventory.get_instrument('sponges')
 suspended_cymbal = materials.performer_inventory.get_instrument(
     'suspended cymbal')
 tam_tam = materials.performer_inventory.get_instrument('tam-tam')
 xylophone = materials.performer_inventory.get_instrument('xylophone')
-xylophone._do_not_format = True
+percussion_instruments = (
+    crotales,
+    scraped_slate,
+    snare_drum,
+    sponges,
+    suspended_cymbal,
+    tam_tam,
+    xylophone,
+    )
+for percussion_instrument in percussion_instruments:
+    percussion_instrument._do_not_format = True
+
 violin = materials.performer_inventory.get_instrument('violin')
 viola = materials.performer_inventory.get_instrument('viola')
 cello = materials.performer_inventory.get_instrument('cello')
@@ -32,7 +44,6 @@ cello = materials.performer_inventory.get_instrument('cello')
 
 ### CONTEXT NAMES ###
 
-tsc = 'Time Signature Context'
 ob = 'Oboe Music Voice'
 cl = 'Clarinet Music Voice'
 pf = 'Piano Music Voice'
@@ -57,7 +68,8 @@ accents = handlertools.ReiteratedArticulationHandler(
 
 arco = Markup('arco', direction=Up).larger()
 
-attackless = Markup('attackless', direction=Up).larger()
+string = 'attackless roll with very soft yarn mallets'
+attackless = Markup(string, direction=Up).larger()
 
 string = 'accent changes of direction noticeably at each attack'
 accent_changes = Markup(string, direction=Up)
@@ -87,7 +99,7 @@ fingertips_only = Markup(
     )
 fingertips = fingertips.larger()
 
-fifth_harmonic_of_F1 = Markup('touch F1 string at 5th harmonic', direction=Up)
+fifth_harmonic_of_F1 = Markup('5th harmonic of F1', direction=Up)
 fifth_harmonic_of_F1 = fifth_harmonic_of_F1.larger()
 
 gridato_possibile = Markup('gridato possibile', direction=Up).italic().larger()
@@ -182,6 +194,13 @@ def dynamic_line_spanner_staff_padding(n):
 def stem_direction(direction):
     return handlertools.OverrideHandler(
         grob_name='stem',
+        attribute_name='direction',
+        attribute_value=str(direction),
+        )
+
+def tie_direction(direction):
+    return handlertools.OverrideHandler(
+        grob_name='tie',
         attribute_name='direction',
         attribute_value=str(direction),
         )

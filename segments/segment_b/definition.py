@@ -8,6 +8,7 @@ from krummzeit.segments.abbreviations import *
 
 
 segment_maker = makers.SegmentMaker(name='B')
+segment_maker._hide_stage_annotations = True
 segment_maker.time_signatures = materials.segment_time_signatures['B']
 segment_maker.measures_per_stage = [
     3, 1, 3, 4, # stages 1-4

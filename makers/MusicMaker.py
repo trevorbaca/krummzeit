@@ -37,6 +37,7 @@ class MusicMaker(abctools.AbjadObject):
 
     __slots__ = (
         '_clef',
+        '_hide_untuned_percussion_markup',
         '_rhythm_overwrites',
         '_staff_line_count',
         '_stages',
@@ -67,6 +68,7 @@ class MusicMaker(abctools.AbjadObject):
         self.clef = clef
         self.context_name = context_name
         self.division_maker = division_maker
+        self._hide_untuned_percussion_markup = False
         self.instrument = instrument
         self.rhythm_maker = rhythm_maker
         self.rhythm_overwrites = rhythm_overwrites
@@ -94,12 +96,11 @@ class MusicMaker(abctools.AbjadObject):
         first_leaf = inspect_(first_component).get_leaf(0)
         assert isinstance(first_leaf, scoretools.Leaf), repr(first_leaf)
         prototype = instrumenttools.UntunedPercussion
-        if (self.instrument is not None 
-            and not isinstance(self.instrument, prototype)):
+        if self.instrument is not None:
             attach(self.instrument, first_leaf)
-        if isinstance(self.instrument, prototype):
+        if (isinstance(self.instrument, prototype) and
+            not self._hide_untuned_percussion_markup):
             self._attach_untuned_percussion_markup(first_leaf)
-            attach(self.instrument, first_leaf)
         if self.clef is not None:
             attach(self.clef, first_leaf)
         if self.staff_line_count is not None:

@@ -365,6 +365,7 @@
 								#12
 								Hpschd.
 							}
+                        \clef "treble"
 						<d' f' a' c'' e''>8 [
 							^ \markup {
 								\center-align

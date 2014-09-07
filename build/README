@@ -1,4 +1,5 @@
-1.  Must add two piano clef indications into ...
-        segment-i.ly
-        segment-k.ly
+1.  Must add indications into ...
+        segment-i.ly (piano)
+        segment-k.ly (piano & percussion)
     ... by hand because something is weird in segment maker clef handling.
+    Do this every time (mc) runs to collect segments.

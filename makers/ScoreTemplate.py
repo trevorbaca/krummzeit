@@ -69,7 +69,6 @@ class ScoreTemplate(abctools.AbjadObject):
             name='Time Signature Context',
             )
         instrument_tags = (
-            'score',
             'oboe',
             'clarinet',
             'piano',
@@ -78,7 +77,8 @@ class ScoreTemplate(abctools.AbjadObject):
             'viola',
             'cello',
             )
-        tag_string = "tag #'({})".format(instrument_tags)
+        tag_string = '.'.join(instrument_tags)
+        tag_string = 'tag {}'.format(tag_string)
         tag_command = indicatortools.LilyPondCommand(tag_string, 'before')
         attach(tag_command, time_signature_context)
 
@@ -93,7 +93,7 @@ class ScoreTemplate(abctools.AbjadObject):
             context_name='OboeMusicStaff',
             name='Oboe Music Staff',
             )
-        self._attach_tag('oboe', oboe_music_staf)
+        self._attach_tag('oboe', oboe_music_staff)
         clarinet_music_voice = scoretools.Voice(
             [],
             context_name='ClarinetMusicVoice',
@@ -174,7 +174,7 @@ class ScoreTemplate(abctools.AbjadObject):
             context_name='CelloMusicStaff',
             name='Cello Music Staff',
             )
-        self._attach_tag('cello', cello_music_bass)
+        self._attach_tag('cello', cello_music_staff)
         attach(Clef('bass'), cello_music_staff)
         string_section_staff_group = scoretools.StaffGroup(
             [violin_music_staff, viola_music_staff, cello_music_staff], 
@@ -198,12 +198,8 @@ class ScoreTemplate(abctools.AbjadObject):
 
     ### PRIVATE METHODS ###
 
-    def _attach_tag(self, tag_name, context):
-        assert isinstance(tag_name, str), repr(str)
-        instrument_tags = (
-            'score', 
-            tag_name,
-            )
-        tag_string = "tag #'({})".format(instrument_tags)
+    def _attach_tag(self, instrument_tag, context):
+        assert isinstance(instrument_tag, str), repr(str)
+        tag_string = 'tag {}'.format(instrument_tag)
         tag_command = indicatortools.LilyPondCommand(tag_string, 'before')
         attach(tag_command, context)

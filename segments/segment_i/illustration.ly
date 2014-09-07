@@ -1,4 +1,4 @@
-% 2014-09-07 12:58
+% 2014-09-07 16:38
 
 \version "2.19.12"
 \language "english"
@@ -14,6 +14,7 @@
 
 \score {
 	\context Score = "Krummzeit Score" <<
+		\tag oboe.clarinet.piano.percussion.violin.viola.cello
 		\context TimeSignatureContext = "Time Signature Context" {
 			{
 				\time 7/8
@@ -152,6 +153,7 @@
 			}
 		}
 		\context WindSectionStaffGroup = "Wind Section Staff Group" <<
+			\tag oboe
 			\context OboeMusicStaff = "Oboe Music Staff" {
 				\context OboeMusicVoice = "Oboe Music Voice" {
 					r2..
@@ -206,6 +208,7 @@
 					}
 				}
 			}
+			\tag clarinet
 			\context ClarinetMusicStaff = "Clarinet Music Staff" {
 				\context ClarinetMusicVoice = "Clarinet Music Voice" {
 					\set Staff.instrumentName = \markup {
@@ -404,6 +407,7 @@
 			}
 		>>
 		\context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
+			\tag piano
 			\context PianoMusicStaff = "Piano Music Staff" {
 				\context PianoMusicVoice = "Piano Music Voice" {
 					\times 2/3 {
@@ -2061,6 +2065,7 @@
 					}
 				}
 			}
+			\tag percussion
 			\context PercussionMusicStaff = "Percussion Staff" {
 				\context PercussionMusicVoice = "Percussion Music Voice" {
 					r2..
@@ -2120,6 +2125,7 @@
 			}
 		>>
 		\context StringSectionStaffGroup = "String Section Staff Group" <<
+			\tag violin
 			\context ViolinMusicStaff = "Violin Music Staff" {
 				\context ViolinMusicVoice = "Violin Music Voice" {
 					\tweak #'text #tuplet-number::calc-fraction-text
@@ -2201,6 +2207,7 @@
 					}
 				}
 			}
+			\tag viola
 			\context ViolaMusicStaff = "Viola Music Staff" {
 				\clef "alto"
 				\context ViolaMusicVoice = "Viola Music Voice" {
@@ -2283,6 +2290,7 @@
 					}
 				}
 			}
+			\tag cello
 			\context CelloMusicStaff = "Cello Music Staff" {
 				\clef "bass"
 				\context CelloMusicVoice = "Cello Music Voice" {

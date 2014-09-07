@@ -169,6 +169,9 @@ reiterated_f = handlertools.ReiteratedDynamicHandler(
 reiterated_p = handlertools.ReiteratedDynamicHandler(
     dynamic_name='p',
     )
+reiterated_pp = handlertools.ReiteratedDynamicHandler(
+    dynamic_name='pp',
+    )
 
 scrape_moderately = Markup(
     'scrape in a circle at moderate speed',

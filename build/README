@@ -1,0 +1,4 @@
+1.  Must add two piano clef indications into ...
+        segment-i.ly
+        segment-k.ly
+    ... by hand because something is weird in segment maker clef handling.

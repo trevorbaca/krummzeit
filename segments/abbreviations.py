@@ -75,8 +75,10 @@ accents = handlertools.ReiteratedArticulationHandler(
 
 arco = Markup('arco', direction=Up).larger()
 
+attackless = Markup('attackless', direction=Up).larger()
+
 string = 'attackless roll with very soft yarn mallets'
-attackless = Markup(string, direction=Up).larger()
+attackless_roll = Markup(string, direction=Up).larger()
 
 string = 'accent changes of direction noticeably at each attack'
 accent_changes = Markup(string, direction=Up)

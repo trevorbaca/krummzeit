@@ -163,6 +163,9 @@ reiterated_fff = handlertools.ReiteratedDynamicHandler(
 reiterated_ff = handlertools.ReiteratedDynamicHandler(
     dynamic_name='ff',
     )
+reiterated_f = handlertools.ReiteratedDynamicHandler(
+    dynamic_name='f',
+    )
 reiterated_p = handlertools.ReiteratedDynamicHandler(
     dynamic_name='p',
     )

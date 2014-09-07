@@ -10,7 +10,7 @@ from krummzeit.segments.abbreviations import *
 ### INITIALIZATION ###
 segment_maker = makers.SegmentMaker(
     name='I',
-    show_stage_annotations=True,
+    show_stage_annotations=False,
     transpose_score=True,
     )
 

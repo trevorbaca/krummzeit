@@ -1,0 +1,1344 @@
+
+	\context Score = "Krummzeit Score" <<
+		\context TimeSignatureContext = "Time Signature Context" {
+			{
+				\time 5/4
+				\mark #11
+				s1 * 5/4 ^ \markup {
+					\smaller
+						\general-align
+							#Y
+							#DOWN
+							\note-by-number
+								#2
+								#0
+								#1
+					\upright
+						" = 144"
+					}
+			}
+			{
+				s1 * 5/4
+			}
+			{
+				\time 4/4
+				s1 * 1
+			}
+			{
+				\time 2/4
+				s1 * 1/2
+			}
+			{
+				\time 5/4
+				s1 * 5/4
+			}
+			{
+				s1 * 5/4
+			}
+			{
+				\time 4/4
+				s1 * 1
+			}
+			{
+				\time 2/4
+				s1 * 1/2
+			}
+			{
+				\time 5/4
+				s1 * 5/4
+			}
+			{
+				s1 * 5/4
+			}
+			{
+				\time 4/4
+				s1 * 1
+			}
+			{
+				\time 2/4
+				s1 * 1/2
+			}
+			{
+				\time 5/4
+				s1 * 5/4
+			}
+			{
+				s1 * 5/4
+			}
+			{
+				\time 4/4
+				s1 * 1
+			}
+			{
+				\time 2/4
+				s1 * 1/2
+			}
+			{
+				\time 5/4
+				s1 * 5/4
+			}
+			{
+				s1 * 5/4
+			}
+			{
+				\time 4/4
+				s1 * 1
+			}
+			{
+				\time 2/4
+				s1 * 1/2
+			}
+			{
+				\time 5/4
+				s1 * 5/4
+			}
+			{
+				s1 * 5/4
+			}
+			{
+				\time 4/4
+				s1 * 1
+			}
+			{
+				\time 2/4
+				s1 * 1/2
+			}
+			{
+				\time 5/4
+				s1 * 5/4
+			}
+			{
+				s1 * 5/4
+			}
+			{
+				\time 4/4
+				s1 * 1
+			}
+			{
+				\time 2/4
+				s1 * 1/2
+			}
+			{
+				\time 5/4
+				s1 * 5/4
+			}
+			{
+				s1 * 5/4
+			}
+			{
+				\time 4/4
+				s1 * 1
+			}
+			{
+				\time 2/4
+				s1 * 1/2
+			}
+			{
+				\time 5/4
+				s1 * 5/4
+			}
+			{
+				s1 * 5/4
+			}
+			{
+				\time 4/4
+				s1 * 1
+			}
+			{
+				\time 2/4
+				s1 * 1/2
+			}
+			{
+				\time 5/4
+				s1 * 5/4
+			}
+			{
+				s1 * 5/4
+			}
+			{
+				\time 4/4
+				s1 * 1
+			}
+			{
+				\time 2/4
+				s1 * 1/2
+			}
+			{
+				\time 5/4
+				s1 * 5/4
+			}
+			{
+				s1 * 5/4
+			}
+			{
+				\time 4/4
+				s1 * 1
+			}
+			{
+				\time 2/4
+				s1 * 1/2
+			}
+			{
+				\time 5/4
+				s1 * 5/4
+			}
+			{
+				s1 * 5/4
+			}
+			{
+				\time 4/4
+				s1 * 1
+			}
+			{
+				\time 2/4
+				s1 * 1/2
+			}
+		}
+		\context WindSectionStaffGroup = "Wind Section Staff Group" <<
+			\context OboeMusicStaff = "Oboe Music Staff" {
+				\context OboeMusicVoice = "Oboe Music Voice" {
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					cs'\breve.. \fff
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r2
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					cs'\breve..
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r2
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					cs'\breve..
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r2
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					cs'\breve..
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r2
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					cs'\breve..
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r2
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					cs'\breve..
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r2
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					cs'\breve..
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r2
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					cs'\breve..
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r2
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					cs'\breve..
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r2
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					cs'\breve..
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r2
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r1
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r2
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r1
+					\once \override DynamicLineSpanner #'staff-padding = #5
+					r2
+					\bar "|."
+				}
+			}
+			\context ClarinetMusicStaff = "Clarinet Music Staff" {
+				\context ClarinetMusicVoice = "Clarinet Music Voice" {
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					\set Staff.instrumentName = \markup {
+						\hcenter-in
+							#12
+							"Bass clarinet"
+						}
+					\set Staff.shortInstrumentName = \markup {
+						\hcenter-in
+							#12
+							"Bass cl."
+						}
+					e\longa \f
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					e\longa
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					e\longa
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					e\longa
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					e\longa
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					e\longa
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					e\longa
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					e\longa
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					e\longa
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					e\longa
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r1
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r2
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r4
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r1
+					\once \override DynamicLineSpanner #'staff-padding = #7
+					\once \override Stem #'direction = #up
+					r2
+					\bar "|."
+				}
+			}
+		>>
+		\context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
+			\context PianoMusicStaff = "Piano Music Staff" {
+				\context PianoMusicVoice = "Piano Music Voice" {
+					\set PianoMusicStaff.instrumentName = \markup {
+						\hcenter-in
+							#12
+							Harpsichord
+						}
+					\set PianoMusicStaff.shortInstrumentName = \markup {
+						\hcenter-in
+							#12
+							Hpschd.
+						}
+					cs'''\longa :32
+					cs'''\longa :32
+					cs'''\longa :32
+					cs'''\longa :32
+					cs'''\longa :32
+					cs'''\breve.. :32
+					\set PianoMusicStaff.instrumentName = \markup {
+						\hcenter-in
+							#12
+							Piano
+						}
+					\set PianoMusicStaff.shortInstrumentName = \markup {
+						\hcenter-in
+							#12
+							Pf.
+						}
+					r2
+						^ \markup {
+							\override
+								#'(box-padding . 0.5)
+								\box
+									"to piano"
+							}
+					\set PianoMusicStaff.instrumentName = \markup {
+						\hcenter-in
+							#12
+							Piano
+						}
+					\set PianoMusicStaff.shortInstrumentName = \markup {
+						\hcenter-in
+							#12
+							Pf.
+						}
+					cs'''\longa :32
+						- \markup {
+							\dynamic
+								ffff
+							\italic
+								possibile
+							}
+					cs'''\longa :32
+					cs'''\longa :32
+					cs'''\longa :32
+					cs'''\longa :32
+					cs'''\longa :32
+					\bar "|."
+				}
+			}
+			\context PercussionMusicStaff = "Percussion Staff" {
+				\context PercussionMusicVoice = "Percussion Music Voice" {
+					\once \override DynamicLineSpanner #'staff-padding = #4
+					\stopStaff
+					\override Staff.StaffSymbol #'line-count = #5
+					\startStaff
+					cs''\longa :32 \fff
+					\once \override DynamicLineSpanner #'staff-padding = #4
+					cs''\longa :32
+					\once \override DynamicLineSpanner #'staff-padding = #4
+					cs''\longa :32
+					\once \override DynamicLineSpanner #'staff-padding = #4
+					cs''\longa :32
+					\once \override DynamicLineSpanner #'staff-padding = #4
+					cs''\longa :32
+					\once \override DynamicLineSpanner #'staff-padding = #4
+					cs''\longa :32
+					\once \override DynamicLineSpanner #'staff-padding = #4
+					cs''\longa :32
+					\once \override DynamicLineSpanner #'staff-padding = #4
+					cs''\longa :32
+					\once \override DynamicLineSpanner #'staff-padding = #4
+					cs''\longa :32
+					\once \override DynamicLineSpanner #'staff-padding = #4
+					cs''\longa :32
+					\once \override DynamicLineSpanner #'staff-padding = #4
+					cs''\longa :32
+					\once \override DynamicLineSpanner #'staff-padding = #4
+					cs''\longa :32
+					\bar "|."
+				}
+			}
+		>>
+		\context StringSectionStaffGroup = "String Section Staff Group" <<
+			\context ViolinMusicStaff = "Violin Music Staff" {
+				\context ViolinMusicVoice = "Violin Music Voice" {
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/7 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''2 -\staccatissimo \ff
+							^ \markup {
+								\larger
+									pizz.
+								}
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''1 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						cs'''4 -\staccatissimo
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+					}
+					\times 4/5 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''2. -\staccatissimo
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r1
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						ef'''4 -\staccatissimo
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/6 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						d'''1 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''4 -\staccatissimo
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 3/5 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						g'''4 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''4 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						ef'''2 -\staccatissimo
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2
+					}
+					\times 4/5 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r1
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						cs'''4 -\staccatissimo
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/9 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r1
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''1 -\staccatissimo
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/6 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r1
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						ef'''2 -\staccatissimo
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''1 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						d'''2 -\staccatissimo
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/6 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''1. -\staccatissimo
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						cs'''2. -\staccatissimo
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''1 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''4 -\staccatissimo
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						g'''4 -\staccatissimo
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/7 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''4 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''1. -\staccatissimo
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 3/4 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''2 -\staccatissimo
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r1
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''2 -\staccatissimo
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/7 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r1.
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						cs'''4 -\staccatissimo
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/7 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''1 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						ef'''2 -\staccatissimo
+					}
+					\times 4/5 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''2. -\staccatissimo
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/9 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2.
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						d'''1 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''2 -\staccatissimo
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						g'''2 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''4 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						ef'''4 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''4 -\staccatissimo
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r1.
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''2 -\staccatissimo
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/7 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r1.
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''4 -\staccatissimo
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 3/4 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r1
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						cs'''2 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''2. -\staccatissimo
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						ef'''4 -\staccatissimo
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/6 {
+						r2.
+						c'2.
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/7 {
+						r1
+						r4
+						c'2
+					}
+					{
+						r2
+						c'2
+					}
+					{
+						r2
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/7 {
+						c'2
+						c'4
+						c'4
+						c'2.
+					}
+					{
+						r4
+					}
+					\times 4/5 {
+						r1
+						c'4
+					}
+					\times 2/3 {
+						r1.
+					}
+					{
+						r4
+						c'4
+					}
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r1
+					r2
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r1
+					r2
+					\bar "|."
+				}
+			}
+			\context ViolaMusicStaff = "Viola Music Staff" {
+				\clef "alto"
+				\context ViolaMusicVoice = "Viola Music Voice" {
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/8 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						\clef "treble"
+						ef'''\breve -\staccatissimo \ff
+							^ \markup {
+								\larger
+									pizz.
+								}
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						d'''2. -\staccatissimo
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''4 -\staccatissimo
+					}
+					\times 4/7 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2.
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						g'''2 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''4 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''4 -\staccatissimo
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						cs'''2. -\staccatissimo
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2.
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''4 -\staccatissimo
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/8 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r1..
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''4 -\staccatissimo
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r1.
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						d'''2 -\staccatissimo
+					}
+					\times 4/5 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''1 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						g'''4 -\staccatissimo
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/8 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''1. -\staccatissimo
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						cs'''4 -\staccatissimo
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''2 -\staccatissimo
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						g'''2 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''4 -\staccatissimo
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						ef'''4 -\staccatissimo
+					}
+					\times 4/7 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''1.. -\staccatissimo
+					}
+					\times 4/7 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						d'''1. -\staccatissimo
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/8 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						ef'''\breve -\staccatissimo
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 3/5 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						cs'''2 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						d'''2. -\staccatissimo
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''2 -\staccatissimo
+					}
+					\times 4/7 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						g'''1 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2.
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/7 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						ef'''1 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''2. -\staccatissimo
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/8 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						d'''2 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''4 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						g'''4 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''2. -\staccatissimo
+					}
+					\times 4/5 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r1
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						cs'''2. -\staccatissimo
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2.
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''4 -\staccatissimo
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/7 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r1..
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						cs'''2 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						d'''4 -\staccatissimo
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2.
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''2. -\staccatissimo
+					}
+					\times 4/7 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						g'''1. -\staccatissimo
+					}
+					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/7 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						ef'''1 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''2 -\staccatissimo
+					}
+					\times 4/7 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						d'''2 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''4 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						g'''4 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''4 -\staccatissimo
+					}
+					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						r2.
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/7 {
+						r1
+						c'2.
+					}
+					{
+						r4
+					}
+					\times 4/7 {
+						r1
+						c'2.
+					}
+					\times 2/3 {
+						r1
+						r4
+						c'4
+					}
+					\times 2/3 {
+						r4
+						c'2
+					}
+					{
+						r2
+						c'2.
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 3/4 {
+						r4
+						c'2.
+					}
+					\times 2/3 {
+						r2.
+					}
+					\times 4/7 {
+						r2
+						c'1
+						c'4
+					}
+					{
+						r2
+					}
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r1
+					r2
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r1
+					r2
+					\bar "|."
+				}
+			}
+			\context CelloMusicStaff = "Cello Music Staff" {
+				\clef "bass"
+				\context CelloMusicVoice = "Cello Music Voice" {
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					d'\longa \fff
+						^ \markup {
+							\larger
+								\italic
+									"gridato possibile"
+							}
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					d'\longa
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					d'\longa
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					d'\longa
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					d'\longa
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					d'\breve.. \glissando
+					\once \override DynamicLineSpanner #'staff-padding = #3
+					d,2
+					d,\longa \ff
+						^ \markup {
+							\larger
+								ordinario
+							}
+					d,\longa
+					d,\longa
+					d,\longa
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r1
+					r2
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r4
+					r1
+					\once \override TextScript #'extra-offset = #'(14.5 . 0)
+					r2
+						_ \markup {
+							\right-column
+								{
+									\italic
+										"Cambridge, MA."
+									\italic
+										"May - August 2014."
+								}
+							}
+					\bar "|."
+				}
+			}
+		>>
+	>>

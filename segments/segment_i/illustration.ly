@@ -1,4 +1,4 @@
-% 2014-09-07 16:38
+% 2014-09-07 17:04
 
 \version "2.19.12"
 \language "english"
@@ -55,12 +55,6 @@
 				\once \override TextSpanner.dash-period = 1.5
 				\mark #9
 				s1 * 7/8 \startTextSpan
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[I1]
-						}
 			}
 			{
 				\time 6/4
@@ -69,42 +63,17 @@
 			{
 				\time 7/4
 				s1 * 7/4
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[I2]
-						}
 			}
 			{
 				s1 * 7/4
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[I3]
-						}
 			}
 			{
 				\time 3/4
 				s1 * 3/4
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[I4]
-						}
 			}
 			{
 				\time 11/8
-				s1 * 11/8 \stopTextSpan
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[I5]
-						}
-					^ \markup {
+				s1 * 11/8 \stopTextSpan ^ \markup {
 					\smaller
 						\general-align
 							#Y
@@ -120,32 +89,14 @@
 			{
 				\time 5/8
 				s1 * 5/8
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[I6]
-						}
 			}
 			{
 				\time 4/4
 				s1 * 1
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[I7]
-						}
 			}
 			{
 				\time 2/4
 				s1 * 1/2
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[I8]
-						}
 			}
 			{
 				\time 7/4

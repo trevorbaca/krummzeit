@@ -158,7 +158,7 @@
         instrumentName = \markup { \hcenter-in #12 Oboe }
         shortInstrumentName = \markup { \hcenter-in #12 Ob. }
         \override Beam.positions = #'(-7 . -7)
-        \override DynamicLineSpanner.staff-padding = 9
+        \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
     }
     \context {
@@ -174,7 +174,7 @@
         \alias Staff
         \accepts ClarinetMusicVoice
         \override Beam.positions = #'(-7 . -7)
-        \override DynamicLineSpanner.staff-padding = 9
+        \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
     }
     \context {
@@ -199,8 +199,6 @@
         \type Engraver_group
         \alias Staff
         \accepts PianoMusicVoice
-%        instrumentName = \markup { \hcenter-in #12 Piano }
-%        shortInstrumentName = \markup { \hcenter-in #12 Pf. }
         \override Beam.positions = #'(-6 . -6)
         \override DynamicLineSpanner.staff-padding = 9
         \override TupletBracket.staff-padding = 5
@@ -248,7 +246,7 @@
         instrumentName = \markup { \hcenter-in #12 Violin }
         shortInstrumentName = \markup { \hcenter-in #12 Vn. }
         \override Beam.positions = #'(-7 . -7)
-        \override DynamicLineSpanner.staff-padding = 9
+        \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
     }
     \context {
@@ -266,7 +264,7 @@
         instrumentName = \markup { \hcenter-in #12 Viola }
         shortInstrumentName = \markup { \hcenter-in #12 Va. }
         \override Beam.positions = #'(-7 . -7)
-        \override DynamicLineSpanner.staff-padding = 9
+        \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
     }
     \context {
@@ -284,7 +282,7 @@
         instrumentName = \markup { \hcenter-in #12 Cello }
         shortInstrumentName = \markup { \hcenter-in #12 Vc. }
         \override Beam.positions = #'(-7 . -7)
-        \override DynamicLineSpanner.staff-padding = 9
+        \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
     }
     \context {

@@ -1,5 +1,6 @@
 
 	\context Score = "Krummzeit Score" <<
+		\tag oboe.clarinet.piano.percussion.violin.viola.cello
 		\context TimeSignatureContext = "Time Signature Context" {
 			{
 				\time 3/4
@@ -246,6 +247,7 @@
 			}
 		}
 		\context WindSectionStaffGroup = "Wind Section Staff Group" <<
+			\tag oboe
 			\context OboeMusicStaff = "Oboe Music Staff" {
 				\context OboeMusicVoice = "Oboe Music Voice" {
 					\times 4/5 {
@@ -1328,6 +1330,7 @@
 					r4.
 				}
 			}
+			\tag clarinet
 			\context ClarinetMusicStaff = "Clarinet Music Staff" {
 				\context ClarinetMusicVoice = "Clarinet Music Voice" {
 					\once \override DynamicLineSpanner #'staff-padding = #6
@@ -1889,6 +1892,7 @@
 			}
 		>>
 		\context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
+			\tag piano
 			\context PianoMusicStaff = "Piano Music Staff" {
 				\context PianoMusicVoice = "Piano Music Voice" {
 					\set PianoMusicStaff.instrumentName = \markup {
@@ -2526,6 +2530,7 @@
 					r4.
 				}
 			}
+			\tag percussion
 			\context PercussionMusicStaff = "Percussion Staff" {
 				\context PercussionMusicVoice = "Percussion Music Voice" {
 					\tweak #'text #tuplet-number::calc-fraction-text
@@ -2793,6 +2798,7 @@
 			}
 		>>
 		\context StringSectionStaffGroup = "String Section Staff Group" <<
+			\tag violin
 			\context ViolinMusicStaff = "Violin Music Staff" {
 				\context ViolinMusicVoice = "Violin Music Voice" {
 					\once \override DynamicLineSpanner #'staff-padding = #8.5
@@ -3349,6 +3355,7 @@
 					r4.
 				}
 			}
+			\tag viola
 			\context ViolaMusicStaff = "Viola Music Staff" {
 				\clef "alto"
 				\context ViolaMusicVoice = "Viola Music Voice" {
@@ -3646,6 +3653,7 @@
 					r32
 				}
 			}
+			\tag cello
 			\context CelloMusicStaff = "Cello Music Staff" {
 				\clef "bass"
 				\context CelloMusicVoice = "Cello Music Voice" {

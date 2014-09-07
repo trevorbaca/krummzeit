@@ -1,5 +1,6 @@
 
 	\context Score = "Krummzeit Score" <<
+		\tag oboe.clarinet.piano.percussion.violin.viola.cello
 		\context TimeSignatureContext = "Time Signature Context" {
 			{
 				\time 5/4
@@ -195,6 +196,7 @@
 			}
 		}
 		\context WindSectionStaffGroup = "Wind Section Staff Group" <<
+			\tag oboe
 			\context OboeMusicStaff = "Oboe Music Staff" {
 				\context OboeMusicVoice = "Oboe Music Voice" {
 					\once \override DynamicLineSpanner #'staff-padding = #5
@@ -288,6 +290,7 @@
 					\bar "|."
 				}
 			}
+			\tag clarinet
 			\context ClarinetMusicStaff = "Clarinet Music Staff" {
 				\context ClarinetMusicVoice = "Clarinet Music Voice" {
 					\once \override DynamicLineSpanner #'staff-padding = #7
@@ -407,6 +410,7 @@
 			}
 		>>
 		\context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
+			\tag piano
 			\context PianoMusicStaff = "Piano Music Staff" {
 				\context PianoMusicVoice = "Piano Music Voice" {
 					\set PianoMusicStaff.instrumentName = \markup {
@@ -467,6 +471,7 @@
 					\bar "|."
 				}
 			}
+			\tag percussion
 			\context PercussionMusicStaff = "Percussion Staff" {
 				\context PercussionMusicVoice = "Percussion Music Voice" {
 					\once \override DynamicLineSpanner #'staff-padding = #4
@@ -501,6 +506,7 @@
 			}
 		>>
 		\context StringSectionStaffGroup = "String Section Staff Group" <<
+			\tag violin
 			\context ViolinMusicStaff = "Violin Music Staff" {
 				\context ViolinMusicVoice = "Violin Music Voice" {
 					\tweak #'text #tuplet-number::calc-fraction-text
@@ -820,42 +826,78 @@
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 5/6 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
 						r2.
-						c'2.
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''2. -\staccatissimo
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 5/7 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
 						r1
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
 						r4
-						c'2
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''2 -\staccatissimo
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
 						r2
-						c'2
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''2 -\staccatissimo
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
 						r2
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 5/7 {
-						c'2
-						c'4
-						c'4
-						c'2.
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						ef'''2 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''4 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						d'''4 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''2. -\staccatissimo
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
 						r4
 					}
 					\times 4/5 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
 						r1
-						c'4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						g'''4 -\staccatissimo
 					}
 					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
 						r1.
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
 						r4
-						c'4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''4 -\staccatissimo
 					}
 					r4
 					r4
@@ -884,6 +926,7 @@
 					\bar "|."
 				}
 			}
+			\tag viola
 			\context ViolaMusicStaff = "Viola Music Staff" {
 				\clef "alto"
 				\context ViolaMusicVoice = "Viola Music Voice" {
@@ -1207,43 +1250,81 @@
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 5/7 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
 						r1
-						c'2.
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						cs'''2. -\staccatissimo
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
 						r4
 					}
 					\times 4/7 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
 						r1
-						c'2.
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						d'''2. -\staccatissimo
 					}
 					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
 						r1
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
 						r4
-						c'4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						g'''4 -\staccatissimo
 					}
 					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
 						r4
-						c'2
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''2 -\staccatissimo
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
 						r2
-						c'2.
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						cs'''2. -\staccatissimo
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/4 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
 						r4
-						c'2.
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						f'''2. -\staccatissimo
 					}
 					\times 2/3 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
 						r2.
 					}
 					\times 4/7 {
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
 						r2
-						c'1
-						c'4
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						e'''1 -\staccatissimo
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
+						ef'''4 -\staccatissimo
 					}
 					{
+						\once \override DynamicLineSpanner #'staff-padding = #5
+						\once \override TupletBracket #'staff-padding = #2
 						r2
 					}
 					r4
@@ -1273,6 +1354,7 @@
 					\bar "|."
 				}
 			}
+			\tag cello
 			\context CelloMusicStaff = "Cello Music Staff" {
 				\clef "bass"
 				\context CelloMusicVoice = "Cello Music Voice" {

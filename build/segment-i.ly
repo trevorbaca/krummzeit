@@ -1,5 +1,6 @@
 
 	\context Score = "Krummzeit Score" <<
+		\tag oboe.clarinet.piano.percussion.violin.viola.cello
 		\context TimeSignatureContext = "Time Signature Context" {
 			{
 				\time 7/8
@@ -40,12 +41,6 @@
 				\once \override TextSpanner.dash-period = 1.5
 				\mark #9
 				s1 * 7/8 \startTextSpan
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[I1]
-						}
 			}
 			{
 				\time 6/4
@@ -54,42 +49,17 @@
 			{
 				\time 7/4
 				s1 * 7/4
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[I2]
-						}
 			}
 			{
 				s1 * 7/4
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[I3]
-						}
 			}
 			{
 				\time 3/4
 				s1 * 3/4
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[I4]
-						}
 			}
 			{
 				\time 11/8
-				s1 * 11/8 \stopTextSpan
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[I5]
-						}
-					^ \markup {
+				s1 * 11/8 \stopTextSpan ^ \markup {
 					\smaller
 						\general-align
 							#Y
@@ -105,32 +75,14 @@
 			{
 				\time 5/8
 				s1 * 5/8
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[I6]
-						}
 			}
 			{
 				\time 4/4
 				s1 * 1
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[I7]
-						}
 			}
 			{
 				\time 2/4
 				s1 * 1/2
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[I8]
-						}
 			}
 			{
 				\time 7/4
@@ -138,6 +90,7 @@
 			}
 		}
 		\context WindSectionStaffGroup = "Wind Section Staff Group" <<
+			\tag oboe
 			\context OboeMusicStaff = "Oboe Music Staff" {
 				\context OboeMusicVoice = "Oboe Music Voice" {
 					r2..
@@ -192,6 +145,7 @@
 					}
 				}
 			}
+			\tag clarinet
 			\context ClarinetMusicStaff = "Clarinet Music Staff" {
 				\context ClarinetMusicVoice = "Clarinet Music Voice" {
 					\set Staff.instrumentName = \markup {
@@ -390,6 +344,7 @@
 			}
 		>>
 		\context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
+			\tag piano
 			\context PianoMusicStaff = "Piano Music Staff" {
 				\context PianoMusicVoice = "Piano Music Voice" {
 					\times 2/3 {
@@ -2047,6 +2002,7 @@
 					}
 				}
 			}
+			\tag percussion
 			\context PercussionMusicStaff = "Percussion Staff" {
 				\context PercussionMusicVoice = "Percussion Music Voice" {
 					r2..
@@ -2106,6 +2062,7 @@
 			}
 		>>
 		\context StringSectionStaffGroup = "String Section Staff Group" <<
+			\tag violin
 			\context ViolinMusicStaff = "Violin Music Staff" {
 				\context ViolinMusicVoice = "Violin Music Voice" {
 					\tweak #'text #tuplet-number::calc-fraction-text
@@ -2187,6 +2144,7 @@
 					}
 				}
 			}
+			\tag viola
 			\context ViolaMusicStaff = "Viola Music Staff" {
 				\clef "alto"
 				\context ViolaMusicVoice = "Viola Music Voice" {
@@ -2269,6 +2227,7 @@
 					}
 				}
 			}
+			\tag cello
 			\context CelloMusicStaff = "Cello Music Staff" {
 				\clef "bass"
 				\context CelloMusicVoice = "Cello Music Voice" {

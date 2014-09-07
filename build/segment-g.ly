@@ -1,17 +1,11 @@
 
 	\context Score = "Krummzeit Score" <<
+		\tag oboe.clarinet.piano.percussion.violin.viola.cello
 		\context TimeSignatureContext = "Time Signature Context" {
 			{
 				\time 9/8
 				\mark #7
-				s1 * 9/8
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[G1]
-						}
-					^ \markup {
+				s1 * 9/8 ^ \markup {
 					\smaller
 						\general-align
 							#Y
@@ -27,12 +21,6 @@
 			{
 				\time 5/8
 				s1 * 5/8
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[G2]
-						}
 			}
 			{
 				s1 * 5/8
@@ -40,22 +28,10 @@
 			{
 				\time 4/4
 				s1 * 1
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[G3]
-						}
 			}
 			{
 				\time 5/4
 				s1 * 5/4
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[G4]
-						}
 			}
 			{
 				\time 3/4
@@ -63,21 +39,9 @@
 			}
 			{
 				s1 * 3/4
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[G5]
-						}
 			}
 			{
 				s1 * 3/4
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[G6]
-						}
 			}
 			{
 				\time 9/8
@@ -86,12 +50,6 @@
 			{
 				\time 7/8
 				s1 * 7/8
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[G7]
-						}
 			}
 			{
 				\time 6/4
@@ -137,12 +95,6 @@
 				\once \override TextSpanner.dash-fraction = 0.25
 				\once \override TextSpanner.dash-period = 1.5
 				s1 * 3/2 \startTextSpan
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[G8]
-						}
 			}
 			{
 				\time 7/4
@@ -151,22 +103,10 @@
 			{
 				\time 3/4
 				s1 * 3/4
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[G9]
-						}
 			}
 			{
 				\time 7/4
 				s1 * 7/4
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[G10]
-						}
 			}
 			{
 				\time 11/8
@@ -175,22 +115,10 @@
 			{
 				\time 5/8
 				s1 * 5/8
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[G11]
-						}
 			}
 			{
 				\time 4/4
 				s1 * 1
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[G12]
-						}
 			}
 			{
 				\time 6/4
@@ -198,14 +126,7 @@
 			}
 			{
 				\time 3/4
-				s1 * 3/4 \stopTextSpan
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[G13]
-						}
-					^ \markup {
+				s1 * 3/4 \stopTextSpan ^ \markup {
 					\smaller
 						\general-align
 							#Y
@@ -221,12 +142,6 @@
 			{
 				\time 4/4
 				s1 * 1
-					- \markup {
-						\smaller
-							\with-color
-								#blue
-								[G14]
-						}
 			}
 			{
 				\time 7/8
@@ -237,6 +152,7 @@
 			}
 		}
 		\context WindSectionStaffGroup = "Wind Section Staff Group" <<
+			\tag oboe
 			\context OboeMusicStaff = "Oboe Music Staff" {
 				\context OboeMusicVoice = "Oboe Music Voice" {
 					\once \override Beam #'positions = #'(-5 . -5)
@@ -647,6 +563,7 @@
 					r2..
 				}
 			}
+			\tag clarinet
 			\context ClarinetMusicStaff = "Clarinet Music Staff" {
 				\context ClarinetMusicVoice = "Clarinet Music Voice" {
 					\once \override Beam #'positions = #'(-5 . -5)
@@ -1049,6 +966,7 @@
 			}
 		>>
 		\context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
+			\tag piano
 			\context PianoMusicStaff = "Piano Music Staff" {
 				\context PianoMusicVoice = "Piano Music Voice" {
 					\once \override Beam #'positions = #'(-5 . -5)
@@ -1387,6 +1305,7 @@
 					r2..
 				}
 			}
+			\tag percussion
 			\context PercussionMusicStaff = "Percussion Staff" {
 				\context PercussionMusicVoice = "Percussion Music Voice" {
 					\once \override DynamicLineSpanner #'staff-padding = #6
@@ -1488,6 +1407,7 @@
 			}
 		>>
 		\context StringSectionStaffGroup = "String Section Staff Group" <<
+			\tag violin
 			\context ViolinMusicStaff = "Violin Music Staff" {
 				\context ViolinMusicVoice = "Violin Music Voice" {
 					r4.
@@ -1577,6 +1497,7 @@
 					r2..
 				}
 			}
+			\tag viola
 			\context ViolaMusicStaff = "Viola Music Staff" {
 				\clef "alto"
 				\context ViolaMusicVoice = "Viola Music Voice" {
@@ -1710,6 +1631,7 @@
 					r2..
 				}
 			}
+			\tag cello
 			\context CelloMusicStaff = "Cello Music Staff" {
 				\clef "bass"
 				\context CelloMusicVoice = "Cello Music Voice" {

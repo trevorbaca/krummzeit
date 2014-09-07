@@ -211,6 +211,7 @@ segment_maker.copy_music_maker(
 segment_maker.make_music_handler(
     scope=(pf, (1, 5)),
     specifiers=[
+        Clef('treble'),
         harpsichord_cluster,
         harpsichord,
         ],

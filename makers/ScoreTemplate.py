@@ -68,6 +68,19 @@ class ScoreTemplate(abctools.AbjadObject):
             context_name='TimeSignatureContext',
             name='Time Signature Context',
             )
+        instrument_tags = (
+            'score',
+            'oboe',
+            'clarinet',
+            'piano',
+            'percussion',
+            'violin',
+            'viola',
+            'cello',
+            )
+        tag_string = "tag #'({})".format(instrument_tags)
+        tag_command = indicatortools.LilyPondCommand(tag_string, 'before')
+        attach(tag_command, time_signature_context)
 
         # make wind contexts
         oboe_music_voice = scoretools.Voice(
@@ -80,8 +93,7 @@ class ScoreTemplate(abctools.AbjadObject):
             context_name='OboeMusicStaff',
             name='Oboe Music Staff',
             )
-        oboe = performer_inventory.get_instrument('oboe')
-        #attach(oboe, oboe_music_staff)
+        self._attach_tag('oboe', oboe_music_staf)
         clarinet_music_voice = scoretools.Voice(
             [],
             context_name='ClarinetMusicVoice',
@@ -92,8 +104,7 @@ class ScoreTemplate(abctools.AbjadObject):
             context_name='ClarinetMusicStaff',
             name='Clarinet Music Staff',
             )
-        clarinet = performer_inventory.get_instrument('clarinet in B-flat')
-        #attach(clarinet, clarinet_music_staff)
+        self._attach_tag('clarinet', clarinet_music_staff)
         wind_section_staff_group = scoretools.StaffGroup(
             [oboe_music_staff, clarinet_music_staff], 
             context_name='WindSectionStaffGroup',
@@ -111,8 +122,7 @@ class ScoreTemplate(abctools.AbjadObject):
             context_name='PianoMusicStaff',
             name='Piano Music Staff',
             )
-        piano = performer_inventory.get_instrument('piano')
-        #attach(piano, piano_music_staff)
+        self._attach_tag('piano', piano_music_staff)
         percussion_music_voice = scoretools.Voice(
             [],
             context_name='PercussionMusicVoice',
@@ -123,6 +133,7 @@ class ScoreTemplate(abctools.AbjadObject):
             context_name='PercussionMusicStaff',
             name='Percussion Staff',
             )
+        self._attach_tag('percussion', percussion_music_staff)
         percussion_section_staff_group = scoretools.StaffGroup(
             [piano_music_staff, percussion_music_staff], 
             context_name='PercussionSectionStaffGroup',
@@ -140,8 +151,7 @@ class ScoreTemplate(abctools.AbjadObject):
             context_name='ViolinMusicStaff',
             name='Violin Music Staff',
             )
-        violin = performer_inventory.get_instrument('violin')
-        #attach(violin, violin_music_staff)
+        self._attach_tag('violin', violin_music_staff)
         viola_music_voice = scoretools.Voice(
             [], 
             context_name='ViolaMusicVoice',
@@ -152,8 +162,7 @@ class ScoreTemplate(abctools.AbjadObject):
             context_name='ViolaMusicStaff',
             name='Viola Music Staff',
             )
-        viola = performer_inventory.get_instrument('viola')
-        #attach(viola, viola_music_staff)
+        self._attach_tag('viola', viola_music_staff)
         attach(Clef('alto'), viola_music_staff)
         cello_music_voice = scoretools.Voice(
             [], 
@@ -165,8 +174,7 @@ class ScoreTemplate(abctools.AbjadObject):
             context_name='CelloMusicStaff',
             name='Cello Music Staff',
             )
-        cello = performer_inventory.get_instrument('cello')
-        #attach(cello, cello_music_staff)
+        self._attach_tag('cello', cello_music_bass)
         attach(Clef('bass'), cello_music_staff)
         string_section_staff_group = scoretools.StaffGroup(
             [violin_music_staff, viola_music_staff, cello_music_staff], 
@@ -187,3 +195,15 @@ class ScoreTemplate(abctools.AbjadObject):
 
         # return score
         return score
+
+    ### PRIVATE METHODS ###
+
+    def _attach_tag(self, tag_name, context):
+        assert isinstance(tag_name, str), repr(str)
+        instrument_tags = (
+            'score', 
+            tag_name,
+            )
+        tag_string = "tag #'({})".format(instrument_tags)
+        tag_command = indicatortools.LilyPondCommand(tag_string, 'before')
+        attach(tag_command, context)

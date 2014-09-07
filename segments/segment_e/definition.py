@@ -656,7 +656,7 @@ segment_maker.make_music_handler(
     scope=(perc, (12, 13)),
     specifiers=[
         Dynamic('ppp'),
-        attackless,
+        attackless_roll,
         stem_tremolo,
         ],
     )

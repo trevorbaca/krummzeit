@@ -69,10 +69,12 @@ class ScoreTemplate(abctools.AbjadObject):
             name='Time Signature Context',
             )
         instrument_tags = (
+            'winds',
             'oboe',
             'clarinet',
             'piano',
             'percussion',
+            'strings',
             'violin',
             'viola',
             'cello',
@@ -93,7 +95,7 @@ class ScoreTemplate(abctools.AbjadObject):
             context_name='OboeMusicStaff',
             name='Oboe Music Staff',
             )
-        self._attach_tag('oboe', oboe_music_staff)
+        self._attach_tag('winds.oboe', oboe_music_staff)
         clarinet_music_voice = scoretools.Voice(
             [],
             context_name='ClarinetMusicVoice',
@@ -104,7 +106,7 @@ class ScoreTemplate(abctools.AbjadObject):
             context_name='ClarinetMusicStaff',
             name='Clarinet Music Staff',
             )
-        self._attach_tag('clarinet', clarinet_music_staff)
+        self._attach_tag('winds.clarinet', clarinet_music_staff)
         wind_section_staff_group = scoretools.StaffGroup(
             [oboe_music_staff, clarinet_music_staff], 
             context_name='WindSectionStaffGroup',
@@ -122,7 +124,7 @@ class ScoreTemplate(abctools.AbjadObject):
             context_name='PianoMusicStaff',
             name='Piano Music Staff',
             )
-        self._attach_tag('piano', piano_music_staff)
+        self._attach_tag('percussion.piano', piano_music_staff)
         percussion_music_voice = scoretools.Voice(
             [],
             context_name='PercussionMusicVoice',
@@ -151,7 +153,7 @@ class ScoreTemplate(abctools.AbjadObject):
             context_name='ViolinMusicStaff',
             name='Violin Music Staff',
             )
-        self._attach_tag('violin', violin_music_staff)
+        self._attach_tag('strings.violin', violin_music_staff)
         viola_music_voice = scoretools.Voice(
             [], 
             context_name='ViolaMusicVoice',
@@ -162,7 +164,7 @@ class ScoreTemplate(abctools.AbjadObject):
             context_name='ViolaMusicStaff',
             name='Viola Music Staff',
             )
-        self._attach_tag('viola', viola_music_staff)
+        self._attach_tag('strings.viola', viola_music_staff)
         attach(Clef('alto'), viola_music_staff)
         cello_music_voice = scoretools.Voice(
             [], 
@@ -174,7 +176,7 @@ class ScoreTemplate(abctools.AbjadObject):
             context_name='CelloMusicStaff',
             name='Cello Music Staff',
             )
-        self._attach_tag('cello', cello_music_staff)
+        self._attach_tag('strings.cello', cello_music_staff)
         attach(Clef('bass'), cello_music_staff)
         string_section_staff_group = scoretools.StaffGroup(
             [violin_music_staff, viola_music_staff, cello_music_staff], 

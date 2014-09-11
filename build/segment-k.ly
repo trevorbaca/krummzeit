@@ -423,7 +423,14 @@
 							#12
 							Hpschd.
 						}
+                    \clef "treble"
 					cs'''\longa :32
+                            _ \markup {
+                                \override
+                                    #'(box-padding . 0.5)
+                                    \box
+                                        "to harpsichord"
+                                }
 					cs'''\longa :32
 					cs'''\longa :32
 					cs'''\longa :32
@@ -478,6 +485,7 @@
 					\stopStaff
 					\override Staff.StaffSymbol #'line-count = #5
 					\startStaff
+                    \clef "treble"
 					cs''\longa :32 \fff
 					\once \override DynamicLineSpanner #'staff-padding = #4
 					cs''\longa :32

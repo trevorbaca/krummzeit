@@ -360,6 +360,7 @@
 								#12
 								Harpsichord
 							}
+                        \clef "treble"
 						\set PianoMusicStaff.shortInstrumentName = \markup {
 							\hcenter-in
 								#12
@@ -374,6 +375,12 @@
 											\flat
 										}
 								}
+                            _ \markup {
+                                \override
+                                    #'(box-padding . 0.5)
+                                    \box
+                                        "to harpsichord"
+                                }
 						\once \override Accidental.stencil = ##f
 						\once \override AccidentalCautionary.stencil = ##f
 						\once \override Arpeggio.X-offset = #-2

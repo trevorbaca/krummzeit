@@ -5,10 +5,25 @@
 
 #(ly:set-option 'relative-includes #t)
 \include "../stylesheets/stylesheet.ily"
+#(set-global-staff-size 15)
 
 \paper{
     bottom-margin = 0\mm
-    } 
+    systems-per-page = 5
+    system-system-spacing = #'(
+        (basic-distance . 0)
+        (minimum-distance . 12)
+        (padding . 0)
+        (stretchability . 0)
+    )
+    top-margin = 0\mm
+    top-markup-spacing = #'(
+        (basic-distance . 0)
+        (minimum-distance . 12)
+        (padding . 0)
+        (stretchability . 0)
+    )
+} 
 
 \layout {
     \context {
@@ -19,10 +34,14 @@
         \override TextSpanner.padding = ##f
         \override VerticalAxisGroup.default-staff-staff-spacing = #'(
             (basic-distance . 0)
-            (minimum-distance . 5)
+            (minimum-distance . 10)
             (padding . 0)
             (stretchability . 0)
         )
+    }
+    \context {
+        \WindSectionStaffGroup
+        \override StaffGrouper.staff-staff-spacing.minimum-distance = 14
     }
 }
 

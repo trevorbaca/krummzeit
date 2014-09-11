@@ -6,8 +6,6 @@
 #(ly:set-option 'relative-includes #t)
 \include "../stylesheets/stylesheet.ily"
 
-#(set-global-staff-size 15)
-
 \paper{
     bottom-margin = 0\mm
     } 
@@ -29,7 +27,7 @@
 }
 
 \score {
-    \keepWithTag violin {
+    \keepWithTag strings {
         \include "segment-a.ly"
         \include "segment-b.ly"
         \include "segment-c.ly"

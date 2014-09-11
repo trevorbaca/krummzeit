@@ -1,6 +1,6 @@
 
 	\context Score = "Krummzeit Score" <<
-		\tag oboe.clarinet.piano.percussion.violin.viola.cello
+		\tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
 		\context TimeSignatureContext = "Time Signature Context" {
 			{
 				\time 3/4
@@ -677,7 +677,7 @@
 			}
 		}
 		\context WindSectionStaffGroup = "Wind Section Staff Group" <<
-			\tag oboe
+			\tag winds.oboe
 			\context OboeMusicStaff = "Oboe Music Staff" {
 				\context OboeMusicVoice = "Oboe Music Voice" {
 					\once \override Beam #'positions = #'(-5 . -5)
@@ -1832,7 +1832,7 @@
 					r4
 				}
 			}
-			\tag clarinet
+			\tag winds.clarinet
 			\context ClarinetMusicStaff = "Clarinet Music Staff" {
 				\context ClarinetMusicVoice = "Clarinet Music Voice" {
 					\once \override Beam #'positions = #'(-4 . -4)
@@ -2999,7 +2999,7 @@
 			}
 		>>
 		\context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
-			\tag piano
+			\tag percussion.piano
 			\context PianoMusicStaff = "Piano Music Staff" {
 				\context PianoMusicVoice = "Piano Music Voice" {
 					\times 4/7 {
@@ -5920,7 +5920,7 @@
 			}
 		>>
 		\context StringSectionStaffGroup = "String Section Staff Group" <<
-			\tag violin
+			\tag strings.violin
 			\context ViolinMusicStaff = "Violin Music Staff" {
 				\context ViolinMusicVoice = "Violin Music Voice" {
 					\once \override Beam #'positions = #'(-5 . -5)
@@ -7726,7 +7726,7 @@
 					c'4
 				}
 			}
-			\tag viola
+			\tag strings.viola
 			\context ViolaMusicStaff = "Viola Music Staff" {
 				\clef "alto"
 				\context ViolaMusicVoice = "Viola Music Voice" {
@@ -8685,7 +8685,7 @@
 					r4
 				}
 			}
-			\tag cello
+			\tag strings.cello
 			\context CelloMusicStaff = "Cello Music Staff" {
 				\clef "bass"
 				\context CelloMusicVoice = "Cello Music Voice" {

@@ -1,13 +1,7 @@
-import collections
 from abjad import *
 
 
-class ScoreTemplate(abctools.AbjadObject):
-
-    ### INITIALIZER ###
-
-    def __init__(self):
-        self.context_name_abbreviations = collections.OrderedDict()
+class ScoreTemplate(abctools.AbjadValueObject):
 
     ### SPECIAL METHODS ###
 

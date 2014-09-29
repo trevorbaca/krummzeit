@@ -1,10 +1,9 @@
 # -*- encoding: utf-8 -*-
 from abjad import *
 import baca
-import score_manager_library
 
 
-violet_pitch_classes = baca.score_manager_library.makers.ZaggedPitchClassMaker(
+violet_pitch_classes = baca.library.makers.ZaggedPitchClassMaker(
     pc_cells=[
         [8, 4, 3, 2, 11],
         [5, 4, 6, 8, 7],

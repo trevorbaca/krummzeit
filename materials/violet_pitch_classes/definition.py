@@ -9,7 +9,7 @@ violet_pitch_classes = baca.library.makers.ZaggedPitchClassMaker(
         [5, 4, 6, 8, 7],
         [9, 6, 5, 0, 11, 10],
         ],
-    division_cells=[
+    division_ratios=[
         [
             [1],
             [1],

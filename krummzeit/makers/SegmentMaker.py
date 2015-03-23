@@ -417,8 +417,8 @@ class SegmentMaker(makertools.SegmentMaker):
         specifier = rhythmmakertools.DurationSpellingSpecifier(
             spell_metrically='unassignable',
             )
-        maker = rhythmmakertools.RestRhythmMaker(
-            duration_spelling_specifier=specifier,
+        maker = rhythmmakertools.NoteRhythmMaker(
+            output_masks=[rhythmmakertools.mask_all()],
             )
         selections = maker(time_signatures)
         return selections

@@ -1,5 +1,7 @@
 # -*- encoding: utf-8 -*-
-from abjad import *
+from abjad.tools import datastructuretools
+from abjad.tools import indicatortools
+import collections
 
 
 segment_time_signatures = datastructuretools.TypedOrderedDict(

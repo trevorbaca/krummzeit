@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-from abjad import *
+from abjad.tools import pitchtools
 
 
 violet_pitch_classes = pitchtools.PitchClassTree(
@@ -30,19 +30,27 @@ violet_pitch_classes = pitchtools.PitchClassTree(
                 pitchtools.NumberedPitchClass(0),
                 pitchtools.NumberedPitchClass(11),
                 pitchtools.NumberedPitchClass(10),
+                ],
+            [
                 pitchtools.NumberedPitchClass(7),
                 pitchtools.NumberedPitchClass(5),
                 pitchtools.NumberedPitchClass(4),
                 ],
+            ],
+        [
             [
                 pitchtools.NumberedPitchClass(6),
                 pitchtools.NumberedPitchClass(8),
+                ],
+            [
                 pitchtools.NumberedPitchClass(10),
                 pitchtools.NumberedPitchClass(9),
                 pitchtools.NumberedPitchClass(6),
                 pitchtools.NumberedPitchClass(5),
                 pitchtools.NumberedPitchClass(0),
                 pitchtools.NumberedPitchClass(11),
+                ],
+            [
                 pitchtools.NumberedPitchClass(11),
                 pitchtools.NumberedPitchClass(8),
                 pitchtools.NumberedPitchClass(4),
@@ -59,12 +67,18 @@ violet_pitch_classes = pitchtools.PitchClassTree(
                 pitchtools.NumberedPitchClass(5),
                 pitchtools.NumberedPitchClass(0),
                 ],
+            ],
+        [
             [
                 pitchtools.NumberedPitchClass(2),
                 pitchtools.NumberedPitchClass(11),
                 ],
+            ],
+        [
             [
                 pitchtools.NumberedPitchClass(8),
+                ],
+            [
                 pitchtools.NumberedPitchClass(4),
                 pitchtools.NumberedPitchClass(3),
                 ],
@@ -73,7 +87,11 @@ violet_pitch_classes = pitchtools.PitchClassTree(
             [
                 pitchtools.NumberedPitchClass(8),
                 pitchtools.NumberedPitchClass(7),
+                ],
+            [
                 pitchtools.NumberedPitchClass(5),
+                ],
+            [
                 pitchtools.NumberedPitchClass(4),
                 pitchtools.NumberedPitchClass(6),
                 ],
@@ -88,9 +106,13 @@ violet_pitch_classes = pitchtools.PitchClassTree(
             [
                 pitchtools.NumberedPitchClass(11),
                 ],
+            ],
+        [
             [
                 pitchtools.NumberedPitchClass(8),
                 pitchtools.NumberedPitchClass(4),
+                ],
+            [
                 pitchtools.NumberedPitchClass(6),
                 pitchtools.NumberedPitchClass(8),
                 pitchtools.NumberedPitchClass(7),
@@ -106,240 +128,17 @@ violet_pitch_classes = pitchtools.PitchClassTree(
                 pitchtools.NumberedPitchClass(9),
                 pitchtools.NumberedPitchClass(6),
                 pitchtools.NumberedPitchClass(5),
+                ],
+            [
                 pitchtools.NumberedPitchClass(4),
                 pitchtools.NumberedPitchClass(6),
                 pitchtools.NumberedPitchClass(8),
                 pitchtools.NumberedPitchClass(7),
                 pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(0),
                 ],
-            [
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(10),
-                ],
-            [
-                pitchtools.NumberedPitchClass(9),
-                pitchtools.NumberedPitchClass(6),
-                ],
-            ],
-        [
-            [
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(3),
-                pitchtools.NumberedPitchClass(2),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(8),
-                ],
-            ],
-        [
-            [
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(0),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(10),
-                pitchtools.NumberedPitchClass(9),
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(3),
-                pitchtools.NumberedPitchClass(2),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(7),
-                ],
-            ],
-        [
-            [
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(3),
-                pitchtools.NumberedPitchClass(2),
-                ],
-            [
-                pitchtools.NumberedPitchClass(7),
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(4),
-                ],
-            ],
-        [
-            [
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(9),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(0),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(10),
-                ],
-            [
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(7),
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(10),
-                pitchtools.NumberedPitchClass(9),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(5),
-                ],
-            [
-                pitchtools.NumberedPitchClass(0),
-                pitchtools.NumberedPitchClass(11),
-                ],
-            ],
-        [
-            [
-                pitchtools.NumberedPitchClass(2),
-                pitchtools.NumberedPitchClass(11),
-                ],
-            ],
-        [
-            [
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(3),
-                ],
-            ],
-        [
-            [
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(10),
-                pitchtools.NumberedPitchClass(9),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(0),
-                pitchtools.NumberedPitchClass(3),
-                pitchtools.NumberedPitchClass(2),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(7),
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(4),
-                ],
-            [
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(3),
-                pitchtools.NumberedPitchClass(2),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(8),
-                ],
-            ],
-        [
-            [
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(6),
-                ],
-            [
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(7),
-                pitchtools.NumberedPitchClass(5),
-                ],
-            [
-                pitchtools.NumberedPitchClass(0),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(10),
-                pitchtools.NumberedPitchClass(9),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(5),
-                ],
-            ],
-        [
-            [
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(7),
-                ],
-            ],
-        [
             [
                 pitchtools.NumberedPitchClass(5),
                 pitchtools.NumberedPitchClass(0),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(10),
-                pitchtools.NumberedPitchClass(9),
-                pitchtools.NumberedPitchClass(6),
-                ],
-            ],
-        [
-            [
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(3),
-                pitchtools.NumberedPitchClass(2),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(0),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(10),
-                pitchtools.NumberedPitchClass(9),
-                ],
-            [
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(3),
-                pitchtools.NumberedPitchClass(2),
-                pitchtools.NumberedPitchClass(7),
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(8),
-                ],
-            ],
-        [
-            [
-                pitchtools.NumberedPitchClass(2),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(3),
-                ],
-            [
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(7),
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(6),
-                ],
-            [
-                pitchtools.NumberedPitchClass(9),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(0),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(10),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(7),
-                ],
-            ],
-        [
-            [
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(10),
-                pitchtools.NumberedPitchClass(9),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(0),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(3),
-                pitchtools.NumberedPitchClass(2),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(4),
                 ],
             ],
         [
@@ -353,23 +152,26 @@ violet_pitch_classes = pitchtools.PitchClassTree(
                 pitchtools.NumberedPitchClass(9),
                 pitchtools.NumberedPitchClass(6),
                 ],
+            ],
+        [
             [
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(0),
                 pitchtools.NumberedPitchClass(4),
                 pitchtools.NumberedPitchClass(3),
+                pitchtools.NumberedPitchClass(2),
+                ],
+            [
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(8),
                 ],
             ],
         [
             [
-                pitchtools.NumberedPitchClass(2),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(4),
                 pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(7),
                 pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(0),
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(10),
+                pitchtools.NumberedPitchClass(9),
                 ],
             [
                 pitchtools.NumberedPitchClass(8),
@@ -388,66 +190,17 @@ violet_pitch_classes = pitchtools.PitchClassTree(
             ],
         [
             [
-                pitchtools.NumberedPitchClass(0),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(10),
-                pitchtools.NumberedPitchClass(9),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(7),
-                pitchtools.NumberedPitchClass(5),
-                ],
-            ],
-        [
-            [
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(0),
-                ],
-            ],
-        [
-            [
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(10),
-                ],
-            [
-                pitchtools.NumberedPitchClass(9),
-                pitchtools.NumberedPitchClass(6),
-                ],
-            ],
-        [
-            [
                 pitchtools.NumberedPitchClass(11),
                 pitchtools.NumberedPitchClass(8),
                 pitchtools.NumberedPitchClass(4),
                 pitchtools.NumberedPitchClass(3),
                 pitchtools.NumberedPitchClass(2),
                 ],
+            ],
+        [
             [
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(0),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(10),
-                pitchtools.NumberedPitchClass(9),
-                pitchtools.NumberedPitchClass(2),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(3),
-                pitchtools.NumberedPitchClass(8),
                 pitchtools.NumberedPitchClass(7),
                 pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(6),
-                ],
-            [
-                pitchtools.NumberedPitchClass(3),
-                pitchtools.NumberedPitchClass(2),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(8),
                 pitchtools.NumberedPitchClass(4),
                 ],
             ],
@@ -455,95 +208,14 @@ violet_pitch_classes = pitchtools.PitchClassTree(
             [
                 pitchtools.NumberedPitchClass(6),
                 pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(7),
                 ],
-            ],
-        [
             [
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(4),
                 pitchtools.NumberedPitchClass(9),
                 pitchtools.NumberedPitchClass(6),
                 pitchtools.NumberedPitchClass(5),
                 pitchtools.NumberedPitchClass(0),
                 pitchtools.NumberedPitchClass(11),
                 pitchtools.NumberedPitchClass(10),
-                ],
-            ],
-        [
-            [
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(7),
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(10),
-                pitchtools.NumberedPitchClass(9),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(5),
-                ],
-            [
-                pitchtools.NumberedPitchClass(0),
-                pitchtools.NumberedPitchClass(11),
-                ],
-            ],
-        [
-            [
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(3),
-                pitchtools.NumberedPitchClass(2),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(8),
-                ],
-            [
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(10),
-                pitchtools.NumberedPitchClass(9),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(0),
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(3),
-                pitchtools.NumberedPitchClass(2),
-                pitchtools.NumberedPitchClass(11),
-                ],
-            [
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(7),
-                ],
-            ],
-        [
-            [
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(8),
-                ],
-            ],
-        [
-            [
-                pitchtools.NumberedPitchClass(4),
-                ],
-            ],
-        [
-            [
-                pitchtools.NumberedPitchClass(3),
-                pitchtools.NumberedPitchClass(2),
-                pitchtools.NumberedPitchClass(7),
-                pitchtools.NumberedPitchClass(5),
-                ],
-            [
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(0),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(10),
-                pitchtools.NumberedPitchClass(9),
-                pitchtools.NumberedPitchClass(6),
-                pitchtools.NumberedPitchClass(5),
                 ],
             ],
         [
@@ -555,34 +227,52 @@ violet_pitch_classes = pitchtools.PitchClassTree(
                 pitchtools.NumberedPitchClass(6),
                 ],
             [
-                pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(0),
-                pitchtools.NumberedPitchClass(11),
                 pitchtools.NumberedPitchClass(10),
                 pitchtools.NumberedPitchClass(9),
-                pitchtools.NumberedPitchClass(6),
                 ],
             [
-                pitchtools.NumberedPitchClass(2),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(8),
-                pitchtools.NumberedPitchClass(4),
-                pitchtools.NumberedPitchClass(3),
                 pitchtools.NumberedPitchClass(6),
                 pitchtools.NumberedPitchClass(5),
-                pitchtools.NumberedPitchClass(0),
-                pitchtools.NumberedPitchClass(11),
-                pitchtools.NumberedPitchClass(10),
-                pitchtools.NumberedPitchClass(9),
                 ],
             ],
         [
             [
+                pitchtools.NumberedPitchClass(0),
+                pitchtools.NumberedPitchClass(11),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(2),
+                pitchtools.NumberedPitchClass(11),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(8),
+                ],
+            [
+                pitchtools.NumberedPitchClass(4),
+                pitchtools.NumberedPitchClass(3),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(10),
+                pitchtools.NumberedPitchClass(9),
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(0),
+                ],
+            [
                 pitchtools.NumberedPitchClass(3),
                 pitchtools.NumberedPitchClass(2),
                 pitchtools.NumberedPitchClass(11),
                 pitchtools.NumberedPitchClass(8),
                 pitchtools.NumberedPitchClass(4),
+                ],
+            [
                 pitchtools.NumberedPitchClass(6),
                 pitchtools.NumberedPitchClass(8),
                 pitchtools.NumberedPitchClass(7),
@@ -603,9 +293,289 @@ violet_pitch_classes = pitchtools.PitchClassTree(
             [
                 pitchtools.NumberedPitchClass(4),
                 pitchtools.NumberedPitchClass(6),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(8),
+                ],
+            [
+                pitchtools.NumberedPitchClass(7),
+                pitchtools.NumberedPitchClass(5),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(0),
+                pitchtools.NumberedPitchClass(11),
+                ],
+            [
+                pitchtools.NumberedPitchClass(10),
+                pitchtools.NumberedPitchClass(9),
+                ],
+            [
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(5),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(4),
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(7),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(0),
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(10),
+                pitchtools.NumberedPitchClass(9),
+                pitchtools.NumberedPitchClass(6),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(4),
+                pitchtools.NumberedPitchClass(3),
+                pitchtools.NumberedPitchClass(2),
+                pitchtools.NumberedPitchClass(11),
+                ],
+            [
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(0),
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(10),
+                pitchtools.NumberedPitchClass(9),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(4),
+                ],
+            [
+                pitchtools.NumberedPitchClass(3),
+                pitchtools.NumberedPitchClass(2),
+                ],
+            [
+                pitchtools.NumberedPitchClass(7),
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(4),
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(8),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(2),
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(4),
+                pitchtools.NumberedPitchClass(3),
+                ],
+            ],
+        [
+            [
                 pitchtools.NumberedPitchClass(8),
                 pitchtools.NumberedPitchClass(7),
                 pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(4),
+                pitchtools.NumberedPitchClass(6),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(9),
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(0),
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(10),
+                ],
+            [
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(7),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(4),
+                ],
+            [
+                pitchtools.NumberedPitchClass(10),
+                pitchtools.NumberedPitchClass(9),
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(0),
+                pitchtools.NumberedPitchClass(11),
+                ],
+            [
+                pitchtools.NumberedPitchClass(3),
+                pitchtools.NumberedPitchClass(2),
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(4),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(10),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(9),
+                pitchtools.NumberedPitchClass(6),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(0),
+                ],
+            [
+                pitchtools.NumberedPitchClass(4),
+                pitchtools.NumberedPitchClass(3),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(2),
+                ],
+            [
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(8),
+                ],
+            [
+                pitchtools.NumberedPitchClass(4),
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(7),
+                pitchtools.NumberedPitchClass(5),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(4),
+                pitchtools.NumberedPitchClass(3),
+                pitchtools.NumberedPitchClass(2),
+                pitchtools.NumberedPitchClass(11),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(4),
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(7),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(0),
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(10),
+                pitchtools.NumberedPitchClass(9),
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(5),
+                ],
+            [
+                pitchtools.NumberedPitchClass(7),
+                pitchtools.NumberedPitchClass(5),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(4),
+                ],
+            [
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(8),
+                ],
+            [
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(0),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(10),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(9),
+                pitchtools.NumberedPitchClass(6),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(4),
+                ],
+            [
+                pitchtools.NumberedPitchClass(3),
+                pitchtools.NumberedPitchClass(2),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(0),
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(10),
+                pitchtools.NumberedPitchClass(9),
+                ],
+            [
+                pitchtools.NumberedPitchClass(2),
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(4),
+                pitchtools.NumberedPitchClass(3),
+                ],
+            [
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(7),
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(4),
+                pitchtools.NumberedPitchClass(6),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(3),
+                pitchtools.NumberedPitchClass(2),
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(4),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(7),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(4),
                 ],
             [
                 pitchtools.NumberedPitchClass(9),
@@ -614,6 +584,190 @@ violet_pitch_classes = pitchtools.PitchClassTree(
                 pitchtools.NumberedPitchClass(0),
                 pitchtools.NumberedPitchClass(11),
                 pitchtools.NumberedPitchClass(10),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(4),
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(7),
+                pitchtools.NumberedPitchClass(5),
+                ],
+            [
+                pitchtools.NumberedPitchClass(10),
+                pitchtools.NumberedPitchClass(9),
+                ],
+            [
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(5),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(0),
+                pitchtools.NumberedPitchClass(11),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(4),
+                pitchtools.NumberedPitchClass(3),
+                pitchtools.NumberedPitchClass(2),
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(8),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(10),
+                pitchtools.NumberedPitchClass(9),
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(0),
+                ],
+            [
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(4),
+                pitchtools.NumberedPitchClass(3),
+                pitchtools.NumberedPitchClass(2),
+                pitchtools.NumberedPitchClass(11),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(4),
+                ],
+            [
+                pitchtools.NumberedPitchClass(6),
+                ],
+            [
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(7),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(8),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(4),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(3),
+                pitchtools.NumberedPitchClass(2),
+                ],
+            [
+                pitchtools.NumberedPitchClass(7),
+                pitchtools.NumberedPitchClass(5),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(4),
+                ],
+            [
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(8),
+                ],
+            [
+                pitchtools.NumberedPitchClass(0),
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(10),
+                pitchtools.NumberedPitchClass(9),
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(5),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(7),
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(4),
+                pitchtools.NumberedPitchClass(6),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(0),
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(10),
+                pitchtools.NumberedPitchClass(9),
+                pitchtools.NumberedPitchClass(6),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(2),
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(4),
+                pitchtools.NumberedPitchClass(3),
+                ],
+            [
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(0),
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(10),
+                pitchtools.NumberedPitchClass(9),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(3),
+                pitchtools.NumberedPitchClass(2),
+                pitchtools.NumberedPitchClass(11),
+                ],
+            [
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(4),
+                ],
+            [
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(7),
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(4),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(4),
+                pitchtools.NumberedPitchClass(3),
+                pitchtools.NumberedPitchClass(2),
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(8),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(4),
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(8),
+                pitchtools.NumberedPitchClass(7),
+                pitchtools.NumberedPitchClass(5),
+                ],
+            ],
+        [
+            [
+                pitchtools.NumberedPitchClass(9),
+                pitchtools.NumberedPitchClass(6),
+                pitchtools.NumberedPitchClass(5),
+                pitchtools.NumberedPitchClass(0),
+                pitchtools.NumberedPitchClass(11),
+                pitchtools.NumberedPitchClass(10),
+                ],
+            [
                 pitchtools.NumberedPitchClass(5),
                 pitchtools.NumberedPitchClass(4),
                 pitchtools.NumberedPitchClass(6),
@@ -623,18 +777,26 @@ violet_pitch_classes = pitchtools.PitchClassTree(
             [
                 pitchtools.NumberedPitchClass(8),
                 pitchtools.NumberedPitchClass(7),
+                ],
+            [
                 pitchtools.NumberedPitchClass(10),
                 pitchtools.NumberedPitchClass(9),
                 pitchtools.NumberedPitchClass(6),
                 pitchtools.NumberedPitchClass(5),
                 pitchtools.NumberedPitchClass(0),
                 pitchtools.NumberedPitchClass(11),
+                ],
+            [
                 pitchtools.NumberedPitchClass(8),
                 pitchtools.NumberedPitchClass(4),
                 ],
+            ],
+        [
             [
                 pitchtools.NumberedPitchClass(3),
                 ],
+            ],
+        [
             [
                 pitchtools.NumberedPitchClass(2),
                 pitchtools.NumberedPitchClass(11),
@@ -644,6 +806,8 @@ violet_pitch_classes = pitchtools.PitchClassTree(
             [
                 pitchtools.NumberedPitchClass(11),
                 pitchtools.NumberedPitchClass(10),
+                ],
+            [
                 pitchtools.NumberedPitchClass(9),
                 pitchtools.NumberedPitchClass(6),
                 ],
@@ -652,11 +816,15 @@ violet_pitch_classes = pitchtools.PitchClassTree(
             [
                 pitchtools.NumberedPitchClass(5),
                 pitchtools.NumberedPitchClass(0),
+                ],
+            [
                 pitchtools.NumberedPitchClass(11),
                 pitchtools.NumberedPitchClass(8),
                 pitchtools.NumberedPitchClass(4),
                 pitchtools.NumberedPitchClass(3),
                 pitchtools.NumberedPitchClass(2),
+                ],
+            [
                 pitchtools.NumberedPitchClass(7),
                 pitchtools.NumberedPitchClass(5),
                 pitchtools.NumberedPitchClass(4),
@@ -672,6 +840,8 @@ violet_pitch_classes = pitchtools.PitchClassTree(
                 pitchtools.NumberedPitchClass(4),
                 pitchtools.NumberedPitchClass(3),
                 ],
+            ],
+        [
             [
                 pitchtools.NumberedPitchClass(8),
                 pitchtools.NumberedPitchClass(7),
@@ -684,16 +854,26 @@ violet_pitch_classes = pitchtools.PitchClassTree(
             [
                 pitchtools.NumberedPitchClass(0),
                 pitchtools.NumberedPitchClass(11),
+                ],
+            [
                 pitchtools.NumberedPitchClass(10),
                 pitchtools.NumberedPitchClass(9),
                 ],
+            ],
+        [
             [
                 pitchtools.NumberedPitchClass(6),
                 pitchtools.NumberedPitchClass(5),
+                ],
+            [
                 pitchtools.NumberedPitchClass(6),
                 pitchtools.NumberedPitchClass(8),
+                ],
+            [
                 pitchtools.NumberedPitchClass(7),
                 ],
+            ],
+        [
             [
                 pitchtools.NumberedPitchClass(5),
                 pitchtools.NumberedPitchClass(4),
@@ -714,6 +894,8 @@ violet_pitch_classes = pitchtools.PitchClassTree(
                 pitchtools.NumberedPitchClass(3),
                 pitchtools.NumberedPitchClass(2),
                 pitchtools.NumberedPitchClass(11),
+                ],
+            [
                 pitchtools.NumberedPitchClass(8),
                 pitchtools.NumberedPitchClass(4),
                 ],
@@ -726,11 +908,15 @@ violet_pitch_classes = pitchtools.PitchClassTree(
                 pitchtools.NumberedPitchClass(11),
                 pitchtools.NumberedPitchClass(10),
                 pitchtools.NumberedPitchClass(9),
+                ],
+            [
                 pitchtools.NumberedPitchClass(4),
                 pitchtools.NumberedPitchClass(3),
                 pitchtools.NumberedPitchClass(2),
                 pitchtools.NumberedPitchClass(11),
                 pitchtools.NumberedPitchClass(8),
+                ],
+            [
                 pitchtools.NumberedPitchClass(4),
                 pitchtools.NumberedPitchClass(6),
                 pitchtools.NumberedPitchClass(8),

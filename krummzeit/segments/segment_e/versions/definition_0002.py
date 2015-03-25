@@ -3,7 +3,7 @@ from abjad import *
 from experimental import *
 from krummzeit import makers
 from krummzeit import materials
-from krummzeit.segments.abbreviations import *
+from krummzeit.materials.abbreviations import *
 
 
 segment_maker = makers.SegmentMaker(name='E')

@@ -531,8 +531,8 @@ tenor_piano_cluster = makers.ClusterSpecifier(
 
 ### miscellaneous ###
 
-mask_first = [rhythmmakertools.BooleanPattern(indices=[0])]
-mask_last = [rhythmmakertools.BooleanPattern(indices=[-1])]
+silence_first = [rhythmmakertools.BooleanPattern(indices=[0])]
+silence_last = [rhythmmakertools.BooleanPattern(indices=[-1])]
 
 ottava = spannertools.OctavationSpanner(start=1, stop=0)
 ottava_bassa = spannertools.OctavationSpanner(start=-1, stop=0)

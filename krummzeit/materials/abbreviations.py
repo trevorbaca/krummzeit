@@ -3,6 +3,7 @@ from abjad import *
 from krummzeit import materials
 from krummzeit import makers
 from abjad.tools import pitchtools
+import baca
 
 
 ### INSTRUMENTS ###
@@ -297,7 +298,7 @@ grid_poss_to_flaut_poss = spannertools.TextSpanner(
 indigo_pitch_classes = materials.indigo_pitch_classes.manifest_payload
 violet_pitch_classes = materials.violet_pitch_classes.manifest_payload
 
-krummzeit_displacement = makers.DisplacementSpecifier(
+krummzeit_displacement = baca.makers.DisplacementSpecifier(
     displacements=[
         0, 0, 0, 0, 0, 0, -1, 1, 1, 1, 1,
         0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 

@@ -64,11 +64,19 @@ class SegmentMaker(makertools.SegmentMaker):
 
     ### SPECIAL METHODS ###
 
-    def __call__(self):
+    def __call__(
+        self,
+        segment_metadata=None,
+        previous_segment_metadata=None,
+        ):
         r'''Calls segment-maker.
 
         Returns LilyPond file.
         '''
+        self._segment_metadata = segment_metadata or \
+            datastructuretools.TypedOrderedDict()
+        self._previous_segment_metadata = previous_segment_metadata or \
+            datastructuretools.TypedOrderedDict()
         self._make_score()
         self._make_lilypond_file()
         self._configure_lilypond_file()
@@ -91,7 +99,7 @@ class SegmentMaker(makertools.SegmentMaker):
         if not inspect_(score).is_well_formed():
             string = inspect_(score).tabulate_well_formedness_violations()
             raise Exception(string)
-        return self.lilypond_file
+        return self.lilypond_file, self._segment_metadata
 
     ### PRIVATE METHODS ###
 

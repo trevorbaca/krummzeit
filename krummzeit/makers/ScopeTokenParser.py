@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
 from abjad import *
+import baca
 
 
 class ScopeTokenParser(abctools.AbjadObject):
@@ -27,15 +28,14 @@ class ScopeTokenParser(abctools.AbjadObject):
         return False
 
     def _to_compound_scope(self, scope):
-        from krummzeit import makers
-        if isinstance(scope, makers.SimpleScope):
-            scope = makers.CompoundScope(scope)
-        elif isinstance(scope, makers.CompoundScope):
+        if isinstance(scope, baca.makers.SimpleScope):
+            scope = baca.makers.CompoundScope(scope)
+        elif isinstance(scope, baca.makers.CompoundScope):
             pass
         # single scope token
         elif isinstance(scope, tuple):
             simple_scopes = self._to_simple_scopes(scope)    
-            scope = makers.CompoundScope(*simple_scopes)
+            scope = baca.makers.CompoundScope(*simple_scopes)
         # list of scope tokens
         elif isinstance(scope, list):
             simple_scopes = []
@@ -43,19 +43,18 @@ class ScopeTokenParser(abctools.AbjadObject):
                 result = self._to_simple_scopes(scope_token)
                 simple_scopes.extend(result)
             assert all(
-                isinstance(_, makers.SimpleScope) for _ in simple_scopes)
-            scope = makers.CompoundScope(*simple_scopes)
+                isinstance(_, baca.makers.SimpleScope) for _ in simple_scopes)
+            scope = baca.makers.CompoundScope(*simple_scopes)
         else:
             message = 'must be simple scope, compound scope, scope token,'
             message + ' or list of scope tokens: {!r}.'
             message = message.format(scope)
             raise TypeError(message)
-        assert isinstance(scope, makers.CompoundScope), repr(scope)
+        assert isinstance(scope, baca.makers.CompoundScope), repr(scope)
         compound_scope = scope
         return compound_scope
 
     def _to_simple_scopes(self, scope_token):
-        from krummzeit import makers
         assert isinstance(scope_token, tuple), scope_token
         assert len(scope_token) == 2, scope_token
         context_names, stage_pairs = scope_token
@@ -86,6 +85,9 @@ class ScopeTokenParser(abctools.AbjadObject):
         simple_scopes = []
         for context_name in context_names:
             for stage_pair in stage_pairs:
-                simple_scope = makers.SimpleScope(context_name, stage_pair)
+                simple_scope = baca.makers.SimpleScope(
+                    context_name, 
+                    stage_pair,
+                    )
                 simple_scopes.append(simple_scope)
         return simple_scopes

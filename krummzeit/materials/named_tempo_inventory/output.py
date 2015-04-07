@@ -4,7 +4,6 @@ from abjad.tools import durationtools
 from abjad.tools import indicatortools
 from abjad.tools import markuptools
 from abjad.tools import schemetools
-import collections
 
 
 named_tempo_inventory = datastructuretools.TypedOrderedDict(

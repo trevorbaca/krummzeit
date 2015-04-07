@@ -66,7 +66,7 @@ class StemTremoloSpecifier(abctools.AbjadObject):
         total_logical_ties = len(logical_ties)
         for i, logical_tie in enumerate(logical_ties):
             for pattern in self.patterns:
-                if pattern._matches_index(i, total_logical_ties):
+                if pattern.matches_index(i, total_logical_ties):
                     hash_mark_count = 32
                     stem_tremolo = indicatortools.StemTremolo(hash_mark_count)
                     for leaf in logical_tie:

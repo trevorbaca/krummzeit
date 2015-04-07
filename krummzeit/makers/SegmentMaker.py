@@ -43,7 +43,7 @@ class SegmentMaker(makertools.SegmentMaker):
         transpose_score=False,
         ):
         superclass = super(SegmentMaker, self)
-        superclass.__init__(name=name)
+        superclass.__init__()
         self._initialize_music_makers(music_makers)
         self.final_barline = final_barline
         if final_markup is not None:

@@ -103,7 +103,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.stages = (3, 6)
 music_maker.context_name = pf
 music_maker.instrument = harpsichord
-music_maker.division_maker = makertools.RoundedRatioDivisionMaker(
+music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionMaker(
     ratios=[
         (1, 2),
         (2, 1),

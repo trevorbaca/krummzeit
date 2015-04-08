@@ -210,7 +210,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.stages = 11
 music_maker.context_name = pf
 music_maker.instrument = piano
-music_maker.division_maker = makertools.RoundedRatioDivisionMaker(
+music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionMaker(
     ratios=[(1, 2)],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(

@@ -41,7 +41,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.stages = (2, 4)
 music_maker.context_name = va
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    measure_counts=mathtools.Infinity,
+    counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
         durations=[(1, 4)],
         remainder=Right,
@@ -91,7 +91,7 @@ music_maker.stages = 13, 14
 music_maker.context_name = perc
 music_maker.instrument = tam_tam
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    measure_counts=mathtools.Infinity,
+    counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
         durations=[(1, 2)],
         ),
@@ -127,7 +127,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.stages = (5, 13)
 music_maker.context_name = vn
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    measure_counts=[2, 2, 2, 2, 2, 3],
+    counts=[2, 2, 2, 2, 2, 3],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     preferred_denominator=Duration(1, 4),

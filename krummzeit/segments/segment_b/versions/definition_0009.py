@@ -97,7 +97,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.context_name = pf
 music_maker.instrument = harpsichord
 music_maker.stages = 1, 4
-music_maker.division_maker = makertools.DivisionMaker(
+music_maker.division_maker = makertools.SplitDivisionMaker(
     cyclic=True,
     pattern=[Duration(4, 8), Duration(3, 8), Duration(4, 8), Duration(2, 8)],
     pattern_rotation_index=-1,
@@ -126,7 +126,7 @@ selector = selector.last()
 selector = selector.flatten()
 music_maker.rhythm_overwrites.append((
     selector,
-    makertools.DivisionMaker(
+    makertools.SplitDivisionMaker(
         cyclic=True,
         pattern=[(1, 4)],
         ),

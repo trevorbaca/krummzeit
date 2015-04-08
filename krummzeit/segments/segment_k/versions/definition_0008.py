@@ -126,7 +126,7 @@ music_maker.instrument = bass_clarinet
 music_maker.stages = 8, 9
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
-    secondary_division_maker=makertools.DivisionMaker(
+    secondary_division_maker=makertools.SplitDivisionMaker(
         pattern=[(4, 1)],
         ),
     )
@@ -167,7 +167,7 @@ music_maker.instrument = piano
 music_maker.stages = 8, 9
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
-    secondary_division_maker=makertools.DivisionMaker(
+    secondary_division_maker=makertools.SplitDivisionMaker(
         pattern=[(1, 2), (7, 2)],
         ),
     )

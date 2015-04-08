@@ -95,7 +95,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.stages = 1, 4
 music_maker.context_name = pf
 music_maker.instrument = harpsichord
-music_maker.division_maker = makertools.DivisionMaker(
+music_maker.division_maker = makertools.SplitDivisionMaker(
     pattern=[(4, 8), (3, 8), (4, 8), (2, 8)],
     pattern_rotation_index=-1,
     remainder_fuse_threshold=Duration(1, 8),
@@ -122,7 +122,7 @@ selector = selector.last()
 selector = selector.flatten()
 music_maker.rhythm_overwrites.append((
     selector,
-    makertools.DivisionMaker(
+    makertools.SplitDivisionMaker(
         pattern=[(1, 4)],
         ),
     rhythmmakertools.NoteRhythmMaker(
@@ -180,7 +180,7 @@ selector = selector.flatten()
 selector = selector.get_slice(stop=2, apply_to_each=False)
 music_maker.rhythm_overwrites.append((
     selector,
-    makertools.DivisionMaker(
+    makertools.SplitDivisionMaker(
         pattern=[(1, 4)],
         ),
     rhythmmakertools.EvenDivisionRhythmMaker(
@@ -243,7 +243,7 @@ music_maker.stages = 12, 14
 music_maker.context_name = vc
 music_maker.division_maker=makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
-    secondary_division_maker=makertools.DivisionMaker(
+    secondary_division_maker=makertools.SplitDivisionMaker(
         pattern=[(3, 8)],
         remainder=Left,
         ),
@@ -409,7 +409,7 @@ music_maker.context_name = cl
 music_maker.instrument = e_flat_clarinet
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
-    secondary_division_maker=makertools.DivisionMaker(
+    secondary_division_maker=makertools.SplitDivisionMaker(
         pattern=[(3, 8)],
         remainder=Left,
         ),

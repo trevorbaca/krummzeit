@@ -54,7 +54,7 @@ segment_maker.tempo_map = [
 music_maker = segment_maker.make_music_maker()
 music_maker.context_name = vc
 music_maker.stages = 1, 4
-music_maker.division_maker = makertools.HypermeasureDivisionMaker(
+music_maker.division_maker = makertools.FuseDivisionMaker(
     measure_counts=[2, 3, 1],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
@@ -249,7 +249,7 @@ segment_maker.copy_music_maker(
 music_maker = segment_maker.make_music_maker()
 music_maker.context_name = vc
 music_maker.stages = 12, 14
-music_maker.division_maker=makertools.HypermeasureDivisionMaker(
+music_maker.division_maker=makertools.FuseDivisionMaker(
     measure_counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
         durations=[(3, 8)],
@@ -418,7 +418,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.context_name = cl
 music_maker.instrument = e_flat_clarinet
 music_maker.stages = (22, 23)
-music_maker.division_maker = makertools.HypermeasureDivisionMaker(
+music_maker.division_maker = makertools.FuseDivisionMaker(
     measure_counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
         durations=[(3, 8)],

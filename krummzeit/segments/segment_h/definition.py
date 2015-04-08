@@ -137,7 +137,7 @@ music_maker.stages = 14, 20
 music_maker.context_name = pf
 music_maker.instrument = piano
 music_maker.clef = 'bass'
-music_maker.division_maker = makertools.RoundedRatioDivisionMaker(
+music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionMaker(
     ratios=[(2, 1), (2, 1), (1, 1, 1)],
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
@@ -180,7 +180,7 @@ segment_maker.copy_music_maker(
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = (14, 20)
 music_maker.context_name = vn
-music_maker.division_maker = makertools.RoundedRatioDivisionMaker(
+music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionMaker(
     ratios=[(1, 2), (2, 1), (1, 1, 1)],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(

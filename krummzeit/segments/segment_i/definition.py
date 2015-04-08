@@ -110,7 +110,7 @@ music_maker.context_name = pf
 music_maker.instrument = harpsichord
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
-    secondary_division_maker=makertools.SplitDivisionMaker(
+    secondary_division_maker=makertools.SplitByDurationsDivisionCallback(
         durations=[(1, 4)],
         ),
     )
@@ -126,7 +126,7 @@ music_maker.instrument = crotales
 music_maker.clef = 'percussion'
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
-    secondary_division_maker=makertools.SplitDivisionMaker(
+    secondary_division_maker=makertools.SplitByDurationsDivisionCallback(
         durations=[(1, 4)],
         remainder=Left,
         ),

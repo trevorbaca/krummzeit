@@ -102,7 +102,7 @@ music_maker.context_name = cl
 music_maker.instrument = e_flat_clarinet
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
-    secondary_division_maker=makertools.SplitDivisionMaker(
+    secondary_division_maker=makertools.SplitByDurationsDivisionCallback(
         durations=[(3, 8)],
         ),
     )
@@ -302,7 +302,7 @@ music_maker.stages = (26, 29)
 music_maker.context_name = va
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
-    secondary_division_maker=makertools.SplitDivisionMaker(
+    secondary_division_maker=makertools.SplitByDurationsDivisionCallback(
         durations=[(1, 1), (2, 1), (3, 2)],
         ),
     )

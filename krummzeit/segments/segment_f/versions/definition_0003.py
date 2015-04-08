@@ -75,7 +75,7 @@ music_maker.stages = 1, 2
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
-        pattern=[(4, 1)],
+        durations=[(4, 1)],
         ),
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()

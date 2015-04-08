@@ -92,7 +92,7 @@ music_maker.instrument = tam_tam
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
-        pattern=[(1, 2)],
+        durations=[(1, 2)],
         ),
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()

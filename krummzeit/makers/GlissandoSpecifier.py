@@ -66,8 +66,8 @@ class GlissandoSpecifier(abctools.AbjadObject):
         total_logical_ties = len(logical_ties)
         for i, logical_tie in enumerate(logical_ties):
             assert logical_tie.is_trivial, repr(logical_tie)
-            for pattern in self.patterns:
-                if pattern.matches_index(i, total_logical_ties):
+            for durations in self.patterns:
+                if durations.matches_index(i, total_logical_ties):
                     first_leaf = logical_tie.head
                     next_leaf = inspect_(first_leaf).get_leaf(1)
                     leaves = [first_leaf, next_leaf]

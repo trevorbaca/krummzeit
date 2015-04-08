@@ -54,7 +54,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.stages = 9, 12
 music_maker.context_name = ob
 music_maker.division_maker = makertools.SplitDivisionMaker(
-    pattern=[(4, 8), (3, 8), (4, 8), (2, 8)],
+    durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
     pattern_rotation_index=-1,
     remainder_fuse_threshold=Duration(1, 8),
     )
@@ -99,7 +99,7 @@ segment_maker.copy_music_maker(
     9,
     context_name=cl,
     instrument=e_flat_clarinet,
-    division_maker__pattern=[(3, 8), (4, 8), (2, 8), (4, 8)],
+    division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rhythm_maker__denominators=[4, 4, 4, 8],
     )
 
@@ -118,7 +118,7 @@ music_maker.stages = 5, 11
 music_maker.context_name = pf
 music_maker.instrument = harpsichord
 music_maker.division_maker = makertools.SplitDivisionMaker(
-    pattern=[(4, 8), (3, 8), (4, 8), (2, 8)],
+    durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
     pattern_rotation_index=-1,
     remainder_fuse_threshold=Duration(1, 8),
     )
@@ -157,7 +157,7 @@ music_maker.clef = 'percussion'
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
-        pattern=[(1, 2)],
+        durations=[(1, 2)],
         ),
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
@@ -171,7 +171,7 @@ segment_maker.copy_music_maker(
     stages=(5, 12),
     context_name=vn,
     instrument=None,
-    division_maker__pattern=[(3, 8), (4, 8), (2, 8), (4, 8)],
+    division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rhythm_maker__denominators=[8, 8, 4, 4, 8, 8],
     )
 
@@ -215,7 +215,7 @@ music_maker.context_name = va
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
-        pattern=[(7, 4), (2, 8), (3, 8), (7, 4), (7, 4), (1, 4)],
+        durations=[(7, 4), (2, 8), (3, 8), (7, 4), (7, 4), (1, 4)],
         )
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
@@ -225,7 +225,7 @@ segment_maker.copy_music_maker(
     1,
     stages=(1, 9),
     context_name=vc,
-    division_maker__secondary_division_maker__pattern=[
+    division_maker__secondary_division_maker__durations=[
         (3, 4), (4, 4), (3, 8), (2, 8), (8, 4), (7, 4), (3, 4), (3, 8), (6, 8),
         ],
     )

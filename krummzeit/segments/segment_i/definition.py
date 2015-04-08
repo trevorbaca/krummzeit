@@ -111,7 +111,7 @@ music_maker.instrument = harpsichord
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
-        pattern=[(1, 4)],
+        durations=[(1, 4)],
         ),
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
@@ -127,7 +127,7 @@ music_maker.clef = 'percussion'
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
-        pattern=[(1, 4)],
+        durations=[(1, 4)],
         remainder=Left,
         ),
     )

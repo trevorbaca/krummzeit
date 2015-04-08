@@ -100,7 +100,7 @@ music_maker.instrument = e_flat_clarinet
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
-        pattern=[(3, 8)],
+        durations=[(3, 8)],
         ),
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
@@ -306,7 +306,7 @@ music_maker.stages = (26, 29)
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
-        pattern=[(1, 1), (2, 1), (3, 2)],
+        durations=[(1, 1), (2, 1), (3, 2)],
         ),
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
@@ -315,7 +315,7 @@ segment_maker.copy_music_maker(
     va,
     26,
     context_name=vc,
-    division_maker__secondary_division_maker__pattern=[(2, 1), (3, 2), (1, 1)],
+    division_maker__secondary_division_maker__durations=[(2, 1), (3, 2), (1, 1)],
     )
 
 segment_maker.copy_music_maker(
@@ -323,7 +323,7 @@ segment_maker.copy_music_maker(
     26,
     stages=(28, 29),
     context_name=vn,
-    division_maker__secondary_division_maker__pattern=[(3, 2), (1, 1), (2, 1)],
+    division_maker__secondary_division_maker__durations=[(3, 2), (1, 1), (2, 1)],
     )
 
 

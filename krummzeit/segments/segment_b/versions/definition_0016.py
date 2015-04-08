@@ -99,7 +99,7 @@ music_maker.instrument = harpsichord
 music_maker.stages = 1, 4
 music_maker.division_maker = makertools.SplitDivisionMaker(
     cyclic=True,
-    pattern=[(4, 8), (3, 8), (4, 8), (2, 8)],
+    durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
     pattern_rotation_index=-1,
     remainder=Right,
     remainder_fuse_threshold=Duration(1, 8),
@@ -128,7 +128,7 @@ music_maker.rhythm_overwrites.append((
     selector,
     makertools.SplitDivisionMaker(
         cyclic=True,
-        pattern=[(1, 4)],
+        durations=[(1, 4)],
         ),
     rhythmmakertools.NoteRhythmMaker(
         duration_spelling_specifier=rhythmmakertools.DurationSpellingSpecifier(
@@ -177,7 +177,7 @@ music_maker = segment_maker.copy_music_maker(
     pf,
     1,
     stages=(9, 10),
-    division_maker__pattern=[(4, 16), (3, 16), (4, 16), (2, 16)],
+    division_maker__durations=[(4, 16), (3, 16), (4, 16), (2, 16)],
     rhythm_maker__denominators=[16, 16, 8, 8, 16, 16],
     )
 selector = selectortools.Selector()
@@ -189,7 +189,7 @@ music_maker.rhythm_overwrites.append((
     selector,
     makertools.SplitDivisionMaker(
         cyclic=True,
-        pattern=[(1, 4)],
+        durations=[(1, 4)],
         remainder=Right,
         ),
     rhythmmakertools.EvenDivisionRhythmMaker(
@@ -205,7 +205,7 @@ segment_maker.copy_music_maker(
     context_name=cl,
     instrument=materials.performer_inventory.get_instrument('cl. e-flat'),
     stages=(3, 4),
-    division_maker__pattern=[(3, 8), (4, 8), (2, 8), (4, 8)],
+    division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rhythm_maker__denominators=[4, 4, 4, 8],
     )
 
@@ -222,7 +222,7 @@ segment_maker.copy_music_maker(
     1,
     context_name=vn,
     instrument=materials.performer_inventory.get_instrument('vn.'),
-    division_maker__pattern=[(3, 8), (4, 8), (2, 8), (4, 8)],
+    division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rhythm_maker__denominators=[4, 4, 4, 16],
     stages=4,
     )
@@ -232,7 +232,7 @@ segment_maker.copy_music_maker(
     1,
     context_name=vn,
     instrument=materials.performer_inventory.get_instrument('vn.'),
-    division_maker__pattern=[(3, 8), (4, 8), (2, 8), (4, 8)],
+    division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rhythm_maker__denominators=[4, 4, 4, 16],
     stages=(8, 13),
     )
@@ -244,7 +244,7 @@ segment_maker.copy_music_maker(
     1,
     context_name=ob,
     instrument=materials.performer_inventory.get_instrument('ob.'),
-    division_maker__pattern=[(3, 8), (4, 8), (2, 8), (4, 8)],
+    division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rhythm_maker__denominators=[4, 4, 4, 16],
     stages=(9, 13),
     )

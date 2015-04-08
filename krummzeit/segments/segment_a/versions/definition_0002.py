@@ -44,7 +44,7 @@ music_maker.context_name = vn
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
-        pattern=[(1, 4)],
+        durations=[(1, 4)],
         remainder=Left,
         ),
     )

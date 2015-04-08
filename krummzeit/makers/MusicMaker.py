@@ -14,7 +14,7 @@ class MusicMaker(abctools.AbjadObject):
             >>> music_maker.context_name = 'Cello Music Voice'
             >>> music_maker.stages = 1, 4
             >>> music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-            ...     measure_counts=[2, 3, 1],
+            ...     counts=[2, 3, 1],
             ...     )
             >>> music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 
@@ -24,7 +24,7 @@ class MusicMaker(abctools.AbjadObject):
             krummzeit.makers.MusicMaker(
                 context_name='Cello Music Voice',
                 division_maker=makertools.FuseByCountsDivisionCallback(
-                    measure_counts=[2, 3, 1],
+                    counts=[2, 3, 1],
                     ),
                 rhythm_maker=rhythmmakertools.NoteRhythmMaker(),
                 stages=(1, 4),

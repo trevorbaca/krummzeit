@@ -71,7 +71,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.stages = 18, 21
 music_maker.context_name = ob
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    measure_counts=[2],
+    counts=[2],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     preferred_denominator=Duration(1, 4),
@@ -156,7 +156,7 @@ music_maker.instrument = tam_tam
 music_maker._hide_untuned_percussion_markup = True
 music_maker.clef = 'percussion'
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    measure_counts=mathtools.Infinity,
+    counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
         durations=[(1, 2)],
         ),
@@ -214,7 +214,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.stages = (1, 7)
 music_maker.context_name = va
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    measure_counts=mathtools.Infinity,
+    counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
         durations=[(7, 4), (2, 8), (3, 8), (7, 4), (7, 4), (1, 4)],
         )
@@ -236,7 +236,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.stages = 11, 12
 music_maker.context_name = va
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    measure_counts=[2, 3, 1],
+    counts=[2, 3, 1],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     preferred_denominator=Duration(1, 4),
@@ -259,7 +259,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.stages = 21
 music_maker.context_name = vn
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    measure_counts=[3],
+    counts=[3],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     preferred_denominator=Duration(1, 4),
@@ -275,7 +275,7 @@ segment_maker.copy_music_maker(
     21,
     stages=(20, 21),
     context_name=va,
-    division_maker__measure_counts=[2],
+    division_maker__counts=[2],
     rhythm_maker__tuplet_ratios=[(1, 4)],
     )
 

@@ -48,7 +48,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.stages = 1
 music_maker.context_name = ob
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    measure_counts=[2],
+    counts=[2],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     preferred_denominator=Duration(1, 4),
@@ -73,7 +73,7 @@ music_maker.stages = 1
 music_maker.context_name = pf
 music_maker.instrument = piano
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    measure_counts=[2],
+    counts=[2],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     preferred_denominator=Duration(1, 4),
@@ -97,7 +97,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.stages = 1, 3
 music_maker.context_name = vn
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    measure_counts=mathtools.Infinity,
+    counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
         durations=[(1, 4)],
         ),
@@ -125,7 +125,7 @@ music_maker.stages = 3, 4
 music_maker.context_name = pf
 music_maker.instrument = harpsichord
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    measure_counts=mathtools.Infinity,
+    counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
         durations=[(1, 4)],
         remainder=Left,

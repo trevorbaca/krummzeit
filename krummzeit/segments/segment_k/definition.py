@@ -46,7 +46,7 @@ music_maker.stages = (1, 6)
 music_maker.context_name = pf
 music_maker.instrument = harpsichord
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    measure_counts=mathtools.Infinity,
+    counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
         durations=[
             (16, 4), (16, 4), (16, 4), (16, 4), (16, 4), (14, 4), (2, 4),
@@ -62,10 +62,10 @@ music_maker.stages = (7, 12)
 music_maker.context_name = pf
 music_maker.instrument = piano
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    measure_counts=mathtools.Infinity,
+    counts=mathtools.Infinity,
     )
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    measure_counts=mathtools.Infinity,
+    counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
         durations=[
             (16, 4),
@@ -80,10 +80,10 @@ music_maker.stages = (1, 12)
 music_maker.context_name = perc
 music_maker.instrument = xylophone
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    measure_counts=mathtools.Infinity,
+    counts=mathtools.Infinity,
     )
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    measure_counts=mathtools.Infinity,
+    counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
         durations=[
             (16, 4),
@@ -138,7 +138,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.stages = (1, 10)
 music_maker.context_name = ob
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    measure_counts=mathtools.Infinity,
+    counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
         durations=[(14, 4), (2, 4)],
         ),
@@ -154,7 +154,7 @@ music_maker.stages = (1, 10)
 music_maker.context_name = cl
 music_maker.instrument = bass_clarinet
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    measure_counts=[4],
+    counts=[4],
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 

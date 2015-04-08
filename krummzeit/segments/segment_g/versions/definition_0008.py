@@ -40,7 +40,7 @@ music_maker.stages = (2, 4)
 music_maker.context_name = va
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
-    secondary_division_maker=makertools.DivisionMaker(
+    secondary_division_maker=makertools.SplitDivisionMaker(
         pattern=[(1, 4)],
         remainder=Right,
         ),
@@ -91,7 +91,7 @@ music_maker.context_name = perc
 music_maker.instrument = tam_tam
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
-    secondary_division_maker=makertools.DivisionMaker(
+    secondary_division_maker=makertools.SplitDivisionMaker(
         pattern=[(1, 2)],
         ),
     )
@@ -160,7 +160,7 @@ segment_maker.copy_music_maker(
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 3, 7
 music_maker.context_name = ob
-music_maker.division_maker = makertools.DivisionMaker(
+music_maker.division_maker = makertools.SplitDivisionMaker(
     pattern=[(3, 8), (4, 8), (2, 8), (4, 8)],
     pattern_rotation_index=-1,
     remainder_fuse_threshold=Duration(1, 8),

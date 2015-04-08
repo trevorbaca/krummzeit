@@ -53,7 +53,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 9, 12
 music_maker.context_name = ob
-music_maker.division_maker = makertools.DivisionMaker(
+music_maker.division_maker = makertools.SplitDivisionMaker(
     pattern=[(4, 8), (3, 8), (4, 8), (2, 8)],
     pattern_rotation_index=-1,
     remainder_fuse_threshold=Duration(1, 8),
@@ -117,7 +117,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.stages = 5, 11
 music_maker.context_name = pf
 music_maker.instrument = harpsichord
-music_maker.division_maker = makertools.DivisionMaker(
+music_maker.division_maker = makertools.SplitDivisionMaker(
     pattern=[(4, 8), (3, 8), (4, 8), (2, 8)],
     pattern_rotation_index=-1,
     remainder_fuse_threshold=Duration(1, 8),
@@ -156,7 +156,7 @@ music_maker._hide_untuned_percussion_markup = True
 music_maker.clef = 'percussion'
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
-    secondary_division_maker=makertools.DivisionMaker(
+    secondary_division_maker=makertools.SplitDivisionMaker(
         pattern=[(1, 2)],
         ),
     )
@@ -214,7 +214,7 @@ music_maker.stages = (1, 7)
 music_maker.context_name = va
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
-    secondary_division_maker=makertools.DivisionMaker(
+    secondary_division_maker=makertools.SplitDivisionMaker(
         pattern=[(7, 4), (2, 8), (3, 8), (7, 4), (7, 4), (1, 4)],
         )
     )

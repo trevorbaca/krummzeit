@@ -61,7 +61,7 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
 music_maker = segment_maker.make_music_maker()
 music_maker.context_name = vn
 music_maker.stages = 1, 5
-music_maker.division_maker = makertools.DivisionMaker(
+music_maker.division_maker = makertools.SplitDivisionMaker(
     pattern=[(1, 4)],
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker() 

@@ -74,7 +74,7 @@ music_maker.instrument = e_flat_clarinet
 music_maker.stages = 1, 2
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
-    secondary_division_maker=makertools.DivisionMaker(
+    secondary_division_maker=makertools.SplitDivisionMaker(
         pattern=[(4, 1)],
         ),
     )

@@ -202,7 +202,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.stages = (14, 17)
 music_maker.context_name = perc
 music_maker.instrument = tam_tam
-music_maker.division_maker = makertools.DivisionMaker(
+music_maker.division_maker = makertools.SplitDivisionMaker(
     pattern=[(1, 4)],
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()

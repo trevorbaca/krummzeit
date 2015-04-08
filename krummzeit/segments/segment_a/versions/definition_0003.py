@@ -43,7 +43,7 @@ music_maker.stages = 1
 music_maker.context_name = vn
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
-    secondary_division_maker=makertools.DivisionMaker(
+    secondary_division_maker=makertools.SplitDivisionMaker(
         pattern=[(1, 4)],
         remainder=Left,
         ),
@@ -195,7 +195,7 @@ music_maker.context_name = cl
 music_maker.instrument = e_flat_clarinet
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
-    secondary_division_maker=makertools.DivisionMaker(
+    secondary_division_maker=makertools.SplitDivisionMaker(
         pattern=[(3, 8)],
         ),
     )

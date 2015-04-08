@@ -47,7 +47,7 @@ music_maker.context_name = pf
 music_maker.instrument = harpsichord
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
-    secondary_division_maker=makertools.DivisionMaker(
+    secondary_division_maker=makertools.SplitDivisionMaker(
         pattern=[
             (16, 4), (16, 4), (16, 4), (16, 4), (16, 4), (14, 4), (2, 4),
             ],
@@ -66,7 +66,7 @@ music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     )
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
-    secondary_division_maker=makertools.DivisionMaker(
+    secondary_division_maker=makertools.SplitDivisionMaker(
         pattern=[
             (16, 4),
             ],
@@ -84,7 +84,7 @@ music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     )
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
-    secondary_division_maker=makertools.DivisionMaker(
+    secondary_division_maker=makertools.SplitDivisionMaker(
         pattern=[
             (16, 4),
             ],
@@ -139,7 +139,7 @@ music_maker.stages = (1, 10)
 music_maker.context_name = ob
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
-    secondary_division_maker=makertools.DivisionMaker(
+    secondary_division_maker=makertools.SplitDivisionMaker(
         pattern=[(14, 4), (2, 4)],
         ),
     )

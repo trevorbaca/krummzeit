@@ -52,7 +52,7 @@ segment_maker.tempo_map = [
 music_maker = segment_maker.make_music_maker()
 music_maker.context_name = ob
 music_maker.stages = 1
-music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionMaker(
+music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
     ratios=[(2, 1), (2, 1), (1, 1, 1)],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
@@ -132,7 +132,7 @@ segment_maker.copy_music_maker(perc, 2, stages=(17, 22))
 music_maker = segment_maker.make_music_maker()
 music_maker.context_name = vn
 music_maker.stages = 4, 10
-music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionMaker(
+music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
     ratios=[(2, 1), (2, 1), (1, 1, 1)],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
@@ -207,7 +207,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.context_name = pf
 music_maker.stages = 8
 music_maker.clef = 'treble'
-music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionMaker(
+music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
     ratios=[(1, 2), (2, 1)],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(

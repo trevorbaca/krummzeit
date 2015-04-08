@@ -42,7 +42,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.context_name = pf
 music_maker.instrument = harpsichord
 music_maker.stages = 1
-music_maker.division_maker = makertools.HypermeasureDivisionMaker(
+music_maker.division_maker = makertools.FuseDivisionMaker(
     measure_counts=[2, 3, 1],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
@@ -78,7 +78,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.context_name = pf
 music_maker.instrument = piano
 music_maker.stages = 4
-music_maker.division_maker = makertools.HypermeasureDivisionMaker(
+music_maker.division_maker = makertools.FuseDivisionMaker(
     measure_counts=[2, 2, 1],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(

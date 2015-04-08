@@ -67,7 +67,7 @@ music_maker.rhythm_maker = rhythmmakertools.EvenDivisionRhythmMaker(
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 18, 21
 music_maker.context_name = ob
-music_maker.division_maker = makertools.HypermeasureDivisionMaker(
+music_maker.division_maker = makertools.FuseDivisionMaker(
     measure_counts=[2],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
@@ -150,7 +150,7 @@ music_maker.stages = 1, 7
 music_maker.context_name = perc
 music_maker.instrument = tam_tam
 music_maker.clef = 'percussion'
-music_maker.division_maker = makertools.HypermeasureDivisionMaker(
+music_maker.division_maker = makertools.FuseDivisionMaker(
     measure_counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
         durations=[(1, 2)],
@@ -217,7 +217,7 @@ segment_maker.copy_music_maker(
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = (1, 7)
 music_maker.context_name = va
-music_maker.division_maker = makertools.HypermeasureDivisionMaker(
+music_maker.division_maker = makertools.FuseDivisionMaker(
     measure_counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
         durations=[(7, 4), (2, 8), (3, 8), (7, 4), (7, 4), (1, 4)],
@@ -239,7 +239,7 @@ segment_maker.copy_music_maker(
 music_maker = segment_maker.make_music_maker()
 music_maker.context_name = va
 music_maker.stages = 11, 12
-music_maker.division_maker = makertools.HypermeasureDivisionMaker(
+music_maker.division_maker = makertools.FuseDivisionMaker(
     measure_counts=[2, 3, 1],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
@@ -262,7 +262,7 @@ segment_maker.copy_music_maker(
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 21
 music_maker.context_name = vn
-music_maker.division_maker = makertools.HypermeasureDivisionMaker(
+music_maker.division_maker = makertools.FuseDivisionMaker(
     measure_counts=[3],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(

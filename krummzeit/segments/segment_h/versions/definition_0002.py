@@ -73,7 +73,7 @@ segment_maker.copy_music_maker(
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 18, 21
 music_maker.context_name = ob
-music_maker.division_maker = makertools.HypermeasureDivisionMaker(
+music_maker.division_maker = makertools.FuseDivisionMaker(
     measure_counts=[2],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(

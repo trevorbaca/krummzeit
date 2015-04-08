@@ -74,7 +74,7 @@ segment_maker.copy_music_maker(
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 3, 7
 music_maker.context_name = vn
-music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionMaker(
+music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
     ratios=[(2, 1), (2, 1), (1, 1, 1)],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(

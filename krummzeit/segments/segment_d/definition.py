@@ -74,7 +74,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.stages = 1
 music_maker.context_name = pf
 music_maker.instrument = piano
-music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionMaker(
+music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
     ratios=[(2, 3)],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
@@ -94,7 +94,7 @@ segment_maker.copy_music_maker(pf, 1, stages=5)
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 5
 music_maker.context_name = vn
-music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionMaker(
+music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
     ratios=[(5, 4)],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
@@ -113,7 +113,7 @@ segment_maker.copy_music_maker(vn, 5, stages=9)
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 5
 music_maker.context_name = va
-music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionMaker(
+music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
     ratios=[(2, 7)],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
@@ -132,7 +132,7 @@ segment_maker.copy_music_maker(va, 5, stages=9)
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 5
 music_maker.context_name = vc
-music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionMaker(
+music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
     ratios=[(7, 2)],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(

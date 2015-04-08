@@ -97,7 +97,7 @@ music_maker.context_name = vn
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
-        pattern=[(1, 4)],
+        durations=[(1, 4)],
         ),
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
@@ -125,7 +125,7 @@ music_maker.instrument = harpsichord
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
-        pattern=[(1, 4)],
+        durations=[(1, 4)],
         remainder=Left,
         ),
     )
@@ -139,7 +139,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.stages = 5, 9
 music_maker.context_name = vn
 music_maker.division_maker = makertools.SplitDivisionMaker(
-    pattern=[(1, 4)],
+    durations=[(1, 4)],
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 

@@ -77,7 +77,7 @@ music_maker.stages = 1, 2
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
-        pattern=[(4, 1)],
+        durations=[(4, 1)],
         ),
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
@@ -243,7 +243,7 @@ music_maker.stages = 13
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
-        pattern=[(1, 2)],
+        durations=[(1, 2)],
         remainder=Left,
         ),
     )
@@ -277,7 +277,7 @@ music_maker.stages = 16, 19
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
-        pattern=[(1, 4)],
+        durations=[(1, 4)],
         remainder=Right,
         ),
     )
@@ -322,7 +322,7 @@ music_maker.stages = 18, 22
 music_maker.division_maker = makertools.HypermeasureDivisionMaker(
     measure_counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
-        pattern=[(1, 4)],
+        durations=[(1, 4)],
         remainder=Right,
         ),
     )

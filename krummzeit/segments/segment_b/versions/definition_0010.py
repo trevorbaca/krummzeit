@@ -99,7 +99,7 @@ music_maker.instrument = harpsichord
 music_maker.stages = 1, 4
 music_maker.division_maker = makertools.SplitDivisionMaker(
     cyclic=True,
-    pattern=[Duration(4, 8), Duration(3, 8), Duration(4, 8), Duration(2, 8)],
+    durations=[Duration(4, 8), Duration(3, 8), Duration(4, 8), Duration(2, 8)],
     pattern_rotation_index=-1,
     remainder=Right,
     remainder_fuse_threshold=Duration(1, 8),
@@ -128,7 +128,7 @@ music_maker.rhythm_overwrites.append((
     selector,
     makertools.SplitDivisionMaker(
         cyclic=True,
-        pattern=[(1, 4)],
+        durations=[(1, 4)],
         ),
     rhythmmakertools.NoteRhythmMaker(
         duration_spelling_specifier=rhythmmakertools.DurationSpellingSpecifier(
@@ -171,7 +171,7 @@ music_maker = segment_maker.copy_music_maker(
     pf,
     1,
     stages=9,
-    division_maker__pattern=[(4, 16), (3, 16), (4, 16), (2, 16)],
+    division_maker__durations=[(4, 16), (3, 16), (4, 16), (2, 16)],
     rhythm_maker__denominators=[16, 16, 8, 8, 16, 16],
     )
 selector = selectortools.Selector()
@@ -183,7 +183,7 @@ music_maker.rhythm_overwrites.append((
     selector,
     makertools.SplitDivisionMaker(
         cyclic=True,
-        pattern=[(1, 4)],
+        durations=[(1, 4)],
         ),
     rhythmmakertools.EvenRunRhythmMaker(
         exponent=1,

@@ -50,7 +50,7 @@ music_maker = segment_maker.make_music_maker()
 music_maker.stages = 9, 12
 music_maker.context_name = ob
 music_maker.division_maker = makertools.SplitDivisionMaker(
-    pattern=[(4, 8), (3, 8), (4, 8), (2, 8)],
+    durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
     pattern_rotation_index=-1,
     remainder_fuse_threshold=Duration(1, 8),
     )
@@ -102,7 +102,7 @@ segment_maker.copy_music_maker(
     9,
     context_name=cl,
     instrument=e_flat_clarinet,
-    division_maker__pattern=[(3, 8), (4, 8), (2, 8), (4, 8)],
+    division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rhythm_maker__denominators=[4, 4, 4, 8],
     )
 

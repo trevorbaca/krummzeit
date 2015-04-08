@@ -46,7 +46,7 @@ segment_maker.tempo_map = [
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 1
 music_maker.context_name = vn
-music_maker.division_maker = makertools.FuseDivisionMaker(
+music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     measure_counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitDivisionMaker(
         durations=[(1, 4)],
@@ -142,7 +142,7 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 6
 music_maker.context_name = pf
-music_maker.division_maker = makertools.FuseDivisionMaker(
+music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     measure_counts=[2, 3, 1],
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(

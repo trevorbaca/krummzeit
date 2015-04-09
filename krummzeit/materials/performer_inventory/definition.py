@@ -368,7 +368,7 @@ performer_inventory = instrumenttools.PerformerInventory(
             name='percussionist',
             instruments=instrumenttools.InstrumentInventory(
                 [
-                    instrumenttools.UntunedPercussion(
+                    instrumenttools.Percussion(
                         instrument_name='bass drum',
                         short_instrument_name='bass drum',
                         instrument_name_markup=markuptools.Markup(
@@ -401,7 +401,7 @@ performer_inventory = instrumenttools.PerformerInventory(
                             ),
                         sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
                         ),
-                    instrumenttools.UntunedPercussion(
+                    instrumenttools.Percussion(
                         instrument_name='crotales',
                         short_instrument_name='crotales',
                         instrument_name_markup=markuptools.Markup(
@@ -422,7 +422,7 @@ performer_inventory = instrumenttools.PerformerInventory(
                             ),
                         sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
                         ),
-                    instrumenttools.UntunedPercussion(
+                    instrumenttools.Percussion(
                         instrument_name='scraped slate',
                         short_instrument_name='scraped slate',
                         instrument_name_markup=markuptools.Markup(
@@ -443,7 +443,7 @@ performer_inventory = instrumenttools.PerformerInventory(
                             ),
                         sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
                         ),
-                    instrumenttools.UntunedPercussion(
+                    instrumenttools.Percussion(
                         instrument_name='snare drum',
                         short_instrument_name='snare drum',
                         instrument_name_markup=markuptools.Markup(
@@ -464,7 +464,7 @@ performer_inventory = instrumenttools.PerformerInventory(
                             ),
                         sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
                         ),
-                    instrumenttools.UntunedPercussion(
+                    instrumenttools.Percussion(
                         instrument_name='sponges',
                         short_instrument_name='sponges',
                         instrument_name_markup=markuptools.Markup(
@@ -485,7 +485,7 @@ performer_inventory = instrumenttools.PerformerInventory(
                             ),
                         sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
                         ),
-                    instrumenttools.UntunedPercussion(
+                    instrumenttools.Percussion(
                         instrument_name='suspended cymbal',
                         short_instrument_name='suspended cymbal',
                         instrument_name_markup=markuptools.Markup(
@@ -506,7 +506,7 @@ performer_inventory = instrumenttools.PerformerInventory(
                             ),
                         sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
                         ),
-                    instrumenttools.UntunedPercussion(
+                    instrumenttools.Percussion(
                         instrument_name='tam-tam',
                         short_instrument_name='tam-tam',
                         instrument_name_markup=markuptools.Markup(
@@ -611,7 +611,7 @@ performer_inventory = instrumenttools.PerformerInventory(
                             ),
                         sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
                         ),
-                    instrumenttools.UntunedPercussion(
+                    instrumenttools.Percussion(
                         instrument_name='scraped slate',
                         short_instrument_name='scraped slate',
                         instrument_name_markup=markuptools.Markup(

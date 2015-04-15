@@ -296,6 +296,21 @@ grid_poss_to_flaut_poss = spannertools.TextSpanner(
 
 ### PITCH ###
 
+def pitch_specifier(
+    counts=None,
+    operators=None,
+    reverse=False,
+    source=None,
+    start_index=0,
+    ):
+    return baca.makers.PitchSpecifier(
+        counts=counts,
+        operators=operators,
+        reverse=reverse,
+        source=source,
+        start_index=start_index,
+        )
+
 indigo_pitch_classes = materials.indigo_pitch_classes.manifest_payload
 violet_pitch_classes = materials.violet_pitch_classes.manifest_payload
 

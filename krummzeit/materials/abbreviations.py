@@ -307,14 +307,14 @@ krummzeit_displacement = baca.makers.DisplacementSpecifier(
         ],
     )
 
-color_fingerings = makers.ColorFingeringSpecifier(
+color_fingerings = baca.makers.ColorFingeringSpecifier(
     deposit_annotations=['color fingering'],
     number_lists=(
         [0, 1, 2, 1],
         ),
     )
 
-color_microtones = makers.MicrotonalDeviationSpecifier(
+color_microtones = baca.makers.MicrotonalDeviationSpecifier(
     deposit_annotations=['color microtone'],
     number_lists=(
         [0, -0.5, 0, 0.5],
@@ -322,16 +322,16 @@ color_microtones = makers.MicrotonalDeviationSpecifier(
         ),
     )
 
-trill_quarter_notes = makers.TrillSpecifier(
+trill_quarter_notes = baca.makers.TrillSpecifier(
     forbidden_annotations=['color fingering', 'color microtone'],
     minimum_written_duration=Duration(1, 4),
     )
 
-pervasive_trills = makers.TrillSpecifier(
+pervasive_trills = baca.makers.TrillSpecifier(
     minimum_written_duration=None,
     )
 
-pervasive_A5_trills = makers.TrillSpecifier(
+pervasive_A5_trills = baca.makers.TrillSpecifier(
     minimum_written_duration=None,
     pitch=NamedPitch('A5'),
     )
@@ -339,103 +339,103 @@ pervasive_A5_trills = makers.TrillSpecifier(
 ### narrow registrations ###
 
 # +3
-narrow_second_octave = makers.RegistrationSpecifier(
+narrow_second_octave = baca.makers.RegistrationSpecifier(
     registration=pitchtools.Registration(
         [('[A0, F#4)', -26), ('[F#4, C8]', -23)],
         ),
     )
 
 # +3
-narrow_third_octave = makers.RegistrationSpecifier(
+narrow_third_octave = baca.makers.RegistrationSpecifier(
     registration=pitchtools.Registration(
         [('[A0, F#4)', -14), ('[F#4, C8]', -11)],
         ),
     )
 
 # +3
-narrow_fourth_octave = makers.RegistrationSpecifier(
+narrow_fourth_octave = baca.makers.RegistrationSpecifier(
     registration=pitchtools.Registration(
         [('[A0, F#4)', -2), ('[F#4, C8]', 1)],
         ),
     )
 
 # +3
-narrow_fifth_octave = makers.RegistrationSpecifier(
+narrow_fifth_octave = baca.makers.RegistrationSpecifier(
     registration=pitchtools.Registration(
         [('[A0, F#4)', 10), ('[F#4, C8]', 13)],
         ),
     )
 
 # +3
-narrow_sixth_octave = makers.RegistrationSpecifier(
+narrow_sixth_octave = baca.makers.RegistrationSpecifier(
     registration=pitchtools.Registration(
         [('[A0, F#4)', 22), ('[F#4, C8]', 25)],
         ),
     )
 
 # +3
-narrow_seventh_octave = makers.RegistrationSpecifier(
+narrow_seventh_octave = baca.makers.RegistrationSpecifier(
     registration=pitchtools.Registration(
         [('[A0, F#4)', 34), ('[F#4, C8]', 37)],
         ),
     )
 
 # ascending
-narrow_second_to_fifth_octave = makers.RegistrationTransitionSpecifier(
+narrow_second_to_fifth_octave = baca.makers.RegistrationTransitionSpecifier(
     start_registration=narrow_second_octave.registration,
     stop_registration=narrow_fifth_octave.registration,
     )
-narrow_third_to_fifth_octave = makers.RegistrationTransitionSpecifier(
+narrow_third_to_fifth_octave = baca.makers.RegistrationTransitionSpecifier(
     start_registration=narrow_third_octave.registration,
     stop_registration=narrow_fifth_octave.registration,
     )
-narrow_fourth_to_fifth_octave = makers.RegistrationTransitionSpecifier(
+narrow_fourth_to_fifth_octave = baca.makers.RegistrationTransitionSpecifier(
     start_registration=narrow_fourth_octave.registration,
     stop_registration=narrow_fifth_octave.registration,
     )
-narrow_fourth_to_sixth_octave = makers.RegistrationTransitionSpecifier(
+narrow_fourth_to_sixth_octave = baca.makers.RegistrationTransitionSpecifier(
     start_registration=narrow_fourth_octave.registration,
     stop_registration=narrow_sixth_octave.registration,
     )
-narrow_fifth_to_sixth_octave = makers.RegistrationTransitionSpecifier(
+narrow_fifth_to_sixth_octave = baca.makers.RegistrationTransitionSpecifier(
     start_registration=narrow_fifth_octave.registration,
     stop_registration=narrow_sixth_octave.registration,
     )
 
 # descending
-narrow_seventh_to_fifth_octave = makers.RegistrationTransitionSpecifier(
+narrow_seventh_to_fifth_octave = baca.makers.RegistrationTransitionSpecifier(
     start_registration=narrow_seventh_octave.registration,
     stop_registration=narrow_fifth_octave.registration,
     )
-narrow_sixth_to_fifth_octave = makers.RegistrationTransitionSpecifier(
+narrow_sixth_to_fifth_octave = baca.makers.RegistrationTransitionSpecifier(
     start_registration=narrow_sixth_octave.registration,
     stop_registration=narrow_fifth_octave.registration,
     )
-narrow_sixth_to_fourth_octave = makers.RegistrationTransitionSpecifier(
+narrow_sixth_to_fourth_octave = baca.makers.RegistrationTransitionSpecifier(
     start_registration=narrow_sixth_octave.registration,
     stop_registration=narrow_fourth_octave.registration,
     )
-narrow_fifth_to_fourth_octave = makers.RegistrationTransitionSpecifier(
+narrow_fifth_to_fourth_octave = baca.makers.RegistrationTransitionSpecifier(
     start_registration=narrow_fifth_octave.registration,
     stop_registration=narrow_fourth_octave.registration,
     )
-narrow_fifth_to_third_octave = makers.RegistrationTransitionSpecifier(
+narrow_fifth_to_third_octave = baca.makers.RegistrationTransitionSpecifier(
     start_registration=narrow_fifth_octave.registration,
     stop_registration=narrow_third_octave.registration,
     )
-narrow_fifth_to_second_octave = makers.RegistrationTransitionSpecifier(
+narrow_fifth_to_second_octave = baca.makers.RegistrationTransitionSpecifier(
     start_registration=narrow_fifth_octave.registration,
     stop_registration=narrow_second_octave.registration,
     )
-narrow_fourth_to_third_octave = makers.RegistrationTransitionSpecifier(
+narrow_fourth_to_third_octave = baca.makers.RegistrationTransitionSpecifier(
     start_registration=narrow_fourth_octave.registration,
     stop_registration=narrow_third_octave.registration,
     )
-narrow_fourth_to_second_octave = makers.RegistrationTransitionSpecifier(
+narrow_fourth_to_second_octave = baca.makers.RegistrationTransitionSpecifier(
     start_registration=narrow_fourth_octave.registration,
     stop_registration=narrow_second_octave.registration,
     )
-narrow_third_to_second_octave = makers.RegistrationTransitionSpecifier(
+narrow_third_to_second_octave = baca.makers.RegistrationTransitionSpecifier(
     start_registration=narrow_third_octave.registration,
     stop_registration=narrow_second_octave.registration,
     )
@@ -464,35 +464,35 @@ tenuti = handlertools.ReiteratedArticulationHandler(
 ### wide registrations ###
 
 # +14
-wide_third_octave = makers.RegistrationSpecifier(
+wide_third_octave = baca.makers.RegistrationSpecifier(
     registration=pitchtools.Registration(
         [('[A0, F#4)', -20), ('[F#4, C8]', -6)]
         ),
     )
 
 # +14
-wide_fourth_octave = makers.RegistrationSpecifier(
+wide_fourth_octave = baca.makers.RegistrationSpecifier(
     registration=pitchtools.Registration(
         [('[A0, F#4)', -8), ('[F#4, C8]', 6)]
         ),
     )
 
 # +14
-wide_fifth_octave = makers.RegistrationSpecifier(
+wide_fifth_octave = baca.makers.RegistrationSpecifier(
     registration=pitchtools.Registration(
         [('[A0, F#4)', 4), ('[F#4, C8]', 18)]
         ),
     )
 
 # +14
-wide_sixth_octave = makers.RegistrationSpecifier(
+wide_sixth_octave = baca.makers.RegistrationSpecifier(
     registration=pitchtools.Registration(
         [('[A0, F#4)', 16), ('[F#4, C8]', 30)]
         ),
     )
 
 # +14
-wide_seventh_octave = makers.RegistrationSpecifier(
+wide_seventh_octave = baca.makers.RegistrationSpecifier(
     registration=pitchtools.Registration(
         [('[A0, F#4)', 28), ('[F#4, C8]', 42)]
         ),

@@ -181,7 +181,7 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
 segment_maker.make_pitch_handler(
     scope=(vn, 1),
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             source='Eb5',
             ),
         ],
@@ -189,7 +189,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(va, 1),
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             source='A3',
             ),
         ],
@@ -197,7 +197,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(vc, 1),
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             source='E~2',
             ),
         ],
@@ -224,7 +224,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=(cl, (3, 4)),
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             source='B1',
             ),
         ],
@@ -241,7 +241,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=([vn, va, vc], (3, 7)),
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             operators=[pitchtools.Transposition(10)],
             reverse=True,
             source=violet_pitch_classes,    
@@ -282,7 +282,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=([pf, perc], 6),
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             source='C#5',
             ),
         ],

@@ -8,23 +8,23 @@ from abjad.tools import schemetools
 tempo_inventory = indicatortools.TempoInventory(
     [
         indicatortools.Tempo(
-            duration=durationtools.Duration(1, 4),
+            reference_duration=durationtools.Duration(1, 4),
             units_per_minute=72,
             ),
         indicatortools.Tempo(
-            duration=durationtools.Duration(1, 4),
+            reference_duration=durationtools.Duration(1, 4),
             units_per_minute=108,
             ),
         indicatortools.Tempo(
-            duration=durationtools.Duration(1, 4),
+            reference_duration=durationtools.Duration(1, 4),
             units_per_minute=90,
             ),
         indicatortools.Tempo(
-            duration=durationtools.Duration(1, 4),
+            reference_duration=durationtools.Duration(1, 4),
             units_per_minute=135,
             ),
         indicatortools.Tempo(
-            duration=durationtools.Duration(1, 4),
+            reference_duration=durationtools.Duration(1, 4),
             units_per_minute=67.5,
             markup=markuptools.Markup(
                 contents=(
@@ -54,11 +54,11 @@ tempo_inventory = indicatortools.TempoInventory(
                 ),
             ),
         indicatortools.Tempo(
-            duration=durationtools.Duration(1, 4),
+            reference_duration=durationtools.Duration(1, 4),
             units_per_minute=36,
             ),
         indicatortools.Tempo(
-            duration=durationtools.Duration(1, 4),
+            reference_duration=durationtools.Duration(1, 4),
             units_per_minute=73,
             markup=markuptools.Markup(
                 contents=(
@@ -126,11 +126,11 @@ tempo_inventory = indicatortools.TempoInventory(
                 ),
             ),
         indicatortools.Tempo(
-            duration=durationtools.Duration(1, 4),
+            reference_duration=durationtools.Duration(1, 4),
             units_per_minute=144,
             ),
         indicatortools.Tempo(
-            duration=durationtools.Duration(1, 4),
+            reference_duration=durationtools.Duration(1, 4),
             units_per_minute=45,
             ),
         ]

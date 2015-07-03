@@ -23,7 +23,7 @@ tempo_inventory = indicatortools.TempoInventory(
         indicatortools.Tempo(
             reference_duration=durationtools.Duration(1, 4),
             units_per_minute=67.5,
-            markup=markuptools.Markup(
+            custom_markup=markuptools.Markup(
                 contents=(
                     markuptools.MarkupCommand(
                         'smaller',
@@ -54,7 +54,7 @@ tempo_inventory = indicatortools.TempoInventory(
         indicatortools.Tempo(
             reference_duration=durationtools.Duration(1, 4),
             units_per_minute=73,
-            markup=markuptools.Markup(
+            custom_markup=markuptools.Markup(
                 contents=(
                     markuptools.MarkupCommand(
                         'override',

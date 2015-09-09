@@ -7,7 +7,7 @@ import krummzeit
 from abjad.tools import systemtools
 
 
-boilerplate_path = ide.idetools.Configuration().boilerplate_directory
+boilerplate_path = ide.tools.idetools.Configuration().boilerplate_directory
 boilerplate_path = os.path.join(boilerplate_path, '__illustrate_segment__.py')
 
 segments_path = os.path.join(krummzeit.__path__[0], 'segments')
@@ -48,7 +48,7 @@ def test_krummzeit_segments_01(segment_path):
         remove=[local_boilerplate_path],
         ):
         shutil.copyfile(boilerplate_path, local_boilerplate_path)
-        ide.idetools.AbjadIDE._replace_in_file(
+        ide.tools.idetools.AbjadIDE._replace_in_file(
             local_boilerplate_path,
             'PREVIOUS_SEGMENT_METADATA_IMPORT_STATEMENT',
             'previous_segment_metadata = None',

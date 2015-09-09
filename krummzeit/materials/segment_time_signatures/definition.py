@@ -1,4 +1,4 @@
-# -*- encoding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from abjad import *
 from krummzeit.materials.time_signature_inventory.output import \
     time_signature_inventory

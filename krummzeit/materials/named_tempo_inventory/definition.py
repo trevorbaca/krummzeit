@@ -1,4 +1,4 @@
-# -*- encoding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from abjad import *
 from krummzeit.materials.tempo_inventory.output import tempo_inventory
 

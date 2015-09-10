@@ -1,4 +1,4 @@
 # -*- coding: utf-8 -*-
-import makers
-import materials
-import segments
+from krummzeit import makers
+from krummzeit import materials
+from krummzeit import segments

@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 import copy
 import os
 from abjad import *
@@ -84,7 +85,15 @@ class SegmentMaker(makertools.SegmentMaker):
         self._populate_time_signature_context()
         if self.show_stage_annotations:
             self._annotate_stages()
-        self._interpret_music_makers()
+        message = '\tInterpreting music-makers ...'
+        print(message, end='')
+        with systemtools.Timer() as timer:
+            self._interpret_music_makers()
+        message = '{} sec.'
+        message = message.format(int(timer.elapsed_time))
+        print(message)
+        message = '\tInterpreting music-handlers ...'
+        print(message)
         self._interpret_music_handlers()
         self._move_instruments_from_notes_back_to_rests()
         self._attach_instrument_to_first_leaf()
@@ -364,10 +373,21 @@ class SegmentMaker(makertools.SegmentMaker):
 
     def _interpret_music_handlers(self):
         for music_handler in self.music_handlers:
-            if isinstance(music_handler, baca.makers.PitchHandler):
-                self._interpret_pitch_handler(music_handler)
-            else:
-                self._interpret_music_handler(music_handler)
+            message = '\t\t{} {!r} ... '
+            message = message.format(
+                music_handler.scope.context_name,
+                music_handler.scope.stages,
+                )
+            print(message, end='')
+            with systemtools.Timer() as timer:
+                #self._interpret_music_handler(music_handler)
+                if isinstance(music_handler, baca.makers.PitchHandler):
+                    self._interpret_pitch_handler(music_handler)
+                else:
+                    self._interpret_music_handler(music_handler)
+            message = '{} sec.'
+            message = message.format(int(timer.elapsed_time))
+            print(message)
 
     def _initialize_music_makers(self, music_makers):
         from krummzeit import makers

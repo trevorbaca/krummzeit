@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
+import baca
 from abjad import *
 from abjad.tools.rhythmmakertools import BooleanPattern
 from experimental import *
 from krummzeit import makers
 from krummzeit import materials
-from krummzeit.materials.abbreviations import *
+from krummzeit.materials.__abbreviations__ import *
 
 
 ### INTIALIZATION ###
@@ -250,7 +251,7 @@ segment_maker.copy_music_maker(
 segment_maker.make_pitch_handler(
     scope=(ob, 1),
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             source='Eb5',
             ),
         ],
@@ -258,7 +259,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(cl, 1),
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             source='Eb2',
             ),
         ],
@@ -280,7 +281,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=([pf, perc], 1),
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             source='F#6',
             ),
         ],
@@ -302,7 +303,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=(vn, (1, 3)),
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             source='Eb5',
             ),
         ],
@@ -310,7 +311,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(va, (1, 3)),
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             source='A3',
             ),
         ],
@@ -318,7 +319,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(vc, (1, 3)),
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             source='E~2',
             ),
         ],
@@ -343,7 +344,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=([vn, va, vc], (5, 9)),
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             operators=[pitchtools.Transposition(11)],
             source=violet_pitch_classes,    
             start_index=0,
@@ -385,7 +386,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=(cl, (3, 11)),
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             source='E2',
             ),
         ],
@@ -428,7 +429,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=([vn, va, vc], 15),
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             operators=[pitchtools.Transposition(4), pitchtools.Inversion()],
             reverse=True,
             source=indigo_pitch_classes,

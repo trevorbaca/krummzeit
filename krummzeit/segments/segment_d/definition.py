@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
+import baca
 from abjad import *
 from abjad.tools.rhythmmakertools import BooleanPattern
 from experimental import *
 from krummzeit import makers
 from krummzeit import materials
-from krummzeit.materials.abbreviations import *
+from krummzeit.materials.__abbreviations__ import *
 
 
 ### INITIALIZATION ##
@@ -227,7 +228,7 @@ segment_maker.make_pitch_handler(
         ([vn, va, vc], (1, 9)),
         ],
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             operators=[pitchtools.Transposition(4), pitchtools.Inversion()],
             reverse=True,
             source=indigo_pitch_classes,
@@ -378,7 +379,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=(va, (11, 16)),
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             source='bf,',
             ),
         ],
@@ -386,7 +387,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(vn, (14, 16)),
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             source='fs',
             ),
         ],
@@ -394,7 +395,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(vc, (14, 16)),
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             source='a,,',
             ),
         ],
@@ -429,7 +430,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=(ob, (14, 16)),
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             source='B3',
             ),
         ],
@@ -443,7 +444,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=(cl, (14, 17)),
     specifiers=[
-        makers.PitchSpecifier(
+        baca.makers.PitchSpecifier(
             source='B1',
             ),
         ],

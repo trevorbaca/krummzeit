@@ -383,11 +383,11 @@ segment_maker.make_music_handler(
         Dynamic('fff'),
         baca.makers.GlissandoSpecifier(
             #patterns=[BooleanPattern(indices=[0])],
-            patterns=rhythmmakertools.select_first(1),
+            patterns=[rhythmmakertools.select_first(1)],
             ),
         baca.makers.StemTremoloSpecifier(
             #patterns=[BooleanPattern(indices=[1, 2, 3, 4])],
-            patterns=rhythmmakertools.select([1, 2, 3, 4]),
+            patterns=[rhythmmakertools.select([1, 2, 3, 4])],
             ),
         ],
     )

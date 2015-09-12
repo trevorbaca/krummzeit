@@ -252,7 +252,7 @@ segment_maker.make_music_handler(
         gridato_possibile,
         baca.makers.GlissandoSpecifier(
             #patterns=[BooleanPattern(indices=[5])],
-            patterns=rhythmmakertools.select([5]),
+            patterns=[rhythmmakertools.select([5])],
             ),
         #markup_padding(4),
         ],

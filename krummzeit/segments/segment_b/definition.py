@@ -615,7 +615,7 @@ segment_maker.make_music_handler(
     scope=([va, vc], (1, 9)),
     specifiers=[
         baca.makers.GlissandoSpecifier(
-            patterns=rhythmmakertools.select_all(),
+            patterns=[rhythmmakertools.select_all()],
             ),
         ],
     )

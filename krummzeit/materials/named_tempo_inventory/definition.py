@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from abjad import *
-from krummzeit.materials.tempo_inventory.output import tempo_inventory
+from krummzeit.materials.tempo_inventory.definition import tempo_inventory
 
 
 named_tempo_inventory = datastructuretools.TypedOrderedDict([

@@ -85,7 +85,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._populate_time_signature_context()
         if self.show_stage_annotations:
             self._annotate_stages()
-        message = '\tInterpreting music-makers ...'
+        message = '\tInterpreting music-makers ... '
         print(message, end='')
         with systemtools.Timer() as timer:
             self._interpret_music_makers()
@@ -374,13 +374,30 @@ class SegmentMaker(makertools.SegmentMaker):
     def _interpret_music_handlers(self):
         for music_handler in self.music_handlers:
             message = '\t\t{} {!r} ... '
-            message = message.format(
-                music_handler.scope.context_name,
-                music_handler.scope.stages,
-                )
-            print(message, end='')
+            if isinstance(music_handler.scope, baca.makers.SimpleScope):
+                message = message.format(
+                    music_handler.scope.context_name,
+                    music_handler.scope.stages,
+                    )
+                print(message, end='')
+            elif isinstance(music_handler.scope, baca.makers.CompoundScope):
+                for simple_scope in music_handler.scope.simple_scopes[:-1]:
+                    message = '\t\t{} {!r} ...'
+                    message = message.format(
+                        simple_scope.context_name,
+                        simple_scope.stages,
+                        )
+                    print(message)
+                last_scope = music_handler.scope.simple_scopes[-1]
+                message = '\t\t{} {!r} ... '
+                message = message.format(
+                    last_scope.context_name,
+                    last_scope.stages,
+                    )
+                print(message, end='')
+            else:
+                raise ValueError(music_handler.scope)
             with systemtools.Timer() as timer:
-                #self._interpret_music_handler(music_handler)
                 if isinstance(music_handler, baca.makers.PitchHandler):
                     self._interpret_pitch_handler(music_handler)
                 else:

@@ -4,7 +4,7 @@ from abjad.tools.rhythmmakertools import BooleanPattern
 from experimental import *
 from krummzeit import makers
 from krummzeit import materials
-from krummzeit.materials.abbreviations import *
+from krummzeit.materials.__abbreviations__ import *
 
 
 ### INTIALIZATION ###

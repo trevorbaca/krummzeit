@@ -45,7 +45,6 @@ class MusicMaker(abctools.AbjadObject):
         'division_maker',
         'instrument',
         'rhythm_maker',
-        'stages',
         'start_tempo',
         'stop_tempo',
         )

@@ -6,4 +6,4 @@ systemtools.ImportManager.import_material_packages(
     globals(),
     )
 
-from miscellaneous import *
+from krummzeit.materials.miscellaneous import *

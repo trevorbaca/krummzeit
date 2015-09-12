@@ -3,7 +3,7 @@ from abjad import *
 import baca
 
 
-violet_pitch_classes = baca.makers.ZaggedPitchClassMaker(
+maker = baca.makers.ZaggedPitchClassMaker(
     pc_cells=[
         [8, 4, 3, 2, 11],
         [5, 4, 6, 8, 7],
@@ -26,3 +26,5 @@ violet_pitch_classes = baca.makers.ZaggedPitchClassMaker(
         ],
     grouping_counts=[1, 1, 2, 3],
     )
+
+violet_pitch_classes = maker()

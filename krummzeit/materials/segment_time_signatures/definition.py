@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from abjad import *
-from krummzeit.materials.time_signature_inventory.output import \
+from krummzeit.materials.time_signature_inventory.definition import \
     time_signature_inventory
 
 

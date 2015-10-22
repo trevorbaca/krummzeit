@@ -3,20 +3,19 @@ import baca
 from abjad import *
 from abjad.tools.rhythmmakertools import BooleanPattern
 from experimental import *
-from krummzeit import makers
-from krummzeit import materials
+import krummzeit
 from krummzeit.materials.__abbreviations__ import *
 
 
 ### INTIALIZATION ###
-segment_maker = makers.SegmentMaker(
+segment_maker = krummzeit.tools.SegmentMaker(
     name='J',
     show_stage_annotations=False,
     transpose_score=True,
     )
 
 ### SEGMENTS ###
-segment_maker.time_signatures = materials.segment_time_signatures['J']
+segment_maker.time_signatures = krummzeit.materials.segment_time_signatures['J']
 segment_maker.measures_per_stage = [
     1, 1, 1, 1, 1,
     1, 1, 1, 1, 1,
@@ -29,14 +28,14 @@ assert segment_maker.validate_time_signatures()
 ### TEMPO MAP ###
 music_maker = segment_maker.make_music_maker()
 segment_maker.tempo_map = [
-    (1, materials.named_tempo_inventory['135']),
-    (3, materials.named_tempo_inventory['90']),
-    (5, materials.named_tempo_inventory['108']),
-    (7, materials.named_tempo_inventory['72']),
+    (1, krummzeit.materials.named_tempo_inventory['135']),
+    (3, krummzeit.materials.named_tempo_inventory['90']),
+    (5, krummzeit.materials.named_tempo_inventory['108']),
+    (7, krummzeit.materials.named_tempo_inventory['72']),
     (9, Ritardando()),
-    (11, materials.named_tempo_inventory['36']),
+    (11, krummzeit.materials.named_tempo_inventory['36']),
     (13, Accelerando()),
-    (16, materials.named_tempo_inventory['144']),
+    (16, krummzeit.materials.named_tempo_inventory['144']),
     (16, Fermata('verylongfermata')),
     ]
 

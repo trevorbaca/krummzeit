@@ -407,11 +407,11 @@ class SegmentMaker(makertools.SegmentMaker):
             print(message)
 
     def _initialize_music_makers(self, music_makers):
-        from krummzeit import makers
+        import krummzeit
         music_makers = music_makers or []
         music_makers = list(music_makers)
         for music_maker in music_makers:
-            assert isinstance(music_maker, makers.MusicMaker)
+            assert isinstance(music_maker, krummzeit.tools.MusicMaker)
         self._music_makers = music_makers
 
     def _initialize_time_signatures(self, time_signatures):
@@ -525,8 +525,8 @@ class SegmentMaker(makertools.SegmentMaker):
             voice.extend(measures)
 
     def _make_score(self):
-        from krummzeit import makers
-        template = makers.ScoreTemplate()
+        import krummzeit
+        template = krummzeit.tools.ScoreTemplate()
         score = template()
         self._score = score
 
@@ -804,8 +804,8 @@ class SegmentMaker(makertools.SegmentMaker):
 
         Returns music-maker.
         '''
-        from krummzeit import makers
-        music_maker = makers.MusicMaker()
+        import krummzeit
+        music_maker = krummzeit.tools.MusicMaker()
         self.music_makers.append(music_maker)
         return music_maker
 

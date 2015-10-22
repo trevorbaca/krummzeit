@@ -12,7 +12,7 @@ class ClusterSpecifier(abctools.AbjadObject):
         ::
 
             >>> import krummzeit
-            >>> specifier = krummzeit.makers.ClusterSpecifier(
+            >>> specifier = krummzeit.tools.ClusterSpecifier(
             ...     start_pitch=NamedPitch('C1'),
             ...     stop_pitch=NamedPitch('C3'),
             ...     include_flat_markup=True,
@@ -22,7 +22,7 @@ class ClusterSpecifier(abctools.AbjadObject):
         ::
             
             >>> print(format(specifier))
-            krummzeit.makers.ClusterSpecifier(
+            krummzeit.tools.ClusterSpecifier(
                 start_pitch=pitchtools.NamedPitch('c,,'),
                 stop_pitch=pitchtools.NamedPitch('c'),
                 include_flat_markup=True,

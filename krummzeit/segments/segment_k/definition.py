@@ -3,8 +3,7 @@ import baca
 from abjad import *
 from abjad.tools.rhythmmakertools import BooleanPattern
 from experimental import *
-from krummzeit import makers
-from krummzeit import materials
+import krummzeit
 from krummzeit.materials.__abbreviations__ import *
 
 
@@ -12,7 +11,7 @@ from krummzeit.materials.__abbreviations__ import *
 city = Markup('Cambridge, MA.').italic()
 date = Markup('May - August 2014.').italic()
 final_markup = Markup.right_column([city, date], direction=Down)
-segment_maker = makers.SegmentMaker(
+segment_maker = krummzeit.tools.SegmentMaker(
     final_markup=final_markup,
     final_markup_extra_offset=(14.5, 0),
     name='K',
@@ -21,7 +20,7 @@ segment_maker = makers.SegmentMaker(
     )
 
 ### SEGMENTS ###
-segment_maker.time_signatures = materials.segment_time_signatures['K']
+segment_maker.time_signatures = krummzeit.materials.segment_time_signatures['K']
 segment_maker.final_barline = True
 segment_maker.measures_per_stage = [
     4, 4, 4, 4, 4, 4, # stages 1-6
@@ -34,7 +33,7 @@ assert segment_maker.validate_time_signatures()
 ### TEMPO MAP ###
 music_maker = segment_maker.make_music_maker()
 segment_maker.tempo_map = [
-    (1, materials.named_tempo_inventory['144']),
+    (1, krummzeit.materials.named_tempo_inventory['144']),
     ]
 
 ###############################################################################

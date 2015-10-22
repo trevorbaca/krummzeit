@@ -332,7 +332,7 @@ segment_maker.copy_music_maker(
 segment_maker.make_pitch_handler(
     scope=(ob, (1, 27)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source=violet_pitch_classes,    
             start_index=120,
             reverse=True,
@@ -363,7 +363,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=(cl, 1),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source="e'' dtqs'' f'' eqs'' dqs'' c'' dqs''",
             ),
         ],
@@ -378,7 +378,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=(cl, (20, 24)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source="f'' etqs'' g'' fqs'' eqs'' d'' eqs''",
             ),
         ],
@@ -386,7 +386,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(cl, (26, 27)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source="g'' dtqs'' a'' gqs'' fqs'' e'' fqs''",
             ),
         ],
@@ -401,7 +401,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=(va, (1, 19)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source="e dtqs f eqs dqs c dqs",
             ),
         ],
@@ -433,7 +433,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=(vc, (1, 19)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source="d, ctqs, e, dqs, cqs, b,, dqs,",
             ),
         ],
@@ -465,7 +465,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=(vn, (19, 22)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             counts=[1, 1, 1, 1, 4, 1, 1, 1, 4, 4],
             operators=[pitchtools.Transposition(3)],
             reverse=True,
@@ -498,7 +498,7 @@ segment_maker.make_pitch_handler(
         (perc, [(11, 17), (22, 26)]),
         ],
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source=[NamedPitch('C#6')],
             ),
         ],
@@ -531,7 +531,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=(vn, (28, 29)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source="ftqs g",
             ),
         ],
@@ -539,7 +539,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(va, (26, 29)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source="btqs, c bqs, cqs",
             ),
         ],
@@ -547,7 +547,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(vc, (26, 29)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source="b,, cqs, bqf,, c,",
             ),
         ],

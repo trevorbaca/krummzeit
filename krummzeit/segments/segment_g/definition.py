@@ -196,7 +196,7 @@ music_maker.rhythm_maker = tied_notes
 segment_maker.make_pitch_handler(
     scope=(va, (1, 4)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source='F#3',
             ),
         ],
@@ -204,7 +204,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(vc, (1, 4)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source='C2',
             ),
         ],
@@ -230,7 +230,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=(vn, (5, 13)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source='F#3',
             ),
         ],
@@ -238,7 +238,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(va, (5, 13)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source='Bb2',
             ),
         ],
@@ -246,7 +246,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(vc, (5, 13)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source='A1',
             ),
         ],
@@ -289,7 +289,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=(cl, (11, 13)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source='B1',
             ),
         ],
@@ -308,7 +308,7 @@ pitch_handler = segment_maker.make_pitch_handler(
         ([ob, cl], (1, 8)),
         ],
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             operators=[pitchtools.Transposition(2)],
             source=indigo_pitch_classes,    
             start_index=0,

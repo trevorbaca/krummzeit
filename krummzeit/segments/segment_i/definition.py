@@ -221,7 +221,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=(vn, 1),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source='Db4',
             ),
         ],
@@ -229,7 +229,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(va, 1),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source='C3',
             ),
         ],
@@ -237,7 +237,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(vc, 1),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source='C2',
             ),
         ],
@@ -263,7 +263,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=([vn, va, vc], (2, 4)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             operators=[pitchtools.Transposition(8), pitchtools.Inversion()],
             reverse=True,
             source=violet_pitch_classes,    
@@ -305,7 +305,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=([ob, cl], (3, 6)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source='D5',
             ),
         ],
@@ -327,7 +327,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=(ob, (7, 8)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source='Eb5',
             ),
         ],
@@ -335,7 +335,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(cl, (7, 8)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source='Eb2',
             ),
         ],
@@ -356,7 +356,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=(vn, (6, 8)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source='D5 Eb5 Eb5 Eb5',
             ),
         ],
@@ -364,7 +364,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(va, (6, 8)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source='D3 A3 A3 A3',
             ),
         ],
@@ -372,7 +372,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(vc, (6, 8)),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source='D3 E~2 E~2 E~2',
             ),
         ],
@@ -381,11 +381,11 @@ segment_maker.make_music_handler(
     scope=([vn, va, vc], (6, 8)),
     specifiers=[
         Dynamic('fff'),
-        baca.makers.GlissandoSpecifier(
+        baca.tools.GlissandoSpecifier(
             #patterns=[BooleanPattern(indices=[0])],
             patterns=[rhythmmakertools.select_first(1)],
             ),
-        baca.makers.StemTremoloSpecifier(
+        baca.tools.StemTremoloSpecifier(
             #patterns=[BooleanPattern(indices=[1, 2, 3, 4])],
             patterns=[rhythmmakertools.select([1, 2, 3, 4])],
             ),
@@ -394,7 +394,7 @@ segment_maker.make_music_handler(
 segment_maker.make_pitch_handler(
     scope=([pf, perc], 8),
     specifiers=[
-        baca.makers.PitchSpecifier(
+        baca.tools.PitchSpecifier(
             source='F#6',
             ),
         ],

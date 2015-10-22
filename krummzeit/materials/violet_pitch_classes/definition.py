@@ -3,7 +3,7 @@ from abjad import *
 import baca
 
 
-maker = baca.makers.ZaggedPitchClassMaker(
+maker = baca.tools.ZaggedPitchClassMaker(
     pc_cells=[
         [8, 4, 3, 2, 11],
         [5, 4, 6, 8, 7],

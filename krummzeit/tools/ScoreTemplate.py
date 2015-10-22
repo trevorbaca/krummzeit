@@ -9,58 +9,63 @@ class ScoreTemplate(abctools.AbjadValueObject):
     def __call__(self):
         r'''Calls Krummzeit score template.
 
-        >>> from krummzeit import makers
-        >>> template = makers.ScoreTemplate()
-        >>> score = template()
-        >>> f(score)
-        \context Score = "Krummzeit Score" <<
-            \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
-            \context TimeSignatureContext = "Time Signature Context" {
-            }
-            \context WindSectionStaffGroup = "Wind Section Staff Group" <<
-                \tag winds.oboe
-                \context OboeMusicStaff = "Oboe Music Staff" {
-                    \context OboeMusicVoice = "Oboe Music Voice" {
-                    }
+        ::
+
+            >>> import krummzeit
+            >>> template = krummzeit.tools.ScoreTemplate()
+            >>> score = template()
+
+        ::
+
+            >>> f(score)
+            \context Score = "Krummzeit Score" <<
+                \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
+                \context TimeSignatureContext = "Time Signature Context" {
                 }
-                \tag winds.clarinet
-                \context ClarinetMusicStaff = "Clarinet Music Staff" {
-                    \context ClarinetMusicVoice = "Clarinet Music Voice" {
+                \context WindSectionStaffGroup = "Wind Section Staff Group" <<
+                    \tag winds.oboe
+                    \context OboeMusicStaff = "Oboe Music Staff" {
+                        \context OboeMusicVoice = "Oboe Music Voice" {
+                        }
                     }
-                }
+                    \tag winds.clarinet
+                    \context ClarinetMusicStaff = "Clarinet Music Staff" {
+                        \context ClarinetMusicVoice = "Clarinet Music Voice" {
+                        }
+                    }
+                >>
+                \context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
+                    \tag percussion.piano
+                    \context PianoMusicStaff = "Piano Music Staff" {
+                        \context PianoMusicVoice = "Piano Music Voice" {
+                        }
+                    }
+                    \tag percussion
+                    \context PercussionMusicStaff = "Percussion Staff" {
+                        \context PercussionMusicVoice = "Percussion Music Voice" {
+                        }
+                    }
+                >>
+                \context StringSectionStaffGroup = "String Section Staff Group" <<
+                    \tag strings.violin
+                    \context ViolinMusicStaff = "Violin Music Staff" {
+                        \context ViolinMusicVoice = "Violin Music Voice" {
+                        }
+                    }
+                    \tag strings.viola
+                    \context ViolaMusicStaff = "Viola Music Staff" {
+                        \clef "alto"
+                        \context ViolaMusicVoice = "Viola Music Voice" {
+                        }
+                    }
+                    \tag strings.cello
+                    \context CelloMusicStaff = "Cello Music Staff" {
+                        \clef "bass"
+                        \context CelloMusicVoice = "Cello Music Voice" {
+                        }
+                    }
+                >>
             >>
-            \context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
-                \tag percussion.piano
-                \context PianoMusicStaff = "Piano Music Staff" {
-                    \context PianoMusicVoice = "Piano Music Voice" {
-                    }
-                }
-                \tag percussion
-                \context PercussionMusicStaff = "Percussion Staff" {
-                    \context PercussionMusicVoice = "Percussion Music Voice" {
-                    }
-                }
-            >>
-            \context StringSectionStaffGroup = "String Section Staff Group" <<
-                \tag strings.violin
-                \context ViolinMusicStaff = "Violin Music Staff" {
-                    \context ViolinMusicVoice = "Violin Music Voice" {
-                    }
-                }
-                \tag strings.viola
-                \context ViolaMusicStaff = "Viola Music Staff" {
-                    \clef "alto"
-                    \context ViolaMusicVoice = "Viola Music Voice" {
-                    }
-                }
-                \tag strings.cello
-                \context CelloMusicStaff = "Cello Music Staff" {
-                    \clef "bass"
-                    \context CelloMusicVoice = "Cello Music Voice" {
-                    }
-                }
-            >>
-        >>
 
         Returns score.
         '''

@@ -3,20 +3,19 @@ import baca
 from abjad import *
 from abjad.tools.rhythmmakertools import BooleanPattern
 from experimental import *
-from krummzeit import makers
-from krummzeit import materials
+import krummzeit
 from krummzeit.materials.__abbreviations__ import *
 
 
 ### INITIALIZATION ###
-segment_maker = makers.SegmentMaker(
+segment_maker = krummzeit.tools.SegmentMaker(
     name='H',
     show_stage_annotations=False,
     transpose_score=True,
     )
 
 ### SEGMENTS ###
-segment_maker.time_signatures = materials.segment_time_signatures['H']
+segment_maker.time_signatures = krummzeit.materials.segment_time_signatures['H']
 segment_maker.measures_per_stage = [
     1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, # stages 1-12
     1,  # halt
@@ -30,9 +29,9 @@ assert segment_maker.validate_time_signatures()
 ### TEMPO MAP ###
 music_maker = segment_maker.make_music_maker()
 segment_maker.tempo_map = [
-    (1, materials.named_tempo_inventory['144']),
+    (1, krummzeit.materials.named_tempo_inventory['144']),
     (13, Fermata('shortfermata')),
-    (14, materials.named_tempo_inventory['90']),
+    (14, krummzeit.materials.named_tempo_inventory['90']),
     (22, Fermata('verylongfermata')),
     ]
 

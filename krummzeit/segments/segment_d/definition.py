@@ -3,21 +3,20 @@ import baca
 from abjad import *
 from abjad.tools.rhythmmakertools import BooleanPattern
 from experimental import *
-from krummzeit import makers
-from krummzeit import materials
+import krummzeit
 from krummzeit.materials.__abbreviations__ import *
 
 
 ### INITIALIZATION ##
 
-segment_maker = makers.SegmentMaker(
+segment_maker = krummzeit.tools.SegmentMaker(
     name='D',
     show_stage_annotations=False,
     transpose_score=True,
     )
 
 ### STAGES ###
-segment_maker.time_signatures = materials.segment_time_signatures['D']
+segment_maker.time_signatures = krummzeit.materials.segment_time_signatures['D']
 segment_maker.measures_per_stage = [
     1, 1, 1, 1, 1, 1, 1, 1,     # stages 1-8
     1, 1, 1, 1, 1, 1, 1, 1,     # stages 9-16
@@ -31,26 +30,26 @@ assert segment_maker.validate_time_signatures()
 ### TEMPO MAP ###
 music_maker = segment_maker.make_music_maker()
 segment_maker.tempo_map = [
-    (1, materials.named_tempo_inventory['135']),
+    (1, krummzeit.materials.named_tempo_inventory['135']),
     (1, Ritardando()),
-    (2, materials.named_tempo_inventory['90']),
+    (2, krummzeit.materials.named_tempo_inventory['90']),
     (2, Fermata('shortfermata')),
     (3, Accelerando()),
     (4, Fermata('shortfermata')),
-    (4, materials.named_tempo_inventory['135']),
+    (4, krummzeit.materials.named_tempo_inventory['135']),
     (5, Ritardando()),
     (6, Fermata('shortfermata')),
-    (6, materials.named_tempo_inventory['90']),
+    (6, krummzeit.materials.named_tempo_inventory['90']),
     (7, Accelerando()),
     (8, Fermata('shortfermata')),
-    (8, materials.named_tempo_inventory['135']),
-    (10, materials.named_tempo_inventory['90']),
-    (10, materials.metric_modulation_inventory['4.=4']),
+    (8, krummzeit.materials.named_tempo_inventory['135']),
+    (10, krummzeit.materials.named_tempo_inventory['90']),
+    (10, krummzeit.materials.metric_modulation_inventory['4.=4']),
     (11, Ritardando()),
     (13, Fermata('longfermata')),
-    (13, materials.named_tempo_inventory['45']),
+    (13, krummzeit.materials.named_tempo_inventory['45']),
     (16, Ritardando()),
-    (17, materials.named_tempo_inventory['36']),
+    (17, krummzeit.materials.named_tempo_inventory['36']),
     ]
 
 ###############################################################################

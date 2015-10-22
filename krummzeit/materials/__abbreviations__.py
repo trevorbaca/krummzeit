@@ -1,32 +1,31 @@
 # -*- coding: utf-8 -*-
 from abjad import *
-from krummzeit import materials
-from krummzeit import makers
+import krummzeit
 from abjad.tools import pitchtools
 import baca
 
 
 ### INSTRUMENTS ###
 
-oboe = materials.performer_inventory.get_instrument('ob.')
-e_flat_clarinet = materials.performer_inventory.get_instrument('cl. e-flat')
-clarinet = materials.performer_inventory.get_instrument('cl. in B-flat')
-bass_clarinet = materials.performer_inventory.get_instrument('bass cl.')
+oboe = krummzeit.materials.performer_inventory.get_instrument('ob.')
+e_flat_clarinet = krummzeit.materials.performer_inventory.get_instrument('cl. e-flat')
+clarinet = krummzeit.materials.performer_inventory.get_instrument('cl. in B-flat')
+bass_clarinet = krummzeit.materials.performer_inventory.get_instrument('bass cl.')
 
 # TODO: make Instrument.default_scope public
-piano = materials.performer_inventory.get_instrument('piano')
+piano = krummzeit.materials.performer_inventory.get_instrument('piano')
 piano._default_scope = 'PianoMusicStaff'
-harpsichord = materials.performer_inventory.get_instrument('harpsichord')
+harpsichord = krummzeit.materials.performer_inventory.get_instrument('harpsichord')
 harpsichord._default_scope = 'PianoMusicStaff'
 
-crotales = materials.performer_inventory.get_instrument('crotales')
-scraped_slate = materials.performer_inventory.get_instrument('scraped slate')
-snare_drum = materials.performer_inventory.get_instrument('snare drum')
-sponges = materials.performer_inventory.get_instrument('sponges')
-suspended_cymbal = materials.performer_inventory.get_instrument(
+crotales = krummzeit.materials.performer_inventory.get_instrument('crotales')
+scraped_slate = krummzeit.materials.performer_inventory.get_instrument('scraped slate')
+snare_drum = krummzeit.materials.performer_inventory.get_instrument('snare drum')
+sponges = krummzeit.materials.performer_inventory.get_instrument('sponges')
+suspended_cymbal = krummzeit.materials.performer_inventory.get_instrument(
     'suspended cymbal')
-tam_tam = materials.performer_inventory.get_instrument('tam-tam')
-xylophone = materials.performer_inventory.get_instrument('xylophone')
+tam_tam = krummzeit.materials.performer_inventory.get_instrument('tam-tam')
+xylophone = krummzeit.materials.performer_inventory.get_instrument('xylophone')
 percussion_instruments = (
     crotales,
     scraped_slate,
@@ -39,9 +38,9 @@ percussion_instruments = (
 for percussion_instrument in percussion_instruments:
     percussion_instrument._do_not_format = True
 
-violin = materials.performer_inventory.get_instrument('violin')
-viola = materials.performer_inventory.get_instrument('viola')
-cello = materials.performer_inventory.get_instrument('cello')
+violin = krummzeit.materials.performer_inventory.get_instrument('violin')
+viola = krummzeit.materials.performer_inventory.get_instrument('viola')
+cello = krummzeit.materials.performer_inventory.get_instrument('cello')
 
 
 ### CONTEXT NAMES ###
@@ -311,8 +310,8 @@ def pitch_specifier(
         start_index=start_index,
         )
 
-indigo_pitch_classes = materials.indigo_pitch_classes.manifest_payload
-violet_pitch_classes = materials.violet_pitch_classes.manifest_payload
+indigo_pitch_classes = krummzeit.materials.indigo_pitch_classes.manifest_payload
+violet_pitch_classes = krummzeit.materials.violet_pitch_classes.manifest_payload
 
 krummzeit_displacement = baca.tools.DisplacementSpecifier(
     displacements=[
@@ -531,17 +530,17 @@ repeated_pp_to_ff = handlertools.NoteAndChordHairpinHandler(
 
 ### clusters ###
 
-harpsichord_cluster = makers.ClusterSpecifier(
+harpsichord_cluster = krummzeit.tools.ClusterSpecifier(
     start_pitch=NamedPitch('D4'),
     stop_pitch=NamedPitch('E5'),
     )
 
-low_piano_cluster = makers.ClusterSpecifier(
+low_piano_cluster = krummzeit.tools.ClusterSpecifier(
     start_pitch=NamedPitch('C1'),
     stop_pitch=NamedPitch('C3'),
     )
 
-tenor_piano_cluster = makers.ClusterSpecifier(
+tenor_piano_cluster = krummzeit.tools.ClusterSpecifier(
     start_pitch=NamedPitch('A2'),
     stop_pitch=NamedPitch('B3'),
     )

@@ -9,8 +9,8 @@ class MusicMaker(abctools.AbjadObject):
 
         ::
 
-            >>> from krummzeit import makers
-            >>> music_maker = makers.MusicMaker()
+            >>> import krummzeit
+            >>> music_maker = krummzeit.tools.MusicMaker()
             >>> music_maker.context_name = 'Cello Music Voice'
             >>> music_maker.stages = 1, 4
             >>> music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
@@ -21,7 +21,7 @@ class MusicMaker(abctools.AbjadObject):
         ::
 
             >>> print(format(music_maker, 'storage'))
-            krummzeit.makers.MusicMaker(
+            krummzeit.tools.MusicMaker(
                 context_name='Cello Music Voice',
                 division_maker=makertools.FuseByCountsDivisionCallback(
                     counts=[2, 3, 1],

@@ -2,20 +2,19 @@
 from abjad import *
 from abjad.tools.rhythmmakertools import BooleanPattern
 from experimental import *
-from krummzeit import makers
-from krummzeit import materials
+import krummzeit
 from krummzeit.materials.__abbreviations__ import *
 
 
 ### INTIALIZATION ###
-segment_maker = makers.SegmentMaker(
+segment_maker = krummzeit.tools.SegmentMaker(
     name='B',
     show_stage_annotations=False,
     transpose_score=True,
     )
 
 ### STAGES ###
-segment_maker.time_signatures = materials.segment_time_signatures['B']
+segment_maker.time_signatures = krummzeit.materials.segment_time_signatures['B']
 segment_maker.measures_per_stage = [
     3, 1, 3, 4, # stages 1-4
     3, 1, 3, 4, # stages 5-8
@@ -35,18 +34,18 @@ assert segment_maker.validate_time_signatures()
 ### TEMPO MAP ###
 music_maker = segment_maker.make_music_maker()
 segment_maker.tempo_map = [
-    (1, materials.tempo_inventory[3]),
-    (9, materials.tempo_inventory[4]),
-    (9, materials.metric_modulation_inventory['4=8']),
+    (1, krummzeit.materials.tempo_inventory[3]),
+    (9, krummzeit.materials.tempo_inventory[4]),
+    (9, krummzeit.materials.metric_modulation_inventory['4=8']),
     (10, Accelerando()),
-    (12, materials.tempo_inventory[3]),
-    (15, materials.tempo_inventory[2]),
-    (15, materials.metric_modulation_inventory['4.=4']),
+    (12, krummzeit.materials.tempo_inventory[3]),
+    (15, krummzeit.materials.tempo_inventory[2]),
+    (15, krummzeit.materials.metric_modulation_inventory['4.=4']),
     (16, Accelerando()),
-    (17, materials.tempo_inventory[3]),
-    (20, materials.tempo_inventory[1]),
-    (20, materials.metric_modulation_inventory['4=4:5(4)']),
-    (22, materials.tempo_inventory[1]),
+    (17, krummzeit.materials.tempo_inventory[3]),
+    (20, krummzeit.materials.tempo_inventory[1]),
+    (20, krummzeit.materials.metric_modulation_inventory['4=4:5(4)']),
+    (22, krummzeit.materials.tempo_inventory[1]),
     ]
 
 ###############################################################################
@@ -221,7 +220,7 @@ segment_maker.copy_music_maker(
     pf,
     1,
     context_name=vn,
-    instrument=materials.performer_inventory.get_instrument('vn.'),
+    instrument=krummzeit.materials.performer_inventory.get_instrument('vn.'),
     division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rhythm_maker__denominators=[4, 4, 4, 16],
     stages=(8, 13),

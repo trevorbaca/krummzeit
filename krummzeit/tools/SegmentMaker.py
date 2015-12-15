@@ -461,7 +461,7 @@ class SegmentMaker(makertools.SegmentMaker):
             spell_metrically='unassignable',
             )
         maker = rhythmmakertools.NoteRhythmMaker(
-            output_masks=[rhythmmakertools.silence_all()],
+            division_masks=[rhythmmakertools.silence_all()],
             )
         selections = maker(time_signatures)
         return selections

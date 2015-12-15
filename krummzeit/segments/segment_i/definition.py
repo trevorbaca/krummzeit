@@ -132,7 +132,7 @@ music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
         ),
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
-    output_masks=[BooleanPattern(indices=[0])],
+    division_masks=[BooleanPattern(indices=[0])],
     )
 
 ### ob, Eb cl [I3-6] upper pedals ###

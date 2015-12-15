@@ -144,7 +144,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
     tie_specifier=rhythmmakertools.TieSpecifier(
         tie_across_divisions=[0, 1],
         ),
-    output_masks=[BooleanPattern(indices=[5, 6], period=7)],
+    division_masks=[BooleanPattern(indices=[5, 6], period=7)],
     )
 
 ### tam-tam [H1-7] ###
@@ -162,7 +162,7 @@ music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
         ),
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
-    output_masks=[BooleanPattern(indices=[-1])],
+    division_masks=[BooleanPattern(indices=[-1])],
     )
 
 ### vn [H5-12] 5th-octave counterpoint ###

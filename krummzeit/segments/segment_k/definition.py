@@ -54,7 +54,7 @@ music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
         ),
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
-    output_masks=[BooleanPattern(indices=[-1])],
+    division_masks=[BooleanPattern(indices=[-1])],
     )
 
 music_maker = segment_maker.make_music_maker()
@@ -122,7 +122,7 @@ segment_maker.copy_music_maker(
     1,
     context_name=vc,
     instrument=None,
-    rhythm_maker__output_masks=None,
+    rhythm_maker__division_masks=None,
     )
 
 segment_maker.copy_music_maker(
@@ -145,7 +145,7 @@ music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     )
 
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
-    output_masks=[BooleanPattern(indices=[1], period=2)],
+    division_masks=[BooleanPattern(indices=[1], period=2)],
     )
 
 ### bass clarinet ###

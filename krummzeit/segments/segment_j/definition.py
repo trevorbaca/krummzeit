@@ -104,7 +104,7 @@ music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[(1, 1, 1)],
-    output_masks=[BooleanPattern(indices=[-1])],
+    division_masks=[BooleanPattern(indices=[-1])],
     )
 
 segment_maker.copy_music_maker(
@@ -133,7 +133,7 @@ music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[(1, 1, 1)],
-    output_masks=[BooleanPattern(indices=[0])],
+    division_masks=[BooleanPattern(indices=[0])],
     )
 
 ### vn, va, vc [J5-9] white OB bowing (3.5) ###

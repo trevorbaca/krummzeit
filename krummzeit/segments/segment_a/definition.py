@@ -54,7 +54,7 @@ music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[(1, 1, 1)],
-    output_masks=[BooleanPattern(indices=[0])],
+    division_masks=[BooleanPattern(indices=[0])],
     )
 
 segment_maker.copy_music_maker(
@@ -82,7 +82,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         (1, 4),
         (4, 3),
         ],
-    output_masks=[BooleanPattern(indices=[5, 6], period=7)],
+    division_masks=[BooleanPattern(indices=[5, 6], period=7)],
     )
 
 segment_maker.copy_music_maker(
@@ -91,7 +91,7 @@ segment_maker.copy_music_maker(
     context_name=va,
     stages=(3, 7),
     division_maker__ratios=[(2, 1), (1, 1, 1), (2, 1)],
-    rhythm_maker__output_masks=[BooleanPattern(indices=[0, 1], period=7)],
+    rhythm_maker__division_masks=[BooleanPattern(indices=[0, 1], period=7)],
     )
 
 segment_maker.copy_music_maker(
@@ -100,7 +100,7 @@ segment_maker.copy_music_maker(
     context_name=vc,
     stages=(3, 7),
     division_maker__ratios=[(1, 1, 1), (2, 1), (2, 1)],
-    rhythm_maker__output_masks=[BooleanPattern(indices=[2, 3], period=7)],
+    rhythm_maker__division_masks=[BooleanPattern(indices=[2, 3], period=7)],
     )
 
 ### bass cl [A2-6] pedals ###
@@ -117,7 +117,7 @@ music_maker.context_name = pf
 music_maker.instrument = piano
 music_maker.clef = 'bass'
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
-    output_masks=[BooleanPattern(indices=[0], period=1)],
+    division_masks=[BooleanPattern(indices=[0], period=1)],
     )
 
 ### repeated pf cluster ###

@@ -70,7 +70,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
     tie_specifier=rhythmmakertools.TieSpecifier(
         tie_across_divisions=True,
         ),
-    output_masks=[BooleanPattern(indices=[0], period=1)],
+    division_masks=[BooleanPattern(indices=[0], period=1)],
     )
 
 segment_maker.copy_music_maker(
@@ -79,7 +79,7 @@ segment_maker.copy_music_maker(
     stages=2,
     instrument=None,
     clef=None,
-    rhythm_maker__output_masks=None,
+    rhythm_maker__division_masks=None,
     )
 
 segment_maker.copy_music_maker(perc, 2, stages=(4, 6))
@@ -143,7 +143,7 @@ segment_maker.copy_music_maker(
     5,
     context_name=va,
     rhythm_maker__tuplet_ratios=[(1, 6)],
-    rhythm_maker__output_masks=[BooleanPattern(indices=[0, 1])],
+    rhythm_maker__division_masks=[BooleanPattern(indices=[0, 1])],
     )
 
 segment_maker.copy_music_maker(
@@ -151,7 +151,7 @@ segment_maker.copy_music_maker(
     5,
     context_name=vc,
     rhythm_maker__tuplet_ratios=[(6, 1)],
-    rhythm_maker__output_masks=[BooleanPattern(indices=[0, 1])],
+    rhythm_maker__division_masks=[BooleanPattern(indices=[0, 1])],
     )
 
 ### ob, cl [G3-7] ###

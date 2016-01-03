@@ -42,7 +42,7 @@ segment_maker.tempo_map = [
 ### ob [H1-7] block ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = (1, 7)
-music_maker.context_name = ob
+music_maker.voice_name = ob
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
     tie_specifier=rhythmmakertools.TieSpecifier(
         tie_across_divisions=True,
@@ -52,7 +52,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
 ### ob [H9-12] 5th-octave counterpoint ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 9, 12
-music_maker.context_name = ob
+music_maker.voice_name = ob
 music_maker.division_maker = makertools.SplitByDurationsDivisionCallback(
     durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
     pattern_rotation_index=-1,
@@ -69,7 +69,7 @@ music_maker.rhythm_maker = rhythmmakertools.EvenDivisionRhythmMaker(
 ### ob [H18-21] reiteration ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 18, 21
-music_maker.context_name = ob
+music_maker.voice_name = ob
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     counts=[2],
     )
@@ -85,7 +85,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
 ### bass clarinet [H1-5] myrkr ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 1, 5
-music_maker.context_name = cl
+music_maker.voice_name = cl
 music_maker.instrument = bass_clarinet
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
     tie_specifier=rhythmmakertools.TieSpecifier(
@@ -97,7 +97,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
 segment_maker.copy_music_maker(
     ob,
     9,
-    context_name=cl,
+    voice_name=cl,
     instrument=e_flat_clarinet,
     division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rhythm_maker__denominators=[4, 4, 4, 8],
@@ -107,7 +107,7 @@ segment_maker.copy_music_maker(
 segment_maker.copy_music_maker(
     ob,
     18,
-    context_name=cl,
+    voice_name=cl,
     instrument=bass_clarinet,
     rhythm_maker__tuplet_ratios=[(1, 3), (1, 1)],
     )
@@ -115,7 +115,7 @@ segment_maker.copy_music_maker(
 ### harpsichord [H5-11] 5th-octave counterpoint ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 5, 11
-music_maker.context_name = pf
+music_maker.voice_name = pf
 music_maker.instrument = harpsichord
 music_maker.clef = 'treble'
 music_maker.division_maker = makertools.SplitByDurationsDivisionCallback(
@@ -134,7 +134,7 @@ music_maker.rhythm_maker = rhythmmakertools.EvenDivisionRhythmMaker(
 ### pf [H14-20] harmonics with thicket ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 14, 20
-music_maker.context_name = pf
+music_maker.voice_name = pf
 music_maker.instrument = piano
 music_maker.clef = 'bass'
 music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
@@ -150,7 +150,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
 ### tam-tam [H1-7] ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 1, 7
-music_maker.context_name = perc
+music_maker.voice_name = perc
 music_maker.instrument = tam_tam
 # TODO: encode semantically as continuation from previous segment
 music_maker._hide_untuned_percussion_markup = True
@@ -170,7 +170,7 @@ segment_maker.copy_music_maker(
     pf,
     5,
     stages=(5, 12),
-    context_name=vn,
+    voice_name=vn,
     instrument=None,
     division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rhythm_maker__denominators=[8, 8, 4, 4, 8, 8],
@@ -179,7 +179,7 @@ segment_maker.copy_music_maker(
 ### vn, va, vc [H14-20] thicket ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = (14, 20)
-music_maker.context_name = vn
+music_maker.voice_name = vn
 music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
     ratios=[(1, 2), (2, 1), (1, 1, 1)],
     )
@@ -198,21 +198,21 @@ segment_maker.copy_music_maker(
     vn,
     14,
     stages=(14, 19),
-    context_name=va,
+    voice_name=va,
     division_maker__ratios=[(2, 1), (1, 1, 1), (1, 2)],
     )
 
 segment_maker.copy_music_maker(
     vn,
     14,
-    context_name=vc,
+    voice_name=vc,
     division_maker__ratios=[(1, 1, 1), (1, 2), (2, 1)],
     )
 
 ### va [H1-7] & vc [H1-9] block pedals ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = (1, 7)
-music_maker.context_name = va
+music_maker.voice_name = va
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitByDurationsDivisionCallback(
@@ -225,7 +225,7 @@ segment_maker.copy_music_maker(
     va,
     1,
     stages=(1, 9),
-    context_name=vc,
+    voice_name=vc,
     division_maker__secondary_division_maker__durations=[
         (3, 4), (4, 4), (3, 8), (2, 8), (8, 4), (7, 4), (3, 4), (3, 8), (6, 8),
         ],
@@ -234,7 +234,7 @@ segment_maker.copy_music_maker(
 ### va, vc [H11-12] ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 11, 12
-music_maker.context_name = va
+music_maker.voice_name = va
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     counts=[2, 3, 1],
     )
@@ -250,14 +250,14 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
 segment_maker.copy_music_maker(
     va,
     11,
-    context_name=vc,
+    voice_name=vc,
     rhythm_maker__tuplet_ratios=[(3, 2)],
     )
 
 ### vn, va, vc [H20-21] reiteration ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 21
-music_maker.context_name = vn
+music_maker.voice_name = vn
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     counts=[3],
     )
@@ -274,7 +274,7 @@ segment_maker.copy_music_maker(
     vn,
     21,
     stages=(20, 21),
-    context_name=va,
+    voice_name=va,
     division_maker__counts=[2],
     rhythm_maker__tuplet_ratios=[(1, 4)],
     )
@@ -282,7 +282,7 @@ segment_maker.copy_music_maker(
 segment_maker.copy_music_maker(
     vn,
     21,
-    context_name=vc,
+    voice_name=vc,
     rhythm_maker__tuplet_ratios=[(1, 4)],
     )
 

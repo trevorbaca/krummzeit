@@ -11,7 +11,7 @@ class MusicMaker(abctools.AbjadObject):
 
             >>> import krummzeit
             >>> music_maker = krummzeit.tools.MusicMaker()
-            >>> music_maker.context_name = 'Cello Music Voice'
+            >>> music_maker.voice_name = 'Cello Music Voice'
             >>> music_maker.stages = 1, 4
             >>> music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
             ...     counts=[2, 3, 1],
@@ -22,7 +22,7 @@ class MusicMaker(abctools.AbjadObject):
 
             >>> print(format(music_maker, 'storage'))
             krummzeit.tools.MusicMaker(
-                context_name='Cello Music Voice',
+                voice_name='Cello Music Voice',
                 division_maker=makertools.FuseByCountsDivisionCallback(
                     counts=[2, 3, 1],
                     ),
@@ -41,7 +41,7 @@ class MusicMaker(abctools.AbjadObject):
         '_rhythm_overwrites',
         '_staff_line_count',
         '_stages',
-        'context_name',
+        'voice_name',
         'division_maker',
         'instrument',
         'rhythm_maker',
@@ -54,7 +54,7 @@ class MusicMaker(abctools.AbjadObject):
     def __init__(
         self,
         clef=None,
-        context_name=None,
+        voice_name=None,
         division_maker=None,
         instrument=None,
         rhythm_maker=None,
@@ -65,7 +65,7 @@ class MusicMaker(abctools.AbjadObject):
         stop_tempo=None,
         ):
         self.clef = clef
-        self.context_name = context_name
+        self.voice_name = voice_name
         self.division_maker = division_maker
         self._hide_untuned_percussion_markup = False
         self.instrument = instrument

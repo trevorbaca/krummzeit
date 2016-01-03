@@ -50,7 +50,7 @@ segment_maker.tempo_map = [
 
 ### ob, cl [F1-8] ornamemented + unadorned ###
 music_maker = segment_maker.make_music_maker()
-music_maker.context_name = ob
+music_maker.voice_name = ob
 music_maker.stages = 1
 music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
     ratios=[(2, 1), (2, 1), (1, 1, 1)],
@@ -71,7 +71,7 @@ segment_maker.copy_music_maker(
 
 
 music_maker = segment_maker.make_music_maker()
-music_maker.context_name = cl
+music_maker.voice_name = cl
 music_maker.instrument = e_flat_clarinet
 music_maker.stages = 1, 2
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
@@ -85,7 +85,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 
 ### pf, vn, va, vc [F2] ###
 music_maker = segment_maker.make_music_maker()
-music_maker.context_name = vn
+music_maker.voice_name = vn
 music_maker.stages = 2
 music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
     incise_specifier=rhythmmakertools.InciseSpecifier(
@@ -101,13 +101,13 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(vn, 2, context_name=va)
-segment_maker.copy_music_maker(vn, 2, context_name=vc)
+segment_maker.copy_music_maker(vn, 2, voice_name=va)
+segment_maker.copy_music_maker(vn, 2, voice_name=vc)
 
 segment_maker.copy_music_maker(
     vn,
     2,
-    context_name=pf,
+    voice_name=pf,
     instrument=piano,
     clef='bass',
     )
@@ -115,7 +115,7 @@ segment_maker.copy_music_maker(
 
 ### suspended cymbal [F1-4] ###
 music_maker = segment_maker.make_music_maker()
-music_maker.context_name = perc
+music_maker.voice_name = perc
 music_maker.stages = 1, 6
 music_maker.instrument = suspended_cymbal
 music_maker._hide_untuned_percussion_markup = True
@@ -130,7 +130,7 @@ segment_maker.copy_music_maker(perc, 2, stages=(17, 22))
 
 ## vn, va, vc [F4-10] glissando thicket (thinner) ###
 music_maker = segment_maker.make_music_maker()
-music_maker.context_name = vn
+music_maker.voice_name = vn
 music_maker.stages = 4, 10
 music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
     ratios=[(2, 1), (2, 1), (1, 1, 1)],
@@ -147,7 +147,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
 segment_maker.copy_music_maker(
     vn,
     4,
-    context_name=va,
+    voice_name=va,
     division_maker__ratios=[(2, 1), (1, 1, 1), (2, 1)],
     rhythm_maker__division_masks=[BooleanPattern(indices=[0, 1], period=7)],
     )
@@ -155,14 +155,14 @@ segment_maker.copy_music_maker(
 segment_maker.copy_music_maker(
     vn,
     4,
-    context_name=vc,
+    voice_name=vc,
     division_maker__ratios=[(1, 1, 1), (2, 1), (2, 1)],
     rhythm_maker__division_masks=[BooleanPattern(indices=[2, 3], period=7)],
     )
 
 ### ob, cl [F4-11] ###
 music_maker = segment_maker.make_music_maker()
-music_maker.context_name = ob
+music_maker.voice_name = ob
 music_maker.stages = 4, 11
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[
@@ -186,7 +186,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
 segment_maker.copy_music_maker(
     ob,
     4,
-    context_name=cl,
+    voice_name=cl,
     instrument=e_flat_clarinet,
     rhythm_maker__tuplet_ratios=[
         (7, 1, 3),
@@ -204,7 +204,7 @@ segment_maker.copy_music_maker(
 
 ### pf, xyl [F8] & [F10-15] ###
 music_maker = segment_maker.make_music_maker()
-music_maker.context_name = pf
+music_maker.voice_name = pf
 music_maker.stages = 8
 music_maker.clef = 'treble'
 music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
@@ -225,7 +225,7 @@ segment_maker.copy_music_maker(pf, 8, stages=(10, 15))
 segment_maker.copy_music_maker(
     pf,
     8,
-    context_name=perc,
+    voice_name=perc,
     instrument=xylophone,
     clef='treble',
     staff_line_count=5,
@@ -237,7 +237,7 @@ segment_maker.copy_music_maker(perc, 8, stages=(10, 15))
 
 ### cl, va, vc [F13] 3rd-octave interweave ###
 music_maker = segment_maker.make_music_maker()
-music_maker.context_name = cl
+music_maker.voice_name = cl
 music_maker.instrument = bass_clarinet
 music_maker.stages = 13
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
@@ -258,21 +258,21 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
 segment_maker.copy_music_maker(
     cl,
     13,
-    context_name=va,
+    voice_name=va,
     instrument=None,
     )
 
 segment_maker.copy_music_maker(
     cl,
     13,
-    context_name=vc,
+    voice_name=vc,
     instrument=None,
     )
 
 
 ### cl, va, vc [F16-19] & [F22-23] 3rd-octave interweave ###
 music_maker = segment_maker.make_music_maker()
-music_maker.context_name = cl
+music_maker.voice_name = cl
 music_maker.stages = 16, 19
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
@@ -294,7 +294,7 @@ segment_maker.copy_music_maker(cl, 16, stages=(22, 23))
 segment_maker.copy_music_maker(
     cl,
     16,
-    context_name=va,
+    voice_name=va,
     )
 
 segment_maker.copy_music_maker(va, 16, stages=(22, 23))
@@ -302,7 +302,7 @@ segment_maker.copy_music_maker(va, 16, stages=(22, 23))
 segment_maker.copy_music_maker(
     cl,
     16,
-    context_name=vc,
+    voice_name=vc,
     )
 
 segment_maker.copy_music_maker(vc, 16, stages=(22, 23))
@@ -310,14 +310,14 @@ segment_maker.copy_music_maker(vc, 16, stages=(22, 23))
 segment_maker.copy_music_maker(
     cl,
     16,
-    context_name=pf,
+    voice_name=pf,
     stages=(16, 18),
     )
 
 
 ### ob, vn [F18-22] interweave (layer 2) ###
 music_maker = segment_maker.make_music_maker()
-music_maker.context_name = ob
+music_maker.voice_name = ob
 music_maker.stages = 18, 22
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
@@ -336,13 +336,13 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
 segment_maker.copy_music_maker(
     ob,
     18,
-    context_name=vn,
+    voice_name=vn,
     )
 
 
 ### pf [F19-20] & [F22] pointillism ###
 music_maker = segment_maker.make_music_maker()
-music_maker.context_name = pf
+music_maker.voice_name = pf
 music_maker.stages = (19, 20)
 music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
     talea=rhythmmakertools.Talea(

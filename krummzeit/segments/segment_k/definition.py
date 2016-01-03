@@ -43,7 +43,7 @@ segment_maker.tempo_map = [
 ### harpsichord ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = (1, 6)
-music_maker.context_name = pf
+music_maker.voice_name = pf
 music_maker.instrument = harpsichord
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
@@ -59,7 +59,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
 
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = (7, 12)
-music_maker.context_name = pf
+music_maker.voice_name = pf
 music_maker.instrument = piano
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
@@ -77,7 +77,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 ### xylophone ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = (1, 12)
-music_maker.context_name = perc
+music_maker.voice_name = perc
 music_maker.instrument = xylophone
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
@@ -95,7 +95,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 ### vn, va ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = (1, 10)
-music_maker.context_name = vn
+music_maker.voice_name = vn
 music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
     talea=rhythmmakertools.Talea(
         counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8], 
@@ -109,7 +109,7 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
 segment_maker.copy_music_maker(
     vn,
     1,
-    context_name=va,
+    voice_name=va,
     clef=Clef('treble'),
     rhythm_maker__split_divisions_by_counts=[8, 10],
     rhythm_maker__extra_counts_per_division=[3, 3, 2, 3, 5, 7],
@@ -120,7 +120,7 @@ segment_maker.copy_music_maker(
 segment_maker.copy_music_maker(
     pf,
     1,
-    context_name=vc,
+    voice_name=vc,
     instrument=None,
     rhythm_maker__division_masks=None,
     )
@@ -128,7 +128,7 @@ segment_maker.copy_music_maker(
 segment_maker.copy_music_maker(
     pf,
     7,
-    context_name=vc,
+    voice_name=vc,
     instrument=None,
     stages=(7, 10),
     )
@@ -136,7 +136,7 @@ segment_maker.copy_music_maker(
 ### oboe ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = (1, 10)
-music_maker.context_name = ob
+music_maker.voice_name = ob
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitByDurationsDivisionCallback(
@@ -151,7 +151,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
 ### bass clarinet ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = (1, 10)
-music_maker.context_name = cl
+music_maker.voice_name = cl
 music_maker.instrument = bass_clarinet
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     counts=[4],

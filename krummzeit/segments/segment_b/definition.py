@@ -55,7 +55,7 @@ segment_maker.tempo_map = [
 ### cello [B1-4] (3rd-octave polyphony) ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 1, 4
-music_maker.context_name = vc
+music_maker.voice_name = vc
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     counts=[2, 3, 1],
     )
@@ -80,7 +80,7 @@ segment_maker.copy_music_maker(
     vc,
     1,
     rhythm_maker__tuplet_ratios=[(1, 4)],
-    context_name=va,
+    voice_name=va,
     )
 
 ### viola [B5-8] ###
@@ -93,7 +93,7 @@ segment_maker.copy_music_maker(
 ### harpsichord [B1-4] (5th-octave polyphony) ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 1, 4
-music_maker.context_name = pf
+music_maker.voice_name = pf
 music_maker.instrument = harpsichord
 music_maker.division_maker = makertools.SplitByDurationsDivisionCallback(
     durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
@@ -135,7 +135,7 @@ music_maker.rhythm_overwrites.append((
 ### sponges [B1] & [B9-14] ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 1
-music_maker.context_name = perc
+music_maker.voice_name = perc
 music_maker.instrument = sponges
 music_maker._hide_untuned_percussion_markup = True
 music_maker.clef = 'percussion'
@@ -192,7 +192,7 @@ music_maker.rhythm_overwrites.append((
 segment_maker.copy_music_maker(
     pf,
     1,
-    context_name=cl,
+    voice_name=cl,
     instrument=e_flat_clarinet,
     stages=(3, 4),
     division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
@@ -209,7 +209,7 @@ segment_maker.copy_music_maker(
 segment_maker.copy_music_maker(
     pf,
     1,
-    context_name=vn,
+    voice_name=vn,
     instrument=None,
     division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rhythm_maker__denominators=[4, 4, 4, 16],
@@ -219,7 +219,7 @@ segment_maker.copy_music_maker(
 segment_maker.copy_music_maker(
     pf,
     1,
-    context_name=vn,
+    voice_name=vn,
     instrument=krummzeit.materials.performer_inventory.get_instrument('vn.'),
     division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rhythm_maker__denominators=[4, 4, 4, 16],
@@ -230,7 +230,7 @@ segment_maker.copy_music_maker(
 segment_maker.copy_music_maker(
     pf,
     1,
-    context_name=ob,
+    voice_name=ob,
     instrument=oboe,
     division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rhythm_maker__denominators=[4, 4, 4, 16],
@@ -240,7 +240,7 @@ segment_maker.copy_music_maker(
 ### vn, va, vc [B12-14] (white OB bowing) ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 12, 14
-music_maker.context_name = vc
+music_maker.voice_name = vc
 music_maker.division_maker=makertools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitByDurationsDivisionCallback(
@@ -259,13 +259,13 @@ music_maker.rhythm_maker=rhythmmakertools.NoteRhythmMaker(
 segment_maker.copy_music_maker(
     vc,
     12,
-    context_name=va,
+    voice_name=va,
     )
 
 segment_maker.copy_music_maker(
     vc,
     12,
-    context_name=vn,
+    voice_name=vn,
     stages=14,
     rhythm_maker__burnish_specifier=None,
     )
@@ -280,7 +280,7 @@ segment_maker.copy_music_maker(
     )
 
 music_maker = segment_maker.make_music_maker()
-music_maker.context_name = va
+music_maker.voice_name = va
 music_maker.stages = (15, 16)
 music_maker.rhythm_maker = rhythmmakertools.EvenDivisionRhythmMaker(
     denominators=[4],
@@ -290,7 +290,7 @@ music_maker.rhythm_maker = rhythmmakertools.EvenDivisionRhythmMaker(
 segment_maker.copy_music_maker(
     va,
     15,
-    context_name=vc,
+    voice_name=vc,
     stages=(15, 17),
     rhythm_maker__extra_counts_per_division=[-1, 2, -2, 1],
     )
@@ -298,7 +298,7 @@ segment_maker.copy_music_maker(
 ### pf [B16-19] & tam-tam [B16-20] ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = (16, 19)
-music_maker.context_name = pf
+music_maker.voice_name = pf
 music_maker.instrument = piano
 music_maker.clef = 'bass'
 music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
@@ -315,7 +315,7 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
 segment_maker.copy_music_maker(
     pf,
     16,
-    context_name=perc,
+    voice_name=perc,
     instrument=tam_tam,
     clef='percussion',
     stages=(16, 20),
@@ -324,7 +324,7 @@ segment_maker.copy_music_maker(
 ### vn, va, vc [B17-19] & [B20-22] pointillism ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = (17, 19)
-music_maker.context_name = va
+music_maker.voice_name = va
 music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
     talea=rhythmmakertools.Talea(
         counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8], 
@@ -338,7 +338,7 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
 segment_maker.copy_music_maker(
     va,
     17,
-    context_name=vc,
+    voice_name=vc,
     stages=(18, 19),
     rhythm_maker__division_masks=[BooleanPattern(indices=[2, 3, 4], period=6)],
     )
@@ -346,14 +346,14 @@ segment_maker.copy_music_maker(
 segment_maker.copy_music_maker(
     va,
     17,
-    context_name=vn,
+    voice_name=vn,
     stages=19,
     rhythm_maker__division_masks=[BooleanPattern(indices=[3, 4, 5], period=6)],
     )
 
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = (20, 22)
-music_maker.context_name = va
+music_maker.voice_name = va
 music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
     talea=rhythmmakertools.Talea(
         counts=[1, 1, 1, 1, 4, 4, 1, 1, 2, 2, 8, 4, 4, 1, 1, 2, 2],
@@ -371,7 +371,7 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
 segment_maker.copy_music_maker(
     va,
     20,
-    context_name=vc,
+    voice_name=vc,
     rhythm_maker__extra_counts_per_division=[4, 4, 2, 0, 2, 4],
     rhythm_maker__division_masks=[BooleanPattern(indices=[0, 2], period=7)],
     )
@@ -379,7 +379,7 @@ segment_maker.copy_music_maker(
 segment_maker.copy_music_maker(
     va,
     20,
-    context_name=vn,
+    voice_name=vn,
     rhythm_maker__extra_counts_per_division=[6, 0, 4, 4, 0, 2],
     rhythm_maker__division_masks=[BooleanPattern(indices=[3, 6], period=8)],
     )
@@ -388,7 +388,7 @@ segment_maker.copy_music_maker(
 segment_maker.copy_music_maker(
     va,
     20,
-    context_name=pf,
+    voice_name=pf,
     clef='treble',
     stages=(20, 22),
     rhythm_maker__extra_counts_per_division=[4, 0, 2, 4, 6],
@@ -405,7 +405,7 @@ segment_maker.copy_music_maker(
 ### Eb clarinet [B22-23] ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = (22, 23)
-music_maker.context_name = cl
+music_maker.voice_name = cl
 music_maker.instrument = e_flat_clarinet
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
@@ -425,7 +425,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
 ### vn [B23] circle-scraped slate ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 23
-music_maker.context_name = vn
+music_maker.voice_name = vn
 music_maker.instrument = scraped_slate
 music_maker.clef = 'percussion'
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(

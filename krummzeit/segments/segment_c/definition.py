@@ -82,7 +82,7 @@ segment_maker.tempo_map = [
 ### ob, cl [C1] ornamented, unadorned ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 1
-music_maker.context_name = ob
+music_maker.voice_name = ob
 music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
     talea=rhythmmakertools.Talea(
         counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8], 
@@ -98,7 +98,7 @@ segment_maker.copy_music_maker(ob, 20, stages=(26, 27))
 
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 1
-music_maker.context_name = cl
+music_maker.voice_name = cl
 music_maker.instrument = e_flat_clarinet
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
@@ -114,7 +114,7 @@ segment_maker.copy_music_maker(cl, 1, stages=(26, 27))
 ### vn [C1-3] scraped slate ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = (1, 17)
-music_maker.context_name = vn
+music_maker.voice_name = vn
 music_maker.instrument = scraped_slate
 music_maker._hide_untuned_percussion_markup = True
 music_maker.clef = 'percussion'
@@ -127,7 +127,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
 ### perc [C4-5] scraped slate ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = (18, 20)
-music_maker.context_name = perc
+music_maker.voice_name = perc
 music_maker.instrument = scraped_slate
 music_maker.clef = 'percussion'
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
@@ -139,7 +139,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
 ### va, vc [C2-4] color pedals ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 3
-music_maker.context_name = va
+music_maker.voice_name = va
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[
         (2, 1),
@@ -178,7 +178,7 @@ segment_maker.copy_music_maker(
 segment_maker.copy_music_maker(
     va,
     3,
-    context_name=vc,
+    voice_name=vc,
     rhythm_maker__tuplet_ratios=[(1, 4)],
     )
 
@@ -196,7 +196,7 @@ segment_maker.copy_music_maker(
     va,
     3,
     stages=(11, 19),
-    context_name=vc,
+    voice_name=vc,
     rhythm_maker__tuplet_ratios=[
         (1, 4),
         (1,),
@@ -208,7 +208,7 @@ segment_maker.copy_music_maker(
 ### pf, xyl [C3] points ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 11
-music_maker.context_name = pf
+music_maker.voice_name = pf
 music_maker.instrument = piano
 music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
     ratios=[(1, 2)],
@@ -240,7 +240,7 @@ segment_maker.copy_music_maker(pf, 13, stages=27)
 segment_maker.copy_music_maker(
     pf,
     11,
-    context_name=perc,
+    voice_name=perc,
     instrument=xylophone,
     clef='treble',
     staff_line_count=5,
@@ -271,7 +271,7 @@ segment_maker.copy_music_maker(perc, 11, stages=26)
 
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = (27, 30)
-music_maker.context_name = perc
+music_maker.voice_name = perc
 music_maker.instrument = snare_drum
 music_maker.clef = 'percussion'
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
@@ -283,7 +283,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
 ### vn [C4-8] ornanmented 6.1 ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = (19, 22)
-music_maker.context_name = vn
+music_maker.voice_name = vn
 music_maker.instrument = violin
 music_maker.clef = 'treble'
 music_maker.staff_line_count = 5
@@ -299,7 +299,7 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
 ### vn, va, vc [C8-11] unrestrained ###
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = (26, 29)
-music_maker.context_name = va
+music_maker.voice_name = va
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
     secondary_division_maker=makertools.SplitByDurationsDivisionCallback(
@@ -311,7 +311,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 segment_maker.copy_music_maker(
     va,
     26,
-    context_name=vc,
+    voice_name=vc,
     division_maker__secondary_division_maker__durations=[(2, 1), (3, 2), (1, 1)],
     )
 
@@ -319,7 +319,7 @@ segment_maker.copy_music_maker(
     va,
     26,
     stages=(28, 29),
-    context_name=vn,
+    voice_name=vn,
     division_maker__secondary_division_maker__durations=[(3, 2), (1, 1), (2, 1)],
     )
 

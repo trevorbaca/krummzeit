@@ -228,11 +228,11 @@ class SegmentMaker(makertools.SegmentMaker):
             start_stage, stop_stage = scope.stages
             offsets = self._get_offsets(start_stage, stop_stage)
             timespan = timespantools.Timespan(*offsets)
-            timespan_map.append((scope.context_name, timespan))
+            timespan_map.append((scope.voice_name, timespan))
             timespans.append(timespan)
         compound_scope._timespan_map = timespan_map
-        context_names = [_[0] for _ in timespan_map]
-        compound_scope._context_names = tuple(context_names)
+        voice_names = [_[0] for _ in timespan_map]
+        compound_scope._voice_names = tuple(voice_names)
         logical_ties = []
         if include_rests:
             prototype = (scoretools.Note, scoretools.Chord, scoretools.Rest)
@@ -262,10 +262,10 @@ class SegmentMaker(makertools.SegmentMaker):
             lilypond_file.header_block.title = None
             lilypond_file.header_block.composer = None
 
-    def _get_music_makers_for_context(self, context_name):
+    def _get_music_makers_for_context(self, voice_name):
         music_makers = []
         for music_maker in self.music_makers:
-            if music_maker.context_name == context_name:
+            if music_maker.voice_name == voice_name:
                 music_makers.append(music_maker)
         return music_makers
 
@@ -376,7 +376,7 @@ class SegmentMaker(makertools.SegmentMaker):
             message = '\t\t{} {!r} ... '
             if isinstance(music_handler.scope, baca.tools.SimpleScope):
                 message = message.format(
-                    music_handler.scope.context_name,
+                    music_handler.scope.voice_name,
                     music_handler.scope.stages,
                     )
                 print(message, end='')
@@ -384,14 +384,14 @@ class SegmentMaker(makertools.SegmentMaker):
                 for simple_scope in music_handler.scope.simple_scopes[:-1]:
                     message = '\t\t{} {!r} ...'
                     message = message.format(
-                        simple_scope.context_name,
+                        simple_scope.voice_name,
                         simple_scope.stages,
                         )
                     print(message)
                 last_scope = music_handler.scope.simple_scopes[-1]
                 message = '\t\t{} {!r} ... '
                 message = message.format(
-                    last_scope.context_name,
+                    last_scope.voice_name,
                     last_scope.stages,
                     )
                 print(message, end='')
@@ -479,9 +479,9 @@ class SegmentMaker(makertools.SegmentMaker):
         self._lilypond_file = lilypond_file
             
     def _make_music_for_time_signature_context(self):
-        context_name = 'Time Signature Context'
-        context = self._score[context_name]
-        music_makers = self._get_music_makers_for_context(context_name)
+        voice_name = 'Time Signature Context'
+        context = self._score[voice_name]
+        music_makers = self._get_music_makers_for_context(voice_name)
         for music_maker in music_makers:
             if music_maker.start_tempo is not None:
                 start_tempo = new(music_maker.start_tempo)
@@ -729,26 +729,26 @@ class SegmentMaker(makertools.SegmentMaker):
 
     ### PUBLIC METHODS ###
 
-    def copy_music_maker(self, _context_name, _stage, **kwargs):
-        r'''Gets music-maker with `_context_name` defined for `_stage`.
+    def copy_music_maker(self, _voice_name, _stage, **kwargs):
+        r'''Gets music-maker with `_voice_name` defined for `_stage`.
         Then makes new music-maker from this with optional `kwargs`.
 
         Short-cut for get-then-new.
 
-        Uses private positional argument names `_context_name` and `_stage` 
-        to avoid aliasing public keyword argument names `context_name`
+        Uses private positional argument names `_voice_name` and `_stage` 
+        to avoid aliasing public keyword argument names `voice_name`
         and `stage`.
 
         Returns music-maker.
         '''
-        music_maker = self.get_music_maker(_context_name, _stage)
+        music_maker = self.get_music_maker(_voice_name, _stage)
         music_maker = copy.deepcopy(music_maker)
         new_music_maker = new(music_maker, **kwargs)
         self.music_makers.append(new_music_maker)
         return new_music_maker
 
-    def get_music_maker(self, context_name, stage):
-        r'''Gets music-maker with `context_name` defined for `stage`.
+    def get_music_maker(self, voice_name, stage):
+        r'''Gets music-maker with `voice_name` defined for `stage`.
 
         Returns music-maker.
 
@@ -756,13 +756,13 @@ class SegmentMaker(makertools.SegmentMaker):
         '''
         music_makers = []
         for music_maker in self.music_makers:
-            if music_maker.context_name == context_name:
+            if music_maker.voice_name == voice_name:
                 start = music_maker.start_stage
                 stop = music_maker.stop_stage + 1
                 if stage in range(start, stop):
                     return music_maker
         message = 'no music-maker for {!r} found for stage {}.'
-        message = message.format(context_name, stage)
+        message = message.format(voice_name, stage)
         raise KeyError(message)
 
     def make_music_handler(

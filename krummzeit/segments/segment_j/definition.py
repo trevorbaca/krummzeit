@@ -59,7 +59,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     ob,
     1,
     voice_name=cl,
@@ -84,7 +84,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     pf,
     1,
     voice_name=perc,
@@ -107,13 +107,13 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     division_masks=[BooleanPattern(indices=[-1])],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     1,
     voice_name=va,
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     1,
     voice_name=vc,
@@ -145,13 +145,13 @@ music_maker.division_maker = makertools.SplitByDurationsDivisionCallback(
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     5,
     voice_name=va,
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     5,
     voice_name=vc,
@@ -175,7 +175,7 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
     )
 
 ### pf [J6] & [J8-14] (8.1) clusters ###
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     pf,
     3,
     instrument=piano,
@@ -228,14 +228,14 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
     extra_counts_per_division=[2, 2, 0, 2, 4, 6],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     15,
     voice_name=va,
     rhythm_maker__split_divisions_by_counts=[8, 10],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     15,
     voice_name=vc,

@@ -71,13 +71,13 @@ music_maker.division_maker = makertools.SplitByDurationsDivisionCallback(
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker() 
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     1,
     voice_name=vc,
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     1,
     voice_name=va,
@@ -115,21 +115,21 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     division_masks=[BooleanPattern(indices=[5, 6], period=7)],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     4,
     stages=(5, 7),
     rhythm_maker__division_masks=[BooleanPattern(indices=[0])],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     4,
     voice_name=vn,
     stages=6,
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     4,
     voice_name=vc,
@@ -138,14 +138,14 @@ segment_maker.copy_music_maker(
     rhythm_maker__division_masks=[BooleanPattern(indices=[0, 1, 2])],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     5,
     voice_name=vn,
     stages=7,
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     5,
     voice_name=vc,
@@ -157,14 +157,14 @@ segment_maker.copy_music_maker(
         ],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     4,
     stages=9,
     rhythm_maker__division_masks=None,
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     4,
     voice_name=vn,
@@ -173,7 +173,7 @@ segment_maker.copy_music_maker(
     rhythm_maker__division_masks=None,
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     4,
     voice_name=vc,
@@ -200,7 +200,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     pf,
     8,
     voice_name=perc,
@@ -211,14 +211,14 @@ segment_maker.copy_music_maker(
     )
 
 ### pf, xyl [E10-11] ###
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     pf,
     8,
     stages=(10, 11),
     rhythm_maker__division_masks=[BooleanPattern(indices=[2], period=7)],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     perc,
     8,
     stages=(10, 11),
@@ -248,7 +248,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     ob,
     5,
     voice_name=cl,
@@ -266,13 +266,13 @@ segment_maker.copy_music_maker(
     rhythm_maker__division_masks=[BooleanPattern(indices=[0])],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     ob,
     5,
     stages=(10, 12),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     cl,
     5,
     stages=(10, 12),
@@ -294,13 +294,13 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
     division_masks=[BooleanPattern(indices=[2], period=5)],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     11,
     voice_name=va,
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     11,
     voice_name=vc,
@@ -323,19 +323,19 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     13,
     voice_name=va,
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     13,
     voice_name=vc,
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     13,
     voice_name=pf,
@@ -343,7 +343,7 @@ segment_maker.copy_music_maker(
     )
 
 ### pf [E4-7] ###
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     4,
     voice_name=pf,
@@ -356,7 +356,7 @@ segment_maker.copy_music_maker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     5,
     voice_name=pf,
@@ -368,7 +368,7 @@ segment_maker.copy_music_maker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     9,
     voice_name=pf,

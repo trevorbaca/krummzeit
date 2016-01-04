@@ -94,7 +94,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
     )
 
 ### Eb clarinet [H9-12] 5th-octave counterpoint ###
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     ob,
     9,
     voice_name=cl,
@@ -104,7 +104,7 @@ segment_maker.copy_music_maker(
     )
 
 ### bass clarinet [H18-21] reiteration pedal ###
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     ob,
     18,
     voice_name=cl,
@@ -166,7 +166,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
     )
 
 ### vn [H5-12] 5th-octave counterpoint ###
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     pf,
     5,
     stages=(5, 12),
@@ -194,7 +194,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     14,
     stages=(14, 19),
@@ -202,7 +202,7 @@ segment_maker.copy_music_maker(
     division_maker__ratios=[(2, 1), (1, 1, 1), (1, 2)],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     14,
     voice_name=vc,
@@ -221,7 +221,7 @@ music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     1,
     stages=(1, 9),
@@ -247,7 +247,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     11,
     voice_name=vc,
@@ -270,7 +270,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     21,
     stages=(20, 21),
@@ -279,7 +279,7 @@ segment_maker.copy_music_maker(
     rhythm_maker__tuplet_ratios=[(1, 4)],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     21,
     voice_name=vc,

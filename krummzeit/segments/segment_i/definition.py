@@ -51,25 +51,25 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(vn, 1, stages=(6, 8))
+segment_maker.copy_rhythm_maker(vn, 1, stages=(6, 8))
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     1,
     voice_name=va,
     rhythm_maker__tuplet_ratios=[(1, 4)],
     )
 
-segment_maker.copy_music_maker(va, 1, stages=(6, 8))
+segment_maker.copy_rhythm_maker(va, 1, stages=(6, 8))
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     1,
     voice_name=vc,
     rhythm_maker__tuplet_ratios=[(2, 3)],
     )
 
-segment_maker.copy_music_maker(vc, 1, stages=(6, 8))
+segment_maker.copy_rhythm_maker(vc, 1, stages=(6, 8))
 
 ### vn, va, vc [I2-4] & [I6-8] thicket ###
 music_maker = segment_maker.make_rhythm_maker()
@@ -89,14 +89,14 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     2,
     voice_name=va,
     division_maker__ratios=[(2, 1), (1, 1, 1), (1, 2)],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     2,
     voice_name=vc,
@@ -145,7 +145,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     ob,
     3,
     stages=(3, 4),
@@ -169,7 +169,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     ob,
     7,
     voice_name=cl,
@@ -194,7 +194,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     pf,
     8,
     voice_name=perc,

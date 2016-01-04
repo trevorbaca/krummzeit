@@ -63,7 +63,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     division_masks=[BooleanPattern(indices=[3, 4], period=6)],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     ob,
     1,
     stages=2,
@@ -101,10 +101,10 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(vn, 2, voice_name=va)
-segment_maker.copy_music_maker(vn, 2, voice_name=vc)
+segment_maker.copy_rhythm_maker(vn, 2, voice_name=va)
+segment_maker.copy_rhythm_maker(vn, 2, voice_name=vc)
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     2,
     voice_name=pf,
@@ -125,7 +125,7 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
     extra_counts_per_division=[2, 1, 0],
     )
 
-segment_maker.copy_music_maker(perc, 2, stages=(17, 22))
+segment_maker.copy_rhythm_maker(perc, 2, stages=(17, 22))
 
 
 ## vn, va, vc [F4-10] glissando thicket (thinner) ###
@@ -144,7 +144,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     division_masks=[BooleanPattern(indices=[5, 6], period=7)],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     4,
     voice_name=va,
@@ -152,7 +152,7 @@ segment_maker.copy_music_maker(
     rhythm_maker__division_masks=[BooleanPattern(indices=[0, 1], period=7)],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     4,
     voice_name=vc,
@@ -183,7 +183,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     ob,
     4,
     voice_name=cl,
@@ -220,9 +220,9 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(pf, 8, stages=(10, 15))
+segment_maker.copy_rhythm_maker(pf, 8, stages=(10, 15))
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     pf,
     8,
     voice_name=perc,
@@ -232,7 +232,7 @@ segment_maker.copy_music_maker(
     division_maker__ratios=[(2, 1), (1, 2)],
     )
 
-segment_maker.copy_music_maker(perc, 8, stages=(10, 15))
+segment_maker.copy_rhythm_maker(perc, 8, stages=(10, 15))
 
 
 ### cl, va, vc [F13] 3rd-octave interweave ###
@@ -255,14 +255,14 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     cl,
     13,
     voice_name=va,
     instrument=None,
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     cl,
     13,
     voice_name=vc,
@@ -289,25 +289,25 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(cl, 16, stages=(22, 23))
+segment_maker.copy_rhythm_maker(cl, 16, stages=(22, 23))
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     cl,
     16,
     voice_name=va,
     )
 
-segment_maker.copy_music_maker(va, 16, stages=(22, 23))
+segment_maker.copy_rhythm_maker(va, 16, stages=(22, 23))
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     cl,
     16,
     voice_name=vc,
     )
 
-segment_maker.copy_music_maker(vc, 16, stages=(22, 23))
+segment_maker.copy_rhythm_maker(vc, 16, stages=(22, 23))
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     cl,
     16,
     voice_name=pf,
@@ -333,7 +333,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     ob,
     18,
     voice_name=vn,
@@ -354,7 +354,7 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
     division_masks=[BooleanPattern(indices=[0, 4, 5], period=6)],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     pf,
     19,
     stages=22,

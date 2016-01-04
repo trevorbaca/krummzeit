@@ -91,10 +91,10 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
     split_divisions_by_counts=[6, 18],
     extra_counts_per_division=[2, 2, 0, 2, 4, 6],
     )
-segment_maker.copy_music_maker(ob, 1, stages=3)
-segment_maker.copy_music_maker(ob, 1, stages=(20, 22))
-segment_maker.copy_music_maker(ob, 20, stages=24)
-segment_maker.copy_music_maker(ob, 20, stages=(26, 27))
+segment_maker.copy_rhythm_maker(ob, 1, stages=3)
+segment_maker.copy_rhythm_maker(ob, 1, stages=(20, 22))
+segment_maker.copy_rhythm_maker(ob, 20, stages=24)
+segment_maker.copy_rhythm_maker(ob, 20, stages=(26, 27))
 
 music_maker = segment_maker.make_rhythm_maker()
 music_maker.stages = 1
@@ -107,9 +107,9 @@ music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
         ),
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
-segment_maker.copy_music_maker(cl, 1, stages=(20, 22))
-segment_maker.copy_music_maker(cl, 1, stages=24)
-segment_maker.copy_music_maker(cl, 1, stages=(26, 27))
+segment_maker.copy_rhythm_maker(cl, 1, stages=(20, 22))
+segment_maker.copy_rhythm_maker(cl, 1, stages=24)
+segment_maker.copy_rhythm_maker(cl, 1, stages=(26, 27))
 
 ### vn [C1-3] scraped slate ###
 music_maker = segment_maker.make_rhythm_maker()
@@ -153,17 +153,17 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     3,
     stages=5,
     rhythm_maker__tuplet_ratios=[(1, 4)],
     )
 
-segment_maker.copy_music_maker(va, 3, stages=7)
-segment_maker.copy_music_maker(va, 5, stages=9)
+segment_maker.copy_rhythm_maker(va, 3, stages=7)
+segment_maker.copy_rhythm_maker(va, 5, stages=9)
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     3,
     stages=(11, 19),
@@ -175,24 +175,24 @@ segment_maker.copy_music_maker(
         ],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     3,
     voice_name=vc,
     rhythm_maker__tuplet_ratios=[(1, 4)],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vc,
     3,
     stages=5,
     rhythm_maker__tuplet_ratios=[(2, 1)],
     )
 
-segment_maker.copy_music_maker(vc, 3, stages=7)
-segment_maker.copy_music_maker(vc, 5, stages=9)
+segment_maker.copy_rhythm_maker(vc, 3, stages=7)
+segment_maker.copy_rhythm_maker(vc, 5, stages=9)
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     3,
     stages=(11, 19),
@@ -223,21 +223,21 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     pf,
     11,
     stages=13,
     division_maker__ratios=[(2, 1)],
     )
 
-segment_maker.copy_music_maker(pf, 11, stages=15)
-segment_maker.copy_music_maker(pf, 13, stages=17)
-segment_maker.copy_music_maker(pf, 11, stages=22)
-segment_maker.copy_music_maker(pf, 13, stages=24)
-segment_maker.copy_music_maker(pf, 11, stages=26)
-segment_maker.copy_music_maker(pf, 13, stages=27)
+segment_maker.copy_rhythm_maker(pf, 11, stages=15)
+segment_maker.copy_rhythm_maker(pf, 13, stages=17)
+segment_maker.copy_rhythm_maker(pf, 11, stages=22)
+segment_maker.copy_rhythm_maker(pf, 13, stages=24)
+segment_maker.copy_rhythm_maker(pf, 11, stages=26)
+segment_maker.copy_rhythm_maker(pf, 13, stages=27)
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     pf,
     11,
     voice_name=perc,
@@ -247,7 +247,7 @@ segment_maker.copy_music_maker(
     division_maker__ratios=[(2, 1)],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     perc,
     11,
     stages=13,
@@ -257,17 +257,17 @@ segment_maker.copy_music_maker(
     division_maker__ratios=[(1, 2)],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     perc,
     13,
     stages=15,
     division_maker__ratios=[(2, 1)],
     )
 
-segment_maker.copy_music_maker(perc, 13, stages=17)
-segment_maker.copy_music_maker(perc, 11, stages=22)
-segment_maker.copy_music_maker(perc, 13, stages=24)
-segment_maker.copy_music_maker(perc, 11, stages=26)
+segment_maker.copy_rhythm_maker(perc, 13, stages=17)
+segment_maker.copy_rhythm_maker(perc, 11, stages=22)
+segment_maker.copy_rhythm_maker(perc, 13, stages=24)
+segment_maker.copy_rhythm_maker(perc, 11, stages=26)
 
 music_maker = segment_maker.make_rhythm_maker()
 music_maker.stages = (27, 30)
@@ -308,14 +308,14 @@ music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     26,
     voice_name=vc,
     division_maker__secondary_division_maker__durations=[(2, 1), (3, 2), (1, 1)],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     26,
     stages=(28, 29),

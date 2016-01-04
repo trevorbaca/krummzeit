@@ -69,14 +69,14 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     )
 
 ### cello [B5-8] ###
-music_maker = segment_maker.copy_music_maker(
+music_maker = segment_maker.copy_rhythm_maker(
     vc,
     1,
     stages=(5, 8),
     )
 
 ### viola [B1-4] (3rd-octave polyphony) ###
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vc,
     1,
     rhythm_maker__tuplet_ratios=[(1, 4)],
@@ -84,7 +84,7 @@ segment_maker.copy_music_maker(
     )
 
 ### viola [B5-8] ###
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     1,
     stages=(5, 8),
@@ -109,7 +109,7 @@ music_maker.rhythm_maker = rhythmmakertools.EvenDivisionRhythmMaker(
     )
 
 ### harpsichord [B5-8] ###
-music_maker = segment_maker.copy_music_maker(
+music_maker = segment_maker.copy_rhythm_maker(
     pf,
     1,
     stages=(5, 8),
@@ -144,21 +144,21 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
     extra_counts_per_division=[2, 1, 0],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     perc,
     1,
     stages=(9, 14),
     )
 
 ### cello, viola [B9] ###
-music_maker = segment_maker.copy_music_maker(
+music_maker = segment_maker.copy_rhythm_maker(
     vc,
     1,
     stages=9,
     rhythm_maker__tuplet_ratios=[(4, 1, 2)],
     )
 
-music_maker = segment_maker.copy_music_maker(
+music_maker = segment_maker.copy_rhythm_maker(
     va,
     1,
     stages=9,
@@ -166,7 +166,7 @@ music_maker = segment_maker.copy_music_maker(
     )
 
 ### harpsichord [B9] ###
-music_maker = segment_maker.copy_music_maker(
+music_maker = segment_maker.copy_rhythm_maker(
     pf,
     1,
     stages=(9, 10),
@@ -189,7 +189,7 @@ music_maker.rhythm_overwrites.append((
     ))
 
 ### Eb clarinet [B3-4] & [B7-12] ###
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     pf,
     1,
     voice_name=cl,
@@ -199,14 +199,14 @@ segment_maker.copy_music_maker(
     rhythm_maker__denominators=[4, 4, 4, 8],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     cl,
     3,
     stages=(7, 12),
     )
 
 ### violin [B4] & [B8-13] ###
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     pf,
     1,
     voice_name=vn,
@@ -216,7 +216,7 @@ segment_maker.copy_music_maker(
     stages=4,
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     pf,
     1,
     voice_name=vn,
@@ -227,7 +227,7 @@ segment_maker.copy_music_maker(
     )
 
 ### oboe [B9-13] ###
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     pf,
     1,
     voice_name=ob,
@@ -256,13 +256,13 @@ music_maker.rhythm_maker=rhythmmakertools.NoteRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vc,
     12,
     voice_name=va,
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vc,
     12,
     voice_name=vn,
@@ -271,7 +271,7 @@ segment_maker.copy_music_maker(
     )
 
 ### vn, va, vc [B15-19] ###
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     14,
     stages=(15, 18),
@@ -287,7 +287,7 @@ music_maker.rhythm_maker = rhythmmakertools.EvenDivisionRhythmMaker(
     extra_counts_per_division=[1, -1, 2, -2],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     15,
     voice_name=vc,
@@ -312,7 +312,7 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
         ),
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     pf,
     16,
     voice_name=perc,
@@ -335,7 +335,7 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
     division_masks=[BooleanPattern(indices=[1, 2, 3], period=6)],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     17,
     voice_name=vc,
@@ -343,7 +343,7 @@ segment_maker.copy_music_maker(
     rhythm_maker__division_masks=[BooleanPattern(indices=[2, 3, 4], period=6)],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     17,
     voice_name=vn,
@@ -368,7 +368,7 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
     division_masks=[BooleanPattern(indices=[2, 3], period=6)],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     20,
     voice_name=vc,
@@ -376,7 +376,7 @@ segment_maker.copy_music_maker(
     rhythm_maker__division_masks=[BooleanPattern(indices=[0, 2], period=7)],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     20,
     voice_name=vn,
@@ -385,7 +385,7 @@ segment_maker.copy_music_maker(
     )
 
 ### pf [B20-22] ###
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     va,
     20,
     voice_name=pf,
@@ -395,7 +395,7 @@ segment_maker.copy_music_maker(
     rhythm_maker__division_masks=[BooleanPattern(indices=[1, 5], period=7)],
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     pf,
     20,
     stages=23,

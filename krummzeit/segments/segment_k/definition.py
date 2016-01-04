@@ -106,7 +106,7 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
     rest_tied_notes=True,
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     vn,
     1,
     voice_name=va,
@@ -117,7 +117,7 @@ segment_maker.copy_music_maker(
     )
 
 ### vc ###
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     pf,
     1,
     voice_name=vc,
@@ -125,7 +125,7 @@ segment_maker.copy_music_maker(
     rhythm_maker__division_masks=None,
     )
 
-segment_maker.copy_music_maker(
+segment_maker.copy_rhythm_maker(
     pf,
     7,
     voice_name=vc,

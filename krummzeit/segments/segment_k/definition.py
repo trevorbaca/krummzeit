@@ -31,7 +31,7 @@ assert segment_maker.stage_count == 12
 assert segment_maker.validate_time_signatures()
 
 ### TEMPO MAP ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 segment_maker.tempo_map = [
     (1, krummzeit.materials.named_tempo_inventory['144']),
     ]
@@ -41,7 +41,7 @@ segment_maker.tempo_map = [
 ###############################################################################
 
 ### harpsichord ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = (1, 6)
 music_maker.voice_name = pf
 music_maker.instrument = harpsichord
@@ -57,7 +57,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
     division_masks=[BooleanPattern(indices=[-1])],
     )
 
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = (7, 12)
 music_maker.voice_name = pf
 music_maker.instrument = piano
@@ -75,7 +75,7 @@ music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 
 ### xylophone ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = (1, 12)
 music_maker.voice_name = perc
 music_maker.instrument = xylophone
@@ -93,7 +93,7 @@ music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 
 ### vn, va ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = (1, 10)
 music_maker.voice_name = vn
 music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
@@ -134,7 +134,7 @@ segment_maker.copy_music_maker(
     )
 
 ### oboe ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = (1, 10)
 music_maker.voice_name = ob
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
@@ -149,7 +149,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
     )
 
 ### bass clarinet ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = (1, 10)
 music_maker.voice_name = cl
 music_maker.instrument = bass_clarinet

@@ -2,7 +2,7 @@
 from abjad import *
 
 
-class MusicMaker(abctools.AbjadObject):
+class RhythmMaker(abctools.AbjadObject):
     r'''Krummzeit music-maker.
 
     ..  container:: example
@@ -10,7 +10,7 @@ class MusicMaker(abctools.AbjadObject):
         ::
 
             >>> import krummzeit
-            >>> music_maker = krummzeit.tools.MusicMaker()
+            >>> music_maker = krummzeit.tools.RhythmMaker()
             >>> music_maker.voice_name = 'Cello Music Voice'
             >>> music_maker.stages = 1, 4
             >>> music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
@@ -21,7 +21,7 @@ class MusicMaker(abctools.AbjadObject):
         ::
 
             >>> print(format(music_maker, 'storage'))
-            krummzeit.tools.MusicMaker(
+            krummzeit.tools.RhythmMaker(
                 voice_name='Cello Music Voice',
                 division_maker=makertools.FuseByCountsDivisionCallback(
                     counts=[2, 3, 1],

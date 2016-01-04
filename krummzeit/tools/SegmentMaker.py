@@ -411,7 +411,7 @@ class SegmentMaker(makertools.SegmentMaker):
         music_makers = music_makers or []
         music_makers = list(music_makers)
         for music_maker in music_makers:
-            assert isinstance(music_maker, krummzeit.tools.MusicMaker)
+            assert isinstance(music_maker, krummzeit.tools.RhythmMaker)
         self._music_makers = music_makers
 
     def _initialize_time_signatures(self, time_signatures):
@@ -805,7 +805,7 @@ class SegmentMaker(makertools.SegmentMaker):
         Returns music-maker.
         '''
         import krummzeit
-        music_maker = krummzeit.tools.MusicMaker()
+        music_maker = krummzeit.tools.RhythmMaker()
         self.music_makers.append(music_maker)
         return music_maker
 

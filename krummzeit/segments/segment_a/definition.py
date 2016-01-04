@@ -25,7 +25,7 @@ assert segment_maker.stage_count == 10
 assert segment_maker.validate_time_signatures()
 
 ### TEMPO MAP ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 segment_maker.tempo_map = [
     (1, krummzeit.materials.named_tempo_inventory['135']),
     (2, Fermata('shortfermata')),
@@ -42,7 +42,7 @@ segment_maker.tempo_map = [
 ###############################################################################
 
 ### vn, va, vc [A1] tremolo clusters (11.1) ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = 1
 music_maker.voice_name = vn
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
@@ -70,7 +70,7 @@ segment_maker.copy_music_maker(
     )
 
 ### vn, va, vc thicket ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = 3, 7
 music_maker.voice_name = vn
 music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
@@ -104,14 +104,14 @@ segment_maker.copy_music_maker(
     )
 
 ### bass cl [A2-6] pedals ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = 3, 4
 music_maker.voice_name = cl
 music_maker.instrument = bass_clarinet
 music_maker.rhythm_maker = tied_notes
 
 ### pf [A2] single cluster (8.1) ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = 1
 music_maker.voice_name = pf
 music_maker.instrument = piano
@@ -121,7 +121,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
     )
 
 ### repeated pf cluster ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = 3
 music_maker.voice_name = pf
 music_maker.instrument = piano
@@ -138,7 +138,7 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
     )
 
 ### (14.1) pf, xylophone reiteration [A5] ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = 6
 music_maker.voice_name = pf
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
@@ -162,7 +162,7 @@ segment_maker.copy_music_maker(
     )
 
 ### sponges [A6-8] ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = (9, 10)
 music_maker.voice_name = perc
 music_maker.instrument = sponges

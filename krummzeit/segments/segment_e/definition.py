@@ -28,7 +28,7 @@ assert segment_maker.stage_count == 13
 assert segment_maker.validate_time_signatures()
 
 ### TEMPO MAP ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 segment_maker.tempo_map = [
     (1, krummzeit.materials.named_tempo_inventory['36']),
     (4, Accelerando()),
@@ -44,7 +44,7 @@ segment_maker.tempo_map = [
 ###############################################################################
 
 ### tam-tam [E1] ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = 1
 music_maker.voice_name = perc
 music_maker.instrument = tam_tam
@@ -63,7 +63,7 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
     )
 
 ### vn, vc [E1-5] & va [E1-3] (white OB bowing) ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = 1, 5
 music_maker.voice_name = vn
 music_maker.division_maker = makertools.SplitByDurationsDivisionCallback(
@@ -85,7 +85,7 @@ segment_maker.copy_music_maker(
     )
 
 ### sponges [E3-6] ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = 3, 6
 music_maker.voice_name = perc
 music_maker.instrument = sponges
@@ -96,7 +96,7 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
     )
 
 ### va [E4-7] glissando thicket ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = 4
 music_maker.voice_name = va
 music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
@@ -183,7 +183,7 @@ segment_maker.copy_music_maker(
     )
 
 ### pf, xyl [E8] ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = 8
 music_maker.voice_name = pf
 music_maker.instrument = piano
@@ -226,7 +226,7 @@ segment_maker.copy_music_maker(
     )
 
 ### ob, cl [E5-7] & [E10-12] ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = (5, 7)
 music_maker.voice_name = ob
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
@@ -279,7 +279,7 @@ segment_maker.copy_music_maker(
     )
 
 ### vn, va, vc [E11] & vn, va, vc, pf [E13] ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = 11
 music_maker.voice_name = vn
 music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
@@ -306,7 +306,7 @@ segment_maker.copy_music_maker(
     voice_name=vc,
     )
 
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = 13
 music_maker.voice_name = vn
 music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
@@ -641,7 +641,7 @@ segment_maker.make_music_handler(
     )
 
 ### suspended cymbal ###
-music_maker = segment_maker.make_music_maker()
+music_maker = segment_maker.make_rhythm()
 music_maker.stages = (12, 13)
 music_maker.voice_name = perc
 music_maker.instrument = suspended_cymbal

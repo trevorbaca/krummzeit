@@ -25,7 +25,7 @@ segment_maker.measures_per_stage = [
 measure_count = sum(segment_maker.measures_per_stage)
 assert segment_maker.measure_count == 19
 assert segment_maker.stage_count == 17
-assert segment_maker.validate_time_signatures()
+segment_maker.validate_measures_per_stage()
 
 ### TEMPO MAP ###
 music_maker = segment_maker.make_rhythm_maker()

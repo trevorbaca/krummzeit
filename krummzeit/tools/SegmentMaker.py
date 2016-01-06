@@ -822,7 +822,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._music_handlers.append(pitch_handler)
         return pitch_handler
 
-    def validate_time_signatures(self):
+    def validate_measures_per_stage(self):
         r'''Is true when the sum of all measures per stage equals
         total number of measures in segment. Otherwise false.
 

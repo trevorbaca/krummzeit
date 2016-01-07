@@ -765,7 +765,7 @@ class SegmentMaker(makertools.SegmentMaker):
         message = message.format(voice_name, stage)
         raise KeyError(message)
 
-    def make_specifiers(
+    def make_scoped_specifiers(
         self, 
         scope, 
         specifiers,

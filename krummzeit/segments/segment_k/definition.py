@@ -171,13 +171,13 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(pf, (1, 12)),
     specifiers=[
         stem_tremolo,
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(pf, (7, 12)),
     specifiers=[
         ffff_possibile,
@@ -193,7 +193,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(perc, (1, 12)),
     specifiers=[
         Dynamic('fff'),
@@ -213,7 +213,7 @@ segment_maker.make_pitch_handler(
             ),
         ]
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=([vn, va], (1, 10)),
     specifiers=[
         Dynamic('ff'),
@@ -243,7 +243,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(vc, (1, 6)),
     specifiers=[
         Dynamic('fff'),
@@ -256,7 +256,7 @@ segment_maker.make_specifiers(
         #markup_padding(4),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(vc, (7, 12)),
     specifiers=[
         Dynamic('ff'),
@@ -273,7 +273,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(ob, (1, 12)),
     specifiers=[
         Dynamic('fff'),
@@ -290,7 +290,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(cl, (1, 12)),
     specifiers=[
         Dynamic('f'),

@@ -24,7 +24,7 @@ assert segment_maker.stage_count == 8
 segment_maker.validate_measures_per_stage()
 
 ### TEMPO MAP ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 segment_maker.tempo_map = [
     (1, krummzeit.materials.named_tempo_inventory['90']),
     (1, Accelerando()),
@@ -36,7 +36,7 @@ segment_maker.tempo_map = [
 ###############################################################################
 
 ### vn, va, vc [I1] reiteration ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 1
 music_maker.voice_name = vn
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
@@ -51,28 +51,28 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_rhythm_maker(vn, 1, stages=(6, 8))
+segment_maker.copy_rhythm(vn, 1, stages=(6, 8))
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     vn,
     1,
     voice_name=va,
     rhythm_maker__tuplet_ratios=[(1, 4)],
     )
 
-segment_maker.copy_rhythm_maker(va, 1, stages=(6, 8))
+segment_maker.copy_rhythm(va, 1, stages=(6, 8))
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     vn,
     1,
     voice_name=vc,
     rhythm_maker__tuplet_ratios=[(2, 3)],
     )
 
-segment_maker.copy_rhythm_maker(vc, 1, stages=(6, 8))
+segment_maker.copy_rhythm(vc, 1, stages=(6, 8))
 
 ### vn, va, vc [I2-4] & [I6-8] thicket ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = (2, 4)
 music_maker.voice_name = vn
 music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
@@ -89,14 +89,14 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     vn,
     2,
     voice_name=va,
     division_maker__ratios=[(2, 1), (1, 1, 1), (1, 2)],
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     vn,
     2,
     voice_name=vc,
@@ -104,7 +104,7 @@ segment_maker.copy_rhythm_maker(
     )
 
 ### harpsichord [I1-5] clusters (11.1) ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 1, 5
 music_maker.voice_name = pf
 music_maker.instrument = harpsichord
@@ -119,7 +119,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     )
 
 ### crotales [I4-5] (11.1) ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 4, 5
 music_maker.voice_name = perc
 music_maker.instrument = crotales
@@ -136,7 +136,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
     )
 
 ### ob, Eb cl [I3-6] upper pedals ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 3, 6
 music_maker.voice_name = ob
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
@@ -145,7 +145,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
         ),
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     ob,
     3,
     stages=(3, 4),
@@ -154,7 +154,7 @@ segment_maker.copy_rhythm_maker(
     )
 
 ### ob, bass clarinet [I7-8] reiteration ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 7, 8
 music_maker.voice_name = ob
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
@@ -169,7 +169,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     ob,
     7,
     voice_name=cl,
@@ -178,7 +178,7 @@ segment_maker.copy_rhythm_maker(
     )
 
 ### pf, xylophone [I8] reiteration ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 8
 music_maker.voice_name = pf
 music_maker.instrument = piano
@@ -194,7 +194,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     pf,
     8,
     voice_name=perc,

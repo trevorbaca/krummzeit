@@ -25,7 +25,7 @@ assert segment_maker.stage_count == 10
 segment_maker.validate_measures_per_stage()
 
 ### TEMPO MAP ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 segment_maker.tempo_map = [
     (1, krummzeit.materials.named_tempo_inventory['135']),
     (2, Fermata('shortfermata')),
@@ -42,7 +42,7 @@ segment_maker.tempo_map = [
 ###############################################################################
 
 ### vn, va, vc [A1] tremolo clusters (11.1) ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 1
 music_maker.voice_name = vn
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
@@ -57,20 +57,20 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     division_masks=[BooleanPattern(indices=[0])],
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     vn,
     1,
     voice_name=va,
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     vn,
     1,
     voice_name=vc,
     )
 
 ### vn, va, vc thicket ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 3, 7
 music_maker.voice_name = vn
 music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
@@ -85,7 +85,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     division_masks=[BooleanPattern(indices=[5, 6], period=7)],
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     vn,
     3,
     voice_name=va,
@@ -94,7 +94,7 @@ segment_maker.copy_rhythm_maker(
     rhythm_maker__division_masks=[BooleanPattern(indices=[0, 1], period=7)],
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     vn,
     3,
     voice_name=vc,
@@ -104,14 +104,14 @@ segment_maker.copy_rhythm_maker(
     )
 
 ### bass cl [A2-6] pedals ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 3, 4
 music_maker.voice_name = cl
 music_maker.instrument = bass_clarinet
 music_maker.rhythm_maker = tied_notes
 
 ### pf [A2] single cluster (8.1) ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 1
 music_maker.voice_name = pf
 music_maker.instrument = piano
@@ -121,7 +121,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
     )
 
 ### repeated pf cluster ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 3
 music_maker.voice_name = pf
 music_maker.instrument = piano
@@ -138,7 +138,7 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
     )
 
 ### (14.1) pf, xylophone reiteration [A5] ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 6
 music_maker.voice_name = pf
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
@@ -153,7 +153,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     pf,
     6,
     voice_name=perc,
@@ -162,7 +162,7 @@ segment_maker.copy_rhythm_maker(
     )
 
 ### sponges [A6-8] ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = (9, 10)
 music_maker.voice_name = perc
 music_maker.instrument = sponges

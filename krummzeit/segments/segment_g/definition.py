@@ -26,7 +26,7 @@ assert segment_maker.stage_count == 14
 segment_maker.validate_measures_per_stage()
 
 ### TEMPO MAP ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 segment_maker.tempo_map = [
     (1, krummzeit.materials.named_tempo_inventory['72']),
     (8, Accelerando()),
@@ -37,7 +37,7 @@ segment_maker.tempo_map = [
 ################################ MUSIC-MAKERS #################################
 ###############################################################################
 
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = (2, 4)
 music_maker.voice_name = va
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
@@ -54,14 +54,14 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
         talea_denominator=32,
         ),
     )
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     va,
     2,
     voice_name=vc,
     )
 
 ### snare [G2], [G4-6], [G9], [G11]; tam-tam [G13-14] ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 1
 music_maker.voice_name = perc
 music_maker.instrument = snare_drum
@@ -73,7 +73,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
     division_masks=[BooleanPattern(indices=[0], period=1)],
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     perc,
     1,
     stages=2,
@@ -82,11 +82,11 @@ segment_maker.copy_rhythm_maker(
     rhythm_maker__division_masks=None,
     )
 
-segment_maker.copy_rhythm_maker(perc, 2, stages=(4, 6))
-segment_maker.copy_rhythm_maker(perc, 2, stages=9)
-segment_maker.copy_rhythm_maker(perc, 2, stages=11)
+segment_maker.copy_rhythm(perc, 2, stages=(4, 6))
+segment_maker.copy_rhythm(perc, 2, stages=9)
+segment_maker.copy_rhythm(perc, 2, stages=11)
 
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 13, 14
 music_maker.voice_name = perc
 music_maker.instrument = tam_tam
@@ -99,7 +99,7 @@ music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 
 ### harpsichord [G3-6], [G9], [G11] ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = (3, 6)
 music_maker.voice_name = pf
 music_maker.instrument = harpsichord
@@ -119,11 +119,11 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_rhythm_maker(pf, 3, stages=9)
-segment_maker.copy_rhythm_maker(pf, 3, stages=11)
+segment_maker.copy_rhythm(pf, 3, stages=9)
+segment_maker.copy_rhythm(pf, 3, stages=11)
 
 ### vn, va, vc [G5-13] unrestrained ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = (5, 13)
 music_maker.voice_name = vn
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
@@ -138,7 +138,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     vn,
     5,
     voice_name=va,
@@ -146,7 +146,7 @@ segment_maker.copy_rhythm_maker(
     rhythm_maker__division_masks=[BooleanPattern(indices=[0, 1])],
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     vn,
     5,
     voice_name=vc,
@@ -155,7 +155,7 @@ segment_maker.copy_rhythm_maker(
     )
 
 ### ob, cl [G3-7] ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 3, 7
 music_maker.voice_name = ob
 music_maker.division_maker = makertools.SplitByDurationsDivisionCallback(
@@ -171,7 +171,7 @@ music_maker.rhythm_maker = rhythmmakertools.EvenDivisionRhythmMaker(
         ),
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     ob,
     3,
     voice_name=cl,
@@ -181,7 +181,7 @@ segment_maker.copy_rhythm_maker(
     )
 
 ### bass clarinet [G11-14] myrkr ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = (11, 14)
 music_maker.voice_name = cl
 music_maker.instrument = bass_clarinet

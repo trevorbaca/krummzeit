@@ -26,7 +26,7 @@ assert segment_maker.stage_count == 16
 segment_maker.validate_measures_per_stage()
 
 ### TEMPO MAP ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 segment_maker.tempo_map = [
     (1, krummzeit.materials.named_tempo_inventory['135']),
     (3, krummzeit.materials.named_tempo_inventory['90']),
@@ -44,7 +44,7 @@ segment_maker.tempo_map = [
 ###############################################################################
 
 ### ob, bass clarinet [I7-8] reiteration ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 1
 music_maker.voice_name = ob
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
@@ -59,7 +59,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     ob,
     1,
     voice_name=cl,
@@ -68,7 +68,7 @@ segment_maker.copy_rhythm_maker(
     )
 
 ### pf, xylophone [I1] reiteration ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 1
 music_maker.voice_name = pf
 music_maker.instrument = piano
@@ -84,7 +84,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     pf,
     1,
     voice_name=perc,
@@ -93,7 +93,7 @@ segment_maker.copy_rhythm_maker(
     )
 
 ### vn, va, vc [J1-3] tremolo clusters (11.1) ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 1, 3
 music_maker.voice_name = vn
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
@@ -107,20 +107,20 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     division_masks=[BooleanPattern(indices=[-1])],
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     vn,
     1,
     voice_name=va,
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     vn,
     1,
     voice_name=vc,
     )
 
 ### harpsichord [J3-4] clusters (11.1) ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 3, 4
 music_maker.voice_name = pf
 music_maker.instrument = harpsichord
@@ -137,7 +137,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     )
 
 ### vn, va, vc [J5-9] white OB bowing (3.5) ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 5, 9
 music_maker.voice_name = vn
 music_maker.division_maker = makertools.SplitByDurationsDivisionCallback(
@@ -145,20 +145,20 @@ music_maker.division_maker = makertools.SplitByDurationsDivisionCallback(
     )
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     vn,
     5,
     voice_name=va,
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     vn,
     5,
     voice_name=vc,
     )
 
 ### tam-tam [J3-13] ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 3, 15
 music_maker.voice_name = perc
 music_maker.instrument = tam_tam
@@ -175,7 +175,7 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
     )
 
 ### pf [J6] & [J8-14] (8.1) clusters ###
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     pf,
     3,
     instrument=piano,
@@ -185,38 +185,38 @@ segment_maker.copy_rhythm_maker(
 ### (3.1) bass clarinet [J3-11] ###
 # TODO: all bass clarinet over (3, 11) should be tied together
 #       currently causes error with dynamic and hairpin application
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 3, 4
 music_maker.voice_name = cl
 music_maker.instrument = bass_clarinet
 music_maker.rhythm_maker = tied_notes
 
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 5, 6
 music_maker.voice_name = cl
 music_maker.instrument = bass_clarinet
 music_maker.rhythm_maker = tied_notes
 
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 7, 8
 music_maker.voice_name = cl
 music_maker.instrument = bass_clarinet
 music_maker.rhythm_maker = tied_notes
 
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 9, 10
 music_maker.voice_name = cl
 music_maker.instrument = bass_clarinet
 music_maker.rhythm_maker = tied_notes
 
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 11
 music_maker.voice_name = cl
 music_maker.instrument = bass_clarinet
 music_maker.rhythm_maker = tied_notes
 
 ### (9.1) vn, va, vc points [J15] ###
-music_maker = segment_maker.make_rhythm_maker()
+music_maker = segment_maker.define_rhythm()
 music_maker.stages = 15
 music_maker.voice_name = vn
 music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
@@ -228,14 +228,14 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
     extra_counts_per_division=[2, 2, 0, 2, 4, 6],
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     vn,
     15,
     voice_name=va,
     rhythm_maker__split_divisions_by_counts=[8, 10],
     )
 
-segment_maker.copy_rhythm_maker(
+segment_maker.copy_rhythm(
     vn,
     15,
     voice_name=vc,

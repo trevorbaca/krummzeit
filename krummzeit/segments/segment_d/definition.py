@@ -212,7 +212,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 ###############################################################################
 
 ### (6) snare ###
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(perc, (1, 9)),
     specifiers=[
         ppp_ancora,
@@ -235,7 +235,7 @@ segment_maker.make_pitch_handler(
             ),
         ]
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(pf, 1),
     specifiers=[
         Hairpin('ff > pp'),
@@ -245,7 +245,7 @@ segment_maker.make_music_handler(
         staccatissimi,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(pf, 3),
     specifiers=[
         Hairpin('pp < ff'),
@@ -254,7 +254,7 @@ segment_maker.make_music_handler(
         staccatissimi,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(pf, 5),
     specifiers=[
         Clef('bass'),
@@ -264,7 +264,7 @@ segment_maker.make_music_handler(
         staccatissimi,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(vn, 5),
     specifiers=[
         Hairpin('ff > pp'),
@@ -275,7 +275,7 @@ segment_maker.make_music_handler(
         staccatissimi,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(va, 5),
     specifiers=[
         Clef('treble'),
@@ -287,7 +287,7 @@ segment_maker.make_music_handler(
         staccatissimi,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(vc, 5),
     specifiers=[
         Clef('treble'),
@@ -298,7 +298,7 @@ segment_maker.make_music_handler(
         staccatissimi,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(vn, 7),
     specifiers=[
         Hairpin('pp < ff'),
@@ -307,7 +307,7 @@ segment_maker.make_music_handler(
         staccatissimi,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(va, 7),
     specifiers=[
         Hairpin('pp < ff'),
@@ -316,7 +316,7 @@ segment_maker.make_music_handler(
         staccatissimi,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(vc, 7),
     specifiers=[
         Clef('bass'),
@@ -326,7 +326,7 @@ segment_maker.make_music_handler(
         staccatissimi,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(vn, 9),
     specifiers=[
         Hairpin('ff > pp'),
@@ -335,7 +335,7 @@ segment_maker.make_music_handler(
         staccatissimi,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(va, 9),
     specifiers=[
         Clef('alto'),
@@ -345,7 +345,7 @@ segment_maker.make_music_handler(
         staccatissimi,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(vc, 9),
     specifiers=[
         Hairpin('ff > pp'),
@@ -356,7 +356,7 @@ segment_maker.make_music_handler(
     )
 
 ### (8.1a) pf ###
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(pf, (9, 12)),
     specifiers=[
         Dynamic('fff'),
@@ -365,7 +365,7 @@ segment_maker.make_music_handler(
         senza_pedale,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(pf, (14, 16)),
     specifiers=[
         Dynamic('fff'),
@@ -399,20 +399,20 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(va, (11, 12)),
     specifiers=[
         arco,
         ffff_possibile,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=([vn, va, vc], (14, 16)),
     specifiers=[
         ffff_possibile,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=([vn, vc], (14, 16)),
     specifiers=[
         arco,
@@ -420,7 +420,7 @@ segment_maker.make_music_handler(
     )
 
 ### (2.1) oboe, (2.4) bass clariet, (2.5) tam-tam ###
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(perc, (14, 17)),
     specifiers=[
         reiterated_pp,
@@ -434,7 +434,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(ob, (14, 16)),
     specifiers=[
         Dynamic('fff'),
@@ -448,7 +448,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, (14, 16)),
     specifiers=[
         ppp_subtone,
@@ -456,39 +456,39 @@ segment_maker.make_music_handler(
     )
 
 ### VERTICAL ALIGNMENT ###
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(ob, (14, 16)),
     specifiers=[
         dynamic_line_spanner_staff_padding(5),
         stem_direction(Up),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(ob, (14, 16)),
     specifiers=[
         dynamic_line_spanner_staff_padding(5),
         stem_direction(Up),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, (14, 17)),
     specifiers=[
         stem_direction(Up),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(pf, (9, 16)),
     specifiers=[
         dynamic_line_spanner_staff_padding(10),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(perc, (14, 17)),
     specifiers=[
         dynamic_line_spanner_staff_padding(6),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=([vn, va, vc], (5, 9)),
     specifiers=[
         beam_positions(-4),
@@ -496,7 +496,7 @@ segment_maker.make_music_handler(
         tuplet_bracket_staff_padding(4),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=([vn, va, vc], (11, 16)),
     specifiers=[
         stem_direction(Up),

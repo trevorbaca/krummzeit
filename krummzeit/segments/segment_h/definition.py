@@ -299,7 +299,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, (1, 5)),
     specifiers=[
         Hairpin('ppp < ff'),
@@ -321,7 +321,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=[
         (va, (1, 7)),
         (vc, (1, 9)),
@@ -341,7 +341,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(ob, (1, 7)),
     specifiers=[
         Dynamic('ff'),
@@ -362,28 +362,28 @@ pitch_handler = segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(pf, (5, 12)),
     specifiers=[
         krummzeit_displacement,
         wide_fifth_octave,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(vn, (5, 12)),
     specifiers=[
         krummzeit_displacement,
         wide_sixth_octave,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=([ob, cl], (5, 12)),
     specifiers=[
         krummzeit_displacement,
         wide_fifth_octave,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=[
         (pf, (5, 12)),
         ([ob, cl], (9, 12)),
@@ -394,7 +394,7 @@ segment_maker.make_music_handler(
         staccati,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(vn, (5, 12)),
     specifiers=[
         Dynamic('pp'),
@@ -420,7 +420,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=([va, vc], (11, 12)),
     specifiers=[
         Glissando(),
@@ -440,7 +440,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(pf, (14, 20)),
     specifiers=[
         dynamic_line_spanner_staff_padding(4),
@@ -464,7 +464,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=[
         ([vn, vc], (14, 20)),
         (va, (14, 19)),
@@ -475,27 +475,27 @@ segment_maker.make_music_handler(
         molto_gridato,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=([vn, va, vc], (14, 21)),
     specifiers=[
         Glissando(),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(vn, (14, 20)),
     specifiers=[
         krummzeit_displacement,
         wide_fourth_octave,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(va, (14, 19)),
     specifiers=[
         krummzeit_displacement,
         narrow_third_octave,
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(vc, (14, 20)),
     specifiers=[
         krummzeit_displacement,
@@ -512,7 +512,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, (18, 22)),
     specifiers=[
         Hairpin('f < ff'),
@@ -527,7 +527,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(ob, (18, 22)),
     specifiers=[
         Dynamic('f'),
@@ -560,7 +560,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=[
         (va, (20, 21)),
         ([vn, vc], 21),
@@ -572,14 +572,14 @@ segment_maker.make_music_handler(
     )
 
 ### VERTICAL ALIGNMENT ###
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(ob, (1, 7)),
     specifiers=[
         stem_direction(Up),
         dynamic_line_spanner_staff_padding(5),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(ob, (9, 12)),
     specifiers=[
         beam_positions(-4),
@@ -587,7 +587,7 @@ segment_maker.make_music_handler(
         dynamic_line_spanner_staff_padding(7),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(ob, (18, 21)),
     specifiers=[
         dynamic_line_spanner_staff_padding(5),
@@ -595,7 +595,7 @@ segment_maker.make_music_handler(
         tuplet_bracket_staff_padding(3),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(ob, (9, 12)),
     specifiers=[
         beam_positions(-4),
@@ -603,20 +603,20 @@ segment_maker.make_music_handler(
         dynamic_line_spanner_staff_padding(5),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, (1, 5)),
     specifiers=[
         stem_direction(Up),
         dynamic_line_spanner_staff_padding(8),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, 9),
     specifiers=[
         dynamic_line_spanner_staff_padding(3),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, (18, 21)),
     specifiers=[
         dynamic_line_spanner_staff_padding(10),
@@ -624,7 +624,7 @@ segment_maker.make_music_handler(
         tuplet_bracket_staff_padding(6),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(pf, (5, 11)),
     specifiers=[
         beam_positions(-4),
@@ -632,13 +632,13 @@ segment_maker.make_music_handler(
         dynamic_line_spanner_staff_padding(7),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(pf, (14, 20)),
     specifiers=[
         dynamic_line_spanner_staff_padding(3),
         ],
     )
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(vn, (5, 12)),
     specifiers=[
         beam_positions(-4),

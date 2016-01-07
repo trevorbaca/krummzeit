@@ -380,7 +380,7 @@ segment_maker.copy_rhythm(
 ###############################################################################
 
 ### (3.4) tam-tam, (3.5) vn, va, vc ###
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(perc, (1, 2)),
     specifiers=[
         reiterated_pp,
@@ -401,7 +401,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(vn, (1, 5)),
     specifiers=[
         Glissando(),
@@ -410,7 +410,7 @@ segment_maker.make_specifiers(
         on_bridge_slow,
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(va, (1, 3)),
     specifiers=[
         Glissando(),
@@ -419,7 +419,7 @@ segment_maker.make_specifiers(
         on_bridge_slow,
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(vc, (1, 5)),
     specifiers=[
         Glissando(),
@@ -430,7 +430,7 @@ segment_maker.make_specifiers(
     )
 
 ### (5.4) sponges, (5.3) va, vn, vc thicket ###
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(perc, (3, 6)),
     specifiers=[
         accent_changes,
@@ -453,7 +453,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=[
         (va, [(4, 7), 9]),
         (vn, [(6, 7), 9]),
@@ -465,7 +465,7 @@ segment_maker.make_specifiers(
         natural_harmonics,
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=[
         (va, 4),
         (vc, 6),
@@ -474,28 +474,28 @@ segment_maker.make_specifiers(
         Clef('treble'),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(va, 4),
     specifiers=[
         Hairpin('pp < f'),
         molto_flautando_e_pont,
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(va, (5, 6)),
     specifiers=[
         Hairpin('pp < f'),
         molto_flaut_to_molto_grid,
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=([vn, vc], 6),
     specifiers=[
         Hairpin('pp < f'),
         molto_flaut_to_molto_grid,
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=([vn, va, vc], [7, 9]),
     specifiers=[
         Dynamic('ff'),
@@ -510,7 +510,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(pf, [(4, 7), 9]),
     specifiers=[
         Clef('bass'),
@@ -536,7 +536,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=([ob, cl], (5, 7)),
     specifiers=[
         Dynamic('p'),
@@ -551,14 +551,14 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=([pf, perc], [8, 10, 11]),
     specifiers=[
         Dynamic('ff'),
         staccatissimi,
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(pf, [8, 10]),
     specifiers=[
         Clef('treble'),
@@ -572,7 +572,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=([ob, cl], [10, 11, 12]),
     specifiers=[
         Dynamic('mf'),
@@ -581,13 +581,13 @@ segment_maker.make_specifiers(
     )
 
 ### (1.1) pf, vn, va, vc ###
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(pf, 13),
     specifiers=[
         tenor_piano_cluster,
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(pf, 13),
     specifiers=[
         Dynamic('mp'),
@@ -619,7 +619,7 @@ segment_maker.make_pitch_handler(
             ),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=([vn, va, vc], (11, 13)),
     specifiers=[
         Dynamic('mp'),
@@ -627,13 +627,13 @@ segment_maker.make_specifiers(
         stem_tremolo,
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(va, [11, 13]),
     specifiers=[
         Clef('alto'),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(vc, [11, 13]),
     specifiers=[
         Clef('bass'),
@@ -652,7 +652,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
         tie_across_divisions=True,
         ),
     ) 
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(perc, (12, 13)),
     specifiers=[
         Dynamic('ppp'),
@@ -662,7 +662,7 @@ segment_maker.make_specifiers(
     )
 
 ### VERTICAL ALIGNMENT ###
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(ob, (1, 13)),
     specifiers=[
         beam_positions(-4),
@@ -670,7 +670,7 @@ segment_maker.make_specifiers(
         tuplet_bracket_staff_padding(3),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(cl, (1, 13)),
     specifiers=[
         beam_positions(-4),
@@ -678,13 +678,13 @@ segment_maker.make_specifiers(
         tuplet_bracket_staff_padding(3),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(pf, [(1, 7), 9]),
     specifiers=[
         dynamic_line_spanner_staff_padding(3),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(pf, [8, (10, 11)]),
     specifiers=[
         beam_positions(-4),
@@ -692,19 +692,19 @@ segment_maker.make_specifiers(
         tuplet_bracket_staff_padding(3),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(pf, 13),
     specifiers=[
         dynamic_line_spanner_staff_padding(6),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(perc, 1),
     specifiers=[
         dynamic_line_spanner_staff_padding(6),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(perc, [8, (10, 11)]),
     specifiers=[
         beam_positions(-4),
@@ -712,14 +712,14 @@ segment_maker.make_specifiers(
         tuplet_bracket_staff_padding(3),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(perc, (12, 13)),
     specifiers=[
         dynamic_line_spanner_staff_padding(6),
         tie_direction(Up),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=[
         (va, (4, 5)),
         ([vn, va, vc], (6, 9)),
@@ -730,13 +730,13 @@ segment_maker.make_specifiers(
         tuplet_bracket_staff_padding(3),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=([vn, va], (11, 13)),
     specifiers=[
         dynamic_line_spanner_staff_padding(8),
         ],
     )
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(vc, (11, 13)),
     specifiers=[
         dynamic_line_spanner_staff_padding(6),

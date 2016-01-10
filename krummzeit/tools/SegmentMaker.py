@@ -19,7 +19,7 @@ class SegmentMaker(makertools.SegmentMaker):
         '_music_handlers',
         '_music_makers',
         '_score',
-        '_show_stage_annotations',
+        '_label_stage_numbers',
         '_stages',
         '_transpose_score',
         'final_barline',
@@ -39,7 +39,7 @@ class SegmentMaker(makertools.SegmentMaker):
         measures_per_stage=None,
         music_makers=None,
         name=None,
-        show_stage_annotations=False,
+        label_stage_numbers=False,
         tempo_map=None,
         time_signatures=None,
         transpose_score=False,
@@ -58,8 +58,8 @@ class SegmentMaker(makertools.SegmentMaker):
         self.name = name
         self._music_handlers = []
         self._initialize_time_signatures(time_signatures)
-        assert isinstance(show_stage_annotations, bool)
-        self._show_stage_annotations = show_stage_annotations
+        assert isinstance(label_stage_numbers, bool)
+        self._label_stage_numbers = label_stage_numbers
         self.tempo_map = tempo_map
         assert isinstance(transpose_score, bool)
         self._transpose_score = transpose_score
@@ -83,7 +83,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._make_lilypond_file()
         self._configure_lilypond_file()
         self._populate_time_signature_context()
-        if self.show_stage_annotations:
+        if self.label_stage_numbers:
             self._annotate_stages()
         message = '\tInterpreting music-makers ... '
         print(message, end='')
@@ -703,12 +703,12 @@ class SegmentMaker(makertools.SegmentMaker):
         return tuple(self._music_handlers)
 
     @property
-    def show_stage_annotations(self):
+    def label_stage_numbers(self):
         r'''Is true when segment should annotate stages.
 
         Set to true or false.
         '''
-        return self._show_stage_annotations
+        return self._label_stage_numbers
 
     @property
     def stage_count(self):

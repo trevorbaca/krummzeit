@@ -415,7 +415,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_scoped_specifiers(
     scope=(va, (1, 9)),
     specifiers=[
-        handlertools.NoteAndChordHairpinHandler(
+        handlertools.HairpinHandler(
             hairpin_token='ff > pp',
             ),
         ],
@@ -423,7 +423,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_scoped_specifiers(
     scope=(va, (10, 19)),
     specifiers=[
-        handlertools.NoteAndChordHairpinHandler(
+        handlertools.HairpinHandler(
             hairpin_token='ff > pp',
             patterns=[BooleanPattern(indices=[0, 1])],
             ),
@@ -447,7 +447,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_scoped_specifiers(
     scope=(vc, (1, 9)),
     specifiers=[
-        handlertools.NoteAndChordHairpinHandler(
+        handlertools.HairpinHandler(
             hairpin_token='ff > pp',
             ),
         ],
@@ -455,7 +455,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_scoped_specifiers(
     scope=(vc, (10, 19)),
     specifiers=[
-        handlertools.NoteAndChordHairpinHandler(
+        handlertools.HairpinHandler(
             hairpin_token='ff > pp',
             patterns=[BooleanPattern(indices=[0, 1])],
             ),

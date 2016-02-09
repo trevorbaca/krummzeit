@@ -519,10 +519,10 @@ patterned_f_ff = handlertools.TerracedDynamicsHandler(
     minimum_duration=Duration(1, 8),
     )
 
-repeated_p_to_ppp = handlertools.NoteAndChordHairpinHandler(
+repeated_p_to_ppp = handlertools.HairpinHandler(
     hairpin_token='p > ppp',
     )
-repeated_pp_to_ff = handlertools.NoteAndChordHairpinHandler(
+repeated_pp_to_ff = handlertools.HairpinHandler(
     hairpin_token='pp < ff',
     )
 

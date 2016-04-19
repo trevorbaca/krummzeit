@@ -29,6 +29,26 @@ class ClusterSpecifier(abctools.AbjadObject):
                 include_natural_markup=True,
                 )
 
+    ..  container:: example
+
+        **API-debug example.** Added during testing to get notational output in
+        score package documentation:
+
+        ::
+
+            >>> staff = Staff("c'4 d' e' f'")
+            >>> show(staff) # doctest: +SKIP
+
+        ::
+
+            >>> f(staff)
+            \new Staff {
+                c'4
+                d'4
+                e'4
+                f'4
+            }
+
     '''
 
     ### CLASS VARIABLES ##

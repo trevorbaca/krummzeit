@@ -26,7 +26,7 @@ class SegmentMaker(makertools.SegmentMaker):
         'measures_per_stage',
         'name',
         'time_signatures',
-        'tempo_map',
+        'tempo_specifier',
         )
 
     ### INITIALIZER ###
@@ -40,7 +40,7 @@ class SegmentMaker(makertools.SegmentMaker):
         music_makers=None,
         name=None,
         label_stage_numbers=False,
-        tempo_map=None,
+        tempo_specifier=None,
         time_signatures=None,
         transpose_score=False,
         ):
@@ -60,7 +60,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._initialize_time_signatures(time_signatures)
         assert isinstance(label_stage_numbers, bool)
         self._label_stage_numbers = label_stage_numbers
-        self.tempo_map = tempo_map
+        self.tempo_specifier = tempo_specifier
         assert isinstance(transpose_score, bool)
         self._transpose_score = transpose_score
 
@@ -140,14 +140,14 @@ class SegmentMaker(makertools.SegmentMaker):
             attach(markup, start_measure)
 
     def _attach_fermatas(self):
-        if not self.tempo_map:
+        if not self.tempo_specifier:
             return
         context = self._score['Time Signature Context']
         prototype = (
             indicatortools.Fermata,
             indicatortools.BreathMark,
             )
-        for stage_number, directive in self.tempo_map:
+        for stage_number, directive in self.tempo_specifier:
             if not isinstance(directive, prototype):
                 continue
             assert 0 < stage_number <= self.stage_count
@@ -199,7 +199,7 @@ class SegmentMaker(makertools.SegmentMaker):
         attach(rehearsal_mark, first_leaf)
 
     def _attach_tempo_indicators(self):
-        if not self.tempo_map:
+        if not self.tempo_specifier:
             return
         context = self._score['Time Signature Context']
         # TODO: adjust TempoSpanner to make this possible:
@@ -207,7 +207,7 @@ class SegmentMaker(makertools.SegmentMaker):
         skips = list(iterate(context).by_class(scoretools.Leaf))
         tempo_spanner = spannertools.TempoSpanner()
         attach(tempo_spanner, skips)
-        for stage_number, directive in self.tempo_map:
+        for stage_number, directive in self.tempo_specifier:
             assert 0 < stage_number <= self.stage_count
             result = self._stage_number_to_measure_indices(stage_number)
             start_measure_index, stop_measure_index = result

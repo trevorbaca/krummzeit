@@ -33,7 +33,7 @@ segment_maker.validate_measures_per_stage()
 
 ### TEMPO MAP ###
 music_maker = segment_maker.define_rhythm()
-segment_maker.tempo_map = [
+segment_maker.tempo_specifier = [
     (1, krummzeit.materials.tempo_inventory[3]),
     (9, krummzeit.materials.tempo_inventory[4]),
     (9, krummzeit.materials.metric_modulation_inventory['4=8']),

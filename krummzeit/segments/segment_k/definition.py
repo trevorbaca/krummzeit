@@ -15,7 +15,7 @@ segment_maker = krummzeit.tools.SegmentMaker(
     final_markup=final_markup,
     final_markup_extra_offset=(14.5, 0),
     name='K',
-    label_stage_numbers=False,
+    label_stages=False,
     transpose_score=True,
     )
 

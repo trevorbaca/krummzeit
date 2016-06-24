@@ -11,7 +11,7 @@ from krummzeit.materials.__abbreviations__ import *
 
 segment_maker = krummzeit.tools.SegmentMaker(
     name='D',
-    label_stage_numbers=False,
+    label_stages=False,
     transpose_score=True,
     )
 

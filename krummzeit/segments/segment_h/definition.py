@@ -10,7 +10,7 @@ from krummzeit.materials.__abbreviations__ import *
 ### INITIALIZATION ###
 segment_maker = krummzeit.tools.SegmentMaker(
     name='H',
-    label_stage_numbers=False,
+    label_stages=False,
     transpose_score=True,
     )
 

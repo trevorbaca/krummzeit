@@ -507,9 +507,9 @@ wide_seventh_octave = baca.tools.RegisterSpecifier(
 
 ### dynamics
 
-patterned_f_ff = handlertools.TerracedDynamicsHandler(
-    dynamics=['f', 'f', 'ff', 'f', 'ff', 'f', 'f', 'ff', 'ff'],
-    minimum_duration=Duration(1, 8),
+patterned_f_ff = baca.tools.ArticulationSpecifier(
+    articulations=['f', 'f', 'ff', 'f', 'ff', 'f', 'f', 'ff', 'ff'],
+    #minimum_duration=Duration(1, 8),
     )
 
 repeated_p_to_ppp = handlertools.HairpinHandler(

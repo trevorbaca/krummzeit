@@ -512,10 +512,10 @@ patterned_f_ff = baca.tools.ArticulationSpecifier(
     #minimum_duration=Duration(1, 8),
     )
 
-repeated_p_to_ppp = handlertools.HairpinHandler(
+repeated_p_to_ppp = handlertools.HairpinSpecifier(
     hairpin_token='p > ppp',
     )
-repeated_pp_to_ff = handlertools.HairpinHandler(
+repeated_pp_to_ff = handlertools.HairpinSpecifier(
     hairpin_token='pp < ff',
     )
 

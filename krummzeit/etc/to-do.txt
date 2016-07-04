@@ -24,7 +24,7 @@
 8.  Extended SegmentMaker with a property to allow [A] to set
     top margin to 0 mm.
 
-9.  ClusterHandler mutates the score.
-    So any ClusterHandler should be applied first before other handlers.
+9.  ClusterSpecifier mutates the score.
+    So any ClusterSpecifier should be applied first before other handlers.
     Probably best to enforce by processing all cluster handlers immediately
     after pitch processing (and before other handlers).

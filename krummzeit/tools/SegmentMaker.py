@@ -398,7 +398,7 @@ class SegmentMaker(makertools.SegmentMaker):
             else:
                 raise ValueError(music_handler.scope)
             with systemtools.Timer() as timer:
-                if isinstance(music_handler, baca.tools.PitchHandler):
+                if isinstance(music_handler, baca.tools.PitchSpecifier):
                     self._interpret_pitch_handler(music_handler)
                 else:
                     self._interpret_music_handler(music_handler)
@@ -803,7 +803,7 @@ class SegmentMaker(makertools.SegmentMaker):
         specifiers,
         ):
         assert isinstance(specifiers, list), repr(specifiers)
-        pitch_handler = baca.tools.PitchHandler(
+        pitch_handler = baca.tools.PitchSpecifier(
             scope=scope,
             specifiers=specifiers,
             )

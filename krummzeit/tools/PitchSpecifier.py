@@ -2,7 +2,7 @@
 from abjad.tools import abctools
 
 
-class PitchHandler(abctools.AbjadObject):
+class PitchSpecifier(abctools.AbjadObject):
     r'''Pitch handler.
 
     ::
@@ -15,7 +15,7 @@ class PitchHandler(abctools.AbjadObject):
 
         ::
 
-            >>> handler = baca.tools.PitchHandler(
+            >>> handler = baca.tools.PitchSpecifier(
             ...     scope=(['Flute Music Voice', 'Piano Music Voice'], (1, 4)),
             ...     specifier=baca.tools.PitchSpecifier(
             ...         source=[-6, -5, -1, -2, 2],
@@ -25,7 +25,7 @@ class PitchHandler(abctools.AbjadObject):
         ::
 
             >>> print(format(handler))
-            baca.tools.PitchHandler(
+            baca.tools.PitchSpecifier(
                 baca.tools.CompoundScope(
                     simple_scopes=(
                         baca.tools.SimpleScope(
@@ -113,7 +113,7 @@ class PitchHandler(abctools.AbjadObject):
 
             ::
 
-                >>> handler = baca.tools.PitchHandler(
+                >>> handler = baca.tools.PitchSpecifier(
                 ...     scope=(['Flute Music Voice', 'Piano Music Voice'], (1, 4)),
                 ...     specifier=baca.tools.PitchSpecifier(
                 ...         source=[-6, -5, -1, -2, 2],

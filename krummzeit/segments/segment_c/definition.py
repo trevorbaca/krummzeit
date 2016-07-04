@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
+import abjad
 import baca
-from abjad import *
-from abjad.tools.rhythmmakertools import BooleanPattern
-from experimental import *
 import krummzeit
 from krummzeit.materials.__abbreviations__ import *
 
@@ -415,7 +413,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_scoped_specifiers(
     scope=(va, (1, 9)),
     specifiers=[
-        handlertools.HairpinHandler(
+        baca.tools.DynamicSpecifier(
             hairpin_token='ff > pp',
             ),
         ],
@@ -423,9 +421,9 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_scoped_specifiers(
     scope=(va, (10, 19)),
     specifiers=[
-        handlertools.HairpinHandler(
+        baca.tools.DynamicSpecifier(
             hairpin_token='ff > pp',
-            patterns=[BooleanPattern(indices=[0, 1])],
+            patterns=[abjad.patterntools.Pattern(indices=[0, 1])],
             ),
         ],
     )
@@ -447,7 +445,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_scoped_specifiers(
     scope=(vc, (1, 9)),
     specifiers=[
-        handlertools.HairpinHandler(
+        baca.tools.DynamicSpecifier(
             hairpin_token='ff > pp',
             ),
         ],
@@ -455,9 +453,9 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_scoped_specifiers(
     scope=(vc, (10, 19)),
     specifiers=[
-        handlertools.HairpinHandler(
+        baca.tools.DynamicSpecifier(
             hairpin_token='ff > pp',
-            patterns=[BooleanPattern(indices=[0, 1])],
+            patterns=[abjad.patterntools.Pattern(indices=[0, 1])],
             ),
         ],
     )
@@ -506,7 +504,7 @@ segment_maker.make_scoped_specifiers(
     scope=([pf, perc], (11, 17)),
     specifiers=[
         Dynamic('ff'),
-        handlertools.ReiteratedArticulationHandler(
+        baca.tools.ArticulationSpecifier(
             articulation_list=['staccatissimo'],
             ),
         ],

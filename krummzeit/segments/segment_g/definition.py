@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
+import abjad
 import baca
-from abjad import *
-from abjad.tools.rhythmmakertools import BooleanPattern
-from experimental import *
 import krummzeit
 from krummzeit.materials.__abbreviations__ import *
 
@@ -70,7 +68,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
     tie_specifier=rhythmmakertools.TieSpecifier(
         tie_across_divisions=True,
         ),
-    division_masks=[BooleanPattern(indices=[0], period=1)],
+    division_masks=[abjad.patterntools.Pattern(indices=[0], period=1)],
     )
 
 segment_maker.copy_rhythm(
@@ -143,7 +141,7 @@ segment_maker.copy_rhythm(
     5,
     voice_name=va,
     rhythm_maker__tuplet_ratios=[(1, 6)],
-    rhythm_maker__division_masks=[BooleanPattern(indices=[0, 1])],
+    rhythm_maker__division_masks=[abjad.patterntools.Pattern(indices=[0, 1])],
     )
 
 segment_maker.copy_rhythm(
@@ -151,7 +149,7 @@ segment_maker.copy_rhythm(
     5,
     voice_name=vc,
     rhythm_maker__tuplet_ratios=[(6, 1)],
-    rhythm_maker__division_masks=[BooleanPattern(indices=[0, 1])],
+    rhythm_maker__division_masks=[abjad.patterntools.Pattern(indices=[0, 1])],
     )
 
 ### ob, cl [G3-7] ###
@@ -364,7 +362,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_scoped_specifiers(
     scope=([ob, cl], (3, 7)),
     specifiers=[
-        handlertools.ReiteratedArticulationHandler(
+        baca.tools.ArticulationSpecifier(
             articulation_list=['.'],
             maximum_duration=Duration(1, 8),
             ),

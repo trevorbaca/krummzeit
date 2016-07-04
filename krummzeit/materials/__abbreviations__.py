@@ -1,26 +1,31 @@
 # -*- coding: utf-8 -*-
-from abjad import *
-import krummzeit
-from abjad.tools import pitchtools
+import abjad
 import baca
+import krummzeit
 
 
 ### INSTRUMENTS ###
 
 oboe = krummzeit.materials.performer_inventory.get_instrument('ob.')
-e_flat_clarinet = krummzeit.materials.performer_inventory.get_instrument('cl. e-flat')
-clarinet = krummzeit.materials.performer_inventory.get_instrument('cl. in B-flat')
-bass_clarinet = krummzeit.materials.performer_inventory.get_instrument('bass cl.')
+e_flat_clarinet = krummzeit.materials.performer_inventory.get_instrument(
+    'cl. e-flat')
+clarinet = krummzeit.materials.performer_inventory.get_instrument(
+    'cl. in B-flat')
+bass_clarinet = krummzeit.materials.performer_inventory.get_instrument(
+    'bass cl.')
 
 # TODO: make Instrument.default_scope public
 piano = krummzeit.materials.performer_inventory.get_instrument('piano')
 piano._default_scope = 'PianoMusicStaff'
-harpsichord = krummzeit.materials.performer_inventory.get_instrument('harpsichord')
+harpsichord = krummzeit.materials.performer_inventory.get_instrument(
+    'harpsichord')
 harpsichord._default_scope = 'PianoMusicStaff'
 
 crotales = krummzeit.materials.performer_inventory.get_instrument('crotales')
-scraped_slate = krummzeit.materials.performer_inventory.get_instrument('scraped slate')
-snare_drum = krummzeit.materials.performer_inventory.get_instrument('snare drum')
+scraped_slate = krummzeit.materials.performer_inventory.get_instrument(
+    'scraped slate')
+snare_drum = krummzeit.materials.performer_inventory.get_instrument(
+    'snare drum')
 sponges = krummzeit.materials.performer_inventory.get_instrument('sponges')
 suspended_cymbal = krummzeit.materials.performer_inventory.get_instrument(
     'suspended cymbal')
@@ -70,7 +75,7 @@ def make_effort_dynamic_markup(dynamic_text, direction=Down):
     markup._direction = direction
     return markup
 
-accents = handlertools.ReiteratedArticulationHandler(
+accents = baca.tools.ArticulationSpecifier(
     articulation_list=['>'],
     )
 
@@ -354,42 +359,42 @@ pervasive_A5_trills = baca.tools.TrillSpecifier(
 
 # +3
 narrow_second_octave = baca.tools.RegisterSpecifier(
-    registration=pitchtools.Registration(
+    registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', -26), ('[F#4, C8]', -23)],
         ),
     )
 
 # +3
 narrow_third_octave = baca.tools.RegisterSpecifier(
-    registration=pitchtools.Registration(
+    registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', -14), ('[F#4, C8]', -11)],
         ),
     )
 
 # +3
 narrow_fourth_octave = baca.tools.RegisterSpecifier(
-    registration=pitchtools.Registration(
+    registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', -2), ('[F#4, C8]', 1)],
         ),
     )
 
 # +3
 narrow_fifth_octave = baca.tools.RegisterSpecifier(
-    registration=pitchtools.Registration(
+    registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', 10), ('[F#4, C8]', 13)],
         ),
     )
 
 # +3
 narrow_sixth_octave = baca.tools.RegisterSpecifier(
-    registration=pitchtools.Registration(
+    registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', 22), ('[F#4, C8]', 25)],
         ),
     )
 
 # +3
 narrow_seventh_octave = baca.tools.RegisterSpecifier(
-    registration=pitchtools.Registration(
+    registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', 34), ('[F#4, C8]', 37)],
         ),
     )
@@ -455,23 +460,23 @@ narrow_third_to_second_octave = baca.tools.RegisterTransitionSpecifier(
     )
 
 # articulation handlers
-alternate_bow_strokes = handlertools.PatternedArticulationsHandler(
+alternate_bow_strokes = baca.tools.ArticulationSpecifier(
     articulation_lists=(['upbow', 'accent'], ['downbow', 'accent']),
     )
-marcati = handlertools.ReiteratedArticulationHandler(
+marcati = baca.tools.ArticulationSpecifier(
     articulation_list=['marcato'],
     skip_ties=True,
     )
-staccati = handlertools.ReiteratedArticulationHandler(
+staccati = baca.tools.ArticulationSpecifier(
     articulation_list=['staccato'],
     maximum_duration=Duration(1, 4),
     skip_ties=True,
     )
-staccatissimi = handlertools.ReiteratedArticulationHandler(
+staccatissimi = baca.tools.ArticulationSpecifier(
     articulation_list=['staccatissimo'],
     skip_ties=True,
     )
-tenuti = handlertools.ReiteratedArticulationHandler(
+tenuti = baca.tools.ArticulationSpecifier(
     articulation_list=['tenuto'],
     )
     
@@ -479,35 +484,35 @@ tenuti = handlertools.ReiteratedArticulationHandler(
 
 # +14
 wide_third_octave = baca.tools.RegisterSpecifier(
-    registration=pitchtools.Registration(
+    registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', -20), ('[F#4, C8]', -6)]
         ),
     )
 
 # +14
 wide_fourth_octave = baca.tools.RegisterSpecifier(
-    registration=pitchtools.Registration(
+    registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', -8), ('[F#4, C8]', 6)]
         ),
     )
 
 # +14
 wide_fifth_octave = baca.tools.RegisterSpecifier(
-    registration=pitchtools.Registration(
+    registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', 4), ('[F#4, C8]', 18)]
         ),
     )
 
 # +14
 wide_sixth_octave = baca.tools.RegisterSpecifier(
-    registration=pitchtools.Registration(
+    registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', 16), ('[F#4, C8]', 30)]
         ),
     )
 
 # +14
 wide_seventh_octave = baca.tools.RegisterSpecifier(
-    registration=pitchtools.Registration(
+    registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', 28), ('[F#4, C8]', 42)]
         ),
     )

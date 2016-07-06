@@ -264,7 +264,7 @@ class RhythmDefinition(abctools.AbjadObject):
 
     @property
     def stages(self):
-        r'''Gets stages of segment maker.
+        r'''Gets stages of segment-maker.
 
         Returns pair of positive integers.
         '''

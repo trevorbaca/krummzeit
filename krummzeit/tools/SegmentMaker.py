@@ -22,7 +22,7 @@ class SegmentMaker(makertools.SegmentMaker):
         '_label_stage_numbers',
         '_stages',
         '_transpose_score',
-        'final_barline',
+        'final_bar_line',
         'measures_per_stage',
         'name',
         'time_signatures',
@@ -33,7 +33,7 @@ class SegmentMaker(makertools.SegmentMaker):
 
     def __init__(
         self,
-        final_barline=False,
+        final_bar_line=False,
         final_markup=None,
         final_markup_extra_offset=None,
         measures_per_stage=None,
@@ -47,7 +47,7 @@ class SegmentMaker(makertools.SegmentMaker):
         superclass = super(SegmentMaker, self)
         superclass.__init__()
         self._initialize_music_makers(music_makers)
-        self.final_barline = final_barline
+        self.final_bar_line = final_bar_line
         if final_markup is not None:
             assert isinstance(final_markup, markuptools.Markup)
         self._final_markup = final_markup
@@ -102,7 +102,7 @@ class SegmentMaker(makertools.SegmentMaker):
         if self.transpose_score:
             self._transpose_instruments()
         self._attach_rehearsal_mark()
-        self._add_final_barline()
+        self._add_final_bar_line()
         self._add_final_markup()
         score_block = self.lilypond_file['score']
         score = score_block['Krummzeit Score']
@@ -113,8 +113,8 @@ class SegmentMaker(makertools.SegmentMaker):
 
     ### PRIVATE METHODS ###
 
-    def _add_final_barline(self):
-        if not self.final_barline:
+    def _add_final_bar_line(self):
+        if not self.final_bar_line:
             return
         self._score.add_final_bar_line(to_each_voice=True)
 

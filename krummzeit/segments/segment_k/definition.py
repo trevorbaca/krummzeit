@@ -21,7 +21,7 @@ segment_maker = krummzeit.tools.SegmentMaker(
 
 ### SEGMENTS ###
 segment_maker.time_signatures = krummzeit.materials.segment_time_signatures['K']
-segment_maker.final_barline = True
+segment_maker.final_bar_line = True
 segment_maker.measures_per_stage = [
     4, 4, 4, 4, 4, 4, # stages 1-6
     4, 4, 4, 4, 4, 4, # stages 7-12

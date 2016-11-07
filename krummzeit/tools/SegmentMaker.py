@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
-import copy
-import os
-from abjad import *
+import abjad
 import baca
-from experimental.tools import makertools
+import copy
+import experimental
+import os
 
 
-class SegmentMaker(makertools.SegmentMaker):
+class SegmentMaker(experimental.tools.makertools.SegmentMaker):
     r'''Krummzeit segment-maker.
     '''
 
@@ -49,7 +49,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._initialize_music_makers(music_makers)
         self.final_bar_line = final_bar_line
         if final_markup is not None:
-            assert isinstance(final_markup, markuptools.Markup)
+            assert isinstance(final_markup, abjad.Markup)
         self._final_markup = final_markup
         if final_markup_extra_offset is not None:
             assert isinstance(final_markup_extra_offset, tuple)
@@ -76,9 +76,9 @@ class SegmentMaker(makertools.SegmentMaker):
         Returns LilyPond file.
         '''
         self._segment_metadata = segment_metadata or \
-            datastructuretools.TypedOrderedDict()
+            abjad.datastructuretools.TypedOrderedDict()
         self._previous_segment_metadata = previous_segment_metadata or \
-            datastructuretools.TypedOrderedDict()
+            abjad.datastructuretools.TypedOrderedDict()
         self._make_score()
         self._make_lilypond_file()
         self._configure_lilypond_file()
@@ -87,7 +87,7 @@ class SegmentMaker(makertools.SegmentMaker):
             self._annotate_stages()
         message = '\tInterpreting music-makers ... '
         print(message, end='')
-        with systemtools.Timer() as timer:
+        with abjad.systemtools.Timer() as timer:
             self._interpret_music_makers()
         message = '{} sec.'
         message = message.format(int(timer.elapsed_time))

@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
+import abjad
 import baca
-from abjad import *
-from abjad.tools.rhythmmakertools import BooleanPattern
-from experimental import *
 import krummzeit
+from abjad.tools.abjad.rhythmmakertools import Pattern
 from krummzeit.materials.__abbreviations__ import *
 
 
@@ -45,59 +44,59 @@ music_maker = segment_maker.define_rhythm()
 music_maker.stages = (1, 6)
 music_maker.voice_name = pf
 music_maker.instrument = harpsichord
-music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
+music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
-    secondary_division_maker=makertools.SplitByDurationsDivisionCallback(
+    secondary_division_maker=baca.tools.SplitByDurationsDivisionCallback(
         durations=[
             (16, 4), (16, 4), (16, 4), (16, 4), (16, 4), (14, 4), (2, 4),
             ],
         ),
     )
-music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
-    division_masks=[BooleanPattern(indices=[-1])],
+music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker(
+    division_masks=[Pattern(indices=[-1])],
     )
 
 music_maker = segment_maker.define_rhythm()
 music_maker.stages = (7, 12)
 music_maker.voice_name = pf
 music_maker.instrument = piano
-music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
+music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
     )
-music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
+music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
-    secondary_division_maker=makertools.SplitByDurationsDivisionCallback(
+    secondary_division_maker=baca.tools.SplitByDurationsDivisionCallback(
         durations=[
             (16, 4),
             ],
         ),
     )
-music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
+music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker()
 
 ### xylophone ###
 music_maker = segment_maker.define_rhythm()
 music_maker.stages = (1, 12)
 music_maker.voice_name = perc
 music_maker.instrument = xylophone
-music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
+music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
     )
-music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
+music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
-    secondary_division_maker=makertools.SplitByDurationsDivisionCallback(
+    secondary_division_maker=baca.tools.SplitByDurationsDivisionCallback(
         durations=[
             (16, 4),
             ],
         ),
     )
-music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
+music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker()
 
 ### vn, va ###
 music_maker = segment_maker.define_rhythm()
 music_maker.stages = (1, 10)
 music_maker.voice_name = vn
-music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
-    talea=rhythmmakertools.Talea(
+music_maker.rhythm_maker = abjad.rhythmmakertools.TaleaRhythmMaker(
+    talea=abjad.rhythmmakertools.Talea(
         counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8], 
         denominator=4,
         ),
@@ -110,7 +109,7 @@ segment_maker.copy_rhythm(
     vn,
     1,
     voice_name=va,
-    clef=Clef('treble'),
+    clef=abjad.Clef('treble'),
     rhythm_maker__split_divisions_by_counts=[8, 10],
     rhythm_maker__extra_counts_per_division=[3, 3, 2, 3, 5, 7],
     rhythm_maker__talea__counts=[8, 4, 4, 2, 1, 1, 8, 8, 8, 2, 4, 4],
@@ -137,15 +136,15 @@ segment_maker.copy_rhythm(
 music_maker = segment_maker.define_rhythm()
 music_maker.stages = (1, 10)
 music_maker.voice_name = ob
-music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
+music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
     counts=mathtools.Infinity,
-    secondary_division_maker=makertools.SplitByDurationsDivisionCallback(
+    secondary_division_maker=baca.tools.SplitByDurationsDivisionCallback(
         durations=[(14, 4), (2, 4)],
         ),
     )
 
-music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
-    division_masks=[BooleanPattern(indices=[1], period=2)],
+music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker(
+    division_masks=[Pattern(indices=[1], period=2)],
     )
 
 ### bass clarinet ###
@@ -153,10 +152,10 @@ music_maker = segment_maker.define_rhythm()
 music_maker.stages = (1, 10)
 music_maker.voice_name = cl
 music_maker.instrument = bass_clarinet
-music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
+music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
     counts=[4],
     )
-music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
+music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker()
 
 ###############################################################################
 ############################## COLOR #################################
@@ -196,7 +195,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_scoped_specifiers(
     scope=(perc, (1, 12)),
     specifiers=[
-        Dynamic('fff'),
+        abjad.Dynamic('fff'),
         dynamic_line_spanner_staff_padding(4),
         stem_tremolo,
         ],
@@ -208,7 +207,7 @@ segment_maker.make_pitch_handler(
     scope=([vn, va], (1, 10)),
     specifiers=[
         baca.tools.PitchSpecifier(
-            operators=[pitchtools.Transposition(4), pitchtools.Inversion()],
+            operators=[abjad.pitchtools.Transposition(4), abjad.pitchtools.Inversion()],
             source=indigo_snippet,
             ),
         ]
@@ -216,7 +215,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_scoped_specifiers(
     scope=([vn, va], (1, 10)),
     specifiers=[
-        Dynamic('ff'),
+        abjad.Dynamic('ff'),
         dynamic_line_spanner_staff_padding(5),
         krummzeit_displacement,
         narrow_sixth_octave,
@@ -246,12 +245,12 @@ segment_maker.make_pitch_handler(
 segment_maker.make_scoped_specifiers(
     scope=(vc, (1, 6)),
     specifiers=[
-        Dynamic('fff'),
+        abjad.Dynamic('fff'),
         dynamic_line_spanner_staff_padding(3),
         gridato_possibile,
-        baca.tools.GlissandoSpecifier(
-            #patterns=[BooleanPattern(indices=[5])],
-            patterns=[rhythmmakertools.select([5])],
+        baca.tools.abjad.GlissandoSpecifier(
+            #patterns=[Pattern(indices=[5])],
+            patterns=[abjad.rhythmmakertools.select([5])],
             ),
         #markup_padding(4),
         ],
@@ -259,7 +258,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_scoped_specifiers(
     scope=(vc, (7, 12)),
     specifiers=[
-        Dynamic('ff'),
+        abjad.Dynamic('ff'),
         ordinario,
         ],
     )
@@ -276,7 +275,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_scoped_specifiers(
     scope=(ob, (1, 12)),
     specifiers=[
-        Dynamic('fff'),
+        abjad.Dynamic('fff'),
         dynamic_line_spanner_staff_padding(5),
         ],
     )
@@ -293,7 +292,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_scoped_specifiers(
     scope=(cl, (1, 12)),
     specifiers=[
-        Dynamic('f'),
+        abjad.Dynamic('f'),
         dynamic_line_spanner_staff_padding(7),
         stem_direction(Up),
         ],

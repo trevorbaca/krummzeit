@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 
 
 metric_modulation_inventory = {
-    '4=8': indicatortools.MetricModulation(
-        left_rhythm=Note('c4'),
-        right_rhythm=Note('c8'),),
-    '4=4:5(4)': indicatortools.MetricModulation(
-        left_rhythm=Note('c4'),
-        right_rhythm=Tuplet((4, 5), [Note('c4')]),
+    '4=8': abjad.indicatortools.MetricModulation(
+        left_rhythm=abjad.Note('c4'),
+        right_rhythm=abjad.Note('c8'),),
+    '4=4:5(4)': abjad.indicatortools.MetricModulation(
+        left_rhythm=abjad.Note('c4'),
+        right_rhythm=abjad.Tuplet((4, 5), [abjad.Note('c4')]),
         ),
-    '4.=4': indicatortools.MetricModulation(
-        left_rhythm=Note('c4.'),
-        right_rhythm=Note('c4'),
+    '4.=4': abjad.indicatortools.MetricModulation(
+        left_rhythm=abjad.Note('c4.'),
+        right_rhythm=abjad.Note('c4'),
         ),
     }
 

@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 import baca
 
 
 def make_numerators(numerators, addenda):
     numerators = baca.tools.helianthate(numerators, -1, 1)
-    numerators = sequencetools.flatten_sequence(numerators)
+    numerators = abjad.sequencetools.flatten_sequence(numerators)
     length = len(numerators)
-    addenda = sequencetools.repeat_sequence_to_length(addenda, length)
+    addenda = abjad.sequencetools.repeat_sequence_to_length(addenda, length)
     pairs = zip(numerators, addenda)
     numerators = [sum(_) for _ in pairs]
     return numerators
@@ -27,15 +27,15 @@ numerators = numerators + numerators
 assert len(numerators) == 236  and sum(numerators) == 928
 
 ratio = [3, 2, 1, 1, 3, 2, 1, 1, 3, 2, 1, 1]
-partition = sequencetools.partition_sequence_by_ratio_of_weights
+partition = abjad.sequencetools.partition_sequence_by_ratio_of_weights
 numerator_lists = partition(numerators, ratio)
 assert len(numerator_lists) == 12
 
 def numerator_to_time_signature(numerator):
-    if mathtools.is_integer_equivalent_number(numerator):
-        time_signature = TimeSignature((numerator, 4))
+    if abjad.mathtools.is_integer_equivalent_number(numerator):
+        time_signature = abjad.TimeSignature((numerator, 4))
     else:
-        time_signature = TimeSignature((int(2 * numerator), 8))
+        time_signature = abjad.TimeSignature((int(2 * numerator), 8))
     return time_signature
 
 time_signature_inventory = []
@@ -51,15 +51,15 @@ for time_signature_list in time_signature_inventory:
     pair = (length, duration)
     pairs.append(pair)
 
-assert pairs[0] == (31, Duration(136, 4))
-assert pairs[1] == (22, Duration(177, 8))
-assert pairs[2] == (11, Duration(81, 8))
-assert pairs[3] == (13, Duration(46, 4))
-assert pairs[4] == (35, Duration(263, 8))
-assert pairs[5] == (22, Duration(181, 8))
-assert pairs[6] == (11, Duration(87, 8))
-assert pairs[7] == (10, Duration(95, 8))
-assert pairs[8] == (34, Duration(131, 4))
-assert pairs[9] == (24, Duration(179, 8))
-assert pairs[10] == (12, Duration(87, 8))
-assert pairs[11] == (11, Duration(40, 4))
+assert pairs[0] == (31, abjad.Duration(136, 4))
+assert pairs[1] == (22, abjad.Duration(177, 8))
+assert pairs[2] == (11, abjad.Duration(81, 8))
+assert pairs[3] == (13, abjad.Duration(46, 4))
+assert pairs[4] == (35, abjad.Duration(263, 8))
+assert pairs[5] == (22, abjad.Duration(181, 8))
+assert pairs[6] == (11, abjad.Duration(87, 8))
+assert pairs[7] == (10, abjad.Duration(95, 8))
+assert pairs[8] == (34, abjad.Duration(131, 4))
+assert pairs[9] == (24, abjad.Duration(179, 8))
+assert pairs[10] == (12, abjad.Duration(87, 8))
+assert pairs[11] == (11, abjad.Duration(40, 4))

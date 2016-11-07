@@ -540,8 +540,8 @@ tenor_piano_cluster = krummzeit.tools.ClusterSpecifier(
 
 ### miscellaneous ###
 
-silence_first = [rhythmmakertools.BooleanPattern(indices=[0])]
-silence_last = [rhythmmakertools.BooleanPattern(indices=[-1])]
+silence_first = [rhythmmakertools.Pattern(indices=[0])]
+silence_last = [rhythmmakertools.Pattern(indices=[-1])]
 
 ottava = spannertools.OctavationSpanner(start=1, stop=0)
 ottava_bassa = spannertools.OctavationSpanner(start=-1, stop=0)

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 from krummzeit.materials.tempo_inventory.definition import tempo_inventory
 
 
-named_tempo_inventory = datastructuretools.TypedOrderedDict([
+named_tempo_inventory = abjad.datastructuretools.TypedOrderedDict([
     ('36', tempo_inventory[5]),
     ('45', tempo_inventory[8]),
     ('67.5', tempo_inventory[4]),

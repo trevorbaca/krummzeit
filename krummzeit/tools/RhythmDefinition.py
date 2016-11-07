@@ -5,15 +5,19 @@ from abjad import *
 class RhythmDefinition(abctools.AbjadObject):
     r'''Krummzeit music-maker.
 
+    ::
+
+        >>> import baca
+        >>> import krummzeit
+
     ..  container:: example
 
         ::
 
-            >>> import krummzeit
             >>> music_maker = krummzeit.tools.RhythmDefinition()
             >>> music_maker.voice_name = 'Cello Music Voice'
             >>> music_maker.stages = 1, 4
-            >>> music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
+            >>> music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
             ...     counts=[2, 3, 1],
             ...     )
             >>> music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
@@ -23,10 +27,12 @@ class RhythmDefinition(abctools.AbjadObject):
             >>> print(format(music_maker, 'storage'))
             krummzeit.tools.RhythmDefinition(
                 voice_name='Cello Music Voice',
-                division_maker=makertools.FuseByCountsDivisionCallback(
+                division_maker=baca.tools.FuseByCountsDivisionCallback(
+                    cyclic=True,
                     counts=[2, 3, 1],
                     ),
                 rhythm_maker=rhythmmakertools.NoteRhythmMaker(),
+                rhythm_overwrites=[],
                 stages=(1, 4),
                 )
 

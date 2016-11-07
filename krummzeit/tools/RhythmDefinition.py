@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 
 
-class RhythmDefinition(abctools.AbjadObject):
+class RhythmDefinition(abjad.abctools.AbjadObject):
     r'''Krummzeit music-maker.
 
     ::
@@ -90,17 +90,17 @@ class RhythmDefinition(abctools.AbjadObject):
         Returns music. Probably as a selection.
         '''
         for time_signature in time_signatures:
-            assert isinstance(time_signature, indicatortools.TimeSignature)
+            assert isinstance(time_signature, abjad.TimeSignature)
         music = self._make_rhythm(time_signatures)
-        assert isinstance(music, (tuple, list, Voice)), repr(music)
+        assert isinstance(music, (tuple, list, abjad.Voice)), repr(music)
         first_item = music[0]
-        if isinstance(first_item, selectiontools.Selection):
+        if isinstance(first_item, abjad.selectiontools.Selection):
             first_component = first_item[0]
         else:
             first_component = first_item
         first_leaf = inspect_(first_component).get_leaf(0)
-        assert isinstance(first_leaf, scoretools.Leaf), repr(first_leaf)
-        prototype = instrumenttools.Percussion
+        assert isinstance(first_leaf, abjad.scoretools.Leaf), repr(first_leaf)
+        prototype = abjad.instrumenttools.Percussion
         if self.instrument is not None:
             attach(self.instrument, first_leaf)
         if (isinstance(self.instrument, prototype) and
@@ -110,7 +110,7 @@ class RhythmDefinition(abctools.AbjadObject):
             attach(self.clef, first_leaf)
         if self.staff_line_count is not None:
             self._set_staff_line_count(first_leaf, self.staff_line_count)
-        elif self.clef == Clef('percussion'):
+        elif self.clef == abjad.Clef('percussion'):
             self._set_staff_line_count(first_leaf, 1)
         return music
 
@@ -118,14 +118,13 @@ class RhythmDefinition(abctools.AbjadObject):
 
     @property
     def _default_rhythm_maker(self):
-        maker = rhythmmakertools.NoteRhythmMaker(
-            division_masks=[rhythmmakertools.silence_all()],
+        maker = abjad.rhythmmakertools.NoteRhythmMaker(
+            division_masks=[abjad.rhythmmakertools.silence_all()],
             )
 
     @property
     def _storage_format_specification(self):
-        from abjad.tools import systemtools
-        manager = systemtools.StorageFormatManager
+        manager = abjad.systemtools.StorageFormatManager
         keyword_argument_names = \
             manager.get_signature_keyword_argument_names(self)
         if not self.rhythm_overwrites:
@@ -141,7 +140,7 @@ class RhythmDefinition(abctools.AbjadObject):
     def _attach_untuned_percussion_markup(self, leaf):
         name = self.instrument.instrument_name
         name = name.lower()
-        markup = markuptools.Markup(name, direction=Up)
+        markup = abjad.Markup(name, direction=Up)
         markup = markup.box().override(('box-padding', 0.5))
         attach(markup, leaf)
 
@@ -155,28 +154,29 @@ class RhythmDefinition(abctools.AbjadObject):
             divisions = self.division_maker(time_signatures) 
         else:
             divisions = [
-                mathtools.NonreducedFraction(_) for _ in time_signatures
+                abjad.mathtools.NonreducedFraction(_) for _ in time_signatures
                 ]
         divisions = sequencetools.flatten_sequence(divisions)
         for division in divisions:
-            assert isinstance(division, mathtools.NonreducedFraction), division
+            assert isinstance(division, abjad.mathtools.NonreducedFraction), division
         rhythm_maker = self._get_rhythm_maker()
         selections = rhythm_maker(divisions)
         if not self.rhythm_overwrites:
             return selections
-        dummy_measures = scoretools.make_spacer_skip_measures(time_signatures)
-        dummy_time_signature_voice = Voice(dummy_measures)
-        dummy_music_voice = Voice()
+        dummy_measures = abjad.scoretools.make_spacer_skip_measures(time_signatures)
+        dummy_time_signature_voice = abjad.Voice(dummy_measures)
+        dummy_music_voice = abjad.Voice()
         dummy_music_voice.extend(selections)
-        dummy_staff = Staff([dummy_time_signature_voice, dummy_music_voice])
+        dummy_staff = abjad.Staff([
+            dummy_time_signature_voice, dummy_music_voice])
         dummy_staff.is_simultaneous = True
         for rhythm_overwrite in self.rhythm_overwrites:
             selector, division_maker, rhythm_maker = rhythm_overwrite
             old_music_selection = selector(dummy_music_voice)
-            prototype = selectiontools.ContiguousSelection
+            prototype = abjad.selectiontools.ContiguousSelection
             #if 1 < len(old_music_selection):
             if True:
-                old_music_selection = selectiontools.SliceSelection(
+                old_music_selection = abjad.selectiontools.SliceSelection(
                     old_music_selection)
                 result = old_music_selection._get_parent_and_start_stop_indices()
                 parent, start_index, stop_index = result
@@ -203,14 +203,14 @@ class RhythmDefinition(abctools.AbjadObject):
         return dummy_music_voice
 
     def _set_staff_line_count(self, first_leaf, staff_line_count):
-        command = indicatortools.LilyPondCommand('stopStaff')
-        attach(command, first_leaf)
+        command = abjad.indicatortools.LilyPondCommand('stopStaff')
+        abjad.attach(command, first_leaf)
         string = "override Staff.StaffSymbol #'line-count = #{}"
         string = string.format(staff_line_count)
-        command = indicatortools.LilyPondCommand(string)
-        attach(command, first_leaf)
-        command = indicatortools.LilyPondCommand('startStaff')
-        attach(command, first_leaf)
+        command = abjad.indicatortools.LilyPondCommand(string)
+        abjad.attach(command, first_leaf)
+        command = abjad.indicatortools.LilyPondCommand('startStaff')
+        abjad.attach(command, first_leaf)
 
     ### PUBLIC PROPERTIES ###
 
@@ -229,7 +229,7 @@ class RhythmDefinition(abctools.AbjadObject):
         elif isinstance(expr, Clef):
             self._clef = expr
         elif isinstance(expr, str):
-            clef = Clef(expr)
+            clef = abjad.Clef(expr)
             self._clef = clef
         else:
             message = 'must be clef, string or none: {!r}.'
@@ -260,7 +260,7 @@ class RhythmDefinition(abctools.AbjadObject):
 
         Xylophone music-maker always returns 5.
         '''
-        if isinstance(self.instrument, instrumenttools.Xylophone):
+        if isinstance(self.instrument, abjad.instrumenttools.Xylophone):
             return 5
         return self._staff_line_count
 
@@ -280,9 +280,9 @@ class RhythmDefinition(abctools.AbjadObject):
     def stages(self, expr):
         if expr is None:
             self._stages = expr
-        elif mathtools.is_positive_integer(expr):
+        elif abjad.mathtools.is_positive_integer(expr):
             self._stages = (expr, expr)
-        elif (mathtools.all_are_positive_integers(expr)
+        elif (abjad.mathtools.all_are_positive_integers(expr)
             and len(expr) == 2):
             self._stages = tuple(expr)
         else:

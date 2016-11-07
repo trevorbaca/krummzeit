@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
+import abjad
 import baca
-from abjad import *
-from abjad.tools.rhythmmakertools import BooleanPattern
-from experimental import *
 import krummzeit
+from abjad.tools.rhythmmakertools import Pattern
 from krummzeit.materials.__abbreviations__ import *
 
 
@@ -15,7 +14,8 @@ segment_maker = krummzeit.tools.SegmentMaker(
     )
 
 ### STAGES ###
-segment_maker.time_signatures = krummzeit.materials.segment_time_signatures['E']
+segment_maker.time_signatures = \
+    krummzeit.materials.segment_time_signatures['E']
 segment_maker.measures_per_stage = [
     3, 2, 2,        # stages 1-3
     3, 3, 3, 8,     # stages 4-7
@@ -31,11 +31,11 @@ segment_maker.validate_measures_per_stage()
 music_maker = segment_maker.define_rhythm()
 segment_maker.tempo_specifier = [
     (1, krummzeit.materials.named_tempo_inventory['36']),
-    (4, Accelerando()),
+    (4, abjad.Accelerando()),
     (8, krummzeit.materials.named_tempo_inventory['72/108']),
     (9, krummzeit.materials.named_tempo_inventory['72']),
     (9, krummzeit.materials.metric_modulation_inventory['4.=4']),
-    (9, Accelerando()),
+    (9, abjad.Accelerando()),
     (10, krummzeit.materials.named_tempo_inventory['108']),
     ]
 
@@ -51,8 +51,8 @@ music_maker.instrument = tam_tam
 # TODO: make semantic indication of continuation from previous segment
 music_maker._hide_untuned_percussion_markup = True
 music_maker.clef = 'percussion'
-music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
-    incise_specifier=rhythmmakertools.InciseSpecifier(
+music_maker.rhythm_maker = abjad.rhythmmakertools.IncisedRhythmMaker(
+    incise_specifier=abjad.rhythmmakertools.InciseSpecifier(
         prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],
         prefix_counts=[3, 1, 1, 3],
         suffix_talea=[0, 0, 1, -3, 0],
@@ -66,10 +66,10 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
 music_maker = segment_maker.define_rhythm()
 music_maker.stages = 1, 5
 music_maker.voice_name = vn
-music_maker.division_maker = makertools.SplitByDurationsDivisionCallback(
+music_maker.division_maker = baca.tools.SplitByDurationsDivisionCallback(
     durations=[(1, 4)],
     )
-music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker() 
+music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker() 
 
 segment_maker.copy_rhythm(
     vn,
@@ -90,8 +90,8 @@ music_maker.stages = 3, 6
 music_maker.voice_name = perc
 music_maker.instrument = sponges
 music_maker.clef = 'percussion'
-music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
-    talea=rhythmmakertools.Talea([1, 2], 2),
+music_maker.rhythm_maker = abjad.rhythmmakertools.TaleaRhythmMaker(
+    talea=abjad.rhythmmakertools.Talea([1, 2], 2),
     extra_counts_per_division=[2, 1, 0],
     )
 
@@ -99,7 +99,7 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
 music_maker = segment_maker.define_rhythm()
 music_maker.stages = 4
 music_maker.voice_name = va
-music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
+music_maker.division_maker = baca.tools.SplitByRoundedRatiosDivisionCallback(
     ratios=[
         (2, 1),
         (2, 1),
@@ -112,14 +112,14 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         (1, 4),
         (4, 3),
         ],
-    division_masks=[BooleanPattern(indices=[5, 6], period=7)],
+    division_masks=[Pattern(indices=[5, 6], period=7)],
     )
 
 segment_maker.copy_rhythm(
     va,
     4,
     stages=(5, 7),
-    rhythm_maker__division_masks=[BooleanPattern(indices=[0])],
+    rhythm_maker__division_masks=[Pattern(indices=[0])],
     )
 
 segment_maker.copy_rhythm(
@@ -135,7 +135,7 @@ segment_maker.copy_rhythm(
     voice_name=vc,
     stages=6,
     division_maker__ratios=[(2, 1), (1, 1, 1), (2, 1)],
-    rhythm_maker__division_masks=[BooleanPattern(indices=[0, 1, 2])],
+    rhythm_maker__division_masks=[Pattern(indices=[0, 1, 2])],
     )
 
 segment_maker.copy_rhythm(
@@ -215,14 +215,14 @@ segment_maker.copy_rhythm(
     pf,
     8,
     stages=(10, 11),
-    rhythm_maker__division_masks=[BooleanPattern(indices=[2], period=7)],
+    rhythm_maker__division_masks=[Pattern(indices=[2], period=7)],
     )
 
 segment_maker.copy_rhythm(
     perc,
     8,
     stages=(10, 11),
-    rhythm_maker__division_masks=[BooleanPattern(indices=[5], period=7)],
+    rhythm_maker__division_masks=[Pattern(indices=[5], period=7)],
     )
 
 ### ob, cl [E5-7] & [E10-12] ###
@@ -263,7 +263,7 @@ segment_maker.copy_rhythm(
         (-3, 4, 1, 12),
         (3, 2),
         ],
-    rhythm_maker__division_masks=[BooleanPattern(indices=[0])],
+    rhythm_maker__division_masks=[Pattern(indices=[0])],
     )
 
 segment_maker.copy_rhythm(
@@ -291,7 +291,7 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
         talea_denominator=16,
         fill_with_notes=False,
         ),
-    division_masks=[BooleanPattern(indices=[2], period=5)],
+    division_masks=[Pattern(indices=[2], period=5)],
     )
 
 segment_maker.copy_rhythm(
@@ -349,7 +349,7 @@ segment_maker.copy_rhythm(
     voice_name=pf,
     clef='bass',
     rhythm_maker=rhythmmakertools.NoteRhythmMaker(
-        division_masks=[BooleanPattern(indices=[5, 6], period=7)],
+        division_masks=[Pattern(indices=[5, 6], period=7)],
         tie_specifier=rhythmmakertools.TieSpecifier(
             tie_across_divisions=[0, 1],
             ),
@@ -361,7 +361,7 @@ segment_maker.copy_rhythm(
     5,
     voice_name=pf,
     rhythm_maker=rhythmmakertools.NoteRhythmMaker(
-        division_masks=[BooleanPattern(indices=[0])],
+        division_masks=[Pattern(indices=[0])],
         tie_specifier=rhythmmakertools.TieSpecifier(
             tie_across_divisions=[0, 1],
             ),

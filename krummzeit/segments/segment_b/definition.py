@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-from abjad import *
-from abjad.tools.rhythmmakertools import BooleanPattern
-from experimental import *
+import abjad
+import experimental
+from abjad.tools.rhythmmakertools import Pattern
 import krummzeit
 from krummzeit.materials.__abbreviations__ import *
 
@@ -37,11 +37,11 @@ segment_maker.tempo_specifier = [
     (1, krummzeit.materials.tempo_inventory[3]),
     (9, krummzeit.materials.tempo_inventory[4]),
     (9, krummzeit.materials.metric_modulation_inventory['4=8']),
-    (10, Accelerando()),
+    (10, abjad.Accelerando()),
     (12, krummzeit.materials.tempo_inventory[3]),
     (15, krummzeit.materials.tempo_inventory[2]),
     (15, krummzeit.materials.metric_modulation_inventory['4.=4']),
-    (16, Accelerando()),
+    (16, abjad.Accelerando()),
     (17, krummzeit.materials.tempo_inventory[3]),
     (20, krummzeit.materials.tempo_inventory[1]),
     (20, krummzeit.materials.metric_modulation_inventory['4=4:5(4)']),
@@ -332,7 +332,7 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
         ),
     split_divisions_by_counts=[6, 18],
     extra_counts_per_division=[2, 2, 0, 2, 4, 6],
-    division_masks=[BooleanPattern(indices=[1, 2, 3], period=6)],
+    division_masks=[Pattern(indices=[1, 2, 3], period=6)],
     )
 
 segment_maker.copy_rhythm(
@@ -340,7 +340,7 @@ segment_maker.copy_rhythm(
     17,
     voice_name=vc,
     stages=(18, 19),
-    rhythm_maker__division_masks=[BooleanPattern(indices=[2, 3, 4], period=6)],
+    rhythm_maker__division_masks=[Pattern(indices=[2, 3, 4], period=6)],
     )
 
 segment_maker.copy_rhythm(
@@ -348,7 +348,7 @@ segment_maker.copy_rhythm(
     17,
     voice_name=vn,
     stages=19,
-    rhythm_maker__division_masks=[BooleanPattern(indices=[3, 4, 5], period=6)],
+    rhythm_maker__division_masks=[Pattern(indices=[3, 4, 5], period=6)],
     )
 
 music_maker = segment_maker.define_rhythm()
@@ -365,7 +365,7 @@ music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
         left_classes=[Rest],
         left_counts=[1],
         ),
-    division_masks=[BooleanPattern(indices=[2, 3], period=6)],
+    division_masks=[Pattern(indices=[2, 3], period=6)],
     )
 
 segment_maker.copy_rhythm(
@@ -373,7 +373,7 @@ segment_maker.copy_rhythm(
     20,
     voice_name=vc,
     rhythm_maker__extra_counts_per_division=[4, 4, 2, 0, 2, 4],
-    rhythm_maker__division_masks=[BooleanPattern(indices=[0, 2], period=7)],
+    rhythm_maker__division_masks=[Pattern(indices=[0, 2], period=7)],
     )
 
 segment_maker.copy_rhythm(
@@ -381,7 +381,7 @@ segment_maker.copy_rhythm(
     20,
     voice_name=vn,
     rhythm_maker__extra_counts_per_division=[6, 0, 4, 4, 0, 2],
-    rhythm_maker__division_masks=[BooleanPattern(indices=[3, 6], period=8)],
+    rhythm_maker__division_masks=[Pattern(indices=[3, 6], period=8)],
     )
 
 ### pf [B20-22] ###
@@ -392,7 +392,7 @@ segment_maker.copy_rhythm(
     clef='treble',
     stages=(20, 22),
     rhythm_maker__extra_counts_per_division=[4, 0, 2, 4, 6],
-    rhythm_maker__division_masks=[BooleanPattern(indices=[1, 5], period=7)],
+    rhythm_maker__division_masks=[Pattern(indices=[1, 5], period=7)],
     )
 
 segment_maker.copy_rhythm(
@@ -429,7 +429,7 @@ music_maker.voice_name = vn
 music_maker.instrument = scraped_slate
 music_maker.clef = 'percussion'
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
-    division_masks=[BooleanPattern(indices=[0])],
+    division_masks=[Pattern(indices=[0])],
     tie_specifier=rhythmmakertools.TieSpecifier(
         tie_across_divisions=True,
         ),

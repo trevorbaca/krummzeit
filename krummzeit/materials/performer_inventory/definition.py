@@ -1,86 +1,86 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 
 
-performer_inventory = instrumenttools.PerformerInventory(
+performer_inventory = abjad.instrumenttools.PerformerInventory(
     [
-        instrumenttools.Performer(
+        abjad.instrumenttools.Performer(
             name='oboist',
-            instruments=instrumenttools.InstrumentInventory(
+            instruments=abjad.instrumenttools.InstrumentInventory(
                 [
-                    instrumenttools.Oboe(
+                    abjad.instrumenttools.Oboe(
                         instrument_name='oboe',
                         short_instrument_name='ob.',
-                        instrument_name_markup=markuptools.Markup(
+                        instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'hcenter-in',
                                     12,
                                     'Oboe'
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=markuptools.Markup(
+                        short_instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'hcenter-in',
                                     12,
                                     'Ob.'
                                     ),
                                 ),
                             ),
-                        allowable_clefs=indicatortools.ClefInventory(
+                        allowable_clefs=abjad.indicatortools.ClefInventory(
                             [
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='treble',
                                     ),
                                 ]
                             ),
-                        pitch_range=pitchtools.PitchRange(
+                        pitch_range=abjad.pitchtools.PitchRange(
                             range_string='[Bb3, A6]',
                             ),
-                        sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
+                        sounding_pitch_of_written_middle_c=abjad.pitchtools.NamedPitch("c'"),
                         ),
                     ]
                 ),
             ),
-        instrumenttools.Performer(
+        abjad.instrumenttools.Performer(
             name='clarinetist',
-            instruments=instrumenttools.InstrumentInventory(
+            instruments=abjad.instrumenttools.InstrumentInventory(
                 [
-                    instrumenttools.ClarinetInBFlat(
+                    abjad.instrumenttools.ClarinetInBFlat(
                         instrument_name='clarinet in B-flat',
                         short_instrument_name='cl. in B-flat',
-                        instrument_name_markup=markuptools.Markup(
+                        instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'column',
                                     [
-                                        markuptools.MarkupCommand(
+                                        abjad.markuptools.MarkupCommand(
                                             'hcenter-in',
                                             12,
                                             [
                                                 'Clarinet',
-                                                markuptools.MarkupCommand(
+                                                abjad.markuptools.MarkupCommand(
                                                     'line',
                                                     [
                                                         '(B',
-                                                        markuptools.MarkupCommand(
+                                                        abjad.markuptools.MarkupCommand(
                                                             'hspace',
                                                             -0.5
                                                             ),
-                                                        markuptools.MarkupCommand(
+                                                        abjad.markuptools.MarkupCommand(
                                                             'fontsize',
                                                             -3,
-                                                            markuptools.MarkupCommand(
+                                                            abjad.markuptools.MarkupCommand(
                                                                 'raise',
                                                                 0.5,
-                                                                markuptools.MarkupCommand(
+                                                                abjad.markuptools.MarkupCommand(
                                                                     'flat'
                                                                     )
                                                                 )
                                                             ),
-                                                        markuptools.MarkupCommand(
+                                                        abjad.markuptools.MarkupCommand(
                                                             'hspace',
                                                             -0.5
                                                             ),
@@ -93,36 +93,36 @@ performer_inventory = instrumenttools.PerformerInventory(
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=markuptools.Markup(
+                        short_instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'column',
                                     [
-                                        markuptools.MarkupCommand(
+                                        abjad.markuptools.MarkupCommand(
                                             'hcenter-in',
                                             12,
                                             [
                                                 'Cl.',
-                                                markuptools.MarkupCommand(
+                                                abjad.markuptools.MarkupCommand(
                                                     'line',
                                                     [
                                                         '(B',
-                                                        markuptools.MarkupCommand(
+                                                        abjad.markuptools.MarkupCommand(
                                                             'hspace',
                                                             -0.5
                                                             ),
-                                                        markuptools.MarkupCommand(
+                                                        abjad.markuptools.MarkupCommand(
                                                             'fontsize',
                                                             -3,
-                                                            markuptools.MarkupCommand(
+                                                            abjad.markuptools.MarkupCommand(
                                                                 'raise',
                                                                 0.5,
-                                                                markuptools.MarkupCommand(
+                                                                abjad.markuptools.MarkupCommand(
                                                                     'flat'
                                                                     )
                                                                 )
                                                             ),
-                                                        markuptools.MarkupCommand(
+                                                        abjad.markuptools.MarkupCommand(
                                                             'hspace',
                                                             -0.5
                                                             ),
@@ -135,51 +135,51 @@ performer_inventory = instrumenttools.PerformerInventory(
                                     ),
                                 ),
                             ),
-                        allowable_clefs=indicatortools.ClefInventory(
+                        allowable_clefs=abjad.indicatortools.ClefInventory(
                             [
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='treble',
                                     ),
                                 ]
                             ),
-                        pitch_range=pitchtools.PitchRange(
+                        pitch_range=abjad.pitchtools.PitchRange(
                             range_string='[D3, Bb6]',
                             ),
-                        sounding_pitch_of_written_middle_c=pitchtools.NamedPitch('bf'),
+                        sounding_pitch_of_written_middle_c=abjad.pitchtools.NamedPitch('bf'),
                         ),
-                    instrumenttools.ClarinetInEFlat(
+                    abjad.instrumenttools.ClarinetInEFlat(
                         instrument_name='clarinet in E-flat',
                         short_instrument_name='cl. E-flat',
-                        instrument_name_markup=markuptools.Markup(
+                        instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'column',
                                     [
-                                        markuptools.MarkupCommand(
+                                        abjad.markuptools.MarkupCommand(
                                             'hcenter-in',
                                             12,
                                             [
                                                 'Clarinet',
-                                                markuptools.MarkupCommand(
+                                                abjad.markuptools.MarkupCommand(
                                                     'line',
                                                     [
                                                         '(E',
-                                                        markuptools.MarkupCommand(
+                                                        abjad.markuptools.MarkupCommand(
                                                             'hspace',
                                                             -0.5
                                                             ),
-                                                        markuptools.MarkupCommand(
+                                                        abjad.markuptools.MarkupCommand(
                                                             'fontsize',
                                                             -3,
-                                                            markuptools.MarkupCommand(
+                                                            abjad.markuptools.MarkupCommand(
                                                                 'raise',
                                                                 0.5,
-                                                                markuptools.MarkupCommand(
+                                                                abjad.markuptools.MarkupCommand(
                                                                     'flat'
                                                                     )
                                                                 )
                                                             ),
-                                                        markuptools.MarkupCommand(
+                                                        abjad.markuptools.MarkupCommand(
                                                             'hspace',
                                                             -0.5
                                                             ),
@@ -192,36 +192,36 @@ performer_inventory = instrumenttools.PerformerInventory(
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=markuptools.Markup(
+                        short_instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'column',
                                     [
-                                        markuptools.MarkupCommand(
+                                        abjad.markuptools.MarkupCommand(
                                             'hcenter-in',
                                             12,
                                             [
                                                 'Cl.',
-                                                markuptools.MarkupCommand(
+                                                abjad.markuptools.MarkupCommand(
                                                     'line',
                                                     [
                                                         '(E',
-                                                        markuptools.MarkupCommand(
+                                                        abjad.markuptools.MarkupCommand(
                                                             'hspace',
                                                             -0.5
                                                             ),
-                                                        markuptools.MarkupCommand(
+                                                        abjad.markuptools.MarkupCommand(
                                                             'fontsize',
                                                             -3,
-                                                            markuptools.MarkupCommand(
+                                                            abjad.markuptools.MarkupCommand(
                                                                 'raise',
                                                                 0.5,
-                                                                markuptools.MarkupCommand(
+                                                                abjad.markuptools.MarkupCommand(
                                                                     'flat'
                                                                     )
                                                                 )
                                                             ),
-                                                        markuptools.MarkupCommand(
+                                                        abjad.markuptools.MarkupCommand(
                                                             'hspace',
                                                             -0.5
                                                             ),
@@ -234,514 +234,514 @@ performer_inventory = instrumenttools.PerformerInventory(
                                     ),
                                 ),
                             ),
-                        allowable_clefs=indicatortools.ClefInventory(
+                        allowable_clefs=abjad.indicatortools.ClefInventory(
                             [
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='treble',
                                     ),
                                 ]
                             ),
-                        pitch_range=pitchtools.PitchRange(
+                        pitch_range=abjad.pitchtools.PitchRange(
                             range_string='[F3, C7]',
                             ),
-                        sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("ef'"),
+                        sounding_pitch_of_written_middle_c=abjad.pitchtools.NamedPitch("ef'"),
                         ),
-                    instrumenttools.BassClarinet(
+                    abjad.instrumenttools.BassClarinet(
                         instrument_name='bass clarinet',
                         short_instrument_name='bass cl.',
-                        instrument_name_markup=markuptools.Markup(
+                        instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'hcenter-in',
                                     12,
                                     'Bass clarinet'
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=markuptools.Markup(
+                        short_instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'hcenter-in',
                                     12,
                                     'Bass cl.'
                                     ),
                                 ),
                             ),
-                        allowable_clefs=indicatortools.ClefInventory(
+                        allowable_clefs=abjad.indicatortools.ClefInventory(
                             [
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='treble',
                                     ),
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='bass',
                                     ),
                                 ]
                             ),
-                        pitch_range=pitchtools.PitchRange(
+                        pitch_range=abjad.pitchtools.PitchRange(
                             range_string='[Bb1, G5]',
                             ),
-                        sounding_pitch_of_written_middle_c=pitchtools.NamedPitch('bf,'),
+                        sounding_pitch_of_written_middle_c=abjad.pitchtools.NamedPitch('bf,'),
                         ),
                     ]
                 ),
             ),
-        instrumenttools.Performer(
+        abjad.instrumenttools.Performer(
             name='pianist',
-            instruments=instrumenttools.InstrumentInventory(
+            instruments=abjad.instrumenttools.InstrumentInventory(
                 [
-                    instrumenttools.Piano(
+                    abjad.instrumenttools.Piano(
                         instrument_name='piano',
                         short_instrument_name='pf.',
-                        instrument_name_markup=markuptools.Markup(
+                        instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'hcenter-in',
                                     12,
                                     'Piano'
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=markuptools.Markup(
+                        short_instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'hcenter-in',
                                     12,
                                     'Pf.'
                                     ),
                                 ),
                             ),
-                        allowable_clefs=indicatortools.ClefInventory(
+                        allowable_clefs=abjad.indicatortools.ClefInventory(
                             [
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='treble',
                                     ),
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='bass',
                                     ),
                                 ]
                             ),
-                        pitch_range=pitchtools.PitchRange(
+                        pitch_range=abjad.pitchtools.PitchRange(
                             range_string='[A0, C8]',
                             ),
-                        sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
+                        sounding_pitch_of_written_middle_c=abjad.pitchtools.NamedPitch("c'"),
                         ),
-                    instrumenttools.Harpsichord(
+                    abjad.instrumenttools.Harpsichord(
                         instrument_name='harpsichord',
                         short_instrument_name='hpschd.',
-                        instrument_name_markup=markuptools.Markup(
+                        instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'hcenter-in',
                                     12,
                                     'Harpsichord'
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=markuptools.Markup(
+                        short_instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'hcenter-in',
                                     12,
                                     'Hpschd.'
                                     ),
                                 ),
                             ),
-                        allowable_clefs=indicatortools.ClefInventory(
+                        allowable_clefs=abjad.indicatortools.ClefInventory(
                             [
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='treble',
                                     ),
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='bass',
                                     ),
                                 ]
                             ),
-                        pitch_range=pitchtools.PitchRange(
+                        pitch_range=abjad.pitchtools.PitchRange(
                             range_string='[C2, C7]',
                             ),
-                        sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
+                        sounding_pitch_of_written_middle_c=abjad.pitchtools.NamedPitch("c'"),
                         ),
                     ]
                 ),
             ),
-        instrumenttools.Performer(
+        abjad.instrumenttools.Performer(
             name='percussionist',
-            instruments=instrumenttools.InstrumentInventory(
+            instruments=abjad.instrumenttools.InstrumentInventory(
                 [
-                    instrumenttools.Percussion(
+                    abjad.instrumenttools.Percussion(
                         instrument_name='bass drum',
                         short_instrument_name='bass drum',
-                        instrument_name_markup=markuptools.Markup(
+                        instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'hcenter-in',
                                     12,
                                     'Bass drum'
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=markuptools.Markup(
+                        short_instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'hcenter-in',
                                     12,
                                     'B. dr.'
                                     ),
                                 ),
                             ),
-                        allowable_clefs=indicatortools.ClefInventory(
+                        allowable_clefs=abjad.indicatortools.ClefInventory(
                             [
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='percussion',
                                     ),
                                 ]
                             ),
-                        pitch_range=pitchtools.PitchRange(
+                        pitch_range=abjad.pitchtools.PitchRange(
                             range_string='[A0, C8]',
                             ),
-                        sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
+                        sounding_pitch_of_written_middle_c=abjad.pitchtools.NamedPitch("c'"),
                         ),
-                    instrumenttools.Percussion(
+                    abjad.instrumenttools.Percussion(
                         instrument_name='crotales',
                         short_instrument_name='crotales',
-                        instrument_name_markup=markuptools.Markup(
+                        instrument_name_markup=abjad.markuptools.Markup(
                             contents=('Crotales',),
                             ),
-                        short_instrument_name_markup=markuptools.Markup(
+                        short_instrument_name_markup=abjad.markuptools.Markup(
                             contents=('Crot.',),
                             ),
-                        allowable_clefs=indicatortools.ClefInventory(
+                        allowable_clefs=abjad.indicatortools.ClefInventory(
                             [
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='percussion',
                                     ),
                                 ]
                             ),
-                        pitch_range=pitchtools.PitchRange(
+                        pitch_range=abjad.pitchtools.PitchRange(
                             range_string='[A0, C8]',
                             ),
-                        sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
+                        sounding_pitch_of_written_middle_c=abjad.pitchtools.NamedPitch("c'"),
                         ),
-                    instrumenttools.Percussion(
+                    abjad.instrumenttools.Percussion(
                         instrument_name='scraped slate',
                         short_instrument_name='scraped slate',
-                        instrument_name_markup=markuptools.Markup(
+                        instrument_name_markup=abjad.markuptools.Markup(
                             contents=('Slate',),
                             ),
-                        short_instrument_name_markup=markuptools.Markup(
+                        short_instrument_name_markup=abjad.markuptools.Markup(
                             contents=('Slt.',),
                             ),
-                        allowable_clefs=indicatortools.ClefInventory(
+                        allowable_clefs=abjad.indicatortools.ClefInventory(
                             [
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='percussion',
                                     ),
                                 ]
                             ),
-                        pitch_range=pitchtools.PitchRange(
+                        pitch_range=abjad.pitchtools.PitchRange(
                             range_string='[A0, C8]',
                             ),
-                        sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
+                        sounding_pitch_of_written_middle_c=abjad.pitchtools.NamedPitch("c'"),
                         ),
-                    instrumenttools.Percussion(
+                    abjad.instrumenttools.Percussion(
                         instrument_name='snare drum',
                         short_instrument_name='snare drum',
-                        instrument_name_markup=markuptools.Markup(
+                        instrument_name_markup=abjad.markuptools.Markup(
                             contents=('Snare drum',),
                             ),
-                        short_instrument_name_markup=markuptools.Markup(
+                        short_instrument_name_markup=abjad.markuptools.Markup(
                             contents=('Sn. Dr.',),
                             ),
-                        allowable_clefs=indicatortools.ClefInventory(
+                        allowable_clefs=abjad.indicatortools.ClefInventory(
                             [
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='percussion',
                                     ),
                                 ]
                             ),
-                        pitch_range=pitchtools.PitchRange(
+                        pitch_range=abjad.pitchtools.PitchRange(
                             range_string='[A0, C8]',
                             ),
-                        sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
+                        sounding_pitch_of_written_middle_c=abjad.pitchtools.NamedPitch("c'"),
                         ),
-                    instrumenttools.Percussion(
+                    abjad.instrumenttools.Percussion(
                         instrument_name='sponges',
                         short_instrument_name='sponges',
-                        instrument_name_markup=markuptools.Markup(
+                        instrument_name_markup=abjad.markuptools.Markup(
                             contents=('Sponges',),
                             ),
-                        short_instrument_name_markup=markuptools.Markup(
+                        short_instrument_name_markup=abjad.markuptools.Markup(
                             contents=('Spg.',),
                             ),
-                        allowable_clefs=indicatortools.ClefInventory(
+                        allowable_clefs=abjad.indicatortools.ClefInventory(
                             [
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='percussion',
                                     ),
                                 ]
                             ),
-                        pitch_range=pitchtools.PitchRange(
+                        pitch_range=abjad.pitchtools.PitchRange(
                             range_string='[A0, C8]',
                             ),
-                        sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
+                        sounding_pitch_of_written_middle_c=abjad.pitchtools.NamedPitch("c'"),
                         ),
-                    instrumenttools.Percussion(
+                    abjad.instrumenttools.Percussion(
                         instrument_name='suspended cymbal',
                         short_instrument_name='suspended cymbal',
-                        instrument_name_markup=markuptools.Markup(
+                        instrument_name_markup=abjad.markuptools.Markup(
                             contents=('Suspended cymbal',),
                             ),
-                        short_instrument_name_markup=markuptools.Markup(
+                        short_instrument_name_markup=abjad.markuptools.Markup(
                             contents=('Sus. cym.',),
                             ),
-                        allowable_clefs=indicatortools.ClefInventory(
+                        allowable_clefs=abjad.indicatortools.ClefInventory(
                             [
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='percussion',
                                     ),
                                 ]
                             ),
-                        pitch_range=pitchtools.PitchRange(
+                        pitch_range=abjad.pitchtools.PitchRange(
                             range_string='[A0, C8]',
                             ),
-                        sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
+                        sounding_pitch_of_written_middle_c=abjad.pitchtools.NamedPitch("c'"),
                         ),
-                    instrumenttools.Percussion(
+                    abjad.instrumenttools.Percussion(
                         instrument_name='tam-tam',
                         short_instrument_name='tam-tam',
-                        instrument_name_markup=markuptools.Markup(
+                        instrument_name_markup=abjad.markuptools.Markup(
                             contents=('Tam-tam',),
                             ),
-                        short_instrument_name_markup=markuptools.Markup(
+                        short_instrument_name_markup=abjad.markuptools.Markup(
                             contents=('Tam.',),
                             ),
-                        allowable_clefs=indicatortools.ClefInventory(
+                        allowable_clefs=abjad.indicatortools.ClefInventory(
                             [
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='percussion',
                                     ),
                                 ]
                             ),
-                        pitch_range=pitchtools.PitchRange(
+                        pitch_range=abjad.pitchtools.PitchRange(
                             range_string='[A0, C8]',
                             ),
-                        sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
+                        sounding_pitch_of_written_middle_c=abjad.pitchtools.NamedPitch("c'"),
                         ),
-                    instrumenttools.Xylophone(
+                    abjad.instrumenttools.Xylophone(
                         instrument_name='xylophone',
                         short_instrument_name='xyl.',
-                        instrument_name_markup=markuptools.Markup(
+                        instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'hcenter-in',
                                     12,
                                     'Xylophone'
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=markuptools.Markup(
+                        short_instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'hcenter-in',
                                     12,
                                     'Xyl.'
                                     ),
                                 ),
                             ),
-                        allowable_clefs=indicatortools.ClefInventory(
+                        allowable_clefs=abjad.indicatortools.ClefInventory(
                             [
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='treble',
                                     ),
                                 ]
                             ),
-                        pitch_range=pitchtools.PitchRange(
+                        pitch_range=abjad.pitchtools.PitchRange(
                             range_string='[C4, C7]',
                             ),
-                        sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c''"),
+                        sounding_pitch_of_written_middle_c=abjad.pitchtools.NamedPitch("c''"),
                         ),
                     ]
                 ),
             ),
-        instrumenttools.Performer(
+        abjad.instrumenttools.Performer(
             name='violinist',
-            instruments=instrumenttools.InstrumentInventory(
+            instruments=abjad.instrumenttools.InstrumentInventory(
                 [
-                    instrumenttools.Violin(
+                    abjad.instrumenttools.Violin(
                         instrument_name='violin',
                         short_instrument_name='vn.',
-                        instrument_name_markup=markuptools.Markup(
+                        instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'hcenter-in',
                                     12,
                                     'Violin'
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=markuptools.Markup(
+                        short_instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'hcenter-in',
                                     12,
                                     'Vn.'
                                     ),
                                 ),
                             ),
-                        allowable_clefs=indicatortools.ClefInventory(
+                        allowable_clefs=abjad.indicatortools.ClefInventory(
                             [
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='treble',
                                     ),
                                 ]
                             ),
-                        default_tuning=indicatortools.Tuning(
-                            pitches=pitchtools.PitchSegment(
+                        default_tuning=abjad.indicatortools.Tuning(
+                            pitches=abjad.pitchtools.PitchSegment(
                                 (
-                                    pitchtools.NamedPitch('g'),
-                                    pitchtools.NamedPitch("d'"),
-                                    pitchtools.NamedPitch("a'"),
-                                    pitchtools.NamedPitch("e''"),
+                                    abjad.pitchtools.NamedPitch('g'),
+                                    abjad.pitchtools.NamedPitch("d'"),
+                                    abjad.pitchtools.NamedPitch("a'"),
+                                    abjad.pitchtools.NamedPitch("e''"),
                                     ),
-                                item_class=pitchtools.NamedPitch,
+                                item_class=abjad.pitchtools.NamedPitch,
                                 ),
                             ),
-                        pitch_range=pitchtools.PitchRange(
+                        pitch_range=abjad.pitchtools.PitchRange(
                             range_string='[G3, G7]',
                             ),
-                        sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
+                        sounding_pitch_of_written_middle_c=abjad.pitchtools.NamedPitch("c'"),
                         ),
-                    instrumenttools.Percussion(
+                    abjad.instrumenttools.Percussion(
                         instrument_name='scraped slate',
                         short_instrument_name='scraped slate',
-                        instrument_name_markup=markuptools.Markup(
+                        instrument_name_markup=abjad.markuptools.Markup(
                             contents=('Untuned percussion',),
                             ),
-                        short_instrument_name_markup=markuptools.Markup(
+                        short_instrument_name_markup=abjad.markuptools.Markup(
                             contents=('Perc.',),
                             ),
-                        allowable_clefs=indicatortools.ClefInventory(
+                        allowable_clefs=abjad.indicatortools.ClefInventory(
                             [
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='percussion',
                                     ),
                                 ]
                             ),
-                        pitch_range=pitchtools.PitchRange(
+                        pitch_range=abjad.pitchtools.PitchRange(
                             range_string='[A0, C8]',
                             ),
-                        sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
+                        sounding_pitch_of_written_middle_c=abjad.pitchtools.NamedPitch("c'"),
                         ),
                     ]
                 ),
             ),
-        instrumenttools.Performer(
+        abjad.instrumenttools.Performer(
             name='violist',
-            instruments=instrumenttools.InstrumentInventory(
+            instruments=abjad.instrumenttools.InstrumentInventory(
                 [
-                    instrumenttools.Viola(
+                    abjad.instrumenttools.Viola(
                         instrument_name='viola',
                         short_instrument_name='va.',
-                        instrument_name_markup=markuptools.Markup(
+                        instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'hcenter-in',
                                     12,
                                     'Viola'
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=markuptools.Markup(
+                        short_instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'hcenter-in',
                                     12,
                                     'Va.'
                                     ),
                                 ),
                             ),
-                        allowable_clefs=indicatortools.ClefInventory(
+                        allowable_clefs=abjad.indicatortools.ClefInventory(
                             [
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='alto',
                                     ),
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='treble',
                                     ),
                                 ]
                             ),
-                        default_tuning=indicatortools.Tuning(
-                            pitches=pitchtools.PitchSegment(
+                        default_tuning=abjad.indicatortools.Tuning(
+                            pitches=abjad.pitchtools.PitchSegment(
                                 (
-                                    pitchtools.NamedPitch('c'),
-                                    pitchtools.NamedPitch('g'),
-                                    pitchtools.NamedPitch("d'"),
-                                    pitchtools.NamedPitch("a'"),
+                                    abjad.pitchtools.NamedPitch('c'),
+                                    abjad.pitchtools.NamedPitch('g'),
+                                    abjad.pitchtools.NamedPitch("d'"),
+                                    abjad.pitchtools.NamedPitch("a'"),
                                     ),
-                                item_class=pitchtools.NamedPitch,
+                                item_class=abjad.pitchtools.NamedPitch,
                                 ),
                             ),
-                        pitch_range=pitchtools.PitchRange(
+                        pitch_range=abjad.pitchtools.PitchRange(
                             range_string='[C3, D6]',
                             ),
-                        sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
+                        sounding_pitch_of_written_middle_c=abjad.pitchtools.NamedPitch("c'"),
                         ),
                     ]
                 ),
             ),
-        instrumenttools.Performer(
+        abjad.instrumenttools.Performer(
             name='cellist',
-            instruments=instrumenttools.InstrumentInventory(
+            instruments=abjad.instrumenttools.InstrumentInventory(
                 [
-                    instrumenttools.Cello(
+                    abjad.instrumenttools.Cello(
                         instrument_name='cello',
                         short_instrument_name='vc.',
-                        instrument_name_markup=markuptools.Markup(
+                        instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'hcenter-in',
                                     12,
                                     'Cello'
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=markuptools.Markup(
+                        short_instrument_name_markup=abjad.markuptools.Markup(
                             contents=(
-                                markuptools.MarkupCommand(
+                                abjad.markuptools.MarkupCommand(
                                     'hcenter-in',
                                     12,
                                     'Vc.'
                                     ),
                                 ),
                             ),
-                        allowable_clefs=indicatortools.ClefInventory(
+                        allowable_clefs=abjad.indicatortools.ClefInventory(
                             [
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='bass',
                                     ),
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='tenor',
                                     ),
-                                indicatortools.Clef(
+                                abjad.indicatortools.Clef(
                                     name='treble',
                                     ),
                                 ]
                             ),
-                        default_tuning=indicatortools.Tuning(
-                            pitches=pitchtools.PitchSegment(
+                        default_tuning=abjad.indicatortools.Tuning(
+                            pitches=abjad.pitchtools.PitchSegment(
                                 (
-                                    pitchtools.NamedPitch('c,'),
-                                    pitchtools.NamedPitch('g,'),
-                                    pitchtools.NamedPitch('d'),
-                                    pitchtools.NamedPitch('a'),
+                                    abjad.pitchtools.NamedPitch('c,'),
+                                    abjad.pitchtools.NamedPitch('g,'),
+                                    abjad.pitchtools.NamedPitch('d'),
+                                    abjad.pitchtools.NamedPitch('a'),
                                     ),
-                                item_class=pitchtools.NamedPitch,
+                                item_class=abjad.pitchtools.NamedPitch,
                                 ),
                             ),
-                        pitch_range=pitchtools.PitchRange(
+                        pitch_range=abjad.pitchtools.PitchRange(
                             range_string='[C2, G5]',
                             ),
-                        sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
+                        sounding_pitch_of_written_middle_c=abjad.pitchtools.NamedPitch("c'"),
                         ),
                     ]
                 ),

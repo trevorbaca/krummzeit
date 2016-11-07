@@ -1,41 +1,41 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 
 
-tempo_inventory = indicatortools.TempoInventory(
+tempo_inventory = abjad.indicatortools.TempoInventory(
     [
-        indicatortools.Tempo(
-            reference_duration=durationtools.Duration(1, 4),
+        abjad.indicatortools.Tempo(
+            reference_duration=abjad.durationtools.Duration(1, 4),
             units_per_minute=72,
             ),
-        indicatortools.Tempo(
-            reference_duration=durationtools.Duration(1, 4),
+        abjad.indicatortools.Tempo(
+            reference_duration=abjad.durationtools.Duration(1, 4),
             units_per_minute=108,
             ),
-        indicatortools.Tempo(
-            reference_duration=durationtools.Duration(1, 4),
+        abjad.indicatortools.Tempo(
+            reference_duration=abjad.durationtools.Duration(1, 4),
             units_per_minute=90,
             ),
-        indicatortools.Tempo(
-            reference_duration=durationtools.Duration(1, 4),
+        abjad.indicatortools.Tempo(
+            reference_duration=abjad.durationtools.Duration(1, 4),
             units_per_minute=135,
             ),
-        indicatortools.Tempo(
-            reference_duration=durationtools.Duration(1, 4),
+        abjad.indicatortools.Tempo(
+            reference_duration=abjad.durationtools.Duration(1, 4),
             units_per_minute=67.5,
-            custom_markup=markuptools.Markup(
+            custom_markup=abjad.markuptools.Markup(
                 contents=(
-                    markuptools.MarkupCommand(
+                    abjad.markuptools.MarkupCommand(
                         'smaller',
-                        markuptools.MarkupCommand(
+                        abjad.markuptools.MarkupCommand(
                             'general-align',
-                            schemetools.Scheme(
+                            abjad.schemetools.Scheme(
                                 'Y'
                                 ),
-                            schemetools.Scheme(
+                            abjad.schemetools.Scheme(
                                 'DOWN'
                                 ),
-                            markuptools.MarkupCommand(
+                            abjad.markuptools.MarkupCommand(
                                 'note-by-number',
                                 2,
                                 0,
@@ -43,38 +43,38 @@ tempo_inventory = indicatortools.TempoInventory(
                                 )
                             )
                         ),
-                    markuptools.MarkupCommand('upright', ' = 67.5'),
+                    abjad.markuptools.MarkupCommand('upright', ' = 67.5'),
                     ),
                 ),
             ),
-        indicatortools.Tempo(
-            reference_duration=durationtools.Duration(1, 4),
+        abjad.indicatortools.Tempo(
+            reference_duration=abjad.durationtools.Duration(1, 4),
             units_per_minute=36,
             ),
-        indicatortools.Tempo(
-            reference_duration=durationtools.Duration(1, 4),
+        abjad.indicatortools.Tempo(
+            reference_duration=abjad.durationtools.Duration(1, 4),
             units_per_minute=73,
-            custom_markup=markuptools.Markup(
+            custom_markup=abjad.markuptools.Markup(
                 contents=(
-                    markuptools.MarkupCommand(
+                    abjad.markuptools.MarkupCommand(
                         'override',
-                        schemetools.SchemePair('padding', 0.45),
-                        markuptools.MarkupCommand(
+                        abjad.schemetools.SchemePair('padding', 0.45),
+                        abjad.markuptools.MarkupCommand(
                             'parenthesize',
-                            markuptools.MarkupCommand(
+                            abjad.markuptools.MarkupCommand(
                                 'line',
                                 [
-                                    markuptools.MarkupCommand(
+                                    abjad.markuptools.MarkupCommand(
                                         'smaller',
-                                        markuptools.MarkupCommand(
+                                        abjad.markuptools.MarkupCommand(
                                             'general-align',
-                                            schemetools.Scheme(
+                                            abjad.schemetools.Scheme(
                                                 'Y'
                                                 ),
-                                            schemetools.Scheme(
+                                            abjad.schemetools.Scheme(
                                                 'DOWN'
                                                 ),
-                                            markuptools.MarkupCommand(
+                                            abjad.markuptools.MarkupCommand(
                                                 'note-by-number',
                                                 2,
                                                 0,
@@ -82,26 +82,26 @@ tempo_inventory = indicatortools.TempoInventory(
                                                 )
                                             )
                                         ),
-                                    markuptools.MarkupCommand('upright', ' = 72'),
+                                    abjad.markuptools.MarkupCommand('upright', ' = 72'),
                                     ],
                                 ),
                             ),
                         ),
-                    markuptools.MarkupCommand(
+                    abjad.markuptools.MarkupCommand(
                         'italic',
                         'subito',
                         ),
-                    markuptools.MarkupCommand(
+                    abjad.markuptools.MarkupCommand(
                         'smaller',
-                        markuptools.MarkupCommand(
+                        abjad.markuptools.MarkupCommand(
                             'general-align',
-                            schemetools.Scheme(
+                            abjad.schemetools.Scheme(
                                 'Y'
                                 ),
-                            schemetools.Scheme(
+                            abjad.schemetools.Scheme(
                                 'DOWN'
                                 ),
-                            markuptools.MarkupCommand(
+                            abjad.markuptools.MarkupCommand(
                                 'note-by-number',
                                 2,
                                 0,
@@ -109,16 +109,16 @@ tempo_inventory = indicatortools.TempoInventory(
                                 )
                             )
                         ),
-                    markuptools.MarkupCommand('upright', ' = 108'),
+                    abjad.markuptools.MarkupCommand('upright', ' = 108'),
                     ),
                 ),
             ),
-        indicatortools.Tempo(
-            reference_duration=durationtools.Duration(1, 4),
+        abjad.indicatortools.Tempo(
+            reference_duration=abjad.durationtools.Duration(1, 4),
             units_per_minute=144,
             ),
-        indicatortools.Tempo(
-            reference_duration=durationtools.Duration(1, 4),
+        abjad.indicatortools.Tempo(
+            reference_duration=abjad.durationtools.Duration(1, 4),
             units_per_minute=45,
             ),
         ]

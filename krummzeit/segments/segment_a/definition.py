@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from abjad import *
-from abjad.tools.rhythmmakertools import BooleanPattern
+import abjad
+from abjad.tools.rhythmmakertools import Pattern
 from experimental import *
 import krummzeit
 from krummzeit.materials.__abbreviations__ import *
@@ -54,7 +54,7 @@ music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
     )
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[(1, 1, 1)],
-    division_masks=[BooleanPattern(indices=[0])],
+    division_masks=[Pattern(indices=[0])],
     )
 
 segment_maker.copy_rhythm(
@@ -82,7 +82,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         (1, 4),
         (4, 3),
         ],
-    division_masks=[BooleanPattern(indices=[5, 6], period=7)],
+    division_masks=[Pattern(indices=[5, 6], period=7)],
     )
 
 segment_maker.copy_rhythm(
@@ -91,7 +91,7 @@ segment_maker.copy_rhythm(
     voice_name=va,
     stages=(3, 7),
     division_maker__ratios=[(2, 1), (1, 1, 1), (2, 1)],
-    rhythm_maker__division_masks=[BooleanPattern(indices=[0, 1], period=7)],
+    rhythm_maker__division_masks=[Pattern(indices=[0, 1], period=7)],
     )
 
 segment_maker.copy_rhythm(
@@ -100,7 +100,7 @@ segment_maker.copy_rhythm(
     voice_name=vc,
     stages=(3, 7),
     division_maker__ratios=[(1, 1, 1), (2, 1), (2, 1)],
-    rhythm_maker__division_masks=[BooleanPattern(indices=[2, 3], period=7)],
+    rhythm_maker__division_masks=[Pattern(indices=[2, 3], period=7)],
     )
 
 ### bass cl [A2-6] pedals ###
@@ -117,7 +117,7 @@ music_maker.voice_name = pf
 music_maker.instrument = piano
 music_maker.clef = 'bass'
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
-    division_masks=[BooleanPattern(indices=[0], period=1)],
+    division_masks=[Pattern(indices=[0], period=1)],
     )
 
 ### repeated pf cluster ###

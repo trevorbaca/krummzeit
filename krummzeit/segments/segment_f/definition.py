@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
+import abjad
 import baca
-from abjad import *
-from abjad.tools.rhythmmakertools import BooleanPattern
-from experimental import *
 import krummzeit
+from abjad.tools.abjad.rhythmmakertools import Pattern
 from krummzeit.materials.__abbreviations__ import *
 
 
@@ -15,7 +14,8 @@ segment_maker = krummzeit.tools.SegmentMaker(
     )
 
 ### STAGES ###
-segment_maker.time_signatures = krummzeit.materials.segment_time_signatures['F']
+segment_maker.time_signatures = \
+    krummzeit.materials.segment_time_signatures['F']
 segment_maker.measures_per_stage = [
     8,                      # stage 1
     2, 1, 1, 1, 1,          # stages 2-6
@@ -52,15 +52,15 @@ segment_maker.tempo_specifier = [
 music_maker = segment_maker.define_rhythm()
 music_maker.voice_name = ob
 music_maker.stages = 1
-music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
+music_maker.division_maker = baca.tools.SplitByRoundedRatiosDivisionCallback(
     ratios=[(2, 1), (2, 1), (1, 1, 1)],
     )
-music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
+music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[
         (1, 1, 1, 1, 3, 3),
         (3, 4, 1, 1),
         ],
-    division_masks=[BooleanPattern(indices=[3, 4], period=6)],
+    division_masks=[Pattern(indices=[3, 4], period=6)],
     )
 
 segment_maker.copy_rhythm(
@@ -74,21 +74,21 @@ music_maker = segment_maker.define_rhythm()
 music_maker.voice_name = cl
 music_maker.instrument = e_flat_clarinet
 music_maker.stages = 1, 2
-music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    counts=mathtools.Infinity,
-    secondary_division_maker=makertools.SplitByDurationsDivisionCallback(
+music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
+    counts=abjad.mathtools.Infinity,
+    secondary_division_maker=baca.tools.SplitByDurationsDivisionCallback(
         durations=[(4, 1)],
         ),
     )
-music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
+music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker()
 
 
 ### pf, vn, va, vc [F2] ###
 music_maker = segment_maker.define_rhythm()
 music_maker.voice_name = vn
 music_maker.stages = 2
-music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
-    incise_specifier=rhythmmakertools.InciseSpecifier(
+music_maker.rhythm_maker = abjad.rhythmmakertools.IncisedRhythmMaker(
+    incise_specifier=abjad.rhythmmakertools.InciseSpecifier(
         prefix_talea=[-2, 2, 3, -2, 3, -2, 2],
         prefix_counts=[3, 2, 2],
         suffix_talea=[2, -2, 3, -1, 0, 2, -2],
@@ -96,7 +96,7 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
         talea_denominator=16,
         fill_with_notes=False,
         ),
-    beam_specifier=rhythmmakertools.BeamSpecifier(
+    beam_specifier=abjad.rhythmmakertools.BeamSpecifier(
         beam_each_division=False, 
         ),
     )
@@ -120,8 +120,8 @@ music_maker.stages = 1, 6
 music_maker.instrument = suspended_cymbal
 music_maker._hide_untuned_percussion_markup = True
 music_maker.clef = 'percussion'
-music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
-    talea=rhythmmakertools.Talea([1, 2], 2),
+music_maker.rhythm_maker = abjad.rhythmmakertools.TaleaRhythmMaker(
+    talea=abjad.rhythmmakertools.Talea([1, 2], 2),
     extra_counts_per_division=[2, 1, 0],
     )
 
@@ -132,16 +132,16 @@ segment_maker.copy_rhythm(perc, 2, stages=(17, 22))
 music_maker = segment_maker.define_rhythm()
 music_maker.voice_name = vn
 music_maker.stages = 4, 10
-music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
+music_maker.division_maker = baca.tools.SplitByRoundedRatiosDivisionCallback(
     ratios=[(2, 1), (2, 1), (1, 1, 1)],
     )
-music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
+music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[
         (1, 2),
         (1, 4),
         (4, 3),
         ],
-    division_masks=[BooleanPattern(indices=[5, 6], period=7)],
+    division_masks=[Pattern(indices=[5, 6], period=7)],
     )
 
 segment_maker.copy_rhythm(
@@ -149,7 +149,7 @@ segment_maker.copy_rhythm(
     4,
     voice_name=va,
     division_maker__ratios=[(2, 1), (1, 1, 1), (2, 1)],
-    rhythm_maker__division_masks=[BooleanPattern(indices=[0, 1], period=7)],
+    rhythm_maker__division_masks=[Pattern(indices=[0, 1], period=7)],
     )
 
 segment_maker.copy_rhythm(
@@ -157,14 +157,14 @@ segment_maker.copy_rhythm(
     4,
     voice_name=vc,
     division_maker__ratios=[(1, 1, 1), (2, 1), (2, 1)],
-    rhythm_maker__division_masks=[BooleanPattern(indices=[2, 3], period=7)],
+    rhythm_maker__division_masks=[Pattern(indices=[2, 3], period=7)],
     )
 
 ### ob, cl [F4-11] ###
 music_maker = segment_maker.define_rhythm()
 music_maker.voice_name = ob
 music_maker.stages = 4, 11
-music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
+music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[
         (-2, 4, 1, 1, 12),
         (3, 2),
@@ -175,10 +175,10 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         (7, 1, 3),
         (3, -2),
         ],
-    tie_specifier=rhythmmakertools.TieSpecifier(
+    tie_specifier=abjad.rhythmmakertools.TieSpecifier(
         tie_across_divisions=True,
         ),
-    tuplet_spelling_specifier=rhythmmakertools.TupletSpellingSpecifier(
+    tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
         avoid_dots=True,
         ),
     )
@@ -198,7 +198,7 @@ segment_maker.copy_rhythm(
         (-3, 4, 1, 12),
         (3, 2),
         ],
-    rhythm_maker__division_masks=[BooleanPattern(indices=[0])],
+    rhythm_maker__division_masks=[Pattern(indices=[0])],
     )
 
 
@@ -207,15 +207,15 @@ music_maker = segment_maker.define_rhythm()
 music_maker.voice_name = pf
 music_maker.stages = 8
 music_maker.clef = 'treble'
-music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
+music_maker.division_maker = baca.tools.SplitByRoundedRatiosDivisionCallback(
     ratios=[(1, 2), (2, 1)],
     )
-music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
+music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[
         (-1, 1, 1, 2),
         (-1, 1, 1, -2, 2),
         ],
-    tuplet_spelling_specifier=rhythmmakertools.TupletSpellingSpecifier(
+    tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
         avoid_dots=True,
         ),
     )
@@ -240,15 +240,15 @@ music_maker = segment_maker.define_rhythm()
 music_maker.voice_name = cl
 music_maker.instrument = bass_clarinet
 music_maker.stages = 13
-music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    counts=mathtools.Infinity,
-    secondary_division_maker=makertools.SplitByDurationsDivisionCallback(
+music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
+    counts=abjad.mathtools.Infinity,
+    secondary_division_maker=baca.tools.SplitByDurationsDivisionCallback(
         durations=[(1, 2)],
         remainder=Left,
         ),
     )
-music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
-    incise_specifier=rhythmmakertools.InciseSpecifier(
+music_maker.rhythm_maker = abjad.rhythmmakertools.IncisedRhythmMaker(
+    incise_specifier=abjad.rhythmmakertools.InciseSpecifier(
         suffix_talea=[-1],
         suffix_counts=[1],
         talea_denominator=16,
@@ -274,15 +274,15 @@ segment_maker.copy_rhythm(
 music_maker = segment_maker.define_rhythm()
 music_maker.voice_name = cl
 music_maker.stages = 16, 19
-music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    counts=mathtools.Infinity,
-    secondary_division_maker=makertools.SplitByDurationsDivisionCallback(
+music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
+    counts=abjad.mathtools.Infinity,
+    secondary_division_maker=baca.tools.SplitByDurationsDivisionCallback(
         durations=[(1, 4)],
         remainder=Right,
         ),
     )
-music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
-    incise_specifier=rhythmmakertools.InciseSpecifier(
+music_maker.rhythm_maker = abjad.rhythmmakertools.IncisedRhythmMaker(
+    incise_specifier=abjad.rhythmmakertools.InciseSpecifier(
         suffix_talea=[-1],
         suffix_counts=[1],
         talea_denominator=32,
@@ -319,16 +319,16 @@ segment_maker.copy_rhythm(
 music_maker = segment_maker.define_rhythm()
 music_maker.voice_name = ob
 music_maker.stages = 18, 22
-music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    counts=mathtools.Infinity,
-    secondary_division_maker=makertools.SplitByDurationsDivisionCallback(
+music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
+    counts=abjad.mathtools.Infinity,
+    secondary_division_maker=baca.tools.SplitByDurationsDivisionCallback(
         durations=[(1, 4)],
         remainder=Right,
         ),
     )
-music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
+music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[(3, -1, 2), (1, -1, 3, -1)],
-    tie_specifier=rhythmmakertools.TieSpecifier(
+    tie_specifier=abjad.rhythmmakertools.TieSpecifier(
         tie_across_divisions=[1, 0],
         ),
     )
@@ -344,14 +344,14 @@ segment_maker.copy_rhythm(
 music_maker = segment_maker.define_rhythm()
 music_maker.voice_name = pf
 music_maker.stages = (19, 20)
-music_maker.rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
-    talea=rhythmmakertools.Talea(
+music_maker.rhythm_maker = abjad.rhythmmakertools.TaleaRhythmMaker(
+    talea=abjad.rhythmmakertools.Talea(
         counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8], 
         denominator=16,
         ),
     split_divisions_by_counts=[6, 18],
     extra_counts_per_division=[2, 2, 0, 2, 4, 6],
-    division_masks=[BooleanPattern(indices=[0, 4, 5], period=6)],
+    division_masks=[Pattern(indices=[0, 4, 5], period=6)],
     )
 
 segment_maker.copy_rhythm(
@@ -376,7 +376,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_scoped_specifiers(
     scope=(cl, (1, 2)),
     specifiers=[
-        Dynamic('ppp'),
+        abjad.Dynamic('ppp'),
         ],
     )
 segment_maker.make_pitch_handler(
@@ -396,8 +396,8 @@ segment_maker.make_pitch_handler(
             reverse=True,
             counts=[4, 4, 1, 1, 1, 1, 4, 1, 1, 1],
             operators=[
-                pitchtools.Transposition(9),
-                pitchtools.Inversion(),
+                abjad.pitchtools.Transposition(9),
+                abjad.pitchtools.Inversion(),
                 ],
             ),
         ],
@@ -405,7 +405,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_scoped_specifiers(
     scope=(ob, (1, 2)),
     specifiers=[
-        Dynamic('p'),
+        abjad.Dynamic('p'),
         # displacement before color fingerings
         krummzeit_displacement,
         color_fingerings,
@@ -424,7 +424,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_scoped_specifiers(
     scope=(pf, 2),
     specifiers=[
-        Dynamic('ff'),
+        abjad.Dynamic('ff'),
         ],
     )
 segment_maker.make_pitch_handler(
@@ -455,7 +455,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_scoped_specifiers(
     scope=([vn, va, vc], 2),
     specifiers=[
-        Dynamic('ff'),
+        abjad.Dynamic('ff'),
         stem_tremolo,
         ],
     )
@@ -465,7 +465,7 @@ segment_maker.make_scoped_specifiers(
     scope=(perc, [(1, 6), (17, 22)]),
     specifiers=[
         # TODO: make clear semantically continuation from previous segment
-        #Dynamic('ppp'),
+        #abjad.Dynamic('ppp'),
         stem_tremolo,
         ],
     )
@@ -492,8 +492,8 @@ segment_maker.make_pitch_handler(
 segment_maker.make_scoped_specifiers(
     scope=([ob, cl], (4, 11)),
     specifiers=[
-        Dynamic('ff'),
-        Glissando(),
+        abjad.Dynamic('ff'),
+        abjad.Glissando(),
         color_fingerings,
         ],
     )
@@ -503,7 +503,7 @@ segment_maker.make_pitch_handler(
     scope=([vn, va, vc], (4, 10)),
     specifiers=[
         baca.tools.PitchSpecifier(
-            operators=[pitchtools.Transposition(10)],
+            operators=[abjad.pitchtools.Transposition(10)],
             reverse=True,
             source=violet_pitch_classes,    
             start_index=300,
@@ -513,7 +513,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_scoped_specifiers(
     scope=([vn, va, vc], (4, 10)),
     specifiers=[
-        Glissando(),
+        abjad.Glissando(),
         molto_flautando,
         natural_harmonics,
         repeated_p_to_ppp,
@@ -550,7 +550,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_scoped_specifiers(
     scope=([pf, perc], (8, 15)),
     specifiers=[
-        Dynamic('p'),
+        abjad.Dynamic('p'),
         staccatissimi,
         ],
     )
@@ -591,21 +591,21 @@ segment_maker.make_pitch_handler(
 segment_maker.make_scoped_specifiers(
     scope=([va, vc, cl], (13, 23)),
     specifiers=[
-        Dynamic('ppp'),
+        abjad.Dynamic('ppp'),
         ],
     )
 segment_maker.make_scoped_specifiers(
     scope=(pf, (16, 18)),
     specifiers=[
-        Clef('bass'),
-        Dynamic('ppp'),
+        abjad.Clef('bass'),
+        abjad.Dynamic('ppp'),
         ottava_bassa,
         ],
     )
 segment_maker.make_scoped_specifiers(
     scope=(perc, (17, 22)),
     specifiers=[
-        Dynamic('pp'),
+        abjad.Dynamic('pp'),
         ],
     )
 segment_maker.make_pitch_handler(
@@ -619,7 +619,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_scoped_specifiers(
     scope=(vn, (18, 22)),
     specifiers=[
-        Dynamic('ppp'),
+        abjad.Dynamic('ppp'),
         pervasive_A5_trills,
         ],
     )
@@ -634,7 +634,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_scoped_specifiers(
     scope=(ob, (18, 22)),
     specifiers=[
-        Dynamic('ppp'),
+        abjad.Dynamic('ppp'),
         pervasive_trills,
         ],
     )
@@ -644,7 +644,9 @@ segment_maker.make_pitch_handler(
     scope=(pf, (19, 22)),
     specifiers=[
         baca.tools.PitchSpecifier(
-            operators=[pitchtools.Transposition(5), pitchtools.Inversion()],
+            operators=[
+                abjad.pitchtools.Transposition(5), 
+                abjad.pitchtools.Inversion()],
             reverse=True,
             source=indigo_pitch_classes,
             start_index=84,
@@ -654,8 +656,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_scoped_specifiers(
     scope=(pf, (19, 22)),
     specifiers=[
-        Clef('treble'),
-        Dynamic('fff'),
+        abjad.Clef('treble'), abjad.Dynamic('fff'),
         krummzeit_displacement,
         narrow_seventh_octave,
         ottava,

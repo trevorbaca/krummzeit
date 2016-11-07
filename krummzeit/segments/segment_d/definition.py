@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
+import abjad
 import baca
-from abjad import *
-from abjad.tools.rhythmmakertools import BooleanPattern
-from experimental import *
+import experimental
 import krummzeit
 from krummzeit.materials.__abbreviations__ import *
 
@@ -16,7 +15,8 @@ segment_maker = krummzeit.tools.SegmentMaker(
     )
 
 ### STAGES ###
-segment_maker.time_signatures = krummzeit.materials.segment_time_signatures['D']
+segment_maker.time_signatures = \
+    krummzeit.materials.segment_time_signatures['D']
 segment_maker.measures_per_stage = [
     1, 1, 1, 1, 1, 1, 1, 1,     # stages 1-8
     1, 1, 1, 1, 1, 1, 1, 1,     # stages 9-16
@@ -31,24 +31,24 @@ segment_maker.validate_measures_per_stage()
 music_maker = segment_maker.define_rhythm()
 segment_maker.tempo_specifier = [
     (1, krummzeit.materials.named_tempo_inventory['135']),
-    (1, Ritardando()),
+    (1, abjad.Ritardando()),
     (2, krummzeit.materials.named_tempo_inventory['90']),
     (2, Fermata('shortfermata')),
-    (3, Accelerando()),
+    (3, abjad.Accelerando()),
     (4, Fermata('shortfermata')),
     (4, krummzeit.materials.named_tempo_inventory['135']),
-    (5, Ritardando()),
-    (6, Fermata('shortfermata')),
+    (5, abjad.Ritardando()),
+    (6, abjad.Fermata('shortfermata')),
     (6, krummzeit.materials.named_tempo_inventory['90']),
-    (7, Accelerando()),
-    (8, Fermata('shortfermata')),
+    (7, abjad.Accelerando()),
+    (8, abjad.Fermata('shortfermata')),
     (8, krummzeit.materials.named_tempo_inventory['135']),
     (10, krummzeit.materials.named_tempo_inventory['90']),
     (10, krummzeit.materials.metric_modulation_inventory['4.=4']),
-    (11, Ritardando()),
+    (11, abjad.Ritardando()),
     (13, Fermata('longfermata')),
     (13, krummzeit.materials.named_tempo_inventory['45']),
-    (16, Ritardando()),
+    (16, abjad.Ritardando()),
     (17, krummzeit.materials.named_tempo_inventory['36']),
     ]
 
@@ -63,7 +63,7 @@ music_maker.voice_name = perc
 music_maker.instrument = snare_drum
 music_maker._hide_untuned_percussion_markup = True
 music_maker.clef = 'percussion'
-music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
+music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker(
     tie_specifier=rhythmmakertools.TieSpecifier(
         tie_across_divisions=True,
         ),
@@ -74,15 +74,15 @@ music_maker = segment_maker.define_rhythm()
 music_maker.stages = 1
 music_maker.voice_name = pf
 music_maker.instrument = piano
-music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
+music_maker.division_maker = baca.tools.SplitByRoundedRatiosDivisionCallback(
     ratios=[(2, 3)],
     )
-music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
+music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[
         (1, -1, 1, 3),
         (1, -1, 1, 2, 2),
         ],
-    tuplet_spelling_specifier=rhythmmakertools.TupletSpellingSpecifier(
+    tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
         avoid_dots=True,
         )
     )
@@ -94,15 +94,15 @@ segment_maker.copy_rhythm(pf, 1, stages=5)
 music_maker = segment_maker.define_rhythm()
 music_maker.stages = 5
 music_maker.voice_name = vn
-music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
+music_maker.division_maker = baca.tools.SplitByRoundedRatiosDivisionCallback(
     ratios=[(5, 4)],
     )
-music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
+music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[
         (-1, 1, 1, -1, 2),
         (-1, 1, 1, 2, 2),
         ],
-    tuplet_spelling_specifier=rhythmmakertools.TupletSpellingSpecifier(
+    tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
         avoid_dots=True,
         )
     )
@@ -113,15 +113,15 @@ segment_maker.copy_rhythm(vn, 5, stages=9)
 music_maker = segment_maker.define_rhythm()
 music_maker.stages = 5
 music_maker.voice_name = va
-music_maker.division_maker = makertools.SplitByRoundedRatiosDivisionCallback(
+music_maker.division_maker = baca.tools.SplitByRoundedRatiosDivisionCallback(
     ratios=[(2, 7)],
     )
-music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
+music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[
         (-1, 2),
         (-1, 2, -1, 2, 2),
         ],
-    tuplet_spelling_specifier=rhythmmakertools.TupletSpellingSpecifier(
+    tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
         avoid_dots=True,
         )
     )

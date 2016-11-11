@@ -143,7 +143,7 @@ music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
     counts=[2, 3, 1],
     )
 music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
-    preferred_denominator=Duration(1, 4),
+    preferred_denominator=abjad.Duration(1, 4),
     tuplet_ratios=[(1, 1)],
     tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
         avoid_dots=True,

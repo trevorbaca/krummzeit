@@ -26,12 +26,12 @@ segment_maker.validate_measures_per_stage()
 music_maker = segment_maker.define_rhythm()
 segment_maker.tempo_specifier = [
     (1, krummzeit.materials.named_tempo_inventory['135']),
-    (2, Fermata('shortfermata')),
+    (2, abjad.Fermata('shortfermata')),
     (3, krummzeit.materials.named_tempo_inventory['45']),
-    (3, Accelerando()),
+    (3, abjad.Accelerando()),
     (6, krummzeit.materials.named_tempo_inventory['144']),
     (7, krummzeit.materials.named_tempo_inventory['108']),
-    (8, Fermata('shortfermata')),
+    (8, abjad.Fermata('shortfermata')),
     (9, krummzeit.materials.named_tempo_inventory['135']),
     ]
 

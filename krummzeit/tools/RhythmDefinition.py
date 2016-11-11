@@ -156,7 +156,7 @@ class RhythmDefinition(abjad.abctools.AbjadObject):
             divisions = [
                 abjad.mathtools.NonreducedFraction(_) for _ in time_signatures
                 ]
-        divisions = sequencetools.flatten_sequence(divisions)
+        divisions = abjad.sequencetools.flatten_sequence(divisions)
         for division in divisions:
             assert isinstance(division, abjad.mathtools.NonreducedFraction), division
         rhythm_maker = self._get_rhythm_maker()
@@ -226,7 +226,7 @@ class RhythmDefinition(abjad.abctools.AbjadObject):
     def clef(self, expr):
         if expr is None:
             self._clef = expr
-        elif isinstance(expr, Clef):
+        elif isinstance(expr, abjad.Clef):
             self._clef = expr
         elif isinstance(expr, str):
             clef = abjad.Clef(expr)

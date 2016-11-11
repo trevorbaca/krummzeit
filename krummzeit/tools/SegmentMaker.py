@@ -433,7 +433,7 @@ class SegmentMaker(experimental.tools.makertools.SegmentMaker):
         for voice in iterate(self._score).by_class(abjad.Voice):
             if voice.name not in switching_voices:
                 continue
-            for leaf in iterate(voice).by_leaf()
+            for leaf in iterate(voice).by_leaf():
                 instruments = inspect_(leaf).get_indicators(prototype)
                 if not instruments:
                     continue

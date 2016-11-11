@@ -4,27 +4,47 @@ import krummzeit
 from krummzeit.materials.__abbreviations__ import *
 
 
-### INITIALIZATION ###
-segment_maker = krummzeit.tools.SegmentMaker(
-    name='A',
-    label_stages=False,
-    transpose_score=True,
-    )
+###############################################################################
+##################################### [A] #####################################
+###############################################################################
 
-### STAGES ###
-segment_maker.time_signatures = krummzeit.materials.segment_time_signatures['A']
-segment_maker.measures_per_stage = [
+#segment_maker = krummzeit.tools.SegmentMaker(
+#    name='A',
+#    label_stages=False,
+#    transpose_score=True,
+#    )
+#
+#segment_maker.time_signatures = krummzeit.materials.segment_time_signatures['A']
+#
+#segment_maker.measures_per_stage = [
+#    2, 1, # stage 1 + halt
+#    1, 1, 1, 1, 1, 1, # stages 2-6 + halt
+#    1, 3, # stages 7-8
+#    ]
+
+stage_specifier = baca.tools.StageSpecifier([
     2, 1, # stage 1 + halt
     1, 1, 1, 1, 1, 1, # stages 2-6 + halt
     1, 3, # stages 7-8
-    ]
-assert segment_maker.measure_count == 13
-assert segment_maker.stage_count == 10
-segment_maker.validate_measures_per_stage()
+    ])
 
-### TEMPO MAP ###
-music_maker = segment_maker.define_rhythm()
-segment_maker.tempo_specifier = [
+#assert segment_maker.measure_count == 13
+#assert segment_maker.stage_count == 10
+#segment_maker.validate_measures_per_stage()
+
+#music_maker = segment_maker.define_rhythm()
+#segment_maker.tempo_specifier = [
+#    (1, krummzeit.materials.named_tempo_inventory['135']),
+#    (2, abjad.Fermata('shortfermata')),
+#    (3, krummzeit.materials.named_tempo_inventory['45']),
+#    (3, abjad.Accelerando()),
+#    (6, krummzeit.materials.named_tempo_inventory['144']),
+#    (7, krummzeit.materials.named_tempo_inventory['108']),
+#    (8, abjad.Fermata('shortfermata')),
+#    (9, krummzeit.materials.named_tempo_inventory['135']),
+#    ]
+
+tempo_specifier = baca.tools.TempoSpecifier([
     (1, krummzeit.materials.named_tempo_inventory['135']),
     (2, abjad.Fermata('shortfermata')),
     (3, krummzeit.materials.named_tempo_inventory['45']),
@@ -33,7 +53,28 @@ segment_maker.tempo_specifier = [
     (7, krummzeit.materials.named_tempo_inventory['108']),
     (8, abjad.Fermata('shortfermata')),
     (9, krummzeit.materials.named_tempo_inventory['135']),
-    ]
+    ])
+
+maker = baca.tools.TimeSignatureMaker(
+    krummzeit.materials.segment_time_signatures['A'],
+    stage_specifier=stage_specifier,
+    tempo_specifier=tempo_specifier,
+    )
+measures_per_stage, tempo_specifier, time_signatures = maker()
+
+segment_maker = baca.tools.SegmentMaker(
+    label_stages=False,
+    measures_per_stage=measures_per_stage,
+    rehearsal_letter='A',
+    score_package=krummzeit,
+    tempo_specifier=tempo_specifier,
+    time_signatures=time_signatures,
+    transpose_score=True,
+    )
+
+segment_maker.validate_stage_count(10)
+segment_maker.validate_measure_count(13)
+segment_maker.validate_measures_per_stage()
 
 ###############################################################################
 ############################## SPECIFIERS ###############################

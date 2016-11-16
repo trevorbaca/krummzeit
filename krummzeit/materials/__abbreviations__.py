@@ -303,8 +303,10 @@ def pitch_specifier(
         start_index=start_index,
         )
 
-indigo_pitch_classes = krummzeit.materials.indigo_pitch_classes.manifest_payload
-violet_pitch_classes = krummzeit.materials.violet_pitch_classes.manifest_payload
+indigo_pitch_classes = \
+    krummzeit.materials.indigo_pitch_classes.get_manifest_payload()
+violet_pitch_classes = \
+    krummzeit.materials.violet_pitch_classes.get_manifest_payload()
 
 krummzeit_displacement = baca.tools.OctaveDisplacementSpecifier(
     displacements=[

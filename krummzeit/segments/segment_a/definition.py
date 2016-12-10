@@ -34,25 +34,25 @@ stage_specifier = baca.tools.StageSpecifier([
 
 #music_maker = segment_maker.define_rhythm()
 #segment_maker.tempo_specifier = [
-#    (1, krummzeit.materials.named_tempo_inventory['135']),
+#    (1, krummzeit.materials.named_tempi['135']),
 #    (2, abjad.Fermata('shortfermata')),
-#    (3, krummzeit.materials.named_tempo_inventory['45']),
+#    (3, krummzeit.materials.named_tempi['45']),
 #    (3, abjad.Accelerando()),
-#    (6, krummzeit.materials.named_tempo_inventory['144']),
-#    (7, krummzeit.materials.named_tempo_inventory['108']),
+#    (6, krummzeit.materials.named_tempi['144']),
+#    (7, krummzeit.materials.named_tempi['108']),
 #    (8, abjad.Fermata('shortfermata')),
-#    (9, krummzeit.materials.named_tempo_inventory['135']),
+#    (9, krummzeit.materials.named_tempi['135']),
 #    ]
 
 tempo_specifier = baca.tools.TempoSpecifier([
-    (1, krummzeit.materials.named_tempo_inventory['135']),
+    (1, krummzeit.materials.named_tempi['135']),
     (2, abjad.Fermata('shortfermata')),
-    (3, krummzeit.materials.named_tempo_inventory['45']),
+    (3, krummzeit.materials.named_tempi['45']),
     (3, abjad.Accelerando()),
-    (6, krummzeit.materials.named_tempo_inventory['144']),
-    (7, krummzeit.materials.named_tempo_inventory['108']),
+    (6, krummzeit.materials.named_tempi['144']),
+    (7, krummzeit.materials.named_tempi['108']),
     (8, abjad.Fermata('shortfermata')),
-    (9, krummzeit.materials.named_tempo_inventory['135']),
+    (9, krummzeit.materials.named_tempi['135']),
     ])
 
 maker = baca.tools.TimeSignatureMaker(

@@ -30,26 +30,26 @@ segment_maker.validate_measures_per_stage()
 ### TEMPO MAP ###
 music_maker = segment_maker.define_rhythm()
 segment_maker.tempo_specifier = [
-    (1, krummzeit.materials.named_tempo_inventory['135']),
+    (1, krummzeit.materials.named_tempi['135']),
     (1, abjad.Ritardando()),
-    (2, krummzeit.materials.named_tempo_inventory['90']),
+    (2, krummzeit.materials.named_tempi['90']),
     (2, Fermata('shortfermata')),
     (3, abjad.Accelerando()),
     (4, Fermata('shortfermata')),
-    (4, krummzeit.materials.named_tempo_inventory['135']),
+    (4, krummzeit.materials.named_tempi['135']),
     (5, abjad.Ritardando()),
     (6, abjad.Fermata('shortfermata')),
-    (6, krummzeit.materials.named_tempo_inventory['90']),
+    (6, krummzeit.materials.named_tempi['90']),
     (7, abjad.Accelerando()),
     (8, abjad.Fermata('shortfermata')),
-    (8, krummzeit.materials.named_tempo_inventory['135']),
-    (10, krummzeit.materials.named_tempo_inventory['90']),
+    (8, krummzeit.materials.named_tempi['135']),
+    (10, krummzeit.materials.named_tempi['90']),
     (10, krummzeit.materials.metric_modulation_inventory['4.=4']),
     (11, abjad.Ritardando()),
     (13, Fermata('longfermata')),
-    (13, krummzeit.materials.named_tempo_inventory['45']),
+    (13, krummzeit.materials.named_tempi['45']),
     (16, abjad.Ritardando()),
-    (17, krummzeit.materials.named_tempo_inventory['36']),
+    (17, krummzeit.materials.named_tempi['36']),
     ]
 
 ###############################################################################

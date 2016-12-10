@@ -30,13 +30,13 @@ segment_maker.validate_measures_per_stage()
 ### TEMPO MAP ###
 music_maker = segment_maker.define_rhythm()
 segment_maker.tempo_specifier = [
-    (1, krummzeit.materials.named_tempo_inventory['36']),
+    (1, krummzeit.materials.named_tempi['36']),
     (4, abjad.Accelerando()),
-    (8, krummzeit.materials.named_tempo_inventory['72/108']),
-    (9, krummzeit.materials.named_tempo_inventory['72']),
+    (8, krummzeit.materials.named_tempi['72/108']),
+    (9, krummzeit.materials.named_tempi['72']),
     (9, krummzeit.materials.metric_modulation_inventory['4.=4']),
     (9, abjad.Accelerando()),
-    (10, krummzeit.materials.named_tempo_inventory['108']),
+    (10, krummzeit.materials.named_tempi['108']),
     ]
 
 ###############################################################################

@@ -446,7 +446,7 @@ segment_maker.make_scoped_specifiers(
         ],
     )
 
-## VERTICAL ALIGNMENT ###
+### VERTICAL ALIGNMENT ###
 segment_maker.make_scoped_specifiers(
     scope=(ob, (1, 14)),
     specifiers=[

@@ -447,7 +447,7 @@ narrow_third_to_second_octave = baca.tools.RegisterTransitionSpecifier(
     stop_registration=narrow_second_octave.registration,
     )
 
-# articulation handlers
+# articulation specifiers
 alternate_bow_strokes = baca.tools.ArticulationSpecifier(
     articulations=(['upbow', 'accent'], ['downbow', 'accent']),
     )

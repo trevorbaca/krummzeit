@@ -128,7 +128,7 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.TaleaRhythmMaker(
 segment_maker.copy_rhythm(perc, 2, stages=(17, 22))
 
 
-## vn, va, vc [F4-10] glissando thicket (thinner) ###
+### vn, va, vc [F4-10] glissando thicket (thinner) ###
 music_maker = segment_maker.define_rhythm()
 music_maker.voice_name = vn
 music_maker.stages = 4, 10

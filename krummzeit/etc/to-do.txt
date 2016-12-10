@@ -25,6 +25,6 @@
     top margin to 0 mm.
 
 9.  ClusterSpecifier mutates the score.
-    So any ClusterSpecifier should be applied first before other handlers.
-    Probably best to enforce by processing all cluster handlers immediately
-    after pitch processing (and before other handlers).
+    So any ClusterSpecifier should be applied first before other specifier.
+    Probably best to enforce by processing all cluster speicifers immediately
+    after pitch processing (and before other specifiers).

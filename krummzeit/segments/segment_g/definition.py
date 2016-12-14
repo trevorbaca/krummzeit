@@ -5,14 +5,20 @@ import krummzeit
 from krummzeit.materials.__abbreviations__ import *
 
 
-### INITIALIZATION ###
+###############################################################################
+################################ SEGMENT-MAKER ################################
+###############################################################################
+
 segment_maker = krummzeit.tools.SegmentMaker(
     name='G',
     label_stages=False,
     transpose_score=True,
     )
 
-### STAGES ###
+###############################################################################
+#################################### STAGES ###################################
+###############################################################################
+
 segment_maker.time_signatures = krummzeit.materials.segment_time_signatures['G']
 segment_maker.measures_per_stage = [
     1, 2,                   # stages 1-2
@@ -23,7 +29,10 @@ assert segment_maker.measure_count == 22
 assert segment_maker.stage_count == 14
 segment_maker.validate_measures_per_stage()
 
-### TEMPO MAP ###
+###############################################################################
+################################## TEMPO MAP ##################################
+###############################################################################
+
 music_maker = segment_maker.define_rhythm()
 segment_maker.tempo_specifier = [
     (1, krummzeit.materials.named_tempi['72']),
@@ -32,7 +41,7 @@ segment_maker.tempo_specifier = [
     ]
 
 ###############################################################################
-############################## SPECIFIERS ###############################
+################################## SPECIFIERS #################################
 ###############################################################################
 
 music_maker = segment_maker.define_rhythm()
@@ -186,7 +195,7 @@ music_maker.instrument = bass_clarinet
 music_maker.rhythm_maker = tied_notes
 
 ###############################################################################
-############################## COLOR #################################
+#################################### COLOR ####################################
 ###############################################################################
 
 ### (3.1) va, vc, bcl ###
@@ -370,6 +379,7 @@ segment_maker.make_scoped_specifiers(
     )
 
 ### VERTICAL ALIGNMENT ###
+
 segment_maker.make_scoped_specifiers(
     scope=(ob, (1, 14)),
     specifiers=[
@@ -414,6 +424,7 @@ segment_maker.make_scoped_specifiers(
     )
 
 ### TIMINGS ###
+
 r'''
 72:         9/8 5/8 5/8 4/4 5/4 3/4 3/4 3/4 9/8 7/8 
             35.5 quarters / 72 = 0.49 minutes

@@ -6,14 +6,20 @@ from abjad.tools.rhythmmakertools import Pattern
 from krummzeit.materials.__abbreviations__ import *
 
 
-### INITIALIZATION ###
+###############################################################################
+################################ SEGMENT-MAKER ################################
+###############################################################################
+
 segment_maker = krummzeit.tools.SegmentMaker(
     name='E',
     label_stages=False,
     transpose_score=True,
     )
 
-### STAGES ###
+###############################################################################
+#################################### STAGES ###################################
+###############################################################################
+
 segment_maker.time_signatures = \
     krummzeit.materials.segment_time_signatures['E']
 segment_maker.measures_per_stage = [
@@ -27,7 +33,10 @@ assert segment_maker.measure_count == 48
 assert segment_maker.stage_count == 13
 segment_maker.validate_measures_per_stage()
 
-### TEMPO MAP ###
+###############################################################################
+################################## TEMPO MAP ##################################
+###############################################################################
+
 music_maker = segment_maker.define_rhythm()
 segment_maker.tempo_specifier = [
     (1, krummzeit.materials.named_tempi['36']),
@@ -376,7 +385,7 @@ segment_maker.copy_rhythm(
     )
 
 ###############################################################################
-############################## COLOR #################################
+#################################### COLOR ####################################
 ###############################################################################
 
 ### (3.4) tam-tam, (3.5) vn, va, vc ###
@@ -744,6 +753,7 @@ segment_maker.make_scoped_specifiers(
     )
 
 ### TIMINGS ###
+
 r'''
 36:             3/4 4/4 9/8 3/4 5/8 9/8 9/8
                 {6.5 * 4 = 26 quarters = 0.72 minutes}

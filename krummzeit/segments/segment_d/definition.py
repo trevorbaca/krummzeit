@@ -6,7 +6,9 @@ import krummzeit
 from krummzeit.materials.__abbreviations__ import *
 
 
-### INITIALIZATION ##
+###############################################################################
+################################ SEGMENT-MAKER ################################
+###############################################################################
 
 segment_maker = krummzeit.tools.SegmentMaker(
     name='D',
@@ -14,7 +16,10 @@ segment_maker = krummzeit.tools.SegmentMaker(
     transpose_score=True,
     )
 
-### STAGES ###
+###############################################################################
+#################################### STAGES ###################################
+###############################################################################
+
 segment_maker.time_signatures = \
     krummzeit.materials.segment_time_signatures['D']
 segment_maker.measures_per_stage = [
@@ -27,7 +32,10 @@ assert segment_maker.measure_count == 19
 assert segment_maker.stage_count == 17
 segment_maker.validate_measures_per_stage()
 
-### TEMPO MAP ###
+###############################################################################
+################################## TEMPO MAP ##################################
+###############################################################################
+
 music_maker = segment_maker.define_rhythm()
 segment_maker.tempo_specifier = [
     (1, krummzeit.materials.named_tempi['135']),
@@ -53,7 +61,7 @@ segment_maker.tempo_specifier = [
     ]
 
 ###############################################################################
-############################## SPECIFIERS ###############################
+################################## SPECIFIERS #################################
 ###############################################################################
 
 ### snare [D1-8] ###
@@ -208,7 +216,7 @@ music_maker.division_maker = makertools.SplitByDurationsDivisionCallback(
 music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 
 ###############################################################################
-############################## COLOR #################################
+#################################### COLOR ####################################
 ###############################################################################
 
 ### (6) snare ###

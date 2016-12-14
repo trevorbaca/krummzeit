@@ -6,14 +6,20 @@ from abjad.tools.abjad.rhythmmakertools import Pattern
 from krummzeit.materials.__abbreviations__ import *
 
 
-### INITIALIZATION ###
+###############################################################################
+################################ SEGMENT-MAKER ################################
+###############################################################################
+
 segment_maker = krummzeit.tools.SegmentMaker(
     name='F',
     label_stages=False,
     transpose_score=True,
     )
 
-### STAGES ###
+###############################################################################
+#################################### STAGES ###################################
+###############################################################################
+
 segment_maker.time_signatures = \
     krummzeit.materials.segment_time_signatures['F']
 segment_maker.measures_per_stage = [
@@ -28,7 +34,10 @@ assert segment_maker.measure_count == 35
 assert segment_maker.stage_count == 23
 segment_maker.validate_measures_per_stage()
 
-### TEMPO MAP ###
+###############################################################################
+################################## TEMPO MAP ##################################
+###############################################################################
+
 music_maker = segment_maker.define_rhythm()
 segment_maker.tempo_specifier = [
     (1, krummzeit.materials.named_tempi['108']),
@@ -45,7 +54,7 @@ segment_maker.tempo_specifier = [
     ]
 
 ###############################################################################
-############################## SPECIFIERS ###############################
+################################## SPECIFIERS #################################
 ###############################################################################
 
 ### ob, cl [F1-8] ornamemented + unadorned ###
@@ -69,7 +78,6 @@ segment_maker.copy_rhythm(
     stages=2,
     )
 
-
 music_maker = segment_maker.define_rhythm()
 music_maker.voice_name = cl
 music_maker.instrument = e_flat_clarinet
@@ -81,7 +89,6 @@ music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
         ),
     )
 music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker()
-
 
 ### pf, vn, va, vc [F2] ###
 music_maker = segment_maker.define_rhythm()
@@ -112,7 +119,6 @@ segment_maker.copy_rhythm(
     clef='bass',
     )
 
-
 ### suspended cymbal [F1-4] ###
 music_maker = segment_maker.define_rhythm()
 music_maker.voice_name = perc
@@ -126,7 +132,6 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.TaleaRhythmMaker(
     )
 
 segment_maker.copy_rhythm(perc, 2, stages=(17, 22))
-
 
 ### vn, va, vc [F4-10] glissando thicket (thinner) ###
 music_maker = segment_maker.define_rhythm()
@@ -201,7 +206,6 @@ segment_maker.copy_rhythm(
     rhythm_maker__division_masks=[Pattern(indices=[0])],
     )
 
-
 ### pf, xyl [F8] & [F10-15] ###
 music_maker = segment_maker.define_rhythm()
 music_maker.voice_name = pf
@@ -233,7 +237,6 @@ segment_maker.copy_rhythm(
     )
 
 segment_maker.copy_rhythm(perc, 8, stages=(10, 15))
-
 
 ### cl, va, vc [F13] 3rd-octave interweave ###
 music_maker = segment_maker.define_rhythm()
@@ -268,7 +271,6 @@ segment_maker.copy_rhythm(
     voice_name=vc,
     instrument=None,
     )
-
 
 ### cl, va, vc [F16-19] & [F22-23] 3rd-octave interweave ###
 music_maker = segment_maker.define_rhythm()
@@ -314,7 +316,6 @@ segment_maker.copy_rhythm(
     stages=(16, 18),
     )
 
-
 ### ob, vn [F18-22] interweave (layer 2) ###
 music_maker = segment_maker.define_rhythm()
 music_maker.voice_name = ob
@@ -339,7 +340,6 @@ segment_maker.copy_rhythm(
     voice_name=vn,
     )
 
-
 ### pf [F19-20] & [F22] pointillism ###
 music_maker = segment_maker.define_rhythm()
 music_maker.voice_name = pf
@@ -361,7 +361,7 @@ segment_maker.copy_rhythm(
     )
 
 ###############################################################################
-############################## COLOR #################################
+#################################### COLOR ####################################
 ###############################################################################
 
 ### (6.1) ob, cl ###

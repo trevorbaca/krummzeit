@@ -6,14 +6,20 @@ from abjad.tools.abjad.rhythmmakertools import Pattern
 from krummzeit.materials.__abbreviations__ import *
 
 
-### INITIALIZATION ###
+###############################################################################
+################################ SEGMENT-MAKER ################################
+###############################################################################
+
 segment_maker = krummzeit.tools.SegmentMaker(
     name='I',
     label_stages=False,
     transpose_score=True,
     )
 
-### SEGMENTS ###
+###############################################################################
+################################### SEGMENTS ##################################
+###############################################################################
+
 segment_maker.time_signatures = krummzeit.materials.segment_time_signatures['I']
 segment_maker.measures_per_stage = [
     2, 1, 1, 1, 1, 1, 1, 2, # stages 1-8
@@ -22,7 +28,10 @@ assert segment_maker.measure_count == 10
 assert segment_maker.stage_count == 8
 segment_maker.validate_measures_per_stage()
 
-### TEMPO MAP ###
+###############################################################################
+################################## TEMPO MAP ##################################
+###############################################################################
+
 music_maker = segment_maker.define_rhythm()
 segment_maker.tempo_specifier = [
     (1, krummzeit.materials.named_tempi['90']),
@@ -31,7 +40,7 @@ segment_maker.tempo_specifier = [
     ]
 
 ###############################################################################
-############################## SPECIFIERS ###############################
+################################## SPECIFIERS #################################
 ###############################################################################
 
 ### vn, va, vc [I1] reiteration ###
@@ -203,7 +212,7 @@ segment_maker.copy_rhythm(
     )
 
 ###############################################################################
-############################## COLOR #################################
+#################################### COLOR ####################################
 ###############################################################################
 
 ### (11.1) harpsichord clusters ###
@@ -413,6 +422,7 @@ segment_maker.make_scoped_specifiers(
     )
 
 ### VERTICAL ALIGNMENT ###
+
 segment_maker.make_scoped_specifiers(
     scope=(ob, (3, 6)),
     specifiers=[
@@ -482,6 +492,7 @@ segment_maker.make_scoped_specifiers(
     )
 
 ### TIMINGS ###
+
 r'''
 90 --> 135: 7/8 6/4 7/4 7/4 3/4
             19.5 quarters / 112.5 = 0.17 minutes

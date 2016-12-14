@@ -6,14 +6,20 @@ from abjad.tools.abjad.rhythmmakertools import Pattern
 from krummzeit.materials.__abbreviations__ import *
 
 
-### INTIALIZATION ###
+###############################################################################
+################################ SEGMENT-MAKER ################################
+###############################################################################
+
 segment_maker = krummzeit.tools.SegmentMaker(
     name='J',
     label_stages=False,
     transpose_score=True,
     )
 
-### SEGMENTS ###
+###############################################################################
+################################### SEGMENTS ##################################
+###############################################################################
+
 segment_maker.time_signatures = krummzeit.materials.segment_time_signatures['J']
 segment_maker.measures_per_stage = [
     1, 1, 1, 1, 1,
@@ -24,7 +30,10 @@ assert segment_maker.measure_count == 23
 assert segment_maker.stage_count == 16
 segment_maker.validate_measures_per_stage()
 
-### TEMPO MAP ###
+###############################################################################
+################################## TEMPO MAP ##################################
+###############################################################################
+
 music_maker = segment_maker.define_rhythm()
 segment_maker.tempo_specifier = [
     (1, krummzeit.materials.named_tempi['135']),
@@ -39,10 +48,11 @@ segment_maker.tempo_specifier = [
     ]
 
 ###############################################################################
-############################## SPECIFIERS ###############################
+################################## SPECIFIERS #################################
 ###############################################################################
 
 ### ob, bass clarinet [I7-8] reiteration ###
+
 music_maker = segment_maker.define_rhythm()
 music_maker.stages = 1
 music_maker.voice_name = ob
@@ -67,6 +77,7 @@ segment_maker.copy_rhythm(
     )
 
 ### pf, xylophone [I1] reiteration ###
+
 music_maker = segment_maker.define_rhythm()
 music_maker.stages = 1
 music_maker.voice_name = pf
@@ -92,6 +103,7 @@ segment_maker.copy_rhythm(
     )
 
 ### vn, va, vc [J1-3] tremolo clusters (11.1) ###
+
 music_maker = segment_maker.define_rhythm()
 music_maker.stages = 1, 3
 music_maker.voice_name = vn
@@ -119,6 +131,7 @@ segment_maker.copy_rhythm(
     )
 
 ### harpsichord [J3-4] clusters (11.1) ###
+
 music_maker = segment_maker.define_rhythm()
 music_maker.stages = 3, 4
 music_maker.voice_name = pf
@@ -136,6 +149,7 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
     )
 
 ### vn, va, vc [J5-9] white OB bowing (3.5) ###
+
 music_maker = segment_maker.define_rhythm()
 music_maker.stages = 5, 9
 music_maker.voice_name = vn
@@ -157,6 +171,7 @@ segment_maker.copy_rhythm(
     )
 
 ### tam-tam [J3-13] ###
+
 music_maker = segment_maker.define_rhythm()
 music_maker.stages = 3, 15
 music_maker.voice_name = perc
@@ -174,6 +189,7 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.IncisedRhythmMaker(
     )
 
 ### pf [J6] & [J8-14] (8.1) clusters ###
+
 segment_maker.copy_rhythm(
     pf,
     3,
@@ -184,6 +200,7 @@ segment_maker.copy_rhythm(
 ### (3.1) bass clarinet [J3-11] ###
 # TODO: all bass clarinet over (3, 11) should be tied together
 #       currently causes error with dynamic and hairpin application
+
 music_maker = segment_maker.define_rhythm()
 music_maker.stages = 3, 4
 music_maker.voice_name = cl
@@ -242,7 +259,7 @@ segment_maker.copy_rhythm(
     )
 
 ###############################################################################
-############################## COLOR #################################
+#################################### COLOR ####################################
 ###############################################################################
 
 ### (14) reiteration ###
@@ -447,6 +464,7 @@ segment_maker.make_scoped_specifiers(
     )
 
 ### VERTICAL ALIGNMENT ###
+
 segment_maker.make_scoped_specifiers(
     scope=(ob, (1, 14)),
     specifiers=[
@@ -514,6 +532,7 @@ segment_maker.make_scoped_specifiers(
     )
 
 ### TIMINGS ###
+
 r'''
 135:        4/4 9/8
             8.5 quarters / 135 = 0.03 minutes

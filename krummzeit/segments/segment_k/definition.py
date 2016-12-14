@@ -6,7 +6,10 @@ from abjad.tools.abjad.rhythmmakertools import Pattern
 from krummzeit.materials.__abbreviations__ import *
 
 
-### INITIALIZATION ###
+###############################################################################
+################################ SEGMENT-MAKER ################################
+###############################################################################
+
 city = Markup('Cambridge, MA.').italic()
 date = Markup('May - August 2014.').italic()
 final_markup = Markup.right_column([city, date], direction=Down)
@@ -18,7 +21,10 @@ segment_maker = krummzeit.tools.SegmentMaker(
     transpose_score=True,
     )
 
-### SEGMENTS ###
+###############################################################################
+################################### SEGMENTS ##################################
+###############################################################################
+
 segment_maker.time_signatures = krummzeit.materials.segment_time_signatures['K']
 segment_maker.final_bar_line = True
 segment_maker.measures_per_stage = [
@@ -29,14 +35,17 @@ assert segment_maker.measure_count == 48
 assert segment_maker.stage_count == 12
 segment_maker.validate_measures_per_stage()
 
-### TEMPO MAP ###
+###############################################################################
+################################## TEMPO MAP ##################################
+###############################################################################
+
 music_maker = segment_maker.define_rhythm()
 segment_maker.tempo_specifier = [
     (1, krummzeit.materials.named_tempi['144']),
     ]
 
 ###############################################################################
-############################## SPECIFIERS ###############################
+################################## SPECIFIERS #################################
 ###############################################################################
 
 ### harpsichord ###
@@ -158,7 +167,7 @@ music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
 music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker()
 
 ###############################################################################
-############################## COLOR #################################
+#################################### COLOR ####################################
 ###############################################################################
 
 ### harpsichord & piano reiteration ###
@@ -301,6 +310,7 @@ segment_maker.make_scoped_specifiers(
 ### VERTICAL ALIGNMENT ###
 
 ### TIMINGS ###
+
 r'''
 144:        12 * (5/4 5/4 4/4 2/4)
             12 * 16 = 204 quarters / 144 = 1.33 minutes

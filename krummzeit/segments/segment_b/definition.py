@@ -452,7 +452,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
 pitch_handler = segment_maker.make_pitch_handler(
     scope=([pf, vn, ob, cl], (1, 4)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=indigo_pitch_classes,    
             start_index=0,
             ),
@@ -461,7 +461,7 @@ pitch_handler = segment_maker.make_pitch_handler(
 pitch_handler = segment_maker.make_pitch_handler(
     scope=([pf, vn, ob, cl], (5, 13)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=indigo_pitch_classes,    
             start_index=0,
             ),
@@ -470,7 +470,7 @@ pitch_handler = segment_maker.make_pitch_handler(
 pitch_handler = segment_maker.make_pitch_handler(
     scope=([pf, vn, ob, cl], (5, 8)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             operators=[pitchtools.Transposition(1)],
             ),
         ],
@@ -478,7 +478,7 @@ pitch_handler = segment_maker.make_pitch_handler(
 pitch_handler = segment_maker.make_pitch_handler(
     scope=([pf, vn, ob, cl], (9, 13)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             operators=[pitchtools.Transposition(3)],
             ),
         ],
@@ -574,7 +574,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=(va, (1, 4)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source="d ctqs e dqs cqs b, cqs",
             ),
         ],
@@ -582,7 +582,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(va, (5, 8)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source="e dtqs f eqs dqs c dqs",
             ),
         ],
@@ -590,7 +590,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(va, 9),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source="g ftqs a gqs fqs e fqs",
             ),
         ],
@@ -598,7 +598,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(vc, (1, 4)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source="e, dqs, cqs, b,, cqs, d, ctqs,",
             ),
         ],
@@ -606,7 +606,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(vc, (5, 8)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source="f, eqs, dqs, c, dqs, e, dtqs,",
             ),
         ],
@@ -614,7 +614,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(vc, 9),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source="a, gqs, fqs, e, fqs, g, ftqs,",
             ),
         ],
@@ -664,7 +664,7 @@ segment_maker.make_pitch_handler(
         (vn, (14, 18)),
         ],
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=violet_pitch_classes,    
             start_index=0,
             ),
@@ -742,7 +742,7 @@ segment_maker.make_pitch_handler(
         (pf, (20, 23)),
         ],
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=violet_pitch_classes,    
             start_index=60,
             operators=[pitchtools.Transposition(1)],
@@ -791,7 +791,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=(cl, (22, 23)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source="e'' dtqs'' f'' eqs'' dqs'' c'' dqs''",
             ),
         ],

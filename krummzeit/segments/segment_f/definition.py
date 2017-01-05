@@ -368,7 +368,7 @@ segment_maker.copy_rhythm(
 segment_maker.make_pitch_handler(
     scope=(cl, (1, 2)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='B3',
             ),
         ],
@@ -382,7 +382,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=(cl, (1, 2)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='B3',
             ),
         ],
@@ -390,7 +390,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(ob, (1, 2)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=violet_pitch_classes,    
             start_index=120,
             reverse=True,
@@ -430,7 +430,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=(vn, 2),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='A+3',
             ),
         ],
@@ -439,7 +439,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(va, 2),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='Bb2',
             ),
         ],
@@ -447,7 +447,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(vc, 2),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='A2',
             ),
         ],
@@ -474,7 +474,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=(ob, (4, 11)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             counts=[3, 2, 4],
             source='C6 B+5 A5 G+5 F+5 E~5',
             ),
@@ -483,7 +483,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(cl, (4, 11)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             counts=[3, 2, 4],
             source='C6 B+5 A5 G+5 F+5 E~5',
             ),
@@ -502,7 +502,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=([vn, va, vc], (4, 10)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             operators=[abjad.pitchtools.Transposition(10)],
             reverse=True,
             source=violet_pitch_classes,    
@@ -542,7 +542,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=([pf, perc], (8, 15)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='F5',
             ),
         ],
@@ -559,7 +559,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=(va, (13, 23)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='F#3',
             ),
         ],
@@ -567,7 +567,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(vc, (13, 23)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='C2',
             ),
         ],
@@ -575,7 +575,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(cl, (13, 23)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='Bb1',
             ),
         ],
@@ -583,7 +583,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(pf, (16, 18)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='Bb0',
             ),
         ],
@@ -611,7 +611,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=(vn, (18, 22)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='G5',
             ),
         ],
@@ -626,7 +626,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=(ob, (18, 22)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='A5',
             ),
         ],
@@ -643,7 +643,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=(pf, (19, 22)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             operators=[
                 abjad.pitchtools.Transposition(5), 
                 abjad.pitchtools.Inversion()],

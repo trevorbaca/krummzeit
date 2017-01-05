@@ -219,7 +219,7 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.TaleaRhythmMaker(
 segment_maker.make_pitch_handler(
     scope=(vn, 1),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='Eb5',
             ),
         ],
@@ -227,7 +227,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(va, 1),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='A3',
             ),
         ],
@@ -235,7 +235,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(vc, 1),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='E~2',
             ),
         ],
@@ -262,7 +262,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=(cl, (3, 4)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='B1',
             ),
         ],
@@ -279,7 +279,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=([vn, va, vc], (3, 7)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             operators=[pitchtools.Transposition(10)],
             reverse=True,
             source=violet_pitch_classes,    
@@ -320,7 +320,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=([pf, perc], 6),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='C#5',
             ),
         ],

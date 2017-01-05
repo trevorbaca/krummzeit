@@ -174,7 +174,7 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker()
 segment_maker.make_pitch_handler(
     scope=(pf, (1, 12)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='C#6',
             ),
         ],
@@ -196,7 +196,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=(perc, (1, 12)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='C#6',
             ),
         ],
@@ -215,7 +215,7 @@ indigo_snippet = indigo_pitch_classes[42:34:-1]
 segment_maker.make_pitch_handler(
     scope=([vn, va], (1, 10)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             operators=[abjad.pitchtools.Transposition(4), abjad.pitchtools.Inversion()],
             source=indigo_snippet,
             ),
@@ -238,7 +238,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=(vc, (1, 6)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='D4 D4 D4 D4 D4 D4 D2',
             ),
         ],
@@ -246,7 +246,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(vc, (7, 12)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='D2',
             ),
         ],
@@ -276,7 +276,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=(ob, (1, 12)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='C#4',
             ),
         ],
@@ -293,7 +293,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=(cl, (1, 12)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source='D2',
             ),
         ],

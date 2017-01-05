@@ -335,7 +335,7 @@ segment_maker.copy_rhythm(
 segment_maker.make_pitch_handler(
     scope=(ob, (1, 27)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=violet_pitch_classes,    
             start_index=120,
             reverse=True,
@@ -366,7 +366,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=(cl, 1),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source="e'' dtqs'' f'' eqs'' dqs'' c'' dqs''",
             ),
         ],
@@ -381,7 +381,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=(cl, (20, 24)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source="f'' etqs'' g'' fqs'' eqs'' d'' eqs''",
             ),
         ],
@@ -389,7 +389,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(cl, (26, 27)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source="g'' dtqs'' a'' gqs'' fqs'' e'' fqs''",
             ),
         ],
@@ -404,7 +404,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=(va, (1, 19)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source="e dtqs f eqs dqs c dqs",
             ),
         ],
@@ -436,7 +436,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=(vc, (1, 19)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source="d, ctqs, e, dqs, cqs, b,, dqs,",
             ),
         ],
@@ -468,7 +468,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=(vn, (19, 22)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             counts=[1, 1, 1, 1, 4, 1, 1, 1, 4, 4],
             operators=[pitchtools.Transposition(3)],
             reverse=True,
@@ -501,7 +501,7 @@ segment_maker.make_pitch_handler(
         (perc, [(11, 17), (22, 26)]),
         ],
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=[NamedPitch('C#6')],
             ),
         ],
@@ -534,7 +534,7 @@ segment_maker.make_scoped_specifiers(
 segment_maker.make_pitch_handler(
     scope=(vn, (28, 29)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source="ftqs g",
             ),
         ],
@@ -542,7 +542,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(va, (26, 29)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source="btqs, c bqs, cqs",
             ),
         ],
@@ -550,7 +550,7 @@ segment_maker.make_pitch_handler(
 segment_maker.make_pitch_handler(
     scope=(vc, (26, 29)),
     specifiers=[
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source="b,, cqs, bqf,, c,",
             ),
         ],

@@ -28,11 +28,9 @@ class RhythmDefinition(abjad.abctools.AbjadObject):
             krummzeit.tools.RhythmDefinition(
                 voice_name='Cello Music Voice',
                 division_maker=baca.tools.FuseByCountsDivisionCallback(
-                    cyclic=True,
                     counts=[2, 3, 1],
                     ),
                 rhythm_maker=rhythmmakertools.NoteRhythmMaker(),
-                rhythm_overwrites=[],
                 stages=(1, 4),
                 )
 
@@ -122,19 +120,6 @@ class RhythmDefinition(abjad.abctools.AbjadObject):
             division_masks=[abjad.rhythmmakertools.silence_all()],
             )
 
-    @property
-    def _storage_format_specification(self):
-        manager = abjad.systemtools.StorageFormatManager
-        keyword_argument_names = \
-            manager.get_signature_keyword_argument_names(self)
-        if not self.rhythm_overwrites:
-            keyword_argument_names = list(keyword_argument_names)
-            keyword_argument_names.remove('rhythm_overwrites')
-        return systemtools.StorageFormatSpecification(
-            self,
-            keyword_argument_names=keyword_argument_names,
-            )
-
     ### PRIVATE METHODS ###
 
     def _attach_untuned_percussion_markup(self, leaf):
@@ -148,6 +133,17 @@ class RhythmDefinition(abjad.abctools.AbjadObject):
         if self.rhythm_maker is not None:
             return self.rhythm_maker
         return self._default_rhythm_maker
+
+    def _get_storage_format_specification(self):
+        agent = abjad.systemtools.StorageFormatAgent(self)
+        keyword_argument_names = agent.signature_keyword_names
+        keyword_argument_names = list(keyword_argument_names)
+        if not self.rhythm_overwrites:
+            keyword_argument_names.remove('rhythm_overwrites')
+        return abjad.systemtools.StorageFormatSpecification(
+            self,
+            keyword_argument_names=keyword_argument_names,
+            )
 
     def _make_rhythm(self, time_signatures):
         if self.division_maker is not None:

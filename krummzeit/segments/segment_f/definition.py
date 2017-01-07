@@ -2,7 +2,6 @@
 import abjad
 import baca
 import krummzeit
-from abjad.tools.abjad.rhythmmakertools import Pattern
 from krummzeit.materials.__abbreviations__ import *
 
 
@@ -69,7 +68,7 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
         (1, 1, 1, 1, 3, 3),
         (3, 4, 1, 1),
         ],
-    division_masks=[Pattern(indices=[3, 4], period=6)],
+    division_masks=[abjad.rhythmmakertools.Pattern(indices=[3, 4], period=6)],
     )
 
 segment_maker.copy_rhythm(
@@ -146,7 +145,7 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
         (1, 4),
         (4, 3),
         ],
-    division_masks=[Pattern(indices=[5, 6], period=7)],
+    division_masks=[abjad.rhythmmakertools.Pattern(indices=[5, 6], period=7)],
     )
 
 segment_maker.copy_rhythm(
@@ -154,7 +153,8 @@ segment_maker.copy_rhythm(
     4,
     voice_name=va,
     division_maker__ratios=[(2, 1), (1, 1, 1), (2, 1)],
-    rhythm_maker__division_masks=[Pattern(indices=[0, 1], period=7)],
+    rhythm_maker__division_masks=[
+        abjad.rhythmmakertools.Pattern(indices=[0, 1], period=7)],
     )
 
 segment_maker.copy_rhythm(
@@ -162,7 +162,8 @@ segment_maker.copy_rhythm(
     4,
     voice_name=vc,
     division_maker__ratios=[(1, 1, 1), (2, 1), (2, 1)],
-    rhythm_maker__division_masks=[Pattern(indices=[2, 3], period=7)],
+    rhythm_maker__division_masks=[
+        abjad.rhythmmakertools.Pattern(indices=[2, 3], period=7)],
     )
 
 ### ob, cl [F4-11] ###
@@ -203,7 +204,8 @@ segment_maker.copy_rhythm(
         (-3, 4, 1, 12),
         (3, 2),
         ],
-    rhythm_maker__division_masks=[Pattern(indices=[0])],
+    rhythm_maker__division_masks=[
+        abjad.rhythmmakertools.Pattern(indices=[0])],
     )
 
 ### pf, xyl [F8] & [F10-15] ###
@@ -351,7 +353,8 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.TaleaRhythmMaker(
         ),
     split_divisions_by_counts=[6, 18],
     extra_counts_per_division=[2, 2, 0, 2, 4, 6],
-    division_masks=[Pattern(indices=[0, 4, 5], period=6)],
+    division_masks=[
+        abjad.rhythmmakertools.Pattern(indices=[0, 4, 5], period=6)],
     )
 
 segment_maker.copy_rhythm(

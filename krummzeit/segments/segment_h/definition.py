@@ -2,7 +2,6 @@
 import abjad
 import baca
 import krummzeit
-from abjad.tools.abjad.rhythmmakertools import Pattern
 from krummzeit.materials.__abbreviations__ import *
 
 
@@ -153,7 +152,7 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker(
     tie_specifier=abjad.rhythmmakertools.TieSpecifier(
         tie_across_divisions=[0, 1],
         ),
-    division_masks=[Pattern(indices=[5, 6], period=7)],
+    division_masks=[abjad.rhythmmakertools.Pattern(indices=[5, 6], period=7)],
     )
 
 ### tam-tam [H1-7] ###
@@ -171,7 +170,7 @@ music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
         ),
     )
 music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker(
-    division_masks=[Pattern(indices=[-1])],
+    division_masks=[abjad.rhythmmakertools.Pattern(indices=[-1])],
     )
 
 ### vn [H5-12] 5th-octave counterpoint ###

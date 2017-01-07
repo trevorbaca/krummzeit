@@ -2,7 +2,6 @@
 import abjad
 import baca
 import krummzeit
-from abjad.tools.abjad.rhythmmakertools import Pattern
 from krummzeit.materials.__abbreviations__ import *
 
 
@@ -115,7 +114,7 @@ music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
     )
 music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[(1, 1, 1)],
-    division_masks=[Pattern(indices=[-1])],
+    division_masks=[abjad.rhythmmakertools.Pattern(indices=[-1])],
     )
 
 segment_maker.copy_rhythm(
@@ -145,7 +144,7 @@ music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
     )
 music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=[(1, 1, 1)],
-    division_masks=[Pattern(indices=[0])],
+    division_masks=[abjad.rhythmmakertools.Pattern(indices=[0])],
     )
 
 ### vn, va, vc [J5-9] white OB bowing (3.5) ###

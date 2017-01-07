@@ -2,7 +2,6 @@
 import abjad
 import baca
 import krummzeit
-from abjad.tools.abjad.rhythmmakertools import Pattern
 from krummzeit.materials.__abbreviations__ import *
 
 
@@ -140,7 +139,7 @@ music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
         ),
     )
 music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker(
-    division_masks=[Pattern(indices=[0])],
+    division_masks=[abjad.rhythmmakertools.Pattern(indices=[0])],
     )
 
 ### ob, Eb cl [I3-6] upper pedals ###
@@ -389,11 +388,11 @@ segment_maker.make_scoped_specifiers(
     specifiers=[
         abjad.Dynamic('fff'),
         baca.tools.abjad.GlissandoSpecifier(
-            #patterns=[Pattern(indices=[0])],
+            #patterns=[abjad.rhythmmakertools.Pattern(indices=[0])],
             patterns=[abjad.rhythmmakertools.select_first(1)],
             ),
         baca.tools.StemTremoloSpecifier(
-            #patterns=[Pattern(indices=[1, 2, 3, 4])],
+            #patterns=[abjad.rhythmmakertools.Pattern(indices=[1, 2, 3, 4])],
             patterns=[abjad.rhythmmakertools.select([1, 2, 3, 4])],
             ),
         ],

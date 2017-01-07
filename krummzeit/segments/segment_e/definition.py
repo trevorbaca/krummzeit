@@ -2,7 +2,6 @@
 import abjad
 import baca
 import krummzeit
-from abjad.tools.rhythmmakertools import Pattern
 from krummzeit.materials.__abbreviations__ import *
 
 
@@ -121,14 +120,14 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         (1, 4),
         (4, 3),
         ],
-    division_masks=[Pattern(indices=[5, 6], period=7)],
+    division_masks=[abjad.rhythmmakertools.Pattern(indices=[5, 6], period=7)],
     )
 
 segment_maker.copy_rhythm(
     va,
     4,
     stages=(5, 7),
-    rhythm_maker__division_masks=[Pattern(indices=[0])],
+    rhythm_maker__division_masks=[abjad.rhythmmakertools.Pattern(indices=[0])],
     )
 
 segment_maker.copy_rhythm(
@@ -144,7 +143,8 @@ segment_maker.copy_rhythm(
     voice_name=vc,
     stages=6,
     division_maker__ratios=[(2, 1), (1, 1, 1), (2, 1)],
-    rhythm_maker__division_masks=[Pattern(indices=[0, 1, 2])],
+    rhythm_maker__division_masks=[
+        abjad.rhythmmakertools.Pattern(indices=[0, 1, 2])],
     )
 
 segment_maker.copy_rhythm(
@@ -224,14 +224,16 @@ segment_maker.copy_rhythm(
     pf,
     8,
     stages=(10, 11),
-    rhythm_maker__division_masks=[Pattern(indices=[2], period=7)],
+    rhythm_maker__division_masks=[
+        abjad.rhythmmakertools.Pattern(indices=[2], period=7)],
     )
 
 segment_maker.copy_rhythm(
     perc,
     8,
     stages=(10, 11),
-    rhythm_maker__division_masks=[Pattern(indices=[5], period=7)],
+    rhythm_maker__division_masks=[
+        abjad.rhythmmakertools.Pattern(indices=[5], period=7)],
     )
 
 ### ob, cl [E5-7] & [E10-12] ###
@@ -272,7 +274,8 @@ segment_maker.copy_rhythm(
         (-3, 4, 1, 12),
         (3, 2),
         ],
-    rhythm_maker__division_masks=[Pattern(indices=[0])],
+    rhythm_maker__division_masks=[
+        abjad.rhythmmakertools.Pattern(indices=[0])],
     )
 
 segment_maker.copy_rhythm(
@@ -300,7 +303,8 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
         talea_denominator=16,
         fill_with_notes=False,
         ),
-    division_masks=[Pattern(indices=[2], period=5)],
+    division_masks=[
+        abjad.rhythmmakertools.Pattern(indices=[2], period=5)],
     )
 
 segment_maker.copy_rhythm(
@@ -358,7 +362,8 @@ segment_maker.copy_rhythm(
     voice_name=pf,
     clef='bass',
     rhythm_maker=rhythmmakertools.NoteRhythmMaker(
-        division_masks=[Pattern(indices=[5, 6], period=7)],
+        division_masks=[
+            abjad.rhythmmakertools.Pattern(indices=[5, 6], period=7)],
         tie_specifier=rhythmmakertools.TieSpecifier(
             tie_across_divisions=[0, 1],
             ),
@@ -370,7 +375,7 @@ segment_maker.copy_rhythm(
     5,
     voice_name=pf,
     rhythm_maker=rhythmmakertools.NoteRhythmMaker(
-        division_masks=[Pattern(indices=[0])],
+        division_masks=[abjad.rhythmmakertools.Pattern(indices=[0])],
         tie_specifier=rhythmmakertools.TieSpecifier(
             tie_across_divisions=[0, 1],
             ),

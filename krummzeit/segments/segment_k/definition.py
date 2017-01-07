@@ -2,7 +2,6 @@
 import abjad
 import baca
 import krummzeit
-from abjad.tools.abjad.rhythmmakertools import Pattern
 from krummzeit.materials.__abbreviations__ import *
 
 
@@ -62,7 +61,7 @@ music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
         ),
     )
 music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker(
-    division_masks=[Pattern(indices=[-1])],
+    division_masks=[abjad.rhythmmakertools.Pattern(indices=[-1])],
     )
 
 music_maker = segment_maker.define_rhythm()
@@ -153,7 +152,7 @@ music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
     )
 
 music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker(
-    division_masks=[Pattern(indices=[1], period=2)],
+    division_masks=[abjad.rhythmmakertools.Pattern(indices=[1], period=2)],
     )
 
 ### bass clarinet ###
@@ -258,7 +257,7 @@ segment_maker.make_scoped_specifiers(
         dynamic_line_spanner_staff_padding(3),
         gridato_possibile,
         baca.tools.abjad.GlissandoSpecifier(
-            #patterns=[Pattern(indices=[5])],
+            #patterns=[abjad.rhythmmakertools.Pattern(indices=[5])],
             patterns=[abjad.rhythmmakertools.select([5])],
             ),
         #markup_padding(4),

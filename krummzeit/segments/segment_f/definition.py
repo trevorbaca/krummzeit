@@ -399,8 +399,8 @@ segment_maker.make_pitch_handler(
             reverse=True,
             counts=[4, 4, 1, 1, 1, 1, 4, 1, 1, 1],
             operators=[
-                abjad.pitchtools.Transposition(9),
-                abjad.pitchtools.Inversion(),
+                abjad.Transposition(n=9),
+                abjad.Inversion(),
                 ],
             ),
         ],
@@ -506,7 +506,7 @@ segment_maker.make_pitch_handler(
     scope=([vn, va, vc], (4, 10)),
     specifiers=[
         baca.tools.ScorePitchSpecifier(
-            operators=[abjad.pitchtools.Transposition(10)],
+            operators=[abjad.Transposition(n=10)],
             reverse=True,
             source=violet_pitch_classes,    
             start_index=300,
@@ -648,8 +648,8 @@ segment_maker.make_pitch_handler(
     specifiers=[
         baca.tools.ScorePitchSpecifier(
             operators=[
-                abjad.pitchtools.Transposition(5), 
-                abjad.pitchtools.Inversion()],
+                abjad.Transposition(n=5), 
+                abjad.Inversion()],
             reverse=True,
             source=indigo_pitch_classes,
             start_index=84,

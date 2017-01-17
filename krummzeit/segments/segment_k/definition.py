@@ -215,7 +215,7 @@ segment_maker.make_pitch_handler(
     scope=([vn, va], (1, 10)),
     specifiers=[
         baca.tools.ScorePitchSpecifier(
-            operators=[abjad.pitchtools.Transposition(4), abjad.pitchtools.Inversion()],
+            operators=[abjad.Transposition(n=4), abjad.Inversion()],
             source=indigo_snippet,
             ),
         ]

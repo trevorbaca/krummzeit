@@ -315,7 +315,7 @@ pitch_handler = segment_maker.make_pitch_handler(
         ],
     specifiers=[
         baca.tools.ScorePitchSpecifier(
-            operators=[pitchtools.Transposition(2)],
+            operators=[abjad.Transposition(n=2)],
             source=indigo_pitch_classes,    
             start_index=0,
             ),

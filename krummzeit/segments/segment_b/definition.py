@@ -476,7 +476,7 @@ pitch_handler = segment_maker.make_pitch_handler(
     scope=([pf, vn, ob, cl], (5, 8)),
     specifiers=[
         baca.tools.ScorePitchSpecifier(
-            operators=[pitchtools.Transposition(1)],
+            operators=[abjad.Transposition(n=1)],
             ),
         ],
     )
@@ -484,7 +484,7 @@ pitch_handler = segment_maker.make_pitch_handler(
     scope=([pf, vn, ob, cl], (9, 13)),
     specifiers=[
         baca.tools.ScorePitchSpecifier(
-            operators=[pitchtools.Transposition(3)],
+            operators=[abjad.Transposition(n=3)],
             ),
         ],
     )
@@ -750,7 +750,7 @@ segment_maker.make_pitch_handler(
         baca.tools.ScorePitchSpecifier(
             source=violet_pitch_classes,    
             start_index=60,
-            operators=[pitchtools.Transposition(1)],
+            operators=[abjad.Transposition(n=1)],
             ),
         ],
     )

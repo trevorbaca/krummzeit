@@ -236,7 +236,7 @@ segment_maker.make_pitch_handler(
         ],
     specifiers=[
         baca.tools.ScorePitchSpecifier(
-            operators=[pitchtools.Transposition(4), pitchtools.Inversion()],
+            operators=[abjad.Transposition(n=4), abjad.Inversion()],
             reverse=True,
             source=indigo_pitch_classes,
             start_index=42,

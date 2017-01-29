@@ -152,7 +152,7 @@ class RhythmDefinition(abjad.abctools.AbjadObject):
             divisions = [
                 abjad.mathtools.NonreducedFraction(_) for _ in time_signatures
                 ]
-        divisions = abjad.sequencetools.flatten_sequence(divisions)
+        divisions = baca.Sequence(divisions).flatten()
         for division in divisions:
             assert isinstance(division, abjad.mathtools.NonreducedFraction), division
         rhythm_maker = self._get_rhythm_maker()

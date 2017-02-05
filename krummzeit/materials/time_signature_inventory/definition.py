@@ -27,8 +27,8 @@ numerators = numerators + numerators
 assert len(numerators) == 236  and sum(numerators) == 928
 
 ratio = [3, 2, 1, 1, 3, 2, 1, 1, 3, 2, 1, 1]
-partition = abjad.sequencetools.partition_sequence_by_ratio_of_weights
-numerator_lists = partition(numerators, ratio)
+numerator_lists = baca.Sequence(numerators)
+numerator_lists = numerator_lists.partition_by_ratio_of_weights(weights=ratio)
 assert len(numerator_lists) == 12
 
 def numerator_to_time_signature(numerator):

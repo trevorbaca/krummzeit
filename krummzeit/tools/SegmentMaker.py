@@ -460,7 +460,7 @@ class SegmentMaker(experimental.tools.makertools.SegmentMaker):
             spell_metrically='unassignable',
             )
         maker = abjad.rhythmmakertools.NoteRhythmMaker(
-            division_masks=[abjad.rhythmmakertools.silence_all()],
+            division_masks=[abjad.silence_all()],
             )
         selections = maker(time_signatures)
         return selections

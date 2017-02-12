@@ -117,7 +117,7 @@ class RhythmDefinition(abjad.abctools.AbjadObject):
     @property
     def _default_rhythm_maker(self):
         maker = abjad.rhythmmakertools.NoteRhythmMaker(
-            division_masks=[abjad.rhythmmakertools.silence_all()],
+            division_masks=[abjad.silence_all()],
             )
 
     ### PRIVATE METHODS ###

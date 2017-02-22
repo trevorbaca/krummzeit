@@ -171,139 +171,109 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker()
 
 ### harpsichord & piano reiteration ###
 segment_maker.make_pitch_handler(
-    scope=(pf, (1, 12)),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='C#6',
-            ),
-        ],
+    (pf, (1, 12)),
+    baca.tools.ScorePitchSpecifier(
+        source='C#6',
+        ),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(pf, (1, 12)),
-    specifiers=[
-        stem_tremolo,
-        ],
+segment_maker.append_specifiers(
+    (pf, (1, 12)),
+    stem_tremolo,
     )
-segment_maker.make_scoped_specifiers(
-    scope=(pf, (7, 12)),
-    specifiers=[
-        ffff_possibile,
-        ],
+segment_maker.append_specifiers(
+    (pf, (7, 12)),
+    ffff_possibile,
     )
 
 ### xylophone reiteration ###
 segment_maker.make_pitch_handler(
-    scope=(perc, (1, 12)),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='C#6',
-            ),
-        ],
+    (perc, (1, 12)),
+    baca.tools.ScorePitchSpecifier(
+        source='C#6',
+        ),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(perc, (1, 12)),
-    specifiers=[
-        abjad.Dynamic('fff'),
-        dynamic_line_spanner_staff_padding(4),
-        stem_tremolo,
-        ],
+segment_maker.append_specifiers(
+    (perc, (1, 12)),
+    abjad.Dynamic('fff'),
+    dynamic_line_spanner_staff_padding(4),
+    stem_tremolo,
     )
 
 ### vn, va points ###
 indigo_snippet = indigo_pitch_classes[42:34:-1]
 segment_maker.make_pitch_handler(
-    scope=([vn, va], (1, 10)),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            operators=[abjad.Transposition(n=4), abjad.Inversion()],
-            source=indigo_snippet,
-            ),
-        ]
+    ([vn, va], (1, 10)),
+    baca.tools.ScorePitchSpecifier(
+        operators=[abjad.Transposition(n=4), abjad.Inversion()],
+        source=indigo_snippet,
+        ),
     )
-segment_maker.make_scoped_specifiers(
-    scope=([vn, va], (1, 10)),
-    specifiers=[
-        abjad.Dynamic('ff'),
-        dynamic_line_spanner_staff_padding(5),
-        krummzeit_displacement,
-        narrow_sixth_octave,
-        pizz,
-        staccatissimi,
-        tuplet_bracket_staff_padding(2),
-        ],
+segment_maker.append_specifiers(
+    ([vn, va], (1, 10)),
+    abjad.Dynamic('ff'),
+    dynamic_line_spanner_staff_padding(5),
+    krummzeit_displacement,
+    narrow_sixth_octave,
+    pizz,
+    staccatissimi,
+    tuplet_bracket_staff_padding(2),
     )
 
 ### vc ###
 segment_maker.make_pitch_handler(
-    scope=(vc, (1, 6)),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='D4 D4 D4 D4 D4 D4 D2',
-            ),
-        ],
+    (vc, (1, 6)),
+    baca.tools.ScorePitchSpecifier(
+        source='D4 D4 D4 D4 D4 D4 D2',
+        ),
     )
 segment_maker.make_pitch_handler(
-    scope=(vc, (7, 12)),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='D2',
-            ),
-        ],
+    (vc, (7, 12)),
+    baca.tools.ScorePitchSpecifier(
+        source='D2',
+        ),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(vc, (1, 6)),
-    specifiers=[
-        abjad.Dynamic('fff'),
-        dynamic_line_spanner_staff_padding(3),
-        gridato_possibile,
-        baca.tools.abjad.GlissandoSpecifier(
-            #patterns=[abjad.rhythmmakertools.Pattern(indices=[5])],
-            patterns=[abjad.rhythmmakertools.select([5])],
-            ),
-        #markup_padding(4),
-        ],
+segment_maker.append_specifiers(
+    (vc, (1, 6)),
+    abjad.Dynamic('fff'),
+    dynamic_line_spanner_staff_padding(3),
+    gridato_possibile,
+    baca.tools.abjad.GlissandoSpecifier(
+        #patterns=[abjad.rhythmmakertools.Pattern(indices=[5])],
+        patterns=[abjad.rhythmmakertools.select([5])],
+        ),
+    #markup_padding(4),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(vc, (7, 12)),
-    specifiers=[
-        abjad.Dynamic('ff'),
-        ordinario,
-        ],
+segment_maker.append_specifiers(
+    (vc, (7, 12)),
+    abjad.Dynamic('ff'),
+    ordinario,
     )
 
 ### oboe ###
 segment_maker.make_pitch_handler(
-    scope=(ob, (1, 12)),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='C#4',
-            ),
-        ],
+    (ob, (1, 12)),
+    baca.tools.ScorePitchSpecifier(
+        source='C#4',
+        ),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(ob, (1, 12)),
-    specifiers=[
-        abjad.Dynamic('fff'),
-        dynamic_line_spanner_staff_padding(5),
-        ],
+segment_maker.append_specifiers(
+    (ob, (1, 12)),
+    abjad.Dynamic('fff'),
+    dynamic_line_spanner_staff_padding(5),
     )
 
 ### bass clarinet ###
 segment_maker.make_pitch_handler(
-    scope=(cl, (1, 12)),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='D2',
-            ),
-        ],
+    (cl, (1, 12)),
+    baca.tools.ScorePitchSpecifier(
+        source='D2',
+        ),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(cl, (1, 12)),
-    specifiers=[
-        abjad.Dynamic('f'),
-        dynamic_line_spanner_staff_padding(7),
-        stem_direction(Up),
-        ],
+segment_maker.append_specifiers(
+    (cl, (1, 12)),
+    abjad.Dynamic('f'),
+    dynamic_line_spanner_staff_padding(7),
+    stem_direction(Up),
     )
 
 ### VERTICAL ALIGNMENT ###

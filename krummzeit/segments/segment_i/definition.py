@@ -215,279 +215,208 @@ segment_maker.copy_rhythm(
 ###############################################################################
 
 ### (11.1) harpsichord clusters ###
-segment_maker.make_scoped_specifiers(
-    scope=(pf, (1, 5)),
-    specifiers=[
-        abjad.Clef('treble'),
-        harpsichord_cluster,
-        harpsichord,
-        ],
+segment_maker.append_specifiers(
+    (pf, (1, 5)),
+    abjad.Clef('treble'),
+    harpsichord_cluster,
+    harpsichord,
     )
 ### (14) string reiteration ###
 segment_maker.make_pitch_handler(
-    scope=(vn, 1),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='Db4',
-            ),
-        ],
+    (vn, 1),
+    baca.tools.ScorePitchSpecifier(
+        source='Db4',
+        ),
     )
 segment_maker.make_pitch_handler(
-    scope=(va, 1),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='C3',
-            ),
-        ],
+    (va, 1),
+    baca.tools.ScorePitchSpecifier(
+        source='C3',
+        ),
     )
 segment_maker.make_pitch_handler(
-    scope=(vc, 1),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='C2',
-            ),
-        ],
+    (vc, 1),
+    baca.tools.ScorePitchSpecifier(
+        source='C2',
+        ),
     )
-segment_maker.make_scoped_specifiers(
-    scope=([vn, va, vc], 1),
-    specifiers=[
-        fff_possibile,
-        stem_tremolo,
-        ],
+segment_maker.append_specifiers(
+    ([vn, va, vc], 1),
+    fff_possibile,
+    stem_tremolo,
     )
 
 ### (11.1) crotales ###
-segment_maker.make_scoped_specifiers(
-    scope=(perc, (4, 5)),
-    specifiers=[
-        accents,
-        reiterated_ff,
-        ],
+segment_maker.append_specifiers(
+    (perc, (4, 5)),
+    accents,
+    reiterated_ff,
     )
 
 ### (5.3) vn, va, vc thicket ###
 segment_maker.make_pitch_handler(
-    scope=([vn, va, vc], (2, 4)),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            operators=[abjad.Transposition(n=8), abjad.Inversion()],
-            reverse=True,
-            source=violet_pitch_classes,    
-            start_index=240,
-            ),
-        ],
+    ([vn, va, vc], (2, 4)),
+    baca.tools.ScorePitchSpecifier(
+        operators=[abjad.Transposition(n=8), abjad.Inversion()],
+        reverse=True,
+        source=violet_pitch_classes,    
+        start_index=240,
+        ),
     )
-segment_maker.make_scoped_specifiers(
-    scope=([vn, va, vc], (2, 4)),
-    specifiers=[
-        abjad.Dynamic('ppp'),
-        abjad.Glissando(),
-        natural_harmonics,
-        ],
+segment_maker.append_specifiers(
+    ([vn, va, vc], (2, 4)),
+    abjad.Dynamic('ppp'),
+    abjad.Glissando(),
+    natural_harmonics,
     )
-segment_maker.make_scoped_specifiers(
-    scope=(vn, (2, 4)),
-    specifiers=[
-        krummzeit_displacement,
-        wide_fourth_octave,
-        ],
+segment_maker.append_specifiers(
+    (vn, (2, 4)),
+    krummzeit_displacement,
+    wide_fourth_octave,
     )
-segment_maker.make_scoped_specifiers(
-    scope=(va, (2, 4)),
-    specifiers=[
-        krummzeit_displacement,
-        narrow_third_octave,
-        ],
+segment_maker.append_specifiers(
+    (va, (2, 4)),
+    krummzeit_displacement,
+    narrow_third_octave,
     )
-segment_maker.make_scoped_specifiers(
-    scope=(vc, (2, 4)),
-    specifiers=[
-        krummzeit_displacement,
-        narrow_second_octave,
-        ],
+segment_maker.append_specifiers(
+    (vc, (2, 4)),
+    krummzeit_displacement,
+    narrow_second_octave,
     )
 
 ### (11.1) ob, cl pedals ###
 segment_maker.make_pitch_handler(
-    scope=([ob, cl], (3, 6)),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='D5',
-            ),
-        ],
+    ([ob, cl], (3, 6)),
+    baca.tools.ScorePitchSpecifier(
+        source='D5',
+        ),
     )
-segment_maker.make_scoped_specifiers(
-    scope=([ob, cl], (3, 6)),
-    specifiers=[
-        abjad.Dynamic('ff'),
-        ],
+segment_maker.append_specifiers(
+    ([ob, cl], (3, 6)),
+    abjad.Dynamic('ff'),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(ob, (3, 6)),
-    specifiers=[
-        spannertools.TrillSpanner(),
-        ],
+segment_maker.append_specifiers(
+    (ob, (3, 6)),
+    spannertools.TrillSpanner(),
     )
 
 ### (14) ###
 segment_maker.make_pitch_handler(
-    scope=(ob, (7, 8)),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='Eb5',
-            ),
-        ],
+    (ob, (7, 8)),
+    baca.tools.ScorePitchSpecifier(
+        source='Eb5',
+        ),
     )
 segment_maker.make_pitch_handler(
-    scope=(cl, (7, 8)),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='Eb2',
-            ),
-        ],
+    (cl, (7, 8)),
+    baca.tools.ScorePitchSpecifier(
+        source='Eb2',
+        ),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(ob, (7, 8)),
-    specifiers=[
-        color_fingerings,
-        ],
+segment_maker.append_specifiers(
+    (ob, (7, 8)),
+    color_fingerings,
     )
-segment_maker.make_scoped_specifiers(
-    scope=(cl, (7, 8)),
-    specifiers=[
-        abjad.Dynamic('ff'),
-        color_fingerings,
-        ],
+segment_maker.append_specifiers(
+    (cl, (7, 8)),
+    abjad.Dynamic('ff'),
+    color_fingerings,
     )
 segment_maker.make_pitch_handler(
-    scope=(vn, (6, 8)),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='D5 Eb5 Eb5 Eb5',
-            ),
-        ],
+    (vn, (6, 8)),
+    baca.tools.ScorePitchSpecifier(
+        source='D5 Eb5 Eb5 Eb5',
+        ),
     )
 segment_maker.make_pitch_handler(
-    scope=(va, (6, 8)),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='D3 A3 A3 A3',
-            ),
-        ],
+    (va, (6, 8)),
+    baca.tools.ScorePitchSpecifier(
+        source='D3 A3 A3 A3',
+        ),
     )
 segment_maker.make_pitch_handler(
-    scope=(vc, (6, 8)),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='D3 E~2 E~2 E~2',
-            ),
-        ],
+    (vc, (6, 8)),
+    baca.tools.ScorePitchSpecifier(
+        source='D3 E~2 E~2 E~2',
+        ),
     )
-segment_maker.make_scoped_specifiers(
-    scope=([vn, va, vc], (6, 8)),
-    specifiers=[
-        abjad.Dynamic('fff'),
-        baca.tools.abjad.GlissandoSpecifier(
-            #patterns=[abjad.rhythmmakertools.Pattern(indices=[0])],
-            patterns=[abjad.rhythmmakertools.select_first(1)],
-            ),
-        baca.tools.StemTremoloSpecifier(
-            #patterns=[abjad.rhythmmakertools.Pattern(indices=[1, 2, 3, 4])],
-            patterns=[abjad.rhythmmakertools.select([1, 2, 3, 4])],
-            ),
-        ],
+segment_maker.append_specifiers(
+    ([vn, va, vc], (6, 8)),
+    abjad.Dynamic('fff'),
+    baca.tools.abjad.GlissandoSpecifier(
+        #patterns=[abjad.rhythmmakertools.Pattern(indices=[0])],
+        patterns=[abjad.rhythmmakertools.select_first(1)],
+        ),
+    baca.tools.StemTremoloSpecifier(
+        #patterns=[abjad.rhythmmakertools.Pattern(indices=[1, 2, 3, 4])],
+        patterns=[abjad.rhythmmakertools.select([1, 2, 3, 4])],
     )
 segment_maker.make_pitch_handler(
-    scope=([pf, perc], 8),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='F#6',
-            ),
-        ],
+    ([pf, perc], 8),
+    baca.tools.ScorePitchSpecifier(
+        source='F#6',
+        ),
     )
-segment_maker.make_scoped_specifiers(
-    scope=([pf, perc], 8),
-    specifiers=[
-        abjad.Dynamic('fff'),
-        stem_tremolo,
-        ],
+segment_maker.append_specifiers(
+    ([pf, perc], 8),
+    abjad.Dynamic('fff'),
+    stem_tremolo,
     )
-segment_maker.make_scoped_specifiers(
-    scope=(perc, 8),
-    specifiers=[
-        abjad.Dynamic('fff'),
-        stem_tremolo,
-        ],
+segment_maker.append_specifiers(
+    (perc, 8),
+    abjad.Dynamic('fff'),
+    stem_tremolo,
     )
 
 ### VERTICAL ALIGNMENT ###
 
-segment_maker.make_scoped_specifiers(
-    scope=(ob, (3, 6)),
-    specifiers=[
-        dynamic_line_spanner_staff_padding(3),
-        ],
+segment_maker.append_specifiers(
+    (ob, (3, 6)),
+    dynamic_line_spanner_staff_padding(3),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(ob, (7, 8)),
-    specifiers=[
-        tuplet_bracket_staff_padding(2),
-        ],
+segment_maker.append_specifiers(
+    (ob, (7, 8)),
+    tuplet_bracket_staff_padding(2),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(cl, (3, 6)),
-    specifiers=[
-        dynamic_line_spanner_staff_padding(3),
-        ],
+segment_maker.append_specifiers(
+    (cl, (3, 6)),
+    dynamic_line_spanner_staff_padding(3),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(cl, (7, 8)),
-    specifiers=[
-        stem_direction(Up),
-        dynamic_line_spanner_staff_padding(9),
-        tuplet_bracket_staff_padding(5),
-        ],
+segment_maker.append_specifiers(
+    (cl, (7, 8)),
+    stem_direction(Up),
+    dynamic_line_spanner_staff_padding(9),
+    tuplet_bracket_staff_padding(5),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(pf, (7, 8)),
-    specifiers=[
-        dynamic_line_spanner_staff_padding(6),
-        tuplet_bracket_staff_padding(2),
-        ],
+segment_maker.append_specifiers(
+    (pf, (7, 8)),
+    dynamic_line_spanner_staff_padding(6),
+    tuplet_bracket_staff_padding(2),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(perc, (4, 5)),
-    specifiers=[
-        dynamic_line_spanner_staff_padding(6),
-        ],
+segment_maker.append_specifiers(
+    (perc, (4, 5)),
+    dynamic_line_spanner_staff_padding(6),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(perc, (7, 8)),
-    specifiers=[
-        dynamic_line_spanner_staff_padding(7),
-        tuplet_bracket_staff_padding(3),
-        ],
+segment_maker.append_specifiers(
+    (perc, (7, 8)),
+    dynamic_line_spanner_staff_padding(7),
+    tuplet_bracket_staff_padding(3),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(vn, (6, 8)),
-    specifiers=[
-        dynamic_line_spanner_staff_padding(7),
-        tuplet_bracket_staff_padding(3),
-        ],
+segment_maker.append_specifiers(
+    (vn, (6, 8)),
+    dynamic_line_spanner_staff_padding(7),
+    tuplet_bracket_staff_padding(3),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(va, (6, 8)),
-    specifiers=[
-        dynamic_line_spanner_staff_padding(9),
-        tuplet_bracket_staff_padding(5),
-        ],
+segment_maker.append_specifiers(
+    (va, (6, 8)),
+    dynamic_line_spanner_staff_padding(9),
+    tuplet_bracket_staff_padding(5),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(vc, (6, 8)),
-    specifiers=[
-        dynamic_line_spanner_staff_padding(9),
-        tuplet_bracket_staff_padding(5),
-        ],
+segment_maker.append_specifiers(
+    (vc, (6, 8)),
+    dynamic_line_spanner_staff_padding(9),
+    tuplet_bracket_staff_padding(5),
     )
 
 ### TIMINGS ###

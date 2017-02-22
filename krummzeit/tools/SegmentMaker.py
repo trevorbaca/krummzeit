@@ -765,10 +765,10 @@ class SegmentMaker(experimental.tools.makertools.SegmentMaker):
         message = message.format(voice_name, stage)
         raise KeyError(message)
 
-    def make_scoped_specifiers(
+    def append_specifiers(
         self, 
         scope, 
-        specifiers,
+        *specifiers
         ):
         r'''Makes scoped specifiers.
 
@@ -800,7 +800,7 @@ class SegmentMaker(experimental.tools.makertools.SegmentMaker):
     def make_pitch_handler(
         self,
         scope,
-        specifiers,
+        *specifiers
         ):
         assert isinstance(specifiers, list), repr(specifiers)
         pitch_handler = baca.tools.ScorePitchSpecifier(

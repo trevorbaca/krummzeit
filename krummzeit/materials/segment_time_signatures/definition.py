@@ -5,7 +5,7 @@ from krummzeit.materials.time_signature_inventory.definition import \
     time_signature_inventory
 
 
-segment_time_signatures = abjad.datastructuretools.TypedOrderedDict()
+segment_time_signatures = abjad.TypedOrderedDict()
 
 ### B ###
 time_signatures = time_signature_inventory[:3]

@@ -3,7 +3,7 @@ import abjad
 from krummzeit.materials.tempi.definition import tempi
 
 
-named_tempi = abjad.datastructuretools.TypedOrderedDict([
+named_tempi = abjad.TypedOrderedDict([
     ('36', tempi[5]),
     ('45', tempi[8]),
     ('67.5', tempi[4]),

@@ -200,227 +200,169 @@ music_maker.rhythm_maker = tied_notes
 
 ### (3.1) va, vc, bcl ###
 segment_maker.make_pitch_handler(
-    scope=(va, (1, 4)),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='F#3',
-            ),
-        ],
+    (va, (1, 4)),
+    baca.tools.ScorePitchSpecifier(
+        source='F#3',
+        ),
     )
 segment_maker.make_pitch_handler(
-    scope=(vc, (1, 4)),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='C2',
-            ),
-        ],
+    (vc, (1, 4)),
+    baca.tools.ScorePitchSpecifier(
+        source='C2',
+        ),
     )
-segment_maker.make_scoped_specifiers(
-    scope=([va, vc], (2, 4)),
-    specifiers=[
-        Hairpin('ppp < fff'),
-        ],
+segment_maker.append_specifiers(
+    ([va, vc], (2, 4)),
+    Hairpin('ppp < fff'),
     )
 
 ### (10.2) snare ###
-segment_maker.make_scoped_specifiers(
-    scope=(perc, (2, 11)),
-    specifiers=[
-        Dynamic('ppp'),
-        fingertips_only,
-        stem_tremolo,
-        ],
+segment_maker.append_specifiers(
+    (perc, (2, 11)),
+    Dynamic('ppp'),
+    fingertips_only,
+    stem_tremolo,
     )
 
 ### (10.1) vn, va, vc unrestrained ###
 segment_maker.make_pitch_handler(
-    scope=(vn, (5, 13)),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='F#3',
-            ),
-        ],
+    (vn, (5, 13)),
+    baca.tools.ScorePitchSpecifier(
+        source='F#3',
+        ),
     )
 segment_maker.make_pitch_handler(
-    scope=(va, (5, 13)),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='Bb2',
-            ),
-        ],
+    (va, (5, 13)),
+    baca.tools.ScorePitchSpecifier(
+        source='Bb2',
+        ),
     )
 segment_maker.make_pitch_handler(
-    scope=(vc, (5, 13)),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='A1',
-            ),
-        ],
+    (vc, (5, 13)),
+    baca.tools.ScorePitchSpecifier(
+        source='A1',
+        ),
     )
-segment_maker.make_scoped_specifiers(
-    scope=([vn, va, vc], (5, 13)),
-    specifiers=[
-        Dynamic('fff'),
-        gridato_possibile,
-        ],
+segment_maker.append_specifiers(
+    ([vn, va, vc], (5, 13)),
+    Dynamic('fff'),
+    gridato_possibile,
     )
-segment_maker.make_scoped_specifiers(
-    scope=(vn, (8, 10)),
-    specifiers=[
-        grid_poss_to_flaut_poss,
-        ],
+segment_maker.append_specifiers(
+    (vn, (8, 10)),
+    grid_poss_to_flaut_poss,
     )
-segment_maker.make_scoped_specifiers(
-    scope=([va, vc], (9, 10)),
-    specifiers=[
-        grid_poss_to_flaut_poss,
-        ],
+segment_maker.append_specifiers(
+    ([va, vc], (9, 10)),
+    grid_poss_to_flaut_poss,
     )
 
 ### tam-tam ###
-segment_maker.make_scoped_specifiers(
-    scope=(perc, 13),
-    specifiers=[
-        attackless,
-        ],
+segment_maker.append_specifiers(
+    (perc, 13),
+    attackless,
     )
-segment_maker.make_scoped_specifiers(
-    scope=(perc, (13, 14)),
-    specifiers=[
-        reiterated_p,
-        ],
+segment_maker.append_specifiers(
+    (perc, (13, 14)),
+    reiterated_p,
     )
 
 ### bass clarinet subtone ###
 segment_maker.make_pitch_handler(
-    scope=(cl, (11, 13)),
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            source='B1',
-            ),
-        ],
+    (cl, (11, 13)),
+    baca.tools.ScorePitchSpecifier(
+        source='B1',
+        ),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(cl, (11, 13)),
-    specifiers=[
-        ppp_subtone,
-        ],
+segment_maker.append_specifiers(
+    (cl, (11, 13)),
+    ppp_subtone,
     )
 
 ### (12) hpschd, ob, cl ###
 pitch_handler = segment_maker.make_pitch_handler(
-    scope=[
+    [
         (pf, (3, 11)),
         ([ob, cl], (1, 8)),
         ],
-    specifiers=[
-        baca.tools.ScorePitchSpecifier(
-            operators=[abjad.Transposition(n=2)],
-            source=indigo_pitch_classes,    
-            start_index=0,
-            ),
-        ],
+    baca.tools.ScorePitchSpecifier(
+        operators=[abjad.Transposition(n=2)],
+        source=indigo_pitch_classes,    
+        start_index=0,
+        ),
     )
-segment_maker.make_scoped_specifiers(
-    scope=[
+segment_maker.append_specifiers(
+    [
         (pf, (3, 11)),
         ([ob, cl], (1, 8)),
         ],
-    specifiers=[
-        krummzeit_displacement,
-        ],
+    krummzeit_displacement,
     )
-segment_maker.make_scoped_specifiers(
-    scope=(pf, (3, 6)),
-    specifiers=[
-        narrow_fifth_to_third_octave,
-        ],
+segment_maker.append_specifiers(
+    (pf, (3, 6)),
+    narrow_fifth_to_third_octave,
     )
-segment_maker.make_scoped_specifiers(
-    scope=(pf, 5),
-    specifiers=[
-        Clef('bass'),
-        ],
+segment_maker.append_specifiers(
+    (pf, 5),
+    Clef('bass'),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(pf, 9),
-    specifiers=[
-        narrow_third_octave,
-        ],
+segment_maker.append_specifiers(
+    (pf, 9),
+    narrow_third_octave,
     )
-segment_maker.make_scoped_specifiers(
-    scope=(pf, 11),
-    specifiers=[
-        narrow_second_octave,
-        ],
+segment_maker.append_specifiers(
+    (pf, 11),
+    narrow_second_octave,
     )
-segment_maker.make_scoped_specifiers(
-    scope=(cl, (3, 7)),
-    specifiers=[
-        Hairpin('p < ff'),
-        narrow_fourth_to_sixth_octave,
-        ],
+segment_maker.append_specifiers(
+    (cl, (3, 7)),
+    Hairpin('p < ff'),
+    narrow_fourth_to_sixth_octave,
     )
-segment_maker.make_scoped_specifiers(
-    scope=(ob, (3, 7)),
-    specifiers=[
-        Hairpin('p < ff'),
-        narrow_sixth_to_fourth_octave,
-        ],
+segment_maker.append_specifiers(
+    (ob, (3, 7)),
+    Hairpin('p < ff'),
+    narrow_sixth_to_fourth_octave,
     )
-segment_maker.make_scoped_specifiers(
-    scope=([ob, cl], (3, 7)),
-    specifiers=[
-        baca.tools.ArticulationSpecifier(
-            articulation_list=['.'],
-            maximum_duration=Duration(1, 8),
-            ),
-        ],
+segment_maker.append_specifiers(
+    ([ob, cl], (3, 7)),
+    baca.tools.ArticulationSpecifier(
+        articulation_list=['.'],
+        maximum_duration=Duration(1, 8),
+        ),
     )
 
 ### VERTICAL ALIGNMENT ###
 
-segment_maker.make_scoped_specifiers(
-    scope=(ob, (1, 14)),
-    specifiers=[
-        beam_positions(-5),
-        tuplet_bracket_staff_padding(4),
-        dynamic_line_spanner_staff_padding(8),
-        ],
+segment_maker.append_specifiers(
+    (ob, (1, 14)),
+    beam_positions(-5),
+    tuplet_bracket_staff_padding(4),
+    dynamic_line_spanner_staff_padding(8),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(cl, (1, 7)),
-    specifiers=[
-        beam_positions(-5),
-        tuplet_bracket_staff_padding(4),
-        dynamic_line_spanner_staff_padding(8),
-        ],
+segment_maker.append_specifiers(
+    (cl, (1, 7)),
+    beam_positions(-5),
+    tuplet_bracket_staff_padding(4),
+    dynamic_line_spanner_staff_padding(8),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(cl, (8, 14)),
-    specifiers=[
-        dynamic_line_spanner_staff_padding(8),
-        stem_direction(Up),
-        ],
+segment_maker.append_specifiers(
+    (cl, (8, 14)),
+    dynamic_line_spanner_staff_padding(8),
+    stem_direction(Up),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(pf, (1, 7)),
-    specifiers=[
-        beam_positions(-5),
-        tuplet_bracket_staff_padding(4),
-        ],
+segment_maker.append_specifiers(
+    (pf, (1, 7)),
+    beam_positions(-5),
+    tuplet_bracket_staff_padding(4),
     )
-segment_maker.make_scoped_specifiers(
-    scope=(perc, (1, 14)),
-    specifiers=[
-        dynamic_line_spanner_staff_padding(6),
-        ],
+segment_maker.append_specifiers(
+    (perc, (1, 14)),
+    dynamic_line_spanner_staff_padding(6),
     )
-segment_maker.make_scoped_specifiers(
-    scope=([va, vc], (2, 4)),
-    specifiers=[
-        dynamic_line_spanner_staff_padding(6),
-        ],
+segment_maker.append_specifiers(
+    ([va, vc], (2, 4)),
+    dynamic_line_spanner_staff_padding(6),
     )
 
 ### TIMINGS ###

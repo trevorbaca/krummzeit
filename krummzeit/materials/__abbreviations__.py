@@ -165,12 +165,12 @@ ppp_ancora += abjad.Markup('ancora').italic()
 
 ppp_subtone = abjad.Markup('ppp').dynamic() + abjad.Markup('subtone')
 
-reiterated_fff = baca.make_reiterated_dynamic( dynamic_name='fff')
-reiterated_ff = baca.make_reiterated_dynamic(dynamic_name='ff')
-reiterated_f = baca.make_reiterated_dynamic(dynamic_name='f')
-reiterated_mp = baca.make_reiterated_dynamic(dynamic_name='mp')
-reiterated_p = baca.make_reiterated_dynamic(dynamic_name='p')
-reiterated_pp = baca.make_reiterated_dynamic(dynamic_name='pp')
+reiterated_fff = baca.reiterated_dynamic( dynamic_name='fff')
+reiterated_ff = baca.reiterated_dynamic(dynamic_name='ff')
+reiterated_f = baca.reiterated_dynamic(dynamic_name='f')
+reiterated_mp = baca.reiterated_dynamic(dynamic_name='mp')
+reiterated_p = baca.reiterated_dynamic(dynamic_name='p')
+reiterated_pp = baca.reiterated_dynamic(dynamic_name='pp')
 
 scrape_moderately = abjad.Markup(
     'scrape in a circle at moderate speed',

@@ -78,7 +78,7 @@ class ScoreTemplate(abjad.abctools.AbjadValueObject):
         from krummzeit.materials import performer_inventory
 
         # make time signature context
-        time_signature_context = abjad.scoretools.Context(
+        time_signature_context = abjad.Context(
             context_name='TimeSignatureContext',
             name='Time Signature Context',
             )

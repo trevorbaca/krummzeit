@@ -75,9 +75,7 @@ def make_effort_dynamic_markup(dynamic_text, direction=Down):
     markup._direction = direction
     return markup
 
-accents = baca.tools.ArticulationSpecifier(
-    articulations=['>'],
-    )
+accents = baca.accents()
 
 arco = abjad.Markup('arco', direction=Up).larger()
 
@@ -448,25 +446,11 @@ narrow_third_to_second_octave = baca.tools.RegisterTransitionSpecifier(
     )
 
 # articulation specifiers
-alternate_bow_strokes = baca.tools.ArticulationSpecifier(
-    articulations=(['upbow', 'accent'], ['downbow', 'accent']),
-    )
-marcati = baca.tools.ArticulationSpecifier(
-    articulations=['marcato'],
-    #skip_ties=True,
-    )
-staccati = baca.tools.ArticulationSpecifier(
-    articulations=['staccato'],
-    #maximum_duration=abjad.Duration(1, 4),
-    #skip_ties=True,
-    )
-staccatissimi = baca.tools.ArticulationSpecifier(
-    articulations=['staccatissimo'],
-    #skip_ties=True,
-    )
-tenuti = baca.tools.ArticulationSpecifier(
-    articulations=['tenuto'],
-    )
+alternate_bow_strokes = baca.alternate_bow_strokes()
+marcati = baca.marcati()
+staccati = baca.staccati()
+staccatissimi = baca.staccatissim()
+tenuti = baca.tenuti()
     
 ### wide registrations ###
 
@@ -507,9 +491,8 @@ wide_seventh_octave = baca.tools.RegisterSpecifier(
 
 ### dynamics
 
-patterned_f_ff = baca.tools.ArticulationSpecifier(
-    articulations=['f', 'f', 'ff', 'f', 'ff', 'f', 'f', 'ff', 'ff'],
-    #minimum_duration=abjad.Duration(1, 8),
+patterned_f_ff = baca.reiterated_dynamics(
+    ['f', 'f', 'ff', 'f', 'ff', 'f', 'f', 'ff', 'ff'],
     )
 
 repeated_p_to_ppp = baca.tools.HairpinSpecifier(

@@ -326,7 +326,7 @@ segment_maker.append_specifiers(
     )
 segment_maker.append_specifiers(
     ([ob, cl], (3, 7)),
-    baca.tools.ArticulationSpecifier(
+    baca.tools.AttachCommand(
         articulation_list=['.'],
         maximum_duration=Duration(1, 8),
         ),

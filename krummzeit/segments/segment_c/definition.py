@@ -469,9 +469,7 @@ segment_maker.make_pitch_handler(
 segment_maker.append_specifiers(
     ([pf, perc], (11, 17)),
     Dynamic('ff'),
-    baca.tools.ArticulationSpecifier(
-        articulation_list=['staccatissimo'],
-        ),
+    baca.tools.staccatissimi(),
     )
 segment_maker.append_specifiers(
     ([pf, perc], 22),

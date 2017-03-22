@@ -398,9 +398,7 @@ segment_maker.append_specifiers(
     )
 segment_maker.append_specifiers(
     (va, (1, 9)),
-    baca.tools.DynamicSpecifier(
-        hairpin_token='ff > pp',
-        ),
+    baca.hairpins(['ff > pp']),
     )
 segment_maker.append_specifiers(
     (va, (10, 19)),
@@ -422,9 +420,7 @@ segment_maker.append_specifiers(
     )
 segment_maker.append_specifiers(
     (vc, (1, 9)),
-    baca.tools.DynamicSpecifier(
-        hairpin_token='ff > pp',
-        ),
+    baca.hairpins(['ff > pp']),
     )
 segment_maker.append_specifiers(
     (vc, (10, 19)),

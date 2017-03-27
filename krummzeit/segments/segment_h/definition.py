@@ -305,7 +305,7 @@ segment_maker.make_pitch_handler(
         source='B1',
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (cl, (1, 5)),
     Hairpin('ppp < ff'),
     )
@@ -321,7 +321,7 @@ segment_maker.make_pitch_handler(
         source='Bb2 C~3 D3 E+3 F+3 G3',
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     [
         (va, (1, 7)),
         (vc, (1, 9)),
@@ -337,7 +337,7 @@ segment_maker.make_pitch_handler(
         source='B3',
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (ob, (1, 7)),
     abjad.Dynamic('ff'),
     )
@@ -354,22 +354,22 @@ pitch_handler = segment_maker.make_pitch_handler(
         start_index=0,
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (pf, (5, 12)),
     krummzeit_displacement,
     wide_fifth_octave,
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (vn, (5, 12)),
     krummzeit_displacement,
     wide_sixth_octave,
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     ([ob, cl], (5, 12)),
     krummzeit_displacement,
     wide_fifth_octave,
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     [
         (pf, (5, 12)),
         ([ob, cl], (9, 12)),
@@ -378,7 +378,7 @@ segment_maker.append_specifiers(
     leggierissimo,
     staccati,
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (vn, (5, 12)),
     abjad.Dynamic('pp'),
     leggierissimo_off_string,
@@ -398,7 +398,7 @@ segment_maker.make_pitch_handler(
         source='B2 A#+2',
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     ([va, vc], (11, 12)),
     abjad.Glissando(),
     Hairpin('ff > pp'),
@@ -414,7 +414,7 @@ segment_maker.make_pitch_handler(
         source='C4',
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (pf, (14, 20)),
     dynamic_line_spanner_staff_padding(4),
     fifth_harmonic_of_F1,
@@ -436,7 +436,7 @@ segment_maker.make_pitch_handler(
         start_index=240,
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     [
         ([vn, vc], (14, 20)),
         (va, (14, 19)),
@@ -445,21 +445,21 @@ segment_maker.append_specifiers(
     natural_harmonics,
     molto_gridato,
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     ([vn, va, vc], (14, 21)),
     abjad.Glissando(),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (vn, (14, 20)),
     krummzeit_displacement,
     wide_fourth_octave,
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (va, (14, 19)),
     krummzeit_displacement,
     narrow_third_octave,
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (vc, (14, 20)),
     krummzeit_displacement,
     narrow_second_octave,
@@ -472,7 +472,7 @@ segment_maker.make_pitch_handler(
         source='C2',
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (cl, (18, 22)),
     Hairpin('f < ff'),
     color_fingerings,
@@ -483,7 +483,7 @@ segment_maker.make_pitch_handler(
         source='C4',
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (ob, (18, 22)),
     abjad.Dynamic('f'),
     color_fingerings,
@@ -508,7 +508,7 @@ segment_maker.make_pitch_handler(
         source='B1 C2',
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     [
         (va, (20, 21)),
         ([vn, vc], 21),
@@ -519,55 +519,55 @@ segment_maker.append_specifiers(
 
 ### VERTICAL ALIGNMENT ###
 
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (ob, (1, 7)),
     stem_direction(Up),
     dynamic_line_spanner_staff_padding(5),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (ob, (9, 12)),
     beam_positions(-4),
     tuplet_bracket_staff_padding(3),
     dynamic_line_spanner_staff_padding(7),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (ob, (18, 21)),
     dynamic_line_spanner_staff_padding(5),
     stem_direction(Up),
     tuplet_bracket_staff_padding(3),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (ob, (9, 12)),
     beam_positions(-4),
     tuplet_bracket_staff_padding(3),
     dynamic_line_spanner_staff_padding(5),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (cl, (1, 5)),
     stem_direction(Up),
     dynamic_line_spanner_staff_padding(8),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (cl, 9),
     dynamic_line_spanner_staff_padding(3),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (cl, (18, 21)),
     dynamic_line_spanner_staff_padding(10),
     stem_direction(Up),
     tuplet_bracket_staff_padding(6),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (pf, (5, 11)),
     beam_positions(-4),
     tuplet_bracket_staff_padding(3),
     dynamic_line_spanner_staff_padding(7),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (pf, (14, 20)),
     dynamic_line_spanner_staff_padding(3),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (vn, (5, 12)),
     beam_positions(-4),
     tuplet_bracket_staff_padding(3),

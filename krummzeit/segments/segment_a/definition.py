@@ -234,15 +234,17 @@ segment_maker.make_pitch_handler(
         source='E~2',
         ),
     )
-segment_maker.append_specifiers(
-    ([vn, va, vc], 1),
+segment_maker.append_commands(
+    [vn, va, vc],
+    stage(1),
     Dynamic('fff'),
     stem_tremolo,
     )
 
 ### (8.1) pf cluster ###
-segment_maker.append_specifiers(
-    (pf, (3, 5)),
+segment_maker.append_commands(
+    pf,
+    (3, 5),
     Dynamic('fff'),
     catch_resonance,
     tenor_piano_cluster,
@@ -255,8 +257,9 @@ segment_maker.make_pitch_handler(
         source='B1',
         ),
     )
-segment_maker.append_specifiers(
-    (cl, (3, 4)),
+segment_maker.append_commands(
+    cl,
+    (3, 4),
     ppp_subtone,
     stem_direction(Up),
     )
@@ -271,24 +274,28 @@ segment_maker.make_pitch_handler(
         start_index=300,
         ),
     )
-segment_maker.append_specifiers(
-    ([vn, va, vc], (3, 7)),
+segment_maker.append_commands(
+    [vn, va, vc],
+    (3, 7),
     Glissando(),
     molto_flautando,
     natural_harmonics,
     repeated_pp_to_ff,
     )
-segment_maker.append_specifiers(
-    (vn, (3, 7)),
+segment_maker.append_commands(
+    vn,
+    (3, 7),
     narrow_fifth_to_fourth_octave,
     )
-segment_maker.append_specifiers(
-    (va, (3, 7)),
+segment_maker.append_commands(
+    va,
+    (3, 7),
     narrow_fourth_to_third_octave,
     beam_positions(-5),
     )
-segment_maker.append_specifiers(
-    (vc, (3, 7)),
+segment_maker.append_commands(
+    vc,
+    (3, 7),
     narrow_fourth_to_third_octave,
     )
 
@@ -299,60 +306,70 @@ segment_maker.make_pitch_handler(
         source='C#5',
         ),
     )
-segment_maker.append_specifiers(
-    ([pf, perc], 6),
+segment_maker.append_commands(
+    [pf, perc],
+    6,
     fff_possibile,
     stem_tremolo,
     )
-segment_maker.append_specifiers(
-    (pf, 6),
+segment_maker.append_commands(
+    pf,
+    6,
     Clef('treble'),
     tuplet_bracket_staff_padding(4),
     )
-segment_maker.append_specifiers(
-    (perc, 6),
+segment_maker.append_commands(
+    perc,
+    6,
     Clef('treble'),
     tuplet_bracket_staff_padding(5),
     )
 
 ### sponges ###
-segment_maker.append_specifiers(
-    (perc, (9, 10)),
+segment_maker.append_commands(
+    perc,
+    (9, 10),
     accent_changes,
     accents,
     effort_ff,
     )
 
 ### VERTICAL ALIGNMENT ###
-segment_maker.append_specifiers(
-    (pf, (3, 5)),
+segment_maker.append_commands(
+    pf,
+    (3, 5),
     dynamic_line_spanner_staff_padding(5),
     )
-segment_maker.append_specifiers(
-    ([vn, va], 1),
+segment_maker.append_commands(
+    [vn, va],
+    1,
     beam_positions(-5),
     dynamic_line_spanner_staff_padding(7),
     tuplet_bracket_staff_padding(4),
     )
-segment_maker.append_specifiers(
-    (vn, (3, 7)),
+segment_maker.append_commands(
+    vn,
+    (3, 7),
     dynamic_line_spanner_staff_padding(7),
     tuplet_bracket_staff_padding(3),
     )
-segment_maker.append_specifiers(
-    (va, (3, 7)),
+segment_maker.append_commands(
+    va,
+    (3, 7),
     beam_positions(-5),
     dynamic_line_spanner_staff_padding(8),
     tuplet_bracket_staff_padding(5),
     )
-segment_maker.append_specifiers(
-    (vc, 1),
+segment_maker.append_commands(
+    vc,
+    1,
     beam_positions(-7.5),
     dynamic_line_spanner_staff_padding(7.5),
     tuplet_bracket_staff_padding(6.5),
     )
-segment_maker.append_specifiers(
-    (vc, (3, 7)),
+segment_maker.append_commands(
+    vc,
+    (3, 7),
     dynamic_line_spanner_staff_padding(7),
     tuplet_bracket_staff_padding(3),
     )

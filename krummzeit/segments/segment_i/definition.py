@@ -215,7 +215,7 @@ segment_maker.copy_rhythm(
 ###############################################################################
 
 ### (11.1) harpsichord clusters ###
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (pf, (1, 5)),
     abjad.Clef('treble'),
     harpsichord_cluster,
@@ -240,14 +240,14 @@ segment_maker.make_pitch_handler(
         source='C2',
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     ([vn, va, vc], 1),
     fff_possibile,
     stem_tremolo,
     )
 
 ### (11.1) crotales ###
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (perc, (4, 5)),
     accents,
     reiterated_ff,
@@ -263,23 +263,23 @@ segment_maker.make_pitch_handler(
         start_index=240,
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     ([vn, va, vc], (2, 4)),
     abjad.Dynamic('ppp'),
     abjad.Glissando(),
     natural_harmonics,
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (vn, (2, 4)),
     krummzeit_displacement,
     wide_fourth_octave,
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (va, (2, 4)),
     krummzeit_displacement,
     narrow_third_octave,
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (vc, (2, 4)),
     krummzeit_displacement,
     narrow_second_octave,
@@ -292,11 +292,11 @@ segment_maker.make_pitch_handler(
         source='D5',
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     ([ob, cl], (3, 6)),
     abjad.Dynamic('ff'),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (ob, (3, 6)),
     spannertools.TrillSpanner(),
     )
@@ -314,11 +314,11 @@ segment_maker.make_pitch_handler(
         source='Eb2',
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (ob, (7, 8)),
     color_fingerings,
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (cl, (7, 8)),
     abjad.Dynamic('ff'),
     color_fingerings,
@@ -341,7 +341,7 @@ segment_maker.make_pitch_handler(
         source='D3 E~2 E~2 E~2',
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     ([vn, va, vc], (6, 8)),
     abjad.Dynamic('fff'),
     baca.tools.abjad.GlissandoSpecifier(
@@ -358,12 +358,12 @@ segment_maker.make_pitch_handler(
         source='F#6',
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     ([pf, perc], 8),
     abjad.Dynamic('fff'),
     stem_tremolo,
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (perc, 8),
     abjad.Dynamic('fff'),
     stem_tremolo,
@@ -371,49 +371,49 @@ segment_maker.append_specifiers(
 
 ### VERTICAL ALIGNMENT ###
 
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (ob, (3, 6)),
     dynamic_line_spanner_staff_padding(3),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (ob, (7, 8)),
     tuplet_bracket_staff_padding(2),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (cl, (3, 6)),
     dynamic_line_spanner_staff_padding(3),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (cl, (7, 8)),
     stem_direction(Up),
     dynamic_line_spanner_staff_padding(9),
     tuplet_bracket_staff_padding(5),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (pf, (7, 8)),
     dynamic_line_spanner_staff_padding(6),
     tuplet_bracket_staff_padding(2),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (perc, (4, 5)),
     dynamic_line_spanner_staff_padding(6),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (perc, (7, 8)),
     dynamic_line_spanner_staff_padding(7),
     tuplet_bracket_staff_padding(3),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (vn, (6, 8)),
     dynamic_line_spanner_staff_padding(7),
     tuplet_bracket_staff_padding(3),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (va, (6, 8)),
     dynamic_line_spanner_staff_padding(9),
     tuplet_bracket_staff_padding(5),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (vc, (6, 8)),
     dynamic_line_spanner_staff_padding(9),
     tuplet_bracket_staff_padding(5),

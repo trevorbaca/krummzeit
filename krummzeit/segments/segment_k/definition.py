@@ -176,11 +176,11 @@ segment_maker.make_pitch_handler(
         source='C#6',
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (pf, (1, 12)),
     stem_tremolo,
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (pf, (7, 12)),
     ffff_possibile,
     )
@@ -192,7 +192,7 @@ segment_maker.make_pitch_handler(
         source='C#6',
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (perc, (1, 12)),
     abjad.Dynamic('fff'),
     dynamic_line_spanner_staff_padding(4),
@@ -208,7 +208,7 @@ segment_maker.make_pitch_handler(
         source=indigo_snippet,
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     ([vn, va], (1, 10)),
     abjad.Dynamic('ff'),
     dynamic_line_spanner_staff_padding(5),
@@ -232,7 +232,7 @@ segment_maker.make_pitch_handler(
         source='D2',
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (vc, (1, 6)),
     abjad.Dynamic('fff'),
     dynamic_line_spanner_staff_padding(3),
@@ -243,7 +243,7 @@ segment_maker.append_specifiers(
         ),
     #markup_padding(4),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (vc, (7, 12)),
     abjad.Dynamic('ff'),
     ordinario,
@@ -256,7 +256,7 @@ segment_maker.make_pitch_handler(
         source='C#4',
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (ob, (1, 12)),
     abjad.Dynamic('fff'),
     dynamic_line_spanner_staff_padding(5),
@@ -269,7 +269,7 @@ segment_maker.make_pitch_handler(
         source='D2',
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (cl, (1, 12)),
     abjad.Dynamic('f'),
     dynamic_line_spanner_staff_padding(7),

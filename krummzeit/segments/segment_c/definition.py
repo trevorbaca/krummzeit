@@ -345,7 +345,7 @@ segment_maker.make_pitch_handler(
             ],
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (ob, (1, 27)),
     Dynamic('ff'),
     color_fingerings,
@@ -353,7 +353,7 @@ segment_maker.append_specifiers(
     trill_quarter_notes,
     wide_fifth_octave,
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (ob, 20),
     Dynamic('ff'),
     )
@@ -363,7 +363,7 @@ segment_maker.make_pitch_handler(
         source="e'' dtqs'' f'' eqs'' dqs'' c'' dqs''",
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (cl, 1),
     Dynamic('f'),
     Glissando(),
@@ -380,7 +380,7 @@ segment_maker.make_pitch_handler(
         source="g'' dtqs'' a'' gqs'' fqs'' e'' fqs''",
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (cl, (20, 27)),
     Dynamic('f'),
     Glissando(),
@@ -391,16 +391,16 @@ segment_maker.make_pitch_handler(
         source="e dtqs f eqs dqs c dqs",
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (va, (1, 19)),
     Glissando(),
     molto_flautando,
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (va, (1, 9)),
     baca.hairpins(['ff > pp']),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (va, (10, 19)),
     baca.tools.DynamicSpecifier(
         hairpin_token='ff > pp',
@@ -413,16 +413,16 @@ segment_maker.make_pitch_handler(
         source="d, ctqs, e, dqs, cqs, b,, dqs,",
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (vc, (1, 19)),
     Glissando(),
     molto_flautando,
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (vc, (1, 9)),
     baca.hairpins(['ff > pp']),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (vc, (10, 19)),
     baca.tools.DynamicSpecifier(
         hairpin_token='ff > pp',
@@ -439,7 +439,7 @@ segment_maker.make_pitch_handler(
         start_index=120,
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (vn, (19, 22)),
     Dynamic('ff'),
     color_microtones,
@@ -447,7 +447,7 @@ segment_maker.append_specifiers(
     trill_quarter_notes,
     wide_fifth_octave,
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (perc, (18, 20)),
     Dynamic('ff'),
     )
@@ -462,18 +462,18 @@ segment_maker.make_pitch_handler(
         source=[NamedPitch('C#6')],
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     ([pf, perc], (11, 17)),
     Dynamic('ff'),
     baca.tools.staccatissimi(),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     ([pf, perc], 22),
     Dynamic('ff'),
     )
 
 ### (10) vn, va, vc, snare ###
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (perc, (27, 30)),
     Dynamic('ppp'),
     fingertips,
@@ -497,7 +497,7 @@ segment_maker.make_pitch_handler(
         source="b,, cqs, bqf,, c,",
         ),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     ([vn, va, vc], (26, 29)),
     Glissando(),
     Hairpin('pp < fff'),
@@ -506,53 +506,53 @@ segment_maker.append_specifiers(
     )
 
 ### VERTICAL ALIGNMENT ###
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (ob, (1, 30)),
     beam_positions(-4),
     dynamic_line_spanner_staff_padding(8),
     tuplet_bracket_staff_padding(4),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (cl, (1, 30)),
     dynamic_line_spanner_staff_padding(3),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (pf, (11, 27)),
     beam_positions(-4),
     dynamic_line_spanner_staff_padding(6),
     tuplet_bracket_staff_padding(3),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (perc, [(11, 17), (22, 26)]),
     beam_positions(-4),
     dynamic_line_spanner_staff_padding(6),
     tuplet_bracket_staff_padding(3),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (perc, 18),
     dynamic_line_spanner_staff_padding(3),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (perc, (27, 30)),
     dynamic_line_spanner_staff_padding(5),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (vn, (19, 22)),
     beam_positions(-5),
     dynamic_line_spanner_staff_padding(7),
     tuplet_bracket_staff_padding(4),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (vn, (28, 29)),
     dynamic_line_spanner_staff_padding(6),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (va, (3, 19)),
     beam_positions(-5),
     dynamic_line_spanner_staff_padding(7),
     tuplet_bracket_staff_padding(4),
     )
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     ([va, vc], (26, 29)),
     dynamic_line_spanner_staff_padding(5),
     )

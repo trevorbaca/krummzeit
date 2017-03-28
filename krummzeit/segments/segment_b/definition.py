@@ -645,11 +645,13 @@ segment_maker.append_commands(
     on_bridge,
     )
 segment_maker.append_commands(
-    (va, 15),
+    va,
+    15,
     Clef('alto'),
     )
 segment_maker.append_commands(
-    (vc, (12, 17)),
+    vc,
+    (12, 17),
     Clef('treble'),
     Dynamic('f'),
     Glissando(),
@@ -658,11 +660,13 @@ segment_maker.append_commands(
     on_bridge,
     )
 segment_maker.append_commands(
-    (vc, 16),
+    vc,
+    16,
     Clef('bass'),
     )
 segment_maker.append_commands(
-    (vn, (14, 18)),
+    vn,
+    (14, 18),
     Dynamic('f'),
     Glissando(),
     alternate_bow_strokes,
@@ -672,14 +676,16 @@ segment_maker.append_commands(
 
 ### (3) [B16-20] (pf clusters, tam-tam) ###
 segment_maker.append_commands(
-    (pf, (16, 19)),
+    pf,
+    (16, 19),
     low_piano_cluster,
     marcati,
     reiterated_fff,
     ottava_bassa,
     )
 segment_maker.append_commands(
-    (perc, (16, 20)),
+    perc,
+    (16, 20),
     reiterated_p,
     tenuti,
     )
@@ -699,7 +705,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (va, (17, 22)),
+    va,
+    (17, 22),
     Clef('treble'),
     Dynamic('fff'),
     narrow_fifth_to_sixth_octave,
@@ -707,7 +714,8 @@ segment_maker.append_commands(
     staccatissimi,
     )
 segment_maker.append_commands(
-    (vc, (18, 22)),
+    vc,
+    (18, 22),
     Clef('treble'),
     Dynamic('fff'),
     narrow_fifth_to_sixth_octave,
@@ -715,14 +723,16 @@ segment_maker.append_commands(
     staccatissimi,
     )
 segment_maker.append_commands(
-    (vn, (19, 22)),
+    vn,
+    (19, 22),
     Dynamic('fff'),
     narrow_fifth_to_sixth_octave,
     pizz,
     staccatissimi,
     )
 segment_maker.append_commands(
-    (pf, (20, 23)),
+    pf,
+    (20, 23),
     Dynamic('fff'),
     narrow_fifth_to_sixth_octave,
     staccatissimi,
@@ -736,106 +746,126 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (cl, (22, 23)),
+    cl,
+    (22, 23),
     Dynamic('f'),
     Glissando(),
     )
 segment_maker.append_commands(
-    (vn, 23),
+    vn,
+    23,
     Dynamic('mf'),
     scrape_moderately,
     )
 
 ### VERTICAL ALIGNMENT ###
 segment_maker.append_commands(
-    (ob, (1, 23)),
+    ob,
+    (1, 23),
     beam_positions(-5),
     dynamic_line_spanner_staff_padding(7),
     tuplet_bracket_staff_padding(4),
     )
 segment_maker.append_commands(
-    (cl, [(1, 8), (10, 12)]),
+    cl,
+    [(1, 8), (10, 12)],
     beam_positions(-4),
     tuplet_bracket_staff_padding(3),
     )
 segment_maker.append_commands(
-    (cl, [(3, 4), (7, 8), (22, 23)]),
+    cl,
+    [(3, 4), (7, 8), (22, 23)],
     dynamic_line_spanner_staff_padding(3),
     )
 segment_maker.append_commands(
-    (pf, (1, 8)),
+    pf,
+    (1, 8),
     beam_positions(-4),
     dynamic_line_spanner_staff_padding(6),
     tuplet_bracket_staff_padding(3),
     )
 segment_maker.append_commands(
-    (pf, (9, 10)),
+    pf,
+    (9, 10),
     beam_positions(-5),
     dynamic_line_spanner_staff_padding(7),
     tuplet_bracket_staff_padding(4),
     )
 segment_maker.append_commands(
-    (pf, (20, 23)),
+    pf,
+    (20, 23),
     beam_positions(-5),
     dynamic_line_spanner_staff_padding(7),
     tuplet_bracket_staff_padding(4),
     )
 segment_maker.append_commands(
-    (perc, (16, 20)),
+    perc,
+    (16, 20),
     dynamic_line_spanner_staff_padding(5),
     )
 segment_maker.append_commands(
-    (vn, (1, 8)),
+    vn,
+    (1, 8),
     dynamic_line_spanner_staff_padding(3),
     )
 segment_maker.append_commands(
-    (vn, (1, 8)),
+    vn,
+    (1, 8),
     beam_positions(-5),
     tuplet_bracket_staff_padding(4),
     )
 segment_maker.append_commands(
-    (vn, (9, 13)),
+    vn,
+    (9, 13),
     beam_positions(-5),
     dynamic_line_spanner_staff_padding(7),
     tuplet_bracket_staff_padding(4),
     )
 segment_maker.append_commands(
-    (vn, (14, 18)),
+    vn,
+    (14, 18),
     dynamic_line_spanner_staff_padding(3),
     )
 segment_maker.append_commands(
-    (vn, (19, 22)),
+    vn,
+    (19, 22),
     beam_positions(-4),
     dynamic_line_spanner_staff_padding(6),
     tuplet_bracket_staff_padding(3),
     )
 segment_maker.append_commands(
-    (vn, 23),
+    vn,
+    23,
     dynamic_line_spanner_staff_padding(3),
     )
 segment_maker.append_commands(
-    ([va, vc], (1, 9)),
+    [va, vc],
+    (1, 9),
     dynamic_line_spanner_staff_padding(8),
     tuplet_bracket_staff_padding(5),
     )
 segment_maker.append_commands(
-    (va, (12, 16)),
+    va,
+    (12, 16),
     dynamic_line_spanner_staff_padding(7),
     tuplet_bracket_staff_padding(4),
     )
 segment_maker.append_commands(
-    (va, (17, 22)),
+    va,
+    (17, 22),
     beam_positions(-4),
     dynamic_line_spanner_staff_padding(6),
     tuplet_bracket_staff_padding(3),
     )
 segment_maker.append_commands(
-    (vc, (12, 17)),
+    vc,
+    (12, 17),
     dynamic_line_spanner_staff_padding(8),
     tuplet_bracket_staff_padding(5),
     )
 segment_maker.append_commands(
-    (vc, (18, 22)),
+    vc,
+    (18, 22),
     beam_positions(-4),
     dynamic_line_spanner_staff_padding(6),
     tuplet_bracket_staff_padding(3),

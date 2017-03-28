@@ -177,11 +177,13 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (pf, (1, 12)),
+    pf,
+    (1, 12),
     stem_tremolo,
     )
 segment_maker.append_commands(
-    (pf, (7, 12)),
+    pf,
+    (7, 12),
     ffff_possibile,
     )
 
@@ -193,7 +195,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (perc, (1, 12)),
+    perc,
+    (1, 12),
     abjad.Dynamic('fff'),
     dynamic_line_spanner_staff_padding(4),
     stem_tremolo,
@@ -209,7 +212,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    ([vn, va], (1, 10)),
+    [vn, va],
+    (1, 10),
     abjad.Dynamic('ff'),
     dynamic_line_spanner_staff_padding(5),
     krummzeit_displacement,
@@ -233,7 +237,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (vc, (1, 6)),
+    vc,
+    (1, 6),
     abjad.Dynamic('fff'),
     dynamic_line_spanner_staff_padding(3),
     gridato_possibile,
@@ -244,7 +249,8 @@ segment_maker.append_commands(
     #markup_padding(4),
     )
 segment_maker.append_commands(
-    (vc, (7, 12)),
+    vc,
+    (7, 12),
     abjad.Dynamic('ff'),
     ordinario,
     )
@@ -257,7 +263,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (ob, (1, 12)),
+    ob,
+    (1, 12),
     abjad.Dynamic('fff'),
     dynamic_line_spanner_staff_padding(5),
     )
@@ -270,7 +277,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (cl, (1, 12)),
+    cl,
+    (1, 12),
     abjad.Dynamic('f'),
     dynamic_line_spanner_staff_padding(7),
     stem_direction(Up),

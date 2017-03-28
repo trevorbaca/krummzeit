@@ -395,7 +395,8 @@ segment_maker.copy_rhythm(
 
 ### (3.4) tam-tam, (3.5) vn, va, vc ###
 segment_maker.append_commands(
-    (perc, (1, 2)),
+    perc,
+    (1, 2),
     reiterated_pp,
     )
 segment_maker.make_pitch_handler(
@@ -412,21 +413,24 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (vn, (1, 5)),
+    vn,
+    (1, 5),
     Glissando(),
     effort_mp,
     narrow_fourth_octave,
     on_bridge_slow,
     )
 segment_maker.append_commands(
-    (va, (1, 3)),
+    va,
+    (1, 3),
     Glissando(),
     effort_mp,
     narrow_third_octave,
     on_bridge_slow,
     )
 segment_maker.append_commands(
-    (vc, (1, 5)),
+    vc,
+    (1, 5),
     Glissando(),
     effort_mp,
     narrow_second_octave,
@@ -435,7 +439,8 @@ segment_maker.append_commands(
 
 ### (5.4) sponges, (5.3) va, vn, vc thicket ###
 segment_maker.append_commands(
-    (perc, (3, 6)),
+    perc,
+    (3, 6),
     accent_changes,
     accents,
     effort_ff,
@@ -471,22 +476,26 @@ segment_maker.append_commands(
     Clef('treble'),
     )
 segment_maker.append_commands(
-    (va, 4),
+    va,
+    4,
     Hairpin('pp < f'),
     molto_flautando_e_pont,
     )
 segment_maker.append_commands(
-    (va, (5, 6)),
+    va,
+    (5, 6),
     Hairpin('pp < f'),
     molto_flaut_to_molto_grid,
     )
 segment_maker.append_commands(
-    ([vn, vc], 6),
+    [vn, vc],
+    6,
     Hairpin('pp < f'),
     molto_flaut_to_molto_grid,
     )
 segment_maker.append_commands(
-    ([vn, va, vc], [7, 9]),
+    [vn, va, vc],
+    [7, 9],
     Dynamic('ff'),
     molto_gridato,
     )
@@ -497,7 +506,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (pf, [(4, 7), 9]),
+    pf,
+    [(4, 7), 9],
     Clef('bass'),
     reiterated_mp,
     fifth_harmonic_of_F1,
@@ -517,7 +527,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    ([ob, cl], (5, 7)),
+    [ob, cl],
+    (5, 7),
     Dynamic('p'),
     color_fingerings,
     )
@@ -528,12 +539,14 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    ([pf, perc], [8, 10, 11]),
+    [pf, perc],
+    [8, 10, 11],
     Dynamic('ff'),
     staccatissimi,
     )
 segment_maker.append_commands(
-    (pf, [8, 10]),
+    pf,
+    [8, 10],
     Clef('treble'),
     )
 segment_maker.make_pitch_handler(
@@ -543,18 +556,21 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    ([ob, cl], [10, 11, 12]),
+    [ob, cl],
+    [10, 11, 12],
     Dynamic('mf'),
     color_fingerings,
     )
 
 ### (1.1) pf, vn, va, vc ###
 segment_maker.append_commands(
-    (pf, 13),
+    pf,
+    13,
     tenor_piano_cluster,
     )
 segment_maker.append_commands(
-    (pf, 13),
+    pf,
+    13,
     Dynamic('mp'),
     senza_pedale,
     )
@@ -577,17 +593,20 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    ([vn, va, vc], (11, 13)),
+    [vn, va, vc],
+    (11, 13),
     Dynamic('mp'),
     ordinario,
     stem_tremolo,
     )
 segment_maker.append_commands(
-    (va, [11, 13]),
+    va,
+    [11, 13],
     Clef('alto'),
     )
 segment_maker.append_commands(
-    (vc, [11, 13]),
+    vc,
+    [11, 13],
     Clef('bass'),
     )
 
@@ -604,7 +623,8 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
         ),
     ) 
 segment_maker.append_commands(
-    (perc, (12, 13)),
+    perc,
+    (12, 13),
     Dynamic('ppp'),
     attackless_roll,
     stem_tremolo,
@@ -612,43 +632,51 @@ segment_maker.append_commands(
 
 ### VERTICAL ALIGNMENT ###
 segment_maker.append_commands(
-    (ob, (1, 13)),
+    ob,
+    (1, 13),
     beam_positions(-4),
     dynamic_line_spanner_staff_padding(6),
     tuplet_bracket_staff_padding(3),
     )
 segment_maker.append_commands(
-    (cl, (1, 13)),
+    cl,
+    (1, 13),
     beam_positions(-4),
     dynamic_line_spanner_staff_padding(6),
     tuplet_bracket_staff_padding(3),
     )
 segment_maker.append_commands(
-    (pf, [(1, 7), 9]),
+    pf,
+    [(1, 7), 9],
     dynamic_line_spanner_staff_padding(3),
     )
 segment_maker.append_commands(
-    (pf, [8, (10, 11)]),
+    pf,
+    [8, (10, 11)],
     beam_positions(-4),
     dynamic_line_spanner_staff_padding(6),
     tuplet_bracket_staff_padding(3),
     )
 segment_maker.append_commands(
-    (pf, 13),
+    pf,
+    13,
     dynamic_line_spanner_staff_padding(6),
     )
 segment_maker.append_commands(
-    (perc, 1),
+    perc,
+    1,
     dynamic_line_spanner_staff_padding(6),
     )
 segment_maker.append_commands(
-    (perc, [8, (10, 11)]),
+    perc,
+    [8, (10, 11)],
     beam_positions(-4),
     dynamic_line_spanner_staff_padding(6),
     tuplet_bracket_staff_padding(3),
     )
 segment_maker.append_commands(
-    (perc, (12, 13)),
+    perc,
+    (12, 13),
     dynamic_line_spanner_staff_padding(6),
     tie_direction(Up),
     )
@@ -662,11 +690,13 @@ segment_maker.append_commands(
     tuplet_bracket_staff_padding(3),
     )
 segment_maker.append_commands(
-    ([vn, va], (11, 13)),
+    [vn, va],
+    (11, 13),
     dynamic_line_spanner_staff_padding(8),
     )
 segment_maker.append_commands(
-    (vc, (11, 13)),
+    vc,
+    (11, 13),
     dynamic_line_spanner_staff_padding(6),
     )
 

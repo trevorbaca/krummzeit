@@ -375,7 +375,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (cl, (1, 2)),
+    cl,
+    (1, 2),
     abjad.Dynamic('ppp'),
     )
 segment_maker.make_pitch_handler(
@@ -398,7 +399,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (ob, (1, 2)),
+    ob,
+    (1, 2),
     abjad.Dynamic('p'),
     # displacement before color fingerings
     krummzeit_displacement,
@@ -409,11 +411,13 @@ segment_maker.append_commands(
 
 ### (1.1) pf, vn, va, vc ###
 segment_maker.append_commands(
-    (pf, 2),
+    pf,
+    2,
     tenor_piano_cluster,
     )
 segment_maker.append_commands(
-    (pf, 2),
+    pf,
+    2,
     abjad.Dynamic('ff'),
     )
 segment_maker.make_pitch_handler(
@@ -435,14 +439,16 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    ([vn, va, vc], 2),
+    [vn, va, vc],
+    2,
     abjad.Dynamic('ff'),
     stem_tremolo,
     )
 
 ### suspended cymbal ###
 segment_maker.append_commands(
-    (perc, [(1, 6), (17, 22)]),
+    perc,
+    [(1, 6), (17, 22)],
     # TODO: make clear semantically continuation from previous segment
     #abjad.Dynamic('ppp'),
     stem_tremolo,
@@ -464,7 +470,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    ([ob, cl], (4, 11)),
+    [ob, cl],
+    (4, 11),
     abjad.Dynamic('ff'),
     abjad.Glissando(),
     color_fingerings,
@@ -481,22 +488,26 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    ([vn, va, vc], (4, 10)),
+    [vn, va, vc],
+    (4, 10),
     abjad.Glissando(),
     molto_flautando,
     natural_harmonics,
     repeated_p_to_ppp,
     )
 segment_maker.append_commands(
-    (vn, (4, 10)),
+    vn,
+    (4, 10),
     narrow_fifth_to_fourth_octave,
     )
 segment_maker.append_commands(
-    (va, (4, 10)),
+    va,
+    (4, 10),
     narrow_fourth_to_third_octave,
     )
 segment_maker.append_commands(
-    (vc, (4, 10)),
+    vc,
+    (4, 10),
     narrow_fourth_to_second_octave,
     )
 
@@ -508,7 +519,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    ([pf, perc], (8, 15)),
+    [pf, perc],
+    (8, 15),
     abjad.Dynamic('p'),
     staccatissimi,
     )
@@ -539,17 +551,20 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    ([va, vc, cl], (13, 23)),
+    [va, vc, cl],
+    (13, 23),
     abjad.Dynamic('ppp'),
     )
 segment_maker.append_commands(
-    (pf, (16, 18)),
+    pf,
+    (16, 18),
     abjad.Clef('bass'),
     abjad.Dynamic('ppp'),
     ottava_bassa,
     )
 segment_maker.append_commands(
-    (perc, (17, 22)),
+    perc,
+    (17, 22),
     abjad.Dynamic('pp'),
     )
 segment_maker.make_pitch_handler(
@@ -559,7 +574,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (vn, (18, 22)),
+    vn,
+    (18, 22),
     abjad.Dynamic('ppp'),
     pervasive_A5_trills,
     )
@@ -570,7 +586,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (ob, (18, 22)),
+    ob,
+    (18, 22),
     abjad.Dynamic('ppp'),
     pervasive_trills,
     )
@@ -588,7 +605,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (pf, (19, 22)),
+    pf,
+    (19, 22),
     abjad.Clef('treble'), abjad.Dynamic('fff'),
     krummzeit_displacement,
     narrow_seventh_octave,
@@ -598,86 +616,103 @@ segment_maker.append_commands(
 
 ### VERTICAL ALIGNMENT ###
 segment_maker.append_commands(
-    (ob, (1, 11)),
+    ob,
+    (1, 11),
     beam_positions(-5),
     dynamic_line_spanner_staff_padding(6),
     tuplet_bracket_staff_padding(4),
     )
 segment_maker.append_commands(
-    (ob, (18, 22)),
+    ob,
+    (18, 22),
     dynamic_line_spanner_staff_padding(4),
     tuplet_bracket_staff_padding(2),
     )
 segment_maker.append_commands(
-    (cl, (1, 2)),
+    cl,
+    (1, 2),
     stem_direction(Up),
     dynamic_line_spanner_staff_padding(6),
     )
 segment_maker.append_commands(
-    (cl, (5, 11)),
+    cl,
+    (5, 11),
     beam_positions(-4),
     dynamic_line_spanner_staff_padding(5),
     tuplet_bracket_staff_padding(3),
     )
 segment_maker.append_commands(
-    (cl, (13, 23)),
+    cl,
+    (13, 23),
     stem_direction(Up),
     dynamic_line_spanner_staff_padding(7),
     )
 segment_maker.append_commands(
-    (pf, 2),
+    pf,
+    2,
     dynamic_line_spanner_staff_padding(4),
     )
 segment_maker.append_commands(
-    (pf, (8, 15)),
+    pf,
+    (8, 15),
     beam_positions(-4),
     dynamic_line_spanner_staff_padding(5),
     tuplet_bracket_staff_padding(3),
     )
 segment_maker.append_commands(
-    (pf, (19, 23)),
+    pf,
+    (19, 23),
     beam_positions(-4),
     dynamic_line_spanner_staff_padding(5),
     tuplet_bracket_staff_padding(3),
     )
 segment_maker.append_commands(
-    (vn, (1, 3)),
+    vn,
+    (1, 3),
     dynamic_line_spanner_staff_padding(8.5),
     )
 segment_maker.append_commands(
-    (vn, (4, 8)),
+    vn,
+    (4, 8),
     dynamic_line_spanner_staff_padding(8),
     tuplet_bracket_staff_padding(4),
     )
 segment_maker.append_commands(
-    (vn, (18, 22)),
+    vn,
+    (18, 22),
     dynamic_line_spanner_staff_padding(4),
     tuplet_bracket_staff_padding(2),
     )
 segment_maker.append_commands(
-    (va, (1, 3)),
+    va,
+    (1, 3),
     dynamic_line_spanner_staff_padding(8.5),
     )
 segment_maker.append_commands(
-    (va, (4, 8)),
+    va,
+    (4, 8),
     dynamic_line_spanner_staff_padding(8),
     tuplet_bracket_staff_padding(4),
     )
 segment_maker.append_commands(
-    (va, 13),
+    va,
+    13,
     dynamic_line_spanner_staff_padding(6),
     )
 segment_maker.append_commands(
-    (vc, 2),
+    vc,
+    2,
     dynamic_line_spanner_staff_padding(6),
     )
 segment_maker.append_commands(
-    (vc, (4, 9)),
+    vc,
+    (4, 9),
     dynamic_line_spanner_staff_padding(8),
     tuplet_bracket_staff_padding(4),
     )
 segment_maker.append_commands(
-    (vc, 13),
+    vc,
+    13,
     dynamic_line_spanner_staff_padding(6),
     )
 

@@ -212,13 +212,15 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    ([va, vc], (2, 4)),
+    [va, vc],
+    (2, 4),
     Hairpin('ppp < fff'),
     )
 
 ### (10.2) snare ###
 segment_maker.append_commands(
-    (perc, (2, 11)),
+    perc,
+    (2, 11),
     Dynamic('ppp'),
     fingertips_only,
     stem_tremolo,
@@ -244,26 +246,31 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    ([vn, va, vc], (5, 13)),
+    [vn, va, vc],
+    (5, 13),
     Dynamic('fff'),
     gridato_possibile,
     )
 segment_maker.append_commands(
-    (vn, (8, 10)),
+    vn,
+    (8, 10),
     grid_poss_to_flaut_poss,
     )
 segment_maker.append_commands(
-    ([va, vc], (9, 10)),
+    [va, vc],
+    (9, 10),
     grid_poss_to_flaut_poss,
     )
 
 ### tam-tam ###
 segment_maker.append_commands(
-    (perc, 13),
+    perc,
+    13,
     attackless,
     )
 segment_maker.append_commands(
-    (perc, (13, 14)),
+    perc,
+    (13, 14),
     reiterated_p,
     )
 
@@ -275,7 +282,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (cl, (11, 13)),
+    cl,
+    (11, 13),
     ppp_subtone,
     )
 
@@ -299,33 +307,40 @@ segment_maker.append_commands(
     krummzeit_displacement,
     )
 segment_maker.append_commands(
-    (pf, (3, 6)),
+    pf,
+    (3, 6),
     narrow_fifth_to_third_octave,
     )
 segment_maker.append_commands(
-    (pf, 5),
+    pf,
+    5,
     Clef('bass'),
     )
 segment_maker.append_commands(
-    (pf, 9),
+    pf,
+    9,
     narrow_third_octave,
     )
 segment_maker.append_commands(
-    (pf, 11),
+    pf,
+    11,
     narrow_second_octave,
     )
 segment_maker.append_commands(
-    (cl, (3, 7)),
+    cl,
+    (3, 7),
     Hairpin('p < ff'),
     narrow_fourth_to_sixth_octave,
     )
 segment_maker.append_commands(
-    (ob, (3, 7)),
+    ob,
+    (3, 7),
     Hairpin('p < ff'),
     narrow_sixth_to_fourth_octave,
     )
 segment_maker.append_commands(
-    ([ob, cl], (3, 7)),
+    [ob, cl],
+    (3, 7),
     baca.tools.AttachCommand(
         articulation_list=['.'],
         maximum_duration=Duration(1, 8),
@@ -335,33 +350,39 @@ segment_maker.append_commands(
 ### VERTICAL ALIGNMENT ###
 
 segment_maker.append_commands(
-    (ob, (1, 14)),
+    ob,
+    (1, 14),
     beam_positions(-5),
     tuplet_bracket_staff_padding(4),
     dynamic_line_spanner_staff_padding(8),
     )
 segment_maker.append_commands(
-    (cl, (1, 7)),
+    cl,
+    (1, 7),
     beam_positions(-5),
     tuplet_bracket_staff_padding(4),
     dynamic_line_spanner_staff_padding(8),
     )
 segment_maker.append_commands(
-    (cl, (8, 14)),
+    cl,
+    (8, 14),
     dynamic_line_spanner_staff_padding(8),
     stem_direction(Up),
     )
 segment_maker.append_commands(
-    (pf, (1, 7)),
+    pf,
+    (1, 7),
     beam_positions(-5),
     tuplet_bracket_staff_padding(4),
     )
 segment_maker.append_commands(
-    (perc, (1, 14)),
+    perc,
+    (1, 14),
     dynamic_line_spanner_staff_padding(6),
     )
 segment_maker.append_commands(
-    ([va, vc], (2, 4)),
+    [va, vc],
+    (2, 4),
     dynamic_line_spanner_staff_padding(6),
     )
 

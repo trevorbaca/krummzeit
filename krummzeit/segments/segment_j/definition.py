@@ -275,12 +275,14 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (ob, 1),
+    ob,
+    1,
     abjad.Dynamic('ff'),
     color_fingerings,
     )
 segment_maker.append_commands(
-    (cl, 1),
+    cl,
+    1,
     abjad.Dynamic('ff'),
     color_fingerings,
     )
@@ -291,12 +293,14 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    ([pf, perc], 1),
+    [pf, perc],
+    1,
     abjad.Dynamic('fff'),
     stem_tremolo,
     )
 segment_maker.append_commands(
-    (perc, 1),
+    perc,
+    1,
     abjad.Dynamic('fff'),
     stem_tremolo,
     )
@@ -319,14 +323,16 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    ([vn, va, vc], (1, 3)),
+    [vn, va, vc],
+    (1, 3),
     abjad.Dynamic('fff'),
     stem_tremolo,
     )
 
 ### tam-tam ###
 segment_maker.append_commands(
-    (perc, (3, 15)),
+    perc,
+    (3, 15),
     reiterated_f,
     )
 
@@ -340,7 +346,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    ([vn, va, vc], (5, 9)),
+    [vn, va, vc],
+    (5, 9),
     abjad.Clef('treble'),
     abjad.Glissando(),
     alternate_bow_strokes,
@@ -348,17 +355,20 @@ segment_maker.append_commands(
     on_bridge,
     )
 segment_maker.append_commands(
-    (vn, (5, 9)),
+    vn,
+    (5, 9),
     narrow_fifth_to_fourth_octave,
     )
 segment_maker.append_commands(
-    ([va, vc], (5, 9)),
+    [va, vc],
+    (5, 9),
     narrow_fifth_to_third_octave,
     )
 
 ### harpsichord clusters ###
 segment_maker.append_commands(
-    (pf, (3, 4)),
+    pf,
+    (3, 4),
     harpsichord_cluster,
     )
 
@@ -370,23 +380,28 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (cl, (3, 4)),
+    cl,
+    (3, 4),
     abjad.Dynamic('ff'),
     )
 segment_maker.append_commands(
-    (cl, (5, 6)),
+    cl,
+    (5, 6),
     Hairpin('ff < fff'),
     )
 segment_maker.append_commands(
-    (cl, 9),
+    cl,
+    9,
     ffff_possibile,
     )
 segment_maker.append_commands(
-    (cl, 11),
+    cl,
+    11,
     Hairpin('ffff > pppp'),
     )
 segment_maker.append_commands(
-    (pf, (8, 15)),
+    pf,
+    (8, 15),
     low_piano_cluster,
     abjad.Clef('bass'),
     ffff_possibile,
@@ -404,7 +419,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    ([vn, va, vc], 15),
+    [vn, va, vc],
+    15,
     abjad.Dynamic('fff'),
     krummzeit_displacement,
     narrow_sixth_octave,
@@ -415,49 +431,58 @@ segment_maker.append_commands(
 ### VERTICAL ALIGNMENT ###
 
 segment_maker.append_commands(
-    (ob, (1, 14)),
+    ob,
+    (1, 14),
     dynamic_line_spanner_staff_padding(6),
     tuplet_bracket_staff_padding(2),
     )
 segment_maker.append_commands(
-    (cl, 1),
+    cl,
+    1,
     dynamic_line_spanner_staff_padding(9),
     stem_direction(Up),
     tuplet_bracket_staff_padding(5),
     )
 segment_maker.append_commands(
-    (cl, (3, 14)),
+    cl,
+    (3, 14),
     dynamic_line_spanner_staff_padding(7),
     stem_direction(Up),
     )
 segment_maker.append_commands(
-    (pf, 1),
+    pf,
+    1,
     dynamic_line_spanner_staff_padding(6),
     tuplet_bracket_staff_padding(2),
     )
 segment_maker.append_commands(
-    (perc, 1),
+    perc,
+    1,
     dynamic_line_spanner_staff_padding(6),
     tuplet_bracket_staff_padding(2),
     )
 segment_maker.append_commands(
-    (perc, (3, 15)),
+    perc,
+    (3, 15),
     dynamic_line_spanner_staff_padding(6),
     )
 segment_maker.append_commands(
-    (vn, (1, 3)),
+    vn,
+    (1, 3),
     beam_positions(-5),
     dynamic_line_spanner_staff_padding(8),
     tuplet_bracket_staff_padding(4),
     )
 segment_maker.append_commands(
-    (va, (1, 3)),
+    va,
+    (1, 3),
     beam_positions(-5),
     dynamic_line_spanner_staff_padding(8),
     tuplet_bracket_staff_padding(4),
     )
 segment_maker.append_commands(
-    ([vn, va, vc], 15),
+    [vn, va, vc],
+    15,
     dynamic_line_spanner_staff_padding(6),
     tuplet_bracket_staff_padding(2),
     )

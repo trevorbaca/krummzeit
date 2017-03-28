@@ -221,7 +221,8 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 
 ### (6) snare ###
 segment_maker.append_commands(
-    (perc, (1, 9)),
+    perc,
+    (1, 9),
     ppp_ancora,
     stem_tremolo,
     )
@@ -240,7 +241,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (pf, 1),
+    pf,
+    1,
     Hairpin('ff > pp'),
     krummzeit_displacement,
     narrow_seventh_to_fifth_octave,
@@ -248,14 +250,16 @@ segment_maker.append_commands(
     staccatissimi,
     )
 segment_maker.append_commands(
-    (pf, 3),
+    pf,
+    3,
     Hairpin('pp < ff'),
     krummzeit_displacement,
     narrow_fifth_to_third_octave,
     staccatissimi,
     )
 segment_maker.append_commands(
-    (pf, 5),
+    pf,
+    5,
     Clef('bass'),
     Hairpin('ff > pp'),
     krummzeit_displacement,
@@ -263,7 +267,8 @@ segment_maker.append_commands(
     staccatissimi,
     )
 segment_maker.append_commands(
-    (vn, 5),
+    vn,
+    5,
     Hairpin('ff > pp'),
     krummzeit_displacement,
     narrow_seventh_to_fifth_octave,
@@ -272,7 +277,8 @@ segment_maker.append_commands(
     staccatissimi,
     )
 segment_maker.append_commands(
-    (va, 5),
+    va,
+    5,
     Clef('treble'),
     Hairpin('ff > pp'),
     krummzeit_displacement,
@@ -282,7 +288,8 @@ segment_maker.append_commands(
     staccatissimi,
     )
 segment_maker.append_commands(
-    (vc, 5),
+    vc,
+    5,
     Clef('treble'),
     Hairpin('ff > pp'),
     krummzeit_displacement,
@@ -291,21 +298,24 @@ segment_maker.append_commands(
     staccatissimi,
     )
 segment_maker.append_commands(
-    (vn, 7),
+    vn,
+    7,
     Hairpin('pp < ff'),
     krummzeit_displacement,
     narrow_fifth_to_fourth_octave,
     staccatissimi,
     )
 segment_maker.append_commands(
-    (va, 7),
+    va,
+    7,
     Hairpin('pp < ff'),
     krummzeit_displacement,
     narrow_fifth_to_fourth_octave,
     staccatissimi,
     )
 segment_maker.append_commands(
-    (vc, 7),
+    vc,
+    7,
     Clef('bass'),
     Hairpin('pp < ff'),
     krummzeit_displacement,
@@ -313,14 +323,16 @@ segment_maker.append_commands(
     staccatissimi,
     )
 segment_maker.append_commands(
-    (vn, 9),
+    vn,
+    9,
     Hairpin('ff > pp'),
     krummzeit_displacement,
     narrow_fifth_to_fourth_octave,
     staccatissimi,
     )
 segment_maker.append_commands(
-    (va, 9),
+    va,
+    9,
     Clef('alto'),
     Hairpin('ff > pp'),
     krummzeit_displacement,
@@ -328,7 +340,8 @@ segment_maker.append_commands(
     staccatissimi,
     )
 segment_maker.append_commands(
-    (vc, 9),
+    vc,
+    9,
     Hairpin('ff > pp'),
     krummzeit_displacement,
     narrow_third_to_second_octave,
@@ -337,14 +350,16 @@ segment_maker.append_commands(
 
 ### (8.1a) pf ###
 segment_maker.append_commands(
-    (pf, (9, 12)),
+    pf,
+    (9, 12),
     Dynamic('fff'),
     low_piano_cluster,
     ottava_bassa,
     senza_pedale,
     )
 segment_maker.append_commands(
-    (pf, (14, 16)),
+    pf,
+    (14, 16),
     Dynamic('fff'),
     low_piano_cluster,
     ottava_bassa,
@@ -370,22 +385,26 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (va, (11, 12)),
+    va,
+    (11, 12),
     arco,
     ffff_possibile,
     )
 segment_maker.append_commands(
-    ([vn, va, vc], (14, 16)),
+    [vn, va, vc],
+    (14, 16),
     ffff_possibile,
     )
 segment_maker.append_commands(
-    ([vn, vc], (14, 16)),
+    [vn, vc],
+    (14, 16),
     arco,
     )
 
 ### (2.1) oboe, (2.4) bass clariet, (2.5) tam-tam ###
 segment_maker.append_commands(
-    (perc, (14, 17)),
+    perc,
+    (14, 17),
     reiterated_pp,
     )
 segment_maker.make_pitch_handler(
@@ -395,7 +414,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (ob, (14, 16)),
+    ob,
+    (14, 16),
     Dynamic('fff'),
     )
 segment_maker.make_pitch_handler(
@@ -405,41 +425,49 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (cl, (14, 16)),
+    cl,
+    (14, 16),
     ppp_subtone,
     )
 
 ### VERTICAL ALIGNMENT ###
 segment_maker.append_commands(
-    (ob, (14, 16)),
+    ob,
+    (14, 16),
     dynamic_line_spanner_staff_padding(5),
     stem_direction(Up),
     )
 segment_maker.append_commands(
-    (ob, (14, 16)),
+    ob,
+    (14, 16),
     dynamic_line_spanner_staff_padding(5),
     stem_direction(Up),
     )
 segment_maker.append_commands(
-    (cl, (14, 17)),
+    cl,
+    (14, 17),
     stem_direction(Up),
     )
 segment_maker.append_commands(
-    (pf, (9, 16)),
+    pf,
+    (9, 16),
     dynamic_line_spanner_staff_padding(10),
     )
 segment_maker.append_commands(
-    (perc, (14, 17)),
+    perc,
+    (14, 17),
     dynamic_line_spanner_staff_padding(6),
     )
 segment_maker.append_commands(
-    ([vn, va, vc], (5, 9)),
+    [vn, va, vc],
+    (5, 9),
     beam_positions(-4),
     dynamic_line_spanner_staff_padding(8),
     tuplet_bracket_staff_padding(4),
     )
 segment_maker.append_commands(
-    ([vn, va, vc], (11, 16)),
+    [vn, va, vc],
+    (11, 16),
     stem_direction(Up),
     )
 

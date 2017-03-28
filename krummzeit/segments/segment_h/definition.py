@@ -306,7 +306,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (cl, (1, 5)),
+    cl,
+    (1, 5),
     Hairpin('ppp < ff'),
     )
 segment_maker.make_pitch_handler(
@@ -338,7 +339,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (ob, (1, 7)),
+    ob,
+    (1, 7),
     abjad.Dynamic('ff'),
     )
 
@@ -355,17 +357,20 @@ pitch_handler = segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (pf, (5, 12)),
+    pf,
+    (5, 12),
     krummzeit_displacement,
     wide_fifth_octave,
     )
 segment_maker.append_commands(
-    (vn, (5, 12)),
+    vn,
+    (5, 12),
     krummzeit_displacement,
     wide_sixth_octave,
     )
 segment_maker.append_commands(
-    ([ob, cl], (5, 12)),
+    [ob, cl],
+    (5, 12),
     krummzeit_displacement,
     wide_fifth_octave,
     )
@@ -379,7 +384,8 @@ segment_maker.append_commands(
     staccati,
     )
 segment_maker.append_commands(
-    (vn, (5, 12)),
+    vn,
+    (5, 12),
     abjad.Dynamic('pp'),
     leggierissimo_off_string,
     staccati,
@@ -399,7 +405,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    ([va, vc], (11, 12)),
+    [va, vc],
+    (11, 12),
     abjad.Glissando(),
     Hairpin('ff > pp'),
     molto_flautando,
@@ -415,7 +422,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (pf, (14, 20)),
+    pf,
+    (14, 20),
     dynamic_line_spanner_staff_padding(4),
     fifth_harmonic_of_F1,
     natural_harmonics,
@@ -446,21 +454,25 @@ segment_maker.append_commands(
     molto_gridato,
     )
 segment_maker.append_commands(
-    ([vn, va, vc], (14, 21)),
+    [vn, va, vc],
+    (14, 21),
     abjad.Glissando(),
     )
 segment_maker.append_commands(
-    (vn, (14, 20)),
+    vn,
+    (14, 20),
     krummzeit_displacement,
     wide_fourth_octave,
     )
 segment_maker.append_commands(
-    (va, (14, 19)),
+    va,
+    (14, 19),
     krummzeit_displacement,
     narrow_third_octave,
     )
 segment_maker.append_commands(
-    (vc, (14, 20)),
+    vc,
+    (14, 20),
     krummzeit_displacement,
     narrow_second_octave,
     )
@@ -473,7 +485,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (cl, (18, 22)),
+    cl,
+    (18, 22),
     Hairpin('f < ff'),
     color_fingerings,
     )
@@ -484,7 +497,8 @@ segment_maker.make_pitch_handler(
         ),
     )
 segment_maker.append_commands(
-    (ob, (18, 22)),
+    ob,
+    (18, 22),
     abjad.Dynamic('f'),
     color_fingerings,
     )
@@ -520,55 +534,65 @@ segment_maker.append_commands(
 ### VERTICAL ALIGNMENT ###
 
 segment_maker.append_commands(
-    (ob, (1, 7)),
+    ob,
+    (1, 7),
     stem_direction(Up),
     dynamic_line_spanner_staff_padding(5),
     )
 segment_maker.append_commands(
-    (ob, (9, 12)),
+    ob,
+    (9, 12),
     beam_positions(-4),
     tuplet_bracket_staff_padding(3),
     dynamic_line_spanner_staff_padding(7),
     )
 segment_maker.append_commands(
-    (ob, (18, 21)),
+    ob,
+    (18, 21),
     dynamic_line_spanner_staff_padding(5),
     stem_direction(Up),
     tuplet_bracket_staff_padding(3),
     )
 segment_maker.append_commands(
-    (ob, (9, 12)),
+    ob,
+    (9, 12),
     beam_positions(-4),
     tuplet_bracket_staff_padding(3),
     dynamic_line_spanner_staff_padding(5),
     )
 segment_maker.append_commands(
-    (cl, (1, 5)),
+    cl,
+    (1, 5),
     stem_direction(Up),
     dynamic_line_spanner_staff_padding(8),
     )
 segment_maker.append_commands(
-    (cl, 9),
+    cl,
+    9,
     dynamic_line_spanner_staff_padding(3),
     )
 segment_maker.append_commands(
-    (cl, (18, 21)),
+    cl,
+    (18, 21),
     dynamic_line_spanner_staff_padding(10),
     stem_direction(Up),
     tuplet_bracket_staff_padding(6),
     )
 segment_maker.append_commands(
-    (pf, (5, 11)),
+    pf,
+    (5, 11),
     beam_positions(-4),
     tuplet_bracket_staff_padding(3),
     dynamic_line_spanner_staff_padding(7),
     )
 segment_maker.append_commands(
-    (pf, (14, 20)),
+    pf,
+    (14, 20),
     dynamic_line_spanner_staff_padding(3),
     )
 segment_maker.append_commands(
-    (vn, (5, 12)),
+    vn,
+    (5, 12),
     beam_positions(-4),
     tuplet_bracket_staff_padding(3),
     dynamic_line_spanner_staff_padding(5),

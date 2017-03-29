@@ -334,7 +334,7 @@ segment_maker.copy_rhythm(
 ### (6.1) [B1] ob, cl, va, vc ###
 segment_maker.make_pitch_handler(
     (ob, (1, 27)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source=violet_pitch_classes,    
         start_index=120,
         reverse=True,
@@ -361,7 +361,7 @@ segment_maker.append_commands(
     )
 segment_maker.make_pitch_handler(
     (cl, 1),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source="e'' dtqs'' f'' eqs'' dqs'' c'' dqs''",
         ),
     )
@@ -373,13 +373,13 @@ segment_maker.append_commands(
     )
 segment_maker.make_pitch_handler(
     (cl, (20, 24)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source="f'' etqs'' g'' fqs'' eqs'' d'' eqs''",
         ),
     )
 segment_maker.make_pitch_handler(
     (cl, (26, 27)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source="g'' dtqs'' a'' gqs'' fqs'' e'' fqs''",
         ),
     )
@@ -391,7 +391,7 @@ segment_maker.append_commands(
     )
 segment_maker.make_pitch_handler(
     (va, (1, 19)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source="e dtqs f eqs dqs c dqs",
         ),
     )
@@ -416,7 +416,7 @@ segment_maker.append_commands(
     )
 segment_maker.make_pitch_handler(
     (vc, (1, 19)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source="d, ctqs, e, dqs, cqs, b,, dqs,",
         ),
     )
@@ -441,7 +441,7 @@ segment_maker.append_commands(
     )
 segment_maker.make_pitch_handler(
     (vn, (19, 22)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         counts=[1, 1, 1, 1, 4, 1, 1, 1, 4, 4],
         operators=[abjad.Transposition(n=3)],
         reverse=True,
@@ -470,7 +470,7 @@ segment_maker.make_pitch_handler(
         (pf, [(11, 17), (22, 27)]),
         (perc, [(11, 17), (22, 26)]),
         ],
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source=[NamedPitch('C#6')],
         ),
     )
@@ -496,19 +496,19 @@ segment_maker.append_commands(
     )
 segment_maker.make_pitch_handler(
     (vn, (28, 29)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source="ftqs g",
         ),
     )
 segment_maker.make_pitch_handler(
     (va, (26, 29)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source="btqs, c bqs, cqs",
         ),
     )
 segment_maker.make_pitch_handler(
     (vc, (26, 29)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source="b,, cqs, bqf,, c,",
         ),
     )

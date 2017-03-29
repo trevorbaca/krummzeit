@@ -264,13 +264,13 @@ segment_maker.copy_rhythm(
 ### (14) reiteration ###
 segment_maker.make_pitch_handler(
     (ob, 1),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='Eb5',
         ),
     )
 segment_maker.make_pitch_handler(
     (cl, 1),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='Eb2',
         ),
     )
@@ -288,7 +288,7 @@ segment_maker.append_commands(
     )
 segment_maker.make_pitch_handler(
     ([pf, perc], 1),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='F#6',
         ),
     )
@@ -306,19 +306,19 @@ segment_maker.append_commands(
     )
 segment_maker.make_pitch_handler(
     (vn, (1, 3)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='Eb5',
         ),
     )
 segment_maker.make_pitch_handler(
     (va, (1, 3)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='A3',
         ),
     )
 segment_maker.make_pitch_handler(
     (vc, (1, 3)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='E~2',
         ),
     )
@@ -339,7 +339,7 @@ segment_maker.append_commands(
 ### (3.5) OB bowing ###
 segment_maker.make_pitch_handler(
     ([vn, va, vc], (5, 9)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=11)],
         source=violet_pitch_classes,    
         start_index=0,
@@ -375,7 +375,7 @@ segment_maker.append_commands(
 ### bcl climax ###
 segment_maker.make_pitch_handler(
     (cl, (3, 11)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='E2',
         ),
     )
@@ -411,7 +411,7 @@ segment_maker.append_commands(
 ### (9.1) vn, va, vc points ###
 segment_maker.make_pitch_handler(
     ([vn, va, vc], 15),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=4), abjad.Inversion()],
         reverse=True,
         source=indigo_pitch_classes,

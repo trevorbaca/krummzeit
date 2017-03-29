@@ -405,7 +405,7 @@ segment_maker.make_pitch_handler(
         (va, (1, 3)),
         (vc, (1, 5)),
         ]),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=7)],
         reverse=True,
         source=violet_pitch_classes,    
@@ -451,7 +451,7 @@ segment_maker.make_pitch_handler(
         (vn, [(6, 7), 9]),
         (vc, [(6, 7), 9]),
         ],
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=7), abjad.Inversion()],
         reverse=True,
         source=violet_pitch_classes,    
@@ -501,7 +501,7 @@ segment_maker.append_commands(
     )
 segment_maker.make_pitch_handler(
     (pf, [(4, 7), 9]),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='C4',
         ),
     )
@@ -516,13 +516,13 @@ segment_maker.append_commands(
     )
 segment_maker.make_pitch_handler(
     (ob, (5, 7)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='D5 D5 D5 D5 D5 D5 D5 D5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5'
         ),
     )
 segment_maker.make_pitch_handler(
     (cl, (5, 7)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='E5 E5 E5 E5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 E5 E5 E5 E5'
         ),
     )
@@ -534,7 +534,7 @@ segment_maker.append_commands(
     )
 segment_maker.make_pitch_handler(
     ([pf, perc], [8, 10, 11]),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='F#6',
         ),
     )
@@ -551,7 +551,7 @@ segment_maker.append_commands(
     )
 segment_maker.make_pitch_handler(
     ([ob, cl], [10, 11, 12]),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='F5 F5 F5 F5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F5 F5 F5 F5'
         ),
     )
@@ -576,19 +576,19 @@ segment_maker.append_commands(
     )
 segment_maker.make_pitch_handler(
     (vn, (11, 13)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='A+3',
         ),
     )
 segment_maker.make_pitch_handler(
     (va, (11, 13)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='Bb2',
         ),
     )
 segment_maker.make_pitch_handler(
     (vc, (11, 13)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='A2',
         ),
     )

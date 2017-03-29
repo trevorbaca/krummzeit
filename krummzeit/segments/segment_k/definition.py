@@ -172,7 +172,7 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker()
 ### harpsichord & piano reiteration ###
 segment_maker.make_pitch_handler(
     (pf, (1, 12)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='C#6',
         ),
     )
@@ -190,7 +190,7 @@ segment_maker.append_commands(
 ### xylophone reiteration ###
 segment_maker.make_pitch_handler(
     (perc, (1, 12)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='C#6',
         ),
     )
@@ -206,7 +206,7 @@ segment_maker.append_commands(
 indigo_snippet = indigo_pitch_classes[42:34:-1]
 segment_maker.make_pitch_handler(
     ([vn, va], (1, 10)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=4), abjad.Inversion()],
         source=indigo_snippet,
         ),
@@ -226,13 +226,13 @@ segment_maker.append_commands(
 ### vc ###
 segment_maker.make_pitch_handler(
     (vc, (1, 6)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='D4 D4 D4 D4 D4 D4 D2',
         ),
     )
 segment_maker.make_pitch_handler(
     (vc, (7, 12)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='D2',
         ),
     )
@@ -258,7 +258,7 @@ segment_maker.append_commands(
 ### oboe ###
 segment_maker.make_pitch_handler(
     (ob, (1, 12)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='C#4',
         ),
     )
@@ -272,7 +272,7 @@ segment_maker.append_commands(
 ### bass clarinet ###
 segment_maker.make_pitch_handler(
     (cl, (1, 12)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='D2',
         ),
     )

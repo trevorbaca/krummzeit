@@ -456,27 +456,27 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
 ### (12) [B1-13] (hpschd, vn, ob, cl) pcs ###
 pitch_handler = segment_maker.make_pitch_handler(
     ([pf, vn, ob, cl], (1, 4)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source=indigo_pitch_classes,    
         start_index=0,
         ),
     )
 pitch_handler = segment_maker.make_pitch_handler(
     ([pf, vn, ob, cl], (5, 13)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source=indigo_pitch_classes,    
         start_index=0,
         ),
     )
 pitch_handler = segment_maker.make_pitch_handler(
     ([pf, vn, ob, cl], (5, 8)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=1)],
         ),
     )
 pitch_handler = segment_maker.make_pitch_handler(
     ([pf, vn, ob, cl], (9, 13)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=3)],
         ),
     )
@@ -556,37 +556,37 @@ segment_maker.append_commands(
 ### (12) [B1-9] (va, vc) pcs ###
 segment_maker.make_pitch_handler(
     (va, (1, 4)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source="d ctqs e dqs cqs b, cqs",
         ),
     )
 segment_maker.make_pitch_handler(
     (va, (5, 8)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source="e dtqs f eqs dqs c dqs",
         ),
     )
 segment_maker.make_pitch_handler(
     (va, 9),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source="g ftqs a gqs fqs e fqs",
         ),
     )
 segment_maker.make_pitch_handler(
     (vc, (1, 4)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source="e, dqs, cqs, b,, cqs, d, ctqs,",
         ),
     )
 segment_maker.make_pitch_handler(
     (vc, (5, 8)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source="f, eqs, dqs, c, dqs, e, dtqs,",
         ),
     )
 segment_maker.make_pitch_handler(
     (vc, 9),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source="a, gqs, fqs, e, fqs, g, ftqs,",
         ),
     )
@@ -629,7 +629,7 @@ segment_maker.make_pitch_handler(
         (vc, (12, 17)),
         (vn, (14, 18)),
         ],
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source=violet_pitch_classes,    
         start_index=0,
         ),
@@ -698,7 +698,7 @@ segment_maker.make_pitch_handler(
         (vn, (19, 22)),
         (pf, (20, 23)),
         ],
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source=violet_pitch_classes,    
         start_index=60,
         operators=[abjad.Transposition(n=1)],
@@ -741,7 +741,7 @@ segment_maker.append_commands(
 ### (6.2) [B22-23] Eb clarinet & slate ###
 segment_maker.make_pitch_handler(
     (cl, (22, 23)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source="e'' dtqs'' f'' eqs'' dqs'' c'' dqs''",
         ),
     )

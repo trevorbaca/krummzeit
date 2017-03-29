@@ -201,13 +201,13 @@ music_maker.rhythm_maker = tied_notes
 ### (3.1) va, vc, bcl ###
 segment_maker.make_pitch_handler(
     (va, (1, 4)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='F#3',
         ),
     )
 segment_maker.make_pitch_handler(
     (vc, (1, 4)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='C2',
         ),
     )
@@ -229,19 +229,19 @@ segment_maker.append_commands(
 ### (10.1) vn, va, vc unrestrained ###
 segment_maker.make_pitch_handler(
     (vn, (5, 13)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='F#3',
         ),
     )
 segment_maker.make_pitch_handler(
     (va, (5, 13)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='Bb2',
         ),
     )
 segment_maker.make_pitch_handler(
     (vc, (5, 13)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='A1',
         ),
     )
@@ -277,7 +277,7 @@ segment_maker.append_commands(
 ### bass clarinet subtone ###
 segment_maker.make_pitch_handler(
     (cl, (11, 13)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='B1',
         ),
     )
@@ -293,7 +293,7 @@ pitch_handler = segment_maker.make_pitch_handler(
         (pf, (3, 11)),
         ([ob, cl], (1, 8)),
         ],
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=2)],
         source=indigo_pitch_classes,    
         start_index=0,

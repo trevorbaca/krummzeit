@@ -370,7 +370,7 @@ segment_maker.copy_rhythm(
 ### (6.1) ob, cl ###
 segment_maker.make_pitch_handler(
     (cl, (1, 2)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='B3',
         ),
     )
@@ -381,13 +381,13 @@ segment_maker.append_commands(
     )
 segment_maker.make_pitch_handler(
     (cl, (1, 2)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='B3',
         ),
     )
 segment_maker.make_pitch_handler(
     (ob, (1, 2)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source=violet_pitch_classes,    
         start_index=120,
         reverse=True,
@@ -422,19 +422,19 @@ segment_maker.append_commands(
     )
 segment_maker.make_pitch_handler(
     (vn, 2),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='A+3',
         ),
     )
 segment_maker.make_pitch_handler(
     (va, 2),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='Bb2',
         ),
     )
 segment_maker.make_pitch_handler(
     (vc, 2),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='A2',
         ),
     )
@@ -457,14 +457,14 @@ segment_maker.append_commands(
 ### (5.1) ob, cl ###
 segment_maker.make_pitch_handler(
     (ob, (4, 11)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         counts=[3, 2, 4],
         source='C6 B+5 A5 G+5 F+5 E~5',
         ),
     )
 segment_maker.make_pitch_handler(
     (cl, (4, 11)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         counts=[3, 2, 4],
         source='C6 B+5 A5 G+5 F+5 E~5',
         ),
@@ -480,7 +480,7 @@ segment_maker.append_commands(
 ### (5.3) vn, va, vc thicket ###
 segment_maker.make_pitch_handler(
     ([vn, va, vc], (4, 10)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=10)],
         reverse=True,
         source=violet_pitch_classes,    
@@ -514,7 +514,7 @@ segment_maker.append_commands(
 ### (7.1) points ###
 segment_maker.make_pitch_handler(
     ([pf, perc], (8, 15)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='F5',
         ),
     )
@@ -528,25 +528,25 @@ segment_maker.append_commands(
 ### (4.2) va, vc, bass cl & (4.3) vn, ob ###
 segment_maker.make_pitch_handler(
     (va, (13, 23)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='F#3',
         ),
     )
 segment_maker.make_pitch_handler(
     (vc, (13, 23)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='C2',
         ),
     )
 segment_maker.make_pitch_handler(
     (cl, (13, 23)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='Bb1',
         ),
     )
 segment_maker.make_pitch_handler(
     (pf, (16, 18)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='Bb0',
         ),
     )
@@ -569,7 +569,7 @@ segment_maker.append_commands(
     )
 segment_maker.make_pitch_handler(
     (vn, (18, 22)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='G5',
         ),
     )
@@ -581,7 +581,7 @@ segment_maker.append_commands(
     )
 segment_maker.make_pitch_handler(
     (ob, (18, 22)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='A5',
         ),
     )
@@ -595,7 +595,7 @@ segment_maker.append_commands(
 ### (9.1) pf points ###
 segment_maker.make_pitch_handler(
     (pf, (19, 22)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         operators=[
             abjad.Transposition(n=5), 
             abjad.Inversion()],

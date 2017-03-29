@@ -233,7 +233,7 @@ segment_maker.make_pitch_handler(
         (pf, (1, 7)),
         ([vn, va, vc], (1, 9)),
         ],
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=4), abjad.Inversion()],
         reverse=True,
         source=indigo_pitch_classes,
@@ -368,19 +368,19 @@ segment_maker.append_commands(
 ### (10.2) va, vn, vc ###
 segment_maker.make_pitch_handler(
     (va, (11, 16)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='bf,',
         ),
     )
 segment_maker.make_pitch_handler(
     (vn, (14, 16)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='fs',
         ),
     )
 segment_maker.make_pitch_handler(
     (vc, (14, 16)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='a,,',
         ),
     )
@@ -409,7 +409,7 @@ segment_maker.append_commands(
     )
 segment_maker.make_pitch_handler(
     (ob, (14, 16)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='B3',
         ),
     )
@@ -420,7 +420,7 @@ segment_maker.append_commands(
     )
 segment_maker.make_pitch_handler(
     (cl, (14, 17)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='B1',
         ),
     )

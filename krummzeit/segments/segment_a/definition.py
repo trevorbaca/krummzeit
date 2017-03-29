@@ -218,19 +218,19 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.TaleaRhythmMaker(
 ### (11.1) vn, va, vc ###
 segment_maker.make_pitch_handler(
     (vn, 1),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='Eb5',
         ),
     )
 segment_maker.make_pitch_handler(
     (va, 1),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='A3',
         ),
     )
 segment_maker.make_pitch_handler(
     (vc, 1),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='E~2',
         ),
     )
@@ -253,7 +253,7 @@ segment_maker.append_commands(
 ### (2.4) bcl subtone ###
 segment_maker.make_pitch_handler(
     (cl, (3, 4)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='B1',
         ),
     )
@@ -267,7 +267,7 @@ segment_maker.append_commands(
 ### vn, va, vc thicket ###
 segment_maker.make_pitch_handler(
     ([vn, va, vc], (3, 7)),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=10)],
         reverse=True,
         source=violet_pitch_classes,    
@@ -302,7 +302,7 @@ segment_maker.append_commands(
 ### (14) pf, xylophone reiteration [A6] ###
 segment_maker.make_pitch_handler(
     ([pf, perc], 6),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source='C#5',
         ),
     )

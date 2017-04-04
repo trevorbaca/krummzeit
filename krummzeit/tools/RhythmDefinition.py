@@ -199,13 +199,13 @@ class RhythmDefinition(abjad.abctools.AbjadObject):
         return dummy_music_voice
 
     def _set_staff_line_count(self, first_leaf, staff_line_count):
-        command = abjad.indicatortools.LilyPondCommand('stopStaff')
+        command = abjad.LilyPondCommand('stopStaff')
         abjad.attach(command, first_leaf)
         string = "override Staff.StaffSymbol #'line-count = #{}"
         string = string.format(staff_line_count)
-        command = abjad.indicatortools.LilyPondCommand(string)
+        command = abjad.LilyPondCommand(string)
         abjad.attach(command, first_leaf)
-        command = abjad.indicatortools.LilyPondCommand('startStaff')
+        command = abjad.LilyPondCommand('startStaff')
         abjad.attach(command, first_leaf)
 
     ### PUBLIC PROPERTIES ###

@@ -2,25 +2,25 @@
 import abjad
 
 
-tempi = abjad.indicatortools.TempoInventory(
+tempi = abjad.TempoInventory(
     [
-        abjad.indicatortools.Tempo(
+        abjad.Tempo(
             reference_duration=abjad.durationtools.Duration(1, 4),
             units_per_minute=72,
             ),
-        abjad.indicatortools.Tempo(
+        abjad.Tempo(
             reference_duration=abjad.durationtools.Duration(1, 4),
             units_per_minute=108,
             ),
-        abjad.indicatortools.Tempo(
+        abjad.Tempo(
             reference_duration=abjad.durationtools.Duration(1, 4),
             units_per_minute=90,
             ),
-        abjad.indicatortools.Tempo(
+        abjad.Tempo(
             reference_duration=abjad.durationtools.Duration(1, 4),
             units_per_minute=135,
             ),
-        abjad.indicatortools.Tempo(
+        abjad.Tempo(
             reference_duration=abjad.durationtools.Duration(1, 4),
             units_per_minute=67.5,
             custom_markup=abjad.markuptools.Markup(
@@ -47,11 +47,11 @@ tempi = abjad.indicatortools.TempoInventory(
                     ),
                 ),
             ),
-        abjad.indicatortools.Tempo(
+        abjad.Tempo(
             reference_duration=abjad.durationtools.Duration(1, 4),
             units_per_minute=36,
             ),
-        abjad.indicatortools.Tempo(
+        abjad.Tempo(
             reference_duration=abjad.durationtools.Duration(1, 4),
             units_per_minute=73,
             custom_markup=abjad.markuptools.Markup(
@@ -113,11 +113,11 @@ tempi = abjad.indicatortools.TempoInventory(
                     ),
                 ),
             ),
-        abjad.indicatortools.Tempo(
+        abjad.Tempo(
             reference_duration=abjad.durationtools.Duration(1, 4),
             units_per_minute=144,
             ),
-        abjad.indicatortools.Tempo(
+        abjad.Tempo(
             reference_duration=abjad.durationtools.Duration(1, 4),
             units_per_minute=45,
             ),

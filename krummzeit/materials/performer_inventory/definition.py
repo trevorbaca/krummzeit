@@ -31,7 +31,7 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
                             [
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='treble',
                                     ),
                                 ]
@@ -137,7 +137,7 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
                             [
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='treble',
                                     ),
                                 ]
@@ -236,7 +236,7 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
                             [
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='treble',
                                     ),
                                 ]
@@ -269,10 +269,10 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
                             [
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='treble',
                                     ),
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='bass',
                                     ),
                                 ]
@@ -312,10 +312,10 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
                             [
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='treble',
                                     ),
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='bass',
                                     ),
                                 ]
@@ -348,10 +348,10 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
                             [
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='treble',
                                     ),
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='bass',
                                     ),
                                 ]
@@ -391,7 +391,7 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
                             [
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='percussion',
                                     ),
                                 ]
@@ -412,7 +412,7 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
                             [
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='percussion',
                                     ),
                                 ]
@@ -433,7 +433,7 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
                             [
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='percussion',
                                     ),
                                 ]
@@ -454,7 +454,7 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
                             [
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='percussion',
                                     ),
                                 ]
@@ -475,7 +475,7 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
                             [
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='percussion',
                                     ),
                                 ]
@@ -496,7 +496,7 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
                             [
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='percussion',
                                     ),
                                 ]
@@ -517,7 +517,7 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
                             [
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='percussion',
                                     ),
                                 ]
@@ -550,7 +550,7 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
                             [
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='treble',
                                     ),
                                 ]
@@ -590,12 +590,12 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
                             [
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='treble',
                                     ),
                                 ]
                             ),
-                        default_tuning=abjad.indicatortools.Tuning(
+                        default_tuning=abjad.Tuning(
                             pitches=abjad.pitchtools.PitchSegment(
                                 (
                                     abjad.pitchtools.NamedPitch('g'),
@@ -622,7 +622,7 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
                             [
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='percussion',
                                     ),
                                 ]
@@ -662,15 +662,15 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
                             [
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='alto',
                                     ),
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='treble',
                                     ),
                                 ]
                             ),
-                        default_tuning=abjad.indicatortools.Tuning(
+                        default_tuning=abjad.Tuning(
                             pitches=abjad.pitchtools.PitchSegment(
                                 (
                                     abjad.pitchtools.NamedPitch('c'),
@@ -716,18 +716,18 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
                             [
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='bass',
                                     ),
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='tenor',
                                     ),
-                                abjad.indicatortools.Clef(
+                                abjad.Clef(
                                     name='treble',
                                     ),
                                 ]
                             ),
-                        default_tuning=abjad.indicatortools.Tuning(
+                        default_tuning=abjad.Tuning(
                             pitches=abjad.pitchtools.PitchSegment(
                                 (
                                     abjad.pitchtools.NamedPitch('c,'),

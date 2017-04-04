@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
 import abjad
+import baca
 
 
-class ScoreTemplate(abjad.abctools.AbjadValueObject):
+class ScoreTemplate(baca.tools.ScoreTemplate):
     r'''Score template.
 
     ::
 
+        >>> import abjad
+        >>> import baca
         >>> import krummzeit
 
     '''
@@ -14,7 +17,7 @@ class ScoreTemplate(abjad.abctools.AbjadValueObject):
     ### SPECIAL METHODS ###
 
     def __call__(self):
-        r'''Calls Krummzeit score template.
+        r'''Calls score template.
 
         ::
 
@@ -24,10 +27,14 @@ class ScoreTemplate(abjad.abctools.AbjadValueObject):
         ::
 
             >>> f(score)
-            \context Score = "Krummzeit Score" <<
+            \context Score = "Score" <<
                 \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
-                \context TimeSignatureContext = "Time Signature Context" {
-                }
+                \context TimeSignatureContext = "Time Signature Context" <<
+                    \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+                    }
+                    \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+                    }
+                >>
                 \context WindSectionStaffGroup = "Wind Section Staff Group" <<
                     \tag winds.oboe
                     \context OboeMusicStaff = "Oboe Music Staff" {
@@ -76,12 +83,7 @@ class ScoreTemplate(abjad.abctools.AbjadValueObject):
         Returns score.
         '''
         from krummzeit.materials import performer_inventory
-
-        # make time signature context
-        time_signature_context = abjad.Context(
-            context_name='TimeSignatureContext',
-            name='Time Signature Context',
-            )
+        time_signature_context = self._make_time_signature_context()
         instrument_tags = (
             'winds',
             'oboe',
@@ -126,8 +128,6 @@ class ScoreTemplate(abjad.abctools.AbjadValueObject):
             context_name='WindSectionStaffGroup',
             name='Wind Section Staff Group',
             )
-
-        # make percussion contexts
         piano_music_voice = abjad.Voice(
             [], 
             context_name='PianoMusicVoice',
@@ -155,8 +155,6 @@ class ScoreTemplate(abjad.abctools.AbjadValueObject):
             context_name='PercussionSectionStaffGroup',
             name='Percussion Section Staff Group',
             )
-
-        # make string contexts
         violin_music_voice = abjad.Voice(
             [], 
             context_name='ViolinMusicVoice',
@@ -197,8 +195,6 @@ class ScoreTemplate(abjad.abctools.AbjadValueObject):
             context_name='StringSectionStaffGroup',
             name='String Section Staff Group',
             )
-        
-        # make score
         score = abjad.Score(
             [
             time_signature_context,
@@ -206,10 +202,8 @@ class ScoreTemplate(abjad.abctools.AbjadValueObject):
             percussion_section_staff_group,
             string_section_staff_group,
             ],
-            name='Krummzeit Score',
+            name='Score',
             )
-
-        # return score
         return score
 
     ### PRIVATE METHODS ###

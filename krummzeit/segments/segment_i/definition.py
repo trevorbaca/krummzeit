@@ -116,7 +116,7 @@ music_maker.stages = 1, 5
 music_maker.voice_name = pf
 music_maker.instrument = harpsichord
 music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
-    counts=mathtools.Infinity,
+    counts=abjad.Infinity,
     secondary_division_maker=baca.tools.SplitByDurationsDivisionCallback(
         durations=[(1, 4)],
         ),
@@ -132,7 +132,7 @@ music_maker.voice_name = perc
 music_maker.instrument = crotales
 music_maker.clef = 'percussion'
 music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
-    counts=mathtools.Infinity,
+    counts=abjad.Infinity,
     secondary_division_maker=baca.tools.SplitByDurationsDivisionCallback(
         durations=[(1, 4)],
         remainder=Left,

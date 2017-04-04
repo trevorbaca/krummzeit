@@ -68,12 +68,13 @@ tied_notes = abjad.rhythmmakertools.NoteRhythmMaker(
 ### MARKUP ###
 
 def make_effort_dynamic_markup(dynamic_text, direction=Down):
-    left_quotes = abjad.Markup('“').italic().larger()
-    dynamic_markup = abjad.Markup(dynamic_text).dynamic()
-    right_quotes = abjad.Markup('”').italic().larger()
-    markup = left_quotes + dynamic_markup + right_quotes
-    markup._direction = direction
-    return markup
+#    left_quotes = abjad.Markup('“').italic().larger()
+#    dynamic_markup = abjad.Markup(dynamic_text).dynamic()
+#    right_quotes = abjad.Markup('”').italic().larger()
+#    markup = left_quotes + dynamic_markup + right_quotes
+#    markup._direction = direction
+#    return markup
+    return baca.effort_dynamic(dynamic_text)
 
 accents = baca.accents()
 
@@ -519,8 +520,8 @@ tenor_piano_cluster = baca.tools.ClusterCommand(
     widths=[4],
     )
 
-silence_first = [abjad.patterntools.Pattern(indices=[0])]
-silence_last = [abjad.patterntools.Pattern(indices=[-1])]
+silence_first = [abjad.Pattern(indices=[0])]
+silence_last = [abjad.Pattern(indices=[-1])]
 
 ottava = abjad.spannertools.OctavationSpanner(start=1, stop=0)
 ottava_bassa = abjad.spannertools.OctavationSpanner(start=-1, stop=0)

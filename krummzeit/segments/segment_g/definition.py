@@ -48,7 +48,7 @@ music_maker = segment_maker.define_rhythm()
 music_maker.stages = (2, 4)
 music_maker.voice_name = va
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    counts=mathtools.Infinity,
+    counts=abjad.Infinity,
     secondary_division_maker=makertools.SplitByDurationsDivisionCallback(
         durations=[(1, 4)],
         remainder=Right,
@@ -77,7 +77,7 @@ music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker(
     tie_specifier=rhythmmakertools.TieSpecifier(
         tie_across_divisions=True,
         ),
-    division_masks=[abjad.patterntools.Pattern(indices=[0], period=1)],
+    division_masks=[abjad.Pattern(indices=[0], period=1)],
     )
 
 segment_maker.copy_rhythm(
@@ -98,7 +98,7 @@ music_maker.stages = 13, 14
 music_maker.voice_name = perc
 music_maker.instrument = tam_tam
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    counts=mathtools.Infinity,
+    counts=abjad.Infinity,
     secondary_division_maker=makertools.SplitByDurationsDivisionCallback(
         durations=[(1, 2)],
         ),
@@ -150,7 +150,7 @@ segment_maker.copy_rhythm(
     5,
     voice_name=va,
     rhythm_maker__tuplet_ratios=[(1, 6)],
-    rhythm_maker__division_masks=[abjad.patterntools.Pattern(indices=[0, 1])],
+    rhythm_maker__division_masks=[abjad.Pattern(indices=[0, 1])],
     )
 
 segment_maker.copy_rhythm(
@@ -158,7 +158,7 @@ segment_maker.copy_rhythm(
     5,
     voice_name=vc,
     rhythm_maker__tuplet_ratios=[(6, 1)],
-    rhythm_maker__division_masks=[abjad.patterntools.Pattern(indices=[0, 1])],
+    rhythm_maker__division_masks=[abjad.Pattern(indices=[0, 1])],
     )
 
 ### ob, cl [G3-7] ###

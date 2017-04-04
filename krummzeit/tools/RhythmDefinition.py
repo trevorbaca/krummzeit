@@ -3,10 +3,11 @@ import abjad
 
 
 class RhythmDefinition(abjad.abctools.AbjadObject):
-    r'''Krummzeit music-maker.
+    r'''Rhythm definition.
 
     ::
 
+        >>> import abjad
         >>> import baca
         >>> import krummzeit
 
@@ -24,7 +25,7 @@ class RhythmDefinition(abjad.abctools.AbjadObject):
 
         ::
 
-            >>> print(format(music_maker, 'storage'))
+            >>> f(music_maker)
             krummzeit.tools.RhythmDefinition(
                 voice_name='Cello Music Voice',
                 division_maker=baca.tools.FuseByCountsDivisionCallback(
@@ -34,7 +35,6 @@ class RhythmDefinition(abjad.abctools.AbjadObject):
                 stages=(1, 4),
                 )
 
-    All properties can be configured at or after initialization.
     '''
 
     ### CLASS ATTRIBUTES ###
@@ -52,6 +52,8 @@ class RhythmDefinition(abjad.abctools.AbjadObject):
         'start_tempo',
         'stop_tempo',
         )
+
+    _publish_storage_format = True
 
     ### INITIALIZER ###    
 
@@ -83,7 +85,7 @@ class RhythmDefinition(abjad.abctools.AbjadObject):
     ### SPECIAL METHODS ###
 
     def __call__(self, time_signatures=None):
-        r'''Calls music-maker.
+        r'''Calls rhythm definition.
 
         Returns music. Probably as a selection.
         '''
@@ -149,12 +151,10 @@ class RhythmDefinition(abjad.abctools.AbjadObject):
         if self.division_maker is not None:
             divisions = self.division_maker(time_signatures) 
         else:
-            divisions = [
-                abjad.mathtools.NonreducedFraction(_) for _ in time_signatures
-                ]
+            divisions = [abjad.NonreducedFraction(_) for _ in time_signatures]
         divisions = baca.Sequence(divisions).flatten()
         for division in divisions:
-            assert isinstance(division, abjad.mathtools.NonreducedFraction), division
+            assert isinstance(division, abjad.NonreducedFraction), division
         rhythm_maker = self._get_rhythm_maker()
         selections = rhythm_maker(divisions)
         if not self.rhythm_overwrites:

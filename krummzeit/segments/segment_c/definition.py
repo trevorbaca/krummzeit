@@ -332,7 +332,7 @@ segment_maker.copy_rhythm(
 ###############################################################################
 
 ### (6.1) [B1] ob, cl, va, vc ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (ob, (1, 27)),
     baca.tools.ScorePitchCommand(
         source=violet_pitch_classes,    
@@ -359,7 +359,7 @@ segment_maker.append_commands(
     20,
     Dynamic('ff'),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (cl, 1),
     baca.tools.ScorePitchCommand(
         source="e'' dtqs'' f'' eqs'' dqs'' c'' dqs''",
@@ -371,13 +371,13 @@ segment_maker.append_commands(
     Dynamic('f'),
     Glissando(),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (cl, (20, 24)),
     baca.tools.ScorePitchCommand(
         source="f'' etqs'' g'' fqs'' eqs'' d'' eqs''",
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (cl, (26, 27)),
     baca.tools.ScorePitchCommand(
         source="g'' dtqs'' a'' gqs'' fqs'' e'' fqs''",
@@ -389,7 +389,7 @@ segment_maker.append_commands(
     Dynamic('f'),
     Glissando(),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (va, (1, 19)),
     baca.tools.ScorePitchCommand(
         source="e dtqs f eqs dqs c dqs",
@@ -414,7 +414,7 @@ segment_maker.append_commands(
         patterns=[abjad.Pattern(indices=[0, 1])],
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vc, (1, 19)),
     baca.tools.ScorePitchCommand(
         source="d, ctqs, e, dqs, cqs, b,, dqs,",
@@ -439,7 +439,7 @@ segment_maker.append_commands(
         patterns=[abjad.Pattern(indices=[0, 1])],
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vn, (19, 22)),
     baca.tools.ScorePitchCommand(
         counts=[1, 1, 1, 1, 4, 1, 1, 1, 4, 4],
@@ -465,7 +465,7 @@ segment_maker.append_commands(
     )
 
 ### (7) [C3], [C7-8] pf, xylophone ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     [
         (pf, [(11, 17), (22, 27)]),
         (perc, [(11, 17), (22, 26)]),
@@ -494,19 +494,19 @@ segment_maker.append_commands(
     fingertips,
     stem_tremolo,
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vn, (28, 29)),
     baca.tools.ScorePitchCommand(
         source="ftqs g",
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (va, (26, 29)),
     baca.tools.ScorePitchCommand(
         source="btqs, c bqs, cqs",
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vc, (26, 29)),
     baca.tools.ScorePitchCommand(
         source="b,, cqs, bqf,, c,",

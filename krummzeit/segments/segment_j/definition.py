@@ -262,13 +262,13 @@ segment_maker.copy_rhythm(
 ###############################################################################
 
 ### (14) reiteration ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (ob, 1),
     baca.tools.ScorePitchCommand(
         source='Eb5',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (cl, 1),
     baca.tools.ScorePitchCommand(
         source='Eb2',
@@ -286,7 +286,7 @@ segment_maker.append_commands(
     abjad.Dynamic('ff'),
     color_fingerings,
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     ([pf, perc], 1),
     baca.tools.ScorePitchCommand(
         source='F#6',
@@ -304,19 +304,19 @@ segment_maker.append_commands(
     abjad.Dynamic('fff'),
     stem_tremolo,
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vn, (1, 3)),
     baca.tools.ScorePitchCommand(
         source='Eb5',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (va, (1, 3)),
     baca.tools.ScorePitchCommand(
         source='A3',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vc, (1, 3)),
     baca.tools.ScorePitchCommand(
         source='E~2',
@@ -337,7 +337,7 @@ segment_maker.append_commands(
     )
 
 ### (3.5) OB bowing ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     ([vn, va, vc], (5, 9)),
     baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=11)],
@@ -373,7 +373,7 @@ segment_maker.append_commands(
     )
 
 ### bcl climax ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (cl, (3, 11)),
     baca.tools.ScorePitchCommand(
         source='E2',
@@ -409,7 +409,7 @@ segment_maker.append_commands(
     )
 
 ### (9.1) vn, va, vc points ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     ([vn, va, vc], 15),
     baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=4), abjad.Inversion()],

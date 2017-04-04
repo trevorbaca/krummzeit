@@ -228,7 +228,7 @@ segment_maker.append_commands(
     )
 
 ### (9) pf, vn, va, vc ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     [
         (pf, (1, 7)),
         ([vn, va, vc], (1, 9)),
@@ -366,19 +366,19 @@ segment_maker.append_commands(
     )
 
 ### (10.2) va, vn, vc ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (va, (11, 16)),
     baca.tools.ScorePitchCommand(
         source='bf,',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vn, (14, 16)),
     baca.tools.ScorePitchCommand(
         source='fs',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vc, (14, 16)),
     baca.tools.ScorePitchCommand(
         source='a,,',
@@ -407,7 +407,7 @@ segment_maker.append_commands(
     (14, 17),
     reiterated_pp,
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (ob, (14, 16)),
     baca.tools.ScorePitchCommand(
         source='B3',
@@ -418,7 +418,7 @@ segment_maker.append_commands(
     (14, 16),
     Dynamic('fff'),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (cl, (14, 17)),
     baca.tools.ScorePitchCommand(
         source='B1',

@@ -199,13 +199,13 @@ music_maker.rhythm_maker = tied_notes
 ###############################################################################
 
 ### (3.1) va, vc, bcl ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (va, (1, 4)),
     baca.tools.ScorePitchCommand(
         source='F#3',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vc, (1, 4)),
     baca.tools.ScorePitchCommand(
         source='C2',
@@ -227,19 +227,19 @@ segment_maker.append_commands(
     )
 
 ### (10.1) vn, va, vc unrestrained ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vn, (5, 13)),
     baca.tools.ScorePitchCommand(
         source='F#3',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (va, (5, 13)),
     baca.tools.ScorePitchCommand(
         source='Bb2',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vc, (5, 13)),
     baca.tools.ScorePitchCommand(
         source='A1',
@@ -275,7 +275,7 @@ segment_maker.append_commands(
     )
 
 ### bass clarinet subtone ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (cl, (11, 13)),
     baca.tools.ScorePitchCommand(
         source='B1',
@@ -288,7 +288,7 @@ segment_maker.append_commands(
     )
 
 ### (12) hpschd, ob, cl ###
-pitch_handler = segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     [
         (pf, (3, 11)),
         ([ob, cl], (1, 8)),

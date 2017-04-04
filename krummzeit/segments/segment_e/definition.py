@@ -399,7 +399,7 @@ segment_maker.append_commands(
     (1, 2),
     reiterated_pp,
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     ([
         (vn, (1, 5)),
         (va, (1, 3)),
@@ -445,7 +445,7 @@ segment_maker.append_commands(
     accents,
     effort_ff,
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     [
         (va, [(4, 7), 9]),
         (vn, [(6, 7), 9]),
@@ -499,7 +499,7 @@ segment_maker.append_commands(
     Dynamic('ff'),
     molto_gridato,
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (pf, [(4, 7), 9]),
     baca.tools.ScorePitchCommand(
         source='C4',
@@ -514,13 +514,13 @@ segment_maker.append_commands(
     natural_harmonics,
     tenuti,
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (ob, (5, 7)),
     baca.tools.ScorePitchCommand(
         source='D5 D5 D5 D5 D5 D5 D5 D5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5'
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (cl, (5, 7)),
     baca.tools.ScorePitchCommand(
         source='E5 E5 E5 E5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 E5 E5 E5 E5'
@@ -532,7 +532,7 @@ segment_maker.append_commands(
     Dynamic('p'),
     color_fingerings,
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     ([pf, perc], [8, 10, 11]),
     baca.tools.ScorePitchCommand(
         source='F#6',
@@ -549,7 +549,7 @@ segment_maker.append_commands(
     [8, 10],
     Clef('treble'),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     ([ob, cl], [10, 11, 12]),
     baca.tools.ScorePitchCommand(
         source='F5 F5 F5 F5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F5 F5 F5 F5'
@@ -574,19 +574,19 @@ segment_maker.append_commands(
     Dynamic('mp'),
     senza_pedale,
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vn, (11, 13)),
     baca.tools.ScorePitchCommand(
         source='A+3',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (va, (11, 13)),
     baca.tools.ScorePitchCommand(
         source='Bb2',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vc, (11, 13)),
     baca.tools.ScorePitchCommand(
         source='A2',

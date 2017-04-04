@@ -299,7 +299,7 @@ segment_maker.copy_rhythm(
 ###############################################################################
 
 ### (2) color ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (cl, (1, 5)),
     baca.tools.ScorePitchCommand(
         source='B1',
@@ -310,13 +310,13 @@ segment_maker.append_commands(
     (1, 5),
     Hairpin('ppp < ff'),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vc, (1, 9)),
     baca.tools.ScorePitchCommand(
         source='A1 B~1 C2 D+2 E+2 F2 Gb2 A~2 B2',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (va, (1, 9)),
     baca.tools.ScorePitchCommand(
         source='Bb2 C~3 D3 E+3 F+3 G3',
@@ -332,7 +332,7 @@ segment_maker.append_commands(
     dynamic_line_spanner_staff_padding(6),
     subito_ordinario,
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (ob, (1, 7)),
     baca.tools.ScorePitchCommand(
         source='B3',
@@ -345,7 +345,7 @@ segment_maker.append_commands(
     )
 
 ### (12) ###
-pitch_handler = segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     [
         ([pf, vn], (5, 12)),
         ([ob, cl], (9, 12)),
@@ -392,13 +392,13 @@ segment_maker.append_commands(
     )
 
 ### (12) va, vc two-note color pedals ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (va, (11, 12)),
     baca.tools.ScorePitchCommand(
         source='G3 F#+3',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vc, (11, 12)),
     baca.tools.ScorePitchCommand(
         source='B2 A#+2',
@@ -415,7 +415,7 @@ segment_maker.append_commands(
     )
 
 ### (5) pf harmonics and vn, va, vc thicket ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (pf, (14, 20)),
     baca.tools.ScorePitchCommand(
         source='C4',
@@ -430,7 +430,7 @@ segment_maker.append_commands(
     reiterated_ff,
     tenuti,
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     [
         ([vn, vc], (14, 20)),
         (va, (14, 19)),
@@ -478,7 +478,7 @@ segment_maker.append_commands(
     )
 
 ### bcl, ob pedals ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (cl, (18, 22)),
     baca.tools.ScorePitchCommand(
         source='C2',
@@ -490,7 +490,7 @@ segment_maker.append_commands(
     Hairpin('f < ff'),
     color_fingerings,
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (ob, (18, 22)),
     baca.tools.ScorePitchCommand(
         source='C4',
@@ -504,19 +504,19 @@ segment_maker.append_commands(
     )
 
 ### (14) string reiteration ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vn, 21),
     baca.tools.ScorePitchCommand(
         source='C4 Db4',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (va, (20, 21)),
     baca.tools.ScorePitchCommand(
         source='B+2 C3 B+2 C3',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vc, (20, 21)),
     baca.tools.ScorePitchCommand(
         source='B1 C2',

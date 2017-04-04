@@ -1,30 +1,17 @@
-1.  Remove SegmentMaker.make_pitch_handler().
-    Use pitch_specifier() factory function instead.
-
-2.  Implement SegmentMaker._set_start_instruments() method.
+1.  Implement SegmentMaker._set_start_instruments() method.
     Method find first music-maker in each context.
     And then set that instrument at start of segment.
 
-3.  Write test to find redundant instrument attachments.
+2.  Write test to find redundant instrument attachments.
 
-4.  Add instrument change markup to score.
+3.  Add instrument change markup to score.
     So that "bass clarinet" shows up immediately when assigned.
     (Right now appears only at start of next system.)
 
-5.  Add tempo map support for fermatas. And breath marks.
+4.  Add tempo map support for fermatas. And breath marks.
 
-6.  For next score:
+5.  For next score:
     Come up with a semantic way of handling 2/4-type measure inserts.
 
-7.  For next score:
-    Make map-making application.
-    Implement object model behind.
-    Provide ASCII or LateX output.
-
-8.  Extended SegmentMaker with a property to allow [A] to set
+6.  Extended SegmentMaker with a property to allow [A] to set
     top margin to 0 mm.
-
-9.  ClusterSpecifier mutates the score.
-    So any ClusterSpecifier should be applied first before other specifier.
-    Probably best to enforce by processing all cluster speicifers immediately
-    after pitch processing (and before other specifiers).

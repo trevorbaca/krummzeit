@@ -223,19 +223,19 @@ segment_maker.append_commands(
     harpsichord,
     )
 ### (14) string reiteration ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vn, 1),
     baca.tools.ScorePitchCommand(
         source='Db4',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (va, 1),
     baca.tools.ScorePitchCommand(
         source='C3',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vc, 1),
     baca.tools.ScorePitchCommand(
         source='C2',
@@ -257,7 +257,7 @@ segment_maker.append_commands(
     )
 
 ### (5.3) vn, va, vc thicket ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     ([vn, va, vc], (2, 4)),
     baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=8), abjad.Inversion()],
@@ -293,7 +293,7 @@ segment_maker.append_commands(
     )
 
 ### (11.1) ob, cl pedals ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     ([ob, cl], (3, 6)),
     baca.tools.ScorePitchCommand(
         source='D5',
@@ -311,13 +311,13 @@ segment_maker.append_commands(
     )
 
 ### (14) ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (ob, (7, 8)),
     baca.tools.ScorePitchCommand(
         source='Eb5',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (cl, (7, 8)),
     baca.tools.ScorePitchCommand(
         source='Eb2',
@@ -334,19 +334,19 @@ segment_maker.append_commands(
     abjad.Dynamic('ff'),
     color_fingerings,
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vn, (6, 8)),
     baca.tools.ScorePitchCommand(
         source='D5 Eb5 Eb5 Eb5',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (va, (6, 8)),
     baca.tools.ScorePitchCommand(
         source='D3 A3 A3 A3',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vc, (6, 8)),
     baca.tools.ScorePitchCommand(
         source='D3 E~2 E~2 E~2',
@@ -364,7 +364,7 @@ segment_maker.append_commands(
         #patterns=[abjad.rhythmmakertools.Pattern(indices=[1, 2, 3, 4])],
         patterns=[abjad.rhythmmakertools.select([1, 2, 3, 4])],
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     ([pf, perc], 8),
     baca.tools.ScorePitchCommand(
         source='F#6',

@@ -797,7 +797,7 @@ class SegmentMaker(experimental.tools.makertools.SegmentMaker):
         self.music_makers.append(music_maker)
         return music_maker
 
-    def make_pitch_handler(
+    def append_commands(
         self,
         scope,
         *specifiers

@@ -368,7 +368,7 @@ segment_maker.copy_rhythm(
 ###############################################################################
 
 ### (6.1) ob, cl ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (cl, (1, 2)),
     baca.tools.ScorePitchCommand(
         source='B3',
@@ -379,13 +379,13 @@ segment_maker.append_commands(
     (1, 2),
     abjad.Dynamic('ppp'),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (cl, (1, 2)),
     baca.tools.ScorePitchCommand(
         source='B3',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (ob, (1, 2)),
     baca.tools.ScorePitchCommand(
         source=violet_pitch_classes,    
@@ -420,19 +420,19 @@ segment_maker.append_commands(
     2,
     abjad.Dynamic('ff'),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vn, 2),
     baca.tools.ScorePitchCommand(
         source='A+3',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (va, 2),
     baca.tools.ScorePitchCommand(
         source='Bb2',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vc, 2),
     baca.tools.ScorePitchCommand(
         source='A2',
@@ -455,14 +455,14 @@ segment_maker.append_commands(
     )
 
 ### (5.1) ob, cl ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (ob, (4, 11)),
     baca.tools.ScorePitchCommand(
         counts=[3, 2, 4],
         source='C6 B+5 A5 G+5 F+5 E~5',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (cl, (4, 11)),
     baca.tools.ScorePitchCommand(
         counts=[3, 2, 4],
@@ -478,7 +478,7 @@ segment_maker.append_commands(
     )
 
 ### (5.3) vn, va, vc thicket ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     ([vn, va, vc], (4, 10)),
     baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=10)],
@@ -512,7 +512,7 @@ segment_maker.append_commands(
     )
 
 ### (7.1) points ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     ([pf, perc], (8, 15)),
     baca.tools.ScorePitchCommand(
         source='F5',
@@ -526,25 +526,25 @@ segment_maker.append_commands(
     )
 
 ### (4.2) va, vc, bass cl & (4.3) vn, ob ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (va, (13, 23)),
     baca.tools.ScorePitchCommand(
         source='F#3',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vc, (13, 23)),
     baca.tools.ScorePitchCommand(
         source='C2',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (cl, (13, 23)),
     baca.tools.ScorePitchCommand(
         source='Bb1',
         ),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (pf, (16, 18)),
     baca.tools.ScorePitchCommand(
         source='Bb0',
@@ -567,7 +567,7 @@ segment_maker.append_commands(
     (17, 22),
     abjad.Dynamic('pp'),
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (vn, (18, 22)),
     baca.tools.ScorePitchCommand(
         source='G5',
@@ -579,7 +579,7 @@ segment_maker.append_commands(
     abjad.Dynamic('ppp'),
     pervasive_A5_trills,
     )
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (ob, (18, 22)),
     baca.tools.ScorePitchCommand(
         source='A5',
@@ -593,7 +593,7 @@ segment_maker.append_commands(
     )
 
 ### (9.1) pf points ###
-segment_maker.make_pitch_handler(
+segment_maker.append_commands(
     (pf, (19, 22)),
     baca.tools.ScorePitchCommand(
         operators=[

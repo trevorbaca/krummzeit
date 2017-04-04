@@ -105,7 +105,7 @@ music_maker.stages = 1
 music_maker.voice_name = cl
 music_maker.instrument = e_flat_clarinet
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    counts=mathtools.Infinity,
+    counts=abjad.Infinity,
     secondary_division_maker=makertools.SplitByDurationsDivisionCallback(
         durations=[(3, 8)],
         ),
@@ -305,7 +305,7 @@ music_maker = segment_maker.define_rhythm()
 music_maker.stages = (26, 29)
 music_maker.voice_name = va
 music_maker.division_maker = makertools.FuseByCountsDivisionCallback(
-    counts=mathtools.Infinity,
+    counts=abjad.Infinity,
     secondary_division_maker=makertools.SplitByDurationsDivisionCallback(
         durations=[(1, 1), (2, 1), (3, 2)],
         ),
@@ -411,7 +411,7 @@ segment_maker.append_commands(
     (10, 19),
     baca.tools.DynamicSpecifier(
         hairpin_token='ff > pp',
-        patterns=[abjad.patterntools.Pattern(indices=[0, 1])],
+        patterns=[abjad.Pattern(indices=[0, 1])],
         ),
     )
 segment_maker.make_pitch_handler(
@@ -436,7 +436,7 @@ segment_maker.append_commands(
     (10, 19),
     baca.tools.DynamicSpecifier(
         hairpin_token='ff > pp',
-        patterns=[abjad.patterntools.Pattern(indices=[0, 1])],
+        patterns=[abjad.Pattern(indices=[0, 1])],
         ),
     )
 segment_maker.make_pitch_handler(

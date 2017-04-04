@@ -164,7 +164,7 @@ music_maker.instrument = tam_tam
 music_maker._hide_untuned_percussion_markup = True
 music_maker.clef = 'percussion'
 music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
-    counts=mathtools.Infinity,
+    counts=abjad.Infinity,
     secondary_division_maker=baca.tools.SplitByDurationsDivisionCallback(
         durations=[(1, 2)],
         ),
@@ -222,7 +222,7 @@ music_maker = segment_maker.define_rhythm()
 music_maker.stages = (1, 7)
 music_maker.voice_name = va
 music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
-    counts=mathtools.Infinity,
+    counts=abjad.Infinity,
     secondary_division_maker=baca.tools.SplitByDurationsDivisionCallback(
         durations=[(7, 4), (2, 8), (3, 8), (7, 4), (7, 4), (1, 4)],
         )

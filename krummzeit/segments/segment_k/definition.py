@@ -53,7 +53,7 @@ music_maker.stages = (1, 6)
 music_maker.voice_name = pf
 music_maker.instrument = harpsichord
 music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
-    counts=mathtools.Infinity,
+    counts=abjad.Infinity,
     secondary_division_maker=baca.tools.SplitByDurationsDivisionCallback(
         durations=[
             (16, 4), (16, 4), (16, 4), (16, 4), (16, 4), (14, 4), (2, 4),
@@ -69,10 +69,10 @@ music_maker.stages = (7, 12)
 music_maker.voice_name = pf
 music_maker.instrument = piano
 music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
-    counts=mathtools.Infinity,
+    counts=abjad.Infinity,
     )
 music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
-    counts=mathtools.Infinity,
+    counts=abjad.Infinity,
     secondary_division_maker=baca.tools.SplitByDurationsDivisionCallback(
         durations=[
             (16, 4),
@@ -87,10 +87,10 @@ music_maker.stages = (1, 12)
 music_maker.voice_name = perc
 music_maker.instrument = xylophone
 music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
-    counts=mathtools.Infinity,
+    counts=abjad.Infinity,
     )
 music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
-    counts=mathtools.Infinity,
+    counts=abjad.Infinity,
     secondary_division_maker=baca.tools.SplitByDurationsDivisionCallback(
         durations=[
             (16, 4),
@@ -145,7 +145,7 @@ music_maker = segment_maker.define_rhythm()
 music_maker.stages = (1, 10)
 music_maker.voice_name = ob
 music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
-    counts=mathtools.Infinity,
+    counts=abjad.Infinity,
     secondary_division_maker=baca.tools.SplitByDurationsDivisionCallback(
         durations=[(14, 4), (2, 4)],
         ),

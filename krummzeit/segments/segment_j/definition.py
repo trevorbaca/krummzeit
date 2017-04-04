@@ -107,7 +107,7 @@ music_maker = segment_maker.define_rhythm()
 music_maker.stages = 1, 3
 music_maker.voice_name = vn
 music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
-    counts=mathtools.Infinity,
+    counts=abjad.Infinity,
     secondary_division_maker=baca.tools.SplitByDurationsDivisionCallback(
         durations=[(1, 4)],
         ),
@@ -136,7 +136,7 @@ music_maker.stages = 3, 4
 music_maker.voice_name = pf
 music_maker.instrument = harpsichord
 music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
-    counts=mathtools.Infinity,
+    counts=abjad.Infinity,
     secondary_division_maker=baca.tools.SplitByDurationsDivisionCallback(
         durations=[(1, 4)],
         remainder=Left,

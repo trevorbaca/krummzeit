@@ -2,7 +2,7 @@
 import abjad
 
 
-metadata = abjad.TypedOrderedDict(
+metadata = abjad.datastructuretools.TypedOrderedDict(
     [
         ('name', 'H'),
         ('segment_count', 11),

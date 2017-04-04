@@ -47,7 +47,6 @@ violin = krummzeit.materials.performer_inventory.get_instrument('violin')
 viola = krummzeit.materials.performer_inventory.get_instrument('viola')
 cello = krummzeit.materials.performer_inventory.get_instrument('cello')
 
-
 ### CONTEXT NAMES ###
 
 ob = 'Oboe Music Voice'
@@ -58,8 +57,8 @@ vn = 'Violin Music Voice'
 va = 'Viola Music Voice'
 vc = 'Cello Music Voice'
 
-
 ### RHYTHM-MAKERS ###
+
 tied_notes = abjad.rhythmmakertools.NoteRhythmMaker(
     tie_specifier=abjad.rhythmmakertools.TieSpecifier(
         tie_across_divisions=True,
@@ -67,6 +66,7 @@ tied_notes = abjad.rhythmmakertools.NoteRhythmMaker(
     )
 
 ### MARKUP ###
+
 def make_effort_dynamic_markup(dynamic_text, direction=Down):
     left_quotes = abjad.Markup('“').italic().larger()
     dynamic_markup = abjad.Markup(dynamic_text).dynamic()
@@ -131,7 +131,7 @@ molto_flautando_e_pont = abjad.Markup(string, direction=Up).italic().larger()
 string = 'molto gridato ed estr. sul pont.'
 molto_gridato = abjad.Markup(string, direction=Up).italic().larger()
 
-natural_harmonics = baca.tools.OverrideSpecifier(
+natural_harmonics = baca.tools.OverrideCommand(
     grob_name='note_head',
     attribute_name='style',
     attribute_value="'harmonic'",
@@ -149,7 +149,6 @@ on_bridge = abjad.Markup(
     )
 on_bridge = on_bridge.larger()
 
-
 string = 'directly on bridge: very slow bow, imperceptible bow changes'
 on_bridge_slow = abjad.Markup(string, direction=Up).larger()
 
@@ -163,12 +162,12 @@ ppp_ancora += abjad.Markup('ancora').italic()
 
 ppp_subtone = abjad.Markup('ppp').dynamic() + abjad.Markup('subtone')
 
-reiterated_fff = baca.reiterated_dynamic( dynamic_name='fff')
-reiterated_ff = baca.reiterated_dynamic(dynamic_name='ff')
-reiterated_f = baca.reiterated_dynamic(dynamic_name='f')
-reiterated_mp = baca.reiterated_dynamic(dynamic_name='mp')
-reiterated_p = baca.reiterated_dynamic(dynamic_name='p')
-reiterated_pp = baca.reiterated_dynamic(dynamic_name='pp')
+reiterated_fff = baca.reiterated_dynamic('fff')
+reiterated_ff = baca.reiterated_dynamic('ff')
+reiterated_f = baca.reiterated_dynamic('f')
+reiterated_mp = baca.reiterated_dynamic('mp')
+reiterated_p = baca.reiterated_dynamic('p')
+reiterated_pp = baca.reiterated_dynamic('pp')
 
 scrape_moderately = abjad.Markup(
     'scrape in a circle at moderate speed',
@@ -189,35 +188,35 @@ subito_non_armonichi = abjad.Markup(string, direction=Up).italic().larger()
 subito_ordinario = abjad.Markup('subito ordinario', direction=Up).larger()
 
 def beam_positions(n):
-    return baca.tools.OverrideSpecifier(
+    return baca.tools.OverrideCommand(
         grob_name='beam',
         attribute_name='positions',
         attribute_value=str((n, n)),
         )
 
 def dynamic_line_spanner_staff_padding(n):
-    return baca.tools.OverrideSpecifier(
+    return baca.tools.OverrideCommand(
         grob_name='dynamic_line_spanner',
         attribute_name='staff_padding',
         attribute_value=str(n),
         )
 
 def markup_padding(n):
-    return baca.tools.OverrideSpecifier(
+    return baca.tools.OverrideCommand(
         grob_name='text_script',
         attribute_name='padding',
         attribute_value=str(n),
         )
 
 def stem_direction(direction):
-    return baca.tools.OverrideSpecifier(
+    return baca.tools.OverrideCommand(
         grob_name='stem',
         attribute_name='direction',
         attribute_value=str(direction),
         )
 
 def tie_direction(direction):
-    return baca.tools.OverrideSpecifier(
+    return baca.tools.OverrideCommand(
         grob_name='tie',
         attribute_name='direction',
         attribute_value=str(direction),
@@ -225,7 +224,7 @@ def tie_direction(direction):
 
 def tremolo_down(n, maximum_adjustment=-1.5):
     pair = (0, -n)
-    return baca.tools.OverrideSpecifier(
+    return baca.tools.OverrideCommand(
         grob_name='stem_tremolo',
         attribute_name='extra_offset',
         attribute_value=str(pair),
@@ -238,7 +237,7 @@ def tremolo_down(n, maximum_adjustment=-1.5):
         )
 
 def tuplet_bracket_staff_padding(n):
-    return baca.tools.OverrideSpecifier(
+    return baca.tools.OverrideCommand(
         grob_name='tuplet_bracket',
         attribute_name='staff_padding',
         attribute_value=str(n),
@@ -282,8 +281,6 @@ grid_poss_to_flaut_poss = abjad.spannertools.TextSpanner(
     }
 )
 
-
-
 ### PITCH ###
 
 def pitch_specifier(
@@ -304,7 +301,7 @@ def pitch_specifier(
 indigo_pitch_classes = krummzeit.materials.indigo_pitch_classes.get_payload()
 violet_pitch_classes = krummzeit.materials.violet_pitch_classes.get_payload()
 
-krummzeit_displacement = baca.tools.OctaveDisplacementSpecifier(
+krummzeit_displacement = baca.tools.OctaveDisplacementCommand(
     displacements=[
         0, 0, 0, 0, 0, 0, -1, 1, 1, 1, 1,
         0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 
@@ -312,14 +309,14 @@ krummzeit_displacement = baca.tools.OctaveDisplacementSpecifier(
         ],
     )
 
-color_fingerings = baca.tools.ColorFingeringSpecifier(
+color_fingerings = baca.tools.ColorFingeringCommand(
     deposit_annotations=['color fingering'],
     number_lists=(
         [0, 1, 2, 1],
         ),
     )
 
-color_microtones = baca.tools.MicrotonalDeviationSpecifier(
+color_microtones = baca.tools.MicrotonalDeviationCommand(
     deposit_annotations=['color microtone'],
     number_lists=(
         [0, -0.5, 0, 0.5],
@@ -327,16 +324,16 @@ color_microtones = baca.tools.MicrotonalDeviationSpecifier(
         ),
     )
 
-trill_quarter_notes = baca.tools.TrillSpecifier(
+trill_quarter_notes = baca.tools.TrillCommand(
     forbidden_annotations=['color fingering', 'color microtone'],
     minimum_written_duration=abjad.Duration(1, 4),
     )
 
-pervasive_trills = baca.tools.TrillSpecifier(
+pervasive_trills = baca.tools.TrillCommand(
     minimum_written_duration=None,
     )
 
-pervasive_A5_trills = baca.tools.TrillSpecifier(
+pervasive_A5_trills = baca.tools.TrillCommand(
     minimum_written_duration=None,
     pitch=abjad.NamedPitch('A5'),
     )
@@ -344,103 +341,103 @@ pervasive_A5_trills = baca.tools.TrillSpecifier(
 ### narrow registrations ###
 
 # +3
-narrow_second_octave = baca.tools.RegisterSpecifier(
+narrow_second_octave = baca.tools.RegisterCommand(
     registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', -26), ('[F#4, C8]', -23)],
         ),
     )
 
 # +3
-narrow_third_octave = baca.tools.RegisterSpecifier(
+narrow_third_octave = baca.tools.RegisterCommand(
     registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', -14), ('[F#4, C8]', -11)],
         ),
     )
 
 # +3
-narrow_fourth_octave = baca.tools.RegisterSpecifier(
+narrow_fourth_octave = baca.tools.RegisterCommand(
     registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', -2), ('[F#4, C8]', 1)],
         ),
     )
 
 # +3
-narrow_fifth_octave = baca.tools.RegisterSpecifier(
+narrow_fifth_octave = baca.tools.RegisterCommand(
     registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', 10), ('[F#4, C8]', 13)],
         ),
     )
 
 # +3
-narrow_sixth_octave = baca.tools.RegisterSpecifier(
+narrow_sixth_octave = baca.tools.RegisterCommand(
     registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', 22), ('[F#4, C8]', 25)],
         ),
     )
 
 # +3
-narrow_seventh_octave = baca.tools.RegisterSpecifier(
+narrow_seventh_octave = baca.tools.RegisterCommand(
     registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', 34), ('[F#4, C8]', 37)],
         ),
     )
 
 # ascending
-narrow_second_to_fifth_octave = baca.tools.RegisterTransitionSpecifier(
+narrow_second_to_fifth_octave = baca.tools.RegisterTransitionCommand(
     start_registration=narrow_second_octave.registration,
     stop_registration=narrow_fifth_octave.registration,
     )
-narrow_third_to_fifth_octave = baca.tools.RegisterTransitionSpecifier(
+narrow_third_to_fifth_octave = baca.tools.RegisterTransitionCommand(
     start_registration=narrow_third_octave.registration,
     stop_registration=narrow_fifth_octave.registration,
     )
-narrow_fourth_to_fifth_octave = baca.tools.RegisterTransitionSpecifier(
+narrow_fourth_to_fifth_octave = baca.tools.RegisterTransitionCommand(
     start_registration=narrow_fourth_octave.registration,
     stop_registration=narrow_fifth_octave.registration,
     )
-narrow_fourth_to_sixth_octave = baca.tools.RegisterTransitionSpecifier(
+narrow_fourth_to_sixth_octave = baca.tools.RegisterTransitionCommand(
     start_registration=narrow_fourth_octave.registration,
     stop_registration=narrow_sixth_octave.registration,
     )
-narrow_fifth_to_sixth_octave = baca.tools.RegisterTransitionSpecifier(
+narrow_fifth_to_sixth_octave = baca.tools.RegisterTransitionCommand(
     start_registration=narrow_fifth_octave.registration,
     stop_registration=narrow_sixth_octave.registration,
     )
 
 # descending
-narrow_seventh_to_fifth_octave = baca.tools.RegisterTransitionSpecifier(
+narrow_seventh_to_fifth_octave = baca.tools.RegisterTransitionCommand(
     start_registration=narrow_seventh_octave.registration,
     stop_registration=narrow_fifth_octave.registration,
     )
-narrow_sixth_to_fifth_octave = baca.tools.RegisterTransitionSpecifier(
+narrow_sixth_to_fifth_octave = baca.tools.RegisterTransitionCommand(
     start_registration=narrow_sixth_octave.registration,
     stop_registration=narrow_fifth_octave.registration,
     )
-narrow_sixth_to_fourth_octave = baca.tools.RegisterTransitionSpecifier(
+narrow_sixth_to_fourth_octave = baca.tools.RegisterTransitionCommand(
     start_registration=narrow_sixth_octave.registration,
     stop_registration=narrow_fourth_octave.registration,
     )
-narrow_fifth_to_fourth_octave = baca.tools.RegisterTransitionSpecifier(
+narrow_fifth_to_fourth_octave = baca.tools.RegisterTransitionCommand(
     start_registration=narrow_fifth_octave.registration,
     stop_registration=narrow_fourth_octave.registration,
     )
-narrow_fifth_to_third_octave = baca.tools.RegisterTransitionSpecifier(
+narrow_fifth_to_third_octave = baca.tools.RegisterTransitionCommand(
     start_registration=narrow_fifth_octave.registration,
     stop_registration=narrow_third_octave.registration,
     )
-narrow_fifth_to_second_octave = baca.tools.RegisterTransitionSpecifier(
+narrow_fifth_to_second_octave = baca.tools.RegisterTransitionCommand(
     start_registration=narrow_fifth_octave.registration,
     stop_registration=narrow_second_octave.registration,
     )
-narrow_fourth_to_third_octave = baca.tools.RegisterTransitionSpecifier(
+narrow_fourth_to_third_octave = baca.tools.RegisterTransitionCommand(
     start_registration=narrow_fourth_octave.registration,
     stop_registration=narrow_third_octave.registration,
     )
-narrow_fourth_to_second_octave = baca.tools.RegisterTransitionSpecifier(
+narrow_fourth_to_second_octave = baca.tools.RegisterTransitionCommand(
     start_registration=narrow_fourth_octave.registration,
     stop_registration=narrow_second_octave.registration,
     )
-narrow_third_to_second_octave = baca.tools.RegisterTransitionSpecifier(
+narrow_third_to_second_octave = baca.tools.RegisterTransitionCommand(
     start_registration=narrow_third_octave.registration,
     stop_registration=narrow_second_octave.registration,
     )
@@ -449,82 +446,78 @@ narrow_third_to_second_octave = baca.tools.RegisterTransitionSpecifier(
 alternate_bow_strokes = baca.alternate_bow_strokes()
 marcati = baca.marcati()
 staccati = baca.staccati()
-staccatissimi = baca.staccatissim()
+staccatissimi = baca.staccatissimi()
 tenuti = baca.tenuti()
     
 ### wide registrations ###
 
 # +14
-wide_third_octave = baca.tools.RegisterSpecifier(
+wide_third_octave = baca.tools.RegisterCommand(
     registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', -20), ('[F#4, C8]', -6)]
         ),
     )
 
 # +14
-wide_fourth_octave = baca.tools.RegisterSpecifier(
+wide_fourth_octave = baca.tools.RegisterCommand(
     registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', -8), ('[F#4, C8]', 6)]
         ),
     )
 
 # +14
-wide_fifth_octave = baca.tools.RegisterSpecifier(
+wide_fifth_octave = baca.tools.RegisterCommand(
     registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', 4), ('[F#4, C8]', 18)]
         ),
     )
 
 # +14
-wide_sixth_octave = baca.tools.RegisterSpecifier(
+wide_sixth_octave = baca.tools.RegisterCommand(
     registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', 16), ('[F#4, C8]', 30)]
         ),
     )
 
 # +14
-wide_seventh_octave = baca.tools.RegisterSpecifier(
+wide_seventh_octave = baca.tools.RegisterCommand(
     registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', 28), ('[F#4, C8]', 42)]
         ),
     )
 
-### dynamics
+### dynamics ###
 
-patterned_f_ff = baca.reiterated_dynamics(
+patterned_f_ff = baca.reiterated_dynamic(
     ['f', 'f', 'ff', 'f', 'ff', 'f', 'f', 'ff', 'ff'],
     )
 
-repeated_p_to_ppp = baca.tools.HairpinSpecifier(
+repeated_p_to_ppp = baca.tools.HairpinCommand(
     hairpin_tokens=['p > ppp'],
     )
-repeated_pp_to_ff = baca.tools.HairpinSpecifier(
+repeated_pp_to_ff = baca.tools.HairpinCommand(
     hairpin_tokens=['pp < ff'],
     )
 
-### miscellaneous
+### miscellaneous ###
 
-### clusters ###
-
-harpsichord_cluster = baca.tools.ClusterSpecifier(
+harpsichord_cluster = baca.tools.ClusterCommand(
     start_pitch=abjad.NamedPitch('D4'),
     #stop_pitch=abjad.NamedPitch('E5'),
     widths=[4],
     )
 
-low_piano_cluster = baca.tools.ClusterSpecifier(
+low_piano_cluster = baca.tools.ClusterCommand(
     start_pitch=abjad.NamedPitch('C1'),
     #stop_pitch=abjad.NamedPitch('C3'),
     widths=[7],
     )
 
-tenor_piano_cluster = baca.tools.ClusterSpecifier(
+tenor_piano_cluster = baca.tools.ClusterCommand(
     start_pitch=abjad.NamedPitch('A2'),
     #stop_pitch=abjad.NamedPitch('B3'),
     widths=[4],
     )
-
-### miscellaneous ###
 
 silence_first = [abjad.patterntools.Pattern(indices=[0])]
 silence_last = [abjad.patterntools.Pattern(indices=[-1])]
@@ -532,4 +525,4 @@ silence_last = [abjad.patterntools.Pattern(indices=[-1])]
 ottava = abjad.spannertools.OctavationSpanner(start=1, stop=0)
 ottava_bassa = abjad.spannertools.OctavationSpanner(start=-1, stop=0)
 
-stem_tremolo = baca.tools.StemTremoloSpecifier(tremolo_flags=32)
+stem_tremolo = baca.tools.StemTremoloCommand(tremolo_flags=32)

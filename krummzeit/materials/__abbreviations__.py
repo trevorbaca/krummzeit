@@ -343,42 +343,42 @@ pervasive_A5_trills = baca.tools.TrillCommand(
 
 # +3
 narrow_second_octave = baca.tools.RegisterCommand(
-    registration=abjad.pitchtools.Registration(
+    registration=abjad.Registration(
         [('[A0, F#4)', -26), ('[F#4, C8]', -23)],
         ),
     )
 
 # +3
 narrow_third_octave = baca.tools.RegisterCommand(
-    registration=abjad.pitchtools.Registration(
+    registration=abjad.Registration(
         [('[A0, F#4)', -14), ('[F#4, C8]', -11)],
         ),
     )
 
 # +3
 narrow_fourth_octave = baca.tools.RegisterCommand(
-    registration=abjad.pitchtools.Registration(
+    registration=abjad.Registration(
         [('[A0, F#4)', -2), ('[F#4, C8]', 1)],
         ),
     )
 
 # +3
 narrow_fifth_octave = baca.tools.RegisterCommand(
-    registration=abjad.pitchtools.Registration(
+    registration=abjad.Registration(
         [('[A0, F#4)', 10), ('[F#4, C8]', 13)],
         ),
     )
 
 # +3
 narrow_sixth_octave = baca.tools.RegisterCommand(
-    registration=abjad.pitchtools.Registration(
+    registration=abjad.Registration(
         [('[A0, F#4)', 22), ('[F#4, C8]', 25)],
         ),
     )
 
 # +3
 narrow_seventh_octave = baca.tools.RegisterCommand(
-    registration=abjad.pitchtools.Registration(
+    registration=abjad.Registration(
         [('[A0, F#4)', 34), ('[F#4, C8]', 37)],
         ),
     )
@@ -454,35 +454,35 @@ tenuti = baca.tenuti()
 
 # +14
 wide_third_octave = baca.tools.RegisterCommand(
-    registration=abjad.pitchtools.Registration(
+    registration=abjad.Registration(
         [('[A0, F#4)', -20), ('[F#4, C8]', -6)]
         ),
     )
 
 # +14
 wide_fourth_octave = baca.tools.RegisterCommand(
-    registration=abjad.pitchtools.Registration(
+    registration=abjad.Registration(
         [('[A0, F#4)', -8), ('[F#4, C8]', 6)]
         ),
     )
 
 # +14
 wide_fifth_octave = baca.tools.RegisterCommand(
-    registration=abjad.pitchtools.Registration(
+    registration=abjad.Registration(
         [('[A0, F#4)', 4), ('[F#4, C8]', 18)]
         ),
     )
 
 # +14
 wide_sixth_octave = baca.tools.RegisterCommand(
-    registration=abjad.pitchtools.Registration(
+    registration=abjad.Registration(
         [('[A0, F#4)', 16), ('[F#4, C8]', 30)]
         ),
     )
 
 # +14
 wide_seventh_octave = baca.tools.RegisterCommand(
-    registration=abjad.pitchtools.Registration(
+    registration=abjad.Registration(
         [('[A0, F#4)', 28), ('[F#4, C8]', 42)]
         ),
     )

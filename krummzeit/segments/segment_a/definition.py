@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import abjad
+import baca
 import krummzeit
 from krummzeit.materials.__abbreviations__ import *
 
@@ -32,7 +33,7 @@ maker = baca.tools.TimeSignatureMaker(
     )
 measures_per_stage, tempo_specifier, time_signatures = maker()
 
-segment_maker = baca.tools.SegmentMaker(
+segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     label_stages=False,
     measures_per_stage=measures_per_stage,
@@ -74,7 +75,7 @@ music_maker = segment_maker.append_commands(
 segment_maker.copy_specifier(
     (vn, 1),
     baca.tools.SimpleScope(va, (1, 1)),
-    )
+    ) 
 
 segment_maker.copy_specifier(
     (vn, 1),

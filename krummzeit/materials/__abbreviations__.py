@@ -174,7 +174,6 @@ scrape_moderately = abjad.Markup(
     'scrape in a circle at moderate speed',
     direction=Up,
     )
-scrape_moderately = scrape_moderately.larger()
 
 senza_pedale = abjad.Markup('senza pedale', direction=Up)
 senza_pedale = senza_pedale.italic()

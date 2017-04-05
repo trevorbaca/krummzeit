@@ -35,49 +35,51 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
                     \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                     }
                 >>
-                \context WindSectionStaffGroup = "Wind Section Staff Group" <<
-                    \tag winds.oboe
-                    \context OboeMusicStaff = "Oboe Music Staff" {
-                        \context OboeMusicVoice = "Oboe Music Voice" {
+                \context MusicContext = "Music Context" {
+                    \context WindSectionStaffGroup = "Wind Section Staff Group" <<
+                        \tag winds.oboe
+                        \context OboeMusicStaff = "Oboe Music Staff" {
+                            \context OboeMusicVoice = "Oboe Music Voice" {
+                            }
                         }
-                    }
-                    \tag winds.clarinet
-                    \context ClarinetMusicStaff = "Clarinet Music Staff" {
-                        \context ClarinetMusicVoice = "Clarinet Music Voice" {
+                        \tag winds.clarinet
+                        \context ClarinetMusicStaff = "Clarinet Music Staff" {
+                            \context ClarinetMusicVoice = "Clarinet Music Voice" {
+                            }
                         }
-                    }
-                >>
-                \context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
-                    \tag percussion.piano
-                    \context PianoMusicStaff = "Piano Music Staff" {
-                        \context PianoMusicVoice = "Piano Music Voice" {
+                    >>
+                    \context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
+                        \tag percussion.piano
+                        \context PianoMusicStaff = "Piano Music Staff" {
+                            \context PianoMusicVoice = "Piano Music Voice" {
+                            }
                         }
-                    }
-                    \tag percussion
-                    \context PercussionMusicStaff = "Percussion Staff" {
-                        \context PercussionMusicVoice = "Percussion Music Voice" {
+                        \tag percussion
+                        \context PercussionMusicStaff = "Percussion Staff" {
+                            \context PercussionMusicVoice = "Percussion Music Voice" {
+                            }
                         }
-                    }
-                >>
-                \context StringSectionStaffGroup = "String Section Staff Group" <<
-                    \tag strings.violin
-                    \context ViolinMusicStaff = "Violin Music Staff" {
-                        \context ViolinMusicVoice = "Violin Music Voice" {
+                    >>
+                    \context StringSectionStaffGroup = "String Section Staff Group" <<
+                        \tag strings.violin
+                        \context ViolinMusicStaff = "Violin Music Staff" {
+                            \context ViolinMusicVoice = "Violin Music Voice" {
+                            }
                         }
-                    }
-                    \tag strings.viola
-                    \context ViolaMusicStaff = "Viola Music Staff" {
-                        \clef "alto"
-                        \context ViolaMusicVoice = "Viola Music Voice" {
+                        \tag strings.viola
+                        \context ViolaMusicStaff = "Viola Music Staff" {
+                            \clef "alto"
+                            \context ViolaMusicVoice = "Viola Music Voice" {
+                            }
                         }
-                    }
-                    \tag strings.cello
-                    \context CelloMusicStaff = "Cello Music Staff" {
-                        \clef "bass"
-                        \context CelloMusicVoice = "Cello Music Voice" {
+                        \tag strings.cello
+                        \context CelloMusicStaff = "Cello Music Staff" {
+                            \clef "bass"
+                            \context CelloMusicVoice = "Cello Music Voice" {
+                            }
                         }
-                    }
-                >>
+                    >>
+                }
             >>
 
         Returns score.
@@ -195,22 +197,20 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
             context_name='StringSectionStaffGroup',
             name='String Section Staff Group',
             )
+#        music_context = abjad.Context(
+#            [
+#                ],
+#            context_name='MusicContext',
+#            name='Music Context',
+#            )
         score = abjad.Score(
             [
-            time_signature_context,
-            wind_section_staff_group,
-            percussion_section_staff_group,
-            string_section_staff_group,
-            ],
+                time_signature_context,
+                #music_context,
+                wind_section_staff_group,
+                percussion_section_staff_group,
+                string_section_staff_group,
+                ],
             name='Score',
             )
         return score
-
-    ### PRIVATE METHODS ###
-
-    def _attach_tag(self, instrument_tag, context):
-        assert isinstance(instrument_tag, str), repr(str)
-        tag_string = 'tag {}'.format(instrument_tag)
-        tag_command = abjad.LilyPondCommand(
-            tag_string, 'before')
-        abjad.attach(tag_command, context)

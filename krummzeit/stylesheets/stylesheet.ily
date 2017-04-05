@@ -1,6 +1,6 @@
 #(set-default-paper-size "11x17" 'landscape)
 #(set-global-staff-size 16)
-#
+
 \include "/Users/trevorbaca/baca/baca/stylesheets/scheme.ily"
 \include "default-instrument-names.ily"
 
@@ -330,11 +330,19 @@
         \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 26
     }
     \context {
-        \Score
-        \accepts TimeSignatureContext
+        \StaffGroup
+        \name MusicContext
+        \type Engraver_group
+        \alias StaffGroup
         \accepts WindSectionStaffGroup
         \accepts PercussionSectionStaffGroup
         \accepts StringSectionStaffGroup
+        systemStartDelimiter = #'SystemStartBar
+    }
+    \context {
+        \Score
+        \accepts TimeSignatureContext
+        \accepts MusicContext
         \remove Bar_number_engraver
         \remove Mark_engraver
         \remove Metronome_mark_engraver

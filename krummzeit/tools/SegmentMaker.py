@@ -729,7 +729,7 @@ class SegmentMaker(experimental.tools.makertools.SegmentMaker):
 
     ### PUBLIC METHODS ###
 
-    def copy_rhythm(self, _voice_name, _stage, **keywords):
+    def copy_specifier(self, _voice_name, _stage, **keywords):
         r'''Gets music-maker with `_voice_name` defined for `_stage`.
         Then makes new music-maker from this with optional `keywords`.
 
@@ -785,7 +785,7 @@ class SegmentMaker(experimental.tools.makertools.SegmentMaker):
             scoped_specifiers.append(scoped_specifier)
         return scoped_specifiers
 
-    def define_rhythm(self):
+    def append_commands(self):
         r'''Makes rhythm specifier.
 
         Appends rhythm specifier to segment-maker.

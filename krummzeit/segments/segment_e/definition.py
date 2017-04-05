@@ -36,7 +36,7 @@ segment_maker.validate_measures_per_stage()
 ################################## TEMPO MAP ##################################
 ###############################################################################
 
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 segment_maker.tempo_specifier = [
     (1, krummzeit.materials.named_tempi['36']),
     (4, abjad.Accelerando()),
@@ -52,7 +52,7 @@ segment_maker.tempo_specifier = [
 ###############################################################################
 
 ### tam-tam [E1] ###
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 music_maker.stages = 1
 music_maker.voice_name = perc
 music_maker.instrument = tam_tam
@@ -71,7 +71,7 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.IncisedRhythmMaker(
     )
 
 ### vn, vc [E1-5] & va [E1-3] (white OB bowing) ###
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 music_maker.stages = 1, 5
 music_maker.voice_name = vn
 music_maker.division_maker = baca.tools.SplitByDurationsDivisionCallback(
@@ -79,13 +79,13 @@ music_maker.division_maker = baca.tools.SplitByDurationsDivisionCallback(
     )
 music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker() 
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     vn,
     1,
     voice_name=vc,
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     vn,
     1,
     voice_name=va,
@@ -93,7 +93,7 @@ segment_maker.copy_rhythm(
     )
 
 ### sponges [E3-6] ###
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 music_maker.stages = 3, 6
 music_maker.voice_name = perc
 music_maker.instrument = sponges
@@ -104,7 +104,7 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.TaleaRhythmMaker(
     )
 
 ### va [E4-7] glissando thicket ###
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 music_maker.stages = 4
 music_maker.voice_name = va
 music_maker.division_maker = baca.tools.SplitByRoundedRatiosDivisionCallback(
@@ -123,21 +123,21 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
     division_masks=[abjad.rhythmmakertools.Pattern(indices=[5, 6], period=7)],
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     va,
     4,
     stages=(5, 7),
     rhythm_maker__division_masks=[abjad.rhythmmakertools.Pattern(indices=[0])],
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     va,
     4,
     voice_name=vn,
     stages=6,
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     va,
     4,
     voice_name=vc,
@@ -147,14 +147,14 @@ segment_maker.copy_rhythm(
         abjad.rhythmmakertools.Pattern(indices=[0, 1, 2])],
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     va,
     5,
     voice_name=vn,
     stages=7,
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     va,
     5,
     voice_name=vc,
@@ -166,14 +166,14 @@ segment_maker.copy_rhythm(
         ],
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     va,
     4,
     stages=9,
     rhythm_maker__division_masks=None,
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     va,
     4,
     voice_name=vn,
@@ -182,7 +182,7 @@ segment_maker.copy_rhythm(
     rhythm_maker__division_masks=None,
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     va,
     4,
     voice_name=vc,
@@ -192,7 +192,7 @@ segment_maker.copy_rhythm(
     )
 
 ### pf, xyl [E8] ###
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 music_maker.stages = 8
 music_maker.voice_name = pf
 music_maker.instrument = piano
@@ -209,7 +209,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     pf,
     8,
     voice_name=perc,
@@ -220,7 +220,7 @@ segment_maker.copy_rhythm(
     )
 
 ### pf, xyl [E10-11] ###
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     pf,
     8,
     stages=(10, 11),
@@ -228,7 +228,7 @@ segment_maker.copy_rhythm(
         abjad.rhythmmakertools.Pattern(indices=[2], period=7)],
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     perc,
     8,
     stages=(10, 11),
@@ -237,7 +237,7 @@ segment_maker.copy_rhythm(
     )
 
 ### ob, cl [E5-7] & [E10-12] ###
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 music_maker.stages = (5, 7)
 music_maker.voice_name = ob
 music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
@@ -259,7 +259,7 @@ music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     ob,
     5,
     voice_name=cl,
@@ -278,20 +278,20 @@ segment_maker.copy_rhythm(
         abjad.rhythmmakertools.Pattern(indices=[0])],
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     ob,
     5,
     stages=(10, 12),
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     cl,
     5,
     stages=(10, 12),
     )
 
 ### vn, va, vc [E11] & vn, va, vc, pf [E13] ###
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 music_maker.stages = 11
 music_maker.voice_name = vn
 music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
@@ -307,19 +307,19 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
         abjad.rhythmmakertools.Pattern(indices=[2], period=5)],
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     vn,
     11,
     voice_name=va,
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     vn,
     11,
     voice_name=vc,
     )
 
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 music_maker.stages = 13
 music_maker.voice_name = vn
 music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
@@ -336,19 +336,19 @@ music_maker.rhythm_maker = rhythmmakertools.IncisedRhythmMaker(
         ),
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     vn,
     13,
     voice_name=va,
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     vn,
     13,
     voice_name=vc,
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     vn,
     13,
     voice_name=pf,
@@ -356,7 +356,7 @@ segment_maker.copy_rhythm(
     )
 
 ### pf [E4-7] ###
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     va,
     4,
     voice_name=pf,
@@ -370,7 +370,7 @@ segment_maker.copy_rhythm(
         ),
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     va,
     5,
     voice_name=pf,
@@ -382,7 +382,7 @@ segment_maker.copy_rhythm(
         ),
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     va,
     9,
     voice_name=pf,
@@ -611,7 +611,7 @@ segment_maker.append_commands(
     )
 
 ### suspended cymbal ###
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 music_maker.stages = (12, 13)
 music_maker.voice_name = perc
 music_maker.instrument = suspended_cymbal

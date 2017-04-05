@@ -37,7 +37,7 @@ segment_maker.validate_measures_per_stage()
 ################################## TEMPO MAP ##################################
 ###############################################################################
 
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 segment_maker.tempo_specifier = [
     (1, krummzeit.materials.named_tempi['108']),
     (2, krummzeit.materials.named_tempi['135']),
@@ -57,7 +57,7 @@ segment_maker.tempo_specifier = [
 ###############################################################################
 
 ### ob, cl [F1-8] ornamemented + unadorned ###
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 music_maker.voice_name = ob
 music_maker.stages = 1
 music_maker.division_maker = baca.tools.SplitByRoundedRatiosDivisionCallback(
@@ -71,13 +71,13 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
     division_masks=[abjad.rhythmmakertools.Pattern(indices=[3, 4], period=6)],
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     ob,
     1,
     stages=2,
     )
 
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 music_maker.voice_name = cl
 music_maker.instrument = e_flat_clarinet
 music_maker.stages = 1, 2
@@ -90,7 +90,7 @@ music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
 music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker()
 
 ### pf, vn, va, vc [F2] ###
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 music_maker.voice_name = vn
 music_maker.stages = 2
 music_maker.rhythm_maker = abjad.rhythmmakertools.IncisedRhythmMaker(
@@ -107,10 +107,10 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.IncisedRhythmMaker(
         ),
     )
 
-segment_maker.copy_rhythm(vn, 2, voice_name=va)
-segment_maker.copy_rhythm(vn, 2, voice_name=vc)
+segment_maker.copy_specifier(vn, 2, voice_name=va)
+segment_maker.copy_specifier(vn, 2, voice_name=vc)
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     vn,
     2,
     voice_name=pf,
@@ -119,7 +119,7 @@ segment_maker.copy_rhythm(
     )
 
 ### suspended cymbal [F1-4] ###
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 music_maker.voice_name = perc
 music_maker.stages = 1, 6
 music_maker.instrument = suspended_cymbal
@@ -130,10 +130,10 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.TaleaRhythmMaker(
     extra_counts_per_division=[2, 1, 0],
     )
 
-segment_maker.copy_rhythm(perc, 2, stages=(17, 22))
+segment_maker.copy_specifier(perc, 2, stages=(17, 22))
 
 ### vn, va, vc [F4-10] glissando thicket (thinner) ###
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 music_maker.voice_name = vn
 music_maker.stages = 4, 10
 music_maker.division_maker = baca.tools.SplitByRoundedRatiosDivisionCallback(
@@ -148,7 +148,7 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
     division_masks=[abjad.rhythmmakertools.Pattern(indices=[5, 6], period=7)],
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     vn,
     4,
     voice_name=va,
@@ -157,7 +157,7 @@ segment_maker.copy_rhythm(
         abjad.rhythmmakertools.Pattern(indices=[0, 1], period=7)],
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     vn,
     4,
     voice_name=vc,
@@ -167,7 +167,7 @@ segment_maker.copy_rhythm(
     )
 
 ### ob, cl [F4-11] ###
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 music_maker.voice_name = ob
 music_maker.stages = 4, 11
 music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
@@ -189,7 +189,7 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     ob,
     4,
     voice_name=cl,
@@ -209,7 +209,7 @@ segment_maker.copy_rhythm(
     )
 
 ### pf, xyl [F8] & [F10-15] ###
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 music_maker.voice_name = pf
 music_maker.stages = 8
 music_maker.clef = 'treble'
@@ -226,9 +226,9 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_rhythm(pf, 8, stages=(10, 15))
+segment_maker.copy_specifier(pf, 8, stages=(10, 15))
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     pf,
     8,
     voice_name=perc,
@@ -238,10 +238,10 @@ segment_maker.copy_rhythm(
     division_maker__ratios=[(2, 1), (1, 2)],
     )
 
-segment_maker.copy_rhythm(perc, 8, stages=(10, 15))
+segment_maker.copy_specifier(perc, 8, stages=(10, 15))
 
 ### cl, va, vc [F13] 3rd-octave interweave ###
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 music_maker.voice_name = cl
 music_maker.instrument = bass_clarinet
 music_maker.stages = 13
@@ -260,14 +260,14 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.IncisedRhythmMaker(
         ),
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     cl,
     13,
     voice_name=va,
     instrument=None,
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     cl,
     13,
     voice_name=vc,
@@ -275,7 +275,7 @@ segment_maker.copy_rhythm(
     )
 
 ### cl, va, vc [F16-19] & [F22-23] 3rd-octave interweave ###
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 music_maker.voice_name = cl
 music_maker.stages = 16, 19
 music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
@@ -293,25 +293,25 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.IncisedRhythmMaker(
         ),
     )
 
-segment_maker.copy_rhythm(cl, 16, stages=(22, 23))
+segment_maker.copy_specifier(cl, 16, stages=(22, 23))
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     cl,
     16,
     voice_name=va,
     )
 
-segment_maker.copy_rhythm(va, 16, stages=(22, 23))
+segment_maker.copy_specifier(va, 16, stages=(22, 23))
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     cl,
     16,
     voice_name=vc,
     )
 
-segment_maker.copy_rhythm(vc, 16, stages=(22, 23))
+segment_maker.copy_specifier(vc, 16, stages=(22, 23))
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     cl,
     16,
     voice_name=pf,
@@ -319,7 +319,7 @@ segment_maker.copy_rhythm(
     )
 
 ### ob, vn [F18-22] interweave (layer 2) ###
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 music_maker.voice_name = ob
 music_maker.stages = 18, 22
 music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
@@ -336,14 +336,14 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
         ),
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     ob,
     18,
     voice_name=vn,
     )
 
 ### pf [F19-20] & [F22] pointillism ###
-music_maker = segment_maker.define_rhythm()
+music_maker = segment_maker.append_commands()
 music_maker.voice_name = pf
 music_maker.stages = (19, 20)
 music_maker.rhythm_maker = abjad.rhythmmakertools.TaleaRhythmMaker(
@@ -357,7 +357,7 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.TaleaRhythmMaker(
         abjad.rhythmmakertools.Pattern(indices=[0, 4, 5], period=6)],
     )
 
-segment_maker.copy_rhythm(
+segment_maker.copy_specifier(
     pf,
     19,
     stages=22,

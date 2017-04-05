@@ -1,5 +1,8 @@
 #(set-default-paper-size "11x17" 'landscape)
 #(set-global-staff-size 16)
+#
+\include "/Users/trevorbaca/baca/baca/stylesheets/scheme.ily"
+\include "default-instrument-names.ily"
 
 \paper {
     %bottom-margin = 10\mm
@@ -87,20 +90,45 @@
     ragged-last = ##t
     ragged-right = ##t
     \context {
+        \name TimeSignatureContextSkips
+        \type Engraver_group
+        \consists Staff_symbol_engraver
+        \consists Script_engraver
+        \consists Text_engraver
+        \consists Text_spanner_engraver
+        \override StaffSymbol.stencil = ##f
+        \override TextScript.font-size = 6
+        \override TextScript.outside-staff-priority = 600
+        \override TextScript.staff-padding = 3
+        \override TextSpanner.bound-details.right.attach-dir = #LEFT
+        \override TextSpanner.font-size = 6
+        \override TextSpanner.staff-padding = 4
+        }
+    \context {
+        \name TimeSignatureContextMultimeasureRests
+        \type Engraver_group
+        \consists Multi_measure_rest_engraver
+        \override MultiMeasureRest.transparent = ##t
+        \override MultiMeasureRestText.font-size = 3
+        \override MultiMeasureRestText.outside-staff-priority = 0
+        \override MultiMeasureRestText.padding = 0
+        }
+    \context {
         \name TimeSignatureContext
         \type Engraver_group
         \consists Axis_group_engraver
         \consists Bar_number_engraver
         \consists Mark_engraver
         \consists Metronome_mark_engraver
-        \consists Script_engraver
-        \consists Text_engraver
-        \consists Text_spanner_engraver
+        %\consists Script_engraver
+        %\consists Text_engraver
+        %\consists Text_spanner_engraver
         \consists Time_signature_engraver
+        \accepts TimeSignatureContextSkips
+        \accepts TimeSignatureContextMultimeasureRests
         \override BarNumber.extra-offset = #'(-6 . -4)
         \override BarNumber.font-size = 1
         \override BarNumber.padding = 4
-        \override BarNumber.stencil = #(make-stencil-circler 0.1 0.7 ly:text-interface::print)
         \override MetronomeMark.X-extent = #'(0 . 0)
         \override MetronomeMark.Y-extent = #'(0 . 0)
         \override MetronomeMark.break-align-symbols = #'(left-edge)
@@ -115,13 +143,13 @@
         \override RehearsalMark.font-size = 10
         \override RehearsalMark.outside-staff-priority = 500
         \override RehearsalMark.self-alignment-X = #center
-        \override Script.font-size = 6
-        \override Script.extra-offset = #'(4 . -9)
-        \override TextScript.font-size = 3
-        \override TextScript.outside-staff-priority = 600
-        \override TextScript.padding = 6
-        \override TextSpanner.bound-details.right.attach-dir = #LEFT
-        \override TextSpanner.padding = 6.75
+        %\override Script.font-size = 6
+        %\override Script.extra-offset = #'(4 . -9)
+        %\override TextScript.font-size = 3
+        %\override TextScript.outside-staff-priority = 600
+        %\override TextScript.padding = 6
+        %\override TextSpanner.bound-details.right.attach-dir = #LEFT
+        %\override TextSpanner.padding = 6.75
         \override TimeSignature.X-extent = #'(0 . 0)
         \override TimeSignature.break-align-symbol = #'left-edge
         \override TimeSignature.break-visibility = #end-of-line-invisible
@@ -156,11 +184,11 @@
         \type Engraver_group
         \alias Staff
         \accepts OboeMusicVoice
-        instrumentName = \markup { \hcenter-in #12 Oboe }
-        shortInstrumentName = \markup { \hcenter-in #12 Ob. }
         \override Beam.positions = #'(-7 . -7)
         \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
+        instrumentName = \oboeName
+        shortInstrumentName = \shortOboeName
     }
     \context {
         \Voice
@@ -177,6 +205,8 @@
         \override Beam.positions = #'(-7 . -7)
         \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
+        instrumentName = \clarinetName
+        shortInstrumentName = \shortClarinetName
     }
     \context {
         \PianoStaff
@@ -203,6 +233,8 @@
         \override Beam.positions = #'(-6 . -6)
         \override DynamicLineSpanner.staff-padding = 9
         \override TupletBracket.staff-padding = 5
+        instrumentName = \pianoName
+        shortInstrumentName = \shortPianoName
     }
     \context {
         \Voice
@@ -216,11 +248,11 @@
         \type Engraver_group
         \alias Staff
         \accepts PercussionMusicVoice
-        instrumentName = \markup { \hcenter-in #12 Percussion }
-        shortInstrumentName = \markup { \hcenter-in #12 Perc. }
         \override Beam.positions = #'(-6 . -6)
         \override DynamicLineSpanner.staff-padding = 9
         \override TupletBracket.staff-padding = 5
+        instrumentName = \percussionName
+        shortInstrumentName = \shortPercussionName
     }
     \context {
         \PianoStaff
@@ -244,11 +276,11 @@
         \type Engraver_group
         \alias Staff
         \accepts ViolinMusicVoice
-        instrumentName = \markup { \hcenter-in #12 Violin }
-        shortInstrumentName = \markup { \hcenter-in #12 Vn. }
         \override Beam.positions = #'(-7 . -7)
         \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
+        instrumentName = \violinName
+        shortInstrumentName = \shortViolinName
     }
     \context {
         \Voice
@@ -262,11 +294,11 @@
         \type Engraver_group
         \alias Staff
         \accepts ViolaMusicVoice
-        instrumentName = \markup { \hcenter-in #12 Viola }
-        shortInstrumentName = \markup { \hcenter-in #12 Va. }
         \override Beam.positions = #'(-7 . -7)
         \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
+        instrumentName = \violaName
+        shortInstrumentName = \shortViolaName
     }
     \context {
         \Voice
@@ -280,11 +312,11 @@
         \type Engraver_group
         \alias Staff
         \accepts CelloMusicVoice
-        instrumentName = \markup { \hcenter-in #12 Cello }
-        shortInstrumentName = \markup { \hcenter-in #12 Vc. }
         \override Beam.positions = #'(-7 . -7)
         \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
+        instrumentName = \celloName
+        shortInstrumentName = \shortCelloName
     }
     \context {
         \PianoStaff
@@ -306,6 +338,7 @@
         \remove Bar_number_engraver
         \remove Mark_engraver
         \remove Metronome_mark_engraver
+        \remove System_start_delimiter_engraver
         \override BarLine.hair-thickness = 0.5
         \override BarLine.space-alist = #'(
             (time-signature extra-space . 0.0)

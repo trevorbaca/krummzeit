@@ -35,7 +35,7 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
                     \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                     }
                 >>
-                \context MusicContext = "Music Context" {
+                \context MusicContext = "Music Context" <<
                     \context WindSectionStaffGroup = "Wind Section Staff Group" <<
                         \tag winds.oboe
                         \context OboeMusicStaff = "Oboe Music Staff" {
@@ -79,7 +79,7 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
                             }
                         }
                     >>
-                }
+                >>
             >>
 
         Returns score.

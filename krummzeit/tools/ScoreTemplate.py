@@ -197,19 +197,20 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
             context_name='StringSectionStaffGroup',
             name='String Section Staff Group',
             )
-#        music_context = abjad.Context(
-#            [
-#                ],
-#            context_name='MusicContext',
-#            name='Music Context',
-#            )
-        score = abjad.Score(
+        music_context = abjad.Context(
             [
-                time_signature_context,
-                #music_context,
                 wind_section_staff_group,
                 percussion_section_staff_group,
                 string_section_staff_group,
+                ],
+            context_name='MusicContext',
+            is_simultaneous=True,
+            name='Music Context',
+            )
+        score = abjad.Score(
+            [
+                time_signature_context,
+                music_context,
                 ],
             name='Score',
             )

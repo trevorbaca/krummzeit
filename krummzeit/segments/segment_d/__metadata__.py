@@ -4,7 +4,30 @@ import abjad
 
 metadata = abjad.datastructuretools.TypedOrderedDict(
     [
+        (
+            'end_clefs_by_staff',
+            abjad.datastructuretools.TypedOrderedDict(
+                [
+                    ('Cello Music Staff', 'bass'),
+                    ('Clarinet Music Staff', None),
+                    ('Oboe Music Staff', None),
+                    ('Percussion Staff', 'percussion'),
+                    ('Piano Music Staff', 'bass'),
+                    ('Viola Music Staff', 'alto'),
+                    ('Violin Music Staff', None),
+                    ]
+                ),
+            ),
+        (
+            'end_instruments_by_context',
+            abjad.datastructuretools.TypedOrderedDict(
+                []
+                ),
+            ),
+        ('end_tempo', None),
+        ('end_time_signature', '5/4'),
         ('first_bar_number', 133),
+        ('measure_count', 19),
         ('name', 'D'),
         ('segment_count', 11),
         ('segment_number', 4),

@@ -19,9 +19,9 @@ tempo_specifier = baca.tools.TempoSpecifier([
     (1, krummzeit.materials.named_tempi['135']),
     (1, abjad.Ritardando()),
     (2, krummzeit.materials.named_tempi['90']),
-    (2, Fermata('shortfermata')),
+    (2, abjad.Fermata('shortfermata')),
     (3, abjad.Accelerando()),
-    (4, Fermata('shortfermata')),
+    (4, abjad.Fermata('shortfermata')),
     (4, krummzeit.materials.named_tempi['135']),
     (5, abjad.Ritardando()),
     (6, abjad.Fermata('shortfermata')),
@@ -32,7 +32,7 @@ tempo_specifier = baca.tools.TempoSpecifier([
     (10, krummzeit.materials.named_tempi['90']),
     (10, krummzeit.materials.metric_modulation_inventory['4.=4']),
     (11, abjad.Ritardando()),
-    (13, Fermata('longfermata')),
+    (13, abjad.Fermata('longfermata')),
     (13, krummzeit.materials.named_tempi['45']),
     (16, abjad.Ritardando()),
     (17, krummzeit.materials.named_tempi['36']),
@@ -56,8 +56,8 @@ segment_maker = baca.SegmentMaker(
     transpose_score=True,
     )
 
-segment_maker.validate_stage_count(19)
-segment_maker.validate_measure_count(17)
+segment_maker.validate_stage_count(17)
+segment_maker.validate_measure_count(19)
 segment_maker.validate_measures_per_stage()
 
 ###############################################################################
@@ -66,162 +66,233 @@ segment_maker.validate_measures_per_stage()
 
 ### snare [D1-8] ###
 
-music_maker = segment_maker.append_commands()
-music_maker.stages = (1, 9)
-music_maker.voice_name = perc
-music_maker.instrument = snare_drum
-music_maker._hide_untuned_percussion_markup = True
-music_maker.clef = 'percussion'
-music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker(
-    tie_specifier=abjad.rhythmmakertools.TieSpecifier(
-        tie_across_divisions=True,
+music_maker = segment_maker.append_commands(
+    perc,
+    baca.select_stages(1, 9),
+    baca.instrument(snare_drum),
+    baca.clef('percussion'),
+    baca.tools.RhythmSpecifier(
+        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
+            tie_specifier=abjad.rhythmmakertools.TieSpecifier(
+                tie_across_divisions=True,
+                ),
+            ),
         ),
     )
+
 
 ### pf [D1] [D3] [D5] points ###
 
-music_maker = segment_maker.append_commands()
-music_maker.stages = 1
-music_maker.voice_name = pf
-music_maker.instrument = piano
-music_maker.division_maker = baca.tools.SplitByRoundedRatiosDivisionCallback(
-    ratios=[(2, 3)],
-    )
-music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
-    tuplet_ratios=[
-        (1, -1, 1, 3),
-        (1, -1, 1, 2, 2),
-        ],
-    tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
-        avoid_dots=True,
-        )
+music_maker = segment_maker.append_commands(
+    pf,
+    baca.select_stages(1),
+    baca.instrument(piano),
+    baca.tools.RhythmSpecifier(
+        division_maker=baca.tools.SplitByRoundedRatiosDivisionCallback(
+            ratios=[(2, 3)],
+            ),
+        rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
+            tuplet_ratios=[
+                (1, -1, 1, 3),
+                (1, -1, 1, 2, 2),
+                ],
+            tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
+                avoid_dots=True,
+                )
+            ),
+        ),
     )
 
-segment_maker.copy_specifier(pf, 1, stages=3)
-segment_maker.copy_specifier(pf, 1, stages=5)
+segment_maker.copy_specifier(
+    (pf, 1),
+    baca.select_stages(3, 3),
+    )
+
+segment_maker.copy_specifier(
+    (pf, 1),
+    baca.select_stages(5, 5),
+    )
 
 ### vn, va, vc [D5] [D7] [D9] ###
 
-music_maker = segment_maker.append_commands()
-music_maker.stages = 5
-music_maker.voice_name = vn
-music_maker.division_maker = baca.tools.SplitByRoundedRatiosDivisionCallback(
-    ratios=[(5, 4)],
-    )
-music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
-    tuplet_ratios=[
-        (-1, 1, 1, -1, 2),
-        (-1, 1, 1, 2, 2),
-        ],
-    tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
-        avoid_dots=True,
-        )
-    )
-
-segment_maker.copy_specifier(vn, 5, stages=7)
-segment_maker.copy_specifier(vn, 5, stages=9)
-
-music_maker = segment_maker.append_commands()
-music_maker.stages = 5
-music_maker.voice_name = va
-music_maker.division_maker = baca.tools.SplitByRoundedRatiosDivisionCallback(
-    ratios=[(2, 7)],
-    )
-music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
-    tuplet_ratios=[
-        (-1, 2),
-        (-1, 2, -1, 2, 2),
-        ],
-    tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
-        avoid_dots=True,
-        )
+music_maker = segment_maker.append_commands(
+    vn,
+    baca.select_stages(5, 5),
+    baca.tools.RhythmSpecifier(
+        division_maker=baca.tools.SplitByRoundedRatiosDivisionCallback(
+            ratios=[(5, 4)],
+            ),
+        rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
+            tuplet_ratios=[
+                (-1, 1, 1, -1, 2),
+                (-1, 1, 1, 2, 2),
+                ],
+            tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
+                avoid_dots=True,
+                )
+            ),
+        ),
     )
 
-segment_maker.copy_specifier(va, 5, stages=7)
-segment_maker.copy_specifier(va, 5, stages=9)
-
-music_maker = segment_maker.append_commands()
-music_maker.stages = 5
-music_maker.voice_name = vc
-music_maker.division_maker = baca.tools.SplitByRoundedRatiosDivisionCallback(
-    ratios=[(7, 2)],
-    )
-music_maker.rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
-    tuplet_ratios=[
-        (-1, 2, -1, 2, 2),
-        (-1, 2),
-        ],
-    tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
-        avoid_dots=True,
-        )
+segment_maker.copy_specifier(
+    (vn, 5),
+    baca.select_stages(7, 7),
     )
 
-segment_maker.copy_specifier(vc, 5, stages=7)
-segment_maker.copy_specifier(vc, 5, stages=9)
+segment_maker.copy_specifier(
+    (vn, 5),
+    baca.select_stages(9, 9),
+    )
+
+music_maker = segment_maker.append_commands(
+    va,
+    baca.select_stages(5, 5),
+    baca.tools.RhythmSpecifier(
+        division_maker=baca.tools.SplitByRoundedRatiosDivisionCallback(
+            ratios=[(2, 7)],
+            ),
+        rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
+            tuplet_ratios=[
+                (-1, 2),
+                (-1, 2, -1, 2, 2),
+                ],
+            tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
+                avoid_dots=True,
+                ),
+            ),
+        ),
+    )
+
+segment_maker.copy_specifier(
+    (va, 5),
+    baca.select_stages(7, 7),
+    )
+
+segment_maker.copy_specifier(
+    (va, 5),
+    baca.select_stages(9, 9),
+    )
+
+music_maker = segment_maker.append_commands(
+    vc,
+    baca.select_stages(5),
+    baca.tools.RhythmSpecifier(
+        division_maker=baca.tools.SplitByRoundedRatiosDivisionCallback(
+            ratios=[(7, 2)],
+            ),
+        rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
+            tuplet_ratios=[
+                (-1, 2, -1, 2, 2),
+                (-1, 2),
+                ],
+            tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
+                avoid_dots=True,
+                ),
+            ),
+        ),
+    )
+
+segment_maker.copy_specifier(
+    (vc, 5),
+    baca.select_stages(7, 7),
+    )
+
+segment_maker.copy_specifier(
+    (vc, 5),
+    baca.select_stages(9, 9),
+    )
 
 ### pf [D9-12] [D13] sea storm ###
 
-music_maker = segment_maker.append_commands()
-music_maker.stages = (9, 12)
-music_maker.voice_name = pf
-music_maker.clef = 'bass'
-music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker(
-    tie_specifier=abjad.rhythmmakertools.TieSpecifier(
-        tie_across_divisions=True,
+music_maker = segment_maker.append_commands(
+    pf,
+    baca.select_stages(9, 12),
+    baca.clef('bass'),
+    baca.tools.RhythmSpecifier(
+        rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker(
+            tie_specifier=abjad.rhythmmakertools.TieSpecifier(
+                tie_across_divisions=True,
+                ),
+            ),
         ),
     )
 
-segment_maker.copy_specifier(pf, 9, stages=(14, 16))
+segment_maker.copy_specifier(
+    (pf, 9),
+    baca.select_stages(14, 16),
+    )
 
 ### va [D11-12] [D14-16]; vn, vc [D12] [D14-16] ###
 
-music_maker = segment_maker.append_commands()
-music_maker.stages = (11, 12)
-music_maker.voice_name = va
-music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker(
-    tie_specifier=abjad.rhythmmakertools.TieSpecifier(
-        tie_across_divisions=True,
+music_maker = segment_maker.append_commands(
+    va,
+    baca.select_stages(11, 12),
+    baca.tools.RhythmSpecifier(
+        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
+            tie_specifier=abjad.rhythmmakertools.TieSpecifier(
+                tie_across_divisions=True,
+                ),
+            ),
         ),
     )
 
-segment_maker.copy_specifier(va, 11, stages=(14, 16))
+segment_maker.copy_specifier(
+    (va, 11),
+    baca.select_stages(14, 16),
+    )
 
-segment_maker.copy_specifier(va, 14, voice_name=vn)
-segment_maker.copy_specifier(va, 14, voice_name=vc)
+segment_maker.copy_specifier(
+    (va, 14),
+    baca.tools.SimpleScope(vn, (14, 14)),
+    )
+
+segment_maker.copy_specifier(
+    (va, 14),
+    baca.tools.SimpleScope(vc, (14, 14)),
+    )
 
 ### ob [D14-16] blocks ###
 
-music_maker = segment_maker.append_commands()
-music_maker.stages = (14, 16)
-music_maker.voice_name = ob
-music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker(
-    tie_specifier=abjad.rhythmmakertools.TieSpecifier(
-        tie_across_divisions=True,
+segment_maker.append_commands(
+    ob,
+    baca.select_stages(14, 16),
+    baca.tools.RhythmSpecifier(
+        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
+            tie_specifier=abjad.rhythmmakertools.TieSpecifier(
+                tie_across_divisions=True,
+                ),
+            ),
         ),
     )
 
 ### bass cl [D14-17] subtone ###
 
-music_maker = segment_maker.append_commands()
-music_maker.stages = (14, 17)
-music_maker.voice_name = cl
-music_maker.instrument = bass_clarinet
-music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker(
-    tie_specifier=abjad.rhythmmakertools.TieSpecifier(
-        tie_across_divisions=True,
+segment_maker.append_commands(
+    cl,
+    baca.select_stages(14, 17),
+    baca.instrument(bass_clarinet),
+    baca.tools.RhythmSpecifier(
+        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
+            tie_specifier=abjad.rhythmmakertools.TieSpecifier(
+                tie_across_divisions=True,
+                ),
+            ),
         ),
     )
 
 ### tam-tam [D14-17] attackless ###
 
-music_maker = segment_maker.append_commands()
-music_maker.stages = (14, 17)
-music_maker.voice_name = perc
-music_maker.instrument = tam_tam
-music_maker.division_maker = baca.tools.SplitByDurationsDivisionCallback(
-    durations=[(1, 4)],
+segment_maker.append_commands(
+    perc,
+    baca.select_stages(14, 17),
+    baca.instrument(tam_tam),
+    baca.tools.RhythmSpecifier(
+        division_maker=baca.tools.SplitByDurationsDivisionCallback(
+            durations=[(1, 4)],
+            ),
+        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker()
+        ),
     )
-music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker()
 
 ###############################################################################
 #################################### COLOR ####################################
@@ -231,14 +302,14 @@ music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker()
 
 segment_maker.append_commands(
     perc,
-    (1, 9),
-    ppp_ancora,
-    stem_tremolo,
+    baca.select_stages(1, 9),
+    baca.ancora_dynamic('ppp'),
+    baca.stem_tremolo(),
     )
 
 ### (9) pf, vn, va, vc ###
 
-segment_maker.append_commands(
+segment_maker.append_specifiers(
     [
         (pf, (1, 7)),
         ([vn, va, vc], (1, 9)),
@@ -250,239 +321,272 @@ segment_maker.append_commands(
         start_index=42,
         ),
     )
+
 segment_maker.append_commands(
     pf,
-    1,
-    Hairpin('ff > pp'),
+    baca.select_stages(1),
+    baca.hairpins(['ff > pp']),
     krummzeit_displacement,
     narrow_seventh_to_fifth_octave,
-    ottava,
-    staccatissimi,
+    baca.ottava(),
+    baca.staccatissimi(),
     )
+
 segment_maker.append_commands(
     pf,
-    3,
-    Hairpin('pp < ff'),
+    baca.select_stages(3),
+    baca.hairpins(['pp < ff']),
     krummzeit_displacement,
     narrow_fifth_to_third_octave,
-    staccatissimi,
+    baca.staccatissimi(),
     )
+
 segment_maker.append_commands(
     pf,
-    5,
-    Clef('bass'),
-    Hairpin('ff > pp'),
+    baca.select_stages(5),
+    baca.clef('bass'),
+    baca.hairpins(['ff > pp']),
     krummzeit_displacement,
     narrow_third_to_second_octave,
-    staccatissimi,
+    baca.staccatissimi(),
     )
+
 segment_maker.append_commands(
     vn,
-    5,
-    Hairpin('ff > pp'),
+    baca.select_stages(5),
+    baca.hairpins(['ff > pp']),
     krummzeit_displacement,
     narrow_seventh_to_fifth_octave,
-    ottava,
-    pizz,
-    staccatissimi,
+    baca.ottava(),
+    baca.markup.pizz(),
+    baca.staccatissimi(),
     )
+
 segment_maker.append_commands(
     va,
-    5,
-    Clef('treble'),
-    Hairpin('ff > pp'),
+    baca.select_stages(5),
+    baca.clef('treble'),
+    baca.hairpins(['ff > pp']),
     krummzeit_displacement,
     narrow_sixth_to_fifth_octave,
-    ottava,
-    pizz,
-    staccatissimi,
+    baca.ottava(),
+    baca.markup.pizz(),
+    baca.staccatissimi(),
     )
+
 segment_maker.append_commands(
     vc,
-    5,
-    Clef('treble'),
-    Hairpin('ff > pp'),
+    baca.select_stages(5),
+    baca.clef('treble'),
+    baca.hairpins(['ff > pp']),
     krummzeit_displacement,
     narrow_fifth_to_fourth_octave,
-    pizz,
-    staccatissimi,
+    baca.markup.pizz(),
+    baca.staccatissimi(),
     )
+
 segment_maker.append_commands(
     vn,
-    7,
-    Hairpin('pp < ff'),
+    baca.select_stages(7),
+    baca.hairpins(['pp < ff']),
     krummzeit_displacement,
     narrow_fifth_to_fourth_octave,
-    staccatissimi,
+    baca.staccatissimi(),
     )
+
 segment_maker.append_commands(
     va,
-    7,
-    Hairpin('pp < ff'),
+    baca.select_stages(7),
+    baca.hairpins(['pp < ff']),
     krummzeit_displacement,
     narrow_fifth_to_fourth_octave,
-    staccatissimi,
+    baca.staccatissimi(),
     )
+
 segment_maker.append_commands(
     vc,
-    7,
-    Clef('bass'),
-    Hairpin('pp < ff'),
+    baca.select_stages(7),
+    baca.clef('bass'),
+    baca.hairpins(['pp < ff']),
     krummzeit_displacement,
     narrow_fourth_to_third_octave,
-    staccatissimi,
+    baca.staccatissimi(),
     )
+
 segment_maker.append_commands(
     vn,
-    9,
-    Hairpin('ff > pp'),
+    baca.select_stages(9),
+    baca.hairpins(['ff > pp']),
     krummzeit_displacement,
     narrow_fifth_to_fourth_octave,
-    staccatissimi,
+    baca.staccatissimi(),
     )
+
 segment_maker.append_commands(
     va,
-    9,
-    Clef('alto'),
-    Hairpin('ff > pp'),
+    baca.select_stages(9),
+    baca.clef('alto'),
+    baca.hairpins(['ff > pp']),
     krummzeit_displacement,
     narrow_fourth_to_second_octave,
-    staccatissimi,
+    baca.staccatissimi(),
     )
+
 segment_maker.append_commands(
     vc,
-    9,
-    Hairpin('ff > pp'),
+    baca.select_stages(9),
+    baca.hairpins(['ff > pp']),
     krummzeit_displacement,
     narrow_third_to_second_octave,
-    staccatissimi,
+    baca.staccatissimi(),
     )
 
 ### (8.1a) pf ###
 
 segment_maker.append_commands(
     pf,
-    (9, 12),
-    Dynamic('fff'),
+    baca.select_stages(9, 12),
+    baca.dynamic('fff'),
     low_piano_cluster,
-    ottava_bassa,
-    senza_pedale,
+    baca.ottava_bassa(),
+    baca.markup.senza_pedale(),
     )
+
 segment_maker.append_commands(
     pf,
-    (14, 16),
-    Dynamic('fff'),
+    baca.select_stages(14, 16),
+    baca.dynamic('fff'),
     low_piano_cluster,
-    ottava_bassa,
+    baca.ottava_bassa(),
     )
 
 ### (10.2) va, vn, vc ###
 
 segment_maker.append_commands(
-    (va, (11, 16)),
+    va,
+    baca.select_stages(11, 16),
     baca.tools.ScorePitchCommand(
         source='bf,',
         ),
     )
+
 segment_maker.append_commands(
-    (vn, (14, 16)),
+    vn,
+    baca.select_stages(14, 16),
     baca.tools.ScorePitchCommand(
         source='fs',
         ),
     )
+
 segment_maker.append_commands(
-    (vc, (14, 16)),
+    vc,
+    baca.select_stages(14, 16),
     baca.tools.ScorePitchCommand(
         source='a,,',
         ),
     )
+
 segment_maker.append_commands(
     va,
-    (11, 12),
-    arco,
-    ffff_possibile,
+    baca.select_stages(11, 12),
+    baca.markup.arco(),
+    baca.possibile_dynamic('ffff'),
     )
+
 segment_maker.append_commands(
     [vn, va, vc],
-    (14, 16),
-    ffff_possibile,
+    baca.select_stages(14, 16),
+    baca.possibile_dynamic('ffff'),
     )
+
 segment_maker.append_commands(
     [vn, vc],
-    (14, 16),
-    arco,
+    baca.select_stages(14, 16),
+    baca.markup.arco(),
     )
 
 ### (2.1) oboe, (2.4) bass clariet, (2.5) tam-tam ###
 
 segment_maker.append_commands(
     perc,
-    (14, 17),
-    reiterated_pp,
+    baca.select_stages(14, 17),
+    baca.reiterated_dynamic('pp'),
     )
+
 segment_maker.append_commands(
-    (ob, (14, 16)),
+    ob,
+    baca.select_stages(14, 16),
     baca.tools.ScorePitchCommand(
         source='B3',
         ),
     )
+
 segment_maker.append_commands(
     ob,
-    (14, 16),
-    Dynamic('fff'),
+    baca.select_stages(14, 16),
+    baca.dynamic('fff'),
     )
+
 segment_maker.append_commands(
-    (cl, (14, 17)),
+    cl,
+    baca.select_stages(14, 17),
     baca.tools.ScorePitchCommand(
         source='B1',
         ),
     )
+
 segment_maker.append_commands(
     cl,
-    (14, 16),
-    ppp_subtone,
+    baca.select_stages(14, 16),
+    baca.markup(ppp_subtone),
     )
 
 ### VERTICAL ALIGNMENT ###
 
 segment_maker.append_commands(
     ob,
-    (14, 16),
-    dynamic_line_spanner_staff_padding(5),
-    stem_direction(Up),
+    baca.select_stages(14, 16),
+    baca.dynamic_line_spanner_staff_padding(5),
+    baca.stems_up(),
     )
+
 segment_maker.append_commands(
     ob,
-    (14, 16),
-    dynamic_line_spanner_staff_padding(5),
-    stem_direction(Up),
+    baca.select_stages(14, 16),
+    baca.dynamic_line_spanner_staff_padding(5),
+    baca.stems_up(),
     )
+
 segment_maker.append_commands(
     cl,
-    (14, 17),
-    stem_direction(Up),
+    baca.select_stages(14, 17),
+    baca.stems_up(),
     )
+
 segment_maker.append_commands(
     pf,
-    (9, 16),
-    dynamic_line_spanner_staff_padding(10),
+    baca.select_stages(9, 16),
+    baca.dynamic_line_spanner_staff_padding(10),
     )
+
 segment_maker.append_commands(
     perc,
-    (14, 17),
-    dynamic_line_spanner_staff_padding(6),
+    baca.select_stages(14, 17),
+    baca.dynamic_line_spanner_staff_padding(6),
     )
+
 segment_maker.append_commands(
     [vn, va, vc],
-    (5, 9),
-    beam_positions(-4),
-    dynamic_line_spanner_staff_padding(8),
-    tuplet_bracket_staff_padding(4),
+    baca.select_stages(5, 9),
+    baca.beam_positions(-4),
+    baca.dynamic_line_spanner_staff_padding(8),
+    baca.tuplet_bracket_staff_padding(4),
     )
+
 segment_maker.append_commands(
     [vn, va, vc],
-    (11, 16),
-    stem_direction(Up),
+    baca.select_stages(11, 16),
+    baca.stems_up(),
     )
 
 ### TIMINGS ###

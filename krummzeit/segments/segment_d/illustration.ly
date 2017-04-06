@@ -1,1582 +1,1336 @@
-% 2014-09-11 18:30
-
-\version "2.19.13"
+\version "2.19.58"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
 
 \include "../../stylesheets/stylesheet.ily"
-
-\header {
-    composer = ##f
-    title = ##f
-}
+\include "../../stylesheets/nonfirst-segment.ily"
 
 \score {
-    \context Score = "Krummzeit Score" <<
+    \context Score = "Score" \with {
+        currentBarNumber = #133
+    } <<
         \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
-        \context TimeSignatureContext = "Time Signature Context" {
-            {
-                \time 3/4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = -2
-                \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                    \override
-                        #'(padding . 0.45)
-                        \parenthesize
-                            \large
-                                \upright
-                                    rit.
-                    \hspace
-                        #0.75
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                \once \override TextSpanner.bound-details.left.text = \markup {
-                    \smaller
-                        \general-align
-                            #Y
-                            #DOWN
-                            \note-by-number
-                                #2
-                                #0
-                                #1
-                    \upright
-                        " = 135"
-                    \hspace
-                        #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
-                \mark #4
-                s1 * 3/4 \startTextSpan
+        \context TimeSignatureContext = "Time Signature Context" <<
+            \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+                {
+                    \time 3/4
+                    R1 * 3/4
+                }
+                {
+                    \time 1/4
+                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest.transparent = ##t
+                    \once \override Score.TimeSignature.stencil = ##f
+                    R1 * 1/4
+                        - \markup {
+                            \musicglyph
+                                #"scripts.ushortfermata"
+                            }
+                }
+                {
+                    \time 5/8
+                    R1 * 5/8
+                }
+                {
+                    \time 1/4
+                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest.transparent = ##t
+                    \once \override Score.TimeSignature.stencil = ##f
+                    R1 * 1/4
+                        - \markup {
+                            \musicglyph
+                                #"scripts.ushortfermata"
+                            }
+                }
+                {
+                    \time 9/8
+                    R1 * 9/8
+                }
+                {
+                    \time 1/4
+                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest.transparent = ##t
+                    \once \override Score.TimeSignature.stencil = ##f
+                    R1 * 1/4
+                        - \markup {
+                            \musicglyph
+                                #"scripts.ushortfermata"
+                            }
+                }
+                {
+                    \time 9/8
+                    R1 * 9/8
+                }
+                {
+                    \time 1/4
+                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest.transparent = ##t
+                    \once \override Score.TimeSignature.stencil = ##f
+                    R1 * 1/4
+                        - \markup {
+                            \musicglyph
+                                #"scripts.ushortfermata"
+                            }
+                }
+                {
+                    \time 9/8
+                    R1 * 9/8
+                }
+                {
+                    \time 5/8
+                    R1 * 5/8
+                }
+                {
+                    \time 3/4
+                    R1 * 3/4
+                }
+                {
+                    R1 * 3/4
+                }
+                {
+                    \time 1/4
+                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest.transparent = ##t
+                    \once \override Score.TimeSignature.stencil = ##f
+                    R1 * 1/4
+                        - \markup {
+                            \musicglyph
+                                #"scripts.ulongfermata"
+                            }
+                }
+                {
+                    \time 4/4
+                    R1 * 1
+                }
+                {
+                    R1 * 1
+                }
+                {
+                    \time 5/4
+                    R1 * 5/4
+                }
+                {
+                    R1 * 5/4
+                }
+                {
+                    R1 * 5/4
+                }
+                {
+                    R1 * 5/4
+                }
             }
-            {
-                \time 1/4
-                s1 * 1/4 \shortfermata \stopTextSpan ^ \markup {
-                    \smaller
-                        \general-align
-                            #Y
-                            #DOWN
-                            \note-by-number
-                                #2
-                                #0
-                                #1
-                    \upright
-                        " = 90"
-                    }
-            }
-            {
-                \time 5/8
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = -2
-                \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                    \override
-                        #'(padding . 0.45)
-                        \parenthesize
-                            \large
-                                \upright
-                                    accel.
-                    \hspace
-                        #0.75
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                \once \override TextSpanner.bound-details.left.text = \markup {
-                    \override
-                        #'(padding . 0.45)
-                        \parenthesize
-                            \line
-                                {
-                                    \smaller
-                                        \general-align
-                                            #Y
-                                            #DOWN
-                                            \note-by-number
-                                                #2
-                                                #0
-                                                #1
-                                    \upright
-                                        " = 90"
-                                }
-                    \hspace
-                        #0.75
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
-                s1 * 5/8 \startTextSpan
-            }
-            {
-                \time 1/4
-                s1 * 1/4 \shortfermata \stopTextSpan ^ \markup {
-                    \smaller
-                        \general-align
-                            #Y
-                            #DOWN
-                            \note-by-number
-                                #2
-                                #0
-                                #1
-                    \upright
-                        " = 135"
-                    }
-            }
-            {
-                \time 9/8
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = -2
-                \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                    \override
-                        #'(padding . 0.45)
-                        \parenthesize
-                            \large
-                                \upright
-                                    rit.
-                    \hspace
-                        #0.75
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                \once \override TextSpanner.bound-details.left.text = \markup {
-                    \override
-                        #'(padding . 0.45)
-                        \parenthesize
-                            \line
-                                {
-                                    \smaller
-                                        \general-align
-                                            #Y
-                                            #DOWN
-                                            \note-by-number
-                                                #2
-                                                #0
-                                                #1
-                                    \upright
-                                        " = 135"
-                                }
-                    \hspace
-                        #0.75
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
-                s1 * 9/8 \startTextSpan
-            }
-            {
-                \time 1/4
-                s1 * 1/4 \shortfermata \stopTextSpan ^ \markup {
-                    \smaller
-                        \general-align
-                            #Y
-                            #DOWN
-                            \note-by-number
-                                #2
-                                #0
-                                #1
-                    \upright
-                        " = 90"
-                    }
-            }
-            {
-                \time 9/8
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = -2
-                \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                    \override
-                        #'(padding . 0.45)
-                        \parenthesize
-                            \large
-                                \upright
-                                    accel.
-                    \hspace
-                        #0.75
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                \once \override TextSpanner.bound-details.left.text = \markup {
-                    \override
-                        #'(padding . 0.45)
-                        \parenthesize
-                            \line
-                                {
-                                    \smaller
-                                        \general-align
-                                            #Y
-                                            #DOWN
-                                            \note-by-number
-                                                #2
-                                                #0
-                                                #1
-                                    \upright
-                                        " = 90"
-                                }
-                    \hspace
-                        #0.75
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
-                s1 * 9/8 \startTextSpan
-            }
-            {
-                \time 1/4
-                s1 * 1/4 \shortfermata \stopTextSpan ^ \markup {
-                    \smaller
-                        \general-align
-                            #Y
-                            #DOWN
-                            \note-by-number
-                                #2
-                                #0
-                                #1
-                    \upright
-                        " = 135"
-                    }
-            }
-            {
-                \time 9/8
-                s1 * 9/8
-            }
-            {
-                \time 5/8
-                s1 * 5/8 ^ \markup {
-                    \line
-                        {
-                            \smaller
-                                \general-align
-                                    #Y
-                                    #DOWN
-                                    \note-by-number
-                                        #2
-                                        #0
-                                        #1
+            \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+                {
+                    \time 3/4
+                    \once \override TextSpanner.arrow-width = 0.25
+                    \once \override TextSpanner.bound-details.left-broken.padding = 0
+                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                        \null
+                        }
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    \once \override TextSpanner.bound-details.left.text = \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                135
+                            }
+                        \hspace
+                            #1.25
+                        }
+                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.arrow = ##t
+                    \once \override TextSpanner.bound-details.right.padding = 2
+                    \once \override TextSpanner.bound-details.right.text = ##f
+                    \once \override TextSpanner.dash-fraction = 0.25
+                    \once \override TextSpanner.dash-period = 1.5
+                    \mark #4
+                    s1 * 3/4 \startTextSpan
+                }
+                {
+                    \time 1/4
+                    s1 * 1/4 \stopTextSpan ^ \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                90
+                            }
+                        }
+                }
+                {
+                    \time 5/8
+                    \once \override TextSpanner.arrow-width = 0.25
+                    \once \override TextSpanner.bound-details.left-broken.padding = 0
+                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                        \null
+                        }
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    \once \override TextSpanner.bound-details.left.text = \markup {
+                        \large
                             \upright
-                                " = 90"
-                            \hspace
-                                #0.5
-                            \raise
-                                #0.35
-                                \scale
-                                    #'(0.75 . 0.75)
-                                    \override
-                                        #'(thickness . 0.75)
-                                        \override
-                                            #'(padding . 0.5)
-                                            \parenthesize
-                                                \line
-                                                    {
-                                                        \score
-                                                            {
-                                                                \new Score \with {
-                                                                    proportionalNotationDuration = ##f
-                                                                } <<
-                                                                    \new RhythmicStaff \with {
-                                                                        \remove Time_signature_engraver
-                                                                        \remove Staff_symbol_engraver
-                                                                        \override Stem #'direction = #up
-                                                                        \override Stem #'length = #4
-                                                                        \override TupletBracket #'bracket-visibility = ##t
-                                                                        \override TupletBracket #'direction = #up
-                                                                        \override TupletBracket #'padding = #1.25
-                                                                        \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                                        \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                                        fontSize = #-2
-                                                                        tupletFullLength = ##t
-                                                                    } {
-                                                                        c4.
-                                                                    }
-                                                                >>
-                                                                \layout {
-                                                                    indent = #0
-                                                                    ragged-right = ##t
-                                                                }
-                                                            }
-                                                        \hspace
-                                                            #-0.5
-                                                        " = "
-                                                        \hspace
-                                                            #-1
-                                                        \score
-                                                            {
-                                                                \new Score \with {
-                                                                    proportionalNotationDuration = ##f
-                                                                } <<
-                                                                    \new RhythmicStaff \with {
-                                                                        \remove Time_signature_engraver
-                                                                        \remove Staff_symbol_engraver
-                                                                        \override Stem #'direction = #up
-                                                                        \override Stem #'length = #4
-                                                                        \override TupletBracket #'bracket-visibility = ##t
-                                                                        \override TupletBracket #'direction = #up
-                                                                        \override TupletBracket #'padding = #1.25
-                                                                        \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                                        \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                                        fontSize = #-2
-                                                                        tupletFullLength = ##t
-                                                                    } {
-                                                                        c4
-                                                                    }
-                                                                >>
-                                                                \layout {
-                                                                    indent = #0
-                                                                    ragged-right = ##t
-                                                                }
-                                                            }
-                                                    }
+                                accel.
+                        \hspace
+                            #0.75
                         }
-                    }
-            }
-            {
-                \time 3/4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = -2
-                \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                    \override
-                        #'(padding . 0.45)
-                        \parenthesize
-                            \large
-                                \upright
-                                    rit.
-                    \hspace
-                        #0.75
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                \once \override TextSpanner.bound-details.left.text = \markup {
-                    \override
-                        #'(padding . 0.45)
-                        \parenthesize
-                            \line
-                                {
-                                    \smaller
-                                        \general-align
-                                            #Y
-                                            #DOWN
-                                            \note-by-number
-                                                #2
-                                                #0
-                                                #1
-                                    \upright
-                                        " = 90"
-                                }
-                    \hspace
-                        #0.75
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
-                s1 * 3/4 \startTextSpan
-            }
-            {
-                s1 * 3/4
-            }
-            {
-                \time 1/4
-                s1 * 1/4 \longfermata \stopTextSpan ^ \markup {
-                    \smaller
+                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.arrow = ##t
+                    \once \override TextSpanner.bound-details.right.padding = 2
+                    \once \override TextSpanner.bound-details.right.text = ##f
+                    \once \override TextSpanner.dash-fraction = 0.25
+                    \once \override TextSpanner.dash-period = 1.5
+                    s1 * 5/8 \startTextSpan
+                }
+                {
+                    \time 1/4
+                    s1 * 1/4 \stopTextSpan ^ \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                135
+                            }
+                        }
+                }
+                {
+                    \time 9/8
+                    \once \override TextSpanner.arrow-width = 0.25
+                    \once \override TextSpanner.bound-details.left-broken.padding = 0
+                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                        \null
+                        }
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    \once \override TextSpanner.bound-details.left.text = \markup {
+                        \large
+                            \upright
+                                rit.
+                        \hspace
+                            #0.75
+                        }
+                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.arrow = ##t
+                    \once \override TextSpanner.bound-details.right.padding = 2
+                    \once \override TextSpanner.bound-details.right.text = ##f
+                    \once \override TextSpanner.dash-fraction = 0.25
+                    \once \override TextSpanner.dash-period = 1.5
+                    s1 * 9/8 \startTextSpan
+                }
+                {
+                    \time 1/4
+                    s1 * 1/4 \stopTextSpan ^ \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                90
+                            }
+                        }
+                }
+                {
+                    \time 9/8
+                    \once \override TextSpanner.arrow-width = 0.25
+                    \once \override TextSpanner.bound-details.left-broken.padding = 0
+                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                        \null
+                        }
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    \once \override TextSpanner.bound-details.left.text = \markup {
+                        \large
+                            \upright
+                                accel.
+                        \hspace
+                            #0.75
+                        }
+                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.arrow = ##t
+                    \once \override TextSpanner.bound-details.right.padding = 2
+                    \once \override TextSpanner.bound-details.right.text = ##f
+                    \once \override TextSpanner.dash-fraction = 0.25
+                    \once \override TextSpanner.dash-period = 1.5
+                    s1 * 9/8 \startTextSpan
+                }
+                {
+                    \time 1/4
+                    s1 * 1/4 \stopTextSpan ^ \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                135
+                            }
+                        }
+                }
+                {
+                    \time 9/8
+                    s1 * 9/8
+                }
+                {
+                    \time 5/8
+                    s1 * 5/8 ^ \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                90
+                            }
+                        \hspace
+                            #0.5
                         \general-align
                             #Y
                             #DOWN
-                            \note-by-number
-                                #2
-                                #0
-                                #1
-                    \upright
-                        " = 45"
-                    }
-            }
-            {
-                \time 4/4
-                s1 * 1
-            }
-            {
-                s1 * 1
-            }
-            {
-                \time 5/4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = -2
-                \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                    \override
-                        #'(padding . 0.45)
-                        \parenthesize
-                            \large
-                                \upright
-                                    rit.
-                    \hspace
-                        #0.75
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                \once \override TextSpanner.bound-details.left.text = \markup {
-                    \override
-                        #'(padding . 0.45)
-                        \parenthesize
-                            \line
-                                {
-                                    \smaller
-                                        \general-align
-                                            #Y
-                                            #DOWN
-                                            \note-by-number
-                                                #2
-                                                #0
-                                                #1
-                                    \upright
-                                        " = 45"
-                                }
-                    \hspace
-                        #0.75
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
-                s1 * 5/4 \startTextSpan
-            }
-            {
-                s1 * 5/4 \stopTextSpan ^ \markup {
-                    \smaller
-                        \general-align
-                            #Y
-                            #DOWN
-                            \note-by-number
-                                #2
-                                #0
-                                #1
-                    \upright
-                        " = 36"
-                    }
-            }
-            {
-                s1 * 5/4
-            }
-            {
-                s1 * 5/4
-            }
-        }
-        \context WindSectionStaffGroup = "Wind Section Staff Group" <<
-            \tag winds.oboe
-            \context OboeMusicStaff = "Oboe Music Staff" {
-                \context OboeMusicVoice = "Oboe Music Voice" {
-                    r2.
-                    r4
-                    r8
-                    r8
-                    r8
-                    r8
-                    r8
-                    r4
-                    r4.
-                    r4.
-                    r4.
-                    r4
-                    r4.
-                    r4.
-                    r4.
-                    r4
-                    r4.
-                    r4.
-                    r4.
-                    r8
-                    r8
-                    r8
-                    r8
-                    r8
-                    r2.
-                    r2.
-                    r4
-                    \once \override DynamicLineSpanner #'staff-padding = #5
-                    \once \override Stem #'direction = #up
-                    b1 \fff ~
-                    \once \override DynamicLineSpanner #'staff-padding = #5
-                    \once \override Stem #'direction = #up
-                    b1 ~
-                    \once \override DynamicLineSpanner #'staff-padding = #5
-                    \once \override Stem #'direction = #up
-                    b1 ~
-                    \once \override DynamicLineSpanner #'staff-padding = #5
-                    \once \override Stem #'direction = #up
-                    b4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                }
-            }
-            \tag winds.clarinet
-            \context ClarinetMusicStaff = "Clarinet Music Staff" {
-                \context ClarinetMusicVoice = "Clarinet Music Voice" {
-                    \set Staff.instrumentName = \markup {
-                        \hcenter-in
-                            #12
-                            "Bass clarinet"
-                        }
-                    \set Staff.shortInstrumentName = \markup {
-                        \hcenter-in
-                            #12
-                            "Bass cl."
-                        }
-                    r2.
-                    r4
-                    r8
-                    r8
-                    r8
-                    r8
-                    r8
-                    r4
-                    r4.
-                    r4.
-                    r4.
-                    r4
-                    r4.
-                    r4.
-                    r4.
-                    r4
-                    r4.
-                    r4.
-                    r4.
-                    r8
-                    r8
-                    r8
-                    r8
-                    r8
-                    r2.
-                    r2.
-                    r4
-                    \once \override Stem #'direction = #up
-                    \set Staff.instrumentName = \markup {
-                        \hcenter-in
-                            #12
-                            "Bass clarinet"
-                        }
-                    \set Staff.shortInstrumentName = \markup {
-                        \hcenter-in
-                            #12
-                            "Bass cl."
-                        }
-                    cs1 ~
-                        - \markup {
-                            \dynamic
-                                ppp
-                            subtone
-                            }
-                    \once \override Stem #'direction = #up
-                    cs1 ~
-                    \once \override Stem #'direction = #up
-                    cs1 ~
-                    \once \override Stem #'direction = #up
-                    cs4 ~
-                    \once \override Stem #'direction = #up
-                    cs1 ~
-                    \once \override Stem #'direction = #up
-                    cs4 ~
-                    \once \override Stem #'direction = #up
-                    cs1 ~
-                    \once \override Stem #'direction = #up
-                    cs4 ~
-                    \once \override Stem #'direction = #up
-                    cs1 ~
-                    \once \override Stem #'direction = #up
-                    cs4
-                }
-            }
-        >>
-        \context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
-            \tag percussion.piano
-            \context PianoMusicStaff = "Piano Music Staff" {
-                \context PianoMusicVoice = "Piano Music Voice" {
-                    \times 2/3 {
-                        \ottava #1
-                        \set PianoMusicStaff.instrumentName = \markup {
-                            \hcenter-in
-                                #12
-                                Piano
-                            }
-                        \set PianoMusicStaff.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #12
-                                Pf.
-                            }
-                        e''''16 -\staccatissimo \> \ff
-                        r16
-                        ef''''16 -\staccatissimo [
-                        f''''8. -\staccatissimo ]
-                    }
-                    \times 4/7 {
-                        cs''''8 -\staccatissimo
-                        r8
-                        d'''8 -\staccatissimo
-                        e'''4 -\staccatissimo
-                        f''4 -\staccatissimo \pp
-                        \ottava #0
-                    }
-                    \set PianoMusicStaff.instrumentName = \markup {
-                        \hcenter-in
-                            #12
-                            Piano
-                        }
-                    \set PianoMusicStaff.shortInstrumentName = \markup {
-                        \hcenter-in
-                            #12
-                            Pf.
-                        }
-                    r4
-                    \times 2/3 {
-                        \set PianoMusicStaff.instrumentName = \markup {
-                            \hcenter-in
-                                #12
-                                Piano
-                            }
-                        \set PianoMusicStaff.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #12
-                                Pf.
-                            }
-                        g''16 -\staccatissimo \< \pp
-                        r16
-                        cs''16 -\staccatissimo [
-                        a'8. -\staccatissimo ]
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 6/7 {
-                        ef'16 -\staccatissimo
-                        r16
-                        bf'16 -\staccatissimo [
-                        b8 -\staccatissimo
-                        c'8 -\staccatissimo \ff ]
-                    }
-                    \set PianoMusicStaff.instrumentName = \markup {
-                        \hcenter-in
-                            #12
-                            Piano
-                        }
-                    \set PianoMusicStaff.shortInstrumentName = \markup {
-                        \hcenter-in
-                            #12
-                            Pf.
-                        }
-                    r4
-                    \times 2/3 {
-                        \clef "bass"
-                        \set PianoMusicStaff.instrumentName = \markup {
-                            \hcenter-in
-                                #12
-                                Piano
-                            }
-                        \set PianoMusicStaff.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #12
-                                Pf.
-                            }
-                        af8 -\staccatissimo \> \ff
-                        r8
-                        g8 -\staccatissimo
-                        a4. -\staccatissimo
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 5/7 {
-                        c8 -\staccatissimo
-                        r8
-                        ef,8 -\staccatissimo
-                        c4 -\staccatissimo
-                        cs,4 -\staccatissimo \pp
-                    }
-                    r4
-                    r4.
-                    r4.
-                    r4.
-                    r4
-                    \once \override Accidental.stencil = ##f
-                    \once \override AccidentalCautionary.stencil = ##f
-                    \once \override Arpeggio.X-offset = #-2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                    }
-                    \once \override DynamicLineSpanner #'staff-padding = #10
-                    \ottava #-1
-                    <c,, e,, g,, b,, d, f, a, c>1 ~
-                        ^ \markup {
-                            \larger
-                                \italic
-                                    "senza pedale"
-                            }
-                        ^ \markup {
-                            \center-align
-                                \concat
-                                    {
-                                        \natural
-                                        \flat
-                                    }
-                            }
-                    \once \override Accidental.stencil = ##f
-                    \once \override AccidentalCautionary.stencil = ##f
-                    \once \override Arpeggio.X-offset = #-2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                    }
-                    \once \override DynamicLineSpanner #'staff-padding = #10
-                    <c,, e,, g,, b,, d, f, a, c>8 ~
-                        ^ \markup {
-                            \center-align
-                                \concat
-                                    {
-                                        \natural
-                                        \flat
-                                    }
-                            }
-                    \once \override Accidental.stencil = ##f
-                    \once \override AccidentalCautionary.stencil = ##f
-                    \once \override Arpeggio.X-offset = #-2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                    }
-                    \once \override DynamicLineSpanner #'staff-padding = #10
-                    <c,, e,, g,, b,, d, f, a, c>2 ~
-                        ^ \markup {
-                            \center-align
-                                \concat
-                                    {
-                                        \natural
-                                        \flat
-                                    }
-                            }
-                    \once \override Accidental.stencil = ##f
-                    \once \override AccidentalCautionary.stencil = ##f
-                    \once \override Arpeggio.X-offset = #-2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                    }
-                    \once \override DynamicLineSpanner #'staff-padding = #10
-                    <c,, e,, g,, b,, d, f, a, c>8 ~
-                        ^ \markup {
-                            \center-align
-                                \concat
-                                    {
-                                        \natural
-                                        \flat
-                                    }
-                            }
-                    \once \override Accidental.stencil = ##f
-                    \once \override AccidentalCautionary.stencil = ##f
-                    \once \override Arpeggio.X-offset = #-2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                    }
-                    \once \override DynamicLineSpanner #'staff-padding = #10
-                    <c,, e,, g,, b,, d, f, a, c>2. ~
-                        ^ \markup {
-                            \center-align
-                                \concat
-                                    {
-                                        \natural
-                                        \flat
-                                    }
-                            }
-                    \once \override Accidental.stencil = ##f
-                    \once \override AccidentalCautionary.stencil = ##f
-                    \once \override Arpeggio.X-offset = #-2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                    }
-                    \once \override DynamicLineSpanner #'staff-padding = #10
-                    <c,, e,, g,, b,, d, f, a, c>2.
-                        ^ \markup {
-                            \center-align
-                                \concat
-                                    {
-                                        \natural
-                                        \flat
-                                    }
-                            }
-                    \ottava #0
-                    \once \override DynamicLineSpanner #'staff-padding = #10
-                    r4
-                    \once \override Accidental.stencil = ##f
-                    \once \override AccidentalCautionary.stencil = ##f
-                    \once \override Arpeggio.X-offset = #-2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                    }
-                    \once \override DynamicLineSpanner #'staff-padding = #10
-                    \ottava #-1
-                    <c,, e,, g,, b,, d, f, a, c>1 ~
-                        ^ \markup {
-                            \center-align
-                                \concat
-                                    {
-                                        \natural
-                                        \flat
-                                    }
-                            }
-                    \once \override Accidental.stencil = ##f
-                    \once \override AccidentalCautionary.stencil = ##f
-                    \once \override Arpeggio.X-offset = #-2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                    }
-                    \once \override DynamicLineSpanner #'staff-padding = #10
-                    <c,, e,, g,, b,, d, f, a, c>1 ~
-                        ^ \markup {
-                            \center-align
-                                \concat
-                                    {
-                                        \natural
-                                        \flat
-                                    }
-                            }
-                    \once \override Accidental.stencil = ##f
-                    \once \override AccidentalCautionary.stencil = ##f
-                    \once \override Arpeggio.X-offset = #-2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                    }
-                    \once \override DynamicLineSpanner #'staff-padding = #10
-                    <c,, e,, g,, b,, d, f, a, c>1 ~
-                        ^ \markup {
-                            \center-align
-                                \concat
-                                    {
-                                        \natural
-                                        \flat
-                                    }
-                            }
-                    \once \override Accidental.stencil = ##f
-                    \once \override AccidentalCautionary.stencil = ##f
-                    \once \override Arpeggio.X-offset = #-2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                    }
-                    \once \override DynamicLineSpanner #'staff-padding = #10
-                    <c,, e,, g,, b,, d, f, a, c>4
-                        ^ \markup {
-                            \center-align
-                                \concat
-                                    {
-                                        \natural
-                                        \flat
-                                    }
-                            }
-                    \ottava #0
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                }
-            }
-            \tag percussion
-            \context PercussionMusicStaff = "Percussion Staff" {
-                \context PercussionMusicVoice = "Percussion Music Voice" {
-                    \clef "percussion"
-                    \stopStaff
-                    \override Staff.StaffSymbol #'line-count = #1
-                    \startStaff
-                    c'2. :32 ~
-                        - \markup {
-                            \dynamic
-                                ppp
-                            \italic
-                                ancora
-                            }
-                    c'4 :32 ~
-                    c'2 :32 ~
-                    c'8 :32 ~
-                    c'4 :32 ~
-                    c'1 :32 ~
-                    c'8 :32 ~
-                    c'4 :32 ~
-                    c'1 :32 ~
-                    c'8 :32 ~
-                    c'4 :32 ~
-                    c'1 :32 ~
-                    c'8 :32
-                    r8
-                    r8
-                    r8
-                    r8
-                    r8
-                    r2.
-                    r2.
-                    r4
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                        ^ \markup {
                             \override
-                                #'(box-padding . 0.5)
-                                \box
-                                    tam-tam
+                                #'(padding . 0.5)
+                                \parenthesize
+                                    \line
+                                        {
+                                            \scale
+                                                #'(0.5 . 0.5)
+                                                \score
+                                                    {
+                                                        \new Score \with {
+                                                            \override SpacingSpanner.spacing-increment = #0.5
+                                                            proportionalNotationDuration = ##f
+                                                        } <<
+                                                            \new RhythmicStaff \with {
+                                                                \remove Time_signature_engraver
+                                                                \remove Staff_symbol_engraver
+                                                                \override Stem.direction = #up
+                                                                \override Stem.length = #5
+                                                                \override TupletBracket.bracket-visibility = ##t
+                                                                \override TupletBracket.direction = #up
+                                                                \override TupletBracket.padding = #1.25
+                                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                                tupletFullLength = ##t
+                                                            } {
+                                                                c4.
+                                                            }
+                                                        >>
+                                                        \layout {
+                                                            indent = #0
+                                                            ragged-right = ##t
+                                                        }
+                                                    }
+                                            =
+                                            \hspace
+                                                #-0.5
+                                            \scale
+                                                #'(0.5 . 0.5)
+                                                \score
+                                                    {
+                                                        \new Score \with {
+                                                            \override SpacingSpanner.spacing-increment = #0.5
+                                                            proportionalNotationDuration = ##f
+                                                        } <<
+                                                            \new RhythmicStaff \with {
+                                                                \remove Time_signature_engraver
+                                                                \remove Staff_symbol_engraver
+                                                                \override Stem.direction = #up
+                                                                \override Stem.length = #5
+                                                                \override TupletBracket.bracket-visibility = ##t
+                                                                \override TupletBracket.direction = #up
+                                                                \override TupletBracket.padding = #1.25
+                                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                                tupletFullLength = ##t
+                                                            } {
+                                                                c4
+                                                            }
+                                                        >>
+                                                        \layout {
+                                                            indent = #0
+                                                            ragged-right = ##t
+                                                        }
+                                                    }
+                                        }
+                        }
+                }
+                {
+                    \time 3/4
+                    \once \override TextSpanner.arrow-width = 0.25
+                    \once \override TextSpanner.bound-details.left-broken.padding = 0
+                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                        \null
+                        }
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    \once \override TextSpanner.bound-details.left.text = \markup {
+                        \large
+                            \upright
+                                rit.
+                        \hspace
+                            #0.75
+                        }
+                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.arrow = ##t
+                    \once \override TextSpanner.bound-details.right.padding = 2
+                    \once \override TextSpanner.bound-details.right.text = ##f
+                    \once \override TextSpanner.dash-fraction = 0.25
+                    \once \override TextSpanner.dash-period = 1.5
+                    s1 * 3/4 \startTextSpan
+                }
+                {
+                    s1 * 3/4
+                }
+                {
+                    \time 1/4
+                    s1 * 1/4 \stopTextSpan ^ \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                45
                             }
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
-                    \once \override DynamicLineSpanner #'staff-padding = #6
-                    c'4 \pp
+                        }
+                }
+                {
+                    \time 4/4
+                    s1 * 1
+                }
+                {
+                    s1 * 1
+                }
+                {
+                    \time 5/4
+                    \once \override TextSpanner.arrow-width = 0.25
+                    \once \override TextSpanner.bound-details.left-broken.padding = 0
+                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                        \null
+                        }
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    \once \override TextSpanner.bound-details.left.text = \markup {
+                        \large
+                            \upright
+                                rit.
+                        \hspace
+                            #0.75
+                        }
+                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.arrow = ##t
+                    \once \override TextSpanner.bound-details.right.padding = 2
+                    \once \override TextSpanner.bound-details.right.text = ##f
+                    \once \override TextSpanner.dash-fraction = 0.25
+                    \once \override TextSpanner.dash-period = 1.5
+                    s1 * 5/4 \startTextSpan
+                }
+                {
+                    s1 * 5/4 \stopTextSpan ^ \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                36
+                            }
+                        }
+                }
+                {
+                    s1 * 5/4
+                }
+                {
+                    s1 * 5/4
                 }
             }
         >>
-        \context StringSectionStaffGroup = "String Section Staff Group" <<
-            \tag strings.violin
-            \context ViolinMusicStaff = "Violin Music Staff" {
-                \context ViolinMusicVoice = "Violin Music Voice" {
-                    r2.
-                    r4
-                    r8
-                    r8
-                    r8
-                    r8
-                    r8
-                    r4
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 5/6 {
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        \ottava #1
-                        e''''8 -\staccatissimo \> \ff [
-                            ^ \markup {
-                                \larger
-                                    pizz.
-                                }
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        cs''''8 -\staccatissimo ]
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        bf'''4 -\staccatissimo
+        \context MusicContext = "Music Context" <<
+            \context WindSectionStaffGroup = "Wind Section Staff Group" <<
+                \tag winds.oboe
+                \context OboeMusicStaff = "Oboe Music Staff" {
+                    \context OboeMusicVoice = "Oboe Music Voice" {
+                        s1 * 65/8
+                        \override DynamicLineSpanner.staff-padding = #'5
+                        \override Stem.direction = #up
+                        b1 \fff ~
+                        b1 ~
+                        b1 ~
+                        b4
+                        \revert DynamicLineSpanner.staff-padding
+                        \revert Stem.direction
+                        s1 * 15/4
+                        \bar "|"
                     }
-                    \times 4/7 {
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        cs'''8 -\staccatissimo [
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        af'''8 -\staccatissimo ]
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        bf''4 -\staccatissimo
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        ef''4 -\staccatissimo \pp
+                }
+                \tag winds.clarinet
+                \context ClarinetMusicStaff = "Clarinet Music Staff" {
+                    \context ClarinetMusicVoice = "Clarinet Music Voice" {
+                        s1 * 65/8
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #12
+                                "Bass clarinet"
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #12
+                                "Bass cl."
+                            }
+                        \override Stem.direction = #up
+                        cs1 ~
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to bass clarinet"
+                                }
+                            - \markup {
+                                \dynamic
+                                    ppp
+                                subtone
+                                }
+                        cs1 ~
+                        cs1 ~
+                        cs4 ~
+                        cs1 ~
+                        cs4 ~
+                        cs1 ~
+                        cs4 ~
+                        cs1 ~
+                        cs4
+                        \bar "|"
+                        \revert Stem.direction
+                    }
+                }
+            >>
+            \context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
+                \tag percussion.piano
+                \context PianoMusicStaff = "Piano Music Staff" {
+                    \context PianoMusicVoice = "Piano Music Voice" {
+                        \times 2/3 {
+                            \ottava #1
+                            \set PianoMusicStaff.instrumentName = \markup {
+                                \hcenter-in
+                                    #12
+                                    Piano
+                                }
+                            \set PianoMusicStaff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #12
+                                    Pf.
+                                }
+                            ff''''16 -\staccatissimo \> \ff
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.75)
+                                        \box
+                                            "to piano"
+                                    }
+                            r16
+                            ef''''16 -\staccatissimo [
+                            f''''8. -\staccatissimo ]
+                        }
+                        \times 4/7 {
+                            df''''8 -\staccatissimo
+                            r8
+                            eff'''8 -\staccatissimo
+                            ff'''4 -\staccatissimo
+                            f''4 -\staccatissimo \pp
+                            \ottava #0
+                        }
+                        s1 * 1/4
+                        \times 2/3 {
+                            aff''16 -\staccatissimo \< \pp
+                            r16
+                            df''16 -\staccatissimo [
+                            bff'8. -\staccatissimo ]
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 6/7 {
+                            ef'16 -\staccatissimo
+                            r16
+                            bf16 -\staccatissimo [
+                            cf'8 -\staccatissimo
+                            c'8 -\staccatissimo \ff ]
+                        }
+                        s1 * 1/4
+                        \times 2/3 {
+                            \clef "bass"
+                            af8 -\staccatissimo \> \ff
+                            r8
+                            ef8 -\staccatissimo
+                            ff4. -\staccatissimo
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 5/7 {
+                            f,8 -\staccatissimo
+                            r8
+                            aff,8 -\staccatissimo
+                            df4 -\staccatissimo
+                            bff,4 -\staccatissimo \pp
+                        }
+                        s1 * 13/8
+                        \once \override Accidental.stencil = ##f
+                        \once \override AccidentalCautionary.stencil = ##f
+                        \once \override Arpeggio.X-offset = #-2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                        }
+                        \ottava #-1
+                        \override DynamicLineSpanner.staff-padding = #'10
+                        <c,, e,, g,, b,, d, f, a,>1 ~
+                            ^ \markup {
+                                \whiteout
+                                    \upright
+                                        "senza pedale"
+                                }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
+                        \once \override Accidental.stencil = ##f
+                        \once \override AccidentalCautionary.stencil = ##f
+                        \once \override Arpeggio.X-offset = #-2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                        }
+                        <c,, e,, g,, b,, d, f, a,>8 ~
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
+                        \once \override Accidental.stencil = ##f
+                        \once \override AccidentalCautionary.stencil = ##f
+                        \once \override Arpeggio.X-offset = #-2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                        }
+                        <c,, e,, g,, b,, d, f, a,>2 ~
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
+                        \once \override Accidental.stencil = ##f
+                        \once \override AccidentalCautionary.stencil = ##f
+                        \once \override Arpeggio.X-offset = #-2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                        }
+                        <c,, e,, g,, b,, d, f, a,>8 ~
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
+                        \once \override Accidental.stencil = ##f
+                        \once \override AccidentalCautionary.stencil = ##f
+                        \once \override Arpeggio.X-offset = #-2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                        }
+                        <c,, e,, g,, b,, d, f, a,>2. ~
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
+                        \once \override Accidental.stencil = ##f
+                        \once \override AccidentalCautionary.stencil = ##f
+                        \once \override Arpeggio.X-offset = #-2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                        }
+                        <c,, e,, g,, b,, d, f, a,>2.
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         \ottava #0
-                    }
-                    \once \override Beam #'positions = #'(-4 . -4)
-                    \once \override DynamicLineSpanner #'staff-padding = #8
-                    \once \override TupletBracket #'staff-padding = #4
-                    r4
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 5/6 {
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        a''8 -\staccatissimo \< \pp [
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        e''8 -\staccatissimo ]
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        g''4 -\staccatissimo
-                    }
-                    \times 4/7 {
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        d''8 -\staccatissimo [
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        ef'8 -\staccatissimo ]
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        cs''4 -\staccatissimo
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        e'4 -\staccatissimo \ff
-                    }
-                    \once \override Beam #'positions = #'(-4 . -4)
-                    \once \override DynamicLineSpanner #'staff-padding = #8
-                    \once \override TupletBracket #'staff-padding = #4
-                    r4
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 5/6 {
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        g''8 -\staccatissimo \> \ff [
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        c''8 -\staccatissimo ]
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        bf'4 -\staccatissimo
-                    }
-                    \times 4/7 {
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        ef'8 -\staccatissimo [
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        e'8 -\staccatissimo ]
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        f'4 -\staccatissimo
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        c'4 -\staccatissimo \pp
-                    }
-                    r8
-                    r8
-                    r8
-                    r8
-                    r8
-                    \once \override Stem #'direction = #up
-                    r2.
-                    \once \override Stem #'direction = #up
-                    r2.
-                    \once \override Stem #'direction = #up
-                    r4
-                    \once \override Stem #'direction = #up
-                    fs1 ~
-                        ^ \markup {
-                            \larger
-                                arco
-                            }
-                        - \markup {
-                            \dynamic
-                                ffff
-                            \italic
-                                possibile
-                            }
-                    \once \override Stem #'direction = #up
-                    fs1 ~
-                    \once \override Stem #'direction = #up
-                    fs1 ~
-                    \once \override Stem #'direction = #up
-                    fs4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                }
-            }
-            \tag strings.viola
-            \context ViolaMusicStaff = "Viola Music Staff" {
-                \clef "alto"
-                \context ViolaMusicVoice = "Viola Music Voice" {
-                    r2.
-                    r4
-                    r8
-                    r8
-                    r8
-                    r8
-                    r8
-                    r4
-                    \times 2/3 {
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        \clef "treble"
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        \ottava #1
-                        ef'''4 -\staccatissimo \> \ff
+                        s1 * 1/4
+                        \once \override Accidental.stencil = ##f
+                        \once \override AccidentalCautionary.stencil = ##f
+                        \once \override Arpeggio.X-offset = #-2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                        }
+                        \ottava #-1
+                        <c,, e,, g,, b,, d, f, a,>1 ~
                             ^ \markup {
-                                \larger
-                                    pizz.
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
                                 }
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 7/8 {
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        af'''4 -\staccatissimo
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        f''4 -\staccatissimo
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        b''4 -\staccatissimo \pp
+                        \once \override Accidental.stencil = ##f
+                        \once \override AccidentalCautionary.stencil = ##f
+                        \once \override Arpeggio.X-offset = #-2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                        }
+                        <c,, e,, g,, b,, d, f, a,>1 ~
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
+                        \once \override Accidental.stencil = ##f
+                        \once \override AccidentalCautionary.stencil = ##f
+                        \once \override Arpeggio.X-offset = #-2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                        }
+                        <c,, e,, g,, b,, d, f, a,>1 ~
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
+                        \once \override Accidental.stencil = ##f
+                        \once \override AccidentalCautionary.stencil = ##f
+                        \once \override Arpeggio.X-offset = #-2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                        }
+                        <c,, e,, g,, b,, d, f, a,>4
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         \ottava #0
+                        \revert DynamicLineSpanner.staff-padding
+                        s1 * 15/4
+                        \bar "|"
                     }
-                    \once \override Beam #'positions = #'(-4 . -4)
-                    \once \override DynamicLineSpanner #'staff-padding = #8
-                    \once \override TupletBracket #'staff-padding = #4
-                    r4
-                    \times 2/3 {
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        f''4 -\staccatissimo \< \pp
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 7/8 {
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        f''4 -\staccatissimo
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        cs''4 -\staccatissimo
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        a'4 -\staccatissimo \ff
-                    }
-                    \once \override Beam #'positions = #'(-4 . -4)
-                    \once \override DynamicLineSpanner #'staff-padding = #8
-                    \once \override TupletBracket #'staff-padding = #4
-                    r4
-                    \times 2/3 {
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        \clef "alto"
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        f'4 -\staccatissimo \> \ff
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 7/8 {
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        af4 -\staccatissimo
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        a4 -\staccatissimo
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        bf,4 -\staccatissimo \pp
-                    }
-                    r8
-                    r8
-                    r8
-                    r8
-                    r8
-                    \once \override Stem #'direction = #up
-                    bf,2. ~
-                        ^ \markup {
-                            \larger
-                                arco
-                            }
-                        - \markup {
-                            \dynamic
-                                ffff
-                            \italic
-                                possibile
-                            }
-                    \once \override Stem #'direction = #up
-                    bf,2.
-                    \once \override Stem #'direction = #up
-                    r4
-                    \once \override Stem #'direction = #up
-                    bf,1 ~
-                        - \markup {
-                            \dynamic
-                                ffff
-                            \italic
-                                possibile
-                            }
-                    \once \override Stem #'direction = #up
-                    bf,1 ~
-                    \once \override Stem #'direction = #up
-                    bf,1 ~
-                    \once \override Stem #'direction = #up
-                    bf,4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
                 }
-            }
-            \tag strings.cello
-            \context CelloMusicStaff = "Cello Music Staff" {
-                \clef "bass"
-                \context CelloMusicVoice = "Cello Music Voice" {
-                    r2.
-                    r4
-                    r8
-                    r8
-                    r8
-                    r8
-                    r8
-                    r4
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 7/8 {
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        \clef "treble"
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        f''4 -\staccatissimo \> \ff
+                \tag percussion
+                \context PercussionMusicStaff = "Percussion Staff" {
+                    \context PercussionMusicVoice = "Percussion Music Voice" {
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        \clef "percussion"
+                        c'2. :32 ~
                             ^ \markup {
-                                \larger
-                                    pizz.
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to snare drum"
                                 }
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        b'4 -\staccatissimo
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        d''4 -\staccatissimo
+                            _ \markup {
+                                \dynamic
+                                    ppp
+                                \upright
+                                    ancora
+                                }
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 :32 ~
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'2 :32 ~
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'8 :32 ~
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 :32 ~
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'1 :32 ~
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'8 :32 ~
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 :32 ~
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'1 :32 ~
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'8 :32 ~
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 :32 ~
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'1 :32 ~
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'8 :32
+                        s1 * 19/8
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        \override DynamicLineSpanner.staff-padding = #'6
+                        c'4 -\pp
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to tam-tam"
+                                }
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c'4 -\pp
+                        \bar "|"
+                        \revert DynamicLineSpanner.staff-padding
                     }
-                    \times 2/3 {
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        d'4 -\staccatissimo \pp
-                    }
-                    \once \override Beam #'positions = #'(-4 . -4)
-                    \once \override DynamicLineSpanner #'staff-padding = #8
-                    \once \override TupletBracket #'staff-padding = #4
-                    r4
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 7/8 {
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        \clef "bass"
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        ef'4 -\staccatissimo \< \pp
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        cs'4 -\staccatissimo
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        f4 -\staccatissimo
-                    }
-                    \times 2/3 {
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        ef4 -\staccatissimo \ff
-                    }
-                    \once \override Beam #'positions = #'(-4 . -4)
-                    \once \override DynamicLineSpanner #'staff-padding = #8
-                    \once \override TupletBracket #'staff-padding = #4
-                    r4
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 7/8 {
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        b4 -\staccatissimo \> \ff
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        g4 -\staccatissimo
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        cs4 -\staccatissimo
-                    }
-                    \times 2/3 {
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        r8
-                        \once \override Beam #'positions = #'(-4 . -4)
-                        \once \override DynamicLineSpanner #'staff-padding = #8
-                        \once \override TupletBracket #'staff-padding = #4
-                        b,4 -\staccatissimo \pp
-                    }
-                    r8
-                    r8
-                    r8
-                    r8
-                    r8
-                    \once \override Stem #'direction = #up
-                    r2.
-                    \once \override Stem #'direction = #up
-                    r2.
-                    \once \override Stem #'direction = #up
-                    r4
-                    \once \override Stem #'direction = #up
-                    a,,1 ~
-                        ^ \markup {
-                            \larger
-                                arco
-                            }
-                        - \markup {
-                            \dynamic
-                                ffff
-                            \italic
-                                possibile
-                            }
-                    \once \override Stem #'direction = #up
-                    a,,1 ~
-                    \once \override Stem #'direction = #up
-                    a,,1 ~
-                    \once \override Stem #'direction = #up
-                    a,,4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
-                    r4
                 }
-            }
+            >>
+            \context StringSectionStaffGroup = "String Section Staff Group" <<
+                \tag strings.violin
+                \context ViolinMusicStaff = "Violin Music Staff" {
+                    \context ViolinMusicVoice = "Violin Music Voice" {
+                        s1 * 15/8
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 5/6 {
+                            \override Beam.positions = #'(-4 . -4)
+                            \override DynamicLineSpanner.staff-padding = #'8
+                            \override TupletBracket.staff-padding = #4
+                            r8
+                            \ottava #1
+                            ff''''8 -\staccatissimo \> \ff [
+                                ^ \markup {
+                                    \whiteout
+                                        \upright
+                                            pizz.
+                                    }
+                            ef''''8 -\staccatissimo ]
+                            r8
+                            f'''4 -\staccatissimo
+                        }
+                        \times 4/7 {
+                            r8
+                            df'''8 -\staccatissimo [
+                            eff'''8 -\staccatissimo ]
+                            ff'''4 -\staccatissimo
+                            f''4 -\staccatissimo \pp
+                            \ottava #0
+                        }
+                        s1 * 1/4
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 5/6 {
+                            r8
+                            aff''8 -\staccatissimo \< \pp [
+                            df''8 -\staccatissimo ]
+                            r8
+                            bff'4 -\staccatissimo
+                        }
+                        \times 4/7 {
+                            r8
+                            ef''8 -\staccatissimo [
+                            bf'8 -\staccatissimo ]
+                            cf''4 -\staccatissimo
+                            c'4 -\staccatissimo \ff
+                        }
+                        s1 * 1/4
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 5/6 {
+                            r8
+                            af''8 -\staccatissimo \> \ff [
+                            ef''8 -\staccatissimo ]
+                            r8
+                            ff''4 -\staccatissimo
+                        }
+                        \times 4/7 {
+                            r8
+                            f'8 -\staccatissimo [
+                            aff'8 -\staccatissimo ]
+                            df''4 -\staccatissimo
+                            bff'4 -\staccatissimo \pp
+                            \revert Beam.positions
+                            \revert DynamicLineSpanner.staff-padding
+                            \revert TupletBracket.staff-padding
+                        }
+                        s1 * 19/8
+                        \override Stem.direction = #up
+                        fs1
+                            ^ \markup {
+                                \whiteout
+                                    \upright
+                                        arco
+                                }
+                            _ \markup {
+                                \dynamic
+                                    ffff
+                                \upright
+                                    possibile
+                                }
+                        s1 * 6
+                        \bar "|"
+                        \revert Stem.direction
+                    }
+                }
+                \tag strings.viola
+                \context ViolaMusicStaff = "Viola Music Staff" {
+                    \context ViolaMusicVoice = "Viola Music Voice" {
+                        s1 * 15/8
+                        \times 2/3 {
+                            \clef "treble"
+                            \override Beam.positions = #'(-4 . -4)
+                            \override DynamicLineSpanner.staff-padding = #'8
+                            \override TupletBracket.staff-padding = #4
+                            r8
+                            \ottava #1
+                            ff'''4 -\staccatissimo \> \ff
+                                ^ \markup {
+                                    \whiteout
+                                        \upright
+                                            pizz.
+                                    }
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 7/8 {
+                            r8
+                            ef'''4 -\staccatissimo
+                            r8
+                            f''4 -\staccatissimo
+                            df''4 -\staccatissimo \pp
+                            \ottava #0
+                        }
+                        s1 * 1/4
+                        \times 2/3 {
+                            r8
+                            eff''4 -\staccatissimo \< \pp
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 7/8 {
+                            r8
+                            ff''4 -\staccatissimo
+                            r8
+                            f'4 -\staccatissimo
+                            aff'4 -\staccatissimo \ff
+                        }
+                        s1 * 1/4
+                        \times 2/3 {
+                            \clef "alto"
+                            r8
+                            df'4 -\staccatissimo \> \ff
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 7/8 {
+                            r8
+                            bff4 -\staccatissimo
+                            r8
+                            ef4 -\staccatissimo
+                            bf,4 -\staccatissimo \pp
+                            \revert Beam.positions
+                            \revert DynamicLineSpanner.staff-padding
+                            \revert TupletBracket.staff-padding
+                        }
+                        s1 * 5/8
+                        \override Stem.direction = #up
+                        bf,2. ~
+                            ^ \markup {
+                                \whiteout
+                                    \upright
+                                        arco
+                                }
+                            _ \markup {
+                                \dynamic
+                                    ffff
+                                \upright
+                                    possibile
+                                }
+                        bf,2.
+                        s1 * 1/4
+                        bf,1 ~
+                            _ \markup {
+                                \dynamic
+                                    ffff
+                                \upright
+                                    possibile
+                                }
+                        bf,1 ~
+                        bf,1 ~
+                        bf,4
+                        \revert Stem.direction
+                        s1 * 15/4
+                        \bar "|"
+                    }
+                }
+                \tag strings.cello
+                \context CelloMusicStaff = "Cello Music Staff" {
+                    \context CelloMusicVoice = "Cello Music Voice" {
+                        s1 * 15/8
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 7/8 {
+                            \clef "treble"
+                            \override Beam.positions = #'(-4 . -4)
+                            \override DynamicLineSpanner.staff-padding = #'8
+                            \override TupletBracket.staff-padding = #4
+                            r8
+                            ff''4 -\staccatissimo \> \ff
+                                ^ \markup {
+                                    \whiteout
+                                        \upright
+                                            pizz.
+                                    }
+                            r8
+                            ef''4 -\staccatissimo
+                            f'4 -\staccatissimo
+                        }
+                        \times 2/3 {
+                            r8
+                            df'4 -\staccatissimo \pp
+                        }
+                        s1 * 1/4
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 7/8 {
+                            \clef "bass"
+                            r8
+                            eff'4 -\staccatissimo \< \pp
+                            r8
+                            ff'4 -\staccatissimo
+                            f4 -\staccatissimo
+                        }
+                        \times 2/3 {
+                            r8
+                            aff4 -\staccatissimo \ff
+                        }
+                        s1 * 1/4
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 7/8 {
+                            r8
+                            df4 -\staccatissimo \> \ff
+                            r8
+                            bff,4 -\staccatissimo
+                            ef4 -\staccatissimo
+                        }
+                        \times 2/3 {
+                            r8
+                            bf,4 -\staccatissimo \pp
+                            \revert Beam.positions
+                            \revert DynamicLineSpanner.staff-padding
+                            \revert TupletBracket.staff-padding
+                        }
+                        s1 * 19/8
+                        \override Stem.direction = #up
+                        a,,1
+                            ^ \markup {
+                                \whiteout
+                                    \upright
+                                        arco
+                                }
+                            _ \markup {
+                                \dynamic
+                                    ffff
+                                \upright
+                                    possibile
+                                }
+                        s1 * 6
+                        \bar "|"
+                        \revert Stem.direction
+                    }
+                }
+            >>
         >>
     >>
 }

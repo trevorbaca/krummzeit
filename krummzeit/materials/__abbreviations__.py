@@ -106,7 +106,6 @@ fingertips = abjad.Markup(
     'rapid roll with fingertips: keep speed constant during accelerando',
     direction=Up,
     )
-fingertips = fingertips.larger()
 
 fingertips_only = abjad.Markup(
     'rapid roll with fingertips: keep speed constant during accelerando',
@@ -180,7 +179,6 @@ senza_pedale = senza_pedale.italic()
 senza_pedale = senza_pedale.larger()
 
 show_tempo = abjad.Markup('allow bowing to convey accelerando', direction=Up)
-show_tempo = show_tempo.larger()
 
 string = 'subito non armonichi e non gridato'
 subito_non_armonichi = abjad.Markup(string, direction=Up).italic().larger()

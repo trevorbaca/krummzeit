@@ -259,6 +259,9 @@ molto_flaut_to_molto_grid = abjad.spannertools.TextSpanner(
         'text_spanner__dash_period': 1.5,
     }
 )
+molto_flaut_to_molto_grid = baca.tools.SpannerCommand(
+    spanner=molto_flaut_to_molto_grid,
+    )
 
 left_text = abjad.Markup('grid. possibile').italic().larger() + abjad.Markup.hspace(1)
 right_text = abjad.Markup.hspace(1) + abjad.Markup('flaut. possibile').italic().larger()

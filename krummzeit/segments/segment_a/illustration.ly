@@ -252,26 +252,29 @@
                         s1 * 19/8
                         \set Staff.instrumentName = \markup {
                             \hcenter-in
-                                #12
-                                "Bass clarinet"
+                                #16
+                                \center-column
+                                    {
+                                        Bass
+                                        clarinet
+                                    }
                             }
                         \set Staff.shortInstrumentName = \markup {
                             \hcenter-in
-                                #12
-                                "Bass cl."
+                                #10
+                                \center-column
+                                    {
+                                        Bass
+                                        cl.
+                                    }
                             }
                         \override Stem.direction = #up
-                        cs2.
+                        cs2. \ppp
                             ^ \markup {
                                 \override
                                     #'(box-padding . 0.75)
                                     \box
                                         "to bass clarinet"
-                                }
-                            - \markup {
-                                \dynamic
-                                    ppp
-                                subtone
                                 }
                         cs4. \repeatTie
                         cs4 \repeatTie
@@ -288,12 +291,12 @@
                         \clef "bass"
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
-                                #12
+                                #16
                                 Piano
                             }
                         \set PianoMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
-                                #12
+                                #10
                                 Pf.
                             }
                         r1
@@ -303,12 +306,12 @@
                         \clef "bass"
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
-                                #12
+                                #16
                                 Piano
                             }
                         \set PianoMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
-                                #12
+                                #10
                                 Pf.
                             }
                         \override DynamicLineSpanner.staff-padding = #'5
@@ -358,15 +361,31 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/8 {
                             \clef "treble"
+                            \set Staff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Xylophone
+                                }
+                            \set Staff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Xyl.
+                                }
                             \override TupletBracket.staff-padding = #5
-                            cs''4 :32
+                            cs'4 :32
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.75)
+                                        \box
+                                            "to xylophone"
+                                    }
                                 _ \markup {
                                     \dynamic
                                         fff
                                     \upright
                                         possibile
                                     }
-                            cs''2. :32
+                            cs'2. :32
                             \revert TupletBracket.staff-padding
                         }
                         s1 * 7/8
@@ -378,22 +397,13 @@
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
                             \clef "percussion"
-                            c'2 -\accent
+                            c2 -\accent
                                 ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    "accent changes of direction noticeably at each attack"
-                                                }
-                                            \line
-                                                {
-                                                    \override
-                                                        #'(box-padding . 0.75)
-                                                        \box
-                                                            "to sponges"
-                                                }
-                                        }
+                                    \whiteout
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                sponges
                                     }
                                 _ \markup {
                                     \larger
@@ -407,12 +417,13 @@
                                         \italic
                                             ”
                                     }
+                                - \markup { "accent changes of direction noticeably at each attack" }
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 -\accent ~
+                            c2 -\accent ~
                         }
                         \times 2/3 {
                             \once \override Beam.color = #blue
@@ -420,19 +431,19 @@
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2
+                            c2
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 -\accent
+                            c2 -\accent
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 -\accent ~
+                            c2 -\accent ~
                         }
                         {
                             \once \override Beam.color = #blue
@@ -440,19 +451,19 @@
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2
+                            c2
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 -\accent
+                            c2 -\accent
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'4 -\accent ~
+                            c4 -\accent ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
@@ -461,13 +472,13 @@
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2.
+                            c2.
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'4 -\accent
+                            c4 -\accent
                             \bar "|"
                         }
                     }
@@ -632,15 +643,12 @@
                             \revert TupletBracket.staff-padding
                         }
                         s1 * 1/4
-                        \once \override Beam.positions = #'(-5 . -5)
                         \override Beam.positions = #'(-5 . -5)
                         \override DynamicLineSpanner.staff-padding = #'8
                         \override TupletBracket.staff-padding = #5
                         r2
-                        \once \override Beam.positions = #'(-5 . -5)
                         r4
                         \times 4/7 {
-                            \once \override Beam.positions = #'(-5 . -5)
                             \override NoteHead.style = #'harmonic
                             ef'4 \glissando \< \pp
                                 ^ \markup {
@@ -648,54 +656,37 @@
                                         \upright
                                             "molto flautando"
                                     }
-                            \once \override Beam.positions = #'(-5 . -5)
                             e'8. \glissando
                         }
                         \times 2/3 {
-                            \once \override Beam.positions = #'(-5 . -5)
                             g'16 \glissando [
-                            \once \override Beam.positions = #'(-5 . -5)
                             d'8 ] \glissando
                         }
                         \times 4/5 {
-                            \once \override Beam.positions = #'(-5 . -5)
                             ef'16 \glissando
-                            \once \override Beam.positions = #'(-5 . -5)
                             f'4 \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            \once \override Beam.positions = #'(-5 . -5)
                             gf'2 \glissando
-                            \once \override Beam.positions = #'(-5 . -5)
                             e'4. \glissando
                         }
                         {
-                            \once \override Beam.positions = #'(-5 . -5)
                             d'8 \glissando
-                            \once \override Beam.positions = #'(-5 . -5)
                             gf'4
                         }
-                        \once \override Beam.positions = #'(-5 . -5)
                         r2.
-                        \once \override Beam.positions = #'(-5 . -5)
                         r4.
                         \times 2/3 {
-                            \once \override Beam.positions = #'(-5 . -5)
                             a8 \glissando
-                            \once \override Beam.positions = #'(-5 . -5)
                             c'4 \glissando
                         }
                         \times 4/5 {
-                            \once \override Beam.positions = #'(-5 . -5)
                             df'32 \glissando [
-                            \once \override Beam.positions = #'(-5 . -5)
                             e8 ] \glissando
                         }
                         \times 4/7 {
-                            \once \override Beam.positions = #'(-5 . -5)
                             d4 \glissando
-                            \once \override Beam.positions = #'(-5 . -5)
                             ef8. \ff
                             \revert NoteHead.style
                             \revert Beam.positions

@@ -55,7 +55,7 @@ music_maker = segment_maker.append_commands(
             counts=[2],
             ),
         rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
-            preferred_denominator=Duration(1, 4),
+            preferred_denominator=abjad.Duration(1, 4),
             tuplet_ratios=[(3, 2)],
             tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
                 avoid_dots=True,
@@ -100,7 +100,7 @@ segment_maker.append_commands(
     baca.tools.RhythmSpecifier(
         division_maker=baca.tools.SplitByRoundedRatiosDivisionCallback(
             ratios=[(1, 2), (2, 1), (1, 1, 1)],
-            )
+            ),
         rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
             tuplet_ratios=[
                 (1, 2),
@@ -172,7 +172,7 @@ music_maker = segment_maker.append_commands(
     ob,
     baca.select_stages(3, 6),
     baca.tools.RhythmSpecifier(
-        music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker(
+        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
             tie_specifier=abjad.rhythmmakertools.TieSpecifier(
                 tie_across_divisions=True,
                 ),
@@ -186,7 +186,7 @@ segment_maker.copy_specifier(
     instrument=e_flat_clarinet,
     )
 
-segment_maker.copy_specifier(
+segment_maker.append_commands(
     cl,
     baca.select_stages(3),
     baca.instrument(e_flat_clarinet),
@@ -202,7 +202,7 @@ segment_maker.append_commands(
             counts=[2],
             ),
         rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
-            preferred_denominator=Duration(1, 4),
+            preferred_denominator=abjad.Duration(1, 4),
             tuplet_ratios=[(3, 2)],
             tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
                 avoid_dots=True,
@@ -235,7 +235,7 @@ segment_maker.append_commands(
             counts=[2],
             ),
         rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
-            preferred_denominator=Duration(1, 4),
+            preferred_denominator=abjad.Duration(1, 4),
             tuplet_ratios=[(3, 4)],
             tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
                 avoid_dots=True,
@@ -248,9 +248,6 @@ segment_maker.append_commands(
 segment_maker.copy_specifier(
     (pf, 8),
     baca.tools.SimpleScope(perc, (8, 8)),
-    voice_name=perc,
-    instrument=xylophone,
-    clef=abjad.Clef('treble'),
     rhythm_maker__tuplet_ratios=[(1, 6)],
     )
 
@@ -259,7 +256,6 @@ segment_maker.append_commands(
     baca.select_stages(8),
     baca.instrument(xylophone),
     baca.clef('treble'),
-    rhythm_maker__tuplet_ratios=[(1, 6)],
     )
 
 ###############################################################################
@@ -321,8 +317,7 @@ segment_maker.append_commands(
 ### (5.3) vn, va, vc thicket ###
 
 segment_maker.append_specifiers(
-    [vn, va, vc],
-    baca.select_stages(2, 4),
+    [([vn, va, vc], (2, 4))],
     baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=8), abjad.Inversion()],
         reverse=True,
@@ -385,7 +380,7 @@ segment_maker.append_commands(
 ### (14) ###
 
 segment_maker.append_commands(
-    ob,b
+    ob,
     baca.select_stages(7, 8),
     baca.tools.ScorePitchCommand(
         source='Eb5',
@@ -441,18 +436,19 @@ segment_maker.append_commands(
     [vn, va, vc],
     baca.select_stages(6, 8),
     baca.dynamic('fff'),
-    baca.tools.abjad.GlissandoCommand(
-        #patterns=[abjad.Pattern(indices=[0])],
-        patterns=[abjad.rhythmmakertools.select_first(1)],
-        ),
-    baca.tools.StemTremoloSpecifier(
-        #patterns=[abjad.Pattern(indices=[1, 2, 3, 4])],
-        patterns=[abjad.rhythmmakertools.select([1, 2, 3, 4])],
-        ),
+    # TODO: make work again
+    #baca.tools.GlissandoCommand(
+    #    patterns=[abjad.select_first(1)],
+    #    ),
+    # TODO: make work again
+    #baca.tools.StemTremoloCommand(
+    #    patterns=[abjad.select([1, 2, 3, 4])],
+    #    ),
     )
 
 segment_maker.append_commands(
-    ([pf, perc], 8),
+    [pf, perc],
+    baca.select_stages(8),
     baca.tools.ScorePitchCommand(
         source='F#6',
         ),
@@ -460,85 +456,85 @@ segment_maker.append_commands(
 
 segment_maker.append_commands(
     [pf, perc],
-    8,
-    abjad.Dynamic('fff'),
-    stem_tremolo,
+    baca.select_stages(8),
+    baca.dynamic('fff'),
+    baca.stem_tremolo(),
     )
 
 segment_maker.append_commands(
     perc,
-    8,
-    abjad.Dynamic('fff'),
-    stem_tremolo,
+    baca.select_stages(8),
+    baca.dynamic('fff'),
+    baca.stem_tremolo(),
     )
 
 ### VERTICAL ALIGNMENT ###
 
 segment_maker.append_commands(
     ob,
-    (3, 6),
-    dynamic_line_spanner_staff_padding(3),
+    baca.select_stages(3, 6),
+    baca.dynamic_line_spanner_staff_padding(3),
     )
 
 segment_maker.append_commands(
     ob,
-    (7, 8),
-    tuplet_bracket_staff_padding(2),
+    baca.select_stages(7, 8),
+    baca.tuplet_bracket_staff_padding(2),
     )
 
 segment_maker.append_commands(
     cl, 
-    (3, 6),
+    baca.select_stages(3, 6),
     dynamic_line_spanner_staff_padding(3),
     )
 
 segment_maker.append_commands(
     cl,
-    (7, 8),
-    stem_direction(Up),
-    dynamic_line_spanner_staff_padding(9),
-    tuplet_bracket_staff_padding(5),
+    baca.select_stages(7, 8),
+    baca.stems_up(),
+    baca.dynamic_line_spanner_staff_padding(9),
+    baca.tuplet_bracket_staff_padding(5),
     )
 
 segment_maker.append_commands(
     pf,
-    (7, 8),
-    dynamic_line_spanner_staff_padding(6),
-    tuplet_bracket_staff_padding(2),
+    baca.select_stages(7, 8),
+    baca.dynamic_line_spanner_staff_padding(6),
+    baca.tuplet_bracket_staff_padding(2),
     )
 
 segment_maker.append_commands(
     perc,
-    (4, 5),
-    dynamic_line_spanner_staff_padding(6),
+    baca.select_stages(4, 5),
+    baca.dynamic_line_spanner_staff_padding(6),
     )
 
 segment_maker.append_commands(
     perc,
-    (7, 8),
-    dynamic_line_spanner_staff_padding(7),
-    tuplet_bracket_staff_padding(3),
+    baca.select_stages(7, 8),
+    baca.dynamic_line_spanner_staff_padding(7),
+    baca.tuplet_bracket_staff_padding(3),
     )
 
 segment_maker.append_commands(
     vn,
-    (6, 8),
-    dynamic_line_spanner_staff_padding(7),
-    tuplet_bracket_staff_padding(3),
+    baca.select_stages(6, 8),
+    baca.dynamic_line_spanner_staff_padding(7),
+    baca.tuplet_bracket_staff_padding(3),
     )
 
 segment_maker.append_commands(
     va,
-    (6, 8),
-    dynamic_line_spanner_staff_padding(9),
-    tuplet_bracket_staff_padding(5),
+    baca.select_stages(6, 8),
+    baca.dynamic_line_spanner_staff_padding(9),
+    baca.tuplet_bracket_staff_padding(5),
     )
 
 segment_maker.append_commands(
     vc,
-    (6, 8),
-    dynamic_line_spanner_staff_padding(9),
-    tuplet_bracket_staff_padding(5),
+    baca.select_stages(6, 8),
+    baca.dynamic_line_spanner_staff_padding(9),
+    baca.tuplet_bracket_staff_padding(5),
     )
 
 ### TIMINGS ###

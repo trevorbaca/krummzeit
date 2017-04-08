@@ -26,4 +26,4 @@ maker = baca.tools.ZaggedPitchClassMaker(
     grouping_counts=[1, 1, 2, 3],
     )
 
-violet_pitch_classes = maker()
+violet_pitch_classes = maker().get_payload()

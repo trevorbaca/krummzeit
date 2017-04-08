@@ -2,7 +2,16 @@
 import abjad
 import baca
 import krummzeit
-from krummzeit.materials.__abbreviations__ import *
+
+### CONTEXT NAMES ###
+
+ob = 'Oboe Music Voice'
+cl = 'Clarinet Music Voice'
+pf = 'Piano Music Voice'
+perc = 'Percussion Music Voice'
+vn = 'Violin Music Voice'
+va = 'Viola Music Voice'
+vc = 'Cello Music Voice'
 
 
 ###############################################################################
@@ -112,7 +121,7 @@ segment_maker.copy_specifier(
 music_maker = segment_maker.append_commands(
     pf,
     baca.select_stages(1, 4),
-    baca.instrument(harpsichord),
+    baca.instrument(krummzeit.materials.instruments['harpsichord']),
     baca.tools.RhythmSpecifier(
         division_maker=baca.tools.SplitByDurationsDivisionCallback(
             durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
@@ -180,7 +189,6 @@ music_maker = segment_maker.append_commands(
 segment_maker.append_commands(
     perc,
     baca.select_stages(1),
-    baca.instrument(sponges),
     baca.clef('percussion'),
     baca.tools.RhythmSpecifier(
         rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
@@ -188,6 +196,7 @@ segment_maker.append_commands(
             extra_counts_per_division=[2, 1, 0],
             ),
         ),
+    krummzeit.markup.sponges(),
     )
 
 segment_maker.copy_specifier(
@@ -240,9 +249,14 @@ music_maker = segment_maker.copy_specifier(
 segment_maker.copy_specifier(
     (pf, 1),
     baca.tools.SimpleScope(cl, (3, 4)),
-    instrument=baca.instrument(e_flat_clarinet),
     division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rhythm_maker__denominators=[4, 4, 4, 8],
+    )
+
+segment_maker.append_commands(
+    cl,
+    baca.select_stages(3, 4),
+    baca.instrument(krummzeit.materials.instruments['e-flat cl']),
     )
 
 segment_maker.copy_specifier(
@@ -255,7 +269,6 @@ segment_maker.copy_specifier(
 segment_maker.copy_specifier(
     (pf, 1),
     baca.tools.SimpleScope(vn, (4, 4)),
-    instrument=None,
     division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rhythm_maker__denominators=[4, 4, 4, 16],
     )
@@ -263,11 +276,14 @@ segment_maker.copy_specifier(
 segment_maker.copy_specifier(
     (pf, 1),
     baca.tools.SimpleScope(vn, (8, 13)),
-    instrument=baca.instrument(
-        krummzeit.materials.performer_inventory.get_instrument('vn.'),
-        ),
     division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rhythm_maker__denominators=[4, 4, 4, 16],
+    )
+
+segment_maker.append_commands(
+    vn,
+    baca.select_stages(8, 13),
+    baca.instrument(krummzeit.materials.instruments['violin']),
     )
 
 ### oboe [B9-13] ###
@@ -275,9 +291,14 @@ segment_maker.copy_specifier(
 segment_maker.copy_specifier(
     (pf, 1),
     baca.tools.SimpleScope(ob, (9, 13)),
-    instrument=baca.instrument(oboe),
     division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rhythm_maker__denominators=[4, 4, 4, 16],
+    )
+
+segment_maker.append_commands(
+    ob,
+    baca.select_stages(9, 13),
+    baca.instrument(krummzeit.materials.instruments['oboe']),
     )
 
 ### vn, va, vc [B12-14] (white OB bowing) ###
@@ -345,7 +366,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     pf,
     baca.select_stages(16, 19),
-    baca.instrument(piano),
+    baca.instrument(krummzeit.materials.instruments['piano']),
     baca.clef('bass'),
     baca.tools.RhythmSpecifier(
         rhythm_maker=abjad.rhythmmakertools.IncisedRhythmMaker(
@@ -364,8 +385,13 @@ segment_maker.append_commands(
 segment_maker.copy_specifier(
     (pf, 16),
     baca.tools.SimpleScope(perc, (16, 20)),
-    clef=baca.clef('percussion'),
-    instrument=baca.instrument(tam_tam),
+    )
+
+segment_maker.append_commands(
+    perc,
+    baca.select_stages(16, 20),
+    baca.clef('percussion'),
+    krummzeit.markup.tam_tam(),
     )
 
 ### vn, va, vc [B17-19] & [B20-22] pointillism ###
@@ -453,7 +479,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     cl,
     baca.select_stages(22, 23),
-    baca.instrument(e_flat_clarinet),
+    baca.instrument(krummzeit.materials.instruments['e-flat cl']),
     baca.tools.RhythmSpecifier(
         division_maker=baca.tools.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
@@ -477,7 +503,6 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     vn,
     baca.select_stages(23),
-    baca.instrument(scraped_slate),
     baca.clef('percussion'),
     baca.tools.RhythmSpecifier(
         rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
@@ -487,6 +512,7 @@ segment_maker.append_commands(
                 ),
             ),
         ),
+    krummzeit.markup.scraped_slate(),
     )
 
 ###############################################################################
@@ -502,7 +528,7 @@ segment_maker.append_commands(
     [pf, vn, cl],
     baca.select_stages(1, 4),
     baca.tools.ScorePitchCommand(
-        source=indigo_pitch_classes,    
+        source=krummzeit.materials.indigo_pitch_classes,    
         start_index=0,
         ),
     )
@@ -512,7 +538,7 @@ segment_maker.append_commands(
     [pf, vn, ob, cl],
     baca.select_stages(5, 13),
     baca.tools.ScorePitchCommand(
-        source=indigo_pitch_classes,    
+        source=krummzeit.materials.indigo_pitch_classes,    
         start_index=0,
         ),
     )
@@ -539,25 +565,28 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     [pf, vn, ob, cl],
     baca.select_stages(1, 13),
-    krummzeit_displacement,
+    krummzeit.tools.displacement(),
     )
 
 segment_maker.append_commands(
     pf,
     baca.select_stages(1, 8),
-    wide_fifth_octave,
+    #wide_fifth_octave,
+    krummzeit.tools.register_wide(5),
     )
 
 segment_maker.append_commands(
     [vn, ob, cl],
     baca.select_stages(1, 8),
-    narrow_fifth_octave,
+    #narrow_fifth_octave,
+    krummzeit.tools.register_narrow(5),
     )
 
 segment_maker.append_commands(
     pf,
     baca.select_stages(9, 10),
-    narrow_third_to_fifth_octave,
+    #narrow_third_to_fifth_octave,
+    krummzeit.tools.register_narrow(3, 5),
     )
 
 segment_maker.append_commands(
@@ -575,13 +604,15 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     [vn, ob, cl],
     baca.select_stages(9, 10),
-    narrow_fourth_to_fifth_octave,
+    #narrow_fourth_to_fifth_octave,
+    krummzeit.tools.register_narrow(4, 5),
     )
 
 segment_maker.append_commands(
     [pf, vn, ob, cl],
     baca.select_stages(11, 13),
-    narrow_fifth_octave,
+    #narrow_fifth_octave,
+    krummzeit.tools.register_narrow(5),
     )
 
 segment_maker.append_commands(
@@ -707,44 +738,46 @@ segment_maker.append_commands(
 ### (3) [B1-13] (hpschd, vn, ob, cl) ###
 
 # IMPORTANT TODO: integrate timeline selectors:
+
+segment_maker.append_specifiers(
+    [
+        (va, baca.select_stages(12, 16)),
+        (vc, baca.select_stages(12, 17)),
+        (vn, baca.select_stages(14, 18)),
+        ],
+    baca.tools.ScorePitchCommand(
+        source=krummzeit.materials.violet_pitch_classes,    
+        start_index=0,
+        ),
+    )
+
+## TODO: this is probably wrong:
 #segment_maker.append_commands(
-#    [
-#        (va, baca.select_stages(12, 16)),
-#        (vc, baca.select_stages(12, 17)),
-#        (vn, baca.select_stages(14, 18)),
-#        ],
+#    va,
+#    baca.select_stages(12, 16),
 #    baca.tools.ScorePitchCommand(
 #        source=violet_pitch_classes,    
 #        start_index=0,
 #        ),
 #    )
-# TODO: this is probably wrong:
-segment_maker.append_commands(
-    va,
-    baca.select_stages(12, 16),
-    baca.tools.ScorePitchCommand(
-        source=violet_pitch_classes,    
-        start_index=0,
-        ),
-    )
-# TODO: this is probably wrong:
-segment_maker.append_commands(
-    vc,
-    baca.select_stages(12, 17),
-    baca.tools.ScorePitchCommand(
-        source=violet_pitch_classes,    
-        start_index=0,
-        ),
-    )
-# TODO: this is probably wrong:
-segment_maker.append_commands(
-    vn,
-    baca.select_stages(14, 18),
-    baca.tools.ScorePitchCommand(
-        source=violet_pitch_classes,    
-        start_index=0,
-        ),
-    )
+## TODO: this is probably wrong:
+#segment_maker.append_commands(
+#    vc,
+#    baca.select_stages(12, 17),
+#    baca.tools.ScorePitchCommand(
+#        source=violet_pitch_classes,    
+#        start_index=0,
+#        ),
+#    )
+## TODO: this is probably wrong:
+#segment_maker.append_commands(
+#    vn,
+#    baca.select_stages(14, 18),
+#    baca.tools.ScorePitchCommand(
+#        source=violet_pitch_classes,    
+#        start_index=0,
+#        ),
+#    )
 
 segment_maker.append_commands(
     va,
@@ -754,7 +787,8 @@ segment_maker.append_commands(
     baca.dynamic('f'),
     baca.glissandi(),
     baca.markup.OB_full_bow_strokes(),
-    narrow_fifth_to_third_octave,
+    #narrow_fifth_to_third_octave,
+    krummzeit.tools.register_narrow(5, 3),
     )
 
 segment_maker.append_commands(
@@ -771,7 +805,8 @@ segment_maker.append_commands(
     baca.dynamic('f'),
     baca.glissandi(),
     baca.markup.OB_full_bow_strokes(),
-    narrow_fifth_to_second_octave,
+    #narrow_fifth_to_second_octave,
+    krummzeit.tools.register_narrow(5, 2),
     )
 
 segment_maker.append_commands(
@@ -787,7 +822,8 @@ segment_maker.append_commands(
     baca.dynamic('f'),
     baca.glissandi(),
     baca.markup.OB_full_bow_strokes(),
-    narrow_fifth_to_fourth_octave,
+    #narrow_fifth_to_fourth_octave,
+    krummzeit.tools.register_narrow(5, 4),
     )
 
 ### (3) [B16-20] (pf clusters, tam-tam) ###
@@ -798,7 +834,7 @@ segment_maker.append_commands(
     baca.marcati(),
     baca.ottava_bassa(),
     baca.reiterated_dynamic('fff'),
-    low_piano_cluster,
+    krummzeit.tools.make_cluster('low'),
     )
 
 segment_maker.append_commands(
@@ -811,59 +847,61 @@ segment_maker.append_commands(
 ### (9.1) [B17-23] ###
 
 # IMPORTANT TODO: probably integrate timeline selectors here:
+
+segment_maker.append_specifiers(
+    [
+        (va, (17, 22)),
+        (vc, (18, 22)),
+        (vn, (19, 22)),
+        (pf, (20, 23)),
+        ],
+    baca.tools.ScorePitchCommand(
+        source=krummzeit.materials.violet_pitch_classes,    
+        start_index=60,
+        operators=[abjad.Transposition(n=1)],
+        ),
+    )
+
+## TODO: this is probably wrong:
 #segment_maker.append_commands(
-#    [
-#        (va, (17, 22)),
-#        (vc, (18, 22)),
-#        (vn, (19, 22)),
-#        (pf, (20, 23)),
-#        ],
+#    va,
+#    baca.select_stages(17, 22),
 #    baca.tools.ScorePitchCommand(
 #        source=violet_pitch_classes,    
 #        start_index=60,
 #        operators=[abjad.Transposition(n=1)],
 #        ),
 #    )
-# TODO: this is probably wrong:
-segment_maker.append_commands(
-    va,
-    baca.select_stages(17, 22),
-    baca.tools.ScorePitchCommand(
-        source=violet_pitch_classes,    
-        start_index=60,
-        operators=[abjad.Transposition(n=1)],
-        ),
-    )
-# TODO: this is probably wrong:
-segment_maker.append_commands(
-    vc,
-    baca.select_stages(18, 22),
-    baca.tools.ScorePitchCommand(
-        source=violet_pitch_classes,    
-        start_index=60,
-        operators=[abjad.Transposition(n=1)],
-        ),
-    )
-# TODO: this is probably wrong:
-segment_maker.append_commands(
-    vn,
-    baca.select_stages(19, 22),
-    baca.tools.ScorePitchCommand(
-        source=violet_pitch_classes,    
-        start_index=60,
-        operators=[abjad.Transposition(n=1)],
-        ),
-    )
-# TODO: this is probably wrong:
-segment_maker.append_commands(
-    pf,
-    baca.select_stages(20, 23),
-    baca.tools.ScorePitchCommand(
-        source=violet_pitch_classes,    
-        start_index=60,
-        operators=[abjad.Transposition(n=1)],
-        ),
-    )
+## TODO: this is probably wrong:
+#segment_maker.append_commands(
+#    vc,
+#    baca.select_stages(18, 22),
+#    baca.tools.ScorePitchCommand(
+#        source=violet_pitch_classes,    
+#        start_index=60,
+#        operators=[abjad.Transposition(n=1)],
+#        ),
+#    )
+## TODO: this is probably wrong:
+#segment_maker.append_commands(
+#    vn,
+#    baca.select_stages(19, 22),
+#    baca.tools.ScorePitchCommand(
+#        source=violet_pitch_classes,    
+#        start_index=60,
+#        operators=[abjad.Transposition(n=1)],
+#        ),
+#    )
+## TODO: this is probably wrong:
+#segment_maker.append_commands(
+#    pf,
+#    baca.select_stages(20, 23),
+#    baca.tools.ScorePitchCommand(
+#        source=violet_pitch_classes,    
+#        start_index=60,
+#        operators=[abjad.Transposition(n=1)],
+#        ),
+#    )
 
 segment_maker.append_commands(
     va,
@@ -872,7 +910,8 @@ segment_maker.append_commands(
     baca.dynamic('fff'),
     baca.markup.pizz(),
     baca.staccatissimi(),
-    narrow_fifth_to_sixth_octave,
+    #narrow_fifth_to_sixth_octave,
+    krummzeit.tools.register_narrow(5, 6),
     )
 
 segment_maker.append_commands(
@@ -882,7 +921,8 @@ segment_maker.append_commands(
     baca.dynamic('fff'),
     baca.markup.pizz(),
     baca.staccatissimi(),
-    narrow_fifth_to_sixth_octave,
+    #narrow_fifth_to_sixth_octave,
+    krummzeit.tools.register_narrow(5, 6),
     )
 
 segment_maker.append_commands(
@@ -891,7 +931,8 @@ segment_maker.append_commands(
     baca.dynamic('fff'),
     baca.markup.pizz(),
     baca.staccatissimi(),
-    narrow_fifth_to_sixth_octave,
+    #narrow_fifth_to_sixth_octave,
+    krummzeit.tools.register_narrow(5, 6),
     )
 
 segment_maker.append_commands(
@@ -899,7 +940,8 @@ segment_maker.append_commands(
     baca.select_stages(20, 23),
     baca.dynamic('fff'),
     baca.staccatissimi(),
-    narrow_fifth_to_sixth_octave,
+    #narrow_fifth_to_sixth_octave,
+    krummzeit.tools.register_narrow(5, 6),
     )
 
 ### (6.2) [B22-23] Eb clarinet & slate ###
@@ -923,7 +965,7 @@ segment_maker.append_commands(
     vn,
     baca.select_stages(23),
     baca.dynamic('mf'),
-    baca.markup(scrape_moderately),
+    krummzeit.markup.scrape_moderately(),
     )
 
 ### VERTICAL ALIGNMENT ###

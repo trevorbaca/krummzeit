@@ -293,7 +293,7 @@ def pitch_specifier(
         start_index=start_index,
         )
 
-indigo_pitch_classes = krummzeit.materials.indigo_pitch_classes.get_payload()
+#indigo_pitch_classes = krummzeit.materials.indigo_pitch_classes.get_payload()
 #violet_pitch_classes = krummzeit.materials.violet_pitch_classes.get_payload()
 
 #krummzeit_displacement = baca.tools.OctaveDisplacementCommand(
@@ -303,21 +303,21 @@ indigo_pitch_classes = krummzeit.materials.indigo_pitch_classes.get_payload()
 #        -1, -1, -1, -1,
 #        ],
 #    )
-
-color_fingerings = baca.tools.ColorFingeringCommand(
-    deposit_annotations=['color fingering'],
-    number_lists=(
-        [0, 1, 2, 1],
-        ),
-    )
-
-color_microtones = baca.tools.MicrotonalDeviationCommand(
-    deposit_annotations=['color microtone'],
-    number_lists=(
-        [0, -0.5, 0, 0.5],
-        [0, 0.5, 0, -0.5],
-        ),
-    )
+#
+#color_fingerings = baca.tools.ColorFingeringCommand(
+#    deposit_annotations=['color fingering'],
+#    number_lists=(
+#        [0, 1, 2, 1],
+#        ),
+#    )
+#
+#color_microtones = baca.tools.MicrotonalDeviationCommand(
+#    deposit_annotations=['color microtone'],
+#    number_lists=(
+#        [0, -0.5, 0, 0.5],
+#        [0, 0.5, 0, -0.5],
+#        ),
+#    )
 
 trill_quarter_notes = baca.tools.TrillCommand(
     forbidden_annotations=['color fingering', 'color microtone'],

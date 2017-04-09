@@ -35,6 +35,29 @@ class MarkupLibrary(abjad.abctools.AbjadObject):
         string = '5th harmonic of F1'
         return baca.markup(string)
 
+    def grid_poss_to_flaut_poss():
+        left_text = abjad.Markup('grid. possibile').italic().larger() + abjad.Markup.hspace(1)
+        right_text = abjad.Markup.hspace(1) + abjad.Markup('flaut. possibile').italic().larger()
+        spanner = abjad.spannertools.TextSpanner(
+            overrides = {
+                'text_spanner__bound_details__left__padding': -1,
+                'text_spanner__bound_details__left__stencil_align_dir_y': 0,
+                'text_spanner__bound_details__left__text': left_text,
+                'text_spanner__bound_details__left_broken__text': None,
+                'text_spanner__bound_details__right__arrow': True,
+                'text_spanner__bound_details__right__padding': 1,
+                'text_spanner__bound_details__right__stencil_align_dir_y': 0,
+                'text_spanner__bound_details__right__text': right_text,
+                'text_spanner__bound_details__right_broken__padding': 0,
+                'text_spanner__bound_details__right_broken__text': None,
+                'text_spanner__dash_fraction': 0.25,
+                'text_spanner__dash_period': 1.5,
+            }
+        )
+        return baca.tools.SpannerCommand(
+            spanner=spanner,
+            )
+
     def on_bridge_full_bow():
         string = 'directly on bridge: full bow each stroke'
         return baca.markup(string)
@@ -67,6 +90,10 @@ class MarkupLibrary(abjad.abctools.AbjadObject):
     def subito_non_armonichi():
         string = 'subito non armonichi e non gridato'
         return baca.markup(string)
+        
+    def suspended_cymbal():
+        string = 'suspended cymbal'
+        return baca.markup.boxed(string)
         
     def tam_tam():
         string = 'tam-tam'

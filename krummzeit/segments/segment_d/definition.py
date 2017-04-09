@@ -488,25 +488,19 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     va,
     baca.select_stages(11, 16),
-    baca.tools.ScorePitchCommand(
-        source='bf,',
-        ),
+    baca.pitches('bf,'),
     )
 
 segment_maker.append_commands(
     vn,
     baca.select_stages(14, 16),
-    baca.tools.ScorePitchCommand(
-        source='fs',
-        ),
+    baca.pitches('fs'),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(14, 16),
-    baca.tools.ScorePitchCommand(
-        source='a,,',
-        ),
+    baca.pitches('a,,'),
     )
 
 segment_maker.append_commands(
@@ -539,9 +533,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     ob,
     baca.select_stages(14, 16),
-    baca.tools.ScorePitchCommand(
-        source='B3',
-        ),
+    baca.pitches('B3'),
     )
 
 segment_maker.append_commands(
@@ -553,9 +545,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     cl,
     baca.select_stages(14, 17),
-    baca.tools.ScorePitchCommand(
-        source='B1',
-        ),
+    baca.pitches('B1'),
     )
 
 segment_maker.append_commands(

@@ -2,7 +2,16 @@
 import abjad
 import baca
 import krummzeit
-from krummzeit.materials.__abbreviations__ import *
+
+### CONTEXT NAMES ###
+
+ob = 'Oboe Music Voice'
+cl = 'Clarinet Music Voice'
+pf = 'Piano Music Voice'
+perc = 'Percussion Music Voice'
+vn = 'Violin Music Voice'
+va = 'Viola Music Voice'
+vc = 'Cello Music Voice'
 
 
 ###############################################################################
@@ -109,7 +118,7 @@ music_maker = segment_maker.append_commands(
 music_maker = segment_maker.append_commands(
     cl,
     baca.select_stages(1, 5),
-    baca.instrument(bass_clarinet),
+    baca.instrument(krummzeit.materials.instruments['bass clarinet']),
     baca.tools.RhythmSpecifier(
         rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
             tie_specifier=abjad.rhythmmakertools.TieSpecifier(
@@ -131,7 +140,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     cl,
     baca.select_stages(9),
-    baca.instrument(e_flat_clarinet),
+    baca.instrument(krummzeit.materials.instruments['e-flat cl']),
     )
 
 ### bass clarinet [H18-21] reiteration pedal ###
@@ -139,14 +148,13 @@ segment_maker.append_commands(
 segment_maker.copy_specifier(
     (ob, 18),
     baca.tools.SimpleScope(cl, (18, 21)), # ?
-    instrument=bass_clarinet,
     rhythm_maker__tuplet_ratios=[(1, 3), (1, 1)],
     )
 
 segment_maker.append_commands(
     cl,
     baca.select_stages(18),
-    baca.instrument(bass_clarinet),
+    baca.instrument(krummzeit.materials.instruments['bass clarinet']),
     )
 
 ### harpsichord [H5-11] 5th-octave counterpoint ###
@@ -154,7 +162,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     pf,
     baca.select_stages(5, 11),
-    baca.instrument(harpsichord),
+    baca.instrument(krummzeit.materials.instruments['harpsichord']),
     baca.clef('treble'),
     baca.tools.RhythmSpecifier(
         division_maker=baca.tools.SplitByDurationsDivisionCallback(
@@ -177,7 +185,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     pf,
     baca.select_stages(14, 20),
-    baca.instrument(piano),
+    baca.instrument(krummzeit.materials.instruments['piano']),
     baca.clef('bass'),
     baca.tools.RhythmSpecifier(
         division_maker=baca.tools.SplitByRoundedRatiosDivisionCallback(
@@ -197,7 +205,6 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     perc,
     baca.select_stages(1, 7),
-    baca.instrument(tam_tam),
     baca.clef('percussion'),
     baca.tools.RhythmSpecifier(
         division_maker=baca.tools.FuseByCountsDivisionCallback(
@@ -210,6 +217,7 @@ segment_maker.append_commands(
             division_masks=[abjad.Pattern(indices=[-1])],
             ),
         ),
+    krummzeit.markup.tam_tam(),
     )
 
 ### vn [H5-12] 5th-octave counterpoint ###
@@ -347,9 +355,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     cl,
     baca.select_stages(1, 5),
-    baca.tools.ScorePitchCommand(
-        source='B1',
-        ),
+    baca.pitches('B1'),
     )
 
 segment_maker.append_commands(
@@ -361,17 +367,13 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     vc,
     baca.select_stages(1, 9),
-    baca.tools.ScorePitchCommand(
-        source='A1 B~1 C2 D+2 E+2 F2 Gb2 A~2 B2',
-        ),
+    baca.pitches('A1 B~1 C2 D+2 E+2 F2 Gb2 A~2 B2'),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(1, 9),
-    baca.tools.ScorePitchCommand(
-        source='Bb2 C~3 D3 E+3 F+3 G3',
-        ),
+    baca.pitches('Bb2 C~3 D3 E+3 F+3 G3'),
     )
 
 segment_maker.append_commands(
@@ -395,9 +397,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     ob,
     baca.select_stages(1, 7),
-    baca.tools.ScorePitchCommand(
-        source='B3',
-        ),
+    baca.pitches('B3'),
     )
 
 segment_maker.append_commands(
@@ -415,7 +415,7 @@ segment_maker.append_specifiers(
         ],
     baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=3)],
-        source=indigo_pitch_classes[:20],    
+        source=krummzeit.materials.indigo_pitch_classes[:20],    
         start_index=0,
         ),
     )
@@ -423,22 +423,25 @@ segment_maker.append_specifiers(
 segment_maker.append_commands(
     pf,
     baca.select_stages(5, 12),
-    krummzeit_displacement,
-    wide_fifth_octave,
+    krummzeit.tools.displacement(),
+    #wide_fifth_octave,
+    krummzeit.tools.register_wide(5),
     )
 
 segment_maker.append_commands(
     vn,
     baca.select_stages(5, 12),
-    krummzeit_displacement,
-    wide_sixth_octave,
+    krummzeit.tools.displacement(),
+    #wide_sixth_octave,
+    krummzeit.tools.register_wide(6),
     )
 
 segment_maker.append_commands(
     [ob, cl],
     baca.select_stages(5, 12),
-    krummzeit_displacement,
-    wide_fifth_octave,
+    krummzeit.tools.displacement(),
+    #wide_fifth_octave,
+    krummzeit.tools.register_wide(5),
     )
 
 segment_maker.append_commands(
@@ -461,7 +464,7 @@ segment_maker.append_commands(
     vn,
     baca.select_stages(5, 12),
     baca.dynamic('pp'),
-    baca.markup(leggierissimo_off_string),
+    baca.markup.leggierissimo_off_string_bowing_on_staccati(),
     baca.staccati(),
     )
 
@@ -470,17 +473,13 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     va,
     baca.select_stages(11, 12),
-    baca.tools.ScorePitchCommand(
-        source='G3 F#+3',
-        ),
+    baca.pitches('G3 F#+3'),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(11, 12),
-    baca.tools.ScorePitchCommand(
-        source='B2 A#+2',
-        ),
+    baca.pitches('B2 A#+2'),
     )
 
 segment_maker.append_commands(
@@ -498,19 +497,17 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     pf,
     baca.select_stages(14, 20),
-    baca.tools.ScorePitchCommand(
-        source='C4',
-        ),
+    baca.pitches('C4'),
     )
 
 segment_maker.append_commands(
     pf,
     baca.select_stages(14, 20),
     baca.dynamic_line_spanner_staff_padding(4),
-    baca.markup(fifth_harmonic_of_F1),
     baca.natural_harmonics(),
     baca.reiterated_dynamic('ff'),
     baca.tenuti(),
+    krummzeit.markup.fifth_harmonic_of_F1(),
     )
 
 segment_maker.append_specifiers(
@@ -523,7 +520,7 @@ segment_maker.append_specifiers(
             abjad.Transposition(n=8), 
             abjad.Inversion()],
         reverse=True,
-        source=violet_pitch_classes,    
+        source=krummzeit.materials.violet_pitch_classes,    
         start_index=240,
         ),
     )
@@ -553,22 +550,25 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     vn,
     baca.select_stages(14, 20),
-    krummzeit_displacement,
-    wide_fourth_octave,
+    krummzeit.tools.displacement(),
+    #wide_fourth_octave,
+    krummzeit.tools.register_wide(4),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(14, 19),
-    krummzeit_displacement,
-    narrow_third_octave,
+    krummzeit.tools.displacement(),
+    #narrow_third_octave,
+    krummzeit.tools.register_narrow(3),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(14, 20),
-    krummzeit_displacement,
-    narrow_second_octave,
+    krummzeit.tools.displacement(),
+    #narrow_second_octave,
+    krummzeit.tools.register_narrow(2),
     )
 
 ### bcl, ob pedals ###
@@ -576,31 +576,27 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     cl,
     baca.select_stages(18, 22),
-    baca.tools.ScorePitchCommand(
-        source='C2',
-        ),
+    baca.pitches('C2'),
     )
 
 segment_maker.append_commands(
     cl,
     baca.select_stages(18, 22),
     baca.hairpins(['f < ff']),
-    color_fingerings,
+    krummzeit.tools.color_fingerings(),
     )
 
 segment_maker.append_commands(
     ob,
     baca.select_stages(18, 22),
-    baca.tools.ScorePitchCommand(
-        source='C4',
-        ),
+    baca.pitches('C4'),
     )
 
 segment_maker.append_commands(
     ob,
     baca.select_stages(18, 22),
     baca.dynamic('f'),
-    color_fingerings,
+    krummzeit.tools.color_fingerings(),
     )
 
 ### (14) string reiteration ###
@@ -608,25 +604,19 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     vn,
     baca.select_stages(21),
-    baca.tools.ScorePitchCommand(
-        source='C4 Db4',
-        ),
+    baca.pitches('C4 Db4'),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(20, 21),
-    baca.tools.ScorePitchCommand(
-        source='B+2 C3 B+2 C3',
-        ),
+    baca.pitches('B+2 C3 B+2 C3'),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(20, 21),
-    baca.tools.ScorePitchCommand(
-        source='B1 C2',
-        ),
+    baca.pitches('B1 C2'),
     )
 
 segment_maker.append_commands(

@@ -225,25 +225,19 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     vn,
     baca.select_stages(1),
-    baca.tools.ScorePitchCommand(
-        source='Eb5',
-        ),
+    baca.pitches('Eb5'),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(1),
-    baca.tools.ScorePitchCommand(
-        source='A3',
-        ),
+    baca.pitches('A3'),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(1),
-    baca.tools.ScorePitchCommand(
-        source='E~2',
-        ),
+    baca.pitches('E~2'),
     )
 
 segment_maker.append_commands(
@@ -268,10 +262,9 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     cl,
     baca.select_stages(3, 4),
-    baca.tools.ScorePitchCommand(
-        source='B1',
-        ),
+    baca.pitches('B1'),
     )
+
 segment_maker.append_commands(
     cl,
     baca.select_stages(3, 4),
@@ -295,9 +288,9 @@ segment_maker.append_commands(
     [vn, va, vc],
     baca.select_stages(3, 7),
     baca.glissandi(),
+    baca.hairpins(['pp < ff']),
     baca.markup.molto_flautando(),
     baca.natural_harmonics(),
-    baca.hairpins(['pp < ff']),
     )
 
 segment_maker.append_commands(
@@ -324,9 +317,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     [pf, perc],
     baca.select_stages(6),
-    baca.tools.ScorePitchCommand(
-        source='C#5',
-        ),
+    baca.pitches('C#5'),
     )
 
 segment_maker.append_commands(

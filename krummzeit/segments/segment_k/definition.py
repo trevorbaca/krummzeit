@@ -198,9 +198,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     pf,
     baca.select_stages(1, 12),
-    baca.tools.ScorePitchCommand(
-        source='C#6',
-        ),
+    baca.pitches('C#6'),
     )
 
 segment_maker.append_commands(
@@ -220,9 +218,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     perc,
     baca.select_stages(1, 12),
-    baca.tools.ScorePitchCommand(
-        source='C#6',
-        ),
+    baca.pitches('C#6'),
     )
 
 segment_maker.append_commands(
@@ -261,17 +257,13 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     vc,
     baca.select_stages(1, 6),
-    baca.tools.ScorePitchCommand(
-        source='D4 D4 D4 D4 D4 D4 D2',
-        ),
+    baca.pitches('D4 D4 D4 D4 D4 D4 D2'),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(7, 12),
-    baca.tools.ScorePitchCommand(
-        source='D2',
-        ),
+    baca.pitches('D2'),
     )
 
 segment_maker.append_commands(
@@ -298,9 +290,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     ob,
     baca.select_stages(1, 12),
-    baca.tools.ScorePitchCommand(
-        source='C#4',
-        ),
+    baca.pitches('C#4'),
     )
 
 segment_maker.append_commands(
@@ -315,9 +305,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     cl,
     baca.select_stages(1, 12),
-    baca.tools.ScorePitchCommand(
-        source='D2',
-        ),
+    baca.pitches('D2'),
     )
 
 segment_maker.append_commands(

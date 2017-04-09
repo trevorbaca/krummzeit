@@ -308,17 +308,13 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     ob,
     baca.select_stages(1),
-    baca.tools.ScorePitchCommand(
-        source='Eb5',
-        ),
+    baca.pitches('Eb5'),
     )
 
 segment_maker.append_commands(
     cl,
     baca.select_stages(1),
-    baca.tools.ScorePitchCommand(
-        source='Eb2',
-        ),
+    baca.pitches('Eb2'),
     )
 
 segment_maker.append_commands(
@@ -338,9 +334,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     [pf, perc],
     baca.select_stages(1),
-    baca.tools.ScorePitchCommand(
-        source='F#6',
-        ),
+    baca.pitches('F#6'),
     )
 
 segment_maker.append_commands(
@@ -360,25 +354,19 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     vn,
     baca.select_stages(1, 3),
-    baca.tools.ScorePitchCommand(
-        source='Eb5',
-        ),
+    baca.pitches('Eb5'),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(1, 3),
-    baca.tools.ScorePitchCommand(
-        source='A3',
-        ),
+    baca.pitches('A3'),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(1, 3),
-    baca.tools.ScorePitchCommand(
-        source='E~2',
-        ),
+    baca.pitches('E~2'),
     )
 
 segment_maker.append_commands(
@@ -442,9 +430,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     cl,
     baca.select_stages(3, 11),
-    baca.tools.ScorePitchCommand(
-        source='E2',
-        ),
+    baca.pitches('E2'),
     )
 
 segment_maker.append_commands(

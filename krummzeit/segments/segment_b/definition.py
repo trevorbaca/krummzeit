@@ -658,49 +658,37 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     va,
     baca.select_stages(1, 4),
-    baca.tools.ScorePitchCommand(
-        source="d ctqs e dqs cqs b, cqs",
-        ),
+    baca.pitches("d ctqs e dqs cqs b, cqs"),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(5, 8),
-    baca.tools.ScorePitchCommand(
-        source="e dtqs f eqs dqs c dqs",
-        ),
+    baca.pitches("e dtqs f eqs dqs c dqs"),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(9),
-    baca.tools.ScorePitchCommand(
-        source="g ftqs a gqs fqs e fqs",
-        ),
+    baca.pitches("g ftqs a gqs fqs e fqs"),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(1, 4),
-    baca.tools.ScorePitchCommand(
-        source="e, dqs, cqs, b,, cqs, d, ctqs,",
-        ),
+    baca.pitches("e, dqs, cqs, b,, cqs, d, ctqs,"),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(5, 8),
-    baca.tools.ScorePitchCommand(
-        source="f, eqs, dqs, c, dqs, e, dtqs,",
-        ),
+    baca.pitches("f, eqs, dqs, c, dqs, e, dtqs,"),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(9),
-    baca.tools.ScorePitchCommand(
-        source="a, gqs, fqs, e, fqs, g, ftqs,",
-        ),
+    baca.pitches("a, gqs, fqs, e, fqs, g, ftqs,")
     )
 
 segment_maker.append_commands(
@@ -750,34 +738,6 @@ segment_maker.append_specifiers(
         start_index=0,
         ),
     )
-
-## TODO: this is probably wrong:
-#segment_maker.append_commands(
-#    va,
-#    baca.select_stages(12, 16),
-#    baca.tools.ScorePitchCommand(
-#        source=violet_pitch_classes,    
-#        start_index=0,
-#        ),
-#    )
-## TODO: this is probably wrong:
-#segment_maker.append_commands(
-#    vc,
-#    baca.select_stages(12, 17),
-#    baca.tools.ScorePitchCommand(
-#        source=violet_pitch_classes,    
-#        start_index=0,
-#        ),
-#    )
-## TODO: this is probably wrong:
-#segment_maker.append_commands(
-#    vn,
-#    baca.select_stages(14, 18),
-#    baca.tools.ScorePitchCommand(
-#        source=violet_pitch_classes,    
-#        start_index=0,
-#        ),
-#    )
 
 segment_maker.append_commands(
     va,
@@ -862,47 +822,6 @@ segment_maker.append_specifiers(
         ),
     )
 
-## TODO: this is probably wrong:
-#segment_maker.append_commands(
-#    va,
-#    baca.select_stages(17, 22),
-#    baca.tools.ScorePitchCommand(
-#        source=violet_pitch_classes,    
-#        start_index=60,
-#        operators=[abjad.Transposition(n=1)],
-#        ),
-#    )
-## TODO: this is probably wrong:
-#segment_maker.append_commands(
-#    vc,
-#    baca.select_stages(18, 22),
-#    baca.tools.ScorePitchCommand(
-#        source=violet_pitch_classes,    
-#        start_index=60,
-#        operators=[abjad.Transposition(n=1)],
-#        ),
-#    )
-## TODO: this is probably wrong:
-#segment_maker.append_commands(
-#    vn,
-#    baca.select_stages(19, 22),
-#    baca.tools.ScorePitchCommand(
-#        source=violet_pitch_classes,    
-#        start_index=60,
-#        operators=[abjad.Transposition(n=1)],
-#        ),
-#    )
-## TODO: this is probably wrong:
-#segment_maker.append_commands(
-#    pf,
-#    baca.select_stages(20, 23),
-#    baca.tools.ScorePitchCommand(
-#        source=violet_pitch_classes,    
-#        start_index=60,
-#        operators=[abjad.Transposition(n=1)],
-#        ),
-#    )
-
 segment_maker.append_commands(
     va,
     baca.select_stages(17, 22),
@@ -949,9 +868,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     cl,
     baca.select_stages(22, 23),
-    baca.tools.ScorePitchCommand(
-        source="e'' dtqs'' f'' eqs'' dqs'' c'' dqs''",
-        ),
+    baca.pitches("e'' dtqs'' f'' eqs'' dqs'' c'' dqs''"),
     )
 
 segment_maker.append_commands(

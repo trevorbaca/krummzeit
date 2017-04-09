@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+e -*- coding: utf-8 -*-
 import abjad
 import baca
 import krummzeit
@@ -14,56 +14,56 @@ vn = 'Violin Music Voice'
 va = 'Viola Music Voice'
 vc = 'Cello Music Voice'
 
-### INSTRUMENTS ###
+#### INSTRUMENTS ###
+#
+#oboe = krummzeit.materials.performer_inventory.get_instrument('ob.')
+#e_flat_clarinet = krummzeit.materials.performer_inventory.get_instrument(
+#    'cl. e-flat')
+#clarinet = krummzeit.materials.performer_inventory.get_instrument(
+#    'cl. in B-flat')
+#bass_clarinet = krummzeit.materials.performer_inventory.get_instrument(
+#    'bass cl.')
+#
+## TODO: make Instrument.default_scope public
+#piano = krummzeit.materials.performer_inventory.get_instrument('piano')
+#piano._default_scope = 'PianoMusicStaff'
+#harpsichord = krummzeit.materials.performer_inventory.get_instrument(
+#    'harpsichord')
+#harpsichord._default_scope = 'PianoMusicStaff'
+#
+#crotales = krummzeit.materials.performer_inventory.get_instrument('crotales')
+#scraped_slate = krummzeit.materials.performer_inventory.get_instrument(
+#    'scraped slate')
+#snare_drum = krummzeit.materials.performer_inventory.get_instrument(
+#    'snare drum')
+#sponges = krummzeit.materials.performer_inventory.get_instrument('sponges')
+#suspended_cymbal = krummzeit.materials.performer_inventory.get_instrument(
+#    'suspended cymbal')
+#tam_tam = krummzeit.materials.performer_inventory.get_instrument('tam-tam')
+#xylophone = krummzeit.materials.performer_inventory.get_instrument('xylophone')
+#percussion_instruments = (
+#    crotales,
+#    scraped_slate,
+#    snare_drum,
+#    sponges,
+#    suspended_cymbal,
+#    tam_tam,
+#    xylophone,
+#    )
+#for percussion_instrument in percussion_instruments:
+#    percussion_instrument._do_not_format = True
+#
+#violin = krummzeit.materials.performer_inventory.get_instrument('violin')
+#viola = krummzeit.materials.performer_inventory.get_instrument('viola')
+#cello = krummzeit.materials.performer_inventory.get_instrument('cello')
 
-oboe = krummzeit.materials.performer_inventory.get_instrument('ob.')
-e_flat_clarinet = krummzeit.materials.performer_inventory.get_instrument(
-    'cl. e-flat')
-clarinet = krummzeit.materials.performer_inventory.get_instrument(
-    'cl. in B-flat')
-bass_clarinet = krummzeit.materials.performer_inventory.get_instrument(
-    'bass cl.')
-
-# TODO: make Instrument.default_scope public
-piano = krummzeit.materials.performer_inventory.get_instrument('piano')
-piano._default_scope = 'PianoMusicStaff'
-harpsichord = krummzeit.materials.performer_inventory.get_instrument(
-    'harpsichord')
-harpsichord._default_scope = 'PianoMusicStaff'
-
-crotales = krummzeit.materials.performer_inventory.get_instrument('crotales')
-scraped_slate = krummzeit.materials.performer_inventory.get_instrument(
-    'scraped slate')
-snare_drum = krummzeit.materials.performer_inventory.get_instrument(
-    'snare drum')
-sponges = krummzeit.materials.performer_inventory.get_instrument('sponges')
-suspended_cymbal = krummzeit.materials.performer_inventory.get_instrument(
-    'suspended cymbal')
-tam_tam = krummzeit.materials.performer_inventory.get_instrument('tam-tam')
-xylophone = krummzeit.materials.performer_inventory.get_instrument('xylophone')
-percussion_instruments = (
-    crotales,
-    scraped_slate,
-    snare_drum,
-    sponges,
-    suspended_cymbal,
-    tam_tam,
-    xylophone,
-    )
-for percussion_instrument in percussion_instruments:
-    percussion_instrument._do_not_format = True
-
-violin = krummzeit.materials.performer_inventory.get_instrument('violin')
-viola = krummzeit.materials.performer_inventory.get_instrument('viola')
-cello = krummzeit.materials.performer_inventory.get_instrument('cello')
-
-### RHYTHM-MAKERS ###
-
-tied_notes = abjad.rhythmmakertools.NoteRhythmMaker(
-    tie_specifier=abjad.rhythmmakertools.TieSpecifier(
-        tie_across_divisions=True,
-        ),
-    )
+#### RHYTHM-MAKERS ###
+#
+#tied_notes = abjad.rhythmmakertools.NoteRhythmMaker(
+#    tie_specifier=abjad.rhythmmakertools.TieSpecifier(
+#        tie_across_divisions=True,
+#        ),
+#    )
 
 ### MARKUP ###
 
@@ -234,64 +234,64 @@ tied_notes = abjad.rhythmmakertools.NoteRhythmMaker(
 #        attribute_name='staff_padding',
 #        attribute_value=str(n),
 #        )
-
-left_text = abjad.Markup('molto flautando').italic().larger() + abjad.Markup.hspace(1)
-right_text = abjad.Markup.hspace(1) + abjad.Markup('molto gridato').italic().larger()
-molto_flaut_to_molto_grid = abjad.spannertools.TextSpanner(
-    overrides = {
-        'text_spanner__bound_details__left__padding': -1,
-        'text_spanner__bound_details__left__stencil_align_dir_y': 0,
-        'text_spanner__bound_details__left__text': left_text,
-        'text_spanner__bound_details__left_broken__text': None,
-        'text_spanner__bound_details__right__arrow': True,
-        'text_spanner__bound_details__right__padding': 1,
-        'text_spanner__bound_details__right__stencil_align_dir_y': 0,
-        'text_spanner__bound_details__right__text': right_text,
-        'text_spanner__bound_details__right_broken__padding': 0,
-        'text_spanner__bound_details__right_broken__text': None,
-        'text_spanner__dash_fraction': 0.25,
-        'text_spanner__dash_period': 1.5,
-    }
-)
-molto_flaut_to_molto_grid = baca.tools.SpannerCommand(
-    spanner=molto_flaut_to_molto_grid,
-    )
-
-left_text = abjad.Markup('grid. possibile').italic().larger() + abjad.Markup.hspace(1)
-right_text = abjad.Markup.hspace(1) + abjad.Markup('flaut. possibile').italic().larger()
-grid_poss_to_flaut_poss = abjad.spannertools.TextSpanner(
-    overrides = {
-        'text_spanner__bound_details__left__padding': -1,
-        'text_spanner__bound_details__left__stencil_align_dir_y': 0,
-        'text_spanner__bound_details__left__text': left_text,
-        'text_spanner__bound_details__left_broken__text': None,
-        'text_spanner__bound_details__right__arrow': True,
-        'text_spanner__bound_details__right__padding': 1,
-        'text_spanner__bound_details__right__stencil_align_dir_y': 0,
-        'text_spanner__bound_details__right__text': right_text,
-        'text_spanner__bound_details__right_broken__padding': 0,
-        'text_spanner__bound_details__right_broken__text': None,
-        'text_spanner__dash_fraction': 0.25,
-        'text_spanner__dash_period': 1.5,
-    }
-)
+#
+#left_text = abjad.Markup('molto flautando').italic().larger() + abjad.Markup.hspace(1)
+#right_text = abjad.Markup.hspace(1) + abjad.Markup('molto gridato').italic().larger()
+#molto_flaut_to_molto_grid = abjad.spannertools.TextSpanner(
+#    overrides = {
+#        'text_spanner__bound_details__left__padding': -1,
+#        'text_spanner__bound_details__left__stencil_align_dir_y': 0,
+#        'text_spanner__bound_details__left__text': left_text,
+#        'text_spanner__bound_details__left_broken__text': None,
+#        'text_spanner__bound_details__right__arrow': True,
+#        'text_spanner__bound_details__right__padding': 1,
+#        'text_spanner__bound_details__right__stencil_align_dir_y': 0,
+#        'text_spanner__bound_details__right__text': right_text,
+#        'text_spanner__bound_details__right_broken__padding': 0,
+#        'text_spanner__bound_details__right_broken__text': None,
+#        'text_spanner__dash_fraction': 0.25,
+#        'text_spanner__dash_period': 1.5,
+#    }
+#)
+#molto_flaut_to_molto_grid = baca.tools.SpannerCommand(
+#    spanner=molto_flaut_to_molto_grid,
+#    )
+#
+#left_text = abjad.Markup('grid. possibile').italic().larger() + abjad.Markup.hspace(1)
+#right_text = abjad.Markup.hspace(1) + abjad.Markup('flaut. possibile').italic().larger()
+#grid_poss_to_flaut_poss = abjad.spannertools.TextSpanner(
+#    overrides = {
+#        'text_spanner__bound_details__left__padding': -1,
+#        'text_spanner__bound_details__left__stencil_align_dir_y': 0,
+#        'text_spanner__bound_details__left__text': left_text,
+#        'text_spanner__bound_details__left_broken__text': None,
+#        'text_spanner__bound_details__right__arrow': True,
+#        'text_spanner__bound_details__right__padding': 1,
+#        'text_spanner__bound_details__right__stencil_align_dir_y': 0,
+#        'text_spanner__bound_details__right__text': right_text,
+#        'text_spanner__bound_details__right_broken__padding': 0,
+#        'text_spanner__bound_details__right_broken__text': None,
+#        'text_spanner__dash_fraction': 0.25,
+#        'text_spanner__dash_period': 1.5,
+#    }
+#)
 
 ### PITCH ###
 
-def pitch_specifier(
-    counts=None,
-    operators=None,
-    reverse=False,
-    source=None,
-    start_index=0,
-    ):
-    return baca.tools.ScorePitchCommand(
-        counts=counts,
-        operators=operators,
-        reverse=reverse,
-        source=source,
-        start_index=start_index,
-        )
+#def pitch_specifier(
+#    counts=None,
+#    operators=None,
+#    reverse=False,
+#    source=None,
+#    start_index=0,
+#    ):
+#    return baca.tools.ScorePitchCommand(
+#        counts=counts,
+#        operators=operators,
+#        reverse=reverse,
+#        source=source,
+#        start_index=start_index,
+#        )
 
 #indigo_pitch_classes = krummzeit.materials.indigo_pitch_classes.get_payload()
 #violet_pitch_classes = krummzeit.materials.violet_pitch_classes.get_payload()
@@ -319,19 +319,19 @@ def pitch_specifier(
 #        ),
 #    )
 
-trill_quarter_notes = baca.tools.TrillCommand(
-    forbidden_annotations=['color fingering', 'color microtone'],
-    minimum_written_duration=abjad.Duration(1, 4),
-    )
-
-pervasive_trills = baca.tools.TrillCommand(
-    minimum_written_duration=None,
-    )
-
-pervasive_A5_trills = baca.tools.TrillCommand(
-    minimum_written_duration=None,
-    pitch=abjad.NamedPitch('A5'),
-    )
+#trill_quarter_notes = baca.tools.TrillCommand(
+#    forbidden_annotations=['color fingering', 'color microtone'],
+#    minimum_written_duration=abjad.Duration(1, 4),
+#    )
+#
+#pervasive_trills = baca.tools.TrillCommand(
+#    minimum_written_duration=None,
+#    )
+#
+#pervasive_A5_trills = baca.tools.TrillCommand(
+#    minimum_written_duration=None,
+#    pitch=abjad.NamedPitch('A5'),
+#    )
 
 #### narrow registrations ###
 #

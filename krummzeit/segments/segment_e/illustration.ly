@@ -572,62 +572,32 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             \set Staff.instrumentName = \markup {
-                                \column
-                                    {
-                                        \hcenter-in
-                                            #12
-                                            {
-                                                Clarinet
-                                                \line
-                                                    {
-                                                        (E
-                                                        \hspace
-                                                            #-0.5
-                                                        \fontsize
-                                                            #-3
-                                                            \raise
-                                                                #0.5
-                                                                \flat
-                                                        \hspace
-                                                            #-0.5
-                                                        )
-                                                    }
-                                            }
-                                    }
+                                \hcenter-in
+                                    #16
+                                    \center-column
+                                        {
+                                            Clarinet
+                                            (Eb)
+                                        }
                                 }
                             \set Staff.shortInstrumentName = \markup {
-                                \column
-                                    {
-                                        \hcenter-in
-                                            #12
-                                            {
-                                                Cl.
-                                                \line
-                                                    {
-                                                        (E
-                                                        \hspace
-                                                            #-0.5
-                                                        \fontsize
-                                                            #-3
-                                                            \raise
-                                                                #0.5
-                                                                \flat
-                                                        \hspace
-                                                            #-0.5
-                                                        )
-                                                    }
-                                            }
-                                    }
+                                \hcenter-in
+                                    #10
+                                    \center-column
+                                        {
+                                            Cl.
+                                            (Eb)
+                                        }
                                 }
                             r8
                                 ^ \markup {
                                     \override
                                         #'(box-padding . 0.75)
                                         \box
-                                            "to clarinet in E-flat"
+                                            "to clarinet in B-flat"
                                     }
-                            b'4 \p
-                            b'16 [
+                            e''4 \p
+                            e''16 [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -635,7 +605,7 @@
                                             \finger
                                                 1
                                     }
-                            b'16 ]
+                            e''16 ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -643,7 +613,7 @@
                                             \finger
                                                 2
                                     }
-                            b'2. ~
+                            e''2. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -654,13 +624,13 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            b'2.
-                            b'2 ~
+                            e''2.
+                            e''2 ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            b'2
-                            b'4. ~
+                            e''2
+                            e''4. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -671,12 +641,12 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            b'2.
+                            e''2.
                             r2
                         }
                         \times 4/5 {
                             r8.
-                            b'4
+                            e''4
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -684,7 +654,7 @@
                                             \finger
                                                 2
                                     }
-                            b'16
+                            e''16
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -692,12 +662,12 @@
                                             \finger
                                                 1
                                     }
-                            c''2. ~
+                            f''2. ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            c''1.
-                            c''1 ~
+                            f''1.
+                            f''1 ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -708,8 +678,8 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/11 {
-                            c''2..
-                            c''8
+                            f''2..
+                            f''8
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -717,7 +687,7 @@
                                             \finger
                                                 2
                                     }
-                            c''4. ~
+                            f''4. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -728,13 +698,13 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            c''2.
+                            f''2.
                             r2
                         }
                         {
                             r16
-                            c''8 [
-                            c''32
+                            f''8 [
+                            f''32
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -742,7 +712,7 @@
                                             \finger
                                                 1
                                     }
-                            c''32 ]
+                            f''32 ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -750,7 +720,7 @@
                                             \finger
                                                 2
                                     }
-                            c''4. ~
+                            f''4. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -761,13 +731,13 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/10 {
-                            c''2.
-                            b'2 ~
+                            f''2.
+                            e''2 ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/14 {
-                            b'1
-                            b'2. ~
+                            e''1
+                            e''2. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -777,12 +747,12 @@
                                     }
                         }
                         {
-                            b'4.
+                            e''4.
                             r4
                         }
                         {
                             r16.
-                            b'8 [
+                            e''8 [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -790,7 +760,7 @@
                                             \finger
                                                 2
                                     }
-                            b'32 ]
+                            e''32 ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -798,12 +768,12 @@
                                             \finger
                                                 1
                                     }
-                            b'4. ~
+                            e''4. ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            b'2.
-                            b'2
+                            e''2.
+                            e''2
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -816,8 +786,8 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/10 {
                             r8
-                            d''4 \mf
-                            d''16 [
+                            g''4 \mf
+                            g''16 [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -825,7 +795,7 @@
                                             \finger
                                                 1
                                     }
-                            d''16 ]
+                            g''16 ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -833,7 +803,7 @@
                                             \finger
                                                 2
                                     }
-                            d''2. ~
+                            g''2. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -844,13 +814,13 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/10 {
-                            d''2.
-                            ds''2 ~
+                            g''2.
+                            gs''2 ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/14 {
-                            ds''1
-                            ds''2. ~
+                            gs''1
+                            gs''2. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -861,14 +831,14 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            ds''2.
+                            gs''2.
                             r2
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             r8.
-                            d''4 \mf
-                            d''16
+                            g''4 \mf
+                            g''16
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -876,7 +846,7 @@
                                             \finger
                                                 1
                                     }
-                            d''2. ~
+                            g''2. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -887,8 +857,8 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            d''2.
-                            d''2 ~
+                            g''2.
+                            g''2 ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -899,9 +869,9 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/11 {
-                            d''2..
-                            ds''8
-                            ds''4. ~
+                            g''2..
+                            gs''8
+                            gs''4. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -911,13 +881,13 @@
                                     }
                         }
                         \times 4/5 {
-                            ds''2.
+                            gs''2.
                             r2
                         }
                         {
                             r8
-                            d''4 \mf
-                            d''16 [
+                            g''4 \mf
+                            g''16 [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -925,7 +895,7 @@
                                             \finger
                                                 1
                                     }
-                            d''16 ]
+                            g''16 ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -933,7 +903,7 @@
                                             \finger
                                                 2
                                     }
-                            d''2. ~
+                            g''2. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -943,8 +913,8 @@
                                     }
                         }
                         \times 4/5 {
-                            d''2.
-                            ds''2
+                            g''2.
+                            gs''2
                         }
                         s1 * 29/8
                         \bar "|"
@@ -1119,11 +1089,7 @@
                         s1 * 13/2
                         \clef "bass"
                         \override NoteHead.style = #'harmonic
-                        c'4. -\mp -\tenuto
-                            ^ \markup {
-                                \larger
-                                    "5th harmonic of F1"
-                                }
+                        c'4. -\mp -\tenuto - \markup { "5th harmonic of F1" }
                         c'4 -\mp -\tenuto ~
                         c'2 ~
                         c'8
@@ -1145,12 +1111,12 @@
                             \clef "treble"
                             \set PianoMusicStaff.instrumentName = \markup {
                                 \hcenter-in
-                                    #12
+                                    #16
                                     Piano
                                 }
                             \set PianoMusicStaff.shortInstrumentName = \markup {
                                 \hcenter-in
-                                    #12
+                                    #10
                                     Pf.
                                 }
                             \override Beam.positions = #'(-4 . -4)
@@ -1195,11 +1161,7 @@
                         \clef "bass"
                         \override NoteHead.style = #'harmonic
                         \override DynamicLineSpanner.staff-padding = #'3
-                        c'2. -\mp -\tenuto
-                            ^ \markup {
-                                \larger
-                                    "5th harmonic of F1"
-                                }
+                        c'2. -\mp -\tenuto - \markup { "5th harmonic of F1" }
                         c'2 -\mp -\tenuto
                         c'2 -\mp -\tenuto
                         c'4 -\mp -\tenuto
@@ -1498,18 +1460,12 @@
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'6
                         r16
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to tam-tam"
-                                }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'16 -\pp
+                        c'16 -\pp - \markup { tam-tam }
                         r8
                         r2
                         r1
@@ -1533,22 +1489,9 @@
                             \clef "percussion"
                             c'2 -\accent
                                 ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    \whiteout
-                                                        \upright
-                                                            "accent changes of direction noticeably at each attack"
-                                                }
-                                            \line
-                                                {
-                                                    \override
-                                                        #'(box-padding . 0.75)
-                                                        \box
-                                                            "to sponges"
-                                                }
-                                        }
+                                    \whiteout
+                                        \upright
+                                            "accent changes of direction noticeably at each attack"
                                     }
                                 _ \markup {
                                     \larger
@@ -1562,6 +1505,7 @@
                                         \italic
                                             ”
                                     }
+                                - \markup { sponges }
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -1788,6 +1732,16 @@
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
                             \clef "treble"
+                            \set Staff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Xylophone
+                                }
+                            \set Staff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Xyl.
+                                }
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #3
@@ -1944,78 +1898,69 @@
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'6
                         \override Tie.direction = #up
-                        c'1 :32 \ppp ~
+                        c1 :32 \ppp ~
                             ^ \markup {
-                                \column
-                                    {
-                                        \line
-                                            {
-                                                \larger
-                                                    "attackless roll with very soft yarn mallets"
-                                            }
-                                        \line
-                                            {
-                                                \override
-                                                    #'(box-padding . 0.75)
-                                                    \box
-                                                        "to suspended cymbal"
-                                            }
-                                    }
+                                \whiteout
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            "suspended cymbal"
                                 }
+                            - \markup { "attackless roll with very soft yarn mallets" }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'4 :32 ~
+                        c4 :32 ~
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'1 :32 ~
+                        c1 :32 ~
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'1 :32 ~
+                        c1 :32 ~
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'8 :32 ~
+                        c8 :32 ~
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'2. :32 ~
+                        c2. :32 ~
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'2 :32 ~
+                        c2 :32 ~
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'8 :32 ~
+                        c8 :32 ~
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'1 :32 ~
+                        c1 :32 ~
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'8 :32
+                        c8 :32
                         \bar "|"
                         \stopStaff
                         \startStaff
@@ -2029,10 +1974,6 @@
                 \context ViolinMusicStaff = "Violin Music Staff" {
                     \context ViolinMusicVoice = "Violin Music Voice" {
                         ef'4 \glissando
-                            ^ \markup {
-                                \larger
-                                    "directly on bridge: very slow bow, imperceptible bow changes"
-                                }
                             _ \markup {
                                 \larger
                                     \italic
@@ -2045,6 +1986,7 @@
                                     \italic
                                         ”
                                 }
+                            - \markup { "directly on bridge: very slow bow, imperceptible bow changes" }
                         c''4 \glissando
                         d'4 \glissando
                         ef'4 \glissando
@@ -2360,10 +2302,6 @@
                 \context ViolaMusicStaff = "Viola Music Staff" {
                     \context ViolaMusicVoice = "Viola Music Voice" {
                         ef4 \glissando
-                            ^ \markup {
-                                \larger
-                                    "directly on bridge: very slow bow, imperceptible bow changes"
-                                }
                             _ \markup {
                                 \larger
                                     \italic
@@ -2376,6 +2314,7 @@
                                     \italic
                                         ”
                                 }
+                            - \markup { "directly on bridge: very slow bow, imperceptible bow changes" }
                         c'4 \glissando
                         d4 \glissando
                         ef4 \glissando
@@ -2737,10 +2676,6 @@
                 \context CelloMusicStaff = "Cello Music Staff" {
                     \context CelloMusicVoice = "Cello Music Voice" {
                         ef,4 \glissando
-                            ^ \markup {
-                                \larger
-                                    "directly on bridge: very slow bow, imperceptible bow changes"
-                                }
                             _ \markup {
                                 \larger
                                     \italic
@@ -2753,6 +2688,7 @@
                                     \italic
                                         ”
                                 }
+                            - \markup { "directly on bridge: very slow bow, imperceptible bow changes" }
                         c4 \glissando
                         d,4 \glissando
                         ef,4 \glissando

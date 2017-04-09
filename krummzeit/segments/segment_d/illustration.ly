@@ -531,26 +531,29 @@
                         s1 * 65/8
                         \set Staff.instrumentName = \markup {
                             \hcenter-in
-                                #12
-                                "Bass clarinet"
+                                #16
+                                \center-column
+                                    {
+                                        Bass
+                                        clarinet
+                                    }
                             }
                         \set Staff.shortInstrumentName = \markup {
                             \hcenter-in
-                                #12
-                                "Bass cl."
+                                #10
+                                \center-column
+                                    {
+                                        Bass
+                                        cl.
+                                    }
                             }
                         \override Stem.direction = #up
-                        cs1 ~
+                        cs1 \ppp ~
                             ^ \markup {
                                 \override
                                     #'(box-padding . 0.75)
                                     \box
                                         "to bass clarinet"
-                                }
-                            - \markup {
-                                \dynamic
-                                    ppp
-                                subtone
                                 }
                         cs1 ~
                         cs1 ~
@@ -574,12 +577,12 @@
                             \ottava #1
                             \set PianoMusicStaff.instrumentName = \markup {
                                 \hcenter-in
-                                    #12
+                                    #16
                                     Piano
                                 }
                             \set PianoMusicStaff.shortInstrumentName = \markup {
                                 \hcenter-in
-                                    #12
+                                    #10
                                     Pf.
                                 }
                             ff''''16 -\staccatissimo \> \ff
@@ -820,10 +823,11 @@
                         \clef "percussion"
                         c'2. :32 ~
                             ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to snare drum"
+                                \whiteout
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            "snare drum"
                                 }
                             _ \markup {
                                 \dynamic
@@ -910,13 +914,7 @@
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         \override DynamicLineSpanner.staff-padding = #'6
-                        c'4 -\pp
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to tam-tam"
-                                }
+                        c'4 -\pp - \markup { tam-tam }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue

@@ -2,7 +2,16 @@
 import abjad
 import baca
 import krummzeit
-from krummzeit.materials.__abbreviations__ import *
+
+### CONTEXT NAMES ###
+
+ob = 'Oboe Music Voice'
+cl = 'Clarinet Music Voice'
+pf = 'Piano Music Voice'
+perc = 'Percussion Music Voice'
+vn = 'Violin Music Voice'
+va = 'Viola Music Voice'
+vc = 'Cello Music Voice'
 
 
 ###############################################################################
@@ -58,7 +67,6 @@ segment_maker.validate_measures_per_stage()
 music_maker = segment_maker.append_commands(
     perc,
     baca.select_stages(1),
-    baca.instrument(tam_tam),
     baca.clef('percussion'),
     baca.tools.RhythmSpecifier(
         rhythm_maker=abjad.rhythmmakertools.IncisedRhythmMaker(
@@ -72,6 +80,7 @@ music_maker = segment_maker.append_commands(
                 ),
             ),
         ),
+    krummzeit.markup.tam_tam(),
     )
 
 ### vn, vc [E1-5] & va [E1-3] (white OB bowing) ###
@@ -102,7 +111,6 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     perc,
     baca.select_stages(3, 6),
-    baca.instrument(sponges),
     baca.clef('percussion'),
     baca.tools.RhythmSpecifier(
         rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
@@ -110,6 +118,7 @@ segment_maker.append_commands(
             extra_counts_per_division=[2, 1, 0],
             ),
         ),
+    krummzeit.markup.sponges(),
     )
 
 ### va [E4-7] glissando thicket ###
@@ -194,7 +203,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     pf,
     baca.select_stages(8),
-    baca.instrument(piano),
+    baca.instrument(krummzeit.materials.instruments['piano']),
     baca.tools.RhythmSpecifier(
         division_maker=baca.tools.SplitByRoundedRatiosDivisionCallback(
             ratios=[(1, 2), (2, 1)],
@@ -220,7 +229,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     perc,
     baca.select_stages(8),
-    baca.instrument(xylophone),
+    baca.instrument(krummzeit.materials.instruments['xylophone']),
     baca.clef('treble'),
     baca.five_line_staff(),
     )
@@ -285,7 +294,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     ob,
     baca.select_stages(5),
-    baca.instrument(e_flat_clarinet),
+    baca.instrument(krummzeit.materials.instruments['e-flat cl']),
     )
 
 segment_maker.copy_specifier(
@@ -427,7 +436,7 @@ segment_maker.append_specifiers(
     baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=7)],
         reverse=True,
-        source=violet_pitch_classes,    
+        source=krummzeit.materials.violet_pitch_classes,    
         start_index=240,
         ),
     )
@@ -437,8 +446,9 @@ segment_maker.append_commands(
     baca.select_stages(1, 5),
     baca.glissandi(),
     baca.effort_dynamic('mp'),
-    narrow_fourth_octave,
-    baca.markup(on_bridge_slow),
+    #narrow_fourth_octave,
+    krummzeit.tools.register_narrow(4),
+    krummzeit.markup.on_bridge_slow(),
     )
 
 segment_maker.append_commands(
@@ -446,8 +456,9 @@ segment_maker.append_commands(
     baca.select_stages(1, 3),
     baca.glissandi(),
     baca.effort_dynamic('mp'),
-    narrow_third_octave,
-    baca.markup(on_bridge_slow),
+    #narrow_third_octave,
+    krummzeit.tools.register_narrow(3),
+    krummzeit.markup.on_bridge_slow(),
     )
 
 segment_maker.append_commands(
@@ -455,8 +466,9 @@ segment_maker.append_commands(
     baca.select_stages(1, 5),
     baca.glissandi(),
     baca.effort_dynamic('mp'),
-    narrow_second_octave,
-    baca.markup(on_bridge_slow),
+    #narrow_second_octave,
+    krummzeit.tools.register_narrow(2),
+    krummzeit.markup.on_bridge_slow(),
     )
 
 ### (5.4) sponges, (5.3) va, vn, vc thicket ###
@@ -478,7 +490,7 @@ segment_maker.append_specifiers(
     baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=7), abjad.Inversion()],
         reverse=True,
-        source=violet_pitch_classes,    
+        source=krummzeit.materials.violet_pitch_classes,    
         start_index=240,
         ),
     )
@@ -490,7 +502,8 @@ segment_maker.append_specifiers(
         (vc, [(6, 7), 9]),
         ],
     baca.glissandi(),
-    narrow_fifth_octave,
+    #narrow_fifth_octave,
+    krummzeit.tools.register_narrow(5),
     baca.natural_harmonics(),
     )
 
@@ -517,14 +530,14 @@ segment_maker.append_commands(
     va,
     baca.select_stages(5, 6),
     baca.hairpins(['pp < f']),
-    molto_flaut_to_molto_grid,
+    baca.molto_flaut_to_molto_grid(),
     )
 
 segment_maker.append_commands(
     [vn, vc],
     baca.select_stages(6),
     baca.hairpins(['pp < f']),
-    molto_flaut_to_molto_grid,
+    baca.molto_flaut_to_molto_grid(),
     )
 
 segment_maker.append_commands(
@@ -547,9 +560,9 @@ segment_maker.append_commands(
     [baca.select_stages(4, 7), baca.select_stages(9)],
     baca.clef('bass'),
     baca.reiterated_dynamic('mp'),
-    baca.markup(fifth_harmonic_of_F1),
     baca.natural_harmonics(),
     baca.tenuti(),
+    krummzeit.markup.fifth_harmonic_of_F1(),
     )
 
 segment_maker.append_commands(
@@ -572,7 +585,7 @@ segment_maker.append_commands(
     [ob, cl],
     baca.select_stages(5, 7),
     baca.dynamic('p'),
-    color_fingerings,
+    krummzeit.tools.color_fingerings(),
     )
 
 segment_maker.append_commands(
@@ -598,7 +611,7 @@ segment_maker.append_commands(
         source='F5 F5 F5 F5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F5 F5 F5 F5'
         ),
     baca.dynamic('mf'),
-    color_fingerings,
+    krummzeit.tools.color_fingerings(),
     )
 
 ### (1.1) pf, vn, va, vc ###
@@ -606,7 +619,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     pf,
     baca.select_stages(13),
-    tenor_piano_cluster,
+    krummzeit.tools.make_cluster('tenor'),
     )
 
 segment_maker.append_commands(
@@ -665,7 +678,6 @@ segment_maker.append_commands(
 music_maker = segment_maker.append_commands(
     perc,
     baca.select_stages(12, 13),
-    baca.instrument(suspended_cymbal),
     baca.clef('percussion'),
     baca.one_line_staff(),
     baca.tools.RhythmSpecifier(
@@ -675,14 +687,15 @@ music_maker = segment_maker.append_commands(
                 ),
             ),
         ),
+    krummzeit.markup.suspended_cymbal(),
     )
 
 segment_maker.append_commands(
     perc,
     baca.select_stages(12, 13),
     baca.dynamic('ppp'),
-    baca.markup(attackless_roll),
     baca.stem_tremolo(),
+    krummzeit.markup.attackless_roll(),
     )
 
 ### VERTICAL ALIGNMENT ###

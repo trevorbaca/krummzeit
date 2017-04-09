@@ -1238,127 +1238,67 @@
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
                         \set Staff.instrumentName = \markup {
-                            \column
-                                {
-                                    \hcenter-in
-                                        #12
-                                        {
-                                            Clarinet
-                                            \line
-                                                {
-                                                    (E
-                                                    \hspace
-                                                        #-0.5
-                                                    \fontsize
-                                                        #-3
-                                                        \raise
-                                                            #0.5
-                                                            \flat
-                                                    \hspace
-                                                        #-0.5
-                                                    )
-                                                }
-                                        }
-                                }
+                            \hcenter-in
+                                #16
+                                \center-column
+                                    {
+                                        Clarinet
+                                        (Eb)
+                                    }
                             }
                         \set Staff.shortInstrumentName = \markup {
-                            \column
-                                {
-                                    \hcenter-in
-                                        #12
-                                        {
-                                            Cl.
-                                            \line
-                                                {
-                                                    (E
-                                                    \hspace
-                                                        #-0.5
-                                                    \fontsize
-                                                        #-3
-                                                        \raise
-                                                            #0.5
-                                                            \flat
-                                                    \hspace
-                                                        #-0.5
-                                                    )
-                                                }
-                                        }
-                                }
+                            \hcenter-in
+                                #10
+                                \center-column
+                                    {
+                                        Cl.
+                                        (Eb)
+                                    }
                             }
                         \override Stem.direction = #up
                         \override DynamicLineSpanner.staff-padding = #'6
-                        gs\longa \ppp
+                        cs'\longa \ppp
                             ^ \markup {
                                 \override
                                     #'(box-padding . 0.75)
                                     \box
-                                        "to clarinet in E-flat"
+                                        "to clarinet in B-flat"
                                 }
-                        gs\longa
-                        gs1 ~
-                        gs4
+                        cs'\longa
+                        cs'1 ~
+                        cs'4
                         \revert Stem.direction
                         \revert DynamicLineSpanner.staff-padding
                         s1 * 3/4
                         \set Staff.instrumentName = \markup {
-                            \column
-                                {
-                                    \hcenter-in
-                                        #12
-                                        {
-                                            Clarinet
-                                            \line
-                                                {
-                                                    (E
-                                                    \hspace
-                                                        #-0.5
-                                                    \fontsize
-                                                        #-3
-                                                        \raise
-                                                            #0.5
-                                                            \flat
-                                                    \hspace
-                                                        #-0.5
-                                                    )
-                                                }
-                                        }
-                                }
+                            \hcenter-in
+                                #16
+                                \center-column
+                                    {
+                                        Clarinet
+                                        (Eb)
+                                    }
                             }
                         \set Staff.shortInstrumentName = \markup {
-                            \column
-                                {
-                                    \hcenter-in
-                                        #12
-                                        {
-                                            Cl.
-                                            \line
-                                                {
-                                                    (E
-                                                    \hspace
-                                                        #-0.5
-                                                    \fontsize
-                                                        #-3
-                                                        \raise
-                                                            #0.5
-                                                            \flat
-                                                    \hspace
-                                                        #-0.5
-                                                    )
-                                                }
-                                        }
-                                }
+                            \hcenter-in
+                                #10
+                                \center-column
+                                    {
+                                        Cl.
+                                        (Eb)
+                                    }
                             }
                         r1
                         {
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'5
                             \override TupletBracket.staff-padding = #3
-                            a''2. \ff
+                            d'''2. \ff
                             r2
                         }
                         {
                             r8
-                            a''4
+                            d'''4
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1366,7 +1306,7 @@
                                             \finger
                                                 1
                                     }
-                            a''16 \glissando [
+                            d'''16 \glissando [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1374,7 +1314,7 @@
                                             \finger
                                                 2
                                     }
-                            gtqs''16 ]
+                            ctqs'''16 ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1382,12 +1322,12 @@
                                             \finger
                                                 1
                                     }
-                            gtqs''2. ~
+                            ctqs'''2. ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            gtqs''2. \glissando
-                            fs''2 ~
+                            ctqs'''2. \glissando
+                            b''2 ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1398,8 +1338,8 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            fs''2
-                            fs''4. ~
+                            b''2
+                            b''4. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1409,13 +1349,13 @@
                                     }
                         }
                         \times 4/5 {
-                            fs''2.
+                            b''2.
                             r2
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 11/20 {
                             r4.
-                            fs''2
+                            b''2
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1423,8 +1363,8 @@
                                             \finger
                                                 1
                                     }
-                            fs''8 \glissando
-                            eqs''1. ~
+                            b''8 \glissando
+                            aqs''1. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1435,8 +1375,8 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            eqs''2.
-                            eqs''2 ~
+                            aqs''2.
+                            aqs''2 ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1447,8 +1387,8 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 10/11 {
-                            eqs''4..
-                            eqs''16 \glissando [
+                            aqs''4..
+                            aqs''16 \glissando [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1456,11 +1396,11 @@
                                             \finger
                                                 1
                                     }
-                            dqs''8. ~ ]
+                            gqs''8. ~ ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/10 {
-                            dqs''2.
+                            gqs''2.
                             r2
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
@@ -1469,13 +1409,21 @@
                         s1 * 9/8
                         \set Staff.instrumentName = \markup {
                             \hcenter-in
-                                #12
-                                "Bass clarinet"
+                                #16
+                                \center-column
+                                    {
+                                        Bass
+                                        clarinet
+                                    }
                             }
                         \set Staff.shortInstrumentName = \markup {
                             \hcenter-in
-                                #12
-                                "Bass cl."
+                                #10
+                                \center-column
+                                    {
+                                        Bass
+                                        cl.
+                                    }
                             }
                         \override Stem.direction = #up
                         \override DynamicLineSpanner.staff-padding = #'7
@@ -1559,12 +1507,12 @@
                         \clef "bass"
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
-                                #12
+                                #16
                                 Piano
                             }
                         \set PianoMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
-                                #12
+                                #10
                                 Pf.
                             }
                         \override DynamicLineSpanner.staff-padding = #'4
@@ -1861,10 +1809,11 @@
                             \clef "percussion"
                             c'2 :32
                                 ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to suspended cymbal"
+                                    \whiteout
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                "suspended cymbal"
                                     }
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
@@ -2148,6 +2097,16 @@
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
                             \clef "treble"
+                            \set Staff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Xylophone
+                                }
+                            \set Staff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Xyl.
+                                }
                             r4
                                 ^ \markup {
                                     \override

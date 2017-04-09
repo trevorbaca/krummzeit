@@ -56,6 +56,10 @@ class MarkupLibrary(abjad.abctools.AbjadObject):
         string = 'allow bowing to convey accelerando'
         return baca.markup(string)
 
+    def snare_drum():
+        string = 'snare drum'
+        return baca.markup.boxed(string)
+
     def sponges():
         string = 'sponges'
         return baca.markup(string)

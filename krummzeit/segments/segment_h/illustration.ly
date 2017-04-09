@@ -415,13 +415,21 @@
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
                         \set Staff.instrumentName = \markup {
                             \hcenter-in
-                                #12
-                                "Bass clarinet"
+                                #16
+                                \center-column
+                                    {
+                                        Bass
+                                        clarinet
+                                    }
                             }
                         \set Staff.shortInstrumentName = \markup {
                             \hcenter-in
-                                #12
-                                "Bass cl."
+                                #10
+                                \center-column
+                                    {
+                                        Bass
+                                        cl.
+                                    }
                             }
                         \override Stem.direction = #up
                         \override DynamicLineSpanner.staff-padding = #'8
@@ -445,55 +453,25 @@
                         s1 * 9/4
                         {
                             \set Staff.instrumentName = \markup {
-                                \column
-                                    {
-                                        \hcenter-in
-                                            #12
-                                            {
-                                                Clarinet
-                                                \line
-                                                    {
-                                                        (E
-                                                        \hspace
-                                                            #-0.5
-                                                        \fontsize
-                                                            #-3
-                                                            \raise
-                                                                #0.5
-                                                                \flat
-                                                        \hspace
-                                                            #-0.5
-                                                        )
-                                                    }
-                                            }
-                                    }
+                                \hcenter-in
+                                    #16
+                                    \center-column
+                                        {
+                                            Clarinet
+                                            (Eb)
+                                        }
                                 }
                             \set Staff.shortInstrumentName = \markup {
-                                \column
-                                    {
-                                        \hcenter-in
-                                            #12
-                                            {
-                                                Cl.
-                                                \line
-                                                    {
-                                                        (E
-                                                        \hspace
-                                                            #-0.5
-                                                        \fontsize
-                                                            #-3
-                                                            \raise
-                                                                #0.5
-                                                                \flat
-                                                        \hspace
-                                                            #-0.5
-                                                        )
-                                                    }
-                                            }
-                                    }
+                                \hcenter-in
+                                    #10
+                                    \center-column
+                                        {
+                                            Cl.
+                                            (Eb)
+                                        }
                                 }
                             \override DynamicLineSpanner.staff-padding = #'3
-                            g''4. -\staccato \pp
+                            c'''4. -\staccato \pp
                                 ^ \markup {
                                     \column
                                         {
@@ -508,75 +486,83 @@
                                                     \override
                                                         #'(box-padding . 0.75)
                                                         \box
-                                                            "to clarinet in E-flat"
+                                                            "to clarinet in B-flat"
                                                 }
                                         }
                                     }
                         }
                         \times 2/3 {
-                            cs'4 -\staccato
-                            ef''4 -\staccato
-                            e''4 -\staccato ~
+                            fs'4 -\staccato
+                            af''4 -\staccato
+                            a''4 -\staccato ~
                         }
                         {
-                            e''4
+                            a''4
                             \revert DynamicLineSpanner.staff-padding
                         }
                         {
-                            f''8 -\staccato [
-                            b'8 -\staccato
-                            ef''8 -\staccato
-                            f''8 -\staccato ~ ]
+                            bf''8 -\staccato [
+                            e''8 -\staccato
+                            af''8 -\staccato
+                            bf''8 -\staccato ~ ]
                         }
                         {
-                            f''4. ~
+                            bf''4. ~
                         }
                         {
-                            f''4
+                            bf''4
                         }
                         {
-                            fs''4 -\staccato
-                            g''4 -\staccato
+                            b''4 -\staccato
+                            c'''4 -\staccato
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            a''8 -\staccato [
-                            bf''8 -\staccato
-                            c''8 -\staccato
-                            af''8 -\staccato ~ ]
+                            d'''8 -\staccato [
+                            ef'''8 -\staccato
+                            f''8 -\staccato
+                            df'''8 -\staccato ~ ]
                         }
                         {
-                            af''4.
+                            df'''4.
                         }
                         \times 2/3 {
-                            g''4 -\staccato
-                            ef''4 -\staccato
-                            f''4 -\staccato ~
+                            c'''4 -\staccato
+                            af''4 -\staccato
+                            bf''4 -\staccato ~
                         }
                         {
-                            f''4. ~
+                            bf''4. ~
                         }
                         {
-                            f''8 [
-                            fs''8 -\staccato
-                            af''8 -\staccato
-                            a''8 -\staccato ]
+                            bf''8 [
+                            b''8 -\staccato
+                            df'''8 -\staccato
+                            d'''8 -\staccato ]
                         }
                         {
-                            g''4. -\staccato
+                            c'''4. -\staccato
                         }
                         s1 * 19/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/4 {
                             \set Staff.instrumentName = \markup {
                                 \hcenter-in
-                                    #12
-                                    "Bass clarinet"
+                                    #16
+                                    \center-column
+                                        {
+                                            Bass
+                                            clarinet
+                                        }
                                 }
                             \set Staff.shortInstrumentName = \markup {
                                 \hcenter-in
-                                    #12
-                                    "Bass cl."
+                                    #10
+                                    \center-column
+                                        {
+                                            Bass
+                                            cl.
+                                        }
                                 }
                             \override DynamicLineSpanner.staff-padding = #'10
                             \override Stem.direction = #up
@@ -645,12 +631,12 @@
                             \clef "treble"
                             \set PianoMusicStaff.instrumentName = \markup {
                                 \hcenter-in
-                                    #12
+                                    #16
                                     Harpsichord
                                 }
                             \set PianoMusicStaff.shortInstrumentName = \markup {
                                 \hcenter-in
-                                    #12
+                                    #10
                                     Hpschd.
                                 }
                             \override Beam.positions = #'(-4 . -4)
@@ -774,12 +760,12 @@
                         \clef "bass"
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
-                                #12
+                                #16
                                 Piano
                             }
                         \set PianoMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
-                                #12
+                                #10
                                 Pf.
                             }
                         \override DynamicLineSpanner.staff-padding = #'4
@@ -787,22 +773,12 @@
                         \override DynamicLineSpanner.staff-padding = #'3
                         c'2 -\ff -\tenuto
                             ^ \markup {
-                                \column
-                                    {
-                                        \line
-                                            {
-                                                \larger
-                                                    "5th harmonic of F1"
-                                            }
-                                        \line
-                                            {
-                                                \override
-                                                    #'(box-padding . 0.75)
-                                                    \box
-                                                        "to piano"
-                                            }
-                                    }
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to piano"
                                 }
+                            - \markup { "5th harmonic of F1" }
                         c'4 -\ff -\tenuto ~
                         c'1 ~
                         c'4
@@ -834,13 +810,7 @@
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         \clef "percussion"
-                        c'2
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to tam-tam"
-                                }
+                        c'2 - \markup { tam-tam }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
@@ -924,9 +894,9 @@
                             \override DynamicLineSpanner.staff-padding = #'5
                             bf'''8 -\staccato \pp [
                                 ^ \markup {
-                                    \larger
-                                        \italic
-                                            "leggierissimo (off-string bowing on staccati)"
+                                    \whiteout
+                                        \upright
+                                            "leggierissimo: off-string bowing on staccati"
                                     }
                             e''8 -\staccato
                             gf'''8 -\staccato ]

@@ -1,4 +1,4 @@
-e -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 import abjad
 import baca
 import krummzeit

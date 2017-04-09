@@ -550,9 +550,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     pf,
     [baca.select_stages(4, 7), baca.select_stages(9)],
-    baca.tools.ScorePitchCommand(
-        source='C4',
-        ),
+    baca.pitches('C4'),
     )
 
 segment_maker.append_commands(
@@ -568,17 +566,13 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     ob,
     baca.select_stages(5, 7),
-    baca.tools.ScorePitchCommand(
-        source='D5 D5 D5 D5 D5 D5 D5 D5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5'
-        ),
+    baca.pitches('D5 D5 D5 D5 D5 D5 D5 D5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5'),
     )
 
 segment_maker.append_commands(
     cl,
     baca.select_stages(5, 7),
-    baca.tools.ScorePitchCommand(
-        source='E5 E5 E5 E5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 E5 E5 E5 E5'
-        ),
+    baca.pitches('E5 E5 E5 E5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 E5 E5 E5 E5'),
     )
 
 segment_maker.append_commands(
@@ -591,9 +585,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     [pf, perc],
     [baca.select_stages(8), baca.select_stages(10), baca.select_stages(11)],
-    baca.tools.ScorePitchCommand(
-        source='F#6',
-        ),
+    baca.pitches('F#6'),
     baca.dynamic('ff'),
     baca.staccatissimi(),
     )
@@ -607,9 +599,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     [ob, cl],
     [baca.select_stages(10), baca.select_stages(11), baca.select_stages(12)],
-    baca.tools.ScorePitchCommand(
-        source='F5 F5 F5 F5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F5 F5 F5 F5'
-        ),
+    baca.pitches('F5 F5 F5 F5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F5 F5 F5 F5'),
     baca.dynamic('mf'),
     krummzeit.tools.color_fingerings(),
     )
@@ -632,25 +622,19 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     vn,
     baca.select_stages(11, 13),
-    baca.tools.ScorePitchCommand(
-        source='A+3',
-        ),
+    baca.pitches('A+3'),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(11, 13),
-    baca.tools.ScorePitchCommand(
-        source='Bb2',
-        ),
+    baca.pitches('Bb2'),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(11, 13),
-    baca.tools.ScorePitchCommand(
-        source='A2',
-        ),
+    baca.pitches('A2'),
     )
 
 segment_maker.append_commands(

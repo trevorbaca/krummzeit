@@ -2,8 +2,17 @@
 import abjad
 import baca
 import krummzeit
-from krummzeit.materials.__abbreviations__ import *
+#from krummzeit.materials.__abbreviations__ import *
 
+### CONTEXT NAMES ###
+
+ob = 'Oboe Music Voice'
+cl = 'Clarinet Music Voice'
+pf = 'Piano Music Voice'
+perc = 'Percussion Music Voice'
+vn = 'Violin Music Voice'
+va = 'Viola Music Voice'
+vc = 'Cello Music Voice'
 
 ###############################################################################
 ##################################### [K] #####################################
@@ -52,7 +61,7 @@ segment_maker.validate_measures_per_stage()
 segment_maker.append_commands(
     pf,
     baca.select_stages(1, 6),
-    baca.instrument(harpsichord),
+    baca.instrument(krummzeit.materials.instruments['harpsichord']),
     baca.tools.RhythmSpecifier(
         division_maker=baca.tools.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
@@ -71,7 +80,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     pf,
     baca.select_stages(7, 12),
-    baca.instrument(piano),
+    baca.instrument(krummzeit.materials.instruments['piano']),
     baca.tools.RhythmSpecifier(
         # TODO: replace first division-maker?
         #division_maker=baca.tools.FuseByCountsDivisionCallback(
@@ -94,7 +103,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     perc,
     baca.select_stages(1, 12),
-    baca.instrument(xylophone),
+    baca.instrument(krummzeit.materials.instruments['xylophone']),
     baca.tools.RhythmSpecifier(
         # TODO: replace first division-maker?
         #division_maker=baca.tools.FuseByCountsDivisionCallback(
@@ -180,7 +189,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     cl,
     baca.select_stages(1, 10),
-    baca.instrument(bass_clarinet),
+    baca.instrument(krummzeit.materials.instruments['bass clarinet']),
     baca.tools.RhythmSpecifier(
         division_maker=baca.tools.FuseByCountsDivisionCallback(
             counts=[4],
@@ -231,7 +240,7 @@ segment_maker.append_commands(
 
 ### vn, va points ###
 
-indigo_snippet = indigo_pitch_classes[42:34:-1]
+indigo_snippet = krummzeit.materials.indigo_pitch_classes[42:34:-1]
 segment_maker.append_specifiers(
     ([vn, va], (1, 10)),
     baca.tools.ScorePitchCommand(
@@ -245,11 +254,12 @@ segment_maker.append_commands(
     baca.select_stages(1, 10),
     baca.dynamic('ff'),
     baca.dynamic_line_spanner_staff_padding(5),
-    krummzeit_displacement,
-    narrow_sixth_octave,
     baca.markup.pizz(),
     baca.staccatissimi(),
     baca.tuplet_bracket_staff_padding(2),
+    krummzeit.tools.displacement(),
+    #narrow_sixth_octave,
+    krummzeit.tools.register_narrow(6),
     )
 
 ### vc ###

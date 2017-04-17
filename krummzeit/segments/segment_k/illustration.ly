@@ -1,4 +1,4 @@
-\version "2.19.58"
+\version "2.19.59"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -429,13 +429,21 @@
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
                         \set Staff.instrumentName = \markup {
                             \hcenter-in
-                                #12
-                                "Bass clarinet"
+                                #16
+                                \center-column
+                                    {
+                                        Bass
+                                        clarinet
+                                    }
                             }
                         \set Staff.shortInstrumentName = \markup {
                             \hcenter-in
-                                #12
-                                "Bass cl."
+                                #10
+                                \center-column
+                                    {
+                                        Bass
+                                        cl.
+                                    }
                             }
                         \override DynamicLineSpanner.staff-padding = #'7
                         \override Stem.direction = #up
@@ -468,12 +476,12 @@
                     \context PianoMusicVoice = "Piano Music Voice" {
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
-                                #12
+                                #16
                                 Harpsichord
                             }
                         \set PianoMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
-                                #12
+                                #10
                                 Hpschd.
                             }
                         cs'''\longa :32
@@ -491,12 +499,12 @@
                         r2
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
-                                #12
+                                #16
                                 Piano
                             }
                         \set PianoMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
-                                #12
+                                #10
                                 Pf.
                             }
                         cs'''\longa :32
@@ -523,6 +531,16 @@
                 \tag percussion
                 \context PercussionMusicStaff = "Percussion Staff" {
                     \context PercussionMusicVoice = "Percussion Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Xylophone
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Xyl.
+                            }
                         \override DynamicLineSpanner.staff-padding = #'4
                         cs''\longa :32 \fff
                             ^ \markup {

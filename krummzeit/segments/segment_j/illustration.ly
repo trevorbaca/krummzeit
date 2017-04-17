@@ -1,4 +1,4 @@
-\version "2.19.58"
+\version "2.19.59"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -351,13 +351,21 @@
                         \times 8/5 {
                             \set Staff.instrumentName = \markup {
                                 \hcenter-in
-                                    #12
-                                    "Bass clarinet"
+                                    #16
+                                    \center-column
+                                        {
+                                            Bass
+                                            clarinet
+                                        }
                                 }
                             \set Staff.shortInstrumentName = \markup {
                                 \hcenter-in
-                                    #12
-                                    "Bass cl."
+                                    #10
+                                    \center-column
+                                        {
+                                            Bass
+                                            cl.
+                                        }
                                 }
                             \override DynamicLineSpanner.staff-padding = #'9
                             \override Stem.direction = #up
@@ -384,56 +392,88 @@
                         s1 * 9/8
                         \set Staff.instrumentName = \markup {
                             \hcenter-in
-                                #12
-                                "Bass clarinet"
+                                #16
+                                \center-column
+                                    {
+                                        Bass
+                                        clarinet
+                                    }
                             }
                         \set Staff.shortInstrumentName = \markup {
                             \hcenter-in
-                                #12
-                                "Bass cl."
+                                #10
+                                \center-column
+                                    {
+                                        Bass
+                                        cl.
+                                    }
                             }
                         \override DynamicLineSpanner.staff-padding = #'7
                         \override Stem.direction = #up
-                        fs2. \ff ~
-                        fs2 ~
-                        fs8
+                        fs2. \ff
+                        fs4. \repeatTie
+                        fs4 \repeatTie
                         \set Staff.instrumentName = \markup {
                             \hcenter-in
-                                #12
-                                "Bass clarinet"
+                                #16
+                                \center-column
+                                    {
+                                        Bass
+                                        clarinet
+                                    }
                             }
                         \set Staff.shortInstrumentName = \markup {
                             \hcenter-in
-                                #12
-                                "Bass cl."
+                                #10
+                                \center-column
+                                    {
+                                        Bass
+                                        cl.
+                                    }
                             }
-                        fs1 ~ \< \ff
-                        fs8 ~
-                        fs1 ~
-                        fs8 \fff
+                        fs2. \< \ff
+                        fs4. \repeatTie
+                        fs2. \repeatTie
+                        fs4. \repeatTie \fff
                         \set Staff.instrumentName = \markup {
                             \hcenter-in
-                                #12
-                                "Bass clarinet"
+                                #16
+                                \center-column
+                                    {
+                                        Bass
+                                        clarinet
+                                    }
                             }
                         \set Staff.shortInstrumentName = \markup {
                             \hcenter-in
-                                #12
-                                "Bass cl."
+                                #10
+                                \center-column
+                                    {
+                                        Bass
+                                        cl.
+                                    }
                             }
-                        fs2 ~
-                        fs8 ~
-                        fs2 ~
-                        fs8
+                        fs4.
+                        fs4 \repeatTie
+                        fs4. \repeatTie
+                        fs4 \repeatTie
                         \set Staff.instrumentName = \markup {
                             \hcenter-in
-                                #12
-                                "Bass clarinet"
+                                #16
+                                \center-column
+                                    {
+                                        Bass
+                                        clarinet
+                                    }
                             }
                         \set Staff.shortInstrumentName = \markup {
                             \hcenter-in
-                                #12
-                                "Bass cl."
+                                #10
+                                \center-column
+                                    {
+                                        Bass
+                                        cl.
+                                    }
                             }
                         fs1
                             _ \markup {
@@ -446,13 +486,21 @@
                         fs2 \repeatTie
                         \set Staff.instrumentName = \markup {
                             \hcenter-in
-                                #12
-                                "Bass clarinet"
+                                #16
+                                \center-column
+                                    {
+                                        Bass
+                                        clarinet
+                                    }
                             }
                         \set Staff.shortInstrumentName = \markup {
                             \hcenter-in
-                                #12
-                                "Bass cl."
+                                #10
+                                \center-column
+                                    {
+                                        Bass
+                                        cl.
+                                    }
                             }
                         fs1 \> \ffff
                         fs1 \repeatTie
@@ -473,12 +521,12 @@
                         \times 8/7 {
                             \set PianoMusicStaff.instrumentName = \markup {
                                 \hcenter-in
-                                    #12
+                                    #16
                                     Piano
                                 }
                             \set PianoMusicStaff.shortInstrumentName = \markup {
                                 \hcenter-in
-                                    #12
+                                    #10
                                     Pf.
                                 }
                             \override DynamicLineSpanner.staff-padding = #'6
@@ -497,12 +545,12 @@
                         s1 * 9/8
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
-                                #12
+                                #16
                                 Harpsichord
                             }
                         \set PianoMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
-                                #12
+                                #10
                                 Hpschd.
                             }
                         r8
@@ -766,12 +814,12 @@
                         \clef "bass"
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
-                                #12
+                                #16
                                 Piano
                             }
                         \set PianoMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
-                                #12
+                                #10
                                 Pf.
                             }
                         r8
@@ -791,12 +839,6 @@
                             }
                             \ottava #-1
                             <c,, e,, g,, b,, d, f, a,>8 [
-                                _ \markup {
-                                    \dynamic
-                                        ffff
-                                    \upright
-                                        possibile
-                                    }
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -3448,6 +3490,16 @@
                     \context PercussionMusicVoice = "Percussion Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
+                            \set Staff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Xylophone
+                                }
+                            \set Staff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Xyl.
+                                }
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #2
                             fs''8 :32 \fff
@@ -3465,18 +3517,19 @@
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'6
                         r16
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to tam-tam"
-                                }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'16 -\f
+                        c16 -\f
+                            ^ \markup {
+                                \whiteout
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            tam-tam
+                                }
                         r8
                         r2
                         r2
@@ -3487,7 +3540,7 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'16 -\f
+                        c16 -\f
                         r8.
                         r16
                         \once \override Beam.color = #blue
@@ -3495,7 +3548,7 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'16 -\f
+                        c16 -\f
                         r8
                         r2..
                         r16
@@ -3504,7 +3557,7 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'16 -\f
+                        c16 -\f
                         r8
                         r4.
                         r2
@@ -3515,7 +3568,7 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'16 -\f
+                        c16 -\f
                         r8.
                         r16
                         \once \override Beam.color = #blue
@@ -3523,7 +3576,7 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'16 -\f
+                        c16 -\f
                         r8
                         r1
                         r16
@@ -3532,7 +3585,7 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'16 -\f
+                        c16 -\f
                         r8
                         r2.
                         r1
@@ -3542,7 +3595,7 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'16 -\f
+                        c16 -\f
                         r8.
                         r16
                         \once \override Beam.color = #blue
@@ -3550,7 +3603,7 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'16 -\f
+                        c16 -\f
                         r8
                         r2.
                         r16
@@ -3559,34 +3612,7 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'16 -\f
-                        r8
-                        r2
-                        r2.
-                        r2
-                        \once \override Beam.color = #blue
-                        \once \override Dots.color = #blue
-                        \once \override Flag.color = #blue
-                        \once \override NoteHead.color = #blue
-                        \once \override Stem.color = #blue
-                        c'16 -\f
-                        r8.
-                        r16
-                        \once \override Beam.color = #blue
-                        \once \override Dots.color = #blue
-                        \once \override Flag.color = #blue
-                        \once \override NoteHead.color = #blue
-                        \once \override Stem.color = #blue
-                        c'16 -\f
-                        r8
-                        r2
-                        r16
-                        \once \override Beam.color = #blue
-                        \once \override Dots.color = #blue
-                        \once \override Flag.color = #blue
-                        \once \override NoteHead.color = #blue
-                        \once \override Stem.color = #blue
-                        c'16 -\f
+                        c16 -\f
                         r8
                         r2
                         r2.
@@ -3596,7 +3622,7 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'16 -\f
+                        c16 -\f
                         r8.
                         r16
                         \once \override Beam.color = #blue
@@ -3604,7 +3630,34 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'16 -\f
+                        c16 -\f
+                        r8
+                        r2
+                        r16
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c16 -\f
+                        r8
+                        r2
+                        r2.
+                        r2
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c16 -\f
+                        r8.
+                        r16
+                        \once \override Beam.color = #blue
+                        \once \override Dots.color = #blue
+                        \once \override Flag.color = #blue
+                        \once \override NoteHead.color = #blue
+                        \once \override Stem.color = #blue
+                        c16 -\f
                         r8
                         r1
                         \revert DynamicLineSpanner.staff-padding
@@ -3682,10 +3735,6 @@
                         s1 * 5/8
                         \clef "treble"
                         g''4 -\downbow \glissando
-                            ^ \markup {
-                                \larger
-                                    "directly on bridge: full bow each stroke"
-                                }
                             _ \markup {
                                 \larger
                                     \italic
@@ -3698,6 +3747,7 @@
                                     \italic
                                         ”
                                 }
+                            - \markup { "directly on bridge: full bow each stroke" }
                         ds''4 -\upbow \glissando
                         d''4 -\downbow \glissando
                         cs''4 -\upbow \glissando
@@ -3772,10 +3822,6 @@
                         \revert TupletBracket.staff-padding
                         \clef "treble"
                         g''4 -\downbow \glissando
-                            ^ \markup {
-                                \larger
-                                    "directly on bridge: full bow each stroke"
-                                }
                             _ \markup {
                                 \larger
                                     \italic
@@ -3788,6 +3834,7 @@
                                     \italic
                                         ”
                                 }
+                            - \markup { "directly on bridge: full bow each stroke" }
                         ds''4 -\upbow \glissando
                         d''4 -\downbow \glissando
                         cs''4 -\upbow \glissando
@@ -3856,10 +3903,6 @@
                         s1 * 5/2
                         \clef "treble"
                         g''4 -\downbow \glissando
-                            ^ \markup {
-                                \larger
-                                    "directly on bridge: full bow each stroke"
-                                }
                             _ \markup {
                                 \larger
                                     \italic
@@ -3872,6 +3915,7 @@
                                     \italic
                                         ”
                                 }
+                            - \markup { "directly on bridge: full bow each stroke" }
                         ds''4 -\upbow \glissando
                         d''4 -\downbow \glissando
                         cs''4 -\upbow \glissando

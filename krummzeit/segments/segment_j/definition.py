@@ -2,8 +2,17 @@
 import abjad
 import baca
 import krummzeit
-from krummzeit.materials.__abbreviations__ import *
+#from krummzeit.materials.__abbreviations__ import *
 
+### CONTEXT NAMES ###
+
+ob = 'Oboe Music Voice'
+cl = 'Clarinet Music Voice'
+pf = 'Piano Music Voice'
+perc = 'Percussion Music Voice'
+vn = 'Violin Music Voice'
+va = 'Viola Music Voice'
+vc = 'Cello Music Voice'
 
 ###############################################################################
 ##################################### [J] #####################################
@@ -82,7 +91,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     cl,
     baca.select_stages(1),
-    baca.instrument(bass_clarinet),
+    baca.instrument(krummzeit.materials.instruments['bass clarinet']),
     )
 
 ### pf, xylophone [I1] reiteration ###
@@ -90,7 +99,7 @@ segment_maker.append_commands(
 music_maker = segment_maker.append_commands(
     pf,
     baca.select_stages(1),
-    baca.instrument(piano),
+    baca.instrument(krummzeit.materials.instruments['piano']),
     baca.tools.RhythmSpecifier(
         division_maker=baca.tools.FuseByCountsDivisionCallback(
             counts=[2],
@@ -115,7 +124,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     perc,
     baca.select_stages(1),
-    baca.instrument(xylophone),
+    baca.instrument(krummzeit.materials.instruments['xylophone']),
     )
 
 ### vn, va, vc [J1-3] tremolo clusters (11.1) ###
@@ -152,7 +161,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     pf,
     baca.select_stages(3, 4),
-    baca.instrument(harpsichord),
+    baca.instrument(krummzeit.materials.instruments['harpsichord']),
     baca.tools.RhythmSpecifier(
         division_maker=baca.tools.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
@@ -196,7 +205,6 @@ segment_maker.copy_specifier(
 music_maker = segment_maker.append_commands(
     perc,
     baca.select_stages(3, 15),
-    baca.instrument(tam_tam),
     baca.clef('percussion'),
     baca.tools.RhythmSpecifier(
         rhythm_maker=abjad.rhythmmakertools.IncisedRhythmMaker(
@@ -210,6 +218,7 @@ music_maker = segment_maker.append_commands(
                 ),
             ),
         ),
+    krummzeit.markup.tam_tam(),
     )
 
 ### pf [J6] & [J8-14] (8.1) clusters ###
@@ -222,7 +231,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     pf,
     baca.select_stages(8),
-    baca.instrument(piano),
+    baca.instrument(krummzeit.materials.instruments['piano']),
     )
 
 ### (3.1) bass clarinet [J3-11] ###
@@ -232,41 +241,44 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     cl,
     baca.select_stages(3, 4),
-    baca.instrument(bass_clarinet),
-    baca.tools.RhythmSpecifier(
-        rhythm_maker=tied_notes,
-        ),
+    baca.instrument(krummzeit.materials.instruments['bass clarinet']),
+    baca.messiaen_tied_notes(),
+#    baca.tools.RhythmSpecifier(
+#        rhythm_maker=tied_notes,
+#        ),
     )
 
 segment_maker.append_commands(
     cl,
     baca.select_stages(5, 6),
-    baca.instrument(bass_clarinet),
-    baca.tools.RhythmSpecifier(
-        rhythm_maker=tied_notes,
-        ),
+    baca.instrument(krummzeit.materials.instruments['bass clarinet']),
+    baca.messiaen_tied_notes(),
+#    baca.tools.RhythmSpecifier(
+#        rhythm_maker=tied_notes,
+#        ),
     )
 
 segment_maker.append_commands(
     cl,
     baca.select_stages(7, 8),
-    baca.instrument(bass_clarinet),
-    baca.tools.RhythmSpecifier(
-        rhythm_maker=tied_notes,
-        ),
+    baca.instrument(krummzeit.materials.instruments['bass clarinet']),
+    baca.messiaen_tied_notes(),
+#    baca.tools.RhythmSpecifier(
+#        rhythm_maker=tied_notes,
+#        ),
     )
 
 segment_maker.append_commands(
     cl,
     baca.select_stages(9, 10),
-    baca.instrument(bass_clarinet),
+    baca.instrument(krummzeit.materials.instruments['bass clarinet']),
     baca.messiaen_tied_notes(),
     )
 
 music_maker = segment_maker.append_commands(
     cl,
     baca.select_stages(11),
-    baca.instrument(bass_clarinet),
+    baca.instrument(krummzeit.materials.instruments['bass clarinet']),
     baca.messiaen_tied_notes(),
     )
 
@@ -321,14 +333,14 @@ segment_maker.append_commands(
     ob,
     baca.select_stages(1),
     baca.dynamic('ff'),
-    color_fingerings,
+    krummzeit.tools.color_fingerings(),
     )
 
 segment_maker.append_commands(
     cl,
     baca.select_stages(1),
     baca.dynamic('ff'),
-    color_fingerings,
+    krummzeit.tools.color_fingerings(),
     )
 
 segment_maker.append_commands(
@@ -390,7 +402,7 @@ segment_maker.append_specifiers(
     [([vn, va, vc], (5, 9))],
     baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=11)],
-        source=violet_pitch_classes,    
+        source=krummzeit.materials.violet_pitch_classes,    
         start_index=0,
         ),
     )
@@ -402,19 +414,21 @@ segment_maker.append_commands(
     baca.glissandi(),
     baca.alternate_bow_strokes(),
     baca.effort_dynamic('f'),
-    baca.markup(on_bridge),
+    krummzeit.markup.on_bridge_full_bow(),
     )
 
 segment_maker.append_commands(
     vn,
     baca.select_stages(5, 9),
-    narrow_fifth_to_fourth_octave,
+    #narrow_fifth_to_fourth_octave,
+    krummzeit.tools.register_narrow(5, 4),
     )
 
 segment_maker.append_commands(
     [va, vc],
     baca.select_stages(5, 9),
-    narrow_fifth_to_third_octave,
+    #narrow_fifth_to_third_octave,
+    krummzeit.tools.register_narrow(5, 3),
     )
 
 ### harpsichord clusters ###
@@ -422,7 +436,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     pf,
     baca.select_stages(3, 4),
-    harpsichord_cluster,
+    krummzeit.tools.make_cluster('harpsichord'),
     )
 
 ### bcl climax ###
@@ -460,10 +474,11 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     pf,
     baca.select_stages(8, 15),
-    low_piano_cluster,
     baca.clef('bass'),
     baca.possibile_dynamic('ffff'),
     baca.ottava_bassa(),
+    #low_piano_cluster,
+    krummzeit.tools.make_cluster('low'),
     )
 
 ### (9.1) vn, va, vc points ###
@@ -473,7 +488,7 @@ segment_maker.append_specifiers(
     baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=4), abjad.Inversion()],
         reverse=True,
-        source=indigo_pitch_classes,
+        source=krummzeit.materials.indigo_pitch_classes,
         start_index=42,
         ),
     )
@@ -482,10 +497,11 @@ segment_maker.append_commands(
     [vn, va, vc],
     baca.select_stages(15),
     baca.dynamic('fff'),
-    krummzeit_displacement,
-    narrow_sixth_octave,
     baca.markup.pizz(),
     baca.staccatissimi(),
+    krummzeit.tools.displacement(),
+    #narrow_sixth_octave,
+    krummzeit.tools.register_narrow(6),
     )
 
 ### VERTICAL ALIGNMENT ###

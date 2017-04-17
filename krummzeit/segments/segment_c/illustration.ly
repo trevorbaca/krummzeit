@@ -1,4 +1,4 @@
-\version "2.19.58"
+\version "2.19.59"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -1415,7 +1415,14 @@
                         \once \override Stem.color = #blue
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'3
-                        c4 \ff ~ - \markup { "scraped slate" }
+                        c4 \ff ~
+                            ^ \markup {
+                                \whiteout
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            "scraped slate"
+                                }
                         \revert DynamicLineSpanner.staff-padding
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
@@ -1649,7 +1656,14 @@
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         \clef "percussion"
-                        c'2. ~ - \markup { "scraped slate" }
+                        c'2. ~
+                            ^ \markup {
+                                \whiteout
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            "scraped slate"
+                                }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue

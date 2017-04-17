@@ -1,4 +1,4 @@
-\version "2.19.58"
+\version "2.19.59"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -1465,7 +1465,14 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'16 -\pp - \markup { tam-tam }
+                        c'16 -\pp
+                            ^ \markup {
+                                \whiteout
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            tam-tam
+                                }
                         r8
                         r2
                         r1
@@ -1489,9 +1496,23 @@
                             \clef "percussion"
                             c'2 -\accent
                                 ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            "accent changes of direction noticeably at each attack"
+                                    \column
+                                        {
+                                            \line
+                                                {
+                                                    \whiteout
+                                                        \override
+                                                            #'(box-padding . 0.5)
+                                                            \box
+                                                                sponges
+                                                }
+                                            \line
+                                                {
+                                                    \whiteout
+                                                        \upright
+                                                            "accent changes of direction noticeably at each attack"
+                                                }
+                                        }
                                     }
                                 _ \markup {
                                     \larger
@@ -1505,7 +1526,6 @@
                                         \italic
                                             ”
                                     }
-                                - \markup { sponges }
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue

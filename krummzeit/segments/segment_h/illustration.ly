@@ -810,7 +810,14 @@
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         \clef "percussion"
-                        c'2 - \markup { tam-tam }
+                        c'2
+                            ^ \markup {
+                                \whiteout
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            tam-tam
+                                }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue

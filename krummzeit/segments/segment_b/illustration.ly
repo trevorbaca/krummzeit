@@ -1,4 +1,4 @@
-\version "2.19.58"
+\version "2.19.59"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -2697,7 +2697,14 @@
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
                             \clef "percussion"
-                            c'2 - \markup { sponges }
+                            c'2
+                                ^ \markup {
+                                    \whiteout
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                sponges
+                                    }
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3073,7 +3080,14 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'16 -\p -\tenuto - \markup { tam-tam }
+                        c'16 -\p -\tenuto
+                            ^ \markup {
+                                \whiteout
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            tam-tam
+                                }
                         r8
                         r4.
                         r1
@@ -3743,19 +3757,14 @@
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c'1 \mf ~
-                            - \markup {
-                                \column
-                                    {
-                                        \line
-                                            {
-                                                "scraped slate"
-                                            }
-                                        \line
-                                            {
-                                                "scrape in a circle at moderate speed"
-                                            }
-                                    }
+                            ^ \markup {
+                                \whiteout
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            "scraped slate"
                                 }
+                            - \markup { "scrape in a circle at moderate speed" }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue

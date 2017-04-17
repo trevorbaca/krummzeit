@@ -2,7 +2,6 @@
 import abjad
 import baca
 import krummzeit
-#from krummzeit.materials.__abbreviations__ import *
 
 ### CONTEXT NAMES ###
 

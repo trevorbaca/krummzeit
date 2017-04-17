@@ -1,4 +1,4 @@
-\version "2.19.58"
+\version "2.19.59"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -914,7 +914,14 @@
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         \override DynamicLineSpanner.staff-padding = #'6
-                        c'4 -\pp - \markup { tam-tam }
+                        c'4 -\pp
+                            ^ \markup {
+                                \whiteout
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            tam-tam
+                                }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue

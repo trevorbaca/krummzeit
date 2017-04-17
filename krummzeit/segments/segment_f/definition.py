@@ -2,7 +2,6 @@
 import abjad
 import baca
 import krummzeit
-#from krummzeit.materials.__abbreviations__ import *
 
 ### CONTEXT NAMES ###
 
@@ -13,7 +12,6 @@ perc = 'Percussion Music Voice'
 vn = 'Violin Music Voice'
 va = 'Viola Music Voice'
 vc = 'Cello Music Voice'
-
 
 ###############################################################################
 ##################################### [F] #####################################

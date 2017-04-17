@@ -1,4 +1,4 @@
-\version "2.19.58"
+\version "2.19.59"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -739,11 +739,24 @@
                         \once \override Stem.color = #blue
                         c'2 -\p
                             ^ \markup {
-                                \whiteout
-                                    \upright
-                                        attackless
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \override
+                                                        #'(box-padding . 0.5)
+                                                        \box
+                                                            tam-tam
+                                            }
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        attackless
+                                            }
+                                    }
                                 }
-                            - \markup { tam-tam }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue

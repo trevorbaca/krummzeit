@@ -26,6 +26,10 @@ class MarkupLibrary(abjad.abctools.AbjadObject):
         string = 'catch resonance (but not attack) with pedal'
         return baca.markup(string)
 
+    def crotales():
+        string = 'crotales'
+        return baca.markup.boxed(string)
+
     def fingertips():
         string = 'rapid roll with fingertips:'
         string += ' keep speed constant during accelerando'
@@ -73,7 +77,7 @@ class MarkupLibrary(abjad.abctools.AbjadObject):
 
     def scraped_slate():
         string = 'scraped slate'
-        return baca.markup(string)
+        return baca.markup.boxed(string)
 
     def show_tempo():
         string = 'allow bowing to convey accelerando'
@@ -85,7 +89,7 @@ class MarkupLibrary(abjad.abctools.AbjadObject):
 
     def sponges():
         string = 'sponges'
-        return baca.markup(string)
+        return baca.markup.boxed(string)
 
     def subito_non_armonichi():
         string = 'subito non armonichi e non gridato'
@@ -97,4 +101,4 @@ class MarkupLibrary(abjad.abctools.AbjadObject):
         
     def tam_tam():
         string = 'tam-tam'
-        return baca.markup(string)
+        return baca.markup.boxed(string)

@@ -1,4 +1,4 @@
-\version "2.19.58"
+\version "2.19.59"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -197,77 +197,54 @@
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
                         s1 * 33/8
-                        \once \override DynamicLineSpanner.staff-padding = #3
                         \set Staff.instrumentName = \markup {
-                            \column
-                                {
-                                    \hcenter-in
-                                        #12
-                                        {
-                                            Clarinet
-                                            \line
-                                                {
-                                                    (E
-                                                    \hspace
-                                                        #-0.5
-                                                    \fontsize
-                                                        #-3
-                                                        \raise
-                                                            #0.5
-                                                            \flat
-                                                    \hspace
-                                                        #-0.5
-                                                    )
-                                                }
-                                        }
-                                }
+                            \hcenter-in
+                                #16
+                                \center-column
+                                    {
+                                        Clarinet
+                                        (Eb)
+                                    }
                             }
                         \set Staff.shortInstrumentName = \markup {
-                            \column
-                                {
-                                    \hcenter-in
-                                        #12
-                                        {
-                                            Cl.
-                                            \line
-                                                {
-                                                    (E
-                                                    \hspace
-                                                        #-0.5
-                                                    \fontsize
-                                                        #-3
-                                                        \raise
-                                                            #0.5
-                                                            \flat
-                                                    \hspace
-                                                        #-0.5
-                                                    )
-                                                }
-                                        }
-                                }
+                            \hcenter-in
+                                #10
+                                \center-column
+                                    {
+                                        Cl.
+                                        (Eb)
+                                    }
                             }
-                        b'1.. \ff ~
+                        \override DynamicLineSpanner.staff-padding = #'3
+                        e''1.. \ff ~
                             ^ \markup {
                                 \override
                                     #'(box-padding . 0.75)
                                     \box
-                                        "to clarinet in E-flat"
+                                        "to clarinet in B-flat"
                                 }
-                        \once \override DynamicLineSpanner.staff-padding = #3
-                        b'2.
-                        \once \override DynamicLineSpanner.staff-padding = #3
+                        e''2.
                         s1 * 2
+                        \revert DynamicLineSpanner.staff-padding
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
                             \set Staff.instrumentName = \markup {
                                 \hcenter-in
-                                    #12
-                                    "Bass clarinet"
+                                    #16
+                                    \center-column
+                                        {
+                                            Bass
+                                            clarinet
+                                        }
                                 }
                             \set Staff.shortInstrumentName = \markup {
                                 \hcenter-in
-                                    #12
-                                    "Bass cl."
+                                    #10
+                                    \center-column
+                                        {
+                                            Bass
+                                            cl.
+                                        }
                                 }
                             \override Stem.direction = #up
                             \override DynamicLineSpanner.staff-padding = #'9
@@ -326,23 +303,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            \set PianoMusicStaff.instrumentName = \markup {
-                                \hcenter-in
-                                    #12
-                                    Harpsichord
-                                }
-                            \set PianoMusicStaff.shortInstrumentName = \markup {
-                                \hcenter-in
-                                    #12
-                                    Hpschd.
-                                }
                             <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to harpsichord"
-                                    }
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -1939,12 +1900,12 @@
                         \times 9/7 {
                             \set PianoMusicStaff.instrumentName = \markup {
                                 \hcenter-in
-                                    #12
+                                    #16
                                     Piano
                                 }
                             \set PianoMusicStaff.shortInstrumentName = \markup {
                                 \hcenter-in
-                                    #12
+                                    #10
                                     Pf.
                                 }
                             \override DynamicLineSpanner.staff-padding = #'6
@@ -1970,18 +1931,19 @@
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'6
                         r8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to crotales"
-                                }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c'4 -\accent -\ff
+                            ^ \markup {
+                                \whiteout
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            crotales
+                                }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
@@ -2029,6 +1991,16 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/7 {
                             \clef "treble"
+                            \set Staff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Xylophone
+                                }
+                            \set Staff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Xyl.
+                                }
                             \override DynamicLineSpanner.staff-padding = #'7
                             \override TupletBracket.staff-padding = #3
                             fs''4 :32 \fff

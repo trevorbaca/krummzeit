@@ -2,11 +2,11 @@
 import abjad
 
 
-performer_inventory = abjad.instrumenttools.PerformerInventory(
+performer_inventory = abjad.instrumenttools.PerformerList(
     [
         abjad.instrumenttools.Performer(
             name='oboist',
-            instruments=abjad.instrumenttools.InstrumentInventory(
+            instruments=abjad.instrumenttools.InstrumentList(
                 [
                     abjad.instrumenttools.Oboe(
                         instrument_name='oboe',
@@ -46,7 +46,7 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
             ),
         abjad.instrumenttools.Performer(
             name='clarinetist',
-            instruments=abjad.instrumenttools.InstrumentInventory(
+            instruments=abjad.instrumenttools.InstrumentList(
                 [
                     abjad.instrumenttools.ClarinetInBFlat(
                         instrument_name='clarinet in B-flat',
@@ -287,7 +287,7 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
             ),
         abjad.instrumenttools.Performer(
             name='pianist',
-            instruments=abjad.instrumenttools.InstrumentInventory(
+            instruments=abjad.instrumenttools.InstrumentList(
                 [
                     abjad.instrumenttools.Piano(
                         instrument_name='piano',
@@ -366,7 +366,7 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
             ),
         abjad.instrumenttools.Performer(
             name='percussionist',
-            instruments=abjad.instrumenttools.InstrumentInventory(
+            instruments=abjad.instrumenttools.InstrumentList(
                 [
                     abjad.instrumenttools.Percussion(
                         instrument_name='bass drum',
@@ -565,7 +565,7 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
             ),
         abjad.instrumenttools.Performer(
             name='violinist',
-            instruments=abjad.instrumenttools.InstrumentInventory(
+            instruments=abjad.instrumenttools.InstrumentList(
                 [
                     abjad.instrumenttools.Violin(
                         instrument_name='violin',
@@ -637,7 +637,7 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
             ),
         abjad.instrumenttools.Performer(
             name='violist',
-            instruments=abjad.instrumenttools.InstrumentInventory(
+            instruments=abjad.instrumenttools.InstrumentList(
                 [
                     abjad.instrumenttools.Viola(
                         instrument_name='viola',
@@ -691,7 +691,7 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
             ),
         abjad.instrumenttools.Performer(
             name='cellist',
-            instruments=abjad.instrumenttools.InstrumentInventory(
+            instruments=abjad.instrumenttools.InstrumentList(
                 [
                     abjad.instrumenttools.Cello(
                         instrument_name='cello',

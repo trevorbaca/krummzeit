@@ -527,7 +527,7 @@ segment_maker.append_commands(
     [pf, vn, cl],
     baca.select_stages(1, 4),
     baca.tools.ScorePitchCommand(
-        source=krummzeit.materials.indigo_pitch_classes,    
+        source=krummzeit.materials.indigo_pitch_classes.get_payload(),    
         start_index=0,
         ),
     )
@@ -537,7 +537,7 @@ segment_maker.append_commands(
     [pf, vn, ob, cl],
     baca.select_stages(5, 13),
     baca.tools.ScorePitchCommand(
-        source=krummzeit.materials.indigo_pitch_classes,    
+        source=krummzeit.materials.indigo_pitch_classes.get_payload(),    
         start_index=0,
         ),
     )
@@ -733,7 +733,7 @@ segment_maker.append_specifiers(
         (vn, baca.select_stages(14, 18)),
         ],
     baca.tools.ScorePitchCommand(
-        source=krummzeit.materials.violet_pitch_classes,    
+        source=krummzeit.materials.violet_pitch_classes.get_payload(),    
         start_index=0,
         ),
     )
@@ -815,7 +815,7 @@ segment_maker.append_specifiers(
         (pf, (20, 23)),
         ],
     baca.tools.ScorePitchCommand(
-        source=krummzeit.materials.violet_pitch_classes,    
+        source=krummzeit.materials.violet_pitch_classes.get_payload(),    
         start_index=60,
         operators=[abjad.Transposition(n=1)],
         ),

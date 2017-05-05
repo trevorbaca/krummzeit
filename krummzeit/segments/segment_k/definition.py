@@ -239,7 +239,7 @@ segment_maker.append_commands(
 
 ### vn, va points ###
 
-indigo_snippet = krummzeit.materials.indigo_pitch_classes[42:34:-1]
+indigo_snippet = krummzeit.materials.indigo_pitch_classes.get_payload()[42:34:-1]
 segment_maker.append_specifiers(
     ([vn, va], (1, 10)),
     baca.tools.ScorePitchCommand(

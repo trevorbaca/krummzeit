@@ -437,7 +437,7 @@ segment_maker.append_commands(
     ob,
     baca.select_stages(1, 27),
     baca.tools.ScorePitchCommand(
-        source=krummzeit.materials.violet_pitch_classes,    
+        source=krummzeit.materials.violet_pitch_classes.get_payload(),    
         start_index=120,
         reverse=True,
         counts=[1, 1, 1, 1, 4, 1, 1, 1, 4, 4],
@@ -562,7 +562,7 @@ segment_maker.append_commands(
         counts=[1, 1, 1, 1, 4, 1, 1, 1, 4, 4],
         operators=[abjad.Transposition(n=3)],
         reverse=True,
-        source=krummzeit.materials.violet_pitch_classes,    
+        source=krummzeit.materials.violet_pitch_classes.get_payload(),    
         start_index=120,
         ),
     )

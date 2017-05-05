@@ -401,7 +401,7 @@ segment_maker.append_specifiers(
     [([vn, va, vc], (5, 9))],
     baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=11)],
-        source=krummzeit.materials.violet_pitch_classes,    
+        source=krummzeit.materials.violet_pitch_classes.get_payload(),    
         start_index=0,
         ),
     )
@@ -487,7 +487,7 @@ segment_maker.append_specifiers(
     baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=4), abjad.Inversion()],
         reverse=True,
-        source=krummzeit.materials.indigo_pitch_classes,
+        source=krummzeit.materials.indigo_pitch_classes.get_payload(),
         start_index=42,
         ),
     )

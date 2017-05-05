@@ -356,7 +356,7 @@ segment_maker.append_specifiers(
         ],
     baca.tools.ScorePitchCommand(
         operators=[abjad.Transposition(n=2)],
-        source=krummzeit.materials.indigo_pitch_classes,    
+        source=krummzeit.materials.indigo_pitch_classes.get_payload(),    
         start_index=0,
         ),
     )

@@ -58,7 +58,7 @@ class MarkupLibrary(abjad.abctools.AbjadObject):
                 'text_spanner__dash_period': 1.5,
             }
         )
-        return baca.tools.SpannerCommand(
+        return baca.SpannerCommand(
             spanner=spanner,
             )
 

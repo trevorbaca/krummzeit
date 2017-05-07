@@ -125,7 +125,7 @@ vc = 'Cello Music Voice'
 #string = 'molto gridato ed estr. sul pont.'
 #molto_gridato = abjad.Markup(string, direction=Up).italic().larger()
 #
-#natural_harmonics = baca.tools.OverrideCommand(
+#natural_harmonics = baca.OverrideCommand(
 #    grob_name='note_head',
 #    attribute_name='style',
 #    attribute_value="'harmonic'",
@@ -180,35 +180,35 @@ vc = 'Cello Music Voice'
 #subito_ordinario = abjad.Markup('subito ordinario', direction=Up).larger()
 #
 #def beam_positions(n):
-#    return baca.tools.OverrideCommand(
+#    return baca.OverrideCommand(
 #        grob_name='beam',
 #        attribute_name='positions',
 #        attribute_value=str((n, n)),
 #        )
 #
 #def dynamic_line_spanner_staff_padding(n):
-#    return baca.tools.OverrideCommand(
+#    return baca.OverrideCommand(
 #        grob_name='dynamic_line_spanner',
 #        attribute_name='staff_padding',
 #        attribute_value=str(n),
 #        )
 #
 #def markup_padding(n):
-#    return baca.tools.OverrideCommand(
+#    return baca.OverrideCommand(
 #        grob_name='text_script',
 #        attribute_name='padding',
 #        attribute_value=str(n),
 #        )
 #
 #def stem_direction(direction):
-#    return baca.tools.OverrideCommand(
+#    return baca.OverrideCommand(
 #        grob_name='stem',
 #        attribute_name='direction',
 #        attribute_value=str(direction),
 #        )
 #
 #def tie_direction(direction):
-#    return baca.tools.OverrideCommand(
+#    return baca.OverrideCommand(
 #        grob_name='tie',
 #        attribute_name='direction',
 #        attribute_value=str(direction),
@@ -216,7 +216,7 @@ vc = 'Cello Music Voice'
 #
 #def tremolo_down(n, maximum_adjustment=-1.5):
 #    pair = (0, -n)
-#    return baca.tools.OverrideCommand(
+#    return baca.OverrideCommand(
 #        grob_name='stem_tremolo',
 #        attribute_name='extra_offset',
 #        attribute_value=str(pair),
@@ -229,7 +229,7 @@ vc = 'Cello Music Voice'
 #        )
 #
 #def tuplet_bracket_staff_padding(n):
-#    return baca.tools.OverrideCommand(
+#    return baca.OverrideCommand(
 #        grob_name='tuplet_bracket',
 #        attribute_name='staff_padding',
 #        attribute_value=str(n),
@@ -253,7 +253,7 @@ vc = 'Cello Music Voice'
 #        'text_spanner__dash_period': 1.5,
 #    }
 #)
-#molto_flaut_to_molto_grid = baca.tools.SpannerCommand(
+#molto_flaut_to_molto_grid = baca.SpannerCommand(
 #    spanner=molto_flaut_to_molto_grid,
 #    )
 #
@@ -285,7 +285,7 @@ vc = 'Cello Music Voice'
 #    source=None,
 #    start_index=0,
 #    ):
-#    return baca.tools.ScorePitchCommand(
+#    return baca.ScorePitchCommand(
 #        counts=counts,
 #        operators=operators,
 #        reverse=reverse,
@@ -296,7 +296,7 @@ vc = 'Cello Music Voice'
 #indigo_pitch_classes = krummzeit.materials.indigo_pitch_classes.get_payload()
 #violet_pitch_classes = krummzeit.materials.violet_pitch_classes.get_payload()
 
-#krummzeit_displacement = baca.tools.OctaveDisplacementCommand(
+#krummzeit_displacement = baca.OctaveDisplacementCommand(
 #    displacements=[
 #        0, 0, 0, 0, 0, 0, -1, 1, 1, 1, 1,
 #        0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 
@@ -304,14 +304,14 @@ vc = 'Cello Music Voice'
 #        ],
 #    )
 #
-#color_fingerings = baca.tools.ColorFingeringCommand(
+#color_fingerings = baca.ColorFingeringCommand(
 #    deposit_annotations=['color fingering'],
 #    number_lists=(
 #        [0, 1, 2, 1],
 #        ),
 #    )
 #
-#color_microtones = baca.tools.MicrotonalDeviationCommand(
+#color_microtones = baca.MicrotonalDeviationCommand(
 #    deposit_annotations=['color microtone'],
 #    number_lists=(
 #        [0, -0.5, 0, 0.5],
@@ -319,16 +319,16 @@ vc = 'Cello Music Voice'
 #        ),
 #    )
 
-#trill_quarter_notes = baca.tools.TrillCommand(
+#trill_quarter_notes = baca.TrillCommand(
 #    forbidden_annotations=['color fingering', 'color microtone'],
 #    minimum_written_duration=abjad.Duration(1, 4),
 #    )
 #
-#pervasive_trills = baca.tools.TrillCommand(
+#pervasive_trills = baca.TrillCommand(
 #    minimum_written_duration=None,
 #    )
 #
-#pervasive_A5_trills = baca.tools.TrillCommand(
+#pervasive_A5_trills = baca.TrillCommand(
 #    minimum_written_duration=None,
 #    pitch=abjad.NamedPitch('A5'),
 #    )
@@ -336,103 +336,103 @@ vc = 'Cello Music Voice'
 #### narrow registrations ###
 #
 ## +3
-#narrow_second_octave = baca.tools.RegisterCommand(
+#narrow_second_octave = baca.RegisterCommand(
 #    registration=abjad.Registration(
 #        [('[A0, F#4)', -26), ('[F#4, C8]', -23)],
 #        ),
 #    )
 #
 ## +3
-#narrow_third_octave = baca.tools.RegisterCommand(
+#narrow_third_octave = baca.RegisterCommand(
 #    registration=abjad.Registration(
 #        [('[A0, F#4)', -14), ('[F#4, C8]', -11)],
 #        ),
 #    )
 #
 ## +3
-#narrow_fourth_octave = baca.tools.RegisterCommand(
+#narrow_fourth_octave = baca.RegisterCommand(
 #    registration=abjad.Registration(
 #        [('[A0, F#4)', -2), ('[F#4, C8]', 1)],
 #        ),
 #    )
 #
 ## +3
-#narrow_fifth_octave = baca.tools.RegisterCommand(
+#narrow_fifth_octave = baca.RegisterCommand(
 #    registration=abjad.Registration(
 #        [('[A0, F#4)', 10), ('[F#4, C8]', 13)],
 #        ),
 #    )
 #
 ## +3
-#narrow_sixth_octave = baca.tools.RegisterCommand(
+#narrow_sixth_octave = baca.RegisterCommand(
 #    registration=abjad.Registration(
 #        [('[A0, F#4)', 22), ('[F#4, C8]', 25)],
 #        ),
 #    )
 #
 ## +3
-#narrow_seventh_octave = baca.tools.RegisterCommand(
+#narrow_seventh_octave = baca.RegisterCommand(
 #    registration=abjad.Registration(
 #        [('[A0, F#4)', 34), ('[F#4, C8]', 37)],
 #        ),
 #    )
 #
 ## ascending
-#narrow_second_to_fifth_octave = baca.tools.RegisterTransitionCommand(
+#narrow_second_to_fifth_octave = baca.RegisterTransitionCommand(
 #    start_registration=narrow_second_octave.registration,
 #    stop_registration=narrow_fifth_octave.registration,
 #    )
-#narrow_third_to_fifth_octave = baca.tools.RegisterTransitionCommand(
+#narrow_third_to_fifth_octave = baca.RegisterTransitionCommand(
 #    start_registration=narrow_third_octave.registration,
 #    stop_registration=narrow_fifth_octave.registration,
 #    )
-#narrow_fourth_to_fifth_octave = baca.tools.RegisterTransitionCommand(
+#narrow_fourth_to_fifth_octave = baca.RegisterTransitionCommand(
 #    start_registration=narrow_fourth_octave.registration,
 #    stop_registration=narrow_fifth_octave.registration,
 #    )
-#narrow_fourth_to_sixth_octave = baca.tools.RegisterTransitionCommand(
+#narrow_fourth_to_sixth_octave = baca.RegisterTransitionCommand(
 #    start_registration=narrow_fourth_octave.registration,
 #    stop_registration=narrow_sixth_octave.registration,
 #    )
-#narrow_fifth_to_sixth_octave = baca.tools.RegisterTransitionCommand(
+#narrow_fifth_to_sixth_octave = baca.RegisterTransitionCommand(
 #    start_registration=narrow_fifth_octave.registration,
 #    stop_registration=narrow_sixth_octave.registration,
 #    )
 #
 ## descending
-#narrow_seventh_to_fifth_octave = baca.tools.RegisterTransitionCommand(
+#narrow_seventh_to_fifth_octave = baca.RegisterTransitionCommand(
 #    start_registration=narrow_seventh_octave.registration,
 #    stop_registration=narrow_fifth_octave.registration,
 #    )
-#narrow_sixth_to_fifth_octave = baca.tools.RegisterTransitionCommand(
+#narrow_sixth_to_fifth_octave = baca.RegisterTransitionCommand(
 #    start_registration=narrow_sixth_octave.registration,
 #    stop_registration=narrow_fifth_octave.registration,
 #    )
-#narrow_sixth_to_fourth_octave = baca.tools.RegisterTransitionCommand(
+#narrow_sixth_to_fourth_octave = baca.RegisterTransitionCommand(
 #    start_registration=narrow_sixth_octave.registration,
 #    stop_registration=narrow_fourth_octave.registration,
 #    )
-#narrow_fifth_to_fourth_octave = baca.tools.RegisterTransitionCommand(
+#narrow_fifth_to_fourth_octave = baca.RegisterTransitionCommand(
 #    start_registration=narrow_fifth_octave.registration,
 #    stop_registration=narrow_fourth_octave.registration,
 #    )
-#narrow_fifth_to_third_octave = baca.tools.RegisterTransitionCommand(
+#narrow_fifth_to_third_octave = baca.RegisterTransitionCommand(
 #    start_registration=narrow_fifth_octave.registration,
 #    stop_registration=narrow_third_octave.registration,
 #    )
-#narrow_fifth_to_second_octave = baca.tools.RegisterTransitionCommand(
+#narrow_fifth_to_second_octave = baca.RegisterTransitionCommand(
 #    start_registration=narrow_fifth_octave.registration,
 #    stop_registration=narrow_second_octave.registration,
 #    )
-#narrow_fourth_to_third_octave = baca.tools.RegisterTransitionCommand(
+#narrow_fourth_to_third_octave = baca.RegisterTransitionCommand(
 #    start_registration=narrow_fourth_octave.registration,
 #    stop_registration=narrow_third_octave.registration,
 #    )
-#narrow_fourth_to_second_octave = baca.tools.RegisterTransitionCommand(
+#narrow_fourth_to_second_octave = baca.RegisterTransitionCommand(
 #    start_registration=narrow_fourth_octave.registration,
 #    stop_registration=narrow_second_octave.registration,
 #    )
-#narrow_third_to_second_octave = baca.tools.RegisterTransitionCommand(
+#narrow_third_to_second_octave = baca.RegisterTransitionCommand(
 #    start_registration=narrow_third_octave.registration,
 #    stop_registration=narrow_second_octave.registration,
 #    )
@@ -447,35 +447,35 @@ vc = 'Cello Music Voice'
 #### wide registrations ###
 #
 ## +14
-#wide_third_octave = baca.tools.RegisterCommand(
+#wide_third_octave = baca.RegisterCommand(
 #    registration=abjad.Registration(
 #        [('[A0, F#4)', -20), ('[F#4, C8]', -6)]
 #        ),
 #    )
 #
 ## +14
-#wide_fourth_octave = baca.tools.RegisterCommand(
+#wide_fourth_octave = baca.RegisterCommand(
 #    registration=abjad.Registration(
 #        [('[A0, F#4)', -8), ('[F#4, C8]', 6)]
 #        ),
 #    )
 #
 ## +14
-#wide_fifth_octave = baca.tools.RegisterCommand(
+#wide_fifth_octave = baca.RegisterCommand(
 #    registration=abjad.Registration(
 #        [('[A0, F#4)', 4), ('[F#4, C8]', 18)]
 #        ),
 #    )
 #
 ## +14
-#wide_sixth_octave = baca.tools.RegisterCommand(
+#wide_sixth_octave = baca.RegisterCommand(
 #    registration=abjad.Registration(
 #        [('[A0, F#4)', 16), ('[F#4, C8]', 30)]
 #        ),
 #    )
 #
 ## +14
-#wide_seventh_octave = baca.tools.RegisterCommand(
+#wide_seventh_octave = baca.RegisterCommand(
 #    registration=abjad.Registration(
 #        [('[A0, F#4)', 28), ('[F#4, C8]', 42)]
 #        ),
@@ -487,28 +487,28 @@ vc = 'Cello Music Voice'
 #    ['f', 'f', 'ff', 'f', 'ff', 'f', 'f', 'ff', 'ff'],
 #    )
 #
-#repeated_p_to_ppp = baca.tools.HairpinCommand(
+#repeated_p_to_ppp = baca.HairpinCommand(
 #    hairpin_tokens=['p > ppp'],
 #    )
-#repeated_pp_to_ff = baca.tools.HairpinCommand(
+#repeated_pp_to_ff = baca.HairpinCommand(
 #    hairpin_tokens=['pp < ff'],
 #    )
 
 ### miscellaneous ###
 
-#harpsichord_cluster = baca.tools.ClusterCommand(
+#harpsichord_cluster = baca.ClusterCommand(
 #    start_pitch=abjad.NamedPitch('D4'),
 #    #stop_pitch=abjad.NamedPitch('E5'),
 #    widths=[4],
 #    )
 #
-#low_piano_cluster = baca.tools.ClusterCommand(
+#low_piano_cluster = baca.ClusterCommand(
 #    start_pitch=abjad.NamedPitch('C1'),
 #    #stop_pitch=abjad.NamedPitch('C3'),
 #    widths=[7],
 #    )
 #
-#tenor_piano_cluster = baca.tools.ClusterCommand(
+#tenor_piano_cluster = baca.ClusterCommand(
 #    start_pitch=abjad.NamedPitch('A2'),
 #    #stop_pitch=abjad.NamedPitch('B3'),
 #    widths=[4],
@@ -520,4 +520,4 @@ vc = 'Cello Music Voice'
 #ottava = abjad.spannertools.OctavationSpanner(start=1, stop=0)
 #ottava_bassa = abjad.spannertools.OctavationSpanner(start=-1, stop=0)
 #
-#stem_tremolo = baca.tools.StemTremoloCommand(tremolo_flags=32)
+#stem_tremolo = baca.StemTremoloCommand(tremolo_flags=32)

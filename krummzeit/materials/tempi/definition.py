@@ -2,40 +2,40 @@
 import abjad
 
 
-tempi = abjad.indicatortools.TempoList(
+tempi = abjad.TempoList(
     [
         abjad.Tempo(
-            reference_duration=abjad.durationtools.Duration(1, 4),
+            reference_duration=abjad.Duration(1, 4),
             units_per_minute=72,
             ),
         abjad.Tempo(
-            reference_duration=abjad.durationtools.Duration(1, 4),
+            reference_duration=abjad.Duration(1, 4),
             units_per_minute=108,
             ),
         abjad.Tempo(
-            reference_duration=abjad.durationtools.Duration(1, 4),
+            reference_duration=abjad.Duration(1, 4),
             units_per_minute=90,
             ),
         abjad.Tempo(
-            reference_duration=abjad.durationtools.Duration(1, 4),
+            reference_duration=abjad.Duration(1, 4),
             units_per_minute=135,
             ),
         abjad.Tempo(
-            reference_duration=abjad.durationtools.Duration(1, 4),
+            reference_duration=abjad.Duration(1, 4),
             units_per_minute=67.5,
-            custom_markup=abjad.markuptools.Markup(
+            custom_markup=abjad.Markup(
                 contents=(
-                    abjad.markuptools.MarkupCommand(
+                    abjad.MarkupCommand(
                         'smaller',
-                        abjad.markuptools.MarkupCommand(
+                        abjad.MarkupCommand(
                             'general-align',
-                            abjad.schemetools.Scheme(
+                            abjad.Scheme(
                                 'Y'
                                 ),
-                            abjad.schemetools.Scheme(
+                            abjad.Scheme(
                                 'DOWN'
                                 ),
-                            abjad.markuptools.MarkupCommand(
+                            abjad.MarkupCommand(
                                 'note-by-number',
                                 2,
                                 0,
@@ -43,38 +43,38 @@ tempi = abjad.indicatortools.TempoList(
                                 )
                             )
                         ),
-                    abjad.markuptools.MarkupCommand('upright', ' = 67.5'),
+                    abjad.MarkupCommand('upright', ' = 67.5'),
                     ),
                 ),
             ),
         abjad.Tempo(
-            reference_duration=abjad.durationtools.Duration(1, 4),
+            reference_duration=abjad.Duration(1, 4),
             units_per_minute=36,
             ),
         abjad.Tempo(
-            reference_duration=abjad.durationtools.Duration(1, 4),
+            reference_duration=abjad.Duration(1, 4),
             units_per_minute=73,
-            custom_markup=abjad.markuptools.Markup(
+            custom_markup=abjad.Markup(
                 contents=(
-                    abjad.markuptools.MarkupCommand(
+                    abjad.MarkupCommand(
                         'override',
-                        abjad.schemetools.SchemePair('padding', 0.45),
-                        abjad.markuptools.MarkupCommand(
+                        abjad.SchemePair('padding', 0.45),
+                        abjad.MarkupCommand(
                             'parenthesize',
-                            abjad.markuptools.MarkupCommand(
+                            abjad.MarkupCommand(
                                 'line',
                                 [
-                                    abjad.markuptools.MarkupCommand(
+                                    abjad.MarkupCommand(
                                         'smaller',
-                                        abjad.markuptools.MarkupCommand(
+                                        abjad.MarkupCommand(
                                             'general-align',
-                                            abjad.schemetools.Scheme(
+                                            abjad.Scheme(
                                                 'Y'
                                                 ),
-                                            abjad.schemetools.Scheme(
+                                            abjad.Scheme(
                                                 'DOWN'
                                                 ),
-                                            abjad.markuptools.MarkupCommand(
+                                            abjad.MarkupCommand(
                                                 'note-by-number',
                                                 2,
                                                 0,
@@ -82,26 +82,26 @@ tempi = abjad.indicatortools.TempoList(
                                                 )
                                             )
                                         ),
-                                    abjad.markuptools.MarkupCommand('upright', ' = 72'),
+                                    abjad.MarkupCommand('upright', ' = 72'),
                                     ],
                                 ),
                             ),
                         ),
-                    abjad.markuptools.MarkupCommand(
+                    abjad.MarkupCommand(
                         'italic',
                         'subito',
                         ),
-                    abjad.markuptools.MarkupCommand(
+                    abjad.MarkupCommand(
                         'smaller',
-                        abjad.markuptools.MarkupCommand(
+                        abjad.MarkupCommand(
                             'general-align',
-                            abjad.schemetools.Scheme(
+                            abjad.Scheme(
                                 'Y'
                                 ),
-                            abjad.schemetools.Scheme(
+                            abjad.Scheme(
                                 'DOWN'
                                 ),
-                            abjad.markuptools.MarkupCommand(
+                            abjad.MarkupCommand(
                                 'note-by-number',
                                 2,
                                 0,
@@ -109,16 +109,16 @@ tempi = abjad.indicatortools.TempoList(
                                 )
                             )
                         ),
-                    abjad.markuptools.MarkupCommand('upright', ' = 108'),
+                    abjad.MarkupCommand('upright', ' = 108'),
                     ),
                 ),
             ),
         abjad.Tempo(
-            reference_duration=abjad.durationtools.Duration(1, 4),
+            reference_duration=abjad.Duration(1, 4),
             units_per_minute=144,
             ),
         abjad.Tempo(
-            reference_duration=abjad.durationtools.Duration(1, 4),
+            reference_duration=abjad.Duration(1, 4),
             units_per_minute=45,
             ),
         ]

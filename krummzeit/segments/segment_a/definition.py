@@ -17,13 +17,13 @@ vc = 'Cello Music Voice'
 ##################################### [A] #####################################
 ###############################################################################
 
-stage_specifier = baca.tools.StageSpecifier([
+stage_specifier = baca.StageSpecifier([
     2, 1, # stage 1 + halt
     1, 1, 1, 1, 1, 1, # stages 2-6 + halt
     1, 3, # stages 7-8
     ])
 
-tempo_specifier = baca.tools.TempoSpecifier([
+tempo_specifier = baca.TempoSpecifier([
     (1, krummzeit.materials.named_tempi['135']),
     (2, abjad.Fermata('shortfermata')),
     (3, krummzeit.materials.named_tempi['45']),
@@ -34,7 +34,7 @@ tempo_specifier = baca.tools.TempoSpecifier([
     (9, krummzeit.materials.named_tempi['135']),
     ])
 
-maker = baca.tools.TimeSignatureMaker(
+maker = baca.TimeSignatureMaker(
     krummzeit.materials.segment_time_signatures['A'],
     stage_specifier=stage_specifier,
     tempo_specifier=tempo_specifier,
@@ -65,10 +65,10 @@ segment_maker.validate_measures_per_stage()
 music_maker = segment_maker.append_commands(
     vn,
     baca.select_stages(1),
-    baca.tools.RhythmSpecifier(
-        division_maker=baca.tools.FuseByCountsDivisionCallback(
+    baca.RhythmSpecifier(
+        division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
-            secondary_division_maker=baca.tools.SplitByDurationsDivisionCallback(
+            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
                 durations=[(1, 4)],
                 remainder=Left,
                 ),
@@ -82,12 +82,12 @@ music_maker = segment_maker.append_commands(
 
 segment_maker.copy_specifier(
     (vn, 1),
-    baca.tools.SimpleScope(va, (1, 1)),
+    baca.SimpleScope(va, (1, 1)),
     ) 
 
 segment_maker.copy_specifier(
     (vn, 1),
-    baca.tools.SimpleScope(vc, (1, 1)),
+    baca.SimpleScope(vc, (1, 1)),
     )
 
 ### vn, va, vc thicket ###
@@ -95,8 +95,8 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     vn,
     baca.select_stages(3, 7),
-    baca.tools.RhythmSpecifier(
-        division_maker=baca.tools.SplitByRoundedRatiosDivisionCallback(
+    baca.RhythmSpecifier(
+        division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(2, 1), (2, 1), (1, 1, 1)],
             ),
         rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
@@ -112,14 +112,14 @@ segment_maker.append_commands(
 
 segment_maker.copy_specifier(
     (vn, 3),
-    baca.tools.SimpleScope(va, (3, 7)),
+    baca.SimpleScope(va, (3, 7)),
     division_maker__ratios=[(2, 1), (1, 1, 1), (2, 1)],
     rhythm_maker__division_masks=[abjad.Pattern(indices=[0, 1], period=7)],
     )
 
 segment_maker.copy_specifier(
     (vn, 3),
-    baca.tools.SimpleScope(vc, (3, 7)),
+    baca.SimpleScope(vc, (3, 7)),
     division_maker__ratios=[(1, 1, 1), (2, 1), (2, 1)],
     rhythm_maker__division_masks=[abjad.Pattern(indices=[2, 3], period=7)],
     )
@@ -140,7 +140,7 @@ segment_maker.append_commands(
     baca.select_stages(1),
     baca.instrument(krummzeit.materials.instruments['piano']),
     baca.clef('bass'),
-    baca.tools.RhythmSpecifier(
+    baca.RhythmSpecifier(
         rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
             division_masks=[abjad.Pattern(indices=[0], period=1)],
             ),
@@ -154,7 +154,7 @@ segment_maker.append_commands(
     baca.select_stages(3),
     baca.instrument(krummzeit.materials.instruments['piano']),
     baca.clef('bass'),
-    baca.tools.RhythmSpecifier(
+    baca.RhythmSpecifier(
         rhythm_maker=abjad.rhythmmakertools.IncisedRhythmMaker(
             incise_specifier=abjad.rhythmmakertools.InciseSpecifier(
                 prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],
@@ -173,8 +173,8 @@ segment_maker.append_commands(
 music_maker = segment_maker.append_commands(
     pf,
     baca.select_stages(6),
-    baca.tools.RhythmSpecifier(
-        division_maker=baca.tools.FuseByCountsDivisionCallback(
+    baca.RhythmSpecifier(
+        division_maker=baca.FuseByCountsDivisionCallback(
             counts=[2, 3, 1],
             ),
         rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
@@ -190,7 +190,7 @@ music_maker = segment_maker.append_commands(
 
 segment_maker.copy_specifier(
     (pf, 6),
-    baca.tools.SimpleScope(perc, (6, 6)),
+    baca.SimpleScope(perc, (6, 6)),
     rhythm_maker__tuplet_ratios=[(1, 3)],
     )
 
@@ -207,7 +207,7 @@ segment_maker.append_commands(
     baca.select_stages(9, 10),
     baca.markup.boxed('sponges'),
     baca.clef('percussion'),
-    baca.tools.RhythmSpecifier(
+    baca.RhythmSpecifier(
         rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
             talea=abjad.rhythmmakertools.Talea([1, 2], 2),
             extra_counts_per_division=[2, 1, 0],
@@ -275,7 +275,7 @@ segment_maker.append_commands(
 
 segment_maker.append_specifiers(
     [([vn, va, vc], (3, 7))],
-    baca.tools.ScorePitchCommand(
+    baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=10)],
         reverse=True,
         source=krummzeit.materials.violet_pitch_classes.get_payload(),    

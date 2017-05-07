@@ -18,7 +18,7 @@ class RhythmDefinition(abjad.abctools.AbjadObject):
             >>> music_maker = krummzeit.tools.RhythmDefinition()
             >>> music_maker.voice_name = 'Cello Music Voice'
             >>> music_maker.stages = 1, 4
-            >>> music_maker.division_maker = baca.tools.FuseByCountsDivisionCallback(
+            >>> music_maker.division_maker = baca.FuseByCountsDivisionCallback(
             ...     counts=[2, 3, 1],
             ...     )
             >>> music_maker.rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker()
@@ -28,7 +28,7 @@ class RhythmDefinition(abjad.abctools.AbjadObject):
             >>> f(music_maker)
             krummzeit.tools.RhythmDefinition(
                 voice_name='Cello Music Voice',
-                division_maker=baca.tools.FuseByCountsDivisionCallback(
+                division_maker=baca.FuseByCountsDivisionCallback(
                     counts=[2, 3, 1],
                     ),
                 rhythm_maker=rhythmmakertools.NoteRhythmMaker(),

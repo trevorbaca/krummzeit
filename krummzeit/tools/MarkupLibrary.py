@@ -42,7 +42,7 @@ class MarkupLibrary(abjad.abctools.AbjadObject):
     def grid_poss_to_flaut_poss():
         left_text = abjad.Markup('grid. possibile').italic().larger() + abjad.Markup.hspace(1)
         right_text = abjad.Markup.hspace(1) + abjad.Markup('flaut. possibile').italic().larger()
-        spanner = abjad.spannertools.TextSpanner(
+        spanner = abjad.TextSpanner(
             overrides = {
                 'text_spanner__bound_details__left__padding': -1,
                 'text_spanner__bound_details__left__stencil_align_dir_y': 0,

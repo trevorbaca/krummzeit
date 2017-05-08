@@ -15,7 +15,3 @@ metric_modulation_inventory = {
         right_rhythm=abjad.Note('c4'),
         ),
     }
-
-__all__ = [
-    'metric_modulation_inventory',
-    ]

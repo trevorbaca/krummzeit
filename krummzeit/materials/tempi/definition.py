@@ -2,25 +2,25 @@
 import abjad
 
 
-tempi = abjad.TempoList(
+tempi = abjad.MetronomeMarkList(
     [
-        abjad.Tempo(
+        abjad.MetronomeMark(
             reference_duration=abjad.Duration(1, 4),
             units_per_minute=72,
             ),
-        abjad.Tempo(
+        abjad.MetronomeMark(
             reference_duration=abjad.Duration(1, 4),
             units_per_minute=108,
             ),
-        abjad.Tempo(
+        abjad.MetronomeMark(
             reference_duration=abjad.Duration(1, 4),
             units_per_minute=90,
             ),
-        abjad.Tempo(
+        abjad.MetronomeMark(
             reference_duration=abjad.Duration(1, 4),
             units_per_minute=135,
             ),
-        abjad.Tempo(
+        abjad.MetronomeMark(
             reference_duration=abjad.Duration(1, 4),
             units_per_minute=67.5,
             custom_markup=abjad.Markup(
@@ -47,11 +47,11 @@ tempi = abjad.TempoList(
                     ),
                 ),
             ),
-        abjad.Tempo(
+        abjad.MetronomeMark(
             reference_duration=abjad.Duration(1, 4),
             units_per_minute=36,
             ),
-        abjad.Tempo(
+        abjad.MetronomeMark(
             reference_duration=abjad.Duration(1, 4),
             units_per_minute=73,
             custom_markup=abjad.Markup(
@@ -113,11 +113,11 @@ tempi = abjad.TempoList(
                     ),
                 ),
             ),
-        abjad.Tempo(
+        abjad.MetronomeMark(
             reference_duration=abjad.Duration(1, 4),
             units_per_minute=144,
             ),
-        abjad.Tempo(
+        abjad.MetronomeMark(
             reference_duration=abjad.Duration(1, 4),
             units_per_minute=45,
             ),

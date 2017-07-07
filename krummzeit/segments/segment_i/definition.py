@@ -430,7 +430,7 @@ segment_maker.append_commands(
     baca.dynamic('fff'),
     # TODO: make work again
     #baca.GlissandoCommand(
-    #    patterns=[abjad.select_first(1)],
+    #    patterns=[abjad.index_first(1)],
     #    ),
     # TODO: make work again
     #baca.StemTremoloCommand(

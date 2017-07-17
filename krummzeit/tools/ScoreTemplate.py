@@ -179,7 +179,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             name='Viola Music Staff',
             )
         self._attach_tag('strings.viola', viola_music_staff)
-        abjad.attach(abjad.Clef('alto'), viola_music_staff)
+        #abjad.attach(abjad.Clef('alto'), viola_music_staff)
         cello_music_voice = abjad.Voice(
             [], 
             context_name='CelloMusicVoice',
@@ -191,7 +191,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             name='Cello Music Staff',
             )
         self._attach_tag('strings.cello', cello_music_staff)
-        abjad.attach(abjad.Clef('bass'), cello_music_staff)
+        #abjad.attach(abjad.Clef('bass'), cello_music_staff)
         string_section_staff_group = abjad.StaffGroup(
             [violin_music_staff, viola_music_staff, cello_music_staff], 
             context_name='StringSectionStaffGroup',

@@ -68,13 +68,11 @@ class ScoreTemplate(baca.ScoreTemplate):
                         }
                         \tag strings.viola
                         \context ViolaMusicStaff = "Viola Music Staff" {
-                            \clef "alto"
                             \context ViolaMusicVoice = "Viola Music Voice" {
                             }
                         }
                         \tag strings.cello
                         \context CelloMusicStaff = "Cello Music Staff" {
-                            \clef "bass"
                             \context CelloMusicVoice = "Cello Music Voice" {
                             }
                         }

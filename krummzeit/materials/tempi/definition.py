@@ -58,7 +58,7 @@ tempi = abjad.MetronomeMarkList(
                 contents=(
                     abjad.MarkupCommand(
                         'override',
-                        abjad.SchemePair('padding', 0.45),
+                        abjad.SchemePair(('padding', 0.45)),
                         abjad.MarkupCommand(
                             'parenthesize',
                             abjad.MarkupCommand(

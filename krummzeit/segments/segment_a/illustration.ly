@@ -1,4 +1,4 @@
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -391,12 +391,12 @@
                         s1 * 7/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/8 {
+                            \clef "percussion"
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            \clef "percussion"
                             c2 -\accent
                                 ^ \markup {
                                     \whiteout
@@ -593,7 +593,6 @@
                 }
                 \tag strings.viola
                 \context ViolaMusicStaff = "Viola Music Staff" {
-                    \clef "alto"
                     \context ViolaMusicVoice = "Viola Music Voice" {
                         \override Beam.positions = #'(-5 . -5)
                         \override DynamicLineSpanner.staff-padding = #'7
@@ -699,7 +698,6 @@
                 }
                 \tag strings.cello
                 \context CelloMusicStaff = "Cello Music Staff" {
-                    \clef "bass"
                     \context CelloMusicVoice = "Cello Music Voice" {
                         \override Beam.positions = #'(-7.5 . -7.5)
                         \override DynamicLineSpanner.staff-padding = #'7.5

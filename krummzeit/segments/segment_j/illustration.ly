@@ -1,4 +1,4 @@
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -830,6 +830,7 @@
                                         "to piano"
                                 }
                         \times 2/3 {
+                            \ottava #-1
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -837,7 +838,6 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            \ottava #-1
                             <c,, e,, g,, b,, d, f, a,>8 [
                                 ^ \markup {
                                     \center-align

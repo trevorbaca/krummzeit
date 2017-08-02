@@ -1,4 +1,4 @@
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -1488,31 +1488,17 @@
                         s1 * 11/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/17 {
+                            \clef "percussion"
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            \clef "percussion"
                             c'2 -\accent
                                 ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    \whiteout
-                                                        \override
-                                                            #'(box-padding . 0.5)
-                                                            \box
-                                                                sponges
-                                                }
-                                            \line
-                                                {
-                                                    \whiteout
-                                                        \upright
-                                                            "accent changes of direction noticeably at each attack"
-                                                }
-                                        }
+                                    \whiteout
+                                        \upright
+                                            "accent changes of direction noticeably at each attack"
                                     }
                                 _ \markup {
                                     \larger
@@ -1748,10 +1734,10 @@
                         s1 * 27/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            \clef "treble"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
-                            \clef "treble"
                             \set Staff.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -1796,11 +1782,11 @@
                             fs''8 -\staccatissimo ]
                             r4
                             fs''4 -\staccatissimo
-                            \stopStaff
-                            \startStaff
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
+                            \stopStaff
+                            \startStaff
                         }
                         s1 * 61/8
                         \tweak text #tuplet-number::calc-fraction-text
@@ -1907,15 +1893,15 @@
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
+                        \clef "percussion"
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
-                        \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'6
                         \override Tie.direction = #up
                         c1 :32 \ppp ~
@@ -1982,10 +1968,10 @@
                         \once \override Stem.color = #blue
                         c8 :32
                         \bar "|"
-                        \stopStaff
-                        \startStaff
                         \revert DynamicLineSpanner.staff-padding
                         \revert Tie.direction
+                        \stopStaff
+                        \startStaff
                     }
                 }
             >>
@@ -2105,10 +2091,10 @@
                             d''2 \f
                         }
                         r2
-                        r2 \stopTextSpan
                         \revert TextSpanner.bound-details
                         \revert TextSpanner.dash-fraction
                         \revert TextSpanner.dash-period
+                        r2 \stopTextSpan
                         r2.
                         \times 4/5 {
                             df''16. \ff \glissando
@@ -2476,10 +2462,10 @@
                         }
                         \times 4/5 {
                             gf''8 \glissando
-                            f''2 \f \stopTextSpan \glissando
                             \revert TextSpanner.bound-details
                             \revert TextSpanner.dash-fraction
                             \revert TextSpanner.dash-period
+                            f''2 \f \stopTextSpan \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
@@ -2721,6 +2707,7 @@
                         b,4 \glissando
                         g,8
                         s1 * 69/8
+                        \clef "treble"
                         \override TextSpanner.bound-details.left-broken.text = #'#f
                         \override TextSpanner.bound-details.left.padding = #-1
                         \override TextSpanner.bound-details.left.stencil-align-dir-y = #0
@@ -2745,7 +2732,6 @@
                             }
                         \override TextSpanner.dash-fraction = #0.25
                         \override TextSpanner.dash-period = #1.5
-                        \clef "treble"
                         \override Beam.positions = #'(-4 . -4)
                         \override DynamicLineSpanner.staff-padding = #'6
                         \override TupletBracket.staff-padding = #3
@@ -2767,10 +2753,10 @@
                         }
                         \times 2/3 {
                             a''4 \glissando
-                            gf''2 \f \stopTextSpan
                             \revert TextSpanner.bound-details
                             \revert TextSpanner.dash-fraction
                             \revert TextSpanner.dash-period
+                            gf''2 \f \stopTextSpan
                         }
                         r2.
                         \tweak text #tuplet-number::calc-fraction-text

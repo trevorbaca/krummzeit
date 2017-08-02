@@ -30,7 +30,7 @@ tempo_specifier = baca.TempoSpecifier([
     (4, abjad.Accelerando()),
     (8, krummzeit.materials.named_tempi['72/108']),
     (9, krummzeit.materials.named_tempi['72']),
-    (9, krummzeit.materials.metric_modulation_inventory['4.=4']),
+    (9, krummzeit.materials.metric_modulations['4.=4']),
     (9, abjad.Accelerando()),
     (10, krummzeit.materials.named_tempi['108']),
     ])

@@ -1,4 +1,4 @@
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -530,7 +530,7 @@
                                             \finger
                                                 1
                                     }
-                            bf'4.
+                            bf'4. \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -538,7 +538,7 @@
                                             \finger
                                                 2
                                     }
-                            bf'4.
+                            bf'4. \stopTrillSpan \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -547,11 +547,11 @@
                                                 1
                                     }
                         }
-                        r4
+                        r4 \stopTrillSpan
                         r2
                         \times 8/9 {
                             af'8.
-                            g'4
+                            g'4 \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -559,7 +559,7 @@
                                             \finger
                                                 1
                                     }
-                            f'16 [
+                            f'16 \stopTrillSpan [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -613,7 +613,7 @@
                                     }
                         }
                         \times 2/3 {
-                            ef''4.
+                            ef''4. \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -621,7 +621,7 @@
                                             \finger
                                                 2
                                     }
-                            bf'2
+                            bf'2 \stopTrillSpan \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -629,7 +629,7 @@
                                             \finger
                                                 1
                                     }
-                            bff'8 [
+                            bff'8 \stopTrillSpan [
                             gf'8 ]
                                 ^ \markup {
                                     \override
@@ -802,7 +802,7 @@
                                             \finger
                                                 1
                                     }
-                            bff'4.
+                            bff'4. \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -810,7 +810,7 @@
                                             \finger
                                                 2
                                     }
-                            cf''4.
+                            cf''4. \stopTrillSpan \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -819,11 +819,11 @@
                                                 1
                                     }
                         }
-                        r4.
+                        r4. \stopTrillSpan
                         r2.
                         \times 2/3 {
                             bf'8.
-                            ff'4
+                            ff'4 \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -831,7 +831,7 @@
                                             \finger
                                                 1
                                     }
-                            ff'16 [
+                            ff'16 \stopTrillSpan [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1729,8 +1729,8 @@
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
-                        \ottava #-1
                         \clef "bass"
+                        \ottava #-1
                         bf,,,8.. \ppp
                         r32
                         bf,,,8..
@@ -1801,12 +1801,12 @@
                     \context PercussionMusicVoice = "Percussion Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            \clef "percussion"
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            \clef "percussion"
                             c'2 :32
                                 ^ \markup {
                                     \whiteout
@@ -2093,10 +2093,10 @@
                         s1 * 3/2
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            \clef "treble"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
-                            \clef "treble"
                             \set Staff.instrumentName = \markup {
                                 \hcenter-in
                                     #16

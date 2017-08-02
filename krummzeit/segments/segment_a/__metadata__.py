@@ -2,25 +2,25 @@
 import abjad
 
 
-metadata = abjad.datastructuretools.TypedOrderedDict(
+metadata = abjad.TypedOrderedDict(
     [
         (
             'end_clefs_by_staff',
-            abjad.datastructuretools.TypedOrderedDict(
+            abjad.TypedOrderedDict(
                 [
-                    ('Cello Music Staff', 'bass'),
+                    ('Cello Music Staff', None),
                     ('Clarinet Music Staff', None),
                     ('Oboe Music Staff', None),
                     ('Percussion Staff', 'percussion'),
                     ('Piano Music Staff', 'treble'),
-                    ('Viola Music Staff', 'alto'),
+                    ('Viola Music Staff', None),
                     ('Violin Music Staff', None),
                     ]
                 ),
             ),
         (
             'end_instruments_by_context',
-            abjad.datastructuretools.TypedOrderedDict(
+            abjad.TypedOrderedDict(
                 []
                 ),
             ),

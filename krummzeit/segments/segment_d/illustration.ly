@@ -1,4 +1,4 @@
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -636,6 +636,7 @@
                             bff,4 -\staccatissimo \pp
                         }
                         s1 * 13/8
+                        \ottava #-1
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
                         \once \override Arpeggio.X-offset = #-2
@@ -643,7 +644,6 @@
                         \once \override NoteHead.text = \markup {
                         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                         }
-                        \ottava #-1
                         \override DynamicLineSpanner.staff-padding = #'10
                         <c,, e,, g,, b,, d, f, a,>1 ~
                             ^ \markup {
@@ -741,6 +741,7 @@
                                 }
                         \ottava #0
                         s1 * 1/4
+                        \ottava #-1
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
                         \once \override Arpeggio.X-offset = #-2
@@ -748,7 +749,6 @@
                         \once \override NoteHead.text = \markup {
                         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                         }
-                        \ottava #-1
                         <c,, e,, g,, b,, d, f, a,>1 ~
                             ^ \markup {
                                 \center-align
@@ -806,8 +806,8 @@
                                             \flat
                                         }
                                 }
-                        \ottava #0
                         \revert DynamicLineSpanner.staff-padding
+                        \ottava #0
                         s1 * 15/4
                         \bar "|"
                     }
@@ -815,12 +815,12 @@
                 \tag percussion
                 \context PercussionMusicStaff = "Percussion Staff" {
                     \context PercussionMusicVoice = "Percussion Music Voice" {
+                        \clef "percussion"
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        \clef "percussion"
                         c'2. :32 ~
                             ^ \markup {
                                 \whiteout

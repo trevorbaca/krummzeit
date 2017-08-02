@@ -33,15 +33,15 @@ stage_specifier = baca.StageSpecifier([
 tempo_specifier = baca.TempoSpecifier([
     (1, krummzeit.materials.tempi[3]),
     (9, krummzeit.materials.tempi[4]),
-    (9, krummzeit.materials.metric_modulation_inventory['4=8']),
+    (9, krummzeit.materials.metric_modulations['4=8']),
     (10, abjad.Accelerando()),
     (12, krummzeit.materials.tempi[3]),
     (15, krummzeit.materials.tempi[2]),
-    (15, krummzeit.materials.metric_modulation_inventory['4.=4']),
+    (15, krummzeit.materials.metric_modulations['4.=4']),
     (16, abjad.Accelerando()),
     (17, krummzeit.materials.tempi[3]),
     (20, krummzeit.materials.tempi[1]),
-    (20, krummzeit.materials.metric_modulation_inventory['4=4:5(4)']),
+    (20, krummzeit.materials.metric_modulations['4=4:5(4)']),
     (22, krummzeit.materials.tempi[1]),
     ])
 

@@ -1,4 +1,4 @@
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -739,23 +739,9 @@
                         \once \override Stem.color = #blue
                         c'2 -\p
                             ^ \markup {
-                                \column
-                                    {
-                                        \line
-                                            {
-                                                \whiteout
-                                                    \override
-                                                        #'(box-padding . 0.5)
-                                                        \box
-                                                            tam-tam
-                                            }
-                                        \line
-                                            {
-                                                \whiteout
-                                                    \upright
-                                                        attackless
-                                            }
-                                    }
+                                \whiteout
+                                    \upright
+                                        attackless
                                 }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
@@ -855,10 +841,10 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
                             fs2.
-                            fs1 \stopTextSpan
                             \revert TextSpanner.bound-details
                             \revert TextSpanner.dash-fraction
                             \revert TextSpanner.dash-period
+                            fs1 \stopTextSpan
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 13/7 {
@@ -953,10 +939,10 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
                             bf,4
-                            bf,1. \stopTextSpan
                             \revert TextSpanner.bound-details
                             \revert TextSpanner.dash-fraction
                             \revert TextSpanner.dash-period
+                            bf,1. \stopTextSpan
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 13/7 {
@@ -1027,10 +1013,10 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
-                            a,,1. \stopTextSpan
                             \revert TextSpanner.bound-details
                             \revert TextSpanner.dash-fraction
                             \revert TextSpanner.dash-period
+                            a,,1. \stopTextSpan
                             a,,4
                         }
                         \tweak text #tuplet-number::calc-fraction-text

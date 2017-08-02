@@ -38,7 +38,7 @@ tempo_specifier = baca.TempoSpecifier([
     (8, abjad.Fermata('shortfermata')),
     (8, krummzeit.materials.named_tempi['135']),
     (10, krummzeit.materials.named_tempi['90']),
-    (10, krummzeit.materials.metric_modulation_inventory['4.=4']),
+    (10, krummzeit.materials.metric_modulations['4.=4']),
     (11, abjad.Ritardando()),
     (13, abjad.Fermata('longfermata')),
     (13, krummzeit.materials.named_tempi['45']),

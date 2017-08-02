@@ -2,7 +2,7 @@
 import abjad
 
 
-metric_modulation_inventory = {
+metric_modulations = {
     '4=8': abjad.MetricModulation(
         left_rhythm=abjad.Note('c4'),
         right_rhythm=abjad.Note('c8'),),

@@ -1,4 +1,4 @@
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -980,7 +980,7 @@
                         }
                         \times 2/3 {
                             e'4 -\staccato
-                            fs'4 -\staccato
+                            gf'4 -\staccato
                             g'4 -\staccato ~
                         }
                         {
@@ -990,36 +990,36 @@
                         \times 6/10 {
                             af'16 -\staccato [
                             d'16 -\staccato
-                            fs'16 -\staccato
+                            gf'16 -\staccato
                             af'16 -\staccato
                             a'16 -\staccato
                             bf'16 -\staccato
                             c''16 -\staccato
-                            cs'16 -\staccato
+                            df'16 -\staccato
                             ef'16 -\staccato
-                            b'16 -\staccato ~ ]
+                            cf'16 -\staccato ~ ]
                         }
                         \times 2/3 {
-                            b'4
+                            cf'4
                             bf'4 -\staccato
-                            fs'4 -\staccato ~
+                            gf'4 -\staccato ~
                         }
                         {
-                            fs'4
+                            gf'4
                         }
                         {
                             af'4 -\staccato
                         }
                         \times 8/12 {
                             a'16 -\staccato [
-                            b'16 -\staccato
+                            cf''16 -\staccato
                             c''16 -\staccato
-                            cs''16 -\staccato
+                            df''16 -\staccato
                             ef''16 -\staccato
                             d''16 -\staccato
                             bf'16 -\staccato
                             e'16 -\staccato
-                            fs'16 -\staccato
+                            gf'16 -\staccato
                             g'16 -\staccato
                             af'16 -\staccato
                             ef'16 -\staccato ~ ]
@@ -1028,25 +1028,25 @@
                             ef'4
                         }
                         \times 2/3 {
-                            b'4 -\staccato
+                            cf''4 -\staccato
                             c''4 -\staccato
-                            cs''4 -\staccato ~
+                            df''4 -\staccato ~
                         }
                         {
-                            cs''4. ~
+                            df''4. ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/10 {
-                            cs''16 [
+                            df''16 [
                             af'16 -\staccato
                             d''16 -\staccato
                             bf'16 -\staccato
                             e''16 -\staccato
-                            fs'16 -\staccato
+                            gf'16 -\staccato
                             g'16 -\staccato
                             a'16 -\staccato
                             bf'16 -\staccato
-                            fs'16 -\staccato ]
+                            gf'16 -\staccato ]
                         }
                         \times 2/3 {
                             af'4 -\staccato
@@ -1062,7 +1062,7 @@
                             e''4
                         }
                         {
-                            fs''16 -\staccato [
+                            gf''16 -\staccato [
                             af'16 -\staccato
                             a'16 -\staccato
                             bf'16 -\staccato ~ \ff ]
@@ -1072,24 +1072,24 @@
                         }
                         \times 2/3 {
                             bf'4
-                            fs''4 -\staccato
-                            cs''4 -\staccato
+                            gf''4 -\staccato
+                            df''4 -\staccato
                         }
                         {
                             ef''4. -\staccato
                         }
                         \times 8/12 {
-                            b'16 -\staccato [
+                            cf''16 -\staccato [
                             c''16 -\staccato
-                            fs''16 -\staccato
+                            gf''16 -\staccato
                             af''16 -\staccato
                             a'16 -\staccato
                             bf'16 -\staccato
                             c''16 -\staccato
-                            cs''16 -\staccato
+                            df''16 -\staccato
                             ef''16 -\staccato
-                            b'16 -\staccato
-                            fs''16 -\staccato
+                            cf''16 -\staccato
+                            gf''16 -\staccato
                             g''16 -\staccato ~ ]
                         }
                         {
@@ -1107,12 +1107,12 @@
                         \times 6/10 {
                             bf''16 [
                             e''16 -\staccato
-                            b'16 -\staccato
+                            cf''16 -\staccato
                             c''16 -\staccato
-                            cs''16 -\staccato
+                            df''16 -\staccato
                             ef''16 -\staccato
                             e''16 -\staccato
-                            fs''16 -\staccato
+                            gf''16 -\staccato
                             g''16 -\staccato
                             af''16 -\staccato ]
                         }
@@ -1124,7 +1124,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
-                            fs''4 -\staccato
+                            gf''4 -\staccato
                             af''4 -\staccato
                             a''4 -\staccato ~
                         }
@@ -1134,24 +1134,24 @@
                         \times 8/12 {
                             bf''16 -\staccato [
                             e''16 -\staccato
-                            fs''16 -\staccato
+                            gf''16 -\staccato
                             g''16 -\staccato
                             af''16 -\staccato
                             d''16 -\staccato
                             a''16 -\staccato
                             bf''16 -\staccato
-                            fs''16 -\staccato
+                            gf''16 -\staccato
                             af''16 -\staccato
                             ef''16 -\staccato
-                            b''16 -\staccato ~ ]
+                            cf''16 -\staccato ~ ]
                         }
                         {
-                            b''4. ~
+                            cf''4. ~
                         }
                         \times 2/3 {
-                            b''4
+                            cf''4
                             c''4 -\staccato
-                            cs''4 -\staccato
+                            df''4 -\staccato
                         }
                         {
                             af''4. -\staccato
@@ -1160,10 +1160,10 @@
                         \times 6/10 {
                             a''16 -\staccato [
                             bf''16 -\staccato
-                            fs''16 -\staccato
-                            cs''16 -\staccato
+                            gf''16 -\staccato
+                            df''16 -\staccato
                             ef''16 -\staccato
-                            b''16 -\staccato
+                            cf'''16 -\staccato
                             c'''16 -\staccato
                             d''16 -\staccato
                             bf''16 -\staccato
@@ -1171,21 +1171,21 @@
                         }
                         \times 2/3 {
                             e''4
-                            fs''4 -\staccato
+                            gf''4 -\staccato
                             g''4 -\staccato
                         }
                         \times 2/3 {
                             af''4 -\staccato
                             c''4 -\staccato
-                            cs''4 -\staccato ~
+                            df''4 -\staccato ~
                         }
                         {
-                            cs''4 ~
+                            df''4 ~
                         }
                         {
-                            cs''16 [
+                            df''16 [
                             ef''16 -\staccato
-                            b''16 -\staccato
+                            cf''16 -\staccato
                             af''16 -\staccato ]
                         }
                         \times 2/3 {
@@ -1334,7 +1334,7 @@
                         }
                         \times 2/3 {
                             e''4 -\staccato
-                            fs''4 -\staccato
+                            gf''4 -\staccato
                             g''4 -\staccato ~
                         }
                         {
@@ -1342,13 +1342,13 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            gs''8 -\staccato [
+                            af''8 -\staccato [
                             d''8 -\staccato
-                            fs''8 -\staccato
-                            gs''8 -\staccato ~ ]
+                            gf''8 -\staccato
+                            af''8 -\staccato ~ ]
                         }
                         \times 2/3 {
-                            gs''4
+                            af''4
                             a''4 -\staccato
                             bf''4 -\staccato ~
                         }
@@ -1357,37 +1357,37 @@
                         }
                         {
                             c'''4 -\staccato
-                            cs'''4 -\staccato
+                            df'''4 -\staccato
                         }
                         {
-                            ds''8 -\staccato [
-                            b''8 -\staccato
+                            ef''8 -\staccato [
+                            cf'''8 -\staccato
                             bf''8 -\staccato
-                            fs''8 -\staccato ~ ]
+                            gf''8 -\staccato ~ ]
                         }
                         {
-                            fs''4
+                            gf''4
                         }
                         \times 2/3 {
-                            gs''4 -\staccato
+                            af''4 -\staccato
                             a''4 -\staccato
-                            b''4 -\staccato ~
+                            cf'''4 -\staccato ~
                         }
                         {
-                            b''4
+                            cf'''4
                             c'''4 -\staccato ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             c'''8 [
-                            cs'''8 -\staccato
-                            ds''8 -\staccato
+                            df''8 -\staccato
+                            ef''8 -\staccato
                             d''8 -\staccato ]
                         }
                         \times 2/3 {
                             bf''4 -\staccato
                             e''4 -\staccato
-                            fs''4 -\staccato
+                            gf''4 -\staccato
                         }
                         {
                             g''4. -\staccato ~
@@ -1396,9 +1396,9 @@
                             g''4.
                         }
                         {
-                            gs''8 -\staccato [
-                            ds''8 -\staccato
-                            b''8 -\staccato
+                            af''8 -\staccato [
+                            ef''8 -\staccato
+                            cf'''8 -\staccato
                             c'''8 -\staccato ~ ]
                         }
                         {
@@ -1409,8 +1409,8 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/4 {
-                            cs'''4 -\staccato
-                            gs''4 -\staccato
+                            df''4 -\staccato
+                            af''4 -\staccato
                         }
                         {
                             d''8 -\staccato [
@@ -1419,7 +1419,7 @@
                         \times 2/3 {
                             bf''4
                             e''4 -\staccato
-                            fs''4 -\staccato
+                            gf''4 -\staccato
                         }
                         {
                             g''4 -\staccato ~
@@ -1435,7 +1435,7 @@
                         \times 3/4 {
                             b'8 [
                             c''8 -\staccato
-                            gs'8 -\staccato
+                            af'8 -\staccato
                             bf'8 -\staccato ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -1452,7 +1452,7 @@
                         }
                         {
                             fs'8 -\staccato [
-                            gs'8 -\staccato
+                            af'8 -\staccato
                             bf'8 -\staccato
                             b'8 -\staccato ~ ]
                         }
@@ -1467,12 +1467,12 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/9 {
-                            gs'8 -\staccato [
-                            ds''8 -\staccato
+                            af'8 -\staccato [
+                            ef''8 -\staccato
                             f''8 -\staccato
-                            cs''8 -\staccato
+                            df''8 -\staccato
                             d''8 -\staccato
-                            gs'8 -\staccato
+                            af'8 -\staccato
                             bf'8 -\staccato
                             b'8 -\staccato
                             c''8 -\staccato ~ ]
@@ -1480,7 +1480,7 @@
                         \times 2/3 {
                             c''4
                             d''4 -\staccato
-                            ds''4 -\staccato
+                            ef''4 -\staccato
                         }
                         {
                             f'4. -\staccato ~
@@ -1491,20 +1491,20 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/9 {
                             f'8 [
-                            cs''8 -\staccato
-                            gs''8 -\staccato
+                            df''8 -\staccato
+                            af''8 -\staccato
                             a'8 -\staccato
                             bf'8 -\staccato
                             e''8 -\staccato
                             c''8 -\staccato
                             fs''8 -\staccato
-                            cs''8 -\staccato \ff ]
+                            df''8 -\staccato \ff ]
                         }
                         \times 2/3 {
                             \override Beam.positions = #'(-4 . -4)
                             \override TupletBracket.staff-padding = #3
                             d''4 -\staccato
-                            ds''4 -\staccato
+                            ef''4 -\staccato
                             f''4 -\staccato
                         }
                         {
@@ -1512,7 +1512,7 @@
                         }
                         {
                             fs''4
-                            gs''4 -\staccato
+                            af''4 -\staccato
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
@@ -1529,7 +1529,7 @@
                         }
                         {
                             c''4 -\staccato
-                            gs''4 -\staccato
+                            af''4 -\staccato
                         }
                         {
                             bf''8 -\staccato [
@@ -1539,7 +1539,7 @@
                         }
                         \times 2/3 {
                             fs''4
-                            gs''4 -\staccato
+                            af''4 -\staccato
                             a''4 -\staccato
                         }
                         {
@@ -1555,7 +1555,7 @@
                             c'''8 -\staccato ]
                         }
                         {
-                            gs''4 -\staccato
+                            af''4 -\staccato
                         }
                         {
                             bf''4. -\staccato ~
@@ -1565,27 +1565,27 @@
                         }
                         {
                             f''8 -\staccato [
-                            cs'''8 -\staccato
+                            df'''8 -\staccato
                             d'''8 -\staccato
-                            ds''8 -\staccato ~ ]
+                            ef''8 -\staccato ~ ]
                         }
                         \times 2/3 {
-                            ds''4
+                            ef''4
                             bf''4 -\staccato
                             b''4 -\staccato ~
                         }
                         \times 2/3 {
                             b''4
                             c''4 -\staccato
-                            gs''4 -\staccato
+                            af''4 -\staccato
                         }
                         {
-                            ds''4. -\staccato
+                            ef''4. -\staccato
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             f''8 -\staccato [
-                            cs'''8 -\staccato
+                            df''8 -\staccato
                             d''8 -\staccato
                             e''8 -\staccato ]
                             \revert Beam.positions
@@ -1830,14 +1830,14 @@
                         \times 4/7 {
                             af''8 [
                             d''8
-                            e'''8
+                            ff'''8
                             f'''8
-                            fs''8
+                            gf''8
                             c'''8
-                            e'8 ]
+                            ff'8 ]
                         }
                         \times 2/3 {
-                            fs''8 [
+                            gf''8 [
                             g''8
                             af''8 ~ ]
                         }
@@ -1849,22 +1849,22 @@
                         }
                         \times 4/7 {
                             bf''8 [
-                            b''8
-                            cs'''8
-                            a''8
+                            cf''8
+                            df'''8
+                            bff''8
                             af''8
-                            e'''8
-                            fs''8 ~ ]
+                            ff'''8
+                            gf''8 ~ ]
                         }
                         \times 2/3 {
-                            fs''8 [
+                            gf''8 [
                             g''8
-                            a''8 ]
+                            bff''8 ]
                         }
                         {
                             bf'8 [
-                            b'8
-                            cs''8 ]
+                            cf''8
+                            df''8 ]
                         }
                         {
                             c''8 [
@@ -1874,38 +1874,38 @@
                         \times 5/6 {
                             af''4
                             d''4
-                            e'4
+                            ff'4
                         }
                         \times 2/3 {
                             f'4
-                            fs''4
-                            cs''4 ~
+                            gf''4
+                            df''4 ~
                         }
                         {
-                            cs''8 [
-                            a'8
+                            df''8 [
+                            bff'8
                             bf''8 ~ ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/9 {
                             bf''8 [
-                            b''8
-                            fs''8
+                            cf'''8
+                            gf''8
                             c'''8
                             af''8
                             d''8
-                            e'8
+                            ff'8
                             f'8
                             g''8 ]
                         }
                         {
                             af''8 [
-                            e'''8
-                            fs''8 ]
+                            ff'''8
+                            gf''8 ]
                         }
                         \times 4/5 {
                             f'''8 [
-                            fs''8
+                            gf''8
                             c'''8
                             af''8
                             d'''8 ~ ]
@@ -1915,45 +1915,45 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/4 {
-                            e'4
-                            fs'4 ~
+                            ff'4
+                            gf'4 ~
                         }
                         \times 4/7 {
-                            fs'8 [
+                            gf'8 [
                             g'8
                             af'8
-                            e'8
-                            b''8
-                            cs''8
-                            a''8 ~ ]
+                            ff'8
+                            cf''8
+                            df''8
+                            bff''8 ~ ]
                         }
                         \times 2/3 {
-                            a''8 [
+                            bff''8 [
                             bf''8
-                            e'8 ]
+                            ff'8 ]
                         }
                         {
-                            fs'8 [
+                            gf'8 [
                             g''8 ]
                         }
                         {
                             af''8 [
                             bf''8
-                            b''8
-                            cs''8 ~ ]
+                            cf'''8
+                            df''8 ~ ]
                         }
                         {
-                            cs''4.
+                            df''4.
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
-                            a''4
-                            e'4
+                            bff''4
+                            ff'4
                             f'4 ~
                         }
                         {
                             f'8 [
-                            fs''8
+                            gf''8
                             c''8
                             af''8 ~ ]
                         }
@@ -1961,27 +1961,27 @@
                         \times 3/4 {
                             af''8 [
                             d'''8
-                            a''8
+                            bff''8
                             bf''8 ]
                         }
                         \times 4/7 {
-                            b''8 [
-                            cs'''8
+                            cf'''8 [
+                            df'''8
                             d'''8
-                            e'8
+                            ff'8
                             f'8
-                            fs'8
+                            gf'8
                             c''8 ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             af''8 [
                             af''8
-                            e'8
-                            fs''8 ~ ]
+                            ff'8
+                            gf''8 ~ ]
                         }
                         {
-                            fs''4
+                            gf''4
                         }
                         {
                             g''4
@@ -1990,7 +1990,7 @@
                         \times 2/3 {
                             af''8 [
                             d''8
-                            e'''8 ]
+                            ff'''8 ]
                         }
                         f'''4
                         \revert Beam.positions
@@ -2009,7 +2009,7 @@
                         }
                         {
                             bf8 [
-                            fs8 ]
+                            gf8 ]
                         }
                         {
                             af8 ~
@@ -2017,9 +2017,9 @@
                         \times 4/7 {
                             af16 [
                             ef16
-                            b16
+                            cf'16
                             c'16
-                            cs'16
+                            df'16
                             af16
                             a16 ~ ]
                         }
@@ -2027,12 +2027,12 @@
                         \times 3/4 {
                             a16 [
                             bf16
-                            fs16
-                            cs'16 ]
+                            gf16
+                            df'16 ]
                         }
                         {
                             ef16 [
-                            b16
+                            cf'16
                             c'16
                             d16 ]
                         }
@@ -2040,7 +2040,7 @@
                         \times 3/4 {
                             bf16 [
                             e16
-                            fs16
+                            gf16
                             g16 ~ ]
                         }
                         \times 2/3 {
@@ -2049,26 +2049,26 @@
                             c'8 ]
                         }
                         {
-                            cs'8 ~
+                            df'8 ~
                         }
                         {
-                            cs'16 [
+                            df'16 [
                             ef'16
-                            b16 ~ ]
+                            cf'16 ~ ]
                         }
                         {
-                            b16 [
+                            cf'16 [
                             af16
                             d'16
                             bf16 ]
                         }
                         \times 2/3 {
                             e16 [
-                            fs'16
+                            gf'16
                             g16 ]
                         }
                         \times 4/5 {
-                            fs'16 [
+                            gf'16 [
                             af16
                             a16
                             bf16
@@ -2088,37 +2088,37 @@
                         \times 4/5 {
                             bf16 [
                             e'16
-                            fs16
+                            gf16
                             bf16
-                            fs16 ]
+                            gf16 ]
                         }
                         {
                             af16 [
                             a'16
-                            b16 ]
+                            cf'16 ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/9 {
                             c'16 [
-                            cs'16
+                            df'16
                             ef'16
                             a'16
                             bf16
-                            fs'16
+                            gf'16
                             af'16
                             ef'16
-                            b16 ~ ]
+                            cf'16 ~ ]
                         }
                         \times 2/3 {
-                            b8 [
+                            cf'8 [
                             c'8
-                            cs'8 ]
+                            df'8 ]
                         }
                         {
-                            fs'8. ~
+                            gf'8. ~
                         }
                         {
-                            fs'16 [
+                            gf'16 [
                             g'16
                             af'16
                             d'16 ~ ]
@@ -2128,16 +2128,16 @@
                             d'16 [
                             bf'16
                             e'16
-                            cs'16 ]
+                            df'16 ]
                         }
                         {
                             ef'16 [
-                            b'16
+                            cf''16
                             c''16 ]
                         }
                         \times 4/5 {
                             e'16 [
-                            fs'16
+                            gf'16
                             g'16
                             af'16
                             d'16 ~ ]
@@ -2157,10 +2157,10 @@
                         \times 4/5 {
                             \clef "treble"
                             bf'16 [
-                            fs'16
+                            gf'16
                             bf'16
                             e'16
-                            fs'16 ]
+                            gf'16 ]
                         }
                         {
                             g'16 [
@@ -2168,7 +2168,7 @@
                         }
                         {
                             d''16 [
-                            fs'16
+                            gf'16
                             af'16
                             a'16 ~ ]
                         }
@@ -2178,26 +2178,26 @@
                         \times 2/3 {
                             bf'8 [
                             c''8
-                            cs''8 ~ ]
+                            df''8 ~ ]
                         }
                         {
-                            cs''16 [
+                            df''16 [
                             ef''16 ~ ]
                         }
                         {
                             ef''16 [
-                            b'16
+                            cf''16
                             bf'16
-                            fs''16 ]
+                            gf''16 ]
                         }
                         {
                             af'16 [
                             a'16
-                            b'16 ]
+                            cf''16 ]
                         }
                         \times 4/5 {
                             c''16 [
-                            cs''16
+                            df''16
                             ef''16
                             d''16
                             bf'16 ~ ]
@@ -2210,33 +2210,33 @@
                         }
                         \times 4/7 {
                             e''16 [
-                            fs''16
+                            gf''16
                             g''16
                             af''16
                             ef''16
-                            b'16
+                            cf''16
                             c''16 ~ ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             c''16 [
-                            cs''16
+                            df''16
                             af''16
                             d''16 ]
                         }
                         {
                             bf'16 [
                             e''16
-                            fs''16 ]
+                            gf''16 ]
                         }
                         {
                             g''16 [
                             a''16
                             bf'16
-                            fs''16 ~ ]
+                            gf''16 ~ ]
                         }
                         {
-                            fs''8.
+                            gf''8.
                         }
                         \times 2/3 {
                             af''8 [
@@ -2252,7 +2252,7 @@
                             d''16 [
                             bf''16
                             e''16
-                            fs''16 ]
+                            gf''16 ]
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
@@ -2276,6 +2276,7 @@
                                     \box
                                         "to piano"
                                 }
+                        \ottava #-1
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
                         \once \override Arpeggio.X-offset = #-2
@@ -2283,7 +2284,6 @@
                         \once \override NoteHead.text = \markup {
                         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                         }
-                        \ottava #-1
                         <c,, e,, g,, b,, d, f, a,>16
                             ^ \markup {
                                 \center-align
@@ -2691,12 +2691,12 @@
                     \context PercussionMusicVoice = "Percussion Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            \clef "percussion"
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            \clef "percussion"
                             c'2
                                 ^ \markup {
                                     \whiteout
@@ -3303,7 +3303,7 @@
                         }
                         \times 2/3 {
                             d''4 -\staccato
-                            e''4 -\staccato
+                            ff''4 -\staccato
                             f''4 -\staccato ~
                         }
                         {
@@ -3311,24 +3311,24 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 10/14 {
-                            fs''16 -\staccato [
+                            gf''16 -\staccato [
                             c'''16 -\staccato
-                            e''16 -\staccato
-                            fs''16 -\staccato
+                            ff''16 -\staccato
+                            gf''16 -\staccato
                             g''16 -\staccato
                             af''16 -\staccato
                             bf''16 -\staccato
-                            b''16 -\staccato
-                            cs''16 -\staccato
-                            a''16 -\staccato
+                            cf''16 -\staccato
+                            df''16 -\staccato
+                            bff''16 -\staccato
                             af''16 -\staccato
-                            e''16 -\staccato
-                            fs''16 -\staccato
+                            ff''16 -\staccato
+                            gf''16 -\staccato
                             g''16 -\staccato ~ ]
                         }
                         \times 2/3 {
                             g''4
-                            a''4 -\staccato
+                            bff''4 -\staccato
                             bf''4 -\staccato ~
                         }
                         {
@@ -3336,26 +3336,26 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/4 {
-                            b''4 -\staccato
-                            cs''4 -\staccato
+                            cf'''4 -\staccato
+                            df''4 -\staccato
                         }
                         {
                             c''16 -\staccato [
                             af''16 -\staccato
                             d''16 -\staccato
-                            e''16 -\staccato ~ ]
+                            ff''16 -\staccato ~ ]
                         }
                         {
-                            e''4.
+                            ff''4.
                         }
                         \times 2/3 {
                             f''4 -\staccato
-                            fs''4 -\staccato
-                            cs''4 -\staccato ~
+                            gf''4 -\staccato
+                            df''4 -\staccato ~
                         }
                         {
-                            cs''4
-                            a''4 -\staccato ~
+                            df''4
+                            bff''4 -\staccato ~
                             \revert DynamicLineSpanner.staff-padding
                             \revert Beam.positions
                             \revert TupletBracket.staff-padding
@@ -3365,20 +3365,20 @@
                             \override Beam.positions = #'(-5 . -5)
                             \override DynamicLineSpanner.staff-padding = #'7
                             \override TupletBracket.staff-padding = #4
-                            a''16 \< \f [
+                            bff''16 \< \f [
                             c'16 -\staccato
-                            cs'16 -\staccato
+                            df'16 -\staccato
                             af'16 -\staccato
                             d'16 -\staccato
                             bf'16 -\staccato
                             e'16 -\staccato
-                            fs'16 -\staccato
+                            gf'16 -\staccato
                             g'16 -\staccato
                             a'16 -\staccato ]
                         }
                         \times 2/3 {
                             bf'4 -\staccato
-                            fs'4 -\staccato
+                            gf'4 -\staccato
                             af'4 -\staccato
                         }
                         {
@@ -3392,24 +3392,24 @@
                             d'16 -\staccato
                             bf'16 -\staccato
                             e'16 -\staccato
-                            fs'16 -\staccato
+                            gf'16 -\staccato
                             af'16 -\staccato
                             a'16 -\staccato
                             bf'16 -\staccato
-                            fs'16 -\staccato
-                            cs'16 -\staccato
+                            gf'16 -\staccato
+                            df'16 -\staccato
                             ef'16 -\staccato
-                            b'16 -\staccato ~ ]
+                            cf''16 -\staccato ~ ]
                         }
                         {
-                            b'4 ~
+                            cf''4 ~
                         }
                         {
-                            b'4
+                            cf''4
                         }
                         {
                             c''4 -\staccato
-                            fs'4 -\staccato
+                            gf'4 -\staccato
                         }
                         {
                             af'16 -\staccato [
@@ -3419,31 +3419,31 @@
                         }
                         \times 2/3 {
                             c''4
-                            cs''4 -\staccato
+                            df''4 -\staccato
                             ef''4 -\staccato
                         }
                         {
-                            b'4. -\staccato ~
+                            cf''4. -\staccato ~
                         }
                         {
-                            b'4. ~
+                            cf''4. ~
                         }
                         \times 8/12 {
-                            b'16 [
-                            fs'16 -\staccato
+                            cf''16 [
+                            gf'16 -\staccato
                             g'16 -\staccato
                             af'16 -\staccato
                             d''16 -\staccato
                             bf'16 -\staccato
                             e'16 -\staccato
-                            b'16 -\staccato
+                            cf''16 -\staccato
                             c''16 -\staccato
-                            cs''16 -\staccato
+                            df''16 -\staccato
                             ef''16 -\staccato
                             e''16 -\staccato ]
                         }
                         \times 2/3 {
-                            fs''4 -\staccato
+                            gf''4 -\staccato
                             g'4 -\staccato
                             af'4 -\staccato
                         }
@@ -3456,7 +3456,7 @@
                         {
                             bf'16 -\staccato [
                             bf'16 -\staccato
-                            fs'16 -\staccato
+                            gf'16 -\staccato
                             af'16 -\staccato ~ ]
                         }
                         \times 2/3 {
@@ -3469,7 +3469,7 @@
                         }
                         {
                             e''4 -\staccato
-                            fs''4 -\staccato
+                            gf''4 -\staccato
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/10 {
@@ -3478,15 +3478,15 @@
                             d''16 -\staccato
                             a''16 -\staccato
                             bf'16 -\staccato
-                            fs''16 -\staccato
+                            gf''16 -\staccato
                             af''16 -\staccato
                             ef''16 -\staccato
-                            b'16 -\staccato
+                            cf''16 -\staccato
                             c''16 -\staccato ~ ]
                         }
                         \times 2/3 {
                             c''4
-                            cs''4 -\staccato
+                            df''4 -\staccato
                             af''4 -\staccato
                         }
                         {
@@ -3499,24 +3499,24 @@
                         \times 10/14 {
                             a''16 [
                             bf''16 -\staccato
-                            fs''16 -\staccato
-                            cs''16 -\staccato
+                            gf''16 -\staccato
+                            df''16 -\staccato
                             ef''16 -\staccato
-                            b''16 -\staccato
+                            cf'''16 -\staccato
                             c''16 -\staccato
                             d''16 -\staccato
                             bf'16 -\staccato
                             e''16 -\staccato
-                            fs''16 -\staccato
+                            gf''16 -\staccato
                             g''16 -\staccato
                             af''16 -\staccato
                             c''16 -\staccato ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
-                            cs''4 -\staccato
+                            df''4 -\staccato
                             ef''4 -\staccato
-                            b''4 -\staccato
+                            cf''4 -\staccato
                         }
                         {
                             af''4 -\staccato ~
@@ -3529,9 +3529,9 @@
                         \times 6/10 {
                             bf''16 -\staccato [
                             e''16 -\staccato
-                            fs''16 -\staccato
+                            gf''16 -\staccato
                             g''16 -\staccato
-                            fs''16 -\staccato
+                            gf''16 -\staccato
                             af''16 -\staccato
                             a''16 -\staccato
                             bf''16 -\staccato
@@ -3550,43 +3550,43 @@
                             e''4. -\staccato
                         }
                         \times 8/12 {
-                            fs''16 -\staccato [
+                            gf''16 -\staccato [
                             bf''16 -\staccato
-                            fs''16 -\staccato
+                            gf''16 -\staccato
                             af''16 -\staccato
                             a''16 -\staccato
-                            b'16 -\staccato
+                            cf''16 -\staccato
                             c''16 -\staccato
-                            cs''16 -\staccato
+                            df''16 -\staccato
                             ef''16 -\staccato
                             a''16 -\staccato
                             bf''16 -\staccato
-                            fs''16 -\staccato ~ ]
+                            gf''16 -\staccato ~ ]
                         }
                         \times 2/3 {
-                            fs''4
+                            gf''4
                             af''4 -\staccato
                             ef''4 -\staccato
                         }
                         {
-                            b''4 -\staccato ~
+                            cf'''4 -\staccato ~
                         }
                         {
-                            b''4 ~
+                            cf'''4 ~
                         }
                         \times 8/12 {
-                            b''16 [
+                            cf'''16 [
                             c'''16 -\staccato
-                            cs''16 -\staccato
-                            fs''16 -\staccato
+                            df''16 -\staccato
+                            gf''16 -\staccato
                             g''16 -\staccato
                             af''16 -\staccato
                             d''16 -\staccato
                             bf''16 -\staccato
                             e''16 -\staccato
-                            cs''16 -\staccato
+                            df''16 -\staccato
                             ef''16 -\staccato
-                            b''16 -\staccato ]
+                            cf'''16 -\staccato ]
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding

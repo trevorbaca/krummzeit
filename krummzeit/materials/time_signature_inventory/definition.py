@@ -5,9 +5,9 @@ import baca
 
 def make_numerators(numerators, addenda):
     numerators = baca.helianthate(numerators, -1, 1)
-    numerators = baca.Sequence(numerators).flatten()
+    numerators = baca.sequence(numerators).flatten()
     length = len(numerators)
-    addenda = baca.Sequence(addenda).repeat_to_length(length)
+    addenda = baca.sequence(addenda).repeat_to_length(length)
     pairs = zip(numerators, addenda)
     numerators = [sum(_) for _ in pairs]
     return numerators
@@ -27,7 +27,7 @@ numerators = numerators + numerators
 assert len(numerators) == 236  and sum(numerators) == 928
 
 ratio = [3, 2, 1, 1, 3, 2, 1, 1, 3, 2, 1, 1]
-numerator_lists = baca.Sequence(numerators)
+numerator_lists = baca.sequence(numerators)
 numerator_lists = numerator_lists.partition_by_ratio_of_weights(weights=ratio)
 assert len(numerator_lists) == 12
 

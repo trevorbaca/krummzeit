@@ -9,7 +9,7 @@ segment_time_signatures = abjad.TypedOrderedDict()
 
 ### B ###
 time_signatures = time_signature_inventory[:3]
-time_signatures = baca.Sequence(time_signatures).flatten()
+time_signatures = baca.sequence(time_signatures).flatten()
 assert len(time_signatures) == 64
 # repeat first 11 time signatures
 time_signatures = list(time_signatures)
@@ -20,14 +20,14 @@ segment_time_signatures['B'] = time_signatures
 
 ### E ###
 time_signatures = time_signature_inventory[3:5]
-time_signatures = baca.Sequence(time_signatures).flatten()
+time_signatures = baca.sequence(time_signatures).flatten()
 assert len(time_signatures) == 48
 segment_time_signatures['E'] = time_signatures
 
 
 ### K ###
 #time_signatures = time_signature_inventory[9:]
-#time_signatures = baca.Sequence(time_signatures).flatten()
+#time_signatures = baca.sequence(time_signatures).flatten()
 #assert len(time_signatures) == 47
 #first_source = time_signatures[20:32]
 #first_source *= 3
@@ -51,14 +51,14 @@ segment_time_signatures['K'] = time_signatures
 
 ### F ###
 time_signatures = time_signature_inventory[4]
-time_signatures = baca.Sequence(time_signatures).flatten()
+time_signatures = baca.sequence(time_signatures).flatten()
 assert len(time_signatures) == 35
 segment_time_signatures['F'] = time_signatures
 
 
 ### D ###
 time_signatures = time_signature_inventory[2]
-time_signatures = baca.Sequence(time_signatures).flatten()
+time_signatures = baca.sequence(time_signatures).flatten()
 assert len(time_signatures) == 11
 time_signatures =list(time_signatures)
 time_signatures.insert(8, abjad.TimeSignature((1, 4)))
@@ -74,7 +74,7 @@ segment_time_signatures['D'] = time_signatures
 
 ### C ###
 time_signatures = time_signature_inventory[1:3]
-time_signatures = baca.Sequence(time_signatures).flatten()
+time_signatures = baca.sequence(time_signatures).flatten()
 assert len(time_signatures) == 33
 '''
 12 stages:
@@ -110,14 +110,14 @@ segment_time_signatures['C'] = time_signatures
 
 ### G ###
 time_signatures = time_signature_inventory[5]
-time_signatures = baca.Sequence(time_signatures).flatten()
+time_signatures = baca.sequence(time_signatures).flatten()
 assert len(time_signatures) == 22
 segment_time_signatures['G'] = time_signatures
 
 
 ### H ###
 time_signatures = time_signature_inventory[5]
-time_signatures = baca.Sequence(time_signatures).flatten()
+time_signatures = baca.sequence(time_signatures).flatten()
 assert len(time_signatures) == 22
 time_signatures = list(time_signatures)
 time_signatures.insert(12, abjad.TimeSignature((1, 4)))
@@ -128,14 +128,14 @@ segment_time_signatures['H'] = time_signatures
 
 ### I ###
 time_signatures = time_signature_inventory[7]
-time_signatures = baca.Sequence(time_signatures).flatten()
+time_signatures = baca.sequence(time_signatures).flatten()
 assert len(time_signatures) == 10
 segment_time_signatures['I'] = time_signatures
 
 
 ### J ###
 time_signatures = time_signature_inventory[11]
-time_signatures = baca.Sequence(time_signatures).flatten()
+time_signatures = baca.sequence(time_signatures).flatten()
 assert len(time_signatures) == 11
 extension = time_signatures[-2:]
 time_signatures = list(time_signatures)
@@ -153,7 +153,7 @@ segment_time_signatures['J'] = time_signatures
 
 ### A ###
 time_signatures = time_signature_inventory[11]
-time_signatures = baca.Sequence(time_signatures).flatten()
+time_signatures = baca.sequence(time_signatures).flatten()
 assert len(time_signatures) == 11
 time_signatures = list(time_signatures)
 time_signatures.insert(2, abjad.TimeSignature((1, 4)))

@@ -2,7 +2,7 @@
 import abjad
 
 
-class RhythmDefinition(abjad.abctools.AbjadObject):
+class RhythmDefinition(abjad.AbjadObject):
     r'''Rhythm definition.
 
     ::
@@ -94,7 +94,7 @@ class RhythmDefinition(abjad.abctools.AbjadObject):
         music = self._make_rhythm(time_signatures)
         assert isinstance(music, (tuple, list, abjad.Voice)), repr(music)
         first_item = music[0]
-        if isinstance(first_item, abjad.selectiontools.Selection):
+        if isinstance(first_item, abjad.Selection):
             first_component = first_item[0]
         else:
             first_component = first_item
@@ -137,12 +137,12 @@ class RhythmDefinition(abjad.abctools.AbjadObject):
         return self._default_rhythm_maker
 
     def _get_storage_format_specification(self):
-        agent = abjad.systemtools.StorageFormatAgent(self)
+        agent = abjad.StorageFormatAgent(self)
         keyword_argument_names = agent.signature_keyword_names
         keyword_argument_names = list(keyword_argument_names)
         if not self.rhythm_overwrites:
             keyword_argument_names.remove('rhythm_overwrites')
-        return abjad.systemtools.StorageFormatSpecification(
+        return abjad.StorageFormatSpecification(
             self,
             keyword_argument_names=keyword_argument_names,
             )
@@ -170,10 +170,10 @@ class RhythmDefinition(abjad.abctools.AbjadObject):
         for rhythm_overwrite in self.rhythm_overwrites:
             selector, division_maker, rhythm_maker = rhythm_overwrite
             old_music_selection = selector(dummy_music_voice)
-            prototype = abjad.selectiontools.ContiguousSelection
+            prototype = abjad.ContiguousSelection
             #if 1 < len(old_music_selection):
             if True:
-                old_music_selection = abjad.selectiontools.SliceSelection(
+                old_music_selection = abjad.SliceSelection(
                     old_music_selection)
                 result = old_music_selection._get_parent_and_start_stop_indices()
                 parent, start_index, stop_index = result

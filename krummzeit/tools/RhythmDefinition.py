@@ -185,7 +185,7 @@ class RhythmDefinition(abjad.AbjadObject):
                 dummy_music_voice[start_index:stop_index+1] = \
                     new_music_selection
             #elif len(old_music_selection) == 1:
-            #    prototype = selectiontools.Selection
+            #    prototype = abjad.Selection
             #    assert isinstance(old_music_selection[0], prototype)
             #    old_music_selection = old_music_selection[0]
             #    old_duration = old_music_selection.get_duration()

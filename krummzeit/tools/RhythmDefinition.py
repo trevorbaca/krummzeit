@@ -15,7 +15,7 @@ class RhythmDefinition(abjad.AbjadObject):
 
         ::
 
-            >>> music_maker = krummzeit.tools.RhythmDefinition()
+            >>> music_maker = krummzeit.RhythmDefinition()
             >>> music_maker.voice_name = 'Cello Music Voice'
             >>> music_maker.stages = 1, 4
             >>> music_maker.division_maker = baca.FuseByCountsDivisionCallback(

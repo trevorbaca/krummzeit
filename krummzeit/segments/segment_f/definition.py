@@ -29,21 +29,21 @@ stage_specifier = baca.StageSpecifier([
 
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, krummzeit.materials.named_tempi['108']),
-    (2, krummzeit.materials.named_tempi['135']),
-    (3, krummzeit.materials.named_tempi['72']),
-    (7, krummzeit.materials.named_tempi['108']),
-    (8, krummzeit.materials.named_tempi['90']),
-    (9, krummzeit.materials.named_tempi['108']),
-    (10, krummzeit.materials.named_tempi['90']),
-    (14, krummzeit.materials.named_tempi['135']),
-    (14, krummzeit.materials.named_tempi['135']),
-    (16, krummzeit.materials.named_tempi['45']),
-    (22, krummzeit.materials.named_tempi['72']),
+    (1, krummzeit.named_tempi['108']),
+    (2, krummzeit.named_tempi['135']),
+    (3, krummzeit.named_tempi['72']),
+    (7, krummzeit.named_tempi['108']),
+    (8, krummzeit.named_tempi['90']),
+    (9, krummzeit.named_tempi['108']),
+    (10, krummzeit.named_tempi['90']),
+    (14, krummzeit.named_tempi['135']),
+    (14, krummzeit.named_tempi['135']),
+    (16, krummzeit.named_tempi['45']),
+    (22, krummzeit.named_tempi['72']),
     ])
 
 maker = baca.TimeSignatureMaker(
-    krummzeit.materials.segment_time_signatures['F'],
+    krummzeit.segment_time_signatures['F'],
     stage_specifier=stage_specifier,
     tempo_specifier=tempo_specifier,
     )
@@ -54,7 +54,7 @@ segment_maker = baca.SegmentMaker(
     label_stages=False,
     measures_per_stage=measures_per_stage,
     rehearsal_letter='F',
-    score_template=krummzeit.tools.ScoreTemplate(),
+    score_template=krummzeit.ScoreTemplate(),
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
     transpose_score=True,
@@ -95,7 +95,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     cl,
     baca.select_stages(1, 2),
-    baca.instrument(krummzeit.materials.instruments['e-flat cl']),
+    baca.instrument(krummzeit.instruments['e-flat cl']),
     baca.RhythmSpecifier(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
@@ -147,7 +147,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     pf,
     baca.select_stages(2),
-    baca.instrument(krummzeit.materials.instruments['piano']),
+    baca.instrument(krummzeit.instruments['piano']),
     baca.clef('bass'),
     )
 
@@ -251,7 +251,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     cl,
     baca.select_stages(4),
-    baca.instrument(krummzeit.materials.instruments['e-flat cl']),
+    baca.instrument(krummzeit.instruments['e-flat cl']),
     )
 
 ### pf, xyl [F8] & [F10-15] ###
@@ -290,7 +290,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     perc,
     baca.select_stages(8),
-    baca.instrument(krummzeit.materials.instruments['xylophone']),
+    baca.instrument(krummzeit.instruments['xylophone']),
     baca.clef('treble'),
     baca.five_line_staff(),
     )
@@ -305,7 +305,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     cl,
     baca.select_stages(13),
-    baca.instrument(krummzeit.materials.instruments['bass clarinet']),
+    baca.instrument(krummzeit.instruments['bass clarinet']),
     baca.RhythmSpecifier(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
@@ -466,7 +466,7 @@ segment_maker.append_commands(
     ob,
     baca.select_stages(1, 2),
     baca.ScorePitchCommand(
-        source=krummzeit.materials.violet_pitch_classes.get_payload(),    
+        source=krummzeit.violet_pitch_classes.get_payload(),    
         start_index=120,
         reverse=True,
         counts=[4, 4, 1, 1, 1, 1, 4, 1, 1, 1],
@@ -483,11 +483,11 @@ segment_maker.append_commands(
     baca.dynamic('p'),
     # TODO: maybe a way to programmatically compose the two commands
     # displacement before color fingerings
-    krummzeit.tools.displacement(),
-    krummzeit.tools.color_fingerings(),
+    krummzeit.displacement(),
+    krummzeit.color_fingerings(),
     baca.trill_quarter_notes(),
     #wide_fifth_octave,
-    krummzeit.tools.register_wide(5),
+    krummzeit.register_wide(5),
     )
 
 ### (1.1) pf, vn, va, vc ###
@@ -496,7 +496,7 @@ segment_maker.append_commands(
     pf,
     baca.select_stages(2),
     #tenor_piano_cluster,
-    krummzeit.tools.make_cluster('tenor'),
+    krummzeit.make_cluster('tenor'),
     )
 
 segment_maker.append_commands(
@@ -565,7 +565,7 @@ segment_maker.append_commands(
     baca.select_stages(4, 11),
     baca.dynamic('ff'),
     baca.glissandi(),
-    krummzeit.tools.color_fingerings(),
+    krummzeit.color_fingerings(),
     )
 
 ### (5.3) vn, va, vc thicket ###
@@ -576,7 +576,7 @@ segment_maker.append_commands(
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=10)],
         reverse=True,
-        source=krummzeit.materials.violet_pitch_classes.get_payload(),    
+        source=krummzeit.violet_pitch_classes.get_payload(),    
         start_index=300,
         ),
     )
@@ -595,21 +595,21 @@ segment_maker.append_commands(
     vn,
     baca.select_stages(4, 10),
     #narrow_fifth_to_fourth_octave,
-    krummzeit.tools.register_narrow(5, 4),
+    krummzeit.register_narrow(5, 4),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(4, 10),
     #narrow_fourth_to_third_octave,
-    krummzeit.tools.register_narrow(4, 3),
+    krummzeit.register_narrow(4, 3),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(4, 10),
     #narrow_fourth_to_second_octave,
-    krummzeit.tools.register_narrow(4, 2),
+    krummzeit.register_narrow(4, 2),
     )
 
 ### (7.1) points ###
@@ -710,7 +710,7 @@ segment_maker.append_commands(
             abjad.Transposition(n=5), 
             abjad.Inversion()],
         reverse=True,
-        source=krummzeit.materials.indigo_pitch_classes.get_payload(),
+        source=krummzeit.indigo_pitch_classes.get_payload(),
         start_index=84,
         ),
     )
@@ -720,9 +720,9 @@ segment_maker.append_commands(
     baca.select_stages(19, 22),
     baca.clef('treble'),
     baca.dynamic('fff'),
-    krummzeit.tools.displacement(),
+    krummzeit.displacement(),
     #narrow_seventh_octave,
-    krummzeit.tools.register_narrow(7),
+    krummzeit.register_narrow(7),
     baca.ottava(),
     baca.staccatissimi(),
     )

@@ -205,8 +205,11 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     perc,
     baca.select_stages(9, 10),
-    baca.markup.boxed('sponges'),
     baca.clef('percussion'),
+    baca.instrument(krummzeit.instruments['percussion']),
+    baca.markup.boxed('sponges'),
+    baca.one_line_staff(),
+    baca.pitches('C4'),
     baca.RhythmSpecifier(
         rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
             talea=abjad.rhythmmakertools.Talea([1, 2], 2),

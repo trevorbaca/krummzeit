@@ -561,10 +561,26 @@
                     \context OboeMusicVoice = "Oboe Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            \set Staff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Oboe
+                                }
+                            \set Staff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Ob.
+                                }
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
                             e'8 \ff
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.75)
+                                        \box
+                                            "to oboe"
+                                    }
                             ef''4 \startTrillSpan
                                 ^ \markup {
                                     \override
@@ -1094,51 +1110,51 @@
                                     }
                             }
                         \override DynamicLineSpanner.staff-padding = #'3
-                        fs''4. \f \glissando
+                        cs''4. \f \glissando
                             ^ \markup {
                                 \override
                                     #'(box-padding . 0.75)
                                     \box
-                                        "to clarinet in B-flat"
+                                        "to clarinet in E-flat"
                                 }
-                        etqs''4. \glissando
-                        g''4. \glissando
-                        ftqs''4. \glissando
-                        eqs''4. \glissando
+                        btqs'4. \glissando
                         d''4. \glissando
-                        eqs''4. \glissando
-                        fs''4. \glissando
-                        etqs''4. \glissando
-                        g''4.
+                        ctqs''4. \glissando
+                        bqs'4. \glissando
+                        a'4. \glissando
+                        bqs'4. \glissando
+                        cs''4. \glissando
+                        btqs'4. \glissando
+                        d''4.
                         s1 * 101/8
-                        g''4. \f \glissando
-                        fssqs''4. \glissando
-                        a''4. \glissando
-                        gqs''4. \glissando
-                        ftqs''4. \glissando
+                        d''4. \f \glissando
+                        ctqs''4. \glissando
                         e''4. \glissando
-                        ftqs''4. \glissando
-                        g''4. \glissando
-                        fssqs''4. \glissando
-                        a''4. \glissando
-                        gqs''4. \glissando
-                        ftqs''4
+                        dqs''4. \glissando
+                        ctqs''4. \glissando
+                        b'4. \glissando
+                        ctqs''4. \glissando
+                        d''4. \glissando
+                        ctqs''4. \glissando
+                        e''4. \glissando
+                        dqs''4. \glissando
+                        ctqs''4
+                        s1 * 1/4
+                        b'4. \glissando
+                        ctqs''4.
                         s1 * 1/4
                         e''4. \glissando
-                        ftqs''4.
-                        s1 * 1/4
-                        a''4. \glissando
-                        etqs''4. \glissando
-                        b''4. \glissando
-                        aqs''4. \glissando
-                        gqs''4. \glissando
+                        btqs'4. \glissando
                         fs''4. \glissando
-                        gqs''4. \glissando
-                        a''4. \glissando
-                        etqs''4. \glissando
-                        b''4. \glissando
-                        aqs''4. \glissando
-                        gqs''8
+                        eqs''4. \glissando
+                        dqs''4. \glissando
+                        cs''4. \glissando
+                        dqs''4. \glissando
+                        e''4. \glissando
+                        btqs'4. \glissando
+                        fs''4. \glissando
+                        eqs''4. \glissando
+                        dqs''8
                         s1 * 35/4
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
@@ -1149,7 +1165,23 @@
                 \tag percussion.piano
                 \context PianoMusicStaff = "Piano Music Staff" {
                     \context PianoMusicVoice = "Piano Music Voice" {
+                        \set PianoMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Piano
+                            }
+                        \set PianoMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Pf.
+                            }
                         s1 * 73/8
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to piano"
+                                }
                         \times 4/5 {
                             \set PianoMusicStaff.instrumentName = \markup {
                                 \hcenter-in
@@ -1165,12 +1197,6 @@
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #3
                             r16
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to piano"
-                                    }
                             cs'''16 -\staccatissimo \ff [
                             cs'''16 -\staccatissimo
                             cs'''8 -\staccatissimo ]
@@ -1321,9 +1347,24 @@
                 \tag percussion
                 \context PercussionMusicStaff = "Percussion Staff" {
                     \context PercussionMusicVoice = "Percussion Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Percussion
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Perc.
+                            }
                         s1 * 73/8
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to percussion"
+                                }
                         {
-                            \clef "treble"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
@@ -1337,6 +1378,7 @@
                                     #10
                                     Xyl.
                                 }
+                            \clef "treble"
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #3
@@ -1408,12 +1450,12 @@
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
-                        \clef "percussion"
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
+                        \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'3
                         c4 \ff ~
                             ^ \markup {
@@ -1529,12 +1571,12 @@
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
-                        \clef "percussion"
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
+                        \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'5
                         c2. :32 \ppp ~
                             ^ \markup {
@@ -1650,19 +1692,42 @@
                 \tag strings.violin
                 \context ViolinMusicStaff = "Violin Music Staff" {
                     \context ViolinMusicVoice = "Violin Music Voice" {
-                        \clef "percussion"
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Violin
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Vn.
+                            }
+                        \clef "percussion"
                         c'2. ~
                             ^ \markup {
-                                \whiteout
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            "scraped slate"
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \override
+                                                        #'(box-padding . 0.5)
+                                                        \box
+                                                            "scraped slate"
+                                            }
+                                        \line
+                                            {
+                                                \override
+                                                    #'(box-padding . 0.75)
+                                                    \box
+                                                        "to violin"
+                                            }
+                                    }
                                 }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
@@ -1793,7 +1858,6 @@
                         s1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            \clef "treble"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
@@ -1807,16 +1871,11 @@
                                     #10
                                     Vn.
                                 }
+                            \clef "treble"
                             \override Beam.positions = #'(-5 . -5)
                             \override DynamicLineSpanner.staff-padding = #'7
                             \override TupletBracket.staff-padding = #4
                             af''8 \ff
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to violin"
-                                    }
                             a''4 \startTrillSpan
                             c'''8 ~ \stopTrillSpan \startTrillSpan
                         }
@@ -1907,7 +1966,24 @@
                 \tag strings.viola
                 \context ViolaMusicStaff = "Viola Music Staff" {
                     \context ViolaMusicVoice = "Viola Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Viola
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Va.
+                            }
+                        \clef "alto"
                         s1 * 4
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to viola"
+                                }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             \override Beam.positions = #'(-5 . -5)
@@ -2008,7 +2084,24 @@
                 \tag strings.cello
                 \context CelloMusicStaff = "Cello Music Staff" {
                     \context CelloMusicVoice = "Cello Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Cello
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Vc.
+                            }
+                        \clef "bass"
                         s1 * 4
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to cello"
+                                }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/5 {
                             d,16 \glissando \> \ff

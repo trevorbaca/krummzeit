@@ -481,7 +481,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     cl,
     baca.select_stages(20, 24),
-    baca.pitches("f'' etqs'' g'' fqs'' eqs'' d'' eqs''"),
+    baca.pitches("f'' eqs'' g'' fqs'' eqs'' d'' eqs''"),
     )
 
 segment_maker.append_commands(

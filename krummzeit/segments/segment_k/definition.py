@@ -23,11 +23,11 @@ stage_specifier = baca.StageSpecifier([
     ])
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, krummzeit.materials.named_tempi['144']),
+    (1, krummzeit.named_tempi['144']),
     ])
 
 maker = baca.TimeSignatureMaker(
-    krummzeit.materials.segment_time_signatures['K'],
+    krummzeit.segment_time_signatures['K'],
     stage_specifier=stage_specifier,
     tempo_specifier=tempo_specifier,
     )
@@ -35,13 +35,13 @@ measures_per_stage, tempo_specifier, time_signatures = maker()
 
 segment_maker = baca.SegmentMaker(
     #final_barline=True,
-    final_markup=krummzeit.tools.make_final_markup(),
+    final_markup=krummzeit.make_final_markup(),
     final_markup_extra_offset=(14.5, 0),
     ignore_repeat_pitch_classes=True,
     label_stages=False,
     measures_per_stage=measures_per_stage,
     rehearsal_letter='K',
-    score_template=krummzeit.tools.ScoreTemplate(),
+    score_template=krummzeit.ScoreTemplate(),
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
     transpose_score=True,
@@ -60,7 +60,7 @@ segment_maker.validate_measures_per_stage()
 segment_maker.append_commands(
     pf,
     baca.select_stages(1, 6),
-    baca.instrument(krummzeit.materials.instruments['harpsichord']),
+    baca.instrument(krummzeit.instruments['harpsichord']),
     baca.RhythmSpecifier(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
@@ -79,7 +79,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     pf,
     baca.select_stages(7, 12),
-    baca.instrument(krummzeit.materials.instruments['piano']),
+    baca.instrument(krummzeit.instruments['piano']),
     baca.RhythmSpecifier(
         # TODO: replace first division-maker?
         #division_maker=baca.FuseByCountsDivisionCallback(
@@ -102,7 +102,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     perc,
     baca.select_stages(1, 12),
-    baca.instrument(krummzeit.materials.instruments['xylophone']),
+    baca.instrument(krummzeit.instruments['xylophone']),
     baca.RhythmSpecifier(
         # TODO: replace first division-maker?
         #division_maker=baca.FuseByCountsDivisionCallback(
@@ -188,7 +188,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     cl,
     baca.select_stages(1, 10),
-    baca.instrument(krummzeit.materials.instruments['bass clarinet']),
+    baca.instrument(krummzeit.instruments['bass clarinet']),
     baca.RhythmSpecifier(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[4],
@@ -239,7 +239,7 @@ segment_maker.append_commands(
 
 ### vn, va points ###
 
-indigo_snippet = krummzeit.materials.indigo_pitch_classes.get_payload()[42:34:-1]
+indigo_snippet = krummzeit.indigo_pitch_classes.get_payload()[42:34:-1]
 segment_maker.append_specifiers(
     ([vn, va], (1, 10)),
     baca.ScorePitchCommand(
@@ -256,9 +256,9 @@ segment_maker.append_commands(
     baca.markup.pizz(),
     baca.staccatissimi(),
     baca.tuplet_bracket_staff_padding(2),
-    krummzeit.tools.displacement(),
+    krummzeit.displacement(),
     #narrow_sixth_octave,
-    krummzeit.tools.register_narrow(6),
+    krummzeit.register_narrow(6),
     )
 
 ### vc ###

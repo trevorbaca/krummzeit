@@ -33,7 +33,7 @@ stage_specifier = baca.StageSpecifier([
     ])
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, krummzeit.materials.named_tempi['108']),
+    (1, krummzeit.named_tempi['108']),
     (2, abjad.Fermata('shortfermata')),
     (4, abjad.Fermata('shortfermata')),
     (6, abjad.Fermata('shortfermata')),
@@ -44,17 +44,17 @@ tempo_specifier = baca.TempoSpecifier([
     (16, abjad.Fermata('shortfermata')),
     (18, abjad.Fermata('shortfermata')),
     (19, abjad.Accelerando()),
-    (21, krummzeit.materials.named_tempi['144']),
-    (22, krummzeit.materials.named_tempi['108']),
+    (21, krummzeit.named_tempi['144']),
+    (22, krummzeit.named_tempi['108']),
     (23, abjad.Fermata('shortfermata')),
     (25, abjad.Fermata('shortfermata')),
-    (28, krummzeit.materials.named_tempi['45']),
+    (28, krummzeit.named_tempi['45']),
     (29, abjad.Accelerando()),
-    (30, krummzeit.materials.named_tempi['135']),
+    (30, krummzeit.named_tempi['135']),
     ])
 
 maker = baca.TimeSignatureMaker(
-    krummzeit.materials.segment_time_signatures['C'],
+    krummzeit.segment_time_signatures['C'],
     stage_specifier=stage_specifier,
     tempo_specifier=tempo_specifier,
     )
@@ -65,7 +65,7 @@ segment_maker = baca.SegmentMaker(
     label_stages=False,
     measures_per_stage=measures_per_stage,
     rehearsal_letter='C',
-    score_template=krummzeit.tools.ScoreTemplate(),
+    score_template=krummzeit.ScoreTemplate(),
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
     transpose_score=True,
@@ -119,7 +119,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     cl,
     baca.select_stages(1),
-    baca.instrument(krummzeit.materials.instruments['e-flat cl']),
+    baca.instrument(krummzeit.instruments['e-flat cl']),
     baca.RhythmSpecifier(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
@@ -264,7 +264,7 @@ segment_maker.copy_specifier(
 music_maker = segment_maker.append_commands(
     pf,
     baca.select_stages(11),
-    baca.instrument(krummzeit.materials.instruments['piano']),
+    baca.instrument(krummzeit.instruments['piano']),
     baca.RhythmSpecifier(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(1, 2)],
@@ -326,7 +326,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     perc,
     baca.select_stages(11),
-    baca.instrument(krummzeit.materials.instruments['xylophone']),
+    baca.instrument(krummzeit.instruments['xylophone']),
     baca.clef('treble'),
     baca.five_line_staff(),
     )
@@ -382,7 +382,7 @@ music_maker = segment_maker.append_commands(
 music_maker = segment_maker.append_commands(
     vn,
     baca.select_stages(19, 22),
-    baca.instrument(krummzeit.materials.instruments['violin']),
+    baca.instrument(krummzeit.instruments['violin']),
     baca.clef('treble'),
     baca.five_line_staff(),
     baca.RhythmSpecifier(
@@ -437,7 +437,7 @@ segment_maker.append_commands(
     ob,
     baca.select_stages(1, 27),
     baca.ScorePitchCommand(
-        source=krummzeit.materials.violet_pitch_classes.get_payload(),    
+        source=krummzeit.violet_pitch_classes.get_payload(),    
         start_index=120,
         reverse=True,
         counts=[1, 1, 1, 1, 4, 1, 1, 1, 4, 4],
@@ -452,11 +452,11 @@ segment_maker.append_commands(
     ob,
     baca.select_stages(1, 27),
     baca.dynamic('ff'),
-    krummzeit.tools.color_fingerings(),
-    krummzeit.tools.displacement(),
+    krummzeit.color_fingerings(),
+    krummzeit.displacement(),
     baca.trill_quarter_notes(),
     #wide_fifth_octave,
-    krummzeit.tools.register_wide(5),
+    krummzeit.register_wide(5),
     )
 
 segment_maker.append_commands(
@@ -562,7 +562,7 @@ segment_maker.append_commands(
         counts=[1, 1, 1, 1, 4, 1, 1, 1, 4, 4],
         operators=[abjad.Transposition(n=3)],
         reverse=True,
-        source=krummzeit.materials.violet_pitch_classes.get_payload(),    
+        source=krummzeit.violet_pitch_classes.get_payload(),    
         start_index=120,
         ),
     )
@@ -571,11 +571,11 @@ segment_maker.append_commands(
     vn,
     baca.select_stages(19, 22),
     baca.dynamic('ff'),
-    krummzeit.tools.color_microtones(),
+    krummzeit.color_microtones(),
     #krummzeit_displacement,
     baca.trill_quarter_notes(),
     #wide_fifth_octave,
-    krummzeit.tools.register_wide(5),
+    krummzeit.register_wide(5),
     )
 
 segment_maker.append_commands(

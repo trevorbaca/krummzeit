@@ -8,7 +8,7 @@ if not (
     raise ImportError('Requires Python 3.5.')
 del distutils
 del platform
-from krummzeit import tools
-from krummzeit import materials
+from krummzeit.tools import *
+from krummzeit.materials import *
 from krummzeit import segments
 from krummzeit.tools import MarkupLibrary as markup

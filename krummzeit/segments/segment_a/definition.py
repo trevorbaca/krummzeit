@@ -24,18 +24,18 @@ stage_specifier = baca.StageSpecifier([
     ])
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, krummzeit.materials.named_tempi['135']),
+    (1, krummzeit.named_tempi['135']),
     (2, abjad.Fermata('shortfermata')),
-    (3, krummzeit.materials.named_tempi['45']),
+    (3, krummzeit.named_tempi['45']),
     (3, abjad.Accelerando()),
-    (6, krummzeit.materials.named_tempi['144']),
-    (7, krummzeit.materials.named_tempi['108']),
+    (6, krummzeit.named_tempi['144']),
+    (7, krummzeit.named_tempi['108']),
     (8, abjad.Fermata('shortfermata')),
-    (9, krummzeit.materials.named_tempi['135']),
+    (9, krummzeit.named_tempi['135']),
     ])
 
 maker = baca.TimeSignatureMaker(
-    krummzeit.materials.segment_time_signatures['A'],
+    krummzeit.segment_time_signatures['A'],
     stage_specifier=stage_specifier,
     tempo_specifier=tempo_specifier,
     )
@@ -46,7 +46,7 @@ segment_maker = baca.SegmentMaker(
     label_stages=False,
     measures_per_stage=measures_per_stage,
     rehearsal_letter='A',
-    score_template=krummzeit.tools.ScoreTemplate(),
+    score_template=krummzeit.ScoreTemplate(),
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
     transpose_score=True,
@@ -129,7 +129,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     cl,
     baca.select_stages(3, 4),
-    baca.instrument(krummzeit.materials.instruments['bass clarinet']),
+    baca.instrument(krummzeit.instruments['bass clarinet']),
     baca.messiaen_tied_notes(),
     )
 
@@ -138,7 +138,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     pf,
     baca.select_stages(1),
-    baca.instrument(krummzeit.materials.instruments['piano']),
+    baca.instrument(krummzeit.instruments['piano']),
     baca.clef('bass'),
     baca.RhythmSpecifier(
         rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
@@ -152,7 +152,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     pf,
     baca.select_stages(3),
-    baca.instrument(krummzeit.materials.instruments['piano']),
+    baca.instrument(krummzeit.instruments['piano']),
     baca.clef('bass'),
     baca.RhythmSpecifier(
         rhythm_maker=abjad.rhythmmakertools.IncisedRhythmMaker(
@@ -197,7 +197,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     perc,
     baca.select_stages(6),
-    baca.instrument(krummzeit.materials.instruments['xylophone']),
+    baca.instrument(krummzeit.instruments['xylophone']),
     )
 
 ### sponges [A6-8] ###
@@ -253,7 +253,7 @@ segment_maker.append_commands(
     (3, 5),
     baca.dynamic('fff'),
     krummzeit.markup.catch_resonance(),
-    krummzeit.tools.make_cluster('tenor'),
+    krummzeit.make_cluster('tenor'),
     )
 
 ### (2.4) bcl subtone ###
@@ -278,7 +278,7 @@ segment_maker.append_specifiers(
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=10)],
         reverse=True,
-        source=krummzeit.materials.violet_pitch_classes.get_payload(),    
+        source=krummzeit.violet_pitch_classes.get_payload(),    
         start_index=300,
         ),
     )
@@ -295,20 +295,20 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     vn,
     baca.select_stages(3, 7),
-    krummzeit.tools.register_narrow(5, 4),
+    krummzeit.register_narrow(5, 4),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(3, 7),
-    krummzeit.tools.register_narrow(4, 3),
+    krummzeit.register_narrow(4, 3),
     baca.beam_positions(-5),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(3, 7),
-    krummzeit.tools.register_narrow(4, 3),
+    krummzeit.register_narrow(4, 3),
     )
 
 ### (14) pf, xylophone reiteration [A6] ###

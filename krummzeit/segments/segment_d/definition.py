@@ -24,30 +24,30 @@ stage_specifier = baca.StageSpecifier([
     ])
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, krummzeit.materials.named_tempi['135']),
+    (1, krummzeit.named_tempi['135']),
     (1, abjad.Ritardando()),
-    (2, krummzeit.materials.named_tempi['90']),
+    (2, krummzeit.named_tempi['90']),
     (2, abjad.Fermata('shortfermata')),
     (3, abjad.Accelerando()),
     (4, abjad.Fermata('shortfermata')),
-    (4, krummzeit.materials.named_tempi['135']),
+    (4, krummzeit.named_tempi['135']),
     (5, abjad.Ritardando()),
     (6, abjad.Fermata('shortfermata')),
-    (6, krummzeit.materials.named_tempi['90']),
+    (6, krummzeit.named_tempi['90']),
     (7, abjad.Accelerando()),
     (8, abjad.Fermata('shortfermata')),
-    (8, krummzeit.materials.named_tempi['135']),
-    (10, krummzeit.materials.named_tempi['90']),
-    (10, krummzeit.materials.metric_modulations['4.=4']),
+    (8, krummzeit.named_tempi['135']),
+    (10, krummzeit.named_tempi['90']),
+    (10, krummzeit.metric_modulations['4.=4']),
     (11, abjad.Ritardando()),
     (13, abjad.Fermata('longfermata')),
-    (13, krummzeit.materials.named_tempi['45']),
+    (13, krummzeit.named_tempi['45']),
     (16, abjad.Ritardando()),
-    (17, krummzeit.materials.named_tempi['36']),
+    (17, krummzeit.named_tempi['36']),
     ])
 
 maker = baca.TimeSignatureMaker(
-    krummzeit.materials.segment_time_signatures['D'],
+    krummzeit.segment_time_signatures['D'],
     stage_specifier=stage_specifier,
     tempo_specifier=tempo_specifier,
     )
@@ -58,7 +58,7 @@ segment_maker = baca.SegmentMaker(
     label_stages=False,
     measures_per_stage=measures_per_stage,
     rehearsal_letter='D',
-    score_template=krummzeit.tools.ScoreTemplate(),
+    score_template=krummzeit.ScoreTemplate(),
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
     transpose_score=True,
@@ -94,7 +94,7 @@ music_maker = segment_maker.append_commands(
 music_maker = segment_maker.append_commands(
     pf,
     baca.select_stages(1),
-    baca.instrument(krummzeit.materials.instruments['piano']),
+    baca.instrument(krummzeit.instruments['piano']),
     baca.RhythmSpecifier(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(2, 3)],
@@ -278,7 +278,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     cl,
     baca.select_stages(14, 17),
-    baca.instrument(krummzeit.materials.instruments['bass clarinet']),
+    baca.instrument(krummzeit.instruments['bass clarinet']),
     baca.RhythmSpecifier(
         rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
             tie_specifier=abjad.rhythmmakertools.TieSpecifier(
@@ -325,7 +325,7 @@ segment_maker.append_specifiers(
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=4), abjad.Inversion()],
         reverse=True,
-        source=krummzeit.materials.indigo_pitch_classes.get_payload(),
+        source=krummzeit.indigo_pitch_classes.get_payload(),
         start_index=42,
         ),
     )
@@ -334,9 +334,9 @@ segment_maker.append_commands(
     pf,
     baca.select_stages(1),
     baca.hairpins(['ff > pp']),
-    krummzeit.tools.displacement(),
+    krummzeit.displacement(),
     #narrow_seventh_to_fifth_octave,
-    krummzeit.tools.register_narrow(7, 5),
+    krummzeit.register_narrow(7, 5),
     baca.ottava(),
     baca.staccatissimi(),
     )
@@ -345,9 +345,9 @@ segment_maker.append_commands(
     pf,
     baca.select_stages(3),
     baca.hairpins(['pp < ff']),
-    krummzeit.tools.displacement(),
+    krummzeit.displacement(),
     #narrow_fifth_to_third_octave,
-    krummzeit.tools.register_narrow(5, 3),
+    krummzeit.register_narrow(5, 3),
     baca.staccatissimi(),
     )
 
@@ -356,9 +356,9 @@ segment_maker.append_commands(
     baca.select_stages(5),
     baca.clef('bass'),
     baca.hairpins(['ff > pp']),
-    krummzeit.tools.displacement(),
+    krummzeit.displacement(),
     #narrow_third_to_second_octave,
-    krummzeit.tools.register_narrow(3, 2),
+    krummzeit.register_narrow(3, 2),
     baca.staccatissimi(),
     )
 
@@ -366,9 +366,9 @@ segment_maker.append_commands(
     vn,
     baca.select_stages(5),
     baca.hairpins(['ff > pp']),
-    krummzeit.tools.displacement(),
+    krummzeit.displacement(),
     #narrow_seventh_to_fifth_octave,
-    krummzeit.tools.register_narrow(7, 5),
+    krummzeit.register_narrow(7, 5),
     baca.ottava(),
     baca.markup.pizz(),
     baca.staccatissimi(),
@@ -379,9 +379,9 @@ segment_maker.append_commands(
     baca.select_stages(5),
     baca.clef('treble'),
     baca.hairpins(['ff > pp']),
-    krummzeit.tools.displacement(),
+    krummzeit.displacement(),
     #narrow_sixth_to_fifth_octave,
-    krummzeit.tools.register_narrow(6, 5),
+    krummzeit.register_narrow(6, 5),
     baca.ottava(),
     baca.markup.pizz(),
     baca.staccatissimi(),
@@ -392,9 +392,9 @@ segment_maker.append_commands(
     baca.select_stages(5),
     baca.clef('treble'),
     baca.hairpins(['ff > pp']),
-    krummzeit.tools.displacement(),
+    krummzeit.displacement(),
     #narrow_fifth_to_fourth_octave,
-    krummzeit.tools.register_narrow(5, 4),
+    krummzeit.register_narrow(5, 4),
     baca.markup.pizz(),
     baca.staccatissimi(),
     )
@@ -403,9 +403,9 @@ segment_maker.append_commands(
     vn,
     baca.select_stages(7),
     baca.hairpins(['pp < ff']),
-    krummzeit.tools.displacement(),
+    krummzeit.displacement(),
     #narrow_fifth_to_fourth_octave,
-    krummzeit.tools.register_narrow(5, 4),
+    krummzeit.register_narrow(5, 4),
     baca.staccatissimi(),
     )
 
@@ -413,9 +413,9 @@ segment_maker.append_commands(
     va,
     baca.select_stages(7),
     baca.hairpins(['pp < ff']),
-    krummzeit.tools.displacement(),
+    krummzeit.displacement(),
     #narrow_fifth_to_fourth_octave,
-    krummzeit.tools.register_narrow(5, 4),
+    krummzeit.register_narrow(5, 4),
     baca.staccatissimi(),
     )
 
@@ -424,9 +424,9 @@ segment_maker.append_commands(
     baca.select_stages(7),
     baca.clef('bass'),
     baca.hairpins(['pp < ff']),
-    krummzeit.tools.displacement(),
+    krummzeit.displacement(),
     #narrow_fourth_to_third_octave,
-    krummzeit.tools.register_narrow(4, 3),
+    krummzeit.register_narrow(4, 3),
     baca.staccatissimi(),
     )
 
@@ -434,9 +434,9 @@ segment_maker.append_commands(
     vn,
     baca.select_stages(9),
     baca.hairpins(['ff > pp']),
-    krummzeit.tools.displacement(),
+    krummzeit.displacement(),
     #narrow_fifth_to_fourth_octave,
-    krummzeit.tools.register_narrow(5, 4),
+    krummzeit.register_narrow(5, 4),
     baca.staccatissimi(),
     )
 
@@ -445,9 +445,9 @@ segment_maker.append_commands(
     baca.select_stages(9),
     baca.clef('alto'),
     baca.hairpins(['ff > pp']),
-    krummzeit.tools.displacement(),
+    krummzeit.displacement(),
     #narrow_fourth_to_second_octave,
-    krummzeit.tools.register_narrow(4, 2),
+    krummzeit.register_narrow(4, 2),
     baca.staccatissimi(),
     )
 
@@ -455,9 +455,9 @@ segment_maker.append_commands(
     vc,
     baca.select_stages(9),
     baca.hairpins(['ff > pp']),
-    krummzeit.tools.displacement(),
+    krummzeit.displacement(),
     #narrow_third_to_second_octave,
-    krummzeit.tools.register_narrow(3, 2),
+    krummzeit.register_narrow(3, 2),
     baca.staccatissimi(),
     )
 
@@ -468,7 +468,7 @@ segment_maker.append_commands(
     baca.select_stages(9, 12),
     baca.dynamic('fff'),
     #low_piano_cluster,
-    krummzeit.tools.make_cluster('low'),
+    krummzeit.make_cluster('low'),
     baca.ottava_bassa(),
     baca.markup.senza_pedale(),
     )
@@ -478,7 +478,7 @@ segment_maker.append_commands(
     baca.select_stages(14, 16),
     baca.dynamic('fff'),
     #low_piano_cluster,
-    krummzeit.tools.make_cluster('low'),
+    krummzeit.make_cluster('low'),
     baca.ottava_bassa(),
     )
 

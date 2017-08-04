@@ -21,7 +21,7 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         ::
 
-            >>> template = krummzeit.tools.ScoreTemplate()
+            >>> template = krummzeit.ScoreTemplate()
             >>> score = template()
 
         ::
@@ -82,7 +82,7 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         Returns score.
         '''
-        from krummzeit.materials import performer_inventory
+        from krummzeit import performer_inventory
         time_signature_context = self._make_time_signature_context()
         instrument_tags = (
             'winds',

@@ -955,10 +955,26 @@
                 \tag winds.oboe
                 \context OboeMusicStaff = "Oboe Music Staff" {
                     \context OboeMusicVoice = "Oboe Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Oboe
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Ob.
+                            }
                         \override Beam.positions = #'(-5 . -5)
                         \override DynamicLineSpanner.staff-padding = #'7
                         \override TupletBracket.staff-padding = #4
                         s1 * 49/2
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to oboe"
+                                }
                         {
                             \set Staff.instrumentName = \markup {
                                 \hcenter-in
@@ -971,12 +987,6 @@
                                     Ob.
                                 }
                             bf'4. -\staccato \< \f
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to oboe"
-                                    }
                         }
                         \times 2/3 {
                             e'4 -\staccato
@@ -1203,9 +1213,25 @@
                 \tag winds.clarinet
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Clarinet
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Cl.
+                            }
                         \override Beam.positions = #'(-4 . -4)
                         \override TupletBracket.staff-padding = #3
                         s1 * 7/2
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to clarinet in B-flat"
+                                }
                         {
                             \set Staff.instrumentName = \markup {
                                 \hcenter-in
@@ -1226,368 +1252,368 @@
                                         }
                                 }
                             \override DynamicLineSpanner.staff-padding = #'3
-                            a''4. -\staccato \mp
+                            e''4. -\staccato \mp
                                 ^ \markup {
                                     \override
                                         #'(box-padding . 0.75)
                                         \box
-                                            "to clarinet in B-flat"
+                                            "to clarinet in E-flat"
                                     }
                         }
                         \times 2/3 {
+                            as'4 -\staccato
+                            c''4 -\staccato
+                            cs''4 -\staccato ~
+                        }
+                        {
+                            cs''4
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            d''8 -\staccato [
+                            gs''8 -\staccato
+                            c''8 -\staccato
+                            d''8 -\staccato ~ ]
+                        }
+                        \times 2/3 {
+                            d''4
                             ds''4 -\staccato
-                            f''4 -\staccato
+                            e''4 -\staccato ~
+                        }
+                        {
+                            e''4
+                        }
+                        {
+                            fs''4 -\staccato
+                            g''4 -\staccato
+                        }
+                        {
+                            a'8 -\staccato [
+                            f''8 -\staccato
+                            e''8 -\staccato
+                            c''8 -\staccato ~ ]
+                        }
+                        {
+                            c''4
+                        }
+                        \times 2/3 {
+                            d''4 -\staccato
+                            ds''4 -\staccato
+                            f''4 -\staccato ~
+                        }
+                        {
+                            f''4
                             fs''4 -\staccato ~
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            fs''8 [
+                            g''8 -\staccato
+                            a''8 -\staccato
+                            gs''8 -\staccato ]
+                        }
+                        \times 2/3 {
+                            e''4 -\staccato
+                            as'4 -\staccato
+                            c''4 -\staccato
+                        }
+                        {
+                            cs''4. -\staccato ~
+                        }
+                        {
+                            cs''4.
+                        }
+                        {
+                            d''8 -\staccato [
+                            a'8 -\staccato
+                            f''8 -\staccato
+                            fs''8 -\staccato ~ ]
+                        }
+                        {
+                            fs''4 ~
                         }
                         {
                             fs''4
                         }
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 3/4 {
-                            g''8 -\staccato [
-                            cs'''8 -\staccato
-                            f''8 -\staccato
-                            g''8 -\staccato ~ ]
-                        }
-                        \times 2/3 {
-                            g''4
-                            gs''4 -\staccato
-                            a''4 -\staccato ~
-                        }
-                        {
-                            a''4
-                        }
-                        {
-                            b''4 -\staccato
-                            c'''4 -\staccato
-                        }
-                        {
-                            d''8 -\staccato [
-                            bf''8 -\staccato
-                            a''8 -\staccato
-                            f''8 -\staccato ~ ]
-                        }
-                        {
-                            f''4
-                        }
-                        \times 2/3 {
-                            g''4 -\staccato
-                            gs''4 -\staccato
-                            bf''4 -\staccato ~
-                        }
-                        {
-                            bf''4
-                            b''4 -\staccato ~
-                        }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 3/4 {
-                            b''8 [
-                            c'''8 -\staccato
-                            d'''8 -\staccato
-                            cs'''8 -\staccato ]
-                        }
-                        \times 2/3 {
-                            a''4 -\staccato
-                            ds''4 -\staccato
-                            f''4 -\staccato
-                        }
-                        {
-                            fs''4. -\staccato ~
-                        }
-                        {
-                            fs''4.
-                        }
-                        {
-                            g''8 -\staccato [
-                            d''8 -\staccato
-                            bf''8 -\staccato
-                            b''8 -\staccato ~ ]
-                        }
-                        {
-                            b''4 ~
-                        }
-                        {
-                            b''4
-                        }
-                        \tweak text #tuplet-number::calc-fraction-text
                         \times 5/4 {
-                            c'''4 -\staccato
                             g''4 -\staccato
+                            d''4 -\staccato
                         }
                         {
-                            cs'''8 -\staccato [
-                            a''8 -\staccato ~ ]
+                            gs''8 -\staccato [
+                            e''8 -\staccato ~ ]
                         }
                         \times 2/3 {
-                            a''4
-                            ds''4 -\staccato
-                            f''4 -\staccato
+                            e''4
+                            as'4 -\staccato
+                            c''4 -\staccato
                         }
                         {
-                            fs''4 -\staccato
+                            cs''4 -\staccato
                             \revert DynamicLineSpanner.staff-padding
                         }
                         s1 * 7/2
                         {
                             \override DynamicLineSpanner.staff-padding = #'3
-                            bf''4. -\staccato \f
+                            f''4. -\staccato \f
                         }
                         \times 2/3 {
+                            b'4 -\staccato
+                            df''4 -\staccato
+                            d''4 -\staccato ~
+                        }
+                        {
+                            d''4
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            ef''8 -\staccato [
+                            a'8 -\staccato
+                            df''8 -\staccato
+                            ef''8 -\staccato ~ ]
+                        }
+                        \times 2/3 {
+                            ef''4
                             e''4 -\staccato
-                            gf''4 -\staccato
+                            f''4 -\staccato ~
+                        }
+                        {
+                            f''4
+                        }
+                        {
+                            g''4 -\staccato
+                            af''4 -\staccato
+                        }
+                        {
+                            bf'8 -\staccato [
+                            gf''8 -\staccato
+                            f''8 -\staccato
+                            df''8 -\staccato ~ ]
+                        }
+                        {
+                            df''4
+                        }
+                        \times 2/3 {
+                            ef''4 -\staccato
+                            e''4 -\staccato
+                            gf''4 -\staccato ~
+                        }
+                        {
+                            gf''4
                             g''4 -\staccato ~
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            g''8 [
+                            af'8 -\staccato
+                            bf'8 -\staccato
+                            a'8 -\staccato ]
+                        }
+                        \times 2/3 {
+                            f''4 -\staccato
+                            b'4 -\staccato
+                            df''4 -\staccato
+                        }
+                        {
+                            d''4. -\staccato ~
+                        }
+                        {
+                            d''4.
+                        }
+                        {
+                            ef''8 -\staccato [
+                            bf'8 -\staccato
+                            gf''8 -\staccato
+                            g''8 -\staccato ~ ]
+                        }
+                        {
+                            g''4 ~
                         }
                         {
                             g''4
                         }
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 3/4 {
-                            af''8 -\staccato [
-                            d''8 -\staccato
-                            gf''8 -\staccato
-                            af''8 -\staccato ~ ]
-                        }
-                        \times 2/3 {
-                            af''4
-                            a''4 -\staccato
-                            bf''4 -\staccato ~
-                        }
-                        {
-                            bf''4
-                        }
-                        {
-                            c'''4 -\staccato
-                            df'''4 -\staccato
-                        }
-                        {
-                            ef''8 -\staccato [
-                            cf'''8 -\staccato
-                            bf''8 -\staccato
-                            gf''8 -\staccato ~ ]
-                        }
-                        {
-                            gf''4
-                        }
-                        \times 2/3 {
-                            af''4 -\staccato
-                            a''4 -\staccato
-                            cf'''4 -\staccato ~
-                        }
-                        {
-                            cf'''4
-                            c'''4 -\staccato ~
-                        }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 3/4 {
-                            c'''8 [
-                            df''8 -\staccato
-                            ef''8 -\staccato
-                            d''8 -\staccato ]
-                        }
-                        \times 2/3 {
-                            bf''4 -\staccato
-                            e''4 -\staccato
-                            gf''4 -\staccato
-                        }
-                        {
-                            g''4. -\staccato ~
-                        }
-                        {
-                            g''4.
-                        }
-                        {
-                            af''8 -\staccato [
-                            ef''8 -\staccato
-                            cf'''8 -\staccato
-                            c'''8 -\staccato ~ ]
-                        }
-                        {
-                            c'''4 ~
-                        }
-                        {
-                            c'''4
-                        }
-                        \tweak text #tuplet-number::calc-fraction-text
                         \times 5/4 {
-                            df''4 -\staccato
-                            af''4 -\staccato
+                            af'4 -\staccato
+                            ef''4 -\staccato
                         }
                         {
-                            d''8 -\staccato [
-                            bf''8 -\staccato ~ ]
+                            a'8 -\staccato [
+                            f''8 -\staccato ~ ]
                         }
                         \times 2/3 {
-                            bf''4
-                            e''4 -\staccato
-                            gf''4 -\staccato
+                            f''4
+                            b'4 -\staccato
+                            df''4 -\staccato
                         }
                         {
-                            g''4 -\staccato ~
+                            d''4 -\staccato ~
                             \revert Beam.positions
                             \revert TupletBracket.staff-padding
                             \revert DynamicLineSpanner.staff-padding
                         }
                         {
-                            g''4 \< \f
-                            b'4 -\staccato ~
+                            d''4 \< \f
+                            fs'4 -\staccato ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            b'8 [
-                            c''8 -\staccato
-                            af'8 -\staccato
-                            bf'8 -\staccato ]
+                            fs'8 [
+                            g'8 -\staccato
+                            ef'8 -\staccato
+                            f'8 -\staccato ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
-                            a'4 -\staccato
-                            bf'4 -\staccato
                             e'4 -\staccato
+                            f'4 -\staccato
+                            b4 -\staccato
                         }
                         {
-                            c''4. -\staccato ~
+                            g'4. -\staccato ~
                         }
                         {
-                            c''4.
+                            g'4.
                         }
                         {
-                            fs'8 -\staccato [
-                            af'8 -\staccato
-                            bf'8 -\staccato
-                            b'8 -\staccato ~ ]
+                            cs'8 -\staccato [
+                            ef'8 -\staccato
+                            f'8 -\staccato
+                            fs'8 -\staccato ~ ]
                         }
                         {
-                            b'4 ~
+                            fs'4 ~
                         }
                         {
-                            b'4
+                            fs'4
                         }
                         {
-                            c''4 -\staccato
+                            g'4 -\staccato
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/9 {
-                            af'8 -\staccato [
-                            ef''8 -\staccato
-                            f''8 -\staccato
-                            df''8 -\staccato
-                            d''8 -\staccato
-                            af'8 -\staccato
+                            ef'8 -\staccato [
                             bf'8 -\staccato
-                            b'8 -\staccato
-                            c''8 -\staccato ~ ]
+                            c''8 -\staccato
+                            af'8 -\staccato
+                            a'8 -\staccato
+                            ef'8 -\staccato
+                            f'8 -\staccato
+                            fs'8 -\staccato
+                            g'8 -\staccato ~ ]
                         }
                         \times 2/3 {
-                            c''4
-                            d''4 -\staccato
-                            ef''4 -\staccato
+                            g'4
+                            a'4 -\staccato
+                            bf'4 -\staccato
                         }
                         {
-                            f'4. -\staccato ~
+                            c'4. -\staccato ~
                         }
                         {
-                            f'4. ~
+                            c'4. ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/9 {
-                            f'8 [
-                            df''8 -\staccato
-                            af''8 -\staccato
-                            a'8 -\staccato
-                            bf'8 -\staccato
-                            e''8 -\staccato
-                            c''8 -\staccato
-                            fs''8 -\staccato
-                            df''8 -\staccato \ff ]
+                            c'8 [
+                            af'8 -\staccato
+                            ef''8 -\staccato
+                            e'8 -\staccato
+                            f'8 -\staccato
+                            b'8 -\staccato
+                            g'8 -\staccato
+                            cs''8 -\staccato
+                            af'8 -\staccato \ff ]
                         }
                         \times 2/3 {
                             \override Beam.positions = #'(-4 . -4)
                             \override TupletBracket.staff-padding = #3
-                            d''4 -\staccato
-                            ef''4 -\staccato
-                            f''4 -\staccato
+                            a'4 -\staccato
+                            bf'4 -\staccato
+                            c''4 -\staccato
                         }
                         {
+                            cs''4 -\staccato ~
+                        }
+                        {
+                            cs''4
+                            ef''4 -\staccato
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            e''8 -\staccato [
+                            f''8 -\staccato
+                            b'8 -\staccato
+                            g'8 -\staccato ~ ]
+                        }
+                        {
+                            g'4. ~
+                        }
+                        {
+                            g'4
+                        }
+                        {
+                            g'4 -\staccato
+                            ef''4 -\staccato
+                        }
+                        {
+                            f''8 -\staccato [
+                            fs''8 -\staccato
+                            g''8 -\staccato
+                            cs''8 -\staccato ~ ]
+                        }
+                        \times 2/3 {
+                            cs''4
+                            ef''4 -\staccato
+                            e''4 -\staccato
+                        }
+                        {
+                            f''4. -\staccato ~
+                        }
+                        {
+                            f''4 ~
+                        }
+                        {
+                            f''8 [
+                            b'8 -\staccato
+                            fs''8 -\staccato
+                            g''8 -\staccato ]
+                        }
+                        {
+                            ef''4 -\staccato
+                        }
+                        {
+                            f''4. -\staccato ~
+                        }
+                        {
+                            f''4
+                        }
+                        {
+                            c''8 -\staccato [
+                            af''8 -\staccato
+                            a''8 -\staccato
+                            bf'8 -\staccato ~ ]
+                        }
+                        \times 2/3 {
+                            bf'4
+                            f''4 -\staccato
                             fs''4 -\staccato ~
                         }
-                        {
+                        \times 2/3 {
                             fs''4
-                            af''4 -\staccato
+                            g'4 -\staccato
+                            ef''4 -\staccato
+                        }
+                        {
+                            bf'4. -\staccato
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            a''8 -\staccato [
-                            bf''8 -\staccato
-                            e''8 -\staccato
-                            c''8 -\staccato ~ ]
-                        }
-                        {
-                            c''4. ~
-                        }
-                        {
-                            c''4
-                        }
-                        {
-                            c''4 -\staccato
-                            af''4 -\staccato
-                        }
-                        {
-                            bf''8 -\staccato [
-                            b''8 -\staccato
-                            c'''8 -\staccato
-                            fs''8 -\staccato ~ ]
-                        }
-                        \times 2/3 {
-                            fs''4
-                            af''4 -\staccato
-                            a''4 -\staccato
-                        }
-                        {
-                            bf''4. -\staccato ~
-                        }
-                        {
-                            bf''4 ~
-                        }
-                        {
-                            bf''8 [
-                            e''8 -\staccato
-                            b''8 -\staccato
-                            c'''8 -\staccato ]
-                        }
-                        {
-                            af''4 -\staccato
-                        }
-                        {
-                            bf''4. -\staccato ~
-                        }
-                        {
-                            bf''4
-                        }
-                        {
-                            f''8 -\staccato [
-                            df'''8 -\staccato
-                            d'''8 -\staccato
-                            ef''8 -\staccato ~ ]
-                        }
-                        \times 2/3 {
-                            ef''4
-                            bf''4 -\staccato
-                            b''4 -\staccato ~
-                        }
-                        \times 2/3 {
-                            b''4
-                            c''4 -\staccato
-                            af''4 -\staccato
-                        }
-                        {
-                            ef''4. -\staccato
-                        }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 3/4 {
-                            f''8 -\staccato [
-                            df''8 -\staccato
-                            d''8 -\staccato
-                            e''8 -\staccato ]
+                            c''8 -\staccato [
+                            af'8 -\staccato
+                            a'8 -\staccato
+                            b'8 -\staccato ]
                             \revert Beam.positions
                             \revert TupletBracket.staff-padding
                         }
@@ -1612,23 +1638,23 @@
                             }
                         \override DynamicLineSpanner.staff-padding = #'3
                         r8
-                        fs''4. \f \glissando
-                        etqs''4. \glissando
-                        g''4. \glissando
-                        ftqs''4. \glissando
-                        eqs''4. \glissando
+                        cs''4. \f \glissando
+                        btqs'4. \glissando
                         d''4. \glissando
-                        eqs''4. \glissando
-                        fs''4. \glissando
-                        etqs''4. \glissando
-                        g''4. \glissando
-                        ftqs''4. \glissando
-                        eqs''4. \glissando
+                        ctqs''4. \glissando
+                        bqs'4. \glissando
+                        a'4. \glissando
+                        bqs'4. \glissando
+                        cs''4. \glissando
+                        btqs'4. \glissando
                         d''4. \glissando
-                        eqs''4. \glissando
-                        fs''4. \glissando
-                        etqs''4. \glissando
-                        g''4.
+                        ctqs''4. \glissando
+                        bqs'4. \glissando
+                        a'4. \glissando
+                        bqs'4. \glissando
+                        cs''4. \glissando
+                        btqs'4. \glissando
+                        d''4.
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
                     }
@@ -2258,7 +2284,6 @@
                             \revert TupletBracket.staff-padding
                         }
                         s1 * 113/8
-                        \clef "bass"
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -2269,6 +2294,7 @@
                                 #10
                                 Pf.
                             }
+                        \clef "bass"
                         r16
                             ^ \markup {
                                 \override
@@ -2691,19 +2717,42 @@
                     \context PercussionMusicVoice = "Percussion Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            \clef "percussion"
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
+                            \set Staff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Percussion
+                                }
+                            \set Staff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Perc.
+                                }
+                            \clef "percussion"
                             c'2
                                 ^ \markup {
-                                    \whiteout
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                sponges
+                                    \column
+                                        {
+                                            \line
+                                                {
+                                                    \whiteout
+                                                        \override
+                                                            #'(box-padding . 0.5)
+                                                            \box
+                                                                sponges
+                                                }
+                                            \line
+                                                {
+                                                    \override
+                                                        #'(box-padding . 0.75)
+                                                        \box
+                                                            "to percussion"
+                                                }
+                                        }
                                     }
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
@@ -3201,10 +3250,26 @@
                 \tag strings.violin
                 \context ViolinMusicStaff = "Violin Music Staff" {
                     \context ViolinMusicVoice = "Violin Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Violin
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Vn.
+                            }
                         \override DynamicLineSpanner.staff-padding = #'3
                         \override Beam.positions = #'(-5 . -5)
                         \override TupletBracket.staff-padding = #4
                         s1 * 15/2
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to violin"
+                                }
                         {
                             g''4. -\staccato \mp
                                 ^ \markup {
@@ -3283,22 +3348,9 @@
                                 }
                             af''4. -\staccato \f
                                 ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    \whiteout
-                                                        \upright
-                                                            "off-string bowing on staccati"
-                                                }
-                                            \line
-                                                {
-                                                    \override
-                                                        #'(box-padding . 0.75)
-                                                        \box
-                                                            "to violin"
-                                                }
-                                        }
+                                    \whiteout
+                                        \upright
+                                            "off-string bowing on staccati"
                                     }
                         }
                         \times 2/3 {
@@ -3792,13 +3844,37 @@
                     \context ViolaMusicVoice = "Viola Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
+                            \set Staff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Viola
+                                }
+                            \set Staff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Va.
+                                }
+                            \clef "alto"
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #5
                             d4 \mf \glissando
                                 ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            "molto flautando"
+                                    \column
+                                        {
+                                            \line
+                                                {
+                                                    \whiteout
+                                                        \upright
+                                                            "molto flautando"
+                                                }
+                                            \line
+                                                {
+                                                    \override
+                                                        #'(box-padding . 0.75)
+                                                        \box
+                                                            "to viola"
+                                                }
+                                        }
                                     }
                             ctqs1 \glissando
                         }
@@ -4172,13 +4248,37 @@
                     \context CelloMusicVoice = "Cello Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
+                            \set Staff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Cello
+                                }
+                            \set Staff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Vc.
+                                }
+                            \clef "bass"
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #5
                             e,2. \mf \glissando
                                 ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            "molto flautando"
+                                    \column
+                                        {
+                                            \line
+                                                {
+                                                    \whiteout
+                                                        \upright
+                                                            "molto flautando"
+                                                }
+                                            \line
+                                                {
+                                                    \override
+                                                        #'(box-padding . 0.75)
+                                                        \box
+                                                            "to cello"
+                                                }
+                                        }
                                     }
                             dqs,2 \glissando
                         }

@@ -242,10 +242,26 @@
                 \tag winds.oboe
                 \context OboeMusicStaff = "Oboe Music Staff" {
                     \context OboeMusicVoice = "Oboe Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Oboe
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Ob.
+                            }
                         \override Beam.positions = #'(-5 . -5)
                         \override TupletBracket.staff-padding = #4
                         \override DynamicLineSpanner.staff-padding = #'8
                         s1 * 19/8
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to oboe"
+                                }
                         {
                             a'''4. -\staccato \< \p
                         }
@@ -350,10 +366,26 @@
                 \tag winds.clarinet
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Clarinet
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Cl.
+                            }
                         \override Beam.positions = #'(-5 . -5)
                         \override TupletBracket.staff-padding = #4
                         \override DynamicLineSpanner.staff-padding = #'8
                         s1 * 19/8
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to clarinet in B-flat"
+                                }
                         \times 2/3 {
                             \set Staff.instrumentName = \markup {
                                 \hcenter-in
@@ -373,77 +405,77 @@
                                             (Eb)
                                         }
                                 }
-                            b'4 -\staccato \< \p
+                            fs'4 -\staccato \< \p
                                 ^ \markup {
                                     \override
                                         #'(box-padding . 0.75)
                                         \box
-                                            "to clarinet in B-flat"
+                                            "to clarinet in E-flat"
                                     }
-                            es'4 -\staccato
-                            g'4 -\staccato
+                            bs4 -\staccato
+                            d'4 -\staccato
                         }
                         {
-                            gs'4 -\staccato ~
+                            ds'4 -\staccato ~
                         }
                         {
-                            gs'4
+                            ds'4
                         }
                         {
-                            a'8 -\staccato [
-                            ds''8 -\staccato ~ ]
+                            e'8 -\staccato [
+                            as'8 -\staccato ~ ]
                         }
                         \times 2/3 {
-                            ds''4
-                            g'4 -\staccato
-                            a'4 -\staccato ~
+                            as'4
+                            d'4 -\staccato
+                            e'4 -\staccato ~
                         }
                         \times 2/3 {
-                            a'4
-                            as''4 -\staccato
-                            b'4 -\staccato
+                            e'4
+                            es''4 -\staccato
+                            fs'4 -\staccato
                         }
                         {
-                            cs''4 -\staccato
-                            d''4 -\staccato
+                            gs'4 -\staccato
+                            a'4 -\staccato
                         }
                         {
-                            e''8 -\staccato [
-                            c'''8 -\staccato ~ ]
+                            b'8 -\staccato [
+                            g''8 -\staccato ~ ]
                         }
                         {
-                            c'''4.
+                            g''4.
                         }
                         {
-                            b''4. -\staccato ~
+                            fs''4. -\staccato ~
                         }
                         {
-                            b''4
-                            g''4 -\staccato ~
+                            fs''4
+                            d''4 -\staccato ~
                         }
                         {
-                            g''8 [
-                            a''8 -\staccato ]
+                            d''8 [
+                            e''8 -\staccato ]
                         }
                         {
-                            as''4 -\staccato
+                            es''4 -\staccato
                         }
                         \times 2/3 {
-                            c'''4 -\staccato
-                            cs'''4 -\staccato
-                            d'''4 -\staccato ~
+                            g''4 -\staccato
+                            gs''4 -\staccato
+                            a''4 -\staccato ~
                         }
                         {
-                            d'''4.
+                            a''4.
                         }
                         {
-                            e'''8 -\staccato [
-                            ds'''8 -\staccato
-                            b'''8 -\staccato
-                            es'''8 -\staccato ~ ]
+                            b''8 -\staccato [
+                            as''8 -\staccato
+                            fs'''8 -\staccato
+                            bs''8 -\staccato ~ ]
                         }
                         {
-                            es'''4. \ff
+                            bs''4. \ff
                             \revert Beam.positions
                             \revert TupletBracket.staff-padding
                             \revert DynamicLineSpanner.staff-padding
@@ -493,9 +525,25 @@
                 \tag percussion.piano
                 \context PianoMusicStaff = "Piano Music Staff" {
                     \context PianoMusicVoice = "Piano Music Voice" {
+                        \set PianoMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Piano
+                            }
+                        \set PianoMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Pf.
+                            }
                         \override Beam.positions = #'(-5 . -5)
                         \override TupletBracket.staff-padding = #4
                         s1 * 19/8
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to piano"
+                                }
                         \times 4/5 {
                             \set PianoMusicStaff.instrumentName = \markup {
                                 \hcenter-in
@@ -633,15 +681,38 @@
                 \tag percussion
                 \context PercussionMusicStaff = "Percussion Staff" {
                     \context PercussionMusicVoice = "Percussion Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Percussion
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Perc.
+                            }
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'6
                         r1
                             ^ \markup {
-                                \whiteout
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            "snare drum"
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \override
+                                                        #'(box-padding . 0.5)
+                                                        \box
+                                                            "snare drum"
+                                            }
+                                        \line
+                                            {
+                                                \override
+                                                    #'(box-padding . 0.75)
+                                                    \box
+                                                        "to percussion"
+                                            }
+                                    }
                                 }
                         r8
                         \once \override Beam.color = #blue
@@ -788,7 +859,23 @@
                 \tag strings.violin
                 \context ViolinMusicStaff = "Violin Music Staff" {
                     \context ViolinMusicVoice = "Violin Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Violin
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Vn.
+                            }
                         s1 * 43/8
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to violin"
+                                }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 12/7 {
                             fs4. \fff
@@ -858,7 +945,24 @@
                 \tag strings.viola
                 \context ViolaMusicStaff = "Viola Music Staff" {
                     \context ViolaMusicVoice = "Viola Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Viola
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Va.
+                            }
+                        \clef "alto"
                         s1 * 9/8
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to viola"
+                                }
                         \override DynamicLineSpanner.staff-padding = #'6
                         fs8.. \< \ppp
                         r32
@@ -956,7 +1060,24 @@
                 \tag strings.cello
                 \context CelloMusicStaff = "Cello Music Staff" {
                     \context CelloMusicVoice = "Cello Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Cello
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Vc.
+                            }
+                        \clef "bass"
                         s1 * 9/8
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to cello"
+                                }
                         \override DynamicLineSpanner.staff-padding = #'6
                         c,8.. \< \ppp
                         r32

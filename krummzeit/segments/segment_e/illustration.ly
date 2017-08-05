@@ -565,10 +565,26 @@
                 \tag winds.oboe
                 \context OboeMusicStaff = "Oboe Music Staff" {
                     \context OboeMusicVoice = "Oboe Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Oboe
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Ob.
+                            }
                         \override Beam.positions = #'(-4 . -4)
                         \override DynamicLineSpanner.staff-padding = #'6
                         \override TupletBracket.staff-padding = #3
                         s1 * 37/4
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to oboe"
+                                }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             \set Staff.instrumentName = \markup {
@@ -594,10 +610,10 @@
                                     \override
                                         #'(box-padding . 0.75)
                                         \box
-                                            "to clarinet in B-flat"
+                                            "to clarinet in E-flat"
                                     }
-                            e''4 \p
-                            e''16 [
+                            b'4 \p
+                            b'16 [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -605,7 +621,7 @@
                                             \finger
                                                 1
                                     }
-                            e''16 ]
+                            b'16 ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -613,7 +629,7 @@
                                             \finger
                                                 2
                                     }
-                            e''2. ~
+                            b'2. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -624,13 +640,13 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            e''2.
-                            e''2 ~
+                            b'2.
+                            b'2 ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            e''2
-                            e''4. ~
+                            b'2
+                            b'4. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -641,12 +657,12 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            e''2.
+                            b'2.
                             r2
                         }
                         \times 4/5 {
                             r8.
-                            e''4
+                            b'4
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -654,7 +670,7 @@
                                             \finger
                                                 2
                                     }
-                            e''16
+                            b'16
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -662,12 +678,12 @@
                                             \finger
                                                 1
                                     }
-                            f''2. ~
+                            c''2. ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            f''1.
-                            f''1 ~
+                            c''1.
+                            c''1 ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -678,8 +694,8 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/11 {
-                            f''2..
-                            f''8
+                            c''2..
+                            c''8
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -687,7 +703,7 @@
                                             \finger
                                                 2
                                     }
-                            f''4. ~
+                            c''4. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -698,13 +714,13 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            f''2.
+                            c''2.
                             r2
                         }
                         {
                             r16
-                            f''8 [
-                            f''32
+                            c''8 [
+                            c''32
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -712,7 +728,7 @@
                                             \finger
                                                 1
                                     }
-                            f''32 ]
+                            c''32 ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -720,7 +736,7 @@
                                             \finger
                                                 2
                                     }
-                            f''4. ~
+                            c''4. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -731,13 +747,13 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/10 {
-                            f''2.
-                            e''2 ~
+                            c''2.
+                            b'2 ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/14 {
-                            e''1
-                            e''2. ~
+                            b'1
+                            b'2. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -747,12 +763,12 @@
                                     }
                         }
                         {
-                            e''4.
+                            b'4.
                             r4
                         }
                         {
                             r16.
-                            e''8 [
+                            b'8 [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -760,7 +776,7 @@
                                             \finger
                                                 2
                                     }
-                            e''32 ]
+                            b'32 ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -768,12 +784,12 @@
                                             \finger
                                                 1
                                     }
-                            e''4. ~
+                            b'4. ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            e''2.
-                            e''2
+                            b'2.
+                            b'2
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -786,8 +802,8 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/10 {
                             r8
-                            g''4 \mf
-                            g''16 [
+                            d''4 \mf
+                            d''16 [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -795,7 +811,7 @@
                                             \finger
                                                 1
                                     }
-                            g''16 ]
+                            d''16 ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -803,7 +819,7 @@
                                             \finger
                                                 2
                                     }
-                            g''2. ~
+                            d''2. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -814,13 +830,13 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/10 {
-                            g''2.
-                            gs''2 ~
+                            d''2.
+                            ds''2 ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/14 {
-                            gs''1
-                            gs''2. ~
+                            ds''1
+                            ds''2. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -831,14 +847,14 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            gs''2.
+                            ds''2.
                             r2
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             r8.
-                            g''4 \mf
-                            g''16
+                            d''4 \mf
+                            d''16
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -846,7 +862,7 @@
                                             \finger
                                                 1
                                     }
-                            g''2. ~
+                            d''2. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -857,8 +873,8 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            g''2.
-                            g''2 ~
+                            d''2.
+                            d''2 ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -869,9 +885,9 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/11 {
-                            g''2..
-                            gs''8
-                            gs''4. ~
+                            d''2..
+                            ds''8
+                            ds''4. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -881,13 +897,13 @@
                                     }
                         }
                         \times 4/5 {
-                            gs''2.
+                            ds''2.
                             r2
                         }
                         {
                             r8
-                            g''4 \mf
-                            g''16 [
+                            d''4 \mf
+                            d''16 [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -895,7 +911,7 @@
                                             \finger
                                                 1
                                     }
-                            g''16 ]
+                            d''16 ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -903,7 +919,7 @@
                                             \finger
                                                 2
                                     }
-                            g''2. ~
+                            d''2. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -913,8 +929,8 @@
                                     }
                         }
                         \times 4/5 {
-                            g''2.
-                            gs''2
+                            d''2.
+                            ds''2
                         }
                         s1 * 29/8
                         \bar "|"
@@ -926,20 +942,36 @@
                 \tag winds.clarinet
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Clarinet
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Cl.
+                            }
                         \override Beam.positions = #'(-4 . -4)
                         \override DynamicLineSpanner.staff-padding = #'6
                         \override TupletBracket.staff-padding = #3
                         s1 * 37/4
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to clarinet in B-flat"
+                                }
                         r2.
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            e''2. \p
+                            fs''2. \p
                             r2
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             r8
-                            e''4
+                            fs''4
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -947,7 +979,7 @@
                                             \finger
                                                 1
                                     }
-                            e''16 [
+                            fs''16 [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -955,7 +987,7 @@
                                             \finger
                                                 2
                                     }
-                            e''16 ]
+                            fs''16 ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -963,20 +995,20 @@
                                             \finger
                                                 1
                                     }
-                            fs''2.
+                            gs''2.
                         }
                         s1 * 159/8
                         r1
                         r8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/10 {
-                            f''2. \mf
+                            g''2. \mf
                             r2
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/10 {
                             r8
-                            f''4
+                            g''4
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -984,7 +1016,7 @@
                                             \finger
                                                 1
                                     }
-                            f''16 [
+                            g''16 [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -992,7 +1024,7 @@
                                             \finger
                                                 2
                                     }
-                            f''16 ]
+                            g''16 ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1000,12 +1032,12 @@
                                             \finger
                                                 1
                                     }
-                            fs''2. ~
+                            gs''2. ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            fs''2.
-                            fs''2 \mf ~
+                            gs''2.
+                            gs''2 \mf ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1016,18 +1048,18 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            fs''2
-                            f''4. ~
+                            gs''2
+                            g''4. ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            f''2.
+                            g''2.
                             r2
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             r8.
-                            f''4
+                            g''4
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1035,7 +1067,7 @@
                                             \finger
                                                 1
                                     }
-                            f''16
+                            g''16
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1043,7 +1075,7 @@
                                             \finger
                                                 2
                                     }
-                            f''2. ~
+                            g''2. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1053,14 +1085,14 @@
                                     }
                         }
                         \times 4/5 {
-                            f''2.
-                            fs''2 \mf ~
+                            g''2.
+                            gs''2 \mf ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 10/11 {
-                            fs''2..
-                            f''8
-                            f''4. ~
+                            gs''2..
+                            g''8
+                            g''4. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1070,7 +1102,7 @@
                                     }
                         }
                         \times 4/5 {
-                            f''2.
+                            g''2.
                             r2
                         }
                         s1 * 29/8
@@ -1085,8 +1117,24 @@
                 \tag percussion.piano
                 \context PianoMusicStaff = "Piano Music Staff" {
                     \context PianoMusicVoice = "Piano Music Voice" {
+                        \set PianoMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Piano
+                            }
+                        \set PianoMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Pf.
+                            }
                         \override DynamicLineSpanner.staff-padding = #'3
                         s1 * 13/2
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to piano"
+                                }
                         \clef "bass"
                         \override NoteHead.style = #'harmonic
                         c'4. -\mp -\tenuto - \markup { "5th harmonic of F1" }
@@ -1108,7 +1156,6 @@
                         s1 * 10
                         \revert DynamicLineSpanner.staff-padding
                         \times 4/5 {
-                            \clef "treble"
                             \set PianoMusicStaff.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -1119,16 +1166,11 @@
                                     #10
                                     Pf.
                                 }
+                            \clef "treble"
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #3
                             r16
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to piano"
-                                    }
                             fs'''16 -\staccatissimo \ff [
                             fs'''16 -\staccatissimo
                             fs'''8 -\staccatissimo ]
@@ -1457,9 +1499,25 @@
                 \tag percussion
                 \context PercussionMusicStaff = "Percussion Staff" {
                     \context PercussionMusicVoice = "Percussion Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Percussion
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Perc.
+                            }
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'6
                         r16
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to percussion"
+                                }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
@@ -1488,12 +1546,12 @@
                         s1 * 11/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/17 {
-                            \clef "percussion"
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
+                            \clef "percussion"
                             c'2 -\accent
                                 ^ \markup {
                                     \whiteout
@@ -1734,7 +1792,6 @@
                         s1 * 27/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            \clef "treble"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
@@ -1748,6 +1805,7 @@
                                     #10
                                     Xyl.
                                 }
+                            \clef "treble"
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #3
@@ -1893,7 +1951,6 @@
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
-                        \clef "percussion"
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
@@ -1902,6 +1959,7 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
+                        \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'6
                         \override Tie.direction = #up
                         c1 :32 \ppp ~
@@ -1979,7 +2037,23 @@
                 \tag strings.violin
                 \context ViolinMusicStaff = "Violin Music Staff" {
                     \context ViolinMusicVoice = "Violin Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Violin
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Vn.
+                            }
                         ef'4 \glissando
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to violin"
+                                }
                             _ \markup {
                                 \larger
                                     \italic
@@ -2307,7 +2381,24 @@
                 \tag strings.viola
                 \context ViolaMusicStaff = "Viola Music Staff" {
                     \context ViolaMusicVoice = "Viola Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Viola
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Va.
+                            }
+                        \clef "alto"
                         ef4 \glissando
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to viola"
+                                }
                             _ \markup {
                                 \larger
                                     \italic
@@ -2681,7 +2772,24 @@
                 \tag strings.cello
                 \context CelloMusicStaff = "Cello Music Staff" {
                     \context CelloMusicVoice = "Cello Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Cello
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Vc.
+                            }
+                        \clef "bass"
                         ef,4 \glissando
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to cello"
+                                }
                             _ \markup {
                                 \larger
                                     \italic
@@ -2707,7 +2815,6 @@
                         b,4 \glissando
                         g,8
                         s1 * 69/8
-                        \clef "treble"
                         \override TextSpanner.bound-details.left-broken.text = #'#f
                         \override TextSpanner.bound-details.left.padding = #-1
                         \override TextSpanner.bound-details.left.stencil-align-dir-y = #0
@@ -2732,6 +2839,7 @@
                             }
                         \override TextSpanner.dash-fraction = #0.25
                         \override TextSpanner.dash-period = #1.5
+                        \clef "treble"
                         \override Beam.positions = #'(-4 . -4)
                         \override DynamicLineSpanner.staff-padding = #'6
                         \override TupletBracket.staff-padding = #3

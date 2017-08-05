@@ -139,7 +139,6 @@ segment_maker.copy_specifier(
 music_maker = segment_maker.append_commands(
     pf,
     baca.select_stages(1, 5),
-    baca.instrument(krummzeit.instruments['harpsichord']),
     baca.RhythmSpecifier(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
@@ -275,8 +274,13 @@ segment_maker.append_commands(
     pf,
     baca.select_stages(1, 5),
     baca.clef('treble'),
-    baca.instrument(krummzeit.instruments['harpsichord']),
     krummzeit.make_cluster('harpsichord'),
+    )
+
+segment_maker.append_commands(
+    pf,
+    baca.select_stages(1, 5),
+    baca.instrument(krummzeit.instruments['harpsichord']),
     )
 
 ### (14) string reiteration ###

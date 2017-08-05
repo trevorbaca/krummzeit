@@ -148,7 +148,23 @@
                 \tag winds.oboe
                 \context OboeMusicStaff = "Oboe Music Staff" {
                     \context OboeMusicVoice = "Oboe Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Oboe
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Ob.
+                            }
                         s1 * 33/8
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to oboe"
+                                }
                         \override DynamicLineSpanner.staff-padding = #'3
                         d''1.. \ff ~ \startTrillSpan
                         d''2. ~
@@ -196,7 +212,23 @@
                 \tag winds.clarinet
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Clarinet
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Cl.
+                            }
                         s1 * 33/8
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to clarinet in B-flat"
+                                }
                         \set Staff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -216,14 +248,14 @@
                                     }
                             }
                         \override DynamicLineSpanner.staff-padding = #'3
-                        e''1.. \ff ~
+                        b'1.. \ff ~
                             ^ \markup {
                                 \override
                                     #'(box-padding . 0.75)
                                     \box
-                                        "to clarinet in B-flat"
+                                        "to clarinet in E-flat"
                                 }
-                        e''2.
+                        b'2.
                         s1 * 2
                         \revert DynamicLineSpanner.staff-padding
                         \tweak text #tuplet-number::calc-fraction-text
@@ -303,7 +335,23 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
+                            \set PianoMusicStaff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Harpsichord
+                                }
+                            \set PianoMusicStaff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Hpschd.
+                                }
                             <d' f' a' c''>8 [
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.75)
+                                        \box
+                                            "to harpsichord"
+                                    }
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -1927,7 +1975,23 @@
                 \tag percussion
                 \context PercussionMusicStaff = "Percussion Staff" {
                     \context PercussionMusicVoice = "Percussion Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Percussion
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Perc.
+                            }
                         s1 * 47/8
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to percussion"
+                                }
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'6
                         r8
@@ -1990,7 +2054,6 @@
                         s1 * 13/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/7 {
-                            \clef "treble"
                             \set Staff.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -2001,6 +2064,7 @@
                                     #10
                                     Xyl.
                                 }
+                            \clef "treble"
                             \override DynamicLineSpanner.staff-padding = #'7
                             \override TupletBracket.staff-padding = #3
                             fs''4 :32 \fff
@@ -2024,7 +2088,23 @@
                     \context ViolinMusicVoice = "Violin Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 19/10 {
+                            \set Staff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Violin
+                                }
+                            \set Staff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Vn.
+                                }
                             df'2. :32
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.75)
+                                        \box
+                                            "to violin"
+                                    }
                                 _ \markup {
                                     \dynamic
                                         fff
@@ -2087,7 +2167,24 @@
                     \context ViolaMusicVoice = "Viola Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 19/10 {
+                            \set Staff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Viola
+                                }
+                            \set Staff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Va.
+                                }
+                            \clef "alto"
                             c4 :32
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.75)
+                                        \box
+                                            "to viola"
+                                    }
                                 _ \markup {
                                     \dynamic
                                         fff
@@ -2150,7 +2247,24 @@
                     \context CelloMusicVoice = "Cello Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 19/10 {
+                            \set Staff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Cello
+                                }
+                            \set Staff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Vc.
+                                }
+                            \clef "bass"
                             c,2 :32
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.75)
+                                        \box
+                                            "to cello"
+                                    }
                                 _ \markup {
                                     \dynamic
                                         fff

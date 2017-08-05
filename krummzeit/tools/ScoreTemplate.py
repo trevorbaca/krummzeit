@@ -381,7 +381,6 @@ class ScoreTemplate(baca.ScoreTemplate):
             name='Viola Music Staff',
             )
         self._attach_tag('strings.viola', viola_music_staff)
-        abjad.annotate(viola_music_staff, 'default_clef', abjad.Clef('alto'))
         abjad.annotate(
             viola_music_staff,
             'default_instrument',
@@ -404,7 +403,6 @@ class ScoreTemplate(baca.ScoreTemplate):
             name='Cello Music Staff',
             )
         self._attach_tag('strings.cello', cello_music_staff)
-        abjad.annotate(cello_music_staff, 'default_clef', abjad.Clef('bass'))
         abjad.annotate(
             cello_music_staff,
             'default_instrument',

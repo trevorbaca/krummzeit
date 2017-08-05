@@ -240,6 +240,7 @@
                                 #10
                                 Ob.
                             }
+                        \clef "treble"
                         R1 * 1
                         R1 * 9/8
                         R1 * 1/4
@@ -269,6 +270,7 @@
                                 #10
                                 Cl.
                             }
+                        \clef "treble"
                         s1 * 19/8
                         \set Staff.instrumentName = \markup {
                             \hcenter-in
@@ -387,6 +389,7 @@
                                 #10
                                 Perc.
                             }
+                        \clef "percussion"
                         s1 * 39/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/8 {
@@ -506,6 +509,7 @@
                                 #10
                                 Vn.
                             }
+                        \clef "treble"
                         \override Beam.positions = #'(-5 . -5)
                         \override DynamicLineSpanner.staff-padding = #'7
                         \override TupletBracket.staff-padding = #4

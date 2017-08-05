@@ -9,19 +9,27 @@ metadata = abjad.TypedOrderedDict(
             abjad.TypedOrderedDict(
                 [
                     ('Cello Music Staff', 'bass'),
-                    ('Clarinet Music Staff', None),
-                    ('Oboe Music Staff', None),
+                    ('Clarinet Music Staff', 'treble'),
+                    ('Oboe Music Staff', 'treble'),
                     ('Percussion Staff', 'percussion'),
                     ('Piano Music Staff', 'bass'),
                     ('Viola Music Staff', 'alto'),
-                    ('Violin Music Staff', None),
+                    ('Violin Music Staff', 'treble'),
                     ]
                 ),
             ),
         (
             'end_instruments_by_context',
             abjad.TypedOrderedDict(
-                []
+                [
+                    ('Cello Music Staff', 'cello'),
+                    ('Clarinet Music Staff', 'clarinet in B-flat'),
+                    ('Oboe Music Staff', 'clarinet in E-flat'),
+                    ('Percussion Staff', 'xylophone'),
+                    ('Piano Music Staff', 'piano'),
+                    ('Viola Music Staff', 'viola'),
+                    ('Violin Music Staff', 'violin'),
+                    ]
                 ),
             ),
         ('end_tempo', None),

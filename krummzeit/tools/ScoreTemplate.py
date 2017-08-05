@@ -26,155 +26,138 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         ..  docs::
 
-            >>> f(lilypond_file)
-            % ...
-            <BLANKLINE>
-            \version "..."
-            \language "english"
-            <BLANKLINE>
-            \include "/Users/trevorbaca/Scores/krummzeit/krummzeit/stylesheets/stylesheet.ily"
-            <BLANKLINE>
-            \header {
-                tagline = ##f
-            }
-            <BLANKLINE>
-            \layout {}
-            <BLANKLINE>
-            \paper {}
-            <BLANKLINE>
-            \score {
-                \context Score = "Score" <<
-                    \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
-                    \context TimeSignatureContext = "Time Signature Context" <<
-                        \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+            >>> f(lilypond_file[abjad.Score])
+            \context Score = "Score" <<
+                \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
+                \context TimeSignatureContext = "Time Signature Context" <<
+                    \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+                    }
+                    \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+                    }
+                >>
+                \context MusicContext = "Music Context" <<
+                    \context WindSectionStaffGroup = "Wind Section Staff Group" <<
+                        \tag winds.oboe
+                        \context OboeMusicStaff = "Oboe Music Staff" {
+                            \context OboeMusicVoice = "Oboe Music Voice" {
+                                \set Staff.instrumentName = \markup {
+                                    \hcenter-in
+                                        #16
+                                        Oboe
+                                    }
+                                \set Staff.shortInstrumentName = \markup {
+                                    \hcenter-in
+                                        #10
+                                        Ob.
+                                    }
+                                s1
+                            }
                         }
-                        \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+                        \tag winds.clarinet
+                        \context ClarinetMusicStaff = "Clarinet Music Staff" {
+                            \context ClarinetMusicVoice = "Clarinet Music Voice" {
+                                \set Staff.instrumentName = \markup {
+                                    \hcenter-in
+                                        #16
+                                        Clarinet
+                                    }
+                                \set Staff.shortInstrumentName = \markup {
+                                    \hcenter-in
+                                        #10
+                                        Cl.
+                                    }
+                                s1
+                            }
                         }
                     >>
-                    \context MusicContext = "Music Context" <<
-                        \context WindSectionStaffGroup = "Wind Section Staff Group" <<
-                            \tag winds.oboe
-                            \context OboeMusicStaff = "Oboe Music Staff" {
-                                \context OboeMusicVoice = "Oboe Music Voice" {
-                                    \set Staff.instrumentName = \markup {
-                                        \hcenter-in
-                                            #16
-                                            Oboe
-                                        }
-                                    \set Staff.shortInstrumentName = \markup {
-                                        \hcenter-in
-                                            #10
-                                            Ob.
-                                        }
-                                    s1
-                                }
+                    \context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
+                        \tag percussion.piano
+                        \context PianoMusicStaff = "Piano Music Staff" {
+                            \context PianoMusicVoice = "Piano Music Voice" {
+                                \set PianoMusicStaff.instrumentName = \markup {
+                                    \hcenter-in
+                                        #16
+                                        Piano
+                                    }
+                                \set PianoMusicStaff.shortInstrumentName = \markup {
+                                    \hcenter-in
+                                        #10
+                                        Pf.
+                                    }
+                                s1
                             }
-                            \tag winds.clarinet
-                            \context ClarinetMusicStaff = "Clarinet Music Staff" {
-                                \context ClarinetMusicVoice = "Clarinet Music Voice" {
-                                    \set Staff.instrumentName = \markup {
-                                        \hcenter-in
-                                            #16
-                                            Clarinet
-                                        }
-                                    \set Staff.shortInstrumentName = \markup {
-                                        \hcenter-in
-                                            #10
-                                            Cl.
-                                        }
-                                    s1
-                                }
+                        }
+                        \tag percussion
+                        \context PercussionMusicStaff = "Percussion Staff" {
+                            \context PercussionMusicVoice = "Percussion Music Voice" {
+                                \set Staff.instrumentName = \markup {
+                                    \hcenter-in
+                                        #16
+                                        Percussion
+                                    }
+                                \set Staff.shortInstrumentName = \markup {
+                                    \hcenter-in
+                                        #10
+                                        Perc.
+                                    }
+                                s1
                             }
-                        >>
-                        \context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
-                            \tag percussion.piano
-                            \context PianoMusicStaff = "Piano Music Staff" {
-                                \context PianoMusicVoice = "Piano Music Voice" {
-                                    \set PianoMusicStaff.instrumentName = \markup {
-                                        \hcenter-in
-                                            #16
-                                            Piano
-                                        }
-                                    \set PianoMusicStaff.shortInstrumentName = \markup {
-                                        \hcenter-in
-                                            #10
-                                            Pf.
-                                        }
-                                    s1
-                                }
+                        }
+                    >>
+                    \context StringSectionStaffGroup = "String Section Staff Group" <<
+                        \tag strings.violin
+                        \context ViolinMusicStaff = "Violin Music Staff" {
+                            \context ViolinMusicVoice = "Violin Music Voice" {
+                                \set Staff.instrumentName = \markup {
+                                    \hcenter-in
+                                        #16
+                                        Violin
+                                    }
+                                \set Staff.shortInstrumentName = \markup {
+                                    \hcenter-in
+                                        #10
+                                        Vn.
+                                    }
+                                s1
                             }
-                            \tag percussion
-                            \context PercussionMusicStaff = "Percussion Staff" {
-                                \context PercussionMusicVoice = "Percussion Music Voice" {
-                                    \set Staff.instrumentName = \markup {
-                                        \hcenter-in
-                                            #16
-                                            Percussion
-                                        }
-                                    \set Staff.shortInstrumentName = \markup {
-                                        \hcenter-in
-                                            #10
-                                            Perc.
-                                        }
-                                    s1
-                                }
+                        }
+                        \tag strings.viola
+                        \context ViolaMusicStaff = "Viola Music Staff" {
+                            \context ViolaMusicVoice = "Viola Music Voice" {
+                                \set Staff.instrumentName = \markup {
+                                    \hcenter-in
+                                        #16
+                                        Viola
+                                    }
+                                \set Staff.shortInstrumentName = \markup {
+                                    \hcenter-in
+                                        #10
+                                        Va.
+                                    }
+                                \clef "alto"
+                                s1
                             }
-                        >>
-                        \context StringSectionStaffGroup = "String Section Staff Group" <<
-                            \tag strings.violin
-                            \context ViolinMusicStaff = "Violin Music Staff" {
-                                \context ViolinMusicVoice = "Violin Music Voice" {
-                                    \set Staff.instrumentName = \markup {
-                                        \hcenter-in
-                                            #16
-                                            Violin
-                                        }
-                                    \set Staff.shortInstrumentName = \markup {
-                                        \hcenter-in
-                                            #10
-                                            Vn.
-                                        }
-                                    s1
-                                }
+                        }
+                        \tag strings.cello
+                        \context CelloMusicStaff = "Cello Music Staff" {
+                            \context CelloMusicVoice = "Cello Music Voice" {
+                                \set Staff.instrumentName = \markup {
+                                    \hcenter-in
+                                        #16
+                                        Cello
+                                    }
+                                \set Staff.shortInstrumentName = \markup {
+                                    \hcenter-in
+                                        #10
+                                        Vc.
+                                    }
+                                \clef "bass"
+                                s1
                             }
-                            \tag strings.viola
-                            \context ViolaMusicStaff = "Viola Music Staff" {
-                                \context ViolaMusicVoice = "Viola Music Voice" {
-                                    \set Staff.instrumentName = \markup {
-                                        \hcenter-in
-                                            #16
-                                            Viola
-                                        }
-                                    \set Staff.shortInstrumentName = \markup {
-                                        \hcenter-in
-                                            #10
-                                            Va.
-                                        }
-                                    \clef "alto"
-                                    s1
-                                }
-                            }
-                            \tag strings.cello
-                            \context CelloMusicStaff = "Cello Music Staff" {
-                                \context CelloMusicVoice = "Cello Music Voice" {
-                                    \set Staff.instrumentName = \markup {
-                                        \hcenter-in
-                                            #16
-                                            Cello
-                                        }
-                                    \set Staff.shortInstrumentName = \markup {
-                                        \hcenter-in
-                                            #10
-                                            Vc.
-                                        }
-                                    \clef "bass"
-                                    s1
-                                }
-                            }
-                        >>
+                        }
                     >>
                 >>
-            }
+            >>
 
     ..  container:: example
 
@@ -281,6 +264,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['oboe'],
             )
+        abjad.annotate(
+            oboe_music_staff,
+            'default_clef',
+            abjad.Clef('treble'),
+            )
 
         clarinet_music_voice = abjad.Voice(
             [],
@@ -297,6 +285,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             clarinet_music_staff,
             'default_instrument',
             krummzeit.instruments['cl'],
+            )
+        abjad.annotate(
+            clarinet_music_staff,
+            'default_clef',
+            abjad.Clef('treble'),
             )
 
         wind_section_staff_group = abjad.StaffGroup(
@@ -321,6 +314,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['piano'],
             )
+        abjad.annotate(
+            piano_music_staff,
+            'default_clef',
+            abjad.Clef('treble'),
+            )
 
         percussion_music_voice = abjad.Voice(
             [],
@@ -337,6 +335,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             percussion_music_staff,
             'default_instrument',
             krummzeit.instruments['percussion'],
+            )
+        abjad.annotate(
+            percussion_music_staff,
+            'default_clef',
+            abjad.Clef('percussion'),
             )
 
         percussion_section_staff_group = abjad.StaffGroup(
@@ -361,6 +364,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['violin'],
             )
+        abjad.annotate(
+            violin_music_staff,
+            'default_clef',
+            abjad.Clef('treble'),
+            )
 
         viola_music_voice = abjad.Voice(
             [], 
@@ -379,6 +387,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['viola'],
             )
+        abjad.annotate(
+            viola_music_staff,
+            'default_clef',
+            abjad.Clef('alto'),
+            )
 
         cello_music_voice = abjad.Voice(
             [], 
@@ -396,6 +409,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             cello_music_staff,
             'default_instrument',
             krummzeit.instruments['cello'],
+            )
+        abjad.annotate(
+            cello_music_staff,
+            'default_clef',
+            abjad.Clef('bass'),
             )
 
         string_section_staff_group = abjad.StaffGroup(

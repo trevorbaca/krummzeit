@@ -571,6 +571,7 @@
                                     #10
                                     Ob.
                                 }
+                            \clef "treble"
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
@@ -1109,6 +1110,7 @@
                                         (Eb)
                                     }
                             }
+                        \clef "treble"
                         \override DynamicLineSpanner.staff-padding = #'3
                         cs''4. \f \glissando
                             ^ \markup {
@@ -1175,6 +1177,7 @@
                                 #10
                                 Pf.
                             }
+                        \clef "treble"
                         s1 * 73/8
                             ^ \markup {
                                 \override
@@ -1357,6 +1360,7 @@
                                 #10
                                 Perc.
                             }
+                        \clef "percussion"
                         s1 * 73/8
                             ^ \markup {
                                 \override

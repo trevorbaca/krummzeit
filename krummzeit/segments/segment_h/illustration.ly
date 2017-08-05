@@ -261,6 +261,7 @@
                                 #10
                                 Ob.
                             }
+                        \clef "treble"
                         \override Stem.direction = #up
                         \override DynamicLineSpanner.staff-padding = #'5
                         b'1 \ff ~
@@ -447,6 +448,7 @@
                                         cl.
                                     }
                             }
+                        \clef "treble"
                         \override Stem.direction = #up
                         \override DynamicLineSpanner.staff-padding = #'8
                         cs'''1 ~ \< \ppp
@@ -652,6 +654,7 @@
                                 #10
                                 Pf.
                             }
+                        \clef "treble"
                         s1 * 27/8
                             ^ \markup {
                                 \override
@@ -959,6 +962,7 @@
                                 #10
                                 Vn.
                             }
+                        \clef "treble"
                         s1 * 27/8
                             ^ \markup {
                                 \override

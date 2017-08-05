@@ -158,6 +158,7 @@
                                 #10
                                 Ob.
                             }
+                        \clef "treble"
                         s1 * 33/8
                             ^ \markup {
                                 \override
@@ -222,6 +223,7 @@
                                 #10
                                 Cl.
                             }
+                        \clef "treble"
                         s1 * 33/8
                             ^ \markup {
                                 \override
@@ -345,6 +347,7 @@
                                     #10
                                     Hpschd.
                                 }
+                            \clef "treble"
                             <d' f' a' c''>8 [
                                 ^ \markup {
                                     \override
@@ -1985,6 +1988,7 @@
                                 #10
                                 Perc.
                             }
+                        \clef "percussion"
                         s1 * 47/8
                             ^ \markup {
                                 \override
@@ -2098,6 +2102,7 @@
                                     #10
                                     Vn.
                                 }
+                            \clef "treble"
                             df'2. :32
                                 ^ \markup {
                                     \override

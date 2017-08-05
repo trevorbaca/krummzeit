@@ -252,6 +252,7 @@
                                 #10
                                 Ob.
                             }
+                        \clef "treble"
                         \override Beam.positions = #'(-5 . -5)
                         \override TupletBracket.staff-padding = #4
                         \override DynamicLineSpanner.staff-padding = #'8
@@ -376,6 +377,7 @@
                                 #10
                                 Cl.
                             }
+                        \clef "treble"
                         \override Beam.positions = #'(-5 . -5)
                         \override TupletBracket.staff-padding = #4
                         \override DynamicLineSpanner.staff-padding = #'8
@@ -535,6 +537,7 @@
                                 #10
                                 Pf.
                             }
+                        \clef "treble"
                         \override Beam.positions = #'(-5 . -5)
                         \override TupletBracket.staff-padding = #4
                         s1 * 19/8
@@ -869,6 +872,7 @@
                                 #10
                                 Vn.
                             }
+                        \clef "treble"
                         s1 * 43/8
                             ^ \markup {
                                 \override

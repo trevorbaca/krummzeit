@@ -336,6 +336,7 @@
                                     #10
                                     Ob.
                                 }
+                            \clef "treble"
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #2
                             ef''4. \ff
@@ -383,6 +384,7 @@
                                             cl.
                                         }
                                 }
+                            \clef "treble"
                             \override DynamicLineSpanner.staff-padding = #'9
                             \override Stem.direction = #up
                             \override TupletBracket.staff-padding = #5
@@ -545,6 +547,7 @@
                                     #10
                                     Pf.
                                 }
+                            \clef "treble"
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #2
                             fs'''4. :32 \fff
@@ -3516,6 +3519,7 @@
                                     #10
                                     Xyl.
                                 }
+                            \clef "percussion"
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #2
                             fs''8 :32 \fff
@@ -3697,6 +3701,7 @@
                                     #10
                                     Vn.
                                 }
+                            \clef "treble"
                             \override Beam.positions = #'(-5 . -5)
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4

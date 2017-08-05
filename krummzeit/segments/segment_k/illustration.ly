@@ -408,6 +408,7 @@
                                 #10
                                 Ob.
                             }
+                        \clef "treble"
                         \override DynamicLineSpanner.staff-padding = #'5
                         cs'\breve.. \fff
                             ^ \markup {
@@ -461,6 +462,7 @@
                                         cl.
                                     }
                             }
+                        \clef "treble"
                         \override DynamicLineSpanner.staff-padding = #'7
                         \override Stem.direction = #up
                         e\longa \f
@@ -500,6 +502,7 @@
                                 #10
                                 Hpschd.
                             }
+                        \clef "treble"
                         cs'''\longa :32
                             ^ \markup {
                                 \override
@@ -557,6 +560,7 @@
                                 #10
                                 Xyl.
                             }
+                        \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'4
                         cs''\longa :32 \fff
                             ^ \markup {
@@ -597,6 +601,7 @@
                                     #10
                                     Vn.
                                 }
+                            \clef "treble"
                             \override DynamicLineSpanner.staff-padding = #'5
                             \override TupletBracket.staff-padding = #2
                             ff'''2 -\staccatissimo \ff

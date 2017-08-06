@@ -50,6 +50,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                                         #10
                                         Ob.
                                     }
+                                \clef "treble"
                                 s1
                             }
                         }
@@ -66,6 +67,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                                         #10
                                         Cl.
                                     }
+                                \clef "treble"
                                 s1
                             }
                         }
@@ -84,6 +86,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                                         #10
                                         Pf.
                                     }
+                                \clef "treble"
                                 s1
                             }
                         }
@@ -100,6 +103,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                                         #10
                                         Perc.
                                     }
+                                \clef "percussion"
                                 s1
                             }
                         }
@@ -118,6 +122,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                                         #10
                                         Vn.
                                     }
+                                \clef "treble"
                                 s1
                             }
                         }

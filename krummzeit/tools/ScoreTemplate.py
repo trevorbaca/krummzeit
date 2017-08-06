@@ -23,7 +23,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             >>> path += '/stylesheets/context-definitions.ily'
             >>> lilypond_file = abjad.new(
             ...     lilypond_file,
-            ...     global_staff_size=12,
+            ...     global_staff_size=14,
             ...     includes=[path],
             ...     )
             >>> show(lilypond_file) # doctest: +SKIP

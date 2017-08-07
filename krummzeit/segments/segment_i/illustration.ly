@@ -148,17 +148,6 @@
                 \tag winds.oboe
                 \context OboeMusicStaff = "Oboe Music Staff" {
                     \context OboeMusicVoice = "Oboe Music Voice" {
-                        \set Staff.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Oboe
-                            }
-                        \set Staff.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Ob.
-                            }
-                        \clef "treble"
                         s1 * 33/8
                         \override DynamicLineSpanner.staff-padding = #'3
                         d''1.. \ff ~ \startTrillSpan
@@ -207,24 +196,7 @@
                 \tag winds.clarinet
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
-                        \set Staff.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Clarinet
-                            }
-                        \set Staff.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Cl.
-                            }
-                        \clef "treble"
                         s1 * 33/8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to clarinet in B-flat"
-                                }
                         \set Staff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -245,12 +217,6 @@
                             }
                         \override DynamicLineSpanner.staff-padding = #'3
                         b'1.. \ff ~
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to clarinet in E-flat"
-                                }
                         b'2.
                         s1 * 2
                         \revert DynamicLineSpanner.staff-padding
@@ -341,7 +307,6 @@
                                     #10
                                     Hpschd.
                                 }
-                            \clef "treble"
                             <d' f' a' c''>8 [
                                 ^ \markup {
                                     \override
@@ -1972,17 +1937,6 @@
                 \tag percussion
                 \context PercussionMusicStaff = "Percussion Staff" {
                     \context PercussionMusicVoice = "Percussion Music Voice" {
-                        \set Staff.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Percussion
-                            }
-                        \set Staff.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Perc.
-                            }
-                        \clef "percussion"
                         s1 * 47/8
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'6
@@ -2080,17 +2034,6 @@
                     \context ViolinMusicVoice = "Violin Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 19/10 {
-                            \set Staff.instrumentName = \markup {
-                                \hcenter-in
-                                    #16
-                                    Violin
-                                }
-                            \set Staff.shortInstrumentName = \markup {
-                                \hcenter-in
-                                    #10
-                                    Vn.
-                                }
-                            \clef "treble"
                             df'2. :32
                                 _ \markup {
                                     \dynamic
@@ -2154,17 +2097,6 @@
                     \context ViolaMusicVoice = "Viola Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 19/10 {
-                            \set Staff.instrumentName = \markup {
-                                \hcenter-in
-                                    #16
-                                    Viola
-                                }
-                            \set Staff.shortInstrumentName = \markup {
-                                \hcenter-in
-                                    #10
-                                    Va.
-                                }
-                            \clef "alto"
                             c4 :32
                                 _ \markup {
                                     \dynamic
@@ -2228,17 +2160,6 @@
                     \context CelloMusicVoice = "Cello Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 19/10 {
-                            \set Staff.instrumentName = \markup {
-                                \hcenter-in
-                                    #16
-                                    Cello
-                                }
-                            \set Staff.shortInstrumentName = \markup {
-                                \hcenter-in
-                                    #10
-                                    Vc.
-                                }
-                            \clef "bass"
                             c,2 :32
                                 _ \markup {
                                     \dynamic

@@ -438,27 +438,10 @@
                 \context OboeMusicStaff = "Oboe Music Staff" {
                     \context OboeMusicVoice = "Oboe Music Voice" {
                         \times 4/5 {
-                            \set Staff.instrumentName = \markup {
-                                \hcenter-in
-                                    #16
-                                    Oboe
-                                }
-                            \set Staff.shortInstrumentName = \markup {
-                                \hcenter-in
-                                    #10
-                                    Ob.
-                                }
-                            \clef "treble"
                             \override Beam.positions = #'(-5 . -5)
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #4
                             bf'16 \p [
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to oboe"
-                                    }
                             bf'16
                                 ^ \markup {
                                     \override
@@ -1272,7 +1255,6 @@
                                         (Eb)
                                     }
                             }
-                        \clef "treble"
                         \override Stem.direction = #up
                         \override DynamicLineSpanner.staff-padding = #'6
                         gs\longa \ppp
@@ -1521,17 +1503,6 @@
                 \tag percussion.piano
                 \context PianoMusicStaff = "Piano Music Staff" {
                     \context PianoMusicVoice = "Piano Music Voice" {
-                        \set PianoMusicStaff.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Piano
-                            }
-                        \set PianoMusicStaff.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Pf.
-                            }
-                        \clef "treble"
                         s1 * 8
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
@@ -1829,37 +1800,14 @@
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            \set Staff.instrumentName = \markup {
-                                \hcenter-in
-                                    #16
-                                    Percussion
-                                }
-                            \set Staff.shortInstrumentName = \markup {
-                                \hcenter-in
-                                    #10
-                                    Perc.
-                                }
                             \clef "percussion"
                             c'2 :32
                                 ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    \whiteout
-                                                        \override
-                                                            #'(box-padding . 0.5)
-                                                            \box
-                                                                "suspended cymbal"
-                                                }
-                                            \line
-                                                {
-                                                    \override
-                                                        #'(box-padding . 0.75)
-                                                        \box
-                                                            "to percussion"
-                                                }
-                                        }
+                                    \whiteout
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                "suspended cymbal"
                                     }
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
@@ -2414,17 +2362,6 @@
                 \tag strings.violin
                 \context ViolinMusicStaff = "Violin Music Staff" {
                     \context ViolinMusicVoice = "Violin Music Voice" {
-                        \set Staff.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Violin
-                            }
-                        \set Staff.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Vn.
-                            }
-                        \clef "treble"
                         \override DynamicLineSpanner.staff-padding = #'8.5
                         s1 * 8
                         r8
@@ -2557,17 +2494,6 @@
                 \tag strings.viola
                 \context ViolaMusicStaff = "Viola Music Staff" {
                     \context ViolaMusicVoice = "Viola Music Voice" {
-                        \set Staff.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Viola
-                            }
-                        \set Staff.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Va.
-                            }
-                        \clef "alto"
                         \override DynamicLineSpanner.staff-padding = #'8.5
                         s1 * 8
                         r8
@@ -2705,17 +2631,6 @@
                 \tag strings.cello
                 \context CelloMusicStaff = "Cello Music Staff" {
                     \context CelloMusicVoice = "Cello Music Voice" {
-                        \set Staff.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Cello
-                            }
-                        \set Staff.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Vc.
-                            }
-                        \clef "bass"
                         s1 * 8
                         \override DynamicLineSpanner.staff-padding = #'6
                         r8

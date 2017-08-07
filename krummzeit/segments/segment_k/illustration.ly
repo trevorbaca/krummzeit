@@ -398,17 +398,6 @@
                 \tag winds.oboe
                 \context OboeMusicStaff = "Oboe Music Staff" {
                     \context OboeMusicVoice = "Oboe Music Voice" {
-                        \set Staff.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Oboe
-                            }
-                        \set Staff.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Ob.
-                            }
-                        \clef "treble"
                         \override DynamicLineSpanner.staff-padding = #'5
                         cs'\breve.. \fff
                         r2
@@ -456,7 +445,6 @@
                                         cl.
                                     }
                             }
-                        \clef "treble"
                         \override DynamicLineSpanner.staff-padding = #'7
                         \override Stem.direction = #up
                         e\longa \f
@@ -490,7 +478,6 @@
                                 #10
                                 Hpschd.
                             }
-                        \clef "treble"
                         cs'''\longa :32
                             ^ \markup {
                                 \override
@@ -548,7 +535,6 @@
                                 #10
                                 Xyl.
                             }
-                        \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'4
                         cs''\longa :32 \fff
                         cs''\longa :32
@@ -573,17 +559,6 @@
                     \context ViolinMusicVoice = "Violin Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
-                            \set Staff.instrumentName = \markup {
-                                \hcenter-in
-                                    #16
-                                    Violin
-                                }
-                            \set Staff.shortInstrumentName = \markup {
-                                \hcenter-in
-                                    #10
-                                    Vn.
-                                }
-                            \clef "treble"
                             \override DynamicLineSpanner.staff-padding = #'5
                             \override TupletBracket.staff-padding = #2
                             ff'''2 -\staccatissimo \ff
@@ -802,16 +777,6 @@
                     \context ViolaMusicVoice = "Viola Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/8 {
-                            \set Staff.instrumentName = \markup {
-                                \hcenter-in
-                                    #16
-                                    Viola
-                                }
-                            \set Staff.shortInstrumentName = \markup {
-                                \hcenter-in
-                                    #10
-                                    Va.
-                                }
                             \clef "treble"
                             \override DynamicLineSpanner.staff-padding = #'5
                             \override TupletBracket.staff-padding = #2
@@ -847,17 +812,6 @@
                 \tag strings.cello
                 \context CelloMusicStaff = "Cello Music Staff" {
                     \context CelloMusicVoice = "Cello Music Voice" {
-                        \set Staff.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Cello
-                            }
-                        \set Staff.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Vc.
-                            }
-                        \clef "bass"
                         \override DynamicLineSpanner.staff-padding = #'3
                         d'\longa \fff
                             ^ \markup {

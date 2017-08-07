@@ -160,12 +160,6 @@
                             }
                         \clef "treble"
                         s1 * 33/8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to oboe"
-                                }
                         \override DynamicLineSpanner.staff-padding = #'3
                         d''1.. \ff ~ \startTrillSpan
                         d''2. ~
@@ -1990,12 +1984,6 @@
                             }
                         \clef "percussion"
                         s1 * 47/8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to percussion"
-                                }
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'6
                         r8
@@ -2104,12 +2092,6 @@
                                 }
                             \clef "treble"
                             df'2. :32
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to violin"
-                                    }
                                 _ \markup {
                                     \dynamic
                                         fff
@@ -2184,12 +2166,6 @@
                                 }
                             \clef "alto"
                             c4 :32
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to viola"
-                                    }
                                 _ \markup {
                                     \dynamic
                                         fff
@@ -2264,12 +2240,6 @@
                                 }
                             \clef "bass"
                             c,2 :32
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to cello"
-                                    }
                                 _ \markup {
                                     \dynamic
                                         fff

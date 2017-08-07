@@ -38,6 +38,7 @@ segment_maker = baca.SegmentMaker(
     final_markup=krummzeit.make_final_markup(),
     final_markup_extra_offset=(14.5, 0),
     ignore_repeat_pitch_classes=True,
+    instruments=krummzeit.instruments,
     label_stages=False,
     measures_per_stage=measures_per_stage,
     rehearsal_letter='K',

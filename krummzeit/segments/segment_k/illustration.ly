@@ -411,12 +411,6 @@
                         \clef "treble"
                         \override DynamicLineSpanner.staff-padding = #'5
                         cs'\breve.. \fff
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to oboe"
-                                }
                         r2
                         cs'\breve..
                         r2
@@ -466,12 +460,6 @@
                         \override DynamicLineSpanner.staff-padding = #'7
                         \override Stem.direction = #up
                         e\longa \f
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to bass clarinet"
-                                }
                         e\longa
                         e\longa
                         e\longa
@@ -563,12 +551,6 @@
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'4
                         cs''\longa :32 \fff
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to xylophone"
-                                }
                         cs''\longa :32
                         cs''\longa :32
                         cs''\longa :32
@@ -606,22 +588,9 @@
                             \override TupletBracket.staff-padding = #2
                             ff'''2 -\staccatissimo \ff
                                 ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    \whiteout
-                                                        \upright
-                                                            pizz.
-                                                }
-                                            \line
-                                                {
-                                                    \override
-                                                        #'(box-padding . 0.75)
-                                                        \box
-                                                            "to violin"
-                                                }
-                                        }
+                                    \whiteout
+                                        \upright
+                                            pizz.
                                     }
                             ef'''1 -\staccatissimo
                             f'''4 -\staccatissimo
@@ -848,22 +817,9 @@
                             \override TupletBracket.staff-padding = #2
                             ff'''\breve -\staccatissimo \ff
                                 ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    \whiteout
-                                                        \upright
-                                                            pizz.
-                                                }
-                                            \line
-                                                {
-                                                    \override
-                                                        #'(box-padding . 0.75)
-                                                        \box
-                                                            "to viola"
-                                                }
-                                        }
+                                    \whiteout
+                                        \upright
+                                            pizz.
                                     }
                         }
                         {
@@ -905,22 +861,9 @@
                         \override DynamicLineSpanner.staff-padding = #'3
                         d'\longa \fff
                             ^ \markup {
-                                \column
-                                    {
-                                        \line
-                                            {
-                                                \whiteout
-                                                    \upright
-                                                        "gridato possibile"
-                                            }
-                                        \line
-                                            {
-                                                \override
-                                                    #'(box-padding . 0.75)
-                                                    \box
-                                                        "to cello"
-                                            }
-                                    }
+                                \whiteout
+                                    \upright
+                                        "gridato possibile"
                                 }
                         d'\longa
                         d'\longa

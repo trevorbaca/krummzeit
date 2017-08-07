@@ -1533,12 +1533,6 @@
                             }
                         \clef "treble"
                         s1 * 8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to piano"
-                                }
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -2433,12 +2427,6 @@
                         \clef "treble"
                         \override DynamicLineSpanner.staff-padding = #'8.5
                         s1 * 8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to violin"
-                                }
                         r8
                         aqs8 :32 \ff
                         aqs8. :32
@@ -2582,12 +2570,6 @@
                         \clef "alto"
                         \override DynamicLineSpanner.staff-padding = #'8.5
                         s1 * 8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to viola"
-                                }
                         r8
                         bf,8 :32 \ff
                         bf,8. :32
@@ -2735,12 +2717,6 @@
                             }
                         \clef "bass"
                         s1 * 8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to cello"
-                                }
                         \override DynamicLineSpanner.staff-padding = #'6
                         r8
                         a,8 :32 \ff

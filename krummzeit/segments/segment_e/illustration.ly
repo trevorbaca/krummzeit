@@ -580,12 +580,6 @@
                         \override DynamicLineSpanner.staff-padding = #'6
                         \override TupletBracket.staff-padding = #3
                         s1 * 37/4
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to oboe"
-                                }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             \set Staff.instrumentName = \markup {
@@ -1132,12 +1126,6 @@
                         \clef "treble"
                         \override DynamicLineSpanner.staff-padding = #'3
                         s1 * 13/2
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to piano"
-                                }
                         \clef "bass"
                         \override NoteHead.style = #'harmonic
                         c'4. -\mp -\tenuto - \markup { "5th harmonic of F1" }
@@ -1515,12 +1503,6 @@
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'6
                         r16
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to percussion"
-                                }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
@@ -2052,12 +2034,6 @@
                             }
                         \clef "treble"
                         ef'4 \glissando
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to violin"
-                                }
                             _ \markup {
                                 \larger
                                     \italic
@@ -2397,12 +2373,6 @@
                             }
                         \clef "alto"
                         ef4 \glissando
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to viola"
-                                }
                             _ \markup {
                                 \larger
                                     \italic
@@ -2788,12 +2758,6 @@
                             }
                         \clef "bass"
                         ef,4 \glissando
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to cello"
-                                }
                             _ \markup {
                                 \larger
                                     \italic

@@ -257,12 +257,6 @@
                         \override TupletBracket.staff-padding = #4
                         \override DynamicLineSpanner.staff-padding = #'8
                         s1 * 19/8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to oboe"
-                                }
                         {
                             a'''4. -\staccato \< \p
                         }
@@ -541,12 +535,6 @@
                         \override Beam.positions = #'(-5 . -5)
                         \override TupletBracket.staff-padding = #4
                         s1 * 19/8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to piano"
-                                }
                         \times 4/5 {
                             \set PianoMusicStaff.instrumentName = \markup {
                                 \hcenter-in
@@ -874,12 +862,6 @@
                             }
                         \clef "treble"
                         s1 * 43/8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to violin"
-                                }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 12/7 {
                             fs4. \fff
@@ -961,12 +943,6 @@
                             }
                         \clef "alto"
                         s1 * 9/8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to viola"
-                                }
                         \override DynamicLineSpanner.staff-padding = #'6
                         fs8.. \< \ppp
                         r32
@@ -1076,12 +1052,6 @@
                             }
                         \clef "bass"
                         s1 * 9/8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to cello"
-                                }
                         \override DynamicLineSpanner.staff-padding = #'6
                         c,8.. \< \ppp
                         r32

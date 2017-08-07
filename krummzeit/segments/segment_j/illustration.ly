@@ -340,12 +340,6 @@
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #2
                             ef''4. \ff
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to oboe"
-                                    }
                             ef''4
                                 ^ \markup {
                                     \override
@@ -389,12 +383,6 @@
                             \override Stem.direction = #up
                             \override TupletBracket.staff-padding = #5
                             f8 \ff
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to bass clarinet"
-                                    }
                             f2
                                 ^ \markup {
                                     \override
@@ -551,12 +539,6 @@
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #2
                             fs'''4. :32 \fff
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to piano"
-                                    }
                             fs'''2 :32
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
@@ -3523,12 +3505,6 @@
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #2
                             fs''8 :32 \fff
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to xylophone"
-                                    }
                             fs''2. :32
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
@@ -3706,12 +3682,6 @@
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
                             ef''8 :32 \fff [
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to violin"
-                                    }
                             ef''8 :32
                             ef''8 :32 ]
                         }
@@ -3850,12 +3820,6 @@
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
                             a8 :32 \fff [
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to viola"
-                                    }
                             a8 :32
                             a8 :32 ]
                         }
@@ -3951,12 +3915,6 @@
                                 }
                             \clef "bass"
                             eqf,8 :32 \fff [
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to cello"
-                                    }
                             eqf,8 :32
                             eqf,8 :32 ]
                         }

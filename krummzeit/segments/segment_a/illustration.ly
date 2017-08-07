@@ -263,12 +263,20 @@
                         \set Staff.instrumentName = \markup {
                             \hcenter-in
                                 #16
-                                Clarinet
+                                \center-column
+                                    {
+                                        Clarinet
+                                        (Eb)
+                                    }
                             }
                         \set Staff.shortInstrumentName = \markup {
                             \hcenter-in
                                 #10
-                                Cl.
+                                \center-column
+                                    {
+                                        Cl.
+                                        (Eb)
+                                    }
                             }
                         \clef "treble"
                         s1 * 19/8

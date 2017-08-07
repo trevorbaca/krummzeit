@@ -58,6 +58,7 @@ segment_maker = baca.SegmentMaker(
     instruments=krummzeit.instruments,
     label_stages=False,
     measures_per_stage=measures_per_stage,
+    metronome_marks=krummzeit.named_tempi,
     rehearsal_letter='D',
     score_template=krummzeit.ScoreTemplate(),
     tempo_specifier=tempo_specifier,

@@ -49,7 +49,6 @@ instruments = abjad.TypedOrderedDict([
             )
         ),
     (
-    (
         'e-flat cl', 
         abjad.instrumenttools.ClarinetInEFlat(
             instrument_name_markup=make_long_markup('Clarinet (Eb)'),

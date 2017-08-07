@@ -230,7 +230,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             clarinet_music_staff,
             'default_instrument',
-            krummzeit.instruments['cl'],
+            krummzeit.instruments['e-flat cl'],
             )
         abjad.annotate(
             clarinet_music_staff,

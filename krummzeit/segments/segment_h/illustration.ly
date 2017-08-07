@@ -265,12 +265,6 @@
                         \override Stem.direction = #up
                         \override DynamicLineSpanner.staff-padding = #'5
                         b'1 \ff ~
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to oboe"
-                                }
                         b'8 ~
                         b'2 ~
                         b'8 ~
@@ -452,12 +446,6 @@
                         \override Stem.direction = #up
                         \override DynamicLineSpanner.staff-padding = #'8
                         cs'''1 ~ \< \ppp
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to bass clarinet"
-                                }
                         cs'''8 ~
                         cs'''2 ~
                         cs'''8 ~
@@ -857,24 +845,11 @@
                         \clef "percussion"
                         c'2
                             ^ \markup {
-                                \column
-                                    {
-                                        \line
-                                            {
-                                                \whiteout
-                                                    \override
-                                                        #'(box-padding . 0.5)
-                                                        \box
-                                                            tam-tam
-                                            }
-                                        \line
-                                            {
-                                                \override
-                                                    #'(box-padding . 0.75)
-                                                    \box
-                                                        "to percussion"
-                                            }
-                                    }
+                                \whiteout
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            tam-tam
                                 }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
@@ -964,12 +939,6 @@
                             }
                         \clef "treble"
                         s1 * 27/8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to violin"
-                                }
                         {
                             \override Beam.positions = #'(-4 . -4)
                             \override TupletBracket.staff-padding = #3
@@ -1206,22 +1175,9 @@
                         \override DynamicLineSpanner.staff-padding = #'6
                         bf,1.. \glissando \< \ff
                             ^ \markup {
-                                \column
-                                    {
-                                        \line
-                                            {
-                                                \whiteout
-                                                    \upright
-                                                        "subito ordinario"
-                                            }
-                                        \line
-                                            {
-                                                \override
-                                                    #'(box-padding . 0.75)
-                                                    \box
-                                                        "to viola"
-                                            }
-                                    }
+                                \whiteout
+                                    \upright
+                                        "subito ordinario"
                                 }
                         cqf4 \glissando
                         d4. \glissando
@@ -1350,22 +1306,9 @@
                         \override DynamicLineSpanner.staff-padding = #'6
                         a,,2. \glissando \< \ff
                             ^ \markup {
-                                \column
-                                    {
-                                        \line
-                                            {
-                                                \whiteout
-                                                    \upright
-                                                        "subito ordinario"
-                                            }
-                                        \line
-                                            {
-                                                \override
-                                                    #'(box-padding . 0.75)
-                                                    \box
-                                                        "to cello"
-                                            }
-                                    }
+                                \whiteout
+                                    \upright
+                                        "subito ordinario"
                                 }
                         bqf,,1 \glissando
                         c,4. \glissando

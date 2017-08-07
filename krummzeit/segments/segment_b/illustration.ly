@@ -970,12 +970,6 @@
                         \override DynamicLineSpanner.staff-padding = #'7
                         \override TupletBracket.staff-padding = #4
                         s1 * 49/2
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to oboe"
-                                }
                         {
                             \set Staff.instrumentName = \markup {
                                 \hcenter-in
@@ -2738,24 +2732,11 @@
                             \clef "percussion"
                             c'2
                                 ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    \whiteout
-                                                        \override
-                                                            #'(box-padding . 0.5)
-                                                            \box
-                                                                sponges
-                                                }
-                                            \line
-                                                {
-                                                    \override
-                                                        #'(box-padding . 0.75)
-                                                        \box
-                                                            "to percussion"
-                                                }
-                                        }
+                                    \whiteout
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                sponges
                                     }
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
@@ -3268,12 +3249,6 @@
                         \override Beam.positions = #'(-5 . -5)
                         \override TupletBracket.staff-padding = #4
                         s1 * 15/2
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to violin"
-                                }
                         {
                             g''4. -\staccato \mp
                                 ^ \markup {
@@ -3863,22 +3838,9 @@
                             \override TupletBracket.staff-padding = #5
                             d4 \mf \glissando
                                 ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    \whiteout
-                                                        \upright
-                                                            "molto flautando"
-                                                }
-                                            \line
-                                                {
-                                                    \override
-                                                        #'(box-padding . 0.75)
-                                                        \box
-                                                            "to viola"
-                                                }
-                                        }
+                                    \whiteout
+                                        \upright
+                                            "molto flautando"
                                     }
                             ctqs1 \glissando
                         }
@@ -4267,22 +4229,9 @@
                             \override TupletBracket.staff-padding = #5
                             e,2. \mf \glissando
                                 ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    \whiteout
-                                                        \upright
-                                                            "molto flautando"
-                                                }
-                                            \line
-                                                {
-                                                    \override
-                                                        #'(box-padding . 0.75)
-                                                        \box
-                                                            "to cello"
-                                                }
-                                        }
+                                    \whiteout
+                                        \upright
+                                            "molto flautando"
                                     }
                             dqs,2 \glissando
                         }

@@ -524,12 +524,6 @@
                             }
                         \clef "treble"
                         s1 * 65/8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to oboe"
-                                }
                         \override DynamicLineSpanner.staff-padding = #'5
                         \override Stem.direction = #up
                         b1 \fff ~
@@ -621,12 +615,6 @@
                                 }
                             \clef "treble"
                             ff''''16 -\staccatissimo \> \ff
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to piano"
-                                    }
                             r16
                             ef''''16 -\staccatissimo [
                             f''''8. -\staccatissimo ]
@@ -1163,12 +1151,6 @@
                             }
                         \clef "treble"
                         s1 * 15/8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to violin"
-                                }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
                             \override Beam.positions = #'(-4 . -4)
@@ -1263,12 +1245,6 @@
                             }
                         \clef "alto"
                         s1 * 15/8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to viola"
-                                }
                         \times 2/3 {
                             \clef "treble"
                             \override Beam.positions = #'(-4 . -4)
@@ -1368,12 +1344,6 @@
                             }
                         \clef "bass"
                         s1 * 15/8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to cello"
-                                }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
                             \clef "treble"

@@ -51,6 +51,7 @@ measures_per_stage, tempo_specifier, time_signatures = maker()
 
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
+    instruments=krummzeit.instruments,
     label_stages=False,
     measures_per_stage=measures_per_stage,
     rehearsal_letter='F',

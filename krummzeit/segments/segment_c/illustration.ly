@@ -576,12 +576,6 @@
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
                             e'8 \ff
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to oboe"
-                                    }
                             ef''4 \startTrillSpan
                                 ^ \markup {
                                     \override
@@ -1179,12 +1173,6 @@
                             }
                         \clef "treble"
                         s1 * 73/8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to piano"
-                                }
                         \times 4/5 {
                             \set PianoMusicStaff.instrumentName = \markup {
                                 \hcenter-in
@@ -1362,12 +1350,6 @@
                             }
                         \clef "percussion"
                         s1 * 73/8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to percussion"
-                                }
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 5
@@ -1714,24 +1696,11 @@
                         \clef "percussion"
                         c'2. ~
                             ^ \markup {
-                                \column
-                                    {
-                                        \line
-                                            {
-                                                \whiteout
-                                                    \override
-                                                        #'(box-padding . 0.5)
-                                                        \box
-                                                            "scraped slate"
-                                            }
-                                        \line
-                                            {
-                                                \override
-                                                    #'(box-padding . 0.75)
-                                                    \box
-                                                        "to violin"
-                                            }
-                                    }
+                                \whiteout
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            "scraped slate"
                                 }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
@@ -1982,12 +1951,6 @@
                             }
                         \clef "alto"
                         s1 * 4
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to viola"
-                                }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             \override Beam.positions = #'(-5 . -5)
@@ -2100,12 +2063,6 @@
                             }
                         \clef "bass"
                         s1 * 4
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to cello"
-                                }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/5 {
                             d,16 \glissando \> \ff

@@ -9,9 +9,8 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     ::
 
-        >>> import abjad
-        >>> import baca
         >>> import krummzeit
+        >>> import pathlib
 
     ..  container:: example
 
@@ -19,12 +18,12 @@ class ScoreTemplate(baca.ScoreTemplate):
 
             >>> template = krummzeit.ScoreTemplate()
             >>> lilypond_file = template.__illustrate__()
-            >>> path = '/Users/trevorbaca/Scores/krummzeit/krummzeit'
-            >>> path += '/stylesheets/context-definitions.ily'
+            >>> path = pathlib.Path(krummzeit.__path__[0], 'stylesheets')
+            >>> path = path.joinpath('context-definitions.ily')
             >>> lilypond_file = abjad.new(
             ...     lilypond_file,
-            ...     global_staff_size=14,
-            ...     includes=[path],
+            ...     global_staff_size=15,
+            ...     includes=[str(path)],
             ...     )
             >>> show(lilypond_file) # doctest: +SKIP
 

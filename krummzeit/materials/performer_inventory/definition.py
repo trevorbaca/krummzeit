@@ -39,7 +39,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         pitch_range=abjad.PitchRange(
                             range_string='[Bb3, A6]',
                             ),
-                        sounding_pitch_of_written_middle_c=abjad.NamedPitch("c'"),
+                        middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     ]
                 ),
@@ -145,7 +145,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         pitch_range=abjad.PitchRange(
                             range_string='[D3, Bb6]',
                             ),
-                        sounding_pitch_of_written_middle_c=abjad.NamedPitch('bf'),
+                        middle_c_sounding_pitch=abjad.NamedPitch('bf'),
                         ),
                     abjad.instrumenttools.ClarinetInEFlat(
                         instrument_name='clarinet in E-flat',
@@ -244,7 +244,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         pitch_range=abjad.PitchRange(
                             range_string='[F3, C7]',
                             ),
-                        sounding_pitch_of_written_middle_c=abjad.NamedPitch("ef'"),
+                        middle_c_sounding_pitch=abjad.NamedPitch("ef'"),
                         ),
                     abjad.instrumenttools.BassClarinet(
                         instrument_name='bass clarinet',
@@ -280,7 +280,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         pitch_range=abjad.PitchRange(
                             range_string='[Bb1, G5]',
                             ),
-                        sounding_pitch_of_written_middle_c=abjad.NamedPitch('bf,'),
+                        middle_c_sounding_pitch=abjad.NamedPitch('bf,'),
                         ),
                     ]
                 ),
@@ -323,7 +323,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         pitch_range=abjad.PitchRange(
                             range_string='[A0, C8]',
                             ),
-                        sounding_pitch_of_written_middle_c=abjad.NamedPitch("c'"),
+                        middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     abjad.instrumenttools.Harpsichord(
                         instrument_name='harpsichord',
@@ -359,7 +359,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         pitch_range=abjad.PitchRange(
                             range_string='[C2, C7]',
                             ),
-                        sounding_pitch_of_written_middle_c=abjad.NamedPitch("c'"),
+                        middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     ]
                 ),
@@ -399,7 +399,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         pitch_range=abjad.PitchRange(
                             range_string='[A0, C8]',
                             ),
-                        sounding_pitch_of_written_middle_c=abjad.NamedPitch("c'"),
+                        middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     abjad.instrumenttools.Percussion(
                         instrument_name='crotales',
@@ -420,7 +420,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         pitch_range=abjad.PitchRange(
                             range_string='[A0, C8]',
                             ),
-                        sounding_pitch_of_written_middle_c=abjad.NamedPitch("c'"),
+                        middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     abjad.instrumenttools.Percussion(
                         instrument_name='scraped slate',
@@ -441,7 +441,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         pitch_range=abjad.PitchRange(
                             range_string='[A0, C8]',
                             ),
-                        sounding_pitch_of_written_middle_c=abjad.NamedPitch("c'"),
+                        middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     abjad.instrumenttools.Percussion(
                         instrument_name='snare drum',
@@ -462,7 +462,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         pitch_range=abjad.PitchRange(
                             range_string='[A0, C8]',
                             ),
-                        sounding_pitch_of_written_middle_c=abjad.NamedPitch("c'"),
+                        middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     abjad.instrumenttools.Percussion(
                         instrument_name='sponges',
@@ -483,7 +483,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         pitch_range=abjad.PitchRange(
                             range_string='[A0, C8]',
                             ),
-                        sounding_pitch_of_written_middle_c=abjad.NamedPitch("c'"),
+                        middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     abjad.instrumenttools.Percussion(
                         instrument_name='suspended cymbal',
@@ -504,7 +504,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         pitch_range=abjad.PitchRange(
                             range_string='[A0, C8]',
                             ),
-                        sounding_pitch_of_written_middle_c=abjad.NamedPitch("c'"),
+                        middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     abjad.instrumenttools.Percussion(
                         instrument_name='tam-tam',
@@ -525,7 +525,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         pitch_range=abjad.PitchRange(
                             range_string='[A0, C8]',
                             ),
-                        sounding_pitch_of_written_middle_c=abjad.NamedPitch("c'"),
+                        middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     abjad.instrumenttools.Xylophone(
                         instrument_name='xylophone',
@@ -558,7 +558,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         pitch_range=abjad.PitchRange(
                             range_string='[C4, C7]',
                             ),
-                        sounding_pitch_of_written_middle_c=abjad.NamedPitch("c''"),
+                        middle_c_sounding_pitch=abjad.NamedPitch("c''"),
                         ),
                     ]
                 ),
@@ -609,7 +609,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         pitch_range=abjad.PitchRange(
                             range_string='[G3, G7]',
                             ),
-                        sounding_pitch_of_written_middle_c=abjad.NamedPitch("c'"),
+                        middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     abjad.instrumenttools.Percussion(
                         instrument_name='scraped slate',
@@ -630,7 +630,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         pitch_range=abjad.PitchRange(
                             range_string='[A0, C8]',
                             ),
-                        sounding_pitch_of_written_middle_c=abjad.NamedPitch("c'"),
+                        middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     ]
                 ),
@@ -684,7 +684,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         pitch_range=abjad.PitchRange(
                             range_string='[C3, D6]',
                             ),
-                        sounding_pitch_of_written_middle_c=abjad.NamedPitch("c'"),
+                        middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     ]
                 ),
@@ -741,7 +741,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         pitch_range=abjad.PitchRange(
                             range_string='[C2, G5]',
                             ),
-                        sounding_pitch_of_written_middle_c=abjad.NamedPitch("c'"),
+                        middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     ]
                 ),

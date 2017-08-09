@@ -11,8 +11,8 @@
         currentBarNumber = #291
     } <<
         \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
-        \context TimeSignatureContext = "Time Signature Context" <<
-            \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+        \context GlobalContext = "Global Context" <<
+            \context GlobalRests = "Global Rests" {
                 {
                     \time 4/4
                     R1 * 1
@@ -102,7 +102,7 @@
                             }
                 }
             }
-            \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+            \context GlobalSkips = "Global Skips" {
                 {
                     \time 4/4
                     \mark #10

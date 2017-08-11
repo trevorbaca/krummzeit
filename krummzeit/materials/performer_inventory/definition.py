@@ -9,9 +9,9 @@ performer_inventory = abjad.instrumenttools.PerformerList(
             instruments=abjad.instrumenttools.InstrumentList(
                 [
                     abjad.instrumenttools.Oboe(
-                        instrument_name='oboe',
-                        short_instrument_name='ob.',
-                        instrument_name_markup=abjad.Markup(
+                        name='oboe',
+                        short_name='ob.',
+                        name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'hcenter-in',
@@ -20,7 +20,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=abjad.Markup(
+                        short_name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'hcenter-in',
@@ -49,9 +49,9 @@ performer_inventory = abjad.instrumenttools.PerformerList(
             instruments=abjad.instrumenttools.InstrumentList(
                 [
                     abjad.instrumenttools.ClarinetInBFlat(
-                        instrument_name='clarinet in B-flat',
-                        short_instrument_name='cl. in B-flat',
-                        instrument_name_markup=abjad.Markup(
+                        name='clarinet in B-flat',
+                        short_name='cl. in B-flat',
+                        name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'column',
@@ -93,7 +93,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=abjad.Markup(
+                        short_name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'column',
@@ -148,9 +148,9 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         middle_c_sounding_pitch=abjad.NamedPitch('bf'),
                         ),
                     abjad.instrumenttools.ClarinetInEFlat(
-                        instrument_name='clarinet in E-flat',
-                        short_instrument_name='cl. E-flat',
-                        instrument_name_markup=abjad.Markup(
+                        name='clarinet in E-flat',
+                        short_name='cl. E-flat',
+                        name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'column',
@@ -192,7 +192,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=abjad.Markup(
+                        short_name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'column',
@@ -247,9 +247,9 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         middle_c_sounding_pitch=abjad.NamedPitch("ef'"),
                         ),
                     abjad.instrumenttools.BassClarinet(
-                        instrument_name='bass clarinet',
-                        short_instrument_name='bass cl.',
-                        instrument_name_markup=abjad.Markup(
+                        name='bass clarinet',
+                        short_name='bass cl.',
+                        name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'hcenter-in',
@@ -258,7 +258,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=abjad.Markup(
+                        short_name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'hcenter-in',
@@ -290,9 +290,9 @@ performer_inventory = abjad.instrumenttools.PerformerList(
             instruments=abjad.instrumenttools.InstrumentList(
                 [
                     abjad.instrumenttools.Piano(
-                        instrument_name='piano',
-                        short_instrument_name='pf.',
-                        instrument_name_markup=abjad.Markup(
+                        name='piano',
+                        short_name='pf.',
+                        name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'hcenter-in',
@@ -301,7 +301,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=abjad.Markup(
+                        short_name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'hcenter-in',
@@ -326,9 +326,9 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     abjad.instrumenttools.Harpsichord(
-                        instrument_name='harpsichord',
-                        short_instrument_name='hpschd.',
-                        instrument_name_markup=abjad.Markup(
+                        name='harpsichord',
+                        short_name='hpschd.',
+                        name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'hcenter-in',
@@ -337,7 +337,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=abjad.Markup(
+                        short_name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'hcenter-in',
@@ -369,9 +369,9 @@ performer_inventory = abjad.instrumenttools.PerformerList(
             instruments=abjad.instrumenttools.InstrumentList(
                 [
                     abjad.instrumenttools.Percussion(
-                        instrument_name='bass drum',
-                        short_instrument_name='bass drum',
-                        instrument_name_markup=abjad.Markup(
+                        name='bass drum',
+                        short_name='bass drum',
+                        name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'hcenter-in',
@@ -380,7 +380,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=abjad.Markup(
+                        short_name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'hcenter-in',
@@ -402,12 +402,12 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     abjad.instrumenttools.Percussion(
-                        instrument_name='crotales',
-                        short_instrument_name='crotales',
-                        instrument_name_markup=abjad.Markup(
+                        name='crotales',
+                        short_name='crotales',
+                        name_markup=abjad.Markup(
                             contents=('Crotales',),
                             ),
-                        short_instrument_name_markup=abjad.Markup(
+                        short_name_markup=abjad.Markup(
                             contents=('Crot.',),
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
@@ -423,12 +423,12 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     abjad.instrumenttools.Percussion(
-                        instrument_name='scraped slate',
-                        short_instrument_name='scraped slate',
-                        instrument_name_markup=abjad.Markup(
+                        name='scraped slate',
+                        short_name='scraped slate',
+                        name_markup=abjad.Markup(
                             contents=('Slate',),
                             ),
-                        short_instrument_name_markup=abjad.Markup(
+                        short_name_markup=abjad.Markup(
                             contents=('Slt.',),
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
@@ -444,12 +444,12 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     abjad.instrumenttools.Percussion(
-                        instrument_name='snare drum',
-                        short_instrument_name='snare drum',
-                        instrument_name_markup=abjad.Markup(
+                        name='snare drum',
+                        short_name='snare drum',
+                        name_markup=abjad.Markup(
                             contents=('Snare drum',),
                             ),
-                        short_instrument_name_markup=abjad.Markup(
+                        short_name_markup=abjad.Markup(
                             contents=('Sn. Dr.',),
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
@@ -465,12 +465,12 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     abjad.instrumenttools.Percussion(
-                        instrument_name='sponges',
-                        short_instrument_name='sponges',
-                        instrument_name_markup=abjad.Markup(
+                        name='sponges',
+                        short_name='sponges',
+                        name_markup=abjad.Markup(
                             contents=('Sponges',),
                             ),
-                        short_instrument_name_markup=abjad.Markup(
+                        short_name_markup=abjad.Markup(
                             contents=('Spg.',),
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
@@ -486,12 +486,12 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     abjad.instrumenttools.Percussion(
-                        instrument_name='suspended cymbal',
-                        short_instrument_name='suspended cymbal',
-                        instrument_name_markup=abjad.Markup(
+                        name='suspended cymbal',
+                        short_name='suspended cymbal',
+                        name_markup=abjad.Markup(
                             contents=('Suspended cymbal',),
                             ),
-                        short_instrument_name_markup=abjad.Markup(
+                        short_name_markup=abjad.Markup(
                             contents=('Sus. cym.',),
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
@@ -507,12 +507,12 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     abjad.instrumenttools.Percussion(
-                        instrument_name='tam-tam',
-                        short_instrument_name='tam-tam',
-                        instrument_name_markup=abjad.Markup(
+                        name='tam-tam',
+                        short_name='tam-tam',
+                        name_markup=abjad.Markup(
                             contents=('Tam-tam',),
                             ),
-                        short_instrument_name_markup=abjad.Markup(
+                        short_name_markup=abjad.Markup(
                             contents=('Tam.',),
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
@@ -528,9 +528,9 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     abjad.instrumenttools.Xylophone(
-                        instrument_name='xylophone',
-                        short_instrument_name='xyl.',
-                        instrument_name_markup=abjad.Markup(
+                        name='xylophone',
+                        short_name='xyl.',
+                        name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'hcenter-in',
@@ -539,7 +539,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=abjad.Markup(
+                        short_name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'hcenter-in',
@@ -568,9 +568,9 @@ performer_inventory = abjad.instrumenttools.PerformerList(
             instruments=abjad.instrumenttools.InstrumentList(
                 [
                     abjad.instrumenttools.Violin(
-                        instrument_name='violin',
-                        short_instrument_name='vn.',
-                        instrument_name_markup=abjad.Markup(
+                        name='violin',
+                        short_name='vn.',
+                        name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'hcenter-in',
@@ -579,7 +579,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=abjad.Markup(
+                        short_name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'hcenter-in',
@@ -612,12 +612,12 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     abjad.instrumenttools.Percussion(
-                        instrument_name='scraped slate',
-                        short_instrument_name='scraped slate',
-                        instrument_name_markup=abjad.Markup(
+                        name='scraped slate',
+                        short_name='scraped slate',
+                        name_markup=abjad.Markup(
                             contents=('Untuned percussion',),
                             ),
-                        short_instrument_name_markup=abjad.Markup(
+                        short_name_markup=abjad.Markup(
                             contents=('Perc.',),
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
@@ -640,9 +640,9 @@ performer_inventory = abjad.instrumenttools.PerformerList(
             instruments=abjad.instrumenttools.InstrumentList(
                 [
                     abjad.instrumenttools.Viola(
-                        instrument_name='viola',
-                        short_instrument_name='va.',
-                        instrument_name_markup=abjad.Markup(
+                        name='viola',
+                        short_name='va.',
+                        name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'hcenter-in',
@@ -651,7 +651,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=abjad.Markup(
+                        short_name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'hcenter-in',
@@ -694,9 +694,9 @@ performer_inventory = abjad.instrumenttools.PerformerList(
             instruments=abjad.instrumenttools.InstrumentList(
                 [
                     abjad.instrumenttools.Cello(
-                        instrument_name='cello',
-                        short_instrument_name='vc.',
-                        instrument_name_markup=abjad.Markup(
+                        name='cello',
+                        short_name='vc.',
+                        name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'hcenter-in',
@@ -705,7 +705,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                                     ),
                                 ),
                             ),
-                        short_instrument_name_markup=abjad.Markup(
+                        short_name_markup=abjad.Markup(
                             contents=(
                                 abjad.MarkupCommand(
                                     'hcenter-in',

@@ -125,7 +125,7 @@ class RhythmDefinition(abjad.AbjadObject):
     ### PRIVATE METHODS ###
 
     def _attach_untuned_percussion_markup(self, leaf):
-        name = self.instrument.instrument_name
+        name = self.instrument.name
         name = name.lower()
         markup = abjad.Markup(name, direction=Up)
         markup = markup.box().override(('box-padding', 0.5))

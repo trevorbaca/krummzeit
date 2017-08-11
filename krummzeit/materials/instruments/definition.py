@@ -27,17 +27,14 @@ instruments = abjad.TypedOrderedDict([
         'cello',
         abjad.instrumenttools.Cello(
             name_markup=baca.markup.instrument('Cello'),
-            short_name_markup=\
-                baca.markup.short_instrument('Vc.'),
+            short_name_markup=baca.markup.short_instrument('Vc.'),
             )
         ),
     (
         'e-flat cl',
         abjad.instrumenttools.ClarinetInEFlat(
-            name_markup=\
-                baca.markup.instrument('Clarinet (Eb)'),
-            short_name_markup=\
-                baca.markup.short_instrument('Cl. (Eb)'),
+            name_markup=baca.markup.instrument('Clarinet (Eb)'),
+            short_name_markup=baca.markup.short_instrument('Cl. (Eb)'),
             )
         ),
     (
@@ -48,16 +45,14 @@ instruments = abjad.TypedOrderedDict([
         'oboe',
         abjad.instrumenttools.Oboe(
             name_markup=baca.markup.instrument('Oboe'),
-            short_name_markup=\
-                baca.markup.short_instrument('Ob.'),
+            short_name_markup=baca.markup.short_instrument('Ob.'),
             )
         ),
     (
         'percussion',
         abjad.instrumenttools.Percussion(
             name_markup=baca.markup.instrument('Percussion'),
-            short_name_markup=\
-                baca.markup.short_instrument('Perc.'),
+            short_name_markup=baca.markup.short_instrument('Perc.'),
             )
         ),
     (
@@ -68,24 +63,21 @@ instruments = abjad.TypedOrderedDict([
         'viola',
         abjad.instrumenttools.Viola(
             name_markup=baca.markup.instrument('Viola'),
-            short_name_markup=\
-                baca.markup.short_instrument('Va.'),
+            short_name_markup=baca.markup.short_instrument('Va.'),
             )
         ),
     (
         'violin',
         abjad.instrumenttools.Violin(
             name_markup=baca.markup.instrument('Violin'),
-            short_name_markup=\
-                baca.markup.short_instrument('Vn.'),
+            short_name_markup=baca.markup.short_instrument('Vn.'),
             )
         ),
     (
         'xylophone',
         abjad.instrumenttools.Xylophone(
             name_markup=baca.markup.instrument('Xylophone'),
-            short_name_markup=\
-                baca.markup.short_instrument('Xyl.'),
+            short_name_markup=baca.markup.short_instrument('Xyl.'),
             )
         ),
     ])

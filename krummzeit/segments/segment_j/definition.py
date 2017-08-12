@@ -18,9 +18,10 @@ vc = 'Cello Music Voice'
 ###############################################################################
 
 stage_specifier = baca.StageSpecifier([
+    # 1-16
     1, 1, 1, 1, 1,
     1, 1, 1, 1, 1,
-    4, 4, 1, 2, 1, 1, # stages 1-16
+    4, 4, 1, 2, 1, 1,
     ])
 
 tempo_specifier = baca.TempoSpecifier([
@@ -244,9 +245,9 @@ segment_maker.append_commands(
     baca.select_stages(3, 4),
     baca.instrument(krummzeit.instruments['bass clarinet']),
     baca.messiaen_tied_notes(),
-#    baca.RhythmSpecifier(
-#        rhythm_maker=tied_notes,
-#        ),
+    #baca.RhythmSpecifier(
+    #    rhythm_maker=tied_notes,
+    #    ),
     )
 
 segment_maker.append_commands(
@@ -254,9 +255,9 @@ segment_maker.append_commands(
     baca.select_stages(5, 6),
     baca.instrument(krummzeit.instruments['bass clarinet']),
     baca.messiaen_tied_notes(),
-#    baca.RhythmSpecifier(
-#        rhythm_maker=tied_notes,
-#        ),
+    #baca.RhythmSpecifier(
+    #    rhythm_maker=tied_notes,
+    #    ),
     )
 
 segment_maker.append_commands(
@@ -264,9 +265,9 @@ segment_maker.append_commands(
     baca.select_stages(7, 8),
     baca.instrument(krummzeit.instruments['bass clarinet']),
     baca.messiaen_tied_notes(),
-#    baca.RhythmSpecifier(
-#        rhythm_maker=tied_notes,
-#        ),
+    #baca.RhythmSpecifier(
+    #    rhythm_maker=tied_notes,
+    #    ),
     )
 
 segment_maker.append_commands(
@@ -291,7 +292,7 @@ segment_maker.append_commands(
     baca.RhythmSpecifier(
         rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
             talea=abjad.rhythmmakertools.Talea(
-                counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8], 
+                counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
                 denominator=16,
                 ),
             split_divisions_by_counts=[6, 18],
@@ -403,7 +404,7 @@ segment_maker.append_specifiers(
     [([vn, va, vc], (5, 9))],
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=11)],
-        source=krummzeit.violet_pitch_classes.get_payload(),    
+        source=krummzeit.violet_pitch_classes.get_payload(),
         start_index=0,
         ),
     )
@@ -593,7 +594,7 @@ r'''
 36:         4/4 4/4 4/4 4/4 3/4 3/4 3/4 3/4
             28 quarters / 36 = 0.78 minutes
 
-36 --> 135: 3/4 5/4 
+36 --> 135: 3/4 5/4
             8 quarters / 85.5 = 0.09 minutes
 
 135:        3/4

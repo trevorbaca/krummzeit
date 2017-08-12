@@ -18,10 +18,14 @@ vc = 'Cello Music Voice'
 ###############################################################################
 
 stage_specifier = baca.StageSpecifier([
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, # stages 1-12
-    1,  # halt
-    1, 1, 1, 1, 1, 1, 1, 3, # stages 13-20
-    1, # halt
+    # 1-12
+    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+    # halt
+    1,
+    # 13-20
+    1, 1, 1, 1, 1, 1, 1, 3,
+    # halt
+    1,
     ])
 
 tempo_specifier = baca.TempoSpecifier([
@@ -133,7 +137,7 @@ music_maker = segment_maker.append_commands(
 
 segment_maker.copy_specifier(
     (ob, 9),
-    baca.SimpleScope(cl, (9, 12)), # ?
+    baca.SimpleScope(cl, (9, 12)),  # ?
     division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rhythm_maker__denominators=[4, 4, 4, 8],
     )
@@ -148,7 +152,7 @@ segment_maker.append_commands(
 
 segment_maker.copy_specifier(
     (ob, 18),
-    baca.SimpleScope(cl, (18, 21)), # ?
+    baca.SimpleScope(cl, (18, 21)),  # ?
     rhythm_maker__tuplet_ratios=[(1, 3), (1, 1)],
     )
 
@@ -260,7 +264,7 @@ segment_maker.copy_specifier(
 
 segment_maker.copy_specifier(
     (vn, 14),
-    baca.SimpleScope(vc, (14, 20)), # ?
+    baca.SimpleScope(vc, (14, 20)),  # ?
     division_maker__ratios=[(1, 1, 1), (1, 2), (2, 1)],
     )
 
@@ -310,7 +314,7 @@ music_maker = segment_maker.append_commands(
 
 segment_maker.copy_specifier(
     (va, 11),
-    baca.SimpleScope(vc, (11, 12)), # ?
+    baca.SimpleScope(vc, (11, 12)),  # ?
     rhythm_maker__tuplet_ratios=[(3, 2)],
     )
 
@@ -336,7 +340,7 @@ segment_maker.append_commands(
 
 segment_maker.copy_specifier(
     (vn, 21),
-    baca.SimpleScope(va, (20, 21)), # ?
+    baca.SimpleScope(va, (20, 21)),  # ?
     division_maker__counts=[2],
     rhythm_maker__tuplet_ratios=[(1, 4)],
     )
@@ -416,7 +420,7 @@ segment_maker.append_specifiers(
         ],
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=3)],
-        source=krummzeit.indigo_pitch_classes.get_payload()[:20],    
+        source=krummzeit.indigo_pitch_classes.get_payload()[:20],
         start_index=0,
         ),
     )
@@ -518,10 +522,10 @@ segment_maker.append_specifiers(
         ],
     baca.ScorePitchCommand(
         operators=[
-            abjad.Transposition(n=8), 
+            abjad.Transposition(n=8),
             abjad.Inversion()],
         reverse=True,
-        source=krummzeit.violet_pitch_classes.get_payload(),    
+        source=krummzeit.violet_pitch_classes.get_payload(),
         start_index=240,
         ),
     )

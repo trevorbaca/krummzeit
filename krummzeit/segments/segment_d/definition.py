@@ -219,7 +219,7 @@ music_maker = segment_maker.append_commands(
     baca.select_stages(9, 12),
     baca.clef('bass'),
     baca.RhythmSpecifier(
-        rhythm_maker = abjad.rhythmmakertools.NoteRhythmMaker(
+        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
             tie_specifier=abjad.rhythmmakertools.TieSpecifier(
                 tie_across_divisions=True,
                 ),

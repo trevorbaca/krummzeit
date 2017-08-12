@@ -18,8 +18,10 @@ vc = 'Cello Music Voice'
 ###############################################################################
 
 stage_specifier = baca.StageSpecifier([
-    4, 4, 4, 4, 4, 4, # stages 1-6
-    4, 4, 4, 4, 4, 4, # stages 7-12
+    # 1-6
+    4, 4, 4, 4, 4, 4,
+    # 7-12
+    4, 4, 4, 4, 4, 4,
     ])
 
 tempo_specifier = baca.TempoSpecifier([
@@ -130,7 +132,7 @@ segment_maker.append_commands(
     baca.RhythmSpecifier(
         rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
             talea=abjad.rhythmmakertools.Talea(
-                counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8], 
+                counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
                 denominator=4,
                 ),
             split_divisions_by_counts=[6, 18],
@@ -158,7 +160,7 @@ segment_maker.append_commands(
 
 segment_maker.copy_specifier(
     (pf, 1),
-    baca.SimpleScope(vc, (1, 6)), # ?
+    baca.SimpleScope(vc, (1, 6)),  # ?
     rhythm_maker__division_masks=None,
     )
 

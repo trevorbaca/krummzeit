@@ -125,14 +125,14 @@ segment_maker.append_commands(
                 fill_with_notes=False,
                 ),
             beam_specifier=abjad.rhythmmakertools.BeamSpecifier(
-                beam_each_division=False, 
+                beam_each_division=False,
                 ),
             ),
         ),
     )
 
 segment_maker.copy_specifier(
-    (vn, 2), 
+    (vn, 2),
     baca.SimpleScope(va, (2, 2)),
     )
 
@@ -424,7 +424,7 @@ segment_maker.append_commands(
     baca.RhythmSpecifier(
         rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
             talea=abjad.rhythmmakertools.Talea(
-                counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8], 
+                counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
                 denominator=16,
                 ),
             split_divisions_by_counts=[6, 18],
@@ -468,7 +468,7 @@ segment_maker.append_commands(
     ob,
     baca.select_stages(1, 2),
     baca.ScorePitchCommand(
-        source=krummzeit.violet_pitch_classes.get_payload(),    
+        source=krummzeit.violet_pitch_classes.get_payload(),
         start_index=120,
         reverse=True,
         counts=[4, 4, 1, 1, 1, 1, 4, 1, 1, 1],
@@ -578,7 +578,7 @@ segment_maker.append_commands(
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=10)],
         reverse=True,
-        source=krummzeit.violet_pitch_classes.get_payload(),    
+        source=krummzeit.violet_pitch_classes.get_payload(),
         start_index=300,
         ),
     )
@@ -709,7 +709,7 @@ segment_maker.append_commands(
     baca.select_stages(19, 22),
     baca.ScorePitchCommand(
         operators=[
-            abjad.Transposition(n=5), 
+            abjad.Transposition(n=5),
             abjad.Inversion()],
         reverse=True,
         source=krummzeit.indigo_pitch_classes.get_payload(),
@@ -866,13 +866,13 @@ r'''
 90:         4/4
             {4 quarters / 90 = 0.04 minutes}
 
-108:        11/8 3/4 
+108:        11/8 3/4
             {8.5 quarters / 108 = 0.08 minutes}
 
 90:         5/8 9/8 9/8 7/8 9/8
             {19.5 quarters / 90 = 0.22 minutes}
 
-135:        3/4 3/4 
+135:        3/4 3/4
             {6 quarters / 135 = 0.04 minutes}
 
 45:         3/4 3/4 4/4 5/4 4/4 9/8

@@ -193,14 +193,14 @@ music_maker = segment_maker.append_commands(
 
 segment_maker.copy_specifier(
     (vn, 5),
-    baca.SimpleScope(va, (5, 13)), # ?
+    baca.SimpleScope(va, (5, 13)),  # ?
     rhythm_maker__tuplet_ratios=[(1, 6)],
     rhythm_maker__division_masks=[abjad.Pattern(indices=[0, 1])],
     )
 
 segment_maker.copy_specifier(
     (vn, 5),
-    baca.SimpleScope(vc, (5, 13)), # ?
+    baca.SimpleScope(vc, (5, 13)),  # ?
     rhythm_maker__tuplet_ratios=[(6, 1)],
     rhythm_maker__division_masks=[abjad.Pattern(indices=[0, 1])],
     )
@@ -228,7 +228,7 @@ music_maker = segment_maker.append_commands(
 
 segment_maker.copy_specifier(
     (ob, 3),
-    baca.SimpleScope(cl, (3, 7)), # ?
+    baca.SimpleScope(cl, (3, 7)),  # ?
     division_maker__durations=[(4, 8), (2, 8), (4, 8), (3, 8)],
     rhythm_maker__denominators=[4, 4, 4, 8],
     )
@@ -358,7 +358,7 @@ segment_maker.append_specifiers(
         ],
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=2)],
-        source=krummzeit.indigo_pitch_classes.get_payload(),    
+        source=krummzeit.indigo_pitch_classes.get_payload(),
         start_index=0,
         ),
     )
@@ -475,7 +475,7 @@ segment_maker.append_commands(
 ### TIMINGS ###
 
 r'''
-72:         9/8 5/8 5/8 4/4 5/4 3/4 3/4 3/4 9/8 7/8 
+72:         9/8 5/8 5/8 4/4 5/4 3/4 3/4 3/4 9/8 7/8
             35.5 quarters / 72 = 0.49 minutes
 
 72 --> 144: 6/4 7/4 3/4 7/4 11/8 5/8 4/4 6/4

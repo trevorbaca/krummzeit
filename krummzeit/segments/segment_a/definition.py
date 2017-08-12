@@ -85,7 +85,7 @@ music_maker = segment_maker.append_commands(
 segment_maker.copy_specifier(
     (vn, 1),
     baca.SimpleScope(va, (1, 1)),
-    ) 
+    )
 
 segment_maker.copy_specifier(
     (vn, 1),
@@ -283,7 +283,7 @@ segment_maker.append_specifiers(
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=10)],
         reverse=True,
-        source=krummzeit.violet_pitch_classes.get_payload(),    
+        source=krummzeit.violet_pitch_classes.get_payload(),
         start_index=300,
         ),
     )

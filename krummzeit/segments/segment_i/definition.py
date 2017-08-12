@@ -18,8 +18,9 @@ vc = 'Cello Music Voice'
 ###############################################################################
 
 stage_specifier = baca.StageSpecifier([
-    2, 1, 1, 1, 1, 1, 1, 2, # stages 1-8
-    ]) 
+    # 1-8
+    2, 1, 1, 1, 1, 1, 1, 2,
+    ])
 
 tempo_specifier = baca.TempoSpecifier([
     (1, krummzeit.named_tempi['90']),
@@ -126,13 +127,13 @@ segment_maker.append_commands(
 
 segment_maker.copy_specifier(
     (vn, 2),
-    baca.SimpleScope(va, (2, 4)), # ?
+    baca.SimpleScope(va, (2, 4)),  # ?
     division_maker__ratios=[(2, 1), (1, 1, 1), (1, 2)],
     )
 
 segment_maker.copy_specifier(
     (vn, 2),
-    baca.SimpleScope(vc, (2, 4)), # ?
+    baca.SimpleScope(vc, (2, 4)),  # ?
     division_maker__ratios=[(1, 1, 1), (1, 2), (2, 1)],
     )
 
@@ -222,7 +223,7 @@ segment_maker.append_commands(
 
 segment_maker.copy_specifier(
     (ob, 7),
-    baca.SimpleScope(cl, (7, 8)), # ?
+    baca.SimpleScope(cl, (7, 8)),  # ?
     rhythm_maker__tuplet_ratios=[(1, 4)],
     )
 
@@ -328,7 +329,7 @@ segment_maker.append_specifiers(
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=8), abjad.Inversion()],
         reverse=True,
-        source=krummzeit.violet_pitch_classes.get_payload(),    
+        source=krummzeit.violet_pitch_classes.get_payload(),
         start_index=240,
         ),
     )
@@ -479,7 +480,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    cl, 
+    cl,
     baca.select_stages(3, 6),
     baca.dynamic_line_spanner_staff_padding(3),
     )

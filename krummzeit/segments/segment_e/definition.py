@@ -352,7 +352,7 @@ segment_maker.append_commands(
                 fill_with_notes=False,
                 ),
             beam_specifier=abjad.rhythmmakertools.BeamSpecifier(
-                beam_each_division=False, 
+                beam_each_division=False,
                 ),
             ),
         ),
@@ -437,7 +437,7 @@ segment_maker.append_specifiers(
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=7)],
         reverse=True,
-        source=krummzeit.violet_pitch_classes.get_payload(),    
+        source=krummzeit.violet_pitch_classes.get_payload(),
         start_index=240,
         ),
     )
@@ -491,7 +491,7 @@ segment_maker.append_specifiers(
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=7), abjad.Inversion()],
         reverse=True,
-        source=krummzeit.violet_pitch_classes.get_payload(),    
+        source=krummzeit.violet_pitch_classes.get_payload(),
         start_index=240,
         ),
     )

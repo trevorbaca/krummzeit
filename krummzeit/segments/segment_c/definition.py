@@ -18,18 +18,18 @@ vc = 'Cello Music Voice'
 ###############################################################################
 
 stage_specifier = baca.StageSpecifier([
-    4, 1,   # stage 1 + 1 halt
-    1, 1, 1, 1, 1, 1, 1, 1, # stage 2 + 4 halts
-    1, 1, 1, 1, 1, 1, 1, 1, # stage 3 + 4 halts
-    2,  # stage 4
-    2,  # stage 5
-    2,  # stage 6
-    1, 1, 1, 1, # stage 7 + 2 halts
-    2,  # stage 8
-    2,  # stage 9
-    4,  # stage 10
-    3,  # stage 11
-    2,  # stage 12
+    4, 1,                       # stage 1 + 1 halt
+    1, 1, 1, 1, 1, 1, 1, 1,     # stage 2 + 4 halts
+    1, 1, 1, 1, 1, 1, 1, 1,     # stage 3 + 4 halts
+    2,                          # stage 4
+    2,                          # stage 5
+    2,                          # stage 6
+    1, 1, 1, 1,                 # stage 7 + 2 halts
+    2,                          # stage 8
+    2,                          # stage 9
+    4,                          # stage 10
+    3,                          # stage 11
+    2,                          # stage 12
     ])
 
 tempo_specifier = baca.TempoSpecifier([
@@ -390,7 +390,7 @@ music_maker = segment_maker.append_commands(
     baca.RhythmSpecifier(
         rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
             talea=abjad.rhythmmakertools.Talea(
-                counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8], 
+                counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
                 denominator=16,
                 ),
             split_divisions_by_counts=[6, 18],
@@ -439,7 +439,7 @@ segment_maker.append_commands(
     ob,
     baca.select_stages(1, 27),
     baca.ScorePitchCommand(
-        source=krummzeit.violet_pitch_classes.get_payload(),    
+        source=krummzeit.violet_pitch_classes.get_payload(),
         start_index=120,
         reverse=True,
         counts=[1, 1, 1, 1, 4, 1, 1, 1, 4, 4],
@@ -522,10 +522,10 @@ segment_maker.append_commands(
     va,
     baca.select_stages(10, 19),
     # TODO: make work again after extending baca.hairpins():
-#    baca.hairpins(
-#        ['ff > pp'],
-#        patterns=[abjad.Pattern(indices=[0, 1])],
-#        ),
+    #baca.hairpins(
+    #    ['ff > pp'],
+    #    patterns=[abjad.Pattern(indices=[0, 1])],
+    #    ),
     )
 
 segment_maker.append_commands(
@@ -551,10 +551,10 @@ segment_maker.append_commands(
     vc,
     baca.select_stages(10, 19),
     # TODO: make work again after extending baca.hairpins():
-#    baca.hairpins(
-#        ['ff > pp'],
-#        patterns=[abjad.Pattern(indices=[0, 1])],
-#        ),
+    #baca.hairpins(
+    #    ['ff > pp'],
+    #    patterns=[abjad.Pattern(indices=[0, 1])],
+    #    ),
     )
 
 segment_maker.append_commands(
@@ -564,7 +564,7 @@ segment_maker.append_commands(
         counts=[1, 1, 1, 1, 4, 1, 1, 1, 4, 4],
         operators=[abjad.Transposition(n=3)],
         reverse=True,
-        source=krummzeit.violet_pitch_classes.get_payload(),    
+        source=krummzeit.violet_pitch_classes.get_payload(),
         start_index=120,
         ),
     )

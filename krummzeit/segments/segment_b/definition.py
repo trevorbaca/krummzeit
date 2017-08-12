@@ -18,16 +18,16 @@ vc = 'Cello Music Voice'
 ###############################################################################
 
 stage_specifier = baca.StageSpecifier([
-    3, 1, 3, 4, # stages 1-4
-    3, 1, 3, 4, # stages 5-8
-    6,          # stage 9 
-    3, 2,       # stages 10-11
-    3, 1, 1,    # stages 12-14
-    6,          # stage 15
-    3,          # stage 16
-    4, 2, 3,    # stages 17-19
-    4, 8,       # stages 20-21
-    3, 4,       # stages 22-23
+    3, 1, 3, 4,     # stages 1-4
+    3, 1, 3, 4,     # stages 5-8
+    6,              # stage 9
+    3, 2,           # stages 10-11
+    3, 1, 1,        # stages 12-14
+    6,              # stage 15
+    3,              # stage 16
+    4, 2, 3,        # stages 17-19
+    4, 8,           # stages 20-21
+    3, 4,           # stages 22-23
     ])
 
 tempo_specifier = baca.TempoSpecifier([
@@ -403,7 +403,7 @@ music_maker = segment_maker.append_commands(
     baca.RhythmSpecifier(
         rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
             talea=abjad.rhythmmakertools.Talea(
-                counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8], 
+                counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
                 denominator=16,
                 ),
             split_divisions_by_counts=[6, 18],
@@ -529,7 +529,7 @@ segment_maker.append_commands(
     [pf, vn, cl],
     baca.select_stages(1, 4),
     baca.ScorePitchCommand(
-        source=krummzeit.indigo_pitch_classes.get_payload(),    
+        source=krummzeit.indigo_pitch_classes.get_payload(),
         start_index=0,
         ),
     )
@@ -539,7 +539,7 @@ segment_maker.append_commands(
     [pf, vn, ob, cl],
     baca.select_stages(5, 13),
     baca.ScorePitchCommand(
-        source=krummzeit.indigo_pitch_classes.get_payload(),    
+        source=krummzeit.indigo_pitch_classes.get_payload(),
         start_index=0,
         ),
     )
@@ -701,7 +701,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     [va, vc],
     baca.select_stages(1, 4),
-    baca.dynamic('mf'), 
+    baca.dynamic('mf'),
     baca.markup.molto_flautando(),
     )
 
@@ -717,7 +717,7 @@ segment_maker.append_commands(
     baca.select_stages(9),
     baca.dynamic('ff'),
     )
-    
+
 #### sponges [B1], [B5-10] ###
 #segment_maker.append_commands(
 #    perc, #    [baca.select_stages(1), baca.select_stages(9, 14)],
@@ -735,7 +735,7 @@ segment_maker.append_specifiers(
         (vn, baca.select_stages(14, 18)),
         ],
     baca.ScorePitchCommand(
-        source=krummzeit.violet_pitch_classes.get_payload(),    
+        source=krummzeit.violet_pitch_classes.get_payload(),
         start_index=0,
         ),
     )
@@ -817,7 +817,7 @@ segment_maker.append_specifiers(
         (pf, (20, 23)),
         ],
     baca.ScorePitchCommand(
-        source=krummzeit.violet_pitch_classes.get_payload(),    
+        source=krummzeit.violet_pitch_classes.get_payload(),
         start_index=60,
         operators=[abjad.Transposition(n=1)],
         ),

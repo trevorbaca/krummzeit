@@ -18,9 +18,9 @@ vc = 'Cello Music Voice'
 ###############################################################################
 
 stage_specifier = baca.StageSpecifier([
-    2, 1, # stage 1 + halt
-    1, 1, 1, 1, 1, 1, # stages 2-6 + halt
-    1, 3, # stages 7-8
+    2, 1,               # stage 1 + halt
+    1, 1, 1, 1, 1, 1,   # stages 2-6 + halt
+    1, 3,               # stages 7-8
     ])
 
 tempo_specifier = baca.TempoSpecifier([

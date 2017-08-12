@@ -60,7 +60,7 @@ segment_time_signatures['F'] = time_signatures
 time_signatures = time_signature_inventory[2]
 time_signatures = baca.sequence(time_signatures).flatten()
 assert len(time_signatures) == 11
-time_signatures =list(time_signatures)
+time_signatures = list(time_signatures)
 time_signatures.insert(8, abjad.TimeSignature((1, 4)))
 time_signatures.insert(4, abjad.TimeSignature((1, 4)))
 time_signatures.insert(3, abjad.TimeSignature((1, 4)))

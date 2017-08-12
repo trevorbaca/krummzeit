@@ -12,6 +12,7 @@ def make_numerators(numerators, addenda):
     numerators = [sum(_) for _ in pairs]
     return numerators
 
+
 numerators = [[3, 3, 4], [3, 5, 6], [3, 7]]
 addenda = [0, 0, 0.5, 0.5, 1, 1, 0, 0, -0.5, -0.5, -1, -1]
 red_numerators = make_numerators(numerators, addenda)
@@ -24,12 +25,13 @@ assert len(blue_numerators) == 70 and sum(blue_numerators) == 260
 
 numerators = red_numerators + blue_numerators
 numerators = numerators + numerators
-assert len(numerators) == 236  and sum(numerators) == 928
+assert len(numerators) == 236 and sum(numerators) == 928
 
 ratio = [3, 2, 1, 1, 3, 2, 1, 1, 3, 2, 1, 1]
 numerator_lists = baca.sequence(numerators)
 numerator_lists = numerator_lists.partition_by_ratio_of_weights(weights=ratio)
 assert len(numerator_lists) == 12
+
 
 def numerator_to_time_signature(numerator):
     if abjad.mathtools.is_integer_equivalent_number(numerator):
@@ -37,6 +39,7 @@ def numerator_to_time_signature(numerator):
     else:
         time_signature = abjad.TimeSignature((int(2 * numerator), 8))
     return time_signature
+
 
 time_signature_inventory = []
 for numerator_list in numerator_lists:

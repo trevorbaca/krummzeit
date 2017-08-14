@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import baca
 import abjad
 from krummzeit.materials.time_signature_inventory.definition import \

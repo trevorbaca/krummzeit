@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import abjad
 from krummzeit.materials.tempi.definition import tempi
 

@@ -12,7 +12,7 @@ class MarkupLibrary(abjad.AbjadObject):
         )
 
     ### PUBLIC METHODS ###
-    
+
     def accent_changes():
         string = 'accent changes of direction noticeably at each attack'
         return baca.markup(string)
@@ -33,7 +33,7 @@ class MarkupLibrary(abjad.AbjadObject):
         string = 'rapid roll with fingertips:'
         string += ' keep speed constant during accelerando'
         return baca.markup(string)
-        
+
     def fifth_harmonic_of_F1():
         string = '5th harmonic of F1'
         return baca.markup(string)
@@ -42,7 +42,7 @@ class MarkupLibrary(abjad.AbjadObject):
         left_text = abjad.Markup('grid. possibile').italic().larger() + abjad.Markup.hspace(1)
         right_text = abjad.Markup.hspace(1) + abjad.Markup('flaut. possibile').italic().larger()
         spanner = abjad.TextSpanner(
-            overrides = {
+            overrides={
                 'text_spanner__bound_details__left__padding': -1,
                 'text_spanner__bound_details__left__stencil_align_dir_y': 0,
                 'text_spanner__bound_details__left__text': left_text,
@@ -93,11 +93,11 @@ class MarkupLibrary(abjad.AbjadObject):
     def subito_non_armonichi():
         string = 'subito non armonichi e non gridato'
         return baca.markup(string)
-        
+
     def suspended_cymbal():
         string = 'suspended cymbal'
         return baca.markup.boxed(string)
-        
+
     def tam_tam():
         string = 'tam-tam'
         return baca.markup.boxed(string)

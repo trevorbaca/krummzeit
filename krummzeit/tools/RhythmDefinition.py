@@ -1,4 +1,5 @@
 import abjad
+import baca
 
 
 class RhythmDefinition(abjad.AbjadObject):
@@ -54,7 +55,7 @@ class RhythmDefinition(abjad.AbjadObject):
 
     _publish_storage_format = True
 
-    ### INITIALIZER ###    
+    ### INITIALIZER ###
 
     def __init__(
         self,
@@ -97,16 +98,16 @@ class RhythmDefinition(abjad.AbjadObject):
             first_component = first_item[0]
         else:
             first_component = first_item
-        first_leaf = inspect_(first_component).get_leaf(0)
+        first_leaf = abjad.inspect(first_component).get_leaf(0)
         assert isinstance(first_leaf, abjad.Leaf), repr(first_leaf)
         prototype = abjad.instrumenttools.Percussion
         if self.instrument is not None:
-            attach(self.instrument, first_leaf)
+            abjad.attach(self.instrument, first_leaf)
         if (isinstance(self.instrument, prototype) and
             not self._hide_untuned_percussion_markup):
             self._attach_untuned_percussion_markup(first_leaf)
         if self.clef is not None:
-            attach(self.clef, first_leaf)
+            abjad.attach(self.clef, first_leaf)
         if self.staff_line_count is not None:
             self._set_staff_line_count(first_leaf, self.staff_line_count)
         elif self.clef == abjad.Clef('percussion'):
@@ -120,6 +121,7 @@ class RhythmDefinition(abjad.AbjadObject):
         maker = abjad.rhythmmakertools.NoteRhythmMaker(
             division_masks=[abjad.silence_all()],
             )
+        return maker
 
     ### PRIVATE METHODS ###
 
@@ -128,7 +130,7 @@ class RhythmDefinition(abjad.AbjadObject):
         name = name.lower()
         markup = abjad.Markup(name, direction=Up)
         markup = markup.box().override(('box-padding', 0.5))
-        attach(markup, leaf)
+        abjad.attach(markup, leaf)
 
     def _get_rhythm_maker(self):
         if self.rhythm_maker is not None:
@@ -148,7 +150,7 @@ class RhythmDefinition(abjad.AbjadObject):
 
     def _make_rhythm(self, time_signatures):
         if self.division_maker is not None:
-            divisions = self.division_maker(time_signatures) 
+            divisions = self.division_maker(time_signatures)
         else:
             divisions = [abjad.NonreducedFraction(_) for _ in time_signatures]
         divisions = baca.sequence(divisions).flatten()
@@ -169,7 +171,7 @@ class RhythmDefinition(abjad.AbjadObject):
         for rhythm_overwrite in self.rhythm_overwrites:
             selector, division_maker, rhythm_maker = rhythm_overwrite
             old_music_selection = selector(dummy_music_voice)
-            prototype = abjad.ContiguousSelection
+            #prototype = abjad.ContiguousSelection
             #if 1 < len(old_music_selection):
             if True:
                 old_music_selection = abjad.SliceSelection(
@@ -195,7 +197,7 @@ class RhythmDefinition(abjad.AbjadObject):
             #    old_component = old_music_selection[0]
             #    index = dummy_music_voice.index(old_component)
             #    dummy_music_voice[index:index+1] = new_music_selection
-        music = dummy_music_voice[:]
+        #music = dummy_music_voice[:]
         return dummy_music_voice
 
     def _set_staff_line_count(self, first_leaf, staff_line_count):
@@ -278,8 +280,8 @@ class RhythmDefinition(abjad.AbjadObject):
             self._stages = argument
         elif abjad.mathtools.is_positive_integer(argument):
             self._stages = (argument, argument)
-        elif (abjad.mathtools.all_are_positive_integers(argument)
-            and len(argument) == 2):
+        elif (abjad.mathtools.all_are_positive_integers(argument) and
+            len(argument) == 2):
             self._stages = tuple(argument)
         else:
             message = 'positive integer or pair of positive integers: {!r}.'

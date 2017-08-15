@@ -1,4 +1,3 @@
-import abjad
 import baca
 
 
@@ -8,7 +7,7 @@ def displacement():
     return baca.OctaveDisplacementCommand(
         displacements=[
             0, 0, 0, 0, 0, 0, -1, 1, 1, 1, 1,
-            0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 
+            0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1,
             -1, -1, -1, -1,
             ],
         )

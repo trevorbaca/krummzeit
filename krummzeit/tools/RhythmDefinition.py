@@ -26,12 +26,12 @@ class RhythmDefinition(abjad.AbjadObject):
         ::
 
             >>> f(music_maker)
-            krummzeit.tools.RhythmDefinition(
+            krummzeit.RhythmDefinition(
                 voice_name='Cello Music Voice',
-                division_maker=baca.tools.FuseByCountsDivisionCallback(
+                division_maker=baca.FuseByCountsDivisionCallback(
                     counts=[2, 3, 1],
                     ),
-                rhythm_maker=rhythmmakertools.NoteRhythmMaker(),
+                rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(),
                 stages=(1, 4),
                 )
 

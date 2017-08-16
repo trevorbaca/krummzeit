@@ -1,0 +1,3 @@
+[submodule "krummzeit/test"]
+	path = krummzeit/test
+	url = https://github.com/trevorbaca/test.git

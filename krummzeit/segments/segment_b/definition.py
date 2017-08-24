@@ -86,7 +86,7 @@ segment_maker.append_commands(
         rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
             preferred_denominator=abjad.Duration(1, 4),
             tuplet_ratios=[(3, 2)],
-            tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
+            tuplet_specifier=abjad.rhythmmakertools.TupletSpecifier(
                 avoid_dots=True,
                 is_diminution=False,
                 ),
@@ -158,7 +158,7 @@ rhythm_overwrite = (
         durations=[(1, 4)],
         ),
     abjad.rhythmmakertools.NoteRhythmMaker(
-        duration_spelling_specifier=abjad.rhythmmakertools.DurationSpellingSpecifier(
+        duration_specifier=abjad.rhythmmakertools.DurationSpecifier(
             spell_metrically=True,
             ),
         ),

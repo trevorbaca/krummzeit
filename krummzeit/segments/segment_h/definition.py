@@ -109,7 +109,7 @@ music_maker = segment_maker.append_commands(
         rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
             preferred_denominator=abjad.Duration(1, 4),
             tuplet_ratios=[(3, 2), (1, 4)],
-            tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
+            tuplet_specifier=abjad.rhythmmakertools.TupletSpecifier(
                 avoid_dots=True,
                 is_diminution=False,
                 ),
@@ -303,7 +303,7 @@ music_maker = segment_maker.append_commands(
         rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
             preferred_denominator=abjad.Duration(1, 4),
             tuplet_ratios=[(1, 4)],
-            tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
+            tuplet_specifier=abjad.rhythmmakertools.TupletSpecifier(
                 avoid_dots=True,
                 is_diminution=False,
                 ),
@@ -329,7 +329,7 @@ segment_maker.append_commands(
         rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
             preferred_denominator=abjad.Duration(1, 4),
             tuplet_ratios=[(3, 2)],
-            tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
+            tuplet_specifier=abjad.rhythmmakertools.TupletSpecifier(
                 avoid_dots=True,
                 is_diminution=False,
                 ),

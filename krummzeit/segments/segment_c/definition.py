@@ -189,7 +189,7 @@ music_maker = segment_maker.append_commands(
             tuplet_ratios=[
                 (2, 1),
                 ],
-            tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
+            tuplet_specifier=abjad.rhythmmakertools.TupletSpecifier(
                 avoid_dots=True,
                 is_diminution=False,
                 ),
@@ -275,7 +275,7 @@ music_maker = segment_maker.append_commands(
                 (-1, 1, 1, 2),
                 (-1, 1, 1, -2, 2),
                 ],
-            tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
+            tuplet_specifier=abjad.rhythmmakertools.TupletSpecifier(
                 avoid_dots=True,
                 ),
             ),

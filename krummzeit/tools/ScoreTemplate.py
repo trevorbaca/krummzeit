@@ -16,13 +16,11 @@ class ScoreTemplate(baca.ScoreTemplate):
         ::
 
             >>> template = krummzeit.ScoreTemplate()
-            >>> lilypond_file = template.__illustrate__()
-            >>> path = pathlib.Path(krummzeit.__path__[0], 'stylesheets')
-            >>> path = path.joinpath('context-definitions.ily')
-            >>> lilypond_file = abjad.new(
-            ...     lilypond_file,
+            >>> path = pathlib.Path(krummzeit.__path__[0])
+            >>> path = path / 'stylesheets' / 'context-definitions.ily'
+            >>> lilypond_file = template.__illustrate__(
             ...     global_staff_size=15,
-            ...     includes=[str(path)],
+            ...     includes=[path],
             ...     )
             >>> show(lilypond_file) # doctest: +SKIP
 
@@ -196,10 +194,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             'cello',
             )
         tag_string = '.'.join(instrument_tags)
-        tag_string = 'tag {}'.format(tag_string)
-        tag_command = abjad.LilyPondCommand(tag_string, 'before')
-        abjad.attach(tag_command, time_signature_context)
-
+        self._attach_tag(tag_string, time_signature_context)
+        # OBOE
         oboe_music_voice = abjad.Voice(
             [],
             context_name='OboeMusicVoice',
@@ -216,12 +212,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['oboe'],
             )
-        abjad.annotate(
-            oboe_music_staff,
-            'default_clef',
-            abjad.Clef('treble'),
-            )
-
+        # CLARINET
         clarinet_music_voice = abjad.Voice(
             [],
             context_name='ClarinetMusicVoice',
@@ -238,18 +229,13 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['e-flat cl'],
             )
-        abjad.annotate(
-            clarinet_music_staff,
-            'default_clef',
-            abjad.Clef('treble'),
-            )
-
+        # WIND SECTION
         wind_section_staff_group = abjad.StaffGroup(
             [oboe_music_staff, clarinet_music_staff],
             context_name='WindSectionStaffGroup',
             name='Wind Section Staff Group',
             )
-
+        # PIANO
         piano_music_voice = abjad.Voice(
             [],
             context_name='PianoMusicVoice',
@@ -266,12 +252,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['piano'],
             )
-        abjad.annotate(
-            piano_music_staff,
-            'default_clef',
-            abjad.Clef('treble'),
-            )
-
+        # PERCUSSION
         percussion_music_voice = abjad.Voice(
             [],
             context_name='PercussionMusicVoice',
@@ -288,18 +269,13 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['percussion'],
             )
-        abjad.annotate(
-            percussion_music_staff,
-            'default_clef',
-            abjad.Clef('percussion'),
-            )
-
+        # PERCUSSION SECTION
         percussion_section_staff_group = abjad.StaffGroup(
             [piano_music_staff, percussion_music_staff],
             context_name='PercussionSectionStaffGroup',
             name='Percussion Section Staff Group',
             )
-
+        # VIOLIN
         violin_music_voice = abjad.Voice(
             [],
             context_name='ViolinMusicVoice',
@@ -316,12 +292,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['violin'],
             )
-        abjad.annotate(
-            violin_music_staff,
-            'default_clef',
-            abjad.Clef('treble'),
-            )
-
+        # VIOLA
         viola_music_voice = abjad.Voice(
             [],
             context_name='ViolaMusicVoice',
@@ -338,12 +309,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['viola'],
             )
-        abjad.annotate(
-            viola_music_staff,
-            'default_clef',
-            abjad.Clef('alto'),
-            )
-
+        # CELLO
         cello_music_voice = abjad.Voice(
             [],
             context_name='CelloMusicVoice',
@@ -360,17 +326,13 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['cello'],
             )
-        abjad.annotate(
-            cello_music_staff,
-            'default_clef',
-            abjad.Clef('bass'),
-            )
-
+        # STRING SECTION
         string_section_staff_group = abjad.StaffGroup(
             [violin_music_staff, viola_music_staff, cello_music_staff],
             context_name='StringSectionStaffGroup',
             name='String Section Staff Group',
             )
+        # SCORE
         music_context = abjad.Context(
             [
                 wind_section_staff_group,

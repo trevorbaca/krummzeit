@@ -294,7 +294,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     ob,
     baca.select_stages(5),
-    baca.instrument(krummzeit.instruments['e-flat cl']),
+    baca.instrument(krummzeit.instruments['e-flat clarinet']),
     )
 
 segment_maker.copy_specifier(

@@ -144,7 +144,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     cl,
     baca.select_stages(9),
-    baca.instrument(krummzeit.instruments['e-flat cl']),
+    baca.instrument(krummzeit.instruments['e-flat clarinet']),
     )
 
 ### bass clarinet [H18-21] reiteration pedal ###

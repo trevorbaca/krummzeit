@@ -120,7 +120,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     cl,
     baca.select_stages(1),
-    baca.instrument(krummzeit.instruments['e-flat cl']),
+    baca.instrument(krummzeit.instruments['e-flat clarinet']),
     baca.RhythmSpecifier(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,

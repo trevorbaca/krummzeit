@@ -3,7 +3,7 @@ import abjad
 
 performers = abjad.PerformerDictionary([
     ('oboe', ['oboe']),
-    ('clarinet', ['e-flat clarinet', 'bass clarinet']),
+    ('clarinet', ['e-flat clarinetarinet', 'bass clarinet']),
     ('piano', ['piano', 'harpsichord']),
     ('percussion', [
         'bass drum',

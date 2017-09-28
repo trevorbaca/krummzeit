@@ -30,18 +30,18 @@ stage_specifier = baca.StageSpecifier([
     ])
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, krummzeit.tempi[3]),
-    (9, krummzeit.tempi[4]),
+    (1, krummzeit.named_tempi['135']),
+    (9, krummzeit.named_tempi['67.5']),
     (9, krummzeit.metric_modulations['4=8']),
     (10, abjad.Accelerando()),
-    (12, krummzeit.tempi[3]),
-    (15, krummzeit.tempi[2]),
+    (12, krummzeit.named_tempi['135']),
+    (15, krummzeit.named_tempi['90']),
     (15, krummzeit.metric_modulations['4.=4']),
     (16, abjad.Accelerando()),
-    (17, krummzeit.tempi[3]),
-    (20, krummzeit.tempi[1]),
+    (17, krummzeit.named_tempi['135']),
+    (20, krummzeit.named_tempi['108']),
     (20, krummzeit.metric_modulations['4=4:5(4)']),
-    (22, krummzeit.tempi[1]),
+    (22, krummzeit.named_tempi['108']),
     ])
 
 maker = baca.TimeSignatureMaker(
@@ -256,7 +256,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     cl,
     baca.select_stages(3, 4),
-    baca.instrument(krummzeit.instruments['e-flat cl']),
+    baca.instrument(krummzeit.instruments['e-flat clarinet']),
     )
 
 segment_maker.copy_specifier(
@@ -479,7 +479,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     cl,
     baca.select_stages(22, 23),
-    baca.instrument(krummzeit.instruments['e-flat cl']),
+    baca.instrument(krummzeit.instruments['e-flat clarinet']),
     baca.RhythmSpecifier(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,

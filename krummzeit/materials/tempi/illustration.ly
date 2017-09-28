@@ -25,16 +25,10 @@
             \time 2/4
             \break
             c'2
-            \tempo 4=72
+            \tempo 4=36
             \break
             c'2
-            \tempo 4=108
-            \break
-            c'2
-            \tempo 4=90
-            \break
-            c'2
-            \tempo 4=135
+            \tempo 4=45
             \break
             c'2
             \tempo \markup {
@@ -51,7 +45,7 @@
                 }
             \break
             c'2
-            \tempo 4=36
+            \tempo 4=72
             \break
             c'2
             \tempo \markup {
@@ -86,10 +80,16 @@
                 }
             \break
             c'2
-            \tempo 4=144
+            \tempo 4=90
             \break
             c'2
-            \tempo 4=45
+            \tempo 4=108
+            \break
+            c'2
+            \tempo 4=135
+            \break
+            c'2
+            \tempo 4=144
             \break
             c'2
         }

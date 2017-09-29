@@ -96,7 +96,7 @@
         \context GlobalSkips = "Global Skips" {
             {
                 \time 4/4
-                \mark #10
+                \mark #9
                 s1 * 1 ^ \markup {
                     \fontsize
                         #-6
@@ -340,7 +340,7 @@
                 \context ClarinetMusicVoice = "Clarinet Music Voice" {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 8/5 {
-                        \set Staff.instrumentName = \markup {
+                        \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
                                 \center-column
@@ -349,7 +349,7 @@
                                         clarinet
                                     }
                             }
-                        \set Staff.shortInstrumentName = \markup {
+                        \set ClarinetMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
                                 #10
                                 \center-column
@@ -375,7 +375,7 @@
                         \revert TupletBracket.staff-padding
                     }
                     s1 * 9/8
-                    \set Staff.instrumentName = \markup {
+                    \set ClarinetMusicStaff.instrumentName = \markup {
                         \hcenter-in
                             #16
                             \center-column
@@ -384,7 +384,7 @@
                                     clarinet
                                 }
                         }
-                    \set Staff.shortInstrumentName = \markup {
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup {
                         \hcenter-in
                             #10
                             \center-column
@@ -398,7 +398,7 @@
                     fs2. \ff
                     fs4. \repeatTie
                     fs4 \repeatTie
-                    \set Staff.instrumentName = \markup {
+                    \set ClarinetMusicStaff.instrumentName = \markup {
                         \hcenter-in
                             #16
                             \center-column
@@ -407,7 +407,7 @@
                                     clarinet
                                 }
                         }
-                    \set Staff.shortInstrumentName = \markup {
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup {
                         \hcenter-in
                             #10
                             \center-column
@@ -420,7 +420,7 @@
                     fs4. \repeatTie
                     fs2. \repeatTie
                     fs4. \repeatTie \fff
-                    \set Staff.instrumentName = \markup {
+                    \set ClarinetMusicStaff.instrumentName = \markup {
                         \hcenter-in
                             #16
                             \center-column
@@ -429,7 +429,7 @@
                                     clarinet
                                 }
                         }
-                    \set Staff.shortInstrumentName = \markup {
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup {
                         \hcenter-in
                             #10
                             \center-column
@@ -442,7 +442,7 @@
                     fs4 \repeatTie
                     fs4. \repeatTie
                     fs4 \repeatTie
-                    \set Staff.instrumentName = \markup {
+                    \set ClarinetMusicStaff.instrumentName = \markup {
                         \hcenter-in
                             #16
                             \center-column
@@ -451,7 +451,7 @@
                                     clarinet
                                 }
                         }
-                    \set Staff.shortInstrumentName = \markup {
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup {
                         \hcenter-in
                             #10
                             \center-column
@@ -469,7 +469,7 @@
                             }
                     fs2. \repeatTie
                     fs2 \repeatTie
-                    \set Staff.instrumentName = \markup {
+                    \set ClarinetMusicStaff.instrumentName = \markup {
                         \hcenter-in
                             #16
                             \center-column
@@ -478,7 +478,7 @@
                                     clarinet
                                 }
                         }
-                    \set Staff.shortInstrumentName = \markup {
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup {
                         \hcenter-in
                             #10
                             \center-column
@@ -3469,12 +3469,12 @@
                 \context PercussionMusicVoice = "Percussion Music Voice" {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 8/7 {
-                        \set Staff.instrumentName = \markup {
+                        \set PercussionMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
                                 Xylophone
                             }
-                        \set Staff.shortInstrumentName = \markup {
+                        \set PercussionMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
                                 #10
                                 Xyl.

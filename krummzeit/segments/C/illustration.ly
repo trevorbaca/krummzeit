@@ -529,7 +529,7 @@
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
                         s1 * 65/8
-                        \set Staff.instrumentName = \markup {
+                        \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
                                 \center-column
@@ -538,7 +538,7 @@
                                         clarinet
                                     }
                             }
-                        \set Staff.shortInstrumentName = \markup {
+                        \set ClarinetMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
                                 #10
                                 \center-column

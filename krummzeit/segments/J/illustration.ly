@@ -427,7 +427,7 @@
                 \tag winds.clarinet
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
-                        \set Staff.instrumentName = \markup {
+                        \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
                                 \center-column
@@ -436,7 +436,7 @@
                                         clarinet
                                     }
                             }
-                        \set Staff.shortInstrumentName = \markup {
+                        \set ClarinetMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
                                 #10
                                 \center-column
@@ -525,12 +525,12 @@
                 \tag percussion
                 \context PercussionMusicStaff = "Percussion Staff" {
                     \context PercussionMusicVoice = "Percussion Music Voice" {
-                        \set Staff.instrumentName = \markup {
+                        \set PercussionMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
                                 Xylophone
                             }
-                        \set Staff.shortInstrumentName = \markup {
+                        \set PercussionMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
                                 #10
                                 Xyl.

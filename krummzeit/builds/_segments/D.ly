@@ -188,7 +188,7 @@
         \context GlobalSkips = "Global Skips" {
             {
                 \time 3/4
-                \mark #5
+                \mark #4
                 s1 * 3/4 ^ \markup {
                     \fontsize
                         #-6
@@ -562,7 +562,7 @@
                     s1 * 37/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 3/5 {
-                        \set Staff.instrumentName = \markup {
+                        \set OboeMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
                                 \center-column
@@ -571,7 +571,7 @@
                                         (Eb)
                                     }
                             }
-                        \set Staff.shortInstrumentName = \markup {
+                        \set OboeMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
                                 #10
                                 \center-column
@@ -1722,12 +1722,12 @@
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 5
                         \startStaff
-                        \set Staff.instrumentName = \markup {
+                        \set PercussionMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
                                 Xylophone
                             }
-                        \set Staff.shortInstrumentName = \markup {
+                        \set PercussionMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
                                 #10
                                 Xyl.

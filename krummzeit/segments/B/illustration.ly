@@ -1075,7 +1075,7 @@
                 \tag winds.clarinet
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
-                        \set Staff.instrumentName = \markup {
+                        \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
                                 \center-column
@@ -1084,7 +1084,7 @@
                                         (Eb)
                                     }
                             }
-                        \set Staff.shortInstrumentName = \markup {
+                        \set ClarinetMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
                                 #10
                                 \center-column
@@ -1320,12 +1320,12 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
-                            \set Staff.instrumentName = \markup {
+                            \set PercussionMusicStaff.instrumentName = \markup {
                                 \hcenter-in
                                     #16
                                     Xylophone
                                 }
-                            \set Staff.shortInstrumentName = \markup {
+                            \set PercussionMusicStaff.shortInstrumentName = \markup {
                                 \hcenter-in
                                     #10
                                     Xyl.
@@ -1790,12 +1790,12 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
-                            \set Staff.instrumentName = \markup {
+                            \set ViolinMusicStaff.instrumentName = \markup {
                                 \hcenter-in
                                     #16
                                     Violin
                                 }
-                            \set Staff.shortInstrumentName = \markup {
+                            \set ViolinMusicStaff.shortInstrumentName = \markup {
                                 \hcenter-in
                                     #10
                                     Vn.

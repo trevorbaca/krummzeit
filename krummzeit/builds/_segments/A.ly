@@ -296,7 +296,7 @@
         \context GlobalSkips = "Global Skips" {
             {
                 \time 3/4
-                \mark #2
+                \mark #1
                 s1 * 3/4 ^ \markup {
                     \fontsize
                         #-6
@@ -951,12 +951,12 @@
                     \override TupletBracket.staff-padding = #4
                     s1 * 49/2
                     {
-                        \set Staff.instrumentName = \markup {
+                        \set OboeMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
                                 Oboe
                             }
-                        \set Staff.shortInstrumentName = \markup {
+                        \set OboeMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
                                 #10
                                 Ob.
@@ -1192,7 +1192,7 @@
                     \override TupletBracket.staff-padding = #3
                     s1 * 7/2
                     {
-                        \set Staff.instrumentName = \markup {
+                        \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
                                 \center-column
@@ -1201,7 +1201,7 @@
                                         (Eb)
                                     }
                             }
-                        \set Staff.shortInstrumentName = \markup {
+                        \set ClarinetMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
                                 #10
                                 \center-column
@@ -1571,7 +1571,7 @@
                         \revert TupletBracket.staff-padding
                     }
                     s1 * 67/2
-                    \set Staff.instrumentName = \markup {
+                    \set ClarinetMusicStaff.instrumentName = \markup {
                         \hcenter-in
                             #16
                             \center-column
@@ -1580,7 +1580,7 @@
                                     (Eb)
                                 }
                         }
-                    \set Staff.shortInstrumentName = \markup {
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup {
                         \hcenter-in
                             #10
                             \center-column
@@ -3250,12 +3250,12 @@
                     }
                     s1 * 15/2
                     {
-                        \set Staff.instrumentName = \markup {
+                        \set ViolinMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
                                 Violin
                             }
-                        \set Staff.shortInstrumentName = \markup {
+                        \set ViolinMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
                                 #10
                                 Vn.

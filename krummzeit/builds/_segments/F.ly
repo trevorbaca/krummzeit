@@ -92,7 +92,7 @@
         \context GlobalSkips = "Global Skips" {
             {
                 \time 9/8
-                \mark #7
+                \mark #6
                 s1 * 9/8 ^ \markup {
                     \fontsize
                         #-6
@@ -346,7 +346,7 @@
                     \override DynamicLineSpanner.staff-padding = #'8
                     s1 * 19/8
                     \times 2/3 {
-                        \set Staff.instrumentName = \markup {
+                        \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
                                 \center-column
@@ -355,7 +355,7 @@
                                         (Eb)
                                     }
                             }
-                        \set Staff.shortInstrumentName = \markup {
+                        \set ClarinetMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
                                 #10
                                 \center-column
@@ -436,7 +436,7 @@
                     \override DynamicLineSpanner.staff-padding = #'8
                     \override Stem.direction = #up
                     s1 * 57/8
-                    \set Staff.instrumentName = \markup {
+                    \set ClarinetMusicStaff.instrumentName = \markup {
                         \hcenter-in
                             #16
                             \center-column
@@ -445,7 +445,7 @@
                                     clarinet
                                 }
                         }
-                    \set Staff.shortInstrumentName = \markup {
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup {
                         \hcenter-in
                             #10
                             \center-column

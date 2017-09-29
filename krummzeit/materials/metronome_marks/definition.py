@@ -1,7 +1,7 @@
 import abjad
 
 
-tempi = abjad.MetronomeMarkDictionary(
+metronome_marks = abjad.MetronomeMarkDictionary(
     [
         (
             '36',

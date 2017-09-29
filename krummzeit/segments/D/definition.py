@@ -25,13 +25,13 @@ stage_specifier = baca.StageSpecifier([
     ])
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, krummzeit.tempi['36']),
+    (1, krummzeit.metronome_marks['36']),
     (4, abjad.Accelerando()),
-    (8, krummzeit.tempi['72/108']),
-    (9, krummzeit.tempi['72']),
+    (8, krummzeit.metronome_marks['72/108']),
+    (9, krummzeit.metronome_marks['72']),
     (9, krummzeit.metric_modulations['4.=4']),
     (9, abjad.Accelerando()),
-    (10, krummzeit.tempi['108']),
+    (10, krummzeit.metronome_marks['108']),
     ])
 
 maker = baca.TimeSignatureMaker(
@@ -46,7 +46,7 @@ segment_maker = baca.SegmentMaker(
     instruments=krummzeit.instruments,
     label_stages=False,
     measures_per_stage=measures_per_stage,
-    metronome_marks=krummzeit.tempi,
+    metronome_marks=krummzeit.metronome_marks,
     score_template=krummzeit.ScoreTemplate(),
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,

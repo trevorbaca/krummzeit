@@ -32,7 +32,7 @@ stage_specifier = baca.StageSpecifier([
     ])
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, krummzeit.tempi['108']),
+    (1, krummzeit.metronome_marks['108']),
     (2, abjad.Fermata('shortfermata')),
     (4, abjad.Fermata('shortfermata')),
     (6, abjad.Fermata('shortfermata')),
@@ -43,13 +43,13 @@ tempo_specifier = baca.TempoSpecifier([
     (16, abjad.Fermata('shortfermata')),
     (18, abjad.Fermata('shortfermata')),
     (19, abjad.Accelerando()),
-    (21, krummzeit.tempi['144']),
-    (22, krummzeit.tempi['108']),
+    (21, krummzeit.metronome_marks['144']),
+    (22, krummzeit.metronome_marks['108']),
     (23, abjad.Fermata('shortfermata')),
     (25, abjad.Fermata('shortfermata')),
-    (28, krummzeit.tempi['45']),
+    (28, krummzeit.metronome_marks['45']),
     (29, abjad.Accelerando()),
-    (30, krummzeit.tempi['135']),
+    (30, krummzeit.metronome_marks['135']),
     ])
 
 maker = baca.TimeSignatureMaker(
@@ -64,7 +64,7 @@ segment_maker = baca.SegmentMaker(
     instruments=krummzeit.instruments,
     label_stages=False,
     measures_per_stage=measures_per_stage,
-    metronome_marks=krummzeit.tempi,
+    metronome_marks=krummzeit.metronome_marks,
     score_template=krummzeit.ScoreTemplate(),
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,

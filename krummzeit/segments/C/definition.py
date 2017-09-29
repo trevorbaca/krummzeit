@@ -13,7 +13,7 @@ va = 'Viola Music Voice'
 vc = 'Cello Music Voice'
 
 ###############################################################################
-##################################### [D] #####################################
+##################################### [C] #####################################
 ###############################################################################
 
 stage_specifier = baca.StageSpecifier([
@@ -23,26 +23,26 @@ stage_specifier = baca.StageSpecifier([
     ])
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, krummzeit.named_tempi['135']),
+    (1, krummzeit.tempi['135']),
     (1, abjad.Ritardando()),
-    (2, krummzeit.named_tempi['90']),
+    (2, krummzeit.tempi['90']),
     (2, abjad.Fermata('shortfermata')),
     (3, abjad.Accelerando()),
     (4, abjad.Fermata('shortfermata')),
-    (4, krummzeit.named_tempi['135']),
+    (4, krummzeit.tempi['135']),
     (5, abjad.Ritardando()),
     (6, abjad.Fermata('shortfermata')),
-    (6, krummzeit.named_tempi['90']),
+    (6, krummzeit.tempi['90']),
     (7, abjad.Accelerando()),
     (8, abjad.Fermata('shortfermata')),
-    (8, krummzeit.named_tempi['135']),
-    (10, krummzeit.named_tempi['90']),
+    (8, krummzeit.tempi['135']),
+    (10, krummzeit.tempi['90']),
     (10, krummzeit.metric_modulations['4.=4']),
     (11, abjad.Ritardando()),
     (13, abjad.Fermata('longfermata')),
-    (13, krummzeit.named_tempi['45']),
+    (13, krummzeit.tempi['45']),
     (16, abjad.Ritardando()),
-    (17, krummzeit.named_tempi['36']),
+    (17, krummzeit.tempi['36']),
     ])
 
 maker = baca.TimeSignatureMaker(
@@ -57,8 +57,7 @@ segment_maker = baca.SegmentMaker(
     instruments=krummzeit.instruments,
     label_stages=False,
     measures_per_stage=measures_per_stage,
-    metronome_marks=krummzeit.named_tempi,
-    rehearsal_letter='D',
+    metronome_marks=krummzeit.tempi,
     score_template=krummzeit.ScoreTemplate(),
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,

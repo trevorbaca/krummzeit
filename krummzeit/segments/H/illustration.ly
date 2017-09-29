@@ -88,7 +88,7 @@
                     \once \override TextSpanner.bound-details.right.text = ##f
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
-                    \mark #9
+                    \mark #8
                     s1 * 7/8 \startTextSpan
                 }
                 {

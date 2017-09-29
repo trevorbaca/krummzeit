@@ -155,7 +155,7 @@
                     \once \override TextSpanner.bound-details.right.text = ##f
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
-                    \mark #4
+                    \mark #3
                     s1 * 3/4 \startTextSpan
                 }
                 {

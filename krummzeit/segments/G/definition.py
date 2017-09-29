@@ -13,7 +13,7 @@ va = 'Viola Music Voice'
 vc = 'Cello Music Voice'
 
 ###############################################################################
-##################################### [H] #####################################
+##################################### [G] #####################################
 ###############################################################################
 
 stage_specifier = baca.StageSpecifier([
@@ -28,9 +28,9 @@ stage_specifier = baca.StageSpecifier([
     ])
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, krummzeit.named_tempi['144']),
+    (1, krummzeit.tempi['144']),
     (13, abjad.Fermata('shortfermata')),
-    (14, krummzeit.named_tempi['90']),
+    (14, krummzeit.tempi['90']),
     (22, abjad.Fermata('verylongfermata')),
     ])
 
@@ -46,8 +46,7 @@ segment_maker = baca.SegmentMaker(
     instruments=krummzeit.instruments,
     label_stages=False,
     measures_per_stage=measures_per_stage,
-    metronome_marks=krummzeit.named_tempi,
-    rehearsal_letter='H',
+    metronome_marks=krummzeit.tempi,
     score_template=krummzeit.ScoreTemplate(),
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,

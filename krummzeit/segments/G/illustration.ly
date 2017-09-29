@@ -413,7 +413,7 @@
                 \tag winds.clarinet
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
-                        \set Staff.instrumentName = \markup {
+                        \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
                                 \center-column
@@ -422,7 +422,7 @@
                                         clarinet
                                     }
                             }
-                        \set Staff.shortInstrumentName = \markup {
+                        \set ClarinetMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
                                 #10
                                 \center-column
@@ -446,7 +446,7 @@
                         \revert DynamicLineSpanner.staff-padding
                         s1 * 9/4
                         {
-                            \set Staff.instrumentName = \markup {
+                            \set ClarinetMusicStaff.instrumentName = \markup {
                                 \hcenter-in
                                     #16
                                     \center-column
@@ -455,7 +455,7 @@
                                             (Eb)
                                         }
                                 }
-                            \set Staff.shortInstrumentName = \markup {
+                            \set ClarinetMusicStaff.shortInstrumentName = \markup {
                                 \hcenter-in
                                     #10
                                     \center-column
@@ -540,7 +540,7 @@
                         s1 * 19/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/4 {
-                            \set Staff.instrumentName = \markup {
+                            \set ClarinetMusicStaff.instrumentName = \markup {
                                 \hcenter-in
                                     #16
                                     \center-column
@@ -549,7 +549,7 @@
                                             clarinet
                                         }
                                 }
-                            \set Staff.shortInstrumentName = \markup {
+                            \set ClarinetMusicStaff.shortInstrumentName = \markup {
                                 \hcenter-in
                                     #10
                                     \center-column

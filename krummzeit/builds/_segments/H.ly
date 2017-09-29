@@ -79,7 +79,7 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                \mark #9
+                \mark #8
                 s1 * 7/8 \startTextSpan
             }
             {
@@ -188,7 +188,7 @@
             \context ClarinetMusicStaff = "Clarinet Music Staff" {
                 \context ClarinetMusicVoice = "Clarinet Music Voice" {
                     s1 * 33/8
-                    \set Staff.instrumentName = \markup {
+                    \set ClarinetMusicStaff.instrumentName = \markup {
                         \hcenter-in
                             #16
                             \center-column
@@ -197,7 +197,7 @@
                                     (Eb)
                                 }
                         }
-                    \set Staff.shortInstrumentName = \markup {
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup {
                         \hcenter-in
                             #10
                             \center-column
@@ -213,7 +213,7 @@
                     \revert DynamicLineSpanner.staff-padding
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/5 {
-                        \set Staff.instrumentName = \markup {
+                        \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
                                 \center-column
@@ -222,7 +222,7 @@
                                         clarinet
                                     }
                             }
-                        \set Staff.shortInstrumentName = \markup {
+                        \set ClarinetMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
                                 #10
                                 \center-column
@@ -1991,12 +1991,12 @@
                     s1 * 13/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 9/7 {
-                        \set Staff.instrumentName = \markup {
+                        \set PercussionMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
                                 Xylophone
                             }
-                        \set Staff.shortInstrumentName = \markup {
+                        \set PercussionMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
                                 #10
                                 Xyl.

@@ -2,18 +2,6 @@ import abjad
 import baca
 
 
-harpsichord = abjad.Harpsichord(
-    name_markup=baca.markup.instrument('Harpsichord'),
-    short_name_markup=baca.markup.short_instrument('Hpschd.'),
-    )
-harpsichord._default_scope = 'PianoMusicStaff'
-
-piano = abjad.Piano(
-    name_markup=baca.markup.instrument('Piano'),
-    short_name_markup=baca.markup.short_instrument('Pf.'),
-    )
-piano._default_scope = 'PianoMusicStaff'
-
 instruments = abjad.InstrumentDictionary([
     (
         'bass clarinet',
@@ -38,7 +26,11 @@ instruments = abjad.InstrumentDictionary([
         ),
     (
         'harpsichord',
-        harpsichord,
+        abjad.Harpsichord(
+            default_scope='Staff',
+            name_markup=baca.markup.instrument('Harpsichord'),
+            short_name_markup=baca.markup.short_instrument('Hpschd.'),
+            )
         ),
     (
         'oboe',
@@ -56,7 +48,11 @@ instruments = abjad.InstrumentDictionary([
         ),
     (
         'piano',
-        piano,
+        abjad.Piano(
+            default_scope='Staff',
+            name_markup=baca.markup.instrument('Piano'),
+            short_name_markup=baca.markup.short_instrument('Pf.'),
+            )
         ),
     (
         'viola',

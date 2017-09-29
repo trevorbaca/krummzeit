@@ -73,7 +73,6 @@
         \context GlobalSkips = "Global Skips" {
             {
                 \time 4/4
-                \mark #1
                 s1 * 1 ^ \markup {
                     \fontsize
                         #-6
@@ -222,12 +221,12 @@
             \tag winds.oboe
             \context OboeMusicStaff = "Oboe Music Staff" {
                 \context OboeMusicVoice = "Oboe Music Voice" {
-                    \set Staff.instrumentName = \markup {
+                    \set OboeMusicStaff.instrumentName = \markup {
                         \hcenter-in
                             #16
                             Oboe
                         }
-                    \set Staff.shortInstrumentName = \markup {
+                    \set OboeMusicStaff.shortInstrumentName = \markup {
                         \hcenter-in
                             #10
                             Ob.
@@ -252,7 +251,7 @@
             \tag winds.clarinet
             \context ClarinetMusicStaff = "Clarinet Music Staff" {
                 \context ClarinetMusicVoice = "Clarinet Music Voice" {
-                    \set Staff.instrumentName = \markup {
+                    \set ClarinetMusicStaff.instrumentName = \markup {
                         \hcenter-in
                             #16
                             \center-column
@@ -261,7 +260,7 @@
                                     (Eb)
                                 }
                         }
-                    \set Staff.shortInstrumentName = \markup {
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup {
                         \hcenter-in
                             #10
                             \center-column
@@ -272,7 +271,7 @@
                         }
                     \clef "treble"
                     s1 * 19/8
-                    \set Staff.instrumentName = \markup {
+                    \set ClarinetMusicStaff.instrumentName = \markup {
                         \hcenter-in
                             #16
                             \center-column
@@ -281,7 +280,7 @@
                                     clarinet
                                 }
                         }
-                    \set Staff.shortInstrumentName = \markup {
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup {
                         \hcenter-in
                             #10
                             \center-column
@@ -379,12 +378,12 @@
             \tag percussion
             \context PercussionMusicStaff = "Percussion Staff" {
                 \context PercussionMusicVoice = "Percussion Music Voice" {
-                    \set Staff.instrumentName = \markup {
+                    \set PercussionMusicStaff.instrumentName = \markup {
                         \hcenter-in
                             #16
                             Percussion
                         }
-                    \set Staff.shortInstrumentName = \markup {
+                    \set PercussionMusicStaff.shortInstrumentName = \markup {
                         \hcenter-in
                             #10
                             Perc.
@@ -393,12 +392,12 @@
                     s1 * 39/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 9/8 {
-                        \set Staff.instrumentName = \markup {
+                        \set PercussionMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
                                 Xylophone
                             }
-                        \set Staff.shortInstrumentName = \markup {
+                        \set PercussionMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
                                 #10
                                 Xyl.
@@ -427,12 +426,12 @@
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
-                        \set Staff.instrumentName = \markup {
+                        \set PercussionMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
                                 Percussion
                             }
-                        \set Staff.shortInstrumentName = \markup {
+                        \set PercussionMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
                                 #10
                                 Perc.
@@ -499,12 +498,12 @@
             \tag strings.violin
             \context ViolinMusicStaff = "Violin Music Staff" {
                 \context ViolinMusicVoice = "Violin Music Voice" {
-                    \set Staff.instrumentName = \markup {
+                    \set ViolinMusicStaff.instrumentName = \markup {
                         \hcenter-in
                             #16
                             Violin
                         }
-                    \set Staff.shortInstrumentName = \markup {
+                    \set ViolinMusicStaff.shortInstrumentName = \markup {
                         \hcenter-in
                             #10
                             Vn.
@@ -616,12 +615,12 @@
             \tag strings.viola
             \context ViolaMusicStaff = "Viola Music Staff" {
                 \context ViolaMusicVoice = "Viola Music Voice" {
-                    \set Staff.instrumentName = \markup {
+                    \set ViolaMusicStaff.instrumentName = \markup {
                         \hcenter-in
                             #16
                             Viola
                         }
-                    \set Staff.shortInstrumentName = \markup {
+                    \set ViolaMusicStaff.shortInstrumentName = \markup {
                         \hcenter-in
                             #10
                             Va.
@@ -732,12 +731,12 @@
             \tag strings.cello
             \context CelloMusicStaff = "Cello Music Staff" {
                 \context CelloMusicVoice = "Cello Music Voice" {
-                    \set Staff.instrumentName = \markup {
+                    \set CelloMusicStaff.instrumentName = \markup {
                         \hcenter-in
                             #16
                             Cello
                         }
-                    \set Staff.shortInstrumentName = \markup {
+                    \set CelloMusicStaff.shortInstrumentName = \markup {
                         \hcenter-in
                             #10
                             Vc.

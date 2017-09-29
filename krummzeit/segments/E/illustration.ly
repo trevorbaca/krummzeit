@@ -149,7 +149,7 @@
             \context GlobalSkips = "Global Skips" {
                 {
                     \time 3/4
-                    \mark #6
+                    \mark #5
                     s1 * 3/4 ^ \markup {
                         \fontsize
                             #-6

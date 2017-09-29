@@ -13,7 +13,7 @@ va = 'Viola Music Voice'
 vc = 'Cello Music Voice'
 
 ###############################################################################
-##################################### [E] #####################################
+##################################### [D] #####################################
 ###############################################################################
 
 stage_specifier = baca.StageSpecifier([
@@ -25,13 +25,13 @@ stage_specifier = baca.StageSpecifier([
     ])
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, krummzeit.named_tempi['36']),
+    (1, krummzeit.tempi['36']),
     (4, abjad.Accelerando()),
-    (8, krummzeit.named_tempi['72/108']),
-    (9, krummzeit.named_tempi['72']),
+    (8, krummzeit.tempi['72/108']),
+    (9, krummzeit.tempi['72']),
     (9, krummzeit.metric_modulations['4.=4']),
     (9, abjad.Accelerando()),
-    (10, krummzeit.named_tempi['108']),
+    (10, krummzeit.tempi['108']),
     ])
 
 maker = baca.TimeSignatureMaker(
@@ -46,8 +46,7 @@ segment_maker = baca.SegmentMaker(
     instruments=krummzeit.instruments,
     label_stages=False,
     measures_per_stage=measures_per_stage,
-    metronome_marks=krummzeit.named_tempi,
-    rehearsal_letter='E',
+    metronome_marks=krummzeit.tempi,
     score_template=krummzeit.ScoreTemplate(),
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,

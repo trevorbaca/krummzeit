@@ -424,14 +424,8 @@ segment_maker.append_commands(
     ['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
     baca.select_stages(6, 8),
     baca.dynamic('fff'),
-    # TODO: make work again
-    #baca.GlissandoCommand(
-    #    patterns=[abjad.index_first(1)],
-    #    ),
-    # TODO: make work again
-    #baca.StemTremoloCommand(
-    #    patterns=[abjad.select([1, 2, 3, 4])],
-    #    ),
+    baca.glissandi(),
+    baca.stem_tremolo(baca.select_plts(start=1)),
     )
 
 segment_maker.append_commands(

@@ -510,7 +510,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     'Viola Music Voice',
     baca.select_stages(10, 19),
-    # TODO: make work again after extending baca.hairpins():
+    # TODO: make baca.hairpins() work again
     #baca.hairpins(
     #    ['ff > pp'],
     #    patterns=[abjad.Pattern(indices=[0, 1])],
@@ -539,7 +539,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     'Cello Music Voice',
     baca.select_stages(10, 19),
-    # TODO: make work again after extending baca.hairpins():
+    # TODO: make baca.hairpins() work again
     #baca.hairpins(
     #    ['ff > pp'],
     #    patterns=[abjad.Pattern(indices=[0, 1])],

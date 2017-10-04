@@ -273,11 +273,8 @@ segment_maker.append_commands(
     baca.select_stages(1, 6),
     baca.dynamic('fff'),
     baca.dynamic_line_spanner_staff_padding(3),
+    baca.glissandi(),
     baca.markup.gridato_possibile(),
-    # TODO: make work again:
-    #baca.GlissandoCommand(
-    #    patterns=[abjad.select([5])],
-    #    ),
     )
 
 segment_maker.append_commands(

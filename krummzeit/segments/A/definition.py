@@ -49,8 +49,6 @@ segment_maker = baca.SegmentMaker(
     measures_per_stage=measures_per_stage,
     metronome_marks=krummzeit.metronome_marks,
     score_template=krummzeit.ScoreTemplate(),
-    # TODO: run wellformedness checks
-    skip_wellformedness_checks=True,
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
     transpose_score=True,

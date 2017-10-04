@@ -1018,6 +1018,13 @@
                         \times 6/7 {
                             ds''2
                             d''4. ~
+                                ^ \markup {
+                                    \override
+                                        #'(circle-padding . 0.25)
+                                        \circle
+                                            \finger
+                                                1
+                                    }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -1033,7 +1040,7 @@
                                         #'(circle-padding . 0.25)
                                         \circle
                                             \finger
-                                                1
+                                                2
                                     }
                             d''16
                                 ^ \markup {
@@ -1041,9 +1048,13 @@
                                         #'(circle-padding . 0.25)
                                         \circle
                                             \finger
-                                                2
+                                                1
                                     }
                             d''2. ~
+                        }
+                        \times 4/5 {
+                            d''2.
+                            ds''2 \mf ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1052,21 +1063,24 @@
                                                 1
                                     }
                         }
-                        \times 4/5 {
-                            d''2.
-                            ds''2 \mf ~
-                        }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 10/11 {
                             ds''2..
                             d''8
+                                ^ \markup {
+                                    \override
+                                        #'(circle-padding . 0.25)
+                                        \circle
+                                            \finger
+                                                1
+                                    }
                             d''4. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
                                         \circle
                                             \finger
-                                                1
+                                                2
                                     }
                         }
                         \times 4/5 {

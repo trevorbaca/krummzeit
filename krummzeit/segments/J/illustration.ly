@@ -838,25 +838,28 @@
                         \once \override TextScript.extra-offset = #'(14.5 . 0)
                         s1 * 8
                             _ \markup {
-                                \italic
-                                    \right-column
-                                        {
-                                            \line
+                                \whiteout
+                                    \upright
+                                        \with-color
+                                            #black
+                                            \right-column
                                                 {
-                                                    "Cambridge, MA."
+                                                    \line
+                                                        {
+                                                            "Cambridge, MA."
+                                                        }
+                                                    \line
+                                                        {
+                                                            May
+                                                            \hspace
+                                                                #0.75
+                                                            –
+                                                            \hspace
+                                                                #0.75
+                                                            August
+                                                            2014.
+                                                        }
                                                 }
-                                            \line
-                                                {
-                                                    May
-                                                    \hspace
-                                                        #0.75
-                                                    –
-                                                    \hspace
-                                                        #0.75
-                                                    August
-                                                    2014.
-                                                }
-                                        }
                                 }
                         \bar "|."
                     }

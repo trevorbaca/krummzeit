@@ -27,7 +27,7 @@ measures_per_stage, tempo_specifier, time_signatures = maker()
 
 segment_maker = baca.SegmentMaker(
     #final_barline=True,
-    final_markup=krummzeit.final_markup(),
+    final_markup=(['Cambridge, MA.'], ['May', 'August 2014.']),
     final_markup_extra_offset=(14.5, 0),
     ignore_repeat_pitch_classes=True,
     instruments=krummzeit.instruments,

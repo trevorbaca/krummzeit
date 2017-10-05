@@ -7,13 +7,13 @@ import krummzeit
 ##################################### [F] #####################################
 ###############################################################################
 
-stage_specifier = baca.StageSpecifier([
+stage_measure_map = baca.StageMeasureMap([
     1, 2,                   # stages 1-2
     1, 2, 1, 2, 1,          # stages 3-7
     2, 1, 2, 1, 2, 1, 3,    # stages 8-14
     ])
 
-tempo_specifier = baca.TempoSpecifier([
+metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
     (1, krummzeit.metronome_marks['72']),
     (8, abjad.Accelerando()),
     (13, krummzeit.metronome_marks['144']),
@@ -21,10 +21,10 @@ tempo_specifier = baca.TempoSpecifier([
 
 maker = baca.TimeSignatureMaker(
     krummzeit.segment_time_signatures['G'],
-    stage_specifier=stage_specifier,
-    tempo_specifier=tempo_specifier,
+    stage_measure_map=stage_measure_map,
+    metronome_mark_measure_map=metronome_mark_measure_map,
     )
-measures_per_stage, tempo_specifier, time_signatures = maker()
+measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
@@ -33,7 +33,7 @@ segment_maker = baca.SegmentMaker(
     measures_per_stage=measures_per_stage,
     metronome_marks=krummzeit.metronome_marks,
     score_template=krummzeit.ScoreTemplate(),
-    tempo_specifier=tempo_specifier,
+    metronome_mark_measure_map=metronome_mark_measure_map,
     time_signatures=time_signatures,
     transpose_score=True,
     )

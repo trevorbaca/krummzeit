@@ -49,7 +49,7 @@ segment_maker.validate_measures_per_stage()
 music_maker = segment_maker.append_commands(
     'Viola Music Voice',
     baca.select_stages(2, 4),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
@@ -78,7 +78,7 @@ music_maker = segment_maker.append_commands(
     'Percussion Music Voice',
     baca.select_stages(1),
     baca.clef('percussion'),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
             tie_specifier=abjad.rhythmmakertools.TieSpecifier(
                 tie_across_divisions=True,
@@ -113,7 +113,7 @@ segment_maker.copy_specifier(
 music_maker = segment_maker.append_commands(
     'Percussion Music Voice',
     baca.select_stages(13, 14),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
@@ -131,7 +131,7 @@ music_maker = segment_maker.append_commands(
     'Piano Music Voice',
     baca.select_stages(3, 6),
     baca.instrument(krummzeit.instruments['harpsichord']),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[
                 (1, 2),
@@ -165,7 +165,7 @@ segment_maker.copy_specifier(
 music_maker = segment_maker.append_commands(
     'Violin Music Voice',
     baca.select_stages(5, 13),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[2, 2, 2, 2, 2, 3],
             ),
@@ -199,7 +199,7 @@ segment_maker.copy_specifier(
 music_maker = segment_maker.append_commands(
     'Oboe Music Voice',
     baca.select_stages(3, 7),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.SplitByDurationsDivisionCallback(
             durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
             pattern_rotation_index=-1,

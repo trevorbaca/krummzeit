@@ -58,7 +58,7 @@ segment_maker.validate_measures_per_stage()
 music_maker = segment_maker.append_commands(
     'Oboe Music Voice',
     baca.select_stages(1),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[2],
             ),
@@ -91,7 +91,7 @@ music_maker = segment_maker.append_commands(
     'Piano Music Voice',
     baca.select_stages(1),
     baca.instrument(krummzeit.instruments['piano']),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[2],
             ),
@@ -123,7 +123,7 @@ segment_maker.append_commands(
 music_maker = segment_maker.append_commands(
     'Violin Music Voice',
     baca.select_stages(1, 3),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
@@ -153,7 +153,7 @@ segment_maker.append_commands(
     'Piano Music Voice',
     baca.select_stages(3, 4),
     baca.instrument(krummzeit.instruments['harpsichord']),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
@@ -173,7 +173,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     'Violin Music Voice',
     baca.select_stages(5, 9),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.SplitByDurationsDivisionCallback(
             durations=[(1, 4)],
             ),
@@ -197,7 +197,7 @@ music_maker = segment_maker.append_commands(
     'Percussion Music Voice',
     baca.select_stages(3, 15),
     baca.clef('percussion'),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         rhythm_maker=abjad.rhythmmakertools.IncisedRhythmMaker(
             incise_specifier=abjad.rhythmmakertools.InciseSpecifier(
                 prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],
@@ -234,7 +234,7 @@ segment_maker.append_commands(
     baca.select_stages(3, 4),
     baca.instrument(krummzeit.instruments['bass clarinet']),
     baca.messiaen_tied_notes(),
-    #baca.RhythmSpecifier(
+    #baca.RhythmCommand(
     #    rhythm_maker=tied_notes,
     #    ),
     )
@@ -244,7 +244,7 @@ segment_maker.append_commands(
     baca.select_stages(5, 6),
     baca.instrument(krummzeit.instruments['bass clarinet']),
     baca.messiaen_tied_notes(),
-    #baca.RhythmSpecifier(
+    #baca.RhythmCommand(
     #    rhythm_maker=tied_notes,
     #    ),
     )
@@ -254,7 +254,7 @@ segment_maker.append_commands(
     baca.select_stages(7, 8),
     baca.instrument(krummzeit.instruments['bass clarinet']),
     baca.messiaen_tied_notes(),
-    #baca.RhythmSpecifier(
+    #baca.RhythmCommand(
     #    rhythm_maker=tied_notes,
     #    ),
     )
@@ -278,7 +278,7 @@ music_maker = segment_maker.append_commands(
 segment_maker.append_commands(
     'Violin Music Voice',
     baca.select_stages(15),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
             talea=abjad.rhythmmakertools.Talea(
                 counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],

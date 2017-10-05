@@ -50,7 +50,7 @@ segment_maker.validate_measures_per_stage()
 music_maker = segment_maker.append_commands(
     'Violin Music Voice',
     baca.select_stages(1),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[2],
             ),
@@ -97,7 +97,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     'Violin Music Voice',
     baca.select_stages(2, 4),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(1, 2), (2, 1), (1, 1, 1)],
             ),
@@ -131,7 +131,7 @@ segment_maker.copy_specifier(
 music_maker = segment_maker.append_commands(
     'Piano Music Voice',
     baca.select_stages(1, 5),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
@@ -150,7 +150,7 @@ music_maker = segment_maker.append_commands(
     'Percussion Music Voice',
     baca.select_stages(4, 5),
     baca.clef('percussion'),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
@@ -170,7 +170,7 @@ music_maker = segment_maker.append_commands(
 music_maker = segment_maker.append_commands(
     'Oboe Music Voice',
     baca.select_stages(3, 6),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
             tie_specifier=abjad.rhythmmakertools.TieSpecifier(
                 tie_across_divisions=True,
@@ -195,7 +195,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     'Oboe Music Voice',
     baca.select_stages(7, 8),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[2],
             ),
@@ -228,7 +228,7 @@ segment_maker.append_commands(
     'Piano Music Voice',
     baca.select_stages(8),
     baca.instrument(krummzeit.instruments['piano']),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[2],
             ),

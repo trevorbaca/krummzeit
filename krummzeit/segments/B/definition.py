@@ -75,7 +75,7 @@ segment_maker.validate_measures_per_stage()
 segment_maker.append_commands(
     'Oboe Music Voice',
     baca.select_stages(1),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
             talea=abjad.rhythmmakertools.Talea(
                 counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
@@ -111,7 +111,7 @@ segment_maker.append_commands(
     'Clarinet Music Voice',
     baca.select_stages(1),
     baca.instrument(krummzeit.instruments['e-flat clarinet']),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
@@ -143,7 +143,7 @@ music_maker = segment_maker.append_commands(
     'Violin Music Voice',
     baca.select_stages(1, 17),
     baca.clef('percussion'),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
             tie_specifier=abjad.rhythmmakertools.TieSpecifier(
                 tie_across_divisions=True,
@@ -159,7 +159,7 @@ segment_maker.append_commands(
     'Percussion Music Voice',
     baca.select_stages(18, 20),
     baca.clef('percussion'),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
             tie_specifier=abjad.rhythmmakertools.TieSpecifier(
                 tie_across_divisions=True,
@@ -174,7 +174,7 @@ segment_maker.append_commands(
 music_maker = segment_maker.append_commands(
     'Viola Music Voice',
     baca.select_stages(3),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
             tuplet_ratios=[
                 (2, 1),
@@ -256,7 +256,7 @@ music_maker = segment_maker.append_commands(
     'Piano Music Voice',
     baca.select_stages(11),
     baca.instrument(krummzeit.instruments['piano']),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(1, 2)],
             ),
@@ -358,7 +358,7 @@ music_maker = segment_maker.append_commands(
     'Percussion Music Voice',
     baca.select_stages(27, 30),
     baca.clef('percussion'),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
             tie_specifier=abjad.rhythmmakertools.TieSpecifier(
                 tie_across_divisions=True,
@@ -376,7 +376,7 @@ music_maker = segment_maker.append_commands(
     baca.instrument(krummzeit.instruments['violin']),
     baca.clef('treble'),
     baca.five_line_staff(),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
             talea=abjad.rhythmmakertools.Talea(
                 counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
@@ -393,7 +393,7 @@ music_maker = segment_maker.append_commands(
 music_maker = segment_maker.append_commands(
     'Viola Music Voice',
     baca.select_stages(26, 29),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(

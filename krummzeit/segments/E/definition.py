@@ -196,7 +196,7 @@ segment_maker.copy_specifier(
 
 ### ob, cl [F4-11] ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Oboe Music Voice',
     baca.select_stages(4, 11),
     baca.RhythmCommand(

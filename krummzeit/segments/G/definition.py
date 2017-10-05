@@ -54,7 +54,7 @@ segment_maker.validate_measures_per_stage()
 
 ### ob [H1-7] block ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Oboe Music Voice',
     baca.select_stages(1, 7),
     baca.RhythmCommand(
@@ -68,7 +68,7 @@ music_maker = segment_maker.append_commands(
 
 ### ob [H9-12] 5th-octave counterpoint ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Oboe Music Voice',
     baca.select_stages(9, 12),
     baca.RhythmCommand(
@@ -89,7 +89,7 @@ music_maker = segment_maker.append_commands(
 
 ### ob [H18-21] reiteration ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Oboe Music Voice',
     baca.select_stages(18, 21),
     baca.RhythmCommand(
@@ -109,7 +109,7 @@ music_maker = segment_maker.append_commands(
 
 ### bass clarinet [H1-5] myrkr ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Clarinet Music Voice',
     baca.select_stages(1, 5),
     baca.instrument(krummzeit.instruments['bass clarinet']),
@@ -225,7 +225,7 @@ segment_maker.copy_specifier(
 
 ### vn, va, vc [H14-20] thicket ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Violin Music Voice',
     baca.select_stages(14, 20),
     baca.RhythmCommand(
@@ -283,7 +283,7 @@ segment_maker.copy_specifier(
 
 ### va, vc [H11-12] ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Viola Music Voice',
     baca.select_stages(11, 12),
     baca.RhythmCommand(
@@ -402,7 +402,7 @@ segment_maker.append_commands(
 
 ### (12) ###
 
-segment_maker.append_specifiers(
+segment_maker.thread_commands(
     [
         (['Piano Music Voice', 'Violin Music Voice'], (5, 12)),
         (['Oboe Music Voice', 'Clarinet Music Voice'], (9, 12)),
@@ -504,7 +504,7 @@ segment_maker.append_commands(
     krummzeit.markup.fifth_harmonic_of_F1(),
     )
 
-segment_maker.append_specifiers(
+segment_maker.thread_commands(
     [
         (['Violin Music Voice', 'Cello Music Voice'], (14, 20)),
         ('Viola Music Voice', (14, 19)),

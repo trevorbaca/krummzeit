@@ -47,7 +47,7 @@ segment_maker.validate_measures_per_stage()
 
 ### vn, va, vc [I1] reiteration ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Violin Music Voice',
     baca.select_stages(1),
     baca.RhythmCommand(
@@ -128,7 +128,7 @@ segment_maker.copy_specifier(
 
 ### harpsichord [I1-5] clusters (11.1) ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Piano Music Voice',
     baca.select_stages(1, 5),
     baca.RhythmCommand(
@@ -146,7 +146,7 @@ music_maker = segment_maker.append_commands(
 
 ### crotales [I4-5] (11.1) ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Percussion Music Voice',
     baca.select_stages(4, 5),
     baca.clef('percussion'),
@@ -167,7 +167,7 @@ music_maker = segment_maker.append_commands(
 
 ### ob, Eb cl [I3-6] upper pedals ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Oboe Music Voice',
     baca.select_stages(3, 6),
     baca.RhythmCommand(
@@ -313,7 +313,7 @@ segment_maker.append_commands(
 
 ### (5.3) vn, va, vc thicket ###
 
-segment_maker.append_specifiers(
+segment_maker.thread_commands(
     [(['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'], (2, 4))],
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=8), abjad.Inversion()],

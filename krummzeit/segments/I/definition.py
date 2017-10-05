@@ -55,7 +55,7 @@ segment_maker.validate_measures_per_stage()
 
 ### ob, bass clarinet [I7-8] reiteration ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Oboe Music Voice',
     baca.select_stages(1),
     baca.RhythmCommand(
@@ -87,7 +87,7 @@ segment_maker.append_commands(
 
 ### pf, xylophone [I1] reiteration ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Piano Music Voice',
     baca.select_stages(1),
     baca.instrument(krummzeit.instruments['piano']),
@@ -120,7 +120,7 @@ segment_maker.append_commands(
 
 ### vn, va, vc [J1-3] tremolo clusters (11.1) ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Violin Music Voice',
     baca.select_stages(1, 3),
     baca.RhythmCommand(
@@ -193,7 +193,7 @@ segment_maker.copy_specifier(
 
 ### tam-tam [J3-13] ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Percussion Music Voice',
     baca.select_stages(3, 15),
     baca.clef('percussion'),
@@ -266,7 +266,7 @@ segment_maker.append_commands(
     baca.messiaen_tied_notes(),
     )
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Clarinet Music Voice',
     baca.select_stages(11),
     baca.instrument(krummzeit.instruments['bass clarinet']),
@@ -389,7 +389,7 @@ segment_maker.append_commands(
 
 ### (3.5) OB bowing ###
 
-segment_maker.append_specifiers(
+segment_maker.thread_commands(
     [(['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'], (5, 9))],
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=11)],
@@ -474,7 +474,7 @@ segment_maker.append_commands(
 
 ### (9.1) vn, va, vc points ###
 
-segment_maker.append_specifiers(
+segment_maker.thread_commands(
     (['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'], 15),
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=4), abjad.Inversion()],

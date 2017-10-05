@@ -84,7 +84,7 @@ segment_maker.append_commands(
 
 ### cello [B5-8] ###
 
-music_maker = segment_maker.copy_specifier(
+segment_maker.copy_specifier(
     ('Cello Music Voice', 1),
     baca.select_stages(5, 8),
     )
@@ -106,7 +106,7 @@ segment_maker.copy_specifier(
 
 ### harpsichord [B1-4] (5th-octave polyphony) ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Piano Music Voice',
     baca.select_stages(1, 4),
     baca.instrument(krummzeit.instruments['harpsichord']),
@@ -128,7 +128,7 @@ music_maker = segment_maker.append_commands(
 
 ### harpsichord [B5-8] ###
 
-#music_maker = segment_maker.copy_specifier(
+#segment_maker.copy_specifier(
 #    ('Piano Music Voice', 1),
 #    baca.select_stages(5, 8),
 #    )
@@ -152,7 +152,7 @@ rhythm_overwrite = (
         ),
     )
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Piano Music Voice',
     baca.select_stages(5, 8),
     baca.RhythmCommand(
@@ -194,13 +194,13 @@ segment_maker.copy_specifier(
 
 ### cello, viola [B9] ###
 
-music_maker = segment_maker.copy_specifier(
+segment_maker.copy_specifier(
     ('Cello Music Voice', 1),
     baca.select_stages(9),
     rhythm_maker__tuplet_ratios=[(4, 1, 2)],
     )
 
-music_maker = segment_maker.copy_specifier(
+segment_maker.copy_specifier(
     ('Viola Music Voice', 1),
     baca.select_stages(9),
     rhythm_maker__tuplet_ratios=[(1, 3, 1)],
@@ -224,7 +224,7 @@ rhythm_overwrite = (
         ),
     )
 
-music_maker = segment_maker.copy_specifier(
+segment_maker.copy_specifier(
     ('Piano Music Voice', 1),
     baca.select_stages(9, 10),
     division_maker__durations=[(4, 16), (3, 16), (4, 16), (2, 16)],
@@ -384,7 +384,7 @@ segment_maker.append_commands(
 
 ### vn, va, vc [B17-19] & [B20-22] pointillism ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Viola Music Voice',
     baca.select_stages(17, 19),
     baca.RhythmCommand(
@@ -720,7 +720,7 @@ segment_maker.append_commands(
 
 # IMPORTANT TODO: integrate timeline selectors:
 
-segment_maker.append_specifiers(
+segment_maker.thread_commands(
     [
         ('Viola Music Voice', baca.select_stages(12, 16)),
         ('Cello Music Voice', baca.select_stages(12, 17)),
@@ -801,7 +801,7 @@ segment_maker.append_commands(
 
 # IMPORTANT TODO: probably integrate timeline selectors here:
 
-segment_maker.append_specifiers(
+segment_maker.thread_commands(
     [
         ('Viola Music Voice', (17, 22)),
         ('Cello Music Voice', (18, 22)),

@@ -54,7 +54,7 @@ segment_maker.validate_measures_per_stage()
 
 ### tam-tam [E1] ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Percussion Music Voice',
     baca.select_stages(1),
     baca.clef('percussion'),
@@ -75,7 +75,7 @@ music_maker = segment_maker.append_commands(
 
 ### vn, vc [E1-5] & va [E1-3] (white OB bowing) ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Violin Music Voice',
     baca.select_stages(1, 5),
     baca.RhythmCommand(
@@ -113,7 +113,7 @@ segment_maker.append_commands(
 
 ### va [E4-7] glissando thicket ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Viola Music Voice',
     baca.select_stages(4),
     baca.RhythmCommand(
@@ -417,7 +417,7 @@ segment_maker.append_commands(
     baca.reiterated_dynamic('pp'),
     )
 
-segment_maker.append_specifiers(
+segment_maker.thread_commands(
     ([
         ('Violin Music Voice', (1, 5)),
         ('Viola Music Voice', (1, 3)),
@@ -471,7 +471,7 @@ segment_maker.append_commands(
     baca.markup.accent_changes_of_direction(),
     )
 
-segment_maker.append_specifiers(
+segment_maker.thread_commands(
     [
         ('Viola Music Voice', [(4, 7), 9]),
         ('Violin Music Voice', [(6, 7), 9]),
@@ -485,7 +485,7 @@ segment_maker.append_specifiers(
         ),
     )
 
-segment_maker.append_specifiers(
+segment_maker.thread_commands(
     [
         ('Viola Music Voice', [(4, 7), 9]),
         ('Violin Music Voice', [(6, 7), 9]),
@@ -649,7 +649,7 @@ segment_maker.append_commands(
 
 ### suspended cymbal ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Percussion Music Voice',
     baca.select_stages(12, 13),
     baca.clef('percussion'),

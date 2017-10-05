@@ -54,7 +54,7 @@ segment_maker.append_commands(
     'Piano Music Voice',
     baca.select_stages(1, 6),
     baca.instrument(krummzeit.instruments['harpsichord']),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
@@ -73,7 +73,7 @@ segment_maker.append_commands(
     'Piano Music Voice',
     baca.select_stages(7, 12),
     baca.instrument(krummzeit.instruments['piano']),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         # TODO: replace first division-maker?
         #division_maker=baca.FuseByCountsDivisionCallback(
         #    counts=abjad.Infinity,
@@ -96,7 +96,7 @@ segment_maker.append_commands(
     'Percussion Music Voice',
     baca.select_stages(1, 12),
     baca.instrument(krummzeit.instruments['xylophone']),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         # TODO: replace first division-maker?
         #division_maker=baca.FuseByCountsDivisionCallback(
         #    counts=abjad.Infinity,
@@ -118,7 +118,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     'Violin Music Voice',
     baca.select_stages(1, 10),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
             talea=abjad.rhythmmakertools.Talea(
                 counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
@@ -163,7 +163,7 @@ segment_maker.copy_specifier(
 segment_maker.append_commands(
     'Oboe Music Voice',
     baca.select_stages(1, 10),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
@@ -182,7 +182,7 @@ segment_maker.append_commands(
     'Clarinet Music Voice',
     baca.select_stages(1, 10),
     baca.instrument(krummzeit.instruments['bass clarinet']),
-    baca.RhythmSpecifier(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[4],
             ),

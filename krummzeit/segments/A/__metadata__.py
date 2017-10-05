@@ -25,7 +25,7 @@ metadata = abjad.TypedOrderedDict(
                     ('Clarinet Music Staff', 'clarinet in E-flat'),
                     ('Oboe Music Staff', 'oboe'),
                     ('Percussion Staff', 'percussion'),
-                    ('Piano Music Staff', 'harpsichord'),
+                    ('Piano Music Staff', 'piano'),
                     ('Viola Music Staff', 'viola'),
                     ('Violin Music Staff', 'violin'),
                     ]

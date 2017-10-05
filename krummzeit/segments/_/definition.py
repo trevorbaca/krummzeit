@@ -53,7 +53,7 @@ segment_maker.validate_measures_per_stage()
 
 ### vn, va, vc [A1] tremolo clusters (11.1) ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Violin Music Voice',
     baca.select_stages(1),
     baca.RhythmCommand(
@@ -161,7 +161,7 @@ segment_maker.append_commands(
 
 ### (14.1) pf, xylophone reiteration [A5] ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Piano Music Voice',
     baca.select_stages(6),
     baca.RhythmCommand(
@@ -267,7 +267,7 @@ segment_maker.append_commands(
 
 ### vn, va, vc thicket ###
 
-segment_maker.append_specifiers(
+segment_maker.thread_commands(
     [(['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'], (3, 7))],
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=10)],

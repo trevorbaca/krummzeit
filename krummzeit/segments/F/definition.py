@@ -46,7 +46,7 @@ segment_maker.validate_measures_per_stage()
 ################################### COMMANDS ##################################
 ###############################################################################
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Viola Music Voice',
     baca.select_stages(2, 4),
     baca.RhythmCommand(
@@ -74,7 +74,7 @@ segment_maker.copy_specifier(
 
 ### snare [G2], [G4-6], [G9], [G11]; tam-tam [G13-14] ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Percussion Music Voice',
     baca.select_stages(1),
     baca.clef('percussion'),
@@ -110,7 +110,7 @@ segment_maker.copy_specifier(
     baca.select_stages(11),
     )
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Percussion Music Voice',
     baca.select_stages(13, 14),
     baca.RhythmCommand(
@@ -127,7 +127,7 @@ music_maker = segment_maker.append_commands(
 
 ### harpsichord [G3-6], [G9], [G11] ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Piano Music Voice',
     baca.select_stages(3, 6),
     baca.instrument(krummzeit.instruments['harpsichord']),
@@ -162,7 +162,7 @@ segment_maker.copy_specifier(
 
 ### vn, va, vc [G5-13] unrestrained ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Violin Music Voice',
     baca.select_stages(5, 13),
     baca.RhythmCommand(
@@ -196,7 +196,7 @@ segment_maker.copy_specifier(
 
 ### ob, cl [G3-7] ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Oboe Music Voice',
     baca.select_stages(3, 7),
     baca.RhythmCommand(
@@ -230,7 +230,7 @@ segment_maker.append_commands(
 
 ### bass clarinet [G11-14] myrkr ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Clarinet Music Voice',
     baca.select_stages(11, 14),
     baca.instrument(krummzeit.instruments['bass clarinet']),
@@ -340,7 +340,7 @@ segment_maker.append_commands(
 
 ### (12) hpschd, ob, cl ###
 
-segment_maker.append_specifiers(
+segment_maker.thread_commands(
     [
         ('Piano Music Voice', (3, 11)),
         (['Oboe Music Voice', 'Clarinet Music Voice'], (1, 8)),

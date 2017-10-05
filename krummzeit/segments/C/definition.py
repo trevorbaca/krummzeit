@@ -65,7 +65,7 @@ segment_maker.validate_measures_per_stage()
 
 ### snare [D1-8] ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Percussion Music Voice',
     baca.select_stages(1, 9),
     baca.clef('percussion'),
@@ -82,7 +82,7 @@ music_maker = segment_maker.append_commands(
 
 ### pf [D1] [D3] [D5] points ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Piano Music Voice',
     baca.select_stages(1),
     baca.instrument(krummzeit.instruments['piano']),
@@ -114,7 +114,7 @@ segment_maker.copy_specifier(
 
 ### vn, va, vc [D5] [D7] [D9] ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Violin Music Voice',
     baca.select_stages(5, 5),
     baca.RhythmCommand(
@@ -143,7 +143,7 @@ segment_maker.copy_specifier(
     baca.select_stages(9, 9),
     )
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Viola Music Voice',
     baca.select_stages(5, 5),
     baca.RhythmCommand(
@@ -172,7 +172,7 @@ segment_maker.copy_specifier(
     baca.select_stages(9, 9),
     )
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Cello Music Voice',
     baca.select_stages(5),
     baca.RhythmCommand(
@@ -203,7 +203,7 @@ segment_maker.copy_specifier(
 
 ### pf [D9-12] [D13] sea storm ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Piano Music Voice',
     baca.select_stages(9, 12),
     baca.clef('bass'),
@@ -223,7 +223,7 @@ segment_maker.copy_specifier(
 
 ### va [D11-12] [D14-16]; vn, vc [D12] [D14-16] ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Viola Music Voice',
     baca.select_stages(11, 12),
     baca.RhythmCommand(
@@ -308,7 +308,7 @@ segment_maker.append_commands(
 
 ### (9) pf, vn, va, vc ###
 
-segment_maker.append_specifiers(
+segment_maker.thread_commands(
     [
         ('Piano Music Voice', (1, 7)),
         (['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'], (1, 9)),

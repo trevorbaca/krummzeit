@@ -139,7 +139,7 @@ segment_maker.copy_specifier(
 
 ### vn [C1-3] scraped slate ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Violin Music Voice',
     baca.select_stages(1, 17),
     baca.clef('percussion'),
@@ -171,7 +171,7 @@ segment_maker.append_commands(
 
 ### va, vc [C2-4] color pedals ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Viola Music Voice',
     baca.select_stages(3),
     baca.RhythmCommand(
@@ -252,7 +252,7 @@ segment_maker.copy_specifier(
 
 ### pf, xyl [C3] points ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Piano Music Voice',
     baca.select_stages(11),
     baca.instrument(krummzeit.instruments['piano']),
@@ -354,7 +354,7 @@ segment_maker.copy_specifier(
     baca.select_stages(26),
     )
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Percussion Music Voice',
     baca.select_stages(27, 30),
     baca.clef('percussion'),
@@ -370,7 +370,7 @@ music_maker = segment_maker.append_commands(
 
 ### vn [C4-8] ornanmented 6.1 ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Violin Music Voice',
     baca.select_stages(19, 22),
     baca.instrument(krummzeit.instruments['violin']),
@@ -390,7 +390,7 @@ music_maker = segment_maker.append_commands(
 
 ### vn, va, vc [C8-11] unrestrained ###
 
-music_maker = segment_maker.append_commands(
+segment_maker.append_commands(
     'Viola Music Voice',
     baca.select_stages(26, 29),
     baca.RhythmCommand(

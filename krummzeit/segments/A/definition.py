@@ -212,7 +212,7 @@ selector = abjad.Selector()
 selector = selector.by_class(abjad.Tuplet)
 selector = selector.by_logical_measure()
 selector = selector.flatten()
-selector = selector.get_slice(stop=2, apply_to_each=False)
+selector = selector.get_slice(stop=2)
 
 rhythm_overwrite = (
     selector,

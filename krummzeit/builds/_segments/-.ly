@@ -579,12 +579,12 @@
                         f''8. \glissando
                     }
                     \times 2/3 {
-                        gf''8 \glissando
+                        fs''8 \glissando
                         e''4 \glissando
                     }
                     \times 4/5 {
                         d''16. \glissando
-                        gf''4.
+                        fs''4.
                     }
                     r4.
                     r4.
@@ -594,7 +594,7 @@
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/7 {
-                        df''4 \glissando
+                        cs''4 \glissando
                         e'8. \glissando
                     }
                     {
@@ -603,7 +603,7 @@
                     }
                     \times 4/5 {
                         f'16 \glissando
-                        gf'4 \ff
+                        fs'4 \ff
                         \revert NoteHead.style
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
@@ -699,12 +699,12 @@
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/7 {
-                        gf'2 \glissando
+                        fs'2 \glissando
                         e'4. \glissando
                     }
                     {
                         d'8 \glissando
-                        gf'4
+                        fs'4
                     }
                     r2.
                     r4.
@@ -713,7 +713,7 @@
                         c'4 \glissando
                     }
                     \times 4/5 {
-                        df'32 \glissando [
+                        cs'32 \glissando [
                         e8 ] \glissando
                     }
                     \times 4/7 {
@@ -814,12 +814,12 @@
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/7 {
-                        gf'2 \glissando
+                        fs'2 \glissando
                         e'4. \glissando
                     }
                     {
                         d'8 \glissando
-                        gf'4 \glissando
+                        fs'4 \glissando
                     }
                     \times 4/5 {
                         a16. \glissando
@@ -827,7 +827,7 @@
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/7 {
-                        df'4 \glissando
+                        cs'4 \glissando
                         e'8.
                     }
                     r4.

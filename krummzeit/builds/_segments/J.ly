@@ -814,7 +814,7 @@
                     d'\longa
                     d'\longa
                     d'\longa
-                    d'\breve..
+                    d'\breve.. \glissando
                     d,2
                     \revert DynamicLineSpanner.staff-padding
                     d,\longa \ff

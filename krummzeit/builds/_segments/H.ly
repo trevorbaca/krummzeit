@@ -2070,13 +2070,13 @@
                     \times 13/10 {
                         \override DynamicLineSpanner.staff-padding = #'7
                         \override TupletBracket.staff-padding = #3
-                        d''2. \fff
-                        ef''2
+                        d''2. \fff \glissando
+                        ef''2 :32
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 9/5 {
-                        ef''2.
-                        ef''2
+                        ef''2. :32
+                        ef''2 :32
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
@@ -2133,13 +2133,13 @@
                     \times 13/10 {
                         \override DynamicLineSpanner.staff-padding = #'9
                         \override TupletBracket.staff-padding = #5
-                        d4 \fff
-                        a1
+                        d4 \fff \glissando
+                        a1 :32
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 9/5 {
-                        a4
-                        a1
+                        a4 :32
+                        a1 :32
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
@@ -2195,13 +2195,13 @@
                     \times 13/10 {
                         \override DynamicLineSpanner.staff-padding = #'9
                         \override TupletBracket.staff-padding = #5
-                        d2 \fff
-                        eqf,2.
+                        d2 \fff \glissando
+                        eqf,2. :32
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 9/5 {
-                        eqf,2
-                        eqf,2.
+                        eqf,2 :32
+                        eqf,2. :32
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding

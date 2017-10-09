@@ -131,7 +131,7 @@ segment_maker.append_commands(
         ),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Violin Music Voice', 1),
     baca.SimpleScope('Viola Music Voice', (1, 1)),
     rhythm_maker__split_divisions_by_counts=[8, 10],
@@ -147,13 +147,13 @@ segment_maker.append_commands(
 
 ### vc ###
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Piano Music Voice', 1),
     baca.SimpleScope('Cello Music Voice', (1, 6)),  # ?
     rhythm_maker__division_masks=None,
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Piano Music Voice', 7),
     baca.SimpleScope('Cello Music Voice', (7, 10)),
     )

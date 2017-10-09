@@ -2045,24 +2045,24 @@
                         }
                         \times 2/3 {
                             \override NoteHead.style = #'harmonic
-                            gs4 \ppp \glissando
+                            af4 \ppp \glissando
                             b2 \glissando
                         }
                         {
                             a4 \glissando
-                            gs1 ~
+                            af1 ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
-                            gs1 \glissando
+                            af1 \glissando
                             bf2. \glissando
                         }
                         \times 2/3 {
                             c'4 \glissando
-                            gs2 ~
+                            af2 ~
                         }
                         \times 4/5 {
-                            gs16 \glissando
+                            af16 \glissando
                             f4 \glissando
                         }
                         \times 4/7 {
@@ -2109,23 +2109,23 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/9 {
                             \override NoteHead.style = #'harmonic
-                            gs2. \ppp \glissando
+                            af2. \ppp \glissando
                             b,1. \glissando
                         }
                         \times 4/5 {
                             a8 \glissando
-                            gs2 ~
+                            af2 ~
                         }
                         \times 4/7 {
-                            gs2 \glissando
+                            af2 \glissando
                             bf,4. \glissando
                         }
                         {
                             c4 \glissando
-                            gs2 ~
+                            af2 ~
                         }
                         \times 4/5 {
-                            gs8 \glissando
+                            af8 \glissando
                             f2 \glissando
                         }
                         \times 4/7 {
@@ -2171,23 +2171,23 @@
                         }
                         \times 2/3 {
                             \override NoteHead.style = #'harmonic
-                            gs,4 \ppp \glissando
+                            af,4 \ppp \glissando
                             b,,2 \glissando
                         }
                         \times 4/5 {
                             a,8. \glissando
-                            gs,2. ~
+                            af,2. ~
                         }
                         \times 4/7 {
-                            gs,2 \glissando
+                            af,2 \glissando
                             bf,,4. \glissando
                         }
                         \times 2/3 {
                             c,4 \glissando
-                            gs,2 ~
+                            af,2 ~
                         }
                         {
-                            gs,4 \glissando
+                            af,4 \glissando
                             f,1 \glissando
                         }
                         \times 4/7 {

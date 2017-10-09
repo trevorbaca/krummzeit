@@ -76,9 +76,9 @@ segment_maker.append_commands(
         ),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Oboe Music Voice', 1),
-    baca.select_stages(2, 2),
+    baca.SimpleScope('Oboe Music Voice', baca.select_stages(2, 2)),
     )
 
 segment_maker.append_commands(
@@ -118,17 +118,17 @@ segment_maker.append_commands(
         ),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Violin Music Voice', 2),
     baca.SimpleScope('Viola Music Voice', (2, 2)),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Violin Music Voice', 2),
     baca.SimpleScope('Cello Music Voice', (2, 2)),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Violin Music Voice', 2),
     baca.SimpleScope('Piano Music Voice', (2, 2)),
     )
@@ -155,9 +155,9 @@ segment_maker.append_commands(
     krummzeit.markup.suspended_cymbal(),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Percussion Music Voice', 2),
-    baca.select_stages(17, 22),
+    baca.SimpleScope('Percussion Music Voice', baca.select_stages(17, 22)),
     )
 
 ### vn, va, vc [F4-10] glissando thicket (thinner) ###
@@ -180,14 +180,14 @@ segment_maker.append_commands(
         ),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Violin Music Voice', 4),
     baca.SimpleScope('Viola Music Voice', (4, 10)),
     division_maker__ratios=[(2, 1), (1, 1, 1), (2, 1)],
     rhythm_maker__division_masks=[abjad.Pattern(indices=[0, 1], period=7)],
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Violin Music Voice', 4),
     baca.SimpleScope('Cello Music Voice', (4, 4)),
     division_maker__ratios=[(1, 1, 1), (2, 1), (2, 1)],
@@ -221,7 +221,7 @@ segment_maker.append_commands(
         ),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Oboe Music Voice', 4),
     baca.SimpleScope('Clarinet Music Voice', (4, 11)),
     rhythm_maker__tuplet_ratios=[
@@ -265,12 +265,12 @@ segment_maker.append_commands(
         ),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Piano Music Voice', 8),
-    baca.select_stages(10, 15),
+    baca.SimpleScope('Piano Music Voice', baca.select_stages(10, 15)),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Piano Music Voice', 8),
     baca.SimpleScope('Percussion Music Voice', (8, 8)),
     division_maker__ratios=[(2, 1), (1, 2)],
@@ -284,9 +284,9 @@ segment_maker.append_commands(
     baca.five_line_staff(),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Percussion Music Voice', 8),
-    baca.select_stages(10, 15),
+    baca.SimpleScope('Percussion Music Voice', baca.select_stages(10, 15)),
     )
 
 ### cl, va, vc [F13] 3rd-octave interweave ###
@@ -313,12 +313,12 @@ segment_maker.append_commands(
         ),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Clarinet Music Voice', 13),
     baca.SimpleScope('Viola Music Voice', (13, 13)),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Clarinet Music Voice', 13),
     baca.SimpleScope('Cello Music Voice', (13, 13)),
     )
@@ -346,32 +346,32 @@ segment_maker.append_commands(
         ),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Clarinet Music Voice', 16),
-    baca.select_stages(22, 23),
+    baca.SimpleScope('Clarinet Music Voice', baca.select_stages(22, 23)),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Clarinet Music Voice', 16),
     baca.SimpleScope('Viola Music Voice', (16, 16)),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Viola Music Voice', 16),
-    baca.select_stages(22, 23),
+    baca.SimpleScope('Viola Music Voice', baca.select_stages(22, 23)),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Clarinet Music Voice', 16),
     baca.SimpleScope('Cello Music Voice', (16, 16)),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Cello Music Voice', 16),
-    baca.select_stages(22, 23),
+    baca.SimpleScope('Cello Music Voice', baca.select_stages(22, 23)),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Clarinet Music Voice', 16),
     baca.SimpleScope('Piano Music Voice', (16, 18)),
     )
@@ -398,7 +398,7 @@ segment_maker.append_commands(
         ),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Oboe Music Voice', 18),
     baca.SimpleScope('Violin Music Voice', (18, 18)),
     )
@@ -422,9 +422,9 @@ segment_maker.append_commands(
         ),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Piano Music Voice', 19),
-    baca.select_stages(22),
+    baca.SimpleScope('Piano Music Voice', baca.select_stages(22)),
     )
 
 ###############################################################################

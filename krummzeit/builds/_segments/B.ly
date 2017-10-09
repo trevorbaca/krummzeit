@@ -1802,7 +1802,7 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/6 {
                         c'''8
-                        df'''2 \stopTrillSpan \startTrillSpan
+                        cs'''2 \stopTrillSpan \startTrillSpan
                         a''8 ~ \stopTrillSpan \startTrillSpan
                     }
                     {
@@ -1821,25 +1821,25 @@
                     \times 7/10 {
                         af''4
                         bf''2 \stopTrillSpan \startTrillSpan
-                        cf'''2 \stopTrillSpan \startTrillSpan
+                        b''2 \stopTrillSpan \startTrillSpan
                     }
                     \times 2/3 {
-                        cqf'''8 \stopTrillSpan
-                        cf'''4 \startTrillSpan
+                        bqs''8 \stopTrillSpan
+                        b''4 \startTrillSpan
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 3/4 {
-                        ctqf'''4 \stopTrillSpan \startTrillSpan
-                        df'''4 ~ \stopTrillSpan \startTrillSpan
+                        bqf''4 \stopTrillSpan \startTrillSpan
+                        cs'''4 ~ \stopTrillSpan \startTrillSpan
                     }
                     {
-                        df'''4
-                        dtqf'''4 \stopTrillSpan \startTrillSpan
-                        df'''8 ~ \stopTrillSpan \startTrillSpan
+                        cs'''4
+                        cqs'''4 \stopTrillSpan \startTrillSpan
+                        cs'''8 ~ \stopTrillSpan \startTrillSpan
                     }
                     \times 4/5 {
-                        df'''8 [
-                        dqf'''8 \stopTrillSpan
+                        cs'''8 [
+                        ctqs'''8 \stopTrillSpan
                         d'''16
                         ef''16 ]
                         af''4 ~ \startTrillSpan

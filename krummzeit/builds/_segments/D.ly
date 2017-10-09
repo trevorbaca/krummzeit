@@ -2078,12 +2078,12 @@
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/7 {
-                        cf''2 \glissando
-                        df''4. \glissando
+                        b'2 \glissando
+                        cs''4. \glissando
                     }
                     \times 2/3 {
                         a''8 \glissando
-                        gf''4 \glissando
+                        fs''4 \glissando
                     }
                     \times 4/5 {
                         ef''8 \glissando
@@ -2096,7 +2096,7 @@
                     r2 \stopTextSpan
                     r2.
                     \times 4/5 {
-                        df''16. \ff \glissando
+                        cs''16. \ff \glissando
                             ^ \markup {
                                 \whiteout
                                     \upright
@@ -2106,39 +2106,39 @@
                     }
                     \times 4/7 {
                         c''2 \glissando
-                        cf''4. \glissando
+                        b'4. \glissando
                     }
                     \times 2/3 {
                         af''8 \glissando
                         g''4 \glissando
                     }
                     \times 4/5 {
-                        gf''16 \glissando
-                        df''4 \glissando
+                        fs''16 \glissando
+                        cs''4 \glissando
                     }
                     \times 4/7 {
                         a''8 \glissando [
-                        gf''16. ] \glissando
+                        fs''16. ] \glissando
                     }
                     \times 2/3 {
                         ef''8 \glissando
                         d''4 \glissando
                     }
                     \times 4/5 {
-                        gf''8. \glissando
+                        fs''8. \glissando
                         f''2. \glissando
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/7 {
                         c''4 \glissando
-                        cf''8. \glissando
+                        b'8. \glissando
                     }
                     {
                         af''4 \glissando
                         g''2 \glissando
                     }
                     \times 4/5 {
-                        df''16. \glissando
+                        cs''16. \glissando
                         c''4. \glissando
                     }
                     \times 4/7 {
@@ -2146,24 +2146,24 @@
                         a''8. \glissando
                     }
                     \times 2/3 {
-                        cf''16 \glissando [
+                        b'16 \glissando [
                         g''8 ] \glissando
                     }
                     \times 4/5 {
-                        gf''16 \glissando
+                        fs''16 \glissando
                         f''4 \glissando
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/7 {
                         c''4 \glissando
-                        cf''8. \glissando
+                        b'8. \glissando
                     }
                     \times 2/3 {
                         af''8 \glissando
-                        cf''4 \glissando
+                        b'4 \glissando
                     }
                     \times 4/5 {
-                        df''8 \glissando
+                        cs''8 \glissando
                         c''2 \glissando
                     }
                     \times 4/7 {
@@ -2187,55 +2187,55 @@
                         a''4 \glissando
                     }
                     \times 4/7 {
-                        cf''2 \glissando
-                        df''4. \glissando
+                        b'2 \glissando
+                        cs''4. \glissando
                     }
                     \times 2/3 {
                         a''8 \glissando
-                        gf''4 \glissando
+                        fs''4 \glissando
                     }
                     \times 4/5 {
                         ef''8 \glissando
                         d''2 \glissando
                     }
                     \times 4/7 {
-                        df''2 \glissando
+                        cs''2 \glissando
                         f''4. \glissando
                     }
                     \times 2/3 {
                         c''8 \glissando
-                        cf''4 \glissando
+                        b'4 \glissando
                     }
                     \times 4/5 {
                         af''16 \glissando
                         g''4 \glissando
                     }
                     \times 4/7 {
-                        gf''2 \glissando
-                        df''4. \glissando
+                        fs''2 \glissando
+                        cs''4. \glissando
                     }
                     \times 2/3 {
                         a''8 \glissando
-                        gf''4 \glissando
+                        fs''4 \glissando
                     }
                     \times 4/5 {
                         ef''8 \glissando
                         d''2 \glissando
                     }
                     {
-                        gf''2 \glissando
+                        fs''2 \glissando
                         f''4. \glissando
                     }
                     \times 2/3 {
                         c''4 \glissando
-                        cf''2 \glissando
+                        b'2 \glissando
                     }
                     \times 4/5 {
                         af''16 \glissando
                         g''4 \glissando
                     }
                     \times 4/7 {
-                        df''4 \glissando
+                        cs''4 \glissando
                         c''8. \glissando
                     }
                     \times 2/3 {
@@ -2243,17 +2243,17 @@
                         a''8 ] \glissando
                     }
                     \times 4/5 {
-                        cf''16 \glissando
+                        b'16 \glissando
                         g''4 \glissando
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/7 {
-                        gf''4 \glissando
+                        fs''4 \glissando
                         f''8. \glissando
                     }
                     {
                         c''4 \glissando
-                        cf''2
+                        b'2
                         \revert NoteHead.style
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
@@ -2367,12 +2367,12 @@
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/7 {
-                        cf''2 \glissando
-                        df''4. \glissando
+                        b'2 \glissando
+                        cs''4. \glissando
                     }
                     \times 2/3 {
                         a''8 \glissando
-                        gf''4 \glissando
+                        fs''4 \glissando
                     }
                     \times 4/5 {
                         ef''8 \glissando
@@ -2406,24 +2406,24 @@
                     \override TextSpanner.dash-period = #1.5
                     r2 \startTextSpan
                     \times 4/5 {
-                        df''16 \glissando \< \pp
+                        cs''16 \glissando \< \pp
                         f''4 \glissando
                     }
                     \times 4/7 {
                         c''2 \glissando
-                        cf''4. \glissando
+                        b'4. \glissando
                     }
                     \times 2/3 {
                         af''8 \glissando
                         g''4 \glissando
                     }
                     \times 4/5 {
-                        gf''16 \glissando
-                        df''4 \glissando
+                        fs''16 \glissando
+                        cs''4 \glissando
                     }
                     \times 4/7 {
                         a''4 \glissando
-                        gf''8. \glissando
+                        fs''8. \glissando
                     }
                     \times 2/3 {
                         ef''8 \glissando
@@ -2436,19 +2436,19 @@
                         \override Beam.positions = #'(-4 . -4)
                         \override DynamicLineSpanner.staff-padding = #'6
                         \override TupletBracket.staff-padding = #3
-                        gf''8 \glissando
+                        fs''8 \glissando
                         f''2 \glissando
                     }
                     \times 4/7 {
                         c''4 \glissando
-                        cf''8. \glissando
+                        b'8. \glissando
                     }
                     {
                         af''4 \glissando
                         g''2 \glissando
                     }
                     \times 4/5 {
-                        df''16 \glissando
+                        cs''16 \glissando
                         c''4 \glissando
                     }
                     \times 4/7 {
@@ -2456,11 +2456,11 @@
                         a''4. \glissando
                     }
                     \times 2/3 {
-                        cf''4 \glissando
+                        b'4 \glissando
                         g''2 \glissando
                     }
                     \times 4/5 {
-                        gf''8 \glissando
+                        fs''8 \glissando
                         \revert TextSpanner.bound-details
                         \revert TextSpanner.dash-fraction
                         \revert TextSpanner.dash-period
@@ -2474,14 +2474,14 @@
                                     \upright
                                         "molto gridato ed estr. sul pont."
                                 }
-                        cf''4. \glissando
+                        b'4. \glissando
                     }
                     {
                         af''8 \glissando
-                        cf''4 \glissando
+                        b'4 \glissando
                     }
                     \times 4/5 {
-                        df''8 \glissando
+                        cs''8 \glissando
                         c''2 \glissando
                     }
                     \times 4/7 {
@@ -2490,19 +2490,19 @@
                     }
                     \times 2/3 {
                         d''8 \glissando
-                        df''4 \glissando
+                        cs''4 \glissando
                     }
                     \times 4/5 {
                         a''32 \glissando [
-                        gf''8 ] \glissando
+                        fs''8 ] \glissando
                     }
                     \times 4/7 {
                         ef''4 \glissando
                         a''8. \glissando
                     }
                     {
-                        cf''4 \glissando
-                        df''2 \glissando
+                        b'4 \glissando
+                        cs''2 \glissando
                     }
                     \times 4/5 {
                         c''16. \glissando
@@ -2514,35 +2514,35 @@
                         d''4. \glissando
                     }
                     {
-                        df''8 \glissando
+                        cs''8 \glissando
                         a''4 \glissando
                     }
                     \times 4/5 {
-                        gf''16 \glissando
+                        fs''16 \glissando
                         af''4 \glissando
                     }
                     \times 4/7 {
                         g''8 \glissando [
-                        gf''16. ] \glissando
+                        fs''16. ] \glissando
                     }
                     \times 2/3 {
                         f''8 \glissando
                         c''4 \glissando
                     }
                     \times 4/5 {
-                        cf''16. \glissando
-                        gf''4. \glissando
+                        b'16. \glissando
+                        fs''4. \glissando
                     }
                     \times 4/7 {
                         ef''4 \glissando
                         d''8. \glissando
                     }
                     \times 2/3 {
-                        df''4 \glissando
+                        cs''4 \glissando
                         a''2 \glissando
                     }
                     \times 4/5 {
-                        cf''16 \glissando
+                        b'16 \glissando
                         af''4
                         \revert NoteHead.style
                     }
@@ -2562,48 +2562,48 @@
                         a''2 \glissando
                     }
                     \times 4/7 {
-                        cf''2 \glissando
-                        df''4. \glissando
+                        b'2 \glissando
+                        cs''4. \glissando
                     }
                     \times 2/3 {
                         a''8 \glissando
-                        gf''4 \glissando
+                        fs''4 \glissando
                     }
                     \times 4/5 {
                         ef''16 \glissando
                         d''4 \glissando
                     }
                     \times 4/7 {
-                        df''4 \glissando
+                        cs''4 \glissando
                         f''8. \glissando
                     }
                     \times 2/3 {
                         c''8 \glissando
-                        cf''4 \glissando
+                        b'4 \glissando
                     }
                     \times 4/5 {
                         af''8. \glissando
                         g''2. \glissando
                     }
                     \times 4/7 {
-                        gf''4 \glissando
-                        df''8. \glissando
+                        fs''4 \glissando
+                        cs''8. \glissando
                     }
                     \times 2/3 {
                         a''4.. \glissando
-                        gf''2.. \glissando
+                        fs''2.. \glissando
                     }
                     \times 4/5 {
                         ef''8 \glissando
                         d''2 \glissando
                     }
                     \times 4/7 {
-                        gf''4 \glissando
+                        fs''4 \glissando
                         f''8. \glissando
                     }
                     \times 2/3 {
                         c''8 \glissando
-                        cf''4 \glissando
+                        b'4 \glissando
                     }
                     \times 4/5 {
                         af''16 \glissando
@@ -2611,7 +2611,7 @@
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/7 {
-                        df''4 \glissando
+                        cs''4 \glissando
                         c''8. \glissando
                     }
                     \times 2/3 {
@@ -2619,12 +2619,12 @@
                         a''4 \glissando
                     }
                     \times 4/5 {
-                        cf''8. \glissando
+                        b'8. \glissando
                         g''2. \glissando
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/7 {
-                        gf''4 \glissando
+                        fs''4 \glissando
                         f''8.
                         \revert NoteHead.style
                         \revert Beam.positions
@@ -2747,15 +2747,15 @@
                         a''4 \glissando
                     }
                     \times 4/7 {
-                        cf''1 \glissando
-                        df''2. \glissando
+                        b'1 \glissando
+                        cs''2. \glissando
                     }
                     \times 2/3 {
                         a''4 \glissando
                         \revert TextSpanner.bound-details
                         \revert TextSpanner.dash-fraction
                         \revert TextSpanner.dash-period
-                        gf''2 \f \stopTextSpan
+                        fs''2 \f \stopTextSpan
                     }
                     r2.
                     \tweak text #tuplet-number::calc-fraction-text
@@ -2769,24 +2769,24 @@
                         d''8. \glissando
                     }
                     \times 2/3 {
-                        df''4 \glissando
+                        cs''4 \glissando
                         f''2 \glissando
                     }
                     \times 4/5 {
                         c''16 \glissando
-                        cf''4 \glissando
+                        b'4 \glissando
                     }
                     \times 4/7 {
                         af''4 \glissando
                         g''8. \glissando
                     }
                     \times 2/3 {
-                        gf''16 \glissando [
-                        df''8 ] \glissando
+                        fs''16 \glissando [
+                        cs''8 ] \glissando
                     }
                     \times 4/5 {
                         a''16 \glissando
-                        gf''4 \glissando
+                        fs''4 \glissando
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/7 {
@@ -2794,12 +2794,12 @@
                         d''4. \glissando
                     }
                     {
-                        gf''8 \glissando
+                        fs''8 \glissando
                         f''4 \glissando
                     }
                     \times 4/5 {
                         c''8. \glissando
-                        cf''2. \glissando
+                        b'2. \glissando
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/7 {
@@ -2807,7 +2807,7 @@
                         g''8. \glissando
                     }
                     \times 2/3 {
-                        df''8 \glissando
+                        cs''8 \glissando
                         c''4 \glissando
                     }
                     \times 4/5 {
@@ -2815,23 +2815,23 @@
                         a''8 ] \glissando
                     }
                     \times 4/7 {
-                        cf''4 \glissando
+                        b'4 \glissando
                         g''8. \glissando
                     }
                     {
-                        gf''8 \glissando
+                        fs''8 \glissando
                         f''4 \glissando
                     }
                     \times 4/5 {
                         c''16 \glissando
-                        cf''4 \glissando
+                        b'4 \glissando
                     }
                     \times 4/7 {
                         af''2 \glissando
-                        cf''4. \glissando
+                        b'4. \glissando
                     }
                     \times 2/3 {
-                        df''8 \glissando
+                        cs''8 \glissando
                         c''4
                         \revert NoteHead.style
                     }
@@ -2851,24 +2851,24 @@
                         a''2. \glissando
                     }
                     \times 4/7 {
-                        cf''2 \glissando
-                        df''4. \glissando
+                        b'2 \glissando
+                        cs''4. \glissando
                     }
                     \times 2/3 {
                         a''8 \glissando
-                        gf''4 \glissando
+                        fs''4 \glissando
                     }
                     \times 4/5 {
                         ef''16 \glissando
                         d''4 \glissando
                     }
                     \times 4/7 {
-                        df''4 \glissando
+                        cs''4 \glissando
                         f''8. \glissando
                     }
                     \times 2/3 {
                         c''8 \glissando
-                        cf''4 \glissando
+                        b'4 \glissando
                     }
                     \times 4/5 {
                         af''16 \glissando
@@ -2876,31 +2876,31 @@
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/7 {
-                        gf''2 \glissando
-                        df''4. \glissando
+                        fs''2 \glissando
+                        cs''4. \glissando
                     }
                     \times 2/3 {
                         a''2 \glissando
-                        gf''1 \glissando
+                        fs''1 \glissando
                     }
                     \times 4/5 {
                         ef''16. \glissando
                         d''4. \glissando
                     }
                     \times 4/7 {
-                        gf''4 \glissando
+                        fs''4 \glissando
                         f''8. \glissando
                     }
                     \times 2/3 {
                         c''8 \glissando
-                        cf''4 \glissando
+                        b'4 \glissando
                     }
                     \times 4/5 {
                         af''16 \glissando
                         g''4 \glissando
                     }
                     \times 4/7 {
-                        df''4 \glissando
+                        cs''4 \glissando
                         c''8. \glissando
                     }
                     {
@@ -2908,11 +2908,11 @@
                         a''4 \glissando
                     }
                     \times 4/5 {
-                        cf''8.. \glissando
+                        b'8.. \glissando
                         g''2.. \glissando
                     }
                     \times 4/7 {
-                        gf''4 \glissando
+                        fs''4 \glissando
                         f''8.
                         \revert NoteHead.style
                         \revert Beam.positions

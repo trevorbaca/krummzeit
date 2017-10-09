@@ -389,7 +389,7 @@ segment_maker.append_commands(
 
 ### (3.5) OB bowing ###
 
-segment_maker.thread_commands(
+segment_maker.scope(
     baca.compound([
         baca.scope('Violin Music Voice', 5, 9),
         baca.scope('Viola Music Voice', 5, 9),
@@ -478,7 +478,7 @@ segment_maker.append_commands(
 
 ### (9.1) vn, va, vc points ###
 
-segment_maker.thread_commands(
+segment_maker.scope(
     baca.compound([
         baca.scope('Violin Music Voice', 15),
         baca.scope('Viola Music Voice', 15),

@@ -417,7 +417,7 @@ segment_maker.append_commands(
     baca.reiterated_dynamic('pp'),
     )
 
-segment_maker.thread_commands(
+segment_maker.scope(
     baca.compound([
         baca.scope('Violin Music Voice', 1, 5),
         baca.scope('Viola Music Voice', 1, 3),
@@ -471,7 +471,7 @@ segment_maker.append_commands(
     baca.markup.accent_changes_of_direction(),
     )
 
-segment_maker.thread_commands(
+segment_maker.scope(
     baca.compound([
         baca.scope('Viola Music Voice', 4, 9),
         baca.scope('Violin Music Voice', 6, 9),
@@ -485,7 +485,7 @@ segment_maker.thread_commands(
         ),
     )
 
-segment_maker.thread_commands(
+segment_maker.scope(
     [
         baca.scope('Viola Music Voice', 4, 9),
         baca.scope('Violin Music Voice', 6, 9),

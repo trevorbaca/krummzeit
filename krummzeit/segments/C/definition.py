@@ -308,7 +308,7 @@ segment_maker.append_commands(
 
 ### (9) pf, vn, va, vc ###
 
-segment_maker.thread_commands(
+segment_maker.scope(
     baca.compound([
         baca.scope('Piano Music Voice', 1, 7),
         baca.scope('Violin Music Voice', 1, 9),

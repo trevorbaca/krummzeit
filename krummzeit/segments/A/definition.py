@@ -719,7 +719,7 @@ segment_maker.append_commands(
 
 ### (3) [B1-13] (hpschd, vn, ob, cl) ###
 
-segment_maker.thread_commands(
+segment_maker.scope(
     baca.compound([
         baca.scope('Viola Music Voice', 12, 16),
         baca.scope('Cello Music Voice', 12, 17),
@@ -798,7 +798,7 @@ segment_maker.append_commands(
 
 ### (9.1) [B17-23] ###
 
-segment_maker.thread_commands(
+segment_maker.scope(
     baca.compound([
         baca.scope('Viola Music Voice', 17, 22),
         baca.scope('Cello Music Voice', 18, 22),

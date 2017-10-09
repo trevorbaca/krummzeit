@@ -103,13 +103,13 @@ segment_maker.append_commands(
     )
 
 segment_maker.copy_rhythm(
-    baca.SimpleScope('Piano Music Voice', 1),
-    baca.SimpleScope('Piano Music Voice', baca.select_stages(3, 3)),
+    baca.scope('Piano Music Voice', 1),
+    baca.scope('Piano Music Voice', 3),
     )
 
 segment_maker.copy_rhythm(
-    baca.SimpleScope('Piano Music Voice', 1),
-    baca.SimpleScope('Piano Music Voice', baca.select_stages(5, 5)),
+    baca.scope('Piano Music Voice', 1),
+    baca.scope('Piano Music Voice', 5),
     )
 
 ### vn, va, vc [D5] [D7] [D9] ###
@@ -134,13 +134,13 @@ segment_maker.append_commands(
     )
 
 segment_maker.copy_rhythm(
-    baca.SimpleScope('Violin Music Voice', 5),
-    baca.SimpleScope('Violin Music Voice', baca.select_stages(7, 7)),
+    baca.scope('Violin Music Voice', 5),
+    baca.scope('Violin Music Voice', 7),
     )
 
 segment_maker.copy_rhythm(
-    baca.SimpleScope('Violin Music Voice', 5),
-    baca.SimpleScope('Violin Music Voice', baca.select_stages(9, 9)),
+    baca.scope('Violin Music Voice', 5),
+    baca.scope('Violin Music Voice', 9),
     )
 
 segment_maker.append_commands(
@@ -163,13 +163,13 @@ segment_maker.append_commands(
     )
 
 segment_maker.copy_rhythm(
-    baca.SimpleScope('Viola Music Voice', 5),
-    baca.SimpleScope('Viola Music Voice', baca.select_stages(7, 7)),
+    baca.scope('Viola Music Voice', 5),
+    baca.scope('Viola Music Voice', 7),
     )
 
 segment_maker.copy_rhythm(
-    baca.SimpleScope('Viola Music Voice', 5),
-    baca.SimpleScope('Viola Music Voice', baca.select_stages(9, 9)),
+    baca.scope('Viola Music Voice', 5),
+    baca.scope('Viola Music Voice', 9),
     )
 
 segment_maker.append_commands(
@@ -192,13 +192,13 @@ segment_maker.append_commands(
     )
 
 segment_maker.copy_rhythm(
-    baca.SimpleScope('Cello Music Voice', 5),
-    baca.SimpleScope('Cello Music Voice', baca.select_stages(7, 7)),
+    baca.scope('Cello Music Voice', 5),
+    baca.scope('Cello Music Voice', 7),
     )
 
 segment_maker.copy_rhythm(
-    baca.SimpleScope('Cello Music Voice', 5),
-    baca.SimpleScope('Cello Music Voice', baca.select_stages(9, 9)),
+    baca.scope('Cello Music Voice', 5),
+    baca.scope('Cello Music Voice', 9),
     )
 
 ### pf [D9-12] [D13] sea storm ###
@@ -217,8 +217,8 @@ segment_maker.append_commands(
     )
 
 segment_maker.copy_rhythm(
-    baca.SimpleScope('Piano Music Voice', 9),
-    baca.SimpleScope('Piano Music Voice', baca.select_stages(14, 16)),
+    baca.scope('Piano Music Voice', 9),
+    baca.scope('Piano Music Voice', 14, 16),
     )
 
 ### va [D11-12] [D14-16]; vn, vc [D12] [D14-16] ###
@@ -236,18 +236,18 @@ segment_maker.append_commands(
     )
 
 segment_maker.copy_rhythm(
-    baca.SimpleScope('Viola Music Voice', 11),
-    baca.SimpleScope('Viola Music Voice', baca.select_stages(14, 16)),
+    baca.scope('Viola Music Voice', 11),
+    baca.scope('Viola Music Voice', 14, 16),
     )
 
 segment_maker.copy_rhythm(
-    baca.SimpleScope('Viola Music Voice', 14),
-    baca.SimpleScope('Violin Music Voice', (14, 14)),
+    baca.scope('Viola Music Voice', 14),
+    baca.scope('Violin Music Voice', 14),
     )
 
 segment_maker.copy_rhythm(
-    baca.SimpleScope('Viola Music Voice', 14),
-    baca.SimpleScope('Cello Music Voice', (14, 14)),
+    baca.scope('Viola Music Voice', 14),
+    baca.scope('Cello Music Voice', 14),
     )
 
 ### ob [D14-16] blocks ###

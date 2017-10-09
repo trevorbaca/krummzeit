@@ -132,8 +132,8 @@ segment_maker.append_commands(
     )
 
 segment_maker.copy_rhythm(
-    baca.SimpleScope('Violin Music Voice', 1),
-    baca.SimpleScope('Viola Music Voice', (1, 1)),
+    baca.scope('Violin Music Voice', 1),
+    baca.scope('Viola Music Voice', 1),
     rhythm_maker__split_divisions_by_counts=[8, 10],
     rhythm_maker__extra_counts_per_division=[3, 3, 2, 3, 5, 7],
     rhythm_maker__talea__counts=[8, 4, 4, 2, 1, 1, 8, 8, 8, 2, 4, 4],
@@ -148,14 +148,14 @@ segment_maker.append_commands(
 ### vc ###
 
 segment_maker.copy_rhythm(
-    baca.SimpleScope('Piano Music Voice', 1),
-    baca.SimpleScope('Cello Music Voice', (1, 6)),  # ?
+    baca.scope('Piano Music Voice', 1),
+    baca.scope('Cello Music Voice', 1, 6),  # ?
     rhythm_maker__division_masks=None,
     )
 
 segment_maker.copy_rhythm(
-    baca.SimpleScope('Piano Music Voice', 7),
-    baca.SimpleScope('Cello Music Voice', (7, 10)),
+    baca.scope('Piano Music Voice', 7),
+    baca.scope('Cello Music Voice', 7, 10),
     )
 
 ### oboe ###

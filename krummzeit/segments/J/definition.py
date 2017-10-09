@@ -233,7 +233,7 @@ segment_maker.append_commands(
 ### vn, va points ###
 
 indigo_snippet = krummzeit.indigo_pitch_classes.get_payload()[42:34:-1]
-segment_maker.thread_commands(
+segment_maker.scope(
     baca.compound([
         baca.scope('Violin Music Voice', 1, 10),
         baca.scope('Viola Music Voice', 1, 10),

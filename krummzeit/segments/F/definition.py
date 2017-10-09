@@ -340,7 +340,7 @@ segment_maker.append_commands(
 
 ### (12) hpschd, ob, cl ###
 
-segment_maker.thread_commands(
+segment_maker.scope(
     baca.compound([
         baca.scope('Piano Music Voice', 3, 11),
         baca.scope('Oboe Music Voice', 1, 8),

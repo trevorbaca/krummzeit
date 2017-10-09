@@ -267,7 +267,7 @@ segment_maker.append_commands(
 
 ### vn, va, vc thicket ###
 
-segment_maker.thread_commands(
+segment_maker.scope(
     baca.compound([
         baca.scope('Violin Music Voice', 3, 7),
         baca.scope('Viola Music Voice', 3, 7),

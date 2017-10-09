@@ -402,7 +402,7 @@ segment_maker.append_commands(
 
 ### (12) ###
 
-segment_maker.thread_commands(
+segment_maker.scope(
     baca.compound([
         baca.scope('Piano Music Voice', 5, 12),
         baca.scope('Violin Music Voice', 5, 12),
@@ -506,7 +506,7 @@ segment_maker.append_commands(
     krummzeit.markup.fifth_harmonic_of_F1(),
     )
 
-segment_maker.thread_commands(
+segment_maker.scope(
     baca.compound([
         baca.scope('Violin Music Voice', 14, 20),
         baca.scope('Cello Music Voice', 14, 20),

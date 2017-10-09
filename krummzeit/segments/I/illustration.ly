@@ -3730,25 +3730,25 @@
                                         ”
                                 }
                             - \markup { "directly on bridge: full bow each stroke" }
-                        ef''4 -\upbow \glissando
-                        d''4 -\downbow \glissando
                         cs''4 -\upbow \glissando
-                        bf''8 -\downbow \glissando
-                        e''4 -\upbow \glissando
                         ef''4 -\downbow \glissando
-                        f''4 -\upbow \glissando
-                        g''4 -\downbow \glissando
-                        fs''8 -\upbow \glissando
-                        af'4 -\downbow \glissando
-                        f''4 -\upbow \glissando
+                        fs''4 -\upbow \glissando
                         e''8 -\downbow \glissando
-                        b'4 -\upbow \glissando
-                        bf'4 -\downbow \glissando
-                        a'8 -\upbow \glissando
-                        fs'4 -\downbow \glissando
-                        e'4 -\upbow \glissando
-                        ef'4 -\downbow \glissando
-                        f'4 -\upbow
+                        a''4 -\upbow \glissando
+                        ef''4 -\downbow \glissando
+                        a'4 -\upbow \glissando
+                        e''4 -\downbow \glissando
+                        bf'8 -\upbow \glissando
+                        d''4 -\downbow \glissando
+                        a'4 -\upbow \glissando
+                        e''8 -\downbow \glissando
+                        bf'4 -\upbow \glissando
+                        d''4 -\downbow \glissando
+                        e'8 -\upbow \glissando
+                        d''4 -\downbow \glissando
+                        g'4 -\upbow
+                        g'4 -\downbow \glissando
+                        ef'4 -\upbow
                         s1 * 21/2
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
@@ -3760,15 +3760,15 @@
                                         \upright
                                             pizz.
                                     }
-                            ef'''4 -\staccatissimo
+                            cs'''4 -\staccatissimo
                             f'''8 -\staccatissimo ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
                             f'''8
-                            cs'''2 -\staccatissimo
-                            d'''4 -\staccatissimo
-                            e'''8 -\staccatissimo
+                            a'''2 -\staccatissimo
+                            c'''4 -\staccatissimo
+                            f'''8 -\staccatissimo
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
@@ -3803,7 +3803,7 @@
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
                         \clef "treble"
-                        g''4 -\downbow \glissando
+                        ef''4 -\downbow \glissando
                             _ \markup {
                                 \larger
                                     \italic
@@ -3817,45 +3817,45 @@
                                         ”
                                 }
                             - \markup { "directly on bridge: full bow each stroke" }
-                        ef''4 -\upbow \glissando
-                        d''4 -\downbow \glissando
-                        cs''4 -\upbow \glissando
-                        bf'8 -\downbow \glissando
-                        e''4 -\upbow \glissando
-                        ef''4 -\downbow \glissando
-                        f'4 -\upbow \glissando
+                        bf''4 -\upbow \glissando
+                        f''4 -\downbow \glissando
+                        af''4 -\upbow \glissando
+                        b'8 -\downbow \glissando
+                        fs''4 -\upbow \glissando
+                        f''4 -\downbow \glissando
+                        af'4 -\upbow \glissando
+                        b'4 -\downbow \glissando
+                        g'8 -\upbow \glissando
+                        cs'4 -\downbow \glissando
+                        af'4 -\upbow \glissando
+                        b8 -\downbow \glissando
+                        g'4 -\upbow
                         g'4 -\downbow \glissando
-                        fs'8 -\upbow \glissando
-                        af'4 -\downbow \glissando
-                        f'4 -\upbow \glissando
-                        e'8 -\downbow \glissando
-                        b4 -\upbow \glissando
-                        bf4 -\downbow \glissando
-                        a8 -\upbow \glissando
-                        fs'4 -\downbow \glissando
-                        e'4 -\upbow \glissando
-                        ef'4 -\downbow \glissando
-                        f4 -\upbow
+                        ef'8 -\upbow \glissando
+                        cs'4 -\downbow \glissando
+                        ef'4 -\upbow \glissando
+                        fs4 -\downbow \glissando
+                        b4 -\upbow
                         s1 * 21/2
                         \times 4/5 {
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #2
-                            e'''8 -\staccatissimo \fff
+                            ef'''8 -\staccatissimo \fff
                                 ^ \markup {
                                     \whiteout
                                         \upright
                                             pizz.
                                     }
-                            ef'''4 -\staccatissimo
-                            f'''4 -\staccatissimo
+                            d'''4 -\staccatissimo
+                            g'''4 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
-                            cs'''2 -\staccatissimo
-                            d'''4 -\staccatissimo
+                            ef'''2 -\staccatissimo
+                            b''4 -\staccatissimo
                         }
                         {
-                            e'''8 -\staccatissimo
+                            ef'''8 -\staccatissimo
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
@@ -3884,7 +3884,7 @@
                         r4
                         s1 * 5/2
                         \clef "treble"
-                        g''4 -\downbow \glissando
+                        d''4 -\downbow \glissando
                             _ \markup {
                                 \larger
                                     \italic
@@ -3898,43 +3898,43 @@
                                         ”
                                 }
                             - \markup { "directly on bridge: full bow each stroke" }
-                        ef''4 -\upbow \glissando
-                        d''4 -\downbow \glissando
-                        cs''4 -\upbow \glissando
+                        e''4 -\upbow \glissando
+                        g''4 -\downbow \glissando
+                        f''4 -\upbow \glissando
                         bf'8 -\downbow \glissando
                         e''4 -\upbow \glissando
-                        ef''4 -\downbow \glissando
-                        f'4 -\upbow \glissando
                         g'4 -\downbow \glissando
-                        fs'8 -\upbow \glissando
-                        af'4 -\downbow \glissando
                         f'4 -\upbow \glissando
-                        e'8 -\downbow \glissando
-                        b4 -\upbow \glissando
-                        bf4 -\downbow \glissando
-                        a8 -\upbow \glissando
+                        bf'4 -\downbow \glissando
+                        ef'8 -\upbow \glissando
+                        bf'4 -\downbow \glissando
+                        f'4 -\upbow \glissando
+                        cs'8 -\downbow \glissando
+                        ef'4 -\upbow \glissando
                         fs'4 -\downbow \glissando
-                        e'4 -\upbow \glissando
-                        ef'4 -\downbow \glissando
-                        f4 -\upbow
+                        f'8 -\upbow \glissando
+                        bf4 -\downbow \glissando
+                        f4 -\upbow \glissando
+                        e4 -\downbow \glissando
+                        bf4 -\upbow
                         s1 * 21/2
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #2
-                            e'''8 -\staccatissimo \fff
+                            f'''8 -\staccatissimo \fff
                                 ^ \markup {
                                     \whiteout
                                         \upright
                                             pizz.
                                     }
-                            ef'''4 -\staccatissimo
-                            f'''4 -\staccatissimo
-                            cs'''8 -\staccatissimo ~
+                            e'''4 -\staccatissimo
+                            cs'''4 -\staccatissimo
+                            bf''8 -\staccatissimo ~
                         }
                         \times 4/5 {
-                            cs'''4.
-                            d'''4 -\staccatissimo
+                            bf''4.
+                            af'''4 -\staccatissimo
                         }
                         {
                             e'''8 -\staccatissimo

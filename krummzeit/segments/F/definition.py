@@ -341,10 +341,11 @@ segment_maker.append_commands(
 ### (12) hpschd, ob, cl ###
 
 segment_maker.thread_commands(
-    [
-        ('Piano Music Voice', (3, 11)),
-        (['Oboe Music Voice', 'Clarinet Music Voice'], (1, 8)),
-        ],
+    baca.compound([
+        baca.scope('Piano Music Voice', 3, 11),
+        baca.scope('Oboe Music Voice', 1, 8),
+        baca.scope('Clarinet Music Voice', 1, 8),
+        ]),
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=2)],
         source=krummzeit.indigo_pitch_classes.get_payload(),

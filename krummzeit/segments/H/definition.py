@@ -314,7 +314,11 @@ segment_maker.append_commands(
 ### (5.3) vn, va, vc thicket ###
 
 segment_maker.thread_commands(
-    [(['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'], (2, 4))],
+    baca.compound([
+        baca.scope('Violin Music Voice', 2, 4),
+        baca.scope('Viola Music Voice', 2, 4),
+        baca.scope('Cello Music Voice', 2, 4),
+        ]),
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=8), abjad.Inversion()],
         reverse=True,

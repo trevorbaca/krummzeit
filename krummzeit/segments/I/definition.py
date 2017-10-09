@@ -390,7 +390,11 @@ segment_maker.append_commands(
 ### (3.5) OB bowing ###
 
 segment_maker.thread_commands(
-    [(['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'], (5, 9))],
+    baca.compound([
+        baca.scope('Violin Music Voice', 5, 9),
+        baca.scope('Viola Music Voice', 5, 9),
+        baca.scope('Cello Music Voice', 5, 9),
+        ]),
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=11)],
         source=krummzeit.violet_pitch_classes.get_payload(),
@@ -475,7 +479,11 @@ segment_maker.append_commands(
 ### (9.1) vn, va, vc points ###
 
 segment_maker.thread_commands(
-    (['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'], 15),
+    baca.compound([
+        baca.scope('Violin Music Voice', 15),
+        baca.scope('Viola Music Voice', 15),
+        baca.scope('Cello Music Voice', 15),
+        ]),
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=4), abjad.Inversion()],
         reverse=True,

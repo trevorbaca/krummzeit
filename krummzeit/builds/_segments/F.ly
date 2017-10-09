@@ -242,7 +242,7 @@
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/6 {
-                        ds'''4 -\staccato
+                        ef'''4 -\staccato
                         f'''4 -\staccato
                         fs'''4 -\staccato ~
                     }
@@ -254,10 +254,10 @@
                         cs'''16 -\staccato [
                         f''16 -\staccato
                         g''16 -\staccato
-                        gs''16 -\staccato ~ ]
+                        af''16 -\staccato ~ ]
                     }
                     \times 2/3 {
-                        gs''4
+                        af''4
                         a''4 -\staccato
                         b''4 -\staccato ~
                     }
@@ -273,17 +273,17 @@
                         a''16 -\staccato
                         f''16 -\staccato
                         g''16 -\staccato
-                        gs''16 -\staccato
+                        af''16 -\staccato
                         bf''16 -\staccato
                         b''16 -\staccato
                         c'''16 -\staccato
                         d''16 -\staccato
                         cs''16 -\staccato
                         a''16 -\staccato
-                        ds''16 -\staccato ~ ]
+                        ef''16 -\staccato ~ ]
                     }
                     {
-                        ds''4
+                        ef''4
                     }
                     {
                         f''4. -\staccato ~
@@ -302,17 +302,17 @@
                         g''16 -\staccato
                         cs''16 -\staccato
                         a'16 -\staccato
-                        ds''16 -\staccato
+                        ef''16 -\staccato
                         f''16 -\staccato ]
                     }
                     {
                         fs''4 -\staccato
                     }
                     {
-                        gs'4. -\staccato ~
+                        af'4. -\staccato ~
                     }
                     {
-                        gs'4
+                        af'4
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 10/14 {
@@ -323,10 +323,10 @@
                         g'16 -\staccato
                         cs''16 -\staccato
                         a'16 -\staccato
-                        ds''16 -\staccato
+                        ef'16 -\staccato
                         f'16 -\staccato
                         g'16 -\staccato
-                        gs'16 -\staccato
+                        af'16 -\staccato
                         a'16 -\staccato
                         f'16 -\staccato
                         c'16 -\staccato \ff ]
@@ -365,7 +365,7 @@
                                     }
                             }
                         fs'4 -\staccato \< \p
-                        bs4 -\staccato
+                        c'4 -\staccato
                         d'4 -\staccato
                     }
                     {
@@ -385,7 +385,7 @@
                     }
                     \times 2/3 {
                         e'4
-                        es''4 -\staccato
+                        f'4 -\staccato
                         fs'4 -\staccato
                     }
                     {
@@ -411,7 +411,7 @@
                         e''8 -\staccato ]
                     }
                     {
-                        es''4 -\staccato
+                        f''4 -\staccato
                     }
                     \times 2/3 {
                         g''4 -\staccato
@@ -425,10 +425,10 @@
                         b''8 -\staccato [
                         as''8 -\staccato
                         fs'''8 -\staccato
-                        bs''8 -\staccato ~ ]
+                        c'''8 -\staccato ~ ]
                     }
                     {
-                        bs''4. \ff
+                        c'''4. \ff
                         \revert Beam.positions
                         \revert TupletBracket.staff-padding
                         \revert DynamicLineSpanner.staff-padding
@@ -500,7 +500,7 @@
                                         "to harpsichord"
                                 }
                         a''16 [
-                        ds''16
+                        ef''16
                         f''8 ]
                     }
                     \tweak text #tuplet-number::calc-fraction-text
@@ -516,7 +516,7 @@
                         r4
                         f''4
                         g''4
-                        gs'2
+                        af'2
                     }
                     \times 4/7 {
                         r8
@@ -536,7 +536,7 @@
                         f'8 [
                         g'8 ]
                         r4
-                        gs'4
+                        af'4
                     }
                     \times 4/5 {
                         \clef "bass"
@@ -554,7 +554,7 @@
                     }
                     \times 4/5 {
                         r16
-                        ds'16 [
+                        ef'16 [
                         f'16
                         fs8 ]
                     }
@@ -578,7 +578,7 @@
                         cs'16 [
                         a16 ]
                         r8
-                        ds8
+                        ef8
                     }
                     s1 * 33/8
                     \revert Beam.positions
@@ -587,7 +587,7 @@
                         r16
                         f16 [
                         fs16
-                        gs8 ]
+                        af8 ]
                     }
                     \times 4/7 {
                         r8
@@ -607,7 +607,7 @@
                     \times 6/7 {
                         r16
                         a,16 [
-                        ds,16 ]
+                        ef,16 ]
                         r8
                         f,8
                     }

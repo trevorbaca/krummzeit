@@ -73,7 +73,7 @@ segment_maker.append_commands(
         ),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Oboe Music Voice', 1),
     baca.SimpleScope('Clarinet Music Voice', (1, 1)),
     rhythm_maker__tuplet_ratios=[(1, 4)],
@@ -106,7 +106,7 @@ segment_maker.append_commands(
         ),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Piano Music Voice', 1),
     baca.SimpleScope('Percussion Music Voice', (1, 1)),
     rhythm_maker__tuplet_ratios=[(1, 6)],
@@ -137,12 +137,12 @@ segment_maker.append_commands(
         ),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Violin Music Voice', 1),
     baca.SimpleScope('Viola Music Voice', (1, 1)),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Violin Music Voice', 1),
     baca.SimpleScope('Cello Music Voice', (1, 1)),
     )
@@ -181,12 +181,12 @@ segment_maker.append_commands(
         ),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Violin Music Voice', 5),
     baca.SimpleScope('Viola Music Voice', (5, 9)),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Violin Music Voice', 5),
     baca.SimpleScope('Cello Music Voice', (5, 9)),
     )
@@ -214,9 +214,9 @@ segment_maker.append_commands(
 
 ### pf [J6] & [J8-14] (8.1) clusters ###
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Piano Music Voice', 3),
-    baca.select_stages(8, 15),
+    baca.SimpleScope('Piano Music Voice', baca.select_stages(8, 15)),
     )
 
 segment_maker.append_commands(
@@ -290,13 +290,13 @@ segment_maker.append_commands(
         ),
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Violin Music Voice', 15),
     baca.SimpleScope('Viola Music Voice', (15, 15)),
     rhythm_maker__split_divisions_by_counts=[8, 10],
     )
 
-segment_maker.copy_specifier(
+segment_maker.copy_rhythm(
     ('Violin Music Voice', 15),
     baca.SimpleScope('Cello Music Voice', (15, 15)),
     rhythm_maker__split_divisions_by_counts=[10, 8],

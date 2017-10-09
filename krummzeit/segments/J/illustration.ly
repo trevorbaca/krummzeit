@@ -561,7 +561,7 @@
                         \times 5/7 {
                             \override DynamicLineSpanner.staff-padding = #'5
                             \override TupletBracket.staff-padding = #2
-                            ff'''2 -\staccatissimo \ff
+                            e'''2 -\staccatissimo \ff
                                 ^ \markup {
                                     \whiteout
                                         \upright
@@ -575,12 +575,12 @@
                         }
                         \times 4/5 {
                             r2
-                            df'''2. -\staccatissimo
+                            cs'''2. -\staccatissimo
                         }
                         \times 2/3 {
                             r1
                             r4
-                            eff'''4 -\staccatissimo
+                            d'''4 -\staccatissimo
                         }
                         {
                             r2
@@ -588,14 +588,14 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
                             r4
-                            ff'''1 -\staccatissimo
+                            e'''1 -\staccatissimo
                             f'''4 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             r4
-                            aff'''4 -\staccatissimo
-                            ff'''4 -\staccatissimo
+                            g'''4 -\staccatissimo
+                            e'''4 -\staccatissimo
                             ef'''2 -\staccatissimo
                         }
                         {
@@ -612,15 +612,15 @@
                         \times 5/9 {
                             r1
                             r4
-                            df'''1 -\staccatissimo
+                            cs'''1 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
                             r1
-                            eff'''2 -\staccatissimo
+                            d'''2 -\staccatissimo
                         }
                         \times 2/3 {
-                            ff'''1 -\staccatissimo
+                            e'''1 -\staccatissimo
                             f'''2 -\staccatissimo
                         }
                         {
@@ -628,14 +628,14 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
-                            aff'''1. -\staccatissimo
+                            g'''1. -\staccatissimo
                         }
                         {
                             r4
                         }
                         {
                             r4
-                            ff'''2. -\staccatissimo
+                            e'''2. -\staccatissimo
                         }
                         \times 2/3 {
                             r4
@@ -644,12 +644,12 @@
                         }
                         {
                             r4
-                            df'''4 -\staccatissimo
+                            cs'''4 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
-                            eff'''4 -\staccatissimo
-                            ff'''1. -\staccatissimo
+                            d'''4 -\staccatissimo
+                            e'''1. -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
@@ -663,12 +663,12 @@
                             r1
                         }
                         {
-                            aff'''2 -\staccatissimo
+                            g'''2 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
                             r1.
-                            ff'''4 -\staccatissimo
+                            e'''4 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
@@ -678,7 +678,7 @@
                         }
                         \times 4/5 {
                             r2
-                            df'''2. -\staccatissimo
+                            cs'''2. -\staccatissimo
                         }
                         {
                             r2
@@ -686,8 +686,8 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/9 {
                             r2.
-                            eff'''1 -\staccatissimo
-                            ff'''2 -\staccatissimo
+                            d'''1 -\staccatissimo
+                            e'''2 -\staccatissimo
                         }
                         {
                             r4
@@ -695,8 +695,8 @@
                         \times 2/3 {
                             r4
                             f'''2 -\staccatissimo
-                            aff'''4 -\staccatissimo
-                            ff'''4 -\staccatissimo
+                            g'''4 -\staccatissimo
+                            e'''4 -\staccatissimo
                             ef'''4 -\staccatissimo
                         }
                         \times 2/3 {
@@ -709,7 +709,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
                             r1.
-                            df'''4 -\staccatissimo
+                            cs'''4 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
@@ -720,8 +720,8 @@
                         }
                         \times 2/3 {
                             r4
-                            eff'''2 -\staccatissimo
-                            ff'''2. -\staccatissimo
+                            d'''2 -\staccatissimo
+                            e'''2. -\staccatissimo
                         }
                         {
                             r4
@@ -730,13 +730,13 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
                             r2.
-                            aff'''2. -\staccatissimo
+                            g'''2. -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
                             r1
                             r4
-                            ff'''2 -\staccatissimo
+                            e'''2 -\staccatissimo
                         }
                         {
                             r2
@@ -748,9 +748,9 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
                             f'''2 -\staccatissimo
-                            df'''4 -\staccatissimo
-                            eff'''4 -\staccatissimo
-                            ff'''2. -\staccatissimo
+                            cs'''4 -\staccatissimo
+                            d'''4 -\staccatissimo
+                            e'''2. -\staccatissimo
                         }
                         {
                             r4
@@ -764,7 +764,7 @@
                         }
                         {
                             r4
-                            aff'''4 -\staccatissimo
+                            g'''4 -\staccatissimo
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
@@ -780,7 +780,7 @@
                             \clef "treble"
                             \override DynamicLineSpanner.staff-padding = #'5
                             \override TupletBracket.staff-padding = #2
-                            ff'''\breve -\staccatissimo \ff
+                            e'''\breve -\staccatissimo \ff
                                 ^ \markup {
                                     \whiteout
                                         \upright
@@ -796,9 +796,9 @@
                         }
                         \times 4/7 {
                             r2.
-                            df'''2 -\staccatissimo
-                            eff'''4 -\staccatissimo
-                            ff'''4 -\staccatissimo
+                            cs'''2 -\staccatissimo
+                            d'''4 -\staccatissimo
+                            e'''4 -\staccatissimo
                         }
                         \times 2/3 {
                             f'''2. -\staccatissimo

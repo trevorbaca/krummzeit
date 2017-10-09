@@ -558,20 +558,20 @@
                                     \upright
                                         pizz.
                                 }
-                        ef'''1 -\staccatissimo
-                        f'''4 -\staccatissimo
+                        f'''1 -\staccatissimo
+                        cs'''4 -\staccatissimo
                     }
                     {
                         r4
                     }
                     \times 4/5 {
                         r2
-                        cs'''2. -\staccatissimo
+                        e'''2. -\staccatissimo
                     }
                     \times 2/3 {
                         r1
                         r4
-                        d'''4 -\staccatissimo
+                        ef'''4 -\staccatissimo
                     }
                     {
                         r2
@@ -579,22 +579,22 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/6 {
                         r4
-                        e'''1 -\staccatissimo
-                        f'''4 -\staccatissimo
+                        d'''1 -\staccatissimo
+                        e'''4 -\staccatissimo
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 3/5 {
                         r4
+                        f'''4 -\staccatissimo
                         g'''4 -\staccatissimo
-                        e'''4 -\staccatissimo
-                        ef'''2 -\staccatissimo
+                        e'''2 -\staccatissimo
                     }
                     {
                         r2
                     }
                     \times 4/5 {
                         r1
-                        f'''4 -\staccatissimo
+                        ef'''4 -\staccatissimo
                     }
                     {
                         r2
@@ -603,104 +603,104 @@
                     \times 5/9 {
                         r1
                         r4
-                        cs'''1 -\staccatissimo
+                        f'''1 -\staccatissimo
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/6 {
                         r1
-                        d'''2 -\staccatissimo
+                        cs'''2 -\staccatissimo
                     }
                     \times 2/3 {
-                        e'''1 -\staccatissimo
-                        f'''2 -\staccatissimo
-                    }
-                    {
-                        r2
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 5/6 {
-                        g'''1. -\staccatissimo
-                    }
-                    {
-                        r4
-                    }
-                    {
-                        r4
-                        e'''2. -\staccatissimo
-                    }
-                    \times 2/3 {
-                        r4
-                        ef'''1 -\staccatissimo
-                        f'''4 -\staccatissimo
-                    }
-                    {
-                        r4
-                        cs'''4 -\staccatissimo
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 5/7 {
-                        d'''4 -\staccatissimo
-                        e'''1. -\staccatissimo
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 3/4 {
-                        r2
-                        f'''2 -\staccatissimo
-                    }
-                    {
-                        r2
-                    }
-                    {
-                        r1
-                    }
-                    {
-                        g'''2 -\staccatissimo
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 5/7 {
-                        r1.
-                        e'''4 -\staccatissimo
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 5/7 {
-                        r4
-                        ef'''1 -\staccatissimo
-                        f'''2 -\staccatissimo
-                    }
-                    \times 4/5 {
-                        r2
-                        cs'''2. -\staccatissimo
-                    }
-                    {
-                        r2
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 5/9 {
-                        r2.
                         d'''1 -\staccatissimo
                         e'''2 -\staccatissimo
                     }
                     {
+                        r2
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 5/6 {
+                        f'''1. -\staccatissimo
+                    }
+                    {
                         r4
+                    }
+                    {
+                        r4
+                        g'''2. -\staccatissimo
                     }
                     \times 2/3 {
                         r4
-                        f'''2 -\staccatissimo
-                        g'''4 -\staccatissimo
-                        e'''4 -\staccatissimo
+                        e'''1 -\staccatissimo
                         ef'''4 -\staccatissimo
                     }
-                    \times 2/3 {
-                        r1.
-                    }
-                    \times 2/3 {
+                    {
                         r4
+                        f'''4 -\staccatissimo
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 5/7 {
+                        cs'''4 -\staccatissimo
+                        d'''1. -\staccatissimo
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 3/4 {
+                        r2
+                        e'''2 -\staccatissimo
+                    }
+                    {
+                        r2
+                    }
+                    {
+                        r1
+                    }
+                    {
                         f'''2 -\staccatissimo
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/7 {
                         r1.
-                        cs'''4 -\staccatissimo
+                        g'''4 -\staccatissimo
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 5/7 {
+                        r4
+                        e'''1 -\staccatissimo
+                        ef'''2 -\staccatissimo
+                    }
+                    \times 4/5 {
+                        r2
+                        f'''2. -\staccatissimo
+                    }
+                    {
+                        r2
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 5/9 {
+                        r2.
+                        cs'''1 -\staccatissimo
+                        d'''2 -\staccatissimo
+                    }
+                    {
+                        r4
+                    }
+                    \times 2/3 {
+                        r4
+                        e'''2 -\staccatissimo
+                        f'''4 -\staccatissimo
+                        g'''4 -\staccatissimo
+                        e'''4 -\staccatissimo
+                    }
+                    \times 2/3 {
+                        r1.
+                    }
+                    \times 2/3 {
+                        r4
+                        ef'''2 -\staccatissimo
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 5/7 {
+                        r1.
+                        f'''4 -\staccatissimo
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 3/4 {
@@ -711,51 +711,51 @@
                     }
                     \times 2/3 {
                         r4
-                        d'''2 -\staccatissimo
-                        e'''2. -\staccatissimo
+                        cs'''2 -\staccatissimo
+                        d'''2. -\staccatissimo
                     }
                     {
                         r4
-                        f'''4 -\staccatissimo
+                        e'''4 -\staccatissimo
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/6 {
                         r2.
-                        g'''2. -\staccatissimo
+                        f'''2. -\staccatissimo
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/7 {
                         r1
                         r4
-                        e'''2 -\staccatissimo
+                        g'''2 -\staccatissimo
                     }
                     {
                         r2
-                        ef'''2 -\staccatissimo
+                        e'''2 -\staccatissimo
                     }
                     {
                         r2
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/7 {
-                        f'''2 -\staccatissimo
+                        ef'''2 -\staccatissimo
+                        f'''4 -\staccatissimo
                         cs'''4 -\staccatissimo
-                        d'''4 -\staccatissimo
-                        e'''2. -\staccatissimo
+                        d'''2. -\staccatissimo
                     }
                     {
                         r4
                     }
                     \times 4/5 {
                         r1
-                        f'''4 -\staccatissimo
+                        e'''4 -\staccatissimo
                     }
                     \times 2/3 {
                         r1.
                     }
                     {
                         r4
-                        g'''4 -\staccatissimo
+                        f'''4 -\staccatissimo
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
                     }
@@ -771,7 +771,7 @@
                         \clef "treble"
                         \override DynamicLineSpanner.staff-padding = #'5
                         \override TupletBracket.staff-padding = #2
-                        e'''\breve -\staccatissimo \ff
+                        ef'''\breve -\staccatissimo \ff
                             ^ \markup {
                                 \whiteout
                                     \upright
@@ -779,7 +779,7 @@
                                 }
                     }
                     {
-                        ef'''2. -\staccatissimo
+                        d'''2. -\staccatissimo
                     }
                     {
                         r4
@@ -787,12 +787,12 @@
                     }
                     \times 4/7 {
                         r2.
-                        cs'''2 -\staccatissimo
-                        d'''4 -\staccatissimo
+                        g'''2 -\staccatissimo
                         e'''4 -\staccatissimo
+                        f'''4 -\staccatissimo
                     }
                     \times 2/3 {
-                        f'''2. -\staccatissimo
+                        cs'''2. -\staccatissimo
                     }
                     s1 * 44
                     \bar "|."

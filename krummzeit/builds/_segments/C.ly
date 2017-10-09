@@ -609,16 +609,16 @@
                         \clef "bass"
                         af8 -\staccatissimo \> \ff
                         r8
-                        ef8 -\staccatissimo
-                        e4. -\staccatissimo
+                        g8 -\staccatissimo
+                        a,4. -\staccatissimo
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/7 {
-                        f,8 -\staccatissimo
+                        c8 -\staccatissimo
                         r8
-                        g,8 -\staccatissimo
-                        cs4 -\staccatissimo
-                        a,4 -\staccatissimo \pp
+                        ef,8 -\staccatissimo
+                        c4 -\staccatissimo
+                        cs,4 -\staccatissimo \pp
                     }
                     s1 * 13/8
                     \ottava #-1
@@ -1092,49 +1092,49 @@
                                     \upright
                                         pizz.
                                 }
-                        ef''''8 -\staccatissimo ]
+                        cs''''8 -\staccatissimo ]
                         r8
-                        f'''4 -\staccatissimo
+                        bf'''4 -\staccatissimo
                     }
                     \times 4/7 {
                         r8
                         cs'''8 -\staccatissimo [
-                        d'''8 -\staccatissimo ]
-                        e'''4 -\staccatissimo
-                        f''4 -\staccatissimo \pp
+                        af''8 -\staccatissimo ]
+                        bf''4 -\staccatissimo
+                        ef''4 -\staccatissimo \pp
                         \ottava #0
                     }
                     s1 * 1/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/6 {
                         r8
-                        g''8 -\staccatissimo \< \pp [
-                        cs''8 -\staccatissimo ]
+                        a''8 -\staccatissimo \< \pp [
+                        e''8 -\staccatissimo ]
                         r8
-                        a'4 -\staccatissimo
+                        g'4 -\staccatissimo
                     }
                     \times 4/7 {
                         r8
-                        ef''8 -\staccatissimo [
-                        bf'8 -\staccatissimo ]
-                        b'4 -\staccatissimo
-                        c'4 -\staccatissimo \ff
+                        d''8 -\staccatissimo [
+                        ef'8 -\staccatissimo ]
+                        cs''4 -\staccatissimo
+                        e'4 -\staccatissimo \ff
                     }
                     s1 * 1/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/6 {
                         r8
-                        af''8 -\staccatissimo \> \ff [
-                        ef''8 -\staccatissimo ]
+                        g''8 -\staccatissimo \> \ff [
+                        c''8 -\staccatissimo ]
                         r8
-                        e''4 -\staccatissimo
+                        bf'4 -\staccatissimo
                     }
                     \times 4/7 {
                         r8
-                        f'8 -\staccatissimo [
-                        g'8 -\staccatissimo ]
-                        cs''4 -\staccatissimo
-                        a'4 -\staccatissimo \pp
+                        ef''8 -\staccatissimo [
+                        e'8 -\staccatissimo ]
+                        f'4 -\staccatissimo
+                        c'4 -\staccatissimo \pp
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
@@ -1169,7 +1169,7 @@
                         \override TupletBracket.staff-padding = #4
                         r8
                         \ottava #1
-                        e'''4 -\staccatissimo \> \ff
+                        ef'''4 -\staccatissimo \> \ff
                             ^ \markup {
                                 \whiteout
                                     \upright
@@ -1179,37 +1179,37 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 7/8 {
                         r8
-                        ef'''4 -\staccatissimo
+                        af''4 -\staccatissimo
                         r8
                         f''4 -\staccatissimo
-                        cs''4 -\staccatissimo \pp
+                        b''4 -\staccatissimo \pp
                         \ottava #0
                     }
                     s1 * 1/4
                     \times 2/3 {
                         r8
-                        d''4 -\staccatissimo \< \pp
+                        f''4 -\staccatissimo \< \pp
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 7/8 {
                         r8
-                        e''4 -\staccatissimo
+                        f''4 -\staccatissimo
                         r8
-                        f'4 -\staccatissimo
-                        g'4 -\staccatissimo \ff
+                        cs''4 -\staccatissimo
+                        a'4 -\staccatissimo \ff
                     }
                     s1 * 1/4
                     \times 2/3 {
                         \clef "alto"
                         r8
-                        cs'4 -\staccatissimo \> \ff
+                        f'4 -\staccatissimo \> \ff
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 7/8 {
                         r8
-                        a4 -\staccatissimo
+                        af4 -\staccatissimo
                         r8
-                        ef4 -\staccatissimo
+                        a,4 -\staccatissimo
                         bf,4 -\staccatissimo \pp
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
@@ -1257,46 +1257,46 @@
                         \override DynamicLineSpanner.staff-padding = #'8
                         \override TupletBracket.staff-padding = #4
                         r8
-                        e''4 -\staccatissimo \> \ff
+                        f''4 -\staccatissimo \> \ff
                             ^ \markup {
                                 \whiteout
                                     \upright
                                         pizz.
                                 }
                         r8
-                        ef''4 -\staccatissimo
-                        f'4 -\staccatissimo
+                        b'4 -\staccatissimo
+                        d''4 -\staccatissimo
                     }
                     \times 2/3 {
                         r8
-                        cs'4 -\staccatissimo \pp
+                        d'4 -\staccatissimo \pp
                     }
                     s1 * 1/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 7/8 {
                         \clef "bass"
                         r8
-                        d'4 -\staccatissimo \< \pp
+                        ef'4 -\staccatissimo \< \pp
                         r8
-                        e'4 -\staccatissimo
+                        cs'4 -\staccatissimo
                         f4 -\staccatissimo
                     }
                     \times 2/3 {
                         r8
-                        g4 -\staccatissimo \ff
+                        ef4 -\staccatissimo \ff
                     }
                     s1 * 1/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 7/8 {
                         r8
-                        cs4 -\staccatissimo \> \ff
+                        b,4 -\staccatissimo \> \ff
                         r8
-                        a,4 -\staccatissimo
-                        ef4 -\staccatissimo
+                        g,4 -\staccatissimo
+                        cs4 -\staccatissimo
                     }
                     \times 2/3 {
                         r8
-                        bf,4 -\staccatissimo \pp
+                        b,4 -\staccatissimo \pp
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding

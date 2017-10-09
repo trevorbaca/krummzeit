@@ -719,14 +719,12 @@ segment_maker.append_commands(
 
 ### (3) [B1-13] (hpschd, vn, ob, cl) ###
 
-# IMPORTANT TODO: integrate timeline selectors:
-
 segment_maker.thread_commands(
-    [
-        ('Viola Music Voice', baca.select_stages(12, 16)),
-        ('Cello Music Voice', baca.select_stages(12, 17)),
-        ('Violin Music Voice', baca.select_stages(14, 18)),
-        ],
+    baca.compound([
+        baca.scope('Viola Music Voice', 12, 16),
+        baca.scope('Cello Music Voice', 12, 17),
+        baca.scope('Violin Music Voice', 14, 18),
+        ]),
     baca.ScorePitchCommand(
         source=krummzeit.violet_pitch_classes.get_payload(),
         start_index=0,
@@ -800,15 +798,13 @@ segment_maker.append_commands(
 
 ### (9.1) [B17-23] ###
 
-# IMPORTANT TODO: probably integrate timeline selectors here:
-
 segment_maker.thread_commands(
-    [
-        ('Viola Music Voice', (17, 22)),
-        ('Cello Music Voice', (18, 22)),
-        ('Violin Music Voice', (19, 22)),
-        ('Piano Music Voice', (20, 23)),
-        ],
+    baca.compound([
+        baca.scope('Viola Music Voice', 17, 22),
+        baca.scope('Cello Music Voice', 18, 22),
+        baca.scope('Violin Music Voice', 19, 22),
+        baca.scope('Piano Music Voice', 20, 23),
+        ]),
     baca.ScorePitchCommand(
         source=krummzeit.violet_pitch_classes.get_payload(),
         start_index=60,

@@ -575,43 +575,43 @@
                                         \upright
                                             "molto flautando"
                                     }
-                            e''2 \glissando
+                            d''2 \glissando
                         }
                         \times 4/5 {
-                            g''16 \glissando
-                            d''4 \glissando
-                        }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 6/7 {
-                            ef''4 \glissando
-                            f''8. \glissando
-                        }
-                        \times 2/3 {
-                            fs''8 \glissando
+                            fs''16 \glissando
                             e''4 \glissando
                         }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 6/7 {
+                            d''4 \glissando
+                            c''8. \glissando
+                        }
+                        \times 2/3 {
+                            d''8
+                            d''4 \glissando
+                        }
                         \times 4/5 {
-                            d''16. \glissando
-                            fs''4.
+                            fs''16. \glissando
+                            g''4.
                         }
                         r4.
                         r4.
                         \times 4/5 {
-                            a'8. \glissando
-                            c''2. \glissando
+                            cs''8. \glissando
+                            a'2. \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            cs''4 \glissando
-                            e'8. \glissando
+                            af'4 \glissando
+                            a'8. \glissando
                         }
                         {
-                            d''8 \glissando
-                            ef'4 \glissando
+                            bf'8 \glissando
+                            e'4 \glissando
                         }
                         \times 4/5 {
                             f'16 \glissando
-                            fs'4 \ff
+                            g'4 \ff
                             \revert NoteHead.style
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
@@ -689,44 +689,44 @@
                         r4
                         \times 4/7 {
                             \override NoteHead.style = #'harmonic
-                            ef'4 \glissando \< \pp
+                            fs'4 \glissando \< \pp
                                 ^ \markup {
                                     \whiteout
                                         \upright
                                             "molto flautando"
                                     }
-                            e'8. \glissando
+                            a'8. \glissando
                         }
                         \times 2/3 {
-                            g'16 \glissando [
-                            d'8 ] \glissando
+                            cs'16 \glissando [
+                            e'8 ] \glissando
                         }
                         \times 4/5 {
                             ef'16 \glissando
-                            f'4 \glissando
+                            fs'4 \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            fs'2 \glissando
-                            e'4. \glissando
+                            a'2 \glissando
+                            af'4. \glissando
                         }
                         {
-                            d'8 \glissando
-                            fs'4
+                            bf8 \glissando
+                            e'4
                         }
                         r2.
                         r4.
                         \times 2/3 {
-                            a8 \glissando
-                            c'4 \glissando
+                            ef'8 \glissando
+                            fs4 \glissando
                         }
                         \times 4/5 {
-                            cs'32 \glissando [
-                            e8 ] \glissando
+                            d'32 \glissando [
+                            ef8 ]
                         }
                         \times 4/7 {
-                            d4 \glissando
-                            ef8. \ff
+                            ef4 \glissando
+                            af8. \ff
                             \revert NoteHead.style
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
@@ -802,47 +802,47 @@
                             \override NoteHead.style = #'harmonic
                             \override DynamicLineSpanner.staff-padding = #'7
                             \override TupletBracket.staff-padding = #3
-                            ef'8 \glissando \< \pp
+                            e'8 \glissando \< \pp
                                 ^ \markup {
                                     \whiteout
                                         \upright
                                             "molto flautando"
                                     }
-                            e'4 \glissando
+                            g'4 \glissando
                         }
                         \times 4/5 {
-                            g'16 \glissando
-                            d'4
+                            ef'16 \glissando
+                            f'4
                         }
                         r4
                         r4.
                         \times 4/5 {
-                            ef'16 \glissando
-                            f'4 \glissando
+                            f'16 \glissando
+                            cs'4 \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            fs'2 \glissando
-                            e'4. \glissando
+                            c'2 \glissando
+                            a4. \glissando
                         }
                         {
-                            d'8 \glissando
-                            fs'4 \glissando
+                            ef'8 \glissando
+                            c'4 \glissando
                         }
                         \times 4/5 {
-                            a16. \glissando
-                            c'4. \glissando
+                            d'16. \glissando
+                            fs4. \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            cs'4 \glissando
-                            e'8.
+                            e'4 \glissando
+                            g8.
                         }
                         r4.
                         r4.
                         \times 4/7 {
-                            d4 \glissando
-                            ef8. \ff
+                            e4 \glissando
+                            a8. \ff
                             \revert NoteHead.style
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding

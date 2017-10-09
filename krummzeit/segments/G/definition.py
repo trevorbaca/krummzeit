@@ -403,10 +403,12 @@ segment_maker.append_commands(
 ### (12) ###
 
 segment_maker.thread_commands(
-    [
-        (['Piano Music Voice', 'Violin Music Voice'], (5, 12)),
-        (['Oboe Music Voice', 'Clarinet Music Voice'], (9, 12)),
-        ],
+    baca.compound([
+        baca.scope('Piano Music Voice', 5, 12),
+        baca.scope('Violin Music Voice', 5, 12),
+        baca.scope('Oboe Music Voice', 9, 12),
+        baca.scope('Clarinet Music Voice', 9, 12),
+        ]),
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=3)],
         source=krummzeit.indigo_pitch_classes.get_payload()[:20],
@@ -505,10 +507,11 @@ segment_maker.append_commands(
     )
 
 segment_maker.thread_commands(
-    [
-        (['Violin Music Voice', 'Cello Music Voice'], (14, 20)),
-        ('Viola Music Voice', (14, 19)),
-        ],
+    baca.compound([
+        baca.scope('Violin Music Voice', 14, 20),
+        baca.scope('Cello Music Voice', 14, 20),
+        baca.scope('Viola Music Voice', 14, 19),
+        ]),
     baca.ScorePitchCommand(
         operators=[
             abjad.Transposition(n=8),

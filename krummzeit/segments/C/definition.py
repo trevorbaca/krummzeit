@@ -309,10 +309,12 @@ segment_maker.append_commands(
 ### (9) pf, vn, va, vc ###
 
 segment_maker.thread_commands(
-    [
-        ('Piano Music Voice', (1, 7)),
-        (['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'], (1, 9)),
-        ],
+    baca.compound([
+        baca.scope('Piano Music Voice', 1, 7),
+        baca.scope('Violin Music Voice', 1, 9),
+        baca.scope('Viola Music Voice', 1, 9),
+        baca.scope('Cello Music Voice', 1, 9),
+        ]),
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=4), abjad.Inversion()],
         reverse=True,

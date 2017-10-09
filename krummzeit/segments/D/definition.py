@@ -418,10 +418,10 @@ segment_maker.append_commands(
     )
 
 segment_maker.thread_commands(
-    ([
-        ('Violin Music Voice', (1, 5)),
-        ('Viola Music Voice', (1, 3)),
-        ('Cello Music Voice', (1, 5)),
+    baca.compound([
+        baca.scope('Violin Music Voice', 1, 5),
+        baca.scope('Viola Music Voice', 1, 3),
+        baca.scope('Cello Music Voice', 1, 5),
         ]),
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=7)],
@@ -472,11 +472,11 @@ segment_maker.append_commands(
     )
 
 segment_maker.thread_commands(
-    [
-        ('Viola Music Voice', [(4, 7), 9]),
-        ('Violin Music Voice', [(6, 7), 9]),
-        ('Cello Music Voice', [(6, 7), 9]),
-        ],
+    baca.compound([
+        baca.scope('Viola Music Voice', 4, 9),
+        baca.scope('Violin Music Voice', 6, 9),
+        baca.scope('Cello Music Voice', 6, 9),
+        ]),
     baca.ScorePitchCommand(
         operators=[abjad.Transposition(n=7), abjad.Inversion()],
         reverse=True,
@@ -487,9 +487,9 @@ segment_maker.thread_commands(
 
 segment_maker.thread_commands(
     [
-        ('Viola Music Voice', [(4, 7), 9]),
-        ('Violin Music Voice', [(6, 7), 9]),
-        ('Cello Music Voice', [(6, 7), 9]),
+        baca.scope('Viola Music Voice', 4, 9),
+        baca.scope('Violin Music Voice', 6, 9),
+        baca.scope('Cello Music Voice', 6, 9),
         ],
     baca.glissandi(),
     #narrow_fifth_octave,

@@ -53,7 +53,7 @@ segment_maker.validate_measures_per_stage()
 
 ### vn, va, vc [A1] tremolo clusters (11.1) ###
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 1),
     baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
@@ -82,7 +82,7 @@ segment_maker.copy_rhythm(
 
 ### vn, va, vc thicket ###
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 3, 7),
     baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
@@ -115,7 +115,7 @@ segment_maker.copy_rhythm(
 
 ### bass cl [A2-6] pedals ###
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Clarinet Music Voice', 3, 4),
     baca.instrument(krummzeit.instruments['bass clarinet']),
     baca.messiaen_tied_notes(),
@@ -123,7 +123,7 @@ segment_maker.scope(
 
 ### pf [A2] single cluster (8.1) ###
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Piano Music Voice', 1),
     baca.instrument(krummzeit.instruments['piano']),
     baca.clef('bass'),
@@ -136,7 +136,7 @@ segment_maker.scope(
 
 ### repeated pf cluster ###
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Piano Music Voice', 3),
     baca.instrument(krummzeit.instruments['piano']),
     baca.clef('bass'),
@@ -156,7 +156,7 @@ segment_maker.scope(
 
 ### (14.1) pf, xylophone reiteration [A5] ###
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Piano Music Voice', 6),
     baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
@@ -179,14 +179,14 @@ segment_maker.copy_rhythm(
     rhythm_maker__tuplet_ratios=[(1, 3)],
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Percussion Music Voice', 6),
     baca.instrument(krummzeit.instruments['xylophone']),
     )
 
 ### sponges [A6-8] ###
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Percussion Music Voice', 9, 10),
     baca.clef('percussion'),
     baca.instrument(krummzeit.instruments['percussion']),
@@ -207,22 +207,22 @@ segment_maker.scope(
 
 ### (11.1) vn, va, vc ###
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 1),
     baca.pitches('Eb5'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 1),
     baca.pitches('A3'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 1),
     baca.pitches('E~2'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes(
         ['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
         [1],
@@ -233,7 +233,7 @@ segment_maker.scope(
 
 ### (8.1) pf cluster ###
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Piano Music Voice', 3, 5),
     baca.dynamic('fff'),
     krummzeit.markup.catch_resonance(),
@@ -242,12 +242,12 @@ segment_maker.scope(
 
 ### (2.4) bcl subtone ###
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Clarinet Music Voice', 3, 4),
     baca.pitches('B1'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Clarinet Music Voice', 3, 4),
     baca.dynamic('ppp'),
     baca.stems_up(),
@@ -255,7 +255,7 @@ segment_maker.scope(
 
 ### vn, va, vc thicket ###
 
-segment_maker.scope(
+segment_maker(
     baca.compound([
         baca.scope('Violin Music Voice', 3, 7),
         baca.scope('Viola Music Voice', 3, 7),
@@ -269,7 +269,7 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes(
         ['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
         [(3, 7)],
@@ -280,42 +280,42 @@ segment_maker.scope(
     baca.natural_harmonics(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 3, 7),
     krummzeit.register_narrow(5, 4),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 3, 7),
     krummzeit.register_narrow(4, 3),
     baca.beam_positions(-5),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 3, 7),
     krummzeit.register_narrow(4, 3),
     )
 
 ### (14) pf, xylophone reiteration [A6] ###
 
-segment_maker.scope(
+segment_maker(
     baca.scopes(['Piano Music Voice', 'Percussion Music Voice'], [6]),
     baca.pitches('C#5'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes(['Piano Music Voice', 'Percussion Music Voice'], [6]),
     baca.possibile_dynamic('fff'),
     baca.stem_tremolo(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Piano Music Voice', 6),
     baca.clef('treble'),
     baca.tuplet_bracket_staff_padding(4),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Percussion Music Voice', 6),
     baca.clef('treble'),
     baca.tuplet_bracket_staff_padding(5),
@@ -323,7 +323,7 @@ segment_maker.scope(
 
 ### sponges ###
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Percussion Music Voice', 9, 10),
     baca.accents(),
     baca.effort_dynamic('ff'),
@@ -332,39 +332,39 @@ segment_maker.scope(
 
 ### VERTICAL ALIGNMENT ###
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Piano Music Voice', 3, 5),
     baca.dynamic_line_spanner_staff_padding(5),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes(['Violin Music Voice', 'Viola Music Voice'], [1]),
     baca.beam_positions(-5),
     baca.dynamic_line_spanner_staff_padding(7),
     baca.tuplet_bracket_staff_padding(4),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 3, 7),
     baca.dynamic_line_spanner_staff_padding(7),
     baca.tuplet_bracket_staff_padding(3),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 3, 7),
     baca.beam_positions(-5),
     baca.dynamic_line_spanner_staff_padding(8),
     baca.tuplet_bracket_staff_padding(5),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 1),
     baca.beam_positions(-7.5),
     baca.dynamic_line_spanner_staff_padding(7.5),
     baca.tuplet_bracket_staff_padding(6.5),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 3, 7),
     baca.dynamic_line_spanner_staff_padding(7),
     baca.tuplet_bracket_staff_padding(3),

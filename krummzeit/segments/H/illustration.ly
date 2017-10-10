@@ -2011,7 +2011,6 @@
                                     Xyl.
                                 }
                             \clef "treble"
-                            \override DynamicLineSpanner.staff-padding = #'7
                             \override TupletBracket.staff-padding = #3
                             fs''4 :32 \fff
                                 ^ \markup {
@@ -2022,7 +2021,6 @@
                                     }
                             fs''1. :32
                             \bar "|"
-                            \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
                     }

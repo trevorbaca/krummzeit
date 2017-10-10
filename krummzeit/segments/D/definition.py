@@ -54,9 +54,8 @@ segment_maker.validate_measures_per_stage()
 
 ### tam-tam [E1] ###
 
-segment_maker.append_commands(
-    'Percussion Music Voice',
-    baca.select_stages(1),
+segment_maker.scope(
+    baca.scope('Percussion Music Voice', 1),
     baca.clef('percussion'),
     baca.RhythmCommand(
         rhythm_maker=abjad.rhythmmakertools.IncisedRhythmMaker(
@@ -75,9 +74,8 @@ segment_maker.append_commands(
 
 ### vn, vc [E1-5] & va [E1-3] (white OB bowing) ###
 
-segment_maker.append_commands(
-    'Violin Music Voice',
-    baca.select_stages(1, 5),
+segment_maker.scope(
+    baca.scope('Violin Music Voice', 1, 5),
     baca.RhythmCommand(
         division_maker=baca.SplitByDurationsDivisionCallback(
             durations=[(1, 4)],
@@ -98,9 +96,8 @@ segment_maker.copy_rhythm(
 
 ### sponges [E3-6] ###
 
-segment_maker.append_commands(
-    'Percussion Music Voice',
-    baca.select_stages(3, 6),
+segment_maker.scope(
+    baca.scope('Percussion Music Voice', 3, 6),
     baca.clef('percussion'),
     baca.RhythmCommand(
         rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
@@ -113,9 +110,8 @@ segment_maker.append_commands(
 
 ### va [E4-7] glissando thicket ###
 
-segment_maker.append_commands(
-    'Viola Music Voice',
-    baca.select_stages(4),
+segment_maker.scope(
+    baca.scope('Viola Music Voice', 4),
     baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[
@@ -190,9 +186,8 @@ segment_maker.copy_rhythm(
 
 ### pf, xyl [E8] ###
 
-segment_maker.append_commands(
-    'Piano Music Voice',
-    baca.select_stages(8),
+segment_maker.scope(
+    baca.scope('Piano Music Voice', 8),
     baca.instrument(krummzeit.instruments['piano']),
     baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
@@ -216,9 +211,8 @@ segment_maker.copy_rhythm(
     division_maker__ratios=[(2, 1), (1, 2)],
     )
 
-segment_maker.append_commands(
-    'Percussion Music Voice',
-    baca.select_stages(8),
+segment_maker.scope(
+    baca.scope('Percussion Music Voice', 8),
     baca.instrument(krummzeit.instruments['xylophone']),
     baca.clef('treble'),
     baca.five_line_staff(),
@@ -240,9 +234,8 @@ segment_maker.copy_rhythm(
 
 ### ob, cl [E5-7] & [E10-12] ###
 
-segment_maker.append_commands(
-    'Oboe Music Voice',
-    baca.select_stages(5, 7),
+segment_maker.scope(
+    baca.scope('Oboe Music Voice', 5, 7),
     baca.RhythmCommand(
         rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
             tuplet_ratios=[
@@ -281,9 +274,8 @@ segment_maker.copy_rhythm(
     rhythm_maker__division_masks=[abjad.Pattern(indices=[0])],
     )
 
-segment_maker.append_commands(
-    'Oboe Music Voice',
-    baca.select_stages(5),
+segment_maker.scope(
+    baca.scope('Oboe Music Voice', 5),
     baca.instrument(krummzeit.instruments['e-flat clarinet']),
     )
 
@@ -299,9 +291,8 @@ segment_maker.copy_rhythm(
 
 ### vn, va, vc [E11] & vn, va, vc, pf [E13] ###
 
-segment_maker.append_commands(
-    'Violin Music Voice',
-    baca.select_stages(11),
+segment_maker.scope(
+    baca.scope('Violin Music Voice', 11),
     baca.RhythmCommand(
         rhythm_maker=abjad.rhythmmakertools.IncisedRhythmMaker(
             incise_specifier=abjad.rhythmmakertools.InciseSpecifier(
@@ -327,9 +318,8 @@ segment_maker.copy_rhythm(
     baca.scope('Cello Music Voice', 11),
     )
 
-segment_maker.append_commands(
-    'Violin Music Voice',
-    baca.select_stages(13),
+segment_maker.scope(
+    baca.scope('Violin Music Voice', 13),
     baca.RhythmCommand(
         rhythm_maker=abjad.rhythmmakertools.IncisedRhythmMaker(
             incise_specifier=abjad.rhythmmakertools.InciseSpecifier(
@@ -362,9 +352,8 @@ segment_maker.copy_rhythm(
     baca.scope('Piano Music Voice', 13),
     )
 
-segment_maker.append_commands(
-    'Piano Music Voice',
-    baca.select_stages(13),
+segment_maker.scope(
+    baca.scope('Piano Music Voice', 13),
     baca.clef('bass'),
     )
 
@@ -382,9 +371,8 @@ segment_maker.copy_rhythm(
         ),
     )
 
-segment_maker.append_commands(
-    'Piano Music Voice',
-    baca.select_stages(4),
+segment_maker.scope(
+    baca.scope('Piano Music Voice', 4),
     baca.clef('bass'),
     )
 
@@ -411,9 +399,8 @@ segment_maker.copy_rhythm(
 
 ### (3.4) tam-tam, (3.5) vn, va, vc ###
 
-segment_maker.append_commands(
-    'Percussion Music Voice',
-    baca.select_stages(1, 2),
+segment_maker.scope(
+    baca.scope('Percussion Music Voice', 1, 2),
     baca.reiterated_dynamic('pp'),
     )
 
@@ -431,9 +418,8 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.append_commands(
-    'Violin Music Voice',
-    baca.select_stages(1, 5),
+segment_maker.scope(
+    baca.scope('Violin Music Voice', 1, 5),
     baca.glissandi(),
     baca.effort_dynamic('mp'),
     #narrow_fourth_octave,
@@ -441,9 +427,8 @@ segment_maker.append_commands(
     krummzeit.markup.on_bridge_slow(),
     )
 
-segment_maker.append_commands(
-    'Viola Music Voice',
-    baca.select_stages(1, 3),
+segment_maker.scope(
+    baca.scope('Viola Music Voice', 1, 3),
     baca.glissandi(),
     baca.effort_dynamic('mp'),
     #narrow_third_octave,
@@ -451,9 +436,8 @@ segment_maker.append_commands(
     krummzeit.markup.on_bridge_slow(),
     )
 
-segment_maker.append_commands(
-    'Cello Music Voice',
-    baca.select_stages(1, 5),
+segment_maker.scope(
+    baca.scope('Cello Music Voice', 1, 5),
     baca.glissandi(),
     baca.effort_dynamic('mp'),
     #narrow_second_octave,
@@ -463,9 +447,8 @@ segment_maker.append_commands(
 
 ### (5.4) sponges, (5.3) va, vn, vc thicket ###
 
-segment_maker.append_commands(
-    'Percussion Music Voice',
-    baca.select_stages(3, 6),
+segment_maker.scope(
+    baca.scope('Percussion Music Voice', 3, 6),
     baca.accents(),
     baca.effort_dynamic('ff'),
     baca.markup.accent_changes_of_direction(),
@@ -497,55 +480,52 @@ segment_maker.scope(
     baca.natural_harmonics(),
     )
 
-segment_maker.append_commands(
-    'Viola Music Voice',
-    baca.select_stages(4),
+segment_maker.scope(
+    baca.scope('Viola Music Voice', 4),
     baca.clef('treble'),
     )
 
-segment_maker.append_commands(
-    'Cello Music Voice',
-    baca.select_stages(6),
+segment_maker.scope(
+    baca.scope('Cello Music Voice', 6),
     baca.clef('treble'),
     )
 
-segment_maker.append_commands(
-    'Viola Music Voice',
-    baca.select_stages(4),
+segment_maker.scope(
+    baca.scope('Viola Music Voice', 4),
     baca.hairpins(['pp < f']),
     baca.markup.molto_flautando_e_pont(),
     )
 
-segment_maker.append_commands(
-    'Viola Music Voice',
-    baca.select_stages(5, 6),
+segment_maker.scope(
+    baca.scope('Viola Music Voice', 5, 6),
     baca.hairpins(['pp < f']),
     baca.molto_flaut_to_molto_grid(),
     )
 
-segment_maker.append_commands(
-    ['Violin Music Voice', 'Cello Music Voice'],
-    baca.select_stages(6),
+segment_maker.scope(
+    baca.scopes(['Violin Music Voice', 'Cello Music Voice'], [6]),
     baca.hairpins(['pp < f']),
     baca.molto_flaut_to_molto_grid(),
     )
 
-segment_maker.append_commands(
-    ['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
-    [baca.select_stages(7), baca.select_stages(9)],
+segment_maker.scope(
+    baca.scopes([
+        'Violin Music Voice',
+        'Viola Music Voice',
+        'Cello Music Voice'],
+        [7, 9],
+        ),
     baca.dynamic('ff'),
     baca.markup.molto_gridato(),
     )
 
-segment_maker.append_commands(
-    'Piano Music Voice',
-    [baca.select_stages(4, 7), baca.select_stages(9)],
+segment_maker.scope(
+    baca.scopes(['Piano Music Voice'], [(4, 7), 9]),
     baca.pitches('C4'),
     )
 
-segment_maker.append_commands(
-    'Piano Music Voice',
-    [baca.select_stages(4, 7), baca.select_stages(9)],
+segment_maker.scope(
+    baca.scopes(['Piano Music Voice'], [(4, 7), 9]),
     baca.clef('bass'),
     baca.reiterated_dynamic('mp'),
     baca.natural_harmonics(),
@@ -553,42 +533,36 @@ segment_maker.append_commands(
     krummzeit.markup.fifth_harmonic_of_F1(),
     )
 
-segment_maker.append_commands(
-    'Oboe Music Voice',
-    baca.select_stages(5, 7),
+segment_maker.scope(
+    baca.scope('Oboe Music Voice', 5, 7),
     baca.pitches('D5 D5 D5 D5 D5 D5 D5 D5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5'),
     )
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(5, 7),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 5, 7),
     baca.pitches('E5 E5 E5 E5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 E5 E5 E5 E5'),
     )
 
-segment_maker.append_commands(
-    ['Oboe Music Voice', 'Clarinet Music Voice'],
-    baca.select_stages(5, 7),
+segment_maker.scope(
+    baca.scopes(['Oboe Music Voice', 'Clarinet Music Voice'], [(5, 7)]),
     baca.dynamic('p'),
     krummzeit.color_fingerings(),
     )
 
-segment_maker.append_commands(
-    ['Piano Music Voice', 'Percussion Music Voice'],
-    [baca.select_stages(8), baca.select_stages(10), baca.select_stages(11)],
+segment_maker.scope(
+    baca.scopes(['Piano Music Voice', 'Percussion Music Voice'], [8, 10, 11]),
     baca.pitches('F#6'),
     baca.dynamic('ff'),
     baca.staccatissimi(),
     )
 
-segment_maker.append_commands(
-    'Piano Music Voice',
-    [baca.select_stages(8), baca.select_stages(10)],
+segment_maker.scope(
+    baca.scopes(['Piano Music Voice'], [8, 10]),
     baca.clef('treble'),
     )
 
-segment_maker.append_commands(
-    ['Oboe Music Voice', 'Clarinet Music Voice'],
-    [baca.select_stages(10), baca.select_stages(11), baca.select_stages(12)],
+segment_maker.scope(
+    baca.scopes(['Oboe Music Voice', 'Clarinet Music Voice'], [10, 11, 12]),
     baca.pitches('F5 F5 F5 F5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F5 F5 F5 F5'),
     baca.dynamic('mf'),
     krummzeit.color_fingerings(),
@@ -596,62 +570,56 @@ segment_maker.append_commands(
 
 ### (1.1) pf, vn, va, vc ###
 
-segment_maker.append_commands(
-    'Piano Music Voice',
-    baca.select_stages(13),
+segment_maker.scope(
+    baca.scope('Piano Music Voice', 13),
     krummzeit.make_cluster('tenor'),
     )
 
-segment_maker.append_commands(
-    'Piano Music Voice',
-    baca.select_stages(13),
+segment_maker.scope(
+    baca.scope('Piano Music Voice', 13),
     baca.dynamic('mp'),
     baca.markup.senza_pedale(),
     )
 
-segment_maker.append_commands(
-    'Violin Music Voice',
-    baca.select_stages(11, 13),
+segment_maker.scope(
+    baca.scope('Violin Music Voice', 11, 13),
     baca.pitches('A+3'),
     )
 
-segment_maker.append_commands(
-    'Viola Music Voice',
-    baca.select_stages(11, 13),
+segment_maker.scope(
+    baca.scope('Viola Music Voice', 11, 13),
     baca.pitches('Bb2'),
     )
 
-segment_maker.append_commands(
-    'Cello Music Voice',
-    baca.select_stages(11, 13),
+segment_maker.scope(
+    baca.scope('Cello Music Voice', 11, 13),
     baca.pitches('A2'),
     )
 
-segment_maker.append_commands(
-    ['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
-    baca.select_stages(11, 13),
+segment_maker.scope(
+    baca.scopes(
+        ['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
+        [(11, 13)],
+        ),
     baca.dynamic('mp'),
     baca.markup.ordinario(),
     baca.stem_tremolo(),
     )
 
-segment_maker.append_commands(
-    'Viola Music Voice',
-    [baca.select_stages(11), baca.select_stages(13)],
+segment_maker.scope(
+    baca.scopes(['Viola Music Voice'], [11, 13]),
     baca.clef('alto'),
     )
 
-segment_maker.append_commands(
-    'Cello Music Voice',
-    [baca.select_stages(11), baca.select_stages(13)],
+segment_maker.scope(
+    baca.scopes(['Cello Music Voice'], [11, 13]),
     baca.clef('bass'),
     )
 
 ### suspended cymbal ###
 
-segment_maker.append_commands(
-    'Percussion Music Voice',
-    baca.select_stages(12, 13),
+segment_maker.scope(
+    baca.scope('Percussion Music Voice', 12, 13),
     baca.clef('percussion'),
     baca.one_line_staff(),
     baca.RhythmCommand(
@@ -664,9 +632,8 @@ segment_maker.append_commands(
     krummzeit.markup.suspended_cymbal(),
     )
 
-segment_maker.append_commands(
-    'Percussion Music Voice',
-    baca.select_stages(12, 13),
+segment_maker.scope(
+    baca.scope('Percussion Music Voice', 12, 13),
     baca.dynamic('ppp'),
     baca.stem_tremolo(),
     krummzeit.markup.attackless_roll(),
@@ -674,88 +641,81 @@ segment_maker.append_commands(
 
 ### VERTICAL ALIGNMENT ###
 
-segment_maker.append_commands(
-    'Oboe Music Voice',
-    baca.select_stages(1, 13),
+segment_maker.scope(
+    baca.scope('Oboe Music Voice', 1, 13),
     baca.beam_positions(-4),
     baca.dynamic_line_spanner_staff_padding(6),
     baca.tuplet_bracket_staff_padding(3),
     )
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(1, 13),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 1, 13),
     baca.beam_positions(-4),
     baca.dynamic_line_spanner_staff_padding(6),
     baca.tuplet_bracket_staff_padding(3),
     )
 
-segment_maker.append_commands(
-    'Piano Music Voice',
-    [baca.select_stages(1, 7), baca.select_stages(9)],
+segment_maker.scope(
+    baca.scopes(['Piano Music Voice'], [(1, 7), 9]),
     baca.dynamic_line_spanner_staff_padding(3),
     )
 
-segment_maker.append_commands(
-    'Piano Music Voice',
-    [baca.select_stages(8), baca.select_stages(10, 11)],
+segment_maker.scope(
+    baca.scopes(['Piano Music Voice'], [8, (10, 11)]),
     baca.beam_positions(-4),
     baca.dynamic_line_spanner_staff_padding(6),
     baca.tuplet_bracket_staff_padding(3),
     )
 
-segment_maker.append_commands(
-    'Piano Music Voice',
-    baca.select_stages(13),
+segment_maker.scope(
+    baca.scope('Piano Music Voice', 13),
     baca.dynamic_line_spanner_staff_padding(6),
     )
 
-segment_maker.append_commands(
-    'Percussion Music Voice',
-    baca.select_stages(1),
+segment_maker.scope(
+    baca.scope('Percussion Music Voice', 1),
     baca.dynamic_line_spanner_staff_padding(6),
     )
 
-segment_maker.append_commands(
-    'Percussion Music Voice',
-    [baca.select_stages(8), baca.select_stages(10, 11)],
+segment_maker.scope(
+    baca.scopes(['Percussion Music Voice'], [8, (10, 11)]),
     baca.beam_positions(-4),
     baca.dynamic_line_spanner_staff_padding(6),
     baca.tuplet_bracket_staff_padding(3),
     )
 
-segment_maker.append_commands(
-    'Percussion Music Voice',
-    baca.select_stages(12, 13),
+segment_maker.scope(
+    baca.scope('Percussion Music Voice', 12, 13),
     baca.dynamic_line_spanner_staff_padding(6),
     baca.ties_up(),
     )
 
-segment_maker.append_commands(
-    'Viola Music Voice',
-    baca.select_stages(4, 5),
+segment_maker.scope(
+    baca.scope('Viola Music Voice', 4, 5),
     baca.beam_positions(-4),
     baca.dynamic_line_spanner_staff_padding(6),
     baca.tuplet_bracket_staff_padding(3),
     )
 
-segment_maker.append_commands(
-    ['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
-    baca.select_stages(6, 9),
+segment_maker.scope(
+    baca.scopes(
+        ['Violin Music Voice',
+        'Viola Music Voice',
+        'Cello Music Voice'],
+        [(6, 9)],
+        ),
     baca.beam_positions(-4),
     baca.dynamic_line_spanner_staff_padding(6),
     baca.tuplet_bracket_staff_padding(3),
     )
 
-segment_maker.append_commands(
-    ['Violin Music Voice', 'Viola Music Voice'],
-    baca.select_stages(11, 13),
+segment_maker.scope(
+    baca.scopes(['Violin Music Voice', 'Viola Music Voice'], [(11, 13)]),
     baca.dynamic_line_spanner_staff_padding(8),
     )
 
-segment_maker.append_commands(
-    'Cello Music Voice',
-    baca.select_stages(11, 13),
+segment_maker.scope(
+    baca.scope('Cello Music Voice', 11, 13),
     baca.dynamic_line_spanner_staff_padding(6),
     )
 

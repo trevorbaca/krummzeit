@@ -2555,7 +2555,7 @@
                         }
                         {
                             f'4 \glissando
-                            fs'2 \glissando
+                            fs2 \glissando
                         }
                         \times 4/5 {
                             cs'16 \glissando
@@ -2658,8 +2658,8 @@
                             e'4 \glissando
                         }
                         \times 4/5 {
-                            g8 \glissando
-                            d2 \ppp
+                            g'8 \glissando
+                            d'2 \ppp
                             \revert NoteHead.style
                         }
                         r4

@@ -3694,23 +3694,23 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             r2
-                            cs'''8 -\staccatissimo
+                            cs''8 -\staccatissimo
                         }
                         r4.
                         {
                             r8
                             c'''16 -\staccatissimo [
                             a''16 -\staccatissimo
-                            cs'''16 -\staccatissimo
-                            g'''16 -\staccatissimo
-                            fs'''8 -\staccatissimo ]
+                            cs''16 -\staccatissimo
+                            g''16 -\staccatissimo
+                            fs''8 -\staccatissimo ]
                         }
                         \times 4/5 {
                             r8
-                            fs'''4 -\staccatissimo
-                            e'''16 -\staccatissimo [
+                            fs''4 -\staccatissimo
+                            e''16 -\staccatissimo [
                             c'''16 -\staccatissimo
-                            fs'''8 -\staccatissimo ]
+                            fs''8 -\staccatissimo ]
                         }
                         r8
                         {
@@ -3718,7 +3718,7 @@
                         }
                         {
                             r8
-                            e'''8 -\staccatissimo
+                            e''8 -\staccatissimo
                         }
                         s1 * 21/2
                         \revert Beam.positions
@@ -4280,7 +4280,7 @@
                             f4 -\downbow \glissando
                             b4 -\upbow \glissando
                             a4 -\downbow \glissando
-                            ef'4 -\upbow \glissando
+                            ef4 -\upbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/2 {
@@ -4398,33 +4398,33 @@
                         \times 3/4 {
                             r8
                             b''16 -\staccatissimo [
-                            g'''16 -\staccatissimo
-                            fs'''8 -\staccatissimo
-                            ef'''8 -\staccatissimo ]
-                            f'''2 -\staccatissimo
+                            g''16 -\staccatissimo
+                            fs''8 -\staccatissimo
+                            ef''8 -\staccatissimo ]
+                            f''2 -\staccatissimo
                         }
                         r4.
                         {
                             r16
-                            e'''16 -\staccatissimo [
-                            ef'''8 -\staccatissimo
-                            g'''8 -\staccatissimo ]
+                            e''16 -\staccatissimo [
+                            ef''8 -\staccatissimo
+                            g''8 -\staccatissimo ]
                         }
                         \times 4/5 {
                             r16
-                            fs'''16 -\staccatissimo [
-                            e'''16 -\staccatissimo
-                            f'''16 -\staccatissimo ]
-                            af'''4 -\staccatissimo
-                            f'''8 -\staccatissimo
+                            fs''16 -\staccatissimo [
+                            e''16 -\staccatissimo
+                            f''16 -\staccatissimo ]
+                            af''4 -\staccatissimo
+                            f''8 -\staccatissimo
                         }
                         \times 2/3 {
                             r8
-                            af'''16 -\staccatissimo [
+                            af''16 -\staccatissimo [
                             cs'''16 -\staccatissimo
                             b''8 -\staccatissimo
-                            a'''8 -\staccatissimo ]
-                            ef'''4 -\staccatissimo
+                            a''8 -\staccatissimo ]
+                            ef''4 -\staccatissimo
                         }
                         {
                             r8
@@ -4432,9 +4432,9 @@
                         r4.
                         \times 2/3 {
                             r16
-                            a'''16 -\staccatissimo [
-                            f'''8 -\staccatissimo
-                            ef'''8 -\staccatissimo ]
+                            a''16 -\staccatissimo [
+                            f''8 -\staccatissimo
+                            ef''8 -\staccatissimo ]
                         }
                         s1 * 29/2
                         \bar "|"

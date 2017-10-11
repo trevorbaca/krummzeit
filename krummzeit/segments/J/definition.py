@@ -53,7 +53,7 @@ segment_maker.validate_measures_per_stage()
 segment_maker(
     baca.scope('Piano Music Voice', 1, 6),
     baca.instrument(krummzeit.instruments['harpsichord']),
-    baca.RhythmCommand(
+    baca.RhythmBuilder(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
@@ -71,7 +71,7 @@ segment_maker(
 segment_maker(
     baca.scope('Piano Music Voice', 7, 12),
     baca.instrument(krummzeit.instruments['piano']),
-    baca.RhythmCommand(
+    baca.RhythmBuilder(
         # TODO: replace first division-maker?
         #division_maker=baca.FuseByCountsDivisionCallback(
         #    counts=abjad.Infinity,
@@ -93,7 +93,7 @@ segment_maker(
 segment_maker(
     baca.scope('Percussion Music Voice', 1, 12),
     baca.instrument(krummzeit.instruments['xylophone']),
-    baca.RhythmCommand(
+    baca.RhythmBuilder(
         # TODO: replace first division-maker?
         #division_maker=baca.FuseByCountsDivisionCallback(
         #    counts=abjad.Infinity,
@@ -114,7 +114,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Violin Music Voice', 1, 10),
-    baca.RhythmCommand(
+    baca.RhythmBuilder(
         rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
             talea=abjad.rhythmmakertools.Talea(
                 counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
@@ -157,7 +157,7 @@ segment_maker.copy_rhythm(
 
 segment_maker(
     baca.scope('Oboe Music Voice', 1, 10),
-    baca.RhythmCommand(
+    baca.RhythmBuilder(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
@@ -175,7 +175,7 @@ segment_maker(
 segment_maker(
     baca.scope('Clarinet Music Voice', 1, 10),
     baca.instrument(krummzeit.instruments['bass clarinet']),
-    baca.RhythmCommand(
+    baca.RhythmBuilder(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[4],
             ),

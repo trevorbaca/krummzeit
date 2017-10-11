@@ -49,7 +49,7 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker(
     baca.scope('Violin Music Voice', 1),
-    baca.RhythmCommand(
+    baca.RhythmBuilder(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[2],
             ),
@@ -95,7 +95,7 @@ segment_maker.copy_rhythm(
 
 segment_maker(
     baca.scope('Violin Music Voice', 2, 4),
-    baca.RhythmCommand(
+    baca.RhythmBuilder(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(1, 2), (2, 1), (1, 1, 1)],
             ),
@@ -128,7 +128,7 @@ segment_maker.copy_rhythm(
 
 segment_maker(
     baca.scope('Piano Music Voice', 1, 5),
-    baca.RhythmCommand(
+    baca.RhythmBuilder(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
@@ -146,7 +146,7 @@ segment_maker(
 segment_maker(
     baca.scope('Percussion Music Voice', 4, 5),
     baca.clef('percussion'),
-    baca.RhythmCommand(
+    baca.RhythmBuilder(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
@@ -165,7 +165,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Oboe Music Voice', 3, 6),
-    baca.RhythmCommand(
+    baca.RhythmBuilder(
         rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
             tie_specifier=abjad.rhythmmakertools.TieSpecifier(
                 tie_across_divisions=True,
@@ -188,7 +188,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Oboe Music Voice', 7, 8),
-    baca.RhythmCommand(
+    baca.RhythmBuilder(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[2],
             ),
@@ -219,7 +219,7 @@ segment_maker(
 segment_maker(
     baca.scope('Piano Music Voice', 8),
     baca.instrument(krummzeit.instruments['piano']),
-    baca.RhythmCommand(
+    baca.RhythmBuilder(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[2],
             ),

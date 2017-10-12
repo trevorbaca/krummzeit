@@ -131,15 +131,8 @@ segment_maker(
 #    baca.scope('Piano Music Voice', 5, 8),
 #    )
 
-#selector = abjad.Selector()
-#selector = selector.by_class(abjad.Tuplet)
-#selector = selector.by_logical_measure()
-#selector = selector.last()
-#selector = selector.flatten()
-selector = baca.select_tuplet(-1)
-
 rhythm_overwrite = (
-    selector,
+    baca.select_tuplet(-1),
     baca.SplitByDurationsDivisionCallback(
         durations=[(1, 4)],
         ),
@@ -204,14 +197,8 @@ segment_maker.copy_rhythm(
 
 ### harpsichord [B9] ###
 
-selector = abjad.Selector()
-selector = selector.by_class(abjad.Tuplet)
-selector = selector.by_logical_measure()
-selector = selector.flatten()
-selector = selector.get_slice(stop=2)
-
 rhythm_overwrite = (
-    selector,
+    baca.select_tuplets(stop=2),
     baca.SplitByDurationsDivisionCallback(
         durations=[(1, 4)],
         ),
@@ -548,7 +535,6 @@ segment_maker(
         ),
     )
 
-# TODO: possibly integrate timeline selectors?
 segment_maker(
     baca.compound([
         baca.scope('Piano Music Voice', 1, 13),
@@ -556,6 +542,7 @@ segment_maker(
         baca.scope('Oboe Music Voice', 1, 13),
         baca.scope('Clarinet Music Voice', 1, 13),
         ]),
+    # TODO: iterate timeline during displacement
     krummzeit.displacement(),
     )
 

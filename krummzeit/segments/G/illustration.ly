@@ -253,17 +253,17 @@
                     \context OboeMusicVoice = "Oboe Music Voice" {
                         \override Stem.direction = #up
                         \override DynamicLineSpanner.staff-padding = #'5
-                        b'1 \ff ~
-                        b'8 ~
-                        b'2 ~
-                        b'8 ~
-                        b'2 ~
-                        b'8 ~
-                        b'1 ~
-                        b'1 ~
-                        b'4 ~
-                        b'2. ~
-                        b'2.
+                        b1 \ff ~
+                        b8 ~
+                        b2 ~
+                        b8 ~
+                        b2 ~
+                        b8 ~
+                        b1 ~
+                        b1 ~
+                        b4 ~
+                        b2. ~
+                        b2.
                         \revert Stem.direction
                         \revert DynamicLineSpanner.staff-padding
                         s1 * 3/4
@@ -282,8 +282,8 @@
                             cs'''8 -\staccato
                             b''8 -\staccato
                             bf''8 -\staccato
-                            af'8 -\staccato
-                            b''8 -\staccato ]
+                            af''8 -\staccato
+                            b'8 -\staccato ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
@@ -316,16 +316,16 @@
                         }
                         {
                             bf''8 -\staccato [
-                            b'8 -\staccato ]
+                            b''8 -\staccato ]
                         }
                         {
                             bf'8 -\staccato [
                             b'8 -\staccato
                             g'8 -\staccato
-                            a''8 -\staccato ~ ]
+                            a'8 -\staccato ~ ]
                         }
                         {
-                            a''4
+                            a'4
                         }
                         {
                             fs''4 -\staccato ~
@@ -340,15 +340,15 @@
                         \times 3/4 {
                             af''8 [
                             c'''8 -\staccato
-                            cs''8 -\staccato
-                            b''8 -\staccato ]
+                            cs'''8 -\staccato
+                            b'8 -\staccato ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/8 {
                             fs''8 -\staccato [
                             a''8 -\staccato
                             bf''8 -\staccato
-                            e'8 -\staccato
+                            e'''8 -\staccato
                             af''8 -\staccato
                             d'''8 -\staccato
                             fs''8 -\staccato
@@ -433,15 +433,15 @@
                             }
                         \override Stem.direction = #up
                         \override DynamicLineSpanner.staff-padding = #'8
-                        cs'''1 ~ \< \ppp
-                        cs'''8 ~
-                        cs'''2 ~
-                        cs'''8 ~
-                        cs'''2 ~
-                        cs'''8 ~
-                        cs'''1 ~
-                        cs'''1 ~
-                        cs'''4 \ff
+                        cs1 ~ \< \ppp
+                        cs8 ~
+                        cs2 ~
+                        cs8 ~
+                        cs2 ~
+                        cs8 ~
+                        cs1 ~
+                        cs1 ~
+                        cs4 \ff
                         \revert Stem.direction
                         \revert DynamicLineSpanner.staff-padding
                         s1 * 9/4
@@ -496,8 +496,8 @@
                         }
                         {
                             gs''8 -\staccato [
-                            fs'8 -\staccato
-                            cs'''8 -\staccato
+                            fs''8 -\staccato
+                            cs'8 -\staccato
                             b''8 -\staccato ~ ]
                         }
                         {
@@ -523,13 +523,13 @@
                         \times 2/3 {
                             f''4 -\staccato
                             a''4 -\staccato
-                            cs'''4 -\staccato ~
+                            cs'4 -\staccato ~
                         }
                         {
-                            cs'''4. ~
+                            cs'4. ~
                         }
                         {
-                            cs'''8 [
+                            cs'8 [
                             c'''8 -\staccato
                             f''8 -\staccato
                             a''8 -\staccato ]

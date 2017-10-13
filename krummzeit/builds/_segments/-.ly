@@ -700,7 +700,7 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/7 {
                         a'2 \glissando
-                        af'4. \glissando
+                        af4. \glissando
                     }
                     {
                         bf8 \glissando
@@ -709,7 +709,7 @@
                     r2.
                     r4.
                     \times 2/3 {
-                        ef'8 \glissando
+                        ef8 \glissando
                         fs4 \glissando
                     }
                     \times 4/5 {

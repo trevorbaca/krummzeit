@@ -3702,9 +3702,6 @@
                         ef''8 :32 ]
                     }
                     r8
-                    \revert Beam.positions
-                    \revert DynamicLineSpanner.staff-padding
-                    \revert TupletBracket.staff-padding
                     s1 * 5/8
                     \clef "treble"
                     g''4 -\downbow \glissando
@@ -3741,6 +3738,9 @@
                     g'4 -\downbow \glissando
                     ef'4 -\upbow
                     s1 * 21/2
+                    \revert Beam.positions
+                    \revert DynamicLineSpanner.staff-padding
+                    \revert TupletBracket.staff-padding
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 3/4 {
                         \override DynamicLineSpanner.staff-padding = #'6

@@ -8,21 +8,18 @@ def make_cluster(flavor):
     Set `flavor` to 'tenor', 'low' or 'harpsichord'.
     '''
     if flavor == 'harpsichord':
-        return baca.ClusterCommand(
-            start_pitch=abjad.NamedPitch('D4'),
-            #stop_pitch=abjad.NamedPitch('E5'),
+        return baca.clusters(
+            start_pitch='D4',
             widths=[4],
             )
     elif flavor == 'low':
-        return baca.ClusterCommand(
-            start_pitch=abjad.NamedPitch('C1'),
-            #stop_pitch=abjad.NamedPitch('C3'),
+        return baca.clusters(
+            start_pitch='C1',
             widths=[7],
             )
     elif flavor == 'tenor':
-        return baca.ClusterCommand(
-            start_pitch=abjad.NamedPitch('A2'),
-            #stop_pitch=abjad.NamedPitch('B3'),
+        return baca.clusters(
+            start_pitch='A2',
             widths=[4],
             )
     else:

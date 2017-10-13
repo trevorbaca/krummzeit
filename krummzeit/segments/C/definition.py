@@ -316,7 +316,6 @@ segment_maker(
     baca.scope('Piano Music Voice', 1),
     baca.hairpins(['ff > pp']),
     krummzeit.displacement(),
-    #narrow_seventh_to_fifth_octave,
     krummzeit.register_narrow(7, 5),
     baca.ottava(),
     baca.staccatissimi(),
@@ -326,7 +325,6 @@ segment_maker(
     baca.scope('Piano Music Voice', 3),
     baca.hairpins(['pp < ff']),
     krummzeit.displacement(),
-    #narrow_fifth_to_third_octave,
     krummzeit.register_narrow(5, 3),
     baca.staccatissimi(),
     )
@@ -336,7 +334,6 @@ segment_maker(
     baca.clef('bass'),
     baca.hairpins(['ff > pp']),
     krummzeit.displacement(),
-    #narrow_third_to_second_octave,
     krummzeit.register_narrow(3, 2),
     baca.staccatissimi(),
     )
@@ -345,7 +342,6 @@ segment_maker(
     baca.scope('Violin Music Voice', 5),
     baca.hairpins(['ff > pp']),
     krummzeit.displacement(),
-    #narrow_seventh_to_fifth_octave,
     krummzeit.register_narrow(7, 5),
     baca.ottava(),
     baca.markup.pizz(),
@@ -357,7 +353,6 @@ segment_maker(
     baca.clef('treble'),
     baca.hairpins(['ff > pp']),
     krummzeit.displacement(),
-    #narrow_sixth_to_fifth_octave,
     krummzeit.register_narrow(6, 5),
     baca.ottava(),
     baca.markup.pizz(),
@@ -369,7 +364,6 @@ segment_maker(
     baca.clef('treble'),
     baca.hairpins(['ff > pp']),
     krummzeit.displacement(),
-    #narrow_fifth_to_fourth_octave,
     krummzeit.register_narrow(5, 4),
     baca.markup.pizz(),
     baca.staccatissimi(),
@@ -379,7 +373,6 @@ segment_maker(
     baca.scope('Violin Music Voice', 7),
     baca.hairpins(['pp < ff']),
     krummzeit.displacement(),
-    #narrow_fifth_to_fourth_octave,
     krummzeit.register_narrow(5, 4),
     baca.staccatissimi(),
     )
@@ -388,7 +381,6 @@ segment_maker(
     baca.scope('Viola Music Voice', 7),
     baca.hairpins(['pp < ff']),
     krummzeit.displacement(),
-    #narrow_fifth_to_fourth_octave,
     krummzeit.register_narrow(5, 4),
     baca.staccatissimi(),
     )
@@ -398,7 +390,6 @@ segment_maker(
     baca.clef('bass'),
     baca.hairpins(['pp < ff']),
     krummzeit.displacement(),
-    #narrow_fourth_to_third_octave,
     krummzeit.register_narrow(4, 3),
     baca.staccatissimi(),
     )
@@ -407,7 +398,6 @@ segment_maker(
     baca.scope('Violin Music Voice', 9),
     baca.hairpins(['ff > pp']),
     krummzeit.displacement(),
-    #narrow_fifth_to_fourth_octave,
     krummzeit.register_narrow(5, 4),
     baca.staccatissimi(),
     )
@@ -417,7 +407,6 @@ segment_maker(
     baca.clef('alto'),
     baca.hairpins(['ff > pp']),
     krummzeit.displacement(),
-    #narrow_fourth_to_second_octave,
     krummzeit.register_narrow(4, 2),
     baca.staccatissimi(),
     )
@@ -426,7 +415,6 @@ segment_maker(
     baca.scope('Cello Music Voice', 9),
     baca.hairpins(['ff > pp']),
     krummzeit.displacement(),
-    #narrow_third_to_second_octave,
     krummzeit.register_narrow(3, 2),
     baca.staccatissimi(),
     )
@@ -436,7 +424,6 @@ segment_maker(
 segment_maker(
     baca.scope('Piano Music Voice', 9, 12),
     baca.dynamic('fff'),
-    #low_piano_cluster,
     krummzeit.make_cluster('low'),
     baca.ottava_bassa(),
     baca.markup.senza_pedale(),
@@ -445,7 +432,6 @@ segment_maker(
 segment_maker(
     baca.scope('Piano Music Voice', 14, 16),
     baca.dynamic('fff'),
-    #low_piano_cluster,
     krummzeit.make_cluster('low'),
     baca.ottava_bassa(),
     )

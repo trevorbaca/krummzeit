@@ -996,7 +996,7 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 3/5 {
                         ds''2.
-                        ds''2 \mf ~
+                        ds''2 ~
                             ^ \markup {
                                 \override
                                     #'(circle-padding . 0.25)
@@ -1008,14 +1008,7 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/7 {
                         ds''2
-                        d''4. ~
-                            ^ \markup {
-                                \override
-                                    #'(circle-padding . 0.25)
-                                    \circle
-                                        \finger
-                                            1
-                                }
+                        d''4. \mf ~
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 3/5 {
@@ -1031,7 +1024,7 @@
                                     #'(circle-padding . 0.25)
                                     \circle
                                         \finger
-                                            2
+                                            1
                                 }
                         d''16
                             ^ \markup {
@@ -1039,13 +1032,9 @@
                                     #'(circle-padding . 0.25)
                                     \circle
                                         \finger
-                                            1
+                                            2
                                 }
                         d''2. ~
-                    }
-                    \times 4/5 {
-                        d''2.
-                        ds''2 \mf ~
                             ^ \markup {
                                 \override
                                     #'(circle-padding . 0.25)
@@ -1053,25 +1042,22 @@
                                         \finger
                                             1
                                 }
+                    }
+                    \times 4/5 {
+                        d''2.
+                        ds''2 ~
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 10/11 {
                         ds''2..
-                        d''8
-                            ^ \markup {
-                                \override
-                                    #'(circle-padding . 0.25)
-                                    \circle
-                                        \finger
-                                            1
-                                }
+                        d''8 \mf
                         d''4. ~
                             ^ \markup {
                                 \override
                                     #'(circle-padding . 0.25)
                                     \circle
                                         \finger
-                                            2
+                                            1
                                 }
                     }
                     \times 4/5 {

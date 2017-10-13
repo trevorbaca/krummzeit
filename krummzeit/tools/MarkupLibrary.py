@@ -13,32 +13,39 @@ class MarkupLibrary(abjad.AbjadObject):
 
     ### PUBLIC METHODS ###
 
-    def accent_changes():
+    @staticmethod
+    def accent_changes(selector=None, target=None):
         string = 'accent changes of direction noticeably at each attack'
         return baca.markup(string)
 
-    def attackless_roll():
+    @staticmethod
+    def attackless_roll(selector=None, target=None):
         string = 'attackless roll with very soft yarn mallets'
         return baca.markup(string)
 
-    def catch_resonance():
+    @staticmethod
+    def catch_resonance(selector=None, target=None):
         string = 'catch resonance (but not attack) with pedal'
         return baca.markup(string)
 
-    def crotales():
+    @staticmethod
+    def crotales(selector=None, target=None):
         string = 'crotales'
-        return baca.markup.boxed(string)
+        return baca.markup.boxed(string, selector=selector, target=target)
 
-    def fingertips():
+    @staticmethod
+    def fingertips(selector=None, target=None):
         string = 'rapid roll with fingertips:'
         string += ' keep speed constant during accelerando'
         return baca.markup(string)
 
-    def fifth_harmonic_of_F1():
+    @staticmethod
+    def fifth_harmonic_of_F1(selector=None, target=None):
         string = '5th harmonic of F1'
         return baca.markup(string)
 
-    def grid_poss_to_flaut_poss():
+    @staticmethod
+    def grid_poss_to_flaut_poss(selector=None, target=None):
         left_text = abjad.Markup('grid. possibile').italic().larger() + abjad.Markup.hspace(1)
         right_text = abjad.Markup.hspace(1) + abjad.Markup('flaut. possibile').italic().larger()
         spanner = abjad.TextSpanner(
@@ -61,43 +68,53 @@ class MarkupLibrary(abjad.AbjadObject):
             spanner=spanner,
             )
 
-    def on_bridge_full_bow():
+    @staticmethod
+    def on_bridge_full_bow(selector=None, target=None):
         string = 'directly on bridge: full bow each stroke'
         return baca.markup(string)
 
-    def on_bridge_slow():
+    @staticmethod
+    def on_bridge_slow(selector=None, target=None):
         string = 'directly on bridge:'
         string += ' very slow bow, imperceptible bow changes'
         return baca.markup(string)
 
-    def scrape_moderately():
+    @staticmethod
+    def scrape_moderately(selector=None, target=None):
         string = 'scrape in a circle at moderate speed'
         return baca.markup(string)
 
-    def scraped_slate():
+    @staticmethod
+    def scraped_slate(selector=None, target=None):
         string = 'scraped slate'
-        return baca.markup.boxed(string)
+        return baca.markup.boxed(string, selector=selector, target=target)
 
-    def show_tempo():
+    @staticmethod
+    def show_tempo(selector=None, target=None):
         string = 'allow bowing to convey accelerando'
         return baca.markup(string)
 
-    def snare_drum(selector=None):
+    @staticmethod
+    def snare_drum(selector=None, target=None):
         string = 'snare drum'
-        return baca.markup.boxed(string, selector=selector)
+        return baca.markup.boxed(string, selector=selector, target=target)
 
-    def sponges():
+    @staticmethod
+    def sponges(selector=None, target=None):
         string = 'sponges'
-        return baca.markup.boxed(string)
+        return baca.markup.boxed(string, selector=selector, target=target)
 
-    def subito_non_armonichi():
+    @staticmethod
+    def subito_non_armonichi(selector=None, target=None):
         string = 'subito non armonichi e non gridato'
         return baca.markup(string)
 
-    def suspended_cymbal():
+    @staticmethod
+    def suspended_cymbal(selector=None, target=None):
         string = 'suspended cymbal'
-        return baca.markup.boxed(string)
+        return baca.markup.boxed(string, selector=selector, target=target)
 
-    def tam_tam():
+    @staticmethod
+    def tam_tam(selector=None, target=None):
         string = 'tam-tam'
-        return baca.markup.boxed(string)
+        return baca.markup.boxed(string, selector=selector, target=target)

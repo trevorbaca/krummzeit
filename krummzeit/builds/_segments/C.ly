@@ -1108,7 +1108,7 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/6 {
                         r8
-                        a''8 -\staccatissimo \< \pp [
+                        a'8 -\staccatissimo \< \pp [
                         e''8 -\staccatissimo ]
                         r8
                         g'4 -\staccatissimo
@@ -1131,7 +1131,7 @@
                     }
                     \times 4/7 {
                         r8
-                        ef''8 -\staccatissimo [
+                        ef'8 -\staccatissimo [
                         e'8 -\staccatissimo ]
                         f'4 -\staccatissimo
                         c'4 -\staccatissimo \pp

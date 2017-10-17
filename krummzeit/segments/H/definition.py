@@ -406,7 +406,7 @@ segment_maker(
         ),
     baca.dynamic('fff'),
     baca.glissandi(),
-    baca.stem_tremolo(baca.select_plts()[1:]),
+    baca.stem_tremolo(baca.select().plts()[1:]),
     )
 
 segment_maker(

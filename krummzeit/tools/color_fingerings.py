@@ -2,11 +2,6 @@ import baca
 
 
 def color_fingerings():
-    r'''Makes color fingering command.
+    r'''Color fingerings.
     '''
-    return baca.ColorFingeringCommand(
-        deposit_annotations=['color fingering'],
-        number_lists=(
-            [0, 1, 2, 1],
-            ),
-        )
+    return baca.color_fingerings([0, 1, 2, 1])

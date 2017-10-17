@@ -198,7 +198,7 @@ segment_maker.copy_rhythm(
 ### harpsichord [B9] ###
 
 rhythm_overwrite = (
-    baca.select_tuplets(stop=2),
+    baca.select_tuplets()[:2],
     baca.SplitByDurationsDivisionCallback(
         durations=[(1, 4)],
         ),

@@ -5,6 +5,10 @@ import baca
 class RegisterTransitionCommand(baca.Command):
     r'''Register transition command.
 
+    ::
+
+        >>> import krummzeit
+
     ..  container:: example
 
         Transitions from the octave of C4 to the octave of C5:
@@ -20,7 +24,7 @@ class RegisterTransitionCommand(baca.Command):
             ...     baca.scope('Violin Music Voice', 1),
             ...     baca.pitches('C4 D4 E4 F4'),
             ...     baca.even_runs(),
-            ...     baca.RegisterTransitionCommand(
+            ...     krummzeit.RegisterTransitionCommand(
             ...         start_registration=baca.Registration(
             ...             [('[A0, C8]', 0)],
             ...             ),
@@ -127,7 +131,7 @@ class RegisterTransitionCommand(baca.Command):
 
     def __init__(
         self,
-        selector='baca.select().plts().wrap()',
+        selector='baca.select().leaves().wrap()',
         start_registration=None,
         stop_registration=None,
         ):
@@ -144,50 +148,26 @@ class RegisterTransitionCommand(baca.Command):
 
     ### SPECIAL METHODS ###
 
-    def __call__(self, argument=None):
-        r'''Calls command on `argument`.
+    def __call__(self, music=None):
+        r'''Calls command on `music`.
 
         Returns none.
         '''
-        if argument is None:
-            return
-        leaves = abjad.select(argument).by_leaf()
-        if self.selector is not None:
-            result = self.selector(leaves)
-        leaves = abjad.select(leaves).by_leaf()
-        leaves_timespan = leaves.get_timespan()
-        for lt in abjad.iterate(leaves).by_logical_tie(pitched=True):
-            lt_timespan = lt.get_timespan()
-            if not lt_timespan.starts_during_timespan(leaves_timespan):
-                continue
-            offset = lt_timespan.start_offset
-            registration = self._make_registration(
-                lt_timespan.start_offset,
-                leaves_timespan,
-                )
-            for note in lt:
-                written_pitches = registration([note.written_pitch])
-                self._set_pitch(note, written_pitches[0])
+        selections = self._select(music)
+        for selection in selections:
+            leaves_timespan = abjad.select(selection).by_leaf().get_timespan()
+            plts = baca.select().plts()(selection)
+            for plt in plts:
+                timespan = plt.get_timespan()
+                registration = self._make_registration(
+                    timespan.start_offset,
+                    leaves_timespan,
+                    )
+                for pl in plt:
+                    pitches = registration([pl.written_pitch])
+                    self._set_pitch(pl, pitches[0])
 
     ### PRIVATE METHODS ###
-
-#    def _apply_outside_score(self, logical_ties):
-#        if not isinstance(logical_ties[0], abjad.LogicalTie):
-#            logical_ties = list(abjad.iterate(logical_ties).by_logical_tie())
-#        durations = [_.get_duration() for _ in logical_ties]
-#        duration = sum(durations)
-#        timespan = abjad.Timespan(0, duration)
-#        current_start_offset = 0
-#        for logical_tie in logical_ties:
-#            registration = self._make_interpolated_registration(
-#                current_start_offset,
-#                timespan,
-#                )
-#            for note in logical_tie:
-#                written_pitches = registration([note.written_pitch])
-#                note.written_pitch = written_pitches[0]
-#            duration = logical_tie.get_duration()
-#            current_start_offset += duration
 
     def _make_registration(self, offset, timespan):
         assert abjad.timespantools.offset_happens_during_timespan(
@@ -230,9 +210,9 @@ class RegisterTransitionCommand(baca.Command):
         return registration
 
     @staticmethod
-    def _set_pitch(note, written_pitch):
-        note.written_pitch = written_pitch
-        abjad.detach('not yet registered', note)
+    def _set_pitch(pl, pitch):
+        pl.written_pitch = pitch
+        abjad.detach('not yet registered', pl)
 
     ### PUBLIC PROPERTIES ###
 

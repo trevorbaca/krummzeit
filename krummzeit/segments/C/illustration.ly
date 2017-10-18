@@ -1162,9 +1162,9 @@
                                 \upright
                                     possibile
                                 }
+                        \revert Stem.direction
                         s1 * 6
                         \bar "|"
-                        \revert Stem.direction
                     }
                 }
                 \tag strings.viola
@@ -1324,9 +1324,9 @@
                                 \upright
                                     possibile
                                 }
+                        \revert Stem.direction
                         s1 * 6
                         \bar "|"
-                        \revert Stem.direction
                     }
                 }
             >>

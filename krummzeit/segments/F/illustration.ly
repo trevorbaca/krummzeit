@@ -443,7 +443,6 @@
                             \revert DynamicLineSpanner.staff-padding
                         }
                         \override DynamicLineSpanner.staff-padding = #'8
-                        \override Stem.direction = #up
                         s1 * 57/8
                         \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
@@ -463,6 +462,7 @@
                                         cl.
                                     }
                             }
+                        \override Stem.direction = #up
                         cs4. \ppp
                             ^ \markup {
                                 \override

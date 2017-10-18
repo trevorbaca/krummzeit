@@ -457,10 +457,10 @@
                         e\longa
                         e\longa
                         e\longa
+                        \revert Stem.direction
                         s1 * 8
                         \bar "|."
                         \revert DynamicLineSpanner.staff-padding
-                        \revert Stem.direction
                     }
                 }
             >>

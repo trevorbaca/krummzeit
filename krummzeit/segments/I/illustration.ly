@@ -500,10 +500,10 @@
                         fs1 \repeatTie
                         fs1 \repeatTie
                         fs1 \repeatTie \pppp
+                        \revert Stem.direction
                         s1 * 27/4
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
-                        \revert Stem.direction
                     }
                 }
             >>

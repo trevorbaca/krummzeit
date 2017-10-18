@@ -1492,9 +1492,9 @@
                         c8..
                         r32
                         c8..
+                        \revert Stem.direction
                         r32
                         \bar "|"
-                        \revert Stem.direction
                         \revert DynamicLineSpanner.staff-padding
                     }
                 }

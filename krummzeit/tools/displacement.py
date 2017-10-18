@@ -2,12 +2,11 @@ import baca
 
 
 def displacement():
-    r'''Makes displacement command.
+    r'''Makes displacement.
     '''
-    return baca.OctaveDisplacementCommand(
-        displacements=[
-            0, 0, 0, 0, 0, 0, -1, 1, 1, 1, 1,
-            0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1,
-            -1, -1, -1, -1,
-            ],
+    return baca.displacement([
+        0, 0, 0, 0, 0, 0, -1, 1, 1, 1, 1,
+        0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1,
+        -1, -1, -1, -1,
+        ],
         )

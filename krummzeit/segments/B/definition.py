@@ -434,7 +434,6 @@ segment_maker(
     krummzeit.color_fingerings(),
     krummzeit.displacement(),
     baca.trill_quarter_notes(),
-    #wide_fifth_octave,
     krummzeit.register_wide(5),
     )
 
@@ -536,7 +535,7 @@ segment_maker(
     baca.dynamic('ff'),
     baca.microtone_deviation([[0, -0.5, 0, 0.5], [0, 0.5, 0, -0.5]]),
     baca.trill_quarter_notes(),
-    #krummzeit_displacement,
+    krummzeit.displacement(),
     krummzeit.register_wide(5),
     )
 

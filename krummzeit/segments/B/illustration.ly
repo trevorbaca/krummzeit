@@ -1817,7 +1817,7 @@
                         {
                             a''8
                             aqf''4 \stopTrillSpan \startTrillSpan
-                            a''8 \stopTrillSpan
+                            a'8 \stopTrillSpan
                         }
                         {
                             aqs''16 [
@@ -1850,7 +1850,7 @@
                             cs'''8 [
                             ctqs'''8 \stopTrillSpan
                             d'''16
-                            ef''16 ]
+                            ef'''16 ]
                             af''4 ~ \startTrillSpan
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -1865,9 +1865,9 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             c'''4
-                            cqs'''8 \stopTrillSpan
-                            c'''4 \startTrillSpan
-                            cqf'''4 \stopTrillSpan \startTrillSpan
+                            cqs''8 \stopTrillSpan
+                            c''4 \startTrillSpan
+                            cqf''4 \stopTrillSpan \startTrillSpan
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding

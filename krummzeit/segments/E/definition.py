@@ -467,7 +467,7 @@ segment_maker(
 segment_maker(
     baca.scope('Piano Music Voice', 2),
     #tenor_piano_cluster,
-    krummzeit.make_cluster('tenor'),
+    krummzeit.clusters('tenor'),
     )
 
 segment_maker(

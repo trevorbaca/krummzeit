@@ -406,7 +406,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Piano Music Voice', 3, 4),
-    krummzeit.make_cluster('harpsichord'),
+    krummzeit.clusters('harpsichord'),
     )
 
 ### bcl climax ###
@@ -442,7 +442,7 @@ segment_maker(
     baca.possibile_dynamic('ffff'),
     baca.ottava_bassa(),
     #low_piano_cluster,
-    krummzeit.make_cluster('low'),
+    krummzeit.clusters('low'),
     )
 
 ### (9.1) vn, va, vc points ###

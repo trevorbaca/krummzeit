@@ -255,7 +255,7 @@ segment_maker(
 segment_maker(
     baca.scope('Piano Music Voice', 1, 5),
     baca.clef('treble'),
-    krummzeit.make_cluster('harpsichord'),
+    krummzeit.clusters('harpsichord'),
     )
 
 segment_maker(

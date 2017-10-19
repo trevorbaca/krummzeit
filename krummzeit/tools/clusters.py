@@ -2,7 +2,7 @@ import abjad
 import baca
 
 
-def make_cluster(flavor):
+def clusters(flavor):
     r'''Makes cluster.
 
     Set `flavor` to 'tenor', 'low' or 'harpsichord'.

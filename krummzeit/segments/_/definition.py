@@ -237,7 +237,7 @@ segment_maker(
     baca.scope('Piano Music Voice', 3, 5),
     baca.dynamic('fff'),
     krummzeit.markup.catch_resonance(),
-    krummzeit.make_cluster('tenor'),
+    krummzeit.clusters('tenor'),
     )
 
 ### (2.4) bcl subtone ###

@@ -424,7 +424,7 @@ segment_maker(
 segment_maker(
     baca.scope('Piano Music Voice', 9, 12),
     baca.dynamic('fff'),
-    krummzeit.make_cluster('low'),
+    krummzeit.clusters('low'),
     baca.ottava_bassa(),
     baca.markup.senza_pedale(),
     )
@@ -432,7 +432,7 @@ segment_maker(
 segment_maker(
     baca.scope('Piano Music Voice', 14, 16),
     baca.dynamic('fff'),
-    krummzeit.make_cluster('low'),
+    krummzeit.clusters('low'),
     baca.ottava_bassa(),
     )
 

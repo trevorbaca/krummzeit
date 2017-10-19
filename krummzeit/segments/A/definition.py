@@ -762,7 +762,7 @@ segment_maker(
     baca.marcati(),
     baca.ottava_bassa(),
     baca.reiterated_dynamic('fff'),
-    krummzeit.make_cluster('low'),
+    krummzeit.clusters('low'),
     )
 
 segment_maker(

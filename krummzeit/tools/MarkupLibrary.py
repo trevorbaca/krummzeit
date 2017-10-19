@@ -34,14 +34,14 @@ class MarkupLibrary(abjad.AbjadObject):
         return baca.markup.boxed(string, selector=selector)
 
     @staticmethod
-    def fingertips(selector=None):
-        string = 'rapid roll with fingertips:'
-        string += ' keep speed constant during accelerando'
+    def fifth_harmonic_of_F1(selector=None):
+        string = '5th harmonic of F1'
         return baca.markup(string)
 
     @staticmethod
-    def fifth_harmonic_of_F1(selector=None):
-        string = '5th harmonic of F1'
+    def fingertips(selector=None):
+        string = 'rapid roll with fingertips:'
+        string += ' keep speed constant during accelerando'
         return baca.markup(string)
 
     @staticmethod

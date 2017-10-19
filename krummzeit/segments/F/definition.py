@@ -84,7 +84,7 @@ segment_maker(
             division_masks=[abjad.Pattern(indices=[0], period=1)],
             )
         ),
-    krummzeit.markup.snare_drum(target=baca.select().leaf(0)),
+    krummzeit.markup.snare_drum(baca.select().leaf(0)),
     )
 
 segment_maker.copy_rhythm(

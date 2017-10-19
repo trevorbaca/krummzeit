@@ -433,7 +433,7 @@ segment_maker(
     baca.dynamic('ff'),
     krummzeit.color_fingerings(),
     krummzeit.displacement(),
-    baca.trill_quarter_notes(),
+    krummzeit.trill_quarter_notes(),
     krummzeit.register_wide(5),
     )
 
@@ -534,9 +534,9 @@ segment_maker(
     baca.scope('Violin Music Voice', 19, 22),
     baca.dynamic('ff'),
     baca.microtone_deviation([[0, -0.5, 0, 0.5], [0, 0.5, 0, -0.5]]),
-    baca.trill_quarter_notes(),
     krummzeit.displacement(),
     krummzeit.register_wide(5),
+    krummzeit.trill_quarter_notes(),
     )
 
 segment_maker(

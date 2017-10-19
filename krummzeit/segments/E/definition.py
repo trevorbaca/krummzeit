@@ -457,9 +457,8 @@ segment_maker(
     # displacement before color fingerings
     krummzeit.displacement(),
     krummzeit.color_fingerings(),
-    baca.trill_quarter_notes(),
-    #wide_fifth_octave,
     krummzeit.register_wide(5),
+    krummzeit.trill_quarter_notes(),
     )
 
 ### (1.1) pf, vn, va, vc ###
@@ -639,8 +638,7 @@ segment_maker(
 segment_maker(
     baca.scope('Violin Music Voice', 18, 22),
     baca.dynamic('ppp'),
-    #pervasive_A5_trills,
-    baca.pervasive_trills_at_pitch('A5'),
+    baca.trills_at_pitch('A5'),
     )
 
 segment_maker(
@@ -651,7 +649,7 @@ segment_maker(
 segment_maker(
     baca.scope('Oboe Music Voice', 18, 22),
     baca.dynamic('ppp'),
-    baca.pervasive_trills(),
+    baca.trills(),
     )
 
 ### (9.1) pf points ###

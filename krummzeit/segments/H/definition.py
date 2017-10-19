@@ -358,7 +358,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Oboe Music Voice', 3, 6),
-    baca.pervasive_trills(),
+    baca.trills(),
     )
 
 ### (14) ###

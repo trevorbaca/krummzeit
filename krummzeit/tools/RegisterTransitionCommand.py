@@ -131,7 +131,7 @@ class RegisterTransitionCommand(baca.Command):
 
     def __init__(
         self,
-        selector='baca.select().leaves().wrap()',
+        selector='baca.select().leaves().group()',
         start_registration=None,
         stop_registration=None,
         ):

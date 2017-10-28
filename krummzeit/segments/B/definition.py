@@ -536,9 +536,7 @@ segment_maker(
     baca.map([
         baca.deviation([0, -0.5, 0, 0.5]),
         baca.deviation([0, 0.5, 0, -0.5])],
-        baca.select().qruns().map(
-            baca.select().lts()
-            ).filter(abjad.length('>', 1)),
+        baca.select().ltqruns().filter_length('>', 1),
         ),
     krummzeit.displacement(),
     krummzeit.register_wide(5),

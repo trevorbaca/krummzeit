@@ -155,10 +155,11 @@ class RegisterTransitionCommand(baca.Command):
         '''
         selections = self._select(music)
         for selection in selections:
-            leaves_timespan = abjad.select(selection).leaves().get_timespan()
+            leaves = abjad.select(selection).leaves()
+            leaves_timespan = abjad.inspect(leaves).get_timespan()
             plts = baca.select().plts()(selection)
             for plt in plts:
-                timespan = plt.get_timespan()
+                timespan = abjad.inspect(plt).get_timespan()
                 registration = self._make_registration(
                     timespan.start_offset,
                     leaves_timespan,

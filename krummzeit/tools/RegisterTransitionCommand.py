@@ -5,44 +5,38 @@ import baca
 class RegisterTransitionCommand(baca.Command):
     r'''Register transition command.
 
-    ::
-
-        >>> import krummzeit
+    >>> import krummzeit
 
     ..  container:: example
 
         Transitions from the octave of C4 to the octave of C5:
 
-            >>> segment_maker = baca.SegmentMaker(
-            ...     score_template=baca.ViolinSoloScoreTemplate(),
-            ...     time_signatures=[(4, 8), (3, 8), (4, 8), (3, 8)],
-            ...     )
+        >>> segment_maker = baca.SegmentMaker(
+        ...     score_template=baca.ViolinSoloScoreTemplate(),
+        ...     time_signatures=[(4, 8), (3, 8), (4, 8), (3, 8)],
+        ...     )
 
-        ::
+        >>> segment_maker(
+        ...     baca.scope('Violin Music Voice', 1),
+        ...     baca.pitches('C4 D4 E4 F4'),
+        ...     baca.even_runs(),
+        ...     krummzeit.RegisterTransitionCommand(
+        ...         start_registration=baca.Registration(
+        ...             [('[A0, C8]', 0)],
+        ...             ),
+        ...         stop_registration=baca.Registration(
+        ...             [('[A0, C8]', 12)],
+        ...             ),
+        ...         ),
+        ...     )
 
-            >>> segment_maker(
-            ...     baca.scope('Violin Music Voice', 1),
-            ...     baca.pitches('C4 D4 E4 F4'),
-            ...     baca.even_runs(),
-            ...     krummzeit.RegisterTransitionCommand(
-            ...         start_registration=baca.Registration(
-            ...             [('[A0, C8]', 0)],
-            ...             ),
-            ...         stop_registration=baca.Registration(
-            ...             [('[A0, C8]', 12)],
-            ...             ),
-            ...         ),
-            ...     )
-
-        ::
-
-            >>> result = segment_maker.run(is_doc_example=True)
-            >>> lilypond_file, metadata = result
-            >>> show(lilypond_file) # doctest: +SKIP
+        >>> result = segment_maker.run(is_doc_example=True)
+        >>> lilypond_file, metadata = result
+        >>> abjad.show(lilypond_file) # doctest: +SKIP
 
         ..  docs::
 
-            >>> f(lilypond_file[abjad.Score])
+            >>> abjad.f(lilypond_file[abjad.Score])
             \context Score = "Score" <<
                 \tag violin
                 \context GlobalContext = "Global Context" <<

@@ -383,11 +383,7 @@ segment_maker(
 
 segment_maker(
     baca.scopes(['Oboe Music Voice', 'Clarinet Music Voice'], [(3, 7)]),
-    baca.AttachCommand(
-        arguments=[abjad.Articulation('.')],
-        # TODO: integrate duration inequalities:
-        #maximum_duration=abjad.Duration(1, 8),
-        ),
+    baca.staccati(baca.select().ptlts()),
     )
 
 ### VERTICAL ALIGNMENT ###

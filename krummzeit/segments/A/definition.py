@@ -673,7 +673,7 @@ segment_maker(
 
 segment_maker(
     baca.scopes(['Viola Music Voice', 'Cello Music Voice'], [(1, 9)]),
-    baca.glissandi(),
+    baca.map(baca.glissando(), baca.select().runs()),
     )
 
 segment_maker(
@@ -718,7 +718,7 @@ segment_maker(
     baca.alternate_bow_strokes(),
     baca.clef('treble'),
     baca.dynamic('f'),
-    baca.glissandi(),
+    baca.map(baca.glissando(), baca.select().runs()),
     baca.markup.OB_full_bow_strokes(),
     #narrow_fifth_to_third_octave,
     krummzeit.register_narrow(5, 3),
@@ -734,7 +734,7 @@ segment_maker(
     baca.alternate_bow_strokes(),
     baca.clef('treble'),
     baca.dynamic('f'),
-    baca.glissandi(),
+    baca.glissando(),
     baca.markup.OB_full_bow_strokes(),
     #narrow_fifth_to_second_octave,
     krummzeit.register_narrow(5, 2),
@@ -749,7 +749,7 @@ segment_maker(
     baca.scope('Violin Music Voice', 14, 18),
     baca.alternate_bow_strokes(),
     baca.dynamic('f'),
-    baca.glissandi(),
+    baca.glissando(),
     baca.markup.OB_full_bow_strokes(),
     #narrow_fifth_to_fourth_octave,
     krummzeit.register_narrow(5, 4),
@@ -834,7 +834,7 @@ segment_maker(
 segment_maker(
     baca.scope('Clarinet Music Voice', 22, 23),
     baca.dynamic('f'),
-    baca.glissandi(),
+    baca.glissando(),
     )
 
 segment_maker(

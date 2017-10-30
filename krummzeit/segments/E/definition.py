@@ -530,7 +530,7 @@ segment_maker(
 segment_maker(
     baca.scopes(['Oboe Music Voice', 'Clarinet Music Voice'], [(4, 11)]),
     baca.dynamic('ff'),
-    baca.glissandi(),
+    baca.map(baca.glissando(), baca.select().runs()),
     krummzeit.color_fingerings(),
     )
 
@@ -548,7 +548,7 @@ segment_maker(
 
 segment_maker(
     baca.scopes(strings, [(4, 10)]),
-    baca.glissandi(),
+    baca.map(baca.glissando(), baca.select().runs()),
     #repeated_p_to_ppp,
     baca.hairpins(['p > ppp']),
     baca.markup.molto_flautando(),

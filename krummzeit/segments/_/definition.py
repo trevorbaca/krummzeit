@@ -8,9 +8,9 @@ import krummzeit
 ###############################################################################
 
 stage_measure_map = baca.StageMeasureMap([
-    2, 1,               # stage 1 + halt
-    1, 1, 1, 1, 1, 1,   # stages 2-6 + halt
-    1, 3,               # stages 7-8
+    2, 1,               # 1, halt
+    1, 1, 1, 1, 1, 1,   # 2-6, halt
+    1, 3,               # 7-8
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
@@ -274,7 +274,7 @@ segment_maker(
         ['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
         [(3, 7)],
         ),
-    baca.glissandi(),
+    baca.map(baca.glissando(), baca.select().runs()),
     baca.hairpins(['pp < ff']),
     baca.markup.molto_flautando(),
     baca.natural_harmonics(),

@@ -253,7 +253,7 @@
                         \times 5/6 {
                             af'''4 -\staccato
                             c'''4 -\staccato
-                            bf'''4 -\staccato ~
+                            bf'''4 ~
                         }
                         {
                             bf'''4
@@ -263,12 +263,12 @@
                             d'''16 -\staccato [
                             cs'''16 -\staccato
                             ef'''16 -\staccato
-                            f'''16 -\staccato ~ ]
+                            f'''16 ~ ]
                         }
                         \times 2/3 {
                             f'''4
                             d'''4 -\staccato
-                            b''4 -\staccato ~
+                            b''4 ~
                         }
                         {
                             b''4
@@ -289,13 +289,13 @@
                             f''16 -\staccato
                             g''16 -\staccato
                             a''16 -\staccato
-                            b'16 -\staccato ~ ]
+                            b'16 ~ ]
                         }
                         {
                             b'4
                         }
                         {
-                            f''4. -\staccato ~
+                            f''4. ~
                         }
                         {
                             f''4. ~
@@ -318,7 +318,7 @@
                             af'4 -\staccato
                         }
                         {
-                            f''4. -\staccato ~
+                            f''4. ~
                         }
                         {
                             f''4
@@ -378,19 +378,19 @@
                             d'4 -\staccato
                         }
                         {
-                            gs'4 -\staccato ~
+                            gs'4 ~
                         }
                         {
                             gs'4
                         }
                         {
                             fs'8 -\staccato [
-                            d'8 -\staccato ~ ]
+                            d'8 ~ ]
                         }
                         \times 2/3 {
                             d'4
                             gs'4 -\staccato
-                            fs'4 -\staccato ~
+                            fs'4 ~
                         }
                         \times 2/3 {
                             fs'4
@@ -403,17 +403,17 @@
                         }
                         {
                             ds''8 -\staccato [
-                            as'8 -\staccato ~ ]
+                            as'8 ~ ]
                         }
                         {
                             as'4.
                         }
                         {
-                            f''4. -\staccato ~
+                            f''4. ~
                         }
                         {
                             f''4
-                            fs''4 -\staccato ~
+                            fs''4 ~
                         }
                         {
                             fs''8 [
@@ -425,7 +425,7 @@
                         \times 2/3 {
                             d'''4 -\staccato
                             ds'''4 -\staccato
-                            fs''4 -\staccato ~
+                            fs''4 ~
                         }
                         {
                             fs''4.
@@ -434,7 +434,7 @@
                             gs''8 -\staccato [
                             a''8 -\staccato
                             f'''8 -\staccato
-                            a''8 -\staccato ~ ]
+                            a''8 ~ ]
                         }
                         {
                             a''4. \ff

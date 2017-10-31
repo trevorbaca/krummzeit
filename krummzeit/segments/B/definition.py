@@ -431,9 +431,12 @@ segment_maker(
 segment_maker(
     baca.scope('Oboe Music Voice', 1, 27),
     baca.dynamic('ff'),
+    baca.map(
+        baca.trill(),
+        baca.select().plts().filter_preprolated('>=', (1, 4)),
+        ),
     krummzeit.color_fingerings(),
     krummzeit.displacement(),
-    krummzeit.trill_quarter_notes(),
     krummzeit.register_wide(5),
     )
 
@@ -540,7 +543,10 @@ segment_maker(
         ),
     krummzeit.displacement(),
     krummzeit.register_wide(5),
-    krummzeit.trill_quarter_notes(),
+    baca.map(
+        baca.trill(),
+        baca.select().plts().filter_preprolated('>=', (1, 4)),
+        ),
     )
 
 segment_maker(

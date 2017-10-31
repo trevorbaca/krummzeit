@@ -626,7 +626,7 @@ segment_maker(
         'Clarinet Music Voice'],
         [9],
         ),
-    baca.hairpins(['f < ff']),
+    baca.hairpin('f < ff'),
     )
 
 segment_maker(

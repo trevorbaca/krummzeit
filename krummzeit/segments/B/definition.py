@@ -482,7 +482,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Viola Music Voice', 1, 9),
-    baca.hairpins(['ff > pp']),
+    baca.hairpin('ff > pp'),
     )
 
 segment_maker(
@@ -507,7 +507,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 1, 9),
-    baca.hairpins(['ff > pp']),
+    baca.hairpin('ff > pp'),
     )
 
 segment_maker(
@@ -601,7 +601,7 @@ segment_maker(
         [(26, 29)],
         ),
     baca.map(baca.glissando(), baca.select().runs()),
-    baca.hairpins(['pp < fff']),
+    baca.hairpin('pp < fff'),
     baca.markup.non_flautando(),
     krummzeit.markup.show_tempo(),
     )

@@ -550,7 +550,7 @@ segment_maker(
     baca.scopes(strings, [(4, 10)]),
     baca.map(baca.glissando(), baca.select().runs()),
     #repeated_p_to_ppp,
-    baca.hairpins(['p > ppp']),
+    baca.hairpin('p > ppp'),
     baca.markup.molto_flautando(),
     baca.natural_harmonics(),
     )

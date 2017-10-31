@@ -423,7 +423,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 5, 6),
-    baca.hairpins(['ff < fff']),
+    baca.hairpin('ff < fff'),
     )
 
 segment_maker(
@@ -433,7 +433,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 11),
-    baca.hairpins(['ffff > pppp']),
+    baca.hairpin('ffff > pppp'),
     )
 
 segment_maker(

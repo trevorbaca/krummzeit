@@ -247,7 +247,7 @@ segment_maker(
 
 segment_maker(
     baca.scopes(['Viola Music Voice', 'Cello Music Voice'], [(2, 4)]),
-    baca.hairpins(['ppp < fff']),
+    baca.hairpin('ppp < fff'),
     )
 
 ### (10.2) snare ###
@@ -369,14 +369,14 @@ segment_maker(
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 3, 7),
-    baca.hairpins(['p < ff']),
+    baca.hairpin('p < ff'),
     #narrow_fourth_to_sixth_octave,
     krummzeit.register_narrow(4, 6),
     )
 
 segment_maker(
     baca.scope('Oboe Music Voice', 3, 7),
-    baca.hairpins(['p < ff']),
+    baca.hairpin('p < ff'),
     #narrow_sixth_to_fourth_octave,
     krummzeit.register_narrow(6, 4),
     )

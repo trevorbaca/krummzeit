@@ -638,7 +638,7 @@ segment_maker(
 segment_maker(
     baca.scope('Violin Music Voice', 18, 22),
     baca.dynamic('ppp'),
-    baca.trills_at_pitch('A5'),
+    baca.map(baca.pitched_trill('A5'), baca.select().qruns()),
     )
 
 segment_maker(

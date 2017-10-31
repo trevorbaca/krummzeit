@@ -453,19 +453,21 @@ segment_maker(
 segment_maker(
     baca.scope('Oboe Music Voice', 1, 2),
     baca.dynamic('p'),
+    baca.map(
+        baca.trill(),
+        baca.select().plts().filter_preprolated('>=', (1, 4)),
+        ),
     # TODO: maybe a way to programmatically compose the two commands
     # displacement before color fingerings
     krummzeit.displacement(),
     krummzeit.color_fingerings(),
     krummzeit.register_wide(5),
-    krummzeit.trill_quarter_notes(),
     )
 
 ### (1.1) pf, vn, va, vc ###
 
 segment_maker(
     baca.scope('Piano Music Voice', 2),
-    #tenor_piano_cluster,
     krummzeit.clusters('tenor'),
     )
 

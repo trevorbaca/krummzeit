@@ -649,7 +649,7 @@ segment_maker(
 segment_maker(
     baca.scope('Oboe Music Voice', 18, 22),
     baca.dynamic('ppp'),
-    baca.trills(),
+    baca.map(baca.trill(), baca.select().qruns()),
     )
 
 ### (9.1) pf points ###

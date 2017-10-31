@@ -275,7 +275,7 @@ segment_maker(
         [(3, 7)],
         ),
     baca.map(baca.glissando(), baca.select().runs()),
-    baca.hairpins(['pp < ff']),
+    baca.hairpin('pp < ff'),
     baca.markup.molto_flautando(),
     baca.natural_harmonics(),
     )

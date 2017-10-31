@@ -118,7 +118,7 @@ segment_maker.copy_rhythm(
 segment_maker(
     baca.scope('Clarinet Music Voice', 3, 4),
     baca.instrument(krummzeit.instruments['bass clarinet']),
-    baca.messiaen_tied_notes(),
+    baca.tied_notes(repeat_ties=True),
     )
 
 ### pf [A2] single cluster (8.1) ###

@@ -148,6 +148,7 @@
                 \tag winds.oboe
                 \context OboeMusicStaff = "Oboe Music Staff" {
                     \context OboeMusicVoice = "Oboe Music Voice" {
+                        \clef "treble"
                         s1 * 33/8
                         \override DynamicLineSpanner.staff-padding = #'3
                         d''1.. \ff ~ \startTrillSpan
@@ -196,6 +197,7 @@
                 \tag winds.clarinet
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
+                        \clef "treble"
                         s1 * 33/8
                         \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
@@ -307,6 +309,7 @@
                                     #10
                                     Hpschd.
                                 }
+                            \clef "bass"
                             <d' f' a' c''>8 [
                                 ^ \markup {
                                     \override
@@ -1937,6 +1940,7 @@
                 \tag percussion
                 \context PercussionMusicStaff = "Percussion Staff" {
                     \context PercussionMusicVoice = "Percussion Music Voice" {
+                        \clef "percussion"
                         s1 * 47/8
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'6
@@ -2032,6 +2036,7 @@
                     \context ViolinMusicVoice = "Violin Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 19/10 {
+                            \clef "treble"
                             df'2. :32
                                 _ \markup {
                                     \dynamic
@@ -2095,6 +2100,7 @@
                     \context ViolaMusicVoice = "Viola Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 19/10 {
+                            \clef "alto"
                             c4 :32
                                 _ \markup {
                                     \dynamic
@@ -2158,6 +2164,7 @@
                     \context CelloMusicVoice = "Cello Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 19/10 {
+                            \clef "bass"
                             c,2 :32
                                 _ \markup {
                                     \dynamic

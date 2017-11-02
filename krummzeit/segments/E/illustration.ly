@@ -438,6 +438,7 @@
                 \context OboeMusicStaff = "Oboe Music Staff" {
                     \context OboeMusicVoice = "Oboe Music Voice" {
                         \times 4/5 {
+                            \clef "treble"
                             \override Beam.positions = #'(-5 . -5)
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #4
@@ -1255,6 +1256,7 @@
                                         (Eb)
                                     }
                             }
+                        \clef "treble"
                         \override Stem.direction = #up
                         \override DynamicLineSpanner.staff-padding = #'6
                         gs\longa \ppp
@@ -1503,6 +1505,7 @@
                 \tag percussion.piano
                 \context PianoMusicStaff = "Piano Music Staff" {
                     \context PianoMusicVoice = "Piano Music Voice" {
+                        \clef "bass"
                         s1 * 8
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
@@ -2362,6 +2365,7 @@
                 \tag strings.violin
                 \context ViolinMusicStaff = "Violin Music Staff" {
                     \context ViolinMusicVoice = "Violin Music Voice" {
+                        \clef "treble"
                         \override DynamicLineSpanner.staff-padding = #'8.5
                         s1 * 8
                         r8
@@ -2494,6 +2498,7 @@
                 \tag strings.viola
                 \context ViolaMusicStaff = "Viola Music Staff" {
                     \context ViolaMusicVoice = "Viola Music Voice" {
+                        \clef "alto"
                         \override DynamicLineSpanner.staff-padding = #'8.5
                         s1 * 8
                         r8
@@ -2631,6 +2636,7 @@
                 \tag strings.cello
                 \context CelloMusicStaff = "Cello Music Staff" {
                     \context CelloMusicVoice = "Cello Music Voice" {
+                        \clef "bass"
                         s1 * 8
                         \override DynamicLineSpanner.staff-padding = #'6
                         r8

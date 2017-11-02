@@ -512,6 +512,7 @@
                 \tag winds.oboe
                 \context OboeMusicStaff = "Oboe Music Staff" {
                     \context OboeMusicVoice = "Oboe Music Voice" {
+                        \clef "treble"
                         s1 * 65/8
                         \override DynamicLineSpanner.staff-padding = #'5
                         \override Stem.direction = #up
@@ -528,6 +529,7 @@
                 \tag winds.clarinet
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
+                        \clef "treble"
                         s1 * 65/8
                         \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
@@ -585,6 +587,7 @@
                                     #10
                                     Pf.
                                 }
+                            \clef "treble"
                             e''''16 -\staccatissimo \> \ff
                             r16
                             ef''''16 -\staccatissimo [
@@ -1087,6 +1090,7 @@
                 \tag strings.violin
                 \context ViolinMusicStaff = "Violin Music Staff" {
                     \context ViolinMusicVoice = "Violin Music Voice" {
+                        \clef "treble"
                         s1 * 15/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
@@ -1170,6 +1174,7 @@
                 \tag strings.viola
                 \context ViolaMusicStaff = "Viola Music Staff" {
                     \context ViolaMusicVoice = "Viola Music Voice" {
+                        \clef "treble"
                         s1 * 15/8
                         \times 2/3 {
                             \clef "treble"
@@ -1258,6 +1263,7 @@
                 \tag strings.cello
                 \context CelloMusicStaff = "Cello Music Staff" {
                     \context CelloMusicVoice = "Cello Music Voice" {
+                        \clef "treble"
                         s1 * 15/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {

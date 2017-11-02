@@ -565,6 +565,7 @@
                 \tag winds.oboe
                 \context OboeMusicStaff = "Oboe Music Staff" {
                     \context OboeMusicVoice = "Oboe Music Voice" {
+                        \clef "treble"
                         \override Beam.positions = #'(-4 . -4)
                         \override DynamicLineSpanner.staff-padding = #'6
                         \override TupletBracket.staff-padding = #3
@@ -926,6 +927,7 @@
                 \tag winds.clarinet
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
+                        \clef "treble"
                         \override Beam.positions = #'(-4 . -4)
                         \override DynamicLineSpanner.staff-padding = #'6
                         \override TupletBracket.staff-padding = #3
@@ -1085,6 +1087,7 @@
                 \tag percussion.piano
                 \context PianoMusicStaff = "Piano Music Staff" {
                     \context PianoMusicVoice = "Piano Music Voice" {
+                        \clef "bass"
                         \override DynamicLineSpanner.staff-padding = #'3
                         s1 * 13/2
                         \clef "bass"
@@ -1973,6 +1976,7 @@
                 \tag strings.violin
                 \context ViolinMusicStaff = "Violin Music Staff" {
                     \context ViolinMusicVoice = "Violin Music Voice" {
+                        \clef "treble"
                         ef'4
                             _ \markup {
                                 \larger
@@ -2299,6 +2303,7 @@
                 \tag strings.viola
                 \context ViolaMusicStaff = "Viola Music Staff" {
                     \context ViolaMusicVoice = "Viola Music Voice" {
+                        \clef "alto"
                         c'4 \glissando
                             _ \markup {
                                 \larger
@@ -2671,6 +2676,7 @@
                 \tag strings.cello
                 \context CelloMusicStaff = "Cello Music Staff" {
                     \context CelloMusicVoice = "Cello Music Voice" {
+                        \clef "bass"
                         d,4 \glissando
                             _ \markup {
                                 \larger

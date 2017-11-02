@@ -251,6 +251,7 @@
                 \tag winds.oboe
                 \context OboeMusicStaff = "Oboe Music Staff" {
                     \context OboeMusicVoice = "Oboe Music Voice" {
+                        \clef "treble"
                         \override Stem.direction = #up
                         \override DynamicLineSpanner.staff-padding = #'5
                         b1 \ff ~
@@ -431,6 +432,7 @@
                                         cl.
                                     }
                             }
+                        \clef "treble"
                         \override Stem.direction = #up
                         \override DynamicLineSpanner.staff-padding = #'8
                         cs1 ~ \< \ppp
@@ -620,6 +622,7 @@
                 \tag percussion.piano
                 \context PianoMusicStaff = "Piano Music Staff" {
                     \context PianoMusicVoice = "Piano Music Voice" {
+                        \clef "bass"
                         s1 * 27/8
                         \times 4/7 {
                             \set PianoMusicStaff.instrumentName = \markup {
@@ -888,6 +891,7 @@
                 \tag strings.violin
                 \context ViolinMusicStaff = "Violin Music Staff" {
                     \context ViolinMusicVoice = "Violin Music Voice" {
+                        \clef "treble"
                         s1 * 27/8
                         {
                             \override Beam.positions = #'(-4 . -4)
@@ -1111,6 +1115,7 @@
                 \tag strings.viola
                 \context ViolaMusicStaff = "Viola Music Staff" {
                     \context ViolaMusicVoice = "Viola Music Voice" {
+                        \clef "alto"
                         \override DynamicLineSpanner.staff-padding = #'6
                         bf,1.. \glissando \< \ff
                             ^ \markup {
@@ -1231,6 +1236,7 @@
                 \tag strings.cello
                 \context CelloMusicStaff = "Cello Music Staff" {
                     \context CelloMusicVoice = "Cello Music Voice" {
+                        \clef "bass"
                         \override DynamicLineSpanner.staff-padding = #'6
                         a,,2. \glissando \< \ff
                             ^ \markup {

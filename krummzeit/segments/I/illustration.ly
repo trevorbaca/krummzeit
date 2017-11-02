@@ -326,6 +326,7 @@
                     \context OboeMusicVoice = "Oboe Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/5 {
+                            \clef "treble"
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #2
                             ef''4. \ff
@@ -367,6 +368,7 @@
                                             cl.
                                         }
                                 }
+                            \clef "treble"
                             \override DynamicLineSpanner.staff-padding = #'9
                             \override Stem.direction = #up
                             \override TupletBracket.staff-padding = #5
@@ -523,6 +525,7 @@
                                     #10
                                     Pf.
                                 }
+                            \clef "bass"
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #2
                             fs'''4. :32 \fff
@@ -3488,6 +3491,7 @@
                                     #10
                                     Xyl.
                                 }
+                            \clef "treble"
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #2
                             fs''8 :32 \fff
@@ -3653,6 +3657,7 @@
                 \context ViolinMusicStaff = "Violin Music Staff" {
                     \context ViolinMusicVoice = "Violin Music Voice" {
                         \times 2/3 {
+                            \clef "treble"
                             \override Beam.positions = #'(-5 . -5)
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
@@ -3780,6 +3785,7 @@
                 \context ViolaMusicStaff = "Viola Music Staff" {
                     \context ViolaMusicVoice = "Viola Music Voice" {
                         \times 2/3 {
+                            \clef "alto"
                             \override Beam.positions = #'(-5 . -5)
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
@@ -3867,6 +3873,7 @@
                 \context CelloMusicStaff = "Cello Music Staff" {
                     \context CelloMusicVoice = "Cello Music Voice" {
                         \times 2/3 {
+                            \clef "bass"
                             eqf,8 :32 \fff [
                             eqf,8 :32
                             eqf,8 :32 ]

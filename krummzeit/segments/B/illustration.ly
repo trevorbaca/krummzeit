@@ -561,6 +561,7 @@
                     \context OboeMusicVoice = "Oboe Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            \clef "treble"
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
@@ -1093,6 +1094,7 @@
                                         (Eb)
                                     }
                             }
+                        \clef "treble"
                         \override DynamicLineSpanner.staff-padding = #'3
                         cs''4. \f \glissando
                             ^ \markup {
@@ -1149,6 +1151,7 @@
                 \tag percussion.piano
                 \context PianoMusicStaff = "Piano Music Staff" {
                     \context PianoMusicVoice = "Piano Music Voice" {
+                        \clef "treble"
                         s1 * 73/8
                         \times 4/5 {
                             \set PianoMusicStaff.instrumentName = \markup {
@@ -1315,6 +1318,7 @@
                 \tag percussion
                 \context PercussionMusicStaff = "Percussion Staff" {
                     \context PercussionMusicVoice = "Percussion Music Voice" {
+                        \clef "percussion"
                         s1 * 73/8
                         {
                             \stopStaff
@@ -1895,6 +1899,7 @@
                 \tag strings.viola
                 \context ViolaMusicStaff = "Viola Music Staff" {
                     \context ViolaMusicVoice = "Viola Music Voice" {
+                        \clef "treble"
                         s1 * 4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
@@ -1996,6 +2001,7 @@
                 \tag strings.cello
                 \context CelloMusicStaff = "Cello Music Staff" {
                     \context CelloMusicVoice = "Cello Music Voice" {
+                        \clef "treble"
                         s1 * 4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/5 {

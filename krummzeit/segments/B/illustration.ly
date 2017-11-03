@@ -1935,8 +1935,8 @@
                         s1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/6 {
-                            dtqs2 \glissando
-                            f4 ~
+                            dtqs2 \glissando \> \ff
+                            f4 ~ \pp
                         }
                         {
                             f4 ~
@@ -2034,8 +2034,8 @@
                         s1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/5 {
-                            ctqs,8 \glissando
-                            e,2 ~
+                            ctqs,8 \glissando \> \ff
+                            e,2 ~ \pp
                         }
                         {
                             e,4 ~

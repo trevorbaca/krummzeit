@@ -490,11 +490,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Viola Music Voice', 10, 19),
-    # TODO: make baca.hairpins() work again
-    #baca.hairpins(
-    #    ['ff > pp'],
-    #    patterns=[abjad.Pattern(indices=[0, 1])],
-    #    ),
+    baca.hairpin('ff > pp', baca.select().pleaves()[:2]),
     )
 
 segment_maker(
@@ -515,11 +511,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 10, 19),
-    # TODO: make baca.hairpins() work again
-    #baca.hairpins(
-    #    ['ff > pp'],
-    #    patterns=[abjad.Pattern(indices=[0, 1])],
-    #    ),
+    baca.hairpin('ff > pp', baca.select().pleaves()[:2]),
     )
 
 segment_maker(

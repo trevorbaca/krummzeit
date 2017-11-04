@@ -84,7 +84,7 @@ segment_maker(
             division_masks=[abjad.Pattern(indices=[0], period=1)],
             )
         ),
-    krummzeit.markup.snare_drum(baca.select().leaf(0)),
+    krummzeit.markup.snare_drum(baca.leaf(0)),
     )
 
 segment_maker.copy_rhythm(
@@ -383,7 +383,7 @@ segment_maker(
 
 segment_maker(
     baca.scopes(['Oboe Music Voice', 'Clarinet Music Voice'], [(3, 7)]),
-    baca.staccati(baca.select().ptlts()),
+    baca.staccati(baca.ptlts()),
     )
 
 ### VERTICAL ALIGNMENT ###

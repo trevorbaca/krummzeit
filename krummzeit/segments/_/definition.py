@@ -274,7 +274,7 @@ segment_maker(
         ['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
         [(3, 7)],
         ),
-    baca.map(baca.glissando(), baca.select().runs()),
+    baca.map(baca.glissando(), baca.runs()),
     baca.hairpin('pp < ff'),
     baca.markup.molto_flautando(),
     baca.natural_harmonics(),

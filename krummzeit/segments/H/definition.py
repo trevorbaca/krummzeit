@@ -319,7 +319,7 @@ segment_maker(
         [(2, 4)],
         ),
     baca.dynamic('ppp'),
-    baca.map(baca.glissando(), baca.select().runs()),
+    baca.map(baca.glissando(), baca.runs()),
     baca.natural_harmonics(),
     )
 
@@ -405,8 +405,8 @@ segment_maker(
         [(6, 8)],
         ),
     baca.dynamic('fff'),
-    baca.map(baca.glissando(), baca.select().runs()),
-    baca.stem_tremolo(baca.select().plts()[1:]),
+    baca.map(baca.glissando(), baca.runs()),
+    baca.stem_tremolo(baca.plts()[1:]),
     )
 
 segment_maker(

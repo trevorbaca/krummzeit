@@ -355,7 +355,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Viola Music Voice', 1, 7),
-    baca.map(baca.glissando(), baca.select().runs()),
+    baca.map(baca.glissando(), baca.runs()),
     baca.hairpin('ff < fff'),
     baca.dynamic_line_spanner_staff_padding(6),
     baca.markup.subito_ordinario(),
@@ -363,7 +363,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 1, 9),
-    baca.map(baca.glissando(), baca.select().runs()),
+    baca.map(baca.glissando(), baca.runs()),
     baca.hairpin('ff < fff'),
     baca.dynamic_line_spanner_staff_padding(6),
     baca.markup.subito_ordinario(),
@@ -451,7 +451,7 @@ segment_maker(
 
 segment_maker(
     baca.scopes(['Viola Music Voice', 'Cello Music Voice'], [(11, 12)]),
-    baca.map(baca.glissando(), baca.select().runs()),
+    baca.map(baca.glissando(), baca.runs()),
     baca.hairpin('ff > pp'),
     baca.markup.molto_flautando(),
     baca.dynamic_line_spanner_staff_padding(7),
@@ -509,7 +509,7 @@ segment_maker(
         'Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
         [(14, 21)],
         ),
-    baca.map(baca.glissando(), baca.select().runs()),
+    baca.map(baca.glissando(), baca.runs()),
     )
 
 segment_maker(

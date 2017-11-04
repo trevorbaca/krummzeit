@@ -125,7 +125,7 @@ class RegisterTransitionCommand(baca.Command):
 
     def __init__(
         self,
-        selector='baca.leaves().group()',
+        selector='baca.leaves()',
         start_registration=None,
         stop_registration=None,
         ):
@@ -142,25 +142,27 @@ class RegisterTransitionCommand(baca.Command):
 
     ### SPECIAL METHODS ###
 
-    def __call__(self, music=None):
-        r'''Calls command on `music`.
+    def __call__(self, argument=None):
+        r'''Calls command on `argument`.
 
         Returns none.
         '''
-        selections = self._select(music)
-        for selection in selections:
-            leaves = abjad.select(selection).leaves()
-            leaves_timespan = abjad.inspect(leaves).get_timespan()
-            plts = baca.plts()(selection)
-            for plt in plts:
-                timespan = abjad.inspect(plt).get_timespan()
-                registration = self._make_registration(
-                    timespan.start_offset,
-                    leaves_timespan,
-                    )
-                for pl in plt:
-                    pitches = registration([pl.written_pitch])
-                    self._set_pitch(pl, pitches[0])
+        if argument is None:
+            return
+        if self.selector:
+            argument = self.selector(argument)
+        leaves = abjad.select(argument).leaves()
+        leaves_timespan = abjad.inspect(leaves).get_timespan()
+        plts = baca.select(argument).plts()
+        for plt in plts:
+            timespan = abjad.inspect(plt).get_timespan()
+            registration = self._make_registration(
+                timespan.start_offset,
+                leaves_timespan,
+                )
+            for pleaf in plt:
+                pitches = registration([pleaf.written_pitch])
+                self._set_pitch(pleaf, pitches[0])
 
     ### PRIVATE METHODS ###
 
@@ -205,9 +207,9 @@ class RegisterTransitionCommand(baca.Command):
         return registration
 
     @staticmethod
-    def _set_pitch(pl, pitch):
-        pl.written_pitch = pitch
-        abjad.detach('not yet registered', pl)
+    def _set_pitch(pleaf, pitch):
+        pleaf.written_pitch = pitch
+        abjad.detach('not yet registered', pleaf)
 
     ### PUBLIC PROPERTIES ###
 

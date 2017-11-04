@@ -438,7 +438,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 1, 5),
-    baca.map(baca.glissando(), baca.select().runs()),
+    baca.map(baca.glissando(), baca.runs()),
     baca.effort_dynamic('mp'),
     #narrow_second_octave,
     krummzeit.register_narrow(2),
@@ -474,7 +474,7 @@ segment_maker(
         baca.scope('Violin Music Voice', 6, 9),
         baca.scope('Cello Music Voice', 6, 9),
         ],
-    baca.map(baca.glissando(), baca.select().runs()),
+    baca.map(baca.glissando(), baca.runs()),
     #narrow_fifth_octave,
     krummzeit.register_narrow(5),
     baca.natural_harmonics(),

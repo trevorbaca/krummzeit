@@ -260,7 +260,7 @@ segment_maker(
     baca.scope('Cello Music Voice', 1, 6),
     baca.dynamic('fff'),
     baca.dynamic_line_spanner_staff_padding(3),
-    baca.map(baca.glissando(), baca.select().runs()),
+    baca.map(baca.glissando(), baca.runs()),
     baca.markup.gridato_possibile(),
     )
 

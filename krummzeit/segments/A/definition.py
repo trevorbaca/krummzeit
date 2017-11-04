@@ -132,7 +132,7 @@ segment_maker(
 #    )
 
 rhythm_overwrite = (
-    baca.select().tuplet(-1),
+    baca.tuplet(-1),
     baca.SplitByDurationsDivisionCallback(
         durations=[(1, 4)],
         ),
@@ -198,7 +198,7 @@ segment_maker.copy_rhythm(
 ### harpsichord [B9] ###
 
 rhythm_overwrite = (
-    baca.select().tuplets()[:2],
+    baca.tuplets()[:2],
     baca.SplitByDurationsDivisionCallback(
         durations=[(1, 4)],
         ),
@@ -673,7 +673,7 @@ segment_maker(
 
 segment_maker(
     baca.scopes(['Viola Music Voice', 'Cello Music Voice'], [(1, 9)]),
-    baca.map(baca.glissando(), baca.select().runs()),
+    baca.map(baca.glissando(), baca.runs()),
     )
 
 segment_maker(
@@ -718,7 +718,7 @@ segment_maker(
     baca.alternate_bow_strokes(),
     baca.clef('treble'),
     baca.dynamic('f'),
-    baca.map(baca.glissando(), baca.select().runs()),
+    baca.map(baca.glissando(), baca.runs()),
     baca.markup.OB_full_bow_strokes(),
     #narrow_fifth_to_third_octave,
     krummzeit.register_narrow(5, 3),

@@ -433,7 +433,7 @@ segment_maker(
     baca.dynamic('ff'),
     baca.map(
         baca.trill(),
-        baca.select().plts().filter_preprolated('>=', (1, 4)),
+        baca.plts().filter_preprolated('>=', (1, 4)),
         ),
     krummzeit.color_fingerings(),
     krummzeit.displacement(),
@@ -469,7 +469,7 @@ segment_maker(
 segment_maker(
     baca.scope('Clarinet Music Voice', 20, 27),
     baca.dynamic('f'),
-    baca.map(baca.glissando(), baca.select().runs()),
+    baca.map(baca.glissando(), baca.runs()),
     )
 
 segment_maker(
@@ -479,7 +479,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Viola Music Voice', 1, 19),
-    baca.map(baca.glissando(), baca.select().runs()),
+    baca.map(baca.glissando(), baca.runs()),
     baca.markup.molto_flautando(),
     )
 
@@ -490,7 +490,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Viola Music Voice', 10, 19),
-    baca.hairpin('ff > pp', baca.select().pleaves()[:2]),
+    baca.hairpin('ff > pp', baca.pleaves()[:2]),
     )
 
 segment_maker(
@@ -500,7 +500,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 1, 19),
-    baca.map(baca.glissando(), baca.select().runs()),
+    baca.map(baca.glissando(), baca.runs()),
     baca.markup.molto_flautando(),
     )
 
@@ -511,7 +511,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 10, 19),
-    baca.hairpin('ff > pp', baca.select().pleaves()[:2]),
+    baca.hairpin('ff > pp', baca.pleaves()[:2]),
     )
 
 segment_maker(
@@ -531,13 +531,13 @@ segment_maker(
     baca.map([
         baca.deviation([0, -0.5, 0, 0.5]),
         baca.deviation([0, 0.5, 0, -0.5])],
-        baca.select().ltqruns().filter_length('>', 1),
+        baca.ltqruns().filter_length('>', 1),
         ),
     krummzeit.displacement(),
     krummzeit.register_wide(5),
     baca.map(
         baca.trill(),
-        baca.select().plts().filter_preprolated('>=', (1, 4)),
+        baca.plts().filter_preprolated('>=', (1, 4)),
         ),
     )
 
@@ -598,7 +598,7 @@ segment_maker(
         ['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
         [(26, 29)],
         ),
-    baca.map(baca.glissando(), baca.select().runs()),
+    baca.map(baca.glissando(), baca.runs()),
     baca.hairpin('pp < fff'),
     baca.markup.non_flautando(),
     krummzeit.markup.show_tempo(),

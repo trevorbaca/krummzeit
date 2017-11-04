@@ -125,7 +125,7 @@ class RegisterTransitionCommand(baca.Command):
 
     def __init__(
         self,
-        selector='baca.select().leaves().group()',
+        selector='baca.leaves().group()',
         start_registration=None,
         stop_registration=None,
         ):
@@ -151,7 +151,7 @@ class RegisterTransitionCommand(baca.Command):
         for selection in selections:
             leaves = abjad.select(selection).leaves()
             leaves_timespan = abjad.inspect(leaves).get_timespan()
-            plts = baca.select().plts()(selection)
+            plts = baca.plts()(selection)
             for plt in plts:
                 timespan = abjad.inspect(plt).get_timespan()
                 registration = self._make_registration(

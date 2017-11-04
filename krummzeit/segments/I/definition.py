@@ -384,7 +384,7 @@ segment_maker(
         [(5, 9)],
         ),
     baca.clef('treble'),
-    baca.map(baca.glissando(), baca.select().runs()),
+    baca.map(baca.glissando(), baca.runs()),
     baca.alternate_bow_strokes(),
     baca.effort_dynamic('f'),
     krummzeit.markup.on_bridge_full_bow(),

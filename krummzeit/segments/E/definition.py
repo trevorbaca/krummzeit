@@ -455,7 +455,7 @@ segment_maker(
     baca.dynamic('p'),
     baca.map(
         baca.trill(),
-        baca.select().plts().filter_preprolated('>=', (1, 4)),
+        baca.plts().filter_preprolated('>=', (1, 4)),
         ),
     # TODO: maybe a way to programmatically compose the two commands
     # displacement before color fingerings
@@ -532,7 +532,7 @@ segment_maker(
 segment_maker(
     baca.scopes(['Oboe Music Voice', 'Clarinet Music Voice'], [(4, 11)]),
     baca.dynamic('ff'),
-    baca.map(baca.glissando(), baca.select().ntruns()),
+    baca.map(baca.glissando(), baca.ntruns()),
     krummzeit.color_fingerings(),
     )
 
@@ -550,7 +550,7 @@ segment_maker(
 
 segment_maker(
     baca.scopes(strings, [(4, 10)]),
-    baca.map(baca.glissando(), baca.select().runs()),
+    baca.map(baca.glissando(), baca.runs()),
     #repeated_p_to_ppp,
     baca.hairpin('p > ppp'),
     baca.markup.molto_flautando(),
@@ -640,7 +640,7 @@ segment_maker(
 segment_maker(
     baca.scope('Violin Music Voice', 18, 22),
     baca.dynamic('ppp'),
-    baca.map(baca.trill('A5'), baca.select().qruns()),
+    baca.map(baca.trill('A5'), baca.qruns()),
     )
 
 segment_maker(
@@ -651,7 +651,7 @@ segment_maker(
 segment_maker(
     baca.scope('Oboe Music Voice', 18, 22),
     baca.dynamic('ppp'),
-    baca.map(baca.trill(), baca.select().qruns()),
+    baca.map(baca.trill(), baca.qruns()),
     )
 
 ### (9.1) pf points ###

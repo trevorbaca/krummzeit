@@ -1,6 +1,7 @@
 import abjad
 import baca
 import krummzeit
+from abjad import rhythmmakertools as rhythmos
 
 
 ###############################################################################
@@ -62,7 +63,7 @@ segment_maker(
                     ],
                 ),
             ),
-        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
+        rhythm_maker=rhythmos.NoteRhythmMaker(
             division_masks=[abjad.Pattern(indices=[-1])],
             ),
         ),
@@ -84,7 +85,7 @@ segment_maker(
                     ],
                 ),
             ),
-        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker()
+        rhythm_maker=rhythmos.NoteRhythmMaker()
         ),
     )
 
@@ -106,7 +107,7 @@ segment_maker(
                     ],
                 ),
             ),
-        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker()
+        rhythm_maker=rhythmos.NoteRhythmMaker()
         ),
     )
 
@@ -115,8 +116,8 @@ segment_maker(
 segment_maker(
     baca.scope('Violin Music Voice', 1, 10),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
-            talea=abjad.rhythmmakertools.Talea(
+        rhythm_maker=rhythmos.TaleaRhythmMaker(
+            talea=rhythmos.Talea(
                 counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
                 denominator=4,
                 ),
@@ -164,7 +165,7 @@ segment_maker(
                 durations=[(14, 4), (2, 4)],
                 ),
             ),
-        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
+        rhythm_maker=rhythmos.NoteRhythmMaker(
             division_masks=[abjad.Pattern(indices=[1], period=2)],
             ),
         ),
@@ -179,7 +180,7 @@ segment_maker(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[4],
             ),
-        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker()
+        rhythm_maker=rhythmos.NoteRhythmMaker()
         ),
     )
 

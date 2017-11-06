@@ -1,6 +1,7 @@
 import abjad
 import baca
 import krummzeit
+from abjad import rhythmmakertools as rhythmos
 
 
 ###############################################################################
@@ -63,7 +64,7 @@ segment_maker(
                 remainder=Left,
                 ),
             ),
-        rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
+        rhythm_maker=rhythmos.TupletRhythmMaker(
             tuplet_ratios=[(1, 1, 1)],
             division_masks=[abjad.Pattern(indices=[0])],
             ),
@@ -88,7 +89,7 @@ segment_maker(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(2, 1), (2, 1), (1, 1, 1)],
             ),
-        rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
+        rhythm_maker=rhythmos.TupletRhythmMaker(
             tuplet_ratios=[
                 (1, 2),
                 (1, 4),
@@ -128,7 +129,7 @@ segment_maker(
     baca.instrument(krummzeit.instruments['piano']),
     baca.clef('bass'),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
+        rhythm_maker=rhythmos.NoteRhythmMaker(
             division_masks=[abjad.Pattern(indices=[0], period=1)],
             ),
         ),
@@ -141,8 +142,8 @@ segment_maker(
     baca.instrument(krummzeit.instruments['piano']),
     baca.clef('bass'),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.IncisedRhythmMaker(
-            incise_specifier=abjad.rhythmmakertools.InciseSpecifier(
+        rhythm_maker=rhythmos.IncisedRhythmMaker(
+            incise_specifier=rhythmos.InciseSpecifier(
                 prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],
                 prefix_counts=[3, 1, 1, 3],
                 suffix_talea=[0, 0, 1, -3, 0],
@@ -162,10 +163,10 @@ segment_maker(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[2, 3, 1],
             ),
-        rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
+        rhythm_maker=rhythmos.TupletRhythmMaker(
             preferred_denominator=abjad.Duration(1, 4),
             tuplet_ratios=[(1, 1)],
-            tuplet_specifier=abjad.rhythmmakertools.TupletSpecifier(
+            tuplet_specifier=rhythmos.TupletSpecifier(
                 avoid_dots=True,
                 is_diminution=False,
                 ),
@@ -194,8 +195,8 @@ segment_maker(
     baca.one_line_staff(),
     baca.pitches('C4'),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
-            talea=abjad.rhythmmakertools.Talea([1, 2], 2),
+        rhythm_maker=rhythmos.TaleaRhythmMaker(
+            talea=rhythmos.Talea([1, 2], 2),
             extra_counts_per_division=[2, 1, 0],
             ),
         ),

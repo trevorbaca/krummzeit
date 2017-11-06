@@ -1,6 +1,7 @@
 import abjad
 import baca
 import krummzeit
+from abjad import rhythmmakertools as rhythmos
 
 
 ###############################################################################
@@ -70,10 +71,10 @@ segment_maker(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[2, 3, 1],
             ),
-        rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
+        rhythm_maker=rhythmos.TupletRhythmMaker(
             preferred_denominator=abjad.Duration(1, 4),
             tuplet_ratios=[(3, 2)],
-            tuplet_specifier=abjad.rhythmmakertools.TupletSpecifier(
+            tuplet_specifier=rhythmos.TupletSpecifier(
                 avoid_dots=True,
                 is_diminution=False,
                 ),
@@ -114,10 +115,10 @@ segment_maker(
             pattern_rotation_index=-1,
             remainder_fuse_threshold=abjad.Duration(1, 8),
             ),
-        rhythm_maker=abjad.rhythmmakertools.EvenDivisionRhythmMaker(
+        rhythm_maker=rhythmos.EvenDivisionRhythmMaker(
             denominators=[8, 8, 4, 4, 8, 8],
             extra_counts_per_division=[3, 1, 0, 4],
-            tie_specifier=abjad.rhythmmakertools.TieSpecifier(
+            tie_specifier=rhythmos.TieSpecifier(
                 tie_across_divisions=[0, 1, 0, 1, 1, 0],
                 ),
             ),
@@ -136,8 +137,8 @@ rhythm_overwrite = (
     baca.SplitByDurationsDivisionCallback(
         durations=[(1, 4)],
         ),
-    abjad.rhythmmakertools.NoteRhythmMaker(
-        duration_specifier=abjad.rhythmmakertools.DurationSpecifier(
+    rhythmos.NoteRhythmMaker(
+        duration_specifier=rhythmos.DurationSpecifier(
             spell_metrically=True,
             ),
         ),
@@ -151,10 +152,10 @@ segment_maker(
             pattern_rotation_index=-1,
             remainder_fuse_threshold=abjad.Duration(1, 8),
             ),
-        rhythm_maker=abjad.rhythmmakertools.EvenDivisionRhythmMaker(
+        rhythm_maker=rhythmos.EvenDivisionRhythmMaker(
             denominators=[8, 8, 4, 4, 8, 8],
             extra_counts_per_division=[3, 1, 0, 4],
-            tie_specifier=abjad.rhythmmakertools.TieSpecifier(
+            tie_specifier=rhythmos.TieSpecifier(
                 tie_across_divisions=[0, 1, 0, 1, 1, 0],
                 ),
             ),
@@ -168,8 +169,8 @@ segment_maker(
     baca.scope('Percussion Music Voice', 1),
     baca.clef('percussion'),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
-            talea=abjad.rhythmmakertools.Talea([1, 2], 2),
+        rhythm_maker=rhythmos.TaleaRhythmMaker(
+            talea=rhythmos.Talea([1, 2], 2),
             extra_counts_per_division=[2, 1, 0],
             ),
         ),
@@ -202,7 +203,7 @@ rhythm_overwrite = (
     baca.SplitByDurationsDivisionCallback(
         durations=[(1, 4)],
         ),
-    abjad.rhythmmakertools.EvenDivisionRhythmMaker(
+    rhythmos.EvenDivisionRhythmMaker(
         denominators=[8],
         ),
     )
@@ -281,8 +282,8 @@ segment_maker(
                 remainder=Left,
                 ),
             ),
-        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
-            burnish_specifier=abjad.rhythmmakertools.BurnishSpecifier(
+        rhythm_maker=rhythmos.NoteRhythmMaker(
+            burnish_specifier=rhythmos.BurnishSpecifier(
                 left_classes=[abjad.Rest],
                 left_counts=[1],
                 outer_divisions_only=True,
@@ -314,7 +315,7 @@ segment_maker.copy_rhythm(
 segment_maker(
     baca.scope('Viola Music Voice', 15, 16),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.EvenDivisionRhythmMaker(
+        rhythm_maker=rhythmos.EvenDivisionRhythmMaker(
             denominators=[4],
             extra_counts_per_division=[1, -1, 2, -2],
             ),
@@ -334,8 +335,8 @@ segment_maker(
     baca.instrument(krummzeit.instruments['piano']),
     baca.clef('bass'),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.IncisedRhythmMaker(
-            incise_specifier=abjad.rhythmmakertools.InciseSpecifier(
+        rhythm_maker=rhythmos.IncisedRhythmMaker(
+            incise_specifier=rhythmos.InciseSpecifier(
                 prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],
                 prefix_counts=[3, 1, 1, 3],
                 suffix_talea=[0, 0, 1, -3, 0],
@@ -363,8 +364,8 @@ segment_maker(
 segment_maker(
     baca.scope('Viola Music Voice', 17, 19),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
-            talea=abjad.rhythmmakertools.Talea(
+        rhythm_maker=rhythmos.TaleaRhythmMaker(
+            talea=rhythmos.Talea(
                 counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
                 denominator=16,
                 ),
@@ -390,14 +391,14 @@ segment_maker.copy_rhythm(
 segment_maker(
     baca.scope('Viola Music Voice', 20, 22),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
-            talea=abjad.rhythmmakertools.Talea(
+        rhythm_maker=rhythmos.TaleaRhythmMaker(
+            talea=rhythmos.Talea(
                 counts=[1, 1, 1, 1, 4, 4, 1, 1, 2, 2, 8, 4, 4, 1, 1, 2, 2],
                 denominator=16,
                 ),
             split_divisions_by_counts=[6, 18],
             extra_counts_per_division=[2, 2, 0, 2, 4, 6],
-            burnish_specifier=abjad.rhythmmakertools.BurnishSpecifier(
+            burnish_specifier=rhythmos.BurnishSpecifier(
                 left_classes=[abjad.Rest],
                 left_counts=[1],
                 ),
@@ -453,8 +454,8 @@ segment_maker(
                 remainder=Left,
                 ),
             ),
-        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
-            burnish_specifier=abjad.rhythmmakertools.BurnishSpecifier(
+        rhythm_maker=rhythmos.NoteRhythmMaker(
+            burnish_specifier=rhythmos.BurnishSpecifier(
                 outer_divisions_only=True,
                 left_classes=[abjad.Rest],
                 left_counts=[1],
@@ -469,9 +470,9 @@ segment_maker(
     baca.scope('Violin Music Voice', 23),
     baca.clef('percussion'),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
+        rhythm_maker=rhythmos.NoteRhythmMaker(
             division_masks=[abjad.Pattern(indices=[0])],
-            tie_specifier=abjad.rhythmmakertools.TieSpecifier(
+            tie_specifier=rhythmos.TieSpecifier(
                 tie_across_divisions=True,
                 ),
             ),

@@ -1,6 +1,7 @@
 import abjad
 import baca
 import krummzeit
+from abjad import rhythmmakertools as rhythmos
 
 
 ###############################################################################
@@ -75,8 +76,8 @@ segment_maker.validate_measures_per_stage()
 segment_maker(
     baca.scope('Oboe Music Voice', 1),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
-            talea=abjad.rhythmmakertools.Talea(
+        rhythm_maker=rhythmos.TaleaRhythmMaker(
+            talea=rhythmos.Talea(
                 counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
                 denominator=16,
                 ),
@@ -116,7 +117,7 @@ segment_maker(
                 durations=[(3, 8)],
                 ),
             ),
-        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(),
+        rhythm_maker=rhythmos.NoteRhythmMaker(),
         ),
     )
 
@@ -141,8 +142,8 @@ segment_maker(
     baca.scope('Violin Music Voice', 1, 17),
     baca.clef('percussion'),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
-            tie_specifier=abjad.rhythmmakertools.TieSpecifier(
+        rhythm_maker=rhythmos.NoteRhythmMaker(
+            tie_specifier=rhythmos.TieSpecifier(
                 tie_across_divisions=True,
                 ),
             ),
@@ -156,8 +157,8 @@ segment_maker(
     baca.scope('Percussion Music Voice', 18, 20),
     baca.clef('percussion'),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
-            tie_specifier=abjad.rhythmmakertools.TieSpecifier(
+        rhythm_maker=rhythmos.NoteRhythmMaker(
+            tie_specifier=rhythmos.TieSpecifier(
                 tie_across_divisions=True,
                 ),
             ),
@@ -170,15 +171,15 @@ segment_maker(
 segment_maker(
     baca.scope('Viola Music Voice', 3),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
+        rhythm_maker=rhythmos.TupletRhythmMaker(
             tuplet_ratios=[
                 (2, 1),
                 ],
-            tuplet_specifier=abjad.rhythmmakertools.TupletSpecifier(
+            tuplet_specifier=rhythmos.TupletSpecifier(
                 avoid_dots=True,
                 is_diminution=False,
                 ),
-            tie_specifier=abjad.rhythmmakertools.TieSpecifier(
+            tie_specifier=rhythmos.TieSpecifier(
                 tie_across_divisions=True,
                 ),
             ),
@@ -254,12 +255,12 @@ segment_maker(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(1, 2)],
             ),
-        rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
+        rhythm_maker=rhythmos.TupletRhythmMaker(
             tuplet_ratios=[
                 (-1, 1, 1, 2),
                 (-1, 1, 1, -2, 2),
                 ],
-            tuplet_specifier=abjad.rhythmmakertools.TupletSpecifier(
+            tuplet_specifier=rhythmos.TupletSpecifier(
                 avoid_dots=True,
                 ),
             ),
@@ -351,8 +352,8 @@ segment_maker(
     baca.scope('Percussion Music Voice', 27, 30),
     baca.clef('percussion'),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
-            tie_specifier=abjad.rhythmmakertools.TieSpecifier(
+        rhythm_maker=rhythmos.NoteRhythmMaker(
+            tie_specifier=rhythmos.TieSpecifier(
                 tie_across_divisions=True,
                 ),
             ),
@@ -368,8 +369,8 @@ segment_maker(
     baca.clef('treble'),
     baca.five_line_staff(),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
-            talea=abjad.rhythmmakertools.Talea(
+        rhythm_maker=rhythmos.TaleaRhythmMaker(
+            talea=rhythmos.Talea(
                 counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
                 denominator=16,
                 ),
@@ -390,7 +391,7 @@ segment_maker(
                 durations=[(1, 1), (2, 1), (3, 2)],
                 ),
             ),
-        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker()
+        rhythm_maker=rhythmos.NoteRhythmMaker()
         ),
     )
 

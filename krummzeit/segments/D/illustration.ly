@@ -1872,42 +1872,42 @@
                         d'4 \glissando
                         f'8 \glissando
                         c'4 \glissando
-                        e'4 \glissando
-                        b'4 \glissando
-                        d'4 \glissando
-                        bf'4 \glissando
-                        ef'8 \glissando
-                        a'4 \glissando
                         cs'4 \glissando
-                        c'4 \glissando
+                        d'4 \glissando
+                        b'4 \glissando
                         a'4 \glissando
                         b'8 \glissando
-                        fs'4 \glissando
+                        a'4 \glissando
+                        ef'4 \glissando
                         f'4 \glissando
-                        g'4 \glissando
-                        cs'4 \glissando
+                        c'4 \glissando
                         a'8 \glissando
-                        b'4 \glissando
                         ef'4 \glissando
-                        cs'8 \glissando
-                        e'4 \glissando
                         f'4 \glissando
-                        fs'4 \glissando
-                        g'8 \glissando
-                        c'4 \glissando
-                        d'4 \glissando
-                        ef'4 \glissando
-                        cs'4 \glissando
-                        b'4 \glissando
-                        c'4
                         c'4 \glissando
                         cs'4 \glissando
-                        e'4 \glissando
+                        c'8 \glissando
                         f'4 \glissando
-                        fs'4 \glissando
                         g'4 \glissando
+                        d'8 \glissando
+                        cs'4 \glissando
+                        ef'4 \glissando
+                        a'4 \glissando
+                        b'8 \glissando
                         c'4 \glissando
-                        d'4
+                        ef'4 \glissando
+                        b'4 \glissando
+                        fs'4 \glissando
+                        bf'4 \glissando
+                        c'4 \glissando
+                        e'4 \glissando
+                        fs'4 \glissando
+                        b'4 \glissando
+                        fs'4
+                        fs'4 \glissando
+                        c'4 \glissando
+                        e'4 \glissando
+                        cs'4
                         \times 2/3 {
                             \override TextSpanner.bound-details.left-broken.text = #'#f
                             \override TextSpanner.bound-details.left.padding = #-1
@@ -2198,22 +2198,22 @@
                         b4 \glissando
                         ef4 \glissando
                         fs8 \glissando
-                        cs4
                         cs4 \glissando
-                        c4 \glissando
-                        ef4 \glissando
                         b4 \glissando
-                        fs8 \glissando
+                        ef4
+                        ef4
                         ef4 \glissando
-                        b4 \glissando
-                        d4 \glissando
+                        c8 \glissando
                         bf4 \glissando
-                        ef8 \glissando
-                        e4 \glissando
+                        fs4
                         fs4 \glissando
-                        c4 \glissando
+                        cs4 \glissando
+                        bf8 \glissando
+                        cs4 \glissando
                         fs4 \glissando
-                        bf8
+                        d4 \glissando
+                        b4 \glissando
+                        cs8
                         {
                             \clef "treble"
                             \override NoteHead.style = #'harmonic
@@ -2570,8 +2570,44 @@
                         e,4 \glissando
                         c,4 \glissando
                         cs,4 \glissando
-                        g,8
-                        s1 * 69/8
+                        g,8 \glissando
+                        e,4 \glissando
+                        c,4 \glissando
+                        bf,4 \glissando
+                        fs,4 \glissando
+                        cs,4 \glissando
+                        d,8 \glissando
+                        b,4 \glissando
+                        e,4 \glissando
+                        g,4 \glissando
+                        fs,4 \glissando
+                        b,8 \glissando
+                        e,4 \glissando
+                        g,4 \glissando
+                        ef,4 \glissando
+                        c,4 \glissando
+                        e,8 \glissando
+                        fs,4 \glissando
+                        c,4 \glissando
+                        ef,8 \glissando
+                        b,4 \glissando
+                        fs,4 \glissando
+                        bf,4 \glissando
+                        b,8 \glissando
+                        d,4 \glissando
+                        cs,4 \glissando
+                        ef,4 \glissando
+                        a,4 \glissando
+                        g,4 \glissando
+                        cs,4 \glissando
+                        f,4 \glissando
+                        bf,4 \glissando
+                        ef,4 \glissando
+                        a,4 \glissando
+                        g,4 \glissando
+                        cs,4 \glissando
+                        f,4 \glissando
+                        b,4
                         \override TextSpanner.bound-details.left-broken.text = #'#f
                         \override TextSpanner.bound-details.left.padding = #-1
                         \override TextSpanner.bound-details.left.stencil-align-dir-y = #0

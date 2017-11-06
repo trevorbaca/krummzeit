@@ -87,7 +87,7 @@ segment_maker(
 
 segment_maker.copy_rhythm(
     baca.scope('Violin Music Voice', 1),
-    baca.scope('Cello Music Voice', 1),
+    baca.scope('Cello Music Voice', 1, 5),
     )
 
 segment_maker.copy_rhythm(

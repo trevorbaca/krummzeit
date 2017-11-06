@@ -1,6 +1,7 @@
 import abjad
 import baca
 import krummzeit
+from abjad import rhythmmakertools as rhythmos
 
 
 ###############################################################################
@@ -8,11 +9,11 @@ import krummzeit
 ###############################################################################
 
 stage_measure_map = baca.StageMeasureMap([
-    3, 2, 2,        # stages 1-3
-    3, 3, 3, 8,     # stages 4-7
-    2,              # stage 8
-    8,              # stage 9
-    4, 4, 2, 4,     # stages 10-13
+    3, 2, 2,        # 1-3
+    3, 3, 3, 8,     # 4-7
+    2,              # 8
+    8,              # 9
+    4, 4, 2, 4,     # 10-13
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
@@ -35,7 +36,7 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=krummzeit.instruments,
-    label_stages=False,
+    label_stages=True,
     measures_per_stage=measures_per_stage,
     metronome_marks=krummzeit.metronome_marks,
     score_template=krummzeit.ScoreTemplate(),
@@ -58,8 +59,8 @@ segment_maker(
     baca.scope('Percussion Music Voice', 1),
     baca.clef('percussion'),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.IncisedRhythmMaker(
-            incise_specifier=abjad.rhythmmakertools.InciseSpecifier(
+        rhythm_maker=rhythmos.IncisedRhythmMaker(
+            incise_specifier=rhythmos.InciseSpecifier(
                 prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],
                 prefix_counts=[3, 1, 1, 3],
                 suffix_talea=[0, 0, 1, -3, 0],
@@ -80,7 +81,7 @@ segment_maker(
         division_maker=baca.SplitByDurationsDivisionCallback(
             durations=[(1, 4)],
             ),
-        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(),
+        rhythm_maker=rhythmos.NoteRhythmMaker(),
         ),
     )
 
@@ -100,8 +101,8 @@ segment_maker(
     baca.scope('Percussion Music Voice', 3, 6),
     baca.clef('percussion'),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.TaleaRhythmMaker(
-            talea=abjad.rhythmmakertools.Talea([1, 2], 2),
+        rhythm_maker=rhythmos.TaleaRhythmMaker(
+            talea=rhythmos.Talea([1, 2], 2),
             extra_counts_per_division=[2, 1, 0],
             ),
         ),
@@ -120,7 +121,7 @@ segment_maker(
                 (1, 1, 1),
                 ],
             ),
-        rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
+        rhythm_maker=rhythmos.TupletRhythmMaker(
             tuplet_ratios=[
                 (1, 2),
                 (1, 4),
@@ -193,12 +194,12 @@ segment_maker(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(1, 2), (2, 1)],
             ),
-        rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
+        rhythm_maker=rhythmos.TupletRhythmMaker(
             tuplet_ratios=[
                 (-1, 1, 1, 2),
                 (-1, 1, 1, -2, 2),
                 ],
-            tuplet_specifier=abjad.rhythmmakertools.TupletSpecifier(
+            tuplet_specifier=rhythmos.TupletSpecifier(
                 avoid_dots=True,
                 ),
             ),
@@ -237,7 +238,7 @@ segment_maker.copy_rhythm(
 segment_maker(
     baca.scope('Oboe Music Voice', 5, 7),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.TupletRhythmMaker(
+        rhythm_maker=rhythmos.TupletRhythmMaker(
             tuplet_ratios=[
                 (-2, 4, 1, 1, 12),
                 (3, 2),
@@ -248,10 +249,10 @@ segment_maker(
                 (7, 1, 3),
                 (3, -2),
                 ],
-            tie_specifier=abjad.rhythmmakertools.TieSpecifier(
+            tie_specifier=rhythmos.TieSpecifier(
                 tie_across_divisions=True,
                 ),
-            tuplet_specifier=abjad.rhythmmakertools.TupletSpecifier(
+            tuplet_specifier=rhythmos.TupletSpecifier(
                 avoid_dots=True,
                 ),
             ),
@@ -294,8 +295,8 @@ segment_maker.copy_rhythm(
 segment_maker(
     baca.scope('Violin Music Voice', 11),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.IncisedRhythmMaker(
-            incise_specifier=abjad.rhythmmakertools.InciseSpecifier(
+        rhythm_maker=rhythmos.IncisedRhythmMaker(
+            incise_specifier=rhythmos.InciseSpecifier(
                 prefix_talea=[-2, 2, -2, 2, -2, 2, 0],
                 prefix_counts=[2, 2, 2, 1],
                 suffix_talea=[0, 2, -2, 0, 2, -2],
@@ -321,8 +322,8 @@ segment_maker.copy_rhythm(
 segment_maker(
     baca.scope('Violin Music Voice', 13),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.IncisedRhythmMaker(
-            incise_specifier=abjad.rhythmmakertools.InciseSpecifier(
+        rhythm_maker=rhythmos.IncisedRhythmMaker(
+            incise_specifier=rhythmos.InciseSpecifier(
                 prefix_talea=[-2, 2, 3, -2, 3, -2, 2],
                 prefix_counts=[3, 2, 2],
                 suffix_talea=[2, -2, 3, -1, 0, 2, -2],
@@ -330,7 +331,7 @@ segment_maker(
                 talea_denominator=16,
                 fill_with_notes=False,
                 ),
-            beam_specifier=abjad.rhythmmakertools.BeamSpecifier(
+            beam_specifier=rhythmos.BeamSpecifier(
                 beam_each_division=False,
                 ),
             ),
@@ -362,10 +363,10 @@ segment_maker(
 segment_maker.copy_rhythm(
     baca.scope('Viola Music Voice', 4),
     baca.scope('Piano Music Voice', 4),
-    rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
+    rhythm_maker=rhythmos.NoteRhythmMaker(
         division_masks=[
             abjad.Pattern(indices=[5, 6], period=7)],
-        tie_specifier=abjad.rhythmmakertools.TieSpecifier(
+        tie_specifier=rhythmos.TieSpecifier(
             tie_across_divisions=[0, 1],
             ),
         ),
@@ -379,9 +380,9 @@ segment_maker(
 segment_maker.copy_rhythm(
     baca.scope('Viola Music Voice', 5),
     baca.scope('Piano Music Voice', 5),
-    rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
+    rhythm_maker=rhythmos.NoteRhythmMaker(
         division_masks=[abjad.Pattern(indices=[0])],
-        tie_specifier=abjad.rhythmmakertools.TieSpecifier(
+        tie_specifier=rhythmos.TieSpecifier(
             tie_across_divisions=[0, 1],
             ),
         ),
@@ -390,7 +391,7 @@ segment_maker.copy_rhythm(
 segment_maker.copy_rhythm(
     baca.scope('Viola Music Voice', 9),
     baca.scope('Piano Music Voice', 9),
-    rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker()
+    rhythm_maker=rhythmos.NoteRhythmMaker()
     )
 
 ###############################################################################
@@ -402,27 +403,30 @@ segment_maker.copy_rhythm(
 segment_maker(
     baca.scope('Percussion Music Voice', 1, 2),
     baca.reiterated_dynamic('pp'),
+    baca.staff_positions([0]),
     )
 
+pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
+pcs = pcs.rotate(-241).retrograde().transpose(7)
 segment_maker(
     baca.compound([
         baca.scope('Violin Music Voice', 1, 5),
         baca.scope('Viola Music Voice', 1, 3),
         baca.scope('Cello Music Voice', 1, 5),
         ]),
-    baca.ScorePitchCommand(
-        operators=[abjad.Transposition(n=7)],
-        reverse=True,
-        source=krummzeit.violet_pitch_classes.get_payload(),
-        start_index=240,
-        ),
+#    baca.ScorePitchCommand(
+#        operators=[abjad.Transposition(n=7)],
+#        reverse=True,
+#        source=krummzeit.violet_pitch_classes.get_payload(),
+#        start_index=240,
+#        ),
+    baca.pitches(pcs)
     )
 
 segment_maker(
     baca.scope('Violin Music Voice', 1, 5),
     baca.glissando(),
     baca.effort_dynamic('mp'),
-    #narrow_fourth_octave,
     krummzeit.register_narrow(4),
     krummzeit.markup.on_bridge_slow(),
     )
@@ -431,7 +435,6 @@ segment_maker(
     baca.scope('Viola Music Voice', 1, 3),
     baca.glissando(),
     baca.effort_dynamic('mp'),
-    #narrow_third_octave,
     krummzeit.register_narrow(3),
     krummzeit.markup.on_bridge_slow(),
     )
@@ -440,7 +443,6 @@ segment_maker(
     baca.scope('Cello Music Voice', 1, 5),
     baca.map(baca.glissando(), baca.runs()),
     baca.effort_dynamic('mp'),
-    #narrow_second_octave,
     krummzeit.register_narrow(2),
     krummzeit.markup.on_bridge_slow(),
     )
@@ -452,6 +454,7 @@ segment_maker(
     baca.accents(),
     baca.effort_dynamic('ff'),
     baca.markup.accent_changes_of_direction(),
+    baca.staff_positions([0]),
     )
 
 segment_maker(
@@ -475,7 +478,6 @@ segment_maker(
         baca.scope('Cello Music Voice', 6, 9),
         ],
     baca.map(baca.glissando(), baca.runs()),
-    #narrow_fifth_octave,
     krummzeit.register_narrow(5),
     baca.natural_harmonics(),
     )
@@ -623,12 +625,13 @@ segment_maker(
     baca.clef('percussion'),
     baca.one_line_staff(),
     baca.RhythmBuilder(
-        rhythm_maker=abjad.rhythmmakertools.NoteRhythmMaker(
-            tie_specifier=abjad.rhythmmakertools.TieSpecifier(
+        rhythm_maker=rhythmos.NoteRhythmMaker(
+            tie_specifier=rhythmos.TieSpecifier(
                 tie_across_divisions=True,
                 ),
             ),
         ),
+    baca.staff_positions([0]),
     krummzeit.markup.suspended_cymbal(),
     )
 

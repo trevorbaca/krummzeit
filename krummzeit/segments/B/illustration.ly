@@ -586,7 +586,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             c''8
-                            b'4. ~ \stopTrillSpan \startTrillSpan
+                            b''4. ~ \stopTrillSpan \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -596,7 +596,7 @@
                                     }
                         }
                         {
-                            b'8
+                            b''8
                             ef''4 \stopTrillSpan \startTrillSpan
                             ef''4 \stopTrillSpan \startTrillSpan
                                 ^ \markup {
@@ -617,7 +617,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            ef''16 [
+                            ef'''16 [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -625,8 +625,8 @@
                                             \finger
                                                 1
                                     }
-                            f'16 ]
-                            e'4. ~ \startTrillSpan
+                            f'''16 ]
+                            e'''4. ~ \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -636,8 +636,8 @@
                                     }
                         }
                         {
-                            e'8 [
-                            d''8 ~ ] \stopTrillSpan \startTrillSpan
+                            e'''8 [
+                            d'''8 ~ ] \stopTrillSpan \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -648,7 +648,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/8 {
-                            d''4.
+                            d'''4.
                             cs''2 \stopTrillSpan \startTrillSpan
                                 ^ \markup {
                                     \override
@@ -680,7 +680,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             cs''8
-                            b'4. ~ \stopTrillSpan \startTrillSpan
+                            b''4. ~ \stopTrillSpan \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -690,13 +690,13 @@
                                     }
                         }
                         {
-                            b'8
-                            b'4 \stopTrillSpan \startTrillSpan
+                            b''8
+                            b''4 \stopTrillSpan \startTrillSpan
                         }
                         s1 * 1/4 \stopTrillSpan
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            b'8
+                            b''8
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -704,7 +704,7 @@
                                             \finger
                                                 1
                                     }
-                            b'4 \startTrillSpan
+                            b''4 \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -712,7 +712,7 @@
                                             \finger
                                                 2
                                     }
-                            bf'8 ~ \stopTrillSpan \startTrillSpan
+                            bf''8 ~ \stopTrillSpan \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -722,13 +722,13 @@
                                     }
                         }
                         {
-                            bf'8
+                            bf''8
                         }
                         s1 * 95/8 \stopTrillSpan
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             a''8 \ff
-                            e'4 \startTrillSpan
+                            e'''4 \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -736,7 +736,7 @@
                                             \finger
                                                 1
                                     }
-                            ef''8 ~ \stopTrillSpan \startTrillSpan
+                            ef'''8 ~ \stopTrillSpan \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -747,8 +747,8 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            ef''8
-                            c''2 \stopTrillSpan \startTrillSpan
+                            ef'''8
+                            c'''2 \stopTrillSpan \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -840,7 +840,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            d''2 \stopTrillSpan \startTrillSpan
+                            d'''2 \stopTrillSpan \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -850,11 +850,11 @@
                                     }
                         }
                         {
-                            d''4 \stopTrillSpan \startTrillSpan
+                            d'''4 \stopTrillSpan \startTrillSpan
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            d''4 \stopTrillSpan \startTrillSpan
+                            d'''4 \stopTrillSpan \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -870,7 +870,7 @@
                                             \finger
                                                 2
                                     }
-                            fs'16
+                            fs''16
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -891,7 +891,7 @@
                         s1 * 1/4 \stopTrillSpan
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            bf'8
+                            bf''8
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -899,7 +899,7 @@
                                             \finger
                                                 2
                                     }
-                            bf'4 \startTrillSpan
+                            bf''4 \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -907,12 +907,12 @@
                                             \finger
                                                 1
                                     }
-                            bf'8 ~ \stopTrillSpan \startTrillSpan
+                            bf''8 ~ \stopTrillSpan \startTrillSpan
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            bf'8
-                            bf'4. \stopTrillSpan \startTrillSpan
+                            bf''8
+                            bf''4. \stopTrillSpan \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -924,7 +924,7 @@
                         s1 * 1/4 \stopTrillSpan
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            d''8
+                            d'''8
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -932,7 +932,7 @@
                                             \finger
                                                 2
                                     }
-                            cs''4 \startTrillSpan
+                            cs'''4 \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -940,12 +940,12 @@
                                             \finger
                                                 1
                                     }
-                            ef''8 ~ \stopTrillSpan \startTrillSpan
+                            ef'''8 ~ \stopTrillSpan \startTrillSpan
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
-                            ef''8
-                            f'2 \stopTrillSpan \startTrillSpan
+                            ef'''8
+                            f'''2 \stopTrillSpan \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -953,7 +953,7 @@
                                             \finger
                                                 1
                                     }
-                            f'4 \stopTrillSpan \startTrillSpan
+                            f'''4 \stopTrillSpan \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -961,7 +961,7 @@
                                             \finger
                                                 2
                                     }
-                            f'8 ~ \stopTrillSpan \startTrillSpan
+                            f'''8 ~ \stopTrillSpan \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -971,7 +971,7 @@
                                     }
                         }
                         {
-                            f'8 [
+                            f'''8 [
                             f'8 ] \stopTrillSpan
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -1004,7 +1004,7 @@
                         \times 4/5 {
                             e'8
                             e'2 \stopTrillSpan \startTrillSpan
-                            bf'2 \stopTrillSpan \startTrillSpan
+                            bf''2 \stopTrillSpan \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1012,7 +1012,7 @@
                                             \finger
                                                 1
                                     }
-                            g'8 \stopTrillSpan
+                            g''8 \stopTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1022,7 +1022,7 @@
                                     }
                         }
                         {
-                            fs'8 ~ \startTrillSpan
+                            fs''8 ~ \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1033,7 +1033,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            fs'8
+                            fs''8
                             f'4 \stopTrillSpan \startTrillSpan
                             cs''8 ~ \stopTrillSpan \startTrillSpan
                                 ^ \markup {
@@ -1056,7 +1056,7 @@
                                             \finger
                                                 2
                                     }
-                            cs''4 \stopTrillSpan \startTrillSpan
+                            cs'''4 \stopTrillSpan \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1064,7 +1064,7 @@
                                             \finger
                                                 1
                                     }
-                            cs''8 \stopTrillSpan
+                            cs'''8 \stopTrillSpan
                         }
                         s1 * 35/4
                         \bar "|"
@@ -1810,12 +1810,12 @@
                             \override TupletBracket.staff-padding = #4
                             af''8 \ff
                             a''4 \startTrillSpan
-                            c'''8 ~ \stopTrillSpan \startTrillSpan
+                            c''8 ~ \stopTrillSpan \startTrillSpan
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
-                            c'''8
-                            cs'''2 \stopTrillSpan \startTrillSpan
+                            c''8
+                            cs''2 \stopTrillSpan \startTrillSpan
                             a''8 ~ \stopTrillSpan \startTrillSpan
                         }
                         {
@@ -1843,11 +1843,11 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             bqf''4 \stopTrillSpan \startTrillSpan
-                            cs'''4 ~ \stopTrillSpan \startTrillSpan
+                            cs''4 ~ \stopTrillSpan \startTrillSpan
                         }
                         {
-                            cs'''4
-                            cqs'''4 \stopTrillSpan \startTrillSpan
+                            cs''4
+                            cqs''4 \stopTrillSpan \startTrillSpan
                             cs'''8 ~ \stopTrillSpan \startTrillSpan
                         }
                         \times 4/5 {

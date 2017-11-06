@@ -2442,6 +2442,7 @@
                         r4.
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            \clef "treble"
                             \override Beam.positions = #'(-5 . -5)
                             \override DynamicLineSpanner.staff-padding = #'7
                             \override TupletBracket.staff-padding = #4
@@ -2461,7 +2462,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             r4
-                            c'''16 -\staccatissimo [
+                            c''16 -\staccatissimo [
                             a''16 -\staccatissimo
                             f''8 -\staccatissimo
                             a''8 -\staccatissimo ]
@@ -2485,7 +2486,7 @@
                             r8
                             cs''4 -\staccatissimo
                             b''16 -\staccatissimo [
-                            c'''16 -\staccatissimo ]
+                            c''16 -\staccatissimo ]
                         }
                         r4
                         \times 2/3 {
@@ -2496,7 +2497,7 @@
                             g''4 -\staccatissimo
                             a''4 -\staccatissimo
                             ef''16 -\staccatissimo [
-                            c'''16 -\staccatissimo
+                            c''16 -\staccatissimo
                             a''8 -\staccatissimo
                             f''8 -\staccatissimo ]
                         }
@@ -3674,7 +3675,7 @@
                         {
                             ef''8
                             g''4 -\staccatissimo
-                            c'''4 -\staccatissimo
+                            c''4 -\staccatissimo
                             ef''8 -\staccatissimo
                         }
                         r4
@@ -3683,7 +3684,7 @@
                         {
                             r16
                             bf''16 -\staccatissimo [
-                            c'''16 -\staccatissimo
+                            c''16 -\staccatissimo
                             af''16 -\staccatissimo
                             f''8 -\staccatissimo ]
                         }
@@ -3691,7 +3692,7 @@
                             r8
                             bf''4 -\staccatissimo
                             a''16 -\staccatissimo [
-                            c'''16 -\staccatissimo
+                            c''16 -\staccatissimo
                             b''8 -\staccatissimo
                             g''8 -\staccatissimo ]
                         }
@@ -4364,7 +4365,7 @@
                                         \upright
                                             pizz.
                                     }
-                            c'''4 -\staccatissimo
+                            c''4 -\staccatissimo
                             b''8 -\staccatissimo ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -4372,7 +4373,7 @@
                             b''8
                             g''2 -\staccatissimo
                             e''4 -\staccatissimo
-                            c'''4 -\staccatissimo
+                            c''4 -\staccatissimo
                             g''8 -\staccatissimo
                         }
                         r4.
@@ -4385,11 +4386,11 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             f''8
-                            c'''4. -\staccatissimo ~
+                            c''4. -\staccatissimo ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            c'''8
+                            c''8
                             f''4 -\staccatissimo
                             af''4 -\staccatissimo
                             f''8 -\staccatissimo [

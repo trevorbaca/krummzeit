@@ -414,6 +414,8 @@ segment_maker.copy_rhythm(
 
 ### (6.1) [B1] ob, cl, va, vc ###
 
+#pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
+#pcs = pcs.rotate(-121).retrograde().transpose(3).invert()
 segment_maker(
     baca.scope('Oboe Music Voice', 1, 27),
     baca.ScorePitchCommand(

@@ -46,7 +46,7 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=krummzeit.instruments,
-    label_stages=False,
+    label_stages=True,
     measures_per_stage=measures_per_stage,
     metronome_marks=krummzeit.metronome_marks,
     score_template=krummzeit.ScoreTemplate(),
@@ -93,7 +93,7 @@ segment_maker.copy_rhythm(
 
 segment_maker.copy_rhythm(
     baca.scope('Cello Music Voice', 1),
-    baca.scope('Viola Music Voice', 1),
+    baca.scope('Viola Music Voice', 1, 4),
     rhythm_maker__tuplet_ratios=[(1, 4)],
     )
 
@@ -167,14 +167,22 @@ segment_maker(
 
 segment_maker(
     baca.scope('Percussion Music Voice', 1),
-    baca.clef('percussion'),
     baca.RhythmBuilder(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
-            talea=rhythmos.Talea([1, 2], 2),
             extra_counts_per_division=[2, 1, 0],
+            talea=rhythmos.Talea([1, 2], 2),
+            tie_specifier=rhythmos.TieSpecifier(repeat_ties=True),
             ),
         ),
+    baca.accents(),
     krummzeit.markup.sponges(),
+    )
+
+segment_maker(
+    baca.scope('Percussion Music Voice', 1, 23),
+    baca.clef('percussion'),
+    baca.one_line_staff(),
+    baca.staff_positions([0]),
     )
 
 segment_maker.copy_rhythm(
@@ -294,7 +302,7 @@ segment_maker(
 
 segment_maker.copy_rhythm(
     baca.scope('Cello Music Voice', 12),
-    baca.scope('Viola Music Voice', 12),
+    baca.scope('Viola Music Voice', 12, 14),
     )
 
 segment_maker.copy_rhythm(
@@ -309,7 +317,7 @@ segment_maker.copy_rhythm(
     baca.scope('Violin Music Voice', 14),
     baca.scope('Violin Music Voice', 15, 18),
     division_maker__secondary_division_maker__durations=[(2, 8)],
-    division_maker__secondary_division_maker__remainder=Right,
+    division_maker__secondary_division_maker__remainder=abjad.Right,
     )
 
 segment_maker(
@@ -409,14 +417,14 @@ segment_maker(
 
 segment_maker.copy_rhythm(
     baca.scope('Viola Music Voice', 20),
-    baca.scope('Cello Music Voice', 20),
+    baca.scope('Cello Music Voice', 20, 22),
     rhythm_maker__extra_counts_per_division=[4, 4, 2, 0, 2, 4],
     rhythm_maker__division_masks=[abjad.Pattern(indices=[0, 2], period=7)],
     )
 
 segment_maker.copy_rhythm(
     baca.scope('Viola Music Voice', 20),
-    baca.scope('Violin Music Voice', 20),
+    baca.scope('Violin Music Voice', 20, 22),
     rhythm_maker__extra_counts_per_division=[6, 0, 4, 4, 0, 2],
     rhythm_maker__division_masks=[abjad.Pattern(indices=[3, 6], period=8)],
     )
@@ -469,14 +477,10 @@ segment_maker(
 segment_maker(
     baca.scope('Violin Music Voice', 23),
     baca.clef('percussion'),
-    baca.RhythmBuilder(
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            division_masks=[abjad.Pattern(indices=[0])],
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=True,
-                ),
-            ),
-        ),
+    baca.one_line_staff(),
+    baca.repeat_ties_up(),
+    baca.staff_positions([0]),
+    baca.tied_notes(repeat_ties=True),
     krummzeit.markup.scraped_slate(),
     )
 

@@ -306,7 +306,15 @@
                 {
                     \time 3/4
                     \mark #1
-                    s1 * 3/4 ^ \markup {
+                    s1 * 3/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.1]
+                            }
+                        ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -333,10 +341,24 @@
                 {
                     \time 7/8
                     s1 * 7/8
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.2]
+                            }
                 }
                 {
                     \time 6/4
                     s1 * 3/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.3]
+                            }
                 }
                 {
                     \time 7/4
@@ -349,6 +371,13 @@
                 {
                     \time 7/4
                     s1 * 7/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.4]
+                            }
                 }
                 {
                     \time 11/8
@@ -365,6 +394,13 @@
                 {
                     \time 3/4
                     s1 * 3/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.5]
+                            }
                 }
                 {
                     s1 * 3/4
@@ -376,10 +412,24 @@
                 {
                     \time 7/8
                     s1 * 7/8
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.6]
+                            }
                 }
                 {
                     \time 6/4
                     s1 * 3/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.7]
+                            }
                 }
                 {
                     \time 7/4
@@ -392,6 +442,13 @@
                 {
                     \time 7/4
                     s1 * 7/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.8]
+                            }
                 }
                 {
                     \time 11/8
@@ -407,7 +464,15 @@
                 }
                 {
                     \time 6/4
-                    s1 * 3/2 ^ \markup {
+                    s1 * 3/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.9]
+                            }
+                        ^ \markup {
                         \smaller
                             \general-align
                                 #Y
@@ -533,6 +598,13 @@
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
                     s1 * 2 \startTextSpan
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.10]
+                            }
                 }
                 {
                     \time 3/4
@@ -545,6 +617,13 @@
                 {
                     \time 5/8
                     s1 * 5/8
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.11]
+                            }
                 }
                 {
                     \time 9/8
@@ -552,7 +631,15 @@
                 }
                 {
                     \time 5/4
-                    s1 * 5/4 \stopTextSpan ^ \markup {
+                    s1 * 5/4 \stopTextSpan
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.12]
+                            }
+                        ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -579,14 +666,36 @@
                 }
                 {
                     s1 * 3/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.13]
+                            }
                 }
                 {
                     \time 9/8
                     s1 * 9/8
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.14]
+                            }
                 }
                 {
                     \time 7/8
-                    s1 * 7/8 ^ \markup {
+                    s1 * 7/8
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.15]
+                            }
+                        ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -716,6 +825,13 @@
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
                     s1 * 5/8 \startTextSpan
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.16]
+                            }
                 }
                 {
                     \time 4/4
@@ -727,7 +843,15 @@
                 }
                 {
                     \time 7/4
-                    s1 * 7/4 \stopTextSpan ^ \markup {
+                    s1 * 7/4 \stopTextSpan
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.17]
+                            }
+                        ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -758,6 +882,13 @@
                 {
                     \time 8/4
                     s1 * 2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.18]
+                            }
                 }
                 {
                     \time 4/4
@@ -766,6 +897,13 @@
                 {
                     \time 3/4
                     s1 * 3/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.19]
+                            }
                 }
                 {
                     \time 4/4
@@ -777,7 +915,15 @@
                 }
                 {
                     \time 9/8
-                    s1 * 9/8 ^ \markup {
+                    s1 * 9/8
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.20]
+                            }
+                        ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -881,6 +1027,13 @@
                 }
                 {
                     s1 * 3/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.21]
+                            }
                 }
                 {
                     s1 * 3/4
@@ -909,7 +1062,15 @@
                     s1 * 9/8
                 }
                 {
-                    s1 * 9/8 ^ \markup {
+                    s1 * 9/8
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.22]
+                            }
+                        ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -936,6 +1097,13 @@
                 }
                 {
                     s1 * 3/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [A.23]
+                            }
                 }
                 {
                     \time 4/4
@@ -2493,13 +2661,13 @@
                             r16
                             af''16 -\staccatissimo [
                             fs''16 -\staccatissimo
-                            f''16 -\staccatissimo ]
-                            g''4 -\staccatissimo
+                            g''16 -\staccatissimo ]
                             a''4 -\staccatissimo
-                            ef''16 -\staccatissimo [
-                            c''16 -\staccatissimo
-                            a''8 -\staccatissimo
-                            f''8 -\staccatissimo ]
+                            a''4 -\staccatissimo
+                            a''16 -\staccatissimo [
+                            af''16 -\staccatissimo
+                            f''8 -\staccatissimo
+                            g''8 -\staccatissimo ]
                         }
                         {
                             r8
@@ -2511,31 +2679,31 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/9 {
                             r8
-                            fs''16 -\staccatissimo [
-                            g''16 -\staccatissimo
-                            bf''8 -\staccatissimo
-                            g''8 -\staccatissimo
+                            bf''16 -\staccatissimo [
                             cs''16 -\staccatissimo
+                            c'''8 -\staccatissimo
+                            e''8 -\staccatissimo
                             c'''16 -\staccatissimo
-                            b''16 -\staccatissimo
-                            g''16 -\staccatissimo ]
-                            af''4 -\staccatissimo
-                            bf''8 -\staccatissimo
+                            bf''16 -\staccatissimo
+                            g''16 -\staccatissimo
+                            cs''16 -\staccatissimo ]
+                            e''4 -\staccatissimo
+                            a''8 -\staccatissimo
                         }
                         {
                             r8
-                            g''16 -\staccatissimo [
-                            fs''16 -\staccatissimo
-                            cs'''8 -\staccatissimo ]
+                            e''16 -\staccatissimo [
+                            ef''16 -\staccatissimo
+                            c'''8 -\staccatissimo ]
                         }
                         r1
                         r8
                         {
                             r8
-                            c'''16 -\staccatissimo [
-                            ef''16 -\staccatissimo
-                            c'''16 -\staccatissimo
-                            f''16 -\staccatissimo ]
+                            fs''16 -\staccatissimo [
+                            fs''16 -\staccatissimo
+                            f''16 -\staccatissimo
+                            fs''16 -\staccatissimo ]
                         }
                         {
                             r8
@@ -2543,122 +2711,122 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             r8
-                            b''4 -\staccatissimo
-                            f''16 -\staccatissimo [
-                            ef''16 -\staccatissimo
-                            c'''8 -\staccatissimo
-                            a''8 -\staccatissimo ]
-                            g''4 -\staccatissimo
+                            c'''4 -\staccatissimo
+                            c'''16 -\staccatissimo [
+                            c'''16 -\staccatissimo
+                            f''8 -\staccatissimo
+                            af''8 -\staccatissimo ]
+                            e''4 -\staccatissimo
                         }
                         r4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             r8
-                            a''4 -\staccatissimo
-                            f''16 -\staccatissimo [
-                            e''16 -\staccatissimo
-                            ef'''8 -\staccatissimo ]
+                            af''4 -\staccatissimo
+                            bf''16 -\staccatissimo [
+                            g''16 -\staccatissimo
+                            fs'''8 -\staccatissimo ]
                         }
                         {
                             r8
-                            c'''16 -\staccatissimo [
-                            fs'''16 -\staccatissimo
+                            cs'''16 -\staccatissimo [
+                            c'''16 -\staccatissimo
                             f''16 -\staccatissimo
                             g''16 -\staccatissimo ]
                             a''4 -\staccatissimo
-                            af''4 -\staccatissimo
-                            cs'''16 -\staccatissimo [
+                            g''4 -\staccatissimo
+                            e''16 -\staccatissimo [
                             c'''16 -\staccatissimo
-                            b''8 -\staccatissimo ]
+                            a''8 -\staccatissimo ]
                         }
                         r4.
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             r8
+                            f''4 -\staccatissimo
                             fs'''4 -\staccatissimo
-                            g'''4 -\staccatissimo
-                            a''16 -\staccatissimo [
-                            cs'''16 -\staccatissimo
-                            c'''8 -\staccatissimo
-                            b''8 -\staccatissimo ]
+                            f''16 -\staccatissimo [
+                            a''16 -\staccatissimo
+                            af''8 -\staccatissimo
+                            a''8 -\staccatissimo ]
                         }
                         {
                             r16
-                            g'''16 -\staccatissimo [
-                            a''16 -\staccatissimo
-                            e'''16 -\staccatissimo
+                            e'''16 -\staccatissimo [
+                            f''16 -\staccatissimo
+                            c'''16 -\staccatissimo
                             g'''8 -\staccatissimo ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             r8
-                            c'''4 -\staccatissimo
-                            c'''16 -\staccatissimo [
-                            a''16 -\staccatissimo
-                            f'''8 -\staccatissimo ]
+                            fs'''4 -\staccatissimo
+                            ef'''16 -\staccatissimo [
+                            f'''16 -\staccatissimo
+                            e'''8 -\staccatissimo ]
                         }
                         r4.
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
                             r4
-                            e'''4 -\staccatissimo
                             a''4 -\staccatissimo
+                            g'''4 -\staccatissimo
                         }
                         {
                             r16
-                            af'''16 -\staccatissimo
+                            a''16 -\staccatissimo
                         }
                         r4.
                         {
                             r16
                             g'''16 -\staccatissimo [
-                            ef'''8 -\staccatissimo ]
+                            af'''8 -\staccatissimo ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             \clef "treble"
                             r16
-                            a'''16 -\staccatissimo [
-                            f'''16 -\staccatissimo
-                            g'''16 -\staccatissimo ]
-                            a'''4 -\staccatissimo
-                            af'''8 -\staccatissimo
+                            bf''16 -\staccatissimo [
+                            g'''16 -\staccatissimo
+                            fs'''16 -\staccatissimo ]
+                            cs'''4 -\staccatissimo
+                            c'''8 -\staccatissimo
                         }
                         {
                             r8
-                            fs'''16 -\staccatissimo [
-                            f'''16 -\staccatissimo
-                            bf''8 -\staccatissimo ]
+                            b''16 -\staccatissimo [
+                            fs'''16 -\staccatissimo
+                            f'''8 -\staccatissimo ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             r8
                             g'''2 -\staccatissimo
-                            fs'''4 -\staccatissimo
+                            a'''4 -\staccatissimo
                         }
                         {
                             r4
                         }
                         {
                             r16
-                            cs'''16 -\staccatissimo
+                            af'''16 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/9 {
                             r8
-                            c'''8 -\staccatissimo [
-                            b''16 -\staccatissimo
-                            f'''16 -\staccatissimo
+                            b''8 -\staccatissimo [
+                            bf'''16 -\staccatissimo
                             g'''16 -\staccatissimo
-                            a'''16 -\staccatissimo ]
-                            af'''4 -\staccatissimo
-                            fs'''4 -\staccatissimo
-                            b'''16 -\staccatissimo [
-                            bf'''16 -\staccatissimo ]
+                            fs'''16 -\staccatissimo
+                            cs'''16 -\staccatissimo ]
+                            c'''4 -\staccatissimo
+                            a'''4 -\staccatissimo
+                            f'''16 -\staccatissimo [
+                            e'''16 -\staccatissimo ]
                         }
                         {
                             r8
-                            g'''8 -\staccatissimo
+                            ef'''8 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
@@ -2667,11 +2835,11 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
                             r4
-                            fs'''4 -\staccatissimo
-                            cs'''16 -\staccatissimo [
-                            c'''16 -\staccatissimo
-                            f'''8 -\staccatissimo
-                            e'''8 -\staccatissimo ]
+                            c'''4 -\staccatissimo
+                            c'''16 -\staccatissimo [
+                            b'''16 -\staccatissimo
+                            bf'''8 -\staccatissimo
+                            g'''8 -\staccatissimo ]
                             \bar "|"
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
@@ -2684,13 +2852,11 @@
                     \context PercussionMusicVoice = "Percussion Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             \clef "percussion"
-                            c'2
+                            c'2 -\accent
                                 ^ \markup {
                                     \whiteout
                                         \override
@@ -2698,381 +2864,115 @@
                                             \box
                                                 sponges
                                     }
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'2 ~
+                            c'2 -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'2
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'2
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'4 ~
+                            c'2 \repeatTie
+                            c'2 -\accent
+                            c'4 -\accent
                         }
                         {
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'2.
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'4.
+                            c'2. \repeatTie
+                            c'4. -\accent
                         }
                         s1 * 175/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
                             c'2
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
                             c'1
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
                             c'2
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'2 ~
+                            c'2
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
+                            c'2 \repeatTie
                             c'2
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'2
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'4 ~
+                            c'4
                         }
                         {
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'2.
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'4 ~
+                            c'2. \repeatTie
+                            c'4
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'4
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'2. ~
+                            c'4 \repeatTie
+                            c'2.
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/11 {
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'4
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
+                            c'4 \repeatTie
                             c'2
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'2 ~
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'8 ~
+                            c'2
+                            c'8 \repeatTie
                         }
                         {
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'4.
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
+                            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
+                            c'4. \repeatTie
                             c'2
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'8 ~
+                            c'8
                         }
                         \times 2/3 {
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'2..
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
+                            c'2.. \repeatTie
                             c'2
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
                             c'1
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
                             c'2
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'8 ~
+                            c'8
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'2..
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'4. ~
+                            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
+                            c'2.. \repeatTie
+                            c'4.
                         }
                         {
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'8
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'2.. ~
+                            c'8 \repeatTie
+                            c'2..
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/8 {
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'8
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
+                            c'8 \repeatTie
+                            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                             c'2
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'4. ~
+                            c'4.
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/13 {
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'2 ~
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'8
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
+                            c'2 \repeatTie
+                            c'8 \repeatTie
+                            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                             c'2
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'2 ~
+                            c'2
                         }
                         {
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
+                            c'2 \repeatTie
                             c'2
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'2
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'4 ~
+                            c'4
                         }
                         {
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'2 ~
+                            c'2 \repeatTie
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'4
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
+                            c'4 \repeatTie
                             c'2
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'2 ~
+                            c'2
                         }
                         {
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'2
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'4 ~
+                            c'2 \repeatTie
+                            c'4
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/17 {
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
-                            c'4
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
+                            c'4 \repeatTie
                             c'1
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
                             c'2
-                            \once \override Beam.color = #blue
-                            \once \override Dots.color = #blue
-                            \once \override Flag.color = #blue
-                            \once \override NoteHead.color = #blue
-                            \once \override Stem.color = #blue
                             c'4.
                         }
                         s1 * 8
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'5
                         r16
-                        \once \override Beam.color = #blue
-                        \once \override Dots.color = #blue
-                        \once \override Flag.color = #blue
-                        \once \override NoteHead.color = #blue
-                        \once \override Stem.color = #blue
                         c'16 -\p -\tenuto
                             ^ \markup {
                                 \whiteout
@@ -3085,108 +2985,55 @@
                         r4.
                         r1
                         r4
-                        \once \override Beam.color = #blue
-                        \once \override Dots.color = #blue
-                        \once \override Flag.color = #blue
-                        \once \override NoteHead.color = #blue
-                        \once \override Stem.color = #blue
                         c'16 -\p -\tenuto
                         r8.
                         r16
-                        \once \override Beam.color = #blue
-                        \once \override Dots.color = #blue
-                        \once \override Flag.color = #blue
-                        \once \override NoteHead.color = #blue
-                        \once \override Stem.color = #blue
                         c'16 -\p -\tenuto
                         r8
                         r1.
                         r16
-                        \once \override Beam.color = #blue
-                        \once \override Dots.color = #blue
-                        \once \override Flag.color = #blue
-                        \once \override NoteHead.color = #blue
-                        \once \override Stem.color = #blue
                         c'16 -\p -\tenuto
                         r8
                         r2.
                         r2..
                         r2
                         r8
-                        \once \override Beam.color = #blue
-                        \once \override Dots.color = #blue
-                        \once \override Flag.color = #blue
-                        \once \override NoteHead.color = #blue
-                        \once \override Stem.color = #blue
                         c'16 -\p -\tenuto
                         r8.
                         r16
-                        \once \override Beam.color = #blue
-                        \once \override Dots.color = #blue
-                        \once \override Flag.color = #blue
-                        \once \override NoteHead.color = #blue
-                        \once \override Stem.color = #blue
                         c'16 -\p -\tenuto
                         r8
                         r1..
                         r16
-                        \once \override Beam.color = #blue
-                        \once \override Dots.color = #blue
-                        \once \override Flag.color = #blue
-                        \once \override NoteHead.color = #blue
-                        \once \override Stem.color = #blue
                         c'16 -\p -\tenuto
                         r8
                         r2.
                         r2.
                         r2.
-                        \once \override Beam.color = #blue
-                        \once \override Dots.color = #blue
-                        \once \override Flag.color = #blue
-                        \once \override NoteHead.color = #blue
-                        \once \override Stem.color = #blue
                         c'16 -\p -\tenuto
                         r8.
                         r16
-                        \once \override Beam.color = #blue
-                        \once \override Dots.color = #blue
-                        \once \override Flag.color = #blue
-                        \once \override NoteHead.color = #blue
-                        \once \override Stem.color = #blue
                         c'16 -\p -\tenuto
                         r8
                         r4.
                         r16
-                        \once \override Beam.color = #blue
-                        \once \override Dots.color = #blue
-                        \once \override Flag.color = #blue
-                        \once \override NoteHead.color = #blue
-                        \once \override Stem.color = #blue
                         c'16 -\p -\tenuto
                         r8
                         r2..
                         r1
                         r4
                         r4
-                        \once \override Beam.color = #blue
-                        \once \override Dots.color = #blue
-                        \once \override Flag.color = #blue
-                        \once \override NoteHead.color = #blue
-                        \once \override Stem.color = #blue
                         c'16 -\p -\tenuto
                         r8.
                         r16
-                        \once \override Beam.color = #blue
-                        \once \override Dots.color = #blue
-                        \once \override Flag.color = #blue
-                        \once \override NoteHead.color = #blue
-                        \once \override Stem.color = #blue
                         c'16 -\p -\tenuto
                         r8
                         r2
                         \revert DynamicLineSpanner.staff-padding
                         s1 * 29/2
                         \bar "|"
+                        \stopStaff
+                        \startStaff
                     }
                 }
             >>
@@ -3573,85 +3420,85 @@
                             \revert TupletBracket.staff-padding
                         }
                         \override DynamicLineSpanner.staff-padding = #'3
-                        b''4. -\downbow \f \glissando
+                        g''4. -\downbow \f \glissando
                             ^ \markup {
                                 \whiteout
                                     \upright
                                         "OB + full bow strokes"
                                 }
-                        g''4. -\upbow \glissando
-                        e''4. -\downbow \glissando
-                        af''4 -\upbow \glissando
-                        f''4 -\downbow \glissando
-                        b''4 -\upbow \glissando
+                        fs''4. -\upbow \glissando
+                        a''4. -\downbow \glissando
+                        c''4 -\upbow \glissando
                         e''4 -\downbow \glissando
                         b''4 -\upbow \glissando
-                        fs''4 -\downbow \glissando
-                        b''4 -\upbow \glissando
-                        e''4 -\downbow \glissando
+                        a''4 -\downbow \glissando
+                        c''4 -\upbow \glissando
+                        af''4 -\downbow \glissando
                         g''4 -\upbow \glissando
-                        ef''4 -\downbow \glissando
-                        af''4 -\upbow
-                        af''4 -\downbow \glissando
-                        e''4 -\upbow \glissando
-                        bf''4 -\downbow \glissando
+                        e''4 -\downbow \glissando
+                        d''4 -\upbow \glissando
+                        fs''4 -\downbow \glissando
                         f''4 -\upbow \glissando
-                        af''4 -\downbow \glissando
-                        f''4 -\upbow \glissando
-                        bf'4 -\downbow \glissando
-                        e''4 -\upbow \glissando
-                        d''4 -\downbow \glissando
-                        fs''4 -\upbow \glissando
-                        bf'4 -\downbow \glissando
-                        af''4 -\upbow \glissando
-                        d''4 -\downbow \glissando
-                        e''4 -\upbow \glissando
-                        af''4 -\downbow \glissando
-                        e''4 -\upbow \glissando
-                        g''4 -\downbow \glissando
+                        b'4 -\downbow \glissando
                         fs''4 -\upbow
                         fs''4 -\downbow \glissando
-                        b'4 -\upbow \glissando
-                        g''4 -\downbow \glissando
+                        f''4 -\upbow \glissando
+                        b'4 -\downbow \glissando
+                        fs''4 -\upbow \glissando
+                        d''4 -\downbow \glissando
+                        fs''4 -\upbow \glissando
+                        c''4 -\downbow \glissando
+                        a''4 -\upbow \glissando
+                        d''4 -\downbow \glissando
+                        f''4 -\upbow \glissando
+                        af''4 -\downbow
+                        af''4 -\upbow \glissando
+                        ef''4 -\downbow \glissando
                         e''4 -\upbow \glissando
                         a'4 -\downbow \glissando
                         c''4 -\upbow \glissando
-                        b'4 -\downbow \glissando
-                        ef''4 -\upbow \glissando
-                        fs''4 -\downbow \glissando
-                        ef''4 -\upbow \glissando
                         af'4 -\downbow \glissando
-                        g'4 -\upbow \glissando
-                        e'4 -\downbow \glissando
-                        ef'4 -\upbow \glissando
+                        e''4 -\upbow \glissando
+                        a'4 -\downbow \glissando
+                        f'4 -\upbow \glissando
+                        d''4 -\downbow \glissando
+                        e'4 -\upbow \glissando
+                        bf'4 -\downbow \glissando
+                        f'4 -\upbow \glissando
+                        b'4 -\downbow \glissando
+                        fs''4 -\upbow \glissando
+                        f'4 -\downbow \glissando
+                        d''4 -\upbow \glissando
                         af'4 -\downbow \glissando
                         fs'4 -\upbow \glissando
-                        g'4 -\downbow \glissando
+                        f'4 -\downbow \glissando
                         b'4 -\upbow \glissando
                         a'4 -\downbow \glissando
                         f'4 -\upbow \glissando
-                        e'4 -\downbow \glissando
-                        af'4 -\upbow \glissando
-                        f'4 -\downbow \glissando
-                        b'4 -\upbow \glissando
-                        a'4 -\downbow \glissando
-                        af'4 -\upbow \glissando
-                        ef'4 -\downbow \glissando
-                        b'4 -\upbow \glissando
-                        f'4 -\downbow \glissando
-                        c'4 -\upbow \glissando
-                        b'4 -\downbow \glissando
+                        fs'4 -\downbow \glissando
+                        g'4 -\upbow \glissando
+                        c''4 -\downbow \glissando
                         bf'4 -\upbow \glissando
-                        a'4 -\downbow \glissando
+                        fs'4 -\downbow \glissando
+                        e'4 -\upbow \glissando
+                        d'4 -\downbow \glissando
+                        fs'4 -\upbow \glissando
+                        c''4 -\downbow \glissando
+                        bf'4 -\upbow \glissando
+                        b'4 -\downbow \glissando
+                        af'4 -\upbow \glissando
+                        e'4 -\downbow \glissando
+                        ef'4 -\upbow \glissando
+                        d'4 -\downbow \glissando
+                        g'4 -\upbow \glissando
+                        f'4 -\downbow \glissando
+                        e'4 -\upbow \glissando
+                        fs'4 -\downbow \glissando
+                        af'4 -\upbow \glissando
+                        d'4 -\downbow \glissando
                         b'4 -\upbow \glissando
                         af'4 -\downbow \glissando
-                        e'4 -\upbow \glissando
-                        ef'4 -\downbow \glissando
-                        d'4 -\upbow \glissando
-                        g'4 -\downbow \glissando
-                        f'4 -\upbow \glissando
-                        e'4 -\downbow \glissando
-                        fs'8 -\upbow
+                        e'8 -\upbow
                         \revert DynamicLineSpanner.staff-padding
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
@@ -3725,19 +3572,131 @@
                             r8
                             e''8 -\staccatissimo
                         }
-                        s1 * 21/2
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            r8
+                            f''4 -\staccatissimo
+                            ef''16 -\staccatissimo [
+                            c'''16 -\staccatissimo
+                            f''8 -\staccatissimo
+                            e''8 -\staccatissimo
+                            fs''16 -\staccatissimo
+                            g''16 -\staccatissimo
+                            bf''16 -\staccatissimo
+                            fs''16 -\staccatissimo ]
+                        }
+                        {
+                            r8
+                        }
+                        r4.
+                        \times 2/3 {
+                            r8
+                            fs''8 -\staccatissimo [
+                            b''8 -\staccatissimo ]
+                        }
+                        {
+                            r4.
+                            f''4 -\staccatissimo
+                            a''4 -\staccatissimo
+                        }
+                        r4.
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 9/11 {
+                            r4
+                            f''4 -\staccatissimo
+                            a''16 -\staccatissimo [
+                            af''16 -\staccatissimo
+                            cs'''8 -\staccatissimo
+                            c'''8 -\staccatissimo ]
+                            b''2 -\staccatissimo
+                        }
+                        {
+                            r4
+                            g'''8 -\staccatissimo
+                        }
+                        {
+                            r8
+                        }
+                        \times 2/3 {
+                            r16
+                            b''16 -\staccatissimo [
+                            g'''8 -\staccatissimo
+                            ef'''8 -\staccatissimo
+                            fs'''16 -\staccatissimo
+                            bf''16 -\staccatissimo
+                            a''16 -\staccatissimo
+                            e'''16 -\staccatissimo ]
+                            a''4 -\staccatissimo
+                            c'''4 -\staccatissimo
+                        }
+                        r4
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/5 {
+                            r8
+                            fs'''2 -\staccatissimo
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 9/11 {
+                            r4
+                            b''4 -\staccatissimo
+                            af'''16 -\staccatissimo [
+                            fs'''16 -\staccatissimo
+                            b''8 -\staccatissimo
+                            bf''8 -\staccatissimo
+                            fs'''16 -\staccatissimo
+                            cs'''16 -\staccatissimo
+                            c'''16 -\staccatissimo
+                            f'''16 -\staccatissimo ]
+                            ef'''4 -\staccatissimo
+                        }
+                        r4.
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 6/7 {
+                            r8
+                            e'''8 -\staccatissimo
+                            c'''2 -\staccatissimo
+                            c'''8 -\staccatissimo
+                        }
+                        {
+                            r8
+                            g'''4 -\staccatissimo
+                        }
+                        {
+                            r16
+                            g'''16 -\staccatissimo [
+                            b''8 -\staccatissimo
+                            a'''8 -\staccatissimo ]
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/5 {
+                            r16
+                            g'''16 -\staccatissimo [
+                            cs'''16 -\staccatissimo
+                            b''16 -\staccatissimo ]
+                            bf'''4 -\staccatissimo
+                            c'''8 -\staccatissimo
+                        }
+                        r2
+                        r8
+                        {
+                            r8
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            r4
+                            e'''4 -\staccatissimo
+                        }
+                        r4
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         \clef "percussion"
+                        \override RepeatTie.direction = #up
                         \override DynamicLineSpanner.staff-padding = #'3
-                        r2.
-                        \once \override Beam.color = #blue
-                        \once \override Dots.color = #blue
-                        \once \override Flag.color = #blue
-                        \once \override NoteHead.color = #blue
-                        \once \override Stem.color = #blue
-                        c'1 \mf ~
+                        c'2. \mf
                             ^ \markup {
                                 \whiteout
                                     \override
@@ -3746,26 +3705,15 @@
                                             "scraped slate"
                                 }
                             - \markup { "scrape in a circle at moderate speed" }
-                        \once \override Beam.color = #blue
-                        \once \override Dots.color = #blue
-                        \once \override Flag.color = #blue
-                        \once \override NoteHead.color = #blue
-                        \once \override Stem.color = #blue
-                        c'1 ~
-                        \once \override Beam.color = #blue
-                        \once \override Dots.color = #blue
-                        \once \override Flag.color = #blue
-                        \once \override NoteHead.color = #blue
-                        \once \override Stem.color = #blue
-                        c'1 ~
-                        \once \override Beam.color = #blue
-                        \once \override Dots.color = #blue
-                        \once \override Flag.color = #blue
-                        \once \override NoteHead.color = #blue
-                        \once \override Stem.color = #blue
-                        c'4
+                        c'1 \repeatTie
+                        c'1 \repeatTie
+                        c'2. \repeatTie
+                        c'2 \repeatTie
                         \bar "|"
+                        \revert RepeatTie.direction
                         \revert DynamicLineSpanner.staff-padding
+                        \stopStaff
+                        \startStaff
                     }
                 }
                 \tag strings.viola
@@ -3785,11 +3733,24 @@
                             ctqs1 \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 9/5 {
-                            e8 \glissando
-                            dqs2
+                        \times 7/5 {
+                            e2 \glissando
+                            dqs\breve \glissando
                         }
-                        s1 * 77/8
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 7/5 {
+                            cqs4 \glissando
+                            b,1 \glissando
+                        }
+                        {
+                            cqs2 \glissando
+                            d\breve \glissando
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 6/5 {
+                            ctqs2 \glissando
+                            e\breve
+                        }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
                             e4 \f \glissando
@@ -3854,73 +3815,77 @@
                         b''4. -\downbow \glissando
                         e''4. -\upbow \glissando
                         af''4. -\downbow \glissando
-                        a''4. -\upbow
-                        s1 * 15/8
+                        a''4. -\upbow \glissando
+                        f''4. -\downbow \glissando
+                        b'4. -\upbow \glissando
+                        f'4. -\downbow \glissando
+                        af'4. -\upbow \glissando
+                        fs''4. -\downbow \glissando
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
                             \clef "alto"
+                            b'4 -\upbow \glissando
+                            af'4 -\downbow \glissando
+                            ef'4 -\upbow \glissando
                             bf'4 -\downbow \glissando
-                            fs'4 -\upbow \glissando
-                            c''4 -\downbow \glissando
-                            af'4 -\upbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
-                            ef'4 -\downbow \glissando
-                            a'4 -\upbow \glissando
-                            d'4 -\downbow \glissando
-                            ef'4 -\upbow \glissando
-                            e'4 -\downbow \glissando
+                            fs'4 -\upbow \glissando
+                            b'4 -\downbow \glissando
+                            af'4 -\upbow \glissando
+                            fs'4 -\downbow \glissando
+                            af'4 -\upbow
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/9 {
-                            d'4 -\upbow \glissando
-                            e'4 -\downbow \glissando
-                            g'4 -\upbow \glissando
-                            f'4 -\downbow \glissando
-                            b'4 -\upbow \glissando
-                            a'4 -\downbow \glissando
+                            af'4 -\downbow \glissando
                             e'4 -\upbow \glissando
-                            fs'4 -\downbow \glissando
-                            f'4 -\upbow \glissando
+                            bf'4 -\downbow \glissando
+                            a'4 -\upbow \glissando
+                            e'4 -\downbow \glissando
+                            af'4 -\upbow \glissando
+                            f'4 -\downbow \glissando
+                            c'4 -\upbow \glissando
+                            a'4 -\downbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/5 {
-                            c'4 -\downbow \glissando
-                            fs'4 -\upbow \glissando
+                            e'4 -\upbow \glissando
                             af'4 -\downbow \glissando
-                            c'4 -\upbow \glissando
-                            e'4 -\downbow \glissando
+                            bf4 -\upbow \glissando
+                            e'4 -\downbow
+                            e'4 -\upbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            b4 -\upbow \glissando
-                            fs'4 -\downbow \glissando
-                            g'4 -\upbow \glissando
-                            af4 -\downbow \glissando
+                            g'4 -\downbow \glissando
+                            e'4 -\upbow \glissando
+                            d'4 -\downbow \glissando
+                            f4 -\upbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 11/8 {
-                            ef'4 -\upbow \glissando
-                            e4 -\downbow \glissando
+                            fs'4 -\downbow \glissando
                             f4 -\upbow \glissando
-                            af4 -\downbow \glissando
+                            g4 -\downbow \glissando
+                            bf4 -\upbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/4 {
-                            fs4 -\upbow
-                            fs4 -\downbow \glissando
+                            c'4 -\downbow \glissando
+                            b4 -\upbow \glissando
                         }
                         {
-                            b4 -\upbow \glissando
-                            e4 -\downbow \glissando
-                            bf4 -\upbow \glissando
-                            f4 -\downbow \glissando
+                            ef4 -\downbow \glissando
+                            fs4 -\upbow \glissando
+                            ef4 -\downbow \glissando
+                            af4 -\upbow
                         }
                         \times 2/3 {
-                            d4 -\upbow \glissando
-                            e4 -\downbow \glissando
-                            af4 -\upbow
+                            af4 -\downbow \glissando
+                            e4 -\upbow \glissando
+                            ef4 -\downbow
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
@@ -4047,8 +4012,8 @@
                         }
                         {
                             r16
-                            e'''16 -\staccatissimo [
-                            a''8 -\staccatissimo
+                            c'''16 -\staccatissimo [
+                            g'''8 -\staccatissimo
                             af''8 -\staccatissimo ]
                         }
                         \times 2/3 {
@@ -4057,12 +4022,12 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
                             r8
-                            f''4 -\staccatissimo
                             fs'''4 -\staccatissimo
-                            a''16 -\staccatissimo [
-                            fs'''16 -\staccatissimo
-                            f''8 -\staccatissimo
-                            b''8 -\staccatissimo ]
+                            c'''4 -\staccatissimo
+                            f''16 -\staccatissimo [
+                            c'''16 -\staccatissimo
+                            g'''8 -\staccatissimo
+                            fs'''8 -\staccatissimo ]
                         }
                         r4.
                         r1
@@ -4070,9 +4035,9 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             r4
-                            e'''4 -\staccatissimo
+                            af'''4 -\staccatissimo
                             a''16 -\staccatissimo [
-                            c'''16 -\staccatissimo ]
+                            cs'''16 -\staccatissimo ]
                         }
                         {
                             r8
@@ -4080,18 +4045,18 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             r8
-                            bf''16 -\staccatissimo [
+                            f'''16 -\staccatissimo [
+                            e'''16 -\staccatissimo
                             g'''16 -\staccatissimo
-                            fs'''16 -\staccatissimo
                             cs'''16 -\staccatissimo ]
-                            e'''4 -\staccatissimo
-                            f'''4 -\staccatissimo
+                            ef'''4 -\staccatissimo
+                            g'''4 -\staccatissimo
                         }
                         \times 2/3 {
                             r16
-                            a'''16 -\staccatissimo [
-                            af'''8 -\staccatissimo
-                            fs'''8 -\staccatissimo ]
+                            f'''16 -\staccatissimo [
+                            g'''8 -\staccatissimo
+                            a'''8 -\staccatissimo ]
                         }
                         r4.
                         r1
@@ -4099,32 +4064,32 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             r4
-                            bf'''4 -\staccatissimo
-                            g'''16 -\staccatissimo [
-                            fs'''16 -\staccatissimo ]
+                            c'''4 -\staccatissimo
+                            fs'''16 -\staccatissimo [
+                            cs'''16 -\staccatissimo ]
                         }
                         \times 2/3 {
                             r8
-                            af'''8 -\staccatissimo
-                            f'''2 -\staccatissimo
-                            fs'''4 -\staccatissimo
-                            bf'''8 -\staccatissimo
+                            a'''8 -\staccatissimo
+                            ef'''2 -\staccatissimo
+                            g'''4 -\staccatissimo
+                            f'''8 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             r8
-                            c'''16 -\staccatissimo [
-                            f'''16 -\staccatissimo
-                            ef'''8 -\staccatissimo
+                            af'''16 -\staccatissimo [
+                            a'''16 -\staccatissimo
+                            b''8 -\staccatissimo
                             fs'''8 -\staccatissimo ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             r16
-                            cs'''16 -\staccatissimo [
-                            b''16 -\staccatissimo
+                            f'''16 -\staccatissimo [
+                            c'''16 -\staccatissimo
                             bf'''16 -\staccatissimo ]
-                            ef'''4 -\staccatissimo
+                            g'''4 -\staccatissimo
                         }
                         r4.
                         r2
@@ -4134,13 +4099,13 @@
                         }
                         {
                             r8
-                            fs'''4 -\staccatissimo
+                            f'''4 -\staccatissimo
                         }
                         \times 2/3 {
                             r16
                             f'''16 -\staccatissimo [
-                            e'''8 -\staccatissimo
-                            c'''8 -\staccatissimo ]
+                            a'''8 -\staccatissimo
+                            fs'''8 -\staccatissimo ]
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
@@ -4249,107 +4214,107 @@
                         fs''4. -\upbow \glissando
                         g''4. -\downbow \glissando
                         fs''4. -\upbow \glissando
-                        f''4. -\downbow \glissando
-                        c''4. -\upbow \glissando
-                        bf'4. -\downbow \glissando
-                        f'4. -\upbow \glissando
-                        fs'4. -\downbow \glissando
+                        c''4. -\downbow \glissando
+                        bf'4. -\upbow \glissando
+                        e'4. -\downbow \glissando
+                        bf'4. -\upbow \glissando
+                        f'4. -\downbow \glissando
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/4 {
-                            a'4 -\upbow \glissando
-                            b'4 -\downbow \glissando
+                            b'4 -\upbow \glissando
+                            d'4 -\downbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/8 {
-                            d'4 -\upbow \glissando
-                            bf'4 -\downbow \glissando
                             f'4 -\upbow \glissando
-                            c'4 -\downbow \glissando
-                            af'4 -\upbow
-                            af'4 -\downbow \glissando
+                            d'4 -\downbow \glissando
+                            e'4 -\upbow \glissando
+                            ef'4 -\downbow \glissando
                             f'4 -\upbow \glissando
-                            fs'4 -\downbow \glissando
+                            ef'4 -\downbow \glissando
+                            b'4 -\upbow \glissando
+                            e'4 -\downbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/5 {
-                            b'4 -\upbow \glissando
-                            fs'4 -\downbow \glissando
-                            c'4 -\upbow \glissando
-                            fs'4 -\downbow \glissando
                             g'4 -\upbow \glissando
+                            c'4 -\downbow \glissando
+                            f'4 -\upbow \glissando
+                            g'4 -\downbow \glissando
+                            bf4 -\upbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
-                            b4 -\downbow \glissando
-                            a4 -\upbow \glissando
                             ef'4 -\downbow \glissando
                             b4 -\upbow \glissando
-                            f4 -\downbow \glissando
+                            f'4 -\downbow \glissando
                             b4 -\upbow \glissando
-                            a4 -\downbow \glissando
-                            ef4 -\upbow \glissando
+                            af4 -\downbow \glissando
+                            ef'4 -\upbow \glissando
+                            b4 -\downbow \glissando
+                            fs4 -\upbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/2 {
-                            f4 -\downbow \glissando
-                            b4 -\upbow \glissando
+                            b4 -\downbow \glissando
+                            g4 -\upbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 11/14 {
-                            d4 -\downbow \glissando
-                            f4 -\upbow \glissando
                             af4 -\downbow \glissando
-                            a4 -\upbow \glissando
-                            c4 -\downbow \glissando
+                            fs4 -\upbow \glissando
+                            b4 -\downbow \glissando
                             bf4 -\upbow \glissando
                             f4 -\downbow \glissando
+                            fs4 -\upbow
+                            fs4 -\downbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/4 {
                             \clef "bass"
-                            bf4 -\upbow \glissando
-                            f4 -\downbow \glissando
+                            b4 -\upbow \glissando
+                            af4 -\downbow \glissando
                         }
                         \times 4/5 {
-                            d4 -\upbow \glissando
-                            af4 -\downbow \glissando
                             b4 -\upbow \glissando
                             a4 -\downbow \glissando
                             c4 -\upbow \glissando
+                            d4 -\downbow \glissando
+                            e4 -\upbow \glissando
                         }
                         {
-                            b,4 -\downbow \glissando
-                            fs4 -\upbow \glissando
+                            g4 -\downbow \glissando
+                            e4 -\upbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/9 {
-                            f4 -\downbow \glissando
+                            b,4 -\downbow \glissando
                             e4 -\upbow \glissando
-                            d4 -\downbow \glissando
-                            b,4 -\upbow \glissando
-                            e4 -\downbow \glissando
-                            af,4 -\upbow \glissando
-                            f,4 -\downbow \glissando
-                            c4 -\upbow \glissando
-                            bf,4 -\downbow \glissando
+                            af4 -\downbow \glissando
+                            g4 -\upbow \glissando
+                            c4 -\downbow \glissando
+                            bf,4 -\upbow \glissando
+                            fs4 -\downbow \glissando
+                            f,4 -\upbow \glissando
+                            e,4 -\downbow \glissando
                         }
                         {
-                            fs4 -\upbow \glissando
+                            af,4 -\upbow \glissando
                             f,4 -\downbow \glissando
-                            fs,4 -\upbow \glissando
-                            g,4 -\downbow \glissando
+                            b,4 -\upbow \glissando
+                            a,4 -\downbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
-                            c4 -\upbow \glissando
-                            bf,4 -\downbow \glissando
-                            fs,4 -\upbow \glissando
-                            e,4 -\downbow \glissando
+                            af,4 -\upbow \glissando
+                            ef,4 -\downbow \glissando
+                            b,4 -\upbow \glissando
+                            f,4 -\downbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/4 {
-                            d,4 -\upbow \glissando
-                            fs,4 -\downbow
+                            b,4 -\upbow \glissando
+                            a,4 -\downbow
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
@@ -4443,11 +4408,123 @@
                             f''8 -\staccatissimo
                             ef''8 -\staccatissimo ]
                         }
-                        s1 * 29/2
-                        \bar "|"
+                        r2.
+                        {
+                            r16
+                            cs'''16 -\staccatissimo
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/5 {
+                            r8
+                            b''8 -\staccatissimo
+                            a''4. -\staccatissimo
+                        }
+                        {
+                            r8
+                            f''8 -\staccatissimo
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 7/9 {
+                            r8
+                            g''4 -\staccatissimo
+                            ef'''16 -\staccatissimo [
+                            a''16 -\staccatissimo
+                            b''8 -\staccatissimo
+                            fs'''8 -\staccatissimo
+                            ef'''16 -\staccatissimo
+                            f''16 -\staccatissimo
+                            a''16 -\staccatissimo
+                            af''16 -\staccatissimo
+                            f''8 -\staccatissimo ]
+                        }
+                        r4.
+                        {
+                            r8
+                            fs'''8 -\staccatissimo
+                            g'''2 -\staccatissimo
+                            bf''4 -\staccatissimo
+                            g'''8 -\staccatissimo
+                        }
+                        r4.
+                        {
+                            r16
+                            c'''16 -\staccatissimo
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            r16
+                            bf''16 -\staccatissimo
+                            a''4 -\staccatissimo
+                            b''4 -\staccatissimo
+                            fs'''16 -\staccatissimo [
+                            f'''16 -\staccatissimo
+                            ef'''8 -\staccatissimo
+                            a''8 -\staccatissimo ]
+                        }
+                        {
+                            r4
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            r4
+                            f'''4 -\staccatissimo
+                        }
+                        r1
+                        r8
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            r4
+                            b''16 -\staccatissimo [
+                            bf''16 -\staccatissimo
+                            g'''8 -\staccatissimo ]
+                        }
+                        r2.
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/5 {
+                            r8
+                            ef'''16 -\staccatissimo [
+                            fs'''16 -\staccatissimo
+                            cs'''8 -\staccatissimo
+                            bf'''8 -\staccatissimo
+                            a'''16 -\staccatissimo
+                            af'''16 -\staccatissimo ]
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/5 {
+                            r16
+                            fs'''16 -\staccatissimo
+                            cs'''4 -\staccatissimo
+                            c'''4 -\staccatissimo
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            r16
+                            fs'''16 -\staccatissimo [
+                            c'''8 -\staccatissimo
+                            e'''8 -\staccatissimo
+                            ef'''8 -\staccatissimo ]
+                        }
+                        {
+                            r4.
+                            f'''4 -\staccatissimo
+                        }
+                        r8
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/5 {
+                            r8
+                            af'''16 -\staccatissimo [
+                            fs'''16 -\staccatissimo
+                            f'''8 -\staccatissimo
+                            ef'''8 -\staccatissimo
+                            c'''16 -\staccatissimo
+                            a'''16 -\staccatissimo ]
+                        }
+                        r4
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
+                        s1 * 4
+                        \bar "|"
                     }
                 }
             >>

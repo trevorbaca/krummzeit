@@ -297,6 +297,8 @@ segment_maker(
 
 ### (9) pf, vn, va, vc ###
 
+pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
+pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
 segment_maker(
     baca.compound([
         baca.scope('Piano Music Voice', 1, 7),
@@ -304,12 +306,7 @@ segment_maker(
         baca.scope('Viola Music Voice', 1, 9),
         baca.scope('Cello Music Voice', 1, 9),
         ]),
-    baca.ScorePitchCommand(
-        operators=[abjad.Transposition(n=4), abjad.Inversion()],
-        reverse=True,
-        source=krummzeit.indigo_pitch_classes.get_payload(),
-        start_index=42,
-        ),
+    baca.pitches(pcs),
     )
 
 segment_maker(

@@ -414,19 +414,13 @@ segment_maker.copy_rhythm(
 
 ### (6.1) [B1] ob, cl, va, vc ###
 
-#pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
-#pcs = pcs.rotate(-121).retrograde().transpose(3).invert()
+pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
+pcs = pcs.rotate(-121).retrograde().transpose(3).invert()
 segment_maker(
     baca.scope('Oboe Music Voice', 1, 27),
     baca.ScorePitchCommand(
-        source=krummzeit.violet_pitch_classes.get_payload(),
-        start_index=120,
-        reverse=True,
+        source=pcs,
         counts=[1, 1, 1, 1, 4, 1, 1, 1, 4, 4],
-        operators=[
-            abjad.Transposition(n=3),
-            abjad.Inversion(),
-            ],
         ),
     )
 
@@ -516,14 +510,13 @@ segment_maker(
     baca.hairpin('ff > pp', baca.pleaves()[:2]),
     )
 
+pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
+pcs = pcs.rotate(-121).retrograde().transpose(3)
 segment_maker(
     baca.scope('Violin Music Voice', 19, 22),
     baca.ScorePitchCommand(
         counts=[1, 1, 1, 1, 4, 1, 1, 1, 4, 4],
-        operators=[abjad.Transposition(n=3)],
-        reverse=True,
-        source=krummzeit.violet_pitch_classes.get_payload(),
-        start_index=120,
+        source=pcs,
         ),
     )
 

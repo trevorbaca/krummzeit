@@ -413,12 +413,6 @@ segment_maker(
         baca.scope('Viola Music Voice', 1, 3),
         baca.scope('Cello Music Voice', 1, 5),
         ]),
-#    baca.ScorePitchCommand(
-#        operators=[abjad.Transposition(n=7)],
-#        reverse=True,
-#        source=krummzeit.violet_pitch_classes.get_payload(),
-#        start_index=240,
-#        ),
     baca.pitches(pcs)
     )
 

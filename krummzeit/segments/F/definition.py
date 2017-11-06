@@ -347,7 +347,6 @@ segment_maker(
 
 segment_maker(
     baca.scope('Piano Music Voice', 3, 6),
-    #narrow_fifth_to_third_octave,
     krummzeit.register_narrow(5, 3),
     )
 
@@ -358,27 +357,23 @@ segment_maker(
 
 segment_maker(
     baca.scope('Piano Music Voice', 9),
-    #narrow_third_octave,
     krummzeit.register_narrow(3),
     )
 
 segment_maker(
     baca.scope('Piano Music Voice', 11),
-    #narrow_second_octave,
     krummzeit.register_narrow(2),
     )
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 3, 7),
     baca.hairpin('p < ff'),
-    #narrow_fourth_to_sixth_octave,
     krummzeit.register_narrow(4, 6),
     )
 
 segment_maker(
     baca.scope('Oboe Music Voice', 3, 7),
     baca.hairpin('p < ff'),
-    #narrow_sixth_to_fourth_octave,
     krummzeit.register_narrow(6, 4),
     )
 

@@ -399,21 +399,18 @@ segment_maker(
 segment_maker(
     baca.scope('Piano Music Voice', 5, 12),
     krummzeit.displacement(),
-    #wide_fifth_octave,
     krummzeit.register_wide(5),
     )
 
 segment_maker(
     baca.scope('Violin Music Voice', 5, 12),
     krummzeit.displacement(),
-    #wide_sixth_octave,
     krummzeit.register_wide(6),
     )
 
 segment_maker(
     baca.scopes(['Oboe Music Voice', 'Clarinet Music Voice'], [(5, 12)]),
     krummzeit.displacement(),
-    #wide_fifth_octave,
     krummzeit.register_wide(5),
     )
 
@@ -516,21 +513,18 @@ segment_maker(
 segment_maker(
     baca.scope('Violin Music Voice', 14, 20),
     krummzeit.displacement(),
-    #wide_fourth_octave,
     krummzeit.register_wide(4),
     )
 
 segment_maker(
     baca.scope('Viola Music Voice', 14, 19),
     krummzeit.displacement(),
-    #narrow_third_octave,
     krummzeit.register_narrow(3),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 14, 20),
     krummzeit.displacement(),
-    #narrow_second_octave,
     krummzeit.register_narrow(2),
     )
 

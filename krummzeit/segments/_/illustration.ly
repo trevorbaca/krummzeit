@@ -712,7 +712,7 @@
                         }
                         {
                             bf8 \glissando
-                            e'4
+                            e4
                         }
                         r2.
                         r4.
@@ -721,7 +721,7 @@
                             fs4 \glissando
                         }
                         \times 4/5 {
-                            d'32 \glissando [
+                            d32 \glissando [
                             ef8 ]
                         }
                         \times 4/7 {
@@ -835,7 +835,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            e'4 \glissando
+                            e4 \glissando
                             g8.
                         }
                         r4.

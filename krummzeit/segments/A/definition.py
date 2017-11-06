@@ -8,16 +8,16 @@ import krummzeit
 ###############################################################################
 
 stage_measure_map = baca.StageMeasureMap([
-    3, 1, 3, 4,     # stages 1-4
-    3, 1, 3, 4,     # stages 5-8
-    6,              # stage 9
-    3, 2,           # stages 10-11
-    3, 1, 1,        # stages 12-14
-    6,              # stage 15
-    3,              # stage 16
-    4, 2, 3,        # stages 17-19
-    4, 8,           # stages 20-21
-    3, 4,           # stages 22-23
+    3, 1, 3, 4,     # 1-4
+    3, 1, 3, 4,     # 5-8
+    6,              # 9
+    3, 2,           # 10-11
+    3, 1, 1,        # 12-14
+    6,              # 15
+    3,              # 16
+    4, 2, 3,        # 17-19
+    4, 8,           # 20-21
+    3, 4,           # 22-23
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
@@ -486,16 +486,12 @@ segment_maker(
 ### (12) [B1-13] (hpschd, vn, ob, cl) pcs ###
 
 segment_maker(
-    # oboe enters later
     baca.compound([
         baca.scope('Piano Music Voice', 1, 4),
         baca.scope('Violin Music Voice', 1, 4),
         baca.scope('Clarinet Music Voice', 1, 4),
         ]),
-    baca.ScorePitchCommand(
-        source=krummzeit.indigo_pitch_classes.get_payload(),
-        start_index=0,
-        ),
+    baca.pitches(krummzeit.indigo_pitch_classes.get_payload())
     )
 
 segment_maker(
@@ -505,22 +501,16 @@ segment_maker(
         baca.scope('Oboe Music Voice', 5, 13),
         baca.scope('Clarinet Music Voice', 5, 13),
         ]),
-    baca.ScorePitchCommand(
-        source=krummzeit.indigo_pitch_classes.get_payload(),
-        start_index=0,
-        ),
+    baca.pitches(krummzeit.indigo_pitch_classes.get_payload())
     )
 
 segment_maker(
-    # oboe enters later
     baca.compound([
         baca.scope('Piano Music Voice', 5, 8),
         baca.scope('Violin Music Voice', 5, 8),
         baca.scope('Clarinet Music Voice', 5, 8),
         ]),
-    baca.ScorePitchCommand(
-        operators=[abjad.Transposition(n=1)],
-        ),
+    baca.ScorePitchCommand(operators=[abjad.Transposition(n=1)]),
     )
 
 segment_maker(
@@ -530,9 +520,7 @@ segment_maker(
         baca.scope('Oboe Music Voice', 9, 13),
         baca.scope('Clarinet Music Voice', 9, 13),
         ]),
-    baca.ScorePitchCommand(
-        operators=[abjad.Transposition(n=3)],
-        ),
+    baca.ScorePitchCommand(operators=[abjad.Transposition(n=3)]),
     )
 
 segment_maker(
@@ -707,10 +695,7 @@ segment_maker(
         baca.scope('Cello Music Voice', 12, 17),
         baca.scope('Violin Music Voice', 14, 18),
         ]),
-    baca.ScorePitchCommand(
-        source=krummzeit.violet_pitch_classes.get_payload(),
-        start_index=0,
-        ),
+    baca.pitches(krummzeit.violet_pitch_classes.get_payload())
     )
 
 segment_maker(
@@ -720,7 +705,6 @@ segment_maker(
     baca.dynamic('f'),
     baca.map(baca.glissando(), baca.runs()),
     baca.markup.OB_full_bow_strokes(),
-    #narrow_fifth_to_third_octave,
     krummzeit.register_narrow(5, 3),
     )
 
@@ -736,7 +720,6 @@ segment_maker(
     baca.dynamic('f'),
     baca.glissando(),
     baca.markup.OB_full_bow_strokes(),
-    #narrow_fifth_to_second_octave,
     krummzeit.register_narrow(5, 2),
     )
 
@@ -751,7 +734,6 @@ segment_maker(
     baca.dynamic('f'),
     baca.glissando(),
     baca.markup.OB_full_bow_strokes(),
-    #narrow_fifth_to_fourth_octave,
     krummzeit.register_narrow(5, 4),
     )
 
@@ -773,6 +755,8 @@ segment_maker(
 
 ### (9.1) [B17-23] ###
 
+pcs = krummzeit.violet_pitch_classes.get_payload()
+pcs = baca.PitchClassSegment(pcs).rotate(-60).transpose(1)
 segment_maker(
     baca.compound([
         baca.scope('Viola Music Voice', 17, 22),
@@ -780,11 +764,7 @@ segment_maker(
         baca.scope('Violin Music Voice', 19, 22),
         baca.scope('Piano Music Voice', 20, 23),
         ]),
-    baca.ScorePitchCommand(
-        source=krummzeit.violet_pitch_classes.get_payload(),
-        start_index=60,
-        operators=[abjad.Transposition(n=1)],
-        ),
+    baca.pitches(pcs),
     )
 
 segment_maker(
@@ -793,7 +773,6 @@ segment_maker(
     baca.dynamic('fff'),
     baca.markup.pizz(),
     baca.staccatissimi(),
-    #narrow_fifth_to_sixth_octave,
     krummzeit.register_narrow(5, 6),
     )
 
@@ -803,7 +782,6 @@ segment_maker(
     baca.dynamic('fff'),
     baca.markup.pizz(),
     baca.staccatissimi(),
-    #narrow_fifth_to_sixth_octave,
     krummzeit.register_narrow(5, 6),
     )
 
@@ -812,15 +790,14 @@ segment_maker(
     baca.dynamic('fff'),
     baca.markup.pizz(),
     baca.staccatissimi(),
-    #narrow_fifth_to_sixth_octave,
     krummzeit.register_narrow(5, 6),
     )
 
 segment_maker(
     baca.scope('Piano Music Voice', 20, 23),
+    baca.clef('treble'),
     baca.dynamic('fff'),
     baca.staccatissimi(),
-    #narrow_fifth_to_sixth_octave,
     krummzeit.register_narrow(5, 6),
     )
 

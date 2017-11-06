@@ -72,7 +72,7 @@ segment_maker(
             counts=[2, 3, 1],
             ),
         rhythm_maker=rhythmos.TupletRhythmMaker(
-            preferred_denominator=abjad.Duration(1, 4),
+            preferred_denominator=(1, 4),
             tuplet_ratios=[(3, 2)],
             tuplet_specifier=rhythmos.TupletSpecifier(
                 avoid_dots=True,
@@ -113,7 +113,7 @@ segment_maker(
         division_maker=baca.SplitByDurationsDivisionCallback(
             durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
             pattern_rotation_index=-1,
-            remainder_fuse_threshold=abjad.Duration(1, 8),
+            remainder_fuse_threshold=(1, 8),
             ),
         rhythm_maker=rhythmos.EvenDivisionRhythmMaker(
             denominators=[8, 8, 4, 4, 8, 8],
@@ -150,7 +150,7 @@ segment_maker(
         division_maker=baca.SplitByDurationsDivisionCallback(
             durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
             pattern_rotation_index=-1,
-            remainder_fuse_threshold=abjad.Duration(1, 8),
+            remainder_fuse_threshold=(1, 8),
             ),
         rhythm_maker=rhythmos.EvenDivisionRhythmMaker(
             denominators=[8, 8, 4, 4, 8, 8],
@@ -379,7 +379,7 @@ segment_maker(
                 ),
             split_divisions_by_counts=[6, 18],
             extra_counts_per_division=[2, 2, 0, 2, 4, 6],
-            division_masks=[abjad.Pattern(indices=[1, 2, 3], period=6)],
+            division_masks=[abjad.index([1, 2, 3], 6)],
             ),
         ),
     )
@@ -387,13 +387,13 @@ segment_maker(
 segment_maker.copy_rhythm(
     baca.scope('Viola Music Voice', 17),
     baca.scope('Cello Music Voice', 18, 19),
-    rhythm_maker__division_masks=[abjad.Pattern(indices=[2, 3, 4], period=6)],
+    rhythm_maker__division_masks=[abjad.index([2, 3, 4], 6)],
     )
 
 segment_maker.copy_rhythm(
     baca.scope('Viola Music Voice', 17),
     baca.scope('Violin Music Voice', 19),
-    rhythm_maker__division_masks=[abjad.Pattern(indices=[3, 4, 5], period=6)],
+    rhythm_maker__division_masks=[abjad.index([3, 4, 5], 6)],
     )
 
 segment_maker(
@@ -410,7 +410,7 @@ segment_maker(
                 left_classes=[abjad.Rest],
                 left_counts=[1],
                 ),
-            division_masks=[abjad.Pattern(indices=[2, 3], period=6)],
+            division_masks=[abjad.index([2, 3], 6)],
             ),
         ),
     )
@@ -419,14 +419,14 @@ segment_maker.copy_rhythm(
     baca.scope('Viola Music Voice', 20),
     baca.scope('Cello Music Voice', 20, 22),
     rhythm_maker__extra_counts_per_division=[4, 4, 2, 0, 2, 4],
-    rhythm_maker__division_masks=[abjad.Pattern(indices=[0, 2], period=7)],
+    rhythm_maker__division_masks=[abjad.index([0, 2], 7)],
     )
 
 segment_maker.copy_rhythm(
     baca.scope('Viola Music Voice', 20),
     baca.scope('Violin Music Voice', 20, 22),
     rhythm_maker__extra_counts_per_division=[6, 0, 4, 4, 0, 2],
-    rhythm_maker__division_masks=[abjad.Pattern(indices=[3, 6], period=8)],
+    rhythm_maker__division_masks=[abjad.index([3, 6], 8)],
     )
 
 ### pf [B20-22] ###
@@ -435,7 +435,7 @@ segment_maker.copy_rhythm(
     baca.scope('Viola Music Voice', 20),
     baca.scope('Piano Music Voice', 20, 22),
     rhythm_maker__extra_counts_per_division=[4, 0, 2, 4, 6],
-    rhythm_maker__division_masks=[abjad.Pattern(indices=[1, 5], period=7)],
+    rhythm_maker__division_masks=[abjad.index([1, 5], 7)],
     )
 
 segment_maker.copy_rhythm(

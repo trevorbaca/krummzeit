@@ -64,7 +64,7 @@ segment_maker(
                 ),
             ),
         rhythm_maker=rhythmos.NoteRhythmMaker(
-            division_masks=[abjad.Pattern(indices=[-1])],
+            division_masks=[abjad.index([-1])],
             ),
         ),
     )
@@ -166,7 +166,7 @@ segment_maker(
                 ),
             ),
         rhythm_maker=rhythmos.NoteRhythmMaker(
-            division_masks=[abjad.Pattern(indices=[1], period=2)],
+            division_masks=[abjad.index([1], 2)],
             ),
         ),
     )

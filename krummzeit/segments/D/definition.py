@@ -127,7 +127,7 @@ segment_maker(
                 (1, 4),
                 (4, 3),
                 ],
-            division_masks=[abjad.Pattern(indices=[5, 6], period=7)],
+            division_masks=[abjad.index([5, 6], 7)],
             ),
         ),
     )
@@ -135,7 +135,7 @@ segment_maker(
 segment_maker.copy_rhythm(
     baca.scope('Viola Music Voice', 4),
     baca.scope('Viola Music Voice', 5, 7),
-    rhythm_maker__division_masks=[abjad.Pattern(indices=[0])],
+    rhythm_maker__division_masks=[abjad.index([0])],
     )
 
 segment_maker.copy_rhythm(
@@ -147,7 +147,7 @@ segment_maker.copy_rhythm(
     baca.scope('Viola Music Voice', 4),
     baca.scope('Cello Music Voice', 6),
     division_maker__ratios=[(2, 1), (1, 1, 1), (2, 1)],
-    rhythm_maker__division_masks=[abjad.Pattern(indices=[0, 1, 2])],
+    rhythm_maker__division_masks=[abjad.index([0, 1, 2])],
     )
 
 segment_maker.copy_rhythm(
@@ -224,13 +224,13 @@ segment_maker(
 segment_maker.copy_rhythm(
     baca.scope('Piano Music Voice', 8),
     baca.scope('Piano Music Voice', 10, 11),
-    rhythm_maker__division_masks=[abjad.Pattern(indices=[2], period=7)],
+    rhythm_maker__division_masks=[abjad.index([2], 7)],
     )
 
 segment_maker.copy_rhythm(
     baca.scope('Percussion Music Voice', 8),
     baca.scope('Percussion Music Voice', 10, 11),
-    rhythm_maker__division_masks=[abjad.Pattern(indices=[5], period=7)],
+    rhythm_maker__division_masks=[abjad.index([5], 7)],
     )
 
 ### ob, cl [E5-7] & [E10-12] ###
@@ -272,7 +272,7 @@ segment_maker.copy_rhythm(
         (-3, 4, 1, 12),
         (3, 2),
         ],
-    rhythm_maker__division_masks=[abjad.Pattern(indices=[0])],
+    rhythm_maker__division_masks=[abjad.index([0])],
     )
 
 segment_maker(
@@ -304,7 +304,7 @@ segment_maker(
                 talea_denominator=16,
                 fill_with_notes=False,
                 ),
-            division_masks=[abjad.Pattern(indices=[2], period=5)],
+            division_masks=[abjad.index([2], 5)],
             ),
         ),
     )
@@ -364,8 +364,7 @@ segment_maker.copy_rhythm(
     baca.scope('Viola Music Voice', 4),
     baca.scope('Piano Music Voice', 4),
     rhythm_maker=rhythmos.NoteRhythmMaker(
-        division_masks=[
-            abjad.Pattern(indices=[5, 6], period=7)],
+        division_masks=[abjad.index([5, 6], 7)],
         tie_specifier=rhythmos.TieSpecifier(
             tie_across_divisions=[0, 1],
             ),
@@ -381,7 +380,7 @@ segment_maker.copy_rhythm(
     baca.scope('Viola Music Voice', 5),
     baca.scope('Piano Music Voice', 5),
     rhythm_maker=rhythmos.NoteRhythmMaker(
-        division_masks=[abjad.Pattern(indices=[0])],
+        division_masks=[abjad.index([0])],
         tie_specifier=rhythmos.TieSpecifier(
             tie_across_divisions=[0, 1],
             ),

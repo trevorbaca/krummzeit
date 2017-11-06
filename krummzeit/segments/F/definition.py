@@ -82,7 +82,7 @@ segment_maker(
             tie_specifier=rhythmos.TieSpecifier(
                 tie_across_divisions=True,
                 ),
-            division_masks=[abjad.Pattern(indices=[0], period=1)],
+            division_masks=[abjad.index([0], 1)],
             )
         ),
     krummzeit.markup.snare_drum(baca.leaf(0)),
@@ -166,7 +166,7 @@ segment_maker(
             counts=[2, 2, 2, 2, 2, 3],
             ),
         rhythm_maker=rhythmos.TupletRhythmMaker(
-            preferred_denominator=abjad.Duration(1, 4),
+            preferred_denominator=(1, 4),
             tuplet_ratios=[(3, 4)],
             tuplet_specifier=rhythmos.TupletSpecifier(
                 avoid_dots=True,
@@ -180,14 +180,14 @@ segment_maker.copy_rhythm(
     baca.scope('Violin Music Voice', 5),
     baca.scope('Viola Music Voice', 5, 13),  # ?
     rhythm_maker__tuplet_ratios=[(1, 6)],
-    rhythm_maker__division_masks=[abjad.Pattern(indices=[0, 1])],
+    rhythm_maker__division_masks=[abjad.index([0, 1])],
     )
 
 segment_maker.copy_rhythm(
     baca.scope('Violin Music Voice', 5),
     baca.scope('Cello Music Voice', 5, 13),  # ?
     rhythm_maker__tuplet_ratios=[(6, 1)],
-    rhythm_maker__division_masks=[abjad.Pattern(indices=[0, 1])],
+    rhythm_maker__division_masks=[abjad.index([0, 1])],
     )
 
 ### ob, cl [G3-7] ###
@@ -198,7 +198,7 @@ segment_maker(
         division_maker=baca.SplitByDurationsDivisionCallback(
             durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
             pattern_rotation_index=-1,
-            remainder_fuse_threshold=abjad.Duration(1, 8),
+            remainder_fuse_threshold=(1, 8),
             ),
         rhythm_maker=rhythmos.EvenDivisionRhythmMaker(
             denominators=[4, 4, 4, 16],

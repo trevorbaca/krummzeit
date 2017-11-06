@@ -499,13 +499,13 @@ segment_maker(
 segment_maker(
     baca.scope('Viola Music Voice', 5, 6),
     baca.hairpin('pp < f'),
-    baca.molto_flaut_to_molto_grid(),
+    krummzeit.markup.molto_flaut_to_molto_grid(),
     )
 
 segment_maker(
     baca.scopes(['Violin Music Voice', 'Cello Music Voice'], [6]),
     baca.hairpin('pp < f'),
-    baca.molto_flaut_to_molto_grid(),
+    krummzeit.markup.molto_flaut_to_molto_grid(),
     )
 
 segment_maker(

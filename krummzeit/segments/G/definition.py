@@ -74,7 +74,7 @@ segment_maker(
         division_maker=baca.SplitByDurationsDivisionCallback(
             durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
             pattern_rotation_index=-1,
-            remainder_fuse_threshold=abjad.Duration(1, 8),
+            remainder_fuse_threshold=(1, 8),
             ),
         rhythm_maker=rhythmos.EvenDivisionRhythmMaker(
             denominators=[8, 8, 4, 4, 8, 8],
@@ -95,7 +95,7 @@ segment_maker(
             counts=[2],
             ),
         rhythm_maker=rhythmos.TupletRhythmMaker(
-            preferred_denominator=abjad.Duration(1, 4),
+            preferred_denominator=(1, 4),
             tuplet_ratios=[(3, 2), (1, 4)],
             tuplet_specifier=rhythmos.TupletSpecifier(
                 avoid_dots=True,
@@ -156,7 +156,7 @@ segment_maker(
         division_maker=baca.SplitByDurationsDivisionCallback(
             durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
             pattern_rotation_index=-1,
-            remainder_fuse_threshold=abjad.Duration(1, 8),
+            remainder_fuse_threshold=(1, 8),
             ),
         rhythm_maker=rhythmos.EvenDivisionRhythmMaker(
             denominators=[8, 8, 4, 4, 8, 8],
@@ -182,7 +182,7 @@ segment_maker(
             tie_specifier=rhythmos.TieSpecifier(
                 tie_across_divisions=[0, 1],
                 ),
-            division_masks=[abjad.Pattern(indices=[5, 6], period=7)],
+            division_masks=[abjad.index([5, 6], 7)],
             ),
         ),
     )
@@ -200,7 +200,7 @@ segment_maker(
                 ),
             ),
         rhythm_maker=rhythmos.NoteRhythmMaker(
-            division_masks=[abjad.Pattern(indices=[-1])],
+            division_masks=[abjad.index([-1])],
             ),
         ),
     krummzeit.markup.tam_tam(),
@@ -280,7 +280,7 @@ segment_maker(
             counts=[2, 3, 1],
             ),
         rhythm_maker=rhythmos.TupletRhythmMaker(
-            preferred_denominator=abjad.Duration(1, 4),
+            preferred_denominator=(1, 4),
             tuplet_ratios=[(1, 4)],
             tuplet_specifier=rhythmos.TupletSpecifier(
                 avoid_dots=True,
@@ -305,7 +305,7 @@ segment_maker(
             counts=[3],
             ),
         rhythm_maker=rhythmos.TupletRhythmMaker(
-            preferred_denominator=abjad.Duration(1, 4),
+            preferred_denominator=(1, 4),
             tuplet_ratios=[(3, 2)],
             tuplet_specifier=rhythmos.TupletSpecifier(
                 avoid_dots=True,

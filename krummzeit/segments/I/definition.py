@@ -63,7 +63,7 @@ segment_maker(
             counts=[2],
             ),
         rhythm_maker=rhythmos.TupletRhythmMaker(
-            preferred_denominator=abjad.Duration(1, 4),
+            preferred_denominator=(1, 4),
             tuplet_ratios=[(3, 2)],
             tuplet_specifier=rhythmos.TupletSpecifier(
                 avoid_dots=True,
@@ -94,7 +94,7 @@ segment_maker(
             counts=[2],
             ),
         rhythm_maker=rhythmos.TupletRhythmMaker(
-            preferred_denominator=abjad.Duration(1, 4),
+            preferred_denominator=(1, 4),
             tuplet_ratios=[(3, 4)],
             tuplet_specifier=rhythmos.TupletSpecifier(
                 avoid_dots=True,
@@ -128,7 +128,7 @@ segment_maker(
             ),
         rhythm_maker=rhythmos.TupletRhythmMaker(
             tuplet_ratios=[(1, 1, 1)],
-            division_masks=[abjad.Pattern(indices=[-1])],
+            division_masks=[abjad.index([-1])],
             ),
         ),
     )
@@ -158,7 +158,7 @@ segment_maker(
             ),
         rhythm_maker=rhythmos.TupletRhythmMaker(
             tuplet_ratios=[(1, 1, 1)],
-            division_masks=[abjad.Pattern(indices=[0])],
+            division_masks=[abjad.index([0])],
             ),
         ),
     )

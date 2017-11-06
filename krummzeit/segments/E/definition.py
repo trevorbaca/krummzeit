@@ -73,7 +73,7 @@ segment_maker(
                 (1, 1, 1, 1, 3, 3),
                 (3, 4, 1, 1),
                 ],
-            division_masks=[abjad.Pattern(indices=[3, 4], period=6)],
+            division_masks=[abjad.index([3, 4], 6)],
             ),
         ),
     )
@@ -172,7 +172,7 @@ segment_maker(
                 (1, 4),
                 (4, 3),
                 ],
-            division_masks=[abjad.Pattern(indices=[5, 6], period=7)],
+            division_masks=[abjad.index([5, 6], 7)],
             ),
         ),
     )
@@ -181,14 +181,14 @@ segment_maker.copy_rhythm(
     baca.scope('Violin Music Voice', 4),
     baca.scope('Viola Music Voice', 4, 10),
     division_maker__ratios=[(2, 1), (1, 1, 1), (2, 1)],
-    rhythm_maker__division_masks=[abjad.Pattern(indices=[0, 1], period=7)],
+    rhythm_maker__division_masks=[abjad.index([0, 1], 7)],
     )
 
 segment_maker.copy_rhythm(
     baca.scope('Violin Music Voice', 4),
     baca.scope('Cello Music Voice', 4),
     division_maker__ratios=[(1, 1, 1), (2, 1), (2, 1)],
-    rhythm_maker__division_masks=[abjad.Pattern(indices=[2, 3], period=7)],
+    rhythm_maker__division_masks=[abjad.index([2, 3], 7)],
     )
 
 ### ob, cl [F4-11] ###
@@ -230,7 +230,7 @@ segment_maker.copy_rhythm(
         (-3, 4, 1, 12),
         (3, 2),
         ],
-    rhythm_maker__division_masks=[abjad.Pattern(indices=[0])],
+    rhythm_maker__division_masks=[abjad.index([0])],
     )
 
 segment_maker(
@@ -405,8 +405,7 @@ segment_maker(
                 ),
             split_divisions_by_counts=[6, 18],
             extra_counts_per_division=[2, 2, 0, 2, 4, 6],
-            division_masks=[
-                abjad.Pattern(indices=[0, 4, 5], period=6)],
+            division_masks=[abjad.index([0, 4, 5], 6)],
             ),
         ),
     )

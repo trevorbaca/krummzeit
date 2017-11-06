@@ -241,7 +241,6 @@ segment_maker(
     baca.staccatissimi(),
     baca.tuplet_bracket_staff_padding(2),
     krummzeit.displacement(),
-    #narrow_sixth_octave,
     krummzeit.register_narrow(6),
     )
 

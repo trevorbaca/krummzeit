@@ -327,21 +327,18 @@ segment_maker(
 segment_maker(
     baca.scope('Violin Music Voice', 2, 4),
     krummzeit.displacement(),
-    #wide_fourth_octave,
     krummzeit.register_wide(4),
     )
 
 segment_maker(
     baca.scope('Viola Music Voice', 2, 4),
     krummzeit.displacement(),
-    #narrow_third_octave,
     krummzeit.register_narrow(3),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 2, 4),
     krummzeit.displacement(),
-    #narrow_second_octave,
     krummzeit.register_narrow(2),
     )
 

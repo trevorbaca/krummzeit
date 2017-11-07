@@ -2048,11 +2048,11 @@
                         }
                         \times 2/3 {
                             \override NoteHead.style = #'harmonic
-                            af4 \ppp
-                            af2
+                            af'4 \ppp
+                            af'2
                         }
                         {
-                            af4 \glissando
+                            af'4 \glissando
                             cs'1 ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -2066,15 +2066,15 @@
                         }
                         \times 4/5 {
                             f16 \glissando
-                            bf4 \glissando
+                            bf'4 \glissando
                         }
                         \times 4/7 {
-                            fs4 \glissando
-                            b8. ~
+                            fs'4 \glissando
+                            b'8. ~
                         }
                         \times 2/3 {
-                            b8 \glissando
-                            af4
+                            b'8 \glissando
+                            af'4
                             \revert NoteHead.style
                         }
                         s1 * 11/8
@@ -2113,7 +2113,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/9 {
                             \override NoteHead.style = #'harmonic
-                            b,2. \ppp \glissando
+                            b2. \ppp \glissando
                             c1.
                         }
                         \times 4/5 {
@@ -2177,7 +2177,7 @@
                         \times 2/3 {
                             \override NoteHead.style = #'harmonic
                             a,4 \ppp \glissando
-                            bf,,2 \glissando
+                            bf,2 \glissando
                         }
                         \times 4/5 {
                             f,8. \glissando
@@ -2185,10 +2185,10 @@
                         }
                         \times 4/7 {
                             d,2 \glissando
-                            b,,4. \glissando
+                            b,4. \glissando
                         }
                         \times 2/3 {
-                            bf,,4 \glissando
+                            bf,4 \glissando
                             g,2 ~
                         }
                         {
@@ -2196,12 +2196,12 @@
                             f,1 \glissando
                         }
                         \times 4/7 {
-                            b,,2 \glissando
-                            c,4. ~
+                            b,2 \glissando
+                            c4. ~
                         }
                         \times 2/3 {
-                            c,8 \glissando
-                            bf,,4
+                            c8 \glissando
+                            bf,4
                             \revert NoteHead.style
                         }
                         s1 * 11/8

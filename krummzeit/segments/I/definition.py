@@ -9,10 +9,9 @@ from abjad import rhythmmakertools as rhythmos
 ###############################################################################
 
 stage_measure_map = baca.StageMeasureMap([
-    # 1-16
-    1, 1, 1, 1, 1,
-    1, 1, 1, 1, 1,
-    4, 4, 1, 2, 1, 1,
+    1, 1, 1, 1, 1,      # 1-5
+    1, 1, 1, 1, 1,      # 6-10
+    4, 4, 1, 2, 1, 1,   # 11-16
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
@@ -366,17 +365,15 @@ segment_maker(
 
 ### (3.5) OB bowing ###
 
+pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
+pcs = pcs.transpose(11)
 segment_maker(
     baca.compound([
         baca.scope('Violin Music Voice', 5, 9),
         baca.scope('Viola Music Voice', 5, 9),
         baca.scope('Cello Music Voice', 5, 9),
         ]),
-    baca.ScorePitchCommand(
-        operators=[abjad.Transposition(n=11)],
-        source=krummzeit.violet_pitch_classes.get_payload(),
-        start_index=0,
-        ),
+    baca.pitches(pcs),
     )
 
 segment_maker(
@@ -446,18 +443,15 @@ segment_maker(
 
 ### (9.1) vn, va, vc points ###
 
+pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
+pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
 segment_maker(
     baca.compound([
         baca.scope('Violin Music Voice', 15),
         baca.scope('Viola Music Voice', 15),
         baca.scope('Cello Music Voice', 15),
         ]),
-    baca.ScorePitchCommand(
-        operators=[abjad.Transposition(n=4), abjad.Inversion()],
-        reverse=True,
-        source=krummzeit.indigo_pitch_classes.get_payload(),
-        start_index=42,
-        ),
+    baca.pitches(pcs),
     )
 
 segment_maker(

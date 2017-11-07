@@ -301,14 +301,12 @@ segment_maker(
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
 segment_maker(
-    baca.compound([
-        baca.scope('Piano Music Voice', 1, 7),
-        baca.scope('Violin Music Voice', 1, 9),
-        baca.scope('Viola Music Voice', 1, 9),
-        baca.scope('Cello Music Voice', 1, 9),
-        ],
-        timeline=True,
-        ),
+    baca.timeline([
+        ('Piano Music Voice', 1, 7),
+        ('Violin Music Voice', 1, 9),
+        ('Viola Music Voice', 1, 9),
+        ('Cello Music Voice', 1, 9),
+        ]),
     baca.pitches(pcs),
     )
 

@@ -325,13 +325,11 @@ segment_maker(
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs.transpose(2)
 segment_maker(
-    baca.compound([
-        baca.scope('Piano Music Voice', 3, 11),
-        baca.scope('Oboe Music Voice', 1, 8),
-        baca.scope('Clarinet Music Voice', 1, 8),
-        ],
-        timeline=True,
-        ),
+    baca.timeline([
+        ('Piano Music Voice', 3, 11),
+        ('Oboe Music Voice', 1, 8),
+        ('Clarinet Music Voice', 1, 8),
+        ]),
     baca.pitches(pcs),
     )
 

@@ -9,8 +9,7 @@ from abjad import rhythmmakertools as rhythmos
 ###############################################################################
 
 stage_measure_map = baca.StageMeasureMap([
-    # 1-8
-    2, 1, 1, 1, 1, 1, 1, 2,
+    2, 1, 1, 1, 1, 1, 1, 2, # 1-8
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
@@ -300,18 +299,15 @@ segment_maker(
 
 ### (5.3) vn, va, vc thicket ###
 
+pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
+pcs = pcs.rotate(-241).retrograde().transpose(8).invert()
 segment_maker(
     baca.compound([
         baca.scope('Violin Music Voice', 2, 4),
         baca.scope('Viola Music Voice', 2, 4),
         baca.scope('Cello Music Voice', 2, 4),
         ]),
-    baca.ScorePitchCommand(
-        operators=[abjad.Transposition(n=8), abjad.Inversion()],
-        reverse=True,
-        source=krummzeit.violet_pitch_classes.get_payload(),
-        start_index=240,
-        ),
+    baca.pitches(pcs),
     )
 
 segment_maker(

@@ -436,17 +436,13 @@ segment_maker(
     baca.pitches('B3'),
     )
 
+pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
+pcs = pcs.rotate(-121).retrograde().transpose(9).invert()
 segment_maker(
     baca.scope('Oboe Music Voice', 1, 2),
     baca.ScorePitchCommand(
-        source=krummzeit.violet_pitch_classes.get_payload(),
-        start_index=120,
-        reverse=True,
+        source=pcs,
         counts=[4, 4, 1, 1, 1, 1, 4, 1, 1, 1],
-        operators=[
-            abjad.Transposition(n=9),
-            abjad.Inversion(),
-            ],
         ),
     )
 
@@ -516,16 +512,16 @@ segment_maker(
 segment_maker(
     baca.scope('Oboe Music Voice', 4, 11),
     baca.ScorePitchCommand(
-        counts=[3, 2, 4],
         source='C6 B+5 A5 G+5 F+5 E~5',
+        counts=[3, 2, 4],
         ),
     )
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 4, 11),
     baca.ScorePitchCommand(
-        counts=[3, 2, 4],
         source='C6 B+5 A5 G+5 F+5 E~5',
+        counts=[3, 2, 4],
         ),
     )
 
@@ -538,14 +534,11 @@ segment_maker(
 
 ### (5.3) vn, va, vc thicket ###
 
+pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
+pcs = pcs.rotate(-301).retrograde().transpose(10)
 segment_maker(
     baca.scopes(strings, [(4, 10)]),
-    baca.ScorePitchCommand(
-        operators=[abjad.Transposition(n=10)],
-        reverse=True,
-        source=krummzeit.violet_pitch_classes.get_payload(),
-        start_index=300,
-        ),
+    baca.pitches(pcs),
     )
 
 segment_maker(
@@ -653,16 +646,11 @@ segment_maker(
 
 ### (9.1) pf points ###
 
+pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
+pcs = pcs.rotate(-85).retrograde().transpose(5).invert()
 segment_maker(
     baca.scope('Piano Music Voice', 19, 22),
-    baca.ScorePitchCommand(
-        operators=[
-            abjad.Transposition(n=5),
-            abjad.Inversion()],
-        reverse=True,
-        source=krummzeit.indigo_pitch_classes.get_payload(),
-        start_index=84,
-        ),
+    baca.pitches(pcs),
     )
 
 segment_maker(

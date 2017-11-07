@@ -3743,11 +3743,11 @@
                         bf'8 -\upbow \glissando
                         d''4 -\downbow \glissando
                         a'4 -\upbow \glissando
-                        e''8 -\downbow \glissando
+                        e'8 -\downbow \glissando
                         bf'4 -\upbow \glissando
-                        d''4 -\downbow \glissando
+                        d'4 -\downbow \glissando
                         e'8 -\upbow \glissando
-                        d''4 -\downbow \glissando
+                        d'4 -\downbow \glissando
                         g'4 -\upbow
                         g'4 -\downbow \glissando
                         ef'4 -\upbow
@@ -3828,7 +3828,7 @@
                         af''4 -\upbow \glissando
                         b'8 -\downbow \glissando
                         fs''4 -\upbow \glissando
-                        f''4 -\downbow \glissando
+                        f'4 -\downbow \glissando
                         af'4 -\upbow \glissando
                         b'4 -\downbow \glissando
                         g'8 -\upbow \glissando
@@ -3839,7 +3839,7 @@
                         g'4 -\downbow \glissando
                         ef'8 -\upbow \glissando
                         cs'4 -\downbow \glissando
-                        ef'4 -\upbow \glissando
+                        ef4 -\upbow \glissando
                         fs4 -\downbow \glissando
                         b4 -\upbow
                         s1 * 21/2
@@ -3858,7 +3858,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
                             ef'''2 -\staccatissimo
-                            b''4 -\staccatissimo
+                            b'''4 -\staccatissimo
                         }
                         {
                             ef'''8 -\staccatissimo
@@ -3909,7 +3909,7 @@
                         g''4 -\downbow \glissando
                         f''4 -\upbow \glissando
                         bf'8 -\downbow \glissando
-                        e''4 -\upbow \glissando
+                        e'4 -\upbow \glissando
                         g'4 -\downbow \glissando
                         f'4 -\upbow \glissando
                         bf'4 -\downbow \glissando
@@ -3919,7 +3919,7 @@
                         cs'8 -\downbow \glissando
                         ef'4 -\upbow \glissando
                         fs'4 -\downbow \glissando
-                        f'8 -\upbow \glissando
+                        f8 -\upbow \glissando
                         bf4 -\downbow \glissando
                         f4 -\upbow \glissando
                         e4 -\downbow \glissando
@@ -3937,10 +3937,10 @@
                                     }
                             e'''4 -\staccatissimo
                             cs'''4 -\staccatissimo
-                            bf''8 -\staccatissimo ~
+                            bf'''8 -\staccatissimo ~
                         }
                         \times 4/5 {
-                            bf''4.
+                            bf'''4.
                             af'''4 -\staccatissimo
                         }
                         {

@@ -442,8 +442,8 @@
                             \override Beam.positions = #'(-5 . -5)
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #4
-                            bf'16 \p [
-                            bf'16
+                            bf''16 \p [
+                            bf''16
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -451,7 +451,7 @@
                                             \finger
                                                 1
                                     }
-                            bf'16
+                            bf''16
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -459,7 +459,7 @@
                                             \finger
                                                 2
                                     }
-                            bf'16
+                            bf''16
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -467,8 +467,8 @@
                                             \finger
                                                 1
                                     }
-                            a'8.
-                            a'8. ]
+                            a''8.
+                            a''8. ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -486,7 +486,7 @@
                                             \finger
                                                 2
                                     }
-                            a'8
+                            a''8
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -494,8 +494,8 @@
                                             \finger
                                                 1
                                     }
-                            fs'32
-                            f'32 ]
+                            fs''32
+                            f'''32 ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -506,7 +506,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            a'8 [
+                            a''8 [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -514,7 +514,7 @@
                                             \finger
                                                 2
                                     }
-                            b'8
+                            b''8
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -522,8 +522,8 @@
                                             \finger
                                                 1
                                     }
-                            bf'8
-                            bf'8 ]
+                            bf''8
+                            bf''8 ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -531,7 +531,7 @@
                                             \finger
                                                 1
                                     }
-                            bf'4. \startTrillSpan
+                            bf''4. \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -539,7 +539,7 @@
                                             \finger
                                                 2
                                     }
-                            bf'4. \stopTrillSpan \startTrillSpan
+                            bf''4. \stopTrillSpan \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -551,8 +551,8 @@
                         r4 \stopTrillSpan
                         r2
                         \times 8/9 {
-                            af'8.
-                            g'4 \startTrillSpan
+                            af''8.
+                            g''4 \startTrillSpan
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -560,7 +560,7 @@
                                             \finger
                                                 1
                                     }
-                            f'16 \stopTrillSpan [
+                            f'''16 \stopTrillSpan [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -568,7 +568,7 @@
                                             \finger
                                                 2
                                     }
-                            e'16 ]
+                            e'''16 ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -578,8 +578,8 @@
                                     }
                         }
                         \times 4/5 {
-                            e'16 [
-                            e'16
+                            e'''16 [
+                            e'''16
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -587,7 +587,7 @@
                                             \finger
                                                 1
                                     }
-                            e'16
+                            e'''16
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -595,7 +595,7 @@
                                             \finger
                                                 2
                                     }
-                            ef''16
+                            ef'''16
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -630,8 +630,8 @@
                                             \finger
                                                 1
                                     }
-                            a'8 \stopTrillSpan [
-                            fs'8 ]
+                            a''8 \stopTrillSpan [
+                            fs''8 ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -642,7 +642,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            g'16 [
+                            g''16 [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -650,7 +650,7 @@
                                             \finger
                                                 2
                                     }
-                            a'16
+                            a''16
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -658,8 +658,8 @@
                                             \finger
                                                 1
                                     }
-                            a'16
-                            a'16
+                            a''16
+                            a''16
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -675,7 +675,7 @@
                                             \finger
                                                 2
                                     }
-                            b'8. ]
+                            b''8. ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -687,8 +687,8 @@
                         r2
                         r4
                         \times 8/9 {
-                            bf'16. [
-                            af'8
+                            bf''16. [
+                            af''8
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -696,7 +696,7 @@
                                             \finger
                                                 1
                                     }
-                            cs''32
+                            cs'''32
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -740,7 +740,7 @@
                                                 1
                                     }
                             c''32.
-                            c''32. ]
+                            c'''32. ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -750,7 +750,7 @@
                                     }
                         }
                         \times 8/9 {
-                            b'16. [
+                            b''16. [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -758,7 +758,7 @@
                                             \finger
                                                 2
                                     }
-                            g'8
+                            g''8
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -766,8 +766,8 @@
                                             \finger
                                                 1
                                     }
-                            e'32
-                            af'32 ]
+                            e'''32
+                            af''32 ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -778,7 +778,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            g'8 [
+                            g''8 [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -786,7 +786,7 @@
                                             \finger
                                                 2
                                     }
-                            g'8
+                            g''8
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -823,7 +823,7 @@
                         r4. \stopTrillSpan
                         r2.
                         \times 2/3 {
-                            bf'8.
+                            bf''8.
                             e'4 \startTrillSpan
                                 ^ \markup {
                                     \override
@@ -868,7 +868,7 @@
                                             \finger
                                                 2
                                     }
-                            cs''16
+                            cs'''16
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -876,8 +876,8 @@
                                             \finger
                                                 1
                                     }
-                            cs''8.
-                            c''8. ]
+                            cs'''8.
+                            c'''8. ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -887,7 +887,7 @@
                                     }
                         }
                         \times 8/9 {
-                            b'16. [
+                            b''16. [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -895,7 +895,7 @@
                                             \finger
                                                 2
                                     }
-                            g'8
+                            g''8
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -903,7 +903,7 @@
                                             \finger
                                                 1
                                     }
-                            fs'32
+                            fs''32
                             f'32 ]
                                 ^ \markup {
                                     \override
@@ -932,7 +932,7 @@
                                                 1
                                     }
                             f'16
-                            e'16
+                            e'''16
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -940,7 +940,7 @@
                                             \finger
                                                 1
                                     }
-                            ef''8.
+                            ef'''8.
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -948,7 +948,7 @@
                                             \finger
                                                 2
                                     }
-                            bf'8. ]
+                            bf''8. ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2424,7 +2424,7 @@
                             ef''2 \glissando
                         }
                         \times 4/5 {
-                            f''16 \glissando
+                            f'16 \glissando
                             fs''4 \glissando
                         }
                         \times 4/7 {
@@ -2453,7 +2453,7 @@
                         }
                         \times 2/3 {
                             e'8 \glissando
-                            c''4 \ppp
+                            c'4 \ppp
                             \revert NoteHead.style
                         }
                         r8
@@ -2552,14 +2552,14 @@
                         }
                         \times 4/5 {
                             cs'16 \glissando
-                            e'4 \glissando
+                            e4 \glissando
                         }
                         \times 4/7 {
                             d'4 \glissando
                             ef'8. \glissando
                         }
                         {
-                            f'4 \glissando
+                            f4 \glissando
                             fs2 \glissando
                         }
                         \times 4/5 {
@@ -2575,7 +2575,7 @@
                             a4 \glissando
                         }
                         \times 4/7 {
-                            c'4 \glissando
+                            c4 \glissando
                             g8. \glissando
                         }
                         \times 2/3 {
@@ -2588,7 +2588,7 @@
                         }
                         \times 4/7 {
                             e4 \glissando
-                            c'8. \ppp
+                            c8. \ppp
                             \revert NoteHead.style
                         }
                         s1 * 9/4

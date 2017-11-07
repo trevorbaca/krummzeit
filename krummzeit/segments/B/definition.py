@@ -9,18 +9,18 @@ from abjad import rhythmmakertools as rhythmos
 ###############################################################################
 
 stage_measure_map = baca.StageMeasureMap([
-    4, 1,                       # stage 1 + 1 halt
-    1, 1, 1, 1, 1, 1, 1, 1,     # stage 2 + 4 halts
-    1, 1, 1, 1, 1, 1, 1, 1,     # stage 3 + 4 halts
-    2,                          # stage 4
-    2,                          # stage 5
-    2,                          # stage 6
-    1, 1, 1, 1,                 # stage 7 + 2 halts
-    2,                          # stage 8
-    2,                          # stage 9
-    4,                          # stage 10
-    3,                          # stage 11
-    2,                          # stage 12
+    4, 1,                       # 1 + halt
+    1, 1, 1, 1, 1, 1, 1, 1,     # 2 + 4 halts
+    1, 1, 1, 1, 1, 1, 1, 1,     # 3 + 4 halts
+    2,                          # 4
+    2,                          # 5
+    2,                          # 6
+    1, 1, 1, 1,                 # 7 + 2 halts
+    2,                          # 8
+    2,                          # 9
+    4,                          # 10
+    3,                          # 11
+    2,                          # 12
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([

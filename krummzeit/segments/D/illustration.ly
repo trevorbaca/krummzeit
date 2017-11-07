@@ -1548,6 +1548,9 @@
                 \tag percussion
                 \context PercussionMusicStaff = "Percussion Staff" {
                     \context PercussionMusicVoice = "Percussion Music Voice" {
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'6
                         r16
@@ -1569,7 +1572,6 @@
                         s1 * 11/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/17 {
-                            \clef "percussion"
                             c'2 -\accent
                                 ^ \markup {
                                     \whiteout
@@ -1590,64 +1592,74 @@
                                     }
                             c'1 -\accent
                             c'2 -\accent
-                            c'8 -\accent ~
+                            c'8 -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/13 {
-                            c'2..
+                            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
+                            c'2.. \repeatTie
                             c'2 -\accent
-                            c'4 -\accent ~
+                            c'4 -\accent
                         }
                         {
-                            c'2 ~
-                            c'8 ~
+                            c'2 \repeatTie
+                            c'8 \repeatTie
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
-                            c'8
+                            c'8 \repeatTie
+                            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                             c'2 -\accent
-                            c'4. -\accent ~
+                            c'4. -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
-                            c'2 ~
-                            c'8
+                            c'2 \repeatTie
+                            c'8 \repeatTie
+                            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                             c'2 -\accent
-                            c'2 -\accent ~
-                            c'8 ~
+                            c'2 -\accent
+                            c'8 \repeatTie
                         }
                         {
-                            c'4.
-                            c'4. -\accent ~
+                            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
+                            c'4. \repeatTie
+                            c'4. -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            c'8
-                            c'2.. -\accent ~
+                            c'8 \repeatTie
+                            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
+                            c'2.. -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            c'8
+                            c'8 \repeatTie
+                            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                             c'2 -\accent
-                            c'2 -\accent ~
-                            c'8 ~
+                            c'2 -\accent
+                            c'8 \repeatTie
                         }
                         {
-                            c'4.
-                            c'4. -\accent ~
+                            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
+                            c'4. \repeatTie
+                            c'4. -\accent
                         }
                         {
-                            c'8
-                            c'2.. -\accent ~
+                            c'8 \repeatTie
+                            c'2.. -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            c'8
+                            c'8 \repeatTie
+                            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                             c'2 -\accent
                             c'1 -\accent
                             c'4. -\accent
                         }
                         s1 * 27/4
+                        \stopStaff
+                        \startStaff
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             \stopStaff
@@ -1814,8 +1826,8 @@
                         \startStaff
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'6
-                        \override Tie.direction = #up
-                        c1 :32 \ppp ~
+                        \override RepeatTie.direction = #up
+                        c1 :32 \ppp
                             ^ \markup {
                                 \whiteout
                                     \override
@@ -1824,18 +1836,18 @@
                                             "suspended cymbal"
                                 }
                             - \markup { "attackless roll with very soft yarn mallets" }
-                        c4 :32 ~
-                        c1 :32 ~
-                        c1 :32 ~
-                        c8 :32 ~
-                        c2. :32 ~
-                        c2 :32 ~
-                        c8 :32 ~
-                        c1 :32 ~
-                        c8 :32
+                        c4 :32 \repeatTie
+                        c1 :32 \repeatTie
+                        c1 :32 \repeatTie
+                        c8 :32 \repeatTie
+                        c2. :32 \repeatTie
+                        c2 :32 \repeatTie
+                        c8 :32 \repeatTie
+                        c1 :32 \repeatTie
+                        c8 :32 \repeatTie
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
-                        \revert Tie.direction
+                        \revert RepeatTie.direction
                         \stopStaff
                         \startStaff
                     }
@@ -1938,7 +1950,7 @@
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #3
                             fs''4 \glissando \< \pp \startTextSpan
-                            b'2 \glissando
+                            b''2 \glissando
                         }
                         \times 4/5 {
                             af''16 \glissando
@@ -1946,7 +1958,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            bf'2 \glissando
+                            bf''2 \glissando
                             f''4. \glissando
                         }
                         \times 2/3 {
@@ -1954,7 +1966,7 @@
                             c''4 \glissando
                         }
                         \times 4/5 {
-                            bf'8 \glissando
+                            bf''8 \glissando
                             cs''2 \f
                         }
                         r2
@@ -1990,7 +2002,7 @@
                         }
                         \times 2/3 {
                             f''8 \glissando
-                            b'4 \glissando
+                            b''4 \glissando
                         }
                         \times 4/5 {
                             a''8. \glissando
@@ -2011,7 +2023,7 @@
                         }
                         \times 4/7 {
                             fs''4 \glissando
-                            b'8. \glissando
+                            b''8. \glissando
                         }
                         \times 2/3 {
                             af''16 \glissando [
@@ -2024,7 +2036,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             af''4 \glissando
-                            bf'8. \glissando
+                            bf''8. \glissando
                         }
                         \times 2/3 {
                             ef''8 \glissando
@@ -2050,7 +2062,7 @@
                         }
                         \times 4/5 {
                             d''16 \glissando
-                            b'4 \glissando
+                            b''4 \glissando
                         }
                         \times 4/7 {
                             g''2 \glissando
@@ -2058,7 +2070,7 @@
                         }
                         \times 2/3 {
                             c''8 \glissando
-                            b'4 \glissando
+                            b''4 \glissando
                         }
                         \times 4/5 {
                             cs''8 \glissando
@@ -2086,7 +2098,7 @@
                         }
                         \times 4/5 {
                             fs''8 \glissando
-                            b'2 \glissando
+                            b''2 \glissando
                         }
                         {
                             a''2 \glissando
@@ -2094,14 +2106,14 @@
                         }
                         \times 2/3 {
                             fs''4 \glissando
-                            bf'2 \glissando
+                            bf''2 \glissando
                         }
                         \times 4/5 {
                             fs''16 \glissando
                             cs''4 \glissando
                         }
                         \times 4/7 {
-                            bf'4 \glissando
+                            bf''4 \glissando
                             cs''8. \glissando
                         }
                         \times 2/3 {
@@ -2114,11 +2126,11 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            b'4 \glissando
+                            b''4 \glissando
                             d''8. \glissando
                         }
                         {
-                            b'4 \glissando
+                            b''4 \glissando
                             af''2
                             \revert NoteHead.style
                             \revert Beam.positions
@@ -2229,12 +2241,12 @@
                             c''4 \glissando
                         }
                         \times 4/5 {
-                            bf'16 \glissando
+                            bf''16 \glissando
                             a''4 \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
-                            b'2 \glissando
+                            b''2 \glissando
                             cs''4. \glissando
                         }
                         \times 2/3 {
@@ -2278,7 +2290,7 @@
                         }
                         \times 4/7 {
                             c''2 \glissando
-                            b'4. \glissando
+                            b''4. \glissando
                         }
                         \times 2/3 {
                             af''8 \glissando
@@ -2312,11 +2324,11 @@
                         }
                         {
                             a''4 \glissando
-                            b'2
+                            b''2
                         }
                         \times 4/5 {
-                            b'16
-                            b'4 \glissando
+                            b''16
+                            b''4 \glissando
                         }
                         \times 4/7 {
                             a''2
@@ -2327,7 +2339,7 @@
                             a''2 \glissando
                         }
                         \times 4/5 {
-                            b'8 \glissando
+                            b''8 \glissando
                             \revert TextSpanner.bound-details
                             \revert TextSpanner.dash-fraction
                             \revert TextSpanner.dash-period
@@ -2357,7 +2369,7 @@
                         }
                         \times 2/3 {
                             c''8 \glissando
-                            b'4 \glissando
+                            b''4 \glissando
                         }
                         \times 4/5 {
                             c''32 \glissando [
@@ -2372,13 +2384,13 @@
                             cs''2 \glissando
                         }
                         \times 4/5 {
-                            bf'16. \glissando
-                            b'4. \glissando
+                            bf''16. \glissando
+                            b''4. \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             ef''2 \glissando
-                            b'4. \glissando
+                            b''4. \glissando
                         }
                         {
                             g''8 \glissando
@@ -2390,7 +2402,7 @@
                         }
                         \times 4/7 {
                             g''8 \glissando [
-                            bf'16. ] \glissando
+                            bf''16. ] \glissando
                         }
                         \times 2/3 {
                             g''8 \glissando
@@ -2402,10 +2414,10 @@
                         }
                         \times 4/7 {
                             d''4 \glissando
-                            bf'8. \glissando
+                            bf''8. \glissando
                         }
                         \times 2/3 {
-                            b'4 \glissando
+                            b''4 \glissando
                             fs''2 \glissando
                         }
                         \times 4/5 {
@@ -2427,7 +2439,7 @@
                             f''2 \glissando
                         }
                         \times 4/7 {
-                            bf'2 \glissando
+                            bf''2 \glissando
                             c''4. \glissando
                         }
                         \times 2/3 {
@@ -2435,8 +2447,8 @@
                             f''4 \glissando
                         }
                         \times 4/5 {
-                            bf'16 \glissando
-                            b'4 \glissando
+                            bf''16 \glissando
+                            b''4 \glissando
                         }
                         \times 4/7 {
                             a''4 \glissando
@@ -2448,7 +2460,7 @@
                         }
                         \times 4/5 {
                             fs''8. \glissando
-                            b'2. \glissando
+                            b''2. \glissando
                         }
                         \times 4/7 {
                             cs''4 \glissando
@@ -2459,12 +2471,12 @@
                             af''2.. \glissando
                         }
                         \times 4/5 {
-                            b'8 \glissando
+                            b''8 \glissando
                             cs''2 \glissando
                         }
                         \times 4/7 {
                             f''4 \glissando
-                            b'8. \glissando
+                            b''8. \glissando
                         }
                         \times 2/3 {
                             a''8 \glissando
@@ -2657,7 +2669,7 @@
                             \revert TextSpanner.bound-details
                             \revert TextSpanner.dash-fraction
                             \revert TextSpanner.dash-period
-                            bf'2 \f \stopTextSpan
+                            bf''2 \f \stopTextSpan
                         }
                         r2.
                         \tweak text #tuplet-number::calc-fraction-text
@@ -2671,23 +2683,23 @@
                             fs''8. \glissando
                         }
                         \times 2/3 {
-                            b'4 \glissando
+                            b''4 \glissando
                             ef''2 \glissando
                         }
                         \times 4/5 {
-                            b'16 \glissando
+                            b''16 \glissando
                             af''4 \glissando
                         }
                         \times 4/7 {
-                            bf'4 \glissando
+                            bf''4 \glissando
                             cs''8. \glissando
                         }
                         \times 2/3 {
-                            b'16 \glissando [
+                            b''16 \glissando [
                             g''8 ] \glissando
                         }
                         \times 4/5 {
-                            bf'16 \glissando
+                            bf''16 \glissando
                             a''4 \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -2713,15 +2725,15 @@
                             c''4 \glissando
                         }
                         \times 4/5 {
-                            b'32 \glissando [
+                            b''32 \glissando [
                             cs''8 ] \glissando
                         }
                         \times 4/7 {
                             fs''4 \glissando
-                            b'8.
+                            b''8.
                         }
                         {
-                            b'8 \glissando
+                            b''8 \glissando
                             c''4 \glissando
                         }
                         \times 4/5 {
@@ -2738,7 +2750,7 @@
                         }
                         s1 * 9/4
                         \times 2/3 {
-                            b'4 \ff \glissando
+                            b''4 \ff \glissando
                                 ^ \markup {
                                     \whiteout
                                         \upright
@@ -2752,7 +2764,7 @@
                         }
                         \times 4/7 {
                             a''2 \glissando
-                            b'4. \glissando
+                            b''4. \glissando
                         }
                         \times 2/3 {
                             fs''8 \glissando
@@ -2764,10 +2776,10 @@
                         }
                         \times 4/7 {
                             fs''4 \glissando
-                            b'8. \glissando
+                            b''8. \glissando
                         }
                         \times 2/3 {
-                            bf'8 \glissando
+                            bf''8 \glissando
                             cs''4 \glissando
                         }
                         \times 4/5 {
@@ -2784,7 +2796,7 @@
                             g''1 \glissando
                         }
                         \times 4/5 {
-                            bf'16. \glissando
+                            bf''16. \glissando
                             g''4. \glissando
                         }
                         \times 4/7 {
@@ -2792,7 +2804,7 @@
                             af''8. \glissando
                         }
                         \times 2/3 {
-                            b'8 \glissando
+                            b''8 \glissando
                             c''4 \glissando
                         }
                         \times 4/5 {
@@ -2800,7 +2812,7 @@
                             c''4 \glissando
                         }
                         \times 4/7 {
-                            b'4 \glissando
+                            b''4 \glissando
                             a''8. \glissando
                         }
                         {

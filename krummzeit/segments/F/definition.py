@@ -329,7 +329,9 @@ segment_maker(
         baca.scope('Piano Music Voice', 3, 11),
         baca.scope('Oboe Music Voice', 1, 8),
         baca.scope('Clarinet Music Voice', 1, 8),
-        ]),
+        ],
+        timeline=True,
+        ),
     baca.pitches(pcs),
     )
 

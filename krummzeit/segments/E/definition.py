@@ -11,12 +11,12 @@ from abjad import rhythmmakertools as rhythmos
 strings = ['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice']
 
 stage_measure_map = baca.StageMeasureMap([
-    8,                      # stage 1
-    2, 1, 1, 1, 1,          # stages 2-6
-    2, 1, 2, 1, 1, 1, 2,    # stages 7-13
-    1, 1,                   # stages 14-15
-    1, 1, 1, 1, 1, 1,       # stages 16-21
-    2, 1,                   # stages 22-23
+    8,                      # 1
+    2, 1, 1, 1, 1,          # 2-6
+    2, 1, 2, 1, 1, 1, 2,    # 7-13
+    1, 1,                   # 14-15
+    1, 1, 1, 1, 1, 1,       # 16-21
+    2, 1,                   # 22-23
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
@@ -437,13 +437,11 @@ segment_maker(
     )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
-pcs = pcs.rotate(-121).retrograde().transpose(9).invert()
+pcs = pcs.rotate(-121).retrograde().transpose(9).invert().sequence()
+pcs = pcs.repeat_by([4, 4, 1, 1, 1, 1, 4, 1, 1, 1], cyclic=True)
 segment_maker(
     baca.scope('Oboe Music Voice', 1, 2),
-    baca.ScorePitchCommand(
-        source=pcs,
-        counts=[4, 4, 1, 1, 1, 1, 4, 1, 1, 1],
-        ),
+    baca.pitches(pcs),
     )
 
 segment_maker(
@@ -509,20 +507,18 @@ segment_maker(
 
 ### (5.1) ob, cl ###
 
+pcs = baca.PitchClassSegment('C6 B+5 A5 G+5 F+5 E~5')
+pcs = pcs.sequence().repeat_by([3, 2, 4], cyclic=True)
 segment_maker(
     baca.scope('Oboe Music Voice', 4, 11),
-    baca.ScorePitchCommand(
-        source='C6 B+5 A5 G+5 F+5 E~5',
-        counts=[3, 2, 4],
-        ),
+    baca.pitches(pcs),
     )
 
+pcs = baca.PitchClassSegment('C6 B+5 A5 G+5 F+5 E~5')
+pcs = pcs.sequence().repeat_by([3, 2, 4], cyclic=True)
 segment_maker(
     baca.scope('Clarinet Music Voice', 4, 11),
-    baca.ScorePitchCommand(
-        source='C6 B+5 A5 G+5 F+5 E~5',
-        counts=[3, 2, 4],
-        ),
+    baca.pitches(pcs),
     )
 
 segment_maker(

@@ -530,12 +530,11 @@ segment_maker(
     )
 
 segment_maker(
-    baca.compound([
-        baca.scope('Piano Music Voice', 1, 13),
-        baca.scope('Violin Music Voice', 1, 13),
-        baca.scope('Oboe Music Voice', 1, 13),
-        baca.scope('Clarinet Music Voice', 1, 13),
-        ],
+    baca.scopes(
+        ['Piano Music Voice',
+        'Violin Music Voice',
+        'Oboe Music Voice',
+        'Clarinet Music Voice'], [(1, 13)],
         ),
     krummzeit.displacement(),
     )

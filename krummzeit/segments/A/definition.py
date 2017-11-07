@@ -496,7 +496,9 @@ segment_maker(
         baca.scope('Piano Music Voice', 1, 4),
         baca.scope('Violin Music Voice', 1, 4),
         baca.scope('Clarinet Music Voice', 1, 4),
-        ]),
+        ],
+        timeline=True,
+        ),
     baca.pitches(krummzeit.indigo_pitch_classes.get_payload())
     )
 
@@ -507,7 +509,9 @@ segment_maker(
         baca.scope('Piano Music Voice', 5, 8),
         baca.scope('Violin Music Voice', 5, 8),
         baca.scope('Clarinet Music Voice', 5, 8),
-        ]),
+        ],
+        timeline=True,
+        ),
     baca.pitches(pcs),
     )
 
@@ -519,7 +523,9 @@ segment_maker(
         baca.scope('Violin Music Voice', 9, 13),
         baca.scope('Oboe Music Voice', 9, 13),
         baca.scope('Clarinet Music Voice', 9, 13),
-        ]),
+        ],
+        timeline=True,
+        ),
     baca.pitches(pcs),
     )
 
@@ -529,8 +535,8 @@ segment_maker(
         baca.scope('Violin Music Voice', 1, 13),
         baca.scope('Oboe Music Voice', 1, 13),
         baca.scope('Clarinet Music Voice', 1, 13),
-        ]),
-    # TODO: iterate timeline during displacement
+        ],
+        ),
     krummzeit.displacement(),
     )
 
@@ -694,7 +700,9 @@ segment_maker(
         baca.scope('Viola Music Voice', 12, 16),
         baca.scope('Cello Music Voice', 12, 17),
         baca.scope('Violin Music Voice', 14, 18),
-        ]),
+        ],
+        timeline=True,
+        ),
     baca.pitches(krummzeit.violet_pitch_classes.get_payload())
     )
 
@@ -763,7 +771,9 @@ segment_maker(
         baca.scope('Cello Music Voice', 18, 22),
         baca.scope('Violin Music Voice', 19, 22),
         baca.scope('Piano Music Voice', 20, 23),
-        ]),
+        ],
+        timeline=True,
+        ),
     baca.pitches(pcs),
     )
 

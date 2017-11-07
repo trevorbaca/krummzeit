@@ -306,7 +306,9 @@ segment_maker(
         baca.scope('Violin Music Voice', 2, 4),
         baca.scope('Viola Music Voice', 2, 4),
         baca.scope('Cello Music Voice', 2, 4),
-        ]),
+        ],
+        timeline=True,
+        ),
     baca.pitches(pcs),
     )
 

@@ -500,35 +500,6 @@ segment_maker(
     baca.pitches(krummzeit.indigo_pitch_classes.get_payload())
     )
 
-#segment_maker(
-#    baca.compound([
-#        baca.scope('Piano Music Voice', 5, 13),
-#        baca.scope('Violin Music Voice', 5, 13),
-#        baca.scope('Oboe Music Voice', 5, 13),
-#        baca.scope('Clarinet Music Voice', 5, 13),
-#        ]),
-#    baca.pitches(krummzeit.indigo_pitch_classes.get_payload())
-#    )
-#
-#segment_maker(
-#    baca.compound([
-#        baca.scope('Piano Music Voice', 5, 8),
-#        baca.scope('Violin Music Voice', 5, 8),
-#        baca.scope('Clarinet Music Voice', 5, 8),
-#        ]),
-#    baca.ScorePitchCommand(operators=[abjad.Transposition(n=1)]),
-#    )
-#
-#segment_maker(
-#    baca.compound([
-#        baca.scope('Piano Music Voice', 9, 13),
-#        baca.scope('Violin Music Voice', 9, 13),
-#        baca.scope('Oboe Music Voice', 9, 13),
-#        baca.scope('Clarinet Music Voice', 9, 13),
-#        ]),
-#    baca.ScorePitchCommand(operators=[abjad.Transposition(n=3)]),
-#    )
-
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs.transpose(1)
 segment_maker(

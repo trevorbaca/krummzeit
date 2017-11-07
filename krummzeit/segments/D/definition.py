@@ -99,11 +99,11 @@ segment_maker.copy_rhythm(
 
 segment_maker(
     baca.scope('Percussion Music Voice', 3, 6),
-    baca.clef('percussion'),
     baca.RhythmBuilder(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
-            talea=rhythmos.Talea([1, 2], 2),
             extra_counts_per_division=[2, 1, 0],
+            talea=rhythmos.Talea([1, 2], 2),
+            tie_specifier=rhythmos.TieSpecifier(repeat_ties=True),
             ),
         ),
     krummzeit.markup.sponges(),
@@ -400,9 +400,14 @@ segment_maker.copy_rhythm(
 ### (3.4) tam-tam, (3.5) vn, va, vc ###
 
 segment_maker(
+    baca.scope('Percussion Music Voice', 1, 7),
+    baca.one_line_staff(),
+    baca.staff_positions([0]),
+    )
+
+segment_maker(
     baca.scope('Percussion Music Voice', 1, 2),
     baca.reiterated_dynamic('pp'),
-    baca.staff_positions([0]),
     )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
@@ -450,18 +455,15 @@ segment_maker(
     baca.staff_positions([0]),
     )
 
+pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
+pcs = pcs.rotate(-241).retrograde().transpose(7).invert()
 segment_maker(
     baca.compound([
         baca.scope('Viola Music Voice', 4, 9),
         baca.scope('Violin Music Voice', 6, 9),
         baca.scope('Cello Music Voice', 6, 9),
         ]),
-    baca.ScorePitchCommand(
-        operators=[abjad.Transposition(n=7), abjad.Inversion()],
-        reverse=True,
-        source=krummzeit.violet_pitch_classes.get_payload(),
-        start_index=240,
-        ),
+    baca.pitches(pcs),
     )
 
 segment_maker(
@@ -615,24 +617,23 @@ segment_maker(
 
 segment_maker(
     baca.scope('Percussion Music Voice', 12, 13),
-    baca.clef('percussion'),
-    baca.one_line_staff(),
     baca.RhythmBuilder(
         rhythm_maker=rhythmos.NoteRhythmMaker(
             tie_specifier=rhythmos.TieSpecifier(
+                repeat_ties=True,
                 tie_across_divisions=True,
                 ),
             ),
         ),
-    baca.staff_positions([0]),
-    krummzeit.markup.suspended_cymbal(),
-    )
-
-segment_maker(
-    baca.scope('Percussion Music Voice', 12, 13),
+    baca.clef('percussion'),
     baca.dynamic('ppp'),
+    baca.dynamic_line_spanner_staff_padding(6),
+    baca.one_line_staff(),
+    baca.repeat_ties_up(),
+    baca.staff_positions([0]),
     baca.stem_tremolo(),
     krummzeit.markup.attackless_roll(),
+    krummzeit.markup.suspended_cymbal(),
     )
 
 ### VERTICAL ALIGNMENT ###
@@ -678,12 +679,6 @@ segment_maker(
     baca.beam_positions(-4),
     baca.dynamic_line_spanner_staff_padding(6),
     baca.tuplet_bracket_staff_padding(3),
-    )
-
-segment_maker(
-    baca.scope('Percussion Music Voice', 12, 13),
-    baca.dynamic_line_spanner_staff_padding(6),
-    baca.ties_up(),
     )
 
 segment_maker(

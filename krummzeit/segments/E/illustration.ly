@@ -961,8 +961,8 @@
                         s1 * 3/4
                         \times 4/5 {
                             r8
-                            c'''4 \ff
-                            c'''16 [
+                            c'4 \ff
+                            c'16 [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -970,7 +970,7 @@
                                             \finger
                                                 1
                                     }
-                            c'''16 ] \glissando
+                            c'16 ] \glissando
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -978,7 +978,7 @@
                                             \finger
                                                 2
                                     }
-                            bqs''2. ~
+                            bqs'2. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -988,13 +988,13 @@
                                     }
                         }
                         {
-                            bqs''2.
-                            bqs''2 ~
+                            bqs'2.
+                            bqs'2 ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
-                            bqs''1 \glissando
-                            a''2. ~
+                            bqs'1 \glissando
+                            a'2. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1005,13 +1005,13 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            a''2.
+                            a'2.
                             r2
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             r8.
-                            a''4
+                            a'4
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1019,7 +1019,7 @@
                                             \finger
                                                 2
                                     }
-                            a''16
+                            a'16
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1027,11 +1027,11 @@
                                             \finger
                                                 1
                                     }
-                            a''2. ~
+                            a'2. ~
                         }
                         \times 4/5 {
-                            a''2. \glissando
-                            gqs''2 ~
+                            a'2. \glissando
+                            gqs'2 ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1041,8 +1041,8 @@
                                     }
                         }
                         {
-                            gqs''2..
-                            gqs''8
+                            gqs'2..
+                            gqs'8
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1050,7 +1050,7 @@
                                             \finger
                                                 2
                                     }
-                            gqs''4. ~
+                            gqs'4. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1061,13 +1061,13 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            gqs''2.
+                            gqs'2.
                             r2
                         }
                         {
                             r16
-                            fqs''8 [
-                            fqs''32 \glissando
+                            fqs'8 [
+                            fqs'32 \glissando
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1075,7 +1075,7 @@
                                             \finger
                                                 1
                                     }
-                            eqf''32 ]
+                            eqf'32 ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1083,7 +1083,7 @@
                                             \finger
                                                 2
                                     }
-                            eqf''4. ~
+                            eqf'4. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1094,8 +1094,8 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/10 {
-                            eqf''2.
-                            eqf''2
+                            eqf'2.
+                            eqf'2
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
@@ -1295,12 +1295,12 @@
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'5
                             \override TupletBracket.staff-padding = #3
-                            a''2. \ff
+                            a2. \ff
                             r2
                         }
                         {
                             r8
-                            a''4
+                            a4
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1308,7 +1308,7 @@
                                             \finger
                                                 1
                                     }
-                            a''16 \glissando [
+                            a16 \glissando [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1316,7 +1316,7 @@
                                             \finger
                                                 2
                                     }
-                            gtqs''16 ]
+                            gtqs'16 ]
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1324,12 +1324,12 @@
                                             \finger
                                                 1
                                     }
-                            gtqs''2. ~
+                            gtqs'2. ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            gtqs''2. \glissando
-                            fs''2 ~
+                            gtqs'2. \glissando
+                            fs'2 ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1340,8 +1340,8 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            fs''2
-                            fs''4. ~
+                            fs'2
+                            fs'4. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1351,13 +1351,13 @@
                                     }
                         }
                         \times 4/5 {
-                            fs''2.
+                            fs'2.
                             r2
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 11/20 {
                             r4.
-                            fs''2
+                            fs'2
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1365,8 +1365,8 @@
                                             \finger
                                                 1
                                     }
-                            fs''8 \glissando
-                            eqs''1. ~
+                            fs'8 \glissando
+                            eqs'1. ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1377,8 +1377,8 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            eqs''2.
-                            eqs''2 ~
+                            eqs'2.
+                            eqs'2 ~
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1389,8 +1389,8 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 10/11 {
-                            eqs''4..
-                            eqs''16 \glissando [
+                            eqs'4..
+                            eqs'16 \glissando [
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -1398,11 +1398,11 @@
                                             \finger
                                                 1
                                     }
-                            dqs''8. ~ ]
+                            dqs'8. ~ ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/10 {
-                            dqs''2.
+                            dqs'2.
                             r2
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding

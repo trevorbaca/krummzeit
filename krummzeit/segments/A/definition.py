@@ -497,7 +497,7 @@ segment_maker(
         ('Violin Music Voice', 1, 4),
         ('Clarinet Music Voice', 1, 4),
         ]),
-    baca.pitches(krummzeit.indigo_pitch_classes.get_payload())
+    baca.pitches(krummzeit.indigo_pitch_classes.get_payload(), repeats=True)
     )
 
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())

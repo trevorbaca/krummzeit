@@ -307,8 +307,22 @@
                             f''16 -\staccato
                             fs''16 -\staccato
                             cs''16 -\staccato
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             a'16 -\staccato
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             a'16 -\staccato
+                                - \tweak color #red
+                                ^ \markup { @ }
                             g''16 -\staccato
                             a'16 -\staccato
                             ef''16 -\staccato
@@ -789,21 +803,62 @@
                         s1 * 43/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 12/7 {
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             fs4. \fff
                                 ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            "gridato possibile"
+                                    \column
+                                        {
+                                            \line
+                                                {
+                                                    \whiteout
+                                                        \upright
+                                                            "gridato possibile"
+                                                }
+                                            \line
+                                                {
+                                                    @
+                                                }
+                                        }
                                     }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             fs2
+                                - \tweak color #red
+                                ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             fs2.
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             fs1
+                                - \tweak color #red
+                                ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 13/7 {
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             \override TextSpanner.bound-details.left-broken.text = #'#f
                             \override TextSpanner.bound-details.left.padding = #-1
                             \override TextSpanner.bound-details.left.stencil-align-dir-y = #0
@@ -829,25 +884,76 @@
                             \override TextSpanner.dash-fraction = #0.25
                             \override TextSpanner.dash-period = #1.5
                             fs2. \startTextSpan
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             fs1
+                                - \tweak color #red
+                                ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 10/7 {
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             fs2.
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             fs1
+                                - \tweak color #red
+                                ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             fs2.
+                                - \tweak color #red
+                                ^ \markup { @ }
                             \revert TextSpanner.bound-details
                             \revert TextSpanner.dash-fraction
                             \revert TextSpanner.dash-period
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             fs1 \stopTextSpan
+                                - \tweak color #red
+                                ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 13/7 {
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             fs2.
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             fs1
+                                - \tweak color #red
+                                ^ \markup { @ }
                         }
                         s1 * 11/4
                         \bar "|"
@@ -898,16 +1004,43 @@
                         r\breve
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 13/7 {
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             bf,4 \fff
                                 ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            "gridato possibile"
+                                    \column
+                                        {
+                                            \line
+                                                {
+                                                    \whiteout
+                                                        \upright
+                                                            "gridato possibile"
+                                                }
+                                            \line
+                                                {
+                                                    @
+                                                }
+                                        }
                                     }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             bf,1.
+                                - \tweak color #red
+                                ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 10/7 {
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             \override TextSpanner.bound-details.left-broken.text = #'#f
                             \override TextSpanner.bound-details.left.padding = #-1
                             \override TextSpanner.bound-details.left.stencil-align-dir-y = #0
@@ -933,20 +1066,57 @@
                             \override TextSpanner.dash-fraction = #0.25
                             \override TextSpanner.dash-period = #1.5
                             bf,4 \startTextSpan
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             bf,1.
+                                - \tweak color #red
+                                ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             bf,4
+                                - \tweak color #red
+                                ^ \markup { @ }
                             \revert TextSpanner.bound-details
                             \revert TextSpanner.dash-fraction
                             \revert TextSpanner.dash-period
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             bf,1. \stopTextSpan
+                                - \tweak color #red
+                                ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 13/7 {
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             bf,4
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             bf,1.
+                                - \tweak color #red
+                                ^ \markup { @ }
                         }
                         s1 * 11/4
                         \bar "|"
@@ -974,16 +1144,43 @@
                         r\breve
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 13/7 {
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             a,,1. \fff
                                 ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            "gridato possibile"
+                                    \column
+                                        {
+                                            \line
+                                                {
+                                                    \whiteout
+                                                        \upright
+                                                            "gridato possibile"
+                                                }
+                                            \line
+                                                {
+                                                    @
+                                                }
+                                        }
                                     }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             a,,4
+                                - \tweak color #red
+                                ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 10/7 {
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             \override TextSpanner.bound-details.left-broken.text = #'#f
                             \override TextSpanner.bound-details.left.padding = #-1
                             \override TextSpanner.bound-details.left.stencil-align-dir-y = #0
@@ -1009,20 +1206,57 @@
                             \override TextSpanner.dash-fraction = #0.25
                             \override TextSpanner.dash-period = #1.5
                             a,,1. \startTextSpan
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             a,,4
+                                - \tweak color #red
+                                ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
                             \revert TextSpanner.bound-details
                             \revert TextSpanner.dash-fraction
                             \revert TextSpanner.dash-period
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             a,,1. \stopTextSpan
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             a,,4
+                                - \tweak color #red
+                                ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 13/7 {
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             a,,1.
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             a,,4
+                                - \tweak color #red
+                                ^ \markup { @ }
                         }
                         s1 * 11/4
                         \bar "|"

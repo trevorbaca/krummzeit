@@ -420,7 +420,7 @@ pcs = pcs.rotate(-121).retrograde().transpose(3).invert().sequence()
 pcs = pcs.repeat_by([1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
 segment_maker(
     baca.scope('Oboe Music Voice', 1, 27),
-    baca.pitches(pcs),
+    baca.pitches(pcs, repeats=True),
     )
 
 segment_maker(
@@ -542,12 +542,12 @@ segment_maker(
 
 segment_maker(
     baca.scopes(['Piano Music Voice'], [(11, 17), (22, 27)]),
-    baca.pitches('C#6'),
+    baca.pitches('C#6', repeats=True),
     )
 
 segment_maker(
     baca.scopes(['Percussion Music Voice'], [(11, 17), (22, 26)]),
-    baca.pitches('C#6'),
+    baca.pitches('C#6', repeats=True),
     )
 
 segment_maker(

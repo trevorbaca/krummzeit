@@ -1416,10 +1416,11 @@
                         c4 \ff ~
                             ^ \markup {
                                 \whiteout
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            "scraped slate"
+                                    \upright
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                "scraped slate"
                                 }
                         \revert DynamicLineSpanner.staff-padding
                         \once \override Beam.color = #blue
@@ -1654,10 +1655,11 @@
                         c'2. ~
                             ^ \markup {
                                 \whiteout
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            "scraped slate"
+                                    \upright
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                "scraped slate"
                                 }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue

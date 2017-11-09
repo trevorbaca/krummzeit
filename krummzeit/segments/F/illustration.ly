@@ -649,10 +649,11 @@
                         r1
                             ^ \markup {
                                 \whiteout
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            "snare drum"
+                                    \upright
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                "snare drum"
                                 }
                         r8
                         \once \override Beam.color = #blue

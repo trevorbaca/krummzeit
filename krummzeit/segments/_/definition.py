@@ -192,8 +192,8 @@ segment_maker(
     baca.clef('percussion'),
     baca.instrument(krummzeit.instruments['percussion']),
     baca.markup.boxed('sponges'),
-    baca.one_line_staff(),
     baca.pitches('C4'),
+    baca.staff_lines(1),
     baca.RhythmBuilder(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
             talea=rhythmos.Talea([1, 2], 2),

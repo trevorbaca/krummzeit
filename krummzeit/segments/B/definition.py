@@ -313,7 +313,7 @@ segment_maker(
     baca.scope('Percussion Music Voice', 11),
     baca.instrument(krummzeit.instruments['xylophone']),
     baca.clef('treble'),
-    baca.five_line_staff(),
+    baca.staff_lines(5),
     )
 
 segment_maker.copy_rhythm(
@@ -367,7 +367,7 @@ segment_maker(
     baca.scope('Violin Music Voice', 19, 22),
     baca.instrument(krummzeit.instruments['violin']),
     baca.clef('treble'),
-    baca.five_line_staff(),
+    baca.staff_lines(5),
     baca.RhythmBuilder(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
             talea=rhythmos.Talea(

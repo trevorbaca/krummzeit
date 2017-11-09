@@ -216,7 +216,7 @@ segment_maker(
     baca.scope('Percussion Music Voice', 8),
     baca.instrument(krummzeit.instruments['xylophone']),
     baca.clef('treble'),
-    baca.five_line_staff(),
+    baca.staff_lines(5),
     )
 
 ### pf, xyl [E10-11] ###
@@ -401,7 +401,7 @@ segment_maker.copy_rhythm(
 
 segment_maker(
     baca.scope('Percussion Music Voice', 1, 7),
-    baca.one_line_staff(),
+    baca.staff_lines(1),
     baca.staff_positions([0]),
     )
 
@@ -628,8 +628,8 @@ segment_maker(
     baca.clef('percussion'),
     baca.dynamic('ppp'),
     baca.dynamic_line_spanner_staff_padding(6),
-    baca.one_line_staff(),
     baca.repeat_ties_up(),
+    baca.staff_lines(1),
     baca.staff_positions([0]),
     baca.stem_tremolo(),
     krummzeit.markup.attackless_roll(),

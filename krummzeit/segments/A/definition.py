@@ -182,7 +182,7 @@ segment_maker(
 segment_maker(
     baca.scope('Percussion Music Voice', 1, 23),
     baca.clef('percussion'),
-    baca.one_line_staff(),
+    baca.staff_lines(1),
     baca.staff_positions([0]),
     )
 
@@ -478,8 +478,8 @@ segment_maker(
 segment_maker(
     baca.scope('Violin Music Voice', 23),
     baca.clef('percussion'),
-    baca.one_line_staff(),
     baca.repeat_ties_up(),
+    baca.staff_lines(1),
     baca.staff_positions([0]),
     baca.tied_notes(repeat_ties=True),
     krummzeit.markup.scraped_slate(),

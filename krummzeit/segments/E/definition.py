@@ -274,7 +274,7 @@ segment_maker(
     baca.scope('Percussion Music Voice', 8),
     baca.instrument(krummzeit.instruments['xylophone']),
     baca.clef('treble'),
-    baca.five_line_staff(),
+    baca.staff_lines(5),
     )
 
 segment_maker.copy_rhythm(

@@ -316,12 +316,12 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(['Piano Music Voice', 'Percussion Music Voice'], [1]),
+    baca.make_scopes(['Piano Music Voice', 'Percussion Music Voice'], [1]),
     baca.pitches('F#6'),
     )
 
 segment_maker(
-    baca.scopes(['Piano Music Voice', 'Percussion Music Voice'], [1]),
+    baca.make_scopes(['Piano Music Voice', 'Percussion Music Voice'], [1]),
     baca.dynamic('fff'),
     baca.stem_tremolo(),
     )
@@ -348,7 +348,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes([
+    baca.make_scopes([
         'Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
         [(1, 3)],
         ),
@@ -377,7 +377,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes([
+    baca.make_scopes([
         'Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
         [(5, 9)],
         ),
@@ -394,7 +394,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(['Viola Music Voice', 'Cello Music Voice'], [(5, 9)]),
+    baca.make_scopes(['Viola Music Voice', 'Cello Music Voice'], [(5, 9)]),
     krummzeit.register_narrow(5, 3),
     )
 
@@ -455,7 +455,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes([
+    baca.make_scopes([
         'Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
         [15],
         ),
@@ -519,7 +519,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(
+    baca.make_scopes(
         ['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
         [15],
         ),

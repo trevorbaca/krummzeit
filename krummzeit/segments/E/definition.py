@@ -486,7 +486,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes([
+    baca.make_scopes([
         'Violin Music Voice',
         'Viola Music Voice',
         'Cello Music Voice'],
@@ -499,7 +499,7 @@ segment_maker(
 ### suspended cymbal ###
 
 segment_maker(
-    baca.scopes(['Percussion Music Voice'], [(1, 6), (17, 22)]),
+    baca.make_scopes(['Percussion Music Voice'], [(1, 6), (17, 22)]),
     # TODO: make clear semantically continuation from previous segment
     #baca.dynamic('ppp'),
     baca.stem_tremolo(),
@@ -522,7 +522,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(['Oboe Music Voice', 'Clarinet Music Voice'], [(4, 11)]),
+    baca.make_scopes(['Oboe Music Voice', 'Clarinet Music Voice'], [(4, 11)]),
     baca.dynamic('ff'),
     baca.map(baca.glissando(), baca.ntruns()),
     krummzeit.color_fingerings(),
@@ -533,12 +533,12 @@ segment_maker(
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-301).retrograde().transpose(10)
 segment_maker(
-    baca.scopes(strings, [(4, 10)]),
+    baca.make_scopes(strings, [(4, 10)]),
     baca.pitches(pcs),
     )
 
 segment_maker(
-    baca.scopes(strings, [(4, 10)]),
+    baca.make_scopes(strings, [(4, 10)]),
     baca.map(baca.glissando(), baca.runs()),
     #repeated_p_to_ppp,
     baca.hairpin('p > ppp'),
@@ -564,12 +564,12 @@ segment_maker(
 ### (7.1) points ###
 
 segment_maker(
-    baca.scopes(['Piano Music Voice', 'Percussion Music Voice'], [(8, 15)]),
+    baca.make_scopes(['Piano Music Voice', 'Percussion Music Voice'], [(8, 15)]),
     baca.pitches('F5'),
     )
 
 segment_maker(
-    baca.scopes(['Piano Music Voice', 'Percussion Music Voice'], [(8, 15)]),
+    baca.make_scopes(['Piano Music Voice', 'Percussion Music Voice'], [(8, 15)]),
     baca.dynamic('p'),
     baca.staccatissimi(),
     )
@@ -597,7 +597,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes([
+    baca.make_scopes([
         'Viola Music Voice',
         'Cello Music Voice',
         'Clarinet Music Voice'],

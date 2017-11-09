@@ -230,7 +230,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(['Violin Music Voice', 'Viola Music Voice'], [(1, 10)]),
+    baca.make_scopes(['Violin Music Voice', 'Viola Music Voice'], [(1, 10)]),
     baca.dynamic('ff'),
     baca.dynamic_line_spanner_staff_padding(5),
     baca.markup.pizz(),

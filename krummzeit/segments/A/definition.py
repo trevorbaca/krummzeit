@@ -524,7 +524,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(
+    baca.make_scopes(
         ['Piano Music Voice',
         'Violin Music Voice',
         'Oboe Music Voice',
@@ -539,7 +539,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes([
+    baca.make_scopes([
         'Violin Music Voice',
         'Oboe Music Voice',
         'Clarinet Music Voice'],
@@ -564,7 +564,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes([
+    baca.make_scopes([
         'Violin Music Voice',
         'Oboe Music Voice',
         'Clarinet Music Voice'],
@@ -574,7 +574,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes([
+    baca.make_scopes([
         'Piano Music Voice',
         'Violin Music Voice',
         'Oboe Music Voice',
@@ -607,7 +607,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes([
+    baca.make_scopes([
         'Violin Music Voice',
         'Oboe Music Voice',
         'Clarinet Music Voice'],
@@ -617,7 +617,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes([
+    baca.make_scopes([
         'Violin Music Voice',
         'Oboe Music Voice',
         'Clarinet Music Voice'],
@@ -659,30 +659,30 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(['Viola Music Voice', 'Cello Music Voice'], [(1, 9)]),
+    baca.make_scopes(['Viola Music Voice', 'Cello Music Voice'], [(1, 9)]),
     baca.map(baca.glissando(), baca.runs()),
     )
 
 segment_maker(
-    baca.scopes(['Viola Music Voice', 'Cello Music Voice'], [(1, 4)]),
+    baca.make_scopes(['Viola Music Voice', 'Cello Music Voice'], [(1, 4)]),
     baca.dynamic('mf'),
     baca.markup.molto_flautando(),
     )
 
 segment_maker(
-    baca.scopes(['Viola Music Voice', 'Cello Music Voice'], [(5, 8)]),
+    baca.make_scopes(['Viola Music Voice', 'Cello Music Voice'], [(5, 8)]),
     baca.dynamic('f'),
     baca.markup.non_flautando(),
     )
 
 segment_maker(
-    baca.scopes(['Viola Music Voice', 'Cello Music Voice'], [9]),
+    baca.make_scopes(['Viola Music Voice', 'Cello Music Voice'], [9]),
     baca.dynamic('ff'),
     )
 
 #### sponges [B1], [B5-10] ###
 #segment_maker(
-#    baca.scopes(['Percussion Music Voice'], [1, (9, 14)]),
+#    baca.make_scopes(['Percussion Music Voice'], [1, (9, 14)]),
 #    baca.effort_dynamic('f'),
 #    )
 
@@ -829,13 +829,13 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(['Clarinet Music Voice'], [(1, 8), (10, 12)]),
+    baca.make_scopes(['Clarinet Music Voice'], [(1, 8), (10, 12)]),
     baca.beam_positions(-4),
     baca.tuplet_bracket_staff_padding(3),
     )
 
 segment_maker(
-    baca.scopes(['Clarinet Music Voice'], [(3, 4), (7, 8), (22, 23)]),
+    baca.make_scopes(['Clarinet Music Voice'], [(3, 4), (7, 8), (22, 23)]),
     baca.dynamic_line_spanner_staff_padding(3),
     )
 
@@ -901,7 +901,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(['Viola Music Voice', 'Cello Music Voice'], [(1, 9)]),
+    baca.make_scopes(['Viola Music Voice', 'Cello Music Voice'], [(1, 9)]),
     baca.dynamic_line_spanner_staff_padding(8),
     baca.tuplet_bracket_staff_padding(5),
     )

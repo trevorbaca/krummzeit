@@ -458,7 +458,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes([
+    baca.make_scopes([
         'Violin Music Voice',
         'Viola Music Voice',
         'Cello Music Voice'],
@@ -468,7 +468,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(['Violin Music Voice', 'Cello Music Voice'], [(14, 16)]),
+    baca.make_scopes(['Violin Music Voice', 'Cello Music Voice'], [(14, 16)]),
     baca.markup.arco(),
     )
 
@@ -529,7 +529,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes([
+    baca.make_scopes([
         'Violin Music Voice',
         'Viola Music Voice',
         'Cello Music Voice'],
@@ -541,7 +541,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes([
+    baca.make_scopes([
         'Violin Music Voice',
         'Viola Music Voice',
         'Cello Music Voice'],

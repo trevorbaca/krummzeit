@@ -16,17 +16,17 @@ class MarkupLibrary(abjad.AbjadObject):
     @staticmethod
     def accent_changes(selector=None):
         string = 'accent changes of direction noticeably at each attack'
-        return baca.markup(string)
+        return baca.make_markup(string)
 
     @staticmethod
     def attackless_roll(selector=None):
         string = 'attackless roll with very soft yarn mallets'
-        return baca.markup(string)
+        return baca.make_markup(string)
 
     @staticmethod
     def catch_resonance(selector=None):
         string = 'catch resonance (but not attack) with pedal'
-        return baca.markup(string)
+        return baca.make_markup(string)
 
     @staticmethod
     def crotales(selector=None):
@@ -36,13 +36,13 @@ class MarkupLibrary(abjad.AbjadObject):
     @staticmethod
     def fifth_harmonic_of_F1(selector=None):
         string = '5th harmonic of F1'
-        return baca.markup(string)
+        return baca.make_markup(string)
 
     @staticmethod
     def fingertips(selector=None):
         string = 'rapid roll with fingertips:'
         string += ' keep speed constant during accelerando'
-        return baca.markup(string)
+        return baca.make_markup(string)
 
     @staticmethod
     def grid_poss_to_flaut_poss(selector=None):
@@ -98,18 +98,18 @@ class MarkupLibrary(abjad.AbjadObject):
     @staticmethod
     def on_bridge_full_bow(selector=None):
         string = 'directly on bridge: full bow each stroke'
-        return baca.markup(string)
+        return baca.make_markup(string)
 
     @staticmethod
     def on_bridge_slow(selector=None):
         string = 'directly on bridge:'
         string += ' very slow bow, imperceptible bow changes'
-        return baca.markup(string)
+        return baca.make_markup(string)
 
     @staticmethod
     def scrape_moderately(selector=None):
         string = 'scrape in a circle at moderate speed'
-        return baca.markup(string)
+        return baca.make_markup(string)
 
     @staticmethod
     def scraped_slate(selector=None):
@@ -119,7 +119,7 @@ class MarkupLibrary(abjad.AbjadObject):
     @staticmethod
     def show_tempo(selector=None):
         string = 'allow bowing to convey accelerando'
-        return baca.markup(string)
+        return baca.make_markup(string)
 
     @staticmethod
     def snare_drum(selector=None):
@@ -134,7 +134,7 @@ class MarkupLibrary(abjad.AbjadObject):
     @staticmethod
     def subito_non_armonichi(selector=None):
         string = 'subito non armonichi e non gridato'
-        return baca.markup(string)
+        return baca.make_markup(string)
 
     @staticmethod
     def suspended_cymbal(selector=None):

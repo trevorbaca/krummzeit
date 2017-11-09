@@ -4132,6 +4132,11 @@
                         s1 * 5/8
                         \clef "treble"
                         g''4 -\downbow \glissando
+                            ^ \markup {
+                                \whiteout
+                                    \upright
+                                        "directly on bridge: full bow each stroke"
+                                }
                             _ \markup {
                                 \larger
                                     \italic
@@ -4144,7 +4149,6 @@
                                     \italic
                                         ”
                                 }
-                            - \markup { "directly on bridge: full bow each stroke" }
                         cs''4 -\upbow \glissando
                         ef''4 -\downbow \glissando
                         fs''4 -\upbow \glissando
@@ -4300,6 +4304,11 @@
                         \revert TupletBracket.staff-padding
                         \clef "treble"
                         ef''4 -\downbow \glissando
+                            ^ \markup {
+                                \whiteout
+                                    \upright
+                                        "directly on bridge: full bow each stroke"
+                                }
                             _ \markup {
                                 \larger
                                     \italic
@@ -4312,7 +4321,6 @@
                                     \italic
                                         ”
                                 }
-                            - \markup { "directly on bridge: full bow each stroke" }
                         bf''4 -\upbow \glissando
                         f''4 -\downbow \glissando
                         af''4 -\upbow \glissando
@@ -4459,6 +4467,11 @@
                         s1 * 5/2
                         \clef "treble"
                         d''4 -\downbow \glissando
+                            ^ \markup {
+                                \whiteout
+                                    \upright
+                                        "directly on bridge: full bow each stroke"
+                                }
                             _ \markup {
                                 \larger
                                     \italic
@@ -4471,7 +4484,6 @@
                                     \italic
                                         ”
                                 }
-                            - \markup { "directly on bridge: full bow each stroke" }
                         e''4 -\upbow \glissando
                         g''4 -\downbow \glissando
                         f''4 -\upbow \glissando

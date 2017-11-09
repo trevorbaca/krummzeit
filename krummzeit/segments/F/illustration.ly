@@ -660,7 +660,12 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'2 :32 \ppp ~ - \markup { "rapid roll with fingertips: keep speed constant during accelerando" }
+                        c'2 :32 \ppp ~
+                            ^ \markup {
+                                \whiteout
+                                    \upright
+                                        "rapid roll with fingertips: keep speed constant during accelerando"
+                                }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue

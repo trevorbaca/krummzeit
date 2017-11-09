@@ -821,10 +821,11 @@
                         c'2. :32 ~
                             ^ \markup {
                                 \whiteout
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            "snare drum"
+                                    \upright
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                "snare drum"
                                 }
                             _ \markup {
                                 \dynamic
@@ -914,10 +915,11 @@
                         c'4 -\pp
                             ^ \markup {
                                 \whiteout
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            tam-tam
+                                    \upright
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                tam-tam
                                 }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue

@@ -3693,10 +3693,11 @@
                         c16 -\f
                             ^ \markup {
                                 \whiteout
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            tam-tam
+                                    \upright
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                tam-tam
                                 }
                         r8
                         r2

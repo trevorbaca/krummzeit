@@ -3238,10 +3238,11 @@
                             c'2 -\accent
                                 ^ \markup {
                                     \whiteout
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                sponges
+                                        \upright
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    sponges
                                     }
                             c'2 -\accent
                         }
@@ -3355,10 +3356,11 @@
                         c'16 -\p -\tenuto
                             ^ \markup {
                                 \whiteout
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            tam-tam
+                                    \upright
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                tam-tam
                                 }
                         r8
                         r4.

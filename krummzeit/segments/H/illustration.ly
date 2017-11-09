@@ -2039,10 +2039,11 @@
                         c'4 -\accent -\ff
                             ^ \markup {
                                 \whiteout
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            crotales
+                                    \upright
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                crotales
                                 }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue

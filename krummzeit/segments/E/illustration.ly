@@ -2739,10 +2739,11 @@
                             c'2 :32
                                 ^ \markup {
                                     \whiteout
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                "suspended cymbal"
+                                        \upright
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    "suspended cymbal"
                                     }
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue

@@ -2612,10 +2612,11 @@
                         c'16 -\pp
                             ^ \markup {
                                 \whiteout
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            tam-tam
+                                    \upright
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                tam-tam
                                 }
                         r8
                         r2
@@ -3200,10 +3201,11 @@
                         c1 :32 \ppp
                             ^ \markup {
                                 \whiteout
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            "suspended cymbal"
+                                    \upright
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                "suspended cymbal"
                                 }
                         c4 :32 \repeatTie
                         c1 :32 \repeatTie

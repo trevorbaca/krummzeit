@@ -481,7 +481,7 @@ segment_maker(
     baca.repeat_ties_up(),
     baca.staff_lines(1),
     baca.staff_positions([0]),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     krummzeit.markup.scraped_slate(),
     )
 

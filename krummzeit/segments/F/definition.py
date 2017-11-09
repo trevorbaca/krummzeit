@@ -227,7 +227,7 @@ segment_maker(
 segment_maker(
     baca.scope('Clarinet Music Voice', 11, 14),
     baca.instrument(krummzeit.instruments['bass clarinet']),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 ###############################################################################

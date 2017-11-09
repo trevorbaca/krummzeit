@@ -223,7 +223,7 @@ segment_maker(
 segment_maker(
     baca.scope('Clarinet Music Voice', 3, 4),
     baca.instrument(krummzeit.instruments['bass clarinet']),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     #baca.RhythmBuilder(
     #    rhythm_maker=tied_notes,
     #    ),
@@ -232,7 +232,7 @@ segment_maker(
 segment_maker(
     baca.scope('Clarinet Music Voice', 5, 6),
     baca.instrument(krummzeit.instruments['bass clarinet']),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     #baca.RhythmBuilder(
     #    rhythm_maker=tied_notes,
     #    ),
@@ -241,7 +241,7 @@ segment_maker(
 segment_maker(
     baca.scope('Clarinet Music Voice', 7, 8),
     baca.instrument(krummzeit.instruments['bass clarinet']),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     #baca.RhythmBuilder(
     #    rhythm_maker=tied_notes,
     #    ),
@@ -250,13 +250,13 @@ segment_maker(
 segment_maker(
     baca.scope('Clarinet Music Voice', 9, 10),
     baca.instrument(krummzeit.instruments['bass clarinet']),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 11),
     baca.instrument(krummzeit.instruments['bass clarinet']),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 ### (9.1) vn, va, vc points [J15] ###

@@ -1537,12 +1537,9 @@
                         c2. :32 \ppp ~
                             ^ \markup {
                                 \whiteout
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            "snare drum"
+                                    \upright
+                                        "rapid roll with fingertips: keep speed constant during accelerando"
                                 }
-                            - \markup { "rapid roll with fingertips: keep speed constant during accelerando" }
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
@@ -1884,9 +1881,8 @@
                             ^ \markup {
                                 \whiteout
                                     \upright
-                                        "non flautando"
+                                        "allow bowing to convey accelerando"
                                 }
-                            - \markup { "allow bowing to convey accelerando" }
                         g1 \glissando
                         ftqs\breve \glissando
                         g1. \glissando
@@ -1983,9 +1979,8 @@
                             ^ \markup {
                                 \whiteout
                                     \upright
-                                        "non flautando"
+                                        "allow bowing to convey accelerando"
                                 }
-                            - \markup { "allow bowing to convey accelerando" }
                         c\breve \glissando
                         bqs,1. \glissando
                         cqs1 \glissando
@@ -2078,9 +2073,8 @@
                             ^ \markup {
                                 \whiteout
                                     \upright
-                                        "non flautando"
+                                        "allow bowing to convey accelerando"
                                 }
-                            - \markup { "allow bowing to convey accelerando" }
                         cqs,2.. \fff
                         s1 * 81/8
                         \bar "|"

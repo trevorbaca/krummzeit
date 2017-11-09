@@ -493,10 +493,8 @@
                                             \line
                                                 {
                                                     \whiteout
-                                                        \override
-                                                            #'(box-padding . 0.5)
-                                                            \box
-                                                                sponges
+                                                        \upright
+                                                            "accent changes of direction noticeably at each attack"
                                                 }
                                             \line
                                                 {
@@ -523,7 +521,6 @@
                                         \italic
                                             ”
                                     }
-                                - \markup { "accent changes of direction noticeably at each attack" }
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red

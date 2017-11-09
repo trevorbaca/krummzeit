@@ -4254,12 +4254,9 @@
                         c'2. \mf
                             ^ \markup {
                                 \whiteout
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            "scraped slate"
+                                    \upright
+                                        "scrape in a circle at moderate speed"
                                 }
-                            - \markup { "scrape in a circle at moderate speed" }
                         c'1 \repeatTie
                         c'1 \repeatTie
                         c'2. \repeatTie

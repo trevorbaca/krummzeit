@@ -962,6 +962,12 @@
                                     {
                                         \line
                                             {
+                                                \whiteout
+                                                    \upright
+                                                        "5th harmonic of F1"
+                                            }
+                                        \line
+                                            {
                                                 \override
                                                     #'(box-padding . 0.75)
                                                     \box
@@ -973,7 +979,6 @@
                                             }
                                     }
                                 }
-                            - \markup { "5th harmonic of F1" }
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red

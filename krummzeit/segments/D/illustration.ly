@@ -1696,9 +1696,21 @@
                         \clef "bass"
                         \override NoteHead.style = #'harmonic
                         c'4. -\mp -\tenuto
-                            - \tweak color #red
-                            ^ \markup { @ }
-                            - \markup { "5th harmonic of F1" }
+                            ^ \markup {
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        "5th harmonic of F1"
+                                            }
+                                        \line
+                                            {
+                                                @
+                                            }
+                                    }
+                                }
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1917,9 +1929,21 @@
                         \override NoteHead.style = #'harmonic
                         \override DynamicLineSpanner.staff-padding = #'3
                         c'2. -\mp -\tenuto
-                            - \tweak color #red
-                            ^ \markup { @ }
-                            - \markup { "5th harmonic of F1" }
+                            ^ \markup {
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        "5th harmonic of F1"
+                                            }
+                                        \line
+                                            {
+                                                @
+                                            }
+                                    }
+                                }
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -3181,7 +3205,6 @@
                                         \box
                                             "suspended cymbal"
                                 }
-                            - \markup { "attackless roll with very soft yarn mallets" }
                         c4 :32 \repeatTie
                         c1 :32 \repeatTie
                         c1 :32 \repeatTie
@@ -3210,8 +3233,21 @@
                         \once \override Stem.color = #red
                         \clef "treble"
                         ef'4
-                            - \tweak color #red
-                            ^ \markup { @ }
+                            ^ \markup {
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        "directly on bridge: very slow bow, imperceptible bow changes"
+                                            }
+                                        \line
+                                            {
+                                                @
+                                            }
+                                    }
+                                }
                             _ \markup {
                                 \larger
                                     \italic
@@ -3224,7 +3260,6 @@
                                     \italic
                                         ”
                                 }
-                            - \markup { "directly on bridge: very slow bow, imperceptible bow changes" }
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -3637,6 +3672,11 @@
                     \context ViolaMusicVoice = "Viola Music Voice" {
                         \clef "alto"
                         c4 \glissando
+                            ^ \markup {
+                                \whiteout
+                                    \upright
+                                        "directly on bridge: very slow bow, imperceptible bow changes"
+                                }
                             _ \markup {
                                 \larger
                                     \italic
@@ -3649,7 +3689,6 @@
                                     \italic
                                         ”
                                 }
-                            - \markup { "directly on bridge: very slow bow, imperceptible bow changes" }
                         cs4 \glissando
                         fs4 \glissando
                         b4 \glissando
@@ -4143,6 +4182,11 @@
                     \context CelloMusicVoice = "Cello Music Voice" {
                         \clef "bass"
                         d,4 \glissando
+                            ^ \markup {
+                                \whiteout
+                                    \upright
+                                        "directly on bridge: very slow bow, imperceptible bow changes"
+                                }
                             _ \markup {
                                 \larger
                                     \italic
@@ -4155,7 +4199,6 @@
                                     \italic
                                         ”
                                 }
-                            - \markup { "directly on bridge: very slow bow, imperceptible bow changes" }
                         b,4 \glissando
                         a,4 \glissando
                         g,4 \glissando

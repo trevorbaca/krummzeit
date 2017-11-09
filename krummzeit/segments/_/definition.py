@@ -224,7 +224,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(
+    baca.make_scopes(
         ['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
         [1],
         ),
@@ -268,7 +268,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(
+    baca.make_scopes(
         ['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
         [(3, 7)],
         ),
@@ -297,12 +297,12 @@ segment_maker(
 ### (14) pf, xylophone reiteration [A6] ###
 
 segment_maker(
-    baca.scopes(['Piano Music Voice', 'Percussion Music Voice'], [6]),
+    baca.make_scopes(['Piano Music Voice', 'Percussion Music Voice'], [6]),
     baca.pitches('C#5'),
     )
 
 segment_maker(
-    baca.scopes(['Piano Music Voice', 'Percussion Music Voice'], [6]),
+    baca.make_scopes(['Piano Music Voice', 'Percussion Music Voice'], [6]),
     baca.possibile_dynamic('fff'),
     baca.stem_tremolo(),
     )
@@ -336,7 +336,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(['Violin Music Voice', 'Viola Music Voice'], [1]),
+    baca.make_scopes(['Violin Music Voice', 'Viola Music Voice'], [1]),
     baca.beam_positions(-5),
     baca.dynamic_line_spanner_staff_padding(7),
     baca.tuplet_bracket_staff_padding(4),

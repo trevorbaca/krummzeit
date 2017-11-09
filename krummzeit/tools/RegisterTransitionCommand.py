@@ -19,7 +19,7 @@ class RegisterTransitionCommand(baca.Command):
         >>> segment_maker(
         ...     baca.scope('Violin Music Voice', 1),
         ...     baca.pitches('C4 D4 E4 F4'),
-        ...     baca.even_runs(),
+        ...     baca.make_even_runs(),
         ...     krummzeit.RegisterTransitionCommand(
         ...         start_registration=baca.Registration(
         ...             [('[A0, C8]', 0)],

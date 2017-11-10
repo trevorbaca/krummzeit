@@ -3044,6 +3044,9 @@
                                         \box
                                             "to xylophone"
                                     }
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 5
+                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3052,6 +3055,9 @@
                             f'4 -\staccatissimo \p
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 5
+                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3060,6 +3066,9 @@
                             f'4 -\staccatissimo
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 5
+                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3070,7 +3079,13 @@
                                 ^ \markup { @ }
                         }
                         \times 4/7 {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 5
+                            \startStaff
                             r16
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 5
+                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3079,6 +3094,9 @@
                             f'16 -\staccatissimo [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 5
+                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3087,10 +3105,14 @@
                             f'16 -\staccatissimo ]
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            r8
-                            f'8 -\staccatissimo
                             \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
+                            r8
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 5
+                            \startStaff
+                            f'8 -\staccatissimo
                         }
                         s1 * 17/8
                         \tweak text #tuplet-number::calc-fraction-text

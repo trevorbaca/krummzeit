@@ -2609,9 +2609,6 @@
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'6
                         r16
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'16 -\pp
                             ^ \markup {
                                 \whiteout
@@ -2621,40 +2618,16 @@
                                             \box
                                                 tam-tam
                                 }
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         r8
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         r2
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         r1
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         r2..
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'16 -\pp
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         r8.
                         \revert DynamicLineSpanner.staff-padding
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         s1 * 11/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/17 {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'2 -\accent
                                 ^ \markup {
                                     \whiteout
@@ -2673,172 +2646,73 @@
                                         \italic
                                             ”
                                     }
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'1 -\accent
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'2 -\accent
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'8 -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/13 {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                             c'2.. \repeatTie
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'2 -\accent
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\accent
                         }
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'2 \repeatTie
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'8 \repeatTie
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'8 \repeatTie
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                             c'2 -\accent
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4. -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'2 \repeatTie
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'8 \repeatTie
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                             c'2 -\accent
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'2 -\accent
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'8 \repeatTie
                         }
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                             c'4. \repeatTie
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4. -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'8 \repeatTie
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                             c'2.. -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'8 \repeatTie
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                             c'2 -\accent
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'2 -\accent
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'8 \repeatTie
                         }
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                             c'4. \repeatTie
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4. -\accent
                         }
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'8 \repeatTie
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'2.. -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'8 \repeatTie
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                             c'2 -\accent
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'1 -\accent
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4. -\accent
                         }
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         s1 * 27/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -2866,9 +2740,6 @@
                                         \box
                                             "to xylophone"
                                     }
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2877,9 +2748,6 @@
                             fs''4 -\staccatissimo \ff
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2888,9 +2756,6 @@
                             fs''4 -\staccatissimo
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2901,13 +2766,7 @@
                                 ^ \markup { @ }
                         }
                         \times 4/7 {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             r16
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2916,9 +2775,6 @@
                             fs''16 -\staccatissimo [
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2927,23 +2783,11 @@
                             fs''16 -\staccatissimo ]
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             r8
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             fs''8 -\staccatissimo
                         }
                         \times 4/5 {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             r8
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2952,9 +2796,6 @@
                             fs''8 -\staccatissimo [
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2963,9 +2804,6 @@
                             fs''8 -\staccatissimo ]
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2977,13 +2815,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             r8
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2992,9 +2824,6 @@
                             fs''8 -\staccatissimo [
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3003,13 +2832,7 @@
                             fs''8 -\staccatissimo ]
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             r4
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             fs''4 -\staccatissimo
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
@@ -3380,41 +3203,14 @@
                                             \box
                                                 "suspended cymbal"
                                 }
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c4 :32 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c1 :32 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c1 :32 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c8 :32 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c2. :32 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c2 :32 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c8 :32 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c1 :32 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c8 :32 \repeatTie
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding

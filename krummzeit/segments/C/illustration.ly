@@ -1155,7 +1155,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         s1 * 19/8
-                        \override Stem.direction = #up
+                        \once \override Stem.direction = #up
                         fs1
                             ^ \markup {
                                 \whiteout
@@ -1168,7 +1168,6 @@
                                 \upright
                                     possibile
                                 }
-                        \revert Stem.direction
                         s1 * 6
                         \bar "|"
                     }
@@ -1319,7 +1318,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         s1 * 19/8
-                        \override Stem.direction = #up
+                        \once \override Stem.direction = #up
                         a,,1
                             ^ \markup {
                                 \whiteout
@@ -1332,7 +1331,6 @@
                                 \upright
                                     possibile
                                 }
-                        \revert Stem.direction
                         s1 * 6
                         \bar "|"
                     }

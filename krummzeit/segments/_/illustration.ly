@@ -521,9 +521,6 @@
                                         \italic
                                             ”
                                     }
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -534,9 +531,6 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -545,9 +539,6 @@
                             c'2
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -556,9 +547,6 @@
                             c'2 -\accent
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -569,9 +557,6 @@
                                 ^ \markup { @ }
                         }
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -580,9 +565,6 @@
                             c'2
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -591,9 +573,6 @@
                             c'2 -\accent
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -605,9 +584,6 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -616,9 +592,6 @@
                             c'2.
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red

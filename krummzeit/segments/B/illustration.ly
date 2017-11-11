@@ -1345,39 +1345,15 @@
                                         \box
                                             "to xylophone"
                                     }
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             cs''8 -\staccatissimo \ff [
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             cs''8 -\staccatissimo ]
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             cs''4 -\staccatissimo
                         }
                         \times 4/7 {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             r16
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             cs''16 -\staccatissimo [
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             cs''16 -\staccatissimo ]
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             r8
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             cs''8 -\staccatissimo
                         }
                         s1 * 1/4
@@ -1830,170 +1806,68 @@
                             \override DynamicLineSpanner.staff-padding = #'7
                             \override TupletBracket.staff-padding = #4
                             af''8 \ff
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             a''4 \startTrillSpan
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             c''8 ~ \stopTrillSpan \startTrillSpan
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             c''8
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             cs''2 \stopTrillSpan \startTrillSpan
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             a''8 ~ \stopTrillSpan \startTrillSpan
                         }
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             a''8
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             aqf''4 \stopTrillSpan \startTrillSpan
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             a'8 \stopTrillSpan
                         }
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             aqs''16 [
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             g''16 ]
                         }
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             af''4 ~ \startTrillSpan
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/10 {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             af''4
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             bf''2 \stopTrillSpan \startTrillSpan
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             b''2 \stopTrillSpan \startTrillSpan
                         }
                         \times 2/3 {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             bqs''8 \stopTrillSpan
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             b''4 \startTrillSpan
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             bqf''4 \stopTrillSpan \startTrillSpan
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             cs''4 ~ \stopTrillSpan \startTrillSpan
                         }
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             cs''4
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             cqs''4 \stopTrillSpan \startTrillSpan
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             cs'''8 ~ \stopTrillSpan \startTrillSpan
                         }
                         \times 4/5 {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             cs'''8 [
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             ctqs'''8 \stopTrillSpan
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             d'''16
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             ef'''16 ]
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             af''4 ~ \startTrillSpan
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             af''4
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             a''4. ~ \stopTrillSpan \startTrillSpan
                         }
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             a''8
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             c'''4 ~ \stopTrillSpan \startTrillSpan
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             c'''4
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             cqs''8 \stopTrillSpan
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             c''4 \startTrillSpan
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 5
-                            \startStaff
                             cqf''4 \stopTrillSpan \startTrillSpan
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding

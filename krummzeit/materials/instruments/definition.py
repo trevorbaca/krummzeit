@@ -27,7 +27,7 @@ instruments = abjad.InstrumentDictionary([
     (
         'harpsichord',
         abjad.Harpsichord(
-            default_scope='Staff',
+            context='Staff',
             name_markup=baca.markup.instrument('Harpsichord'),
             short_name_markup=baca.markup.short_instrument('Hpschd.'),
             )
@@ -49,7 +49,7 @@ instruments = abjad.InstrumentDictionary([
     (
         'piano',
         abjad.Piano(
-            default_scope='Staff',
+            context='Staff',
             name_markup=baca.markup.instrument('Piano'),
             short_name_markup=baca.markup.short_instrument('Pf.'),
             )

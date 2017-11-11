@@ -1410,7 +1410,7 @@
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         \clef "percussion"
-                        \override DynamicLineSpanner.staff-padding = #'3
+                        \once \override DynamicLineSpanner.staff-padding = #'3
                         c4 \ff ~
                             ^ \markup {
                                 \whiteout
@@ -1420,7 +1420,6 @@
                                             \box
                                                 "scraped slate"
                                 }
-                        \revert DynamicLineSpanner.staff-padding
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue

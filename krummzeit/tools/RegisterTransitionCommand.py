@@ -30,8 +30,7 @@ class RegisterTransitionCommand(baca.Command):
         ...         ),
         ...     )
 
-        >>> result = segment_maker.run(environment='docs')
-        >>> lilypond_file, metadata = result
+        >>> lilypond_file = segment_maker.run(environment='docs')
         >>> abjad.show(lilypond_file) # doctest: +SKIP
 
         ..  docs::

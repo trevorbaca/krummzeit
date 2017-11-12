@@ -13,112 +13,60 @@
         \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
         \context GlobalContext = "Global Context" <<
             \context GlobalRests = "Global Rests" {
-                {
-                    \time 3/4
-                    R1 * 3/4
-                }
-                {
-                    \time 1/4
-                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
-                    \once \override Score.MultiMeasureRest.transparent = ##t
-                    \once \override Score.TimeSignature.stencil = ##f
-                    R1 * 1/4
-                        - \markup {
-                            \musicglyph
-                                #"scripts.ushortfermata"
-                            }
-                }
-                {
-                    \time 5/8
-                    R1 * 5/8
-                }
-                {
-                    \time 1/4
-                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
-                    \once \override Score.MultiMeasureRest.transparent = ##t
-                    \once \override Score.TimeSignature.stencil = ##f
-                    R1 * 1/4
-                        - \markup {
-                            \musicglyph
-                                #"scripts.ushortfermata"
-                            }
-                }
-                {
-                    \time 9/8
-                    R1 * 9/8
-                }
-                {
-                    \time 1/4
-                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
-                    \once \override Score.MultiMeasureRest.transparent = ##t
-                    \once \override Score.TimeSignature.stencil = ##f
-                    R1 * 1/4
-                        - \markup {
-                            \musicglyph
-                                #"scripts.ushortfermata"
-                            }
-                }
-                {
-                    \time 9/8
-                    R1 * 9/8
-                }
-                {
-                    \time 1/4
-                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
-                    \once \override Score.MultiMeasureRest.transparent = ##t
-                    \once \override Score.TimeSignature.stencil = ##f
-                    R1 * 1/4
-                        - \markup {
-                            \musicglyph
-                                #"scripts.ushortfermata"
-                            }
-                }
-                {
-                    \time 9/8
-                    R1 * 9/8
-                }
-                {
-                    \time 5/8
-                    R1 * 5/8
-                }
-                {
-                    \time 3/4
-                    R1 * 3/4
-                }
-                {
-                    R1 * 3/4
-                }
-                {
-                    \time 1/4
-                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
-                    \once \override Score.MultiMeasureRest.transparent = ##t
-                    \once \override Score.TimeSignature.stencil = ##f
-                    R1 * 1/4
-                        - \markup {
-                            \musicglyph
-                                #"scripts.ulongfermata"
-                            }
-                }
-                {
-                    \time 4/4
-                    R1 * 1
-                }
-                {
-                    R1 * 1
-                }
-                {
-                    \time 5/4
-                    R1 * 5/4
-                }
-                {
-                    R1 * 5/4
-                }
-                {
-                    R1 * 5/4
-                }
-                {
-                    R1 * 5/4
-                }
+                R1 * 3/4
+                \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                \once \override Score.MultiMeasureRest.transparent = ##t
+                \once \override Score.TimeSignature.stencil = ##f
+                R1 * 1/4
+                    - \markup {
+                        \musicglyph
+                            #"scripts.ushortfermata"
+                        }
+                R1 * 5/8
+                \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                \once \override Score.MultiMeasureRest.transparent = ##t
+                \once \override Score.TimeSignature.stencil = ##f
+                R1 * 1/4
+                    - \markup {
+                        \musicglyph
+                            #"scripts.ushortfermata"
+                        }
+                R1 * 9/8
+                \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                \once \override Score.MultiMeasureRest.transparent = ##t
+                \once \override Score.TimeSignature.stencil = ##f
+                R1 * 1/4
+                    - \markup {
+                        \musicglyph
+                            #"scripts.ushortfermata"
+                        }
+                R1 * 9/8
+                \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                \once \override Score.MultiMeasureRest.transparent = ##t
+                \once \override Score.TimeSignature.stencil = ##f
+                R1 * 1/4
+                    - \markup {
+                        \musicglyph
+                            #"scripts.ushortfermata"
+                        }
+                R1 * 9/8
+                R1 * 5/8
+                R1 * 3/4
+                R1 * 3/4
+                \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                \once \override Score.MultiMeasureRest.transparent = ##t
+                \once \override Score.TimeSignature.stencil = ##f
+                R1 * 1/4
+                    - \markup {
+                        \musicglyph
+                            #"scripts.ulongfermata"
+                        }
+                R1 * 1
+                R1 * 1
+                R1 * 5/4
+                R1 * 5/4
+                R1 * 5/4
+                R1 * 5/4
             }
             \context GlobalSkips = "Global Skips" {
                 {

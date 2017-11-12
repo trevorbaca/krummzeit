@@ -11,12 +11,12 @@ class RegisterTransitionCommand(baca.Command):
 
         Transitions from the octave of C4 to the octave of C5:
 
-        >>> segment_maker = baca.SegmentMaker(
+        >>> maker = baca.SegmentMaker(
         ...     score_template=baca.ViolinSoloScoreTemplate(),
         ...     time_signatures=[(4, 8), (3, 8), (4, 8), (3, 8)],
         ...     )
 
-        >>> segment_maker(
+        >>> maker(
         ...     baca.scope('Violin Music Voice', 1),
         ...     baca.pitches('C4 D4 E4 F4'),
         ...     baca.make_even_runs(),
@@ -30,7 +30,7 @@ class RegisterTransitionCommand(baca.Command):
         ...         ),
         ...     )
 
-        >>> lilypond_file = segment_maker.run(environment='docs')
+        >>> lilypond_file = maker.run(environment='docs')
         >>> abjad.show(lilypond_file) # doctest: +SKIP
 
         ..  docs::

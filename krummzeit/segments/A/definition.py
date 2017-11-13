@@ -67,7 +67,7 @@ maker.validate_measures_per_stage()
 
 maker(
     baca.scope('Cello Music Voice', 1, 4),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[2, 3, 1],
             ),
@@ -109,7 +109,7 @@ maker.copy_rhythm(
 maker(
     baca.scope('Piano Music Voice', 1, 4),
     baca.instrument(krummzeit.instruments['harpsichord']),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.SplitByDurationsDivisionCallback(
             durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
             pattern_rotation_index=-1,
@@ -147,7 +147,7 @@ rhythm_overwrite = (
 
 maker(
     baca.scope('Piano Music Voice', 5, 8),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.SplitByDurationsDivisionCallback(
             durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
             pattern_rotation_index=-1,
@@ -168,7 +168,7 @@ maker(
 
 maker(
     baca.scope('Percussion Music Voice', 1),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
             extra_counts_per_division=[2, 1, 0],
             talea=rhythmos.Talea([1, 2], 2),
@@ -283,7 +283,7 @@ maker(
 
 maker(
     baca.scope('Cello Music Voice', 12, 14),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
@@ -323,7 +323,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('Viola Music Voice', 15, 16),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.EvenDivisionRhythmMaker(
             denominators=[4],
             extra_counts_per_division=[1, -1, 2, -2],
@@ -343,7 +343,7 @@ maker(
     baca.scope('Piano Music Voice', 16, 19),
     baca.instrument(krummzeit.instruments['piano']),
     baca.clef('bass'),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.IncisedRhythmMaker(
             incise_specifier=rhythmos.InciseSpecifier(
                 prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],
@@ -372,7 +372,7 @@ maker(
 
 maker(
     baca.scope('Viola Music Voice', 17, 19),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
             talea=rhythmos.Talea(
                 counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
@@ -399,7 +399,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('Viola Music Voice', 20, 22),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
             talea=rhythmos.Talea(
                 counts=[1, 1, 1, 1, 4, 4, 1, 1, 2, 2, 8, 4, 4, 1, 1, 2, 2],
@@ -455,7 +455,7 @@ maker(
 maker(
     baca.scope('Clarinet Music Voice', 22, 23),
     baca.instrument(krummzeit.instruments['e-flat clarinet']),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(

@@ -69,7 +69,7 @@ maker.validate_measures_per_stage()
 maker(
     baca.scope('Percussion Music Voice', 1, 9),
     baca.clef('percussion'),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.NoteRhythmMaker(
             tie_specifier=rhythmos.TieSpecifier(
                 tie_across_divisions=True,
@@ -85,7 +85,7 @@ maker(
 maker(
     baca.scope('Piano Music Voice', 1),
     baca.instrument(krummzeit.instruments['piano']),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(2, 3)],
             ),
@@ -115,7 +115,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('Violin Music Voice', 5),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(5, 4)],
             ),
@@ -143,7 +143,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('Viola Music Voice', 5),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(2, 7)],
             ),
@@ -171,7 +171,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('Cello Music Voice', 5),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(7, 2)],
             ),
@@ -202,7 +202,7 @@ maker.copy_rhythm(
 maker(
     baca.scope('Piano Music Voice', 9, 12),
     baca.clef('bass'),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.NoteRhythmMaker(
             tie_specifier=rhythmos.TieSpecifier(
                 tie_across_divisions=True,
@@ -220,7 +220,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('Viola Music Voice', 11, 12),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.NoteRhythmMaker(
             tie_specifier=rhythmos.TieSpecifier(
                 tie_across_divisions=True,
@@ -248,7 +248,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('Oboe Music Voice', 14, 16),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.NoteRhythmMaker(
             tie_specifier=rhythmos.TieSpecifier(
                 tie_across_divisions=True,
@@ -262,7 +262,7 @@ maker(
 maker(
     baca.scope('Clarinet Music Voice', 14, 17),
     baca.instrument(krummzeit.instruments['bass clarinet']),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.NoteRhythmMaker(
             tie_specifier=rhythmos.TieSpecifier(
                 tie_across_divisions=True,
@@ -275,7 +275,7 @@ maker(
 
 maker(
     baca.scope('Percussion Music Voice', 14, 17),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.SplitByDurationsDivisionCallback(
             durations=[(1, 4)],
             ),

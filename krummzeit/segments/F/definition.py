@@ -49,7 +49,7 @@ maker.validate_measures_per_stage()
 
 maker(
     baca.scope('Viola Music Voice', 2, 4),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
@@ -77,7 +77,7 @@ maker.copy_rhythm(
 maker(
     baca.scope('Percussion Music Voice', 1),
     baca.clef('percussion'),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.NoteRhythmMaker(
             tie_specifier=rhythmos.TieSpecifier(
                 tie_across_divisions=True,
@@ -111,7 +111,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('Percussion Music Voice', 13, 14),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
@@ -128,7 +128,7 @@ maker(
 maker(
     baca.scope('Piano Music Voice', 3, 6),
     baca.instrument(krummzeit.instruments['harpsichord']),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[
                 (1, 2),
@@ -161,7 +161,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('Violin Music Voice', 5, 13),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[2, 2, 2, 2, 2, 3],
             ),
@@ -194,7 +194,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('Oboe Music Voice', 3, 7),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.SplitByDurationsDivisionCallback(
             durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
             pattern_rotation_index=-1,

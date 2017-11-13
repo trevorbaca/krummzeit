@@ -13,142 +13,102 @@
         \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
-                {
-                    \time 9/8
-                    \mark #6
-                    s1 * 9/8 ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
+                \time 9/8
+                \mark #6
+                s1 * 9/8 ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            72
+                        }
+                    }
+                \time 5/8
+                s1 * 5/8
+                \time 5/8
+                s1 * 5/8
+                \time 4/4
+                s1 * 1
+                \time 5/4
+                s1 * 5/4
+                \time 3/4
+                s1 * 3/4
+                \time 3/4
+                s1 * 3/4
+                \time 3/4
+                s1 * 3/4
+                \time 9/8
+                s1 * 9/8
+                \time 7/8
+                s1 * 7/8
+                \once \override TextSpanner.arrow-width = 0.25
+                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                    \null
+                    }
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                \once \override TextSpanner.bound-details.left.text = \markup {
+                    \large
                         \upright
-                            {
-                                =
-                                72
-                            }
+                            accel.
+                    \hspace
+                        #0.75
+                    }
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                \once \override TextSpanner.bound-details.right.arrow = ##t
+                \once \override TextSpanner.bound-details.right.padding = 2
+                \once \override TextSpanner.bound-details.right.text = ##f
+                \once \override TextSpanner.dash-fraction = 0.25
+                \once \override TextSpanner.dash-period = 1.5
+                \time 6/4
+                s1 * 3/2 \startTextSpan
+                \time 7/4
+                s1 * 7/4
+                \time 3/4
+                s1 * 3/4
+                \time 7/4
+                s1 * 7/4
+                \time 11/8
+                s1 * 11/8
+                \time 5/8
+                s1 * 5/8
+                \time 4/4
+                s1 * 1
+                \time 6/4
+                s1 * 3/2
+                \time 3/4
+                s1 * 3/4 \stopTextSpan ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            144
                         }
-                }
-                {
-                    \time 5/8
-                    s1 * 5/8
-                }
-                {
-                    s1 * 5/8
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4
-                }
-                {
-                    s1 * 3/4
-                }
-                {
-                    s1 * 3/4
-                }
-                {
-                    \time 9/8
-                    s1 * 9/8
-                }
-                {
-                    \time 7/8
-                    s1 * 7/8
-                }
-                {
-                    \time 6/4
-                    \once \override TextSpanner.arrow-width = 0.25
-                    \once \override TextSpanner.bound-details.left-broken.padding = 0
-                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                        \null
-                        }
-                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                    \once \override TextSpanner.bound-details.left.text = \markup {
-                        \large
-                            \upright
-                                accel.
-                        \hspace
-                            #0.75
-                        }
-                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                    \once \override TextSpanner.bound-details.right-broken.padding = 0
-                    \once \override TextSpanner.bound-details.right-broken.text = ##f
-                    \once \override TextSpanner.bound-details.right.arrow = ##t
-                    \once \override TextSpanner.bound-details.right.padding = 2
-                    \once \override TextSpanner.bound-details.right.text = ##f
-                    \once \override TextSpanner.dash-fraction = 0.25
-                    \once \override TextSpanner.dash-period = 1.5
-                    s1 * 3/2 \startTextSpan
-                }
-                {
-                    \time 7/4
-                    s1 * 7/4
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4
-                }
-                {
-                    \time 7/4
-                    s1 * 7/4
-                }
-                {
-                    \time 11/8
-                    s1 * 11/8
-                }
-                {
-                    \time 5/8
-                    s1 * 5/8
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 6/4
-                    s1 * 3/2
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4 \stopTextSpan ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                144
-                            }
-                        }
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 7/8
-                    s1 * 7/8
-                }
-                {
-                    s1 * 7/8
-                }
+                    }
+                \time 4/4
+                s1 * 1
+                \time 7/8
+                s1 * 7/8
+                \time 7/8
+                s1 * 7/8
             }
         >>
         \context MusicContext = "Music Context" <<

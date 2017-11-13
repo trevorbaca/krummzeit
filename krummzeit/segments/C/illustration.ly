@@ -69,390 +69,357 @@
                 R1 * 5/4
             }
             \context GlobalSkips = "Global Skips" {
-                {
-                    \time 3/4
-                    \once \override TextSpanner.arrow-width = 0.25
-                    \once \override TextSpanner.bound-details.left-broken.padding = 0
-                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                        \null
-                        }
-                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                    \once \override TextSpanner.bound-details.left.text = \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                135
-                            }
-                        \hspace
-                            #1.25
-                        }
-                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                    \once \override TextSpanner.bound-details.right-broken.padding = 0
-                    \once \override TextSpanner.bound-details.right-broken.text = ##f
-                    \once \override TextSpanner.bound-details.right.arrow = ##t
-                    \once \override TextSpanner.bound-details.right.padding = 2
-                    \once \override TextSpanner.bound-details.right.text = ##f
-                    \once \override TextSpanner.dash-fraction = 0.25
-                    \once \override TextSpanner.dash-period = 1.5
-                    \mark #3
-                    s1 * 3/4 \startTextSpan
-                }
-                {
-                    \time 1/4
-                    s1 * 1/4 \stopTextSpan ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                90
-                            }
-                        }
-                }
-                {
-                    \time 5/8
-                    \once \override TextSpanner.arrow-width = 0.25
-                    \once \override TextSpanner.bound-details.left-broken.padding = 0
-                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                        \null
-                        }
-                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                    \once \override TextSpanner.bound-details.left.text = \markup {
-                        \large
-                            \upright
-                                accel.
-                        \hspace
-                            #0.75
-                        }
-                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                    \once \override TextSpanner.bound-details.right-broken.padding = 0
-                    \once \override TextSpanner.bound-details.right-broken.text = ##f
-                    \once \override TextSpanner.bound-details.right.arrow = ##t
-                    \once \override TextSpanner.bound-details.right.padding = 2
-                    \once \override TextSpanner.bound-details.right.text = ##f
-                    \once \override TextSpanner.dash-fraction = 0.25
-                    \once \override TextSpanner.dash-period = 1.5
-                    s1 * 5/8 \startTextSpan
-                }
-                {
-                    \time 1/4
-                    s1 * 1/4 \stopTextSpan ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                135
-                            }
-                        }
-                }
-                {
-                    \time 9/8
-                    \once \override TextSpanner.arrow-width = 0.25
-                    \once \override TextSpanner.bound-details.left-broken.padding = 0
-                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                        \null
-                        }
-                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                    \once \override TextSpanner.bound-details.left.text = \markup {
-                        \large
-                            \upright
-                                rit.
-                        \hspace
-                            #0.75
-                        }
-                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                    \once \override TextSpanner.bound-details.right-broken.padding = 0
-                    \once \override TextSpanner.bound-details.right-broken.text = ##f
-                    \once \override TextSpanner.bound-details.right.arrow = ##t
-                    \once \override TextSpanner.bound-details.right.padding = 2
-                    \once \override TextSpanner.bound-details.right.text = ##f
-                    \once \override TextSpanner.dash-fraction = 0.25
-                    \once \override TextSpanner.dash-period = 1.5
-                    s1 * 9/8 \startTextSpan
-                }
-                {
-                    \time 1/4
-                    s1 * 1/4 \stopTextSpan ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                90
-                            }
-                        }
-                }
-                {
-                    \time 9/8
-                    \once \override TextSpanner.arrow-width = 0.25
-                    \once \override TextSpanner.bound-details.left-broken.padding = 0
-                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                        \null
-                        }
-                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                    \once \override TextSpanner.bound-details.left.text = \markup {
-                        \large
-                            \upright
-                                accel.
-                        \hspace
-                            #0.75
-                        }
-                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                    \once \override TextSpanner.bound-details.right-broken.padding = 0
-                    \once \override TextSpanner.bound-details.right-broken.text = ##f
-                    \once \override TextSpanner.bound-details.right.arrow = ##t
-                    \once \override TextSpanner.bound-details.right.padding = 2
-                    \once \override TextSpanner.bound-details.right.text = ##f
-                    \once \override TextSpanner.dash-fraction = 0.25
-                    \once \override TextSpanner.dash-period = 1.5
-                    s1 * 9/8 \startTextSpan
-                }
-                {
-                    \time 1/4
-                    s1 * 1/4 \stopTextSpan ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                135
-                            }
-                        }
-                }
-                {
-                    \time 9/8
-                    s1 * 9/8
-                }
-                {
-                    \time 5/8
-                    s1 * 5/8 ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                90
-                            }
-                        \hspace
-                            #0.5
+                \once \override TextSpanner.arrow-width = 0.25
+                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                    \null
+                    }
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                \once \override TextSpanner.bound-details.left.text = \markup {
+                    \fontsize
+                        #-6
                         \general-align
                             #Y
                             #DOWN
-                            \override
-                                #'(padding . 0.5)
-                                \parenthesize
-                                    \line
-                                        {
-                                            \scale
-                                                #'(0.5 . 0.5)
-                                                \score
-                                                    {
-                                                        \new Score \with {
-                                                            \override SpacingSpanner.spacing-increment = #0.5
-                                                            proportionalNotationDuration = ##f
-                                                        } <<
-                                                            \new RhythmicStaff \with {
-                                                                \remove Time_signature_engraver
-                                                                \remove Staff_symbol_engraver
-                                                                \override Stem.direction = #up
-                                                                \override Stem.length = #5
-                                                                \override TupletBracket.bracket-visibility = ##t
-                                                                \override TupletBracket.direction = #up
-                                                                \override TupletBracket.padding = #1.25
-                                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5)
-                                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text
-                                                                tupletFullLength = ##t
-                                                            } {
-                                                                c4.
-                                                            }
-                                                        >>
-                                                        \layout {
-                                                            indent = #0
-                                                            ragged-right = ##t
-                                                        }
-                                                    }
-                                            =
-                                            \hspace
-                                                #-0.5
-                                            \scale
-                                                #'(0.5 . 0.5)
-                                                \score
-                                                    {
-                                                        \new Score \with {
-                                                            \override SpacingSpanner.spacing-increment = #0.5
-                                                            proportionalNotationDuration = ##f
-                                                        } <<
-                                                            \new RhythmicStaff \with {
-                                                                \remove Time_signature_engraver
-                                                                \remove Staff_symbol_engraver
-                                                                \override Stem.direction = #up
-                                                                \override Stem.length = #5
-                                                                \override TupletBracket.bracket-visibility = ##t
-                                                                \override TupletBracket.direction = #up
-                                                                \override TupletBracket.padding = #1.25
-                                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5)
-                                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text
-                                                                tupletFullLength = ##t
-                                                            } {
-                                                                c4
-                                                            }
-                                                        >>
-                                                        \layout {
-                                                            indent = #0
-                                                            ragged-right = ##t
-                                                        }
-                                                    }
-                                        }
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            135
                         }
-                }
-                {
-                    \time 3/4
-                    \once \override TextSpanner.arrow-width = 0.25
-                    \once \override TextSpanner.bound-details.left-broken.padding = 0
-                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                        \null
+                    \hspace
+                        #1.25
+                    }
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                \once \override TextSpanner.bound-details.right.arrow = ##t
+                \once \override TextSpanner.bound-details.right.padding = 2
+                \once \override TextSpanner.bound-details.right.text = ##f
+                \once \override TextSpanner.dash-fraction = 0.25
+                \once \override TextSpanner.dash-period = 1.5
+                \time 3/4
+                \mark #3
+                s1 * 3/4 \startTextSpan
+                \time 1/4
+                s1 * 1/4 \stopTextSpan ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            90
                         }
-                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                    \once \override TextSpanner.bound-details.left.text = \markup {
-                        \large
-                            \upright
-                                rit.
-                        \hspace
-                            #0.75
-                        }
-                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                    \once \override TextSpanner.bound-details.right-broken.padding = 0
-                    \once \override TextSpanner.bound-details.right-broken.text = ##f
-                    \once \override TextSpanner.bound-details.right.arrow = ##t
-                    \once \override TextSpanner.bound-details.right.padding = 2
-                    \once \override TextSpanner.bound-details.right.text = ##f
-                    \once \override TextSpanner.dash-fraction = 0.25
-                    \once \override TextSpanner.dash-period = 1.5
-                    s1 * 3/4 \startTextSpan
-                }
-                {
-                    s1 * 3/4
-                }
-                {
-                    \time 1/4
-                    s1 * 1/4 \stopTextSpan ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
+                    }
+                \once \override TextSpanner.arrow-width = 0.25
+                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                    \null
+                    }
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                \once \override TextSpanner.bound-details.left.text = \markup {
+                    \large
                         \upright
-                            {
-                                =
-                                45
-                            }
+                            accel.
+                    \hspace
+                        #0.75
+                    }
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                \once \override TextSpanner.bound-details.right.arrow = ##t
+                \once \override TextSpanner.bound-details.right.padding = 2
+                \once \override TextSpanner.bound-details.right.text = ##f
+                \once \override TextSpanner.dash-fraction = 0.25
+                \once \override TextSpanner.dash-period = 1.5
+                \time 5/8
+                s1 * 5/8 \startTextSpan
+                \time 1/4
+                s1 * 1/4 \stopTextSpan ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            135
                         }
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    s1 * 1
-                }
-                {
-                    \time 5/4
-                    \once \override TextSpanner.arrow-width = 0.25
-                    \once \override TextSpanner.bound-details.left-broken.padding = 0
-                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                        \null
-                        }
-                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                    \once \override TextSpanner.bound-details.left.text = \markup {
-                        \large
-                            \upright
-                                rit.
-                        \hspace
-                            #0.75
-                        }
-                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                    \once \override TextSpanner.bound-details.right-broken.padding = 0
-                    \once \override TextSpanner.bound-details.right-broken.text = ##f
-                    \once \override TextSpanner.bound-details.right.arrow = ##t
-                    \once \override TextSpanner.bound-details.right.padding = 2
-                    \once \override TextSpanner.bound-details.right.text = ##f
-                    \once \override TextSpanner.dash-fraction = 0.25
-                    \once \override TextSpanner.dash-period = 1.5
-                    s1 * 5/4 \startTextSpan
-                }
-                {
-                    s1 * 5/4 \stopTextSpan ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
+                    }
+                \once \override TextSpanner.arrow-width = 0.25
+                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                    \null
+                    }
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                \once \override TextSpanner.bound-details.left.text = \markup {
+                    \large
                         \upright
-                            {
-                                =
-                                36
-                            }
+                            rit.
+                    \hspace
+                        #0.75
+                    }
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                \once \override TextSpanner.bound-details.right.arrow = ##t
+                \once \override TextSpanner.bound-details.right.padding = 2
+                \once \override TextSpanner.bound-details.right.text = ##f
+                \once \override TextSpanner.dash-fraction = 0.25
+                \once \override TextSpanner.dash-period = 1.5
+                \time 9/8
+                s1 * 9/8 \startTextSpan
+                \time 1/4
+                s1 * 1/4 \stopTextSpan ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            90
                         }
-                }
-                {
-                    s1 * 5/4
-                }
-                {
-                    s1 * 5/4
-                }
+                    }
+                \once \override TextSpanner.arrow-width = 0.25
+                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                    \null
+                    }
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                \once \override TextSpanner.bound-details.left.text = \markup {
+                    \large
+                        \upright
+                            accel.
+                    \hspace
+                        #0.75
+                    }
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                \once \override TextSpanner.bound-details.right.arrow = ##t
+                \once \override TextSpanner.bound-details.right.padding = 2
+                \once \override TextSpanner.bound-details.right.text = ##f
+                \once \override TextSpanner.dash-fraction = 0.25
+                \once \override TextSpanner.dash-period = 1.5
+                \time 9/8
+                s1 * 9/8 \startTextSpan
+                \time 1/4
+                s1 * 1/4 \stopTextSpan ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            135
+                        }
+                    }
+                \time 9/8
+                s1 * 9/8
+                \time 5/8
+                s1 * 5/8 ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            90
+                        }
+                    \hspace
+                        #0.5
+                    \general-align
+                        #Y
+                        #DOWN
+                        \override
+                            #'(padding . 0.5)
+                            \parenthesize
+                                \line
+                                    {
+                                        \scale
+                                            #'(0.5 . 0.5)
+                                            \score
+                                                {
+                                                    \new Score \with {
+                                                        \override SpacingSpanner.spacing-increment = #0.5
+                                                        proportionalNotationDuration = ##f
+                                                    } <<
+                                                        \new RhythmicStaff \with {
+                                                            \remove Time_signature_engraver
+                                                            \remove Staff_symbol_engraver
+                                                            \override Stem.direction = #up
+                                                            \override Stem.length = #5
+                                                            \override TupletBracket.bracket-visibility = ##t
+                                                            \override TupletBracket.direction = #up
+                                                            \override TupletBracket.padding = #1.25
+                                                            \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                            \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                            tupletFullLength = ##t
+                                                        } {
+                                                            c4.
+                                                        }
+                                                    >>
+                                                    \layout {
+                                                        indent = #0
+                                                        ragged-right = ##t
+                                                    }
+                                                }
+                                        =
+                                        \hspace
+                                            #-0.5
+                                        \scale
+                                            #'(0.5 . 0.5)
+                                            \score
+                                                {
+                                                    \new Score \with {
+                                                        \override SpacingSpanner.spacing-increment = #0.5
+                                                        proportionalNotationDuration = ##f
+                                                    } <<
+                                                        \new RhythmicStaff \with {
+                                                            \remove Time_signature_engraver
+                                                            \remove Staff_symbol_engraver
+                                                            \override Stem.direction = #up
+                                                            \override Stem.length = #5
+                                                            \override TupletBracket.bracket-visibility = ##t
+                                                            \override TupletBracket.direction = #up
+                                                            \override TupletBracket.padding = #1.25
+                                                            \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                            \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                            tupletFullLength = ##t
+                                                        } {
+                                                            c4
+                                                        }
+                                                    >>
+                                                    \layout {
+                                                        indent = #0
+                                                        ragged-right = ##t
+                                                    }
+                                                }
+                                    }
+                    }
+                \once \override TextSpanner.arrow-width = 0.25
+                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                    \null
+                    }
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                \once \override TextSpanner.bound-details.left.text = \markup {
+                    \large
+                        \upright
+                            rit.
+                    \hspace
+                        #0.75
+                    }
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                \once \override TextSpanner.bound-details.right.arrow = ##t
+                \once \override TextSpanner.bound-details.right.padding = 2
+                \once \override TextSpanner.bound-details.right.text = ##f
+                \once \override TextSpanner.dash-fraction = 0.25
+                \once \override TextSpanner.dash-period = 1.5
+                \time 3/4
+                s1 * 3/4 \startTextSpan
+                \time 3/4
+                s1 * 3/4
+                \time 1/4
+                s1 * 1/4 \stopTextSpan ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            45
+                        }
+                    }
+                \time 4/4
+                s1 * 1
+                \time 4/4
+                s1 * 1
+                \once \override TextSpanner.arrow-width = 0.25
+                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                    \null
+                    }
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                \once \override TextSpanner.bound-details.left.text = \markup {
+                    \large
+                        \upright
+                            rit.
+                    \hspace
+                        #0.75
+                    }
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                \once \override TextSpanner.bound-details.right.arrow = ##t
+                \once \override TextSpanner.bound-details.right.padding = 2
+                \once \override TextSpanner.bound-details.right.text = ##f
+                \once \override TextSpanner.dash-fraction = 0.25
+                \once \override TextSpanner.dash-period = 1.5
+                \time 5/4
+                s1 * 5/4 \startTextSpan
+                \time 5/4
+                s1 * 5/4 \stopTextSpan ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            36
+                        }
+                    }
+                \time 5/4
+                s1 * 5/4
+                \time 5/4
+                s1 * 5/4
             }
         >>
         \context MusicContext = "Music Context" <<

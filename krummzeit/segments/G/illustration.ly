@@ -53,129 +53,85 @@
                         }
             }
             \context GlobalSkips = "Global Skips" {
-                {
-                    \time 9/8
-                    \mark #7
-                    s1 * 9/8 ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                144
-                            }
+                \time 9/8
+                \mark #7
+                s1 * 9/8 ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            144
                         }
-                }
-                {
-                    \time 5/8
-                    s1 * 5/8
-                }
-                {
-                    s1 * 5/8
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4
-                }
-                {
-                    s1 * 3/4
-                }
-                {
-                    s1 * 3/4
-                }
-                {
-                    \time 9/8
-                    s1 * 9/8
-                }
-                {
-                    \time 7/8
-                    s1 * 7/8
-                }
-                {
-                    \time 6/4
-                    s1 * 3/2
-                }
-                {
-                    \time 7/4
-                    s1 * 7/4
-                }
-                {
-                    \time 1/4
-                    s1 * 1/4
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4 ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                90
-                            }
+                    }
+                \time 5/8
+                s1 * 5/8
+                \time 5/8
+                s1 * 5/8
+                \time 4/4
+                s1 * 1
+                \time 5/4
+                s1 * 5/4
+                \time 3/4
+                s1 * 3/4
+                \time 3/4
+                s1 * 3/4
+                \time 3/4
+                s1 * 3/4
+                \time 9/8
+                s1 * 9/8
+                \time 7/8
+                s1 * 7/8
+                \time 6/4
+                s1 * 3/2
+                \time 7/4
+                s1 * 7/4
+                \time 1/4
+                s1 * 1/4
+                \time 3/4
+                s1 * 3/4 ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            90
                         }
-                }
-                {
-                    \time 7/4
-                    s1 * 7/4
-                }
-                {
-                    \time 11/8
-                    s1 * 11/8
-                }
-                {
-                    \time 5/8
-                    s1 * 5/8
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 6/4
-                    s1 * 3/2
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 7/8
-                    s1 * 7/8
-                }
-                {
-                    s1 * 7/8
-                }
-                {
-                    \time 1/4
-                    s1 * 1/4
-                }
+                    }
+                \time 7/4
+                s1 * 7/4
+                \time 11/8
+                s1 * 11/8
+                \time 5/8
+                s1 * 5/8
+                \time 4/4
+                s1 * 1
+                \time 6/4
+                s1 * 3/2
+                \time 3/4
+                s1 * 3/4
+                \time 4/4
+                s1 * 1
+                \time 7/8
+                s1 * 7/8
+                \time 7/8
+                s1 * 7/8
+                \time 1/4
+                s1 * 1/4
             }
         >>
         \context MusicContext = "Music Context" <<

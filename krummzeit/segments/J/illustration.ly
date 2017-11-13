@@ -13,202 +13,118 @@
         \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
-                {
-                    \time 5/4
-                    \mark #10
-                    s1 * 5/4 ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                144
-                            }
+                \time 5/4
+                \mark #10
+                s1 * 5/4 ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            144
                         }
-                }
-                {
-                    s1 * 5/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 2/4
-                    s1 * 1/2
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    s1 * 5/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 2/4
-                    s1 * 1/2
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    s1 * 5/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 2/4
-                    s1 * 1/2
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    s1 * 5/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 2/4
-                    s1 * 1/2
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    s1 * 5/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 2/4
-                    s1 * 1/2
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    s1 * 5/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 2/4
-                    s1 * 1/2
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    s1 * 5/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 2/4
-                    s1 * 1/2
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    s1 * 5/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 2/4
-                    s1 * 1/2
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    s1 * 5/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 2/4
-                    s1 * 1/2
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    s1 * 5/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 2/4
-                    s1 * 1/2
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    s1 * 5/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 2/4
-                    s1 * 1/2
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    s1 * 5/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 2/4
-                    s1 * 1/2
-                }
+                    }
+                \time 5/4
+                s1 * 5/4
+                \time 4/4
+                s1 * 1
+                \time 2/4
+                s1 * 1/2
+                \time 5/4
+                s1 * 5/4
+                \time 5/4
+                s1 * 5/4
+                \time 4/4
+                s1 * 1
+                \time 2/4
+                s1 * 1/2
+                \time 5/4
+                s1 * 5/4
+                \time 5/4
+                s1 * 5/4
+                \time 4/4
+                s1 * 1
+                \time 2/4
+                s1 * 1/2
+                \time 5/4
+                s1 * 5/4
+                \time 5/4
+                s1 * 5/4
+                \time 4/4
+                s1 * 1
+                \time 2/4
+                s1 * 1/2
+                \time 5/4
+                s1 * 5/4
+                \time 5/4
+                s1 * 5/4
+                \time 4/4
+                s1 * 1
+                \time 2/4
+                s1 * 1/2
+                \time 5/4
+                s1 * 5/4
+                \time 5/4
+                s1 * 5/4
+                \time 4/4
+                s1 * 1
+                \time 2/4
+                s1 * 1/2
+                \time 5/4
+                s1 * 5/4
+                \time 5/4
+                s1 * 5/4
+                \time 4/4
+                s1 * 1
+                \time 2/4
+                s1 * 1/2
+                \time 5/4
+                s1 * 5/4
+                \time 5/4
+                s1 * 5/4
+                \time 4/4
+                s1 * 1
+                \time 2/4
+                s1 * 1/2
+                \time 5/4
+                s1 * 5/4
+                \time 5/4
+                s1 * 5/4
+                \time 4/4
+                s1 * 1
+                \time 2/4
+                s1 * 1/2
+                \time 5/4
+                s1 * 5/4
+                \time 5/4
+                s1 * 5/4
+                \time 4/4
+                s1 * 1
+                \time 2/4
+                s1 * 1/2
+                \time 5/4
+                s1 * 5/4
+                \time 5/4
+                s1 * 5/4
+                \time 4/4
+                s1 * 1
+                \time 2/4
+                s1 * 1/2
+                \time 5/4
+                s1 * 5/4
+                \time 5/4
+                s1 * 5/4
+                \time 4/4
+                s1 * 1
+                \time 2/4
+                s1 * 1/2
             }
         >>
         \context MusicContext = "Music Context" <<

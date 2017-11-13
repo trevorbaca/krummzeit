@@ -13,289 +13,227 @@
         \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
-                {
-                    \time 3/4
-                    \mark #5
-                    s1 * 3/4 ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                108
-                            }
+                \time 3/4
+                \mark #5
+                s1 * 3/4 ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            108
                         }
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 6/4
-                    s1 * 3/2
-                }
-                {
-                    \time 9/8
-                    s1 * 9/8
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4
-                }
-                {
-                    \time 5/8
-                    s1 * 5/8
-                }
-                {
-                    \time 9/8
-                    s1 * 9/8
-                }
-                {
-                    s1 * 9/8
-                }
-                {
-                    \time 5/8
-                    s1 * 5/8 ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                135
-                            }
+                    }
+                \time 4/4
+                s1 * 1
+                \time 6/4
+                s1 * 3/2
+                \time 9/8
+                s1 * 9/8
+                \time 3/4
+                s1 * 3/4
+                \time 5/8
+                s1 * 5/8
+                \time 9/8
+                s1 * 9/8
+                \time 9/8
+                s1 * 9/8
+                \time 5/8
+                s1 * 5/8 ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            135
                         }
-                }
-                {
-                    s1 * 5/8
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4 ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                72
-                            }
+                    }
+                \time 5/8
+                s1 * 5/8
+                \time 3/4
+                s1 * 3/4 ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            72
                         }
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    s1 * 5/4
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4 ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                108
-                            }
+                    }
+                \time 4/4
+                s1 * 1
+                \time 5/4
+                s1 * 5/4
+                \time 5/4
+                s1 * 5/4
+                \time 3/4
+                s1 * 3/4 ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            108
                         }
-                }
-                {
-                    s1 * 3/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1 ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                90
-                            }
+                    }
+                \time 3/4
+                s1 * 3/4
+                \time 4/4
+                s1 * 1 ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            90
                         }
-                }
-                {
-                    \time 11/8
-                    s1 * 11/8 ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                108
-                            }
+                    }
+                \time 11/8
+                s1 * 11/8 ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            108
                         }
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4
-                }
-                {
-                    \time 5/8
-                    s1 * 5/8 ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                90
-                            }
+                    }
+                \time 3/4
+                s1 * 3/4
+                \time 5/8
+                s1 * 5/8 ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            90
                         }
-                }
-                {
-                    \time 9/8
-                    s1 * 9/8
-                }
-                {
-                    s1 * 9/8
-                }
-                {
-                    \time 7/8
-                    s1 * 7/8
-                }
-                {
-                    \time 9/8
-                    s1 * 9/8
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4 ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                135
-                            }
+                    }
+                \time 9/8
+                s1 * 9/8
+                \time 9/8
+                s1 * 9/8
+                \time 7/8
+                s1 * 7/8
+                \time 9/8
+                s1 * 9/8
+                \time 3/4
+                s1 * 3/4 ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            135
                         }
-                }
-                {
-                    s1 * 3/4
-                }
-                {
-                    s1 * 3/4 ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                45
-                            }
+                    }
+                \time 3/4
+                s1 * 3/4
+                \time 3/4
+                s1 * 3/4 ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            45
                         }
-                }
-                {
-                    s1 * 3/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 9/8
-                    s1 * 9/8
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4 ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                72
-                            }
+                    }
+                \time 3/4
+                s1 * 3/4
+                \time 4/4
+                s1 * 1
+                \time 5/4
+                s1 * 5/4
+                \time 4/4
+                s1 * 1
+                \time 9/8
+                s1 * 9/8
+                \time 3/4
+                s1 * 3/4 ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            72
                         }
-                }
-                {
-                    \time 5/8
-                    s1 * 5/8
-                }
-                {
-                    \time 9/8
-                    s1 * 9/8
-                }
+                    }
+                \time 5/8
+                s1 * 5/8
+                \time 9/8
+                s1 * 9/8
             }
         >>
         \context MusicContext = "Music Context" <<

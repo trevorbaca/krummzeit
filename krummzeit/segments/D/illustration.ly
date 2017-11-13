@@ -13,463 +13,379 @@
         \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
-                {
-                    \time 3/4
-                    \mark #4
-                    s1 * 3/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [D.1]
-                            }
-                        ^ \markup {
+                \time 3/4
+                \mark #4
+                s1 * 3/4
+                    - \markup {
                         \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                36
-                            }
+                            #-3
+                            \with-color
+                                #blue
+                                [D.1]
                         }
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 9/8
-                    s1 * 9/8
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [D.2]
-                            }
-                }
-                {
-                    \time 5/8
-                    s1 * 5/8
-                }
-                {
-                    \time 9/8
-                    s1 * 9/8
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [D.3]
-                            }
-                }
-                {
-                    s1 * 9/8
-                }
-                {
-                    \time 5/8
-                    \once \override TextSpanner.arrow-width = 0.25
-                    \once \override TextSpanner.bound-details.left-broken.padding = 0
-                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                        \null
-                        }
-                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                    \once \override TextSpanner.bound-details.left.text = \markup {
-                        \large
-                            \upright
-                                accel.
-                        \hspace
-                            #0.75
-                        }
-                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                    \once \override TextSpanner.bound-details.right-broken.padding = 0
-                    \once \override TextSpanner.bound-details.right-broken.text = ##f
-                    \once \override TextSpanner.bound-details.right.arrow = ##t
-                    \once \override TextSpanner.bound-details.right.padding = 2
-                    \once \override TextSpanner.bound-details.right.text = ##f
-                    \once \override TextSpanner.dash-fraction = 0.25
-                    \once \override TextSpanner.dash-period = 1.5
-                    s1 * 5/8 \startTextSpan
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [D.4]
-                            }
-                }
-                {
-                    \time 7/8
-                    s1 * 7/8
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [D.5]
-                            }
-                }
-                {
-                    s1 * 3/4
-                }
-                {
-                    s1 * 3/4
-                }
-                {
-                    s1 * 3/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [D.6]
-                            }
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 6/4
-                    s1 * 3/2
-                }
-                {
-                    \time 9/8
-                    s1 * 9/8
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [D.7]
-                            }
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4
-                }
-                {
-                    \time 5/8
-                    s1 * 5/8
-                }
-                {
-                    \time 9/8
-                    s1 * 9/8
-                }
-                {
-                    s1 * 9/8
-                }
-                {
-                    \time 5/8
-                    s1 * 5/8
-                }
-                {
-                    s1 * 5/8
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1 \stopTextSpan
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [D.8]
-                            }
-                        ^ \markup {
-                        \override
-                            #'(padding . 0.45)
-                            \parenthesize
-                                \line
-                                    {
-                                        \smaller
-                                            \general-align
-                                                #Y
-                                                #DOWN
-                                                \note-by-number
-                                                    #2
-                                                    #0
-                                                    #1
-                                        \upright
-                                            " = 72"
-                                    }
-                        \italic
-                            subito
-                        \smaller
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            " = 108"
-                        }
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    \once \override TextSpanner.arrow-width = 0.25
-                    \once \override TextSpanner.bound-details.left-broken.padding = 0
-                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                        \null
-                        }
-                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                    \once \override TextSpanner.bound-details.left.text = \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                72
-                            }
-                        \hspace
-                            #0.5
+                    ^ \markup {
+                    \fontsize
+                        #-6
                         \general-align
                             #Y
                             #DOWN
-                            \override
-                                #'(padding . 0.5)
-                                \parenthesize
-                                    \line
-                                        {
-                                            \scale
-                                                #'(0.5 . 0.5)
-                                                \score
-                                                    {
-                                                        \new Score \with {
-                                                            \override SpacingSpanner.spacing-increment = #0.5
-                                                            proportionalNotationDuration = ##f
-                                                        } <<
-                                                            \new RhythmicStaff \with {
-                                                                \remove Time_signature_engraver
-                                                                \remove Staff_symbol_engraver
-                                                                \override Stem.direction = #up
-                                                                \override Stem.length = #5
-                                                                \override TupletBracket.bracket-visibility = ##t
-                                                                \override TupletBracket.direction = #up
-                                                                \override TupletBracket.padding = #1.25
-                                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5)
-                                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text
-                                                                tupletFullLength = ##t
-                                                            } {
-                                                                c4.
-                                                            }
-                                                        >>
-                                                        \layout {
-                                                            indent = #0
-                                                            ragged-right = ##t
-                                                        }
-                                                    }
-                                            =
-                                            \hspace
-                                                #-0.5
-                                            \scale
-                                                #'(0.5 . 0.5)
-                                                \score
-                                                    {
-                                                        \new Score \with {
-                                                            \override SpacingSpanner.spacing-increment = #0.5
-                                                            proportionalNotationDuration = ##f
-                                                        } <<
-                                                            \new RhythmicStaff \with {
-                                                                \remove Time_signature_engraver
-                                                                \remove Staff_symbol_engraver
-                                                                \override Stem.direction = #up
-                                                                \override Stem.length = #5
-                                                                \override TupletBracket.bracket-visibility = ##t
-                                                                \override TupletBracket.direction = #up
-                                                                \override TupletBracket.padding = #1.25
-                                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5)
-                                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text
-                                                                tupletFullLength = ##t
-                                                            } {
-                                                                c4
-                                                            }
-                                                        >>
-                                                        \layout {
-                                                            indent = #0
-                                                            ragged-right = ##t
-                                                        }
-                                                    }
-                                        }
-                        \hspace
-                            #1.25
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            36
                         }
-                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                    \once \override TextSpanner.bound-details.right-broken.padding = 0
-                    \once \override TextSpanner.bound-details.right-broken.text = ##f
-                    \once \override TextSpanner.bound-details.right.arrow = ##t
-                    \once \override TextSpanner.bound-details.right.padding = 2
-                    \once \override TextSpanner.bound-details.right.text = ##f
-                    \once \override TextSpanner.dash-fraction = 0.25
-                    \once \override TextSpanner.dash-period = 1.5
-                    s1 * 5/4 \startTextSpan
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [D.9]
-                            }
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4
-                }
-                {
-                    s1 * 3/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 11/8
-                    s1 * 11/8
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4
-                }
-                {
-                    \time 5/8
-                    s1 * 5/8
-                }
-                {
-                    \time 9/8
-                    s1 * 9/8
-                }
-                {
-                    s1 * 9/8 \stopTextSpan
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [D.10]
-                            }
-                        ^ \markup {
+                    }
+                \time 4/4
+                s1 * 1
+                \time 9/8
+                s1 * 9/8
+                \time 3/4
+                s1 * 3/4
+                    - \markup {
                         \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                108
-                            }
+                            #-3
+                            \with-color
+                                #blue
+                                [D.2]
                         }
-                }
-                {
-                    \time 7/8
-                    s1 * 7/8
-                }
-                {
-                    \time 9/8
-                    s1 * 9/8
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4
-                }
-                {
-                    s1 * 3/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [D.11]
-                            }
-                }
-                {
-                    s1 * 3/4
-                }
-                {
-                    s1 * 3/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [D.12]
-                            }
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 9/8
-                    s1 * 9/8
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [D.13]
-                            }
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4
-                }
-                {
-                    \time 5/8
-                    s1 * 5/8
-                }
-                {
-                    \time 9/8
-                    s1 * 9/8
-                }
+                \time 5/8
+                s1 * 5/8
+                \time 9/8
+                s1 * 9/8
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [D.3]
+                        }
+                \time 9/8
+                s1 * 9/8
+                \once \override TextSpanner.arrow-width = 0.25
+                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                    \null
+                    }
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                \once \override TextSpanner.bound-details.left.text = \markup {
+                    \large
+                        \upright
+                            accel.
+                    \hspace
+                        #0.75
+                    }
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                \once \override TextSpanner.bound-details.right.arrow = ##t
+                \once \override TextSpanner.bound-details.right.padding = 2
+                \once \override TextSpanner.bound-details.right.text = ##f
+                \once \override TextSpanner.dash-fraction = 0.25
+                \once \override TextSpanner.dash-period = 1.5
+                \time 5/8
+                s1 * 5/8 \startTextSpan
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [D.4]
+                        }
+                \time 7/8
+                s1 * 7/8
+                \time 5/4
+                s1 * 5/4
+                \time 3/4
+                s1 * 3/4
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [D.5]
+                        }
+                \time 3/4
+                s1 * 3/4
+                \time 3/4
+                s1 * 3/4
+                \time 3/4
+                s1 * 3/4
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [D.6]
+                        }
+                \time 4/4
+                s1 * 1
+                \time 6/4
+                s1 * 3/2
+                \time 9/8
+                s1 * 9/8
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [D.7]
+                        }
+                \time 3/4
+                s1 * 3/4
+                \time 5/8
+                s1 * 5/8
+                \time 9/8
+                s1 * 9/8
+                \time 9/8
+                s1 * 9/8
+                \time 5/8
+                s1 * 5/8
+                \time 5/8
+                s1 * 5/8
+                \time 3/4
+                s1 * 3/4
+                \time 4/4
+                s1 * 1 \stopTextSpan
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [D.8]
+                        }
+                    ^ \markup {
+                    \override
+                        #'(padding . 0.45)
+                        \parenthesize
+                            \line
+                                {
+                                    \smaller
+                                        \general-align
+                                            #Y
+                                            #DOWN
+                                            \note-by-number
+                                                #2
+                                                #0
+                                                #1
+                                    \upright
+                                        " = 72"
+                                }
+                    \italic
+                        subito
+                    \smaller
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        " = 108"
+                    }
+                \time 5/4
+                s1 * 5/4
+                \once \override TextSpanner.arrow-width = 0.25
+                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                    \null
+                    }
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                \once \override TextSpanner.bound-details.left.text = \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            72
+                        }
+                    \hspace
+                        #0.5
+                    \general-align
+                        #Y
+                        #DOWN
+                        \override
+                            #'(padding . 0.5)
+                            \parenthesize
+                                \line
+                                    {
+                                        \scale
+                                            #'(0.5 . 0.5)
+                                            \score
+                                                {
+                                                    \new Score \with {
+                                                        \override SpacingSpanner.spacing-increment = #0.5
+                                                        proportionalNotationDuration = ##f
+                                                    } <<
+                                                        \new RhythmicStaff \with {
+                                                            \remove Time_signature_engraver
+                                                            \remove Staff_symbol_engraver
+                                                            \override Stem.direction = #up
+                                                            \override Stem.length = #5
+                                                            \override TupletBracket.bracket-visibility = ##t
+                                                            \override TupletBracket.direction = #up
+                                                            \override TupletBracket.padding = #1.25
+                                                            \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                            \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                            tupletFullLength = ##t
+                                                        } {
+                                                            c4.
+                                                        }
+                                                    >>
+                                                    \layout {
+                                                        indent = #0
+                                                        ragged-right = ##t
+                                                    }
+                                                }
+                                        =
+                                        \hspace
+                                            #-0.5
+                                        \scale
+                                            #'(0.5 . 0.5)
+                                            \score
+                                                {
+                                                    \new Score \with {
+                                                        \override SpacingSpanner.spacing-increment = #0.5
+                                                        proportionalNotationDuration = ##f
+                                                    } <<
+                                                        \new RhythmicStaff \with {
+                                                            \remove Time_signature_engraver
+                                                            \remove Staff_symbol_engraver
+                                                            \override Stem.direction = #up
+                                                            \override Stem.length = #5
+                                                            \override TupletBracket.bracket-visibility = ##t
+                                                            \override TupletBracket.direction = #up
+                                                            \override TupletBracket.padding = #1.25
+                                                            \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                            \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                            tupletFullLength = ##t
+                                                        } {
+                                                            c4
+                                                        }
+                                                    >>
+                                                    \layout {
+                                                        indent = #0
+                                                        ragged-right = ##t
+                                                    }
+                                                }
+                                    }
+                    \hspace
+                        #1.25
+                    }
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                \once \override TextSpanner.bound-details.right.arrow = ##t
+                \once \override TextSpanner.bound-details.right.padding = 2
+                \once \override TextSpanner.bound-details.right.text = ##f
+                \once \override TextSpanner.dash-fraction = 0.25
+                \once \override TextSpanner.dash-period = 1.5
+                \time 5/4
+                s1 * 5/4 \startTextSpan
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [D.9]
+                        }
+                \time 3/4
+                s1 * 3/4
+                \time 3/4
+                s1 * 3/4
+                \time 4/4
+                s1 * 1
+                \time 11/8
+                s1 * 11/8
+                \time 3/4
+                s1 * 3/4
+                \time 5/8
+                s1 * 5/8
+                \time 9/8
+                s1 * 9/8
+                \time 9/8
+                s1 * 9/8 \stopTextSpan
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [D.10]
+                        }
+                    ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            108
+                        }
+                    }
+                \time 7/8
+                s1 * 7/8
+                \time 9/8
+                s1 * 9/8
+                \time 3/4
+                s1 * 3/4
+                \time 3/4
+                s1 * 3/4
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [D.11]
+                        }
+                \time 3/4
+                s1 * 3/4
+                \time 3/4
+                s1 * 3/4
+                \time 4/4
+                s1 * 1
+                \time 5/4
+                s1 * 5/4
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [D.12]
+                        }
+                \time 4/4
+                s1 * 1
+                \time 9/8
+                s1 * 9/8
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [D.13]
+                        }
+                \time 3/4
+                s1 * 3/4
+                \time 5/8
+                s1 * 5/8
+                \time 9/8
+                s1 * 9/8
             }
         >>
         \context MusicContext = "Music Context" <<

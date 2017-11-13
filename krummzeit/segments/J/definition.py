@@ -25,7 +25,7 @@ maker = baca.TimeSignatureMaker(
 measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 maker = baca.SegmentMaker(
-    #final_barline=True,
+    #final_bar_line=True,
     final_markup=(['Cambridge, MA.'], ['May', 'August 2014.']),
     final_markup_extra_offset=(14.5, 0),
     ignore_repeat_pitch_classes=True,

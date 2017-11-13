@@ -39,28 +39,25 @@ class RegisterTransitionCommand(baca.Command):
             \context Score = "Score" <<
                 \context GlobalContext = "Global Context" <<
                     \context GlobalSkips = "Global Skips" {
-                        {
-                            \time 4/8
-                            s1 * 1/2
-                        }
-                        {
-                            \time 3/8
-                            s1 * 3/8
-                        }
-                        {
-                            \time 4/8
-                            s1 * 1/2
-                        }
-                        {
-                            \time 3/8
-                            s1 * 3/8
-                        }
+                        % measure 1
+                        \time 4/8
+                        s1 * 1/2
+                        % measure 2
+                        \time 3/8
+                        s1 * 3/8
+                        % measure 3
+                        \time 4/8
+                        s1 * 1/2
+                        % measure 4
+                        \time 3/8
+                        s1 * 3/8
                     }
                 >>
                 \context MusicContext = "Music Context" <<
                     \context Staff = "Music Staff" {
                         \context Voice = "Music Voice" {
                             {
+                                % measure 1
                                 \clef "treble"
                                 c'8 [
                                 d'8
@@ -68,17 +65,20 @@ class RegisterTransitionCommand(baca.Command):
                                 f'8 ]
                             }
                             {
+                                % measure 2
                                 c''8 [
                                 d''8
                                 e''8 ]
                             }
                             {
+                                % measure 3
                                 f''8 [
                                 c''8
                                 d''8
                                 e''8 ]
                             }
                             {
+                                % measure 4
                                 f''8 [
                                 c''8
                                 d''8 ]

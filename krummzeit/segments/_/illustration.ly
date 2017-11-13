@@ -12,8 +12,11 @@
         \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
         \context GlobalContext = "Global Context" <<
             \context GlobalRests = "Global Rests" {
+                % measure 1
                 R1 * 1
+                % measure 2
                 R1 * 9/8
+                % measure 3
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -22,11 +25,17 @@
                         \musicglyph
                             #"scripts.ushortfermata"
                         }
+                % measure 4
                 R1 * 3/4
+                % measure 5
                 R1 * 5/8
+                % measure 6
                 R1 * 9/8
+                % measure 7
                 R1 * 9/8
+                % measure 8
                 R1 * 5/8
+                % measure 9
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -35,12 +44,17 @@
                         \musicglyph
                             #"scripts.ushortfermata"
                         }
+                % measure 10
                 R1 * 5/8
+                % measure 11
                 R1 * 1
+                % measure 12
                 R1 * 5/4
+                % measure 13
                 R1 * 3/4
             }
             \context GlobalSkips = "Global Skips" {
+                % measure 1
                 \time 4/4
                 s1 * 1 ^ \markup {
                     \fontsize
@@ -58,10 +72,13 @@
                             135
                         }
                     }
+                % measure 2
                 \time 9/8
                 s1 * 9/8
+                % measure 3
                 \time 1/4
                 s1 * 1/4
+                % measure 4
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -96,10 +113,13 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 3/4
                 s1 * 3/4 \startTextSpan
+                % measure 5
                 \time 5/8
                 s1 * 5/8
+                % measure 6
                 \time 9/8
                 s1 * 9/8
+                % measure 7
                 \time 9/8
                 s1 * 9/8 \stopTextSpan ^ \markup {
                     \fontsize
@@ -117,6 +137,7 @@
                             144
                         }
                     }
+                % measure 8
                 \time 5/8
                 s1 * 5/8 ^ \markup {
                     \fontsize
@@ -134,8 +155,10 @@
                             108
                         }
                     }
+                % measure 9
                 \time 1/4
                 s1 * 1/4
+                % measure 10
                 \time 5/8
                 s1 * 5/8 ^ \markup {
                     \fontsize
@@ -153,10 +176,13 @@
                             135
                         }
                     }
+                % measure 11
                 \time 4/4
                 s1 * 1
+                % measure 12
                 \time 5/4
                 s1 * 5/4
+                % measure 13
                 \time 3/4
                 s1 * 3/4
             }
@@ -166,6 +192,7 @@
                 \tag winds.oboe
                 \context OboeMusicStaff = "Oboe Music Staff" {
                     \context OboeMusicVoice = "Oboe Music Voice" {
+                        % measure 1
                         \set OboeMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -178,17 +205,29 @@
                             }
                         \clef "treble"
                         R1 * 1
+                        % measure 2
                         R1 * 9/8
+                        % measure 3
                         R1 * 1/4
+                        % measure 4
                         R1 * 3/4
+                        % measure 5
                         R1 * 5/8
+                        % measure 6
                         R1 * 9/8
+                        % measure 7
                         R1 * 9/8
+                        % measure 8
                         R1 * 5/8
+                        % measure 9
                         R1 * 1/4
+                        % measure 10
                         R1 * 5/8
+                        % measure 11
                         R1 * 1
+                        % measure 12
                         R1 * 5/4
+                        % measure 13
                         R1 * 3/4
                         \bar "|"
                     }
@@ -196,6 +235,7 @@
                 \tag winds.clarinet
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
+                        % measure 1
                         \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -216,6 +256,7 @@
                             }
                         \clef "treble"
                         s1 * 19/8
+                        % measure 4
                         \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -242,9 +283,11 @@
                                     \box
                                         "to bass clarinet"
                                 }
+                        % measure 5
                         cs4. \repeatTie
                         cs4 \repeatTie
                         \revert Stem.direction
+                        % measure 6
                         s1 * 27/4
                         \bar "|"
                     }
@@ -254,6 +297,7 @@
                 \tag percussion.piano
                 \context PianoMusicStaff = "Piano Music Staff" {
                     \context PianoMusicVoice = "Piano Music Voice" {
+                        % measure 1
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -266,9 +310,12 @@
                             }
                         \clef "bass"
                         r1
+                        % measure 2
                         r1
                         r8
+                        % measure 3
                         s1 * 1/4
+                        % measure 4
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -300,10 +347,12 @@
                                 }
                         r8
                         r2
+                        % measure 5
                         s1 * 7/4
                         \revert DynamicLineSpanner.staff-padding
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/8 {
+                            % measure 7
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -330,6 +379,7 @@
                                 ^ \markup { @ }
                             \revert TupletBracket.staff-padding
                         }
+                        % measure 8
                         s1 * 9/2
                         \bar "|"
                     }
@@ -337,6 +387,7 @@
                 \tag percussion
                 \context PercussionMusicStaff = "Percussion Staff" {
                     \context PercussionMusicVoice = "Percussion Music Voice" {
+                        % measure 1
                         \set PercussionMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -351,6 +402,7 @@
                         s1 * 39/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/8 {
+                            % measure 7
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -401,9 +453,11 @@
                                 ^ \markup { @ }
                             \revert TupletBracket.staff-padding
                         }
+                        % measure 8
                         s1 * 7/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/8 {
+                            % measure 10
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
@@ -468,6 +522,7 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
+                            % measure 11
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -494,6 +549,7 @@
                                 ^ \markup { @ }
                         }
                         {
+                            % measure 12
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -521,6 +577,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            % measure 13
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -546,6 +603,7 @@
                 \tag strings.violin
                 \context ViolinMusicStaff = "Violin Music Staff" {
                     \context ViolinMusicVoice = "Violin Music Voice" {
+                        % measure 1
                         \set ViolinMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -772,8 +830,10 @@
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
+                        % measure 3
                         s1 * 1/4
                         \times 2/3 {
+                            % measure 4
                             \override NoteHead.style = #'harmonic
                             \override DynamicLineSpanner.staff-padding = #'7
                             \override TupletBracket.staff-padding = #3
@@ -791,6 +851,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
+                            % measure 5
                             d''4 \glissando
                             c''8. \glissando
                         }
@@ -813,12 +874,14 @@
                                 ^ \markup { @ }
                         }
                         \times 4/5 {
+                            % measure 6
                             fs''16. \glissando
                             g''4.
                         }
                         r4.
                         r4.
                         \times 4/5 {
+                            % measure 7
                             cs''8. \glissando
                             a'2. \glissando
                         }
@@ -828,6 +891,7 @@
                             a'8. \glissando
                         }
                         {
+                            % measure 8
                             bf'8 \glissando
                             e'4 \glissando
                         }
@@ -838,6 +902,7 @@
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
+                        % measure 9
                         s1 * 31/8
                         \bar "|"
                     }
@@ -845,6 +910,7 @@
                 \tag strings.viola
                 \context ViolaMusicStaff = "Viola Music Staff" {
                     \context ViolaMusicVoice = "Viola Music Voice" {
+                        % measure 1
                         \set ViolaMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -1071,13 +1137,16 @@
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
+                        % measure 3
                         s1 * 1/4
+                        % measure 4
                         \override Beam.positions = #'(-5 . -5)
                         \override DynamicLineSpanner.staff-padding = #'8
                         \override TupletBracket.staff-padding = #5
                         r2
                         r4
                         \times 4/7 {
+                            % measure 5
                             \override NoteHead.style = #'harmonic
                             fs'4 \glissando \< \pp
                                 ^ \markup {
@@ -1097,6 +1166,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
+                            % measure 6
                             a'2 \glissando
                             af4. \glissando
                         }
@@ -1104,9 +1174,11 @@
                             bf8 \glissando
                             e4
                         }
+                        % measure 7
                         r2.
                         r4.
                         \times 2/3 {
+                            % measure 8
                             ef8 \glissando
                             fs4 \glissando
                         }
@@ -1136,6 +1208,7 @@
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
+                        % measure 9
                         s1 * 31/8
                         \bar "|"
                     }
@@ -1143,6 +1216,7 @@
                 \tag strings.cello
                 \context CelloMusicStaff = "Cello Music Staff" {
                     \context CelloMusicVoice = "Cello Music Voice" {
+                        % measure 1
                         \set CelloMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -1369,8 +1443,10 @@
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
+                        % measure 3
                         s1 * 1/4
                         \times 2/3 {
+                            % measure 4
                             \override NoteHead.style = #'harmonic
                             \override DynamicLineSpanner.staff-padding = #'7
                             \override TupletBracket.staff-padding = #3
@@ -1387,6 +1463,7 @@
                             f'4
                         }
                         r4
+                        % measure 5
                         r4.
                         \times 4/5 {
                             f'16 \glissando
@@ -1394,6 +1471,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
+                            % measure 6
                             c'2 \glissando
                             a4. \glissando
                         }
@@ -1402,6 +1480,7 @@
                             c'4 \glissando
                         }
                         \times 4/5 {
+                            % measure 7
                             d'16. \glissando
                             fs4. \glissando
                         }
@@ -1411,6 +1490,7 @@
                             g8.
                         }
                         r4.
+                        % measure 8
                         r4.
                         \times 4/7 {
                             e4 \glissando
@@ -1419,6 +1499,7 @@
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
+                        % measure 9
                         s1 * 31/8
                         \bar "|"
                     }

@@ -13,6 +13,7 @@
         \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
+                % measure 200
                 \time 3/4
                 \mark #5
                 s1 * 3/4 ^ \markup {
@@ -31,20 +32,28 @@
                             108
                         }
                     }
+                % measure 201
                 \time 4/4
                 s1 * 1
+                % measure 202
                 \time 6/4
                 s1 * 3/2
+                % measure 203
                 \time 9/8
                 s1 * 9/8
+                % measure 204
                 \time 3/4
                 s1 * 3/4
+                % measure 205
                 \time 5/8
                 s1 * 5/8
+                % measure 206
                 \time 9/8
                 s1 * 9/8
+                % measure 207
                 \time 9/8
                 s1 * 9/8
+                % measure 208
                 \time 5/8
                 s1 * 5/8 ^ \markup {
                     \fontsize
@@ -62,8 +71,10 @@
                             135
                         }
                     }
+                % measure 209
                 \time 5/8
                 s1 * 5/8
+                % measure 210
                 \time 3/4
                 s1 * 3/4 ^ \markup {
                     \fontsize
@@ -81,12 +92,16 @@
                             72
                         }
                     }
+                % measure 211
                 \time 4/4
                 s1 * 1
+                % measure 212
                 \time 5/4
                 s1 * 5/4
+                % measure 213
                 \time 5/4
                 s1 * 5/4
+                % measure 214
                 \time 3/4
                 s1 * 3/4 ^ \markup {
                     \fontsize
@@ -104,8 +119,10 @@
                             108
                         }
                     }
+                % measure 215
                 \time 3/4
                 s1 * 3/4
+                % measure 216
                 \time 4/4
                 s1 * 1 ^ \markup {
                     \fontsize
@@ -123,6 +140,7 @@
                             90
                         }
                     }
+                % measure 217
                 \time 11/8
                 s1 * 11/8 ^ \markup {
                     \fontsize
@@ -140,8 +158,10 @@
                             108
                         }
                     }
+                % measure 218
                 \time 3/4
                 s1 * 3/4
+                % measure 219
                 \time 5/8
                 s1 * 5/8 ^ \markup {
                     \fontsize
@@ -159,14 +179,19 @@
                             90
                         }
                     }
+                % measure 220
                 \time 9/8
                 s1 * 9/8
+                % measure 221
                 \time 9/8
                 s1 * 9/8
+                % measure 222
                 \time 7/8
                 s1 * 7/8
+                % measure 223
                 \time 9/8
                 s1 * 9/8
+                % measure 224
                 \time 3/4
                 s1 * 3/4 ^ \markup {
                     \fontsize
@@ -184,8 +209,10 @@
                             135
                         }
                     }
+                % measure 225
                 \time 3/4
                 s1 * 3/4
+                % measure 226
                 \time 3/4
                 s1 * 3/4 ^ \markup {
                     \fontsize
@@ -203,16 +230,22 @@
                             45
                         }
                     }
+                % measure 227
                 \time 3/4
                 s1 * 3/4
+                % measure 228
                 \time 4/4
                 s1 * 1
+                % measure 229
                 \time 5/4
                 s1 * 5/4
+                % measure 230
                 \time 4/4
                 s1 * 1
+                % measure 231
                 \time 9/8
                 s1 * 9/8
+                % measure 232
                 \time 3/4
                 s1 * 3/4 ^ \markup {
                     \fontsize
@@ -230,8 +263,10 @@
                             72
                         }
                     }
+                % measure 233
                 \time 5/8
                 s1 * 5/8
+                % measure 234
                 \time 9/8
                 s1 * 9/8
             }
@@ -242,6 +277,7 @@
                 \context OboeMusicStaff = "Oboe Music Staff" {
                     \context OboeMusicVoice = "Oboe Music Voice" {
                         \times 4/5 {
+                            % measure 200
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -366,6 +402,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            % measure 201
                             a''8 [
                                 ^ \markup {
                                     \override
@@ -437,6 +474,7 @@
                                     }
                         }
                         r4 \stopTrillSpan
+                        % measure 202
                         r2
                         \times 8/9 {
                             af''8.
@@ -551,6 +589,7 @@
                                     }
                         }
                         \times 2/3 {
+                            % measure 203
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -656,9 +695,11 @@
                                                 1
                                     }
                         }
+                        % measure 204
                         r2
                         r4
                         \times 8/9 {
+                            % measure 205
                             bf''16. [
                             af''8
                                 ^ \markup {
@@ -806,6 +847,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            % measure 206
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -877,6 +919,7 @@
                                     }
                         }
                         r4. \stopTrillSpan
+                        % measure 207
                         r2.
                         \times 2/3 {
                             bf''8.
@@ -928,6 +971,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            % measure 208
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1034,6 +1078,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            % measure 209
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1098,8 +1143,10 @@
                                     }
                         }
                         r4
+                        % measure 210
                         s1 * 3/4
                         \times 4/5 {
+                            % measure 211
                             r8
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1156,6 +1203,7 @@
                                     }
                         }
                         {
+                            % measure 212
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1175,6 +1223,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
+                            % measure 213
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1194,11 +1243,13 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            % measure 214
                             a'2.
                             r2
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            % measure 215
                             r8.
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1240,6 +1291,7 @@
                                 ^ \markup { @ }
                         }
                         \times 4/5 {
+                            % measure 216
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1265,6 +1317,7 @@
                                     }
                         }
                         {
+                            % measure 217
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1306,6 +1359,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            % measure 218
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1317,6 +1371,7 @@
                             r2
                         }
                         {
+                            % measure 219
                             r16
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1374,6 +1429,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/10 {
+                            % measure 220
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1394,8 +1450,10 @@
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
+                        % measure 221
                         s1 * 49/8
                         \times 2/3 {
+                            % measure 228
                             \override DynamicLineSpanner.staff-padding = #'4
                             \override TupletBracket.staff-padding = #2
                             a''8. \ppp \startTrillSpan
@@ -1420,11 +1478,58 @@
                             r16 \stopTrillSpan
                         }
                         \times 2/3 {
+                            % measure 229
                             a''8. \startTrillSpan
                             r16 \stopTrillSpan
                             a''8 ~ \startTrillSpan
                         }
                         \times 2/3 {
+                            a''16
+                            r16 \stopTrillSpan
+                            a''8. \startTrillSpan
+                            r16 \stopTrillSpan
+                        }
+                        \times 2/3 {
+                            a''8. \startTrillSpan
+                            r16 \stopTrillSpan
+                            a''8 ~ \startTrillSpan
+                        }
+                        \times 2/3 {
+                            a''16
+                            r16 \stopTrillSpan
+                            a''8. \startTrillSpan
+                            r16 \stopTrillSpan
+                        }
+                        \times 2/3 {
+                            a''8. \startTrillSpan
+                            r16 \stopTrillSpan
+                            a''8 ~ \startTrillSpan
+                        }
+                        \times 2/3 {
+                            % measure 230
+                            a''16
+                            r16 \stopTrillSpan
+                            a''8. \startTrillSpan
+                            r16 \stopTrillSpan
+                        }
+                        \times 2/3 {
+                            a''8. \startTrillSpan
+                            r16 \stopTrillSpan
+                            a''8 ~ \startTrillSpan
+                        }
+                        \times 2/3 {
+                            a''16
+                            r16 \stopTrillSpan
+                            a''8. \startTrillSpan
+                            r16 \stopTrillSpan
+                        }
+                        \times 2/3 {
+                            a''8. \startTrillSpan
+                            r16 \stopTrillSpan
+                            a''8 ~ \startTrillSpan
+                        }
+                        \times 2/3 {
+                            % measure 231
                             a''16
                             r16 \stopTrillSpan
                             a''8. \startTrillSpan
@@ -1465,50 +1570,7 @@
                         }
                         \times 2/3 {
                             a''8. \startTrillSpan
-                            r16 \stopTrillSpan
-                            a''8 ~ \startTrillSpan
-                        }
-                        \times 2/3 {
-                            a''16
-                            r16 \stopTrillSpan
-                            a''8. \startTrillSpan
-                            r16 \stopTrillSpan
-                        }
-                        \times 2/3 {
-                            a''8. \startTrillSpan
-                            r16 \stopTrillSpan
-                            a''8 ~ \startTrillSpan
-                        }
-                        \times 2/3 {
-                            a''16
-                            r16 \stopTrillSpan
-                            a''8. \startTrillSpan
-                            r16 \stopTrillSpan
-                        }
-                        \times 2/3 {
-                            a''8. \startTrillSpan
-                            r16 \stopTrillSpan
-                            a''8 ~ \startTrillSpan
-                        }
-                        \times 2/3 {
-                            a''16
-                            r16 \stopTrillSpan
-                            a''8. \startTrillSpan
-                            r16 \stopTrillSpan
-                        }
-                        \times 2/3 {
-                            a''8. \startTrillSpan
-                            r16 \stopTrillSpan
-                            a''8 ~ \startTrillSpan
-                        }
-                        \times 2/3 {
-                            a''16
-                            r16 \stopTrillSpan
-                            a''8. \startTrillSpan
-                            r16 \stopTrillSpan
-                        }
-                        \times 2/3 {
-                            a''8. \startTrillSpan
+                            % measure 233
                             r16 \stopTrillSpan
                             a''8 ~ \startTrillSpan
                         }
@@ -1525,6 +1587,7 @@
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
+                        % measure 234
                         s1 * 9/8 \stopTrillSpan
                         \bar "|"
                     }
@@ -1532,6 +1595,7 @@
                 \tag winds.clarinet
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
+                        % measure 200
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1583,6 +1647,7 @@
                         gs\longa
                             - \tweak color #red
                             ^ \markup { @ }
+                        % measure 208
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1601,7 +1666,9 @@
                             ^ \markup { @ }
                         \revert Stem.direction
                         \revert DynamicLineSpanner.staff-padding
+                        % measure 210
                         s1 * 3/4
+                        % measure 211
                         \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -1622,6 +1689,7 @@
                             }
                         r1
                         {
+                            % measure 212
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'5
                             \override TupletBracket.staff-padding = #3
@@ -1629,6 +1697,7 @@
                             r2
                         }
                         {
+                            % measure 213
                             r8
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1686,6 +1755,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            % measure 214
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1712,6 +1782,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
+                            % measure 215
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1737,6 +1808,7 @@
                                     }
                         }
                         \times 4/5 {
+                            % measure 216
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1749,6 +1821,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 11/20 {
+                            % measure 217
                             r4.
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1791,6 +1864,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            % measure 218
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1817,6 +1891,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 10/11 {
+                            % measure 219
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1844,13 +1919,16 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/10 {
+                            % measure 220
                             dqs'2.
                             r2
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
+                        % measure 221
                         s1 * 9/8
+                        % measure 222
                         \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -1885,7 +1963,32 @@
                         r16
                         c4..
                         r16
+                        % measure 224
                         s1 * 3/2
+                        % measure 226
+                        c8..
+                        r32
+                        c8..
+                        r32
+                        c8..
+                        r32
+                        % measure 227
+                        c8..
+                        r32
+                        c8..
+                        r32
+                        c8..
+                        r32
+                        % measure 228
+                        c8..
+                        r32
+                        c8..
+                        r32
+                        c8..
+                        r32
+                        c8..
+                        r32
+                        % measure 229
                         c8..
                         r32
                         c8..
@@ -1896,33 +1999,16 @@
                         r32
                         c8..
                         r32
-                        c8..
-                        r32
-                        c8..
-                        r32
-                        c8..
-                        r32
-                        c8..
-                        r32
-                        c8..
-                        r32
-                        c8..
-                        r32
-                        c8..
-                        r32
-                        c8..
-                        r32
-                        c8..
-                        r32
-                        c8..
-                        r32
+                        % measure 230
                         s1 * 17/8
+                        % measure 232
                         c8..
                         r32
                         c8..
                         r32
                         c8..
                         r32
+                        % measure 233
                         c8..
                         r32
                         c8..
@@ -1947,8 +2033,10 @@
                 \tag percussion.piano
                 \context PianoMusicStaff = "Piano Music Staff" {
                     \context PianoMusicVoice = "Piano Music Voice" {
+                        % measure 200
                         \clef "bass"
                         s1 * 8
+                        % measure 208
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -2011,6 +2099,7 @@
                                         }
                                 }
                         r16
+                        % measure 209
                         r8
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
@@ -2047,8 +2136,10 @@
                                 }
                         r16
                         \revert DynamicLineSpanner.staff-padding
+                        % measure 210
                         s1 * 23/4
                         \times 4/5 {
+                            % measure 216
                             \clef "treble"
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'5
@@ -2101,8 +2192,10 @@
                             r4
                             f''4 -\staccatissimo
                         }
+                        % measure 217
                         s1 * 17/8
                         \times 4/5 {
+                            % measure 219
                             r16
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -2153,6 +2246,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            % measure 220
                             r4
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -2203,6 +2297,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            % measure 221
                             r8
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -2252,6 +2347,7 @@
                             f''4 -\staccatissimo
                         }
                         {
+                            % measure 222
                             r8
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -2301,6 +2397,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            % measure 223
                             r8
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -2350,6 +2447,7 @@
                             f''4 -\staccatissimo
                         }
                         \times 4/5 {
+                            % measure 224
                             r8
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -2398,6 +2496,7 @@
                             f''8 -\staccatissimo
                         }
                         \times 4/5 {
+                            % measure 225
                             r16
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -2448,6 +2547,7 @@
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
+                        % measure 226
                         \ottava #-1
                         \clef "bass"
                         bf,,,8.. \ppp
@@ -2456,12 +2556,14 @@
                         r32
                         bf,,,8..
                         r32
+                        % measure 227
                         bf,,,8..
                         r32
                         bf,,,8..
                         r32
                         bf,,,8..
                         r32
+                        % measure 228
                         bf,,,8..
                         r32
                         bf,,,8..
@@ -2471,6 +2573,7 @@
                         bf,,,8..
                         \ottava #0
                         r32
+                        % measure 229
                         \clef "treble"
                         \override Beam.positions = #'(-4 . -4)
                         \override DynamicLineSpanner.staff-padding = #'5
@@ -2485,6 +2588,7 @@
                             e''''8 -\staccatissimo ~
                         }
                         {
+                            % measure 230
                             e''''8 [
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -2509,7 +2613,9 @@
                             d''''4. -\staccatissimo
                         }
                         r4.
+                        % measure 231
                         s1 * 9/8
+                        % measure 232
                         r4.
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
@@ -2517,11 +2623,13 @@
                             e''''4. -\staccatissimo ~
                         }
                         {
+                            % measure 233
                             e''''8
                             fs''''4 -\staccatissimo
                             g''''4 -\staccatissimo
                             \ottava #0
                         }
+                        % measure 234
                         s1 * 9/8
                         \bar "|"
                         \revert Beam.positions
@@ -2534,6 +2642,7 @@
                     \context PercussionMusicVoice = "Percussion Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            % measure 200
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -2557,6 +2666,7 @@
                             c'2 :32 ~
                         }
                         \times 2/3 {
+                            % measure 201
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -2577,6 +2687,7 @@
                             c'2 :32 ~
                         }
                         {
+                            % measure 202
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -2598,6 +2709,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/17 {
+                            % measure 203
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -2625,6 +2737,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            % measure 204
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -2639,6 +2752,7 @@
                             c'2.. :32 ~
                         }
                         {
+                            % measure 205
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -2654,6 +2768,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/17 {
+                            % measure 206
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -2681,6 +2796,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/13 {
+                            % measure 207
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -2701,6 +2817,7 @@
                             c'2. :32 ~
                         }
                         {
+                            % measure 208
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -2716,6 +2833,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/8 {
+                            % measure 209
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -2731,6 +2849,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            % measure 210
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -2757,6 +2876,7 @@
                             c'8 :32 ~
                         }
                         {
+                            % measure 211
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -2778,6 +2898,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/9 {
+                            % measure 212
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -2799,6 +2920,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
+                            % measure 213
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -2824,9 +2946,11 @@
                             \once \override Stem.color = #blue
                             c'8 :32
                         }
+                        % measure 214
                         s1 * 3/2
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            % measure 216
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
@@ -2894,9 +3018,11 @@
                             r8
                             f'8 -\staccatissimo
                         }
+                        % measure 217
                         s1 * 17/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            % measure 219
                             r8
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -2946,6 +3072,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            % measure 220
                             r8
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -2996,6 +3123,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            % measure 221
                             r4
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -3045,6 +3173,7 @@
                             f'8 -\staccatissimo
                         }
                         \times 4/5 {
+                            % measure 222
                             r16
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -3095,6 +3224,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            % measure 223
                             r4
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -3144,6 +3274,7 @@
                             f'8 -\staccatissimo
                         }
                         \times 4/5 {
+                            % measure 224
                             r16
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -3192,6 +3323,7 @@
                             f'4 -\staccatissimo
                         }
                         \times 4/5 {
+                            % measure 225
                             r8
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -3239,9 +3371,11 @@
                             r8
                             f'8 -\staccatissimo
                         }
+                        % measure 226
                         s1 * 3/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            % measure 227
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3256,6 +3390,7 @@
                             c2 :32 ~
                         }
                         \times 2/3 {
+                            % measure 228
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3276,6 +3411,7 @@
                             c2 :32 ~
                         }
                         {
+                            % measure 229
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3296,6 +3432,7 @@
                             c4 :32 ~
                         }
                         {
+                            % measure 230
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3311,6 +3448,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/13 {
+                            % measure 231
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3331,6 +3469,7 @@
                             c4. :32 ~
                         }
                         {
+                            % measure 232
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3352,6 +3491,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/8 {
+                            % measure 233
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3371,6 +3511,7 @@
                             \once \override Stem.color = #blue
                             c8 :32
                         }
+                        % measure 234
                         s1 * 9/8
                         \bar "|"
                     }
@@ -3380,9 +3521,11 @@
                 \tag strings.violin
                 \context ViolinMusicStaff = "Violin Music Staff" {
                     \context ViolinMusicVoice = "Violin Music Voice" {
+                        % measure 200
                         \clef "treble"
                         \override DynamicLineSpanner.staff-padding = #'8.5
                         s1 * 8
+                        % measure 208
                         r8
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
@@ -3409,14 +3552,17 @@
                             - \tweak color #red
                             ^ \markup { @ }
                         r16
+                        % measure 209
                         r8
                         aqs8. :32
                         r16
                         aqs8. :32
                         r16
+                        % measure 210
                         s1 * 3/4
                         \revert DynamicLineSpanner.staff-padding
                         {
+                            % measure 211
                             \override NoteHead.style = #'harmonic
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
@@ -3434,6 +3580,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
+                            % measure 212
                             ef''2 \glissando
                             f''4. \glissando
                         }
@@ -3442,12 +3589,14 @@
                             e''2 \glissando
                         }
                         \times 4/5 {
+                            % measure 213
                             d''8 \glissando
                             fs''2
                         }
                         r4
                         r2
                         \times 4/5 {
+                            % measure 214
                             a'8 \glissando
                             c''2 \glissando
                         }
@@ -3456,6 +3605,7 @@
                             e''8. \glissando
                         }
                         \times 2/3 {
+                            % measure 215
                             d''4 \glissando
                             ef''2 \glissando
                         }
@@ -3464,6 +3614,7 @@
                             fs''4 \glissando
                         }
                         \times 4/7 {
+                            % measure 216
                             cs''4 \glissando
                             d''8.
                         }
@@ -3472,6 +3623,7 @@
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
                         {
+                            % measure 217
                             fs'2 \glissando
                             a'4. \glissando
                         }
@@ -3480,6 +3632,7 @@
                             g'2 \glissando
                         }
                         \times 4/5 {
+                            % measure 218
                             af'8 \glissando
                             a'2 \glissando
                         }
@@ -3488,14 +3641,17 @@
                             ef'8. \glissando
                         }
                         \times 2/3 {
+                            % measure 219
                             e'8 \glissando
                             c'4 \ppp
                             \revert NoteHead.style
                         }
                         r8
                         r4
+                        % measure 220
                         s1 * 29/4
                         \times 2/3 {
+                            % measure 228
                             \override DynamicLineSpanner.staff-padding = #'4
                             \override TupletBracket.staff-padding = #2
                             \pitchedTrill
@@ -3525,6 +3681,7 @@
                             g''8. \startTrillSpan a''
                             r16 \stopTrillSpan
                         }
+                        % measure 229
                         s1 * 47/8
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
@@ -3534,9 +3691,11 @@
                 \tag strings.viola
                 \context ViolaMusicStaff = "Viola Music Staff" {
                     \context ViolaMusicVoice = "Viola Music Voice" {
+                        % measure 200
                         \clef "alto"
                         \override DynamicLineSpanner.staff-padding = #'8.5
                         s1 * 8
+                        % measure 208
                         r8
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
@@ -3563,18 +3722,22 @@
                             - \tweak color #red
                             ^ \markup { @ }
                         r16
+                        % measure 209
                         r8
                         bf,8. :32
                         r16
                         bf,8. :32
                         r16
+                        % measure 210
                         s1 * 3/4
                         \revert DynamicLineSpanner.staff-padding
+                        % measure 211
                         \override DynamicLineSpanner.staff-padding = #'8
                         \override TupletBracket.staff-padding = #4
                         r2.
                         r4
                         \times 4/7 {
+                            % measure 212
                             \override NoteHead.style = #'harmonic
                             ef'2 \glissando \> \p
                                 ^ \markup {
@@ -3594,6 +3757,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
+                            % measure 213
                             fs'2 \glissando
                             e'4. \glissando
                         }
@@ -3601,9 +3765,11 @@
                             d'4 \glissando
                             fs'2
                         }
+                        % measure 214
                         r2
                         r4
                         \times 2/3 {
+                            % measure 215
                             a8 \glissando
                             c'4 \glissando
                         }
@@ -3616,6 +3782,7 @@
                             ef'8. \glissando
                         }
                         {
+                            % measure 216
                             f4 \glissando
                             fs2 \glissando
                         }
@@ -3625,9 +3792,11 @@
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
+                        % measure 217
                         r2..
                         r2
                         \times 4/5 {
+                            % measure 218
                             fs16 \glissando
                             a4 \glissando
                         }
@@ -3640,6 +3809,7 @@
                             a4 \glissando
                         }
                         \times 4/5 {
+                            % measure 219
                             bf16. \glissando
                             ef4. \glissando
                         }
@@ -3648,7 +3818,9 @@
                             c8. \ppp
                             \revert NoteHead.style
                         }
+                        % measure 220
                         s1 * 9/4
+                        % measure 222
                         \override DynamicLineSpanner.staff-padding = #'6
                         fs4.. \ppp
                         r16
@@ -3659,20 +3831,25 @@
                         fs4..
                         r16
                         \revert DynamicLineSpanner.staff-padding
+                        % measure 224
                         s1 * 3/2
+                        % measure 226
                         fs8..
                         r32
                         fs8..
                         r32
                         fs8..
                         r32
+                        % measure 227
                         s1 * 41/8
+                        % measure 232
                         fs8..
                         r32
                         fs8..
                         r32
                         fs8..
                         r32
+                        % measure 233
                         fs8..
                         r32
                         fs8..
@@ -3693,8 +3870,10 @@
                 \tag strings.cello
                 \context CelloMusicStaff = "Cello Music Staff" {
                     \context CelloMusicVoice = "Cello Music Voice" {
+                        % measure 200
                         \clef "bass"
                         s1 * 8
+                        % measure 208
                         \override DynamicLineSpanner.staff-padding = #'6
                         r8
                         \once \override Accidental.color = #red
@@ -3722,14 +3901,17 @@
                             - \tweak color #red
                             ^ \markup { @ }
                         r16
+                        % measure 209
                         r8
                         a,8. :32
                         r16
                         a,8. :32
                         r16
                         \revert DynamicLineSpanner.staff-padding
+                        % measure 210
                         s1 * 3/4
                         \times 2/3 {
+                            % measure 211
                             \override NoteHead.style = #'harmonic
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
@@ -3747,9 +3929,11 @@
                             \revert NoteHead.style
                         }
                         r4
+                        % measure 212
                         s1 * 10
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
+                        % measure 222
                         \override DynamicLineSpanner.staff-padding = #'6
                         c,4.. \ppp
                         r16
@@ -3760,20 +3944,25 @@
                         c,4..
                         r16
                         \revert DynamicLineSpanner.staff-padding
+                        % measure 224
                         s1 * 3/2
+                        % measure 226
                         c,8..
                         r32
                         c,8..
                         r32
                         c,8..
                         r32
+                        % measure 227
                         s1 * 41/8
+                        % measure 232
                         c,8..
                         r32
                         c,8..
                         r32
                         c,8..
                         r32
+                        % measure 233
                         c,8..
                         r32
                         c,8..

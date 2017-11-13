@@ -58,7 +58,7 @@ maker.validate_measures_per_stage()
 maker(
     baca.scope('Percussion Music Voice', 1),
     baca.clef('percussion'),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.IncisedRhythmMaker(
             incise_specifier=rhythmos.InciseSpecifier(
                 prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],
@@ -77,7 +77,7 @@ maker(
 
 maker(
     baca.scope('Violin Music Voice', 1, 5),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.SplitByDurationsDivisionCallback(
             durations=[(1, 4)],
             ),
@@ -99,7 +99,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('Percussion Music Voice', 3, 6),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
             extra_counts_per_division=[2, 1, 0],
             talea=rhythmos.Talea([1, 2], 2),
@@ -113,7 +113,7 @@ maker(
 
 maker(
     baca.scope('Viola Music Voice', 4),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[
                 (2, 1),
@@ -190,7 +190,7 @@ maker.copy_rhythm(
 maker(
     baca.scope('Piano Music Voice', 8),
     baca.instrument(krummzeit.instruments['piano']),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(1, 2), (2, 1)],
             ),
@@ -237,7 +237,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('Oboe Music Voice', 5, 7),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.TupletRhythmMaker(
             tuplet_ratios=[
                 (-2, 4, 1, 1, 12),
@@ -294,7 +294,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('Violin Music Voice', 11),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.IncisedRhythmMaker(
             incise_specifier=rhythmos.InciseSpecifier(
                 prefix_talea=[-2, 2, -2, 2, -2, 2, 0],
@@ -321,7 +321,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('Violin Music Voice', 13),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.IncisedRhythmMaker(
             incise_specifier=rhythmos.InciseSpecifier(
                 prefix_talea=[-2, 2, 3, -2, 3, -2, 2],
@@ -617,7 +617,7 @@ maker(
 
 maker(
     baca.scope('Percussion Music Voice', 12, 13),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.NoteRhythmMaker(
             tie_specifier=rhythmos.TieSpecifier(
                 repeat_ties=True,

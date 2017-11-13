@@ -52,7 +52,7 @@ maker.validate_measures_per_stage()
 maker(
     baca.scope('Piano Music Voice', 1, 6),
     baca.instrument(krummzeit.instruments['harpsichord']),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
@@ -70,7 +70,7 @@ maker(
 maker(
     baca.scope('Piano Music Voice', 7, 12),
     baca.instrument(krummzeit.instruments['piano']),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         # TODO: replace first division-maker?
         #division_maker=baca.FuseByCountsDivisionCallback(
         #    counts=abjad.Infinity,
@@ -92,7 +92,7 @@ maker(
 maker(
     baca.scope('Percussion Music Voice', 1, 12),
     baca.instrument(krummzeit.instruments['xylophone']),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         # TODO: replace first division-maker?
         #division_maker=baca.FuseByCountsDivisionCallback(
         #    counts=abjad.Infinity,
@@ -113,7 +113,7 @@ maker(
 
 maker(
     baca.scope('Violin Music Voice', 1, 10),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
             talea=rhythmos.Talea(
                 counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
@@ -156,7 +156,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('Oboe Music Voice', 1, 10),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
@@ -174,7 +174,7 @@ maker(
 maker(
     baca.scope('Clarinet Music Voice', 1, 10),
     baca.instrument(krummzeit.instruments['bass clarinet']),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[4],
             ),

@@ -56,7 +56,7 @@ maker.validate_measures_per_stage()
 
 maker(
     baca.scope('Violin Music Voice', 1),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
@@ -85,7 +85,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('Violin Music Voice', 3, 7),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(2, 1), (2, 1), (1, 1, 1)],
             ),
@@ -128,7 +128,7 @@ maker(
     baca.scope('Piano Music Voice', 1),
     baca.instrument(krummzeit.instruments['piano']),
     baca.clef('bass'),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.NoteRhythmMaker(
             division_masks=[abjad.index([0], 1)],
             ),
@@ -141,7 +141,7 @@ maker(
     baca.scope('Piano Music Voice', 3),
     baca.instrument(krummzeit.instruments['piano']),
     baca.clef('bass'),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.IncisedRhythmMaker(
             incise_specifier=rhythmos.InciseSpecifier(
                 prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],
@@ -159,7 +159,7 @@ maker(
 
 maker(
     baca.scope('Piano Music Voice', 6),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[2, 3, 1],
             ),
@@ -194,7 +194,7 @@ maker(
     baca.markup.boxed('sponges'),
     baca.pitches('C4'),
     baca.staff_lines(1),
-    baca.RhythmBuilder(
+    baca.RhythmCommand(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
             talea=rhythmos.Talea([1, 2], 2),
             extra_counts_per_division=[2, 1, 0],

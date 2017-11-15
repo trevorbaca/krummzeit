@@ -255,7 +255,7 @@
                                     }
                             }
                         \clef "treble"
-                        s1 * 19/8
+                        R1 * 19/8
                         % measure 4
                         \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
@@ -288,7 +288,7 @@
                         cs4 \repeatTie
                         \revert Stem.direction
                         % measure 6
-                        s1 * 27/4
+                        R1 * 27/4
                         \bar "|"
                     }
                 }
@@ -314,7 +314,7 @@
                         r1
                         r8
                         % measure 3
-                        s1 * 1/4
+                        R1 * 1/4
                         % measure 4
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
@@ -348,7 +348,7 @@
                         r8
                         r2
                         % measure 5
-                        s1 * 7/4
+                        R1 * 7/4
                         \revert DynamicLineSpanner.staff-padding
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/8 {
@@ -380,7 +380,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 8
-                        s1 * 9/2
+                        R1 * 9/2
                         \bar "|"
                     }
                 }
@@ -399,7 +399,7 @@
                                 Perc.
                             }
                         \clef "percussion"
-                        s1 * 39/8
+                        R1 * 39/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/8 {
                             % measure 7
@@ -454,7 +454,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 8
-                        s1 * 7/8
+                        R1 * 7/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/8 {
                             % measure 10
@@ -831,7 +831,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 3
-                        s1 * 1/4
+                        R1 * 1/4
                         \times 2/3 {
                             % measure 4
                             \override NoteHead.style = #'harmonic
@@ -903,7 +903,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 9
-                        s1 * 31/8
+                        R1 * 31/8
                         \bar "|"
                     }
                 }
@@ -1138,7 +1138,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 3
-                        s1 * 1/4
+                        R1 * 1/4
                         % measure 4
                         \override Beam.positions = #'(-5 . -5)
                         \override DynamicLineSpanner.staff-padding = #'8
@@ -1209,7 +1209,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 9
-                        s1 * 31/8
+                        R1 * 31/8
                         \bar "|"
                     }
                 }
@@ -1444,7 +1444,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 3
-                        s1 * 1/4
+                        R1 * 1/4
                         \times 2/3 {
                             % measure 4
                             \override NoteHead.style = #'harmonic
@@ -1500,7 +1500,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 9
-                        s1 * 31/8
+                        R1 * 31/8
                         \bar "|"
                     }
                 }

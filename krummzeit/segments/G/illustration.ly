@@ -211,7 +211,7 @@
                         \revert Stem.direction
                         \revert DynamicLineSpanner.staff-padding
                         % measure 264
-                        s1 * 3/4
+                        R1 * 3/4
                         \times 4/7 {
                             % measure 265
                             \override DynamicLineSpanner.staff-padding = #'7
@@ -349,7 +349,7 @@
                             \revert DynamicLineSpanner.staff-padding
                         }
                         % measure 269
-                        s1 * 19/4
+                        R1 * 19/4
                         {
                             % measure 274
                             \once \override Accidental.color = #red
@@ -444,7 +444,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 280
-                        s1 * 1/4
+                        R1 * 1/4
                         \bar "|"
                     }
                 }
@@ -489,7 +489,7 @@
                         \revert Stem.direction
                         \revert DynamicLineSpanner.staff-padding
                         % measure 262
-                        s1 * 9/4
+                        R1 * 9/4
                         {
                             % measure 265
                             \set ClarinetMusicStaff.instrumentName = \markup {
@@ -587,7 +587,7 @@
                             ds''4. -\staccato
                         }
                         % measure 269
-                        s1 * 19/4
+                        R1 * 19/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/4 {
                             % measure 274
@@ -715,7 +715,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 280
-                        s1 * 1/4
+                        R1 * 1/4
                         \bar "|"
                     }
                 }
@@ -726,7 +726,7 @@
                     \context PianoMusicVoice = "Piano Music Voice" {
                         % measure 257
                         \clef "bass"
-                        s1 * 27/8
+                        R1 * 27/8
                         \times 4/7 {
                             % measure 261
                             \set PianoMusicStaff.instrumentName = \markup {
@@ -913,7 +913,7 @@
                             \revert DynamicLineSpanner.staff-padding
                         }
                         % measure 268
-                        s1 * 2
+                        R1 * 2
                         % measure 270
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
@@ -1066,7 +1066,7 @@
                         \revert NoteHead.style
                         \revert DynamicLineSpanner.staff-padding
                         % measure 277
-                        s1 * 3
+                        R1 * 3
                         \bar "|"
                     }
                 }
@@ -1157,7 +1157,7 @@
                         c'2
                         r8
                         % measure 264
-                        s1 * 17
+                        R1 * 17
                         \bar "|"
                     }
                 }
@@ -1168,7 +1168,7 @@
                     \context ViolinMusicVoice = "Violin Music Voice" {
                         % measure 257
                         \clef "treble"
-                        s1 * 27/8
+                        R1 * 27/8
                         {
                             % measure 261
                             \override Beam.positions = #'(-4 . -4)
@@ -1358,7 +1358,7 @@
                             \revert DynamicLineSpanner.staff-padding
                         }
                         % measure 269
-                        s1 * 1/4
+                        R1 * 1/4
                         \times 2/3 {
                             % measure 270
                             \once \override Accidental.color = #red
@@ -1487,7 +1487,7 @@
                             df'1 :32
                         }
                         % measure 280
-                        s1 * 1/4
+                        R1 * 1/4
                         \bar "|"
                     }
                 }
@@ -1512,7 +1512,7 @@
                         g4 \fff
                         \revert DynamicLineSpanner.staff-padding
                         % measure 264
-                        s1 * 11/4
+                        R1 * 11/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 13/10 {
                             % measure 267
@@ -1529,7 +1529,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 269
-                        s1 * 1/4
+                        R1 * 1/4
                         \times 2/3 {
                             % measure 270
                             \override NoteHead.style = #'harmonic
@@ -1637,7 +1637,7 @@
                             c1 :32
                         }
                         % measure 280
-                        s1 * 1/4
+                        R1 * 1/4
                         \bar "|"
                     }
                 }
@@ -1667,7 +1667,7 @@
                         b,2. \fff
                         \revert DynamicLineSpanner.staff-padding
                         % measure 266
-                        s1 * 7/8
+                        R1 * 7/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 13/10 {
                             % measure 267
@@ -1684,7 +1684,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 269
-                        s1 * 1/4
+                        R1 * 1/4
                         \times 2/3 {
                             % measure 270
                             \override NoteHead.style = #'harmonic
@@ -1821,7 +1821,7 @@
                             c,\breve :32
                         }
                         % measure 280
-                        s1 * 1/4
+                        R1 * 1/4
                         \bar "|"
                     }
                 }

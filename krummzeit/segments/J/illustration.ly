@@ -223,7 +223,7 @@
                         % measure 353
                         r2
                         % measure 354
-                        s1 * 8
+                        R1 * 8
                         \bar "|."
                         \revert DynamicLineSpanner.staff-padding
                     }
@@ -344,7 +344,7 @@
                             ^ \markup { @ }
                         \revert Stem.direction
                         % measure 354
-                        s1 * 8
+                        R1 * 8
                         \bar "|."
                         \revert DynamicLineSpanner.staff-padding
                     }
@@ -907,7 +907,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 354
-                        s1 * 8
+                        R1 * 8
                         \bar "|."
                     }
                 }
@@ -947,7 +947,7 @@
                             cs'''2. -\staccatissimo
                         }
                         % measure 318
-                        s1 * 44
+                        R1 * 44
                         \bar "|."
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
@@ -1085,8 +1085,8 @@
                             - \tweak color #red
                             ^ \markup { @ }
                         % measure 354
-                        \once \override TextScript.extra-offset = #'(14.5 . 0)
-                        s1 * 8
+                        \once \override MultiMeasureRestText.extra-offset = #'(14.5 . 0)
+                        R1 * 8
                             _ \markup {
                                 \whiteout
                                     \upright

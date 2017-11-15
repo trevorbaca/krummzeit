@@ -1144,7 +1144,7 @@
                         }
                         r4
                         % measure 210
-                        s1 * 3/4
+                        R1 * 3/4
                         \times 4/5 {
                             % measure 211
                             r8
@@ -1451,7 +1451,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 221
-                        s1 * 49/8
+                        R1 * 49/8
                         \times 2/3 {
                             % measure 228
                             \override DynamicLineSpanner.staff-padding = #'4
@@ -1588,7 +1588,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 234
-                        s1 * 9/8 \stopTrillSpan
+                        R1 * 9/8 \stopTrillSpan
                         \bar "|"
                     }
                 }
@@ -1667,7 +1667,7 @@
                         \revert Stem.direction
                         \revert DynamicLineSpanner.staff-padding
                         % measure 210
-                        s1 * 3/4
+                        R1 * 3/4
                         % measure 211
                         \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
@@ -1927,7 +1927,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 221
-                        s1 * 9/8
+                        R1 * 9/8
                         % measure 222
                         \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
@@ -1964,7 +1964,7 @@
                         c4..
                         r16
                         % measure 224
-                        s1 * 3/2
+                        R1 * 3/2
                         % measure 226
                         c8..
                         r32
@@ -2000,7 +2000,7 @@
                         c8..
                         r32
                         % measure 230
-                        s1 * 17/8
+                        R1 * 17/8
                         % measure 232
                         c8..
                         r32
@@ -2035,7 +2035,7 @@
                     \context PianoMusicVoice = "Piano Music Voice" {
                         % measure 200
                         \clef "bass"
-                        s1 * 8
+                        R1 * 8
                         % measure 208
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
@@ -2137,7 +2137,7 @@
                         r16
                         \revert DynamicLineSpanner.staff-padding
                         % measure 210
-                        s1 * 23/4
+                        R1 * 23/4
                         \times 4/5 {
                             % measure 216
                             \clef "treble"
@@ -2193,7 +2193,7 @@
                             f''4 -\staccatissimo
                         }
                         % measure 217
-                        s1 * 17/8
+                        R1 * 17/8
                         \times 4/5 {
                             % measure 219
                             r16
@@ -2614,7 +2614,7 @@
                         }
                         r4.
                         % measure 231
-                        s1 * 9/8
+                        R1 * 9/8
                         % measure 232
                         r4.
                         \tweak text #tuplet-number::calc-fraction-text
@@ -2630,7 +2630,7 @@
                             \ottava #0
                         }
                         % measure 234
-                        s1 * 9/8
+                        R1 * 9/8
                         \bar "|"
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
@@ -2947,7 +2947,7 @@
                             c'8 :32
                         }
                         % measure 214
-                        s1 * 3/2
+                        R1 * 3/2
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             % measure 216
@@ -3019,7 +3019,7 @@
                             f'8 -\staccatissimo
                         }
                         % measure 217
-                        s1 * 17/8
+                        R1 * 17/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             % measure 219
@@ -3372,7 +3372,7 @@
                             f'8 -\staccatissimo
                         }
                         % measure 226
-                        s1 * 3/4
+                        R1 * 3/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             % measure 227
@@ -3512,7 +3512,7 @@
                             c8 :32
                         }
                         % measure 234
-                        s1 * 9/8
+                        R1 * 9/8
                         \bar "|"
                     }
                 }
@@ -3524,7 +3524,7 @@
                         % measure 200
                         \clef "treble"
                         \override DynamicLineSpanner.staff-padding = #'8.5
-                        s1 * 8
+                        R1 * 8
                         % measure 208
                         r8
                         \once \override Accidental.color = #red
@@ -3559,7 +3559,7 @@
                         aqs8. :32
                         r16
                         % measure 210
-                        s1 * 3/4
+                        R1 * 3/4
                         \revert DynamicLineSpanner.staff-padding
                         {
                             % measure 211
@@ -3649,7 +3649,7 @@
                         r8
                         r4
                         % measure 220
-                        s1 * 29/4
+                        R1 * 29/4
                         \times 2/3 {
                             % measure 228
                             \override DynamicLineSpanner.staff-padding = #'4
@@ -3682,7 +3682,7 @@
                             r16 \stopTrillSpan
                         }
                         % measure 229
-                        s1 * 47/8
+                        R1 * 47/8
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
@@ -3694,7 +3694,7 @@
                         % measure 200
                         \clef "alto"
                         \override DynamicLineSpanner.staff-padding = #'8.5
-                        s1 * 8
+                        R1 * 8
                         % measure 208
                         r8
                         \once \override Accidental.color = #red
@@ -3729,7 +3729,7 @@
                         bf,8. :32
                         r16
                         % measure 210
-                        s1 * 3/4
+                        R1 * 3/4
                         \revert DynamicLineSpanner.staff-padding
                         % measure 211
                         \override DynamicLineSpanner.staff-padding = #'8
@@ -3819,7 +3819,7 @@
                             \revert NoteHead.style
                         }
                         % measure 220
-                        s1 * 9/4
+                        R1 * 9/4
                         % measure 222
                         \override DynamicLineSpanner.staff-padding = #'6
                         fs4.. \ppp
@@ -3832,7 +3832,7 @@
                         r16
                         \revert DynamicLineSpanner.staff-padding
                         % measure 224
-                        s1 * 3/2
+                        R1 * 3/2
                         % measure 226
                         fs8..
                         r32
@@ -3841,7 +3841,7 @@
                         fs8..
                         r32
                         % measure 227
-                        s1 * 41/8
+                        R1 * 41/8
                         % measure 232
                         fs8..
                         r32
@@ -3872,7 +3872,7 @@
                     \context CelloMusicVoice = "Cello Music Voice" {
                         % measure 200
                         \clef "bass"
-                        s1 * 8
+                        R1 * 8
                         % measure 208
                         \override DynamicLineSpanner.staff-padding = #'6
                         r8
@@ -3909,7 +3909,7 @@
                         r16
                         \revert DynamicLineSpanner.staff-padding
                         % measure 210
-                        s1 * 3/4
+                        R1 * 3/4
                         \times 2/3 {
                             % measure 211
                             \override NoteHead.style = #'harmonic
@@ -3930,7 +3930,7 @@
                         }
                         r4
                         % measure 212
-                        s1 * 10
+                        R1 * 10
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
                         % measure 222
@@ -3945,7 +3945,7 @@
                         r16
                         \revert DynamicLineSpanner.staff-padding
                         % measure 224
-                        s1 * 3/2
+                        R1 * 3/2
                         % measure 226
                         c,8..
                         r32
@@ -3954,7 +3954,7 @@
                         c,8..
                         r32
                         % measure 227
-                        s1 * 41/8
+                        R1 * 41/8
                         % measure 232
                         c,8..
                         r32

@@ -775,7 +775,7 @@
                         \override Beam.positions = #'(-5 . -5)
                         \override DynamicLineSpanner.staff-padding = #'7
                         \override TupletBracket.staff-padding = #4
-                        s1 * 49/2
+                        R1 * 49/2
                         {
                             % measure 36
                             \set OboeMusicStaff.instrumentName = \markup {
@@ -1069,7 +1069,7 @@
                             a''4 -\staccato
                         }
                         % measure 51
-                        s1 * 157/4
+                        R1 * 157/4
                         \bar "|"
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
@@ -1083,7 +1083,7 @@
                         \clef "treble"
                         \override Beam.positions = #'(-4 . -4)
                         \override TupletBracket.staff-padding = #3
-                        s1 * 7/2
+                        R1 * 7/2
                         {
                             % measure 18
                             \set ClarinetMusicStaff.instrumentName = \markup {
@@ -1207,7 +1207,7 @@
                             \revert DynamicLineSpanner.staff-padding
                         }
                         % measure 25
-                        s1 * 7/2
+                        R1 * 7/2
                         {
                             % measure 29
                             \override DynamicLineSpanner.staff-padding = #'3
@@ -1654,7 +1654,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 50
-                        s1 * 67/2
+                        R1 * 67/2
                         % measure 82
                         \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
@@ -2440,7 +2440,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 45
-                        s1 * 113/8
+                        R1 * 113/8
                         % measure 58
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
@@ -3020,7 +3020,7 @@
                             c'4. -\accent
                         }
                         % measure 17
-                        s1 * 175/8
+                        R1 * 175/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             % measure 36
@@ -3130,7 +3130,7 @@
                             c'4.
                         }
                         % measure 52
-                        s1 * 8
+                        R1 * 8
                         % measure 58
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'5
@@ -3209,7 +3209,7 @@
                         r2
                         \revert DynamicLineSpanner.staff-padding
                         % measure 74
-                        s1 * 29/2
+                        R1 * 29/2
                         \bar "|"
                     }
                 }
@@ -3223,7 +3223,7 @@
                         \override DynamicLineSpanner.staff-padding = #'3
                         \override Beam.positions = #'(-5 . -5)
                         \override TupletBracket.staff-padding = #4
-                        s1 * 15/2
+                        R1 * 15/2
                         {
                             % measure 21
                             f''4. -\staccato \mp
@@ -3293,7 +3293,7 @@
                             bf''4 -\staccato
                         }
                         % measure 25
-                        s1 * 15/2
+                        R1 * 15/2
                         {
                             % measure 32
                             \once \override Accidental.color = #red
@@ -4235,7 +4235,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 42
-                        s1 * 11/2
+                        R1 * 11/2
                         % measure 47
                         \clef "treble"
                         \override DynamicLineSpanner.staff-padding = #'7
@@ -4667,7 +4667,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 85
-                        s1 * 4
+                        R1 * 4
                         \bar "|"
                     }
                 }
@@ -4769,7 +4769,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 42
-                        s1 * 11/2
+                        R1 * 11/2
                         % measure 47
                         \clef "treble"
                         \override DynamicLineSpanner.staff-padding = #'8
@@ -5146,7 +5146,7 @@
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
                         % measure 85
-                        s1 * 4
+                        R1 * 4
                         \bar "|"
                     }
                 }

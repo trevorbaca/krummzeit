@@ -576,7 +576,7 @@
                             b''4 \stopTrillSpan \startTrillSpan
                         }
                         % measure 93
-                        s1 * 1/4 \stopTrillSpan
+                        R1 * 1/4 \stopTrillSpan
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             % measure 94
@@ -609,7 +609,7 @@
                             bf''8
                         }
                         % measure 95
-                        s1 * 95/8 \stopTrillSpan
+                        R1 * 95/8 \stopTrillSpan
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             % measure 112
@@ -779,7 +779,7 @@
                                     }
                         }
                         % measure 117
-                        s1 * 1/4 \stopTrillSpan
+                        R1 * 1/4 \stopTrillSpan
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             % measure 118
@@ -814,7 +814,7 @@
                                     }
                         }
                         % measure 119
-                        s1 * 1/4 \stopTrillSpan
+                        R1 * 1/4 \stopTrillSpan
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             % measure 120
@@ -964,7 +964,7 @@
                             cs'''8 \stopTrillSpan
                         }
                         % measure 124
-                        s1 * 35/4
+                        R1 * 35/4
                         \bar "|"
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
@@ -1013,7 +1013,7 @@
                         btqs'4. \glissando
                         d''4.
                         % measure 93
-                        s1 * 101/8
+                        R1 * 101/8
                         % measure 112
                         d''4. \f \glissando
                         ctqs''4. \glissando
@@ -1029,12 +1029,12 @@
                         dqs''4. \glissando
                         ctqs''4
                         % measure 117
-                        s1 * 1/4
+                        R1 * 1/4
                         % measure 118
                         b'4. \glissando
                         ctqs''4.
                         % measure 119
-                        s1 * 1/4
+                        R1 * 1/4
                         % measure 120
                         e''4. \glissando
                         btqs'4. \glissando
@@ -1049,7 +1049,7 @@
                         eqs''4. \glissando
                         dqs''8
                         % measure 124
-                        s1 * 35/4
+                        R1 * 35/4
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
                     }
@@ -1061,7 +1061,7 @@
                     \context PianoMusicVoice = "Piano Music Voice" {
                         % measure 89
                         \clef "treble"
-                        s1 * 73/8
+                        R1 * 73/8
                         \times 4/5 {
                             % measure 102
                             \set PianoMusicStaff.instrumentName = \markup {
@@ -1091,7 +1091,7 @@
                             cs'''4 -\staccatissimo
                         }
                         % measure 103
-                        s1 * 1/4
+                        R1 * 1/4
                         {
                             % measure 104
                             r4
@@ -1108,7 +1108,7 @@
                             cs'''4 -\staccatissimo
                         }
                         % measure 105
-                        s1 * 1/4
+                        R1 * 1/4
                         \times 4/5 {
                             % measure 106
                             r16
@@ -1125,7 +1125,7 @@
                             cs'''4 -\staccatissimo
                         }
                         % measure 107
-                        s1 * 1/4
+                        R1 * 1/4
                         \times 4/5 {
                             % measure 108
                             r8
@@ -1141,7 +1141,7 @@
                             cs'''8 -\staccatissimo
                         }
                         % measure 109
-                        s1 * 11/2
+                        R1 * 11/2
                         \times 4/5 {
                             % measure 116
                             r16
@@ -1157,7 +1157,7 @@
                             cs'''4
                         }
                         % measure 117
-                        s1 * 1/4
+                        R1 * 1/4
                         \times 4/5 {
                             % measure 118
                             r8
@@ -1173,7 +1173,7 @@
                             cs'''8
                         }
                         % measure 119
-                        s1 * 1/4
+                        R1 * 1/4
                         \times 4/5 {
                             % measure 120
                             r8
@@ -1237,7 +1237,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 124
-                        s1 * 35/4
+                        R1 * 35/4
                         \bar "|"
                     }
                 }
@@ -1246,7 +1246,7 @@
                     \context PercussionMusicVoice = "Percussion Music Voice" {
                         % measure 89
                         \clef "percussion"
-                        s1 * 73/8
+                        R1 * 73/8
                         {
                             % measure 102
                             \stopStaff
@@ -1285,7 +1285,7 @@
                             cs''8 -\staccatissimo
                         }
                         % measure 103
-                        s1 * 1/4
+                        R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             % measure 104
@@ -1303,7 +1303,7 @@
                             cs''2 -\staccatissimo
                         }
                         % measure 105
-                        s1 * 1/4
+                        R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             % measure 106
@@ -1320,7 +1320,7 @@
                             cs''8 -\staccatissimo
                         }
                         % measure 107
-                        s1 * 1/4
+                        R1 * 1/4
                         \times 4/5 {
                             % measure 108
                             r16
@@ -1402,7 +1402,7 @@
                         \once \override Stem.color = #blue
                         c4
                         % measure 114
-                        s1 * 5/4
+                        R1 * 5/4
                         \times 4/5 {
                             % measure 116
                             \override Beam.positions = #'(-4 . -4)
@@ -1421,7 +1421,7 @@
                             cs''8
                         }
                         % measure 117
-                        s1 * 1/4
+                        R1 * 1/4
                         \times 4/5 {
                             % measure 118
                             r16
@@ -1437,7 +1437,7 @@
                             cs''4
                         }
                         % measure 119
-                        s1 * 1/4
+                        R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             % measure 120
@@ -1762,7 +1762,7 @@
                         \once \override Stem.color = #blue
                         c'2.
                         % measure 109
-                        s1 * 1/4
+                        R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             % measure 110
@@ -1858,7 +1858,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 117
-                        s1 * 11/2 \stopTrillSpan
+                        R1 * 11/2 \stopTrillSpan
                         % measure 124
                         \override DynamicLineSpanner.staff-padding = #'6
                         ftqs1. \glissando \< \pp
@@ -1873,7 +1873,7 @@
                         ftqs2 \fff
                         \revert DynamicLineSpanner.staff-padding
                         % measure 131
-                        s1 * 9/4
+                        R1 * 9/4
                         \bar "|"
                     }
                 }
@@ -1882,7 +1882,7 @@
                     \context ViolaMusicVoice = "Viola Music Voice" {
                         % measure 89
                         \clef "treble"
-                        s1 * 4
+                        R1 * 4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             % measure 94
@@ -1898,7 +1898,7 @@
                             dtqs8
                         }
                         % measure 95
-                        s1 * 1/4
+                        R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/5 {
                             % measure 96
@@ -1906,7 +1906,7 @@
                             eqs1
                         }
                         % measure 97
-                        s1 * 1/4
+                        R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             % measure 98
@@ -1914,7 +1914,7 @@
                             c4
                         }
                         % measure 99
-                        s1 * 1/4
+                        R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/5 {
                             % measure 100
@@ -1922,7 +1922,7 @@
                             e2 \pp
                         }
                         % measure 101
-                        s1 * 1/4
+                        R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/6 {
                             % measure 102
@@ -1978,7 +1978,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 112
-                        s1 * 45/8
+                        R1 * 45/8
                         % measure 120
                         \override DynamicLineSpanner.staff-padding = #'5
                         btqs,1 \glissando \< \pp
@@ -1997,7 +1997,7 @@
                         cqs2. \fff
                         \revert DynamicLineSpanner.staff-padding
                         % measure 131
-                        s1 * 9/4
+                        R1 * 9/4
                         \bar "|"
                     }
                 }
@@ -2006,7 +2006,7 @@
                     \context CelloMusicVoice = "Cello Music Voice" {
                         % measure 89
                         \clef "treble"
-                        s1 * 4
+                        R1 * 4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/5 {
                             % measure 94
@@ -2019,7 +2019,7 @@
                             ctqs,4
                         }
                         % measure 95
-                        s1 * 1/4
+                        R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/6 {
                             % measure 96
@@ -2027,7 +2027,7 @@
                             dqs,2
                         }
                         % measure 97
-                        s1 * 1/4
+                        R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/5 {
                             % measure 98
@@ -2035,7 +2035,7 @@
                             b,,2
                         }
                         % measure 99
-                        s1 * 1/4
+                        R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/6 {
                             % measure 100
@@ -2043,7 +2043,7 @@
                             d,4 \pp
                         }
                         % measure 101
-                        s1 * 1/4
+                        R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/5 {
                             % measure 102
@@ -2095,7 +2095,7 @@
                             dqs,2
                         }
                         % measure 112
-                        s1 * 45/8
+                        R1 * 45/8
                         % measure 120
                         \override DynamicLineSpanner.staff-padding = #'5
                         b,,\breve \glissando \< \pp
@@ -2106,7 +2106,7 @@
                                 }
                         cqs,2.. \fff
                         % measure 122
-                        s1 * 81/8
+                        R1 * 81/8
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
                     }

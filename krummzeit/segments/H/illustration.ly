@@ -100,7 +100,7 @@
                     \context OboeMusicVoice = "Oboe Music Voice" {
                         % measure 281
                         \clef "treble"
-                        s1 * 33/8
+                        R1 * 33/8
                         % measure 284
                         \override DynamicLineSpanner.staff-padding = #'3
                         d''1.. \ff ~ \startTrillSpan
@@ -184,7 +184,7 @@
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
                         % measure 281
                         \clef "treble"
-                        s1 * 33/8
+                        R1 * 33/8
                         % measure 284
                         \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
@@ -209,7 +209,7 @@
                         % measure 285
                         b'2.
                         % measure 286
-                        s1 * 2
+                        R1 * 2
                         \revert DynamicLineSpanner.staff-padding
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
@@ -1937,7 +1937,7 @@
                                     }
                         }
                         % measure 287
-                        s1 * 13/8
+                        R1 * 13/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/7 {
                             % measure 289
@@ -1994,7 +1994,7 @@
                     \context PercussionMusicVoice = "Percussion Music Voice" {
                         % measure 281
                         \clef "percussion"
-                        s1 * 47/8
+                        R1 * 47/8
                         % measure 285
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'6
@@ -2057,7 +2057,7 @@
                         c'4 -\accent -\ff
                         \revert DynamicLineSpanner.staff-padding
                         % measure 287
-                        s1 * 13/8
+                        R1 * 13/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/7 {
                             % measure 289
@@ -2196,7 +2196,7 @@
                             \revert NoteHead.style
                         }
                         % measure 286
-                        s1 * 11/8
+                        R1 * 11/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 13/10 {
                             % measure 287
@@ -2316,7 +2316,7 @@
                             \revert NoteHead.style
                         }
                         % measure 286
-                        s1 * 11/8
+                        R1 * 11/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 13/10 {
                             % measure 287
@@ -2421,7 +2421,7 @@
                             \revert NoteHead.style
                         }
                         % measure 286
-                        s1 * 11/8
+                        R1 * 11/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 13/10 {
                             % measure 287

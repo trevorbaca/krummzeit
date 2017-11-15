@@ -308,7 +308,7 @@
                                     }
                         }
                         % measure 292
-                        s1 * 19
+                        R1 * 19
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
@@ -370,7 +370,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 292
-                        s1 * 9/8
+                        R1 * 9/8
                         % measure 293
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
@@ -627,7 +627,7 @@
                             ^ \markup { @ }
                         \revert Stem.direction
                         % measure 305
-                        s1 * 27/4
+                        R1 * 27/4
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
                     }
@@ -673,7 +673,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 292
-                        s1 * 9/8
+                        R1 * 9/8
                         % measure 293
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
@@ -943,7 +943,7 @@
                                     }
                         }
                         % measure 295
-                        s1 * 23/8
+                        R1 * 23/8
                         % measure 298
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
@@ -3630,7 +3630,7 @@
                             \ottava #0
                         }
                         % measure 313
-                        s1 * 1/4
+                        R1 * 1/4
                         \bar "|"
                     }
                 }
@@ -3673,7 +3673,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 292
-                        s1 * 9/8
+                        R1 * 9/8
                         % measure 293
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'6
@@ -3843,7 +3843,7 @@
                         r1
                         \revert DynamicLineSpanner.staff-padding
                         % measure 313
-                        s1 * 1/4
+                        R1 * 1/4
                         \bar "|"
                     }
                 }
@@ -4146,7 +4146,7 @@
                         }
                         r8
                         % measure 294
-                        s1 * 5/8
+                        R1 * 5/8
                         % measure 295
                         \clef "treble"
                         g''4 -\downbow \glissando
@@ -4205,7 +4205,7 @@
                             ^ \markup { @ }
                         ef'4 -\upbow
                         % measure 300
-                        s1 * 21/2
+                        R1 * 21/2
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
@@ -4233,7 +4233,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 313
-                        s1 * 1/4
+                        R1 * 1/4
                         \bar "|"
                     }
                 }
@@ -4325,7 +4325,7 @@
                         }
                         r4
                         % measure 292
-                        s1 * 5/2
+                        R1 * 5/2
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
@@ -4387,7 +4387,7 @@
                         fs4 -\downbow \glissando
                         b4 -\upbow
                         % measure 300
-                        s1 * 21/2
+                        R1 * 21/2
                         \times 4/5 {
                             % measure 312
                             \override DynamicLineSpanner.staff-padding = #'6
@@ -4412,7 +4412,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 313
-                        s1 * 1/4
+                        R1 * 1/4
                         \bar "|"
                     }
                 }
@@ -4501,7 +4501,7 @@
                         }
                         r4
                         % measure 292
-                        s1 * 5/2
+                        R1 * 5/2
                         % measure 295
                         \clef "treble"
                         d''4 -\downbow \glissando
@@ -4546,7 +4546,7 @@
                         e4 -\downbow \glissando
                         bf4 -\upbow
                         % measure 300
-                        s1 * 21/2
+                        R1 * 21/2
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
                             % measure 312
@@ -4572,7 +4572,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 313
-                        s1 * 1/4
+                        R1 * 1/4
                         \bar "|"
                     }
                 }

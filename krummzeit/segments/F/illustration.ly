@@ -143,7 +143,7 @@
                         \override Beam.positions = #'(-5 . -5)
                         \override TupletBracket.staff-padding = #4
                         \override DynamicLineSpanner.staff-padding = #'8
-                        s1 * 19/8
+                        R1 * 19/8
                         {
                             % measure 238
                             a'''4. -\staccato \< \p
@@ -260,7 +260,7 @@
                             c'16 -\staccato \ff ]
                         }
                         % measure 245
-                        s1 * 55/4
+                        R1 * 55/4
                         \bar "|"
                         \revert Beam.positions
                         \revert TupletBracket.staff-padding
@@ -275,7 +275,7 @@
                         \override Beam.positions = #'(-5 . -5)
                         \override TupletBracket.staff-padding = #4
                         \override DynamicLineSpanner.staff-padding = #'8
-                        s1 * 19/8
+                        R1 * 19/8
                         \times 2/3 {
                             % measure 238
                             \set ClarinetMusicStaff.instrumentName = \markup {
@@ -373,7 +373,7 @@
                         }
                         % measure 245
                         \override DynamicLineSpanner.staff-padding = #'8
-                        s1 * 57/8
+                        R1 * 57/8
                         % measure 250
                         \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
@@ -428,7 +428,7 @@
                         \clef "treble"
                         \override Beam.positions = #'(-5 . -5)
                         \override TupletBracket.staff-padding = #4
-                        s1 * 19/8
+                        R1 * 19/8
                         \times 4/5 {
                             % measure 238
                             \set PianoMusicStaff.instrumentName = \markup {
@@ -535,7 +535,7 @@
                             bf8
                         }
                         % measure 244
-                        s1 * 33/8
+                        R1 * 33/8
                         \revert Beam.positions
                         \revert TupletBracket.staff-padding
                         \times 4/5 {
@@ -553,7 +553,7 @@
                             ef4
                         }
                         % measure 248
-                        s1 * 25/8
+                        R1 * 25/8
                         \times 4/5 {
                             % measure 250
                             r16
@@ -570,7 +570,7 @@
                             a,8
                         }
                         % measure 251
-                        s1 * 6
+                        R1 * 6
                         \bar "|"
                     }
                 }
@@ -622,7 +622,7 @@
                         \once \override Stem.color = #blue
                         c'8 :32
                         % measure 238
-                        s1 * 1
+                        R1 * 1
                         % measure 239
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
@@ -671,7 +671,7 @@
                         \once \override Stem.color = #blue
                         c'8 :32
                         % measure 244
-                        s1 * 33/8
+                        R1 * 33/8
                         % measure 247
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
@@ -680,7 +680,7 @@
                         \once \override Stem.color = #blue
                         c'2. :32
                         % measure 248
-                        s1 * 25/8
+                        R1 * 25/8
                         % measure 250
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
@@ -695,7 +695,7 @@
                         \once \override Stem.color = #blue
                         c'8 :32
                         % measure 251
-                        s1 * 5/2
+                        R1 * 5/2
                         % measure 253
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
@@ -755,7 +755,7 @@
                     \context ViolinMusicVoice = "Violin Music Voice" {
                         % measure 235
                         \clef "treble"
-                        s1 * 43/8
+                        R1 * 43/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 12/7 {
                             % measure 241
@@ -917,7 +917,7 @@
                                 ^ \markup { @ }
                         }
                         % measure 254
-                        s1 * 11/4
+                        R1 * 11/4
                         \bar "|"
                     }
                 }
@@ -926,7 +926,7 @@
                     \context ViolaMusicVoice = "Viola Music Voice" {
                         % measure 235
                         \clef "alto"
-                        s1 * 9/8
+                        R1 * 9/8
                         % measure 236
                         \override DynamicLineSpanner.staff-padding = #'6
                         fs8.. \< \ppp
@@ -1092,7 +1092,7 @@
                                 ^ \markup { @ }
                         }
                         % measure 254
-                        s1 * 11/4
+                        R1 * 11/4
                         \bar "|"
                     }
                 }
@@ -1101,7 +1101,7 @@
                     \context CelloMusicVoice = "Cello Music Voice" {
                         % measure 235
                         \clef "bass"
-                        s1 * 9/8
+                        R1 * 9/8
                         % measure 236
                         \override DynamicLineSpanner.staff-padding = #'6
                         c,8.. \< \ppp
@@ -1115,7 +1115,7 @@
                         c,8.. \fff
                         r32
                         % measure 238
-                        s1 * 3
+                        R1 * 3
                         \revert DynamicLineSpanner.staff-padding
                         % measure 241
                         r1.
@@ -1242,7 +1242,7 @@
                                 ^ \markup { @ }
                         }
                         % measure 254
-                        s1 * 11/4
+                        R1 * 11/4
                         \bar "|"
                     }
                 }

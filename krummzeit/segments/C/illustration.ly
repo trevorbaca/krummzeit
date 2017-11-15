@@ -467,7 +467,7 @@
                     \context OboeMusicVoice = "Oboe Music Voice" {
                         % measure 133
                         \clef "treble"
-                        s1 * 65/8
+                        R1 * 65/8
                         % measure 146
                         \override DynamicLineSpanner.staff-padding = #'5
                         \override Stem.direction = #up
@@ -480,7 +480,7 @@
                         \revert DynamicLineSpanner.staff-padding
                         \revert Stem.direction
                         % measure 149
-                        s1 * 15/4
+                        R1 * 15/4
                         \bar "|"
                     }
                 }
@@ -489,7 +489,7 @@
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
                         % measure 133
                         \clef "treble"
-                        s1 * 65/8
+                        R1 * 65/8
                         % measure 146
                         \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
@@ -568,7 +568,7 @@
                             \ottava #0
                         }
                         % measure 134
-                        s1 * 1/4
+                        R1 * 1/4
                         \times 2/3 {
                             % measure 135
                             g''16 -\staccatissimo \< \pp
@@ -585,7 +585,7 @@
                             c'8 -\staccatissimo \ff ]
                         }
                         % measure 136
-                        s1 * 1/4
+                        R1 * 1/4
                         \times 2/3 {
                             % measure 137
                             \clef "bass"
@@ -603,7 +603,7 @@
                             cs,4 -\staccatissimo \pp
                         }
                         % measure 138
-                        s1 * 13/8
+                        R1 * 13/8
                         % measure 141
                         \ottava #-1
                         \once \override Accidental.stencil = ##f
@@ -713,7 +713,7 @@
                                 }
                         \ottava #0
                         % measure 145
-                        s1 * 1/4
+                        R1 * 1/4
                         % measure 146
                         \ottava #-1
                         \once \override Accidental.stencil = ##f
@@ -785,7 +785,7 @@
                         \revert DynamicLineSpanner.staff-padding
                         \ottava #0
                         % measure 149
-                        s1 * 15/4
+                        R1 * 15/4
                         \bar "|"
                     }
                 }
@@ -895,7 +895,7 @@
                         \once \override Stem.color = #blue
                         c'8 :32
                         % measure 142
-                        s1 * 19/8
+                        R1 * 19/8
                         % measure 146
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
@@ -1090,7 +1090,7 @@
                     \context ViolinMusicVoice = "Violin Music Voice" {
                         % measure 133
                         \clef "treble"
-                        s1 * 15/8
+                        R1 * 15/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
                             % measure 137
@@ -1118,7 +1118,7 @@
                             \ottava #0
                         }
                         % measure 138
-                        s1 * 1/4
+                        R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
                             % measure 139
@@ -1136,7 +1136,7 @@
                             e'4 -\staccatissimo \ff
                         }
                         % measure 140
-                        s1 * 1/4
+                        R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
                             % measure 141
@@ -1157,7 +1157,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 142
-                        s1 * 19/8
+                        R1 * 19/8
                         % measure 146
                         \once \override Stem.direction = #up
                         fs1
@@ -1173,7 +1173,7 @@
                                     possibile
                                 }
                         % measure 147
-                        s1 * 6
+                        R1 * 6
                         \bar "|"
                     }
                 }
@@ -1182,7 +1182,7 @@
                     \context ViolaMusicVoice = "Viola Music Voice" {
                         % measure 133
                         \clef "treble"
-                        s1 * 15/8
+                        R1 * 15/8
                         \times 2/3 {
                             % measure 137
                             \clef "treble"
@@ -1208,7 +1208,7 @@
                             \ottava #0
                         }
                         % measure 138
-                        s1 * 1/4
+                        R1 * 1/4
                         \times 2/3 {
                             % measure 139
                             r8
@@ -1223,7 +1223,7 @@
                             a'4 -\staccatissimo \ff
                         }
                         % measure 140
-                        s1 * 1/4
+                        R1 * 1/4
                         \times 2/3 {
                             % measure 141
                             \clef "alto"
@@ -1242,7 +1242,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 142
-                        s1 * 5/8
+                        R1 * 5/8
                         % measure 143
                         \override Stem.direction = #up
                         bf,2. ~
@@ -1260,7 +1260,7 @@
                         % measure 144
                         bf,2.
                         % measure 145
-                        s1 * 1/4
+                        R1 * 1/4
                         % measure 146
                         bf,1 ~
                             _ \markup {
@@ -1276,7 +1276,7 @@
                         bf,4
                         \revert Stem.direction
                         % measure 149
-                        s1 * 15/4
+                        R1 * 15/4
                         \bar "|"
                     }
                 }
@@ -1285,7 +1285,7 @@
                     \context CelloMusicVoice = "Cello Music Voice" {
                         % measure 133
                         \clef "treble"
-                        s1 * 15/8
+                        R1 * 15/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
                             % measure 137
@@ -1309,7 +1309,7 @@
                             d'4 -\staccatissimo \pp
                         }
                         % measure 138
-                        s1 * 1/4
+                        R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
                             % measure 139
@@ -1325,7 +1325,7 @@
                             ef4 -\staccatissimo \ff
                         }
                         % measure 140
-                        s1 * 1/4
+                        R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
                             % measure 141
@@ -1343,7 +1343,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 142
-                        s1 * 19/8
+                        R1 * 19/8
                         % measure 146
                         \once \override Stem.direction = #up
                         a,,1
@@ -1359,7 +1359,7 @@
                                     possibile
                                 }
                         % measure 147
-                        s1 * 6
+                        R1 * 6
                         \bar "|"
                     }
                 }

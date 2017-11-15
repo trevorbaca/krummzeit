@@ -446,7 +446,7 @@
                         \override Beam.positions = #'(-4 . -4)
                         \override DynamicLineSpanner.staff-padding = #'6
                         \override TupletBracket.staff-padding = #3
-                        s1 * 37/4
+                        R1 * 37/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             % measure 162
@@ -899,7 +899,7 @@
                                     }
                         }
                         % measure 176
-                        s1 * 79/8
+                        R1 * 79/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/10 {
                             % measure 186
@@ -1205,7 +1205,7 @@
                             ds''2
                         }
                         % measure 196
-                        s1 * 29/8
+                        R1 * 29/8
                         \bar "|"
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
@@ -1220,7 +1220,7 @@
                         \override Beam.positions = #'(-4 . -4)
                         \override DynamicLineSpanner.staff-padding = #'6
                         \override TupletBracket.staff-padding = #3
-                        s1 * 37/4
+                        R1 * 37/4
                         % measure 162
                         r2.
                         \tweak text #tuplet-number::calc-fraction-text
@@ -1281,7 +1281,7 @@
                             ds''2.
                         }
                         % measure 165
-                        s1 * 159/8
+                        R1 * 159/8
                         % measure 186
                         r1
                         r8
@@ -1498,7 +1498,7 @@
                             r2
                         }
                         % measure 196
-                        s1 * 29/8
+                        R1 * 29/8
                         \bar "|"
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
@@ -1513,7 +1513,7 @@
                         % measure 152
                         \clef "bass"
                         \override DynamicLineSpanner.staff-padding = #'3
-                        s1 * 13/2
+                        R1 * 13/2
                         % measure 159
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
@@ -1636,7 +1636,7 @@
                             ^ \markup { @ }
                         \revert NoteHead.style
                         % measure 165
-                        s1 * 10
+                        R1 * 10
                         \revert DynamicLineSpanner.staff-padding
                         \times 4/5 {
                             % measure 176
@@ -2285,7 +2285,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 194
-                        s1 * 9/4
+                        R1 * 9/4
                         % measure 196
                         \clef "bass"
                         \override DynamicLineSpanner.staff-padding = #'6
@@ -2485,7 +2485,7 @@
                         r8.
                         \revert DynamicLineSpanner.staff-padding
                         % measure 155
-                        s1 * 11/8
+                        R1 * 11/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/17 {
                             % measure 157
@@ -2585,7 +2585,7 @@
                             c'4. -\accent
                         }
                         % measure 168
-                        s1 * 27/4
+                        R1 * 27/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             % measure 176
@@ -2713,7 +2713,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 178
-                        s1 * 61/8
+                        R1 * 61/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             % measure 186
@@ -3390,7 +3390,7 @@
                             fs''8.
                         }
                         % measure 176
-                        s1 * 9/4
+                        R1 * 9/4
                         \times 2/3 {
                             % measure 178
                             f''4 \ff \glissando
@@ -3514,7 +3514,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 186
-                        s1 * 31/8
+                        R1 * 31/8
                         % measure 190
                         \override DynamicLineSpanner.staff-padding = #'8
                         r8
@@ -3538,7 +3538,7 @@
                         aqs8 :32
                         r8
                         % measure 194
-                        s1 * 9/4
+                        R1 * 9/4
                         % measure 196
                         r8
                         \once \override Accidental.color = #red
@@ -3958,7 +3958,7 @@
                             af''4
                         }
                         % measure 176
-                        s1 * 9/4
+                        R1 * 9/4
                         {
                             % measure 178
                             c''4 \ff \glissando
@@ -4065,7 +4065,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 186
-                        s1 * 31/8
+                        R1 * 31/8
                         % measure 190
                         \clef "alto"
                         \override DynamicLineSpanner.staff-padding = #'8
@@ -4090,7 +4090,7 @@
                         bf,8 :32
                         r8
                         % measure 194
-                        s1 * 9/4
+                        R1 * 9/4
                         % measure 196
                         \clef "alto"
                         r8
@@ -4407,7 +4407,7 @@
                             g''4
                         }
                         % measure 176
-                        s1 * 9/4
+                        R1 * 9/4
                         \times 2/3 {
                             % measure 178
                             b''4 \ff \glissando
@@ -4499,7 +4499,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         % measure 186
-                        s1 * 31/8
+                        R1 * 31/8
                         % measure 190
                         \clef "bass"
                         \override DynamicLineSpanner.staff-padding = #'6
@@ -4524,7 +4524,7 @@
                         a,8 :32
                         r8
                         % measure 194
-                        s1 * 9/4
+                        R1 * 9/4
                         % measure 196
                         \clef "bass"
                         r8

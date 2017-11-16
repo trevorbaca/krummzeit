@@ -2034,7 +2034,18 @@
                 \context PianoMusicStaff = "Piano Music Staff" {
                     \context PianoMusicVoice = "Piano Music Voice" {
                         % measure 200
+                        \set PianoMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Piano
+                            }
+                        \set PianoMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Pf.
+                            }
                         \clef "bass"
+                        \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 8
                         % measure 208
                         \set PianoMusicStaff.instrumentName = \markup {
@@ -2651,8 +2662,19 @@
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
+                            \set PercussionMusicStaff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Xylophone
+                                }
+                            \set PercussionMusicStaff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Xyl.
+                                }
                             \clef "percussion"
-                            c'2 :32
+                            \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            c2 :32
                                 ^ \markup {
                                     \whiteout
                                         \upright
@@ -2666,7 +2688,7 @@
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 :32 ~
+                            c2 :32 ~
                         }
                         \times 2/3 {
                             % measure 201
@@ -2675,19 +2697,19 @@
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 :32
+                            c2 :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 :32
+                            c2 :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 :32 ~
+                            c2 :32 ~
                         }
                         {
                             % measure 202
@@ -2696,19 +2718,19 @@
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 :32
+                            c2 :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 :32
+                            c2 :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 :32 ~
+                            c2 :32 ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/17 {
@@ -2718,25 +2740,25 @@
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 :32
+                            c2 :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 :32
+                            c2 :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'1 :32
+                            c1 :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'8 :32 ~
+                            c8 :32 ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -2746,13 +2768,13 @@
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'4. :32
+                            c4. :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2.. :32 ~
+                            c2.. :32 ~
                         }
                         {
                             % measure 205
@@ -2761,13 +2783,13 @@
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'8 :32
+                            c8 :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 :32
+                            c2 :32
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/17 {
@@ -2777,25 +2799,25 @@
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'1 :32
+                            c1 :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 :32
+                            c2 :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 :32 ~
+                            c2 :32 ~
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'8 :32 ~
+                            c8 :32 ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/13 {
@@ -2805,19 +2827,19 @@
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'4. :32
+                            c4. :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 :32
+                            c2 :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2. :32 ~
+                            c2. :32 ~
                         }
                         {
                             % measure 208
@@ -2826,13 +2848,13 @@
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'4 :32
+                            c4 :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'4. :32 ~
+                            c4. :32 ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/8 {
@@ -2842,13 +2864,13 @@
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'8 :32
+                            c8 :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2.. :32 ~
+                            c2.. :32 ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -2858,25 +2880,25 @@
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'8 :32
+                            c8 :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 :32
+                            c2 :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 :32 ~
+                            c2 :32 ~
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'8 :32 ~
+                            c8 :32 ~
                         }
                         {
                             % measure 211
@@ -2885,19 +2907,19 @@
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'4. :32
+                            c4. :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 :32
+                            c2 :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'8 :32 ~
+                            c8 :32 ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/9 {
@@ -2907,19 +2929,19 @@
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2.. :32
+                            c2.. :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 :32
+                            c2 :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2.. :32 ~
+                            c2.. :32 ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
@@ -2929,25 +2951,25 @@
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'8 :32
+                            c8 :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'2 :32
+                            c2 :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'1 :32
+                            c1 :32
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            c'8 :32
+                            c8 :32
                         }
                         % measure 214
                         R1 * 3/2
@@ -2969,12 +2991,6 @@
                                 }
                             \clef "treble"
                             r4
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to xylophone"
-                                    }
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3528,8 +3544,19 @@
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 5
                         \startStaff
+                        \set ViolinMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Violin
+                            }
+                        \set ViolinMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Vn.
+                            }
                         \clef "treble"
                         \override DynamicLineSpanner.staff-padding = #'8.5
+                        \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 8
                         % measure 208
                         r8
@@ -3698,8 +3725,19 @@
                 \context ViolaMusicStaff = "Viola Music Staff" {
                     \context ViolaMusicVoice = "Viola Music Voice" {
                         % measure 200
+                        \set ViolaMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Viola
+                            }
+                        \set ViolaMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Va.
+                            }
                         \clef "alto"
                         \override DynamicLineSpanner.staff-padding = #'8.5
+                        \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 8
                         % measure 208
                         r8
@@ -3877,7 +3915,18 @@
                 \context CelloMusicStaff = "Cello Music Staff" {
                     \context CelloMusicVoice = "Cello Music Voice" {
                         % measure 200
+                        \set CelloMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Cello
+                            }
+                        \set CelloMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Vc.
+                            }
                         \clef "bass"
+                        \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 8
                         % measure 208
                         \override DynamicLineSpanner.staff-padding = #'6

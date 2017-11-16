@@ -442,10 +442,21 @@
                 \context OboeMusicStaff = "Oboe Music Staff" {
                     \context OboeMusicVoice = "Oboe Music Voice" {
                         % measure 152
+                        \set OboeMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Oboe
+                            }
+                        \set OboeMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Ob.
+                            }
                         \clef "treble"
                         \override Beam.positions = #'(-4 . -4)
                         \override DynamicLineSpanner.staff-padding = #'6
                         \override TupletBracket.staff-padding = #3
+                        \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 37/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -1216,17 +1227,36 @@
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
                         % measure 152
+                        \set ClarinetMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                \center-column
+                                    {
+                                        Bass
+                                        clarinet
+                                    }
+                            }
+                        \set ClarinetMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                \center-column
+                                    {
+                                        Bass
+                                        cl.
+                                    }
+                            }
                         \clef "treble"
                         \override Beam.positions = #'(-4 . -4)
                         \override DynamicLineSpanner.staff-padding = #'6
                         \override TupletBracket.staff-padding = #3
+                        \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 37/4
                         % measure 162
                         r2.
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             % measure 163
-                            cs''2. \p
+                            fs'''2. \p
                             r2
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -1238,7 +1268,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            cs''4
+                            fs'''4
                                 - \tweak color #red
                                 ^ \markup { @ }
                                 ^ \markup {
@@ -1253,7 +1283,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            cs''16 [
+                            fs'''16 [
                                 - \tweak color #red
                                 ^ \markup { @ }
                                 ^ \markup {
@@ -1268,7 +1298,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            cs''16 ]
+                            fs'''16 ]
                                 - \tweak color #red
                                 ^ \markup { @ }
                                 ^ \markup {
@@ -1278,7 +1308,7 @@
                                             \finger
                                                 1
                                     }
-                            ds''2.
+                            gs'''2.
                         }
                         % measure 165
                         R1 * 159/8
@@ -1288,7 +1318,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/10 {
                             % measure 187
-                            d''2. \mf
+                            g'''2. \mf
                             r2
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -1300,7 +1330,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''4
+                            g'''4
                                 - \tweak color #red
                                 ^ \markup { @ }
                                 ^ \markup {
@@ -1315,7 +1345,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''16 [
+                            g'''16 [
                                 - \tweak color #red
                                 ^ \markup { @ }
                                 ^ \markup {
@@ -1330,7 +1360,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''16 ]
+                            g'''16 ]
                                 - \tweak color #red
                                 ^ \markup { @ }
                                 ^ \markup {
@@ -1345,7 +1375,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            ds''2. ~
+                            gs'''2. ~
                                 - \tweak color #red
                                 ^ \markup { @ }
                         }
@@ -1357,7 +1387,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            ds''2.
+                            gs'''2.
                                 - \tweak color #red
                                 ^ \markup { @ }
                             \once \override Accidental.color = #red
@@ -1365,7 +1395,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            ds''2 ~
+                            gs'''2 ~
                                 - \tweak color #red
                                 ^ \markup { @ }
                                 ^ \markup {
@@ -1384,15 +1414,15 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            ds''2
+                            gs'''2
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            d''4. \mf ~
+                            g'''4. \mf ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             % measure 191
-                            d''2.
+                            g'''2.
                             r2
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -1404,7 +1434,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''4
+                            g'''4
                                 - \tweak color #red
                                 ^ \markup { @ }
                                 ^ \markup {
@@ -1419,7 +1449,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''16
+                            g'''16
                                 - \tweak color #red
                                 ^ \markup { @ }
                                 ^ \markup {
@@ -1434,7 +1464,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''2. ~
+                            g'''2. ~
                                 - \tweak color #red
                                 ^ \markup { @ }
                                 ^ \markup {
@@ -1452,21 +1482,21 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''2.
+                            g'''2.
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            ds''2 ~
+                            gs'''2 ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 10/11 {
                             % measure 194
-                            ds''2..
+                            gs'''2..
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''8 \mf
+                            g'''8 \mf
                                 - \tweak color #red
                                 ^ \markup { @ }
                             \once \override Accidental.color = #red
@@ -1474,7 +1504,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''4. ~
+                            g'''4. ~
                                 - \tweak color #red
                                 ^ \markup { @ }
                                 ^ \markup {
@@ -1492,7 +1522,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''2.
+                            g'''2.
                                 - \tweak color #red
                                 ^ \markup { @ }
                             r2
@@ -1511,8 +1541,19 @@
                 \context PianoMusicStaff = "Piano Music Staff" {
                     \context PianoMusicVoice = "Piano Music Voice" {
                         % measure 152
+                        \set PianoMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Piano
+                            }
+                        \set PianoMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Pf.
+                            }
                         \clef "bass"
                         \override DynamicLineSpanner.staff-padding = #'3
+                        \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 13/2
                         % measure 159
                         \once \override Accidental.color = #red
@@ -2463,10 +2504,21 @@
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
+                        \set PercussionMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Xylophone
+                            }
+                        \set PercussionMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Xyl.
+                            }
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'6
+                        \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         r16
-                        c'16 -\pp
+                        c16 -\pp
                             ^ \markup {
                                 \whiteout
                                     \upright
@@ -2481,7 +2533,7 @@
                         r1
                         % measure 154
                         r2..
-                        c'16 -\pp
+                        c16 -\pp
                         r8.
                         \revert DynamicLineSpanner.staff-padding
                         % measure 155
@@ -2489,7 +2541,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/17 {
                             % measure 157
-                            c'2 -\accent
+                            c2 -\accent
                                 ^ \markup {
                                     \whiteout
                                         \upright
@@ -2507,82 +2559,82 @@
                                         \italic
                                             ”
                                     }
-                            c'1 -\accent
-                            c'2 -\accent
-                            c'8 -\accent
+                            c1 -\accent
+                            c2 -\accent
+                            c8 -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/13 {
                             % measure 158
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                            c'2.. \repeatTie
-                            c'2 -\accent
-                            c'4 -\accent
+                            c2.. \repeatTie
+                            c2 -\accent
+                            c4 -\accent
                         }
                         {
                             % measure 159
-                            c'2 \repeatTie
-                            c'8 \repeatTie
+                            c2 \repeatTie
+                            c8 \repeatTie
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
                             % measure 160
-                            c'8 \repeatTie
+                            c8 \repeatTie
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                            c'2 -\accent
-                            c'4. -\accent
+                            c2 -\accent
+                            c4. -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
                             % measure 161
-                            c'2 \repeatTie
-                            c'8 \repeatTie
+                            c2 \repeatTie
+                            c8 \repeatTie
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                            c'2 -\accent
-                            c'2 -\accent
-                            c'8 \repeatTie
+                            c2 -\accent
+                            c2 -\accent
+                            c8 \repeatTie
                         }
                         {
                             % measure 162
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                            c'4. \repeatTie
-                            c'4. -\accent
+                            c4. \repeatTie
+                            c4. -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             % measure 163
-                            c'8 \repeatTie
+                            c8 \repeatTie
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                            c'2.. -\accent
+                            c2.. -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             % measure 164
-                            c'8 \repeatTie
+                            c8 \repeatTie
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                            c'2 -\accent
-                            c'2 -\accent
-                            c'8 \repeatTie
+                            c2 -\accent
+                            c2 -\accent
+                            c8 \repeatTie
                         }
                         {
                             % measure 165
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                            c'4. \repeatTie
-                            c'4. -\accent
+                            c4. \repeatTie
+                            c4. -\accent
                         }
                         {
                             % measure 166
-                            c'8 \repeatTie
-                            c'2.. -\accent
+                            c8 \repeatTie
+                            c2.. -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             % measure 167
-                            c'8 \repeatTie
+                            c8 \repeatTie
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                            c'2 -\accent
-                            c'1 -\accent
-                            c'4. -\accent
+                            c2 -\accent
+                            c1 -\accent
+                            c4. -\accent
                         }
                         % measure 168
                         R1 * 27/4
@@ -2607,12 +2659,6 @@
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #3
                             r4
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to xylophone"
-                                    }
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3120,7 +3166,18 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \set ViolinMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Violin
+                            }
+                        \set ViolinMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Vn.
+                            }
                         \clef "treble"
+                        \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         ef'4
                             ^ \markup {
                                 \column
@@ -3602,7 +3659,18 @@
                 \context ViolaMusicStaff = "Viola Music Staff" {
                     \context ViolaMusicVoice = "Viola Music Voice" {
                         % measure 152
+                        \set ViolaMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Viola
+                            }
+                        \set ViolaMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Va.
+                            }
                         \clef "alto"
+                        \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         c4 \glissando
                             ^ \markup {
                                 \whiteout
@@ -4155,7 +4223,18 @@
                 \context CelloMusicStaff = "Cello Music Staff" {
                     \context CelloMusicVoice = "Cello Music Voice" {
                         % measure 152
+                        \set CelloMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Cello
+                            }
+                        \set CelloMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Vc.
+                            }
                         \clef "bass"
+                        \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         d,4 \glissando
                             ^ \markup {
                                 \whiteout

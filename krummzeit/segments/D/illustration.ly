@@ -3298,13 +3298,13 @@
                         \times 4/5 {
                             % measure 167
                             bf''8 \glissando
-                            cs''2 \f
+                            \revert TextSpanner.bound-details
+                            \revert TextSpanner.dash-fraction
+                            \revert TextSpanner.dash-period
+                            cs''2 \f \stopTextSpan
                         }
                         r2
-                        \revert TextSpanner.bound-details
-                        \revert TextSpanner.dash-fraction
-                        \revert TextSpanner.dash-period
-                        r2 \stopTextSpan
+                        r2
                         % measure 168
                         r2.
                         \times 4/5 {
@@ -3744,33 +3744,33 @@
                         r4
                         r2
                         % measure 162
-                        \override TextSpanner.bound-details.left-broken.text = #'#f
-                        \override TextSpanner.bound-details.left.padding = #-1
-                        \override TextSpanner.bound-details.left.stencil-align-dir-y = #0
-                        \override TextSpanner.bound-details.left.text = \markup {
-                            \larger
-                                \italic
-                                    "molto flautando"
-                            \hspace
-                                #1
-                            }
-                        \override TextSpanner.bound-details.right-broken.padding = #0
-                        \override TextSpanner.bound-details.right-broken.text = #'#f
-                        \override TextSpanner.bound-details.right.arrow = ##t
-                        \override TextSpanner.bound-details.right.padding = #1
-                        \override TextSpanner.bound-details.right.stencil-align-dir-y = #0
-                        \override TextSpanner.bound-details.right.text = \markup {
-                            \hspace
-                                #1
-                            \larger
-                                \italic
-                                    "molto gridato"
-                            }
-                        \override TextSpanner.dash-fraction = #0.25
-                        \override TextSpanner.dash-period = #1.5
-                        r2 \startTextSpan
+                        r2
                         \times 4/5 {
-                            cs''16 \glissando \< \pp
+                            \override TextSpanner.bound-details.left-broken.text = #'#f
+                            \override TextSpanner.bound-details.left.padding = #-1
+                            \override TextSpanner.bound-details.left.stencil-align-dir-y = #0
+                            \override TextSpanner.bound-details.left.text = \markup {
+                                \larger
+                                    \italic
+                                        "molto flautando"
+                                \hspace
+                                    #1
+                                }
+                            \override TextSpanner.bound-details.right-broken.padding = #0
+                            \override TextSpanner.bound-details.right-broken.text = #'#f
+                            \override TextSpanner.bound-details.right.arrow = ##t
+                            \override TextSpanner.bound-details.right.padding = #1
+                            \override TextSpanner.bound-details.right.stencil-align-dir-y = #0
+                            \override TextSpanner.bound-details.right.text = \markup {
+                                \hspace
+                                    #1
+                                \larger
+                                    \italic
+                                        "molto gridato"
+                                }
+                            \override TextSpanner.dash-fraction = #0.25
+                            \override TextSpanner.dash-period = #1.5
+                            cs''16 \glissando \< \pp \startTextSpan
                             f''4 \glissando
                         }
                         \times 4/7 {
@@ -4232,41 +4232,41 @@
                         f,4 \glissando
                         b,4
                         % measure 165
-                        \override TextSpanner.bound-details.left-broken.text = #'#f
-                        \override TextSpanner.bound-details.left.padding = #-1
-                        \override TextSpanner.bound-details.left.stencil-align-dir-y = #0
-                        \override TextSpanner.bound-details.left.text = \markup {
-                            \larger
-                                \italic
-                                    "molto flautando"
-                            \hspace
-                                #1
-                            }
-                        \override TextSpanner.bound-details.right-broken.padding = #0
-                        \override TextSpanner.bound-details.right-broken.text = #'#f
-                        \override TextSpanner.bound-details.right.arrow = ##t
-                        \override TextSpanner.bound-details.right.padding = #1
-                        \override TextSpanner.bound-details.right.stencil-align-dir-y = #0
-                        \override TextSpanner.bound-details.right.text = \markup {
-                            \hspace
-                                #1
-                            \larger
-                                \italic
-                                    "molto gridato"
-                            }
-                        \override TextSpanner.dash-fraction = #0.25
-                        \override TextSpanner.dash-period = #1.5
                         \clef "treble"
                         \override Beam.positions = #'(-4 . -4)
                         \override DynamicLineSpanner.staff-padding = #'6
                         \override TupletBracket.staff-padding = #3
-                        r2 \startTextSpan
+                        r2
                         r4
                         % measure 166
                         r4
                         \times 2/3 {
+                            \override TextSpanner.bound-details.left-broken.text = #'#f
+                            \override TextSpanner.bound-details.left.padding = #-1
+                            \override TextSpanner.bound-details.left.stencil-align-dir-y = #0
+                            \override TextSpanner.bound-details.left.text = \markup {
+                                \larger
+                                    \italic
+                                        "molto flautando"
+                                \hspace
+                                    #1
+                                }
+                            \override TextSpanner.bound-details.right-broken.padding = #0
+                            \override TextSpanner.bound-details.right-broken.text = #'#f
+                            \override TextSpanner.bound-details.right.arrow = ##t
+                            \override TextSpanner.bound-details.right.padding = #1
+                            \override TextSpanner.bound-details.right.stencil-align-dir-y = #0
+                            \override TextSpanner.bound-details.right.text = \markup {
+                                \hspace
+                                    #1
+                                \larger
+                                    \italic
+                                        "molto gridato"
+                                }
+                            \override TextSpanner.dash-fraction = #0.25
+                            \override TextSpanner.dash-period = #1.5
                             \override NoteHead.style = #'harmonic
-                            g''4 \glissando \< \pp
+                            g''4 \glissando \< \pp \startTextSpan
                             fs''2 \glissando
                         }
                         \times 4/5 {

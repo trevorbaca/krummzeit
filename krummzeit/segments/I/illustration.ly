@@ -299,6 +299,7 @@
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #2
                             \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            \once \override OboeMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             ef''4. \ff
                                 - \tweak color #red
                                 ^ \markup { @ }
@@ -358,6 +359,7 @@
                             \override DynamicLineSpanner.staff-padding = #'9
                             \override Stem.direction = #up
                             \override TupletBracket.staff-padding = #5
+                            \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             f8 \ff
                                 - \tweak color #red
                                 ^ \markup { @ }
@@ -669,6 +671,7 @@
                             \clef "bass"
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #2
+                            \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             fs'''4. :32 \fff
                                 - \tweak color #red
                                 ^ \markup { @ }
@@ -3672,6 +3675,7 @@
                             \clef "treble"
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #2
+                            \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             fs''8 :32 \fff
                                 - \tweak color #red
                                 ^ \markup { @ }
@@ -3891,6 +3895,7 @@
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
                             \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             ef''8 :32 \fff [
                                 - \tweak color #red
                                 ^ \markup { @ }
@@ -4290,6 +4295,7 @@
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
                             \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             a8 :32 \fff [
                                 - \tweak color #red
                                 ^ \markup { @ }
@@ -4477,6 +4483,7 @@
                                 }
                             \clef "bass"
                             \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             eqf,8 :32 \fff [
                                 - \tweak color #red
                                 ^ \markup { @ }

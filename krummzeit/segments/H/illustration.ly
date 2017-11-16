@@ -111,6 +111,7 @@
                             }
                         \clef "treble"
                         \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        \once \override OboeMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 33/8
                         % measure 284
                         \override DynamicLineSpanner.staff-padding = #'3
@@ -214,6 +215,7 @@
                             }
                         \clef "treble"
                         \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 33/8
                         % measure 284
                         \set ClarinetMusicStaff.instrumentName = \markup {
@@ -374,6 +376,7 @@
                                     Hpschd.
                                 }
                             \clef "bass"
+                            \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             <d' f' a' c''>8 [
                                 ^ \markup {
                                     \override
@@ -2044,6 +2047,7 @@
                             }
                         \clef "percussion"
                         \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 47/8
                         % measure 285
                         \clef "percussion"
@@ -2172,6 +2176,7 @@
                                 }
                             \clef "treble"
                             \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             df'2. :32
                                 - \tweak color #red
                                 ^ \markup { @ }
@@ -2310,6 +2315,7 @@
                                 }
                             \clef "alto"
                             \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             c4 :32
                                 - \tweak color #red
                                 ^ \markup { @ }
@@ -2441,6 +2447,7 @@
                                 }
                             \clef "bass"
                             \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             c,2 :32
                                 - \tweak color #red
                                 ^ \markup { @ }

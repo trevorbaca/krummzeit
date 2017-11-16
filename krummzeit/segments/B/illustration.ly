@@ -1245,6 +1245,9 @@
                 \context PercussionMusicStaff = "Percussion Staff" {
                     \context PercussionMusicVoice = "Percussion Music Voice" {
                         % measure 89
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         \clef "percussion"
                         R1 * 73/8
                         {
@@ -1601,6 +1604,9 @@
                 \context ViolinMusicStaff = "Violin Music Staff" {
                     \context ViolinMusicVoice = "Violin Music Voice" {
                         % measure 89
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue

@@ -2643,6 +2643,9 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             % measure 200
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3522,6 +3525,9 @@
                 \context ViolinMusicStaff = "Violin Music Staff" {
                     \context ViolinMusicVoice = "Violin Music Voice" {
                         % measure 200
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 5
+                        \startStaff
                         \clef "treble"
                         \override DynamicLineSpanner.staff-padding = #'8.5
                         R1 * 8

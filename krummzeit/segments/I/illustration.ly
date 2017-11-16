@@ -3640,6 +3640,9 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
                             % measure 291
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 5
+                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3854,6 +3857,9 @@
                     \context ViolinMusicVoice = "Violin Music Voice" {
                         \times 2/3 {
                             % measure 291
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 5
+                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red

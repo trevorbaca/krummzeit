@@ -32,6 +32,14 @@ metadata = abjad.TypedOrderedDict(
                 ),
             ),
         ('end_metronome_mark', '135'),
+        (
+            'end_staff_lines_by_staff',
+            abjad.TypedOrderedDict(
+                [
+                    ('Percussion Staff', 1),
+                    ]
+                ),
+            ),
         ('end_time_signature', '3/4'),
         ('first_bar_number', 1),
         ('measure_count', 13),

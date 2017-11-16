@@ -1993,6 +1993,9 @@
                 \context PercussionMusicStaff = "Percussion Staff" {
                     \context PercussionMusicVoice = "Percussion Music Voice" {
                         % measure 281
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 5
+                        \startStaff
                         \clef "percussion"
                         R1 * 47/8
                         % measure 285
@@ -2116,6 +2119,9 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 19/10 {
                             % measure 281
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 5
+                            \startStaff
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red

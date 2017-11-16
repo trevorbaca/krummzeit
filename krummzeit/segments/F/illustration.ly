@@ -578,6 +578,9 @@
                 \context PercussionMusicStaff = "Percussion Staff" {
                     \context PercussionMusicVoice = "Percussion Music Voice" {
                         % measure 235
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 5
+                        \startStaff
                         \clef "percussion"
                         \override DynamicLineSpanner.staff-padding = #'6
                         r1
@@ -754,6 +757,9 @@
                 \context ViolinMusicStaff = "Violin Music Staff" {
                     \context ViolinMusicVoice = "Violin Music Voice" {
                         % measure 235
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 5
+                        \startStaff
                         \clef "treble"
                         R1 * 43/8
                         \tweak text #tuplet-number::calc-fraction-text

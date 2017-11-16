@@ -99,7 +99,18 @@
                 \context OboeMusicStaff = "Oboe Music Staff" {
                     \context OboeMusicVoice = "Oboe Music Voice" {
                         % measure 281
+                        \set OboeMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Oboe
+                            }
+                        \set OboeMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Ob.
+                            }
                         \clef "treble"
+                        \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 33/8
                         % measure 284
                         \override DynamicLineSpanner.staff-padding = #'3
@@ -183,7 +194,26 @@
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
                         % measure 281
+                        \set ClarinetMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                \center-column
+                                    {
+                                        Bass
+                                        clarinet
+                                    }
+                            }
+                        \set ClarinetMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                \center-column
+                                    {
+                                        Bass
+                                        cl.
+                                    }
+                            }
                         \clef "treble"
+                        \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 33/8
                         % measure 284
                         \set ClarinetMusicStaff.instrumentName = \markup {
@@ -206,6 +236,12 @@
                             }
                         \override DynamicLineSpanner.staff-padding = #'3
                         b'1.. \ff ~
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to clarinet in E-flat"
+                                }
                         % measure 285
                         b'2.
                         % measure 286
@@ -1996,7 +2032,18 @@
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 5
                         \startStaff
+                        \set PercussionMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Xylophone
+                            }
+                        \set PercussionMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Xyl.
+                            }
                         \clef "percussion"
+                        \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 47/8
                         % measure 285
                         \clef "percussion"
@@ -2007,7 +2054,7 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'4 -\accent -\ff
+                        c4 -\accent -\ff
                             ^ \markup {
                                 \whiteout
                                     \upright
@@ -2021,43 +2068,43 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'4 -\accent -\ff
+                        c4 -\accent -\ff
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'4 -\accent -\ff
+                        c4 -\accent -\ff
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'4 -\accent -\ff
+                        c4 -\accent -\ff
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'4 -\accent -\ff
+                        c4 -\accent -\ff
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'4 -\accent -\ff
+                        c4 -\accent -\ff
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'4 -\accent -\ff
+                        c4 -\accent -\ff
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c'4 -\accent -\ff
+                        c4 -\accent -\ff
                         \revert DynamicLineSpanner.staff-padding
                         % measure 287
                         R1 * 13/8
@@ -2082,22 +2129,8 @@
                             \clef "treble"
                             \override TupletBracket.staff-padding = #3
                             fs''4 :32 \fff
-                                ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    \override
-                                                        #'(box-padding . 0.75)
-                                                        \box
-                                                            "to xylophone"
-                                                }
-                                            \line
-                                                {
-                                                    @
-                                                }
-                                        }
-                                    }
+                                - \tweak color #red
+                                ^ \markup { @ }
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2127,7 +2160,18 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
+                            \set ViolinMusicStaff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Violin
+                                }
+                            \set ViolinMusicStaff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Vn.
+                                }
                             \clef "treble"
+                            \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             df'2. :32
                                 - \tweak color #red
                                 ^ \markup { @ }
@@ -2254,7 +2298,18 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
+                            \set ViolaMusicStaff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Viola
+                                }
+                            \set ViolaMusicStaff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Va.
+                                }
                             \clef "alto"
+                            \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             c4 :32
                                 - \tweak color #red
                                 ^ \markup { @ }
@@ -2374,7 +2429,18 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
+                            \set CelloMusicStaff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Cello
+                                }
+                            \set CelloMusicStaff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Vc.
+                                }
                             \clef "bass"
+                            \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             c,2 :32
                                 - \tweak color #red
                                 ^ \markup { @ }

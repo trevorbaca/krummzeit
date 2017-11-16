@@ -440,10 +440,21 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             % measure 89
+                            \set OboeMusicStaff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Oboe
+                                }
+                            \set OboeMusicStaff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Ob.
+                                }
                             \clef "treble"
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
+                            \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             e'8 \ff
                             ef''4 \startTrillSpan
                                 ^ \markup {
@@ -1060,7 +1071,18 @@
                 \context PianoMusicStaff = "Piano Music Staff" {
                     \context PianoMusicVoice = "Piano Music Voice" {
                         % measure 89
+                        \set PianoMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Piano
+                            }
+                        \set PianoMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Pf.
+                            }
                         \clef "treble"
+                        \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 73/8
                         \times 4/5 {
                             % measure 102
@@ -1248,7 +1270,18 @@
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
+                        \set PercussionMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Percussion
+                            }
+                        \set PercussionMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Perc.
+                            }
                         \clef "percussion"
+                        \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 73/8
                         {
                             % measure 102
@@ -1612,7 +1645,18 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
+                        \set ViolinMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Violin
+                            }
+                        \set ViolinMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Vn.
+                            }
                         \clef "percussion"
+                        \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         c'2. ~
                             ^ \markup {
                                 \whiteout
@@ -1887,7 +1931,18 @@
                 \context ViolaMusicStaff = "Viola Music Staff" {
                     \context ViolaMusicVoice = "Viola Music Voice" {
                         % measure 89
+                        \set ViolaMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Viola
+                            }
+                        \set ViolaMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Va.
+                            }
                         \clef "treble"
+                        \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
@@ -2011,7 +2066,18 @@
                 \context CelloMusicStaff = "Cello Music Staff" {
                     \context CelloMusicVoice = "Cello Music Voice" {
                         % measure 89
+                        \set CelloMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Cello
+                            }
+                        \set CelloMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Vc.
+                            }
                         \clef "treble"
+                        \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/5 {

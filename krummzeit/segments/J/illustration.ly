@@ -181,8 +181,19 @@
                 \context OboeMusicStaff = "Oboe Music Staff" {
                     \context OboeMusicVoice = "Oboe Music Voice" {
                         % measure 314
+                        \set OboeMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Oboe
+                            }
+                        \set OboeMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Ob.
+                            }
                         \clef "treble"
                         \override DynamicLineSpanner.staff-padding = #'5
+                        \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         cs'\breve.. \fff
                         % measure 317
                         r2
@@ -663,9 +674,20 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
+                            \set ViolinMusicStaff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Violin
+                                }
+                            \set ViolinMusicStaff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Vn.
+                                }
                             \clef "treble"
                             \override DynamicLineSpanner.staff-padding = #'5
                             \override TupletBracket.staff-padding = #2
+                            \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             e'''2 -\staccatissimo \ff
                                 ^ \markup {
                                     \whiteout
@@ -923,9 +945,20 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/8 {
                             % measure 314
+                            \set ViolaMusicStaff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Viola
+                                }
+                            \set ViolaMusicStaff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Va.
+                                }
                             \clef "treble"
                             \override DynamicLineSpanner.staff-padding = #'5
                             \override TupletBracket.staff-padding = #2
+                            \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             ef'''\breve -\staccatissimo \ff
                                 ^ \markup {
                                     \whiteout
@@ -968,8 +1001,19 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \set CelloMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Cello
+                            }
+                        \set CelloMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Vc.
+                            }
                         \clef "treble"
                         \override DynamicLineSpanner.staff-padding = #'3
+                        \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         d'\longa \fff
                             ^ \markup {
                                 \column

@@ -285,9 +285,20 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
+                            \set OboeMusicStaff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Oboe
+                                }
+                            \set OboeMusicStaff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Ob.
+                                }
                             \clef "treble"
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #2
+                            \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             ef''4. \ff
                                 - \tweak color #red
                                 ^ \markup { @ }
@@ -3865,10 +3876,21 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
+                            \set ViolinMusicStaff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Violin
+                                }
+                            \set ViolinMusicStaff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Vn.
+                                }
                             \clef "treble"
                             \override Beam.positions = #'(-5 . -5)
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
+                            \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             ef''8 :32 \fff [
                                 - \tweak color #red
                                 ^ \markup { @ }
@@ -4253,10 +4275,21 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
+                            \set ViolaMusicStaff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Viola
+                                }
+                            \set ViolaMusicStaff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Va.
+                                }
                             \clef "alto"
                             \override Beam.positions = #'(-5 . -5)
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
+                            \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             a8 :32 \fff [
                                 - \tweak color #red
                                 ^ \markup { @ }
@@ -4432,7 +4465,18 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
+                            \set CelloMusicStaff.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Cello
+                                }
+                            \set CelloMusicStaff.shortInstrumentName = \markup {
+                                \hcenter-in
+                                    #10
+                                    Vc.
+                                }
                             \clef "bass"
+                            \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             eqf,8 :32 \fff [
                                 - \tweak color #red
                                 ^ \markup { @ }

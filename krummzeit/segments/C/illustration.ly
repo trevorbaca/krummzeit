@@ -13,9 +13,11 @@
         \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
         \context GlobalContext = "Global Context" <<
             \context GlobalRests = "Global Rests" {
-                % measure 133
+                
+                %%% Global Rests [measure 133] %%%
                 R1 * 3/4
-                % measure 134
+                
+                %%% Global Rests [measure 134] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -24,9 +26,11 @@
                         \musicglyph
                             #"scripts.ushortfermata"
                         }
-                % measure 135
+                
+                %%% Global Rests [measure 135] %%%
                 R1 * 5/8
-                % measure 136
+                
+                %%% Global Rests [measure 136] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -35,9 +39,11 @@
                         \musicglyph
                             #"scripts.ushortfermata"
                         }
-                % measure 137
+                
+                %%% Global Rests [measure 137] %%%
                 R1 * 9/8
-                % measure 138
+                
+                %%% Global Rests [measure 138] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -46,9 +52,11 @@
                         \musicglyph
                             #"scripts.ushortfermata"
                         }
-                % measure 139
+                
+                %%% Global Rests [measure 139] %%%
                 R1 * 9/8
-                % measure 140
+                
+                %%% Global Rests [measure 140] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -57,15 +65,20 @@
                         \musicglyph
                             #"scripts.ushortfermata"
                         }
-                % measure 141
+                
+                %%% Global Rests [measure 141] %%%
                 R1 * 9/8
-                % measure 142
+                
+                %%% Global Rests [measure 142] %%%
                 R1 * 5/8
-                % measure 143
+                
+                %%% Global Rests [measure 143] %%%
                 R1 * 3/4
-                % measure 144
+                
+                %%% Global Rests [measure 144] %%%
                 R1 * 3/4
-                % measure 145
+                
+                %%% Global Rests [measure 145] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -74,21 +87,29 @@
                         \musicglyph
                             #"scripts.ulongfermata"
                         }
-                % measure 146
+                
+                %%% Global Rests [measure 146] %%%
                 R1 * 1
-                % measure 147
+                
+                %%% Global Rests [measure 147] %%%
                 R1 * 1
-                % measure 148
+                
+                %%% Global Rests [measure 148] %%%
                 R1 * 5/4
-                % measure 149
+                
+                %%% Global Rests [measure 149] %%%
                 R1 * 5/4
-                % measure 150
+                
+                %%% Global Rests [measure 150] %%%
                 R1 * 5/4
-                % measure 151
+                
+                %%% Global Rests [measure 151] %%%
                 R1 * 5/4
+                
             }
             \context GlobalSkips = "Global Skips" {
-                % measure 133
+                
+                %%% Global Skips [measure 133] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -124,7 +145,8 @@
                 \time 3/4
                 \mark #3
                 s1 * 3/4 \startTextSpan
-                % measure 134
+                
+                %%% Global Skips [measure 134] %%%
                 \time 1/4
                 s1 * 1/4 \stopTextSpan ^ \markup {
                     \fontsize
@@ -142,7 +164,8 @@
                             90
                         }
                     }
-                % measure 135
+                
+                %%% Global Skips [measure 135] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -166,7 +189,8 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 5/8
                 s1 * 5/8 \startTextSpan
-                % measure 136
+                
+                %%% Global Skips [measure 136] %%%
                 \time 1/4
                 s1 * 1/4 \stopTextSpan ^ \markup {
                     \fontsize
@@ -184,7 +208,8 @@
                             135
                         }
                     }
-                % measure 137
+                
+                %%% Global Skips [measure 137] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -208,7 +233,8 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 9/8
                 s1 * 9/8 \startTextSpan
-                % measure 138
+                
+                %%% Global Skips [measure 138] %%%
                 \time 1/4
                 s1 * 1/4 \stopTextSpan ^ \markup {
                     \fontsize
@@ -226,7 +252,8 @@
                             90
                         }
                     }
-                % measure 139
+                
+                %%% Global Skips [measure 139] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -250,7 +277,8 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 9/8
                 s1 * 9/8 \startTextSpan
-                % measure 140
+                
+                %%% Global Skips [measure 140] %%%
                 \time 1/4
                 s1 * 1/4 \stopTextSpan ^ \markup {
                     \fontsize
@@ -268,10 +296,12 @@
                             135
                         }
                     }
-                % measure 141
+                
+                %%% Global Skips [measure 141] %%%
                 \time 9/8
                 s1 * 9/8
-                % measure 142
+                
+                %%% Global Skips [measure 142] %%%
                 \time 5/8
                 s1 * 5/8 ^ \markup {
                     \fontsize
@@ -359,7 +389,8 @@
                                                 }
                                     }
                     }
-                % measure 143
+                
+                %%% Global Skips [measure 143] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -383,10 +414,12 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 3/4
                 s1 * 3/4 \startTextSpan
-                % measure 144
+                
+                %%% Global Skips [measure 144] %%%
                 \time 3/4
                 s1 * 3/4
-                % measure 145
+                
+                %%% Global Skips [measure 145] %%%
                 \time 1/4
                 s1 * 1/4 \stopTextSpan ^ \markup {
                     \fontsize
@@ -404,13 +437,16 @@
                             45
                         }
                     }
-                % measure 146
+                
+                %%% Global Skips [measure 146] %%%
                 \time 4/4
                 s1 * 1
-                % measure 147
+                
+                %%% Global Skips [measure 147] %%%
                 \time 4/4
                 s1 * 1
-                % measure 148
+                
+                %%% Global Skips [measure 148] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -434,7 +470,8 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 5/4
                 s1 * 5/4 \startTextSpan
-                % measure 149
+                
+                %%% Global Skips [measure 149] %%%
                 \time 5/4
                 s1 * 5/4 \stopTextSpan ^ \markup {
                     \fontsize
@@ -452,12 +489,15 @@
                             36
                         }
                     }
-                % measure 150
+                
+                %%% Global Skips [measure 150] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 151
+                
+                %%% Global Skips [measure 151] %%%
                 \time 5/4
                 s1 * 5/4
+                
             }
         >>
         \context MusicContext = "Music Context" <<
@@ -465,7 +505,8 @@
                 \tag winds.oboe
                 \context OboeMusicStaff = "Oboe Music Staff" {
                     \context OboeMusicVoice = "Oboe Music Voice" {
-                        % measure 133
+                        
+                        %%% Oboe Music Voice [measure 133] %%%
                         \set OboeMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -480,30 +521,39 @@
                         \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override OboeMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 65/8
-                        % measure 146
+                        
+                        %%% Oboe Music Voice [measure 146] %%%
                         \override DynamicLineSpanner.staff-padding = #'5
                         \override Stem.direction = #up
                         b1 \fff ~
-                        % measure 147
+                        
+                        %%% Oboe Music Voice [measure 147] %%%
                         b1 ~
-                        % measure 148
+                        
+                        %%% Oboe Music Voice [measure 148] %%%
                         b1 ~
+                        
                         b4
                         \revert DynamicLineSpanner.staff-padding
                         \revert Stem.direction
-                        % measure 149
+                        
+                        %%% Oboe Music Voice [measure 149] %%%
                         R1 * 15/4
                         \bar "|"
+                        
                     }
                 }
                 \tag winds.clarinet
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
-                        % measure 133
+                        
+                        %%% Clarinet Music Voice [measure 133] %%%
                         \clef "treble"
                         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 65/8
-                        % measure 146
+                        
+                        %%% Clarinet Music Voice [measure 146] %%%
+                        \override Stem.direction = #up
                         \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -522,7 +572,6 @@
                                         cl.
                                     }
                             }
-                        \override Stem.direction = #up
                         cs1 \ppp ~
                             ^ \markup {
                                 \override
@@ -530,22 +579,32 @@
                                     \box
                                         "to bass clarinet"
                                 }
-                        % measure 147
+                        
+                        %%% Clarinet Music Voice [measure 147] %%%
                         cs1 ~
-                        % measure 148
+                        
+                        %%% Clarinet Music Voice [measure 148] %%%
                         cs1 ~
+                        
                         cs4 ~
-                        % measure 149
+                        
+                        %%% Clarinet Music Voice [measure 149] %%%
                         cs1 ~
+                        
                         cs4 ~
-                        % measure 150
+                        
+                        %%% Clarinet Music Voice [measure 150] %%%
                         cs1 ~
+                        
                         cs4 ~
-                        % measure 151
+                        
+                        %%% Clarinet Music Voice [measure 151] %%%
                         cs1 ~
+                        
                         cs4
                         \bar "|"
                         \revert Stem.direction
+                        
                     }
                 }
             >>
@@ -554,7 +613,8 @@
                 \context PianoMusicStaff = "Piano Music Staff" {
                     \context PianoMusicVoice = "Piano Music Voice" {
                         \times 2/3 {
-                            % measure 133
+                            
+                            %%% Piano Music Voice [measure 133] %%%
                             \ottava #1
                             \set PianoMusicStaff.instrumentName = \markup {
                                 \hcenter-in
@@ -569,56 +629,87 @@
                             \clef "treble"
                             \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             e''''16 -\staccatissimo \> \ff
+                            
                             r16
+                            
                             ef''''16 -\staccatissimo [
+                            
                             f''''8. -\staccatissimo ]
                         }
                         \times 4/7 {
+                            
                             cs''''8 -\staccatissimo
+                            
                             r8
+                            
                             d'''8 -\staccatissimo
+                            
                             e'''4 -\staccatissimo
+                            
                             f''4 -\staccatissimo \pp
                             \ottava #0
                         }
-                        % measure 134
+                        
+                        %%% Piano Music Voice [measure 134] %%%
                         R1 * 1/4
                         \times 2/3 {
-                            % measure 135
+                            
+                            %%% Piano Music Voice [measure 135] %%%
                             g''16 -\staccatissimo \< \pp
+                            
                             r16
+                            
                             cs''16 -\staccatissimo [
+                            
                             a'8. -\staccatissimo ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
+                            
                             ef'16 -\staccatissimo
+                            
                             r16
+                            
                             bf'16 -\staccatissimo [
+                            
                             b8 -\staccatissimo
+                            
                             c'8 -\staccatissimo \ff ]
                         }
-                        % measure 136
+                        
+                        %%% Piano Music Voice [measure 136] %%%
                         R1 * 1/4
                         \times 2/3 {
-                            % measure 137
+                            
+                            %%% Piano Music Voice [measure 137] %%%
                             \clef "bass"
                             af8 -\staccatissimo \> \ff
+                            
                             r8
+                            
                             g8 -\staccatissimo
+                            
                             a4. -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
+                            
                             c8 -\staccatissimo
+                            
                             r8
+                            
                             ef,8 -\staccatissimo
+                            
                             c4 -\staccatissimo
+                            
                             cs,4 -\staccatissimo \pp
                         }
-                        % measure 138
+                        
+                        %%% Piano Music Voice [measure 138] %%%
                         R1 * 13/8
-                        % measure 141
+                        
+                        %%% Piano Music Voice [measure 141] %%%
+                        \override DynamicLineSpanner.staff-padding = #'10
                         \ottava #-1
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
@@ -627,7 +718,6 @@
                         \once \override NoteHead.text = \markup {
                         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                         }
-                        \override DynamicLineSpanner.staff-padding = #'10
                         <c,, e,, g,, b,, d, f, a,>1 ~
                             ^ \markup {
                                 \whiteout
@@ -642,6 +732,7 @@
                                             \flat
                                         }
                                 }
+                        
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
                         \once \override Arpeggio.X-offset = #-2
@@ -658,7 +749,8 @@
                                             \flat
                                         }
                                 }
-                        % measure 142
+                        
+                        %%% Piano Music Voice [measure 142] %%%
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
                         \once \override Arpeggio.X-offset = #-2
@@ -675,6 +767,7 @@
                                             \flat
                                         }
                                 }
+                        
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
                         \once \override Arpeggio.X-offset = #-2
@@ -691,7 +784,8 @@
                                             \flat
                                         }
                                 }
-                        % measure 143
+                        
+                        %%% Piano Music Voice [measure 143] %%%
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
                         \once \override Arpeggio.X-offset = #-2
@@ -708,7 +802,8 @@
                                             \flat
                                         }
                                 }
-                        % measure 144
+                        
+                        %%% Piano Music Voice [measure 144] %%%
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
                         \once \override Arpeggio.X-offset = #-2
@@ -726,9 +821,11 @@
                                         }
                                 }
                         \ottava #0
-                        % measure 145
+                        
+                        %%% Piano Music Voice [measure 145] %%%
                         R1 * 1/4
-                        % measure 146
+                        
+                        %%% Piano Music Voice [measure 146] %%%
                         \ottava #-1
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
@@ -746,7 +843,8 @@
                                             \flat
                                         }
                                 }
-                        % measure 147
+                        
+                        %%% Piano Music Voice [measure 147] %%%
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
                         \once \override Arpeggio.X-offset = #-2
@@ -763,7 +861,8 @@
                                             \flat
                                         }
                                 }
-                        % measure 148
+                        
+                        %%% Piano Music Voice [measure 148] %%%
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
                         \once \override Arpeggio.X-offset = #-2
@@ -780,6 +879,7 @@
                                             \flat
                                         }
                                 }
+                        
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
                         \once \override Arpeggio.X-offset = #-2
@@ -798,15 +898,18 @@
                                 }
                         \revert DynamicLineSpanner.staff-padding
                         \ottava #0
-                        % measure 149
+                        
+                        %%% Piano Music Voice [measure 149] %%%
                         R1 * 15/4
                         \bar "|"
+                        
                     }
                 }
                 \tag percussion
                 \context PercussionMusicStaff = "Percussion Staff" {
                     \context PercussionMusicVoice = "Percussion Music Voice" {
-                        % measure 133
+                        
+                        %%% Percussion Music Voice [measure 133] %%%
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 5
                         \startStaff
@@ -842,95 +945,109 @@
                                 \upright
                                     ancora
                                 }
-                        % measure 134
+                        
+                        %%% Percussion Music Voice [measure 134] %%%
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 :32 ~
-                        % measure 135
+                        
+                        %%% Percussion Music Voice [measure 135] %%%
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c2 :32 ~
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c8 :32 ~
-                        % measure 136
+                        
+                        %%% Percussion Music Voice [measure 136] %%%
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 :32 ~
-                        % measure 137
+                        
+                        %%% Percussion Music Voice [measure 137] %%%
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c1 :32 ~
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c8 :32 ~
-                        % measure 138
+                        
+                        %%% Percussion Music Voice [measure 138] %%%
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 :32 ~
-                        % measure 139
+                        
+                        %%% Percussion Music Voice [measure 139] %%%
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c1 :32 ~
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c8 :32 ~
-                        % measure 140
+                        
+                        %%% Percussion Music Voice [measure 140] %%%
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 :32 ~
-                        % measure 141
+                        
+                        %%% Percussion Music Voice [measure 141] %%%
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c1 :32 ~
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c8 :32
-                        % measure 142
+                        
+                        %%% Percussion Music Voice [measure 142] %%%
                         R1 * 19/8
-                        % measure 146
+                        
+                        %%% Percussion Music Voice [measure 146] %%%
+                        \override DynamicLineSpanner.staff-padding = #'6
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        \override DynamicLineSpanner.staff-padding = #'6
                         c4 -\pp
                             ^ \markup {
                                 \whiteout
@@ -940,167 +1057,194 @@
                                             \box
                                                 tam-tam
                                 }
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
-                        % measure 147
+                        
+                        %%% Percussion Music Voice [measure 147] %%%
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
-                        % measure 148
+                        
+                        %%% Percussion Music Voice [measure 148] %%%
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
-                        % measure 149
+                        
+                        %%% Percussion Music Voice [measure 149] %%%
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
-                        % measure 150
+                        
+                        %%% Percussion Music Voice [measure 150] %%%
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
-                        % measure 151
+                        
+                        %%% Percussion Music Voice [measure 151] %%%
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c4 -\pp
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
@@ -1109,6 +1253,7 @@
                         c4 -\pp
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
+                        
                     }
                 }
             >>
@@ -1116,7 +1261,8 @@
                 \tag strings.violin
                 \context ViolinMusicStaff = "Violin Music Staff" {
                     \context ViolinMusicVoice = "Violin Music Voice" {
-                        % measure 133
+                        
+                        %%% Violin Music Voice [measure 133] %%%
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 5
                         \startStaff
@@ -1136,11 +1282,13 @@
                         R1 * 15/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
-                            % measure 137
+                            
+                            %%% Violin Music Voice [measure 137] %%%
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
                             r8
+                            
                             \ottava #1
                             e''''8 -\staccatissimo \> \ff [
                                 ^ \markup {
@@ -1148,60 +1296,92 @@
                                         \upright
                                             pizz.
                                     }
+                            
                             cs''''8 -\staccatissimo ]
+                            
                             r8
+                            
                             bf'''4 -\staccatissimo
                         }
                         \times 4/7 {
+                            
                             r8
+                            
                             cs'''8 -\staccatissimo [
+                            
                             af'''8 -\staccatissimo ]
+                            
                             bf''4 -\staccatissimo
+                            
                             ef''4 -\staccatissimo \pp
                             \ottava #0
                         }
-                        % measure 138
+                        
+                        %%% Violin Music Voice [measure 138] %%%
                         R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
-                            % measure 139
+                            
+                            %%% Violin Music Voice [measure 139] %%%
                             r8
+                            
                             a''8 -\staccatissimo \< \pp [
+                            
                             e''8 -\staccatissimo ]
+                            
                             r8
+                            
                             g''4 -\staccatissimo
                         }
                         \times 4/7 {
+                            
                             r8
+                            
                             d''8 -\staccatissimo [
+                            
                             ef'8 -\staccatissimo ]
+                            
                             cs''4 -\staccatissimo
+                            
                             e'4 -\staccatissimo \ff
                         }
-                        % measure 140
+                        
+                        %%% Violin Music Voice [measure 140] %%%
                         R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
-                            % measure 141
+                            
+                            %%% Violin Music Voice [measure 141] %%%
                             r8
+                            
                             g''8 -\staccatissimo \> \ff [
+                            
                             c''8 -\staccatissimo ]
+                            
                             r8
+                            
                             bf'4 -\staccatissimo
                         }
                         \times 4/7 {
+                            
                             r8
+                            
                             ef'8 -\staccatissimo [
+                            
                             e'8 -\staccatissimo ]
+                            
                             f'4 -\staccatissimo
+                            
                             c'4 -\staccatissimo \pp
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
-                        % measure 142
+                        
+                        %%% Violin Music Voice [measure 142] %%%
                         R1 * 19/8
-                        % measure 146
+                        
+                        %%% Violin Music Voice [measure 146] %%%
                         \once \override Stem.direction = #up
                         fs1
                             ^ \markup {
@@ -1215,15 +1395,18 @@
                                 \upright
                                     possibile
                                 }
-                        % measure 147
+                        
+                        %%% Violin Music Voice [measure 147] %%%
                         R1 * 6
                         \bar "|"
+                        
                     }
                 }
                 \tag strings.viola
                 \context ViolaMusicStaff = "Viola Music Staff" {
                     \context ViolaMusicVoice = "Viola Music Voice" {
-                        % measure 133
+                        
+                        %%% Viola Music Voice [measure 133] %%%
                         \set ViolaMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -1239,12 +1422,14 @@
                         \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 15/8
                         \times 2/3 {
-                            % measure 137
-                            \clef "treble"
+                            
+                            %%% Viola Music Voice [measure 137] %%%
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
+                            \clef "treble"
                             r8
+                            
                             \ottava #1
                             ef'''4 -\staccatissimo \> \ff
                                 ^ \markup {
@@ -1255,50 +1440,73 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
+                            
                             r8
+                            
                             af'''4 -\staccatissimo
+                            
                             r8
+                            
                             f''4 -\staccatissimo
+                            
                             b''4 -\staccatissimo \pp
                             \ottava #0
                         }
-                        % measure 138
+                        
+                        %%% Viola Music Voice [measure 138] %%%
                         R1 * 1/4
                         \times 2/3 {
-                            % measure 139
+                            
+                            %%% Viola Music Voice [measure 139] %%%
                             r8
+                            
                             f''4 -\staccatissimo \< \pp
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
+                            
                             r8
+                            
                             f''4 -\staccatissimo
+                            
                             r8
+                            
                             cs''4 -\staccatissimo
+                            
                             a'4 -\staccatissimo \ff
                         }
-                        % measure 140
+                        
+                        %%% Viola Music Voice [measure 140] %%%
                         R1 * 1/4
                         \times 2/3 {
-                            % measure 141
+                            
+                            %%% Viola Music Voice [measure 141] %%%
                             \clef "alto"
                             r8
+                            
                             f'4 -\staccatissimo \> \ff
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
+                            
                             r8
+                            
                             af4 -\staccatissimo
+                            
                             r8
+                            
                             a4 -\staccatissimo
+                            
                             bf,4 -\staccatissimo \pp
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
-                        % measure 142
+                        
+                        %%% Viola Music Voice [measure 142] %%%
                         R1 * 5/8
-                        % measure 143
+                        
+                        %%% Viola Music Voice [measure 143] %%%
                         \override Stem.direction = #up
                         bf,2. ~
                             ^ \markup {
@@ -1312,11 +1520,14 @@
                                 \upright
                                     possibile
                                 }
-                        % measure 144
+                        
+                        %%% Viola Music Voice [measure 144] %%%
                         bf,2.
-                        % measure 145
+                        
+                        %%% Viola Music Voice [measure 145] %%%
                         R1 * 1/4
-                        % measure 146
+                        
+                        %%% Viola Music Voice [measure 146] %%%
                         bf,1 ~
                             _ \markup {
                                 \dynamic
@@ -1324,21 +1535,27 @@
                                 \upright
                                     possibile
                                 }
-                        % measure 147
+                        
+                        %%% Viola Music Voice [measure 147] %%%
                         bf,1 ~
-                        % measure 148
+                        
+                        %%% Viola Music Voice [measure 148] %%%
                         bf,1 ~
+                        
                         bf,4
                         \revert Stem.direction
-                        % measure 149
+                        
+                        %%% Viola Music Voice [measure 149] %%%
                         R1 * 15/4
                         \bar "|"
+                        
                     }
                 }
                 \tag strings.cello
                 \context CelloMusicStaff = "Cello Music Staff" {
                     \context CelloMusicVoice = "Cello Music Voice" {
-                        % measure 133
+                        
+                        %%% Cello Music Voice [measure 133] %%%
                         \set CelloMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -1355,63 +1572,88 @@
                         R1 * 15/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
-                            % measure 137
-                            \clef "treble"
+                            
+                            %%% Cello Music Voice [measure 137] %%%
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
+                            \clef "treble"
                             r8
+                            
                             f''4 -\staccatissimo \> \ff
                                 ^ \markup {
                                     \whiteout
                                         \upright
                                             pizz.
                                     }
+                            
                             r8
+                            
                             b'4 -\staccatissimo
+                            
                             d''4 -\staccatissimo
                         }
                         \times 2/3 {
+                            
                             r8
+                            
                             d'4 -\staccatissimo \pp
                         }
-                        % measure 138
+                        
+                        %%% Cello Music Voice [measure 138] %%%
                         R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
-                            % measure 139
+                            
+                            %%% Cello Music Voice [measure 139] %%%
                             \clef "bass"
                             r8
+                            
                             ef'4 -\staccatissimo \< \pp
+                            
                             r8
+                            
                             cs'4 -\staccatissimo
+                            
                             f4 -\staccatissimo
                         }
                         \times 2/3 {
+                            
                             r8
+                            
                             ef4 -\staccatissimo \ff
                         }
-                        % measure 140
+                        
+                        %%% Cello Music Voice [measure 140] %%%
                         R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
-                            % measure 141
+                            
+                            %%% Cello Music Voice [measure 141] %%%
                             r8
+                            
                             b4 -\staccatissimo \> \ff
+                            
                             r8
+                            
                             g4 -\staccatissimo
+                            
                             cs4 -\staccatissimo
                         }
                         \times 2/3 {
+                            
                             r8
+                            
                             b,4 -\staccatissimo \pp
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
-                        % measure 142
+                        
+                        %%% Cello Music Voice [measure 142] %%%
                         R1 * 19/8
-                        % measure 146
+                        
+                        %%% Cello Music Voice [measure 146] %%%
                         \once \override Stem.direction = #up
                         a,,1
                             ^ \markup {
@@ -1425,9 +1667,11 @@
                                 \upright
                                     possibile
                                 }
-                        % measure 147
+                        
+                        %%% Cello Music Voice [measure 147] %%%
                         R1 * 6
                         \bar "|"
+                        
                     }
                 }
             >>

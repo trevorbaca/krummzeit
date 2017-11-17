@@ -13,51 +13,74 @@
         \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
         \context GlobalContext = "Global Context" <<
             \context GlobalRests = "Global Rests" {
-                % measure 291
+                
+                %%% Global Rests [measure 291] %%%
                 R1 * 1
-                % measure 292
+                
+                %%% Global Rests [measure 292] %%%
                 R1 * 9/8
-                % measure 293
+                
+                %%% Global Rests [measure 293] %%%
                 R1 * 3/4
-                % measure 294
+                
+                %%% Global Rests [measure 294] %%%
                 R1 * 5/8
-                % measure 295
+                
+                %%% Global Rests [measure 295] %%%
                 R1 * 9/8
-                % measure 296
+                
+                %%% Global Rests [measure 296] %%%
                 R1 * 9/8
-                % measure 297
+                
+                %%% Global Rests [measure 297] %%%
                 R1 * 5/8
-                % measure 298
+                
+                %%% Global Rests [measure 298] %%%
                 R1 * 5/8
-                % measure 299
+                
+                %%% Global Rests [measure 299] %%%
                 R1 * 1
-                % measure 300
+                
+                %%% Global Rests [measure 300] %%%
                 R1 * 5/4
-                % measure 301
+                
+                %%% Global Rests [measure 301] %%%
                 R1 * 1
-                % measure 302
+                
+                %%% Global Rests [measure 302] %%%
                 R1 * 1
-                % measure 303
+                
+                %%% Global Rests [measure 303] %%%
                 R1 * 1
-                % measure 304
+                
+                %%% Global Rests [measure 304] %%%
                 R1 * 1
-                % measure 305
+                
+                %%% Global Rests [measure 305] %%%
                 R1 * 3/4
-                % measure 306
+                
+                %%% Global Rests [measure 306] %%%
                 R1 * 3/4
-                % measure 307
+                
+                %%% Global Rests [measure 307] %%%
                 R1 * 3/4
-                % measure 308
+                
+                %%% Global Rests [measure 308] %%%
                 R1 * 3/4
-                % measure 309
+                
+                %%% Global Rests [measure 309] %%%
                 R1 * 3/4
-                % measure 310
+                
+                %%% Global Rests [measure 310] %%%
                 R1 * 3/4
-                % measure 311
+                
+                %%% Global Rests [measure 311] %%%
                 R1 * 3/4
-                % measure 312
+                
+                %%% Global Rests [measure 312] %%%
                 R1 * 5/4
-                % measure 313
+                
+                %%% Global Rests [measure 313] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -66,9 +89,11 @@
                         \musicglyph
                             #"scripts.uverylongfermata"
                         }
+                
             }
             \context GlobalSkips = "Global Skips" {
-                % measure 291
+                
+                %%% Global Skips [measure 291] %%%
                 \time 4/4
                 \mark #9
                 s1 * 1 ^ \markup {
@@ -87,10 +112,12 @@
                             135
                         }
                     }
-                % measure 292
+                
+                %%% Global Skips [measure 292] %%%
                 \time 9/8
                 s1 * 9/8
-                % measure 293
+                
+                %%% Global Skips [measure 293] %%%
                 \time 3/4
                 s1 * 3/4 ^ \markup {
                     \fontsize
@@ -108,10 +135,12 @@
                             90
                         }
                     }
-                % measure 294
+                
+                %%% Global Skips [measure 294] %%%
                 \time 5/8
                 s1 * 5/8
-                % measure 295
+                
+                %%% Global Skips [measure 295] %%%
                 \time 9/8
                 s1 * 9/8 ^ \markup {
                     \fontsize
@@ -129,10 +158,12 @@
                             108
                         }
                     }
-                % measure 296
+                
+                %%% Global Skips [measure 296] %%%
                 \time 9/8
                 s1 * 9/8
-                % measure 297
+                
+                %%% Global Skips [measure 297] %%%
                 \time 5/8
                 s1 * 5/8 ^ \markup {
                     \fontsize
@@ -150,10 +181,12 @@
                             72
                         }
                     }
-                % measure 298
+                
+                %%% Global Skips [measure 298] %%%
                 \time 5/8
                 s1 * 5/8
-                % measure 299
+                
+                %%% Global Skips [measure 299] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -177,10 +210,12 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 4/4
                 s1 * 1 \startTextSpan
-                % measure 300
+                
+                %%% Global Skips [measure 300] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 301
+                
+                %%% Global Skips [measure 301] %%%
                 \time 4/4
                 s1 * 1 \stopTextSpan ^ \markup {
                     \fontsize
@@ -198,28 +233,36 @@
                             36
                         }
                     }
-                % measure 302
+                
+                %%% Global Skips [measure 302] %%%
                 \time 4/4
                 s1 * 1
-                % measure 303
+                
+                %%% Global Skips [measure 303] %%%
                 \time 4/4
                 s1 * 1
-                % measure 304
+                
+                %%% Global Skips [measure 304] %%%
                 \time 4/4
                 s1 * 1
-                % measure 305
+                
+                %%% Global Skips [measure 305] %%%
                 \time 3/4
                 s1 * 3/4
-                % measure 306
+                
+                %%% Global Skips [measure 306] %%%
                 \time 3/4
                 s1 * 3/4
-                % measure 307
+                
+                %%% Global Skips [measure 307] %%%
                 \time 3/4
                 s1 * 3/4
-                % measure 308
+                
+                %%% Global Skips [measure 308] %%%
                 \time 3/4
                 s1 * 3/4
-                % measure 309
+                
+                %%% Global Skips [measure 309] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -243,16 +286,20 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 3/4
                 s1 * 3/4 \startTextSpan
-                % measure 310
+                
+                %%% Global Skips [measure 310] %%%
                 \time 3/4
                 s1 * 3/4
-                % measure 311
+                
+                %%% Global Skips [measure 311] %%%
                 \time 3/4
                 s1 * 3/4
-                % measure 312
+                
+                %%% Global Skips [measure 312] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 313
+                
+                %%% Global Skips [measure 313] %%%
                 \time 1/4
                 s1 * 1/4 \stopTextSpan ^ \markup {
                     \fontsize
@@ -270,6 +317,7 @@
                             144
                         }
                     }
+                
             }
         >>
         \context MusicContext = "Music Context" <<
@@ -279,7 +327,10 @@
                     \context OboeMusicVoice = "Oboe Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/5 {
-                            % measure 291
+                            
+                            %%% Oboe Music Voice [measure 291] %%%
+                            \override DynamicLineSpanner.staff-padding = #'6
+                            \override TupletBracket.staff-padding = #2
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -296,13 +347,12 @@
                                     Ob.
                                 }
                             \clef "treble"
-                            \override DynamicLineSpanner.staff-padding = #'6
-                            \override TupletBracket.staff-padding = #2
                             \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override OboeMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             ef''4. \ff
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -319,11 +369,13 @@
                                                 1
                                     }
                         }
-                        % measure 292
+                        
+                        %%% Oboe Music Voice [measure 292] %%%
                         R1 * 19
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
+                        
                     }
                 }
                 \tag winds.clarinet
@@ -331,7 +383,11 @@
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/5 {
-                            % measure 291
+                            
+                            %%% Clarinet Music Voice [measure 291] %%%
+                            \override DynamicLineSpanner.staff-padding = #'9
+                            \override Stem.direction = #up
+                            \override TupletBracket.staff-padding = #5
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -356,13 +412,11 @@
                                         }
                                 }
                             \clef "treble"
-                            \override DynamicLineSpanner.staff-padding = #'9
-                            \override Stem.direction = #up
-                            \override TupletBracket.staff-padding = #5
                             \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             f8 \ff
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -382,9 +436,13 @@
                             \revert Stem.direction
                             \revert TupletBracket.staff-padding
                         }
-                        % measure 292
+                        
+                        %%% Clarinet Music Voice [measure 292] %%%
                         R1 * 9/8
-                        % measure 293
+                        
+                        %%% Clarinet Music Voice [measure 293] %%%
+                        \override DynamicLineSpanner.staff-padding = #'7
+                        \override Stem.direction = #up
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -408,12 +466,11 @@
                                         cl.
                                     }
                             }
-                        \override DynamicLineSpanner.staff-padding = #'7
-                        \override Stem.direction = #up
                         fs2. \ff
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 294
+                        
+                        %%% Clarinet Music Voice [measure 294] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -422,6 +479,7 @@
                         fs4. \repeatTie
                             - \tweak color #red
                             ^ \markup { @ }
+                        
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -430,7 +488,8 @@
                         fs4 \repeatTie
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 295
+                        
+                        %%% Clarinet Music Voice [measure 295] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -457,6 +516,7 @@
                         fs2. \< \ff
                             - \tweak color #red
                             ^ \markup { @ }
+                        
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -465,7 +525,8 @@
                         fs4. \repeatTie
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 296
+                        
+                        %%% Clarinet Music Voice [measure 296] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -474,6 +535,7 @@
                         fs2. \repeatTie
                             - \tweak color #red
                             ^ \markup { @ }
+                        
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -482,7 +544,8 @@
                         fs4. \repeatTie \fff
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 297
+                        
+                        %%% Clarinet Music Voice [measure 297] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -509,6 +572,7 @@
                         fs4.
                             - \tweak color #red
                             ^ \markup { @ }
+                        
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -517,7 +581,8 @@
                         fs4 \repeatTie
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 298
+                        
+                        %%% Clarinet Music Voice [measure 298] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -526,6 +591,7 @@
                         fs4. \repeatTie
                             - \tweak color #red
                             ^ \markup { @ }
+                        
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -534,7 +600,8 @@
                         fs4 \repeatTie
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 299
+                        
+                        %%% Clarinet Music Voice [measure 299] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -567,7 +634,8 @@
                                 \upright
                                     possibile
                                 }
-                        % measure 300
+                        
+                        %%% Clarinet Music Voice [measure 300] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -576,6 +644,7 @@
                         fs2. \repeatTie
                             - \tweak color #red
                             ^ \markup { @ }
+                        
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -584,7 +653,8 @@
                         fs2 \repeatTie
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 301
+                        
+                        %%% Clarinet Music Voice [measure 301] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -611,7 +681,8 @@
                         fs1 \> \ffff
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 302
+                        
+                        %%% Clarinet Music Voice [measure 302] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -620,7 +691,8 @@
                         fs1 \repeatTie
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 303
+                        
+                        %%% Clarinet Music Voice [measure 303] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -629,7 +701,8 @@
                         fs1 \repeatTie
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 304
+                        
+                        %%% Clarinet Music Voice [measure 304] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -639,10 +712,12 @@
                             - \tweak color #red
                             ^ \markup { @ }
                         \revert Stem.direction
-                        % measure 305
+                        
+                        %%% Clarinet Music Voice [measure 305] %%%
                         R1 * 27/4
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
+                        
                     }
                 }
             >>
@@ -652,7 +727,10 @@
                     \context PianoMusicVoice = "Piano Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
-                            % measure 291
+                            
+                            %%% Piano Music Voice [measure 291] %%%
+                            \override DynamicLineSpanner.staff-padding = #'6
+                            \override TupletBracket.staff-padding = #2
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -669,12 +747,11 @@
                                     Pf.
                                 }
                             \clef "bass"
-                            \override DynamicLineSpanner.staff-padding = #'6
-                            \override TupletBracket.staff-padding = #2
                             \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             fs'''4. :32 \fff
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -686,9 +763,11 @@
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
-                        % measure 292
+                        
+                        %%% Piano Music Voice [measure 292] %%%
                         R1 * 9/8
-                        % measure 293
+                        
+                        %%% Piano Music Voice [measure 293] %%%
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -707,6 +786,7 @@
                                         "to harpsichord"
                                 }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -723,6 +803,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -739,6 +820,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -757,6 +839,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -773,6 +856,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -789,6 +873,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -807,6 +892,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -823,6 +909,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -839,6 +926,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -857,6 +945,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -873,6 +962,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -889,6 +979,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -907,6 +998,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -923,6 +1015,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -939,6 +1032,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -956,9 +1050,11 @@
                                             }
                                     }
                         }
-                        % measure 295
+                        
+                        %%% Piano Music Voice [measure 295] %%%
                         R1 * 23/8
-                        % measure 298
+                        
+                        %%% Piano Music Voice [measure 298] %%%
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -978,6 +1074,7 @@
                                         "to piano"
                                 }
                         \times 2/3 {
+                            
                             \ottava #-1
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -995,6 +1092,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1011,6 +1109,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1029,6 +1128,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1045,6 +1145,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1061,6 +1162,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1079,7 +1181,8 @@
                                     }
                         }
                         \times 2/3 {
-                            % measure 299
+                            
+                            %%% Piano Music Voice [measure 299] %%%
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1096,6 +1199,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1112,6 +1216,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1130,6 +1235,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1146,6 +1252,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1162,6 +1269,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1180,6 +1288,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1196,6 +1305,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1212,6 +1322,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1230,6 +1341,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1246,6 +1358,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1262,6 +1375,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1280,7 +1394,8 @@
                                     }
                         }
                         \times 2/3 {
-                            % measure 300
+                            
+                            %%% Piano Music Voice [measure 300] %%%
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1297,6 +1412,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1313,6 +1429,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1331,6 +1448,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1347,6 +1465,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1363,6 +1482,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1381,6 +1501,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1397,6 +1518,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1413,6 +1535,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1431,6 +1554,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1447,6 +1571,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1463,6 +1588,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1481,6 +1607,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1497,6 +1624,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1513,6 +1641,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1531,7 +1660,8 @@
                                     }
                         }
                         \times 2/3 {
-                            % measure 301
+                            
+                            %%% Piano Music Voice [measure 301] %%%
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1548,6 +1678,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1564,6 +1695,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1582,6 +1714,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1598,6 +1731,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1614,6 +1748,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1632,6 +1767,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1648,6 +1784,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1664,6 +1801,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1682,6 +1820,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1698,6 +1837,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1714,6 +1854,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1732,7 +1873,8 @@
                                     }
                         }
                         \times 2/3 {
-                            % measure 302
+                            
+                            %%% Piano Music Voice [measure 302] %%%
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1749,6 +1891,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1765,6 +1908,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1783,6 +1927,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1799,6 +1944,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1815,6 +1961,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1833,6 +1980,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1849,6 +1997,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1865,6 +2014,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1883,6 +2033,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1899,6 +2050,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1915,6 +2067,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1933,7 +2086,8 @@
                                     }
                         }
                         \times 2/3 {
-                            % measure 303
+                            
+                            %%% Piano Music Voice [measure 303] %%%
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1950,6 +2104,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1966,6 +2121,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -1984,6 +2140,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2000,6 +2157,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2016,6 +2174,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2034,6 +2193,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2050,6 +2210,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2066,6 +2227,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2084,6 +2246,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2100,6 +2263,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2116,6 +2280,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2134,7 +2299,8 @@
                                     }
                         }
                         \times 2/3 {
-                            % measure 304
+                            
+                            %%% Piano Music Voice [measure 304] %%%
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2151,6 +2317,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2167,6 +2334,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2185,6 +2353,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2201,6 +2370,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2217,6 +2387,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2235,6 +2406,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2251,6 +2423,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2267,6 +2440,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2285,6 +2459,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2301,6 +2476,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2317,6 +2493,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2335,7 +2512,8 @@
                                     }
                         }
                         \times 2/3 {
-                            % measure 305
+                            
+                            %%% Piano Music Voice [measure 305] %%%
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2352,6 +2530,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2368,6 +2547,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2386,6 +2566,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2402,6 +2583,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2418,6 +2600,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2436,6 +2619,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2452,6 +2636,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2468,6 +2653,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2486,7 +2672,8 @@
                                     }
                         }
                         \times 2/3 {
-                            % measure 306
+                            
+                            %%% Piano Music Voice [measure 306] %%%
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2503,6 +2690,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2519,6 +2707,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2537,6 +2726,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2553,6 +2743,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2569,6 +2760,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2587,6 +2779,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2603,6 +2796,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2619,6 +2813,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2637,7 +2832,8 @@
                                     }
                         }
                         \times 2/3 {
-                            % measure 307
+                            
+                            %%% Piano Music Voice [measure 307] %%%
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2654,6 +2850,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2670,6 +2867,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2688,6 +2886,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2704,6 +2903,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2720,6 +2920,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2738,6 +2939,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2754,6 +2956,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2770,6 +2973,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2788,7 +2992,8 @@
                                     }
                         }
                         \times 2/3 {
-                            % measure 308
+                            
+                            %%% Piano Music Voice [measure 308] %%%
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2805,6 +3010,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2821,6 +3027,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2839,6 +3046,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2855,6 +3063,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2871,6 +3080,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2889,6 +3099,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2905,6 +3116,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2921,6 +3133,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2939,7 +3152,8 @@
                                     }
                         }
                         \times 2/3 {
-                            % measure 309
+                            
+                            %%% Piano Music Voice [measure 309] %%%
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2956,6 +3170,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2972,6 +3187,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -2990,6 +3206,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3006,6 +3223,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3022,6 +3240,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3040,6 +3259,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3056,6 +3276,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3072,6 +3293,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3090,7 +3312,8 @@
                                     }
                         }
                         \times 2/3 {
-                            % measure 310
+                            
+                            %%% Piano Music Voice [measure 310] %%%
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3107,6 +3330,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3123,6 +3347,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3141,6 +3366,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3157,6 +3383,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3173,6 +3400,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3191,6 +3419,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3207,6 +3436,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3223,6 +3453,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3241,7 +3472,8 @@
                                     }
                         }
                         \times 2/3 {
-                            % measure 311
+                            
+                            %%% Piano Music Voice [measure 311] %%%
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3258,6 +3490,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3274,6 +3507,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3292,6 +3526,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3308,6 +3543,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3324,6 +3560,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3342,6 +3579,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3358,6 +3596,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3374,6 +3613,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3392,7 +3632,8 @@
                                     }
                         }
                         \times 2/3 {
-                            % measure 312
+                            
+                            %%% Piano Music Voice [measure 312] %%%
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3409,6 +3650,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3425,6 +3667,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3443,6 +3686,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3459,6 +3703,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3475,6 +3720,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3493,6 +3739,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3509,6 +3756,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3525,6 +3773,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3543,6 +3792,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3559,6 +3809,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3575,6 +3826,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3593,6 +3845,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3609,6 +3862,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3625,6 +3879,7 @@
                                                 \flat
                                             }
                                     }
+                            
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -3643,9 +3898,11 @@
                                     }
                             \ottava #0
                         }
-                        % measure 313
+                        
+                        %%% Piano Music Voice [measure 313] %%%
                         R1 * 1/4
                         \bar "|"
+                        
                     }
                 }
                 \tag percussion
@@ -3653,10 +3910,13 @@
                     \context PercussionMusicVoice = "Percussion Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
-                            % measure 291
+                            
+                            %%% Percussion Music Voice [measure 291] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
+                            \override DynamicLineSpanner.staff-padding = #'6
+                            \override TupletBracket.staff-padding = #2
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3673,12 +3933,11 @@
                                     Xyl.
                                 }
                             \clef "treble"
-                            \override DynamicLineSpanner.staff-padding = #'6
-                            \override TupletBracket.staff-padding = #2
                             \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             fs''8 :32 \fff
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3690,12 +3949,15 @@
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
-                        % measure 292
+                        
+                        %%% Percussion Music Voice [measure 292] %%%
                         R1 * 9/8
-                        % measure 293
-                        \clef "percussion"
+                        
+                        %%% Percussion Music Voice [measure 293] %%%
                         \override DynamicLineSpanner.staff-padding = #'6
+                        \clef "percussion"
                         r16
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
@@ -3710,159 +3972,221 @@
                                             \box
                                                 tam-tam
                                 }
+                        
                         r8
+                        
                         r2
-                        % measure 294
+                        
+                        %%% Percussion Music Voice [measure 294] %%%
                         r2
+                        
                         r8
-                        % measure 295
+                        
+                        %%% Percussion Music Voice [measure 295] %%%
                         r2..
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c16 -\f
+                        
                         r8.
-                        % measure 296
+                        
+                        %%% Percussion Music Voice [measure 296] %%%
                         r16
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c16 -\f
+                        
                         r8
+                        
                         r2..
-                        % measure 297
+                        
+                        %%% Percussion Music Voice [measure 297] %%%
                         r16
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c16 -\f
+                        
                         r8
+                        
                         r4.
-                        % measure 298
+                        
+                        %%% Percussion Music Voice [measure 298] %%%
                         r2
+                        
                         r8
-                        % measure 299
+                        
+                        %%% Percussion Music Voice [measure 299] %%%
                         r2.
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c16 -\f
+                        
                         r8.
-                        % measure 300
+                        
+                        %%% Percussion Music Voice [measure 300] %%%
                         r16
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c16 -\f
+                        
                         r8
+                        
                         r1
-                        % measure 301
+                        
+                        %%% Percussion Music Voice [measure 301] %%%
                         r16
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c16 -\f
+                        
                         r8
+                        
                         r2.
-                        % measure 302
+                        
+                        %%% Percussion Music Voice [measure 302] %%%
                         r1
-                        % measure 303
+                        
+                        %%% Percussion Music Voice [measure 303] %%%
                         r2.
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c16 -\f
+                        
                         r8.
-                        % measure 304
+                        
+                        %%% Percussion Music Voice [measure 304] %%%
                         r16
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c16 -\f
+                        
                         r8
+                        
                         r2.
-                        % measure 305
+                        
+                        %%% Percussion Music Voice [measure 305] %%%
                         r16
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c16 -\f
+                        
                         r8
+                        
                         r2
-                        % measure 306
+                        
+                        %%% Percussion Music Voice [measure 306] %%%
                         r2.
-                        % measure 307
+                        
+                        %%% Percussion Music Voice [measure 307] %%%
                         r2
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c16 -\f
+                        
                         r8.
-                        % measure 308
+                        
+                        %%% Percussion Music Voice [measure 308] %%%
                         r16
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c16 -\f
+                        
                         r8
+                        
                         r2
-                        % measure 309
+                        
+                        %%% Percussion Music Voice [measure 309] %%%
                         r16
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c16 -\f
+                        
                         r8
+                        
                         r2
-                        % measure 310
+                        
+                        %%% Percussion Music Voice [measure 310] %%%
                         r2.
-                        % measure 311
+                        
+                        %%% Percussion Music Voice [measure 311] %%%
                         r2
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c16 -\f
+                        
                         r8.
-                        % measure 312
+                        
+                        %%% Percussion Music Voice [measure 312] %%%
                         r16
+                        
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
                         c16 -\f
+                        
                         r8
+                        
                         r1
                         \revert DynamicLineSpanner.staff-padding
-                        % measure 313
+                        
+                        %%% Percussion Music Voice [measure 313] %%%
                         R1 * 1/4
                         \bar "|"
+                        
                     }
                 }
             >>
@@ -3871,10 +4195,14 @@
                 \context ViolinMusicStaff = "Violin Music Staff" {
                     \context ViolinMusicVoice = "Violin Music Voice" {
                         \times 2/3 {
-                            % measure 291
+                            
+                            %%% Violin Music Voice [measure 291] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
+                            \override Beam.positions = #'(-5 . -5)
+                            \override DynamicLineSpanner.staff-padding = #'8
+                            \override TupletBracket.staff-padding = #4
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3891,14 +4219,12 @@
                                     Vn.
                                 }
                             \clef "treble"
-                            \override Beam.positions = #'(-5 . -5)
-                            \override DynamicLineSpanner.staff-padding = #'8
-                            \override TupletBracket.staff-padding = #4
                             \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             ef''8 :32 \fff [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3907,6 +4233,7 @@
                             ef''8 :32
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3917,6 +4244,7 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3925,6 +4253,7 @@
                             ef''8 :32 [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3933,6 +4262,7 @@
                             ef''8 :32
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3943,6 +4273,7 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3951,6 +4282,7 @@
                             ef''8 :32 [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3959,6 +4291,7 @@
                             ef''8 :32
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3969,6 +4302,7 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3977,6 +4311,7 @@
                             ef''8 :32 [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3985,6 +4320,7 @@
                             ef''8 :32
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3995,7 +4331,8 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
-                            % measure 292
+                            
+                            %%% Violin Music Voice [measure 292] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4004,6 +4341,7 @@
                             ef''8 :32 [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4012,6 +4350,7 @@
                             ef''8 :32
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4022,6 +4361,7 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4030,6 +4370,7 @@
                             ef''8 :32 [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4038,6 +4379,7 @@
                             ef''8 :32
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4048,6 +4390,7 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4056,6 +4399,7 @@
                             ef''8 :32 [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4064,6 +4408,7 @@
                             ef''8 :32
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4074,6 +4419,7 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4082,6 +4428,7 @@
                             ef''8 :32 [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4090,6 +4437,7 @@
                             ef''8 :32
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4100,6 +4448,7 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4108,6 +4457,7 @@
                             ef''8 :32 [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4116,6 +4466,7 @@
                             ef''8 :32
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4126,6 +4477,7 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4134,6 +4486,7 @@
                             ef''8 :32 [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4142,6 +4495,7 @@
                             ef''8 :32
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4152,6 +4506,7 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4160,6 +4515,7 @@
                             ef''8 :32 [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4168,6 +4524,7 @@
                             ef''8 :32
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4177,10 +4534,13 @@
                                 - \tweak color #red
                                 ^ \markup { @ }
                         }
+                        
                         r8
-                        % measure 294
+                        
+                        %%% Violin Music Voice [measure 294] %%%
                         R1 * 5/8
-                        % measure 295
+                        
+                        %%% Violin Music Voice [measure 295] %%%
                         \clef "treble"
                         g''4 -\downbow \glissando
                             ^ \markup {
@@ -4200,26 +4560,43 @@
                                     \italic
                                         ”
                                 }
+                        
                         cs''4 -\upbow \glissando
+                        
                         ef''4 -\downbow \glissando
+                        
                         fs''4 -\upbow \glissando
+                        
                         e''8 -\downbow \glissando
-                        % measure 296
+                        
+                        %%% Violin Music Voice [measure 296] %%%
                         a''4 -\upbow \glissando
+                        
                         ef''4 -\downbow \glissando
+                        
                         a'4 -\upbow \glissando
+                        
                         e''4 -\downbow \glissando
+                        
                         bf'8 -\upbow \glissando
-                        % measure 297
+                        
+                        %%% Violin Music Voice [measure 297] %%%
                         d''4 -\downbow \glissando
+                        
                         a'4 -\upbow \glissando
+                        
                         e'8 -\downbow \glissando
-                        % measure 298
+                        
+                        %%% Violin Music Voice [measure 298] %%%
                         bf'4 -\upbow \glissando
+                        
                         d'4 -\downbow \glissando
+                        
                         e'8 -\upbow \glissando
-                        % measure 299
+                        
+                        %%% Violin Music Voice [measure 299] %%%
                         d'4 -\downbow \glissando
+                        
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -4228,6 +4605,7 @@
                         g'4 -\upbow
                             - \tweak color #red
                             ^ \markup { @ }
+                        
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -4236,15 +4614,18 @@
                         g'4 -\downbow \glissando
                             - \tweak color #red
                             ^ \markup { @ }
+                        
                         ef'4 -\upbow
-                        % measure 300
+                        
+                        %%% Violin Music Voice [measure 300] %%%
                         R1 * 21/2
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            % measure 312
+                            
+                            %%% Violin Music Voice [measure 312] %%%
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #2
                             e'''8 -\staccatissimo \fff
@@ -4253,28 +4634,40 @@
                                         \upright
                                             pizz.
                                     }
+                            
                             cs'''4 -\staccatissimo
+                            
                             f'''8 -\staccatissimo ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
+                            
                             f'''8
+                            
                             a'''2 -\staccatissimo
+                            
                             c'''4 -\staccatissimo
+                            
                             f'''8 -\staccatissimo
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
-                        % measure 313
+                        
+                        %%% Violin Music Voice [measure 313] %%%
                         R1 * 1/4
                         \bar "|"
+                        
                     }
                 }
                 \tag strings.viola
                 \context ViolaMusicStaff = "Viola Music Staff" {
                     \context ViolaMusicVoice = "Viola Music Voice" {
                         \times 2/3 {
-                            % measure 291
+                            
+                            %%% Viola Music Voice [measure 291] %%%
+                            \override Beam.positions = #'(-5 . -5)
+                            \override DynamicLineSpanner.staff-padding = #'8
+                            \override TupletBracket.staff-padding = #4
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4291,14 +4684,12 @@
                                     Va.
                                 }
                             \clef "alto"
-                            \override Beam.positions = #'(-5 . -5)
-                            \override DynamicLineSpanner.staff-padding = #'8
-                            \override TupletBracket.staff-padding = #4
                             \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             a8 :32 \fff [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4307,6 +4698,7 @@
                             a8 :32
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4317,6 +4709,7 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4325,6 +4718,7 @@
                             a8 :32 [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4333,6 +4727,7 @@
                             a8 :32
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4343,6 +4738,7 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4351,6 +4747,7 @@
                             a8 :32 [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4359,6 +4756,7 @@
                             a8 :32
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4368,13 +4766,16 @@
                                 - \tweak color #red
                                 ^ \markup { @ }
                         }
+                        
                         r4
-                        % measure 292
+                        
+                        %%% Viola Music Voice [measure 292] %%%
                         R1 * 5/2
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
-                        % measure 295
+                        
+                        %%% Viola Music Voice [measure 295] %%%
                         \clef "treble"
                         ef''4 -\downbow \glissando
                             ^ \markup {
@@ -4394,21 +4795,34 @@
                                     \italic
                                         ”
                                 }
+                        
                         bf''4 -\upbow \glissando
+                        
                         f''4 -\downbow \glissando
+                        
                         af''4 -\upbow \glissando
+                        
                         b'8 -\downbow \glissando
-                        % measure 296
+                        
+                        %%% Viola Music Voice [measure 296] %%%
                         fs''4 -\upbow \glissando
+                        
                         f'4 -\downbow \glissando
+                        
                         af'4 -\upbow \glissando
+                        
                         b'4 -\downbow \glissando
+                        
                         g'8 -\upbow \glissando
-                        % measure 297
+                        
+                        %%% Viola Music Voice [measure 297] %%%
                         cs'4 -\downbow \glissando
+                        
                         af'4 -\upbow \glissando
+                        
                         b8 -\downbow \glissando
-                        % measure 298
+                        
+                        %%% Viola Music Voice [measure 298] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -4417,6 +4831,7 @@
                         g'4 -\upbow
                             - \tweak color #red
                             ^ \markup { @ }
+                        
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -4425,16 +4840,23 @@
                         g'4 -\downbow \glissando
                             - \tweak color #red
                             ^ \markup { @ }
+                        
                         ef'8 -\upbow \glissando
-                        % measure 299
+                        
+                        %%% Viola Music Voice [measure 299] %%%
                         cs'4 -\downbow \glissando
+                        
                         ef4 -\upbow \glissando
+                        
                         fs4 -\downbow \glissando
+                        
                         b4 -\upbow
-                        % measure 300
+                        
+                        %%% Viola Music Voice [measure 300] %%%
                         R1 * 21/2
                         \times 4/5 {
-                            % measure 312
+                            
+                            %%% Viola Music Voice [measure 312] %%%
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #2
                             ef'''8 -\staccatissimo \fff
@@ -4443,29 +4865,37 @@
                                         \upright
                                             pizz.
                                     }
+                            
                             d'''4 -\staccatissimo
+                            
                             g'''4 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
+                            
                             ef'''2 -\staccatissimo
+                            
                             b'''4 -\staccatissimo
                         }
                         {
+                            
                             ef'''8 -\staccatissimo
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
-                        % measure 313
+                        
+                        %%% Viola Music Voice [measure 313] %%%
                         R1 * 1/4
                         \bar "|"
+                        
                     }
                 }
                 \tag strings.cello
                 \context CelloMusicStaff = "Cello Music Staff" {
                     \context CelloMusicVoice = "Cello Music Voice" {
                         \times 2/3 {
-                            % measure 291
+                            
+                            %%% Cello Music Voice [measure 291] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4487,6 +4917,7 @@
                             eqf,8 :32 \fff [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4495,6 +4926,7 @@
                             eqf,8 :32
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4505,6 +4937,7 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4513,6 +4946,7 @@
                             eqf,8 :32 [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4521,6 +4955,7 @@
                             eqf,8 :32
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4531,6 +4966,7 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4539,6 +4975,7 @@
                             eqf,8 :32 [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4547,6 +4984,7 @@
                             eqf,8 :32
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4556,10 +4994,13 @@
                                 - \tweak color #red
                                 ^ \markup { @ }
                         }
+                        
                         r4
-                        % measure 292
+                        
+                        %%% Cello Music Voice [measure 292] %%%
                         R1 * 5/2
-                        % measure 295
+                        
+                        %%% Cello Music Voice [measure 295] %%%
                         \clef "treble"
                         d''4 -\downbow \glissando
                             ^ \markup {
@@ -4579,34 +5020,55 @@
                                     \italic
                                         ”
                                 }
+                        
                         e''4 -\upbow \glissando
+                        
                         g''4 -\downbow \glissando
+                        
                         f''4 -\upbow \glissando
+                        
                         bf'8 -\downbow \glissando
-                        % measure 296
+                        
+                        %%% Cello Music Voice [measure 296] %%%
                         e'4 -\upbow \glissando
+                        
                         g'4 -\downbow \glissando
+                        
                         f'4 -\upbow \glissando
+                        
                         bf'4 -\downbow \glissando
+                        
                         ef'8 -\upbow \glissando
-                        % measure 297
+                        
+                        %%% Cello Music Voice [measure 297] %%%
                         bf'4 -\downbow \glissando
+                        
                         f'4 -\upbow \glissando
+                        
                         cs'8 -\downbow \glissando
-                        % measure 298
+                        
+                        %%% Cello Music Voice [measure 298] %%%
                         ef'4 -\upbow \glissando
+                        
                         fs'4 -\downbow \glissando
+                        
                         f8 -\upbow \glissando
-                        % measure 299
+                        
+                        %%% Cello Music Voice [measure 299] %%%
                         bf4 -\downbow \glissando
+                        
                         f4 -\upbow \glissando
+                        
                         e4 -\downbow \glissando
+                        
                         bf4 -\upbow
-                        % measure 300
+                        
+                        %%% Cello Music Voice [measure 300] %%%
                         R1 * 21/2
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
-                            % measure 312
+                            
+                            %%% Cello Music Voice [measure 312] %%%
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #2
                             f'''8 -\staccatissimo \fff
@@ -4615,22 +5077,30 @@
                                         \upright
                                             pizz.
                                     }
+                            
                             e'''4 -\staccatissimo
+                            
                             cs'''4 -\staccatissimo
+                            
                             bf'''8 -\staccatissimo ~
                         }
                         \times 4/5 {
+                            
                             bf'''4.
+                            
                             af'''4 -\staccatissimo
                         }
                         {
+                            
                             e'''8 -\staccatissimo
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
-                        % measure 313
+                        
+                        %%% Cello Music Voice [measure 313] %%%
                         R1 * 1/4
                         \bar "|"
+                        
                     }
                 }
             >>

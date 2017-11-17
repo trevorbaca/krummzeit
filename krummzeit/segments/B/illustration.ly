@@ -1306,7 +1306,8 @@
                         \clef "treble"
                         \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 73/8
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        R1 * 73/8 \fff
                         \times 4/5 {
                             
                             %%% PianoMusicVoice [measure 102] %%%
@@ -2087,7 +2088,8 @@
                         \clef "percussion"
                         \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        c'2. ~
+                        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        c'2. \mf ~
                             ^ \markup {
                                 \whiteout
                                     \upright
@@ -2440,7 +2442,8 @@
                         \clef "treble"
                         \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 4
+                        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        R1 * 4 \fff
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             
@@ -2615,7 +2618,8 @@
                         \clef "treble"
                         \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 4
+                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        R1 * 4 \fff
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/5 {
                             

@@ -124,7 +124,8 @@
                         \clef "treble"
                         \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override OboeMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 33/8
+                        \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        R1 * 33/8 \f
                         
                         %%% OboeMusicVoice [measure 284] %%%
                         \override DynamicLineSpanner.staff-padding = #'3
@@ -240,7 +241,8 @@
                         \clef "treble"
                         \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 33/8
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        R1 * 33/8 \pp
                         
                         %%% ClarinetMusicVoice [measure 284] %%%
                         \override DynamicLineSpanner.staff-padding = #'3
@@ -410,7 +412,8 @@
                                 }
                             \clef "bass"
                             \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            <d' f' a' c''>8 [
+                            \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            <d' f' a' c''>8 \pp [
                                 ^ \markup {
                                     \override
                                         #'(box-padding . 0.75)
@@ -2182,7 +2185,8 @@
                         \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 47/8
+                        \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        R1 * 47/8 \ppp
                         
                         %%% PercussionMusicVoice [measure 285] %%%
                         \override DynamicLineSpanner.staff-padding = #'6
@@ -2326,7 +2330,8 @@
                             \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            df'2. :32
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            df'2. :32 \pp
                                 - \tweak color #red
                                 ^ \markup { @ }
                                 _ \markup {
@@ -2487,7 +2492,8 @@
                             \clef "alto"
                             \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            c4 :32
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            c4 :32 \fff
                                 - \tweak color #red
                                 ^ \markup { @ }
                                 _ \markup {
@@ -2641,7 +2647,8 @@
                             \clef "bass"
                             \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            c,2 :32
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            c,2 :32 \fff
                                 - \tweak color #red
                                 ^ \markup { @ }
                                 _ \markup {

@@ -469,7 +469,8 @@
                             }
                         \clef "bass"
                         \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        cs'''\longa :32
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        cs'''\longa :32 \fff
                             ^ \markup {
                                 \column
                                     {

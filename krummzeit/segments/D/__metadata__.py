@@ -18,6 +18,20 @@ metadata = abjad.TypedOrderedDict(
                 ),
             ),
         (
+            'end_dynamics_by_context',
+            abjad.TypedOrderedDict(
+                [
+                    ('CelloMusicVoice', 'mp'),
+                    ('ClarinetMusicVoice', 'mf'),
+                    ('OboeMusicVoice', 'mf'),
+                    ('PercussionMusicVoice', 'ppp'),
+                    ('PianoMusicVoice', 'mp'),
+                    ('ViolaMusicVoice', 'mp'),
+                    ('ViolinMusicVoice', 'mp'),
+                    ]
+                ),
+            ),
+        (
             'end_instruments_by_context',
             abjad.TypedOrderedDict(
                 [

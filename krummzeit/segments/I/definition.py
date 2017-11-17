@@ -56,7 +56,7 @@ maker.validate_measures_per_stage()
 ### ob, bass clarinet [I7-8] reiteration ###
 
 maker(
-    baca.scope('Oboe Music Voice', 1),
+    baca.scope('OboeMusicVoice', 1),
     baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[2],
@@ -73,20 +73,20 @@ maker(
     )
 
 maker.copy_rhythm(
-    baca.scope('Oboe Music Voice', 1),
-    baca.scope('Clarinet Music Voice', 1),
+    baca.scope('OboeMusicVoice', 1),
+    baca.scope('ClarinetMusicVoice', 1),
     rhythm_maker__tuplet_ratios=[(1, 4)],
     )
 
 maker(
-    baca.scope('Clarinet Music Voice', 1),
+    baca.scope('ClarinetMusicVoice', 1),
     baca.instrument(krummzeit.instruments['bass clarinet']),
     )
 
 ### pf, xylophone [I1] reiteration ###
 
 maker(
-    baca.scope('Piano Music Voice', 1),
+    baca.scope('PianoMusicVoice', 1),
     baca.instrument(krummzeit.instruments['piano']),
     baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
@@ -104,20 +104,20 @@ maker(
     )
 
 maker.copy_rhythm(
-    baca.scope('Piano Music Voice', 1),
-    baca.scope('Percussion Music Voice', 1),
+    baca.scope('PianoMusicVoice', 1),
+    baca.scope('PercussionMusicVoice', 1),
     rhythm_maker__tuplet_ratios=[(1, 6)],
     )
 
 maker(
-    baca.scope('Percussion Music Voice', 1),
+    baca.scope('PercussionMusicVoice', 1),
     baca.instrument(krummzeit.instruments['xylophone']),
     )
 
 ### vn, va, vc [J1-3] tremolo clusters (11.1) ###
 
 maker(
-    baca.scope('Violin Music Voice', 1, 3),
+    baca.scope('ViolinMusicVoice', 1, 3),
     baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
@@ -133,19 +133,19 @@ maker(
     )
 
 maker.copy_rhythm(
-    baca.scope('Violin Music Voice', 1),
-    baca.scope('Viola Music Voice', 1),
+    baca.scope('ViolinMusicVoice', 1),
+    baca.scope('ViolaMusicVoice', 1),
     )
 
 maker.copy_rhythm(
-    baca.scope('Violin Music Voice', 1),
-    baca.scope('Cello Music Voice', 1),
+    baca.scope('ViolinMusicVoice', 1),
+    baca.scope('CelloMusicVoice', 1),
     )
 
 ### harpsichord [J3-4] clusters (11.1) ###
 
 maker(
-    baca.scope('Piano Music Voice', 3, 4),
+    baca.scope('PianoMusicVoice', 3, 4),
     baca.instrument(krummzeit.instruments['harpsichord']),
     baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
@@ -165,7 +165,7 @@ maker(
 ### vn, va, vc [J5-9] white OB bowing (3.5) ###
 
 maker(
-    baca.scope('Violin Music Voice', 5, 9),
+    baca.scope('ViolinMusicVoice', 5, 9),
     baca.RhythmCommand(
         division_maker=baca.SplitByDurationsDivisionCallback(
             durations=[(1, 4)],
@@ -175,19 +175,19 @@ maker(
     )
 
 maker.copy_rhythm(
-    baca.scope('Violin Music Voice', 5),
-    baca.scope('Viola Music Voice', 5, 9),
+    baca.scope('ViolinMusicVoice', 5),
+    baca.scope('ViolaMusicVoice', 5, 9),
     )
 
 maker.copy_rhythm(
-    baca.scope('Violin Music Voice', 5),
-    baca.scope('Cello Music Voice', 5, 9),
+    baca.scope('ViolinMusicVoice', 5),
+    baca.scope('CelloMusicVoice', 5, 9),
     )
 
 ### tam-tam [J3-13] ###
 
 maker(
-    baca.scope('Percussion Music Voice', 3, 15),
+    baca.scope('PercussionMusicVoice', 3, 15),
     baca.clef('percussion'),
     baca.RhythmCommand(
         rhythm_maker=rhythmos.IncisedRhythmMaker(
@@ -207,12 +207,12 @@ maker(
 ### pf [J6] & [J8-14] (8.1) clusters ###
 
 maker.copy_rhythm(
-    baca.scope('Piano Music Voice', 3),
-    baca.scope('Piano Music Voice', 8, 15),
+    baca.scope('PianoMusicVoice', 3),
+    baca.scope('PianoMusicVoice', 8, 15),
     )
 
 maker(
-    baca.scope('Piano Music Voice', 8),
+    baca.scope('PianoMusicVoice', 8),
     baca.instrument(krummzeit.instruments['piano']),
     )
 
@@ -221,7 +221,7 @@ maker(
 #       currently causes error with dynamic and hairpin application
 
 maker(
-    baca.scope('Clarinet Music Voice', 3, 4),
+    baca.scope('ClarinetMusicVoice', 3, 4),
     baca.instrument(krummzeit.instruments['bass clarinet']),
     baca.make_tied_notes(repeat_ties=True),
     #baca.RhythmCommand(
@@ -230,7 +230,7 @@ maker(
     )
 
 maker(
-    baca.scope('Clarinet Music Voice', 5, 6),
+    baca.scope('ClarinetMusicVoice', 5, 6),
     baca.instrument(krummzeit.instruments['bass clarinet']),
     baca.make_tied_notes(repeat_ties=True),
     #baca.RhythmCommand(
@@ -239,7 +239,7 @@ maker(
     )
 
 maker(
-    baca.scope('Clarinet Music Voice', 7, 8),
+    baca.scope('ClarinetMusicVoice', 7, 8),
     baca.instrument(krummzeit.instruments['bass clarinet']),
     baca.make_tied_notes(repeat_ties=True),
     #baca.RhythmCommand(
@@ -248,13 +248,13 @@ maker(
     )
 
 maker(
-    baca.scope('Clarinet Music Voice', 9, 10),
+    baca.scope('ClarinetMusicVoice', 9, 10),
     baca.instrument(krummzeit.instruments['bass clarinet']),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Clarinet Music Voice', 11),
+    baca.scope('ClarinetMusicVoice', 11),
     baca.instrument(krummzeit.instruments['bass clarinet']),
     baca.make_tied_notes(repeat_ties=True),
     )
@@ -262,7 +262,7 @@ maker(
 ### (9.1) vn, va, vc points [J15] ###
 
 maker(
-    baca.scope('Violin Music Voice', 15),
+    baca.scope('ViolinMusicVoice', 15),
     baca.RhythmCommand(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
             talea=rhythmos.Talea(
@@ -276,14 +276,14 @@ maker(
     )
 
 maker.copy_rhythm(
-    baca.scope('Violin Music Voice', 15),
-    baca.scope('Viola Music Voice', 15),
+    baca.scope('ViolinMusicVoice', 15),
+    baca.scope('ViolaMusicVoice', 15),
     rhythm_maker__split_divisions_by_counts=[8, 10],
     )
 
 maker.copy_rhythm(
-    baca.scope('Violin Music Voice', 15),
-    baca.scope('Cello Music Voice', 15),
+    baca.scope('ViolinMusicVoice', 15),
+    baca.scope('CelloMusicVoice', 15),
     rhythm_maker__split_divisions_by_counts=[10, 8],
     )
 
@@ -294,62 +294,62 @@ maker.copy_rhythm(
 ### (14) reiteration ###
 
 maker(
-    baca.scope('Oboe Music Voice', 1),
+    baca.scope('OboeMusicVoice', 1),
     baca.pitches('Eb5'),
     )
 
 maker(
-    baca.scope('Clarinet Music Voice', 1),
+    baca.scope('ClarinetMusicVoice', 1),
     baca.pitches('Eb2'),
     )
 
 maker(
-    baca.scope('Oboe Music Voice', 1),
+    baca.scope('OboeMusicVoice', 1),
     baca.dynamic('ff'),
     krummzeit.color_fingerings(),
     )
 
 maker(
-    baca.scope('Clarinet Music Voice', 1),
+    baca.scope('ClarinetMusicVoice', 1),
     baca.dynamic('ff'),
     krummzeit.color_fingerings(),
     )
 
 maker(
-    baca.make_scopes(['Piano Music Voice', 'Percussion Music Voice'], [1]),
+    baca.make_scopes(['PianoMusicVoice', 'PercussionMusicVoice'], [1]),
     baca.pitches('F#6'),
     )
 
 maker(
-    baca.make_scopes(['Piano Music Voice', 'Percussion Music Voice'], [1]),
+    baca.make_scopes(['PianoMusicVoice', 'PercussionMusicVoice'], [1]),
     baca.dynamic('fff'),
     baca.stem_tremolo(),
     )
 
 maker(
-    baca.scope('Percussion Music Voice', 1),
+    baca.scope('PercussionMusicVoice', 1),
     baca.dynamic('fff'),
     baca.stem_tremolo(),
     )
 
 maker(
-    baca.scope('Violin Music Voice', 1, 3),
+    baca.scope('ViolinMusicVoice', 1, 3),
     baca.pitches('Eb5'),
     )
 
 maker(
-    baca.scope('Viola Music Voice', 1, 3),
+    baca.scope('ViolaMusicVoice', 1, 3),
     baca.pitches('A3'),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 1, 3),
+    baca.scope('CelloMusicVoice', 1, 3),
     baca.pitches('E~2'),
     )
 
 maker(
     baca.make_scopes([
-        'Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
+        'ViolinMusicVoice', 'ViolaMusicVoice', 'CelloMusicVoice'],
         [(1, 3)],
         ),
     baca.dynamic('fff'),
@@ -359,7 +359,7 @@ maker(
 ### tam-tam ###
 
 maker(
-    baca.scope('Percussion Music Voice', 3, 15),
+    baca.scope('PercussionMusicVoice', 3, 15),
     baca.reiterated_dynamic('f'),
     )
 
@@ -369,16 +369,16 @@ pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
 pcs = pcs.transpose(11)
 maker(
     baca.timeline([
-        ('Violin Music Voice', 5, 9),
-        ('Viola Music Voice', 5, 9),
-        ('Cello Music Voice', 5, 9),
+        ('ViolinMusicVoice', 5, 9),
+        ('ViolaMusicVoice', 5, 9),
+        ('CelloMusicVoice', 5, 9),
         ]),
     baca.pitches(pcs),
     )
 
 maker(
     baca.make_scopes([
-        'Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
+        'ViolinMusicVoice', 'ViolaMusicVoice', 'CelloMusicVoice'],
         [(5, 9)],
         ),
     baca.clef('treble'),
@@ -389,51 +389,51 @@ maker(
     )
 
 maker(
-    baca.scope('Violin Music Voice', 5, 9),
+    baca.scope('ViolinMusicVoice', 5, 9),
     krummzeit.register_narrow(5, 4),
     )
 
 maker(
-    baca.make_scopes(['Viola Music Voice', 'Cello Music Voice'], [(5, 9)]),
+    baca.make_scopes(['ViolaMusicVoice', 'CelloMusicVoice'], [(5, 9)]),
     krummzeit.register_narrow(5, 3),
     )
 
 ### harpsichord clusters ###
 
 maker(
-    baca.scope('Piano Music Voice', 3, 4),
+    baca.scope('PianoMusicVoice', 3, 4),
     krummzeit.clusters('harpsichord'),
     )
 
 ### bcl climax ###
 
 maker(
-    baca.scope('Clarinet Music Voice', 3, 11),
+    baca.scope('ClarinetMusicVoice', 3, 11),
     baca.pitches('E2'),
     )
 
 maker(
-    baca.scope('Clarinet Music Voice', 3, 4),
+    baca.scope('ClarinetMusicVoice', 3, 4),
     baca.dynamic('ff'),
     )
 
 maker(
-    baca.scope('Clarinet Music Voice', 5, 6),
+    baca.scope('ClarinetMusicVoice', 5, 6),
     baca.hairpin('ff < fff'),
     )
 
 maker(
-    baca.scope('Clarinet Music Voice', 9),
+    baca.scope('ClarinetMusicVoice', 9),
     baca.possibile_dynamic('ffff'),
     )
 
 maker(
-    baca.scope('Clarinet Music Voice', 11),
+    baca.scope('ClarinetMusicVoice', 11),
     baca.hairpin('ffff > pppp'),
     )
 
 maker(
-    baca.scope('Piano Music Voice', 8, 15),
+    baca.scope('PianoMusicVoice', 8, 15),
     baca.clef('bass'),
     baca.possibile_dynamic('ffff'),
     baca.ottava_bassa(),
@@ -447,16 +447,16 @@ pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
 maker(
     baca.timeline([
-        ('Violin Music Voice', 15),
-        ('Viola Music Voice', 15),
-        ('Cello Music Voice', 15),
+        ('ViolinMusicVoice', 15),
+        ('ViolaMusicVoice', 15),
+        ('CelloMusicVoice', 15),
         ]),
     baca.pitches(pcs),
     )
 
 maker(
     baca.make_scopes([
-        'Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
+        'ViolinMusicVoice', 'ViolaMusicVoice', 'CelloMusicVoice'],
         [15],
         ),
     baca.dynamic('fff'),
@@ -469,50 +469,50 @@ maker(
 ### VERTICAL ALIGNMENT ###
 
 maker(
-    baca.scope('Oboe Music Voice', 1, 14),
+    baca.scope('OboeMusicVoice', 1, 14),
     baca.dynamic_line_spanner_staff_padding(6),
     baca.tuplet_bracket_staff_padding(2),
     )
 
 maker(
-    baca.scope('Clarinet Music Voice', 1),
+    baca.scope('ClarinetMusicVoice', 1),
     baca.dynamic_line_spanner_staff_padding(9),
     baca.stems_up(),
     baca.tuplet_bracket_staff_padding(5),
     )
 
 maker(
-    baca.scope('Clarinet Music Voice', 3, 14),
+    baca.scope('ClarinetMusicVoice', 3, 14),
     baca.dynamic_line_spanner_staff_padding(7),
     baca.stems_up(),
     )
 
 maker(
-    baca.scope('Piano Music Voice', 1),
+    baca.scope('PianoMusicVoice', 1),
     baca.dynamic_line_spanner_staff_padding(6),
     baca.tuplet_bracket_staff_padding(2),
     )
 
 maker(
-    baca.scope('Percussion Music Voice', 1),
+    baca.scope('PercussionMusicVoice', 1),
     baca.dynamic_line_spanner_staff_padding(6),
     baca.tuplet_bracket_staff_padding(2),
     )
 
 maker(
-    baca.scope('Percussion Music Voice', 3, 15),
+    baca.scope('PercussionMusicVoice', 3, 15),
     baca.dynamic_line_spanner_staff_padding(6),
     )
 
 maker(
-    baca.scope('Violin Music Voice', 1, 13),
+    baca.scope('ViolinMusicVoice', 1, 13),
     baca.beam_positions(-5),
     baca.dynamic_line_spanner_staff_padding(8),
     baca.tuplet_bracket_staff_padding(4),
     )
 
 maker(
-    baca.scope('Viola Music Voice', 1, 3),
+    baca.scope('ViolaMusicVoice', 1, 3),
     baca.beam_positions(-5),
     baca.dynamic_line_spanner_staff_padding(8),
     baca.tuplet_bracket_staff_padding(4),
@@ -520,7 +520,7 @@ maker(
 
 maker(
     baca.make_scopes(
-        ['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'],
+        ['ViolinMusicVoice', 'ViolaMusicVoice', 'CelloMusicVoice'],
         [15],
         ),
     baca.dynamic_line_spanner_staff_padding(6),

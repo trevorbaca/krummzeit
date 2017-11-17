@@ -58,7 +58,7 @@ class RegisterTransitionCommand(baca.Command):
             <BLANKLINE>
                     }
                 >>
-                \context MusicContext = "Music Context" <<
+                \context MusicContext = "MusicContext" <<
                     \context Staff = "Music Staff" {
                         \context Voice = "Music Voice" {
                             {

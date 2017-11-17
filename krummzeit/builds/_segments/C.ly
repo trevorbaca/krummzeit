@@ -498,11 +498,11 @@
             }
         }
     >>
-    \context MusicContext = "Music Context" <<
-        \context WindSectionStaffGroup = "Wind Section Staff Group" <<
+    \context MusicContext = "MusicContext" <<
+        \context WindSectionStaffGroup = "WindSectionStaffGroup" <<
             \tag winds.oboe
-            \context OboeMusicStaff = "Oboe Music Staff" {
-                \context OboeMusicVoice = "Oboe Music Voice" {
+            \context OboeMusicStaff = "OboeMusicStaff" {
+                \context OboeMusicVoice = "OboeMusicVoice" {
                     s1 * 65/8
                     \override DynamicLineSpanner.staff-padding = #'5
                     \override Stem.direction = #up
@@ -517,8 +517,8 @@
                 }
             }
             \tag winds.clarinet
-            \context ClarinetMusicStaff = "Clarinet Music Staff" {
-                \context ClarinetMusicVoice = "Clarinet Music Voice" {
+            \context ClarinetMusicStaff = "ClarinetMusicStaff" {
+                \context ClarinetMusicVoice = "ClarinetMusicVoice" {
                     s1 * 65/8
                     \set ClarinetMusicStaff.instrumentName = \markup {
                         \hcenter-in
@@ -560,10 +560,10 @@
                 }
             }
         >>
-        \context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
+        \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup" <<
             \tag percussion.piano
-            \context PianoMusicStaff = "Piano Music Staff" {
-                \context PianoMusicVoice = "Piano Music Voice" {
+            \context PianoMusicStaff = "PianoMusicStaff" {
+                \context PianoMusicVoice = "PianoMusicVoice" {
                     \times 2/3 {
                         \ottava #1
                         \set PianoMusicStaff.instrumentName = \markup {
@@ -798,8 +798,8 @@
                 }
             }
             \tag percussion
-            \context PercussionMusicStaff = "Percussion Staff" {
-                \context PercussionMusicVoice = "Percussion Music Voice" {
+            \context PercussionMusicStaff = "PercussionStaff" {
+                \context PercussionMusicVoice = "PercussionMusicVoice" {
                     \once \override Beam.color = #blue
                     \once \override Dots.color = #blue
                     \once \override Flag.color = #blue
@@ -1074,10 +1074,10 @@
                 }
             }
         >>
-        \context StringSectionStaffGroup = "String Section Staff Group" <<
+        \context StringSectionStaffGroup = "StringSectionStaffGroup" <<
             \tag strings.violin
-            \context ViolinMusicStaff = "Violin Music Staff" {
-                \context ViolinMusicVoice = "Violin Music Voice" {
+            \context ViolinMusicStaff = "ViolinMusicStaff" {
+                \context ViolinMusicVoice = "ViolinMusicVoice" {
                     s1 * 15/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/6 {
@@ -1159,8 +1159,8 @@
                 }
             }
             \tag strings.viola
-            \context ViolaMusicStaff = "Viola Music Staff" {
-                \context ViolaMusicVoice = "Viola Music Voice" {
+            \context ViolaMusicStaff = "ViolaMusicStaff" {
+                \context ViolaMusicVoice = "ViolaMusicVoice" {
                     s1 * 15/8
                     \times 2/3 {
                         \clef "treble"
@@ -1247,8 +1247,8 @@
                 }
             }
             \tag strings.cello
-            \context CelloMusicStaff = "Cello Music Staff" {
-                \context CelloMusicVoice = "Cello Music Voice" {
+            \context CelloMusicStaff = "CelloMusicStaff" {
+                \context CelloMusicVoice = "CelloMusicVoice" {
                     s1 * 15/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 7/8 {

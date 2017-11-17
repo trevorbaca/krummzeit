@@ -237,11 +237,11 @@
             }
         }
     >>
-    \context MusicContext = "Music Context" <<
-        \context WindSectionStaffGroup = "Wind Section Staff Group" <<
+    \context MusicContext = "MusicContext" <<
+        \context WindSectionStaffGroup = "WindSectionStaffGroup" <<
             \tag winds.oboe
-            \context OboeMusicStaff = "Oboe Music Staff" {
-                \context OboeMusicVoice = "Oboe Music Voice" {
+            \context OboeMusicStaff = "OboeMusicStaff" {
+                \context OboeMusicVoice = "OboeMusicVoice" {
                     \override Stem.direction = #up
                     \override DynamicLineSpanner.staff-padding = #'5
                     b1 \ff ~
@@ -402,8 +402,8 @@
                 }
             }
             \tag winds.clarinet
-            \context ClarinetMusicStaff = "Clarinet Music Staff" {
-                \context ClarinetMusicVoice = "Clarinet Music Voice" {
+            \context ClarinetMusicStaff = "ClarinetMusicStaff" {
+                \context ClarinetMusicVoice = "ClarinetMusicVoice" {
                     \set ClarinetMusicStaff.instrumentName = \markup {
                         \hcenter-in
                             #16
@@ -607,10 +607,10 @@
                 }
             }
         >>
-        \context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
+        \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup" <<
             \tag percussion.piano
-            \context PianoMusicStaff = "Piano Music Staff" {
-                \context PianoMusicVoice = "Piano Music Voice" {
+            \context PianoMusicStaff = "PianoMusicStaff" {
+                \context PianoMusicVoice = "PianoMusicVoice" {
                     s1 * 27/8
                     \times 4/7 {
                         \set PianoMusicStaff.instrumentName = \markup {
@@ -787,8 +787,8 @@
                 }
             }
             \tag percussion
-            \context PercussionMusicStaff = "Percussion Staff" {
-                \context PercussionMusicVoice = "Percussion Music Voice" {
+            \context PercussionMusicStaff = "PercussionStaff" {
+                \context PercussionMusicVoice = "PercussionMusicVoice" {
                     \once \override Beam.color = #blue
                     \once \override Dots.color = #blue
                     \once \override Flag.color = #blue
@@ -875,10 +875,10 @@
                 }
             }
         >>
-        \context StringSectionStaffGroup = "String Section Staff Group" <<
+        \context StringSectionStaffGroup = "StringSectionStaffGroup" <<
             \tag strings.violin
-            \context ViolinMusicStaff = "Violin Music Staff" {
-                \context ViolinMusicVoice = "Violin Music Voice" {
+            \context ViolinMusicStaff = "ViolinMusicStaff" {
+                \context ViolinMusicVoice = "ViolinMusicVoice" {
                     s1 * 27/8
                     {
                         \override Beam.positions = #'(-4 . -4)
@@ -1100,8 +1100,8 @@
                 }
             }
             \tag strings.viola
-            \context ViolaMusicStaff = "Viola Music Staff" {
-                \context ViolaMusicVoice = "Viola Music Voice" {
+            \context ViolaMusicStaff = "ViolaMusicStaff" {
+                \context ViolaMusicVoice = "ViolaMusicVoice" {
                     \override DynamicLineSpanner.staff-padding = #'6
                     bf,1.. \glissando \< \ff
                         ^ \markup {
@@ -1220,8 +1220,8 @@
                 }
             }
             \tag strings.cello
-            \context CelloMusicStaff = "Cello Music Staff" {
-                \context CelloMusicVoice = "Cello Music Voice" {
+            \context CelloMusicStaff = "CelloMusicStaff" {
+                \context CelloMusicVoice = "CelloMusicVoice" {
                     \override DynamicLineSpanner.staff-padding = #'6
                     a,,2. \glissando \< \ff
                         ^ \markup {

@@ -134,11 +134,11 @@
             }
         }
     >>
-    \context MusicContext = "Music Context" <<
-        \context WindSectionStaffGroup = "Wind Section Staff Group" <<
+    \context MusicContext = "MusicContext" <<
+        \context WindSectionStaffGroup = "WindSectionStaffGroup" <<
             \tag winds.oboe
-            \context OboeMusicStaff = "Oboe Music Staff" {
-                \context OboeMusicVoice = "Oboe Music Voice" {
+            \context OboeMusicStaff = "OboeMusicStaff" {
+                \context OboeMusicVoice = "OboeMusicVoice" {
                     s1 * 33/8
                     \override DynamicLineSpanner.staff-padding = #'3
                     d''1.. \ff ~ \startTrillSpan
@@ -185,8 +185,8 @@
                 }
             }
             \tag winds.clarinet
-            \context ClarinetMusicStaff = "Clarinet Music Staff" {
-                \context ClarinetMusicVoice = "Clarinet Music Voice" {
+            \context ClarinetMusicStaff = "ClarinetMusicStaff" {
+                \context ClarinetMusicVoice = "ClarinetMusicVoice" {
                     s1 * 33/8
                     \set ClarinetMusicStaff.instrumentName = \markup {
                         \hcenter-in
@@ -276,10 +276,10 @@
                 }
             }
         >>
-        \context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
+        \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup" <<
             \tag percussion.piano
-            \context PianoMusicStaff = "Piano Music Staff" {
-                \context PianoMusicVoice = "Piano Music Voice" {
+            \context PianoMusicStaff = "PianoMusicStaff" {
+                \context PianoMusicVoice = "PianoMusicVoice" {
                     \times 2/3 {
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
@@ -1926,8 +1926,8 @@
                 }
             }
             \tag percussion
-            \context PercussionMusicStaff = "Percussion Staff" {
-                \context PercussionMusicVoice = "Percussion Music Voice" {
+            \context PercussionMusicStaff = "PercussionStaff" {
+                \context PercussionMusicVoice = "PercussionMusicVoice" {
                     s1 * 47/8
                     \clef "percussion"
                     \override DynamicLineSpanner.staff-padding = #'6
@@ -2017,10 +2017,10 @@
                 }
             }
         >>
-        \context StringSectionStaffGroup = "String Section Staff Group" <<
+        \context StringSectionStaffGroup = "StringSectionStaffGroup" <<
             \tag strings.violin
-            \context ViolinMusicStaff = "Violin Music Staff" {
-                \context ViolinMusicVoice = "Violin Music Voice" {
+            \context ViolinMusicStaff = "ViolinMusicStaff" {
+                \context ViolinMusicVoice = "ViolinMusicVoice" {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 19/10 {
                         df'2. :32
@@ -2082,8 +2082,8 @@
                 }
             }
             \tag strings.viola
-            \context ViolaMusicStaff = "Viola Music Staff" {
-                \context ViolaMusicVoice = "Viola Music Voice" {
+            \context ViolaMusicStaff = "ViolaMusicStaff" {
+                \context ViolaMusicVoice = "ViolaMusicVoice" {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 19/10 {
                         c4 :32
@@ -2145,8 +2145,8 @@
                 }
             }
             \tag strings.cello
-            \context CelloMusicStaff = "Cello Music Staff" {
-                \context CelloMusicVoice = "Cello Music Voice" {
+            \context CelloMusicStaff = "CelloMusicStaff" {
+                \context CelloMusicVoice = "CelloMusicVoice" {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 19/10 {
                         c,2 :32

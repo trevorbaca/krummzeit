@@ -12,9 +12,9 @@
     } <<
         \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
         \context GlobalContext = "Global Context" <<
-            \context GlobalSkips = "Global Skips" {
+            \context GlobalSkips = "GlobalSkips" {
                 
-                %%% Global Skips [measure 314] %%%
+                %%% GlobalSkips [measure 314] %%%
                 \time 5/4
                 \mark #10
                 s1 * 5/4 ^ \markup {
@@ -34,191 +34,191 @@
                         }
                     }
                 
-                %%% Global Skips [measure 315] %%%
+                %%% GlobalSkips [measure 315] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 316] %%%
+                %%% GlobalSkips [measure 316] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 317] %%%
+                %%% GlobalSkips [measure 317] %%%
                 \time 2/4
                 s1 * 1/2
                 
-                %%% Global Skips [measure 318] %%%
+                %%% GlobalSkips [measure 318] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 319] %%%
+                %%% GlobalSkips [measure 319] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 320] %%%
+                %%% GlobalSkips [measure 320] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 321] %%%
+                %%% GlobalSkips [measure 321] %%%
                 \time 2/4
                 s1 * 1/2
                 
-                %%% Global Skips [measure 322] %%%
+                %%% GlobalSkips [measure 322] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 323] %%%
+                %%% GlobalSkips [measure 323] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 324] %%%
+                %%% GlobalSkips [measure 324] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 325] %%%
+                %%% GlobalSkips [measure 325] %%%
                 \time 2/4
                 s1 * 1/2
                 
-                %%% Global Skips [measure 326] %%%
+                %%% GlobalSkips [measure 326] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 327] %%%
+                %%% GlobalSkips [measure 327] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 328] %%%
+                %%% GlobalSkips [measure 328] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 329] %%%
+                %%% GlobalSkips [measure 329] %%%
                 \time 2/4
                 s1 * 1/2
                 
-                %%% Global Skips [measure 330] %%%
+                %%% GlobalSkips [measure 330] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 331] %%%
+                %%% GlobalSkips [measure 331] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 332] %%%
+                %%% GlobalSkips [measure 332] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 333] %%%
+                %%% GlobalSkips [measure 333] %%%
                 \time 2/4
                 s1 * 1/2
                 
-                %%% Global Skips [measure 334] %%%
+                %%% GlobalSkips [measure 334] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 335] %%%
+                %%% GlobalSkips [measure 335] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 336] %%%
+                %%% GlobalSkips [measure 336] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 337] %%%
+                %%% GlobalSkips [measure 337] %%%
                 \time 2/4
                 s1 * 1/2
                 
-                %%% Global Skips [measure 338] %%%
+                %%% GlobalSkips [measure 338] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 339] %%%
+                %%% GlobalSkips [measure 339] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 340] %%%
+                %%% GlobalSkips [measure 340] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 341] %%%
+                %%% GlobalSkips [measure 341] %%%
                 \time 2/4
                 s1 * 1/2
                 
-                %%% Global Skips [measure 342] %%%
+                %%% GlobalSkips [measure 342] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 343] %%%
+                %%% GlobalSkips [measure 343] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 344] %%%
+                %%% GlobalSkips [measure 344] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 345] %%%
+                %%% GlobalSkips [measure 345] %%%
                 \time 2/4
                 s1 * 1/2
                 
-                %%% Global Skips [measure 346] %%%
+                %%% GlobalSkips [measure 346] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 347] %%%
+                %%% GlobalSkips [measure 347] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 348] %%%
+                %%% GlobalSkips [measure 348] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 349] %%%
+                %%% GlobalSkips [measure 349] %%%
                 \time 2/4
                 s1 * 1/2
                 
-                %%% Global Skips [measure 350] %%%
+                %%% GlobalSkips [measure 350] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 351] %%%
+                %%% GlobalSkips [measure 351] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 352] %%%
+                %%% GlobalSkips [measure 352] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 353] %%%
+                %%% GlobalSkips [measure 353] %%%
                 \time 2/4
                 s1 * 1/2
                 
-                %%% Global Skips [measure 354] %%%
+                %%% GlobalSkips [measure 354] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 355] %%%
+                %%% GlobalSkips [measure 355] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 356] %%%
+                %%% GlobalSkips [measure 356] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 357] %%%
+                %%% GlobalSkips [measure 357] %%%
                 \time 2/4
                 s1 * 1/2
                 
-                %%% Global Skips [measure 358] %%%
+                %%% GlobalSkips [measure 358] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 359] %%%
+                %%% GlobalSkips [measure 359] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 360] %%%
+                %%% GlobalSkips [measure 360] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 361] %%%
+                %%% GlobalSkips [measure 361] %%%
                 \time 2/4
                 s1 * 1/2
                 

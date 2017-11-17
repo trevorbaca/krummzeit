@@ -12,9 +12,9 @@
     } <<
         \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
         \context GlobalContext = "Global Context" <<
-            \context GlobalSkips = "Global Skips" {
+            \context GlobalSkips = "GlobalSkips" {
                 
-                %%% Global Skips [measure 281] %%%
+                %%% GlobalSkips [measure 281] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -51,23 +51,23 @@
                 \mark #8
                 s1 * 7/8 \startTextSpan
                 
-                %%% Global Skips [measure 282] %%%
+                %%% GlobalSkips [measure 282] %%%
                 \time 6/4
                 s1 * 3/2
                 
-                %%% Global Skips [measure 283] %%%
+                %%% GlobalSkips [measure 283] %%%
                 \time 7/4
                 s1 * 7/4
                 
-                %%% Global Skips [measure 284] %%%
+                %%% GlobalSkips [measure 284] %%%
                 \time 7/4
                 s1 * 7/4
                 
-                %%% Global Skips [measure 285] %%%
+                %%% GlobalSkips [measure 285] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 286] %%%
+                %%% GlobalSkips [measure 286] %%%
                 \time 11/8
                 s1 * 11/8 \stopTextSpan ^ \markup {
                     \fontsize
@@ -86,19 +86,19 @@
                         }
                     }
                 
-                %%% Global Skips [measure 287] %%%
+                %%% GlobalSkips [measure 287] %%%
                 \time 5/8
                 s1 * 5/8
                 
-                %%% Global Skips [measure 288] %%%
+                %%% GlobalSkips [measure 288] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 289] %%%
+                %%% GlobalSkips [measure 289] %%%
                 \time 2/4
                 s1 * 1/2
                 
-                %%% Global Skips [measure 290] %%%
+                %%% GlobalSkips [measure 290] %%%
                 \time 7/4
                 s1 * 7/4
                 

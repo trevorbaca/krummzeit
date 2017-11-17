@@ -12,75 +12,75 @@
     } <<
         \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
         \context GlobalContext = "Global Context" <<
-            \context GlobalRests = "Global Rests" {
+            \context GlobalRests = "GlobalRests" {
                 
-                %%% Global Rests [measure 291] %%%
+                %%% GlobalRests [measure 291] %%%
                 R1 * 1
                 
-                %%% Global Rests [measure 292] %%%
+                %%% GlobalRests [measure 292] %%%
                 R1 * 9/8
                 
-                %%% Global Rests [measure 293] %%%
+                %%% GlobalRests [measure 293] %%%
                 R1 * 3/4
                 
-                %%% Global Rests [measure 294] %%%
+                %%% GlobalRests [measure 294] %%%
                 R1 * 5/8
                 
-                %%% Global Rests [measure 295] %%%
+                %%% GlobalRests [measure 295] %%%
                 R1 * 9/8
                 
-                %%% Global Rests [measure 296] %%%
+                %%% GlobalRests [measure 296] %%%
                 R1 * 9/8
                 
-                %%% Global Rests [measure 297] %%%
+                %%% GlobalRests [measure 297] %%%
                 R1 * 5/8
                 
-                %%% Global Rests [measure 298] %%%
+                %%% GlobalRests [measure 298] %%%
                 R1 * 5/8
                 
-                %%% Global Rests [measure 299] %%%
+                %%% GlobalRests [measure 299] %%%
                 R1 * 1
                 
-                %%% Global Rests [measure 300] %%%
+                %%% GlobalRests [measure 300] %%%
                 R1 * 5/4
                 
-                %%% Global Rests [measure 301] %%%
+                %%% GlobalRests [measure 301] %%%
                 R1 * 1
                 
-                %%% Global Rests [measure 302] %%%
+                %%% GlobalRests [measure 302] %%%
                 R1 * 1
                 
-                %%% Global Rests [measure 303] %%%
+                %%% GlobalRests [measure 303] %%%
                 R1 * 1
                 
-                %%% Global Rests [measure 304] %%%
+                %%% GlobalRests [measure 304] %%%
                 R1 * 1
                 
-                %%% Global Rests [measure 305] %%%
+                %%% GlobalRests [measure 305] %%%
                 R1 * 3/4
                 
-                %%% Global Rests [measure 306] %%%
+                %%% GlobalRests [measure 306] %%%
                 R1 * 3/4
                 
-                %%% Global Rests [measure 307] %%%
+                %%% GlobalRests [measure 307] %%%
                 R1 * 3/4
                 
-                %%% Global Rests [measure 308] %%%
+                %%% GlobalRests [measure 308] %%%
                 R1 * 3/4
                 
-                %%% Global Rests [measure 309] %%%
+                %%% GlobalRests [measure 309] %%%
                 R1 * 3/4
                 
-                %%% Global Rests [measure 310] %%%
+                %%% GlobalRests [measure 310] %%%
                 R1 * 3/4
                 
-                %%% Global Rests [measure 311] %%%
+                %%% GlobalRests [measure 311] %%%
                 R1 * 3/4
                 
-                %%% Global Rests [measure 312] %%%
+                %%% GlobalRests [measure 312] %%%
                 R1 * 5/4
                 
-                %%% Global Rests [measure 313] %%%
+                %%% GlobalRests [measure 313] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -91,9 +91,9 @@
                         }
                 
             }
-            \context GlobalSkips = "Global Skips" {
+            \context GlobalSkips = "GlobalSkips" {
                 
-                %%% Global Skips [measure 291] %%%
+                %%% GlobalSkips [measure 291] %%%
                 \time 4/4
                 \mark #9
                 s1 * 1 ^ \markup {
@@ -113,11 +113,11 @@
                         }
                     }
                 
-                %%% Global Skips [measure 292] %%%
+                %%% GlobalSkips [measure 292] %%%
                 \time 9/8
                 s1 * 9/8
                 
-                %%% Global Skips [measure 293] %%%
+                %%% GlobalSkips [measure 293] %%%
                 \time 3/4
                 s1 * 3/4 ^ \markup {
                     \fontsize
@@ -136,11 +136,11 @@
                         }
                     }
                 
-                %%% Global Skips [measure 294] %%%
+                %%% GlobalSkips [measure 294] %%%
                 \time 5/8
                 s1 * 5/8
                 
-                %%% Global Skips [measure 295] %%%
+                %%% GlobalSkips [measure 295] %%%
                 \time 9/8
                 s1 * 9/8 ^ \markup {
                     \fontsize
@@ -159,11 +159,11 @@
                         }
                     }
                 
-                %%% Global Skips [measure 296] %%%
+                %%% GlobalSkips [measure 296] %%%
                 \time 9/8
                 s1 * 9/8
                 
-                %%% Global Skips [measure 297] %%%
+                %%% GlobalSkips [measure 297] %%%
                 \time 5/8
                 s1 * 5/8 ^ \markup {
                     \fontsize
@@ -182,11 +182,11 @@
                         }
                     }
                 
-                %%% Global Skips [measure 298] %%%
+                %%% GlobalSkips [measure 298] %%%
                 \time 5/8
                 s1 * 5/8
                 
-                %%% Global Skips [measure 299] %%%
+                %%% GlobalSkips [measure 299] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -211,11 +211,11 @@
                 \time 4/4
                 s1 * 1 \startTextSpan
                 
-                %%% Global Skips [measure 300] %%%
+                %%% GlobalSkips [measure 300] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 301] %%%
+                %%% GlobalSkips [measure 301] %%%
                 \time 4/4
                 s1 * 1 \stopTextSpan ^ \markup {
                     \fontsize
@@ -234,35 +234,35 @@
                         }
                     }
                 
-                %%% Global Skips [measure 302] %%%
+                %%% GlobalSkips [measure 302] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 303] %%%
+                %%% GlobalSkips [measure 303] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 304] %%%
+                %%% GlobalSkips [measure 304] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 305] %%%
+                %%% GlobalSkips [measure 305] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 306] %%%
+                %%% GlobalSkips [measure 306] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 307] %%%
+                %%% GlobalSkips [measure 307] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 308] %%%
+                %%% GlobalSkips [measure 308] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 309] %%%
+                %%% GlobalSkips [measure 309] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -287,19 +287,19 @@
                 \time 3/4
                 s1 * 3/4 \startTextSpan
                 
-                %%% Global Skips [measure 310] %%%
+                %%% GlobalSkips [measure 310] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 311] %%%
+                %%% GlobalSkips [measure 311] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 312] %%%
+                %%% GlobalSkips [measure 312] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 313] %%%
+                %%% GlobalSkips [measure 313] %%%
                 \time 1/4
                 s1 * 1/4 \stopTextSpan ^ \markup {
                     \fontsize

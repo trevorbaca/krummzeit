@@ -3,7 +3,7 @@
 } <<
     \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
     \context GlobalContext = "Global Context" <<
-        \context GlobalRests = "Global Rests" {
+        \context GlobalRests = "GlobalRests" {
             {
                 \time 9/8
                 R1 * 9/8
@@ -111,7 +111,7 @@
                         }
             }
         }
-        \context GlobalSkips = "Global Skips" {
+        \context GlobalSkips = "GlobalSkips" {
             {
                 \time 9/8
                 \mark #7

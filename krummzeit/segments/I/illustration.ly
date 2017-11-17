@@ -3933,6 +3933,7 @@
                                     Xyl.
                                 }
                             \clef "treble"
+                            \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             fs''8 :32 \fff
                                 - \tweak color #red
@@ -4220,6 +4221,7 @@
                                 }
                             \clef "treble"
                             \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             ef''8 :32 \fff [
                                 - \tweak color #red

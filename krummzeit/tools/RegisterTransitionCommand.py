@@ -17,7 +17,7 @@ class RegisterTransitionCommand(baca.Command):
         ...     )
 
         >>> maker(
-        ...     baca.scope('Music Voice', 1),
+        ...     baca.scope('MusicVoice', 1),
         ...     baca.pitches('C4 D4 E4 F4'),
         ...     baca.make_even_runs(),
         ...     krummzeit.RegisterTransitionCommand(
@@ -59,11 +59,11 @@ class RegisterTransitionCommand(baca.Command):
                     }
                 >>
                 \context MusicContext = "MusicContext" <<
-                    \context Staff = "Music Staff" {
-                        \context Voice = "Music Voice" {
+                    \context Staff = "MusicStaff" {
+                        \context Voice = "MusicVoice" {
                             {
             <BLANKLINE>
-                                %%% Music Voice [measure 1] %%%
+                                %%% MusicVoice [measure 1] %%%
                                 \clef "treble"
                                 c'8 [
             <BLANKLINE>
@@ -75,7 +75,7 @@ class RegisterTransitionCommand(baca.Command):
                             }
                             {
             <BLANKLINE>
-                                %%% Music Voice [measure 2] %%%
+                                %%% MusicVoice [measure 2] %%%
                                 c''8 [
             <BLANKLINE>
                                 d''8
@@ -84,7 +84,7 @@ class RegisterTransitionCommand(baca.Command):
                             }
                             {
             <BLANKLINE>
-                                %%% Music Voice [measure 3] %%%
+                                %%% MusicVoice [measure 3] %%%
                                 f''8 [
             <BLANKLINE>
                                 c''8
@@ -95,7 +95,7 @@ class RegisterTransitionCommand(baca.Command):
                             }
                             {
             <BLANKLINE>
-                                %%% Music Voice [measure 4] %%%
+                                %%% MusicVoice [measure 4] %%%
                                 f''8 [
             <BLANKLINE>
                                 c''8

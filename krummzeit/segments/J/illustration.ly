@@ -13,7 +13,8 @@
         \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
-                % measure 314
+                
+                %%% Global Skips [measure 314] %%%
                 \time 5/4
                 \mark #10
                 s1 * 5/4 ^ \markup {
@@ -32,147 +33,195 @@
                             144
                         }
                     }
-                % measure 315
+                
+                %%% Global Skips [measure 315] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 316
+                
+                %%% Global Skips [measure 316] %%%
                 \time 4/4
                 s1 * 1
-                % measure 317
+                
+                %%% Global Skips [measure 317] %%%
                 \time 2/4
                 s1 * 1/2
-                % measure 318
+                
+                %%% Global Skips [measure 318] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 319
+                
+                %%% Global Skips [measure 319] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 320
+                
+                %%% Global Skips [measure 320] %%%
                 \time 4/4
                 s1 * 1
-                % measure 321
+                
+                %%% Global Skips [measure 321] %%%
                 \time 2/4
                 s1 * 1/2
-                % measure 322
+                
+                %%% Global Skips [measure 322] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 323
+                
+                %%% Global Skips [measure 323] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 324
+                
+                %%% Global Skips [measure 324] %%%
                 \time 4/4
                 s1 * 1
-                % measure 325
+                
+                %%% Global Skips [measure 325] %%%
                 \time 2/4
                 s1 * 1/2
-                % measure 326
+                
+                %%% Global Skips [measure 326] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 327
+                
+                %%% Global Skips [measure 327] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 328
+                
+                %%% Global Skips [measure 328] %%%
                 \time 4/4
                 s1 * 1
-                % measure 329
+                
+                %%% Global Skips [measure 329] %%%
                 \time 2/4
                 s1 * 1/2
-                % measure 330
+                
+                %%% Global Skips [measure 330] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 331
+                
+                %%% Global Skips [measure 331] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 332
+                
+                %%% Global Skips [measure 332] %%%
                 \time 4/4
                 s1 * 1
-                % measure 333
+                
+                %%% Global Skips [measure 333] %%%
                 \time 2/4
                 s1 * 1/2
-                % measure 334
+                
+                %%% Global Skips [measure 334] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 335
+                
+                %%% Global Skips [measure 335] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 336
+                
+                %%% Global Skips [measure 336] %%%
                 \time 4/4
                 s1 * 1
-                % measure 337
+                
+                %%% Global Skips [measure 337] %%%
                 \time 2/4
                 s1 * 1/2
-                % measure 338
+                
+                %%% Global Skips [measure 338] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 339
+                
+                %%% Global Skips [measure 339] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 340
+                
+                %%% Global Skips [measure 340] %%%
                 \time 4/4
                 s1 * 1
-                % measure 341
+                
+                %%% Global Skips [measure 341] %%%
                 \time 2/4
                 s1 * 1/2
-                % measure 342
+                
+                %%% Global Skips [measure 342] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 343
+                
+                %%% Global Skips [measure 343] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 344
+                
+                %%% Global Skips [measure 344] %%%
                 \time 4/4
                 s1 * 1
-                % measure 345
+                
+                %%% Global Skips [measure 345] %%%
                 \time 2/4
                 s1 * 1/2
-                % measure 346
+                
+                %%% Global Skips [measure 346] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 347
+                
+                %%% Global Skips [measure 347] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 348
+                
+                %%% Global Skips [measure 348] %%%
                 \time 4/4
                 s1 * 1
-                % measure 349
+                
+                %%% Global Skips [measure 349] %%%
                 \time 2/4
                 s1 * 1/2
-                % measure 350
+                
+                %%% Global Skips [measure 350] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 351
+                
+                %%% Global Skips [measure 351] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 352
+                
+                %%% Global Skips [measure 352] %%%
                 \time 4/4
                 s1 * 1
-                % measure 353
+                
+                %%% Global Skips [measure 353] %%%
                 \time 2/4
                 s1 * 1/2
-                % measure 354
+                
+                %%% Global Skips [measure 354] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 355
+                
+                %%% Global Skips [measure 355] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 356
+                
+                %%% Global Skips [measure 356] %%%
                 \time 4/4
                 s1 * 1
-                % measure 357
+                
+                %%% Global Skips [measure 357] %%%
                 \time 2/4
                 s1 * 1/2
-                % measure 358
+                
+                %%% Global Skips [measure 358] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 359
+                
+                %%% Global Skips [measure 359] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 360
+                
+                %%% Global Skips [measure 360] %%%
                 \time 4/4
                 s1 * 1
-                % measure 361
+                
+                %%% Global Skips [measure 361] %%%
                 \time 2/4
                 s1 * 1/2
+                
             }
         >>
         \context MusicContext = "Music Context" <<
@@ -180,7 +229,9 @@
                 \tag winds.oboe
                 \context OboeMusicStaff = "Oboe Music Staff" {
                     \context OboeMusicVoice = "Oboe Music Voice" {
-                        % measure 314
+                        
+                        %%% Oboe Music Voice [measure 314] %%%
+                        \override DynamicLineSpanner.staff-padding = #'5
                         \set OboeMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -192,58 +243,81 @@
                                 Ob.
                             }
                         \clef "treble"
-                        \override DynamicLineSpanner.staff-padding = #'5
                         \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override OboeMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         cs'\breve.. \fff
-                        % measure 317
+                        
+                        %%% Oboe Music Voice [measure 317] %%%
                         r2
-                        % measure 318
+                        
+                        %%% Oboe Music Voice [measure 318] %%%
                         cs'\breve..
-                        % measure 321
+                        
+                        %%% Oboe Music Voice [measure 321] %%%
                         r2
-                        % measure 322
+                        
+                        %%% Oboe Music Voice [measure 322] %%%
                         cs'\breve..
-                        % measure 325
+                        
+                        %%% Oboe Music Voice [measure 325] %%%
                         r2
-                        % measure 326
+                        
+                        %%% Oboe Music Voice [measure 326] %%%
                         cs'\breve..
-                        % measure 329
+                        
+                        %%% Oboe Music Voice [measure 329] %%%
                         r2
-                        % measure 330
+                        
+                        %%% Oboe Music Voice [measure 330] %%%
                         cs'\breve..
-                        % measure 333
+                        
+                        %%% Oboe Music Voice [measure 333] %%%
                         r2
-                        % measure 334
+                        
+                        %%% Oboe Music Voice [measure 334] %%%
                         cs'\breve..
-                        % measure 337
+                        
+                        %%% Oboe Music Voice [measure 337] %%%
                         r2
-                        % measure 338
+                        
+                        %%% Oboe Music Voice [measure 338] %%%
                         cs'\breve..
-                        % measure 341
+                        
+                        %%% Oboe Music Voice [measure 341] %%%
                         r2
-                        % measure 342
+                        
+                        %%% Oboe Music Voice [measure 342] %%%
                         cs'\breve..
-                        % measure 345
+                        
+                        %%% Oboe Music Voice [measure 345] %%%
                         r2
-                        % measure 346
+                        
+                        %%% Oboe Music Voice [measure 346] %%%
                         cs'\breve..
-                        % measure 349
+                        
+                        %%% Oboe Music Voice [measure 349] %%%
                         r2
-                        % measure 350
+                        
+                        %%% Oboe Music Voice [measure 350] %%%
                         cs'\breve..
-                        % measure 353
+                        
+                        %%% Oboe Music Voice [measure 353] %%%
                         r2
-                        % measure 354
+                        
+                        %%% Oboe Music Voice [measure 354] %%%
                         R1 * 8
                         \bar "|."
                         \revert DynamicLineSpanner.staff-padding
+                        
                     }
                 }
                 \tag winds.clarinet
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
-                        % measure 314
+                        
+                        %%% Clarinet Music Voice [measure 314] %%%
+                        \override DynamicLineSpanner.staff-padding = #'7
+                        \override Stem.direction = #up
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -268,13 +342,12 @@
                                     }
                             }
                         \clef "treble"
-                        \override DynamicLineSpanner.staff-padding = #'7
-                        \override Stem.direction = #up
                         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         e\longa \f
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 318
+                        
+                        %%% Clarinet Music Voice [measure 318] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -283,7 +356,8 @@
                         e\longa
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 322
+                        
+                        %%% Clarinet Music Voice [measure 322] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -292,7 +366,8 @@
                         e\longa
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 326
+                        
+                        %%% Clarinet Music Voice [measure 326] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -301,7 +376,8 @@
                         e\longa
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 330
+                        
+                        %%% Clarinet Music Voice [measure 330] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -310,7 +386,8 @@
                         e\longa
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 334
+                        
+                        %%% Clarinet Music Voice [measure 334] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -319,7 +396,8 @@
                         e\longa
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 338
+                        
+                        %%% Clarinet Music Voice [measure 338] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -328,7 +406,8 @@
                         e\longa
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 342
+                        
+                        %%% Clarinet Music Voice [measure 342] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -337,7 +416,8 @@
                         e\longa
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 346
+                        
+                        %%% Clarinet Music Voice [measure 346] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -346,7 +426,8 @@
                         e\longa
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 350
+                        
+                        %%% Clarinet Music Voice [measure 350] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -356,10 +437,12 @@
                             - \tweak color #red
                             ^ \markup { @ }
                         \revert Stem.direction
-                        % measure 354
+                        
+                        %%% Clarinet Music Voice [measure 354] %%%
                         R1 * 8
                         \bar "|."
                         \revert DynamicLineSpanner.staff-padding
+                        
                     }
                 }
             >>
@@ -367,7 +450,8 @@
                 \tag percussion.piano
                 \context PianoMusicStaff = "Piano Music Staff" {
                     \context PianoMusicVoice = "Piano Music Voice" {
-                        % measure 314
+                        
+                        %%% Piano Music Voice [measure 314] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -402,7 +486,8 @@
                                             }
                                     }
                                 }
-                        % measure 318
+                        
+                        %%% Piano Music Voice [measure 318] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -411,7 +496,8 @@
                         cs'''\longa :32
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 322
+                        
+                        %%% Piano Music Voice [measure 322] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -420,7 +506,8 @@
                         cs'''\longa :32
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 326
+                        
+                        %%% Piano Music Voice [measure 326] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -429,7 +516,8 @@
                         cs'''\longa :32
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 330
+                        
+                        %%% Piano Music Voice [measure 330] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -438,7 +526,8 @@
                         cs'''\longa :32
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 334
+                        
+                        %%% Piano Music Voice [measure 334] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -447,9 +536,11 @@
                         cs'''\breve.. :32
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 337
+                        
+                        %%% Piano Music Voice [measure 337] %%%
                         r2
-                        % measure 338
+                        
+                        %%% Piano Music Voice [measure 338] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -488,7 +579,8 @@
                                 \upright
                                     possibile
                                 }
-                        % measure 342
+                        
+                        %%% Piano Music Voice [measure 342] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -497,7 +589,8 @@
                         cs'''\longa :32
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 346
+                        
+                        %%% Piano Music Voice [measure 346] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -506,7 +599,8 @@
                         cs'''\longa :32
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 350
+                        
+                        %%% Piano Music Voice [measure 350] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -515,7 +609,8 @@
                         cs'''\longa :32
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 354
+                        
+                        %%% Piano Music Voice [measure 354] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -524,7 +619,8 @@
                         cs'''\longa :32
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 358
+                        
+                        %%% Piano Music Voice [measure 358] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -534,15 +630,18 @@
                             - \tweak color #red
                             ^ \markup { @ }
                         \bar "|."
+                        
                     }
                 }
                 \tag percussion
                 \context PercussionMusicStaff = "Percussion Staff" {
                     \context PercussionMusicVoice = "Percussion Music Voice" {
-                        % measure 314
+                        
+                        %%% Percussion Music Voice [measure 314] %%%
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 5
                         \startStaff
+                        \override DynamicLineSpanner.staff-padding = #'4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -559,12 +658,12 @@
                                 Xyl.
                             }
                         \clef "percussion"
-                        \override DynamicLineSpanner.staff-padding = #'4
                         \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         cs''\longa :32 \fff
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 318
+                        
+                        %%% Percussion Music Voice [measure 318] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -573,7 +672,8 @@
                         cs''\longa :32
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 322
+                        
+                        %%% Percussion Music Voice [measure 322] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -582,7 +682,8 @@
                         cs''\longa :32
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 326
+                        
+                        %%% Percussion Music Voice [measure 326] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -591,7 +692,8 @@
                         cs''\longa :32
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 330
+                        
+                        %%% Percussion Music Voice [measure 330] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -600,7 +702,8 @@
                         cs''\longa :32
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 334
+                        
+                        %%% Percussion Music Voice [measure 334] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -609,7 +712,8 @@
                         cs''\longa :32
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 338
+                        
+                        %%% Percussion Music Voice [measure 338] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -618,7 +722,8 @@
                         cs''\longa :32
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 342
+                        
+                        %%% Percussion Music Voice [measure 342] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -627,7 +732,8 @@
                         cs''\longa :32
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 346
+                        
+                        %%% Percussion Music Voice [measure 346] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -636,7 +742,8 @@
                         cs''\longa :32
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 350
+                        
+                        %%% Percussion Music Voice [measure 350] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -645,7 +752,8 @@
                         cs''\longa :32
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 354
+                        
+                        %%% Percussion Music Voice [measure 354] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -654,7 +762,8 @@
                         cs''\longa :32
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 358
+                        
+                        %%% Percussion Music Voice [measure 358] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -665,6 +774,7 @@
                             ^ \markup { @ }
                         \bar "|."
                         \revert DynamicLineSpanner.staff-padding
+                        
                     }
                 }
             >>
@@ -674,10 +784,13 @@
                     \context ViolinMusicVoice = "Violin Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
-                            % measure 314
+                            
+                            %%% Violin Music Voice [measure 314] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
+                            \override DynamicLineSpanner.staff-padding = #'5
+                            \override TupletBracket.staff-padding = #2
                             \set ViolinMusicStaff.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -689,8 +802,6 @@
                                     Vn.
                                 }
                             \clef "treble"
-                            \override DynamicLineSpanner.staff-padding = #'5
-                            \override TupletBracket.staff-padding = #2
                             \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             e'''2 -\staccatissimo \ff
@@ -699,249 +810,342 @@
                                         \upright
                                             pizz.
                                     }
+                            
                             f'''1 -\staccatissimo
+                            
                             cs'''4 -\staccatissimo
                         }
                         {
-                            % measure 315
+                            
+                            %%% Violin Music Voice [measure 315] %%%
                             r4
                         }
                         \times 4/5 {
+                            
                             r2
+                            
                             e'''2. -\staccatissimo
                         }
                         \times 2/3 {
-                            % measure 316
+                            
+                            %%% Violin Music Voice [measure 316] %%%
                             r1
+                            
                             r4
+                            
                             ef'''4 -\staccatissimo
                         }
                         {
-                            % measure 317
+                            
+                            %%% Violin Music Voice [measure 317] %%%
                             r2
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
-                            % measure 318
+                            
+                            %%% Violin Music Voice [measure 318] %%%
                             r4
+                            
                             d'''1 -\staccatissimo
+                            
                             e'''4 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            % measure 319
+                            
+                            %%% Violin Music Voice [measure 319] %%%
                             r4
+                            
                             f'''4 -\staccatissimo
+                            
                             g'''4 -\staccatissimo
+                            
                             e'''2 -\staccatissimo
                         }
                         {
+                            
                             r2
                         }
                         \times 4/5 {
-                            % measure 320
+                            
+                            %%% Violin Music Voice [measure 320] %%%
                             r1
+                            
                             ef'''4 -\staccatissimo
                         }
                         {
-                            % measure 321
+                            
+                            %%% Violin Music Voice [measure 321] %%%
                             r2
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/9 {
-                            % measure 322
+                            
+                            %%% Violin Music Voice [measure 322] %%%
                             r1
+                            
                             r4
+                            
                             f'''1 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
-                            % measure 323
+                            
+                            %%% Violin Music Voice [measure 323] %%%
                             r1
+                            
                             cs'''2 -\staccatissimo
                         }
                         \times 2/3 {
-                            % measure 324
+                            
+                            %%% Violin Music Voice [measure 324] %%%
                             d'''1 -\staccatissimo
+                            
                             e'''2 -\staccatissimo
                         }
                         {
-                            % measure 325
+                            
+                            %%% Violin Music Voice [measure 325] %%%
                             r2
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
-                            % measure 326
+                            
+                            %%% Violin Music Voice [measure 326] %%%
                             f'''1. -\staccatissimo
                         }
                         {
-                            % measure 327
+                            
+                            %%% Violin Music Voice [measure 327] %%%
                             r4
                         }
                         {
+                            
                             r4
+                            
                             g'''2. -\staccatissimo
                         }
                         \times 2/3 {
-                            % measure 328
+                            
+                            %%% Violin Music Voice [measure 328] %%%
                             r4
+                            
                             e'''1 -\staccatissimo
+                            
                             ef'''4 -\staccatissimo
                         }
                         {
-                            % measure 329
+                            
+                            %%% Violin Music Voice [measure 329] %%%
                             r4
+                            
                             f'''4 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
-                            % measure 330
+                            
+                            %%% Violin Music Voice [measure 330] %%%
                             cs'''4 -\staccatissimo
+                            
                             d'''1. -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            % measure 331
+                            
+                            %%% Violin Music Voice [measure 331] %%%
                             r2
+                            
                             e'''2 -\staccatissimo
                         }
                         {
+                            
                             r2
                         }
                         {
-                            % measure 332
+                            
+                            %%% Violin Music Voice [measure 332] %%%
                             r1
                         }
                         {
-                            % measure 333
+                            
+                            %%% Violin Music Voice [measure 333] %%%
                             f'''2 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
-                            % measure 334
+                            
+                            %%% Violin Music Voice [measure 334] %%%
                             r1.
+                            
                             g'''4 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
-                            % measure 335
+                            
+                            %%% Violin Music Voice [measure 335] %%%
                             r4
+                            
                             e'''1 -\staccatissimo
+                            
                             ef'''2 -\staccatissimo
                         }
                         \times 4/5 {
-                            % measure 336
+                            
+                            %%% Violin Music Voice [measure 336] %%%
                             r2
+                            
                             f'''2. -\staccatissimo
                         }
                         {
-                            % measure 337
+                            
+                            %%% Violin Music Voice [measure 337] %%%
                             r2
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/9 {
-                            % measure 338
+                            
+                            %%% Violin Music Voice [measure 338] %%%
                             r2.
+                            
                             cs'''1 -\staccatissimo
+                            
                             d'''2 -\staccatissimo
                         }
                         {
-                            % measure 339
+                            
+                            %%% Violin Music Voice [measure 339] %%%
                             r4
                         }
                         \times 2/3 {
+                            
                             r4
+                            
                             e'''2 -\staccatissimo
+                            
                             f'''4 -\staccatissimo
+                            
                             g'''4 -\staccatissimo
+                            
                             e'''4 -\staccatissimo
                         }
                         \times 2/3 {
-                            % measure 340
+                            
+                            %%% Violin Music Voice [measure 340] %%%
                             r1.
                         }
                         \times 2/3 {
-                            % measure 341
+                            
+                            %%% Violin Music Voice [measure 341] %%%
                             r4
+                            
                             ef'''2 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
-                            % measure 342
+                            
+                            %%% Violin Music Voice [measure 342] %%%
                             r1.
+                            
                             f'''4 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            % measure 343
+                            
+                            %%% Violin Music Voice [measure 343] %%%
                             r1
                         }
                         {
+                            
                             r2
                         }
                         \times 2/3 {
-                            % measure 344
+                            
+                            %%% Violin Music Voice [measure 344] %%%
                             r4
+                            
                             cs'''2 -\staccatissimo
+                            
                             d'''2. -\staccatissimo
                         }
                         {
-                            % measure 345
+                            
+                            %%% Violin Music Voice [measure 345] %%%
                             r4
+                            
                             e'''4 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
-                            % measure 346
+                            
+                            %%% Violin Music Voice [measure 346] %%%
                             r2.
+                            
                             f'''2. -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
-                            % measure 347
+                            
+                            %%% Violin Music Voice [measure 347] %%%
                             r1
+                            
                             r4
+                            
                             g'''2 -\staccatissimo
                         }
                         {
-                            % measure 348
+                            
+                            %%% Violin Music Voice [measure 348] %%%
                             r2
+                            
                             e'''2 -\staccatissimo
                         }
                         {
-                            % measure 349
+                            
+                            %%% Violin Music Voice [measure 349] %%%
                             r2
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
-                            % measure 350
+                            
+                            %%% Violin Music Voice [measure 350] %%%
                             ef'''2 -\staccatissimo
+                            
                             f'''4 -\staccatissimo
+                            
                             cs'''4 -\staccatissimo
+                            
                             d'''2. -\staccatissimo
                         }
                         {
-                            % measure 351
+                            
+                            %%% Violin Music Voice [measure 351] %%%
                             r4
                         }
                         \times 4/5 {
+                            
                             r1
+                            
                             e'''4 -\staccatissimo
                         }
                         \times 2/3 {
-                            % measure 352
+                            
+                            %%% Violin Music Voice [measure 352] %%%
                             r1.
                         }
                         {
-                            % measure 353
+                            
+                            %%% Violin Music Voice [measure 353] %%%
                             r4
+                            
                             f'''4 -\staccatissimo
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
-                        % measure 354
+                        
+                        %%% Violin Music Voice [measure 354] %%%
                         R1 * 8
                         \bar "|."
+                        
                     }
                 }
                 \tag strings.viola
@@ -949,7 +1153,10 @@
                     \context ViolaMusicVoice = "Viola Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/8 {
-                            % measure 314
+                            
+                            %%% Viola Music Voice [measure 314] %%%
+                            \override DynamicLineSpanner.staff-padding = #'5
+                            \override TupletBracket.staff-padding = #2
                             \set ViolaMusicStaff.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -961,8 +1168,6 @@
                                     Va.
                                 }
                             \clef "treble"
-                            \override DynamicLineSpanner.staff-padding = #'5
-                            \override TupletBracket.staff-padding = #2
                             \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             ef'''\breve -\staccatissimo \ff
                                 ^ \markup {
@@ -972,35 +1177,47 @@
                                     }
                         }
                         {
-                            % measure 315
+                            
+                            %%% Viola Music Voice [measure 315] %%%
                             d'''2. -\staccatissimo
                         }
                         {
+                            
                             r4
+                            
                             f'''4 -\staccatissimo
                         }
                         \times 4/7 {
-                            % measure 316
+                            
+                            %%% Viola Music Voice [measure 316] %%%
                             r2.
+                            
                             g'''2 -\staccatissimo
+                            
                             e'''4 -\staccatissimo
+                            
                             f'''4 -\staccatissimo
                         }
                         \times 2/3 {
-                            % measure 317
+                            
+                            %%% Viola Music Voice [measure 317] %%%
                             cs'''2. -\staccatissimo
                         }
-                        % measure 318
+                        
+                        %%% Viola Music Voice [measure 318] %%%
                         R1 * 44
                         \bar "|."
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
+                        
                     }
                 }
                 \tag strings.cello
                 \context CelloMusicStaff = "Cello Music Staff" {
                     \context CelloMusicVoice = "Cello Music Voice" {
-                        % measure 314
+                        
+                        %%% Cello Music Voice [measure 314] %%%
+                        \override DynamicLineSpanner.staff-padding = #'3
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1017,7 +1234,6 @@
                                 Vc.
                             }
                         \clef "treble"
-                        \override DynamicLineSpanner.staff-padding = #'3
                         \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         d'\longa \fff
@@ -1036,7 +1252,8 @@
                                             }
                                     }
                                 }
-                        % measure 318
+                        
+                        %%% Cello Music Voice [measure 318] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1045,7 +1262,8 @@
                         d'\longa
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 322
+                        
+                        %%% Cello Music Voice [measure 322] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1054,7 +1272,8 @@
                         d'\longa
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 326
+                        
+                        %%% Cello Music Voice [measure 326] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1063,7 +1282,8 @@
                         d'\longa
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 330
+                        
+                        %%% Cello Music Voice [measure 330] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1072,7 +1292,8 @@
                         d'\longa
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 334
+                        
+                        %%% Cello Music Voice [measure 334] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1081,7 +1302,8 @@
                         d'\breve.. \glissando
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 337
+                        
+                        %%% Cello Music Voice [measure 337] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1091,7 +1313,8 @@
                             - \tweak color #red
                             ^ \markup { @ }
                         \revert DynamicLineSpanner.staff-padding
-                        % measure 338
+                        
+                        %%% Cello Music Voice [measure 338] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1113,7 +1336,8 @@
                                             }
                                     }
                                 }
-                        % measure 342
+                        
+                        %%% Cello Music Voice [measure 342] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1122,7 +1346,8 @@
                         d,\longa
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 346
+                        
+                        %%% Cello Music Voice [measure 346] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1131,7 +1356,8 @@
                         d,\longa
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 350
+                        
+                        %%% Cello Music Voice [measure 350] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1140,7 +1366,8 @@
                         d,\longa
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 354
+                        
+                        %%% Cello Music Voice [measure 354] %%%
                         \once \override MultiMeasureRestText.extra-offset = #'(14.5 . 0)
                         R1 * 8
                             _ \markup {
@@ -1168,6 +1395,7 @@
                                                 }
                                 }
                         \bar "|."
+                        
                     }
                 }
             >>

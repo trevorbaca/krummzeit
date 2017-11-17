@@ -13,7 +13,8 @@
         \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
-                % measure 14
+                
+                %%% Global Skips [measure 14] %%%
                 \time 3/4
                 \mark #1
                 s1 * 3/4
@@ -40,13 +41,16 @@
                             135
                         }
                     }
-                % measure 15
+                
+                %%% Global Skips [measure 15] %%%
                 \time 3/4
                 s1 * 3/4
-                % measure 16
+                
+                %%% Global Skips [measure 16] %%%
                 \time 9/8
                 s1 * 9/8
-                % measure 17
+                
+                %%% Global Skips [measure 17] %%%
                 \time 7/8
                 s1 * 7/8
                     - \markup {
@@ -56,7 +60,8 @@
                                 #blue
                                 [A.2]
                         }
-                % measure 18
+                
+                %%% Global Skips [measure 18] %%%
                 \time 6/4
                 s1 * 3/2
                     - \markup {
@@ -66,13 +71,16 @@
                                 #blue
                                 [A.3]
                         }
-                % measure 19
+                
+                %%% Global Skips [measure 19] %%%
                 \time 7/4
                 s1 * 7/4
-                % measure 20
+                
+                %%% Global Skips [measure 20] %%%
                 \time 3/4
                 s1 * 3/4
-                % measure 21
+                
+                %%% Global Skips [measure 21] %%%
                 \time 7/4
                 s1 * 7/4
                     - \markup {
@@ -82,16 +90,20 @@
                                 #blue
                                 [A.4]
                         }
-                % measure 22
+                
+                %%% Global Skips [measure 22] %%%
                 \time 11/8
                 s1 * 11/8
-                % measure 23
+                
+                %%% Global Skips [measure 23] %%%
                 \time 5/8
                 s1 * 5/8
-                % measure 24
+                
+                %%% Global Skips [measure 24] %%%
                 \time 4/4
                 s1 * 1
-                % measure 25
+                
+                %%% Global Skips [measure 25] %%%
                 \time 3/4
                 s1 * 3/4
                     - \markup {
@@ -101,13 +113,16 @@
                                 #blue
                                 [A.5]
                         }
-                % measure 26
+                
+                %%% Global Skips [measure 26] %%%
                 \time 3/4
                 s1 * 3/4
-                % measure 27
+                
+                %%% Global Skips [measure 27] %%%
                 \time 9/8
                 s1 * 9/8
-                % measure 28
+                
+                %%% Global Skips [measure 28] %%%
                 \time 7/8
                 s1 * 7/8
                     - \markup {
@@ -117,7 +132,8 @@
                                 #blue
                                 [A.6]
                         }
-                % measure 29
+                
+                %%% Global Skips [measure 29] %%%
                 \time 6/4
                 s1 * 3/2
                     - \markup {
@@ -127,13 +143,16 @@
                                 #blue
                                 [A.7]
                         }
-                % measure 30
+                
+                %%% Global Skips [measure 30] %%%
                 \time 7/4
                 s1 * 7/4
-                % measure 31
+                
+                %%% Global Skips [measure 31] %%%
                 \time 3/4
                 s1 * 3/4
-                % measure 32
+                
+                %%% Global Skips [measure 32] %%%
                 \time 7/4
                 s1 * 7/4
                     - \markup {
@@ -143,16 +162,20 @@
                                 #blue
                                 [A.8]
                         }
-                % measure 33
+                
+                %%% Global Skips [measure 33] %%%
                 \time 11/8
                 s1 * 11/8
-                % measure 34
+                
+                %%% Global Skips [measure 34] %%%
                 \time 5/8
                 s1 * 5/8
-                % measure 35
+                
+                %%% Global Skips [measure 35] %%%
                 \time 4/4
                 s1 * 1
-                % measure 36
+                
+                %%% Global Skips [measure 36] %%%
                 \time 6/4
                 s1 * 3/2
                     - \markup {
@@ -244,22 +267,28 @@
                                                 }
                                     }
                     }
-                % measure 37
+                
+                %%% Global Skips [measure 37] %%%
                 \time 3/4
                 s1 * 3/4
-                % measure 38
+                
+                %%% Global Skips [measure 38] %%%
                 \time 4/4
                 s1 * 1
-                % measure 39
+                
+                %%% Global Skips [measure 39] %%%
                 \time 7/8
                 s1 * 7/8
-                % measure 40
+                
+                %%% Global Skips [measure 40] %%%
                 \time 7/8
                 s1 * 7/8
-                % measure 41
+                
+                %%% Global Skips [measure 41] %%%
                 \time 4/4
                 s1 * 1
-                % measure 42
+                
+                %%% Global Skips [measure 42] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -290,13 +319,16 @@
                                 #blue
                                 [A.10]
                         }
-                % measure 43
+                
+                %%% Global Skips [measure 43] %%%
                 \time 3/4
                 s1 * 3/4
-                % measure 44
+                
+                %%% Global Skips [measure 44] %%%
                 \time 4/4
                 s1 * 1
-                % measure 45
+                
+                %%% Global Skips [measure 45] %%%
                 \time 5/8
                 s1 * 5/8
                     - \markup {
@@ -306,10 +338,12 @@
                                 #blue
                                 [A.11]
                         }
-                % measure 46
+                
+                %%% Global Skips [measure 46] %%%
                 \time 9/8
                 s1 * 9/8
-                % measure 47
+                
+                %%% Global Skips [measure 47] %%%
                 \time 5/4
                 s1 * 5/4 \stopTextSpan
                     - \markup {
@@ -335,13 +369,16 @@
                             135
                         }
                     }
-                % measure 48
+                
+                %%% Global Skips [measure 48] %%%
                 \time 2/4
                 s1 * 1/2
-                % measure 49
+                
+                %%% Global Skips [measure 49] %%%
                 \time 3/4
                 s1 * 3/4
-                % measure 50
+                
+                %%% Global Skips [measure 50] %%%
                 \time 3/4
                 s1 * 3/4
                     - \markup {
@@ -351,7 +388,8 @@
                                 #blue
                                 [A.13]
                         }
-                % measure 51
+                
+                %%% Global Skips [measure 51] %%%
                 \time 9/8
                 s1 * 9/8
                     - \markup {
@@ -361,7 +399,8 @@
                                 #blue
                                 [A.14]
                         }
-                % measure 52
+                
+                %%% Global Skips [measure 52] %%%
                 \time 7/8
                 s1 * 7/8
                     - \markup {
@@ -457,22 +496,28 @@
                                                 }
                                     }
                     }
-                % measure 53
+                
+                %%% Global Skips [measure 53] %%%
                 \time 6/4
                 s1 * 3/2
-                % measure 54
+                
+                %%% Global Skips [measure 54] %%%
                 \time 7/4
                 s1 * 7/4
-                % measure 55
+                
+                %%% Global Skips [measure 55] %%%
                 \time 7/4
                 s1 * 7/4
-                % measure 56
+                
+                %%% Global Skips [measure 56] %%%
                 \time 3/4
                 s1 * 3/4
-                % measure 57
+                
+                %%% Global Skips [measure 57] %%%
                 \time 11/8
                 s1 * 11/8
-                % measure 58
+                
+                %%% Global Skips [measure 58] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -503,13 +548,16 @@
                                 #blue
                                 [A.16]
                         }
-                % measure 59
+                
+                %%% Global Skips [measure 59] %%%
                 \time 4/4
                 s1 * 1
-                % measure 60
+                
+                %%% Global Skips [measure 60] %%%
                 \time 2/4
                 s1 * 1/2
-                % measure 61
+                
+                %%% Global Skips [measure 61] %%%
                 \time 7/4
                 s1 * 7/4 \stopTextSpan
                     - \markup {
@@ -535,16 +583,20 @@
                             135
                         }
                     }
-                % measure 62
+                
+                %%% Global Skips [measure 62] %%%
                 \time 4/4
                 s1 * 1
-                % measure 63
+                
+                %%% Global Skips [measure 63] %%%
                 \time 7/8
                 s1 * 7/8
-                % measure 64
+                
+                %%% Global Skips [measure 64] %%%
                 \time 7/8
                 s1 * 7/8
-                % measure 65
+                
+                %%% Global Skips [measure 65] %%%
                 \time 8/4
                 s1 * 2
                     - \markup {
@@ -554,10 +606,12 @@
                                 #blue
                                 [A.18]
                         }
-                % measure 66
+                
+                %%% Global Skips [measure 66] %%%
                 \time 4/4
                 s1 * 1
-                % measure 67
+                
+                %%% Global Skips [measure 67] %%%
                 \time 3/4
                 s1 * 3/4
                     - \markup {
@@ -567,13 +621,16 @@
                                 #blue
                                 [A.19]
                         }
-                % measure 68
+                
+                %%% Global Skips [measure 68] %%%
                 \time 4/4
                 s1 * 1
-                % measure 69
+                
+                %%% Global Skips [measure 69] %%%
                 \time 5/8
                 s1 * 5/8
-                % measure 70
+                
+                %%% Global Skips [measure 70] %%%
                 \time 9/8
                 s1 * 9/8
                     - \markup {
@@ -672,16 +729,20 @@
                                                 }
                                     }
                     }
-                % measure 71
+                
+                %%% Global Skips [measure 71] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 72
+                
+                %%% Global Skips [measure 72] %%%
                 \time 2/4
                 s1 * 1/2
-                % measure 73
+                
+                %%% Global Skips [measure 73] %%%
                 \time 3/4
                 s1 * 3/4
-                % measure 74
+                
+                %%% Global Skips [measure 74] %%%
                 \time 3/4
                 s1 * 3/4
                     - \markup {
@@ -691,28 +752,36 @@
                                 #blue
                                 [A.21]
                         }
-                % measure 75
+                
+                %%% Global Skips [measure 75] %%%
                 \time 3/4
                 s1 * 3/4
-                % measure 76
+                
+                %%% Global Skips [measure 76] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 77
+                
+                %%% Global Skips [measure 77] %%%
                 \time 13/8
                 s1 * 13/8
-                % measure 78
+                
+                %%% Global Skips [measure 78] %%%
                 \time 3/4
                 s1 * 3/4
-                % measure 79
+                
+                %%% Global Skips [measure 79] %%%
                 \time 5/8
                 s1 * 5/8
-                % measure 80
+                
+                %%% Global Skips [measure 80] %%%
                 \time 9/8
                 s1 * 9/8
-                % measure 81
+                
+                %%% Global Skips [measure 81] %%%
                 \time 9/8
                 s1 * 9/8
-                % measure 82
+                
+                %%% Global Skips [measure 82] %%%
                 \time 9/8
                 s1 * 9/8
                     - \markup {
@@ -738,13 +807,16 @@
                             108
                         }
                     }
-                % measure 83
+                
+                %%% Global Skips [measure 83] %%%
                 \time 5/8
                 s1 * 5/8
-                % measure 84
+                
+                %%% Global Skips [measure 84] %%%
                 \time 3/4
                 s1 * 3/4
-                % measure 85
+                
+                %%% Global Skips [measure 85] %%%
                 \time 3/4
                 s1 * 3/4
                     - \markup {
@@ -754,15 +826,19 @@
                                 #blue
                                 [A.23]
                         }
-                % measure 86
+                
+                %%% Global Skips [measure 86] %%%
                 \time 4/4
                 s1 * 1
-                % measure 87
+                
+                %%% Global Skips [measure 87] %%%
                 \time 4/4
                 s1 * 1
-                % measure 88
+                
+                %%% Global Skips [measure 88] %%%
                 \time 5/4
                 s1 * 5/4
+                
             }
         >>
         \context MusicContext = "Music Context" <<
@@ -770,7 +846,11 @@
                 \tag winds.oboe
                 \context OboeMusicStaff = "Oboe Music Staff" {
                     \context OboeMusicVoice = "Oboe Music Voice" {
-                        % measure 14
+                        
+                        %%% Oboe Music Voice [measure 14] %%%
+                        \override Beam.positions = #'(-5 . -5)
+                        \override DynamicLineSpanner.staff-padding = #'7
+                        \override TupletBracket.staff-padding = #4
                         \set OboeMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -782,14 +862,12 @@
                                 Ob.
                             }
                         \clef "treble"
-                        \override Beam.positions = #'(-5 . -5)
-                        \override DynamicLineSpanner.staff-padding = #'7
-                        \override TupletBracket.staff-padding = #4
                         \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override OboeMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 49/2
                         {
-                            % measure 36
+                            
+                            %%% Oboe Music Voice [measure 36] %%%
                             \set OboeMusicStaff.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -803,123 +881,197 @@
                             ef'4. -\staccato \< \f
                         }
                         \times 2/3 {
+                            
                             e'4 -\staccato
+                            
                             af'4 -\staccato
+                            
                             c'4 -\staccato ~
                         }
                         {
+                            
                             c'4
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/10 {
+                            
                             bf'16 -\staccato [
+                            
                             fs'16 -\staccato
+                            
                             g'16 -\staccato
+                            
                             ef'16 -\staccato
+                            
                             c''16 -\staccato
+                            
                             af'16 -\staccato
+                            
                             bf'16 -\staccato
+                            
                             fs'16 -\staccato
+                            
                             g'16 -\staccato
+                            
                             bf'16 -\staccato ~ ]
                         }
                         \times 2/3 {
-                            % measure 37
+                            
+                            %%% Oboe Music Voice [measure 37] %%%
                             bf'4
+                            
                             a'4 -\staccato
+                            
                             c'4 -\staccato ~
                         }
                         {
+                            
                             c'4
                         }
                         {
-                            % measure 38
+                            
+                            %%% Oboe Music Voice [measure 38] %%%
                             fs'4 -\staccato
                         }
                         \times 8/12 {
+                            
                             b'16 -\staccato [
+                            
                             e'16 -\staccato
+                            
                             g'16 -\staccato
+                            
                             d''16 -\staccato
+                            
                             fs'16 -\staccato
+                            
                             a'16 -\staccato
+                            
                             e'16 -\staccato
+                            
                             af'16 -\staccato
+                            
                             a'16 -\staccato
+                            
                             bf'16 -\staccato
+                            
                             fs'16 -\staccato
+                            
                             af'16 -\staccato ~ ]
                         }
                         {
+                            
                             af'4
                         }
                         \times 2/3 {
-                            % measure 39
+                            
+                            %%% Oboe Music Voice [measure 39] %%%
                             a'4 -\staccato
+                            
                             ef'4 -\staccato
+                            
                             af'4 -\staccato ~
                         }
                         {
+                            
                             af'4. ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/10 {
-                            % measure 40
+                            
+                            %%% Oboe Music Voice [measure 40] %%%
                             af'16 [
+                            
                             fs'16 -\staccato
+                            
                             af'16 -\staccato
+                            
                             b'16 -\staccato
+                            
                             c''16 -\staccato
+                            
                             a'16 -\staccato
+                            
                             bf'16 -\staccato
+                            
                             af'16 -\staccato
+                            
                             ef'16 -\staccato
+                            
                             c''16 -\staccato ]
                         }
                         \times 2/3 {
+                            
                             cs''4 -\staccato
+                            
                             e'4 -\staccato
+                            
                             g'4 -\staccato
                         }
                         \times 2/3 {
-                            % measure 41
+                            
+                            %%% Oboe Music Voice [measure 41] %%%
                             bf'4 -\staccato
+                            
                             d''4 -\staccato
+                            
                             c''4 -\staccato ~
                         }
                         {
+                            
                             c''4
                         }
                         {
+                            
                             d''16 -\staccato [
+                            
                             e''16 -\staccato
+                            
                             g''16 -\staccato
+                            
                             b'16 -\staccato ~ \ff ]
                         }
                         {
-                            % measure 42
+                            
+                            %%% Oboe Music Voice [measure 42] %%%
                             b'4 ~
                         }
                         \times 2/3 {
+                            
                             b'4
+                            
                             bf'4 -\staccato
+                            
                             fs'4 -\staccato
                         }
                         {
+                            
                             ef''4. -\staccato
                         }
                         \times 8/12 {
+                            
                             a'16 -\staccato [
+                            
                             cs''16 -\staccato
+                            
                             ef''16 -\staccato
+                            
                             b'16 -\staccato
+                            
                             af''16 -\staccato
+                            
                             bf'16 -\staccato
+                            
                             b'16 -\staccato
+                            
                             ef''16 -\staccato
+                            
                             g'16 -\staccato
+                            
                             af''16 -\staccato
+                            
                             bf'16 -\staccato
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -930,6 +1082,7 @@
                                 ^ \markup { @ }
                         }
                         {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -940,7 +1093,8 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
-                            % measure 43
+                            
+                            %%% Oboe Music Voice [measure 43] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -949,35 +1103,52 @@
                             af''4 -\staccato
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             fs''4 -\staccato
+                            
                             e''4 -\staccato ~
                         }
                         {
+                            
                             e''4 ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/10 {
-                            % measure 44
+                            
+                            %%% Oboe Music Voice [measure 44] %%%
                             e''16 [
+                            
                             g''16 -\staccato
+                            
                             af''16 -\staccato
+                            
                             a''16 -\staccato
+                            
                             af''16 -\staccato
+                            
                             d''16 -\staccato
+                            
                             e''16 -\staccato
+                            
                             bf''16 -\staccato
+                            
                             fs''16 -\staccato
+                            
                             af''16 -\staccato ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
+                            
                             a''4 -\staccato
+                            
                             af''4 -\staccato
+                            
                             bf'4 -\staccato
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
-                            % measure 45
+                            
+                            %%% Oboe Music Voice [measure 45] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -986,6 +1157,7 @@
                             af''4 -\staccato
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -994,70 +1166,109 @@
                             af''4 -\staccato
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             bf'4 -\staccato ~
                         }
                         {
-                            % measure 46
+                            
+                            %%% Oboe Music Voice [measure 46] %%%
                             bf'4
                         }
                         \times 8/12 {
+                            
                             fs''16 -\staccato [
+                            
                             af''16 -\staccato
+                            
                             d''16 -\staccato
+                            
                             fs''16 -\staccato
+                            
                             a''16 -\staccato
+                            
                             bf''16 -\staccato
+                            
                             c''16 -\staccato
+                            
                             b''16 -\staccato
+                            
                             bf''16 -\staccato
+                            
                             fs''16 -\staccato
+                            
                             af''16 -\staccato
+                            
                             a''16 -\staccato ~ ]
                         }
                         {
+                            
                             a''4. ~
                         }
                         \times 2/3 {
-                            % measure 47
+                            
+                            %%% Oboe Music Voice [measure 47] %%%
                             a''4
+                            
                             b''4 -\staccato
+                            
                             af''4 -\staccato
                         }
                         {
+                            
                             e''4. -\staccato
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/10 {
+                            
                             a''16 -\staccato [
+                            
                             fs''16 -\staccato
+                            
                             g''16 -\staccato
+                            
                             af''16 -\staccato
+                            
                             d''16 -\staccato
+                            
                             bf''16 -\staccato
+                            
                             fs''16 -\staccato
+                            
                             af''16 -\staccato
+                            
                             a''16 -\staccato
+                            
                             bf'16 -\staccato ~ ]
                         }
                         \times 2/3 {
-                            % measure 48
+                            
+                            %%% Oboe Music Voice [measure 48] %%%
                             bf'4
+                            
                             c''4 -\staccato
+                            
                             cs''4 -\staccato
                         }
                         \times 2/3 {
-                            % measure 49
+                            
+                            %%% Oboe Music Voice [measure 49] %%%
                             d''4 -\staccato
+                            
                             e''4 -\staccato
+                            
                             c''4 -\staccato ~
                         }
                         {
+                            
                             c''4 ~
                         }
                         {
-                            % measure 50
+                            
+                            %%% Oboe Music Voice [measure 50] %%%
                             c''16 [
+                            
                             d''16 -\staccato
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1066,6 +1277,7 @@
                             bf''16 -\staccato
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1076,22 +1288,30 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
+                            
                             fs''4 -\staccato
+                            
                             e''4 -\staccato
+                            
                             a''4 -\staccato
                         }
-                        % measure 51
+                        
+                        %%% Oboe Music Voice [measure 51] %%%
                         R1 * 157/4
                         \bar "|"
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
+                        
                     }
                 }
                 \tag winds.clarinet
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
-                        % measure 14
+                        
+                        %%% Clarinet Music Voice [measure 14] %%%
+                        \override Beam.positions = #'(-4 . -4)
+                        \override TupletBracket.staff-padding = #3
                         \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -1111,13 +1331,13 @@
                                     }
                             }
                         \clef "treble"
-                        \override Beam.positions = #'(-4 . -4)
-                        \override TupletBracket.staff-padding = #3
                         \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 7/2
                         {
-                            % measure 18
+                            
+                            %%% Clarinet Music Voice [measure 18] %%%
+                            \override DynamicLineSpanner.staff-padding = #'3
                             \set ClarinetMusicStaff.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -1136,7 +1356,6 @@
                                             (Eb)
                                         }
                                 }
-                            \override DynamicLineSpanner.staff-padding = #'3
                             cs''4. -\staccato \mp
                                 ^ \markup {
                                     \override
@@ -1146,130 +1365,190 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             fs''4 -\staccato
+                            
                             g''4 -\staccato
+                            
                             gs''4 -\staccato ~
                         }
                         {
+                            
                             gs''4
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             ds''8 -\staccato [
+                            
                             c''8 -\staccato
+                            
                             d''8 -\staccato
+                            
                             e''8 -\staccato ~ ]
                         }
                         \times 2/3 {
-                            % measure 19
+                            
+                            %%% Clarinet Music Voice [measure 19] %%%
                             e''4
+                            
                             ds''4 -\staccato
+                            
                             c''4 -\staccato ~
                         }
                         {
+                            
                             c''4
                         }
                         {
+                            
                             c''4 -\staccato
+                            
                             ds''4 -\staccato
                         }
                         {
+                            
                             fs''8 -\staccato [
+                            
                             g''8 -\staccato
+                            
                             f''8 -\staccato
+                            
                             c''8 -\staccato ~ ]
                         }
                         {
-                            % measure 20
+                            
+                            %%% Clarinet Music Voice [measure 20] %%%
                             c''4
                         }
                         \times 2/3 {
+                            
                             e''4 -\staccato
+                            
                             fs''4 -\staccato
+                            
                             a''4 -\staccato ~
                         }
                         {
-                            % measure 21
+                            
+                            %%% Clarinet Music Voice [measure 21] %%%
                             a''4
+                            
                             e''4 -\staccato ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             e''8 [
+                            
                             as'8 -\staccato
+                            
                             cs''8 -\staccato
+                            
                             gs''8 -\staccato ]
                         }
                         \times 2/3 {
+                            
                             ds''4 -\staccato
+                            
                             e''4 -\staccato
+                            
                             f''4 -\staccato
                         }
                         {
+                            
                             c''4. -\staccato ~
                         }
                         {
-                            % measure 22
+                            
+                            %%% Clarinet Music Voice [measure 22] %%%
                             c''4.
                         }
                         {
+                            
                             f''8 -\staccato [
+                            
                             gs''8 -\staccato
+                            
                             as'8 -\staccato
+                            
                             cs''8 -\staccato ~ ]
                         }
                         {
+                            
                             cs''4 ~
                         }
                         {
+                            
                             cs''4
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/4 {
-                            % measure 23
+                            
+                            %%% Clarinet Music Voice [measure 23] %%%
                             e''4 -\staccato
+                            
                             e''4 -\staccato
                         }
                         {
-                            % measure 24
+                            
+                            %%% Clarinet Music Voice [measure 24] %%%
                             c''8 -\staccato [
+                            
                             f''8 -\staccato ~ ]
                         }
                         \times 2/3 {
+                            
                             f''4
+                            
                             cs''4 -\staccato
+                            
                             d''4 -\staccato
                         }
                         {
+                            
                             as'4 -\staccato
                             \revert DynamicLineSpanner.staff-padding
                         }
-                        % measure 25
+                        
+                        %%% Clarinet Music Voice [measure 25] %%%
                         R1 * 7/2
                         {
-                            % measure 29
+                            
+                            %%% Clarinet Music Voice [measure 29] %%%
                             \override DynamicLineSpanner.staff-padding = #'3
                             d''4. -\staccato \f
                         }
                         \times 2/3 {
+                            
                             g''4 -\staccato
+                            
                             gs''4 -\staccato
+                            
                             a'4 -\staccato ~
                         }
                         {
+                            
                             a'4
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             e''8 -\staccato [
+                            
                             cs''8 -\staccato
+                            
                             ds''8 -\staccato
+                            
                             f''8 -\staccato ~ ]
                         }
                         \times 2/3 {
-                            % measure 30
+                            
+                            %%% Clarinet Music Voice [measure 30] %%%
                             f''4
+                            
                             e''4 -\staccato
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1280,6 +1559,7 @@
                                 ^ \markup { @ }
                         }
                         {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1290,6 +1570,7 @@
                                 ^ \markup { @ }
                         }
                         {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1298,62 +1579,89 @@
                             cs''4 -\staccato
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             e''4 -\staccato
                         }
                         {
+                            
                             g''8 -\staccato [
+                            
                             gs''8 -\staccato
+                            
                             fs''8 -\staccato
+                            
                             cs''8 -\staccato ~ ]
                         }
                         {
-                            % measure 31
+                            
+                            %%% Clarinet Music Voice [measure 31] %%%
                             cs''4
                         }
                         \times 2/3 {
+                            
                             f''4 -\staccato
+                            
                             g'4 -\staccato
+                            
                             as'4 -\staccato ~
                         }
                         {
-                            % measure 32
+                            
+                            %%% Clarinet Music Voice [measure 32] %%%
                             as'4
+                            
                             f''4 -\staccato ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             f''8 [
+                            
                             b'8 -\staccato
+                            
                             d''8 -\staccato
+                            
                             a'8 -\staccato ]
                         }
                         \times 2/3 {
+                            
                             e''4 -\staccato
+                            
                             f''4 -\staccato
+                            
                             fs''4 -\staccato
                         }
                         {
+                            
                             cs''4. -\staccato ~
                         }
                         {
-                            % measure 33
+                            
+                            %%% Clarinet Music Voice [measure 33] %%%
                             cs''4.
                         }
                         {
+                            
                             fs''8 -\staccato [
+                            
                             a''8 -\staccato
+                            
                             b'8 -\staccato
+                            
                             d''8 -\staccato ~ ]
                         }
                         {
+                            
                             d''4 ~
                         }
                         {
+                            
                             d''4
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/4 {
-                            % measure 34
+                            
+                            %%% Clarinet Music Voice [measure 34] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1362,6 +1670,7 @@
                             f''4 -\staccato
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1372,16 +1681,22 @@
                                 ^ \markup { @ }
                         }
                         {
-                            % measure 35
+                            
+                            %%% Clarinet Music Voice [measure 35] %%%
                             cs''8 -\staccato [
+                            
                             fs''8 -\staccato ~ ]
                         }
                         \times 2/3 {
+                            
                             fs''4
+                            
                             d''4 -\staccato
+                            
                             a''4 -\staccato
                         }
                         {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1395,7 +1710,8 @@
                             \revert DynamicLineSpanner.staff-padding
                         }
                         {
-                            % measure 36
+                            
+                            %%% Clarinet Music Voice [measure 36] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1404,6 +1720,7 @@
                             f''4 \< \f
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1415,6 +1732,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1423,6 +1741,7 @@
                             f'8 [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1431,27 +1750,38 @@
                             f'8 -\staccato
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             fs'8 -\staccato
+                            
                             c'8 -\staccato ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
+                            
                             g'4 -\staccato
+                            
                             c'4 -\staccato
+                            
                             as4 -\staccato
                         }
                         {
-                            % measure 37
+                            
+                            %%% Clarinet Music Voice [measure 37] %%%
                             ds'4. -\staccato ~
                         }
                         {
+                            
                             ds'4.
                         }
                         {
-                            % measure 38
+                            
+                            %%% Clarinet Music Voice [measure 38] %%%
                             e'8 -\staccato [
+                            
                             b8 -\staccato
+                            
                             a'8 -\staccato
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1462,6 +1792,7 @@
                                 ^ \markup { @ }
                         }
                         {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1472,6 +1803,7 @@
                                 ^ \markup { @ }
                         }
                         {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1482,7 +1814,8 @@
                                 ^ \markup { @ }
                         }
                         {
-                            % measure 39
+                            
+                            %%% Clarinet Music Voice [measure 39] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1494,6 +1827,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/9 {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1502,46 +1836,71 @@
                             g'8 -\staccato [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             ds'8 -\staccato
+                            
                             c''8 -\staccato
+                            
                             f'8 -\staccato
+                            
                             cs''8 -\staccato
+                            
                             e'8 -\staccato
+                            
                             fs'8 -\staccato
+                            
                             f'8 -\staccato
+                            
                             cs'8 -\staccato ~ ]
                         }
                         \times 2/3 {
-                            % measure 40
+                            
+                            %%% Clarinet Music Voice [measure 40] %%%
                             cs'4
+                            
                             as'4 -\staccato
+                            
                             gs'4 -\staccato
                         }
                         {
+                            
                             f'4. -\staccato ~
                         }
                         {
-                            % measure 41
+                            
+                            %%% Clarinet Music Voice [measure 41] %%%
                             f'4. ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/9 {
+                            
                             f'8 [
+                            
                             g'8 -\staccato
+                            
                             f'8 -\staccato
+                            
                             gs'8 -\staccato
+                            
                             a'8 -\staccato
+                            
                             c''8 -\staccato
+                            
                             g'8 -\staccato
+                            
                             ds''8 -\staccato
+                            
                             c''8 -\staccato \ff ]
                         }
                         \times 2/3 {
-                            % measure 42
+                            
+                            %%% Clarinet Music Voice [measure 42] %%%
                             \override Beam.positions = #'(-4 . -4)
                             \override TupletBracket.staff-padding = #3
                             as'4 -\staccato
+                            
                             fs'4 -\staccato
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1552,6 +1911,7 @@
                                 ^ \markup { @ }
                         }
                         {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1562,6 +1922,7 @@
                                 ^ \markup { @ }
                         }
                         {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1570,6 +1931,7 @@
                             f''4
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1581,7 +1943,9 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             ds''8 -\staccato [
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1590,6 +1954,7 @@
                             cs''8 -\staccato
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1598,28 +1963,39 @@
                             cs''8 -\staccato
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             g'8 -\staccato ~ ]
                         }
                         {
+                            
                             g'4. ~
                         }
                         {
-                            % measure 43
+                            
+                            %%% Clarinet Music Voice [measure 43] %%%
                             g'4
                         }
                         {
+                            
                             a'4 -\staccato
+                            
                             as'4 -\staccato
                         }
                         {
-                            % measure 44
+                            
+                            %%% Clarinet Music Voice [measure 44] %%%
                             cs''8 -\staccato [
+                            
                             g''8 -\staccato
+                            
                             ds''8 -\staccato
+                            
                             gs''8 -\staccato ~ ]
                         }
                         \times 2/3 {
+                            
                             gs''4
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1628,6 +2004,7 @@
                             as'4 -\staccato
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1638,62 +2015,89 @@
                                 ^ \markup { @ }
                         }
                         {
-                            % measure 45
+                            
+                            %%% Clarinet Music Voice [measure 45] %%%
                             b'4. -\staccato ~
                         }
                         {
+                            
                             b'4 ~
                         }
                         {
-                            % measure 46
+                            
+                            %%% Clarinet Music Voice [measure 46] %%%
                             b'8 [
+                            
                             cs''8 -\staccato
+                            
                             e''8 -\staccato
+                            
                             f''8 -\staccato ]
                         }
                         {
+                            
                             as'4 -\staccato
                         }
                         {
+                            
                             gs''4. -\staccato ~
                         }
                         {
-                            % measure 47
+                            
+                            %%% Clarinet Music Voice [measure 47] %%%
                             gs''4
                         }
                         {
+                            
                             as'8 -\staccato [
+                            
                             g''8 -\staccato
+                            
                             ds''8 -\staccato
+                            
                             e''8 -\staccato ~ ]
                         }
                         \times 2/3 {
+                            
                             e''4
+                            
                             f''4 -\staccato
+                            
                             cs''4 -\staccato ~
                         }
                         \times 2/3 {
-                            % measure 48
+                            
+                            %%% Clarinet Music Voice [measure 48] %%%
                             cs''4
+                            
                             ds''4 -\staccato
+                            
                             c''4 -\staccato
                         }
                         {
-                            % measure 49
+                            
+                            %%% Clarinet Music Voice [measure 49] %%%
                             g''4. -\staccato
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             c''8 -\staccato [
+                            
                             cs''8 -\staccato
+                            
                             e''8 -\staccato
+                            
                             f''8 -\staccato ]
                             \revert Beam.positions
                             \revert TupletBracket.staff-padding
                         }
-                        % measure 50
+                        
+                        %%% Clarinet Music Voice [measure 50] %%%
                         R1 * 67/2
-                        % measure 82
+                        
+                        %%% Clarinet Music Voice [measure 82] %%%
+                        \override DynamicLineSpanner.staff-padding = #'3
                         \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -1712,28 +2116,45 @@
                                         (Eb)
                                     }
                             }
-                        \override DynamicLineSpanner.staff-padding = #'3
                         r8
+                        
                         cs''4. \f \glissando
+                        
                         btqs'4. \glissando
+                        
                         d''4. \glissando
+                        
                         ctqs''4. \glissando
+                        
                         bqs'4. \glissando
+                        
                         a'4. \glissando
+                        
                         bqs'4. \glissando
+                        
                         cs''4. \glissando
+                        
                         btqs'4. \glissando
+                        
                         d''4. \glissando
+                        
                         ctqs''4. \glissando
-                        % measure 87
+                        
+                        %%% Clarinet Music Voice [measure 87] %%%
                         bqs'4. \glissando
+                        
                         a'4. \glissando
+                        
                         bqs'4. \glissando
+                        
                         cs''4. \glissando
+                        
                         btqs'4. \glissando
+                        
                         d''4.
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
+                        
                     }
                 }
             >>
@@ -1742,7 +2163,11 @@
                 \context PianoMusicStaff = "Piano Music Staff" {
                     \context PianoMusicVoice = "Piano Music Voice" {
                         \times 4/7 {
-                            % measure 14
+                            
+                            %%% Piano Music Voice [measure 14] %%%
+                            \override Beam.positions = #'(-4 . -4)
+                            \override DynamicLineSpanner.staff-padding = #'6
+                            \override TupletBracket.staff-padding = #3
                             \set PianoMusicStaff.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -1754,9 +2179,6 @@
                                     Hpschd.
                                 }
                             \clef "treble"
-                            \override Beam.positions = #'(-4 . -4)
-                            \override DynamicLineSpanner.staff-padding = #'6
-                            \override TupletBracket.staff-padding = #3
                             \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             g''8 [
                                 ^ \markup {
@@ -1765,182 +2187,285 @@
                                         \box
                                             "to harpsichord"
                                     }
+                            
                             cs''8
+                            
                             ef''8
+                            
                             e'8
+                            
                             f'8
+                            
                             b''8
+                            
                             ef''8 ]
                         }
                         \times 2/3 {
+                            
                             f'''8 [
+                            
                             fs''8
+                            
                             g''8 ~ ]
                         }
                         {
-                            % measure 15
+                            
+                            %%% Piano Music Voice [measure 15] %%%
                             g''4.
                         }
                         {
+                            
                             a''4. ~
                         }
                         \times 4/7 {
-                            % measure 16
+                            
+                            %%% Piano Music Voice [measure 16] %%%
                             a''8 [
+                            
                             bf''8
+                            
                             c''8
+                            
                             af''8
+                            
                             g''8
+                            
                             ef''8
+                            
                             f'8 ~ ]
                         }
                         \times 2/3 {
+                            
                             f'8 [
+                            
                             fs''8
+                            
                             af''8 ]
                         }
                         {
+                            
                             a''8 [
+                            
                             bf''8
+                            
                             c'''8 ]
                         }
                         {
-                            % measure 17
+                            
+                            %%% Piano Music Voice [measure 17] %%%
                             b''8 [
+                            
                             g''8 ~ ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
+                            
                             g''4
+                            
                             cs''4
+                            
                             ef''4
                         }
                         \times 2/3 {
-                            % measure 18
+                            
+                            %%% Piano Music Voice [measure 18] %%%
                             f'4
+                            
                             c''4
+                            
                             af''4 ~
                         }
                         {
+                            
                             af''8 [
+                            
                             f'8
+                            
                             g''8 ~ ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/9 {
+                            
                             g''8 [
+                            
                             cs''8
+                            
                             ef''8
+                            
                             e'8
+                            
                             g'8
+                            
                             f'''8
+                            
                             e'''8
+                            
                             b''8
+                            
                             cs'''8 ]
                         }
                         {
-                            % measure 19
+                            
+                            %%% Piano Music Voice [measure 19] %%%
                             ef''8 [
+                            
                             f'8
+                            
                             g''8 ]
                         }
                         \times 4/5 {
+                            
                             bf''8 [
+                            
                             c''8
+                            
                             af''8
+                            
                             a''8
+                            
                             f'''8 ~ ]
                         }
                         {
+                            
                             f'''4
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/4 {
+                            
                             g''4
+                            
                             c'''4 ~
                         }
                         \times 4/7 {
-                            % measure 20
+                            
+                            %%% Piano Music Voice [measure 20] %%%
                             c'''8 [
+                            
                             e'''8
+                            
                             f'''8
+                            
                             b''8
+                            
                             cs''8
+                            
                             af'8
+                            
                             bf'8 ~ ]
                         }
                         \times 2/3 {
+                            
                             bf'8 [
+                            
                             cs''8
+                            
                             ef''8 ]
                         }
                         {
-                            % measure 21
+                            
+                            %%% Piano Music Voice [measure 21] %%%
                             e'8 [
+                            
                             b''8 ]
                         }
                         {
+                            
                             g''8 [
+                            
                             ef''8
+                            
                             fs''8
+                            
                             ef''8 ~ ]
                         }
                         {
+                            
                             ef''4.
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
+                            
                             ef'''4
+                            
                             fs''4
+                            
                             b''4 ~
                         }
                         {
-                            % measure 22
+                            
+                            %%% Piano Music Voice [measure 22] %%%
                             b''8 [
+                            
                             f'''8
+                            
                             bf''8
+                            
                             f'8 ~ ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             f'8 [
+                            
                             g''8
+                            
                             ef''8
+                            
                             f'8 ]
                         }
                         \times 4/7 {
+                            
                             fs''8 [
+                            
                             g''8
+                            
                             e'''8
+                            
                             b''8
+                            
                             g''8
+                            
                             cs'''8
+                            
                             ef'''8 ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            % measure 23
+                            
+                            %%% Piano Music Voice [measure 23] %%%
                             ef'''8 [
+                            
                             af'8
+                            
                             bf'8
+                            
                             fs'8 ~ ]
                         }
                         {
+                            
                             fs'4
                         }
                         {
-                            % measure 24
+                            
+                            %%% Piano Music Voice [measure 24] %%%
                             f'4
+                            
                             bf''4 ~
                         }
                         \times 2/3 {
+                            
                             bf''8 [
+                            
                             b''8
+                            
                             g''8 ~ ]
                         }
                         \times 2/3 {
+                            
                             g''8 [
+                            
                             c''8
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1951,7 +2476,8 @@
                                 ^ \markup { @ }
                         }
                         \times 4/7 {
-                            % measure 25
+                            
+                            %%% Piano Music Voice [measure 25] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1960,124 +2486,195 @@
                             af''8 [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             d''8
+                            
                             e'''8
+                            
                             f'''8
+                            
                             fs''8
+                            
                             c'''8
+                            
                             e'8 ]
                         }
                         \times 2/3 {
+                            
                             fs''8 [
+                            
                             g''8
+                            
                             af''8 ~ ]
                         }
                         {
-                            % measure 26
+                            
+                            %%% Piano Music Voice [measure 26] %%%
                             af''4.
                         }
                         {
+                            
                             bf''4. ~
                         }
                         \times 4/7 {
-                            % measure 27
+                            
+                            %%% Piano Music Voice [measure 27] %%%
                             bf''8 [
+                            
                             b''8
+                            
                             cs'''8
+                            
                             a''8
+                            
                             af''8
+                            
                             e'''8
+                            
                             fs''8 ~ ]
                         }
                         \times 2/3 {
+                            
                             fs''8 [
+                            
                             g''8
+                            
                             a''8 ]
                         }
                         {
+                            
                             bf'8 [
+                            
                             b'8
+                            
                             cs''8 ]
                         }
                         {
-                            % measure 28
+                            
+                            %%% Piano Music Voice [measure 28] %%%
                             c''8 [
+                            
                             af''8 ~ ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
+                            
                             af''4
+                            
                             d''4
+                            
                             e'4
                         }
                         \times 2/3 {
-                            % measure 29
+                            
+                            %%% Piano Music Voice [measure 29] %%%
                             fs''4
+                            
                             cs''4
+                            
                             a''4 ~
                         }
                         {
+                            
                             a''8 [
+                            
                             fs'8
+                            
                             af''8 ~ ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/9 {
+                            
                             af''8 [
+                            
                             d'''8
+                            
                             e'''8
+                            
                             f'''8
+                            
                             af''8
+                            
                             fs''8
+                            
                             f'8
+                            
                             c''8
+                            
                             d''8 ]
                         }
                         {
-                            % measure 30
+                            
+                            %%% Piano Music Voice [measure 30] %%%
                             e'8 [
+                            
                             fs''8
+                            
                             af''8 ]
                         }
                         \times 4/5 {
+                            
                             b''8 [
+                            
                             cs'''8
+                            
                             a''8
+                            
                             bf''8
+                            
                             fs''8 ~ ]
                         }
                         {
+                            
                             fs''4
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/4 {
+                            
                             af'4
+                            
                             cs''4 ~
                         }
                         \times 4/7 {
-                            % measure 31
+                            
+                            %%% Piano Music Voice [measure 31] %%%
                             cs''8 [
+                            
                             f'8
+                            
                             fs'8
+                            
                             c''8
+                            
                             d''8
+                            
                             a''8
+                            
                             b''8 ~ ]
                         }
                         \times 2/3 {
+                            
                             b''8 [
+                            
                             d''8
+                            
                             e'8 ]
                         }
                         {
-                            % measure 32
+                            
+                            %%% Piano Music Voice [measure 32] %%%
                             f'8 [
+                            
                             c'''8 ]
                         }
                         {
+                            
                             af''8 [
+                            
                             e'''8
+                            
                             g''8
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2088,6 +2685,7 @@
                                 ^ \markup { @ }
                         }
                         {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2099,6 +2697,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2107,30 +2706,47 @@
                             e'4
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             g''4
+                            
                             c''4 ~
                         }
                         {
-                            % measure 33
+                            
+                            %%% Piano Music Voice [measure 33] %%%
                             c''8 [
+                            
                             fs''8
+                            
                             b''8
+                            
                             fs''8 ~ ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             fs''8 [
+                            
                             af''8
+                            
                             e'''8
+                            
                             fs''8 ]
                         }
                         \times 4/7 {
+                            
                             g''8 [
+                            
                             af''8
+                            
                             f'''8
+                            
                             c''8
+                            
                             af'8
+                            
                             d''8
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2142,7 +2758,8 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            % measure 34
+                            
+                            %%% Piano Music Voice [measure 34] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2151,128 +2768,194 @@
                             e'8 [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             a''8
+                            
                             b''8
+                            
                             g''8 ~ ]
                         }
                         {
+                            
                             g''4
                         }
-                        % measure 35
+                        
+                        %%% Piano Music Voice [measure 35] %%%
                         fs''4
+                        
                         b''4
+                        
                         fs'4
+                        
                         d'''4
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
                         {
-                            % measure 36
-                            \clef "bass"
+                            
+                            %%% Piano Music Voice [measure 36] %%%
                             \override Beam.positions = #'(-5 . -5)
                             \override DynamicLineSpanner.staff-padding = #'7
                             \override TupletBracket.staff-padding = #4
+                            \clef "bass"
                             b8 [
+                            
                             g8 ]
                         }
                         {
+                            
                             a8.
                         }
                         {
+                            
                             g8 [
+                            
                             fs8 ]
                         }
                         {
+                            
                             bf8 ~
                         }
                         \times 4/7 {
+                            
                             bf16 [
+                            
                             b16
+                            
                             af16
+                            
                             a16
+                            
                             b16
+                            
                             c'16
+                            
                             cs'16 ~ ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             cs'16 [
+                            
                             d'16
+                            
                             e16
+                            
                             af16 ]
                         }
                         {
+                            
                             b16 [
+                            
                             d16
+                            
                             e16
+                            
                             a16 ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            % measure 37
+                            
+                            %%% Piano Music Voice [measure 37] %%%
                             af16 [
+                            
                             d16
+                            
                             e16
+                            
                             af16 ~ ]
                         }
                         \times 2/3 {
+                            
                             af8 [
+                            
                             ef8
+                            
                             af8 ]
                         }
                         {
+                            
                             c'8 ~
                         }
                         {
+                            
                             c'16 [
+                            
                             ef16
+                            
                             b16 ~ ]
                         }
                         {
-                            % measure 38
+                            
+                            %%% Piano Music Voice [measure 38] %%%
                             b16 [
+                            
                             af16
+                            
                             bf16
+                            
                             e'16 ]
                         }
                         \times 2/3 {
+                            
                             cs'16 [
+                            
                             fs'16
+                            
                             af16 ]
                         }
                         \times 4/5 {
+                            
                             bf16 [
+                            
                             af16
+                            
                             bf16
+                            
                             g16
+                            
                             d'16 ~ ]
                         }
                         {
+                            
                             d'8.
                         }
                         {
+                            
                             b8. ~
                         }
                         \times 2/3 {
-                            % measure 39
+                            
+                            %%% Piano Music Voice [measure 39] %%%
                             b16 [
+                            
                             fs'16
+                            
                             cs'16 ~ ]
                         }
                         \times 4/5 {
+                            
                             cs'16 [
+                            
                             c'16
+                            
                             d'16
+                            
                             e'16
+                            
                             g16 ]
                         }
                         {
+                            
                             cs'16 [
+                            
                             b16
+                            
                             d'16 ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/9 {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2281,6 +2964,7 @@
                             fs'16 [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2289,40 +2973,62 @@
                             fs'16
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             af'16
+                            
                             bf16
+                            
                             g'16
+                            
                             d'16
+                            
                             bf16
+                            
                             fs'16
+                            
                             bf'16 ~ ]
                         }
                         \times 2/3 {
-                            % measure 40
+                            
+                            %%% Piano Music Voice [measure 40] %%%
                             bf'8 [
+                            
                             a'8
+                            
                             ef'8 ]
                         }
                         {
+                            
                             fs'8. ~
                         }
                         {
+                            
                             fs'16 [
+                            
                             d'16
+                            
                             ef'16
+                            
                             c'16 ~ ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             c'16 [
+                            
                             d'16
+                            
                             af'16
+                            
                             bf'16 ]
                         }
                         {
-                            % measure 41
+                            
+                            %%% Piano Music Voice [measure 41] %%%
                             e'16 [
+                            
                             g'16
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2333,6 +3039,7 @@
                                 ^ \markup { @ }
                         }
                         \times 4/5 {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2341,102 +3048,158 @@
                             af'16 [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             a'16
+                            
                             bf'16
+                            
                             ef'16
+                            
                             b16 ~ ]
                         }
                         {
+                            
                             b8
                         }
                         {
+                            
                             a'8 [
+                            
                             cs'8 ~ ]
                         }
                         {
+                            
                             cs'16 [
+                            
                             af'16
+                            
                             c'16 ~ ]
                         }
                         \times 4/5 {
-                            % measure 42
+                            
+                            %%% Piano Music Voice [measure 42] %%%
                             \clef "treble"
                             c'16 [
+                            
                             d'16
+                            
                             e'16
+                            
                             g'16
+                            
                             fs'16 ]
                         }
                         {
+                            
                             af'16 [
+                            
                             g'16 ]
                         }
                         {
+                            
                             d''16 [
+                            
                             fs'16
+                            
                             a'16
+                            
                             bf'16 ~ ]
                         }
                         {
+                            
                             bf'8.
                         }
                         \times 2/3 {
+                            
                             b'8 [
+                            
                             c''8
+                            
                             fs'8 ~ ]
                         }
                         {
+                            
                             fs'16 [
+                            
                             bf'16 ~ ]
                         }
                         {
+                            
                             bf'16 [
+                            
                             g'16
+                            
                             d''16
+                            
                             c''16 ]
                         }
                         {
+                            
                             fs''16 [
+                            
                             d''16
+                            
                             fs''16 ]
                         }
                         \times 4/5 {
+                            
                             a'16 [
+                            
                             fs'16
+                            
                             af'16
+                            
                             a'16
+                            
                             af'16 ~ ]
                         }
                         {
+                            
                             af'8
                         }
                         {
-                            % measure 43
+                            
+                            %%% Piano Music Voice [measure 43] %%%
                             a'8 ~
                         }
                         \times 4/7 {
+                            
                             a'16 [
+                            
                             bf'16
+                            
                             ef''16
+                            
                             b'16
+                            
                             d''16
+                            
                             bf'16
+                            
                             g'16 ~ ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             g'16 [
+                            
                             af''16
+                            
                             c''16
+                            
                             b'16 ]
                         }
                         {
+                            
                             af''16 [
+                            
                             d''16
+                            
                             bf'16 ]
                         }
                         {
-                            % measure 44
+                            
+                            %%% Piano Music Voice [measure 44] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2445,6 +3208,7 @@
                             fs''16 [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2453,34 +3217,48 @@
                             fs''16
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             g''16
+                            
                             bf''16 ~ ]
                         }
                         {
+                            
                             bf''8.
                         }
                         \times 2/3 {
+                            
                             cs''8 [
+                            
                             bf''8
+                            
                             b''8 ~ ]
                         }
                         {
+                            
                             b''16 [
+                            
                             af''16 ~ ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             af''16 [
+                            
                             ef''16
+                            
                             c''16
+                            
                             fs''16 ]
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
-                        % measure 45
+                        
+                        %%% Piano Music Voice [measure 45] %%%
                         R1 * 113/8
-                        % measure 58
+                        
+                        %%% Piano Music Voice [measure 58] %%%
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -2499,6 +3277,7 @@
                                     \box
                                         "to piano"
                                 }
+                        
                         \ottava #-1
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
@@ -2516,12 +3295,17 @@
                                             \flat
                                         }
                                 }
+                        
                         r8
+                        
                         r4.
-                        % measure 59
+                        
+                        %%% Piano Music Voice [measure 59] %%%
                         r1
-                        % measure 60
+                        
+                        %%% Piano Music Voice [measure 60] %%%
                         r4
+                        
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
                         \once \override Arpeggio.X-offset = #-2
@@ -2538,9 +3322,12 @@
                                             \flat
                                         }
                                 }
+                        
                         r8.
-                        % measure 61
+                        
+                        %%% Piano Music Voice [measure 61] %%%
                         r16
+                        
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
                         \once \override Arpeggio.X-offset = #-2
@@ -2557,10 +3344,14 @@
                                             \flat
                                         }
                                 }
+                        
                         r8
+                        
                         r1.
-                        % measure 62
+                        
+                        %%% Piano Music Voice [measure 62] %%%
                         r16
+                        
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
                         \once \override Arpeggio.X-offset = #-2
@@ -2577,13 +3368,19 @@
                                             \flat
                                         }
                                 }
+                        
                         r8
+                        
                         r2.
-                        % measure 63
+                        
+                        %%% Piano Music Voice [measure 63] %%%
                         r2..
-                        % measure 64
+                        
+                        %%% Piano Music Voice [measure 64] %%%
                         r2
+                        
                         r8
+                        
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
                         \once \override Arpeggio.X-offset = #-2
@@ -2600,9 +3397,12 @@
                                             \flat
                                         }
                                 }
+                        
                         r8.
-                        % measure 65
+                        
+                        %%% Piano Music Voice [measure 65] %%%
                         r16
+                        
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
                         \once \override Arpeggio.X-offset = #-2
@@ -2619,10 +3419,14 @@
                                             \flat
                                         }
                                 }
+                        
                         r8
+                        
                         r1..
-                        % measure 66
+                        
+                        %%% Piano Music Voice [measure 66] %%%
                         r16
+                        
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
                         \once \override Arpeggio.X-offset = #-2
@@ -2639,12 +3443,17 @@
                                             \flat
                                         }
                                 }
+                        
                         r8
+                        
                         r2.
-                        % measure 67
+                        
+                        %%% Piano Music Voice [measure 67] %%%
                         r2.
-                        % measure 68
+                        
+                        %%% Piano Music Voice [measure 68] %%%
                         r2.
+                        
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
                         \once \override Arpeggio.X-offset = #-2
@@ -2661,9 +3470,12 @@
                                             \flat
                                         }
                                 }
+                        
                         r8.
-                        % measure 69
+                        
+                        %%% Piano Music Voice [measure 69] %%%
                         r16
+                        
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
                         \once \override Arpeggio.X-offset = #-2
@@ -2681,16 +3493,20 @@
                                         }
                                 }
                         \ottava #0
+                        
                         r8
+                        
                         r4.
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            % measure 70
-                            \clef "treble"
+                            
+                            %%% Piano Music Voice [measure 70] %%%
                             \override Beam.positions = #'(-5 . -5)
                             \override DynamicLineSpanner.staff-padding = #'7
                             \override TupletBracket.staff-padding = #4
+                            \clef "treble"
                             r16
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2699,6 +3515,7 @@
                             g''16 -\staccatissimo \fff [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2707,55 +3524,86 @@
                             g''16 -\staccatissimo
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             cs''16 -\staccatissimo ]
+                            
                             a''4 -\staccatissimo
+                            
                             g''8 -\staccatissimo
                         }
+                        
                         r2.
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            % measure 71
+                            
+                            %%% Piano Music Voice [measure 71] %%%
                             r4
+                            
                             fs''4 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            
                             r4
+                            
                             c''16 -\staccatissimo [
+                            
                             a''16 -\staccatissimo
+                            
                             f''8 -\staccatissimo
+                            
                             a''8 -\staccatissimo ]
                         }
                         \times 4/7 {
+                            
                             r16
+                            
                             af''16 -\staccatissimo [
+                            
                             f''16 -\staccatissimo
+                            
                             ef''16 -\staccatissimo ]
+                            
                             a''4 -\staccatissimo
+                            
                             b''4 -\staccatissimo
+                            
                             g''16 -\staccatissimo [
+                            
                             a''16 -\staccatissimo ]
                         }
-                        % measure 72
+                        
+                        %%% Piano Music Voice [measure 72] %%%
                         r2
                         {
-                            % measure 73
+                            
+                            %%% Piano Music Voice [measure 73] %%%
                             r8
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             r8
+                            
                             cs''4 -\staccatissimo
+                            
                             b''16 -\staccatissimo [
+                            
                             c''16 -\staccatissimo ]
                         }
+                        
                         r4
                         \times 2/3 {
-                            % measure 74
+                            
+                            %%% Piano Music Voice [measure 74] %%%
                             r16
+                            
                             af''16 -\staccatissimo [
+                            
                             fs''16 -\staccatissimo
+                            
                             g''16 -\staccatissimo ]
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2764,6 +3612,7 @@
                             a''4 -\staccatissimo
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2772,6 +3621,7 @@
                             a''4 -\staccatissimo
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2780,44 +3630,69 @@
                             a''16 -\staccatissimo [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             af''16 -\staccatissimo
+                            
                             f''8 -\staccatissimo
+                            
                             g''8 -\staccatissimo ]
                         }
                         {
-                            % measure 75
+                            
+                            %%% Piano Music Voice [measure 75] %%%
                             r8
                         }
                         {
+                            
                             r4.
                         }
+                        
                         r4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/9 {
-                            % measure 76
+                            
+                            %%% Piano Music Voice [measure 76] %%%
                             r8
+                            
                             bf''16 -\staccatissimo [
+                            
                             cs''16 -\staccatissimo
+                            
                             c'''8 -\staccatissimo
+                            
                             e''8 -\staccatissimo
+                            
                             c'''16 -\staccatissimo
+                            
                             bf''16 -\staccatissimo
+                            
                             g''16 -\staccatissimo
+                            
                             cs''16 -\staccatissimo ]
+                            
                             e''4 -\staccatissimo
+                            
                             a''8 -\staccatissimo
                         }
                         {
+                            
                             r8
+                            
                             e''16 -\staccatissimo [
+                            
                             ef''16 -\staccatissimo
+                            
                             c'''8 -\staccatissimo ]
                         }
-                        % measure 77
+                        
+                        %%% Piano Music Voice [measure 77] %%%
                         r1
+                        
                         r8
                         {
+                            
                             r8
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2826,6 +3701,7 @@
                             fs''16 -\staccatissimo [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2834,16 +3710,21 @@
                             fs''16 -\staccatissimo
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             f''16 -\staccatissimo
+                            
                             fs''16 -\staccatissimo ]
                         }
                         {
+                            
                             r8
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            % measure 78
+                            
+                            %%% Piano Music Voice [measure 78] %%%
                             r8
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2852,6 +3733,7 @@
                             c'''4 -\staccatissimo
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2860,6 +3742,7 @@
                             c'''16 -\staccatissimo [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2868,137 +3751,215 @@
                             c'''16 -\staccatissimo
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             f''8 -\staccatissimo
+                            
                             af''8 -\staccatissimo ]
+                            
                             e''4 -\staccatissimo
                         }
-                        % measure 79
+                        
+                        %%% Piano Music Voice [measure 79] %%%
                         r4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            
                             r8
+                            
                             af''4 -\staccatissimo
+                            
                             bf''16 -\staccatissimo [
+                            
                             g''16 -\staccatissimo
+                            
                             fs'''8 -\staccatissimo ]
                         }
                         {
-                            % measure 80
+                            
+                            %%% Piano Music Voice [measure 80] %%%
                             r8
+                            
                             cs'''16 -\staccatissimo [
+                            
                             c'''16 -\staccatissimo
+                            
                             f''16 -\staccatissimo
+                            
                             g''16 -\staccatissimo ]
+                            
                             a''4 -\staccatissimo
+                            
                             g''4 -\staccatissimo
+                            
                             e''16 -\staccatissimo [
+                            
                             c'''16 -\staccatissimo
+                            
                             a''8 -\staccatissimo ]
                         }
-                        % measure 81
+                        
+                        %%% Piano Music Voice [measure 81] %%%
                         r4.
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             r8
+                            
                             f''4 -\staccatissimo
+                            
                             fs'''4 -\staccatissimo
+                            
                             f''16 -\staccatissimo [
+                            
                             a''16 -\staccatissimo
+                            
                             af''8 -\staccatissimo
+                            
                             a''8 -\staccatissimo ]
                         }
                         {
-                            % measure 82
+                            
+                            %%% Piano Music Voice [measure 82] %%%
                             r16
+                            
                             e'''16 -\staccatissimo [
+                            
                             f''16 -\staccatissimo
+                            
                             c'''16 -\staccatissimo
+                            
                             g'''8 -\staccatissimo ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            
                             r8
+                            
                             fs'''4 -\staccatissimo
+                            
                             ef'''16 -\staccatissimo [
+                            
                             f'''16 -\staccatissimo
+                            
                             e'''8 -\staccatissimo ]
                         }
+                        
                         r4.
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
-                            % measure 83
+                            
+                            %%% Piano Music Voice [measure 83] %%%
                             r4
+                            
                             a''4 -\staccatissimo
+                            
                             g'''4 -\staccatissimo
                         }
                         {
-                            % measure 84
+                            
+                            %%% Piano Music Voice [measure 84] %%%
                             r16
+                            
                             a''16 -\staccatissimo
                         }
+                        
                         r4.
                         {
+                            
                             r16
+                            
                             g'''16 -\staccatissimo [
+                            
                             af'''8 -\staccatissimo ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            % measure 85
+                            
+                            %%% Piano Music Voice [measure 85] %%%
                             \clef "treble"
                             r16
+                            
                             bf''16 -\staccatissimo [
+                            
                             g'''16 -\staccatissimo
+                            
                             fs'''16 -\staccatissimo ]
+                            
                             cs'''4 -\staccatissimo
+                            
                             c'''8 -\staccatissimo
                         }
                         {
+                            
                             r8
+                            
                             b''16 -\staccatissimo [
+                            
                             fs'''16 -\staccatissimo
+                            
                             f'''8 -\staccatissimo ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            % measure 86
+                            
+                            %%% Piano Music Voice [measure 86] %%%
                             r8
+                            
                             g'''2 -\staccatissimo
+                            
                             a'''4 -\staccatissimo
                         }
                         {
+                            
                             r4
                         }
                         {
-                            % measure 87
+                            
+                            %%% Piano Music Voice [measure 87] %%%
                             r16
+                            
                             af'''16 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/9 {
+                            
                             r8
+                            
                             b''8 -\staccatissimo [
+                            
                             bf'''16 -\staccatissimo
+                            
                             g'''16 -\staccatissimo
+                            
                             fs'''16 -\staccatissimo
+                            
                             cs'''16 -\staccatissimo ]
+                            
                             c'''4 -\staccatissimo
+                            
                             a'''4 -\staccatissimo
+                            
                             f'''16 -\staccatissimo [
+                            
                             e'''16 -\staccatissimo ]
                         }
                         {
-                            % measure 88
+                            
+                            %%% Piano Music Voice [measure 88] %%%
                             r8
+                            
                             ef'''8 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             r2
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
+                            
                             r4
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3007,6 +3968,7 @@
                             c'''4 -\staccatissimo
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3015,13 +3977,17 @@
                             c'''16 -\staccatissimo [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             b'''16 -\staccatissimo
+                            
                             bf'''8 -\staccatissimo
+                            
                             g'''8 -\staccatissimo ]
                             \bar "|"
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
+                            
                         }
                     }
                 }
@@ -3030,7 +3996,8 @@
                     \context PercussionMusicVoice = "Percussion Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            % measure 14
+                            
+                            %%% Percussion Music Voice [measure 14] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
@@ -3055,136 +4022,193 @@
                                                 \box
                                                     sponges
                                     }
+                            
                             c'2 -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            % measure 15
+                            
+                            %%% Percussion Music Voice [measure 15] %%%
                             c'2 \repeatTie
+                            
                             c'2 -\accent
+                            
                             c'4 -\accent
                         }
                         {
-                            % measure 16
+                            
+                            %%% Percussion Music Voice [measure 16] %%%
                             c'2. \repeatTie
+                            
                             c'4. -\accent
                         }
-                        % measure 17
+                        
+                        %%% Percussion Music Voice [measure 17] %%%
                         R1 * 175/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            % measure 36
+                            
+                            %%% Percussion Music Voice [measure 36] %%%
                             c'2
+                            
                             c'1
+                            
                             c'2
+                            
                             c'2
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            % measure 37
+                            
+                            %%% Percussion Music Voice [measure 37] %%%
                             c'2 \repeatTie
+                            
                             c'2
+                            
                             c'4
                         }
                         {
-                            % measure 38
+                            
+                            %%% Percussion Music Voice [measure 38] %%%
                             c'2. \repeatTie
+                            
                             c'4
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
-                            % measure 39
+                            
+                            %%% Percussion Music Voice [measure 39] %%%
                             c'4 \repeatTie
+                            
                             c'2.
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/11 {
-                            % measure 40
+                            
+                            %%% Percussion Music Voice [measure 40] %%%
                             c'4 \repeatTie
+                            
                             c'2
+                            
                             c'2
+                            
                             c'8 \repeatTie
                         }
                         {
-                            % measure 41
+                            
+                            %%% Percussion Music Voice [measure 41] %%%
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                             c'4. \repeatTie
+                            
                             c'2
+                            
                             c'8
                         }
                         \times 2/3 {
-                            % measure 42
+                            
+                            %%% Percussion Music Voice [measure 42] %%%
                             c'2.. \repeatTie
+                            
                             c'2
+                            
                             c'1
+                            
                             c'2
+                            
                             c'8
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            % measure 43
+                            
+                            %%% Percussion Music Voice [measure 43] %%%
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                             c'2.. \repeatTie
+                            
                             c'4.
                         }
                         {
-                            % measure 44
+                            
+                            %%% Percussion Music Voice [measure 44] %%%
                             c'8 \repeatTie
+                            
                             c'2..
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/8 {
-                            % measure 45
+                            
+                            %%% Percussion Music Voice [measure 45] %%%
                             c'8 \repeatTie
+                            
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                             c'2
+                            
                             c'4.
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/13 {
-                            % measure 46
+                            
+                            %%% Percussion Music Voice [measure 46] %%%
                             c'2 \repeatTie
+                            
                             c'8 \repeatTie
+                            
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                             c'2
+                            
                             c'2
                         }
                         {
-                            % measure 47
+                            
+                            %%% Percussion Music Voice [measure 47] %%%
                             c'2 \repeatTie
+                            
                             c'2
+                            
                             c'4
                         }
                         {
-                            % measure 48
+                            
+                            %%% Percussion Music Voice [measure 48] %%%
                             c'2 \repeatTie
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            % measure 49
+                            
+                            %%% Percussion Music Voice [measure 49] %%%
                             c'4 \repeatTie
+                            
                             c'2
+                            
                             c'2
                         }
                         {
-                            % measure 50
+                            
+                            %%% Percussion Music Voice [measure 50] %%%
                             c'2 \repeatTie
+                            
                             c'4
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/17 {
-                            % measure 51
+                            
+                            %%% Percussion Music Voice [measure 51] %%%
                             c'4 \repeatTie
+                            
                             c'1
+                            
                             c'2
+                            
                             c'4.
                         }
-                        % measure 52
+                        
+                        %%% Percussion Music Voice [measure 52] %%%
                         R1 * 8
-                        % measure 58
-                        \clef "percussion"
+                        
+                        %%% Percussion Music Voice [measure 58] %%%
                         \override DynamicLineSpanner.staff-padding = #'5
+                        \clef "percussion"
                         r16
+                        
                         c'16 -\p -\tenuto
                             ^ \markup {
                                 \whiteout
@@ -3194,73 +4218,123 @@
                                             \box
                                                 tam-tam
                                 }
+                        
                         r8
+                        
                         r4.
-                        % measure 59
+                        
+                        %%% Percussion Music Voice [measure 59] %%%
                         r1
-                        % measure 60
+                        
+                        %%% Percussion Music Voice [measure 60] %%%
                         r4
+                        
                         c'16 -\p -\tenuto
+                        
                         r8.
-                        % measure 61
+                        
+                        %%% Percussion Music Voice [measure 61] %%%
                         r16
+                        
                         c'16 -\p -\tenuto
+                        
                         r8
+                        
                         r1.
-                        % measure 62
+                        
+                        %%% Percussion Music Voice [measure 62] %%%
                         r16
+                        
                         c'16 -\p -\tenuto
+                        
                         r8
+                        
                         r2.
-                        % measure 63
+                        
+                        %%% Percussion Music Voice [measure 63] %%%
                         r2..
-                        % measure 64
+                        
+                        %%% Percussion Music Voice [measure 64] %%%
                         r2
+                        
                         r8
+                        
                         c'16 -\p -\tenuto
+                        
                         r8.
-                        % measure 65
+                        
+                        %%% Percussion Music Voice [measure 65] %%%
                         r16
+                        
                         c'16 -\p -\tenuto
+                        
                         r8
+                        
                         r1..
-                        % measure 66
+                        
+                        %%% Percussion Music Voice [measure 66] %%%
                         r16
+                        
                         c'16 -\p -\tenuto
+                        
                         r8
+                        
                         r2.
-                        % measure 67
+                        
+                        %%% Percussion Music Voice [measure 67] %%%
                         r2.
-                        % measure 68
+                        
+                        %%% Percussion Music Voice [measure 68] %%%
                         r2.
+                        
                         c'16 -\p -\tenuto
+                        
                         r8.
-                        % measure 69
+                        
+                        %%% Percussion Music Voice [measure 69] %%%
                         r16
+                        
                         c'16 -\p -\tenuto
+                        
                         r8
+                        
                         r4.
-                        % measure 70
+                        
+                        %%% Percussion Music Voice [measure 70] %%%
                         r16
+                        
                         c'16 -\p -\tenuto
+                        
                         r8
+                        
                         r2..
-                        % measure 71
+                        
+                        %%% Percussion Music Voice [measure 71] %%%
                         r1
+                        
                         r4
-                        % measure 72
+                        
+                        %%% Percussion Music Voice [measure 72] %%%
                         r4
+                        
                         c'16 -\p -\tenuto
+                        
                         r8.
-                        % measure 73
+                        
+                        %%% Percussion Music Voice [measure 73] %%%
                         r16
+                        
                         c'16 -\p -\tenuto
+                        
                         r8
+                        
                         r2
                         \revert DynamicLineSpanner.staff-padding
-                        % measure 74
+                        
+                        %%% Percussion Music Voice [measure 74] %%%
                         R1 * 29/2
                         \bar "|"
+                        
                     }
                 }
             >>
@@ -3268,7 +4342,11 @@
                 \tag strings.violin
                 \context ViolinMusicStaff = "Violin Music Staff" {
                     \context ViolinMusicVoice = "Violin Music Voice" {
-                        % measure 14
+                        
+                        %%% Violin Music Voice [measure 14] %%%
+                        \override DynamicLineSpanner.staff-padding = #'3
+                        \override Beam.positions = #'(-5 . -5)
+                        \override TupletBracket.staff-padding = #4
                         \set ViolinMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -3280,14 +4358,12 @@
                                 Vn.
                             }
                         \clef "treble"
-                        \override DynamicLineSpanner.staff-padding = #'3
-                        \override Beam.positions = #'(-5 . -5)
-                        \override TupletBracket.staff-padding = #4
                         \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 15/2
                         {
-                            % measure 21
+                            
+                            %%% Violin Music Voice [measure 21] %%%
                             f''4. -\staccato \mp
                                 ^ \markup {
                                     \whiteout
@@ -3296,68 +4372,104 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             f''4 -\staccato
+                            
                             g''4 -\staccato
+                            
                             f''4 -\staccato ~
                         }
                         {
+                            
                             f''4
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 10/14 {
+                            
                             f''16 -\staccato [
+                            
                             c''16 -\staccato
+                            
                             a''16 -\staccato
+                            
                             bf''16 -\staccato
+                            
                             f''16 -\staccato
+                            
                             g''16 -\staccato
+                            
                             bf''16 -\staccato
+                            
                             c''16 -\staccato
+                            
                             af''16 -\staccato
+                            
                             a''16 -\staccato
+                            
                             g''16 -\staccato
+                            
                             cs''16 -\staccato
+                            
                             ef''16 -\staccato
+                            
                             e''16 -\staccato ~ ]
                         }
                         \times 2/3 {
-                            % measure 22
+                            
+                            %%% Violin Music Voice [measure 22] %%%
                             e''4
+                            
                             a''4 -\staccato
+                            
                             c'''4 -\staccato ~
                         }
                         {
+                            
                             c'''4
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/4 {
+                            
                             ef''4 -\staccato
+                            
                             f''4 -\staccato
                         }
                         {
-                            % measure 23
+                            
+                            %%% Violin Music Voice [measure 23] %%%
                             f''16 -\staccato [
+                            
                             fs''16 -\staccato
+                            
                             a''16 -\staccato
+                            
                             c''16 -\staccato ~ ]
                         }
                         {
+                            
                             c''4.
                         }
                         \times 2/3 {
-                            % measure 24
+                            
+                            %%% Violin Music Voice [measure 24] %%%
                             c''4 -\staccato
+                            
                             a''4 -\staccato
+                            
                             ef''4 -\staccato ~
                         }
                         {
+                            
                             ef''4
+                            
                             bf''4 -\staccato
                         }
-                        % measure 25
+                        
+                        %%% Violin Music Voice [measure 25] %%%
                         R1 * 15/2
                         {
-                            % measure 32
+                            
+                            %%% Violin Music Voice [measure 32] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3391,6 +4503,7 @@
                                     }
                         }
                         \times 2/3 {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3399,7 +4512,9 @@
                             fs''4 -\staccato
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             af''4 -\staccato
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3410,6 +4525,7 @@
                                 ^ \markup { @ }
                         }
                         {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3421,6 +4537,7 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 10/14 {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3429,32 +4546,51 @@
                             fs''16 -\staccato [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             cs''16 -\staccato
+                            
                             bf''16 -\staccato
+                            
                             b''16 -\staccato
+                            
                             fs''16 -\staccato
+                            
                             af''16 -\staccato
+                            
                             b''16 -\staccato
+                            
                             cs''16 -\staccato
+                            
                             a''16 -\staccato
+                            
                             bf''16 -\staccato
+                            
                             af''16 -\staccato
+                            
                             d''16 -\staccato
+                            
                             e''16 -\staccato
+                            
                             f''16 -\staccato ~ ]
                         }
                         \times 2/3 {
-                            % measure 33
+                            
+                            %%% Violin Music Voice [measure 33] %%%
                             f''4
+                            
                             bf''4 -\staccato
+                            
                             cs''4 -\staccato ~
                         }
                         {
+                            
                             cs''4
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/4 {
+                            
                             e''4 -\staccato
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3465,7 +4601,8 @@
                                 ^ \markup { @ }
                         }
                         {
-                            % measure 34
+                            
+                            %%% Violin Music Voice [measure 34] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3474,8 +4611,11 @@
                             fs''16 -\staccato [
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             g''16 -\staccato
+                            
                             bf'16 -\staccato
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3486,6 +4626,7 @@
                                 ^ \markup { @ }
                         }
                         {
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3496,7 +4637,8 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
-                            % measure 35
+                            
+                            %%% Violin Music Voice [measure 35] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3505,11 +4647,15 @@
                             cs''4 -\staccato
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             bf''4 -\staccato
+                            
                             e''4 -\staccato ~
                         }
                         {
+                            
                             e''4
+                            
                             b''4 -\staccato ~
                             \revert DynamicLineSpanner.staff-padding
                             \revert Beam.positions
@@ -3517,16 +4663,23 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/10 {
-                            % measure 36
+                            
+                            %%% Violin Music Voice [measure 36] %%%
                             \override Beam.positions = #'(-5 . -5)
                             \override DynamicLineSpanner.staff-padding = #'7
                             \override TupletBracket.staff-padding = #4
                             b''16 \< \f [
+                            
                             c'16 -\staccato
+                            
                             e'16 -\staccato
+                            
                             fs'16 -\staccato
+                            
                             af'16 -\staccato
+                            
                             d'16 -\staccato
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3535,6 +4688,7 @@
                             bf'16 -\staccato
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3543,77 +4697,121 @@
                             bf'16 -\staccato
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             fs'16 -\staccato
+                            
                             bf'16 -\staccato ]
                         }
                         \times 2/3 {
+                            
                             fs'4 -\staccato
+                            
                             d'4 -\staccato
+                            
                             cs'4 -\staccato
                         }
                         {
+                            
                             fs'4 -\staccato ~
                         }
                         {
+                            
                             fs'4.
                         }
                         \times 8/12 {
-                            % measure 37
+                            
+                            %%% Violin Music Voice [measure 37] %%%
                             g'16 -\staccato [
+                            
                             af'16 -\staccato
+                            
                             bf'16 -\staccato
+                            
                             fs'16 -\staccato
+                            
                             bf'16 -\staccato
+                            
                             fs'16 -\staccato
+                            
                             cs''16 -\staccato
+                            
                             b'16 -\staccato
+                            
                             fs'16 -\staccato
+                            
                             a'16 -\staccato
+                            
                             bf'16 -\staccato
+                            
                             cs'16 -\staccato ~ ]
                         }
                         {
+                            
                             cs'4 ~
                         }
                         {
-                            % measure 38
+                            
+                            %%% Violin Music Voice [measure 38] %%%
                             cs'4
                         }
                         {
+                            
                             ef'4 -\staccato
+                            
                             fs'4 -\staccato
                         }
                         {
+                            
                             ef'16 -\staccato [
+                            
                             c''16 -\staccato
+                            
                             cs'16 -\staccato
+                            
                             af'16 -\staccato ~ ]
                         }
                         \times 2/3 {
-                            % measure 39
+                            
+                            %%% Violin Music Voice [measure 39] %%%
                             af'4
+                            
                             b'4 -\staccato
+                            
                             c''4 -\staccato
                         }
                         {
+                            
                             bf'4. -\staccato ~
                         }
                         {
-                            % measure 40
+                            
+                            %%% Violin Music Voice [measure 40] %%%
                             bf'4. ~
                         }
                         \times 8/12 {
+                            
                             bf'16 [
+                            
                             fs'16 -\staccato
+                            
                             g'16 -\staccato
+                            
                             bf'16 -\staccato
+                            
                             cs''16 -\staccato
+                            
                             b'16 -\staccato
+                            
                             e'16 -\staccato
+                            
                             fs'16 -\staccato
+                            
                             af'16 -\staccato
+                            
                             bf'16 -\staccato
+                            
                             a'16 -\staccato
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3624,7 +4822,8 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
-                            % measure 41
+                            
+                            %%% Violin Music Voice [measure 41] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3633,6 +4832,7 @@
                             fs''4 -\staccato
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3641,44 +4841,67 @@
                             fs''4 -\staccato
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             cs''4 -\staccato
                         }
                         {
+                            
                             fs'4 -\staccato ~
                         }
                         {
+                            
                             fs'4 \ff
                         }
                         {
-                            % measure 42
+                            
+                            %%% Violin Music Voice [measure 42] %%%
                             af'16 -\staccato [
+                            
                             bf'16 -\staccato
+                            
                             fs'16 -\staccato
+                            
                             bf'16 -\staccato ~ ]
                         }
                         \times 2/3 {
+                            
                             bf'4
+                            
                             e''4 -\staccato
+                            
                             cs''4 -\staccato ~
                         }
                         {
+                            
                             cs''4.
                         }
                         {
+                            
                             c''4 -\staccato
+                            
                             cs''4 -\staccato
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/10 {
+                            
                             bf'16 -\staccato [
+                            
                             e''16 -\staccato
+                            
                             g''16 -\staccato
+                            
                             d''16 -\staccato
+                            
                             bf'16 -\staccato
+                            
                             fs''16 -\staccato
+                            
                             ef''16 -\staccato
+                            
                             b'16 -\staccato
+                            
                             c''16 -\staccato
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3689,7 +4912,8 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
-                            % measure 43
+                            
+                            %%% Violin Music Voice [measure 43] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3698,6 +4922,7 @@
                             cs''4
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -3706,118 +4931,186 @@
                             cs''4 -\staccato
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             fs''4 -\staccato
                         }
                         {
+                            
                             ef''4 -\staccato ~
                         }
                         {
-                            % measure 44
+                            
+                            %%% Violin Music Voice [measure 44] %%%
                             ef''4. ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 10/14 {
+                            
                             ef''16 [
+                            
                             c''16 -\staccato
+                            
                             ef''16 -\staccato
+                            
                             a''16 -\staccato
+                            
                             fs''16 -\staccato
+                            
                             ef''16 -\staccato
+                            
                             c''16 -\staccato
+                            
                             fs''16 -\staccato
+                            
                             g''16 -\staccato
+                            
                             d''16 -\staccato
+                            
                             e''16 -\staccato
+                            
                             b''16 -\staccato
+                            
                             e''16 -\staccato
+                            
                             g''16 -\staccato ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
-                            % measure 45
+                            
+                            %%% Violin Music Voice [measure 45] %%%
                             bf''4 -\staccato
+                            
                             a''4 -\staccato
+                            
                             fs''4 -\staccato
                         }
                         {
-                            % measure 46
+                            
+                            %%% Violin Music Voice [measure 46] %%%
                             bf'4 -\staccato ~
                         }
                         {
+                            
                             bf'4
+                            
                             ef''4 -\staccato
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/10 {
+                            
                             c'''16 -\staccato [
+                            
                             cs''16 -\staccato
+                            
                             ef''16 -\staccato
+                            
                             d''16 -\staccato
+                            
                             bf''16 -\staccato
+                            
                             e''16 -\staccato
+                            
                             fs''16 -\staccato
+                            
                             g''16 -\staccato
+                            
                             af''16 -\staccato
+                            
                             ef''16 -\staccato ~ ]
                         }
                         \times 2/3 {
-                            % measure 47
+                            
+                            %%% Violin Music Voice [measure 47] %%%
                             ef''4
+                            
                             c'''4 -\staccato
+                            
                             d''4 -\staccato ~
                         }
                         {
+                            
                             d''4.
                         }
                         {
+                            
                             bf''4. -\staccato
                         }
                         \times 8/12 {
-                            % measure 48
+                            
+                            %%% Violin Music Voice [measure 48] %%%
                             fs''16 -\staccato [
+                            
                             cs''16 -\staccato
+                            
                             ef''16 -\staccato
+                            
                             b'16 -\staccato
+                            
                             af''16 -\staccato
+                            
                             a''16 -\staccato
+                            
                             bf'16 -\staccato
+                            
                             c''16 -\staccato
+                            
                             b''16 -\staccato
+                            
                             fs''16 -\staccato
+                            
                             g''16 -\staccato
+                            
                             af''16 -\staccato ~ ]
                         }
                         \times 2/3 {
-                            % measure 49
+                            
+                            %%% Violin Music Voice [measure 49] %%%
                             af''4
+                            
                             b''4 -\staccato
+                            
                             cs''4 -\staccato
                         }
                         {
+                            
                             fs''4 -\staccato ~
                         }
                         {
-                            % measure 50
+                            
+                            %%% Violin Music Voice [measure 50] %%%
                             fs''4 ~
                         }
                         \times 8/12 {
+                            
                             fs''16 [
+                            
                             af''16 -\staccato
+                            
                             a''16 -\staccato
+                            
                             bf''16 -\staccato
+                            
                             fs''16 -\staccato
+                            
                             g''16 -\staccato
+                            
                             af''16 -\staccato
+                            
                             d''16 -\staccato
+                            
                             bf''16 -\staccato
+                            
                             fs''16 -\staccato
+                            
                             af''16 -\staccato
+                            
                             ef''16 -\staccato ]
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
-                        % measure 51
+                        
+                        %%% Violin Music Voice [measure 51] %%%
                         \override DynamicLineSpanner.staff-padding = #'3
                         g''4. -\downbow \f \glissando
                             ^ \markup {
@@ -3825,21 +5118,36 @@
                                     \upright
                                         "OB + full bow strokes"
                                 }
+                        
                         fs''4. -\upbow \glissando
+                        
                         a''4. -\downbow \glissando
-                        % measure 52
+                        
+                        %%% Violin Music Voice [measure 52] %%%
                         c''4 -\upbow \glissando
+                        
                         e''4 -\downbow \glissando
+                        
                         b''4 -\upbow \glissando
+                        
                         a''4 -\downbow \glissando
+                        
                         c''4 -\upbow \glissando
+                        
                         af''4 -\downbow \glissando
+                        
                         g''4 -\upbow \glissando
+                        
                         e''4 -\downbow \glissando
+                        
                         d''4 -\upbow \glissando
+                        
                         fs''4 -\downbow \glissando
+                        
                         f''4 -\upbow \glissando
+                        
                         b'4 -\downbow \glissando
+                        
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -3848,6 +5156,7 @@
                         fs''4 -\upbow
                             - \tweak color #red
                             ^ \markup { @ }
+                        
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -3856,15 +5165,25 @@
                         fs''4 -\downbow \glissando
                             - \tweak color #red
                             ^ \markup { @ }
+                        
                         f''4 -\upbow \glissando
+                        
                         b'4 -\downbow \glissando
+                        
                         fs''4 -\upbow \glissando
+                        
                         d''4 -\downbow \glissando
+                        
                         fs''4 -\upbow \glissando
+                        
                         c''4 -\downbow \glissando
+                        
                         a''4 -\upbow \glissando
+                        
                         d''4 -\downbow \glissando
+                        
                         f''4 -\upbow \glissando
+                        
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -3873,6 +5192,7 @@
                         af''4 -\downbow
                             - \tweak color #red
                             ^ \markup { @ }
+                        
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -3881,58 +5201,105 @@
                         af''4 -\upbow \glissando
                             - \tweak color #red
                             ^ \markup { @ }
+                        
                         ef''4 -\downbow \glissando
+                        
                         e''4 -\upbow \glissando
+                        
                         a'4 -\downbow \glissando
+                        
                         c''4 -\upbow \glissando
+                        
                         af'4 -\downbow \glissando
+                        
                         e''4 -\upbow \glissando
+                        
                         a'4 -\downbow \glissando
-                        % measure 58
+                        
+                        %%% Violin Music Voice [measure 58] %%%
                         f'4 -\upbow \glissando
+                        
                         d''4 -\downbow \glissando
+                        
                         e'4 -\upbow \glissando
+                        
                         bf'4 -\downbow \glissando
+                        
                         f'4 -\upbow \glissando
+                        
                         b'4 -\downbow \glissando
+                        
                         fs''4 -\upbow \glissando
+                        
                         f'4 -\downbow \glissando
+                        
                         d''4 -\upbow \glissando
+                        
                         af'4 -\downbow \glissando
+                        
                         fs'4 -\upbow \glissando
+                        
                         f'4 -\downbow \glissando
+                        
                         b'4 -\upbow \glissando
+                        
                         a'4 -\downbow \glissando
+                        
                         f'4 -\upbow \glissando
+                        
                         fs'4 -\downbow \glissando
+                        
                         g'4 -\upbow \glissando
+                        
                         c''4 -\downbow \glissando
+                        
                         bf'4 -\upbow \glissando
+                        
                         fs'4 -\downbow \glissando
+                        
                         e'4 -\upbow \glissando
+                        
                         d'4 -\downbow \glissando
+                        
                         fs'4 -\upbow \glissando
-                        % measure 64
+                        
+                        %%% Violin Music Voice [measure 64] %%%
                         c''4 -\downbow \glissando
+                        
                         bf'4 -\upbow \glissando
+                        
                         b'4 -\downbow \glissando
+                        
                         af'4 -\upbow \glissando
+                        
                         e'4 -\downbow \glissando
+                        
                         ef'4 -\upbow \glissando
+                        
                         d'4 -\downbow \glissando
+                        
                         g'4 -\upbow \glissando
+                        
                         f'4 -\downbow \glissando
+                        
                         e'4 -\upbow \glissando
+                        
                         fs'4 -\downbow \glissando
+                        
                         af'4 -\upbow \glissando
+                        
                         d'4 -\downbow \glissando
+                        
                         b'4 -\upbow \glissando
+                        
                         af'4 -\downbow \glissando
+                        
                         e'8 -\upbow
                         \revert DynamicLineSpanner.staff-padding
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            % measure 67
+                            
+                            %%% Violin Music Voice [measure 67] %%%
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #3
@@ -3942,163 +5309,260 @@
                                         \upright
                                             pizz.
                                     }
+                            
                             a''4 -\staccatissimo
+                            
                             e''8 -\staccatissimo ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             e''8
+                            
                             ef''4. -\staccatissimo ~
                         }
                         {
-                            % measure 68
+                            
+                            %%% Violin Music Voice [measure 68] %%%
                             ef''8
+                            
                             g''4 -\staccatissimo
+                            
                             c''4 -\staccatissimo
+                            
                             ef''8 -\staccatissimo
                         }
+                        
                         r4
-                        % measure 69
+                        
+                        %%% Violin Music Voice [measure 69] %%%
                         r8
+                        
                         r2
                         {
-                            % measure 70
+                            
+                            %%% Violin Music Voice [measure 70] %%%
                             r16
+                            
                             bf''16 -\staccatissimo [
+                            
                             c''16 -\staccatissimo
+                            
                             af''16 -\staccatissimo
+                            
                             f''8 -\staccatissimo ]
                         }
                         {
+                            
                             r8
+                            
                             bf''4 -\staccatissimo
+                            
                             a''16 -\staccatissimo [
+                            
                             c''16 -\staccatissimo
+                            
                             b''8 -\staccatissimo
+                            
                             g''8 -\staccatissimo ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            % measure 71
+                            
+                            %%% Violin Music Voice [measure 71] %%%
                             r2
+                            
                             cs''8 -\staccatissimo
                         }
+                        
                         r4.
                         {
+                            
                             r8
+                            
                             c'''16 -\staccatissimo [
+                            
                             a''16 -\staccatissimo
+                            
                             cs''16 -\staccatissimo
+                            
                             g''16 -\staccatissimo
+                            
                             fs''8 -\staccatissimo ]
                         }
                         \times 4/5 {
-                            % measure 72
+                            
+                            %%% Violin Music Voice [measure 72] %%%
                             r8
+                            
                             fs''4 -\staccatissimo
+                            
                             e''16 -\staccatissimo [
+                            
                             c'''16 -\staccatissimo
+                            
                             fs''8 -\staccatissimo ]
                         }
-                        % measure 73
+                        
+                        %%% Violin Music Voice [measure 73] %%%
                         r8
                         {
+                            
                             r4.
                         }
                         {
+                            
                             r8
+                            
                             e''8 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            % measure 74
+                            
+                            %%% Violin Music Voice [measure 74] %%%
                             r8
+                            
                             f''4 -\staccatissimo
+                            
                             ef''16 -\staccatissimo [
+                            
                             c'''16 -\staccatissimo
+                            
                             f''8 -\staccatissimo
+                            
                             e''8 -\staccatissimo
+                            
                             fs''16 -\staccatissimo
+                            
                             g''16 -\staccatissimo
+                            
                             bf''16 -\staccatissimo
+                            
                             fs''16 -\staccatissimo ]
                         }
                         {
-                            % measure 75
+                            
+                            %%% Violin Music Voice [measure 75] %%%
                             r8
                         }
+                        
                         r4.
                         \times 2/3 {
+                            
                             r8
+                            
                             fs''8 -\staccatissimo [
+                            
                             b''8 -\staccatissimo ]
                         }
                         {
-                            % measure 76
+                            
+                            %%% Violin Music Voice [measure 76] %%%
                             r4.
+                            
                             f''4 -\staccatissimo
+                            
                             a''4 -\staccatissimo
                         }
+                        
                         r4.
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/11 {
-                            % measure 77
+                            
+                            %%% Violin Music Voice [measure 77] %%%
                             r4
+                            
                             f''4 -\staccatissimo
+                            
                             a''16 -\staccatissimo [
+                            
                             af''16 -\staccatissimo
+                            
                             cs'''8 -\staccatissimo
+                            
                             c'''8 -\staccatissimo ]
+                            
                             b''2 -\staccatissimo
                         }
                         {
+                            
                             r4
+                            
                             g'''8 -\staccatissimo
                         }
                         {
+                            
                             r8
                         }
                         \times 2/3 {
-                            % measure 78
+                            
+                            %%% Violin Music Voice [measure 78] %%%
                             r16
+                            
                             b''16 -\staccatissimo [
+                            
                             g'''8 -\staccatissimo
+                            
                             ef'''8 -\staccatissimo
+                            
                             fs'''16 -\staccatissimo
+                            
                             bf''16 -\staccatissimo
+                            
                             a''16 -\staccatissimo
+                            
                             e'''16 -\staccatissimo ]
+                            
                             a''4 -\staccatissimo
+                            
                             c'''4 -\staccatissimo
                         }
-                        % measure 79
+                        
+                        %%% Violin Music Voice [measure 79] %%%
                         r4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            
                             r8
+                            
                             fs'''2 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/11 {
-                            % measure 80
+                            
+                            %%% Violin Music Voice [measure 80] %%%
                             r4
+                            
                             b''4 -\staccatissimo
+                            
                             af'''16 -\staccatissimo [
+                            
                             fs'''16 -\staccatissimo
+                            
                             b''8 -\staccatissimo
+                            
                             bf''8 -\staccatissimo
+                            
                             fs'''16 -\staccatissimo
+                            
                             cs'''16 -\staccatissimo
+                            
                             c'''16 -\staccatissimo
+                            
                             f'''16 -\staccatissimo ]
+                            
                             ef'''4 -\staccatissimo
                         }
-                        % measure 81
+                        
+                        %%% Violin Music Voice [measure 81] %%%
                         r4.
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
+                            
                             r8
+                            
                             e'''8 -\staccatissimo
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4107,6 +5571,7 @@
                             c'''2 -\staccatissimo
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4117,64 +5582,88 @@
                                 ^ \markup { @ }
                         }
                         {
-                            % measure 82
+                            
+                            %%% Violin Music Voice [measure 82] %%%
                             r8
+                            
                             g'''4 -\staccatissimo
                         }
                         {
+                            
                             r16
+                            
                             g'''16 -\staccatissimo [
+                            
                             b''8 -\staccatissimo
+                            
                             a'''8 -\staccatissimo ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            
                             r16
+                            
                             g'''16 -\staccatissimo [
+                            
                             cs'''16 -\staccatissimo
+                            
                             b''16 -\staccatissimo ]
+                            
                             bf'''4 -\staccatissimo
+                            
                             c'''8 -\staccatissimo
                         }
-                        % measure 83
+                        
+                        %%% Violin Music Voice [measure 83] %%%
                         r2
+                        
                         r8
                         {
-                            % measure 84
+                            
+                            %%% Violin Music Voice [measure 84] %%%
                             r8
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             r4
+                            
                             e'''4 -\staccatissimo
                         }
+                        
                         r4
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
-                        % measure 85
+                        
+                        %%% Violin Music Voice [measure 85] %%%
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
-                        \clef "percussion"
                         \override RepeatTie.direction = #up
                         \override DynamicLineSpanner.staff-padding = #'3
+                        \clef "percussion"
                         c'2. \mf
                             ^ \markup {
                                 \whiteout
                                     \upright
                                         "scrape in a circle at moderate speed"
                                 }
-                        % measure 86
+                        
+                        %%% Violin Music Voice [measure 86] %%%
                         c'1 \repeatTie
-                        % measure 87
+                        
+                        %%% Violin Music Voice [measure 87] %%%
                         c'1 \repeatTie
-                        % measure 88
+                        
+                        %%% Violin Music Voice [measure 88] %%%
                         c'2. \repeatTie
+                        
                         c'2 \repeatTie
                         \bar "|"
                         \revert RepeatTie.direction
                         \revert DynamicLineSpanner.staff-padding
+                        
                     }
                 }
                 \tag strings.viola
@@ -4182,7 +5671,10 @@
                     \context ViolaMusicVoice = "Viola Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
-                            % measure 14
+                            
+                            %%% Viola Music Voice [measure 14] %%%
+                            \override DynamicLineSpanner.staff-padding = #'8
+                            \override TupletBracket.staff-padding = #5
                             \set ViolaMusicStaff.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -4194,8 +5686,6 @@
                                     Va.
                                 }
                             \clef "alto"
-                            \override DynamicLineSpanner.staff-padding = #'8
-                            \override TupletBracket.staff-padding = #5
                             \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             d4 \mf \glissando
@@ -4204,29 +5694,38 @@
                                         \upright
                                             "molto flautando"
                                     }
+                            
                             ctqs1 \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/5 {
-                            % measure 16
+                            
+                            %%% Viola Music Voice [measure 16] %%%
                             e2 \glissando
+                            
                             dqs\breve \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/5 {
-                            % measure 19
+                            
+                            %%% Viola Music Voice [measure 19] %%%
                             cqs4 \glissando
+                            
                             b,1 \glissando
                         }
                         {
-                            % measure 20
+                            
+                            %%% Viola Music Voice [measure 20] %%%
                             cqs2 \glissando
+                            
                             d\breve \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
-                            % measure 22
+                            
+                            %%% Viola Music Voice [measure 22] %%%
                             ctqs2 \glissando
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4238,7 +5737,8 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
-                            % measure 25
+                            
+                            %%% Viola Music Voice [measure 25] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4260,96 +5760,136 @@
                                                 }
                                         }
                                     }
+                            
                             dtqs1 \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/5 {
-                            % measure 27
+                            
+                            %%% Viola Music Voice [measure 27] %%%
                             f2 \glissando
+                            
                             eqs\breve \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/5 {
-                            % measure 30
+                            
+                            %%% Viola Music Voice [measure 30] %%%
                             dqs4 \glissando
+                            
                             c1 \glissando
                         }
                         {
-                            % measure 31
+                            
+                            %%% Viola Music Voice [measure 31] %%%
                             dqs2 \glissando
+                            
                             e\breve \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
-                            % measure 33
+                            
+                            %%% Viola Music Voice [measure 33] %%%
                             dtqs2 \glissando
+                            
                             f\breve \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/5 {
-                            % measure 36
+                            
+                            %%% Viola Music Voice [measure 36] %%%
                             g4 \ff \glissando
+                            
                             ftqs2. \glissando
+                            
                             a4 \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 11/10 {
-                            % measure 38
+                            
+                            %%% Viola Music Voice [measure 38] %%%
                             gqs2 \glissando
+                            
                             fqs1. \glissando
+                            
                             e2 \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/5 {
-                            % measure 41
+                            
+                            %%% Viola Music Voice [measure 41] %%%
                             fqs8 \glissando
+                            
                             g4. \glissando
+                            
                             ftqs8
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
-                        % measure 42
+                        
+                        %%% Viola Music Voice [measure 42] %%%
                         R1 * 11/2
-                        % measure 47
-                        \clef "treble"
+                        
+                        %%% Viola Music Voice [measure 47] %%%
                         \override DynamicLineSpanner.staff-padding = #'7
                         \override TupletBracket.staff-padding = #4
+                        \clef "treble"
                         r4
+                        
                         af''4. -\downbow \f \glissando
                             ^ \markup {
                                 \whiteout
                                     \upright
                                         "OB + full bow strokes"
                                 }
+                        
                         ef''4. -\upbow \glissando
+                        
                         b''4. -\downbow \glissando
+                        
                         e''4. -\upbow \glissando
-                        % measure 49
+                        
+                        %%% Viola Music Voice [measure 49] %%%
                         af''4. -\downbow \glissando
+                        
                         a''4. -\upbow \glissando
-                        % measure 50
+                        
+                        %%% Viola Music Voice [measure 50] %%%
                         f''4. -\downbow \glissando
+                        
                         b'4. -\upbow \glissando
-                        % measure 51
+                        
+                        %%% Viola Music Voice [measure 51] %%%
                         f'4. -\downbow \glissando
+                        
                         af'4. -\upbow \glissando
+                        
                         fs''4. -\downbow \glissando
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
-                            % measure 52
+                            
+                            %%% Viola Music Voice [measure 52] %%%
                             \clef "alto"
                             b'4 -\upbow \glissando
+                            
                             af'4 -\downbow \glissando
+                            
                             ef'4 -\upbow \glissando
+                            
                             bf'4 -\downbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
-                            % measure 53
+                            
+                            %%% Viola Music Voice [measure 53] %%%
                             fs'4 -\upbow \glissando
+                            
                             b'4 -\downbow \glissando
+                            
                             af'4 -\upbow \glissando
+                            
                             fs'4 -\downbow \glissando
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4361,7 +5901,8 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/9 {
-                            % measure 54
+                            
+                            %%% Viola Music Voice [measure 54] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4370,21 +5911,33 @@
                             af'4 -\downbow \glissando
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             e'4 -\upbow \glissando
+                            
                             bf'4 -\downbow \glissando
+                            
                             a'4 -\upbow \glissando
+                            
                             e'4 -\downbow \glissando
+                            
                             af'4 -\upbow \glissando
+                            
                             f'4 -\downbow \glissando
+                            
                             c'4 -\upbow \glissando
+                            
                             a'4 -\downbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/5 {
-                            % measure 55
+                            
+                            %%% Viola Music Voice [measure 55] %%%
                             e'4 -\upbow \glissando
+                            
                             af'4 -\downbow \glissando
+                            
                             bf4 -\upbow \glissando
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4393,6 +5946,7 @@
                             e'4 -\downbow
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4404,31 +5958,45 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            % measure 56
+                            
+                            %%% Viola Music Voice [measure 56] %%%
                             g'4 -\downbow \glissando
+                            
                             e'4 -\upbow \glissando
+                            
                             d'4 -\downbow \glissando
+                            
                             f4 -\upbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 11/8 {
-                            % measure 57
+                            
+                            %%% Viola Music Voice [measure 57] %%%
                             fs'4 -\downbow \glissando
+                            
                             f4 -\upbow \glissando
+                            
                             g4 -\downbow \glissando
+                            
                             bf4 -\upbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/4 {
-                            % measure 58
+                            
+                            %%% Viola Music Voice [measure 58] %%%
                             c'4 -\downbow \glissando
+                            
                             b4 -\upbow \glissando
                         }
                         {
-                            % measure 59
+                            
+                            %%% Viola Music Voice [measure 59] %%%
                             ef4 -\downbow \glissando
+                            
                             fs4 -\upbow \glissando
+                            
                             ef4 -\downbow \glissando
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4439,7 +6007,8 @@
                                 ^ \markup { @ }
                         }
                         \times 2/3 {
-                            % measure 60
+                            
+                            %%% Viola Music Voice [measure 60] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4448,47 +6017,64 @@
                             af4 -\downbow \glissando
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             e4 -\upbow \glissando
+                            
                             ef4 -\downbow
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            % measure 61
-                            \clef "treble"
+                            
+                            %%% Viola Music Voice [measure 61] %%%
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #3
+                            \clef "treble"
                             b''8 -\staccatissimo \fff
                                 ^ \markup {
                                     \whiteout
                                         \upright
                                             pizz.
                                     }
+                            
                             bf''4 -\staccatissimo
+                            
                             g''8 -\staccatissimo
                         }
+                        
                         r1
+                        
                         r8
+                        
                         r4
-                        % measure 62
+                        
+                        %%% Viola Music Voice [measure 62] %%%
                         r8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/9 {
+                            
                             fs''4 -\staccatissimo
+                            
                             f''2 -\staccatissimo
+                            
                             g''4. -\staccatissimo ~
                         }
                         \times 2/3 {
-                            % measure 63
+                            
+                            %%% Viola Music Voice [measure 63] %%%
                             g''8 [
+                            
                             a''8 -\staccatissimo
+                            
                             af''8 -\staccatissimo ~ ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             af''8
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4497,6 +6083,7 @@
                             fs''4 -\staccatissimo
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4506,35 +6093,51 @@
                                 - \tweak color #red
                                 ^ \markup { @ }
                         }
+                        
                         r4
-                        % measure 64
+                        
+                        %%% Viola Music Voice [measure 64] %%%
                         r2..
-                        % measure 65
+                        
+                        %%% Viola Music Voice [measure 65] %%%
                         r4.
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/11 {
+                            
                             bf''4. -\staccatissimo
+                            
                             f''2 -\staccatissimo
+                            
                             ef''8 -\staccatissimo
+                            
                             a''4 -\staccatissimo
+                            
                             fs''8 -\staccatissimo ~
                         }
                         {
+                            
                             fs''8
+                            
                             cs''4 -\staccatissimo
                         }
                         {
+                            
                             c'''8 -\staccatissimo
                         }
-                        % measure 66
+                        
+                        %%% Viola Music Voice [measure 66] %%%
                         r1
-                        % measure 67
+                        
+                        %%% Viola Music Voice [measure 67] %%%
                         r4.
+                        
                         r4.
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            % measure 68
+                            
+                            %%% Viola Music Voice [measure 68] %%%
                             fs''4. -\staccatissimo
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4543,6 +6146,7 @@
                             a''8 -\staccatissimo
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4551,29 +6155,41 @@
                             a''4 -\staccatissimo
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             e''4 -\staccatissimo
                         }
                         \times 2/3 {
+                            
                             f''4. -\staccatissimo ~
                         }
                         {
-                            % measure 69
+                            
+                            %%% Viola Music Voice [measure 69] %%%
                             f''8
                         }
+                        
                         r2
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            % measure 70
+                            
+                            %%% Viola Music Voice [measure 70] %%%
                             r16
+                            
                             a''16 -\staccatissimo [
+                            
                             fs''16 -\staccatissimo
+                            
                             b''16 -\staccatissimo ]
+                            
                             fs''4 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
+                            
                             r4
+                            
                             cs'''16 -\staccatissimo [
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4582,6 +6198,7 @@
                             c'''16 -\staccatissimo
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4590,159 +6207,248 @@
                             c'''8 -\staccatissimo
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             e''8 -\staccatissimo ]
+                            
                             bf''4 -\staccatissimo
                         }
-                        % measure 71
+                        
+                        %%% Viola Music Voice [measure 71] %%%
                         r4.
+                        
                         r4.
                         \times 2/3 {
+                            
                             r8
+                            
                             f''8 -\staccatissimo [
+                            
                             g''16 -\staccatissimo
+                            
                             fs''16 -\staccatissimo
+                            
                             c'''16 -\staccatissimo
+                            
                             bf''16 -\staccatissimo ]
+                            
                             fs'''4 -\staccatissimo
                         }
                         \times 4/7 {
-                            % measure 72
+                            
+                            %%% Viola Music Voice [measure 72] %%%
                             r4
+                            
                             c'''16 -\staccatissimo [
+                            
                             bf''16 -\staccatissimo
+                            
                             g''8 -\staccatissimo
+                            
                             f''8 -\staccatissimo ]
+                            
                             g''4 -\staccatissimo
                         }
                         {
-                            % measure 73
+                            
+                            %%% Viola Music Voice [measure 73] %%%
                             r8
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             r8
+                            
                             c'''4 -\staccatissimo
+                            
                             bf''8 -\staccatissimo
                         }
+                        
                         r4
-                        % measure 74
+                        
+                        %%% Viola Music Voice [measure 74] %%%
                         r2.
                         {
-                            % measure 75
+                            
+                            %%% Viola Music Voice [measure 75] %%%
                             r8
                         }
                         {
+                            
                             r16
+                            
                             c'''16 -\staccatissimo [
+                            
                             g'''8 -\staccatissimo
+                            
                             af''8 -\staccatissimo ]
                         }
                         \times 2/3 {
+                            
                             r4.
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
-                            % measure 76
+                            
+                            %%% Viola Music Voice [measure 76] %%%
                             r8
+                            
                             fs'''4 -\staccatissimo
+                            
                             c'''4 -\staccatissimo
+                            
                             f''16 -\staccatissimo [
+                            
                             c'''16 -\staccatissimo
+                            
                             g'''8 -\staccatissimo
+                            
                             fs'''8 -\staccatissimo ]
                         }
+                        
                         r4.
-                        % measure 77
+                        
+                        %%% Viola Music Voice [measure 77] %%%
                         r1
+                        
                         r8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            
                             r4
+                            
                             af'''4 -\staccatissimo
+                            
                             a''16 -\staccatissimo [
+                            
                             cs'''16 -\staccatissimo ]
                         }
                         {
+                            
                             r8
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            % measure 78
+                            
+                            %%% Viola Music Voice [measure 78] %%%
                             r8
+                            
                             f'''16 -\staccatissimo [
+                            
                             e'''16 -\staccatissimo
+                            
                             g'''16 -\staccatissimo
+                            
                             cs'''16 -\staccatissimo ]
+                            
                             ef'''4 -\staccatissimo
+                            
                             g'''4 -\staccatissimo
                         }
                         \times 2/3 {
-                            % measure 79
+                            
+                            %%% Viola Music Voice [measure 79] %%%
                             r16
+                            
                             f'''16 -\staccatissimo [
+                            
                             g'''8 -\staccatissimo
+                            
                             a'''8 -\staccatissimo ]
                         }
+                        
                         r4.
-                        % measure 80
+                        
+                        %%% Viola Music Voice [measure 80] %%%
                         r1
+                        
                         r8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            % measure 81
+                            
+                            %%% Viola Music Voice [measure 81] %%%
                             r4
+                            
                             c'''4 -\staccatissimo
+                            
                             fs'''16 -\staccatissimo [
+                            
                             cs'''16 -\staccatissimo ]
                         }
                         \times 2/3 {
+                            
                             r8
+                            
                             a'''8 -\staccatissimo
+                            
                             ef'''2 -\staccatissimo
+                            
                             g'''4 -\staccatissimo
+                            
                             f'''8 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            % measure 82
+                            
+                            %%% Viola Music Voice [measure 82] %%%
                             r8
+                            
                             af'''16 -\staccatissimo [
+                            
                             a'''16 -\staccatissimo
+                            
                             b''8 -\staccatissimo
+                            
                             fs'''8 -\staccatissimo ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             r16
+                            
                             f'''16 -\staccatissimo [
+                            
                             c'''16 -\staccatissimo
+                            
                             bf'''16 -\staccatissimo ]
+                            
                             g'''4 -\staccatissimo
                         }
+                        
                         r4.
-                        % measure 83
+                        
+                        %%% Viola Music Voice [measure 83] %%%
                         r2
+                        
                         r8
                         {
-                            % measure 84
+                            
+                            %%% Viola Music Voice [measure 84] %%%
                             r8
                         }
                         {
+                            
                             r8
+                            
                             f'''4 -\staccatissimo
                         }
                         \times 2/3 {
+                            
                             r16
+                            
                             f'''16 -\staccatissimo [
+                            
                             a'''8 -\staccatissimo
+                            
                             fs'''8 -\staccatissimo ]
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
-                        % measure 85
+                        
+                        %%% Viola Music Voice [measure 85] %%%
                         R1 * 4
                         \bar "|"
+                        
                     }
                 }
                 \tag strings.cello
@@ -4750,7 +6456,10 @@
                     \context CelloMusicVoice = "Cello Music Voice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
-                            % measure 14
+                            
+                            %%% Cello Music Voice [measure 14] %%%
+                            \override DynamicLineSpanner.staff-padding = #'8
+                            \override TupletBracket.staff-padding = #5
                             \set CelloMusicStaff.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -4762,8 +6471,6 @@
                                     Vc.
                                 }
                             \clef "bass"
-                            \override DynamicLineSpanner.staff-padding = #'8
-                            \override TupletBracket.staff-padding = #5
                             \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             e,2. \mf \glissando
@@ -4772,167 +6479,239 @@
                                         \upright
                                             "molto flautando"
                                     }
+                            
                             dqs,2 \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/5 {
-                            % measure 16
+                            
+                            %%% Cello Music Voice [measure 16] %%%
                             cqs,1. \glissando
+                            
                             b,,1 \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/5 {
-                            % measure 19
+                            
+                            %%% Cello Music Voice [measure 19] %%%
                             cqs,2. \glissando
+                            
                             d,2 \glissando
                         }
                         {
-                            % measure 20
+                            
+                            %%% Cello Music Voice [measure 20] %%%
                             ctqs,1. \glissando
+                            
                             e,1 \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
-                            % measure 22
+                            
+                            %%% Cello Music Voice [measure 22] %%%
                             dqs,1. \glissando
+                            
                             cqs,1 \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
-                            % measure 25
+                            
+                            %%% Cello Music Voice [measure 25] %%%
                             f,2. \f \glissando
                                 ^ \markup {
                                     \whiteout
                                         \upright
                                             "non flautando"
                                     }
+                            
                             eqs,2 \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/5 {
-                            % measure 27
+                            
+                            %%% Cello Music Voice [measure 27] %%%
                             dqs,1. \glissando
+                            
                             c,1 \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/5 {
-                            % measure 30
+                            
+                            %%% Cello Music Voice [measure 30] %%%
                             dqs,2. \glissando
+                            
                             e,2 \glissando
                         }
                         {
-                            % measure 31
+                            
+                            %%% Cello Music Voice [measure 31] %%%
                             dtqs,1. \glissando
+                            
                             f,1 \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
-                            % measure 33
+                            
+                            %%% Cello Music Voice [measure 33] %%%
                             eqs,1. \glissando
+                            
                             dqs,1 \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/7 {
-                            % measure 36
+                            
+                            %%% Cello Music Voice [measure 36] %%%
                             a,1 \ff \glissando
+                            
                             gqs,4 \glissando
+                            
                             fqs,2 \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 11/7 {
-                            % measure 38
+                            
+                            %%% Cello Music Voice [measure 38] %%%
                             e,1 \glissando
+                            
                             fqs,4 \glissando
+                            
                             g,2 \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
-                            % measure 41
+                            
+                            %%% Cello Music Voice [measure 41] %%%
                             ftqs,2 \glissando
+                            
                             a,8 \glissando
+                            
                             gqs,4
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
-                        % measure 42
+                        
+                        %%% Cello Music Voice [measure 42] %%%
                         R1 * 11/2
-                        % measure 47
-                        \clef "treble"
+                        
+                        %%% Cello Music Voice [measure 47] %%%
                         \override DynamicLineSpanner.staff-padding = #'8
                         \override TupletBracket.staff-padding = #5
+                        \clef "treble"
                         r4
+                        
                         e''4. -\downbow \f \glissando
                             ^ \markup {
                                 \whiteout
                                     \upright
                                         "OB + full bow strokes"
                                 }
+                        
                         d''4. -\upbow \glissando
+                        
                         f''4. -\downbow \glissando
+                        
                         fs''4. -\upbow \glissando
-                        % measure 49
+                        
+                        %%% Cello Music Voice [measure 49] %%%
                         g''4. -\downbow \glissando
+                        
                         fs''4. -\upbow \glissando
-                        % measure 50
+                        
+                        %%% Cello Music Voice [measure 50] %%%
                         c''4. -\downbow \glissando
+                        
                         bf'4. -\upbow \glissando
-                        % measure 51
+                        
+                        %%% Cello Music Voice [measure 51] %%%
                         e'4. -\downbow \glissando
+                        
                         bf'4. -\upbow \glissando
+                        
                         f'4. -\downbow \glissando
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/4 {
-                            % measure 52
+                            
+                            %%% Cello Music Voice [measure 52] %%%
                             b'4 -\upbow \glissando
+                            
                             d'4 -\downbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/8 {
-                            % measure 53
+                            
+                            %%% Cello Music Voice [measure 53] %%%
                             f'4 -\upbow \glissando
+                            
                             d'4 -\downbow \glissando
+                            
                             e'4 -\upbow \glissando
+                            
                             ef'4 -\downbow \glissando
+                            
                             f'4 -\upbow \glissando
+                            
                             ef'4 -\downbow \glissando
+                            
                             b'4 -\upbow \glissando
+                            
                             e'4 -\downbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/5 {
-                            % measure 54
+                            
+                            %%% Cello Music Voice [measure 54] %%%
                             g'4 -\upbow \glissando
+                            
                             c'4 -\downbow \glissando
+                            
                             f'4 -\upbow \glissando
+                            
                             g'4 -\downbow \glissando
+                            
                             bf4 -\upbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
-                            % measure 55
+                            
+                            %%% Cello Music Voice [measure 55] %%%
                             ef'4 -\downbow \glissando
+                            
                             b4 -\upbow \glissando
+                            
                             f'4 -\downbow \glissando
+                            
                             b4 -\upbow \glissando
+                            
                             af4 -\downbow \glissando
+                            
                             ef'4 -\upbow \glissando
+                            
                             b4 -\downbow \glissando
+                            
                             fs4 -\upbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/2 {
-                            % measure 56
+                            
+                            %%% Cello Music Voice [measure 56] %%%
                             b4 -\downbow \glissando
+                            
                             g4 -\upbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 11/14 {
-                            % measure 57
+                            
+                            %%% Cello Music Voice [measure 57] %%%
                             af4 -\downbow \glissando
+                            
                             fs4 -\upbow \glissando
+                            
                             b4 -\downbow \glissando
+                            
                             bf4 -\upbow \glissando
+                            
                             f4 -\downbow \glissando
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4941,6 +6720,7 @@
                             fs4 -\upbow
                                 - \tweak color #red
                                 ^ \markup { @ }
+                            
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -4952,288 +6732,445 @@
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/4 {
-                            % measure 58
+                            
+                            %%% Cello Music Voice [measure 58] %%%
                             \clef "bass"
                             b4 -\upbow \glissando
+                            
                             af4 -\downbow \glissando
                         }
                         \times 4/5 {
-                            % measure 59
+                            
+                            %%% Cello Music Voice [measure 59] %%%
                             b4 -\upbow \glissando
+                            
                             a4 -\downbow \glissando
+                            
                             c4 -\upbow \glissando
+                            
                             d4 -\downbow \glissando
+                            
                             e4 -\upbow \glissando
                         }
                         {
-                            % measure 60
+                            
+                            %%% Cello Music Voice [measure 60] %%%
                             g4 -\downbow \glissando
+                            
                             e4 -\upbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/9 {
-                            % measure 61
+                            
+                            %%% Cello Music Voice [measure 61] %%%
                             b,4 -\downbow \glissando
+                            
                             e4 -\upbow \glissando
+                            
                             af4 -\downbow \glissando
+                            
                             g4 -\upbow \glissando
+                            
                             c4 -\downbow \glissando
+                            
                             bf,4 -\upbow \glissando
+                            
                             fs4 -\downbow \glissando
+                            
                             f,4 -\upbow \glissando
+                            
                             e,4 -\downbow \glissando
                         }
                         {
-                            % measure 62
+                            
+                            %%% Cello Music Voice [measure 62] %%%
                             af,4 -\upbow \glissando
+                            
                             f,4 -\downbow \glissando
+                            
                             b,4 -\upbow \glissando
+                            
                             a,4 -\downbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
-                            % measure 63
+                            
+                            %%% Cello Music Voice [measure 63] %%%
                             af,4 -\upbow \glissando
+                            
                             ef,4 -\downbow \glissando
+                            
                             b,4 -\upbow \glissando
+                            
                             f,4 -\downbow \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/4 {
-                            % measure 64
+                            
+                            %%% Cello Music Voice [measure 64] %%%
                             b,4 -\upbow \glissando
+                            
                             a,4 -\downbow
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            % measure 65
-                            \clef "treble"
+                            
+                            %%% Cello Music Voice [measure 65] %%%
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #3
+                            \clef "treble"
                             cs''8 -\staccatissimo \fff
                                 ^ \markup {
                                     \whiteout
                                         \upright
                                             pizz.
                                     }
+                            
                             c''4 -\staccatissimo
+                            
                             b''8 -\staccatissimo ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/10 {
+                            
                             b''8
+                            
                             g''2 -\staccatissimo
+                            
                             e''4 -\staccatissimo
+                            
                             c''4 -\staccatissimo
+                            
                             g''8 -\staccatissimo
                         }
+                        
                         r4.
+                        
                         r8
-                        % measure 66
+                        
+                        %%% Cello Music Voice [measure 66] %%%
                         r1
                         {
-                            % measure 67
+                            
+                            %%% Cello Music Voice [measure 67] %%%
                             bf''4 -\staccatissimo
+                            
                             f''8 -\staccatissimo ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             f''8
+                            
                             c''4. -\staccatissimo ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            % measure 68
+                            
+                            %%% Cello Music Voice [measure 68] %%%
                             c''8
+                            
                             f''4 -\staccatissimo
+                            
                             af''4 -\staccatissimo
+                            
                             f''8 -\staccatissimo [
+                            
                             af''16 -\staccatissimo
+                            
                             fs''16 -\staccatissimo ]
                         }
+                        
                         r4
-                        % measure 69
+                        
+                        %%% Cello Music Voice [measure 69] %%%
                         r8
+                        
                         r2
-                        % measure 70
+                        
+                        %%% Cello Music Voice [measure 70] %%%
                         r4.
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             r8
+                            
                             b''16 -\staccatissimo [
+                            
                             g''16 -\staccatissimo
+                            
                             fs''8 -\staccatissimo
+                            
                             ef''8 -\staccatissimo ]
+                            
                             f''2 -\staccatissimo
                         }
-                        % measure 71
+                        
+                        %%% Cello Music Voice [measure 71] %%%
                         r4.
                         {
+                            
                             r16
+                            
                             e''16 -\staccatissimo [
+                            
                             ef''8 -\staccatissimo
+                            
                             g''8 -\staccatissimo ]
                         }
                         \times 4/5 {
+                            
                             r16
+                            
                             fs''16 -\staccatissimo [
+                            
                             e''16 -\staccatissimo
+                            
                             f''16 -\staccatissimo ]
+                            
                             af''4 -\staccatissimo
+                            
                             f''8 -\staccatissimo
                         }
                         \times 2/3 {
-                            % measure 72
+                            
+                            %%% Cello Music Voice [measure 72] %%%
                             r8
+                            
                             af''16 -\staccatissimo [
+                            
                             cs'''16 -\staccatissimo
+                            
                             b''8 -\staccatissimo
+                            
                             a''8 -\staccatissimo ]
+                            
                             ef''4 -\staccatissimo
                         }
                         {
-                            % measure 73
+                            
+                            %%% Cello Music Voice [measure 73] %%%
                             r8
                         }
+                        
                         r4.
                         \times 2/3 {
+                            
                             r16
+                            
                             a''16 -\staccatissimo [
+                            
                             f''8 -\staccatissimo
+                            
                             ef''8 -\staccatissimo ]
                         }
-                        % measure 74
+                        
+                        %%% Cello Music Voice [measure 74] %%%
                         r2.
                         {
-                            % measure 75
+                            
+                            %%% Cello Music Voice [measure 75] %%%
                             r16
+                            
                             cs'''16 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            
                             r8
+                            
                             b''8 -\staccatissimo
+                            
                             a''4. -\staccatissimo
                         }
                         {
+                            
                             r8
+                            
                             f''8 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/9 {
-                            % measure 76
+                            
+                            %%% Cello Music Voice [measure 76] %%%
                             r8
+                            
                             g''4 -\staccatissimo
+                            
                             ef'''16 -\staccatissimo [
+                            
                             a''16 -\staccatissimo
+                            
                             b''8 -\staccatissimo
+                            
                             fs'''8 -\staccatissimo
+                            
                             ef'''16 -\staccatissimo
+                            
                             f''16 -\staccatissimo
+                            
                             a''16 -\staccatissimo
+                            
                             af''16 -\staccatissimo
+                            
                             f''8 -\staccatissimo ]
                         }
+                        
                         r4.
                         {
-                            % measure 77
+                            
+                            %%% Cello Music Voice [measure 77] %%%
                             r8
+                            
                             fs'''8 -\staccatissimo
+                            
                             g'''2 -\staccatissimo
+                            
                             bf''4 -\staccatissimo
+                            
                             g'''8 -\staccatissimo
                         }
+                        
                         r4.
                         {
+                            
                             r16
+                            
                             c'''16 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            % measure 78
+                            
+                            %%% Cello Music Voice [measure 78] %%%
                             r16
+                            
                             bf''16 -\staccatissimo
+                            
                             a''4 -\staccatissimo
+                            
                             b''4 -\staccatissimo
+                            
                             fs'''16 -\staccatissimo [
+                            
                             f'''16 -\staccatissimo
+                            
                             ef'''8 -\staccatissimo
+                            
                             a''8 -\staccatissimo ]
                         }
                         {
-                            % measure 79
+                            
+                            %%% Cello Music Voice [measure 79] %%%
                             r4
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             r4
+                            
                             f'''4 -\staccatissimo
                         }
-                        % measure 80
+                        
+                        %%% Cello Music Voice [measure 80] %%%
                         r1
+                        
                         r8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            % measure 81
+                            
+                            %%% Cello Music Voice [measure 81] %%%
                             r4
+                            
                             b''16 -\staccatissimo [
+                            
                             bf''16 -\staccatissimo
+                            
                             g'''8 -\staccatissimo ]
                         }
+                        
                         r2.
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            % measure 82
+                            
+                            %%% Cello Music Voice [measure 82] %%%
                             r8
+                            
                             ef'''16 -\staccatissimo [
+                            
                             fs'''16 -\staccatissimo
+                            
                             cs'''8 -\staccatissimo
+                            
                             bf'''8 -\staccatissimo
+                            
                             a'''16 -\staccatissimo
+                            
                             af'''16 -\staccatissimo ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            
                             r16
+                            
                             fs'''16 -\staccatissimo
+                            
                             cs'''4 -\staccatissimo
+                            
                             c'''4 -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
+                            
                             r16
+                            
                             fs'''16 -\staccatissimo [
+                            
                             c'''8 -\staccatissimo
+                            
                             e'''8 -\staccatissimo
+                            
                             ef'''8 -\staccatissimo ]
                         }
                         {
-                            % measure 83
+                            
+                            %%% Cello Music Voice [measure 83] %%%
                             r4.
+                            
                             f'''4 -\staccatissimo
                         }
-                        % measure 84
+                        
+                        %%% Cello Music Voice [measure 84] %%%
                         r8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
+                            
                             r8
+                            
                             af'''16 -\staccatissimo [
+                            
                             fs'''16 -\staccatissimo
+                            
                             f'''8 -\staccatissimo
+                            
                             ef'''8 -\staccatissimo
+                            
                             c'''16 -\staccatissimo
+                            
                             a'''16 -\staccatissimo ]
                         }
+                        
                         r4
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
-                        % measure 85
+                        
+                        %%% Cello Music Voice [measure 85] %%%
                         R1 * 4
                         \bar "|"
+                        
                     }
                 }
             >>

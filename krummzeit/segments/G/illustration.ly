@@ -12,45 +12,45 @@
     } <<
         \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
         \context GlobalContext = "Global Context" <<
-            \context GlobalRests = "Global Rests" {
+            \context GlobalRests = "GlobalRests" {
                 
-                %%% Global Rests [measure 257] %%%
+                %%% GlobalRests [measure 257] %%%
                 R1 * 9/8
                 
-                %%% Global Rests [measure 258] %%%
+                %%% GlobalRests [measure 258] %%%
                 R1 * 5/8
                 
-                %%% Global Rests [measure 259] %%%
+                %%% GlobalRests [measure 259] %%%
                 R1 * 5/8
                 
-                %%% Global Rests [measure 260] %%%
+                %%% GlobalRests [measure 260] %%%
                 R1 * 1
                 
-                %%% Global Rests [measure 261] %%%
+                %%% GlobalRests [measure 261] %%%
                 R1 * 5/4
                 
-                %%% Global Rests [measure 262] %%%
+                %%% GlobalRests [measure 262] %%%
                 R1 * 3/4
                 
-                %%% Global Rests [measure 263] %%%
+                %%% GlobalRests [measure 263] %%%
                 R1 * 3/4
                 
-                %%% Global Rests [measure 264] %%%
+                %%% GlobalRests [measure 264] %%%
                 R1 * 3/4
                 
-                %%% Global Rests [measure 265] %%%
+                %%% GlobalRests [measure 265] %%%
                 R1 * 9/8
                 
-                %%% Global Rests [measure 266] %%%
+                %%% GlobalRests [measure 266] %%%
                 R1 * 7/8
                 
-                %%% Global Rests [measure 267] %%%
+                %%% GlobalRests [measure 267] %%%
                 R1 * 3/2
                 
-                %%% Global Rests [measure 268] %%%
+                %%% GlobalRests [measure 268] %%%
                 R1 * 7/4
                 
-                %%% Global Rests [measure 269] %%%
+                %%% GlobalRests [measure 269] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -60,37 +60,37 @@
                             #"scripts.ushortfermata"
                         }
                 
-                %%% Global Rests [measure 270] %%%
+                %%% GlobalRests [measure 270] %%%
                 R1 * 3/4
                 
-                %%% Global Rests [measure 271] %%%
+                %%% GlobalRests [measure 271] %%%
                 R1 * 7/4
                 
-                %%% Global Rests [measure 272] %%%
+                %%% GlobalRests [measure 272] %%%
                 R1 * 11/8
                 
-                %%% Global Rests [measure 273] %%%
+                %%% GlobalRests [measure 273] %%%
                 R1 * 5/8
                 
-                %%% Global Rests [measure 274] %%%
+                %%% GlobalRests [measure 274] %%%
                 R1 * 1
                 
-                %%% Global Rests [measure 275] %%%
+                %%% GlobalRests [measure 275] %%%
                 R1 * 3/2
                 
-                %%% Global Rests [measure 276] %%%
+                %%% GlobalRests [measure 276] %%%
                 R1 * 3/4
                 
-                %%% Global Rests [measure 277] %%%
+                %%% GlobalRests [measure 277] %%%
                 R1 * 1
                 
-                %%% Global Rests [measure 278] %%%
+                %%% GlobalRests [measure 278] %%%
                 R1 * 7/8
                 
-                %%% Global Rests [measure 279] %%%
+                %%% GlobalRests [measure 279] %%%
                 R1 * 7/8
                 
-                %%% Global Rests [measure 280] %%%
+                %%% GlobalRests [measure 280] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -101,9 +101,9 @@
                         }
                 
             }
-            \context GlobalSkips = "Global Skips" {
+            \context GlobalSkips = "GlobalSkips" {
                 
-                %%% Global Skips [measure 257] %%%
+                %%% GlobalSkips [measure 257] %%%
                 \time 9/8
                 \mark #7
                 s1 * 9/8 ^ \markup {
@@ -123,55 +123,55 @@
                         }
                     }
                 
-                %%% Global Skips [measure 258] %%%
+                %%% GlobalSkips [measure 258] %%%
                 \time 5/8
                 s1 * 5/8
                 
-                %%% Global Skips [measure 259] %%%
+                %%% GlobalSkips [measure 259] %%%
                 \time 5/8
                 s1 * 5/8
                 
-                %%% Global Skips [measure 260] %%%
+                %%% GlobalSkips [measure 260] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 261] %%%
+                %%% GlobalSkips [measure 261] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 262] %%%
+                %%% GlobalSkips [measure 262] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 263] %%%
+                %%% GlobalSkips [measure 263] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 264] %%%
+                %%% GlobalSkips [measure 264] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 265] %%%
+                %%% GlobalSkips [measure 265] %%%
                 \time 9/8
                 s1 * 9/8
                 
-                %%% Global Skips [measure 266] %%%
+                %%% GlobalSkips [measure 266] %%%
                 \time 7/8
                 s1 * 7/8
                 
-                %%% Global Skips [measure 267] %%%
+                %%% GlobalSkips [measure 267] %%%
                 \time 6/4
                 s1 * 3/2
                 
-                %%% Global Skips [measure 268] %%%
+                %%% GlobalSkips [measure 268] %%%
                 \time 7/4
                 s1 * 7/4
                 
-                %%% Global Skips [measure 269] %%%
+                %%% GlobalSkips [measure 269] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 270] %%%
+                %%% GlobalSkips [measure 270] %%%
                 \time 3/4
                 s1 * 3/4 ^ \markup {
                     \fontsize
@@ -190,43 +190,43 @@
                         }
                     }
                 
-                %%% Global Skips [measure 271] %%%
+                %%% GlobalSkips [measure 271] %%%
                 \time 7/4
                 s1 * 7/4
                 
-                %%% Global Skips [measure 272] %%%
+                %%% GlobalSkips [measure 272] %%%
                 \time 11/8
                 s1 * 11/8
                 
-                %%% Global Skips [measure 273] %%%
+                %%% GlobalSkips [measure 273] %%%
                 \time 5/8
                 s1 * 5/8
                 
-                %%% Global Skips [measure 274] %%%
+                %%% GlobalSkips [measure 274] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 275] %%%
+                %%% GlobalSkips [measure 275] %%%
                 \time 6/4
                 s1 * 3/2
                 
-                %%% Global Skips [measure 276] %%%
+                %%% GlobalSkips [measure 276] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 277] %%%
+                %%% GlobalSkips [measure 277] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 278] %%%
+                %%% GlobalSkips [measure 278] %%%
                 \time 7/8
                 s1 * 7/8
                 
-                %%% Global Skips [measure 279] %%%
+                %%% GlobalSkips [measure 279] %%%
                 \time 7/8
                 s1 * 7/8
                 
-                %%% Global Skips [measure 280] %%%
+                %%% GlobalSkips [measure 280] %%%
                 \time 1/4
                 s1 * 1/4
                 

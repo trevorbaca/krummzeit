@@ -11,15 +11,15 @@
     } <<
         \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
         \context GlobalContext = "Global Context" <<
-            \context GlobalRests = "Global Rests" {
+            \context GlobalRests = "GlobalRests" {
                 
-                %%% Global Rests [measure 1] %%%
+                %%% GlobalRests [measure 1] %%%
                 R1 * 1
                 
-                %%% Global Rests [measure 2] %%%
+                %%% GlobalRests [measure 2] %%%
                 R1 * 9/8
                 
-                %%% Global Rests [measure 3] %%%
+                %%% GlobalRests [measure 3] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -29,22 +29,22 @@
                             #"scripts.ushortfermata"
                         }
                 
-                %%% Global Rests [measure 4] %%%
+                %%% GlobalRests [measure 4] %%%
                 R1 * 3/4
                 
-                %%% Global Rests [measure 5] %%%
+                %%% GlobalRests [measure 5] %%%
                 R1 * 5/8
                 
-                %%% Global Rests [measure 6] %%%
+                %%% GlobalRests [measure 6] %%%
                 R1 * 9/8
                 
-                %%% Global Rests [measure 7] %%%
+                %%% GlobalRests [measure 7] %%%
                 R1 * 9/8
                 
-                %%% Global Rests [measure 8] %%%
+                %%% GlobalRests [measure 8] %%%
                 R1 * 5/8
                 
-                %%% Global Rests [measure 9] %%%
+                %%% GlobalRests [measure 9] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -54,22 +54,22 @@
                             #"scripts.ushortfermata"
                         }
                 
-                %%% Global Rests [measure 10] %%%
+                %%% GlobalRests [measure 10] %%%
                 R1 * 5/8
                 
-                %%% Global Rests [measure 11] %%%
+                %%% GlobalRests [measure 11] %%%
                 R1 * 1
                 
-                %%% Global Rests [measure 12] %%%
+                %%% GlobalRests [measure 12] %%%
                 R1 * 5/4
                 
-                %%% Global Rests [measure 13] %%%
+                %%% GlobalRests [measure 13] %%%
                 R1 * 3/4
                 
             }
-            \context GlobalSkips = "Global Skips" {
+            \context GlobalSkips = "GlobalSkips" {
                 
-                %%% Global Skips [measure 1] %%%
+                %%% GlobalSkips [measure 1] %%%
                 \time 4/4
                 s1 * 1 ^ \markup {
                     \fontsize
@@ -88,15 +88,15 @@
                         }
                     }
                 
-                %%% Global Skips [measure 2] %%%
+                %%% GlobalSkips [measure 2] %%%
                 \time 9/8
                 s1 * 9/8
                 
-                %%% Global Skips [measure 3] %%%
+                %%% GlobalSkips [measure 3] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 4] %%%
+                %%% GlobalSkips [measure 4] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -132,15 +132,15 @@
                 \time 3/4
                 s1 * 3/4 \startTextSpan
                 
-                %%% Global Skips [measure 5] %%%
+                %%% GlobalSkips [measure 5] %%%
                 \time 5/8
                 s1 * 5/8
                 
-                %%% Global Skips [measure 6] %%%
+                %%% GlobalSkips [measure 6] %%%
                 \time 9/8
                 s1 * 9/8
                 
-                %%% Global Skips [measure 7] %%%
+                %%% GlobalSkips [measure 7] %%%
                 \time 9/8
                 s1 * 9/8 \stopTextSpan ^ \markup {
                     \fontsize
@@ -159,7 +159,7 @@
                         }
                     }
                 
-                %%% Global Skips [measure 8] %%%
+                %%% GlobalSkips [measure 8] %%%
                 \time 5/8
                 s1 * 5/8 ^ \markup {
                     \fontsize
@@ -178,11 +178,11 @@
                         }
                     }
                 
-                %%% Global Skips [measure 9] %%%
+                %%% GlobalSkips [measure 9] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 10] %%%
+                %%% GlobalSkips [measure 10] %%%
                 \time 5/8
                 s1 * 5/8 ^ \markup {
                     \fontsize
@@ -201,15 +201,15 @@
                         }
                     }
                 
-                %%% Global Skips [measure 11] %%%
+                %%% GlobalSkips [measure 11] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 12] %%%
+                %%% GlobalSkips [measure 12] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 13] %%%
+                %%% GlobalSkips [measure 13] %%%
                 \time 3/4
                 s1 * 3/4
                 

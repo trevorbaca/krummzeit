@@ -3,7 +3,7 @@
 } <<
     \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
     \context GlobalContext = "Global Context" <<
-        \context GlobalRests = "Global Rests" {
+        \context GlobalRests = "GlobalRests" {
             {
                 \time 4/4
                 R1 * 1
@@ -70,7 +70,7 @@
                 R1 * 3/4
             }
         }
-        \context GlobalSkips = "Global Skips" {
+        \context GlobalSkips = "GlobalSkips" {
             {
                 \time 4/4
                 s1 * 1 ^ \markup {

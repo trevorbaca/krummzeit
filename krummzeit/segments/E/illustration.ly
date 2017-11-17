@@ -12,9 +12,9 @@
     } <<
         \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
         \context GlobalContext = "Global Context" <<
-            \context GlobalSkips = "Global Skips" {
+            \context GlobalSkips = "GlobalSkips" {
                 
-                %%% Global Skips [measure 200] %%%
+                %%% GlobalSkips [measure 200] %%%
                 \time 3/4
                 \mark #5
                 s1 * 3/4 ^ \markup {
@@ -34,35 +34,35 @@
                         }
                     }
                 
-                %%% Global Skips [measure 201] %%%
+                %%% GlobalSkips [measure 201] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 202] %%%
+                %%% GlobalSkips [measure 202] %%%
                 \time 6/4
                 s1 * 3/2
                 
-                %%% Global Skips [measure 203] %%%
+                %%% GlobalSkips [measure 203] %%%
                 \time 9/8
                 s1 * 9/8
                 
-                %%% Global Skips [measure 204] %%%
+                %%% GlobalSkips [measure 204] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 205] %%%
+                %%% GlobalSkips [measure 205] %%%
                 \time 5/8
                 s1 * 5/8
                 
-                %%% Global Skips [measure 206] %%%
+                %%% GlobalSkips [measure 206] %%%
                 \time 9/8
                 s1 * 9/8
                 
-                %%% Global Skips [measure 207] %%%
+                %%% GlobalSkips [measure 207] %%%
                 \time 9/8
                 s1 * 9/8
                 
-                %%% Global Skips [measure 208] %%%
+                %%% GlobalSkips [measure 208] %%%
                 \time 5/8
                 s1 * 5/8 ^ \markup {
                     \fontsize
@@ -81,11 +81,11 @@
                         }
                     }
                 
-                %%% Global Skips [measure 209] %%%
+                %%% GlobalSkips [measure 209] %%%
                 \time 5/8
                 s1 * 5/8
                 
-                %%% Global Skips [measure 210] %%%
+                %%% GlobalSkips [measure 210] %%%
                 \time 3/4
                 s1 * 3/4 ^ \markup {
                     \fontsize
@@ -104,19 +104,19 @@
                         }
                     }
                 
-                %%% Global Skips [measure 211] %%%
+                %%% GlobalSkips [measure 211] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 212] %%%
+                %%% GlobalSkips [measure 212] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 213] %%%
+                %%% GlobalSkips [measure 213] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 214] %%%
+                %%% GlobalSkips [measure 214] %%%
                 \time 3/4
                 s1 * 3/4 ^ \markup {
                     \fontsize
@@ -135,11 +135,11 @@
                         }
                     }
                 
-                %%% Global Skips [measure 215] %%%
+                %%% GlobalSkips [measure 215] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 216] %%%
+                %%% GlobalSkips [measure 216] %%%
                 \time 4/4
                 s1 * 1 ^ \markup {
                     \fontsize
@@ -158,7 +158,7 @@
                         }
                     }
                 
-                %%% Global Skips [measure 217] %%%
+                %%% GlobalSkips [measure 217] %%%
                 \time 11/8
                 s1 * 11/8 ^ \markup {
                     \fontsize
@@ -177,11 +177,11 @@
                         }
                     }
                 
-                %%% Global Skips [measure 218] %%%
+                %%% GlobalSkips [measure 218] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 219] %%%
+                %%% GlobalSkips [measure 219] %%%
                 \time 5/8
                 s1 * 5/8 ^ \markup {
                     \fontsize
@@ -200,23 +200,23 @@
                         }
                     }
                 
-                %%% Global Skips [measure 220] %%%
+                %%% GlobalSkips [measure 220] %%%
                 \time 9/8
                 s1 * 9/8
                 
-                %%% Global Skips [measure 221] %%%
+                %%% GlobalSkips [measure 221] %%%
                 \time 9/8
                 s1 * 9/8
                 
-                %%% Global Skips [measure 222] %%%
+                %%% GlobalSkips [measure 222] %%%
                 \time 7/8
                 s1 * 7/8
                 
-                %%% Global Skips [measure 223] %%%
+                %%% GlobalSkips [measure 223] %%%
                 \time 9/8
                 s1 * 9/8
                 
-                %%% Global Skips [measure 224] %%%
+                %%% GlobalSkips [measure 224] %%%
                 \time 3/4
                 s1 * 3/4 ^ \markup {
                     \fontsize
@@ -235,11 +235,11 @@
                         }
                     }
                 
-                %%% Global Skips [measure 225] %%%
+                %%% GlobalSkips [measure 225] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 226] %%%
+                %%% GlobalSkips [measure 226] %%%
                 \time 3/4
                 s1 * 3/4 ^ \markup {
                     \fontsize
@@ -258,27 +258,27 @@
                         }
                     }
                 
-                %%% Global Skips [measure 227] %%%
+                %%% GlobalSkips [measure 227] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 228] %%%
+                %%% GlobalSkips [measure 228] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 229] %%%
+                %%% GlobalSkips [measure 229] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 230] %%%
+                %%% GlobalSkips [measure 230] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 231] %%%
+                %%% GlobalSkips [measure 231] %%%
                 \time 9/8
                 s1 * 9/8
                 
-                %%% Global Skips [measure 232] %%%
+                %%% GlobalSkips [measure 232] %%%
                 \time 3/4
                 s1 * 3/4 ^ \markup {
                     \fontsize
@@ -297,11 +297,11 @@
                         }
                     }
                 
-                %%% Global Skips [measure 233] %%%
+                %%% GlobalSkips [measure 233] %%%
                 \time 5/8
                 s1 * 5/8
                 
-                %%% Global Skips [measure 234] %%%
+                %%% GlobalSkips [measure 234] %%%
                 \time 9/8
                 s1 * 9/8
                 

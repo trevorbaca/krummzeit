@@ -17,6 +17,7 @@
                 %%% GlobalSkips [measure 14] %%%
                 \time 3/4
                 \mark #1
+                \once \override GlobalContext.TimeSignature.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                 s1 * 3/4
                     - \markup {
                         \fontsize

@@ -307,14 +307,14 @@
                 
             }
         >>
-        \context MusicContext = "Music Context" <<
-            \context WindSectionStaffGroup = "Wind Section Staff Group" <<
+        \context MusicContext = "MusicContext" <<
+            \context WindSectionStaffGroup = "WindSectionStaffGroup" <<
                 \tag winds.oboe
-                \context OboeMusicStaff = "Oboe Music Staff" {
-                    \context OboeMusicVoice = "Oboe Music Voice" {
+                \context OboeMusicStaff = "OboeMusicStaff" {
+                    \context OboeMusicVoice = "OboeMusicVoice" {
                         \times 4/5 {
                             
-                            %%% Oboe Music Voice [measure 200] %%%
+                            %%% OboeMusicVoice [measure 200] %%%
                             \override Beam.positions = #'(-5 . -5)
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #4
@@ -450,7 +450,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
-                            %%% Oboe Music Voice [measure 201] %%%
+                            %%% OboeMusicVoice [measure 201] %%%
                             a''8 [
                                 ^ \markup {
                                     \override
@@ -529,7 +529,7 @@
                         
                         r4 \stopTrillSpan
                         
-                        %%% Oboe Music Voice [measure 202] %%%
+                        %%% OboeMusicVoice [measure 202] %%%
                         r2
                         \times 8/9 {
                             
@@ -655,7 +655,7 @@
                         }
                         \times 2/3 {
                             
-                            %%% Oboe Music Voice [measure 203] %%%
+                            %%% OboeMusicVoice [measure 203] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -771,13 +771,13 @@
                                     }
                         }
                         
-                        %%% Oboe Music Voice [measure 204] %%%
+                        %%% OboeMusicVoice [measure 204] %%%
                         r2
                         
                         r4
                         \times 8/9 {
                             
-                            %%% Oboe Music Voice [measure 205] %%%
+                            %%% OboeMusicVoice [measure 205] %%%
                             bf''16. [
                             
                             af''8
@@ -939,7 +939,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
-                            %%% Oboe Music Voice [measure 206] %%%
+                            %%% OboeMusicVoice [measure 206] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1018,7 +1018,7 @@
                         
                         r4. \stopTrillSpan
                         
-                        %%% Oboe Music Voice [measure 207] %%%
+                        %%% OboeMusicVoice [measure 207] %%%
                         r2.
                         \times 2/3 {
                             
@@ -1075,7 +1075,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
-                            %%% Oboe Music Voice [measure 208] %%%
+                            %%% OboeMusicVoice [measure 208] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1192,7 +1192,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
-                            %%% Oboe Music Voice [measure 209] %%%
+                            %%% OboeMusicVoice [measure 209] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1264,11 +1264,11 @@
                         
                         r4
                         
-                        %%% Oboe Music Voice [measure 210] %%%
+                        %%% OboeMusicVoice [measure 210] %%%
                         R1 * 3/4
                         \times 4/5 {
                             
-                            %%% Oboe Music Voice [measure 211] %%%
+                            %%% OboeMusicVoice [measure 211] %%%
                             r8
                             
                             \once \override Accidental.color = #red
@@ -1330,7 +1330,7 @@
                         }
                         {
                             
-                            %%% Oboe Music Voice [measure 212] %%%
+                            %%% OboeMusicVoice [measure 212] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1352,7 +1352,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
                             
-                            %%% Oboe Music Voice [measure 213] %%%
+                            %%% OboeMusicVoice [measure 213] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1374,7 +1374,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
-                            %%% Oboe Music Voice [measure 214] %%%
+                            %%% OboeMusicVoice [measure 214] %%%
                             a'2.
                             
                             r2
@@ -1382,7 +1382,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
-                            %%% Oboe Music Voice [measure 215] %%%
+                            %%% OboeMusicVoice [measure 215] %%%
                             r8.
                             
                             \once \override Accidental.color = #red
@@ -1428,7 +1428,7 @@
                         }
                         \times 4/5 {
                             
-                            %%% Oboe Music Voice [measure 216] %%%
+                            %%% OboeMusicVoice [measure 216] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1456,7 +1456,7 @@
                         }
                         {
                             
-                            %%% Oboe Music Voice [measure 217] %%%
+                            %%% OboeMusicVoice [measure 217] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1501,7 +1501,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
-                            %%% Oboe Music Voice [measure 218] %%%
+                            %%% OboeMusicVoice [measure 218] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1515,7 +1515,7 @@
                         }
                         {
                             
-                            %%% Oboe Music Voice [measure 219] %%%
+                            %%% OboeMusicVoice [measure 219] %%%
                             r16
                             
                             \once \override Accidental.color = #red
@@ -1578,7 +1578,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/10 {
                             
-                            %%% Oboe Music Voice [measure 220] %%%
+                            %%% OboeMusicVoice [measure 220] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -1601,11 +1601,11 @@
                             \revert TupletBracket.staff-padding
                         }
                         
-                        %%% Oboe Music Voice [measure 221] %%%
+                        %%% OboeMusicVoice [measure 221] %%%
                         R1 * 49/8
                         \times 2/3 {
                             
-                            %%% Oboe Music Voice [measure 228] %%%
+                            %%% OboeMusicVoice [measure 228] %%%
                             \override DynamicLineSpanner.staff-padding = #'4
                             \override TupletBracket.staff-padding = #2
                             a''8. \ppp \startTrillSpan
@@ -1644,7 +1644,7 @@
                         }
                         \times 2/3 {
                             
-                            %%% Oboe Music Voice [measure 229] %%%
+                            %%% OboeMusicVoice [measure 229] %%%
                             a''8. \startTrillSpan
                             
                             r16 \stopTrillSpan
@@ -1689,7 +1689,7 @@
                         }
                         \times 2/3 {
                             
-                            %%% Oboe Music Voice [measure 230] %%%
+                            %%% OboeMusicVoice [measure 230] %%%
                             a''16
                             
                             r16 \stopTrillSpan
@@ -1726,7 +1726,7 @@
                         }
                         \times 2/3 {
                             
-                            %%% Oboe Music Voice [measure 231] %%%
+                            %%% OboeMusicVoice [measure 231] %%%
                             a''16
                             
                             r16 \stopTrillSpan
@@ -1793,7 +1793,7 @@
                             
                             a''8. \startTrillSpan
                             
-                            %%% Oboe Music Voice [measure 233] %%%
+                            %%% OboeMusicVoice [measure 233] %%%
                             r16 \stopTrillSpan
                             
                             a''8 ~ \startTrillSpan
@@ -1819,17 +1819,17 @@
                             \revert TupletBracket.staff-padding
                         }
                         
-                        %%% Oboe Music Voice [measure 234] %%%
+                        %%% OboeMusicVoice [measure 234] %%%
                         R1 * 9/8 \stopTrillSpan
                         \bar "|"
                         
                     }
                 }
                 \tag winds.clarinet
-                \context ClarinetMusicStaff = "Clarinet Music Staff" {
-                    \context ClarinetMusicVoice = "Clarinet Music Voice" {
+                \context ClarinetMusicStaff = "ClarinetMusicStaff" {
+                    \context ClarinetMusicVoice = "ClarinetMusicVoice" {
                         
-                        %%% Clarinet Music Voice [measure 200] %%%
+                        %%% ClarinetMusicVoice [measure 200] %%%
                         \override Stem.direction = #up
                         \override DynamicLineSpanner.staff-padding = #'6
                         \once \override Accidental.color = #red
@@ -1884,7 +1884,7 @@
                             - \tweak color #red
                             ^ \markup { @ }
                         
-                        %%% Clarinet Music Voice [measure 208] %%%
+                        %%% ClarinetMusicVoice [measure 208] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1905,10 +1905,10 @@
                         \revert Stem.direction
                         \revert DynamicLineSpanner.staff-padding
                         
-                        %%% Clarinet Music Voice [measure 210] %%%
+                        %%% ClarinetMusicVoice [measure 210] %%%
                         R1 * 3/4
                         
-                        %%% Clarinet Music Voice [measure 211] %%%
+                        %%% ClarinetMusicVoice [measure 211] %%%
                         \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -1930,7 +1930,7 @@
                         r1
                         {
                             
-                            %%% Clarinet Music Voice [measure 212] %%%
+                            %%% ClarinetMusicVoice [measure 212] %%%
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'5
                             \override TupletBracket.staff-padding = #3
@@ -1940,7 +1940,7 @@
                         }
                         {
                             
-                            %%% Clarinet Music Voice [measure 213] %%%
+                            %%% ClarinetMusicVoice [measure 213] %%%
                             r8
                             
                             \once \override Accidental.color = #red
@@ -2003,7 +2003,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
-                            %%% Clarinet Music Voice [measure 214] %%%
+                            %%% ClarinetMusicVoice [measure 214] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2032,7 +2032,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
-                            %%% Clarinet Music Voice [measure 215] %%%
+                            %%% ClarinetMusicVoice [measure 215] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2060,7 +2060,7 @@
                         }
                         \times 4/5 {
                             
-                            %%% Clarinet Music Voice [measure 216] %%%
+                            %%% ClarinetMusicVoice [measure 216] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2075,7 +2075,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 11/20 {
                             
-                            %%% Clarinet Music Voice [measure 217] %%%
+                            %%% ClarinetMusicVoice [measure 217] %%%
                             r4.
                             
                             \once \override Accidental.color = #red
@@ -2122,7 +2122,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
-                            %%% Clarinet Music Voice [measure 218] %%%
+                            %%% ClarinetMusicVoice [measure 218] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2151,7 +2151,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 10/11 {
                             
-                            %%% Clarinet Music Voice [measure 219] %%%
+                            %%% ClarinetMusicVoice [measure 219] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2182,7 +2182,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/10 {
                             
-                            %%% Clarinet Music Voice [measure 220] %%%
+                            %%% ClarinetMusicVoice [measure 220] %%%
                             dqs'2.
                             
                             r2
@@ -2191,10 +2191,10 @@
                             \revert TupletBracket.staff-padding
                         }
                         
-                        %%% Clarinet Music Voice [measure 221] %%%
+                        %%% ClarinetMusicVoice [measure 221] %%%
                         R1 * 9/8
                         
-                        %%% Clarinet Music Voice [measure 222] %%%
+                        %%% ClarinetMusicVoice [measure 222] %%%
                         \override Stem.direction = #up
                         \override DynamicLineSpanner.staff-padding = #'7
                         \set ClarinetMusicStaff.instrumentName = \markup {
@@ -2237,10 +2237,10 @@
                         
                         r16
                         
-                        %%% Clarinet Music Voice [measure 224] %%%
+                        %%% ClarinetMusicVoice [measure 224] %%%
                         R1 * 3/2
                         
-                        %%% Clarinet Music Voice [measure 226] %%%
+                        %%% ClarinetMusicVoice [measure 226] %%%
                         c8..
                         
                         r32
@@ -2253,7 +2253,7 @@
                         
                         r32
                         
-                        %%% Clarinet Music Voice [measure 227] %%%
+                        %%% ClarinetMusicVoice [measure 227] %%%
                         c8..
                         
                         r32
@@ -2266,24 +2266,7 @@
                         
                         r32
                         
-                        %%% Clarinet Music Voice [measure 228] %%%
-                        c8..
-                        
-                        r32
-                        
-                        c8..
-                        
-                        r32
-                        
-                        c8..
-                        
-                        r32
-                        
-                        c8..
-                        
-                        r32
-                        
-                        %%% Clarinet Music Voice [measure 229] %%%
+                        %%% ClarinetMusicVoice [measure 228] %%%
                         c8..
                         
                         r32
@@ -2300,14 +2283,31 @@
                         
                         r32
                         
+                        %%% ClarinetMusicVoice [measure 229] %%%
                         c8..
                         
                         r32
                         
-                        %%% Clarinet Music Voice [measure 230] %%%
+                        c8..
+                        
+                        r32
+                        
+                        c8..
+                        
+                        r32
+                        
+                        c8..
+                        
+                        r32
+                        
+                        c8..
+                        
+                        r32
+                        
+                        %%% ClarinetMusicVoice [measure 230] %%%
                         R1 * 17/8
                         
-                        %%% Clarinet Music Voice [measure 232] %%%
+                        %%% ClarinetMusicVoice [measure 232] %%%
                         c8..
                         
                         r32
@@ -2320,7 +2320,7 @@
                         
                         r32
                         
-                        %%% Clarinet Music Voice [measure 233] %%%
+                        %%% ClarinetMusicVoice [measure 233] %%%
                         c8..
                         
                         r32
@@ -2355,12 +2355,12 @@
                     }
                 }
             >>
-            \context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
+            \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup" <<
                 \tag percussion.piano
-                \context PianoMusicStaff = "Piano Music Staff" {
-                    \context PianoMusicVoice = "Piano Music Voice" {
+                \context PianoMusicStaff = "PianoMusicStaff" {
+                    \context PianoMusicVoice = "PianoMusicVoice" {
                         
-                        %%% Piano Music Voice [measure 200] %%%
+                        %%% PianoMusicVoice [measure 200] %%%
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -2376,7 +2376,7 @@
                         \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 8
                         
-                        %%% Piano Music Voice [measure 208] %%%
+                        %%% PianoMusicVoice [measure 208] %%%
                         \override DynamicLineSpanner.staff-padding = #'4
                         \set PianoMusicStaff.instrumentName = \markup {
                             \hcenter-in
@@ -2444,7 +2444,7 @@
                         
                         r16
                         
-                        %%% Piano Music Voice [measure 209] %%%
+                        %%% PianoMusicVoice [measure 209] %%%
                         r8
                         
                         \once \override Accidental.stencil = ##f
@@ -2486,11 +2486,11 @@
                         r16
                         \revert DynamicLineSpanner.staff-padding
                         
-                        %%% Piano Music Voice [measure 210] %%%
+                        %%% PianoMusicVoice [measure 210] %%%
                         R1 * 23/4
                         \times 4/5 {
                             
-                            %%% Piano Music Voice [measure 216] %%%
+                            %%% PianoMusicVoice [measure 216] %%%
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'5
                             \override TupletBracket.staff-padding = #3
@@ -2552,11 +2552,11 @@
                             f''4 -\staccatissimo
                         }
                         
-                        %%% Piano Music Voice [measure 217] %%%
+                        %%% PianoMusicVoice [measure 217] %%%
                         R1 * 17/8
                         \times 4/5 {
                             
-                            %%% Piano Music Voice [measure 219] %%%
+                            %%% PianoMusicVoice [measure 219] %%%
                             r16
                             
                             \once \override Accidental.color = #red
@@ -2616,7 +2616,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
-                            %%% Piano Music Voice [measure 220] %%%
+                            %%% PianoMusicVoice [measure 220] %%%
                             r4
                             
                             \once \override Accidental.color = #red
@@ -2676,7 +2676,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
-                            %%% Piano Music Voice [measure 221] %%%
+                            %%% PianoMusicVoice [measure 221] %%%
                             r8
                             
                             \once \override Accidental.color = #red
@@ -2735,7 +2735,7 @@
                         }
                         {
                             
-                            %%% Piano Music Voice [measure 222] %%%
+                            %%% PianoMusicVoice [measure 222] %%%
                             r8
                             
                             \once \override Accidental.color = #red
@@ -2794,7 +2794,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
-                            %%% Piano Music Voice [measure 223] %%%
+                            %%% PianoMusicVoice [measure 223] %%%
                             r8
                             
                             \once \override Accidental.color = #red
@@ -2853,7 +2853,7 @@
                         }
                         \times 4/5 {
                             
-                            %%% Piano Music Voice [measure 224] %%%
+                            %%% PianoMusicVoice [measure 224] %%%
                             r8
                             
                             \once \override Accidental.color = #red
@@ -2911,7 +2911,7 @@
                         }
                         \times 4/5 {
                             
-                            %%% Piano Music Voice [measure 225] %%%
+                            %%% PianoMusicVoice [measure 225] %%%
                             r16
                             
                             \once \override Accidental.color = #red
@@ -2971,7 +2971,7 @@
                             \revert TupletBracket.staff-padding
                         }
                         
-                        %%% Piano Music Voice [measure 226] %%%
+                        %%% PianoMusicVoice [measure 226] %%%
                         \ottava #-1
                         \clef "bass"
                         bf,,,8.. \ppp
@@ -2986,7 +2986,7 @@
                         
                         r32
                         
-                        %%% Piano Music Voice [measure 227] %%%
+                        %%% PianoMusicVoice [measure 227] %%%
                         bf,,,8..
                         
                         r32
@@ -2999,7 +2999,7 @@
                         
                         r32
                         
-                        %%% Piano Music Voice [measure 228] %%%
+                        %%% PianoMusicVoice [measure 228] %%%
                         bf,,,8..
                         
                         r32
@@ -3017,7 +3017,7 @@
                         
                         r32
                         
-                        %%% Piano Music Voice [measure 229] %%%
+                        %%% PianoMusicVoice [measure 229] %%%
                         \override Beam.positions = #'(-4 . -4)
                         \override DynamicLineSpanner.staff-padding = #'5
                         \override TupletBracket.staff-padding = #3
@@ -3037,7 +3037,7 @@
                         }
                         {
                             
-                            %%% Piano Music Voice [measure 230] %%%
+                            %%% PianoMusicVoice [measure 230] %%%
                             e''''8 [
                             
                             \once \override Accidental.color = #red
@@ -3068,10 +3068,10 @@
                         
                         r4.
                         
-                        %%% Piano Music Voice [measure 231] %%%
+                        %%% PianoMusicVoice [measure 231] %%%
                         R1 * 9/8
                         
-                        %%% Piano Music Voice [measure 232] %%%
+                        %%% PianoMusicVoice [measure 232] %%%
                         r4.
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
@@ -3082,7 +3082,7 @@
                         }
                         {
                             
-                            %%% Piano Music Voice [measure 233] %%%
+                            %%% PianoMusicVoice [measure 233] %%%
                             e''''8
                             
                             fs''''4 -\staccatissimo
@@ -3091,7 +3091,7 @@
                             \ottava #0
                         }
                         
-                        %%% Piano Music Voice [measure 234] %%%
+                        %%% PianoMusicVoice [measure 234] %%%
                         R1 * 9/8
                         \bar "|"
                         \revert Beam.positions
@@ -3101,12 +3101,12 @@
                     }
                 }
                 \tag percussion
-                \context PercussionMusicStaff = "Percussion Staff" {
-                    \context PercussionMusicVoice = "Percussion Music Voice" {
+                \context PercussionMusicStaff = "PercussionStaff" {
+                    \context PercussionMusicVoice = "PercussionMusicVoice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             
-                            %%% Percussion Music Voice [measure 200] %%%
+                            %%% PercussionMusicVoice [measure 200] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
@@ -3147,7 +3147,7 @@
                         }
                         \times 2/3 {
                             
-                            %%% Percussion Music Voice [measure 201] %%%
+                            %%% PercussionMusicVoice [measure 201] %%%
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3171,7 +3171,7 @@
                         }
                         {
                             
-                            %%% Percussion Music Voice [measure 202] %%%
+                            %%% PercussionMusicVoice [measure 202] %%%
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3196,7 +3196,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/17 {
                             
-                            %%% Percussion Music Voice [measure 203] %%%
+                            %%% PercussionMusicVoice [measure 203] %%%
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3228,7 +3228,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
-                            %%% Percussion Music Voice [measure 204] %%%
+                            %%% PercussionMusicVoice [measure 204] %%%
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3245,7 +3245,7 @@
                         }
                         {
                             
-                            %%% Percussion Music Voice [measure 205] %%%
+                            %%% PercussionMusicVoice [measure 205] %%%
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3263,7 +3263,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/17 {
                             
-                            %%% Percussion Music Voice [measure 206] %%%
+                            %%% PercussionMusicVoice [measure 206] %%%
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3295,7 +3295,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/13 {
                             
-                            %%% Percussion Music Voice [measure 207] %%%
+                            %%% PercussionMusicVoice [measure 207] %%%
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3319,7 +3319,7 @@
                         }
                         {
                             
-                            %%% Percussion Music Voice [measure 208] %%%
+                            %%% PercussionMusicVoice [measure 208] %%%
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3337,7 +3337,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/8 {
                             
-                            %%% Percussion Music Voice [measure 209] %%%
+                            %%% PercussionMusicVoice [measure 209] %%%
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3355,7 +3355,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
-                            %%% Percussion Music Voice [measure 210] %%%
+                            %%% PercussionMusicVoice [measure 210] %%%
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3386,7 +3386,7 @@
                         }
                         {
                             
-                            %%% Percussion Music Voice [measure 211] %%%
+                            %%% PercussionMusicVoice [measure 211] %%%
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3411,7 +3411,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/9 {
                             
-                            %%% Percussion Music Voice [measure 212] %%%
+                            %%% PercussionMusicVoice [measure 212] %%%
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3436,7 +3436,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
                             
-                            %%% Percussion Music Voice [measure 213] %%%
+                            %%% PercussionMusicVoice [measure 213] %%%
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3466,12 +3466,12 @@
                             c8 :32
                         }
                         
-                        %%% Percussion Music Voice [measure 214] %%%
+                        %%% PercussionMusicVoice [measure 214] %%%
                         R1 * 3/2
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
-                            %%% Percussion Music Voice [measure 216] %%%
+                            %%% PercussionMusicVoice [measure 216] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
@@ -3542,12 +3542,12 @@
                             f'8 -\staccatissimo
                         }
                         
-                        %%% Percussion Music Voice [measure 217] %%%
+                        %%% PercussionMusicVoice [measure 217] %%%
                         R1 * 17/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
-                            %%% Percussion Music Voice [measure 219] %%%
+                            %%% PercussionMusicVoice [measure 219] %%%
                             r8
                             
                             \once \override Accidental.color = #red
@@ -3606,7 +3606,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
-                            %%% Percussion Music Voice [measure 220] %%%
+                            %%% PercussionMusicVoice [measure 220] %%%
                             r8
                             
                             \once \override Accidental.color = #red
@@ -3666,7 +3666,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
-                            %%% Percussion Music Voice [measure 221] %%%
+                            %%% PercussionMusicVoice [measure 221] %%%
                             r4
                             
                             \once \override Accidental.color = #red
@@ -3725,7 +3725,7 @@
                         }
                         \times 4/5 {
                             
-                            %%% Percussion Music Voice [measure 222] %%%
+                            %%% PercussionMusicVoice [measure 222] %%%
                             r16
                             
                             \once \override Accidental.color = #red
@@ -3785,7 +3785,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
-                            %%% Percussion Music Voice [measure 223] %%%
+                            %%% PercussionMusicVoice [measure 223] %%%
                             r4
                             
                             \once \override Accidental.color = #red
@@ -3844,7 +3844,7 @@
                         }
                         \times 4/5 {
                             
-                            %%% Percussion Music Voice [measure 224] %%%
+                            %%% PercussionMusicVoice [measure 224] %%%
                             r16
                             
                             \once \override Accidental.color = #red
@@ -3902,7 +3902,7 @@
                         }
                         \times 4/5 {
                             
-                            %%% Percussion Music Voice [measure 225] %%%
+                            %%% PercussionMusicVoice [measure 225] %%%
                             r8
                             
                             \once \override Accidental.color = #red
@@ -3959,12 +3959,12 @@
                             f'8 -\staccatissimo
                         }
                         
-                        %%% Percussion Music Voice [measure 226] %%%
+                        %%% PercussionMusicVoice [measure 226] %%%
                         R1 * 3/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             
-                            %%% Percussion Music Voice [measure 227] %%%
+                            %%% PercussionMusicVoice [measure 227] %%%
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -3981,7 +3981,7 @@
                         }
                         \times 2/3 {
                             
-                            %%% Percussion Music Voice [measure 228] %%%
+                            %%% PercussionMusicVoice [measure 228] %%%
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -4005,7 +4005,7 @@
                         }
                         {
                             
-                            %%% Percussion Music Voice [measure 229] %%%
+                            %%% PercussionMusicVoice [measure 229] %%%
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -4029,7 +4029,7 @@
                         }
                         {
                             
-                            %%% Percussion Music Voice [measure 230] %%%
+                            %%% PercussionMusicVoice [measure 230] %%%
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -4047,7 +4047,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/13 {
                             
-                            %%% Percussion Music Voice [measure 231] %%%
+                            %%% PercussionMusicVoice [measure 231] %%%
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -4071,7 +4071,7 @@
                         }
                         {
                             
-                            %%% Percussion Music Voice [measure 232] %%%
+                            %%% PercussionMusicVoice [measure 232] %%%
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -4096,7 +4096,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/8 {
                             
-                            %%% Percussion Music Voice [measure 233] %%%
+                            %%% PercussionMusicVoice [measure 233] %%%
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
@@ -4119,19 +4119,19 @@
                             c8 :32
                         }
                         
-                        %%% Percussion Music Voice [measure 234] %%%
+                        %%% PercussionMusicVoice [measure 234] %%%
                         R1 * 9/8
                         \bar "|"
                         
                     }
                 }
             >>
-            \context StringSectionStaffGroup = "String Section Staff Group" <<
+            \context StringSectionStaffGroup = "StringSectionStaffGroup" <<
                 \tag strings.violin
-                \context ViolinMusicStaff = "Violin Music Staff" {
-                    \context ViolinMusicVoice = "Violin Music Voice" {
+                \context ViolinMusicStaff = "ViolinMusicStaff" {
+                    \context ViolinMusicVoice = "ViolinMusicVoice" {
                         
-                        %%% Violin Music Voice [measure 200] %%%
+                        %%% ViolinMusicVoice [measure 200] %%%
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 5
                         \startStaff
@@ -4152,7 +4152,7 @@
                         \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 8
                         
-                        %%% Violin Music Voice [measure 208] %%%
+                        %%% ViolinMusicVoice [measure 208] %%%
                         r8
                         
                         \once \override Accidental.color = #red
@@ -4184,7 +4184,7 @@
                         
                         r16
                         
-                        %%% Violin Music Voice [measure 209] %%%
+                        %%% ViolinMusicVoice [measure 209] %%%
                         r8
                         
                         aqs8. :32
@@ -4195,12 +4195,12 @@
                         
                         r16
                         
-                        %%% Violin Music Voice [measure 210] %%%
+                        %%% ViolinMusicVoice [measure 210] %%%
                         R1 * 3/4
                         \revert DynamicLineSpanner.staff-padding
                         {
                             
-                            %%% Violin Music Voice [measure 211] %%%
+                            %%% ViolinMusicVoice [measure 211] %%%
                             \override NoteHead.style = #'harmonic
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
@@ -4222,7 +4222,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
-                            %%% Violin Music Voice [measure 212] %%%
+                            %%% ViolinMusicVoice [measure 212] %%%
                             ef''2 \glissando
                             
                             f''4. \glissando
@@ -4235,7 +4235,7 @@
                         }
                         \times 4/5 {
                             
-                            %%% Violin Music Voice [measure 213] %%%
+                            %%% ViolinMusicVoice [measure 213] %%%
                             d''8 \glissando
                             
                             fs''2
@@ -4246,7 +4246,7 @@
                         r2
                         \times 4/5 {
                             
-                            %%% Violin Music Voice [measure 214] %%%
+                            %%% ViolinMusicVoice [measure 214] %%%
                             a'8 \glissando
                             
                             c''2 \glissando
@@ -4259,7 +4259,7 @@
                         }
                         \times 2/3 {
                             
-                            %%% Violin Music Voice [measure 215] %%%
+                            %%% ViolinMusicVoice [measure 215] %%%
                             d''4 \glissando
                             
                             ef''2 \glissando
@@ -4272,7 +4272,7 @@
                         }
                         \times 4/7 {
                             
-                            %%% Violin Music Voice [measure 216] %%%
+                            %%% ViolinMusicVoice [measure 216] %%%
                             cs''4 \glissando
                             
                             d''8.
@@ -4285,7 +4285,7 @@
                         \revert TupletBracket.staff-padding
                         {
                             
-                            %%% Violin Music Voice [measure 217] %%%
+                            %%% ViolinMusicVoice [measure 217] %%%
                             fs'2 \glissando
                             
                             a'4. \glissando
@@ -4298,7 +4298,7 @@
                         }
                         \times 4/5 {
                             
-                            %%% Violin Music Voice [measure 218] %%%
+                            %%% ViolinMusicVoice [measure 218] %%%
                             af'8 \glissando
                             
                             a'2 \glissando
@@ -4311,7 +4311,7 @@
                         }
                         \times 2/3 {
                             
-                            %%% Violin Music Voice [measure 219] %%%
+                            %%% ViolinMusicVoice [measure 219] %%%
                             e'8 \glissando
                             
                             c'4 \ppp
@@ -4322,11 +4322,11 @@
                         
                         r4
                         
-                        %%% Violin Music Voice [measure 220] %%%
+                        %%% ViolinMusicVoice [measure 220] %%%
                         R1 * 29/4
                         \times 2/3 {
                             
-                            %%% Violin Music Voice [measure 228] %%%
+                            %%% ViolinMusicVoice [measure 228] %%%
                             \override DynamicLineSpanner.staff-padding = #'4
                             \override TupletBracket.staff-padding = #2
                             \pitchedTrill
@@ -4370,7 +4370,7 @@
                             r16 \stopTrillSpan
                         }
                         
-                        %%% Violin Music Voice [measure 229] %%%
+                        %%% ViolinMusicVoice [measure 229] %%%
                         R1 * 47/8
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
@@ -4379,10 +4379,10 @@
                     }
                 }
                 \tag strings.viola
-                \context ViolaMusicStaff = "Viola Music Staff" {
-                    \context ViolaMusicVoice = "Viola Music Voice" {
+                \context ViolaMusicStaff = "ViolaMusicStaff" {
+                    \context ViolaMusicVoice = "ViolaMusicVoice" {
                         
-                        %%% Viola Music Voice [measure 200] %%%
+                        %%% ViolaMusicVoice [measure 200] %%%
                         \override DynamicLineSpanner.staff-padding = #'8.5
                         \set ViolaMusicStaff.instrumentName = \markup {
                             \hcenter-in
@@ -4399,7 +4399,7 @@
                         \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 8
                         
-                        %%% Viola Music Voice [measure 208] %%%
+                        %%% ViolaMusicVoice [measure 208] %%%
                         r8
                         
                         \once \override Accidental.color = #red
@@ -4431,7 +4431,7 @@
                         
                         r16
                         
-                        %%% Viola Music Voice [measure 209] %%%
+                        %%% ViolaMusicVoice [measure 209] %%%
                         r8
                         
                         bf,8. :32
@@ -4442,11 +4442,11 @@
                         
                         r16
                         
-                        %%% Viola Music Voice [measure 210] %%%
+                        %%% ViolaMusicVoice [measure 210] %%%
                         R1 * 3/4
                         \revert DynamicLineSpanner.staff-padding
                         
-                        %%% Viola Music Voice [measure 211] %%%
+                        %%% ViolaMusicVoice [measure 211] %%%
                         \override DynamicLineSpanner.staff-padding = #'8
                         \override TupletBracket.staff-padding = #4
                         r2.
@@ -4454,7 +4454,7 @@
                         r4
                         \times 4/7 {
                             
-                            %%% Viola Music Voice [measure 212] %%%
+                            %%% ViolaMusicVoice [measure 212] %%%
                             \override NoteHead.style = #'harmonic
                             ef'2 \glissando \> \p
                                 ^ \markup {
@@ -4480,7 +4480,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
-                            %%% Viola Music Voice [measure 213] %%%
+                            %%% ViolaMusicVoice [measure 213] %%%
                             fs'2 \glissando
                             
                             e'4. \glissando
@@ -4492,13 +4492,13 @@
                             fs'2
                         }
                         
-                        %%% Viola Music Voice [measure 214] %%%
+                        %%% ViolaMusicVoice [measure 214] %%%
                         r2
                         
                         r4
                         \times 2/3 {
                             
-                            %%% Viola Music Voice [measure 215] %%%
+                            %%% ViolaMusicVoice [measure 215] %%%
                             a8 \glissando
                             
                             c'4 \glissando
@@ -4517,7 +4517,7 @@
                         }
                         {
                             
-                            %%% Viola Music Voice [measure 216] %%%
+                            %%% ViolaMusicVoice [measure 216] %%%
                             f4 \glissando
                             
                             fs2 \glissando
@@ -4531,13 +4531,13 @@
                             \revert TupletBracket.staff-padding
                         }
                         
-                        %%% Viola Music Voice [measure 217] %%%
+                        %%% ViolaMusicVoice [measure 217] %%%
                         r2..
                         
                         r2
                         \times 4/5 {
                             
-                            %%% Viola Music Voice [measure 218] %%%
+                            %%% ViolaMusicVoice [measure 218] %%%
                             fs16 \glissando
                             
                             a4 \glissando
@@ -4556,7 +4556,7 @@
                         }
                         \times 4/5 {
                             
-                            %%% Viola Music Voice [measure 219] %%%
+                            %%% ViolaMusicVoice [measure 219] %%%
                             bf16. \glissando
                             
                             ef4. \glissando
@@ -4569,10 +4569,10 @@
                             \revert NoteHead.style
                         }
                         
-                        %%% Viola Music Voice [measure 220] %%%
+                        %%% ViolaMusicVoice [measure 220] %%%
                         R1 * 9/4
                         
-                        %%% Viola Music Voice [measure 222] %%%
+                        %%% ViolaMusicVoice [measure 222] %%%
                         \override DynamicLineSpanner.staff-padding = #'6
                         fs4.. \ppp
                         
@@ -4591,10 +4591,10 @@
                         r16
                         \revert DynamicLineSpanner.staff-padding
                         
-                        %%% Viola Music Voice [measure 224] %%%
+                        %%% ViolaMusicVoice [measure 224] %%%
                         R1 * 3/2
                         
-                        %%% Viola Music Voice [measure 226] %%%
+                        %%% ViolaMusicVoice [measure 226] %%%
                         fs8..
                         
                         r32
@@ -4607,10 +4607,10 @@
                         
                         r32
                         
-                        %%% Viola Music Voice [measure 227] %%%
+                        %%% ViolaMusicVoice [measure 227] %%%
                         R1 * 41/8
                         
-                        %%% Viola Music Voice [measure 232] %%%
+                        %%% ViolaMusicVoice [measure 232] %%%
                         fs8..
                         
                         r32
@@ -4623,7 +4623,7 @@
                         
                         r32
                         
-                        %%% Viola Music Voice [measure 233] %%%
+                        %%% ViolaMusicVoice [measure 233] %%%
                         fs8..
                         
                         r32
@@ -4656,10 +4656,10 @@
                     }
                 }
                 \tag strings.cello
-                \context CelloMusicStaff = "Cello Music Staff" {
-                    \context CelloMusicVoice = "Cello Music Voice" {
+                \context CelloMusicStaff = "CelloMusicStaff" {
+                    \context CelloMusicVoice = "CelloMusicVoice" {
                         
-                        %%% Cello Music Voice [measure 200] %%%
+                        %%% CelloMusicVoice [measure 200] %%%
                         \set CelloMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -4675,7 +4675,7 @@
                         \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 8
                         
-                        %%% Cello Music Voice [measure 208] %%%
+                        %%% CelloMusicVoice [measure 208] %%%
                         \override DynamicLineSpanner.staff-padding = #'6
                         r8
                         
@@ -4708,7 +4708,7 @@
                         
                         r16
                         
-                        %%% Cello Music Voice [measure 209] %%%
+                        %%% CelloMusicVoice [measure 209] %%%
                         r8
                         
                         a,8. :32
@@ -4720,11 +4720,11 @@
                         r16
                         \revert DynamicLineSpanner.staff-padding
                         
-                        %%% Cello Music Voice [measure 210] %%%
+                        %%% CelloMusicVoice [measure 210] %%%
                         R1 * 3/4
                         \times 2/3 {
                             
-                            %%% Cello Music Voice [measure 211] %%%
+                            %%% CelloMusicVoice [measure 211] %%%
                             \override NoteHead.style = #'harmonic
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
@@ -4747,12 +4747,12 @@
                         
                         r4
                         
-                        %%% Cello Music Voice [measure 212] %%%
+                        %%% CelloMusicVoice [measure 212] %%%
                         R1 * 10
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
                         
-                        %%% Cello Music Voice [measure 222] %%%
+                        %%% CelloMusicVoice [measure 222] %%%
                         \override DynamicLineSpanner.staff-padding = #'6
                         c,4.. \ppp
                         
@@ -4771,10 +4771,10 @@
                         r16
                         \revert DynamicLineSpanner.staff-padding
                         
-                        %%% Cello Music Voice [measure 224] %%%
+                        %%% CelloMusicVoice [measure 224] %%%
                         R1 * 3/2
                         
-                        %%% Cello Music Voice [measure 226] %%%
+                        %%% CelloMusicVoice [measure 226] %%%
                         c,8..
                         
                         r32
@@ -4787,10 +4787,10 @@
                         
                         r32
                         
-                        %%% Cello Music Voice [measure 227] %%%
+                        %%% CelloMusicVoice [measure 227] %%%
                         R1 * 41/8
                         
-                        %%% Cello Music Voice [measure 232] %%%
+                        %%% CelloMusicVoice [measure 232] %%%
                         c,8..
                         
                         r32
@@ -4803,7 +4803,7 @@
                         
                         r32
                         
-                        %%% Cello Music Voice [measure 233] %%%
+                        %%% CelloMusicVoice [measure 233] %%%
                         c,8..
                         
                         r32

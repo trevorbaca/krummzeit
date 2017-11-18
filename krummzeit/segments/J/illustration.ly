@@ -232,18 +232,7 @@
                         
                         %%% OboeMusicVoice [measure 314] %%%
                         \override DynamicLineSpanner.staff-padding = #'5
-                        \set OboeMusicStaff.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Oboe
-                            }
-                        \set OboeMusicStaff.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Ob.
-                            }
                         \clef "treble"
-                        \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override OboeMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         cs'\breve.. \fff
                         

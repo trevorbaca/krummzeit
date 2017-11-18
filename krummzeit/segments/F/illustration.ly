@@ -167,18 +167,7 @@
                         \override Beam.positions = #'(-5 . -5)
                         \override TupletBracket.staff-padding = #4
                         \override DynamicLineSpanner.staff-padding = #'8
-                        \set OboeMusicStaff.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Oboe
-                            }
-                        \set OboeMusicStaff.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Ob.
-                            }
                         \clef "treble"
-                        \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override OboeMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 19/8 \ppp

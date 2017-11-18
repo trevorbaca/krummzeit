@@ -336,18 +336,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            \set OboeMusicStaff.instrumentName = \markup {
-                                \hcenter-in
-                                    #16
-                                    Oboe
-                                }
-                            \set OboeMusicStaff.shortInstrumentName = \markup {
-                                \hcenter-in
-                                    #10
-                                    Ob.
-                                }
                             \clef "treble"
-                            \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override OboeMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             ef''4. \ff
                                 - \tweak color #red

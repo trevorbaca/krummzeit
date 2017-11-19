@@ -18,14 +18,14 @@
                 \time 3/4
                 \mark #4
                 s1 * 3/4
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [D.1]
-                        }
-                    ^ \markup {
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [D.1]
+                    }
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -53,13 +53,13 @@
                 %%% GlobalSkips [measure 155] %%%
                 \time 3/4
                 s1 * 3/4
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [D.2]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [D.2]
+                    }
                 
                 %%% GlobalSkips [measure 156] %%%
                 \time 5/8
@@ -68,13 +68,13 @@
                 %%% GlobalSkips [measure 157] %%%
                 \time 9/8
                 s1 * 9/8
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [D.3]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [D.3]
+                    }
                 
                 %%% GlobalSkips [measure 158] %%%
                 \time 9/8
@@ -103,14 +103,15 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 \time 5/8
-                s1 * 5/8 \startTextSpan
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [D.4]
-                        }
+                s1 * 5/8
+                \startTextSpan
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [D.4]
+                    }
                 
                 %%% GlobalSkips [measure 160] %%%
                 \time 7/8
@@ -123,13 +124,13 @@
                 %%% GlobalSkips [measure 162] %%%
                 \time 3/4
                 s1 * 3/4
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [D.5]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [D.5]
+                    }
                 
                 %%% GlobalSkips [measure 163] %%%
                 \time 3/4
@@ -142,13 +143,13 @@
                 %%% GlobalSkips [measure 165] %%%
                 \time 3/4
                 s1 * 3/4
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [D.6]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [D.6]
+                    }
                 
                 %%% GlobalSkips [measure 166] %%%
                 \time 4/4
@@ -161,13 +162,13 @@
                 %%% GlobalSkips [measure 168] %%%
                 \time 9/8
                 s1 * 9/8
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [D.7]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [D.7]
+                    }
                 
                 %%% GlobalSkips [measure 169] %%%
                 \time 3/4
@@ -199,15 +200,16 @@
                 
                 %%% GlobalSkips [measure 176] %%%
                 \time 4/4
-                s1 * 1 \stopTextSpan
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [D.8]
-                        }
-                    ^ \markup {
+                s1 * 1
+                \stopTextSpan
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [D.8]
+                    }
+                ^ \markup {
                     \override
                         #'(padding . 0.45)
                         \parenthesize
@@ -346,14 +348,15 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 \time 5/4
-                s1 * 5/4 \startTextSpan
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [D.9]
-                        }
+                s1 * 5/4
+                \startTextSpan
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [D.9]
+                    }
                 
                 %%% GlobalSkips [measure 179] %%%
                 \time 3/4
@@ -385,15 +388,16 @@
                 
                 %%% GlobalSkips [measure 186] %%%
                 \time 9/8
-                s1 * 9/8 \stopTextSpan
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [D.10]
-                        }
-                    ^ \markup {
+                s1 * 9/8
+                \stopTextSpan
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [D.10]
+                    }
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -425,13 +429,13 @@
                 %%% GlobalSkips [measure 190] %%%
                 \time 3/4
                 s1 * 3/4
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [D.11]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [D.11]
+                    }
                 
                 %%% GlobalSkips [measure 191] %%%
                 \time 3/4
@@ -448,13 +452,13 @@
                 %%% GlobalSkips [measure 194] %%%
                 \time 5/4
                 s1 * 5/4
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [D.12]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [D.12]
+                    }
                 
                 %%% GlobalSkips [measure 195] %%%
                 \time 4/4
@@ -463,13 +467,13 @@
                 %%% GlobalSkips [measure 196] %%%
                 \time 9/8
                 s1 * 9/8
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [D.13]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [D.13]
+                    }
                 
                 %%% GlobalSkips [measure 197] %%%
                 \time 3/4
@@ -509,7 +513,8 @@
                         \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override OboeMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 37/4 \fff
+                        R1 * 37/4
+                        \fff
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
@@ -533,69 +538,73 @@
                                         }
                                 }
                             r8
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to clarinet in E-flat"
-                                    }
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to clarinet in E-flat"
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            b'4 \p
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            b'4
+                            \p
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            b'16 [
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            b'16
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            b'16 ]
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                2
-                                    }
+                            b'16
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            2
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            b'2. ~
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            b'2.
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -607,17 +616,18 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             b'2.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            b'2 ~
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            b'2
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
@@ -629,24 +639,25 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             b'2
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            b'4. ~
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            b'4.
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -658,8 +669,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             b'2.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r2
                         }
@@ -674,15 +685,15 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             b'4
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                2
-                                    }
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            2
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -690,24 +701,25 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             b'16
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            c''2. ~
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            c''2.
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -719,24 +731,25 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c''1.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            c''1 ~
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            c''1
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/11 {
@@ -748,8 +761,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c''2..
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -757,31 +770,32 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c''8
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                2
-                                    }
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            2
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            c''4. ~
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            c''4.
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -793,8 +807,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c''2.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r2
                         }
@@ -808,9 +822,10 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            c''8 [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            c''8
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -818,47 +833,49 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c''32
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            c''32 ]
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                2
-                                    }
+                            c''32
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            2
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            c''4. ~
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            c''4.
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/10 {
@@ -870,17 +887,18 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c''2.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            b'2 ~
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            b'2
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/14 {
@@ -892,24 +910,25 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             b'1
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            b'2. ~
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            b'2.
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                         }
                         {
                             
@@ -920,8 +939,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             b'4.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r4
                         }
@@ -935,41 +954,44 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            b'8 [
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                2
-                                    }
+                            b'8
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            2
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            b'32 ]
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            b'32
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            b'4. ~
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            b'4.
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -981,8 +1003,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             b'2.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -990,15 +1012,15 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             b'2
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                         }
                         
                         %%% OboeMusicVoice [measure 176] %%%
@@ -1014,57 +1036,61 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''4 \mf
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            d''4
+                            \mf
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''16 [
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            d''16
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''16 ]
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                2
-                                    }
+                            d''16
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            2
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''2. ~
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            d''2.
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/10 {
@@ -1076,17 +1102,18 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             d''2.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            ds''2 ~
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            ds''2
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/14 {
@@ -1098,24 +1125,25 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             ds''1
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            ds''2. ~
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            ds''2.
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -1127,8 +1155,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             ds''2.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r2
                         }
@@ -1143,9 +1171,10 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''4 \mf
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            d''4
+                            \mf
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1153,31 +1182,32 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             d''16
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''2. ~
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                2
-                                    }
+                            d''2.
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            2
+                                }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -1189,24 +1219,25 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             d''2.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''2 ~
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            d''2
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/11 {
@@ -1218,8 +1249,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             d''2..
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1227,24 +1258,25 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             ds''8
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            ds''4. ~
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            ds''4.
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                         }
                         \times 4/5 {
                             
@@ -1255,8 +1287,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             ds''2.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r2
                         }
@@ -1270,57 +1302,61 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''4 \mf
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            d''4
+                            \mf
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''16 [
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            d''16
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''16 ]
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                2
-                                    }
+                            d''16
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            2
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            d''2. ~
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            d''2.
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                         }
                         \times 4/5 {
                             
@@ -1331,8 +1367,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             d''2.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             ds''2
                         }
@@ -1376,7 +1412,8 @@
                         \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 37/4 \ppp
+                        R1 * 37/4
+                        \ppp
                         
                         %%% ClarinetMusicVoice [measure 162] %%%
                         r2.
@@ -1384,7 +1421,8 @@
                         \times 3/5 {
                             
                             %%% ClarinetMusicVoice [measure 163] %%%
-                            fs'''2. \p
+                            fs'''2.
+                            \p
                             
                             r2
                         }
@@ -1400,47 +1438,49 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs'''4
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''16 [
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                2
-                                    }
+                            fs'''16
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            2
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''16 ]
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            fs'''16
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                             
                             gs'''2.
                         }
@@ -1456,7 +1496,8 @@
                         \times 7/10 {
                             
                             %%% ClarinetMusicVoice [measure 187] %%%
-                            g'''2. \mf
+                            g'''2.
+                            \mf
                             
                             r2
                         }
@@ -1472,56 +1513,59 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             g'''4
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            g'''16 [
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                2
-                                    }
+                            g'''16
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            2
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            g'''16 ]
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            g'''16
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            gs'''2. ~
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            gs'''2.
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -1533,24 +1577,25 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             gs'''2.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            gs'''2 ~
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            gs'''2
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
@@ -1562,10 +1607,12 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             gs'''2
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
-                            g'''4. \mf ~
+                            g'''4.
+                            \mf
+                            ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -1587,15 +1634,15 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             g'''4
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1603,31 +1650,32 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             g'''16
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                2
-                                    }
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            2
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            g'''2. ~
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            g'''2.
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                         }
                         \times 4/5 {
                             
@@ -1638,10 +1686,11 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             g'''2.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
-                            gs'''2 ~
+                            gs'''2
+                            ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 10/11 {
@@ -1654,25 +1703,27 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            g'''8 \mf
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            g'''8
+                            \mf
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            g'''4. ~
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            g'''4.
+                            ~
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                         }
                         \times 4/5 {
                             
@@ -1683,8 +1734,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             g'''2.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r2
                         }
@@ -1720,7 +1771,8 @@
                         \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 13/2 \ff
+                        R1 * 13/2
+                        \ff
                         
                         %%% PianoMusicVoice [measure 159] %%%
                         \override NoteHead.style = #'harmonic
@@ -1730,31 +1782,36 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         \clef "bass"
-                        c'4. -\mp -\tenuto
-                            ^ \markup {
-                                \column
-                                    {
-                                        \line
-                                            {
-                                                \whiteout
-                                                    \upright
-                                                        "5th harmonic of F1"
-                                            }
-                                        \line
-                                            {
-                                                @
-                                            }
-                                    }
+                        c'4.
+                        -\mp
+                        -\tenuto
+                        ^ \markup {
+                            \column
+                                {
+                                    \line
+                                        {
+                                            \whiteout
+                                                \upright
+                                                    "5th harmonic of F1"
+                                        }
+                                    \line
+                                        {
+                                            @
+                                        }
                                 }
+                            }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'4 -\mp -\tenuto ~
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'4
+                        -\mp
+                        -\tenuto
+                        ~
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% PianoMusicVoice [measure 160] %%%
                         \once \override Accidental.color = #red
@@ -1762,9 +1819,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'2 ~
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'2
+                        ~
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
@@ -1772,17 +1830,20 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         c'8
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'4 -\mp -\tenuto ~
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'4
+                        -\mp
+                        -\tenuto
+                        ~
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% PianoMusicVoice [measure 161] %%%
                         \once \override Accidental.color = #red
@@ -1791,8 +1852,8 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         c'2
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         r4
                         
@@ -1806,9 +1867,12 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'4 -\mp -\tenuto ~
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'4
+                        -\mp
+                        -\tenuto
+                        ~
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% PianoMusicVoice [measure 163] %%%
                         \once \override Accidental.color = #red
@@ -1817,17 +1881,20 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         c'2
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'4 -\mp -\tenuto ~
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'4
+                        -\mp
+                        -\tenuto
+                        ~
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% PianoMusicVoice [measure 164] %%%
                         \once \override Accidental.color = #red
@@ -1836,17 +1903,8 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         c'4
-                            - \tweak color #red
-                            ^ \markup { @ }
-                        
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        c'4 -\mp -\tenuto ~
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
@@ -1854,8 +1912,20 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         c'4
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        -\mp
+                        -\tenuto
+                        ~
+                        - \tweak color #red
+                        ^ \markup { @ }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        c'4
+                        - \tweak color #red
+                        ^ \markup { @ }
                         \revert NoteHead.style
                         
                         %%% PianoMusicVoice [measure 165] %%%
@@ -1885,27 +1955,33 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''16 -\staccatissimo \ff [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''16
+                            -\staccatissimo
+                            \ff
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''16 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''16
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
@@ -1917,22 +1993,27 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r4
                             
-                            fs'''4 -\staccatissimo
+                            fs'''4
+                            -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -1945,27 +2026,30 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''4 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''4
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''4 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''4
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''2 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''2
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \times 4/7 {
                             
@@ -1976,22 +2060,27 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r4
                             
-                            fs'''4 -\staccatissimo
+                            fs'''4
+                            -\staccatissimo
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
@@ -2006,31 +2095,35 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         \clef "bass"
-                        c'2. -\mp -\tenuto
-                            ^ \markup {
-                                \column
-                                    {
-                                        \line
-                                            {
-                                                \whiteout
-                                                    \upright
-                                                        "5th harmonic of F1"
-                                            }
-                                        \line
-                                            {
-                                                @
-                                            }
-                                    }
+                        c'2.
+                        -\mp
+                        -\tenuto
+                        ^ \markup {
+                            \column
+                                {
+                                    \line
+                                        {
+                                            \whiteout
+                                                \upright
+                                                    "5th harmonic of F1"
+                                        }
+                                    \line
+                                        {
+                                            @
+                                        }
                                 }
+                            }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'2 -\mp -\tenuto
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'2
+                        -\mp
+                        -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% PianoMusicVoice [measure 179] %%%
                         \once \override Accidental.color = #red
@@ -2038,18 +2131,22 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'2 -\mp -\tenuto
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'2
+                        -\mp
+                        -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'4 -\mp -\tenuto
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'4
+                        -\mp
+                        -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% PianoMusicVoice [measure 180] %%%
                         \once \override Accidental.color = #red
@@ -2057,27 +2154,33 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'4 -\mp -\tenuto
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'4
+                        -\mp
+                        -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'4 -\mp -\tenuto
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'4
+                        -\mp
+                        -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'4 -\mp -\tenuto
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'4
+                        -\mp
+                        -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% PianoMusicVoice [measure 181] %%%
                         \once \override Accidental.color = #red
@@ -2085,18 +2188,22 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'2. -\mp -\tenuto
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'2.
+                        -\mp
+                        -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'4 -\mp -\tenuto
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'4
+                        -\mp
+                        -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% PianoMusicVoice [measure 182] %%%
                         \once \override Accidental.color = #red
@@ -2104,18 +2211,22 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'2.. -\mp -\tenuto
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'2..
+                        -\mp
+                        -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'2 -\mp -\tenuto
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'2
+                        -\mp
+                        -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% PianoMusicVoice [measure 183] %%%
                         \once \override Accidental.color = #red
@@ -2123,27 +2234,33 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'4 -\mp -\tenuto
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'4
+                        -\mp
+                        -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'4 -\mp -\tenuto
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'4
+                        -\mp
+                        -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'4 -\mp -\tenuto
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'4
+                        -\mp
+                        -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% PianoMusicVoice [measure 184] %%%
                         \once \override Accidental.color = #red
@@ -2151,18 +2268,22 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'4. -\mp -\tenuto
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'4.
+                        -\mp
+                        -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'4 -\mp -\tenuto
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'4
+                        -\mp
+                        -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% PianoMusicVoice [measure 185] %%%
                         \once \override Accidental.color = #red
@@ -2170,18 +2291,22 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'2. -\mp -\tenuto
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'2.
+                        -\mp
+                        -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c'4. -\mp -\tenuto
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c'4.
+                        -\mp
+                        -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                         \revert NoteHead.style
                         \revert DynamicLineSpanner.staff-padding
                         \tweak text #tuplet-number::calc-fraction-text
@@ -2199,27 +2324,33 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo \ff [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            \ff
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''4 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''4
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
@@ -2231,22 +2362,27 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r4
                             
-                            fs'''4 -\staccatissimo
+                            fs'''4
+                            -\staccatissimo
                         }
                         
                         %%% PianoMusicVoice [measure 187] %%%
@@ -2262,22 +2398,27 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''16 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''16
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''16 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''16
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r8
                             
-                            fs'''8 -\staccatissimo
+                            fs'''8
+                            -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -2290,27 +2431,32 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''4 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''4
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
@@ -2322,22 +2468,27 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r4
                             
-                            fs'''4 -\staccatissimo
+                            fs'''4
+                            -\staccatissimo
                         }
                         \times 4/5 {
                             
@@ -2349,27 +2500,32 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''4 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''4
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \times 4/7 {
                             
@@ -2380,22 +2536,27 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''16 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''16
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''16 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''16
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r8
                             
-                            fs'''8 -\staccatissimo
+                            fs'''8
+                            -\staccatissimo
                         }
                         \times 4/5 {
                             
@@ -2407,27 +2568,33 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''16 -\staccatissimo \ff [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''16
+                            -\staccatissimo
+                            \ff
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''16 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''16
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         
                         r2
@@ -2441,27 +2608,32 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''4 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''4
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \times 4/7 {
                             
@@ -2472,22 +2644,27 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''16 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''16
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''16 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''16
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r8
                             
-                            fs'''8 -\staccatissimo
+                            fs'''8
+                            -\staccatissimo
                         }
                         \times 4/5 {
                             
@@ -2499,27 +2676,32 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''16 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''16
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''16 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''16
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \times 4/7 {
                             
@@ -2530,22 +2712,27 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r4
                             
-                            fs'''4 -\staccatissimo
+                            fs'''4
+                            -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -2558,27 +2745,30 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''4 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''4
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''4 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''4
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''2 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''2
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \times 4/7 {
                             
@@ -2589,22 +2779,27 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''16 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''16
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''16 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''16
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r8
                             
-                            fs'''8 -\staccatissimo
+                            fs'''8
+                            -\staccatissimo
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
@@ -2625,20 +2820,21 @@
                         \once \override NoteHead.text = \markup {
                         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                         }
-                        <a, c e g>8 \mp
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        "senza pedale"
-                                }
-                            ^ \markup {
-                                \center-align
-                                    \concat
-                                        {
-                                            \natural
-                                            \flat
-                                        }
-                                }
+                        <a, c e g>8
+                        \mp
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    "senza pedale"
+                            }
+                        ^ \markup {
+                            \center-align
+                                \concat
+                                    {
+                                        \natural
+                                        \flat
+                                    }
+                            }
                         
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
@@ -2648,14 +2844,14 @@
                         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                         }
                         <a, c e g>8.
-                            ^ \markup {
-                                \center-align
-                                    \concat
-                                        {
-                                            \natural
-                                            \flat
-                                        }
-                                }
+                        ^ \markup {
+                            \center-align
+                                \concat
+                                    {
+                                        \natural
+                                        \flat
+                                    }
+                            }
                         
                         r4..
                         
@@ -2667,14 +2863,14 @@
                         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                         }
                         <a, c e g>8
-                            ^ \markup {
-                                \center-align
-                                    \concat
-                                        {
-                                            \natural
-                                            \flat
-                                        }
-                                }
+                        ^ \markup {
+                            \center-align
+                                \concat
+                                    {
+                                        \natural
+                                        \flat
+                                    }
+                            }
                         
                         r8
                         
@@ -2689,14 +2885,14 @@
                         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                         }
                         <a, c e g>8.
-                            ^ \markup {
-                                \center-align
-                                    \concat
-                                        {
-                                            \natural
-                                            \flat
-                                        }
-                                }
+                        ^ \markup {
+                            \center-align
+                                \concat
+                                    {
+                                        \natural
+                                        \flat
+                                    }
+                            }
                         
                         r8.
                         
@@ -2708,14 +2904,14 @@
                         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                         }
                         <a, c e g>8.
-                            ^ \markup {
-                                \center-align
-                                    \concat
-                                        {
-                                            \natural
-                                            \flat
-                                        }
-                                }
+                        ^ \markup {
+                            \center-align
+                                \concat
+                                    {
+                                        \natural
+                                        \flat
+                                    }
+                            }
                         
                         r16
                         
@@ -2730,14 +2926,14 @@
                         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                         }
                         <a, c e g>8
-                            ^ \markup {
-                                \center-align
-                                    \concat
-                                        {
-                                            \natural
-                                            \flat
-                                        }
-                                }
+                        ^ \markup {
+                            \center-align
+                                \concat
+                                    {
+                                        \natural
+                                        \flat
+                                    }
+                            }
                         
                         r4.
                         
@@ -2752,14 +2948,14 @@
                         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                         }
                         <a, c e g>8
-                            ^ \markup {
-                                \center-align
-                                    \concat
-                                        {
-                                            \natural
-                                            \flat
-                                        }
-                                }
+                        ^ \markup {
+                            \center-align
+                                \concat
+                                    {
+                                        \natural
+                                        \flat
+                                    }
+                            }
                         
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
@@ -2769,14 +2965,14 @@
                         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                         }
                         <a, c e g>8.
-                            ^ \markup {
-                                \center-align
-                                    \concat
-                                        {
-                                            \natural
-                                            \flat
-                                        }
-                                }
+                        ^ \markup {
+                            \center-align
+                                \concat
+                                    {
+                                        \natural
+                                        \flat
+                                    }
+                            }
                         
                         r4..
                         
@@ -2788,14 +2984,14 @@
                         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                         }
                         <a, c e g>8
-                            ^ \markup {
-                                \center-align
-                                    \concat
-                                        {
-                                            \natural
-                                            \flat
-                                        }
-                                }
+                        ^ \markup {
+                            \center-align
+                                \concat
+                                    {
+                                        \natural
+                                        \flat
+                                    }
+                            }
                         
                         r8
                         \bar "|"
@@ -2825,17 +3021,19 @@
                         \clef "percussion"
                         \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        r16 \ppp
+                        r16
+                        \ppp
                         
-                        c16 -\pp
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                tam-tam
-                                }
+                        c16
+                        -\pp
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            tam-tam
+                            }
                         
                         r8
                         
@@ -2847,7 +3045,8 @@
                         %%% PercussionMusicVoice [measure 154] %%%
                         r2..
                         
-                        c16 -\pp
+                        c16
+                        -\pp
                         
                         r8.
                         \revert DynamicLineSpanner.staff-padding
@@ -2858,147 +3057,180 @@
                         \times 9/17 {
                             
                             %%% PercussionMusicVoice [measure 157] %%%
-                            c2 -\accent
-                                ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    \whiteout
-                                                        \upright
-                                                            \override
-                                                                #'(box-padding . 0.5)
-                                                                \box
-                                                                    sponges
-                                                }
-                                            \line
-                                                {
-                                                    \whiteout
-                                                        \upright
-                                                            "accent changes of direction noticeably at each attack"
-                                                }
-                                        }
+                            c2
+                            -\accent
+                            ^ \markup {
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        \override
+                                                            #'(box-padding . 0.5)
+                                                            \box
+                                                                sponges
+                                            }
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        "accent changes of direction noticeably at each attack"
+                                            }
                                     }
-                                _ \markup {
-                                    \larger
-                                        \italic
-                                            “
-                                    \dynamic
-                                        \override
-                                            #'(font-name . #f)
-                                            ff
-                                    \larger
-                                        \italic
-                                            ”
-                                    }
+                                }
+                            _ \markup {
+                                \larger
+                                    \italic
+                                        “
+                                \dynamic
+                                    \override
+                                        #'(font-name . #f)
+                                        ff
+                                \larger
+                                    \italic
+                                        ”
+                                }
                             
-                            c1 -\accent
+                            c1
+                            -\accent
                             
-                            c2 -\accent
+                            c2
+                            -\accent
                             
-                            c8 -\accent
+                            c8
+                            -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/13 {
                             
                             %%% PercussionMusicVoice [measure 158] %%%
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                            c2.. \repeatTie
+                            c2..
+                            \repeatTie
                             
-                            c2 -\accent
+                            c2
+                            -\accent
                             
-                            c4 -\accent
+                            c4
+                            -\accent
                         }
                         {
                             
                             %%% PercussionMusicVoice [measure 159] %%%
-                            c2 \repeatTie
+                            c2
+                            \repeatTie
                             
-                            c8 \repeatTie
+                            c8
+                            \repeatTie
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
                             
                             %%% PercussionMusicVoice [measure 160] %%%
-                            c8 \repeatTie
+                            c8
+                            \repeatTie
                             
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                            c2 -\accent
+                            c2
+                            -\accent
                             
-                            c4. -\accent
+                            c4.
+                            -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
                             
                             %%% PercussionMusicVoice [measure 161] %%%
-                            c2 \repeatTie
+                            c2
+                            \repeatTie
                             
-                            c8 \repeatTie
+                            c8
+                            \repeatTie
                             
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                            c2 -\accent
+                            c2
+                            -\accent
                             
-                            c2 -\accent
+                            c2
+                            -\accent
                             
-                            c8 \repeatTie
+                            c8
+                            \repeatTie
                         }
                         {
                             
                             %%% PercussionMusicVoice [measure 162] %%%
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                            c4. \repeatTie
+                            c4.
+                            \repeatTie
                             
-                            c4. -\accent
+                            c4.
+                            -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             
                             %%% PercussionMusicVoice [measure 163] %%%
-                            c8 \repeatTie
+                            c8
+                            \repeatTie
                             
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                            c2.. -\accent
+                            c2..
+                            -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
                             %%% PercussionMusicVoice [measure 164] %%%
-                            c8 \repeatTie
+                            c8
+                            \repeatTie
                             
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                            c2 -\accent
+                            c2
+                            -\accent
                             
-                            c2 -\accent
+                            c2
+                            -\accent
                             
-                            c8 \repeatTie
+                            c8
+                            \repeatTie
                         }
                         {
                             
                             %%% PercussionMusicVoice [measure 165] %%%
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                            c4. \repeatTie
+                            c4.
+                            \repeatTie
                             
-                            c4. -\accent
+                            c4.
+                            -\accent
                         }
                         {
                             
                             %%% PercussionMusicVoice [measure 166] %%%
-                            c8 \repeatTie
+                            c8
+                            \repeatTie
                             
-                            c2.. -\accent
+                            c2..
+                            -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             
                             %%% PercussionMusicVoice [measure 167] %%%
-                            c8 \repeatTie
+                            c8
+                            \repeatTie
                             
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                            c2 -\accent
+                            c2
+                            -\accent
                             
-                            c1 -\accent
+                            c1
+                            -\accent
                             
-                            c4. -\accent
+                            c4.
+                            -\accent
                         }
                         
                         %%% PercussionMusicVoice [measure 168] %%%
@@ -3031,27 +3263,31 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''4 -\staccatissimo \ff
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''4
+                            -\staccatissimo
+                            \ff
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''4 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''4
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''2 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''2
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \times 4/7 {
                             
@@ -3062,22 +3298,27 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''16 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''16
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''16 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''16
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r8
                             
-                            fs''8 -\staccatissimo
+                            fs''8
+                            -\staccatissimo
                         }
                         \times 4/5 {
                             
@@ -3089,27 +3330,32 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''8
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''4 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''4
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
@@ -3121,22 +3367,27 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''8
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r4
                             
-                            fs''4 -\staccatissimo
+                            fs''4
+                            -\staccatissimo
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
@@ -3158,27 +3409,31 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''4 -\staccatissimo \ff
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''4
+                            -\staccatissimo
+                            \ff
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''4 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''4
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''2 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''2
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
@@ -3190,22 +3445,27 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''16 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''16
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''16 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''16
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r8
                             
-                            fs''8 -\staccatissimo
+                            fs''8
+                            -\staccatissimo
                         }
                         \times 4/5 {
                             
@@ -3217,27 +3477,32 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''16 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''16
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''16 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''16
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
@@ -3249,22 +3514,27 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''8
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r4
                             
-                            fs''4 -\staccatissimo
+                            fs''4
+                            -\staccatissimo
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -3277,27 +3547,30 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''4 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''4
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''4 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''4
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''2 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''2
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         
                         r4.
@@ -3311,27 +3584,32 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''16 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''16
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''16 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''16
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \times 4/7 {
                             
@@ -3342,22 +3620,27 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''8
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r4
                             
-                            fs''4 -\staccatissimo
+                            fs''4
+                            -\staccatissimo
                         }
                         \times 4/5 {
                             
@@ -3369,27 +3652,33 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8 -\staccatissimo \ff [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''8
+                            -\staccatissimo
+                            \ff
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''4 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''4
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \times 4/7 {
                             
@@ -3400,22 +3689,27 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''16 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''16
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''16 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''16
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r8
                             
-                            fs''8 -\staccatissimo
+                            fs''8
+                            -\staccatissimo
                         }
                         \times 4/5 {
                             
@@ -3427,27 +3721,32 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''16 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''16
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''16 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''16
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \times 4/7 {
                             
@@ -3458,22 +3757,27 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''8
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r4
                             
-                            fs''4 -\staccatissimo
+                            fs''4
+                            -\staccatissimo
                         }
                         
                         %%% PercussionMusicVoice [measure 192] %%%
@@ -3487,22 +3791,27 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''16 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''16
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''16 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''16
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r8
                             
-                            fs''8 -\staccatissimo
+                            fs''8
+                            -\staccatissimo
                         }
                         \times 4/5 {
                             
@@ -3514,27 +3823,32 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''16 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''16
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''16 -\staccatissimo
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''16
+                            -\staccatissimo
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
@@ -3546,22 +3860,27 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8 -\staccatissimo [
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''8
+                            -\staccatissimo
+                            [
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8 -\staccatissimo ]
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''8
+                            -\staccatissimo
+                            ]
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             r4
                             
-                            fs''4 -\staccatissimo
+                            fs''4
+                            -\staccatissimo
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
@@ -3574,50 +3893,70 @@
                         \override DynamicLineSpanner.staff-padding = #'6
                         \override RepeatTie.direction = #up
                         \clef "percussion"
-                        c1 :32 \ppp
-                            ^ \markup {
-                                \column
-                                    {
-                                        \line
-                                            {
-                                                \whiteout
-                                                    \upright
-                                                        "attackless roll with very soft yarn mallets"
-                                            }
-                                        \line
-                                            {
-                                                \whiteout
-                                                    \upright
-                                                        \override
-                                                            #'(box-padding . 0.5)
-                                                            \box
-                                                                "suspended cymbal"
-                                            }
-                                    }
+                        c1
+                        :32
+                        \ppp
+                        ^ \markup {
+                            \column
+                                {
+                                    \line
+                                        {
+                                            \whiteout
+                                                \upright
+                                                    "attackless roll with very soft yarn mallets"
+                                        }
+                                    \line
+                                        {
+                                            \whiteout
+                                                \upright
+                                                    \override
+                                                        #'(box-padding . 0.5)
+                                                        \box
+                                                            "suspended cymbal"
+                                        }
                                 }
+                            }
                         
-                        c4 :32 \repeatTie
+                        c4
+                        :32
+                        \repeatTie
                         
                         %%% PercussionMusicVoice [measure 195] %%%
-                        c1 :32 \repeatTie
+                        c1
+                        :32
+                        \repeatTie
                         
                         %%% PercussionMusicVoice [measure 196] %%%
-                        c1 :32 \repeatTie
+                        c1
+                        :32
+                        \repeatTie
                         
-                        c8 :32 \repeatTie
+                        c8
+                        :32
+                        \repeatTie
                         
                         %%% PercussionMusicVoice [measure 197] %%%
-                        c2. :32 \repeatTie
+                        c2.
+                        :32
+                        \repeatTie
                         
                         %%% PercussionMusicVoice [measure 198] %%%
-                        c2 :32 \repeatTie
+                        c2
+                        :32
+                        \repeatTie
                         
-                        c8 :32 \repeatTie
+                        c8
+                        :32
+                        \repeatTie
                         
                         %%% PercussionMusicVoice [measure 199] %%%
-                        c1 :32 \repeatTie
+                        c1
+                        :32
+                        \repeatTie
                         
-                        c8 :32 \repeatTie
+                        c8
+                        :32
+                        \repeatTie
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
                         \revert RepeatTie.direction
@@ -3654,34 +3993,35 @@
                         \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        ef'4 \ff
-                            ^ \markup {
-                                \column
-                                    {
-                                        \line
-                                            {
-                                                \whiteout
-                                                    \upright
-                                                        "directly on bridge: very slow bow, imperceptible bow changes"
-                                            }
-                                        \line
-                                            {
-                                                @
-                                            }
-                                    }
+                        ef'4
+                        \ff
+                        ^ \markup {
+                            \column
+                                {
+                                    \line
+                                        {
+                                            \whiteout
+                                                \upright
+                                                    "directly on bridge: very slow bow, imperceptible bow changes"
+                                        }
+                                    \line
+                                        {
+                                            @
+                                        }
                                 }
-                            _ \markup {
-                                \larger
-                                    \italic
-                                        “
-                                \dynamic
-                                    \override
-                                        #'(font-name . #f)
-                                        mp
-                                \larger
-                                    \italic
-                                        ”
-                                }
+                            }
+                        _ \markup {
+                            \larger
+                                \italic
+                                    “
+                            \dynamic
+                                \override
+                                    #'(font-name . #f)
+                                    mp
+                            \larger
+                                \italic
+                                    ”
+                            }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
@@ -3689,110 +4029,152 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         ef'4
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'4 \glissando
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        ef'4
+                        \glissando
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% ViolinMusicVoice [measure 153] %%%
-                        bf'4 \glissando
+                        bf'4
+                        \glissando
                         
-                        c'4 \glissando
+                        c'4
+                        \glissando
                         
-                        f'4 \glissando
+                        f'4
+                        \glissando
                         
-                        ef'4 \glissando
+                        ef'4
+                        \glissando
                         
                         %%% ViolinMusicVoice [measure 154] %%%
-                        bf'4 \glissando
+                        bf'4
+                        \glissando
                         
-                        c'4 \glissando
+                        c'4
+                        \glissando
                         
-                        f'4 \glissando
+                        f'4
+                        \glissando
                         
-                        d'4 \glissando
+                        d'4
+                        \glissando
                         
-                        f'8 \glissando
+                        f'8
+                        \glissando
                         
                         %%% ViolinMusicVoice [measure 155] %%%
-                        c'4 \glissando
+                        c'4
+                        \glissando
                         
-                        cs'4 \glissando
+                        cs'4
+                        \glissando
                         
-                        d'4 \glissando
+                        d'4
+                        \glissando
                         
                         %%% ViolinMusicVoice [measure 156] %%%
-                        b'4 \glissando
+                        b'4
+                        \glissando
                         
-                        a'4 \glissando
+                        a'4
+                        \glissando
                         
-                        b'8 \glissando
+                        b'8
+                        \glissando
                         
                         %%% ViolinMusicVoice [measure 157] %%%
-                        a'4 \glissando
+                        a'4
+                        \glissando
                         
-                        ef'4 \glissando
+                        ef'4
+                        \glissando
                         
-                        f'4 \glissando
+                        f'4
+                        \glissando
                         
-                        c'4 \glissando
+                        c'4
+                        \glissando
                         
-                        a'8 \glissando
+                        a'8
+                        \glissando
                         
                         %%% ViolinMusicVoice [measure 158] %%%
-                        ef'4 \glissando
+                        ef'4
+                        \glissando
                         
-                        f'4 \glissando
+                        f'4
+                        \glissando
                         
-                        c'4 \glissando
+                        c'4
+                        \glissando
                         
-                        cs'4 \glissando
+                        cs'4
+                        \glissando
                         
-                        c'8 \glissando
+                        c'8
+                        \glissando
                         
                         %%% ViolinMusicVoice [measure 159] %%%
-                        f'4 \glissando
+                        f'4
+                        \glissando
                         
-                        g'4 \glissando
+                        g'4
+                        \glissando
                         
-                        d'8 \glissando
+                        d'8
+                        \glissando
                         
                         %%% ViolinMusicVoice [measure 160] %%%
-                        cs'4 \glissando
+                        cs'4
+                        \glissando
                         
-                        ef'4 \glissando
+                        ef'4
+                        \glissando
                         
-                        a'4 \glissando
+                        a'4
+                        \glissando
                         
-                        b'8 \glissando
+                        b'8
+                        \glissando
                         
                         %%% ViolinMusicVoice [measure 161] %%%
-                        c'4 \glissando
+                        c'4
+                        \glissando
                         
-                        ef'4 \glissando
+                        ef'4
+                        \glissando
                         
-                        b'4 \glissando
+                        b'4
+                        \glissando
                         
-                        fs'4 \glissando
+                        fs'4
+                        \glissando
                         
-                        bf'4 \glissando
+                        bf'4
+                        \glissando
                         
                         %%% ViolinMusicVoice [measure 162] %%%
-                        c'4 \glissando
+                        c'4
+                        \glissando
                         
-                        e'4 \glissando
+                        e'4
+                        \glissando
                         
-                        fs'4 \glissando
+                        fs'4
+                        \glissando
                         
                         %%% ViolinMusicVoice [measure 163] %%%
-                        b'4 \glissando
+                        b'4
+                        \glissando
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
@@ -3800,22 +4182,25 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         fs'4
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        fs'4 \glissando
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        fs'4
+                        \glissando
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% ViolinMusicVoice [measure 164] %%%
-                        c'4 \glissando
+                        c'4
+                        \glissando
                         
-                        e'4 \glissando
+                        e'4
+                        \glissando
                         
                         cs'4
                         \times 2/3 {
@@ -3849,23 +4234,32 @@
                                 }
                             \override TextSpanner.dash-fraction = #0.25
                             \override TextSpanner.dash-period = #1.5
-                            fs''4 \glissando \< \pp \startTextSpan
+                            fs''4
+                            \glissando
+                            \<
+                            \pp
+                            \startTextSpan
                             
-                            b''2 \glissando
+                            b''2
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            af''16 \glissando
+                            af''16
+                            \glissando
                             
-                            cs''4 \glissando
+                            cs''4
+                            \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
                             %%% ViolinMusicVoice [measure 166] %%%
-                            bf''2 \glissando
+                            bf''2
+                            \glissando
                             
-                            f''4. \glissando
+                            f''4.
+                            \glissando
                         }
                         \times 2/3 {
                             
@@ -3875,27 +4269,31 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c''8
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            c''4 \glissando
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            c''4
+                            \glissando
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \times 4/5 {
                             
                             %%% ViolinMusicVoice [measure 167] %%%
-                            bf''8 \glissando
+                            bf''8
+                            \glissando
                             
                             \revert TextSpanner.bound-details
                             \revert TextSpanner.dash-fraction
                             \revert TextSpanner.dash-period
-                            cs''2 \f \stopTextSpan
+                            cs''2
+                            \f
+                            \stopTextSpan
                         }
                         
                         r2
@@ -3906,117 +4304,155 @@
                         r2.
                         \times 4/5 {
                             
-                            cs''16. \ff \glissando
-                                ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            "molto gridato ed estr. sul pont."
-                                    }
+                            cs''16.
+                            \ff
+                            \glissando
+                            ^ \markup {
+                                \whiteout
+                                    \upright
+                                        "molto gridato ed estr. sul pont."
+                                }
                             
-                            af''4. \glissando
+                            af''4.
+                            \glissando
                         }
                         \times 4/7 {
                             
                             %%% ViolinMusicVoice [measure 169] %%%
-                            f''2 \glissando
+                            f''2
+                            \glissando
                             
-                            d''4. \glissando
+                            d''4.
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            cs''8 \glissando
+                            cs''8
+                            \glissando
                             
-                            g''4 \glissando
+                            g''4
+                            \glissando
                         }
                         \times 4/5 {
                             
                             %%% ViolinMusicVoice [measure 170] %%%
-                            f''16 \glissando
+                            f''16
+                            \glissando
                             
-                            a''4 \glissando
+                            a''4
+                            \glissando
                         }
                         \times 4/7 {
                             
-                            c''8 \glissando [
+                            c''8
+                            \glissando
+                            [
                             
-                            fs''16. ] \glissando
+                            fs''16.
+                            ]
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            f''8 \glissando
+                            f''8
+                            \glissando
                             
-                            b''4 \glissando
+                            b''4
+                            \glissando
                         }
                         \times 4/5 {
                             
                             %%% ViolinMusicVoice [measure 171] %%%
-                            a''8. \glissando
+                            a''8.
+                            \glissando
                             
-                            d''2. \glissando
+                            d''2.
+                            \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
-                            c''4 \glissando
+                            c''4
+                            \glissando
                             
-                            a''8. \glissando
+                            a''8.
+                            \glissando
                         }
                         {
                             
                             %%% ViolinMusicVoice [measure 172] %%%
-                            fs''4 \glissando
+                            fs''4
+                            \glissando
                             
-                            c''2 \glissando
+                            c''2
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            af''16. \glissando
+                            af''16.
+                            \glissando
                             
-                            d''4. \glissando
+                            d''4.
+                            \glissando
                         }
                         \times 4/7 {
                             
                             %%% ViolinMusicVoice [measure 173] %%%
-                            fs''4 \glissando
+                            fs''4
+                            \glissando
                             
-                            b''8. \glissando
+                            b''8.
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            af''16 \glissando [
+                            af''16
+                            \glissando
+                            [
                             
-                            c''8 ] \glissando
+                            c''8
+                            ]
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            a''16 \glissando
+                            a''16
+                            \glissando
                             
-                            f''4 \glissando
+                            f''4
+                            \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
                             %%% ViolinMusicVoice [measure 174] %%%
-                            af''4 \glissando
+                            af''4
+                            \glissando
                             
-                            bf''8. \glissando
+                            bf''8.
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            ef''8 \glissando
+                            ef''8
+                            \glissando
                             
-                            fs''4 \glissando
+                            fs''4
+                            \glissando
                         }
                         \times 4/5 {
                             
                             %%% ViolinMusicVoice [measure 175] %%%
-                            a''8 \glissando
+                            a''8
+                            \glissando
                             
-                            c''2 \glissando
+                            c''2
+                            \glissando
                         }
                         \times 4/7 {
                             
-                            d''4 \glissando
+                            d''4
+                            \glissando
                             
                             fs''8.
                         }
@@ -4026,24 +4462,30 @@
                         \times 2/3 {
                             
                             %%% ViolinMusicVoice [measure 178] %%%
-                            f''4 \ff \glissando
-                                ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            "molto gridato ed estr. sul pont."
-                                    }
+                            f''4
+                            \ff
+                            \glissando
+                            ^ \markup {
+                                \whiteout
+                                    \upright
+                                        "molto gridato ed estr. sul pont."
+                                }
                             
-                            a''2 \glissando
+                            a''2
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            d''16 \glissando
+                            d''16
+                            \glissando
                             
-                            b''4 \glissando
+                            b''4
+                            \glissando
                         }
                         \times 4/7 {
                             
-                            g''2 \glissando
+                            g''2
+                            \glissando
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -4051,8 +4493,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c''4.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \times 2/3 {
                             
@@ -4062,28 +4504,35 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            c''8 \glissando
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            c''8
+                            \glissando
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
-                            b''4 \glissando
+                            b''4
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            cs''8 \glissando
+                            cs''8
+                            \glissando
                             
-                            af''2 \glissando
+                            af''2
+                            \glissando
                         }
                         \times 4/7 {
                             
                             %%% ViolinMusicVoice [measure 180] %%%
-                            c''2 \glissando
+                            c''2
+                            \glissando
                             
-                            ef''4. \glissando
+                            ef''4.
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            cs''8 \glissando
+                            cs''8
+                            \glissando
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -4091,8 +4540,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             a''4
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \times 4/5 {
                             
@@ -4102,80 +4551,105 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            a''16 \glissando
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            a''16
+                            \glissando
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
-                            f''4 \glissando
+                            f''4
+                            \glissando
                         }
                         \times 4/7 {
                             
-                            af''2 \glissando
+                            af''2
+                            \glissando
                             
-                            fs''4. \glissando
+                            fs''4.
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            d''8 \glissando
+                            d''8
+                            \glissando
                             
-                            a''4 \glissando
+                            a''4
+                            \glissando
                         }
                         \times 4/5 {
                             
                             %%% ViolinMusicVoice [measure 182] %%%
-                            fs''8 \glissando
+                            fs''8
+                            \glissando
                             
-                            b''2 \glissando
+                            b''2
+                            \glissando
                         }
                         {
                             
-                            a''2 \glissando
+                            a''2
+                            \glissando
                             
-                            c''4. \glissando
+                            c''4.
+                            \glissando
                         }
                         \times 2/3 {
                             
                             %%% ViolinMusicVoice [measure 183] %%%
-                            fs''4 \glissando
+                            fs''4
+                            \glissando
                             
-                            bf''2 \glissando
+                            bf''2
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            fs''16 \glissando
+                            fs''16
+                            \glissando
                             
-                            cs''4 \glissando
+                            cs''4
+                            \glissando
                         }
                         \times 4/7 {
                             
                             %%% ViolinMusicVoice [measure 184] %%%
-                            bf''4 \glissando
+                            bf''4
+                            \glissando
                             
-                            cs''8. \glissando
+                            cs''8.
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            ef''16 \glissando [
+                            ef''16
+                            \glissando
+                            [
                             
-                            cs''8 ] \glissando
+                            cs''8
+                            ]
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            af''16 \glissando
+                            af''16
+                            \glissando
                             
-                            f''4 \glissando
+                            f''4
+                            \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
                             %%% ViolinMusicVoice [measure 185] %%%
-                            b''4 \glissando
+                            b''4
+                            \glissando
                             
-                            d''8. \glissando
+                            d''8.
+                            \glissando
                         }
                         {
                             
-                            b''4 \glissando
+                            b''4
+                            \glissando
                             
                             af''2
                             \revert NoteHead.style
@@ -4191,23 +4665,27 @@
                         \override DynamicLineSpanner.staff-padding = #'8
                         r8
                         
-                        aqs8 :32 \mp
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        ordinario
-                                }
+                        aqs8
+                        :32
+                        \mp
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    ordinario
+                            }
                         
                         r2
                         
                         %%% ViolinMusicVoice [measure 191] %%%
                         r8
                         
-                        aqs8 :32
+                        aqs8
+                        :32
                         
                         r4
                         
-                        aqs8 :32
+                        aqs8
+                        :32
                         
                         r8
                         
@@ -4217,7 +4695,8 @@
                         %%% ViolinMusicVoice [measure 193] %%%
                         r2.
                         
-                        aqs8 :32
+                        aqs8
+                        :32
                         
                         r8
                         
@@ -4232,40 +4711,46 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        aqs8 :32
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        aqs8
+                        :32
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        aqs8. :32
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        aqs8.
+                        :32
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         r4..
                         
-                        aqs8 :32
+                        aqs8
+                        :32
                         
                         r8
                         
                         %%% ViolinMusicVoice [measure 197] %%%
                         r8
                         
-                        aqs8. :32
+                        aqs8.
+                        :32
                         
                         r8.
                         
-                        aqs8. :32
+                        aqs8.
+                        :32
                         
                         r16
                         
                         %%% ViolinMusicVoice [measure 198] %%%
                         r8
                         
-                        aqs8 :32
+                        aqs8
+                        :32
                         
                         r4.
                         
@@ -4277,22 +4762,25 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        aqs8 :32
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        aqs8
+                        :32
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        aqs8. :32
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        aqs8.
+                        :32
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         r4..
                         
-                        aqs8 :32
+                        aqs8
+                        :32
                         
                         r8
                         \bar "|"
@@ -4319,42 +4807,39 @@
                         \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        c4 \fff \glissando
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        "directly on bridge: very slow bow, imperceptible bow changes"
-                                }
-                            _ \markup {
-                                \larger
-                                    \italic
-                                        “
-                                \dynamic
-                                    \override
-                                        #'(font-name . #f)
-                                        mp
-                                \larger
-                                    \italic
-                                        ”
-                                }
+                        c4
+                        \fff
+                        \glissando
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    "directly on bridge: very slow bow, imperceptible bow changes"
+                            }
+                        _ \markup {
+                            \larger
+                                \italic
+                                    “
+                            \dynamic
+                                \override
+                                    #'(font-name . #f)
+                                    mp
+                            \larger
+                                \italic
+                                    ”
+                            }
                         
-                        cs4 \glissando
+                        cs4
+                        \glissando
                         
-                        fs4 \glissando
+                        fs4
+                        \glissando
                         
                         %%% ViolaMusicVoice [measure 153] %%%
-                        b4 \glissando
+                        b4
+                        \glissando
                         
-                        cs4 \glissando
-                        
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        fs4
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        cs4
+                        \glissando
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
@@ -4362,8 +4847,17 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         fs4
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs4
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% ViolaMusicVoice [measure 154] %%%
                         \once \override Accidental.color = #red
@@ -4371,22 +4865,29 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        fs4 \glissando
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        fs4
+                        \glissando
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
-                        cs4 \glissando
+                        cs4
+                        \glissando
                         
-                        b4 \glissando
+                        b4
+                        \glissando
                         
-                        ef4 \glissando
+                        ef4
+                        \glissando
                         
-                        fs8 \glissando
+                        fs8
+                        \glissando
                         
                         %%% ViolaMusicVoice [measure 155] %%%
-                        cs4 \glissando
+                        cs4
+                        \glissando
                         
-                        b4 \glissando
+                        b4
+                        \glissando
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
@@ -4394,8 +4895,8 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         ef4
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% ViolaMusicVoice [measure 156] %%%
                         \once \override Accidental.color = #red
@@ -4404,22 +4905,25 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         ef4
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef4 \glissando
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        ef4
+                        \glissando
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
-                        c8 \glissando
+                        c8
+                        \glissando
                         
                         %%% ViolaMusicVoice [measure 157] %%%
-                        bf4 \glissando
+                        bf4
+                        \glissando
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
@@ -4427,30 +4931,37 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         fs4
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        fs4 \glissando
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        fs4
+                        \glissando
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
-                        cs4 \glissando
+                        cs4
+                        \glissando
                         
-                        bf8 \glissando
+                        bf8
+                        \glissando
                         
                         %%% ViolaMusicVoice [measure 158] %%%
-                        cs4 \glissando
+                        cs4
+                        \glissando
                         
-                        fs4 \glissando
+                        fs4
+                        \glissando
                         
-                        d4 \glissando
+                        d4
+                        \glissando
                         
-                        b4 \glissando
+                        b4
+                        \glissando
                         
                         cs8
                         {
@@ -4461,41 +4972,53 @@
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #3
                             \clef "treble"
-                            a''8 \glissando \< \pp
-                                ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            "molto flautando ed estr. sul pont."
-                                    }
+                            a''8
+                            \glissando
+                            \<
+                            \pp
+                            ^ \markup {
+                                \whiteout
+                                    \upright
+                                        "molto flautando ed estr. sul pont."
+                                }
                             
-                            c''4 \glissando
+                            c''4
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            bf''16 \glissando
+                            bf''16
+                            \glissando
                             
-                            a''4 \glissando
+                            a''4
+                            \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
                             
                             %%% ViolaMusicVoice [measure 160] %%%
-                            b''2 \glissando
+                            b''2
+                            \glissando
                             
-                            cs''4. \glissando
+                            cs''4.
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            a''8 \glissando
+                            a''8
+                            \glissando
                             
-                            fs''4 \glissando
+                            fs''4
+                            \glissando
                         }
                         \times 4/5 {
                             
                             %%% ViolaMusicVoice [measure 161] %%%
-                            ef''8 \glissando
+                            ef''8
+                            \glissando
                             
-                            d''2 \f
+                            d''2
+                            \f
                         }
                         
                         r4
@@ -4530,41 +5053,56 @@
                                 }
                             \override TextSpanner.dash-fraction = #0.25
                             \override TextSpanner.dash-period = #1.5
-                            cs''16 \glissando \< \pp \startTextSpan
+                            cs''16
+                            \glissando
+                            \<
+                            \pp
+                            \startTextSpan
                             
-                            f''4 \glissando
+                            f''4
+                            \glissando
                         }
                         \times 4/7 {
                             
                             %%% ViolaMusicVoice [measure 163] %%%
-                            c''2 \glissando
+                            c''2
+                            \glissando
                             
-                            b''4. \glissando
+                            b''4.
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            af''8 \glissando
+                            af''8
+                            \glissando
                             
-                            g''4 \glissando
+                            g''4
+                            \glissando
                         }
                         \times 4/5 {
                             
                             %%% ViolaMusicVoice [measure 164] %%%
-                            fs''16 \glissando
+                            fs''16
+                            \glissando
                             
-                            cs''4 \glissando
+                            cs''4
+                            \glissando
                         }
                         \times 4/7 {
                             
-                            a''4 \glissando
+                            a''4
+                            \glissando
                             
-                            fs''8. \glissando
+                            fs''8.
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            ef''8 \glissando
+                            ef''8
+                            \glissando
                             
-                            d''4 \glissando
+                            d''4
+                            \glissando
                             \revert Beam.positions
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
@@ -4575,20 +5113,25 @@
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #3
-                            f''8 \glissando
+                            f''8
+                            \glissando
                             
-                            c''2 \glissando
+                            c''2
+                            \glissando
                         }
                         \times 4/7 {
                             
-                            g''4 \glissando
+                            g''4
+                            \glissando
                             
-                            c''8. \glissando
+                            c''8.
+                            \glissando
                         }
                         {
                             
                             %%% ViolaMusicVoice [measure 166] %%%
-                            a''4 \glissando
+                            a''4
+                            \glissando
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -4596,8 +5139,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             b''2
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \times 4/5 {
                             
@@ -4607,17 +5150,18 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             b''16
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            b''4 \glissando
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            b''4
+                            \glissando
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \times 4/7 {
                             
@@ -4628,153 +5172,200 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             a''2
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            a''4. \glissando
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            a''4.
+                            \glissando
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \times 2/3 {
                             
-                            fs''4 \glissando
+                            fs''4
+                            \glissando
                             
-                            a''2 \glissando
+                            a''2
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            b''8 \glissando
+                            b''8
+                            \glissando
                             
                             \revert TextSpanner.bound-details
                             \revert TextSpanner.dash-fraction
                             \revert TextSpanner.dash-period
-                            c''2 \f \stopTextSpan \glissando
+                            c''2
+                            \f
+                            \stopTextSpan
+                            \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
                             %%% ViolaMusicVoice [measure 168] %%%
-                            ef''2 \ff \glissando
-                                ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            "molto gridato ed estr. sul pont."
-                                    }
+                            ef''2
+                            \ff
+                            \glissando
+                            ^ \markup {
+                                \whiteout
+                                    \upright
+                                        "molto gridato ed estr. sul pont."
+                                }
                             
-                            d''4. \glissando
+                            d''4.
+                            \glissando
                         }
                         {
                             
-                            a''8 \glissando
+                            a''8
+                            \glissando
                             
-                            g''4 \glissando
+                            g''4
+                            \glissando
                         }
                         \times 4/5 {
                             
                             %%% ViolaMusicVoice [measure 169] %%%
-                            c''8 \glissando
+                            c''8
+                            \glissando
                             
-                            fs''2 \glissando
+                            fs''2
+                            \glissando
                         }
                         \times 4/7 {
                             
-                            a''4 \glissando
+                            a''4
+                            \glissando
                             
-                            fs''8. \glissando
+                            fs''8.
+                            \glissando
                         }
                         \times 2/3 {
                             
                             %%% ViolaMusicVoice [measure 170] %%%
-                            c''8 \glissando
+                            c''8
+                            \glissando
                             
-                            b''4 \glissando
+                            b''4
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            c''32 \glissando [
+                            c''32
+                            \glissando
+                            [
                             
-                            af''8 ] \glissando
+                            af''8
+                            ]
+                            \glissando
                         }
                         \times 4/7 {
                             
-                            c''4 \glissando
+                            c''4
+                            \glissando
                             
-                            cs''8. \glissando
+                            cs''8.
+                            \glissando
                         }
                         {
                             
                             %%% ViolaMusicVoice [measure 171] %%%
-                            fs''4 \glissando
+                            fs''4
+                            \glissando
                             
-                            cs''2 \glissando
+                            cs''2
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            bf''16. \glissando
+                            bf''16.
+                            \glissando
                             
-                            b''4. \glissando
+                            b''4.
+                            \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
                             %%% ViolaMusicVoice [measure 172] %%%
-                            ef''2 \glissando
+                            ef''2
+                            \glissando
                             
-                            b''4. \glissando
+                            b''4.
+                            \glissando
                         }
                         {
                             
-                            g''8 \glissando
+                            g''8
+                            \glissando
                             
-                            cs''4 \glissando
+                            cs''4
+                            \glissando
                         }
                         \times 4/5 {
                             
                             %%% ViolaMusicVoice [measure 173] %%%
-                            ef''16 \glissando
+                            ef''16
+                            \glissando
                             
-                            f''4 \glissando
+                            f''4
+                            \glissando
                         }
                         \times 4/7 {
                             
-                            g''8 \glissando [
+                            g''8
+                            \glissando
+                            [
                             
-                            bf''16. ] \glissando
+                            bf''16.
+                            ]
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            g''8 \glissando
+                            g''8
+                            \glissando
                             
-                            c''4 \glissando
+                            c''4
+                            \glissando
                         }
                         \times 4/5 {
                             
                             %%% ViolaMusicVoice [measure 174] %%%
-                            a''16. \glissando
+                            a''16.
+                            \glissando
                             
-                            cs''4. \glissando
+                            cs''4.
+                            \glissando
                         }
                         \times 4/7 {
                             
-                            d''4 \glissando
+                            d''4
+                            \glissando
                             
-                            bf''8. \glissando
+                            bf''8.
+                            \glissando
                         }
                         \times 2/3 {
                             
                             %%% ViolaMusicVoice [measure 175] %%%
-                            b''4 \glissando
+                            b''4
+                            \glissando
                             
-                            fs''2 \glissando
+                            fs''2
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            cs''16 \glissando
+                            cs''16
+                            \glissando
                             
                             af''4
                         }
@@ -4784,95 +5375,123 @@
                         {
                             
                             %%% ViolaMusicVoice [measure 178] %%%
-                            c''4 \ff \glissando
-                                ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            "molto gridato ed estr. sul pont."
-                                    }
+                            c''4
+                            \ff
+                            \glissando
+                            ^ \markup {
+                                \whiteout
+                                    \upright
+                                        "molto gridato ed estr. sul pont."
+                                }
                             
-                            ef''2 \glissando
+                            ef''2
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            fs''8 \glissando
+                            fs''8
+                            \glissando
                             
-                            f''2 \glissando
+                            f''2
+                            \glissando
                         }
                         \times 4/7 {
                             
                             %%% ViolaMusicVoice [measure 179] %%%
-                            bf''2 \glissando
+                            bf''2
+                            \glissando
                             
-                            c''4. \glissando
+                            c''4.
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            g''8 \glissando
+                            g''8
+                            \glissando
                             
-                            f''4 \glissando
+                            f''4
+                            \glissando
                         }
                         \times 4/5 {
                             
                             %%% ViolaMusicVoice [measure 180] %%%
-                            bf''16 \glissando
+                            bf''16
+                            \glissando
                             
-                            b''4 \glissando
+                            b''4
+                            \glissando
                         }
                         \times 4/7 {
                             
-                            a''4 \glissando
+                            a''4
+                            \glissando
                             
-                            d''8. \glissando
+                            d''8.
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            c''8 \glissando
+                            c''8
+                            \glissando
                             
-                            d''4 \glissando
+                            d''4
+                            \glissando
                         }
                         \times 4/5 {
                             
                             %%% ViolaMusicVoice [measure 181] %%%
-                            fs''8. \glissando
+                            fs''8.
+                            \glissando
                             
-                            b''2. \glissando
+                            b''2.
+                            \glissando
                         }
                         \times 4/7 {
                             
-                            cs''4 \glissando
+                            cs''4
+                            \glissando
                             
-                            fs''8. \glissando
+                            fs''8.
+                            \glissando
                         }
                         \times 2/3 {
                             
                             %%% ViolaMusicVoice [measure 182] %%%
-                            f''4.. \glissando
+                            f''4..
+                            \glissando
                             
-                            af''2.. \glissando
+                            af''2..
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            b''8 \glissando
+                            b''8
+                            \glissando
                             
-                            cs''2 \glissando
+                            cs''2
+                            \glissando
                         }
                         \times 4/7 {
                             
                             %%% ViolaMusicVoice [measure 183] %%%
-                            f''4 \glissando
+                            f''4
+                            \glissando
                             
-                            b''8. \glissando
+                            b''8.
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            a''8 \glissando
+                            a''8
+                            \glissando
                             
-                            cs''4 \glissando
+                            cs''4
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            ef''16 \glissando
+                            ef''16
+                            \glissando
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -4880,8 +5499,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             a''4
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
@@ -4892,29 +5511,36 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            a''4 \glissando
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            a''4
+                            \glissando
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
-                            fs''8. \glissando
+                            fs''8.
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            g''8 \glissando
+                            g''8
+                            \glissando
                             
-                            c''4 \glissando
+                            c''4
+                            \glissando
                         }
                         \times 4/5 {
                             
                             %%% ViolaMusicVoice [measure 185] %%%
-                            cs''8. \glissando
+                            cs''8.
+                            \glissando
                             
-                            fs''2. \glissando
+                            fs''2.
+                            \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
-                            g''4 \glissando
+                            g''4
+                            \glissando
                             
                             f''8.
                             \revert NoteHead.style
@@ -4931,23 +5557,27 @@
                         \clef "alto"
                         r8
                         
-                        bf,8 :32 \mp
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        ordinario
-                                }
+                        bf,8
+                        :32
+                        \mp
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    ordinario
+                            }
                         
                         r2
                         
                         %%% ViolaMusicVoice [measure 191] %%%
                         r8
                         
-                        bf,8 :32
+                        bf,8
+                        :32
                         
                         r4
                         
-                        bf,8 :32
+                        bf,8
+                        :32
                         
                         r8
                         
@@ -4957,7 +5587,8 @@
                         %%% ViolaMusicVoice [measure 193] %%%
                         r2.
                         
-                        bf,8 :32
+                        bf,8
+                        :32
                         
                         r8
                         
@@ -4973,40 +5604,46 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        bf,8 :32
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        bf,8
+                        :32
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        bf,8. :32
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        bf,8.
+                        :32
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         r4..
                         
-                        bf,8 :32
+                        bf,8
+                        :32
                         
                         r8
                         
                         %%% ViolaMusicVoice [measure 197] %%%
                         r8
                         
-                        bf,8. :32
+                        bf,8.
+                        :32
                         
                         r8.
                         
-                        bf,8. :32
+                        bf,8.
+                        :32
                         
                         r16
                         
                         %%% ViolaMusicVoice [measure 198] %%%
                         r8
                         
-                        bf,8 :32
+                        bf,8
+                        :32
                         
                         r4.
                         
@@ -5018,22 +5655,25 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        bf,8 :32
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        bf,8
+                        :32
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        bf,8. :32
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        bf,8.
+                        :32
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         r4..
                         
-                        bf,8 :32
+                        bf,8
+                        :32
                         
                         r8
                         \bar "|"
@@ -5060,130 +5700,179 @@
                         \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        d,4 \fff \glissando
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        "directly on bridge: very slow bow, imperceptible bow changes"
-                                }
-                            _ \markup {
-                                \larger
-                                    \italic
-                                        “
-                                \dynamic
-                                    \override
-                                        #'(font-name . #f)
-                                        mp
-                                \larger
-                                    \italic
-                                        ”
-                                }
+                        d,4
+                        \fff
+                        \glissando
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    "directly on bridge: very slow bow, imperceptible bow changes"
+                            }
+                        _ \markup {
+                            \larger
+                                \italic
+                                    “
+                            \dynamic
+                                \override
+                                    #'(font-name . #f)
+                                    mp
+                            \larger
+                                \italic
+                                    ”
+                            }
                         
-                        b,4 \glissando
+                        b,4
+                        \glissando
                         
-                        a,4 \glissando
+                        a,4
+                        \glissando
                         
                         %%% CelloMusicVoice [measure 153] %%%
-                        g,4 \glissando
+                        g,4
+                        \glissando
                         
-                        e,4 \glissando
+                        e,4
+                        \glissando
                         
-                        b,4 \glissando
+                        b,4
+                        \glissando
                         
-                        a,4 \glissando
+                        a,4
+                        \glissando
                         
                         %%% CelloMusicVoice [measure 154] %%%
-                        g,4 \glissando
+                        g,4
+                        \glissando
                         
-                        e,4 \glissando
+                        e,4
+                        \glissando
                         
-                        c,4 \glissando
+                        c,4
+                        \glissando
                         
-                        cs,4 \glissando
+                        cs,4
+                        \glissando
                         
-                        g,8 \glissando
+                        g,8
+                        \glissando
                         
                         %%% CelloMusicVoice [measure 155] %%%
-                        e,4 \glissando
+                        e,4
+                        \glissando
                         
-                        c,4 \glissando
+                        c,4
+                        \glissando
                         
-                        bf,4 \glissando
+                        bf,4
+                        \glissando
                         
                         %%% CelloMusicVoice [measure 156] %%%
-                        fs,4 \glissando
+                        fs,4
+                        \glissando
                         
-                        cs,4 \glissando
+                        cs,4
+                        \glissando
                         
-                        d,8 \glissando
+                        d,8
+                        \glissando
                         
                         %%% CelloMusicVoice [measure 157] %%%
-                        b,4 \glissando
+                        b,4
+                        \glissando
                         
-                        e,4 \glissando
+                        e,4
+                        \glissando
                         
-                        g,4 \glissando
+                        g,4
+                        \glissando
                         
-                        fs,4 \glissando
+                        fs,4
+                        \glissando
                         
-                        b,8 \glissando
+                        b,8
+                        \glissando
                         
                         %%% CelloMusicVoice [measure 158] %%%
-                        e,4 \glissando
+                        e,4
+                        \glissando
                         
-                        g,4 \glissando
+                        g,4
+                        \glissando
                         
-                        ef,4 \glissando
+                        ef,4
+                        \glissando
                         
-                        c,4 \glissando
+                        c,4
+                        \glissando
                         
-                        e,8 \glissando
+                        e,8
+                        \glissando
                         
                         %%% CelloMusicVoice [measure 159] %%%
-                        fs,4 \glissando
+                        fs,4
+                        \glissando
                         
-                        c,4 \glissando
+                        c,4
+                        \glissando
                         
-                        ef,8 \glissando
+                        ef,8
+                        \glissando
                         
                         %%% CelloMusicVoice [measure 160] %%%
-                        b,4 \glissando
+                        b,4
+                        \glissando
                         
-                        fs,4 \glissando
+                        fs,4
+                        \glissando
                         
-                        bf,4 \glissando
+                        bf,4
+                        \glissando
                         
-                        b,8 \glissando
+                        b,8
+                        \glissando
                         
                         %%% CelloMusicVoice [measure 161] %%%
-                        d,4 \glissando
+                        d,4
+                        \glissando
                         
-                        cs,4 \glissando
+                        cs,4
+                        \glissando
                         
-                        ef,4 \glissando
+                        ef,4
+                        \glissando
                         
-                        a,4 \glissando
+                        a,4
+                        \glissando
                         
-                        g,4 \glissando
+                        g,4
+                        \glissando
                         
                         %%% CelloMusicVoice [measure 162] %%%
-                        cs,4 \glissando
+                        cs,4
+                        \glissando
                         
-                        f,4 \glissando
+                        f,4
+                        \glissando
                         
-                        bf,4 \glissando
+                        bf,4
+                        \glissando
                         
                         %%% CelloMusicVoice [measure 163] %%%
-                        ef,4 \glissando
+                        ef,4
+                        \glissando
                         
-                        a,4 \glissando
+                        a,4
+                        \glissando
                         
-                        g,4 \glissando
+                        g,4
+                        \glissando
                         
                         %%% CelloMusicVoice [measure 164] %%%
-                        cs,4 \glissando
+                        cs,4
+                        \glissando
                         
-                        f,4 \glissando
+                        f,4
+                        \glissando
                         
                         b,4
                         
@@ -5225,31 +5914,43 @@
                                 }
                             \override TextSpanner.dash-fraction = #0.25
                             \override TextSpanner.dash-period = #1.5
-                            g''4 \glissando \< \pp \startTextSpan
+                            g''4
+                            \glissando
+                            \<
+                            \pp
+                            \startTextSpan
                             
-                            fs''2 \glissando
+                            fs''2
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            af''16 \glissando
+                            af''16
+                            \glissando
                             
-                            cs''4 \glissando
+                            cs''4
+                            \glissando
                         }
                         \times 4/7 {
                             
                             %%% CelloMusicVoice [measure 167] %%%
-                            d''1 \glissando
+                            d''1
+                            \glissando
                             
-                            ef''2. \glissando
+                            ef''2.
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            cs''4 \glissando
+                            cs''4
+                            \glissando
                             
                             \revert TextSpanner.bound-details
                             \revert TextSpanner.dash-fraction
                             \revert TextSpanner.dash-period
-                            bf''2 \f \stopTextSpan
+                            bf''2
+                            \f
+                            \stopTextSpan
                         }
                         
                         %%% CelloMusicVoice [measure 168] %%%
@@ -5262,108 +5963,137 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''4 \ff
-                                ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    \whiteout
-                                                        \upright
-                                                            "molto gridato ed estr. sul pont."
-                                                }
-                                            \line
-                                                {
-                                                    @
-                                                }
-                                        }
+                            fs''4
+                            \ff
+                            ^ \markup {
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        "molto gridato ed estr. sul pont."
+                                            }
+                                        \line
+                                            {
+                                                @
+                                            }
                                     }
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8. \glissando
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''8.
+                            \glissando
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \times 2/3 {
                             
                             %%% CelloMusicVoice [measure 169] %%%
-                            b''4 \glissando
+                            b''4
+                            \glissando
                             
-                            ef''2 \glissando
+                            ef''2
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            b''16 \glissando
+                            b''16
+                            \glissando
                             
-                            af''4 \glissando
+                            af''4
+                            \glissando
                         }
                         \times 4/7 {
                             
                             %%% CelloMusicVoice [measure 170] %%%
-                            bf''4 \glissando
+                            bf''4
+                            \glissando
                             
-                            cs''8. \glissando
+                            cs''8.
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            b''16 \glissando [
+                            b''16
+                            \glissando
+                            [
                             
-                            g''8 ] \glissando
+                            g''8
+                            ]
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            bf''16 \glissando
+                            bf''16
+                            \glissando
                             
-                            a''4 \glissando
+                            a''4
+                            \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
                             %%% CelloMusicVoice [measure 171] %%%
-                            ef''2 \glissando
+                            ef''2
+                            \glissando
                             
-                            cs''4. \glissando
+                            cs''4.
+                            \glissando
                         }
                         {
                             
-                            a''8 \glissando
+                            a''8
+                            \glissando
                             
-                            cs''4 \glissando
+                            cs''4
+                            \glissando
                         }
                         \times 4/5 {
                             
                             %%% CelloMusicVoice [measure 172] %%%
-                            d''8. \glissando
+                            d''8.
+                            \glissando
                             
-                            f''2. \glissando
+                            f''2.
+                            \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
-                            fs''4 \glissando
+                            fs''4
+                            \glissando
                             
-                            a''8. \glissando
+                            a''8.
+                            \glissando
                         }
                         \times 2/3 {
                             
                             %%% CelloMusicVoice [measure 173] %%%
-                            fs''8 \glissando
+                            fs''8
+                            \glissando
                             
-                            c''4 \glissando
+                            c''4
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            b''32 \glissando [
+                            b''32
+                            \glissando
+                            [
                             
-                            cs''8 ] \glissando
+                            cs''8
+                            ]
+                            \glissando
                         }
                         \times 4/7 {
                             
-                            fs''4 \glissando
+                            fs''4
+                            \glissando
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -5371,8 +6101,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             b''8.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         {
                             
@@ -5382,28 +6112,35 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            b''8 \glissando
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            b''8
+                            \glissando
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
-                            c''4 \glissando
+                            c''4
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            cs''16 \glissando
+                            cs''16
+                            \glissando
                             
-                            a''4 \glissando
+                            a''4
+                            \glissando
                         }
                         \times 4/7 {
                             
                             %%% CelloMusicVoice [measure 175] %%%
-                            cs''2 \glissando
+                            cs''2
+                            \glissando
                             
-                            ef''4. \glissando
+                            ef''4.
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            a''8 \glissando
+                            a''8
+                            \glissando
                             
                             g''4
                         }
@@ -5413,122 +6150,158 @@
                         \times 2/3 {
                             
                             %%% CelloMusicVoice [measure 178] %%%
-                            b''4 \ff \glissando
-                                ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            "molto gridato ed estr. sul pont."
-                                    }
+                            b''4
+                            \ff
+                            \glissando
+                            ^ \markup {
+                                \whiteout
+                                    \upright
+                                        "molto gridato ed estr. sul pont."
+                                }
                             
-                            fs''2 \glissando
+                            fs''2
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            cs''8. \glissando
+                            cs''8.
+                            \glissando
                             
-                            af''2. \glissando
+                            af''2.
+                            \glissando
                         }
                         \times 4/7 {
                             
                             %%% CelloMusicVoice [measure 179] %%%
-                            a''2 \glissando
+                            a''2
+                            \glissando
                             
-                            b''4. \glissando
+                            b''4.
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            fs''8 \glissando
+                            fs''8
+                            \glissando
                             
-                            cs''4 \glissando
+                            cs''4
+                            \glissando
                         }
                         \times 4/5 {
                             
                             %%% CelloMusicVoice [measure 180] %%%
-                            a''16 \glissando
+                            a''16
+                            \glissando
                             
-                            cs''4 \glissando
+                            cs''4
+                            \glissando
                         }
                         \times 4/7 {
                             
-                            fs''4 \glissando
+                            fs''4
+                            \glissando
                             
-                            b''8. \glissando
+                            b''8.
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            bf''8 \glissando
+                            bf''8
+                            \glissando
                             
-                            cs''4 \glissando
+                            cs''4
+                            \glissando
                         }
                         \times 4/5 {
                             
                             %%% CelloMusicVoice [measure 181] %%%
-                            ef''16 \glissando
+                            ef''16
+                            \glissando
                             
-                            c''4 \glissando
+                            c''4
+                            \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
-                            g''2 \glissando
+                            g''2
+                            \glissando
                             
-                            ef''4. \glissando
+                            ef''4.
+                            \glissando
                         }
                         \times 2/3 {
                             
                             %%% CelloMusicVoice [measure 182] %%%
-                            c''2 \glissando
+                            c''2
+                            \glissando
                             
-                            g''1 \glissando
+                            g''1
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            bf''16. \glissando
+                            bf''16.
+                            \glissando
                             
-                            g''4. \glissando
+                            g''4.
+                            \glissando
                         }
                         \times 4/7 {
                             
                             %%% CelloMusicVoice [measure 183] %%%
-                            c''4 \glissando
+                            c''4
+                            \glissando
                             
-                            af''8. \glissando
+                            af''8.
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            b''8 \glissando
+                            b''8
+                            \glissando
                             
-                            c''4 \glissando
+                            c''4
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            d''16 \glissando
+                            d''16
+                            \glissando
                             
-                            c''4 \glissando
+                            c''4
+                            \glissando
                         }
                         \times 4/7 {
                             
                             %%% CelloMusicVoice [measure 184] %%%
-                            b''4 \glissando
+                            b''4
+                            \glissando
                             
-                            a''8. \glissando
+                            a''8.
+                            \glissando
                         }
                         {
                             
-                            d''8 \glissando
+                            d''8
+                            \glissando
                             
-                            fs''4 \glissando
+                            fs''4
+                            \glissando
                         }
                         \times 4/5 {
                             
                             %%% CelloMusicVoice [measure 185] %%%
-                            a''8.. \glissando
+                            a''8..
+                            \glissando
                             
-                            ef''2.. \glissando
+                            ef''2..
+                            \glissando
                         }
                         \times 4/7 {
                             
-                            fs''4 \glissando
+                            fs''4
+                            \glissando
                             
                             c''8.
                             \revert NoteHead.style
@@ -5545,23 +6318,27 @@
                         \clef "bass"
                         r8
                         
-                        a,8 :32 \mp
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        ordinario
-                                }
+                        a,8
+                        :32
+                        \mp
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    ordinario
+                            }
                         
                         r2
                         
                         %%% CelloMusicVoice [measure 191] %%%
                         r8
                         
-                        a,8 :32
+                        a,8
+                        :32
                         
                         r4
                         
-                        a,8 :32
+                        a,8
+                        :32
                         
                         r8
                         
@@ -5571,7 +6348,8 @@
                         %%% CelloMusicVoice [measure 193] %%%
                         r2.
                         
-                        a,8 :32
+                        a,8
+                        :32
                         
                         r8
                         
@@ -5587,40 +6365,46 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        a,8 :32
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        a,8
+                        :32
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        a,8. :32
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        a,8.
+                        :32
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         r4..
                         
-                        a,8 :32
+                        a,8
+                        :32
                         
                         r8
                         
                         %%% CelloMusicVoice [measure 197] %%%
                         r8
                         
-                        a,8. :32
+                        a,8.
+                        :32
                         
                         r8.
                         
-                        a,8. :32
+                        a,8.
+                        :32
                         
                         r16
                         
                         %%% CelloMusicVoice [measure 198] %%%
                         r8
                         
-                        a,8 :32
+                        a,8
+                        :32
                         
                         r4.
                         
@@ -5632,22 +6416,25 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        a,8 :32
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        a,8
+                        :32
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        a,8. :32
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        a,8.
+                        :32
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         r4..
                         
-                        a,8 :32
+                        a,8
+                        :32
                         
                         r8
                         \bar "|"

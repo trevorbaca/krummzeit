@@ -991,9 +991,24 @@
                         \once \override Stem.color = #blue
                         c2 -\p
                             ^ \markup {
-                                \whiteout
-                                    \upright
-                                        attackless
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        \override
+                                                            #'(box-padding . 0.5)
+                                                            \box
+                                                                tam-tam
+                                            }
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        attackless
+                                            }
+                                    }
                                 }
                         
                         \once \override Beam.color = #blue

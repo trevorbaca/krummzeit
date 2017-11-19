@@ -1929,9 +1929,24 @@
                         \clef "percussion"
                         c2. :32 \ppp ~
                             ^ \markup {
-                                \whiteout
-                                    \upright
-                                        "rapid roll with fingertips: keep speed constant during accelerando"
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        \override
+                                                            #'(box-padding . 0.5)
+                                                            \box
+                                                                "snare drum"
+                                            }
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        "rapid roll with fingertips: keep speed constant during accelerando"
+                                            }
+                                    }
                                 }
                         
                         %%% PercussionMusicVoice [measure 123] %%%
@@ -2404,9 +2419,21 @@
                         \override DynamicLineSpanner.staff-padding = #'6
                         ftqs1. \glissando \< \pp
                             ^ \markup {
-                                \whiteout
-                                    \upright
-                                        "allow bowing to convey accelerando"
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        "non flautando"
+                                            }
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        "allow bowing to convey accelerando"
+                                            }
+                                    }
                                 }
                         
                         g1 \glissando
@@ -2573,9 +2600,21 @@
                         \override DynamicLineSpanner.staff-padding = #'5
                         btqs,1 \glissando \< \pp
                             ^ \markup {
-                                \whiteout
-                                    \upright
-                                        "allow bowing to convey accelerando"
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        "non flautando"
+                                            }
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        "allow bowing to convey accelerando"
+                                            }
+                                    }
                                 }
                         
                         c\breve \glissando
@@ -2742,9 +2781,21 @@
                         \override DynamicLineSpanner.staff-padding = #'5
                         b,,\breve \glissando \< \pp
                             ^ \markup {
-                                \whiteout
-                                    \upright
-                                        "allow bowing to convey accelerando"
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        "non flautando"
+                                            }
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        "allow bowing to convey accelerando"
+                                            }
+                                    }
                                 }
                         
                         cqs,2.. \fff

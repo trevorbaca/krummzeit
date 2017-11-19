@@ -5648,9 +5648,24 @@
                         \clef "percussion"
                         c'2. \mf
                             ^ \markup {
-                                \whiteout
-                                    \upright
-                                        "scrape in a circle at moderate speed"
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        \override
+                                                            #'(box-padding . 0.5)
+                                                            \box
+                                                                "scraped slate"
+                                            }
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        "scrape in a circle at moderate speed"
+                                            }
+                                    }
                                 }
                         
                         %%% ViolinMusicVoice [measure 86] %%%

@@ -551,6 +551,15 @@
                                                 {
                                                     \whiteout
                                                         \upright
+                                                            \override
+                                                                #'(box-padding . 0.5)
+                                                                \box
+                                                                    sponges
+                                                }
+                                            \line
+                                                {
+                                                    \whiteout
+                                                        \upright
                                                             "accent changes of direction noticeably at each attack"
                                                 }
                                             \line

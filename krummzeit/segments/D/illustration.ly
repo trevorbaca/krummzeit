@@ -2860,9 +2860,24 @@
                             %%% PercussionMusicVoice [measure 157] %%%
                             c2 -\accent
                                 ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            "accent changes of direction noticeably at each attack"
+                                    \column
+                                        {
+                                            \line
+                                                {
+                                                    \whiteout
+                                                        \upright
+                                                            \override
+                                                                #'(box-padding . 0.5)
+                                                                \box
+                                                                    sponges
+                                                }
+                                            \line
+                                                {
+                                                    \whiteout
+                                                        \upright
+                                                            "accent changes of direction noticeably at each attack"
+                                                }
+                                        }
                                     }
                                 _ \markup {
                                     \larger
@@ -3561,12 +3576,24 @@
                         \clef "percussion"
                         c1 :32 \ppp
                             ^ \markup {
-                                \whiteout
-                                    \upright
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                "suspended cymbal"
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        "attackless roll with very soft yarn mallets"
+                                            }
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        \override
+                                                            #'(box-padding . 0.5)
+                                                            \box
+                                                                "suspended cymbal"
+                                            }
+                                    }
                                 }
                         
                         c4 :32 \repeatTie

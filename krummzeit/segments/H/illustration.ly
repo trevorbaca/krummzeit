@@ -49,7 +49,8 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 7/8
                 \mark #8
-                s1 * 7/8 \startTextSpan
+                s1 * 7/8
+                \startTextSpan
                 
                 %%% GlobalSkips [measure 282] %%%
                 \time 6/4
@@ -69,7 +70,9 @@
                 
                 %%% GlobalSkips [measure 286] %%%
                 \time 11/8
-                s1 * 11/8 \stopTextSpan ^ \markup {
+                s1 * 11/8
+                \stopTextSpan
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -114,22 +117,30 @@
                         \clef "treble"
                         \once \override OboeMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 33/8 \f
+                        R1 * 33/8
+                        \f
                         
                         %%% OboeMusicVoice [measure 284] %%%
                         \override DynamicLineSpanner.staff-padding = #'3
-                        d''1.. \ff ~ \startTrillSpan
+                        d''1..
+                        \ff
+                        ~
+                        \startTrillSpan
                         
                         %%% OboeMusicVoice [measure 285] %%%
-                        d''2. ~
+                        d''2.
+                        ~
                         
                         %%% OboeMusicVoice [measure 286] %%%
-                        d''1 ~
+                        d''1
+                        ~
                         
-                        d''4. ~
+                        d''4.
+                        ~
                         
                         %%% OboeMusicVoice [measure 287] %%%
-                        d''2 ~
+                        d''2
+                        ~
                         
                         d''8
                         \revert DynamicLineSpanner.staff-padding
@@ -143,9 +154,10 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            ef''2. \stopTrillSpan
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            ef''2.
+                            \stopTrillSpan
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -153,15 +165,15 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             ef''2
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/5 {
@@ -173,15 +185,15 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             ef''2.
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                2
-                                    }
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            2
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -189,15 +201,15 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             ef''2
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                             \bar "|"
                             \revert TupletBracket.staff-padding
                             
@@ -231,7 +243,8 @@
                         \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 33/8 \pp
+                        R1 * 33/8
+                        \pp
                         
                         %%% ClarinetMusicVoice [measure 284] %%%
                         \override DynamicLineSpanner.staff-padding = #'3
@@ -253,13 +266,15 @@
                                         (Eb)
                                     }
                             }
-                        b'1.. \ff ~
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to clarinet in E-flat"
-                                }
+                        b'1..
+                        \ff
+                        ~
+                        ^ \markup {
+                            \override
+                                #'(box-padding . 0.75)
+                                \box
+                                    "to clarinet in E-flat"
+                            }
                         
                         %%% ClarinetMusicVoice [measure 285] %%%
                         b'2.
@@ -297,23 +312,24 @@
                                             cl.
                                         }
                                 }
-                            f4 \ff
-                                ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    \override
-                                                        #'(box-padding . 0.75)
-                                                        \box
-                                                            "to bass clarinet"
-                                                }
-                                            \line
-                                                {
-                                                    @
-                                                }
-                                        }
+                            f4
+                            \ff
+                            ^ \markup {
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                \override
+                                                    #'(box-padding . 0.75)
+                                                    \box
+                                                        "to bass clarinet"
+                                            }
+                                        \line
+                                            {
+                                                @
+                                            }
                                     }
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -321,15 +337,15 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             f1
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/5 {
@@ -341,15 +357,15 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             f4
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                2
-                                    }
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            2
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -357,15 +373,15 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             f1
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
-                                    \override
-                                        #'(circle-padding . 0.25)
-                                        \circle
-                                            \finger
-                                                1
-                                    }
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
+                                \override
+                                    #'(circle-padding . 0.25)
+                                    \circle
+                                        \finger
+                                            1
+                                }
                             \bar "|"
                             \revert Stem.direction
                             \revert DynamicLineSpanner.staff-padding
@@ -402,21 +418,23 @@
                             \clef "bass"
                             \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            <d' f' a' c''>8 \pp [
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to harpsichord"
-                                    }
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            \pp
+                            [
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to harpsichord"
+                                }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -426,14 +444,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -442,15 +460,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -461,15 +480,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -479,14 +499,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -495,15 +515,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -514,15 +535,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -532,14 +554,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -548,15 +570,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -567,15 +590,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -585,14 +609,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -601,15 +625,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -620,15 +645,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -638,14 +664,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -654,15 +680,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -673,15 +700,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -691,14 +719,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -707,15 +735,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -726,15 +755,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -744,14 +774,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -760,15 +790,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -779,15 +810,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -797,14 +829,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -813,15 +845,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -832,15 +865,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -850,14 +884,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -866,15 +900,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -885,15 +920,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -903,14 +939,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -919,15 +955,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -938,15 +975,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -956,14 +994,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -972,15 +1010,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -991,15 +1030,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1009,14 +1049,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1025,15 +1065,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -1044,15 +1085,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1062,14 +1104,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1078,15 +1120,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -1097,15 +1140,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1115,14 +1159,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1131,15 +1175,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -1150,15 +1195,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1168,14 +1214,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1184,15 +1230,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -1203,15 +1250,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1221,14 +1269,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1237,15 +1285,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -1256,15 +1305,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1274,14 +1324,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1290,15 +1340,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -1309,15 +1360,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1327,14 +1379,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1343,15 +1395,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -1362,15 +1415,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1380,14 +1434,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1396,15 +1450,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -1415,15 +1470,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1433,14 +1489,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1449,15 +1505,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -1468,15 +1525,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1486,14 +1544,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1502,15 +1560,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -1521,15 +1580,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1539,14 +1599,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1555,15 +1615,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -1574,15 +1635,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1592,14 +1654,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1608,15 +1670,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -1627,15 +1690,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1645,14 +1709,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1661,15 +1725,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -1680,15 +1745,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1698,14 +1764,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1714,15 +1780,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -1733,15 +1800,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1751,14 +1819,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1767,15 +1835,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -1786,15 +1855,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1804,14 +1874,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1820,15 +1890,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -1839,15 +1910,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1857,14 +1929,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1873,15 +1945,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -1892,15 +1965,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1910,14 +1984,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1926,15 +2000,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -1945,15 +2020,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1963,14 +2039,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1979,15 +2055,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -1998,15 +2075,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -2016,14 +2094,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -2032,15 +2110,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         \times 2/3 {
                             
@@ -2051,15 +2130,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            [
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -2069,14 +2149,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             <d' f' a' c''>8
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -2085,15 +2165,16 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <d' f' a' c''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
+                            <d' f' a' c''>8
+                            ]
+                            ^ \markup {
+                                \center-align
+                                    \concat
+                                        {
+                                            \natural
+                                            \flat
+                                        }
+                                }
                         }
                         
                         %%% PianoMusicVoice [measure 287] %%%
@@ -2119,32 +2200,35 @@
                                     #10
                                     Pf.
                                 }
-                            fs'''2. :32 \fff
-                                ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    \override
-                                                        #'(box-padding . 0.75)
-                                                        \box
-                                                            "to piano"
-                                                }
-                                            \line
-                                                {
-                                                    @
-                                                }
-                                        }
+                            fs'''2.
+                            :32
+                            \fff
+                            ^ \markup {
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                \override
+                                                    #'(box-padding . 0.75)
+                                                    \box
+                                                        "to piano"
+                                            }
+                                        \line
+                                            {
+                                                @
+                                            }
                                     }
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs'''1 :32
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs'''1
+                            :32
+                            - \tweak color #red
+                            ^ \markup { @ }
                             \bar "|"
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
@@ -2175,7 +2259,8 @@
                         \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 47/8 \ppp
+                        R1 * 47/8
+                        \ppp
                         
                         %%% PercussionMusicVoice [measure 285] %%%
                         \override DynamicLineSpanner.staff-padding = #'6
@@ -2187,64 +2272,80 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c4 -\accent -\ff
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                crotales
-                                }
+                        c4
+                        -\accent
+                        -\ff
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            crotales
+                            }
                         
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c4 -\accent -\ff
+                        c4
+                        -\accent
+                        -\ff
                         
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c4 -\accent -\ff
+                        c4
+                        -\accent
+                        -\ff
                         
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c4 -\accent -\ff
+                        c4
+                        -\accent
+                        -\ff
                         
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c4 -\accent -\ff
+                        c4
+                        -\accent
+                        -\ff
                         
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c4 -\accent -\ff
+                        c4
+                        -\accent
+                        -\ff
                         
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c4 -\accent -\ff
+                        c4
+                        -\accent
+                        -\ff
                         
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c4 -\accent -\ff
+                        c4
+                        -\accent
+                        -\ff
                         \revert DynamicLineSpanner.staff-padding
                         
                         %%% PercussionMusicVoice [measure 287] %%%
@@ -2270,18 +2371,21 @@
                                     Xyl.
                                 }
                             \clef "treble"
-                            fs''4 :32 \fff
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''4
+                            :32
+                            \fff
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''1. :32
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs''1.
+                            :32
+                            - \tweak color #red
+                            ^ \markup { @ }
                             \bar "|"
                             \revert TupletBracket.staff-padding
                             
@@ -2320,24 +2424,27 @@
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            df'2. :32 \pp
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                _ \markup {
-                                    \dynamic
-                                        fff
-                                    \upright
-                                        possibile
-                                    }
+                            df'2.
+                            :32
+                            \pp
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            _ \markup {
+                                \dynamic
+                                    fff
+                                \upright
+                                    possibile
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            df'2 :32
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            df'2
+                            :32
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \times 2/3 {
                             
@@ -2348,9 +2455,10 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            af'4 \ppp
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            af'4
+                            \ppp
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -2358,8 +2466,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             af'2
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         {
                             
@@ -2368,42 +2476,53 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            af'4 \glissando
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            af'4
+                            \glissando
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
-                            cs'1 ~
+                            cs'1
+                            ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
                             
                             %%% ViolinMusicVoice [measure 284] %%%
-                            cs'1 \glissando
+                            cs'1
+                            \glissando
                             
-                            c'2. \glissando
+                            c'2.
+                            \glissando
                         }
                         \times 2/3 {
                             
-                            d'4 \glissando
+                            d'4
+                            \glissando
                             
-                            f2 ~
+                            f2
+                            ~
                         }
                         \times 4/5 {
                             
                             %%% ViolinMusicVoice [measure 285] %%%
-                            f16 \glissando
+                            f16
+                            \glissando
                             
-                            bf'4 \glissando
+                            bf'4
+                            \glissando
                         }
                         \times 4/7 {
                             
-                            fs'4 \glissando
+                            fs'4
+                            \glissando
                             
-                            b'8. ~
+                            b'8.
+                            ~
                         }
                         \times 2/3 {
                             
-                            b'8 \glissando
+                            b'8
+                            \glissando
                             
                             af'4
                             \revert NoteHead.style
@@ -2417,16 +2536,19 @@
                             %%% ViolinMusicVoice [measure 287] %%%
                             \override DynamicLineSpanner.staff-padding = #'7
                             \override TupletBracket.staff-padding = #3
-                            d''2. \fff \glissando
+                            d''2.
+                            \fff
+                            \glissando
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            ef''2 :32
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            ef''2
+                            :32
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/5 {
@@ -2437,18 +2559,20 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            ef''2. :32
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            ef''2.
+                            :32
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            ef''2 :32
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            ef''2
+                            :32
+                            - \tweak color #red
+                            ^ \markup { @ }
                             \bar "|"
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
@@ -2482,31 +2606,36 @@
                             \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            c4 :32 \fff
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                _ \markup {
-                                    \dynamic
-                                        fff
-                                    \upright
-                                        possibile
-                                    }
+                            c4
+                            :32
+                            \fff
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            _ \markup {
+                                \dynamic
+                                    fff
+                                \upright
+                                    possibile
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            c1 :32
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            c1
+                            :32
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/9 {
                             
                             %%% ViolaMusicVoice [measure 283] %%%
                             \override NoteHead.style = #'harmonic
-                            b2. \ppp \glissando
+                            b2.
+                            \ppp
+                            \glissando
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -2514,8 +2643,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c1.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \times 4/5 {
                             
@@ -2524,41 +2653,52 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            c8 \glissando
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            c8
+                            \glissando
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
-                            e2 ~
+                            e2
+                            ~
                         }
                         \times 4/7 {
                             
                             %%% ViolaMusicVoice [measure 284] %%%
-                            e2 \glissando
+                            e2
+                            \glissando
                             
-                            fs4. \glissando
+                            fs4.
+                            \glissando
                         }
                         {
                             
-                            f4 \glissando
+                            f4
+                            \glissando
                             
-                            af2 ~
+                            af2
+                            ~
                         }
                         \times 4/5 {
                             
-                            af8 \glissando
+                            af8
+                            \glissando
                             
-                            cs2 \glissando
+                            cs2
+                            \glissando
                         }
                         \times 4/7 {
                             
                             %%% ViolaMusicVoice [measure 285] %%%
-                            e4 \glissando
+                            e4
+                            \glissando
                             
-                            g8. ~
+                            g8.
+                            ~
                         }
                         \times 2/3 {
                             
-                            g4 \glissando
+                            g4
+                            \glissando
                             
                             a2
                             \revert NoteHead.style
@@ -2572,16 +2712,19 @@
                             %%% ViolaMusicVoice [measure 287] %%%
                             \override DynamicLineSpanner.staff-padding = #'9
                             \override TupletBracket.staff-padding = #5
-                            d4 \fff \glissando
+                            d4
+                            \fff
+                            \glissando
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            a1 :32
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            a1
+                            :32
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/5 {
@@ -2592,18 +2735,20 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            a4 :32
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            a4
+                            :32
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            a1 :32
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            a1
+                            :32
+                            - \tweak color #red
+                            ^ \markup { @ }
                             \bar "|"
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding
@@ -2637,68 +2782,85 @@
                             \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            c,2 :32 \fff
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                _ \markup {
-                                    \dynamic
-                                        fff
-                                    \upright
-                                        possibile
-                                    }
+                            c,2
+                            :32
+                            \fff
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            _ \markup {
+                                \dynamic
+                                    fff
+                                \upright
+                                    possibile
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            c,2. :32
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            c,2.
+                            :32
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \times 2/3 {
                             
                             %%% CelloMusicVoice [measure 283] %%%
                             \override NoteHead.style = #'harmonic
-                            a,4 \ppp \glissando
+                            a,4
+                            \ppp
+                            \glissando
                             
-                            bf,2 \glissando
+                            bf,2
+                            \glissando
                         }
                         \times 4/5 {
                             
-                            f,8. \glissando
+                            f,8.
+                            \glissando
                             
-                            d,2. ~
+                            d,2.
+                            ~
                         }
                         \times 4/7 {
                             
-                            d,2 \glissando
+                            d,2
+                            \glissando
                             
-                            b,4. \glissando
+                            b,4.
+                            \glissando
                         }
                         \times 2/3 {
                             
                             %%% CelloMusicVoice [measure 284] %%%
-                            bf,4 \glissando
+                            bf,4
+                            \glissando
                             
-                            g,2 ~
+                            g,2
+                            ~
                         }
                         {
                             
-                            g,4 \glissando
+                            g,4
+                            \glissando
                             
-                            f,1 \glissando
+                            f,1
+                            \glissando
                         }
                         \times 4/7 {
                             
                             %%% CelloMusicVoice [measure 285] %%%
-                            b,2 \glissando
+                            b,2
+                            \glissando
                             
-                            c4. ~
+                            c4.
+                            ~
                         }
                         \times 2/3 {
                             
-                            c8 \glissando
+                            c8
+                            \glissando
                             
                             bf,4
                             \revert NoteHead.style
@@ -2712,16 +2874,19 @@
                             %%% CelloMusicVoice [measure 287] %%%
                             \override DynamicLineSpanner.staff-padding = #'9
                             \override TupletBracket.staff-padding = #5
-                            d2 \fff \glissando
+                            d2
+                            \fff
+                            \glissando
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            eqf,2. :32
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            eqf,2.
+                            :32
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/5 {
@@ -2732,18 +2897,20 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            eqf,2 :32
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            eqf,2
+                            :32
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            eqf,2. :32
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            eqf,2.
+                            :32
+                            - \tweak color #red
+                            ^ \markup { @ }
                             \bar "|"
                             \revert DynamicLineSpanner.staff-padding
                             \revert TupletBracket.staff-padding

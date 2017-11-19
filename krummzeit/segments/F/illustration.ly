@@ -18,7 +18,8 @@
                 \time 9/8
                 \mark #6
                 \once \override GlobalContext.TimeSignature.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                s1 * 9/8 ^ \markup {
+                s1 * 9/8
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -94,7 +95,8 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 \time 6/4
-                s1 * 3/2 \startTextSpan
+                s1 * 3/2
+                \startTextSpan
                 
                 %%% GlobalSkips [measure 246] %%%
                 \time 7/4
@@ -126,7 +128,9 @@
                 
                 %%% GlobalSkips [measure 253] %%%
                 \time 3/4
-                s1 * 3/4 \stopTextSpan ^ \markup {
+                s1 * 3/4
+                \stopTextSpan
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -170,45 +174,61 @@
                         \clef "treble"
                         \once \override OboeMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 19/8 \ppp
+                        R1 * 19/8
+                        \ppp
                         {
                             
                             %%% OboeMusicVoice [measure 238] %%%
-                            a'''4. -\staccato \< \p
+                            a'''4.
+                            -\staccato
+                            \<
+                            \p
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
                             
-                            af'''4 -\staccato
+                            af'''4
+                            -\staccato
                             
-                            c'''4 -\staccato
+                            c'''4
+                            -\staccato
                             
-                            bf'''4 ~
+                            bf'''4
+                            ~
                         }
                         {
                             
                             %%% OboeMusicVoice [measure 239] %%%
                             bf'''4
                             
-                            af'''4 -\staccato
+                            af'''4
+                            -\staccato
                         }
                         {
                             
-                            d'''16 -\staccato [
+                            d'''16
+                            -\staccato
+                            [
                             
-                            cs'''16 -\staccato
+                            cs'''16
+                            -\staccato
                             
-                            ef'''16 -\staccato
+                            ef'''16
+                            -\staccato
                             
-                            f'''16 ~ ]
+                            f'''16
+                            ~
+                            ]
                         }
                         \times 2/3 {
                             
                             f'''4
                             
-                            d'''4 -\staccato
+                            d'''4
+                            -\staccato
                             
-                            b''4 ~
+                            b''4
+                            ~
                         }
                         {
                             
@@ -217,36 +237,52 @@
                         }
                         {
                             
-                            fs''4 -\staccato
+                            fs''4
+                            -\staccato
                             
-                            g''4 -\staccato
+                            g''4
+                            -\staccato
                         }
                         \times 8/12 {
                             
                             %%% OboeMusicVoice [measure 241] %%%
-                            a''16 -\staccato [
+                            a''16
+                            -\staccato
+                            [
                             
-                            ef''16 -\staccato
+                            ef''16
+                            -\staccato
                             
-                            f''16 -\staccato
+                            f''16
+                            -\staccato
                             
-                            af''16 -\staccato
+                            af''16
+                            -\staccato
                             
-                            a''16 -\staccato
+                            a''16
+                            -\staccato
                             
-                            c'''16 -\staccato
+                            c'''16
+                            -\staccato
                             
-                            d''16 -\staccato
+                            d''16
+                            -\staccato
                             
-                            bf''16 -\staccato
+                            bf''16
+                            -\staccato
                             
-                            f''16 -\staccato
+                            f''16
+                            -\staccato
                             
-                            g''16 -\staccato
+                            g''16
+                            -\staccato
                             
-                            a''16 -\staccato
+                            a''16
+                            -\staccato
                             
-                            b'16 ~ ]
+                            b'16
+                            ~
+                            ]
                         }
                         {
                             
@@ -255,60 +291,77 @@
                         {
                             
                             %%% OboeMusicVoice [measure 242] %%%
-                            f''4. ~
+                            f''4.
+                            ~
                         }
                         {
                             
-                            f''4. ~
+                            f''4.
+                            ~
                         }
                         \times 8/12 {
                             
                             %%% OboeMusicVoice [measure 243] %%%
-                            f''16 [
+                            f''16
+                            [
                             
-                            ef''16 -\staccato
+                            ef''16
+                            -\staccato
                             
-                            f''16 -\staccato
+                            f''16
+                            -\staccato
                             
-                            fs''16 -\staccato
+                            fs''16
+                            -\staccato
                             
-                            cs''16 -\staccato
-                            
-                            \once \override Accidental.color = #red
-                            \once \override Beam.color = #red
-                            \once \override Dots.color = #red
-                            \once \override NoteHead.color = #red
-                            \once \override Stem.color = #red
-                            a'16 -\staccato
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            cs''16
+                            -\staccato
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            a'16 -\staccato
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            a'16
+                            -\staccato
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
-                            g''16 -\staccato
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
+                            a'16
+                            -\staccato
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
-                            a'16 -\staccato
+                            g''16
+                            -\staccato
                             
-                            ef''16 -\staccato
+                            a'16
+                            -\staccato
                             
-                            f''16 -\staccato
+                            ef''16
+                            -\staccato
                             
-                            cs''16 -\staccato ]
+                            f''16
+                            -\staccato
+                            
+                            cs''16
+                            -\staccato
+                            ]
                         }
                         {
                             
-                            af'4 -\staccato
+                            af'4
+                            -\staccato
                         }
                         {
                             
-                            f''4. ~
+                            f''4.
+                            ~
                         }
                         {
                             
@@ -318,33 +371,50 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 10/14 {
                             
-                            g'16 -\staccato [
+                            g'16
+                            -\staccato
+                            [
                             
-                            a'16 -\staccato
+                            a'16
+                            -\staccato
                             
-                            f'16 -\staccato
+                            f'16
+                            -\staccato
                             
-                            d'16 -\staccato
+                            d'16
+                            -\staccato
                             
-                            bf'16 -\staccato
+                            bf'16
+                            -\staccato
                             
-                            b'16 -\staccato
+                            b'16
+                            -\staccato
                             
-                            cs''16 -\staccato
+                            cs''16
+                            -\staccato
                             
-                            a'16 -\staccato
+                            a'16
+                            -\staccato
                             
-                            ef'16 -\staccato
+                            ef'16
+                            -\staccato
                             
-                            f'16 -\staccato
+                            f'16
+                            -\staccato
                             
-                            fs'16 -\staccato
+                            fs'16
+                            -\staccato
                             
-                            g'16 -\staccato
+                            g'16
+                            -\staccato
                             
-                            b'16 -\staccato
+                            b'16
+                            -\staccato
                             
-                            c'16 -\staccato \ff ]
+                            c'16
+                            -\staccato
+                            \ff
+                            ]
                         }
                         
                         %%% OboeMusicVoice [measure 245] %%%
@@ -386,7 +456,8 @@
                         \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 19/8 \ppp
+                        R1 * 19/8
+                        \ppp
                         \times 2/3 {
                             
                             %%% ClarinetMusicVoice [measure 238] %%%
@@ -408,21 +479,27 @@
                                             (Eb)
                                         }
                                 }
-                            c'4 -\staccato \< \p
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to clarinet in E-flat"
-                                    }
+                            c'4
+                            -\staccato
+                            \<
+                            \p
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to clarinet in E-flat"
+                                }
                             
-                            as4 -\staccato
+                            as4
+                            -\staccato
                             
-                            d'4 -\staccato
+                            d'4
+                            -\staccato
                         }
                         {
                             
-                            gs'4 ~
+                            gs'4
+                            ~
                         }
                         {
                             
@@ -431,38 +508,52 @@
                         {
                             
                             %%% ClarinetMusicVoice [measure 239] %%%
-                            fs'8 -\staccato [
+                            fs'8
+                            -\staccato
+                            [
                             
-                            d'8 ~ ]
+                            d'8
+                            ~
+                            ]
                         }
                         \times 2/3 {
                             
                             d'4
                             
-                            gs'4 -\staccato
+                            gs'4
+                            -\staccato
                             
-                            fs'4 ~
+                            fs'4
+                            ~
                         }
                         \times 2/3 {
                             
                             fs'4
                             
-                            g'4 -\staccato
+                            g'4
+                            -\staccato
                             
-                            a'4 -\staccato
+                            a'4
+                            -\staccato
                         }
                         {
                             
                             %%% ClarinetMusicVoice [measure 240] %%%
-                            as'4 -\staccato
+                            as'4
+                            -\staccato
                             
-                            f''4 -\staccato
+                            f''4
+                            -\staccato
                         }
                         {
                             
-                            ds''8 -\staccato [
+                            ds''8
+                            -\staccato
+                            [
                             
-                            as'8 ~ ]
+                            as'8
+                            ~
+                            ]
                         }
                         {
                             
@@ -471,33 +562,42 @@
                         }
                         {
                             
-                            f''4. ~
+                            f''4.
+                            ~
                         }
                         {
                             
                             %%% ClarinetMusicVoice [measure 242] %%%
                             f''4
                             
-                            fs''4 ~
+                            fs''4
+                            ~
                         }
                         {
                             
-                            fs''8 [
+                            fs''8
+                            [
                             
-                            a''8 -\staccato ]
+                            a''8
+                            -\staccato
+                            ]
                         }
                         {
                             
                             %%% ClarinetMusicVoice [measure 243] %%%
-                            b''4 -\staccato
+                            b''4
+                            -\staccato
                         }
                         \times 2/3 {
                             
-                            d'''4 -\staccato
+                            d'''4
+                            -\staccato
                             
-                            ds'''4 -\staccato
+                            ds'''4
+                            -\staccato
                             
-                            fs''4 ~
+                            fs''4
+                            ~
                         }
                         {
                             
@@ -506,17 +606,24 @@
                         {
                             
                             %%% ClarinetMusicVoice [measure 244] %%%
-                            gs''8 -\staccato [
+                            gs''8
+                            -\staccato
+                            [
                             
-                            a''8 -\staccato
+                            a''8
+                            -\staccato
                             
-                            f'''8 -\staccato
+                            f'''8
+                            -\staccato
                             
-                            a''8 ~ ]
+                            a''8
+                            ~
+                            ]
                         }
                         {
                             
-                            a''4. \ff
+                            a''4.
+                            \ff
                             \revert Beam.positions
                             \revert TupletBracket.staff-padding
                             \revert DynamicLineSpanner.staff-padding
@@ -546,33 +653,41 @@
                                         cl.
                                     }
                             }
-                        cs4. \ppp
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to bass clarinet"
-                                }
+                        cs4.
+                        \ppp
+                        ^ \markup {
+                            \override
+                                #'(box-padding . 0.75)
+                                \box
+                                    "to bass clarinet"
+                            }
                         
-                        cs4 \repeatTie
+                        cs4
+                        \repeatTie
                         
                         %%% ClarinetMusicVoice [measure 251] %%%
-                        cs1 \repeatTie
+                        cs1
+                        \repeatTie
                         
                         %%% ClarinetMusicVoice [measure 252] %%%
-                        cs1. \repeatTie
+                        cs1.
+                        \repeatTie
                         
                         %%% ClarinetMusicVoice [measure 253] %%%
-                        cs2. \repeatTie
+                        cs2.
+                        \repeatTie
                         
                         %%% ClarinetMusicVoice [measure 254] %%%
-                        cs1 \repeatTie
+                        cs1
+                        \repeatTie
                         
                         %%% ClarinetMusicVoice [measure 255] %%%
-                        cs2.. \repeatTie
+                        cs2..
+                        \repeatTie
                         
                         %%% ClarinetMusicVoice [measure 256] %%%
-                        cs2.. \repeatTie
+                        cs2..
+                        \repeatTie
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
                         \revert Stem.direction
@@ -602,7 +717,8 @@
                         \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 19/8 \fff
+                        R1 * 19/8
+                        \fff
                         \times 4/5 {
                             
                             %%% PianoMusicVoice [measure 238] %%%
@@ -617,27 +733,31 @@
                                     Hpschd.
                                 }
                             r16
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to harpsichord"
-                                    }
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to harpsichord"
+                                }
                             
-                            f''16 [
+                            f''16
+                            [
                             
                             fs''16
                             
-                            g''8 ]
+                            g''8
+                            ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
                             r8
                             
-                            g''8 [
+                            g''8
+                            [
                             
-                            a''8 ]
+                            a''8
+                            ]
                             
                             r4
                             
@@ -659,9 +779,11 @@
                             
                             r8
                             
-                            fs'8 [
+                            fs'8
+                            [
                             
-                            g'8 ]
+                            g'8
+                            ]
                             
                             r4
                             
@@ -672,19 +794,23 @@
                             %%% PianoMusicVoice [measure 240] %%%
                             r16
                             
-                            a'16 [
+                            a'16
+                            [
                             
                             ef'16
                             
-                            f'8 ]
+                            f'8
+                            ]
                         }
                         \times 4/7 {
                             
                             r8
                             
-                            a'8 [
+                            a'8
+                            [
                             
-                            f'8 ]
+                            f'8
+                            ]
                             
                             r4
                             
@@ -696,9 +822,11 @@
                             \clef "bass"
                             r8
                             
-                            g'8 [
+                            g'8
+                            [
                             
-                            f'8 ]
+                            f'8
+                            ]
                             
                             b4
                         }
@@ -706,9 +834,11 @@
                             
                             r16
                             
-                            c'16 [
+                            c'16
+                            [
                             
-                            d'16 ]
+                            d'16
+                            ]
                             
                             r8
                             
@@ -719,19 +849,23 @@
                             %%% PianoMusicVoice [measure 242] %%%
                             r16
                             
-                            fs16 [
+                            fs16
+                            [
                             
                             g16
                             
-                            cs'8 ]
+                            cs'8
+                            ]
                         }
                         \times 4/7 {
                             
                             r8
                             
-                            ef'8 [
+                            ef'8
+                            [
                             
-                            bf8 ]
+                            bf8
+                            ]
                             
                             r4
                             
@@ -754,9 +888,11 @@
                             
                             r16
                             
-                            g16 [
+                            g16
+                            [
                             
-                            d16 ]
+                            d16
+                            ]
                             
                             r8
                             
@@ -772,19 +908,23 @@
                             %%% PianoMusicVoice [measure 247] %%%
                             r16
                             
-                            d16 [
+                            d16
+                            [
                             
                             bf16
                             
-                            g8 ]
+                            g8
+                            ]
                         }
                         \times 4/7 {
                             
                             r8
                             
-                            cs8 [
+                            cs8
+                            [
                             
-                            a8 ]
+                            a8
+                            ]
                             
                             r4
                             
@@ -798,20 +938,24 @@
                             %%% PianoMusicVoice [measure 250] %%%
                             r16
                             
-                            f,16 [
+                            f,16
+                            [
                             
                             fs,16
                             
-                            f,8 ]
+                            f,8
+                            ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
                             r16
                             
-                            g,16 [
+                            g,16
+                            [
                             
-                            af,16 ]
+                            af,16
+                            ]
                             
                             r8
                             
@@ -847,15 +991,16 @@
                         \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        r1 \pp
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                "snare drum"
-                                }
+                        r1
+                        \pp
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            "snare drum"
+                            }
                         
                         r8
                         
@@ -865,19 +1010,24 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c2 :32 \ppp ~
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        "rapid roll with fingertips: keep speed constant during accelerando"
-                                }
+                        c2
+                        :32
+                        \ppp
+                        ~
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    "rapid roll with fingertips: keep speed constant during accelerando"
+                            }
                         
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c8 :32 ~
+                        c8
+                        :32
+                        ~
                         
                         %%% PercussionMusicVoice [measure 237] %%%
                         \once \override Beam.color = #blue
@@ -885,14 +1035,17 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c2 :32 ~
+                        c2
+                        :32
+                        ~
                         
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c8 :32
+                        c8
+                        :32
                         
                         %%% PercussionMusicVoice [measure 238] %%%
                         R1 * 1
@@ -903,14 +1056,18 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c1 :32 ~
+                        c1
+                        :32
+                        ~
                         
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c4 :32 ~
+                        c4
+                        :32
+                        ~
                         
                         %%% PercussionMusicVoice [measure 240] %%%
                         \once \override Beam.color = #blue
@@ -918,7 +1075,9 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c2. :32 ~
+                        c2.
+                        :32
+                        ~
                         
                         %%% PercussionMusicVoice [measure 241] %%%
                         \once \override Beam.color = #blue
@@ -926,7 +1085,9 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c2. :32 ~
+                        c2.
+                        :32
+                        ~
                         
                         %%% PercussionMusicVoice [measure 242] %%%
                         \once \override Beam.color = #blue
@@ -934,7 +1095,9 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c2. :32 ~
+                        c2.
+                        :32
+                        ~
                         
                         %%% PercussionMusicVoice [measure 243] %%%
                         \once \override Beam.color = #blue
@@ -942,14 +1105,17 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c1 :32 ~
+                        c1
+                        :32
+                        ~
                         
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c8 :32
+                        c8
+                        :32
                         
                         %%% PercussionMusicVoice [measure 244] %%%
                         R1 * 33/8
@@ -960,7 +1126,8 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c2. :32
+                        c2.
+                        :32
                         
                         %%% PercussionMusicVoice [measure 248] %%%
                         R1 * 25/8
@@ -971,14 +1138,17 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c2 :32 ~
+                        c2
+                        :32
+                        ~
                         
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c8 :32
+                        c8
+                        :32
                         
                         %%% PercussionMusicVoice [measure 251] %%%
                         R1 * 5/2
@@ -989,69 +1159,76 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c2 -\p
-                            ^ \markup {
-                                \column
-                                    {
-                                        \line
-                                            {
-                                                \whiteout
-                                                    \upright
-                                                        \override
-                                                            #'(box-padding . 0.5)
-                                                            \box
-                                                                tam-tam
-                                            }
-                                        \line
-                                            {
-                                                \whiteout
-                                                    \upright
-                                                        attackless
-                                            }
-                                    }
+                        c2
+                        -\p
+                        ^ \markup {
+                            \column
+                                {
+                                    \line
+                                        {
+                                            \whiteout
+                                                \upright
+                                                    \override
+                                                        #'(box-padding . 0.5)
+                                                        \box
+                                                            tam-tam
+                                        }
+                                    \line
+                                        {
+                                            \whiteout
+                                                \upright
+                                                    attackless
+                                        }
                                 }
+                            }
                         
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c2 -\p
+                        c2
+                        -\p
                         
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c2 -\p
+                        c2
+                        -\p
                         
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c2 -\p
+                        c2
+                        -\p
                         
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c2 -\p
+                        c2
+                        -\p
                         
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c2 -\p
+                        c2
+                        -\p
                         
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        c2 -\p
+                        c2
+                        -\p
                         \bar "|"
                         \revert DynamicLineSpanner.staff-padding
                         
@@ -1082,7 +1259,8 @@
                         \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 43/8 \ppp
+                        R1 * 43/8
+                        \ppp
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 12/7 {
                             
@@ -1092,22 +1270,23 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs4. \fff
-                                ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    \whiteout
-                                                        \upright
-                                                            "gridato possibile"
-                                                }
-                                            \line
-                                                {
-                                                    @
-                                                }
-                                        }
+                            fs4.
+                            \fff
+                            ^ \markup {
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        "gridato possibile"
+                                            }
+                                        \line
+                                            {
+                                                @
+                                            }
                                     }
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1115,8 +1294,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs2
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
@@ -1128,8 +1307,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs2.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1137,8 +1316,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs1
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 13/7 {
@@ -1173,9 +1352,10 @@
                                 }
                             \override TextSpanner.dash-fraction = #0.25
                             \override TextSpanner.dash-period = #1.5
-                            fs2. \startTextSpan
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs2.
+                            \startTextSpan
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1183,8 +1363,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs1
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 10/7 {
@@ -1196,8 +1376,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs2.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1205,8 +1385,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs1
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
@@ -1218,8 +1398,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs2.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \revert TextSpanner.bound-details
                             \revert TextSpanner.dash-fraction
@@ -1229,9 +1409,10 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs1 \stopTextSpan
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            fs1
+                            \stopTextSpan
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 13/7 {
@@ -1243,8 +1424,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs2.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1252,8 +1433,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs1
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         
                         %%% ViolinMusicVoice [measure 254] %%%
@@ -1281,11 +1462,14 @@
                         \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 9/8 \ppp
+                        R1 * 9/8
+                        \ppp
                         
                         %%% ViolaMusicVoice [measure 236] %%%
                         \override DynamicLineSpanner.staff-padding = #'6
-                        fs8.. \< \ppp
+                        fs8..
+                        \<
+                        \ppp
                         
                         r32
                         
@@ -1352,7 +1536,8 @@
                         
                         r32
                         
-                        fs8.. \fff
+                        fs8..
+                        \fff
                         
                         r32
                         \revert DynamicLineSpanner.staff-padding
@@ -1371,22 +1556,23 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            bf,4 \fff
-                                ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    \whiteout
-                                                        \upright
-                                                            "gridato possibile"
-                                                }
-                                            \line
-                                                {
-                                                    @
-                                                }
-                                        }
+                            bf,4
+                            \fff
+                            ^ \markup {
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        "gridato possibile"
+                                            }
+                                        \line
+                                            {
+                                                @
+                                            }
                                     }
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1394,8 +1580,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             bf,1.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 10/7 {
@@ -1430,9 +1616,10 @@
                                 }
                             \override TextSpanner.dash-fraction = #0.25
                             \override TextSpanner.dash-period = #1.5
-                            bf,4 \startTextSpan
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            bf,4
+                            \startTextSpan
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1440,8 +1627,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             bf,1.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
@@ -1453,8 +1640,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             bf,4
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \revert TextSpanner.bound-details
                             \revert TextSpanner.dash-fraction
@@ -1464,9 +1651,10 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            bf,1. \stopTextSpan
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            bf,1.
+                            \stopTextSpan
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 13/7 {
@@ -1478,8 +1666,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             bf,4
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1487,8 +1675,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             bf,1.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         
                         %%% ViolaMusicVoice [measure 254] %%%
@@ -1516,11 +1704,14 @@
                         \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 9/8 \ppp
+                        R1 * 9/8
+                        \ppp
                         
                         %%% CelloMusicVoice [measure 236] %%%
                         \override DynamicLineSpanner.staff-padding = #'6
-                        c,8.. \< \ppp
+                        c,8..
+                        \<
+                        \ppp
                         
                         r32
                         
@@ -1536,7 +1727,8 @@
                         
                         r32
                         
-                        c,8.. \fff
+                        c,8..
+                        \fff
                         
                         r32
                         
@@ -1558,22 +1750,23 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            a,,1. \fff
-                                ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    \whiteout
-                                                        \upright
-                                                            "gridato possibile"
-                                                }
-                                            \line
-                                                {
-                                                    @
-                                                }
-                                        }
+                            a,,1.
+                            \fff
+                            ^ \markup {
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                \whiteout
+                                                    \upright
+                                                        "gridato possibile"
+                                            }
+                                        \line
+                                            {
+                                                @
+                                            }
                                     }
+                                }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1581,8 +1774,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             a,,4
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 10/7 {
@@ -1617,9 +1810,10 @@
                                 }
                             \override TextSpanner.dash-fraction = #0.25
                             \override TextSpanner.dash-period = #1.5
-                            a,,1. \startTextSpan
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            a,,1.
+                            \startTextSpan
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1627,8 +1821,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             a,,4
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
@@ -1642,9 +1836,10 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            a,,1. \stopTextSpan
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            a,,1.
+                            \stopTextSpan
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1652,8 +1847,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             a,,4
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 13/7 {
@@ -1665,8 +1860,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             a,,1.
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1674,8 +1869,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             a,,4
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            - \tweak color #red
+                            ^ \markup { @ }
                         }
                         
                         %%% CelloMusicVoice [measure 254] %%%

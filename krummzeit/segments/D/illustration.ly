@@ -514,8 +514,35 @@
                         \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-INSTRUMENT
                         \once \override OboeMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                         \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-DYNAMIC
-                        R1 * 37/4
+                        R1 * 3/4
                         \fff % SEGMENT:REMINDER-DYNAMIC
+                        
+                        %%% OboeMusicVoice [measure 153] %%%
+                        R1 * 1
+                        
+                        %%% OboeMusicVoice [measure 154] %%%
+                        R1 * 9/8
+                        
+                        %%% OboeMusicVoice [measure 155] %%%
+                        R1 * 3/4
+                        
+                        %%% OboeMusicVoice [measure 156] %%%
+                        R1 * 5/8
+                        
+                        %%% OboeMusicVoice [measure 157] %%%
+                        R1 * 9/8
+                        
+                        %%% OboeMusicVoice [measure 158] %%%
+                        R1 * 9/8
+                        
+                        %%% OboeMusicVoice [measure 159] %%%
+                        R1 * 5/8
+                        
+                        %%% OboeMusicVoice [measure 160] %%%
+                        R1 * 7/8
+                        
+                        %%% OboeMusicVoice [measure 161] %%%
+                        R1 * 5/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
@@ -1025,7 +1052,34 @@
                         }
                         
                         %%% OboeMusicVoice [measure 176] %%%
-                        R1 * 79/8
+                        R1 * 1
+                        
+                        %%% OboeMusicVoice [measure 177] %%%
+                        R1 * 5/4
+                        
+                        %%% OboeMusicVoice [measure 178] %%%
+                        R1 * 5/4
+                        
+                        %%% OboeMusicVoice [measure 179] %%%
+                        R1 * 3/4
+                        
+                        %%% OboeMusicVoice [measure 180] %%%
+                        R1 * 3/4
+                        
+                        %%% OboeMusicVoice [measure 181] %%%
+                        R1 * 1
+                        
+                        %%% OboeMusicVoice [measure 182] %%%
+                        R1 * 11/8
+                        
+                        %%% OboeMusicVoice [measure 183] %%%
+                        R1 * 3/4
+                        
+                        %%% OboeMusicVoice [measure 184] %%%
+                        R1 * 5/8
+                        
+                        %%% OboeMusicVoice [measure 185] %%%
+                        R1 * 9/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/10 {
                             
@@ -1375,7 +1429,16 @@
                         }
                         
                         %%% OboeMusicVoice [measure 196] %%%
-                        R1 * 29/8
+                        R1 * 9/8
+                        
+                        %%% OboeMusicVoice [measure 197] %%%
+                        R1 * 3/4
+                        
+                        %%% OboeMusicVoice [measure 198] %%%
+                        R1 * 5/8
+                        
+                        %%% OboeMusicVoice [measure 199] %%%
+                        R1 * 9/8
                         \bar "|"
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
@@ -1413,8 +1476,35 @@
                         \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-INSTRUMENT
                         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-DYNAMIC
-                        R1 * 37/4
+                        R1 * 3/4
                         \ppp % SEGMENT:REMINDER-DYNAMIC
+                        
+                        %%% ClarinetMusicVoice [measure 153] %%%
+                        R1 * 1
+                        
+                        %%% ClarinetMusicVoice [measure 154] %%%
+                        R1 * 9/8
+                        
+                        %%% ClarinetMusicVoice [measure 155] %%%
+                        R1 * 3/4
+                        
+                        %%% ClarinetMusicVoice [measure 156] %%%
+                        R1 * 5/8
+                        
+                        %%% ClarinetMusicVoice [measure 157] %%%
+                        R1 * 9/8
+                        
+                        %%% ClarinetMusicVoice [measure 158] %%%
+                        R1 * 9/8
+                        
+                        %%% ClarinetMusicVoice [measure 159] %%%
+                        R1 * 5/8
+                        
+                        %%% ClarinetMusicVoice [measure 160] %%%
+                        R1 * 7/8
+                        
+                        %%% ClarinetMusicVoice [measure 161] %%%
+                        R1 * 5/4
                         
                         %%% ClarinetMusicVoice [measure 162] %%%
                         r2.
@@ -1487,7 +1577,67 @@
                         }
                         
                         %%% ClarinetMusicVoice [measure 165] %%%
-                        R1 * 159/8
+                        R1 * 3/4
+                        
+                        %%% ClarinetMusicVoice [measure 166] %%%
+                        R1 * 1
+                        
+                        %%% ClarinetMusicVoice [measure 167] %%%
+                        R1 * 3/2
+                        
+                        %%% ClarinetMusicVoice [measure 168] %%%
+                        R1 * 9/8
+                        
+                        %%% ClarinetMusicVoice [measure 169] %%%
+                        R1 * 3/4
+                        
+                        %%% ClarinetMusicVoice [measure 170] %%%
+                        R1 * 5/8
+                        
+                        %%% ClarinetMusicVoice [measure 171] %%%
+                        R1 * 9/8
+                        
+                        %%% ClarinetMusicVoice [measure 172] %%%
+                        R1 * 9/8
+                        
+                        %%% ClarinetMusicVoice [measure 173] %%%
+                        R1 * 5/8
+                        
+                        %%% ClarinetMusicVoice [measure 174] %%%
+                        R1 * 5/8
+                        
+                        %%% ClarinetMusicVoice [measure 175] %%%
+                        R1 * 3/4
+                        
+                        %%% ClarinetMusicVoice [measure 176] %%%
+                        R1 * 1
+                        
+                        %%% ClarinetMusicVoice [measure 177] %%%
+                        R1 * 5/4
+                        
+                        %%% ClarinetMusicVoice [measure 178] %%%
+                        R1 * 5/4
+                        
+                        %%% ClarinetMusicVoice [measure 179] %%%
+                        R1 * 3/4
+                        
+                        %%% ClarinetMusicVoice [measure 180] %%%
+                        R1 * 3/4
+                        
+                        %%% ClarinetMusicVoice [measure 181] %%%
+                        R1 * 1
+                        
+                        %%% ClarinetMusicVoice [measure 182] %%%
+                        R1 * 11/8
+                        
+                        %%% ClarinetMusicVoice [measure 183] %%%
+                        R1 * 3/4
+                        
+                        %%% ClarinetMusicVoice [measure 184] %%%
+                        R1 * 5/8
+                        
+                        %%% ClarinetMusicVoice [measure 185] %%%
+                        R1 * 9/8
                         
                         %%% ClarinetMusicVoice [measure 186] %%%
                         r1
@@ -1742,7 +1892,16 @@
                         }
                         
                         %%% ClarinetMusicVoice [measure 196] %%%
-                        R1 * 29/8
+                        R1 * 9/8
+                        
+                        %%% ClarinetMusicVoice [measure 197] %%%
+                        R1 * 3/4
+                        
+                        %%% ClarinetMusicVoice [measure 198] %%%
+                        R1 * 5/8
+                        
+                        %%% ClarinetMusicVoice [measure 199] %%%
+                        R1 * 9/8
                         \bar "|"
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
@@ -1772,8 +1931,26 @@
                         \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-INSTRUMENT
                         \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                         \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-DYNAMIC
-                        R1 * 13/2
+                        R1 * 3/4
                         \ff % SEGMENT:REMINDER-DYNAMIC
+                        
+                        %%% PianoMusicVoice [measure 153] %%%
+                        R1 * 1
+                        
+                        %%% PianoMusicVoice [measure 154] %%%
+                        R1 * 9/8
+                        
+                        %%% PianoMusicVoice [measure 155] %%%
+                        R1 * 3/4
+                        
+                        %%% PianoMusicVoice [measure 156] %%%
+                        R1 * 5/8
+                        
+                        %%% PianoMusicVoice [measure 157] %%%
+                        R1 * 9/8
+                        
+                        %%% PianoMusicVoice [measure 158] %%%
+                        R1 * 9/8
                         
                         %%% PianoMusicVoice [measure 159] %%%
                         \override NoteHead.style = #'harmonic
@@ -1930,7 +2107,37 @@
                         \revert NoteHead.style
                         
                         %%% PianoMusicVoice [measure 165] %%%
-                        R1 * 10
+                        R1 * 3/4
+                        
+                        %%% PianoMusicVoice [measure 166] %%%
+                        R1 * 1
+                        
+                        %%% PianoMusicVoice [measure 167] %%%
+                        R1 * 3/2
+                        
+                        %%% PianoMusicVoice [measure 168] %%%
+                        R1 * 9/8
+                        
+                        %%% PianoMusicVoice [measure 169] %%%
+                        R1 * 3/4
+                        
+                        %%% PianoMusicVoice [measure 170] %%%
+                        R1 * 5/8
+                        
+                        %%% PianoMusicVoice [measure 171] %%%
+                        R1 * 9/8
+                        
+                        %%% PianoMusicVoice [measure 172] %%%
+                        R1 * 9/8
+                        
+                        %%% PianoMusicVoice [measure 173] %%%
+                        R1 * 5/8
+                        
+                        %%% PianoMusicVoice [measure 174] %%%
+                        R1 * 5/8
+                        
+                        %%% PianoMusicVoice [measure 175] %%%
+                        R1 * 3/4
                         \revert DynamicLineSpanner.staff-padding
                         \times 4/5 {
                             
@@ -2807,7 +3014,10 @@
                         }
                         
                         %%% PianoMusicVoice [measure 194] %%%
-                        R1 * 9/4
+                        R1 * 5/4
+                        
+                        %%% PianoMusicVoice [measure 195] %%%
+                        R1 * 1
                         
                         %%% PianoMusicVoice [measure 196] %%%
                         \override DynamicLineSpanner.staff-padding = #'6
@@ -3053,7 +3263,10 @@
                         \revert DynamicLineSpanner.staff-padding
                         
                         %%% PercussionMusicVoice [measure 155] %%%
-                        R1 * 11/8
+                        R1 * 3/4
+                        
+                        %%% PercussionMusicVoice [measure 156] %%%
+                        R1 * 5/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/17 {
                             
@@ -3235,7 +3448,28 @@
                         }
                         
                         %%% PercussionMusicVoice [measure 168] %%%
-                        R1 * 27/4
+                        R1 * 9/8
+                        
+                        %%% PercussionMusicVoice [measure 169] %%%
+                        R1 * 3/4
+                        
+                        %%% PercussionMusicVoice [measure 170] %%%
+                        R1 * 5/8
+                        
+                        %%% PercussionMusicVoice [measure 171] %%%
+                        R1 * 9/8
+                        
+                        %%% PercussionMusicVoice [measure 172] %%%
+                        R1 * 9/8
+                        
+                        %%% PercussionMusicVoice [measure 173] %%%
+                        R1 * 5/8
+                        
+                        %%% PercussionMusicVoice [measure 174] %%%
+                        R1 * 5/8
+                        
+                        %%% PercussionMusicVoice [measure 175] %%%
+                        R1 * 3/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
@@ -3395,7 +3629,28 @@
                         }
                         
                         %%% PercussionMusicVoice [measure 178] %%%
-                        R1 * 61/8
+                        R1 * 5/4
+                        
+                        %%% PercussionMusicVoice [measure 179] %%%
+                        R1 * 3/4
+                        
+                        %%% PercussionMusicVoice [measure 180] %%%
+                        R1 * 3/4
+                        
+                        %%% PercussionMusicVoice [measure 181] %%%
+                        R1 * 1
+                        
+                        %%% PercussionMusicVoice [measure 182] %%%
+                        R1 * 11/8
+                        
+                        %%% PercussionMusicVoice [measure 183] %%%
+                        R1 * 3/4
+                        
+                        %%% PercussionMusicVoice [measure 184] %%%
+                        R1 * 5/8
+                        
+                        %%% PercussionMusicVoice [measure 185] %%%
+                        R1 * 9/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
@@ -4459,7 +4714,10 @@
                         }
                         
                         %%% ViolinMusicVoice [measure 176] %%%
-                        R1 * 9/4
+                        R1 * 1
+                        
+                        %%% ViolinMusicVoice [measure 177] %%%
+                        R1 * 5/4
                         \times 2/3 {
                             
                             %%% ViolinMusicVoice [measure 178] %%%
@@ -4660,7 +4918,16 @@
                         }
                         
                         %%% ViolinMusicVoice [measure 186] %%%
-                        R1 * 31/8
+                        R1 * 9/8
+                        
+                        %%% ViolinMusicVoice [measure 187] %%%
+                        R1 * 7/8
+                        
+                        %%% ViolinMusicVoice [measure 188] %%%
+                        R1 * 9/8
+                        
+                        %%% ViolinMusicVoice [measure 189] %%%
+                        R1 * 3/4
                         
                         %%% ViolinMusicVoice [measure 190] %%%
                         \override DynamicLineSpanner.staff-padding = #'8
@@ -4702,7 +4969,10 @@
                         r8
                         
                         %%% ViolinMusicVoice [measure 194] %%%
-                        R1 * 9/4
+                        R1 * 5/4
+                        
+                        %%% ViolinMusicVoice [measure 195] %%%
+                        R1 * 1
                         
                         %%% ViolinMusicVoice [measure 196] %%%
                         r8
@@ -5372,7 +5642,10 @@
                         }
                         
                         %%% ViolaMusicVoice [measure 176] %%%
-                        R1 * 9/4
+                        R1 * 1
+                        
+                        %%% ViolaMusicVoice [measure 177] %%%
+                        R1 * 5/4
                         {
                             
                             %%% ViolaMusicVoice [measure 178] %%%
@@ -5551,7 +5824,16 @@
                         }
                         
                         %%% ViolaMusicVoice [measure 186] %%%
-                        R1 * 31/8
+                        R1 * 9/8
+                        
+                        %%% ViolaMusicVoice [measure 187] %%%
+                        R1 * 7/8
+                        
+                        %%% ViolaMusicVoice [measure 188] %%%
+                        R1 * 9/8
+                        
+                        %%% ViolaMusicVoice [measure 189] %%%
+                        R1 * 3/4
                         
                         %%% ViolaMusicVoice [measure 190] %%%
                         \override DynamicLineSpanner.staff-padding = #'8
@@ -5594,7 +5876,10 @@
                         r8
                         
                         %%% ViolaMusicVoice [measure 194] %%%
-                        R1 * 9/4
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 195] %%%
+                        R1 * 1
                         
                         %%% ViolaMusicVoice [measure 196] %%%
                         \clef "alto"
@@ -6147,7 +6432,10 @@
                         }
                         
                         %%% CelloMusicVoice [measure 176] %%%
-                        R1 * 9/4
+                        R1 * 1
+                        
+                        %%% CelloMusicVoice [measure 177] %%%
+                        R1 * 5/4
                         \times 2/3 {
                             
                             %%% CelloMusicVoice [measure 178] %%%
@@ -6312,7 +6600,16 @@
                         }
                         
                         %%% CelloMusicVoice [measure 186] %%%
-                        R1 * 31/8
+                        R1 * 9/8
+                        
+                        %%% CelloMusicVoice [measure 187] %%%
+                        R1 * 7/8
+                        
+                        %%% CelloMusicVoice [measure 188] %%%
+                        R1 * 9/8
+                        
+                        %%% CelloMusicVoice [measure 189] %%%
+                        R1 * 3/4
                         
                         %%% CelloMusicVoice [measure 190] %%%
                         \override DynamicLineSpanner.staff-padding = #'6
@@ -6355,7 +6652,10 @@
                         r8
                         
                         %%% CelloMusicVoice [measure 194] %%%
-                        R1 * 9/4
+                        R1 * 5/4
+                        
+                        %%% CelloMusicVoice [measure 195] %%%
+                        R1 * 1
                         
                         %%% CelloMusicVoice [measure 196] %%%
                         \clef "bass"

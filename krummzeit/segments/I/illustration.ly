@@ -372,10 +372,73 @@
                         }
                         
                         %%% OboeMusicVoice [measure 292] %%%
-                        R1 * 19
-                        \bar "|"
+                        R1 * 9/8
+                        
+                        %%% OboeMusicVoice [measure 293] %%%
+                        R1 * 3/4
+                        
+                        %%% OboeMusicVoice [measure 294] %%%
+                        R1 * 5/8
+                        
+                        %%% OboeMusicVoice [measure 295] %%%
+                        R1 * 9/8
+                        
+                        %%% OboeMusicVoice [measure 296] %%%
+                        R1 * 9/8
+                        
+                        %%% OboeMusicVoice [measure 297] %%%
+                        R1 * 5/8
+                        
+                        %%% OboeMusicVoice [measure 298] %%%
+                        R1 * 5/8
+                        
+                        %%% OboeMusicVoice [measure 299] %%%
+                        R1 * 1
+                        
+                        %%% OboeMusicVoice [measure 300] %%%
+                        R1 * 5/4
+                        
+                        %%% OboeMusicVoice [measure 301] %%%
+                        R1 * 1
+                        
+                        %%% OboeMusicVoice [measure 302] %%%
+                        R1 * 1
+                        
+                        %%% OboeMusicVoice [measure 303] %%%
+                        R1 * 1
+                        
+                        %%% OboeMusicVoice [measure 304] %%%
+                        R1 * 1
+                        
+                        %%% OboeMusicVoice [measure 305] %%%
+                        R1 * 3/4
+                        
+                        %%% OboeMusicVoice [measure 306] %%%
+                        R1 * 3/4
+                        
+                        %%% OboeMusicVoice [measure 307] %%%
+                        R1 * 3/4
+                        
+                        %%% OboeMusicVoice [measure 308] %%%
+                        R1 * 3/4
+                        
+                        %%% OboeMusicVoice [measure 309] %%%
+                        R1 * 3/4
+                        
+                        %%% OboeMusicVoice [measure 310] %%%
+                        R1 * 3/4
+                        
+                        %%% OboeMusicVoice [measure 311] %%%
+                        R1 * 3/4
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
+                        
+                        %%% OboeMusicVoice [measure 312] %%%
+                        R1 * 5/4
+                        
+                        %%% OboeMusicVoice [measure 313] %%%
+                        R1 * 1/4
+                        \bar "|"
                         
                     }
                 }
@@ -736,9 +799,33 @@
                         \revert Stem.direction
                         
                         %%% ClarinetMusicVoice [measure 305] %%%
-                        R1 * 27/4
-                        \bar "|"
+                        R1 * 3/4
+                        
+                        %%% ClarinetMusicVoice [measure 306] %%%
+                        R1 * 3/4
+                        
+                        %%% ClarinetMusicVoice [measure 307] %%%
+                        R1 * 3/4
+                        
+                        %%% ClarinetMusicVoice [measure 308] %%%
+                        R1 * 3/4
+                        
+                        %%% ClarinetMusicVoice [measure 309] %%%
+                        R1 * 3/4
+                        
+                        %%% ClarinetMusicVoice [measure 310] %%%
+                        R1 * 3/4
+                        
+                        %%% ClarinetMusicVoice [measure 311] %%%
+                        R1 * 3/4
                         \revert DynamicLineSpanner.staff-padding
+                        
+                        %%% ClarinetMusicVoice [measure 312] %%%
+                        R1 * 5/4
+                        
+                        %%% ClarinetMusicVoice [measure 313] %%%
+                        R1 * 1/4
+                        \bar "|"
                         
                     }
                 }
@@ -1087,7 +1174,13 @@
                         }
                         
                         %%% PianoMusicVoice [measure 295] %%%
-                        R1 * 23/8
+                        R1 * 9/8
+                        
+                        %%% PianoMusicVoice [measure 296] %%%
+                        R1 * 9/8
+                        
+                        %%% PianoMusicVoice [measure 297] %%%
+                        R1 * 5/8
                         
                         %%% PianoMusicVoice [measure 298] %%%
                         \set PianoMusicStaff.instrumentName = \markup {
@@ -4873,10 +4966,43 @@
                         -\upbow
                         
                         %%% ViolinMusicVoice [measure 300] %%%
-                        R1 * 21/2
+                        R1 * 5/4
+                        
+                        %%% ViolinMusicVoice [measure 301] %%%
+                        R1 * 1
+                        
+                        %%% ViolinMusicVoice [measure 302] %%%
+                        R1 * 1
+                        
+                        %%% ViolinMusicVoice [measure 303] %%%
+                        R1 * 1
+                        
+                        %%% ViolinMusicVoice [measure 304] %%%
+                        R1 * 1
+                        
+                        %%% ViolinMusicVoice [measure 305] %%%
+                        R1 * 3/4
+                        
+                        %%% ViolinMusicVoice [measure 306] %%%
+                        R1 * 3/4
+                        
+                        %%% ViolinMusicVoice [measure 307] %%%
+                        R1 * 3/4
+                        
+                        %%% ViolinMusicVoice [measure 308] %%%
+                        R1 * 3/4
+                        
+                        %%% ViolinMusicVoice [measure 309] %%%
+                        R1 * 3/4
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
+                        
+                        %%% ViolinMusicVoice [measure 310] %%%
+                        R1 * 3/4
+                        
+                        %%% ViolinMusicVoice [measure 311] %%%
+                        R1 * 3/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             
@@ -5049,10 +5175,16 @@
                         r4
                         
                         %%% ViolaMusicVoice [measure 292] %%%
-                        R1 * 5/2
+                        R1 * 9/8
+                        
+                        %%% ViolaMusicVoice [measure 293] %%%
+                        R1 * 3/4
                         \revert Beam.positions
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
+                        
+                        %%% ViolaMusicVoice [measure 294] %%%
+                        R1 * 5/8
                         
                         %%% ViolaMusicVoice [measure 295] %%%
                         \clef "treble"
@@ -5170,7 +5302,40 @@
                         -\upbow
                         
                         %%% ViolaMusicVoice [measure 300] %%%
-                        R1 * 21/2
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 301] %%%
+                        R1 * 1
+                        
+                        %%% ViolaMusicVoice [measure 302] %%%
+                        R1 * 1
+                        
+                        %%% ViolaMusicVoice [measure 303] %%%
+                        R1 * 1
+                        
+                        %%% ViolaMusicVoice [measure 304] %%%
+                        R1 * 1
+                        
+                        %%% ViolaMusicVoice [measure 305] %%%
+                        R1 * 3/4
+                        
+                        %%% ViolaMusicVoice [measure 306] %%%
+                        R1 * 3/4
+                        
+                        %%% ViolaMusicVoice [measure 307] %%%
+                        R1 * 3/4
+                        
+                        %%% ViolaMusicVoice [measure 308] %%%
+                        R1 * 3/4
+                        
+                        %%% ViolaMusicVoice [measure 309] %%%
+                        R1 * 3/4
+                        
+                        %%% ViolaMusicVoice [measure 310] %%%
+                        R1 * 3/4
+                        
+                        %%% ViolaMusicVoice [measure 311] %%%
+                        R1 * 3/4
                         \times 4/5 {
                             
                             %%% ViolaMusicVoice [measure 312] %%%
@@ -5338,7 +5503,13 @@
                         r4
                         
                         %%% CelloMusicVoice [measure 292] %%%
-                        R1 * 5/2
+                        R1 * 9/8
+                        
+                        %%% CelloMusicVoice [measure 293] %%%
+                        R1 * 3/4
+                        
+                        %%% CelloMusicVoice [measure 294] %%%
+                        R1 * 5/8
                         
                         %%% CelloMusicVoice [measure 295] %%%
                         \clef "treble"
@@ -5443,7 +5614,40 @@
                         -\upbow
                         
                         %%% CelloMusicVoice [measure 300] %%%
-                        R1 * 21/2
+                        R1 * 5/4
+                        
+                        %%% CelloMusicVoice [measure 301] %%%
+                        R1 * 1
+                        
+                        %%% CelloMusicVoice [measure 302] %%%
+                        R1 * 1
+                        
+                        %%% CelloMusicVoice [measure 303] %%%
+                        R1 * 1
+                        
+                        %%% CelloMusicVoice [measure 304] %%%
+                        R1 * 1
+                        
+                        %%% CelloMusicVoice [measure 305] %%%
+                        R1 * 3/4
+                        
+                        %%% CelloMusicVoice [measure 306] %%%
+                        R1 * 3/4
+                        
+                        %%% CelloMusicVoice [measure 307] %%%
+                        R1 * 3/4
+                        
+                        %%% CelloMusicVoice [measure 308] %%%
+                        R1 * 3/4
+                        
+                        %%% CelloMusicVoice [measure 309] %%%
+                        R1 * 3/4
+                        
+                        %%% CelloMusicVoice [measure 310] %%%
+                        R1 * 3/4
+                        
+                        %%% CelloMusicVoice [measure 311] %%%
+                        R1 * 3/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
                             

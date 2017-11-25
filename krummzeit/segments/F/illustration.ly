@@ -17,7 +17,7 @@
                 %%% GlobalSkips [measure 235] %%%
                 \time 9/8 % SEGMENT-ONLY
                 \mark #6
-                \bar "" % SEGMENT
+                \bar "" % SEGMENT:EMPTY-BAR
                 \once \override GlobalContext.TimeSignature.color = #(x11-color 'DarkCyan) % SEGMENT-ONLY
                 s1 * 9/8
                 ^ \markup {

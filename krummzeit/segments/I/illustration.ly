@@ -96,7 +96,7 @@
                 %%% GlobalSkips [measure 291] %%%
                 \time 4/4
                 \mark #9
-                \bar "" % SEGMENT
+                \bar "" % SEGMENT:EMPTY-BAR
                 s1 * 1
                 ^ \markup {
                     \fontsize

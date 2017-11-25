@@ -17,6 +17,7 @@
                 %%% GlobalSkips [measure 14] %%%
                 \time 3/4 % SEGMENT-ONLY
                 \mark #1
+                \bar "" % SEGMENT
                 \once \override GlobalContext.TimeSignature.color = #(x11-color 'DarkCyan) % SEGMENT-ONLY
                 s1 * 3/4
                 - \markup {

@@ -17,6 +17,7 @@
                 %%% GlobalSkips [measure 200] %%%
                 \time 3/4
                 \mark #5
+                \bar "" % SEGMENT
                 s1 * 3/4
                 ^ \markup {
                     \fontsize

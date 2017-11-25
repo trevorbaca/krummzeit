@@ -347,8 +347,8 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            \clef "treble" % SEGMENT-ONLY
-                            \once \override OboeMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                            \clef "treble" % SEGMENT:REMINDER-CLEF
+                            \once \override OboeMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                             ef''4.
                             \ff
                             - \tweak color #red
@@ -412,8 +412,8 @@
                                             cl.
                                         }
                                 }
-                            \clef "treble" % SEGMENT-ONLY
-                            \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                            \clef "treble" % SEGMENT:REMINDER-CLEF
+                            \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                             f8
                             \ff
                             - \tweak color #red
@@ -768,8 +768,8 @@
                                     #10
                                     Pf.
                                 }
-                            \clef "bass" % SEGMENT-ONLY
-                            \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                            \clef "bass" % SEGMENT:REMINDER-CLEF
+                            \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                             fs'''4.
                             :32
                             \fff
@@ -4053,9 +4053,9 @@
                         \times 8/7 {
                             
                             %%% PercussionMusicVoice [measure 291] %%%
-                            \stopStaff % SEGMENT-ONLY
-                            \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT-ONLY
-                            \startStaff % SEGMENT-ONLY
+                            \stopStaff % SEGMENT:REMINDER-STAFF-LINES
+                            \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT:REMINDER-STAFF-LINES
+                            \startStaff % SEGMENT:REMINDER-STAFF-LINES
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #2
                             \once \override Accidental.color = #red
@@ -4073,9 +4073,9 @@
                                     #10
                                     Xyl.
                                 }
-                            \clef "treble" % SEGMENT-ONLY
-                            \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
-                            \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                            \clef "treble" % SEGMENT:REMINDER-CLEF
+                            \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-STAFF-LINES
+                            \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                             fs''8
                             :32
                             \fff
@@ -4357,9 +4357,9 @@
                         \times 2/3 {
                             
                             %%% ViolinMusicVoice [measure 291] %%%
-                            \stopStaff % SEGMENT-ONLY
-                            \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT-ONLY
-                            \startStaff % SEGMENT-ONLY
+                            \stopStaff % SEGMENT:REMINDER-STAFF-LINES
+                            \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT:REMINDER-STAFF-LINES
+                            \startStaff % SEGMENT:REMINDER-STAFF-LINES
                             \override Beam.positions = #'(-5 . -5)
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
@@ -4368,20 +4368,20 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            \set ViolinMusicStaff.instrumentName = \markup { % SEGMENT-ONLY
-                                \hcenter-in % SEGMENT-ONLY
-                                    #16 % SEGMENT-ONLY
-                                    Violin % SEGMENT-ONLY
-                                } % SEGMENT-ONLY
-                            \set ViolinMusicStaff.shortInstrumentName = \markup { % SEGMENT-ONLY
-                                \hcenter-in % SEGMENT-ONLY
-                                    #10 % SEGMENT-ONLY
-                                    Vn. % SEGMENT-ONLY
-                                } % SEGMENT-ONLY
-                            \clef "treble" % SEGMENT-ONLY
-                            \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
-                            \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
-                            \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                            \set ViolinMusicStaff.instrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
+                                \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
+                                    #16 % SEGMENT:REMINDER-INSTRUMENT
+                                    Violin % SEGMENT:REMINDER-INSTRUMENT
+                                } % SEGMENT:REMINDER-INSTRUMENT
+                            \set ViolinMusicStaff.shortInstrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
+                                \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
+                                    #10 % SEGMENT:REMINDER-INSTRUMENT
+                                    Vn. % SEGMENT:REMINDER-INSTRUMENT
+                                } % SEGMENT:REMINDER-INSTRUMENT
+                            \clef "treble" % SEGMENT:REMINDER-CLEF
+                            \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-INSTRUMENT
+                            \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-STAFF-LINES
+                            \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                             ef''8
                             :32
                             \fff
@@ -4936,19 +4936,19 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            \set ViolaMusicStaff.instrumentName = \markup { % SEGMENT-ONLY
-                                \hcenter-in % SEGMENT-ONLY
-                                    #16 % SEGMENT-ONLY
-                                    Viola % SEGMENT-ONLY
-                                } % SEGMENT-ONLY
-                            \set ViolaMusicStaff.shortInstrumentName = \markup { % SEGMENT-ONLY
-                                \hcenter-in % SEGMENT-ONLY
-                                    #10 % SEGMENT-ONLY
-                                    Va. % SEGMENT-ONLY
-                                } % SEGMENT-ONLY
-                            \clef "alto" % SEGMENT-ONLY
-                            \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
-                            \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                            \set ViolaMusicStaff.instrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
+                                \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
+                                    #16 % SEGMENT:REMINDER-INSTRUMENT
+                                    Viola % SEGMENT:REMINDER-INSTRUMENT
+                                } % SEGMENT:REMINDER-INSTRUMENT
+                            \set ViolaMusicStaff.shortInstrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
+                                \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
+                                    #10 % SEGMENT:REMINDER-INSTRUMENT
+                                    Va. % SEGMENT:REMINDER-INSTRUMENT
+                                } % SEGMENT:REMINDER-INSTRUMENT
+                            \clef "alto" % SEGMENT:REMINDER-CLEF
+                            \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-INSTRUMENT
+                            \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                             a8
                             :32
                             \fff
@@ -5225,19 +5225,19 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            \set CelloMusicStaff.instrumentName = \markup { % SEGMENT-ONLY
-                                \hcenter-in % SEGMENT-ONLY
-                                    #16 % SEGMENT-ONLY
-                                    Cello % SEGMENT-ONLY
-                                } % SEGMENT-ONLY
-                            \set CelloMusicStaff.shortInstrumentName = \markup { % SEGMENT-ONLY
-                                \hcenter-in % SEGMENT-ONLY
-                                    #10 % SEGMENT-ONLY
-                                    Vc. % SEGMENT-ONLY
-                                } % SEGMENT-ONLY
-                            \clef "bass" % SEGMENT-ONLY
-                            \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
-                            \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                            \set CelloMusicStaff.instrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
+                                \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
+                                    #16 % SEGMENT:REMINDER-INSTRUMENT
+                                    Cello % SEGMENT:REMINDER-INSTRUMENT
+                                } % SEGMENT:REMINDER-INSTRUMENT
+                            \set CelloMusicStaff.shortInstrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
+                                \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
+                                    #10 % SEGMENT:REMINDER-INSTRUMENT
+                                    Vc. % SEGMENT:REMINDER-INSTRUMENT
+                                } % SEGMENT:REMINDER-INSTRUMENT
+                            \clef "bass" % SEGMENT:REMINDER-CLEF
+                            \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-INSTRUMENT
+                            \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                             eqf,8
                             :32
                             \fff

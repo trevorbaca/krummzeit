@@ -96,6 +96,7 @@
                 %%% GlobalSkips [measure 291] %%%
                 \time 4/4
                 \mark #9
+                \bar "" % SEGMENT
                 s1 * 1
                 ^ \markup {
                     \fontsize

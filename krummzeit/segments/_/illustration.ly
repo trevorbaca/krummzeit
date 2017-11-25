@@ -305,7 +305,13 @@
                                     }
                             }
                         \clef "treble"
-                        R1 * 19/8
+                        R1 * 1
+                        
+                        %%% ClarinetMusicVoice [measure 2] %%%
+                        R1 * 9/8
+                        
+                        %%% ClarinetMusicVoice [measure 3] %%%
+                        R1 * 1/4
                         
                         %%% ClarinetMusicVoice [measure 4] %%%
                         \override Stem.direction = #up
@@ -345,7 +351,28 @@
                         \revert Stem.direction
                         
                         %%% ClarinetMusicVoice [measure 6] %%%
-                        R1 * 27/4
+                        R1 * 9/8
+                        
+                        %%% ClarinetMusicVoice [measure 7] %%%
+                        R1 * 9/8
+                        
+                        %%% ClarinetMusicVoice [measure 8] %%%
+                        R1 * 5/8
+                        
+                        %%% ClarinetMusicVoice [measure 9] %%%
+                        R1 * 1/4
+                        
+                        %%% ClarinetMusicVoice [measure 10] %%%
+                        R1 * 5/8
+                        
+                        %%% ClarinetMusicVoice [measure 11] %%%
+                        R1 * 1
+                        
+                        %%% ClarinetMusicVoice [measure 12] %%%
+                        R1 * 5/4
+                        
+                        %%% ClarinetMusicVoice [measure 13] %%%
+                        R1 * 3/4
                         \bar "|"
                         
                     }
@@ -415,7 +442,10 @@
                         r2
                         
                         %%% PianoMusicVoice [measure 5] %%%
-                        R1 * 7/4
+                        R1 * 5/8
+                        
+                        %%% PianoMusicVoice [measure 6] %%%
+                        R1 * 9/8
                         \revert DynamicLineSpanner.staff-padding
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/8 {
@@ -452,7 +482,22 @@
                         }
                         
                         %%% PianoMusicVoice [measure 8] %%%
-                        R1 * 9/2
+                        R1 * 5/8
+                        
+                        %%% PianoMusicVoice [measure 9] %%%
+                        R1 * 1/4
+                        
+                        %%% PianoMusicVoice [measure 10] %%%
+                        R1 * 5/8
+                        
+                        %%% PianoMusicVoice [measure 11] %%%
+                        R1 * 1
+                        
+                        %%% PianoMusicVoice [measure 12] %%%
+                        R1 * 5/4
+                        
+                        %%% PianoMusicVoice [measure 13] %%%
+                        R1 * 3/4
                         \bar "|"
                         
                     }
@@ -473,7 +518,22 @@
                                 Perc.
                             }
                         \clef "percussion"
-                        R1 * 39/8
+                        R1 * 1
+                        
+                        %%% PercussionMusicVoice [measure 2] %%%
+                        R1 * 9/8
+                        
+                        %%% PercussionMusicVoice [measure 3] %%%
+                        R1 * 1/4
+                        
+                        %%% PercussionMusicVoice [measure 4] %%%
+                        R1 * 3/4
+                        
+                        %%% PercussionMusicVoice [measure 5] %%%
+                        R1 * 5/8
+                        
+                        %%% PercussionMusicVoice [measure 6] %%%
+                        R1 * 9/8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/8 {
                             
@@ -533,7 +593,10 @@
                         }
                         
                         %%% PercussionMusicVoice [measure 8] %%%
-                        R1 * 7/8
+                        R1 * 5/8
+                        
+                        %%% PercussionMusicVoice [measure 9] %%%
+                        R1 * 1/4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/8 {
                             
@@ -1118,7 +1181,19 @@
                         }
                         
                         %%% ViolinMusicVoice [measure 9] %%%
-                        R1 * 31/8
+                        R1 * 1/4
+                        
+                        %%% ViolinMusicVoice [measure 10] %%%
+                        R1 * 5/8
+                        
+                        %%% ViolinMusicVoice [measure 11] %%%
+                        R1 * 1
+                        
+                        %%% ViolinMusicVoice [measure 12] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolinMusicVoice [measure 13] %%%
+                        R1 * 3/4
                         \bar "|"
                         
                     }
@@ -1533,7 +1608,19 @@
                         }
                         
                         %%% ViolaMusicVoice [measure 9] %%%
-                        R1 * 31/8
+                        R1 * 1/4
+                        
+                        %%% ViolaMusicVoice [measure 10] %%%
+                        R1 * 5/8
+                        
+                        %%% ViolaMusicVoice [measure 11] %%%
+                        R1 * 1
+                        
+                        %%% ViolaMusicVoice [measure 12] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 13] %%%
+                        R1 * 3/4
                         \bar "|"
                         
                     }
@@ -1929,7 +2016,19 @@
                         }
                         
                         %%% CelloMusicVoice [measure 9] %%%
-                        R1 * 31/8
+                        R1 * 1/4
+                        
+                        %%% CelloMusicVoice [measure 10] %%%
+                        R1 * 5/8
+                        
+                        %%% CelloMusicVoice [measure 11] %%%
+                        R1 * 1
+                        
+                        %%% CelloMusicVoice [measure 12] %%%
+                        R1 * 5/4
+                        
+                        %%% CelloMusicVoice [measure 13] %%%
+                        R1 * 3/4
                         \bar "|"
                         
                     }

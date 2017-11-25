@@ -297,7 +297,28 @@
                         r2
                         
                         %%% OboeMusicVoice [measure 354] %%%
-                        R1 * 8
+                        R1 * 5/4
+                        
+                        %%% OboeMusicVoice [measure 355] %%%
+                        R1 * 5/4
+                        
+                        %%% OboeMusicVoice [measure 356] %%%
+                        R1 * 1
+                        
+                        %%% OboeMusicVoice [measure 357] %%%
+                        R1 * 1/2
+                        
+                        %%% OboeMusicVoice [measure 358] %%%
+                        R1 * 5/4
+                        
+                        %%% OboeMusicVoice [measure 359] %%%
+                        R1 * 5/4
+                        
+                        %%% OboeMusicVoice [measure 360] %%%
+                        R1 * 1
+                        
+                        %%% OboeMusicVoice [measure 361] %%%
+                        R1 * 1/2
                         \bar "|."
                         \revert DynamicLineSpanner.staff-padding
                         
@@ -432,7 +453,28 @@
                         \revert Stem.direction
                         
                         %%% ClarinetMusicVoice [measure 354] %%%
-                        R1 * 8
+                        R1 * 5/4
+                        
+                        %%% ClarinetMusicVoice [measure 355] %%%
+                        R1 * 5/4
+                        
+                        %%% ClarinetMusicVoice [measure 356] %%%
+                        R1 * 1
+                        
+                        %%% ClarinetMusicVoice [measure 357] %%%
+                        R1 * 1/2
+                        
+                        %%% ClarinetMusicVoice [measure 358] %%%
+                        R1 * 5/4
+                        
+                        %%% ClarinetMusicVoice [measure 359] %%%
+                        R1 * 5/4
+                        
+                        %%% ClarinetMusicVoice [measure 360] %%%
+                        R1 * 1
+                        
+                        %%% ClarinetMusicVoice [measure 361] %%%
+                        R1 * 1/2
                         \bar "|."
                         \revert DynamicLineSpanner.staff-padding
                         
@@ -1214,7 +1256,28 @@
                         }
                         
                         %%% ViolinMusicVoice [measure 354] %%%
-                        R1 * 8
+                        R1 * 5/4
+                        
+                        %%% ViolinMusicVoice [measure 355] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolinMusicVoice [measure 356] %%%
+                        R1 * 1
+                        
+                        %%% ViolinMusicVoice [measure 357] %%%
+                        R1 * 1/2
+                        
+                        %%% ViolinMusicVoice [measure 358] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolinMusicVoice [measure 359] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolinMusicVoice [measure 360] %%%
+                        R1 * 1
+                        
+                        %%% ViolinMusicVoice [measure 361] %%%
+                        R1 * 1/2
                         \bar "|."
                         
                     }
@@ -1284,10 +1347,139 @@
                         }
                         
                         %%% ViolaMusicVoice [measure 318] %%%
-                        R1 * 44
-                        \bar "|."
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 319] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 320] %%%
+                        R1 * 1
+                        
+                        %%% ViolaMusicVoice [measure 321] %%%
+                        R1 * 1/2
+                        
+                        %%% ViolaMusicVoice [measure 322] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 323] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 324] %%%
+                        R1 * 1
+                        
+                        %%% ViolaMusicVoice [measure 325] %%%
+                        R1 * 1/2
+                        
+                        %%% ViolaMusicVoice [measure 326] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 327] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 328] %%%
+                        R1 * 1
+                        
+                        %%% ViolaMusicVoice [measure 329] %%%
+                        R1 * 1/2
+                        
+                        %%% ViolaMusicVoice [measure 330] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 331] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 332] %%%
+                        R1 * 1
+                        
+                        %%% ViolaMusicVoice [measure 333] %%%
+                        R1 * 1/2
+                        
+                        %%% ViolaMusicVoice [measure 334] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 335] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 336] %%%
+                        R1 * 1
+                        
+                        %%% ViolaMusicVoice [measure 337] %%%
+                        R1 * 1/2
+                        
+                        %%% ViolaMusicVoice [measure 338] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 339] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 340] %%%
+                        R1 * 1
+                        
+                        %%% ViolaMusicVoice [measure 341] %%%
+                        R1 * 1/2
+                        
+                        %%% ViolaMusicVoice [measure 342] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 343] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 344] %%%
+                        R1 * 1
+                        
+                        %%% ViolaMusicVoice [measure 345] %%%
+                        R1 * 1/2
+                        
+                        %%% ViolaMusicVoice [measure 346] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 347] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 348] %%%
+                        R1 * 1
+                        
+                        %%% ViolaMusicVoice [measure 349] %%%
+                        R1 * 1/2
+                        
+                        %%% ViolaMusicVoice [measure 350] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 351] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 352] %%%
+                        R1 * 1
+                        
+                        %%% ViolaMusicVoice [measure 353] %%%
+                        R1 * 1/2
                         \revert DynamicLineSpanner.staff-padding
                         \revert TupletBracket.staff-padding
+                        
+                        %%% ViolaMusicVoice [measure 354] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 355] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 356] %%%
+                        R1 * 1
+                        
+                        %%% ViolaMusicVoice [measure 357] %%%
+                        R1 * 1/2
+                        
+                        %%% ViolaMusicVoice [measure 358] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 359] %%%
+                        R1 * 5/4
+                        
+                        %%% ViolaMusicVoice [measure 360] %%%
+                        R1 * 1
+                        
+                        %%% ViolaMusicVoice [measure 361] %%%
+                        R1 * 1/2
+                        \bar "|."
                         
                     }
                 }
@@ -1450,8 +1642,29 @@
                         ^ \markup { @ }
                         
                         %%% CelloMusicVoice [measure 354] %%%
+                        R1 * 5/4
+                        
+                        %%% CelloMusicVoice [measure 355] %%%
+                        R1 * 5/4
+                        
+                        %%% CelloMusicVoice [measure 356] %%%
+                        R1 * 1
+                        
+                        %%% CelloMusicVoice [measure 357] %%%
+                        R1 * 1/2
+                        
+                        %%% CelloMusicVoice [measure 358] %%%
+                        R1 * 5/4
+                        
+                        %%% CelloMusicVoice [measure 359] %%%
+                        R1 * 5/4
+                        
+                        %%% CelloMusicVoice [measure 360] %%%
+                        R1 * 1
+                        
+                        %%% CelloMusicVoice [measure 361] %%%
                         \once \override MultiMeasureRestText.extra-offset = #'(14.5 . 0)
-                        R1 * 8
+                        R1 * 1/2
                         _ \markup {
                             \whiteout
                                 \upright

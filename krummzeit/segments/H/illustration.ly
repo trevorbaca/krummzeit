@@ -118,8 +118,14 @@
                         \clef "treble" % SEGMENT:REMINDER-CLEF
                         \once \override OboeMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                         \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-DYNAMIC
-                        R1 * 33/8
+                        R1 * 7/8
                         \f % SEGMENT:REMINDER-DYNAMIC
+                        
+                        %%% OboeMusicVoice [measure 282] %%%
+                        R1 * 3/2
+                        
+                        %%% OboeMusicVoice [measure 283] %%%
+                        R1 * 7/4
                         
                         %%% OboeMusicVoice [measure 284] %%%
                         \override DynamicLineSpanner.staff-padding = #'3
@@ -244,8 +250,14 @@
                         \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-INSTRUMENT
                         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-DYNAMIC
-                        R1 * 33/8
+                        R1 * 7/8
                         \pp % SEGMENT:REMINDER-DYNAMIC
+                        
+                        %%% ClarinetMusicVoice [measure 282] %%%
+                        R1 * 3/2
+                        
+                        %%% ClarinetMusicVoice [measure 283] %%%
+                        R1 * 7/4
                         
                         %%% ClarinetMusicVoice [measure 284] %%%
                         \override DynamicLineSpanner.staff-padding = #'3
@@ -281,7 +293,10 @@
                         b'2.
                         
                         %%% ClarinetMusicVoice [measure 286] %%%
-                        R1 * 2
+                        R1 * 11/8
+                        
+                        %%% ClarinetMusicVoice [measure 287] %%%
+                        R1 * 5/8
                         \revert DynamicLineSpanner.staff-padding
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
@@ -2179,13 +2194,16 @@
                         }
                         
                         %%% PianoMusicVoice [measure 287] %%%
-                        R1 * 13/8
+                        R1 * 5/8
+                        
+                        %%% PianoMusicVoice [measure 288] %%%
+                        \override DynamicLineSpanner.staff-padding = #'6
+                        \override TupletBracket.staff-padding = #2
+                        R1 * 1
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/7 {
                             
                             %%% PianoMusicVoice [measure 289] %%%
-                            \override DynamicLineSpanner.staff-padding = #'6
-                            \override TupletBracket.staff-padding = #2
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2260,8 +2278,17 @@
                         \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-STAFF-LINES
                         \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                         \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-DYNAMIC
-                        R1 * 47/8
+                        R1 * 7/8
                         \ppp % SEGMENT:REMINDER-DYNAMIC
+                        
+                        %%% PercussionMusicVoice [measure 282] %%%
+                        R1 * 3/2
+                        
+                        %%% PercussionMusicVoice [measure 283] %%%
+                        R1 * 7/4
+                        
+                        %%% PercussionMusicVoice [measure 284] %%%
+                        R1 * 7/4
                         
                         %%% PercussionMusicVoice [measure 285] %%%
                         \override DynamicLineSpanner.staff-padding = #'6
@@ -2350,12 +2377,15 @@
                         \revert DynamicLineSpanner.staff-padding
                         
                         %%% PercussionMusicVoice [measure 287] %%%
-                        R1 * 13/8
+                        R1 * 5/8
+                        
+                        %%% PercussionMusicVoice [measure 288] %%%
+                        \override TupletBracket.staff-padding = #3
+                        R1 * 1
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/7 {
                             
                             %%% PercussionMusicVoice [measure 289] %%%
-                            \override TupletBracket.staff-padding = #3
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red

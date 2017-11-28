@@ -71,7 +71,7 @@
                 
                 %%% GlobalSkips [measure 1] %%%
                 \time 4/4
-                \bar "" % SEGMENT:EMPTY-BAR
+                \bar "" % SEGMENT:EMPTY-BAR:1
                 s1 * 1
                 ^ \markup {
                     \fontsize
@@ -239,8 +239,8 @@
                                 #10
                                 Ob.
                             }
-                        \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
-                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
                         R1 * 1
                         
                         %%% OboeMusicVoice [measure 2] %%%
@@ -305,8 +305,8 @@
                                         (Eb)
                                     }
                             }
-                        \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
-                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
                         R1 * 1
                         
                         %%% ClarinetMusicVoice [measure 2] %%%
@@ -396,8 +396,8 @@
                                 #10
                                 Pf.
                             }
-                        \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
-                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
                         r1
                         
                         %%% PianoMusicVoice [measure 2] %%%
@@ -420,8 +420,8 @@
                                 #10
                                 Pf.
                             }
-                        \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
-                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
                         r16
                         
                         \once \override Accidental.stencil = ##f
@@ -461,8 +461,8 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
-                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                            \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
+                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
                             cs''2
                             :32
                             - \tweak color #red
@@ -522,8 +522,8 @@
                                 #10
                                 Perc.
                             }
-                        \clef "percussion" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
-                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \clef "percussion" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
                         R1 * 1
                         
                         %%% PercussionMusicVoice [measure 2] %%%
@@ -560,8 +560,8 @@
                                     #10
                                     Xyl.
                                 }
-                            \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
-                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                            \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
+                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
                             cs'4
                             :32
                             ^ \markup {
@@ -626,8 +626,8 @@
                                     #10
                                     Perc.
                                 }
-                            \clef "percussion" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
-                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                            \clef "percussion" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
+                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
                             c'2
                             -\accent
                             ^ \markup {
@@ -798,8 +798,8 @@
                                 #10
                                 Vn.
                             }
-                        \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
-                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
                         r8
                         \times 2/3 {
                             
@@ -1225,8 +1225,8 @@
                                 #10
                                 Va.
                             }
-                        \clef "alto" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
-                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \clef "alto" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
                         r8
                         \times 2/3 {
                             
@@ -1653,8 +1653,8 @@
                                 #10
                                 Vc.
                             }
-                        \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
-                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
                         r8
                         \times 2/3 {
                             

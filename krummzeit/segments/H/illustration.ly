@@ -49,7 +49,7 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 7/8
                 \mark #8
-                \bar "" % SEGMENT:EMPTY-BAR
+                \bar "" % SEGMENT:EMPTY-BAR:1
                 s1 * 7/8
                 \startTextSpan
                 
@@ -115,12 +115,12 @@
                     \context OboeMusicVoice = "OboeMusicVoice" {
                         
                         %%% OboeMusicVoice [measure 281] %%%
-                        \clef "treble" % SEGMENT:RESTATED-CLEF
-                        \override OboeMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
-                        \set OboeMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
-                        \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
+                        \clef "treble" % SEGMENT:RESTATED-CLEF:2
+                        \override OboeMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF:1
+                        \set OboeMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF:3
+                        \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC:4
                         R1 * 7/8
-                        \f % SEGMENT:REMINDER-DYNAMIC
+                        \f % SEGMENT:REMINDER-DYNAMIC:5
                         
                         %%% OboeMusicVoice [measure 282] %%%
                         R1 * 3/2
@@ -229,31 +229,31 @@
                     \context ClarinetMusicVoice = "ClarinetMusicVoice" {
                         
                         %%% ClarinetMusicVoice [measure 281] %%%
-                        \set ClarinetMusicStaff.instrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT
-                            \hcenter-in % SEGMENT:RESTATED-INSTRUMENT
-                                #16 % SEGMENT:RESTATED-INSTRUMENT
-                                \center-column % SEGMENT:RESTATED-INSTRUMENT
-                                    { % SEGMENT:RESTATED-INSTRUMENT
-                                        Bass % SEGMENT:RESTATED-INSTRUMENT
-                                        clarinet % SEGMENT:RESTATED-INSTRUMENT
-                                    } % SEGMENT:RESTATED-INSTRUMENT
-                            } % SEGMENT:RESTATED-INSTRUMENT
-                        \set ClarinetMusicStaff.shortInstrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT
-                            \hcenter-in % SEGMENT:RESTATED-INSTRUMENT
-                                #10 % SEGMENT:RESTATED-INSTRUMENT
-                                \center-column % SEGMENT:RESTATED-INSTRUMENT
-                                    { % SEGMENT:RESTATED-INSTRUMENT
-                                        Bass % SEGMENT:RESTATED-INSTRUMENT
-                                        cl. % SEGMENT:RESTATED-INSTRUMENT
-                                    } % SEGMENT:RESTATED-INSTRUMENT
-                            } % SEGMENT:RESTATED-INSTRUMENT
-                        \clef "treble" % SEGMENT:RESTATED-CLEF
-                        \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT
-                        \override ClarinetMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
-                        \set ClarinetMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
-                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
+                        \set ClarinetMusicStaff.instrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:2
+                            \hcenter-in % SEGMENT:RESTATED-INSTRUMENT:2
+                                #16 % SEGMENT:RESTATED-INSTRUMENT:2
+                                \center-column % SEGMENT:RESTATED-INSTRUMENT:2
+                                    { % SEGMENT:RESTATED-INSTRUMENT:2
+                                        Bass % SEGMENT:RESTATED-INSTRUMENT:2
+                                        clarinet % SEGMENT:RESTATED-INSTRUMENT:2
+                                    } % SEGMENT:RESTATED-INSTRUMENT:2
+                            } % SEGMENT:RESTATED-INSTRUMENT:2
+                        \set ClarinetMusicStaff.shortInstrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:2
+                            \hcenter-in % SEGMENT:RESTATED-INSTRUMENT:2
+                                #10 % SEGMENT:RESTATED-INSTRUMENT:2
+                                \center-column % SEGMENT:RESTATED-INSTRUMENT:2
+                                    { % SEGMENT:RESTATED-INSTRUMENT:2
+                                        Bass % SEGMENT:RESTATED-INSTRUMENT:2
+                                        cl. % SEGMENT:RESTATED-INSTRUMENT:2
+                                    } % SEGMENT:RESTATED-INSTRUMENT:2
+                            } % SEGMENT:RESTATED-INSTRUMENT:2
+                        \clef "treble" % SEGMENT:RESTATED-CLEF:4
+                        \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT:1
+                        \override ClarinetMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF:3
+                        \set ClarinetMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF:5
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC:6
                         R1 * 7/8
-                        \pp % SEGMENT:REMINDER-DYNAMIC
+                        \pp % SEGMENT:REMINDER-DYNAMIC:7
                         
                         %%% ClarinetMusicVoice [measure 282] %%%
                         R1 * 3/2
@@ -433,12 +433,12 @@
                                     #10
                                     Hpschd.
                                 }
-                            \clef "bass" % SEGMENT:RESTATED-CLEF
-                            \override PianoMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
-                            \set PianoMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
-                            \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
+                            \clef "bass" % SEGMENT:RESTATED-CLEF:2
+                            \override PianoMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF:1
+                            \set PianoMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF:3
+                            \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC:4
                             <d' f' a' c''>8
-                            \pp % SEGMENT:REMINDER-DYNAMIC
+                            \pp % SEGMENT:REMINDER-DYNAMIC:5
                             [
                             ^ \markup {
                                 \override
@@ -2263,27 +2263,27 @@
                     \context PercussionMusicVoice = "PercussionMusicVoice" {
                         
                         %%% PercussionMusicVoice [measure 281] %%%
-                        \stopStaff % SEGMENT:REAPPLIED-STAFF-LINES
-                        \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT:REAPPLIED-STAFF-LINES
-                        \startStaff % SEGMENT:REAPPLIED-STAFF-LINES
-                        \set PercussionMusicStaff.instrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT
-                            \hcenter-in % SEGMENT:RESTATED-INSTRUMENT
-                                #16 % SEGMENT:RESTATED-INSTRUMENT
-                                Xylophone % SEGMENT:RESTATED-INSTRUMENT
-                            } % SEGMENT:RESTATED-INSTRUMENT
-                        \set PercussionMusicStaff.shortInstrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT
-                            \hcenter-in % SEGMENT:RESTATED-INSTRUMENT
-                                #10 % SEGMENT:RESTATED-INSTRUMENT
-                                Xyl. % SEGMENT:RESTATED-INSTRUMENT
-                            } % SEGMENT:RESTATED-INSTRUMENT
-                        \clef "percussion" % SEGMENT:RESTATED-CLEF
-                        \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT
-                        \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED-STAFF-LINES
-                        \override PercussionMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
-                        \set PercussionMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
-                        \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
+                        \stopStaff % SEGMENT:REAPPLIED-STAFF-LINES:4
+                        \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT:REAPPLIED-STAFF-LINES:4
+                        \startStaff % SEGMENT:REAPPLIED-STAFF-LINES:4
+                        \set PercussionMusicStaff.instrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:2
+                            \hcenter-in % SEGMENT:RESTATED-INSTRUMENT:2
+                                #16 % SEGMENT:RESTATED-INSTRUMENT:2
+                                Xylophone % SEGMENT:RESTATED-INSTRUMENT:2
+                            } % SEGMENT:RESTATED-INSTRUMENT:2
+                        \set PercussionMusicStaff.shortInstrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:2
+                            \hcenter-in % SEGMENT:RESTATED-INSTRUMENT:2
+                                #10 % SEGMENT:RESTATED-INSTRUMENT:2
+                                Xyl. % SEGMENT:RESTATED-INSTRUMENT:2
+                            } % SEGMENT:RESTATED-INSTRUMENT:2
+                        \clef "percussion" % SEGMENT:RESTATED-CLEF:6
+                        \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT:1
+                        \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED-STAFF-LINES:3
+                        \override PercussionMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF:5
+                        \set PercussionMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF:7
+                        \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC:8
                         R1 * 7/8
-                        \ppp % SEGMENT:REMINDER-DYNAMIC
+                        \ppp % SEGMENT:REMINDER-DYNAMIC:9
                         
                         %%% PercussionMusicVoice [measure 282] %%%
                         R1 * 3/2
@@ -2296,8 +2296,8 @@
                         
                         %%% PercussionMusicVoice [measure 285] %%%
                         \override DynamicLineSpanner.staff-padding = #'6
-                        \clef "percussion" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
-                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \clef "percussion" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
                         r8
                         
                         \once \override Beam.color = #blue
@@ -2406,8 +2406,8 @@
                                     #10
                                     Xyl.
                                 }
-                            \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
-                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                            \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
+                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
                             fs''4
                             :32
                             \fff
@@ -2438,33 +2438,33 @@
                         \times 19/10 {
                             
                             %%% ViolinMusicVoice [measure 281] %%%
-                            \stopStaff % SEGMENT:REAPPLIED-STAFF-LINES
-                            \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT:REAPPLIED-STAFF-LINES
-                            \startStaff % SEGMENT:REAPPLIED-STAFF-LINES
+                            \stopStaff % SEGMENT:REAPPLIED-STAFF-LINES:4
+                            \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT:REAPPLIED-STAFF-LINES:4
+                            \startStaff % SEGMENT:REAPPLIED-STAFF-LINES:4
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            \set ViolinMusicStaff.instrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT
-                                \hcenter-in % SEGMENT:RESTATED-INSTRUMENT
-                                    #16 % SEGMENT:RESTATED-INSTRUMENT
-                                    Violin % SEGMENT:RESTATED-INSTRUMENT
-                                } % SEGMENT:RESTATED-INSTRUMENT
-                            \set ViolinMusicStaff.shortInstrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT
-                                \hcenter-in % SEGMENT:RESTATED-INSTRUMENT
-                                    #10 % SEGMENT:RESTATED-INSTRUMENT
-                                    Vn. % SEGMENT:RESTATED-INSTRUMENT
-                                } % SEGMENT:RESTATED-INSTRUMENT
-                            \clef "treble" % SEGMENT:RESTATED-CLEF
-                            \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT
-                            \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED-STAFF-LINES
-                            \override ViolinMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
-                            \set ViolinMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
+                            \set ViolinMusicStaff.instrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:2
+                                \hcenter-in % SEGMENT:RESTATED-INSTRUMENT:2
+                                    #16 % SEGMENT:RESTATED-INSTRUMENT:2
+                                    Violin % SEGMENT:RESTATED-INSTRUMENT:2
+                                } % SEGMENT:RESTATED-INSTRUMENT:2
+                            \set ViolinMusicStaff.shortInstrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:2
+                                \hcenter-in % SEGMENT:RESTATED-INSTRUMENT:2
+                                    #10 % SEGMENT:RESTATED-INSTRUMENT:2
+                                    Vn. % SEGMENT:RESTATED-INSTRUMENT:2
+                                } % SEGMENT:RESTATED-INSTRUMENT:2
+                            \clef "treble" % SEGMENT:RESTATED-CLEF:6
+                            \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT:1
+                            \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED-STAFF-LINES:3
+                            \override ViolinMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF:5
+                            \set ViolinMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF:7
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC:8
                             df'2.
                             :32
-                            \pp % SEGMENT:REMINDER-DYNAMIC
+                            \pp % SEGMENT:REMINDER-DYNAMIC:9
                             - \tweak color #red
                             ^ \markup { @ }
                             _ \markup {
@@ -2630,24 +2630,24 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            \set ViolaMusicStaff.instrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT
-                                \hcenter-in % SEGMENT:RESTATED-INSTRUMENT
-                                    #16 % SEGMENT:RESTATED-INSTRUMENT
-                                    Viola % SEGMENT:RESTATED-INSTRUMENT
-                                } % SEGMENT:RESTATED-INSTRUMENT
-                            \set ViolaMusicStaff.shortInstrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT
-                                \hcenter-in % SEGMENT:RESTATED-INSTRUMENT
-                                    #10 % SEGMENT:RESTATED-INSTRUMENT
-                                    Va. % SEGMENT:RESTATED-INSTRUMENT
-                                } % SEGMENT:RESTATED-INSTRUMENT
-                            \clef "alto" % SEGMENT:RESTATED-CLEF
-                            \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT
-                            \override ViolaMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
-                            \set ViolaMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
-                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
+                            \set ViolaMusicStaff.instrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:2
+                                \hcenter-in % SEGMENT:RESTATED-INSTRUMENT:2
+                                    #16 % SEGMENT:RESTATED-INSTRUMENT:2
+                                    Viola % SEGMENT:RESTATED-INSTRUMENT:2
+                                } % SEGMENT:RESTATED-INSTRUMENT:2
+                            \set ViolaMusicStaff.shortInstrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:2
+                                \hcenter-in % SEGMENT:RESTATED-INSTRUMENT:2
+                                    #10 % SEGMENT:RESTATED-INSTRUMENT:2
+                                    Va. % SEGMENT:RESTATED-INSTRUMENT:2
+                                } % SEGMENT:RESTATED-INSTRUMENT:2
+                            \clef "alto" % SEGMENT:RESTATED-CLEF:4
+                            \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT:1
+                            \override ViolaMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF:3
+                            \set ViolaMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF:5
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC:6
                             c4
                             :32
-                            \fff % SEGMENT:REMINDER-DYNAMIC
+                            \fff % SEGMENT:REMINDER-DYNAMIC:7
                             - \tweak color #red
                             ^ \markup { @ }
                             _ \markup {
@@ -2807,24 +2807,24 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            \set CelloMusicStaff.instrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT
-                                \hcenter-in % SEGMENT:RESTATED-INSTRUMENT
-                                    #16 % SEGMENT:RESTATED-INSTRUMENT
-                                    Cello % SEGMENT:RESTATED-INSTRUMENT
-                                } % SEGMENT:RESTATED-INSTRUMENT
-                            \set CelloMusicStaff.shortInstrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT
-                                \hcenter-in % SEGMENT:RESTATED-INSTRUMENT
-                                    #10 % SEGMENT:RESTATED-INSTRUMENT
-                                    Vc. % SEGMENT:RESTATED-INSTRUMENT
-                                } % SEGMENT:RESTATED-INSTRUMENT
-                            \clef "bass" % SEGMENT:RESTATED-CLEF
-                            \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT
-                            \override CelloMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
-                            \set CelloMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
-                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
+                            \set CelloMusicStaff.instrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:2
+                                \hcenter-in % SEGMENT:RESTATED-INSTRUMENT:2
+                                    #16 % SEGMENT:RESTATED-INSTRUMENT:2
+                                    Cello % SEGMENT:RESTATED-INSTRUMENT:2
+                                } % SEGMENT:RESTATED-INSTRUMENT:2
+                            \set CelloMusicStaff.shortInstrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:2
+                                \hcenter-in % SEGMENT:RESTATED-INSTRUMENT:2
+                                    #10 % SEGMENT:RESTATED-INSTRUMENT:2
+                                    Vc. % SEGMENT:RESTATED-INSTRUMENT:2
+                                } % SEGMENT:RESTATED-INSTRUMENT:2
+                            \clef "bass" % SEGMENT:RESTATED-CLEF:4
+                            \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT:1
+                            \override CelloMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF:3
+                            \set CelloMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF:5
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC:6
                             c,2
                             :32
-                            \fff % SEGMENT:REMINDER-DYNAMIC
+                            \fff % SEGMENT:REMINDER-DYNAMIC:7
                             - \tweak color #red
                             ^ \markup { @ }
                             _ \markup {

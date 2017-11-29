@@ -19,13 +19,13 @@
                 \mark #4
                 \bar "" % SEGMENT:EMPTY-BAR:1
                 s1 * 3/4
-                - \markup {
-                    \fontsize
-                        #-3
-                        \with-color
-                            #blue
-                            [D.1]
-                    }
+                %%% - \markup { % STAGE-NUMBER:2
+                    %%% \fontsize % STAGE-NUMBER:2
+                        %%% #-3 % STAGE-NUMBER:2
+                        %%% \with-color % STAGE-NUMBER:2
+                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:2
+                            %%% [D.1] % STAGE-NUMBER:2
+                    %%% } % STAGE-NUMBER:2
                 ^ \markup {
                     \fontsize
                         #-6
@@ -54,13 +54,13 @@
                 %%% GlobalSkips [measure 155] %%%
                 \time 3/4
                 s1 * 3/4
-                - \markup {
-                    \fontsize
-                        #-3
-                        \with-color
-                            #blue
-                            [D.2]
-                    }
+                %%% - \markup { % STAGE-NUMBER:1
+                    %%% \fontsize % STAGE-NUMBER:1
+                        %%% #-3 % STAGE-NUMBER:1
+                        %%% \with-color % STAGE-NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
+                            %%% [D.2] % STAGE-NUMBER:1
+                    %%% } % STAGE-NUMBER:1
                 
                 %%% GlobalSkips [measure 156] %%%
                 \time 5/8
@@ -69,13 +69,13 @@
                 %%% GlobalSkips [measure 157] %%%
                 \time 9/8
                 s1 * 9/8
-                - \markup {
-                    \fontsize
-                        #-3
-                        \with-color
-                            #blue
-                            [D.3]
-                    }
+                %%% - \markup { % STAGE-NUMBER:1
+                    %%% \fontsize % STAGE-NUMBER:1
+                        %%% #-3 % STAGE-NUMBER:1
+                        %%% \with-color % STAGE-NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
+                            %%% [D.3] % STAGE-NUMBER:1
+                    %%% } % STAGE-NUMBER:1
                 
                 %%% GlobalSkips [measure 158] %%%
                 \time 9/8
@@ -106,13 +106,13 @@
                 \time 5/8
                 s1 * 5/8
                 \startTextSpan
-                - \markup {
-                    \fontsize
-                        #-3
-                        \with-color
-                            #blue
-                            [D.4]
-                    }
+                %%% - \markup { % STAGE-NUMBER:1
+                    %%% \fontsize % STAGE-NUMBER:1
+                        %%% #-3 % STAGE-NUMBER:1
+                        %%% \with-color % STAGE-NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
+                            %%% [D.4] % STAGE-NUMBER:1
+                    %%% } % STAGE-NUMBER:1
                 
                 %%% GlobalSkips [measure 160] %%%
                 \time 7/8
@@ -125,13 +125,13 @@
                 %%% GlobalSkips [measure 162] %%%
                 \time 3/4
                 s1 * 3/4
-                - \markup {
-                    \fontsize
-                        #-3
-                        \with-color
-                            #blue
-                            [D.5]
-                    }
+                %%% - \markup { % STAGE-NUMBER:1
+                    %%% \fontsize % STAGE-NUMBER:1
+                        %%% #-3 % STAGE-NUMBER:1
+                        %%% \with-color % STAGE-NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
+                            %%% [D.5] % STAGE-NUMBER:1
+                    %%% } % STAGE-NUMBER:1
                 
                 %%% GlobalSkips [measure 163] %%%
                 \time 3/4
@@ -144,13 +144,13 @@
                 %%% GlobalSkips [measure 165] %%%
                 \time 3/4
                 s1 * 3/4
-                - \markup {
-                    \fontsize
-                        #-3
-                        \with-color
-                            #blue
-                            [D.6]
-                    }
+                %%% - \markup { % STAGE-NUMBER:1
+                    %%% \fontsize % STAGE-NUMBER:1
+                        %%% #-3 % STAGE-NUMBER:1
+                        %%% \with-color % STAGE-NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
+                            %%% [D.6] % STAGE-NUMBER:1
+                    %%% } % STAGE-NUMBER:1
                 
                 %%% GlobalSkips [measure 166] %%%
                 \time 4/4
@@ -163,13 +163,13 @@
                 %%% GlobalSkips [measure 168] %%%
                 \time 9/8
                 s1 * 9/8
-                - \markup {
-                    \fontsize
-                        #-3
-                        \with-color
-                            #blue
-                            [D.7]
-                    }
+                %%% - \markup { % STAGE-NUMBER:1
+                    %%% \fontsize % STAGE-NUMBER:1
+                        %%% #-3 % STAGE-NUMBER:1
+                        %%% \with-color % STAGE-NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
+                            %%% [D.7] % STAGE-NUMBER:1
+                    %%% } % STAGE-NUMBER:1
                 
                 %%% GlobalSkips [measure 169] %%%
                 \time 3/4
@@ -203,13 +203,13 @@
                 \time 4/4
                 s1 * 1
                 \stopTextSpan
-                - \markup {
-                    \fontsize
-                        #-3
-                        \with-color
-                            #blue
-                            [D.8]
-                    }
+                %%% - \markup { % STAGE-NUMBER:1
+                    %%% \fontsize % STAGE-NUMBER:1
+                        %%% #-3 % STAGE-NUMBER:1
+                        %%% \with-color % STAGE-NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
+                            %%% [D.8] % STAGE-NUMBER:1
+                    %%% } % STAGE-NUMBER:1
                 ^ \markup {
                     \override
                         #'(padding . 0.45)
@@ -351,13 +351,13 @@
                 \time 5/4
                 s1 * 5/4
                 \startTextSpan
-                - \markup {
-                    \fontsize
-                        #-3
-                        \with-color
-                            #blue
-                            [D.9]
-                    }
+                %%% - \markup { % STAGE-NUMBER:1
+                    %%% \fontsize % STAGE-NUMBER:1
+                        %%% #-3 % STAGE-NUMBER:1
+                        %%% \with-color % STAGE-NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
+                            %%% [D.9] % STAGE-NUMBER:1
+                    %%% } % STAGE-NUMBER:1
                 
                 %%% GlobalSkips [measure 179] %%%
                 \time 3/4
@@ -391,13 +391,13 @@
                 \time 9/8
                 s1 * 9/8
                 \stopTextSpan
-                - \markup {
-                    \fontsize
-                        #-3
-                        \with-color
-                            #blue
-                            [D.10]
-                    }
+                %%% - \markup { % STAGE-NUMBER:1
+                    %%% \fontsize % STAGE-NUMBER:1
+                        %%% #-3 % STAGE-NUMBER:1
+                        %%% \with-color % STAGE-NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
+                            %%% [D.10] % STAGE-NUMBER:1
+                    %%% } % STAGE-NUMBER:1
                 ^ \markup {
                     \fontsize
                         #-6
@@ -430,13 +430,13 @@
                 %%% GlobalSkips [measure 190] %%%
                 \time 3/4
                 s1 * 3/4
-                - \markup {
-                    \fontsize
-                        #-3
-                        \with-color
-                            #blue
-                            [D.11]
-                    }
+                %%% - \markup { % STAGE-NUMBER:1
+                    %%% \fontsize % STAGE-NUMBER:1
+                        %%% #-3 % STAGE-NUMBER:1
+                        %%% \with-color % STAGE-NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
+                            %%% [D.11] % STAGE-NUMBER:1
+                    %%% } % STAGE-NUMBER:1
                 
                 %%% GlobalSkips [measure 191] %%%
                 \time 3/4
@@ -453,13 +453,13 @@
                 %%% GlobalSkips [measure 194] %%%
                 \time 5/4
                 s1 * 5/4
-                - \markup {
-                    \fontsize
-                        #-3
-                        \with-color
-                            #blue
-                            [D.12]
-                    }
+                %%% - \markup { % STAGE-NUMBER:1
+                    %%% \fontsize % STAGE-NUMBER:1
+                        %%% #-3 % STAGE-NUMBER:1
+                        %%% \with-color % STAGE-NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
+                            %%% [D.12] % STAGE-NUMBER:1
+                    %%% } % STAGE-NUMBER:1
                 
                 %%% GlobalSkips [measure 195] %%%
                 \time 4/4
@@ -468,13 +468,13 @@
                 %%% GlobalSkips [measure 196] %%%
                 \time 9/8
                 s1 * 9/8
-                - \markup {
-                    \fontsize
-                        #-3
-                        \with-color
-                            #blue
-                            [D.13]
-                    }
+                %%% - \markup { % STAGE-NUMBER:1
+                    %%% \fontsize % STAGE-NUMBER:1
+                        %%% #-3 % STAGE-NUMBER:1
+                        %%% \with-color % STAGE-NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
+                            %%% [D.13] % STAGE-NUMBER:1
+                    %%% } % STAGE-NUMBER:1
                 
                 %%% GlobalSkips [measure 197] %%%
                 \time 3/4

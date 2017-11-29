@@ -30,7 +30,6 @@ maker = baca.SegmentMaker(
     final_markup_extra_offset=(14.5, 0),
     ignore_repeat_pitch_classes=True,
     instruments=krummzeit.instruments,
-    label_stages=False,
     measures_per_stage=measures_per_stage,
     metronome_marks=krummzeit.metronome_marks,
     score_template=krummzeit.ScoreTemplate(),

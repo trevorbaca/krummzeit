@@ -886,8 +886,8 @@
                         \times 4/5 {
                             
                             %%% PianoMusicVoice [measure 241] %%%
-                            \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
-                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
+                            \clef "bass" % SEGMENT:EXPLICIT-CLEF:2
+                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CLEF:COLOR:1
                             r8
                             
                             g'8
@@ -1079,11 +1079,11 @@
                                 #10 % SEGMENT:RESTATED-INSTRUMENT:2
                                 Xyl. % SEGMENT:RESTATED-INSTRUMENT:2
                             } % SEGMENT:RESTATED-INSTRUMENT:2
-                        \clef "percussion" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:8
+                        \clef "percussion" % SEGMENT:EXPLICIT-CLEF:8
                         \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT:1
                         \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED-STAFF-LINES:3
                         \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC:5
-                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:7
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CLEF:COLOR:7
                         r1
                         \pp % SEGMENT:REMINDER-DYNAMIC:6
                         ^ \markup {

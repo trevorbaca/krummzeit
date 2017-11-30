@@ -106,7 +106,7 @@
                 %%% GlobalSkips [measure 257] %%%
                 \time 9/8
                 \mark #7
-                \bar "" % SEGMENT:EMPTY_BAR:1
+                \bar "" % SEGMENT:EMPTY_START_BAR:1
                 s1 * 9/8
                 %%% ^ \markup { % CLOCK_TIME:3
                     %%% \fontsize % CLOCK_TIME:3

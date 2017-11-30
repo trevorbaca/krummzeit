@@ -71,7 +71,7 @@
                 
                 %%% GlobalSkips [measure 1] %%%
                 \time 4/4
-                \bar "" % SEGMENT:EMPTY_BAR:1
+                \bar "" % SEGMENT:EMPTY_START_BAR:1
                 s1 * 1
                 %%% ^ \markup { % CLOCK_TIME:3
                     %%% \fontsize % CLOCK_TIME:3

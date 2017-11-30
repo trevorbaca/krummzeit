@@ -17,7 +17,7 @@
                 %%% GlobalSkips [measure 235] %%%
                 \time 9/8 % SEGMENT:DUPLICATE-TIME-SIGNATURE:4
                 \mark #6
-                \bar "" % SEGMENT:EMPTY_BAR:1
+                \bar "" % SEGMENT:EMPTY_START_BAR:1
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1) % SEGMENT:DUPLICATE-TIME-SIGNATURE:3
                 s1 * 9/8
                 %%% ^ \markup { % CLOCK_TIME:5

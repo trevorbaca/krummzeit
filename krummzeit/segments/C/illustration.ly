@@ -1963,11 +1963,12 @@
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
-                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
-                            \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \clef "treble" %! REDUNDANT_CLEF_COMMAND:4
+                            \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:1
+                            %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:3
                             r8
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:5
                             
                             \ottava #1
                             ef'''4
@@ -2164,11 +2165,12 @@
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
-                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
-                            \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \clef "treble" %! REDUNDANT_CLEF_COMMAND:4
+                            \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:1
+                            %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:3
                             r8
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:5
                             
                             f''4
                             -\staccatissimo

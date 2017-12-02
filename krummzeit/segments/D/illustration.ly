@@ -2208,9 +2208,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
-                        \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                        %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \clef "bass" %! REDUNDANT_CLEF_COMMAND:4
+                        \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:1
+                        %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:3
                         c'4.
                         -\mp
                         -\tenuto
@@ -2229,7 +2230,7 @@
                                         }
                                 }
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:5
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
@@ -6168,11 +6169,12 @@
                         R1 * 1
                         
                         %%% ViolaMusicVoice [measure 196] %%%
-                        \clef "alto" %! EXPLICIT_CLEF_COMMAND:3
-                        \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                        %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \clef "alto" %! REDUNDANT_CLEF_COMMAND:4
+                        \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:1
+                        %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:3
                         r8
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:5
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
@@ -6956,11 +6958,12 @@
                         R1 * 1
                         
                         %%% CelloMusicVoice [measure 196] %%%
-                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
-                        \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                        %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \clef "bass" %! REDUNDANT_CLEF_COMMAND:4
+                        \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:1
+                        %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:3
                         r8
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:5
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red

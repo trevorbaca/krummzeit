@@ -2868,9 +2868,10 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        \clef "percussion" %! EXPLICIT_CLEF_COMMAND:3
-                        \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                        %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \clef "percussion" %! REDUNDANT_CLEF_COMMAND:4
+                        \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:1
+                        %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:3
                         c2.
                         :32
                         \ppp
@@ -2895,7 +2896,7 @@
                                         }
                                 }
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:5
                         
                         %%% PercussionMusicVoice [measure 123] %%%
                         \once \override Beam.color = #blue

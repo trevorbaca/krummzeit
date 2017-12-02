@@ -5324,11 +5324,12 @@
                         \times 3/5 {
                             
                             %%% PianoMusicVoice [measure 85] %%%
-                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
-                            \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \clef "treble" %! REDUNDANT_CLEF_COMMAND:4
+                            \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:1
+                            %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:3
                             r16
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:5
                             
                             bf''16
                             -\staccatissimo
@@ -5791,11 +5792,12 @@
                         
                         %%% PercussionMusicVoice [measure 58] %%%
                         \override DynamicLineSpanner.staff-padding = #'5
-                        \clef "percussion" %! EXPLICIT_CLEF_COMMAND:3
-                        \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                        %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \clef "percussion" %! REDUNDANT_CLEF_COMMAND:4
+                        \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:1
+                        %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:3
                         r16
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:5
                         
                         c'16
                         -\p

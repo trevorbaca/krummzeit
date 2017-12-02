@@ -3821,12 +3821,12 @@
                                     #10 %! SEGMENT:REAPPLIED_INSTRUMENT:2
                                     Xyl. %! SEGMENT:REAPPLIED_INSTRUMENT:2
                                 } %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                            \clef "percussion" %! DUPLICATE_CLEF_COMMAND:7
+                            \clef "percussion" %! REDUNDANT_CLEF_COMMAND:7
                             \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_INSTRUMENT:1
                             \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_STAFF_LINES:3
-                            \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! DUPLICATE_CLEF_COLOR:5
-                            %%% \override Staff.Clef.color = ##f %! DUPLICATE_CLEF_UNCOLOR:6
-                            \set Staff.forceClef = ##t %! DUPLICATE_CLEF_COMMAND:8
+                            \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:5
+                            %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:6
+                            \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:8
                             \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:10
                             c2
                             :32
@@ -3839,7 +3839,7 @@
                                             \box
                                                 "suspended cymbal"
                                 }
-                            \override Staff.Clef.color = #(x11-color 'DeepPink4) %! DUPLICATE_CLEF_SHADOW:9
+                            \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:9
                             
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue

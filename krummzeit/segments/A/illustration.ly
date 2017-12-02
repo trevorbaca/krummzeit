@@ -15,10 +15,10 @@
             \context GlobalSkips = "GlobalSkips" {
                 
                 %%% GlobalSkips [measure 14] %%%
-                \time 3/4 %! SEGMENT:DUPLICATE_TIME_SIGNATURE:4
+                \time 3/4 %! SEGMENT:REDUNDANT_TIME_SIGNATURE:4
                 \mark #1
                 \bar "" %! SEGMENT:EMPTY_START_BAR:1
-                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1) %! SEGMENT:DUPLICATE_TIME_SIGNATURE:3
+                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1) %! SEGMENT:REDUNDANT_TIME_SIGNATURE:3
                 s1 * 3/4
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:5
                     %%% \fontsize %! CLOCK_TIME_MARKUP:5
@@ -5498,12 +5498,12 @@
                                     #10 %! SEGMENT:REAPPLIED_INSTRUMENT:2
                                     Perc. %! SEGMENT:REAPPLIED_INSTRUMENT:2
                                 } %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                            \clef "percussion" %! DUPLICATE_CLEF_COMMAND:6
+                            \clef "percussion" %! REDUNDANT_CLEF_COMMAND:6
                             \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_INSTRUMENT:1
-                            \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) %! SEGMENT:DUPLICATE_STAFF_LINES:3
-                            \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! DUPLICATE_CLEF_COLOR:4
-                            %%% \override Staff.Clef.color = ##f %! DUPLICATE_CLEF_UNCOLOR:5
-                            \set Staff.forceClef = ##t %! DUPLICATE_CLEF_COMMAND:7
+                            \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) %! SEGMENT:REDUNDANT_STAFF_LINES:3
+                            \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:4
+                            %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:5
+                            \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:7
                             c'2
                             -\accent
                             ^ \markup {
@@ -5514,7 +5514,7 @@
                                             \box
                                                 sponges
                                 }
-                            \override Staff.Clef.color = #(x11-color 'DeepPink4) %! DUPLICATE_CLEF_SHADOW:8
+                            \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:8
                             
                             c'2
                             -\accent

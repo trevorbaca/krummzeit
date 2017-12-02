@@ -3493,15 +3493,15 @@
                                 #10 %! SEGMENT:REAPPLIED_INSTRUMENT:2
                                 Xyl. %! SEGMENT:REAPPLIED_INSTRUMENT:2
                             } %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                        \clef "percussion" %! DUPLICATE_CLEF_COMMAND:5
+                        \clef "percussion" %! REDUNDANT_CLEF_COMMAND:5
                         \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_INSTRUMENT:1
-                        \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! DUPLICATE_CLEF_COLOR:3
-                        %%% \override Staff.Clef.color = ##f %! DUPLICATE_CLEF_UNCOLOR:4
-                        \set Staff.forceClef = ##t %! DUPLICATE_CLEF_COMMAND:6
+                        \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:3
+                        %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:4
+                        \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:6
                         \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:8
                         r16
                         \ppp %! SEGMENT:REMINDER_DYNAMIC:9
-                        \override Staff.Clef.color = #(x11-color 'DeepPink4) %! DUPLICATE_CLEF_SHADOW:7
+                        \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:7
                         
                         c16
                         -\pp

@@ -15,10 +15,10 @@
             \context GlobalSkips = "GlobalSkips" {
                 
                 %%% GlobalSkips [measure 235] %%%
-                \time 9/8 %! SEGMENT:DUPLICATE_TIME_SIGNATURE:4
+                \time 9/8 %! SEGMENT:REDUNDANT_TIME_SIGNATURE:4
                 \mark #6
                 \bar "" %! SEGMENT:EMPTY_START_BAR:1
-                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1) %! SEGMENT:DUPLICATE_TIME_SIGNATURE:3
+                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1) %! SEGMENT:REDUNDANT_TIME_SIGNATURE:3
                 s1 * 9/8
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:5
                     %%% \fontsize %! CLOCK_TIME_MARKUP:5

@@ -5490,9 +5490,9 @@
                         \times 3/4 {
                             
                             %%% PercussionMusicVoice [measure 14] %%%
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
+                            \stopStaff %! REDUNDANT_STAFF_LINES_COMMAND:4
+                            \once \override Staff.StaffSymbol.line-count = 1 %! REDUNDANT_STAFF_LINES_COMMAND:4
+                            \startStaff %! REDUNDANT_STAFF_LINES_COMMAND:4
                             \set PercussionMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
                                 \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
                                     #16 %! REAPPLIED_INSTRUMENT_COMMAND:2
@@ -5503,12 +5503,12 @@
                                     #10 %! REAPPLIED_INSTRUMENT_COMMAND:2
                                     Perc. %! REAPPLIED_INSTRUMENT_COMMAND:2
                                 } %! REAPPLIED_INSTRUMENT_COMMAND:2
-                            \clef "percussion" %! REDUNDANT_CLEF_COMMAND:7
+                            \clef "percussion" %! REDUNDANT_CLEF_COMMAND:8
                             \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
                             \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) %! REDUNDANT_STAFF_LINES_COLOR:3
-                            \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:4
-                            %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:5
-                            \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:6
+                            \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:5
+                            %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:6
+                            \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:7
                             c'2
                             -\accent
                             ^ \markup {
@@ -5519,7 +5519,7 @@
                                             \box
                                                 sponges
                                 }
-                            \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:8
+                            \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:9
                             
                             c'2
                             -\accent

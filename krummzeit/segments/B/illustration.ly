@@ -2504,9 +2504,10 @@
                                     #10
                                     Xyl.
                                 }
-                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             r8
                             ^ \markup {
                                 \override
@@ -2514,7 +2515,7 @@
                                     \box
                                         "to xylophone"
                                 }
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             cs''8
                             -\staccatissimo
@@ -2661,9 +2662,10 @@
                         \once \override Flag.color = #blue
                         \once \override NoteHead.color = #blue
                         \once \override Stem.color = #blue
-                        \clef "percussion" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "percussion" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         c4
                         \ff
                         ~
@@ -2675,7 +2677,7 @@
                                         \box
                                             "scraped slate"
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                         
                         %%% PercussionMusicVoice [measure 110] %%%
                         \once \override Beam.color = #blue
@@ -3308,12 +3310,13 @@
                                     #10
                                     Vn.
                                 }
-                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             af''8
                             \ff
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             a''4
                             \startTrillSpan

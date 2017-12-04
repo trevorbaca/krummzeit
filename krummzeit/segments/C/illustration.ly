@@ -1024,14 +1024,15 @@
                         \times 2/3 {
                             
                             %%% PianoMusicVoice [measure 137] %%%
-                            \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             af8
                             -\staccatissimo
                             \>
                             \ff
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             r8
                             
@@ -2035,11 +2036,12 @@
                         \times 2/3 {
                             
                             %%% ViolaMusicVoice [measure 141] %%%
-                            \clef "alto" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "alto" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             r8
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             f'4
                             -\staccatissimo
@@ -2205,11 +2207,12 @@
                         \times 7/8 {
                             
                             %%% CelloMusicVoice [measure 139] %%%
-                            \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             r8
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             ef'4
                             -\staccatissimo

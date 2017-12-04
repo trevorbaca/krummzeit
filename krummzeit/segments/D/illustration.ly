@@ -2408,11 +2408,12 @@
                                     #10
                                     Pf.
                                 }
-                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             r16
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -2558,9 +2559,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         c'2.
                         -\mp
                         -\tenuto
@@ -2579,7 +2581,7 @@
                                         }
                                 }
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
@@ -2783,11 +2785,12 @@
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #3
-                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             r8
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -3283,11 +3286,12 @@
                         
                         %%% PianoMusicVoice [measure 196] %%%
                         \override DynamicLineSpanner.staff-padding = #'6
-                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         r8
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                         
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
@@ -3759,11 +3763,12 @@
                                     #10
                                     Xyl.
                                 }
-                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             r4
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -4420,9 +4425,10 @@
                         \startStaff
                         \override DynamicLineSpanner.staff-padding = #'6
                         \override RepeatTie.direction = #up
-                        \clef "percussion" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "percussion" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         c1
                         :32
                         \ppp
@@ -4446,7 +4452,7 @@
                                         }
                                 }
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                         
                         c4
                         :32
@@ -5523,9 +5529,10 @@
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'6
                             \override TupletBracket.staff-padding = #3
-                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             a''8
                             \glissando
                             \<
@@ -5535,7 +5542,7 @@
                                     \upright
                                         "molto flautando ed estr. sul pont."
                                 }
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             c''4
                             \glissando
@@ -6121,11 +6128,12 @@
                         
                         %%% ViolaMusicVoice [measure 190] %%%
                         \override DynamicLineSpanner.staff-padding = #'8
-                        \clef "alto" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "alto" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         r8
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                         
                         bf,8
                         :32
@@ -6460,11 +6468,12 @@
                         \override Beam.positions = #'(-4 . -4)
                         \override DynamicLineSpanner.staff-padding = #'6
                         \override TupletBracket.staff-padding = #3
-                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         r2
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                         
                         r4
                         
@@ -6910,11 +6919,12 @@
                         
                         %%% CelloMusicVoice [measure 190] %%%
                         \override DynamicLineSpanner.staff-padding = #'6
-                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         r8
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                         
                         a,8
                         :32

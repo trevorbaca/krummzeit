@@ -4431,11 +4431,12 @@
                         
                         %%% PercussionMusicVoice [measure 293] %%%
                         \override DynamicLineSpanner.staff-padding = #'6
-                        \clef "percussion" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "percussion" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         r16
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                         
                         \once \override Beam.color = #blue
                         \once \override Dots.color = #blue
@@ -5438,9 +5439,10 @@
                         R1 * 5/8
                         
                         %%% ViolaMusicVoice [measure 295] %%%
-                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         ef''4
                         -\downbow
                         \glissando
@@ -5461,7 +5463,7 @@
                                 \italic
                                     ”
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                         
                         bf''4
                         -\upbow
@@ -5769,9 +5771,10 @@
                         R1 * 5/8
                         
                         %%% CelloMusicVoice [measure 295] %%%
-                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         d''4
                         -\downbow
                         \glissando
@@ -5792,7 +5795,7 @@
                                 \italic
                                     ”
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                         
                         e''4
                         -\upbow

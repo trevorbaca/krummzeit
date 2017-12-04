@@ -2523,15 +2523,16 @@
                                     #10
                                     Xyl.
                                 }
-                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             fs''4
                             :32
                             \fff
                             - \tweak color #red
                             ^ \markup { @ }
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red

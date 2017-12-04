@@ -1100,11 +1100,12 @@
                         \times 4/5 {
                             
                             %%% PianoMusicVoice [measure 241] %%%
-                            \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             r8
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             g'8
                             [
@@ -1295,12 +1296,13 @@
                                 #10 %! REAPPLIED_INSTRUMENT_COMMAND:2
                                 Xyl. %! REAPPLIED_INSTRUMENT_COMMAND:2
                             } %! REAPPLIED_INSTRUMENT_COMMAND:2
-                        \clef "percussion" %! EXPLICIT_CLEF_COMMAND:9
+                        \clef "percussion" %! EXPLICIT_CLEF_COMMAND:10
                         \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
                         \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES_COLOR:3
                         \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:5
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:7
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:8
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:9
                         r1
                         \pp %! REMINDER_DYNAMIC_COMMAND:6
                         ^ \markup {
@@ -1311,7 +1313,7 @@
                                         \box
                                             "snare drum"
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:10
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:11
                         
                         r8
                         

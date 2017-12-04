@@ -49,7 +49,7 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 7/8
                 \mark #8
-                \bar "" %! SEGMENT:EMPTY_START_BAR:1
+                \bar "" %! EMPTY_START_BAR:1
                 s1 * 7/8
                 \startTextSpan
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:3

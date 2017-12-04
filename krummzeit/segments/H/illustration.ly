@@ -225,9 +225,9 @@
                         \once \override OboeMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
                         %%% \override OboeMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
                         \set OboeMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:4
-                        \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:6
+                        \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:6
                         R1 * 7/8
-                        \f %! SEGMENT:REMINDER_DYNAMIC:7
+                        \f %! REMINDER_DYNAMIC:7
                         \override OboeMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:5
                         
                         %%% OboeMusicVoice [measure 282] %%%
@@ -360,9 +360,9 @@
                         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:3
                         %%% \override ClarinetMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:4
                         \set ClarinetMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:6
-                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:8
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:8
                         R1 * 7/8
-                        \pp %! SEGMENT:REMINDER_DYNAMIC:9
+                        \pp %! REMINDER_DYNAMIC:9
                         \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:7
                         
                         %%% ClarinetMusicVoice [measure 282] %%%
@@ -547,9 +547,9 @@
                             \once \override PianoMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
                             %%% \override PianoMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
                             \set PianoMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:4
-                            \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:6
+                            \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:6
                             <d' f' a' c''>8
-                            \pp %! SEGMENT:REMINDER_DYNAMIC:7
+                            \pp %! REMINDER_DYNAMIC:7
                             [
                             ^ \markup {
                                 \override
@@ -2394,9 +2394,9 @@
                         \once \override PercussionMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:5
                         %%% \override PercussionMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:6
                         \set PercussionMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:8
-                        \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:10
+                        \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:10
                         R1 * 7/8
-                        \ppp %! SEGMENT:REMINDER_DYNAMIC:11
+                        \ppp %! REMINDER_DYNAMIC:11
                         \override PercussionMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:9
                         
                         %%% PercussionMusicVoice [measure 282] %%%
@@ -2581,10 +2581,10 @@
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:5
                             %%% \override ViolinMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:6
                             \set ViolinMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:8
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:10
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:10
                             df'2.
                             :32
-                            \pp %! SEGMENT:REMINDER_DYNAMIC:11
+                            \pp %! REMINDER_DYNAMIC:11
                             - \tweak color #red
                             ^ \markup { @ }
                             _ \markup {
@@ -2766,10 +2766,10 @@
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:3
                             %%% \override ViolaMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:4
                             \set ViolaMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:6
-                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:8
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:8
                             c4
                             :32
-                            \fff %! SEGMENT:REMINDER_DYNAMIC:9
+                            \fff %! REMINDER_DYNAMIC:9
                             - \tweak color #red
                             ^ \markup { @ }
                             _ \markup {
@@ -2945,10 +2945,10 @@
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:3
                             %%% \override CelloMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:4
                             \set CelloMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:6
-                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:8
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:8
                             c,2
                             :32
-                            \fff %! SEGMENT:REMINDER_DYNAMIC:9
+                            \fff %! REMINDER_DYNAMIC:9
                             - \tweak color #red
                             ^ \markup { @ }
                             _ \markup {

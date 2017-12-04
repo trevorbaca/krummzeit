@@ -836,10 +836,10 @@
                         \once \override PianoMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
                         %%% \override PianoMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
                         \set PianoMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:4
-                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:6
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:6
                         cs'''\longa
                         :32
-                        \fff %! SEGMENT:REMINDER_DYNAMIC:7
+                        \fff %! REMINDER_DYNAMIC:7
                         ^ \markup {
                             \column
                                 {

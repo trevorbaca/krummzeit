@@ -663,33 +663,34 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        \set ClarinetMusicStaff.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                \center-column
-                                    {
-                                        Bass
-                                        clarinet
-                                    }
-                            }
-                        \set ClarinetMusicStaff.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                \center-column
-                                    {
-                                        Bass
-                                        cl.
-                                    }
-                            }
-                        \clef "treble" %! REAPPLIED_CLEF_COMMAND:4
-                        \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
-                        %%% \override ClarinetMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                        \set ClarinetMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:3
+                        \set ClarinetMusicStaff.instrumentName = \markup { %! REDUNDANT_INSTRUMENT_COMMAND:2
+                            \hcenter-in %! REDUNDANT_INSTRUMENT_COMMAND:2
+                                #16 %! REDUNDANT_INSTRUMENT_COMMAND:2
+                                \center-column %! REDUNDANT_INSTRUMENT_COMMAND:2
+                                    { %! REDUNDANT_INSTRUMENT_COMMAND:2
+                                        Bass %! REDUNDANT_INSTRUMENT_COMMAND:2
+                                        clarinet %! REDUNDANT_INSTRUMENT_COMMAND:2
+                                    } %! REDUNDANT_INSTRUMENT_COMMAND:2
+                            } %! REDUNDANT_INSTRUMENT_COMMAND:2
+                        \set ClarinetMusicStaff.shortInstrumentName = \markup { %! REDUNDANT_INSTRUMENT_COMMAND:2
+                            \hcenter-in %! REDUNDANT_INSTRUMENT_COMMAND:2
+                                #10 %! REDUNDANT_INSTRUMENT_COMMAND:2
+                                \center-column %! REDUNDANT_INSTRUMENT_COMMAND:2
+                                    { %! REDUNDANT_INSTRUMENT_COMMAND:2
+                                        Bass %! REDUNDANT_INSTRUMENT_COMMAND:2
+                                        cl. %! REDUNDANT_INSTRUMENT_COMMAND:2
+                                    } %! REDUNDANT_INSTRUMENT_COMMAND:2
+                            } %! REDUNDANT_INSTRUMENT_COMMAND:2
+                        \clef "treble" %! REAPPLIED_CLEF_COMMAND:6
+                        \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:1
+                        \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:3
+                        %%% \override ClarinetMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:4
+                        \set ClarinetMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:5
                         e\longa
                         \f
                         - \tweak color #red
                         ^ \markup { @ }
-                        \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:5
+                        \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:7
                         
                         %%% ClarinetMusicVoice [measure 318] %%%
                         \once \override Accidental.color = #red
@@ -822,21 +823,22 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        \set PianoMusicStaff.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Harpsichord
-                            }
-                        \set PianoMusicStaff.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Hpschd.
-                            }
+                        \set PianoMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:9
+                            \hcenter-in %! EXPLICIT_INSTRUMENT_COMMAND:9
+                                #16 %! EXPLICIT_INSTRUMENT_COMMAND:9
+                                Harpsichord %! EXPLICIT_INSTRUMENT_COMMAND:9
+                            } %! EXPLICIT_INSTRUMENT_COMMAND:9
+                        \set PianoMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:9
+                            \hcenter-in %! EXPLICIT_INSTRUMENT_COMMAND:9
+                                #10 %! EXPLICIT_INSTRUMENT_COMMAND:9
+                                Hpschd. %! EXPLICIT_INSTRUMENT_COMMAND:9
+                            } %! EXPLICIT_INSTRUMENT_COMMAND:9
                         \clef "bass" %! REAPPLIED_CLEF_COMMAND:4
                         \once \override PianoMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
                         %%% \override PianoMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
                         \set PianoMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:3
                         \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:6
+                        \once \override Staff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:8
                         cs'''\longa
                         :32
                         \fff %! REMINDER_DYNAMIC_COMMAND:7
@@ -922,16 +924,17 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        \set PianoMusicStaff.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Piano
-                            }
-                        \set PianoMusicStaff.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Pf.
-                            }
+                        \set PianoMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:2
+                            \hcenter-in %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                #16 %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                Piano %! EXPLICIT_INSTRUMENT_COMMAND:2
+                            } %! EXPLICIT_INSTRUMENT_COMMAND:2
+                        \set PianoMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:2
+                            \hcenter-in %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                #10 %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                Pf. %! EXPLICIT_INSTRUMENT_COMMAND:2
+                            } %! EXPLICIT_INSTRUMENT_COMMAND:2
+                        \once \override Staff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:1
                         cs'''\longa
                         :32
                         ^ \markup {
@@ -1020,36 +1023,37 @@
                     \context PercussionMusicVoice = "PercussionMusicVoice" {
                         
                         %%% PercussionMusicVoice [measure 314] %%%
-                        \stopStaff %! REAPPLIED_STAFF_LINES_COMMAND:2
-                        \once \override Staff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES_COMMAND:2
-                        \startStaff %! REAPPLIED_STAFF_LINES_COMMAND:2
+                        \stopStaff %! REAPPLIED_STAFF_LINES_COMMAND:4
+                        \once \override Staff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES_COMMAND:4
+                        \startStaff %! REAPPLIED_STAFF_LINES_COMMAND:4
                         \override DynamicLineSpanner.staff-padding = #'4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        \set PercussionMusicStaff.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Xylophone
-                            }
-                        \set PercussionMusicStaff.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Xyl.
-                            }
-                        \clef "percussion" %! REAPPLIED_CLEF_COMMAND:6
-                        \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES_COLOR:1
-                        \once \override PercussionMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:3
-                        %%% \override PercussionMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:4
-                        \set PercussionMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:5
+                        \set PercussionMusicStaff.instrumentName = \markup { %! REDUNDANT_INSTRUMENT_COMMAND:2
+                            \hcenter-in %! REDUNDANT_INSTRUMENT_COMMAND:2
+                                #16 %! REDUNDANT_INSTRUMENT_COMMAND:2
+                                Xylophone %! REDUNDANT_INSTRUMENT_COMMAND:2
+                            } %! REDUNDANT_INSTRUMENT_COMMAND:2
+                        \set PercussionMusicStaff.shortInstrumentName = \markup { %! REDUNDANT_INSTRUMENT_COMMAND:2
+                            \hcenter-in %! REDUNDANT_INSTRUMENT_COMMAND:2
+                                #10 %! REDUNDANT_INSTRUMENT_COMMAND:2
+                                Xyl. %! REDUNDANT_INSTRUMENT_COMMAND:2
+                            } %! REDUNDANT_INSTRUMENT_COMMAND:2
+                        \clef "percussion" %! REAPPLIED_CLEF_COMMAND:8
+                        \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:1
+                        \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES_COLOR:3
+                        \once \override PercussionMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:5
+                        %%% \override PercussionMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:6
+                        \set PercussionMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:7
                         cs''\longa
                         :32
                         \fff
                         - \tweak color #red
                         ^ \markup { @ }
-                        \override PercussionMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:7
+                        \override PercussionMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:9
                         
                         %%% PercussionMusicVoice [measure 318] %%%
                         \once \override Accidental.color = #red
@@ -1642,9 +1646,9 @@
                                 } %! REAPPLIED_INSTRUMENT_COMMAND:2
                             \clef "treble" %! REDUNDANT_CLEF_COMMAND:6
                             \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
-                            \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:3
-                            %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:4
-                            \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:5
+                            \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:3
+                            %%% \override ViolaMusicStaff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:4
+                            \set ViolaMusicStaff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:5
                             ef'''\breve
                             -\staccatissimo
                             \ff
@@ -1653,7 +1657,7 @@
                                     \upright
                                         pizz.
                                 }
-                            \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:7
+                            \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:7
                         }
                         {
                             

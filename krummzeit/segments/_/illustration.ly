@@ -472,10 +472,25 @@
                         cs2.
                         \ppp
                         ^ \markup {
-                            \override
-                                #'(box-padding . 0.75)
-                                \box
-                                    "to bass clarinet"
+                            \column
+                                {
+                                    %%% \line %! INSTRUMENT_CHANGE_MARKUP:3
+                                    %%%     { %! INSTRUMENT_CHANGE_MARKUP:3
+                                    %%%         \override %! INSTRUMENT_CHANGE_MARKUP:3
+                                    %%%             #'(box-padding . 0.75) %! INSTRUMENT_CHANGE_MARKUP:3
+                                    %%%             \box %! INSTRUMENT_CHANGE_MARKUP:3
+                                    %%%                 "to bass clarinet" %! INSTRUMENT_CHANGE_MARKUP:3
+                                    %%%     } %! INSTRUMENT_CHANGE_MARKUP:3
+                                    \line %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                        { %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                            \with-color %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                                #(x11-color 'blue) %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                                \override %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                                    #'(box-padding . 0.75) %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                                    \box %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                                        "to bass clarinet" %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                        } %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                }
                             }
                         
                         %%% ClarinetMusicVoice [measure 5] %%%
@@ -564,6 +579,27 @@
                         %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:4
                         \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:5
                         r16
+                        ^ \markup {
+                            \column
+                                {
+                                    %%% \line %! INSTRUMENT_CHANGE_MARKUP:8
+                                    %%%     { %! INSTRUMENT_CHANGE_MARKUP:8
+                                    %%%         \override %! INSTRUMENT_CHANGE_MARKUP:8
+                                    %%%             #'(box-padding . 0.75) %! INSTRUMENT_CHANGE_MARKUP:8
+                                    %%%             \box %! INSTRUMENT_CHANGE_MARKUP:8
+                                    %%%                 piano %! INSTRUMENT_CHANGE_MARKUP:8
+                                    %%%     } %! INSTRUMENT_CHANGE_MARKUP:8
+                                    \line %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                        { %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                            \with-color %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                                #(x11-color 'DeepPink1) %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                                \override %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                                    #'(box-padding . 0.75) %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                                    \box %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                                        piano %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                        } %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                }
+                            }
                         \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:7
                         
                         \once \override Accidental.stencil = ##f
@@ -719,13 +755,22 @@
                             ^ \markup {
                                 \column
                                     {
-                                        \line
-                                            {
-                                                \override
-                                                    #'(box-padding . 0.75)
-                                                    \box
-                                                        "to xylophone"
-                                            }
+                                        %%% \line %! INSTRUMENT_CHANGE_MARKUP:8
+                                        %%%     { %! INSTRUMENT_CHANGE_MARKUP:8
+                                        %%%         \override %! INSTRUMENT_CHANGE_MARKUP:8
+                                        %%%             #'(box-padding . 0.75) %! INSTRUMENT_CHANGE_MARKUP:8
+                                        %%%             \box %! INSTRUMENT_CHANGE_MARKUP:8
+                                        %%%                 "to xylophone" %! INSTRUMENT_CHANGE_MARKUP:8
+                                        %%%     } %! INSTRUMENT_CHANGE_MARKUP:8
+                                        \line %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                            { %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                                \with-color %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                                    #(x11-color 'blue) %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                                    \override %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                                        #'(box-padding . 0.75) %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                                        \box %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                                            "to xylophone" %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                            } %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
                                         \line
                                             {
                                                 @
@@ -804,13 +849,22 @@
                                                     \upright
                                                         "accent changes of direction noticeably at each attack"
                                             }
-                                        \line
-                                            {
-                                                \override
-                                                    #'(box-padding . 0.75)
-                                                    \box
-                                                        "to percussion"
-                                            }
+                                        %%% \line %! INSTRUMENT_CHANGE_MARKUP:8
+                                        %%%     { %! INSTRUMENT_CHANGE_MARKUP:8
+                                        %%%         \override %! INSTRUMENT_CHANGE_MARKUP:8
+                                        %%%             #'(box-padding . 0.75) %! INSTRUMENT_CHANGE_MARKUP:8
+                                        %%%             \box %! INSTRUMENT_CHANGE_MARKUP:8
+                                        %%%                 "to percussion" %! INSTRUMENT_CHANGE_MARKUP:8
+                                        %%%     } %! INSTRUMENT_CHANGE_MARKUP:8
+                                        \line %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                            { %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                                \with-color %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                                    #(x11-color 'blue) %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                                    \override %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                                        #'(box-padding . 0.75) %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                                        \box %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                                            "to percussion" %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
+                                            } %! INSTRUMENT_CHANGE_COLORED_MARKUP:9
                                         \line
                                             {
                                                 @

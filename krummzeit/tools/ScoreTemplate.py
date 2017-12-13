@@ -166,6 +166,10 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     '''
 
+    ### CLASS VARIABLES ###
+
+    __documentation_section__ = None
+
     ### SPECIAL METHODS ###
 
     def __call__(self):
@@ -173,6 +177,8 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         Returns score.
         '''
+
+        # GLOBAL CONTEXT
         global_context = self._make_global_context()
         instrument_tags = (
             'winds',
@@ -187,9 +193,9 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
         tag_string = '.'.join(instrument_tags)
         self._attach_tag(tag_string, global_context)
+
         # OBOE
         oboe_music_voice = abjad.Voice(
-            [],
             context_name='OboeMusicVoice',
             name='OboeMusicVoice',
             )
@@ -204,9 +210,9 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['oboe'],
             )
+
         # CLARINET
         clarinet_music_voice = abjad.Voice(
-            [],
             context_name='ClarinetMusicVoice',
             name='ClarinetMusicVoice',
             )
@@ -221,15 +227,16 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['e-flat clarinet'],
             )
+
         # WIND SECTION
         wind_section_staff_group = abjad.StaffGroup(
             [oboe_music_staff, clarinet_music_staff],
             context_name='WindSectionStaffGroup',
             name='WindSectionStaffGroup',
             )
+
         # PIANO
         piano_music_voice = abjad.Voice(
-            [],
             context_name='PianoMusicVoice',
             name='PianoMusicVoice',
             )
@@ -244,9 +251,9 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['piano'],
             )
+
         # PERCUSSION
         percussion_music_voice = abjad.Voice(
-            [],
             context_name='PercussionMusicVoice',
             name='PercussionMusicVoice',
             )
@@ -261,15 +268,16 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['percussion'],
             )
+
         # PERCUSSION SECTION
         percussion_section_staff_group = abjad.StaffGroup(
             [piano_music_staff, percussion_music_staff],
             context_name='PercussionSectionStaffGroup',
             name='PercussionSectionStaffGroup',
             )
+
         # VIOLIN
         violin_music_voice = abjad.Voice(
-            [],
             context_name='ViolinMusicVoice',
             name='ViolinMusicVoice',
             )
@@ -284,9 +292,9 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['violin'],
             )
+
         # VIOLA
         viola_music_voice = abjad.Voice(
-            [],
             context_name='ViolaMusicVoice',
             name='ViolaMusicVoice',
             )
@@ -301,9 +309,9 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['viola'],
             )
+
         # CELLO
         cello_music_voice = abjad.Voice(
-            [],
             context_name='CelloMusicVoice',
             name='CelloMusicVoice',
             )
@@ -318,13 +326,15 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['cello'],
             )
+
         # STRING SECTION
         string_section_staff_group = abjad.StaffGroup(
             [violin_music_staff, viola_music_staff, cello_music_staff],
             context_name='StringSectionStaffGroup',
             name='StringSectionStaffGroup',
             )
-        # SCORE
+
+        # MUSIC CONTEXT
         music_context = abjad.Context(
             [
                 wind_section_staff_group,
@@ -335,6 +345,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             is_simultaneous=True,
             name='MusicContext',
             )
+
+        # SCORE
         score = abjad.Score(
             [
                 global_context,
@@ -342,4 +354,5 @@ class ScoreTemplate(baca.ScoreTemplate):
                 ],
             name='Score',
             )
+
         return score

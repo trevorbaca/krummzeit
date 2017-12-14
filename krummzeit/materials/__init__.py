@@ -1,7 +1,7 @@
-import abjad
-
-
-abjad.ImportManager.import_material_packages(
-    __path__[0],
-    globals(),
-    )
+from .indigo_pitch_classes.definition import indigo_pitch_classes
+from .instruments.definition import instruments
+from .metric_modulations.definition import metric_modulations
+from .metronome_marks.definition import metronome_marks
+from .segment_time_signatures.definition import segment_time_signatures
+from .time_signature_inventory.definition import time_signature_inventory
+from .violet_pitch_classes.definition import violet_pitch_classes

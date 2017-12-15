@@ -20,7 +20,7 @@ metadata = abjad.TypedOrderedDict(
                         ('treble', 'OboeMusicVoice'),
                         ),
                     (
-                        'PercussionStaff',
+                        'PercussionMusicStaff',
                         ('percussion', 'PercussionMusicVoice'),
                         ),
                     (
@@ -60,7 +60,7 @@ metadata = abjad.TypedOrderedDict(
                     ('CelloMusicStaff', 'cello'),
                     ('ClarinetMusicStaff', 'bass clarinet'),
                     ('OboeMusicStaff', 'oboe'),
-                    ('PercussionStaff', 'xylophone'),
+                    ('PercussionMusicStaff', 'xylophone'),
                     ('PianoMusicStaff', 'piano'),
                     ('ViolaMusicStaff', 'viola'),
                     ('ViolinMusicStaff', 'violin'),
@@ -72,7 +72,7 @@ metadata = abjad.TypedOrderedDict(
             'end_staff_lines_by_staff',
             abjad.TypedOrderedDict(
                 [
-                    ('PercussionStaff', 5),
+                    ('PercussionMusicStaff', 5),
                     ('ViolinMusicStaff', 5),
                     ]
                 ),

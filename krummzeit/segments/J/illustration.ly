@@ -10,7 +10,7 @@
     \context Score = "Score" \with {
         currentBarNumber = #314
     } <<
-        \tag winds.oboe.clarinet.piano.percussion.strings.violin.viola.cello
+        \tag Oboe.Clarinet.Piano.Percussion.Violin.Viola.Cello
         \context GlobalContext = "GlobalContext" <<
             \context GlobalSkips = "GlobalSkips" {
                 
@@ -552,7 +552,7 @@
         >>
         \context MusicContext = "MusicContext" <<
             \context WindSectionStaffGroup = "WindSectionStaffGroup" <<
-                \tag winds.oboe
+                \tag Oboe
                 \context OboeMusicStaff = "OboeMusicStaff" {
                     \context OboeMusicVoice = "OboeMusicVoice" {
                         
@@ -651,7 +651,7 @@
                         
                     }
                 }
-                \tag winds.clarinet
+                \tag Clarinet
                 \context ClarinetMusicStaff = "ClarinetMusicStaff" {
                     \context ClarinetMusicVoice = "ClarinetMusicVoice" {
                         
@@ -855,7 +855,7 @@
                 }
             >>
             \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup" <<
-                \tag percussion.piano
+                \tag Piano
                 \context PianoMusicStaff = "PianoMusicStaff" {
                     \context PianoMusicVoice = "PianoMusicVoice" {
                         
@@ -1100,8 +1100,8 @@
                         
                     }
                 }
-                \tag percussion
-                \context PercussionMusicStaff = "PercussionStaff" {
+                \tag Percussion
+                \context PercussionMusicStaff = "PercussionMusicStaff" {
                     \context PercussionMusicVoice = "PercussionMusicVoice" {
                         
                         %%% PercussionMusicVoice [measure 314] %%%
@@ -1298,7 +1298,7 @@
                 }
             >>
             \context StringSectionStaffGroup = "StringSectionStaffGroup" <<
-                \tag strings.violin
+                \tag Violin
                 \context ViolinMusicStaff = "ViolinMusicStaff" {
                     \context ViolinMusicVoice = "ViolinMusicVoice" {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -1774,7 +1774,7 @@
                         
                     }
                 }
-                \tag strings.viola
+                \tag Viola
                 \context ViolaMusicStaff = "ViolaMusicStaff" {
                     \context ViolaMusicVoice = "ViolaMusicVoice" {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -2012,7 +2012,7 @@
                         
                     }
                 }
-                \tag strings.cello
+                \tag Cello
                 \context CelloMusicStaff = "CelloMusicStaff" {
                     \context CelloMusicVoice = "CelloMusicVoice" {
                         

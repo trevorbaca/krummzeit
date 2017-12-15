@@ -4037,7 +4037,7 @@
                 }
             }
             \tag percussion
-            \context PercussionMusicStaff = "PercussionStaff" {
+            \context PercussionMusicStaff = "PercussionMusicStaff" {
                 \context PercussionMusicVoice = "PercussionMusicVoice" {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 8/7 {

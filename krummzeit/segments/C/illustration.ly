@@ -840,14 +840,73 @@
                     \context ClarinetMusicVoice = "ClarinetMusicVoice" {
                         
                         %%% ClarinetMusicVoice [measure 133] %%%
-                        \clef "treble" %! REAPPLIED_CLEF_COMMAND:4
-                        \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
-                        %%% \override ClarinetMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                        \set ClarinetMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:3
-                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:6
+                        \set ClarinetMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                #16 %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                \center-column %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                        Clarinet %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                        (Eb) %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        \set ClarinetMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                #10 %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                \center-column %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                        Cl. %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                        (Eb) %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        \clef "treble" %! REAPPLIED_CLEF_COMMAND:10
+                        \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
+                        \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:7
+                        %%% \override ClarinetMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:8
+                        \set ClarinetMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:9
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:12
                         R1 * 3/4
-                        \f %! REMINDER_DYNAMIC_COMMAND:7
-                        \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:5
+                        \f %! REMINDER_DYNAMIC_COMMAND:13
+                        ^ \markup {
+                            \column
+                                {
+                                    %%% \line %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%     { %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%         \override %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%             #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%             \box %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%                 "clarinet in E-flat" %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%     } %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    \line %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                        { %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                            \with-color %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                #(x11-color 'green) %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                \override %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                    #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                    \box %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                        "clarinet in E-flat" %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                        } %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                }
+                            }
+                        \set ClarinetMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                #16 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                \center-column %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                        Clarinet %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                        (Eb) %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        \set ClarinetMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                #10 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                \center-column %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                        Cl. %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                        (Eb) %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW_COLOR:3
+                        \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:11
                         
                         %%% ClarinetMusicVoice [measure 134] %%%
                         R1 * 1/4
@@ -909,6 +968,27 @@
                         cs1
                         \ppp
                         ~
+                        ^ \markup {
+                            \column
+                                {
+                                    %%% \line %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%     { %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%         \override %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%             #'(box-padding . 0.75) %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%             \box %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%                 "bass clarinet" %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%     } %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:5
+                                    \line %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                        { %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                            \with-color %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                \override %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                    #'(box-padding . 0.75) %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                    \box %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                        "bass clarinet" %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                        } %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                }
+                            }
                         \set ClarinetMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                             \hcenter-in %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                                 #16 %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4

@@ -508,49 +508,108 @@
                         %%% OboeMusicVoice [measure 257] %%%
                         \override Stem.direction = #up
                         \override DynamicLineSpanner.staff-padding = #'5
-                        \clef "treble" %! REAPPLIED_CLEF_COMMAND:4
-                        \once \override OboeMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
-                        %%% \override OboeMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                        \set OboeMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:3
-                        b1
+                        \set OboeMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                #16 %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                \center-column %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                        Clarinet %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                        (Eb) %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        \set OboeMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                #10 %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                \center-column %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                        Cl. %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                        (Eb) %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        \clef "treble" %! REAPPLIED_CLEF_COMMAND:10
+                        \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
+                        \once \override OboeMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:7
+                        %%% \override OboeMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:8
+                        \set OboeMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:9
+                        gs1
                         \ff
                         ~
-                        \override OboeMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:5
+                        ^ \markup {
+                            \column
+                                {
+                                    %%% \line %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%     { %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%         \override %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%             #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%             \box %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%                 "clarinet in E-flat" %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%     } %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    \line %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                        { %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                            \with-color %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                #(x11-color 'green) %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                \override %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                    #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                    \box %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                        "clarinet in E-flat" %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                        } %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                }
+                            }
+                        \set OboeMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                #16 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                \center-column %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                        Clarinet %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                        (Eb) %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        \set OboeMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                #10 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                \center-column %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                        Cl. %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                        (Eb) %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW_COLOR:3
+                        \override OboeMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:11
                         
-                        b8
+                        gs8
                         ~
                         
                         %%% OboeMusicVoice [measure 258] %%%
-                        b2
+                        gs2
                         ~
                         
-                        b8
+                        gs8
                         ~
                         
                         %%% OboeMusicVoice [measure 259] %%%
-                        b2
+                        gs2
                         ~
                         
-                        b8
+                        gs8
                         ~
                         
                         %%% OboeMusicVoice [measure 260] %%%
-                        b1
+                        gs1
                         ~
                         
                         %%% OboeMusicVoice [measure 261] %%%
-                        b1
+                        gs1
                         ~
                         
-                        b4
+                        gs4
                         ~
                         
                         %%% OboeMusicVoice [measure 262] %%%
-                        b2.
+                        gs2.
                         ~
                         
                         %%% OboeMusicVoice [measure 263] %%%
-                        b2.
+                        gs2.
                         \revert Stem.direction
                         \revert DynamicLineSpanner.staff-padding
                         
@@ -563,7 +622,7 @@
                             \override Beam.positions = #'(-4 . -4)
                             \override TupletBracket.staff-padding = #3
                             \override DynamicLineSpanner.staff-padding = #'5
-                            fs''8
+                            ds''8
                             -\staccato
                             \pp
                             [
@@ -573,75 +632,75 @@
                                         leggierissimo
                                 }
                             
-                            c''8
+                            a'8
                             -\staccato
                             
-                            cs''8
+                            as'8
                             -\staccato
                             
-                            b''8
+                            gs''8
                             -\staccato
                             
-                            bf''8
+                            g''8
                             -\staccato
                             
-                            af''8
+                            f''8
                             -\staccato
                             
-                            b'8
+                            gs'8
                             -\staccato
                             ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             
-                            c'''8
+                            a''8
                             -\staccato
                             [
                             
-                            fs''8
+                            ds''8
                             -\staccato
                             
-                            d'''8
+                            b''8
                             -\staccato
                             
-                            bf''8
+                            g''8
                             -\staccato
                             ~
                             ]
                         }
                         {
                             
-                            bf''4
+                            g''4
                         }
                         {
                             
                             %%% OboeMusicVoice [measure 266] %%%
-                            ef''4.
+                            c''4.
                             -\staccato
                             ~
                         }
                         \times 4/7 {
                             
-                            ef''8
+                            c''8
                             [
-                            
-                            a''8
-                            -\staccato
-                            
-                            cs''8
-                            -\staccato
-                            
-                            b''8
-                            -\staccato
                             
                             fs''8
                             -\staccato
                             
-                            b''8
+                            as'8
                             -\staccato
                             
-                            e'''8
+                            gs''8
+                            -\staccato
+                            
+                            ds''8
+                            -\staccato
+                            
+                            gs''8
+                            -\staccato
+                            
+                            cs'''8
                             -\staccato
                             ~
                             ]
@@ -649,52 +708,52 @@
                         \times 4/5 {
                             
                             %%% OboeMusicVoice [measure 267] %%%
-                            e'''8
+                            cs'''8
                             [
+                            
+                            ds''8
+                            -\staccato
+                            
+                            e''8
+                            -\staccato
+                            
+                            f''8
+                            -\staccato
                             
                             fs''8
                             -\staccato
+                            ]
+                        }
+                        {
                             
                             g''8
                             -\staccato
+                            [
                             
-                            af''8
-                            -\staccato
-                            
-                            a''8
+                            gs''8
                             -\staccato
                             ]
                         }
                         {
-                            
-                            bf''8
-                            -\staccato
-                            [
-                            
-                            b''8
-                            -\staccato
-                            ]
-                        }
-                        {
-                            
-                            bf'8
-                            -\staccato
-                            [
-                            
-                            b'8
-                            -\staccato
                             
                             g'8
                             -\staccato
+                            [
                             
-                            a'8
+                            gs'8
+                            -\staccato
+                            
+                            e'8
+                            -\staccato
+                            
+                            fs'8
                             -\staccato
                             ~
                             ]
                         }
                         {
                             
-                            a'4
+                            fs'4
                         }
                         {
                             
@@ -704,7 +763,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''4
+                            ds''4
                             -\staccato
                             ~
                             - \tweak color #red
@@ -717,7 +776,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8
+                            ds''8
                             [
                             - \tweak color #red
                             ^ \markup { @ }
@@ -727,7 +786,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            fs''8
+                            ds''8
                             -\staccato
                             - \tweak color #red
                             ^ \markup { @ }
@@ -737,7 +796,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            af''8
+                            f''8
                             -\staccato
                             - \tweak color #red
                             ^ \markup { @ }
@@ -747,7 +806,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            af''8
+                            f''8
                             -\staccato
                             ~
                             ]
@@ -762,47 +821,47 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            af''8
+                            f''8
                             [
                             - \tweak color #red
                             ^ \markup { @ }
                             
-                            c''8
+                            a'8
                             -\staccato
                             
-                            cs''8
+                            as'8
                             -\staccato
                             
-                            b'8
+                            gs'8
                             -\staccato
                             ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/8 {
                             
-                            fs''8
+                            ds''8
                             -\staccato
                             [
                             
-                            a''8
-                            -\staccato
-                            
-                            bf''8
-                            -\staccato
-                            
-                            e'''8
-                            -\staccato
-                            
-                            af''8
-                            -\staccato
-                            
-                            d''8
-                            -\staccato
-                            
                             fs''8
                             -\staccato
                             
-                            af''8
+                            g''8
+                            -\staccato
+                            
+                            cs'''8
+                            -\staccato
+                            
+                            f''8
+                            -\staccato
+                            
+                            b'8
+                            -\staccato
+                            
+                            ds''8
+                            -\staccato
+                            
+                            f''8
                             -\staccato
                             ]
                             \revert Beam.positions
@@ -835,7 +894,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            c'1.
+                            a1.
                             \f
                             - \tweak color #red
                             ^ \markup { @ }
@@ -845,7 +904,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            c'1
+                            a1
                             - \tweak color #red
                             ^ \markup { @ }
                             ^ \markup {
@@ -865,7 +924,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            c'4
+                            a4
                             - \tweak color #red
                             ^ \markup { @ }
                             ^ \markup {
@@ -881,7 +940,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            c'1
+                            a1
                             - \tweak color #red
                             ^ \markup { @ }
                             ^ \markup {
@@ -901,7 +960,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            c'2.
+                            a2.
                             - \tweak color #red
                             ^ \markup { @ }
                             
@@ -910,7 +969,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            c'2
+                            a2
                             - \tweak color #red
                             ^ \markup { @ }
                             ^ \markup {

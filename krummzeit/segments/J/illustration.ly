@@ -558,67 +558,126 @@
                         
                         %%% OboeMusicVoice [measure 314] %%%
                         \override DynamicLineSpanner.staff-padding = #'5
-                        \clef "treble" %! REAPPLIED_CLEF_COMMAND:4
-                        \once \override OboeMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
-                        %%% \override OboeMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                        \set OboeMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:3
-                        cs'\breve..
+                        \set OboeMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                #16 %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                \center-column %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                        Clarinet %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                        (Eb) %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        \set OboeMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                #10 %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                \center-column %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                        Cl. %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                        (Eb) %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        \clef "treble" %! REAPPLIED_CLEF_COMMAND:10
+                        \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
+                        \once \override OboeMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:7
+                        %%% \override OboeMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:8
+                        \set OboeMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:9
+                        as\breve..
                         \fff
-                        \override OboeMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:5
+                        ^ \markup {
+                            \column
+                                {
+                                    %%% \line %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%     { %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%         \override %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%             #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%             \box %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%                 "clarinet in E-flat" %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%     } %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    \line %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                        { %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                            \with-color %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                #(x11-color 'green) %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                \override %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                    #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                    \box %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                        "clarinet in E-flat" %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                        } %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                }
+                            }
+                        \set OboeMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                #16 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                \center-column %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                        Clarinet %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                        (Eb) %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        \set OboeMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                #10 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                \center-column %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                        Cl. %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                        (Eb) %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW_COLOR:3
+                        \override OboeMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:11
                         
                         %%% OboeMusicVoice [measure 317] %%%
                         r2
                         
                         %%% OboeMusicVoice [measure 318] %%%
-                        cs'\breve..
+                        as\breve..
                         
                         %%% OboeMusicVoice [measure 321] %%%
                         r2
                         
                         %%% OboeMusicVoice [measure 322] %%%
-                        cs'\breve..
+                        as\breve..
                         
                         %%% OboeMusicVoice [measure 325] %%%
                         r2
                         
                         %%% OboeMusicVoice [measure 326] %%%
-                        cs'\breve..
+                        as\breve..
                         
                         %%% OboeMusicVoice [measure 329] %%%
                         r2
                         
                         %%% OboeMusicVoice [measure 330] %%%
-                        cs'\breve..
+                        as\breve..
                         
                         %%% OboeMusicVoice [measure 333] %%%
                         r2
                         
                         %%% OboeMusicVoice [measure 334] %%%
-                        cs'\breve..
+                        as\breve..
                         
                         %%% OboeMusicVoice [measure 337] %%%
                         r2
                         
                         %%% OboeMusicVoice [measure 338] %%%
-                        cs'\breve..
+                        as\breve..
                         
                         %%% OboeMusicVoice [measure 341] %%%
                         r2
                         
                         %%% OboeMusicVoice [measure 342] %%%
-                        cs'\breve..
+                        as\breve..
                         
                         %%% OboeMusicVoice [measure 345] %%%
                         r2
                         
                         %%% OboeMusicVoice [measure 346] %%%
-                        cs'\breve..
+                        as\breve..
                         
                         %%% OboeMusicVoice [measure 349] %%%
                         r2
                         
                         %%% OboeMusicVoice [measure 350] %%%
-                        cs'\breve..
+                        as\breve..
                         
                         %%% OboeMusicVoice [measure 353] %%%
                         r2

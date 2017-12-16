@@ -380,14 +380,73 @@
                         \override Beam.positions = #'(-5 . -5)
                         \override TupletBracket.staff-padding = #4
                         \override DynamicLineSpanner.staff-padding = #'8
-                        \clef "treble" %! REAPPLIED_CLEF_COMMAND:4
-                        \once \override OboeMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
-                        %%% \override OboeMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                        \set OboeMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:3
-                        \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:6
+                        \set OboeMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                #16 %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                \center-column %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                        Clarinet %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                        (Eb) %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        \set OboeMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                #10 %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                \center-column %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                        Cl. %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                        (Eb) %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        \clef "treble" %! REAPPLIED_CLEF_COMMAND:10
+                        \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
+                        \once \override OboeMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:7
+                        %%% \override OboeMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:8
+                        \set OboeMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:9
+                        \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:12
                         R1 * 9/8
-                        \ppp %! REMINDER_DYNAMIC_COMMAND:7
-                        \override OboeMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:5
+                        \ppp %! REMINDER_DYNAMIC_COMMAND:13
+                        ^ \markup {
+                            \column
+                                {
+                                    %%% \line %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%     { %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%         \override %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%             #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%             \box %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%                 "clarinet in E-flat" %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%%     } %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    \line %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                        { %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                            \with-color %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                #(x11-color 'green) %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                \override %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                    #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                    \box %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                        "clarinet in E-flat" %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                        } %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                }
+                            }
+                        \set OboeMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                #16 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                \center-column %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                        Clarinet %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                        (Eb) %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        \set OboeMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                #10 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                \center-column %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                        Cl. %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                        (Eb) %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW_COLOR:3
+                        \override OboeMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:11
                         
                         %%% OboeMusicVoice [measure 236] %%%
                         R1 * 5/8
@@ -397,7 +456,7 @@
                         {
                             
                             %%% OboeMusicVoice [measure 238] %%%
-                            a'''4.
+                            fs'''4.
                             -\staccato
                             \<
                             \p
@@ -405,125 +464,73 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
                             
-                            af'''4
+                            f'''4
                             -\staccato
                             
-                            c'''4
+                            a''4
                             -\staccato
                             
-                            bf'''4
+                            g'''4
                             ~
                         }
                         {
                             
                             %%% OboeMusicVoice [measure 239] %%%
-                            bf'''4
-                            
-                            af'''4
-                            -\staccato
-                        }
-                        {
-                            
-                            d'''16
-                            -\staccato
-                            [
-                            
-                            cs'''16
-                            -\staccato
-                            
-                            ef'''16
-                            -\staccato
-                            
-                            f'''16
-                            ~
-                            ]
-                        }
-                        \times 2/3 {
+                            g'''4
                             
                             f'''4
-                            
-                            d'''4
                             -\staccato
-                            
-                            b''4
-                            ~
                         }
                         {
                             
-                            %%% OboeMusicVoice [measure 240] %%%
-                            b''4
-                        }
-                        {
-                            
-                            fs''4
-                            -\staccato
-                            
-                            g''4
-                            -\staccato
-                        }
-                        \times 8/12 {
-                            
-                            %%% OboeMusicVoice [measure 241] %%%
-                            a''16
+                            b''16
                             -\staccato
                             [
                             
-                            ef''16
-                            -\staccato
-                            
-                            f''16
-                            -\staccato
-                            
-                            af''16
-                            -\staccato
-                            
-                            a''16
+                            as''16
                             -\staccato
                             
                             c'''16
                             -\staccato
                             
-                            d''16
-                            -\staccato
-                            
-                            bf''16
-                            -\staccato
-                            
-                            f''16
-                            -\staccato
-                            
-                            g''16
-                            -\staccato
-                            
-                            a''16
-                            -\staccato
-                            
-                            b'16
+                            d'''16
                             ~
                             ]
                         }
-                        {
+                        \times 2/3 {
                             
-                            b'4
-                        }
-                        {
+                            d'''4
                             
-                            %%% OboeMusicVoice [measure 242] %%%
-                            f''4.
+                            b''4
+                            -\staccato
+                            
+                            gs''4
                             ~
                         }
                         {
                             
-                            f''4.
-                            ~
+                            %%% OboeMusicVoice [measure 240] %%%
+                            gs''4
+                        }
+                        {
+                            
+                            ds''4
+                            -\staccato
+                            
+                            e''4
+                            -\staccato
                         }
                         \times 8/12 {
                             
-                            %%% OboeMusicVoice [measure 243] %%%
-                            f''16
+                            %%% OboeMusicVoice [measure 241] %%%
+                            fs''16
+                            -\staccato
                             [
                             
-                            ef''16
+                            c''16
+                            -\staccato
+                            
+                            d''16
                             -\staccato
                             
                             f''16
@@ -532,104 +539,156 @@
                             fs''16
                             -\staccato
                             
-                            cs''16
-                            -\staccato
-                            
-                            \once \override Accidental.color = #red
-                            \once \override Beam.color = #red
-                            \once \override Dots.color = #red
-                            \once \override NoteHead.color = #red
-                            \once \override Stem.color = #red
-                            a'16
-                            -\staccato
-                            - \tweak color #red
-                            ^ \markup { @ }
-                            
-                            \once \override Accidental.color = #red
-                            \once \override Beam.color = #red
-                            \once \override Dots.color = #red
-                            \once \override NoteHead.color = #red
-                            \once \override Stem.color = #red
-                            a'16
-                            -\staccato
-                            - \tweak color #red
-                            ^ \markup { @ }
-                            
-                            g''16
-                            -\staccato
-                            
-                            a'16
-                            -\staccato
-                            
-                            ef''16
-                            -\staccato
-                            
-                            f''16
-                            -\staccato
-                            
-                            cs''16
-                            -\staccato
-                            ]
-                        }
-                        {
-                            
-                            af'4
-                            -\staccato
-                        }
-                        {
-                            
-                            f''4.
-                            ~
-                        }
-                        {
-                            
-                            %%% OboeMusicVoice [measure 244] %%%
-                            f''4
-                        }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 10/14 {
-                            
-                            g'16
-                            -\staccato
-                            [
-                            
-                            a'16
-                            -\staccato
-                            
-                            f'16
-                            -\staccato
-                            
-                            d'16
-                            -\staccato
-                            
-                            bf'16
+                            a''16
                             -\staccato
                             
                             b'16
                             -\staccato
                             
-                            cs''16
+                            g''16
                             -\staccato
                             
-                            a'16
+                            d''16
                             -\staccato
                             
-                            ef'16
+                            e''16
                             -\staccato
                             
-                            f'16
+                            fs''16
+                            -\staccato
+                            
+                            gs'16
+                            ~
+                            ]
+                        }
+                        {
+                            
+                            gs'4
+                        }
+                        {
+                            
+                            %%% OboeMusicVoice [measure 242] %%%
+                            d''4.
+                            ~
+                        }
+                        {
+                            
+                            d''4.
+                            ~
+                        }
+                        \times 8/12 {
+                            
+                            %%% OboeMusicVoice [measure 243] %%%
+                            d''16
+                            [
+                            
+                            c''16
+                            -\staccato
+                            
+                            d''16
+                            -\staccato
+                            
+                            ds''16
+                            -\staccato
+                            
+                            as'16
+                            -\staccato
+                            
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
+                            fs'16
+                            -\staccato
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
+                            fs'16
+                            -\staccato
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            
+                            e''16
                             -\staccato
                             
                             fs'16
                             -\staccato
                             
+                            c''16
+                            -\staccato
+                            
+                            d''16
+                            -\staccato
+                            
+                            as'16
+                            -\staccato
+                            ]
+                        }
+                        {
+                            
+                            f'4
+                            -\staccato
+                        }
+                        {
+                            
+                            d''4.
+                            ~
+                        }
+                        {
+                            
+                            %%% OboeMusicVoice [measure 244] %%%
+                            d''4
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 10/14 {
+                            
+                            e'16
+                            -\staccato
+                            [
+                            
+                            fs'16
+                            -\staccato
+                            
+                            d'16
+                            -\staccato
+                            
+                            b16
+                            -\staccato
+                            
                             g'16
                             -\staccato
                             
-                            b'16
+                            gs'16
+                            -\staccato
+                            
+                            as'16
+                            -\staccato
+                            
+                            fs'16
                             -\staccato
                             
                             c'16
+                            -\staccato
+                            
+                            d'16
+                            -\staccato
+                            
+                            ds'16
+                            -\staccato
+                            
+                            e'16
+                            -\staccato
+                            
+                            gs'16
+                            -\staccato
+                            
+                            a16
                             -\staccato
                             \ff
                             ]

@@ -326,12 +326,6 @@ maker(
     )
 
 maker(
-    baca.scope('PercussionMusicVoice', 1),
-    baca.dynamic('fff'),
-    baca.stem_tremolo(),
-    )
-
-maker(
     baca.scope('ViolinMusicVoice', 1, 3),
     baca.pitches('Eb5'),
     )

@@ -413,12 +413,6 @@ maker(
     baca.stem_tremolo(),
     )
 
-maker(
-    baca.scope('PercussionMusicVoice', 8),
-    baca.dynamic('fff'),
-    baca.stem_tremolo(),
-    )
-
 ### VERTICAL ALIGNMENT ###
 
 maker(

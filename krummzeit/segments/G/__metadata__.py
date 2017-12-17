@@ -43,13 +43,34 @@ metadata = abjad.TypedOrderedDict(
             'end_dynamics',
             abjad.TypedOrderedDict(
                 [
-                    ('CelloMusicVoice', 'fff'),
-                    ('ClarinetMusicVoice', 'pp'),
-                    ('OboeMusicVoice', 'f'),
-                    ('PercussionMusicVoice', 'ppp'),
-                    ('PianoMusicVoice', 'pp'),
-                    ('ViolaMusicVoice', 'fff'),
-                    ('ViolinMusicVoice', 'pp'),
+                    (
+                        'CelloMusicVoice',
+                        ('fff', 'CelloMusicVoice'),
+                        ),
+                    (
+                        'ClarinetMusicVoice',
+                        ('pp', 'ClarinetMusicVoice'),
+                        ),
+                    (
+                        'OboeMusicVoice',
+                        ('f', 'OboeMusicVoice'),
+                        ),
+                    (
+                        'PercussionMusicVoice',
+                        ('ppp', 'PercussionMusicVoice'),
+                        ),
+                    (
+                        'PianoMusicVoice',
+                        ('pp', 'PianoMusicVoice'),
+                        ),
+                    (
+                        'ViolaMusicVoice',
+                        ('fff', 'ViolaMusicVoice'),
+                        ),
+                    (
+                        'ViolinMusicVoice',
+                        ('pp', 'ViolinMusicVoice'),
+                        ),
                     ]
                 ),
             ),

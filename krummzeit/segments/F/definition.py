@@ -53,7 +53,7 @@ maker(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
                 durations=[(1, 4)],
-                remainder=Right,
+                remainder=abjad.Right,
                 ),
             ),
         rhythm_maker=rhythmos.IncisedRhythmMaker(

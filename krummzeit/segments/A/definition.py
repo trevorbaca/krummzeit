@@ -287,7 +287,7 @@ maker(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
                 durations=[(3, 8)],
-                remainder=Left,
+                remainder=abjad.Left,
                 ),
             ),
         rhythm_maker=rhythmos.NoteRhythmMaker(
@@ -459,7 +459,7 @@ maker(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
                 durations=[(3, 8)],
-                remainder=Left,
+                remainder=abjad.Left,
                 ),
             ),
         rhythm_maker=rhythmos.NoteRhythmMaker(

@@ -151,7 +151,7 @@ maker(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
                 durations=[(1, 4)],
-                remainder=Left,
+                remainder=abjad.Left,
                 ),
             ),
         rhythm_maker=rhythmos.TupletRhythmMaker(

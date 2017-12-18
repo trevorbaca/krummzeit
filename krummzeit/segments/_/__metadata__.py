@@ -3,9 +3,8 @@ import abjad
 
 metadata = abjad.TypedOrderedDict(
     [
-        ('duration', "0'27''"),
         (
-            'end_clefs',
+            'abjad.Clef',
             abjad.TypedOrderedDict(
                 [
                     (
@@ -40,7 +39,7 @@ metadata = abjad.TypedOrderedDict(
                 ),
             ),
         (
-            'end_dynamics',
+            'abjad.Dynamic',
             abjad.TypedOrderedDict(
                 [
                     (
@@ -63,7 +62,7 @@ metadata = abjad.TypedOrderedDict(
                 ),
             ),
         (
-            'end_instruments',
+            'abjad.Instrument',
             abjad.TypedOrderedDict(
                 [
                     (
@@ -97,9 +96,8 @@ metadata = abjad.TypedOrderedDict(
                     ]
                 ),
             ),
-        ('end_margin_markup', None),
         (
-            'end_metronome_marks',
+            'abjad.MetronomeMark',
             abjad.TypedOrderedDict(
                 [
                     (
@@ -110,23 +108,25 @@ metadata = abjad.TypedOrderedDict(
                 ),
             ),
         (
+            'abjad.TimeSignature',
+            abjad.TypedOrderedDict(
+                [
+                    (
+                        'Score',
+                        ('3/4', 'GlobalSkips'),
+                        ),
+                    ]
+                ),
+            ),
+        ('baca.MarginMarkup', None),
+        ('duration', "0'27''"),
+        (
             'end_staff_lines',
             abjad.TypedOrderedDict(
                 [
                     (
                         'PercussionMusicStaff',
                         (1, 'PercussionMusicVoice'),
-                        ),
-                    ]
-                ),
-            ),
-        (
-            'end_time_signatures',
-            abjad.TypedOrderedDict(
-                [
-                    (
-                        'Score',
-                        ('3/4', 'GlobalSkips'),
                         ),
                     ]
                 ),

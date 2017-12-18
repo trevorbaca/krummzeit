@@ -3,9 +3,8 @@ import abjad
 
 metadata = abjad.TypedOrderedDict(
     [
-        ('duration', "2'57''"),
         (
-            'end_clefs',
+            'abjad.Clef',
             abjad.TypedOrderedDict(
                 [
                     (
@@ -40,7 +39,7 @@ metadata = abjad.TypedOrderedDict(
                 ),
             ),
         (
-            'end_dynamics',
+            'abjad.Dynamic',
             abjad.TypedOrderedDict(
                 [
                     (
@@ -67,7 +66,7 @@ metadata = abjad.TypedOrderedDict(
                 ),
             ),
         (
-            'end_instruments',
+            'abjad.Instrument',
             abjad.TypedOrderedDict(
                 [
                     (
@@ -101,9 +100,8 @@ metadata = abjad.TypedOrderedDict(
                     ]
                 ),
             ),
-        ('end_margin_markup', None),
         (
-            'end_metronome_marks',
+            'abjad.MetronomeMark',
             abjad.TypedOrderedDict(
                 [
                     (
@@ -113,6 +111,19 @@ metadata = abjad.TypedOrderedDict(
                     ]
                 ),
             ),
+        (
+            'abjad.TimeSignature',
+            abjad.TypedOrderedDict(
+                [
+                    (
+                        'Score',
+                        ('5/4', 'GlobalSkips'),
+                        ),
+                    ]
+                ),
+            ),
+        ('baca.MarginMarkup', None),
+        ('duration', "2'57''"),
         (
             'end_staff_lines',
             abjad.TypedOrderedDict(
@@ -124,17 +135,6 @@ metadata = abjad.TypedOrderedDict(
                     (
                         'ViolinMusicStaff',
                         (1, 'ViolinMusicVoice'),
-                        ),
-                    ]
-                ),
-            ),
-        (
-            'end_time_signatures',
-            abjad.TypedOrderedDict(
-                [
-                    (
-                        'Score',
-                        ('5/4', 'GlobalSkips'),
                         ),
                     ]
                 ),

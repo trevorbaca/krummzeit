@@ -188,7 +188,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('PianoMusicVoice', 8),
-    baca.instrument(krummzeit.instruments['piano']),
+    baca.instrument(krummzeit.instruments['Piano']),
     baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(1, 2), (2, 1)],
@@ -213,7 +213,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('PercussionMusicVoice', 8),
-    baca.instrument(krummzeit.instruments['xylophone']),
+    baca.instrument(krummzeit.instruments['Xylophone']),
     baca.clef('treble'),
     baca.staff_lines(5),
     )
@@ -276,7 +276,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('OboeMusicVoice', 5),
-    baca.instrument(krummzeit.instruments['e-flat clarinet']),
+    baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
     )
 
 maker.copy_rhythm(

@@ -84,7 +84,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('ClarinetMusicVoice', 1, 2),
-    baca.instrument(krummzeit.instruments['e-flat clarinet']),
+    baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
     baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
@@ -134,7 +134,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('PianoMusicVoice', 2),
-    baca.instrument(krummzeit.instruments['piano']),
+    baca.instrument(krummzeit.instruments['Piano']),
     baca.clef('bass'),
     )
 
@@ -234,7 +234,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('ClarinetMusicVoice', 4),
-    baca.instrument(krummzeit.instruments['e-flat clarinet']),
+    baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
     )
 
 ### pf, xyl [F8] & [F10-15] ###
@@ -271,7 +271,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('PercussionMusicVoice', 8),
-    baca.instrument(krummzeit.instruments['xylophone']),
+    baca.instrument(krummzeit.instruments['Xylophone']),
     baca.clef('treble'),
     baca.staff_lines(5),
     )
@@ -285,7 +285,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('ClarinetMusicVoice', 13),
-    baca.instrument(krummzeit.instruments['bass clarinet']),
+    baca.instrument(krummzeit.instruments['BassClarinet']),
     baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,

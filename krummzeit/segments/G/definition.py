@@ -104,7 +104,7 @@ maker(
 
 maker(
     baca.scope('ClarinetMusicVoice', 1, 5),
-    baca.instrument(krummzeit.instruments['bass clarinet']),
+    baca.instrument(krummzeit.instruments['BassClarinet']),
     baca.RhythmCommand(
         rhythm_maker=rhythmos.NoteRhythmMaker(
             tie_specifier=rhythmos.TieSpecifier(
@@ -125,7 +125,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('ClarinetMusicVoice', 9),
-    baca.instrument(krummzeit.instruments['e-flat clarinet']),
+    baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
     )
 
 ### bass clarinet [H18-21] reiteration pedal ###
@@ -138,14 +138,14 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('ClarinetMusicVoice', 18),
-    baca.instrument(krummzeit.instruments['bass clarinet']),
+    baca.instrument(krummzeit.instruments['BassClarinet']),
     )
 
 ### harpsichord [H5-11] 5th-octave counterpoint ###
 
 maker(
     baca.scope('PianoMusicVoice', 5, 11),
-    baca.instrument(krummzeit.instruments['harpsichord']),
+    baca.instrument(krummzeit.instruments['Harpsichord']),
     baca.clef('treble'),
     baca.RhythmCommand(
         division_maker=baca.SplitByDurationsDivisionCallback(
@@ -167,7 +167,7 @@ maker(
 
 maker(
     baca.scope('PianoMusicVoice', 14, 20),
-    baca.instrument(krummzeit.instruments['piano']),
+    baca.instrument(krummzeit.instruments['Piano']),
     baca.clef('bass'),
     baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(

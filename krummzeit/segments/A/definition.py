@@ -107,7 +107,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('PianoMusicVoice', 1, 4),
-    baca.instrument(krummzeit.instruments['harpsichord']),
+    baca.instrument(krummzeit.instruments['Harpsichord']),
     baca.RhythmCommand(
         division_maker=baca.SplitByDurationsDivisionCallback(
             durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
@@ -235,7 +235,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('ClarinetMusicVoice', 3, 4),
-    baca.instrument(krummzeit.instruments['e-flat clarinet']),
+    baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
     )
 
 maker.copy_rhythm(
@@ -261,7 +261,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('ViolinMusicVoice', 8, 13),
-    baca.instrument(krummzeit.instruments['violin']),
+    baca.instrument(krummzeit.instruments['Violin']),
     )
 
 ### oboe [B9-13] ###
@@ -275,7 +275,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('OboeMusicVoice', 9, 13),
-    baca.instrument(krummzeit.instruments['oboe']),
+    baca.instrument(krummzeit.instruments['Oboe']),
     )
 
 ### vn, va, vc [B12-14] (white OB bowing) ###
@@ -340,7 +340,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('PianoMusicVoice', 16, 19),
-    baca.instrument(krummzeit.instruments['piano']),
+    baca.instrument(krummzeit.instruments['Piano']),
     baca.clef('bass'),
     baca.RhythmCommand(
         rhythm_maker=rhythmos.IncisedRhythmMaker(
@@ -453,7 +453,7 @@ maker(
 
 maker(
     baca.scope('ClarinetMusicVoice', 22, 23),
-    baca.instrument(krummzeit.instruments['e-flat clarinet']),
+    baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
     baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,

@@ -51,7 +51,7 @@ maker.validate_measures_per_stage()
 
 maker(
     baca.scope('PianoMusicVoice', 1, 6),
-    baca.instrument(krummzeit.instruments['harpsichord']),
+    baca.instrument(krummzeit.instruments['Harpsichord']),
     baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
@@ -69,7 +69,7 @@ maker(
 
 maker(
     baca.scope('PianoMusicVoice', 7, 12),
-    baca.instrument(krummzeit.instruments['piano']),
+    baca.instrument(krummzeit.instruments['Piano']),
     baca.RhythmCommand(
         # TODO: replace first division-maker?
         #division_maker=baca.FuseByCountsDivisionCallback(
@@ -91,7 +91,7 @@ maker(
 
 maker(
     baca.scope('PercussionMusicVoice', 1, 12),
-    baca.instrument(krummzeit.instruments['xylophone']),
+    baca.instrument(krummzeit.instruments['Xylophone']),
     baca.RhythmCommand(
         # TODO: replace first division-maker?
         #division_maker=baca.FuseByCountsDivisionCallback(
@@ -173,7 +173,7 @@ maker(
 
 maker(
     baca.scope('ClarinetMusicVoice', 1, 10),
-    baca.instrument(krummzeit.instruments['bass clarinet']),
+    baca.instrument(krummzeit.instruments['BassClarinet']),
     baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[4],

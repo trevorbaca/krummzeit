@@ -206,7 +206,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             oboe_music_staff,
             'default_instrument',
-            krummzeit.instruments['oboe'],
+            krummzeit.instruments['Oboe'],
             )
 
         # CLARINET
@@ -223,7 +223,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             clarinet_music_staff,
             'default_instrument',
-            krummzeit.instruments['e-flat clarinet'],
+            krummzeit.instruments['ClarinetInEFlat'],
             )
 
         # WIND SECTION
@@ -247,7 +247,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             piano_music_staff,
             'default_instrument',
-            krummzeit.instruments['piano'],
+            krummzeit.instruments['Piano'],
             )
 
         # PERCUSSION
@@ -264,7 +264,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             percussion_music_staff,
             'default_instrument',
-            krummzeit.instruments['percussion'],
+            krummzeit.instruments['Percussion'],
             )
 
         # PERCUSSION SECTION
@@ -288,7 +288,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             violin_music_staff,
             'default_instrument',
-            krummzeit.instruments['violin'],
+            krummzeit.instruments['Violin'],
             )
 
         # VIOLA
@@ -305,7 +305,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             viola_music_staff,
             'default_instrument',
-            krummzeit.instruments['viola'],
+            krummzeit.instruments['Viola'],
             )
 
         # CELLO
@@ -322,7 +322,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             cello_music_staff,
             'default_instrument',
-            krummzeit.instruments['cello'],
+            krummzeit.instruments['Cello'],
             )
 
         # STRING SECTION

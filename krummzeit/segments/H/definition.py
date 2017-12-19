@@ -180,7 +180,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('ClarinetMusicVoice', 3),
-    baca.instrument(krummzeit.instruments['e-flat clarinet']),
+    baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
     )
 
 ### ob, bass clarinet [I7-8] reiteration ###
@@ -210,14 +210,14 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('ClarinetMusicVoice', 7),
-    baca.instrument(krummzeit.instruments['bass clarinet']),
+    baca.instrument(krummzeit.instruments['BassClarinet']),
     )
 
 ### pf, xylophone [I8] reiteration ###
 
 maker(
     baca.scope('PianoMusicVoice', 8),
-    baca.instrument(krummzeit.instruments['piano']),
+    baca.instrument(krummzeit.instruments['Piano']),
     baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[2],
@@ -241,7 +241,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('PercussionMusicVoice', 8),
-    baca.instrument(krummzeit.instruments['xylophone']),
+    baca.instrument(krummzeit.instruments['Xylophone']),
     baca.clef('treble'),
     )
 
@@ -259,7 +259,7 @@ maker(
 
 maker(
     baca.scope('PianoMusicVoice', 1, 5),
-    baca.instrument(krummzeit.instruments['harpsichord']),
+    baca.instrument(krummzeit.instruments['Harpsichord']),
     )
 
 ### (14) string reiteration ###

@@ -3,21 +3,6 @@ import abjad
 
 metadata = abjad.TypedOrderedDict(
     [
-        (
-            'baca.StaffLines',
-            abjad.TypedOrderedDict(
-                [
-                    (
-                        'PercussionMusicStaff',
-                        (1, 'PercussionMusicVoice'),
-                        ),
-                    (
-                        'ViolinMusicStaff',
-                        (1, 'ViolinMusicVoice'),
-                        ),
-                    ]
-                ),
-            ),
         ('duration', "2'57''"),
         ('first_measure_number', 14),
         (

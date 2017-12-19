@@ -696,46 +696,25 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            \set PianoMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:11
-                                \hcenter-in %! EXPLICIT_INSTRUMENT_COMMAND:11
-                                    #16 %! EXPLICIT_INSTRUMENT_COMMAND:11
-                                    Harpsichord %! EXPLICIT_INSTRUMENT_COMMAND:11
-                                } %! EXPLICIT_INSTRUMENT_COMMAND:11
-                            \set PianoMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:11
-                                \hcenter-in %! EXPLICIT_INSTRUMENT_COMMAND:11
-                                    #10 %! EXPLICIT_INSTRUMENT_COMMAND:11
-                                    Hpschd. %! EXPLICIT_INSTRUMENT_COMMAND:11
-                                } %! EXPLICIT_INSTRUMENT_COMMAND:11
+                            \set PianoMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:9
+                                \hcenter-in %! EXPLICIT_INSTRUMENT_COMMAND:9
+                                    #16 %! EXPLICIT_INSTRUMENT_COMMAND:9
+                                    Harpsichord %! EXPLICIT_INSTRUMENT_COMMAND:9
+                                } %! EXPLICIT_INSTRUMENT_COMMAND:9
+                            \set PianoMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:9
+                                \hcenter-in %! EXPLICIT_INSTRUMENT_COMMAND:9
+                                    #10 %! EXPLICIT_INSTRUMENT_COMMAND:9
+                                    Hpschd. %! EXPLICIT_INSTRUMENT_COMMAND:9
+                                } %! EXPLICIT_INSTRUMENT_COMMAND:9
                             \clef "bass" %! REAPPLIED_CLEF_COMMAND:4
                             \once \override PianoMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
                             %%% \override PianoMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
                             \set PianoMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:3
-                            \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:8
-                            \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:10
+                            \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:6
+                            \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:8
                             <d' f' a' c''>8
-                            \pp %! REMINDER_DYNAMIC_COMMAND:9
+                            \pp %! REMINDER_DYNAMIC_COMMAND:7
                             [
-                            ^ \markup {
-                                \column
-                                    {
-                                        %%% \line %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:6
-                                        %%%     { %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:6
-                                        %%%         \override %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:6
-                                        %%%             #'(box-padding . 0.75) %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:6
-                                        %%%             \box %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:6
-                                        %%%                 harpsichord %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:6
-                                        %%%     } %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:6
-                                        \line %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                            { %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                \with-color %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                    #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                    \override %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                        #'(box-padding . 0.75) %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                        \box %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                            harpsichord %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                            } %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                    }
-                                }
                             ^ \markup {
                                 \center-align
                                     \concat
@@ -744,18 +723,18 @@
                                             \flat
                                         }
                                 }
-                            \set PianoMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:13
-                                \hcenter-in %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:13
-                                    #16 %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:13
-                                    Harpsichord %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:13
-                                } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:13
-                            \set PianoMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:13
-                                \hcenter-in %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:13
-                                    #10 %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:13
-                                    Hpschd. %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:13
-                                } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:13
+                            \set PianoMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:11
+                                \hcenter-in %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:11
+                                    #16 %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:11
+                                    Harpsichord %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:11
+                                } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:11
+                            \set PianoMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:11
+                                \hcenter-in %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:11
+                                    #10 %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:11
+                                    Hpschd. %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:11
+                                } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:11
                             \override PianoMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:5
-                            \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_SHADOW_COLOR:12
+                            \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_SHADOW_COLOR:10
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f

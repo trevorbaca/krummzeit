@@ -15,11 +15,11 @@
             \context GlobalSkips = "GlobalSkips" {
                 
                 %%% GlobalSkips [measure 235] %%%
-                \time 9/8 %! REDUNDANT_TIME_SIGNATURE_COMMAND:6
+                \time 9/8 %! REMINDER_TIME_SIGNATURE_COMMAND:6
                 \mark #6
                 \bar "" %! EMPTY_START_BAR:1
                 \once \override TextScript.color = #(x11-color 'DeepPink1) %! REDUNDANT_METRONOME_MARK_COLOR:3
-                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1) %! REDUNDANT_TIME_SIGNATURE_COLOR:5
+                \once \override Score.TimeSignature.color = #(x11-color 'green) %! REMINDER_TIME_SIGNATURE_COLOR:5
                 s1 * 9/8
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:7
                     %%% \fontsize %! CLOCK_TIME_MARKUP:7

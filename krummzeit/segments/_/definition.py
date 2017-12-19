@@ -117,7 +117,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('ClarinetMusicVoice', 3, 4),
-    baca.instrument(krummzeit.instruments['bass clarinet']),
+    baca.instrument(krummzeit.instruments['BassClarinet']),
     baca.make_tied_notes(repeat_ties=True),
     )
 
@@ -125,7 +125,7 @@ maker(
 
 maker(
     baca.scope('PianoMusicVoice', 1),
-    baca.instrument(krummzeit.instruments['piano']),
+    baca.instrument(krummzeit.instruments['Piano']),
     baca.clef('bass'),
     baca.RhythmCommand(
         rhythm_maker=rhythmos.NoteRhythmMaker(
@@ -138,7 +138,7 @@ maker(
 
 maker(
     baca.scope('PianoMusicVoice', 3),
-    baca.instrument(krummzeit.instruments['piano']),
+    baca.instrument(krummzeit.instruments['Piano']),
     baca.clef('bass'),
     baca.RhythmCommand(
         rhythm_maker=rhythmos.IncisedRhythmMaker(
@@ -181,7 +181,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('PercussionMusicVoice', 6),
-    baca.instrument(krummzeit.instruments['xylophone']),
+    baca.instrument(krummzeit.instruments['Xylophone']),
     )
 
 ### sponges [A6-8] ###
@@ -189,7 +189,7 @@ maker(
 maker(
     baca.scope('PercussionMusicVoice', 9, 10),
     baca.clef('percussion'),
-    baca.instrument(krummzeit.instruments['percussion']),
+    baca.instrument(krummzeit.instruments['Percussion']),
     baca.markup.boxed('sponges'),
     baca.pitches('C4'),
     baca.staff_lines(1),

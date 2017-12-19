@@ -79,14 +79,14 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('ClarinetMusicVoice', 1),
-    baca.instrument(krummzeit.instruments['bass clarinet']),
+    baca.instrument(krummzeit.instruments['BassClarinet']),
     )
 
 ### pf, xylophone [I1] reiteration ###
 
 maker(
     baca.scope('PianoMusicVoice', 1),
-    baca.instrument(krummzeit.instruments['piano']),
+    baca.instrument(krummzeit.instruments['Piano']),
     baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[2],
@@ -110,7 +110,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('PercussionMusicVoice', 1),
-    baca.instrument(krummzeit.instruments['xylophone']),
+    baca.instrument(krummzeit.instruments['Xylophone']),
     )
 
 ### vn, va, vc [J1-3] tremolo clusters (11.1) ###
@@ -145,7 +145,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('PianoMusicVoice', 3, 4),
-    baca.instrument(krummzeit.instruments['harpsichord']),
+    baca.instrument(krummzeit.instruments['Harpsichord']),
     baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
@@ -212,7 +212,7 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('PianoMusicVoice', 8),
-    baca.instrument(krummzeit.instruments['piano']),
+    baca.instrument(krummzeit.instruments['Piano']),
     )
 
 ### (3.1) bass clarinet [J3-11] ###
@@ -221,7 +221,7 @@ maker(
 
 maker(
     baca.scope('ClarinetMusicVoice', 3, 4),
-    baca.instrument(krummzeit.instruments['bass clarinet']),
+    baca.instrument(krummzeit.instruments['BassClarinet']),
     baca.make_tied_notes(repeat_ties=True),
     #baca.RhythmCommand(
     #    rhythm_maker=tied_notes,
@@ -230,7 +230,7 @@ maker(
 
 maker(
     baca.scope('ClarinetMusicVoice', 5, 6),
-    baca.instrument(krummzeit.instruments['bass clarinet']),
+    baca.instrument(krummzeit.instruments['BassClarinet']),
     baca.make_tied_notes(repeat_ties=True),
     #baca.RhythmCommand(
     #    rhythm_maker=tied_notes,
@@ -239,7 +239,7 @@ maker(
 
 maker(
     baca.scope('ClarinetMusicVoice', 7, 8),
-    baca.instrument(krummzeit.instruments['bass clarinet']),
+    baca.instrument(krummzeit.instruments['BassClarinet']),
     baca.make_tied_notes(repeat_ties=True),
     #baca.RhythmCommand(
     #    rhythm_maker=tied_notes,
@@ -248,13 +248,13 @@ maker(
 
 maker(
     baca.scope('ClarinetMusicVoice', 9, 10),
-    baca.instrument(krummzeit.instruments['bass clarinet']),
+    baca.instrument(krummzeit.instruments['BassClarinet']),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
     baca.scope('ClarinetMusicVoice', 11),
-    baca.instrument(krummzeit.instruments['bass clarinet']),
+    baca.instrument(krummzeit.instruments['BassClarinet']),
     baca.make_tied_notes(repeat_ties=True),
     )
 

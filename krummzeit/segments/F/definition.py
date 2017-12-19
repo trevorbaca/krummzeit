@@ -126,7 +126,7 @@ maker(
 
 maker(
     baca.scope('PianoMusicVoice', 3, 6),
-    baca.instrument(krummzeit.instruments['harpsichord']),
+    baca.instrument(krummzeit.instruments['Harpsichord']),
     baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[
@@ -218,14 +218,14 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('ClarinetMusicVoice', 3),
-    baca.instrument(krummzeit.instruments['e-flat clarinet']),
+    baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
     )
 
 ### bass clarinet [G11-14] myrkr ###
 
 maker(
     baca.scope('ClarinetMusicVoice', 11, 14),
-    baca.instrument(krummzeit.instruments['bass clarinet']),
+    baca.instrument(krummzeit.instruments['BassClarinet']),
     baca.make_tied_notes(repeat_ties=True),
     )
 

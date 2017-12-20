@@ -389,18 +389,18 @@
                                         } %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
                                 }
                             }
-                        \set OboeMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                #16 %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                Oboe %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            } %! EXPLICIT_INSTRUMENT_REDRAW:11
-                        \set OboeMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                #10 %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                Ob. %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            } %! EXPLICIT_INSTRUMENT_REDRAW:11
+                        \set OboeMusicStaff.instrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                #16 %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                Oboe %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            } %! EXPLICIT_REDRAW_INSTRUMENT:11
+                        \set OboeMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                #10 %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                Ob. %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            } %! EXPLICIT_REDRAW_INSTRUMENT:11
                         \override OboeMusicStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_COLOR_REDRAW:5
-                        \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_COLOR_REDRAW:10
+                        \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_REDRAW_INSTRUMENT_COLOR:10
                         
                         %%% OboeMusicVoice [measure 2] %%%
                         R1 * 9/8
@@ -491,26 +491,26 @@
                                         } %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
                                 }
                             }
-                        \set ClarinetMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                #16 %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                \center-column %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                    { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                        Clarinet %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                        (Eb) %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                    } %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            } %! EXPLICIT_INSTRUMENT_REDRAW:11
-                        \set ClarinetMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                #10 %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                \center-column %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                    { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                        Cl. %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                        (Eb) %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                    } %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            } %! EXPLICIT_INSTRUMENT_REDRAW:11
+                        \set ClarinetMusicStaff.instrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                #16 %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                \center-column %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                    { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                        Clarinet %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                        (Eb) %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                    } %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            } %! EXPLICIT_REDRAW_INSTRUMENT:11
+                        \set ClarinetMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                #10 %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                \center-column %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                    { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                        Cl. %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                        (Eb) %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                    } %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            } %! EXPLICIT_REDRAW_INSTRUMENT:11
                         \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_COLOR_REDRAW:5
-                        \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_COLOR_REDRAW:10
+                        \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_REDRAW_INSTRUMENT_COLOR:10
                         
                         %%% ClarinetMusicVoice [measure 2] %%%
                         R1 * 9/8
@@ -562,25 +562,25 @@
                                         } %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
                                 }
                             }
-                        \set ClarinetMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:6
-                            \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:6
-                                #16 %! EXPLICIT_INSTRUMENT_REDRAW:6
-                                \center-column %! EXPLICIT_INSTRUMENT_REDRAW:6
-                                    { %! EXPLICIT_INSTRUMENT_REDRAW:6
-                                        Bass %! EXPLICIT_INSTRUMENT_REDRAW:6
-                                        clarinet %! EXPLICIT_INSTRUMENT_REDRAW:6
-                                    } %! EXPLICIT_INSTRUMENT_REDRAW:6
-                            } %! EXPLICIT_INSTRUMENT_REDRAW:6
-                        \set ClarinetMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:6
-                            \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:6
-                                #10 %! EXPLICIT_INSTRUMENT_REDRAW:6
-                                \center-column %! EXPLICIT_INSTRUMENT_REDRAW:6
-                                    { %! EXPLICIT_INSTRUMENT_REDRAW:6
-                                        Bass %! EXPLICIT_INSTRUMENT_REDRAW:6
-                                        cl. %! EXPLICIT_INSTRUMENT_REDRAW:6
-                                    } %! EXPLICIT_INSTRUMENT_REDRAW:6
-                            } %! EXPLICIT_INSTRUMENT_REDRAW:6
-                        \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_COLOR_REDRAW:5
+                        \set ClarinetMusicStaff.instrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:6
+                            \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:6
+                                #16 %! EXPLICIT_REDRAW_INSTRUMENT:6
+                                \center-column %! EXPLICIT_REDRAW_INSTRUMENT:6
+                                    { %! EXPLICIT_REDRAW_INSTRUMENT:6
+                                        Bass %! EXPLICIT_REDRAW_INSTRUMENT:6
+                                        clarinet %! EXPLICIT_REDRAW_INSTRUMENT:6
+                                    } %! EXPLICIT_REDRAW_INSTRUMENT:6
+                            } %! EXPLICIT_REDRAW_INSTRUMENT:6
+                        \set ClarinetMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:6
+                            \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:6
+                                #10 %! EXPLICIT_REDRAW_INSTRUMENT:6
+                                \center-column %! EXPLICIT_REDRAW_INSTRUMENT:6
+                                    { %! EXPLICIT_REDRAW_INSTRUMENT:6
+                                        Bass %! EXPLICIT_REDRAW_INSTRUMENT:6
+                                        cl. %! EXPLICIT_REDRAW_INSTRUMENT:6
+                                    } %! EXPLICIT_REDRAW_INSTRUMENT:6
+                            } %! EXPLICIT_REDRAW_INSTRUMENT:6
+                        \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_REDRAW_INSTRUMENT_COLOR:5
                         
                         %%% ClarinetMusicVoice [measure 5] %%%
                         cs4.
@@ -661,18 +661,18 @@
                                         } %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
                                 }
                             }
-                        \set PianoMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                #16 %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                Piano %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            } %! EXPLICIT_INSTRUMENT_REDRAW:11
-                        \set PianoMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                #10 %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                Pf. %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            } %! EXPLICIT_INSTRUMENT_REDRAW:11
+                        \set PianoMusicStaff.instrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                #16 %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                Piano %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            } %! EXPLICIT_REDRAW_INSTRUMENT:11
+                        \set PianoMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                #10 %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                Pf. %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            } %! EXPLICIT_REDRAW_INSTRUMENT:11
                         \override PianoMusicStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_COLOR_REDRAW:5
-                        \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_COLOR_REDRAW:10
+                        \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_REDRAW_INSTRUMENT_COLOR:10
                         
                         %%% PianoMusicVoice [measure 2] %%%
                         r1
@@ -721,18 +721,18 @@
                                         } %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
                                 }
                             }
-                        \set PianoMusicStaff.instrumentName = \markup { %! REDUNDANT_INSTRUMENT_REDRAW:11
-                            \hcenter-in %! REDUNDANT_INSTRUMENT_REDRAW:11
-                                #16 %! REDUNDANT_INSTRUMENT_REDRAW:11
-                                Piano %! REDUNDANT_INSTRUMENT_REDRAW:11
-                            } %! REDUNDANT_INSTRUMENT_REDRAW:11
-                        \set PianoMusicStaff.shortInstrumentName = \markup { %! REDUNDANT_INSTRUMENT_REDRAW:11
-                            \hcenter-in %! REDUNDANT_INSTRUMENT_REDRAW:11
-                                #10 %! REDUNDANT_INSTRUMENT_REDRAW:11
-                                Pf. %! REDUNDANT_INSTRUMENT_REDRAW:11
-                            } %! REDUNDANT_INSTRUMENT_REDRAW:11
+                        \set PianoMusicStaff.instrumentName = \markup { %! REDUNDANT_REDRAW_INSTRUMENT:11
+                            \hcenter-in %! REDUNDANT_REDRAW_INSTRUMENT:11
+                                #16 %! REDUNDANT_REDRAW_INSTRUMENT:11
+                                Piano %! REDUNDANT_REDRAW_INSTRUMENT:11
+                            } %! REDUNDANT_REDRAW_INSTRUMENT:11
+                        \set PianoMusicStaff.shortInstrumentName = \markup { %! REDUNDANT_REDRAW_INSTRUMENT:11
+                            \hcenter-in %! REDUNDANT_REDRAW_INSTRUMENT:11
+                                #10 %! REDUNDANT_REDRAW_INSTRUMENT:11
+                                Pf. %! REDUNDANT_REDRAW_INSTRUMENT:11
+                            } %! REDUNDANT_REDRAW_INSTRUMENT:11
                         \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_COLOR_REDRAW:5
-                        \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! REDUNDANT_INSTRUMENT_COLOR_REDRAW:10
+                        \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! REDUNDANT_REDRAW_INSTRUMENT_COLOR:10
                         
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
@@ -862,18 +862,18 @@
                                         } %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
                                 }
                             }
-                        \set PercussionMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                #16 %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                Percussion %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            } %! EXPLICIT_INSTRUMENT_REDRAW:11
-                        \set PercussionMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                #10 %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                Perc. %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            } %! EXPLICIT_INSTRUMENT_REDRAW:11
+                        \set PercussionMusicStaff.instrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                #16 %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                Percussion %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            } %! EXPLICIT_REDRAW_INSTRUMENT:11
+                        \set PercussionMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                #10 %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                Perc. %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            } %! EXPLICIT_REDRAW_INSTRUMENT:11
                         \override PercussionMusicStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_COLOR_REDRAW:5
-                        \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_COLOR_REDRAW:10
+                        \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_REDRAW_INSTRUMENT_COLOR:10
                         
                         %%% PercussionMusicVoice [measure 2] %%%
                         R1 * 9/8
@@ -947,18 +947,18 @@
                                 \upright
                                     possibile
                                 }
-                            \set PercussionMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                    #16 %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                    Xylophone %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                } %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            \set PercussionMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                    #10 %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                    Xyl. %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                } %! EXPLICIT_INSTRUMENT_REDRAW:11
+                            \set PercussionMusicStaff.instrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                    #16 %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                    Xylophone %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                } %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            \set PercussionMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                    #10 %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                    Xyl. %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                } %! EXPLICIT_REDRAW_INSTRUMENT:11
                             \override PercussionMusicStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_COLOR_REDRAW:5
-                            \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_COLOR_REDRAW:10
+                            \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_REDRAW_INSTRUMENT_COLOR:10
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1058,18 +1058,18 @@
                                     \italic
                                         ”
                                 }
-                            \set PercussionMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                    #16 %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                    Percussion %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                } %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            \set PercussionMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                    #10 %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                    Perc. %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                } %! EXPLICIT_INSTRUMENT_REDRAW:11
+                            \set PercussionMusicStaff.instrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                    #16 %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                    Percussion %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                } %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            \set PercussionMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                    #10 %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                    Perc. %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                } %! EXPLICIT_REDRAW_INSTRUMENT:11
                             \override PercussionMusicStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_COLOR_REDRAW:5
-                            \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_COLOR_REDRAW:10
+                            \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_REDRAW_INSTRUMENT_COLOR:10
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1222,18 +1222,18 @@
                                         } %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
                                 }
                             }
-                        \set ViolinMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                #16 %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                Violin %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            } %! EXPLICIT_INSTRUMENT_REDRAW:11
-                        \set ViolinMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                #10 %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                Vn. %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            } %! EXPLICIT_INSTRUMENT_REDRAW:11
+                        \set ViolinMusicStaff.instrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                #16 %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                Violin %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            } %! EXPLICIT_REDRAW_INSTRUMENT:11
+                        \set ViolinMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                #10 %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                Vn. %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            } %! EXPLICIT_REDRAW_INSTRUMENT:11
                         \override ViolinMusicStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_COLOR_REDRAW:5
-                        \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_COLOR_REDRAW:10
+                        \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_REDRAW_INSTRUMENT_COLOR:10
                         \times 2/3 {
                             
                             \once \override Accidental.color = #red
@@ -1685,18 +1685,18 @@
                                         } %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
                                 }
                             }
-                        \set ViolaMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                #16 %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                Viola %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            } %! EXPLICIT_INSTRUMENT_REDRAW:11
-                        \set ViolaMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                #10 %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                Va. %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            } %! EXPLICIT_INSTRUMENT_REDRAW:11
+                        \set ViolaMusicStaff.instrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                #16 %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                Viola %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            } %! EXPLICIT_REDRAW_INSTRUMENT:11
+                        \set ViolaMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                #10 %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                Va. %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            } %! EXPLICIT_REDRAW_INSTRUMENT:11
                         \override ViolaMusicStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_COLOR_REDRAW:5
-                        \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_COLOR_REDRAW:10
+                        \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_REDRAW_INSTRUMENT_COLOR:10
                         \times 2/3 {
                             
                             \once \override Accidental.color = #red
@@ -2149,18 +2149,18 @@
                                         } %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
                                 }
                             }
-                        \set CelloMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                #16 %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                Cello %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            } %! EXPLICIT_INSTRUMENT_REDRAW:11
-                        \set CelloMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                #10 %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                Vc. %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            } %! EXPLICIT_INSTRUMENT_REDRAW:11
+                        \set CelloMusicStaff.instrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                #16 %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                Cello %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            } %! EXPLICIT_REDRAW_INSTRUMENT:11
+                        \set CelloMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                #10 %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                Vc. %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            } %! EXPLICIT_REDRAW_INSTRUMENT:11
                         \override CelloMusicStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_COLOR_REDRAW:5
-                        \override CelloMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_COLOR_REDRAW:10
+                        \override CelloMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_REDRAW_INSTRUMENT_COLOR:10
                         \times 2/3 {
                             
                             \once \override Accidental.color = #red

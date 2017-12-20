@@ -202,7 +202,6 @@
                     %%% } %! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 7] %%%
-                \time 9/8
                 s1 * 9/8
                 \stopTextSpan
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:2

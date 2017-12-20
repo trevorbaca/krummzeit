@@ -2757,61 +2757,61 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            \set PercussionMusicStaff.instrumentName = \markup { %! REDUNDANT_INSTRUMENT_COMMAND:4
-                                \hcenter-in %! REDUNDANT_INSTRUMENT_COMMAND:4
-                                    #16 %! REDUNDANT_INSTRUMENT_COMMAND:4
-                                    Xylophone %! REDUNDANT_INSTRUMENT_COMMAND:4
-                                } %! REDUNDANT_INSTRUMENT_COMMAND:4
-                            \set PercussionMusicStaff.shortInstrumentName = \markup { %! REDUNDANT_INSTRUMENT_COMMAND:4
-                                \hcenter-in %! REDUNDANT_INSTRUMENT_COMMAND:4
-                                    #10 %! REDUNDANT_INSTRUMENT_COMMAND:4
-                                    Xyl. %! REDUNDANT_INSTRUMENT_COMMAND:4
-                                } %! REDUNDANT_INSTRUMENT_COMMAND:4
-                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:10
-                            \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:1
-                            \once \override PercussionMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:7
-                            %%% \override PercussionMusicStaff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:8
-                            \set PercussionMusicStaff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:9
+                            \set PercussionMusicStaff.instrumentName = \markup { %! REDUNDANT_INSTRUMENT_COMMAND:9
+                                \hcenter-in %! REDUNDANT_INSTRUMENT_COMMAND:9
+                                    #16 %! REDUNDANT_INSTRUMENT_COMMAND:9
+                                    Xylophone %! REDUNDANT_INSTRUMENT_COMMAND:9
+                                } %! REDUNDANT_INSTRUMENT_COMMAND:9
+                            \set PercussionMusicStaff.shortInstrumentName = \markup { %! REDUNDANT_INSTRUMENT_COMMAND:9
+                                \hcenter-in %! REDUNDANT_INSTRUMENT_COMMAND:9
+                                    #10 %! REDUNDANT_INSTRUMENT_COMMAND:9
+                                    Xyl. %! REDUNDANT_INSTRUMENT_COMMAND:9
+                                } %! REDUNDANT_INSTRUMENT_COMMAND:9
+                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
+                            \once \override PercussionMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
+                            %%% \override PercussionMusicStaff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set PercussionMusicStaff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
+                            \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:6
                             fs''4
                             :32
                             \fff
                             ^ \markup {
                                 \column
                                     {
-                                        %%% \line %! REDUNDANT_INSTRUMENT_CHANGE_MARKUP:2
-                                        %%%     { %! REDUNDANT_INSTRUMENT_CHANGE_MARKUP:2
-                                        %%%         \override %! REDUNDANT_INSTRUMENT_CHANGE_MARKUP:2
-                                        %%%             #'(box-padding . 0.75) %! REDUNDANT_INSTRUMENT_CHANGE_MARKUP:2
-                                        %%%             \box %! REDUNDANT_INSTRUMENT_CHANGE_MARKUP:2
-                                        %%%                 xylophone %! REDUNDANT_INSTRUMENT_CHANGE_MARKUP:2
-                                        %%%     } %! REDUNDANT_INSTRUMENT_CHANGE_MARKUP:2
-                                        \line %! REDUNDANT_INSTRUMENT_CHANGE_COLORED_MARKUP:3
-                                            { %! REDUNDANT_INSTRUMENT_CHANGE_COLORED_MARKUP:3
-                                                \with-color %! REDUNDANT_INSTRUMENT_CHANGE_COLORED_MARKUP:3
-                                                    #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_CHANGE_COLORED_MARKUP:3
-                                                    \override %! REDUNDANT_INSTRUMENT_CHANGE_COLORED_MARKUP:3
-                                                        #'(box-padding . 0.75) %! REDUNDANT_INSTRUMENT_CHANGE_COLORED_MARKUP:3
-                                                        \box %! REDUNDANT_INSTRUMENT_CHANGE_COLORED_MARKUP:3
-                                                            xylophone %! REDUNDANT_INSTRUMENT_CHANGE_COLORED_MARKUP:3
-                                            } %! REDUNDANT_INSTRUMENT_CHANGE_COLORED_MARKUP:3
+                                        %%% \line %! REDUNDANT_INSTRUMENT_CHANGE_MARKUP:7
+                                        %%%     { %! REDUNDANT_INSTRUMENT_CHANGE_MARKUP:7
+                                        %%%         \override %! REDUNDANT_INSTRUMENT_CHANGE_MARKUP:7
+                                        %%%             #'(box-padding . 0.75) %! REDUNDANT_INSTRUMENT_CHANGE_MARKUP:7
+                                        %%%             \box %! REDUNDANT_INSTRUMENT_CHANGE_MARKUP:7
+                                        %%%                 xylophone %! REDUNDANT_INSTRUMENT_CHANGE_MARKUP:7
+                                        %%%     } %! REDUNDANT_INSTRUMENT_CHANGE_MARKUP:7
+                                        \line %! REDUNDANT_INSTRUMENT_CHANGE_COLORED_MARKUP:8
+                                            { %! REDUNDANT_INSTRUMENT_CHANGE_COLORED_MARKUP:8
+                                                \with-color %! REDUNDANT_INSTRUMENT_CHANGE_COLORED_MARKUP:8
+                                                    #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_CHANGE_COLORED_MARKUP:8
+                                                    \override %! REDUNDANT_INSTRUMENT_CHANGE_COLORED_MARKUP:8
+                                                        #'(box-padding . 0.75) %! REDUNDANT_INSTRUMENT_CHANGE_COLORED_MARKUP:8
+                                                        \box %! REDUNDANT_INSTRUMENT_CHANGE_COLORED_MARKUP:8
+                                                            xylophone %! REDUNDANT_INSTRUMENT_CHANGE_COLORED_MARKUP:8
+                                            } %! REDUNDANT_INSTRUMENT_CHANGE_COLORED_MARKUP:8
                                         \line
                                             {
                                                 @
                                             }
                                     }
                                 }
-                            \set PercussionMusicStaff.instrumentName = \markup { %! REDUNDANT_INSTRUMENT_SHADOW_COMMAND:6
-                                \hcenter-in %! REDUNDANT_INSTRUMENT_SHADOW_COMMAND:6
-                                    #16 %! REDUNDANT_INSTRUMENT_SHADOW_COMMAND:6
-                                    Xylophone %! REDUNDANT_INSTRUMENT_SHADOW_COMMAND:6
-                                } %! REDUNDANT_INSTRUMENT_SHADOW_COMMAND:6
-                            \set PercussionMusicStaff.shortInstrumentName = \markup { %! REDUNDANT_INSTRUMENT_SHADOW_COMMAND:6
-                                \hcenter-in %! REDUNDANT_INSTRUMENT_SHADOW_COMMAND:6
-                                    #10 %! REDUNDANT_INSTRUMENT_SHADOW_COMMAND:6
-                                    Xyl. %! REDUNDANT_INSTRUMENT_SHADOW_COMMAND:6
-                                } %! REDUNDANT_INSTRUMENT_SHADOW_COMMAND:6
-                            \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! REDUNDANT_INSTRUMENT_SHADOW_COLOR:5
-                            \override PercussionMusicStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:11
+                            \set PercussionMusicStaff.instrumentName = \markup { %! REDUNDANT_INSTRUMENT_SHADOW_COMMAND:11
+                                \hcenter-in %! REDUNDANT_INSTRUMENT_SHADOW_COMMAND:11
+                                    #16 %! REDUNDANT_INSTRUMENT_SHADOW_COMMAND:11
+                                    Xylophone %! REDUNDANT_INSTRUMENT_SHADOW_COMMAND:11
+                                } %! REDUNDANT_INSTRUMENT_SHADOW_COMMAND:11
+                            \set PercussionMusicStaff.shortInstrumentName = \markup { %! REDUNDANT_INSTRUMENT_SHADOW_COMMAND:11
+                                \hcenter-in %! REDUNDANT_INSTRUMENT_SHADOW_COMMAND:11
+                                    #10 %! REDUNDANT_INSTRUMENT_SHADOW_COMMAND:11
+                                    Xyl. %! REDUNDANT_INSTRUMENT_SHADOW_COMMAND:11
+                                } %! REDUNDANT_INSTRUMENT_SHADOW_COMMAND:11
+                            \override PercussionMusicStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:5
+                            \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! REDUNDANT_INSTRUMENT_SHADOW_COLOR:10
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red

@@ -15,17 +15,18 @@
             \context GlobalSkips = "GlobalSkips" {
                 
                 %%% GlobalSkips [measure 14] %%%
-                \time 3/4 %! PERSISTENT_TIME_SIGNATURE_COMMAND:6
+                \time 3/4 %! PERSISTENT_TIME_SIGNATURE_COMMAND:7
                 \mark #1
                 \bar "" %! EMPTY_START_BAR:1
                 \once \override TextScript.color = #(x11-color 'DeepPink1) %! REDUNDANT_METRONOME_MARK_COLOR:3
                 \once \override Score.TimeSignature.color = #(x11-color 'green) %! PERSISTENT_TIME_SIGNATURE_COLOR:5
+                %%% \override Score.TimeSignature.color = ##f %! PERSISTENT_TIME_SIGNATURE_UNCOLOR:6
                 s1 * 3/4
-                %%% ^ \markup { %! CLOCK_TIME_MARKUP:7
-                    %%% \fontsize %! CLOCK_TIME_MARKUP:7
-                        %%% #-2 %! CLOCK_TIME_MARKUP:7
-                        %%% 0'27'' %! CLOCK_TIME_MARKUP:7
-                    %%% } %! CLOCK_TIME_MARKUP:7
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:9
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:9
+                        %%% #-2 %! CLOCK_TIME_MARKUP:9
+                        %%% 0'27'' %! CLOCK_TIME_MARKUP:9
+                    %%% } %! CLOCK_TIME_MARKUP:9
                 %%% - \markup { %! STAGE_NUMBER_MARKUP:2
                     %%% \fontsize %! STAGE_NUMBER_MARKUP:2
                         %%% #-3 %! STAGE_NUMBER_MARKUP:2
@@ -49,6 +50,7 @@
                             135 % REDUNDANT_METRONOME_MARK_COMMAND:4
                         } % REDUNDANT_METRONOME_MARK_COMMAND:4
                     } % REDUNDANT_METRONOME_MARK_COMMAND:4
+                \override Score.TimeSignature.color = #(x11-color 'DarkGreen) %! PERSISTENT_TIME_SIGNATURE_SHADOW_COLOR:8
                 
                 %%% GlobalSkips [measure 15] %%%
                 \time 3/4

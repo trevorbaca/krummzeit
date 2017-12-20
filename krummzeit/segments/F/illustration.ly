@@ -414,19 +414,13 @@
                                 {
                                     %%% \line %! REAPPLIED_INSTRUMENT_ALERT:7
                                     %%%     { %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%         \override %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%             #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%             \box %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%                 "clarinet in E-flat" %! REAPPLIED_INSTRUMENT_ALERT:7
+                                    %%%         [ClarinetInEFlat] %! REAPPLIED_INSTRUMENT_ALERT:7
                                     %%%     } %! REAPPLIED_INSTRUMENT_ALERT:7
                                     \line %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                         { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                             \with-color %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                                 #(x11-color 'green) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                \override %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                    #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                    \box %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                        "clarinet in E-flat" %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                [ClarinetInEFlat] %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                         } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                 }
                             }
@@ -778,19 +772,13 @@
                                 {
                                     %%% \line %! REAPPLIED_INSTRUMENT_ALERT:7
                                     %%%     { %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%         \override %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%             #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%             \box %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%                 "bass clarinet" %! REAPPLIED_INSTRUMENT_ALERT:7
+                                    %%%         [BassClarinet] %! REAPPLIED_INSTRUMENT_ALERT:7
                                     %%%     } %! REAPPLIED_INSTRUMENT_ALERT:7
                                     \line %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                         { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                             \with-color %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                                 #(x11-color 'green) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                \override %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                    #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                    \box %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                        "bass clarinet" %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                [BassClarinet] %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                         } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                 }
                             }
@@ -851,19 +839,13 @@
                                     {
                                         %%% \line %! EXPLICIT_INSTRUMENT_ALERT:2
                                         %%%     { %! EXPLICIT_INSTRUMENT_ALERT:2
-                                        %%%         \override %! EXPLICIT_INSTRUMENT_ALERT:2
-                                        %%%             #'(box-padding . 0.75) %! EXPLICIT_INSTRUMENT_ALERT:2
-                                        %%%             \box %! EXPLICIT_INSTRUMENT_ALERT:2
-                                        %%%                 "clarinet in E-flat" %! EXPLICIT_INSTRUMENT_ALERT:2
+                                        %%%         [ClarinetInEFlat] %! EXPLICIT_INSTRUMENT_ALERT:2
                                         %%%     } %! EXPLICIT_INSTRUMENT_ALERT:2
                                         \line %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
                                             { %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
                                                 \with-color %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
                                                     #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                    \override %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                        #'(box-padding . 0.75) %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                        \box %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                            "clarinet in E-flat" %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                    [ClarinetInEFlat] %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
                                             } %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
                                     }
                                 }
@@ -1070,19 +1052,13 @@
                                 {
                                     %%% \line %! EXPLICIT_INSTRUMENT_ALERT:2
                                     %%%     { %! EXPLICIT_INSTRUMENT_ALERT:2
-                                    %%%         \override %! EXPLICIT_INSTRUMENT_ALERT:2
-                                    %%%             #'(box-padding . 0.75) %! EXPLICIT_INSTRUMENT_ALERT:2
-                                    %%%             \box %! EXPLICIT_INSTRUMENT_ALERT:2
-                                    %%%                 "bass clarinet" %! EXPLICIT_INSTRUMENT_ALERT:2
+                                    %%%         [BassClarinet] %! EXPLICIT_INSTRUMENT_ALERT:2
                                     %%%     } %! EXPLICIT_INSTRUMENT_ALERT:2
                                     \line %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
                                         { %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
                                             \with-color %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
                                                 #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                \override %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                    #'(box-padding . 0.75) %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                    \box %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                        "bass clarinet" %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                [BassClarinet] %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
                                         } %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
                                 }
                             }
@@ -1170,19 +1146,13 @@
                                 {
                                     %%% \line %! REAPPLIED_INSTRUMENT_ALERT:7
                                     %%%     { %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%         \override %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%             #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%             \box %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%                 piano %! REAPPLIED_INSTRUMENT_ALERT:7
+                                    %%%         [Piano] %! REAPPLIED_INSTRUMENT_ALERT:7
                                     %%%     } %! REAPPLIED_INSTRUMENT_ALERT:7
                                     \line %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                         { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                             \with-color %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                                 #(x11-color 'green) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                \override %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                    #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                    \box %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                        piano %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                [Piano] %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                         } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                 }
                             }
@@ -1224,19 +1194,13 @@
                                     {
                                         %%% \line %! EXPLICIT_INSTRUMENT_ALERT:2
                                         %%%     { %! EXPLICIT_INSTRUMENT_ALERT:2
-                                        %%%         \override %! EXPLICIT_INSTRUMENT_ALERT:2
-                                        %%%             #'(box-padding . 0.75) %! EXPLICIT_INSTRUMENT_ALERT:2
-                                        %%%             \box %! EXPLICIT_INSTRUMENT_ALERT:2
-                                        %%%                 harpsichord %! EXPLICIT_INSTRUMENT_ALERT:2
+                                        %%%         [Harpsichord] %! EXPLICIT_INSTRUMENT_ALERT:2
                                         %%%     } %! EXPLICIT_INSTRUMENT_ALERT:2
                                         \line %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
                                             { %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
                                                 \with-color %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
                                                     #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                    \override %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                        #'(box-padding . 0.75) %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                        \box %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                            harpsichord %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                    [Harpsichord] %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
                                             } %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:3
                                     }
                                 }
@@ -1550,19 +1514,13 @@
                                         }
                                     %%% \line %! REAPPLIED_INSTRUMENT_ALERT:2
                                     %%%     { %! REAPPLIED_INSTRUMENT_ALERT:2
-                                    %%%         \override %! REAPPLIED_INSTRUMENT_ALERT:2
-                                    %%%             #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_ALERT:2
-                                    %%%             \box %! REAPPLIED_INSTRUMENT_ALERT:2
-                                    %%%                 xylophone %! REAPPLIED_INSTRUMENT_ALERT:2
+                                    %%%         [Xylophone] %! REAPPLIED_INSTRUMENT_ALERT:2
                                     %%%     } %! REAPPLIED_INSTRUMENT_ALERT:2
                                     \line %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
                                         { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
                                             \with-color %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
                                                 #(x11-color 'green) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                \override %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                    #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                    \box %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                        xylophone %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                [Xylophone] %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
                                         } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
                                 }
                             }
@@ -1857,19 +1815,13 @@
                                 {
                                     %%% \line %! REAPPLIED_INSTRUMENT_ALERT:7
                                     %%%     { %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%         \override %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%             #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%             \box %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%                 violin %! REAPPLIED_INSTRUMENT_ALERT:7
+                                    %%%         [Violin] %! REAPPLIED_INSTRUMENT_ALERT:7
                                     %%%     } %! REAPPLIED_INSTRUMENT_ALERT:7
                                     \line %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                         { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                             \with-color %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                                 #(x11-color 'green) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                \override %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                    #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                    \box %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                        violin %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                [Violin] %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                         } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                 }
                             }
@@ -2116,19 +2068,13 @@
                                 {
                                     %%% \line %! REAPPLIED_INSTRUMENT_ALERT:7
                                     %%%     { %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%         \override %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%             #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%             \box %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%                 viola %! REAPPLIED_INSTRUMENT_ALERT:7
+                                    %%%         [Viola] %! REAPPLIED_INSTRUMENT_ALERT:7
                                     %%%     } %! REAPPLIED_INSTRUMENT_ALERT:7
                                     \line %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                         { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                             \with-color %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                                 #(x11-color 'green) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                \override %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                    #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                    \box %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                        viola %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                [Viola] %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                         } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                 }
                             }
@@ -2399,19 +2345,13 @@
                                 {
                                     %%% \line %! REAPPLIED_INSTRUMENT_ALERT:7
                                     %%%     { %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%         \override %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%             #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%             \box %! REAPPLIED_INSTRUMENT_ALERT:7
-                                    %%%                 cello %! REAPPLIED_INSTRUMENT_ALERT:7
+                                    %%%         [Cello] %! REAPPLIED_INSTRUMENT_ALERT:7
                                     %%%     } %! REAPPLIED_INSTRUMENT_ALERT:7
                                     \line %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                         { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                             \with-color %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                                 #(x11-color 'green) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                \override %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                    #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                    \box %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                        cello %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                [Cello] %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                         } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                 }
                             }

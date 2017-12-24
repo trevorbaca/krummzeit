@@ -915,80 +915,75 @@
                             \override Beam.positions = #'(-4 . -4)
                             \override DynamicLineSpanner.staff-padding = #'8
                             \override TupletBracket.staff-padding = #4
-                            \set OboeMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT:9
-                                \hcenter-in %! REAPPLIED_INSTRUMENT:9
-                                    #16 %! REAPPLIED_INSTRUMENT:9
-                                    Oboe %! REAPPLIED_INSTRUMENT:9
-                                } %! REAPPLIED_INSTRUMENT:9
-                            \set OboeMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT:9
-                                \hcenter-in %! REAPPLIED_INSTRUMENT:9
-                                    #10 %! REAPPLIED_INSTRUMENT:9
-                                    Ob. %! REAPPLIED_INSTRUMENT:9
-                                } %! REAPPLIED_INSTRUMENT:9
-                            \clef "treble" %! REAPPLIED_CLEF:4
-                            \once \override OboeMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:1
-                            %%% \override OboeMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                            \set OboeMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
-                            \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:6
+                            \set OboeMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT:4
+                                \hcenter-in %! REAPPLIED_INSTRUMENT:4
+                                    #16 %! REAPPLIED_INSTRUMENT:4
+                                    Oboe %! REAPPLIED_INSTRUMENT:4
+                                } %! REAPPLIED_INSTRUMENT:4
+                            \set OboeMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT:4
+                                \hcenter-in %! REAPPLIED_INSTRUMENT:4
+                                    #10 %! REAPPLIED_INSTRUMENT:4
+                                    Ob. %! REAPPLIED_INSTRUMENT:4
+                                } %! REAPPLIED_INSTRUMENT:4
+                            \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:1
                             e'8
                             \ff
                             ^ \markup {
                                 \column
                                     {
-                                        %%% \line %! REAPPLIED_INSTRUMENT_ALERT:7
-                                        %%%     { %! REAPPLIED_INSTRUMENT_ALERT:7
-                                        %%%         \vcenter %! REAPPLIED_INSTRUMENT_ALERT:7
-                                        %%%             (“Oboe” %! REAPPLIED_INSTRUMENT_ALERT:7
-                                        %%%         \vcenter %! REAPPLIED_INSTRUMENT_ALERT:7
-                                        %%%             \hcenter-in %! REAPPLIED_INSTRUMENT_ALERT:7
-                                        %%%                 #16 %! REAPPLIED_INSTRUMENT_ALERT:7
-                                        %%%                 Oboe %! REAPPLIED_INSTRUMENT_ALERT:7
-                                        %%%         \concat %! REAPPLIED_INSTRUMENT_ALERT:7
-                                        %%%             { %! REAPPLIED_INSTRUMENT_ALERT:7
-                                        %%%                 \vcenter %! REAPPLIED_INSTRUMENT_ALERT:7
-                                        %%%                     \hcenter-in %! REAPPLIED_INSTRUMENT_ALERT:7
-                                        %%%                         #10 %! REAPPLIED_INSTRUMENT_ALERT:7
-                                        %%%                         Ob. %! REAPPLIED_INSTRUMENT_ALERT:7
-                                        %%%                 \vcenter %! REAPPLIED_INSTRUMENT_ALERT:7
-                                        %%%                     ) %! REAPPLIED_INSTRUMENT_ALERT:7
-                                        %%%             } %! REAPPLIED_INSTRUMENT_ALERT:7
-                                        %%%     } %! REAPPLIED_INSTRUMENT_ALERT:7
-                                        \line %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                            { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                \with-color %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                    #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                    { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                        \vcenter %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                            (“Oboe” %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                        \vcenter %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                            \hcenter-in %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                                #16 %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                                Oboe %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                        \concat %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                            { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                                \vcenter %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                                    \hcenter-in %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                                        #10 %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                                        Ob. %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                                \vcenter %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                                    ) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                            } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                    } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                            } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
+                                        %%% \line %! REAPPLIED_INSTRUMENT_ALERT:2
+                                        %%%     { %! REAPPLIED_INSTRUMENT_ALERT:2
+                                        %%%         \vcenter %! REAPPLIED_INSTRUMENT_ALERT:2
+                                        %%%             (“Oboe” %! REAPPLIED_INSTRUMENT_ALERT:2
+                                        %%%         \vcenter %! REAPPLIED_INSTRUMENT_ALERT:2
+                                        %%%             \hcenter-in %! REAPPLIED_INSTRUMENT_ALERT:2
+                                        %%%                 #16 %! REAPPLIED_INSTRUMENT_ALERT:2
+                                        %%%                 Oboe %! REAPPLIED_INSTRUMENT_ALERT:2
+                                        %%%         \concat %! REAPPLIED_INSTRUMENT_ALERT:2
+                                        %%%             { %! REAPPLIED_INSTRUMENT_ALERT:2
+                                        %%%                 \vcenter %! REAPPLIED_INSTRUMENT_ALERT:2
+                                        %%%                     \hcenter-in %! REAPPLIED_INSTRUMENT_ALERT:2
+                                        %%%                         #10 %! REAPPLIED_INSTRUMENT_ALERT:2
+                                        %%%                         Ob. %! REAPPLIED_INSTRUMENT_ALERT:2
+                                        %%%                 \vcenter %! REAPPLIED_INSTRUMENT_ALERT:2
+                                        %%%                     ) %! REAPPLIED_INSTRUMENT_ALERT:2
+                                        %%%             } %! REAPPLIED_INSTRUMENT_ALERT:2
+                                        %%%     } %! REAPPLIED_INSTRUMENT_ALERT:2
+                                        \line %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                            { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                \with-color %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                    #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                    { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                        \vcenter %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                            (“Oboe” %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                        \vcenter %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                            \hcenter-in %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                #16 %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                Oboe %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                        \concat %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                            { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                \vcenter %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                    \hcenter-in %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                        #10 %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                        Ob. %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                \vcenter %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                    ) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                            } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                    } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                            } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
                                     }
                                 }
-                            \set OboeMusicStaff.instrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT:11
-                                \hcenter-in %! REAPPLIED_REDRAW_INSTRUMENT:11
-                                    #16 %! REAPPLIED_REDRAW_INSTRUMENT:11
-                                    Oboe %! REAPPLIED_REDRAW_INSTRUMENT:11
-                                } %! REAPPLIED_REDRAW_INSTRUMENT:11
-                            \set OboeMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT:11
-                                \hcenter-in %! REAPPLIED_REDRAW_INSTRUMENT:11
-                                    #10 %! REAPPLIED_REDRAW_INSTRUMENT:11
-                                    Ob. %! REAPPLIED_REDRAW_INSTRUMENT:11
-                                } %! REAPPLIED_REDRAW_INSTRUMENT:11
-                            \override OboeMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_COLOR_REDRAW:5
-                            \override OboeMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:10
+                            \set OboeMusicStaff.instrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                \hcenter-in %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                    #16 %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                    Oboe %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                } %! REAPPLIED_REDRAW_INSTRUMENT:6
+                            \set OboeMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                \hcenter-in %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                    #10 %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                    Ob. %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                } %! REAPPLIED_REDRAW_INSTRUMENT:6
+                            \override OboeMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:5
                             
                             ef''4
                             \startTrillSpan
@@ -1798,113 +1793,108 @@
                         
                         %%% ClarinetMusicVoice [measure 89] %%%
                         \override DynamicLineSpanner.staff-padding = #'3
-                        \set ClarinetMusicStaff.instrumentName = \markup { %! REDUNDANT_INSTRUMENT:9
-                            \hcenter-in %! REDUNDANT_INSTRUMENT:9
-                                #16 %! REDUNDANT_INSTRUMENT:9
-                                \center-column %! REDUNDANT_INSTRUMENT:9
-                                    { %! REDUNDANT_INSTRUMENT:9
-                                        Clarinet %! REDUNDANT_INSTRUMENT:9
-                                        (Eb) %! REDUNDANT_INSTRUMENT:9
-                                    } %! REDUNDANT_INSTRUMENT:9
-                            } %! REDUNDANT_INSTRUMENT:9
-                        \set ClarinetMusicStaff.shortInstrumentName = \markup { %! REDUNDANT_INSTRUMENT:9
-                            \hcenter-in %! REDUNDANT_INSTRUMENT:9
-                                #10 %! REDUNDANT_INSTRUMENT:9
-                                \center-column %! REDUNDANT_INSTRUMENT:9
-                                    { %! REDUNDANT_INSTRUMENT:9
-                                        Cl. %! REDUNDANT_INSTRUMENT:9
-                                        (Eb) %! REDUNDANT_INSTRUMENT:9
-                                    } %! REDUNDANT_INSTRUMENT:9
-                            } %! REDUNDANT_INSTRUMENT:9
-                        \clef "treble" %! REAPPLIED_CLEF:4
-                        \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:1
-                        %%% \override ClarinetMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                        \set ClarinetMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
-                        \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:6
+                        \set ClarinetMusicStaff.instrumentName = \markup { %! REDUNDANT_INSTRUMENT:4
+                            \hcenter-in %! REDUNDANT_INSTRUMENT:4
+                                #16 %! REDUNDANT_INSTRUMENT:4
+                                \center-column %! REDUNDANT_INSTRUMENT:4
+                                    { %! REDUNDANT_INSTRUMENT:4
+                                        Clarinet %! REDUNDANT_INSTRUMENT:4
+                                        (Eb) %! REDUNDANT_INSTRUMENT:4
+                                    } %! REDUNDANT_INSTRUMENT:4
+                            } %! REDUNDANT_INSTRUMENT:4
+                        \set ClarinetMusicStaff.shortInstrumentName = \markup { %! REDUNDANT_INSTRUMENT:4
+                            \hcenter-in %! REDUNDANT_INSTRUMENT:4
+                                #10 %! REDUNDANT_INSTRUMENT:4
+                                \center-column %! REDUNDANT_INSTRUMENT:4
+                                    { %! REDUNDANT_INSTRUMENT:4
+                                        Cl. %! REDUNDANT_INSTRUMENT:4
+                                        (Eb) %! REDUNDANT_INSTRUMENT:4
+                                    } %! REDUNDANT_INSTRUMENT:4
+                            } %! REDUNDANT_INSTRUMENT:4
+                        \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:1
                         cs''4.
                         \f
                         \glissando
                         ^ \markup {
                             \column
                                 {
-                                    %%% \line %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%     { %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%         \vcenter %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%             (“ClarinetInEFlat” %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%         \vcenter %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%             \hcenter-in %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%                 #16 %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%                 \center-column %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%                     { %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%                         Clarinet %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%                         (Eb) %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%                     } %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%         \concat %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%             { %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%                 \vcenter %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%                     \hcenter-in %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%                         #10 %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%                         \center-column %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%                             { %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%                                 Cl. %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%                                 (Eb) %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%                             } %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%                 \vcenter %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%                     ) %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%             } %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    %%%     } %! REDUNDANT_INSTRUMENT_ALERT:7
-                                    \line %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                        { %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                            \with-color %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                { %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                    \vcenter %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                        (“ClarinetInEFlat” %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                    \vcenter %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                        \hcenter-in %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                            #16 %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                            \center-column %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                                { %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                                    Clarinet %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                                    (Eb) %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                                } %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                    \concat %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                        { %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                            \vcenter %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                                \hcenter-in %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                                    #10 %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                                    \center-column %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                                        { %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                                            Cl. %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                                            (Eb) %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                                        } %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                            \vcenter %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                                ) %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                        } %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                                } %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                        } %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                    %%% \line %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%     { %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%         \vcenter %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%             (“ClarinetInEFlat” %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%         \vcenter %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%             \hcenter-in %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%                 #16 %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%                 \center-column %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%                     { %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%                         Clarinet %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%                         (Eb) %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%                     } %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%         \concat %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%             { %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%                 \vcenter %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%                     \hcenter-in %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%                         #10 %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%                         \center-column %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%                             { %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%                                 Cl. %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%                                 (Eb) %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%                             } %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%                 \vcenter %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%                     ) %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%             } %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    %%%     } %! REDUNDANT_INSTRUMENT_ALERT:2
+                                    \line %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                        { %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                            \with-color %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                { %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                    \vcenter %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                        (“ClarinetInEFlat” %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                    \vcenter %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                        \hcenter-in %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                            #16 %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                            \center-column %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                { %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                    Clarinet %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                    (Eb) %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                } %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                    \concat %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                        { %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                            \vcenter %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                \hcenter-in %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                    #10 %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                    \center-column %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                        { %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                            Cl. %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                            (Eb) %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                        } %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                            \vcenter %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                ) %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                        } %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                } %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
+                                        } %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:3
                                 }
                             }
-                        \set ClarinetMusicStaff.instrumentName = \markup { %! REDUNDANT_REDRAW_INSTRUMENT:11
-                            \hcenter-in %! REDUNDANT_REDRAW_INSTRUMENT:11
-                                #16 %! REDUNDANT_REDRAW_INSTRUMENT:11
-                                \center-column %! REDUNDANT_REDRAW_INSTRUMENT:11
-                                    { %! REDUNDANT_REDRAW_INSTRUMENT:11
-                                        Clarinet %! REDUNDANT_REDRAW_INSTRUMENT:11
-                                        (Eb) %! REDUNDANT_REDRAW_INSTRUMENT:11
-                                    } %! REDUNDANT_REDRAW_INSTRUMENT:11
-                            } %! REDUNDANT_REDRAW_INSTRUMENT:11
-                        \set ClarinetMusicStaff.shortInstrumentName = \markup { %! REDUNDANT_REDRAW_INSTRUMENT:11
-                            \hcenter-in %! REDUNDANT_REDRAW_INSTRUMENT:11
-                                #10 %! REDUNDANT_REDRAW_INSTRUMENT:11
-                                \center-column %! REDUNDANT_REDRAW_INSTRUMENT:11
-                                    { %! REDUNDANT_REDRAW_INSTRUMENT:11
-                                        Cl. %! REDUNDANT_REDRAW_INSTRUMENT:11
-                                        (Eb) %! REDUNDANT_REDRAW_INSTRUMENT:11
-                                    } %! REDUNDANT_REDRAW_INSTRUMENT:11
-                            } %! REDUNDANT_REDRAW_INSTRUMENT:11
-                        \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_COLOR_REDRAW:5
-                        \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! REDUNDANT_REDRAW_INSTRUMENT_COLOR:10
+                        \set ClarinetMusicStaff.instrumentName = \markup { %! REDUNDANT_REDRAW_INSTRUMENT:6
+                            \hcenter-in %! REDUNDANT_REDRAW_INSTRUMENT:6
+                                #16 %! REDUNDANT_REDRAW_INSTRUMENT:6
+                                \center-column %! REDUNDANT_REDRAW_INSTRUMENT:6
+                                    { %! REDUNDANT_REDRAW_INSTRUMENT:6
+                                        Clarinet %! REDUNDANT_REDRAW_INSTRUMENT:6
+                                        (Eb) %! REDUNDANT_REDRAW_INSTRUMENT:6
+                                    } %! REDUNDANT_REDRAW_INSTRUMENT:6
+                            } %! REDUNDANT_REDRAW_INSTRUMENT:6
+                        \set ClarinetMusicStaff.shortInstrumentName = \markup { %! REDUNDANT_REDRAW_INSTRUMENT:6
+                            \hcenter-in %! REDUNDANT_REDRAW_INSTRUMENT:6
+                                #10 %! REDUNDANT_REDRAW_INSTRUMENT:6
+                                \center-column %! REDUNDANT_REDRAW_INSTRUMENT:6
+                                    { %! REDUNDANT_REDRAW_INSTRUMENT:6
+                                        Cl. %! REDUNDANT_REDRAW_INSTRUMENT:6
+                                        (Eb) %! REDUNDANT_REDRAW_INSTRUMENT:6
+                                    } %! REDUNDANT_REDRAW_INSTRUMENT:6
+                            } %! REDUNDANT_REDRAW_INSTRUMENT:6
+                        \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! REDUNDANT_REDRAW_INSTRUMENT_COLOR:5
                         
                         btqs'4.
                         \glissando

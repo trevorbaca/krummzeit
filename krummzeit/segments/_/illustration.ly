@@ -361,11 +361,7 @@
                                 #10 %! TEMPLATE_INSTRUMENT:4
                                 Ob. %! TEMPLATE_INSTRUMENT:4
                             } %! TEMPLATE_INSTRUMENT:4
-                        \clef "treble" %! TEMPLATE_CLEF:10
                         \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DarkViolet) %! TEMPLATE_INSTRUMENT_COLOR:1
-                        \once \override OboeMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! TEMPLATE_CLEF_COLOR:7
-                        %%% \override OboeMusicStaff.Clef.color = ##f %! TEMPLATE_CLEF_UNCOLOR:8
-                        \set OboeMusicStaff.forceClef = ##t %! TEMPLATE_CLEF:9
                         R1 * 1
                         ^ \markup {
                             \column
@@ -423,7 +419,6 @@
                                 Ob. %! TEMPLATE_REDRAW_INSTRUMENT:6
                             } %! TEMPLATE_REDRAW_INSTRUMENT:6
                         \override OboeMusicStaff.InstrumentName.color = #(x11-color 'violet) %! TEMPLATE_REDRAW_INSTRUMENT_COLOR:5
-                        \override OboeMusicStaff.Clef.color = #(x11-color 'violet) %! TEMPLATE_CLEF_COLOR_REDRAW:11
                         
                         %%% OboeMusicVoice [measure 2] %%%
                         R1 * 9/8
@@ -487,11 +482,7 @@
                                         (Eb) %! TEMPLATE_INSTRUMENT:4
                                     } %! TEMPLATE_INSTRUMENT:4
                             } %! TEMPLATE_INSTRUMENT:4
-                        \clef "treble" %! TEMPLATE_CLEF:10
                         \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkViolet) %! TEMPLATE_INSTRUMENT_COLOR:1
-                        \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! TEMPLATE_CLEF_COLOR:7
-                        %%% \override ClarinetMusicStaff.Clef.color = ##f %! TEMPLATE_CLEF_UNCOLOR:8
-                        \set ClarinetMusicStaff.forceClef = ##t %! TEMPLATE_CLEF:9
                         R1 * 1
                         ^ \markup {
                             \column
@@ -573,7 +564,6 @@
                                     } %! TEMPLATE_REDRAW_INSTRUMENT:6
                             } %! TEMPLATE_REDRAW_INSTRUMENT:6
                         \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'violet) %! TEMPLATE_REDRAW_INSTRUMENT_COLOR:5
-                        \override ClarinetMusicStaff.Clef.color = #(x11-color 'violet) %! TEMPLATE_CLEF_COLOR_REDRAW:11
                         
                         %%% ClarinetMusicVoice [measure 2] %%%
                         R1 * 9/8
@@ -986,11 +976,7 @@
                                 #10 %! TEMPLATE_INSTRUMENT:4
                                 Perc. %! TEMPLATE_INSTRUMENT:4
                             } %! TEMPLATE_INSTRUMENT:4
-                        \clef "percussion" %! TEMPLATE_CLEF:10
                         \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DarkViolet) %! TEMPLATE_INSTRUMENT_COLOR:1
-                        \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! TEMPLATE_CLEF_COLOR:7
-                        %%% \override PercussionMusicStaff.Clef.color = ##f %! TEMPLATE_CLEF_UNCOLOR:8
-                        \set PercussionMusicStaff.forceClef = ##t %! TEMPLATE_CLEF:9
                         R1 * 1
                         ^ \markup {
                             \column
@@ -1048,7 +1034,6 @@
                                 Perc. %! TEMPLATE_REDRAW_INSTRUMENT:6
                             } %! TEMPLATE_REDRAW_INSTRUMENT:6
                         \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'violet) %! TEMPLATE_REDRAW_INSTRUMENT_COLOR:5
-                        \override PercussionMusicStaff.Clef.color = #(x11-color 'violet) %! TEMPLATE_CLEF_COLOR_REDRAW:11
                         
                         %%% PercussionMusicVoice [measure 2] %%%
                         R1 * 9/8
@@ -1418,11 +1403,7 @@
                                 #10 %! TEMPLATE_INSTRUMENT:4
                                 Vn. %! TEMPLATE_INSTRUMENT:4
                             } %! TEMPLATE_INSTRUMENT:4
-                        \clef "treble" %! TEMPLATE_CLEF:10
                         \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DarkViolet) %! TEMPLATE_INSTRUMENT_COLOR:1
-                        \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! TEMPLATE_CLEF_COLOR:7
-                        %%% \override ViolinMusicStaff.Clef.color = ##f %! TEMPLATE_CLEF_UNCOLOR:8
-                        \set ViolinMusicStaff.forceClef = ##t %! TEMPLATE_CLEF:9
                         r8
                         ^ \markup {
                             \column
@@ -1480,7 +1461,6 @@
                                 Vn. %! TEMPLATE_REDRAW_INSTRUMENT:6
                             } %! TEMPLATE_REDRAW_INSTRUMENT:6
                         \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'violet) %! TEMPLATE_REDRAW_INSTRUMENT_COLOR:5
-                        \override ViolinMusicStaff.Clef.color = #(x11-color 'violet) %! TEMPLATE_CLEF_COLOR_REDRAW:11
                         \times 2/3 {
                             
                             \once \override Accidental.color = #red

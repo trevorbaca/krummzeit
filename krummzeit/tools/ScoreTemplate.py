@@ -307,6 +307,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['Viola'],
             )
+        abjad.annotate(
+            viola_music_staff,
+            'default_clef',
+            abjad.Clef('alto'),
+            )
 
         # CELLO
         cello_music_voice = abjad.Voice(
@@ -323,6 +328,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             cello_music_staff,
             'default_instrument',
             krummzeit.instruments['Cello'],
+            )
+        abjad.annotate(
+            cello_music_staff,
+            'default_clef',
+            abjad.Clef('bass'),
             )
 
         # STRING SECTION

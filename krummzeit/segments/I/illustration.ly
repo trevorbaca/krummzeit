@@ -1662,10 +1662,10 @@
                                     #10 %! REDUNDANT_INSTRUMENT:9
                                     Pf. %! REDUNDANT_INSTRUMENT:9
                                 } %! REDUNDANT_INSTRUMENT:9
+                            \set PianoMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                             \clef "bass" %! REAPPLIED_CLEF:4
                             \once \override PianoMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:1
                             %%% \override PianoMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                            \set PianoMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                             \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:6
                             fs'''4.
                             :32
@@ -2113,10 +2113,10 @@
                                 #10 %! EXPLICIT_INSTRUMENT:9
                                 Pf. %! EXPLICIT_INSTRUMENT:9
                             } %! EXPLICIT_INSTRUMENT:9
+                        \set PianoMusicStaff.forceClef = ##t %! REDUNDANT_CLEF:3
                         \clef "bass" %! REDUNDANT_CLEF:4
                         \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:1
                         %%% \override PianoMusicStaff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:2
-                        \set PianoMusicStaff.forceClef = ##t %! REDUNDANT_CLEF:3
                         \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:6
                         r8
                         ^ \markup {
@@ -5141,10 +5141,10 @@
                                     #10 %! REDUNDANT_INSTRUMENT:9
                                     Xyl. %! REDUNDANT_INSTRUMENT:9
                                 } %! REDUNDANT_INSTRUMENT:9
+                            \set PercussionMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                             \clef "treble" %! REAPPLIED_CLEF:4
                             \once \override PercussionMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:1
                             %%% \override PercussionMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                            \set PercussionMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                             \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:6
                             \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:12
                             fs''8
@@ -5230,10 +5230,10 @@
                         
                         %%% PercussionMusicVoice [measure 293] %%%
                         \override DynamicLineSpanner.staff-padding = #'6
+                        \set PercussionMusicStaff.forceClef = ##t %! EXPLICIT_CLEF:3
                         \clef "percussion" %! EXPLICIT_CLEF:4
                         \once \override PercussionMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override PercussionMusicStaff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
-                        \set PercussionMusicStaff.forceClef = ##t %! EXPLICIT_CLEF:3
                         r16
                         \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_COLOR_REDRAW:5
                         
@@ -5512,10 +5512,10 @@
                                     #10 %! REAPPLIED_INSTRUMENT:9
                                     Vn. %! REAPPLIED_INSTRUMENT:9
                                 } %! REAPPLIED_INSTRUMENT:9
+                            \set ViolinMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                             \clef "treble" %! REAPPLIED_CLEF:4
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:1
                             %%% \override ViolinMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                            \set ViolinMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                             \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:6
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:12
                             ef''8
@@ -5953,10 +5953,10 @@
                         R1 * 5/8
                         
                         %%% ViolinMusicVoice [measure 295] %%%
+                        \set ViolinMusicStaff.forceClef = ##t %! REDUNDANT_CLEF:3
                         \clef "treble" %! REDUNDANT_CLEF:4
                         \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:1
                         %%% \override ViolinMusicStaff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:2
-                        \set ViolinMusicStaff.forceClef = ##t %! REDUNDANT_CLEF:3
                         g''4
                         -\downbow
                         \glissando
@@ -6178,10 +6178,10 @@
                                     #10 %! REAPPLIED_INSTRUMENT:9
                                     Va. %! REAPPLIED_INSTRUMENT:9
                                 } %! REAPPLIED_INSTRUMENT:9
+                            \set ViolaMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                             \clef "alto" %! REAPPLIED_CLEF:4
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:1
                             %%% \override ViolaMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                            \set ViolaMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                             \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:6
                             a8
                             :32
@@ -6354,10 +6354,10 @@
                         R1 * 5/8
                         
                         %%% ViolaMusicVoice [measure 295] %%%
+                        \set ViolaMusicStaff.forceClef = ##t %! EXPLICIT_CLEF:3
                         \clef "treble" %! EXPLICIT_CLEF:4
                         \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override ViolaMusicStaff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
-                        \set ViolaMusicStaff.forceClef = ##t %! EXPLICIT_CLEF:3
                         ef''4
                         -\downbow
                         \glissando
@@ -6571,10 +6571,10 @@
                                     #10 %! REAPPLIED_INSTRUMENT:9
                                     Vc. %! REAPPLIED_INSTRUMENT:9
                                 } %! REAPPLIED_INSTRUMENT:9
+                            \set CelloMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                             \clef "bass" %! REAPPLIED_CLEF:4
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:1
                             %%% \override CelloMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                            \set CelloMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                             \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:6
                             eqf,8
                             :32
@@ -6744,10 +6744,10 @@
                         R1 * 5/8
                         
                         %%% CelloMusicVoice [measure 295] %%%
+                        \set CelloMusicStaff.forceClef = ##t %! EXPLICIT_CLEF:3
                         \clef "treble" %! EXPLICIT_CLEF:4
                         \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override CelloMusicStaff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
-                        \set CelloMusicStaff.forceClef = ##t %! EXPLICIT_CLEF:3
                         d''4
                         -\downbow
                         \glissando

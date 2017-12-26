@@ -727,10 +727,10 @@
                                 #10 %! EXPLICIT_INSTRUMENT:9
                                 Pf. %! EXPLICIT_INSTRUMENT:9
                             } %! EXPLICIT_INSTRUMENT:9
+                        \set PianoMusicStaff.forceClef = ##t %! EXPLICIT_CLEF:3
                         \clef "bass" %! EXPLICIT_CLEF:4
                         \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override PianoMusicStaff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
-                        \set PianoMusicStaff.forceClef = ##t %! EXPLICIT_CLEF:3
                         \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:6
                         r1
                         ^ \markup {
@@ -811,10 +811,10 @@
                                 #10 %! REDUNDANT_INSTRUMENT:9
                                 Pf. %! REDUNDANT_INSTRUMENT:9
                             } %! REDUNDANT_INSTRUMENT:9
+                        \set PianoMusicStaff.forceClef = ##t %! REDUNDANT_CLEF:3
                         \clef "bass" %! REDUNDANT_CLEF:4
                         \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:1
                         %%% \override PianoMusicStaff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:2
-                        \set PianoMusicStaff.forceClef = ##t %! REDUNDANT_CLEF:3
                         \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:6
                         r16
                         ^ \markup {
@@ -912,10 +912,10 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
+                            \set PianoMusicStaff.forceClef = ##t %! EXPLICIT_CLEF:3
                             \clef "treble" %! EXPLICIT_CLEF:4
                             \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override PianoMusicStaff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
-                            \set PianoMusicStaff.forceClef = ##t %! EXPLICIT_CLEF:3
                             cs''2
                             :32
                             - \tweak color #red
@@ -1069,10 +1069,10 @@
                                     #10 %! EXPLICIT_INSTRUMENT:9
                                     Xyl. %! EXPLICIT_INSTRUMENT:9
                                 } %! EXPLICIT_INSTRUMENT:9
+                            \set PercussionMusicStaff.forceClef = ##t %! EXPLICIT_CLEF:3
                             \clef "treble" %! EXPLICIT_CLEF:4
                             \once \override PercussionMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override PercussionMusicStaff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
-                            \set PercussionMusicStaff.forceClef = ##t %! EXPLICIT_CLEF:3
                             \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:6
                             cs'4
                             :32
@@ -1183,10 +1183,10 @@
                                     #10 %! EXPLICIT_INSTRUMENT:9
                                     Perc. %! EXPLICIT_INSTRUMENT:9
                                 } %! EXPLICIT_INSTRUMENT:9
+                            \set PercussionMusicStaff.forceClef = ##t %! EXPLICIT_CLEF:3
                             \clef "percussion" %! EXPLICIT_CLEF:4
                             \once \override PercussionMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override PercussionMusicStaff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
-                            \set PercussionMusicStaff.forceClef = ##t %! EXPLICIT_CLEF:3
                             \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:6
                             c'2
                             -\accent
@@ -1885,11 +1885,11 @@
                                 #10 %! TEMPLATE_INSTRUMENT:4
                                 Va. %! TEMPLATE_INSTRUMENT:4
                             } %! TEMPLATE_INSTRUMENT:4
+                        \set ViolaMusicStaff.forceClef = ##t %! TEMPLATE_CLEF:9
                         \clef "alto" %! TEMPLATE_CLEF:10
                         \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'DarkViolet) %! TEMPLATE_INSTRUMENT_COLOR:1
                         \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! TEMPLATE_CLEF_COLOR:7
                         %%% \override ViolaMusicStaff.Clef.color = ##f %! TEMPLATE_CLEF_UNCOLOR:8
-                        \set ViolaMusicStaff.forceClef = ##t %! TEMPLATE_CLEF:9
                         r8
                         ^ \markup {
                             \column
@@ -2373,11 +2373,11 @@
                                 #10 %! TEMPLATE_INSTRUMENT:4
                                 Vc. %! TEMPLATE_INSTRUMENT:4
                             } %! TEMPLATE_INSTRUMENT:4
+                        \set CelloMusicStaff.forceClef = ##t %! TEMPLATE_CLEF:9
                         \clef "bass" %! TEMPLATE_CLEF:10
                         \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'DarkViolet) %! TEMPLATE_INSTRUMENT_COLOR:1
                         \once \override CelloMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! TEMPLATE_CLEF_COLOR:7
                         %%% \override CelloMusicStaff.Clef.color = ##f %! TEMPLATE_CLEF_UNCOLOR:8
-                        \set CelloMusicStaff.forceClef = ##t %! TEMPLATE_CLEF:9
                         r8
                         ^ \markup {
                             \column

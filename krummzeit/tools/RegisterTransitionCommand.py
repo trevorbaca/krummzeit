@@ -42,15 +42,15 @@ class RegisterTransitionCommand(baca.Command):
             <BLANKLINE>
                         %%% GlobalSkips [measure 1] %%%
                         \time 4/8
-                        \bar "" %%! EMPTY_START_BAR:1
+                        \bar ""                                                            %%! EMPTY_START_BAR
                         s1 * 1/2
-                            - \markup {                        %%! STAGE_NUMBER_MARKUP:2
-                                \fontsize                      %%! STAGE_NUMBER_MARKUP:2
-                                    #-3                        %%! STAGE_NUMBER_MARKUP:2
-                                    \with-color                %%! STAGE_NUMBER_MARKUP:2
-                                        #(x11-color 'DarkCyan) %%! STAGE_NUMBER_MARKUP:2
-                                        [1]                    %%! STAGE_NUMBER_MARKUP:2
-                                }                              %%! STAGE_NUMBER_MARKUP:2
+                        - \markup {                                                        %%! STAGE_NUMBER_MARKUP
+                            \fontsize                                                      %%! STAGE_NUMBER_MARKUP
+                                #-3                                                        %%! STAGE_NUMBER_MARKUP
+                                \with-color                                                %%! STAGE_NUMBER_MARKUP
+                                    #(x11-color 'DarkCyan)                                 %%! STAGE_NUMBER_MARKUP
+                                    [1]                                                    %%! STAGE_NUMBER_MARKUP
+                            }                                                              %%! STAGE_NUMBER_MARKUP
             <BLANKLINE>
                         %%% GlobalSkips [measure 2] %%%
                         \time 3/8
@@ -72,42 +72,50 @@ class RegisterTransitionCommand(baca.Command):
                             {
             <BLANKLINE>
                                 %%% MusicVoice [measure 1] %%%
-                                c'8 [
+                                c'8
+                                [
             <BLANKLINE>
                                 d'8
             <BLANKLINE>
                                 e'8
             <BLANKLINE>
-                                f'8 ]
+                                f'8
+                                ]
                             }
                             {
             <BLANKLINE>
                                 %%% MusicVoice [measure 2] %%%
-                                c''8 [
+                                c''8
+                                [
             <BLANKLINE>
                                 d''8
             <BLANKLINE>
-                                e''8 ]
+                                e''8
+                                ]
                             }
                             {
             <BLANKLINE>
                                 %%% MusicVoice [measure 3] %%%
-                                f''8 [
+                                f''8
+                                [
             <BLANKLINE>
                                 c''8
             <BLANKLINE>
                                 d''8
             <BLANKLINE>
-                                e''8 ]
+                                e''8
+                                ]
                             }
                             {
             <BLANKLINE>
                                 %%% MusicVoice [measure 4] %%%
-                                f''8 [
+                                f''8
+                                [
             <BLANKLINE>
                                 c''8
             <BLANKLINE>
-                                d''8 ]
+                                d''8
+                                ]
                                 \bar "|"
             <BLANKLINE>
                             }

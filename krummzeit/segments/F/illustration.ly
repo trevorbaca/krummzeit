@@ -18,7 +18,6 @@
                 \time 9/8 %! REAPPLIED_TIME_SIGNATURE:6
                 \mark #6
                 \bar "" %! EMPTY_START_BAR:1
-                \once \override TextScript.color = #(x11-color 'DeepPink1) %! REDUNDANT_METRONOME_MARK_COLOR:3
                 \once \override Score.TimeSignature.color = #(x11-color 'green4) %! REAPPLIED_TIME_SIGNATURE_COLOR:5
                 s1 * 9/8
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:7
@@ -26,29 +25,56 @@
                         %%% #-2 %! CLOCK_TIME_MARKUP:7
                         %%% 11'06'' %! CLOCK_TIME_MARKUP:7
                     %%% } %! CLOCK_TIME_MARKUP:7
-                %%% - \markup { %! STAGE_NUMBER_MARKUP:2
-                    %%% \fontsize %! STAGE_NUMBER_MARKUP:2
-                        %%% #-3 %! STAGE_NUMBER_MARKUP:2
-                        %%% \with-color %! STAGE_NUMBER_MARKUP:2
-                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:2
-                            %%% [F.1] %! STAGE_NUMBER_MARKUP:2
-                    %%% } %! STAGE_NUMBER_MARKUP:2
-                ^ \markup { % REDUNDANT_METRONOME_MARK:4
-                    \fontsize % REDUNDANT_METRONOME_MARK:4
-                        #-6 % REDUNDANT_METRONOME_MARK:4
-                        \general-align % REDUNDANT_METRONOME_MARK:4
-                            #Y % REDUNDANT_METRONOME_MARK:4
-                            #DOWN % REDUNDANT_METRONOME_MARK:4
-                            \note-by-number % REDUNDANT_METRONOME_MARK:4
-                                #2 % REDUNDANT_METRONOME_MARK:4
-                                #0 % REDUNDANT_METRONOME_MARK:4
-                                #1 % REDUNDANT_METRONOME_MARK:4
-                    \upright % REDUNDANT_METRONOME_MARK:4
-                        { % REDUNDANT_METRONOME_MARK:4
-                            = % REDUNDANT_METRONOME_MARK:4
-                            72 % REDUNDANT_METRONOME_MARK:4
-                        } % REDUNDANT_METRONOME_MARK:4
-                    } % REDUNDANT_METRONOME_MARK:4
+                - \markup {
+                    \column
+                        {
+                            %%% \line %! STAGE_NUMBER_MARKUP:2
+                                %%% { %! STAGE_NUMBER_MARKUP:2
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:2
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:2
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:2
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:2
+                                            %%% [F.1] %! STAGE_NUMBER_MARKUP:2
+                                %%% } %! STAGE_NUMBER_MARKUP:2
+                            \line %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                { %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                    \with-color %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                        #(x11-color 'DeepPink1) %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                        { %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                            \fontsize %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                #-6 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                \general-align %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                    #Y %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                    #DOWN %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                    \note-by-number %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                        #2 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                        #0 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                        #1 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                            \upright %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                { %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                    = %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                    72 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                } %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                        } %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                } %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                        }
+                    }
+                %%% ^ \markup { %! REDUNDANT_METRONOME_MARK:4
+                %%%     \fontsize %! REDUNDANT_METRONOME_MARK:4
+                %%%         #-6 %! REDUNDANT_METRONOME_MARK:4
+                %%%         \general-align %! REDUNDANT_METRONOME_MARK:4
+                %%%             #Y %! REDUNDANT_METRONOME_MARK:4
+                %%%             #DOWN %! REDUNDANT_METRONOME_MARK:4
+                %%%             \note-by-number %! REDUNDANT_METRONOME_MARK:4
+                %%%                 #2 %! REDUNDANT_METRONOME_MARK:4
+                %%%                 #0 %! REDUNDANT_METRONOME_MARK:4
+                %%%                 #1 %! REDUNDANT_METRONOME_MARK:4
+                %%%     \upright %! REDUNDANT_METRONOME_MARK:4
+                %%%         { %! REDUNDANT_METRONOME_MARK:4
+                %%%             = %! REDUNDANT_METRONOME_MARK:4
+                %%%             72 %! REDUNDANT_METRONOME_MARK:4
+                %%%         } %! REDUNDANT_METRONOME_MARK:4
+                %%%     } %! REDUNDANT_METRONOME_MARK:4
                 
                 %%% GlobalSkips [measure 236] %%%
                 \time 5/8

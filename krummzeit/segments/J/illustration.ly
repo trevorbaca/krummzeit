@@ -652,7 +652,7 @@
                     \context OboeMusicVoice = "OboeMusicVoice" {
                         
                         % OboeMusicVoice [measure 314]                                   %! SM4
-                        \override DynamicLineSpanner.staff-padding = #'5
+                        \override DynamicLineSpanner.staff-padding = #'5                 %! OC
                         \set OboeMusicStaff.instrumentName = \markup {                   %! REAPPLIED_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 #16                                                      %! REAPPLIED_INSTRUMENT:SM8
@@ -673,7 +673,7 @@
                             }                                                            %! REAPPLIED_INSTRUMENT:SM8
                         \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                         as\breve..
-                        \fff                                                             %! IC1
+                        \fff                                                             %! IC
                         ^ \markup {
                             \column
                                 {
@@ -835,7 +835,7 @@
                         
                         % OboeMusicVoice [measure 361]                                   %! SM4
                         R1 * 1/2
-                        \revert DynamicLineSpanner.staff-padding
+                        \revert DynamicLineSpanner.staff-padding                         %! OC
                         
                     }
                 }
@@ -844,8 +844,8 @@
                     \context ClarinetMusicVoice = "ClarinetMusicVoice" {
                         
                         % ClarinetMusicVoice [measure 314]                               %! SM4
-                        \override DynamicLineSpanner.staff-padding = #'7
-                        \override Stem.direction = #up
+                        \override DynamicLineSpanner.staff-padding = #'7                 %! OC
+                        \override Stem.direction = #up                                   %! OC
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -871,7 +871,7 @@
                             }                                                            %! REDUNDANT_INSTRUMENT:SM8
                         \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
                         e\longa
-                        \f                                                               %! IC1
+                        \f                                                               %! IC
                         ^ \markup {
                             \column
                                 {
@@ -1046,7 +1046,7 @@
                         e\longa
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
-                        \revert Stem.direction
+                        \revert Stem.direction                                           %! OC
                         
                         % ClarinetMusicVoice [measure 354]                               %! SM4
                         R1 * 5/4
@@ -1071,7 +1071,7 @@
                         
                         % ClarinetMusicVoice [measure 361]                               %! SM4
                         R1 * 1/2
-                        \revert DynamicLineSpanner.staff-padding
+                        \revert DynamicLineSpanner.staff-padding                         %! OC
                         
                     }
                 }
@@ -1104,7 +1104,7 @@
                         \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
                         cs'''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         \fff                                                             %! REAPPLIED_DYNAMIC:SM8
                         ^ \markup {
                             \column
@@ -1175,7 +1175,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs'''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1186,7 +1186,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs'''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1197,7 +1197,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs'''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1208,7 +1208,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs'''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1219,7 +1219,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs'''\breve..
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1244,7 +1244,7 @@
                             }                                                            %! EXPLICIT_INSTRUMENT:SM8
                         \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
                         cs'''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         ^ \markup {
                             \column
                                 {
@@ -1294,12 +1294,12 @@
                                         }                                                %! SM14
                                 }
                             }
-                        _ \markup {                                                      %! IC1
-                            \dynamic                                                     %! IC1
-                                ffff                                                     %! IC1
-                            \upright                                                     %! IC1
-                                possibile                                                %! IC1
-                            }                                                            %! IC1
+                        _ \markup {                                                      %! IC
+                            \dynamic                                                     %! IC
+                                ffff                                                     %! IC
+                            \upright                                                     %! IC
+                                possibile                                                %! IC
+                            }                                                            %! IC
                         \set PianoMusicStaff.instrumentName = \markup {                  %! EXPLICIT_REDRAW_INSTRUMENT:SM8
                             \hcenter-in                                                  %! EXPLICIT_REDRAW_INSTRUMENT:SM8
                                 #16                                                      %! EXPLICIT_REDRAW_INSTRUMENT:SM8
@@ -1319,7 +1319,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs'''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1330,7 +1330,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs'''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1341,7 +1341,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs'''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1352,7 +1352,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs'''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1363,7 +1363,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs'''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1377,7 +1377,7 @@
                         \stopStaff                                                       %! REAPPLIED_STAFF_LINES:SM8
                         \once \override PercussionMusicStaff.StaffSymbol.line-count = 5  %! REAPPLIED_STAFF_LINES:SM8
                         \startStaff                                                      %! REAPPLIED_STAFF_LINES:SM8
-                        \override DynamicLineSpanner.staff-padding = #'4
+                        \override DynamicLineSpanner.staff-padding = #'4                 %! OC
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1400,8 +1400,8 @@
                         \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
                         \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                         cs''\longa
-                        :32                                                              %! IC1
-                        \fff                                                             %! IC1
+                        :32                                                              %! IC
+                        \fff                                                             %! IC
                         ^ \markup {
                             \column
                                 {
@@ -1471,7 +1471,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1482,7 +1482,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1493,7 +1493,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1504,7 +1504,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1515,7 +1515,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1526,7 +1526,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1537,7 +1537,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1548,7 +1548,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1559,7 +1559,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1570,7 +1570,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1581,10 +1581,10 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         cs''\longa
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
-                        \revert DynamicLineSpanner.staff-padding
+                        \revert DynamicLineSpanner.staff-padding                         %! OC
                         
                     }
                 }
@@ -1600,8 +1600,8 @@
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 5  %! REAPPLIED_STAFF_LINES:SM8
                             \startStaff                                                  %! REAPPLIED_STAFF_LINES:SM8
-                            \override DynamicLineSpanner.staff-padding = #'5
-                            \override TupletBracket.staff-padding = #2
+                            \override DynamicLineSpanner.staff-padding = #'5             %! OC
+                            \override TupletBracket.staff-padding = #2                   %! OC
                             \set ViolinMusicStaff.instrumentName = \markup {             %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -1619,17 +1619,17 @@
                             \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                             e'''2
-                            -\staccatissimo                                              %! IC1
-                            \ff                                                          %! IC1
+                            -\staccatissimo                                              %! IC
+                            \ff                                                          %! IC
                             ^ \markup {
                                 \column
                                     {
-                                        \line                                            %! IC1
-                                            {                                            %! IC1
-                                                \whiteout                                %! IC1
-                                                    \upright                             %! IC1
-                                                        pizz.                            %! IC1
-                                            }                                            %! IC1
+                                        \line                                            %! IC
+                                            {                                            %! IC
+                                                \whiteout                                %! IC
+                                                    \upright                             %! IC
+                                                        pizz.                            %! IC
+                                            }                                            %! IC
                                         %%% \line                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                         %%%     {                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                         %%%         \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT:SM10
@@ -1686,10 +1686,10 @@
                             \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:SM6
                             
                             f'''1
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             cs'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
@@ -1701,7 +1701,7 @@
                             r2
                             
                             e'''2.
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \times 2/3 {
                             
@@ -1711,7 +1711,7 @@
                             r4
                             
                             ef'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
@@ -1725,10 +1725,10 @@
                             r4
                             
                             d'''1
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             e'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -1737,13 +1737,13 @@
                             r4
                             
                             f'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             e'''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
@@ -1755,7 +1755,7 @@
                             r1
                             
                             ef'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
@@ -1771,7 +1771,7 @@
                             r4
                             
                             f'''1
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
@@ -1780,16 +1780,16 @@
                             r1
                             
                             cs'''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \times 2/3 {
                             
                             % ViolinMusicVoice [measure 324]                             %! SM4
                             d'''1
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             e'''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
@@ -1801,7 +1801,7 @@
                             
                             % ViolinMusicVoice [measure 326]                             %! SM4
                             f'''1.
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
@@ -1813,7 +1813,7 @@
                             r4
                             
                             g'''2.
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \times 2/3 {
                             
@@ -1821,10 +1821,10 @@
                             r4
                             
                             e'''1
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             ef'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
@@ -1832,17 +1832,17 @@
                             r4
                             
                             f'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
                             
                             % ViolinMusicVoice [measure 330]                             %! SM4
                             cs'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             d'''1.
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
@@ -1851,7 +1851,7 @@
                             r2
                             
                             e'''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
@@ -1866,7 +1866,7 @@
                             
                             % ViolinMusicVoice [measure 333]                             %! SM4
                             f'''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
@@ -1875,7 +1875,7 @@
                             r1.
                             
                             g'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
@@ -1884,10 +1884,10 @@
                             r4
                             
                             e'''1
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             ef'''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \times 4/5 {
                             
@@ -1895,7 +1895,7 @@
                             r2
                             
                             f'''2.
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
@@ -1909,10 +1909,10 @@
                             r2.
                             
                             cs'''1
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             d'''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
@@ -1924,16 +1924,16 @@
                             r4
                             
                             e'''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             e'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \times 2/3 {
                             
@@ -1946,7 +1946,7 @@
                             r4
                             
                             ef'''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
@@ -1955,7 +1955,7 @@
                             r1.
                             
                             f'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
@@ -1973,10 +1973,10 @@
                             r4
                             
                             cs'''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             d'''2.
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
@@ -1984,7 +1984,7 @@
                             r4
                             
                             e'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
@@ -1993,7 +1993,7 @@
                             r2.
                             
                             f'''2.
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
@@ -2004,7 +2004,7 @@
                             r4
                             
                             g'''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
@@ -2012,7 +2012,7 @@
                             r2
                             
                             e'''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
@@ -2024,16 +2024,16 @@
                             
                             % ViolinMusicVoice [measure 350]                             %! SM4
                             ef'''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             cs'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             d'''2.
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
@@ -2045,7 +2045,7 @@
                             r1
                             
                             e'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \times 2/3 {
                             
@@ -2058,9 +2058,9 @@
                             r4
                             
                             f'''4
-                            -\staccatissimo                                              %! IC1
-                            \revert DynamicLineSpanner.staff-padding
-                            \revert TupletBracket.staff-padding
+                            -\staccatissimo                                              %! IC
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
                         }
                         
                         % ViolinMusicVoice [measure 354]                                 %! SM4
@@ -2096,8 +2096,8 @@
                         \times 5/8 {
                             
                             % ViolaMusicVoice [measure 314]                              %! SM4
-                            \override DynamicLineSpanner.staff-padding = #'5
-                            \override TupletBracket.staff-padding = #2
+                            \override DynamicLineSpanner.staff-padding = #'5             %! OC
+                            \override TupletBracket.staff-padding = #2                   %! OC
                             \set ViolaMusicStaff.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -2114,17 +2114,17 @@
                             %%% \override ViolaMusicStaff.Clef.color = ##f               %! REDUNDANT_CLEF_UNCOLOR:SM7
                             \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                             ef'''\breve
-                            -\staccatissimo                                              %! IC1
-                            \ff                                                          %! IC1
+                            -\staccatissimo                                              %! IC
+                            \ff                                                          %! IC
                             ^ \markup {
                                 \column
                                     {
-                                        \line                                            %! IC1
-                                            {                                            %! IC1
-                                                \whiteout                                %! IC1
-                                                    \upright                             %! IC1
-                                                        pizz.                            %! IC1
-                                            }                                            %! IC1
+                                        \line                                            %! IC
+                                            {                                            %! IC
+                                                \whiteout                                %! IC
+                                                    \upright                             %! IC
+                                                        pizz.                            %! IC
+                                            }                                            %! IC
                                         %%% \line                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                         %%%     {                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                         %%%         \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT:SM10
@@ -2184,14 +2184,14 @@
                             
                             % ViolaMusicVoice [measure 315]                              %! SM4
                             d'''2.
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
                             r4
                             
                             f'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \times 4/7 {
                             
@@ -2199,19 +2199,19 @@
                             r2.
                             
                             g'''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             e'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \times 2/3 {
                             
                             % ViolaMusicVoice [measure 317]                              %! SM4
                             cs'''2.
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         % ViolaMusicVoice [measure 318]                                  %! SM4
@@ -2321,8 +2321,8 @@
                         
                         % ViolaMusicVoice [measure 353]                                  %! SM4
                         R1 * 1/2
-                        \revert DynamicLineSpanner.staff-padding
-                        \revert TupletBracket.staff-padding
+                        \revert DynamicLineSpanner.staff-padding                         %! OC
+                        \revert TupletBracket.staff-padding                              %! OC
                         
                         % ViolaMusicVoice [measure 354]                                  %! SM4
                         R1 * 5/4
@@ -2355,7 +2355,7 @@
                     \context CelloMusicVoice = "CelloMusicVoice" {
                         
                         % CelloMusicVoice [measure 314]                                  %! SM4
-                        \override DynamicLineSpanner.staff-padding = #'3
+                        \override DynamicLineSpanner.staff-padding = #'3                 %! OC
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -2377,16 +2377,16 @@
                         %%% \override CelloMusicStaff.Clef.color = ##f                   %! REAPPLIED_CLEF_UNCOLOR:SM7
                         \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                         d'\longa
-                        \fff                                                             %! IC1
+                        \fff                                                             %! IC
                         ^ \markup {
                             \column
                                 {
-                                    \line                                                %! IC1
-                                        {                                                %! IC1
-                                            \whiteout                                    %! IC1
-                                                \upright                                 %! IC1
-                                                    "gridato possibile"                  %! IC1
-                                        }                                                %! IC1
+                                    \line                                                %! IC
+                                        {                                                %! IC
+                                            \whiteout                                    %! IC
+                                                \upright                                 %! IC
+                                                    "gridato possibile"                  %! IC
+                                        }                                                %! IC
                                     %%% \line                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                     %%%     {                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                     %%%         \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM10
@@ -2506,7 +2506,7 @@
                         d,2
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
-                        \revert DynamicLineSpanner.staff-padding
+                        \revert DynamicLineSpanner.staff-padding                         %! OC
                         
                         % CelloMusicVoice [measure 338]                                  %! SM4
                         \once \override Accidental.color = #red
@@ -2515,16 +2515,16 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         d,\longa
-                        \ff                                                              %! IC1
+                        \ff                                                              %! IC
                         ^ \markup {
                             \column
                                 {
-                                    \line                                                %! IC1
-                                        {                                                %! IC1
-                                            \whiteout                                    %! IC1
-                                                \upright                                 %! IC1
-                                                    ordinario                            %! IC1
-                                        }                                                %! IC1
+                                    \line                                                %! IC
+                                        {                                                %! IC
+                                            \whiteout                                    %! IC
+                                                \upright                                 %! IC
+                                                    ordinario                            %! IC
+                                        }                                                %! IC
                                     \line                                                %! SM14
                                         {                                                %! SM14
                                             @                                            %! SM14

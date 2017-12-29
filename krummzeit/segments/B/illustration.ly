@@ -1151,9 +1151,9 @@
                         \times 3/4 {
                             
                             % OboeMusicVoice [measure 89]                                %! SM4
-                            \override Beam.positions = #'(-4 . -4)
-                            \override DynamicLineSpanner.staff-padding = #'8
-                            \override TupletBracket.staff-padding = #4
+                            \override Beam.positions = #'(-4 . -4)                       %! OC
+                            \override DynamicLineSpanner.staff-padding = #'8             %! OC
+                            \override TupletBracket.staff-padding = #4                   %! OC
                             \set OboeMusicStaff.instrumentName = \markup {               %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -1166,7 +1166,7 @@
                                 }                                                        %! REAPPLIED_INSTRUMENT:SM8
                             \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                             e'8
-                            \ff                                                          %! IC1
+                            \ff                                                          %! IC
                             ^ \markup {
                                 \column
                                     {
@@ -1508,7 +1508,7 @@
                             
                             % OboeMusicVoice [measure 112]                               %! SM4
                             a''8
-                            \ff                                                          %! IC1
+                            \ff                                                          %! IC
                             
                             e'''4
                             \startTrillSpan
@@ -2019,9 +2019,9 @@
                         
                         % OboeMusicVoice [measure 132]                                   %! SM4
                         R1 * 5/4
-                        \revert Beam.positions
-                        \revert DynamicLineSpanner.staff-padding
-                        \revert TupletBracket.staff-padding
+                        \revert Beam.positions                                           %! OC
+                        \revert DynamicLineSpanner.staff-padding                         %! OC
+                        \revert TupletBracket.staff-padding                              %! OC
                         
                     }
                 }
@@ -2030,7 +2030,7 @@
                     \context ClarinetMusicVoice = "ClarinetMusicVoice" {
                         
                         % ClarinetMusicVoice [measure 89]                                %! SM4
-                        \override DynamicLineSpanner.staff-padding = #'3
+                        \override DynamicLineSpanner.staff-padding = #'3                 %! OC
                         \set ClarinetMusicStaff.instrumentName = \markup {               %! REDUNDANT_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REDUNDANT_INSTRUMENT:SM8
                                 #16                                                      %! REDUNDANT_INSTRUMENT:SM8
@@ -2051,7 +2051,7 @@
                             }                                                            %! REDUNDANT_INSTRUMENT:SM8
                         \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
                         cs''4.
-                        \f                                                               %! IC1
+                        \f                                                               %! IC
                         \glissando
                         ^ \markup {
                             \column
@@ -2220,7 +2220,7 @@
                         
                         % ClarinetMusicVoice [measure 112]                               %! SM4
                         d''4.
-                        \f                                                               %! IC1
+                        \f                                                               %! IC
                         \glissando
                         
                         ctqs''4.
@@ -2330,7 +2330,7 @@
                         
                         % ClarinetMusicVoice [measure 132]                               %! SM4
                         R1 * 5/4
-                        \revert DynamicLineSpanner.staff-padding
+                        \revert DynamicLineSpanner.staff-padding                         %! OC
                         
                     }
                 }
@@ -2455,9 +2455,9 @@
                         \times 4/5 {
                             
                             % PianoMusicVoice [measure 102]                              %! SM4
-                            \override Beam.positions = #'(-4 . -4)
-                            \override DynamicLineSpanner.staff-padding = #'6
-                            \override TupletBracket.staff-padding = #3
+                            \override Beam.positions = #'(-4 . -4)                       %! OC
+                            \override DynamicLineSpanner.staff-padding = #'6             %! OC
+                            \override TupletBracket.staff-padding = #3                   %! OC
                             \set PianoMusicStaff.instrumentName = \markup {              %! REDUNDANT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REDUNDANT_INSTRUMENT:SM8
                                     #16                                                  %! REDUNDANT_INSTRUMENT:SM8
@@ -2528,15 +2528,15 @@
                             \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! REDUNDANT_REDRAW_INSTRUMENT_COLOR:SM6
                             
                             cs'''16
-                            -\staccatissimo                                              %! IC1
-                            \ff                                                          %! IC1
+                            -\staccatissimo                                              %! IC
+                            \ff                                                          %! IC
                             [
                             
                             cs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             cs'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -2545,17 +2545,17 @@
                             r8
                             
                             cs'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             cs'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             r4
                             
                             cs'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         % PianoMusicVoice [measure 103]                                  %! SM4
@@ -2566,13 +2566,13 @@
                             r4
                             
                             cs'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             cs'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             cs'''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
@@ -2580,17 +2580,17 @@
                             r8
                             
                             cs'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             cs'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             r4
                             
                             cs'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         % PianoMusicVoice [measure 105]                                  %! SM4
@@ -2601,14 +2601,14 @@
                             r16
                             
                             cs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             cs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             cs'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -2617,17 +2617,17 @@
                             r8
                             
                             cs'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             cs'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             r4
                             
                             cs'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         % PianoMusicVoice [measure 107]                                  %! SM4
@@ -2638,32 +2638,32 @@
                             r8
                             
                             cs'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             cs'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             cs'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \times 4/7 {
                             
                             r16
                             
                             cs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             cs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             r8
                             
                             cs'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         % PianoMusicVoice [measure 109]                                  %! SM4
@@ -2692,7 +2692,7 @@
                             r16
                             
                             cs'''16
-                            \ff                                                          %! IC1
+                            \ff                                                          %! IC
                             [
                             
                             cs'''16
@@ -2855,9 +2855,9 @@
                             r8
                             
                             cs'''8
-                            \revert Beam.positions
-                            \revert DynamicLineSpanner.staff-padding
-                            \revert TupletBracket.staff-padding
+                            \revert Beam.positions                                       %! OC
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
                         }
                         
                         % PianoMusicVoice [measure 124]                                  %! SM4
@@ -3010,12 +3010,12 @@
                         {
                             
                             % PercussionMusicVoice [measure 102]                         %! SM4
-                            \stopStaff                                                   %! IC1
-                            \once \override PercussionMusicStaff.StaffSymbol.line-count = 5 %! IC1
-                            \startStaff                                                  %! IC1
-                            \override Beam.positions = #'(-4 . -4)
-                            \override DynamicLineSpanner.staff-padding = #'6
-                            \override TupletBracket.staff-padding = #3
+                            \stopStaff                                                   %! IC
+                            \once \override PercussionMusicStaff.StaffSymbol.line-count = 5 %! IC
+                            \startStaff                                                  %! IC
+                            \override Beam.positions = #'(-4 . -4)                       %! OC
+                            \override DynamicLineSpanner.staff-padding = #'6             %! OC
+                            \override TupletBracket.staff-padding = #3                   %! OC
                             \set PercussionMusicStaff.instrumentName = \markup {         %! EXPLICIT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! EXPLICIT_INSTRUMENT:SM8
                                     #16                                                  %! EXPLICIT_INSTRUMENT:SM8
@@ -3091,33 +3091,33 @@
                             \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_REDRAW_INSTRUMENT_COLOR:SM6
                             
                             cs''8
-                            -\staccatissimo                                              %! IC1
-                            \ff                                                          %! IC1
+                            -\staccatissimo                                              %! IC
+                            \ff                                                          %! IC
                             [
                             
                             cs''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             cs''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \times 4/7 {
                             
                             r16
                             
                             cs''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             cs''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             r8
                             
                             cs''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         % PercussionMusicVoice [measure 103]                             %! SM4
@@ -3129,13 +3129,13 @@
                             r4
                             
                             cs''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             cs''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             cs''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
@@ -3143,15 +3143,15 @@
                             r4
                             
                             cs''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             cs''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             r2
                             
                             cs''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         % PercussionMusicVoice [measure 105]                             %! SM4
@@ -3163,30 +3163,30 @@
                             r4
                             
                             cs''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             cs''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             cs''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \times 4/7 {
                             
                             r16
                             
                             cs''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             cs''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             r8
                             
                             cs''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         % PercussionMusicVoice [measure 107]                             %! SM4
@@ -3197,14 +3197,14 @@
                             r16
                             
                             cs''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             cs''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             cs''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         \times 4/7 {
@@ -3212,24 +3212,24 @@
                             r8
                             
                             cs''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             cs''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             r4
                             
                             cs''4
-                            -\staccatissimo                                              %! IC1
-                            \revert Beam.positions
-                            \revert DynamicLineSpanner.staff-padding
-                            \revert TupletBracket.staff-padding
+                            -\staccatissimo                                              %! IC
+                            \revert Beam.positions                                       %! OC
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
                         }
                         
                         % PercussionMusicVoice [measure 109]                             %! SM4
-                        \once \override DynamicLineSpanner.staff-padding = #'3
+                        \once \override DynamicLineSpanner.staff-padding = #'3           %! OC
                         \set PercussionMusicStaff.forceClef = ##t                        %! EXPLICIT_CLEF:SM8
                         \clef "percussion"                                               %! EXPLICIT_CLEF:SM8
                         \once \override PercussionMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
@@ -3241,16 +3241,16 @@
                         \once \override NoteHead.color = #blue                           %! SM24
                         \once \override Stem.color = #blue                               %! SM24
                         c4
-                        \ff                                                              %! IC1
+                        \ff                                                              %! IC
                         ~
-                        ^ \markup {                                                      %! IC1
-                            \whiteout                                                    %! IC1
-                                \upright                                                 %! IC1
-                                    \override                                            %! IC1
-                                        #'(box-padding . 0.5)                            %! IC1
-                                        \box                                             %! IC1
-                                            "scraped slate"                              %! IC1
-                            }                                                            %! IC1
+                        ^ \markup {                                                      %! IC
+                            \whiteout                                                    %! IC
+                                \upright                                                 %! IC
+                                    \override                                            %! IC
+                                        #'(box-padding . 0.5)                            %! IC
+                                        \box                                             %! IC
+                                            "scraped slate"                              %! IC
+                            }                                                            %! IC
                         \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_COLOR_REDRAW:SM6
                         
                         % PercussionMusicVoice [measure 110]                             %! SM4
@@ -3327,13 +3327,13 @@
                         \times 4/5 {
                             
                             % PercussionMusicVoice [measure 116]                         %! SM4
-                            \override Beam.positions = #'(-4 . -4)
-                            \override DynamicLineSpanner.staff-padding = #'6
-                            \override TupletBracket.staff-padding = #3
+                            \override Beam.positions = #'(-4 . -4)                       %! OC
+                            \override DynamicLineSpanner.staff-padding = #'6             %! OC
+                            \override TupletBracket.staff-padding = #3                   %! OC
                             r8
                             
                             cs''8
-                            \ff                                                          %! IC1
+                            \ff                                                          %! IC
                             [
                             
                             cs''8
@@ -3439,13 +3439,13 @@
                             r4
                             
                             cs''4
-                            \revert Beam.positions
-                            \revert DynamicLineSpanner.staff-padding
-                            \revert TupletBracket.staff-padding
+                            \revert Beam.positions                                       %! OC
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
                         }
                         
                         % PercussionMusicVoice [measure 122]                             %! SM4
-                        \override DynamicLineSpanner.staff-padding = #'5
+                        \override DynamicLineSpanner.staff-padding = #'5                 %! OC
                         \set PercussionMusicStaff.forceClef = ##t                        %! REDUNDANT_CLEF:SM8
                         \clef "percussion"                                               %! REDUNDANT_CLEF:SM8
                         \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
@@ -3457,27 +3457,27 @@
                         \once \override NoteHead.color = #blue                           %! SM24
                         \once \override Stem.color = #blue                               %! SM24
                         c2.
-                        :32                                                              %! IC1
-                        \ppp                                                             %! IC1
+                        :32                                                              %! IC
+                        \ppp                                                             %! IC
                         ~
                         ^ \markup {
                             \column
                                 {
-                                    \line                                                %! IC1
-                                        {                                                %! IC1
-                                            \whiteout                                    %! IC1
-                                                \upright                                 %! IC1
-                                                    \override                            %! IC1
-                                                        #'(box-padding . 0.5)            %! IC1
-                                                        \box                             %! IC1
-                                                            "snare drum"                 %! IC1
-                                        }                                                %! IC1
-                                    \line                                                %! IC1
-                                        {                                                %! IC1
-                                            \whiteout                                    %! IC1
-                                                \upright                                 %! IC1
-                                                    "rapid roll with fingertips: keep speed constant during accelerando" %! IC1
-                                        }                                                %! IC1
+                                    \line                                                %! IC
+                                        {                                                %! IC
+                                            \whiteout                                    %! IC
+                                                \upright                                 %! IC
+                                                    \override                            %! IC
+                                                        #'(box-padding . 0.5)            %! IC
+                                                        \box                             %! IC
+                                                            "snare drum"                 %! IC
+                                        }                                                %! IC
+                                    \line                                                %! IC
+                                        {                                                %! IC
+                                            \whiteout                                    %! IC
+                                                \upright                                 %! IC
+                                                    "rapid roll with fingertips: keep speed constant during accelerando" %! IC
+                                        }                                                %! IC
                                 }
                             }
                         \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_COLOR_REDRAW:SM6
@@ -3490,7 +3490,7 @@
                         \once \override NoteHead.color = #blue                           %! SM24
                         \once \override Stem.color = #blue                               %! SM24
                         c2
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         ~
                         
                         \once \override Accidental.color = #blue                         %! SM24
@@ -3500,7 +3500,7 @@
                         \once \override NoteHead.color = #blue                           %! SM24
                         \once \override Stem.color = #blue                               %! SM24
                         c8
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         ~
                         
                         % PercussionMusicVoice [measure 124]                             %! SM4
@@ -3511,7 +3511,7 @@
                         \once \override NoteHead.color = #blue                           %! SM24
                         \once \override Stem.color = #blue                               %! SM24
                         c1
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         ~
                         
                         \once \override Accidental.color = #blue                         %! SM24
@@ -3521,7 +3521,7 @@
                         \once \override NoteHead.color = #blue                           %! SM24
                         \once \override Stem.color = #blue                               %! SM24
                         c8
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         ~
                         
                         % PercussionMusicVoice [measure 125]                             %! SM4
@@ -3532,7 +3532,7 @@
                         \once \override NoteHead.color = #blue                           %! SM24
                         \once \override Stem.color = #blue                               %! SM24
                         c1
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         ~
                         
                         \once \override Accidental.color = #blue                         %! SM24
@@ -3542,7 +3542,7 @@
                         \once \override NoteHead.color = #blue                           %! SM24
                         \once \override Stem.color = #blue                               %! SM24
                         c8
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         ~
                         
                         % PercussionMusicVoice [measure 126]                             %! SM4
@@ -3553,7 +3553,7 @@
                         \once \override NoteHead.color = #blue                           %! SM24
                         \once \override Stem.color = #blue                               %! SM24
                         c1
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         ~
                         
                         \once \override Accidental.color = #blue                         %! SM24
@@ -3563,7 +3563,7 @@
                         \once \override NoteHead.color = #blue                           %! SM24
                         \once \override Stem.color = #blue                               %! SM24
                         c8
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         ~
                         
                         % PercussionMusicVoice [measure 127]                             %! SM4
@@ -3574,7 +3574,7 @@
                         \once \override NoteHead.color = #blue                           %! SM24
                         \once \override Stem.color = #blue                               %! SM24
                         c2
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         ~
                         
                         \once \override Accidental.color = #blue                         %! SM24
@@ -3584,7 +3584,7 @@
                         \once \override NoteHead.color = #blue                           %! SM24
                         \once \override Stem.color = #blue                               %! SM24
                         c8
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         ~
                         
                         % PercussionMusicVoice [measure 128]                             %! SM4
@@ -3595,7 +3595,7 @@
                         \once \override NoteHead.color = #blue                           %! SM24
                         \once \override Stem.color = #blue                               %! SM24
                         c2.
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         ~
                         
                         % PercussionMusicVoice [measure 129]                             %! SM4
@@ -3606,7 +3606,7 @@
                         \once \override NoteHead.color = #blue                           %! SM24
                         \once \override Stem.color = #blue                               %! SM24
                         c2.
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         ~
                         
                         % PercussionMusicVoice [measure 130]                             %! SM4
@@ -3617,7 +3617,7 @@
                         \once \override NoteHead.color = #blue                           %! SM24
                         \once \override Stem.color = #blue                               %! SM24
                         c1
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         ~
                         
                         % PercussionMusicVoice [measure 131]                             %! SM4
@@ -3628,7 +3628,7 @@
                         \once \override NoteHead.color = #blue                           %! SM24
                         \once \override Stem.color = #blue                               %! SM24
                         c1
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         ~
                         
                         % PercussionMusicVoice [measure 132]                             %! SM4
@@ -3639,7 +3639,7 @@
                         \once \override NoteHead.color = #blue                           %! SM24
                         \once \override Stem.color = #blue                               %! SM24
                         c1
-                        :32                                                              %! IC1
+                        :32                                                              %! IC
                         ~
                         
                         \once \override Accidental.color = #blue                         %! SM24
@@ -3649,8 +3649,8 @@
                         \once \override NoteHead.color = #blue                           %! SM24
                         \once \override Stem.color = #blue                               %! SM24
                         c4
-                        :32                                                              %! IC1
-                        \revert DynamicLineSpanner.staff-padding
+                        :32                                                              %! IC
+                        \revert DynamicLineSpanner.staff-padding                         %! OC
                         
                     }
                 }
@@ -3693,15 +3693,15 @@
                         ^ \markup {
                             \column
                                 {
-                                    \line                                                %! IC1
-                                        {                                                %! IC1
-                                            \whiteout                                    %! IC1
-                                                \upright                                 %! IC1
-                                                    \override                            %! IC1
-                                                        #'(box-padding . 0.5)            %! IC1
-                                                        \box                             %! IC1
-                                                            "scraped slate"              %! IC1
-                                        }                                                %! IC1
+                                    \line                                                %! IC
+                                        {                                                %! IC
+                                            \whiteout                                    %! IC
+                                                \upright                                 %! IC
+                                                    \override                            %! IC
+                                                        #'(box-padding . 0.5)            %! IC
+                                                        \box                             %! IC
+                                                            "scraped slate"              %! IC
+                                        }                                                %! IC
                                     %%% \line                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                     %%%     {                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                     %%%         \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM10
@@ -3970,12 +3970,12 @@
                         \times 3/4 {
                             
                             % ViolinMusicVoice [measure 110]                             %! SM4
-                            \stopStaff                                                   %! IC1
-                            \once \override ViolinMusicStaff.StaffSymbol.line-count = 5  %! IC1
-                            \startStaff                                                  %! IC1
-                            \override Beam.positions = #'(-5 . -5)
-                            \override DynamicLineSpanner.staff-padding = #'7
-                            \override TupletBracket.staff-padding = #4
+                            \stopStaff                                                   %! IC
+                            \once \override ViolinMusicStaff.StaffSymbol.line-count = 5  %! IC
+                            \startStaff                                                  %! IC
+                            \override Beam.positions = #'(-5 . -5)                       %! OC
+                            \override DynamicLineSpanner.staff-padding = #'7             %! OC
+                            \override TupletBracket.staff-padding = #4                   %! OC
                             \set ViolinMusicStaff.instrumentName = \markup {             %! REDUNDANT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REDUNDANT_INSTRUMENT:SM8
                                     #16                                                  %! REDUNDANT_INSTRUMENT:SM8
@@ -3992,7 +3992,7 @@
                             %%% \override ViolinMusicStaff.Clef.color = ##f              %! EXPLICIT_CLEF_UNCOLOR:SM7
                             \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
                             af''8
-                            \ff                                                          %! IC1
+                            \ff                                                          %! IC
                             ^ \markup {
                                 \column
                                     {
@@ -4200,9 +4200,9 @@
                             cqf''4
                             \stopTrillSpan
                             \startTrillSpan
-                            \revert Beam.positions
-                            \revert DynamicLineSpanner.staff-padding
-                            \revert TupletBracket.staff-padding
+                            \revert Beam.positions                                       %! OC
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
                         }
                         
                         % ViolinMusicVoice [measure 117]                                 %! SM4
@@ -4228,7 +4228,7 @@
                         R1 * 5/8
                         
                         % ViolinMusicVoice [measure 124]                                 %! SM4
-                        \override DynamicLineSpanner.staff-padding = #'6
+                        \override DynamicLineSpanner.staff-padding = #'6                 %! OC
                         ftqs1.
                         \glissando
                         \<
@@ -4236,18 +4236,18 @@
                         ^ \markup {
                             \column
                                 {
-                                    \line                                                %! IC1
-                                        {                                                %! IC1
-                                            \whiteout                                    %! IC1
-                                                \upright                                 %! IC1
-                                                    "non flautando"                      %! IC1
-                                        }                                                %! IC1
-                                    \line                                                %! IC1
-                                        {                                                %! IC1
-                                            \whiteout                                    %! IC1
-                                                \upright                                 %! IC1
-                                                    "allow bowing to convey accelerando" %! IC1
-                                        }                                                %! IC1
+                                    \line                                                %! IC
+                                        {                                                %! IC
+                                            \whiteout                                    %! IC
+                                                \upright                                 %! IC
+                                                    "non flautando"                      %! IC
+                                        }                                                %! IC
+                                    \line                                                %! IC
+                                        {                                                %! IC
+                                            \whiteout                                    %! IC
+                                                \upright                                 %! IC
+                                                    "allow bowing to convey accelerando" %! IC
+                                        }                                                %! IC
                                 }
                             }
                         
@@ -4262,7 +4262,7 @@
                         
                         ftqs2
                         \fff
-                        \revert DynamicLineSpanner.staff-padding
+                        \revert DynamicLineSpanner.staff-padding                         %! OC
                         
                         % ViolinMusicVoice [measure 131]                                 %! SM4
                         R1 * 1
@@ -4368,18 +4368,18 @@
                         \times 4/3 {
                             
                             % ViolaMusicVoice [measure 94]                               %! SM4
-                            \override Beam.positions = #'(-5 . -5)
-                            \override DynamicLineSpanner.staff-padding = #'7
-                            \override TupletBracket.staff-padding = #4
+                            \override Beam.positions = #'(-5 . -5)                       %! OC
+                            \override DynamicLineSpanner.staff-padding = #'7             %! OC
+                            \override TupletBracket.staff-padding = #4                   %! OC
                             e4
                             \glissando
                             \>
                             \ff
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        "molto flautando"                                %! IC1
-                                }                                                        %! IC1
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        "molto flautando"                                %! IC
+                                }                                                        %! IC
                             
                             dtqs8
                         }
@@ -4505,9 +4505,9 @@
                             
                             % ViolaMusicVoice [measure 111]                              %! SM4
                             dqs2
-                            \revert Beam.positions
-                            \revert DynamicLineSpanner.staff-padding
-                            \revert TupletBracket.staff-padding
+                            \revert Beam.positions                                       %! OC
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
                         }
                         
                         % ViolaMusicVoice [measure 112]                                  %! SM4
@@ -4535,7 +4535,7 @@
                         R1 * 1/4
                         
                         % ViolaMusicVoice [measure 120]                                  %! SM4
-                        \override DynamicLineSpanner.staff-padding = #'5
+                        \override DynamicLineSpanner.staff-padding = #'5                 %! OC
                         btqs,1
                         \glissando
                         \<
@@ -4543,18 +4543,18 @@
                         ^ \markup {
                             \column
                                 {
-                                    \line                                                %! IC1
-                                        {                                                %! IC1
-                                            \whiteout                                    %! IC1
-                                                \upright                                 %! IC1
-                                                    "non flautando"                      %! IC1
-                                        }                                                %! IC1
-                                    \line                                                %! IC1
-                                        {                                                %! IC1
-                                            \whiteout                                    %! IC1
-                                                \upright                                 %! IC1
-                                                    "allow bowing to convey accelerando" %! IC1
-                                        }                                                %! IC1
+                                    \line                                                %! IC
+                                        {                                                %! IC
+                                            \whiteout                                    %! IC
+                                                \upright                                 %! IC
+                                                    "non flautando"                      %! IC
+                                        }                                                %! IC
+                                    \line                                                %! IC
+                                        {                                                %! IC
+                                            \whiteout                                    %! IC
+                                                \upright                                 %! IC
+                                                    "allow bowing to convey accelerando" %! IC
+                                        }                                                %! IC
                                 }
                             }
                         
@@ -4579,7 +4579,7 @@
                         
                         cqs2.
                         \fff
-                        \revert DynamicLineSpanner.staff-padding
+                        \revert DynamicLineSpanner.staff-padding                         %! OC
                         
                         % ViolaMusicVoice [measure 131]                                  %! SM4
                         R1 * 1
@@ -4689,11 +4689,11 @@
                             \glissando
                             \>
                             \ff
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        "molto flautando"                                %! IC1
-                                }                                                        %! IC1
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        "molto flautando"                                %! IC
+                                }                                                        %! IC
                             
                             ctqs,4
                         }
@@ -4845,7 +4845,7 @@
                         R1 * 1/4
                         
                         % CelloMusicVoice [measure 120]                                  %! SM4
-                        \override DynamicLineSpanner.staff-padding = #'5
+                        \override DynamicLineSpanner.staff-padding = #'5                 %! OC
                         b,,\breve
                         \glissando
                         \<
@@ -4853,18 +4853,18 @@
                         ^ \markup {
                             \column
                                 {
-                                    \line                                                %! IC1
-                                        {                                                %! IC1
-                                            \whiteout                                    %! IC1
-                                                \upright                                 %! IC1
-                                                    "non flautando"                      %! IC1
-                                        }                                                %! IC1
-                                    \line                                                %! IC1
-                                        {                                                %! IC1
-                                            \whiteout                                    %! IC1
-                                                \upright                                 %! IC1
-                                                    "allow bowing to convey accelerando" %! IC1
-                                        }                                                %! IC1
+                                    \line                                                %! IC
+                                        {                                                %! IC
+                                            \whiteout                                    %! IC
+                                                \upright                                 %! IC
+                                                    "non flautando"                      %! IC
+                                        }                                                %! IC
+                                    \line                                                %! IC
+                                        {                                                %! IC
+                                            \whiteout                                    %! IC
+                                                \upright                                 %! IC
+                                                    "allow bowing to convey accelerando" %! IC
+                                        }                                                %! IC
                                 }
                             }
                         
@@ -4897,7 +4897,7 @@
                         
                         % CelloMusicVoice [measure 130]                                  %! SM4
                         R1 * 1
-                        \revert DynamicLineSpanner.staff-padding
+                        \revert DynamicLineSpanner.staff-padding                         %! OC
                         
                         % CelloMusicVoice [measure 131]                                  %! SM4
                         R1 * 1

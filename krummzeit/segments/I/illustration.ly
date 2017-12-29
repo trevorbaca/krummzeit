@@ -470,6 +470,14 @@
                             %%%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
                             %%%                 [I.9]                                    %! STAGE_NUMBER_MARKUP:SM3
                             %%%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            \line                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                rit.                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -679,6 +687,14 @@
                             %%%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
                             %%%                 [I.13]                                   %! STAGE_NUMBER_MARKUP:SM3
                             %%%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            \line                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                accel.                                   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -839,8 +855,9 @@
                                         }                                                %! REAPPLIED_INSTRUMENT:SM8
                                 }                                                        %! REAPPLIED_INSTRUMENT:SM8
                             \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                            \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c''4.
-                            \ff                                                          %! IC
+                            \ff                                                          %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {
@@ -1047,8 +1064,9 @@
                                         }                                                %! REDUNDANT_INSTRUMENT:SM8
                                 }                                                        %! REDUNDANT_INSTRUMENT:SM8
                             \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
+                            \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             f8
-                            \ff                                                          %! IC
+                            \ff                                                          %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {
@@ -1184,8 +1202,9 @@
                                     }                                                    %! REDUNDANT_INSTRUMENT:SM8
                             }                                                            %! REDUNDANT_INSTRUMENT:SM8
                         \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         fs2.
-                        \ff                                                              %! IC
+                        \ff                                                              %! REDUNDANT_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
@@ -1926,9 +1945,10 @@
                             \once \override PianoMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                             %%% \override PianoMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
+                            \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             fs'''4.
                             :32                                                          %! IC
-                            \fff                                                         %! IC
+                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {
@@ -2362,79 +2382,79 @@
                         R1 * 5/8
                         
                         % PianoMusicVoice [measure 298]                                  %! SM4
-                        \set PianoMusicStaff.instrumentName = \markup {                  %! EXPLICIT_INSTRUMENT:SM8
-                            \hcenter-in                                                  %! EXPLICIT_INSTRUMENT:SM8
-                                #16                                                      %! EXPLICIT_INSTRUMENT:SM8
-                                Piano                                                    %! EXPLICIT_INSTRUMENT:SM8
-                            }                                                            %! EXPLICIT_INSTRUMENT:SM8
-                        \set PianoMusicStaff.shortInstrumentName = \markup {             %! EXPLICIT_INSTRUMENT:SM8
-                            \hcenter-in                                                  %! EXPLICIT_INSTRUMENT:SM8
-                                #10                                                      %! EXPLICIT_INSTRUMENT:SM8
-                                Pf.                                                      %! EXPLICIT_INSTRUMENT:SM8
-                            }                                                            %! EXPLICIT_INSTRUMENT:SM8
+                        \set PianoMusicStaff.instrumentName = \markup {                  %! REDUNDANT_INSTRUMENT:SM8
+                            \hcenter-in                                                  %! REDUNDANT_INSTRUMENT:SM8
+                                #16                                                      %! REDUNDANT_INSTRUMENT:SM8
+                                Piano                                                    %! REDUNDANT_INSTRUMENT:SM8
+                            }                                                            %! REDUNDANT_INSTRUMENT:SM8
+                        \set PianoMusicStaff.shortInstrumentName = \markup {             %! REDUNDANT_INSTRUMENT:SM8
+                            \hcenter-in                                                  %! REDUNDANT_INSTRUMENT:SM8
+                                #10                                                      %! REDUNDANT_INSTRUMENT:SM8
+                                Pf.                                                      %! REDUNDANT_INSTRUMENT:SM8
+                            }                                                            %! REDUNDANT_INSTRUMENT:SM8
                         \set PianoMusicStaff.forceClef = ##t                             %! REDUNDANT_CLEF:SM8
                         \clef "bass"                                                     %! REDUNDANT_CLEF:SM8
+                        \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
                         \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
                         %%% \override PianoMusicStaff.Clef.color = ##f                   %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
-                        \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
                         r8
                         ^ \markup {
                             \column
                                 {
-                                    %%% \line                                            %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %%%     {                                            %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %%%         \vcenter                                 %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %%%             (“Piano”                             %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %%%         \vcenter                                 %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %%%             \hcenter-in                          %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %%%                 #16                              %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %%%                 Piano                            %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %%%         \concat                                  %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %%%             {                                    %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %%%                 \vcenter                         %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %%%                     \hcenter-in                  %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %%%                         #10                      %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %%%                         Pf.                      %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %%%                 \vcenter                         %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %%%                     )                            %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %%%             }                                    %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %%%     }                                            %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    \line                                                %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                        {                                                %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            \with-color                                  %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                #(x11-color 'blue)                       %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                {                                        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    \vcenter                             %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        (“Piano”                         %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    \vcenter                             %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \hcenter-in                      %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            #16                          %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            Piano                        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    \concat                              %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        {                                %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \vcenter                     %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \hcenter-in              %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    #10                  %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    Pf.                  %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \vcenter                     %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                )                        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        }                                %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                }                                        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                        }                                                %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%% \line                                            %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                    %%%     {                                            %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                    %%%         \vcenter                                 %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                    %%%             (“Piano”                             %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                    %%%         \vcenter                                 %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                    %%%             \hcenter-in                          %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                    %%%                 #16                              %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                    %%%                 Piano                            %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                    %%%         \concat                                  %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                    %%%             {                                    %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                    %%%                 \vcenter                         %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                    %%%                     \hcenter-in                  %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                    %%%                         #10                      %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                    %%%                         Pf.                      %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                    %%%                 \vcenter                         %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                    %%%                     )                            %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                    %%%             }                                    %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                    %%%     }                                            %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                    \line                                                %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                        {                                                %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                            \with-color                                  %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                #(x11-color 'DeepPink1)                  %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                {                                        %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                    \vcenter                             %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        (“Piano”                         %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                    \vcenter                             %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        \hcenter-in                      %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            #16                          %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            Piano                        %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                    \concat                              %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        {                                %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            \vcenter                     %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                \hcenter-in              %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                    #10                  %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                    Pf.                  %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            \vcenter                     %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                )                        %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        }                                %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                }                                        %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                        }                                                %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                 }
                             }
-                        \set PianoMusicStaff.instrumentName = \markup {                  %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                            \hcenter-in                                                  %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                #16                                                      %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                Piano                                                    %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                            }                                                            %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                        \set PianoMusicStaff.shortInstrumentName = \markup {             %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                            \hcenter-in                                                  %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                #10                                                      %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                Pf.                                                      %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                            }                                                            %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
+                        \set PianoMusicStaff.instrumentName = \markup {                  %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                            \hcenter-in                                                  %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                                #16                                                      %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                                Piano                                                    %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                            }                                                            %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                        \set PianoMusicStaff.shortInstrumentName = \markup {             %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                            \hcenter-in                                                  %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                                #10                                                      %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                                Pf.                                                      %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                            }                                                            %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                        \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
                         \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink4)   %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
-                        \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! REDRAWN_EXPLICIT_INSTRUMENT_COLOR:SM6
                         \times 2/3 {
                             
                             \ottava #-1
@@ -5405,9 +5425,10 @@
                             %%% \override PercussionMusicStaff.Clef.color = ##f          %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
                             \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
+                            \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             fs''8
                             :32                                                          %! IC
-                            \fff                                                         %! IC
+                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {
@@ -5790,9 +5811,10 @@
                             %%% \override ViolinMusicStaff.Clef.color = ##f              %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             ef''8
                             :32                                                          %! IC
-                            \fff                                                         %! IC
+                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
                             [
                             ^ \markup {
                                 \column
@@ -6387,9 +6409,10 @@
                             % ViolinMusicVoice [measure 312]                             %! SM4
                             \override DynamicLineSpanner.staff-padding = #'6             %! OC
                             \override TupletBracket.staff-padding = #2                   %! OC
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             e'''8
                             -\staccatissimo                                              %! IC
-                            \fff                                                         %! IC
+                            \fff                                                         %! REDUNDANT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -6454,9 +6477,10 @@
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                             %%% \override ViolaMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             a8
                             :32                                                          %! IC
-                            \fff                                                         %! IC
+                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
                             [
                             ^ \markup {
                                 \column
@@ -6783,9 +6807,10 @@
                             % ViolaMusicVoice [measure 312]                              %! SM4
                             \override DynamicLineSpanner.staff-padding = #'6             %! OC
                             \override TupletBracket.staff-padding = #2                   %! OC
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             ef'''8
                             -\staccatissimo                                              %! IC
-                            \fff                                                         %! IC
+                            \fff                                                         %! REDUNDANT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -6846,9 +6871,10 @@
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             eqf,8
                             :32                                                          %! IC
-                            \fff                                                         %! IC
+                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
                             [
                             ^ \markup {
                                 \column
@@ -7160,9 +7186,10 @@
                             % CelloMusicVoice [measure 312]                              %! SM4
                             \override DynamicLineSpanner.staff-padding = #'6             %! OC
                             \override TupletBracket.staff-padding = #2                   %! OC
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             f'''8
                             -\staccatissimo                                              %! IC
-                            \fff                                                         %! IC
+                            \fff                                                         %! REDUNDANT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC

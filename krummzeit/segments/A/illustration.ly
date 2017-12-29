@@ -415,6 +415,72 @@
                                                 " = 67.5"                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         }                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                            \line                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        {                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \scale                                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                #'(0.75 . 0.75)                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                \score                                   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    {                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        \new Score \with {               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        } <<                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            \new RhythmicStaff \with {   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override Stem.length = #5 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.bracket-visibility = ##t %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.direction = #up %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.padding = #1.25 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                tupletFullLength = ##t   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            } {                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                c4                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            }                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        >>                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        \layout {                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            indent = #0                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            ragged-right = ##t           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        }                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    }                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            =                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \hspace                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                #-0.5                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \scale                                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                #'(0.75 . 0.75)                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                \score                                   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    {                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        \new Score \with {               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        } <<                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            \new RhythmicStaff \with {   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override Stem.length = #5 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.bracket-visibility = ##t %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.direction = #up %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.padding = #1.25 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                tupletFullLength = ##t   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            } {                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                c8                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            }                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        >>                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        \layout {                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            indent = #0                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            ragged-right = ##t           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        }                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    }                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        }                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -592,6 +658,14 @@
                             %%%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
                             %%%                 [A.10]                                   %! STAGE_NUMBER_MARKUP:SM3
                             %%%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            \line                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                accel.                                   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -820,6 +894,72 @@
                                                 }                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         }                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                            \line                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        {                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \scale                                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                #'(0.75 . 0.75)                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                \score                                   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    {                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        \new Score \with {               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        } <<                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            \new RhythmicStaff \with {   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override Stem.length = #5 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.bracket-visibility = ##t %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.direction = #up %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.padding = #1.25 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                tupletFullLength = ##t   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            } {                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                c4.                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            }                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        >>                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        \layout {                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            indent = #0                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            ragged-right = ##t           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        }                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    }                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            =                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \hspace                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                #-0.5                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \scale                                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                #'(0.75 . 0.75)                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                \score                                   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    {                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        \new Score \with {               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        } <<                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            \new RhythmicStaff \with {   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override Stem.length = #5 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.bracket-visibility = ##t %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.direction = #up %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.padding = #1.25 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                tupletFullLength = ##t   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            } {                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                c4                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            }                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        >>                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        \layout {                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            indent = #0                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            ragged-right = ##t           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        }                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    }                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        }                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -1001,6 +1141,14 @@
                             %%%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
                             %%%                 [A.16]                                   %! STAGE_NUMBER_MARKUP:SM3
                             %%%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            \line                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'DeepPink1)                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                accel.                                   %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -1233,6 +1381,75 @@
                                                     =                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                     108                                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                 }                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        }                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                            \line                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        {                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \scale                                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                #'(0.75 . 0.75)                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                \score                                   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    {                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        \new Score \with {               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        } <<                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            \new RhythmicStaff \with {   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override Stem.length = #5 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.bracket-visibility = ##t %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.direction = #up %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.padding = #1.25 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                tupletFullLength = ##t   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            } {                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                c4                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            }                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        >>                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        \layout {                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            indent = #0                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            ragged-right = ##t           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        }                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    }                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            =                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \hspace                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                #-0.5                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \scale                                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                #'(0.75 . 0.75)                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                \score                                   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    {                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        \new Score \with {               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        } <<                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            \new RhythmicStaff \with {   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override Stem.length = #5 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.bracket-visibility = ##t %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.direction = #up %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.padding = #1.25 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                tupletFullLength = ##t   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            } {                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \tweak edge-height #'(0.7 . 0) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \times 4/5 {             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    c4                   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                }                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            }                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        >>                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        \layout {                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            indent = #0                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                            ragged-right = ##t           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        }                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    }                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         }                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
@@ -2638,9 +2855,10 @@
                                         }                                                %! EXPLICIT_INSTRUMENT:SM8
                                 }                                                        %! EXPLICIT_INSTRUMENT:SM8
                             \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
+                            \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             cs''4.
                             -\staccato                                                   %! IC
-                            \mp                                                          %! IC
+                            \mp                                                          %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {
@@ -2941,9 +3159,10 @@
                             
                             % ClarinetMusicVoice [measure 29]                            %! SM4
                             \override DynamicLineSpanner.staff-padding = #'3             %! OC
+                            \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             d''4.
                             -\staccato                                                   %! IC
-                            \f                                                           %! IC
+                            \f                                                           %! EXPLICIT_DYNAMIC:SM8
                         }
                         \times 2/3 {
                             
@@ -3882,8 +4101,9 @@
                             }                                                            %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
                         \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
                         
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         cs''4.
-                        \f                                                               %! IC
+                        \f                                                               %! REDUNDANT_DYNAMIC:SM8
                         \glissando
                         
                         btqs'4.
@@ -5350,9 +5570,9 @@
                             }                                                            %! EXPLICIT_INSTRUMENT:SM8
                         \set PianoMusicStaff.forceClef = ##t                             %! EXPLICIT_CLEF:SM8
                         \clef "bass"                                                     %! EXPLICIT_CLEF:SM8
+                        \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
                         \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue)  %! EXPLICIT_CLEF_COLOR:SM6
                         %%% \override PianoMusicStaff.Clef.color = ##f                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
-                        \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
                         r16
                         ^ \markup {
                             \column
@@ -5409,8 +5629,8 @@
                                 #10                                                      %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
                                 Pf.                                                      %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
                             }                                                            %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                        \override PianoMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                         \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! REDRAWN_EXPLICIT_INSTRUMENT_COLOR:SM6
+                        \override PianoMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                         
                         \ottava #-1
                         \once \override Accidental.stencil = ##f
@@ -5650,9 +5870,10 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
+                            \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             g''16
                             -\staccatissimo                                              %! IC
-                            \fff                                                         %! IC
+                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
                             [
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
@@ -6960,9 +7181,10 @@
                         {
                             
                             % ViolinMusicVoice [measure 21]                              %! SM4
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             f''4.
                             -\staccato                                                   %! IC
-                            \mp                                                          %! IC
+                            \mp                                                          %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -7140,9 +7362,10 @@
                                     Vn.                                                  %! REDUNDANT_INSTRUMENT:SM8
                                 }                                                        %! REDUNDANT_INSTRUMENT:SM8
                             \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             fs''4.
                             -\staccato                                                   %! IC
-                            \f                                                           %! IC
+                            \f                                                           %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {
@@ -8027,9 +8250,10 @@
                         
                         % ViolinMusicVoice [measure 51]                                  %! SM4
                         \override DynamicLineSpanner.staff-padding = #'3                 %! OC
+                        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         g''4.
                         -\downbow                                                        %! IC
-                        \f                                                               %! IC
+                        \f                                                               %! REDUNDANT_DYNAMIC:SM8
                         \glissando
                         ^ \markup {                                                      %! IC
                             \whiteout                                                    %! IC
@@ -8364,9 +8588,10 @@
                             \override Beam.positions = #'(-4 . -4)                       %! OC
                             \override DynamicLineSpanner.staff-padding = #'6             %! OC
                             \override TupletBracket.staff-padding = #3                   %! OC
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             b''8
                             -\staccatissimo                                              %! IC
-                            \fff                                                         %! IC
+                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -8803,17 +9028,19 @@
                         \revert TupletBracket.staff-padding                              %! OC
                         
                         % ViolinMusicVoice [measure 85]                                  %! SM4
-                        \stopStaff                                                       %! IC
-                        \once \override ViolinMusicStaff.StaffSymbol.line-count = 1      %! IC
-                        \startStaff                                                      %! IC
+                        \stopStaff                                                       %! EXPLICIT_STAFF_LINES:SM8
+                        \once \override ViolinMusicStaff.StaffSymbol.line-count = 1      %! EXPLICIT_STAFF_LINES:SM8
+                        \startStaff                                                      %! EXPLICIT_STAFF_LINES:SM8
                         \override RepeatTie.direction = #up                              %! OC
                         \override DynamicLineSpanner.staff-padding = #'3                 %! OC
                         \set ViolinMusicStaff.forceClef = ##t                            %! EXPLICIT_CLEF:SM8
                         \clef "percussion"                                               %! EXPLICIT_CLEF:SM8
                         \once \override ViolinMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                         %%% \override ViolinMusicStaff.Clef.color = ##f                  %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
+                        \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
+                        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         c'2.
-                        \mf                                                              %! IC
+                        \mf                                                              %! EXPLICIT_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
@@ -8879,8 +9106,9 @@
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                             %%% \override ViolaMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             d4
-                            \mf                                                          %! IC
+                            \mf                                                          %! EXPLICIT_DYNAMIC:SM8
                             \glissando
                             ^ \markup {
                                 \column
@@ -9003,8 +9231,9 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             e4
-                            \f                                                           %! IC
+                            \f                                                           %! EXPLICIT_DYNAMIC:SM8
                             \glissando
                             ^ \markup {
                                 \column
@@ -9068,8 +9297,9 @@
                         \times 9/5 {
                             
                             % ViolaMusicVoice [measure 36]                               %! SM4
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             g4
-                            \ff                                                          %! IC
+                            \ff                                                          %! EXPLICIT_DYNAMIC:SM8
                             \glissando
                             
                             ftqs2.
@@ -9131,9 +9361,10 @@
                         r4
                         \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                         
+                        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         af''4.
                         -\downbow                                                        %! IC
-                        \f                                                               %! IC
+                        \f                                                               %! EXPLICIT_DYNAMIC:SM8
                         \glissando
                         ^ \markup {                                                      %! IC
                             \whiteout                                                    %! IC
@@ -9433,9 +9664,10 @@
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %%% \override ViolaMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             b''8
                             -\staccatissimo                                              %! IC
-                            \fff                                                         %! IC
+                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -10002,8 +10234,9 @@
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             e,2.
-                            \mf                                                          %! IC
+                            \mf                                                          %! EXPLICIT_DYNAMIC:SM8
                             \glissando
                             ^ \markup {
                                 \column
@@ -10115,8 +10348,9 @@
                         \times 6/5 {
                             
                             % CelloMusicVoice [measure 25]                               %! SM4
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             f,2.
-                            \f                                                           %! IC
+                            \f                                                           %! EXPLICIT_DYNAMIC:SM8
                             \glissando
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
@@ -10170,8 +10404,9 @@
                         \times 9/7 {
                             
                             % CelloMusicVoice [measure 36]                               %! SM4
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             a,1
-                            \ff                                                          %! IC
+                            \ff                                                          %! EXPLICIT_DYNAMIC:SM8
                             \glissando
                             
                             gqs,4
@@ -10233,9 +10468,10 @@
                         r4
                         \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                         
+                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         e''4.
                         -\downbow                                                        %! IC
-                        \f                                                               %! IC
+                        \f                                                               %! EXPLICIT_DYNAMIC:SM8
                         \glissando
                         ^ \markup {                                                      %! IC
                             \whiteout                                                    %! IC
@@ -10604,9 +10840,10 @@
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             cs''8
                             -\staccatissimo                                              %! IC
-                            \fff                                                         %! IC
+                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC

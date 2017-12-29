@@ -1523,9 +1523,9 @@
                     \context OboeMusicVoice = "OboeMusicVoice" {
                         
                         % OboeMusicVoice [measure 14]                                    %! SM4
-                        \override Beam.positions = #'(-5 . -5)
-                        \override DynamicLineSpanner.staff-padding = #'7
-                        \override TupletBracket.staff-padding = #4
+                        \override Beam.positions = #'(-5 . -5)                           %! OC
+                        \override DynamicLineSpanner.staff-padding = #'7                 %! OC
+                        \override TupletBracket.staff-padding = #4                       %! OC
                         \set OboeMusicStaff.instrumentName = \markup {                   %! REAPPLIED_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 #16                                                      %! REAPPLIED_INSTRUMENT:SM8
@@ -1672,7 +1672,7 @@
                                 }                                                        %! REDUNDANT_INSTRUMENT:SM8
                             \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
                             ef'4.
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             \<
                             \f
                             ^ \markup {
@@ -1735,13 +1735,13 @@
                         \times 2/3 {
                             
                             e'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -1752,35 +1752,35 @@
                         \times 6/10 {
                             
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             fs'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             g'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             ef'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             g'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -1790,10 +1790,10 @@
                             bf'4
                             
                             a'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -1804,46 +1804,46 @@
                             
                             % OboeMusicVoice [measure 38]                                %! SM4
                             fs'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         \times 8/12 {
                             
                             b'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             e'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             g'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             d''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -1855,13 +1855,13 @@
                             
                             % OboeMusicVoice [measure 39]                                %! SM4
                             a'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             ef'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -1877,55 +1877,55 @@
                             [
                             
                             fs'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             b'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             ef'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ]
                         }
                         \times 2/3 {
                             
                             cs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             g'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         \times 2/3 {
                             
                             % OboeMusicVoice [measure 41]                                %! SM4
                             bf'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             d''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -1935,17 +1935,17 @@
                         {
                             
                             d''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             e''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             g''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             b'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             \ff
                             ]
@@ -1961,51 +1961,51 @@
                             b'4
                             
                             bf'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             ef''4.
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         \times 8/12 {
                             
                             a'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             cs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             ef''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             b'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             b'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             ef''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             g'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -2013,7 +2013,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             af''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                             - \tweak color #red                                          %! SM14
@@ -2039,15 +2039,15 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             af''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             fs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -2063,44 +2063,44 @@
                             [
                             
                             g''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             d''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
                             
                             a''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
@@ -2112,7 +2112,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             af''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -2122,12 +2122,12 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             af''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             bf'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -2138,41 +2138,41 @@
                         \times 8/12 {
                             
                             fs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             af''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             d''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             b''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -2187,49 +2187,49 @@
                             a''4
                             
                             b''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             e''4.
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/10 {
                             
                             a''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             fs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             g''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             d''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -2239,22 +2239,22 @@
                             bf'4
                             
                             c''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             cs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         \times 2/3 {
                             
                             % OboeMusicVoice [measure 49]                                %! SM4
                             d''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -2269,7 +2269,7 @@
                             [
                             
                             d''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -2277,7 +2277,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             bf''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -2287,7 +2287,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             bf''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ]
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
@@ -2295,13 +2295,13 @@
                         \times 2/3 {
                             
                             fs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         
                         % OboeMusicVoice [measure 51]                                    %! SM4
@@ -2417,9 +2417,9 @@
                         
                         % OboeMusicVoice [measure 88]                                    %! SM4
                         R1 * 5/4
-                        \revert Beam.positions
-                        \revert DynamicLineSpanner.staff-padding
-                        \revert TupletBracket.staff-padding
+                        \revert Beam.positions                                           %! OC
+                        \revert DynamicLineSpanner.staff-padding                         %! OC
+                        \revert TupletBracket.staff-padding                              %! OC
                         
                     }
                 }
@@ -2428,8 +2428,8 @@
                     \context ClarinetMusicVoice = "ClarinetMusicVoice" {
                         
                         % ClarinetMusicVoice [measure 14]                                %! SM4
-                        \override Beam.positions = #'(-4 . -4)
-                        \override TupletBracket.staff-padding = #3
+                        \override Beam.positions = #'(-4 . -4)                           %! OC
+                        \override TupletBracket.staff-padding = #3                       %! OC
                         \set ClarinetMusicStaff.instrumentName = \markup {               %! REAPPLIED_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 #16                                                      %! REAPPLIED_INSTRUMENT:SM8
@@ -2544,7 +2544,7 @@
                         {
                             
                             % ClarinetMusicVoice [measure 18]                            %! SM4
-                            \override DynamicLineSpanner.staff-padding = #'3
+                            \override DynamicLineSpanner.staff-padding = #'3             %! OC
                             \set ClarinetMusicStaff.instrumentName = \markup {           %! EXPLICIT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! EXPLICIT_INSTRUMENT:SM8
                                     #16                                                  %! EXPLICIT_INSTRUMENT:SM8
@@ -2565,8 +2565,8 @@
                                 }                                                        %! EXPLICIT_INSTRUMENT:SM8
                             \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
                             cs''4.
-                            -\staccato                                                   %! IC1
-                            \mp                                                          %! IC1
+                            -\staccato                                                   %! IC
+                            \mp                                                          %! IC
                             ^ \markup {
                                 \column
                                     {
@@ -2651,13 +2651,13 @@
                         \times 2/3 {
                             
                             fs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             g''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             gs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -2668,17 +2668,17 @@
                         \times 3/4 {
                             
                             ds''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             c''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             d''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -2688,10 +2688,10 @@
                             e''4
                             
                             ds''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -2701,25 +2701,25 @@
                         {
                             
                             c''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             ds''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             fs''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             g''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             f''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -2731,13 +2731,13 @@
                         \times 2/3 {
                             
                             e''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -2746,7 +2746,7 @@
                             a''4
                             
                             e''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -2756,30 +2756,30 @@
                             [
                             
                             as'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             cs''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             gs''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ]
                         }
                         \times 2/3 {
                             
                             ds''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             f''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             c''4.
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -2790,17 +2790,17 @@
                         {
                             
                             f''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             gs''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             as'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             cs''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -2818,20 +2818,20 @@
                             
                             % ClarinetMusicVoice [measure 23]                            %! SM4
                             e''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             % ClarinetMusicVoice [measure 24]                            %! SM4
                             c''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             f''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -2840,16 +2840,16 @@
                             f''4
                             
                             cs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             d''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             as'4
-                            -\staccato                                                   %! IC1
-                            \revert DynamicLineSpanner.staff-padding
+                            -\staccato                                                   %! IC
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
                         }
                         
                         % ClarinetMusicVoice [measure 25]                                %! SM4
@@ -2866,21 +2866,21 @@
                         {
                             
                             % ClarinetMusicVoice [measure 29]                            %! SM4
-                            \override DynamicLineSpanner.staff-padding = #'3
+                            \override DynamicLineSpanner.staff-padding = #'3             %! OC
                             d''4.
-                            -\staccato                                                   %! IC1
-                            \f                                                           %! IC1
+                            -\staccato                                                   %! IC
+                            \f                                                           %! IC
                         }
                         \times 2/3 {
                             
                             g''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             gs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -2891,17 +2891,17 @@
                         \times 3/4 {
                             
                             e''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             cs''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             ds''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             f''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -2911,7 +2911,7 @@
                             f''4
                             
                             e''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -2919,7 +2919,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             cs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
@@ -2943,27 +2943,27 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             cs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             e''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             g''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             gs''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             cs''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -2975,13 +2975,13 @@
                         \times 2/3 {
                             
                             f''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             g'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             as'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -2990,7 +2990,7 @@
                             as'4
                             
                             f''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -3000,30 +3000,30 @@
                             [
                             
                             b'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             d''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ]
                         }
                         \times 2/3 {
                             
                             e''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             f''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             cs''4.
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -3034,17 +3034,17 @@
                         {
                             
                             fs''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             a''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             b'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             d''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -3067,7 +3067,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             f''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -3077,7 +3077,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             f''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                         }
@@ -3085,11 +3085,11 @@
                             
                             % ClarinetMusicVoice [measure 35]                            %! SM4
                             cs''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             fs''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -3098,10 +3098,10 @@
                             fs''4
                             
                             d''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
@@ -3111,13 +3111,13 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             f''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
-                            \revert Beam.positions
-                            \revert TupletBracket.staff-padding
-                            \revert DynamicLineSpanner.staff-padding
+                            \revert Beam.positions                                       %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
                         }
                         {
                             
@@ -3139,7 +3139,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             f'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
@@ -3163,34 +3163,34 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             f'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             fs'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
                             
                             g'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             as4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             % ClarinetMusicVoice [measure 37]                            %! SM4
                             ds'4.
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -3201,14 +3201,14 @@
                             
                             % ClarinetMusicVoice [measure 38]                            %! SM4
                             e'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             b8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -3216,7 +3216,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             g'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                             - \tweak color #red                                          %! SM14
@@ -3254,7 +3254,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             g'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                         }
@@ -3267,34 +3267,34 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             g'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             ds'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             f'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             cs''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             f'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             cs'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -3304,15 +3304,15 @@
                             cs'4
                             
                             as'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             gs'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             f'4.
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -3328,41 +3328,41 @@
                             [
                             
                             g'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             f'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             gs'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             g'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             ds''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             \ff
                             ]
                         }
                         \times 2/3 {
                             
                             % ClarinetMusicVoice [measure 42]                            %! SM4
-                            \override Beam.positions = #'(-4 . -4)
-                            \override TupletBracket.staff-padding = #3
+                            \override Beam.positions = #'(-4 . -4)                       %! OC
+                            \override TupletBracket.staff-padding = #3                   %! OC
                             as'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -3370,7 +3370,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             f'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                         }
@@ -3382,7 +3382,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             f''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
@@ -3404,7 +3404,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             f''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                         }
@@ -3412,7 +3412,7 @@
                         \times 3/4 {
                             
                             ds''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             \once \override Accidental.color = #red
@@ -3421,7 +3421,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             cs''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -3431,12 +3431,12 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             cs''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             g'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -3453,26 +3453,26 @@
                         {
                             
                             a'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             as'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             % ClarinetMusicVoice [measure 44]                            %! SM4
                             cs''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             g''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             ds''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             gs''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -3486,7 +3486,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             as'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -3496,7 +3496,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             as'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                         }
@@ -3504,7 +3504,7 @@
                             
                             % ClarinetMusicVoice [measure 45]                            %! SM4
                             b'4.
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -3519,24 +3519,24 @@
                             [
                             
                             cs''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             f''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ]
                         }
                         {
                             
                             as'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             gs''4.
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -3547,17 +3547,17 @@
                         {
                             
                             as'8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             g''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             ds''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -3566,10 +3566,10 @@
                             e''4
                             
                             f''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             cs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         \times 2/3 {
@@ -3578,35 +3578,35 @@
                             cs''4
                             
                             ds''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             % ClarinetMusicVoice [measure 49]                            %! SM4
                             g''4.
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             
                             c''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             cs''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             f''8
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ]
-                            \revert Beam.positions
-                            \revert TupletBracket.staff-padding
+                            \revert Beam.positions                                       %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
                         }
                         
                         % ClarinetMusicVoice [measure 50]                                %! SM4
@@ -3706,7 +3706,7 @@
                         R1 * 9/8
                         
                         % ClarinetMusicVoice [measure 82]                                %! SM4
-                        \override DynamicLineSpanner.staff-padding = #'3
+                        \override DynamicLineSpanner.staff-padding = #'3                 %! OC
                         \set ClarinetMusicStaff.instrumentName = \markup {               %! REDUNDANT_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REDUNDANT_INSTRUMENT:SM8
                                 #16                                                      %! REDUNDANT_INSTRUMENT:SM8
@@ -3809,7 +3809,7 @@
                         \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! REDUNDANT_REDRAW_INSTRUMENT_COLOR:SM6
                         
                         cs''4.
-                        \f                                                               %! IC1
+                        \f                                                               %! IC
                         \glissando
                         
                         btqs'4.
@@ -3859,7 +3859,7 @@
                         \glissando
                         
                         d''4.
-                        \revert DynamicLineSpanner.staff-padding
+                        \revert DynamicLineSpanner.staff-padding                         %! OC
                         
                     }
                 }
@@ -3871,9 +3871,9 @@
                         \times 4/7 {
                             
                             % PianoMusicVoice [measure 14]                               %! SM4
-                            \override Beam.positions = #'(-4 . -4)
-                            \override DynamicLineSpanner.staff-padding = #'6
-                            \override TupletBracket.staff-padding = #3
+                            \override Beam.positions = #'(-4 . -4)                       %! OC
+                            \override DynamicLineSpanner.staff-padding = #'6             %! OC
+                            \override TupletBracket.staff-padding = #3                   %! OC
                             \set PianoMusicStaff.instrumentName = \markup {              %! EXPLICIT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! EXPLICIT_INSTRUMENT:SM8
                                     #16                                                  %! EXPLICIT_INSTRUMENT:SM8
@@ -4652,15 +4652,15 @@
                         fs'4
                         
                         d'''4
-                        \revert Beam.positions
-                        \revert DynamicLineSpanner.staff-padding
-                        \revert TupletBracket.staff-padding
+                        \revert Beam.positions                                           %! OC
+                        \revert DynamicLineSpanner.staff-padding                         %! OC
+                        \revert TupletBracket.staff-padding                              %! OC
                         {
                             
                             % PianoMusicVoice [measure 36]                               %! SM4
-                            \override Beam.positions = #'(-5 . -5)
-                            \override DynamicLineSpanner.staff-padding = #'7
-                            \override TupletBracket.staff-padding = #4
+                            \override Beam.positions = #'(-5 . -5)                       %! OC
+                            \override DynamicLineSpanner.staff-padding = #'7             %! OC
+                            \override TupletBracket.staff-padding = #4                   %! OC
                             \set PianoMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "bass"                                                 %! EXPLICIT_CLEF:SM8
                             \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
@@ -5219,9 +5219,9 @@
                             
                             fs''16
                             ]
-                            \revert Beam.positions
-                            \revert DynamicLineSpanner.staff-padding
-                            \revert TupletBracket.staff-padding
+                            \revert Beam.positions                                       %! OC
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
                         }
                         
                         % PianoMusicVoice [measure 45]                                   %! SM4
@@ -5561,9 +5561,9 @@
                         \times 3/5 {
                             
                             % PianoMusicVoice [measure 70]                               %! SM4
-                            \override Beam.positions = #'(-5 . -5)
-                            \override DynamicLineSpanner.staff-padding = #'7
-                            \override TupletBracket.staff-padding = #4
+                            \override Beam.positions = #'(-5 . -5)                       %! OC
+                            \override DynamicLineSpanner.staff-padding = #'7             %! OC
+                            \override TupletBracket.staff-padding = #4                   %! OC
                             \set PianoMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
                             \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
@@ -5577,8 +5577,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             g''16
-                            -\staccatissimo                                              %! IC1
-                            \fff                                                         %! IC1
+                            -\staccatissimo                                              %! IC
+                            \fff                                                         %! IC
                             [
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
@@ -5589,19 +5589,19 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             g''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             cs''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             a''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         r2.
@@ -5612,7 +5612,7 @@
                             r4
                             
                             fs''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -5620,17 +5620,17 @@
                             r4
                             
                             c''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             a''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         \times 4/7 {
@@ -5638,28 +5638,28 @@
                             r16
                             
                             af''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             f''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             ef''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             a''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             b''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             a''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         
@@ -5676,14 +5676,14 @@
                             r8
                             
                             cs''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             b''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             c''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         
@@ -5694,14 +5694,14 @@
                             r16
                             
                             af''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             fs''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             \once \override Accidental.color = #red
@@ -5710,7 +5710,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             a''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -5720,7 +5720,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             a''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -5730,19 +5730,19 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             a''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             af''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         {
@@ -5763,50 +5763,50 @@
                             r8
                             
                             bf''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             cs''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             c'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             e''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             c'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             bf''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             cs''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             e''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
                             r8
                             
                             e''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             ef''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             c'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         
@@ -5824,7 +5824,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
@@ -5835,15 +5835,15 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             f''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         {
@@ -5862,7 +5862,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -5872,7 +5872,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
@@ -5883,19 +5883,19 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             f''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             af''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             e''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         % PianoMusicVoice [measure 79]                                   %! SM4
@@ -5906,17 +5906,17 @@
                             r8
                             
                             af''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             bf''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             g''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         {
@@ -5925,34 +5925,34 @@
                             r8
                             
                             cs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             c'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             a''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             e''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             c'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         
@@ -5964,23 +5964,23 @@
                             r8
                             
                             f''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             a''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             af''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         {
@@ -5989,17 +5989,17 @@
                             r16
                             
                             e'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             f''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             c'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -6008,17 +6008,17 @@
                             r8
                             
                             fs'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             ef'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             f'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             e'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         
@@ -6030,10 +6030,10 @@
                             r4
                             
                             a''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
@@ -6041,7 +6041,7 @@
                             r16
                             
                             a''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         r4.
@@ -6050,11 +6050,11 @@
                             r16
                             
                             g'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             af'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -6069,35 +6069,35 @@
                             \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_COLOR_REDRAW:SM6
                             
                             bf''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             g'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             cs'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             c'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
                             r8
                             
                             b''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             fs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -6107,10 +6107,10 @@
                             r8
                             
                             g'''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
@@ -6122,7 +6122,7 @@
                             r16
                             
                             af'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/9 {
@@ -6130,34 +6130,34 @@
                             r8
                             
                             b''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             bf'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             cs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             c'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             e'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         {
@@ -6166,7 +6166,7 @@
                             r8
                             
                             ef'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
@@ -6184,7 +6184,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -6194,23 +6194,23 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             b'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             bf'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
-                            \revert Beam.positions
-                            \revert DynamicLineSpanner.staff-padding
-                            \revert TupletBracket.staff-padding
+                            \revert Beam.positions                                       %! OC
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
                             
                         }
                     }
@@ -6242,19 +6242,19 @@
                             \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                             \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) %! REDUNDANT_STAFF_LINES_COLOR:SM6
                             c'2
-                            -\accent                                                     %! IC1
+                            -\accent                                                     %! IC
                             ^ \markup {
                                 \column
                                     {
-                                        \line                                            %! IC1
-                                            {                                            %! IC1
-                                                \whiteout                                %! IC1
-                                                    \upright                             %! IC1
-                                                        \override                        %! IC1
-                                                            #'(box-padding . 0.5)        %! IC1
-                                                            \box                         %! IC1
-                                                                sponges                  %! IC1
-                                            }                                            %! IC1
+                                        \line                                            %! IC
+                                            {                                            %! IC
+                                                \whiteout                                %! IC
+                                                    \upright                             %! IC
+                                                        \override                        %! IC
+                                                            #'(box-padding . 0.5)        %! IC
+                                                            \box                         %! IC
+                                                                sponges                  %! IC
+                                            }                                            %! IC
                                         %%% \line                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                         %%%     {                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                         %%%         \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT:SM10
@@ -6311,7 +6311,7 @@
                             \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:SM6
                             
                             c'2
-                            -\accent                                                     %! IC1
+                            -\accent                                                     %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -6321,10 +6321,10 @@
                             \repeatTie
                             
                             c'2
-                            -\accent                                                     %! IC1
+                            -\accent                                                     %! IC
                             
                             c'4
-                            -\accent                                                     %! IC1
+                            -\accent                                                     %! IC
                         }
                         {
                             
@@ -6333,7 +6333,7 @@
                             \repeatTie
                             
                             c'4.
-                            -\accent                                                     %! IC1
+                            -\accent                                                     %! IC
                         }
                         
                         % PercussionMusicVoice [measure 17]                              %! SM4
@@ -6584,7 +6584,7 @@
                         R1 * 11/8
                         
                         % PercussionMusicVoice [measure 58]                              %! SM4
-                        \override DynamicLineSpanner.staff-padding = #'5
+                        \override DynamicLineSpanner.staff-padding = #'5                 %! OC
                         \set PercussionMusicStaff.forceClef = ##t                        %! REDUNDANT_CLEF:SM8
                         \clef "percussion"                                               %! REDUNDANT_CLEF:SM8
                         \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
@@ -6593,16 +6593,16 @@
                         \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_COLOR_REDRAW:SM6
                         
                         c'16
-                        -\p                                                              %! IC1
-                        -\tenuto                                                         %! IC1
-                        ^ \markup {                                                      %! IC1
-                            \whiteout                                                    %! IC1
-                                \upright                                                 %! IC1
-                                    \override                                            %! IC1
-                                        #'(box-padding . 0.5)                            %! IC1
-                                        \box                                             %! IC1
-                                            tam-tam                                      %! IC1
-                            }                                                            %! IC1
+                        -\p                                                              %! IC
+                        -\tenuto                                                         %! IC
+                        ^ \markup {                                                      %! IC
+                            \whiteout                                                    %! IC
+                                \upright                                                 %! IC
+                                    \override                                            %! IC
+                                        #'(box-padding . 0.5)                            %! IC
+                                        \box                                             %! IC
+                                            tam-tam                                      %! IC
+                            }                                                            %! IC
                         
                         r8
                         
@@ -6615,8 +6615,8 @@
                         r4
                         
                         c'16
-                        -\p                                                              %! IC1
-                        -\tenuto                                                         %! IC1
+                        -\p                                                              %! IC
+                        -\tenuto                                                         %! IC
                         
                         r8.
                         
@@ -6624,8 +6624,8 @@
                         r16
                         
                         c'16
-                        -\p                                                              %! IC1
-                        -\tenuto                                                         %! IC1
+                        -\p                                                              %! IC
+                        -\tenuto                                                         %! IC
                         
                         r8
                         
@@ -6635,8 +6635,8 @@
                         r16
                         
                         c'16
-                        -\p                                                              %! IC1
-                        -\tenuto                                                         %! IC1
+                        -\p                                                              %! IC
+                        -\tenuto                                                         %! IC
                         
                         r8
                         
@@ -6651,8 +6651,8 @@
                         r8
                         
                         c'16
-                        -\p                                                              %! IC1
-                        -\tenuto                                                         %! IC1
+                        -\p                                                              %! IC
+                        -\tenuto                                                         %! IC
                         
                         r8.
                         
@@ -6660,8 +6660,8 @@
                         r16
                         
                         c'16
-                        -\p                                                              %! IC1
-                        -\tenuto                                                         %! IC1
+                        -\p                                                              %! IC
+                        -\tenuto                                                         %! IC
                         
                         r8
                         
@@ -6671,8 +6671,8 @@
                         r16
                         
                         c'16
-                        -\p                                                              %! IC1
-                        -\tenuto                                                         %! IC1
+                        -\p                                                              %! IC
+                        -\tenuto                                                         %! IC
                         
                         r8
                         
@@ -6685,8 +6685,8 @@
                         r2.
                         
                         c'16
-                        -\p                                                              %! IC1
-                        -\tenuto                                                         %! IC1
+                        -\p                                                              %! IC
+                        -\tenuto                                                         %! IC
                         
                         r8.
                         
@@ -6694,8 +6694,8 @@
                         r16
                         
                         c'16
-                        -\p                                                              %! IC1
-                        -\tenuto                                                         %! IC1
+                        -\p                                                              %! IC
+                        -\tenuto                                                         %! IC
                         
                         r8
                         
@@ -6705,8 +6705,8 @@
                         r16
                         
                         c'16
-                        -\p                                                              %! IC1
-                        -\tenuto                                                         %! IC1
+                        -\p                                                              %! IC
+                        -\tenuto                                                         %! IC
                         
                         r8
                         
@@ -6721,8 +6721,8 @@
                         r4
                         
                         c'16
-                        -\p                                                              %! IC1
-                        -\tenuto                                                         %! IC1
+                        -\p                                                              %! IC
+                        -\tenuto                                                         %! IC
                         
                         r8.
                         
@@ -6730,13 +6730,13 @@
                         r16
                         
                         c'16
-                        -\p                                                              %! IC1
-                        -\tenuto                                                         %! IC1
+                        -\p                                                              %! IC
+                        -\tenuto                                                         %! IC
                         
                         r8
                         
                         r2
-                        \revert DynamicLineSpanner.staff-padding
+                        \revert DynamicLineSpanner.staff-padding                         %! OC
                         
                         % PercussionMusicVoice [measure 74]                              %! SM4
                         R1 * 3/4
@@ -6792,9 +6792,9 @@
                     \context ViolinMusicVoice = "ViolinMusicVoice" {
                         
                         % ViolinMusicVoice [measure 14]                                  %! SM4
-                        \override DynamicLineSpanner.staff-padding = #'3
-                        \override Beam.positions = #'(-5 . -5)
-                        \override TupletBracket.staff-padding = #4
+                        \override DynamicLineSpanner.staff-padding = #'3                 %! OC
+                        \override Beam.positions = #'(-5 . -5)                           %! OC
+                        \override TupletBracket.staff-padding = #4                       %! OC
                         \set ViolinMusicStaff.instrumentName = \markup {                 %! REAPPLIED_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 #16                                                      %! REAPPLIED_INSTRUMENT:SM8
@@ -6887,24 +6887,24 @@
                             
                             % ViolinMusicVoice [measure 21]                              %! SM4
                             f''4.
-                            -\staccato                                                   %! IC1
-                            \mp                                                          %! IC1
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        "off-string bowing on staccati"                  %! IC1
-                                }                                                        %! IC1
+                            -\staccato                                                   %! IC
+                            \mp                                                          %! IC
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        "off-string bowing on staccati"                  %! IC
+                                }                                                        %! IC
                         }
                         \times 2/3 {
                             
                             f''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             g''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             f''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -6915,47 +6915,47 @@
                         \times 10/14 {
                             
                             f''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             c''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             f''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             g''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             g''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             cs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             ef''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -6965,10 +6965,10 @@
                             e''4
                             
                             a''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c'''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -6979,26 +6979,26 @@
                         \times 5/4 {
                             
                             ef''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             f''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             % ViolinMusicVoice [measure 23]                              %! SM4
                             f''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             fs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -7010,13 +7010,13 @@
                             
                             % ViolinMusicVoice [measure 24]                              %! SM4
                             c''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             ef''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -7024,7 +7024,7 @@
                             ef''4
                             
                             bf''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         
                         % ViolinMusicVoice [measure 25]                                  %! SM4
@@ -7067,17 +7067,17 @@
                                 }                                                        %! REDUNDANT_INSTRUMENT:SM8
                             \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
                             fs''4.
-                            -\staccato                                                   %! IC1
-                            \f                                                           %! IC1
+                            -\staccato                                                   %! IC
+                            \f                                                           %! IC
                             ^ \markup {
                                 \column
                                     {
-                                        \line                                            %! IC1
-                                            {                                            %! IC1
-                                                \whiteout                                %! IC1
-                                                    \upright                             %! IC1
-                                                        "off-string bowing on staccati"  %! IC1
-                                            }                                            %! IC1
+                                        \line                                            %! IC
+                                            {                                            %! IC
+                                                \whiteout                                %! IC
+                                                    \upright                             %! IC
+                                                        "off-string bowing on staccati"  %! IC
+                                            }                                            %! IC
                                         %%% \line                                        %! REDUNDANT_INSTRUMENT_ALERT:SM10
                                         %%%     {                                        %! REDUNDANT_INSTRUMENT_ALERT:SM10
                                         %%%         \vcenter                             %! REDUNDANT_INSTRUMENT_ALERT:SM10
@@ -7144,12 +7144,12 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             af''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -7157,7 +7157,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
@@ -7182,49 +7182,49 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             cs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             b''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             b''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             cs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             d''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             f''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -7234,10 +7234,10 @@
                             f''4
                             
                             bf''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             cs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -7248,7 +7248,7 @@
                         \times 5/4 {
                             
                             e''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -7256,7 +7256,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                         }
@@ -7269,16 +7269,16 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             g''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -7286,7 +7286,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             cs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                             - \tweak color #red                                          %! SM14
@@ -7312,15 +7312,15 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             cs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             bf''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -7328,38 +7328,38 @@
                             e''4
                             
                             b''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
-                            \revert DynamicLineSpanner.staff-padding
-                            \revert Beam.positions
-                            \revert TupletBracket.staff-padding
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert Beam.positions                                       %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/10 {
                             
                             % ViolinMusicVoice [measure 36]                              %! SM4
-                            \override Beam.positions = #'(-5 . -5)
-                            \override DynamicLineSpanner.staff-padding = #'7
-                            \override TupletBracket.staff-padding = #4
+                            \override Beam.positions = #'(-5 . -5)                       %! OC
+                            \override DynamicLineSpanner.staff-padding = #'7             %! OC
+                            \override TupletBracket.staff-padding = #4                   %! OC
                             b''16
                             \<
                             \f
                             [
                             
                             c'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             d'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -7367,7 +7367,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -7377,32 +7377,32 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             fs'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ]
                         }
                         \times 2/3 {
                             
                             fs'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             d'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             cs'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             fs'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -7413,41 +7413,41 @@
                             
                             % ViolinMusicVoice [measure 37]                              %! SM4
                             g'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             af'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             cs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             b'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             cs'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -7464,25 +7464,25 @@
                         {
                             
                             ef'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             ef'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             c''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             cs'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -7492,15 +7492,15 @@
                             af'4
                             
                             b'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             bf'4.
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -7515,34 +7515,34 @@
                             [
                             
                             fs'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             g'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             cs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             b'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -7550,7 +7550,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ]
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
@@ -7564,7 +7564,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -7574,17 +7574,17 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             cs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             fs'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -7596,17 +7596,17 @@
                             
                             % ViolinMusicVoice [measure 42]                              %! SM4
                             af'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -7615,10 +7615,10 @@
                             bf'4
                             
                             e''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             cs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -7628,41 +7628,41 @@
                         {
                             
                             c''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             cs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/10 {
                             
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             e''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             g''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             d''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             ef''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             b'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -7670,7 +7670,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             cs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                             - \tweak color #red                                          %! SM14
@@ -7694,17 +7694,17 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             cs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             fs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             ef''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -7720,43 +7720,43 @@
                             [
                             
                             c''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             ef''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             ef''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             g''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             d''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             b''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             g''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -7764,19 +7764,19 @@
                             
                             % ViolinMusicVoice [measure 45]                              %! SM4
                             bf''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             % ViolinMusicVoice [measure 46]                              %! SM4
                             bf'4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -7784,41 +7784,41 @@
                             bf'4
                             
                             ef''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/10 {
                             
                             c'''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             cs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             ef''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             d''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             e''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             g''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             ef''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -7828,10 +7828,10 @@
                             ef''4
                             
                             c'''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             d''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -7841,47 +7841,47 @@
                         {
                             
                             bf''4.
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         \times 8/12 {
                             
                             % ViolinMusicVoice [measure 48]                              %! SM4
                             fs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             [
                             
                             cs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             ef''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             b'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf'16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             c''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             b''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             g''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                             ]
                         }
@@ -7891,15 +7891,15 @@
                             af''4
                             
                             b''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             cs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                         }
                         {
                             
                             fs''4
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ~
                         }
                         {
@@ -7914,110 +7914,110 @@
                             [
                             
                             af''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             a''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             g''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             d''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             bf''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             fs''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             af''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             
                             ef''16
-                            -\staccato                                                   %! IC1
+                            -\staccato                                                   %! IC
                             ]
-                            \revert Beam.positions
-                            \revert DynamicLineSpanner.staff-padding
-                            \revert TupletBracket.staff-padding
+                            \revert Beam.positions                                       %! OC
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
                         }
                         
                         % ViolinMusicVoice [measure 51]                                  %! SM4
-                        \override DynamicLineSpanner.staff-padding = #'3
+                        \override DynamicLineSpanner.staff-padding = #'3                 %! OC
                         g''4.
-                        -\downbow                                                        %! IC1
-                        \f                                                               %! IC1
+                        -\downbow                                                        %! IC
+                        \f                                                               %! IC
                         \glissando
-                        ^ \markup {                                                      %! IC1
-                            \whiteout                                                    %! IC1
-                                \upright                                                 %! IC1
-                                    "OB + full bow strokes"                              %! IC1
-                            }                                                            %! IC1
+                        ^ \markup {                                                      %! IC
+                            \whiteout                                                    %! IC
+                                \upright                                                 %! IC
+                                    "OB + full bow strokes"                              %! IC
+                            }                                                            %! IC
                         
                         fs''4.
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         a''4.
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         % ViolinMusicVoice [measure 52]                                  %! SM4
                         c''4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         e''4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         b''4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         a''4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         c''4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         af''4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         g''4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         e''4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         d''4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         fs''4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         f''4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         b'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         \once \override Accidental.color = #red
@@ -8026,7 +8026,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         fs''4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -8036,45 +8036,45 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         fs''4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
                         f''4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         b'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         fs''4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         d''4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         fs''4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         c''4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         a''4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         d''4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         f''4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         \once \override Accidental.color = #red
@@ -8083,7 +8083,7 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         af''4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -8093,217 +8093,217 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         af''4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
                         ef''4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         e''4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         a'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         c''4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         af'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         e''4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         a'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         % ViolinMusicVoice [measure 58]                                  %! SM4
                         f'4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         d''4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         e'4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         bf'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         f'4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         b'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         fs''4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         f'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         d''4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         af'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         fs'4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         f'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         b'4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         a'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         f'4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         fs'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         g'4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         c''4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         bf'4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         fs'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         e'4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         d'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         fs'4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         % ViolinMusicVoice [measure 64]                                  %! SM4
                         c''4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         bf'4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         b'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         af'4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         e'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         ef'4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         d'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         g'4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         f'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         e'4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         fs'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         af'4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         d'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         b'4
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         af'4
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         e'8
-                        -\upbow                                                          %! IC1
-                        \revert DynamicLineSpanner.staff-padding
+                        -\upbow                                                          %! IC
+                        \revert DynamicLineSpanner.staff-padding                         %! OC
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             
                             % ViolinMusicVoice [measure 67]                              %! SM4
-                            \override Beam.positions = #'(-4 . -4)
-                            \override DynamicLineSpanner.staff-padding = #'6
-                            \override TupletBracket.staff-padding = #3
+                            \override Beam.positions = #'(-4 . -4)                       %! OC
+                            \override DynamicLineSpanner.staff-padding = #'6             %! OC
+                            \override TupletBracket.staff-padding = #3                   %! OC
                             b''8
-                            -\staccatissimo                                              %! IC1
-                            \fff                                                         %! IC1
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        pizz.                                            %! IC1
-                                }                                                        %! IC1
+                            -\staccatissimo                                              %! IC
+                            \fff                                                         %! IC
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        pizz.                                            %! IC
+                                }                                                        %! IC
                             
                             a''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             e''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -8312,7 +8312,7 @@
                             e''8
                             
                             ef''4.
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ~
                         }
                         {
@@ -8321,13 +8321,13 @@
                             ef''8
                             
                             g''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             c''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             ef''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         r4
@@ -8342,17 +8342,17 @@
                             r16
                             
                             bf''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             c''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             af''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         {
@@ -8360,20 +8360,20 @@
                             r8
                             
                             bf''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             c''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             b''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -8383,7 +8383,7 @@
                             r2
                             
                             cs''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         r4.
@@ -8392,20 +8392,20 @@
                             r8
                             
                             c'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             a''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             cs''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         \times 4/5 {
@@ -8414,17 +8414,17 @@
                             r8
                             
                             fs''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             e''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             c'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         
@@ -8439,7 +8439,7 @@
                             r8
                             
                             e''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
@@ -8448,32 +8448,32 @@
                             r8
                             
                             f''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             ef''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             c'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             e''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             bf''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         {
@@ -8488,11 +8488,11 @@
                             r8
                             
                             fs''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             b''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         {
@@ -8501,10 +8501,10 @@
                             r4.
                             
                             f''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         r4.
@@ -8515,31 +8515,31 @@
                             r4
                             
                             f''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             af''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             cs'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             c'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             b''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
                             r4
                             
                             g'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
@@ -8551,33 +8551,33 @@
                             r16
                             
                             b''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             g'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             ef'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             bf''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             e'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             a''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             c'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         % ViolinMusicVoice [measure 79]                                  %! SM4
@@ -8588,7 +8588,7 @@
                             r8
                             
                             fs'''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 9/11 {
@@ -8597,36 +8597,36 @@
                             r4
                             
                             b''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             af'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             fs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             b''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             bf''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             cs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             c'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             ef'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         % ViolinMusicVoice [measure 81]                                  %! SM4
@@ -8637,7 +8637,7 @@
                             r8
                             
                             e'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -8645,7 +8645,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c'''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -8655,7 +8655,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                         }
@@ -8665,21 +8665,21 @@
                             r8
                             
                             g'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
                             r16
                             
                             g'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             b''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -8688,21 +8688,21 @@
                             r16
                             
                             g'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             cs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             b''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             bf'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             c'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         % ViolinMusicVoice [measure 83]                                  %! SM4
@@ -8720,44 +8720,44 @@
                             r4
                             
                             e'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         r4
-                        \revert Beam.positions
-                        \revert DynamicLineSpanner.staff-padding
-                        \revert TupletBracket.staff-padding
+                        \revert Beam.positions                                           %! OC
+                        \revert DynamicLineSpanner.staff-padding                         %! OC
+                        \revert TupletBracket.staff-padding                              %! OC
                         
                         % ViolinMusicVoice [measure 85]                                  %! SM4
-                        \stopStaff                                                       %! IC1
-                        \once \override ViolinMusicStaff.StaffSymbol.line-count = 1      %! IC1
-                        \startStaff                                                      %! IC1
-                        \override RepeatTie.direction = #up
-                        \override DynamicLineSpanner.staff-padding = #'3
+                        \stopStaff                                                       %! IC
+                        \once \override ViolinMusicStaff.StaffSymbol.line-count = 1      %! IC
+                        \startStaff                                                      %! IC
+                        \override RepeatTie.direction = #up                              %! OC
+                        \override DynamicLineSpanner.staff-padding = #'3                 %! OC
                         \set ViolinMusicStaff.forceClef = ##t                            %! EXPLICIT_CLEF:SM8
                         \clef "percussion"                                               %! EXPLICIT_CLEF:SM8
                         \once \override ViolinMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                         %%% \override ViolinMusicStaff.Clef.color = ##f                  %! EXPLICIT_CLEF_UNCOLOR:SM7
                         c'2.
-                        \mf                                                              %! IC1
+                        \mf                                                              %! IC
                         ^ \markup {
                             \column
                                 {
-                                    \line                                                %! IC1
-                                        {                                                %! IC1
-                                            \whiteout                                    %! IC1
-                                                \upright                                 %! IC1
-                                                    \override                            %! IC1
-                                                        #'(box-padding . 0.5)            %! IC1
-                                                        \box                             %! IC1
-                                                            "scraped slate"              %! IC1
-                                        }                                                %! IC1
-                                    \line                                                %! IC1
-                                        {                                                %! IC1
-                                            \whiteout                                    %! IC1
-                                                \upright                                 %! IC1
-                                                    "scrape in a circle at moderate speed" %! IC1
-                                        }                                                %! IC1
+                                    \line                                                %! IC
+                                        {                                                %! IC
+                                            \whiteout                                    %! IC
+                                                \upright                                 %! IC
+                                                    \override                            %! IC
+                                                        #'(box-padding . 0.5)            %! IC
+                                                        \box                             %! IC
+                                                            "scraped slate"              %! IC
+                                        }                                                %! IC
+                                    \line                                                %! IC
+                                        {                                                %! IC
+                                            \whiteout                                    %! IC
+                                                \upright                                 %! IC
+                                                    "scrape in a circle at moderate speed" %! IC
+                                        }                                                %! IC
                                 }
                             }
                         \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_COLOR_REDRAW:SM6
@@ -8776,8 +8776,8 @@
                         
                         c'2
                         \repeatTie
-                        \revert RepeatTie.direction
-                        \revert DynamicLineSpanner.staff-padding
+                        \revert RepeatTie.direction                                      %! OC
+                        \revert DynamicLineSpanner.staff-padding                         %! OC
                         
                     }
                 }
@@ -8788,8 +8788,8 @@
                         \times 6/5 {
                             
                             % ViolaMusicVoice [measure 14]                               %! SM4
-                            \override DynamicLineSpanner.staff-padding = #'8
-                            \override TupletBracket.staff-padding = #5
+                            \override DynamicLineSpanner.staff-padding = #'8             %! OC
+                            \override TupletBracket.staff-padding = #5                   %! OC
                             \set ViolaMusicStaff.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -8806,17 +8806,17 @@
                             %%% \override ViolaMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_UNCOLOR:SM7
                             \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                             d4
-                            \mf                                                          %! IC1
+                            \mf                                                          %! IC
                             \glissando
                             ^ \markup {
                                 \column
                                     {
-                                        \line                                            %! IC1
-                                            {                                            %! IC1
-                                                \whiteout                                %! IC1
-                                                    \upright                             %! IC1
-                                                        "molto flautando"                %! IC1
-                                            }                                            %! IC1
+                                        \line                                            %! IC
+                                            {                                            %! IC
+                                                \whiteout                                %! IC
+                                                    \upright                             %! IC
+                                                        "molto flautando"                %! IC
+                                            }                                            %! IC
                                         %%% \line                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                         %%%     {                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                         %%%         \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT:SM10
@@ -8930,17 +8930,17 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             e4
-                            \f                                                           %! IC1
+                            \f                                                           %! IC
                             \glissando
                             ^ \markup {
                                 \column
                                     {
-                                        \line                                            %! IC1
-                                            {                                            %! IC1
-                                                \whiteout                                %! IC1
-                                                    \upright                             %! IC1
-                                                        "non flautando"                  %! IC1
-                                            }                                            %! IC1
+                                        \line                                            %! IC
+                                            {                                            %! IC
+                                                \whiteout                                %! IC
+                                                    \upright                             %! IC
+                                                        "non flautando"                  %! IC
+                                            }                                            %! IC
                                         \line                                            %! SM14
                                             {                                            %! SM14
                                                 @                                        %! SM14
@@ -8995,7 +8995,7 @@
                             
                             % ViolaMusicVoice [measure 36]                               %! SM4
                             g4
-                            \ff                                                          %! IC1
+                            \ff                                                          %! IC
                             \glissando
                             
                             ftqs2.
@@ -9028,8 +9028,8 @@
                             \glissando
                             
                             ftqs8
-                            \revert DynamicLineSpanner.staff-padding
-                            \revert TupletBracket.staff-padding
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
                         }
                         
                         % ViolaMusicVoice [measure 42]                                   %! SM4
@@ -9048,8 +9048,8 @@
                         R1 * 9/8
                         
                         % ViolaMusicVoice [measure 47]                                   %! SM4
-                        \override DynamicLineSpanner.staff-padding = #'7
-                        \override TupletBracket.staff-padding = #4
+                        \override DynamicLineSpanner.staff-padding = #'7                 %! OC
+                        \override TupletBracket.staff-padding = #4                       %! OC
                         \set ViolaMusicStaff.forceClef = ##t                             %! EXPLICIT_CLEF:SM8
                         \clef "treble"                                                   %! EXPLICIT_CLEF:SM8
                         \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue)  %! EXPLICIT_CLEF_COLOR:SM6
@@ -9058,56 +9058,56 @@
                         \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_COLOR_REDRAW:SM6
                         
                         af''4.
-                        -\downbow                                                        %! IC1
-                        \f                                                               %! IC1
+                        -\downbow                                                        %! IC
+                        \f                                                               %! IC
                         \glissando
-                        ^ \markup {                                                      %! IC1
-                            \whiteout                                                    %! IC1
-                                \upright                                                 %! IC1
-                                    "OB + full bow strokes"                              %! IC1
-                            }                                                            %! IC1
+                        ^ \markup {                                                      %! IC
+                            \whiteout                                                    %! IC
+                                \upright                                                 %! IC
+                                    "OB + full bow strokes"                              %! IC
+                            }                                                            %! IC
                         
                         ef''4.
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         b''4.
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         e''4.
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         % ViolaMusicVoice [measure 49]                                   %! SM4
                         af''4.
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         a''4.
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         % ViolaMusicVoice [measure 50]                                   %! SM4
                         f''4.
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         b'4.
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         % ViolaMusicVoice [measure 51]                                   %! SM4
                         f'4.
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         af'4.
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         fs''4.
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
@@ -9118,20 +9118,20 @@
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %%% \override ViolaMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_UNCOLOR:SM7
                             b'4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_COLOR_REDRAW:SM6
                             
                             af'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             ef'4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             bf'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -9139,19 +9139,19 @@
                             
                             % ViolaMusicVoice [measure 53]                               %! SM4
                             fs'4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             b'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             af'4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             fs'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             \once \override Accidental.color = #red
@@ -9160,7 +9160,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             af'4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                         }
@@ -9174,41 +9174,41 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             af'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             e'4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             bf'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             a'4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             e'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             af'4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             f'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             c'4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             a'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -9216,15 +9216,15 @@
                             
                             % ViolaMusicVoice [measure 55]                               %! SM4
                             e'4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             af'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             bf4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             \once \override Accidental.color = #red
@@ -9233,7 +9233,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             e'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -9243,7 +9243,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             e'4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
@@ -9253,19 +9253,19 @@
                             
                             % ViolaMusicVoice [measure 56]                               %! SM4
                             g'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             e'4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             d'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             f4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -9273,19 +9273,19 @@
                             
                             % ViolaMusicVoice [measure 57]                               %! SM4
                             fs'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             f4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             g4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             bf4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -9293,26 +9293,26 @@
                             
                             % ViolaMusicVoice [measure 58]                               %! SM4
                             c'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             b4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                         }
                         {
                             
                             % ViolaMusicVoice [measure 59]                               %! SM4
                             ef4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             fs4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             ef4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             \once \override Accidental.color = #red
@@ -9321,7 +9321,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             af4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                         }
@@ -9334,46 +9334,46 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             af4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             e4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             ef4
-                            -\downbow                                                    %! IC1
-                            \revert DynamicLineSpanner.staff-padding
-                            \revert TupletBracket.staff-padding
+                            -\downbow                                                    %! IC
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             
                             % ViolaMusicVoice [measure 61]                               %! SM4
-                            \override Beam.positions = #'(-4 . -4)
-                            \override DynamicLineSpanner.staff-padding = #'6
-                            \override TupletBracket.staff-padding = #3
+                            \override Beam.positions = #'(-4 . -4)                       %! OC
+                            \override DynamicLineSpanner.staff-padding = #'6             %! OC
+                            \override TupletBracket.staff-padding = #3                   %! OC
                             \set ViolaMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %%% \override ViolaMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_UNCOLOR:SM7
                             b''8
-                            -\staccatissimo                                              %! IC1
-                            \fff                                                         %! IC1
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        pizz.                                            %! IC1
-                                }                                                        %! IC1
+                            -\staccatissimo                                              %! IC
+                            \fff                                                         %! IC
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        pizz.                                            %! IC
+                                }                                                        %! IC
                             \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_COLOR_REDRAW:SM6
                             
                             bf''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         r1
@@ -9388,13 +9388,13 @@
                         \times 7/9 {
                             
                             fs''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g''4.
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ~
                         }
                         \times 2/3 {
@@ -9404,10 +9404,10 @@
                             [
                             
                             a''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             af''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ~
                             ]
                         }
@@ -9422,7 +9422,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -9432,7 +9432,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                         }
@@ -9448,19 +9448,19 @@
                         \times 9/11 {
                             
                             bf''4.
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             ef''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ~
                         }
                         {
@@ -9468,12 +9468,12 @@
                             fs''8
                             
                             cs''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
                             c'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         % ViolaMusicVoice [measure 66]                                   %! SM4
@@ -9488,7 +9488,7 @@
                             
                             % ViolaMusicVoice [measure 68]                               %! SM4
                             fs''4.
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -9496,7 +9496,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             a''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -9506,17 +9506,17 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             a''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             e''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \times 2/3 {
                             
                             f''4.
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ~
                         }
                         {
@@ -9533,18 +9533,18 @@
                             r16
                             
                             a''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             fs''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             b''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             fs''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
@@ -9552,7 +9552,7 @@
                             r4
                             
                             cs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             \once \override Accidental.color = #red
@@ -9561,7 +9561,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -9571,16 +9571,16 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
                             e''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             bf''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         % ViolaMusicVoice [measure 71]                                   %! SM4
@@ -9592,24 +9592,24 @@
                             r8
                             
                             f''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             g''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             c'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             bf''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             fs'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \times 4/7 {
                             
@@ -9617,21 +9617,21 @@
                             r4
                             
                             c'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             bf''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             g''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
@@ -9644,10 +9644,10 @@
                             r8
                             
                             c'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             bf''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         r4
@@ -9664,14 +9664,14 @@
                             r16
                             
                             c'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             g'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             af''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         \times 2/3 {
@@ -9685,23 +9685,23 @@
                             r8
                             
                             fs'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             c'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             c'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         
@@ -9717,14 +9717,14 @@
                             r4
                             
                             af'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             cs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         {
@@ -9738,24 +9738,24 @@
                             r8
                             
                             f'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             e'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             cs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             ef'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \times 2/3 {
                             
@@ -9763,14 +9763,14 @@
                             r16
                             
                             f'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             g'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         
@@ -9787,14 +9787,14 @@
                             r4
                             
                             c'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             cs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         \times 2/3 {
@@ -9802,16 +9802,16 @@
                             r8
                             
                             a'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             ef'''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
@@ -9820,17 +9820,17 @@
                             r8
                             
                             af'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             a'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             b''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -9839,18 +9839,18 @@
                             r16
                             
                             f'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             c'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             bf'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             g'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         r4.
@@ -9869,25 +9869,25 @@
                             r8
                             
                             f'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \times 2/3 {
                             
                             r16
                             
                             f'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             a'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
-                            \revert Beam.positions
-                            \revert DynamicLineSpanner.staff-padding
-                            \revert TupletBracket.staff-padding
+                            \revert Beam.positions                                       %! OC
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
                         }
                         
                         % ViolaMusicVoice [measure 85]                                   %! SM4
@@ -9911,8 +9911,8 @@
                         \times 6/5 {
                             
                             % CelloMusicVoice [measure 14]                               %! SM4
-                            \override DynamicLineSpanner.staff-padding = #'8
-                            \override TupletBracket.staff-padding = #5
+                            \override DynamicLineSpanner.staff-padding = #'8             %! OC
+                            \override TupletBracket.staff-padding = #5                   %! OC
                             \set CelloMusicStaff.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -9929,17 +9929,17 @@
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_UNCOLOR:SM7
                             \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                             e,2.
-                            \mf                                                          %! IC1
+                            \mf                                                          %! IC
                             \glissando
                             ^ \markup {
                                 \column
                                     {
-                                        \line                                            %! IC1
-                                            {                                            %! IC1
-                                                \whiteout                                %! IC1
-                                                    \upright                             %! IC1
-                                                        "molto flautando"                %! IC1
-                                            }                                            %! IC1
+                                        \line                                            %! IC
+                                            {                                            %! IC
+                                                \whiteout                                %! IC
+                                                    \upright                             %! IC
+                                                        "molto flautando"                %! IC
+                                            }                                            %! IC
                                         %%% \line                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                         %%%     {                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                         %%%         \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT:SM10
@@ -10042,13 +10042,13 @@
                             
                             % CelloMusicVoice [measure 25]                               %! SM4
                             f,2.
-                            \f                                                           %! IC1
+                            \f                                                           %! IC
                             \glissando
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        "non flautando"                                  %! IC1
-                                }                                                        %! IC1
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        "non flautando"                                  %! IC
+                                }                                                        %! IC
                             
                             eqs,2
                             \glissando
@@ -10097,7 +10097,7 @@
                             
                             % CelloMusicVoice [measure 36]                               %! SM4
                             a,1
-                            \ff                                                          %! IC1
+                            \ff                                                          %! IC
                             \glissando
                             
                             gqs,4
@@ -10130,8 +10130,8 @@
                             \glissando
                             
                             gqs,4
-                            \revert DynamicLineSpanner.staff-padding
-                            \revert TupletBracket.staff-padding
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
                         }
                         
                         % CelloMusicVoice [measure 42]                                   %! SM4
@@ -10150,8 +10150,8 @@
                         R1 * 9/8
                         
                         % CelloMusicVoice [measure 47]                                   %! SM4
-                        \override DynamicLineSpanner.staff-padding = #'8
-                        \override TupletBracket.staff-padding = #5
+                        \override DynamicLineSpanner.staff-padding = #'8                 %! OC
+                        \override TupletBracket.staff-padding = #5                       %! OC
                         \set CelloMusicStaff.forceClef = ##t                             %! EXPLICIT_CLEF:SM8
                         \clef "treble"                                                   %! EXPLICIT_CLEF:SM8
                         \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue)  %! EXPLICIT_CLEF_COLOR:SM6
@@ -10160,67 +10160,67 @@
                         \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_COLOR_REDRAW:SM6
                         
                         e''4.
-                        -\downbow                                                        %! IC1
-                        \f                                                               %! IC1
+                        -\downbow                                                        %! IC
+                        \f                                                               %! IC
                         \glissando
-                        ^ \markup {                                                      %! IC1
-                            \whiteout                                                    %! IC1
-                                \upright                                                 %! IC1
-                                    "OB + full bow strokes"                              %! IC1
-                            }                                                            %! IC1
+                        ^ \markup {                                                      %! IC
+                            \whiteout                                                    %! IC
+                                \upright                                                 %! IC
+                                    "OB + full bow strokes"                              %! IC
+                            }                                                            %! IC
                         
                         d''4.
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         f''4.
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         fs''4.
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         % CelloMusicVoice [measure 49]                                   %! SM4
                         g''4.
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         fs''4.
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         % CelloMusicVoice [measure 50]                                   %! SM4
                         c''4.
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         bf'4.
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         % CelloMusicVoice [measure 51]                                   %! SM4
                         e'4.
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         
                         bf'4.
-                        -\upbow                                                          %! IC1
+                        -\upbow                                                          %! IC
                         \glissando
                         
                         f'4.
-                        -\downbow                                                        %! IC1
+                        -\downbow                                                        %! IC
                         \glissando
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/4 {
                             
                             % CelloMusicVoice [measure 52]                               %! SM4
                             b'4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             d'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -10228,35 +10228,35 @@
                             
                             % CelloMusicVoice [measure 53]                               %! SM4
                             f'4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             d'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             e'4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             ef'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             f'4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             ef'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             b'4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             e'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -10264,23 +10264,23 @@
                             
                             % CelloMusicVoice [measure 54]                               %! SM4
                             g'4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             c'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             f'4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             g'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             bf4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -10288,35 +10288,35 @@
                             
                             % CelloMusicVoice [measure 55]                               %! SM4
                             ef'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             b4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             f'4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             b4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             af4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             ef'4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             b4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             fs4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -10324,11 +10324,11 @@
                             
                             % CelloMusicVoice [measure 56]                               %! SM4
                             b4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             g4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -10336,23 +10336,23 @@
                             
                             % CelloMusicVoice [measure 57]                               %! SM4
                             af4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             fs4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             b4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             bf4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             f4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             \once \override Accidental.color = #red
@@ -10361,7 +10361,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -10371,7 +10371,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
@@ -10385,46 +10385,46 @@
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_UNCOLOR:SM7
                             b4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_COLOR_REDRAW:SM6
                             
                             af4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                         }
                         \times 4/5 {
                             
                             % CelloMusicVoice [measure 59]                               %! SM4
                             b4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             a4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             c4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             d4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             e4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                         }
                         {
                             
                             % CelloMusicVoice [measure 60]                               %! SM4
                             g4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             e4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -10432,58 +10432,58 @@
                             
                             % CelloMusicVoice [measure 61]                               %! SM4
                             b,4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             e4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             af4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             g4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             c4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             bf,4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             fs4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             f,4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             e,4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                         }
                         {
                             
                             % CelloMusicVoice [measure 62]                               %! SM4
                             af,4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             f,4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             b,4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             a,4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -10491,19 +10491,19 @@
                             
                             % CelloMusicVoice [measure 63]                               %! SM4
                             af,4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             ef,4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                             
                             b,4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             f,4
-                            -\downbow                                                    %! IC1
+                            -\downbow                                                    %! IC
                             \glissando
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -10511,40 +10511,40 @@
                             
                             % CelloMusicVoice [measure 64]                               %! SM4
                             b,4
-                            -\upbow                                                      %! IC1
+                            -\upbow                                                      %! IC
                             \glissando
                             
                             a,4
-                            -\downbow                                                    %! IC1
-                            \revert DynamicLineSpanner.staff-padding
-                            \revert TupletBracket.staff-padding
+                            -\downbow                                                    %! IC
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             
                             % CelloMusicVoice [measure 65]                               %! SM4
-                            \override Beam.positions = #'(-4 . -4)
-                            \override DynamicLineSpanner.staff-padding = #'6
-                            \override TupletBracket.staff-padding = #3
+                            \override Beam.positions = #'(-4 . -4)                       %! OC
+                            \override DynamicLineSpanner.staff-padding = #'6             %! OC
+                            \override TupletBracket.staff-padding = #3                   %! OC
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_UNCOLOR:SM7
                             cs''8
-                            -\staccatissimo                                              %! IC1
-                            \fff                                                         %! IC1
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        pizz.                                            %! IC1
-                                }                                                        %! IC1
+                            -\staccatissimo                                              %! IC
+                            \fff                                                         %! IC
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        pizz.                                            %! IC
+                                }                                                        %! IC
                             \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_COLOR_REDRAW:SM6
                             
                             c''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             b''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -10553,16 +10553,16 @@
                             b''8
                             
                             g''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             e''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             c''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         r4.
@@ -10575,10 +10575,10 @@
                             
                             % CelloMusicVoice [measure 67]                               %! SM4
                             bf''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -10587,7 +10587,7 @@
                             f''8
                             
                             c''4.
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -10597,20 +10597,20 @@
                             c''8
                             
                             f''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             af''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             af''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         
@@ -10629,21 +10629,21 @@
                             r8
                             
                             b''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             g''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             ef''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             f''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         % CelloMusicVoice [measure 71]                                   %! SM4
@@ -10653,14 +10653,14 @@
                             r16
                             
                             e''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             ef''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         \times 4/5 {
@@ -10668,21 +10668,21 @@
                             r16
                             
                             fs''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             e''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             af''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \times 2/3 {
                             
@@ -10690,21 +10690,21 @@
                             r8
                             
                             af''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             cs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             b''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                             
                             ef''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
@@ -10718,14 +10718,14 @@
                             r16
                             
                             a''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             f''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             ef''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         
@@ -10737,7 +10737,7 @@
                             r16
                             
                             cs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
@@ -10745,17 +10745,17 @@
                             r8
                             
                             b''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a''4.
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         {
                             
                             r8
                             
                             f''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/9 {
@@ -10764,35 +10764,35 @@
                             r8
                             
                             g''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             ef'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             a''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             b''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             ef'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             af''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         
@@ -10803,16 +10803,16 @@
                             r8
                             
                             fs'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g'''2
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             bf''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         r4.
@@ -10821,7 +10821,7 @@
                             r16
                             
                             c'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
@@ -10830,26 +10830,26 @@
                             r16
                             
                             bf''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             b''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             fs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             f'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             ef'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         {
@@ -10863,7 +10863,7 @@
                             r4
                             
                             f'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         % CelloMusicVoice [measure 80]                                   %! SM4
@@ -10877,14 +10877,14 @@
                             r4
                             
                             b''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             bf''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             g'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         
@@ -10896,23 +10896,23 @@
                             r8
                             
                             ef'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             fs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             cs'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             bf'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             af'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -10921,13 +10921,13 @@
                             r16
                             
                             fs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             cs'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             c'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
@@ -10935,17 +10935,17 @@
                             r16
                             
                             fs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             c'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             e'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             ef'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         {
@@ -10954,7 +10954,7 @@
                             r4.
                             
                             f'''4
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                         }
                         
                         % CelloMusicVoice [measure 84]                                   %! SM4
@@ -10965,30 +10965,30 @@
                             r8
                             
                             af'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             [
                             
                             fs'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             f'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             ef'''8
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             c'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             
                             a'''16
-                            -\staccatissimo                                              %! IC1
+                            -\staccatissimo                                              %! IC
                             ]
                         }
                         
                         r4
-                        \revert Beam.positions
-                        \revert DynamicLineSpanner.staff-padding
-                        \revert TupletBracket.staff-padding
+                        \revert Beam.positions                                           %! OC
+                        \revert DynamicLineSpanner.staff-padding                         %! OC
+                        \revert TupletBracket.staff-padding                              %! OC
                         
                         % CelloMusicVoice [measure 85]                                   %! SM4
                         R1 * 3/4

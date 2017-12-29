@@ -220,6 +220,14 @@
                                                 }                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         }                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                            \line                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                accel.                                   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -767,8 +775,9 @@
                                     }                                                    %! EXPLICIT_INSTRUMENT:SM8
                             }                                                            %! EXPLICIT_INSTRUMENT:SM8
                         \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         cs2.
-                        \ppp                                                             %! IC
+                        \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
@@ -903,9 +912,9 @@
                             }                                                            %! EXPLICIT_INSTRUMENT:SM8
                         \set PianoMusicStaff.forceClef = ##t                             %! EXPLICIT_CLEF:SM8
                         \clef "bass"                                                     %! EXPLICIT_CLEF:SM8
+                        \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
                         \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue)  %! EXPLICIT_CLEF_COLOR:SM6
                         %%% \override PianoMusicStaff.Clef.color = ##f                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
-                        \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
                         r1
                         ^ \markup {
                             \column
@@ -962,8 +971,8 @@
                                 #10                                                      %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
                                 Pf.                                                      %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
                             }                                                            %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                        \override PianoMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                         \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! REDRAWN_EXPLICIT_INSTRUMENT_COLOR:SM6
+                        \override PianoMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                         
                         % PianoMusicVoice [measure 2]                                    %! SM4
                         r1
@@ -987,9 +996,9 @@
                             }                                                            %! REDUNDANT_INSTRUMENT:SM8
                         \set PianoMusicStaff.forceClef = ##t                             %! REDUNDANT_CLEF:SM8
                         \clef "bass"                                                     %! REDUNDANT_CLEF:SM8
+                        \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
                         \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
                         %%% \override PianoMusicStaff.Clef.color = ##f                   %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
-                        \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
                         r16
                         ^ \markup {
                             \column
@@ -1046,8 +1055,8 @@
                                 #10                                                      %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
                                 Pf.                                                      %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
                             }                                                            %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                        \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink4)   %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
                         \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
+                        \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink4)   %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
                         
                         \once \override Accidental.stencil = ##f
                         \once \override AccidentalCautionary.stencil = ##f
@@ -1244,9 +1253,9 @@
                                 }                                                        %! EXPLICIT_INSTRUMENT:SM8
                             \set PercussionMusicStaff.forceClef = ##t                    %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
+                            \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
                             \once \override PercussionMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %%% \override PercussionMusicStaff.Clef.color = ##f          %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
-                            \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
                             cs'4
                             :32                                                          %! IC
                             ^ \markup {
@@ -1314,8 +1323,8 @@
                                     #10                                                  %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
                                     Xyl.                                                 %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
                                 }                                                        %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                            \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                             \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! REDRAWN_EXPLICIT_INSTRUMENT_COLOR:SM6
+                            \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1338,29 +1347,30 @@
                         \times 5/8 {
                             
                             % PercussionMusicVoice [measure 10]                          %! SM4
-                            \stopStaff                                                   %! IC
-                            \once \override PercussionMusicStaff.StaffSymbol.line-count = 1 %! IC
-                            \startStaff                                                  %! IC
+                            \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
+                            \once \override PercussionMusicStaff.StaffSymbol.line-count = 1 %! EXPLICIT_STAFF_LINES:SM8
+                            \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            \set PercussionMusicStaff.instrumentName = \markup {         %! EXPLICIT_INSTRUMENT:SM8
-                                \hcenter-in                                              %! EXPLICIT_INSTRUMENT:SM8
-                                    #16                                                  %! EXPLICIT_INSTRUMENT:SM8
-                                    Percussion                                           %! EXPLICIT_INSTRUMENT:SM8
-                                }                                                        %! EXPLICIT_INSTRUMENT:SM8
-                            \set PercussionMusicStaff.shortInstrumentName = \markup {    %! EXPLICIT_INSTRUMENT:SM8
-                                \hcenter-in                                              %! EXPLICIT_INSTRUMENT:SM8
-                                    #10                                                  %! EXPLICIT_INSTRUMENT:SM8
-                                    Perc.                                                %! EXPLICIT_INSTRUMENT:SM8
-                                }                                                        %! EXPLICIT_INSTRUMENT:SM8
+                            \set PercussionMusicStaff.instrumentName = \markup {         %! REDUNDANT_INSTRUMENT:SM8
+                                \hcenter-in                                              %! REDUNDANT_INSTRUMENT:SM8
+                                    #16                                                  %! REDUNDANT_INSTRUMENT:SM8
+                                    Percussion                                           %! REDUNDANT_INSTRUMENT:SM8
+                                }                                                        %! REDUNDANT_INSTRUMENT:SM8
+                            \set PercussionMusicStaff.shortInstrumentName = \markup {    %! REDUNDANT_INSTRUMENT:SM8
+                                \hcenter-in                                              %! REDUNDANT_INSTRUMENT:SM8
+                                    #10                                                  %! REDUNDANT_INSTRUMENT:SM8
+                                    Perc.                                                %! REDUNDANT_INSTRUMENT:SM8
+                                }                                                        %! REDUNDANT_INSTRUMENT:SM8
                             \set PercussionMusicStaff.forceClef = ##t                    %! EXPLICIT_CLEF:SM8
                             \clef "percussion"                                           %! EXPLICIT_CLEF:SM8
                             \once \override PercussionMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %%% \override PercussionMusicStaff.Clef.color = ##f          %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
-                            \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
+                            \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
+                            \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             c'2
                             -\accent                                                     %! IC
                             ^ \markup {
@@ -1381,46 +1391,46 @@
                                                     \upright                             %! IC
                                                         "accent changes of direction noticeably at each attack" %! IC
                                             }                                            %! IC
-                                        %%% \line                                        %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %%%     {                                        %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %%%         \vcenter                             %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %%%             (“Percussion”                    %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %%%         \vcenter                             %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %%%             \hcenter-in                      %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %%%                 #16                          %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %%%                 Percussion                   %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %%%         \concat                              %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %%%             {                                %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %%%                 \vcenter                     %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %%%                     \hcenter-in              %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %%%                         #10                  %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %%%                         Perc.                %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %%%                 \vcenter                     %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %%%                     )                        %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %%%             }                                %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %%%     }                                        %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        \line                                            %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            {                                            %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                \with-color                              %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    #(x11-color 'blue)                   %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    {                                    %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            (“Percussion”                %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \hcenter-in                  %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                #16                      %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                Percussion               %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \concat                          %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            {                            %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    \hcenter-in          %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        #10              %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        Perc.            %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    )                    %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            }                            %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    }                                    %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            }                                            %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                        %%% \line                                        %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                        %%%     {                                        %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                        %%%         \vcenter                             %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                        %%%             (“Percussion”                    %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                        %%%         \vcenter                             %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                        %%%             \hcenter-in                      %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                        %%%                 #16                          %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                        %%%                 Percussion                   %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                        %%%         \concat                              %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                        %%%             {                                %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                        %%%                 \vcenter                     %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                        %%%                     \hcenter-in              %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                        %%%                         #10                  %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                        %%%                         Perc.                %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                        %%%                 \vcenter                     %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                        %%%                     )                        %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                        %%%             }                                %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                        %%%     }                                        %! REDUNDANT_INSTRUMENT_ALERT:SM10
+                                        \line                                            %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                            {                                            %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                \with-color                              %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                    #(x11-color 'DeepPink1)              %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                    {                                    %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        \vcenter                         %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            (“Percussion”                %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        \vcenter                         %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            \hcenter-in                  %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                #16                      %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                Percussion               %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        \concat                          %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            {                            %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                \vcenter                 %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                    \hcenter-in          %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                        #10              %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                        Perc.            %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                \vcenter                 %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                    )                    %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            }                            %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                    }                                    %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                            }                                            %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                         \line                                            %! SM14
                                             {                                            %! SM14
                                                 @                                        %! SM14
@@ -1439,18 +1449,18 @@
                                     \italic                                              %! IC
                                         ”                                                %! IC
                                 }                                                        %! IC
-                            \set PercussionMusicStaff.instrumentName = \markup {         %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                \hcenter-in                                              %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                    #16                                                  %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                    Percussion                                           %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                }                                                        %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                            \set PercussionMusicStaff.shortInstrumentName = \markup {    %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                \hcenter-in                                              %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                    #10                                                  %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                    Perc.                                                %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                }                                                        %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
+                            \set PercussionMusicStaff.instrumentName = \markup {         %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                                \hcenter-in                                              %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                                    #16                                                  %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                                    Percussion                                           %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                                }                                                        %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                            \set PercussionMusicStaff.shortInstrumentName = \markup {    %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                                \hcenter-in                                              %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                                    #10                                                  %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                                    Perc.                                                %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                                }                                                        %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
                             \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
-                            \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! REDRAWN_EXPLICIT_INSTRUMENT_COLOR:SM6
+                            \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -1640,9 +1650,10 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             ef''8
                             :32                                                          %! IC
-                            \fff                                                         %! IC
+                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
                             [
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
@@ -2126,9 +2137,10 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             a8
                             :32                                                          %! IC
-                            \fff                                                         %! IC
+                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
                             [
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
@@ -2613,9 +2625,10 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             eqf,8
                             :32                                                          %! IC
-                            \fff                                                         %! IC
+                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
                             [
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14

@@ -4197,7 +4197,7 @@
                         \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
                         \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                         
-                        c16
+                        c'16
                         -\pp                                                             %! IC
                         ^ \markup {                                                      %! IC
                             \whiteout                                                    %! IC
@@ -4218,7 +4218,7 @@
                         % PercussionMusicVoice [measure 154]                             %! SM4
                         r2..
                         
-                        c16
+                        c'16
                         -\pp                                                             %! IC
                         
                         r8.
@@ -4234,7 +4234,7 @@
                             
                             % PercussionMusicVoice [measure 157]                         %! SM4
                             \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            c2
+                            c'2
                             -\accent                                                     %! IC
                             _ #(make-dynamic-script
                                 (markup
@@ -4268,13 +4268,13 @@
                                     }
                                 }
                             
-                            c1
+                            c'1
                             -\accent                                                     %! IC
                             
-                            c2
+                            c'2
                             -\accent                                                     %! IC
                             
-                            c8
+                            c'8
                             -\accent                                                     %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
@@ -4282,130 +4282,130 @@
                             
                             % PercussionMusicVoice [measure 158]                         %! SM4
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie       %! SM26
-                            c2..
+                            c'2..
                             \repeatTie
                             
-                            c2
+                            c'2
                             -\accent                                                     %! IC
                             
-                            c4
+                            c'4
                             -\accent                                                     %! IC
                         }
                         {
                             
                             % PercussionMusicVoice [measure 159]                         %! SM4
-                            c2
+                            c'2
                             \repeatTie
                             
-                            c8
+                            c'8
                             \repeatTie
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
                             
                             % PercussionMusicVoice [measure 160]                         %! SM4
-                            c8
+                            c'8
                             \repeatTie
                             
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie       %! SM26
-                            c2
+                            c'2
                             -\accent                                                     %! IC
                             
-                            c4.
+                            c'4.
                             -\accent                                                     %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/7 {
                             
                             % PercussionMusicVoice [measure 161]                         %! SM4
-                            c2
+                            c'2
                             \repeatTie
                             
-                            c8
+                            c'8
                             \repeatTie
                             
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie       %! SM26
-                            c2
+                            c'2
                             -\accent                                                     %! IC
                             
-                            c2
+                            c'2
                             -\accent                                                     %! IC
                             
-                            c8
+                            c'8
                             \repeatTie
                         }
                         {
                             
                             % PercussionMusicVoice [measure 162]                         %! SM4
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie       %! SM26
-                            c4.
+                            c'4.
                             \repeatTie
                             
-                            c4.
+                            c'4.
                             -\accent                                                     %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             
                             % PercussionMusicVoice [measure 163]                         %! SM4
-                            c8
+                            c'8
                             \repeatTie
                             
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie       %! SM26
-                            c2..
+                            c'2..
                             -\accent                                                     %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
                             % PercussionMusicVoice [measure 164]                         %! SM4
-                            c8
+                            c'8
                             \repeatTie
                             
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie       %! SM26
-                            c2
+                            c'2
                             -\accent                                                     %! IC
                             
-                            c2
+                            c'2
                             -\accent                                                     %! IC
                             
-                            c8
+                            c'8
                             \repeatTie
                         }
                         {
                             
                             % PercussionMusicVoice [measure 165]                         %! SM4
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie       %! SM26
-                            c4.
+                            c'4.
                             \repeatTie
                             
-                            c4.
+                            c'4.
                             -\accent                                                     %! IC
                         }
                         {
                             
                             % PercussionMusicVoice [measure 166]                         %! SM4
-                            c8
+                            c'8
                             \repeatTie
                             
-                            c2..
+                            c'2..
                             -\accent                                                     %! IC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             
                             % PercussionMusicVoice [measure 167]                         %! SM4
-                            c8
+                            c'8
                             \repeatTie
                             
                             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie       %! SM26
-                            c2
+                            c'2
                             -\accent                                                     %! IC
                             
-                            c1
+                            c'1
                             -\accent                                                     %! IC
                             
-                            c4.
+                            c'4.
                             -\accent                                                     %! IC
                         }
                         
@@ -5181,7 +5181,7 @@
                         %%% \override PercussionMusicStaff.Clef.color = ##f              %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
                         \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
-                        c1
+                        c'1
                         :32                                                              %! IC
                         \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
                         ^ \markup {
@@ -5206,44 +5206,44 @@
                             }
                         \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                         
-                        c4
+                        c'4
                         :32                                                              %! IC
                         \repeatTie
                         
                         % PercussionMusicVoice [measure 195]                             %! SM4
-                        c1
+                        c'1
                         :32                                                              %! IC
                         \repeatTie
                         
                         % PercussionMusicVoice [measure 196]                             %! SM4
-                        c1
+                        c'1
                         :32                                                              %! IC
                         \repeatTie
                         
-                        c8
+                        c'8
                         :32                                                              %! IC
                         \repeatTie
                         
                         % PercussionMusicVoice [measure 197]                             %! SM4
-                        c2.
+                        c'2.
                         :32                                                              %! IC
                         \repeatTie
                         
                         % PercussionMusicVoice [measure 198]                             %! SM4
-                        c2
+                        c'2
                         :32                                                              %! IC
                         \repeatTie
                         
-                        c8
+                        c'8
                         :32                                                              %! IC
                         \repeatTie
                         
                         % PercussionMusicVoice [measure 199]                             %! SM4
-                        c1
+                        c'1
                         :32                                                              %! IC
                         \repeatTie
                         
-                        c8
+                        c'8
                         :32                                                              %! IC
                         \repeatTie
                         \revert DynamicLineSpanner.staff-padding                         %! OC

@@ -6251,25 +6251,36 @@
                         \clef "treble"                                                   %! REDUNDANT_CLEF:SM8
                         \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
                         %%% \override ViolinMusicStaff.Clef.color = ##f                  %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
+                        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         g''4
                         -\downbow                                                        %! IC
+                        _ \markup {
+                            \concat
+                                {
+                                    \vcenter
+                                        \larger
+                                            \italic
+                                                “
+                                    \hspace
+                                        #0.2
+                                    \vcenter
+                                        \dynamic
+                                            \override
+                                                #'(font-name . #f)
+                                                f
+                                    \hspace
+                                        #0.1
+                                    \vcenter
+                                        \larger
+                                            \italic
+                                                ”
+                                }
+                            }                                                            %! EXPLICIT_DYNAMIC:SM8
                         \glissando
                         ^ \markup {                                                      %! IC
                             \whiteout                                                    %! IC
                                 \upright                                                 %! IC
                                     "directly on bridge: full bow each stroke"           %! IC
-                            }                                                            %! IC
-                        _ \markup {                                                      %! IC
-                            \larger                                                      %! IC
-                                \italic                                                  %! IC
-                                    “                                                    %! IC
-                            \dynamic                                                     %! IC
-                                \override                                                %! IC
-                                    #'(font-name . #f)                                   %! IC
-                                    f                                                    %! IC
-                            \larger                                                      %! IC
-                                \italic                                                  %! IC
-                                    ”                                                    %! IC
                             }                                                            %! IC
                         \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink4)  %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
                         
@@ -6409,10 +6420,10 @@
                             % ViolinMusicVoice [measure 312]                             %! SM4
                             \override DynamicLineSpanner.staff-padding = #'6             %! OC
                             \override TupletBracket.staff-padding = #2                   %! OC
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             e'''8
                             -\staccatissimo                                              %! IC
-                            \fff                                                         %! REDUNDANT_DYNAMIC:SM8
+                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -6653,25 +6664,36 @@
                         \clef "treble"                                                   %! EXPLICIT_CLEF:SM8
                         \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue)  %! EXPLICIT_CLEF_COLOR:SM6
                         %%% \override ViolaMusicStaff.Clef.color = ##f                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
+                        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         ef''4
                         -\downbow                                                        %! IC
+                        _ \markup {
+                            \concat
+                                {
+                                    \vcenter
+                                        \larger
+                                            \italic
+                                                “
+                                    \hspace
+                                        #0.2
+                                    \vcenter
+                                        \dynamic
+                                            \override
+                                                #'(font-name . #f)
+                                                f
+                                    \hspace
+                                        #0.1
+                                    \vcenter
+                                        \larger
+                                            \italic
+                                                ”
+                                }
+                            }                                                            %! EXPLICIT_DYNAMIC:SM8
                         \glissando
                         ^ \markup {                                                      %! IC
                             \whiteout                                                    %! IC
                                 \upright                                                 %! IC
                                     "directly on bridge: full bow each stroke"           %! IC
-                            }                                                            %! IC
-                        _ \markup {                                                      %! IC
-                            \larger                                                      %! IC
-                                \italic                                                  %! IC
-                                    “                                                    %! IC
-                            \dynamic                                                     %! IC
-                                \override                                                %! IC
-                                    #'(font-name . #f)                                   %! IC
-                                    f                                                    %! IC
-                            \larger                                                      %! IC
-                                \italic                                                  %! IC
-                                    ”                                                    %! IC
                             }                                                            %! IC
                         \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                         
@@ -6807,10 +6829,10 @@
                             % ViolaMusicVoice [measure 312]                              %! SM4
                             \override DynamicLineSpanner.staff-padding = #'6             %! OC
                             \override TupletBracket.staff-padding = #2                   %! OC
-                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             ef'''8
                             -\staccatissimo                                              %! IC
-                            \fff                                                         %! REDUNDANT_DYNAMIC:SM8
+                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -7044,25 +7066,36 @@
                         \clef "treble"                                                   %! EXPLICIT_CLEF:SM8
                         \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue)  %! EXPLICIT_CLEF_COLOR:SM6
                         %%% \override CelloMusicStaff.Clef.color = ##f                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
+                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         d''4
                         -\downbow                                                        %! IC
+                        _ \markup {
+                            \concat
+                                {
+                                    \vcenter
+                                        \larger
+                                            \italic
+                                                “
+                                    \hspace
+                                        #0.2
+                                    \vcenter
+                                        \dynamic
+                                            \override
+                                                #'(font-name . #f)
+                                                f
+                                    \hspace
+                                        #0.1
+                                    \vcenter
+                                        \larger
+                                            \italic
+                                                ”
+                                }
+                            }                                                            %! EXPLICIT_DYNAMIC:SM8
                         \glissando
                         ^ \markup {                                                      %! IC
                             \whiteout                                                    %! IC
                                 \upright                                                 %! IC
                                     "directly on bridge: full bow each stroke"           %! IC
-                            }                                                            %! IC
-                        _ \markup {                                                      %! IC
-                            \larger                                                      %! IC
-                                \italic                                                  %! IC
-                                    “                                                    %! IC
-                            \dynamic                                                     %! IC
-                                \override                                                %! IC
-                                    #'(font-name . #f)                                   %! IC
-                                    f                                                    %! IC
-                            \larger                                                      %! IC
-                                \italic                                                  %! IC
-                                    ”                                                    %! IC
                             }                                                            %! IC
                         \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                         
@@ -7186,10 +7219,10 @@
                             % CelloMusicVoice [measure 312]                              %! SM4
                             \override DynamicLineSpanner.staff-padding = #'6             %! OC
                             \override TupletBracket.staff-padding = #2                   %! OC
-                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             f'''8
                             -\staccatissimo                                              %! IC
-                            \fff                                                         %! REDUNDANT_DYNAMIC:SM8
+                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC

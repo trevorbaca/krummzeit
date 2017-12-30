@@ -85,6 +85,16 @@ metadata = abjad.TypedOrderedDict(
                             ],
                         ),
                     (
+                        'PercussionMusicVoice',
+                        [
+                            abjad.Momento(
+                                context='PercussionMusicVoice',
+                                prototype='abjad.Dynamic',
+                                value='"ff"',
+                                ),
+                            ],
+                        ),
+                    (
                         'PianoMusicStaff',
                         [
                             abjad.Momento(

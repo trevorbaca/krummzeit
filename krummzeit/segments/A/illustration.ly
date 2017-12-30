@@ -6539,28 +6539,17 @@
                             \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             c'2
                             -\accent                                                     %! IC
-                            _ \markup {
-                                \concat
-                                    {
-                                        \vcenter
-                                            \larger
-                                                \italic
-                                                    “
-                                        \hspace
-                                            #0.2
-                                        \vcenter
-                                            \dynamic
-                                                \override
-                                                    #'(font-name . #f)
-                                                    ff
-                                        \hspace
-                                            #0.1
-                                        \vcenter
-                                            \larger
-                                                \italic
-                                                    ”
-                                    }
-                                }                                                        %! REAPPLIED_DYNAMIC:SM8
+                            _ #(make-dynamic-script
+                                (markup
+                                    #:line (
+                                        #:general-align Y -2 #:normal-text #:larger "“"
+                                        #:hspace -0.4
+                                        #:dynamic "ff"
+                                        #:hspace -0.2
+                                        #:general-align Y -2 #:normal-text #:larger "”"
+                                        )
+                                    )
+                                )                                                        %! REAPPLIED_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {

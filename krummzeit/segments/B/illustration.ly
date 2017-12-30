@@ -2112,9 +2112,9 @@
                                     }                                                    %! REDUNDANT_INSTRUMENT:SM8
                             }                                                            %! REDUNDANT_INSTRUMENT:SM8
                         \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
-                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         cs''4.
-                        \f                                                               %! EXPLICIT_DYNAMIC:SM8
+                        \f                                                               %! REDUNDANT_DYNAMIC:SM8
                         \glissando
                         ^ \markup {
                             \column
@@ -2983,6 +2983,7 @@
                         R1 * 3/4
                         _ #(make-dynamic-script
                             (markup
+                                #:whiteout
                                 #:line (
                                     #:general-align Y -2 #:normal-text #:larger "“"
                                     #:hspace -0.4
@@ -3759,11 +3760,11 @@
                             }                                                            %! REAPPLIED_INSTRUMENT:SM8
                         \set ViolinMusicStaff.forceClef = ##t                            %! REDUNDANT_CLEF:SM8
                         \clef "percussion"                                               %! REDUNDANT_CLEF:SM8
-                        \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
-                        %%% \override ViolinMusicStaff.Clef.color = ##f                  %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
                         \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                         \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                         \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                        \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
+                        %%% \override ViolinMusicStaff.Clef.color = ##f                  %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
                         \once \override Accidental.color = #blue                         %! SM24
                         \once \override Beam.color = #blue                               %! SM24
                         \once \override Dots.color = #blue                               %! SM24
@@ -3776,15 +3777,6 @@
                         ^ \markup {
                             \column
                                 {
-                                    \line                                                %! IC
-                                        {                                                %! IC
-                                            \whiteout                                    %! IC
-                                                \upright                                 %! IC
-                                                    \override                            %! IC
-                                                        #'(box-padding . 0.5)            %! IC
-                                                        \box                             %! IC
-                                                            "scraped slate"              %! IC
-                                        }                                                %! IC
                                     %%% \line                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                     %%%     {                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                     %%%         \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM10
@@ -3825,6 +3817,15 @@
                                                         }                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                 }                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                         }                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    \line                                                %! IC
+                                        {                                                %! IC
+                                            \whiteout                                    %! IC
+                                                \upright                                 %! IC
+                                                    \override                            %! IC
+                                                        #'(box-padding . 0.5)            %! IC
+                                                        \box                             %! IC
+                                                            "scraped slate"              %! IC
+                                        }                                                %! IC
                                 }
                             }
                         \set ViolinMusicStaff.instrumentName = \markup {                 %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -3837,8 +3838,8 @@
                                 #10                                                      %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                 Vn.                                                      %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                             }                                                            %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                        \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink4)  %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
                         \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
+                        \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink4)  %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
                         
                         % ViolinMusicVoice [measure 90]                                  %! SM4
                         \once \override Accidental.color = #blue                         %! SM24

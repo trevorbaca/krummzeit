@@ -6532,15 +6532,16 @@
                                 }                                                        %! REAPPLIED_INSTRUMENT:SM8
                             \set PercussionMusicStaff.forceClef = ##t                    %! REDUNDANT_CLEF:SM8
                             \clef "percussion"                                           %! REDUNDANT_CLEF:SM8
+                            \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                            \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
                             %%% \override PercussionMusicStaff.Clef.color = ##f          %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
-                            \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                             \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) %! REDUNDANT_STAFF_LINES_COLOR:SM6
-                            \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             c'2
                             -\accent                                                     %! IC
                             _ #(make-dynamic-script
                                 (markup
+                                    #:whiteout
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4
@@ -6553,15 +6554,6 @@
                             ^ \markup {
                                 \column
                                     {
-                                        \line                                            %! IC
-                                            {                                            %! IC
-                                                \whiteout                                %! IC
-                                                    \upright                             %! IC
-                                                        \override                        %! IC
-                                                            #'(box-padding . 0.5)        %! IC
-                                                            \box                         %! IC
-                                                                sponges                  %! IC
-                                            }                                            %! IC
                                         %%% \line                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                         %%%     {                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                         %%%         \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT:SM10
@@ -6602,6 +6594,15 @@
                                                             }                            %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                     }                                    %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                             }                                            %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                        \line                                            %! IC
+                                            {                                            %! IC
+                                                \whiteout                                %! IC
+                                                    \upright                             %! IC
+                                                        \override                        %! IC
+                                                            #'(box-padding . 0.5)        %! IC
+                                                            \box                         %! IC
+                                                                sponges                  %! IC
+                                            }                                            %! IC
                                     }
                                 }
                             \set PercussionMusicStaff.instrumentName = \markup {         %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -6614,8 +6615,8 @@
                                     #10                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                     Perc.                                                %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                 }                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                            \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
                             \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
+                            \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
                             
                             c'2
                             -\accent                                                     %! IC
@@ -9125,12 +9126,6 @@
                             ^ \markup {
                                 \column
                                     {
-                                        \line                                            %! IC
-                                            {                                            %! IC
-                                                \whiteout                                %! IC
-                                                    \upright                             %! IC
-                                                        "molto flautando"                %! IC
-                                            }                                            %! IC
                                         %%% \line                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                         %%%     {                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                         %%%         \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT:SM10
@@ -9171,6 +9166,12 @@
                                                             }                            %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                     }                                    %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                             }                                            %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                        \line                                            %! IC
+                                            {                                            %! IC
+                                                \whiteout                                %! IC
+                                                    \upright                             %! IC
+                                                        "molto flautando"                %! IC
+                                            }                                            %! IC
                                     }
                                 }
                             \set ViolaMusicStaff.instrumentName = \markup {              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -10253,12 +10254,6 @@
                             ^ \markup {
                                 \column
                                     {
-                                        \line                                            %! IC
-                                            {                                            %! IC
-                                                \whiteout                                %! IC
-                                                    \upright                             %! IC
-                                                        "molto flautando"                %! IC
-                                            }                                            %! IC
                                         %%% \line                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                         %%%     {                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                         %%%         \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT:SM10
@@ -10299,6 +10294,12 @@
                                                             }                            %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                     }                                    %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                             }                                            %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                        \line                                            %! IC
+                                            {                                            %! IC
+                                                \whiteout                                %! IC
+                                                    \upright                             %! IC
+                                                        "molto flautando"                %! IC
+                                            }                                            %! IC
                                     }
                                 }
                             \set CelloMusicStaff.instrumentName = \markup {              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8

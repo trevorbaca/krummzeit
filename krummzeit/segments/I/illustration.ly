@@ -855,9 +855,9 @@
                                         }                                                %! REAPPLIED_INSTRUMENT:SM8
                                 }                                                        %! REAPPLIED_INSTRUMENT:SM8
                             \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
-                            \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                            \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             c''4.
-                            \ff                                                          %! EXPLICIT_DYNAMIC:SM8
+                            \ff                                                          %! REDUNDANT_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {
@@ -1064,9 +1064,9 @@
                                         }                                                %! REDUNDANT_INSTRUMENT:SM8
                                 }                                                        %! REDUNDANT_INSTRUMENT:SM8
                             \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
-                            \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                            \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             f8
-                            \ff                                                          %! EXPLICIT_DYNAMIC:SM8
+                            \ff                                                          %! REDUNDANT_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {
@@ -1940,15 +1940,11 @@
                                     #10                                                  %! REDUNDANT_INSTRUMENT:SM8
                                     Pf.                                                  %! REDUNDANT_INSTRUMENT:SM8
                                 }                                                        %! REDUNDANT_INSTRUMENT:SM8
-                            \set PianoMusicStaff.forceClef = ##t                         %! REAPPLIED_CLEF:SM8
-                            \clef "bass"                                                 %! REAPPLIED_CLEF:SM8
-                            \once \override PianoMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
-                            %%% \override PianoMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
-                            \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                            \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             fs'''4.
                             :32                                                          %! IC
-                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
+                            \fff                                                         %! REDUNDANT_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {
@@ -2008,7 +2004,6 @@
                                     #10                                                  %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
                                     Pf.                                                  %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
                                 }                                                        %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                            \override PianoMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
                             
                             \once \override Accidental.color = #red
@@ -2392,11 +2387,11 @@
                                 #10                                                      %! REDUNDANT_INSTRUMENT:SM8
                                 Pf.                                                      %! REDUNDANT_INSTRUMENT:SM8
                             }                                                            %! REDUNDANT_INSTRUMENT:SM8
-                        \set PianoMusicStaff.forceClef = ##t                             %! REDUNDANT_CLEF:SM8
-                        \clef "bass"                                                     %! REDUNDANT_CLEF:SM8
+                        \set PianoMusicStaff.forceClef = ##t                             %! EXPLICIT_CLEF:SM8
+                        \clef "bass"                                                     %! EXPLICIT_CLEF:SM8
                         \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
-                        \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
-                        %%% \override PianoMusicStaff.Clef.color = ##f                   %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
+                        \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue)  %! EXPLICIT_CLEF_COLOR:SM6
+                        %%% \override PianoMusicStaff.Clef.color = ##f                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
                         r8
                         ^ \markup {
                             \column
@@ -2454,7 +2449,7 @@
                                 Pf.                                                      %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
                             }                                                            %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
                         \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
-                        \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink4)   %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
+                        \override PianoMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                         \times 2/3 {
                             
                             \ottava #-1
@@ -5423,12 +5418,12 @@
                             \clef "treble"                                               %! REAPPLIED_CLEF:SM8
                             \once \override PercussionMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                             %%% \override PercussionMusicStaff.Clef.color = ##f          %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-                            \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
                             \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-                            \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                            \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
+                            \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             fs''8
                             :32                                                          %! IC
-                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
+                            \fff                                                         %! REDUNDANT_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {
@@ -5811,10 +5806,10 @@
                             %%% \override ViolinMusicStaff.Clef.color = ##f              %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             ef''8
                             :32                                                          %! IC
-                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
+                            \fff                                                         %! REDUNDANT_DYNAMIC:SM8
                             [
                             ^ \markup {
                                 \column
@@ -6256,6 +6251,7 @@
                         -\downbow                                                        %! IC
                         _ #(make-dynamic-script
                             (markup
+                                #:whiteout
                                 #:line (
                                     #:general-align Y -2 #:normal-text #:larger "“"
                                     #:hspace -0.4
@@ -6477,10 +6473,10 @@
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                             %%% \override ViolaMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
-                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             a8
                             :32                                                          %! IC
-                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
+                            \fff                                                         %! REDUNDANT_DYNAMIC:SM8
                             [
                             ^ \markup {
                                 \column
@@ -6658,6 +6654,7 @@
                         -\downbow                                                        %! IC
                         _ #(make-dynamic-script
                             (markup
+                                #:whiteout
                                 #:line (
                                     #:general-align Y -2 #:normal-text #:larger "“"
                                     #:hspace -0.4
@@ -6871,10 +6868,10 @@
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
-                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             eqf,8
                             :32                                                          %! IC
-                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
+                            \fff                                                         %! REDUNDANT_DYNAMIC:SM8
                             [
                             ^ \markup {
                                 \column
@@ -7049,6 +7046,7 @@
                         -\downbow                                                        %! IC
                         _ #(make-dynamic-script
                             (markup
+                                #:whiteout
                                 #:line (
                                     #:general-align Y -2 #:normal-text #:larger "“"
                                     #:hspace -0.4

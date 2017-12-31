@@ -2696,7 +2696,7 @@
                         \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                         \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         R1 * 3/4
-                        \ff                                                              %! REAPPLIED_DYNAMIC:SM8
+                        \pp                                                              %! REAPPLIED_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
@@ -2784,9 +2784,10 @@
                         \clef "bass"                                                     %! REDUNDANT_CLEF:SM8
                         \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
                         %%% \override PianoMusicStaff.Clef.color = ##f                   %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         c'4.
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! EXPLICIT_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
@@ -2809,9 +2810,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'4
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         ~
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -2841,9 +2843,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'4
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         ~
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -2870,9 +2873,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'4
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         ~
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -2892,9 +2896,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'4
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         ~
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -2914,9 +2919,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'4
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         ~
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -3049,10 +3055,10 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                            \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             fs'''16
                             -\staccatissimo                                              %! IC
-                            \ff                                                          %! REDUNDANT_DYNAMIC:SM8
+                            \ff                                                          %! EXPLICIT_DYNAMIC:SM8
                             [
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
@@ -3193,9 +3199,10 @@
                         \clef "bass"                                                     %! EXPLICIT_CLEF:SM8
                         \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue)  %! EXPLICIT_CLEF_COLOR:SM6
                         %%% \override PianoMusicStaff.Clef.color = ##f                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         c'2.
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! EXPLICIT_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
@@ -3218,9 +3225,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'2
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -3230,9 +3238,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'2
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -3241,9 +3250,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'4
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -3253,9 +3263,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'4
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -3264,9 +3275,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'4
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -3275,9 +3287,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'4
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -3287,9 +3300,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'2.
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -3298,9 +3312,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'4
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -3310,9 +3325,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'2..
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -3321,9 +3337,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'2
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -3333,9 +3350,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'4
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -3344,9 +3362,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'4
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -3355,9 +3374,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'4
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -3367,9 +3387,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'4.
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -3378,9 +3399,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'4
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -3390,9 +3412,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'2.
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -3401,9 +3424,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'4.
-                        -\mp                                                             %! IC
                         -\tenuto                                                         %! IC
+                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         \revert NoteHead.style                                           %! OC
@@ -3427,10 +3451,10 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                            \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             fs'''8
                             -\staccatissimo                                              %! IC
-                            \ff                                                          %! REDUNDANT_DYNAMIC:SM8
+                            \ff                                                          %! EXPLICIT_DYNAMIC:SM8
                             [
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
@@ -4138,7 +4162,7 @@
                         %%% \override PercussionMusicStaff.Clef.color = ##f              %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
                         \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                         r16
-                        \ppp                                                             %! REAPPLIED_DYNAMIC:SM8
+                        \pp                                                              %! REAPPLIED_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
@@ -4197,8 +4221,9 @@
                         \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                         \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
                         
+                        \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'16
-                        -\pp                                                             %! IC
+                        \pp                                                              %! REDUNDANT_DYNAMIC:SM8
                         ^ \markup {                                                      %! IC
                             \whiteout                                                    %! IC
                                 \upright                                                 %! IC
@@ -4218,8 +4243,9 @@
                         % PercussionMusicVoice [measure 154]                             %! SM4
                         r2..
                         
+                        \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c'16
-                        -\pp                                                             %! IC
+                        \pp                                                              %! REDUNDANT_DYNAMIC:SM8
                         
                         r8.
                         \revert DynamicLineSpanner.staff-padding                         %! OC
@@ -5576,6 +5602,7 @@
                                 }
                             \override TextSpanner.dash-fraction = #0.25
                             \override TextSpanner.dash-period = #1.5
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             fs''4
                             \glissando
                             \<
@@ -5633,6 +5660,7 @@
                             \revert TextSpanner.bound-details
                             \revert TextSpanner.dash-fraction
                             \revert TextSpanner.dash-period
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             cs''2
                             \f
                             \stopTextSpan
@@ -6393,6 +6421,7 @@
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %%% \override ViolaMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             a''8
                             \glissando
                             \<
@@ -6439,6 +6468,7 @@
                             ef''8
                             \glissando
                             
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             d''2
                             \f
                         }
@@ -6475,6 +6505,7 @@
                                 }
                             \override TextSpanner.dash-fraction = #0.25
                             \override TextSpanner.dash-period = #1.5
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             cs''16
                             \glissando
                             \<
@@ -6623,6 +6654,7 @@
                             \revert TextSpanner.bound-details
                             \revert TextSpanner.dash-fraction
                             \revert TextSpanner.dash-period
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c''2
                             \f
                             \stopTextSpan
@@ -7424,6 +7456,7 @@
                                 }
                             \override TextSpanner.dash-fraction = #0.25
                             \override TextSpanner.dash-period = #1.5
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             g''4
                             \glissando
                             \<
@@ -7458,6 +7491,7 @@
                             \revert TextSpanner.bound-details
                             \revert TextSpanner.dash-fraction
                             \revert TextSpanner.dash-period
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             bf''2
                             \f
                             \stopTextSpan

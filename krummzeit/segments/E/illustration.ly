@@ -6178,6 +6178,7 @@
                             \override NoteHead.style = #'harmonic                        %! OC
                             \override DynamicLineSpanner.staff-padding = #'8             %! OC
                             \override TupletBracket.staff-padding = #4                   %! OC
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             ef''4
                             \glissando
                             \>
@@ -6317,6 +6318,7 @@
                             e'8
                             \glissando
                             
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \ppp
                             \revert NoteHead.style                                       %! OC
@@ -6354,10 +6356,10 @@
                             % ViolinMusicVoice [measure 228]                             %! SM4
                             \override DynamicLineSpanner.staff-padding = #'4             %! OC
                             \override TupletBracket.staff-padding = #2                   %! OC
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             \pitchedTrill
                             g''8.
-                            \ppp                                                         %! EXPLICIT_DYNAMIC:SM8
+                            \ppp                                                         %! REDUNDANT_DYNAMIC:SM8
                             \startTrillSpan a''
                             
                             r16
@@ -6600,6 +6602,7 @@
                             
                             % ViolaMusicVoice [measure 212]                              %! SM4
                             \override NoteHead.style = #'harmonic                        %! OC
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             ef'2
                             \glissando
                             \>
@@ -6738,6 +6741,7 @@
                             e4
                             \glissando
                             
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c8.
                             \ppp
                             \revert NoteHead.style                                       %! OC
@@ -6751,9 +6755,9 @@
                         
                         % ViolaMusicVoice [measure 222]                                  %! SM4
                         \override DynamicLineSpanner.staff-padding = #'6                 %! OC
-                        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         fs4..
-                        \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
+                        \ppp                                                             %! REDUNDANT_DYNAMIC:SM8
                         
                         r16
                         
@@ -7010,6 +7014,7 @@
                             \override NoteHead.style = #'harmonic                        %! OC
                             \override DynamicLineSpanner.staff-padding = #'8             %! OC
                             \override TupletBracket.staff-padding = #4                   %! OC
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             ef'8
                             \glissando
                             \>
@@ -7028,6 +7033,7 @@
                             g'8
                             \glissando
                             
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             d'2
                             \ppp
                             \revert NoteHead.style                                       %! OC
@@ -7069,9 +7075,9 @@
                         
                         % CelloMusicVoice [measure 222]                                  %! SM4
                         \override DynamicLineSpanner.staff-padding = #'6                 %! OC
-                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c,4..
-                        \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
+                        \ppp                                                             %! REDUNDANT_DYNAMIC:SM8
                         
                         r16
                         

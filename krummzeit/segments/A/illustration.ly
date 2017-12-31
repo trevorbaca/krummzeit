@@ -3422,7 +3422,7 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                            \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             f''4
                             \<
                             \f
@@ -7667,7 +7667,7 @@
                             \override Beam.positions = #'(-5 . -5)                       %! OC
                             \override DynamicLineSpanner.staff-padding = #'7             %! OC
                             \override TupletBracket.staff-padding = #4                   %! OC
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             b''16
                             \<
                             \f

@@ -4617,7 +4617,7 @@
                         
                         % ViolaMusicVoice [measure 120]                                  %! SM4
                         \override DynamicLineSpanner.staff-padding = #'5                 %! OC
-                        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         btqs,1
                         \glissando
                         \<
@@ -4933,7 +4933,7 @@
                         
                         % CelloMusicVoice [measure 120]                                  %! SM4
                         \override DynamicLineSpanner.staff-padding = #'5                 %! OC
-                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         b,,\breve
                         \glissando
                         \<

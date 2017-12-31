@@ -70,7 +70,7 @@ metadata = abjad.TypedOrderedDict(
                             abjad.Momento(
                                 context='OboeMusicVoice',
                                 prototype='abjad.Dynamic',
-                                value='ppp',
+                                value='ff',
                                 ),
                             ],
                         ),
@@ -100,7 +100,7 @@ metadata = abjad.TypedOrderedDict(
                             abjad.Momento(
                                 context='PercussionMusicVoice',
                                 prototype='abjad.Dynamic',
-                                value='ppp',
+                                value='p',
                                 ),
                             ],
                         ),

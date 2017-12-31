@@ -65,6 +65,16 @@ metadata = abjad.TypedOrderedDict(
                             ],
                         ),
                     (
+                        'OboeMusicVoice',
+                        [
+                            abjad.Momento(
+                                context='OboeMusicVoice',
+                                prototype='abjad.Dynamic',
+                                value='ff',
+                                ),
+                            ],
+                        ),
+                    (
                         'PercussionMusicStaff',
                         [
                             abjad.Momento(
@@ -90,7 +100,7 @@ metadata = abjad.TypedOrderedDict(
                             abjad.Momento(
                                 context='PercussionMusicVoice',
                                 prototype='abjad.Dynamic',
-                                value='"ff"',
+                                value='p',
                                 ),
                             ],
                         ),

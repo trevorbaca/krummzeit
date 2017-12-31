@@ -1930,6 +1930,7 @@
                             \override NoteHead.style = #'harmonic                        %! OC
                             \override DynamicLineSpanner.staff-padding = #'7             %! OC
                             \override TupletBracket.staff-padding = #3                   %! OC
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             ef''4
                             \glissando
                             \<
@@ -2026,6 +2027,7 @@
                             f'16
                             \glissando
                             
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             g'4
                             \ff
                             \revert NoteHead.style                                       %! OC
@@ -2423,6 +2425,7 @@
                             
                             % ViolaMusicVoice [measure 5]                                %! SM4
                             \override NoteHead.style = #'harmonic                        %! OC
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             fs'4
                             \glissando
                             \<
@@ -2513,6 +2516,7 @@
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             af8.
                             \ff
                             \revert NoteHead.style                                       %! OC
@@ -2905,6 +2909,7 @@
                             \override NoteHead.style = #'harmonic                        %! OC
                             \override DynamicLineSpanner.staff-padding = #'7             %! OC
                             \override TupletBracket.staff-padding = #3                   %! OC
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             e'8
                             \glissando
                             \<
@@ -2983,6 +2988,7 @@
                             e4
                             \glissando
                             
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             a8.
                             \ff
                             \revert NoteHead.style                                       %! OC

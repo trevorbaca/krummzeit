@@ -569,7 +569,7 @@
                         \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         R1 * 7/8
-                        \pp                                                              %! REAPPLIED_DYNAMIC:SM8
+                        \ff                                                              %! REAPPLIED_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
@@ -678,9 +678,9 @@
                                     }                                                    %! EXPLICIT_INSTRUMENT:SM8
                             }                                                            %! EXPLICIT_INSTRUMENT:SM8
                         \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
-                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         b'1..
-                        \ff                                                              %! EXPLICIT_DYNAMIC:SM8
+                        \ff                                                              %! REDUNDANT_DYNAMIC:SM8
                         ~
                         ^ \markup {
                             \column
@@ -2916,7 +2916,7 @@
                         \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                         \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         R1 * 7/8
-                        \ppp                                                             %! REAPPLIED_DYNAMIC:SM8
+                        \p                                                               %! REAPPLIED_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
@@ -2993,6 +2993,7 @@
                         r8
                         \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
                         
+                        \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \once \override Accidental.color = #blue                         %! SM24
                         \once \override Beam.color = #blue                               %! SM24
                         \once \override Dots.color = #blue                               %! SM24
@@ -3001,7 +3002,7 @@
                         \once \override Stem.color = #blue                               %! SM24
                         c4
                         -\accent                                                         %! IC
-                        -\ff                                                             %! IC
+                        \ff                                                              %! EXPLICIT_DYNAMIC:SM8
                         ^ \markup {                                                      %! IC
                             \whiteout                                                    %! IC
                                 \upright                                                 %! IC
@@ -3011,6 +3012,7 @@
                                             crotales                                     %! IC
                             }                                                            %! IC
                         
+                        \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         \once \override Accidental.color = #blue                         %! SM24
                         \once \override Beam.color = #blue                               %! SM24
                         \once \override Dots.color = #blue                               %! SM24
@@ -3019,8 +3021,9 @@
                         \once \override Stem.color = #blue                               %! SM24
                         c4
                         -\accent                                                         %! IC
-                        -\ff                                                             %! IC
+                        \ff                                                              %! REDUNDANT_DYNAMIC:SM8
                         
+                        \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         \once \override Accidental.color = #blue                         %! SM24
                         \once \override Beam.color = #blue                               %! SM24
                         \once \override Dots.color = #blue                               %! SM24
@@ -3029,8 +3032,9 @@
                         \once \override Stem.color = #blue                               %! SM24
                         c4
                         -\accent                                                         %! IC
-                        -\ff                                                             %! IC
+                        \ff                                                              %! REDUNDANT_DYNAMIC:SM8
                         
+                        \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         \once \override Accidental.color = #blue                         %! SM24
                         \once \override Beam.color = #blue                               %! SM24
                         \once \override Dots.color = #blue                               %! SM24
@@ -3039,8 +3043,9 @@
                         \once \override Stem.color = #blue                               %! SM24
                         c4
                         -\accent                                                         %! IC
-                        -\ff                                                             %! IC
+                        \ff                                                              %! REDUNDANT_DYNAMIC:SM8
                         
+                        \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         \once \override Accidental.color = #blue                         %! SM24
                         \once \override Beam.color = #blue                               %! SM24
                         \once \override Dots.color = #blue                               %! SM24
@@ -3049,8 +3054,9 @@
                         \once \override Stem.color = #blue                               %! SM24
                         c4
                         -\accent                                                         %! IC
-                        -\ff                                                             %! IC
+                        \ff                                                              %! REDUNDANT_DYNAMIC:SM8
                         
+                        \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         \once \override Accidental.color = #blue                         %! SM24
                         \once \override Beam.color = #blue                               %! SM24
                         \once \override Dots.color = #blue                               %! SM24
@@ -3059,8 +3065,9 @@
                         \once \override Stem.color = #blue                               %! SM24
                         c4
                         -\accent                                                         %! IC
-                        -\ff                                                             %! IC
+                        \ff                                                              %! REDUNDANT_DYNAMIC:SM8
                         
+                        \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         \once \override Accidental.color = #blue                         %! SM24
                         \once \override Beam.color = #blue                               %! SM24
                         \once \override Dots.color = #blue                               %! SM24
@@ -3069,8 +3076,9 @@
                         \once \override Stem.color = #blue                               %! SM24
                         c4
                         -\accent                                                         %! IC
-                        -\ff                                                             %! IC
+                        \ff                                                              %! REDUNDANT_DYNAMIC:SM8
                         
+                        \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         \once \override Accidental.color = #blue                         %! SM24
                         \once \override Beam.color = #blue                               %! SM24
                         \once \override Dots.color = #blue                               %! SM24
@@ -3079,7 +3087,7 @@
                         \once \override Stem.color = #blue                               %! SM24
                         c4
                         -\accent                                                         %! IC
-                        -\ff                                                             %! IC
+                        \ff                                                              %! REDUNDANT_DYNAMIC:SM8
                         \revert DynamicLineSpanner.staff-padding                         %! OC
                         
                         % PercussionMusicVoice [measure 287]                             %! SM4
@@ -3472,7 +3480,7 @@
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             c4
                             :32                                                          %! IC
-                            \fff                                                         %! REAPPLIED_DYNAMIC:SM8
+                            \pp                                                          %! REAPPLIED_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {
@@ -3710,7 +3718,7 @@
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             c,2
                             :32                                                          %! IC
-                            \fff                                                         %! REAPPLIED_DYNAMIC:SM8
+                            \pp                                                          %! REAPPLIED_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {

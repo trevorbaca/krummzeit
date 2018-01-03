@@ -15,12 +15,12 @@
             \context GlobalSkips = "GlobalSkips" {
                 
                 % GlobalSkips [measure 281]                                              %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -38,21 +38,21 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 7/8                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \mark #8                                                                 %! SM9
                 \bar ""                                                                  %! EMPTY_START_BAR:SM2
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 7/8
-                \startTextSpan
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -187,7 +187,7 @@
                 \time 11/8                                                               %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 11/8
-                \stopTextSpan
+                \stopTextSpan                                                            %! SM29
                 ^ \markup {
                     \column
                         {
@@ -243,7 +243,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             135                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 287]                                              %! SM4
                 \time 5/8                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -453,7 +453,7 @@
                         b'1..
                         \ff                                                              %! EXPLICIT_DYNAMIC:SM8
                         ~
-                        \startTrillSpan
+                        \startTrillSpan                                                  %! SC
                         
                         % OboeMusicVoice [measure 285]                                   %! SM4
                         b'2.
@@ -483,7 +483,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c''2.
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -3347,7 +3347,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             af'4
-                            \glissando
+                            \glissando                                                   %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -3359,15 +3359,15 @@
                             
                             % ViolinMusicVoice [measure 284]                             %! SM4
                             cs'1
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             c'2.
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 2/3 {
                             
                             d'4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             f2
                             ~
@@ -3376,15 +3376,15 @@
                             
                             % ViolinMusicVoice [measure 285]                             %! SM4
                             f16
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             bf'4
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/7 {
                             
                             fs'4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             b'8.
                             ~
@@ -3392,7 +3392,7 @@
                         \times 2/3 {
                             
                             b'8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             af'4
                             \revert NoteHead.style                                       %! OC
@@ -3409,7 +3409,7 @@
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             d''2.
                             \fff                                                         %! EXPLICIT_DYNAMIC:SM8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -3567,7 +3567,7 @@
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             b2.
                             \ppp                                                         %! EXPLICIT_DYNAMIC:SM8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -3586,7 +3586,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c8
-                            \glissando
+                            \glissando                                                   %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -3597,15 +3597,15 @@
                             
                             % ViolaMusicVoice [measure 284]                              %! SM4
                             e2
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             fs4.
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         {
                             
                             f4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             af2
                             ~
@@ -3613,16 +3613,16 @@
                         \times 4/5 {
                             
                             af8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             cs2
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/7 {
                             
                             % ViolaMusicVoice [measure 285]                              %! SM4
                             e4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             g8.
                             ~
@@ -3630,7 +3630,7 @@
                         \times 2/3 {
                             
                             g4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             a2
                             \revert NoteHead.style                                       %! OC
@@ -3647,7 +3647,7 @@
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             d4
                             \fff                                                         %! EXPLICIT_DYNAMIC:SM8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -3804,15 +3804,15 @@
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             a,4
                             \ppp                                                         %! EXPLICIT_DYNAMIC:SM8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             bf,2
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/5 {
                             
                             f,8.
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             d,2.
                             ~
@@ -3820,16 +3820,16 @@
                         \times 4/7 {
                             
                             d,2
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             b,4.
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 2/3 {
                             
                             % CelloMusicVoice [measure 284]                              %! SM4
                             bf,4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             g,2
                             ~
@@ -3837,16 +3837,16 @@
                         {
                             
                             g,4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             f,1
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/7 {
                             
                             % CelloMusicVoice [measure 285]                              %! SM4
                             b,2
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             c4.
                             ~
@@ -3854,7 +3854,7 @@
                         \times 2/3 {
                             
                             c8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             bf,4
                             \revert NoteHead.style                                       %! OC
@@ -3871,7 +3871,7 @@
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             d2
                             \fff                                                         %! EXPLICIT_DYNAMIC:SM8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red

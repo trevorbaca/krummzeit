@@ -75,7 +75,7 @@
                 %%%             =                                                        %! REDUNDANT_METRONOME_MARK:SM27
                 %%%             72                                                       %! REDUNDANT_METRONOME_MARK:SM27
                 %%%         }                                                            %! REDUNDANT_METRONOME_MARK:SM27
-                %%%     }                                                                %! REDUNDANT_METRONOME_MARK:SM27
+                %%%     }                                                                %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 236]                                              %! SM4
                 \time 5/8                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -249,31 +249,31 @@
                     }
                 
                 % GlobalSkips [measure 245]                                              %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \large
                         \upright
                             accel.
                     \hspace
                         #0.75
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 6/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 3/2
-                \startTextSpan
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -432,7 +432,7 @@
                 \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 3/4
-                \stopTextSpan
+                \stopTextSpan                                                            %! SM29
                 ^ \markup {
                     \column
                         {
@@ -488,7 +488,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             144                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 254]                                              %! SM4
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -2408,32 +2408,32 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            \override TextSpanner.bound-details.left-broken.text = #'#f
-                            \override TextSpanner.bound-details.left.padding = #-1
-                            \override TextSpanner.bound-details.left.stencil-align-dir-y = #0
+                            \override TextSpanner.bound-details.left-broken.text = #'#f  %! SC
+                            \override TextSpanner.bound-details.left.padding = #-1       %! SC
+                            \override TextSpanner.bound-details.left.stencil-align-dir-y = #0 %! SC
                             \override TextSpanner.bound-details.left.text = \markup {
                                 \larger
                                     \italic
                                         "grid. possibile"
                                 \hspace
                                     #1
-                                }
-                            \override TextSpanner.bound-details.right-broken.padding = #0
-                            \override TextSpanner.bound-details.right-broken.text = #'#f
-                            \override TextSpanner.bound-details.right.arrow = ##t
-                            \override TextSpanner.bound-details.right.padding = #1
-                            \override TextSpanner.bound-details.right.stencil-align-dir-y = #0
+                                }                                                        %! SC
+                            \override TextSpanner.bound-details.right-broken.padding = #0 %! SC
+                            \override TextSpanner.bound-details.right-broken.text = #'#f %! SC
+                            \override TextSpanner.bound-details.right.arrow = ##t        %! SC
+                            \override TextSpanner.bound-details.right.padding = #1       %! SC
+                            \override TextSpanner.bound-details.right.stencil-align-dir-y = #0 %! SC
                             \override TextSpanner.bound-details.right.text = \markup {
                                 \hspace
                                     #1
                                 \larger
                                     \italic
                                         "flaut. possibile"
-                                }
-                            \override TextSpanner.dash-fraction = #0.25
-                            \override TextSpanner.dash-period = #1.5
+                                }                                                        %! SC
+                            \override TextSpanner.dash-fraction = #0.25                  %! SC
+                            \override TextSpanner.dash-period = #1.5                     %! SC
                             fs2.
-                            \startTextSpan
+                            \startTextSpan                                               %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -2481,16 +2481,16 @@
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
-                            \revert TextSpanner.bound-details
-                            \revert TextSpanner.dash-fraction
-                            \revert TextSpanner.dash-period
+                            \revert TextSpanner.bound-details                            %! SC
+                            \revert TextSpanner.dash-fraction                            %! SC
+                            \revert TextSpanner.dash-period                              %! SC
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs1
-                            \stopTextSpan
+                            \stopTextSpan                                                %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                         }
@@ -2739,32 +2739,32 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            \override TextSpanner.bound-details.left-broken.text = #'#f
-                            \override TextSpanner.bound-details.left.padding = #-1
-                            \override TextSpanner.bound-details.left.stencil-align-dir-y = #0
+                            \override TextSpanner.bound-details.left-broken.text = #'#f  %! SC
+                            \override TextSpanner.bound-details.left.padding = #-1       %! SC
+                            \override TextSpanner.bound-details.left.stencil-align-dir-y = #0 %! SC
                             \override TextSpanner.bound-details.left.text = \markup {
                                 \larger
                                     \italic
                                         "grid. possibile"
                                 \hspace
                                     #1
-                                }
-                            \override TextSpanner.bound-details.right-broken.padding = #0
-                            \override TextSpanner.bound-details.right-broken.text = #'#f
-                            \override TextSpanner.bound-details.right.arrow = ##t
-                            \override TextSpanner.bound-details.right.padding = #1
-                            \override TextSpanner.bound-details.right.stencil-align-dir-y = #0
+                                }                                                        %! SC
+                            \override TextSpanner.bound-details.right-broken.padding = #0 %! SC
+                            \override TextSpanner.bound-details.right-broken.text = #'#f %! SC
+                            \override TextSpanner.bound-details.right.arrow = ##t        %! SC
+                            \override TextSpanner.bound-details.right.padding = #1       %! SC
+                            \override TextSpanner.bound-details.right.stencil-align-dir-y = #0 %! SC
                             \override TextSpanner.bound-details.right.text = \markup {
                                 \hspace
                                     #1
                                 \larger
                                     \italic
                                         "flaut. possibile"
-                                }
-                            \override TextSpanner.dash-fraction = #0.25
-                            \override TextSpanner.dash-period = #1.5
+                                }                                                        %! SC
+                            \override TextSpanner.dash-fraction = #0.25                  %! SC
+                            \override TextSpanner.dash-period = #1.5                     %! SC
                             bf,4
-                            \startTextSpan
+                            \startTextSpan                                               %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -2790,16 +2790,16 @@
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
-                            \revert TextSpanner.bound-details
-                            \revert TextSpanner.dash-fraction
-                            \revert TextSpanner.dash-period
+                            \revert TextSpanner.bound-details                            %! SC
+                            \revert TextSpanner.dash-fraction                            %! SC
+                            \revert TextSpanner.dash-period                              %! SC
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             bf,1.
-                            \stopTextSpan
+                            \stopTextSpan                                                %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                         }
@@ -3006,32 +3006,32 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            \override TextSpanner.bound-details.left-broken.text = #'#f
-                            \override TextSpanner.bound-details.left.padding = #-1
-                            \override TextSpanner.bound-details.left.stencil-align-dir-y = #0
+                            \override TextSpanner.bound-details.left-broken.text = #'#f  %! SC
+                            \override TextSpanner.bound-details.left.padding = #-1       %! SC
+                            \override TextSpanner.bound-details.left.stencil-align-dir-y = #0 %! SC
                             \override TextSpanner.bound-details.left.text = \markup {
                                 \larger
                                     \italic
                                         "grid. possibile"
                                 \hspace
                                     #1
-                                }
-                            \override TextSpanner.bound-details.right-broken.padding = #0
-                            \override TextSpanner.bound-details.right-broken.text = #'#f
-                            \override TextSpanner.bound-details.right.arrow = ##t
-                            \override TextSpanner.bound-details.right.padding = #1
-                            \override TextSpanner.bound-details.right.stencil-align-dir-y = #0
+                                }                                                        %! SC
+                            \override TextSpanner.bound-details.right-broken.padding = #0 %! SC
+                            \override TextSpanner.bound-details.right-broken.text = #'#f %! SC
+                            \override TextSpanner.bound-details.right.arrow = ##t        %! SC
+                            \override TextSpanner.bound-details.right.padding = #1       %! SC
+                            \override TextSpanner.bound-details.right.stencil-align-dir-y = #0 %! SC
                             \override TextSpanner.bound-details.right.text = \markup {
                                 \hspace
                                     #1
                                 \larger
                                     \italic
                                         "flaut. possibile"
-                                }
-                            \override TextSpanner.dash-fraction = #0.25
-                            \override TextSpanner.dash-period = #1.5
+                                }                                                        %! SC
+                            \override TextSpanner.dash-fraction = #0.25                  %! SC
+                            \override TextSpanner.dash-period = #1.5                     %! SC
                             a,,1.
-                            \startTextSpan
+                            \startTextSpan                                               %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -3048,16 +3048,16 @@
                         \times 8/7 {
                             
                             % CelloMusicVoice [measure 249]                              %! SM4
-                            \revert TextSpanner.bound-details
-                            \revert TextSpanner.dash-fraction
-                            \revert TextSpanner.dash-period
+                            \revert TextSpanner.bound-details                            %! SC
+                            \revert TextSpanner.dash-fraction                            %! SC
+                            \revert TextSpanner.dash-period                              %! SC
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             a,,1.
-                            \stopTextSpan
+                            \stopTextSpan                                                %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             

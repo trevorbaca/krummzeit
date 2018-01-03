@@ -127,7 +127,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             135                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 2]                                                %! SM4
                 \time 9/8                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -152,12 +152,12 @@
                 %%%     }                                                                %! STAGE_NUMBER_MARKUP:SM3
                 
                 % GlobalSkips [measure 4]                                                %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -175,19 +175,19 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 3/4
-                \startTextSpan
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -288,7 +288,7 @@
                 % GlobalSkips [measure 7]                                                %! SM4
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 9/8
-                \stopTextSpan
+                \stopTextSpan                                                            %! SM29
                 ^ \markup {
                     \column
                         {
@@ -344,7 +344,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             144                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 8]                                                %! SM4
                 \time 5/8                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -405,7 +405,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             108                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 9]                                                %! SM4
                 \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -478,7 +478,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             135                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 11]                                               %! SM4
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -1932,7 +1932,7 @@
                             \override TupletBracket.staff-padding = #3                   %! OC
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             ef''4
-                            \glissando
+                            \glissando                                                   %! SC
                             \<
                             \pp
                             ^ \markup {                                                  %! IC
@@ -1942,25 +1942,25 @@
                                 }                                                        %! IC
                             
                             d''2
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/5 {
                             
                             fs''16
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             e''4
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
                             % ViolinMusicVoice [measure 5]                               %! SM4
                             d''4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             c''8.
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 2/3 {
                             
@@ -1979,7 +1979,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             d''4
-                            \glissando
+                            \glissando                                                   %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                         }
@@ -1987,7 +1987,7 @@
                             
                             % ViolinMusicVoice [measure 6]                               %! SM4
                             fs''16.
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             g''4.
                         }
@@ -1999,33 +1999,33 @@
                             
                             % ViolinMusicVoice [measure 7]                               %! SM4
                             cs''8.
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             a'2.
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
                             af'4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             a'8.
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         {
                             
                             % ViolinMusicVoice [measure 8]                               %! SM4
                             bf'8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             e'4
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/5 {
                             
                             f'16
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             g'4
@@ -2427,7 +2427,7 @@
                             \override NoteHead.style = #'harmonic                        %! OC
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             fs'4
-                            \glissando
+                            \glissando                                                   %! SC
                             \<
                             \pp
                             ^ \markup {                                                  %! IC
@@ -2437,40 +2437,40 @@
                                 }                                                        %! IC
                             
                             a'8.
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 2/3 {
                             
                             cs'16
-                            \glissando
+                            \glissando                                                   %! SC
                             [
                             
                             e'8
                             ]
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/5 {
                             
                             ef'16
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             fs'4
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
                             % ViolaMusicVoice [measure 6]                                %! SM4
                             a'2
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             af4.
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         {
                             
                             bf8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             e4
                         }
@@ -2483,15 +2483,15 @@
                             
                             % ViolaMusicVoice [measure 8]                                %! SM4
                             ef8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             fs4
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/5 {
                             
                             d32
-                            \glissando
+                            \glissando                                                   %! SC
                             [
                             
                             \once \override Accidental.color = #red
@@ -2512,7 +2512,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             ef4
-                            \glissando
+                            \glissando                                                   %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -2911,7 +2911,7 @@
                             \override TupletBracket.staff-padding = #3                   %! OC
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             e'8
-                            \glissando
+                            \glissando                                                   %! SC
                             \<
                             \pp
                             ^ \markup {                                                  %! IC
@@ -2921,12 +2921,12 @@
                                 }                                                        %! IC
                             
                             g'4
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/5 {
                             
                             ef'16
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             f'4
                         }
@@ -2938,43 +2938,43 @@
                         \times 4/5 {
                             
                             f'16
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             cs'4
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
                             % CelloMusicVoice [measure 6]                                %! SM4
                             c'2
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             a4.
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         {
                             
                             ef'8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             c'4
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/5 {
                             
                             % CelloMusicVoice [measure 7]                                %! SM4
                             d'16.
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             fs4.
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
                             e4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             g8.
                         }
@@ -2986,7 +2986,7 @@
                         \times 4/7 {
                             
                             e4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             a8.

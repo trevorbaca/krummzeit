@@ -154,7 +154,7 @@
                 %%%             =                                                        %! REDUNDANT_METRONOME_MARK:SM27
                 %%%             135                                                      %! REDUNDANT_METRONOME_MARK:SM27
                 %%%         }                                                            %! REDUNDANT_METRONOME_MARK:SM27
-                %%%     }                                                                %! REDUNDANT_METRONOME_MARK:SM27
+                %%%     }                                                                %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 292]                                              %! SM4
                 \time 9/8                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -239,7 +239,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             90                                                       %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 294]                                              %! SM4
                 \time 5/8                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -324,7 +324,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             108                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 296]                                              %! SM4
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
@@ -408,7 +408,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             72                                                       %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 298]                                              %! SM4
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
@@ -434,31 +434,31 @@
                     }
                 
                 % GlobalSkips [measure 299]                                              %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \large
                         \upright
                             rit.
                     \hspace
                         #0.75
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                \startTextSpan
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -515,7 +515,7 @@
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                \stopTextSpan
+                \stopTextSpan                                                            %! SM29
                 ^ \markup {
                     \column
                         {
@@ -571,7 +571,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             36                                                       %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 302]                                              %! SM4
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
@@ -652,30 +652,30 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 309]                                              %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \large
                         \upright
                             accel.
                     \hspace
                         #0.75
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 3/4
-                \startTextSpan
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -764,7 +764,7 @@
                 \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/4
-                \stopTextSpan
+                \stopTextSpan                                                            %! SM29
                 ^ \markup {
                     \column
                         {
@@ -814,7 +814,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             144                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 \override Score.BarLine.transparent = ##f                                %! SM5
                 \bar "|"                                                                 %! SM5
                 
@@ -2456,7 +2456,7 @@
                         \override PianoMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                         \times 2/3 {
                             
-                            \ottava #-1
+                            \ottava #-1                                                  %! SC
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -5383,7 +5383,7 @@
                                             \flat
                                         }
                                 }
-                            \ottava #0
+                            \ottava #0                                                   %! SC
                         }
                         
                         % PianoMusicVoice [measure 313]                                  %! SM4
@@ -6280,7 +6280,7 @@
                                     )
                                 )
                             )                                                            %! EXPLICIT_DYNAMIC:SM8
-                        \glissando
+                        \glissando                                                       %! SC
                         ^ \markup {                                                      %! IC
                             \whiteout                                                    %! IC
                                 \upright                                                 %! IC
@@ -6290,71 +6290,71 @@
                         
                         cs''4
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         ef''4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         fs''4
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         e''8
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         % ViolinMusicVoice [measure 296]                                 %! SM4
                         a''4
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         ef''4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         a'4
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         e''4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         bf'8
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         % ViolinMusicVoice [measure 297]                                 %! SM4
                         d''4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         a'4
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         e'8
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         % ViolinMusicVoice [measure 298]                                 %! SM4
                         bf'4
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         d'4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         e'8
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         % ViolinMusicVoice [measure 299]                                 %! SM4
                         d'4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
@@ -6373,7 +6373,7 @@
                         \once \override Stem.color = #red
                         g'4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -6683,7 +6683,7 @@
                                     )
                                 )
                             )                                                            %! EXPLICIT_DYNAMIC:SM8
-                        \glissando
+                        \glissando                                                       %! SC
                         ^ \markup {                                                      %! IC
                             \whiteout                                                    %! IC
                                 \upright                                                 %! IC
@@ -6693,53 +6693,53 @@
                         
                         bf''4
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         f''4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         af''4
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         b'8
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         % ViolaMusicVoice [measure 296]                                  %! SM4
                         fs''4
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         f'4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         af'4
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         b'4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         g'8
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         % ViolaMusicVoice [measure 297]                                  %! SM4
                         cs'4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         af'4
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         b8
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         % ViolaMusicVoice [measure 298]                                  %! SM4
                         \once \override Accidental.color = #red
@@ -6759,26 +6759,26 @@
                         \once \override Stem.color = #red
                         g'4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
                         ef'8
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         % ViolaMusicVoice [measure 299]                                  %! SM4
                         cs'4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         ef4
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         fs4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         b4
                         -\upbow                                                          %! IC
@@ -7075,7 +7075,7 @@
                                     )
                                 )
                             )                                                            %! EXPLICIT_DYNAMIC:SM8
-                        \glissando
+                        \glissando                                                       %! SC
                         ^ \markup {                                                      %! IC
                             \whiteout                                                    %! IC
                                 \upright                                                 %! IC
@@ -7085,79 +7085,79 @@
                         
                         e''4
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         g''4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         f''4
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         bf'8
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         % CelloMusicVoice [measure 296]                                  %! SM4
                         e'4
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         g'4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         f'4
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         bf'4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         ef'8
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         % CelloMusicVoice [measure 297]                                  %! SM4
                         bf'4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         f'4
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         cs'8
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         % CelloMusicVoice [measure 298]                                  %! SM4
                         ef'4
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         fs'4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         f8
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         % CelloMusicVoice [measure 299]                                  %! SM4
                         bf4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         f4
                         -\upbow                                                          %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         e4
                         -\downbow                                                        %! IC
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         bf4
                         -\upbow                                                          %! IC

@@ -75,7 +75,7 @@
                 %%%             =                                                        %! REDUNDANT_METRONOME_MARK:SM27
                 %%%             108                                                      %! REDUNDANT_METRONOME_MARK:SM27
                 %%%         }                                                            %! REDUNDANT_METRONOME_MARK:SM27
-                %%%     }                                                                %! REDUNDANT_METRONOME_MARK:SM27
+                %%%     }                                                                %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 201]                                              %! SM4
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -205,7 +205,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             135                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 209]                                              %! SM4
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
@@ -275,7 +275,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             72                                                       %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 211]                                              %! SM4
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -407,7 +407,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             108                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 215]                                              %! SM4
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
@@ -477,7 +477,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             90                                                       %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 217]                                              %! SM4
                 \time 11/8                                                               %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -538,7 +538,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             108                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 218]                                              %! SM4
                 \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -609,7 +609,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             90                                                       %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 220]                                              %! SM4
                 \time 9/8                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -751,7 +751,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             135                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 225]                                              %! SM4
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
@@ -834,7 +834,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             45                                                       %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 227]                                              %! SM4
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
@@ -1014,7 +1014,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             72                                                       %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 233]                                              %! SM4
                 \time 5/8                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -1354,7 +1354,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             g''4.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             ^ \markup {
@@ -1371,8 +1371,8 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             g''4.
-                            \stopTrillSpan
-                            \startTrillSpan
+                            \stopTrillSpan                                               %! SC
+                            \startTrillSpan                                              %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             ^ \markup {
@@ -1385,7 +1385,7 @@
                         }
                         
                         r4
-                        \stopTrillSpan
+                        \stopTrillSpan                                                   %! SC
                         
                         % OboeMusicVoice [measure 202]                                   %! SM4
                         r2
@@ -1394,7 +1394,7 @@
                             f''8.
                             
                             e''4
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             ^ \markup {
                                 \override
                                     #'(circle-padding . 0.25)
@@ -1404,7 +1404,7 @@
                                 }
                             
                             d'''16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             [
                             ^ \markup {
                                 \override
@@ -1526,7 +1526,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             c''4.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             ^ \markup {
@@ -1538,8 +1538,8 @@
                                 }
                             
                             g'2
-                            \stopTrillSpan
-                            \startTrillSpan
+                            \stopTrillSpan                                               %! SC
+                            \startTrillSpan                                              %! SC
                             ^ \markup {
                                 \override
                                     #'(circle-padding . 0.25)
@@ -1549,7 +1549,7 @@
                                 }
                             
                             fs''8
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             [
                             
                             ds''8
@@ -1878,7 +1878,7 @@
                                 }
                             
                             fs'4.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             ^ \markup {
                                 \override
                                     #'(circle-padding . 0.25)
@@ -1888,8 +1888,8 @@
                                 }
                             
                             gs'4.
-                            \stopTrillSpan
-                            \startTrillSpan
+                            \stopTrillSpan                                               %! SC
+                            \startTrillSpan                                              %! SC
                             ^ \markup {
                                 \override
                                     #'(circle-padding . 0.25)
@@ -1900,7 +1900,7 @@
                         }
                         
                         r4.
-                        \stopTrillSpan
+                        \stopTrillSpan                                                   %! SC
                         
                         % OboeMusicVoice [measure 207]                                   %! SM4
                         r2.
@@ -1914,7 +1914,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             cs'4
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             ^ \markup {
@@ -1931,7 +1931,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             cs'16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             [
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
@@ -2200,7 +2200,7 @@
                             \once \override Stem.color = #red
                             a16
                             ]
-                            \glissando
+                            \glissando                                                   %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             ^ \markup {
@@ -2260,7 +2260,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             gtqs'1
-                            \glissando
+                            \glissando                                                   %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -2339,7 +2339,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs'2.
-                            \glissando
+                            \glissando                                                   %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -2441,7 +2441,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             dqs'32
-                            \glissando
+                            \glissando                                                   %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             ^ \markup {
@@ -2540,115 +2540,115 @@
                             \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             fs''8.
                             \ppp                                                         %! EXPLICIT_DYNAMIC:SM8
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8
                             ~
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                         }
                         \times 2/3 {
                             
                             fs''16
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                         }
                         \times 2/3 {
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8
                             ~
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                         }
                         \times 2/3 {
                             
                             fs''16
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                         }
                         \times 2/3 {
                             
                             % OboeMusicVoice [measure 229]                               %! SM4
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8
                             ~
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                         }
                         \times 2/3 {
                             
                             fs''16
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                         }
                         \times 2/3 {
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8
                             ~
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                         }
                         \times 2/3 {
                             
                             fs''16
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                         }
                         \times 2/3 {
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8
                             ~
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                         }
                         \times 2/3 {
                             
@@ -2656,50 +2656,50 @@
                             fs''16
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                         }
                         \times 2/3 {
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8
                             ~
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                         }
                         \times 2/3 {
                             
                             fs''16
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                         }
                         \times 2/3 {
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8
                             ~
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                         }
                         \times 2/3 {
                             
@@ -2707,132 +2707,132 @@
                             fs''16
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                         }
                         \times 2/3 {
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8
                             ~
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                         }
                         \times 2/3 {
                             
                             fs''16
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                         }
                         \times 2/3 {
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8
                             ~
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                         }
                         \times 2/3 {
                             
                             fs''16
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                         }
                         \times 2/3 {
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8
                             ~
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                         }
                         \times 2/3 {
                             
                             fs''16
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                         }
                         \times 2/3 {
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             % OboeMusicVoice [measure 233]                               %! SM4
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8
                             ~
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                         }
                         \times 2/3 {
                             
                             fs''16
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                         }
                         \times 2/3 {
                             
                             fs''8.
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
                             fs''8
-                            \startTrillSpan
+                            \startTrillSpan                                              %! SC
                             \revert DynamicLineSpanner.staff-padding                     %! OC
                             \revert TupletBracket.staff-padding                          %! OC
                         }
                         
                         % OboeMusicVoice [measure 234]                                   %! SM4
                         R1 * 9/8
-                        \stopTrillSpan
+                        \stopTrillSpan                                                   %! SC
                         
                     }
                 }
@@ -3129,7 +3129,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             a16
-                            \glissando
+                            \glissando                                                   %! SC
                             [
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
@@ -3178,7 +3178,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             gtqs'2.
-                            \glissando
+                            \glissando                                                   %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -3271,7 +3271,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             fs'8
-                            \glissando
+                            \glissando                                                   %! SC
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
@@ -3341,7 +3341,7 @@
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
                             eqs'16
-                            \glissando
+                            \glissando                                                   %! SC
                             [
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
@@ -4479,7 +4479,7 @@
                         }
                         
                         % PianoMusicVoice [measure 226]                                  %! SM4
-                        \ottava #-1
+                        \ottava #-1                                                      %! SC
                         \set PianoMusicStaff.forceClef = ##t                             %! EXPLICIT_CLEF:SM8
                         \clef "bass"                                                     %! EXPLICIT_CLEF:SM8
                         \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue)  %! EXPLICIT_CLEF_COLOR:SM6
@@ -4526,7 +4526,7 @@
                         r32
                         
                         bf,,,8..
-                        \ottava #0
+                        \ottava #0                                                       %! SC
                         
                         r32
                         
@@ -4543,7 +4543,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
                             
-                            \ottava #1
+                            \ottava #1                                                   %! SC
                             \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c''''8
                             -\staccatissimo                                              %! IC
@@ -4625,7 +4625,7 @@
                             
                             g''''4
                             -\staccatissimo                                              %! IC
-                            \ottava #0
+                            \ottava #0                                                   %! SC
                         }
                         
                         % PianoMusicVoice [measure 234]                                  %! SM4
@@ -6180,7 +6180,7 @@
                             \override TupletBracket.staff-padding = #4                   %! OC
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             ef''4
-                            \glissando
+                            \glissando                                                   %! SC
                             \>
                             \p
                             ^ \markup {                                                  %! IC
@@ -6190,39 +6190,39 @@
                                 }                                                        %! IC
                             
                             e''2
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/5 {
                             
                             g''16
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             d''4
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
                             % ViolinMusicVoice [measure 212]                             %! SM4
                             ef''2
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             f''4.
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 2/3 {
                             
                             fs''4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             e''2
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/5 {
                             
                             % ViolinMusicVoice [measure 213]                             %! SM4
                             d''8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             fs''2
                         }
@@ -6234,41 +6234,41 @@
                             
                             % ViolinMusicVoice [measure 214]                             %! SM4
                             a'8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             c''2
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/7 {
                             
                             cs''4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             e''8.
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 2/3 {
                             
                             % ViolinMusicVoice [measure 215]                             %! SM4
                             d''4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             ef''2
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/5 {
                             
                             f'16
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             fs''4
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/7 {
                             
                             % ViolinMusicVoice [measure 216]                             %! SM4
                             cs''4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             d''8.
                         }
@@ -6282,41 +6282,41 @@
                             
                             % ViolinMusicVoice [measure 217]                             %! SM4
                             fs'2
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             a'4.
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 2/3 {
                             
                             c''4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             g'2
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/5 {
                             
                             % ViolinMusicVoice [measure 218]                             %! SM4
                             af'8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             a'2
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/7 {
                             
                             bf'4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             ef'8.
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 2/3 {
                             
                             % ViolinMusicVoice [measure 219]                             %! SM4
                             e'8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
@@ -6357,60 +6357,60 @@
                             \override DynamicLineSpanner.staff-padding = #'4             %! OC
                             \override TupletBracket.staff-padding = #2                   %! OC
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
-                            \pitchedTrill
+                            \pitchedTrill                                                %! SC
                             g''8.
                             \ppp                                                         %! REDUNDANT_DYNAMIC:SM8
-                            \startTrillSpan a''
+                            \startTrillSpan a''                                          %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
-                            \pitchedTrill
+                            \pitchedTrill                                                %! SC
                             g''8
                             ~
-                            \startTrillSpan a''
+                            \startTrillSpan a''                                          %! SC
                         }
                         \times 2/3 {
                             
                             g''16
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
-                            \pitchedTrill
+                            \pitchedTrill                                                %! SC
                             g''8.
-                            \startTrillSpan a''
+                            \startTrillSpan a''                                          %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                         }
                         \times 2/3 {
                             
-                            \pitchedTrill
+                            \pitchedTrill                                                %! SC
                             g''8.
-                            \startTrillSpan a''
+                            \startTrillSpan a''                                          %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
-                            \pitchedTrill
+                            \pitchedTrill                                                %! SC
                             g''8
                             ~
-                            \startTrillSpan a''
+                            \startTrillSpan a''                                          %! SC
                         }
                         \times 2/3 {
                             
                             g''16
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                             
-                            \pitchedTrill
+                            \pitchedTrill                                                %! SC
                             g''8.
-                            \startTrillSpan a''
+                            \startTrillSpan a''                                          %! SC
                             
                             r16
-                            \stopTrillSpan
+                            \stopTrillSpan                                               %! SC
                         }
                         
                         % ViolinMusicVoice [measure 229]                                 %! SM4
@@ -6604,7 +6604,7 @@
                             \override NoteHead.style = #'harmonic                        %! OC
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             ef'2
-                            \glissando
+                            \glissando                                                   %! SC
                             \>
                             \p
                             ^ \markup {                                                  %! IC
@@ -6614,38 +6614,38 @@
                                 }                                                        %! IC
                             
                             e'4.
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 2/3 {
                             
                             g'8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             d'4
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/5 {
                             
                             ef'8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             f'2
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             
                             % ViolaMusicVoice [measure 213]                              %! SM4
                             fs'2
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             e'4.
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 2/3 {
                             
                             d'4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             fs'2
                         }
@@ -6658,40 +6658,40 @@
                             
                             % ViolaMusicVoice [measure 215]                              %! SM4
                             a8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             c'4
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/5 {
                             
                             cs'16
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             e4
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/7 {
                             
                             d'4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             ef'8.
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         {
                             
                             % ViolaMusicVoice [measure 216]                              %! SM4
                             f4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             fs2
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/5 {
                             
                             cs'16
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             d'4
                             \revert DynamicLineSpanner.staff-padding                     %! OC
@@ -6706,40 +6706,40 @@
                             
                             % ViolaMusicVoice [measure 218]                              %! SM4
                             fs16
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             a4
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/7 {
                             
                             c4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             g8.
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 2/3 {
                             
                             af8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             a4
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/5 {
                             
                             % ViolaMusicVoice [measure 219]                              %! SM4
                             bf16.
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             ef4.
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/7 {
                             
                             e4
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c8.
@@ -7016,7 +7016,7 @@
                             \override TupletBracket.staff-padding = #4                   %! OC
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             ef'8
-                            \glissando
+                            \glissando                                                   %! SC
                             \>
                             \p
                             ^ \markup {                                                  %! IC
@@ -7026,12 +7026,12 @@
                                 }                                                        %! IC
                             
                             e'4
-                            \glissando
+                            \glissando                                                   %! SC
                         }
                         \times 4/5 {
                             
                             g'8
-                            \glissando
+                            \glissando                                                   %! SC
                             
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             d'2

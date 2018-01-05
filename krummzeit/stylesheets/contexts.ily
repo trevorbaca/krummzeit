@@ -1,4 +1,6 @@
 \layout {
+    
+    % GLOBAL SKIPS
     \context {
         \name GlobalSkips
         \type Engraver_group
@@ -14,6 +16,8 @@
         \override TextSpanner.font-size = 6
         \override TextSpanner.staff-padding = 4
         }
+
+    % GLOBAL RESTS
     \context {
         \name GlobalRests
         \type Engraver_group
@@ -23,6 +27,8 @@
         \override MultiMeasureRestText.outside-staff-priority = 0
         \override MultiMeasureRestText.padding = 0
         }
+
+    % GLOBAL CONTEXT
     \context {
         \name GlobalContext
         \type Engraver_group
@@ -45,21 +51,13 @@
         \override MetronomeMark.extra-offset = #'(0 . 4)
         \override MetronomeMark.font-size = 3
         \override RehearsalMark.X-extent = #'(0 . 0)
-        \override RehearsalMark.Y-offset = -2.25
-        \override RehearsalMark.X-offset = 6
+        \override RehearsalMark.Y-extent = #'(0 . 0)
         \override RehearsalMark.break-align-symbols = #'(time-signature)
         \override RehearsalMark.break-visibility = #end-of-line-invisible
         \override RehearsalMark.font-name = "Didot"
         \override RehearsalMark.font-size = 10
         \override RehearsalMark.outside-staff-priority = 500
         \override RehearsalMark.self-alignment-X = #center
-        %\override Script.font-size = 6
-        %\override Script.extra-offset = #'(4 . -9)
-        %\override TextScript.font-size = 3
-        %\override TextScript.outside-staff-priority = 600
-        %\override TextScript.padding = 6
-        %\override TextSpanner.bound-details.right.attach-dir = #LEFT
-        %\override TextSpanner.padding = 6.75
         \override TimeSignature.X-extent = #'(0 . 0)
         \override TimeSignature.break-align-symbol = #'left-edge
         \override TimeSignature.break-visibility = #end-of-line-invisible
@@ -74,14 +72,20 @@
         )
         \override VerticalAxisGroup.minimum-Y-extent = #'(-20 . 20)
     }
+
+    % STAFF
     \context {
         \Staff
         \remove Time_signature_engraver
     }
+
+    % VOICE
     \context {
         \Voice
         \remove Forbid_line_break_engraver
     }
+
+    % OBOE
     \context {
         \Voice
         \name OboeMusicVoice
@@ -98,6 +102,8 @@
         \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
     }
+
+    % CLARINET
     \context {
         \Voice
         \name ClarinetMusicVoice
@@ -114,6 +120,8 @@
         \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
     }
+
+    % WIND SECTION STAFF GROUP
     \context {
         \PianoStaff
         \name WindSectionStaffGroup
@@ -124,6 +132,8 @@
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 22
         \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 26
     }
+
+    % PIANO
     \context {
         \Voice
         \name PianoMusicVoice
@@ -140,6 +150,8 @@
         \override DynamicLineSpanner.staff-padding = 9
         \override TupletBracket.staff-padding = 5
     }
+
+    % PERCUSSION
     \context {
         \Voice
         \name PercussionMusicVoice
@@ -156,6 +168,8 @@
         \override DynamicLineSpanner.staff-padding = 9
         \override TupletBracket.staff-padding = 5
     }
+
+    % PERCUSSION SECTION STAFF GROUP
     \context {
         \PianoStaff
         \name PercussionSectionStaffGroup
@@ -166,6 +180,8 @@
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 22
         \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 26
     }
+
+    % VIOLIN
     \context {
         \Voice
         \name ViolinMusicVoice
@@ -182,6 +198,8 @@
         \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
     }
+
+    % VIOLA
     \context {
         \Voice
         \name ViolaMusicVoice
@@ -198,6 +216,8 @@
         \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
     }
+
+    % CELLO
     \context {
         \Voice
         \name CelloMusicVoice
@@ -214,6 +234,8 @@
         \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
     }
+
+    % STRING SECTION STAFF GROUP
     \context {
         \PianoStaff
         \name StringSectionStaffGroup
@@ -225,16 +247,20 @@
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 22
         \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 26
     }
+
+    % MUSIC CONTEXT
     \context {
-        \StaffGroup
+        \ChoirStaff
         \name MusicContext
         \type Engraver_group
-        \alias StaffGroup
+        \alias ChoirStaff
         \accepts WindSectionStaffGroup
         \accepts PercussionSectionStaffGroup
         \accepts StringSectionStaffGroup
         systemStartDelimiter = #'SystemStartBar
     }
+
+    % SCORE
     \context {
         \Score
         \accepts GlobalContext

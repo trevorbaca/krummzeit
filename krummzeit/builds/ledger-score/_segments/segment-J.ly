@@ -8,7 +8,7 @@
             % GlobalSkips [measure 314]                                              %! SM4
             \time 5/4                                                                %! SM1
             \mark #10                                                                %! SM9
-            %%% \bar ""                                                              %! EMPTY_START_BAR:SM2
+            %%% \bar ""                                                              %! SEGMENT_EMPTY_START_BAR:SM2
             s1 * 5/4
             ^ \markup {
                 \column

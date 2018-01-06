@@ -97,7 +97,7 @@
             % GlobalSkips [measure 257]                                              %! SM4
             \time 9/8                                                                %! SM1
             \mark #7                                                                 %! SM9
-            %%% \bar ""                                                              %! EMPTY_START_BAR:SM2
+            %%% \bar ""                                                              %! SEGMENT_EMPTY_START_BAR:SM2
             s1 * 9/8
             ^ \markup {
                 \column

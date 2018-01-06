@@ -220,7 +220,7 @@
             % GlobalSkips [measure 89]                                               %! SM4
             \time 3/4                                                                %! SM1
             \mark #2                                                                 %! SM9
-            %%% \bar ""                                                              %! EMPTY_START_BAR:SM2
+            %%% \bar ""                                                              %! SEGMENT_EMPTY_START_BAR:SM2
             s1 * 3/4
             ^ \markup {
                 \column

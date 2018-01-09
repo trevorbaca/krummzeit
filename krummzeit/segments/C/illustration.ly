@@ -179,7 +179,7 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.1]                                        %! STAGE_NUMBER_MARKUP:SM3
@@ -254,7 +254,7 @@
                 \startTextSpan                                                           %! SM29
             %%% ^ \markup {                                                              %! STAGE_NUMBER_MARKUP:SM3
             %%%     \fontsize                                                            %! STAGE_NUMBER_MARKUP:SM3
-            %%%         #-3                                                              %! STAGE_NUMBER_MARKUP:SM3
+            %%%         #3                                                               %! STAGE_NUMBER_MARKUP:SM3
             %%%         \with-color                                                      %! STAGE_NUMBER_MARKUP:SM3
             %%%             #(x11-color 'DarkCyan)                                       %! STAGE_NUMBER_MARKUP:SM3
             %%%             [C.2]                                                        %! STAGE_NUMBER_MARKUP:SM3
@@ -294,7 +294,7 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.3]                                        %! STAGE_NUMBER_MARKUP:SM3
@@ -369,7 +369,7 @@
                 \startTextSpan                                                           %! SM29
             %%% ^ \markup {                                                              %! STAGE_NUMBER_MARKUP:SM3
             %%%     \fontsize                                                            %! STAGE_NUMBER_MARKUP:SM3
-            %%%         #-3                                                              %! STAGE_NUMBER_MARKUP:SM3
+            %%%         #3                                                               %! STAGE_NUMBER_MARKUP:SM3
             %%%         \with-color                                                      %! STAGE_NUMBER_MARKUP:SM3
             %%%             #(x11-color 'DarkCyan)                                       %! STAGE_NUMBER_MARKUP:SM3
             %%%             [C.4]                                                        %! STAGE_NUMBER_MARKUP:SM3
@@ -409,7 +409,7 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.5]                                        %! STAGE_NUMBER_MARKUP:SM3
@@ -484,7 +484,7 @@
                 \startTextSpan                                                           %! SM29
             %%% ^ \markup {                                                              %! STAGE_NUMBER_MARKUP:SM3
             %%%     \fontsize                                                            %! STAGE_NUMBER_MARKUP:SM3
-            %%%         #-3                                                              %! STAGE_NUMBER_MARKUP:SM3
+            %%%         #3                                                               %! STAGE_NUMBER_MARKUP:SM3
             %%%         \with-color                                                      %! STAGE_NUMBER_MARKUP:SM3
             %%%             #(x11-color 'DarkCyan)                                       %! STAGE_NUMBER_MARKUP:SM3
             %%%             [C.6]                                                        %! STAGE_NUMBER_MARKUP:SM3
@@ -524,7 +524,7 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.7]                                        %! STAGE_NUMBER_MARKUP:SM3
@@ -599,7 +599,7 @@
                 \startTextSpan                                                           %! SM29
             %%% ^ \markup {                                                              %! STAGE_NUMBER_MARKUP:SM3
             %%%     \fontsize                                                            %! STAGE_NUMBER_MARKUP:SM3
-            %%%         #-3                                                              %! STAGE_NUMBER_MARKUP:SM3
+            %%%         #3                                                               %! STAGE_NUMBER_MARKUP:SM3
             %%%         \with-color                                                      %! STAGE_NUMBER_MARKUP:SM3
             %%%             #(x11-color 'DarkCyan)                                       %! STAGE_NUMBER_MARKUP:SM3
             %%%             [C.8]                                                        %! STAGE_NUMBER_MARKUP:SM3
@@ -615,7 +615,7 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.9]                                        %! STAGE_NUMBER_MARKUP:SM3
@@ -834,7 +834,7 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.10]                                       %! STAGE_NUMBER_MARKUP:SM3
@@ -882,7 +882,7 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.11]                                       %! STAGE_NUMBER_MARKUP:SM3
@@ -905,7 +905,7 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.12]                                       %! STAGE_NUMBER_MARKUP:SM3
@@ -980,7 +980,7 @@
                 \startTextSpan                                                           %! SM29
             %%% ^ \markup {                                                              %! STAGE_NUMBER_MARKUP:SM3
             %%%     \fontsize                                                            %! STAGE_NUMBER_MARKUP:SM3
-            %%%         #-3                                                              %! STAGE_NUMBER_MARKUP:SM3
+            %%%         #3                                                               %! STAGE_NUMBER_MARKUP:SM3
             %%%         \with-color                                                      %! STAGE_NUMBER_MARKUP:SM3
             %%%             #(x11-color 'DarkCyan)                                       %! STAGE_NUMBER_MARKUP:SM3
             %%%             [C.13]                                                       %! STAGE_NUMBER_MARKUP:SM3
@@ -996,7 +996,7 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.14]                                       %! STAGE_NUMBER_MARKUP:SM3
@@ -1019,7 +1019,7 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.15]                                       %! STAGE_NUMBER_MARKUP:SM3
@@ -1067,7 +1067,7 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.16]                                       %! STAGE_NUMBER_MARKUP:SM3
@@ -1145,7 +1145,7 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.17]                                       %! STAGE_NUMBER_MARKUP:SM3

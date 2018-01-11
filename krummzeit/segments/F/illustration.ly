@@ -70,7 +70,7 @@
                 \once \override TextSpanner.dash-period = 0                              %! SM29
                 \time 9/8                                                                %! REAPPLIED_TIME_SIGNATURE:SM8
                 \mark #6                                                                 %! SM9
-                \bar ""                                                                  %! SEGMENT_EMPTY_START_BAR:SM2
+                \bar ""                                                                  %! SEGMENT+EMPTY_START_BAR:SM2
                 \once \override Score.TimeSignature.color = #(x11-color 'green4)         %! REAPPLIED_TIME_SIGNATURE_COLOR:SM6
                 s1 * 9/8
                 \startTextSpan                                                           %! SM29

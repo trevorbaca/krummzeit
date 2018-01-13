@@ -799,19 +799,19 @@
             %@%                             \score                                       %! EXPLICIT_METRONOME_MARK:SM27
             %@%                                 {                                        %! EXPLICIT_METRONOME_MARK:SM27
             %@%                                     \new Score \with {                   %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                         \override SpacingSpanner.spacing-increment = #0.5     %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                         proportionalNotationDuration = ##f     %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                         \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                         proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK:SM27
             %@%                                     } <<                                 %! EXPLICIT_METRONOME_MARK:SM27
             %@%                                         \new RhythmicStaff \with {       %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                             \remove Time_signature_engraver     %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                             \remove Staff_symbol_engraver     %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                             \override Stem.direction = #up     %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                             \override Stem.length = #5     %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                             \override TupletBracket.bracket-visibility = ##t     %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                             \override TupletBracket.direction = #up     %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                             \override TupletBracket.padding = #1.25     %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                             \override TupletBracket.shorten-pair = #'(-1 . -1.5)     %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                             \override TupletNumber.text = #tuplet-number::calc-fraction-text     %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                             \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                             \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                             \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                             \override Stem.length = #5   %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                             \override TupletBracket.bracket-visibility = ##t %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                             \override TupletBracket.direction = #up %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                             \override TupletBracket.padding = #1.25 %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                             \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                             \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK:SM27
             %@%                                             tupletFullLength = ##t       %! EXPLICIT_METRONOME_MARK:SM27
             %@%                                         } {                              %! EXPLICIT_METRONOME_MARK:SM27
             %@%                                             c4.                          %! EXPLICIT_METRONOME_MARK:SM27
@@ -830,19 +830,19 @@
             %@%                             \score                                       %! EXPLICIT_METRONOME_MARK:SM27
             %@%                                 {                                        %! EXPLICIT_METRONOME_MARK:SM27
             %@%                                     \new Score \with {                   %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                         \override SpacingSpanner.spacing-increment = #0.5     %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                         proportionalNotationDuration = ##f     %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                         \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                         proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK:SM27
             %@%                                     } <<                                 %! EXPLICIT_METRONOME_MARK:SM27
             %@%                                         \new RhythmicStaff \with {       %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                             \remove Time_signature_engraver     %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                             \remove Staff_symbol_engraver     %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                             \override Stem.direction = #up     %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                             \override Stem.length = #5     %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                             \override TupletBracket.bracket-visibility = ##t     %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                             \override TupletBracket.direction = #up     %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                             \override TupletBracket.padding = #1.25     %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                             \override TupletBracket.shorten-pair = #'(-1 . -1.5)     %! EXPLICIT_METRONOME_MARK:SM27
-            %@%                                             \override TupletNumber.text = #tuplet-number::calc-fraction-text     %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                             \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                             \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                             \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                             \override Stem.length = #5   %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                             \override TupletBracket.bracket-visibility = ##t %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                             \override TupletBracket.direction = #up %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                             \override TupletBracket.padding = #1.25 %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                             \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK:SM27
+            %@%                                             \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK:SM27
             %@%                                             tupletFullLength = ##t       %! EXPLICIT_METRONOME_MARK:SM27
             %@%                                         } {                              %! EXPLICIT_METRONOME_MARK:SM27
             %@%                                             c4                           %! EXPLICIT_METRONOME_MARK:SM27

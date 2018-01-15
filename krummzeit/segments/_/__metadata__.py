@@ -90,7 +90,7 @@ metadata = abjad.TypedOrderedDict(
                             abjad.Momento(
                                 context='PercussionMusicVoice',
                                 prototype='abjad.Dynamic',
-                                value='"ff"',
+                                value='\\effort_ff',
                                 ),
                             ],
                         ),

@@ -1619,18 +1619,7 @@
                             \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'2
                             -\accent                                                     %! IC
-                            _ #(make-dynamic-script
-                                (markup
-                                    #:whiteout
-                                    #:line (
-                                        #:general-align Y -2 #:normal-text #:larger "“"
-                                        #:hspace -0.4
-                                        #:dynamic "ff"
-                                        #:hspace -0.2
-                                        #:general-align Y -2 #:normal-text #:larger "”"
-                                        )
-                                    )
-                                )                                                        %! EXPLICIT_DYNAMIC:SM8
+                            \effort_ff                                                   %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {

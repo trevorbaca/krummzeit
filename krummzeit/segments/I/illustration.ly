@@ -6640,18 +6640,7 @@
                         \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         g''4
                         -\downbow                                                        %! IC
-                        _ #(make-dynamic-script
-                            (markup
-                                #:whiteout
-                                #:line (
-                                    #:general-align Y -2 #:normal-text #:larger "“"
-                                    #:hspace -0.4
-                                    #:dynamic "f"
-                                    #:hspace -0.2
-                                    #:general-align Y -2 #:normal-text #:larger "”"
-                                    )
-                                )
-                            )                                                            %! EXPLICIT_DYNAMIC:SM8
+                        \effort_f                                                        %! EXPLICIT_DYNAMIC:SM8
                         \glissando                                                       %! SC
                         ^ \markup {                                                      %! IC
                             \whiteout                                                    %! IC
@@ -7043,18 +7032,7 @@
                         \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         ef''4
                         -\downbow                                                        %! IC
-                        _ #(make-dynamic-script
-                            (markup
-                                #:whiteout
-                                #:line (
-                                    #:general-align Y -2 #:normal-text #:larger "“"
-                                    #:hspace -0.4
-                                    #:dynamic "f"
-                                    #:hspace -0.2
-                                    #:general-align Y -2 #:normal-text #:larger "”"
-                                    )
-                                )
-                            )                                                            %! EXPLICIT_DYNAMIC:SM8
+                        \effort_f                                                        %! EXPLICIT_DYNAMIC:SM8
                         \glissando                                                       %! SC
                         ^ \markup {                                                      %! IC
                             \whiteout                                                    %! IC
@@ -7435,18 +7413,7 @@
                         \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         d''4
                         -\downbow                                                        %! IC
-                        _ #(make-dynamic-script
-                            (markup
-                                #:whiteout
-                                #:line (
-                                    #:general-align Y -2 #:normal-text #:larger "“"
-                                    #:hspace -0.4
-                                    #:dynamic "f"
-                                    #:hspace -0.2
-                                    #:general-align Y -2 #:normal-text #:larger "”"
-                                    )
-                                )
-                            )                                                            %! EXPLICIT_DYNAMIC:SM8
+                        \effort_f                                                        %! EXPLICIT_DYNAMIC:SM8
                         \glissando                                                       %! SC
                         ^ \markup {                                                      %! IC
                             \whiteout                                                    %! IC

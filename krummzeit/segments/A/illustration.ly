@@ -7729,18 +7729,7 @@
                             \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) %! REDUNDANT_STAFF_LINES_COLOR:SM6
                             c'2
                             -\accent                                                     %! IC
-                            _ #(make-dynamic-script
-                                (markup
-                                    #:whiteout
-                                    #:line (
-                                        #:general-align Y -2 #:normal-text #:larger "“"
-                                        #:hspace -0.4
-                                        #:dynamic "ff"
-                                        #:hspace -0.2
-                                        #:general-align Y -2 #:normal-text #:larger "”"
-                                        )
-                                    )
-                                )                                                        %! REAPPLIED_DYNAMIC:SM8
+                            \effort_ff                                                   %! REAPPLIED_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {

@@ -2624,8 +2624,8 @@
                         \override DynamicLineSpanner.staff-padding = #'4                 %! OC
                         \override NoteHead.style = #'harmonic                            %! OC
                         \override DynamicLineSpanner.staff-padding = #'3                 %! OC
-                    %@% \once \override PianoMusicStaff.Clef.X-extent = ##f              %! -BOL_MEASURE_270:OC
-                    %@% \once \override PianoMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! -BOL_MEASURE_270:OC
+                        \once \override PianoMusicStaff.Clef.X-extent = ##f              %! MEASURE_270:SHIFTED_CLEF:OC
+                        \once \override PianoMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! MEASURE_270:SHIFTED_CLEF:OC
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red

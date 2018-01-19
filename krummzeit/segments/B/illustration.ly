@@ -3807,12 +3807,8 @@
                             \override Beam.positions = #'(-4 . -4)                       %! OC
                             \override DynamicLineSpanner.staff-padding = #'6             %! OC
                             \override TupletBracket.staff-padding = #3                   %! OC
-                            \once \override PercussionMusicStaff.Clef.X-extent = ##f     %! +SEGMENT:OC %@%
-                            \once \override PercussionMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +SEGMENT:OC %@%
-                        %@% \once \override PercussionMusicStaff.Clef.X-extent = ##f     %! +LEDGER_PARTS:OC
-                        %@% \once \override PercussionMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +LEDGER_PARTS:OC
-                        %@% \once \override PercussionMusicStaff.Clef.X-extent = ##f     %! +LEDGER_SCORE:OC
-                        %@% \once \override PercussionMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +LEDGER_SCORE:OC
+                        %@% \once \override PercussionMusicStaff.Clef.X-extent = ##f     %! -BOL_MEASURE_102:OC
+                        %@% \once \override PercussionMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! -BOL_MEASURE_102:OC
                             \set PercussionMusicStaff.instrumentName = \markup {         %! EXPLICIT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! EXPLICIT_INSTRUMENT:SM8
                                     #16                                                  %! EXPLICIT_INSTRUMENT:SM8
@@ -4778,12 +4774,8 @@
                             \override Beam.positions = #'(-5 . -5)                       %! OC
                             \override DynamicLineSpanner.staff-padding = #'7             %! OC
                             \override TupletBracket.staff-padding = #4                   %! OC
-                            \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! +SEGMENT:OC %@%
-                            \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +SEGMENT:OC %@%
-                        %@% \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! +LEDGER_PARTS:OC
-                        %@% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +LEDGER_PARTS:OC
-                        %@% \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! +LEDGER_SCORE:OC
-                        %@% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +LEDGER_SCORE:OC
+                        %@% \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! -BOL_MEASURE_110:OC
+                        %@% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! -BOL_MEASURE_110:OC
                             \set ViolinMusicStaff.instrumentName = \markup {             %! REDUNDANT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REDUNDANT_INSTRUMENT:SM8
                                     #16                                                  %! REDUNDANT_INSTRUMENT:SM8

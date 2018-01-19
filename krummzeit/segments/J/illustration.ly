@@ -7,6 +7,8 @@
 \include "../../stylesheets/nonfirst-segment.ily"
 
 \score {
+    <<
+    { \include "layout.ly" }
     \context Score = "Score" \with {
         currentBarNumber = #314
     } <<
@@ -3384,5 +3386,6 @@
                 }
             >>
         >>
+    >>
     >>
 }

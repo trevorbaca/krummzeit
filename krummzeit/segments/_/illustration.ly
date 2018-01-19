@@ -1589,8 +1589,8 @@
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override PercussionMusicStaff.StaffSymbol.line-count = 1 %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
-                        %@% \once \override PercussionMusicStaff.Clef.X-extent = ##f     %! -BOL_MEASURE_10:OC
-                        %@% \once \override PercussionMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! -BOL_MEASURE_10:OC
+                            \once \override PercussionMusicStaff.Clef.X-extent = ##f     %! MEASURE_10:SHIFTED_CLEF:OC
+                            \once \override PercussionMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_10:SHIFTED_CLEF:OC
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red

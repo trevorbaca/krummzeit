@@ -6,6 +6,8 @@
 \include "../../stylesheets/stylesheet.ily"
 
 \score {
+    <<
+    { \include "layout.ly" }
     \context Score = "Score" <<
         \tag Oboe.Clarinet.Piano.Percussion.Violin.Viola.Cello                           %! ST4
         \context GlobalContext = "GlobalContext" <<
@@ -3247,5 +3249,6 @@
                 }
             >>
         >>
+    >>
     >>
 }

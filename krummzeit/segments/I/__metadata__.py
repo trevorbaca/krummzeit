@@ -45,6 +45,11 @@ metadata = abjad.TypedOrderedDict(
                         [
                             abjad.Momento(
                                 context='ClarinetMusicVoice',
+                                prototype='abjad.Clef',
+                                value='treble',
+                                ),
+                            abjad.Momento(
+                                context='ClarinetMusicVoice',
                                 prototype='abjad.Instrument',
                                 value='BassClarinet',
                                 ),
@@ -63,6 +68,11 @@ metadata = abjad.TypedOrderedDict(
                     (
                         'OboeMusicStaff',
                         [
+                            abjad.Momento(
+                                context='OboeMusicVoice',
+                                prototype='abjad.Clef',
+                                value='treble',
+                                ),
                             abjad.Momento(
                                 context='OboeMusicVoice',
                                 prototype='abjad.Instrument',

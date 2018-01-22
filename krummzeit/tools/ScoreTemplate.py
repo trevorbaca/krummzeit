@@ -42,6 +42,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                                     #10                                                %! ST1
                                     Ob.                                                %! ST1
                                 }                                                      %! ST1
+                            \clef "treble"                                             %! ST3
                             s1
                         }
                     }
@@ -66,6 +67,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                                             (Eb)                                       %! ST1
                                         }                                              %! ST1
                                 }                                                      %! ST1
+                            \clef "treble"                                             %! ST3
                             s1
                         }
                     }
@@ -84,6 +86,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                                     #10                                                %! ST1
                                     Pf.                                                %! ST1
                                 }                                                      %! ST1
+                            \clef "treble"                                             %! ST3
                             s1
                         }
                     }
@@ -100,6 +103,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                                     #10                                                %! ST1
                                     Perc.                                              %! ST1
                                 }                                                      %! ST1
+                            \clef "treble"                                             %! ST3
                             s1
                         }
                     }
@@ -118,6 +122,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                                     #10                                                %! ST1
                                     Vn.                                                %! ST1
                                 }                                                      %! ST1
+                            \clef "treble"                                             %! ST3
                             s1
                         }
                     }
@@ -203,6 +208,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['Oboe'],
             )
+        abjad.annotate(
+            oboe_music_staff,
+            'default_clef',
+            abjad.Clef('treble'),
+            )
 
         # CLARINET
         clarinet_music_voice = abjad.Voice(
@@ -219,6 +229,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             clarinet_music_staff,
             'default_instrument',
             krummzeit.instruments['ClarinetInEFlat'],
+            )
+        abjad.annotate(
+            clarinet_music_staff,
+            'default_clef',
+            abjad.Clef('treble'),
             )
 
         # WIND SECTION
@@ -244,6 +259,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             krummzeit.instruments['Piano'],
             )
+        abjad.annotate(
+            piano_music_staff,
+            'default_clef',
+            abjad.Clef('treble'),
+            )
 
         # PERCUSSION
         percussion_music_voice = abjad.Voice(
@@ -260,6 +280,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             percussion_music_staff,
             'default_instrument',
             krummzeit.instruments['Percussion'],
+            )
+        abjad.annotate(
+            percussion_music_staff,
+            'default_clef',
+            abjad.Clef('treble'),
             )
 
         # PERCUSSION SECTION
@@ -284,6 +309,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             violin_music_staff,
             'default_instrument',
             krummzeit.instruments['Violin'],
+            )
+        abjad.annotate(
+            violin_music_staff,
+            'default_clef',
+            abjad.Clef('treble'),
             )
 
         # VIOLA

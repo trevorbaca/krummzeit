@@ -2329,9 +2329,9 @@
                             \clef "percussion"                                           %! REDUNDANT_CLEF:SM8
                             \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                             \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-                            \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
                         %@% \override PercussionMusicStaff.Clef.color = ##f              %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
+                            \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \once \override Accidental.color = #blue                     %! SM24
                             \once \override Beam.color = #blue                           %! SM24
                             \once \override Dots.color = #blue                           %! SM24
@@ -2340,7 +2340,7 @@
                             \once \override Stem.color = #blue                           %! SM24
                             c2.
                             :32                                                          %! IC
-                            \ppp                                                         %! REAPPLIED_DYNAMIC:SM8
+                            \ppp_ancora                                                  %! EXPLICIT_DYNAMIC:SM8
                             ~
                             ^ \markup {
                                 \column
@@ -2396,12 +2396,6 @@
                                             }                                            %! IC
                                     }
                                 }
-                            _ \markup {                                                  %! IC
-                                \dynamic                                                 %! IC
-                                    ppp                                                  %! IC
-                                \upright                                                 %! IC
-                                    ancora                                               %! IC
-                                }                                                        %! IC
                             \set PercussionMusicStaff.instrumentName = \markup {         %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -3107,17 +3101,13 @@
                             
                             % ViolinMusicVoice [measure 146]                             %! SM4
                             \once \override Stem.direction = #up                         %! OC
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             fs1
+                            \fff_poss                                                    %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
                                         arco                                             %! IC
-                                }                                                        %! IC
-                            _ \markup {                                                  %! IC
-                                \dynamic                                                 %! IC
-                                    ffff                                                 %! IC
-                                \upright                                                 %! IC
-                                    possibile                                            %! IC
                                 }                                                        %! IC
                             
                             % ViolinMusicVoice [measure 147]                             %! SM4
@@ -3350,18 +3340,14 @@
                             
                             % ViolaMusicVoice [measure 143]                              %! SM4
                             \override Stem.direction = #up                               %! OC
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             bf,2.
+                            \fff_poss                                                    %! EXPLICIT_DYNAMIC:SM8
                             ~
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
                                         arco                                             %! IC
-                                }                                                        %! IC
-                            _ \markup {                                                  %! IC
-                                \dynamic                                                 %! IC
-                                    ffff                                                 %! IC
-                                \upright                                                 %! IC
-                                    possibile                                            %! IC
                                 }                                                        %! IC
                             
                             % ViolaMusicVoice [measure 144]                              %! SM4
@@ -3371,14 +3357,10 @@
                             R1 * 1/4
                             
                             % ViolaMusicVoice [measure 146]                              %! SM4
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             bf,1
+                            \fff_poss                                                    %! REDUNDANT_DYNAMIC:SM8
                             ~
-                            _ \markup {                                                  %! IC
-                                \dynamic                                                 %! IC
-                                    ffff                                                 %! IC
-                                \upright                                                 %! IC
-                                    possibile                                            %! IC
-                                }                                                        %! IC
                             
                             % ViolaMusicVoice [measure 147]                              %! SM4
                             bf,1
@@ -3622,17 +3604,13 @@
                             
                             % CelloMusicVoice [measure 146]                              %! SM4
                             \once \override Stem.direction = #up                         %! OC
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             a,,1
+                            \fff_poss                                                    %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
                                         arco                                             %! IC
-                                }                                                        %! IC
-                            _ \markup {                                                  %! IC
-                                \dynamic                                                 %! IC
-                                    ffff                                                 %! IC
-                                \upright                                                 %! IC
-                                    possibile                                            %! IC
                                 }                                                        %! IC
                             
                             % CelloMusicVoice [measure 147]                              %! SM4

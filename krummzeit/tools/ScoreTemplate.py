@@ -5,7 +5,7 @@ import krummzeit
 
 class ScoreTemplate(baca.ScoreTemplate):
     r'''Score template.
-
+    
     >>> import krummzeit
 
     ..  container:: example
@@ -54,8 +54,8 @@ class ScoreTemplate(baca.ScoreTemplate):
                                     #16                                                %! ST1
                                     \center-column                                     %! ST1
                                         {                                              %! ST1
-                                            Clarinet                                   %! ST1
-                                            (Eb)                                       %! ST1
+                                            Bass                                       %! ST1
+                                            clarinet                                   %! ST1
                                         }                                              %! ST1
                                 }                                                      %! ST1
                             \set ClarinetMusicStaff.shortInstrumentName = \markup {    %! ST1
@@ -63,8 +63,8 @@ class ScoreTemplate(baca.ScoreTemplate):
                                     #10                                                %! ST1
                                     \center-column                                     %! ST1
                                         {                                              %! ST1
-                                            Cl.                                        %! ST1
-                                            (Eb)                                       %! ST1
+                                            Bass                                       %! ST1
+                                            cl.                                        %! ST1
                                         }                                              %! ST1
                                 }                                                      %! ST1
                             \clef "treble"                                             %! ST3
@@ -96,12 +96,12 @@ class ScoreTemplate(baca.ScoreTemplate):
                             \set PercussionMusicStaff.instrumentName = \markup {       %! ST1
                                 \hcenter-in                                            %! ST1
                                     #16                                                %! ST1
-                                    Percussion                                         %! ST1
+                                    Xylophone                                          %! ST1
                                 }                                                      %! ST1
                             \set PercussionMusicStaff.shortInstrumentName = \markup {  %! ST1
                                 \hcenter-in                                            %! ST1
                                     #10                                                %! ST1
-                                    Perc.                                              %! ST1
+                                    Xyl.                                               %! ST1
                                 }                                                      %! ST1
                             \clef "treble"                                             %! ST3
                             s1
@@ -228,7 +228,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             clarinet_music_staff,
             'default_instrument',
-            krummzeit.instruments['ClarinetInEFlat'],
+            krummzeit.instruments['BassClarinet'],
             )
         abjad.annotate(
             clarinet_music_staff,
@@ -279,7 +279,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             percussion_music_staff,
             'default_instrument',
-            krummzeit.instruments['Percussion'],
+            krummzeit.instruments['Xylophone'],
             )
         abjad.annotate(
             percussion_music_staff,

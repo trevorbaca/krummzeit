@@ -2021,8 +2021,10 @@
                                     Pf.                                                  %! EXPLICIT_INSTRUMENT:SM8
                                 }                                                        %! EXPLICIT_INSTRUMENT:SM8
                             \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
+                            \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             cs'''\longa
                             :32                                                          %! IC
+                            \fff_poss                                                    %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {
@@ -2072,12 +2074,6 @@
                                             }                                            %! SM14
                                     }
                                 }
-                            _ \markup {                                                  %! IC
-                                \dynamic                                                 %! IC
-                                    ffff                                                 %! IC
-                                \upright                                                 %! IC
-                                    possibile                                            %! IC
-                                }                                                        %! IC
                             \set PianoMusicStaff.instrumentName = \markup {              %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
                                     #16                                                  %! REDRAWN_EXPLICIT_INSTRUMENT:SM8

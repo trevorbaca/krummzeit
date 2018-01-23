@@ -418,18 +418,18 @@ maker(
 
 maker(
     baca.scope('ClarinetMusicVoice', 9),
-    baca.possibile_dynamic('ffff'),
+    baca.possibile_dynamic('fff'),
     )
 
 maker(
     baca.scope('ClarinetMusicVoice', 11),
-    baca.hairpin('ffff > pppp'),
+    baca.hairpin('fff > ppp'),
     )
 
 maker(
     baca.scope('PianoMusicVoice', 8, 15),
     baca.clef('bass'),
-    baca.possibile_dynamic('ffff'),
+    baca.possibile_dynamic('fff'),
     baca.ottava_bassa(),
     #low_piano_cluster,
     krummzeit.clusters('low'),

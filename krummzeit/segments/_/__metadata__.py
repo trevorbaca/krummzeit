@@ -3,6 +3,10 @@ import abjad
 
 metadata = abjad.TypedOrderedDict(
     [
+        (
+            'bol_measure_numbers',
+            [1, 7],
+            ),
         ('duration', "0'27''"),
         (
             'fermata_measure_numbers',
@@ -121,6 +125,16 @@ metadata = abjad.TypedOrderedDict(
                                 context='PianoMusicVoice',
                                 prototype='abjad.Instrument',
                                 value='Piano',
+                                ),
+                            ],
+                        ),
+                    (
+                        'PianoMusicVoice',
+                        [
+                            abjad.Momento(
+                                context='PianoMusicVoice',
+                                prototype='abjad.Dynamic',
+                                value='fff',
                                 ),
                             ],
                         ),

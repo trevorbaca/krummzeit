@@ -201,7 +201,7 @@ maker(
 
 maker(
     baca.scope('PianoMusicVoice', 7, 12),
-    baca.possibile_dynamic('ffff'),
+    baca.possibile_dynamic('fff'),
     )
 
 ### xylophone reiteration ###

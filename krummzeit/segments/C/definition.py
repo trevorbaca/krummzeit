@@ -454,7 +454,7 @@ maker(
 maker(
     baca.scope('ViolaMusicVoice', 11, 12),
     baca.markup.arco(),
-    baca.possibile_dynamic('ffff'),
+    baca.possibile_dynamic('fff'),
     )
 
 maker(
@@ -464,7 +464,7 @@ maker(
         'CelloMusicVoice'],
         [(14, 16)],
         ),
-    baca.possibile_dynamic('ffff'),
+    baca.possibile_dynamic('fff'),
     )
 
 maker(

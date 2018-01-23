@@ -898,8 +898,8 @@
                                     #16                                                  %! DEFAULT_INSTRUMENT:SM8
                                     \center-column                                       %! DEFAULT_INSTRUMENT:SM8
                                         {                                                %! DEFAULT_INSTRUMENT:SM8
-                                            Clarinet                                     %! DEFAULT_INSTRUMENT:SM8
-                                            (Eb)                                         %! DEFAULT_INSTRUMENT:SM8
+                                            Bass                                         %! DEFAULT_INSTRUMENT:SM8
+                                            clarinet                                     %! DEFAULT_INSTRUMENT:SM8
                                         }                                                %! DEFAULT_INSTRUMENT:SM8
                                 }                                                        %! DEFAULT_INSTRUMENT:SM8
                             \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! DEFAULT_INSTRUMENT:SM8
@@ -907,8 +907,8 @@
                                     #10                                                  %! DEFAULT_INSTRUMENT:SM8
                                     \center-column                                       %! DEFAULT_INSTRUMENT:SM8
                                         {                                                %! DEFAULT_INSTRUMENT:SM8
-                                            Cl.                                          %! DEFAULT_INSTRUMENT:SM8
-                                            (Eb)                                         %! DEFAULT_INSTRUMENT:SM8
+                                            Bass                                         %! DEFAULT_INSTRUMENT:SM8
+                                            cl.                                          %! DEFAULT_INSTRUMENT:SM8
                                         }                                                %! DEFAULT_INSTRUMENT:SM8
                                 }                                                        %! DEFAULT_INSTRUMENT:SM8
                             \set ClarinetMusicStaff.forceClef = ##t                      %! DEFAULT_CLEF:SM8
@@ -923,14 +923,14 @@
                                     %@% \line                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%     {                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%         \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             (“ClarinetInEFlat”                   %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%             (“BassClarinet”                      %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%         \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%             \hcenter-in                          %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%                 #16                              %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%                 \center-column                   %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%                     {                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                         Clarinet                 %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                         (Eb)                     %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%                         Bass                     %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%                         clarinet                 %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%                     }                            %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%         \concat                                  %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%             {                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
@@ -939,8 +939,8 @@
                                     %@%                         #10                      %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%                         \center-column           %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%                             {                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                                 Cl.              %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                                 (Eb)             %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%                                 Bass             %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%                                 cl.              %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%                             }                    %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%                 \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%                     )                            %! DEFAULT_INSTRUMENT_ALERT:SM10
@@ -952,14 +952,14 @@
                                                     #(x11-color 'DarkViolet)             %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                     {                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                         \vcenter                         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            (“ClarinetInEFlat”           %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            (“BassClarinet”              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                         \vcenter                         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                             \hcenter-in                  %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                                 #16                      %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                                 \center-column           %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                                     {                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        Clarinet         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        (Eb)             %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                        Bass             %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                        clarinet         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                                     }                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                         \concat                          %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                             {                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
@@ -968,8 +968,8 @@
                                                                         #10              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                                         \center-column   %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                                             {            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                                Cl.      %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                                (Eb)     %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                                Bass     %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                                cl.      %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                                             }            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                                 \vcenter                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                                     )                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
@@ -983,8 +983,8 @@
                                     #16                                                  %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                     \center-column                                       %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                         {                                                %! REDRAWN_DEFAULT_INSTRUMENT:SM8
-                                            Clarinet                                     %! REDRAWN_DEFAULT_INSTRUMENT:SM8
-                                            (Eb)                                         %! REDRAWN_DEFAULT_INSTRUMENT:SM8
+                                            Bass                                         %! REDRAWN_DEFAULT_INSTRUMENT:SM8
+                                            clarinet                                     %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                         }                                                %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                 }                                                        %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                             \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! REDRAWN_DEFAULT_INSTRUMENT:SM8
@@ -992,8 +992,8 @@
                                     #10                                                  %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                     \center-column                                       %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                         {                                                %! REDRAWN_DEFAULT_INSTRUMENT:SM8
-                                            Cl.                                          %! REDRAWN_DEFAULT_INSTRUMENT:SM8
-                                            (Eb)                                         %! REDRAWN_DEFAULT_INSTRUMENT:SM8
+                                            Bass                                         %! REDRAWN_DEFAULT_INSTRUMENT:SM8
+                                            cl.                                          %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                         }                                                %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                 }                                                        %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                             \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'violet) %! REDRAWN_DEFAULT_INSTRUMENT_COLOR:SM6
@@ -1006,109 +1006,9 @@
                             R1 * 1/4
                             
                             % ClarinetMusicVoice [measure 4]                             %! SM4
-                            \override Stem.direction = #up                               %! OC
-                            \set ClarinetMusicStaff.instrumentName = \markup {           %! EXPLICIT_INSTRUMENT:SM8
-                                \hcenter-in                                              %! EXPLICIT_INSTRUMENT:SM8
-                                    #16                                                  %! EXPLICIT_INSTRUMENT:SM8
-                                    \center-column                                       %! EXPLICIT_INSTRUMENT:SM8
-                                        {                                                %! EXPLICIT_INSTRUMENT:SM8
-                                            Bass                                         %! EXPLICIT_INSTRUMENT:SM8
-                                            clarinet                                     %! EXPLICIT_INSTRUMENT:SM8
-                                        }                                                %! EXPLICIT_INSTRUMENT:SM8
-                                }                                                        %! EXPLICIT_INSTRUMENT:SM8
-                            \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! EXPLICIT_INSTRUMENT:SM8
-                                \hcenter-in                                              %! EXPLICIT_INSTRUMENT:SM8
-                                    #10                                                  %! EXPLICIT_INSTRUMENT:SM8
-                                    \center-column                                       %! EXPLICIT_INSTRUMENT:SM8
-                                        {                                                %! EXPLICIT_INSTRUMENT:SM8
-                                            Bass                                         %! EXPLICIT_INSTRUMENT:SM8
-                                            cl.                                          %! EXPLICIT_INSTRUMENT:SM8
-                                        }                                                %! EXPLICIT_INSTRUMENT:SM8
-                                }                                                        %! EXPLICIT_INSTRUMENT:SM8
-                            \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
                             \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             cs2.
                             \ppp                                                         %! EXPLICIT_DYNAMIC:SM8
-                            ^ \markup {
-                                \column
-                                    {
-                                    %@% \line                                            %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%     {                                            %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%         \vcenter                                 %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%             (“BassClarinet”                      %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%         \vcenter                                 %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%             \hcenter-in                          %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%                 #16                              %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \center-column                   %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%                     {                            %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%                         Bass                     %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%                         clarinet                 %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%                     }                            %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%         \concat                                  %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%             {                                    %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \vcenter                         %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%                     \hcenter-in                  %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%                         #10                      %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%                         \center-column           %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%                             {                    %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%                                 Bass             %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%                                 cl.              %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%                             }                    %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \vcenter                         %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%                     )                            %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%             }                                    %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                    %@%     }                                            %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        \line                                            %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            {                                            %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                \with-color                              %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    #(x11-color 'blue)                   %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    {                                    %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            (“BassClarinet”              %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \hcenter-in                  %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                #16                      %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \center-column           %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    {                    %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        Bass             %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        clarinet         %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    }                    %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \concat                          %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            {                            %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    \hcenter-in          %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        #10              %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        \center-column   %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                            {            %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                                Bass     %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                                cl.      %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                            }            %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    )                    %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            }                            %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    }                                    %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            }                                            %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                    }
-                                }
-                            \set ClarinetMusicStaff.instrumentName = \markup {           %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                \hcenter-in                                              %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                    #16                                                  %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                    \center-column                                       %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                        {                                                %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                            Bass                                         %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                            clarinet                                     %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                        }                                                %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                }                                                        %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                            \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                \hcenter-in                                              %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                    #10                                                  %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                    \center-column                                       %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                        {                                                %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                            Bass                                         %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                            cl.                                          %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                        }                                                %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                }                                                        %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                            \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! REDRAWN_EXPLICIT_INSTRUMENT_COLOR:SM6
                             
                             % ClarinetMusicVoice [measure 5]                             %! SM4
                             cs4.
@@ -1116,7 +1016,6 @@
                             
                             cs4
                             \repeatTie
-                            \revert Stem.direction                                       %! OC
                             
                             % ClarinetMusicVoice [measure 6]                             %! SM4
                             R1 * 9/8
@@ -1151,78 +1050,78 @@
                         \context PianoMusicVoice = "PianoMusicVoice" {
                             
                             % PianoMusicVoice [measure 1]                                %! SM4
-                            \set PianoMusicStaff.instrumentName = \markup {              %! REDUNDANT_INSTRUMENT:SM8
-                                \hcenter-in                                              %! REDUNDANT_INSTRUMENT:SM8
-                                    #16                                                  %! REDUNDANT_INSTRUMENT:SM8
-                                    Piano                                                %! REDUNDANT_INSTRUMENT:SM8
-                                }                                                        %! REDUNDANT_INSTRUMENT:SM8
-                            \set PianoMusicStaff.shortInstrumentName = \markup {         %! REDUNDANT_INSTRUMENT:SM8
-                                \hcenter-in                                              %! REDUNDANT_INSTRUMENT:SM8
-                                    #10                                                  %! REDUNDANT_INSTRUMENT:SM8
-                                    Pf.                                                  %! REDUNDANT_INSTRUMENT:SM8
-                                }                                                        %! REDUNDANT_INSTRUMENT:SM8
+                            \set PianoMusicStaff.instrumentName = \markup {              %! DEFAULT_INSTRUMENT:SM8
+                                \hcenter-in                                              %! DEFAULT_INSTRUMENT:SM8
+                                    #16                                                  %! DEFAULT_INSTRUMENT:SM8
+                                    Piano                                                %! DEFAULT_INSTRUMENT:SM8
+                                }                                                        %! DEFAULT_INSTRUMENT:SM8
+                            \set PianoMusicStaff.shortInstrumentName = \markup {         %! DEFAULT_INSTRUMENT:SM8
+                                \hcenter-in                                              %! DEFAULT_INSTRUMENT:SM8
+                                    #10                                                  %! DEFAULT_INSTRUMENT:SM8
+                                    Pf.                                                  %! DEFAULT_INSTRUMENT:SM8
+                                }                                                        %! DEFAULT_INSTRUMENT:SM8
                             \set PianoMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "bass"                                                 %! EXPLICIT_CLEF:SM8
-                            \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
+                            \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DarkViolet) %! DEFAULT_INSTRUMENT_COLOR:SM6
                             \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                         %@% \override PianoMusicStaff.Clef.color = ##f                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
                             r1
                             ^ \markup {
                                 \column
                                     {
-                                    %@% \line                                            %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%     {                                            %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%         \vcenter                                 %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%             (“Piano”                             %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%         \vcenter                                 %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%             \hcenter-in                          %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%                 #16                              %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%                 Piano                            %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%         \concat                                  %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%             {                                    %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \vcenter                         %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%                     \hcenter-in                  %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%                         #10                      %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%                         Pf.                      %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \vcenter                         %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%                     )                            %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%             }                                    %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%     }                                            %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                        \line                                            %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            {                                            %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                \with-color                              %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    #(x11-color 'DeepPink1)              %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    {                                    %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            (“Piano”                     %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \hcenter-in                  %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                #16                      %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                Piano                    %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \concat                          %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            {                            %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    \hcenter-in          %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        #10              %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        Pf.              %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    )                    %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            }                            %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    }                                    %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            }                                            %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %@% \line                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%     {                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%         \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%             (“Piano”                             %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%         \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%             \hcenter-in                          %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%                 #16                              %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%                 Piano                            %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%         \concat                                  %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%             {                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%                 \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%                     \hcenter-in                  %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%                         #10                      %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%                         Pf.                      %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%                 \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%                     )                            %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%             }                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%     }                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                        \line                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                            {                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                \with-color                              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                    #(x11-color 'DarkViolet)             %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                    {                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        \vcenter                         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            (“Piano”                     %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        \vcenter                         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            \hcenter-in                  %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                #16                      %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                Piano                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        \concat                          %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            {                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                \vcenter                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                    \hcenter-in          %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                        #10              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                        Pf.              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                \vcenter                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                    )                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            }                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                    }                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                            }                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                     }
                                 }
-                            \set PianoMusicStaff.instrumentName = \markup {              %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                \hcenter-in                                              %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                    #16                                                  %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                    Piano                                                %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                }                                                        %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                            \set PianoMusicStaff.shortInstrumentName = \markup {         %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                \hcenter-in                                              %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                    #10                                                  %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                    Pf.                                                  %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                }                                                        %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                            \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
+                            \set PianoMusicStaff.instrumentName = \markup {              %! REDRAWN_DEFAULT_INSTRUMENT:SM8
+                                \hcenter-in                                              %! REDRAWN_DEFAULT_INSTRUMENT:SM8
+                                    #16                                                  %! REDRAWN_DEFAULT_INSTRUMENT:SM8
+                                    Piano                                                %! REDRAWN_DEFAULT_INSTRUMENT:SM8
+                                }                                                        %! REDRAWN_DEFAULT_INSTRUMENT:SM8
+                            \set PianoMusicStaff.shortInstrumentName = \markup {         %! REDRAWN_DEFAULT_INSTRUMENT:SM8
+                                \hcenter-in                                              %! REDRAWN_DEFAULT_INSTRUMENT:SM8
+                                    #10                                                  %! REDRAWN_DEFAULT_INSTRUMENT:SM8
+                                    Pf.                                                  %! REDRAWN_DEFAULT_INSTRUMENT:SM8
+                                }                                                        %! REDRAWN_DEFAULT_INSTRUMENT:SM8
+                            \override PianoMusicStaff.InstrumentName.color = #(x11-color 'violet) %! REDRAWN_DEFAULT_INSTRUMENT_COLOR:SM6
                             \override PianoMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                             
                             % PianoMusicVoice [measure 2]                                %! SM4
@@ -1234,80 +1133,7 @@
                             R1 * 1/4
                             
                             % PianoMusicVoice [measure 4]                                %! SM4
-                            \override DynamicLineSpanner.staff-padding = #'5             %! OC
-                            \set PianoMusicStaff.instrumentName = \markup {              %! REDUNDANT_INSTRUMENT:SM8
-                                \hcenter-in                                              %! REDUNDANT_INSTRUMENT:SM8
-                                    #16                                                  %! REDUNDANT_INSTRUMENT:SM8
-                                    Piano                                                %! REDUNDANT_INSTRUMENT:SM8
-                                }                                                        %! REDUNDANT_INSTRUMENT:SM8
-                            \set PianoMusicStaff.shortInstrumentName = \markup {         %! REDUNDANT_INSTRUMENT:SM8
-                                \hcenter-in                                              %! REDUNDANT_INSTRUMENT:SM8
-                                    #10                                                  %! REDUNDANT_INSTRUMENT:SM8
-                                    Pf.                                                  %! REDUNDANT_INSTRUMENT:SM8
-                                }                                                        %! REDUNDANT_INSTRUMENT:SM8
-                            \set PianoMusicStaff.forceClef = ##t                         %! REDUNDANT_CLEF:SM8
-                            \clef "bass"                                                 %! REDUNDANT_CLEF:SM8
-                            \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
-                            \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
-                        %@% \override PianoMusicStaff.Clef.color = ##f                   %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
                             r16
-                            ^ \markup {
-                                \column
-                                    {
-                                    %@% \line                                            %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%     {                                            %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%         \vcenter                                 %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%             (“Piano”                             %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%         \vcenter                                 %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%             \hcenter-in                          %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%                 #16                              %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%                 Piano                            %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%         \concat                                  %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%             {                                    %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \vcenter                         %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%                     \hcenter-in                  %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%                         #10                      %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%                         Pf.                      %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \vcenter                         %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%                     )                            %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%             }                                    %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                    %@%     }                                            %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                        \line                                            %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            {                                            %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                \with-color                              %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    #(x11-color 'DeepPink1)              %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    {                                    %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            (“Piano”                     %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \hcenter-in                  %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                #16                      %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                Piano                    %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \concat                          %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            {                            %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    \hcenter-in          %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        #10              %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        Pf.              %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    )                    %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            }                            %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    }                                    %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            }                                            %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                    }
-                                }
-                            \set PianoMusicStaff.instrumentName = \markup {              %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                \hcenter-in                                              %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                    #16                                                  %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                    Piano                                                %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                }                                                        %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                            \set PianoMusicStaff.shortInstrumentName = \markup {         %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                \hcenter-in                                              %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                    #10                                                  %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                    Pf.                                                  %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                }                                                        %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                            \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
-                            \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
                             
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1335,44 +1161,21 @@
                             
                             % PianoMusicVoice [measure 6]                                %! SM4
                             R1 * 9/8
-                            \revert DynamicLineSpanner.staff-padding                     %! OC
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 9/8 {
-                                
-                                % PianoMusicVoice [measure 7]                            %! SM4
-                                \override TupletBracket.staff-padding = #4               %! OC
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
-                                \set PianoMusicStaff.forceClef = ##t                     %! EXPLICIT_CLEF:SM8
-                                \clef "treble"                                           %! EXPLICIT_CLEF:SM8
-                                \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
-                            %@% \override PianoMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
-                                cs''2
-                                :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
-                                _ \markup {                                              %! IC
-                                    \dynamic                                             %! IC
-                                        fff                                              %! IC
-                                    \upright                                             %! IC
-                                        possibile                                        %! IC
-                                    }                                                    %! IC
-                                \override PianoMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
-                                
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
-                                cs''2
-                                :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
-                                \revert TupletBracket.staff-padding                      %! OC
-                            }
+                            
+                            % PianoMusicVoice [measure 7]                                %! SM4
+                            \set PianoMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
+                            \clef "treble"                                               %! EXPLICIT_CLEF:SM8
+                            \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
+                        %@% \override PianoMusicStaff.Clef.color = ##f                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
+                            \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                            cs''2.
+                            :32                                                          %! IC
+                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
+                            \override PianoMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
+                            
+                            cs''4.
+                            :32                                                          %! IC
+                            \repeatTie
                             
                             % PianoMusicVoice [measure 8]                                %! SM4
                             R1 * 5/8
@@ -1399,15 +1202,17 @@
                         \context PercussionMusicVoice = "PercussionMusicVoice" {
                             
                             % PercussionMusicVoice [measure 1]                           %! SM4
+                            \override DynamicLineSpanner.padding = #'4                   %! OC
+                            \override TupletBracket.padding = #2                         %! OC
                             \set PercussionMusicStaff.instrumentName = \markup {         %! DEFAULT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! DEFAULT_INSTRUMENT:SM8
                                     #16                                                  %! DEFAULT_INSTRUMENT:SM8
-                                    Percussion                                           %! DEFAULT_INSTRUMENT:SM8
+                                    Xylophone                                            %! DEFAULT_INSTRUMENT:SM8
                                 }                                                        %! DEFAULT_INSTRUMENT:SM8
                             \set PercussionMusicStaff.shortInstrumentName = \markup {    %! DEFAULT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! DEFAULT_INSTRUMENT:SM8
                                     #10                                                  %! DEFAULT_INSTRUMENT:SM8
-                                    Perc.                                                %! DEFAULT_INSTRUMENT:SM8
+                                    Xyl.                                                 %! DEFAULT_INSTRUMENT:SM8
                                 }                                                        %! DEFAULT_INSTRUMENT:SM8
                             \set PercussionMusicStaff.forceClef = ##t                    %! DEFAULT_CLEF:SM8
                             \clef "treble"                                               %! DEFAULT_CLEF:SM8
@@ -1421,17 +1226,17 @@
                                     %@% \line                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%     {                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%         \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             (“Percussion”                        %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%             (“Xylophone”                         %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%         \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%             \hcenter-in                          %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%                 #16                              %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 Percussion                       %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%                 Xylophone                        %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%         \concat                                  %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%             {                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%                 \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%                     \hcenter-in                  %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%                         #10                      %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                         Perc.                    %! DEFAULT_INSTRUMENT_ALERT:SM10
+                                    %@%                         Xyl.                     %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%                 \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%                     )                            %! DEFAULT_INSTRUMENT_ALERT:SM10
                                     %@%             }                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
@@ -1442,17 +1247,17 @@
                                                     #(x11-color 'DarkViolet)             %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                     {                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                         \vcenter                         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            (“Percussion”                %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            (“Xylophone”                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                         \vcenter                         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                             \hcenter-in                  %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                                 #16                      %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                Percussion               %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                Xylophone                %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                         \concat                          %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                             {                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                                 \vcenter                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                                     \hcenter-in          %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                                         #10              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        Perc.            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                        Xyl.             %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                                 \vcenter                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                                     )                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                             }                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
@@ -1463,12 +1268,12 @@
                             \set PercussionMusicStaff.instrumentName = \markup {         %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                     #16                                                  %! REDRAWN_DEFAULT_INSTRUMENT:SM8
-                                    Percussion                                           %! REDRAWN_DEFAULT_INSTRUMENT:SM8
+                                    Xylophone                                            %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                 }                                                        %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                             \set PercussionMusicStaff.shortInstrumentName = \markup {    %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                     #10                                                  %! REDRAWN_DEFAULT_INSTRUMENT:SM8
-                                    Perc.                                                %! REDRAWN_DEFAULT_INSTRUMENT:SM8
+                                    Xyl.                                                 %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                 }                                                        %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                             \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'violet) %! REDRAWN_DEFAULT_INSTRUMENT_COLOR:SM6
                             \override PercussionMusicStaff.Clef.color = #(x11-color 'violet) %! DEFAULT_CLEF_REDRAW_COLOR:SM6
@@ -1487,112 +1292,16 @@
                             
                             % PercussionMusicVoice [measure 6]                           %! SM4
                             R1 * 9/8
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 9/8 {
-                                
-                                % PercussionMusicVoice [measure 7]                       %! SM4
-                                \override TupletBracket.staff-padding = #5               %! OC
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
-                                \set PercussionMusicStaff.instrumentName = \markup {     %! EXPLICIT_INSTRUMENT:SM8
-                                    \hcenter-in                                          %! EXPLICIT_INSTRUMENT:SM8
-                                        #16                                              %! EXPLICIT_INSTRUMENT:SM8
-                                        Xylophone                                        %! EXPLICIT_INSTRUMENT:SM8
-                                    }                                                    %! EXPLICIT_INSTRUMENT:SM8
-                                \set PercussionMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT:SM8
-                                    \hcenter-in                                          %! EXPLICIT_INSTRUMENT:SM8
-                                        #10                                              %! EXPLICIT_INSTRUMENT:SM8
-                                        Xyl.                                             %! EXPLICIT_INSTRUMENT:SM8
-                                    }                                                    %! EXPLICIT_INSTRUMENT:SM8
-                                \set PercussionMusicStaff.forceClef = ##t                %! REDUNDANT_CLEF:SM8
-                                \clef "treble"                                           %! REDUNDANT_CLEF:SM8
-                                \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
-                                \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
-                            %@% \override PercussionMusicStaff.Clef.color = ##f          %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
-                                cs'4
-                                :32                                                      %! IC
-                                ^ \markup {
-                                    \column
-                                        {
-                                        %@% \line                                        %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%     {                                        %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%         \vcenter                             %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%             (“Xylophone”                     %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%         \vcenter                             %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%             \hcenter-in                      %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%                 #16                          %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%                 Xylophone                    %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%         \concat                              %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%             {                                %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%                 \vcenter                     %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%                     \hcenter-in              %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%                         #10                  %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%                         Xyl.                 %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%                 \vcenter                     %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%                     )                        %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%             }                                %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%     }                                        %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                            \line                                        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                {                                        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    \with-color                          %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        #(x11-color 'blue)               %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        {                                %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \vcenter                     %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                (“Xylophone”             %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \vcenter                     %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \hcenter-in              %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    #16                  %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    Xylophone            %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \concat                      %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                {                        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    \vcenter             %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        \hcenter-in      %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                            #10          %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                            Xyl.         %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    \vcenter             %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        )                %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                }                        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        }                                %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                }                                        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            \line                                        %! SM14
-                                                {                                        %! SM14
-                                                    @                                    %! SM14
-                                                }                                        %! SM14
-                                        }
-                                    }
-                                _ \markup {                                              %! IC
-                                    \dynamic                                             %! IC
-                                        fff                                              %! IC
-                                    \upright                                             %! IC
-                                        possibile                                        %! IC
-                                    }                                                    %! IC
-                                \set PercussionMusicStaff.instrumentName = \markup {     %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                    \hcenter-in                                          %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                        #16                                              %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                        Xylophone                                        %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                    }                                                    %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                \set PercussionMusicStaff.shortInstrumentName = \markup { %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                    \hcenter-in                                          %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                        #10                                              %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                        Xyl.                                             %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                    }                                                    %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-                                \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! REDRAWN_EXPLICIT_INSTRUMENT_COLOR:SM6
-                                \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
-                                
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
-                                cs'2.
-                                :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
-                                \revert TupletBracket.staff-padding                      %! OC
-                            }
+                            
+                            % PercussionMusicVoice [measure 7]                           %! SM4
+                            \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                            cs'2.
+                            :32                                                          %! IC
+                            \fff                                                         %! EXPLICIT_DYNAMIC:SM8
+                            
+                            cs'4.
+                            :32                                                          %! IC
+                            \repeatTie
                             
                             % PercussionMusicVoice [measure 8]                           %! SM4
                             R1 * 5/8
@@ -1606,30 +1315,26 @@
                                 \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8
                                 \once \override PercussionMusicStaff.StaffSymbol.line-count = 1 %! EXPLICIT_STAFF_LINES:SM8
                                 \startStaff                                              %! EXPLICIT_STAFF_LINES:SM8
+                                \once \override PercussionMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! OC
                                 \once \override PercussionMusicStaff.Clef.X-extent = ##f %! MEASURE_10:SHIFTED_CLEF:OC
                                 \once \override PercussionMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_10:SHIFTED_CLEF:OC
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
-                                \set PercussionMusicStaff.instrumentName = \markup {     %! REDUNDANT_INSTRUMENT:SM8
-                                    \hcenter-in                                          %! REDUNDANT_INSTRUMENT:SM8
-                                        #16                                              %! REDUNDANT_INSTRUMENT:SM8
-                                        Percussion                                       %! REDUNDANT_INSTRUMENT:SM8
-                                    }                                                    %! REDUNDANT_INSTRUMENT:SM8
-                                \set PercussionMusicStaff.shortInstrumentName = \markup { %! REDUNDANT_INSTRUMENT:SM8
-                                    \hcenter-in                                          %! REDUNDANT_INSTRUMENT:SM8
-                                        #10                                              %! REDUNDANT_INSTRUMENT:SM8
-                                        Perc.                                            %! REDUNDANT_INSTRUMENT:SM8
-                                    }                                                    %! REDUNDANT_INSTRUMENT:SM8
+                                \set PercussionMusicStaff.instrumentName = \markup {     %! EXPLICIT_INSTRUMENT:SM8
+                                    \hcenter-in                                          %! EXPLICIT_INSTRUMENT:SM8
+                                        #16                                              %! EXPLICIT_INSTRUMENT:SM8
+                                        Percussion                                       %! EXPLICIT_INSTRUMENT:SM8
+                                    }                                                    %! EXPLICIT_INSTRUMENT:SM8
+                                \set PercussionMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT:SM8
+                                    \hcenter-in                                          %! EXPLICIT_INSTRUMENT:SM8
+                                        #10                                              %! EXPLICIT_INSTRUMENT:SM8
+                                        Perc.                                            %! EXPLICIT_INSTRUMENT:SM8
+                                    }                                                    %! EXPLICIT_INSTRUMENT:SM8
                                 \set PercussionMusicStaff.forceClef = ##t                %! EXPLICIT_CLEF:SM8
                                 \clef "percussion"                                       %! EXPLICIT_CLEF:SM8
                                 \once \override PercussionMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %@% \override PercussionMusicStaff.Clef.color = ##f          %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
-                                \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
-                                \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                                 \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                                \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
+                                \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                                 c'2
                                 -\accent                                                 %! IC
                                 \effort_ff                                               %! EXPLICIT_DYNAMIC:SM8
@@ -1651,164 +1356,102 @@
                                                         \upright                         %! IC
                                                             "accent changes of direction noticeably at each attack" %! IC
                                                 }                                        %! IC
-                                        %@% \line                                        %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                        %@%     {                                        %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                        %@%         \vcenter                             %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                        %@%             (“Percussion”                    %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                        %@%         \vcenter                             %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                        %@%             \hcenter-in                      %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                        %@%                 #16                          %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                        %@%                 Percussion                   %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                        %@%         \concat                              %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                        %@%             {                                %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                        %@%                 \vcenter                     %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                        %@%                     \hcenter-in              %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                        %@%                         #10                  %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                        %@%                         Perc.                %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                        %@%                 \vcenter                     %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                        %@%                     )                        %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                        %@%             }                                %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                        %@%     }                                        %! REDUNDANT_INSTRUMENT_ALERT:SM10
-                                            \line                                        %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                {                                        %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    \with-color                          %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        #(x11-color 'DeepPink1)          %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        {                                %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \vcenter                     %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                (“Percussion”            %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \vcenter                     %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \hcenter-in              %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    #16                  %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    Percussion           %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \concat                      %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                {                        %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    \vcenter             %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        \hcenter-in      %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                            #10          %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                            Perc.        %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    \vcenter             %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        )                %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                }                        %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        }                                %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                }                                        %! REDUNDANT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            \line                                        %! SM14
-                                                {                                        %! SM14
-                                                    @                                    %! SM14
-                                                }                                        %! SM14
+                                        %@% \line                                        %! EXPLICIT_INSTRUMENT_ALERT:SM10
+                                        %@%     {                                        %! EXPLICIT_INSTRUMENT_ALERT:SM10
+                                        %@%         \vcenter                             %! EXPLICIT_INSTRUMENT_ALERT:SM10
+                                        %@%             (“Percussion”                    %! EXPLICIT_INSTRUMENT_ALERT:SM10
+                                        %@%         \vcenter                             %! EXPLICIT_INSTRUMENT_ALERT:SM10
+                                        %@%             \hcenter-in                      %! EXPLICIT_INSTRUMENT_ALERT:SM10
+                                        %@%                 #16                          %! EXPLICIT_INSTRUMENT_ALERT:SM10
+                                        %@%                 Percussion                   %! EXPLICIT_INSTRUMENT_ALERT:SM10
+                                        %@%         \concat                              %! EXPLICIT_INSTRUMENT_ALERT:SM10
+                                        %@%             {                                %! EXPLICIT_INSTRUMENT_ALERT:SM10
+                                        %@%                 \vcenter                     %! EXPLICIT_INSTRUMENT_ALERT:SM10
+                                        %@%                     \hcenter-in              %! EXPLICIT_INSTRUMENT_ALERT:SM10
+                                        %@%                         #10                  %! EXPLICIT_INSTRUMENT_ALERT:SM10
+                                        %@%                         Perc.                %! EXPLICIT_INSTRUMENT_ALERT:SM10
+                                        %@%                 \vcenter                     %! EXPLICIT_INSTRUMENT_ALERT:SM10
+                                        %@%                     )                        %! EXPLICIT_INSTRUMENT_ALERT:SM10
+                                        %@%             }                                %! EXPLICIT_INSTRUMENT_ALERT:SM10
+                                        %@%     }                                        %! EXPLICIT_INSTRUMENT_ALERT:SM10
+                                            \line                                        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                {                                        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                    \with-color                          %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        #(x11-color 'blue)               %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        {                                %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            \vcenter                     %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                (“Percussion”            %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            \vcenter                     %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                \hcenter-in              %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                    #16                  %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                    Percussion           %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            \concat                      %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                {                        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                    \vcenter             %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                        \hcenter-in      %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                            #10          %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                            Perc.        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                    \vcenter             %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                        )                %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                }                        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        }                                %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                }                                        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                         }
                                     }
-                                \set PercussionMusicStaff.instrumentName = \markup {     %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                    \hcenter-in                                          %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                        #16                                              %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                        Percussion                                       %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                    }                                                    %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                \set PercussionMusicStaff.shortInstrumentName = \markup { %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                    \hcenter-in                                          %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                        #10                                              %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                        Perc.                                            %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                                    }                                                    %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                                \set PercussionMusicStaff.instrumentName = \markup {     %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
+                                    \hcenter-in                                          %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
+                                        #16                                              %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
+                                        Percussion                                       %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
+                                    }                                                    %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
+                                \set PercussionMusicStaff.shortInstrumentName = \markup { %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
+                                    \hcenter-in                                          %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
+                                        #10                                              %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
+                                        Perc.                                            %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
+                                    }                                                    %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
+                                \override PercussionMusicStaff.BarLine.bar-extent = #'(0 . 0) %! OC
                                 \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
-                                \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
+                                \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! REDRAWN_EXPLICIT_INSTRUMENT_COLOR:SM6
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 c'2
                                 -\accent                                                 %! IC
-                                ~
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
                                 % PercussionMusicVoice [measure 11]                      %! SM4
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 c'2
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
+                                \repeatTie
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 c'2
                                 -\accent                                                 %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 c'2
                                 -\accent                                                 %! IC
-                                ~
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             {
                                 
                                 % PercussionMusicVoice [measure 12]                      %! SM4
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 c'2
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
+                                \repeatTie
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 c'2
                                 -\accent                                                 %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 c'4
                                 -\accent                                                 %! IC
-                                ~
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
                                 
                                 % PercussionMusicVoice [measure 13]                      %! SM4
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 c'2.
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
+                                \repeatTie
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 c'4
                                 -\accent                                                 %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
+                                \revert PercussionMusicStaff.BarLine.bar-extent          %! OC
+                                \once \override PercussionMusicStaff.BarLine.bar-extent = #'(0 . 0) %! OC
+                                \revert DynamicLineSpanner.padding                       %! OC
+                                \revert TupletBracket.padding                            %! OC
                                 
                             }
                         }
@@ -1820,9 +1463,8 @@
                         \context ViolinMusicVoice = "ViolinMusicVoice" {
                             
                             % ViolinMusicVoice [measure 1]                               %! SM4
-                            \override Beam.positions = #'(-5 . -5)                       %! OC
-                            \override DynamicLineSpanner.staff-padding = #'7             %! OC
-                            \override TupletBracket.staff-padding = #4                   %! OC
+                            \override DynamicLineSpanner.padding = #'4                   %! OC
+                            \override TupletBracket.padding = #2                         %! OC
                             \set ViolinMusicStaff.instrumentName = \markup {             %! DEFAULT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! DEFAULT_INSTRUMENT:SM8
                                     #16                                                  %! DEFAULT_INSTRUMENT:SM8
@@ -1898,280 +1540,109 @@
                             \override ViolinMusicStaff.Clef.color = #(x11-color 'violet) %! DEFAULT_CLEF_REDRAW_COLOR:SM6
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 ef''8
                                 :32                                                      %! IC
                                 \fff                                                     %! EXPLICIT_DYNAMIC:SM8
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 ef''8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
-                                \revert Beam.positions                                   %! OC
-                                \revert DynamicLineSpanner.staff-padding                 %! OC
-                                \revert TupletBracket.staff-padding                      %! OC
                             }
                             
                             % ViolinMusicVoice [measure 3]                               %! SM4
@@ -2180,8 +1651,6 @@
                                 
                                 % ViolinMusicVoice [measure 4]                           %! SM4
                                 \override NoteHead.style = #'harmonic                    %! OC
-                                \override DynamicLineSpanner.staff-padding = #'7         %! OC
-                                \override TupletBracket.staff-padding = #3               %! OC
                                 \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 ef''4
                                 \glissando                                               %! SC
@@ -2216,24 +1685,12 @@
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 d''8
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
+                                \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
                                 d''4
+                                \repeatTie                                               %! SC
                                 \glissando                                               %! SC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 4/5 {
                                 
@@ -2283,8 +1740,6 @@
                                 g'4
                                 \ff
                                 \revert NoteHead.style                                   %! OC
-                                \revert DynamicLineSpanner.staff-padding                 %! OC
-                                \revert TupletBracket.staff-padding                      %! OC
                             }
                             
                             % ViolinMusicVoice [measure 9]                               %! SM4
@@ -2301,6 +1756,8 @@
                             
                             % ViolinMusicVoice [measure 13]                              %! SM4
                             R1 * 3/4
+                            \revert DynamicLineSpanner.padding                           %! OC
+                            \revert TupletBracket.padding                                %! OC
                             
                         }
                     }
@@ -2309,9 +1766,8 @@
                         \context ViolaMusicVoice = "ViolaMusicVoice" {
                             
                             % ViolaMusicVoice [measure 1]                                %! SM4
-                            \override Beam.positions = #'(-5 . -5)                       %! OC
-                            \override DynamicLineSpanner.staff-padding = #'7             %! OC
-                            \override TupletBracket.staff-padding = #4                   %! OC
+                            \override DynamicLineSpanner.padding = #'4                   %! OC
+                            \override TupletBracket.padding = #2                         %! OC
                             \set ViolaMusicStaff.instrumentName = \markup {              %! DEFAULT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! DEFAULT_INSTRUMENT:SM8
                                     #16                                                  %! DEFAULT_INSTRUMENT:SM8
@@ -2387,289 +1843,115 @@
                             \override ViolaMusicStaff.Clef.color = #(x11-color 'violet)  %! DEFAULT_CLEF_REDRAW_COLOR:SM6
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 a8
                                 :32                                                      %! IC
                                 \fff                                                     %! EXPLICIT_DYNAMIC:SM8
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 a8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
-                                \revert Beam.positions                                   %! OC
-                                \revert DynamicLineSpanner.staff-padding                 %! OC
-                                \revert TupletBracket.staff-padding                      %! OC
                             }
                             
                             % ViolaMusicVoice [measure 3]                                %! SM4
                             R1 * 1/4
                             
                             % ViolaMusicVoice [measure 4]                                %! SM4
-                            \override Beam.positions = #'(-5 . -5)                       %! OC
-                            \override DynamicLineSpanner.staff-padding = #'8             %! OC
-                            \override TupletBracket.staff-padding = #5                   %! OC
                             r2
                             
                             r4
@@ -2746,35 +2028,21 @@
                                 \glissando                                               %! SC
                                 [
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
+                                \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
                                 ef8
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 4/7 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
+                                \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
                                 ef4
+                                \repeatTie                                               %! SC
                                 \glissando                                               %! SC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 af8.
                                 \ff
                                 \revert NoteHead.style                                   %! OC
-                                \revert Beam.positions                                   %! OC
-                                \revert DynamicLineSpanner.staff-padding                 %! OC
-                                \revert TupletBracket.staff-padding                      %! OC
                             }
                             
                             % ViolaMusicVoice [measure 9]                                %! SM4
@@ -2791,6 +2059,8 @@
                             
                             % ViolaMusicVoice [measure 13]                               %! SM4
                             R1 * 3/4
+                            \revert DynamicLineSpanner.padding                           %! OC
+                            \revert TupletBracket.padding                                %! OC
                             
                         }
                     }
@@ -2799,9 +2069,8 @@
                         \context CelloMusicVoice = "CelloMusicVoice" {
                             
                             % CelloMusicVoice [measure 1]                                %! SM4
-                            \override Beam.positions = #'(-7.5 . -7.5)                   %! OC
-                            \override DynamicLineSpanner.staff-padding = #'7.5           %! OC
-                            \override TupletBracket.staff-padding = #6.5                 %! OC
+                            \override DynamicLineSpanner.padding = #'4                   %! OC
+                            \override TupletBracket.padding = #2                         %! OC
                             \set CelloMusicStaff.instrumentName = \markup {              %! DEFAULT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! DEFAULT_INSTRUMENT:SM8
                                     #16                                                  %! DEFAULT_INSTRUMENT:SM8
@@ -2877,280 +2146,109 @@
                             \override CelloMusicStaff.Clef.color = #(x11-color 'violet)  %! DEFAULT_CLEF_REDRAW_COLOR:SM6
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 eqf,8
                                 :32                                                      %! IC
                                 \fff                                                     %! EXPLICIT_DYNAMIC:SM8
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                             }
                             \times 2/3 {
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
                                 [
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
                                 
-                                \once \override Accidental.color = #red
-                                \once \override Beam.color = #red
-                                \once \override Dots.color = #red
-                                \once \override NoteHead.color = #red
-                                \once \override Stem.color = #red
                                 eqf,8
                                 :32                                                      %! IC
                                 ]
-                                - \tweak color #red                                      %! SM14
-                                ^ \markup { @ }                                          %! SM14
-                                \revert Beam.positions                                   %! OC
-                                \revert DynamicLineSpanner.staff-padding                 %! OC
-                                \revert TupletBracket.staff-padding                      %! OC
                             }
                             
                             % CelloMusicVoice [measure 3]                                %! SM4
@@ -3159,8 +2257,6 @@
                                 
                                 % CelloMusicVoice [measure 4]                            %! SM4
                                 \override NoteHead.style = #'harmonic                    %! OC
-                                \override DynamicLineSpanner.staff-padding = #'7         %! OC
-                                \override TupletBracket.staff-padding = #3               %! OC
                                 \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 e'8
                                 \glissando                                               %! SC
@@ -3244,8 +2340,6 @@
                                 a8.
                                 \ff
                                 \revert NoteHead.style                                   %! OC
-                                \revert DynamicLineSpanner.staff-padding                 %! OC
-                                \revert TupletBracket.staff-padding                      %! OC
                             }
                             
                             % CelloMusicVoice [measure 9]                                %! SM4
@@ -3262,6 +2356,8 @@
                             
                             % CelloMusicVoice [measure 13]                               %! SM4
                             R1 * 3/4
+                            \revert DynamicLineSpanner.padding                           %! OC
+                            \revert TupletBracket.padding                                %! OC
                             
                         }
                     }

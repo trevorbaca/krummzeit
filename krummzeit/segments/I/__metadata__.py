@@ -61,7 +61,7 @@ metadata = abjad.TypedOrderedDict(
                             abjad.Momento(
                                 context='ClarinetMusicVoice',
                                 prototype='abjad.Dynamic',
-                                value='pppp',
+                                value='ppp',
                                 ),
                             ],
                         ),

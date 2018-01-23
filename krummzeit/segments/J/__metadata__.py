@@ -136,7 +136,7 @@ metadata = abjad.TypedOrderedDict(
                             abjad.Momento(
                                 context='PianoMusicVoice',
                                 prototype='abjad.Dynamic',
-                                value='fff',
+                                value='\\fff_poss',
                                 ),
                             ],
                         ),

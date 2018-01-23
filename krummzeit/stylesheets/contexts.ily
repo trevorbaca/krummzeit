@@ -1,3 +1,6 @@
+\include "/Users/trevorbaca/baca/baca/stylesheets/scheme.ily"
+
+
 \layout {
     
     % GLOBAL SKIPS
@@ -8,10 +11,9 @@
         \consists Script_engraver
         \consists Text_engraver
         \consists Text_spanner_engraver
+
         \override StaffSymbol.stencil = ##f
-        \override TextScript.font-size = 6
-        \override TextScript.outside-staff-priority = 600
-        \override TextScript.staff-padding = 3
+
         \override TextSpanner.bound-details.right.attach-dir = #LEFT
         \override TextSpanner.font-size = 6
         \override TextSpanner.staff-padding = 4
@@ -22,11 +24,24 @@
         \name GlobalRests
         \type Engraver_group
         \consists Multi_measure_rest_engraver
+
         \override MultiMeasureRest.transparent = ##t
+
         \override MultiMeasureRestText.extra-offset = #'(0 . -7)
         \override MultiMeasureRestText.font-size = 3
         \override MultiMeasureRestText.outside-staff-priority = 0
         \override MultiMeasureRestText.padding = 0
+        }
+
+    % PAGE LAYOUT
+    \context {
+        \name PageLayout
+        \type Engraver_group
+        \consists Text_engraver
+
+        \override TextScript.X-extent = #'(0 . 0)
+        \override TextScript.Y-extent = #'(0 . 0)
+        \override TextScript.staff-padding = 1
         }
 
     % GLOBAL CONTEXT
@@ -43,14 +58,18 @@
         \consists Time_signature_engraver
         \accepts GlobalSkips
         \accepts GlobalRests
+        \accepts PageLayout
+
         \override BarNumber.extra-offset = #'(-6 . -4)
         \override BarNumber.font-size = 1
         \override BarNumber.padding = 4
+
         \override MetronomeMark.X-extent = #'(0 . 0)
         \override MetronomeMark.Y-extent = #'(0 . 0)
         \override MetronomeMark.break-align-symbols = #'(left-edge)
         \override MetronomeMark.extra-offset = #'(0 . 4)
         \override MetronomeMark.font-size = 3
+
         \override RehearsalMark.X-extent = #'(0 . 0)
         \override RehearsalMark.Y-extent = #'(0 . 0)
         \override RehearsalMark.break-align-symbols = #'(time-signature)
@@ -59,12 +78,14 @@
         \override RehearsalMark.font-size = 10
         \override RehearsalMark.outside-staff-priority = 500
         \override RehearsalMark.self-alignment-X = #center
+
         \override TimeSignature.X-extent = #'(0 . 0)
         \override TimeSignature.break-align-symbol = #'left-edge
         \override TimeSignature.break-visibility = #end-of-line-invisible
         \override TimeSignature.font-size = 3
         \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
         \override TimeSignature.style = #'numbered
+
         \override VerticalAxisGroup.default-staff-staff-spacing = #'(
             (basic-distance . 0)
             (minimum-distance . 14)
@@ -99,9 +120,6 @@
         \type Engraver_group
         \alias Staff
         \accepts OboeMusicVoice
-        \override Beam.positions = #'(-7 . -7)
-        \override DynamicLineSpanner.staff-padding = 10
-        \override TupletBracket.staff-padding = 6
     }
 
     % CLARINET
@@ -117,9 +135,6 @@
         \type Engraver_group
         \alias Staff
         \accepts ClarinetMusicVoice
-        \override Beam.positions = #'(-7 . -7)
-        \override DynamicLineSpanner.staff-padding = 10
-        \override TupletBracket.staff-padding = 6
     }
 
     % WIND SECTION STAFF GROUP
@@ -147,9 +162,6 @@
         \type Engraver_group
         \alias Staff
         \accepts PianoMusicVoice
-        \override Beam.positions = #'(-6 . -6)
-        \override DynamicLineSpanner.staff-padding = 9
-        \override TupletBracket.staff-padding = 5
     }
 
     % PERCUSSION
@@ -165,9 +177,6 @@
         \type Engraver_group
         \alias Staff
         \accepts PercussionMusicVoice
-        \override Beam.positions = #'(-6 . -6)
-        \override DynamicLineSpanner.staff-padding = 9
-        \override TupletBracket.staff-padding = 5
     }
 
     % PERCUSSION SECTION STAFF GROUP
@@ -195,9 +204,6 @@
         \type Engraver_group
         \alias Staff
         \accepts ViolinMusicVoice
-        \override Beam.positions = #'(-7 . -7)
-        \override DynamicLineSpanner.staff-padding = 10
-        \override TupletBracket.staff-padding = 6
     }
 
     % VIOLA
@@ -213,9 +219,6 @@
         \type Engraver_group
         \alias Staff
         \accepts ViolaMusicVoice
-        \override Beam.positions = #'(-7 . -7)
-        \override DynamicLineSpanner.staff-padding = 10
-        \override TupletBracket.staff-padding = 6
     }
 
     % CELLO
@@ -231,9 +234,6 @@
         \type Engraver_group
         \alias Staff
         \accepts CelloMusicVoice
-        \override Beam.positions = #'(-7 . -7)
-        \override DynamicLineSpanner.staff-padding = 10
-        \override TupletBracket.staff-padding = 6
     }
 
     % STRING SECTION STAFF GROUP
@@ -270,6 +270,7 @@
         \remove Mark_engraver
         \remove Metronome_mark_engraver
         \remove System_start_delimiter_engraver
+
         \override BarLine.hair-thickness = 0.5
         \override BarLine.space-alist = #'(
             (time-signature extra-space . 0.0)
@@ -281,31 +282,44 @@
             (next-note semi-fixed-space . 0.0) 
             (right-edge extra-space . 0.0)
         )
+
         \override Beam.breakable = ##t
+
         \override DynamicLineSpanner.Y-extent = #'(-4 . 4)
+
         \override Glissando.breakable = ##t
         \override Glissando.thickness = 3
+
         \override NoteCollision.merge-differently-dotted = ##t
         \override NoteColumn.ignore-collision = ##t
+
+        \shape #'((-2 . 0) (-1 . 0) (-0.5 . 0) (0 . 0)) RepeatTie                 
+        \override RepeatTie.X-extent = ##f
+
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
-        \override Stem.direction = #down
+
         \override StemTremolo.beam-width = 1.5
         \override StemTremolo.flag-count = 4
         \override StemTremolo.slope = 0.5
-        \override TextScript.font-name = #"Palatino"
+
         \override TextScript.X-extent = ##f
         \override TextScript.Y-extent = #'(-1.5 . 1.5)
         \override TextScript.padding = 2
+
         \override TrillSpanner.bound-details.right.padding = 2
+
         \override TupletBracket.breakable = ##t
-        \override TupletBracket.direction = #down
+        %\override TupletBracket.direction = #down
         \override TupletBracket.full-length-to-extent = ##f
-        \override TupletBracket.padding = 0.75
+        %\override TupletBracket.padding = 0.75
+        \override TupletBracket.padding = 2
         \override TupletNumber.font-size = 1
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
+        
         autoBeaming = ##f
+        barNumberFormatter = #format-oval-barnumbers
         markFormatter = #format-mark-box-alphabet
         proportionalNotationDuration = #(ly:make-moment 1 28)
         tupletFullLength = ##t

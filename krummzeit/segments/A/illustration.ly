@@ -5386,8 +5386,10 @@
                                 \clef "treble"                                           %! REAPPLIED_CLEF:SM8
                                 \once \override PianoMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                             %@% \override PianoMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+                                \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                                 \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
                                 g''8
+                                \fff                                                     %! REAPPLIED_DYNAMIC:SM8
                                 [
                                 ^ \markup {
                                     \column
@@ -7074,10 +7076,10 @@
                                 \once \override Dots.color = #red
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
-                                \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                                \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 g''16
                                 -\staccatissimo                                          %! IC
-                                \fff                                                     %! EXPLICIT_DYNAMIC:SM8
+                                \fff                                                     %! REDUNDANT_DYNAMIC:SM8
                                 [
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14

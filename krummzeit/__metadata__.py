@@ -1,13 +1,13 @@
 import abjad
 
 
-metadata = abjad.TypedOrderedDict(
+metadata = abjad.OrderedDict(
     [
         ('catalog_number', 'AWN-008'),
         ('composer', 'Trevor Bača'),
         (
             'fermata_measure_numbers',
-            abjad.TypedOrderedDict(
+            abjad.OrderedDict(
                 [
                     (
                         '_',
@@ -47,7 +47,7 @@ metadata = abjad.TypedOrderedDict(
         ('forces_tagline', 'for seven players'),
         (
             'time_signatures',
-            abjad.TypedOrderedDict(
+            abjad.OrderedDict(
                 [
                     (
                         '_',

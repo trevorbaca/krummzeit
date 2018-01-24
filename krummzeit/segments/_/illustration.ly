@@ -1427,7 +1427,8 @@
                                 c'2
                                 -\accent                                                 %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % PercussionMusicVoice [measure 12]                      %! SM4
                                 c'2
@@ -1722,7 +1723,8 @@
                                 a'8.
                                 \glissando                                               %! SC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 8]                           %! SM4
                                 bf'8
@@ -2001,7 +2003,8 @@
                                 af4.
                                 \glissando                                               %! SC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 bf8
                                 \glissando                                               %! SC
@@ -2301,7 +2304,8 @@
                                 a4.
                                 \glissando                                               %! SC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 ef'8
                                 \glissando                                               %! SC

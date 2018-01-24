@@ -7207,7 +7207,8 @@
                                 b'''4
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 ef'''8
                                 -\staccatissimo                                          %! IC
@@ -7578,7 +7579,8 @@
                                 af'''4
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 e'''8
                                 -\staccatissimo                                          %! IC

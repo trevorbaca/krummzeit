@@ -3473,7 +3473,8 @@
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
@@ -3730,7 +3731,8 @@
                                 fs4.
                                 \glissando                                               %! SC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 f4
                                 \glissando                                               %! SC
@@ -3956,7 +3958,8 @@
                                 g,2
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 g,4
                                 \glissando                                               %! SC

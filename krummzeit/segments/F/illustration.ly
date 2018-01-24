@@ -961,7 +961,8 @@
                             
                             % OboeMusicVoice [measure 237]                               %! SM4
                             R1 * 5/8
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % OboeMusicVoice [measure 238]                           %! SM4
                                 \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -982,7 +983,8 @@
                                 g'''4
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 % OboeMusicVoice [measure 239]                           %! SM4
                                 g'''4
@@ -990,7 +992,8 @@
                                 f'''4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 b''16
                                 -\staccato                                               %! IC
@@ -1016,12 +1019,14 @@
                                 gs''4
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % OboeMusicVoice [measure 240]                           %! SM4
                                 gs''4
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 ds''4
                                 -\staccato                                               %! IC
@@ -1070,17 +1075,20 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 gs'4
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % OboeMusicVoice [measure 242]                           %! SM4
                                 d''4.
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 d''4.
                                 ~
@@ -1139,17 +1147,20 @@
                                 -\staccato                                               %! IC
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 f'4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 d''4.
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % OboeMusicVoice [measure 244]                           %! SM4
                                 d''4
@@ -1480,16 +1491,19 @@
                                 d'4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 gs'4
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 gs'4
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 % ClarinetMusicVoice [measure 239]                       %! SM4
                                 fs'8
@@ -1520,7 +1534,8 @@
                                 a'4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 % ClarinetMusicVoice [measure 240]                       %! SM4
                                 as'4
@@ -1529,7 +1544,8 @@
                                 f''4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 ds''8
                                 -\staccato                                               %! IC
@@ -1539,17 +1555,20 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ClarinetMusicVoice [measure 241]                       %! SM4
                                 as'4.
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 f''4.
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 % ClarinetMusicVoice [measure 242]                       %! SM4
                                 f''4
@@ -1557,7 +1576,8 @@
                                 fs''4
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 fs''8
                                 [
@@ -1566,7 +1586,8 @@
                                 -\staccato                                               %! IC
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ClarinetMusicVoice [measure 243]                       %! SM4
                                 b''4
@@ -1583,11 +1604,13 @@
                                 fs''4
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 fs''4.
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 % ClarinetMusicVoice [measure 244]                       %! SM4
                                 gs''8
@@ -1604,7 +1627,8 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 a''4.

@@ -3143,7 +3143,8 @@
                             
                             % OboeMusicVoice [measure 35]                                %! SM4
                             R1 * 1
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % OboeMusicVoice [measure 36]                            %! SM4
                                 \set OboeMusicStaff.instrumentName = \markup {           %! REDUNDANT_INSTRUMENT:SM8
@@ -3231,7 +3232,8 @@
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 c'4
                             }
@@ -3283,11 +3285,13 @@
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 c'4
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % OboeMusicVoice [measure 38]                            %! SM4
                                 fs'4
@@ -3334,7 +3338,8 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 af'4
                             }
@@ -3351,7 +3356,8 @@
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 af'4.
                                 ~
@@ -3415,11 +3421,13 @@
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 c''4
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 d''16
                                 -\staccato                                               %! IC
@@ -3438,7 +3446,8 @@
                                 \ff
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % OboeMusicVoice [measure 42]                            %! SM4
                                 b'4
@@ -3454,7 +3463,8 @@
                                 fs'4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 ef''4.
                                 -\staccato                                               %! IC
@@ -3507,7 +3517,8 @@
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
@@ -3538,7 +3549,8 @@
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 e''4
                                 ~
@@ -3618,7 +3630,8 @@
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % OboeMusicVoice [measure 46]                            %! SM4
                                 bf'4
@@ -3664,7 +3677,8 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 a''4.
                                 ~
@@ -3680,7 +3694,8 @@
                                 af''4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 e''4.
                                 -\staccato                                               %! IC
@@ -3745,12 +3760,14 @@
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 c''4
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 % OboeMusicVoice [measure 50]                            %! SM4
                                 c''16
@@ -4034,7 +4051,8 @@
                             
                             % ClarinetMusicVoice [measure 17]                            %! SM4
                             R1 * 7/8
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ClarinetMusicVoice [measure 18]                        %! SM4
                                 \override DynamicLineSpanner.staff-padding = #'3         %! OC
@@ -4154,7 +4172,8 @@
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 gs''4
                             }
@@ -4188,11 +4207,13 @@
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 c''4
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 c''4
                                 -\staccato                                               %! IC
@@ -4200,7 +4221,8 @@
                                 ds''4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 fs''8
                                 -\staccato                                               %! IC
@@ -4217,7 +4239,8 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ClarinetMusicVoice [measure 20]                        %! SM4
                                 c''4
@@ -4234,7 +4257,8 @@
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 % ClarinetMusicVoice [measure 21]                        %! SM4
                                 a''4
@@ -4270,18 +4294,21 @@
                                 f''4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 c''4.
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ClarinetMusicVoice [measure 22]                        %! SM4
                                 c''4.
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 f''8
                                 -\staccato                                               %! IC
@@ -4298,12 +4325,14 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 cs''4
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 cs''4
                             }
@@ -4317,7 +4346,8 @@
                                 e''4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 % ClarinetMusicVoice [measure 24]                        %! SM4
                                 c''8
@@ -4339,7 +4369,8 @@
                                 d''4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 as'4
                                 -\staccato                                               %! IC
@@ -4357,7 +4388,8 @@
                             
                             % ClarinetMusicVoice [measure 28]                            %! SM4
                             R1 * 7/8
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ClarinetMusicVoice [measure 29]                        %! SM4
                                 \override DynamicLineSpanner.staff-padding = #'3         %! OC
@@ -4378,7 +4410,8 @@
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 a'4
                             }
@@ -4419,7 +4452,8 @@
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
@@ -4430,7 +4464,8 @@
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
@@ -4445,7 +4480,8 @@
                                 e''4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 g''8
                                 -\staccato                                               %! IC
@@ -4462,7 +4498,8 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ClarinetMusicVoice [measure 31]                        %! SM4
                                 cs''4
@@ -4479,7 +4516,8 @@
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 % ClarinetMusicVoice [measure 32]                        %! SM4
                                 as'4
@@ -4515,18 +4553,21 @@
                                 fs''4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 cs''4.
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ClarinetMusicVoice [measure 33]                        %! SM4
                                 cs''4.
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 fs''8
                                 -\staccato                                               %! IC
@@ -4543,12 +4584,14 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 d''4
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 d''4
                             }
@@ -4576,7 +4619,8 @@
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 % ClarinetMusicVoice [measure 35]                        %! SM4
                                 cs''8
@@ -4598,7 +4642,8 @@
                                 a''4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
@@ -4614,7 +4659,8 @@
                                 \revert TupletBracket.staff-padding                      %! OC
                                 \revert DynamicLineSpanner.staff-padding                 %! OC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 % ClarinetMusicVoice [measure 36]                        %! SM4
                                 \once \override Accidental.color = #red
@@ -4682,18 +4728,21 @@
                                 as4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ClarinetMusicVoice [measure 37]                        %! SM4
                                 ds'4.
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 ds'4.
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 % ClarinetMusicVoice [measure 38]                        %! SM4
                                 e'8
@@ -4718,7 +4767,8 @@
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
@@ -4730,7 +4780,8 @@
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
@@ -4741,7 +4792,8 @@
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ClarinetMusicVoice [measure 39]                        %! SM4
                                 \once \override Accidental.color = #red
@@ -4805,13 +4857,15 @@
                                 gs'4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 f'4.
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ClarinetMusicVoice [measure 41]                        %! SM4
                                 f'4.
@@ -4871,7 +4925,8 @@
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
@@ -4884,7 +4939,8 @@
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
@@ -4937,17 +4993,20 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 g'4.
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ClarinetMusicVoice [measure 43]                        %! SM4
                                 g'4
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 a'4
                                 -\staccato                                               %! IC
@@ -4955,7 +5014,8 @@
                                 as'4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 % ClarinetMusicVoice [measure 44]                        %! SM4
                                 cs''8
@@ -4997,19 +5057,22 @@
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ClarinetMusicVoice [measure 45]                        %! SM4
                                 b'4.
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 b'4
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 % ClarinetMusicVoice [measure 46]                        %! SM4
                                 b'8
@@ -5025,23 +5088,27 @@
                                 -\staccato                                               %! IC
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 as'4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 gs''4.
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ClarinetMusicVoice [measure 47]                        %! SM4
                                 gs''4
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 as'8
                                 -\staccato                                               %! IC
@@ -5080,7 +5147,8 @@
                                 c''4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ClarinetMusicVoice [measure 49]                        %! SM4
                                 g''4.
@@ -5473,12 +5541,14 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % PianoMusicVoice [measure 15]                           %! SM4
                                 g''4.
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 a''4.
                                 ~
@@ -5513,7 +5583,8 @@
                                 af''8
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/3 {
                                 
                                 a''8
                                 [
@@ -5523,7 +5594,8 @@
                                 c'''8
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 % PianoMusicVoice [measure 17]                           %! SM4
                                 b''8
@@ -5552,7 +5624,8 @@
                                 af''4
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/3 {
                                 
                                 af''8
                                 [
@@ -5586,7 +5659,8 @@
                                 cs'''8
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/3 {
                                 
                                 % PianoMusicVoice [measure 19]                           %! SM4
                                 ef''8
@@ -5612,7 +5686,8 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 f'''4
                             }
@@ -5654,7 +5729,8 @@
                                 ef''8
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 % PianoMusicVoice [measure 21]                           %! SM4
                                 e'8
@@ -5663,7 +5739,8 @@
                                 b''8
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 g''8
                                 [
@@ -5676,7 +5753,8 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 ef''4.
                             }
@@ -5690,7 +5768,8 @@
                                 b''4
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 % PianoMusicVoice [measure 22]                           %! SM4
                                 b''8
@@ -5750,11 +5829,13 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 fs'4
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 % PianoMusicVoice [measure 24]                           %! SM4
                                 f'4
@@ -5827,12 +5908,14 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % PianoMusicVoice [measure 26]                           %! SM4
                                 af''4.
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 bf''4.
                                 ~
@@ -5867,7 +5950,8 @@
                                 a''8
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/3 {
                                 
                                 bf'8
                                 [
@@ -5877,7 +5961,8 @@
                                 cs''8
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 % PianoMusicVoice [measure 28]                           %! SM4
                                 c''8
@@ -5906,7 +5991,8 @@
                                 a''4
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/3 {
                                 
                                 a''8
                                 [
@@ -5940,7 +6026,8 @@
                                 d''8
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/3 {
                                 
                                 % PianoMusicVoice [measure 30]                           %! SM4
                                 e'8
@@ -5966,7 +6053,8 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 fs''4
                             }
@@ -6008,7 +6096,8 @@
                                 e'8
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 % PianoMusicVoice [measure 32]                           %! SM4
                                 f'8
@@ -6017,7 +6106,8 @@
                                 c'''8
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 af''8
                                 [
@@ -6037,7 +6127,8 @@
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
@@ -6065,7 +6156,8 @@
                                 c''4
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 % PianoMusicVoice [measure 33]                           %! SM4
                                 c''8
@@ -6139,7 +6231,8 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 g''4
                             }
@@ -6155,7 +6248,8 @@
                             \revert Beam.positions                                       %! OC
                             \revert DynamicLineSpanner.staff-padding                     %! OC
                             \revert TupletBracket.staff-padding                          %! OC
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 % PianoMusicVoice [measure 36]                           %! SM4
                                 \override Beam.positions = #'(-5 . -5)                   %! OC
@@ -6172,11 +6266,13 @@
                                 g8
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 a8.
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 g8
                                 [
@@ -6184,7 +6280,8 @@
                                 fs8
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 bf8
                                 ~
@@ -6221,7 +6318,8 @@
                                 af16
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 b16
                                 [
@@ -6258,12 +6356,14 @@
                                 af8
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 c'8
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/3 {
                                 
                                 c'16
                                 [
@@ -6274,7 +6374,8 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 % PianoMusicVoice [measure 38]                           %! SM4
                                 b16
@@ -6312,11 +6413,13 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 d'8.
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 b8.
                                 ~
@@ -6347,7 +6450,8 @@
                                 g16
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/3 {
                                 
                                 cs'16
                                 [
@@ -6406,12 +6510,14 @@
                                 ef'8
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 fs'8.
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 fs'16
                                 [
@@ -6437,7 +6543,8 @@
                                 bf'16
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/3 {
                                 
                                 % PianoMusicVoice [measure 41]                           %! SM4
                                 e'16
@@ -6477,11 +6584,13 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 b8
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 a'8
                                 [
@@ -6490,7 +6599,8 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/3 {
                                 
                                 cs'16
                                 [
@@ -6521,7 +6631,8 @@
                                 fs'16
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 af'16
                                 [
@@ -6529,7 +6640,8 @@
                                 g'16
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 d''16
                                 [
@@ -6542,7 +6654,8 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 bf'8.
                             }
@@ -6557,7 +6670,8 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 fs'16
                                 [
@@ -6566,7 +6680,8 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 bf'16
                                 [
@@ -6578,7 +6693,8 @@
                                 c''16
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/3 {
                                 
                                 fs''16
                                 [
@@ -6603,11 +6719,13 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 af'8
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % PianoMusicVoice [measure 43]                           %! SM4
                                 a'8
@@ -6645,7 +6763,8 @@
                                 b'16
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/3 {
                                 
                                 af''16
                                 [
@@ -6655,7 +6774,8 @@
                                 bf'16
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 % PianoMusicVoice [measure 44]                           %! SM4
                                 \once \override Accidental.color = #red
@@ -6683,7 +6803,8 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 bf''8.
                             }
@@ -6698,7 +6819,8 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 b''16
                                 [
@@ -7166,7 +7288,8 @@
                             
                             % PianoMusicVoice [measure 72]                               %! SM4
                             r2
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % PianoMusicVoice [measure 73]                           %! SM4
                                 r8
@@ -7246,12 +7369,14 @@
                                 -\staccatissimo                                          %! IC
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % PianoMusicVoice [measure 75]                           %! SM4
                                 r8
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r4.
                             }
@@ -7295,7 +7420,8 @@
                                 a''8
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r8
                                 
@@ -7315,7 +7441,8 @@
                             r1
                             
                             r8
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r8
                                 
@@ -7347,7 +7474,8 @@
                                 -\staccatissimo                                          %! IC
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r8
                             }
@@ -7420,7 +7548,8 @@
                                 -\staccatissimo                                          %! IC
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % PianoMusicVoice [measure 80]                           %! SM4
                                 r8
@@ -7484,7 +7613,8 @@
                                 -\staccatissimo                                          %! IC
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % PianoMusicVoice [measure 82]                           %! SM4
                                 r16
@@ -7536,7 +7666,8 @@
                                 g'''4
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % PianoMusicVoice [measure 84]                           %! SM4
                                 r16
@@ -7546,7 +7677,8 @@
                             }
                             
                             r4.
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r16
                                 
@@ -7586,7 +7718,8 @@
                                 c'''8
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r8
                                 
@@ -7613,11 +7746,13 @@
                                 a'''4
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r4
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % PianoMusicVoice [measure 87]                           %! SM4
                                 r16
@@ -7661,7 +7796,8 @@
                                 -\staccatissimo                                          %! IC
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % PianoMusicVoice [measure 88]                           %! SM4
                                 r8
@@ -7829,7 +7965,8 @@
                                 c'4
                                 -\accent                                                 %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % PercussionMusicVoice [measure 16]                      %! SM4
                                 c'2.
@@ -7918,7 +8055,8 @@
                                 
                                 c'4
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % PercussionMusicVoice [measure 38]                      %! SM4
                                 c'2.
@@ -7949,7 +8087,8 @@
                                 c'8
                                 \repeatTie
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % PercussionMusicVoice [measure 41]                      %! SM4
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
@@ -7984,7 +8123,8 @@
                                 
                                 c'4.
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % PercussionMusicVoice [measure 44]                      %! SM4
                                 c'8
@@ -8019,7 +8159,8 @@
                                 
                                 c'2
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % PercussionMusicVoice [measure 47]                      %! SM4
                                 c'2
@@ -8029,7 +8170,8 @@
                                 
                                 c'4
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % PercussionMusicVoice [measure 48]                      %! SM4
                                 c'2
@@ -8046,7 +8188,8 @@
                                 
                                 c'2
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % PercussionMusicVoice [measure 50]                      %! SM4
                                 c'2
@@ -8403,7 +8546,8 @@
                             
                             % ViolinMusicVoice [measure 20]                              %! SM4
                             R1 * 3/4
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 21]                          %! SM4
                                 \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -8428,7 +8572,8 @@
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 f''4
                             }
@@ -8492,7 +8637,8 @@
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 c'''4
                             }
@@ -8505,7 +8651,8 @@
                                 f''4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 % ViolinMusicVoice [measure 23]                          %! SM4
                                 f''16
@@ -8523,7 +8670,8 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 c''4.
                             }
@@ -8540,7 +8688,8 @@
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 ef''4
                                 
@@ -8568,7 +8717,8 @@
                             
                             % ViolinMusicVoice [measure 31]                              %! SM4
                             R1 * 3/4
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 32]                          %! SM4
                                 \once \override Accidental.color = #red
@@ -8684,7 +8834,8 @@
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
@@ -8762,7 +8913,8 @@
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 cs''4
                             }
@@ -8782,7 +8934,8 @@
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 % ViolinMusicVoice [measure 34]                          %! SM4
                                 \once \override Accidental.color = #red
@@ -8814,7 +8967,8 @@
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
@@ -8845,7 +8999,8 @@
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 e''4
                                 
@@ -8922,13 +9077,15 @@
                                 cs'4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 fs'4
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 fs'4.
                             }
@@ -8974,17 +9131,20 @@
                                 ~
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 cs'4
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 38]                          %! SM4
                                 cs'4
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 ef'4
                                 -\staccato                                               %! IC
@@ -8992,7 +9152,8 @@
                                 fs'4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 ef'16
                                 -\staccato                                               %! IC
@@ -9020,13 +9181,15 @@
                                 c''4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 bf'4.
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 40]                          %! SM4
                                 bf'4.
@@ -9104,19 +9267,22 @@
                                 cs''4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 fs'4
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 fs'4
                                 \ff
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 % ViolinMusicVoice [measure 42]                          %! SM4
                                 af'16
@@ -9145,11 +9311,13 @@
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 cs''4.
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 c''4
                                 -\staccato                                               %! IC
@@ -9225,13 +9393,15 @@
                                 fs''4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 ef''4
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 44]                          %! SM4
                                 ef''4.
@@ -9296,14 +9466,16 @@
                                 fs''4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 46]                          %! SM4
                                 bf'4
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 bf'4
                                 
@@ -9358,11 +9530,13 @@
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 d''4.
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 bf''4.
                                 -\staccato                                               %! IC
@@ -9420,13 +9594,15 @@
                                 cs''4
                                 -\staccato                                               %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 fs''4
                                 -\staccato                                               %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 50]                          %! SM4
                                 fs''4
@@ -9841,7 +10017,8 @@
                                 -\staccatissimo                                          %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 68]                          %! SM4
                                 ef''8
@@ -9862,7 +10039,8 @@
                             r8
                             
                             r2
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 70]                          %! SM4
                                 r16
@@ -9881,7 +10059,8 @@
                                 -\staccatissimo                                          %! IC
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r8
                                 
@@ -9913,7 +10092,8 @@
                             }
                             
                             r4.
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r8
                                 
@@ -9956,11 +10136,13 @@
                             
                             % ViolinMusicVoice [measure 73]                              %! SM4
                             r8
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r4.
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r8
                                 
@@ -10002,7 +10184,8 @@
                                 -\staccatissimo                                          %! IC
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 75]                          %! SM4
                                 r8
@@ -10021,7 +10204,8 @@
                                 -\staccatissimo                                          %! IC
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 76]                          %! SM4
                                 r4.
@@ -10060,14 +10244,16 @@
                                 b''2
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r4
                                 
                                 g'''8
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r8
                             }
@@ -10185,7 +10371,8 @@
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 82]                          %! SM4
                                 r8
@@ -10193,7 +10380,8 @@
                                 g'''4
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r16
                                 
@@ -10235,7 +10423,8 @@
                             r2
                             
                             r8
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 84]                          %! SM4
                                 r8
@@ -10424,7 +10613,8 @@
                                 b,1
                                 \glissando                                               %! SC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolaMusicVoice [measure 20]                           %! SM4
                                 cqs2
@@ -10501,7 +10691,8 @@
                                 c1
                                 \glissando                                               %! SC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolaMusicVoice [measure 31]                           %! SM4
                                 dqs2
@@ -10832,7 +11023,8 @@
                                 -\upbow                                                  %! IC
                                 \glissando                                               %! SC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 % ViolaMusicVoice [measure 59]                           %! SM4
                                 ef4
@@ -10996,14 +11188,16 @@
                                 -\staccatissimo                                          %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 fs''8
                                 
                                 cs''4
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 c'''8
                                 -\staccatissimo                                          %! IC
@@ -11052,7 +11246,8 @@
                                 -\staccatissimo                                          %! IC
                                 ~
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolaMusicVoice [measure 69]                           %! SM4
                                 f''8
@@ -11166,7 +11361,8 @@
                                 g''4
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolaMusicVoice [measure 73]                           %! SM4
                                 r8
@@ -11187,12 +11383,14 @@
                             
                             % ViolaMusicVoice [measure 74]                               %! SM4
                             r2.
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolaMusicVoice [measure 75]                           %! SM4
                                 r8
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r16
                                 
@@ -11260,7 +11458,8 @@
                                 -\staccatissimo                                          %! IC
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r8
                             }
@@ -11392,12 +11591,14 @@
                             r2
                             
                             r8
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolaMusicVoice [measure 84]                           %! SM4
                                 r8
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r8
                                 
@@ -11552,7 +11753,8 @@
                                 d,2
                                 \glissando                                               %! SC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % CelloMusicVoice [measure 20]                           %! SM4
                                 ctqs,1.
@@ -11608,7 +11810,8 @@
                                 e,2
                                 \glissando                                               %! SC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % CelloMusicVoice [measure 31]                           %! SM4
                                 dtqs,1.
@@ -11953,7 +12156,8 @@
                                 -\upbow                                                  %! IC
                                 \glissando                                               %! SC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/2 {
                                 
                                 % CelloMusicVoice [measure 60]                           %! SM4
                                 g4
@@ -12004,7 +12208,8 @@
                                 -\downbow                                                %! IC
                                 \glissando                                               %! SC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/4 {
                                 
                                 % CelloMusicVoice [measure 62]                           %! SM4
                                 af,4
@@ -12109,7 +12314,8 @@
                             
                             % CelloMusicVoice [measure 66]                               %! SM4
                             r1
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % CelloMusicVoice [measure 67]                           %! SM4
                                 bf''4
@@ -12186,7 +12392,8 @@
                             
                             % CelloMusicVoice [measure 71]                               %! SM4
                             r4.
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r16
                                 
@@ -12244,7 +12451,8 @@
                                 ef''4
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % CelloMusicVoice [measure 73]                           %! SM4
                                 r8
@@ -12269,7 +12477,8 @@
                             
                             % CelloMusicVoice [measure 74]                               %! SM4
                             r2.
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % CelloMusicVoice [measure 75]                           %! SM4
                                 r16
@@ -12288,7 +12497,8 @@
                                 a''4.
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r8
                                 
@@ -12335,7 +12545,8 @@
                             }
                             
                             r4.
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % CelloMusicVoice [measure 77]                           %! SM4
                                 r8
@@ -12354,7 +12565,8 @@
                             }
                             
                             r4.
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r16
                                 
@@ -12390,7 +12602,8 @@
                                 -\staccatissimo                                          %! IC
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % CelloMusicVoice [measure 79]                           %! SM4
                                 r4
@@ -12486,7 +12699,8 @@
                                 -\staccatissimo                                          %! IC
                                 ]
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % CelloMusicVoice [measure 83]                           %! SM4
                                 r4.

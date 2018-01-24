@@ -2467,7 +2467,8 @@
                                 cs'''4
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 315]                         %! SM4
                                 r4
@@ -2489,7 +2490,8 @@
                                 ef'''4
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 317]                         %! SM4
                                 r2
@@ -2521,7 +2523,8 @@
                                 e'''2
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r2
                             }
@@ -2533,7 +2536,8 @@
                                 ef'''4
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 321]                         %! SM4
                                 r2
@@ -2567,7 +2571,8 @@
                                 e'''2
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 325]                         %! SM4
                                 r2
@@ -2579,12 +2584,14 @@
                                 f'''1.
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 327]                         %! SM4
                                 r4
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r4
                                 
@@ -2602,7 +2609,8 @@
                                 ef'''4
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 329]                         %! SM4
                                 r4
@@ -2629,16 +2637,19 @@
                                 e'''2
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r2
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 332]                         %! SM4
                                 r1
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 333]                         %! SM4
                                 f'''2
@@ -2673,7 +2684,8 @@
                                 f'''2.
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 337]                         %! SM4
                                 r2
@@ -2690,7 +2702,8 @@
                                 d'''2
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 339]                         %! SM4
                                 r4
@@ -2739,7 +2752,8 @@
                                 % ViolinMusicVoice [measure 343]                         %! SM4
                                 r1
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r2
                             }
@@ -2754,7 +2768,8 @@
                                 d'''2.
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 345]                         %! SM4
                                 r4
@@ -2782,7 +2797,8 @@
                                 g'''2
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 348]                         %! SM4
                                 r2
@@ -2790,7 +2806,8 @@
                                 e'''2
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 349]                         %! SM4
                                 r2
@@ -2811,7 +2828,8 @@
                                 d'''2.
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 351]                         %! SM4
                                 r4
@@ -2828,7 +2846,8 @@
                                 % ViolinMusicVoice [measure 352]                         %! SM4
                                 r1.
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolinMusicVoice [measure 353]                         %! SM4
                                 r4
@@ -2957,13 +2976,15 @@
                                 \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                                 \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 % ViolaMusicVoice [measure 315]                          %! SM4
                                 d'''2.
                                 -\staccatissimo                                          %! IC
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 1/1 {
                                 
                                 r4
                                 

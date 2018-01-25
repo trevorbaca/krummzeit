@@ -170,7 +170,7 @@ maker(
             tuplet_ratios=[(3, 4)],
             tuplet_specifier=rhythmos.TupletSpecifier(
                 avoid_dots=True,
-                is_diminution=False,
+                diminution=False,
                 ),
             ),
         ),

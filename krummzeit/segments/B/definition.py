@@ -177,7 +177,7 @@ maker(
                 ],
             tuplet_specifier=rhythmos.TupletSpecifier(
                 avoid_dots=True,
-                is_diminution=False,
+                diminution=False,
                 ),
             tie_specifier=rhythmos.TieSpecifier(
                 tie_across_divisions=True,

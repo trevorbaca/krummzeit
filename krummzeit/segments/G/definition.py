@@ -91,7 +91,7 @@ maker(
             counts=[2],
             ),
         rhythm_maker=rhythmos.TupletRhythmMaker(
-            preferred_denominator=(1, 4),
+            denominator=(1, 4),
             tuplet_ratios=[(3, 2), (1, 4)],
             tuplet_specifier=rhythmos.TupletSpecifier(
                 avoid_dots=True,
@@ -276,7 +276,7 @@ maker(
             counts=[2, 3, 1],
             ),
         rhythm_maker=rhythmos.TupletRhythmMaker(
-            preferred_denominator=(1, 4),
+            denominator=(1, 4),
             tuplet_ratios=[(1, 4)],
             tuplet_specifier=rhythmos.TupletSpecifier(
                 avoid_dots=True,
@@ -301,7 +301,7 @@ maker(
             counts=[3],
             ),
         rhythm_maker=rhythmos.TupletRhythmMaker(
-            preferred_denominator=(1, 4),
+            denominator=(1, 4),
             tuplet_ratios=[(3, 2)],
             tuplet_specifier=rhythmos.TupletSpecifier(
                 avoid_dots=True,

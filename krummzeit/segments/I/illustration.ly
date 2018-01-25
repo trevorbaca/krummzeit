@@ -2509,6 +2509,10 @@
                                         #10                                              %! REDUNDANT_INSTRUMENT:SM8
                                         Pf.                                              %! REDUNDANT_INSTRUMENT:SM8
                                     }                                                    %! REDUNDANT_INSTRUMENT:SM8
+                                \set PianoMusicStaff.forceClef = ##t                     %! REAPPLIED_CLEF:SM8
+                                \clef "treble"                                           %! REAPPLIED_CLEF:SM8
+                                \once \override PianoMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                            %@% \override PianoMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                                 \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
                                 \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 fs'''4.
@@ -2573,6 +2577,7 @@
                                         #10                                              %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
                                         Pf.                                              %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
                                     }                                                    %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
+                                \override PianoMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                                 \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
                                 
                                 \once \override Accidental.color = #red

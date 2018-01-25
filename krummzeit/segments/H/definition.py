@@ -260,6 +260,7 @@ maker(
 
 maker(
     baca.scope('PianoMusicVoice', 1, 5),
+    baca.clef('treble'),
     baca.instrument(krummzeit.instruments['Harpsichord']),
     )
 

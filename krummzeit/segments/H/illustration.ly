@@ -1177,6 +1177,8 @@
                             \times 2/3 {
                                 
                                 % PianoMusicVoice [measure 281]                          %! SM4
+                                \once \override PianoMusicStaff.Clef.X-extent = ##f      %! MEASURE_281:SHIFTED_CLEF:OC
+                                \once \override PianoMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_281:SHIFTED_CLEF:OC
                                 \once \override Accidental.stencil = ##f
                                 \once \override AccidentalCautionary.stencil = ##f
                                 \once \override Arpeggio.X-offset = #-2
@@ -1194,6 +1196,10 @@
                                         #10                                              %! EXPLICIT_INSTRUMENT:SM8
                                         Hpschd.                                          %! EXPLICIT_INSTRUMENT:SM8
                                     }                                                    %! EXPLICIT_INSTRUMENT:SM8
+                                \set PianoMusicStaff.forceClef = ##t                     %! EXPLICIT_CLEF:SM8
+                                \clef "treble"                                           %! EXPLICIT_CLEF:SM8
+                                \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
+                            %@% \override PianoMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
                                 \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
                                 <d' f' a' c''>8
                                 [
@@ -1260,6 +1266,7 @@
                                         #10                                              %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
                                         Hpschd.                                          %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
                                     }                                                    %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
+                                \override PianoMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                                 \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! REDRAWN_EXPLICIT_INSTRUMENT_COLOR:SM6
                                 
                                 \once \override Accidental.stencil = ##f

@@ -40,10 +40,8 @@ maker = baca.SegmentMaker(
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=24,
+    validate_stage_count=22,
     )
-
-maker.validate_stage_count(22)
-maker.validate_measures_per_stage()
 
 ###############################################################################
 ################################### COMMANDS ##################################

@@ -33,6 +33,7 @@ maker = baca.SegmentMaker(
     last_segment=True,
     measures_per_stage=measures_per_stage,
     metronome_marks=krummzeit.metronome_marks,
+    rehearsal_mark='J',
     score_template=krummzeit.ScoreTemplate(),
     metronome_mark_measure_map=metronome_mark_measure_map,
     metronome_mark_stem_height=1.25,

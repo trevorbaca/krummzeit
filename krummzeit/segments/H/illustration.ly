@@ -1,4 +1,4 @@
-\version "2.19.80"
+\version "2.19.81"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -14,7 +14,6 @@
         \context Score = "Score" \with {
             currentBarNumber = #281
         } <<
-            \tag Oboe.Clarinet.Piano.Percussion.Violin.Viola.Cello                       %! ST4
             \context GlobalContext = "GlobalContext" <<
                 \context GlobalSkips = "GlobalSkips" {
                     

@@ -895,51 +895,27 @@
                             \once \override OboeMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! DEFAULT_CLEF_COLOR:SM6
                         %@% \override OboeMusicStaff.Clef.color = ##f                    %! DEFAULT_CLEF_COLOR_CANCELLATION:SM7
                             R1 * 1
-                            ^ \markup {
-                                \column
-                                    {
-                                    %@% \line                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%     {                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             (“Oboe”                              %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             \hcenter-in                          %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 #16                              %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 Oboe                             %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \concat                                  %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             {                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                     \hcenter-in                  %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                         #10                      %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                         Ob.                      %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                     )                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             }                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%     }                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                        \line                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            {                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                \with-color                              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    #(x11-color 'DarkViolet)             %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    {                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            (“Oboe”                      %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \hcenter-in                  %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                #16                      %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                Oboe                     %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \concat                          %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            {                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    \hcenter-in          %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        #10              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        Ob.              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    )                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            }                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    }                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            }                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                    }
-                                }
+                            ^ \markup {                                                  %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                \with-color                                              %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    #(x11-color 'DarkViolet)                             %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    {                                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \vcenter                                         %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            (“Oboe”                                      %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \vcenter                                         %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            \hcenter-in                                  %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                #16                                      %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                Oboe                                     %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \concat                                          %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            {                                            %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                    \hcenter-in                          %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                        #10                              %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                        Ob.                              %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                    )                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            }                                            %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    }                                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                }                                                        %! DEFAULT_INSTRUMENT_ALERT:SM11
                             \set OboeMusicStaff.instrumentName = \markup {               %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                     #16                                                  %! REDRAWN_DEFAULT_INSTRUMENT:SM8
@@ -1020,67 +996,35 @@
                             \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! DEFAULT_CLEF_COLOR:SM6
                         %@% \override ClarinetMusicStaff.Clef.color = ##f                %! DEFAULT_CLEF_COLOR_CANCELLATION:SM7
                             R1 * 1
-                            ^ \markup {
-                                \column
-                                    {
-                                    %@% \line                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%     {                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             (“BassClarinet”                      %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             \hcenter-in                          %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 #16                              %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \center-column                   %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                     {                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                         Bass                     %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                         clarinet                 %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                     }                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \concat                                  %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             {                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                     \hcenter-in                  %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                         #10                      %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                         \center-column           %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                             {                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                                 Bass             %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                                 cl.              %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                             }                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                     )                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             }                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%     }                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                        \line                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            {                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                \with-color                              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    #(x11-color 'DarkViolet)             %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    {                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            (“BassClarinet”              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \hcenter-in                  %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                #16                      %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \center-column           %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    {                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        Bass             %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        clarinet         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    }                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \concat                          %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            {                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    \hcenter-in          %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        #10              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        \center-column   %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                            {            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                                Bass     %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                                cl.      %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                            }            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    )                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            }                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    }                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            }                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                    }
-                                }
+                            ^ \markup {                                                  %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                \with-color                                              %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    #(x11-color 'DarkViolet)                             %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    {                                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \vcenter                                         %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            (“BassClarinet”                              %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \vcenter                                         %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            \hcenter-in                                  %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                #16                                      %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                \center-column                           %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                    {                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                        Bass                             %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                        clarinet                         %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                    }                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \concat                                          %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            {                                            %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                    \hcenter-in                          %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                        #10                              %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                        \center-column                   %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                            {                            %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                                Bass                     %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                                cl.                      %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                            }                            %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                    )                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            }                                            %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    }                                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                }                                                        %! DEFAULT_INSTRUMENT_ALERT:SM11
                             \set ClarinetMusicStaff.instrumentName = \markup {           %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                     #16                                                  %! REDRAWN_DEFAULT_INSTRUMENT:SM8
@@ -1169,51 +1113,27 @@
                             \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                         %@% \override PianoMusicStaff.Clef.color = ##f                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
                             r1
-                            ^ \markup {
-                                \column
-                                    {
-                                    %@% \line                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%     {                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             (“Piano”                             %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             \hcenter-in                          %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 #16                              %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 Piano                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \concat                                  %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             {                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                     \hcenter-in                  %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                         #10                      %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                         Pf.                      %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                     )                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             }                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%     }                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                        \line                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            {                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                \with-color                              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    #(x11-color 'DarkViolet)             %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    {                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            (“Piano”                     %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \hcenter-in                  %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                #16                      %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                Piano                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \concat                          %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            {                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    \hcenter-in          %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        #10              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        Pf.              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    )                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            }                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    }                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            }                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                    }
-                                }
+                            ^ \markup {                                                  %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                \with-color                                              %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    #(x11-color 'DarkViolet)                             %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    {                                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \vcenter                                         %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            (“Piano”                                     %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \vcenter                                         %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            \hcenter-in                                  %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                #16                                      %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                Piano                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \concat                                          %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            {                                            %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                    \hcenter-in                          %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                        #10                              %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                        Pf.                              %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                    )                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            }                                            %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    }                                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                }                                                        %! DEFAULT_INSTRUMENT_ALERT:SM11
                             \set PianoMusicStaff.instrumentName = \markup {              %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                     #16                                                  %! REDRAWN_DEFAULT_INSTRUMENT:SM8
@@ -1323,51 +1243,27 @@
                             \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! DEFAULT_CLEF_COLOR:SM6
                         %@% \override PercussionMusicStaff.Clef.color = ##f              %! DEFAULT_CLEF_COLOR_CANCELLATION:SM7
                             R1 * 1
-                            ^ \markup {
-                                \column
-                                    {
-                                    %@% \line                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%     {                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             (“Xylophone”                         %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             \hcenter-in                          %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 #16                              %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 Xylophone                        %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \concat                                  %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             {                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                     \hcenter-in                  %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                         #10                      %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                         Xyl.                     %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                     )                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             }                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%     }                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                        \line                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            {                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                \with-color                              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    #(x11-color 'DarkViolet)             %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    {                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            (“Xylophone”                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \hcenter-in                  %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                #16                      %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                Xylophone                %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \concat                          %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            {                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    \hcenter-in          %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        #10              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        Xyl.             %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    )                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            }                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    }                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            }                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                    }
-                                }
+                            ^ \markup {                                                  %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                \with-color                                              %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    #(x11-color 'DarkViolet)                             %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    {                                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \vcenter                                         %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            (“Xylophone”                                 %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \vcenter                                         %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            \hcenter-in                                  %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                #16                                      %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                Xylophone                                %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \concat                                          %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            {                                            %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                    \hcenter-in                          %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                        #10                              %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                        Xyl.                             %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                    )                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            }                                            %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    }                                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                }                                                        %! DEFAULT_INSTRUMENT_ALERT:SM11
                             \set PercussionMusicStaff.instrumentName = \markup {         %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                     #16                                                  %! REDRAWN_DEFAULT_INSTRUMENT:SM8
@@ -1459,46 +1355,28 @@
                                                         \upright                         %! IC
                                                             "accent changes of direction noticeably at each attack" %! IC
                                                 }                                        %! IC
-                                        %@% \line                                        %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%     {                                        %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%         \vcenter                             %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%             (“Percussion”                    %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%         \vcenter                             %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%             \hcenter-in                      %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%                 #16                          %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%                 Percussion                   %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%         \concat                              %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%             {                                %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%                 \vcenter                     %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%                     \hcenter-in              %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%                         #10                  %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%                         Perc.                %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%                 \vcenter                     %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%                     )                        %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%             }                                %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                        %@%     }                                        %! EXPLICIT_INSTRUMENT_ALERT:SM10
-                                            \line                                        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                {                                        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    \with-color                          %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        #(x11-color 'blue)               %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        {                                %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \vcenter                     %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                (“Percussion”            %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \vcenter                     %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \hcenter-in              %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    #16                  %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    Percussion           %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \concat                      %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                {                        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    \vcenter             %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        \hcenter-in      %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                            #10          %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                            Perc.        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    \vcenter             %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        )                %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                }                        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        }                                %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                }                                        %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                            \line                                        %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                {                                        %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                    \with-color                          %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                        #(x11-color 'blue)               %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                        {                                %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                            \vcenter                     %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                                (“Percussion”            %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                            \vcenter                     %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                                \hcenter-in              %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                                    #16                  %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                                    Percussion           %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                            \concat                      %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                                {                        %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                                    \vcenter             %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                                        \hcenter-in      %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                                            #10          %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                                            Perc.        %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                                    \vcenter             %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                                        )                %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                                }                        %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                        }                                %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                                                }                                        %! EXPLICIT_INSTRUMENT_ALERT:SM11
                                         }
                                     }
                                 \set PercussionMusicStaff.instrumentName = \markup {     %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
@@ -1585,51 +1463,27 @@
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! DEFAULT_CLEF_COLOR:SM6
                         %@% \override ViolinMusicStaff.Clef.color = ##f                  %! DEFAULT_CLEF_COLOR_CANCELLATION:SM7
                             r8
-                            ^ \markup {
-                                \column
-                                    {
-                                    %@% \line                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%     {                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             (“Violin”                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             \hcenter-in                          %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 #16                              %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 Violin                           %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \concat                                  %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             {                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                     \hcenter-in                  %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                         #10                      %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                         Vn.                      %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                     )                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             }                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%     }                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                        \line                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            {                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                \with-color                              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    #(x11-color 'DarkViolet)             %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    {                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            (“Violin”                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \hcenter-in                  %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                #16                      %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                Violin                   %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \concat                          %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            {                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    \hcenter-in          %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        #10              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        Vn.              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    )                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            }                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    }                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            }                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                    }
-                                }
+                            ^ \markup {                                                  %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                \with-color                                              %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    #(x11-color 'DarkViolet)                             %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    {                                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \vcenter                                         %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            (“Violin”                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \vcenter                                         %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            \hcenter-in                                  %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                #16                                      %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                Violin                                   %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \concat                                          %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            {                                            %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                    \hcenter-in                          %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                        #10                              %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                        Vn.                              %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                    )                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            }                                            %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    }                                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                }                                                        %! DEFAULT_INSTRUMENT_ALERT:SM11
                             \set ViolinMusicStaff.instrumentName = \markup {             %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                     #16                                                  %! REDRAWN_DEFAULT_INSTRUMENT:SM8
@@ -1889,51 +1743,27 @@
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! DEFAULT_CLEF_COLOR:SM6
                         %@% \override ViolaMusicStaff.Clef.color = ##f                   %! DEFAULT_CLEF_COLOR_CANCELLATION:SM7
                             r8
-                            ^ \markup {
-                                \column
-                                    {
-                                    %@% \line                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%     {                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             (“Viola”                             %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             \hcenter-in                          %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 #16                              %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 Viola                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \concat                                  %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             {                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                     \hcenter-in                  %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                         #10                      %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                         Va.                      %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                     )                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             }                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%     }                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                        \line                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            {                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                \with-color                              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    #(x11-color 'DarkViolet)             %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    {                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            (“Viola”                     %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \hcenter-in                  %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                #16                      %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                Viola                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \concat                          %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            {                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    \hcenter-in          %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        #10              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        Va.              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    )                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            }                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    }                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            }                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                    }
-                                }
+                            ^ \markup {                                                  %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                \with-color                                              %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    #(x11-color 'DarkViolet)                             %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    {                                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \vcenter                                         %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            (“Viola”                                     %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \vcenter                                         %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            \hcenter-in                                  %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                #16                                      %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                Viola                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \concat                                          %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            {                                            %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                    \hcenter-in                          %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                        #10                              %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                        Va.                              %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                    )                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            }                                            %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    }                                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                }                                                        %! DEFAULT_INSTRUMENT_ALERT:SM11
                             \set ViolaMusicStaff.instrumentName = \markup {              %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                     #16                                                  %! REDRAWN_DEFAULT_INSTRUMENT:SM8
@@ -2193,51 +2023,27 @@
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! DEFAULT_CLEF_COLOR:SM6
                         %@% \override CelloMusicStaff.Clef.color = ##f                   %! DEFAULT_CLEF_COLOR_CANCELLATION:SM7
                             r8
-                            ^ \markup {
-                                \column
-                                    {
-                                    %@% \line                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%     {                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             (“Cello”                             %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             \hcenter-in                          %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 #16                              %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 Cello                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%         \concat                                  %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             {                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                     \hcenter-in                  %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                         #10                      %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                         Vc.                      %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                 \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%                     )                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%             }                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                    %@%     }                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                                        \line                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            {                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                \with-color                              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    #(x11-color 'DarkViolet)             %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    {                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            (“Cello”                     %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                         %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \hcenter-in                  %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                #16                      %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                Cello                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \concat                          %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            {                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    \hcenter-in          %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        #10              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        Vc.              %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter                 %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    )                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            }                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    }                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            }                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                    }
-                                }
+                            ^ \markup {                                                  %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                \with-color                                              %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    #(x11-color 'DarkViolet)                             %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    {                                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \vcenter                                         %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            (“Cello”                                     %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \vcenter                                         %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            \hcenter-in                                  %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                #16                                      %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                Cello                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                        \concat                                          %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            {                                            %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                    \hcenter-in                          %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                        #10                              %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                        Vc.                              %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                                    )                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                            }                                            %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                    }                                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                }                                                        %! DEFAULT_INSTRUMENT_ALERT:SM11
                             \set CelloMusicStaff.instrumentName = \markup {              %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                                     #16                                                  %! REDRAWN_DEFAULT_INSTRUMENT:SM8

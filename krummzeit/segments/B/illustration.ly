@@ -2343,7 +2343,6 @@
                                 \override OboeMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                                 
                                 ef''4
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2351,11 +2350,11 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 c''8
                                 ~
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2363,6 +2362,7 @@
                                             \finger
                                                 2
                                     }
+                                \startTrillSpan                                          %! SC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
@@ -2372,7 +2372,6 @@
                                 b''4.
                                 ~
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2380,6 +2379,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 1/1 {
@@ -2393,7 +2393,6 @@
                                 
                                 ef''4
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2401,6 +2400,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 ef''8
                                 \stopTrillSpan                                           %! SC
@@ -2430,7 +2430,6 @@
                                 
                                 e'''4.
                                 ~
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2438,6 +2437,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 1/1 {
@@ -2449,7 +2449,6 @@
                                 ~
                                 ]
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2457,6 +2456,7 @@
                                             \finger
                                                 2
                                     }
+                                \startTrillSpan                                          %! SC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/8 {
@@ -2466,7 +2466,6 @@
                                 
                                 cs''2
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2474,6 +2473,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 cs''8
                                 \stopTrillSpan                                           %! SC
@@ -2482,7 +2482,6 @@
                                 
                                 % OboeMusicVoice [measure 92]                            %! SM4
                                 cs''4
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2490,11 +2489,11 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 cs''8
                                 ~
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2502,6 +2501,7 @@
                                             \finger
                                                 2
                                     }
+                                \startTrillSpan                                          %! SC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
@@ -2511,7 +2511,6 @@
                                 b''4.
                                 ~
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2519,6 +2518,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 1/1 {
@@ -2547,7 +2547,6 @@
                                     }
                                 
                                 b''4
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2555,11 +2554,11 @@
                                             \finger
                                                 2
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 bf''8
                                 ~
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2567,6 +2566,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 1/1 {
@@ -2634,7 +2634,6 @@
                                 \ff                                                      %! REDUNDANT_DYNAMIC:SM8
                                 
                                 e'''4
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2642,11 +2641,11 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 ef'''8
                                 ~
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2654,6 +2653,7 @@
                                             \finger
                                                 2
                                     }
+                                \startTrillSpan                                          %! SC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
@@ -2662,7 +2662,6 @@
                                 
                                 c'''2
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2670,6 +2669,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 c''4
                                 \stopTrillSpan                                           %! SC
@@ -2681,7 +2681,6 @@
                                 % OboeMusicVoice [measure 113]                           %! SM4
                                 c''4
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2689,6 +2688,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 c''8
                                 \stopTrillSpan                                           %! SC
@@ -2718,7 +2718,6 @@
                                 
                                 f'4.
                                 ~
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2726,6 +2725,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                             }
                             \times 2/3 {
                                 
@@ -2733,7 +2733,6 @@
                                 
                                 e'2
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2741,11 +2740,11 @@
                                             \finger
                                                 2
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 e'8
                                 ~
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2753,6 +2752,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                             }
                             \times 4/7 {
                                 
@@ -2763,7 +2763,6 @@
                                 \stopTrillSpan                                           %! SC
                                 
                                 e'4
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2771,11 +2770,11 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 d''8
                                 ~
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2783,6 +2782,7 @@
                                             \finger
                                                 2
                                     }
+                                \startTrillSpan                                          %! SC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 1/1 {
@@ -2795,7 +2795,6 @@
                                 
                                 d'''2
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2803,6 +2802,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 1/1 {
@@ -2817,7 +2817,6 @@
                                 % OboeMusicVoice [measure 116]                           %! SM4
                                 d'''4
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2825,6 +2824,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 g''8
                                 \stopTrillSpan                                           %! SC
@@ -2850,7 +2850,6 @@
                                 ]
                                 
                                 cs''4.
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2858,6 +2857,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                             }
                             
                             % OboeMusicVoice [measure 117]                               %! SM4
@@ -2877,7 +2877,6 @@
                                     }
                                 
                                 bf''4
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2885,6 +2884,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 bf''8
                                 ~
@@ -2898,7 +2898,6 @@
                                 
                                 bf''4.
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2906,6 +2905,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                             }
                             
                             % OboeMusicVoice [measure 119]                               %! SM4
@@ -2925,7 +2925,6 @@
                                     }
                                 
                                 cs'''4
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2933,6 +2932,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 ef'''8
                                 ~
@@ -2946,7 +2946,6 @@
                                 
                                 f'''2
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2954,10 +2953,10 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 f'''4
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2965,11 +2964,11 @@
                                             \finger
                                                 2
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 f'''8
                                 ~
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2977,6 +2976,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 1/1 {
@@ -3014,7 +3014,6 @@
                                 
                                 e'4.
                                 ~
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -3022,6 +3021,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                             }
                             \times 4/5 {
                                 
@@ -3033,7 +3033,6 @@
                                 
                                 bf''2
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -3041,6 +3040,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 g''8
                                 \stopTrillSpan                                           %! SC
@@ -3058,7 +3058,6 @@
                                 % OboeMusicVoice [measure 122]                           %! SM4
                                 fs''8
                                 ~
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -3066,6 +3065,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
@@ -3079,7 +3079,6 @@
                                 cs''8
                                 ~
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -3087,6 +3086,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                             }
                             \times 2/3 {
                                 
@@ -3098,7 +3098,6 @@
                                 % OboeMusicVoice [measure 123]                           %! SM4
                                 cs''4
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -3106,10 +3105,10 @@
                                             \finger
                                                 2
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 cs'''4
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -3117,6 +3116,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 cs'''8
                                 \stopTrillSpan                                           %! SC

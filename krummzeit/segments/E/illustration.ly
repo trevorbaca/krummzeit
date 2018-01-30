@@ -2218,7 +2218,6 @@
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
                                 g''4.
-                                \startTrillSpan                                          %! SC
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14
                                 ^ \markup {
@@ -2228,6 +2227,7 @@
                                             \finger
                                                 2
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
@@ -2236,7 +2236,6 @@
                                 \once \override Stem.color = #red
                                 g''4.
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14
                                 ^ \markup {
@@ -2246,6 +2245,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                             }
                             
                             r4
@@ -2258,7 +2258,6 @@
                                 f''8.
                                 
                                 e''4
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2266,6 +2265,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 d'''16
                                 \stopTrillSpan                                           %! SC
@@ -2390,7 +2390,6 @@
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
                                 c''4.
-                                \startTrillSpan                                          %! SC
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14
                                 ^ \markup {
@@ -2400,10 +2399,10 @@
                                             \finger
                                                 2
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 g'2
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2411,6 +2410,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 fs''8
                                 \stopTrillSpan                                           %! SC
@@ -2742,7 +2742,6 @@
                                     }
                                 
                                 fs'4.
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2750,10 +2749,10 @@
                                             \finger
                                                 2
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 gs'4.
                                 \stopTrillSpan                                           %! SC
-                                \startTrillSpan                                          %! SC
                                 ^ \markup {
                                     \override
                                         #'(circle-padding . 0.25)
@@ -2761,6 +2760,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                             }
                             
                             r4.
@@ -2778,7 +2778,6 @@
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
                                 cs'4
-                                \startTrillSpan                                          %! SC
                                 - \tweak color #red                                      %! SM14
                                 ^ \markup { @ }                                          %! SM14
                                 ^ \markup {
@@ -2788,6 +2787,7 @@
                                             \finger
                                                 1
                                     }
+                                \startTrillSpan                                          %! SC
                                 
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red

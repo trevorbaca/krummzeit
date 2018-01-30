@@ -189,7 +189,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             lilypond_type='OboeMusicStaff',
             name='OboeMusicStaff',
             )
-        self._attach_tag('Oboe', oboe_music_staff)
+        self._attach_lilypond_tag('Oboe', oboe_music_staff)
         abjad.annotate(
             oboe_music_staff,
             'default_instrument',
@@ -211,7 +211,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             lilypond_type='ClarinetMusicStaff',
             name='ClarinetMusicStaff',
             )
-        self._attach_tag('Clarinet', clarinet_music_staff)
+        self._attach_lilypond_tag('Clarinet', clarinet_music_staff)
         abjad.annotate(
             clarinet_music_staff,
             'default_instrument',
@@ -240,7 +240,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             lilypond_type='PianoMusicStaff',
             name='PianoMusicStaff',
             )
-        self._attach_tag('Piano', piano_music_staff)
+        self._attach_lilypond_tag('Piano', piano_music_staff)
         abjad.annotate(
             piano_music_staff,
             'default_instrument',
@@ -262,7 +262,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             lilypond_type='PercussionMusicStaff',
             name='PercussionMusicStaff',
             )
-        self._attach_tag('Percussion', percussion_music_staff)
+        self._attach_lilypond_tag('Percussion', percussion_music_staff)
         abjad.annotate(
             percussion_music_staff,
             'default_instrument',
@@ -291,7 +291,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             lilypond_type='ViolinMusicStaff',
             name='ViolinMusicStaff',
             )
-        self._attach_tag('Violin', violin_music_staff)
+        self._attach_lilypond_tag('Violin', violin_music_staff)
         abjad.annotate(
             violin_music_staff,
             'default_instrument',
@@ -313,7 +313,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             lilypond_type='ViolaMusicStaff',
             name='ViolaMusicStaff',
             )
-        self._attach_tag('Viola', viola_music_staff)
+        self._attach_lilypond_tag('Viola', viola_music_staff)
         abjad.annotate(
             viola_music_staff,
             'default_instrument',
@@ -335,7 +335,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             lilypond_type='CelloMusicStaff',
             name='CelloMusicStaff',
             )
-        self._attach_tag('Cello', cello_music_staff)
+        self._attach_lilypond_tag('Cello', cello_music_staff)
         abjad.annotate(
             cello_music_staff,
             'default_instrument',

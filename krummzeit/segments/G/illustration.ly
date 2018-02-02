@@ -17,43 +17,43 @@
             \context GlobalContext = "GlobalContext" <<
                 \context GlobalRests = "GlobalRests" {
                     
-                    % [GlobalRests measure 257]                                          %! SM4
+                    % [G GlobalRests measure 257]                                        %! SM4
                     R1 * 9/8
                     
-                    % [GlobalRests measure 258]                                          %! SM4
+                    % [G GlobalRests measure 258]                                        %! SM4
                     R1 * 5/8
                     
-                    % [GlobalRests measure 259]                                          %! SM4
+                    % [G GlobalRests measure 259]                                        %! SM4
                     R1 * 5/8
                     
-                    % [GlobalRests measure 260]                                          %! SM4
+                    % [G GlobalRests measure 260]                                        %! SM4
                     R1 * 1
                     
-                    % [GlobalRests measure 261]                                          %! SM4
+                    % [G GlobalRests measure 261]                                        %! SM4
                     R1 * 5/4
                     
-                    % [GlobalRests measure 262]                                          %! SM4
+                    % [G GlobalRests measure 262]                                        %! SM4
                     R1 * 3/4
                     
-                    % [GlobalRests measure 263]                                          %! SM4
+                    % [G GlobalRests measure 263]                                        %! SM4
                     R1 * 3/4
                     
-                    % [GlobalRests measure 264]                                          %! SM4
+                    % [G GlobalRests measure 264]                                        %! SM4
                     R1 * 3/4
                     
-                    % [GlobalRests measure 265]                                          %! SM4
+                    % [G GlobalRests measure 265]                                        %! SM4
                     R1 * 9/8
                     
-                    % [GlobalRests measure 266]                                          %! SM4
+                    % [G GlobalRests measure 266]                                        %! SM4
                     R1 * 7/8
                     
-                    % [GlobalRests measure 267]                                          %! SM4
+                    % [G GlobalRests measure 267]                                        %! SM4
                     R1 * 3/2
                     
-                    % [GlobalRests measure 268]                                          %! SM4
+                    % [G GlobalRests measure 268]                                        %! SM4
                     R1 * 7/4
                     
-                    % [GlobalRests measure 269]                                          %! SM4
+                    % [G GlobalRests measure 269]                                        %! SM4
                     \once \override Score.MultiMeasureRest.transparent = ##t             %! SM19
                     \once \override Score.TimeSignature.stencil = ##f                    %! SM19
                     R1 * 1/4
@@ -62,37 +62,37 @@
                             #"scripts.ushortfermata"                                     %! SM18
                         }                                                                %! SM18
                     
-                    % [GlobalRests measure 270]                                          %! SM4
+                    % [G GlobalRests measure 270]                                        %! SM4
                     R1 * 3/4
                     
-                    % [GlobalRests measure 271]                                          %! SM4
+                    % [G GlobalRests measure 271]                                        %! SM4
                     R1 * 7/4
                     
-                    % [GlobalRests measure 272]                                          %! SM4
+                    % [G GlobalRests measure 272]                                        %! SM4
                     R1 * 11/8
                     
-                    % [GlobalRests measure 273]                                          %! SM4
+                    % [G GlobalRests measure 273]                                        %! SM4
                     R1 * 5/8
                     
-                    % [GlobalRests measure 274]                                          %! SM4
+                    % [G GlobalRests measure 274]                                        %! SM4
                     R1 * 1
                     
-                    % [GlobalRests measure 275]                                          %! SM4
+                    % [G GlobalRests measure 275]                                        %! SM4
                     R1 * 3/2
                     
-                    % [GlobalRests measure 276]                                          %! SM4
+                    % [G GlobalRests measure 276]                                        %! SM4
                     R1 * 3/4
                     
-                    % [GlobalRests measure 277]                                          %! SM4
+                    % [G GlobalRests measure 277]                                        %! SM4
                     R1 * 1
                     
-                    % [GlobalRests measure 278]                                          %! SM4
+                    % [G GlobalRests measure 278]                                        %! SM4
                     R1 * 7/8
                     
-                    % [GlobalRests measure 279]                                          %! SM4
+                    % [G GlobalRests measure 279]                                        %! SM4
                     R1 * 7/8
                     
-                    % [GlobalRests measure 280]                                          %! SM4
+                    % [G GlobalRests measure 280]                                        %! SM4
                     \once \override Score.MultiMeasureRest.transparent = ##t             %! SM19
                     \once \override Score.TimeSignature.stencil = ##f                    %! SM19
                     R1 * 1/4
@@ -104,7 +104,7 @@
                 }
                 \context GlobalSkips = "GlobalSkips" {
                     
-                    % [GlobalSkips measure 257]                                          %! SM4
+                    % [G GlobalSkips measure 257]                                        %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! REDUNDANT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! REDUNDANT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! REDUNDANT_METRONOME_MARK:SM27
@@ -202,7 +202,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 258]                                          %! SM4
+                    % [G GlobalSkips measure 258]                                        %! SM4
                     \time 5/8                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 5/8
@@ -244,7 +244,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 259]                                          %! SM4
+                    % [G GlobalSkips measure 259]                                        %! SM4
                     \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 5/8
                     ^ \markup {
@@ -285,7 +285,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 260]                                          %! SM4
+                    % [G GlobalSkips measure 260]                                        %! SM4
                     \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -327,7 +327,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 261]                                          %! SM4
+                    % [G GlobalSkips measure 261]                                        %! SM4
                     \time 5/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 5/4
@@ -369,7 +369,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 262]                                          %! SM4
+                    % [G GlobalSkips measure 262]                                        %! SM4
                     \time 3/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/4
@@ -411,7 +411,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 263]                                          %! SM4
+                    % [G GlobalSkips measure 263]                                        %! SM4
                     \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/4
                     ^ \markup {
@@ -452,7 +452,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 264]                                          %! SM4
+                    % [G GlobalSkips measure 264]                                        %! SM4
                     \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/4
                     ^ \markup {
@@ -493,7 +493,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 265]                                          %! SM4
+                    % [G GlobalSkips measure 265]                                        %! SM4
                     \time 9/8                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 9/8
@@ -535,7 +535,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 266]                                          %! SM4
+                    % [G GlobalSkips measure 266]                                        %! SM4
                     \time 7/8                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 7/8
@@ -577,7 +577,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 267]                                          %! SM4
+                    % [G GlobalSkips measure 267]                                        %! SM4
                     \time 6/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/2
@@ -619,7 +619,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 268]                                          %! SM4
+                    % [G GlobalSkips measure 268]                                        %! SM4
                     \time 7/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 7/4
@@ -661,7 +661,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 269]                                          %! SM4
+                    % [G GlobalSkips measure 269]                                        %! SM4
                     \time 1/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1/4
@@ -703,7 +703,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 270]                                          %! SM4
+                    % [G GlobalSkips measure 270]                                        %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -800,7 +800,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 271]                                          %! SM4
+                    % [G GlobalSkips measure 271]                                        %! SM4
                     \time 7/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 7/4
@@ -842,7 +842,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 272]                                          %! SM4
+                    % [G GlobalSkips measure 272]                                        %! SM4
                     \time 11/8                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 11/8
@@ -884,7 +884,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 273]                                          %! SM4
+                    % [G GlobalSkips measure 273]                                        %! SM4
                     \time 5/8                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 5/8
@@ -926,7 +926,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 274]                                          %! SM4
+                    % [G GlobalSkips measure 274]                                        %! SM4
                     \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -968,7 +968,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 275]                                          %! SM4
+                    % [G GlobalSkips measure 275]                                        %! SM4
                     \time 6/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/2
@@ -1010,7 +1010,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 276]                                          %! SM4
+                    % [G GlobalSkips measure 276]                                        %! SM4
                     \time 3/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/4
@@ -1052,7 +1052,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 277]                                          %! SM4
+                    % [G GlobalSkips measure 277]                                        %! SM4
                     \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -1094,7 +1094,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 278]                                          %! SM4
+                    % [G GlobalSkips measure 278]                                        %! SM4
                     \time 7/8                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 7/8
@@ -1128,7 +1128,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 279]                                          %! SM4
+                    % [G GlobalSkips measure 279]                                        %! SM4
                     \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 7/8
                     ^ \markup {
@@ -1161,7 +1161,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 280]                                          %! SM4
+                    % [G GlobalSkips measure 280]                                        %! SM4
                     \time 1/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1/4
@@ -1214,7 +1214,7 @@
                     \context OboeMusicStaff = "OboeMusicStaff" {
                         \context OboeMusicVoice = "OboeMusicVoice" {
                             
-                            % [OboeMusicVoice measure 257]                               %! SM4
+                            % [G OboeMusicVoice measure 257]                             %! SM4
                             \override Stem.direction = #up                               %! OC
                             \override DynamicLineSpanner.staff-padding = #'5             %! OC
                             \set OboeMusicStaff.instrumentName = \markup {               %! REAPPLIED_INSTRUMENT:SM8
@@ -1297,45 +1297,45 @@
                             gs8
                             ~
                             
-                            % [OboeMusicVoice measure 258]                               %! SM4
+                            % [G OboeMusicVoice measure 258]                             %! SM4
                             gs2
                             ~
                             
                             gs8
                             ~
                             
-                            % [OboeMusicVoice measure 259]                               %! SM4
+                            % [G OboeMusicVoice measure 259]                             %! SM4
                             gs2
                             ~
                             
                             gs8
                             ~
                             
-                            % [OboeMusicVoice measure 260]                               %! SM4
+                            % [G OboeMusicVoice measure 260]                             %! SM4
                             gs1
                             ~
                             
-                            % [OboeMusicVoice measure 261]                               %! SM4
+                            % [G OboeMusicVoice measure 261]                             %! SM4
                             gs1
                             ~
                             
                             gs4
                             ~
                             
-                            % [OboeMusicVoice measure 262]                               %! SM4
+                            % [G OboeMusicVoice measure 262]                             %! SM4
                             gs2.
                             ~
                             
-                            % [OboeMusicVoice measure 263]                               %! SM4
+                            % [G OboeMusicVoice measure 263]                             %! SM4
                             gs2.
                             \revert Stem.direction                                       %! OC
                             \revert DynamicLineSpanner.staff-padding                     %! OC
                             
-                            % [OboeMusicVoice measure 264]                               %! SM4
+                            % [G OboeMusicVoice measure 264]                             %! SM4
                             R1 * 3/4
                             \times 4/7 {
                                 
-                                % [OboeMusicVoice measure 265]                           %! SM4
+                                % [G OboeMusicVoice measure 265]                         %! SM4
                                 \override DynamicLineSpanner.staff-padding = #'7         %! OC
                                 \override Beam.positions = #'(-4 . -4)                   %! OC
                                 \override TupletBracket.staff-padding = #3               %! OC
@@ -1396,7 +1396,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 1/1 {
                                 
-                                % [OboeMusicVoice measure 266]                           %! SM4
+                                % [G OboeMusicVoice measure 266]                         %! SM4
                                 c''4.
                                 -\staccato                                               %! IC
                                 ~
@@ -1428,7 +1428,7 @@
                             }
                             \times 4/5 {
                                 
-                                % [OboeMusicVoice measure 267]                           %! SM4
+                                % [G OboeMusicVoice measure 267]                         %! SM4
                                 cs'''8
                                 [
                                 
@@ -1482,7 +1482,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 1/1 {
                                 
-                                % [OboeMusicVoice measure 268]                           %! SM4
+                                % [G OboeMusicVoice measure 268]                         %! SM4
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
                                 \once \override Dots.color = #red
@@ -1595,24 +1595,24 @@
                                 \revert DynamicLineSpanner.staff-padding                 %! OC
                             }
                             
-                            % [OboeMusicVoice measure 269]                               %! SM4
+                            % [G OboeMusicVoice measure 269]                             %! SM4
                             R1 * 1/4
                             
-                            % [OboeMusicVoice measure 270]                               %! SM4
+                            % [G OboeMusicVoice measure 270]                             %! SM4
                             R1 * 3/4
                             
-                            % [OboeMusicVoice measure 271]                               %! SM4
+                            % [G OboeMusicVoice measure 271]                             %! SM4
                             R1 * 7/4
                             
-                            % [OboeMusicVoice measure 272]                               %! SM4
+                            % [G OboeMusicVoice measure 272]                             %! SM4
                             R1 * 11/8
                             
-                            % [OboeMusicVoice measure 273]                               %! SM4
+                            % [G OboeMusicVoice measure 273]                             %! SM4
                             R1 * 5/8
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 1/1 {
                                 
-                                % [OboeMusicVoice measure 274]                           %! SM4
+                                % [G OboeMusicVoice measure 274]                         %! SM4
                                 \override DynamicLineSpanner.staff-padding = #'5         %! OC
                                 \override Stem.direction = #up                           %! OC
                                 \override TupletBracket.staff-padding = #3               %! OC
@@ -1646,7 +1646,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/5 {
                                 
-                                % [OboeMusicVoice measure 276]                           %! SM4
+                                % [G OboeMusicVoice measure 276]                         %! SM4
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
                                 \once \override Dots.color = #red
@@ -1682,7 +1682,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/5 {
                                 
-                                % [OboeMusicVoice measure 278]                           %! SM4
+                                % [G OboeMusicVoice measure 278]                         %! SM4
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
                                 \once \override Dots.color = #red
@@ -1712,7 +1712,7 @@
                                 \revert TupletBracket.staff-padding                      %! OC
                             }
                             
-                            % [OboeMusicVoice measure 280]                               %! SM4
+                            % [G OboeMusicVoice measure 280]                             %! SM4
                             R1 * 1/4
                             
                         }
@@ -1721,7 +1721,7 @@
                     \context ClarinetMusicStaff = "ClarinetMusicStaff" {
                         \context ClarinetMusicVoice = "ClarinetMusicVoice" {
                             
-                            % [ClarinetMusicVoice measure 257]                           %! SM4
+                            % [G ClarinetMusicVoice measure 257]                         %! SM4
                             \override Stem.direction = #up                               %! OC
                             \override DynamicLineSpanner.staff-padding = #'8             %! OC
                             \set ClarinetMusicStaff.instrumentName = \markup {           %! REDUNDANT_INSTRUMENT:SM8
@@ -1805,25 +1805,25 @@
                             cs8
                             ~
                             
-                            % [ClarinetMusicVoice measure 258]                           %! SM4
+                            % [G ClarinetMusicVoice measure 258]                         %! SM4
                             cs2
                             ~
                             
                             cs8
                             ~
                             
-                            % [ClarinetMusicVoice measure 259]                           %! SM4
+                            % [G ClarinetMusicVoice measure 259]                         %! SM4
                             cs2
                             ~
                             
                             cs8
                             ~
                             
-                            % [ClarinetMusicVoice measure 260]                           %! SM4
+                            % [G ClarinetMusicVoice measure 260]                         %! SM4
                             cs1
                             ~
                             
-                            % [ClarinetMusicVoice measure 261]                           %! SM4
+                            % [G ClarinetMusicVoice measure 261]                         %! SM4
                             cs1
                             ~
                             
@@ -1833,18 +1833,18 @@
                             \revert Stem.direction                                       %! OC
                             \revert DynamicLineSpanner.staff-padding                     %! OC
                             
-                            % [ClarinetMusicVoice measure 262]                           %! SM4
+                            % [G ClarinetMusicVoice measure 262]                         %! SM4
                             R1 * 3/4
                             
-                            % [ClarinetMusicVoice measure 263]                           %! SM4
+                            % [G ClarinetMusicVoice measure 263]                         %! SM4
                             R1 * 3/4
                             
-                            % [ClarinetMusicVoice measure 264]                           %! SM4
+                            % [G ClarinetMusicVoice measure 264]                         %! SM4
                             R1 * 3/4
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 1/1 {
                                 
-                                % [ClarinetMusicVoice measure 265]                       %! SM4
+                                % [G ClarinetMusicVoice measure 265]                     %! SM4
                                 \override DynamicLineSpanner.staff-padding = #'3         %! OC
                                 \set ClarinetMusicStaff.instrumentName = \markup {       %! EXPLICIT_INSTRUMENT:SM8
                                     \hcenter-in                                          %! EXPLICIT_INSTRUMENT:SM8
@@ -1951,7 +1951,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/4 {
                                 
-                                % [ClarinetMusicVoice measure 266]                       %! SM4
+                                % [G ClarinetMusicVoice measure 266]                     %! SM4
                                 gs''8
                                 -\staccato                                               %! IC
                                 [
@@ -1976,7 +1976,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 1/1 {
                                 
-                                % [ClarinetMusicVoice measure 267]                       %! SM4
+                                % [G ClarinetMusicVoice measure 267]                     %! SM4
                                 b''4
                             }
                             \tweak text #tuplet-number::calc-fraction-text
@@ -2013,7 +2013,7 @@
                             }
                             \times 2/3 {
                                 
-                                % [ClarinetMusicVoice measure 268]                       %! SM4
+                                % [G ClarinetMusicVoice measure 268]                     %! SM4
                                 f''4
                                 -\staccato                                               %! IC
                                 
@@ -2053,24 +2053,24 @@
                                 -\staccato                                               %! IC
                             }
                             
-                            % [ClarinetMusicVoice measure 269]                           %! SM4
+                            % [G ClarinetMusicVoice measure 269]                         %! SM4
                             R1 * 1/4
                             
-                            % [ClarinetMusicVoice measure 270]                           %! SM4
+                            % [G ClarinetMusicVoice measure 270]                         %! SM4
                             R1 * 3/4
                             
-                            % [ClarinetMusicVoice measure 271]                           %! SM4
+                            % [G ClarinetMusicVoice measure 271]                         %! SM4
                             R1 * 7/4
                             
-                            % [ClarinetMusicVoice measure 272]                           %! SM4
+                            % [G ClarinetMusicVoice measure 272]                         %! SM4
                             R1 * 11/8
                             
-                            % [ClarinetMusicVoice measure 273]                           %! SM4
+                            % [G ClarinetMusicVoice measure 273]                         %! SM4
                             R1 * 5/8
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/4 {
                                 
-                                % [ClarinetMusicVoice measure 274]                       %! SM4
+                                % [G ClarinetMusicVoice measure 274]                     %! SM4
                                 \override DynamicLineSpanner.staff-padding = #'10        %! OC
                                 \override Stem.direction = #up                           %! OC
                                 \override TupletBracket.staff-padding = #6               %! OC
@@ -2180,7 +2180,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/4 {
                                 
-                                % [ClarinetMusicVoice measure 276]                       %! SM4
+                                % [G ClarinetMusicVoice measure 276]                     %! SM4
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
                                 \once \override Dots.color = #red
@@ -2216,7 +2216,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/4 {
                                 
-                                % [ClarinetMusicVoice measure 278]                       %! SM4
+                                % [G ClarinetMusicVoice measure 278]                     %! SM4
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
                                 \once \override Dots.color = #red
@@ -2248,7 +2248,7 @@
                                 \revert TupletBracket.staff-padding                      %! OC
                             }
                             
-                            % [ClarinetMusicVoice measure 280]                           %! SM4
+                            % [G ClarinetMusicVoice measure 280]                         %! SM4
                             R1 * 1/4
                             
                         }
@@ -2259,7 +2259,7 @@
                     \context PianoMusicStaff = "PianoMusicStaff" {
                         \context PianoMusicVoice = "PianoMusicVoice" {
                             
-                            % [PianoMusicVoice measure 257]                              %! SM4
+                            % [G PianoMusicVoice measure 257]                            %! SM4
                             \set PianoMusicStaff.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -2312,17 +2312,17 @@
                             \override PianoMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             \override PianoMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                             
-                            % [PianoMusicVoice measure 258]                              %! SM4
+                            % [G PianoMusicVoice measure 258]                            %! SM4
                             R1 * 5/8
                             
-                            % [PianoMusicVoice measure 259]                              %! SM4
+                            % [G PianoMusicVoice measure 259]                            %! SM4
                             R1 * 5/8
                             
-                            % [PianoMusicVoice measure 260]                              %! SM4
+                            % [G PianoMusicVoice measure 260]                            %! SM4
                             R1 * 1
                             \times 4/7 {
                                 
-                                % [PianoMusicVoice measure 261]                          %! SM4
+                                % [G PianoMusicVoice measure 261]                        %! SM4
                                 \override Beam.positions = #'(-4 . -4)                   %! OC
                                 \override TupletBracket.staff-padding = #3               %! OC
                                 \override DynamicLineSpanner.staff-padding = #'7         %! OC
@@ -2437,7 +2437,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 1/1 {
                                 
-                                % [PianoMusicVoice measure 262]                          %! SM4
+                                % [G PianoMusicVoice measure 262]                        %! SM4
                                 c''4.
                                 -\staccato                                               %! IC
                                 ~
@@ -2465,7 +2465,7 @@
                             }
                             \times 4/5 {
                                 
-                                % [PianoMusicVoice measure 263]                          %! SM4
+                                % [G PianoMusicVoice measure 263]                        %! SM4
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
                                 \once \override Dots.color = #red
@@ -2510,7 +2510,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 2/2 {
                                 
-                                % [PianoMusicVoice measure 264]                          %! SM4
+                                % [G PianoMusicVoice measure 264]                        %! SM4
                                 b''8
                                 -\staccato                                               %! IC
                                 [
@@ -2532,7 +2532,7 @@
                             }
                             \times 2/3 {
                                 
-                                % [PianoMusicVoice measure 265]                          %! SM4
+                                % [G PianoMusicVoice measure 265]                        %! SM4
                                 a'4
                                 -\staccato                                               %! IC
                                 
@@ -2570,7 +2570,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/3 {
                                 
-                                % [PianoMusicVoice measure 266]                          %! SM4
+                                % [G PianoMusicVoice measure 266]                        %! SM4
                                 bf''8
                                 -\staccato                                               %! IC
                                 [
@@ -2619,7 +2619,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 2/2 {
                                 
-                                % [PianoMusicVoice measure 267]                          %! SM4
+                                % [G PianoMusicVoice measure 267]                        %! SM4
                                 c'''4
                                 
                                 d'''4
@@ -2687,13 +2687,13 @@
                                 \revert DynamicLineSpanner.staff-padding                 %! OC
                             }
                             
-                            % [PianoMusicVoice measure 268]                              %! SM4
+                            % [G PianoMusicVoice measure 268]                            %! SM4
                             R1 * 7/4
                             
-                            % [PianoMusicVoice measure 269]                              %! SM4
+                            % [G PianoMusicVoice measure 269]                            %! SM4
                             R1 * 1/4
                             
-                            % [PianoMusicVoice measure 270]                              %! SM4
+                            % [G PianoMusicVoice measure 270]                            %! SM4
                             \override DynamicLineSpanner.staff-padding = #'4             %! OC
                             \override NoteHead.style = #'harmonic                        %! OC
                             \override DynamicLineSpanner.staff-padding = #'3             %! OC
@@ -2786,7 +2786,7 @@
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
-                            % [PianoMusicVoice measure 271]                              %! SM4
+                            % [G PianoMusicVoice measure 271]                            %! SM4
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2819,7 +2819,7 @@
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
-                            % [PianoMusicVoice measure 272]                              %! SM4
+                            % [G PianoMusicVoice measure 272]                            %! SM4
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2833,7 +2833,7 @@
                             
                             r2
                             
-                            % [PianoMusicVoice measure 273]                              %! SM4
+                            % [G PianoMusicVoice measure 273]                            %! SM4
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2856,7 +2856,7 @@
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
-                            % [PianoMusicVoice measure 274]                              %! SM4
+                            % [G PianoMusicVoice measure 274]                            %! SM4
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2879,7 +2879,7 @@
                             - \tweak color #red                                          %! SM14
                             ^ \markup { @ }                                              %! SM14
                             
-                            % [PianoMusicVoice measure 275]                              %! SM4
+                            % [G PianoMusicVoice measure 275]                            %! SM4
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2896,7 +2896,7 @@
                             
                             r2
                             
-                            % [PianoMusicVoice measure 276]                              %! SM4
+                            % [G PianoMusicVoice measure 276]                            %! SM4
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2923,16 +2923,16 @@
                             \revert NoteHead.style                                       %! OC
                             \revert DynamicLineSpanner.staff-padding                     %! OC
                             
-                            % [PianoMusicVoice measure 277]                              %! SM4
+                            % [G PianoMusicVoice measure 277]                            %! SM4
                             R1 * 1
                             
-                            % [PianoMusicVoice measure 278]                              %! SM4
+                            % [G PianoMusicVoice measure 278]                            %! SM4
                             R1 * 7/8
                             
-                            % [PianoMusicVoice measure 279]                              %! SM4
+                            % [G PianoMusicVoice measure 279]                            %! SM4
                             R1 * 7/8
                             
-                            % [PianoMusicVoice measure 280]                              %! SM4
+                            % [G PianoMusicVoice measure 280]                            %! SM4
                             R1 * 1/4
                             
                         }
@@ -2941,7 +2941,7 @@
                     \context PercussionMusicStaff = "PercussionMusicStaff" {
                         \context PercussionMusicVoice = "PercussionMusicVoice" {
                             
-                            % [PercussionMusicVoice measure 257]                         %! SM4
+                            % [G PercussionMusicVoice measure 257]                       %! SM4
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
                             \once \override PercussionMusicStaff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES:SM8
                             \startStaff                                                  %! REAPPLIED_STAFF_LINES:SM8
@@ -2962,12 +2962,7 @@
                             \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
                         %@% \override PercussionMusicStaff.Clef.color = ##f              %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
-                            \once \override Accidental.color = #blue                     %! SM24
-                            \once \override Beam.color = #blue                           %! SM24
-                            \once \override Dots.color = #blue                           %! SM24
-                            \once \override Flag.color = #blue                           %! SM24
-                            \once \override NoteHead.color = #blue                       %! SM24
-                            \once \override Stem.color = #blue                           %! SM24
+                            \makeBlue                                                    %! SM24
                             c2
                             \p                                                           %! REAPPLIED_DYNAMIC:SM8
                             ^ \markup {
@@ -3019,145 +3014,90 @@
                             \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                             \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
                             
-                            \once \override Accidental.color = #blue                     %! SM24
-                            \once \override Beam.color = #blue                           %! SM24
-                            \once \override Dots.color = #blue                           %! SM24
-                            \once \override Flag.color = #blue                           %! SM24
-                            \once \override NoteHead.color = #blue                       %! SM24
-                            \once \override Stem.color = #blue                           %! SM24
+                            \makeBlue                                                    %! SM24
                             c2
                             
-                            \once \override Accidental.color = #blue                     %! SM24
-                            \once \override Beam.color = #blue                           %! SM24
-                            \once \override Dots.color = #blue                           %! SM24
-                            \once \override Flag.color = #blue                           %! SM24
-                            \once \override NoteHead.color = #blue                       %! SM24
-                            \once \override Stem.color = #blue                           %! SM24
+                            \makeBlue                                                    %! SM24
                             c2
                             
-                            \once \override Accidental.color = #blue                     %! SM24
-                            \once \override Beam.color = #blue                           %! SM24
-                            \once \override Dots.color = #blue                           %! SM24
-                            \once \override Flag.color = #blue                           %! SM24
-                            \once \override NoteHead.color = #blue                       %! SM24
-                            \once \override Stem.color = #blue                           %! SM24
+                            \makeBlue                                                    %! SM24
                             c2
                             
-                            \once \override Accidental.color = #blue                     %! SM24
-                            \once \override Beam.color = #blue                           %! SM24
-                            \once \override Dots.color = #blue                           %! SM24
-                            \once \override Flag.color = #blue                           %! SM24
-                            \once \override NoteHead.color = #blue                       %! SM24
-                            \once \override Stem.color = #blue                           %! SM24
+                            \makeBlue                                                    %! SM24
                             c2
                             
-                            \once \override Accidental.color = #blue                     %! SM24
-                            \once \override Beam.color = #blue                           %! SM24
-                            \once \override Dots.color = #blue                           %! SM24
-                            \once \override Flag.color = #blue                           %! SM24
-                            \once \override NoteHead.color = #blue                       %! SM24
-                            \once \override Stem.color = #blue                           %! SM24
+                            \makeBlue                                                    %! SM24
                             c2
                             
-                            \once \override Accidental.color = #blue                     %! SM24
-                            \once \override Beam.color = #blue                           %! SM24
-                            \once \override Dots.color = #blue                           %! SM24
-                            \once \override Flag.color = #blue                           %! SM24
-                            \once \override NoteHead.color = #blue                       %! SM24
-                            \once \override Stem.color = #blue                           %! SM24
+                            \makeBlue                                                    %! SM24
                             c2
                             
-                            \once \override Accidental.color = #blue                     %! SM24
-                            \once \override Beam.color = #blue                           %! SM24
-                            \once \override Dots.color = #blue                           %! SM24
-                            \once \override Flag.color = #blue                           %! SM24
-                            \once \override NoteHead.color = #blue                       %! SM24
-                            \once \override Stem.color = #blue                           %! SM24
+                            \makeBlue                                                    %! SM24
                             c2
                             
-                            \once \override Accidental.color = #blue                     %! SM24
-                            \once \override Beam.color = #blue                           %! SM24
-                            \once \override Dots.color = #blue                           %! SM24
-                            \once \override Flag.color = #blue                           %! SM24
-                            \once \override NoteHead.color = #blue                       %! SM24
-                            \once \override Stem.color = #blue                           %! SM24
+                            \makeBlue                                                    %! SM24
                             c2
                             
-                            \once \override Accidental.color = #blue                     %! SM24
-                            \once \override Beam.color = #blue                           %! SM24
-                            \once \override Dots.color = #blue                           %! SM24
-                            \once \override Flag.color = #blue                           %! SM24
-                            \once \override NoteHead.color = #blue                       %! SM24
-                            \once \override Stem.color = #blue                           %! SM24
+                            \makeBlue                                                    %! SM24
                             c2
                             
-                            \once \override Accidental.color = #blue                     %! SM24
-                            \once \override Beam.color = #blue                           %! SM24
-                            \once \override Dots.color = #blue                           %! SM24
-                            \once \override Flag.color = #blue                           %! SM24
-                            \once \override NoteHead.color = #blue                       %! SM24
-                            \once \override Stem.color = #blue                           %! SM24
+                            \makeBlue                                                    %! SM24
                             c2
                             
-                            \once \override Accidental.color = #blue                     %! SM24
-                            \once \override Beam.color = #blue                           %! SM24
-                            \once \override Dots.color = #blue                           %! SM24
-                            \once \override Flag.color = #blue                           %! SM24
-                            \once \override NoteHead.color = #blue                       %! SM24
-                            \once \override Stem.color = #blue                           %! SM24
+                            \makeBlue                                                    %! SM24
                             c2
                             
                             r8
                             
-                            % [PercussionMusicVoice measure 264]                         %! SM4
+                            % [G PercussionMusicVoice measure 264]                       %! SM4
                             R1 * 3/4
                             
-                            % [PercussionMusicVoice measure 265]                         %! SM4
+                            % [G PercussionMusicVoice measure 265]                       %! SM4
                             R1 * 9/8
                             
-                            % [PercussionMusicVoice measure 266]                         %! SM4
+                            % [G PercussionMusicVoice measure 266]                       %! SM4
                             R1 * 7/8
                             
-                            % [PercussionMusicVoice measure 267]                         %! SM4
+                            % [G PercussionMusicVoice measure 267]                       %! SM4
                             R1 * 3/2
                             
-                            % [PercussionMusicVoice measure 268]                         %! SM4
+                            % [G PercussionMusicVoice measure 268]                       %! SM4
                             R1 * 7/4
                             
-                            % [PercussionMusicVoice measure 269]                         %! SM4
+                            % [G PercussionMusicVoice measure 269]                       %! SM4
                             R1 * 1/4
                             
-                            % [PercussionMusicVoice measure 270]                         %! SM4
+                            % [G PercussionMusicVoice measure 270]                       %! SM4
                             R1 * 3/4
                             
-                            % [PercussionMusicVoice measure 271]                         %! SM4
+                            % [G PercussionMusicVoice measure 271]                       %! SM4
                             R1 * 7/4
                             
-                            % [PercussionMusicVoice measure 272]                         %! SM4
+                            % [G PercussionMusicVoice measure 272]                       %! SM4
                             R1 * 11/8
                             
-                            % [PercussionMusicVoice measure 273]                         %! SM4
+                            % [G PercussionMusicVoice measure 273]                       %! SM4
                             R1 * 5/8
                             
-                            % [PercussionMusicVoice measure 274]                         %! SM4
+                            % [G PercussionMusicVoice measure 274]                       %! SM4
                             R1 * 1
                             
-                            % [PercussionMusicVoice measure 275]                         %! SM4
+                            % [G PercussionMusicVoice measure 275]                       %! SM4
                             R1 * 3/2
                             
-                            % [PercussionMusicVoice measure 276]                         %! SM4
+                            % [G PercussionMusicVoice measure 276]                       %! SM4
                             R1 * 3/4
                             
-                            % [PercussionMusicVoice measure 277]                         %! SM4
+                            % [G PercussionMusicVoice measure 277]                       %! SM4
                             R1 * 1
                             
-                            % [PercussionMusicVoice measure 278]                         %! SM4
+                            % [G PercussionMusicVoice measure 278]                       %! SM4
                             R1 * 7/8
                             
-                            % [PercussionMusicVoice measure 279]                         %! SM4
+                            % [G PercussionMusicVoice measure 279]                       %! SM4
                             R1 * 7/8
                             
-                            % [PercussionMusicVoice measure 280]                         %! SM4
+                            % [G PercussionMusicVoice measure 280]                       %! SM4
                             R1 * 1/4
                             
                         }
@@ -3168,7 +3108,7 @@
                     \context ViolinMusicStaff = "ViolinMusicStaff" {
                         \context ViolinMusicVoice = "ViolinMusicVoice" {
                             
-                            % [ViolinMusicVoice measure 257]                             %! SM4
+                            % [G ViolinMusicVoice measure 257]                           %! SM4
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 5  %! REAPPLIED_STAFF_LINES:SM8
                             \startStaff                                                  %! REAPPLIED_STAFF_LINES:SM8
@@ -3225,18 +3165,18 @@
                             \override ViolinMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                             
-                            % [ViolinMusicVoice measure 258]                             %! SM4
+                            % [G ViolinMusicVoice measure 258]                           %! SM4
                             R1 * 5/8
                             
-                            % [ViolinMusicVoice measure 259]                             %! SM4
+                            % [G ViolinMusicVoice measure 259]                           %! SM4
                             R1 * 5/8
                             
-                            % [ViolinMusicVoice measure 260]                             %! SM4
+                            % [G ViolinMusicVoice measure 260]                           %! SM4
                             R1 * 1
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/3 {
                                 
-                                % [ViolinMusicVoice measure 261]                         %! SM4
+                                % [G ViolinMusicVoice measure 261]                       %! SM4
                                 \override Beam.positions = #'(-4 . -4)                   %! OC
                                 \override TupletBracket.staff-padding = #3               %! OC
                                 \override DynamicLineSpanner.staff-padding = #'5         %! OC
@@ -3286,7 +3226,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 2/2 {
                                 
-                                % [ViolinMusicVoice measure 262]                         %! SM4
+                                % [G ViolinMusicVoice measure 262]                       %! SM4
                                 bf'''4
                                 -\staccato                                               %! IC
                                 
@@ -3309,7 +3249,7 @@
                             }
                             \times 2/3 {
                                 
-                                % [ViolinMusicVoice measure 263]                         %! SM4
+                                % [G ViolinMusicVoice measure 263]                       %! SM4
                                 d'''8
                                 [
                                 
@@ -3340,7 +3280,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/4 {
                                 
-                                % [ViolinMusicVoice measure 264]                         %! SM4
+                                % [G ViolinMusicVoice measure 264]                       %! SM4
                                 c''''8
                                 -\staccato                                               %! IC
                                 [
@@ -3364,7 +3304,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 1/1 {
                                 
-                                % [ViolinMusicVoice measure 265]                         %! SM4
+                                % [G ViolinMusicVoice measure 265]                       %! SM4
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
                                 \once \override Dots.color = #red
@@ -3419,7 +3359,7 @@
                             }
                             \times 4/7 {
                                 
-                                % [ViolinMusicVoice measure 266]                         %! SM4
+                                % [G ViolinMusicVoice measure 266]                       %! SM4
                                 fs''8
                                 -\staccato                                               %! IC
                                 [
@@ -3478,7 +3418,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 1/1 {
                                 
-                                % [ViolinMusicVoice measure 267]                         %! SM4
+                                % [G ViolinMusicVoice measure 267]                       %! SM4
                                 bf'''4
                             }
                             \tweak text #tuplet-number::calc-fraction-text
@@ -3524,7 +3464,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/4 {
                                 
-                                % [ViolinMusicVoice measure 268]                         %! SM4
+                                % [G ViolinMusicVoice measure 268]                       %! SM4
                                 a'''8
                                 -\staccato                                               %! IC
                                 [
@@ -3598,11 +3538,11 @@
                                 \revert DynamicLineSpanner.staff-padding                 %! OC
                             }
                             
-                            % [ViolinMusicVoice measure 269]                             %! SM4
+                            % [G ViolinMusicVoice measure 269]                           %! SM4
                             R1 * 1/4
                             \times 2/3 {
                                 
-                                % [ViolinMusicVoice measure 270]                         %! SM4
+                                % [G ViolinMusicVoice measure 270]                       %! SM4
                                 \override NoteHead.style = #'harmonic                    %! OC
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
@@ -3655,7 +3595,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/7 {
                                 
-                                % [ViolinMusicVoice measure 271]                         %! SM4
+                                % [G ViolinMusicVoice measure 271]                       %! SM4
                                 cs'1
                                 \glissando                                               %! SC
                                 
@@ -3672,7 +3612,7 @@
                             }
                             \times 4/5 {
                                 
-                                % [ViolinMusicVoice measure 272]                         %! SM4
+                                % [G ViolinMusicVoice measure 272]                       %! SM4
                                 f8
                                 \glissando                                               %! SC
                                 
@@ -3698,7 +3638,7 @@
                             }
                             \times 4/5 {
                                 
-                                % [ViolinMusicVoice measure 273]                         %! SM4
+                                % [G ViolinMusicVoice measure 273]                       %! SM4
                                 fs'16
                                 \glissando                                               %! SC
                                 
@@ -3717,7 +3657,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 1/1 {
                                 
-                                % [ViolinMusicVoice measure 274]                         %! SM4
+                                % [G ViolinMusicVoice measure 274]                       %! SM4
                                 cs'4
                                 \glissando                                               %! SC
                                 
@@ -3734,7 +3674,7 @@
                             }
                             \times 4/7 {
                                 
-                                % [ViolinMusicVoice measure 275]                         %! SM4
+                                % [G ViolinMusicVoice measure 275]                       %! SM4
                                 cs''2
                                 \glissando                                               %! SC
                                 
@@ -3759,7 +3699,7 @@
                             }
                             \times 4/7 {
                                 
-                                % [ViolinMusicVoice measure 276]                         %! SM4
+                                % [G ViolinMusicVoice measure 276]                       %! SM4
                                 bf'4
                                 \glissando                                               %! SC
                                 
@@ -3778,7 +3718,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 11/10 {
                                 
-                                % [ViolinMusicVoice measure 277]                         %! SM4
+                                % [G ViolinMusicVoice measure 277]                       %! SM4
                                 c'1.
                                 :32                                                      %! IC
                                 \glissando                                               %! SC
@@ -3792,7 +3732,7 @@
                                 :32                                                      %! IC
                             }
                             
-                            % [ViolinMusicVoice measure 280]                             %! SM4
+                            % [G ViolinMusicVoice measure 280]                           %! SM4
                             R1 * 1/4
                             
                         }
@@ -3801,7 +3741,7 @@
                     \context ViolaMusicStaff = "ViolaMusicStaff" {
                         \context ViolaMusicVoice = "ViolaMusicVoice" {
                             
-                            % [ViolaMusicVoice measure 257]                              %! SM4
+                            % [G ViolaMusicVoice measure 257]                            %! SM4
                             \override DynamicLineSpanner.staff-padding = #'6             %! OC
                             \set ViolaMusicStaff.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
@@ -3869,14 +3809,14 @@
                             \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                             
-                            % [ViolaMusicVoice measure 259]                              %! SM4
+                            % [G ViolaMusicVoice measure 259]                            %! SM4
                             cqf4
                             \glissando                                                   %! SC
                             
                             d4.
                             \glissando                                                   %! SC
                             
-                            % [ViolaMusicVoice measure 260]                              %! SM4
+                            % [G ViolaMusicVoice measure 260]                            %! SM4
                             eqs1..
                             \glissando                                                   %! SC
                             
@@ -3888,18 +3828,18 @@
                             \fff
                             \revert DynamicLineSpanner.staff-padding                     %! OC
                             
-                            % [ViolaMusicVoice measure 264]                              %! SM4
+                            % [G ViolaMusicVoice measure 264]                            %! SM4
                             R1 * 3/4
                             
-                            % [ViolaMusicVoice measure 265]                              %! SM4
+                            % [G ViolaMusicVoice measure 265]                            %! SM4
                             R1 * 9/8
                             
-                            % [ViolaMusicVoice measure 266]                              %! SM4
+                            % [G ViolaMusicVoice measure 266]                            %! SM4
                             R1 * 7/8
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 13/10 {
                                 
-                                % [ViolaMusicVoice measure 267]                          %! SM4
+                                % [G ViolaMusicVoice measure 267]                        %! SM4
                                 \override DynamicLineSpanner.staff-padding = #'7         %! OC
                                 \override TupletBracket.staff-padding = #4               %! OC
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -3920,11 +3860,11 @@
                                 \revert TupletBracket.staff-padding                      %! OC
                             }
                             
-                            % [ViolaMusicVoice measure 269]                              %! SM4
+                            % [G ViolaMusicVoice measure 269]                            %! SM4
                             R1 * 1/4
                             \times 2/3 {
                                 
-                                % [ViolaMusicVoice measure 270]                          %! SM4
+                                % [G ViolaMusicVoice measure 270]                        %! SM4
                                 \override NoteHead.style = #'harmonic                    %! OC
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b4
@@ -3962,7 +3902,7 @@
                             }
                             \times 4/7 {
                                 
-                                % [ViolaMusicVoice measure 271]                          %! SM4
+                                % [G ViolaMusicVoice measure 271]                        %! SM4
                                 e2
                                 \glissando                                               %! SC
                                 
@@ -3988,7 +3928,7 @@
                             }
                             \times 4/7 {
                                 
-                                % [ViolaMusicVoice measure 272]                          %! SM4
+                                % [G ViolaMusicVoice measure 272]                        %! SM4
                                 e2
                                 \glissando                                               %! SC
                                 
@@ -4005,7 +3945,7 @@
                             }
                             \times 4/5 {
                                 
-                                % [ViolaMusicVoice measure 273]                          %! SM4
+                                % [G ViolaMusicVoice measure 273]                        %! SM4
                                 f16.
                                 \glissando                                               %! SC
                                 
@@ -4022,7 +3962,7 @@
                             }
                             \times 2/3 {
                                 
-                                % [ViolaMusicVoice measure 274]                          %! SM4
+                                % [G ViolaMusicVoice measure 274]                        %! SM4
                                 c8
                                 \glissando                                               %! SC
                                 
@@ -4047,7 +3987,7 @@
                             }
                             \times 2/3 {
                                 
-                                % [ViolaMusicVoice measure 275]                          %! SM4
+                                % [G ViolaMusicVoice measure 275]                        %! SM4
                                 d4
                                 \glissando                                               %! SC
                                 
@@ -4066,7 +4006,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/5 {
                                 
-                                % [ViolaMusicVoice measure 276]                          %! SM4
+                                % [G ViolaMusicVoice measure 276]                        %! SM4
                                 bqs,4
                                 :32                                                      %! IC
                                 \glissando                                               %! SC
@@ -4083,7 +4023,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/5 {
                                 
-                                % [ViolaMusicVoice measure 278]                          %! SM4
+                                % [G ViolaMusicVoice measure 278]                        %! SM4
                                 bqs,4
                                 :32                                                      %! IC
                                 \glissando                                               %! SC
@@ -4092,7 +4032,7 @@
                                 :32                                                      %! IC
                             }
                             
-                            % [ViolaMusicVoice measure 280]                              %! SM4
+                            % [G ViolaMusicVoice measure 280]                            %! SM4
                             R1 * 1/4
                             
                         }
@@ -4101,7 +4041,7 @@
                     \context CelloMusicStaff = "CelloMusicStaff" {
                         \context CelloMusicVoice = "CelloMusicVoice" {
                             
-                            % [CelloMusicVoice measure 257]                              %! SM4
+                            % [G CelloMusicVoice measure 257]                            %! SM4
                             \override DynamicLineSpanner.staff-padding = #'6             %! OC
                             \set CelloMusicStaff.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
@@ -4172,25 +4112,25 @@
                             bqf,,1
                             \glissando                                                   %! SC
                             
-                            % [CelloMusicVoice measure 259]                              %! SM4
+                            % [G CelloMusicVoice measure 259]                            %! SM4
                             c,4.
                             \glissando                                                   %! SC
                             
                             dqs,4
                             \glissando                                                   %! SC
                             
-                            % [CelloMusicVoice measure 260]                              %! SM4
+                            % [G CelloMusicVoice measure 260]                            %! SM4
                             eqs,\breve
                             \glissando                                                   %! SC
                             
                             f,1..
                             \glissando                                                   %! SC
                             
-                            % [CelloMusicVoice measure 264]                              %! SM4
+                            % [G CelloMusicVoice measure 264]                            %! SM4
                             gf,2.
                             \glissando                                                   %! SC
                             
-                            % [CelloMusicVoice measure 265]                              %! SM4
+                            % [G CelloMusicVoice measure 265]                            %! SM4
                             aqf,4.
                             \glissando                                                   %! SC
                             
@@ -4199,12 +4139,12 @@
                             \fff
                             \revert DynamicLineSpanner.staff-padding                     %! OC
                             
-                            % [CelloMusicVoice measure 266]                              %! SM4
+                            % [G CelloMusicVoice measure 266]                            %! SM4
                             R1 * 7/8
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 13/10 {
                                 
-                                % [CelloMusicVoice measure 267]                          %! SM4
+                                % [G CelloMusicVoice measure 267]                        %! SM4
                                 \override DynamicLineSpanner.staff-padding = #'7         %! OC
                                 \override TupletBracket.staff-padding = #4               %! OC
                                 \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -4225,11 +4165,11 @@
                                 \revert TupletBracket.staff-padding                      %! OC
                             }
                             
-                            % [CelloMusicVoice measure 269]                              %! SM4
+                            % [G CelloMusicVoice measure 269]                            %! SM4
                             R1 * 1/4
                             \times 2/3 {
                                 
-                                % [CelloMusicVoice measure 270]                          %! SM4
+                                % [G CelloMusicVoice measure 270]                        %! SM4
                                 \override NoteHead.style = #'harmonic                    %! OC
                                 \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 a,8
@@ -4262,7 +4202,7 @@
                             }
                             \times 2/3 {
                                 
-                                % [CelloMusicVoice measure 271]                          %! SM4
+                                % [G CelloMusicVoice measure 271]                        %! SM4
                                 bf,4
                                 \glissando                                               %! SC
                                 
@@ -4281,7 +4221,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 1/1 {
                                 
-                                % [CelloMusicVoice measure 272]                          %! SM4
+                                % [G CelloMusicVoice measure 272]                        %! SM4
                                 b,2
                                 \glissando                                               %! SC
                                 
@@ -4298,7 +4238,7 @@
                             }
                             \times 4/5 {
                                 
-                                % [CelloMusicVoice measure 273]                          %! SM4
+                                % [G CelloMusicVoice measure 273]                        %! SM4
                                 e,16
                                 \glissando                                               %! SC
                                 
@@ -4345,7 +4285,7 @@
                             }
                             \times 4/5 {
                                 
-                                % [CelloMusicVoice measure 274]                          %! SM4
+                                % [G CelloMusicVoice measure 274]                        %! SM4
                                 b,16
                                 \glissando                                               %! SC
                                 
@@ -4376,7 +4316,7 @@
                             }
                             \times 2/3 {
                                 
-                                % [CelloMusicVoice measure 275]                          %! SM4
+                                % [G CelloMusicVoice measure 275]                        %! SM4
                                 c2
                                 \glissando                                               %! SC
                                 
@@ -4393,7 +4333,7 @@
                             }
                             \times 4/7 {
                                 
-                                % [CelloMusicVoice measure 276]                          %! SM4
+                                % [G CelloMusicVoice measure 276]                        %! SM4
                                 f,4
                                 \glissando                                               %! SC
                                 
@@ -4420,7 +4360,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 11/10 {
                                 
-                                % [CelloMusicVoice measure 277]                          %! SM4
+                                % [G CelloMusicVoice measure 277]                        %! SM4
                                 b,,2
                                 :32                                                      %! IC
                                 \glissando                                               %! SC
@@ -4434,7 +4374,7 @@
                                 :32                                                      %! IC
                             }
                             
-                            % [CelloMusicVoice measure 280]                              %! SM4
+                            % [G CelloMusicVoice measure 280]                            %! SM4
                             R1 * 1/4
                             
                         }

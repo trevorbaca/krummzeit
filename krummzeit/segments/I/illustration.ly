@@ -11,11 +11,16 @@
         {
             \include "layout.ly"
         }
-        \context Score = "Score" \with {
+        \context Score = "Score"
+        \with
+        {
             currentBarNumber = #291
-        } <<
-            \context GlobalContext = "GlobalContext" <<
-                \context GlobalRests = "GlobalRests" {
+        }
+        <<
+            \context GlobalContext = "GlobalContext"
+            <<
+                \context GlobalRests = "GlobalRests"
+                {
                     
                     % [I GlobalRests measure 291]                                        %! SM4
                     R1 * 1
@@ -93,7 +98,8 @@
                         }                                                                %! SM18
                     
                 }
-                \context GlobalSkips = "GlobalSkips" {
+                \context GlobalSkips = "GlobalSkips"
+                {
                     
                     % [I GlobalSkips measure 291]                                        %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! REDUNDANT_METRONOME_MARK:SM27
@@ -1378,11 +1384,15 @@
                     
                 }
             >>
-            \context MusicContext = "MusicContext" <<
-                \context WindSectionStaffGroup = "WindSectionStaffGroup" <<
+            \context MusicContext = "MusicContext"
+            <<
+                \context WindSectionStaffGroup = "WindSectionStaffGroup"
+                <<
                     \tag Oboe                                                            %! ST4
-                    \context OboeMusicStaff = "OboeMusicStaff" {
-                        \context OboeMusicVoice = "OboeMusicVoice" {
+                    \context OboeMusicStaff = "OboeMusicStaff"
+                    {
+                        \context OboeMusicVoice = "OboeMusicVoice"
+                        {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/5 {
                                 
@@ -1568,8 +1578,10 @@
                         }
                     }
                     \tag Clarinet                                                        %! ST4
-                    \context ClarinetMusicStaff = "ClarinetMusicStaff" {
-                        \context ClarinetMusicVoice = "ClarinetMusicVoice" {
+                    \context ClarinetMusicStaff = "ClarinetMusicStaff"
+                    {
+                        \context ClarinetMusicVoice = "ClarinetMusicVoice"
+                        {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/5 {
                                 
@@ -2301,10 +2313,13 @@
                         }
                     }
                 >>
-                \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup" <<
+                \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup"
+                <<
                     \tag Piano                                                           %! ST4
-                    \context PianoMusicStaff = "PianoMusicStaff" {
-                        \context PianoMusicVoice = "PianoMusicVoice" {
+                    \context PianoMusicStaff = "PianoMusicStaff"
+                    {
+                        \context PianoMusicVoice = "PianoMusicVoice"
+                        {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/7 {
                                 
@@ -5713,8 +5728,10 @@
                         }
                     }
                     \tag Percussion                                                      %! ST4
-                    \context PercussionMusicStaff = "PercussionMusicStaff" {
-                        \context PercussionMusicVoice = "PercussionMusicVoice" {
+                    \context PercussionMusicStaff = "PercussionMusicStaff"
+                    {
+                        \context PercussionMusicVoice = "PercussionMusicVoice"
+                        {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/7 {
                                 
@@ -6019,10 +6036,13 @@
                         }
                     }
                 >>
-                \context StringSectionStaffGroup = "StringSectionStaffGroup" <<
+                \context StringSectionStaffGroup = "StringSectionStaffGroup"
+                <<
                     \tag Violin                                                          %! ST4
-                    \context ViolinMusicStaff = "ViolinMusicStaff" {
-                        \context ViolinMusicVoice = "ViolinMusicVoice" {
+                    \context ViolinMusicStaff = "ViolinMusicStaff"
+                    {
+                        \context ViolinMusicVoice = "ViolinMusicVoice"
+                        {
                             \times 2/3 {
                                 
                                 % [I ViolinMusicVoice measure 291]                       %! SM4
@@ -6663,8 +6683,10 @@
                         }
                     }
                     \tag Viola                                                           %! ST4
-                    \context ViolaMusicStaff = "ViolaMusicStaff" {
-                        \context ViolaMusicVoice = "ViolaMusicVoice" {
+                    \context ViolaMusicStaff = "ViolaMusicStaff"
+                    {
+                        \context ViolaMusicVoice = "ViolaMusicVoice"
+                        {
                             \times 2/3 {
                                 
                                 % [I ViolaMusicVoice measure 291]                        %! SM4
@@ -7033,8 +7055,10 @@
                         }
                     }
                     \tag Cello                                                           %! ST4
-                    \context CelloMusicStaff = "CelloMusicStaff" {
-                        \context CelloMusicVoice = "CelloMusicVoice" {
+                    \context CelloMusicStaff = "CelloMusicStaff"
+                    {
+                        \context CelloMusicVoice = "CelloMusicVoice"
+                        {
                             \times 2/3 {
                                 
                                 % [I CelloMusicVoice measure 291]                        %! SM4

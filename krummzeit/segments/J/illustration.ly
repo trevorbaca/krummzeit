@@ -11,11 +11,16 @@
         {
             \include "layout.ly"
         }
-        \context Score = "Score" \with {
+        \context Score = "Score"
+        \with
+        {
             currentBarNumber = #314
-        } <<
-            \context GlobalContext = "GlobalContext" <<
-                \context GlobalSkips = "GlobalSkips" {
+        }
+        <<
+            \context GlobalContext = "GlobalContext"
+            <<
+                \context GlobalSkips = "GlobalSkips"
+                {
                     
                     % [J GlobalSkips measure 314]                                        %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! REDUNDANT_METRONOME_MARK:SM27
@@ -1794,11 +1799,15 @@
                     
                 }
             >>
-            \context MusicContext = "MusicContext" <<
-                \context WindSectionStaffGroup = "WindSectionStaffGroup" <<
+            \context MusicContext = "MusicContext"
+            <<
+                \context WindSectionStaffGroup = "WindSectionStaffGroup"
+                <<
                     \tag Oboe                                                            %! ST4
-                    \context OboeMusicStaff = "OboeMusicStaff" {
-                        \context OboeMusicVoice = "OboeMusicVoice" {
+                    \context OboeMusicStaff = "OboeMusicStaff"
+                    {
+                        \context OboeMusicVoice = "OboeMusicVoice"
+                        {
                             
                             % [J OboeMusicVoice measure 314]                             %! SM4
                             \override DynamicLineSpanner.staff-padding = #'5             %! OC
@@ -1963,8 +1972,10 @@
                         }
                     }
                     \tag Clarinet                                                        %! ST4
-                    \context ClarinetMusicStaff = "ClarinetMusicStaff" {
-                        \context ClarinetMusicVoice = "ClarinetMusicVoice" {
+                    \context ClarinetMusicStaff = "ClarinetMusicStaff"
+                    {
+                        \context ClarinetMusicVoice = "ClarinetMusicVoice"
+                        {
                             
                             % [J ClarinetMusicVoice measure 314]                         %! SM4
                             \override DynamicLineSpanner.staff-padding = #'7             %! OC
@@ -2179,10 +2190,13 @@
                         }
                     }
                 >>
-                \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup" <<
+                \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup"
+                <<
                     \tag Piano                                                           %! ST4
-                    \context PianoMusicStaff = "PianoMusicStaff" {
-                        \context PianoMusicVoice = "PianoMusicVoice" {
+                    \context PianoMusicStaff = "PianoMusicStaff"
+                    {
+                        \context PianoMusicVoice = "PianoMusicVoice"
+                        {
                             
                             % [J PianoMusicVoice measure 314]                            %! SM4
                             \once \override Accidental.color = #red
@@ -2433,8 +2447,10 @@
                         }
                     }
                     \tag Percussion                                                      %! ST4
-                    \context PercussionMusicStaff = "PercussionMusicStaff" {
-                        \context PercussionMusicVoice = "PercussionMusicVoice" {
+                    \context PercussionMusicStaff = "PercussionMusicStaff"
+                    {
+                        \context PercussionMusicVoice = "PercussionMusicVoice"
+                        {
                             
                             % [J PercussionMusicVoice measure 314]                       %! SM4
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -2635,10 +2651,13 @@
                         }
                     }
                 >>
-                \context StringSectionStaffGroup = "StringSectionStaffGroup" <<
+                \context StringSectionStaffGroup = "StringSectionStaffGroup"
+                <<
                     \tag Violin                                                          %! ST4
-                    \context ViolinMusicStaff = "ViolinMusicStaff" {
-                        \context ViolinMusicVoice = "ViolinMusicVoice" {
+                    \context ViolinMusicStaff = "ViolinMusicStaff"
+                    {
+                        \context ViolinMusicVoice = "ViolinMusicVoice"
+                        {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/7 {
                                 
@@ -3138,8 +3157,10 @@
                         }
                     }
                     \tag Viola                                                           %! ST4
-                    \context ViolaMusicStaff = "ViolaMusicStaff" {
-                        \context ViolaMusicVoice = "ViolaMusicVoice" {
+                    \context ViolaMusicStaff = "ViolaMusicStaff"
+                    {
+                        \context ViolaMusicVoice = "ViolaMusicVoice"
+                        {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/8 {
                                 
@@ -3384,8 +3405,10 @@
                         }
                     }
                     \tag Cello                                                           %! ST4
-                    \context CelloMusicStaff = "CelloMusicStaff" {
-                        \context CelloMusicVoice = "CelloMusicVoice" {
+                    \context CelloMusicStaff = "CelloMusicStaff"
+                    {
+                        \context CelloMusicVoice = "CelloMusicVoice"
+                        {
                             
                             % [J CelloMusicVoice measure 314]                            %! SM4
                             \override DynamicLineSpanner.staff-padding = #'3             %! OC

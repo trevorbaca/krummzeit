@@ -11,11 +11,16 @@
         {
             \include "layout.ly"
         }
-        \context Score = "Score" \with {
+        \context Score = "Score"
+        \with
+        {
             currentBarNumber = #152
-        } <<
-            \context GlobalContext = "GlobalContext" <<
-                \context GlobalSkips = "GlobalSkips" {
+        }
+        <<
+            \context GlobalContext = "GlobalContext"
+            <<
+                \context GlobalSkips = "GlobalSkips"
+                {
                     
                     % [D GlobalSkips measure 152]                                        %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! REDUNDANT_METRONOME_MARK:SM27
@@ -1153,11 +1158,16 @@
                 %@%                             #'(0.5 . 0.5)                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                             \score                                   %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                 {                                    %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                     \new Score \with {               %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     \new Score                       %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     \with                            %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     {                                %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                     } <<                             %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                         \new RhythmicStaff \with {   %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     }                                %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     <<                               %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         \new RhythmicStaff           %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         \with                        %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         {                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK:SM27
@@ -1168,7 +1178,8 @@
                 %@%                                             \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             tupletFullLength = ##t   %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                         } {                          %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         }                            %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         {                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             c4.                      %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         }                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                     >>                               %! EXPLICIT_METRONOME_MARK:SM27
@@ -1184,11 +1195,16 @@
                 %@%                             #'(0.5 . 0.5)                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                             \score                                   %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                 {                                    %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                     \new Score \with {               %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     \new Score                       %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     \with                            %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     {                                %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                     } <<                             %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                         \new RhythmicStaff \with {   %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     }                                %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     <<                               %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         \new RhythmicStaff           %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         \with                        %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         {                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK:SM27
@@ -1199,7 +1215,8 @@
                 %@%                                             \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             tupletFullLength = ##t   %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                         } {                          %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         }                            %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         {                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             c4                       %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         }                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                     >>                               %! EXPLICIT_METRONOME_MARK:SM27
@@ -1252,11 +1269,16 @@
                                                         #'(0.5 . 0.5)                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                         \score                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                             {                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                \new Score \with {       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \new Score               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \with                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                {                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                } <<                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                    \new RhythmicStaff \with { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                }                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                <<                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    \new RhythmicStaff   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    \with                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    {                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -1267,7 +1289,8 @@
                                                                         \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         tupletFullLength = ##t %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                    } {                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    }                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    {                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         c4.              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     }                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                 >>                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -1283,11 +1306,16 @@
                                                         #'(0.5 . 0.5)                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                         \score                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                             {                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                \new Score \with {       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \new Score               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \with                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                {                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                } <<                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                    \new RhythmicStaff \with { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                }                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                <<                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    \new RhythmicStaff   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    \with                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    {                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -1298,7 +1326,8 @@
                                                                         \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         tupletFullLength = ##t %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                    } {                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    }                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    {                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         c4               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     }                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                 >>                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -2163,11 +2192,15 @@
                     
                 }
             >>
-            \context MusicContext = "MusicContext" <<
-                \context WindSectionStaffGroup = "WindSectionStaffGroup" <<
+            \context MusicContext = "MusicContext"
+            <<
+                \context WindSectionStaffGroup = "WindSectionStaffGroup"
+                <<
                     \tag Oboe                                                            %! ST4
-                    \context OboeMusicStaff = "OboeMusicStaff" {
-                        \context OboeMusicVoice = "OboeMusicVoice" {
+                    \context OboeMusicStaff = "OboeMusicStaff"
+                    {
+                        \context OboeMusicVoice = "OboeMusicVoice"
+                        {
                             
                             % [D OboeMusicVoice measure 152]                             %! SM4
                             \override Beam.positions = #'(-4 . -4)                       %! OC
@@ -3205,8 +3238,10 @@
                         }
                     }
                     \tag Clarinet                                                        %! ST4
-                    \context ClarinetMusicStaff = "ClarinetMusicStaff" {
-                        \context ClarinetMusicVoice = "ClarinetMusicVoice" {
+                    \context ClarinetMusicStaff = "ClarinetMusicStaff"
+                    {
+                        \context ClarinetMusicVoice = "ClarinetMusicVoice"
+                        {
                             
                             % [D ClarinetMusicVoice measure 152]                         %! SM4
                             \override Beam.positions = #'(-4 . -4)                       %! OC
@@ -3722,10 +3757,13 @@
                         }
                     }
                 >>
-                \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup" <<
+                \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup"
+                <<
                     \tag Piano                                                           %! ST4
-                    \context PianoMusicStaff = "PianoMusicStaff" {
-                        \context PianoMusicVoice = "PianoMusicVoice" {
+                    \context PianoMusicStaff = "PianoMusicStaff"
+                    {
+                        \context PianoMusicVoice = "PianoMusicVoice"
+                        {
                             
                             % [D PianoMusicVoice measure 152]                            %! SM4
                             \override DynamicLineSpanner.staff-padding = #'3             %! OC
@@ -5138,8 +5176,10 @@
                         }
                     }
                     \tag Percussion                                                      %! ST4
-                    \context PercussionMusicStaff = "PercussionMusicStaff" {
-                        \context PercussionMusicVoice = "PercussionMusicVoice" {
+                    \context PercussionMusicStaff = "PercussionMusicStaff"
+                    {
+                        \context PercussionMusicVoice = "PercussionMusicVoice"
+                        {
                             
                             % [D PercussionMusicVoice measure 152]                       %! SM4
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
@@ -6226,10 +6266,13 @@
                         }
                     }
                 >>
-                \context StringSectionStaffGroup = "StringSectionStaffGroup" <<
+                \context StringSectionStaffGroup = "StringSectionStaffGroup"
+                <<
                     \tag Violin                                                          %! ST4
-                    \context ViolinMusicStaff = "ViolinMusicStaff" {
-                        \context ViolinMusicVoice = "ViolinMusicVoice" {
+                    \context ViolinMusicStaff = "ViolinMusicStaff"
+                    {
+                        \context ViolinMusicVoice = "ViolinMusicVoice"
+                        {
                             
                             % [D ViolinMusicVoice measure 152]                           %! SM4
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -7097,8 +7140,10 @@
                         }
                     }
                     \tag Viola                                                           %! ST4
-                    \context ViolaMusicStaff = "ViolaMusicStaff" {
-                        \context ViolaMusicVoice = "ViolaMusicVoice" {
+                    \context ViolaMusicStaff = "ViolaMusicStaff"
+                    {
+                        \context ViolaMusicVoice = "ViolaMusicVoice"
+                        {
                             
                             % [D ViolaMusicVoice measure 152]                            %! SM4
                             \set ViolaMusicStaff.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
@@ -8059,8 +8104,10 @@
                         }
                     }
                     \tag Cello                                                           %! ST4
-                    \context CelloMusicStaff = "CelloMusicStaff" {
-                        \context CelloMusicVoice = "CelloMusicVoice" {
+                    \context CelloMusicStaff = "CelloMusicStaff"
+                    {
+                        \context CelloMusicVoice = "CelloMusicVoice"
+                        {
                             
                             % [D CelloMusicVoice measure 152]                            %! SM4
                             \set CelloMusicStaff.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8

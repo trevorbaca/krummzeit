@@ -11,11 +11,16 @@
         {
             \include "layout.ly"
         }
-        \context Score = "Score" \with {
+        \context Score = "Score"
+        \with
+        {
             currentBarNumber = #14
-        } <<
-            \context GlobalContext = "GlobalContext" <<
-                \context GlobalSkips = "GlobalSkips" {
+        }
+        <<
+            \context GlobalContext = "GlobalContext"
+            <<
+                \context GlobalSkips = "GlobalSkips"
+                {
                     
                     % [A GlobalSkips measure 14]                                         %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! REDUNDANT_METRONOME_MARK:SM27
@@ -910,11 +915,16 @@
                 %@%                             #'(0.5 . 0.5)                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                             \score                                   %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                 {                                    %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                     \new Score \with {               %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     \new Score                       %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     \with                            %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     {                                %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                     } <<                             %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                         \new RhythmicStaff \with {   %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     }                                %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     <<                               %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         \new RhythmicStaff           %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         \with                        %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         {                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK:SM27
@@ -925,7 +935,8 @@
                 %@%                                             \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             tupletFullLength = ##t   %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                         } {                          %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         }                            %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         {                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             c4                       %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         }                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                     >>                               %! EXPLICIT_METRONOME_MARK:SM27
@@ -941,11 +952,16 @@
                 %@%                             #'(0.5 . 0.5)                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                             \score                                   %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                 {                                    %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                     \new Score \with {               %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     \new Score                       %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     \with                            %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     {                                %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                     } <<                             %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                         \new RhythmicStaff \with {   %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     }                                %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     <<                               %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         \new RhythmicStaff           %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         \with                        %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         {                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK:SM27
@@ -956,7 +972,8 @@
                 %@%                                             \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             tupletFullLength = ##t   %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                         } {                          %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         }                            %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         {                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             c8                       %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         }                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                     >>                               %! EXPLICIT_METRONOME_MARK:SM27
@@ -1004,11 +1021,16 @@
                                                         #'(0.5 . 0.5)                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                         \score                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                             {                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                \new Score \with {       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \new Score               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \with                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                {                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                } <<                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                    \new RhythmicStaff \with { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                }                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                <<                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    \new RhythmicStaff   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    \with                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    {                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -1019,7 +1041,8 @@
                                                                         \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         tupletFullLength = ##t %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                    } {                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    }                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    {                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         c4               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     }                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                 >>                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -1035,11 +1058,16 @@
                                                         #'(0.5 . 0.5)                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                         \score                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                             {                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                \new Score \with {       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \new Score               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \with                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                {                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                } <<                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                    \new RhythmicStaff \with { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                }                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                <<                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    \new RhythmicStaff   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    \with                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    {                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -1050,7 +1078,8 @@
                                                                         \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         tupletFullLength = ##t %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                    } {                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    }                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    {                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         c8               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     }                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                 >>                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -1770,11 +1799,16 @@
                 %@%                             #'(0.5 . 0.5)                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                             \score                                   %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                 {                                    %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                     \new Score \with {               %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     \new Score                       %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     \with                            %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     {                                %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                     } <<                             %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                         \new RhythmicStaff \with {   %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     }                                %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     <<                               %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         \new RhythmicStaff           %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         \with                        %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         {                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK:SM27
@@ -1785,7 +1819,8 @@
                 %@%                                             \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             tupletFullLength = ##t   %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                         } {                          %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         }                            %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         {                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             c4.                      %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         }                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                     >>                               %! EXPLICIT_METRONOME_MARK:SM27
@@ -1801,11 +1836,16 @@
                 %@%                             #'(0.5 . 0.5)                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                             \score                                   %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                 {                                    %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                     \new Score \with {               %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     \new Score                       %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     \with                            %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     {                                %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                     } <<                             %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                         \new RhythmicStaff \with {   %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     }                                %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     <<                               %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         \new RhythmicStaff           %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         \with                        %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         {                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK:SM27
@@ -1816,7 +1856,8 @@
                 %@%                                             \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             tupletFullLength = ##t   %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                         } {                          %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         }                            %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         {                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             c4                       %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         }                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                     >>                               %! EXPLICIT_METRONOME_MARK:SM27
@@ -1868,11 +1909,16 @@
                                                         #'(0.5 . 0.5)                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                         \score                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                             {                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                \new Score \with {       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \new Score               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \with                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                {                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                } <<                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                    \new RhythmicStaff \with { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                }                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                <<                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    \new RhythmicStaff   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    \with                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    {                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -1883,7 +1929,8 @@
                                                                         \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         tupletFullLength = ##t %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                    } {                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    }                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    {                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         c4.              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     }                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                 >>                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -1899,11 +1946,16 @@
                                                         #'(0.5 . 0.5)                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                         \score                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                             {                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                \new Score \with {       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \new Score               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \with                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                {                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                } <<                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                    \new RhythmicStaff \with { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                }                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                <<                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    \new RhythmicStaff   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    \with                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    {                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -1914,7 +1966,8 @@
                                                                         \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         tupletFullLength = ##t %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                    } {                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    }                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    {                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         c4               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     }                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                 >>                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -2694,11 +2747,16 @@
                 %@%                             #'(0.5 . 0.5)                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                             \score                                   %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                 {                                    %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                     \new Score \with {               %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     \new Score                       %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     \with                            %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     {                                %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                     } <<                             %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                         \new RhythmicStaff \with {   %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     }                                %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     <<                               %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         \new RhythmicStaff           %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         \with                        %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         {                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK:SM27
@@ -2709,7 +2767,8 @@
                 %@%                                             \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             tupletFullLength = ##t   %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                         } {                          %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         }                            %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         {                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             c4                       %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         }                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                     >>                               %! EXPLICIT_METRONOME_MARK:SM27
@@ -2725,11 +2784,16 @@
                 %@%                             #'(0.5 . 0.5)                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                             \score                                   %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                 {                                    %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                     \new Score \with {               %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     \new Score                       %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     \with                            %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     {                                %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                         proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                     } <<                             %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                         \new RhythmicStaff \with {   %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     }                                %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                     <<                               %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         \new RhythmicStaff           %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         \with                        %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         {                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK:SM27
@@ -2740,7 +2804,8 @@
                 %@%                                             \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             tupletFullLength = ##t   %! EXPLICIT_METRONOME_MARK:SM27
-                %@%                                         } {                          %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         }                            %! EXPLICIT_METRONOME_MARK:SM27
+                %@%                                         {                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \tweak edge-height #'(0.7 . 0) %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                             \times 4/5 {             %! EXPLICIT_METRONOME_MARK:SM27
                 %@%                                                 c4                   %! EXPLICIT_METRONOME_MARK:SM27
@@ -2795,11 +2860,16 @@
                                                         #'(0.5 . 0.5)                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                         \score                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                             {                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                \new Score \with {       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \new Score               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \with                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                {                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                } <<                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                    \new RhythmicStaff \with { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                }                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                <<                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    \new RhythmicStaff   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    \with                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    {                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -2810,7 +2880,8 @@
                                                                         \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         tupletFullLength = ##t %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                    } {                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    }                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    {                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         c4               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     }                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                 >>                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -2826,11 +2897,16 @@
                                                         #'(0.5 . 0.5)                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                         \score                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                             {                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                \new Score \with {       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \new Score               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                \with                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                {                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     \override SpacingSpanner.spacing-increment = #0.5 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                     proportionalNotationDuration = ##f %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                } <<                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                    \new RhythmicStaff \with { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                }                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                <<                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    \new RhythmicStaff   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    \with                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    {                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \remove Time_signature_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \remove Staff_symbol_engraver %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \override Stem.direction = #up %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -2841,7 +2917,8 @@
                                                                         \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \override TupletNumber.text = #tuplet-number::calc-fraction-text %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         tupletFullLength = ##t %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                                                    } {                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    }                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                                    {                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \tweak edge-height #'(0.7 . 0) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                         \times 4/5 {     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                                             c4           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -3596,11 +3673,15 @@
                     
                 }
             >>
-            \context MusicContext = "MusicContext" <<
-                \context WindSectionStaffGroup = "WindSectionStaffGroup" <<
+            \context MusicContext = "MusicContext"
+            <<
+                \context WindSectionStaffGroup = "WindSectionStaffGroup"
+                <<
                     \tag Oboe                                                            %! ST4
-                    \context OboeMusicStaff = "OboeMusicStaff" {
-                        \context OboeMusicVoice = "OboeMusicVoice" {
+                    \context OboeMusicStaff = "OboeMusicStaff"
+                    {
+                        \context OboeMusicVoice = "OboeMusicVoice"
+                        {
                             
                             % [A OboeMusicVoice measure 14]                              %! SM4
                             \override Beam.positions = #'(-5 . -5)                       %! OC
@@ -4480,8 +4561,10 @@
                         }
                     }
                     \tag Clarinet                                                        %! ST4
-                    \context ClarinetMusicStaff = "ClarinetMusicStaff" {
-                        \context ClarinetMusicVoice = "ClarinetMusicVoice" {
+                    \context ClarinetMusicStaff = "ClarinetMusicStaff"
+                    {
+                        \context ClarinetMusicVoice = "ClarinetMusicVoice"
+                        {
                             
                             % [A ClarinetMusicVoice measure 14]                          %! SM4
                             \override Beam.positions = #'(-4 . -4)                       %! OC
@@ -5885,10 +5968,13 @@
                         }
                     }
                 >>
-                \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup" <<
+                \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup"
+                <<
                     \tag Piano                                                           %! ST4
-                    \context PianoMusicStaff = "PianoMusicStaff" {
-                        \context PianoMusicVoice = "PianoMusicVoice" {
+                    \context PianoMusicStaff = "PianoMusicStaff"
+                    {
+                        \context PianoMusicVoice = "PianoMusicVoice"
+                        {
                             \times 4/7 {
                                 
                                 % [A PianoMusicVoice measure 14]                         %! SM4
@@ -8260,8 +8346,10 @@
                         }
                     }
                     \tag Percussion                                                      %! ST4
-                    \context PercussionMusicStaff = "PercussionMusicStaff" {
-                        \context PercussionMusicVoice = "PercussionMusicVoice" {
+                    \context PercussionMusicStaff = "PercussionMusicStaff"
+                    {
+                        \context PercussionMusicVoice = "PercussionMusicVoice"
+                        {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
                                 
@@ -8833,10 +8921,13 @@
                         }
                     }
                 >>
-                \context StringSectionStaffGroup = "StringSectionStaffGroup" <<
+                \context StringSectionStaffGroup = "StringSectionStaffGroup"
+                <<
                     \tag Violin                                                          %! ST4
-                    \context ViolinMusicStaff = "ViolinMusicStaff" {
-                        \context ViolinMusicVoice = "ViolinMusicVoice" {
+                    \context ViolinMusicStaff = "ViolinMusicStaff"
+                    {
+                        \context ViolinMusicVoice = "ViolinMusicVoice"
+                        {
                             
                             % [A ViolinMusicVoice measure 14]                            %! SM4
                             \override DynamicLineSpanner.staff-padding = #'3             %! OC
@@ -10846,8 +10937,10 @@
                         }
                     }
                     \tag Viola                                                           %! ST4
-                    \context ViolaMusicStaff = "ViolaMusicStaff" {
-                        \context ViolaMusicVoice = "ViolaMusicVoice" {
+                    \context ViolaMusicStaff = "ViolaMusicStaff"
+                    {
+                        \context ViolaMusicVoice = "ViolaMusicVoice"
+                        {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/5 {
                                 
@@ -11968,8 +12061,10 @@
                         }
                     }
                     \tag Cello                                                           %! ST4
-                    \context CelloMusicStaff = "CelloMusicStaff" {
-                        \context CelloMusicVoice = "CelloMusicVoice" {
+                    \context CelloMusicStaff = "CelloMusicStaff"
+                    {
+                        \context CelloMusicVoice = "CelloMusicVoice"
+                        {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/5 {
                                 

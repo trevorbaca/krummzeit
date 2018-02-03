@@ -15,7 +15,7 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalRests = "GlobalRests"
-                {
+                {   %*% iGlobalRests
                     
                     % [_ GlobalRests measure 1]                                          %! SM4
                     R1 * 1
@@ -68,9 +68,9 @@
                     % [_ GlobalRests measure 13]                                         %! SM4
                     R1 * 3/4
                     
-                }
+                }   %*% iGlobalRests
                 \context GlobalSkips = "GlobalSkips"
-                {
+                {   %*% iGlobalSkips
                     
                     % [_ GlobalSkips measure 1]                                          %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -874,7 +874,7 @@
                     \override Score.BarLine.transparent = ##f                            %! SM5
                     \bar "|"                                                             %! SM5
                     
-                }
+                }   %*% iGlobalSkips
             >>
             \context MusicContext = "MusicContext"
             <<
@@ -884,7 +884,7 @@
                     \context OboeMusicStaff = "OboeMusicStaff"
                     {
                         \context OboeMusicVoice = "OboeMusicVoice"
-                        {
+                        {   %*% iOboeMusicVoice
                             
                             % [_ OboeMusicVoice measure 1]                               %! SM4
                             \set OboeMusicStaff.instrumentName = \markup {               %! DEFAULT_INSTRUMENT:SM8
@@ -973,13 +973,13 @@
                             % [_ OboeMusicVoice measure 13]                              %! SM4
                             R1 * 3/4
                             
-                        }
+                        }   %*% iOboeMusicVoice
                     }
                     \tag Clarinet                                                        %! ST4
                     \context ClarinetMusicStaff = "ClarinetMusicStaff"
                     {
                         \context ClarinetMusicVoice = "ClarinetMusicVoice"
-                        {
+                        {   %*% iClarinetMusicVoice
                             
                             % [_ ClarinetMusicVoice measure 1]                           %! SM4
                             \set ClarinetMusicStaff.instrumentName = \markup {           %! DEFAULT_INSTRUMENT:SM8
@@ -1098,7 +1098,7 @@
                             % [_ ClarinetMusicVoice measure 13]                          %! SM4
                             R1 * 3/4
                             
-                        }
+                        }   %*% iClarinetMusicVoice
                     }
                 >>
                 \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup"
@@ -1107,7 +1107,7 @@
                     \context PianoMusicStaff = "PianoMusicStaff"
                     {
                         \context PianoMusicVoice = "PianoMusicVoice"
-                        {
+                        {   %*% iPianoMusicVoice
                             
                             % [_ PianoMusicVoice measure 1]                              %! SM4
                             \set PianoMusicStaff.instrumentName = \markup {              %! DEFAULT_INSTRUMENT:SM8
@@ -1231,13 +1231,13 @@
                             % [_ PianoMusicVoice measure 13]                             %! SM4
                             R1 * 3/4
                             
-                        }
+                        }   %*% iPianoMusicVoice
                     }
                     \tag Percussion                                                      %! ST4
                     \context PercussionMusicStaff = "PercussionMusicStaff"
                     {
                         \context PercussionMusicVoice = "PercussionMusicVoice"
-                        {
+                        {   %*% iPercussionMusicVoice
                             
                             % [_ PercussionMusicVoice measure 1]                         %! SM4
                             \override DynamicLineSpanner.padding = #'4                   %! OC
@@ -1451,7 +1451,7 @@
                                 \revert TupletBracket.padding                            %! OC
                                 
                             }
-                        }
+                        }   %*% iPercussionMusicVoice
                     }
                 >>
                 \context StringSectionStaffGroup = "StringSectionStaffGroup"
@@ -1460,7 +1460,7 @@
                     \context ViolinMusicStaff = "ViolinMusicStaff"
                     {
                         \context ViolinMusicVoice = "ViolinMusicVoice"
-                        {
+                        {   %*% iViolinMusicVoice
                             
                             % [_ ViolinMusicVoice measure 1]                             %! SM4
                             \override DynamicLineSpanner.padding = #'4                   %! OC
@@ -1736,13 +1736,13 @@
                             \revert DynamicLineSpanner.padding                           %! OC
                             \revert TupletBracket.padding                                %! OC
                             
-                        }
+                        }   %*% iViolinMusicVoice
                     }
                     \tag Viola                                                           %! ST4
                     \context ViolaMusicStaff = "ViolaMusicStaff"
                     {
                         \context ViolaMusicVoice = "ViolaMusicVoice"
-                        {
+                        {   %*% iViolaMusicVoice
                             
                             % [_ ViolaMusicVoice measure 1]                              %! SM4
                             \override DynamicLineSpanner.padding = #'4                   %! OC
@@ -2018,13 +2018,13 @@
                             \revert DynamicLineSpanner.padding                           %! OC
                             \revert TupletBracket.padding                                %! OC
                             
-                        }
+                        }   %*% iViolaMusicVoice
                     }
                     \tag Cello                                                           %! ST4
                     \context CelloMusicStaff = "CelloMusicStaff"
                     {
                         \context CelloMusicVoice = "CelloMusicVoice"
-                        {
+                        {   %*% iCelloMusicVoice
                             
                             % [_ CelloMusicVoice measure 1]                              %! SM4
                             \override DynamicLineSpanner.padding = #'4                   %! OC
@@ -2294,7 +2294,7 @@
                             \revert DynamicLineSpanner.padding                           %! OC
                             \revert TupletBracket.padding                                %! OC
                             
-                        }
+                        }   %*% iCelloMusicVoice
                     }
                 >>
             >>

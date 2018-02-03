@@ -20,7 +20,7 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalSkips = "GlobalSkips"
-                {
+                {   %*% HGlobalSkips
                     
                     % [H GlobalSkips measure 281]                                        %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -543,7 +543,7 @@
                     \override Score.BarLine.transparent = ##f                            %! SM5
                     \bar "|"                                                             %! SM5
                     
-                }
+                }   %*% HGlobalSkips
             >>
             \context MusicContext = "MusicContext"
             <<
@@ -553,7 +553,7 @@
                     \context OboeMusicStaff = "OboeMusicStaff"
                     {
                         \context OboeMusicVoice = "OboeMusicVoice"
-                        {
+                        {   %*% HOboeMusicVoice
                             
                             % [H OboeMusicVoice measure 281]                             %! SM4
                             \set OboeMusicStaff.instrumentName = \markup {               %! REAPPLIED_INSTRUMENT:SM8
@@ -732,13 +732,13 @@
                                 \revert TupletBracket.staff-padding                      %! OC
                                 
                             }
-                        }
+                        }   %*% HOboeMusicVoice
                     }
                     \tag Clarinet                                                        %! ST4
                     \context ClarinetMusicStaff = "ClarinetMusicStaff"
                     {
                         \context ClarinetMusicVoice = "ClarinetMusicVoice"
-                        {
+                        {   %*% HClarinetMusicVoice
                             
                             % [H ClarinetMusicVoice measure 281]                         %! SM4
                             \set ClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
@@ -1055,7 +1055,7 @@
                                 \revert TupletBracket.staff-padding                      %! OC
                                 
                             }
-                        }
+                        }   %*% HClarinetMusicVoice
                     }
                 >>
                 \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup"
@@ -1064,7 +1064,7 @@
                     \context PianoMusicStaff = "PianoMusicStaff"
                     {
                         \context PianoMusicVoice = "PianoMusicVoice"
-                        {
+                        {   %*% HPianoMusicVoice
                             \times 2/3 {
                                 
                                 % [H PianoMusicVoice measure 281]                        %! SM4
@@ -2964,13 +2964,13 @@
                                 \revert TupletBracket.staff-padding                      %! OC
                                 
                             }
-                        }
+                        }   %*% HPianoMusicVoice
                     }
                     \tag Percussion                                                      %! ST4
                     \context PercussionMusicStaff = "PercussionMusicStaff"
                     {
                         \context PercussionMusicVoice = "PercussionMusicVoice"
-                        {
+                        {   %*% HPercussionMusicVoice
                             
                             % [H PercussionMusicVoice measure 281]                       %! SM4
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -3194,7 +3194,7 @@
                                 \revert TupletBracket.staff-padding                      %! OC
                                 
                             }
-                        }
+                        }   %*% HPercussionMusicVoice
                     }
                 >>
                 \context StringSectionStaffGroup = "StringSectionStaffGroup"
@@ -3203,7 +3203,7 @@
                     \context ViolinMusicStaff = "ViolinMusicStaff"
                     {
                         \context ViolinMusicVoice = "ViolinMusicVoice"
-                        {
+                        {   %*% HViolinMusicVoice
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 19/10 {
                                 
@@ -3424,13 +3424,13 @@
                                 \revert TupletBracket.staff-padding                      %! OC
                                 
                             }
-                        }
+                        }   %*% HViolinMusicVoice
                     }
                     \tag Viola                                                           %! ST4
                     \context ViolaMusicStaff = "ViolaMusicStaff"
                     {
                         \context ViolaMusicVoice = "ViolaMusicVoice"
-                        {
+                        {   %*% HViolaMusicVoice
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 19/10 {
                                 
@@ -3641,13 +3641,13 @@
                                 \revert TupletBracket.staff-padding                      %! OC
                                 
                             }
-                        }
+                        }   %*% HViolaMusicVoice
                     }
                     \tag Cello                                                           %! ST4
                     \context CelloMusicStaff = "CelloMusicStaff"
                     {
                         \context CelloMusicVoice = "CelloMusicVoice"
-                        {
+                        {   %*% HCelloMusicVoice
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 19/10 {
                                 
@@ -3844,7 +3844,7 @@
                                 \revert TupletBracket.staff-padding                      %! OC
                                 
                             }
-                        }
+                        }   %*% HCelloMusicVoice
                     }
                 >>
             >>

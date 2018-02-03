@@ -20,7 +20,7 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalSkips = "GlobalSkips"
-                {
+                {   %*% AGlobalSkips
                     
                     % [A GlobalSkips measure 14]                                         %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! REDUNDANT_METRONOME_MARK:SM27
@@ -3671,7 +3671,7 @@
                     \override Score.BarLine.transparent = ##f                            %! SM5
                     \bar "|"                                                             %! SM5
                     
-                }
+                }   %*% AGlobalSkips
             >>
             \context MusicContext = "MusicContext"
             <<
@@ -3681,7 +3681,7 @@
                     \context OboeMusicStaff = "OboeMusicStaff"
                     {
                         \context OboeMusicVoice = "OboeMusicVoice"
-                        {
+                        {   %*% AOboeMusicVoice
                             
                             % [A OboeMusicVoice measure 14]                              %! SM4
                             \override Beam.positions = #'(-5 . -5)                       %! OC
@@ -4558,13 +4558,13 @@
                             \revert DynamicLineSpanner.staff-padding                     %! OC
                             \revert TupletBracket.staff-padding                          %! OC
                             
-                        }
+                        }   %*% AOboeMusicVoice
                     }
                     \tag Clarinet                                                        %! ST4
                     \context ClarinetMusicStaff = "ClarinetMusicStaff"
                     {
                         \context ClarinetMusicVoice = "ClarinetMusicVoice"
-                        {
+                        {   %*% AClarinetMusicVoice
                             
                             % [A ClarinetMusicVoice measure 14]                          %! SM4
                             \override Beam.positions = #'(-4 . -4)                       %! OC
@@ -5965,7 +5965,7 @@
                             d''4.
                             \revert DynamicLineSpanner.staff-padding                     %! OC
                             
-                        }
+                        }   %*% AClarinetMusicVoice
                     }
                 >>
                 \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup"
@@ -5974,7 +5974,7 @@
                     \context PianoMusicStaff = "PianoMusicStaff"
                     {
                         \context PianoMusicVoice = "PianoMusicVoice"
-                        {
+                        {   %*% APianoMusicVoice
                             \times 4/7 {
                                 
                                 % [A PianoMusicVoice measure 14]                         %! SM4
@@ -8343,13 +8343,13 @@
                                 \revert TupletBracket.staff-padding                      %! OC
                                 
                             }
-                        }
+                        }   %*% APianoMusicVoice
                     }
                     \tag Percussion                                                      %! ST4
                     \context PercussionMusicStaff = "PercussionMusicStaff"
                     {
                         \context PercussionMusicVoice = "PercussionMusicVoice"
-                        {
+                        {   %*% APercussionMusicVoice
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
                                 
@@ -8918,7 +8918,7 @@
                             % [A PercussionMusicVoice measure 88]                        %! SM4
                             R1 * 5/4
                             
-                        }
+                        }   %*% APercussionMusicVoice
                     }
                 >>
                 \context StringSectionStaffGroup = "StringSectionStaffGroup"
@@ -8927,7 +8927,7 @@
                     \context ViolinMusicStaff = "ViolinMusicStaff"
                     {
                         \context ViolinMusicVoice = "ViolinMusicVoice"
-                        {
+                        {   %*% AViolinMusicVoice
                             
                             % [A ViolinMusicVoice measure 14]                            %! SM4
                             \override DynamicLineSpanner.staff-padding = #'3             %! OC
@@ -10934,13 +10934,13 @@
                             \revert RepeatTie.direction                                  %! OC
                             \revert DynamicLineSpanner.staff-padding                     %! OC
                             
-                        }
+                        }   %*% AViolinMusicVoice
                     }
                     \tag Viola                                                           %! ST4
                     \context ViolaMusicStaff = "ViolaMusicStaff"
                     {
                         \context ViolaMusicVoice = "ViolaMusicVoice"
-                        {
+                        {   %*% AViolaMusicVoice
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/5 {
                                 
@@ -12058,13 +12058,13 @@
                             % [A ViolaMusicVoice measure 88]                             %! SM4
                             R1 * 5/4
                             
-                        }
+                        }   %*% AViolaMusicVoice
                     }
                     \tag Cello                                                           %! ST4
                     \context CelloMusicStaff = "CelloMusicStaff"
                     {
                         \context CelloMusicVoice = "CelloMusicVoice"
-                        {
+                        {   %*% ACelloMusicVoice
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/5 {
                                 
@@ -13160,7 +13160,7 @@
                             % [A CelloMusicVoice measure 88]                             %! SM4
                             R1 * 5/4
                             
-                        }
+                        }   %*% ACelloMusicVoice
                     }
                 >>
             >>

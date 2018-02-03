@@ -20,7 +20,7 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalRests = "GlobalRests"
-                {
+                {   %*% CGlobalRests
                     
                     % [C GlobalRests measure 133]                                        %! SM4
                     R1 * 3/4
@@ -109,9 +109,9 @@
                     % [C GlobalRests measure 151]                                        %! SM4
                     R1 * 5/4
                     
-                }
+                }   %*% CGlobalRests
                 \context GlobalSkips = "GlobalSkips"
-                {
+                {   %*% CGlobalSkips
                     
                     % [C GlobalSkips measure 133]                                        %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -1622,7 +1622,7 @@
                     \override Score.BarLine.transparent = ##f                            %! SM5
                     \bar "|"                                                             %! SM5
                     
-                }
+                }   %*% CGlobalSkips
             >>
             \context MusicContext = "MusicContext"
             <<
@@ -1632,7 +1632,7 @@
                     \context OboeMusicStaff = "OboeMusicStaff"
                     {
                         \context OboeMusicVoice = "OboeMusicVoice"
-                        {
+                        {   %*% COboeMusicVoice
                             
                             % [C OboeMusicVoice measure 133]                             %! SM4
                             \set OboeMusicStaff.instrumentName = \markup {               %! REAPPLIED_INSTRUMENT:SM8
@@ -1752,13 +1752,13 @@
                             % [C OboeMusicVoice measure 151]                             %! SM4
                             R1 * 5/4
                             
-                        }
+                        }   %*% COboeMusicVoice
                     }
                     \tag Clarinet                                                        %! ST4
                     \context ClarinetMusicStaff = "ClarinetMusicStaff"
                     {
                         \context ClarinetMusicVoice = "ClarinetMusicVoice"
-                        {
+                        {   %*% CClarinetMusicVoice
                             
                             % [C ClarinetMusicVoice measure 133]                         %! SM4
                             \set ClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
@@ -1979,7 +1979,7 @@
                             cs4
                             \revert Stem.direction                                       %! OC
                             
-                        }
+                        }   %*% CClarinetMusicVoice
                     }
                 >>
                 \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup"
@@ -1988,7 +1988,7 @@
                     \context PianoMusicStaff = "PianoMusicStaff"
                     {
                         \context PianoMusicVoice = "PianoMusicVoice"
-                        {
+                        {   %*% CPianoMusicVoice
                             \times 2/3 {
                                 
                                 % [C PianoMusicVoice measure 133]                        %! SM4
@@ -2383,13 +2383,13 @@
                             % [C PianoMusicVoice measure 151]                            %! SM4
                             R1 * 5/4
                             
-                        }
+                        }   %*% CPianoMusicVoice
                     }
                     \tag Percussion                                                      %! ST4
                     \context PercussionMusicStaff = "PercussionMusicStaff"
                     {
                         \context PercussionMusicVoice = "PercussionMusicVoice"
-                        {
+                        {   %*% CPercussionMusicVoice
                             
                             % [C PercussionMusicVoice measure 133]                       %! SM4
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -2701,7 +2701,7 @@
                             \pp                                                          %! REDUNDANT_DYNAMIC:SM8
                             \revert DynamicLineSpanner.staff-padding                     %! OC
                             
-                        }
+                        }   %*% CPercussionMusicVoice
                     }
                 >>
                 \context StringSectionStaffGroup = "StringSectionStaffGroup"
@@ -2710,7 +2710,7 @@
                     \context ViolinMusicStaff = "ViolinMusicStaff"
                     {
                         \context ViolinMusicVoice = "ViolinMusicVoice"
-                        {
+                        {   %*% CViolinMusicVoice
                             
                             % [C ViolinMusicVoice measure 133]                           %! SM4
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -2961,13 +2961,13 @@
                             % [C ViolinMusicVoice measure 151]                           %! SM4
                             R1 * 5/4
                             
-                        }
+                        }   %*% CViolinMusicVoice
                     }
                     \tag Viola                                                           %! ST4
                     \context ViolaMusicStaff = "ViolaMusicStaff"
                     {
                         \context ViolaMusicVoice = "ViolaMusicVoice"
-                        {
+                        {   %*% CViolaMusicVoice
                             
                             % [C ViolaMusicVoice measure 133]                            %! SM4
                             \set ViolaMusicStaff.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
@@ -3196,13 +3196,13 @@
                             % [C ViolaMusicVoice measure 151]                            %! SM4
                             R1 * 5/4
                             
-                        }
+                        }   %*% CViolaMusicVoice
                     }
                     \tag Cello                                                           %! ST4
                     \context CelloMusicStaff = "CelloMusicStaff"
                     {
                         \context CelloMusicVoice = "CelloMusicVoice"
-                        {
+                        {   %*% CCelloMusicVoice
                             
                             % [C CelloMusicVoice measure 133]                            %! SM4
                             \set CelloMusicStaff.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
@@ -3420,7 +3420,7 @@
                             % [C CelloMusicVoice measure 151]                            %! SM4
                             R1 * 5/4
                             
-                        }
+                        }   %*% CCelloMusicVoice
                     }
                 >>
             >>

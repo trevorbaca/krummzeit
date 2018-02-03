@@ -20,7 +20,7 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalRests = "GlobalRests"
-                {
+                {   %*% IGlobalRests
                     
                     % [I GlobalRests measure 291]                                        %! SM4
                     R1 * 1
@@ -97,9 +97,9 @@
                             #"scripts.uverylongfermata"                                  %! SM18
                         }                                                                %! SM18
                     
-                }
+                }   %*% IGlobalRests
                 \context GlobalSkips = "GlobalSkips"
-                {
+                {   %*% IGlobalSkips
                     
                     % [I GlobalSkips measure 291]                                        %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! REDUNDANT_METRONOME_MARK:SM27
@@ -1382,7 +1382,7 @@
                     \override Score.BarLine.transparent = ##f                            %! SM5
                     \bar "|"                                                             %! SM5
                     
-                }
+                }   %*% IGlobalSkips
             >>
             \context MusicContext = "MusicContext"
             <<
@@ -1392,7 +1392,7 @@
                     \context OboeMusicStaff = "OboeMusicStaff"
                     {
                         \context OboeMusicVoice = "OboeMusicVoice"
-                        {
+                        {   %*% IOboeMusicVoice
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/5 {
                                 
@@ -1575,13 +1575,13 @@
                             % [I OboeMusicVoice measure 313]                             %! SM4
                             R1 * 1/4
                             
-                        }
+                        }   %*% IOboeMusicVoice
                     }
                     \tag Clarinet                                                        %! ST4
                     \context ClarinetMusicStaff = "ClarinetMusicStaff"
                     {
                         \context ClarinetMusicVoice = "ClarinetMusicVoice"
-                        {
+                        {   %*% IClarinetMusicVoice
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/5 {
                                 
@@ -2310,7 +2310,7 @@
                             % [I ClarinetMusicVoice measure 313]                         %! SM4
                             R1 * 1/4
                             
-                        }
+                        }   %*% IClarinetMusicVoice
                     }
                 >>
                 \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup"
@@ -2319,7 +2319,7 @@
                     \context PianoMusicStaff = "PianoMusicStaff"
                     {
                         \context PianoMusicVoice = "PianoMusicVoice"
-                        {
+                        {   %*% IPianoMusicVoice
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/7 {
                                 
@@ -5725,13 +5725,13 @@
                             % [I PianoMusicVoice measure 313]                            %! SM4
                             R1 * 1/4
                             
-                        }
+                        }   %*% IPianoMusicVoice
                     }
                     \tag Percussion                                                      %! ST4
                     \context PercussionMusicStaff = "PercussionMusicStaff"
                     {
                         \context PercussionMusicVoice = "PercussionMusicVoice"
-                        {
+                        {   %*% IPercussionMusicVoice
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/7 {
                                 
@@ -6033,7 +6033,7 @@
                             % [I PercussionMusicVoice measure 313]                       %! SM4
                             R1 * 1/4
                             
-                        }
+                        }   %*% IPercussionMusicVoice
                     }
                 >>
                 \context StringSectionStaffGroup = "StringSectionStaffGroup"
@@ -6042,7 +6042,7 @@
                     \context ViolinMusicStaff = "ViolinMusicStaff"
                     {
                         \context ViolinMusicVoice = "ViolinMusicVoice"
-                        {
+                        {   %*% IViolinMusicVoice
                             \times 2/3 {
                                 
                                 % [I ViolinMusicVoice measure 291]                       %! SM4
@@ -6680,13 +6680,13 @@
                             % [I ViolinMusicVoice measure 313]                           %! SM4
                             R1 * 1/4
                             
-                        }
+                        }   %*% IViolinMusicVoice
                     }
                     \tag Viola                                                           %! ST4
                     \context ViolaMusicStaff = "ViolaMusicStaff"
                     {
                         \context ViolaMusicVoice = "ViolaMusicVoice"
-                        {
+                        {   %*% IViolaMusicVoice
                             \times 2/3 {
                                 
                                 % [I ViolaMusicVoice measure 291]                        %! SM4
@@ -7052,13 +7052,13 @@
                             % [I ViolaMusicVoice measure 313]                            %! SM4
                             R1 * 1/4
                             
-                        }
+                        }   %*% IViolaMusicVoice
                     }
                     \tag Cello                                                           %! ST4
                     \context CelloMusicStaff = "CelloMusicStaff"
                     {
                         \context CelloMusicVoice = "CelloMusicVoice"
-                        {
+                        {   %*% ICelloMusicVoice
                             \times 2/3 {
                                 
                                 % [I CelloMusicVoice measure 291]                        %! SM4
@@ -7408,7 +7408,7 @@
                             % [I CelloMusicVoice measure 313]                            %! SM4
                             R1 * 1/4
                             
-                        }
+                        }   %*% ICelloMusicVoice
                     }
                 >>
             >>

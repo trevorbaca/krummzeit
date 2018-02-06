@@ -1,4 +1,4 @@
-IGlobalRests = {
+I_GlobalRests = {
     
     % [I GlobalRests measure 291]                                        %! SM4
     R1 * 1
@@ -78,7 +78,7 @@ IGlobalRests = {
 }
 
 
-IGlobalSkips = {
+I_GlobalSkips = {
     
     % [I GlobalSkips measure 291]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! REDUNDANT_METRONOME_MARK:SM27
@@ -1364,7 +1364,7 @@ IGlobalSkips = {
 }
 
 
-IOboeMusicVoice = {
+I_OboeMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/5 {
         
@@ -1550,7 +1550,7 @@ IOboeMusicVoice = {
 }
 
 
-IClarinetMusicVoice = {
+I_ClarinetMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/5 {
         
@@ -2282,7 +2282,7 @@ IClarinetMusicVoice = {
 }
 
 
-IPianoMusicVoice = {
+I_PianoMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/7 {
         
@@ -5691,7 +5691,7 @@ IPianoMusicVoice = {
 }
 
 
-IPercussionMusicVoice = {
+I_PercussionMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/7 {
         
@@ -5996,7 +5996,7 @@ IPercussionMusicVoice = {
 }
 
 
-IViolinMusicVoice = {
+I_ViolinMusicVoice = {
     \times 2/3 {
         
         % [I ViolinMusicVoice measure 291]                       %! SM4
@@ -6637,7 +6637,7 @@ IViolinMusicVoice = {
 }
 
 
-IViolaMusicVoice = {
+I_ViolaMusicVoice = {
     \times 2/3 {
         
         % [I ViolaMusicVoice measure 291]                        %! SM4
@@ -7006,7 +7006,7 @@ IViolaMusicVoice = {
 }
 
 
-ICelloMusicVoice = {
+I_CelloMusicVoice = {
     \times 2/3 {
         
         % [I CelloMusicVoice measure 291]                        %! SM4

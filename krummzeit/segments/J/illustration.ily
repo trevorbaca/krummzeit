@@ -1,4 +1,4 @@
-JGlobalSkips = {
+J_GlobalSkips = {
     
     % [J GlobalSkips measure 314]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! REDUNDANT_METRONOME_MARK:SM27
@@ -1778,7 +1778,7 @@ JGlobalSkips = {
 }
 
 
-JOboeMusicVoice = {
+J_OboeMusicVoice = {
     
     % [J OboeMusicVoice measure 314]                             %! SM4
     \override DynamicLineSpanner.staff-padding = #'5             %! OC
@@ -1943,7 +1943,7 @@ JOboeMusicVoice = {
 }
 
 
-JClarinetMusicVoice = {
+J_ClarinetMusicVoice = {
     
     % [J ClarinetMusicVoice measure 314]                         %! SM4
     \override DynamicLineSpanner.staff-padding = #'7             %! OC
@@ -2158,7 +2158,7 @@ JClarinetMusicVoice = {
 }
 
 
-JPianoMusicVoice = {
+J_PianoMusicVoice = {
     
     % [J PianoMusicVoice measure 314]                            %! SM4
     \once \override Accidental.color = #red
@@ -2409,7 +2409,7 @@ JPianoMusicVoice = {
 }
 
 
-JPercussionMusicVoice = {
+J_PercussionMusicVoice = {
     
     % [J PercussionMusicVoice measure 314]                       %! SM4
     \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -2610,7 +2610,7 @@ JPercussionMusicVoice = {
 }
 
 
-JViolinMusicVoice = {
+J_ViolinMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/7 {
         
@@ -3110,7 +3110,7 @@ JViolinMusicVoice = {
 }
 
 
-JViolaMusicVoice = {
+J_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/8 {
         
@@ -3355,7 +3355,7 @@ JViolaMusicVoice = {
 }
 
 
-JCelloMusicVoice = {
+J_CelloMusicVoice = {
     
     % [J CelloMusicVoice measure 314]                            %! SM4
     \override DynamicLineSpanner.staff-padding = #'3             %! OC

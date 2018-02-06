@@ -1,4 +1,4 @@
-iGlobalRests = {
+i_GlobalRests = {
     
     % [_ GlobalRests measure 1]                                          %! SM4
     R1 * 1
@@ -54,7 +54,7 @@ iGlobalRests = {
 }
 
 
-iGlobalSkips = {
+i_GlobalSkips = {
     
     % [_ GlobalSkips measure 1]                                          %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -861,7 +861,7 @@ iGlobalSkips = {
 }
 
 
-iOboeMusicVoice = {
+i_OboeMusicVoice = {
     
     % [_ OboeMusicVoice measure 1]                               %! SM4
     \set OboeMusicStaff.instrumentName = \markup {               %! DEFAULT_INSTRUMENT:SM8
@@ -953,7 +953,7 @@ iOboeMusicVoice = {
 }
 
 
-iClarinetMusicVoice = {
+i_ClarinetMusicVoice = {
     
     % [_ ClarinetMusicVoice measure 1]                           %! SM4
     \set ClarinetMusicStaff.instrumentName = \markup {           %! DEFAULT_INSTRUMENT:SM8
@@ -1075,7 +1075,7 @@ iClarinetMusicVoice = {
 }
 
 
-iPianoMusicVoice = {
+i_PianoMusicVoice = {
     
     % [_ PianoMusicVoice measure 1]                              %! SM4
     \set PianoMusicStaff.instrumentName = \markup {              %! DEFAULT_INSTRUMENT:SM8
@@ -1202,7 +1202,7 @@ iPianoMusicVoice = {
 }
 
 
-iPercussionMusicVoice = {
+i_PercussionMusicVoice = {
     
     % [_ PercussionMusicVoice measure 1]                         %! SM4
     \override DynamicLineSpanner.padding = #'4                   %! OC
@@ -1419,7 +1419,7 @@ iPercussionMusicVoice = {
 }
 
 
-iViolinMusicVoice = {
+i_ViolinMusicVoice = {
     
     % [_ ViolinMusicVoice measure 1]                             %! SM4
     \override DynamicLineSpanner.padding = #'4                   %! OC
@@ -1698,7 +1698,7 @@ iViolinMusicVoice = {
 }
 
 
-iViolaMusicVoice = {
+i_ViolaMusicVoice = {
     
     % [_ ViolaMusicVoice measure 1]                              %! SM4
     \override DynamicLineSpanner.padding = #'4                   %! OC
@@ -1977,7 +1977,7 @@ iViolaMusicVoice = {
 }
 
 
-iCelloMusicVoice = {
+i_CelloMusicVoice = {
     
     % [_ CelloMusicVoice measure 1]                              %! SM4
     \override DynamicLineSpanner.padding = #'4                   %! OC

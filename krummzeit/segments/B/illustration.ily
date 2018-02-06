@@ -1,4 +1,4 @@
-BGlobalRests = {
+B_GlobalRests = {
     
     % [B GlobalRests measure 89]                                         %! SM4
     R1 * 3/4
@@ -201,7 +201,7 @@ BGlobalRests = {
 }
 
 
-BGlobalSkips = {
+B_GlobalSkips = {
     
     % [B GlobalSkips measure 89]                                         %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! REDUNDANT_METRONOME_MARK:SM27
@@ -2264,7 +2264,7 @@ BGlobalSkips = {
 }
 
 
-BOboeMusicVoice = {
+B_OboeMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
@@ -3137,7 +3137,7 @@ BOboeMusicVoice = {
 }
 
 
-BClarinetMusicVoice = {
+B_ClarinetMusicVoice = {
     
     % [B ClarinetMusicVoice measure 89]                          %! SM4
     \override DynamicLineSpanner.staff-padding = #'3             %! OC
@@ -3420,7 +3420,7 @@ BClarinetMusicVoice = {
 }
 
 
-BPianoMusicVoice = {
+B_PianoMusicVoice = {
     
     % [B PianoMusicVoice measure 89]                             %! SM4
     \set PianoMusicStaff.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
@@ -3927,7 +3927,7 @@ BPianoMusicVoice = {
 }
 
 
-BPercussionMusicVoice = {
+B_PercussionMusicVoice = {
     
     % [B PercussionMusicVoice measure 89]                        %! SM4
     \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -4528,7 +4528,7 @@ BPercussionMusicVoice = {
 }
 
 
-BViolinMusicVoice = {
+B_ViolinMusicVoice = {
     
     % [B ViolinMusicVoice measure 89]                            %! SM4
     \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -5002,7 +5002,7 @@ BViolinMusicVoice = {
 }
 
 
-BViolaMusicVoice = {
+B_ViolaMusicVoice = {
     
     % [B ViolaMusicVoice measure 89]                             %! SM4
     \set ViolaMusicStaff.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
@@ -5304,7 +5304,7 @@ BViolaMusicVoice = {
 }
 
 
-BCelloMusicVoice = {
+B_CelloMusicVoice = {
     
     % [B CelloMusicVoice measure 89]                             %! SM4
     \set CelloMusicStaff.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8

@@ -3,6 +3,32 @@ import abjad
 
 metadata = abjad.OrderedDict(
     [
+        (
+            'alive_during_segment',
+            [
+                'Score',
+                'GlobalContext',
+                'GlobalSkips',
+                'MusicContext',
+                'WindSectionStaffGroup',
+                'OboeMusicStaff',
+                'OboeMusicVoice',
+                'ClarinetMusicStaff',
+                'ClarinetMusicVoice',
+                'PercussionSectionStaffGroup',
+                'PianoMusicStaff',
+                'PianoMusicVoice',
+                'PercussionMusicStaff',
+                'PercussionMusicVoice',
+                'StringSectionStaffGroup',
+                'ViolinMusicStaff',
+                'ViolinMusicVoice',
+                'ViolaMusicStaff',
+                'ViolaMusicVoice',
+                'CelloMusicStaff',
+                'CelloMusicVoice',
+                ],
+            ),
         ('duration', "3'25''"),
         ('first_measure_number', 152),
         ('last_measure_number', 199),

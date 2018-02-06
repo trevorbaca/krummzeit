@@ -1,4 +1,4 @@
-HGlobalSkips = {
+H_GlobalSkips = {
     
     % [H GlobalSkips measure 281]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -524,7 +524,7 @@ HGlobalSkips = {
 }
 
 
-HOboeMusicVoice = {
+H_OboeMusicVoice = {
     
     % [H OboeMusicVoice measure 281]                             %! SM4
     \set OboeMusicStaff.instrumentName = \markup {               %! REAPPLIED_INSTRUMENT:SM8
@@ -706,7 +706,7 @@ HOboeMusicVoice = {
 }
 
 
-HClarinetMusicVoice = {
+H_ClarinetMusicVoice = {
     
     % [H ClarinetMusicVoice measure 281]                         %! SM4
     \set ClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
@@ -1026,7 +1026,7 @@ HClarinetMusicVoice = {
 }
 
 
-HPianoMusicVoice = {
+H_PianoMusicVoice = {
     \times 2/3 {
         
         % [H PianoMusicVoice measure 281]                        %! SM4
@@ -2929,7 +2929,7 @@ HPianoMusicVoice = {
 }
 
 
-HPercussionMusicVoice = {
+H_PercussionMusicVoice = {
     
     % [H PercussionMusicVoice measure 281]                       %! SM4
     \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -3156,7 +3156,7 @@ HPercussionMusicVoice = {
 }
 
 
-HViolinMusicVoice = {
+H_ViolinMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 19/10 {
         
@@ -3380,7 +3380,7 @@ HViolinMusicVoice = {
 }
 
 
-HViolaMusicVoice = {
+H_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 19/10 {
         
@@ -3594,7 +3594,7 @@ HViolaMusicVoice = {
 }
 
 
-HCelloMusicVoice = {
+H_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 19/10 {
         

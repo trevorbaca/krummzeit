@@ -1,4 +1,4 @@
-DGlobalSkips = {
+D_GlobalSkips = {
     
     % [D GlobalSkips measure 152]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! REDUNDANT_METRONOME_MARK:SM27
@@ -2171,7 +2171,7 @@ DGlobalSkips = {
 }
 
 
-DOboeMusicVoice = {
+D_OboeMusicVoice = {
     
     % [D OboeMusicVoice measure 152]                             %! SM4
     \override Beam.positions = #'(-4 . -4)                       %! OC
@@ -3209,7 +3209,7 @@ DOboeMusicVoice = {
 }
 
 
-DClarinetMusicVoice = {
+D_ClarinetMusicVoice = {
     
     % [D ClarinetMusicVoice measure 152]                         %! SM4
     \override Beam.positions = #'(-4 . -4)                       %! OC
@@ -3725,7 +3725,7 @@ DClarinetMusicVoice = {
 }
 
 
-DPianoMusicVoice = {
+D_PianoMusicVoice = {
     
     % [D PianoMusicVoice measure 152]                            %! SM4
     \override DynamicLineSpanner.staff-padding = #'3             %! OC
@@ -5138,7 +5138,7 @@ DPianoMusicVoice = {
 }
 
 
-DPercussionMusicVoice = {
+D_PercussionMusicVoice = {
     
     % [D PercussionMusicVoice measure 152]                       %! SM4
     \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
@@ -6225,7 +6225,7 @@ DPercussionMusicVoice = {
 }
 
 
-DViolinMusicVoice = {
+D_ViolinMusicVoice = {
     
     % [D ViolinMusicVoice measure 152]                           %! SM4
     \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -7093,7 +7093,7 @@ DViolinMusicVoice = {
 }
 
 
-DViolaMusicVoice = {
+D_ViolaMusicVoice = {
     
     % [D ViolaMusicVoice measure 152]                            %! SM4
     \set ViolaMusicStaff.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
@@ -8054,7 +8054,7 @@ DViolaMusicVoice = {
 }
 
 
-DCelloMusicVoice = {
+D_CelloMusicVoice = {
     
     % [D CelloMusicVoice measure 152]                            %! SM4
     \set CelloMusicStaff.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8

@@ -1,4 +1,4 @@
-CGlobalRests = {
+C_GlobalRests = {
     
     % [C GlobalRests measure 133]                                        %! SM4
     R1 * 3/4
@@ -90,7 +90,7 @@ CGlobalRests = {
 }
 
 
-CGlobalSkips = {
+C_GlobalSkips = {
     
     % [C GlobalSkips measure 133]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -1604,7 +1604,7 @@ CGlobalSkips = {
 }
 
 
-COboeMusicVoice = {
+C_OboeMusicVoice = {
     
     % [C OboeMusicVoice measure 133]                             %! SM4
     \set OboeMusicStaff.instrumentName = \markup {               %! REAPPLIED_INSTRUMENT:SM8
@@ -1727,7 +1727,7 @@ COboeMusicVoice = {
 }
 
 
-CClarinetMusicVoice = {
+C_ClarinetMusicVoice = {
     
     % [C ClarinetMusicVoice measure 133]                         %! SM4
     \set ClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
@@ -1951,7 +1951,7 @@ CClarinetMusicVoice = {
 }
 
 
-CPianoMusicVoice = {
+C_PianoMusicVoice = {
     \times 2/3 {
         
         % [C PianoMusicVoice measure 133]                        %! SM4
@@ -2349,7 +2349,7 @@ CPianoMusicVoice = {
 }
 
 
-CPercussionMusicVoice = {
+C_PercussionMusicVoice = {
     
     % [C PercussionMusicVoice measure 133]                       %! SM4
     \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -2664,7 +2664,7 @@ CPercussionMusicVoice = {
 }
 
 
-CViolinMusicVoice = {
+C_ViolinMusicVoice = {
     
     % [C ViolinMusicVoice measure 133]                           %! SM4
     \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -2918,7 +2918,7 @@ CViolinMusicVoice = {
 }
 
 
-CViolaMusicVoice = {
+C_ViolaMusicVoice = {
     
     % [C ViolaMusicVoice measure 133]                            %! SM4
     \set ViolaMusicStaff.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
@@ -3150,7 +3150,7 @@ CViolaMusicVoice = {
 }
 
 
-CCelloMusicVoice = {
+C_CelloMusicVoice = {
     
     % [C CelloMusicVoice measure 133]                            %! SM4
     \set CelloMusicStaff.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8

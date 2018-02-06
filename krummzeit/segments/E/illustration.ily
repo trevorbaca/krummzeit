@@ -1,4 +1,4 @@
-EGlobalSkips = {
+E_GlobalSkips = {
     
     % [E GlobalSkips measure 200]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! REDUNDANT_METRONOME_MARK:SM27
@@ -1923,7 +1923,7 @@ EGlobalSkips = {
 }
 
 
-EOboeMusicVoice = {
+E_OboeMusicVoice = {
     \times 4/5 {
         
         % [E OboeMusicVoice measure 200]                         %! SM4
@@ -3684,7 +3684,7 @@ EOboeMusicVoice = {
 }
 
 
-EClarinetMusicVoice = {
+E_ClarinetMusicVoice = {
     
     % [E ClarinetMusicVoice measure 200]                         %! SM4
     \override Stem.direction = #up                               %! OC
@@ -4378,7 +4378,7 @@ EClarinetMusicVoice = {
 }
 
 
-EPianoMusicVoice = {
+E_PianoMusicVoice = {
     
     % [E PianoMusicVoice measure 200]                            %! SM4
     \set PianoMusicStaff.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
@@ -5352,7 +5352,7 @@ EPianoMusicVoice = {
 }
 
 
-EPercussionMusicVoice = {
+E_PercussionMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
@@ -6390,7 +6390,7 @@ EPercussionMusicVoice = {
 }
 
 
-EViolinMusicVoice = {
+E_ViolinMusicVoice = {
     
     % [E ViolinMusicVoice measure 200]                           %! SM4
     \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -6790,7 +6790,7 @@ EViolinMusicVoice = {
 }
 
 
-EViolaMusicVoice = {
+E_ViolaMusicVoice = {
     
     % [E ViolaMusicVoice measure 200]                            %! SM4
     \override DynamicLineSpanner.staff-padding = #'8.5           %! OC
@@ -7183,7 +7183,7 @@ EViolaMusicVoice = {
 }
 
 
-ECelloMusicVoice = {
+E_CelloMusicVoice = {
     
     % [E CelloMusicVoice measure 200]                            %! SM4
     \set CelloMusicStaff.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8

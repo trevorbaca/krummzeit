@@ -1,4 +1,4 @@
-AGlobalSkips = {
+A_GlobalSkips = {
     
     % [A GlobalSkips measure 14]                                         %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! REDUNDANT_METRONOME_MARK:SM27
@@ -3652,7 +3652,7 @@ AGlobalSkips = {
 }
 
 
-AOboeMusicVoice = {
+A_OboeMusicVoice = {
     
     % [A OboeMusicVoice measure 14]                              %! SM4
     \override Beam.positions = #'(-5 . -5)                       %! OC
@@ -4532,7 +4532,7 @@ AOboeMusicVoice = {
 }
 
 
-AClarinetMusicVoice = {
+A_ClarinetMusicVoice = {
     
     % [A ClarinetMusicVoice measure 14]                          %! SM4
     \override Beam.positions = #'(-4 . -4)                       %! OC
@@ -5936,7 +5936,7 @@ AClarinetMusicVoice = {
 }
 
 
-APianoMusicVoice = {
+A_PianoMusicVoice = {
     \times 4/7 {
         
         % [A PianoMusicVoice measure 14]                         %! SM4
@@ -8308,7 +8308,7 @@ APianoMusicVoice = {
 }
 
 
-APercussionMusicVoice = {
+A_PercussionMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
@@ -8880,7 +8880,7 @@ APercussionMusicVoice = {
 }
 
 
-AViolinMusicVoice = {
+A_ViolinMusicVoice = {
     
     % [A ViolinMusicVoice measure 14]                            %! SM4
     \override DynamicLineSpanner.staff-padding = #'3             %! OC
@@ -10890,7 +10890,7 @@ AViolinMusicVoice = {
 }
 
 
-AViolaMusicVoice = {
+A_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
         
@@ -12011,7 +12011,7 @@ AViolaMusicVoice = {
 }
 
 
-ACelloMusicVoice = {
+A_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
         

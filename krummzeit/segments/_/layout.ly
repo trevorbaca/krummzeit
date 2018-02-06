@@ -1,3 +1,6 @@
+% measure_count = 13
+
+
 \context Score = "Score"
 <<
     \context GlobalContext = "GlobalContext"

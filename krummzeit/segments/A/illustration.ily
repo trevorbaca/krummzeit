@@ -3677,23 +3677,7 @@ A_OboeMusicVoice = {
     ^ \markup {                                                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
         \with-color                                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
             #(x11-color 'green4)                                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-            {                                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                \vcenter                                         %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    (“Oboe”                                      %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                \vcenter                                         %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    \hcenter-in                                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        #16                                      %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        Oboe                                     %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                \concat                                          %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    {                                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                            \hcenter-in                          %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                #10                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                Ob.                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                            )                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    }                                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
-            }                                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
+            (“Oboe”)                                             %! REAPPLIED_INSTRUMENT_ALERT:SM11
         }                                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
     \set OboeMusicStaff.instrumentName = \markup {               %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -3793,23 +3777,7 @@ A_OboeMusicVoice = {
         ^ \markup {                                              %! REDUNDANT_INSTRUMENT_ALERT:SM11
             \with-color                                          %! REDUNDANT_INSTRUMENT_ALERT:SM11
                 #(x11-color 'DeepPink1)                          %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                {                                                %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                    \vcenter                                     %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                        (“Oboe”                                  %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                    \vcenter                                     %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                        \hcenter-in                              %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                            #16                                  %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                            Oboe                                 %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                    \concat                                      %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                        {                                        %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                            \vcenter                             %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                \hcenter-in                      %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                    #10                          %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                    Ob.                          %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                            \vcenter                             %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                )                                %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                        }                                        %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                }                                                %! REDUNDANT_INSTRUMENT_ALERT:SM11
+                (“Oboe”)                                         %! REDUNDANT_INSTRUMENT_ALERT:SM11
             }                                                    %! REDUNDANT_INSTRUMENT_ALERT:SM11
         \set OboeMusicStaff.instrumentName = \markup {           %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
             \hcenter-in                                          %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
@@ -4566,31 +4534,7 @@ A_ClarinetMusicVoice = {
     ^ \markup {                                                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
         \with-color                                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
             #(x11-color 'green4)                                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-            {                                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                \vcenter                                         %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    (“BassClarinet”                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                \vcenter                                         %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    \hcenter-in                                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        #16                                      %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        \center-column                           %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                            {                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                Bass                             %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                clarinet                         %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                            }                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                \concat                                          %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    {                                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                            \hcenter-in                          %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                #10                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                \center-column                   %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                    {                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        Bass                     %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        cl.                      %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                    }                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                            )                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    }                                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
-            }                                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
+            (“BassClarinet”)                                     %! REAPPLIED_INSTRUMENT_ALERT:SM11
         }                                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
     \set ClarinetMusicStaff.instrumentName = \markup {           %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -4652,31 +4596,7 @@ A_ClarinetMusicVoice = {
         ^ \markup {                                              %! EXPLICIT_INSTRUMENT_ALERT:SM11
             \with-color                                          %! EXPLICIT_INSTRUMENT_ALERT:SM11
                 #(x11-color 'blue)                               %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                {                                                %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                    \vcenter                                     %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                        (“ClarinetInEFlat”                       %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                    \vcenter                                     %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                        \hcenter-in                              %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                            #16                                  %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                            \center-column                       %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                                {                                %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                                    Clarinet                     %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                                    (Eb)                         %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                                }                                %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                    \concat                                      %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                        {                                        %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                            \vcenter                             %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                                \hcenter-in                      %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                                    #10                          %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                                    \center-column               %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                                        {                        %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                                            Cl.                  %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                                            (Eb)                 %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                                        }                        %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                            \vcenter                             %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                                )                                %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                        }                                        %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                }                                                %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                (“ClarinetInEFlat”)                              %! EXPLICIT_INSTRUMENT_ALERT:SM11
             }                                                    %! EXPLICIT_INSTRUMENT_ALERT:SM11
         \set ClarinetMusicStaff.instrumentName = \markup {       %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
             \hcenter-in                                          %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
@@ -5833,31 +5753,7 @@ A_ClarinetMusicVoice = {
     ^ \markup {                                                  %! REDUNDANT_INSTRUMENT_ALERT:SM11
         \with-color                                              %! REDUNDANT_INSTRUMENT_ALERT:SM11
             #(x11-color 'DeepPink1)                              %! REDUNDANT_INSTRUMENT_ALERT:SM11
-            {                                                    %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                \vcenter                                         %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                    (“ClarinetInEFlat”                           %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                \vcenter                                         %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                    \hcenter-in                                  %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                        #16                                      %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                        \center-column                           %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                            {                                    %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                Clarinet                         %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                (Eb)                             %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                            }                                    %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                \concat                                          %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                    {                                            %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                        \vcenter                                 %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                            \hcenter-in                          %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                #10                              %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                \center-column                   %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                    {                            %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                        Cl.                      %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                        (Eb)                     %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                    }                            %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                        \vcenter                                 %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                            )                                    %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                    }                                            %! REDUNDANT_INSTRUMENT_ALERT:SM11
-            }                                                    %! REDUNDANT_INSTRUMENT_ALERT:SM11
+            (“ClarinetInEFlat”)                                  %! REDUNDANT_INSTRUMENT_ALERT:SM11
         }                                                        %! REDUNDANT_INSTRUMENT_ALERT:SM11
     \set ClarinetMusicStaff.instrumentName = \markup {           %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
         \hcenter-in                                              %! REDRAWN_REDUNDANT_INSTRUMENT:SM8
@@ -5965,23 +5861,7 @@ A_PianoMusicVoice = {
         ^ \markup {                                              %! EXPLICIT_INSTRUMENT_ALERT:SM11
             \with-color                                          %! EXPLICIT_INSTRUMENT_ALERT:SM11
                 #(x11-color 'blue)                               %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                {                                                %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                    \vcenter                                     %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                        (“Harpsichord”                           %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                    \vcenter                                     %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                        \hcenter-in                              %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                            #16                                  %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                            Harpsichord                          %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                    \concat                                      %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                        {                                        %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                            \vcenter                             %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                                \hcenter-in                      %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                                    #10                          %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                                    Hpschd.                      %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                            \vcenter                             %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                                )                                %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                        }                                        %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                }                                                %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                (“Harpsichord”)                                  %! EXPLICIT_INSTRUMENT_ALERT:SM11
             }                                                    %! EXPLICIT_INSTRUMENT_ALERT:SM11
         \set PianoMusicStaff.instrumentName = \markup {          %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
             \hcenter-in                                          %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
@@ -7384,23 +7264,7 @@ A_PianoMusicVoice = {
     ^ \markup {                                                  %! EXPLICIT_INSTRUMENT_ALERT:SM11
         \with-color                                              %! EXPLICIT_INSTRUMENT_ALERT:SM11
             #(x11-color 'blue)                                   %! EXPLICIT_INSTRUMENT_ALERT:SM11
-            {                                                    %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                \vcenter                                         %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                    (“Piano”                                     %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                \vcenter                                         %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                    \hcenter-in                                  %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                        #16                                      %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                        Piano                                    %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                \concat                                          %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                    {                                            %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                        \vcenter                                 %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                            \hcenter-in                          %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                                #10                              %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                                Pf.                              %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                        \vcenter                                 %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                            )                                    %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                    }                                            %! EXPLICIT_INSTRUMENT_ALERT:SM11
-            }                                                    %! EXPLICIT_INSTRUMENT_ALERT:SM11
+            (“Piano”)                                            %! EXPLICIT_INSTRUMENT_ALERT:SM11
         }                                                        %! EXPLICIT_INSTRUMENT_ALERT:SM11
     \set PianoMusicStaff.instrumentName = \markup {              %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
         \hcenter-in                                              %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
@@ -8343,23 +8207,7 @@ A_PercussionMusicVoice = {
                         {                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
                             \with-color                          %! REAPPLIED_INSTRUMENT_ALERT:SM11
                                 #(x11-color 'green4)             %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                {                                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                    \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        (“Percussion”            %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                    \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        \hcenter-in              %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                            #16                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                            Percussion           %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                    \concat                      %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        {                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                            \vcenter             %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                \hcenter-in      %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                    #10          %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                    Perc.        %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                            \vcenter             %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                )                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        }                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                }                                %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                (“Percussion”)                   %! REAPPLIED_INSTRUMENT_ALERT:SM11
                         }                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
                     \line                                        %! IC
                         {                                        %! IC
@@ -8907,23 +8755,7 @@ A_ViolinMusicVoice = {
     ^ \markup {                                                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
         \with-color                                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
             #(x11-color 'green4)                                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-            {                                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                \vcenter                                         %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    (“Violin”                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                \vcenter                                         %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    \hcenter-in                                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        #16                                      %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        Violin                                   %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                \concat                                          %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    {                                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                            \hcenter-in                          %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                #10                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                Vn.                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                            )                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    }                                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
-            }                                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
+            (“Violin”)                                           %! REAPPLIED_INSTRUMENT_ALERT:SM11
         }                                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
     \set ViolinMusicStaff.instrumentName = \markup {             %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -9163,23 +8995,7 @@ A_ViolinMusicVoice = {
                         {                                        %! REDUNDANT_INSTRUMENT_ALERT:SM11
                             \with-color                          %! REDUNDANT_INSTRUMENT_ALERT:SM11
                                 #(x11-color 'DeepPink1)          %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                {                                %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                    \vcenter                     %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                        (“Violin”                %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                    \vcenter                     %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                        \hcenter-in              %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                            #16                  %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                            Violin               %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                    \concat                      %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                        {                        %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                            \vcenter             %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                                \hcenter-in      %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                                    #10          %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                                    Vn.          %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                            \vcenter             %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                                )                %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                        }                        %! REDUNDANT_INSTRUMENT_ALERT:SM11
-                                }                                %! REDUNDANT_INSTRUMENT_ALERT:SM11
+                                (“Violin”)                       %! REDUNDANT_INSTRUMENT_ALERT:SM11
                         }                                        %! REDUNDANT_INSTRUMENT_ALERT:SM11
                     \line                                        %! SM14
                         {                                        %! SM14
@@ -10923,23 +10739,7 @@ A_ViolaMusicVoice = {
                         {                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
                             \with-color                          %! REAPPLIED_INSTRUMENT_ALERT:SM11
                                 #(x11-color 'green4)             %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                {                                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                    \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        (“Viola”                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                    \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        \hcenter-in              %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                            #16                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                            Viola                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                    \concat                      %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        {                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                            \vcenter             %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                \hcenter-in      %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                    #10          %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                    Va.          %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                            \vcenter             %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                )                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        }                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                }                                %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                (“Viola”)                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
                         }                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
                     \line                                        %! IC
                         {                                        %! IC
@@ -12044,23 +11844,7 @@ A_CelloMusicVoice = {
                         {                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
                             \with-color                          %! REAPPLIED_INSTRUMENT_ALERT:SM11
                                 #(x11-color 'green4)             %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                {                                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                    \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        (“Cello”                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                    \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        \hcenter-in              %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                            #16                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                            Cello                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                    \concat                      %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        {                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                            \vcenter             %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                \hcenter-in      %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                    #10          %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                    Vc.          %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                            \vcenter             %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                )                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        }                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                }                                %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                (“Cello”)                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
                         }                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
                     \line                                        %! IC
                         {                                        %! IC

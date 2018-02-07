@@ -54,10 +54,10 @@ J_GlobalSkips = {
     \once \override TextSpanner.bound-details.right.padding = 0          %! METRONOME_MARK_SPANNER:SM29
     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! METRONOME_MARK_SPANNER:SM29
     \once \override TextSpanner.dash-period = 0                          %! METRONOME_MARK_SPANNER:SM29
-    \time 5/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
+    \time 5/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
     \mark #10                                                            %! SM9
     \bar ""                                                              %! +SEGMENT:EMPTY_START_BAR:SM2
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     \startTextSpan                                                       %! METRONOME_MARK_SPANNER:SM29
     ^ \markup {
@@ -99,7 +99,7 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 315]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -132,8 +132,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 316]                                        %! SM4
-    \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 4/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1
     ^ \markup {
         \column
@@ -166,8 +166,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 317]                                        %! SM4
-    \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 2/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/2
     ^ \markup {
         \column
@@ -200,8 +200,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 318]                                        %! SM4
-    \time 5/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 5/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -242,7 +242,7 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 319]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -275,8 +275,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 320]                                        %! SM4
-    \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 4/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1
     ^ \markup {
         \column
@@ -309,8 +309,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 321]                                        %! SM4
-    \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 2/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/2
     ^ \markup {
         \column
@@ -343,8 +343,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 322]                                        %! SM4
-    \time 5/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 5/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -385,7 +385,7 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 323]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -418,8 +418,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 324]                                        %! SM4
-    \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 4/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1
     ^ \markup {
         \column
@@ -452,8 +452,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 325]                                        %! SM4
-    \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 2/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/2
     ^ \markup {
         \column
@@ -486,8 +486,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 326]                                        %! SM4
-    \time 5/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 5/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -528,7 +528,7 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 327]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -561,8 +561,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 328]                                        %! SM4
-    \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 4/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1
     ^ \markup {
         \column
@@ -595,8 +595,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 329]                                        %! SM4
-    \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 2/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/2
     ^ \markup {
         \column
@@ -629,8 +629,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 330]                                        %! SM4
-    \time 5/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 5/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -671,7 +671,7 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 331]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -704,8 +704,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 332]                                        %! SM4
-    \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 4/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1
     ^ \markup {
         \column
@@ -738,8 +738,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 333]                                        %! SM4
-    \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 2/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/2
     ^ \markup {
         \column
@@ -772,8 +772,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 334]                                        %! SM4
-    \time 5/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 5/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -814,7 +814,7 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 335]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -847,8 +847,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 336]                                        %! SM4
-    \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 4/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1
     ^ \markup {
         \column
@@ -881,8 +881,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 337]                                        %! SM4
-    \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 2/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/2
     ^ \markup {
         \column
@@ -915,8 +915,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 338]                                        %! SM4
-    \time 5/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 5/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -957,7 +957,7 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 339]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -990,8 +990,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 340]                                        %! SM4
-    \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 4/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1
     ^ \markup {
         \column
@@ -1024,8 +1024,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 341]                                        %! SM4
-    \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 2/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/2
     ^ \markup {
         \column
@@ -1058,8 +1058,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 342]                                        %! SM4
-    \time 5/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 5/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -1100,7 +1100,7 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 343]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -1133,8 +1133,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 344]                                        %! SM4
-    \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 4/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1
     ^ \markup {
         \column
@@ -1167,8 +1167,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 345]                                        %! SM4
-    \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 2/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/2
     ^ \markup {
         \column
@@ -1201,8 +1201,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 346]                                        %! SM4
-    \time 5/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 5/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -1243,7 +1243,7 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 347]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -1276,8 +1276,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 348]                                        %! SM4
-    \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 4/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1
     ^ \markup {
         \column
@@ -1310,8 +1310,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 349]                                        %! SM4
-    \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 2/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/2
     ^ \markup {
         \column
@@ -1344,8 +1344,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 350]                                        %! SM4
-    \time 5/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 5/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -1386,7 +1386,7 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 351]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -1419,8 +1419,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 352]                                        %! SM4
-    \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 4/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1
     ^ \markup {
         \column
@@ -1453,8 +1453,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 353]                                        %! SM4
-    \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 2/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/2
     ^ \markup {
         \column
@@ -1487,8 +1487,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 354]                                        %! SM4
-    \time 5/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 5/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -1529,7 +1529,7 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 355]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -1562,8 +1562,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 356]                                        %! SM4
-    \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 4/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1
     ^ \markup {
         \column
@@ -1596,8 +1596,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 357]                                        %! SM4
-    \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 2/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/2
     ^ \markup {
         \column
@@ -1630,8 +1630,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 358]                                        %! SM4
-    \time 5/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 5/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -1672,7 +1672,7 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 359]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/4
     ^ \markup {
         \column
@@ -1705,8 +1705,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 360]                                        %! SM4
-    \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 4/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1
     ^ \markup {
         \column
@@ -1739,8 +1739,8 @@ J_GlobalSkips = {
         }
     
     % [J GlobalSkips measure 361]                                        %! SM4
-    \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 2/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/2
     \stopTextSpan                                                        %! METRONOME_MARK_SPANNER:SM29
     ^ \markup {
@@ -1805,9 +1805,9 @@ J_OboeMusicVoice = {
     \once \override OboeMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
 %@% \override OboeMusicStaff.Clef.color = ##f                    %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
     \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
-    \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     as\breve..
-    \fff                                                         %! EXPLICIT_DYNAMIC:SM8
+    \fff                                                         %! IC:EXPLICIT_DYNAMIC:SM8
     ^ \markup {                                                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
         \with-color                                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
             #(x11-color 'green4)                                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
@@ -1952,9 +1952,9 @@ J_ClarinetMusicVoice = {
     \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
 %@% \override ClarinetMusicStaff.Clef.color = ##f                %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
     \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
-    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     e\longa
-    \f                                                           %! EXPLICIT_DYNAMIC:SM8
+    \f                                                           %! IC:EXPLICIT_DYNAMIC:SM8
     ^ \markup {
         \column
             {
@@ -2118,52 +2118,52 @@ J_PianoMusicVoice = {
     \once \override Dots.color = #red
     \once \override NoteHead.color = #red
     \once \override Stem.color = #red
-    \set PianoMusicStaff.instrumentName = \markup {              %! EXPLICIT_INSTRUMENT:SM8
-        \hcenter-in                                              %! EXPLICIT_INSTRUMENT:SM8
-            #16                                                  %! EXPLICIT_INSTRUMENT:SM8
-            Harpsichord                                          %! EXPLICIT_INSTRUMENT:SM8
-        }                                                        %! EXPLICIT_INSTRUMENT:SM8
-    \set PianoMusicStaff.shortInstrumentName = \markup {         %! EXPLICIT_INSTRUMENT:SM8
-        \hcenter-in                                              %! EXPLICIT_INSTRUMENT:SM8
-            #10                                                  %! EXPLICIT_INSTRUMENT:SM8
-            Hpschd.                                              %! EXPLICIT_INSTRUMENT:SM8
-        }                                                        %! EXPLICIT_INSTRUMENT:SM8
+    \set PianoMusicStaff.instrumentName = \markup {              %! IC:EXPLICIT_INSTRUMENT:SM8
+        \hcenter-in                                              %! IC:EXPLICIT_INSTRUMENT:SM8
+            #16                                                  %! IC:EXPLICIT_INSTRUMENT:SM8
+            Harpsichord                                          %! IC:EXPLICIT_INSTRUMENT:SM8
+        }                                                        %! IC:EXPLICIT_INSTRUMENT:SM8
+    \set PianoMusicStaff.shortInstrumentName = \markup {         %! IC:EXPLICIT_INSTRUMENT:SM8
+        \hcenter-in                                              %! IC:EXPLICIT_INSTRUMENT:SM8
+            #10                                                  %! IC:EXPLICIT_INSTRUMENT:SM8
+            Hpschd.                                              %! IC:EXPLICIT_INSTRUMENT:SM8
+        }                                                        %! IC:EXPLICIT_INSTRUMENT:SM8
     \set PianoMusicStaff.forceClef = ##t                         %! REAPPLIED_CLEF:SM8
     \clef "bass"                                                 %! REAPPLIED_CLEF:SM8
     \once \override PianoMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
 %@% \override PianoMusicStaff.Clef.color = ##f                   %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
     \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
-    \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
+    \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! IC:EXPLICIT_INSTRUMENT_COLOR:SM6
     cs'''\longa
     :32                                                          %! IC
     \fff                                                         %! REAPPLIED_DYNAMIC:SM8
     ^ \markup {
         \column
             {
-                \line                                            %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                    {                                            %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                        \with-color                              %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                            #(x11-color 'blue)                   %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                            (“Harpsichord”)                      %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                    }                                            %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                \line                                            %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
+                    {                                            %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
+                        \with-color                              %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
+                            #(x11-color 'blue)                   %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
+                            (“Harpsichord”)                      %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
+                    }                                            %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
                 \line                                            %! SM14
                     {                                            %! SM14
                         @                                        %! SM14
                     }                                            %! SM14
             }
         }
-    \set PianoMusicStaff.instrumentName = \markup {              %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-        \hcenter-in                                              %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-            #16                                                  %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-            Harpsichord                                          %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-        }                                                        %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-    \set PianoMusicStaff.shortInstrumentName = \markup {         %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-        \hcenter-in                                              %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-            #10                                                  %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-            Hpschd.                                              %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-        }                                                        %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
+    \set PianoMusicStaff.instrumentName = \markup {              %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
+        \hcenter-in                                              %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
+            #16                                                  %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
+            Harpsichord                                          %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
+        }                                                        %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
+    \set PianoMusicStaff.shortInstrumentName = \markup {         %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
+        \hcenter-in                                              %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
+            #10                                                  %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
+            Hpschd.                                              %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
+        }                                                        %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
     \override PianoMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
-    \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! REDRAWN_EXPLICIT_INSTRUMENT_COLOR:SM6
+    \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! IC:REDRAWN_EXPLICIT_INSTRUMENT_COLOR:SM6
     
     % [J PianoMusicVoice measure 318]                            %! SM4
     \once \override Accidental.color = #red
@@ -2229,47 +2229,47 @@ J_PianoMusicVoice = {
     \once \override Dots.color = #red
     \once \override NoteHead.color = #red
     \once \override Stem.color = #red
-    \set PianoMusicStaff.instrumentName = \markup {              %! EXPLICIT_INSTRUMENT:SM8
-        \hcenter-in                                              %! EXPLICIT_INSTRUMENT:SM8
-            #16                                                  %! EXPLICIT_INSTRUMENT:SM8
-            Piano                                                %! EXPLICIT_INSTRUMENT:SM8
-        }                                                        %! EXPLICIT_INSTRUMENT:SM8
-    \set PianoMusicStaff.shortInstrumentName = \markup {         %! EXPLICIT_INSTRUMENT:SM8
-        \hcenter-in                                              %! EXPLICIT_INSTRUMENT:SM8
-            #10                                                  %! EXPLICIT_INSTRUMENT:SM8
-            Pf.                                                  %! EXPLICIT_INSTRUMENT:SM8
-        }                                                        %! EXPLICIT_INSTRUMENT:SM8
-    \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:SM6
-    \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \set PianoMusicStaff.instrumentName = \markup {              %! IC:EXPLICIT_INSTRUMENT:SM8
+        \hcenter-in                                              %! IC:EXPLICIT_INSTRUMENT:SM8
+            #16                                                  %! IC:EXPLICIT_INSTRUMENT:SM8
+            Piano                                                %! IC:EXPLICIT_INSTRUMENT:SM8
+        }                                                        %! IC:EXPLICIT_INSTRUMENT:SM8
+    \set PianoMusicStaff.shortInstrumentName = \markup {         %! IC:EXPLICIT_INSTRUMENT:SM8
+        \hcenter-in                                              %! IC:EXPLICIT_INSTRUMENT:SM8
+            #10                                                  %! IC:EXPLICIT_INSTRUMENT:SM8
+            Pf.                                                  %! IC:EXPLICIT_INSTRUMENT:SM8
+        }                                                        %! IC:EXPLICIT_INSTRUMENT:SM8
+    \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! IC:EXPLICIT_INSTRUMENT_COLOR:SM6
+    \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     cs'''\longa
     :32                                                          %! IC
-    \fff_poss                                                    %! EXPLICIT_DYNAMIC:SM8
+    \fff_poss                                                    %! IC:EXPLICIT_DYNAMIC:SM8
     ^ \markup {
         \column
             {
-                \line                                            %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                    {                                            %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                        \with-color                              %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                            #(x11-color 'blue)                   %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                            (“Piano”)                            %! EXPLICIT_INSTRUMENT_ALERT:SM11
-                    }                                            %! EXPLICIT_INSTRUMENT_ALERT:SM11
+                \line                                            %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
+                    {                                            %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
+                        \with-color                              %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
+                            #(x11-color 'blue)                   %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
+                            (“Piano”)                            %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
+                    }                                            %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
                 \line                                            %! SM14
                     {                                            %! SM14
                         @                                        %! SM14
                     }                                            %! SM14
             }
         }
-    \set PianoMusicStaff.instrumentName = \markup {              %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-        \hcenter-in                                              %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-            #16                                                  %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-            Piano                                                %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-        }                                                        %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-    \set PianoMusicStaff.shortInstrumentName = \markup {         %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-        \hcenter-in                                              %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-            #10                                                  %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-            Pf.                                                  %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-        }                                                        %! REDRAWN_EXPLICIT_INSTRUMENT:SM8
-    \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! REDRAWN_EXPLICIT_INSTRUMENT_COLOR:SM6
+    \set PianoMusicStaff.instrumentName = \markup {              %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
+        \hcenter-in                                              %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
+            #16                                                  %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
+            Piano                                                %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
+        }                                                        %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
+    \set PianoMusicStaff.shortInstrumentName = \markup {         %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
+        \hcenter-in                                              %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
+            #10                                                  %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
+            Pf.                                                  %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
+        }                                                        %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
+    \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! IC:REDRAWN_EXPLICIT_INSTRUMENT_COLOR:SM6
     
     % [J PianoMusicVoice measure 342]                            %! SM4
     \once \override Accidental.color = #red
@@ -2357,10 +2357,10 @@ J_PercussionMusicVoice = {
 %@% \override PercussionMusicStaff.Clef.color = ##f              %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
     \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
     \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! REDUNDANT_INSTRUMENT_COLOR:SM6
-    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     cs''\longa
     :32                                                          %! IC
-    \fff                                                         %! EXPLICIT_DYNAMIC:SM8
+    \fff                                                         %! IC:EXPLICIT_DYNAMIC:SM8
     ^ \markup {
         \column
             {
@@ -2540,10 +2540,10 @@ J_ViolinMusicVoice = {
     %@% \override ViolinMusicStaff.Clef.color = ##f              %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
         \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
         \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
         e'''2
         -\staccatissimo                                          %! IC
-        \ff                                                      %! EXPLICIT_DYNAMIC:SM8
+        \ff                                                      %! IC:EXPLICIT_DYNAMIC:SM8
         ^ \markup {
             \column
                 {
@@ -3020,10 +3020,10 @@ J_ViolaMusicVoice = {
         \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
         \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
     %@% \override ViolaMusicStaff.Clef.color = ##f               %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
         ef'''\breve
         -\staccatissimo                                          %! IC
-        \ff                                                      %! EXPLICIT_DYNAMIC:SM8
+        \ff                                                      %! IC:EXPLICIT_DYNAMIC:SM8
         ^ \markup {
             \column
                 {
@@ -3356,9 +3356,9 @@ J_CelloMusicVoice = {
     \once \override Dots.color = #red
     \once \override NoteHead.color = #red
     \once \override Stem.color = #red
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     d,\longa
-    \ff                                                          %! EXPLICIT_DYNAMIC:SM8
+    \ff                                                          %! IC:EXPLICIT_DYNAMIC:SM8
     ^ \markup {
         \column
             {

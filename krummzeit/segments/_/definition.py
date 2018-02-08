@@ -92,28 +92,18 @@ maker(
 
 maker(
     baca.scope('PianoMusicVoice', 3),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.IncisedRhythmMaker(
-            incise_specifier=rhythmos.InciseSpecifier(
-                prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],
-                prefix_counts=[3, 1, 1, 3],
-                suffix_talea=[0, 0, 1, -3, 0],
-                suffix_counts=[1, 1, 2, 1],
-                talea_denominator=16,
-                fill_with_notes=False,
-                ),
-            ),
-        ),
     baca.dynamic('fff'),
-    krummzeit.markup.catch_resonance(),
+    # NOTE: clusters() must precede markup() for markup to appear:
     krummzeit.clusters('tenor'),
+    krummzeit.markup.catch_resonance(),
+    krummzeit.single_cluster_piano_rhythm(),
     )
 
 maker(
     baca.scope('PianoMusicVoice', 6),
     baca.clef('treble'),
     baca.dynamic('fff'),
-    baca.make_tied_notes(repeat_ties=True),
+    baca.make_repeat_tied_notes(),
     baca.pitches('C#5'),
     baca.stem_tremolo(),
     )
@@ -121,22 +111,13 @@ maker(
 maker(
     baca.scope('PercussionMusicVoice', 6),
     baca.dynamic('fff'),
-    baca.make_tied_notes(repeat_ties=True),
+    baca.make_repeat_tied_notes(),
     baca.pitches('C#5'),
     baca.stem_tremolo(),
     )
 
 maker(
     baca.scope('PercussionMusicVoice', 9, 10),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.TaleaRhythmMaker(
-            extra_counts_per_division=[2, 1, 0],
-            talea=rhythmos.Talea([1, 2], 2),
-            tie_specifier=rhythmos.TieSpecifier(
-                repeat_ties=True,
-                ),
-            ),
-        ),
     baca.accents(),
     baca.bar_extent((-2, 2)),
     baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
@@ -148,6 +129,7 @@ maker(
     baca.staff_lines(1),
     baca.staff_positions([0]),
     krummzeit.markup.accent_changes(),
+    krummzeit.sponge_rhythm(),
     )
 
 maker(

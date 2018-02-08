@@ -5,6 +5,7 @@ from .clusters import clusters
 from .color_fingerings import color_fingerings
 from .displacement import displacement
 from .glissando_rhythm import glissando_rhythm
+from .instrument import instrument
 from .opening_triplets import opening_triplets
 from .register_narrow import register_narrow
 from .register_wide import register_wide

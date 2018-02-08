@@ -124,10 +124,10 @@ maker(
     baca.bar_extent((0, 0), after=True, selector=baca.leaf(-1)),
     baca.clef('percussion'),
     baca.effort_dynamic('ff'),
-    baca.instrument(krummzeit.instruments['Percussion']),
     baca.markup.boxed('sponges'),
     baca.staff_lines(1),
     baca.staff_positions([0]),
+    krummzeit.instrument('Percussion'),
     krummzeit.markup.accent_changes(),
     krummzeit.sponge_rhythm(),
     )

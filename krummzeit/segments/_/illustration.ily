@@ -1053,7 +1053,7 @@ i_PianoMusicVoice = {
     \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DarkViolet) %! ST1:DEFAULT_INSTRUMENT_COLOR:SM6
     \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
 %@% \override PianoMusicStaff.Clef.color = ##f                   %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
-    r1
+    R1 * 1
     ^ \markup {                                                  %! ST1:DEFAULT_INSTRUMENT_ALERT:SM11
         \with-color                                              %! ST1:DEFAULT_INSTRUMENT_ALERT:SM11
             #(x11-color 'DarkViolet)                             %! ST1:DEFAULT_INSTRUMENT_ALERT:SM11
@@ -1073,9 +1073,7 @@ i_PianoMusicVoice = {
     \override PianoMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! IC:EXPLICIT_CLEF_REDRAW_COLOR:SM6
     
     % [_ PianoMusicVoice measure 2]                              %! SM4
-    r1
-    
-    r8
+    R1 * 9/8
     
     % [_ PianoMusicVoice measure 3]                              %! SM4
     R1 * 1/4

@@ -33,7 +33,6 @@ maker = baca.TimeSignatureMaker(
 measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 maker = baca.SegmentMaker(
-    ignore_repeat_pitch_classes=True,
     instruments=krummzeit.instruments,
     measures_per_stage=measures_per_stage,
     metronome_marks=krummzeit.metronome_marks,
@@ -47,77 +46,47 @@ maker = baca.SegmentMaker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 1),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                durations=[(1, 4)],
-                remainder=abjad.Left,
-                ),
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            tuplet_ratios=[(1, 1, 1)],
-            division_masks=[abjad.index([0])],
-            ),
+    baca.scopes(
+        ('ViolinMusicVoice', 1),
+        ('ViolaMusicVoice', 1),
+        ('CelloMusicVoice', 1),
         ),
-    )
-
-maker.copy_rhythm(
-    baca.scope('ViolinMusicVoice', 1),
-    baca.scope('ViolaMusicVoice', 1),
-    )
-
-maker.copy_rhythm(
-    baca.scope('ViolinMusicVoice', 1),
-    baca.scope('CelloMusicVoice', 1),
+    krummzeit.opening_triplets(),
     )
 
 maker(
     baca.scope('ViolinMusicVoice', 3, 7),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByRoundedRatiosDivisionCallback(
-            ratios=[(2, 1), (2, 1), (1, 1, 1)],
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            tuplet_ratios=[
-                (1, 2),
-                (1, 4),
-                (4, 3),
-                ],
-            division_masks=[abjad.index([5, 6], 7)],
-            ),
-        ),
+    krummzeit.glissando_rhythm(
+        division_ratios=[(2, 1), (2, 1), (1, 1, 1)],
+        division_masks=[abjad.index([5, 6], 7)],
+        )
     )
 
-maker.copy_rhythm(
-    baca.scope('ViolinMusicVoice', 3),
+maker(
     baca.scope('ViolaMusicVoice', 3, 7),
-    division_maker__ratios=[(2, 1), (1, 1, 1), (2, 1)],
-    rhythm_maker__division_masks=[abjad.index([0, 1], 7)],
+    krummzeit.glissando_rhythm(
+        division_ratios=[(2, 1), (1, 1, 1), (2, 1)],
+        division_masks=[abjad.index([0, 1], 7)],
+        )
     )
 
-maker.copy_rhythm(
-    baca.scope('ViolinMusicVoice', 3),
+maker(
     baca.scope('CelloMusicVoice', 3, 7),
-    division_maker__ratios=[(1, 1, 1), (2, 1), (2, 1)],
-    rhythm_maker__division_masks=[abjad.index([2, 3], 7)],
+    krummzeit.glissando_rhythm(
+        division_ratios=[(1, 1, 1), (2, 1), (2, 1)],
+        division_masks=[abjad.index([2, 3], 7)],
+        )
     )
 
 maker(
     baca.scope('ClarinetMusicVoice', 3, 4),
     baca.dynamic('ppp'),
-    baca.make_tied_notes(repeat_ties=True),
-    baca.pitches('B1'),
+    baca.make_repeat_tied_notes(),
+    baca.pitch('B1'),
     )
 
 maker(
     baca.scope('PianoMusicVoice', 1),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            division_masks=[abjad.index([0], 1)],
-            ),
-        ),
     baca.clef('bass'),
     )
 
@@ -183,17 +152,17 @@ maker(
 
 maker(
     baca.scope('ViolinMusicVoice', 1),
-    baca.pitches('Eb5', repeats=True),
+    baca.pitch('Eb5'),
     )
 
 maker(
     baca.scope('ViolaMusicVoice', 1),
-    baca.pitches('A3', repeats=True),
+    baca.pitch('A3'),
     )
 
 maker(
     baca.scope('CelloMusicVoice', 1),
-    baca.pitches('E~2', repeats=True),
+    baca.pitch('E~2'),
     )
 
 maker(
@@ -227,7 +196,7 @@ maker(
     baca.hairpin('pp < ff'),
     baca.markup.molto_flautando(),
     baca.natural_harmonics(),
-    baca.tie_repeat_pitches(repeat=True),
+    baca.repeat_tie_repeat_pitches(),
     )
 
 maker(

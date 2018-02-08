@@ -8,3 +8,5 @@ from .glissando_rhythm import glissando_rhythm
 from .opening_triplets import opening_triplets
 from .register_narrow import register_narrow
 from .register_wide import register_wide
+from .single_cluster_piano_rhythm import single_cluster_piano_rhythm
+from .sponge_rhythm import sponge_rhythm

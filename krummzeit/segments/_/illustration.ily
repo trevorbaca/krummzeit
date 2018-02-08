@@ -1089,6 +1089,11 @@ i_PianoMusicVoice = {
     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     }
     <a, c e g>16
+    ^ \markup {                                                  %! IC
+        \whiteout                                                %! IC
+            \upright                                             %! IC
+                "catch resonance (but not attack) with pedal"    %! IC
+        }                                                        %! IC
     ^ \markup {
         \center-align
             \concat
@@ -1298,19 +1303,16 @@ i_PercussionMusicVoice = {
         c'2
         -\accent                                                 %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [_ PercussionMusicVoice measure 12]                    %! SM4
-        c'2
-        \repeatTie
-        
-        c'2
-        -\accent                                                 %! IC
-        
-        c'4
-        -\accent                                                 %! IC
-    }
+    
+    % [_ PercussionMusicVoice measure 12]                        %! SM4
+    c'2
+    \repeatTie
+    
+    c'2
+    -\accent                                                     %! IC
+    
+    c'4
+    -\accent                                                     %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         

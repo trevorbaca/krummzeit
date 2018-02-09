@@ -32,52 +32,31 @@
                 <<
                     \tag Oboe                                                            %! ST4
                     \context OboeMusicStaff = "OboeMusicStaff"
-                    {
-                        \context OboeMusicVoice = "OboeMusicVoice"
-                        \G_OboeMusicVoice
-                    }
+                    \G_OboeMusicStaff
                     \tag Clarinet                                                        %! ST4
                     \context ClarinetMusicStaff = "ClarinetMusicStaff"
-                    {
-                        \context ClarinetMusicVoice = "ClarinetMusicVoice"
-                        \G_ClarinetMusicVoice
-                    }
+                    \G_ClarinetMusicStaff
                 >>
                 \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup"
                 <<
                     \tag Piano                                                           %! ST4
                     \context PianoMusicStaff = "PianoMusicStaff"
-                    {
-                        \context PianoMusicVoice = "PianoMusicVoice"
-                        \G_PianoMusicVoice
-                    }
+                    \G_PianoMusicStaff
                     \tag Percussion                                                      %! ST4
                     \context PercussionMusicStaff = "PercussionMusicStaff"
-                    {
-                        \context PercussionMusicVoice = "PercussionMusicVoice"
-                        \G_PercussionMusicVoice
-                    }
+                    \G_PercussionMusicStaff
                 >>
                 \context StringSectionStaffGroup = "StringSectionStaffGroup"
                 <<
                     \tag Violin                                                          %! ST4
                     \context ViolinMusicStaff = "ViolinMusicStaff"
-                    {
-                        \context ViolinMusicVoice = "ViolinMusicVoice"
-                        \G_ViolinMusicVoice
-                    }
+                    \G_ViolinMusicStaff
                     \tag Viola                                                           %! ST4
                     \context ViolaMusicStaff = "ViolaMusicStaff"
-                    {
-                        \context ViolaMusicVoice = "ViolaMusicVoice"
-                        \G_ViolaMusicVoice
-                    }
+                    \G_ViolaMusicStaff
                     \tag Cello                                                           %! ST4
                     \context CelloMusicStaff = "CelloMusicStaff"
-                    {
-                        \context CelloMusicVoice = "CelloMusicVoice"
-                        \G_CelloMusicVoice
-                    }
+                    \G_CelloMusicStaff
                 >>
             >>
         >>

@@ -1676,6 +1676,12 @@ G_OboeMusicVoice = {
 }
 
 
+G_OboeMusicStaff = {
+    \context OboeMusicVoice = "OboeMusicVoice"
+    \G_OboeMusicVoice
+}
+
+
 G_ClarinetMusicVoice = {
     
     % [G ClarinetMusicVoice measure 257]                         %! SM4
@@ -2136,6 +2142,12 @@ G_ClarinetMusicVoice = {
     % [G ClarinetMusicVoice measure 280]                         %! SM4
     R1 * 1/4
     
+}
+
+
+G_ClarinetMusicStaff = {
+    \context ClarinetMusicVoice = "ClarinetMusicVoice"
+    \G_ClarinetMusicVoice
 }
 
 
@@ -2772,6 +2784,12 @@ G_PianoMusicVoice = {
 }
 
 
+G_PianoMusicStaff = {
+    \context PianoMusicVoice = "PianoMusicVoice"
+    \G_PianoMusicVoice
+}
+
+
 G_PercussionMusicVoice = {
     
     % [G PercussionMusicVoice measure 257]                       %! SM4
@@ -2917,6 +2935,12 @@ G_PercussionMusicVoice = {
     % [G PercussionMusicVoice measure 280]                       %! SM4
     R1 * 1/4
     
+}
+
+
+G_PercussionMusicStaff = {
+    \context PercussionMusicVoice = "PercussionMusicVoice"
+    \G_PercussionMusicVoice
 }
 
 
@@ -3536,6 +3560,12 @@ G_ViolinMusicVoice = {
 }
 
 
+G_ViolinMusicStaff = {
+    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \G_ViolinMusicVoice
+}
+
+
 G_ViolaMusicVoice = {
     
     % [G ViolaMusicVoice measure 257]                            %! SM4
@@ -3816,6 +3846,12 @@ G_ViolaMusicVoice = {
     % [G ViolaMusicVoice measure 280]                            %! SM4
     R1 * 1/4
     
+}
+
+
+G_ViolaMusicStaff = {
+    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \G_ViolaMusicVoice
 }
 
 
@@ -4141,4 +4177,10 @@ G_CelloMusicVoice = {
     % [G CelloMusicVoice measure 280]                            %! SM4
     R1 * 1/4
     
+}
+
+
+G_CelloMusicStaff = {
+    \context CelloMusicVoice = "CelloMusicVoice"
+    \G_CelloMusicVoice
 }

@@ -1356,6 +1356,12 @@ F_OboeMusicVoice = {
 }
 
 
+F_OboeMusicStaff = {
+    \context OboeMusicVoice = "OboeMusicVoice"
+    \F_OboeMusicVoice
+}
+
+
 F_ClarinetMusicVoice = {
     
     % [F ClarinetMusicVoice measure 235]                         %! SM4
@@ -1721,6 +1727,12 @@ F_ClarinetMusicVoice = {
 }
 
 
+F_ClarinetMusicStaff = {
+    \context ClarinetMusicVoice = "ClarinetMusicVoice"
+    \F_ClarinetMusicVoice
+}
+
+
 F_PianoMusicVoice = {
     
     % [F PianoMusicVoice measure 235]                            %! SM4
@@ -2055,6 +2067,12 @@ F_PianoMusicVoice = {
 }
 
 
+F_PianoMusicStaff = {
+    \context PianoMusicVoice = "PianoMusicVoice"
+    \F_PianoMusicVoice
+}
+
+
 F_PercussionMusicVoice = {
     
     % [F PercussionMusicVoice measure 235]                       %! SM4
@@ -2279,6 +2297,12 @@ F_PercussionMusicVoice = {
     \p                                                           %! IC:REDUNDANT_DYNAMIC:SM8
     \revert DynamicLineSpanner.staff-padding                     %! OC
     
+}
+
+
+F_PercussionMusicStaff = {
+    \context PercussionMusicVoice = "PercussionMusicVoice"
+    \F_PercussionMusicVoice
 }
 
 
@@ -2525,6 +2549,12 @@ F_ViolinMusicVoice = {
     % [F ViolinMusicVoice measure 256]                           %! SM4
     R1 * 7/8
     
+}
+
+
+F_ViolinMusicStaff = {
+    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \F_ViolinMusicVoice
 }
 
 
@@ -2796,6 +2826,12 @@ F_ViolaMusicVoice = {
 }
 
 
+F_ViolaMusicStaff = {
+    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \F_ViolaMusicVoice
+}
+
+
 F_CelloMusicVoice = {
     
     % [F CelloMusicVoice measure 235]                            %! SM4
@@ -3019,4 +3055,10 @@ F_CelloMusicVoice = {
     % [F CelloMusicVoice measure 256]                            %! SM4
     R1 * 7/8
     
+}
+
+
+F_CelloMusicStaff = {
+    \context CelloMusicVoice = "CelloMusicVoice"
+    \F_CelloMusicVoice
 }

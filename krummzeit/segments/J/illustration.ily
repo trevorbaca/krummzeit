@@ -1919,6 +1919,12 @@ J_OboeMusicVoice = {
 }
 
 
+J_OboeMusicStaff = {
+    \context OboeMusicVoice = "OboeMusicVoice"
+    \J_OboeMusicVoice
+}
+
+
 J_ClarinetMusicVoice = {
     
     % [J ClarinetMusicVoice measure 314]                         %! SM4
@@ -2107,6 +2113,12 @@ J_ClarinetMusicVoice = {
     R1 * 1/2
     \revert DynamicLineSpanner.staff-padding                     %! OC
     
+}
+
+
+J_ClarinetMusicStaff = {
+    \context ClarinetMusicVoice = "ClarinetMusicVoice"
+    \J_ClarinetMusicVoice
 }
 
 
@@ -2329,6 +2341,12 @@ J_PianoMusicVoice = {
 }
 
 
+J_PianoMusicStaff = {
+    \context PianoMusicVoice = "PianoMusicVoice"
+    \J_PianoMusicVoice
+}
+
+
 J_PercussionMusicVoice = {
     
     % [J PercussionMusicVoice measure 314]                       %! SM4
@@ -2511,6 +2529,12 @@ J_PercussionMusicVoice = {
     ^ \markup { @ }                                              %! SM14
     \revert DynamicLineSpanner.staff-padding                     %! OC
     
+}
+
+
+J_PercussionMusicStaff = {
+    \context PercussionMusicVoice = "PercussionMusicVoice"
+    \J_PercussionMusicVoice
 }
 
 
@@ -2998,6 +3022,12 @@ J_ViolinMusicVoice = {
 }
 
 
+J_ViolinMusicStaff = {
+    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \J_ViolinMusicVoice
+}
+
+
 J_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/8 {
@@ -3224,6 +3254,12 @@ J_ViolaMusicVoice = {
     % [J ViolaMusicVoice measure 361]                            %! SM4
     R1 * 1/2
     
+}
+
+
+J_ViolaMusicStaff = {
+    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \J_ViolaMusicVoice
 }
 
 
@@ -3454,4 +3490,10 @@ J_CelloMusicVoice = {
                         }                                        %! SCORE2
         }                                                        %! SCORE2
     
+}
+
+
+J_CelloMusicStaff = {
+    \context CelloMusicVoice = "CelloMusicVoice"
+    \J_CelloMusicVoice
 }

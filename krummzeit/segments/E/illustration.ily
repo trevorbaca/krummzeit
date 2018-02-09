@@ -3660,6 +3660,12 @@ E_OboeMusicVoice = {
 }
 
 
+E_OboeMusicStaff = {
+    \context OboeMusicVoice = "OboeMusicVoice"
+    \E_OboeMusicVoice
+}
+
+
 E_ClarinetMusicVoice = {
     
     % [E ClarinetMusicVoice measure 200]                         %! SM4
@@ -4279,6 +4285,12 @@ E_ClarinetMusicVoice = {
     r32
     \revert DynamicLineSpanner.staff-padding                     %! OC
     
+}
+
+
+E_ClarinetMusicStaff = {
+    \context ClarinetMusicVoice = "ClarinetMusicVoice"
+    \E_ClarinetMusicVoice
 }
 
 
@@ -5221,6 +5233,12 @@ E_PianoMusicVoice = {
     \revert DynamicLineSpanner.staff-padding                     %! OC
     \revert TupletBracket.staff-padding                          %! OC
     
+}
+
+
+E_PianoMusicStaff = {
+    \context PianoMusicVoice = "PianoMusicVoice"
+    \E_PianoMusicVoice
 }
 
 
@@ -6230,6 +6248,12 @@ E_PercussionMusicVoice = {
 }
 
 
+E_PercussionMusicStaff = {
+    \context PercussionMusicVoice = "PercussionMusicVoice"
+    \E_PercussionMusicVoice
+}
+
+
 E_ViolinMusicVoice = {
     
     % [E ViolinMusicVoice measure 200]                           %! SM4
@@ -6614,6 +6638,12 @@ E_ViolinMusicVoice = {
 }
 
 
+E_ViolinMusicStaff = {
+    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \E_ViolinMusicVoice
+}
+
+
 E_ViolaMusicVoice = {
     
     % [E ViolaMusicVoice measure 200]                            %! SM4
@@ -6991,6 +7021,12 @@ E_ViolaMusicVoice = {
 }
 
 
+E_ViolaMusicStaff = {
+    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \E_ViolaMusicVoice
+}
+
+
 E_CelloMusicVoice = {
     
     % [E CelloMusicVoice measure 200]                            %! SM4
@@ -7267,4 +7303,10 @@ E_CelloMusicVoice = {
     
     r32
     
+}
+
+
+E_CelloMusicStaff = {
+    \context CelloMusicVoice = "CelloMusicVoice"
+    \E_CelloMusicVoice
 }

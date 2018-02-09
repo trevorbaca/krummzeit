@@ -3169,6 +3169,12 @@ D_OboeMusicVoice = {
 }
 
 
+D_OboeMusicStaff = {
+    \context OboeMusicVoice = "OboeMusicVoice"
+    \D_OboeMusicVoice
+}
+
+
 D_ClarinetMusicVoice = {
     
     % [D ClarinetMusicVoice measure 152]                         %! SM4
@@ -3658,6 +3664,12 @@ D_ClarinetMusicVoice = {
     \revert DynamicLineSpanner.staff-padding                     %! OC
     \revert TupletBracket.staff-padding                          %! OC
     
+}
+
+
+D_ClarinetMusicStaff = {
+    \context ClarinetMusicVoice = "ClarinetMusicVoice"
+    \D_ClarinetMusicVoice
 }
 
 
@@ -5042,6 +5054,12 @@ D_PianoMusicVoice = {
 }
 
 
+D_PianoMusicStaff = {
+    \context PianoMusicVoice = "PianoMusicVoice"
+    \D_PianoMusicVoice
+}
+
+
 D_PercussionMusicVoice = {
     
     % [D PercussionMusicVoice measure 152]                       %! SM4
@@ -6097,6 +6115,12 @@ D_PercussionMusicVoice = {
 }
 
 
+D_PercussionMusicStaff = {
+    \context PercussionMusicVoice = "PercussionMusicVoice"
+    \D_PercussionMusicVoice
+}
+
+
 D_ViolinMusicVoice = {
     
     % [D ViolinMusicVoice measure 152]                           %! SM4
@@ -6946,6 +6970,12 @@ D_ViolinMusicVoice = {
     r8
     \revert DynamicLineSpanner.staff-padding                     %! OC
     
+}
+
+
+D_ViolinMusicStaff = {
+    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \D_ViolinMusicVoice
 }
 
 
@@ -7894,6 +7924,12 @@ D_ViolaMusicVoice = {
 }
 
 
+D_ViolaMusicStaff = {
+    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \D_ViolaMusicVoice
+}
+
+
 D_CelloMusicVoice = {
     
     % [D CelloMusicVoice measure 152]                            %! SM4
@@ -8699,4 +8735,10 @@ D_CelloMusicVoice = {
     r8
     \revert DynamicLineSpanner.staff-padding                     %! OC
     
+}
+
+
+D_CelloMusicStaff = {
+    \context CelloMusicVoice = "CelloMusicVoice"
+    \D_CelloMusicVoice
 }

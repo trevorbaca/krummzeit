@@ -4500,6 +4500,12 @@ A_OboeMusicVoice = {
 }
 
 
+A_OboeMusicStaff = {
+    \context OboeMusicVoice = "OboeMusicVoice"
+    \A_OboeMusicVoice
+}
+
+
 A_ClarinetMusicVoice = {
     
     % [A ClarinetMusicVoice measure 14]                          %! SM4
@@ -5829,6 +5835,12 @@ A_ClarinetMusicVoice = {
     d''4.
     \revert DynamicLineSpanner.staff-padding                     %! OC
     
+}
+
+
+A_ClarinetMusicStaff = {
+    \context ClarinetMusicVoice = "ClarinetMusicVoice"
+    \A_ClarinetMusicVoice
 }
 
 
@@ -8172,6 +8184,12 @@ A_PianoMusicVoice = {
 }
 
 
+A_PianoMusicStaff = {
+    \context PianoMusicVoice = "PianoMusicVoice"
+    \A_PianoMusicVoice
+}
+
+
 A_PercussionMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
@@ -8725,6 +8743,12 @@ A_PercussionMusicVoice = {
     % [A PercussionMusicVoice measure 88]                        %! SM4
     R1 * 5/4
     
+}
+
+
+A_PercussionMusicStaff = {
+    \context PercussionMusicVoice = "PercussionMusicVoice"
+    \A_PercussionMusicVoice
 }
 
 
@@ -10706,6 +10730,12 @@ A_ViolinMusicVoice = {
 }
 
 
+A_ViolinMusicStaff = {
+    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \A_ViolinMusicVoice
+}
+
+
 A_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
@@ -11811,6 +11841,12 @@ A_ViolaMusicVoice = {
 }
 
 
+A_ViolaMusicStaff = {
+    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \A_ViolaMusicVoice
+}
+
+
 A_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
@@ -12891,4 +12927,10 @@ A_CelloMusicVoice = {
     % [A CelloMusicVoice measure 88]                             %! SM4
     R1 * 5/4
     
+}
+
+
+A_CelloMusicStaff = {
+    \context CelloMusicVoice = "CelloMusicVoice"
+    \A_CelloMusicVoice
 }

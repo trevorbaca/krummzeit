@@ -682,6 +682,12 @@ H_OboeMusicVoice = {
 }
 
 
+H_OboeMusicStaff = {
+    \context OboeMusicVoice = "OboeMusicVoice"
+    \H_OboeMusicVoice
+}
+
+
 H_ClarinetMusicVoice = {
     
     % [H ClarinetMusicVoice measure 281]                         %! SM4
@@ -927,6 +933,12 @@ H_ClarinetMusicVoice = {
         \revert TupletBracket.staff-padding                      %! OC
         
     }
+}
+
+
+H_ClarinetMusicStaff = {
+    \context ClarinetMusicVoice = "ClarinetMusicVoice"
+    \H_ClarinetMusicVoice
 }
 
 
@@ -2801,6 +2813,12 @@ H_PianoMusicVoice = {
 }
 
 
+H_PianoMusicStaff = {
+    \context PianoMusicVoice = "PianoMusicVoice"
+    \H_PianoMusicVoice
+}
+
+
 H_PercussionMusicVoice = {
     
     % [H PercussionMusicVoice measure 281]                       %! SM4
@@ -2993,6 +3011,12 @@ H_PercussionMusicVoice = {
         \revert TupletBracket.staff-padding                      %! OC
         
     }
+}
+
+
+H_PercussionMusicStaff = {
+    \context PercussionMusicVoice = "PercussionMusicVoice"
+    \H_PercussionMusicVoice
 }
 
 
@@ -3204,6 +3228,12 @@ H_ViolinMusicVoice = {
 }
 
 
+H_ViolinMusicStaff = {
+    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \H_ViolinMusicVoice
+}
+
+
 H_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 19/10 {
@@ -3402,6 +3432,12 @@ H_ViolaMusicVoice = {
 }
 
 
+H_ViolaMusicStaff = {
+    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \H_ViolaMusicVoice
+}
+
+
 H_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 19/10 {
@@ -3583,4 +3619,10 @@ H_CelloMusicVoice = {
         \revert TupletBracket.staff-padding                      %! OC
         
     }
+}
+
+
+H_CelloMusicStaff = {
+    \context CelloMusicVoice = "CelloMusicVoice"
+    \H_CelloMusicVoice
 }

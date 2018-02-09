@@ -1526,6 +1526,12 @@ I_OboeMusicVoice = {
 }
 
 
+I_OboeMusicStaff = {
+    \context OboeMusicVoice = "OboeMusicVoice"
+    \I_OboeMusicVoice
+}
+
+
 I_ClarinetMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/5 {
@@ -2111,6 +2117,12 @@ I_ClarinetMusicVoice = {
     % [I ClarinetMusicVoice measure 313]                         %! SM4
     R1 * 1/4
     
+}
+
+
+I_ClarinetMusicStaff = {
+    \context ClarinetMusicVoice = "ClarinetMusicVoice"
+    \I_ClarinetMusicVoice
 }
 
 
@@ -5475,6 +5487,12 @@ I_PianoMusicVoice = {
 }
 
 
+I_PianoMusicStaff = {
+    \context PianoMusicVoice = "PianoMusicVoice"
+    \I_PianoMusicVoice
+}
+
+
 I_PercussionMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/7 {
@@ -5761,6 +5779,12 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 313]                       %! SM4
     R1 * 1/4
     
+}
+
+
+I_PercussionMusicStaff = {
+    \context PercussionMusicVoice = "PercussionMusicVoice"
+    \I_PercussionMusicVoice
 }
 
 
@@ -6389,6 +6413,12 @@ I_ViolinMusicVoice = {
 }
 
 
+I_ViolinMusicStaff = {
+    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \I_ViolinMusicVoice
+}
+
+
 I_ViolaMusicVoice = {
     \times 2/3 {
         
@@ -6742,6 +6772,12 @@ I_ViolaMusicVoice = {
 }
 
 
+I_ViolaMusicStaff = {
+    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \I_ViolaMusicVoice
+}
+
+
 I_CelloMusicVoice = {
     \times 2/3 {
         
@@ -7076,4 +7112,10 @@ I_CelloMusicVoice = {
     % [I CelloMusicVoice measure 313]                            %! SM4
     R1 * 1/4
     
+}
+
+
+I_CelloMusicStaff = {
+    \context CelloMusicVoice = "CelloMusicVoice"
+    \I_CelloMusicVoice
 }

@@ -1711,6 +1711,12 @@ C_OboeMusicVoice = {
 }
 
 
+C_OboeMusicStaff = {
+    \context OboeMusicVoice = "OboeMusicVoice"
+    \C_OboeMusicVoice
+}
+
+
 C_ClarinetMusicVoice = {
     
     % [C ClarinetMusicVoice measure 133]                         %! SM4
@@ -1884,6 +1890,12 @@ C_ClarinetMusicVoice = {
     cs4
     \revert Stem.direction                                       %! OC
     
+}
+
+
+C_ClarinetMusicStaff = {
+    \context ClarinetMusicVoice = "ClarinetMusicVoice"
+    \C_ClarinetMusicVoice
 }
 
 
@@ -2269,6 +2281,12 @@ C_PianoMusicVoice = {
 }
 
 
+C_PianoMusicStaff = {
+    \context PianoMusicVoice = "PianoMusicVoice"
+    \C_PianoMusicVoice
+}
+
+
 C_PercussionMusicVoice = {
     
     % [C PercussionMusicVoice measure 133]                       %! SM4
@@ -2568,6 +2586,12 @@ C_PercussionMusicVoice = {
 }
 
 
+C_PercussionMusicStaff = {
+    \context PercussionMusicVoice = "PercussionMusicVoice"
+    \C_PercussionMusicVoice
+}
+
+
 C_ViolinMusicVoice = {
     
     % [C ViolinMusicVoice measure 133]                           %! SM4
@@ -2806,6 +2830,12 @@ C_ViolinMusicVoice = {
 }
 
 
+C_ViolinMusicStaff = {
+    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \C_ViolinMusicVoice
+}
+
+
 C_ViolaMusicVoice = {
     
     % [C ViolaMusicVoice measure 133]                            %! SM4
@@ -3022,6 +3052,12 @@ C_ViolaMusicVoice = {
 }
 
 
+C_ViolaMusicStaff = {
+    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \C_ViolaMusicVoice
+}
+
+
 C_CelloMusicVoice = {
     
     % [C CelloMusicVoice measure 133]                            %! SM4
@@ -3224,4 +3260,10 @@ C_CelloMusicVoice = {
     % [C CelloMusicVoice measure 151]                            %! SM4
     R1 * 5/4
     
+}
+
+
+C_CelloMusicStaff = {
+    \context CelloMusicVoice = "CelloMusicVoice"
+    \C_CelloMusicVoice
 }

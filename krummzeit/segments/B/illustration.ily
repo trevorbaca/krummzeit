@@ -3121,6 +3121,12 @@ B_OboeMusicVoice = {
 }
 
 
+B_OboeMusicStaff = {
+    \context OboeMusicVoice = "OboeMusicVoice"
+    \B_OboeMusicVoice
+}
+
+
 B_ClarinetMusicVoice = {
     
     % [B ClarinetMusicVoice measure 89]                          %! SM4
@@ -3377,6 +3383,12 @@ B_ClarinetMusicVoice = {
     R1 * 5/4
     \revert DynamicLineSpanner.staff-padding                     %! OC
     
+}
+
+
+B_ClarinetMusicStaff = {
+    \context ClarinetMusicVoice = "ClarinetMusicVoice"
+    \B_ClarinetMusicVoice
 }
 
 
@@ -3852,6 +3864,12 @@ B_PianoMusicVoice = {
     % [B PianoMusicVoice measure 132]                            %! SM4
     R1 * 5/4
     
+}
+
+
+B_PianoMusicStaff = {
+    \context PianoMusicVoice = "PianoMusicVoice"
+    \B_PianoMusicVoice
 }
 
 
@@ -4424,6 +4442,12 @@ B_PercussionMusicVoice = {
 }
 
 
+B_PercussionMusicStaff = {
+    \context PercussionMusicVoice = "PercussionMusicVoice"
+    \B_PercussionMusicVoice
+}
+
+
 B_ViolinMusicVoice = {
     
     % [B ViolinMusicVoice measure 89]                            %! SM4
@@ -4866,6 +4890,12 @@ B_ViolinMusicVoice = {
 }
 
 
+B_ViolinMusicStaff = {
+    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \B_ViolinMusicVoice
+}
+
+
 B_ViolaMusicVoice = {
     
     % [B ViolaMusicVoice measure 89]                             %! SM4
@@ -5149,6 +5179,12 @@ B_ViolaMusicVoice = {
     % [B ViolaMusicVoice measure 132]                            %! SM4
     R1 * 5/4
     
+}
+
+
+B_ViolaMusicStaff = {
+    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \B_ViolaMusicVoice
 }
 
 
@@ -5437,4 +5473,10 @@ B_CelloMusicVoice = {
     % [B CelloMusicVoice measure 132]                            %! SM4
     R1 * 5/4
     
+}
+
+
+B_CelloMusicStaff = {
+    \context CelloMusicVoice = "CelloMusicVoice"
+    \B_CelloMusicVoice
 }

@@ -5260,13 +5260,13 @@ E_PercussionMusicVoice = {
                 #10                                              %! REAPPLIED_INSTRUMENT:SM8
                 Xyl.                                             %! REAPPLIED_INSTRUMENT:SM8
             }                                                    %! REAPPLIED_INSTRUMENT:SM8
-        \set PercussionMusicStaff.forceClef = ##t                %! REDUNDANT_CLEF:SM8
-        \clef "percussion"                                       %! REDUNDANT_CLEF:SM8
+        \set PercussionMusicStaff.forceClef = ##t                %! IC:REDUNDANT_CLEF:SM8
+        \clef "percussion"                                       %! IC:REDUNDANT_CLEF:SM8
         \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
         \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
         \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
-        \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
-    %@% \override PercussionMusicStaff.Clef.color = ##f          %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
+        \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_CLEF_COLOR:SM6
+    %@% \override PercussionMusicStaff.Clef.color = ##f          %! IC:REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
         \makeBlue                                                %! SM24
         c2
         :32                                                      %! IC
@@ -5302,7 +5302,7 @@ E_PercussionMusicVoice = {
                 Xyl.                                             %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
             }                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
         \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
-        \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
+        \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! IC:REDUNDANT_CLEF_REDRAW_COLOR:SM6
         
         \makeBlue                                                %! SM24
         c2

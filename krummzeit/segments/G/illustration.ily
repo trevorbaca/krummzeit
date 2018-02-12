@@ -1294,8 +1294,6 @@ G_OboeMusicVoice = {
     \times 4/7 {
         
         % [G OboeMusicVoice measure 265]                         %! SM4
-        \override Beam.positions = #'(-4 . -4)                   %! OC
-        \override TupletBracket.staff-padding = #3               %! OC
         \override DynamicLineSpanner.staff-padding = #'7         %! OC
         \override Beam.positions = #'(-4 . -4)                   %! OC
         \override TupletBracket.staff-padding = #3               %! OC
@@ -1550,9 +1548,6 @@ G_OboeMusicVoice = {
         f''8
         -\staccato                                               %! IC
         ]
-        \revert Beam.positions                                   %! OC
-        \revert TupletBracket.staff-padding                      %! OC
-        \revert DynamicLineSpanner.staff-padding                 %! OC
         \revert Beam.positions                                   %! OC
         \revert TupletBracket.staff-padding                      %! OC
         \revert DynamicLineSpanner.staff-padding                 %! OC
@@ -2771,7 +2766,6 @@ G_PianoMusicVoice = {
     \ff                                                          %! IC:REDUNDANT_DYNAMIC:SM8
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
-    \revert DynamicLineSpanner.staff-padding                     %! OC
     \revert NoteHead.style                                       %! OC
     \revert DynamicLineSpanner.staff-padding                     %! OC
     

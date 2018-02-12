@@ -1170,8 +1170,8 @@ i_PianoMusicStaff = {
 i_PercussionMusicVoice = {
     
     % [_ PercussionMusicVoice measure 1]                         %! SM4
-    \override DynamicLineSpanner.padding = #'4                   %! OC
-    \override TupletBracket.padding = #2                         %! OC
+    \override DynamicLineSpanner.padding = #'4                   %! OC1
+    \override TupletBracket.padding = #2                         %! OC1
     \set PercussionMusicStaff.instrumentName = \markup {         %! ST1:DEFAULT_INSTRUMENT:SM8
         \hcenter-in                                              %! ST1:DEFAULT_INSTRUMENT:SM8
             #16                                                  %! ST1:DEFAULT_INSTRUMENT:SM8
@@ -1243,9 +1243,9 @@ i_PercussionMusicVoice = {
         \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
         \once \override PercussionMusicStaff.StaffSymbol.line-count = 1 %! IC:EXPLICIT_STAFF_LINES:SM8
         \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-        \once \override PercussionMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! OC
-        \once \override PercussionMusicStaff.Clef.X-extent = ##f %! MEASURE_10:SHIFTED_CLEF:OC
-        \once \override PercussionMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_10:SHIFTED_CLEF:OC
+        \once \override PercussionMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! OC1
+        \once \override PercussionMusicStaff.Clef.X-extent = ##f %! OC1:SHIFTED_CLEF
+        \once \override PercussionMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
         \set PercussionMusicStaff.instrumentName = \markup {     %! IC:EXPLICIT_INSTRUMENT:SM8
             \hcenter-in                                          %! IC:EXPLICIT_INSTRUMENT:SM8
                 #16                                              %! IC:EXPLICIT_INSTRUMENT:SM8
@@ -1292,7 +1292,7 @@ i_PercussionMusicVoice = {
                         }                                        %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
                 }
             }
-        \override PercussionMusicStaff.BarLine.bar-extent = #'(0 . 0) %! OC
+        \override PercussionMusicStaff.BarLine.bar-extent = #'(0 . 0) %! OC1
         \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! IC:EXPLICIT_CLEF_REDRAW_COLOR:SM6
         \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! IC:REDRAWN_EXPLICIT_INSTRUMENT_COLOR:SM6
         \set PercussionMusicStaff.instrumentName = \markup {     %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
@@ -1340,10 +1340,10 @@ i_PercussionMusicVoice = {
         
         c'4
         -\accent                                                 %! IC
-        \revert PercussionMusicStaff.BarLine.bar-extent          %! OC
-        \once \override PercussionMusicStaff.BarLine.bar-extent = #'(0 . 0) %! OC
-        \revert DynamicLineSpanner.padding                       %! OC
-        \revert TupletBracket.padding                            %! OC
+        \revert PercussionMusicStaff.BarLine.bar-extent          %! OC2
+        \once \override PercussionMusicStaff.BarLine.bar-extent = #'(0 . 0) %! OC1
+        \revert DynamicLineSpanner.padding                       %! OC2
+        \revert TupletBracket.padding                            %! OC2
         
     }
 }
@@ -1358,8 +1358,8 @@ i_PercussionMusicStaff = {
 i_ViolinMusicVoice = {
     
     % [_ ViolinMusicVoice measure 1]                             %! SM4
-    \override DynamicLineSpanner.padding = #'4                   %! OC
-    \override TupletBracket.padding = #2                         %! OC
+    \override DynamicLineSpanner.padding = #'4                   %! OC1
+    \override TupletBracket.padding = #2                         %! OC1
     \set ViolinMusicStaff.instrumentName = \markup {             %! ST1:DEFAULT_INSTRUMENT:SM8
         \hcenter-in                                              %! ST1:DEFAULT_INSTRUMENT:SM8
             #16                                                  %! ST1:DEFAULT_INSTRUMENT:SM8
@@ -1505,7 +1505,7 @@ i_ViolinMusicVoice = {
     \times 2/3 {
         
         % [_ ViolinMusicVoice measure 4]                         %! SM4
-        \override NoteHead.style = #'harmonic                    %! OC
+        \override NoteHead.style = #'harmonic                    %! OC1
         \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC2:EXPLICIT_DYNAMIC_COLOR:SM6
         ef''4
         \glissando                                               %! SC
@@ -1595,7 +1595,7 @@ i_ViolinMusicVoice = {
         \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC3:EXPLICIT_DYNAMIC_COLOR:SM6
         g'4
         \ff                                                      %! HC1
-        \revert NoteHead.style                                   %! OC
+        \revert NoteHead.style                                   %! OC2
     }
     
     % [_ ViolinMusicVoice measure 9]                             %! SM4
@@ -1612,8 +1612,8 @@ i_ViolinMusicVoice = {
     
     % [_ ViolinMusicVoice measure 13]                            %! SM4
     R1 * 3/4
-    \revert DynamicLineSpanner.padding                           %! OC
-    \revert TupletBracket.padding                                %! OC
+    \revert DynamicLineSpanner.padding                           %! OC2
+    \revert TupletBracket.padding                                %! OC2
     
 }
 
@@ -1627,8 +1627,8 @@ i_ViolinMusicStaff = {
 i_ViolaMusicVoice = {
     
     % [_ ViolaMusicVoice measure 1]                              %! SM4
-    \override DynamicLineSpanner.padding = #'4                   %! OC
-    \override TupletBracket.padding = #2                         %! OC
+    \override DynamicLineSpanner.padding = #'4                   %! OC1
+    \override TupletBracket.padding = #2                         %! OC1
     \set ViolaMusicStaff.instrumentName = \markup {              %! ST1:DEFAULT_INSTRUMENT:SM8
         \hcenter-in                                              %! ST1:DEFAULT_INSTRUMENT:SM8
             #16                                                  %! ST1:DEFAULT_INSTRUMENT:SM8
@@ -1779,7 +1779,7 @@ i_ViolaMusicVoice = {
     \times 4/7 {
         
         % [_ ViolaMusicVoice measure 5]                          %! SM4
-        \override NoteHead.style = #'harmonic                    %! OC
+        \override NoteHead.style = #'harmonic                    %! OC1
         \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC2:EXPLICIT_DYNAMIC_COLOR:SM6
         fs'4
         \glissando                                               %! SC
@@ -1864,7 +1864,7 @@ i_ViolaMusicVoice = {
         \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC3:EXPLICIT_DYNAMIC_COLOR:SM6
         af8.
         \ff                                                      %! HC1
-        \revert NoteHead.style                                   %! OC
+        \revert NoteHead.style                                   %! OC2
     }
     
     % [_ ViolaMusicVoice measure 9]                              %! SM4
@@ -1881,8 +1881,8 @@ i_ViolaMusicVoice = {
     
     % [_ ViolaMusicVoice measure 13]                             %! SM4
     R1 * 3/4
-    \revert DynamicLineSpanner.padding                           %! OC
-    \revert TupletBracket.padding                                %! OC
+    \revert DynamicLineSpanner.padding                           %! OC2
+    \revert TupletBracket.padding                                %! OC2
     
 }
 
@@ -1896,8 +1896,8 @@ i_ViolaMusicStaff = {
 i_CelloMusicVoice = {
     
     % [_ CelloMusicVoice measure 1]                              %! SM4
-    \override DynamicLineSpanner.padding = #'4                   %! OC
-    \override TupletBracket.padding = #2                         %! OC
+    \override DynamicLineSpanner.padding = #'4                   %! OC1
+    \override TupletBracket.padding = #2                         %! OC1
     \set CelloMusicStaff.instrumentName = \markup {              %! ST1:DEFAULT_INSTRUMENT:SM8
         \hcenter-in                                              %! ST1:DEFAULT_INSTRUMENT:SM8
             #16                                                  %! ST1:DEFAULT_INSTRUMENT:SM8
@@ -2043,7 +2043,7 @@ i_CelloMusicVoice = {
     \times 2/3 {
         
         % [_ CelloMusicVoice measure 4]                          %! SM4
-        \override NoteHead.style = #'harmonic                    %! OC
+        \override NoteHead.style = #'harmonic                    %! OC1
         \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC2:EXPLICIT_DYNAMIC_COLOR:SM6
         e'8
         \glissando                                               %! SC
@@ -2127,7 +2127,7 @@ i_CelloMusicVoice = {
         \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC3:EXPLICIT_DYNAMIC_COLOR:SM6
         a8.
         \ff                                                      %! HC1
-        \revert NoteHead.style                                   %! OC
+        \revert NoteHead.style                                   %! OC2
     }
     
     % [_ CelloMusicVoice measure 9]                              %! SM4
@@ -2144,8 +2144,8 @@ i_CelloMusicVoice = {
     
     % [_ CelloMusicVoice measure 13]                             %! SM4
     R1 * 3/4
-    \revert DynamicLineSpanner.padding                           %! OC
-    \revert TupletBracket.padding                                %! OC
+    \revert DynamicLineSpanner.padding                           %! OC2
+    \revert TupletBracket.padding                                %! OC2
     
 }
 

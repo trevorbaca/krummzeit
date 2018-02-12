@@ -1680,8 +1680,8 @@ C_OboeMusicVoice = {
     R1 * 1/4
     
     % [C OboeMusicVoice measure 146]                             %! SM4
-    \override DynamicLineSpanner.staff-padding = #'5             %! OC
-    \override Stem.direction = #up                               %! OC
+    \override DynamicLineSpanner.staff-padding = #'5             %! OC1
+    \override Stem.direction = #up                               %! OC1
     \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     b1
     \fff                                                         %! IC:EXPLICIT_DYNAMIC:SM8
@@ -1696,8 +1696,8 @@ C_OboeMusicVoice = {
     ~
     
     b4
-    \revert DynamicLineSpanner.staff-padding                     %! OC
-    \revert Stem.direction                                       %! OC
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
+    \revert Stem.direction                                       %! OC2
     
     % [C OboeMusicVoice measure 149]                             %! SM4
     R1 * 5/4
@@ -1809,7 +1809,7 @@ C_ClarinetMusicVoice = {
     R1 * 1/4
     
     % [C ClarinetMusicVoice measure 146]                         %! SM4
-    \override Stem.direction = #up                               %! OC
+    \override Stem.direction = #up                               %! OC1
     \set ClarinetMusicStaff.instrumentName = \markup {           %! IC:EXPLICIT_INSTRUMENT:SM8
         \hcenter-in                                              %! IC:EXPLICIT_INSTRUMENT:SM8
             #16                                                  %! IC:EXPLICIT_INSTRUMENT:SM8
@@ -1888,7 +1888,7 @@ C_ClarinetMusicVoice = {
     ~
     
     cs4
-    \revert Stem.direction                                       %! OC
+    \revert Stem.direction                                       %! OC2
     
 }
 
@@ -2020,8 +2020,8 @@ C_PianoMusicVoice = {
     \times 2/3 {
         
         % [C PianoMusicVoice measure 137]                        %! SM4
-        \once \override PianoMusicStaff.Clef.X-extent = ##f      %! MEASURE_137:SHIFTED_CLEF:OC
-        \once \override PianoMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! MEASURE_137:SHIFTED_CLEF:OC
+        \once \override PianoMusicStaff.Clef.X-extent = ##f      %! OC1:SHIFTED_CLEF
+        \once \override PianoMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! OC1:SHIFTED_CLEF
         \clef "bass"                                             %! IC:EXPLICIT_CLEF:SM8
         \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
     %@% \override PianoMusicStaff.Clef.color = ##f               %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
@@ -2071,7 +2071,7 @@ C_PianoMusicVoice = {
     R1 * 1/4
     
     % [C PianoMusicVoice measure 141]                            %! SM4
-    \override DynamicLineSpanner.staff-padding = #'10            %! OC
+    \override DynamicLineSpanner.staff-padding = #'10            %! OC1
     \ottava #-1                                                  %! SC
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -2266,7 +2266,7 @@ C_PianoMusicVoice = {
                     \flat
                 }
         }
-    \revert DynamicLineSpanner.staff-padding                     %! OC
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
     \ottava #0                                                   %! SC
     
     % [C PianoMusicVoice measure 149]                            %! SM4
@@ -2428,7 +2428,7 @@ C_PercussionMusicVoice = {
     R1 * 1/4
     
     % [C PercussionMusicVoice measure 146]                       %! SM4
-    \override DynamicLineSpanner.staff-padding = #'6             %! OC
+    \override DynamicLineSpanner.staff-padding = #'6             %! OC1
     \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     \makeBlue                                                    %! SM24
     c4
@@ -2581,7 +2581,7 @@ C_PercussionMusicVoice = {
     \makeBlue                                                    %! SM24
     c4
     \pp                                                          %! IC:REDUNDANT_DYNAMIC:SM8
-    \revert DynamicLineSpanner.staff-padding                     %! OC
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
     
 }
 
@@ -2647,9 +2647,9 @@ C_ViolinMusicVoice = {
     \times 5/6 {
         
         % [C ViolinMusicVoice measure 137]                       %! SM4
-        \override Beam.positions = #'(-4 . -4)                   %! OC
-        \override DynamicLineSpanner.staff-padding = #'8         %! OC
-        \override TupletBracket.staff-padding = #4               %! OC
+        \override Beam.positions = #'(-4 . -4)                   %! OC1
+        \override DynamicLineSpanner.staff-padding = #'8         %! OC1
+        \override TupletBracket.staff-padding = #4               %! OC1
         r8
         
         \ottava #1                                               %! SC
@@ -2784,9 +2784,9 @@ C_ViolinMusicVoice = {
         c'4
         -\staccatissimo                                          %! IC
         \pp                                                      %! HC1
-        \revert Beam.positions                                   %! OC
-        \revert DynamicLineSpanner.staff-padding                 %! OC
-        \revert TupletBracket.staff-padding                      %! OC
+        \revert Beam.positions                                   %! OC2
+        \revert DynamicLineSpanner.staff-padding                 %! OC2
+        \revert TupletBracket.staff-padding                      %! OC2
     }
     
     % [C ViolinMusicVoice measure 142]                           %! SM4
@@ -2802,7 +2802,7 @@ C_ViolinMusicVoice = {
     R1 * 1/4
     
     % [C ViolinMusicVoice measure 146]                           %! SM4
-    \once \override Stem.direction = #up                         %! OC
+    \once \override Stem.direction = #up                         %! OC1
     \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     fs1
     \fff_poss                                                    %! IC:EXPLICIT_DYNAMIC:SM8
@@ -2886,9 +2886,9 @@ C_ViolaMusicVoice = {
     \times 2/3 {
         
         % [C ViolaMusicVoice measure 137]                        %! SM4
-        \override Beam.positions = #'(-4 . -4)                   %! OC
-        \override DynamicLineSpanner.staff-padding = #'8         %! OC
-        \override TupletBracket.staff-padding = #4               %! OC
+        \override Beam.positions = #'(-4 . -4)                   %! OC1
+        \override DynamicLineSpanner.staff-padding = #'8         %! OC1
+        \override TupletBracket.staff-padding = #4               %! OC1
         \clef "treble"                                           %! IC:REDUNDANT_CLEF:SM8
         \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_CLEF_COLOR:SM6
     %@% \override ViolaMusicStaff.Clef.color = ##f               %! IC:REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
@@ -2965,8 +2965,8 @@ C_ViolaMusicVoice = {
     \times 2/3 {
         
         % [C ViolaMusicVoice measure 141]                        %! SM4
-        \once \override ViolaMusicStaff.Clef.X-extent = ##f      %! MEASURE_141:SHIFTED_CLEF:OC
-        \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! MEASURE_141:SHIFTED_CLEF:OC
+        \once \override ViolaMusicStaff.Clef.X-extent = ##f      %! OC1:SHIFTED_CLEF
+        \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! OC1:SHIFTED_CLEF
         \clef "alto"                                             %! IC:EXPLICIT_CLEF:SM8
         \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
     %@% \override ViolaMusicStaff.Clef.color = ##f               %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
@@ -2997,16 +2997,16 @@ C_ViolaMusicVoice = {
         bf,4
         -\staccatissimo                                          %! IC
         \pp                                                      %! HC1
-        \revert Beam.positions                                   %! OC
-        \revert DynamicLineSpanner.staff-padding                 %! OC
-        \revert TupletBracket.staff-padding                      %! OC
+        \revert Beam.positions                                   %! OC2
+        \revert DynamicLineSpanner.staff-padding                 %! OC2
+        \revert TupletBracket.staff-padding                      %! OC2
     }
     
     % [C ViolaMusicVoice measure 142]                            %! SM4
     R1 * 5/8
     
     % [C ViolaMusicVoice measure 143]                            %! SM4
-    \override Stem.direction = #up                               %! OC
+    \override Stem.direction = #up                               %! OC1
     \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     bf,2.
     \fff_poss                                                    %! IC:EXPLICIT_DYNAMIC:SM8
@@ -3038,7 +3038,7 @@ C_ViolaMusicVoice = {
     ~
     
     bf,4
-    \revert Stem.direction                                       %! OC
+    \revert Stem.direction                                       %! OC2
     
     % [C ViolaMusicVoice measure 149]                            %! SM4
     R1 * 5/4
@@ -3109,9 +3109,9 @@ C_CelloMusicVoice = {
     \times 7/8 {
         
         % [C CelloMusicVoice measure 137]                        %! SM4
-        \override Beam.positions = #'(-4 . -4)                   %! OC
-        \override DynamicLineSpanner.staff-padding = #'8         %! OC
-        \override TupletBracket.staff-padding = #4               %! OC
+        \override Beam.positions = #'(-4 . -4)                   %! OC1
+        \override DynamicLineSpanner.staff-padding = #'8         %! OC1
+        \override TupletBracket.staff-padding = #4               %! OC1
         \clef "treble"                                           %! IC:REDUNDANT_CLEF:SM8
         \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_CLEF_COLOR:SM6
     %@% \override CelloMusicStaff.Clef.color = ##f               %! IC:REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
@@ -3154,8 +3154,8 @@ C_CelloMusicVoice = {
     \times 7/8 {
         
         % [C CelloMusicVoice measure 139]                        %! SM4
-        \once \override CelloMusicStaff.Clef.X-extent = ##f      %! MEASURE_139:SHIFTED_CLEF:OC
-        \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! MEASURE_139:SHIFTED_CLEF:OC
+        \once \override CelloMusicStaff.Clef.X-extent = ##f      %! OC1:SHIFTED_CLEF
+        \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! OC1:SHIFTED_CLEF
         \clef "bass"                                             %! IC:EXPLICIT_CLEF:SM8
         \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
     %@% \override CelloMusicStaff.Clef.color = ##f               %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
@@ -3217,9 +3217,9 @@ C_CelloMusicVoice = {
         b,4
         -\staccatissimo                                          %! IC
         \pp                                                      %! HC1
-        \revert Beam.positions                                   %! OC
-        \revert DynamicLineSpanner.staff-padding                 %! OC
-        \revert TupletBracket.staff-padding                      %! OC
+        \revert Beam.positions                                   %! OC2
+        \revert DynamicLineSpanner.staff-padding                 %! OC2
+        \revert TupletBracket.staff-padding                      %! OC2
     }
     
     % [C CelloMusicVoice measure 142]                            %! SM4
@@ -3235,7 +3235,7 @@ C_CelloMusicVoice = {
     R1 * 1/4
     
     % [C CelloMusicVoice measure 146]                            %! SM4
-    \once \override Stem.direction = #up                         %! OC
+    \once \override Stem.direction = #up                         %! OC1
     \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     a,,1
     \fff_poss                                                    %! IC:EXPLICIT_DYNAMIC:SM8

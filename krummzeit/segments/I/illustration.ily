@@ -1369,8 +1369,8 @@ I_OboeMusicVoice = {
     \times 8/5 {
         
         % [I OboeMusicVoice measure 291]                         %! SM4
-        \override DynamicLineSpanner.staff-padding = #'6         %! OC
-        \override TupletBracket.staff-padding = #2               %! OC
+        \override DynamicLineSpanner.staff-padding = #'6         %! OC1
+        \override TupletBracket.staff-padding = #2               %! OC1
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -1514,8 +1514,8 @@ I_OboeMusicVoice = {
     
     % [I OboeMusicVoice measure 311]                             %! SM4
     R1 * 3/4
-    \revert DynamicLineSpanner.staff-padding                     %! OC
-    \revert TupletBracket.staff-padding                          %! OC
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
+    \revert TupletBracket.staff-padding                          %! OC2
     
     % [I OboeMusicVoice measure 312]                             %! SM4
     R1 * 5/4
@@ -1537,9 +1537,9 @@ I_ClarinetMusicVoice = {
     \times 8/5 {
         
         % [I ClarinetMusicVoice measure 291]                     %! SM4
-        \override DynamicLineSpanner.staff-padding = #'9         %! OC
-        \override Stem.direction = #up                           %! OC
-        \override TupletBracket.staff-padding = #5               %! OC
+        \override DynamicLineSpanner.staff-padding = #'9         %! OC1
+        \override Stem.direction = #up                           %! OC1
+        \override TupletBracket.staff-padding = #5               %! OC1
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -1622,17 +1622,17 @@ I_ClarinetMusicVoice = {
                     \finger
                         1
             }
-        \revert DynamicLineSpanner.staff-padding                 %! OC
-        \revert Stem.direction                                   %! OC
-        \revert TupletBracket.staff-padding                      %! OC
+        \revert DynamicLineSpanner.staff-padding                 %! OC2
+        \revert Stem.direction                                   %! OC2
+        \revert TupletBracket.staff-padding                      %! OC2
     }
     
     % [I ClarinetMusicVoice measure 292]                         %! SM4
     R1 * 9/8
     
     % [I ClarinetMusicVoice measure 293]                         %! SM4
-    \override DynamicLineSpanner.staff-padding = #'7             %! OC
-    \override Stem.direction = #up                               %! OC
+    \override DynamicLineSpanner.staff-padding = #'7             %! OC1
+    \override Stem.direction = #up                               %! OC1
     \once \override Accidental.color = #red
     \once \override Beam.color = #red
     \once \override Dots.color = #red
@@ -2087,7 +2087,7 @@ I_ClarinetMusicVoice = {
     \ppp                                                         %! HC1
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
-    \revert Stem.direction                                       %! OC
+    \revert Stem.direction                                       %! OC2
     
     % [I ClarinetMusicVoice measure 305]                         %! SM4
     R1 * 3/4
@@ -2109,7 +2109,7 @@ I_ClarinetMusicVoice = {
     
     % [I ClarinetMusicVoice measure 311]                         %! SM4
     R1 * 3/4
-    \revert DynamicLineSpanner.staff-padding                     %! OC
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
     
     % [I ClarinetMusicVoice measure 312]                         %! SM4
     R1 * 5/4
@@ -2131,8 +2131,8 @@ I_PianoMusicVoice = {
     \times 8/7 {
         
         % [I PianoMusicVoice measure 291]                        %! SM4
-        \override DynamicLineSpanner.staff-padding = #'6         %! OC
-        \override TupletBracket.staff-padding = #2               %! OC
+        \override DynamicLineSpanner.staff-padding = #'6         %! OC1
+        \override TupletBracket.staff-padding = #2               %! OC1
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2194,8 +2194,8 @@ I_PianoMusicVoice = {
         :32                                                      %! IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
-        \revert DynamicLineSpanner.staff-padding                 %! OC
-        \revert TupletBracket.staff-padding                      %! OC
+        \revert DynamicLineSpanner.staff-padding                 %! OC2
+        \revert TupletBracket.staff-padding                      %! OC2
     }
     
     % [I PianoMusicVoice measure 292]                            %! SM4
@@ -5501,8 +5501,8 @@ I_PercussionMusicVoice = {
         \stopStaff                                               %! SM37:REAPPLIED_STAFF_LINES:SM8
         \once \override PercussionMusicStaff.StaffSymbol.line-count = 5 %! SM37:REAPPLIED_STAFF_LINES:SM8
         \startStaff                                              %! SM37:REAPPLIED_STAFF_LINES:SM8
-        \override DynamicLineSpanner.staff-padding = #'6         %! OC
-        \override TupletBracket.staff-padding = #2               %! OC
+        \override DynamicLineSpanner.staff-padding = #'6         %! OC1
+        \override TupletBracket.staff-padding = #2               %! OC1
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5565,15 +5565,15 @@ I_PercussionMusicVoice = {
         :32                                                      %! IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
-        \revert DynamicLineSpanner.staff-padding                 %! OC
-        \revert TupletBracket.staff-padding                      %! OC
+        \revert DynamicLineSpanner.staff-padding                 %! OC2
+        \revert TupletBracket.staff-padding                      %! OC2
     }
     
     % [I PercussionMusicVoice measure 292]                       %! SM4
     R1 * 9/8
     
     % [I PercussionMusicVoice measure 293]                       %! SM4
-    \override DynamicLineSpanner.staff-padding = #'6             %! OC
+    \override DynamicLineSpanner.staff-padding = #'6             %! OC1
     \clef "percussion"                                           %! IC:EXPLICIT_CLEF:SM8
     \once \override PercussionMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
 %@% \override PercussionMusicStaff.Clef.color = ##f              %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
@@ -5774,7 +5774,7 @@ I_PercussionMusicVoice = {
     r8
     
     r1
-    \revert DynamicLineSpanner.staff-padding                     %! OC
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
     
     % [I PercussionMusicVoice measure 313]                       %! SM4
     R1 * 1/4
@@ -5795,9 +5795,9 @@ I_ViolinMusicVoice = {
         \stopStaff                                               %! SM37:REAPPLIED_STAFF_LINES:SM8
         \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! SM37:REAPPLIED_STAFF_LINES:SM8
         \startStaff                                              %! SM37:REAPPLIED_STAFF_LINES:SM8
-        \override Beam.positions = #'(-5 . -5)                   %! OC
-        \override DynamicLineSpanner.staff-padding = #'8         %! OC
-        \override TupletBracket.staff-padding = #4               %! OC
+        \override Beam.positions = #'(-5 . -5)                   %! OC1
+        \override DynamicLineSpanner.staff-padding = #'8         %! OC1
+        \override TupletBracket.staff-padding = #4               %! OC1
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -6358,9 +6358,9 @@ I_ViolinMusicVoice = {
     
     % [I ViolinMusicVoice measure 309]                           %! SM4
     R1 * 3/4
-    \revert Beam.positions                                       %! OC
-    \revert DynamicLineSpanner.staff-padding                     %! OC
-    \revert TupletBracket.staff-padding                          %! OC
+    \revert Beam.positions                                       %! OC2
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
+    \revert TupletBracket.staff-padding                          %! OC2
     
     % [I ViolinMusicVoice measure 310]                           %! SM4
     R1 * 3/4
@@ -6371,8 +6371,8 @@ I_ViolinMusicVoice = {
     \times 3/4 {
         
         % [I ViolinMusicVoice measure 312]                       %! SM4
-        \override DynamicLineSpanner.staff-padding = #'6         %! OC
-        \override TupletBracket.staff-padding = #2               %! OC
+        \override DynamicLineSpanner.staff-padding = #'6         %! OC1
+        \override TupletBracket.staff-padding = #2               %! OC1
         \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
         e'''8
         -\staccatissimo                                          %! IC
@@ -6403,8 +6403,8 @@ I_ViolinMusicVoice = {
         
         f'''8
         -\staccatissimo                                          %! IC
-        \revert DynamicLineSpanner.staff-padding                 %! OC
-        \revert TupletBracket.staff-padding                      %! OC
+        \revert DynamicLineSpanner.staff-padding                 %! OC2
+        \revert TupletBracket.staff-padding                      %! OC2
     }
     
     % [I ViolinMusicVoice measure 313]                           %! SM4
@@ -6423,9 +6423,9 @@ I_ViolaMusicVoice = {
     \times 2/3 {
         
         % [I ViolaMusicVoice measure 291]                        %! SM4
-        \override Beam.positions = #'(-5 . -5)                   %! OC
-        \override DynamicLineSpanner.staff-padding = #'8         %! OC
-        \override TupletBracket.staff-padding = #4               %! OC
+        \override Beam.positions = #'(-5 . -5)                   %! OC1
+        \override DynamicLineSpanner.staff-padding = #'8         %! OC1
+        \override TupletBracket.staff-padding = #4               %! OC1
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -6576,9 +6576,9 @@ I_ViolaMusicVoice = {
     
     % [I ViolaMusicVoice measure 293]                            %! SM4
     R1 * 3/4
-    \revert Beam.positions                                       %! OC
-    \revert DynamicLineSpanner.staff-padding                     %! OC
-    \revert TupletBracket.staff-padding                          %! OC
+    \revert Beam.positions                                       %! OC2
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
+    \revert TupletBracket.staff-padding                          %! OC2
     
     % [I ViolaMusicVoice measure 294]                            %! SM4
     R1 * 5/8
@@ -6730,8 +6730,8 @@ I_ViolaMusicVoice = {
     \times 4/5 {
         
         % [I ViolaMusicVoice measure 312]                        %! SM4
-        \override DynamicLineSpanner.staff-padding = #'6         %! OC
-        \override TupletBracket.staff-padding = #2               %! OC
+        \override DynamicLineSpanner.staff-padding = #'6         %! OC1
+        \override TupletBracket.staff-padding = #2               %! OC1
         \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
         ef'''8
         -\staccatissimo                                          %! IC
@@ -6762,8 +6762,8 @@ I_ViolaMusicVoice = {
         
         ef'''8
         -\staccatissimo                                          %! IC
-        \revert DynamicLineSpanner.staff-padding                 %! OC
-        \revert TupletBracket.staff-padding                      %! OC
+        \revert DynamicLineSpanner.staff-padding                 %! OC2
+        \revert TupletBracket.staff-padding                      %! OC2
     }
     
     % [I ViolaMusicVoice measure 313]                            %! SM4
@@ -7071,8 +7071,8 @@ I_CelloMusicVoice = {
     \times 5/6 {
         
         % [I CelloMusicVoice measure 312]                        %! SM4
-        \override DynamicLineSpanner.staff-padding = #'6         %! OC
-        \override TupletBracket.staff-padding = #2               %! OC
+        \override DynamicLineSpanner.staff-padding = #'6         %! OC1
+        \override TupletBracket.staff-padding = #2               %! OC1
         \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
         f'''8
         -\staccatissimo                                          %! IC
@@ -7105,8 +7105,8 @@ I_CelloMusicVoice = {
         
         e'''8
         -\staccatissimo                                          %! IC
-        \revert DynamicLineSpanner.staff-padding                 %! OC
-        \revert TupletBracket.staff-padding                      %! OC
+        \revert DynamicLineSpanner.staff-padding                 %! OC2
+        \revert TupletBracket.staff-padding                      %! OC2
     }
     
     % [I CelloMusicVoice measure 313]                            %! SM4

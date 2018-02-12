@@ -2269,9 +2269,9 @@ B_OboeMusicVoice = {
     \times 3/4 {
         
         % [B OboeMusicVoice measure 89]                          %! SM4
-        \override Beam.positions = #'(-4 . -4)                   %! OC
-        \override DynamicLineSpanner.staff-padding = #'8         %! OC
-        \override TupletBracket.staff-padding = #4               %! OC
+        \override Beam.positions = #'(-4 . -4)                   %! OC1
+        \override DynamicLineSpanner.staff-padding = #'8         %! OC1
+        \override TupletBracket.staff-padding = #4               %! OC1
         \set OboeMusicStaff.instrumentName = \markup {           %! SM37:REAPPLIED_INSTRUMENT:SM8
             \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
                 #16                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -3114,9 +3114,9 @@ B_OboeMusicVoice = {
     
     % [B OboeMusicVoice measure 132]                             %! SM4
     R1 * 5/4
-    \revert Beam.positions                                       %! OC
-    \revert DynamicLineSpanner.staff-padding                     %! OC
-    \revert TupletBracket.staff-padding                          %! OC
+    \revert Beam.positions                                       %! OC2
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
+    \revert TupletBracket.staff-padding                          %! OC2
     
 }
 
@@ -3130,7 +3130,7 @@ B_OboeMusicStaff = {
 B_ClarinetMusicVoice = {
     
     % [B ClarinetMusicVoice measure 89]                          %! SM4
-    \override DynamicLineSpanner.staff-padding = #'3             %! OC
+    \override DynamicLineSpanner.staff-padding = #'3             %! OC1
     \set ClarinetMusicStaff.instrumentName = \markup {           %! IC:REDUNDANT_INSTRUMENT:SM8
         \hcenter-in                                              %! IC:REDUNDANT_INSTRUMENT:SM8
             #16                                                  %! IC:REDUNDANT_INSTRUMENT:SM8
@@ -3381,7 +3381,7 @@ B_ClarinetMusicVoice = {
     
     % [B ClarinetMusicVoice measure 132]                         %! SM4
     R1 * 5/4
-    \revert DynamicLineSpanner.staff-padding                     %! OC
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
     
 }
 
@@ -3469,9 +3469,9 @@ B_PianoMusicVoice = {
     \times 4/5 {
         
         % [B PianoMusicVoice measure 102]                        %! SM4
-        \override Beam.positions = #'(-4 . -4)                   %! OC
-        \override DynamicLineSpanner.staff-padding = #'6         %! OC
-        \override TupletBracket.staff-padding = #3               %! OC
+        \override Beam.positions = #'(-4 . -4)                   %! OC1
+        \override DynamicLineSpanner.staff-padding = #'6         %! OC1
+        \override TupletBracket.staff-padding = #3               %! OC1
         \set PianoMusicStaff.instrumentName = \markup {          %! IC:REDUNDANT_INSTRUMENT:SM8
             \hcenter-in                                          %! IC:REDUNDANT_INSTRUMENT:SM8
                 #16                                              %! IC:REDUNDANT_INSTRUMENT:SM8
@@ -3832,9 +3832,9 @@ B_PianoMusicVoice = {
         r8
         
         cs'''8
-        \revert Beam.positions                                   %! OC
-        \revert DynamicLineSpanner.staff-padding                 %! OC
-        \revert TupletBracket.staff-padding                      %! OC
+        \revert Beam.positions                                   %! OC2
+        \revert DynamicLineSpanner.staff-padding                 %! OC2
+        \revert TupletBracket.staff-padding                      %! OC2
     }
     
     % [B PianoMusicVoice measure 124]                            %! SM4
@@ -3958,11 +3958,11 @@ B_PercussionMusicVoice = {
         \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
         \once \override PercussionMusicStaff.StaffSymbol.line-count = 5 %! IC:EXPLICIT_STAFF_LINES:SM8
         \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-        \override Beam.positions = #'(-4 . -4)                   %! OC
-        \override DynamicLineSpanner.staff-padding = #'6         %! OC
-        \override TupletBracket.staff-padding = #3               %! OC
-        \once \override PercussionMusicStaff.Clef.X-extent = ##f %! MEASURE_102:SHIFTED_CLEF:OC
-        \once \override PercussionMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_102:SHIFTED_CLEF:OC
+        \override Beam.positions = #'(-4 . -4)                   %! OC1
+        \override DynamicLineSpanner.staff-padding = #'6         %! OC1
+        \override TupletBracket.staff-padding = #3               %! OC1
+        \once \override PercussionMusicStaff.Clef.X-extent = ##f %! OC1:SHIFTED_CLEF
+        \once \override PercussionMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
         \set PercussionMusicStaff.instrumentName = \markup {     %! IC:EXPLICIT_INSTRUMENT:SM8
             \hcenter-in                                          %! IC:EXPLICIT_INSTRUMENT:SM8
                 #16                                              %! IC:EXPLICIT_INSTRUMENT:SM8
@@ -4132,13 +4132,13 @@ B_PercussionMusicVoice = {
         
         cs''4
         -\staccatissimo                                          %! IC
-        \revert Beam.positions                                   %! OC
-        \revert DynamicLineSpanner.staff-padding                 %! OC
-        \revert TupletBracket.staff-padding                      %! OC
+        \revert Beam.positions                                   %! OC2
+        \revert DynamicLineSpanner.staff-padding                 %! OC2
+        \revert TupletBracket.staff-padding                      %! OC2
     }
     
     % [B PercussionMusicVoice measure 109]                       %! SM4
-    \once \override DynamicLineSpanner.staff-padding = #'3       %! OC
+    \once \override DynamicLineSpanner.staff-padding = #'3       %! OC1
     \clef "percussion"                                           %! IC:EXPLICIT_CLEF:SM8
     \once \override PercussionMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
 %@% \override PercussionMusicStaff.Clef.color = ##f              %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
@@ -4197,9 +4197,9 @@ B_PercussionMusicVoice = {
     \times 4/5 {
         
         % [B PercussionMusicVoice measure 116]                   %! SM4
-        \override Beam.positions = #'(-4 . -4)                   %! OC
-        \override DynamicLineSpanner.staff-padding = #'6         %! OC
-        \override TupletBracket.staff-padding = #3               %! OC
+        \override Beam.positions = #'(-4 . -4)                   %! OC1
+        \override DynamicLineSpanner.staff-padding = #'6         %! OC1
+        \override TupletBracket.staff-padding = #3               %! OC1
         r8
         
         \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
@@ -4310,13 +4310,13 @@ B_PercussionMusicVoice = {
         r4
         
         cs''4
-        \revert Beam.positions                                   %! OC
-        \revert DynamicLineSpanner.staff-padding                 %! OC
-        \revert TupletBracket.staff-padding                      %! OC
+        \revert Beam.positions                                   %! OC2
+        \revert DynamicLineSpanner.staff-padding                 %! OC2
+        \revert TupletBracket.staff-padding                      %! OC2
     }
     
     % [B PercussionMusicVoice measure 122]                       %! SM4
-    \override DynamicLineSpanner.staff-padding = #'5             %! OC
+    \override DynamicLineSpanner.staff-padding = #'5             %! OC1
     \clef "percussion"                                           %! IC:REDUNDANT_CLEF:SM8
     \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_CLEF_COLOR:SM6
 %@% \override PercussionMusicStaff.Clef.color = ##f              %! IC:REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
@@ -4437,7 +4437,7 @@ B_PercussionMusicVoice = {
     \makeBlue                                                    %! SM24
     c4
     :32                                                          %! IC
-    \revert DynamicLineSpanner.staff-padding                     %! OC
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
     
 }
 
@@ -4619,11 +4619,11 @@ B_ViolinMusicVoice = {
         \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
         \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! IC:EXPLICIT_STAFF_LINES:SM8
         \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-        \override Beam.positions = #'(-5 . -5)                   %! OC
-        \override DynamicLineSpanner.staff-padding = #'7         %! OC
-        \override TupletBracket.staff-padding = #4               %! OC
-        \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! MEASURE_110:SHIFTED_CLEF:OC
-        \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_110:SHIFTED_CLEF:OC
+        \override Beam.positions = #'(-5 . -5)                   %! OC1
+        \override DynamicLineSpanner.staff-padding = #'7         %! OC1
+        \override TupletBracket.staff-padding = #4               %! OC1
+        \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! OC1:SHIFTED_CLEF
+        \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
         \set ViolinMusicStaff.instrumentName = \markup {         %! IC:REDUNDANT_INSTRUMENT:SM8
             \hcenter-in                                          %! IC:REDUNDANT_INSTRUMENT:SM8
                 #16                                              %! IC:REDUNDANT_INSTRUMENT:SM8
@@ -4815,9 +4815,9 @@ B_ViolinMusicVoice = {
         cqf''4
         \stopTrillSpan                                           %! SC
         \startTrillSpan                                          %! SC
-        \revert Beam.positions                                   %! OC
-        \revert DynamicLineSpanner.staff-padding                 %! OC
-        \revert TupletBracket.staff-padding                      %! OC
+        \revert Beam.positions                                   %! OC2
+        \revert DynamicLineSpanner.staff-padding                 %! OC2
+        \revert TupletBracket.staff-padding                      %! OC2
     }
     
     % [B ViolinMusicVoice measure 117]                           %! SM4
@@ -4843,7 +4843,7 @@ B_ViolinMusicVoice = {
     R1 * 5/8
     
     % [B ViolinMusicVoice measure 124]                           %! SM4
-    \override DynamicLineSpanner.staff-padding = #'6             %! OC
+    \override DynamicLineSpanner.staff-padding = #'6             %! OC1
     \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC2:EXPLICIT_DYNAMIC_COLOR:SM6
     ftqs1.
     \glissando                                                   %! SC
@@ -4879,7 +4879,7 @@ B_ViolinMusicVoice = {
     \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC3:EXPLICIT_DYNAMIC_COLOR:SM6
     ftqs2
     \fff                                                         %! HC1
-    \revert DynamicLineSpanner.staff-padding                     %! OC
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
     
     % [B ViolinMusicVoice measure 131]                           %! SM4
     R1 * 1
@@ -4950,9 +4950,9 @@ B_ViolaMusicVoice = {
     \times 4/3 {
         
         % [B ViolaMusicVoice measure 94]                         %! SM4
-        \override Beam.positions = #'(-5 . -5)                   %! OC
-        \override DynamicLineSpanner.staff-padding = #'7         %! OC
-        \override TupletBracket.staff-padding = #4               %! OC
+        \override Beam.positions = #'(-5 . -5)                   %! OC1
+        \override DynamicLineSpanner.staff-padding = #'7         %! OC1
+        \override TupletBracket.staff-padding = #4               %! OC1
         \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC2:EXPLICIT_DYNAMIC_COLOR:SM6
         e4
         \glissando                                               %! SC
@@ -5095,9 +5095,9 @@ B_ViolaMusicVoice = {
         
         % [B ViolaMusicVoice measure 111]                        %! SM4
         dqs2
-        \revert Beam.positions                                   %! OC
-        \revert DynamicLineSpanner.staff-padding                 %! OC
-        \revert TupletBracket.staff-padding                      %! OC
+        \revert Beam.positions                                   %! OC2
+        \revert DynamicLineSpanner.staff-padding                 %! OC2
+        \revert TupletBracket.staff-padding                      %! OC2
     }
     
     % [B ViolaMusicVoice measure 112]                            %! SM4
@@ -5125,7 +5125,7 @@ B_ViolaMusicVoice = {
     R1 * 1/4
     
     % [B ViolaMusicVoice measure 120]                            %! SM4
-    \override DynamicLineSpanner.staff-padding = #'5             %! OC
+    \override DynamicLineSpanner.staff-padding = #'5             %! OC1
     \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC2:EXPLICIT_DYNAMIC_COLOR:SM6
     btqs,1
     \glissando                                                   %! SC
@@ -5171,7 +5171,7 @@ B_ViolaMusicVoice = {
     \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC3:EXPLICIT_DYNAMIC_COLOR:SM6
     cqs2.
     \fff                                                         %! HC1
-    \revert DynamicLineSpanner.staff-padding                     %! OC
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
     
     % [B ViolaMusicVoice measure 131]                            %! SM4
     R1 * 1
@@ -5411,7 +5411,7 @@ B_CelloMusicVoice = {
     R1 * 1/4
     
     % [B CelloMusicVoice measure 120]                            %! SM4
-    \override DynamicLineSpanner.staff-padding = #'5             %! OC
+    \override DynamicLineSpanner.staff-padding = #'5             %! OC1
     \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC2:EXPLICIT_DYNAMIC_COLOR:SM6
     b,,\breve
     \glissando                                                   %! SC
@@ -5465,7 +5465,7 @@ B_CelloMusicVoice = {
     
     % [B CelloMusicVoice measure 130]                            %! SM4
     R1 * 1
-    \revert DynamicLineSpanner.staff-padding                     %! OC
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
     
     % [B CelloMusicVoice measure 131]                            %! SM4
     R1 * 1

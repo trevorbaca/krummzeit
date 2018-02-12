@@ -1813,6 +1813,8 @@ J_OboeMusicVoice = {
             #(x11-color 'green4)                                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
             (“ClarinetInEFlat”)                                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
         }                                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
+    \override OboeMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+    \override OboeMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
     \set OboeMusicStaff.instrumentName = \markup {               %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
             #16                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -1831,8 +1833,6 @@ J_OboeMusicVoice = {
                     (Eb)                                         %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                 }                                                %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
         }                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-    \override OboeMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
-    \override OboeMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
     
     % [J OboeMusicVoice measure 317]                             %! SM4
     r2
@@ -1976,6 +1976,8 @@ J_ClarinetMusicVoice = {
                     }                                            %! SM14
             }
         }
+    \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! IC:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
     \set ClarinetMusicStaff.instrumentName = \markup {           %! IC:REDRAWN_REDUNDANT_INSTRUMENT:SM8
         \hcenter-in                                              %! IC:REDRAWN_REDUNDANT_INSTRUMENT:SM8
             #16                                                  %! IC:REDRAWN_REDUNDANT_INSTRUMENT:SM8
@@ -1994,8 +1996,6 @@ J_ClarinetMusicVoice = {
                     cl.                                          %! IC:REDRAWN_REDUNDANT_INSTRUMENT:SM8
                 }                                                %! IC:REDRAWN_REDUNDANT_INSTRUMENT:SM8
         }                                                        %! IC:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-    \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
-    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! IC:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
     
     % [J ClarinetMusicVoice measure 318]                         %! SM4
     \once \override Accidental.color = #red
@@ -2164,6 +2164,8 @@ J_PianoMusicVoice = {
                     }                                            %! SM14
             }
         }
+    \override PianoMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+    \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! IC:REDRAWN_EXPLICIT_INSTRUMENT_COLOR:SM6
     \set PianoMusicStaff.instrumentName = \markup {              %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
         \hcenter-in                                              %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
             #16                                                  %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
@@ -2174,8 +2176,6 @@ J_PianoMusicVoice = {
             #10                                                  %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
             Hpschd.                                              %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
         }                                                        %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-    \override PianoMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
-    \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! IC:REDRAWN_EXPLICIT_INSTRUMENT_COLOR:SM6
     
     % [J PianoMusicVoice measure 318]                            %! SM4
     \once \override Accidental.color = #red
@@ -2271,6 +2271,7 @@ J_PianoMusicVoice = {
                     }                                            %! SM14
             }
         }
+    \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! IC:REDRAWN_EXPLICIT_INSTRUMENT_COLOR:SM6
     \set PianoMusicStaff.instrumentName = \markup {              %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
         \hcenter-in                                              %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
             #16                                                  %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
@@ -2281,7 +2282,6 @@ J_PianoMusicVoice = {
             #10                                                  %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
             Pf.                                                  %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
         }                                                        %! IC:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-    \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! IC:REDRAWN_EXPLICIT_INSTRUMENT_COLOR:SM6
     
     % [J PianoMusicVoice measure 342]                            %! SM4
     \once \override Accidental.color = #red
@@ -2394,6 +2394,8 @@ J_PercussionMusicVoice = {
                     }                                            %! SM14
             }
         }
+    \override PercussionMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+    \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! IC:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
     \set PercussionMusicStaff.instrumentName = \markup {         %! IC:REDRAWN_REDUNDANT_INSTRUMENT:SM8
         \hcenter-in                                              %! IC:REDRAWN_REDUNDANT_INSTRUMENT:SM8
             #16                                                  %! IC:REDRAWN_REDUNDANT_INSTRUMENT:SM8
@@ -2404,8 +2406,6 @@ J_PercussionMusicVoice = {
             #10                                                  %! IC:REDRAWN_REDUNDANT_INSTRUMENT:SM8
             Xyl.                                                 %! IC:REDRAWN_REDUNDANT_INSTRUMENT:SM8
         }                                                        %! IC:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-    \override PercussionMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
-    \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! IC:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
     
     % [J PercussionMusicVoice measure 318]                       %! SM4
     \once \override Accidental.color = #red
@@ -2585,6 +2585,8 @@ J_ViolinMusicVoice = {
                         }                                        %! IC
                 }
             }
+        \override ViolinMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+        \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
         \set ViolinMusicStaff.instrumentName = \markup {         %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
             \hcenter-in                                          %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                 #16                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -2595,8 +2597,6 @@ J_ViolinMusicVoice = {
                 #10                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                 Vn.                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
             }                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-        \override ViolinMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
-        \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
         
         f'''1
         -\staccatissimo                                          %! IC
@@ -3071,6 +3071,7 @@ J_ViolaMusicVoice = {
                         }                                        %! IC
                 }
             }
+        \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
         \set ViolaMusicStaff.instrumentName = \markup {          %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
             \hcenter-in                                          %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                 #16                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -3081,7 +3082,6 @@ J_ViolaMusicVoice = {
                 #10                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                 Va.                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
             }                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-        \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
         \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! IC:REDUNDANT_CLEF_REDRAW_COLOR:SM6
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -3311,6 +3311,8 @@ J_CelloMusicVoice = {
                     }                                            %! SM14
             }
         }
+    \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+    \override CelloMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
     \set CelloMusicStaff.instrumentName = \markup {              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
             #16                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -3321,8 +3323,6 @@ J_CelloMusicVoice = {
             #10                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
             Vc.                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
         }                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-    \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
-    \override CelloMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
     
     % [J CelloMusicVoice measure 318]                            %! SM4
     \once \override Accidental.color = #red

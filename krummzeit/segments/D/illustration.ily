@@ -3739,10 +3739,6 @@ D_PianoMusicVoice = {
     \once \override NoteHead.color = #red
     \once \override Stem.color = #red
     \clef "bass"                                                 %! IC:REDUNDANT_CLEF:SM8
-    \clef "bass"                                                 %! IC:REDUNDANT_CLEF:SM8
-    \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_CLEF_COLOR:SM6
-%@% \override PianoMusicStaff.Clef.color = ##f                   %! IC:REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
-    \set PianoMusicStaff.forceClef = ##t                         %! IC:SM33:REDUNDANT_CLEF:SM8
     \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_CLEF_COLOR:SM6
 %@% \override PianoMusicStaff.Clef.color = ##f                   %! IC:REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
     \set PianoMusicStaff.forceClef = ##t                         %! IC:SM33:REDUNDANT_CLEF:SM8
@@ -3765,7 +3761,6 @@ D_PianoMusicVoice = {
                     }                                            %! SM14
             }
         }
-    \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! IC:REDUNDANT_CLEF_REDRAW_COLOR:SM6
     \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! IC:REDUNDANT_CLEF_REDRAW_COLOR:SM6
     
     \once \override Accidental.color = #red

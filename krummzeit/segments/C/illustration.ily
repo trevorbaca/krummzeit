@@ -1682,8 +1682,6 @@ C_OboeMusicVoice = {
     % [C OboeMusicVoice measure 146]                             %! SM4
     \override DynamicLineSpanner.staff-padding = #'5             %! OC
     \override Stem.direction = #up                               %! OC
-    \override DynamicLineSpanner.staff-padding = #'5             %! OC
-    \override Stem.direction = #up                               %! OC
     \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     b1
     \fff                                                         %! IC:EXPLICIT_DYNAMIC:SM8
@@ -1698,8 +1696,6 @@ C_OboeMusicVoice = {
     ~
     
     b4
-    \revert DynamicLineSpanner.staff-padding                     %! OC
-    \revert Stem.direction                                       %! OC
     \revert DynamicLineSpanner.staff-padding                     %! OC
     \revert Stem.direction                                       %! OC
     

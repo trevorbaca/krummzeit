@@ -81,1281 +81,1281 @@ I_GlobalRests = {
 I_GlobalSkips = {
     
     % [I GlobalSkips measure 291]                                        %! SM4
-%@% \once \override TextSpanner.bound-details.left.text =                %! SM30:REDUNDANT_METRONOME_MARK:SM27
-%@% \markup {                                                            %! SM30:REDUNDANT_METRONOME_MARK:SM27
-%@%     \fontsize                                                        %! SM30:REDUNDANT_METRONOME_MARK:SM27
-%@%         #-6                                                          %! SM30:REDUNDANT_METRONOME_MARK:SM27
-%@%         \general-align                                               %! SM30:REDUNDANT_METRONOME_MARK:SM27
-%@%             #Y                                                       %! SM30:REDUNDANT_METRONOME_MARK:SM27
-%@%             #DOWN                                                    %! SM30:REDUNDANT_METRONOME_MARK:SM27
-%@%             \note-by-number                                          %! SM30:REDUNDANT_METRONOME_MARK:SM27
-%@%                 #2                                                   %! SM30:REDUNDANT_METRONOME_MARK:SM27
-%@%                 #0                                                   %! SM30:REDUNDANT_METRONOME_MARK:SM27
-%@%                 #1.25                                                %! SM30:REDUNDANT_METRONOME_MARK:SM27
-%@%     \upright                                                         %! SM30:REDUNDANT_METRONOME_MARK:SM27
-%@%         {                                                            %! SM30:REDUNDANT_METRONOME_MARK:SM27
-%@%             =                                                        %! SM30:REDUNDANT_METRONOME_MARK:SM27
-%@%             135                                                      %! SM30:REDUNDANT_METRONOME_MARK:SM27
-%@%         }                                                            %! SM30:REDUNDANT_METRONOME_MARK:SM27
-%@%     \hspace                                                          %! SM30:REDUNDANT_METRONOME_MARK:SM27
-%@%         #1                                                           %! SM30:REDUNDANT_METRONOME_MARK:SM27
-%@%     }                                                                %! SM30:REDUNDANT_METRONOME_MARK:SM27 %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.Y-extent = ##f                           %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.left-broken.text = ##f     %! METRONOME_MARK_SPANNER:SM29
+%@% \once \override TextSpanner.bound-details.left.text =                %! SM27:REDUNDANT_METRONOME_MARK:SM30
+%@% \markup {                                                            %! SM27:REDUNDANT_METRONOME_MARK:SM30
+%@%     \fontsize                                                        %! SM27:REDUNDANT_METRONOME_MARK:SM30
+%@%         #-6                                                          %! SM27:REDUNDANT_METRONOME_MARK:SM30
+%@%         \general-align                                               %! SM27:REDUNDANT_METRONOME_MARK:SM30
+%@%             #Y                                                       %! SM27:REDUNDANT_METRONOME_MARK:SM30
+%@%             #DOWN                                                    %! SM27:REDUNDANT_METRONOME_MARK:SM30
+%@%             \note-by-number                                          %! SM27:REDUNDANT_METRONOME_MARK:SM30
+%@%                 #2                                                   %! SM27:REDUNDANT_METRONOME_MARK:SM30
+%@%                 #0                                                   %! SM27:REDUNDANT_METRONOME_MARK:SM30
+%@%                 #1.25                                                %! SM27:REDUNDANT_METRONOME_MARK:SM30
+%@%     \upright                                                         %! SM27:REDUNDANT_METRONOME_MARK:SM30
+%@%         {                                                            %! SM27:REDUNDANT_METRONOME_MARK:SM30
+%@%             =                                                        %! SM27:REDUNDANT_METRONOME_MARK:SM30
+%@%             135                                                      %! SM27:REDUNDANT_METRONOME_MARK:SM30
+%@%         }                                                            %! SM27:REDUNDANT_METRONOME_MARK:SM30
+%@%     \hspace                                                          %! SM27:REDUNDANT_METRONOME_MARK:SM30
+%@%         #1                                                           %! SM27:REDUNDANT_METRONOME_MARK:SM30
+%@%     }                                                                %! SM27:REDUNDANT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.Y-extent = ##f                           %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
-        }                                                                %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.left.text =                %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-    \markup {                                                            %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-        \with-color                                                      %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-            #(x11-color 'DeepPink1)                                      %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-            {                                                            %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                \fontsize                                                %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                    #-6                                                  %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                    \general-align                                       %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                        #Y                                               %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                        #DOWN                                            %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                        \note-by-number                                  %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                            #2                                           %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                            #0                                           %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                            #1.25                                        %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                \upright                                                 %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                    {                                                    %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                        =                                                %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                        135                                              %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                    }                                                    %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                \hspace                                                  %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                    #1                                                   %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-            }                                                            %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-        }                                                                %! SM30:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15 %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right-broken.padding = 0   %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right-broken.text = ##f    %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right.padding = 0          %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.dash-period = 0                          %! METRONOME_MARK_SPANNER:SM29
-    \time 4/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+        }                                                                %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left.text =                %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+    \markup {                                                            %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+        \with-color                                                      %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+            #(x11-color 'DeepPink1)                                      %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+            {                                                            %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+                \fontsize                                                %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+                    #-6                                                  %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+                    \general-align                                       %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+                        #Y                                               %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+                        #DOWN                                            %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+                        \note-by-number                                  %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+                            #2                                           %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+                            #0                                           %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+                            #1.25                                        %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+                \upright                                                 %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+                    {                                                    %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+                        =                                                %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+                        135                                              %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+                    }                                                    %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+                \hspace                                                  %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+                    #1                                                   %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+            }                                                            %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
+        }                                                                %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.padding = 0   %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.text = ##f    %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.padding = 0          %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.dash-period = 0                          %! SM29:METRONOME_MARK_SPANNER
+    \time 4/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \mark #9                                                             %! SM9
-    \bar ""                                                              %! +SEGMENT:EMPTY_START_BAR:SM2
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \bar ""                                                              %! SM2:+SEGMENT:EMPTY_START_BAR
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1
-    \startTextSpan                                                       %! METRONOME_MARK_SPANNER:SM29
+    \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (291)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <0>                                      %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 [I.1]                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [13'31'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (291)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <0>                                      %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             #3                                           %! SM3:STAGE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 [I.1]                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [13'31'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 292]                                        %! SM4
-    \time 9/8                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 9/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 9/8
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (292)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <1>                                      %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 [I.2]                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [13'32'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (292)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <1>                                      %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             #3                                           %! SM3:STAGE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 [I.2]                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [13'32'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 293]                                        %! SM4
-%@% \once \override TextSpanner.bound-details.left.text =                %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@% \markup {                                                            %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%     \fontsize                                                        %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         #-6                                                          %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         \general-align                                               %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             #Y                                                       %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             #DOWN                                                    %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             \note-by-number                                          %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                 #2                                                   %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                 #0                                                   %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                 #1.25                                                %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%     \upright                                                         %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         {                                                            %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             =                                                        %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             90                                                       %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         }                                                            %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%     \hspace                                                          %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         #1                                                           %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%     }                                                                %! SM30:EXPLICIT_METRONOME_MARK:SM27 %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.Y-extent = ##f                           %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.left-broken.text = ##f     %! METRONOME_MARK_SPANNER:SM29
+%@% \once \override TextSpanner.bound-details.left.text =                %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@% \markup {                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     \fontsize                                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         #-6                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         \general-align                                               %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             #Y                                                       %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             #DOWN                                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             \note-by-number                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 #2                                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 #0                                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 #1.25                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     \upright                                                         %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         {                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             =                                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             90                                                       %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         }                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     \hspace                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         #1                                                           %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     }                                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.Y-extent = ##f                           %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
-        }                                                                %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.left.text =                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-    \markup {                                                            %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-        \with-color                                                      %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-            #(x11-color 'blue)                                           %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-            {                                                            %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                \fontsize                                                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    #-6                                                  %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    \general-align                                       %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        #Y                                               %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        #DOWN                                            %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        \note-by-number                                  %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                            #2                                           %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                            #0                                           %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                            #1.25                                        %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                \upright                                                 %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    {                                                    %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        =                                                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        90                                               %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    }                                                    %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                \hspace                                                  %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    #1                                                   %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-            }                                                            %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-        }                                                                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right-broken.padding = 0   %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right-broken.text = ##f    %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right.padding = 0          %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.dash-period = 0                          %! METRONOME_MARK_SPANNER:SM29
-    \time 3/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+        }                                                                %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left.text =                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+    \markup {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+        \with-color                                                      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+            #(x11-color 'blue)                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+            {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                \fontsize                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    #-6                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    \general-align                                       %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        #Y                                               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        #DOWN                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        \note-by-number                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                            #2                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                            #0                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                            #1.25                                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                \upright                                                 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    {                                                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        =                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        90                                               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    }                                                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                \hspace                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    #1                                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+            }                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+        }                                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.padding = 0   %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.text = ##f    %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.padding = 0          %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.dash-period = 0                          %! SM29:METRONOME_MARK_SPANNER
+    \time 3/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
-    \stopTextSpan                                                        %! METRONOME_MARK_SPANNER:SM29
-    \startTextSpan                                                       %! METRONOME_MARK_SPANNER:SM29
+    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
+    \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (293)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <2>                                      %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 [I.3]                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [13'34'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (293)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <2>                                      %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             #3                                           %! SM3:STAGE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 [I.3]                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [13'34'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 294]                                        %! SM4
-    \time 5/8                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 5/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/8
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (294)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <3>                                      %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 [I.4]                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [13'36'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (294)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <3>                                      %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             #3                                           %! SM3:STAGE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 [I.4]                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [13'36'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 295]                                        %! SM4
-%@% \once \override TextSpanner.bound-details.left.text =                %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@% \markup {                                                            %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%     \fontsize                                                        %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         #-6                                                          %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         \general-align                                               %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             #Y                                                       %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             #DOWN                                                    %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             \note-by-number                                          %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                 #2                                                   %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                 #0                                                   %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                 #1.25                                                %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%     \upright                                                         %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         {                                                            %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             =                                                        %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             108                                                      %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         }                                                            %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%     \hspace                                                          %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         #1                                                           %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%     }                                                                %! SM30:EXPLICIT_METRONOME_MARK:SM27 %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.Y-extent = ##f                           %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.left-broken.text = ##f     %! METRONOME_MARK_SPANNER:SM29
+%@% \once \override TextSpanner.bound-details.left.text =                %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@% \markup {                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     \fontsize                                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         #-6                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         \general-align                                               %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             #Y                                                       %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             #DOWN                                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             \note-by-number                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 #2                                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 #0                                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 #1.25                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     \upright                                                         %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         {                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             =                                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             108                                                      %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         }                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     \hspace                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         #1                                                           %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     }                                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.Y-extent = ##f                           %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
-        }                                                                %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.left.text =                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-    \markup {                                                            %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-        \with-color                                                      %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-            #(x11-color 'blue)                                           %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-            {                                                            %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                \fontsize                                                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    #-6                                                  %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    \general-align                                       %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        #Y                                               %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        #DOWN                                            %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        \note-by-number                                  %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                            #2                                           %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                            #0                                           %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                            #1.25                                        %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                \upright                                                 %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    {                                                    %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        =                                                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        108                                              %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    }                                                    %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                \hspace                                                  %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    #1                                                   %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-            }                                                            %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-        }                                                                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right-broken.padding = 0   %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right-broken.text = ##f    %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right.padding = 0          %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.dash-period = 0                          %! METRONOME_MARK_SPANNER:SM29
-    \time 9/8                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+        }                                                                %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left.text =                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+    \markup {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+        \with-color                                                      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+            #(x11-color 'blue)                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+            {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                \fontsize                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    #-6                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    \general-align                                       %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        #Y                                               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        #DOWN                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        \note-by-number                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                            #2                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                            #0                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                            #1.25                                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                \upright                                                 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    {                                                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        =                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        108                                              %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    }                                                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                \hspace                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    #1                                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+            }                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+        }                                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.padding = 0   %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.text = ##f    %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.padding = 0          %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.dash-period = 0                          %! SM29:METRONOME_MARK_SPANNER
+    \time 9/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 9/8
-    \stopTextSpan                                                        %! METRONOME_MARK_SPANNER:SM29
-    \startTextSpan                                                       %! METRONOME_MARK_SPANNER:SM29
+    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
+    \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (295)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <4>                                      %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 [I.5]                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [13'38'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (295)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <4>                                      %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             #3                                           %! SM3:STAGE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 [I.5]                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [13'38'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 296]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 9/8
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (296)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <5>                                      %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 [I.6]                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [13'40'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (296)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <5>                                      %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             #3                                           %! SM3:STAGE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 [I.6]                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [13'40'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 297]                                        %! SM4
-%@% \once \override TextSpanner.bound-details.left.text =                %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@% \markup {                                                            %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%     \fontsize                                                        %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         #-6                                                          %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         \general-align                                               %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             #Y                                                       %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             #DOWN                                                    %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             \note-by-number                                          %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                 #2                                                   %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                 #0                                                   %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                 #1.25                                                %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%     \upright                                                         %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         {                                                            %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             =                                                        %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             72                                                       %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         }                                                            %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%     \hspace                                                          %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         #1                                                           %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%     }                                                                %! SM30:EXPLICIT_METRONOME_MARK:SM27 %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.Y-extent = ##f                           %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.left-broken.text = ##f     %! METRONOME_MARK_SPANNER:SM29
+%@% \once \override TextSpanner.bound-details.left.text =                %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@% \markup {                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     \fontsize                                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         #-6                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         \general-align                                               %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             #Y                                                       %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             #DOWN                                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             \note-by-number                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 #2                                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 #0                                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 #1.25                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     \upright                                                         %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         {                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             =                                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             72                                                       %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         }                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     \hspace                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         #1                                                           %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     }                                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.Y-extent = ##f                           %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
-        }                                                                %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.left.text =                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-    \markup {                                                            %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-        \with-color                                                      %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-            #(x11-color 'blue)                                           %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-            {                                                            %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                \fontsize                                                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    #-6                                                  %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    \general-align                                       %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        #Y                                               %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        #DOWN                                            %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        \note-by-number                                  %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                            #2                                           %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                            #0                                           %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                            #1.25                                        %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                \upright                                                 %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    {                                                    %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        =                                                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        72                                               %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    }                                                    %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                \hspace                                                  %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    #1                                                   %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-            }                                                            %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-        }                                                                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right-broken.padding = 0   %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right-broken.text = ##f    %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right.padding = 0          %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.dash-period = 0                          %! METRONOME_MARK_SPANNER:SM29
-    \time 5/8                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+        }                                                                %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left.text =                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+    \markup {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+        \with-color                                                      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+            #(x11-color 'blue)                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+            {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                \fontsize                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    #-6                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    \general-align                                       %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        #Y                                               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        #DOWN                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        \note-by-number                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                            #2                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                            #0                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                            #1.25                                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                \upright                                                 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    {                                                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        =                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        72                                               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    }                                                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                \hspace                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    #1                                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+            }                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+        }                                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.padding = 0   %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.text = ##f    %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.padding = 0          %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.dash-period = 0                          %! SM29:METRONOME_MARK_SPANNER
+    \time 5/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/8
-    \stopTextSpan                                                        %! METRONOME_MARK_SPANNER:SM29
-    \startTextSpan                                                       %! METRONOME_MARK_SPANNER:SM29
+    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
+    \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (297)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <6>                                      %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 [I.7]                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [13'43'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (297)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <6>                                      %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             #3                                           %! SM3:STAGE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 [I.7]                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [13'43'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 298]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/8
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (298)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <7>                                      %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 [I.8]                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [13'45'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (298)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <7>                                      %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             #3                                           %! SM3:STAGE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 [I.8]                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [13'45'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 299]                                        %! SM4
-    \once \override TextSpanner.Y-extent = ##f                           %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.arrow-width = 0.25                       %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.left-broken.text = ##f     %! METRONOME_MARK_SPANNER:SM29
+    \once \override TextSpanner.Y-extent = ##f                           %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.arrow-width = 0.25                       %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
-        }                                                                %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! METRONOME_MARK_SPANNER:SM29
+        }                                                                %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left.text = \markup {
         \large
             \upright
                 rit.
         \hspace
             #1
-        }                                                                %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right-broken.arrow = ##f   %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right-broken.padding = 0   %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right-broken.text = ##f    %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right.arrow = ##t          %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right.padding = 0          %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.dash-fraction = 0.25                     %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.dash-period = 1.5                        %! METRONOME_MARK_SPANNER:SM29
-    \time 4/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+        }                                                                %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.arrow = ##f   %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.padding = 0   %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.text = ##f    %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.arrow = ##t          %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.padding = 0          %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.dash-fraction = 0.25                     %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.dash-period = 1.5                        %! SM29:METRONOME_MARK_SPANNER
+    \time 4/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1
-    \stopTextSpan                                                        %! METRONOME_MARK_SPANNER:SM29
-    \startTextSpan                                                       %! METRONOME_MARK_SPANNER:SM29
+    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
+    \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (299)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <8>                                      %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 [I.9]                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [13'47'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (299)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <8>                                      %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             #3                                           %! SM3:STAGE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 [I.9]                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [13'47'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 300]                                        %! SM4
-    \time 5/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 5/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/4
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (300)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <9>                                      %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 [I.10]                                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [13'50'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (300)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <9>                                      %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             #3                                           %! SM3:STAGE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 [I.10]                                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [13'50'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 301]                                        %! SM4
-%@% \once \override TextSpanner.bound-details.left.text =                %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@% \markup {                                                            %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%     \fontsize                                                        %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         #-6                                                          %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         \general-align                                               %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             #Y                                                       %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             #DOWN                                                    %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             \note-by-number                                          %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                 #2                                                   %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                 #0                                                   %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                 #1.25                                                %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%     \upright                                                         %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         {                                                            %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             =                                                        %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             36                                                       %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         }                                                            %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%     \hspace                                                          %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         #1                                                           %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%     }                                                                %! SM30:EXPLICIT_METRONOME_MARK:SM27 %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.Y-extent = ##f                           %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.left-broken.text = ##f     %! METRONOME_MARK_SPANNER:SM29
+%@% \once \override TextSpanner.bound-details.left.text =                %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@% \markup {                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     \fontsize                                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         #-6                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         \general-align                                               %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             #Y                                                       %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             #DOWN                                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             \note-by-number                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 #2                                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 #0                                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 #1.25                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     \upright                                                         %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         {                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             =                                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             36                                                       %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         }                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     \hspace                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         #1                                                           %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     }                                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.Y-extent = ##f                           %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
-        }                                                                %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.left.text =                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-    \markup {                                                            %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-        \with-color                                                      %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-            #(x11-color 'blue)                                           %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-            {                                                            %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                \fontsize                                                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    #-6                                                  %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    \general-align                                       %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        #Y                                               %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        #DOWN                                            %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        \note-by-number                                  %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                            #2                                           %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                            #0                                           %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                            #1.25                                        %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                \upright                                                 %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    {                                                    %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        =                                                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        36                                               %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    }                                                    %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                \hspace                                                  %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    #1                                                   %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-            }                                                            %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-        }                                                                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right-broken.padding = 0   %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right-broken.text = ##f    %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right.padding = 0          %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.dash-period = 0                          %! METRONOME_MARK_SPANNER:SM29
-    \time 4/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+        }                                                                %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left.text =                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+    \markup {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+        \with-color                                                      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+            #(x11-color 'blue)                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+            {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                \fontsize                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    #-6                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    \general-align                                       %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        #Y                                               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        #DOWN                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        \note-by-number                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                            #2                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                            #0                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                            #1.25                                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                \upright                                                 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    {                                                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        =                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        36                                               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    }                                                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                \hspace                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    #1                                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+            }                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+        }                                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.padding = 0   %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.text = ##f    %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.padding = 0          %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.dash-period = 0                          %! SM29:METRONOME_MARK_SPANNER
+    \time 4/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1
-    \stopTextSpan                                                        %! METRONOME_MARK_SPANNER:SM29
-    \startTextSpan                                                       %! METRONOME_MARK_SPANNER:SM29
+    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
+    \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (301)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <10>                                     %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 [I.11]                                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [13'55'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (301)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <10>                                     %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             #3                                           %! SM3:STAGE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 [I.11]                                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [13'55'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 302]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (302)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <11>                                     %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [14'01'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (302)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <11>                                     %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [14'01'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 303]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (303)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <12>                                     %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [14'08'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (303)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <12>                                     %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [14'08'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 304]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (304)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <13>                                     %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [14'15'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (304)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <13>                                     %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [14'15'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 305]                                        %! SM4
-    \time 3/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 3/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (305)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <14>                                     %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 [I.12]                                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [14'21'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (305)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <14>                                     %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             #3                                           %! SM3:STAGE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 [I.12]                                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [14'21'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 306]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (306)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <15>                                     %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [14'26'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (306)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <15>                                     %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [14'26'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 307]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (307)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <16>                                     %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [14'31'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (307)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <16>                                     %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [14'31'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 308]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (308)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <17>                                     %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [14'36'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (308)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <17>                                     %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [14'36'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 309]                                        %! SM4
-%@% \once \override TextSpanner.bound-details.right.text =               %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@% \markup {                                                            %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%     \concat                                                          %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         {                                                            %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             \hspace                                                  %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                 #-0.5                                                %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%             \line                                                    %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                 {                                                    %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                     \fontsize                                        %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                         #-6                                          %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                         \general-align                               %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                             #Y                                       %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                             #DOWN                                    %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                             \note-by-number                          %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                                 #2                                   %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                                 #0                                   %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                                 #1.25                                %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                     \upright                                         %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                         {                                            %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                             =                                        %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                             144                                      %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                         }                                            %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%                 }                                                    %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%         }                                                            %! SM30:EXPLICIT_METRONOME_MARK:SM27
-%@%     }                                                                %! SM30:EXPLICIT_METRONOME_MARK:SM27 %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.Y-extent = ##f                           %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.arrow-width = 0.25                       %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.left-broken.text = ##f     %! METRONOME_MARK_SPANNER:SM29
+%@% \once \override TextSpanner.bound-details.right.text =               %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@% \markup {                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     \concat                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         {                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             \hspace                                                  %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 #-0.5                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             \line                                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 {                                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                     \fontsize                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                         #-6                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                         \general-align                               %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                             #Y                                       %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                             #DOWN                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                             \note-by-number                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                                 #2                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                                 #0                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                                 #1.25                                %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                     \upright                                         %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                         {                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                             =                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                             144                                      %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                         }                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 }                                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         }                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     }                                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.Y-extent = ##f                           %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.arrow-width = 0.25                       %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
-        }                                                                %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! METRONOME_MARK_SPANNER:SM29
+        }                                                                %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left.text = \markup {
         \large
             \upright
                 accel.
         \hspace
             #1
-        }                                                                %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right-broken.arrow = ##f   %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right-broken.padding = 0   %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right-broken.text = ##f    %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right.arrow = ##t          %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right.padding = 0          %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.bound-details.right.text =               %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-    \markup {                                                            %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-        \with-color                                                      %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-            #(x11-color 'blue)                                           %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-            \concat                                                      %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                {                                                        %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    \hspace                                              %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        #-0.5                                            %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                    \line                                                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        {                                                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                            \fontsize                                    %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                #-6                                      %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                \general-align                           %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                    #Y                                   %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                    #DOWN                                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                    \note-by-number                      %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                        #2                               %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                        #0                               %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                        #1.25                            %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                            \upright                                     %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                {                                        %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                    =                                    %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                    144                                  %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                }                                        %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                        }                                                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                }                                                        %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-        }                                                                %! SM30:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.dash-fraction = 0.25                     %! METRONOME_MARK_SPANNER:SM29
-    \once \override TextSpanner.dash-period = 1.5                        %! METRONOME_MARK_SPANNER:SM29
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+        }                                                                %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.arrow = ##f   %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.padding = 0   %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.text = ##f    %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.arrow = ##t          %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.padding = 0          %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.text =               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+    \markup {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+        \with-color                                                      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+            #(x11-color 'blue)                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+            \concat                                                      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                {                                                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    \hspace                                              %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        #-0.5                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    \line                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        {                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                            \fontsize                                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                                #-6                                      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                                \general-align                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                                    #Y                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                                    #DOWN                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                                    \note-by-number                      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                                        #2                               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                                        #0                               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                                        #1.25                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                            \upright                                     %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                                {                                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                                    =                                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                                    144                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                                }                                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        }                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                }                                                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+        }                                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.dash-fraction = 0.25                     %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.dash-period = 1.5                        %! SM29:METRONOME_MARK_SPANNER
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
-    \stopTextSpan                                                        %! METRONOME_MARK_SPANNER:SM29
-    \startTextSpan                                                       %! METRONOME_MARK_SPANNER:SM29
+    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
+    \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (309)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <18>                                     %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 [I.13]                                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [14'41'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (309)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <18>                                     %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             #3                                           %! SM3:STAGE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 [I.13]                                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [14'41'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 310]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (310)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <19>                                     %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 [I.14]                                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [14'46'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (310)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <19>                                     %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             #3                                           %! SM3:STAGE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 [I.14]                                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [14'46'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 311]                                        %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM1:REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (311)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <20>                                     %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [14'51'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (311)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <20>                                     %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [14'51'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 312]                                        %! SM4
-    \time 5/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 5/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/4
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (312)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <21>                                     %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 [I.15]                                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [14'56'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (312)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <21>                                     %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             #3                                           %! SM3:STAGE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 [I.15]                                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [14'56'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [I GlobalSkips measure 313]                                        %! SM4
     \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
-        }                                                                %! METRONOME_MARK_SPANNER:SM29
-    \time 1/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+        }                                                                %! SM29:METRONOME_MARK_SPANNER
+    \time 1/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/4
-    \stopTextSpan                                                        %! METRONOME_MARK_SPANNER:SM29
+    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     ^ \markup {
         \column
             {
-            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-            %@%                 (313)                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-            %@%                 <22>                                     %! MEASURE_INDEX_MARKUP:SM32
-            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%                 [I.16]                                   %! STAGE_NUMBER_MARKUP:SM3
-            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-            %@%                 [15'05'']                                %! CLOCK_TIME_MARKUP:SM28
-            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             #3                                           %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM31:MEASURE_NUMBER_MARKUP
+            %@%                 (313)                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \fontsize                                        %! SM32:MEASURE_INDEX_MARKUP
+            %@%             #3                                           %! SM32:MEASURE_INDEX_MARKUP
+            %@%             \with-color                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM32:MEASURE_INDEX_MARKUP
+            %@%                 <22>                                     %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%         \fontsize                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             #3                                           %! SM3:STAGE_NUMBER_MARKUP
+            %@%             \with-color                                  %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 #(x11-color 'DarkCyan)                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%                 [I.16]                                   %! SM3:STAGE_NUMBER_MARKUP
+            %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \with-color                                      %! SM28:CLOCK_TIME_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! SM28:CLOCK_TIME_MARKUP
+            %@%             \fontsize                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%                 #3                                       %! SM28:CLOCK_TIME_MARKUP
+            %@%                 [15'05'']                                %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     \override Score.BarLine.transparent = ##f                            %! SM5
@@ -1376,67 +1376,67 @@ I_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        \set OboeMusicStaff.instrumentName = \markup {           %! SM37:REAPPLIED_INSTRUMENT:SM8
-            \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
-                #16                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
-                \center-column                                   %! SM37:REAPPLIED_INSTRUMENT:SM8
-                    {                                            %! SM37:REAPPLIED_INSTRUMENT:SM8
-                        Clarinet                                 %! SM37:REAPPLIED_INSTRUMENT:SM8
-                        (Eb)                                     %! SM37:REAPPLIED_INSTRUMENT:SM8
-                    }                                            %! SM37:REAPPLIED_INSTRUMENT:SM8
-            }                                                    %! SM37:REAPPLIED_INSTRUMENT:SM8
-        \set OboeMusicStaff.shortInstrumentName = \markup {      %! SM37:REAPPLIED_INSTRUMENT:SM8
-            \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
-                #10                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
-                \center-column                                   %! SM37:REAPPLIED_INSTRUMENT:SM8
-                    {                                            %! SM37:REAPPLIED_INSTRUMENT:SM8
-                        Cl.                                      %! SM37:REAPPLIED_INSTRUMENT:SM8
-                        (Eb)                                     %! SM37:REAPPLIED_INSTRUMENT:SM8
-                    }                                            %! SM37:REAPPLIED_INSTRUMENT:SM8
-            }                                                    %! SM37:REAPPLIED_INSTRUMENT:SM8
-        \clef "treble"                                           %! SM37:REAPPLIED_CLEF:SM8
-        \once \override OboeMusicStaff.Clef.color = #(x11-color 'green4) %! SM37:REAPPLIED_CLEF_COLOR:SM6
-    %@% \override OboeMusicStaff.Clef.color = ##f                %! SM37:REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-        \set OboeMusicStaff.forceClef = ##t                      %! SM37:SM33:REAPPLIED_CLEF:SM8
-        \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'green4) %! SM37:REAPPLIED_INSTRUMENT_COLOR:SM6
-        \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+        \set OboeMusicStaff.instrumentName = \markup {           %! SM8:REAPPLIED_INSTRUMENT:SM37
+            \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
+                #16                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
+                \center-column                                   %! SM8:REAPPLIED_INSTRUMENT:SM37
+                    {                                            %! SM8:REAPPLIED_INSTRUMENT:SM37
+                        Clarinet                                 %! SM8:REAPPLIED_INSTRUMENT:SM37
+                        (Eb)                                     %! SM8:REAPPLIED_INSTRUMENT:SM37
+                    }                                            %! SM8:REAPPLIED_INSTRUMENT:SM37
+            }                                                    %! SM8:REAPPLIED_INSTRUMENT:SM37
+        \set OboeMusicStaff.shortInstrumentName = \markup {      %! SM8:REAPPLIED_INSTRUMENT:SM37
+            \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
+                #10                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
+                \center-column                                   %! SM8:REAPPLIED_INSTRUMENT:SM37
+                    {                                            %! SM8:REAPPLIED_INSTRUMENT:SM37
+                        Cl.                                      %! SM8:REAPPLIED_INSTRUMENT:SM37
+                        (Eb)                                     %! SM8:REAPPLIED_INSTRUMENT:SM37
+                    }                                            %! SM8:REAPPLIED_INSTRUMENT:SM37
+            }                                                    %! SM8:REAPPLIED_INSTRUMENT:SM37
+        \clef "treble"                                           %! SM8:REAPPLIED_CLEF:SM37
+        \once \override OboeMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+    %@% \override OboeMusicStaff.Clef.color = ##f                %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+        \set OboeMusicStaff.forceClef = ##t                      %! SM8:REAPPLIED_CLEF:SM33:SM37
+        \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
+        \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
         c''4.
-        \ff                                                      %! IC:REDUNDANT_DYNAMIC:SM8
+        \ff                                                      %! SM8:REDUNDANT_DYNAMIC:IC
         ^ \markup {
             \column
                 {
-                    \line                                        %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
-                        {                                        %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
-                            \with-color                          %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
-                                #(x11-color 'green4)             %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
-                                (“ClarinetInEFlat”)              %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
-                        }                                        %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
+                    \line                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                        {                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                            \with-color                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                                #(x11-color 'green4)             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                                (“ClarinetInEFlat”)              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                        }                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                     \line                                        %! SM14
                         {                                        %! SM14
                             @                                    %! SM14
                         }                                        %! SM14
                 }
             }
-        \override OboeMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM37:REAPPLIED_CLEF_REDRAW_COLOR:SM6
-        \override OboeMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM37:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
-        \set OboeMusicStaff.instrumentName = \markup {           %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            \hcenter-in                                          %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                #16                                              %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                \center-column                                   %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                    {                                            %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                        Clarinet                                 %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                        (Eb)                                     %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                    }                                            %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            }                                                    %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-        \set OboeMusicStaff.shortInstrumentName = \markup {      %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            \hcenter-in                                          %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                #10                                              %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                \center-column                                   %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                    {                                            %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                        Cl.                                      %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                        (Eb)                                     %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                    }                                            %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            }                                                    %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+        \override OboeMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+        \override OboeMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
+        \set OboeMusicStaff.instrumentName = \markup {           %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+            \hcenter-in                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                #16                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                \center-column                                   %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                    {                                            %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                        Clarinet                                 %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                        (Eb)                                     %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                    }                                            %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+            }                                                    %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+        \set OboeMusicStaff.shortInstrumentName = \markup {      %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+            \hcenter-in                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                #10                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                \center-column                                   %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                    {                                            %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                        Cl.                                      %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                        (Eb)                                     %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                    }                                            %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+            }                                                    %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1545,67 +1545,67 @@ I_ClarinetMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        \set ClarinetMusicStaff.instrumentName = \markup {       %! IC:REDUNDANT_INSTRUMENT:SM8
-            \hcenter-in                                          %! IC:REDUNDANT_INSTRUMENT:SM8
-                #16                                              %! IC:REDUNDANT_INSTRUMENT:SM8
-                \center-column                                   %! IC:REDUNDANT_INSTRUMENT:SM8
-                    {                                            %! IC:REDUNDANT_INSTRUMENT:SM8
-                        Bass                                     %! IC:REDUNDANT_INSTRUMENT:SM8
-                        clarinet                                 %! IC:REDUNDANT_INSTRUMENT:SM8
-                    }                                            %! IC:REDUNDANT_INSTRUMENT:SM8
-            }                                                    %! IC:REDUNDANT_INSTRUMENT:SM8
-        \set ClarinetMusicStaff.shortInstrumentName = \markup {  %! IC:REDUNDANT_INSTRUMENT:SM8
-            \hcenter-in                                          %! IC:REDUNDANT_INSTRUMENT:SM8
-                #10                                              %! IC:REDUNDANT_INSTRUMENT:SM8
-                \center-column                                   %! IC:REDUNDANT_INSTRUMENT:SM8
-                    {                                            %! IC:REDUNDANT_INSTRUMENT:SM8
-                        Bass                                     %! IC:REDUNDANT_INSTRUMENT:SM8
-                        cl.                                      %! IC:REDUNDANT_INSTRUMENT:SM8
-                    }                                            %! IC:REDUNDANT_INSTRUMENT:SM8
-            }                                                    %! IC:REDUNDANT_INSTRUMENT:SM8
-        \clef "treble"                                           %! SM37:REAPPLIED_CLEF:SM8
-        \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! SM37:REAPPLIED_CLEF_COLOR:SM6
-    %@% \override ClarinetMusicStaff.Clef.color = ##f            %! SM37:REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-        \set ClarinetMusicStaff.forceClef = ##t                  %! SM37:SM33:REAPPLIED_CLEF:SM8
-        \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_INSTRUMENT_COLOR:SM6
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+        \set ClarinetMusicStaff.instrumentName = \markup {       %! SM8:REDUNDANT_INSTRUMENT:IC
+            \hcenter-in                                          %! SM8:REDUNDANT_INSTRUMENT:IC
+                #16                                              %! SM8:REDUNDANT_INSTRUMENT:IC
+                \center-column                                   %! SM8:REDUNDANT_INSTRUMENT:IC
+                    {                                            %! SM8:REDUNDANT_INSTRUMENT:IC
+                        Bass                                     %! SM8:REDUNDANT_INSTRUMENT:IC
+                        clarinet                                 %! SM8:REDUNDANT_INSTRUMENT:IC
+                    }                                            %! SM8:REDUNDANT_INSTRUMENT:IC
+            }                                                    %! SM8:REDUNDANT_INSTRUMENT:IC
+        \set ClarinetMusicStaff.shortInstrumentName = \markup {  %! SM8:REDUNDANT_INSTRUMENT:IC
+            \hcenter-in                                          %! SM8:REDUNDANT_INSTRUMENT:IC
+                #10                                              %! SM8:REDUNDANT_INSTRUMENT:IC
+                \center-column                                   %! SM8:REDUNDANT_INSTRUMENT:IC
+                    {                                            %! SM8:REDUNDANT_INSTRUMENT:IC
+                        Bass                                     %! SM8:REDUNDANT_INSTRUMENT:IC
+                        cl.                                      %! SM8:REDUNDANT_INSTRUMENT:IC
+                    }                                            %! SM8:REDUNDANT_INSTRUMENT:IC
+            }                                                    %! SM8:REDUNDANT_INSTRUMENT:IC
+        \clef "treble"                                           %! SM8:REAPPLIED_CLEF:SM37
+        \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+    %@% \override ClarinetMusicStaff.Clef.color = ##f            %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+        \set ClarinetMusicStaff.forceClef = ##t                  %! SM8:REAPPLIED_CLEF:SM33:SM37
+        \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_INSTRUMENT_COLOR:IC
+        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
         f8
-        \ff                                                      %! IC:REDUNDANT_DYNAMIC:SM8
+        \ff                                                      %! SM8:REDUNDANT_DYNAMIC:IC
         ^ \markup {
             \column
                 {
-                    \line                                        %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                        {                                        %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                            \with-color                          %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                                #(x11-color 'DeepPink1)          %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                                (“BassClarinet”)                 %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                        }                                        %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
+                    \line                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                        {                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                            \with-color                          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                                #(x11-color 'DeepPink1)          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                                (“BassClarinet”)                 %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                        }                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
                     \line                                        %! SM14
                         {                                        %! SM14
                             @                                    %! SM14
                         }                                        %! SM14
                 }
             }
-        \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM37:REAPPLIED_CLEF_REDRAW_COLOR:SM6
-        \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! IC:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
-        \set ClarinetMusicStaff.instrumentName = \markup {       %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            \hcenter-in                                          %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                #16                                              %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                \center-column                                   %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    {                                            %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                        Bass                                     %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                        clarinet                                 %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    }                                            %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            }                                                    %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        \set ClarinetMusicStaff.shortInstrumentName = \markup {  %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            \hcenter-in                                          %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                #10                                              %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                \center-column                                   %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    {                                            %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                        Bass                                     %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                        cl.                                      %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    }                                            %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            }                                                    %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
+        \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+        \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! SM6:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:IC
+        \set ClarinetMusicStaff.instrumentName = \markup {       %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            \hcenter-in                                          %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                #16                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                \center-column                                   %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    {                                            %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                        Bass                                     %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                        clarinet                                 %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    }                                            %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            }                                                    %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        \set ClarinetMusicStaff.shortInstrumentName = \markup {  %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            \hcenter-in                                          %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                #10                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                \center-column                                   %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    {                                            %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                        Bass                                     %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                        cl.                                      %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    }                                            %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            }                                                    %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1638,62 +1638,62 @@ I_ClarinetMusicVoice = {
     \once \override Dots.color = #red
     \once \override NoteHead.color = #red
     \once \override Stem.color = #red
-    \set ClarinetMusicStaff.instrumentName = \markup {           %! IC:REDUNDANT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:REDUNDANT_INSTRUMENT:SM8
-            #16                                                  %! IC:REDUNDANT_INSTRUMENT:SM8
-            \center-column                                       %! IC:REDUNDANT_INSTRUMENT:SM8
-                {                                                %! IC:REDUNDANT_INSTRUMENT:SM8
-                    Bass                                         %! IC:REDUNDANT_INSTRUMENT:SM8
-                    clarinet                                     %! IC:REDUNDANT_INSTRUMENT:SM8
-                }                                                %! IC:REDUNDANT_INSTRUMENT:SM8
-        }                                                        %! IC:REDUNDANT_INSTRUMENT:SM8
-    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! IC:REDUNDANT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:REDUNDANT_INSTRUMENT:SM8
-            #10                                                  %! IC:REDUNDANT_INSTRUMENT:SM8
-            \center-column                                       %! IC:REDUNDANT_INSTRUMENT:SM8
-                {                                                %! IC:REDUNDANT_INSTRUMENT:SM8
-                    Bass                                         %! IC:REDUNDANT_INSTRUMENT:SM8
-                    cl.                                          %! IC:REDUNDANT_INSTRUMENT:SM8
-                }                                                %! IC:REDUNDANT_INSTRUMENT:SM8
-        }                                                        %! IC:REDUNDANT_INSTRUMENT:SM8
-    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_INSTRUMENT_COLOR:SM6
-    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+    \set ClarinetMusicStaff.instrumentName = \markup {           %! SM8:REDUNDANT_INSTRUMENT:IC
+        \hcenter-in                                              %! SM8:REDUNDANT_INSTRUMENT:IC
+            #16                                                  %! SM8:REDUNDANT_INSTRUMENT:IC
+            \center-column                                       %! SM8:REDUNDANT_INSTRUMENT:IC
+                {                                                %! SM8:REDUNDANT_INSTRUMENT:IC
+                    Bass                                         %! SM8:REDUNDANT_INSTRUMENT:IC
+                    clarinet                                     %! SM8:REDUNDANT_INSTRUMENT:IC
+                }                                                %! SM8:REDUNDANT_INSTRUMENT:IC
+        }                                                        %! SM8:REDUNDANT_INSTRUMENT:IC
+    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! SM8:REDUNDANT_INSTRUMENT:IC
+        \hcenter-in                                              %! SM8:REDUNDANT_INSTRUMENT:IC
+            #10                                                  %! SM8:REDUNDANT_INSTRUMENT:IC
+            \center-column                                       %! SM8:REDUNDANT_INSTRUMENT:IC
+                {                                                %! SM8:REDUNDANT_INSTRUMENT:IC
+                    Bass                                         %! SM8:REDUNDANT_INSTRUMENT:IC
+                    cl.                                          %! SM8:REDUNDANT_INSTRUMENT:IC
+                }                                                %! SM8:REDUNDANT_INSTRUMENT:IC
+        }                                                        %! SM8:REDUNDANT_INSTRUMENT:IC
+    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_INSTRUMENT_COLOR:IC
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     fs2.
-    \ff                                                          %! IC:REDUNDANT_DYNAMIC:SM8
+    \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
     ^ \markup {
         \column
             {
-                \line                                            %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                    {                                            %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                        \with-color                              %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                            #(x11-color 'DeepPink1)              %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                            (“BassClarinet”)                     %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                    }                                            %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
+                \line                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                    {                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                        \with-color                              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                            #(x11-color 'DeepPink1)              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                            (“BassClarinet”)                     %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                    }                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
                 \line                                            %! SM14
                     {                                            %! SM14
                         @                                        %! SM14
                     }                                            %! SM14
             }
         }
-    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! IC:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
-    \set ClarinetMusicStaff.instrumentName = \markup {           %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            #16                                                  %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            \center-column                                       %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                {                                                %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    Bass                                         %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    clarinet                                     %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                }                                                %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        }                                                        %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            #10                                                  %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            \center-column                                       %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                {                                                %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    Bass                                         %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    cl.                                          %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                }                                                %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        }                                                        %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
+    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! SM6:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:IC
+    \set ClarinetMusicStaff.instrumentName = \markup {           %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        \hcenter-in                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            #16                                                  %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            \center-column                                       %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                {                                                %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    Bass                                         %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    clarinet                                     %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                }                                                %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        }                                                        %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        \hcenter-in                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            #10                                                  %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            \center-column                                       %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                {                                                %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    Bass                                         %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    cl.                                          %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                }                                                %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        }                                                        %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
     
     % [I ClarinetMusicVoice measure 294]                         %! SM4
     \once \override Accidental.color = #red
@@ -1722,63 +1722,63 @@ I_ClarinetMusicVoice = {
     \once \override Dots.color = #red
     \once \override NoteHead.color = #red
     \once \override Stem.color = #red
-    \set ClarinetMusicStaff.instrumentName = \markup {           %! IC:REDUNDANT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:REDUNDANT_INSTRUMENT:SM8
-            #16                                                  %! IC:REDUNDANT_INSTRUMENT:SM8
-            \center-column                                       %! IC:REDUNDANT_INSTRUMENT:SM8
-                {                                                %! IC:REDUNDANT_INSTRUMENT:SM8
-                    Bass                                         %! IC:REDUNDANT_INSTRUMENT:SM8
-                    clarinet                                     %! IC:REDUNDANT_INSTRUMENT:SM8
-                }                                                %! IC:REDUNDANT_INSTRUMENT:SM8
-        }                                                        %! IC:REDUNDANT_INSTRUMENT:SM8
-    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! IC:REDUNDANT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:REDUNDANT_INSTRUMENT:SM8
-            #10                                                  %! IC:REDUNDANT_INSTRUMENT:SM8
-            \center-column                                       %! IC:REDUNDANT_INSTRUMENT:SM8
-                {                                                %! IC:REDUNDANT_INSTRUMENT:SM8
-                    Bass                                         %! IC:REDUNDANT_INSTRUMENT:SM8
-                    cl.                                          %! IC:REDUNDANT_INSTRUMENT:SM8
-                }                                                %! IC:REDUNDANT_INSTRUMENT:SM8
-        }                                                        %! IC:REDUNDANT_INSTRUMENT:SM8
-    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_INSTRUMENT_COLOR:SM6
-    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC2:EXPLICIT_DYNAMIC_COLOR:SM6
+    \set ClarinetMusicStaff.instrumentName = \markup {           %! SM8:REDUNDANT_INSTRUMENT:IC
+        \hcenter-in                                              %! SM8:REDUNDANT_INSTRUMENT:IC
+            #16                                                  %! SM8:REDUNDANT_INSTRUMENT:IC
+            \center-column                                       %! SM8:REDUNDANT_INSTRUMENT:IC
+                {                                                %! SM8:REDUNDANT_INSTRUMENT:IC
+                    Bass                                         %! SM8:REDUNDANT_INSTRUMENT:IC
+                    clarinet                                     %! SM8:REDUNDANT_INSTRUMENT:IC
+                }                                                %! SM8:REDUNDANT_INSTRUMENT:IC
+        }                                                        %! SM8:REDUNDANT_INSTRUMENT:IC
+    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! SM8:REDUNDANT_INSTRUMENT:IC
+        \hcenter-in                                              %! SM8:REDUNDANT_INSTRUMENT:IC
+            #10                                                  %! SM8:REDUNDANT_INSTRUMENT:IC
+            \center-column                                       %! SM8:REDUNDANT_INSTRUMENT:IC
+                {                                                %! SM8:REDUNDANT_INSTRUMENT:IC
+                    Bass                                         %! SM8:REDUNDANT_INSTRUMENT:IC
+                    cl.                                          %! SM8:REDUNDANT_INSTRUMENT:IC
+                }                                                %! SM8:REDUNDANT_INSTRUMENT:IC
+        }                                                        %! SM8:REDUNDANT_INSTRUMENT:IC
+    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_INSTRUMENT_COLOR:IC
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     fs2.
     \<                                                           %! HC1
     \ff                                                          %! HC1
     ^ \markup {
         \column
             {
-                \line                                            %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                    {                                            %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                        \with-color                              %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                            #(x11-color 'DeepPink1)              %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                            (“BassClarinet”)                     %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                    }                                            %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
+                \line                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                    {                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                        \with-color                              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                            #(x11-color 'DeepPink1)              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                            (“BassClarinet”)                     %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                    }                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
                 \line                                            %! SM14
                     {                                            %! SM14
                         @                                        %! SM14
                     }                                            %! SM14
             }
         }
-    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! IC:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
-    \set ClarinetMusicStaff.instrumentName = \markup {           %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            #16                                                  %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            \center-column                                       %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                {                                                %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    Bass                                         %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    clarinet                                     %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                }                                                %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        }                                                        %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            #10                                                  %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            \center-column                                       %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                {                                                %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    Bass                                         %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    cl.                                          %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                }                                                %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        }                                                        %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
+    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! SM6:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:IC
+    \set ClarinetMusicStaff.instrumentName = \markup {           %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        \hcenter-in                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            #16                                                  %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            \center-column                                       %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                {                                                %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    Bass                                         %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    clarinet                                     %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                }                                                %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        }                                                        %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        \hcenter-in                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            #10                                                  %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            \center-column                                       %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                {                                                %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    Bass                                         %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    cl.                                          %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                }                                                %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        }                                                        %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
     
     \once \override Accidental.color = #red
     \once \override Beam.color = #red
@@ -1806,7 +1806,7 @@ I_ClarinetMusicVoice = {
     \once \override Dots.color = #red
     \once \override NoteHead.color = #red
     \once \override Stem.color = #red
-    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC3:EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     fs4.
     \repeatTie
     \fff                                                         %! HC1
@@ -1819,60 +1819,60 @@ I_ClarinetMusicVoice = {
     \once \override Dots.color = #red
     \once \override NoteHead.color = #red
     \once \override Stem.color = #red
-    \set ClarinetMusicStaff.instrumentName = \markup {           %! IC:REDUNDANT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:REDUNDANT_INSTRUMENT:SM8
-            #16                                                  %! IC:REDUNDANT_INSTRUMENT:SM8
-            \center-column                                       %! IC:REDUNDANT_INSTRUMENT:SM8
-                {                                                %! IC:REDUNDANT_INSTRUMENT:SM8
-                    Bass                                         %! IC:REDUNDANT_INSTRUMENT:SM8
-                    clarinet                                     %! IC:REDUNDANT_INSTRUMENT:SM8
-                }                                                %! IC:REDUNDANT_INSTRUMENT:SM8
-        }                                                        %! IC:REDUNDANT_INSTRUMENT:SM8
-    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! IC:REDUNDANT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:REDUNDANT_INSTRUMENT:SM8
-            #10                                                  %! IC:REDUNDANT_INSTRUMENT:SM8
-            \center-column                                       %! IC:REDUNDANT_INSTRUMENT:SM8
-                {                                                %! IC:REDUNDANT_INSTRUMENT:SM8
-                    Bass                                         %! IC:REDUNDANT_INSTRUMENT:SM8
-                    cl.                                          %! IC:REDUNDANT_INSTRUMENT:SM8
-                }                                                %! IC:REDUNDANT_INSTRUMENT:SM8
-        }                                                        %! IC:REDUNDANT_INSTRUMENT:SM8
-    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_INSTRUMENT_COLOR:SM6
+    \set ClarinetMusicStaff.instrumentName = \markup {           %! SM8:REDUNDANT_INSTRUMENT:IC
+        \hcenter-in                                              %! SM8:REDUNDANT_INSTRUMENT:IC
+            #16                                                  %! SM8:REDUNDANT_INSTRUMENT:IC
+            \center-column                                       %! SM8:REDUNDANT_INSTRUMENT:IC
+                {                                                %! SM8:REDUNDANT_INSTRUMENT:IC
+                    Bass                                         %! SM8:REDUNDANT_INSTRUMENT:IC
+                    clarinet                                     %! SM8:REDUNDANT_INSTRUMENT:IC
+                }                                                %! SM8:REDUNDANT_INSTRUMENT:IC
+        }                                                        %! SM8:REDUNDANT_INSTRUMENT:IC
+    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! SM8:REDUNDANT_INSTRUMENT:IC
+        \hcenter-in                                              %! SM8:REDUNDANT_INSTRUMENT:IC
+            #10                                                  %! SM8:REDUNDANT_INSTRUMENT:IC
+            \center-column                                       %! SM8:REDUNDANT_INSTRUMENT:IC
+                {                                                %! SM8:REDUNDANT_INSTRUMENT:IC
+                    Bass                                         %! SM8:REDUNDANT_INSTRUMENT:IC
+                    cl.                                          %! SM8:REDUNDANT_INSTRUMENT:IC
+                }                                                %! SM8:REDUNDANT_INSTRUMENT:IC
+        }                                                        %! SM8:REDUNDANT_INSTRUMENT:IC
+    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_INSTRUMENT_COLOR:IC
     fs4.
     ^ \markup {
         \column
             {
-                \line                                            %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                    {                                            %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                        \with-color                              %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                            #(x11-color 'DeepPink1)              %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                            (“BassClarinet”)                     %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                    }                                            %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
+                \line                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                    {                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                        \with-color                              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                            #(x11-color 'DeepPink1)              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                            (“BassClarinet”)                     %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                    }                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
                 \line                                            %! SM14
                     {                                            %! SM14
                         @                                        %! SM14
                     }                                            %! SM14
             }
         }
-    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! IC:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
-    \set ClarinetMusicStaff.instrumentName = \markup {           %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            #16                                                  %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            \center-column                                       %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                {                                                %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    Bass                                         %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    clarinet                                     %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                }                                                %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        }                                                        %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            #10                                                  %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            \center-column                                       %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                {                                                %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    Bass                                         %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    cl.                                          %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                }                                                %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        }                                                        %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
+    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! SM6:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:IC
+    \set ClarinetMusicStaff.instrumentName = \markup {           %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        \hcenter-in                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            #16                                                  %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            \center-column                                       %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                {                                                %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    Bass                                         %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    clarinet                                     %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                }                                                %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        }                                                        %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        \hcenter-in                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            #10                                                  %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            \center-column                                       %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                {                                                %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    Bass                                         %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    cl.                                          %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                }                                                %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        }                                                        %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
     
     \once \override Accidental.color = #red
     \once \override Beam.color = #red
@@ -1911,62 +1911,62 @@ I_ClarinetMusicVoice = {
     \once \override Dots.color = #red
     \once \override NoteHead.color = #red
     \once \override Stem.color = #red
-    \set ClarinetMusicStaff.instrumentName = \markup {           %! IC:REDUNDANT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:REDUNDANT_INSTRUMENT:SM8
-            #16                                                  %! IC:REDUNDANT_INSTRUMENT:SM8
-            \center-column                                       %! IC:REDUNDANT_INSTRUMENT:SM8
-                {                                                %! IC:REDUNDANT_INSTRUMENT:SM8
-                    Bass                                         %! IC:REDUNDANT_INSTRUMENT:SM8
-                    clarinet                                     %! IC:REDUNDANT_INSTRUMENT:SM8
-                }                                                %! IC:REDUNDANT_INSTRUMENT:SM8
-        }                                                        %! IC:REDUNDANT_INSTRUMENT:SM8
-    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! IC:REDUNDANT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:REDUNDANT_INSTRUMENT:SM8
-            #10                                                  %! IC:REDUNDANT_INSTRUMENT:SM8
-            \center-column                                       %! IC:REDUNDANT_INSTRUMENT:SM8
-                {                                                %! IC:REDUNDANT_INSTRUMENT:SM8
-                    Bass                                         %! IC:REDUNDANT_INSTRUMENT:SM8
-                    cl.                                          %! IC:REDUNDANT_INSTRUMENT:SM8
-                }                                                %! IC:REDUNDANT_INSTRUMENT:SM8
-        }                                                        %! IC:REDUNDANT_INSTRUMENT:SM8
-    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_INSTRUMENT_COLOR:SM6
-    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
+    \set ClarinetMusicStaff.instrumentName = \markup {           %! SM8:REDUNDANT_INSTRUMENT:IC
+        \hcenter-in                                              %! SM8:REDUNDANT_INSTRUMENT:IC
+            #16                                                  %! SM8:REDUNDANT_INSTRUMENT:IC
+            \center-column                                       %! SM8:REDUNDANT_INSTRUMENT:IC
+                {                                                %! SM8:REDUNDANT_INSTRUMENT:IC
+                    Bass                                         %! SM8:REDUNDANT_INSTRUMENT:IC
+                    clarinet                                     %! SM8:REDUNDANT_INSTRUMENT:IC
+                }                                                %! SM8:REDUNDANT_INSTRUMENT:IC
+        }                                                        %! SM8:REDUNDANT_INSTRUMENT:IC
+    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! SM8:REDUNDANT_INSTRUMENT:IC
+        \hcenter-in                                              %! SM8:REDUNDANT_INSTRUMENT:IC
+            #10                                                  %! SM8:REDUNDANT_INSTRUMENT:IC
+            \center-column                                       %! SM8:REDUNDANT_INSTRUMENT:IC
+                {                                                %! SM8:REDUNDANT_INSTRUMENT:IC
+                    Bass                                         %! SM8:REDUNDANT_INSTRUMENT:IC
+                    cl.                                          %! SM8:REDUNDANT_INSTRUMENT:IC
+                }                                                %! SM8:REDUNDANT_INSTRUMENT:IC
+        }                                                        %! SM8:REDUNDANT_INSTRUMENT:IC
+    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_INSTRUMENT_COLOR:IC
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     fs1
-    \fff_poss                                                    %! IC:EXPLICIT_DYNAMIC:SM8
+    \fff_poss                                                    %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {
         \column
             {
-                \line                                            %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                    {                                            %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                        \with-color                              %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                            #(x11-color 'DeepPink1)              %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                            (“BassClarinet”)                     %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                    }                                            %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
+                \line                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                    {                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                        \with-color                              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                            #(x11-color 'DeepPink1)              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                            (“BassClarinet”)                     %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                    }                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
                 \line                                            %! SM14
                     {                                            %! SM14
                         @                                        %! SM14
                     }                                            %! SM14
             }
         }
-    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! IC:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
-    \set ClarinetMusicStaff.instrumentName = \markup {           %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            #16                                                  %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            \center-column                                       %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                {                                                %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    Bass                                         %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    clarinet                                     %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                }                                                %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        }                                                        %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            #10                                                  %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            \center-column                                       %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                {                                                %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    Bass                                         %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    cl.                                          %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                }                                                %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        }                                                        %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
+    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! SM6:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:IC
+    \set ClarinetMusicStaff.instrumentName = \markup {           %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        \hcenter-in                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            #16                                                  %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            \center-column                                       %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                {                                                %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    Bass                                         %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    clarinet                                     %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                }                                                %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        }                                                        %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        \hcenter-in                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            #10                                                  %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            \center-column                                       %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                {                                                %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    Bass                                         %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    cl.                                          %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                }                                                %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        }                                                        %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
     
     % [I ClarinetMusicVoice measure 300]                         %! SM4
     \once \override Accidental.color = #red
@@ -1995,63 +1995,63 @@ I_ClarinetMusicVoice = {
     \once \override Dots.color = #red
     \once \override NoteHead.color = #red
     \once \override Stem.color = #red
-    \set ClarinetMusicStaff.instrumentName = \markup {           %! IC:REDUNDANT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:REDUNDANT_INSTRUMENT:SM8
-            #16                                                  %! IC:REDUNDANT_INSTRUMENT:SM8
-            \center-column                                       %! IC:REDUNDANT_INSTRUMENT:SM8
-                {                                                %! IC:REDUNDANT_INSTRUMENT:SM8
-                    Bass                                         %! IC:REDUNDANT_INSTRUMENT:SM8
-                    clarinet                                     %! IC:REDUNDANT_INSTRUMENT:SM8
-                }                                                %! IC:REDUNDANT_INSTRUMENT:SM8
-        }                                                        %! IC:REDUNDANT_INSTRUMENT:SM8
-    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! IC:REDUNDANT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:REDUNDANT_INSTRUMENT:SM8
-            #10                                                  %! IC:REDUNDANT_INSTRUMENT:SM8
-            \center-column                                       %! IC:REDUNDANT_INSTRUMENT:SM8
-                {                                                %! IC:REDUNDANT_INSTRUMENT:SM8
-                    Bass                                         %! IC:REDUNDANT_INSTRUMENT:SM8
-                    cl.                                          %! IC:REDUNDANT_INSTRUMENT:SM8
-                }                                                %! IC:REDUNDANT_INSTRUMENT:SM8
-        }                                                        %! IC:REDUNDANT_INSTRUMENT:SM8
-    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_INSTRUMENT_COLOR:SM6
-    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC2:EXPLICIT_DYNAMIC_COLOR:SM6
+    \set ClarinetMusicStaff.instrumentName = \markup {           %! SM8:REDUNDANT_INSTRUMENT:IC
+        \hcenter-in                                              %! SM8:REDUNDANT_INSTRUMENT:IC
+            #16                                                  %! SM8:REDUNDANT_INSTRUMENT:IC
+            \center-column                                       %! SM8:REDUNDANT_INSTRUMENT:IC
+                {                                                %! SM8:REDUNDANT_INSTRUMENT:IC
+                    Bass                                         %! SM8:REDUNDANT_INSTRUMENT:IC
+                    clarinet                                     %! SM8:REDUNDANT_INSTRUMENT:IC
+                }                                                %! SM8:REDUNDANT_INSTRUMENT:IC
+        }                                                        %! SM8:REDUNDANT_INSTRUMENT:IC
+    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! SM8:REDUNDANT_INSTRUMENT:IC
+        \hcenter-in                                              %! SM8:REDUNDANT_INSTRUMENT:IC
+            #10                                                  %! SM8:REDUNDANT_INSTRUMENT:IC
+            \center-column                                       %! SM8:REDUNDANT_INSTRUMENT:IC
+                {                                                %! SM8:REDUNDANT_INSTRUMENT:IC
+                    Bass                                         %! SM8:REDUNDANT_INSTRUMENT:IC
+                    cl.                                          %! SM8:REDUNDANT_INSTRUMENT:IC
+                }                                                %! SM8:REDUNDANT_INSTRUMENT:IC
+        }                                                        %! SM8:REDUNDANT_INSTRUMENT:IC
+    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_INSTRUMENT_COLOR:IC
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     fs1
     \>                                                           %! HC1
     \fff                                                         %! HC1
     ^ \markup {
         \column
             {
-                \line                                            %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                    {                                            %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                        \with-color                              %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                            #(x11-color 'DeepPink1)              %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                            (“BassClarinet”)                     %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                    }                                            %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
+                \line                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                    {                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                        \with-color                              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                            #(x11-color 'DeepPink1)              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                            (“BassClarinet”)                     %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                    }                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
                 \line                                            %! SM14
                     {                                            %! SM14
                         @                                        %! SM14
                     }                                            %! SM14
             }
         }
-    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! IC:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
-    \set ClarinetMusicStaff.instrumentName = \markup {           %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            #16                                                  %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            \center-column                                       %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                {                                                %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    Bass                                         %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    clarinet                                     %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                }                                                %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        }                                                        %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            #10                                                  %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            \center-column                                       %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                {                                                %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    Bass                                         %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                    cl.                                          %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                }                                                %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        }                                                        %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
+    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! SM6:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:IC
+    \set ClarinetMusicStaff.instrumentName = \markup {           %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        \hcenter-in                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            #16                                                  %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            \center-column                                       %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                {                                                %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    Bass                                         %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    clarinet                                     %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                }                                                %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        }                                                        %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        \hcenter-in                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            #10                                                  %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            \center-column                                       %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                {                                                %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    Bass                                         %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                    cl.                                          %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                }                                                %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        }                                                        %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
     
     % [I ClarinetMusicVoice measure 302]                         %! SM4
     \once \override Accidental.color = #red
@@ -2081,7 +2081,7 @@ I_ClarinetMusicVoice = {
     \once \override Dots.color = #red
     \once \override NoteHead.color = #red
     \once \override Stem.color = #red
-    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC3:EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     fs1
     \repeatTie
     \ppp                                                         %! HC1
@@ -2138,52 +2138,52 @@ I_PianoMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        \set PianoMusicStaff.instrumentName = \markup {          %! IC:REDUNDANT_INSTRUMENT:SM8
-            \hcenter-in                                          %! IC:REDUNDANT_INSTRUMENT:SM8
-                #16                                              %! IC:REDUNDANT_INSTRUMENT:SM8
-                Piano                                            %! IC:REDUNDANT_INSTRUMENT:SM8
-            }                                                    %! IC:REDUNDANT_INSTRUMENT:SM8
-        \set PianoMusicStaff.shortInstrumentName = \markup {     %! IC:REDUNDANT_INSTRUMENT:SM8
-            \hcenter-in                                          %! IC:REDUNDANT_INSTRUMENT:SM8
-                #10                                              %! IC:REDUNDANT_INSTRUMENT:SM8
-                Pf.                                              %! IC:REDUNDANT_INSTRUMENT:SM8
-            }                                                    %! IC:REDUNDANT_INSTRUMENT:SM8
-        \clef "treble"                                           %! SM37:REAPPLIED_CLEF:SM8
-        \once \override PianoMusicStaff.Clef.color = #(x11-color 'green4) %! SM37:REAPPLIED_CLEF_COLOR:SM6
-    %@% \override PianoMusicStaff.Clef.color = ##f               %! SM37:REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-        \set PianoMusicStaff.forceClef = ##t                     %! SM37:SM33:REAPPLIED_CLEF:SM8
-        \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_INSTRUMENT_COLOR:SM6
-        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+        \set PianoMusicStaff.instrumentName = \markup {          %! SM8:REDUNDANT_INSTRUMENT:IC
+            \hcenter-in                                          %! SM8:REDUNDANT_INSTRUMENT:IC
+                #16                                              %! SM8:REDUNDANT_INSTRUMENT:IC
+                Piano                                            %! SM8:REDUNDANT_INSTRUMENT:IC
+            }                                                    %! SM8:REDUNDANT_INSTRUMENT:IC
+        \set PianoMusicStaff.shortInstrumentName = \markup {     %! SM8:REDUNDANT_INSTRUMENT:IC
+            \hcenter-in                                          %! SM8:REDUNDANT_INSTRUMENT:IC
+                #10                                              %! SM8:REDUNDANT_INSTRUMENT:IC
+                Pf.                                              %! SM8:REDUNDANT_INSTRUMENT:IC
+            }                                                    %! SM8:REDUNDANT_INSTRUMENT:IC
+        \clef "treble"                                           %! SM8:REAPPLIED_CLEF:SM37
+        \once \override PianoMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+    %@% \override PianoMusicStaff.Clef.color = ##f               %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+        \set PianoMusicStaff.forceClef = ##t                     %! SM8:REAPPLIED_CLEF:SM33:SM37
+        \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_INSTRUMENT_COLOR:IC
+        \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
         fs'''4.
         :32                                                      %! IC
-        \fff                                                     %! IC:REDUNDANT_DYNAMIC:SM8
+        \fff                                                     %! SM8:REDUNDANT_DYNAMIC:IC
         ^ \markup {
             \column
                 {
-                    \line                                        %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                        {                                        %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                            \with-color                          %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                                #(x11-color 'DeepPink1)          %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                                (“Piano”)                        %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                        }                                        %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
+                    \line                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                        {                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                            \with-color                          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                                #(x11-color 'DeepPink1)          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                                (“Piano”)                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                        }                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
                     \line                                        %! SM14
                         {                                        %! SM14
                             @                                    %! SM14
                         }                                        %! SM14
                 }
             }
-        \override PianoMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM37:REAPPLIED_CLEF_REDRAW_COLOR:SM6
-        \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! IC:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
-        \set PianoMusicStaff.instrumentName = \markup {          %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            \hcenter-in                                          %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                #16                                              %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                Piano                                            %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            }                                                    %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        \set PianoMusicStaff.shortInstrumentName = \markup {     %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            \hcenter-in                                          %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                #10                                              %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                Pf.                                              %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            }                                                    %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
+        \override PianoMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+        \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! SM6:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:IC
+        \set PianoMusicStaff.instrumentName = \markup {          %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            \hcenter-in                                          %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                #16                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                Piano                                            %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            }                                                    %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        \set PianoMusicStaff.shortInstrumentName = \markup {     %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            \hcenter-in                                          %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                #10                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                Pf.                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            }                                                    %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2202,34 +2202,34 @@ I_PianoMusicVoice = {
     R1 * 9/8
     
     % [I PianoMusicVoice measure 293]                            %! SM4
-    \set PianoMusicStaff.instrumentName = \markup {              %! IC:EXPLICIT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:EXPLICIT_INSTRUMENT:SM8
-            #16                                                  %! IC:EXPLICIT_INSTRUMENT:SM8
-            Harpsichord                                          %! IC:EXPLICIT_INSTRUMENT:SM8
-        }                                                        %! IC:EXPLICIT_INSTRUMENT:SM8
-    \set PianoMusicStaff.shortInstrumentName = \markup {         %! IC:EXPLICIT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:EXPLICIT_INSTRUMENT:SM8
-            #10                                                  %! IC:EXPLICIT_INSTRUMENT:SM8
-            Hpschd.                                              %! IC:EXPLICIT_INSTRUMENT:SM8
-        }                                                        %! IC:EXPLICIT_INSTRUMENT:SM8
-    \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! IC:EXPLICIT_INSTRUMENT_COLOR:SM6
+    \set PianoMusicStaff.instrumentName = \markup {              %! SM8:EXPLICIT_INSTRUMENT:IC
+        \hcenter-in                                              %! SM8:EXPLICIT_INSTRUMENT:IC
+            #16                                                  %! SM8:EXPLICIT_INSTRUMENT:IC
+            Harpsichord                                          %! SM8:EXPLICIT_INSTRUMENT:IC
+        }                                                        %! SM8:EXPLICIT_INSTRUMENT:IC
+    \set PianoMusicStaff.shortInstrumentName = \markup {         %! SM8:EXPLICIT_INSTRUMENT:IC
+        \hcenter-in                                              %! SM8:EXPLICIT_INSTRUMENT:IC
+            #10                                                  %! SM8:EXPLICIT_INSTRUMENT:IC
+            Hpschd.                                              %! SM8:EXPLICIT_INSTRUMENT:IC
+        }                                                        %! SM8:EXPLICIT_INSTRUMENT:IC
+    \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! SM6:EXPLICIT_INSTRUMENT_COLOR:IC
     r8
-    ^ \markup {                                                  %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
-        \with-color                                              %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
-            #(x11-color 'blue)                                   %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
-            (“Harpsichord”)                                      %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
-        }                                                        %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
-    \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! IC:REDRAWN_EXPLICIT_INSTRUMENT_COLOR:SM6
-    \set PianoMusicStaff.instrumentName = \markup {              %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-            #16                                                  %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-            Harpsichord                                          %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-        }                                                        %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-    \set PianoMusicStaff.shortInstrumentName = \markup {         %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-            #10                                                  %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-            Hpschd.                                              %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-        }                                                        %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
+    ^ \markup {                                                  %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+        \with-color                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            #(x11-color 'blue)                                   %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            (“Harpsichord”)                                      %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+        }                                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+    \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! SM6:REDRAWN_EXPLICIT_INSTRUMENT_COLOR:IC
+    \set PianoMusicStaff.instrumentName = \markup {              %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+        \hcenter-in                                              %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+            #16                                                  %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+            Harpsichord                                          %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+        }                                                        %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+    \set PianoMusicStaff.shortInstrumentName = \markup {         %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+        \hcenter-in                                              %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+            #10                                                  %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+            Hpschd.                                              %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+        }                                                        %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
     \times 2/3 {
         
         \once \override Accidental.stencil = ##f
@@ -2516,39 +2516,39 @@ I_PianoMusicVoice = {
     R1 * 5/8
     
     % [I PianoMusicVoice measure 298]                            %! SM4
-    \set PianoMusicStaff.instrumentName = \markup {              %! IC:EXPLICIT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:EXPLICIT_INSTRUMENT:SM8
-            #16                                                  %! IC:EXPLICIT_INSTRUMENT:SM8
-            Piano                                                %! IC:EXPLICIT_INSTRUMENT:SM8
-        }                                                        %! IC:EXPLICIT_INSTRUMENT:SM8
-    \set PianoMusicStaff.shortInstrumentName = \markup {         %! IC:EXPLICIT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:EXPLICIT_INSTRUMENT:SM8
-            #10                                                  %! IC:EXPLICIT_INSTRUMENT:SM8
-            Pf.                                                  %! IC:EXPLICIT_INSTRUMENT:SM8
-        }                                                        %! IC:EXPLICIT_INSTRUMENT:SM8
-    \clef "bass"                                                 %! IC:EXPLICIT_CLEF:SM8
-    \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! IC:EXPLICIT_INSTRUMENT_COLOR:SM6
-    \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
-%@% \override PianoMusicStaff.Clef.color = ##f                   %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
-    \set PianoMusicStaff.forceClef = ##t                         %! IC:SM33:EXPLICIT_CLEF:SM8
+    \set PianoMusicStaff.instrumentName = \markup {              %! SM8:EXPLICIT_INSTRUMENT:IC
+        \hcenter-in                                              %! SM8:EXPLICIT_INSTRUMENT:IC
+            #16                                                  %! SM8:EXPLICIT_INSTRUMENT:IC
+            Piano                                                %! SM8:EXPLICIT_INSTRUMENT:IC
+        }                                                        %! SM8:EXPLICIT_INSTRUMENT:IC
+    \set PianoMusicStaff.shortInstrumentName = \markup {         %! SM8:EXPLICIT_INSTRUMENT:IC
+        \hcenter-in                                              %! SM8:EXPLICIT_INSTRUMENT:IC
+            #10                                                  %! SM8:EXPLICIT_INSTRUMENT:IC
+            Pf.                                                  %! SM8:EXPLICIT_INSTRUMENT:IC
+        }                                                        %! SM8:EXPLICIT_INSTRUMENT:IC
+    \clef "bass"                                                 %! SM8:EXPLICIT_CLEF:IC
+    \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! SM6:EXPLICIT_INSTRUMENT_COLOR:IC
+    \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override PianoMusicStaff.Clef.color = ##f                   %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set PianoMusicStaff.forceClef = ##t                         %! SM8:EXPLICIT_CLEF:SM33:IC
     r8
-    ^ \markup {                                                  %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
-        \with-color                                              %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
-            #(x11-color 'blue)                                   %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
-            (“Piano”)                                            %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
-        }                                                        %! IC:EXPLICIT_INSTRUMENT_ALERT:SM11
-    \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! IC:REDRAWN_EXPLICIT_INSTRUMENT_COLOR:SM6
-    \set PianoMusicStaff.instrumentName = \markup {              %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-            #16                                                  %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-            Piano                                                %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-        }                                                        %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-    \set PianoMusicStaff.shortInstrumentName = \markup {         %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-        \hcenter-in                                              %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-            #10                                                  %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-            Pf.                                                  %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-        }                                                        %! IC:SM34:REDRAWN_EXPLICIT_INSTRUMENT:SM8
-    \override PianoMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! IC:EXPLICIT_CLEF_REDRAW_COLOR:SM6
+    ^ \markup {                                                  %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+        \with-color                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            #(x11-color 'blue)                                   %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            (“Piano”)                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+        }                                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+    \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! SM6:REDRAWN_EXPLICIT_INSTRUMENT_COLOR:IC
+    \set PianoMusicStaff.instrumentName = \markup {              %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+        \hcenter-in                                              %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+            #16                                                  %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+            Piano                                                %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+        }                                                        %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+    \set PianoMusicStaff.shortInstrumentName = \markup {         %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+        \hcenter-in                                              %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+            #10                                                  %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+            Pf.                                                  %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+        }                                                        %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+    \override PianoMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     \times 2/3 {
         
         \ottava #-1                                              %! SC
@@ -5498,9 +5498,9 @@ I_PercussionMusicVoice = {
     \times 8/7 {
         
         % [I PercussionMusicVoice measure 291]                   %! SM4
-        \stopStaff                                               %! SM37:REAPPLIED_STAFF_LINES:SM8
-        \once \override PercussionMusicStaff.StaffSymbol.line-count = 5 %! SM37:REAPPLIED_STAFF_LINES:SM8
-        \startStaff                                              %! SM37:REAPPLIED_STAFF_LINES:SM8
+        \stopStaff                                               %! SM8:REAPPLIED_STAFF_LINES:SM37
+        \once \override PercussionMusicStaff.StaffSymbol.line-count = 5 %! SM8:REAPPLIED_STAFF_LINES:SM37
+        \startStaff                                              %! SM8:REAPPLIED_STAFF_LINES:SM37
         \override DynamicLineSpanner.staff-padding = #'6         %! OC1
         \override TupletBracket.staff-padding = #2               %! OC1
         \once \override Accidental.color = #red
@@ -5508,53 +5508,53 @@ I_PercussionMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        \set PercussionMusicStaff.instrumentName = \markup {     %! IC:REDUNDANT_INSTRUMENT:SM8
-            \hcenter-in                                          %! IC:REDUNDANT_INSTRUMENT:SM8
-                #16                                              %! IC:REDUNDANT_INSTRUMENT:SM8
-                Xylophone                                        %! IC:REDUNDANT_INSTRUMENT:SM8
-            }                                                    %! IC:REDUNDANT_INSTRUMENT:SM8
-        \set PercussionMusicStaff.shortInstrumentName = \markup { %! IC:REDUNDANT_INSTRUMENT:SM8
-            \hcenter-in                                          %! IC:REDUNDANT_INSTRUMENT:SM8
-                #10                                              %! IC:REDUNDANT_INSTRUMENT:SM8
-                Xyl.                                             %! IC:REDUNDANT_INSTRUMENT:SM8
-            }                                                    %! IC:REDUNDANT_INSTRUMENT:SM8
-        \clef "treble"                                           %! SM37:REAPPLIED_CLEF:SM8
-        \once \override PercussionMusicStaff.Clef.color = #(x11-color 'green4) %! SM37:REAPPLIED_CLEF_COLOR:SM6
-    %@% \override PercussionMusicStaff.Clef.color = ##f          %! SM37:REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-        \set PercussionMusicStaff.forceClef = ##t                %! SM37:SM33:REAPPLIED_CLEF:SM8
-        \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM37:REAPPLIED_STAFF_LINES_COLOR:SM6
-        \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_INSTRUMENT_COLOR:SM6
-        \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+        \set PercussionMusicStaff.instrumentName = \markup {     %! SM8:REDUNDANT_INSTRUMENT:IC
+            \hcenter-in                                          %! SM8:REDUNDANT_INSTRUMENT:IC
+                #16                                              %! SM8:REDUNDANT_INSTRUMENT:IC
+                Xylophone                                        %! SM8:REDUNDANT_INSTRUMENT:IC
+            }                                                    %! SM8:REDUNDANT_INSTRUMENT:IC
+        \set PercussionMusicStaff.shortInstrumentName = \markup { %! SM8:REDUNDANT_INSTRUMENT:IC
+            \hcenter-in                                          %! SM8:REDUNDANT_INSTRUMENT:IC
+                #10                                              %! SM8:REDUNDANT_INSTRUMENT:IC
+                Xyl.                                             %! SM8:REDUNDANT_INSTRUMENT:IC
+            }                                                    %! SM8:REDUNDANT_INSTRUMENT:IC
+        \clef "treble"                                           %! SM8:REAPPLIED_CLEF:SM37
+        \once \override PercussionMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+    %@% \override PercussionMusicStaff.Clef.color = ##f          %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+        \set PercussionMusicStaff.forceClef = ##t                %! SM8:REAPPLIED_CLEF:SM33:SM37
+        \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
+        \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_INSTRUMENT_COLOR:IC
+        \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
         fs''8
         :32                                                      %! IC
-        \fff                                                     %! IC:REDUNDANT_DYNAMIC:SM8
+        \fff                                                     %! SM8:REDUNDANT_DYNAMIC:IC
         ^ \markup {
             \column
                 {
-                    \line                                        %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                        {                                        %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                            \with-color                          %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                                #(x11-color 'DeepPink1)          %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                                (“Xylophone”)                    %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
-                        }                                        %! IC:REDUNDANT_INSTRUMENT_ALERT:SM11
+                    \line                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                        {                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                            \with-color                          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                                #(x11-color 'DeepPink1)          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                                (“Xylophone”)                    %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                        }                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
                     \line                                        %! SM14
                         {                                        %! SM14
                             @                                    %! SM14
                         }                                        %! SM14
                 }
             }
-        \override PercussionMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM37:REAPPLIED_CLEF_REDRAW_COLOR:SM6
-        \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! IC:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:SM6
-        \set PercussionMusicStaff.instrumentName = \markup {     %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            \hcenter-in                                          %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                #16                                              %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                Xylophone                                        %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            }                                                    %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-        \set PercussionMusicStaff.shortInstrumentName = \markup { %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            \hcenter-in                                          %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                #10                                              %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-                Xyl.                                             %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
-            }                                                    %! IC:SM34:REDRAWN_REDUNDANT_INSTRUMENT:SM8
+        \override PercussionMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+        \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! SM6:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:IC
+        \set PercussionMusicStaff.instrumentName = \markup {     %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            \hcenter-in                                          %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                #16                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                Xylophone                                        %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            }                                                    %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+        \set PercussionMusicStaff.shortInstrumentName = \markup { %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            \hcenter-in                                          %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                #10                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+                Xyl.                                             %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
+            }                                                    %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -5574,17 +5574,17 @@ I_PercussionMusicVoice = {
     
     % [I PercussionMusicVoice measure 293]                       %! SM4
     \override DynamicLineSpanner.staff-padding = #'6             %! OC1
-    \clef "percussion"                                           %! IC:EXPLICIT_CLEF:SM8
-    \once \override PercussionMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
-%@% \override PercussionMusicStaff.Clef.color = ##f              %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
-    \set PercussionMusicStaff.forceClef = ##t                    %! IC:SM33:EXPLICIT_CLEF:SM8
+    \clef "percussion"                                           %! SM8:EXPLICIT_CLEF:IC
+    \once \override PercussionMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override PercussionMusicStaff.Clef.color = ##f              %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set PercussionMusicStaff.forceClef = ##t                    %! SM8:EXPLICIT_CLEF:SM33:IC
     r16
-    \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! IC:EXPLICIT_CLEF_REDRAW_COLOR:SM6
+    \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
-    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c16
-    \f                                                           %! IC:EXPLICIT_DYNAMIC:SM8
+    \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC
             \upright                                             %! IC
@@ -5606,20 +5606,20 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 295]                       %! SM4
     r2..
     
-    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c16
-    \f                                                           %! IC:REDUNDANT_DYNAMIC:SM8
+    \f                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8.
     
     % [I PercussionMusicVoice measure 296]                       %! SM4
     r16
     
-    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c16
-    \f                                                           %! IC:REDUNDANT_DYNAMIC:SM8
+    \f                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8
     
@@ -5628,10 +5628,10 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 297]                       %! SM4
     r16
     
-    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c16
-    \f                                                           %! IC:REDUNDANT_DYNAMIC:SM8
+    \f                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8
     
@@ -5645,20 +5645,20 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 299]                       %! SM4
     r2.
     
-    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c16
-    \f                                                           %! IC:REDUNDANT_DYNAMIC:SM8
+    \f                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8.
     
     % [I PercussionMusicVoice measure 300]                       %! SM4
     r16
     
-    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c16
-    \f                                                           %! IC:REDUNDANT_DYNAMIC:SM8
+    \f                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8
     
@@ -5667,10 +5667,10 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 301]                       %! SM4
     r16
     
-    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c16
-    \f                                                           %! IC:REDUNDANT_DYNAMIC:SM8
+    \f                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8
     
@@ -5682,20 +5682,20 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 303]                       %! SM4
     r2.
     
-    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c16
-    \f                                                           %! IC:REDUNDANT_DYNAMIC:SM8
+    \f                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8.
     
     % [I PercussionMusicVoice measure 304]                       %! SM4
     r16
     
-    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c16
-    \f                                                           %! IC:REDUNDANT_DYNAMIC:SM8
+    \f                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8
     
@@ -5704,10 +5704,10 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 305]                       %! SM4
     r16
     
-    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c16
-    \f                                                           %! IC:REDUNDANT_DYNAMIC:SM8
+    \f                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8
     
@@ -5719,20 +5719,20 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 307]                       %! SM4
     r2
     
-    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c16
-    \f                                                           %! IC:REDUNDANT_DYNAMIC:SM8
+    \f                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8.
     
     % [I PercussionMusicVoice measure 308]                       %! SM4
     r16
     
-    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c16
-    \f                                                           %! IC:REDUNDANT_DYNAMIC:SM8
+    \f                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8
     
@@ -5741,10 +5741,10 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 309]                       %! SM4
     r16
     
-    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c16
-    \f                                                           %! IC:REDUNDANT_DYNAMIC:SM8
+    \f                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8
     
@@ -5756,20 +5756,20 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 311]                       %! SM4
     r2
     
-    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c16
-    \f                                                           %! IC:REDUNDANT_DYNAMIC:SM8
+    \f                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8.
     
     % [I PercussionMusicVoice measure 312]                       %! SM4
     r16
     
-    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c16
-    \f                                                           %! IC:REDUNDANT_DYNAMIC:SM8
+    \f                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8
     
@@ -5792,9 +5792,9 @@ I_ViolinMusicVoice = {
     \times 2/3 {
         
         % [I ViolinMusicVoice measure 291]                       %! SM4
-        \stopStaff                                               %! SM37:REAPPLIED_STAFF_LINES:SM8
-        \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! SM37:REAPPLIED_STAFF_LINES:SM8
-        \startStaff                                              %! SM37:REAPPLIED_STAFF_LINES:SM8
+        \stopStaff                                               %! SM8:REAPPLIED_STAFF_LINES:SM37
+        \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! SM8:REAPPLIED_STAFF_LINES:SM37
+        \startStaff                                              %! SM8:REAPPLIED_STAFF_LINES:SM37
         \override Beam.positions = #'(-5 . -5)                   %! OC1
         \override DynamicLineSpanner.staff-padding = #'8         %! OC1
         \override TupletBracket.staff-padding = #4               %! OC1
@@ -5803,54 +5803,54 @@ I_ViolinMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        \set ViolinMusicStaff.instrumentName = \markup {         %! SM37:REAPPLIED_INSTRUMENT:SM8
-            \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
-                #16                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
-                Violin                                           %! SM37:REAPPLIED_INSTRUMENT:SM8
-            }                                                    %! SM37:REAPPLIED_INSTRUMENT:SM8
-        \set ViolinMusicStaff.shortInstrumentName = \markup {    %! SM37:REAPPLIED_INSTRUMENT:SM8
-            \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
-                #10                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
-                Vn.                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
-            }                                                    %! SM37:REAPPLIED_INSTRUMENT:SM8
-        \clef "treble"                                           %! SM37:REAPPLIED_CLEF:SM8
-        \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! SM37:REAPPLIED_CLEF_COLOR:SM6
-    %@% \override ViolinMusicStaff.Clef.color = ##f              %! SM37:REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-        \set ViolinMusicStaff.forceClef = ##t                    %! SM37:SM33:REAPPLIED_CLEF:SM8
-        \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'green4) %! SM37:REAPPLIED_INSTRUMENT_COLOR:SM6
-        \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM37:REAPPLIED_STAFF_LINES_COLOR:SM6
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+        \set ViolinMusicStaff.instrumentName = \markup {         %! SM8:REAPPLIED_INSTRUMENT:SM37
+            \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
+                #16                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
+                Violin                                           %! SM8:REAPPLIED_INSTRUMENT:SM37
+            }                                                    %! SM8:REAPPLIED_INSTRUMENT:SM37
+        \set ViolinMusicStaff.shortInstrumentName = \markup {    %! SM8:REAPPLIED_INSTRUMENT:SM37
+            \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
+                #10                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
+                Vn.                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
+            }                                                    %! SM8:REAPPLIED_INSTRUMENT:SM37
+        \clef "treble"                                           %! SM8:REAPPLIED_CLEF:SM37
+        \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+    %@% \override ViolinMusicStaff.Clef.color = ##f              %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+        \set ViolinMusicStaff.forceClef = ##t                    %! SM8:REAPPLIED_CLEF:SM33:SM37
+        \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
+        \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
+        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
         ef''8
         :32                                                      %! IC
-        \fff                                                     %! IC:REDUNDANT_DYNAMIC:SM8
+        \fff                                                     %! SM8:REDUNDANT_DYNAMIC:IC
         [
         ^ \markup {
             \column
                 {
-                    \line                                        %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
-                        {                                        %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
-                            \with-color                          %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
-                                #(x11-color 'green4)             %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
-                                (“Violin”)                       %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
-                        }                                        %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
+                    \line                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                        {                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                            \with-color                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                                #(x11-color 'green4)             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                                (“Violin”)                       %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                        }                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                     \line                                        %! SM14
                         {                                        %! SM14
                             @                                    %! SM14
                         }                                        %! SM14
                 }
             }
-        \override ViolinMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM37:REAPPLIED_CLEF_REDRAW_COLOR:SM6
-        \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM37:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
-        \set ViolinMusicStaff.instrumentName = \markup {         %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            \hcenter-in                                          %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                #16                                              %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                Violin                                           %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            }                                                    %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-        \set ViolinMusicStaff.shortInstrumentName = \markup {    %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            \hcenter-in                                          %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                #10                                              %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                Vn.                                              %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            }                                                    %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+        \override ViolinMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+        \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
+        \set ViolinMusicStaff.instrumentName = \markup {         %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+            \hcenter-in                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                #16                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                Violin                                           %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+            }                                                    %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+        \set ViolinMusicStaff.shortInstrumentName = \markup {    %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+            \hcenter-in                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                #10                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                Vn.                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+            }                                                    %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -6221,21 +6221,21 @@ I_ViolinMusicVoice = {
     R1 * 5/8
     
     % [I ViolinMusicVoice measure 295]                           %! SM4
-    \clef "treble"                                               %! IC:REDUNDANT_CLEF:SM8
-    \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_CLEF_COLOR:SM6
-%@% \override ViolinMusicStaff.Clef.color = ##f                  %! IC:REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
-    \set ViolinMusicStaff.forceClef = ##t                        %! IC:SM33:REDUNDANT_CLEF:SM8
-    \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
+    \clef "treble"                                               %! SM8:REDUNDANT_CLEF:IC
+    \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_CLEF_COLOR:IC
+%@% \override ViolinMusicStaff.Clef.color = ##f                  %! SM7:REDUNDANT_CLEF_COLOR_CANCELLATION:IC
+    \set ViolinMusicStaff.forceClef = ##t                        %! SM8:REDUNDANT_CLEF:SM33:IC
+    \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     g''4
     -\downbow                                                    %! IC
-    \effort_f                                                    %! IC:EXPLICIT_DYNAMIC:SM8
+    \effort_f                                                    %! SM8:EXPLICIT_DYNAMIC:IC
     \glissando                                                   %! SC
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC
             \upright                                             %! IC
                 "directly on bridge: full bow each stroke"       %! IC
         }                                                        %! IC
-    \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! IC:REDUNDANT_CLEF_REDRAW_COLOR:SM6
+    \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! SM6:REDUNDANT_CLEF_REDRAW_COLOR:IC
     
     cs''4
     -\upbow                                                      %! IC
@@ -6373,10 +6373,10 @@ I_ViolinMusicVoice = {
         % [I ViolinMusicVoice measure 312]                       %! SM4
         \override DynamicLineSpanner.staff-padding = #'6         %! OC1
         \override TupletBracket.staff-padding = #2               %! OC1
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         e'''8
         -\staccatissimo                                          %! IC
-        \fff                                                     %! IC:EXPLICIT_DYNAMIC:SM8
+        \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {                                              %! IC
             \whiteout                                            %! IC
                 \upright                                         %! IC
@@ -6431,53 +6431,53 @@ I_ViolaMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        \set ViolaMusicStaff.instrumentName = \markup {          %! SM37:REAPPLIED_INSTRUMENT:SM8
-            \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
-                #16                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
-                Viola                                            %! SM37:REAPPLIED_INSTRUMENT:SM8
-            }                                                    %! SM37:REAPPLIED_INSTRUMENT:SM8
-        \set ViolaMusicStaff.shortInstrumentName = \markup {     %! SM37:REAPPLIED_INSTRUMENT:SM8
-            \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
-                #10                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
-                Va.                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
-            }                                                    %! SM37:REAPPLIED_INSTRUMENT:SM8
-        \clef "alto"                                             %! SM37:REAPPLIED_CLEF:SM8
-        \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! SM37:REAPPLIED_CLEF_COLOR:SM6
-    %@% \override ViolaMusicStaff.Clef.color = ##f               %! SM37:REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-        \set ViolaMusicStaff.forceClef = ##t                     %! SM37:SM33:REAPPLIED_CLEF:SM8
-        \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'green4) %! SM37:REAPPLIED_INSTRUMENT_COLOR:SM6
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+        \set ViolaMusicStaff.instrumentName = \markup {          %! SM8:REAPPLIED_INSTRUMENT:SM37
+            \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
+                #16                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
+                Viola                                            %! SM8:REAPPLIED_INSTRUMENT:SM37
+            }                                                    %! SM8:REAPPLIED_INSTRUMENT:SM37
+        \set ViolaMusicStaff.shortInstrumentName = \markup {     %! SM8:REAPPLIED_INSTRUMENT:SM37
+            \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
+                #10                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
+                Va.                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
+            }                                                    %! SM8:REAPPLIED_INSTRUMENT:SM37
+        \clef "alto"                                             %! SM8:REAPPLIED_CLEF:SM37
+        \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+    %@% \override ViolaMusicStaff.Clef.color = ##f               %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+        \set ViolaMusicStaff.forceClef = ##t                     %! SM8:REAPPLIED_CLEF:SM33:SM37
+        \once \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
         a8
         :32                                                      %! IC
-        \fff                                                     %! IC:REDUNDANT_DYNAMIC:SM8
+        \fff                                                     %! SM8:REDUNDANT_DYNAMIC:IC
         [
         ^ \markup {
             \column
                 {
-                    \line                                        %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
-                        {                                        %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
-                            \with-color                          %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
-                                #(x11-color 'green4)             %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
-                                (“Viola”)                        %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
-                        }                                        %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
+                    \line                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                        {                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                            \with-color                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                                #(x11-color 'green4)             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                                (“Viola”)                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                        }                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                     \line                                        %! SM14
                         {                                        %! SM14
                             @                                    %! SM14
                         }                                        %! SM14
                 }
             }
-        \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM37:REAPPLIED_CLEF_REDRAW_COLOR:SM6
-        \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM37:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
-        \set ViolaMusicStaff.instrumentName = \markup {          %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            \hcenter-in                                          %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                #16                                              %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                Viola                                            %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            }                                                    %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-        \set ViolaMusicStaff.shortInstrumentName = \markup {     %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            \hcenter-in                                          %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                #10                                              %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                Va.                                              %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            }                                                    %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+        \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+        \override ViolaMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
+        \set ViolaMusicStaff.instrumentName = \markup {          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+            \hcenter-in                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                #16                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                Viola                                            %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+            }                                                    %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+        \set ViolaMusicStaff.shortInstrumentName = \markup {     %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+            \hcenter-in                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                #10                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                Va.                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+            }                                                    %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -6584,21 +6584,21 @@ I_ViolaMusicVoice = {
     R1 * 5/8
     
     % [I ViolaMusicVoice measure 295]                            %! SM4
-    \clef "treble"                                               %! IC:EXPLICIT_CLEF:SM8
-    \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
-%@% \override ViolaMusicStaff.Clef.color = ##f                   %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
-    \set ViolaMusicStaff.forceClef = ##t                         %! IC:SM33:EXPLICIT_CLEF:SM8
-    \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
+    \clef "treble"                                               %! SM8:EXPLICIT_CLEF:IC
+    \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override ViolaMusicStaff.Clef.color = ##f                   %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set ViolaMusicStaff.forceClef = ##t                         %! SM8:EXPLICIT_CLEF:SM33:IC
+    \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     ef''4
     -\downbow                                                    %! IC
-    \effort_f                                                    %! IC:EXPLICIT_DYNAMIC:SM8
+    \effort_f                                                    %! SM8:EXPLICIT_DYNAMIC:IC
     \glissando                                                   %! SC
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC
             \upright                                             %! IC
                 "directly on bridge: full bow each stroke"       %! IC
         }                                                        %! IC
-    \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! IC:EXPLICIT_CLEF_REDRAW_COLOR:SM6
+    \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     bf''4
     -\upbow                                                      %! IC
@@ -6732,10 +6732,10 @@ I_ViolaMusicVoice = {
         % [I ViolaMusicVoice measure 312]                        %! SM4
         \override DynamicLineSpanner.staff-padding = #'6         %! OC1
         \override TupletBracket.staff-padding = #2               %! OC1
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         ef'''8
         -\staccatissimo                                          %! IC
-        \fff                                                     %! IC:EXPLICIT_DYNAMIC:SM8
+        \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {                                              %! IC
             \whiteout                                            %! IC
                 \upright                                         %! IC
@@ -6787,53 +6787,53 @@ I_CelloMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        \set CelloMusicStaff.instrumentName = \markup {          %! SM37:REAPPLIED_INSTRUMENT:SM8
-            \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
-                #16                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
-                Cello                                            %! SM37:REAPPLIED_INSTRUMENT:SM8
-            }                                                    %! SM37:REAPPLIED_INSTRUMENT:SM8
-        \set CelloMusicStaff.shortInstrumentName = \markup {     %! SM37:REAPPLIED_INSTRUMENT:SM8
-            \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
-                #10                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
-                Vc.                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
-            }                                                    %! SM37:REAPPLIED_INSTRUMENT:SM8
-        \clef "bass"                                             %! SM37:REAPPLIED_CLEF:SM8
-        \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! SM37:REAPPLIED_CLEF_COLOR:SM6
-    %@% \override CelloMusicStaff.Clef.color = ##f               %! SM37:REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-        \set CelloMusicStaff.forceClef = ##t                     %! SM37:SM33:REAPPLIED_CLEF:SM8
-        \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'green4) %! SM37:REAPPLIED_INSTRUMENT_COLOR:SM6
-        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
+        \set CelloMusicStaff.instrumentName = \markup {          %! SM8:REAPPLIED_INSTRUMENT:SM37
+            \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
+                #16                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
+                Cello                                            %! SM8:REAPPLIED_INSTRUMENT:SM37
+            }                                                    %! SM8:REAPPLIED_INSTRUMENT:SM37
+        \set CelloMusicStaff.shortInstrumentName = \markup {     %! SM8:REAPPLIED_INSTRUMENT:SM37
+            \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
+                #10                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
+                Vc.                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
+            }                                                    %! SM8:REAPPLIED_INSTRUMENT:SM37
+        \clef "bass"                                             %! SM8:REAPPLIED_CLEF:SM37
+        \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+    %@% \override CelloMusicStaff.Clef.color = ##f               %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+        \set CelloMusicStaff.forceClef = ##t                     %! SM8:REAPPLIED_CLEF:SM33:SM37
+        \once \override CelloMusicStaff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
+        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
         eqf,8
         :32                                                      %! IC
-        \fff                                                     %! IC:REDUNDANT_DYNAMIC:SM8
+        \fff                                                     %! SM8:REDUNDANT_DYNAMIC:IC
         [
         ^ \markup {
             \column
                 {
-                    \line                                        %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
-                        {                                        %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
-                            \with-color                          %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
-                                #(x11-color 'green4)             %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
-                                (“Cello”)                        %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
-                        }                                        %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
+                    \line                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                        {                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                            \with-color                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                                #(x11-color 'green4)             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                                (“Cello”)                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                        }                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                     \line                                        %! SM14
                         {                                        %! SM14
                             @                                    %! SM14
                         }                                        %! SM14
                 }
             }
-        \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM37:REAPPLIED_CLEF_REDRAW_COLOR:SM6
-        \override CelloMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM37:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
-        \set CelloMusicStaff.instrumentName = \markup {          %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            \hcenter-in                                          %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                #16                                              %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                Cello                                            %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            }                                                    %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-        \set CelloMusicStaff.shortInstrumentName = \markup {     %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            \hcenter-in                                          %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                #10                                              %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                Vc.                                              %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            }                                                    %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+        \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+        \override CelloMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
+        \set CelloMusicStaff.instrumentName = \markup {          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+            \hcenter-in                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                #16                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                Cello                                            %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+            }                                                    %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+        \set CelloMusicStaff.shortInstrumentName = \markup {     %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+            \hcenter-in                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                #10                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+                Vc.                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+            }                                                    %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -6937,21 +6937,21 @@ I_CelloMusicVoice = {
     R1 * 5/8
     
     % [I CelloMusicVoice measure 295]                            %! SM4
-    \clef "treble"                                               %! IC:EXPLICIT_CLEF:SM8
-    \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
-%@% \override CelloMusicStaff.Clef.color = ##f                   %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
-    \set CelloMusicStaff.forceClef = ##t                         %! IC:SM33:EXPLICIT_CLEF:SM8
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
+    \clef "treble"                                               %! SM8:EXPLICIT_CLEF:IC
+    \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override CelloMusicStaff.Clef.color = ##f                   %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set CelloMusicStaff.forceClef = ##t                         %! SM8:EXPLICIT_CLEF:SM33:IC
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     d''4
     -\downbow                                                    %! IC
-    \effort_f                                                    %! IC:EXPLICIT_DYNAMIC:SM8
+    \effort_f                                                    %! SM8:EXPLICIT_DYNAMIC:IC
     \glissando                                                   %! SC
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC
             \upright                                             %! IC
                 "directly on bridge: full bow each stroke"       %! IC
         }                                                        %! IC
-    \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! IC:EXPLICIT_CLEF_REDRAW_COLOR:SM6
+    \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     e''4
     -\upbow                                                      %! IC
@@ -7073,10 +7073,10 @@ I_CelloMusicVoice = {
         % [I CelloMusicVoice measure 312]                        %! SM4
         \override DynamicLineSpanner.staff-padding = #'6         %! OC1
         \override TupletBracket.staff-padding = #2               %! OC1
-        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         f'''8
         -\staccatissimo                                          %! IC
-        \fff                                                     %! IC:EXPLICIT_DYNAMIC:SM8
+        \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {                                              %! IC
             \whiteout                                            %! IC
                 \upright                                         %! IC

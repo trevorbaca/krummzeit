@@ -419,7 +419,7 @@ pcs = pcs.rotate(-121).retrograde().transpose(3).invert().sequence()
 pcs = pcs.repeat_by([1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
 maker(
     baca.scope('OboeMusicVoice', 1, 27),
-    baca.pitches(pcs, repeats=True),
+    baca.pitches(pcs, allow_repeats=True),
     )
 
 maker(
@@ -541,12 +541,12 @@ maker(
 
 maker(
     baca.make_scopes(['PianoMusicVoice'], [(11, 17), (22, 27)]),
-    baca.pitches('C#6', repeats=True),
+    baca.pitch('C#6'),
     )
 
 maker(
     baca.make_scopes(['PercussionMusicVoice'], [(11, 17), (22, 26)]),
-    baca.pitches('C#6', repeats=True),
+    baca.pitch('C#6'),
     )
 
 maker(

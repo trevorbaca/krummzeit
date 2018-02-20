@@ -447,7 +447,7 @@ maker(
     baca.scope('OboeMusicVoice', 1, 2),
     baca.dynamic('p'),
     baca.map(
-        baca.trill(),
+        baca.trill_spanner(),
         baca.plts().filter_preprolated('>=', (1, 4)),
         ),
     # TODO: maybe a way to programmatically compose the two commands
@@ -625,7 +625,7 @@ maker(
 maker(
     baca.scope('ViolinMusicVoice', 18, 22),
     baca.dynamic('ppp'),
-    baca.map(baca.trill('A5'), baca.qruns()),
+    baca.map(baca.trill_spanner('A5'), baca.qruns()),
     )
 
 maker(
@@ -636,7 +636,7 @@ maker(
 maker(
     baca.scope('OboeMusicVoice', 18, 22),
     baca.dynamic('ppp'),
-    baca.map(baca.trill(), baca.qruns()),
+    baca.map(baca.trill_spanner(), baca.qruns()),
     )
 
 ### (9.1) pf points ###

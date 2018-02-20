@@ -352,7 +352,7 @@ maker(
 
 maker(
     baca.scope('OboeMusicVoice', 3, 6),
-    baca.trill(),
+    baca.trill_spanner(),
     )
 
 ### (14) ###

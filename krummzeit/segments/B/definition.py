@@ -426,7 +426,7 @@ maker(
     baca.scope('OboeMusicVoice', 1, 27),
     baca.dynamic('ff'),
     baca.map(
-        baca.trill(),
+        baca.trill_spanner(),
         baca.plts().filter_preprolated('>=', (1, 4)),
         ),
     krummzeit.color_fingerings(),
@@ -527,7 +527,7 @@ maker(
     krummzeit.displacement(),
     krummzeit.register_wide(5),
     baca.map(
-        baca.trill(),
+        baca.trill_spanner(),
         baca.plts().filter_preprolated('>=', (1, 4)),
         ),
     )

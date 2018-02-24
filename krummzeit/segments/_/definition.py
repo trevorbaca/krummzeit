@@ -170,9 +170,9 @@ maker(
 
 maker(
     baca.scopes(
-        ('ViolinMusicVoice', 3, 7),
-        ('ViolaMusicVoice', 3, 7),
-        ('CelloMusicVoice', 3, 7),
+        ('ViolinMusicVoice', (3, 7)),
+        ('ViolaMusicVoice', (3, 7)),
+        ('CelloMusicVoice', (3, 7)),
         ),
     baca.map(baca.glissando(), baca.runs()),
     baca.hairpin('pp < ff'),
@@ -198,10 +198,10 @@ maker(
 
 maker(
     baca.scopes(
-        ('PercussionMusicVoice', 1, abjad.Infinity),
-        ('ViolinMusicVoice', 1, abjad.Infinity),
-        ('ViolaMusicVoice', 1, abjad.Infinity),
-        ('CelloMusicVoice', 1, abjad.Infinity),
+        ('PercussionMusicVoice', 'all'),
+        ('ViolinMusicVoice', 'all'),
+        ('ViolaMusicVoice', 'all'),
+        ('CelloMusicVoice', 'all'),
         ),
     baca.dynamic_line_spanner_padding(4),
     baca.tuplet_bracket_padding(2),

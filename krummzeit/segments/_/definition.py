@@ -55,7 +55,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 3, 7),
+    baca.scope('ViolinMusicVoice', (3, 7)),
     krummzeit.glissando_rhythm(
         division_ratios=[(2, 1), (2, 1), (1, 1, 1)],
         division_masks=[abjad.index([5, 6], 7)],
@@ -63,7 +63,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', 3, 7),
+    baca.scope('ViolaMusicVoice', (3, 7)),
     krummzeit.glissando_rhythm(
         division_ratios=[(2, 1), (1, 1, 1), (2, 1)],
         division_masks=[abjad.index([0, 1], 7)],
@@ -71,7 +71,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 3, 7),
+    baca.scope('CelloMusicVoice', (3, 7)),
     krummzeit.glissando_rhythm(
         division_ratios=[(1, 1, 1), (2, 1), (2, 1)],
         division_masks=[abjad.index([2, 3], 7)],
@@ -79,7 +79,7 @@ maker(
     )
 
 maker(
-    baca.scope('ClarinetMusicVoice', 3, 4),
+    baca.scope('ClarinetMusicVoice', (3, 4)),
     baca.dynamic('ppp'),
     baca.make_repeat_tied_notes(),
     baca.pitch('B1'),
@@ -117,7 +117,7 @@ maker(
     )
 
 maker(
-    baca.scope('PercussionMusicVoice', 9, 10),
+    baca.scope('PercussionMusicVoice', (9, 10)),
     baca.accents(),
     baca.bar_extent((-2, 2)),
     baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
@@ -161,9 +161,9 @@ pcs = krummzeit.violet_pitch_classes.get_payload()
 pcs = baca.PitchClassSegment(pcs).rotate(-301).retrograde().transpose(10)
 maker(
     baca.timeline([
-        ('ViolinMusicVoice', 3, 7),
-        ('ViolaMusicVoice', 3, 7),
-        ('CelloMusicVoice', 3, 7),
+        ('ViolinMusicVoice', (3, 7)),
+        ('ViolaMusicVoice', (3, 7)),
+        ('CelloMusicVoice', (3, 7)),
         ]),
     baca.pitches(pcs)
     )
@@ -182,17 +182,17 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 3, 7),
+    baca.scope('ViolinMusicVoice', (3, 7)),
     krummzeit.register_narrow(5, 4),
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', 3, 7),
+    baca.scope('ViolaMusicVoice', (3, 7)),
     krummzeit.register_narrow(4, 3),
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 3, 7),
+    baca.scope('CelloMusicVoice', (3, 7)),
     krummzeit.register_narrow(4, 3),
     )
 

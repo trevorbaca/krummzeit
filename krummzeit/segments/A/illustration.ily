@@ -1,51 +1,51 @@
 A_GlobalSkips = {
     
     % [A GlobalSkips measure 14]                                         %! SM4
-%@% \once \override TextSpanner.bound-details.left.text =                %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@% \markup {                                                            %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%     \fontsize                                                        %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%         #-6                                                          %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%         \general-align                                               %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%             #Y                                                       %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%             #DOWN                                                    %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%             \note-by-number                                          %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%                 #2                                                   %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%                 #0                                                   %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%                 #1.25                                                %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%     \upright                                                         %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%         {                                                            %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%             =                                                        %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%             135                                                      %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%         }                                                            %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%     \hspace                                                          %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%         #1                                                           %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%     }                                                                %! SM27:REDUNDANT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
+%@% \once \override TextSpanner.bound-details.left.text =                %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@% \markup {                                                            %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%     \fontsize                                                        %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%         #-6                                                          %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%         \general-align                                               %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%             #Y                                                       %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%             #DOWN                                                    %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%             \note-by-number                                          %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%                 #2                                                   %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%                 #0                                                   %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%                 #1.25                                                %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%     \upright                                                         %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%         {                                                            %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%             =                                                        %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%             135                                                      %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%         }                                                            %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%     \hspace                                                          %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%         #1                                                           %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%     }                                                                %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.Y-extent = ##f                           %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
-    \once \override TextSpanner.bound-details.left.text =                %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-    \markup {                                                            %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-        \with-color                                                      %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-            #(x11-color 'DeepPink1)                                      %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-            {                                                            %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                \fontsize                                                %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                    #-6                                                  %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                    \general-align                                       %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                        #Y                                               %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                        #DOWN                                            %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                        \note-by-number                                  %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                            #2                                           %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                            #0                                           %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                            #1.25                                        %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                \upright                                                 %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                    {                                                    %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                        =                                                %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                        135                                              %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                    }                                                    %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                \hspace                                                  %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                    #1                                                   %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-            }                                                            %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-        }                                                                %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left.text =                %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+    \markup {                                                            %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+        \with-color                                                      %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+            #(x11-color 'green4)                                         %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+            {                                                            %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                \fontsize                                                %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                    #-6                                                  %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                    \general-align                                       %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                        #Y                                               %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                        #DOWN                                            %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                        \note-by-number                                  %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                            #2                                           %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                            #0                                           %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                            #1.25                                        %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                \upright                                                 %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                    {                                                    %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                        =                                                %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                        135                                              %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                    }                                                    %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                \hspace                                                  %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                    #1                                                   %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+            }                                                            %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+        }                                                                %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.right-broken.padding = 0   %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.right-broken.text = ##f    %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.right.padding = 0          %! SM29:METRONOME_MARK_SPANNER
@@ -8190,69 +8190,52 @@ A_PianoMusicStaff = {
 
 
 A_PercussionMusicVoice = {
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        % [A PercussionMusicVoice measure 14]                    %! SM4
-        \stopStaff                                               %! SM8:REDUNDANT_STAFF_LINES:IC
-        \once \override PercussionMusicStaff.StaffSymbol.line-count = 1 %! SM8:REDUNDANT_STAFF_LINES:IC
-        \startStaff                                              %! SM8:REDUNDANT_STAFF_LINES:IC
-        \set PercussionMusicStaff.instrumentName = \markup {     %! SM8:REAPPLIED_INSTRUMENT:SM37
-            \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
-                #16                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
-                Percussion                                       %! SM8:REAPPLIED_INSTRUMENT:SM37
-            }                                                    %! SM8:REAPPLIED_INSTRUMENT:SM37
-        \set PercussionMusicStaff.shortInstrumentName = \markup { %! SM8:REAPPLIED_INSTRUMENT:SM37
-            \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
-                #10                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
-                Perc.                                            %! SM8:REAPPLIED_INSTRUMENT:SM37
-            }                                                    %! SM8:REAPPLIED_INSTRUMENT:SM37
-        \clef "percussion"                                       %! SM8:REDUNDANT_CLEF:IC
-        \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
-        \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-        \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_CLEF_COLOR:IC
-    %@% \override PercussionMusicStaff.Clef.color = ##f          %! SM7:REDUNDANT_CLEF_COLOR_CANCELLATION:IC
-        \set PercussionMusicStaff.forceClef = ##t                %! SM8:REDUNDANT_CLEF:SM33:IC
-        \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_STAFF_LINES_COLOR:IC
-        c'2
-        -\accent                                                 %! IC
-        \effort_ff                                               %! SM8:REAPPLIED_DYNAMIC:SM37
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                        {                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                            \with-color                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                                #(x11-color 'green4)             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                                (“Percussion”)                   %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                        }                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                    \line                                        %! IC
-                        {                                        %! IC
-                            \whiteout                            %! IC
-                                \upright                         %! IC
-                                    \override                    %! IC
-                                        #'(box-padding . 0.5)    %! IC
-                                        \box                     %! IC
-                                            sponges              %! IC
-                        }                                        %! IC
-                }
-            }
-        \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
-        \set PercussionMusicStaff.instrumentName = \markup {     %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-            \hcenter-in                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-                #16                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-                Percussion                                       %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-            }                                                    %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-        \set PercussionMusicStaff.shortInstrumentName = \markup { %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-            \hcenter-in                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-                #10                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-                Perc.                                            %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-            }                                                    %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-        \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! SM6:REDUNDANT_CLEF_REDRAW_COLOR:IC
-        
-        c'2
-        -\accent                                                 %! IC
-    }
+    
+    % [A PercussionMusicVoice measure 14]                        %! SM4
+    \stopStaff                                                   %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \once \override PercussionMusicStaff.StaffSymbol.line-count = 1 %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \startStaff                                                  %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \set PercussionMusicStaff.instrumentName = \markup {         %! SM8:REAPPLIED_INSTRUMENT:SM37
+        \hcenter-in                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
+            #16                                                  %! SM8:REAPPLIED_INSTRUMENT:SM37
+            Percussion                                           %! SM8:REAPPLIED_INSTRUMENT:SM37
+        }                                                        %! SM8:REAPPLIED_INSTRUMENT:SM37
+    \set PercussionMusicStaff.shortInstrumentName = \markup {    %! SM8:REAPPLIED_INSTRUMENT:SM37
+        \hcenter-in                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
+            #10                                                  %! SM8:REAPPLIED_INSTRUMENT:SM37
+            Perc.                                                %! SM8:REAPPLIED_INSTRUMENT:SM37
+        }                                                        %! SM8:REAPPLIED_INSTRUMENT:SM37
+    \clef "percussion"                                           %! SM8:REAPPLIED_CLEF:SM37
+    \once \override PercussionMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+%@% \override PercussionMusicStaff.Clef.color = ##f              %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+    \set PercussionMusicStaff.forceClef = ##t                    %! SM8:REAPPLIED_CLEF:SM33:SM37
+    \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
+    \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
+    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
+    c'4.
+    -\accent                                                     %! IC
+    \effort_ff                                                   %! SM8:REAPPLIED_DYNAMIC:SM37
+    ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+        \with-color                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+            #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+            (“Percussion”)                                       %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+        }                                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+    \override PercussionMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+    \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
+    \set PercussionMusicStaff.instrumentName = \markup {         %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+        \hcenter-in                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+            #16                                                  %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+            Percussion                                           %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+        }                                                        %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+    \set PercussionMusicStaff.shortInstrumentName = \markup {    %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+        \hcenter-in                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+            #10                                                  %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+            Perc.                                                %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+        }                                                        %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+    \override PercussionMusicStaff.BarLine.bar-extent = #'(0 . 0) %! OC1:-PARTS
+    
+    c'4.
+    -\accent                                                     %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
         
@@ -8266,16 +8249,13 @@ A_PercussionMusicVoice = {
         c'4
         -\accent                                                 %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A PercussionMusicVoice measure 16]                    %! SM4
-        c'2.
-        \repeatTie
-        
-        c'4.
-        -\accent                                                 %! IC
-    }
+    
+    % [A PercussionMusicVoice measure 16]                        %! SM4
+    c'2.
+    \repeatTie
+    
+    c'4.
+    -\accent                                                     %! IC
     
     % [A PercussionMusicVoice measure 17]                        %! SM4
     R1 * 7/8
@@ -8338,12 +8318,16 @@ A_PercussionMusicVoice = {
         
         % [A PercussionMusicVoice measure 36]                    %! SM4
         c'2
+        -\accent                                                 %! IC
         
         c'1
+        -\accent                                                 %! IC
         
         c'2
+        -\accent                                                 %! IC
         
         c'2
+        -\accent                                                 %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -8353,18 +8337,18 @@ A_PercussionMusicVoice = {
         \repeatTie
         
         c'2
+        -\accent                                                 %! IC
         
         c'4
+        -\accent                                                 %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A PercussionMusicVoice measure 38]                    %! SM4
-        c'2.
-        \repeatTie
-        
-        c'4
-    }
+    
+    % [A PercussionMusicVoice measure 38]                        %! SM4
+    c'2.
+    \repeatTie
+    
+    c'4
+    -\accent                                                     %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
         
@@ -8373,6 +8357,7 @@ A_PercussionMusicVoice = {
         \repeatTie
         
         c'2.
+        -\accent                                                 %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/11 {
@@ -8382,24 +8367,25 @@ A_PercussionMusicVoice = {
         \repeatTie
         
         c'2
+        -\accent                                                 %! IC
         
         c'2
+        -\accent                                                 %! IC
         
         c'8
         \repeatTie
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A PercussionMusicVoice measure 41]                    %! SM4
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-        c'4.
-        \repeatTie
-        
-        c'2
-        
-        c'8
-    }
+    
+    % [A PercussionMusicVoice measure 41]                        %! SM4
+    \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie       %! SM26
+    c'4.
+    \repeatTie
+    
+    c'2
+    -\accent                                                     %! IC
+    
+    c'8
+    -\accent                                                     %! IC
     \times 2/3 {
         
         % [A PercussionMusicVoice measure 42]                    %! SM4
@@ -8407,12 +8393,16 @@ A_PercussionMusicVoice = {
         \repeatTie
         
         c'2
+        -\accent                                                 %! IC
         
         c'1
+        -\accent                                                 %! IC
         
         c'2
+        -\accent                                                 %! IC
         
         c'8
+        -\accent                                                 %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -8423,16 +8413,15 @@ A_PercussionMusicVoice = {
         \repeatTie
         
         c'4.
+        -\accent                                                 %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A PercussionMusicVoice measure 44]                    %! SM4
-        c'8
-        \repeatTie
-        
-        c'2..
-    }
+    
+    % [A PercussionMusicVoice measure 44]                        %! SM4
+    c'8
+    \repeatTie
+    
+    c'2..
+    -\accent                                                     %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/8 {
         
@@ -8442,8 +8431,10 @@ A_PercussionMusicVoice = {
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
         c'2
+        -\accent                                                 %! IC
         
         c'4.
+        -\accent                                                 %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/13 {
@@ -8457,27 +8448,25 @@ A_PercussionMusicVoice = {
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
         c'2
+        -\accent                                                 %! IC
         
         c'2
+        -\accent                                                 %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A PercussionMusicVoice measure 47]                    %! SM4
-        c'2
-        \repeatTie
-        
-        c'2
-        
-        c'4
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A PercussionMusicVoice measure 48]                    %! SM4
-        c'2
-        \repeatTie
-    }
+    
+    % [A PercussionMusicVoice measure 47]                        %! SM4
+    c'2
+    \repeatTie
+    
+    c'2
+    -\accent                                                     %! IC
+    
+    c'4
+    -\accent                                                     %! IC
+    
+    % [A PercussionMusicVoice measure 48]                        %! SM4
+    c'2
+    \repeatTie
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
         
@@ -8486,18 +8475,18 @@ A_PercussionMusicVoice = {
         \repeatTie
         
         c'2
+        -\accent                                                 %! IC
         
         c'2
+        -\accent                                                 %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A PercussionMusicVoice measure 50]                    %! SM4
-        c'2
-        \repeatTie
-        
-        c'4
-    }
+    
+    % [A PercussionMusicVoice measure 50]                        %! SM4
+    c'2
+    \repeatTie
+    
+    c'4
+    -\accent                                                     %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/17 {
         
@@ -8506,10 +8495,13 @@ A_PercussionMusicVoice = {
         \repeatTie
         
         c'1
+        -\accent                                                 %! IC
         
         c'2
+        -\accent                                                 %! IC
         
         c'4.
+        -\accent                                                 %! IC
     }
     
     % [A PercussionMusicVoice measure 52]                        %! SM4
@@ -8541,6 +8533,7 @@ A_PercussionMusicVoice = {
     
     \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     c'16
+    -\accent                                                     %! IC
     -\tenuto                                                     %! IC
     \p                                                           %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                                  %! IC
@@ -8564,6 +8557,7 @@ A_PercussionMusicVoice = {
     
     \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    -\accent                                                     %! IC
     -\tenuto                                                     %! IC
     \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
@@ -8574,6 +8568,7 @@ A_PercussionMusicVoice = {
     
     \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    -\accent                                                     %! IC
     -\tenuto                                                     %! IC
     \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
@@ -8586,6 +8581,7 @@ A_PercussionMusicVoice = {
     
     \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    -\accent                                                     %! IC
     -\tenuto                                                     %! IC
     \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
@@ -8603,6 +8599,7 @@ A_PercussionMusicVoice = {
     
     \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    -\accent                                                     %! IC
     -\tenuto                                                     %! IC
     \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
@@ -8613,6 +8610,7 @@ A_PercussionMusicVoice = {
     
     \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    -\accent                                                     %! IC
     -\tenuto                                                     %! IC
     \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
@@ -8625,6 +8623,7 @@ A_PercussionMusicVoice = {
     
     \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    -\accent                                                     %! IC
     -\tenuto                                                     %! IC
     \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
@@ -8640,6 +8639,7 @@ A_PercussionMusicVoice = {
     
     \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    -\accent                                                     %! IC
     -\tenuto                                                     %! IC
     \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
@@ -8650,6 +8650,7 @@ A_PercussionMusicVoice = {
     
     \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    -\accent                                                     %! IC
     -\tenuto                                                     %! IC
     \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
@@ -8662,6 +8663,7 @@ A_PercussionMusicVoice = {
     
     \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    -\accent                                                     %! IC
     -\tenuto                                                     %! IC
     \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
@@ -8679,6 +8681,7 @@ A_PercussionMusicVoice = {
     
     \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    -\accent                                                     %! IC
     -\tenuto                                                     %! IC
     \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
@@ -8689,6 +8692,7 @@ A_PercussionMusicVoice = {
     
     \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    -\accent                                                     %! IC
     -\tenuto                                                     %! IC
     \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
@@ -8741,6 +8745,8 @@ A_PercussionMusicVoice = {
     
     % [A PercussionMusicVoice measure 88]                        %! SM4
     R1 * 5/4
+    \revert PercussionMusicStaff.BarLine.bar-extent              %! OC2:-PARTS
+    \once \override PercussionMusicStaff.BarLine.bar-extent = #'(0 . 0) %! OC1:-PARTS
     
 }
 

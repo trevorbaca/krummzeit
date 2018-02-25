@@ -3,8 +3,8 @@ import baca
 from abjad import rhythmmakertools as rhythmos
 
 
-def hypermeter_quintuplets(tuplet_ratios=[(3, 2)]):
-    r'''Makes hypermeter quintuplets.
+def hypermeter_tuplets(tuplet_ratios=[(3, 2)]):
+    r'''Makes hypermeter tuplets.
     '''
     return baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(

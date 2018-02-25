@@ -22,7 +22,6 @@ stage_measure_map = baca.StageMeasureMap([
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, krummzeit.metronome_marks['135']),
     (9, krummzeit.metronome_marks['67.5']),
     (9, krummzeit.metric_modulations['4=8']),
     (10, abjad.Accelerando()),
@@ -64,23 +63,23 @@ maker = baca.SegmentMaker(
 
 maker(
     baca.scope('CelloMusicVoice', (1, 4)),
-    krummzeit.hypermeter_quintuplets(),
+    krummzeit.hypermeter_tuplets(),
     )
 
 
 maker(
     baca.scope('CelloMusicVoice', (5, 8)),
-    krummzeit.hypermeter_quintuplets(),
+    krummzeit.hypermeter_tuplets(),
     )
 
 maker(
     baca.scope('ViolaMusicVoice', (1, 4)),
-    krummzeit.hypermeter_quintuplets([(1, 4)]),
+    krummzeit.hypermeter_tuplets([(1, 4)]),
     )
 
 maker(
     baca.scope('ViolaMusicVoice', (5, 8)),
-    krummzeit.hypermeter_quintuplets([(1, 4)]),
+    krummzeit.hypermeter_tuplets([(1, 4)]),
     )
 
 ### harpsichord [B1-4] (5th-octave polyphony) ###
@@ -104,15 +103,7 @@ maker(
         ),
     )
 
-### harpsichord [B5-8] ###
-
-#maker.copy_rhythm(
-#    baca.scope('PianoMusicVoice', 1),
-#    baca.scope('PianoMusicVoice', (5, 8)),
-#    )
-
 rhythm_overwrite = (
-    #baca.tuplet(-1),
     baca.tuplets()[-3:],
     baca.SplitByDurationsDivisionCallback(
         durations=[(1, 4)],
@@ -146,42 +137,30 @@ maker(
 ### sponges [B1] & [B9-14] ###
 
 maker(
-    baca.scope('PercussionMusicVoice', 1),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.TaleaRhythmMaker(
-            extra_counts_per_division=[2, 1, 0],
-            talea=rhythmos.Talea([1, 2], 2),
-            tie_specifier=rhythmos.TieSpecifier(repeat_ties=True),
-            ),
+    baca.scopes(
+        ('PercussionMusicVoice', 1),
+        ('PercussionMusicVoice', (9, 14)),
         ),
-    baca.accents(),
-    krummzeit.markup.sponges(),
+    krummzeit.sponge_rhythm(),
     )
 
 maker(
     baca.scope('PercussionMusicVoice', (1, 23)),
-    baca.clef('percussion'),
-    baca.staff_lines(1),
-    baca.staff_positions([0]),
-    )
-
-maker.copy_rhythm(
-    baca.scope('PercussionMusicVoice', 1),
-    baca.scope('PercussionMusicVoice', (9, 14)),
+    baca.accents(),
+    baca.not_parts(baca.bar_extent_zero()),
+    baca.staff_position(0),
     )
 
 ### cello, viola [B9] ###
 
-maker.copy_rhythm(
-    baca.scope('CelloMusicVoice', 1),
+maker(
     baca.scope('CelloMusicVoice', 9),
-    rhythm_maker__tuplet_ratios=[(4, 1, 2)],
+    krummzeit.hypermeter_tuplets([(4, 1, 2)]),
     )
 
-maker.copy_rhythm(
-    baca.scope('ViolaMusicVoice', 1),
+maker(
     baca.scope('ViolaMusicVoice', 9),
-    rhythm_maker__tuplet_ratios=[(1, 3, 1)],
+    krummzeit.hypermeter_tuplets([(1, 3, 1)]),
     )
 
 ### harpsichord [B9] ###

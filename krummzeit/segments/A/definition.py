@@ -62,45 +62,25 @@ maker = baca.SegmentMaker(
 ################################### COMMANDS ##################################
 ###############################################################################
 
-### cello [B1-4] (3rd-octave polyphony) ###
-
 maker(
     baca.scope('CelloMusicVoice', (1, 4)),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=[2, 3, 1],
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            denominator=(1, 4),
-            tuplet_ratios=[(3, 2)],
-            tuplet_specifier=rhythmos.TupletSpecifier(
-                avoid_dots=True,
-                diminution=False,
-                ),
-            ),
-        ),
+    krummzeit.hypermeter_quintuplets(),
     )
 
-### cello [B5-8] ###
 
-maker.copy_rhythm(
-    baca.scope('CelloMusicVoice', 1),
+maker(
     baca.scope('CelloMusicVoice', (5, 8)),
+    krummzeit.hypermeter_quintuplets(),
     )
 
-### viola [B1-4] (3rd-octave polyphony) ###
-
-maker.copy_rhythm(
-    baca.scope('CelloMusicVoice', 1),
+maker(
     baca.scope('ViolaMusicVoice', (1, 4)),
-    rhythm_maker__tuplet_ratios=[(1, 4)],
+    krummzeit.hypermeter_quintuplets([(1, 4)]),
     )
 
-### viola [B5-8] ###
-
-maker.copy_rhythm(
-    baca.scope('ViolaMusicVoice', 1),
+maker(
     baca.scope('ViolaMusicVoice', (5, 8)),
+    krummzeit.hypermeter_quintuplets([(1, 4)]),
     )
 
 ### harpsichord [B1-4] (5th-octave polyphony) ###

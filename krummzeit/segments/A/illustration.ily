@@ -10055,24 +10055,58 @@ A_ViolinMusicVoice = {
     \once \override ViolinMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! OC1
     \override RepeatTie.direction = #up                          %! OC1
     \override DynamicLineSpanner.staff-padding = #'3             %! OC1
+    \set ViolinMusicStaff.instrumentName = \markup {             %! SM8:EXPLICIT_INSTRUMENT:IC
+        \hcenter-in                                              %! SM8:EXPLICIT_INSTRUMENT:IC
+            #16                                                  %! SM8:EXPLICIT_INSTRUMENT:IC
+            Percussion                                           %! SM8:EXPLICIT_INSTRUMENT:IC
+        }                                                        %! SM8:EXPLICIT_INSTRUMENT:IC
+    \set ViolinMusicStaff.shortInstrumentName = \markup {        %! SM8:EXPLICIT_INSTRUMENT:IC
+        \hcenter-in                                              %! SM8:EXPLICIT_INSTRUMENT:IC
+            #10                                                  %! SM8:EXPLICIT_INSTRUMENT:IC
+            Perc.                                                %! SM8:EXPLICIT_INSTRUMENT:IC
+        }                                                        %! SM8:EXPLICIT_INSTRUMENT:IC
     \clef "percussion"                                           %! SM8:EXPLICIT_CLEF:IC
     \once \override ViolinMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
 %@% \override ViolinMusicStaff.Clef.color = ##f                  %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set ViolinMusicStaff.forceClef = ##t                        %! SM8:EXPLICIT_CLEF:SM33:IC
     \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'blue) %! SM6:EXPLICIT_INSTRUMENT_COLOR:IC
     \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
     c'2.
     \mf                                                          %! SM8:EXPLICIT_DYNAMIC:IC
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                \override                                        %! IC
-                    #'(box-padding . 0.5)                        %! IC
-                    \box                                         %! IC
-                        "stonecircle: scrape at moderate speed"  %! IC
-        }                                                        %! IC
+    ^ \markup {
+        \column
+            {
+                \line                                            %! IC
+                    {                                            %! IC
+                        \whiteout                                %! IC
+                            \upright                             %! IC
+                                \override                        %! IC
+                                    #'(box-padding . 0.5)        %! IC
+                                    \box                         %! IC
+                                        "stonecircle: scrape at moderate speed" %! IC
+                    }                                            %! IC
+                \line                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                    {                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                        \with-color                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                            #(x11-color 'blue)                   %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                            (“Percussion”)                       %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                    }                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            }
+        }
     \override ViolinMusicStaff.BarLine.bar-extent = #'(0 . 0)    %! OC1:-PARTS
     \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+    \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! SM6:REDRAWN_EXPLICIT_INSTRUMENT_COLOR:IC
+    \set ViolinMusicStaff.instrumentName = \markup {             %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+        \hcenter-in                                              %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+            #16                                                  %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+            Percussion                                           %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+        }                                                        %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+    \set ViolinMusicStaff.shortInstrumentName = \markup {        %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+        \hcenter-in                                              %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+            #10                                                  %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+            Perc.                                                %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+        }                                                        %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
     
     % [A ViolinMusicVoice measure 86]                            %! SM4
     c'1

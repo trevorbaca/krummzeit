@@ -217,7 +217,7 @@ metadata = abjad.OrderedDict(
                             abjad.Momento(
                                 context='ViolinMusicVoice',
                                 prototype='abjad.Instrument',
-                                value='Violin',
+                                value='Percussion',
                                 ),
                             abjad.Momento(
                                 context='ViolinMusicVoice',

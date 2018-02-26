@@ -14,10 +14,17 @@ def polyphony(
     ):
     r'''Makes polyphony rhythm.
     '''
+
     if rhythm_overwrite is None:
         rhythm_overwrites = []
+        tuplet_specifier = rhythmos.TupletSpecifier(
+            extract_trivial=True,
+            trivialize=True,
+            )
     else:
         rhythm_overwrites = [rhythm_overwrite]
+        tuplet_specifier = None
+
     return baca.RhythmCommand(
         division_maker=baca.SplitByDurationsDivisionCallback(
             durations=durations,
@@ -30,6 +37,7 @@ def polyphony(
             tie_specifier=rhythmos.TieSpecifier(
                 tie_across_divisions=ties,
                 ),
+            tuplet_specifier=tuplet_specifier,
             ),
         rhythm_overwrites=rhythm_overwrites,
         )

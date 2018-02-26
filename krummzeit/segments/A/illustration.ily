@@ -3701,16 +3701,13 @@ A_OboeMusicVoice = {
     
     % [A OboeMusicVoice measure 35]                              %! SM4
     R1 * 1
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A OboeMusicVoice measure 36]                          %! SM4
-        \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-        ef'4.
-        -\staccato                                               %! IC
-        \<                                                       %! HC1
-        \f                                                       %! HC1
-    }
+    
+    % [A OboeMusicVoice measure 36]                              %! SM4
+    \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    ef'4.
+    -\staccato                                                   %! IC
+    \<                                                           %! HC1
+    \f                                                           %! HC1
     \times 2/3 {
         
         e'4
@@ -3723,11 +3720,8 @@ A_OboeMusicVoice = {
         -\staccato                                               %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        c'4
-    }
+    
+    c'4
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/10 {
         
@@ -3776,18 +3770,12 @@ A_OboeMusicVoice = {
         -\staccato                                               %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        c'4
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A OboeMusicVoice measure 38]                          %! SM4
-        fs'4
-        -\staccato                                               %! IC
-    }
+    
+    c'4
+    
+    % [A OboeMusicVoice measure 38]                              %! SM4
+    fs'4
+    -\staccato                                                   %! IC
     \times 8/12 {
         
         b'16
@@ -3829,11 +3817,8 @@ A_OboeMusicVoice = {
         ~
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        af'4
-    }
+    
+    af'4
     \times 2/3 {
         
         % [A OboeMusicVoice measure 39]                          %! SM4
@@ -3847,12 +3832,9 @@ A_OboeMusicVoice = {
         -\staccato                                               %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        af'4.
-        ~
-    }
+    
+    af'4.
+    ~
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/10 {
         
@@ -3912,38 +3894,29 @@ A_OboeMusicVoice = {
         -\staccato                                               %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        c''4
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        d''16
-        -\staccato                                               %! IC
-        [
-        
-        e''16
-        -\staccato                                               %! IC
-        
-        g''16
-        -\staccato                                               %! IC
-        
-        \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-        b'16
-        -\staccato                                               %! IC
-        ~
-        \ff                                                      %! HC1
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A OboeMusicVoice measure 42]                          %! SM4
-        b'4
-        ~
-    }
+    
+    c''4
+    
+    d''16
+    -\staccato                                                   %! IC
+    [
+    
+    e''16
+    -\staccato                                                   %! IC
+    
+    g''16
+    -\staccato                                                   %! IC
+    
+    \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    b'16
+    -\staccato                                                   %! IC
+    ~
+    \ff                                                          %! HC1
+    ]
+    
+    % [A OboeMusicVoice measure 42]                              %! SM4
+    b'4
+    ~
     \times 2/3 {
         
         b'4
@@ -3954,12 +3927,9 @@ A_OboeMusicVoice = {
         fs'4
         -\staccato                                               %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        ef''4.
-        -\staccato                                               %! IC
-    }
+    
+    ef''4.
+    -\staccato                                                   %! IC
     \times 8/12 {
         
         a'16
@@ -4008,18 +3978,15 @@ A_OboeMusicVoice = {
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        af''4.
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-    }
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    af''4.
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
     \times 2/3 {
         
         % [A OboeMusicVoice measure 43]                          %! SM4
@@ -4040,12 +4007,9 @@ A_OboeMusicVoice = {
         -\staccato                                               %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        e''4
-        ~
-    }
+    
+    e''4
+    ~
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/10 {
         
@@ -4121,12 +4085,9 @@ A_OboeMusicVoice = {
         -\staccato                                               %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A OboeMusicVoice measure 46]                          %! SM4
-        bf'4
-    }
+    
+    % [A OboeMusicVoice measure 46]                              %! SM4
+    bf'4
     \times 8/12 {
         
         fs''16
@@ -4168,12 +4129,9 @@ A_OboeMusicVoice = {
         ~
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        a''4.
-        ~
-    }
+    
+    a''4.
+    ~
     \times 2/3 {
         
         % [A OboeMusicVoice measure 47]                          %! SM4
@@ -4185,12 +4143,9 @@ A_OboeMusicVoice = {
         af''4
         -\staccato                                               %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        e''4.
-        -\staccato                                               %! IC
-    }
+    
+    e''4.
+    -\staccato                                                   %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/10 {
         
@@ -4251,43 +4206,37 @@ A_OboeMusicVoice = {
         -\staccato                                               %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        c''4
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        % [A OboeMusicVoice measure 50]                          %! SM4
-        c''16
-        [
-        
-        d''16
-        -\staccato                                               %! IC
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        bf''16
-        -\staccato                                               %! IC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        bf''16
-        -\staccato                                               %! IC
-        ]
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-    }
+    
+    c''4
+    ~
+    
+    % [A OboeMusicVoice measure 50]                              %! SM4
+    c''16
+    [
+    
+    d''16
+    -\staccato                                                   %! IC
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    bf''16
+    -\staccato                                                   %! IC
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    bf''16
+    -\staccato                                                   %! IC
+    ]
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
     \times 2/3 {
         
         fs''4
@@ -4491,59 +4440,56 @@ A_ClarinetMusicVoice = {
     
     % [A ClarinetMusicVoice measure 17]                          %! SM4
     R1 * 7/8
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 18]                      %! SM4
-        \override DynamicLineSpanner.staff-padding = #'3         %! OC1
-        \set ClarinetMusicStaff.instrumentName = \markup {       %! SM8:EXPLICIT_INSTRUMENT:IC
-            \hcenter-in                                          %! SM8:EXPLICIT_INSTRUMENT:IC
-                #16                                              %! SM8:EXPLICIT_INSTRUMENT:IC
-                \center-column                                   %! SM8:EXPLICIT_INSTRUMENT:IC
-                    {                                            %! SM8:EXPLICIT_INSTRUMENT:IC
-                        Clarinet                                 %! SM8:EXPLICIT_INSTRUMENT:IC
-                        (Eb)                                     %! SM8:EXPLICIT_INSTRUMENT:IC
-                    }                                            %! SM8:EXPLICIT_INSTRUMENT:IC
-            }                                                    %! SM8:EXPLICIT_INSTRUMENT:IC
-        \set ClarinetMusicStaff.shortInstrumentName = \markup {  %! SM8:EXPLICIT_INSTRUMENT:IC
-            \hcenter-in                                          %! SM8:EXPLICIT_INSTRUMENT:IC
-                #10                                              %! SM8:EXPLICIT_INSTRUMENT:IC
-                \center-column                                   %! SM8:EXPLICIT_INSTRUMENT:IC
-                    {                                            %! SM8:EXPLICIT_INSTRUMENT:IC
-                        Cl.                                      %! SM8:EXPLICIT_INSTRUMENT:IC
-                        (Eb)                                     %! SM8:EXPLICIT_INSTRUMENT:IC
-                    }                                            %! SM8:EXPLICIT_INSTRUMENT:IC
-            }                                                    %! SM8:EXPLICIT_INSTRUMENT:IC
-        \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'blue) %! SM6:EXPLICIT_INSTRUMENT_COLOR:IC
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        cs''4.
-        -\staccato                                               %! IC
-        \mp                                                      %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-            \with-color                                          %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                #(x11-color 'blue)                               %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                (“ClarinetInEFlat”)                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-            }                                                    %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-        \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! SM6:REDRAWN_EXPLICIT_INSTRUMENT_COLOR:IC
-        \set ClarinetMusicStaff.instrumentName = \markup {       %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
-            \hcenter-in                                          %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
-                #16                                              %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
-                \center-column                                   %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
-                    {                                            %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
-                        Clarinet                                 %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
-                        (Eb)                                     %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
-                    }                                            %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
-            }                                                    %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
-        \set ClarinetMusicStaff.shortInstrumentName = \markup {  %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
-            \hcenter-in                                          %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
-                #10                                              %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
-                \center-column                                   %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
-                    {                                            %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
-                        Cl.                                      %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
-                        (Eb)                                     %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
-                    }                                            %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
-            }                                                    %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
-    }
+    
+    % [A ClarinetMusicVoice measure 18]                          %! SM4
+    \override DynamicLineSpanner.staff-padding = #'3             %! OC1
+    \set ClarinetMusicStaff.instrumentName = \markup {           %! SM8:EXPLICIT_INSTRUMENT:IC
+        \hcenter-in                                              %! SM8:EXPLICIT_INSTRUMENT:IC
+            #16                                                  %! SM8:EXPLICIT_INSTRUMENT:IC
+            \center-column                                       %! SM8:EXPLICIT_INSTRUMENT:IC
+                {                                                %! SM8:EXPLICIT_INSTRUMENT:IC
+                    Clarinet                                     %! SM8:EXPLICIT_INSTRUMENT:IC
+                    (Eb)                                         %! SM8:EXPLICIT_INSTRUMENT:IC
+                }                                                %! SM8:EXPLICIT_INSTRUMENT:IC
+        }                                                        %! SM8:EXPLICIT_INSTRUMENT:IC
+    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! SM8:EXPLICIT_INSTRUMENT:IC
+        \hcenter-in                                              %! SM8:EXPLICIT_INSTRUMENT:IC
+            #10                                                  %! SM8:EXPLICIT_INSTRUMENT:IC
+            \center-column                                       %! SM8:EXPLICIT_INSTRUMENT:IC
+                {                                                %! SM8:EXPLICIT_INSTRUMENT:IC
+                    Cl.                                          %! SM8:EXPLICIT_INSTRUMENT:IC
+                    (Eb)                                         %! SM8:EXPLICIT_INSTRUMENT:IC
+                }                                                %! SM8:EXPLICIT_INSTRUMENT:IC
+        }                                                        %! SM8:EXPLICIT_INSTRUMENT:IC
+    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'blue) %! SM6:EXPLICIT_INSTRUMENT_COLOR:IC
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    cs''4.
+    -\staccato                                                   %! IC
+    \mp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
+    ^ \markup {                                                  %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+        \with-color                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            #(x11-color 'blue)                                   %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            (“ClarinetInEFlat”)                                  %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+        }                                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! SM6:REDRAWN_EXPLICIT_INSTRUMENT_COLOR:IC
+    \set ClarinetMusicStaff.instrumentName = \markup {           %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+        \hcenter-in                                              %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+            #16                                                  %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+            \center-column                                       %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+                {                                                %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+                    Clarinet                                     %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+                    (Eb)                                         %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+                }                                                %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+        }                                                        %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+    \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+        \hcenter-in                                              %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+            #10                                                  %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+            \center-column                                       %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+                {                                                %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+                    Cl.                                          %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+                    (Eb)                                         %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+                }                                                %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
+        }                                                        %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
     \times 2/3 {
         
         fs''4
@@ -4556,29 +4502,23 @@ A_ClarinetMusicVoice = {
         -\staccato                                               %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        gs''4
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        ds''8
-        -\staccato                                               %! IC
-        [
-        
-        c''8
-        -\staccato                                               %! IC
-        
-        d''8
-        -\staccato                                               %! IC
-        
-        e''8
-        -\staccato                                               %! IC
-        ~
-        ]
-    }
+    
+    gs''4
+    
+    ds''16.
+    -\staccato                                                   %! IC
+    [
+    
+    c''16.
+    -\staccato                                                   %! IC
+    
+    d''16.
+    -\staccato                                                   %! IC
+    
+    e''16.
+    -\staccato                                                   %! IC
+    ~
+    ]
     \times 2/3 {
         
         % [A ClarinetMusicVoice measure 19]                      %! SM4
@@ -4591,44 +4531,32 @@ A_ClarinetMusicVoice = {
         -\staccato                                               %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        c''4
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        c''4
-        -\staccato                                               %! IC
-        
-        ds''4
-        -\staccato                                               %! IC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        fs''8
-        -\staccato                                               %! IC
-        [
-        
-        g''8
-        -\staccato                                               %! IC
-        
-        f''8
-        -\staccato                                               %! IC
-        
-        c''8
-        -\staccato                                               %! IC
-        ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 20]                      %! SM4
-        c''4
-    }
+    
+    c''4
+    
+    c''4
+    -\staccato                                                   %! IC
+    
+    ds''4
+    -\staccato                                                   %! IC
+    
+    fs''8
+    -\staccato                                                   %! IC
+    [
+    
+    g''8
+    -\staccato                                                   %! IC
+    
+    f''8
+    -\staccato                                                   %! IC
+    
+    c''8
+    -\staccato                                                   %! IC
+    ~
+    ]
+    
+    % [A ClarinetMusicVoice measure 20]                          %! SM4
+    c''4
     \times 2/3 {
         
         e''4
@@ -4641,32 +4569,26 @@ A_ClarinetMusicVoice = {
         -\staccato                                               %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        % [A ClarinetMusicVoice measure 21]                      %! SM4
-        a''4
-        
-        e''4
-        -\staccato                                               %! IC
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        e''8
-        [
-        
-        as'8
-        -\staccato                                               %! IC
-        
-        cs''8
-        -\staccato                                               %! IC
-        
-        gs''8
-        -\staccato                                               %! IC
-        ]
-    }
+    
+    % [A ClarinetMusicVoice measure 21]                          %! SM4
+    a''4
+    
+    e''4
+    -\staccato                                                   %! IC
+    ~
+    
+    e''16.
+    [
+    
+    as'16.
+    -\staccato                                                   %! IC
+    
+    cs''16.
+    -\staccato                                                   %! IC
+    
+    gs''16.
+    -\staccato                                                   %! IC
+    ]
     \times 2/3 {
         
         ds''4
@@ -4678,48 +4600,33 @@ A_ClarinetMusicVoice = {
         f''4
         -\staccato                                               %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        c''4.
-        -\staccato                                               %! IC
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 22]                      %! SM4
-        c''4.
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        f''8
-        -\staccato                                               %! IC
-        [
-        
-        gs''8
-        -\staccato                                               %! IC
-        
-        as'8
-        -\staccato                                               %! IC
-        
-        cs''8
-        -\staccato                                               %! IC
-        ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        cs''4
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        cs''4
-    }
+    
+    c''4.
+    -\staccato                                                   %! IC
+    ~
+    
+    % [A ClarinetMusicVoice measure 22]                          %! SM4
+    c''4.
+    
+    f''8
+    -\staccato                                                   %! IC
+    [
+    
+    gs''8
+    -\staccato                                                   %! IC
+    
+    as'8
+    -\staccato                                                   %! IC
+    
+    cs''8
+    -\staccato                                                   %! IC
+    ~
+    ]
+    
+    cs''4
+    ~
+    
+    cs''4
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/4 {
         
@@ -4730,19 +4637,16 @@ A_ClarinetMusicVoice = {
         e''4
         -\staccato                                               %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        % [A ClarinetMusicVoice measure 24]                      %! SM4
-        c''8
-        -\staccato                                               %! IC
-        [
-        
-        f''8
-        -\staccato                                               %! IC
-        ~
-        ]
-    }
+    
+    % [A ClarinetMusicVoice measure 24]                          %! SM4
+    c''8
+    -\staccato                                                   %! IC
+    [
+    
+    f''8
+    -\staccato                                                   %! IC
+    ~
+    ]
     \times 2/3 {
         
         f''4
@@ -4753,13 +4657,10 @@ A_ClarinetMusicVoice = {
         d''4
         -\staccato                                               %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        as'4
-        -\staccato                                               %! IC
-        \revert DynamicLineSpanner.staff-padding                 %! OC2
-    }
+    
+    as'4
+    -\staccato                                                   %! IC
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
     
     % [A ClarinetMusicVoice measure 25]                          %! SM4
     R1 * 3/4
@@ -4772,16 +4673,13 @@ A_ClarinetMusicVoice = {
     
     % [A ClarinetMusicVoice measure 28]                          %! SM4
     R1 * 7/8
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 29]                      %! SM4
-        \override DynamicLineSpanner.staff-padding = #'3         %! OC1
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        d''4.
-        -\staccato                                               %! IC
-        \f                                                       %! SM8:EXPLICIT_DYNAMIC:IC
-    }
+    
+    % [A ClarinetMusicVoice measure 29]                          %! SM4
+    \override DynamicLineSpanner.staff-padding = #'3             %! OC1
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    d''4.
+    -\staccato                                                   %! IC
+    \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
     \times 2/3 {
         
         g''4
@@ -4794,29 +4692,23 @@ A_ClarinetMusicVoice = {
         -\staccato                                               %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        a'4
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        e''8
-        -\staccato                                               %! IC
-        [
-        
-        cs''8
-        -\staccato                                               %! IC
-        
-        ds''8
-        -\staccato                                               %! IC
-        
-        f''8
-        -\staccato                                               %! IC
-        ~
-        ]
-    }
+    
+    a'4
+    
+    e''16.
+    -\staccato                                                   %! IC
+    [
+    
+    cs''16.
+    -\staccato                                                   %! IC
+    
+    ds''16.
+    -\staccato                                                   %! IC
+    
+    f''16.
+    -\staccato                                                   %! IC
+    ~
+    ]
     \times 2/3 {
         
         % [A ClarinetMusicVoice measure 30]                      %! SM4
@@ -4836,58 +4728,46 @@ A_ClarinetMusicVoice = {
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        cs''4
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        cs''4
-        -\staccato                                               %! IC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        e''4
-        -\staccato                                               %! IC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        g''8
-        -\staccato                                               %! IC
-        [
-        
-        gs''8
-        -\staccato                                               %! IC
-        
-        fs''8
-        -\staccato                                               %! IC
-        
-        cs''8
-        -\staccato                                               %! IC
-        ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 31]                      %! SM4
-        cs''4
-    }
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    cs''4
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    cs''4
+    -\staccato                                                   %! IC
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    e''4
+    -\staccato                                                   %! IC
+    
+    g''8
+    -\staccato                                                   %! IC
+    [
+    
+    gs''8
+    -\staccato                                                   %! IC
+    
+    fs''8
+    -\staccato                                                   %! IC
+    
+    cs''8
+    -\staccato                                                   %! IC
+    ~
+    ]
+    
+    % [A ClarinetMusicVoice measure 31]                          %! SM4
+    cs''4
     \times 2/3 {
         
         f''4
@@ -4900,32 +4780,26 @@ A_ClarinetMusicVoice = {
         -\staccato                                               %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        % [A ClarinetMusicVoice measure 32]                      %! SM4
-        as'4
-        
-        f''4
-        -\staccato                                               %! IC
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        f''8
-        [
-        
-        b'8
-        -\staccato                                               %! IC
-        
-        d''8
-        -\staccato                                               %! IC
-        
-        a'8
-        -\staccato                                               %! IC
-        ]
-    }
+    
+    % [A ClarinetMusicVoice measure 32]                          %! SM4
+    as'4
+    
+    f''4
+    -\staccato                                                   %! IC
+    ~
+    
+    f''16.
+    [
+    
+    b'16.
+    -\staccato                                                   %! IC
+    
+    d''16.
+    -\staccato                                                   %! IC
+    
+    a'16.
+    -\staccato                                                   %! IC
+    ]
     \times 2/3 {
         
         e''4
@@ -4937,48 +4811,33 @@ A_ClarinetMusicVoice = {
         fs''4
         -\staccato                                               %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        cs''4.
-        -\staccato                                               %! IC
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 33]                      %! SM4
-        cs''4.
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        fs''8
-        -\staccato                                               %! IC
-        [
-        
-        a''8
-        -\staccato                                               %! IC
-        
-        b'8
-        -\staccato                                               %! IC
-        
-        d''8
-        -\staccato                                               %! IC
-        ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        d''4
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        d''4
-    }
+    
+    cs''4.
+    -\staccato                                                   %! IC
+    ~
+    
+    % [A ClarinetMusicVoice measure 33]                          %! SM4
+    cs''4.
+    
+    fs''8
+    -\staccato                                                   %! IC
+    [
+    
+    a''8
+    -\staccato                                                   %! IC
+    
+    b'8
+    -\staccato                                                   %! IC
+    
+    d''8
+    -\staccato                                                   %! IC
+    ~
+    ]
+    
+    d''4
+    ~
+    
+    d''4
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/4 {
         
@@ -5003,19 +4862,16 @@ A_ClarinetMusicVoice = {
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        % [A ClarinetMusicVoice measure 35]                      %! SM4
-        cs''8
-        -\staccato                                               %! IC
-        [
-        
-        fs''8
-        -\staccato                                               %! IC
-        ~
-        ]
-    }
+    
+    % [A ClarinetMusicVoice measure 35]                          %! SM4
+    cs''8
+    -\staccato                                                   %! IC
+    [
+    
+    fs''8
+    -\staccato                                                   %! IC
+    ~
+    ]
     \times 2/3 {
         
         fs''4
@@ -5026,80 +4882,71 @@ A_ClarinetMusicVoice = {
         a''4
         -\staccato                                               %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        f''4
-        -\staccato                                               %! IC
-        ~
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        \revert Beam.positions                                   %! OC2
-        \revert TupletBracket.staff-padding                      %! OC2
-        \revert DynamicLineSpanner.staff-padding                 %! OC2
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        % [A ClarinetMusicVoice measure 36]                      %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-        f''4
-        \<                                                       %! HC1
-        \f                                                       %! HC1
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        f'4
-        -\staccato                                               %! IC
-        ~
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        f'8
-        [
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        f'8
-        -\staccato                                               %! IC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        fs'8
-        -\staccato                                               %! IC
-        
-        c'8
-        -\staccato                                               %! IC
-        ]
-    }
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    f''4
+    -\staccato                                                   %! IC
+    ~
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    \revert Beam.positions                                       %! OC2
+    \revert TupletBracket.staff-padding                          %! OC2
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
+    
+    % [A ClarinetMusicVoice measure 36]                          %! SM4
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    f''4
+    \<                                                           %! HC1
+    \f                                                           %! HC1
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    f'4
+    -\staccato                                                   %! IC
+    ~
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    f'16.
+    [
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    f'16.
+    -\staccato                                                   %! IC
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    fs'16.
+    -\staccato                                                   %! IC
+    
+    c'16.
+    -\staccato                                                   %! IC
+    ]
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/6 {
         
@@ -5112,84 +4959,66 @@ A_ClarinetMusicVoice = {
         as4
         -\staccato                                               %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 37]                      %! SM4
-        ds'4.
-        -\staccato                                               %! IC
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        ds'4.
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        % [A ClarinetMusicVoice measure 38]                      %! SM4
-        e'8
-        -\staccato                                               %! IC
-        [
-        
-        b8
-        -\staccato                                               %! IC
-        
-        a'8
-        -\staccato                                               %! IC
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        g'8
-        -\staccato                                               %! IC
-        ~
-        ]
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        g'4
-        ~
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        g'4
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 39]                      %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        g'4
-        -\staccato                                               %! IC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-    }
+    
+    % [A ClarinetMusicVoice measure 37]                          %! SM4
+    ds'4.
+    -\staccato                                                   %! IC
+    ~
+    
+    ds'4.
+    
+    % [A ClarinetMusicVoice measure 38]                          %! SM4
+    e'8
+    -\staccato                                                   %! IC
+    [
+    
+    b8
+    -\staccato                                                   %! IC
+    
+    a'8
+    -\staccato                                                   %! IC
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    g'8
+    -\staccato                                                   %! IC
+    ~
+    ]
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    g'4
+    ~
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    g'4
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    % [A ClarinetMusicVoice measure 39]                          %! SM4
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    g'4
+    -\staccato                                                   %! IC
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/9 {
         
@@ -5241,20 +5070,14 @@ A_ClarinetMusicVoice = {
         gs'4
         -\staccato                                               %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        f'4.
-        -\staccato                                               %! IC
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 41]                      %! SM4
-        f'4.
-        ~
-    }
+    
+    f'4.
+    -\staccato                                                   %! IC
+    ~
+    
+    % [A ClarinetMusicVoice measure 41]                          %! SM4
+    f'4.
+    ~
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/9 {
         
@@ -5309,114 +5132,93 @@ A_ClarinetMusicVoice = {
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        f''4
-        -\staccato                                               %! IC
-        ~
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        f''4
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        f''4
-        -\staccato                                               %! IC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        ds''8
-        -\staccato                                               %! IC
-        [
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        cs''8
-        -\staccato                                               %! IC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        cs''8
-        -\staccato                                               %! IC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        g'8
-        -\staccato                                               %! IC
-        ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        g'4.
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 43]                      %! SM4
-        g'4
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        a'4
-        -\staccato                                               %! IC
-        
-        as'4
-        -\staccato                                               %! IC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        % [A ClarinetMusicVoice measure 44]                      %! SM4
-        cs''8
-        -\staccato                                               %! IC
-        [
-        
-        g''8
-        -\staccato                                               %! IC
-        
-        ds''8
-        -\staccato                                               %! IC
-        
-        gs''8
-        -\staccato                                               %! IC
-        ~
-        ]
-    }
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    f''4
+    -\staccato                                                   %! IC
+    ~
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    f''4
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    f''4
+    -\staccato                                                   %! IC
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    ds''16.
+    -\staccato                                                   %! IC
+    [
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    cs''16.
+    -\staccato                                                   %! IC
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    cs''16.
+    -\staccato                                                   %! IC
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    g'16.
+    -\staccato                                                   %! IC
+    ~
+    ]
+    
+    g'4.
+    ~
+    
+    % [A ClarinetMusicVoice measure 43]                          %! SM4
+    g'4
+    
+    a'4
+    -\staccato                                                   %! IC
+    
+    as'4
+    -\staccato                                                   %! IC
+    
+    % [A ClarinetMusicVoice measure 44]                          %! SM4
+    cs''8
+    -\staccato                                                   %! IC
+    [
+    
+    g''8
+    -\staccato                                                   %! IC
+    
+    ds''8
+    -\staccato                                                   %! IC
+    
+    gs''8
+    -\staccato                                                   %! IC
+    ~
+    ]
     \times 2/3 {
         
         gs''4
@@ -5441,74 +5243,53 @@ A_ClarinetMusicVoice = {
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 45]                      %! SM4
-        b'4.
-        -\staccato                                               %! IC
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        b'4
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        % [A ClarinetMusicVoice measure 46]                      %! SM4
-        b'8
-        [
-        
-        cs''8
-        -\staccato                                               %! IC
-        
-        e''8
-        -\staccato                                               %! IC
-        
-        f''8
-        -\staccato                                               %! IC
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        as'4
-        -\staccato                                               %! IC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        gs''4.
-        -\staccato                                               %! IC
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 47]                      %! SM4
-        gs''4
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        as'8
-        -\staccato                                               %! IC
-        [
-        
-        g''8
-        -\staccato                                               %! IC
-        
-        ds''8
-        -\staccato                                               %! IC
-        
-        e''8
-        -\staccato                                               %! IC
-        ~
-        ]
-    }
+    
+    % [A ClarinetMusicVoice measure 45]                          %! SM4
+    b'4.
+    -\staccato                                                   %! IC
+    ~
+    
+    b'4
+    ~
+    
+    % [A ClarinetMusicVoice measure 46]                          %! SM4
+    b'8
+    [
+    
+    cs''8
+    -\staccato                                                   %! IC
+    
+    e''8
+    -\staccato                                                   %! IC
+    
+    f''8
+    -\staccato                                                   %! IC
+    ]
+    
+    as'4
+    -\staccato                                                   %! IC
+    
+    gs''4.
+    -\staccato                                                   %! IC
+    ~
+    
+    % [A ClarinetMusicVoice measure 47]                          %! SM4
+    gs''4
+    
+    as'8
+    -\staccato                                                   %! IC
+    [
+    
+    g''8
+    -\staccato                                                   %! IC
+    
+    ds''8
+    -\staccato                                                   %! IC
+    
+    e''8
+    -\staccato                                                   %! IC
+    ~
+    ]
     \times 2/3 {
         
         e''4
@@ -5531,32 +5312,26 @@ A_ClarinetMusicVoice = {
         c''4
         -\staccato                                               %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 49]                      %! SM4
-        g''4.
-        -\staccato                                               %! IC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        c''8
-        -\staccato                                               %! IC
-        [
-        
-        cs''8
-        -\staccato                                               %! IC
-        
-        e''8
-        -\staccato                                               %! IC
-        
-        f''8
-        -\staccato                                               %! IC
-        ]
-        \revert Beam.positions                                   %! OC2
-        \revert TupletBracket.staff-padding                      %! OC2
-    }
+    
+    % [A ClarinetMusicVoice measure 49]                          %! SM4
+    g''4.
+    -\staccato                                                   %! IC
+    
+    c''16.
+    -\staccato                                                   %! IC
+    [
+    
+    cs''16.
+    -\staccato                                                   %! IC
+    
+    e''16.
+    -\staccato                                                   %! IC
+    
+    f''16.
+    -\staccato                                                   %! IC
+    ]
+    \revert Beam.positions                                       %! OC2
+    \revert TupletBracket.staff-padding                          %! OC2
     
     % [A ClarinetMusicVoice measure 50]                          %! SM4
     R1 * 3/4
@@ -5789,18 +5564,12 @@ A_PianoMusicVoice = {
         ~
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A PianoMusicVoice measure 15]                         %! SM4
-        g''4.
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        a''4.
-        ~
-    }
+    
+    % [A PianoMusicVoice measure 15]                             %! SM4
+    g''4.
+    
+    a''4.
+    ~
     \times 4/7 {
         
         % [A PianoMusicVoice measure 16]                         %! SM4
@@ -5831,28 +5600,22 @@ A_PianoMusicVoice = {
         af''8
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/3 {
-        
-        a''8
-        [
-        
-        bf''8
-        
-        c'''8
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        % [A PianoMusicVoice measure 17]                         %! SM4
-        b''8
-        [
-        
-        g''8
-        ~
-        ]
-    }
+    
+    a''8
+    [
+    
+    bf''8
+    
+    c'''8
+    ]
+    
+    % [A PianoMusicVoice measure 17]                             %! SM4
+    b''8
+    [
+    
+    g''8
+    ~
+    ]
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/6 {
         
@@ -5872,18 +5635,15 @@ A_PianoMusicVoice = {
         af''4
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/3 {
-        
-        af''8
-        [
-        
-        f'8
-        
-        g''8
-        ~
-        ]
-    }
+    
+    af''8
+    [
+    
+    f'8
+    
+    g''8
+    ~
+    ]
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/9 {
         
@@ -5907,18 +5667,15 @@ A_PianoMusicVoice = {
         cs'''8
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/3 {
-        
-        % [A PianoMusicVoice measure 19]                         %! SM4
-        ef''8
-        [
-        
-        f'8
-        
-        g''8
-        ]
-    }
+    
+    % [A PianoMusicVoice measure 19]                             %! SM4
+    ef''8
+    [
+    
+    f'8
+    
+    g''8
+    ]
     \times 4/5 {
         
         bf''8
@@ -5934,11 +5691,8 @@ A_PianoMusicVoice = {
         ~
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        f'''4
-    }
+    
+    f'''4
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/4 {
         
@@ -5977,35 +5731,26 @@ A_PianoMusicVoice = {
         ef''8
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        % [A PianoMusicVoice measure 21]                         %! SM4
-        e'8
-        [
-        
-        b''8
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        g''8
-        [
-        
-        ef''8
-        
-        fs''8
-        
-        ef''8
-        ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        ef''4.
-    }
+    
+    % [A PianoMusicVoice measure 21]                             %! SM4
+    e'8
+    [
+    
+    b''8
+    ]
+    
+    g''8
+    [
+    
+    ef''8
+    
+    fs''8
+    
+    ef''8
+    ~
+    ]
+    
+    ef''4.
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/6 {
         
@@ -6016,34 +5761,28 @@ A_PianoMusicVoice = {
         b''4
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        % [A PianoMusicVoice measure 22]                         %! SM4
-        b''8
-        [
-        
-        f'''8
-        
-        bf''8
-        
-        f'8
-        ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        f'8
-        [
-        
-        g''8
-        
-        ef''8
-        
-        f'8
-        ]
-    }
+    
+    % [A PianoMusicVoice measure 22]                             %! SM4
+    b''8
+    [
+    
+    f'''8
+    
+    bf''8
+    
+    f'8
+    ~
+    ]
+    
+    f'16.
+    [
+    
+    g''16.
+    
+    ef''16.
+    
+    f'16.
+    ]
     \times 4/7 {
         
         fs''8
@@ -6062,35 +5801,26 @@ A_PianoMusicVoice = {
         ef'''8
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        % [A PianoMusicVoice measure 23]                         %! SM4
-        ef'''8
-        [
-        
-        af'8
-        
-        bf'8
-        
-        fs'8
-        ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        fs'4
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        % [A PianoMusicVoice measure 24]                         %! SM4
-        f'4
-        
-        bf''4
-        ~
-    }
+    
+    % [A PianoMusicVoice measure 23]                             %! SM4
+    ef'''16.
+    [
+    
+    af'16.
+    
+    bf'16.
+    
+    fs'16.
+    ~
+    ]
+    
+    fs'4
+    
+    % [A PianoMusicVoice measure 24]                             %! SM4
+    f'4
+    
+    bf''4
+    ~
     \times 2/3 {
         
         bf''8
@@ -8684,20 +8414,17 @@ A_ViolinMusicVoice = {
     
     % [A ViolinMusicVoice measure 20]                            %! SM4
     R1 * 3/4
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ViolinMusicVoice measure 21]                        %! SM4
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        f''4.
-        -\staccato                                               %! IC
-        \mp                                                      %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "off-string bowing on staccati"              %! IC
-            }                                                    %! IC
-    }
+    
+    % [A ViolinMusicVoice measure 21]                            %! SM4
+    \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    f''4.
+    -\staccato                                                   %! IC
+    \mp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
+    ^ \markup {                                                  %! IC
+        \whiteout                                                %! IC
+            \upright                                             %! IC
+                "off-string bowing on staccati"                  %! IC
+        }                                                        %! IC
     \times 2/3 {
         
         f''4
@@ -8710,11 +8437,8 @@ A_ViolinMusicVoice = {
         -\staccato                                               %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        f''4
-    }
+    
+    f''4
     \tweak text #tuplet-number::calc-fraction-text
     \times 10/14 {
         
@@ -8775,11 +8499,8 @@ A_ViolinMusicVoice = {
         -\staccato                                               %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        c'''4
-    }
+    
+    c'''4
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/4 {
         
@@ -8789,30 +8510,24 @@ A_ViolinMusicVoice = {
         f''4
         -\staccato                                               %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        % [A ViolinMusicVoice measure 23]                        %! SM4
-        f''16
-        -\staccato                                               %! IC
-        [
-        
-        fs''16
-        -\staccato                                               %! IC
-        
-        a''16
-        -\staccato                                               %! IC
-        
-        c''16
-        -\staccato                                               %! IC
-        ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        c''4.
-    }
+    
+    % [A ViolinMusicVoice measure 23]                            %! SM4
+    f''16
+    -\staccato                                                   %! IC
+    [
+    
+    fs''16
+    -\staccato                                                   %! IC
+    
+    a''16
+    -\staccato                                                   %! IC
+    
+    c''16
+    -\staccato                                                   %! IC
+    ~
+    ]
+    
+    c''4.
     \times 2/3 {
         
         % [A ViolinMusicVoice measure 24]                        %! SM4
@@ -8826,14 +8541,11 @@ A_ViolinMusicVoice = {
         -\staccato                                               %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        ef''4
-        
-        bf''4
-        -\staccato                                               %! IC
-    }
+    
+    ef''4
+    
+    bf''4
+    -\staccato                                                   %! IC
     
     % [A ViolinMusicVoice measure 25]                            %! SM4
     R1 * 3/4
@@ -8855,35 +8567,32 @@ A_ViolinMusicVoice = {
     
     % [A ViolinMusicVoice measure 31]                            %! SM4
     R1 * 3/4
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ViolinMusicVoice measure 32]                        %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        fs''4.
-        -\staccato                                               %! IC
-        \f                                                       %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! IC
-                        {                                        %! IC
-                            \whiteout                            %! IC
-                                \upright                         %! IC
-                                    "off-string bowing on staccati" %! IC
-                        }                                        %! IC
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
-                }
+    
+    % [A ViolinMusicVoice measure 32]                            %! SM4
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    fs''4.
+    -\staccato                                                   %! IC
+    \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
+    ^ \markup {
+        \column
+            {
+                \line                                            %! IC
+                    {                                            %! IC
+                        \whiteout                                %! IC
+                            \upright                             %! IC
+                                "off-string bowing on staccati"  %! IC
+                    }                                            %! IC
+                \line                                            %! SM14
+                    {                                            %! SM14
+                        @                                        %! SM14
+                    }                                            %! SM14
             }
-    }
+        }
     \times 2/3 {
         
         \once \override Accidental.color = #red
@@ -8910,18 +8619,15 @@ A_ViolinMusicVoice = {
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        fs''4
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-    }
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    fs''4
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
     \tweak text #tuplet-number::calc-fraction-text
     \times 10/14 {
         
@@ -8989,11 +8695,8 @@ A_ViolinMusicVoice = {
         -\staccato                                               %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        cs''4
-    }
+    
+    cs''4
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/4 {
         
@@ -9010,51 +8713,45 @@ A_ViolinMusicVoice = {
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        % [A ViolinMusicVoice measure 34]                        %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        fs''16
-        -\staccato                                               %! IC
-        [
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        g''16
-        -\staccato                                               %! IC
-        
-        bf'16
-        -\staccato                                               %! IC
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        cs''16
-        -\staccato                                               %! IC
-        ~
-        ]
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        cs''4.
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-    }
+    
+    % [A ViolinMusicVoice measure 34]                            %! SM4
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    fs''16
+    -\staccato                                                   %! IC
+    [
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    g''16
+    -\staccato                                                   %! IC
+    
+    bf'16
+    -\staccato                                                   %! IC
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    cs''16
+    -\staccato                                                   %! IC
+    ~
+    ]
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    cs''4.
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
     \times 2/3 {
         
         % [A ViolinMusicVoice measure 35]                        %! SM4
@@ -9075,18 +8772,15 @@ A_ViolinMusicVoice = {
         -\staccato                                               %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        e''4
-        
-        b''4
-        -\staccato                                               %! IC
-        ~
-        \revert DynamicLineSpanner.staff-padding                 %! OC2
-        \revert Beam.positions                                   %! OC2
-        \revert TupletBracket.staff-padding                      %! OC2
-    }
+    
+    e''4
+    
+    b''4
+    -\staccato                                                   %! IC
+    ~
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
+    \revert Beam.positions                                       %! OC2
+    \revert TupletBracket.staff-padding                          %! OC2
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/10 {
         
@@ -9153,18 +8847,12 @@ A_ViolinMusicVoice = {
         cs'4
         -\staccato                                               %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        fs'4
-        -\staccato                                               %! IC
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        fs'4.
-    }
+    
+    fs'4
+    -\staccato                                                   %! IC
+    ~
+    
+    fs'4.
     \times 8/12 {
         
         % [A ViolinMusicVoice measure 37]                        %! SM4
@@ -9207,45 +8895,33 @@ A_ViolinMusicVoice = {
         ~
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        cs'4
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ViolinMusicVoice measure 38]                        %! SM4
-        cs'4
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        ef'4
-        -\staccato                                               %! IC
-        
-        fs'4
-        -\staccato                                               %! IC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        ef'16
-        -\staccato                                               %! IC
-        [
-        
-        c''16
-        -\staccato                                               %! IC
-        
-        cs'16
-        -\staccato                                               %! IC
-        
-        af'16
-        -\staccato                                               %! IC
-        ~
-        ]
-    }
+    
+    cs'4
+    ~
+    
+    % [A ViolinMusicVoice measure 38]                            %! SM4
+    cs'4
+    
+    ef'4
+    -\staccato                                                   %! IC
+    
+    fs'4
+    -\staccato                                                   %! IC
+    
+    ef'16
+    -\staccato                                                   %! IC
+    [
+    
+    c''16
+    -\staccato                                                   %! IC
+    
+    cs'16
+    -\staccato                                                   %! IC
+    
+    af'16
+    -\staccato                                                   %! IC
+    ~
+    ]
     \times 2/3 {
         
         % [A ViolinMusicVoice measure 39]                        %! SM4
@@ -9257,20 +8933,14 @@ A_ViolinMusicVoice = {
         c''4
         -\staccato                                               %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        bf'4.
-        -\staccato                                               %! IC
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ViolinMusicVoice measure 40]                        %! SM4
-        bf'4.
-        ~
-    }
+    
+    bf'4.
+    -\staccato                                                   %! IC
+    ~
+    
+    % [A ViolinMusicVoice measure 40]                            %! SM4
+    bf'4.
+    ~
     \times 8/12 {
         
         bf'16
@@ -9343,39 +9013,30 @@ A_ViolinMusicVoice = {
         cs''4
         -\staccato                                               %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        fs'4
-        -\staccato                                               %! IC
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-        fs'4
-        \ff                                                      %! HC1
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        % [A ViolinMusicVoice measure 42]                        %! SM4
-        af'16
-        -\staccato                                               %! IC
-        [
-        
-        bf'16
-        -\staccato                                               %! IC
-        
-        fs'16
-        -\staccato                                               %! IC
-        
-        bf'16
-        -\staccato                                               %! IC
-        ~
-        ]
-    }
+    
+    fs'4
+    -\staccato                                                   %! IC
+    ~
+    
+    \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    fs'4
+    \ff                                                          %! HC1
+    
+    % [A ViolinMusicVoice measure 42]                            %! SM4
+    af'16
+    -\staccato                                                   %! IC
+    [
+    
+    bf'16
+    -\staccato                                                   %! IC
+    
+    fs'16
+    -\staccato                                                   %! IC
+    
+    bf'16
+    -\staccato                                                   %! IC
+    ~
+    ]
     \times 2/3 {
         
         bf'4
@@ -9387,20 +9048,14 @@ A_ViolinMusicVoice = {
         -\staccato                                               %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        cs''4.
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        c''4
-        -\staccato                                               %! IC
-        
-        cs''4
-        -\staccato                                               %! IC
-    }
+    
+    cs''4.
+    
+    c''4
+    -\staccato                                                   %! IC
+    
+    cs''4
+    -\staccato                                                   %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/10 {
         
@@ -9469,20 +9124,14 @@ A_ViolinMusicVoice = {
         fs''4
         -\staccato                                               %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        ef''4
-        -\staccato                                               %! IC
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ViolinMusicVoice measure 44]                        %! SM4
-        ef''4.
-        ~
-    }
+    
+    ef''4
+    -\staccato                                                   %! IC
+    ~
+    
+    % [A ViolinMusicVoice measure 44]                            %! SM4
+    ef''4.
+    ~
     \tweak text #tuplet-number::calc-fraction-text
     \times 10/14 {
         
@@ -9542,22 +9191,16 @@ A_ViolinMusicVoice = {
         fs''4
         -\staccato                                               %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ViolinMusicVoice measure 46]                        %! SM4
-        bf'4
-        -\staccato                                               %! IC
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        bf'4
-        
-        ef''4
-        -\staccato                                               %! IC
-    }
+    
+    % [A ViolinMusicVoice measure 46]                            %! SM4
+    bf'4
+    -\staccato                                                   %! IC
+    ~
+    
+    bf'4
+    
+    ef''4
+    -\staccato                                                   %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/10 {
         
@@ -9606,17 +9249,11 @@ A_ViolinMusicVoice = {
         -\staccato                                               %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        d''4.
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        bf''4.
-        -\staccato                                               %! IC
-    }
+    
+    d''4.
+    
+    bf''4.
+    -\staccato                                                   %! IC
     \times 8/12 {
         
         % [A ViolinMusicVoice measure 48]                        %! SM4
@@ -9670,20 +9307,14 @@ A_ViolinMusicVoice = {
         cs''4
         -\staccato                                               %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        fs''4
-        -\staccato                                               %! IC
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ViolinMusicVoice measure 50]                        %! SM4
-        fs''4
-        ~
-    }
+    
+    fs''4
+    -\staccato                                                   %! IC
+    ~
+    
+    % [A ViolinMusicVoice measure 50]                            %! SM4
+    fs''4
+    ~
     \times 8/12 {
         
         fs''16

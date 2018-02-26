@@ -73,42 +73,48 @@ maker = baca.SegmentMaker(
 ### ob, ' [C1] ornamented, unadorned ###
 
 maker(
-    baca.scope('OboeMusicVoice', 1),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.TaleaRhythmMaker(
-            talea=rhythmos.Talea(
-                counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
-                denominator=16,
-                ),
-            split_divisions_by_counts=[6, 18],
-            extra_counts_per_division=[2, 2, 0, 2, 4, 6],
-            ),
+    baca.scopes(
+        ('OboeMusicVoice', 1),
+        ('OboeMusicVoice', 3),
+        ('OboeMusicVoice', (20, 22)),
+        ('OboeMusicVoice', 24),
+        ('OboeMusicVoice', (26, 27)),
         ),
+#    baca.RhythmCommand(
+#        rhythm_maker=rhythmos.TaleaRhythmMaker(
+#            talea=rhythmos.Talea(
+#                counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
+#                denominator=16,
+#                ),
+#            split_divisions_by_counts=[6, 18],
+#            extra_counts_per_division=[2, 2, 0, 2, 4, 6],
+#            ),
+#        ),
+    krummzeit.pizzicato_rhythm(),
     )
 
-maker.copy_rhythm(
-    baca.scope('OboeMusicVoice', 1),
-    baca.scope('OboeMusicVoice', 3),
-    )
-
-maker.copy_rhythm(
-    baca.scope('OboeMusicVoice', 1),
-    baca.scope('OboeMusicVoice', (20, 22)),
-    )
-
-maker.copy_rhythm(
-    baca.scope('OboeMusicVoice', 20),
-    baca.scope('OboeMusicVoice', 24),
-    )
-
-maker.copy_rhythm(
-    baca.scope('OboeMusicVoice', 20),
-    baca.scope('OboeMusicVoice', (26, 27)),
-    )
+#maker(
+#    baca.scope('OboeMusicVoice', 3),
+#    krummzeit.pizzicato_rhythm(),
+#    )
+#
+#maker(
+#    baca.scope('OboeMusicVoice', 1),
+#    baca.scope('OboeMusicVoice', (20, 22)),
+#    )
+#
+#maker.copy_rhythm(
+#    baca.scope('OboeMusicVoice', 20),
+#    baca.scope('OboeMusicVoice', 24),
+#    )
+#
+#maker.copy_rhythm(
+#    baca.scope('OboeMusicVoice', 20),
+#    baca.scope('OboeMusicVoice', (26, 27)),
+#    )
 
 maker(
     baca.scope('ClarinetMusicVoice', 1),
-    baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
     baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
@@ -139,7 +145,6 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('ViolinMusicVoice', (1, 17)),
-    baca.clef('percussion'),
     baca.RhythmCommand(
         rhythm_maker=rhythmos.NoteRhythmMaker(
             tie_specifier=rhythmos.TieSpecifier(
@@ -147,7 +152,6 @@ maker(
                 ),
             ),
         ),
-    krummzeit.markup.scraped_slate(),
     )
 
 ### perc [C4-5] scraped slate ###
@@ -446,7 +450,6 @@ maker(
 
 maker(
     baca.scope('ClarinetMusicVoice', 1),
-    baca.dynamic('f'),
     baca.glissando(),
     )
 

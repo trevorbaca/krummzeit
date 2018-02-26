@@ -7,6 +7,7 @@ from .displacement import displacement
 from .glissando_rhythm import glissando_rhythm
 from .hypermeter_tuplets import hypermeter_tuplets
 from .instrument import instrument
+from .margin_markup import margin_markup
 from .opening_triplets import opening_triplets
 from .piano_incise_clusters import piano_incise_clusters
 from .pizzicato_rhythm import pizzicato_rhythm

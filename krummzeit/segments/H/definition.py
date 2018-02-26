@@ -28,12 +28,13 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=krummzeit.instruments,
+    margin_markups=krummzeit.margin_markups,
     measures_per_stage=measures_per_stage,
     metronome_marks=krummzeit.metronome_marks,
     rehearsal_mark='H',
     score_template=krummzeit.ScoreTemplate(),
     metronome_mark_measure_map=metronome_mark_measure_map,
-    metronome_mark_stem_height=1.25,
+    metronome_mark_stem_height=1,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=10,
@@ -261,6 +262,7 @@ maker(
     baca.scope('PianoMusicVoice', (1, 5)),
     baca.clef('treble'),
     baca.instrument(krummzeit.instruments['Harpsichord']),
+    krummzeit.margin_markup('Hpschd.'),
     )
 
 ### (14) string reiteration ###

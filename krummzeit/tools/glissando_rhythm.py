@@ -19,5 +19,8 @@ def glissando_rhythm(division_ratios, division_masks):
                 (1, 4),
                 (4, 3),
                 ],
+            tuplet_specifier=rhythmos.TupletSpecifier(
+                extract_trivial=True,
+                ),
             ),
         )

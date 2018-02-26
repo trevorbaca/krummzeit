@@ -101,10 +101,20 @@ maker(
 ### perc [C4-5] scraped slate ###
 
 maker(
-    baca.scope('PercussionMusicVoice', (18, 20)),
+    baca.scope('PercussionMusicVoice', (18, 21)),
     baca.clef('percussion'),
-    baca.make_repeat_tied_notes(),
+    baca.dynamic('f'),
+    baca.instrument(krummzeit.instruments['Percussion']),
+    baca.not_parts(baca.bar_extent_zero()),
+    baca.repeat_ties_up(),
+    baca.staff_lines(1),
+    baca.staff_position(0),
     krummzeit.markup.scraped_slate(),
+    )
+
+maker(
+    baca.scope('PercussionMusicVoice', (18, 20)),
+    baca.make_repeat_tied_notes(),
     )
 
 ### va, vc [C2-4] color pedals ###
@@ -162,114 +172,41 @@ maker(
 ### pf, xyl [C3] points ###
 
 maker(
-    baca.scope('PianoMusicVoice', 11),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByRoundedRatiosDivisionCallback(
-            ratios=[(1, 2)],
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            tuplet_ratios=[
-                (-1, 1, 1, 2),
-                (-1, 1, 1, -2, 2),
-                ],
-            tuplet_specifier=rhythmos.TupletSpecifier(
-                avoid_dots=True,
-                ),
-            ),
-        ),
-    )
-
-maker.copy_rhythm(
-    baca.scope('PianoMusicVoice', 11),
-    baca.scope('PianoMusicVoice', 13),
-    division_maker__ratios=[(2, 1)],
-    )
-
-maker.copy_rhythm(
-    baca.scope('PianoMusicVoice', 11),
-    baca.scope('PianoMusicVoice', 15),
-    )
-
-maker.copy_rhythm(
-    baca.scope('PianoMusicVoice', 13),
-    baca.scope('PianoMusicVoice', 17),
-    )
-
-maker.copy_rhythm(
-    baca.scope('PianoMusicVoice', 11),
-    baca.scope('PianoMusicVoice', 22),
-    )
-
-maker.copy_rhythm(
-    baca.scope('PianoMusicVoice', 13),
-    baca.scope('PianoMusicVoice', 24),
-    )
-
-maker.copy_rhythm(
-    baca.scope('PianoMusicVoice', 11),
-    baca.scope('PianoMusicVoice', 26),
-    )
-
-maker.copy_rhythm(
-    baca.scope('PianoMusicVoice', 13),
-    baca.scope('PianoMusicVoice', 27),
-    )
-
-maker.copy_rhythm(
-    baca.scope('PianoMusicVoice', 11),
-    baca.scope('PercussionMusicVoice', 11),
-    division_maker__ratios=[(2, 1)],
+    baca.make_scopes(['PianoMusicVoice'], [11, 15, 22, 26]),
+    krummzeit.silver_points([(1, 2)]),
     )
 
 maker(
-    baca.scope('PercussionMusicVoice', 11),
+    baca.make_scopes(['PianoMusicVoice'], [13, 17, 24, 27]),
+    krummzeit.silver_points([(2, 1)]),
+    )
+
+maker(
+    baca.scope('PercussionMusicVoice', (1, 10)),
+    baca.not_parts(baca.bar_extent_zero()),
+    )
+
+maker(
+    baca.make_scopes(['PercussionMusicVoice'], [11, 15, 22, 26]),
+    krummzeit.silver_points([(2, 1)]),
+    )
+
+maker(
+    baca.make_scopes(['PercussionMusicVoice'], [11, 22]),
     baca.instrument(krummzeit.instruments['Xylophone']),
     baca.clef('treble'),
     baca.staff_lines(5),
     )
 
-maker.copy_rhythm(
-    baca.scope('PercussionMusicVoice', 11),
-    baca.scope('PercussionMusicVoice', 13),
-    division_maker__ratios=[(1, 2)],
-    )
-
-maker.copy_rhythm(
-    baca.scope('PercussionMusicVoice', 13),
-    baca.scope('PercussionMusicVoice', 15),
-    division_maker__ratios=[(2, 1)],
-    )
-
-maker.copy_rhythm(
-    baca.scope('PercussionMusicVoice', 13),
-    baca.scope('PercussionMusicVoice', 17),
-    )
-
-maker.copy_rhythm(
-    baca.scope('PercussionMusicVoice', 11),
-    baca.scope('PercussionMusicVoice', 22),
-    )
-
-maker.copy_rhythm(
-    baca.scope('PercussionMusicVoice', 13),
-    baca.scope('PercussionMusicVoice', 24),
-    )
-
-maker.copy_rhythm(
-    baca.scope('PercussionMusicVoice', 11),
-    baca.scope('PercussionMusicVoice', 26),
+maker(
+    baca.make_scopes(['PercussionMusicVoice'], [13, 17, 24]),
+    krummzeit.silver_points([(1, 2)]),
     )
 
 maker(
     baca.scope('PercussionMusicVoice', (27, 30)),
     baca.clef('percussion'),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=True,
-                ),
-            ),
-        ),
+    baca.make_repeat_tied_notes(),
     krummzeit.markup.snare_drum(),
     )
 
@@ -444,11 +381,6 @@ maker(
         baca.trill_spanner(),
         baca.plts().filter_preprolated('>=', (1, 4)),
         ),
-    )
-
-maker(
-    baca.scope('PercussionMusicVoice', (18, 20)),
-    baca.dynamic('ff'),
     )
 
 ### (7) [C3], [C7-8] pf, xylophone ###

@@ -375,6 +375,7 @@ maker(
     baca.bar_extent((-2, 2)),
     baca.clef('percussion'),
     baca.dynamic('mf'),
+    baca.instrument(krummzeit.instruments['Percussion']),
     baca.make_repeat_tied_notes(),
     baca.markup.boxed('stonecircle: scrape at moderate speed'),
     baca.not_parts(baca.bar_extent_zero()),

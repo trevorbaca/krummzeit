@@ -8,6 +8,7 @@ from .glissando_rhythm import glissando_rhythm
 from .hypermeter_tuplets import hypermeter_tuplets
 from .instrument import instrument
 from .opening_triplets import opening_triplets
+from .polyphony import polyphony
 from .register_narrow import register_narrow
 from .register_wide import register_wide
 from .single_cluster_piano_rhythm import single_cluster_piano_rhythm

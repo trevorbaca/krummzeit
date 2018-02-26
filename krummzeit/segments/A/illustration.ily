@@ -7166,15 +7166,12 @@ A_PianoMusicVoice = {
     }
     
     r2.
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        % [A PianoMusicVoice measure 71]                         %! SM4
-        r4
-        
-        fs''4
-        -\staccatissimo                                          %! IC
-    }
+    
+    % [A PianoMusicVoice measure 71]                             %! SM4
+    r8.
+    
+    fs''8.
+    -\staccatissimo                                              %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
         
@@ -7226,28 +7223,22 @@ A_PianoMusicVoice = {
     
     % [A PianoMusicVoice measure 72]                             %! SM4
     r2
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A PianoMusicVoice measure 73]                         %! SM4
-        r8
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        r8
-        
-        cs''4
-        -\staccatissimo                                          %! IC
-        
-        b''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        c''16
-        -\staccatissimo                                          %! IC
-        ]
-    }
+    
+    % [A PianoMusicVoice measure 73]                             %! SM4
+    r8
+    
+    r16.
+    
+    cs''8.
+    -\staccatissimo                                              %! IC
+    [
+    
+    b''32.
+    -\staccatissimo                                              %! IC
+    
+    c''32.
+    -\staccatissimo                                              %! IC
+    ]
     
     r4
     \times 2/3 {
@@ -7307,17 +7298,11 @@ A_PianoMusicVoice = {
         -\staccatissimo                                          %! IC
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A PianoMusicVoice measure 75]                         %! SM4
-        r8
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        r4.
-    }
+    
+    % [A PianoMusicVoice measure 75]                             %! SM4
+    r8
+    
+    r4.
     
     r4
     \tweak text #tuplet-number::calc-fraction-text
@@ -7358,112 +7343,100 @@ A_PianoMusicVoice = {
         a''8
         -\staccatissimo                                          %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        r8
-        
-        e''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        ef''16
-        -\staccatissimo                                          %! IC
-        
-        c'''8
-        -\staccatissimo                                          %! IC
-        ]
-    }
+    
+    r8
+    
+    e''16
+    -\staccatissimo                                              %! IC
+    [
+    
+    ef''16
+    -\staccatissimo                                              %! IC
+    
+    c'''8
+    -\staccatissimo                                              %! IC
+    ]
     
     % [A PianoMusicVoice measure 77]                             %! SM4
     r1
     
     r8
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        r8
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        fs''16
-        -\staccatissimo                                          %! IC
-        [
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        fs''16
-        -\staccatissimo                                          %! IC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        f''16
-        -\staccatissimo                                          %! IC
-        
-        fs''16
-        -\staccatissimo                                          %! IC
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        r8
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        % [A PianoMusicVoice measure 78]                         %! SM4
-        r8
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        c'''4
-        -\staccatissimo                                          %! IC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        c'''16
-        -\staccatissimo                                          %! IC
-        [
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        c'''16
-        -\staccatissimo                                          %! IC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        f''8
-        -\staccatissimo                                          %! IC
-        
-        af''8
-        -\staccatissimo                                          %! IC
-        ]
-        
-        e''4
-        -\staccatissimo                                          %! IC
-    }
+    
+    r8
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    fs''16
+    -\staccatissimo                                              %! IC
+    [
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    fs''16
+    -\staccatissimo                                              %! IC
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    f''16
+    -\staccatissimo                                              %! IC
+    
+    fs''16
+    -\staccatissimo                                              %! IC
+    ]
+    
+    r8
+    
+    % [A PianoMusicVoice measure 78]                             %! SM4
+    r16.
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    c'''8.
+    -\staccatissimo                                              %! IC
+    [
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    c'''32.
+    -\staccatissimo                                              %! IC
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    c'''32.
+    -\staccatissimo                                              %! IC
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    f''16.
+    -\staccatissimo                                              %! IC
+    
+    af''16.
+    -\staccatissimo                                              %! IC
+    
+    e''8.
+    -\staccatissimo                                              %! IC
+    ]
     
     % [A PianoMusicVoice measure 79]                             %! SM4
     r4
@@ -7486,91 +7459,82 @@ A_PianoMusicVoice = {
         -\staccatissimo                                          %! IC
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A PianoMusicVoice measure 80]                         %! SM4
-        r8
-        
-        cs'''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        c'''16
-        -\staccatissimo                                          %! IC
-        
-        f''16
-        -\staccatissimo                                          %! IC
-        
-        g''16
-        -\staccatissimo                                          %! IC
-        ]
-        
-        a''4
-        -\staccatissimo                                          %! IC
-        
-        g''4
-        -\staccatissimo                                          %! IC
-        
-        e''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        c'''16
-        -\staccatissimo                                          %! IC
-        
-        a''8
-        -\staccatissimo                                          %! IC
-        ]
-    }
+    
+    % [A PianoMusicVoice measure 80]                             %! SM4
+    r8
+    
+    cs'''16
+    -\staccatissimo                                              %! IC
+    [
+    
+    c'''16
+    -\staccatissimo                                              %! IC
+    
+    f''16
+    -\staccatissimo                                              %! IC
+    
+    g''16
+    -\staccatissimo                                              %! IC
+    ]
+    
+    a''4
+    -\staccatissimo                                              %! IC
+    
+    g''4
+    -\staccatissimo                                              %! IC
+    
+    e''16
+    -\staccatissimo                                              %! IC
+    [
+    
+    c'''16
+    -\staccatissimo                                              %! IC
+    
+    a''8
+    -\staccatissimo                                              %! IC
+    ]
     
     % [A PianoMusicVoice measure 81]                             %! SM4
     r4.
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        r8
-        
-        f''4
-        -\staccatissimo                                          %! IC
-        
-        fs'''4
-        -\staccatissimo                                          %! IC
-        
-        f''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        a''16
-        -\staccatissimo                                          %! IC
-        
-        af''8
-        -\staccatissimo                                          %! IC
-        
-        a''8
-        -\staccatissimo                                          %! IC
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A PianoMusicVoice measure 82]                         %! SM4
-        r16
-        
-        e'''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        f''16
-        -\staccatissimo                                          %! IC
-        
-        c'''16
-        -\staccatissimo                                          %! IC
-        
-        g'''8
-        -\staccatissimo                                          %! IC
-        ]
-    }
+    
+    r16.
+    
+    f''8.
+    -\staccatissimo                                              %! IC
+    [
+    
+    fs'''8.
+    -\staccatissimo                                              %! IC
+    
+    f''32.
+    -\staccatissimo                                              %! IC
+    
+    a''32.
+    -\staccatissimo                                              %! IC
+    
+    af''16.
+    -\staccatissimo                                              %! IC
+    
+    a''16.
+    -\staccatissimo                                              %! IC
+    ]
+    
+    % [A PianoMusicVoice measure 82]                             %! SM4
+    r16
+    
+    e'''16
+    -\staccatissimo                                              %! IC
+    [
+    
+    f''16
+    -\staccatissimo                                              %! IC
+    
+    c'''16
+    -\staccatissimo                                              %! IC
+    
+    g'''8
+    -\staccatissimo                                              %! IC
+    ]
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
         
@@ -7604,30 +7568,24 @@ A_PianoMusicVoice = {
         g'''4
         -\staccatissimo                                          %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A PianoMusicVoice measure 84]                         %! SM4
-        r16
-        
-        a''16
-        -\staccatissimo                                          %! IC
-    }
+    
+    % [A PianoMusicVoice measure 84]                             %! SM4
+    r16
+    
+    a''16
+    -\staccatissimo                                              %! IC
     
     r4.
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        r16
-        
-        g'''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        af'''8
-        -\staccatissimo                                          %! IC
-        ]
-    }
+    
+    r16
+    
+    g'''16
+    -\staccatissimo                                              %! IC
+    [
+    
+    af'''8
+    -\staccatissimo                                              %! IC
+    ]
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
         
@@ -7651,22 +7609,19 @@ A_PianoMusicVoice = {
         c'''8
         -\staccatissimo                                          %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        r8
-        
-        b''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        fs'''16
-        -\staccatissimo                                          %! IC
-        
-        f'''8
-        -\staccatissimo                                          %! IC
-        ]
-    }
+    
+    r8
+    
+    b''16
+    -\staccatissimo                                              %! IC
+    [
+    
+    fs'''16
+    -\staccatissimo                                              %! IC
+    
+    f'''8
+    -\staccatissimo                                              %! IC
+    ]
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
@@ -7679,20 +7634,14 @@ A_PianoMusicVoice = {
         a'''4
         -\staccatissimo                                          %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        r4
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A PianoMusicVoice measure 87]                         %! SM4
-        r16
-        
-        af'''16
-        -\staccatissimo                                          %! IC
-    }
+    
+    r4
+    
+    % [A PianoMusicVoice measure 87]                             %! SM4
+    r16
+    
+    af'''16
+    -\staccatissimo                                              %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/9 {
         
@@ -7729,20 +7678,14 @@ A_PianoMusicVoice = {
         -\staccatissimo                                          %! IC
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A PianoMusicVoice measure 88]                         %! SM4
-        r8
-        
-        ef'''8
-        -\staccatissimo                                          %! IC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        r2
-    }
+    
+    % [A PianoMusicVoice measure 88]                             %! SM4
+    r8
+    
+    ef'''8
+    -\staccatissimo                                              %! IC
+    
+    r4.
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/7 {
         
@@ -9691,30 +9634,29 @@ A_ViolinMusicVoice = {
     e'8
     -\upbow                                                      %! IC
     \revert DynamicLineSpanner.staff-padding                     %! OC2
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        % [A ViolinMusicVoice measure 67]                        %! SM4
-        \override Beam.positions = #'(-4 . -4)                   %! OC1
-        \override DynamicLineSpanner.staff-padding = #'6         %! OC1
-        \override TupletBracket.staff-padding = #3               %! OC1
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        b''8
-        -\staccatissimo                                          %! IC
-        \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    pizz.                                        %! IC
-            }                                                    %! IC
-        
-        a''4
-        -\staccatissimo                                          %! IC
-        
-        e''8
-        -\staccatissimo                                          %! IC
-        ~
-    }
+    
+    % [A ViolinMusicVoice measure 67]                            %! SM4
+    \override Beam.positions = #'(-4 . -4)                       %! OC1
+    \override DynamicLineSpanner.staff-padding = #'6             %! OC1
+    \override TupletBracket.staff-padding = #3                   %! OC1
+    \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    b''16.
+    -\staccatissimo                                              %! IC
+    \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC
+    [
+    ^ \markup {                                                  %! IC
+        \whiteout                                                %! IC
+            \upright                                             %! IC
+                pizz.                                            %! IC
+        }                                                        %! IC
+    
+    a''8.
+    -\staccatissimo                                              %! IC
+    
+    e''16.
+    -\staccatissimo                                              %! IC
+    ~
+    ]
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
@@ -9724,21 +9666,18 @@ A_ViolinMusicVoice = {
         -\staccatissimo                                          %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ViolinMusicVoice measure 68]                        %! SM4
-        ef''8
-        
-        g''4
-        -\staccatissimo                                          %! IC
-        
-        c''4
-        -\staccatissimo                                          %! IC
-        
-        ef''8
-        -\staccatissimo                                          %! IC
-    }
+    
+    % [A ViolinMusicVoice measure 68]                            %! SM4
+    ef''8
+    
+    g''4
+    -\staccatissimo                                              %! IC
+    
+    c''4
+    -\staccatissimo                                              %! IC
+    
+    ef''8
+    -\staccatissimo                                              %! IC
     
     r4
     
@@ -9746,48 +9685,42 @@ A_ViolinMusicVoice = {
     r8
     
     r2
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ViolinMusicVoice measure 70]                        %! SM4
-        r16
-        
-        bf''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        c''16
-        -\staccatissimo                                          %! IC
-        
-        af''16
-        -\staccatissimo                                          %! IC
-        
-        f''8
-        -\staccatissimo                                          %! IC
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        r8
-        
-        bf''4
-        -\staccatissimo                                          %! IC
-        
-        a''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        c''16
-        -\staccatissimo                                          %! IC
-        
-        b''8
-        -\staccatissimo                                          %! IC
-        
-        g''8
-        -\staccatissimo                                          %! IC
-        ]
-    }
+    
+    % [A ViolinMusicVoice measure 70]                            %! SM4
+    r16
+    
+    bf''16
+    -\staccatissimo                                              %! IC
+    [
+    
+    c''16
+    -\staccatissimo                                              %! IC
+    
+    af''16
+    -\staccatissimo                                              %! IC
+    
+    f''8
+    -\staccatissimo                                              %! IC
+    ]
+    
+    r8
+    
+    bf''4
+    -\staccatissimo                                              %! IC
+    
+    a''16
+    -\staccatissimo                                              %! IC
+    [
+    
+    c''16
+    -\staccatissimo                                              %! IC
+    
+    b''8
+    -\staccatissimo                                              %! IC
+    
+    g''8
+    -\staccatissimo                                              %! IC
+    ]
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
         
@@ -9799,28 +9732,25 @@ A_ViolinMusicVoice = {
     }
     
     r4.
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        r8
-        
-        c'''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        a''16
-        -\staccatissimo                                          %! IC
-        
-        cs''16
-        -\staccatissimo                                          %! IC
-        
-        g''16
-        -\staccatissimo                                          %! IC
-        
-        fs''8
-        -\staccatissimo                                          %! IC
-        ]
-    }
+    
+    r8
+    
+    c'''16
+    -\staccatissimo                                              %! IC
+    [
+    
+    a''16
+    -\staccatissimo                                              %! IC
+    
+    cs''16
+    -\staccatissimo                                              %! IC
+    
+    g''16
+    -\staccatissimo                                              %! IC
+    
+    fs''8
+    -\staccatissimo                                              %! IC
+    ]
     \times 4/5 {
         
         % [A ViolinMusicVoice measure 72]                        %! SM4
@@ -9843,60 +9773,48 @@ A_ViolinMusicVoice = {
     
     % [A ViolinMusicVoice measure 73]                            %! SM4
     r8
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        r4.
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        r8
-        
-        e''8
-        -\staccatissimo                                          %! IC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        % [A ViolinMusicVoice measure 74]                        %! SM4
-        r8
-        
-        f''4
-        -\staccatissimo                                          %! IC
-        
-        ef''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        c'''16
-        -\staccatissimo                                          %! IC
-        
-        f''8
-        -\staccatissimo                                          %! IC
-        
-        e''8
-        -\staccatissimo                                          %! IC
-        
-        fs''16
-        -\staccatissimo                                          %! IC
-        
-        g''16
-        -\staccatissimo                                          %! IC
-        
-        bf''16
-        -\staccatissimo                                          %! IC
-        
-        fs''16
-        -\staccatissimo                                          %! IC
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ViolinMusicVoice measure 75]                        %! SM4
-        r8
-    }
+    
+    r4.
+    
+    r8
+    
+    e''8
+    -\staccatissimo                                              %! IC
+    
+    % [A ViolinMusicVoice measure 74]                            %! SM4
+    r16.
+    
+    f''8.
+    -\staccatissimo                                              %! IC
+    [
+    
+    ef''32.
+    -\staccatissimo                                              %! IC
+    
+    c'''32.
+    -\staccatissimo                                              %! IC
+    
+    f''16.
+    -\staccatissimo                                              %! IC
+    
+    e''16.
+    -\staccatissimo                                              %! IC
+    
+    fs''32.
+    -\staccatissimo                                              %! IC
+    
+    g''32.
+    -\staccatissimo                                              %! IC
+    
+    bf''32.
+    -\staccatissimo                                              %! IC
+    
+    fs''32.
+    -\staccatissimo                                              %! IC
+    ]
+    
+    % [A ViolinMusicVoice measure 75]                            %! SM4
+    r8
     
     r4.
     \times 2/3 {
@@ -9911,18 +9829,15 @@ A_ViolinMusicVoice = {
         -\staccatissimo                                          %! IC
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ViolinMusicVoice measure 76]                        %! SM4
-        r4.
-        
-        f''4
-        -\staccatissimo                                          %! IC
-        
-        a''4
-        -\staccatissimo                                          %! IC
-    }
+    
+    % [A ViolinMusicVoice measure 76]                            %! SM4
+    r4.
+    
+    f''4
+    -\staccatissimo                                              %! IC
+    
+    a''4
+    -\staccatissimo                                              %! IC
     
     r4.
     \tweak text #tuplet-number::calc-fraction-text
@@ -9951,19 +9866,13 @@ A_ViolinMusicVoice = {
         b''2
         -\staccatissimo                                          %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        r4
-        
-        g'''8
-        -\staccatissimo                                          %! IC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        r8
-    }
+    
+    r4
+    
+    g'''8
+    -\staccatissimo                                              %! IC
+    
+    r8
     \times 2/3 {
         
         % [A ViolinMusicVoice measure 78]                        %! SM4
@@ -10078,31 +9987,25 @@ A_ViolinMusicVoice = {
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ViolinMusicVoice measure 82]                        %! SM4
-        r8
-        
-        g'''4
-        -\staccatissimo                                          %! IC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        r16
-        
-        g'''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        b''8
-        -\staccatissimo                                          %! IC
-        
-        a'''8
-        -\staccatissimo                                          %! IC
-        ]
-    }
+    
+    % [A ViolinMusicVoice measure 82]                            %! SM4
+    r8
+    
+    g'''4
+    -\staccatissimo                                              %! IC
+    
+    r16
+    
+    g'''16
+    -\staccatissimo                                              %! IC
+    [
+    
+    b''8
+    -\staccatissimo                                              %! IC
+    
+    a'''8
+    -\staccatissimo                                              %! IC
+    ]
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
         
@@ -10130,20 +10033,14 @@ A_ViolinMusicVoice = {
     r2
     
     r8
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ViolinMusicVoice measure 84]                        %! SM4
-        r8
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        r4
-        
-        e'''4
-        -\staccatissimo                                          %! IC
-    }
+    
+    % [A ViolinMusicVoice measure 84]                            %! SM4
+    r8
+    
+    r8.
+    
+    e'''8.
+    -\staccatissimo                                              %! IC
     
     r4
     \revert Beam.positions                                       %! OC2
@@ -10154,36 +10051,26 @@ A_ViolinMusicVoice = {
     \stopStaff                                                   %! SM8:EXPLICIT_STAFF_LINES:IC
     \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM8:EXPLICIT_STAFF_LINES:IC
     \startStaff                                                  %! SM8:EXPLICIT_STAFF_LINES:IC
+    \once \override ViolinMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! OC1
     \override RepeatTie.direction = #up                          %! OC1
     \override DynamicLineSpanner.staff-padding = #'3             %! OC1
     \clef "percussion"                                           %! SM8:EXPLICIT_CLEF:IC
     \once \override ViolinMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
 %@% \override ViolinMusicStaff.Clef.color = ##f                  %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set ViolinMusicStaff.forceClef = ##t                        %! SM8:EXPLICIT_CLEF:SM33:IC
-    \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
     \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
     c'2.
     \mf                                                          %! SM8:EXPLICIT_DYNAMIC:IC
-    ^ \markup {
-        \column
-            {
-                \line                                            %! IC
-                    {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                \override                        %! IC
-                                    #'(box-padding . 0.5)        %! IC
-                                    \box                         %! IC
-                                        "scraped slate"          %! IC
-                    }                                            %! IC
-                \line                                            %! IC
-                    {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                "scrape in a circle at moderate speed" %! IC
-                    }                                            %! IC
-            }
-        }
+    ^ \markup {                                                  %! IC
+        \whiteout                                                %! IC
+            \upright                                             %! IC
+                \override                                        %! IC
+                    #'(box-padding . 0.5)                        %! IC
+                    \box                                         %! IC
+                        "stonecircle: scrape at moderate speed"  %! IC
+        }                                                        %! IC
+    \override ViolinMusicStaff.BarLine.bar-extent = #'(0 . 0)    %! OC1:-PARTS
     \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [A ViolinMusicVoice measure 86]                            %! SM4
@@ -10200,6 +10087,8 @@ A_ViolinMusicVoice = {
     
     c'2
     \repeatTie
+    \revert ViolinMusicStaff.BarLine.bar-extent                  %! OC2:-PARTS
+    \once \override ViolinMusicStaff.BarLine.bar-extent = #'(0 . 0) %! OC1:-PARTS
     \revert RepeatTie.direction                                  %! OC2
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     
@@ -10291,16 +10180,13 @@ A_ViolaMusicVoice = {
         b,1
         \glissando                                               %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ViolaMusicVoice measure 20]                         %! SM4
-        cqs2
-        \glissando                                               %! SC
-        
-        d\breve
-        \glissando                                               %! SC
-    }
+    
+    % [A ViolaMusicVoice measure 20]                             %! SM4
+    cqs2
+    \glissando                                                   %! SC
+    
+    d\breve
+    \glissando                                                   %! SC
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
         
@@ -10369,16 +10255,13 @@ A_ViolaMusicVoice = {
         c1
         \glissando                                               %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ViolaMusicVoice measure 31]                         %! SM4
-        dqs2
-        \glissando                                               %! SC
-        
-        e\breve
-        \glissando                                               %! SC
-    }
+    
+    % [A ViolaMusicVoice measure 31]                             %! SM4
+    dqs2
+    \glissando                                                   %! SC
+    
+    e\breve
+    \glissando                                                   %! SC
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
         
@@ -10750,34 +10633,33 @@ A_ViolaMusicVoice = {
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        % [A ViolaMusicVoice measure 61]                         %! SM4
-        \override Beam.positions = #'(-4 . -4)                   %! OC1
-        \override DynamicLineSpanner.staff-padding = #'6         %! OC1
-        \override TupletBracket.staff-padding = #3               %! OC1
-        \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
-        \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-    %@% \override ViolaMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-        \set ViolaMusicStaff.forceClef = ##t                     %! SM8:EXPLICIT_CLEF:SM33:IC
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        b''8
-        -\staccatissimo                                          %! IC
-        \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    pizz.                                        %! IC
-            }                                                    %! IC
-        \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
-        
-        bf''4
-        -\staccatissimo                                          %! IC
-        
-        g''8
-        -\staccatissimo                                          %! IC
-    }
+    
+    % [A ViolaMusicVoice measure 61]                             %! SM4
+    \override Beam.positions = #'(-4 . -4)                       %! OC1
+    \override DynamicLineSpanner.staff-padding = #'6             %! OC1
+    \override TupletBracket.staff-padding = #3                   %! OC1
+    \clef "treble"                                               %! SM8:EXPLICIT_CLEF:IC
+    \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override ViolaMusicStaff.Clef.color = ##f                   %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set ViolaMusicStaff.forceClef = ##t                         %! SM8:EXPLICIT_CLEF:SM33:IC
+    \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    b''16.
+    -\staccatissimo                                              %! IC
+    \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC
+    [
+    ^ \markup {                                                  %! IC
+        \whiteout                                                %! IC
+            \upright                                             %! IC
+                pizz.                                            %! IC
+        }                                                        %! IC
+    \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+    
+    bf''8.
+    -\staccatissimo                                              %! IC
+    
+    g''16.
+    -\staccatissimo                                              %! IC
+    ]
     
     r1
     
@@ -10814,31 +10696,30 @@ A_ViolaMusicVoice = {
         ~
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        af''8
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        fs''4
-        -\staccatissimo                                          %! IC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        fs''8
-        -\staccatissimo                                          %! IC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-    }
+    
+    af''16.
+    [
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    fs''8.
+    -\staccatissimo                                              %! IC
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    fs''16.
+    -\staccatissimo                                              %! IC
+    ]
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
     
     r4
     
@@ -10866,20 +10747,14 @@ A_ViolaMusicVoice = {
         -\staccatissimo                                          %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        fs''8
-        
-        cs''4
-        -\staccatissimo                                          %! IC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        c'''8
-        -\staccatissimo                                          %! IC
-    }
+    
+    fs''8
+    
+    cs''4
+    -\staccatissimo                                              %! IC
+    
+    c'''8
+    -\staccatissimo                                              %! IC
     
     % [A ViolaMusicVoice measure 66]                             %! SM4
     r1
@@ -10918,40 +10793,32 @@ A_ViolaMusicVoice = {
         e''4
         -\staccatissimo                                          %! IC
     }
-    \times 2/3 {
-        
-        f''4.
-        -\staccatissimo                                          %! IC
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ViolaMusicVoice measure 69]                         %! SM4
-        f''8
-    }
+    
+    f''4
+    -\staccatissimo                                              %! IC
+    ~
+    
+    % [A ViolaMusicVoice measure 69]                             %! SM4
+    f''8
     
     r2
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        % [A ViolaMusicVoice measure 70]                         %! SM4
-        r16
-        
-        a''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        fs''16
-        -\staccatissimo                                          %! IC
-        
-        b''16
-        -\staccatissimo                                          %! IC
-        ]
-        
-        fs''4
-        -\staccatissimo                                          %! IC
-    }
+    
+    % [A ViolaMusicVoice measure 70]                             %! SM4
+    r32.
+    
+    a''32.
+    -\staccatissimo                                              %! IC
+    [
+    
+    fs''32.
+    -\staccatissimo                                              %! IC
+    
+    b''32.
+    -\staccatissimo                                              %! IC
+    
+    fs''8.
+    -\staccatissimo                                              %! IC
+    ]
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
@@ -11039,80 +10906,65 @@ A_ViolaMusicVoice = {
         g''4
         -\staccatissimo                                          %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ViolaMusicVoice measure 73]                         %! SM4
-        r8
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        r8
-        
-        c'''4
-        -\staccatissimo                                          %! IC
-        
-        bf''8
-        -\staccatissimo                                          %! IC
-    }
+    
+    % [A ViolaMusicVoice measure 73]                             %! SM4
+    r8
+    
+    r16.
+    
+    c'''8.
+    -\staccatissimo                                              %! IC
+    [
+    
+    bf''16.
+    -\staccatissimo                                              %! IC
+    ]
     
     r4
     
     % [A ViolaMusicVoice measure 74]                             %! SM4
     r2.
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ViolaMusicVoice measure 75]                         %! SM4
-        r8
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        r16
-        
-        c'''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        g'''8
-        -\staccatissimo                                          %! IC
-        
-        af''8
-        -\staccatissimo                                          %! IC
-        ]
-    }
-    \times 2/3 {
-        
-        r4.
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
-        
-        % [A ViolaMusicVoice measure 76]                         %! SM4
-        r8
-        
-        fs'''4
-        -\staccatissimo                                          %! IC
-        
-        c'''4
-        -\staccatissimo                                          %! IC
-        
-        f''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        c'''16
-        -\staccatissimo                                          %! IC
-        
-        g'''8
-        -\staccatissimo                                          %! IC
-        
-        fs'''8
-        -\staccatissimo                                          %! IC
-        ]
-    }
+    
+    % [A ViolaMusicVoice measure 75]                             %! SM4
+    r8
+    
+    r16
+    
+    c'''16
+    -\staccatissimo                                              %! IC
+    [
+    
+    g'''8
+    -\staccatissimo                                              %! IC
+    
+    af''8
+    -\staccatissimo                                              %! IC
+    ]
+    
+    r4
+    
+    % [A ViolaMusicVoice measure 76]                             %! SM4
+    r16..
+    
+    fs'''8..
+    -\staccatissimo                                              %! IC
+    [
+    
+    c'''8..
+    -\staccatissimo                                              %! IC
+    
+    f''32..
+    -\staccatissimo                                              %! IC
+    
+    c'''32..
+    -\staccatissimo                                              %! IC
+    
+    g'''16..
+    -\staccatissimo                                              %! IC
+    
+    fs'''16..
+    -\staccatissimo                                              %! IC
+    ]
     
     r4.
     
@@ -11136,11 +10988,8 @@ A_ViolaMusicVoice = {
         -\staccatissimo                                          %! IC
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        r8
-    }
+    
+    r8
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
@@ -11223,45 +11072,39 @@ A_ViolaMusicVoice = {
         f'''8
         -\staccatissimo                                          %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        % [A ViolaMusicVoice measure 82]                         %! SM4
-        r8
-        
-        af'''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        a'''16
-        -\staccatissimo                                          %! IC
-        
-        b''8
-        -\staccatissimo                                          %! IC
-        
-        fs'''8
-        -\staccatissimo                                          %! IC
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        r16
-        
-        f'''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        c'''16
-        -\staccatissimo                                          %! IC
-        
-        bf'''16
-        -\staccatissimo                                          %! IC
-        ]
-        
-        g'''4
-        -\staccatissimo                                          %! IC
-    }
+    
+    % [A ViolaMusicVoice measure 82]                             %! SM4
+    r16.
+    
+    af'''32.
+    -\staccatissimo                                              %! IC
+    [
+    
+    a'''32.
+    -\staccatissimo                                              %! IC
+    
+    b''16.
+    -\staccatissimo                                              %! IC
+    
+    fs'''16.
+    -\staccatissimo                                              %! IC
+    ]
+    
+    r32.
+    
+    f'''32.
+    -\staccatissimo                                              %! IC
+    [
+    
+    c'''32.
+    -\staccatissimo                                              %! IC
+    
+    bf'''32.
+    -\staccatissimo                                              %! IC
+    
+    g'''8.
+    -\staccatissimo                                              %! IC
+    ]
     
     r4.
     
@@ -11269,20 +11112,14 @@ A_ViolaMusicVoice = {
     r2
     
     r8
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ViolaMusicVoice measure 84]                         %! SM4
-        r8
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        r8
-        
-        f'''4
-        -\staccatissimo                                          %! IC
-    }
+    
+    % [A ViolaMusicVoice measure 84]                             %! SM4
+    r8
+    
+    r8
+    
+    f'''4
+    -\staccatissimo                                              %! IC
     \times 2/3 {
         
         r16
@@ -11402,16 +11239,13 @@ A_CelloMusicVoice = {
         d,2
         \glissando                                               %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A CelloMusicVoice measure 20]                         %! SM4
-        ctqs,1.
-        \glissando                                               %! SC
-        
-        e,1
-        \glissando                                               %! SC
-    }
+    
+    % [A CelloMusicVoice measure 20]                             %! SM4
+    ctqs,1.
+    \glissando                                                   %! SC
+    
+    e,1
+    \glissando                                                   %! SC
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
         
@@ -11459,16 +11293,13 @@ A_CelloMusicVoice = {
         e,2
         \glissando                                               %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A CelloMusicVoice measure 31]                         %! SM4
-        dtqs,1.
-        \glissando                                               %! SC
-        
-        f,1
-        \glissando                                               %! SC
-    }
+    
+    % [A CelloMusicVoice measure 31]                             %! SM4
+    dtqs,1.
+    \glissando                                                   %! SC
+    
+    f,1
+    \glissando                                                   %! SC
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
         
@@ -11910,35 +11741,34 @@ A_CelloMusicVoice = {
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        % [A CelloMusicVoice measure 65]                         %! SM4
-        \override Beam.positions = #'(-4 . -4)                   %! OC1
-        \override DynamicLineSpanner.staff-padding = #'6         %! OC1
-        \override TupletBracket.staff-padding = #3               %! OC1
-        \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
-        \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-    %@% \override CelloMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-        \set CelloMusicStaff.forceClef = ##t                     %! SM8:EXPLICIT_CLEF:SM33:IC
-        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        cs''8
-        -\staccatissimo                                          %! IC
-        \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    pizz.                                        %! IC
-            }                                                    %! IC
-        \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
-        
-        c''4
-        -\staccatissimo                                          %! IC
-        
-        b''8
-        -\staccatissimo                                          %! IC
-        ~
-    }
+    
+    % [A CelloMusicVoice measure 65]                             %! SM4
+    \override Beam.positions = #'(-4 . -4)                       %! OC1
+    \override DynamicLineSpanner.staff-padding = #'6             %! OC1
+    \override TupletBracket.staff-padding = #3                   %! OC1
+    \clef "treble"                                               %! SM8:EXPLICIT_CLEF:IC
+    \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override CelloMusicStaff.Clef.color = ##f                   %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set CelloMusicStaff.forceClef = ##t                         %! SM8:EXPLICIT_CLEF:SM33:IC
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    cs''16.
+    -\staccatissimo                                              %! IC
+    \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC
+    [
+    ^ \markup {                                                  %! IC
+        \whiteout                                                %! IC
+            \upright                                             %! IC
+                pizz.                                            %! IC
+        }                                                        %! IC
+    \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+    
+    c''8.
+    -\staccatissimo                                              %! IC
+    
+    b''16.
+    -\staccatissimo                                              %! IC
+    ~
+    ]
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/10 {
         
@@ -11963,17 +11793,14 @@ A_CelloMusicVoice = {
     
     % [A CelloMusicVoice measure 66]                             %! SM4
     r1
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A CelloMusicVoice measure 67]                         %! SM4
-        bf''4
-        -\staccatissimo                                          %! IC
-        
-        f''8
-        -\staccatissimo                                          %! IC
-        ~
-    }
+    
+    % [A CelloMusicVoice measure 67]                             %! SM4
+    bf''4
+    -\staccatissimo                                              %! IC
+    
+    f''8
+    -\staccatissimo                                              %! IC
+    ~
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
@@ -12016,47 +11843,41 @@ A_CelloMusicVoice = {
     
     % [A CelloMusicVoice measure 70]                             %! SM4
     r4.
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        r8
-        
-        b''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        g''16
-        -\staccatissimo                                          %! IC
-        
-        fs''8
-        -\staccatissimo                                          %! IC
-        
-        ef''8
-        -\staccatissimo                                          %! IC
-        ]
-        
-        f''2
-        -\staccatissimo                                          %! IC
-    }
+    
+    r16.
+    
+    b''32.
+    -\staccatissimo                                              %! IC
+    [
+    
+    g''32.
+    -\staccatissimo                                              %! IC
+    
+    fs''16.
+    -\staccatissimo                                              %! IC
+    
+    ef''16.
+    -\staccatissimo                                              %! IC
+    ]
+    
+    f''4.
+    -\staccatissimo                                              %! IC
     
     % [A CelloMusicVoice measure 71]                             %! SM4
     r4.
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        r16
-        
-        e''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        ef''8
-        -\staccatissimo                                          %! IC
-        
-        g''8
-        -\staccatissimo                                          %! IC
-        ]
-    }
+    
+    r16
+    
+    e''16
+    -\staccatissimo                                              %! IC
+    [
+    
+    ef''8
+    -\staccatissimo                                              %! IC
+    
+    g''8
+    -\staccatissimo                                              %! IC
+    ]
     \times 4/5 {
         
         r16
@@ -12100,12 +11921,9 @@ A_CelloMusicVoice = {
         ef''4
         -\staccatissimo                                          %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A CelloMusicVoice measure 73]                         %! SM4
-        r8
-    }
+    
+    % [A CelloMusicVoice measure 73]                             %! SM4
+    r8
     
     r4.
     \times 2/3 {
@@ -12126,15 +11944,12 @@ A_CelloMusicVoice = {
     
     % [A CelloMusicVoice measure 74]                             %! SM4
     r2.
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A CelloMusicVoice measure 75]                         %! SM4
-        r16
-        
-        cs'''16
-        -\staccatissimo                                          %! IC
-    }
+    
+    % [A CelloMusicVoice measure 75]                             %! SM4
+    r16
+    
+    cs'''16
+    -\staccatissimo                                              %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
         
@@ -12146,14 +11961,11 @@ A_CelloMusicVoice = {
         a''4.
         -\staccatissimo                                          %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        r8
-        
-        f''8
-        -\staccatissimo                                          %! IC
-    }
+    
+    r8
+    
+    f''8
+    -\staccatissimo                                              %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/9 {
         
@@ -12194,99 +12006,81 @@ A_CelloMusicVoice = {
     }
     
     r4.
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A CelloMusicVoice measure 77]                         %! SM4
-        r8
-        
-        fs'''8
-        -\staccatissimo                                          %! IC
-        
-        g'''2
-        -\staccatissimo                                          %! IC
-        
-        bf''4
-        -\staccatissimo                                          %! IC
-        
-        g'''8
-        -\staccatissimo                                          %! IC
-    }
+    
+    % [A CelloMusicVoice measure 77]                             %! SM4
+    r8
+    
+    fs'''8
+    -\staccatissimo                                              %! IC
+    
+    g'''2
+    -\staccatissimo                                              %! IC
+    
+    bf''4
+    -\staccatissimo                                              %! IC
+    
+    g'''8
+    -\staccatissimo                                              %! IC
     
     r4.
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        r16
-        
-        c'''16
-        -\staccatissimo                                          %! IC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        % [A CelloMusicVoice measure 78]                         %! SM4
-        r16
-        
-        bf''16
-        -\staccatissimo                                          %! IC
-        
-        a''4
-        -\staccatissimo                                          %! IC
-        
-        b''4
-        -\staccatissimo                                          %! IC
-        
-        fs'''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        f'''16
-        -\staccatissimo                                          %! IC
-        
-        ef'''8
-        -\staccatissimo                                          %! IC
-        
-        a''8
-        -\staccatissimo                                          %! IC
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A CelloMusicVoice measure 79]                         %! SM4
-        r4
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        r4
-        
-        f'''4
-        -\staccatissimo                                          %! IC
-    }
+    
+    r16
+    
+    c'''16
+    -\staccatissimo                                              %! IC
+    
+    % [A CelloMusicVoice measure 78]                             %! SM4
+    r32.
+    
+    bf''32.
+    -\staccatissimo                                              %! IC
+    [
+    
+    a''8.
+    -\staccatissimo                                              %! IC
+    
+    b''8.
+    -\staccatissimo                                              %! IC
+    
+    fs'''32.
+    -\staccatissimo                                              %! IC
+    
+    f'''32.
+    -\staccatissimo                                              %! IC
+    
+    ef'''16.
+    -\staccatissimo                                              %! IC
+    
+    a''16.
+    -\staccatissimo                                              %! IC
+    ]
+    
+    % [A CelloMusicVoice measure 79]                             %! SM4
+    r4
+    
+    r8.
+    
+    f'''8.
+    -\staccatissimo                                              %! IC
     
     % [A CelloMusicVoice measure 80]                             %! SM4
     r1
     
     r8
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        % [A CelloMusicVoice measure 81]                         %! SM4
-        r4
-        
-        b''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        bf''16
-        -\staccatissimo                                          %! IC
-        
-        g'''8
-        -\staccatissimo                                          %! IC
-        ]
-    }
+    
+    % [A CelloMusicVoice measure 81]                             %! SM4
+    r8.
+    
+    b''32.
+    -\staccatissimo                                              %! IC
+    [
+    
+    bf''32.
+    -\staccatissimo                                              %! IC
+    
+    g'''16.
+    -\staccatissimo                                              %! IC
+    ]
     
     r2.
     \tweak text #tuplet-number::calc-fraction-text
@@ -12329,34 +12123,28 @@ A_CelloMusicVoice = {
         c'''4
         -\staccatissimo                                          %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        r16
-        
-        fs'''16
-        -\staccatissimo                                          %! IC
-        [
-        
-        c'''8
-        -\staccatissimo                                          %! IC
-        
-        e'''8
-        -\staccatissimo                                          %! IC
-        
-        ef'''8
-        -\staccatissimo                                          %! IC
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A CelloMusicVoice measure 83]                         %! SM4
-        r4.
-        
-        f'''4
-        -\staccatissimo                                          %! IC
-    }
+    
+    r32.
+    
+    fs'''32.
+    -\staccatissimo                                              %! IC
+    [
+    
+    c'''16.
+    -\staccatissimo                                              %! IC
+    
+    e'''16.
+    -\staccatissimo                                              %! IC
+    
+    ef'''16.
+    -\staccatissimo                                              %! IC
+    ]
+    
+    % [A CelloMusicVoice measure 83]                             %! SM4
+    r4.
+    
+    f'''4
+    -\staccatissimo                                              %! IC
     
     % [A CelloMusicVoice measure 84]                             %! SM4
     r8

@@ -16,6 +16,8 @@ def hypermeter_tuplets(tuplet_ratios=[(3, 2)]):
             tuplet_specifier=rhythmos.TupletSpecifier(
                 avoid_dots=True,
                 diminution=False,
+                extract_trivial=True,
+                trivialize=True,
                 ),
             ),
         )

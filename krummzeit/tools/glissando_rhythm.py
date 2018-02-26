@@ -13,11 +13,11 @@ def glissando_rhythm(division_ratios, division_masks):
             ratios=division_ratios,
             ),
         rhythm_maker=rhythmos.TupletRhythmMaker(
+            division_masks=division_masks,
             tuplet_ratios=[
                 (1, 2),
                 (1, 4),
                 (4, 3),
                 ],
-            division_masks=division_masks,
             ),
         )

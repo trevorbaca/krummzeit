@@ -34,15 +34,72 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 maker = baca.SegmentMaker(
     instruments=krummzeit.instruments,
+    margin_markups=krummzeit.margin_markups,
     measures_per_stage=measures_per_stage,
     metronome_marks=krummzeit.metronome_marks,
     score_template=krummzeit.ScoreTemplate(),
     metronome_mark_measure_map=metronome_mark_measure_map,
-    metronome_mark_stem_height=1.25,
+    metronome_mark_stem_height=1,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=13,
     validate_stage_count=10,
+    )
+
+maker(
+    baca.scope('OboeMusicVoice', 1),
+    baca.suite([
+        krummzeit.margin_markup('Ob.'),
+        baca.start_markup('Oboe', hcenter_in=16),
+        ]),
+    )
+
+maker(
+    baca.scope('ClarinetMusicVoice', 1),
+    baca.suite([
+        krummzeit.margin_markup('B. cl.'),
+        baca.start_markup('Bass clarinet', hcenter_in=16),
+        ]),
+    )
+
+maker(
+    baca.scope('PianoMusicVoice', 1),
+    baca.suite([
+        krummzeit.margin_markup('Pf.'),
+        baca.start_markup('Piano', hcenter_in=16),
+        ]),
+    )
+
+maker(
+    baca.scope('PercussionMusicVoice', 1),
+    baca.suite([
+        krummzeit.margin_markup('Perc.'),
+        baca.start_markup('Percussion', hcenter_in=16),
+        ]),
+    )
+
+maker(
+    baca.scope('ViolinMusicVoice', 1),
+    baca.suite([
+        krummzeit.margin_markup('Vn.'),
+        baca.start_markup('Violin', hcenter_in=16),
+        ]),
+    )
+
+maker(
+    baca.scope('ViolaMusicVoice', 1),
+    baca.suite([
+        krummzeit.margin_markup('Va.'),
+        baca.start_markup('Viola', hcenter_in=16),
+        ]),
+    )
+
+maker(
+    baca.scope('CelloMusicVoice', 1),
+    baca.suite([
+        krummzeit.margin_markup('Vc.'),
+        baca.start_markup('Cello', hcenter_in=16),
+        ]),
     )
 
 maker(
@@ -75,7 +132,7 @@ maker(
     krummzeit.glissando_rhythm(
         division_ratios=[(1, 1, 1), (2, 1), (2, 1)],
         division_masks=[abjad.index([2, 3], 7)],
-        )
+        ),
     )
 
 maker(
@@ -112,6 +169,7 @@ maker(
     baca.scope('PercussionMusicVoice', 6),
     baca.dynamic('fff'),
     baca.make_repeat_tied_notes(),
+    baca.markup.boxed('xylophone'),
     baca.pitches('C#5'),
     baca.stem_tremolo(),
     )

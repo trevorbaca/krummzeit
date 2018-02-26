@@ -80,38 +80,8 @@ maker(
         ('OboeMusicVoice', 24),
         ('OboeMusicVoice', (26, 27)),
         ),
-#    baca.RhythmCommand(
-#        rhythm_maker=rhythmos.TaleaRhythmMaker(
-#            talea=rhythmos.Talea(
-#                counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
-#                denominator=16,
-#                ),
-#            split_divisions_by_counts=[6, 18],
-#            extra_counts_per_division=[2, 2, 0, 2, 4, 6],
-#            ),
-#        ),
     krummzeit.pizzicato_rhythm(),
     )
-
-#maker(
-#    baca.scope('OboeMusicVoice', 3),
-#    krummzeit.pizzicato_rhythm(),
-#    )
-#
-#maker(
-#    baca.scope('OboeMusicVoice', 1),
-#    baca.scope('OboeMusicVoice', (20, 22)),
-#    )
-#
-#maker.copy_rhythm(
-#    baca.scope('OboeMusicVoice', 20),
-#    baca.scope('OboeMusicVoice', 24),
-#    )
-#
-#maker.copy_rhythm(
-#    baca.scope('OboeMusicVoice', 20),
-#    baca.scope('OboeMusicVoice', (26, 27)),
-#    )
 
 maker(
     baca.scope('ClarinetMusicVoice', 1),
@@ -145,13 +115,8 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('ViolinMusicVoice', (1, 17)),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=True,
-                ),
-            ),
-        ),
+    baca.make_repeat_tied_notes(),
+    baca.repeat_ties_up(),
     )
 
 ### perc [C4-5] scraped slate ###
@@ -159,13 +124,7 @@ maker(
 maker(
     baca.scope('PercussionMusicVoice', (18, 20)),
     baca.clef('percussion'),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=True,
-                ),
-            ),
-        ),
+    baca.make_repeat_tied_notes(),
     krummzeit.markup.scraped_slate(),
     )
 

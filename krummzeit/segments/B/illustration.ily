@@ -4122,7 +4122,6 @@ B_PercussionMusicVoice = {
     \makeBlue                                                    %! SM24
     c4
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
-    ~
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC
             \upright                                             %! IC
@@ -4136,33 +4135,31 @@ B_PercussionMusicVoice = {
     % [B PercussionMusicVoice measure 110]                       %! SM4
     \makeBlue                                                    %! SM24
     c1
-    ~
+    \repeatTie
     
     % [B PercussionMusicVoice measure 111]                       %! SM4
     \makeBlue                                                    %! SM24
-    c2
-    ~
+    c4.
+    \repeatTie
     
-    \makeBlue                                                    %! SM24
-    c8
-    ~
+    c4
+    \repeatTie
     
     % [B PercussionMusicVoice measure 112]                       %! SM4
     \makeBlue                                                    %! SM24
-    c1
-    ~
+    c2.
+    \repeatTie
     
-    \makeBlue                                                    %! SM24
-    c8
-    ~
+    c4.
+    \repeatTie
     
     % [B PercussionMusicVoice measure 113]                       %! SM4
     \makeBlue                                                    %! SM24
-    c1
-    ~
+    c2.
+    \repeatTie
     
-    \makeBlue                                                    %! SM24
-    c4
+    c2
+    \repeatTie
     
     % [B PercussionMusicVoice measure 114]                       %! SM4
     R1 * 1/2
@@ -4429,6 +4426,7 @@ B_ViolinMusicVoice = {
     \stopStaff                                                   %! SM8:REAPPLIED_STAFF_LINES:SM37
     \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM8:REAPPLIED_STAFF_LINES:SM37
     \startStaff                                                  %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \override RepeatTie.direction = #up                          %! OC1
     \set ViolinMusicStaff.instrumentName = \markup {             %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
             #16                                                  %! SM8:REAPPLIED_INSTRUMENT:SM37
@@ -4449,7 +4447,6 @@ B_ViolinMusicVoice = {
     \makeBlue                                                    %! SM24
     c'2.
     \mf                                                          %! SM8:REAPPLIED_DYNAMIC:SM37
-    ~
     ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -4470,105 +4467,108 @@ B_ViolinMusicVoice = {
     
     % [B ViolinMusicVoice measure 90]                            %! SM4
     \makeBlue                                                    %! SM24
-    c'1
-    ~
+    c'2..
+    \repeatTie
     
-    \makeBlue                                                    %! SM24
-    c'4.
-    ~
+    c'4
+    \repeatTie
+    
+    c'4
+    \repeatTie
     
     % [B ViolinMusicVoice measure 91]                            %! SM4
     \makeBlue                                                    %! SM24
-    c'2
-    ~
+    c'4.
+    \repeatTie
     
-    \makeBlue                                                    %! SM24
-    c'8
-    ~
+    c'4
+    \repeatTie
     
     % [B ViolinMusicVoice measure 92]                            %! SM4
     \makeBlue                                                    %! SM24
     c'1
-    ~
+    \repeatTie
     
     % [B ViolinMusicVoice measure 93]                            %! SM4
     \makeBlue                                                    %! SM24
     c'4
-    ~
+    \repeatTie
     
     % [B ViolinMusicVoice measure 94]                            %! SM4
     \makeBlue                                                    %! SM24
     c'2
-    ~
+    \repeatTie
     
     % [B ViolinMusicVoice measure 95]                            %! SM4
     \makeBlue                                                    %! SM24
     c'4
-    ~
+    \repeatTie
     
     % [B ViolinMusicVoice measure 96]                            %! SM4
     \makeBlue                                                    %! SM24
     c'1..
-    ~
+    \repeatTie
     
     % [B ViolinMusicVoice measure 97]                            %! SM4
     \makeBlue                                                    %! SM24
     c'4
-    ~
+    \repeatTie
     
     % [B ViolinMusicVoice measure 98]                            %! SM4
     \makeBlue                                                    %! SM24
     c'1
-    ~
+    \repeatTie
     
     % [B ViolinMusicVoice measure 99]                            %! SM4
     \makeBlue                                                    %! SM24
     c'4
-    ~
+    \repeatTie
     
     % [B ViolinMusicVoice measure 100]                           %! SM4
     \makeBlue                                                    %! SM24
     c'2..
-    ~
+    \repeatTie
     
     % [B ViolinMusicVoice measure 101]                           %! SM4
     \makeBlue                                                    %! SM24
     c'4
-    ~
+    \repeatTie
     
     % [B ViolinMusicVoice measure 102]                           %! SM4
     \makeBlue                                                    %! SM24
     c'2..
-    ~
+    \repeatTie
     
     % [B ViolinMusicVoice measure 103]                           %! SM4
     \makeBlue                                                    %! SM24
     c'4
-    ~
+    \repeatTie
     
     % [B ViolinMusicVoice measure 104]                           %! SM4
     \makeBlue                                                    %! SM24
     c'\breve
-    ~
+    \repeatTie
     
     % [B ViolinMusicVoice measure 105]                           %! SM4
     \makeBlue                                                    %! SM24
     c'4
-    ~
+    \repeatTie
     
     % [B ViolinMusicVoice measure 106]                           %! SM4
     \makeBlue                                                    %! SM24
     c'1
-    ~
+    \repeatTie
     
     % [B ViolinMusicVoice measure 107]                           %! SM4
     \makeBlue                                                    %! SM24
     c'4
-    ~
+    \repeatTie
     
     % [B ViolinMusicVoice measure 108]                           %! SM4
     \makeBlue                                                    %! SM24
     c'2.
+    \repeatTie
+    \revert RepeatTie.direction                                  %! OC2
     
     % [B ViolinMusicVoice measure 109]                           %! SM4
     R1 * 1/4

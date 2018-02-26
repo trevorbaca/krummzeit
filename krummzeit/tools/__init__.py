@@ -9,6 +9,8 @@ from .hypermeter_tuplets import hypermeter_tuplets
 from .instrument import instrument
 from .opening_triplets import opening_triplets
 from .piano_incise_clusters import piano_incise_clusters
+from .pizzicato_rhythm import pizzicato_rhythm
+from .pizzicato_sixteenths import pizzicato_sixteenths
 from .polyphony import polyphony
 from .prolated_quarters import prolated_quarters
 from .register_narrow import register_narrow

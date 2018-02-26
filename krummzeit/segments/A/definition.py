@@ -303,82 +303,64 @@ maker(
 
 maker(
     baca.scope('ViolaMusicVoice', (17, 19)),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.TaleaRhythmMaker(
-            talea=rhythmos.Talea(
-                counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
-                denominator=16,
-                ),
-            split_divisions_by_counts=[6, 18],
-            extra_counts_per_division=[2, 2, 0, 2, 4, 6],
-            division_masks=[abjad.index([1, 2, 3], 6)],
-            ),
+    krummzeit.pizzicato_rhythm(
+        masks=[abjad.index([1, 2, 3], 6)],
         ),
     )
 
-maker.copy_rhythm(
-    baca.scope('ViolaMusicVoice', 17),
+maker(
     baca.scope('CelloMusicVoice', (18, 19)),
-    rhythm_maker__division_masks=[abjad.index([2, 3, 4], 6)],
+    krummzeit.pizzicato_rhythm(
+        masks=[abjad.index([2, 3, 4], 6)],
+        ),
     )
 
-maker.copy_rhythm(
-    baca.scope('ViolaMusicVoice', 17),
+maker(
     baca.scope('ViolinMusicVoice', 19),
-    rhythm_maker__division_masks=[abjad.index([3, 4, 5], 6)],
+    krummzeit.pizzicato_rhythm(
+        masks=[abjad.index([3, 4, 5], 6)],
+        ),
     )
 
 maker(
     baca.scope('ViolaMusicVoice', (20, 22)),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.TaleaRhythmMaker(
-            talea=rhythmos.Talea(
-                counts=[1, 1, 1, 1, 4, 4, 1, 1, 2, 2, 8, 4, 4, 1, 1, 2, 2],
-                denominator=16,
-                ),
-            split_divisions_by_counts=[6, 18],
-            extra_counts_per_division=[2, 2, 0, 2, 4, 6],
-            burnish_specifier=rhythmos.BurnishSpecifier(
-                left_classes=[abjad.Rest],
-                left_counts=[1],
-                ),
-            division_masks=[abjad.index([2, 3], 6)],
-            ),
+    krummzeit.pizzicato_sixteenths(
+        extra_counts=[2, 2, 0, 2, 4, 6],
+        masks=[abjad.index([2, 3], 6)],
         ),
     )
 
-maker.copy_rhythm(
-    baca.scope('ViolaMusicVoice', 20),
+maker(
     baca.scope('CelloMusicVoice', (20, 22)),
-    rhythm_maker__extra_counts_per_division=[4, 4, 2, 0, 2, 4],
-    rhythm_maker__division_masks=[abjad.index([0, 2], 7)],
+    krummzeit.pizzicato_sixteenths(
+        extra_counts=[4, 4, 2, 0, 2, 4],
+        masks=[abjad.index([0, 2], 7)],
+        ),
     )
 
-maker.copy_rhythm(
-    baca.scope('ViolaMusicVoice', 20),
+maker(
     baca.scope('ViolinMusicVoice', (20, 22)),
-    rhythm_maker__extra_counts_per_division=[6, 0, 4, 4, 0, 2],
-    rhythm_maker__division_masks=[abjad.index([3, 6], 8)],
+    krummzeit.pizzicato_sixteenths(
+        extra_counts=[6, 0, 4, 4, 0, 2],
+        masks=[abjad.index([3, 6], 8)],
+        ),
     )
 
 ### pf [B20-22] ###
 
-maker.copy_rhythm(
-    baca.scope('ViolaMusicVoice', 20),
+maker(
     baca.scope('PianoMusicVoice', (20, 22)),
-    rhythm_maker__extra_counts_per_division=[4, 0, 2, 4, 6],
-    rhythm_maker__division_masks=[abjad.index([1, 5], 7)],
-    )
-
-maker.copy_rhythm(
-    baca.scope('PianoMusicVoice', 20),
-    baca.scope('PianoMusicVoice', 23),
-    rhythm_maker__division_masks=None,
+    krummzeit.pizzicato_sixteenths(
+        extra_counts=[4, 0, 2, 4, 6],
+        masks=[abjad.index([1, 5], 7)],
+        ),
     )
 
 maker(
     baca.scope('PianoMusicVoice', 23),
-    baca.clef('treble'),
+    krummzeit.pizzicato_sixteenths(
+        extra_counts=[4, 0, 2, 4, 6],
+        ),
     )
 
 ### Eb clarinet [B22-23] ###

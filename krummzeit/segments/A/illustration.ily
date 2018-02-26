@@ -7997,12 +7997,7 @@ A_PianoMusicVoice = {
     \times 3/5 {
         
         % [A PianoMusicVoice measure 85]                         %! SM4
-        \clef "treble"                                           %! SM8:REDUNDANT_CLEF:IC
-        \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_CLEF_COLOR:IC
-    %@% \override PianoMusicStaff.Clef.color = ##f               %! SM7:REDUNDANT_CLEF_COLOR_CANCELLATION:IC
-        \set PianoMusicStaff.forceClef = ##t                     %! SM8:REDUNDANT_CLEF:SM33:IC
         r16
-        \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! SM6:REDUNDANT_CLEF_REDRAW_COLOR:IC
         
         bf''16
         -\staccatissimo                                          %! IC

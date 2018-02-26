@@ -7240,16 +7240,17 @@ A_PianoMusicVoice = {
             Pf.                                                  %! SM8:EXPLICIT_INSTRUMENT:IC
         }                                                        %! SM8:EXPLICIT_INSTRUMENT:IC
     \clef "bass"                                                 %! SM8:EXPLICIT_CLEF:IC
-    \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! SM6:EXPLICIT_INSTRUMENT_COLOR:IC
     \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
 %@% \override PianoMusicStaff.Clef.color = ##f                   %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set PianoMusicStaff.forceClef = ##t                         %! SM8:EXPLICIT_CLEF:SM33:IC
+    \once \override PianoMusicStaff.InstrumentName.color = #(x11-color 'blue) %! SM6:EXPLICIT_INSTRUMENT_COLOR:IC
     r16
     ^ \markup {                                                  %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
         \with-color                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
             #(x11-color 'blue)                                   %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
             (“Piano”)                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
         }                                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+    \override PianoMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     \override PianoMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! SM6:REDRAWN_EXPLICIT_INSTRUMENT_COLOR:IC
     \set PianoMusicStaff.instrumentName = \markup {              %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
         \hcenter-in                                              %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
@@ -7261,7 +7262,6 @@ A_PianoMusicVoice = {
             #10                                                  %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
             Pf.                                                  %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
         }                                                        %! SM8:REDRAWN_EXPLICIT_INSTRUMENT:SM34:IC
-    \override PianoMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     \ottava #-1                                                  %! SC
     \once \override Accidental.stencil = ##f

@@ -242,89 +242,61 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', (12, 14)),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                durations=[(3, 8)],
-                remainder=abjad.Left,
-                ),
-            ),
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            burnish_specifier=rhythmos.BurnishSpecifier(
-                left_classes=[abjad.Rest],
-                left_counts=[1],
-                outer_divisions_only=True,
-                ),
-            ),
+    krummzeit.white_rhythm(
+        durations=[(3, 8)],
         ),
     )
 
-maker.copy_rhythm(
-    baca.scope('CelloMusicVoice', 12),
+maker(
     baca.scope('ViolaMusicVoice', (12, 14)),
+    krummzeit.white_rhythm(
+        durations=[(3, 8)],
+        ),
     )
 
-maker.copy_rhythm(
-    baca.scope('CelloMusicVoice', 12),
+maker(
     baca.scope('ViolinMusicVoice', 14),
-    rhythm_maker__burnish_specifier=None,
+    krummzeit.white_rhythm(
+        durations=[(3, 8)],
+        do_not_burnish=True,
+        ),
     )
 
 ### vn, va, vc [B15-19] ###
 
-maker.copy_rhythm(
-    baca.scope('ViolinMusicVoice', 14),
+maker(
     baca.scope('ViolinMusicVoice', (15, 18)),
-    division_maker__secondary_division_maker__durations=[(2, 8)],
-    division_maker__secondary_division_maker__remainder=abjad.Right,
+    krummzeit.white_rhythm(
+        durations=[(2, 8)],
+        remainder=abjad.Right,
+        do_not_burnish=True,
+        ),
     )
 
 maker(
     baca.scope('ViolaMusicVoice', (15, 16)),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.EvenDivisionRhythmMaker(
-            denominators=[4],
-            extra_counts_per_division=[1, -1, 2, -2],
-            ),
-        ),
+    krummzeit.prolated_quarters([1, -1, 2, -2]),
     )
 
-maker.copy_rhythm(
-    baca.scope('ViolaMusicVoice', 15),
+maker(
     baca.scope('CelloMusicVoice', (15, 17)),
-    rhythm_maker__extra_counts_per_division=[-1, 2, -2, 1],
+    krummzeit.prolated_quarters([-1, 2, -2, 1]),
     )
 
 ### pf [B16-19] & tam-tam [B16-20] ###
 
 maker(
     baca.scope('PianoMusicVoice', (16, 19)),
-    baca.instrument(krummzeit.instruments['Piano']),
     baca.clef('bass'),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.IncisedRhythmMaker(
-            incise_specifier=rhythmos.InciseSpecifier(
-                prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],
-                prefix_counts=[3, 1, 1, 3],
-                suffix_talea=[0, 0, 1, -3, 0],
-                suffix_counts=[1, 1, 2, 1],
-                talea_denominator=16,
-                fill_with_notes=False,
-                ),
-            ),
-        ),
-    )
-
-maker.copy_rhythm(
-    baca.scope('PianoMusicVoice', 16),
-    baca.scope('PercussionMusicVoice', (16, 20)),
+    baca.instrument(krummzeit.instruments['Piano']),
+    krummzeit.piano_incise_clusters()
     )
 
 maker(
     baca.scope('PercussionMusicVoice', (16, 20)),
     baca.clef('percussion'),
     krummzeit.markup.tam_tam(),
+    krummzeit.piano_incise_clusters()
     )
 
 ### vn, va, vc [B17-19] & [B20-22] pointillism ###

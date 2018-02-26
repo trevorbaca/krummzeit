@@ -84,31 +84,8 @@ maker(
     )
 
 maker(
-    baca.scope('ClarinetMusicVoice', 1),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                durations=[(3, 8)],
-                ),
-            ),
-        rhythm_maker=rhythmos.NoteRhythmMaker(),
-        ),
-    )
-
-maker.copy_rhythm(
-    baca.scope('ClarinetMusicVoice', 1),
-    baca.scope('ClarinetMusicVoice', (20, 22)),
-    )
-
-maker.copy_rhythm(
-    baca.scope('ClarinetMusicVoice', 1),
-    baca.scope('ClarinetMusicVoice', 24),
-    )
-
-maker.copy_rhythm(
-    baca.scope('ClarinetMusicVoice', 1),
-    baca.scope('ClarinetMusicVoice', (26, 27)),
+    baca.make_scopes(['ClarinetMusicVoice'], [1, (20, 22), 24, (26, 27)]),
+    krummzeit.white_rhythm([(3, 8)], abjad.Right, do_not_burnish=True),
     )
 
 ### vn [C1-3] scraped slate ###

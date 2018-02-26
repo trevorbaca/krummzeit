@@ -111,80 +111,52 @@ maker(
 
 maker(
     baca.scope('ViolaMusicVoice', 3),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            tuplet_ratios=[
-                (2, 1),
-                ],
-            tuplet_specifier=rhythmos.TupletSpecifier(
-                avoid_dots=True,
-                diminution=False,
-                ),
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=True,
-                ),
-            ),
-        ),
+    krummzeit.single_division_tuplets([(2, 1)]),
     )
 
-maker.copy_rhythm(
-    baca.scope('ViolaMusicVoice', 3),
+maker(
     baca.scope('ViolaMusicVoice', 5),
-    rhythm_maker__tuplet_ratios=[(1, 4)],
+    krummzeit.single_division_tuplets([(1, 4)]),
     )
 
-maker.copy_rhythm(
-    baca.scope('ViolaMusicVoice', 3),
+maker(
     baca.scope('ViolaMusicVoice', 7),
+    krummzeit.single_division_tuplets([(2, 1)]),
     )
 
-maker.copy_rhythm(
-    baca.scope('ViolaMusicVoice', 5),
+maker(
     baca.scope('ViolaMusicVoice', 9),
+    krummzeit.single_division_tuplets([(1, 4)]),
     )
 
-maker.copy_rhythm(
-    baca.scope('ViolaMusicVoice', 3),
+maker(
     baca.scope('ViolaMusicVoice', (11, 19)),
-    rhythm_maker__tuplet_ratios=[
-        (2, 1),
-        (1,),
-        (1, 4),
-        (1,),
-        ],
+    krummzeit.single_division_tuplets([(2, 1), (1,), (1, 4), (1,)]),
     )
 
-maker.copy_rhythm(
-    baca.scope('ViolaMusicVoice', 3),
+maker(
     baca.scope('CelloMusicVoice', 3),
-    rhythm_maker__tuplet_ratios=[(1, 4)],
+    krummzeit.single_division_tuplets([(1, 4)]),
     )
 
-maker.copy_rhythm(
-    baca.scope('CelloMusicVoice', 3),
+maker(
     baca.scope('CelloMusicVoice', 5),
-    rhythm_maker__tuplet_ratios=[(2, 1)],
+    krummzeit.single_division_tuplets([(2, 1)]),
     )
 
-maker.copy_rhythm(
-    baca.scope('CelloMusicVoice', 3),
+maker(
     baca.scope('CelloMusicVoice', 7),
+    krummzeit.single_division_tuplets([(1, 4)]),
     )
 
-maker.copy_rhythm(
-    baca.scope('CelloMusicVoice', 5),
+maker(
     baca.scope('CelloMusicVoice', 9),
+    krummzeit.single_division_tuplets([(2, 1)]),
     )
 
-maker.copy_rhythm(
-    baca.scope('ViolaMusicVoice', 3),
+maker(
     baca.scope('CelloMusicVoice', (11, 19)),
-    rhythm_maker__tuplet_ratios=[
-        (1, 4),
-        (1,),
-        (2, 1),
-        (1,),
-        ],
+    krummzeit.single_division_tuplets([(1, 4), (1,), (2, 1), (1,)]),
     )
 
 ### pf, xyl [C3] points ###

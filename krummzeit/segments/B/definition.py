@@ -59,7 +59,7 @@ maker = baca.SegmentMaker(
     rehearsal_mark='B',
     score_template=krummzeit.ScoreTemplate(),
     metronome_mark_measure_map=metronome_mark_measure_map,
-    metronome_mark_stem_height=1.25,
+    metronome_mark_stem_height=1,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=44,
@@ -93,7 +93,9 @@ maker(
 maker(
     baca.scope('ViolinMusicVoice', (1, 17)),
     baca.make_repeat_tied_notes(),
+    baca.not_parts(baca.bar_extent_zero()),
     baca.repeat_ties_up(),
+    baca.staff_position(0),
     )
 
 ### perc [C4-5] scraped slate ###
@@ -189,7 +191,6 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('PianoMusicVoice', 11),
-    baca.instrument(krummzeit.instruments['Piano']),
     baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(1, 2)],
@@ -412,6 +413,7 @@ maker(
 
 maker(
     baca.scope('ViolaMusicVoice', (1, 19)),
+    baca.clef('bass'),
     baca.map(baca.glissando(), baca.runs()),
     baca.markup.molto_flautando(),
     )
@@ -433,6 +435,7 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', (1, 19)),
+    baca.clef('bass'),
     baca.map(baca.glissando(), baca.runs()),
     baca.markup.molto_flautando(),
     )

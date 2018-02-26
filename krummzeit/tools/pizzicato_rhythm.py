@@ -3,7 +3,7 @@ import baca
 from abjad import rhythmmakertools as rhythmos
 
 
-def pizzicato_rhythm(masks):
+def pizzicato_rhythm(masks=None):
     r'''Makes pizzicato rhythm.
     '''
     return baca.RhythmCommand(
@@ -16,8 +16,8 @@ def pizzicato_rhythm(masks):
                 denominator=16,
                 ),
             tuplet_specifier=rhythmos.TupletSpecifier(
+                avoid_dots=True,
                 extract_trivial=True,
-                trivialize=True,
                 ),
             ),
         )

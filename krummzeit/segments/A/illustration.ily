@@ -9634,29 +9634,30 @@ A_ViolinMusicVoice = {
     e'8
     -\upbow                                                      %! IC
     \revert DynamicLineSpanner.staff-padding                     %! OC2
-    
-    % [A ViolinMusicVoice measure 67]                            %! SM4
-    \override Beam.positions = #'(-4 . -4)                       %! OC1
-    \override DynamicLineSpanner.staff-padding = #'6             %! OC1
-    \override TupletBracket.staff-padding = #3                   %! OC1
-    \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    b''16.
-    -\staccatissimo                                              %! IC
-    \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC
-    [
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                pizz.                                            %! IC
-        }                                                        %! IC
-    
-    a''8.
-    -\staccatissimo                                              %! IC
-    
-    e''16.
-    -\staccatissimo                                              %! IC
-    ~
-    ]
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/4 {
+        
+        % [A ViolinMusicVoice measure 67]                        %! SM4
+        \override Beam.positions = #'(-4 . -4)                   %! OC1
+        \override DynamicLineSpanner.staff-padding = #'6         %! OC1
+        \override TupletBracket.staff-padding = #3               %! OC1
+        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+        b''8
+        -\staccatissimo                                          %! IC
+        \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
+        ^ \markup {                                              %! IC
+            \whiteout                                            %! IC
+                \upright                                         %! IC
+                    pizz.                                        %! IC
+            }                                                    %! IC
+        
+        a''4
+        -\staccatissimo                                          %! IC
+        
+        e''8
+        -\staccatissimo                                          %! IC
+        ~
+    }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
@@ -10633,33 +10634,34 @@ A_ViolaMusicVoice = {
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
     }
-    
-    % [A ViolaMusicVoice measure 61]                             %! SM4
-    \override Beam.positions = #'(-4 . -4)                       %! OC1
-    \override DynamicLineSpanner.staff-padding = #'6             %! OC1
-    \override TupletBracket.staff-padding = #3                   %! OC1
-    \clef "treble"                                               %! SM8:EXPLICIT_CLEF:IC
-    \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-%@% \override ViolaMusicStaff.Clef.color = ##f                   %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-    \set ViolaMusicStaff.forceClef = ##t                         %! SM8:EXPLICIT_CLEF:SM33:IC
-    \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    b''16.
-    -\staccatissimo                                              %! IC
-    \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC
-    [
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                pizz.                                            %! IC
-        }                                                        %! IC
-    \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
-    
-    bf''8.
-    -\staccatissimo                                              %! IC
-    
-    g''16.
-    -\staccatissimo                                              %! IC
-    ]
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/4 {
+        
+        % [A ViolaMusicVoice measure 61]                         %! SM4
+        \override Beam.positions = #'(-4 . -4)                   %! OC1
+        \override DynamicLineSpanner.staff-padding = #'6         %! OC1
+        \override TupletBracket.staff-padding = #3               %! OC1
+        \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
+        \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
+    %@% \override ViolaMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+        \set ViolaMusicStaff.forceClef = ##t                     %! SM8:EXPLICIT_CLEF:SM33:IC
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+        b''8
+        -\staccatissimo                                          %! IC
+        \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
+        ^ \markup {                                              %! IC
+            \whiteout                                            %! IC
+                \upright                                         %! IC
+                    pizz.                                        %! IC
+            }                                                    %! IC
+        \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+        
+        bf''4
+        -\staccatissimo                                          %! IC
+        
+        g''8
+        -\staccatissimo                                          %! IC
+    }
     
     r1
     
@@ -10696,30 +10698,31 @@ A_ViolaMusicVoice = {
         ~
         ]
     }
-    
-    af''16.
-    [
-    
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
-    fs''8.
-    -\staccatissimo                                              %! IC
-    - \tweak color #red                                          %! SM14
-    ^ \markup { @ }                                              %! SM14
-    
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
-    fs''16.
-    -\staccatissimo                                              %! IC
-    ]
-    - \tweak color #red                                          %! SM14
-    ^ \markup { @ }                                              %! SM14
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/4 {
+        
+        af''8
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        fs''4
+        -\staccatissimo                                          %! IC
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        fs''8
+        -\staccatissimo                                          %! IC
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+    }
     
     r4
     
@@ -10793,10 +10796,12 @@ A_ViolaMusicVoice = {
         e''4
         -\staccatissimo                                          %! IC
     }
-    
-    f''4
-    -\staccatissimo                                              %! IC
-    ~
+    \times 2/3 {
+        
+        f''4.
+        -\staccatissimo                                          %! IC
+        ~
+    }
     
     % [A ViolaMusicVoice measure 69]                             %! SM4
     f''8
@@ -11741,34 +11746,35 @@ A_CelloMusicVoice = {
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
     }
-    
-    % [A CelloMusicVoice measure 65]                             %! SM4
-    \override Beam.positions = #'(-4 . -4)                       %! OC1
-    \override DynamicLineSpanner.staff-padding = #'6             %! OC1
-    \override TupletBracket.staff-padding = #3                   %! OC1
-    \clef "treble"                                               %! SM8:EXPLICIT_CLEF:IC
-    \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-%@% \override CelloMusicStaff.Clef.color = ##f                   %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-    \set CelloMusicStaff.forceClef = ##t                         %! SM8:EXPLICIT_CLEF:SM33:IC
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    cs''16.
-    -\staccatissimo                                              %! IC
-    \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC
-    [
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                pizz.                                            %! IC
-        }                                                        %! IC
-    \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
-    
-    c''8.
-    -\staccatissimo                                              %! IC
-    
-    b''16.
-    -\staccatissimo                                              %! IC
-    ~
-    ]
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/4 {
+        
+        % [A CelloMusicVoice measure 65]                         %! SM4
+        \override Beam.positions = #'(-4 . -4)                   %! OC1
+        \override DynamicLineSpanner.staff-padding = #'6         %! OC1
+        \override TupletBracket.staff-padding = #3               %! OC1
+        \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
+        \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
+    %@% \override CelloMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+        \set CelloMusicStaff.forceClef = ##t                     %! SM8:EXPLICIT_CLEF:SM33:IC
+        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+        cs''8
+        -\staccatissimo                                          %! IC
+        \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
+        ^ \markup {                                              %! IC
+            \whiteout                                            %! IC
+                \upright                                         %! IC
+                    pizz.                                        %! IC
+            }                                                    %! IC
+        \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+        
+        c''4
+        -\staccatissimo                                          %! IC
+        
+        b''8
+        -\staccatissimo                                          %! IC
+        ~
+    }
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/10 {
         

@@ -87,19 +87,13 @@ maker(
 maker(
     baca.scope('PianoMusicVoice', (1, 4)),
     baca.instrument(krummzeit.instruments['Harpsichord']),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByDurationsDivisionCallback(
-            durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
-            pattern_rotation_index=-1,
-            remainder_fuse_threshold=(1, 8),
-            ),
-        rhythm_maker=rhythmos.EvenDivisionRhythmMaker(
-            denominators=[8, 8, 4, 4, 8, 8],
-            extra_counts_per_division=[3, 1, 0, 4],
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=[0, 1, 0, 1, 1, 0],
-                ),
-            ),
+    krummzeit.polyphony(
+        durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
+        rotation=-1,
+        fuse=(1, 8),
+        denominators=[8, 8, 4, 4, 8, 8],
+        extra_counts=[3, 1, 0, 4],
+        ties=[0, 1, 0, 1, 1, 0],
         ),
     )
 
@@ -117,20 +111,14 @@ rhythm_overwrite = (
 
 maker(
     baca.scope('PianoMusicVoice', (5, 8)),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByDurationsDivisionCallback(
-            durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
-            pattern_rotation_index=-1,
-            remainder_fuse_threshold=(1, 8),
-            ),
-        rhythm_maker=rhythmos.EvenDivisionRhythmMaker(
-            denominators=[8, 8, 4, 4, 8, 8],
-            extra_counts_per_division=[3, 1, 0, 4],
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=[0, 1, 0, 1, 1, 0],
-                ),
-            ),
-        rhythm_overwrites=[rhythm_overwrite],
+    krummzeit.polyphony(
+        durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
+        rotation=-1,
+        fuse=(1, 8),
+        denominators=[8, 8, 4, 4, 8, 8],
+        extra_counts=[3, 1, 0, 4],
+        ties=[0, 1, 0, 1, 1, 0],
+        rhythm_overwrite=rhythm_overwrite,
         ),
     )
 
@@ -175,66 +163,79 @@ rhythm_overwrite = (
         ),
     )
 
-maker.copy_rhythm(
-    baca.scope('PianoMusicVoice', 1),
+maker(
     baca.scope('PianoMusicVoice', (9, 10)),
-    division_maker__durations=[(4, 16), (3, 16), (4, 16), (2, 16)],
-    rhythm_maker__denominators=[16, 16, 8, 8, 16, 16],
-    rhythm_overwrites=[rhythm_overwrite],
+    krummzeit.polyphony(
+        durations=[(4, 16), (3, 16), (4, 16), (2, 16)],
+        rotation=-1,
+        fuse=(1, 8),
+        denominators=[16, 16, 8, 8, 16, 16],
+        extra_counts=[3, 1, 0, 4],
+        ties=[0, 1, 0, 1, 1, 0],
+        rhythm_overwrite=rhythm_overwrite,
+        ),
     )
 
 ### Eb clarinet [B3-4] & [B7-12] ###
 
-maker.copy_rhythm(
-    baca.scope('PianoMusicVoice', 1),
-    baca.scope('ClarinetMusicVoice', (3, 4)),
-    division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
-    rhythm_maker__denominators=[4, 4, 4, 8],
-    )
-
 maker(
-    baca.scope('ClarinetMusicVoice', (3, 4)),
+    baca.scope('ClarinetMusicVoice', 3),
     baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
     )
 
-maker.copy_rhythm(
-    baca.scope('ClarinetMusicVoice', 3),
-    baca.scope('ClarinetMusicVoice', (7, 12)),
+maker(
+    baca.scopes(
+        ('ClarinetMusicVoice', (3, 4)),
+        ('ClarinetMusicVoice', (7, 12)),
+        ),
+    krummzeit.polyphony(
+        durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
+        rotation=-1,
+        fuse=(1, 8),
+        denominators=[4, 4, 4, 8],
+        extra_counts=[3, 1, 0, 4],
+        ties=[0, 1, 0, 1, 1, 0],
+        ),
     )
 
 ### violin [B4] & [B8-13] ###
 
-maker.copy_rhythm(
-    baca.scope('PianoMusicVoice', 1),
+maker(
     baca.scope('ViolinMusicVoice', 4),
-    division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
-    rhythm_maker__denominators=[4, 4, 4, 16],
-    )
-
-maker.copy_rhythm(
-    baca.scope('PianoMusicVoice', 1),
-    baca.scope('ViolinMusicVoice', (8, 13)),
-    division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
-    rhythm_maker__denominators=[4, 4, 4, 16],
+    krummzeit.polyphony(
+        durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
+        rotation=-1,
+        fuse=(1, 8),
+        denominators=[4, 4, 4, 16],
+        extra_counts=[3, 1, 0, 4],
+        ties=[0, 1, 0, 1, 1, 0],
+        ),
     )
 
 maker(
     baca.scope('ViolinMusicVoice', (8, 13)),
-    baca.instrument(krummzeit.instruments['Violin']),
+    krummzeit.polyphony(
+        durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
+        rotation=-1,
+        fuse=(1, 8),
+        denominators=[4, 4, 4, 16],
+        extra_counts=[3, 1, 0, 4],
+        ties=[0, 1, 0, 1, 1, 0],
+        ),
     )
 
 ### oboe [B9-13] ###
 
-maker.copy_rhythm(
-    baca.scope('PianoMusicVoice', 1),
-    baca.scope('OboeMusicVoice', (9, 13)),
-    division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
-    rhythm_maker__denominators=[4, 4, 4, 16],
-    )
-
 maker(
     baca.scope('OboeMusicVoice', (9, 13)),
-    baca.instrument(krummzeit.instruments['Oboe']),
+    krummzeit.polyphony(
+        durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
+        rotation=-1,
+        fuse=(1, 8),
+        denominators=[4, 4, 4, 16],
+        extra_counts=[3, 1, 0, 4],
+        ties=[0, 1, 0, 1, 1, 0],
+        ),
     )
 
 ### vn, va, vc [B12-14] (white OB bowing) ###

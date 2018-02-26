@@ -3757,38 +3757,11 @@ A_OboeMusicVoice = {
     \times 1/1 {
         
         % [A OboeMusicVoice measure 36]                          %! SM4
-        \set OboeMusicStaff.instrumentName = \markup {           %! SM8:REDUNDANT_INSTRUMENT:IC
-            \hcenter-in                                          %! SM8:REDUNDANT_INSTRUMENT:IC
-                #16                                              %! SM8:REDUNDANT_INSTRUMENT:IC
-                Oboe                                             %! SM8:REDUNDANT_INSTRUMENT:IC
-            }                                                    %! SM8:REDUNDANT_INSTRUMENT:IC
-        \set OboeMusicStaff.shortInstrumentName = \markup {      %! SM8:REDUNDANT_INSTRUMENT:IC
-            \hcenter-in                                          %! SM8:REDUNDANT_INSTRUMENT:IC
-                #10                                              %! SM8:REDUNDANT_INSTRUMENT:IC
-                Ob.                                              %! SM8:REDUNDANT_INSTRUMENT:IC
-            }                                                    %! SM8:REDUNDANT_INSTRUMENT:IC
-        \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_INSTRUMENT_COLOR:IC
         \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         ef'4.
         -\staccato                                               %! IC
         \<                                                       %! HC1
         \f                                                       %! HC1
-        ^ \markup {                                              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-            \with-color                                          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                #(x11-color 'DeepPink1)                          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                (“Oboe”)                                         %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-            }                                                    %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-        \override OboeMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! SM6:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:IC
-        \set OboeMusicStaff.instrumentName = \markup {           %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
-            \hcenter-in                                          %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
-                #16                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
-                Oboe                                             %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
-            }                                                    %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
-        \set OboeMusicStaff.shortInstrumentName = \markup {      %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
-            \hcenter-in                                          %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
-                #10                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
-                Ob.                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
-            }                                                    %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
     }
     \times 2/3 {
         
@@ -8996,17 +8969,6 @@ A_ViolinMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        \set ViolinMusicStaff.instrumentName = \markup {         %! SM8:REDUNDANT_INSTRUMENT:IC
-            \hcenter-in                                          %! SM8:REDUNDANT_INSTRUMENT:IC
-                #16                                              %! SM8:REDUNDANT_INSTRUMENT:IC
-                Violin                                           %! SM8:REDUNDANT_INSTRUMENT:IC
-            }                                                    %! SM8:REDUNDANT_INSTRUMENT:IC
-        \set ViolinMusicStaff.shortInstrumentName = \markup {    %! SM8:REDUNDANT_INSTRUMENT:IC
-            \hcenter-in                                          %! SM8:REDUNDANT_INSTRUMENT:IC
-                #10                                              %! SM8:REDUNDANT_INSTRUMENT:IC
-                Vn.                                              %! SM8:REDUNDANT_INSTRUMENT:IC
-            }                                                    %! SM8:REDUNDANT_INSTRUMENT:IC
-        \once \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_INSTRUMENT_COLOR:IC
         \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         fs''4.
         -\staccato                                               %! IC
@@ -9020,29 +8982,12 @@ A_ViolinMusicVoice = {
                                 \upright                         %! IC
                                     "off-string bowing on staccati" %! IC
                         }                                        %! IC
-                    \line                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                        {                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                            \with-color                          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                                #(x11-color 'DeepPink1)          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                                (“Violin”)                       %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                        }                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
                     \line                                        %! SM14
                         {                                        %! SM14
                             @                                    %! SM14
                         }                                        %! SM14
                 }
             }
-        \override ViolinMusicStaff.InstrumentName.color = #(x11-color 'DeepPink4) %! SM6:REDRAWN_REDUNDANT_INSTRUMENT_COLOR:IC
-        \set ViolinMusicStaff.instrumentName = \markup {         %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
-            \hcenter-in                                          %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
-                #16                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
-                Violin                                           %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
-            }                                                    %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
-        \set ViolinMusicStaff.shortInstrumentName = \markup {    %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
-            \hcenter-in                                          %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
-                #10                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
-                Vn.                                              %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
-            }                                                    %! SM8:REDRAWN_REDUNDANT_INSTRUMENT:SM34:IC
     }
     \times 2/3 {
         

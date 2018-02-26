@@ -372,12 +372,15 @@ maker(
 
 maker(
     baca.scope('ViolinMusicVoice', 23),
+    baca.bar_extent((-2, 2)),
     baca.clef('percussion'),
+    baca.dynamic('mf'),
+    baca.make_repeat_tied_notes(),
+    baca.markup.boxed('stonecircle: scrape at moderate speed'),
+    baca.not_parts(baca.bar_extent_zero()),
     baca.repeat_ties_up(),
     baca.staff_lines(1),
-    baca.staff_positions([0]),
-    baca.make_tied_notes(repeat_ties=True),
-    krummzeit.markup.scraped_slate(),
+    baca.staff_position(0),
     )
 
 ###############################################################################
@@ -709,12 +712,6 @@ maker(
     baca.scope('ClarinetMusicVoice', (22, 23)),
     baca.dynamic('f'),
     baca.glissando(),
-    )
-
-maker(
-    baca.scope('ViolinMusicVoice', 23),
-    baca.dynamic('mf'),
-    krummzeit.markup.scrape_moderately(),
     )
 
 ### VERTICAL ALIGNMENT ###

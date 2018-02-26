@@ -32,7 +32,6 @@ metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
     (17, krummzeit.metronome_marks['135']),
     (20, krummzeit.metronome_marks['108']),
     (20, krummzeit.metric_modulations['4=4:5(4)']),
-    (22, krummzeit.metronome_marks['108']),
     ])
 
 maker = baca.TimeSignatureMaker(
@@ -294,7 +293,6 @@ maker(
 
 maker(
     baca.scope('PercussionMusicVoice', (16, 20)),
-    baca.clef('percussion'),
     krummzeit.markup.tam_tam(),
     krummzeit.piano_incise_clusters()
     )
@@ -367,23 +365,7 @@ maker(
 
 maker(
     baca.scope('ClarinetMusicVoice', (22, 23)),
-    baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                durations=[(3, 8)],
-                remainder=abjad.Left,
-                ),
-            ),
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            burnish_specifier=rhythmos.BurnishSpecifier(
-                outer_divisions_only=True,
-                left_classes=[abjad.Rest],
-                left_counts=[1],
-                ),
-            ),
-        ),
+    krummzeit.white_rhythm([(3, 8)]),
     )
 
 ### vn [B23] circle-scraped slate ###
@@ -847,43 +829,3 @@ maker(
     baca.dynamic_line_spanner_staff_padding(6),
     baca.tuplet_bracket_staff_padding(3),
     )
-
-### TIMINGS ###
-
-r'''
-135:            3/4 3/4 9/8 7/8 6/4 7/4 3/4 7/4 11/8 5/8 4/4 3/4 3/4
-                9/8 7/8/ 6/4 7/4 3/4 7/4 11/8 5/8 4/4
-                {24.5*4= 98 quarters}
-                0.726 minutes
-
-67.5:           6/4 3/4 4/4 7/8 7/8 4/4
-                {6*4 = 24 quarters}
-                0.36 minutes
-
-67.5 --> 135:   8/4 3/4 4/4 5/8 9/8
-                {5.5*4 = 22 quarters}
-                22 / (101.25) = 0.22 minutes
-
-135:            5/4 2/4 3/4 3/4 9/8
-                {4.375 = 17.5 quarters}
-                0.13 minutes
-
-90:             7/8 6/4 7/4 7/4 3/4 11/8
-                {8*4 = 32 quarters}
-                0.36 minutes
-
-90 --> 135:     5/8 4/4 2/4
-                {2.125*4 = 8.5 quarters}
-                8.5 / 112.5 = 0.08 minutes
-
-135:            7/4 4/4 7/8 7/8 8/4 4/4 3/4 4/4 5/8
-                {9.875 * 4 = 39.5 quarters}
-                0.29 minutes
-
-108:            9/8 5/4 2/4 3/4 3/4 3/4 5/4 13/8 3/4 5/8 9/8 9/8
-                9/8 5/8 3/4 3/4 4/4 4/4 5/4
-                {18.125 * 4 = 72.5 quarters}
-                0.67 minutes
-
-sum([0.726, 0.36, 0.22, 0.13, 0.36, 0.08, 0.29, 0.67]) = 2.84 minutes.
-'''

@@ -223,40 +223,31 @@ maker(
 maker(
     baca.scope('ClarinetMusicVoice', (3, 4)),
     baca.instrument(krummzeit.instruments['BassClarinet']),
-    baca.make_tied_notes(repeat_ties=True),
-    #baca.RhythmCommand(
-    #    rhythm_maker=tied_notes,
-    #    ),
+    baca.make_repeat_tied_notes()
     )
 
 maker(
     baca.scope('ClarinetMusicVoice', (5, 6)),
     baca.instrument(krummzeit.instruments['BassClarinet']),
-    baca.make_tied_notes(repeat_ties=True),
-    #baca.RhythmCommand(
-    #    rhythm_maker=tied_notes,
-    #    ),
+    baca.make_repeat_tied_notes()
     )
 
 maker(
     baca.scope('ClarinetMusicVoice', (7, 8)),
     baca.instrument(krummzeit.instruments['BassClarinet']),
-    baca.make_tied_notes(repeat_ties=True),
-    #baca.RhythmCommand(
-    #    rhythm_maker=tied_notes,
-    #    ),
+    baca.make_repeat_tied_notes()
     )
 
 maker(
     baca.scope('ClarinetMusicVoice', (9, 10)),
     baca.instrument(krummzeit.instruments['BassClarinet']),
-    baca.make_tied_notes(repeat_ties=True),
+    baca.make_repeat_tied_notes()
     )
 
 maker(
     baca.scope('ClarinetMusicVoice', 11),
     baca.instrument(krummzeit.instruments['BassClarinet']),
-    baca.make_tied_notes(repeat_ties=True),
+    baca.make_repeat_tied_notes()
     )
 
 ### (9.1) vn, va, vc points [J15] ###

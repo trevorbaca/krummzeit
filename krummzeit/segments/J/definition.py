@@ -214,7 +214,7 @@ maker(
 maker(
     baca.scope('PercussionMusicVoice', (1, 12)),
     baca.dynamic('fff'),
-    baca.dynamic_line_spanner_staff_padding(4),
+    baca.dls_staff_padding(4),
     baca.stem_tremolo(),
     )
 
@@ -233,7 +233,7 @@ maker(
 maker(
     baca.make_scopes(['ViolinMusicVoice', 'ViolaMusicVoice'], [(1, 10)]),
     baca.dynamic('ff'),
-    baca.dynamic_line_spanner_staff_padding(5),
+    baca.dls_staff_padding(5),
     baca.markup.pizz(),
     baca.staccatissimi(),
     baca.tuplet_bracket_staff_padding(2),
@@ -256,7 +256,7 @@ maker(
 maker(
     baca.scope('CelloMusicVoice', (1, 6)),
     baca.dynamic('fff'),
-    baca.dynamic_line_spanner_staff_padding(3),
+    baca.dls_staff_padding(3),
     baca.map(baca.glissando(), baca.runs()),
     baca.markup.gridato_possibile(),
     )
@@ -277,7 +277,7 @@ maker(
 maker(
     baca.scope('OboeMusicVoice', (1, 12)),
     baca.dynamic('fff'),
-    baca.dynamic_line_spanner_staff_padding(5),
+    baca.dls_staff_padding(5),
     )
 
 ### bass clarinet ###
@@ -290,7 +290,7 @@ maker(
 maker(
     baca.scope('ClarinetMusicVoice', (1, 12)),
     baca.dynamic('f'),
-    baca.dynamic_line_spanner_staff_padding(7),
+    baca.dls_staff_padding(7),
     baca.stems_up(),
     )
 

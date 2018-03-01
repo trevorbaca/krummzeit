@@ -261,6 +261,6 @@ maker(
         ('ViolaMusicVoice', 'all'),
         ('CelloMusicVoice', 'all'),
         ),
-    baca.dynamic_line_spanner_padding(4),
+    baca.dls_padding(4),
     baca.tuplet_bracket_padding(2),
     )

@@ -627,7 +627,7 @@ maker(
         ),
     baca.clef('percussion'),
     baca.dynamic('ppp'),
-    baca.dynamic_line_spanner_staff_padding(6),
+    baca.dls_staff_padding(6),
     baca.repeat_ties_up(),
     baca.staff_lines(1),
     baca.staff_positions([0]),
@@ -641,50 +641,50 @@ maker(
 maker(
     baca.scope('OboeMusicVoice', (1, 13)),
     baca.beam_positions(-4),
-    baca.dynamic_line_spanner_staff_padding(6),
+    baca.dls_staff_padding(6),
     baca.tuplet_bracket_staff_padding(3),
     )
 
 maker(
     baca.scope('ClarinetMusicVoice', (1, 13)),
     baca.beam_positions(-4),
-    baca.dynamic_line_spanner_staff_padding(6),
+    baca.dls_staff_padding(6),
     baca.tuplet_bracket_staff_padding(3),
     )
 
 maker(
     baca.make_scopes(['PianoMusicVoice'], [(1, 7), 9]),
-    baca.dynamic_line_spanner_staff_padding(3),
+    baca.dls_staff_padding(3),
     )
 
 maker(
     baca.make_scopes(['PianoMusicVoice'], [8, (10, 11)]),
     baca.beam_positions(-4),
-    baca.dynamic_line_spanner_staff_padding(6),
+    baca.dls_staff_padding(6),
     baca.tuplet_bracket_staff_padding(3),
     )
 
 maker(
     baca.scope('PianoMusicVoice', 13),
-    baca.dynamic_line_spanner_staff_padding(6),
+    baca.dls_staff_padding(6),
     )
 
 maker(
     baca.scope('PercussionMusicVoice', 1),
-    baca.dynamic_line_spanner_staff_padding(6),
+    baca.dls_staff_padding(6),
     )
 
 maker(
     baca.make_scopes(['PercussionMusicVoice'], [8, (10, 11)]),
     baca.beam_positions(-4),
-    baca.dynamic_line_spanner_staff_padding(6),
+    baca.dls_staff_padding(6),
     baca.tuplet_bracket_staff_padding(3),
     )
 
 maker(
     baca.scope('ViolaMusicVoice', (4, 5)),
     baca.beam_positions(-4),
-    baca.dynamic_line_spanner_staff_padding(6),
+    baca.dls_staff_padding(6),
     baca.tuplet_bracket_staff_padding(3),
     )
 
@@ -696,18 +696,18 @@ maker(
         [(6, 9)],
         ),
     baca.beam_positions(-4),
-    baca.dynamic_line_spanner_staff_padding(6),
+    baca.dls_staff_padding(6),
     baca.tuplet_bracket_staff_padding(3),
     )
 
 maker(
     baca.make_scopes(['ViolinMusicVoice', 'ViolaMusicVoice'], [(11, 13)]),
-    baca.dynamic_line_spanner_staff_padding(8),
+    baca.dls_staff_padding(8),
     )
 
 maker(
     baca.scope('CelloMusicVoice', (11, 13)),
-    baca.dynamic_line_spanner_staff_padding(6),
+    baca.dls_staff_padding(6),
     )
 
 ### TIMINGS ###

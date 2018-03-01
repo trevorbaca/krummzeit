@@ -420,7 +420,7 @@ maker(
 
 maker(
     baca.scope('OboeMusicVoice', (3, 6)),
-    baca.dynamic_line_spanner_staff_padding(3),
+    baca.dls_staff_padding(3),
     )
 
 maker(
@@ -430,25 +430,25 @@ maker(
 
 maker(
     baca.scope('ClarinetMusicVoice', (3, 6)),
-    baca.dynamic_line_spanner_staff_padding(3),
+    baca.dls_staff_padding(3),
     )
 
 maker(
     baca.scope('ClarinetMusicVoice', (7, 8)),
     baca.stems_up(),
-    baca.dynamic_line_spanner_staff_padding(9),
+    baca.dls_staff_padding(9),
     baca.tuplet_bracket_staff_padding(5),
     )
 
 maker(
     baca.scope('PianoMusicVoice', (7, 8)),
-    baca.dynamic_line_spanner_staff_padding(6),
+    baca.dls_staff_padding(6),
     baca.tuplet_bracket_staff_padding(2),
     )
 
 maker(
     baca.scope('PercussionMusicVoice', (4, 5)),
-    baca.dynamic_line_spanner_staff_padding(6),
+    baca.dls_staff_padding(6),
     )
 
 maker(
@@ -458,19 +458,19 @@ maker(
 
 maker(
     baca.scope('ViolinMusicVoice', (6, 8)),
-    baca.dynamic_line_spanner_staff_padding(7),
+    baca.dls_staff_padding(7),
     baca.tuplet_bracket_staff_padding(3),
     )
 
 maker(
     baca.scope('ViolaMusicVoice', (6, 8)),
-    baca.dynamic_line_spanner_staff_padding(9),
+    baca.dls_staff_padding(9),
     baca.tuplet_bracket_staff_padding(5),
     )
 
 maker(
     baca.scope('CelloMusicVoice', (6, 8)),
-    baca.dynamic_line_spanner_staff_padding(9),
+    baca.dls_staff_padding(9),
     baca.tuplet_bracket_staff_padding(5),
     )
 

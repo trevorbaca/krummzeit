@@ -503,13 +503,13 @@ maker(
 
 maker(
     baca.scope('OboeMusicVoice', (14, 16)),
-    baca.dynamic_line_spanner_staff_padding(5),
+    baca.dls_staff_padding(5),
     baca.stems_up(),
     )
 
 maker(
     baca.scope('OboeMusicVoice', (14, 16)),
-    baca.dynamic_line_spanner_staff_padding(5),
+    baca.dls_staff_padding(5),
     baca.stems_up(),
     )
 
@@ -520,12 +520,12 @@ maker(
 
 maker(
     baca.scope('PianoMusicVoice', (9, 16)),
-    baca.dynamic_line_spanner_staff_padding(10),
+    baca.dls_staff_padding(10),
     )
 
 maker(
     baca.scope('PercussionMusicVoice', (14, 17)),
-    baca.dynamic_line_spanner_staff_padding(6),
+    baca.dls_staff_padding(6),
     )
 
 maker(
@@ -536,7 +536,7 @@ maker(
         [(5, 9)],
         ),
     baca.beam_positions(-4),
-    baca.dynamic_line_spanner_staff_padding(8),
+    baca.dls_staff_padding(8),
     baca.tuplet_bracket_staff_padding(4),
     )
 

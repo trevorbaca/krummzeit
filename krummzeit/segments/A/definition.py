@@ -181,6 +181,7 @@ maker(
 maker(
     baca.scope('ClarinetMusicVoice', 3),
     baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
+    baca.markup.boxed(krummzeit.e_flat_clarinet_markup()),
     krummzeit.margin_markup('Cl. (Eb)'),
     )
 

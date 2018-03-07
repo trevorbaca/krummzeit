@@ -50,7 +50,6 @@ maker = baca.SegmentMaker(
     rehearsal_mark='A',
     score_template=krummzeit.ScoreTemplate(),
     metronome_mark_measure_map=metronome_mark_measure_map,
-    metronome_mark_stem_height=1,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=75,

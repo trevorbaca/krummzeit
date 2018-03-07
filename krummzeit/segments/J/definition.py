@@ -9,12 +9,11 @@ from abjad import rhythmmakertools as rhythmos
 ###############################################################################
 
 stage_measure_map = baca.StageMeasureMap([
-    4, 4, 4, 4, 4, 4,   # 1-6
-    4, 4, 4, 4, 4, 4,   # 7-12
+    4, 4, 4, 4, 4, 4,
+    4, 4, 4, 4, 4, 4,
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, krummzeit.metronome_marks['144']),
     ])
 
 maker = baca.TimeSignatureMaker(
@@ -25,9 +24,8 @@ maker = baca.TimeSignatureMaker(
 measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 maker = baca.SegmentMaker(
-    #final_bar_line=True,
     final_markup=(['Cambridge, MA.'], ['May', 'August 2014.']),
-    final_markup_extra_offset=(14.5, 0),
+    #final_markup_extra_offset=(14.5, 0),
     ignore_repeat_pitch_classes=True,
     instruments=krummzeit.instruments,
     last_segment=True,
@@ -43,143 +41,66 @@ maker = baca.SegmentMaker(
     validate_stage_count=12,
     )
 
-###############################################################################
-################################### COMMANDS ##################################
-###############################################################################
-
-### harpsichord ###
+# oboe
 
 maker(
-    baca.scope('PianoMusicVoice', (1, 6)),
-    baca.instrument(krummzeit.instruments['Harpsichord']),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                durations=[
-                    (16, 4), (16, 4), (16, 4), (16, 4), (16, 4), (14, 4), (2, 4),
-                    ],
-                ),
-            ),
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            division_masks=[abjad.index([-1])],
-            ),
-        ),
+    baca.scope('OboeMusicVoice', (1, 10)),
+    baca.make_repeat_tied_notes(),
     )
+
+# bcl
 
 maker(
-    baca.scope('PianoMusicVoice', (7, 12)),
-    baca.instrument(krummzeit.instruments['Piano']),
-    baca.RhythmCommand(
-        # TODO: replace first division-maker?
-        #division_maker=baca.FuseByCountsDivisionCallback(
-        #    counts=abjad.Infinity,
-        #    ),
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                durations=[
-                    (16, 4),
-                    ],
-                ),
-            ),
-        rhythm_maker=rhythmos.NoteRhythmMaker()
-        ),
+    baca.scope('ClarinetMusicVoice', (1, 10)),
+    baca.make_repeat_tied_notes(),
     )
 
-### xylophone ###
+# piano
 
 maker(
-    baca.scope('PercussionMusicVoice', (1, 12)),
-    baca.instrument(krummzeit.instruments['Xylophone']),
-    baca.RhythmCommand(
-        # TODO: replace first division-maker?
-        #division_maker=baca.FuseByCountsDivisionCallback(
-        #    counts=abjad.Infinity,
-        #    ),
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                durations=[
-                    (16, 4),
-                    ],
-                ),
-            ),
-        rhythm_maker=rhythmos.NoteRhythmMaker()
-        ),
+    baca.scope('PianoMusicVoice', (1, -1)),
+    baca.make_repeat_tied_notes(),
     )
 
-### vn, va ###
+# xylophone
+
+maker(
+    baca.scope('PercussionMusicVoice', (1, -1)),
+    baca.clef('treble'),
+    baca.make_repeat_tied_notes(),
+    )
+
+# violin
 
 maker(
     baca.scope('ViolinMusicVoice', (1, 10)),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.TaleaRhythmMaker(
-            talea=rhythmos.Talea(
-                counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
-                denominator=4,
-                ),
-            split_divisions_by_counts=[6, 18],
-            extra_counts_per_division=[2, 2, 1, 2, 4, 6],
-            rest_tied_notes=True,
-            ),
-        ),
+    krummzeit.closing_pizzicati(
+        counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
+        extra_counts_per_division=[2, 2, 1, 2, 4, 6],
+        split_divisions_by_counts=[6, 18],
+        )
     )
 
-maker.copy_rhythm(
-    baca.scope('ViolinMusicVoice', 1),
-    baca.scope('ViolaMusicVoice', 1),
-    rhythm_maker__split_divisions_by_counts=[8, 10],
-    rhythm_maker__extra_counts_per_division=[3, 3, 2, 3, 5, 7],
-    rhythm_maker__talea__counts=[8, 4, 4, 2, 1, 1, 8, 8, 8, 2, 4, 4],
-    )
+# viola
 
 maker(
     baca.scope('ViolaMusicVoice', 1),
     baca.clef('treble'),
-    )
-
-### vc ###
-
-maker.copy_rhythm(
-    baca.scope('PianoMusicVoice', 1),
-    baca.scope('CelloMusicVoice', (1, 6)),  # ?
-    rhythm_maker__division_masks=None,
-    )
-
-maker.copy_rhythm(
-    baca.scope('PianoMusicVoice', 7),
-    baca.scope('CelloMusicVoice', (7, 10)),
-    )
-
-### oboe ###
-
-maker(
-    baca.scope('OboeMusicVoice', (1, 10)),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                durations=[(14, 4), (2, 4)],
-                ),
-            ),
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            division_masks=[abjad.index([1], 2)],
-            ),
+    krummzeit.closing_pizzicati(
+        counts=[8, 4, 4, 2, 1, 1, 8, 8, 8, 2, 4, 4],
+        extra_counts_per_division=[3, 3, 2, 3, 5, 7],
+        split_divisions_by_counts=[8, 10],
         ),
     )
 
-### bass clarinet ###
+# cello
 
 maker(
-    baca.scope('ClarinetMusicVoice', (1, 10)),
-    baca.instrument(krummzeit.instruments['BassClarinet']),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=[4],
-            ),
-        rhythm_maker=rhythmos.NoteRhythmMaker()
+    baca.scopes(
+        ('CelloMusicVoice', (1, 6)),
+        ('CelloMusicVoice', (7, 12)),
         ),
+    baca.make_repeat_tied_notes(),
     )
 
 ###############################################################################
@@ -190,7 +111,7 @@ maker(
 
 maker(
     baca.scope('PianoMusicVoice', (1, 12)),
-    baca.pitches('C#6'),
+    baca.pitch('C#6'),
     )
 
 maker(
@@ -200,14 +121,14 @@ maker(
 
 maker(
     baca.scope('PianoMusicVoice', (7, 12)),
-    baca.possibile_dynamic('fff'),
+    baca.possibile_dynamic('fff', selector=baca.leaf(0)),
     )
 
 ### xylophone reiteration ###
 
 maker(
     baca.scope('PercussionMusicVoice', (1, 12)),
-    baca.pitches('C#6'),
+    baca.pitch('C#6'),
     )
 
 maker(
@@ -249,7 +170,7 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', (7, 12)),
-    baca.pitches('D2'),
+    baca.pitch('D2'),
     )
 
 maker(
@@ -270,7 +191,7 @@ maker(
 
 maker(
     baca.scope('OboeMusicVoice', (1, 12)),
-    baca.pitches('C#4'),
+    baca.pitch('C#4'),
     )
 
 maker(
@@ -283,7 +204,7 @@ maker(
 
 maker(
     baca.scope('ClarinetMusicVoice', (1, 12)),
-    baca.pitches('D2'),
+    baca.pitch('D2'),
     )
 
 maker(
@@ -292,10 +213,3 @@ maker(
     baca.dls_staff_padding(7),
     baca.stems_up(),
     )
-
-### TIMINGS ###
-
-r'''
-144:        12 * (5/4 5/4 4/4 2/4)
-            12 * 16 = 204 quarters / 144 = 1.33 minutes
-'''

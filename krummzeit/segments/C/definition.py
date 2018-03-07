@@ -83,7 +83,6 @@ maker(
 
 maker(
     baca.scope('PianoMusicVoice', 1),
-    baca.instrument(krummzeit.instruments['Piano']),
     baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(2, 3)],

@@ -15,7 +15,6 @@ stage_measure_map = baca.StageMeasureMap([
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, krummzeit.metronome_marks['72']),
     (8, abjad.Accelerando()),
     (13, krummzeit.metronome_marks['144']),
     ])
@@ -144,6 +143,7 @@ maker(
                 ),
             ),
         ),
+    krummzeit.margin_markup('Hpschd.'),
     )
 
 maker.copy_rhythm(

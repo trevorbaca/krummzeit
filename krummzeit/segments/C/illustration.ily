@@ -1989,18 +1989,18 @@ C_PianoMusicVoice = {
         ^ \markup {
             \column
                 {
+                    \line                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                        {                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                            \with-color                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                                #(x11-color 'green4)             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                                (“Piano”)                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                        }                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                     \line                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                         {                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                             \with-color                          %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                                 #(x11-color 'green4)             %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                                 [“Pf.”]                          %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                         }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
-                    \line                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                        {                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                            \with-color                          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                                #(x11-color 'DeepPink1)          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                                (“Piano”)                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                        }                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
                 }
             }
         \override PianoMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37

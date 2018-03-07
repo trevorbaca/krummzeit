@@ -17,7 +17,6 @@ stage_measure_map = baca.StageMeasureMap([
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, krummzeit.metronome_marks['36']),
     (4, abjad.Accelerando()),
     (8, krummzeit.metronome_marks['72/108']),
     (9, krummzeit.metronome_marks['72']),
@@ -56,7 +55,6 @@ maker = baca.SegmentMaker(
 
 maker(
     baca.scope('PercussionMusicVoice', 1),
-    baca.clef('percussion'),
     baca.RhythmCommand(
         rhythm_maker=rhythmos.IncisedRhythmMaker(
             incise_specifier=rhythmos.InciseSpecifier(
@@ -188,7 +186,6 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('PianoMusicVoice', 8),
-    baca.instrument(krummzeit.instruments['Piano']),
     baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(1, 2), (2, 1)],
@@ -213,7 +210,6 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('PercussionMusicVoice', 8),
-    baca.instrument(krummzeit.instruments['Xylophone']),
     baca.clef('treble'),
     baca.staff_lines(5),
     )
@@ -276,7 +272,6 @@ maker.copy_rhythm(
 
 maker(
     baca.scope('OboeMusicVoice', 5),
-    baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
     )
 
 maker.copy_rhythm(

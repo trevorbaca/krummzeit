@@ -16,7 +16,6 @@ stage_measure_map = baca.StageMeasureMap([
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, krummzeit.metronome_marks['144']),
     (13, abjad.Fermata('shortfermata')),
     (14, krummzeit.metronome_marks['90']),
     (22, abjad.Fermata('verylongfermata')),
@@ -104,7 +103,6 @@ maker(
 
 maker(
     baca.scope('ClarinetMusicVoice', (1, 5)),
-    baca.instrument(krummzeit.instruments['BassClarinet']),
     baca.RhythmCommand(
         rhythm_maker=rhythmos.NoteRhythmMaker(
             tie_specifier=rhythmos.TieSpecifier(
@@ -186,7 +184,6 @@ maker(
 
 maker(
     baca.scope('PercussionMusicVoice', (1, 7)),
-    baca.clef('percussion'),
     baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,

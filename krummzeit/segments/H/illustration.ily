@@ -932,8 +932,8 @@ H_PianoMusicVoice = {
                 #16                                              %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
                 Hpschd.                                          %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
             }                                                    %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-        \once \override PianoMusicStaff.Clef.X-extent = ##f      %! OC1:SHIFTED_CLEF
-        \once \override PianoMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
+        \once \override PianoMusicStaff.Clef.X-extent = ##f      %! OC1:MEASURE_281:SHIFTED_CLEF
+        \once \override PianoMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:MEASURE_281:SHIFTED_CLEF
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2

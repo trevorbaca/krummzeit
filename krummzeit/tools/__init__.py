@@ -1,6 +1,7 @@
 from .MarkupLibrary import MarkupLibrary
 from .RegisterTransitionCommand import RegisterTransitionCommand
 from .ScoreTemplate import ScoreTemplate
+from .closing_pizzicati import closing_pizzicati
 from .clusters import clusters
 from .color_fingerings import color_fingerings
 from .displacement import displacement

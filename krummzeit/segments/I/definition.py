@@ -15,7 +15,6 @@ stage_measure_map = baca.StageMeasureMap([
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, krummzeit.metronome_marks['135']),
     (3, krummzeit.metronome_marks['90']),
     (5, krummzeit.metronome_marks['108']),
     (7, krummzeit.metronome_marks['72']),
@@ -77,16 +76,10 @@ maker.copy_rhythm(
     rhythm_maker__tuplet_ratios=[(1, 4)],
     )
 
-maker(
-    baca.scope('ClarinetMusicVoice', 1),
-    baca.instrument(krummzeit.instruments['BassClarinet']),
-    )
-
 ### pf, xylophone [I1] reiteration ###
 
 maker(
     baca.scope('PianoMusicVoice', 1),
-    baca.instrument(krummzeit.instruments['Piano']),
     baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=[2],
@@ -106,11 +99,6 @@ maker.copy_rhythm(
     baca.scope('PianoMusicVoice', 1),
     baca.scope('PercussionMusicVoice', 1),
     rhythm_maker__tuplet_ratios=[(1, 6)],
-    )
-
-maker(
-    baca.scope('PercussionMusicVoice', 1),
-    baca.instrument(krummzeit.instruments['Xylophone']),
     )
 
 ### vn, va, vc [J1-3] tremolo clusters (11.1) ###
@@ -221,31 +209,26 @@ maker(
 
 maker(
     baca.scope('ClarinetMusicVoice', (3, 4)),
-    baca.instrument(krummzeit.instruments['BassClarinet']),
     baca.make_repeat_tied_notes()
     )
 
 maker(
     baca.scope('ClarinetMusicVoice', (5, 6)),
-    baca.instrument(krummzeit.instruments['BassClarinet']),
     baca.make_repeat_tied_notes()
     )
 
 maker(
     baca.scope('ClarinetMusicVoice', (7, 8)),
-    baca.instrument(krummzeit.instruments['BassClarinet']),
     baca.make_repeat_tied_notes()
     )
 
 maker(
     baca.scope('ClarinetMusicVoice', (9, 10)),
-    baca.instrument(krummzeit.instruments['BassClarinet']),
     baca.make_repeat_tied_notes()
     )
 
 maker(
     baca.scope('ClarinetMusicVoice', 11),
-    baca.instrument(krummzeit.instruments['BassClarinet']),
     baca.make_repeat_tied_notes()
     )
 

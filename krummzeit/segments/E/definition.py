@@ -20,7 +20,6 @@ stage_measure_map = baca.StageMeasureMap([
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, krummzeit.metronome_marks['108']),
     (2, krummzeit.metronome_marks['135']),
     (3, krummzeit.metronome_marks['72']),
     (7, krummzeit.metronome_marks['108']),
@@ -132,17 +131,10 @@ maker.copy_rhythm(
     baca.scope('PianoMusicVoice', 2),
     )
 
-maker(
-    baca.scope('PianoMusicVoice', 2),
-    baca.instrument(krummzeit.instruments['Piano']),
-    baca.clef('bass'),
-    )
-
 ### suspended cymbal [F1-4] ###
 
 maker(
     baca.scope('PercussionMusicVoice', (1, 6)),
-    baca.clef('percussion'),
     baca.RhythmCommand(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
             talea=rhythmos.Talea([1, 2], 2),
@@ -232,11 +224,6 @@ maker.copy_rhythm(
     rhythm_maker__division_masks=[abjad.index([0])],
     )
 
-maker(
-    baca.scope('ClarinetMusicVoice', 4),
-    baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
-    )
-
 ### pf, xyl [F8] & [F10-15] ###
 
 maker(
@@ -302,6 +289,7 @@ maker(
                 ),
             ),
         ),
+    krummzeit.margin_markup('B. cl.'),
     )
 
 maker.copy_rhythm(

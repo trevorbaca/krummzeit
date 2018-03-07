@@ -548,7 +548,7 @@ H_OboeMusicVoice = {
                     {                                            %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                         \with-color                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                             #(x11-color 'green4)                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                            (“ClarinetInEFlat”)                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                            (“Oboe”)                             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                     }                                            %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                 \line                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                     {                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
@@ -582,27 +582,27 @@ H_OboeMusicVoice = {
     % [H OboeMusicVoice measure 284]                             %! SM4
     \override DynamicLineSpanner.staff-padding = #'3             %! OC1
     \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    b'1..
+    d''1..
     \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC
     ~
     \startTrillSpan                                              %! SC
     
     % [H OboeMusicVoice measure 285]                             %! SM4
-    b'2.
+    d''2.
     ~
     
     % [H OboeMusicVoice measure 286]                             %! SM4
-    b'1
+    d''1
     ~
     
-    b'4.
+    d''4.
     ~
     
     % [H OboeMusicVoice measure 287]                             %! SM4
-    b'2
+    d''2
     ~
     
-    b'8
+    d''8
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
@@ -614,7 +614,7 @@ H_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        c''2.
+        ef''2.
         \stopTrillSpan                                           %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -624,7 +624,7 @@ H_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        c''2
+        ef''2
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -644,7 +644,7 @@ H_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        c''2.
+        ef''2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -660,7 +660,7 @@ H_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        c''2
+        ef''2
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -691,18 +691,8 @@ H_ClarinetMusicVoice = {
             #16                                                  %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
             \center-column                                       %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
                 {                                                %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                    Cl.                                          %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                    \concat                                      %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                        {                                        %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                            (                                    %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                            E                                    %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                            \raise                               %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                #0.5                             %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                \scale                           %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                    #'(0.65 . 0.65)              %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                    \flat                        %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                            )                                    %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                        }                                        %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
+                    B.                                           %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
+                    cl.                                          %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
                 }                                                %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
         }                                                        %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
     \set Staff.shortInstrumentName =                             %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
@@ -711,18 +701,8 @@ H_ClarinetMusicVoice = {
             #16                                                  %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
             \center-column                                       %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
                 {                                                %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                    Cl.                                          %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                    \concat                                      %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                        {                                        %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                            (                                    %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                            E                                    %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                            \raise                               %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                #0.5                             %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                \scale                           %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                    #'(0.65 . 0.65)              %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                    \flat                        %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                            )                                    %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                        }                                        %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
+                    B.                                           %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
+                    cl.                                          %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
                 }                                                %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
         }                                                        %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
     \clef "treble"                                               %! SM8:REAPPLIED_CLEF:SM37
@@ -746,7 +726,7 @@ H_ClarinetMusicVoice = {
                     {                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                         \with-color                              %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                             #(x11-color 'green4)                 %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
-                            "[“Cl. (Eb)”]"                       %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
+                            "[“B. cl.”]"                         %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                     }                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
             }
         }
@@ -758,18 +738,8 @@ H_ClarinetMusicVoice = {
             #16                                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
             \center-column                                       %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
                 {                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                    Cl.                                          %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                    \concat                                      %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                        {                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                            (                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                            E                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                            \raise                               %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                #0.5                             %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                \scale                           %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                    #'(0.65 . 0.65)              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                    \flat                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                            )                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                        }                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
+                    B.                                           %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
+                    cl.                                          %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
                 }                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
     \set ClarinetMusicStaff.shortInstrumentName =                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
@@ -778,18 +748,8 @@ H_ClarinetMusicVoice = {
             #16                                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
             \center-column                                       %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
                 {                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                    Cl.                                          %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                    \concat                                      %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                        {                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                            (                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                            E                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                            \raise                               %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                #0.5                             %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                \scale                           %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                    #'(0.65 . 0.65)              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                    \flat                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                            )                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                        }                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
+                    B.                                           %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
+                    cl.                                          %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
                 }                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
     

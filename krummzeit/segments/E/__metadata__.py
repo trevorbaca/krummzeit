@@ -82,7 +82,7 @@ metadata = abjad.OrderedDict(
                             abjad.Momento(
                                 context='ClarinetMusicVoice',
                                 prototype='abjad.MarginMarkup',
-                                value='Cl. (Eb)',
+                                value='B. cl.',
                                 ),
                             ],
                         ),
@@ -107,7 +107,7 @@ metadata = abjad.OrderedDict(
                             abjad.Momento(
                                 context='OboeMusicVoice',
                                 prototype='abjad.Instrument',
-                                value='ClarinetInEFlat',
+                                value='Oboe',
                                 ),
                             abjad.Momento(
                                 context='OboeMusicVoice',

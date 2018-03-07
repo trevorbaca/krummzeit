@@ -81,51 +81,51 @@ I_GlobalRests = {
 I_GlobalSkips = {
     
     % [I GlobalSkips measure 291]                                        %! SM4
-%@% \once \override TextSpanner.bound-details.left.text =                %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@% \markup {                                                            %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%     \fontsize                                                        %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%         #-6                                                          %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%         \general-align                                               %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%             #Y                                                       %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%             #DOWN                                                    %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%             \note-by-number                                          %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%                 #2                                                   %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%                 #0                                                   %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%                 #1                                                   %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%     \upright                                                         %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%         {                                                            %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%             =                                                        %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%             135                                                      %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%         }                                                            %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%     \hspace                                                          %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%         #1                                                           %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%     }                                                                %! SM27:REDUNDANT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
+%@% \once \override TextSpanner.bound-details.left.text =                %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@% \markup {                                                            %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%     \fontsize                                                        %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%         #-6                                                          %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%         \general-align                                               %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%             #Y                                                       %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%             #DOWN                                                    %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%             \note-by-number                                          %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%                 #2                                                   %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%                 #0                                                   %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%                 #1                                                   %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%     \upright                                                         %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%         {                                                            %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%             =                                                        %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%             135                                                      %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%         }                                                            %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%     \hspace                                                          %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%         #1                                                           %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%     }                                                                %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.Y-extent = ##f                           %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
-    \once \override TextSpanner.bound-details.left.text =                %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-    \markup {                                                            %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-        \with-color                                                      %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-            #(x11-color 'DeepPink1)                                      %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-            {                                                            %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                \fontsize                                                %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                    #-6                                                  %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                    \general-align                                       %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                        #Y                                               %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                        #DOWN                                            %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                        \note-by-number                                  %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                            #2                                           %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                            #0                                           %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                            #1                                           %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                \upright                                                 %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                    {                                                    %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                        =                                                %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                        135                                              %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                    }                                                    %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                \hspace                                                  %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                    #1                                                   %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-            }                                                            %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-        }                                                                %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left.text =                %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+    \markup {                                                            %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+        \with-color                                                      %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+            #(x11-color 'green4)                                         %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+            {                                                            %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                \fontsize                                                %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                    #-6                                                  %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                    \general-align                                       %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                        #Y                                               %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                        #DOWN                                            %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                        \note-by-number                                  %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                            #2                                           %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                            #0                                           %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                            #1                                           %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                \upright                                                 %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                    {                                                    %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                        =                                                %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                        135                                              %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                    }                                                    %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                \hspace                                                  %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                    #1                                                   %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+            }                                                            %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+        }                                                                %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.right-broken.padding = 0   %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.right-broken.text = ##f    %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.right.padding = 0          %! SM29:METRONOME_MARK_SPANNER
@@ -1397,7 +1397,7 @@ I_OboeMusicVoice = {
         \set OboeMusicStaff.forceClef = ##t                      %! SM8:REAPPLIED_CLEF:SM33:SM37
         \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:SM37
         \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        c''4.
+        ef''4.
         \ff                                                      %! SM8:REDUNDANT_DYNAMIC:IC
         ^ \markup {
             \column
@@ -1406,7 +1406,7 @@ I_OboeMusicVoice = {
                         {                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                             \with-color                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                                 #(x11-color 'green4)             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                                (“ClarinetInEFlat”)              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                                (“Oboe”)                         %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                         }                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                     \line                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                         {                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
@@ -1440,7 +1440,7 @@ I_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        c''4
+        ef''4
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -1540,18 +1540,8 @@ I_ClarinetMusicVoice = {
                 #16                                              %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
                 \center-column                                   %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
                     {                                            %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                        Cl.                                      %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                        \concat                                  %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                            {                                    %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                (                                %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                E                                %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                \raise                           %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                    #0.5                         %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                    \scale                       %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                        #'(0.65 . 0.65)          %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                        \flat                    %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                )                                %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                            }                                    %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
+                        B.                                       %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
+                        cl.                                      %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
                     }                                            %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
             }                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
         \set Staff.shortInstrumentName =                         %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
@@ -1560,18 +1550,8 @@ I_ClarinetMusicVoice = {
                 #16                                              %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
                 \center-column                                   %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
                     {                                            %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                        Cl.                                      %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                        \concat                                  %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                            {                                    %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                (                                %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                E                                %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                \raise                           %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                    #0.5                         %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                    \scale                       %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                        #'(0.65 . 0.65)          %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                        \flat                    %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                                )                                %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                            }                                    %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
+                        B.                                       %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
+                        cl.                                      %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
                     }                                            %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
             }                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
         \override DynamicLineSpanner.staff-padding = #'9         %! OC1
@@ -1593,18 +1573,18 @@ I_ClarinetMusicVoice = {
         ^ \markup {
             \column
                 {
+                    \line                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                        {                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                            \with-color                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                                #(x11-color 'green4)             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                                (“BassClarinet”)                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                        }                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                     \line                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                         {                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                             \with-color                          %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                                 #(x11-color 'green4)             %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
-                                "[“Cl. (Eb)”]"                   %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
+                                "[“B. cl.”]"                     %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                         }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
-                    \line                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                        {                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                            \with-color                          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                                #(x11-color 'DeepPink1)          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                                (“BassClarinet”)                 %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                        }                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
                     \line                                        %! SM14
                         {                                        %! SM14
                             @                                    %! SM14
@@ -1619,18 +1599,8 @@ I_ClarinetMusicVoice = {
                 #16                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
                 \center-column                                   %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
                     {                                            %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                        Cl.                                      %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                        \concat                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                            {                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                (                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                E                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                \raise                           %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                    #0.5                         %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                    \scale                       %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                        #'(0.65 . 0.65)          %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                        \flat                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                )                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                            }                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
+                        B.                                       %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
+                        cl.                                      %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
                     }                                            %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
             }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
         \set ClarinetMusicStaff.shortInstrumentName =            %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
@@ -1639,18 +1609,8 @@ I_ClarinetMusicVoice = {
                 #16                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
                 \center-column                                   %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
                     {                                            %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                        Cl.                                      %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                        \concat                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                            {                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                (                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                E                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                \raise                           %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                    #0.5                         %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                    \scale                       %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                        #'(0.65 . 0.65)          %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                        \flat                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                                )                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                            }                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
+                        B.                                       %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
+                        cl.                                      %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
                     }                                            %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
             }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
         
@@ -1688,21 +1648,8 @@ I_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     fs2.
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
-    ^ \markup {
-        \column
-            {
-                \line                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                    {                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                        \with-color                              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                            #(x11-color 'DeepPink1)              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                            (“BassClarinet”)                     %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                    }                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                \line                                            %! SM14
-                    {                                            %! SM14
-                        @                                        %! SM14
-                    }                                            %! SM14
-            }
-        }
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
     
     % [I ClarinetMusicVoice measure 294]                         %! SM4
     \once \override Accidental.color = #red
@@ -1735,21 +1682,8 @@ I_ClarinetMusicVoice = {
     fs2.
     \<                                                           %! HC1
     \ff                                                          %! HC1
-    ^ \markup {
-        \column
-            {
-                \line                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                    {                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                        \with-color                              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                            #(x11-color 'DeepPink1)              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                            (“BassClarinet”)                     %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                    }                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                \line                                            %! SM14
-                    {                                            %! SM14
-                        @                                        %! SM14
-                    }                                            %! SM14
-            }
-        }
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
     
     \once \override Accidental.color = #red
     \once \override Beam.color = #red
@@ -1791,21 +1725,8 @@ I_ClarinetMusicVoice = {
     \once \override NoteHead.color = #red
     \once \override Stem.color = #red
     fs4.
-    ^ \markup {
-        \column
-            {
-                \line                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                    {                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                        \with-color                              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                            #(x11-color 'DeepPink1)              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                            (“BassClarinet”)                     %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                    }                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                \line                                            %! SM14
-                    {                                            %! SM14
-                        @                                        %! SM14
-                    }                                            %! SM14
-            }
-        }
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
     
     \once \override Accidental.color = #red
     \once \override Beam.color = #red
@@ -1847,21 +1768,8 @@ I_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     fs1
     \fff_poss                                                    %! SM8:EXPLICIT_DYNAMIC:IC
-    ^ \markup {
-        \column
-            {
-                \line                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                    {                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                        \with-color                              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                            #(x11-color 'DeepPink1)              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                            (“BassClarinet”)                     %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                    }                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                \line                                            %! SM14
-                    {                                            %! SM14
-                        @                                        %! SM14
-                    }                                            %! SM14
-            }
-        }
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
     
     % [I ClarinetMusicVoice measure 300]                         %! SM4
     \once \override Accidental.color = #red
@@ -1894,21 +1802,8 @@ I_ClarinetMusicVoice = {
     fs1
     \>                                                           %! HC1
     \fff                                                         %! HC1
-    ^ \markup {
-        \column
-            {
-                \line                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                    {                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                        \with-color                              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                            #(x11-color 'DeepPink1)              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                            (“BassClarinet”)                     %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                    }                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                \line                                            %! SM14
-                    {                                            %! SM14
-                        @                                        %! SM14
-                    }                                            %! SM14
-            }
-        }
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
     
     % [I ClarinetMusicVoice measure 302]                         %! SM4
     \once \override Accidental.color = #red
@@ -2019,18 +1914,18 @@ I_PianoMusicVoice = {
         ^ \markup {
             \column
                 {
+                    \line                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                        {                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                            \with-color                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                                #(x11-color 'green4)             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                                (“Piano”)                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                        }                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                     \line                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                         {                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                             \with-color                          %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                                 #(x11-color 'green4)             %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                                 [“Hpschd.”]                      %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                         }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
-                    \line                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                        {                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                            \with-color                          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                                #(x11-color 'DeepPink1)          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                                (“Piano”)                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                        }                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
                     \line                                        %! SM14
                         {                                        %! SM14
                             @                                    %! SM14
@@ -5356,18 +5251,18 @@ I_PercussionMusicVoice = {
         ^ \markup {
             \column
                 {
+                    \line                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                        {                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                            \with-color                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                                #(x11-color 'green4)             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                                (“Xylophone”)                    %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                        }                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                     \line                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                         {                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                             \with-color                          %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                                 #(x11-color 'green4)             %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                                 [“Perc.”]                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                         }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
-                    \line                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                        {                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                            \with-color                          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                                #(x11-color 'DeepPink1)          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                                (“Xylophone”)                    %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                        }                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
                     \line                                        %! SM14
                         {                                        %! SM14
                             @                                    %! SM14

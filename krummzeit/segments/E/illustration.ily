@@ -1,51 +1,51 @@
 E_GlobalSkips = {
     
     % [E GlobalSkips measure 200]                                        %! SM4
-%@% \once \override TextSpanner.bound-details.left.text =                %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@% \markup {                                                            %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%     \fontsize                                                        %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%         #-6                                                          %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%         \general-align                                               %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%             #Y                                                       %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%             #DOWN                                                    %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%             \note-by-number                                          %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%                 #2                                                   %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%                 #0                                                   %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%                 #1                                                   %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%     \upright                                                         %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%         {                                                            %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%             =                                                        %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%             108                                                      %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%         }                                                            %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%     \hspace                                                          %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%         #1                                                           %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%     }                                                                %! SM27:REDUNDANT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
+%@% \once \override TextSpanner.bound-details.left.text =                %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@% \markup {                                                            %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%     \fontsize                                                        %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%         #-6                                                          %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%         \general-align                                               %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%             #Y                                                       %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%             #DOWN                                                    %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%             \note-by-number                                          %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%                 #2                                                   %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%                 #0                                                   %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%                 #1                                                   %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%     \upright                                                         %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%         {                                                            %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%             =                                                        %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%             108                                                      %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%         }                                                            %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%     \hspace                                                          %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%         #1                                                           %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%     }                                                                %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.Y-extent = ##f                           %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
-    \once \override TextSpanner.bound-details.left.text =                %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-    \markup {                                                            %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-        \with-color                                                      %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-            #(x11-color 'DeepPink1)                                      %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-            {                                                            %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                \fontsize                                                %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                    #-6                                                  %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                    \general-align                                       %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                        #Y                                               %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                        #DOWN                                            %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                        \note-by-number                                  %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                            #2                                           %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                            #0                                           %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                            #1                                           %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                \upright                                                 %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                    {                                                    %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                        =                                                %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                        108                                              %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                    }                                                    %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                \hspace                                                  %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                    #1                                                   %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-            }                                                            %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-        }                                                                %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left.text =                %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+    \markup {                                                            %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+        \with-color                                                      %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+            #(x11-color 'green4)                                         %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+            {                                                            %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                \fontsize                                                %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                    #-6                                                  %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                    \general-align                                       %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                        #Y                                               %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                        #DOWN                                            %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                        \note-by-number                                  %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                            #2                                           %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                            #0                                           %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                            #1                                           %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                \upright                                                 %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                    {                                                    %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                        =                                                %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                        108                                              %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                    }                                                    %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                \hspace                                                  %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                    #1                                                   %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+            }                                                            %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+        }                                                                %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.right-broken.padding = 0   %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.right-broken.text = ##f    %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.right.padding = 0          %! SM29:METRONOME_MARK_SPANNER
@@ -1923,7 +1923,7 @@ E_OboeMusicVoice = {
         \set OboeMusicStaff.forceClef = ##t                      %! SM8:REAPPLIED_CLEF:SM33:SM37
         \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:SM37
         \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        g''16
+        bf''16
         \p                                                       %! SM8:EXPLICIT_DYNAMIC:IC
         [
         ^ \markup {
@@ -1933,7 +1933,7 @@ E_OboeMusicVoice = {
                         {                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                             \with-color                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                                 #(x11-color 'green4)             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                                (“ClarinetInEFlat”)              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                                (“Oboe”)                         %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                         }                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                     \line                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
                         {                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:SM37
@@ -1967,7 +1967,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        g''16
+        bf''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -1983,7 +1983,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        g''16
+        bf''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -1999,7 +1999,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        g''16
+        bf''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2015,7 +2015,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        fs''8.
+        a''8.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
@@ -2024,7 +2024,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        fs''8.
+        a''8.
         ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2043,7 +2043,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        fs'16.
+        a'16.
         [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2060,7 +2060,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        fs''8
+        a''8
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2071,9 +2071,9 @@ E_OboeMusicVoice = {
                         1
             }
         
-        ds''32
+        fs''32
         
-        d'''32
+        f'''32
         ]
         ^ \markup {
             \override
@@ -2087,7 +2087,7 @@ E_OboeMusicVoice = {
     \times 3/5 {
         
         % [E OboeMusicVoice measure 201]                         %! SM4
-        fs''8
+        a''8
         [
         ^ \markup {
             \override
@@ -2097,7 +2097,7 @@ E_OboeMusicVoice = {
                         2
             }
         
-        gs''8
+        b''8
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2111,7 +2111,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        g''8
+        bf''8
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
@@ -2120,7 +2120,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        g''8
+        bf''8
         ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2137,7 +2137,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        g''4.
+        bf''4.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2154,7 +2154,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        g''4.
+        bf''4.
         \stopTrillSpan                                           %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2175,9 +2175,9 @@ E_OboeMusicVoice = {
     r2
     \times 8/9 {
         
-        f''8.
+        af''8.
         
-        e''4
+        g''4
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2187,7 +2187,7 @@ E_OboeMusicVoice = {
             }
         \startTrillSpan                                          %! SC
         
-        d'''16
+        f'''16
         \stopTrillSpan                                           %! SC
         [
         ^ \markup {
@@ -2203,7 +2203,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        cs'''16
+        e'''16
         ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2222,7 +2222,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        cs'''16
+        e'''16
         [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2232,7 +2232,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        cs'''16
+        e'''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2248,7 +2248,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        cs'''16
+        e'''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2264,7 +2264,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        c'''16
+        ef'''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2280,7 +2280,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        c''8.
+        ef''8.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
@@ -2289,7 +2289,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        c''8.
+        ef''8.
         ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2309,7 +2309,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        c''4.
+        ef''4.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2321,7 +2321,7 @@ E_OboeMusicVoice = {
             }
         \startTrillSpan                                          %! SC
         
-        g'2
+        bf'2
         \stopTrillSpan                                           %! SC
         ^ \markup {
             \override
@@ -2332,11 +2332,11 @@ E_OboeMusicVoice = {
             }
         \startTrillSpan                                          %! SC
         
-        fs''8
+        a''8
         \stopTrillSpan                                           %! SC
         [
         
-        ds''8
+        fs''8
         ]
         ^ \markup {
             \override
@@ -2349,7 +2349,7 @@ E_OboeMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
         
-        e''16
+        g''16
         [
         ^ \markup {
             \override
@@ -2364,7 +2364,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        fs''16
+        a''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2380,7 +2380,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        fs''16
+        a''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
@@ -2389,7 +2389,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        fs''16
+        a''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2405,7 +2405,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        fs'8.
+        a'8.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2416,7 +2416,7 @@ E_OboeMusicVoice = {
                         2
             }
         
-        gs''8.
+        b''8.
         ]
         ^ \markup {
             \override
@@ -2434,10 +2434,10 @@ E_OboeMusicVoice = {
     \times 8/9 {
         
         % [E OboeMusicVoice measure 205]                         %! SM4
-        g''16.
+        bf''16.
         [
         
-        f''8
+        af''8
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2451,7 +2451,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        as''32
+        cs'''32
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2467,7 +2467,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        as'32
+        cs''32
         ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2486,7 +2486,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        as'64
+        cs''64
         [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2496,7 +2496,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        as'64
+        cs''64
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2512,7 +2512,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        a'64
+        c''64
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2528,7 +2528,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        a'64
+        c''64
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2544,7 +2544,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        a'32.
+        c''32.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
@@ -2553,7 +2553,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        a''32.
+        c'''32.
         ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2567,7 +2567,7 @@ E_OboeMusicVoice = {
     }
     \times 8/9 {
         
-        gs''16.
+        b''16.
         [
         ^ \markup {
             \override
@@ -2577,7 +2577,7 @@ E_OboeMusicVoice = {
                         2
             }
         
-        e''8
+        g''8
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2586,9 +2586,9 @@ E_OboeMusicVoice = {
                         1
             }
         
-        cs'''32
+        e'''32
         
-        f''32
+        af''32
         ]
         ^ \markup {
             \override
@@ -2607,7 +2607,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        e''8
+        g''8
         [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2624,7 +2624,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        e''8
+        g''8
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2640,7 +2640,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        e'8
+        g'8
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
@@ -2649,7 +2649,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        e'8
+        g'8
         ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2661,7 +2661,7 @@ E_OboeMusicVoice = {
                         1
             }
         
-        fs'4.
+        a'4.
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2671,7 +2671,7 @@ E_OboeMusicVoice = {
             }
         \startTrillSpan                                          %! SC
         
-        gs'4.
+        b'4.
         \stopTrillSpan                                           %! SC
         ^ \markup {
             \override
@@ -2690,14 +2690,14 @@ E_OboeMusicVoice = {
     r2.
     \times 2/3 {
         
-        g''8.
+        bf''8.
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        cs'4
+        e'4
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2714,7 +2714,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        cs'16
+        e'16
         \stopTrillSpan                                           %! SC
         [
         - \tweak color #red                                      %! SM14
@@ -2732,7 +2732,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        cs'16
+        e'16
         ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2753,7 +2753,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        cs'16
+        e'16
         [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2763,7 +2763,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        as'16
+        cs''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2779,7 +2779,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        as'16
+        cs''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2795,7 +2795,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        as''16
+        cs'''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2811,11 +2811,11 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        as''8.
+        cs'''8.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        a''8.
+        c'''8.
         ]
         ^ \markup {
             \override
@@ -2827,7 +2827,7 @@ E_OboeMusicVoice = {
     }
     \times 8/9 {
         
-        gs''16.
+        b''16.
         [
         ^ \markup {
             \override
@@ -2837,7 +2837,7 @@ E_OboeMusicVoice = {
                         2
             }
         
-        e''8
+        g''8
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2846,14 +2846,14 @@ E_OboeMusicVoice = {
                         1
             }
         
-        ds''32
+        fs''32
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        d'32
+        f'32
         ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2874,7 +2874,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        d'16
+        f'16
         [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2891,7 +2891,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        d'16
+        f'16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2907,11 +2907,11 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        d'16
+        f'16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        cs'''16
+        e'''16
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2920,7 +2920,7 @@ E_OboeMusicVoice = {
                         1
             }
         
-        c'''8.
+        ef'''8.
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2929,7 +2929,7 @@ E_OboeMusicVoice = {
                         2
             }
         
-        g''8.
+        bf''8.
         ]
         ^ \markup {
             \override
@@ -2955,7 +2955,7 @@ E_OboeMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        a4
+        c'4
         \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2965,7 +2965,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        a16
+        c'16
         [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2982,7 +2982,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        a16
+        c'16
         ]
         \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
@@ -3000,7 +3000,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        gtqs'2.
+        bqs'2.
         ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3021,7 +3021,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        gtqs'2.
+        bqs'2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
@@ -3030,7 +3030,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        gtqs'2
+        bqs'2
         ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3044,12 +3044,12 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        gtqs'1
+        bqs'1
         \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        fs'2.
+        a'2.
         ~
         ^ \markup {
             \override
@@ -3063,7 +3063,7 @@ E_OboeMusicVoice = {
     \times 3/5 {
         
         % [E OboeMusicVoice measure 214]                         %! SM4
-        fs'2.
+        a'2.
         
         r2
     }
@@ -3078,7 +3078,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        fs'4
+        a'4
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -3094,7 +3094,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        fs'16
+        a'16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -3110,7 +3110,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        fs'2.
+        a'2.
         ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3123,7 +3123,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        fs'2.
+        a'2.
         \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3133,7 +3133,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        eqs'2
+        gqs'2
         ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3154,7 +3154,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        eqs'2..
+        gqs'2..
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
@@ -3163,7 +3163,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        eqs'8
+        gqs'8
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -3179,7 +3179,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        eqs'4.
+        gqs'4.
         ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3200,7 +3200,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        eqs'2.
+        gqs'2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
@@ -3217,7 +3217,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        dqs'8
+        fqs'8
         [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3227,7 +3227,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        dqs'32
+        fqs'32
         \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3244,7 +3244,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        cqs'32
+        eqf'32
         ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3261,7 +3261,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        cqs'4.
+        eqf'4.
         ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3282,7 +3282,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        cqs'2.
+        eqf'2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
@@ -3291,7 +3291,7 @@ E_OboeMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        cqs'2
+        eqf'2
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         \revert Beam.positions                                   %! OC2
@@ -3325,25 +3325,25 @@ E_OboeMusicVoice = {
         \override DynamicLineSpanner.staff-padding = #'4         %! OC1
         \override TupletBracket.staff-padding = #2               %! OC1
         \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        fs''8.
+        a''8.
         \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         \startTrillSpan                                          %! SC
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8
+        a''8
         ~
         \startTrillSpan                                          %! SC
     }
     \times 2/3 {
         
-        fs''16
+        a''16
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
@@ -3351,24 +3351,24 @@ E_OboeMusicVoice = {
     }
     \times 2/3 {
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8
+        a''8
         ~
         \startTrillSpan                                          %! SC
     }
     \times 2/3 {
         
-        fs''16
+        a''16
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
@@ -3377,24 +3377,24 @@ E_OboeMusicVoice = {
     \times 2/3 {
         
         % [E OboeMusicVoice measure 229]                         %! SM4
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8
+        a''8
         ~
         \startTrillSpan                                          %! SC
     }
     \times 2/3 {
         
-        fs''16
+        a''16
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
@@ -3402,24 +3402,24 @@ E_OboeMusicVoice = {
     }
     \times 2/3 {
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8
+        a''8
         ~
         \startTrillSpan                                          %! SC
     }
     \times 2/3 {
         
-        fs''16
+        a''16
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
@@ -3427,25 +3427,25 @@ E_OboeMusicVoice = {
     }
     \times 2/3 {
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8
+        a''8
         ~
         \startTrillSpan                                          %! SC
     }
     \times 2/3 {
         
         % [E OboeMusicVoice measure 230]                         %! SM4
-        fs''16
+        a''16
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
@@ -3453,24 +3453,24 @@ E_OboeMusicVoice = {
     }
     \times 2/3 {
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8
+        a''8
         ~
         \startTrillSpan                                          %! SC
     }
     \times 2/3 {
         
-        fs''16
+        a''16
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
@@ -3478,25 +3478,25 @@ E_OboeMusicVoice = {
     }
     \times 2/3 {
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8
+        a''8
         ~
         \startTrillSpan                                          %! SC
     }
     \times 2/3 {
         
         % [E OboeMusicVoice measure 231]                         %! SM4
-        fs''16
+        a''16
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
@@ -3504,24 +3504,24 @@ E_OboeMusicVoice = {
     }
     \times 2/3 {
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8
+        a''8
         ~
         \startTrillSpan                                          %! SC
     }
     \times 2/3 {
         
-        fs''16
+        a''16
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
@@ -3529,24 +3529,24 @@ E_OboeMusicVoice = {
     }
     \times 2/3 {
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8
+        a''8
         ~
         \startTrillSpan                                          %! SC
     }
     \times 2/3 {
         
-        fs''16
+        a''16
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
@@ -3554,24 +3554,24 @@ E_OboeMusicVoice = {
     }
     \times 2/3 {
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8
+        a''8
         ~
         \startTrillSpan                                          %! SC
     }
     \times 2/3 {
         
-        fs''16
+        a''16
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
@@ -3579,25 +3579,25 @@ E_OboeMusicVoice = {
     }
     \times 2/3 {
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         % [E OboeMusicVoice measure 233]                         %! SM4
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8
+        a''8
         ~
         \startTrillSpan                                          %! SC
     }
     \times 2/3 {
         
-        fs''16
+        a''16
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
@@ -3605,13 +3605,13 @@ E_OboeMusicVoice = {
     }
     \times 2/3 {
         
-        fs''8.
+        a''8.
         \startTrillSpan                                          %! SC
         
         r16
         \stopTrillSpan                                           %! SC
         
-        fs''8
+        a''8
         \startTrillSpan                                          %! SC
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
@@ -3788,11 +3788,6 @@ E_ClarinetMusicVoice = {
     
     % [E ClarinetMusicVoice measure 211]                         %! SM4
     r1
-    ^ \markup {                                                  %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-        \with-color                                              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-            #(x11-color 'DeepPink1)                              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-            (“ClarinetInEFlat”)                                  %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-        }                                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
@@ -4078,16 +4073,70 @@ E_ClarinetMusicVoice = {
     R1 * 9/8
     
     % [E ClarinetMusicVoice measure 222]                         %! SM4
+    \set Staff.instrumentName =                                  %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+    \markup {                                                    %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+        \hcenter-in                                              %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+            #16                                                  %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+            \center-column                                       %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+                {                                                %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+                    B.                                           %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+                    cl.                                          %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+                }                                                %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+        }                                                        %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+    \set Staff.shortInstrumentName =                             %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+    \markup {                                                    %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+        \hcenter-in                                              %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+            #16                                                  %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+            \center-column                                       %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+                {                                                %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+                    B.                                           %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+                    cl.                                          %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+                }                                                %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+        }                                                        %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
     \override Stem.direction = #up                               %! OC1
     \override DynamicLineSpanner.staff-padding = #'7             %! OC1
+    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'blue) %! SM6:EXPLICIT_MARGIN_MARKUP_COLOR:IC:-PARTS
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     c4..
     \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
-    ^ \markup {                                                  %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-        \with-color                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-            #(x11-color 'blue)                                   %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-            (“BassClarinet”)                                     %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-        }                                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+    ^ \markup {
+        \column
+            {
+                \line                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                    {                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                        \with-color                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                            #(x11-color 'blue)                   %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                            (“BassClarinet”)                     %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                    }                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                \line                                            %! SM11:EXPLICIT_MARGIN_MARKUP_ALERT:IC:-PARTS
+                    {                                            %! SM11:EXPLICIT_MARGIN_MARKUP_ALERT:IC:-PARTS
+                        \with-color                              %! SM11:EXPLICIT_MARGIN_MARKUP_ALERT:IC:-PARTS
+                            #(x11-color 'blue)                   %! SM11:EXPLICIT_MARGIN_MARKUP_ALERT:IC:-PARTS
+                            "[“B. cl.”]"                         %! SM11:EXPLICIT_MARGIN_MARKUP_ALERT:IC:-PARTS
+                    }                                            %! SM11:EXPLICIT_MARGIN_MARKUP_ALERT:IC:-PARTS
+            }
+        }
+    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! SM6:REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR:IC:-PARTS
+    \set ClarinetMusicStaff.instrumentName =                     %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+    \markup {                                                    %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+        \hcenter-in                                              %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+            #16                                                  %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+            \center-column                                       %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+                {                                                %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+                    B.                                           %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+                    cl.                                          %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+                }                                                %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+        }                                                        %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+    \set ClarinetMusicStaff.shortInstrumentName =                %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+    \markup {                                                    %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+        \hcenter-in                                              %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+            #16                                                  %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+            \center-column                                       %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+                {                                                %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+                    B.                                           %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+                    cl.                                          %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+                }                                                %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+        }                                                        %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
     
     r16
     
@@ -4310,17 +4359,7 @@ E_PianoMusicVoice = {
     
     % [E PianoMusicVoice measure 208]                            %! SM4
     \override DynamicLineSpanner.staff-padding = #'4             %! OC1
-    \clef "bass"                                                 %! SM8:REDUNDANT_CLEF:IC
-    \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_CLEF_COLOR:IC
-%@% \override PianoMusicStaff.Clef.color = ##f                   %! SM7:REDUNDANT_CLEF_COLOR_CANCELLATION:IC
-    \set PianoMusicStaff.forceClef = ##t                         %! SM8:REDUNDANT_CLEF:SM33:IC
     r8
-    ^ \markup {                                                  %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-        \with-color                                              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-            #(x11-color 'DeepPink1)                              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-            (“Piano”)                                            %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-        }                                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-    \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! SM6:REDUNDANT_CLEF_REDRAW_COLOR:IC
     
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -5194,13 +5233,13 @@ E_PercussionMusicVoice = {
         \stopStaff                                               %! SM8:REAPPLIED_STAFF_LINES:SM37
         \once \override PercussionMusicStaff.StaffSymbol.line-count = 1 %! SM8:REAPPLIED_STAFF_LINES:SM37
         \startStaff                                              %! SM8:REAPPLIED_STAFF_LINES:SM37
-        \clef "percussion"                                       %! SM8:REDUNDANT_CLEF:IC
+        \clef "percussion"                                       %! SM8:REAPPLIED_CLEF:SM37
+        \once \override PercussionMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+    %@% \override PercussionMusicStaff.Clef.color = ##f          %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+        \set PercussionMusicStaff.forceClef = ##t                %! SM8:REAPPLIED_CLEF:SM33:SM37
         \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:SM37
         \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
         \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-        \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_CLEF_COLOR:IC
-    %@% \override PercussionMusicStaff.Clef.color = ##f          %! SM7:REDUNDANT_CLEF_COLOR_CANCELLATION:IC
-        \set PercussionMusicStaff.forceClef = ##t                %! SM8:REDUNDANT_CLEF:SM33:IC
         \makeBlue                                                %! SM24
         c2
         :32                                                      %! IC
@@ -5231,6 +5270,7 @@ E_PercussionMusicVoice = {
                         }                                        %! IC
                 }
             }
+        \override PercussionMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:SM37
         \set PercussionMusicStaff.instrumentName =               %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
         \markup {                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
@@ -5244,7 +5284,6 @@ E_PercussionMusicVoice = {
                 #16                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
                 Perc.                                            %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
             }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-        \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! SM6:REDUNDANT_CLEF_REDRAW_COLOR:IC
         
         \makeBlue                                                %! SM24
         c2

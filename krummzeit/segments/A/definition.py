@@ -291,14 +291,14 @@ maker(
     baca.scope('PianoMusicVoice', (16, 19)),
     baca.clef('bass'),
     baca.instrument(krummzeit.instruments['Piano']),
+    krummzeit.incise_attacks(),
     krummzeit.margin_markup('Pf.'),
-    krummzeit.piano_incise_clusters()
     )
 
 maker(
     baca.scope('PercussionMusicVoice', (16, 20)),
+    krummzeit.incise_attacks(),
     krummzeit.markup.tam_tam(),
-    krummzeit.piano_incise_clusters()
     )
 
 ### vn, va, vc [B17-19] & [B20-22] pointillism ###

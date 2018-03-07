@@ -5535,7 +5535,6 @@ I_ViolinMusicVoice = {
         \stopStaff                                               %! SM8:REAPPLIED_STAFF_LINES:SM37
         \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! SM8:REAPPLIED_STAFF_LINES:SM37
         \startStaff                                              %! SM8:REAPPLIED_STAFF_LINES:SM37
-        \override Beam.positions = #'(-5 . -5)                   %! OC1
         \override DynamicLineSpanner.staff-padding = #'8         %! OC1
         \override TupletBracket.staff-padding = #4               %! OC1
         \once \override Accidental.color = #red
@@ -5959,10 +5958,6 @@ I_ViolinMusicVoice = {
     R1 * 5/8
     
     % [I ViolinMusicVoice measure 295]                           %! SM4
-    \clef "treble"                                               %! SM8:REDUNDANT_CLEF:IC
-    \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_CLEF_COLOR:IC
-%@% \override ViolinMusicStaff.Clef.color = ##f                  %! SM7:REDUNDANT_CLEF_COLOR_CANCELLATION:IC
-    \set ViolinMusicStaff.forceClef = ##t                        %! SM8:REDUNDANT_CLEF:SM33:IC
     \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     g''4
     -\downbow                                                    %! IC
@@ -5973,7 +5968,6 @@ I_ViolinMusicVoice = {
             \upright                                             %! IC
                 "directly on bridge: full bow each stroke"       %! IC
         }                                                        %! IC
-    \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! SM6:REDUNDANT_CLEF_REDRAW_COLOR:IC
     
     cs''4
     -\upbow                                                      %! IC
@@ -6096,7 +6090,6 @@ I_ViolinMusicVoice = {
     
     % [I ViolinMusicVoice measure 309]                           %! SM4
     R1 * 3/4
-    \revert Beam.positions                                       %! OC2
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     \revert TupletBracket.staff-padding                          %! OC2
     
@@ -6173,7 +6166,6 @@ I_ViolaMusicVoice = {
                 #16                                              %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
                 Va.                                              %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
             }                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-        \override Beam.positions = #'(-5 . -5)                   %! OC1
         \override DynamicLineSpanner.staff-padding = #'8         %! OC1
         \override TupletBracket.staff-padding = #4               %! OC1
         \once \override Accidental.color = #red
@@ -6316,15 +6308,281 @@ I_ViolaMusicVoice = {
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
+    \times 2/3 {
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        [
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        ]
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+    }
+    \times 2/3 {
+        
+        % [I ViolaMusicVoice measure 292]                        %! SM4
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        [
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        ]
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        [
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        ]
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        [
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        ]
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        [
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        ]
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        [
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        ]
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        [
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        ]
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        [
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        a8
+        :32                                                      %! IC
+        ]
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+    }
     
-    r4
-    
-    % [I ViolaMusicVoice measure 292]                            %! SM4
-    R1 * 9/8
-    
-    % [I ViolaMusicVoice measure 293]                            %! SM4
-    R1 * 3/4
-    \revert Beam.positions                                       %! OC2
+    r8
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     \revert TupletBracket.staff-padding                          %! OC2
     
@@ -6333,10 +6591,10 @@ I_ViolaMusicVoice = {
     
     % [I ViolaMusicVoice measure 295]                            %! SM4
     \clef "treble"                                               %! SM8:EXPLICIT_CLEF:IC
+    \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
 %@% \override ViolaMusicStaff.Clef.color = ##f                   %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set ViolaMusicStaff.forceClef = ##t                         %! SM8:EXPLICIT_CLEF:SM33:IC
-    \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     ef''4
     -\downbow                                                    %! IC
     \effort_f                                                    %! SM8:EXPLICIT_DYNAMIC:IC
@@ -6682,24 +6940,291 @@ I_CelloMusicVoice = {
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
+    \times 2/3 {
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        [
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        ]
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+    }
+    \times 2/3 {
+        
+        % [I CelloMusicVoice measure 292]                        %! SM4
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        [
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        ]
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        [
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        ]
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        [
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        ]
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        [
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        ]
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        [
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        ]
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        [
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        ]
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        [
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+        
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
+        eqf,8
+        :32                                                      %! IC
+        ]
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
+    }
     
-    r4
-    
-    % [I CelloMusicVoice measure 292]                            %! SM4
-    R1 * 9/8
-    
-    % [I CelloMusicVoice measure 293]                            %! SM4
-    R1 * 3/4
+    r8
     
     % [I CelloMusicVoice measure 294]                            %! SM4
     R1 * 5/8
     
     % [I CelloMusicVoice measure 295]                            %! SM4
     \clef "treble"                                               %! SM8:EXPLICIT_CLEF:IC
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
 %@% \override CelloMusicStaff.Clef.color = ##f                   %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set CelloMusicStaff.forceClef = ##t                         %! SM8:EXPLICIT_CLEF:SM33:IC
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     d''4
     -\downbow                                                    %! IC
     \effort_f                                                    %! SM8:EXPLICIT_DYNAMIC:IC

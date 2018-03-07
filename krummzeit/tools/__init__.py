@@ -5,6 +5,7 @@ from .closing_pizzicati import closing_pizzicati
 from .clusters import clusters
 from .color_fingerings import color_fingerings
 from .displacement import displacement
+from .e_flat_clarinet_markup import e_flat_clarinet_markup
 from .glissando_rhythm import glissando_rhythm
 from .hypermeter_tuplets import hypermeter_tuplets
 from .instrument import instrument

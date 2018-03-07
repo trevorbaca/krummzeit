@@ -4523,6 +4523,27 @@ A_ClarinetMusicVoice = {
     ^ \markup {
         \column
             {
+                \line                                            %! IC
+                    {                                            %! IC
+                        \whiteout                                %! IC
+                            \upright                             %! IC
+                                \override                        %! IC
+                                    #'(box-padding . 0.5)        %! IC
+                                    \box                         %! IC
+                                        \line                    %! IC
+                                            {                    %! IC
+                                                \concat          %! IC
+                                                    {            %! IC
+                                                        E        %! IC
+                                                        \raise   %! IC
+                                                            #0.5 %! IC
+                                                            \scale %! IC
+                                                                #'(0.65 . 0.65) %! IC
+                                                                \flat %! IC
+                                                    }            %! IC
+                                                clarinet         %! IC
+                                            }                    %! IC
+                    }                                            %! IC
                 \line                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                     {                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                         \with-color                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC

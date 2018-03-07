@@ -63,6 +63,7 @@ maker(
 
 maker(
     baca.scope('PianoMusicVoice', 1),
+    baca.clef('bass'),
     baca.suite([
         krummzeit.margin_markup('Pf.'),
         baca.start_markup('Piano', hcenter_in=16),
@@ -142,11 +143,6 @@ maker(
     )
 
 maker(
-    baca.scope('PianoMusicVoice', 1),
-    baca.clef('bass'),
-    )
-
-maker(
     baca.scope('PianoMusicVoice', 3),
     baca.dynamic('fff'),
     # NOTE: clusters() must precede markup() for markup to appear:
@@ -162,6 +158,11 @@ maker(
     baca.make_repeat_tied_notes(),
     baca.pitches('C#5'),
     baca.stem_tremolo(),
+    )
+
+maker(
+    baca.scope('PianoMusicVoice', 9),
+    baca.markup.boxed('to harpsichord'),
     )
 
 maker(

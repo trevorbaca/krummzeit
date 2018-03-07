@@ -5093,16 +5093,20 @@ I_PercussionMusicVoice = {
     R1 * 9/8
     
     % [I PercussionMusicVoice measure 293]                       %! SM4
+    \stopStaff                                                   %! SM8:EXPLICIT_STAFF_LINES:IC
+    \once \override PercussionMusicStaff.StaffSymbol.line-count = 1 %! SM8:EXPLICIT_STAFF_LINES:IC
+    \startStaff                                                  %! SM8:EXPLICIT_STAFF_LINES:IC
     \clef "percussion"                                           %! SM8:EXPLICIT_CLEF:IC
     \once \override PercussionMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
 %@% \override PercussionMusicStaff.Clef.color = ##f              %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set PercussionMusicStaff.forceClef = ##t                    %! SM8:EXPLICIT_CLEF:SM33:IC
+    \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
     r16
+    \override PercussionMusicStaff.BarLine.bar-extent = #'(0 . 0) %! OC1:-PARTS
     \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    \makeBlue                                                    %! SM24
-    c16
+    c'16
     -\laissezVibrer                                              %! IC
     \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                                  %! IC
@@ -5126,8 +5130,7 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 295]                       %! SM4
     r2..
     
-    \makeBlue                                                    %! SM24
-    c16
+    c'16
     -\laissezVibrer                                              %! IC
     
     r8.
@@ -5135,8 +5138,7 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 296]                       %! SM4
     r16
     
-    \makeBlue                                                    %! SM24
-    c16
+    c'16
     -\laissezVibrer                                              %! IC
     
     r8
@@ -5146,8 +5148,7 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 297]                       %! SM4
     r16
     
-    \makeBlue                                                    %! SM24
-    c16
+    c'16
     -\laissezVibrer                                              %! IC
     
     r8
@@ -5162,8 +5163,7 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 299]                       %! SM4
     r2.
     
-    \makeBlue                                                    %! SM24
-    c16
+    c'16
     -\laissezVibrer                                              %! IC
     
     r8.
@@ -5171,8 +5171,7 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 300]                       %! SM4
     r16
     
-    \makeBlue                                                    %! SM24
-    c16
+    c'16
     -\laissezVibrer                                              %! IC
     
     r8
@@ -5182,8 +5181,7 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 301]                       %! SM4
     r16
     
-    \makeBlue                                                    %! SM24
-    c16
+    c'16
     -\laissezVibrer                                              %! IC
     
     r8
@@ -5196,8 +5194,7 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 303]                       %! SM4
     r2.
     
-    \makeBlue                                                    %! SM24
-    c16
+    c'16
     -\laissezVibrer                                              %! IC
     
     r8.
@@ -5205,8 +5202,7 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 304]                       %! SM4
     r16
     
-    \makeBlue                                                    %! SM24
-    c16
+    c'16
     -\laissezVibrer                                              %! IC
     
     r8
@@ -5216,8 +5212,7 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 305]                       %! SM4
     r16
     
-    \makeBlue                                                    %! SM24
-    c16
+    c'16
     -\laissezVibrer                                              %! IC
     
     r8
@@ -5230,8 +5225,7 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 307]                       %! SM4
     r2
     
-    \makeBlue                                                    %! SM24
-    c16
+    c'16
     -\laissezVibrer                                              %! IC
     
     r8.
@@ -5239,8 +5233,7 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 308]                       %! SM4
     r16
     
-    \makeBlue                                                    %! SM24
-    c16
+    c'16
     -\laissezVibrer                                              %! IC
     
     r8
@@ -5250,8 +5243,7 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 309]                       %! SM4
     r16
     
-    \makeBlue                                                    %! SM24
-    c16
+    c'16
     -\laissezVibrer                                              %! IC
     
     r8
@@ -5264,8 +5256,7 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 311]                       %! SM4
     r2
     
-    \makeBlue                                                    %! SM24
-    c16
+    c'16
     -\laissezVibrer                                              %! IC
     
     r8.
@@ -5273,13 +5264,14 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 312]                       %! SM4
     r16
     
-    \makeBlue                                                    %! SM24
-    c16
+    c'16
     -\laissezVibrer                                              %! IC
     
     r8
     
     r1
+    \revert PercussionMusicStaff.BarLine.bar-extent              %! OC2:-PARTS
+    \once \override PercussionMusicStaff.BarLine.bar-extent = #'(0 . 0) %! OC1:-PARTS
     
     % [I PercussionMusicVoice measure 313]                       %! SM4
     R1 * 1/4

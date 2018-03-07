@@ -89,15 +89,16 @@ maker(
         ),
     )
 
-### harpsichord clusters (11.1) ###
+# harpsichord (11.1)
 
 maker(
     baca.scope('PianoMusicVoice', (3, 4)),
     baca.instrument(krummzeit.instruments['Harpsichord']),
+    krummzeit.clusters('harpsichord'),
     krummzeit.opening_triplets(),
     )
 
-### vn, va, vc white OB bowing (3.5) ###
+# vn, va, vc (3.5)
 
 maker(
     baca.scopes(
@@ -108,27 +109,19 @@ maker(
     krummzeit.right_remainder_quarters(),
     )
 
-### tam-tam ###
+# tam-tam
 
 maker(
     baca.scope('PercussionMusicVoice', (3, 15)),
+    baca.not_parts(baca.bar_extent_zero()),
     baca.clef('percussion'),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.IncisedRhythmMaker(
-            incise_specifier=rhythmos.InciseSpecifier(
-                prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],
-                prefix_counts=[3, 1, 1, 3],
-                suffix_talea=[0, 0, 1, -3, 0],
-                suffix_counts=[1, 1, 2, 1],
-                talea_denominator=16,
-                fill_with_notes=False,
-                ),
-            ),
-        ),
+    baca.staff_lines(1),
+    baca.staff_position(0),
+    krummzeit.incise_attacks(),
     krummzeit.markup.tam_tam(),
     )
 
-# pf (8.1) clusters
+# pf (8.1)
 
 maker(
     baca.scope('PianoMusicVoice', (8, 15)),
@@ -185,37 +178,33 @@ maker(
     )
 
 maker(
-    baca.make_scopes(['PianoMusicVoice', 'PercussionMusicVoice'], [1]),
-    baca.pitch('F#6'),
-    )
-
-maker(
-    baca.make_scopes(['PianoMusicVoice', 'PercussionMusicVoice'], [1]),
+    baca.scopes(
+        ('PianoMusicVoice', 1),
+        ('PercussionMusicVoice', 1),
+        ),
     baca.dynamic('fff'),
+    baca.pitch('F#6'),
     baca.stem_tremolo(),
     )
 
 maker(
     baca.scope('ViolinMusicVoice', (1, 3)),
+    baca.dynamic('fff'),
     baca.pitch('Eb5'),
+    baca.stem_tremolo(),
     )
 
 maker(
     baca.scope('ViolaMusicVoice', (1, 3)),
+    baca.dynamic('fff'),
     baca.pitch('A3'),
+    baca.stem_tremolo(),
     )
 
 maker(
     baca.scope('CelloMusicVoice', (1, 3)),
-    baca.pitch('E~2'),
-    )
-
-maker(
-    baca.make_scopes([
-        'ViolinMusicVoice', 'ViolaMusicVoice', 'CelloMusicVoice'],
-        [(1, 3)],
-        ),
     baca.dynamic('fff'),
+    baca.pitch('E~2'),
     baca.stem_tremolo(),
     )
 
@@ -227,7 +216,7 @@ maker(
     baca.laissez_vibrer(),
     )
 
-# (3.5) OB bowing
+# (3.5) OB
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
 pcs = pcs.transpose(11)
@@ -241,9 +230,10 @@ maker(
     )
 
 maker(
-    baca.make_scopes([
-        'ViolinMusicVoice', 'ViolaMusicVoice', 'CelloMusicVoice'],
-        [(5, 9)],
+    baca.scopes(
+        ('ViolinMusicVoice', (5, 9)),
+        ('ViolaMusicVoice', (5, 9)),
+        ('CelloMusicVoice', (5, 9)),
         ),
     baca.map(baca.glissando(), baca.runs()),
     baca.alternate_bow_strokes(),
@@ -270,13 +260,6 @@ maker(
         ('CelloMusicVoice', (5, 9)),
         ),
     krummzeit.register_narrow(5, 3),
-    )
-
-# harpsichord
-
-maker(
-    baca.scope('PianoMusicVoice', (3, 4)),
-    krummzeit.clusters('harpsichord'),
     )
 
 # bcl
@@ -314,7 +297,7 @@ maker(
     baca.hairpin('fff > ppp', selector=baca.leaves()),
     )
 
-# (9.1) vn, va, vc points
+# vn, va, vc, (9.1)
 
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs.rotate(-43).retrograde().transpose(4).invert()

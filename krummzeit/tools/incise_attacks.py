@@ -3,8 +3,8 @@ import baca
 from abjad import rhythmmakertools as rhythmos
 
 
-def piano_incise_clusters():
-    r'''Makes piano incise cluster rhythm.
+def incise_attacks():
+    r'''Makes incise attacks.
     '''
     return baca.RhythmCommand(
         rhythm_maker=rhythmos.IncisedRhythmMaker(

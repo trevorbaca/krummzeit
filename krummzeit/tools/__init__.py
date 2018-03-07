@@ -18,6 +18,7 @@ from .polyphony import polyphony
 from .prolated_quarters import prolated_quarters
 from .register_narrow import register_narrow
 from .register_wide import register_wide
+from .right_remainder_quarters import right_remainder_quarters
 from .single_cluster_piano_rhythm import single_cluster_piano_rhythm
 from .single_division_tuplets import single_division_tuplets
 from .silver_points import silver_points

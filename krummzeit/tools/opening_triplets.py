@@ -3,7 +3,10 @@ import baca
 from abjad import rhythmmakertools as rhythmos
 
 
-def opening_triplets():
+def opening_triplets(
+    division_masks=[abjad.index([0])],
+    remainder=abjad.Left,
+    ):
     r'''Makes opening triplets.
     '''
     return baca.RhythmCommand(
@@ -11,11 +14,11 @@ def opening_triplets():
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
                 durations=[(1, 4)],
-                remainder=abjad.Left,
+                remainder=remainder,
                 ),
             ),
         rhythm_maker=rhythmos.TupletRhythmMaker(
             tuplet_ratios=[(1, 1, 1)],
-            division_masks=[abjad.index([0])],
+            division_masks=division_masks,
             ),
         )

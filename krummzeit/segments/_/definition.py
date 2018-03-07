@@ -39,7 +39,6 @@ maker = baca.SegmentMaker(
     metronome_marks=krummzeit.metronome_marks,
     score_template=krummzeit.ScoreTemplate(),
     metronome_mark_measure_map=metronome_mark_measure_map,
-    metronome_mark_stem_height=1,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=13,

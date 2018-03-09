@@ -4077,21 +4077,13 @@ E_ClarinetMusicVoice = {
     \markup {                                                    %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
         \hcenter-in                                              %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
             #16                                                  %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-            \center-column                                       %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-                {                                                %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-                    B.                                           %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-                    cl.                                          %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-                }                                                %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+            "B. cl."                                             %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
         }                                                        %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
     \set Staff.shortInstrumentName =                             %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
     \markup {                                                    %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
         \hcenter-in                                              %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
             #16                                                  %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-            \center-column                                       %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-                {                                                %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-                    B.                                           %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-                    cl.                                          %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-                }                                                %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+            "B. cl."                                             %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
         }                                                        %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
     \override Stem.direction = #up                               %! OC1
     \override DynamicLineSpanner.staff-padding = #'7             %! OC1
@@ -4121,21 +4113,13 @@ E_ClarinetMusicVoice = {
     \markup {                                                    %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
         \hcenter-in                                              %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
             #16                                                  %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
-            \center-column                                       %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
-                {                                                %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
-                    B.                                           %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
-                    cl.                                          %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
-                }                                                %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+            "B. cl."                                             %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
         }                                                        %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
     \set ClarinetMusicStaff.shortInstrumentName =                %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
     \markup {                                                    %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
         \hcenter-in                                              %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
             #16                                                  %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
-            \center-column                                       %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
-                {                                                %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
-                    B.                                           %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
-                    cl.                                          %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
-                }                                                %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+            "B. cl."                                             %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
         }                                                        %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
     
     r16

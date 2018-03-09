@@ -957,31 +957,19 @@ i_ClarinetMusicVoice = {
     \markup {                                                    %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
         \hcenter-in                                              %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
             #16                                                  %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-            \center-column                                       %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-                {                                                %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-                    B.                                           %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-                    cl.                                          %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-                }                                                %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+            "B. cl."                                             %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
         }                                                        %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
     \set Staff.shortInstrumentName =                             %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
     \markup {                                                    %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
         \hcenter-in                                              %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
             #16                                                  %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-            \center-column                                       %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-                {                                                %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-                    B.                                           %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-                    cl.                                          %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-                }                                                %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
+            "B. cl."                                             %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
         }                                                        %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
     \set Staff.instrumentName =                                  %! IC:STMK
     \markup {                                                    %! IC:STMK
         \hcenter-in                                              %! IC:STMK
             #16                                                  %! IC:STMK
-            \center-column                                       %! IC:STMK
-                {                                                %! IC:STMK
-                    Bass                                         %! IC:STMK
-                    clarinet                                     %! IC:STMK
-                }                                                %! IC:STMK
+            "Bass clarinet"                                      %! IC:STMK
         }                                                        %! IC:STMK
     \clef "treble"                                               %! SM8:DEFAULT_CLEF:ST3
     \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! SM6:DEFAULT_CLEF_COLOR:ST3
@@ -1012,21 +1000,13 @@ i_ClarinetMusicVoice = {
     \markup {                                                    %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
         \hcenter-in                                              %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
             #16                                                  %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
-            \center-column                                       %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
-                {                                                %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
-                    B.                                           %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
-                    cl.                                          %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
-                }                                                %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+            "B. cl."                                             %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
         }                                                        %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
     \set ClarinetMusicStaff.shortInstrumentName =                %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
     \markup {                                                    %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
         \hcenter-in                                              %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
             #16                                                  %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
-            \center-column                                       %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
-                {                                                %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
-                    B.                                           %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
-                    cl.                                          %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
-                }                                                %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
+            "B. cl."                                             %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
         }                                                        %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
     
     % [_ ClarinetMusicVoice measure 2]                           %! SM4

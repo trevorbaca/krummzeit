@@ -2088,21 +2088,13 @@ J_ClarinetMusicVoice = {
     \markup {                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
         \hcenter-in                                              %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
             #16                                                  %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-            \center-column                                       %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                {                                                %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                    B.                                           %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                    cl.                                          %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                }                                                %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
+            "B. cl."                                             %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
         }                                                        %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
     \set Staff.shortInstrumentName =                             %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
     \markup {                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
         \hcenter-in                                              %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
             #16                                                  %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-            \center-column                                       %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                {                                                %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                    B.                                           %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                    cl.                                          %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
-                }                                                %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
+            "B. cl."                                             %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
         }                                                        %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
     \override DynamicLineSpanner.staff-padding = #'7             %! OC1
     \override Stem.direction = #up                               %! OC1
@@ -2137,21 +2129,13 @@ J_ClarinetMusicVoice = {
     \markup {                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
         \hcenter-in                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
             #16                                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-            \center-column                                       %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                {                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                    B.                                           %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                    cl.                                          %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                }                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
+            "B. cl."                                             %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
     \set ClarinetMusicStaff.shortInstrumentName =                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
     \markup {                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
         \hcenter-in                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
             #16                                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-            \center-column                                       %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                {                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                    B.                                           %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                    cl.                                          %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
-                }                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
+            "B. cl."                                             %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:SM37
     
     e2
@@ -2819,7 +2803,7 @@ J_PercussionMusicVoice = {
             Perc.                                                %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
         }                                                        %! SM8:REAPPLIED_MARGIN_MARKUP:SM37
     \stopStaff                                                   %! SM8:REAPPLIED_STAFF_LINES:SM37
-    \once \override PercussionMusicStaff.StaffSymbol.line-count = 5 %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \once \override PercussionMusicStaff.StaffSymbol.line-count = 1 %! SM8:REAPPLIED_STAFF_LINES:SM37
     \startStaff                                                  %! SM8:REAPPLIED_STAFF_LINES:SM37
     \override DynamicLineSpanner.staff-padding = #'4             %! OC1
     \once \override PercussionMusicStaff.Clef.X-extent = ##f     %! OC1:MEASURE_314:SHIFTED_CLEF

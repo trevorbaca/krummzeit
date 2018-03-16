@@ -861,12 +861,12 @@ i_OboeMusicVoice = {
             #16                                                  %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
             Ob.                                                  %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
         }                                                        %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-    \set Staff.instrumentName =                                  %! IC:STMK
-    \markup {                                                    %! IC:STMK
-        \hcenter-in                                              %! IC:STMK
-            #16                                                  %! IC:STMK
-            Oboe                                                 %! IC:STMK
-        }                                                        %! IC:STMK
+    \set Staff.instrumentName =                                  %! IC:STMK:-PARTS
+    \markup {                                                    %! IC:STMK:-PARTS
+        \hcenter-in                                              %! IC:STMK:-PARTS
+            #16                                                  %! IC:STMK:-PARTS
+            Oboe                                                 %! IC:STMK:-PARTS
+        }                                                        %! IC:STMK:-PARTS
     \clef "treble"                                               %! SM8:DEFAULT_CLEF:ST3
     \once \override OboeMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! SM6:DEFAULT_CLEF_COLOR:ST3
 %@% \override OboeMusicStaff.Clef.color = ##f                    %! SM7:DEFAULT_CLEF_COLOR_CANCELLATION:ST3
@@ -965,12 +965,12 @@ i_ClarinetMusicVoice = {
             #16                                                  %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
             "B. cl."                                             %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
         }                                                        %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-    \set Staff.instrumentName =                                  %! IC:STMK
-    \markup {                                                    %! IC:STMK
-        \hcenter-in                                              %! IC:STMK
-            #16                                                  %! IC:STMK
-            "Bass clarinet"                                      %! IC:STMK
-        }                                                        %! IC:STMK
+    \set Staff.instrumentName =                                  %! IC:STMK:-PARTS
+    \markup {                                                    %! IC:STMK:-PARTS
+        \hcenter-in                                              %! IC:STMK:-PARTS
+            #16                                                  %! IC:STMK:-PARTS
+            "Bass clarinet"                                      %! IC:STMK:-PARTS
+        }                                                        %! IC:STMK:-PARTS
     \clef "treble"                                               %! SM8:DEFAULT_CLEF:ST3
     \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! SM6:DEFAULT_CLEF_COLOR:ST3
 %@% \override ClarinetMusicStaff.Clef.color = ##f                %! SM7:DEFAULT_CLEF_COLOR_CANCELLATION:ST3
@@ -1075,12 +1075,12 @@ i_PianoMusicVoice = {
             #16                                                  %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
             Pf.                                                  %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
         }                                                        %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-    \set Staff.instrumentName =                                  %! IC:STMK
-    \markup {                                                    %! IC:STMK
-        \hcenter-in                                              %! IC:STMK
-            #16                                                  %! IC:STMK
-            Piano                                                %! IC:STMK
-        }                                                        %! IC:STMK
+    \set Staff.instrumentName =                                  %! IC:STMK:-PARTS
+    \markup {                                                    %! IC:STMK:-PARTS
+        \hcenter-in                                              %! IC:STMK:-PARTS
+            #16                                                  %! IC:STMK:-PARTS
+            Piano                                                %! IC:STMK:-PARTS
+        }                                                        %! IC:STMK:-PARTS
     \clef "bass"                                                 %! SM8:EXPLICIT_CLEF:IC
     \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
 %@% \override PianoMusicStaff.Clef.color = ##f                   %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
@@ -1225,12 +1225,12 @@ i_PercussionMusicVoice = {
             #16                                                  %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
             Perc.                                                %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
         }                                                        %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-    \set Staff.instrumentName =                                  %! IC:STMK
-    \markup {                                                    %! IC:STMK
-        \hcenter-in                                              %! IC:STMK
-            #16                                                  %! IC:STMK
-            Percussion                                           %! IC:STMK
-        }                                                        %! IC:STMK
+    \set Staff.instrumentName =                                  %! IC:STMK:-PARTS
+    \markup {                                                    %! IC:STMK:-PARTS
+        \hcenter-in                                              %! IC:STMK:-PARTS
+            #16                                                  %! IC:STMK:-PARTS
+            Percussion                                           %! IC:STMK:-PARTS
+        }                                                        %! IC:STMK:-PARTS
     \override DynamicLineSpanner.padding = #'4                   %! OC1
     \override TupletBracket.padding = #2                         %! OC1
     \clef "treble"                                               %! SM8:DEFAULT_CLEF:ST3
@@ -1419,12 +1419,12 @@ i_ViolinMusicVoice = {
             #16                                                  %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
             Vn.                                                  %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
         }                                                        %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-    \set Staff.instrumentName =                                  %! IC:STMK
-    \markup {                                                    %! IC:STMK
-        \hcenter-in                                              %! IC:STMK
-            #16                                                  %! IC:STMK
-            Violin                                               %! IC:STMK
-        }                                                        %! IC:STMK
+    \set Staff.instrumentName =                                  %! IC:STMK:-PARTS
+    \markup {                                                    %! IC:STMK:-PARTS
+        \hcenter-in                                              %! IC:STMK:-PARTS
+            #16                                                  %! IC:STMK:-PARTS
+            Violin                                               %! IC:STMK:-PARTS
+        }                                                        %! IC:STMK:-PARTS
     \override DynamicLineSpanner.padding = #'4                   %! OC1
     \override TupletBracket.padding = #2                         %! OC1
     \clef "treble"                                               %! SM8:DEFAULT_CLEF:ST3
@@ -1707,12 +1707,12 @@ i_ViolaMusicVoice = {
             #16                                                  %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
             Va.                                                  %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
         }                                                        %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-    \set Staff.instrumentName =                                  %! IC:STMK
-    \markup {                                                    %! IC:STMK
-        \hcenter-in                                              %! IC:STMK
-            #16                                                  %! IC:STMK
-            Viola                                                %! IC:STMK
-        }                                                        %! IC:STMK
+    \set Staff.instrumentName =                                  %! IC:STMK:-PARTS
+    \markup {                                                    %! IC:STMK:-PARTS
+        \hcenter-in                                              %! IC:STMK:-PARTS
+            #16                                                  %! IC:STMK:-PARTS
+            Viola                                                %! IC:STMK:-PARTS
+        }                                                        %! IC:STMK:-PARTS
     \override DynamicLineSpanner.padding = #'4                   %! OC1
     \override TupletBracket.padding = #2                         %! OC1
     \clef "alto"                                                 %! SM8:DEFAULT_CLEF:ST3
@@ -1995,12 +1995,12 @@ i_CelloMusicVoice = {
             #16                                                  %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
             Vc.                                                  %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
         }                                                        %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
-    \set Staff.instrumentName =                                  %! IC:STMK
-    \markup {                                                    %! IC:STMK
-        \hcenter-in                                              %! IC:STMK
-            #16                                                  %! IC:STMK
-            Cello                                                %! IC:STMK
-        }                                                        %! IC:STMK
+    \set Staff.instrumentName =                                  %! IC:STMK:-PARTS
+    \markup {                                                    %! IC:STMK:-PARTS
+        \hcenter-in                                              %! IC:STMK:-PARTS
+            #16                                                  %! IC:STMK:-PARTS
+            Cello                                                %! IC:STMK:-PARTS
+        }                                                        %! IC:STMK:-PARTS
     \override DynamicLineSpanner.padding = #'4                   %! OC1
     \override TupletBracket.padding = #2                         %! OC1
     \clef "bass"                                                 %! SM8:DEFAULT_CLEF:ST3

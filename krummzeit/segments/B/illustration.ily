@@ -255,7 +255,7 @@ B_GlobalSkips = {
     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.dash-period = 0                          %! SM29:METRONOME_MARK_SPANNER
     \time 3/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \mark #2                                                             %! SM9
+    \mark #2                                                             %! IC
     \bar ""                                                              %! SM2:+SEGMENT:EMPTY_START_BAR
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
@@ -4011,6 +4011,8 @@ B_PercussionMusicVoice = {
     \override Beam.positions = #'(-4 . -4)                       %! OC1
     \override DynamicLineSpanner.staff-padding = #'6             %! OC1
     \override TupletBracket.staff-padding = #3                   %! OC1
+    \once \override PercussionMusicStaff.Clef.X-extent = ##f     %! OC1:MEASURE_102:SHIFTED_CLEF
+    \once \override PercussionMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:MEASURE_102:SHIFTED_CLEF
     \clef "treble"                                               %! SM8:EXPLICIT_CLEF:IC
     \once \override PercussionMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
 %@% \override PercussionMusicStaff.Clef.color = ##f              %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
@@ -4655,6 +4657,8 @@ B_ViolinMusicVoice = {
         \override Beam.positions = #'(-5 . -5)                   %! OC1
         \override DynamicLineSpanner.staff-padding = #'7         %! OC1
         \override TupletBracket.staff-padding = #4               %! OC1
+        \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! OC1:MEASURE_110:SHIFTED_CLEF
+        \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:MEASURE_110:SHIFTED_CLEF
         \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
         \once \override ViolinMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
     %@% \override ViolinMusicStaff.Clef.color = ##f              %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC

@@ -33,11 +33,7 @@ maker = baca.TimeSignatureMaker(
 measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 maker = baca.SegmentMaker(
-    instruments=krummzeit.instruments,
-    margin_markups=krummzeit.margin_markups,
     measures_per_stage=measures_per_stage,
-    metronome_marks=krummzeit.metronome_marks,
-    score_template=krummzeit.ScoreTemplate(),
     metronome_mark_measure_map=metronome_mark_measure_map,
     time_signatures=time_signatures,
     transpose_score=True,

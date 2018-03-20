@@ -79,49 +79,23 @@ class RegisterTransitionCommand(baca.Command):
                                 c'8
                                 [
             <BLANKLINE>
-                                d'8
-            <BLANKLINE>
-                                e'8
-            <BLANKLINE>
-                                f'8
-                                ]
-                            }
-                            {
-            <BLANKLINE>
-                                % [MusicVoice measure 2]                                   %! SM4
-                                c''8
-                                [
-            <BLANKLINE>
                                 d''8
             <BLANKLINE>
                                 e''8
-                                ]
-                            }
-                            {
             <BLANKLINE>
-                                % [MusicVoice measure 3]                                   %! SM4
                                 f''8
-                                [
-            <BLANKLINE>
-                                c''8
-            <BLANKLINE>
-                                d''8
-            <BLANKLINE>
-                                e''8
                                 ]
                             }
-                            {
             <BLANKLINE>
-                                % [MusicVoice measure 4]                                   %! SM4
-                                f''8
-                                [
+                            % [MusicVoice measure 2]                                       %! SM4
+                            R1 * 3/8
             <BLANKLINE>
-                                c''8
+                            % [MusicVoice measure 3]                                       %! SM4
+                            R1 * 1/2
             <BLANKLINE>
-                                d''8
-                                ]
+                            % [MusicVoice measure 4]                                       %! SM4
+                            R1 * 3/8
             <BLANKLINE>
-                            }
                         }
                     }
                 >>

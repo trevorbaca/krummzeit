@@ -252,10 +252,10 @@ maker(
 
 maker(
     baca.scopes(
-        ('PercussionMusicVoice', 'all'),
-        ('ViolinMusicVoice', 'all'),
-        ('ViolaMusicVoice', 'all'),
-        ('CelloMusicVoice', 'all'),
+        ('PercussionMusicVoice', (1, -1)),
+        ('ViolinMusicVoice', (1, -1)),
+        ('ViolaMusicVoice', (1, -1)),
+        ('CelloMusicVoice', (1, -1)),
         ),
     baca.dls_padding(4),
     baca.tuplet_bracket_padding(2),

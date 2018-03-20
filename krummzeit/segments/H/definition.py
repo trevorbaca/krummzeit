@@ -31,7 +31,6 @@ maker = baca.SegmentMaker(
     margin_markups=krummzeit.margin_markups,
     measures_per_stage=measures_per_stage,
     metronome_marks=krummzeit.metronome_marks,
-    rehearsal_mark='H',
     score_template=krummzeit.ScoreTemplate(),
     metronome_mark_measure_map=metronome_mark_measure_map,
     time_signatures=time_signatures,
@@ -40,9 +39,10 @@ maker = baca.SegmentMaker(
     validate_stage_count=8,
     )
 
-###############################################################################
-################################### COMMANDS ##################################
-###############################################################################
+maker(
+    baca.scope('GlobalSkips', (1, -1)),
+    baca.rehearsal_mark('H'),
+    )
 
 ### vn, va, vc [I1] reiteration ###
 

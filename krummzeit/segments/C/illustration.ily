@@ -148,7 +148,7 @@ C_GlobalSkips = {
     \once \override TextSpanner.dash-fraction = 0.25                     %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.dash-period = 1.5                        %! SM29:METRONOME_MARK_SPANNER
     \time 3/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \mark #3                                                             %! SM9
+    \mark #3                                                             %! IC
     \bar ""                                                              %! SM2:+SEGMENT:EMPTY_START_BAR
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
@@ -2096,6 +2096,8 @@ C_PianoMusicVoice = {
     \times 2/3 {
         
         % [C PianoMusicVoice measure 137]                        %! SM4
+        \once \override PianoMusicStaff.Clef.X-extent = ##f      %! OC1:MEASURE_137:SHIFTED_CLEF
+        \once \override PianoMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! OC1:MEASURE_137:SHIFTED_CLEF
         \clef "bass"                                             %! SM8:EXPLICIT_CLEF:IC
         \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
     %@% \override PianoMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
@@ -3005,6 +3007,8 @@ C_ViolaMusicVoice = {
         \override Beam.positions = #'(-4 . -4)                   %! OC1
         \override DynamicLineSpanner.staff-padding = #'8         %! OC1
         \override TupletBracket.staff-padding = #4               %! OC1
+        \once \override ViolaMusicStaff.Clef.X-extent = ##f      %! OC1:MEASURE_137:SHIFTED_CLEF
+        \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:MEASURE_137:SHIFTED_CLEF
         \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
         \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
     %@% \override ViolaMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
@@ -3081,6 +3085,8 @@ C_ViolaMusicVoice = {
     \times 2/3 {
         
         % [C ViolaMusicVoice measure 141]                        %! SM4
+        \once \override ViolaMusicStaff.Clef.X-extent = ##f      %! OC1:MEASURE_141:SHIFTED_CLEF
+        \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! OC1:MEASURE_141:SHIFTED_CLEF
         \clef "alto"                                             %! SM8:EXPLICIT_CLEF:IC
         \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
     %@% \override ViolaMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
@@ -3242,6 +3248,8 @@ C_CelloMusicVoice = {
         \override Beam.positions = #'(-4 . -4)                   %! OC1
         \override DynamicLineSpanner.staff-padding = #'8         %! OC1
         \override TupletBracket.staff-padding = #4               %! OC1
+        \once \override CelloMusicStaff.Clef.X-extent = ##f      %! OC1:MEASURE_137:SHIFTED_CLEF
+        \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:MEASURE_137:SHIFTED_CLEF
         \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
         \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
     %@% \override CelloMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
@@ -3284,6 +3292,8 @@ C_CelloMusicVoice = {
     \times 7/8 {
         
         % [C CelloMusicVoice measure 139]                        %! SM4
+        \once \override CelloMusicStaff.Clef.X-extent = ##f      %! OC1:MEASURE_139:SHIFTED_CLEF
+        \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! OC1:MEASURE_139:SHIFTED_CLEF
         \clef "bass"                                             %! SM8:EXPLICIT_CLEF:IC
         \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
     %@% \override CelloMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC

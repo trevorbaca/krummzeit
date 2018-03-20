@@ -32,13 +32,17 @@ maker = baca.SegmentMaker(
     margin_markups=krummzeit.margin_markups,
     measures_per_stage=measures_per_stage,
     metronome_marks=krummzeit.metronome_marks,
-    rehearsal_mark='J',
     score_template=krummzeit.ScoreTemplate(),
     metronome_mark_measure_map=metronome_mark_measure_map,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=48,
     validate_stage_count=12,
+    )
+
+maker(
+    baca.scope('GlobalSkips', (1, -1)),
+    baca.rehearsal_mark('J'),
     )
 
 # oboe

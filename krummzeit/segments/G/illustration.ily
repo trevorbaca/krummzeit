@@ -141,7 +141,7 @@ G_GlobalSkips = {
     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.dash-period = 0                          %! SM29:METRONOME_MARK_SPANNER
     \time 9/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \mark #7                                                             %! SM9
+    \mark #7                                                             %! IC
     \bar ""                                                              %! SM2:+SEGMENT:EMPTY_START_BAR
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 9/8
@@ -2471,6 +2471,8 @@ G_PianoMusicVoice = {
     \override DynamicLineSpanner.staff-padding = #'4             %! OC1
     \override NoteHead.style = #'harmonic                        %! OC1
     \override DynamicLineSpanner.staff-padding = #'3             %! OC1
+    \once \override PianoMusicStaff.Clef.X-extent = ##f          %! OC1:MEASURE_270:SHIFTED_CLEF
+    \once \override PianoMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! OC1:MEASURE_270:SHIFTED_CLEF
     \once \override Accidental.color = #red
     \once \override Beam.color = #red
     \once \override Dots.color = #red

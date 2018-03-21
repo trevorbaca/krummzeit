@@ -133,34 +133,34 @@ maker(
         ),
     )
 
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 5),
+maker(
     ('CelloMusicVoice', 7),
-    rhythm_maker__tuplet_ratios=[
-        (1, 4),
-        (4, 3),
-        (1, 2),
-        ],
+    krummzeit.glissando_rhythm(
+        [(2, 1), (2, 1), (1, 1, 1)],
+        [abjad.index([0])],
+        tuplet_ratios=[(1, 4), (4, 3), (1, 2)],
+        ),
     )
 
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 4),
+maker(
     ('ViolaMusicVoice', 9),
-    rhythm_maker__division_masks=None,
+    krummzeit.glissando_rhythm(
+        [(2, 1), (2, 1), (1, 1, 1)],
+        ),
     )
 
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 4),
+maker(
     ('ViolinMusicVoice', 9),
-    division_maker__ratios=[(1, 1, 1), (1, 2), (3, 1)],
-    rhythm_maker__division_masks=None,
+    krummzeit.glissando_rhythm(
+        [(1, 1, 1), (1, 2), (3, 1)],
+        ),
     )
 
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 4),
+maker(
     ('CelloMusicVoice', 9),
-    division_maker__ratios=[(1, 2), (3, 1), (1, 1, 1)],
-    rhythm_maker__division_masks=None,
+    krummzeit.glissando_rhythm(
+        [(1, 2), (3, 1), (1, 1, 1)],
+        ),
     )
 
 ### pf, xyl [D8] ###

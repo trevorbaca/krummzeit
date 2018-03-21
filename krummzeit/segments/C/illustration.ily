@@ -2029,7 +2029,7 @@ C_PianoMusicVoice = {
     \once \override NoteHead.text = \markup {
     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     }
-    <c,, e,, g,, b,, d, f, a,>1
+    <c,, e,, g,, b,, d, f, a,>2.
     ~
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC
@@ -2052,7 +2052,7 @@ C_PianoMusicVoice = {
     \once \override NoteHead.text = \markup {
     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     }
-    <c,, e,, g,, b,, d, f, a,>8
+    <c,, e,, g,, b,, d, f, a,>4.
     ~
     ^ \markup {
         \center-align
@@ -2071,7 +2071,7 @@ C_PianoMusicVoice = {
     \once \override NoteHead.text = \markup {
     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     }
-    <c,, e,, g,, b,, d, f, a,>2
+    <c,, e,, g,, b,, d, f, a,>4.
     ~
     ^ \markup {
         \center-align
@@ -2089,7 +2089,7 @@ C_PianoMusicVoice = {
     \once \override NoteHead.text = \markup {
     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     }
-    <c,, e,, g,, b,, d, f, a,>8
+    <c,, e,, g,, b,, d, f, a,>4
     ~
     ^ \markup {
         \center-align
@@ -2188,7 +2188,7 @@ C_PianoMusicVoice = {
     \once \override NoteHead.text = \markup {
     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     }
-    <c,, e,, g,, b,, d, f, a,>1
+    <c,, e,, g,, b,, d, f, a,>2.
     ~
     ^ \markup {
         \center-align
@@ -2206,7 +2206,7 @@ C_PianoMusicVoice = {
     \once \override NoteHead.text = \markup {
     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     }
-    <c,, e,, g,, b,, d, f, a,>4
+    <c,, e,, g,, b,, d, f, a,>2
     ^ \markup {
         \center-align
             \concat
@@ -2265,7 +2265,6 @@ C_PercussionMusicVoice = {
     c2.
     :32                                                          %! IC
     \ppp_ancora                                                  %! SM8:EXPLICIT_DYNAMIC:IC
-    ~
     ^ \markup {
         \column
             {
@@ -2311,68 +2310,65 @@ C_PercussionMusicVoice = {
     \makeBlue                                                    %! SM24
     c4
     :32                                                          %! IC
-    ~
+    \repeatTie
     
     % [C PercussionMusicVoice measure 135]                       %! SM4
     \makeBlue                                                    %! SM24
-    c2
+    c4.
     :32                                                          %! IC
-    ~
+    \repeatTie
     
-    \makeBlue                                                    %! SM24
-    c8
+    c4
     :32                                                          %! IC
-    ~
+    \repeatTie
     
     % [C PercussionMusicVoice measure 136]                       %! SM4
     \makeBlue                                                    %! SM24
     c4
     :32                                                          %! IC
-    ~
+    \repeatTie
     
     % [C PercussionMusicVoice measure 137]                       %! SM4
     \makeBlue                                                    %! SM24
-    c1
+    c2.
     :32                                                          %! IC
-    ~
+    \repeatTie
     
-    \makeBlue                                                    %! SM24
-    c8
+    c4.
     :32                                                          %! IC
-    ~
+    \repeatTie
     
     % [C PercussionMusicVoice measure 138]                       %! SM4
     \makeBlue                                                    %! SM24
     c4
     :32                                                          %! IC
-    ~
+    \repeatTie
     
     % [C PercussionMusicVoice measure 139]                       %! SM4
     \makeBlue                                                    %! SM24
-    c1
+    c2.
     :32                                                          %! IC
-    ~
+    \repeatTie
     
-    \makeBlue                                                    %! SM24
-    c8
+    c4.
     :32                                                          %! IC
-    ~
+    \repeatTie
     
     % [C PercussionMusicVoice measure 140]                       %! SM4
     \makeBlue                                                    %! SM24
     c4
     :32                                                          %! IC
-    ~
+    \repeatTie
     
     % [C PercussionMusicVoice measure 141]                       %! SM4
     \makeBlue                                                    %! SM24
-    c1
+    c2.
     :32                                                          %! IC
-    ~
+    \repeatTie
     
-    \makeBlue                                                    %! SM24
-    c8
+    c4.
     :32                                                          %! IC
+    \repeatTie
     
     % [C PercussionMusicVoice measure 142]                       %! SM4
     R1 * 5/8

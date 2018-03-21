@@ -59,158 +59,67 @@ maker(
     baca.rehearsal_mark('C'),
     )
 
-### snare [D1-8] ###
+### snare [C1-8] ###
 
 maker(
     ('PercussionMusicVoice', (1, 9)),
     baca.clef('percussion'),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=True,
-                ),
-            ),
-        ),
+    baca.make_repeat_tied_notes(),
     krummzeit.markup.snare_drum(),
     )
 
-
-### pf [D1] [D3] [D5] points ###
+### pf [C1] [C3] [C5] points ###
 
 maker(
-    ('PianoMusicVoice', 1),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByRoundedRatiosDivisionCallback(
-            ratios=[(2, 3)],
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            tuplet_ratios=[
-                (1, -1, 1, 3),
-                (1, -1, 1, 2, 2),
-                ],
-            tuplet_specifier=rhythmos.TupletSpecifier(
-                avoid_dots=True,
-                )
-            ),
+    baca.scopes(
+        ('PianoMusicVoice', 1),
+        ('PianoMusicVoice', 3),
+        ('PianoMusicVoice', 5),
         ),
+    krummzeit.silver_points([(2, 3)], [(1, -1, 1, 3), (1, -1, 1, 2, 2)]),
     )
 
-maker.copy_rhythm(
-    ('PianoMusicVoice', 1),
-    ('PianoMusicVoice', 3),
-    )
-
-maker.copy_rhythm(
-    ('PianoMusicVoice', 1),
-    ('PianoMusicVoice', 5),
-    )
-
-### vn, va, vc [D5] [D7] [D9] ###
+### vn, va, vc [C5] [C7] [C9] ###
 
 maker(
-    ('ViolinMusicVoice', 5),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByRoundedRatiosDivisionCallback(
-            ratios=[(5, 4)],
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            tuplet_ratios=[
-                (-1, 1, 1, -1, 2),
-                (-1, 1, 1, 2, 2),
-                ],
-            tuplet_specifier=rhythmos.TupletSpecifier(
-                avoid_dots=True,
-                )
-            ),
+    baca.scopes(
+        ('ViolinMusicVoice', 5),
+        ('ViolinMusicVoice', 7),
+        ('ViolinMusicVoice', 9),
         ),
-    )
-
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 5),
-    ('ViolinMusicVoice', 7),
-    )
-
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 5),
-    ('ViolinMusicVoice', 9),
+    krummzeit.silver_points([(5, 4)], [(-1, 1, 1, -1, 2), (-1, 1, 1, 2, 2)]),
     )
 
 maker(
-    ('ViolaMusicVoice', 5),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByRoundedRatiosDivisionCallback(
-            ratios=[(2, 7)],
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            tuplet_ratios=[
-                (-1, 2),
-                (-1, 2, -1, 2, 2),
-                ],
-            tuplet_specifier=rhythmos.TupletSpecifier(
-                avoid_dots=True,
-                ),
-            ),
+    baca.scopes(
+        ('ViolaMusicVoice', 5),
+        ('ViolaMusicVoice', 7),
+        ('ViolaMusicVoice', 9),
         ),
-    )
-
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 5),
-    ('ViolaMusicVoice', 7),
-    )
-
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 5),
-    ('ViolaMusicVoice', 9),
+    krummzeit.silver_points([(2, 7)], [(-1, 2), (-1, 2, -1, 2, 2)]),
     )
 
 maker(
-    ('CelloMusicVoice', 5),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByRoundedRatiosDivisionCallback(
-            ratios=[(7, 2)],
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            tuplet_ratios=[
-                (-1, 2, -1, 2, 2),
-                (-1, 2),
-                ],
-            tuplet_specifier=rhythmos.TupletSpecifier(
-                avoid_dots=True,
-                ),
-            ),
+    baca.scopes(
+        ('CelloMusicVoice', 5),
+        ('CelloMusicVoice', 7),
+        ('CelloMusicVoice', 9),
         ),
+    krummzeit.silver_points([(7, 2)], [(-1, 2, -1, 2, 2), (-1, 2)]),
     )
 
-maker.copy_rhythm(
-    ('CelloMusicVoice', 5),
-    ('CelloMusicVoice', 7),
-    )
-
-maker.copy_rhythm(
-    ('CelloMusicVoice', 5),
-    ('CelloMusicVoice', 9),
-    )
-
-### pf [D9-12] [D13] sea storm ###
+### pf [C9-12] [C13] sea storm ###
 
 maker(
-    ('PianoMusicVoice', (9, 12)),
+    baca.scopes(
+        ('PianoMusicVoice', (9, 12)),
+        ('PianoMusicVoice', (14, 16)),
+        ),
     baca.clef('bass'),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=True,
-                ),
-            ),
-        ),
+    baca.make_tied_notes(),
     )
 
-maker.copy_rhythm(
-    ('PianoMusicVoice', 9),
-    ('PianoMusicVoice', (14, 16)),
-    )
-
-### va [D11-12] [D14-16]; vn, vc [D12] [D14-16] ###
+### va [C11-12] [C14-16]; vn, vc [C12] [C14-16] ###
 
 maker(
     ('ViolaMusicVoice', (11, 12)),
@@ -238,7 +147,7 @@ maker.copy_rhythm(
     ('CelloMusicVoice', 14),
     )
 
-### ob [D14-16] blocks ###
+### ob [C14-16] blocks ###
 
 maker(
     ('OboeMusicVoice', (14, 16)),
@@ -251,7 +160,7 @@ maker(
         ),
     )
 
-### bass cl [D14-17] subtone ###
+### bass cl [C14-17] subtone ###
 
 maker(
     ('ClarinetMusicVoice', (14, 17)),
@@ -265,7 +174,7 @@ maker(
         ),
     )
 
-### tam-tam [D14-17] attackless ###
+### tam-tam [C14-17] attackless ###
 
 maker(
     ('PercussionMusicVoice', (14, 17)),

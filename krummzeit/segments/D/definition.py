@@ -266,16 +266,12 @@ maker(
 
 maker(
     ('PianoMusicVoice', 4),
+    baca.clef('bass'),
     krummzeit.piano_harmonics(
         [(2, 1), (2, 1), (1, 1, 1)],
         division_masks=[abjad.index([5, 6], 7)],
         tie_across_divisions=[0, 1],
         ),
-    )
-
-maker(
-    ('PianoMusicVoice', 4),
-    baca.clef('bass'),
     )
 
 maker(
@@ -287,15 +283,14 @@ maker(
         ),
     )
 
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 9),
+maker(
     ('PianoMusicVoice', 9),
-    rhythm_maker=rhythmos.NoteRhythmMaker()
+    krummzeit.piano_harmonics(
+        [(2, 1), (2, 1), (1, 1, 1)],
+        division_masks=[],
+        tie_across_divisions=[],
+        ),
     )
-
-###############################################################################
-#################################### COLOR ####################################
-###############################################################################
 
 ### (3.4) tam-tam, (3.5) vn, va, vc ###
 

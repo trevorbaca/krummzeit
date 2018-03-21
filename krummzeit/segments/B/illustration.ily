@@ -5214,36 +5214,26 @@ B_CelloMusicVoice = {
             }
         }
     
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    cqs,2..
-    \fff                                                         %! HC1
+    cqs,1.
+    \glissando                                                   %! SC
     
-    % [B CelloMusicVoice measure 122]                            %! SM4
-    R1 * 3/4
+    bqf,,1
+    \glissando                                                   %! SC
     
-    % [B CelloMusicVoice measure 123]                            %! SM4
-    R1 * 5/8
-    
-    % [B CelloMusicVoice measure 124]                            %! SM4
-    R1 * 9/8
-    
-    % [B CelloMusicVoice measure 125]                            %! SM4
-    R1 * 9/8
+    c,\breve
+    \glissando                                                   %! SC
     
     % [B CelloMusicVoice measure 126]                            %! SM4
-    R1 * 9/8
+    b,,1.
+    \glissando                                                   %! SC
     
-    % [B CelloMusicVoice measure 127]                            %! SM4
-    R1 * 5/8
-    
-    % [B CelloMusicVoice measure 128]                            %! SM4
-    R1 * 3/4
+    cqs,1
+    \glissando                                                   %! SC
     
     % [B CelloMusicVoice measure 129]                            %! SM4
-    R1 * 3/4
-    
-    % [B CelloMusicVoice measure 130]                            %! SM4
-    R1 * 1
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    bqf,,1..
+    \fff                                                         %! HC1
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     
     % [B CelloMusicVoice measure 131]                            %! SM4

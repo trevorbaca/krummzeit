@@ -300,17 +300,17 @@ maker(
 
 maker(
     ('ViolaMusicVoice', (11, 16)),
-    baca.pitches('bf,'),
+    baca.pitch('bf,'),
     )
 
 maker(
     ('ViolinMusicVoice', (14, 16)),
-    baca.pitches('fs'),
+    baca.pitch('fs'),
     )
 
 maker(
     ('CelloMusicVoice', (14, 16)),
-    baca.pitches('a,,'),
+    baca.pitch('a,,'),
     )
 
 maker(
@@ -320,17 +320,19 @@ maker(
     )
 
 maker(
-    baca.make_scopes([
-        'ViolinMusicVoice',
-        'ViolaMusicVoice',
-        'CelloMusicVoice'],
-        [(14, 16)],
+    baca.scopes(
+        ('ViolinMusicVoice', (14, 16)),
+        ('ViolaMusicVoice', (14, 16)),
+        ('CelloMusicVoice', (14, 16)),
         ),
     baca.possibile_dynamic('fff'),
     )
 
 maker(
-    baca.make_scopes(['ViolinMusicVoice', 'CelloMusicVoice'], [(14, 16)]),
+    baca.scopes(
+        ('ViolinMusicVoice', (14, 16)),
+        ('CelloMusicVoice', (14, 16)),
+        ),
     baca.markup.arco(),
     )
 
@@ -343,7 +345,7 @@ maker(
 
 maker(
     ('OboeMusicVoice', (14, 16)),
-    baca.pitches('B3'),
+    baca.pitch('B3'),
     )
 
 maker(
@@ -353,7 +355,7 @@ maker(
 
 maker(
     ('ClarinetMusicVoice', (14, 17)),
-    baca.pitches('B1'),
+    baca.pitch('B1'),
     )
 
 maker(
@@ -402,11 +404,10 @@ maker(
     )
 
 maker(
-    baca.make_scopes([
-        'ViolinMusicVoice',
-        'ViolaMusicVoice',
-        'CelloMusicVoice'],
-        [(11, 16)],
+    baca.scopes(
+        ('ViolinMusicVoice', (11, 16)),
+        ('ViolaMusicVoice', (11, 16)),
+        ('CelloMusicVoice', (11, 16)),
         ),
     baca.stems_up(),
     )

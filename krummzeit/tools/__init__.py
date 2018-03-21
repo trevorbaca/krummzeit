@@ -11,6 +11,8 @@ from .fused_expanse  import fused_expanse
 from .glissando_rhythm import glissando_rhythm
 from .hypermeter_tuplets import hypermeter_tuplets
 from .incise_attacks import incise_attacks
+from .incise_chain import incise_chain
+from .incise_chain_b import incise_chain_b
 from .instrument import instrument
 from .margin_markup import margin_markup
 from .opening_triplets import opening_triplets

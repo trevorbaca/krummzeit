@@ -4,6 +4,7 @@ from .ScoreTemplate import ScoreTemplate
 from .closing_pizzicati import closing_pizzicati
 from .clusters import clusters
 from .color_fingerings import color_fingerings
+from .color_tuplets import color_tuplets
 from .displacement import displacement
 from .e_flat_clarinet_markup import e_flat_clarinet_markup
 from .fused_expanse  import fused_expanse

@@ -5317,10 +5317,19 @@ D_PercussionMusicVoice = {
     \times 3/5 {
         
         % [D PercussionMusicVoice measure 186]                   %! SM4
+        \stopStaff                                               %! SM8:REDUNDANT_STAFF_LINES:IC
+        \once \override PercussionMusicStaff.StaffSymbol.line-count = 5 %! SM8:REDUNDANT_STAFF_LINES:IC
+        \startStaff                                              %! SM8:REDUNDANT_STAFF_LINES:IC
         \override Beam.positions = #'(-4 . -4)                   %! OC1
         \override DynamicLineSpanner.staff-padding = #'6         %! OC1
         \override TupletBracket.staff-padding = #3               %! OC1
+        \clef "treble"                                           %! SM8:REDUNDANT_CLEF:IC
+        \once \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_CLEF_COLOR:IC
+    %@% \override PercussionMusicStaff.Clef.color = ##f          %! SM7:REDUNDANT_CLEF_COLOR_CANCELLATION:IC
+        \set PercussionMusicStaff.forceClef = ##t                %! SM8:REDUNDANT_CLEF:SM33:IC
+        \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_STAFF_LINES_COLOR:IC
         r4
+        \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! SM6:REDUNDANT_CLEF_REDRAW_COLOR:IC
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red

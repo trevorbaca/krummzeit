@@ -245,64 +245,22 @@ maker(
 ### vn, va, vc [D11] & vn, va, vc, pf [D13] ###
 
 maker(
-    ('ViolinMusicVoice', 11),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.IncisedRhythmMaker(
-            incise_specifier=rhythmos.InciseSpecifier(
-                prefix_talea=[-2, 2, -2, 2, -2, 2, 0],
-                prefix_counts=[2, 2, 2, 1],
-                suffix_talea=[0, 2, -2, 0, 2, -2],
-                suffix_counts=[1, 2, 1, 2],
-                talea_denominator=16,
-                fill_with_notes=False,
-                ),
-            division_masks=[abjad.index([2], 5)],
-            ),
+    baca.scopes(
+        ('ViolinMusicVoice', 11),
+        ('ViolaMusicVoice', 11),
+        ('CelloMusicVoice', 11),
         ),
-    )
-
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 11),
-    ('ViolaMusicVoice', 11),
-    )
-
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 11),
-    ('CelloMusicVoice', 11),
+    krummzeit.incise_chain(),
     )
 
 maker(
-    ('ViolinMusicVoice', 13),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.IncisedRhythmMaker(
-            incise_specifier=rhythmos.InciseSpecifier(
-                prefix_talea=[-2, 2, 3, -2, 3, -2, 2],
-                prefix_counts=[3, 2, 2],
-                suffix_talea=[2, -2, 3, -1, 0, 2, -2],
-                suffix_counts=[2, 2, 1, 2],
-                talea_denominator=16,
-                fill_with_notes=False,
-                ),
-            beam_specifier=rhythmos.BeamSpecifier(
-                beam_each_division=False,
-                ),
-            ),
+    baca.scopes(
+        ('PianoMusicVoice', 13),
+        ('ViolinMusicVoice', 13),
+        ('ViolaMusicVoice', 13),
+        ('CelloMusicVoice', 13),
         ),
-    )
-
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 13),
-    ('ViolaMusicVoice', 13),
-    )
-
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 13),
-    ('CelloMusicVoice', 13),
-    )
-
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 13),
-    ('PianoMusicVoice', 13),
+        krummzeit.incise_chain_b(),
     )
 
 maker(

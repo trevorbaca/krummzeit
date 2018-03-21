@@ -91,7 +91,7 @@ maker(
     krummzeit.markup.sponges(),
     )
 
-### va [D4-7] glissando thicket ###
+# vn, va, vc
 
 maker(
     ('ViolaMusicVoice', 4),
@@ -101,27 +101,36 @@ maker(
         ),
     )
 
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 4),
+maker(
     ('ViolaMusicVoice', (5, 7)),
-    rhythm_maker__division_masks=[abjad.index([0])],
+    krummzeit.glissando_rhythm(
+        [(2, 1), (2, 1), (1, 1, 1)],
+        [abjad.index([0])],
+        ),
     )
 
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 4),
+maker(
     ('ViolinMusicVoice', 6),
+    krummzeit.glissando_rhythm(
+        [(2, 1), (2, 1), (1, 1, 1)],
+        [abjad.index([5, 6], 7)],
+        ),
     )
 
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 4),
+maker(
     ('CelloMusicVoice', 6),
-    division_maker__ratios=[(2, 1), (1, 1, 1), (2, 1)],
-    rhythm_maker__division_masks=[abjad.index([0, 1, 2])],
+    krummzeit.glissando_rhythm(
+        [(2, 1), (1, 1, 1), (2, 1)],
+        [abjad.index([0, 1, 2])],
+        ),
     )
 
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 5),
+maker(
     ('ViolinMusicVoice', 7),
+    krummzeit.glissando_rhythm(
+        [(2, 1), (2, 1), (1, 1, 1)],
+        [abjad.index([0])],
+        ),
     )
 
 maker.copy_rhythm(

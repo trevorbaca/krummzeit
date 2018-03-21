@@ -3,7 +3,11 @@ import baca
 from abjad import rhythmmakertools as rhythmos
 
 
-def glissando_rhythm(division_ratios, division_masks):
+def glissando_rhythm(
+    division_ratios,
+    division_masks=[],
+    tuplet_ratios=[(1, 2), (1, 4), (4, 3)],
+    ):
     r'''Makes glissando rhythm.
     '''
     assert isinstance(division_ratios, list), repr(division_ratios)
@@ -14,11 +18,7 @@ def glissando_rhythm(division_ratios, division_masks):
             ),
         rhythm_maker=rhythmos.TupletRhythmMaker(
             division_masks=division_masks,
-            tuplet_ratios=[
-                (1, 2),
-                (1, 4),
-                (4, 3),
-                ],
+            tuplet_ratios=tuplet_ratios,
             tuplet_specifier=rhythmos.TupletSpecifier(
                 extract_trivial=True,
                 ),

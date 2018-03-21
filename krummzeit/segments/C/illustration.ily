@@ -1600,17 +1600,17 @@ C_OboeMusicVoice = {
     \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     b1
     \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC
-    ~
     
     % [C OboeMusicVoice measure 147]                             %! SM4
     b1
-    ~
+    \repeatTie
     
     % [C OboeMusicVoice measure 148]                             %! SM4
-    b1
-    ~
+    b2.
+    \repeatTie
     
-    b4
+    b2
+    \repeatTie
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     \revert Stem.direction                                       %! OC2
     
@@ -1784,7 +1784,6 @@ C_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     cs1
     \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
-    ~
     ^ \markup {                                                  %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
         \with-color                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
             #(x11-color 'blue)                                   %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
@@ -1793,34 +1792,35 @@ C_ClarinetMusicVoice = {
     
     % [C ClarinetMusicVoice measure 147]                         %! SM4
     cs1
-    ~
+    \repeatTie
     
     % [C ClarinetMusicVoice measure 148]                         %! SM4
-    cs1
-    ~
+    cs2.
+    \repeatTie
     
-    cs4
-    ~
+    cs2
+    \repeatTie
     
     % [C ClarinetMusicVoice measure 149]                         %! SM4
-    cs1
-    ~
+    cs2.
+    \repeatTie
     
-    cs4
-    ~
+    cs2
+    \repeatTie
     
     % [C ClarinetMusicVoice measure 150]                         %! SM4
-    cs1
-    ~
+    cs2.
+    \repeatTie
     
-    cs4
-    ~
+    cs2
+    \repeatTie
     
     % [C ClarinetMusicVoice measure 151]                         %! SM4
-    cs1
-    ~
+    cs2.
+    \repeatTie
     
-    cs4
+    cs2
+    \repeatTie
     \revert Stem.direction                                       %! OC2
     
 }
@@ -2773,7 +2773,7 @@ C_ViolinMusicVoice = {
     R1 * 1/4
     
     % [C ViolinMusicVoice measure 146]                           %! SM4
-    \once \override Stem.direction = #up                         %! OC1
+    \override Stem.direction = #up                               %! OC1
     \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     fs1
     \fff_poss                                                    %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2784,10 +2784,16 @@ C_ViolinMusicVoice = {
         }                                                        %! IC
     
     % [C ViolinMusicVoice measure 147]                           %! SM4
-    R1 * 1
+    fs1
+    \repeatTie
     
     % [C ViolinMusicVoice measure 148]                           %! SM4
-    R1 * 5/4
+    fs2.
+    \repeatTie
+    
+    fs2
+    \repeatTie
+    \revert Stem.direction                                       %! OC2
     
     % [C ViolinMusicVoice measure 149]                           %! SM4
     R1 * 5/4
@@ -2999,7 +3005,6 @@ C_ViolaMusicVoice = {
     \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     bf,2.
     \fff_poss                                                    %! SM8:EXPLICIT_DYNAMIC:IC
-    ~
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC
             \upright                                             %! IC
@@ -3008,6 +3013,7 @@ C_ViolaMusicVoice = {
     
     % [C ViolaMusicVoice measure 144]                            %! SM4
     bf,2.
+    \repeatTie
     
     % [C ViolaMusicVoice measure 145]                            %! SM4
     R1 * 1/4
@@ -3016,17 +3022,17 @@ C_ViolaMusicVoice = {
     \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     bf,1
     \fff_poss                                                    %! SM8:REDUNDANT_DYNAMIC:IC
-    ~
     
     % [C ViolaMusicVoice measure 147]                            %! SM4
     bf,1
-    ~
+    \repeatTie
     
     % [C ViolaMusicVoice measure 148]                            %! SM4
-    bf,1
-    ~
+    bf,2.
+    \repeatTie
     
-    bf,4
+    bf,2
+    \repeatTie
     \revert Stem.direction                                       %! OC2
     
     % [C ViolaMusicVoice measure 149]                            %! SM4
@@ -3242,7 +3248,7 @@ C_CelloMusicVoice = {
     R1 * 1/4
     
     % [C CelloMusicVoice measure 146]                            %! SM4
-    \once \override Stem.direction = #up                         %! OC1
+    \override Stem.direction = #up                               %! OC1
     \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     a,,1
     \fff_poss                                                    %! SM8:EXPLICIT_DYNAMIC:IC
@@ -3253,10 +3259,16 @@ C_CelloMusicVoice = {
         }                                                        %! IC
     
     % [C CelloMusicVoice measure 147]                            %! SM4
-    R1 * 1
+    a,,1
+    \repeatTie
     
     % [C CelloMusicVoice measure 148]                            %! SM4
-    R1 * 5/4
+    a,,2.
+    \repeatTie
+    
+    a,,2
+    \repeatTie
+    \revert Stem.direction                                       %! OC2
     
     % [C CelloMusicVoice measure 149]                            %! SM4
     R1 * 5/4

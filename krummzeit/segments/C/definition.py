@@ -122,42 +122,20 @@ maker(
 ### va [C11-12] [C14-16]; vn, vc [C12] [C14-16] ###
 
 maker(
-    ('ViolaMusicVoice', (11, 12)),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=True,
-                ),
-            ),
+    baca.scopes(
+        ('ViolaMusicVoice', (11, 12)),
+        ('ViolaMusicVoice', (14, 16)),
+        ('ViolinMusicVoice', (14, 16)),
+        ('CelloMusicVoice', (14, 16)),
         ),
-    )
-
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 11),
-    ('ViolaMusicVoice', (14, 16)),
-    )
-
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 14),
-    ('ViolinMusicVoice', 14),
-    )
-
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 14),
-    ('CelloMusicVoice', 14),
+    baca.make_repeat_tied_notes(),
     )
 
 ### ob [C14-16] blocks ###
 
 maker(
     ('OboeMusicVoice', (14, 16)),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=True,
-                ),
-            ),
-        ),
+    baca.make_repeat_tied_notes(),
     )
 
 ### bass cl [C14-17] subtone ###
@@ -165,31 +143,16 @@ maker(
 maker(
     ('ClarinetMusicVoice', (14, 17)),
     baca.instrument(krummzeit.instruments['BassClarinet']),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=True,
-                ),
-            ),
-        ),
+    baca.make_repeat_tied_notes(),
     )
 
 ### tam-tam [C14-17] attackless ###
 
 maker(
     ('PercussionMusicVoice', (14, 17)),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByDurationsDivisionCallback(
-            durations=[(1, 4)],
-            ),
-        rhythm_maker=rhythmos.NoteRhythmMaker()
-        ),
+    baca.make_repeated_duration_notes([(1, 4)]),
     krummzeit.markup.tam_tam(),
     )
-
-###############################################################################
-#################################### COLOR ####################################
-###############################################################################
 
 ### (6) snare ###
 

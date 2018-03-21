@@ -16,6 +16,7 @@ from .incise_chain_b import incise_chain_b
 from .instrument import instrument
 from .margin_markup import margin_markup
 from .opening_triplets import opening_triplets
+from .piano_harmonics import piano_harmonics
 from .pizzicato_rhythm import pizzicato_rhythm
 from .pizzicato_sixteenths import pizzicato_sixteenths
 from .polyphony import polyphony

@@ -185,12 +185,6 @@ maker(
         ),
     )
 
-#maker.copy_rhythm(
-#    ('PercussionMusicVoice', 8),
-#    ('PercussionMusicVoice', (10, 11)),
-#    rhythm_maker__division_masks=[abjad.index([5], 7)],
-#    )
-
 maker(
     ('PercussionMusicVoice', (10, 11)),
     baca.clef('treble'),
@@ -270,14 +264,12 @@ maker(
 
 ### pf [D4-7] ###
 
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 4),
+maker(
     ('PianoMusicVoice', 4),
-    rhythm_maker=rhythmos.NoteRhythmMaker(
+    krummzeit.piano_harmonics(
+        [(2, 1), (2, 1), (1, 1, 1)],
         division_masks=[abjad.index([5, 6], 7)],
-        tie_specifier=rhythmos.TieSpecifier(
-            tie_across_divisions=[0, 1],
-            ),
+        tie_across_divisions=[0, 1],
         ),
     )
 
@@ -286,14 +278,12 @@ maker(
     baca.clef('bass'),
     )
 
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 5),
+maker(
     ('PianoMusicVoice', 5),
-    rhythm_maker=rhythmos.NoteRhythmMaker(
+    krummzeit.piano_harmonics(
+        [(2, 1), (2, 1), (1, 1, 1)],
         division_masks=[abjad.index([0])],
-        tie_specifier=rhythmos.TieSpecifier(
-            tie_across_divisions=[0, 1],
-            ),
+        tie_across_divisions=[0, 1],
         ),
     )
 

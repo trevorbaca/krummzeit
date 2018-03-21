@@ -204,57 +204,42 @@ maker(
 ### ob, cl [D5-7] & [D10-12] ###
 
 maker(
-    ('OboeMusicVoice', (5, 7)),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            tuplet_ratios=[
-                (-2, 4, 1, 1, 12),
-                (3, 2),
-                (4, 3),
-                (3, -2),
-                (-3, 4, 1, 12),
-                (3, 2),
-                (7, 1, 3),
-                (3, -2),
-                ],
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=True,
-                ),
-            tuplet_specifier=rhythmos.TupletSpecifier(
-                avoid_dots=True,
-                ),
-            ),
+    baca.scopes(
+        ('OboeMusicVoice', (5, 7)),
+        ('OboeMusicVoice', (10, 12)),
+        ),
+    krummzeit.color_tuplets(
+        tuplet_ratios=[
+            (-2, 4, 1, 1, 12),
+            (3, 2),
+            (4, 3),
+            (3, -2),
+            (-3, 4, 1, 12),
+            (3, 2),
+            (7, 1, 3),
+            (3, -2),
+            ],
         ),
     )
 
-maker.copy_rhythm(
-    ('OboeMusicVoice', 5),
-    ('ClarinetMusicVoice', 5),
-    rhythm_maker__tuplet_ratios=[
-        (7, 1, 3),
-        (3, -2),
-        (-2, 4, 1, 1, 12),
-        (3, 2),
-        (4, 3),
-        (3, -2),
-        (-3, 4, 1, 12),
-        (3, 2),
-        ],
-    rhythm_maker__division_masks=[abjad.index([0])],
-    )
-
 maker(
-    ('OboeMusicVoice', 5),
-    )
-
-maker.copy_rhythm(
-    ('OboeMusicVoice', 5),
-    ('OboeMusicVoice', (10, 12)),
-    )
-
-maker.copy_rhythm(
-    ('ClarinetMusicVoice', 5),
-    ('ClarinetMusicVoice', (10, 12)),
+    baca.scopes(
+        ('ClarinetMusicVoice', 5),
+        ('ClarinetMusicVoice', (10, 12)),
+        ),
+    krummzeit.color_tuplets(
+        tuplet_ratios=[
+            (7, 1, 3),
+            (3, -2),
+            (-2, 4, 1, 1, 12),
+            (3, 2),
+            (4, 3),
+            (3, -2),
+            (-3, 4, 1, 12),
+            (3, 2),
+            ],
+        division_mask=abjad.index([0]),
+        ),
     )
 
 ### vn, va, vc [D11] & vn, va, vc, pf [D13] ###

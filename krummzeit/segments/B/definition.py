@@ -66,7 +66,7 @@ maker(
     baca.rehearsal_mark('B'),
     )
 
-### ob, ' [C1] ornamented, unadorned ###
+### ob, ' [B1] ornamented, unadorned ###
 
 maker(
     baca.scopes(
@@ -84,7 +84,7 @@ maker(
     krummzeit.white_rhythm([(3, 8)], abjad.Right, do_not_burnish=True),
     )
 
-### vn [C1-3] scraped slate ###
+### vn [B1-3] scraped slate ###
 
 maker(
     ('ViolinMusicVoice', (1, 17)),
@@ -94,7 +94,7 @@ maker(
     baca.staff_position(0),
     )
 
-### perc [C4-5] scraped slate ###
+### perc [B4-5] scraped slate ###
 
 maker(
     ('PercussionMusicVoice', (18, 21)),
@@ -113,7 +113,7 @@ maker(
     baca.make_repeat_tied_notes(),
     )
 
-### va, vc [C2-4] color pedals ###
+### va, vc [B2-4] color pedals ###
 
 maker(
     ('ViolaMusicVoice', 3),
@@ -165,7 +165,7 @@ maker(
     krummzeit.single_division_tuplets([(1, 4), (1,), (2, 1), (1,)]),
     )
 
-### pf, xyl [C3] points ###
+### pf, xyl [B3] points ###
 
 maker(
     baca.make_scopes(['PianoMusicVoice'], [11, 15, 22, 26]),
@@ -206,7 +206,7 @@ maker(
     krummzeit.markup.snare_drum(),
     )
 
-### vn [C4-8] ornanmented 6.1 ###
+### vn [B4-8] ornanmented 6.1 ###
 
 maker(
     ('ViolinMusicVoice', (19, 22)),
@@ -225,40 +225,24 @@ maker(
         ),
     )
 
-### vn, va, vc [C8-11] unrestrained ###
+### vn, va, vc [B8-11] unrestrained ###
 
 maker(
     ('ViolaMusicVoice', (26, 29)),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                durations=[(1, 1), (2, 1), (3, 2)],
-                ),
-            ),
-        rhythm_maker=rhythmos.NoteRhythmMaker()
-        ),
+    krummzeit.fused_expanse([(1, 1), (2, 1), (3, 2)]),
     )
 
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 26),
-    ('CelloMusicVoice', 26),
-    division_maker__secondary_division_maker__durations=[
-        (2, 1), (3, 2), (1, 1)],
+maker(
+    ('CelloMusicVoice', (26, 29)),
+    krummzeit.fused_expanse([(2, 1), (3, 2), (1, 1)]),
     )
 
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 26),
+maker(
     ('ViolinMusicVoice', (28, 29)),
-    division_maker__secondary_division_maker__durations=[
-        (3, 2), (1, 1), (2, 1)],
+    krummzeit.fused_expanse([(3, 2), (1, 1), (2, 1)]),
     )
 
-###############################################################################
-#################################### COLOR ####################################
-###############################################################################
-
-### (6.1) [B1] ob, cl, va, vc ###
+### (6.1) [C1] ob, cl, va, vc ###
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-121).retrograde().transpose(3).invert().sequence()

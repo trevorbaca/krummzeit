@@ -42,7 +42,7 @@ maker = baca.SegmentMaker(
     )
 
 maker(
-    baca.scope('OboeMusicVoice', 1),
+    ('OboeMusicVoice', 1),
     baca.suite([
         krummzeit.margin_markup('Ob.'),
         baca.start_markup('Oboe', hcenter_in=16),
@@ -50,7 +50,7 @@ maker(
     )
 
 maker(
-    baca.scope('ClarinetMusicVoice', 1),
+    ('ClarinetMusicVoice', 1),
     baca.suite([
         krummzeit.margin_markup('B. cl.'),
         baca.start_markup('Bass clarinet', hcenter_in=16),
@@ -58,7 +58,7 @@ maker(
     )
 
 maker(
-    baca.scope('PianoMusicVoice', 1),
+    ('PianoMusicVoice', 1),
     baca.clef('bass'),
     baca.suite([
         krummzeit.margin_markup('Pf.'),
@@ -67,7 +67,7 @@ maker(
     )
 
 maker(
-    baca.scope('PercussionMusicVoice', 1),
+    ('PercussionMusicVoice', 1),
     baca.suite([
         krummzeit.margin_markup('Perc.'),
         baca.start_markup('Percussion', hcenter_in=16),
@@ -75,7 +75,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 1),
+    ('ViolinMusicVoice', 1),
     baca.suite([
         krummzeit.margin_markup('Vn.'),
         baca.start_markup('Violin', hcenter_in=16),
@@ -83,7 +83,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', 1),
+    ('ViolaMusicVoice', 1),
     baca.suite([
         krummzeit.margin_markup('Va.'),
         baca.start_markup('Viola', hcenter_in=16),
@@ -91,7 +91,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 1),
+    ('CelloMusicVoice', 1),
     baca.suite([
         krummzeit.margin_markup('Vc.'),
         baca.start_markup('Cello', hcenter_in=16),
@@ -108,7 +108,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', (3, 7)),
+    ('ViolinMusicVoice', (3, 7)),
     krummzeit.glissando_rhythm(
         division_ratios=[(2, 1), (2, 1), (1, 1, 1)],
         division_masks=[abjad.index([5, 6], 7)],
@@ -116,7 +116,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', (3, 7)),
+    ('ViolaMusicVoice', (3, 7)),
     krummzeit.glissando_rhythm(
         division_ratios=[(2, 1), (1, 1, 1), (2, 1)],
         division_masks=[abjad.index([0, 1], 7)],
@@ -124,7 +124,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', (3, 7)),
+    ('CelloMusicVoice', (3, 7)),
     krummzeit.glissando_rhythm(
         division_ratios=[(1, 1, 1), (2, 1), (2, 1)],
         division_masks=[abjad.index([2, 3], 7)],
@@ -132,14 +132,14 @@ maker(
     )
 
 maker(
-    baca.scope('ClarinetMusicVoice', (3, 4)),
+    ('ClarinetMusicVoice', (3, 4)),
     baca.dynamic('ppp'),
     baca.make_repeat_tied_notes(),
     baca.pitch('B1'),
     )
 
 maker(
-    baca.scope('PianoMusicVoice', 3),
+    ('PianoMusicVoice', 3),
     baca.dynamic('fff'),
     # NOTE: clusters() must precede markup() for markup to appear:
     krummzeit.clusters('tenor'),
@@ -148,7 +148,7 @@ maker(
     )
 
 maker(
-    baca.scope('PianoMusicVoice', 6),
+    ('PianoMusicVoice', 6),
     baca.clef('treble'),
     baca.dynamic('fff'),
     baca.make_repeat_tied_notes(),
@@ -157,12 +157,12 @@ maker(
     )
 
 maker(
-    baca.scope('PianoMusicVoice', 9),
+    ('PianoMusicVoice', 9),
     baca.markup.boxed('to harpsichord'),
     )
 
 maker(
-    baca.scope('PercussionMusicVoice', 6),
+    ('PercussionMusicVoice', 6),
     baca.dynamic('fff'),
     baca.make_repeat_tied_notes(),
     baca.markup.boxed('xylophone'),
@@ -171,7 +171,7 @@ maker(
     )
 
 maker(
-    baca.scope('PercussionMusicVoice', (9, 10)),
+    ('PercussionMusicVoice', (9, 10)),
     baca.accents(),
     baca.bar_extent((-2, 2)),
     baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
@@ -187,17 +187,17 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 1),
+    ('ViolinMusicVoice', 1),
     baca.pitch('Eb5'),
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', 1),
+    ('ViolaMusicVoice', 1),
     baca.pitch('A3'),
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 1),
+    ('CelloMusicVoice', 1),
     baca.pitch('E~2'),
     )
 
@@ -236,17 +236,17 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', (3, 7)),
+    ('ViolinMusicVoice', (3, 7)),
     krummzeit.register_narrow(5, 4),
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', (3, 7)),
+    ('ViolaMusicVoice', (3, 7)),
     krummzeit.register_narrow(4, 3),
     )
 
 maker(
-    baca.scope('CelloMusicVoice', (3, 7)),
+    ('CelloMusicVoice', (3, 7)),
     krummzeit.register_narrow(4, 3),
     )
 

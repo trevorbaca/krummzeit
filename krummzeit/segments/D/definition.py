@@ -47,7 +47,7 @@ maker(
     baca.rehearsal_mark('D'),
     )
 
-### tam-tam [E1] ###
+### tam-tam [D1] ###
 
 maker(
     ('PercussionMusicVoice', 1),
@@ -77,7 +77,7 @@ maker(
     krummzeit.right_remainder_quarters(),
     )
 
-### sponges [E3-6] ###
+### sponges [D3-6] ###
 
 maker(
     ('PercussionMusicVoice', (3, 6)),
@@ -91,26 +91,13 @@ maker(
     krummzeit.markup.sponges(),
     )
 
-### va [E4-7] glissando thicket ###
+### va [D4-7] glissando thicket ###
 
 maker(
     ('ViolaMusicVoice', 4),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByRoundedRatiosDivisionCallback(
-            ratios=[
-                (2, 1),
-                (2, 1),
-                (1, 1, 1),
-                ],
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            tuplet_ratios=[
-                (1, 2),
-                (1, 4),
-                (4, 3),
-                ],
-            division_masks=[abjad.index([5, 6], 7)],
-            ),
+    krummzeit.glissando_rhythm(
+        [(2, 1), (2, 1), (1, 1, 1)],
+        [abjad.index([5, 6], 7)],
         ),
     )
 
@@ -167,7 +154,7 @@ maker.copy_rhythm(
     rhythm_maker__division_masks=None,
     )
 
-### pf, xyl [E8] ###
+### pf, xyl [D8] ###
 
 maker(
     ('PianoMusicVoice', 8),
@@ -199,7 +186,7 @@ maker(
     baca.staff_lines(5),
     )
 
-### pf, xyl [E10-11] ###
+### pf, xyl [D10-11] ###
 
 maker.copy_rhythm(
     ('PianoMusicVoice', 8),
@@ -213,7 +200,7 @@ maker.copy_rhythm(
     rhythm_maker__division_masks=[abjad.index([5], 7)],
     )
 
-### ob, cl [E5-7] & [E10-12] ###
+### ob, cl [D5-7] & [D10-12] ###
 
 maker(
     ('OboeMusicVoice', (5, 7)),
@@ -269,7 +256,7 @@ maker.copy_rhythm(
     ('ClarinetMusicVoice', (10, 12)),
     )
 
-### vn, va, vc [E11] & vn, va, vc, pf [E13] ###
+### vn, va, vc [D11] & vn, va, vc, pf [D13] ###
 
 maker(
     ('ViolinMusicVoice', 11),
@@ -337,7 +324,7 @@ maker(
     baca.clef('bass'),
     )
 
-### pf [E4-7] ###
+### pf [D4-7] ###
 
 maker.copy_rhythm(
     ('ViolaMusicVoice', 4),

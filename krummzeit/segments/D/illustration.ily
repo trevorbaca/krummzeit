@@ -6327,16 +6327,13 @@ D_ViolinMusicVoice = {
         a''8.
         \glissando                                               %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [D ViolinMusicVoice measure 172]                       %! SM4
-        fs''4
-        \glissando                                               %! SC
-        
-        c''2
-        \glissando                                               %! SC
-    }
+    
+    % [D ViolinMusicVoice measure 172]                           %! SM4
+    fs''4
+    \glissando                                                   %! SC
+    
+    c''2
+    \glissando                                                   %! SC
     \times 4/5 {
         
         af''16.
@@ -6538,15 +6535,12 @@ D_ViolinMusicVoice = {
         b''2
         \glissando                                               %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        a''2
-        \glissando                                               %! SC
-        
-        c''4.
-        \glissando                                               %! SC
-    }
+    
+    a''2
+    \glissando                                                   %! SC
+    
+    c''4.
+    \glissando                                                   %! SC
     \times 2/3 {
         
         % [D ViolinMusicVoice measure 183]                       %! SM4
@@ -6601,18 +6595,15 @@ D_ViolinMusicVoice = {
         d''8.
         \glissando                                               %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        b''4
-        \glissando                                               %! SC
-        
-        af''2
-        \revert NoteHead.style                                   %! OC2
-        \revert Beam.positions                                   %! OC2
-        \revert DynamicLineSpanner.staff-padding                 %! OC2
-        \revert TupletBracket.staff-padding                      %! OC2
-    }
+    
+    b''4
+    \glissando                                                   %! SC
+    
+    af''2
+    \revert NoteHead.style                                       %! OC2
+    \revert Beam.positions                                       %! OC2
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
+    \revert TupletBracket.staff-padding                          %! OC2
     
     % [D ViolinMusicVoice measure 186]                           %! SM4
     R1 * 9/8
@@ -6961,33 +6952,30 @@ D_ViolaMusicVoice = {
     \glissando                                                   %! SC
     
     cs8
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [D ViolaMusicVoice measure 159]                        %! SM4
-        \override NoteHead.style = #'harmonic                    %! OC1
-        \override Beam.positions = #'(-4 . -4)                   %! OC1
-        \override DynamicLineSpanner.staff-padding = #'6         %! OC1
-        \override TupletBracket.staff-padding = #3               %! OC1
-        \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
-        \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-    %@% \override ViolaMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-        \set ViolaMusicStaff.forceClef = ##t                     %! SM8:EXPLICIT_CLEF:SM33:IC
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-        a''8
-        \glissando                                               %! SC
-        \<                                                       %! HC1
-        \pp                                                      %! HC1
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "molto flautando ed estr. sul pont."         %! IC
-            }                                                    %! IC
-        \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
-        
-        c''4
-        \glissando                                               %! SC
-    }
+    
+    % [D ViolaMusicVoice measure 159]                            %! SM4
+    \override NoteHead.style = #'harmonic                        %! OC1
+    \override Beam.positions = #'(-4 . -4)                       %! OC1
+    \override DynamicLineSpanner.staff-padding = #'6             %! OC1
+    \override TupletBracket.staff-padding = #3                   %! OC1
+    \clef "treble"                                               %! SM8:EXPLICIT_CLEF:IC
+    \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override ViolaMusicStaff.Clef.color = ##f                   %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set ViolaMusicStaff.forceClef = ##t                         %! SM8:EXPLICIT_CLEF:SM33:IC
+    \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    a''8
+    \glissando                                                   %! SC
+    \<                                                           %! HC1
+    \pp                                                          %! HC1
+    ^ \markup {                                                  %! IC
+        \whiteout                                                %! IC
+            \upright                                             %! IC
+                "molto flautando ed estr. sul pont."             %! IC
+        }                                                        %! IC
+    \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+    
+    c''4
+    \glissando                                                   %! SC
     \times 4/5 {
         
         bf''16
@@ -7132,22 +7120,19 @@ D_ViolaMusicVoice = {
         c''8.
         \glissando                                               %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [D ViolaMusicVoice measure 166]                        %! SM4
-        a''4
-        \glissando                                               %! SC
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        b''2
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-    }
+    
+    % [D ViolaMusicVoice measure 166]                            %! SM4
+    a''4
+    \glissando                                                   %! SC
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    b''2
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
     \times 4/5 {
         
         \once \override Accidental.color = #red
@@ -7230,15 +7215,12 @@ D_ViolaMusicVoice = {
         d''4.
         \glissando                                               %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        a''8
-        \glissando                                               %! SC
-        
-        g''4
-        \glissando                                               %! SC
-    }
+    
+    a''8
+    \glissando                                                   %! SC
+    
+    g''4
+    \glissando                                                   %! SC
     \times 4/5 {
         
         % [D ViolaMusicVoice measure 169]                        %! SM4
@@ -7283,16 +7265,13 @@ D_ViolaMusicVoice = {
         cs''8.
         \glissando                                               %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [D ViolaMusicVoice measure 171]                        %! SM4
-        fs''4
-        \glissando                                               %! SC
-        
-        cs''2
-        \glissando                                               %! SC
-    }
+    
+    % [D ViolaMusicVoice measure 171]                            %! SM4
+    fs''4
+    \glissando                                                   %! SC
+    
+    cs''2
+    \glissando                                                   %! SC
     \times 4/5 {
         
         bf''16.
@@ -7311,15 +7290,12 @@ D_ViolaMusicVoice = {
         b''4.
         \glissando                                               %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        g''8
-        \glissando                                               %! SC
-        
-        cs''4
-        \glissando                                               %! SC
-    }
+    
+    g''8
+    \glissando                                                   %! SC
+    
+    cs''4
+    \glissando                                                   %! SC
     \times 4/5 {
         
         % [D ViolaMusicVoice measure 173]                        %! SM4
@@ -7386,23 +7362,20 @@ D_ViolaMusicVoice = {
     
     % [D ViolaMusicVoice measure 177]                            %! SM4
     R1 * 5/4
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [D ViolaMusicVoice measure 178]                        %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        c''4
-        \ff                                                      %! SM8:REDUNDANT_DYNAMIC:IC
-        \glissando                                               %! SC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "molto gridato ed estr. sul pont."           %! IC
-            }                                                    %! IC
-        
-        ef''2
-        \glissando                                               %! SC
-    }
+    
+    % [D ViolaMusicVoice measure 178]                            %! SM4
+    \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
+    c''4
+    \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
+    \glissando                                                   %! SC
+    ^ \markup {                                                  %! IC
+        \whiteout                                                %! IC
+            \upright                                             %! IC
+                "molto gridato ed estr. sul pont."               %! IC
+        }                                                        %! IC
+    
+    ef''2
+    \glissando                                                   %! SC
     \times 4/5 {
         
         fs''8
@@ -8117,15 +8090,12 @@ D_CelloMusicVoice = {
         cs''4.
         \glissando                                               %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        a''8
-        \glissando                                               %! SC
-        
-        cs''4
-        \glissando                                               %! SC
-    }
+    
+    a''8
+    \glissando                                                   %! SC
+    
+    cs''4
+    \glissando                                                   %! SC
     \times 4/5 {
         
         % [D CelloMusicVoice measure 172]                        %! SM4
@@ -8177,23 +8147,20 @@ D_CelloMusicVoice = {
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [D CelloMusicVoice measure 174]                        %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        b''8
-        \glissando                                               %! SC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        c''4
-        \glissando                                               %! SC
-    }
+    
+    % [D CelloMusicVoice measure 174]                            %! SM4
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    b''8
+    \glissando                                                   %! SC
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    c''4
+    \glissando                                                   %! SC
     \times 4/5 {
         
         cs''16
@@ -8359,15 +8326,12 @@ D_CelloMusicVoice = {
         a''8.
         \glissando                                               %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        d''8
-        \glissando                                               %! SC
-        
-        fs''4
-        \glissando                                               %! SC
-    }
+    
+    d''8
+    \glissando                                                   %! SC
+    
+    fs''4
+    \glissando                                                   %! SC
     \times 4/5 {
         
         % [D CelloMusicVoice measure 185]                        %! SM4

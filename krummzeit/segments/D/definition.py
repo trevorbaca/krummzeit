@@ -163,50 +163,42 @@ maker(
         ),
     )
 
-### pf, xyl [D8] ###
+# pf, xyl
 
 maker(
     ('PianoMusicVoice', 8),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByRoundedRatiosDivisionCallback(
-            ratios=[(1, 2), (2, 1)],
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            tuplet_ratios=[
-                (-1, 1, 1, 2),
-                (-1, 1, 1, -2, 2),
-                ],
-            tuplet_specifier=rhythmos.TupletSpecifier(
-                avoid_dots=True,
-                ),
-            ),
-        ),
-    )
-
-maker.copy_rhythm(
-    ('PianoMusicVoice', 8),
-    ('PercussionMusicVoice', 8),
-    division_maker__ratios=[(2, 1), (1, 2)],
+    krummzeit.silver_points([(1, 2), (2, 1)]),
     )
 
 maker(
     ('PercussionMusicVoice', 8),
     baca.clef('treble'),
     baca.staff_lines(5),
+    krummzeit.silver_points([(2, 1), (1, 2)]),
     )
 
-### pf, xyl [D10-11] ###
-
-maker.copy_rhythm(
-    ('PianoMusicVoice', 8),
+maker(
     ('PianoMusicVoice', (10, 11)),
-    rhythm_maker__division_masks=[abjad.index([2], 7)],
+    krummzeit.silver_points(
+        [(1, 2), (2, 1)],
+        division_mask=abjad.index([2], 7),
+        ),
     )
 
-maker.copy_rhythm(
-    ('PercussionMusicVoice', 8),
+#maker.copy_rhythm(
+#    ('PercussionMusicVoice', 8),
+#    ('PercussionMusicVoice', (10, 11)),
+#    rhythm_maker__division_masks=[abjad.index([5], 7)],
+#    )
+
+maker(
     ('PercussionMusicVoice', (10, 11)),
-    rhythm_maker__division_masks=[abjad.index([5], 7)],
+    baca.clef('treble'),
+    baca.staff_lines(5),
+    krummzeit.silver_points(
+        [(2, 1), (1, 2)],
+        division_mask=abjad.index([5], 7),
+        ),
     )
 
 ### ob, cl [D5-7] & [D10-12] ###

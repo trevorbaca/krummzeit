@@ -66,26 +66,15 @@ maker(
     krummzeit.markup.tam_tam(),
     )
 
-### vn, vc [E1-5] & va [E1-3] (white OB bowing) ###
+# vn, va, vc
 
 maker(
-    ('ViolinMusicVoice', (1, 5)),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByDurationsDivisionCallback(
-            durations=[(1, 4)],
-            ),
-        rhythm_maker=rhythmos.NoteRhythmMaker(),
+    baca.scopes(
+        ('ViolinMusicVoice', (1, 5)),
+        ('ViolaMusicVoice', (1, 3)),
+        ('CelloMusicVoice', (1, 5)),
         ),
-    )
-
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 1),
-    ('CelloMusicVoice', (1, 5)),
-    )
-
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 1),
-    ('ViolaMusicVoice', (1, 3)),
+    krummzeit.right_remainder_quarters(),
     )
 
 ### sponges [E3-6] ###

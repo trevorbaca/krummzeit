@@ -1041,8 +1041,8 @@ G_OboeMusicVoice = {
             #16                                                  %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
             Ob.                                                  %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         }                                                        %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-    \override Stem.direction = #up                               %! OC1
     \override DynamicLineSpanner.staff-padding = #'5             %! OC1
+    \override Stem.direction = #up                               %! OC1
     \clef "treble"                                               %! SM8:REAPPLIED_CLEF:SM37
     \once \override OboeMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
 %@% \override OboeMusicStaff.Clef.color = ##f                    %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
@@ -1118,8 +1118,8 @@ G_OboeMusicVoice = {
     % [G OboeMusicVoice measure 263]                             %! SM4
     b2.
     \repeatTie
-    \revert Stem.direction                                       %! OC2
     \revert DynamicLineSpanner.staff-padding                     %! OC2
+    \revert Stem.direction                                       %! OC2
     
     % [G OboeMusicVoice measure 264]                             %! SM4
     R1 * 3/4
@@ -1128,8 +1128,8 @@ G_OboeMusicVoice = {
         % [G OboeMusicVoice measure 265]                         %! SM4
         \override DynamicLineSpanner.staff-padding = #'7         %! OC1
         \override Beam.positions = #'(-4 . -4)                   %! OC1
-        \override TupletBracket.staff-padding = #3               %! OC1
         \override DynamicLineSpanner.staff-padding = #'5         %! OC1
+        \override TupletBracket.staff-padding = #3               %! OC1
         \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         fs''8
         -\staccato                                               %! IC
@@ -1354,8 +1354,8 @@ G_OboeMusicVoice = {
         -\staccato                                               %! IC
         ]
         \revert Beam.positions                                   %! OC2
-        \revert TupletBracket.staff-padding                      %! OC2
         \revert DynamicLineSpanner.staff-padding                 %! OC2
+        \revert TupletBracket.staff-padding                      %! OC2
     }
     
     % [G OboeMusicVoice measure 269]                             %! SM4
@@ -1457,8 +1457,8 @@ G_ClarinetMusicVoice = {
             #16                                                  %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
             "B. cl."                                             %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         }                                                        %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-    \override Stem.direction = #up                               %! OC1
     \override DynamicLineSpanner.staff-padding = #'8             %! OC1
+    \override Stem.direction = #up                               %! OC1
     \clef "treble"                                               %! SM8:REAPPLIED_CLEF:SM37
     \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
 %@% \override ClarinetMusicStaff.Clef.color = ##f                %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
@@ -1529,8 +1529,8 @@ G_ClarinetMusicVoice = {
     cs2
     \repeatTie
     \ff                                                          %! HC1
-    \revert Stem.direction                                       %! OC2
     \revert DynamicLineSpanner.staff-padding                     %! OC2
+    \revert Stem.direction                                       %! OC2
     
     % [G ClarinetMusicVoice measure 262]                         %! SM4
     R1 * 3/4
@@ -1819,8 +1819,8 @@ G_PianoMusicVoice = {
         
         % [G PianoMusicVoice measure 261]                        %! SM4
         \override Beam.positions = #'(-4 . -4)                   %! OC1
-        \override TupletBracket.staff-padding = #3               %! OC1
         \override DynamicLineSpanner.staff-padding = #'7         %! OC1
+        \override TupletBracket.staff-padding = #3               %! OC1
         \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
         \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
     %@% \override PianoMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
@@ -2095,8 +2095,8 @@ G_PianoMusicVoice = {
         -\staccato                                               %! IC
         ]
         \revert Beam.positions                                   %! OC2
-        \revert TupletBracket.staff-padding                      %! OC2
         \revert DynamicLineSpanner.staff-padding                 %! OC2
+        \revert TupletBracket.staff-padding                      %! OC2
     }
     
     % [G PianoMusicVoice measure 268]                            %! SM4
@@ -2459,8 +2459,8 @@ G_ViolinMusicVoice = {
     
     % [G ViolinMusicVoice measure 261]                           %! SM4
     \override Beam.positions = #'(-4 . -4)                       %! OC1
-    \override TupletBracket.staff-padding = #3                   %! OC1
     \override DynamicLineSpanner.staff-padding = #'5             %! OC1
+    \override TupletBracket.staff-padding = #3                   %! OC1
     \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     e''8
     -\staccato                                                   %! IC
@@ -2767,8 +2767,8 @@ G_ViolinMusicVoice = {
     g''4.
     -\staccato                                                   %! IC
     \revert Beam.positions                                       %! OC2
-    \revert TupletBracket.staff-padding                          %! OC2
     \revert DynamicLineSpanner.staff-padding                     %! OC2
+    \revert TupletBracket.staff-padding                          %! OC2
     
     % [G ViolinMusicVoice measure 269]                           %! SM4
     R1 * 1/4

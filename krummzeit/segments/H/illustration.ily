@@ -548,24 +548,10 @@ H_OboeMusicVoice = {
         
         % [H OboeMusicVoice measure 288]                         %! SM4
         \override TupletBracket.staff-padding = #2               %! OC1
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         ef''2.
         \stopTrillSpan                                           %! SC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         ef''2
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -578,14 +564,7 @@ H_OboeMusicVoice = {
     \times 7/5 {
         
         % [H OboeMusicVoice measure 290]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         ef''2.
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -594,14 +573,7 @@ H_OboeMusicVoice = {
                         2
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         ef''2
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -710,38 +682,16 @@ H_ClarinetMusicVoice = {
         \override Stem.direction = #up                           %! OC1
         \override DynamicLineSpanner.staff-padding = #'9         %! OC1
         \override TupletBracket.staff-padding = #5               %! OC1
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
         f4
         \ff                                                      %! SM8:REDUNDANT_DYNAMIC:IC
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                        {                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                            \with-color                          %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                                #(x11-color 'blue)               %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                                (“BassClarinet”)                 %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                        }                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
-                }
-            }
+        ^ \markup {                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            \with-color                                          %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                #(x11-color 'blue)                               %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                (“BassClarinet”)                                 %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            }                                                    %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         f1
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -754,14 +704,7 @@ H_ClarinetMusicVoice = {
     \times 7/5 {
         
         % [H ClarinetMusicVoice measure 290]                     %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         f4
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -770,14 +713,7 @@ H_ClarinetMusicVoice = {
                         2
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         f1
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2623,40 +2559,18 @@ H_PianoMusicVoice = {
     \times 9/7 {
         
         % [H PianoMusicVoice measure 289]                        %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         fs'''2.
         :32                                                      %! IC
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                        {                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                            \with-color                          %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                                #(x11-color 'blue)               %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                                (“Piano”)                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                        }                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
-                }
-            }
+        ^ \markup {                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            \with-color                                          %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                #(x11-color 'blue)                               %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                (“Piano”)                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            }                                                    %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         fs'''1
         :32                                                      %! IC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
         
@@ -2814,11 +2728,6 @@ H_PercussionMusicVoice = {
     \times 9/7 {
         
         % [H PercussionMusicVoice measure 289]                   %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
         \once \override PercussionMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
     %@% \override PercussionMusicStaff.Clef.color = ##f          %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
@@ -2827,32 +2736,15 @@ H_PercussionMusicVoice = {
         fs''4
         :32                                                      %! IC
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                        {                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                            \with-color                          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                                #(x11-color 'DeepPink1)          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                                (“Xylophone”)                    %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                        }                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
-                }
-            }
+        ^ \markup {                                              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+            \with-color                                          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                #(x11-color 'DeepPink1)                          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                (“Xylophone”)                                    %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+            }                                                    %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
         \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         fs''1.
         :32                                                      %! IC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
         \revert TupletBracket.staff-padding                      %! OC2
         
     }
@@ -2885,11 +2777,6 @@ H_ViolinMusicVoice = {
         \stopStaff                                               %! SM8:REAPPLIED_STAFF_LINES:SM37
         \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! SM8:REAPPLIED_STAFF_LINES:SM37
         \startStaff                                              %! SM8:REAPPLIED_STAFF_LINES:SM37
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \clef "treble"                                           %! SM8:REAPPLIED_CLEF:SM37
         \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
     %@% \override ViolinMusicStaff.Clef.color = ##f              %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
@@ -2915,10 +2802,6 @@ H_ViolinMusicVoice = {
                                 #(x11-color 'green4)             %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                                 [“Vn.”]                          %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                         }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
                 }
             }
         \override ViolinMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
@@ -2936,15 +2819,8 @@ H_ViolinMusicVoice = {
                 Vn.                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
             }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         df'2
         :32                                                      %! IC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
     }
     \times 2/3 {
         
@@ -3103,11 +2979,6 @@ H_ViolaMusicVoice = {
                 #16                                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
                 Va.                                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
             }                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \clef "alto"                                             %! SM8:REAPPLIED_CLEF:SM37
         \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
     %@% \override ViolaMusicStaff.Clef.color = ##f               %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
@@ -3132,10 +3003,6 @@ H_ViolaMusicVoice = {
                                 #(x11-color 'green4)             %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                                 [“Va.”]                          %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                         }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
                 }
             }
         \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
@@ -3153,15 +3020,8 @@ H_ViolaMusicVoice = {
                 Va.                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
             }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         c1
         :32                                                      %! IC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/9 {
@@ -3314,11 +3174,6 @@ H_CelloMusicVoice = {
                 #16                                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
                 Vc.                                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
             }                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \clef "bass"                                             %! SM8:REAPPLIED_CLEF:SM37
         \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
     %@% \override CelloMusicStaff.Clef.color = ##f               %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
@@ -3343,10 +3198,6 @@ H_CelloMusicVoice = {
                                 #(x11-color 'green4)             %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                                 [“Vc.”]                          %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                         }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
                 }
             }
         \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
@@ -3364,15 +3215,8 @@ H_CelloMusicVoice = {
                 Vc.                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
             }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         c,2.
         :32                                                      %! IC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
     }
     \times 2/3 {
         

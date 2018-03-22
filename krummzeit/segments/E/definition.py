@@ -173,8 +173,6 @@ maker(
     krummzeit.rest_delimited_repeated_duration_notes((1, 4), 32),
     )
 
-### ob, vn [E18-22] interweave (layer 2) ###
-
 maker(
     baca.scopes(
         ('OboeMusicVoice', (18, 22)),
@@ -183,31 +181,13 @@ maker(
     krummzeit.detached_triplets(),
     )
 
-### pf [E19-20] & [E22] pointillism ###
-
 maker(
-    ('PianoMusicVoice', (19, 20)),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.TaleaRhythmMaker(
-            talea=rhythmos.Talea(
-                counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
-                denominator=16,
-                ),
-            split_divisions_by_counts=[6, 18],
-            extra_counts_per_division=[2, 2, 0, 2, 4, 6],
-            division_masks=[abjad.index([0, 4, 5], 6)],
-            ),
+    baca.scopes(
+        ('PianoMusicVoice', (19, 20)),
+        ('PianoMusicVoice', 22),
         ),
+    krummzeit.pizzicato_rhythm(masks=[abjad.index([0, 4, 5], 6)]),
     )
-
-maker.copy_rhythm(
-    ('PianoMusicVoice', 19),
-    ('PianoMusicVoice', 22),
-    )
-
-###############################################################################
-#################################### COLOR ####################################
-###############################################################################
 
 ### (6.1) ob, cl ###
 

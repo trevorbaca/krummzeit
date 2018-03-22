@@ -5032,24 +5032,21 @@ E_PianoMusicVoice = {
         -\staccatissimo                                          %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [E PianoMusicVoice measure 230]                        %! SM4
-        e''''8
-        [
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        c''''8
-        -\staccatissimo                                          %! IC
-        ]
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-    }
+    
+    % [E PianoMusicVoice measure 230]                            %! SM4
+    e''''8
+    [
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    c''''8
+    -\staccatissimo                                              %! IC
+    ]
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
@@ -5089,19 +5086,16 @@ E_PianoMusicVoice = {
         -\staccatissimo                                          %! IC
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [E PianoMusicVoice measure 233]                        %! SM4
-        e''''8
-        
-        fs''''4
-        -\staccatissimo                                          %! IC
-        
-        g''''4
-        -\staccatissimo                                          %! IC
-        \ottava #0                                               %! SC
-    }
+    
+    % [E PianoMusicVoice measure 233]                            %! SM4
+    e''''8
+    
+    fs''''4
+    -\staccatissimo                                              %! IC
+    
+    g''''4
+    -\staccatissimo                                              %! IC
+    \ottava #0                                                   %! SC
     
     % [E PianoMusicVoice measure 234]                            %! SM4
     R1 * 9/8

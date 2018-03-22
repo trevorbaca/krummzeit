@@ -160,56 +160,17 @@ maker(
     krummzeit.rest_delimited_repeated_duration_notes((1, 2), 16),
     )
 
-### cl, va, vc [E16-19] & [E22-23] 3rd-octave interweave ###
-
 maker(
-    ('ClarinetMusicVoice', (16, 19)),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                durations=[(1, 4)],
-                remainder=abjad.Right,
-                ),
-            ),
-        rhythm_maker=rhythmos.IncisedRhythmMaker(
-            incise_specifier=rhythmos.InciseSpecifier(
-                suffix_talea=[-1],
-                suffix_counts=[1],
-                talea_denominator=32,
-                ),
-            ),
+    baca.scopes(
+        ('ClarinetMusicVoice', (16, 19)),
+        ('ClarinetMusicVoice', (22, 23)),
+        ('PianoMusicVoice', (16, 18)),
+        ('ViolaMusicVoice', (16, 19)),
+        ('ViolaMusicVoice', (22, 23)),
+        ('CelloMusicVoice', (16, 19)),
+        ('CelloMusicVoice', (22, 23)),
         ),
-    )
-
-maker.copy_rhythm(
-    ('ClarinetMusicVoice', 16),
-    ('ClarinetMusicVoice', (22, 23)),
-    )
-
-maker.copy_rhythm(
-    ('ClarinetMusicVoice', 16),
-    ('ViolaMusicVoice', 16),
-    )
-
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 16),
-    ('ViolaMusicVoice', (22, 23)),
-    )
-
-maker.copy_rhythm(
-    ('ClarinetMusicVoice', 16),
-    ('CelloMusicVoice', 16),
-    )
-
-maker.copy_rhythm(
-    ('CelloMusicVoice', 16),
-    ('CelloMusicVoice', (22, 23)),
-    )
-
-maker.copy_rhythm(
-    ('ClarinetMusicVoice', 16),
-    ('PianoMusicVoice', (16, 18)),
+    krummzeit.rest_delimited_repeated_duration_notes((1, 4), 32),
     )
 
 ### ob, vn [E18-22] interweave (layer 2) ###

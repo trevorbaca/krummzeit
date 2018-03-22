@@ -183,43 +183,20 @@ maker(
     krummzeit.hypermeter_tuplets([(3, 2)]),
     )
 
-### vn, va, vc [G20-21] reiteration ###
-
 maker(
     ('ViolinMusicVoice', 21),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=[3],
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            denominator=(1, 4),
-            tuplet_ratios=[(3, 2)],
-            tuplet_specifier=rhythmos.TupletSpecifier(
-                avoid_dots=True,
-                diminution=False,
-                ),
-            ),
-        ),
+    krummzeit.hypermeter_tuplets([(3, 2)], [3]),
     )
 
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 21),
-    ('ViolaMusicVoice', (20, 21)),  # ?
-    division_maker__counts=[2],
-    rhythm_maker__tuplet_ratios=[(1, 4)],
+maker(
+    ('ViolaMusicVoice', (20, 21)),
+    krummzeit.hypermeter_tuplets([(1, 4)], [2]),
     )
 
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 21),
+maker(
     ('CelloMusicVoice', 21),
-    rhythm_maker__tuplet_ratios=[(1, 4)],
+    krummzeit.hypermeter_tuplets([(1, 4)], [3]),
     )
-
-###############################################################################
-#################################### COLOR ####################################
-###############################################################################
-
-### (2) color ###
 
 maker(
     ('ClarinetMusicVoice', (1, 5)),

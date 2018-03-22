@@ -67,15 +67,7 @@ maker(
 maker(
     ('ClarinetMusicVoice', (1, 2)),
     baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                durations=[(4, 1)],
-                ),
-            ),
-        rhythm_maker=rhythmos.NoteRhythmMaker()
-        ),
+    baca.make_repeated_duration_notes([(16, 4)]),
     )
 
 ### pf, vn, va, vc [E2] ###

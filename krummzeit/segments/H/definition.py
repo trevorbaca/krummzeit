@@ -72,16 +72,20 @@ maker(
         ),
     )
 
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 2),
-    ('ViolaMusicVoice', (2, 4)),  # ?
-    division_maker__ratios=[(2, 1), (1, 1, 1), (1, 2)],
+maker(
+    ('ViolaMusicVoice', (2, 4)),
+    krummzeit.glissando_rhythm(
+        [(2, 1), (1, 1, 1), (1, 2)],
+        tie_across_divisions=[0, 1],
+        ),
     )
 
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 2),
-    ('CelloMusicVoice', (2, 4)),  # ?
-    division_maker__ratios=[(1, 1, 1), (1, 2), (2, 1)],
+maker(
+    ('CelloMusicVoice', (2, 4)),
+    krummzeit.glissando_rhythm(
+        [(1, 1, 1), (1, 2), (2, 1)],
+        tie_across_divisions=[0, 1],
+        ),
     )
 
 ### harpsichord [H1-5] clusters (11.1) ###

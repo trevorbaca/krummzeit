@@ -59,13 +59,9 @@ maker(
 maker(
     baca.scopes(
         ('OboeMusicVoice', 1),
+        ('OboeMusicVoice', 2),
         ),
     krummzeit.oboe_trills(),
-    )
-
-maker.copy_rhythm(
-    ('OboeMusicVoice', 1),
-    ('OboeMusicVoice', 2),
     )
 
 maker(

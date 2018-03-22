@@ -15,6 +15,7 @@ from .incise_attacks import incise_attacks
 from .incise_chain import incise_chain
 from .incise_chain_b import incise_chain_b
 from .instrument import instrument
+from .left_remainder_quarters import left_remainder_quarters
 from .margin_markup import margin_markup
 from .oboe_trills import oboe_trills
 from .opening_triplets import opening_triplets

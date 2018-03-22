@@ -88,40 +88,15 @@ maker(
         ),
     )
 
-### harpsichord [H1-5] clusters (11.1) ###
-
 maker(
     ('PianoMusicVoice', (1, 5)),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                durations=[(1, 4)],
-                ),
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            tuplet_ratios=[(1, 1, 1)],
-            ),
-        ),
+    krummzeit.opening_triplets(division_masks=None),
     )
-
-### crotales [H4-5] (11.1) ###
 
 maker(
     ('PercussionMusicVoice', (4, 5)),
     baca.clef('percussion'),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                durations=[(1, 4)],
-                remainder=abjad.Left,
-                ),
-            ),
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            division_masks=[abjad.index([0])],
-            ),
-        ),
+    krummzeit.left_remainder_quarters([abjad.index([0])]),
     krummzeit.markup.crotales(),
     )
 

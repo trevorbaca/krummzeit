@@ -42,31 +42,14 @@ maker(
     )
 
 maker(
-    ('ViolaMusicVoice', (2, 4)),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                durations=[(1, 4)],
-                remainder=abjad.Right,
-                ),
-            ),
-        rhythm_maker=rhythmos.IncisedRhythmMaker(
-            incise_specifier=rhythmos.InciseSpecifier(
-                suffix_talea=[-1],
-                suffix_counts=[1],
-                talea_denominator=32,
-                ),
-            ),
+    baca.scopes(
+        ('ViolaMusicVoice', (2, 4)),
+        ('CelloMusicVoice', (2, 4)),
         ),
+    krummzeit.rest_delimited_repeated_duration_notes((1, 4), 32),
     )
 
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 2),
-    ('CelloMusicVoice', 2),
-    )
-
-### snare [G2], [G4-6], [G9], [G11]; tam-tam [G13-14] ###
+### snare [F2], [F4-6], [F9], [F11]; tam-tam [F13-14] ###
 
 maker(
     ('PercussionMusicVoice', 1),
@@ -117,7 +100,7 @@ maker(
     krummzeit.markup.tam_tam(),
     )
 
-### harpsichord [G3-6], [G9], [G11] ###
+### harpsichord [F3-6], [F9], [F11] ###
 
 maker(
     ('PianoMusicVoice', (3, 6)),
@@ -152,7 +135,7 @@ maker.copy_rhythm(
     ('PianoMusicVoice', 11),
     )
 
-### vn, va, vc [G5-13] unrestrained ###
+### vn, va, vc [F5-13] unrestrained ###
 
 maker(
     ('ViolinMusicVoice', (5, 13)),
@@ -185,7 +168,7 @@ maker.copy_rhythm(
     rhythm_maker__division_masks=[abjad.index([0, 1])],
     )
 
-### ob, cl [G3-7] ###
+### ob, cl [F3-7] ###
 
 maker(
     ('OboeMusicVoice', (3, 7)),
@@ -217,7 +200,7 @@ maker(
     baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
     )
 
-### bass clarinet [G11-14] myrkr ###
+### bass clarinet [F11-14] myrkr ###
 
 maker(
     ('ClarinetMusicVoice', (11, 14)),

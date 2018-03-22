@@ -5117,88 +5117,85 @@ E_PianoMusicStaff = {
 
 
 E_PercussionMusicVoice = {
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        % [E PercussionMusicVoice measure 200]                   %! SM4
-        \set Staff.instrumentName =                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        \markup {                                                %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-            \hcenter-in                                          %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-                #16                                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-                Perc.                                            %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-            }                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        \set Staff.shortInstrumentName =                         %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        \markup {                                                %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-            \hcenter-in                                          %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-                #16                                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-                Perc.                                            %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-            }                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        \stopStaff                                               %! SM8:REAPPLIED_STAFF_LINES:SM37
-        \once \override PercussionMusicStaff.StaffSymbol.line-count = 1 %! SM8:REAPPLIED_STAFF_LINES:SM37
-        \startStaff                                              %! SM8:REAPPLIED_STAFF_LINES:SM37
-        \clef "percussion"                                       %! SM8:REAPPLIED_CLEF:SM37
-        \once \override PercussionMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
-    %@% \override PercussionMusicStaff.Clef.color = ##f          %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-        \set PercussionMusicStaff.forceClef = ##t                %! SM8:REAPPLIED_CLEF:SM33:SM37
-        \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
-        \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
-        \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-        \makeBlue                                                %! SM24
-        c2
-        :32                                                      %! IC
-        \ppp                                                     %! SM8:REAPPLIED_DYNAMIC:SM37
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                        {                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                            \with-color                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                                #(x11-color 'green4)             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                                (“Xylophone”)                    %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                        }                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                    \line                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-                        {                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-                            \with-color                          %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-                                #(x11-color 'green4)             %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-                                [“Perc.”]                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-                        }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-                    \line                                        %! IC
-                        {                                        %! IC
-                            \whiteout                            %! IC
-                                \upright                         %! IC
-                                    \override                    %! IC
-                                        #'(box-padding . 0.5)    %! IC
-                                        \box                     %! IC
-                                            "suspended cymbal"   %! IC
-                        }                                        %! IC
-                }
+    
+    % [E PercussionMusicVoice measure 200]                       %! SM4
+    \set Staff.instrumentName =                                  %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
+    \markup {                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
+        \hcenter-in                                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
+            #16                                                  %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
+            Perc.                                                %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
+        }                                                        %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
+    \set Staff.shortInstrumentName =                             %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
+    \markup {                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
+        \hcenter-in                                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
+            #16                                                  %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
+            Perc.                                                %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
+        }                                                        %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
+    \stopStaff                                                   %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \once \override PercussionMusicStaff.StaffSymbol.line-count = 1 %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \startStaff                                                  %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \clef "percussion"                                           %! SM8:REAPPLIED_CLEF:SM37
+    \once \override PercussionMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+%@% \override PercussionMusicStaff.Clef.color = ##f              %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+    \set PercussionMusicStaff.forceClef = ##t                    %! SM8:REAPPLIED_CLEF:SM33:SM37
+    \once \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
+    \once \override PercussionMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
+    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
+    \makeBlue                                                    %! SM24
+    c4.
+    :32                                                          %! IC
+    \ppp                                                         %! SM8:REAPPLIED_DYNAMIC:SM37
+    ^ \markup {
+        \column
+            {
+                \line                                            %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                    {                                            %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                        \with-color                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                            #(x11-color 'green4)                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                            (“Xylophone”)                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                    }                                            %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                \line                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
+                    {                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
+                        \with-color                              %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
+                            #(x11-color 'green4)                 %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
+                            [“Perc.”]                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
+                    }                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
+                \line                                            %! IC
+                    {                                            %! IC
+                        \whiteout                                %! IC
+                            \upright                             %! IC
+                                \override                        %! IC
+                                    #'(box-padding . 0.5)        %! IC
+                                    \box                         %! IC
+                                        "suspended cymbal"       %! IC
+                    }                                            %! IC
             }
-        \override PercussionMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
-        \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
-        \set PercussionMusicStaff.instrumentName =               %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-        \markup {                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-            \hcenter-in                                          %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-                #16                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-                Perc.                                            %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-            }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-        \set PercussionMusicStaff.shortInstrumentName =          %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-        \markup {                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-            \hcenter-in                                          %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-                #16                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-                Perc.                                            %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-            }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-        
-        \makeBlue                                                %! SM24
-        c2
-        :32                                                      %! IC
-        ~
-    }
+        }
+    \override PercussionMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+    \override PercussionMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
+    \set PercussionMusicStaff.instrumentName =                   %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
+    \markup {                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
+        \hcenter-in                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
+            #16                                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
+            Perc.                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
+        }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
+    \set PercussionMusicStaff.shortInstrumentName =              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
+    \markup {                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
+        \hcenter-in                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
+            #16                                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
+            Perc.                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
+        }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
+    
+    \makeBlue                                                    %! SM24
+    c4.
+    :32                                                          %! IC
     \times 2/3 {
         
         % [E PercussionMusicVoice measure 201]                   %! SM4
         \makeBlue                                                %! SM24
         c2
         :32                                                      %! IC
+        \repeatTie
         
         \makeBlue                                                %! SM24
         c2
@@ -5207,25 +5204,21 @@ E_PercussionMusicVoice = {
         \makeBlue                                                %! SM24
         c2
         :32                                                      %! IC
-        ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [E PercussionMusicVoice measure 202]                   %! SM4
-        \makeBlue                                                %! SM24
-        c2
-        :32                                                      %! IC
-        
-        \makeBlue                                                %! SM24
-        c2
-        :32                                                      %! IC
-        
-        \makeBlue                                                %! SM24
-        c2
-        :32                                                      %! IC
-        ~
-    }
+    
+    % [E PercussionMusicVoice measure 202]                       %! SM4
+    \makeBlue                                                    %! SM24
+    c2
+    :32                                                          %! IC
+    \repeatTie
+    
+    \makeBlue                                                    %! SM24
+    c2
+    :32                                                          %! IC
+    
+    \makeBlue                                                    %! SM24
+    c2
+    :32                                                          %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/17 {
         
@@ -5233,6 +5226,7 @@ E_PercussionMusicVoice = {
         \makeBlue                                                %! SM24
         c2
         :32                                                      %! IC
+        \repeatTie
         
         \makeBlue                                                %! SM24
         c2
@@ -5245,33 +5239,31 @@ E_PercussionMusicVoice = {
         \makeBlue                                                %! SM24
         c8
         :32                                                      %! IC
-        ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
         
         % [E PercussionMusicVoice measure 204]                   %! SM4
+        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
         \makeBlue                                                %! SM24
         c4.
         :32                                                      %! IC
+        \repeatTie
         
         \makeBlue                                                %! SM24
         c2..
         :32                                                      %! IC
-        ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [E PercussionMusicVoice measure 205]                   %! SM4
-        \makeBlue                                                %! SM24
-        c8
-        :32                                                      %! IC
-        
-        \makeBlue                                                %! SM24
-        c2
-        :32                                                      %! IC
-    }
+    
+    % [E PercussionMusicVoice measure 205]                       %! SM4
+    \makeBlue                                                    %! SM24
+    c8
+    :32                                                          %! IC
+    \repeatTie
+    
+    \makeBlue                                                    %! SM24
+    c2
+    :32                                                          %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/17 {
         
@@ -5287,20 +5279,21 @@ E_PercussionMusicVoice = {
         \makeBlue                                                %! SM24
         c2
         :32                                                      %! IC
-        ~
         
         \makeBlue                                                %! SM24
         c8
         :32                                                      %! IC
-        ~
+        \repeatTie
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/13 {
         
         % [E PercussionMusicVoice measure 207]                   %! SM4
+        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
         \makeBlue                                                %! SM24
         c4.
         :32                                                      %! IC
+        \repeatTie
         
         \makeBlue                                                %! SM24
         c2
@@ -5309,21 +5302,17 @@ E_PercussionMusicVoice = {
         \makeBlue                                                %! SM24
         c2.
         :32                                                      %! IC
-        ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [E PercussionMusicVoice measure 208]                   %! SM4
-        \makeBlue                                                %! SM24
-        c4
-        :32                                                      %! IC
-        
-        \makeBlue                                                %! SM24
-        c4.
-        :32                                                      %! IC
-        ~
-    }
+    
+    % [E PercussionMusicVoice measure 208]                       %! SM4
+    \makeBlue                                                    %! SM24
+    c4
+    :32                                                          %! IC
+    \repeatTie
+    
+    \makeBlue                                                    %! SM24
+    c4.
+    :32                                                          %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/8 {
         
@@ -5331,11 +5320,12 @@ E_PercussionMusicVoice = {
         \makeBlue                                                %! SM24
         c8
         :32                                                      %! IC
+        \repeatTie
         
+        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
         \makeBlue                                                %! SM24
         c2..
         :32                                                      %! IC
-        ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -5344,27 +5334,11 @@ E_PercussionMusicVoice = {
         \makeBlue                                                %! SM24
         c8
         :32                                                      %! IC
+        \repeatTie
         
+        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
         \makeBlue                                                %! SM24
         c2
-        :32                                                      %! IC
-        
-        \makeBlue                                                %! SM24
-        c2
-        :32                                                      %! IC
-        ~
-        
-        \makeBlue                                                %! SM24
-        c8
-        :32                                                      %! IC
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [E PercussionMusicVoice measure 211]                   %! SM4
-        \makeBlue                                                %! SM24
-        c4.
         :32                                                      %! IC
         
         \makeBlue                                                %! SM24
@@ -5374,8 +5348,23 @@ E_PercussionMusicVoice = {
         \makeBlue                                                %! SM24
         c8
         :32                                                      %! IC
-        ~
+        \repeatTie
     }
+    
+    % [E PercussionMusicVoice measure 211]                       %! SM4
+    \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie       %! SM26
+    \makeBlue                                                    %! SM24
+    c4.
+    :32                                                          %! IC
+    \repeatTie
+    
+    \makeBlue                                                    %! SM24
+    c2
+    :32                                                          %! IC
+    
+    \makeBlue                                                    %! SM24
+    c8
+    :32                                                          %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/9 {
         
@@ -5383,6 +5372,7 @@ E_PercussionMusicVoice = {
         \makeBlue                                                %! SM24
         c2..
         :32                                                      %! IC
+        \repeatTie
         
         \makeBlue                                                %! SM24
         c2
@@ -5391,7 +5381,6 @@ E_PercussionMusicVoice = {
         \makeBlue                                                %! SM24
         c2..
         :32                                                      %! IC
-        ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/7 {
@@ -5400,7 +5389,9 @@ E_PercussionMusicVoice = {
         \makeBlue                                                %! SM24
         c8
         :32                                                      %! IC
+        \repeatTie
         
+        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
         \makeBlue                                                %! SM24
         c2
         :32                                                      %! IC
@@ -5991,27 +5982,32 @@ E_PercussionMusicVoice = {
     
     % [E PercussionMusicVoice measure 226]                       %! SM4
     R1 * 3/4
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        % [E PercussionMusicVoice measure 227]                   %! SM4
-        \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeBlue                                                %! SM24
-        c2
-        :32                                                      %! IC
-        \pp                                                      %! SM8:EXPLICIT_DYNAMIC:IC
-        
-        \makeBlue                                                %! SM24
-        c2
-        :32                                                      %! IC
-        ~
-    }
+    
+    % [E PercussionMusicVoice measure 227]                       %! SM4
+    \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \makeBlue                                                    %! SM24
+    c4.
+    :32                                                          %! IC
+    \pp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
+    ^ \markup {                                                  %! IC
+        \whiteout                                                %! IC
+            \upright                                             %! IC
+                \override                                        %! IC
+                    #'(box-padding . 0.5)                        %! IC
+                    \box                                         %! IC
+                        "suspended cymbal"                       %! IC
+        }                                                        %! IC
+    
+    \makeBlue                                                    %! SM24
+    c4.
+    :32                                                          %! IC
     \times 2/3 {
         
         % [E PercussionMusicVoice measure 228]                   %! SM4
         \makeBlue                                                %! SM24
         c2
         :32                                                      %! IC
+        \repeatTie
         
         \makeBlue                                                %! SM24
         c2
@@ -6020,38 +6016,31 @@ E_PercussionMusicVoice = {
         \makeBlue                                                %! SM24
         c2
         :32                                                      %! IC
-        ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [E PercussionMusicVoice measure 229]                   %! SM4
-        \makeBlue                                                %! SM24
-        c2
-        :32                                                      %! IC
-        
-        \makeBlue                                                %! SM24
-        c2
-        :32                                                      %! IC
-        
-        \makeBlue                                                %! SM24
-        c4
-        :32                                                      %! IC
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [E PercussionMusicVoice measure 230]                   %! SM4
-        \makeBlue                                                %! SM24
-        c2.
-        :32                                                      %! IC
-        
-        \makeBlue                                                %! SM24
-        c4
-        :32                                                      %! IC
-        ~
-    }
+    
+    % [E PercussionMusicVoice measure 229]                       %! SM4
+    \makeBlue                                                    %! SM24
+    c2
+    :32                                                          %! IC
+    \repeatTie
+    
+    \makeBlue                                                    %! SM24
+    c2
+    :32                                                          %! IC
+    
+    \makeBlue                                                    %! SM24
+    c4
+    :32                                                          %! IC
+    
+    % [E PercussionMusicVoice measure 230]                       %! SM4
+    \makeBlue                                                    %! SM24
+    c2.
+    :32                                                          %! IC
+    \repeatTie
+    
+    \makeBlue                                                    %! SM24
+    c4
+    :32                                                          %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/13 {
         
@@ -6059,6 +6048,7 @@ E_PercussionMusicVoice = {
         \makeBlue                                                %! SM24
         c4
         :32                                                      %! IC
+        \repeatTie
         
         \makeBlue                                                %! SM24
         c1
@@ -6067,26 +6057,22 @@ E_PercussionMusicVoice = {
         \makeBlue                                                %! SM24
         c4.
         :32                                                      %! IC
-        ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [E PercussionMusicVoice measure 232]                   %! SM4
-        \makeBlue                                                %! SM24
-        c8
-        :32                                                      %! IC
-        
-        \makeBlue                                                %! SM24
-        c2
-        :32                                                      %! IC
-        ~
-        
-        \makeBlue                                                %! SM24
-        c8
-        :32                                                      %! IC
-        ~
-    }
+    
+    % [E PercussionMusicVoice measure 232]                       %! SM4
+    \makeBlue                                                    %! SM24
+    c8
+    :32                                                          %! IC
+    \repeatTie
+    
+    \makeBlue                                                    %! SM24
+    c2
+    :32                                                          %! IC
+    
+    \makeBlue                                                    %! SM24
+    c8
+    :32                                                          %! IC
+    \repeatTie
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/8 {
         
@@ -6094,6 +6080,7 @@ E_PercussionMusicVoice = {
         \makeBlue                                                %! SM24
         c4.
         :32                                                      %! IC
+        \repeatTie
         
         \makeBlue                                                %! SM24
         c2

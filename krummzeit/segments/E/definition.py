@@ -54,8 +54,6 @@ maker(
     baca.rehearsal_mark('E'),
     )
 
-### ob, cl [E1-8] ornamemented + unadorned ###
-
 maker(
     baca.scopes(
         ('OboeMusicVoice', 1),
@@ -70,58 +68,23 @@ maker(
     baca.make_repeated_duration_notes([(16, 4)]),
     )
 
-### pf, vn, va, vc [E2] ###
-
 maker(
-    ('ViolinMusicVoice', 2),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.IncisedRhythmMaker(
-            incise_specifier=rhythmos.InciseSpecifier(
-                prefix_talea=[-2, 2, 3, -2, 3, -2, 2],
-                prefix_counts=[3, 2, 2],
-                suffix_talea=[2, -2, 3, -1, 0, 2, -2],
-                suffix_counts=[2, 2, 1, 2],
-                talea_denominator=16,
-                fill_with_notes=False,
-                ),
-            beam_specifier=rhythmos.BeamSpecifier(
-                beam_each_division=False,
-                ),
-            ),
+    baca.scopes(
+        ('PianoMusicVoice', 2),
+        ('ViolinMusicVoice', 2),
+        ('ViolaMusicVoice', 2),
+        ('CelloMusicVoice', 2),
         ),
+    krummzeit.incise_chain_b(),
     )
-
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 2),
-    ('ViolaMusicVoice', 2),
-    )
-
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 2),
-    ('CelloMusicVoice', 2),
-    )
-
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 2),
-    ('PianoMusicVoice', 2),
-    )
-
-### suspended cymbal [E1-4] ###
 
 maker(
-    ('PercussionMusicVoice', (1, 6)),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.TaleaRhythmMaker(
-            talea=rhythmos.Talea([1, 2], 2),
-            extra_counts_per_division=[2, 1, 0],
-            ),
+    baca.scopes(
+        ('PercussionMusicVoice', (1, 6)),
+        ('PercussionMusicVoice', (17, 22)),
         ),
     krummzeit.markup.suspended_cymbal(),
-    )
-
-maker.copy_rhythm(
-    ('PercussionMusicVoice', 2),
-    ('PercussionMusicVoice', (17, 22)),
+    krummzeit.sponge_rhythm(),
     )
 
 ### vn, va, vc [E4-10] glissando thicket (thinner) ###

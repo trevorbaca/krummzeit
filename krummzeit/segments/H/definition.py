@@ -100,30 +100,18 @@ maker(
     krummzeit.markup.crotales(),
     )
 
-### ob, Eb cl [H3-6] upper pedals ###
-
 maker(
-    ('OboeMusicVoice', (3, 6)),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=True,
-                ),
-            ),
+    baca.scopes(
+        ('OboeMusicVoice', (3, 6)),
+        ('ClarinetMusicVoice', (3, 4)),
         ),
-    )
-
-maker.copy_rhythm(
-    ('OboeMusicVoice', 3),
-    ('ClarinetMusicVoice', (3, 4)),
+    baca.make_repeat_tied_notes(),
     )
 
 maker(
     ('ClarinetMusicVoice', 3),
     baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
     )
-
-### ob, bass clarinet [H7-8] reiteration ###
 
 maker(
     ('OboeMusicVoice', (7, 8)),

@@ -90,37 +90,27 @@ maker(
     krummzeit.silver_points([(1, 2), (2, 1)]),
     )
 
-### vn, va, vc [F5-13] unrestrained ###
-
 maker(
     ('ViolinMusicVoice', (5, 13)),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=[2, 2, 2, 2, 2, 3],
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            denominator=(1, 4),
-            tuplet_ratios=[(3, 4)],
-            tuplet_specifier=rhythmos.TupletSpecifier(
-                avoid_dots=True,
-                diminution=False,
-                ),
-            ),
+    krummzeit.hypermeter_tuplets([(3, 4)], [2, 2, 2, 2, 2, 3]),
+    )
+
+maker(
+    ('ViolaMusicVoice', (5, 13)),
+    krummzeit.hypermeter_tuplets(
+        [(1, 6)],
+        counts=[2, 2, 2, 2, 2, 3],
+        division_mask=abjad.index([0, 1]),
         ),
     )
 
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 5),
-    ('ViolaMusicVoice', (5, 13)),  # ?
-    rhythm_maker__tuplet_ratios=[(1, 6)],
-    rhythm_maker__division_masks=[abjad.index([0, 1])],
-    )
-
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 5),
-    ('CelloMusicVoice', (5, 13)),  # ?
-    rhythm_maker__tuplet_ratios=[(6, 1)],
-    rhythm_maker__division_masks=[abjad.index([0, 1])],
+maker(
+    ('CelloMusicVoice', (5, 13)),
+    krummzeit.hypermeter_tuplets(
+        [(6, 1)],
+        counts=[2, 2, 2, 2, 2, 3],
+        division_mask=abjad.index([0, 1]),
+        ),
     )
 
 ### ob, cl [F3-7] ###

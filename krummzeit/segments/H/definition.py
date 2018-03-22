@@ -40,53 +40,31 @@ maker(
     baca.rehearsal_mark('H'),
     )
 
-### vn, va, vc [I1] reiteration ###
+maker(
+    baca.scopes(
+        ('ViolinMusicVoice', 1),
+        ('ViolinMusicVoice', (6, 8)),
+        ),
+    krummzeit.hypermeter_tuplets([(3, 2)], [2]),
+    )
 
 maker(
-    ('ViolinMusicVoice', 1),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=[2],
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            denominator=(1, 4),
-            tuplet_ratios=[(3, 2)],
-            tuplet_specifier=rhythmos.TupletSpecifier(
-                avoid_dots=True,
-                diminution=False,
-                ),
-            ),
+    baca.scopes(
+        ('ViolaMusicVoice', 1),
+        ('ViolaMusicVoice', (6, 8)),
         ),
+    krummzeit.hypermeter_tuplets([(1, 4)], [2]),
     )
 
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 1),
-    ('ViolinMusicVoice', (6, 8)),
+maker(
+    baca.scopes(
+        ('CelloMusicVoice', 1),
+        ('CelloMusicVoice', (6, 8)),
+        ),
+    krummzeit.hypermeter_tuplets([(2, 3)], [2]),
     )
 
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 1),
-    ('ViolaMusicVoice', 1),
-    rhythm_maker__tuplet_ratios=[(1, 4)],
-    )
-
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 1),
-    ('ViolaMusicVoice', (6, 8)),
-    )
-
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 1),
-    ('CelloMusicVoice', 1),
-    rhythm_maker__tuplet_ratios=[(2, 3)],
-    )
-
-maker.copy_rhythm(
-    ('CelloMusicVoice', 1),
-    ('CelloMusicVoice', (6, 8)),
-    )
-
-### vn, va, vc [I2-4] & [I6-8] thicket ###
+### vn, va, vc [H2-4] & [H6-8] thicket ###
 
 maker(
     ('ViolinMusicVoice', (2, 4)),
@@ -119,7 +97,7 @@ maker.copy_rhythm(
     division_maker__ratios=[(1, 1, 1), (1, 2), (2, 1)],
     )
 
-### harpsichord [I1-5] clusters (11.1) ###
+### harpsichord [H1-5] clusters (11.1) ###
 
 maker(
     ('PianoMusicVoice', (1, 5)),
@@ -136,7 +114,7 @@ maker(
         ),
     )
 
-### crotales [I4-5] (11.1) ###
+### crotales [H4-5] (11.1) ###
 
 maker(
     ('PercussionMusicVoice', (4, 5)),
@@ -156,7 +134,7 @@ maker(
     krummzeit.markup.crotales(),
     )
 
-### ob, Eb cl [I3-6] upper pedals ###
+### ob, Eb cl [H3-6] upper pedals ###
 
 maker(
     ('OboeMusicVoice', (3, 6)),
@@ -179,7 +157,7 @@ maker(
     baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
     )
 
-### ob, bass clarinet [I7-8] reiteration ###
+### ob, bass clarinet [H7-8] reiteration ###
 
 maker(
     ('OboeMusicVoice', (7, 8)),
@@ -209,7 +187,7 @@ maker(
     baca.instrument(krummzeit.instruments['BassClarinet']),
     )
 
-### pf, xylophone [I8] reiteration ###
+### pf, xylophone [H8] reiteration ###
 
 maker(
     ('PianoMusicVoice', 8),

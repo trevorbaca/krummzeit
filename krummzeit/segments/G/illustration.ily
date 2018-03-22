@@ -1049,9 +1049,8 @@ G_OboeMusicVoice = {
     \set OboeMusicStaff.forceClef = ##t                          %! SM8:REAPPLIED_CLEF:SM33:SM37
     \once \override OboeMusicStaff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    b1
+    b2.
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
-    ~
     ^ \markup {
         \column
             {
@@ -1084,40 +1083,41 @@ G_OboeMusicVoice = {
             Ob.                                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     
-    b8
-    ~
+    b4.
+    \repeatTie
     
     % [G OboeMusicVoice measure 258]                             %! SM4
-    b2
-    ~
+    b4.
+    \repeatTie
     
-    b8
-    ~
+    b4
+    \repeatTie
     
     % [G OboeMusicVoice measure 259]                             %! SM4
-    b2
-    ~
+    b4.
+    \repeatTie
     
-    b8
-    ~
+    b4
+    \repeatTie
     
     % [G OboeMusicVoice measure 260]                             %! SM4
     b1
-    ~
+    \repeatTie
     
     % [G OboeMusicVoice measure 261]                             %! SM4
-    b1
-    ~
+    b2.
+    \repeatTie
     
-    b4
-    ~
+    b2
+    \repeatTie
     
     % [G OboeMusicVoice measure 262]                             %! SM4
     b2.
-    ~
+    \repeatTie
     
     % [G OboeMusicVoice measure 263]                             %! SM4
     b2.
+    \repeatTie
     \revert Stem.direction                                       %! OC2
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     

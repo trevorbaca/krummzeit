@@ -4466,7 +4466,12 @@ E_PianoMusicVoice = {
     \times 4/5 {
         
         % [E PianoMusicVoice measure 219]                        %! SM4
+        \clef "treble"                                           %! SM8:REDUNDANT_CLEF:IC
+        \once \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_CLEF_COLOR:IC
+    %@% \override PianoMusicStaff.Clef.color = ##f               %! SM7:REDUNDANT_CLEF_COLOR_CANCELLATION:IC
+        \set PianoMusicStaff.forceClef = ##t                     %! SM8:REDUNDANT_CLEF:SM33:IC
         r16
+        \override PianoMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! SM6:REDUNDANT_CLEF_REDRAW_COLOR:IC
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -4670,44 +4675,41 @@ E_PianoMusicVoice = {
         f''4
         -\staccatissimo                                          %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [E PianoMusicVoice measure 222]                        %! SM4
-        r8
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        f''8
-        -\staccatissimo                                          %! IC
-        [
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        f''8
-        -\staccatissimo                                          %! IC
-        ]
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        f''4
-        -\staccatissimo                                          %! IC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-    }
+    
+    % [E PianoMusicVoice measure 222]                            %! SM4
+    r8
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    f''8
+    -\staccatissimo                                              %! IC
+    [
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    f''8
+    -\staccatissimo                                              %! IC
+    ]
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    f''4
+    -\staccatissimo                                              %! IC
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
     \times 4/7 {
         
         r16

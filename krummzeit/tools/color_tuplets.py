@@ -3,9 +3,23 @@ import baca
 from abjad import rhythmmakertools as rhythmos
 
 
-def color_tuplets(tuplet_ratios, division_mask=None):
+def color_tuplets(division_mask=None, rotation=0):
     r'''Makes color tuplets.
     '''
+
+    tuplet_ratios = baca.sequence([
+        (-2, 4, 1, 1, 12),
+        (3, 2),
+        (4, 3),
+        (3, -2),
+        (-3, 4, 1, 12),
+        (3, 2),
+        (7, 1, 3),
+        (3, -2),
+        ])
+    tuplet_ratios = tuplet_ratios.rotate(n=rotation)
+
+
     if division_mask is not None:
         division_masks = [division_mask]
     else:

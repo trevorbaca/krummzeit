@@ -111,90 +111,38 @@ maker(
         ),
     )
 
-### ob, cl [E4-11] ###
-
 maker(
     ('OboeMusicVoice', (4, 11)),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            tuplet_ratios=[
-                (-2, 4, 1, 1, 12),
-                (3, 2),
-                (4, 3),
-                (3, -2),
-                (-3, 4, 1, 12),
-                (3, 2),
-                (7, 1, 3),
-                (3, -2),
-                ],
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=True,
-                ),
-            tuplet_specifier=rhythmos.TupletSpecifier(
-                avoid_dots=True,
-                ),
-            ),
-        ),
+    krummzeit.color_tuplets(),
     )
 
-maker.copy_rhythm(
-    ('OboeMusicVoice', 4),
+maker(
     ('ClarinetMusicVoice', (4, 11)),
-    rhythm_maker__tuplet_ratios=[
-        (7, 1, 3),
-        (3, -2),
-        (-2, 4, 1, 1, 12),
-        (3, 2),
-        (4, 3),
-        (3, -2),
-        (-3, 4, 1, 12),
-        (3, 2),
-        ],
-    rhythm_maker__division_masks=[abjad.index([0])],
+    krummzeit.color_tuplets(division_mask=abjad.index([0]), rotation=2),
     )
 
-### pf, xyl [E8] & [E10-15] ###
-
 maker(
-    ('PianoMusicVoice', 8),
-    baca.clef('treble'),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByRoundedRatiosDivisionCallback(
-            ratios=[(1, 2), (2, 1)],
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            tuplet_ratios=[
-                (-1, 1, 1, 2),
-                (-1, 1, 1, -2, 2),
-                ],
-            tuplet_specifier=rhythmos.TupletSpecifier(
-                avoid_dots=True,
-                ),
-            ),
+    baca.scopes(
+        ('PianoMusicVoice', 8),
+        ('PianoMusicVoice', (10, 15)),
         ),
+    baca.clef('treble'),
+    krummzeit.silver_points([(1, 2), (2, 1)]),
     )
 
-maker.copy_rhythm(
-    ('PianoMusicVoice', 8),
-    ('PianoMusicVoice', (10, 15)),
-    )
-
-maker.copy_rhythm(
-    ('PianoMusicVoice', 8),
-    ('PercussionMusicVoice', 8),
-    division_maker__ratios=[(2, 1), (1, 2)],
+maker(
+    baca.scopes(
+        ('PercussionMusicVoice', 8),
+        ('PercussionMusicVoice', (10, 15)),
+        ),
+    krummzeit.silver_points([(2, 1), (1, 2)]),
     )
 
 maker(
     ('PercussionMusicVoice', 8),
-    baca.instrument(krummzeit.instruments['Xylophone']),
     baca.clef('treble'),
+    baca.instrument(krummzeit.instruments['Xylophone']),
     baca.staff_lines(5),
-    )
-
-maker.copy_rhythm(
-    ('PercussionMusicVoice', 8),
-    ('PercussionMusicVoice', (10, 15)),
     )
 
 ### cl, va, vc [E13] 3rd-octave interweave ###

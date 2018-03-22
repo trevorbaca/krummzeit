@@ -2780,20 +2780,62 @@ F_CelloMusicVoice = {
     
     r32
     
+    c,8..
+    
+    r32
+    
+    % [F CelloMusicVoice measure 238]                            %! SM4
+    c,8..
+    
+    r32
+    
+    c,8..
+    
+    r32
+    
+    c,8..
+    
+    r32
+    
+    c,8..
+    
+    r32
+    
+    % [F CelloMusicVoice measure 239]                            %! SM4
+    c,8..
+    
+    r32
+    
+    c,8..
+    
+    r32
+    
+    c,8..
+    
+    r32
+    
+    c,8..
+    
+    r32
+    
+    c,8..
+    
+    r32
+    
+    % [F CelloMusicVoice measure 240]                            %! SM4
+    c,8..
+    
+    r32
+    
+    c,8..
+    
+    r32
+    
     \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     c,8..
     \fff                                                         %! HC1
     
     r32
-    
-    % [F CelloMusicVoice measure 238]                            %! SM4
-    R1 * 1
-    
-    % [F CelloMusicVoice measure 239]                            %! SM4
-    R1 * 5/4
-    
-    % [F CelloMusicVoice measure 240]                            %! SM4
-    R1 * 3/4
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     
     % [F CelloMusicVoice measure 241]                            %! SM4

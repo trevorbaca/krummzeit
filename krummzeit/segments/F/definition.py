@@ -113,8 +113,6 @@ maker(
         ),
     )
 
-### ob, cl [F3-7] ###
-
 maker(
     ('OboeMusicVoice', (3, 7)),
     krummzeit.polyphony(
@@ -127,29 +125,24 @@ maker(
         ),
     )
 
-maker.copy_rhythm(
-    ('OboeMusicVoice', 3),
-    ('ClarinetMusicVoice', (3, 7)),  # ?
-    division_maker__durations=[(4, 8), (2, 8), (4, 8), (3, 8)],
-    rhythm_maker__denominators=[4, 4, 4, 8],
-    )
-
 maker(
-    ('ClarinetMusicVoice', 3),
+    ('ClarinetMusicVoice', (3, 7)),
     baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
+    krummzeit.polyphony(
+        durations=[(4, 8), (2, 8), (4, 8), (3, 8)],
+        rotation=-1,
+        fuse=(1, 8),
+        denominators=[4, 4, 4, 8],
+        extra_counts=[3, 1, 0, 4],
+        ties=[0, 1, 0, 1, 1, 0],
+        ),
     )
-
-### bass clarinet [F11-14] myrkr ###
 
 maker(
     ('ClarinetMusicVoice', (11, 14)),
     baca.instrument(krummzeit.instruments['BassClarinet']),
     baca.make_repeat_tied_notes()
     )
-
-###############################################################################
-#################################### COLOR ####################################
-###############################################################################
 
 ### (3.1) va, vc, bcl ###
 

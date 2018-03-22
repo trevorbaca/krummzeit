@@ -92,7 +92,6 @@ maker(
 maker(
     ('PianoMusicVoice', (5, 11)),
     baca.clef('treble'),
-    baca.instrument(krummzeit.instruments['Harpsichord']),
     krummzeit.polyphony(
         durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
         rotation=-1,
@@ -120,16 +119,10 @@ maker(
 
 maker(
     ('PercussionMusicVoice', (1, 7)),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                durations=[(1, 2)],
-                ),
-            ),
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            division_masks=[abjad.index([-1])],
-            ),
+    baca.make_repeated_duration_notes(
+        [(1, 2)],
+        division_mask=abjad.index([-1]),
+        rewrite_meter=False,
         ),
     krummzeit.markup.tam_tam(),
     )

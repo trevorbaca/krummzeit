@@ -166,23 +166,20 @@ maker(
     )
 
 maker(
-    baca.make_scopes([
-        'ViolinMusicVoice', 'ViolaMusicVoice', 'CelloMusicVoice'],
-        [1],
+    baca.scopes(
+        ('ViolinMusicVoice', 1),
+        ('ViolaMusicVoice', 1),
+        ('CelloMusicVoice', 1),
         ),
     baca.possibile_dynamic('fff'),
     baca.stem_tremolo(),
     )
-
-### (11.1) crotales ###
 
 maker(
     ('PercussionMusicVoice', (4, 5)),
     baca.accents(),
     baca.reiterated_dynamic('ff'),
     )
-
-### (5.3) vn, va, vc thicket ###
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-241).retrograde().transpose(8).invert()
@@ -196,9 +193,10 @@ maker(
     )
 
 maker(
-    baca.make_scopes(
-        ['ViolinMusicVoice', 'ViolaMusicVoice', 'CelloMusicVoice'],
-        [(2, 4)],
+    baca.scopes(
+        ('ViolinMusicVoice', (2, 4)),
+        ('ViolaMusicVoice', (2, 4)),
+        ('CelloMusicVoice', (2, 4)),
         ),
     baca.dynamic('ppp'),
     baca.map(baca.glissando(), baca.runs()),
@@ -207,32 +205,35 @@ maker(
 
 maker(
     ('ViolinMusicVoice', (2, 4)),
-    krummzeit.displacement(),
-    krummzeit.register_wide(4),
+    baca.suite([
+        krummzeit.displacement(),
+        krummzeit.register_wide(4),
+        ]),
     )
 
 maker(
     ('ViolaMusicVoice', (2, 4)),
-    krummzeit.displacement(),
-    krummzeit.register_narrow(3),
+    baca.suite([
+        krummzeit.displacement(),
+        krummzeit.register_narrow(3),
+        ]),
     )
 
 maker(
     ('CelloMusicVoice', (2, 4)),
-    krummzeit.displacement(),
-    krummzeit.register_narrow(2),
-    )
-
-### (11.1) ob, cl pedals ###
-
-maker(
-    baca.make_scopes(['OboeMusicVoice', 'ClarinetMusicVoice'], [(3, 6)]),
-    baca.pitch('D5'),
+    baca.suite([
+        krummzeit.displacement(),
+        krummzeit.register_narrow(2),
+        ]),
     )
 
 maker(
-    baca.make_scopes(['OboeMusicVoice', 'ClarinetMusicVoice'], [(3, 6)]),
+    baca.scopes(
+        ('OboeMusicVoice', (3, 6)),
+        ('ClarinetMusicVoice', (3, 6)),
+        ),
     baca.dynamic('ff'),
+    baca.pitch('D5'),
     )
 
 maker(
@@ -240,26 +241,16 @@ maker(
     baca.trill_spanner(),
     )
 
-### (14) ###
-
 maker(
     ('OboeMusicVoice', (7, 8)),
     baca.pitch('Eb5'),
-    )
-
-maker(
-    ('ClarinetMusicVoice', (7, 8)),
-    baca.pitch('Eb2'),
-    )
-
-maker(
-    ('OboeMusicVoice', (7, 8)),
     krummzeit.color_fingerings(),
     )
 
 maker(
     ('ClarinetMusicVoice', (7, 8)),
     baca.dynamic('ff'),
+    baca.pitch('Eb2'),
     krummzeit.color_fingerings(),
     )
 

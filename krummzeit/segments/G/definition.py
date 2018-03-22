@@ -71,13 +71,7 @@ maker(
 
 maker(
     ('ClarinetMusicVoice', (1, 5)),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=True,
-                ),
-            ),
-        ),
+    baca.make_repeat_tied_notes(),
     )
 
 ### Eb clarinet [G9-12] 5th-octave counterpoint ###

@@ -60,66 +60,46 @@ maker(
         ),
     )
 
-### ob [G18-21] reiteration ###
-
 maker(
     ('OboeMusicVoice', (18, 21)),
     krummzeit.hypermeter_tuplets([(3, 2), (1, 4)], [2]),
     )
-
-### bass clarinet [G1-5] myrkr ###
 
 maker(
     ('ClarinetMusicVoice', (1, 5)),
     baca.make_repeat_tied_notes(),
     )
 
-### Eb clarinet [G9-12] 5th-octave counterpoint ###
-
-maker.copy_rhythm(
-    ('OboeMusicVoice', 9),
-    ('ClarinetMusicVoice', (9, 12)),  # ?
-    division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
-    rhythm_maker__denominators=[4, 4, 4, 8],
-    )
-
 maker(
-    ('ClarinetMusicVoice', 9),
+    ('ClarinetMusicVoice', (9, 12)),
     baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
-    )
-
-### bass clarinet [G18-21] reiteration pedal ###
-
-maker.copy_rhythm(
-    ('OboeMusicVoice', 18),
-    ('ClarinetMusicVoice', (18, 21)),  # ?
-    rhythm_maker__tuplet_ratios=[(1, 3), (1, 1)],
+    krummzeit.polyphony(
+        durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
+        rotation=-1,
+        fuse=(1, 8),
+        denominators=[4, 4, 4, 8],
+        extra_counts=[3, 1, 0, 4],
+        ties=[0, 1, 0, 1, 1, 0],
+        ),
     )
 
 maker(
-    ('ClarinetMusicVoice', 18),
+    ('ClarinetMusicVoice', (18, 21)),
     baca.instrument(krummzeit.instruments['BassClarinet']),
+    krummzeit.hypermeter_tuplets([(1, 3), (1, 1)]),
     )
-
-### harpsichord [G5-11] 5th-octave counterpoint ###
 
 maker(
     ('PianoMusicVoice', (5, 11)),
-    baca.instrument(krummzeit.instruments['Harpsichord']),
     baca.clef('treble'),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByDurationsDivisionCallback(
-            durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
-            pattern_rotation_index=-1,
-            remainder_fuse_threshold=(1, 8),
-            ),
-        rhythm_maker=rhythmos.EvenDivisionRhythmMaker(
-            denominators=[8, 8, 4, 4, 8, 8],
-            extra_counts_per_division=[3, 1, 0, 4],
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=[0, 1, 0, 1, 1, 0],
-                ),
-            ),
+    baca.instrument(krummzeit.instruments['Harpsichord']),
+    krummzeit.polyphony(
+        durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
+        rotation=-1,
+        fuse=(1, 8),
+        denominators=[8, 8, 4, 4, 8, 8],
+        extra_counts=[3, 1, 0, 4],
+        ties=[0, 1, 0, 1, 1, 0],
         ),
     )
 

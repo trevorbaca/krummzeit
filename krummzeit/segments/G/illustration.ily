@@ -1377,25 +1377,11 @@ G_OboeMusicVoice = {
     \override DynamicLineSpanner.staff-padding = #'5             %! OC1
     \override Stem.direction = #up                               %! OC1
     \override TupletBracket.staff-padding = #3                   %! OC1
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     c'1.
     \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
-    - \tweak color #red                                          %! SM14
-    ^ \markup { @ }                                              %! SM14
     
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     c'1
-    - \tweak color #red                                          %! SM14
-    ^ \markup { @ }                                              %! SM14
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1407,14 +1393,7 @@ G_OboeMusicVoice = {
     \times 7/5 {
         
         % [G OboeMusicVoice measure 276]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         c'4
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1423,14 +1402,7 @@ G_OboeMusicVoice = {
                         2
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         c'1
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1443,23 +1415,9 @@ G_OboeMusicVoice = {
     \times 7/5 {
         
         % [G OboeMusicVoice measure 278]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         c'2.
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         c'2
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1720,39 +1678,17 @@ G_ClarinetMusicVoice = {
         \override DynamicLineSpanner.staff-padding = #'10        %! OC1
         \override Stem.direction = #up                           %! OC1
         \override TupletBracket.staff-padding = #6               %! OC1
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         d2
         \<                                                       %! HC1
         \f                                                       %! HC1
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                        {                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                            \with-color                          %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                                #(x11-color 'blue)               %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                                (“BassClarinet”)                 %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                        }                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
-                }
-            }
+        ^ \markup {                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            \with-color                                          %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                #(x11-color 'blue)                               %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                (“BassClarinet”)                                 %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            }                                                    %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         d1.
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1765,14 +1701,7 @@ G_ClarinetMusicVoice = {
     \times 21/16 {
         
         % [G ClarinetMusicVoice measure 276]                     %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         d1
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1781,14 +1710,7 @@ G_ClarinetMusicVoice = {
                         2
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         d1
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1801,25 +1723,11 @@ G_ClarinetMusicVoice = {
     \times 7/4 {
         
         % [G ClarinetMusicVoice measure 279]                     %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         d8
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         d4.
         \ff                                                      %! HC1
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2203,11 +2111,6 @@ G_PianoMusicVoice = {
     \override DynamicLineSpanner.staff-padding = #'3             %! OC1
     \once \override PianoMusicStaff.Clef.X-extent = ##f          %! OC1:MEASURE_270:SHIFTED_CLEF
     \once \override PianoMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! OC1:MEASURE_270:SHIFTED_CLEF
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     \clef "bass"                                                 %! SM8:EXPLICIT_CLEF:IC
     \once \override PianoMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
 %@% \override PianoMusicStaff.Clef.color = ##f                   %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
@@ -2231,161 +2134,73 @@ G_PianoMusicVoice = {
                             #(x11-color 'blue)                   %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                             (“Piano”)                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                     }                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                \line                                            %! SM14
-                    {                                            %! SM14
-                        @                                        %! SM14
-                    }                                            %! SM14
             }
         }
     \override PianoMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'4
     -\tenuto                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
     ~
-    - \tweak color #red                                          %! SM14
-    ^ \markup { @ }                                              %! SM14
     
     % [G PianoMusicVoice measure 271]                            %! SM4
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     c'1
     ~
-    - \tweak color #red                                          %! SM14
-    ^ \markup { @ }                                              %! SM14
     
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     c'4
-    - \tweak color #red                                          %! SM14
-    ^ \markup { @ }                                              %! SM14
     
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'2
     -\tenuto                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
     ~
-    - \tweak color #red                                          %! SM14
-    ^ \markup { @ }                                              %! SM14
     
     % [G PianoMusicVoice measure 272]                            %! SM4
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     c'2
-    - \tweak color #red                                          %! SM14
-    ^ \markup { @ }                                              %! SM14
     
     r4.
     
     r2
     
     % [G PianoMusicVoice measure 273]                            %! SM4
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'4.
     -\tenuto                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
     ~
-    - \tweak color #red                                          %! SM14
-    ^ \markup { @ }                                              %! SM14
     
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     c'4
-    - \tweak color #red                                          %! SM14
-    ^ \markup { @ }                                              %! SM14
     
     % [G PianoMusicVoice measure 274]                            %! SM4
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'2.
     -\tenuto                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
     ~
-    - \tweak color #red                                          %! SM14
-    ^ \markup { @ }                                              %! SM14
     
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     c'4
-    - \tweak color #red                                          %! SM14
-    ^ \markup { @ }                                              %! SM14
     
     % [G PianoMusicVoice measure 275]                            %! SM4
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'2
     -\tenuto                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
-    - \tweak color #red                                          %! SM14
-    ^ \markup { @ }                                              %! SM14
     
     r2
     
     r2
     
     % [G PianoMusicVoice measure 276]                            %! SM4
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'2
     -\tenuto                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
-    - \tweak color #red                                          %! SM14
-    ^ \markup { @ }                                              %! SM14
     
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     \once \override PianoMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'4
     -\tenuto                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
-    - \tweak color #red                                          %! SM14
-    ^ \markup { @ }                                              %! SM14
     \revert NoteHead.style                                       %! OC2
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     

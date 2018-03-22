@@ -200,7 +200,7 @@ maker(
 
 maker(
     ('ClarinetMusicVoice', (1, 5)),
-    baca.pitches('B1'),
+    baca.pitch('B1'),
     )
 
 maker(
@@ -236,7 +236,7 @@ maker(
 
 maker(
     ('OboeMusicVoice', (1, 7)),
-    baca.pitches('B3'),
+    baca.pitch('B3'),
     )
 
 maker(
@@ -322,7 +322,7 @@ maker(
 
 maker(
     ('PianoMusicVoice', (14, 20)),
-    baca.pitches('C4'),
+    baca.pitch('C4'),
     )
 
 maker(
@@ -389,7 +389,7 @@ maker(
 
 maker(
     ('ClarinetMusicVoice', (18, 22)),
-    baca.pitches('C2'),
+    baca.pitch('C2'),
     )
 
 maker(
@@ -400,7 +400,7 @@ maker(
 
 maker(
     ('OboeMusicVoice', (18, 22)),
-    baca.pitches('C4'),
+    baca.pitch('C4'),
     )
 
 maker(

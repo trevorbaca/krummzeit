@@ -202,18 +202,7 @@ maker(
         ('OboeMusicVoice', (5, 7)),
         ('OboeMusicVoice', (10, 12)),
         ),
-    krummzeit.color_tuplets(
-        tuplet_ratios=[
-            (-2, 4, 1, 1, 12),
-            (3, 2),
-            (4, 3),
-            (3, -2),
-            (-3, 4, 1, 12),
-            (3, 2),
-            (7, 1, 3),
-            (3, -2),
-            ],
-        ),
+    krummzeit.color_tuplets(),
     )
 
 maker(
@@ -222,17 +211,8 @@ maker(
         ('ClarinetMusicVoice', (10, 12)),
         ),
     krummzeit.color_tuplets(
-        tuplet_ratios=[
-            (7, 1, 3),
-            (3, -2),
-            (-2, 4, 1, 1, 12),
-            (3, 2),
-            (4, 3),
-            (3, -2),
-            (-3, 4, 1, 12),
-            (3, 2),
-            ],
         division_mask=abjad.index([0]),
+        rotation=2,
         ),
     )
 

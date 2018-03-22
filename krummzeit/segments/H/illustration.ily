@@ -2967,22 +2967,19 @@ H_ViolinMusicVoice = {
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
-        af'4
-        \glissando                                               %! SC
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        cs'1
-        ~
-    }
+    
+    \once \override Accidental.color = #red
+    \once \override Beam.color = #red
+    \once \override Dots.color = #red
+    \once \override NoteHead.color = #red
+    \once \override Stem.color = #red
+    af'4
+    \glissando                                                   %! SC
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    cs'1
+    ~
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/7 {
         
@@ -3206,15 +3203,12 @@ H_ViolaMusicVoice = {
         fs4.
         \glissando                                               %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        f4
-        \glissando                                               %! SC
-        
-        af2
-        ~
-    }
+    
+    f4
+    \glissando                                                   %! SC
+    
+    af2
+    ~
     \times 4/5 {
         
         af8
@@ -3414,15 +3408,12 @@ H_CelloMusicVoice = {
         g,2
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        g,4
-        \glissando                                               %! SC
-        
-        f,1
-        \glissando                                               %! SC
-    }
+    
+    g,4
+    \glissando                                                   %! SC
+    
+    f,1
+    \glissando                                                   %! SC
     \times 4/7 {
         
         % [H CelloMusicVoice measure 285]                        %! SM4

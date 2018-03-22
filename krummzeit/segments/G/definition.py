@@ -221,8 +221,8 @@ maker(
 maker(
     ('ViolaMusicVoice', (1, 7)),
     baca.map(baca.glissando(), baca.runs()),
-    baca.hairpin('ff < fff'),
     baca.dls_staff_padding(6),
+    baca.hairpin('ff < fff'),
     baca.markup.subito_ordinario(),
     )
 
@@ -339,16 +339,16 @@ maker(
         ('ViolinMusicVoice', (14, 20)),
         ('CelloMusicVoice', (14, 20)),
         ),
-    baca.possibile_dynamic('fff'),
-    baca.natural_harmonics(),
     baca.markup.molto_gridato(),
+    baca.natural_harmonics(),
+    baca.possibile_dynamic('fff'),
     )
 
 maker(
     ('ViolaMusicVoice', (14, 19)),
-    baca.possibile_dynamic('fff'),
-    baca.natural_harmonics(),
     baca.markup.molto_gridato(),
+    baca.natural_harmonics(),
+    baca.possibile_dynamic('fff'),
     )
 
 maker(
@@ -424,8 +424,8 @@ maker(
         ('ViolinMusicVoice', 21),
         ('CelloMusicVoice', 21),
         ),
-    baca.stem_tremolo(),
     baca.markup.subito_ordinario(),
+    baca.stem_tremolo(),
     )
 
 ### VERTICAL ALIGNMENT ###

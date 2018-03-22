@@ -115,69 +115,27 @@ maker(
 
 maker(
     ('OboeMusicVoice', (7, 8)),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=[2],
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            denominator=(1, 4),
-            tuplet_ratios=[(3, 2)],
-            tuplet_specifier=rhythmos.TupletSpecifier(
-                avoid_dots=True,
-                diminution=False,
-                ),
-            ),
-        ),
-    )
-
-maker.copy_rhythm(
-    ('OboeMusicVoice', 7),
-    ('ClarinetMusicVoice', (7, 8)),  # ?
-    rhythm_maker__tuplet_ratios=[(1, 4)],
+    krummzeit.hypermeter_tuplets(counts=[2]),
     )
 
 maker(
-    ('ClarinetMusicVoice', 7),
+    ('ClarinetMusicVoice', (7, 8)),
     baca.instrument(krummzeit.instruments['BassClarinet']),
+    krummzeit.hypermeter_tuplets([(1, 4)], counts=[2]),
     )
-
-### pf, xylophone [H8] reiteration ###
 
 maker(
     ('PianoMusicVoice', 8),
     baca.instrument(krummzeit.instruments['Piano']),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=[2],
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            denominator=(1, 4),
-            tuplet_ratios=[(3, 4)],
-            tuplet_specifier=rhythmos.TupletSpecifier(
-                avoid_dots=True,
-                diminution=False,
-                ),
-            ),
-        ),
-    )
-
-maker.copy_rhythm(
-    ('PianoMusicVoice', 8),
-    ('PercussionMusicVoice', 8),
-    rhythm_maker__tuplet_ratios=[(1, 6)],
+    krummzeit.hypermeter_tuplets([(3, 4)], counts=[2]),
     )
 
 maker(
     ('PercussionMusicVoice', 8),
-    baca.instrument(krummzeit.instruments['Xylophone']),
     baca.clef('treble'),
+    baca.instrument(krummzeit.instruments['Xylophone']),
+    krummzeit.hypermeter_tuplets([(1, 6)], counts=[2]),
     )
-
-###############################################################################
-#################################### COLOR ####################################
-###############################################################################
-
-### (11.1) harpsichord clusters ###
 
 maker(
     ('PianoMusicVoice', (1, 5)),

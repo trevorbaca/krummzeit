@@ -1929,7 +1929,7 @@ F_PercussionMusicVoice = {
     \once \override PercussionMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
 %@% \override PercussionMusicStaff.Clef.color = ##f              %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set PercussionMusicStaff.forceClef = ##t                    %! SM8:EXPLICIT_CLEF:SM33:IC
-    r1
+    R1 * 9/8
     \pp                                                          %! SM8:REAPPLIED_DYNAMIC:SM37
     ^ \markup {
         \column
@@ -1972,77 +1972,71 @@ F_PercussionMusicVoice = {
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \override PercussionMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
-    r8
-    
     % [F PercussionMusicVoice measure 236]                       %! SM4
     \once \override PercussionMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
-    c2
+    c4.
     :32                                                          %! IC
     \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
-    ~
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC
             \upright                                             %! IC
                 "rapid roll with fingertips: keep speed constant during accelerando" %! IC
         }                                                        %! IC
     
-    \makeBlue                                                    %! SM24
-    c8
+    c4
     :32                                                          %! IC
-    ~
+    \repeatTie
     
     % [F PercussionMusicVoice measure 237]                       %! SM4
     \makeBlue                                                    %! SM24
-    c2
+    c4.
     :32                                                          %! IC
-    ~
+    \repeatTie
     
-    \makeBlue                                                    %! SM24
-    c8
+    c4
     :32                                                          %! IC
+    \repeatTie
     
     % [F PercussionMusicVoice measure 238]                       %! SM4
     R1 * 1
     
     % [F PercussionMusicVoice measure 239]                       %! SM4
     \makeBlue                                                    %! SM24
-    c1
+    c2.
     :32                                                          %! IC
-    ~
     
-    \makeBlue                                                    %! SM24
-    c4
+    c2
     :32                                                          %! IC
-    ~
+    \repeatTie
     
     % [F PercussionMusicVoice measure 240]                       %! SM4
     \makeBlue                                                    %! SM24
     c2.
     :32                                                          %! IC
-    ~
+    \repeatTie
     
     % [F PercussionMusicVoice measure 241]                       %! SM4
     \makeBlue                                                    %! SM24
     c2.
     :32                                                          %! IC
-    ~
+    \repeatTie
     
     % [F PercussionMusicVoice measure 242]                       %! SM4
     \makeBlue                                                    %! SM24
     c2.
     :32                                                          %! IC
-    ~
+    \repeatTie
     
     % [F PercussionMusicVoice measure 243]                       %! SM4
     \makeBlue                                                    %! SM24
-    c1
+    c2.
     :32                                                          %! IC
-    ~
+    \repeatTie
     
-    \makeBlue                                                    %! SM24
-    c8
+    c4.
     :32                                                          %! IC
+    \repeatTie
     
     % [F PercussionMusicVoice measure 244]                       %! SM4
     R1 * 7/8
@@ -2066,13 +2060,12 @@ F_PercussionMusicVoice = {
     
     % [F PercussionMusicVoice measure 250]                       %! SM4
     \makeBlue                                                    %! SM24
-    c2
+    c4.
     :32                                                          %! IC
-    ~
     
-    \makeBlue                                                    %! SM24
-    c8
+    c4
     :32                                                          %! IC
+    \repeatTie
     
     % [F PercussionMusicVoice measure 251]                       %! SM4
     R1 * 1

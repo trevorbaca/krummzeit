@@ -43,20 +43,14 @@ maker(
     baca.rehearsal_mark('G'),
     )
 
-### ob [H1-7] block ###
+### ob [G1-7] block ###
 
 maker(
     ('OboeMusicVoice', (1, 7)),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=True,
-                ),
-            ),
-        ),
+    baca.make_repeat_tied_notes(),
     )
 
-### ob [H9-12] 5th-octave counterpoint ###
+### ob [G9-12] 5th-octave counterpoint ###
 
 maker(
     ('OboeMusicVoice', (9, 12)),
@@ -76,7 +70,7 @@ maker(
         ),
     )
 
-### ob [H18-21] reiteration ###
+### ob [G18-21] reiteration ###
 
 maker(
     ('OboeMusicVoice', (18, 21)),
@@ -95,7 +89,7 @@ maker(
         ),
     )
 
-### bass clarinet [H1-5] myrkr ###
+### bass clarinet [G1-5] myrkr ###
 
 maker(
     ('ClarinetMusicVoice', (1, 5)),
@@ -108,7 +102,7 @@ maker(
         ),
     )
 
-### Eb clarinet [H9-12] 5th-octave counterpoint ###
+### Eb clarinet [G9-12] 5th-octave counterpoint ###
 
 maker.copy_rhythm(
     ('OboeMusicVoice', 9),
@@ -122,7 +116,7 @@ maker(
     baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
     )
 
-### bass clarinet [H18-21] reiteration pedal ###
+### bass clarinet [G18-21] reiteration pedal ###
 
 maker.copy_rhythm(
     ('OboeMusicVoice', 18),
@@ -135,7 +129,7 @@ maker(
     baca.instrument(krummzeit.instruments['BassClarinet']),
     )
 
-### harpsichord [H5-11] 5th-octave counterpoint ###
+### harpsichord [G5-11] 5th-octave counterpoint ###
 
 maker(
     ('PianoMusicVoice', (5, 11)),
@@ -157,7 +151,7 @@ maker(
         ),
     )
 
-### pf [H14-20] harmonics with thicket ###
+### pf [G14-20] harmonics with thicket ###
 
 maker(
     ('PianoMusicVoice', (14, 20)),
@@ -176,7 +170,7 @@ maker(
         ),
     )
 
-### tam-tam [H1-7] ###
+### tam-tam [G1-7] ###
 
 maker(
     ('PercussionMusicVoice', (1, 7)),
@@ -194,7 +188,7 @@ maker(
     krummzeit.markup.tam_tam(),
     )
 
-### vn [H5-12] 5th-octave counterpoint ###
+### vn [G5-12] 5th-octave counterpoint ###
 
 maker.copy_rhythm(
     ('PianoMusicVoice', 5),
@@ -203,7 +197,7 @@ maker.copy_rhythm(
     rhythm_maker__denominators=[8, 8, 4, 4, 8, 8],
     )
 
-### vn, va, vc [H14-20] thicket ###
+### vn, va, vc [G14-20] thicket ###
 
 maker(
     ('ViolinMusicVoice', (14, 20)),
@@ -236,7 +230,7 @@ maker.copy_rhythm(
     division_maker__ratios=[(1, 1, 1), (1, 2), (2, 1)],
     )
 
-### va [H1-7] & vc [H1-9] block pedals ###
+### va [G1-7] & vc [G1-9] block pedals ###
 
 maker(
     ('ViolaMusicVoice', (1, 7)),
@@ -259,7 +253,7 @@ maker.copy_rhythm(
         ],
     )
 
-### va, vc [H11-12] ###
+### va, vc [G11-12] ###
 
 maker(
     ('ViolaMusicVoice', (11, 12)),
@@ -284,7 +278,7 @@ maker.copy_rhythm(
     rhythm_maker__tuplet_ratios=[(3, 2)],
     )
 
-### vn, va, vc [H20-21] reiteration ###
+### vn, va, vc [G20-21] reiteration ###
 
 maker(
     ('ViolinMusicVoice', 21),

@@ -189,21 +189,10 @@ maker(
     krummzeit.pizzicato_rhythm(masks=[abjad.index([0, 4, 5], 6)]),
     )
 
-### (6.1) ob, cl ###
-
 maker(
     ('ClarinetMusicVoice', (1, 2)),
-    baca.pitches('B3'),
-    )
-
-maker(
-    ('ClarinetMusicVoice', (1, 2)),
+    baca.pitch('B3'),
     baca.dynamic('ppp'),
-    )
-
-maker(
-    ('ClarinetMusicVoice', (1, 2)),
-    baca.pitches('B3'),
     )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
@@ -212,10 +201,6 @@ pcs = pcs.repeat_by([4, 4, 1, 1, 1, 1, 4, 1, 1, 1], cyclic=True)
 maker(
     ('OboeMusicVoice', (1, 2)),
     baca.pitches(pcs),
-    )
-
-maker(
-    ('OboeMusicVoice', (1, 2)),
     baca.dynamic('p'),
     baca.map(
         baca.trill_spanner(),
@@ -242,17 +227,17 @@ maker(
 
 maker(
     ('ViolinMusicVoice', 2),
-    baca.pitches('A+3'),
+    baca.pitch('A+3'),
     )
 
 maker(
     ('ViolaMusicVoice', 2),
-    baca.pitches('Bb2'),
+    baca.pitch('Bb2'),
     )
 
 maker(
     ('CelloMusicVoice', 2),
-    baca.pitches('A2'),
+    baca.pitch('A2'),
     )
 
 maker(
@@ -335,7 +320,7 @@ maker(
 
 maker(
     baca.make_scopes(['PianoMusicVoice', 'PercussionMusicVoice'], [(8, 15)]),
-    baca.pitches('F5'),
+    baca.pitch('F5'),
     )
 
 maker(
@@ -348,22 +333,22 @@ maker(
 
 maker(
     ('ViolaMusicVoice', (13, 23)),
-    baca.pitches('F#3'),
+    baca.pitch('F#3'),
     )
 
 maker(
     ('CelloMusicVoice', (13, 23)),
-    baca.pitches('C2'),
+    baca.pitch('C2'),
     )
 
 maker(
     ('ClarinetMusicVoice', (13, 23)),
-    baca.pitches('Bb1'),
+    baca.pitch('Bb1'),
     )
 
 maker(
     ('PianoMusicVoice', (16, 18)),
-    baca.pitches('Bb0'),
+    baca.pitch('Bb0'),
     )
 
 maker(
@@ -390,7 +375,7 @@ maker(
 
 maker(
     ('ViolinMusicVoice', (18, 22)),
-    baca.pitches('G5'),
+    baca.pitch('G5'),
     )
 
 maker(
@@ -401,7 +386,7 @@ maker(
 
 maker(
     ('OboeMusicVoice', (18, 22)),
-    baca.pitches('A5'),
+    baca.pitch('A5'),
     )
 
 maker(

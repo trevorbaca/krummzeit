@@ -102,8 +102,6 @@ maker(
         ),
     )
 
-### pf [G14-20] harmonics with thicket ###
-
 maker(
     ('PianoMusicVoice', (14, 20)),
     baca.instrument(krummzeit.instruments['Piano']),
@@ -115,8 +113,6 @@ maker(
         ),
     )
 
-### tam-tam [G1-7] ###
-
 maker(
     ('PercussionMusicVoice', (1, 7)),
     baca.make_repeated_duration_notes(
@@ -127,13 +123,16 @@ maker(
     krummzeit.markup.tam_tam(),
     )
 
-### vn [G5-12] 5th-octave counterpoint ###
-
-maker.copy_rhythm(
-    ('PianoMusicVoice', 5),
+maker(
     ('ViolinMusicVoice', (5, 12)),
-    division_maker__durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
-    rhythm_maker__denominators=[8, 8, 4, 4, 8, 8],
+    krummzeit.polyphony(
+        durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
+        rotation=-1,
+        fuse=(1, 8),
+        denominators=[8, 8, 4, 4, 8, 8],
+        extra_counts=[3, 1, 0, 4],
+        ties=[0, 1, 0, 1, 1, 0],
+        ),
     )
 
 ### vn, va, vc [G14-20] thicket ###

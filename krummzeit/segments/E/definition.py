@@ -145,38 +145,19 @@ maker(
     baca.staff_lines(5),
     )
 
-### cl, va, vc [E13] 3rd-octave interweave ###
-
 maker(
     ('ClarinetMusicVoice', 13),
     baca.instrument(krummzeit.instruments['BassClarinet']),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                durations=[(1, 2)],
-                remainder=abjad.Left,
-                ),
-            ),
-        rhythm_maker=rhythmos.IncisedRhythmMaker(
-            incise_specifier=rhythmos.InciseSpecifier(
-                suffix_talea=[-1],
-                suffix_counts=[1],
-                talea_denominator=16,
-                ),
-            ),
-        ),
     krummzeit.margin_markup('B. cl.'),
     )
 
-maker.copy_rhythm(
-    ('ClarinetMusicVoice', 13),
-    ('ViolaMusicVoice', 13),
-    )
-
-maker.copy_rhythm(
-    ('ClarinetMusicVoice', 13),
-    ('CelloMusicVoice', 13),
+maker(
+    baca.scopes(
+        ('ClarinetMusicVoice', 13),
+        ('ViolaMusicVoice', 13),
+        ('CelloMusicVoice', 13),
+        ),
+    krummzeit.rest_delimited_repeated_duration_notes((1, 2), 16),
     )
 
 ### cl, va, vc [E16-19] & [E22-23] 3rd-octave interweave ###

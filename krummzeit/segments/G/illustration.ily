@@ -3071,16 +3071,13 @@ G_ViolinMusicVoice = {
         a'8.
         \glissando                                               %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [G ViolinMusicVoice measure 274]                       %! SM4
-        cs'4
-        \glissando                                               %! SC
-        
-        d'2
-        ~
-    }
+    
+    % [G ViolinMusicVoice measure 274]                           %! SM4
+    cs'4
+    \glissando                                                   %! SC
+    
+    d'2
+    ~
     \times 4/5 {
         
         d'16
@@ -3325,15 +3322,12 @@ G_ViolaMusicVoice = {
         fs4.
         \glissando                                               %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        f4
-        \glissando                                               %! SC
-        
-        af2
-        ~
-    }
+    
+    f4
+    \glissando                                                   %! SC
+    
+    af2
+    ~
     \times 4/5 {
         
         af8
@@ -3624,25 +3618,19 @@ G_CelloMusicVoice = {
         g,2
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        g,4
-        \glissando                                               %! SC
-        
-        f,1
-        \glissando                                               %! SC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [G CelloMusicVoice measure 272]                        %! SM4
-        b,2
-        \glissando                                               %! SC
-        
-        c4.
-        ~
-    }
+    
+    g,4
+    \glissando                                                   %! SC
+    
+    f,1
+    \glissando                                                   %! SC
+    
+    % [G CelloMusicVoice measure 272]                            %! SM4
+    b,2
+    \glissando                                                   %! SC
+    
+    c4.
+    ~
     \times 2/3 {
         
         c4

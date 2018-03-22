@@ -7,6 +7,7 @@ def glissando_rhythm(
     division_ratios,
     division_masks=[],
     tuplet_ratios=[(1, 2), (1, 4), (4, 3)],
+    tie_across_divisions=None,
     ):
     r'''Makes glissando rhythm.
     '''
@@ -18,6 +19,9 @@ def glissando_rhythm(
             ),
         rhythm_maker=rhythmos.TupletRhythmMaker(
             division_masks=division_masks,
+            tie_specifier=rhythmos.TieSpecifier(
+                tie_across_divisions=tie_across_divisions,
+                ),
             tuplet_ratios=tuplet_ratios,
             tuplet_specifier=rhythmos.TupletSpecifier(
                 extract_trivial=True,

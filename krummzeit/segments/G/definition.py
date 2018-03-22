@@ -139,20 +139,9 @@ maker(
 
 maker(
     ('ViolinMusicVoice', (14, 20)),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByRoundedRatiosDivisionCallback(
-            ratios=[(1, 2), (2, 1), (1, 1, 1)],
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            tuplet_ratios=[
-                (1, 2),
-                (1, 4),
-                (4, 3),
-                ],
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=[0, 1],
-                ),
-            ),
+    krummzeit.glissando_rhythm(
+        [(1, 2), (2, 1), (1, 1, 1)],
+        tie_across_divisions=[0, 1],
         ),
     )
 

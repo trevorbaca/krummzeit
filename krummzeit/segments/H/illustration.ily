@@ -520,25 +520,28 @@ H_OboeMusicVoice = {
     \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     d''1..
     \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC
-    ~
     \startTrillSpan                                              %! SC
     
     % [H OboeMusicVoice measure 285]                             %! SM4
     d''2.
-    ~
+    \repeatTie
     
     % [H OboeMusicVoice measure 286]                             %! SM4
-    d''1
-    ~
+    d''2..
+    \repeatTie
     
-    d''4.
-    ~
+    d''4
+    \repeatTie
+    
+    d''4
+    \repeatTie
     
     % [H OboeMusicVoice measure 287]                             %! SM4
-    d''2
-    ~
+    d''4.
+    \repeatTie
     
-    d''8
+    d''4
+    \repeatTie
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
@@ -684,7 +687,6 @@ H_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     b'1..
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
-    ~
     ^ \markup {                                                  %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
         \with-color                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
             #(x11-color 'blue)                                   %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
@@ -693,6 +695,7 @@ H_ClarinetMusicVoice = {
     
     % [H ClarinetMusicVoice measure 285]                         %! SM4
     b'2.
+    \repeatTie
     
     % [H ClarinetMusicVoice measure 286]                         %! SM4
     R1 * 11/8

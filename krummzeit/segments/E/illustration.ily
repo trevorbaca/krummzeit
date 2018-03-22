@@ -6836,13 +6836,55 @@ E_ViolaMusicVoice = {
     r32
     
     % [E ViolaMusicVoice measure 227]                            %! SM4
-    R1 * 3/4
+    fs8..
+    
+    r32
+    
+    fs8..
+    
+    r32
+    
+    fs8..
+    
+    r32
     
     % [E ViolaMusicVoice measure 228]                            %! SM4
-    R1 * 1
+    fs8..
+    
+    r32
+    
+    fs8..
+    
+    r32
+    
+    fs8..
+    
+    r32
+    
+    fs8..
+    
+    r32
     
     % [E ViolaMusicVoice measure 229]                            %! SM4
-    R1 * 5/4
+    fs8..
+    
+    r32
+    
+    fs8..
+    
+    r32
+    
+    fs8..
+    
+    r32
+    
+    fs8..
+    
+    r32
+    
+    fs8..
+    
+    r32
     
     % [E ViolaMusicVoice measure 230]                            %! SM4
     R1 * 1
@@ -7229,13 +7271,55 @@ E_CelloMusicVoice = {
     r32
     
     % [E CelloMusicVoice measure 227]                            %! SM4
-    R1 * 3/4
+    c,8..
+    
+    r32
+    
+    c,8..
+    
+    r32
+    
+    c,8..
+    
+    r32
     
     % [E CelloMusicVoice measure 228]                            %! SM4
-    R1 * 1
+    c,8..
+    
+    r32
+    
+    c,8..
+    
+    r32
+    
+    c,8..
+    
+    r32
+    
+    c,8..
+    
+    r32
     
     % [E CelloMusicVoice measure 229]                            %! SM4
-    R1 * 5/4
+    c,8..
+    
+    r32
+    
+    c,8..
+    
+    r32
+    
+    c,8..
+    
+    r32
+    
+    c,8..
+    
+    r32
+    
+    c,8..
+    
+    r32
     
     % [E CelloMusicVoice measure 230]                            %! SM4
     R1 * 1

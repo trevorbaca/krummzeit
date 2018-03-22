@@ -87,37 +87,28 @@ maker(
     krummzeit.sponge_rhythm(),
     )
 
-### vn, va, vc [E4-10] glissando thicket (thinner) ###
-
 maker(
     ('ViolinMusicVoice', (4, 10)),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByRoundedRatiosDivisionCallback(
-            ratios=[(2, 1), (2, 1), (1, 1, 1)],
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            tuplet_ratios=[
-                (1, 2),
-                (1, 4),
-                (4, 3),
-                ],
-            division_masks=[abjad.index([5, 6], 7)],
-            ),
+    krummzeit.glissando_rhythm(
+        [(2, 1), (2, 1), (1, 1, 1)],
+        [abjad.index([5, 6], 7)],
         ),
     )
 
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 4),
+maker(
     ('ViolaMusicVoice', (4, 10)),
-    division_maker__ratios=[(2, 1), (1, 1, 1), (2, 1)],
-    rhythm_maker__division_masks=[abjad.index([0, 1], 7)],
+    krummzeit.glissando_rhythm(
+        [(2, 1), (1, 1, 1), (2, 1)],
+        [abjad.index([0, 1], 7)],
+        ),
     )
 
-maker.copy_rhythm(
-    ('ViolinMusicVoice', 4),
-    ('CelloMusicVoice', 4),
-    division_maker__ratios=[(1, 1, 1), (2, 1), (2, 1)],
-    rhythm_maker__division_masks=[abjad.index([2, 3], 7)],
+maker(
+    ('CelloMusicVoice', (4, 10)),
+    krummzeit.glissando_rhythm(
+        [(1, 1, 1), (2, 1), (2, 1)],
+        [abjad.index([2, 3], 7)],
+        ),
     )
 
 ### ob, cl [E4-11] ###

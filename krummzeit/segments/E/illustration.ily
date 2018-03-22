@@ -6237,27 +6237,24 @@ E_ViolinMusicVoice = {
     % [E ViolinMusicVoice measure 210]                           %! SM4
     R1 * 3/4
     \revert DynamicLineSpanner.staff-padding                     %! OC2
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [E ViolinMusicVoice measure 211]                       %! SM4
-        \override NoteHead.style = #'harmonic                    %! OC1
-        \override DynamicLineSpanner.staff-padding = #'8         %! OC1
-        \override TupletBracket.staff-padding = #4               %! OC1
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-        ef''4
-        \glissando                                               %! SC
-        \>                                                       %! HC1
-        \p                                                       %! HC1
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "molto flautando"                            %! IC
-            }                                                    %! IC
-        
-        e''2
-        \glissando                                               %! SC
-    }
+    
+    % [E ViolinMusicVoice measure 211]                           %! SM4
+    \override NoteHead.style = #'harmonic                        %! OC1
+    \override DynamicLineSpanner.staff-padding = #'8             %! OC1
+    \override TupletBracket.staff-padding = #4                   %! OC1
+    \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    ef''4
+    \glissando                                                   %! SC
+    \>                                                           %! HC1
+    \p                                                           %! HC1
+    ^ \markup {                                                  %! IC
+        \whiteout                                                %! IC
+            \upright                                             %! IC
+                "molto flautando"                                %! IC
+        }                                                        %! IC
+    
+    e''2
+    \glissando                                                   %! SC
     \times 4/5 {
         
         g''16
@@ -6344,16 +6341,13 @@ E_ViolinMusicVoice = {
     r4
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     \revert TupletBracket.staff-padding                          %! OC2
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [E ViolinMusicVoice measure 217]                       %! SM4
-        fs'2
-        \glissando                                               %! SC
-        
-        a'4.
-        \glissando                                               %! SC
-    }
+    
+    % [E ViolinMusicVoice measure 217]                           %! SM4
+    fs'2
+    \glissando                                                   %! SC
+    
+    a'4.
+    \glissando                                                   %! SC
     \times 2/3 {
         
         c''4
@@ -6727,16 +6721,13 @@ E_ViolaMusicVoice = {
         ef'8.
         \glissando                                               %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [E ViolaMusicVoice measure 216]                        %! SM4
-        f4
-        \glissando                                               %! SC
-        
-        fs2
-        \glissando                                               %! SC
-    }
+    
+    % [E ViolaMusicVoice measure 216]                            %! SM4
+    f4
+    \glissando                                                   %! SC
+    
+    fs2
+    \glissando                                                   %! SC
     \times 4/5 {
         
         cs'16
@@ -7063,39 +7054,131 @@ E_CelloMusicVoice = {
         g'8
         \glissando                                               %! SC
         
-        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         d'2
-        \ppp                                                     %! HC1
-        \revert NoteHead.style                                   %! OC2
     }
     
     r4
     
     % [E CelloMusicVoice measure 212]                            %! SM4
-    R1 * 5/4
+    r2.
+    \times 4/5 {
+        
+        ef'8
+        \glissando                                               %! SC
+        
+        f2
+        \glissando                                               %! SC
+    }
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 6/7 {
+        
+        % [E CelloMusicVoice measure 213]                        %! SM4
+        fs'2
+        \glissando                                               %! SC
+        
+        e4.
+        \glissando                                               %! SC
+    }
+    \times 2/3 {
+        
+        d4
+        \glissando                                               %! SC
+        
+        fs2
+        \glissando                                               %! SC
+    }
+    \times 4/5 {
+        
+        % [E CelloMusicVoice measure 214]                        %! SM4
+        a16
+        \glissando                                               %! SC
+        
+        c'4
+        \glissando                                               %! SC
+    }
+    \times 4/7 {
+        
+        cs4
+        \glissando                                               %! SC
+        
+        e8.
+    }
     
-    % [E CelloMusicVoice measure 213]                            %! SM4
-    R1 * 5/4
-    
-    % [E CelloMusicVoice measure 214]                            %! SM4
-    R1 * 3/4
+    r4
     
     % [E CelloMusicVoice measure 215]                            %! SM4
-    R1 * 3/4
+    r2
+    \times 4/7 {
+        
+        d4
+        \glissando                                               %! SC
+        
+        ef8.
+        \glissando                                               %! SC
+    }
     
     % [E CelloMusicVoice measure 216]                            %! SM4
-    R1 * 1
+    f4
+    \glissando                                                   %! SC
     
-    % [E CelloMusicVoice measure 217]                            %! SM4
-    R1 * 11/8
+    fs2
+    \glissando                                                   %! SC
+    \times 4/5 {
+        
+        cs16
+        \glissando                                               %! SC
+        
+        d4
+        \glissando                                               %! SC
+    }
+    \times 4/7 {
+        
+        % [E CelloMusicVoice measure 217]                        %! SM4
+        fs2
+        \glissando                                               %! SC
+        
+        a,4.
+        \glissando                                               %! SC
+    }
+    
+    c8
+    \glissando                                                   %! SC
+    
+    g,4
+    
+    r2
     
     % [E CelloMusicVoice measure 218]                            %! SM4
-    R1 * 3/4
-    \revert DynamicLineSpanner.staff-padding                     %! OC2
-    \revert TupletBracket.staff-padding                          %! OC2
-    
-    % [E CelloMusicVoice measure 219]                            %! SM4
-    R1 * 5/8
+    r2
+    \times 2/3 {
+        
+        af,8
+        \glissando                                               %! SC
+        
+        a,4
+        \glissando                                               %! SC
+        \revert DynamicLineSpanner.staff-padding                 %! OC2
+        \revert TupletBracket.staff-padding                      %! OC2
+    }
+    \times 4/5 {
+        
+        % [E CelloMusicVoice measure 219]                        %! SM4
+        bf,16.
+        \glissando                                               %! SC
+        
+        ef,4.
+        \glissando                                               %! SC
+    }
+    \times 4/7 {
+        
+        e,4
+        \glissando                                               %! SC
+        
+        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+        c,8.
+        \ppp                                                     %! HC1
+        \revert NoteHead.style                                   %! OC2
+    }
     
     % [E CelloMusicVoice measure 220]                            %! SM4
     R1 * 9/8

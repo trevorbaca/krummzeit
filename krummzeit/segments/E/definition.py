@@ -54,22 +54,13 @@ maker(
     baca.rehearsal_mark('E'),
     )
 
-### ob, cl [F1-8] ornamemented + unadorned ###
+### ob, cl [E1-8] ornamemented + unadorned ###
 
 maker(
-    ('OboeMusicVoice', 1),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByRoundedRatiosDivisionCallback(
-            ratios=[(2, 1), (2, 1), (1, 1, 1)],
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            tuplet_ratios=[
-                (1, 1, 1, 1, 3, 3),
-                (3, 4, 1, 1),
-                ],
-            division_masks=[abjad.index([3, 4], 6)],
-            ),
+    baca.scopes(
+        ('OboeMusicVoice', 1),
         ),
+    krummzeit.oboe_trills(),
     )
 
 maker.copy_rhythm(
@@ -91,7 +82,7 @@ maker(
         ),
     )
 
-### pf, vn, va, vc [F2] ###
+### pf, vn, va, vc [E2] ###
 
 maker(
     ('ViolinMusicVoice', 2),
@@ -127,7 +118,7 @@ maker.copy_rhythm(
     ('PianoMusicVoice', 2),
     )
 
-### suspended cymbal [F1-4] ###
+### suspended cymbal [E1-4] ###
 
 maker(
     ('PercussionMusicVoice', (1, 6)),
@@ -145,7 +136,7 @@ maker.copy_rhythm(
     ('PercussionMusicVoice', (17, 22)),
     )
 
-### vn, va, vc [F4-10] glissando thicket (thinner) ###
+### vn, va, vc [E4-10] glissando thicket (thinner) ###
 
 maker(
     ('ViolinMusicVoice', (4, 10)),
@@ -178,7 +169,7 @@ maker.copy_rhythm(
     rhythm_maker__division_masks=[abjad.index([2, 3], 7)],
     )
 
-### ob, cl [F4-11] ###
+### ob, cl [E4-11] ###
 
 maker(
     ('OboeMusicVoice', (4, 11)),
@@ -220,7 +211,7 @@ maker.copy_rhythm(
     rhythm_maker__division_masks=[abjad.index([0])],
     )
 
-### pf, xyl [F8] & [F10-15] ###
+### pf, xyl [E8] & [E10-15] ###
 
 maker(
     ('PianoMusicVoice', 8),
@@ -264,7 +255,7 @@ maker.copy_rhythm(
     ('PercussionMusicVoice', (10, 15)),
     )
 
-### cl, va, vc [F13] 3rd-octave interweave ###
+### cl, va, vc [E13] 3rd-octave interweave ###
 
 maker(
     ('ClarinetMusicVoice', 13),
@@ -298,7 +289,7 @@ maker.copy_rhythm(
     ('CelloMusicVoice', 13),
     )
 
-### cl, va, vc [F16-19] & [F22-23] 3rd-octave interweave ###
+### cl, va, vc [E16-19] & [E22-23] 3rd-octave interweave ###
 
 maker(
     ('ClarinetMusicVoice', (16, 19)),
@@ -350,7 +341,7 @@ maker.copy_rhythm(
     ('PianoMusicVoice', (16, 18)),
     )
 
-### ob, vn [F18-22] interweave (layer 2) ###
+### ob, vn [E18-22] interweave (layer 2) ###
 
 maker(
     ('OboeMusicVoice', (18, 22)),
@@ -376,7 +367,7 @@ maker.copy_rhythm(
     ('ViolinMusicVoice', 18),
     )
 
-### pf [F19-20] & [F22] pointillism ###
+### pf [E19-20] & [E22] pointillism ###
 
 maker(
     ('PianoMusicVoice', (19, 20)),

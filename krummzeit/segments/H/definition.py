@@ -150,21 +150,19 @@ maker(
     krummzeit.margin_markup('Hpschd.'),
     )
 
-### (14) string reiteration ###
-
 maker(
     ('ViolinMusicVoice', 1),
-    baca.pitches('Db4'),
+    baca.pitch('Db4'),
     )
 
 maker(
     ('ViolaMusicVoice', 1),
-    baca.pitches('C3'),
+    baca.pitch('C3'),
     )
 
 maker(
     ('CelloMusicVoice', 1),
-    baca.pitches('C2'),
+    baca.pitch('C2'),
     )
 
 maker(
@@ -229,7 +227,7 @@ maker(
 
 maker(
     baca.make_scopes(['OboeMusicVoice', 'ClarinetMusicVoice'], [(3, 6)]),
-    baca.pitches('D5'),
+    baca.pitch('D5'),
     )
 
 maker(
@@ -246,12 +244,12 @@ maker(
 
 maker(
     ('OboeMusicVoice', (7, 8)),
-    baca.pitches('Eb5'),
+    baca.pitch('Eb5'),
     )
 
 maker(
     ('ClarinetMusicVoice', (7, 8)),
-    baca.pitches('Eb2'),
+    baca.pitch('Eb2'),
     )
 
 maker(
@@ -292,7 +290,7 @@ maker(
 
 maker(
     baca.make_scopes(['PianoMusicVoice', 'PercussionMusicVoice'], [8]),
-    baca.pitches('F#6'),
+    baca.pitch('F#6'),
     )
 
 maker(

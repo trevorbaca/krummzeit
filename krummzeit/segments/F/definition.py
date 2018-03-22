@@ -49,90 +49,45 @@ maker(
     krummzeit.rest_delimited_repeated_duration_notes((1, 4), 32),
     )
 
-### snare [F2], [F4-6], [F9], [F11]; tam-tam [F13-14] ###
+# snare
 
 maker(
     ('PercussionMusicVoice', 1),
     baca.clef('percussion'),
-    baca.RhythmCommand(
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=True,
-                ),
-            division_masks=[abjad.index([0], 1)],
-            )
-        ),
     krummzeit.markup.snare_drum(baca.leaf(0)),
     )
 
-maker.copy_rhythm(
-    ('PercussionMusicVoice', 1),
-    ('PercussionMusicVoice', 2),
-    rhythm_maker__division_masks=None,
+maker(
+    baca.scopes(
+        ('PercussionMusicVoice', 2),
+        ('PercussionMusicVoice', (4, 6)),
+        ('PercussionMusicVoice', 9),
+        ('PercussionMusicVoice', 11),
+        ),
+    baca.make_repeat_tied_notes(),
     )
 
-maker.copy_rhythm(
-    ('PercussionMusicVoice', 2),
-    ('PercussionMusicVoice', (4, 6)),
-    )
-
-maker.copy_rhythm(
-    ('PercussionMusicVoice', 2),
-    ('PercussionMusicVoice', 9),
-    )
-
-maker.copy_rhythm(
-    ('PercussionMusicVoice', 2),
-    ('PercussionMusicVoice', 11),
-    )
+# tam
 
 maker(
     ('PercussionMusicVoice', (13, 14)),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                durations=[(1, 2)],
-                ),
-            ),
-        rhythm_maker=rhythmos.NoteRhythmMaker()
-        ),
+    baca.make_repeated_duration_notes([(1, 2)], rewrite_meter=False),
     krummzeit.markup.tam_tam(),
     )
 
-### harpsichord [F3-6], [F9], [F11] ###
-
 maker(
-    ('PianoMusicVoice', (3, 6)),
+    ('PianoMusicVoice', 3),
     baca.instrument(krummzeit.instruments['Harpsichord']),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByRoundedRatiosDivisionCallback(
-            ratios=[
-                (1, 2),
-                (2, 1),
-                ],
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            tuplet_ratios=[
-                (-1, 1, 1, 2),
-                (-1, 1, 1, -2, 2),
-                ],
-            tuplet_specifier=rhythmos.TupletSpecifier(
-                avoid_dots=True,
-                ),
-            ),
-        ),
     krummzeit.margin_markup('Hpschd.'),
     )
 
-maker.copy_rhythm(
-    ('PianoMusicVoice', 3),
-    ('PianoMusicVoice', 9),
-    )
-
-maker.copy_rhythm(
-    ('PianoMusicVoice', 3),
-    ('PianoMusicVoice', 11),
+maker(
+    baca.scopes(
+        ('PianoMusicVoice', (3, 6)),
+        ('PianoMusicVoice', 9),
+        ('PianoMusicVoice', 11),
+        ),
+    krummzeit.silver_points([(1, 2), (2, 1)]),
     )
 
 ### vn, va, vc [F5-13] unrestrained ###

@@ -200,17 +200,17 @@ pcs = pcs.rotate(-121).retrograde().transpose(9).invert().sequence()
 pcs = pcs.repeat_by([4, 4, 1, 1, 1, 1, 4, 1, 1, 1], cyclic=True)
 maker(
     ('OboeMusicVoice', (1, 2)),
-    baca.pitches(pcs),
     baca.dynamic('p'),
     baca.map(
         baca.trill_spanner(),
         baca.plts().filter_preprolated('>=', (1, 4)),
         ),
-    # TODO: maybe a way to programmatically compose the two commands
-    # displacement before color fingerings
-    krummzeit.displacement(),
-    krummzeit.color_fingerings(),
-    krummzeit.register_wide(5),
+    baca.suite([
+        baca.pitches(pcs),
+        krummzeit.displacement(),
+        krummzeit.register_wide(5),
+        krummzeit.color_fingerings(),
+        ]),
     )
 
 ### (1.1) pf, vn, va, vc ###

@@ -173,29 +173,14 @@ maker(
         ]),
     )
 
-### va, vc [G11-12] ###
-
 maker(
     ('ViolaMusicVoice', (11, 12)),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=[2, 3, 1],
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            denominator=(1, 4),
-            tuplet_ratios=[(1, 4)],
-            tuplet_specifier=rhythmos.TupletSpecifier(
-                avoid_dots=True,
-                diminution=False,
-                ),
-            ),
-        ),
+    krummzeit.hypermeter_tuplets([(1, 4)]),
     )
 
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 11),
-    ('CelloMusicVoice', (11, 12)),  # ?
-    rhythm_maker__tuplet_ratios=[(3, 2)],
+maker(
+    ('CelloMusicVoice', (11, 12)),
+    krummzeit.hypermeter_tuplets([(3, 2)]),
     )
 
 ### vn, va, vc [G20-21] reiteration ###

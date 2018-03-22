@@ -211,6 +211,10 @@ maker(
 maker(
     ('CelloMusicVoice', (1, 9)),
     baca.pitches('A1 B~1 C2 D+2 E+2 F2 Gb2 A~2 B2'),
+    baca.dls_staff_padding(6),
+    baca.hairpin('ff < fff'),
+    baca.map(baca.glissando(), baca.runs()),
+    baca.markup.subito_ordinario(),
     )
 
 maker(
@@ -227,24 +231,10 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', (1, 9)),
-    baca.map(baca.glissando(), baca.runs()),
-    baca.hairpin('ff < fff'),
-    baca.dls_staff_padding(6),
-    baca.markup.subito_ordinario(),
-    )
-
-maker(
-    ('OboeMusicVoice', (1, 7)),
-    baca.pitch('B3'),
-    )
-
-maker(
     ('OboeMusicVoice', (1, 7)),
     baca.dynamic('ff'),
+    baca.pitch('B3'),
     )
-
-### (12) ###
 
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs[:20].transpose(3)
@@ -260,20 +250,29 @@ maker(
 
 maker(
     ('PianoMusicVoice', (5, 12)),
-    krummzeit.displacement(),
-    krummzeit.register_wide(5),
+    baca.suite([
+        krummzeit.displacement(),
+        krummzeit.register_wide(5),
+        ]),
     )
 
 maker(
     ('ViolinMusicVoice', (5, 12)),
-    krummzeit.displacement(),
-    krummzeit.register_wide(6),
+    baca.suite([
+        krummzeit.displacement(),
+        krummzeit.register_wide(6),
+        ]),
     )
 
 maker(
-    baca.make_scopes(['OboeMusicVoice', 'ClarinetMusicVoice'], [(5, 12)]),
-    krummzeit.displacement(),
-    krummzeit.register_wide(5),
+    baca.scopes(
+        ('OboeMusicVoice', (5, 12)),
+        ('ClarinetMusicVoice', (5, 12)),
+        ),
+    baca.suite([
+        krummzeit.displacement(),
+        krummzeit.register_wide(5),
+        ]),
     )
 
 maker(

@@ -159,27 +159,18 @@ maker(
         ),
     )
 
-### va [G1-7] & vc [G1-9] block pedals ###
-
 maker(
     ('ViolaMusicVoice', (1, 7)),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                durations=[(7, 4), (2, 8), (3, 8), (7, 4), (7, 4), (1, 4)],
-                )
-            ),
-        rhythm_maker=rhythmos.NoteRhythmMaker(),
+    krummzeit.fused_expanse(
+        [(7, 4), (2, 8), (3, 8), (7, 4), (7, 4), (1, 4)],
         ),
     )
 
-maker.copy_rhythm(
-    ('ViolaMusicVoice', 1),
+maker(
     ('CelloMusicVoice', (1, 9)),
-    division_maker__secondary_division_maker__durations=[
+    krummzeit.fused_expanse([
         (3, 4), (4, 4), (3, 8), (2, 8), (8, 4), (7, 4), (3, 4), (3, 8), (6, 8),
-        ],
+        ]),
     )
 
 ### va, vc [G11-12] ###

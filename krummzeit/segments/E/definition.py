@@ -191,8 +191,8 @@ maker(
 
 maker(
     ('ClarinetMusicVoice', (1, 2)),
-    baca.pitch('B3'),
     baca.dynamic('ppp'),
+    baca.pitch('B3'),
     )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
@@ -217,12 +217,8 @@ maker(
 
 maker(
     ('PianoMusicVoice', 2),
-    krummzeit.clusters('tenor'),
-    )
-
-maker(
-    ('PianoMusicVoice', 2),
     baca.dynamic('ff'),
+    krummzeit.clusters('tenor'),
     )
 
 maker(
@@ -241,26 +237,24 @@ maker(
     )
 
 maker(
-    baca.make_scopes([
-        'ViolinMusicVoice',
-        'ViolaMusicVoice',
-        'CelloMusicVoice'],
-        [2],
+    baca.scopes(
+        ('ViolinMusicVoice', 2),
+        ('ViolaMusicVoice', 2),
+        ('CelloMusicVoice', 2),
         ),
     baca.dynamic('ff'),
     baca.stem_tremolo(),
     )
 
-### suspended cymbal ###
+# cymbal
 
 maker(
-    baca.make_scopes(['PercussionMusicVoice'], [(1, 6), (17, 22)]),
-    # TODO: make clear semantically continuation from previous segment
-    #baca.dynamic('ppp'),
+    baca.scopes(
+        ('PercussionMusicVoice', (1, 6)),
+        ('PercussionMusicVoice', (17, 22)),
+        ),
     baca.stem_tremolo(),
     )
-
-### (5.1) ob, cl ###
 
 pcs = baca.PitchClassSegment('C6 B+5 A5 G+5 F+5 E~5')
 pcs = pcs.sequence().repeat_by([3, 2, 4], cyclic=True)
@@ -277,13 +271,14 @@ maker(
     )
 
 maker(
-    baca.make_scopes(['OboeMusicVoice', 'ClarinetMusicVoice'], [(4, 11)]),
+    baca.scopes(
+        ('OboeMusicVoice', (4, 11)),
+        ('ClarinetMusicVoice', (4, 11)),
+        ),
     baca.dynamic('ff'),
     baca.map(baca.glissando(), baca.ntruns()),
     krummzeit.color_fingerings(),
     )
-
-### (5.3) vn, va, vc thicket ###
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-301).retrograde().transpose(10)
@@ -295,7 +290,6 @@ maker(
 maker(
     baca.make_scopes(strings, [(4, 10)]),
     baca.map(baca.glissando(), baca.runs()),
-    #repeated_p_to_ppp,
     baca.hairpin('p > ppp'),
     baca.markup.molto_flautando(),
     baca.natural_harmonics(),
@@ -316,20 +310,15 @@ maker(
     krummzeit.register_narrow(4, 2),
     )
 
-### (7.1) points ###
-
 maker(
-    baca.make_scopes(['PianoMusicVoice', 'PercussionMusicVoice'], [(8, 15)]),
-    baca.pitch('F5'),
-    )
-
-maker(
-    baca.make_scopes(['PianoMusicVoice', 'PercussionMusicVoice'], [(8, 15)]),
+    baca.scopes(
+        ('PianoMusicVoice', (8, 15)),
+        ('PercussionMusicVoice', (8, 15)),
+        ),
     baca.dynamic('p'),
+    baca.pitch('F5'),
     baca.staccatissimi(),
     )
-
-### (4.2) va, vc, bass cl & (4.3) vn, ob ###
 
 maker(
     ('ViolaMusicVoice', (13, 23)),
@@ -352,11 +341,10 @@ maker(
     )
 
 maker(
-    baca.make_scopes([
-        'ViolaMusicVoice',
-        'CelloMusicVoice',
-        'ClarinetMusicVoice'],
-        [(13, 23)],
+    baca.scopes(
+        ('ClarinetMusicVoice', 13),
+        ('ViolaMusicVoice', 13),
+        ('CelloMusicVoice', 13),
         ),
     baca.dynamic('ppp'),
     )
@@ -395,23 +383,19 @@ maker(
     baca.map(baca.trill_spanner(), baca.qruns()),
     )
 
-### (9.1) pf points ###
-
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs.rotate(-85).retrograde().transpose(5).invert()
 maker(
     ('PianoMusicVoice', (19, 22)),
-    baca.pitches(pcs),
-    )
-
-maker(
-    ('PianoMusicVoice', (19, 22)),
     baca.clef('treble'),
     baca.dynamic('fff'),
-    krummzeit.displacement(),
-    krummzeit.register_narrow(7),
     baca.ottava(),
     baca.staccatissimi(),
+    baca.suite([
+        baca.pitches(pcs),
+        krummzeit.displacement(),
+        krummzeit.register_narrow(7),
+        ]),
     )
 
 ### VERTICAL ALIGNMENT ###

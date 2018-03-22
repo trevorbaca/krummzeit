@@ -934,16 +934,13 @@ F_OboeMusicVoice = {
     
     % [F OboeMusicVoice measure 237]                             %! SM4
     R1 * 5/8
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [F OboeMusicVoice measure 238]                         %! SM4
-        \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-        a'''4.
-        -\staccato                                               %! IC
-        \<                                                       %! HC1
-        \p                                                       %! HC1
-    }
+    
+    % [F OboeMusicVoice measure 238]                             %! SM4
+    \once \override OboeMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    a'''4.
+    -\staccato                                                   %! IC
+    \<                                                           %! HC1
+    \p                                                           %! HC1
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/6 {
         
@@ -956,32 +953,26 @@ F_OboeMusicVoice = {
         bf'''4
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        % [F OboeMusicVoice measure 239]                         %! SM4
-        bf'''4
-        
-        af'''4
-        -\staccato                                               %! IC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        d'''16
-        -\staccato                                               %! IC
-        [
-        
-        cs'''16
-        -\staccato                                               %! IC
-        
-        ef'''16
-        -\staccato                                               %! IC
-        
-        f'''16
-        ~
-        ]
-    }
+    
+    % [F OboeMusicVoice measure 239]                             %! SM4
+    bf'''4
+    
+    af'''4
+    -\staccato                                                   %! IC
+    
+    d'''16
+    -\staccato                                                   %! IC
+    [
+    
+    cs'''16
+    -\staccato                                                   %! IC
+    
+    ef'''16
+    -\staccato                                                   %! IC
+    
+    f'''16
+    ~
+    ]
     \times 2/3 {
         
         f'''4
@@ -992,21 +983,15 @@ F_OboeMusicVoice = {
         b''4
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [F OboeMusicVoice measure 240]                         %! SM4
-        b''4
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        fs''4
-        -\staccato                                               %! IC
-        
-        g''4
-        -\staccato                                               %! IC
-    }
+    
+    % [F OboeMusicVoice measure 240]                             %! SM4
+    b''4
+    
+    fs''4
+    -\staccato                                                   %! IC
+    
+    g''4
+    -\staccato                                                   %! IC
     \times 8/12 {
         
         % [F OboeMusicVoice measure 241]                         %! SM4
@@ -1048,24 +1033,15 @@ F_OboeMusicVoice = {
         ~
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        b'4
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [F OboeMusicVoice measure 242]                         %! SM4
-        f''4.
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        f''4.
-        ~
-    }
+    
+    b'4
+    
+    % [F OboeMusicVoice measure 242]                             %! SM4
+    f''4.
+    ~
+    
+    f''4.
+    ~
     \times 8/12 {
         
         % [F OboeMusicVoice measure 243]                         %! SM4
@@ -1120,24 +1096,15 @@ F_OboeMusicVoice = {
         -\staccato                                               %! IC
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        af'4
-        -\staccato                                               %! IC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        f''4.
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [F OboeMusicVoice measure 244]                         %! SM4
-        f''4
-    }
+    
+    af'4
+    -\staccato                                                   %! IC
+    
+    f''4.
+    ~
+    
+    % [F OboeMusicVoice measure 244]                             %! SM4
+    f''4
     \tweak text #tuplet-number::calc-fraction-text
     \times 10/14 {
         
@@ -1319,29 +1286,20 @@ F_ClarinetMusicVoice = {
         d'4
         -\staccato                                               %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        gs'4
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        gs'4
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        % [F ClarinetMusicVoice measure 239]                     %! SM4
-        fs'8
-        -\staccato                                               %! IC
-        [
-        
-        d'8
-        ~
-        ]
-    }
+    
+    gs'4
+    ~
+    
+    gs'4
+    
+    % [F ClarinetMusicVoice measure 239]                         %! SM4
+    fs'8
+    -\staccato                                                   %! IC
+    [
+    
+    d'8
+    ~
+    ]
     \times 2/3 {
         
         d'4
@@ -1362,65 +1320,44 @@ F_ClarinetMusicVoice = {
         a'4
         -\staccato                                               %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        % [F ClarinetMusicVoice measure 240]                     %! SM4
-        as'4
-        -\staccato                                               %! IC
-        
-        f''4
-        -\staccato                                               %! IC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        ds''8
-        -\staccato                                               %! IC
-        [
-        
-        as'8
-        ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [F ClarinetMusicVoice measure 241]                     %! SM4
-        as'4.
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        f''4.
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        % [F ClarinetMusicVoice measure 242]                     %! SM4
-        f''4
-        
-        fs''4
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        fs''8
-        [
-        
-        a''8
-        -\staccato                                               %! IC
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [F ClarinetMusicVoice measure 243]                     %! SM4
-        b''4
-        -\staccato                                               %! IC
-    }
+    
+    % [F ClarinetMusicVoice measure 240]                         %! SM4
+    as'4
+    -\staccato                                                   %! IC
+    
+    f''4
+    -\staccato                                                   %! IC
+    
+    ds''8
+    -\staccato                                                   %! IC
+    [
+    
+    as'8
+    ~
+    ]
+    
+    % [F ClarinetMusicVoice measure 241]                         %! SM4
+    as'4.
+    
+    f''4.
+    ~
+    
+    % [F ClarinetMusicVoice measure 242]                         %! SM4
+    f''4
+    
+    fs''4
+    ~
+    
+    fs''8
+    [
+    
+    a''8
+    -\staccato                                                   %! IC
+    ]
+    
+    % [F ClarinetMusicVoice measure 243]                         %! SM4
+    b''4
+    -\staccato                                                   %! IC
     \times 2/3 {
         
         d'''4
@@ -1432,39 +1369,30 @@ F_ClarinetMusicVoice = {
         fs''4
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        fs''4.
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        % [F ClarinetMusicVoice measure 244]                     %! SM4
-        gs''8
-        -\staccato                                               %! IC
-        [
-        
-        a''8
-        -\staccato                                               %! IC
-        
-        f'''8
-        -\staccato                                               %! IC
-        
-        a''8
-        ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-        a''4.
-        \ff                                                      %! HC1
-        \revert Beam.positions                                   %! OC2
-        \revert TupletBracket.staff-padding                      %! OC2
-        \revert DynamicLineSpanner.staff-padding                 %! OC2
-    }
+    
+    fs''4.
+    
+    % [F ClarinetMusicVoice measure 244]                         %! SM4
+    gs''8
+    -\staccato                                                   %! IC
+    [
+    
+    a''8
+    -\staccato                                                   %! IC
+    
+    f'''8
+    -\staccato                                                   %! IC
+    
+    a''8
+    ~
+    ]
+    
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    a''4.
+    \ff                                                          %! HC1
+    \revert Beam.positions                                       %! OC2
+    \revert TupletBracket.staff-padding                          %! OC2
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
     
     % [F ClarinetMusicVoice measure 245]                         %! SM4
     \override DynamicLineSpanner.staff-padding = #'8             %! OC1

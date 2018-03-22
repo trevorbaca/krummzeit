@@ -117,19 +117,13 @@ maker(
 
 maker(
     ('OboeMusicVoice', (3, 7)),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByDurationsDivisionCallback(
-            durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
-            pattern_rotation_index=-1,
-            remainder_fuse_threshold=(1, 8),
-            ),
-        rhythm_maker=rhythmos.EvenDivisionRhythmMaker(
-            denominators=[4, 4, 4, 16],
-            extra_counts_per_division=[3, 1, 0, 4],
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=[0, 1, 0, 1, 1, 0],
-                ),
-            ),
+    krummzeit.polyphony(
+        durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
+        rotation=-1,
+        fuse=(1, 8),
+        denominators=[4, 4, 4, 16],
+        extra_counts=[3, 1, 0, 4],
+        ties=[0, 1, 0, 1, 1, 0],
         ),
     )
 

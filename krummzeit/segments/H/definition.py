@@ -270,9 +270,10 @@ maker(
     )
 
 maker(
-    baca.make_scopes([
-        'ViolinMusicVoice', 'ViolaMusicVoice', 'CelloMusicVoice'],
-        [(6, 8)],
+    baca.scopes(
+        ('ViolinMusicVoice', (6, 8)),
+        ('ViolaMusicVoice', (6, 8)),
+        ('CelloMusicVoice', (6, 8)),
         ),
     baca.dynamic('fff'),
     baca.map(baca.glissando(), baca.runs()),
@@ -280,13 +281,12 @@ maker(
     )
 
 maker(
-    baca.make_scopes(['PianoMusicVoice', 'PercussionMusicVoice'], [8]),
-    baca.pitch('F#6'),
-    )
-
-maker(
-    baca.make_scopes(['PianoMusicVoice', 'PercussionMusicVoice'], [8]),
+    baca.scopes(
+        ('PianoMusicVoice', 8),
+        ('PercussionMusicVoice', 8),
+        ),
     baca.dynamic('fff'),
+    baca.pitch('F#6'),
     baca.stem_tremolo(),
     )
 
@@ -309,8 +309,8 @@ maker(
 
 maker(
     ('ClarinetMusicVoice', (7, 8)),
-    baca.stems_up(),
     baca.dls_staff_padding(9),
+    baca.stems_up(),
     baca.tuplet_bracket_staff_padding(5),
     )
 

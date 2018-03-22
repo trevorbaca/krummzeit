@@ -679,8 +679,8 @@ H_ClarinetMusicVoice = {
     \times 6/5 {
         
         % [H ClarinetMusicVoice measure 288]                     %! SM4
-        \override Stem.direction = #up                           %! OC1
         \override DynamicLineSpanner.staff-padding = #'9         %! OC1
+        \override Stem.direction = #up                           %! OC1
         \override TupletBracket.staff-padding = #5               %! OC1
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
         f4
@@ -721,8 +721,8 @@ H_ClarinetMusicVoice = {
                     \finger
                         1
             }
-        \revert Stem.direction                                   %! OC2
         \revert DynamicLineSpanner.staff-padding                 %! OC2
+        \revert Stem.direction                                   %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
         
     }

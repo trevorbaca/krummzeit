@@ -6475,26 +6475,281 @@ E_ViolinMusicVoice = {
         r16
         \stopTrillSpan                                           %! SC
     }
-    
-    % [E ViolinMusicVoice measure 229]                           %! SM4
-    R1 * 5/4
-    
-    % [E ViolinMusicVoice measure 230]                           %! SM4
-    R1 * 1
-    
-    % [E ViolinMusicVoice measure 231]                           %! SM4
-    R1 * 9/8
-    
-    % [E ViolinMusicVoice measure 232]                           %! SM4
-    R1 * 3/4
-    
-    % [E ViolinMusicVoice measure 233]                           %! SM4
-    R1 * 5/8
-    \revert DynamicLineSpanner.staff-padding                     %! OC2
-    \revert TupletBracket.staff-padding                          %! OC2
+    \times 2/3 {
+        
+        % [E ViolinMusicVoice measure 229]                       %! SM4
+        \pitchedTrill                                            %! SC
+        g''8.
+        \startTrillSpan a''                                      %! SC
+        
+        r16
+        \stopTrillSpan                                           %! SC
+        
+        \pitchedTrill                                            %! SC
+        g''8
+        ~
+        \startTrillSpan a''                                      %! SC
+    }
+    \times 2/3 {
+        
+        g''16
+        
+        r16
+        \stopTrillSpan                                           %! SC
+        
+        \pitchedTrill                                            %! SC
+        g''8.
+        \startTrillSpan a''                                      %! SC
+        
+        r16
+        \stopTrillSpan                                           %! SC
+    }
+    \times 2/3 {
+        
+        \pitchedTrill                                            %! SC
+        g''8.
+        \startTrillSpan a''                                      %! SC
+        
+        r16
+        \stopTrillSpan                                           %! SC
+        
+        \pitchedTrill                                            %! SC
+        g''8
+        ~
+        \startTrillSpan a''                                      %! SC
+    }
+    \times 2/3 {
+        
+        g''16
+        
+        r16
+        \stopTrillSpan                                           %! SC
+        
+        \pitchedTrill                                            %! SC
+        g''8.
+        \startTrillSpan a''                                      %! SC
+        
+        r16
+        \stopTrillSpan                                           %! SC
+    }
+    \times 2/3 {
+        
+        \pitchedTrill                                            %! SC
+        g''8.
+        \startTrillSpan a''                                      %! SC
+        
+        r16
+        \stopTrillSpan                                           %! SC
+        
+        \pitchedTrill                                            %! SC
+        g''8
+        ~
+        \startTrillSpan a''                                      %! SC
+    }
+    \times 2/3 {
+        
+        % [E ViolinMusicVoice measure 230]                       %! SM4
+        g''16
+        
+        r16
+        \stopTrillSpan                                           %! SC
+        
+        \pitchedTrill                                            %! SC
+        g''8.
+        \startTrillSpan a''                                      %! SC
+        
+        r16
+        \stopTrillSpan                                           %! SC
+    }
+    \times 2/3 {
+        
+        \pitchedTrill                                            %! SC
+        g''8.
+        \startTrillSpan a''                                      %! SC
+        
+        r16
+        \stopTrillSpan                                           %! SC
+        
+        \pitchedTrill                                            %! SC
+        g''8
+        ~
+        \startTrillSpan a''                                      %! SC
+    }
+    \times 2/3 {
+        
+        g''16
+        
+        r16
+        \stopTrillSpan                                           %! SC
+        
+        \pitchedTrill                                            %! SC
+        g''8.
+        \startTrillSpan a''                                      %! SC
+        
+        r16
+        \stopTrillSpan                                           %! SC
+    }
+    \times 2/3 {
+        
+        \pitchedTrill                                            %! SC
+        g''8.
+        \startTrillSpan a''                                      %! SC
+        
+        r16
+        \stopTrillSpan                                           %! SC
+        
+        \pitchedTrill                                            %! SC
+        g''8
+        ~
+        \startTrillSpan a''                                      %! SC
+    }
+    \times 2/3 {
+        
+        % [E ViolinMusicVoice measure 231]                       %! SM4
+        g''16
+        
+        r16
+        \stopTrillSpan                                           %! SC
+        
+        \pitchedTrill                                            %! SC
+        g''8.
+        \startTrillSpan a''                                      %! SC
+        
+        r16
+        \stopTrillSpan                                           %! SC
+    }
+    \times 2/3 {
+        
+        \pitchedTrill                                            %! SC
+        g''8.
+        \startTrillSpan a''                                      %! SC
+        
+        r16
+        \stopTrillSpan                                           %! SC
+        
+        \pitchedTrill                                            %! SC
+        g''8
+        ~
+        \startTrillSpan a''                                      %! SC
+    }
+    \times 2/3 {
+        
+        g''16
+        
+        r16
+        \stopTrillSpan                                           %! SC
+        
+        \pitchedTrill                                            %! SC
+        g''8.
+        \startTrillSpan a''                                      %! SC
+        
+        r16
+        \stopTrillSpan                                           %! SC
+    }
+    \times 2/3 {
+        
+        \pitchedTrill                                            %! SC
+        g''8.
+        \startTrillSpan a''                                      %! SC
+        
+        r16
+        \stopTrillSpan                                           %! SC
+        
+        \pitchedTrill                                            %! SC
+        g''8
+        ~
+        \startTrillSpan a''                                      %! SC
+    }
+    \times 2/3 {
+        
+        g''16
+        
+        r16
+        \stopTrillSpan                                           %! SC
+        
+        \pitchedTrill                                            %! SC
+        g''8.
+        \startTrillSpan a''                                      %! SC
+        
+        r16
+        \stopTrillSpan                                           %! SC
+    }
+    \times 2/3 {
+        
+        \pitchedTrill                                            %! SC
+        g''8.
+        \startTrillSpan a''                                      %! SC
+        
+        r16
+        \stopTrillSpan                                           %! SC
+        
+        \pitchedTrill                                            %! SC
+        g''8
+        ~
+        \startTrillSpan a''                                      %! SC
+    }
+    \times 2/3 {
+        
+        g''16
+        
+        r16
+        \stopTrillSpan                                           %! SC
+        
+        \pitchedTrill                                            %! SC
+        g''8.
+        \startTrillSpan a''                                      %! SC
+        
+        r16
+        \stopTrillSpan                                           %! SC
+    }
+    \times 2/3 {
+        
+        \pitchedTrill                                            %! SC
+        g''8.
+        \startTrillSpan a''                                      %! SC
+        
+        % [E ViolinMusicVoice measure 233]                       %! SM4
+        r16
+        \stopTrillSpan                                           %! SC
+        
+        \pitchedTrill                                            %! SC
+        g''8
+        ~
+        \startTrillSpan a''                                      %! SC
+    }
+    \times 2/3 {
+        
+        g''16
+        
+        r16
+        \stopTrillSpan                                           %! SC
+        
+        \pitchedTrill                                            %! SC
+        g''8.
+        \startTrillSpan a''                                      %! SC
+        
+        r16
+        \stopTrillSpan                                           %! SC
+    }
+    \times 2/3 {
+        
+        \pitchedTrill                                            %! SC
+        g''8.
+        \startTrillSpan a''                                      %! SC
+        
+        r16
+        \stopTrillSpan                                           %! SC
+        
+        \pitchedTrill                                            %! SC
+        g''8
+        \startTrillSpan a''                                      %! SC
+        \revert DynamicLineSpanner.staff-padding                 %! OC2
+        \revert TupletBracket.staff-padding                      %! OC2
+    }
     
     % [E ViolinMusicVoice measure 234]                           %! SM4
     R1 * 9/8
+    \stopTrillSpan                                               %! SC
     
 }
 

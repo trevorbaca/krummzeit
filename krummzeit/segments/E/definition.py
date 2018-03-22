@@ -176,27 +176,11 @@ maker(
 ### ob, vn [E18-22] interweave (layer 2) ###
 
 maker(
-    ('OboeMusicVoice', (18, 22)),
-    baca.RhythmCommand(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                durations=[(1, 4)],
-                remainder=abjad.Right,
-                ),
-            ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
-            tuplet_ratios=[(3, -1, 2), (1, -1, 3, -1)],
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=[1, 0],
-                ),
-            ),
+    baca.scopes(
+        ('OboeMusicVoice', (18, 22)),
+        ('ViolinMusicVoice', (18, 22)),
         ),
-    )
-
-maker.copy_rhythm(
-    ('OboeMusicVoice', 18),
-    ('ViolinMusicVoice', 18),
+    krummzeit.detached_triplets(),
     )
 
 ### pf [E19-20] & [E22] pointillism ###

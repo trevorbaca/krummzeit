@@ -109,16 +109,10 @@ maker(
     ('PianoMusicVoice', (14, 20)),
     baca.instrument(krummzeit.instruments['Piano']),
     baca.clef('bass'),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByRoundedRatiosDivisionCallback(
-            ratios=[(2, 1), (2, 1), (1, 1, 1)],
-            ),
-        rhythm_maker=rhythmos.NoteRhythmMaker(
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=[0, 1],
-                ),
-            division_masks=[abjad.index([5, 6], 7)],
-            ),
+    krummzeit.piano_harmonics(
+        [(2, 1), (2, 1), (1, 1, 1)],
+        [abjad.index([5, 6], 7)],
+        [0, 1],
         ),
     )
 

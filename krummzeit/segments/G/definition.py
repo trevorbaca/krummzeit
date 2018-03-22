@@ -43,30 +43,20 @@ maker(
     baca.rehearsal_mark('G'),
     )
 
-### ob [G1-7] block ###
-
 maker(
     ('OboeMusicVoice', (1, 7)),
     baca.make_repeat_tied_notes(),
     )
 
-### ob [G9-12] 5th-octave counterpoint ###
-
 maker(
     ('OboeMusicVoice', (9, 12)),
-    baca.RhythmCommand(
-        division_maker=baca.SplitByDurationsDivisionCallback(
-            durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
-            pattern_rotation_index=-1,
-            remainder_fuse_threshold=(1, 8),
-            ),
-        rhythm_maker=rhythmos.EvenDivisionRhythmMaker(
-            denominators=[8, 8, 4, 4, 8, 8],
-            extra_counts_per_division=[3, 1, 0, 4],
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=[0, 1, 0, 1, 1, 0],
-                ),
-            ),
+    krummzeit.polyphony(
+        durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
+        rotation=-1,
+        fuse=(1, 8),
+        denominators=[8, 8, 4, 4, 8, 8],
+        extra_counts=[3, 1, 0, 4],
+        ties=[0, 1, 0, 1, 1, 0],
         ),
     )
 

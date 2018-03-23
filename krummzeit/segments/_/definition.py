@@ -152,7 +152,7 @@ maker(
     baca.clef('treble'),
     baca.dynamic('fff'),
     baca.make_repeat_tied_notes(),
-    baca.pitches('C#5'),
+    baca.pitch('C#5'),
     baca.stem_tremolo(),
     )
 
@@ -166,7 +166,7 @@ maker(
     baca.dynamic('fff'),
     baca.make_repeat_tied_notes(),
     baca.markup.boxed('xylophone'),
-    baca.pitches('C#5'),
+    baca.pitch('C#5'),
     baca.stem_tremolo(),
     )
 

@@ -69,13 +69,13 @@ maker(
 ### ob, ' [B1] ornamented, unadorned ###
 
 maker(
-    baca.scopes(
+    [
         ('OboeMusicVoice', 1),
         ('OboeMusicVoice', 3),
         ('OboeMusicVoice', (20, 22)),
         ('OboeMusicVoice', 24),
         ('OboeMusicVoice', (26, 27)),
-        ),
+        ],
     krummzeit.pizzicato_rhythm(),
     )
 

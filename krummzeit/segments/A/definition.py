@@ -120,10 +120,10 @@ maker(
 ### sponges [B1] & [B9-14] ###
 
 maker(
-    baca.scopes(
+    [
         ('PercussionMusicVoice', 1),
         ('PercussionMusicVoice', (9, 14)),
-        ),
+        ],
     krummzeit.sponge_rhythm(),
     )
 
@@ -181,10 +181,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ClarinetMusicVoice', (3, 4)),
         ('ClarinetMusicVoice', (7, 12)),
-        ),
+        ],
     krummzeit.polyphony(
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,

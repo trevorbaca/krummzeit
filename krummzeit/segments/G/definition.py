@@ -264,10 +264,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('OboeMusicVoice', (5, 12)),
         ('ClarinetMusicVoice', (5, 12)),
-        ),
+        ],
     baca.suite([
         krummzeit.displacement(),
         krummzeit.register_wide(5),
@@ -275,10 +275,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('OboeMusicVoice', (9, 12)),
         ('ClarinetMusicVoice', (9, 12)),
-        ),
+        ],
     baca.dynamic('pp'),
     baca.markup.leggierissimo(),
     baca.staccati(),
@@ -302,10 +302,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolaMusicVoice', (11, 12)),
         ('CelloMusicVoice', (11, 12)),
-        ),
+        ],
     baca.dls_staff_padding(7),
     baca.hairpin('ff > pp'),
     baca.map(baca.glissando(), baca.runs()),
@@ -335,10 +335,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', (14, 20)),
         ('CelloMusicVoice', (14, 20)),
-        ),
+        ],
     baca.markup.molto_gridato(),
     baca.natural_harmonics(),
     baca.possibile_dynamic('fff'),
@@ -352,11 +352,11 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', (14, 21)),
         ('ViolaMusicVoice', (14, 21)),
         ('CelloMusicVoice', (14, 21)),
-        ),
+        ],
     baca.map(baca.glissando(), baca.runs()),
     )
 
@@ -420,10 +420,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', 21),
         ('CelloMusicVoice', 21),
-        ),
+        ],
     baca.markup.subito_ordinario(),
     baca.stem_tremolo(),
     )

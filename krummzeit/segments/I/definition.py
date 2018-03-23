@@ -78,11 +78,11 @@ maker(
 # strings
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', (1, 3)),
         ('ViolaMusicVoice', (1, 3)),
         ('CelloMusicVoice', (1, 3)),
-        ),
+        ],
     krummzeit.opening_triplets(
         division_masks=[abjad.index([-1])],
         remainder=abjad.Right,
@@ -101,11 +101,11 @@ maker(
 # vn, va, vc (3.5)
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', (5, 9)),
         ('ViolaMusicVoice', (5, 9)),
         ('CelloMusicVoice', (5, 9)),
-        ),
+        ],
     krummzeit.right_remainder_quarters(),
     )
 
@@ -178,10 +178,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('PianoMusicVoice', 1),
         ('PercussionMusicVoice', 1),
-        ),
+        ],
     baca.dynamic('fff'),
     baca.pitch('F#6'),
     baca.stem_tremolo(),
@@ -230,11 +230,11 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', (5, 9)),
         ('ViolaMusicVoice', (5, 9)),
         ('CelloMusicVoice', (5, 9)),
-        ),
+        ],
     baca.map(baca.glissando(), baca.runs()),
     baca.alternate_bow_strokes(),
     baca.effort_dynamic('f'),
@@ -242,10 +242,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolaMusicVoice', 5),
         ('CelloMusicVoice', 5),
-        ),
+        ],
     baca.clef('treble'),
     )
 
@@ -255,10 +255,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolaMusicVoice', (5, 9)),
         ('CelloMusicVoice', (5, 9)),
-        ),
+        ],
     krummzeit.register_narrow(5, 3),
     )
 

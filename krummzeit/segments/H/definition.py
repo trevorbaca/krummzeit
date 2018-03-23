@@ -41,26 +41,26 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', 1),
         ('ViolinMusicVoice', (6, 8)),
-        ),
+        ],
     krummzeit.hypermeter_tuplets([(3, 2)], [2]),
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolaMusicVoice', 1),
         ('ViolaMusicVoice', (6, 8)),
-        ),
+        ],
     krummzeit.hypermeter_tuplets([(1, 4)], [2]),
     )
 
 maker(
-    baca.scopes(
+    [
         ('CelloMusicVoice', 1),
         ('CelloMusicVoice', (6, 8)),
-        ),
+        ],
     krummzeit.hypermeter_tuplets([(2, 3)], [2]),
     )
 
@@ -101,10 +101,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('OboeMusicVoice', (3, 6)),
         ('ClarinetMusicVoice', (3, 4)),
-        ),
+        ],
     baca.make_repeat_tied_notes(),
     )
 
@@ -166,11 +166,11 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', 1),
         ('ViolaMusicVoice', 1),
         ('CelloMusicVoice', 1),
-        ),
+        ],
     baca.possibile_dynamic('fff'),
     baca.stem_tremolo(),
     )
@@ -193,11 +193,11 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', (2, 4)),
         ('ViolaMusicVoice', (2, 4)),
         ('CelloMusicVoice', (2, 4)),
-        ),
+        ],
     baca.dynamic('ppp'),
     baca.map(baca.glissando(), baca.runs()),
     baca.natural_harmonics(),
@@ -228,10 +228,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('OboeMusicVoice', (3, 6)),
         ('ClarinetMusicVoice', (3, 6)),
-        ),
+        ],
     baca.dynamic('ff'),
     baca.pitch('D5'),
     )
@@ -270,21 +270,21 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', (6, 8)),
         ('ViolaMusicVoice', (6, 8)),
         ('CelloMusicVoice', (6, 8)),
-        ),
+        ],
     baca.dynamic('fff'),
     baca.map(baca.glissando(), baca.runs()),
     baca.stem_tremolo(baca.plts()[1:]),
     )
 
 maker(
-    baca.scopes(
+    [
         ('PianoMusicVoice', 8),
         ('PercussionMusicVoice', 8),
-        ),
+        ],
     baca.dynamic('fff'),
     baca.pitch('F#6'),
     baca.stem_tremolo(),

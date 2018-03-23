@@ -96,10 +96,10 @@ maker(
 # cello
 
 maker(
-    baca.scopes(
+    [
         ('CelloMusicVoice', (1, 6)),
         ('CelloMusicVoice', (7, 12)),
-        ),
+        ],
     baca.make_repeat_tied_notes(),
     )
 

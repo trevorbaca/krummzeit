@@ -393,7 +393,7 @@ maker(
 
 maker(
     baca.make_scopes(['PianoMusicVoice'], [(4, 7), 9]),
-    baca.pitches('C4'),
+    baca.pitch('C4'),
     )
 
 maker(
@@ -423,7 +423,7 @@ maker(
 
 maker(
     baca.make_scopes(['PianoMusicVoice', 'PercussionMusicVoice'], [8, 10, 11]),
-    baca.pitches('F#6'),
+    baca.pitch('F#6'),
     baca.dynamic('ff'),
     baca.staccatissimi(),
     )
@@ -455,17 +455,17 @@ maker(
 
 maker(
     ('ViolinMusicVoice', (11, 13)),
-    baca.pitches('A+3'),
+    baca.pitch('A+3'),
     )
 
 maker(
     ('ViolaMusicVoice', (11, 13)),
-    baca.pitches('Bb2'),
+    baca.pitch('Bb2'),
     )
 
 maker(
     ('CelloMusicVoice', (11, 13)),
-    baca.pitches('A2'),
+    baca.pitch('A2'),
     )
 
 maker(

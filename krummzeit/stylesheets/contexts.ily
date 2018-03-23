@@ -107,35 +107,35 @@
         \remove Forbid_line_break_engraver
     }
 
-    % OBOE
-    \context {
-        \Voice
-        \name OboeMusicVoice
-        \type Engraver_group
-        \alias Voice
-    }
-    \context {
-        \Staff
-        \name OboeMusicStaff
-        \type Engraver_group
-        \alias Staff
-        \accepts OboeMusicVoice
-    }
-
-    % CLARINET
-    \context {
-        \Voice
-        \name ClarinetMusicVoice
-        \type Engraver_group
-        \alias Voice
-    }
-    \context {
-        \Staff
-        \name ClarinetMusicStaff
-        \type Engraver_group
-        \alias Staff
-        \accepts ClarinetMusicVoice
-    }
+%    % OBOE
+%    \context {
+%        \Voice
+%        \name OboeMusicVoice
+%        \type Engraver_group
+%        \alias Voice
+%    }
+%    \context {
+%        \Staff
+%        \name OboeMusicStaff
+%        \type Engraver_group
+%        \alias Staff
+%        \accepts OboeMusicVoice
+%    }
+%
+%    % CLARINET
+%    \context {
+%        \Voice
+%        \name ClarinetMusicVoice
+%        \type Engraver_group
+%        \alias Voice
+%    }
+%    \context {
+%        \Staff
+%        \name ClarinetMusicStaff
+%        \type Engraver_group
+%        \alias Staff
+%        \accepts ClarinetMusicVoice
+%    }
 
     % WIND SECTION STAFF GROUP
     \context {
@@ -143,41 +143,41 @@
         \name WindSectionStaffGroup
         \type Engraver_group
         \alias PianoStaff
-        \accepts OboeMusicStaff
-        \accepts ClarinetMusicStaff
+%        \accepts OboeMusicStaff
+%        \accepts ClarinetMusicStaff
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 22
         \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 26
     }
 
-    % PIANO
-    \context {
-        \Voice
-        \name PianoMusicVoice
-        \type Engraver_group
-        \alias Voice
-    }
-    \context {
-        \Staff
-        \name PianoMusicStaff
-        \type Engraver_group
-        \alias Staff
-        \accepts PianoMusicVoice
-    }
-
-    % PERCUSSION
-    \context {
-        \Voice
-        \name PercussionMusicVoice
-        \type Engraver_group
-        \alias Voice
-    }
-    \context {
-        \Staff
-        \name PercussionMusicStaff
-        \type Engraver_group
-        \alias Staff
-        \accepts PercussionMusicVoice
-    }
+%    % PIANO
+%    \context {
+%        \Voice
+%        \name PianoMusicVoice
+%        \type Engraver_group
+%        \alias Voice
+%    }
+%    \context {
+%        \Staff
+%        \name PianoMusicStaff
+%        \type Engraver_group
+%        \alias Staff
+%        \accepts PianoMusicVoice
+%    }
+%
+%    % PERCUSSION
+%    \context {
+%        \Voice
+%        \name PercussionMusicVoice
+%        \type Engraver_group
+%        \alias Voice
+%    }
+%    \context {
+%        \Staff
+%        \name PercussionMusicStaff
+%        \type Engraver_group
+%        \alias Staff
+%        \accepts PercussionMusicVoice
+%    }
 
     % PERCUSSION SECTION STAFF GROUP
     \context {
@@ -185,56 +185,56 @@
         \name PercussionSectionStaffGroup
         \type Engraver_group
         \alias PianoStaff
-        \accepts PianoMusicStaff
-        \accepts PercussionMusicStaff
+%        \accepts PianoMusicStaff
+%        \accepts PercussionMusicStaff
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 22
         \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 26
     }
 
-    % VIOLIN
-    \context {
-        \Voice
-        \name ViolinMusicVoice
-        \type Engraver_group
-        \alias Voice
-    }
-    \context {
-        \Staff
-        \name ViolinMusicStaff
-        \type Engraver_group
-        \alias Staff
-        \accepts ViolinMusicVoice
-    }
-
-    % VIOLA
-    \context {
-        \Voice
-        \name ViolaMusicVoice
-        \type Engraver_group
-        \alias Voice
-    }
-    \context {
-        \Staff
-        \name ViolaMusicStaff
-        \type Engraver_group
-        \alias Staff
-        \accepts ViolaMusicVoice
-    }
-
-    % CELLO
-    \context {
-        \Voice
-        \name CelloMusicVoice
-        \type Engraver_group
-        \alias Voice
-    }
-    \context {
-        \Staff
-        \name CelloMusicStaff
-        \type Engraver_group
-        \alias Staff
-        \accepts CelloMusicVoice
-    }
+%    % VIOLIN
+%    \context {
+%        \Voice
+%        \name ViolinMusicVoice
+%        \type Engraver_group
+%        \alias Voice
+%    }
+%    \context {
+%        \Staff
+%        \name ViolinMusicStaff
+%        \type Engraver_group
+%        \alias Staff
+%        \accepts ViolinMusicVoice
+%    }
+%
+%    % VIOLA
+%    \context {
+%        \Voice
+%        \name ViolaMusicVoice
+%        \type Engraver_group
+%        \alias Voice
+%    }
+%    \context {
+%        \Staff
+%        \name ViolaMusicStaff
+%        \type Engraver_group
+%        \alias Staff
+%        \accepts ViolaMusicVoice
+%    }
+%
+%    % CELLO
+%    \context {
+%        \Voice
+%        \name CelloMusicVoice
+%        \type Engraver_group
+%        \alias Voice
+%    }
+%    \context {
+%        \Staff
+%        \name CelloMusicStaff
+%        \type Engraver_group
+%        \alias Staff
+%        \accepts CelloMusicVoice
+%    }
 
     % STRING SECTION STAFF GROUP
     \context {
@@ -242,9 +242,9 @@
         \name StringSectionStaffGroup
         \type Engraver_group
         \alias PianoStaff
-        \accepts ViolinMusicStaff
-        \accepts ViolaMusicStaff
-        \accepts CelloMusicStaff
+%        \accepts ViolinMusicStaff
+%        \accepts ViolaMusicStaff
+%        \accepts CelloMusicStaff
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 22
         \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 26
     }

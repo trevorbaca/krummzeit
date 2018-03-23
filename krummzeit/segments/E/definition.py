@@ -55,10 +55,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('OboeMusicVoice', 1),
         ('OboeMusicVoice', 2),
-        ),
+        ],
     krummzeit.oboe_trills(),
     )
 
@@ -69,20 +69,20 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('PianoMusicVoice', 2),
         ('ViolinMusicVoice', 2),
         ('ViolaMusicVoice', 2),
         ('CelloMusicVoice', 2),
-        ),
+        ],
     krummzeit.incise_chain_b(),
     )
 
 maker(
-    baca.scopes(
+    [
         ('PercussionMusicVoice', (1, 6)),
         ('PercussionMusicVoice', (17, 22)),
-        ),
+        ],
     krummzeit.markup.suspended_cymbal(),
     krummzeit.sponge_rhythm(),
     )
@@ -122,19 +122,19 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('PianoMusicVoice', 8),
         ('PianoMusicVoice', (10, 15)),
-        ),
+        ],
     baca.clef('treble'),
     krummzeit.silver_points([(1, 2), (2, 1)]),
     )
 
 maker(
-    baca.scopes(
+    [
         ('PercussionMusicVoice', 8),
         ('PercussionMusicVoice', (10, 15)),
-        ),
+        ],
     krummzeit.silver_points([(2, 1), (1, 2)]),
     )
 
@@ -152,16 +152,16 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ClarinetMusicVoice', 13),
         ('ViolaMusicVoice', 13),
         ('CelloMusicVoice', 13),
-        ),
+        ],
     krummzeit.rest_delimited_repeated_duration_notes((1, 2), 16),
     )
 
 maker(
-    baca.scopes(
+    [
         ('ClarinetMusicVoice', (16, 19)),
         ('ClarinetMusicVoice', (22, 23)),
         ('PianoMusicVoice', (16, 18)),
@@ -169,23 +169,23 @@ maker(
         ('ViolaMusicVoice', (22, 23)),
         ('CelloMusicVoice', (16, 19)),
         ('CelloMusicVoice', (22, 23)),
-        ),
+        ],
     krummzeit.rest_delimited_repeated_duration_notes((1, 4), 32),
     )
 
 maker(
-    baca.scopes(
+    [
         ('OboeMusicVoice', (18, 22)),
         ('ViolinMusicVoice', (18, 22)),
-        ),
+        ],
     krummzeit.detached_triplets(),
     )
 
 maker(
-    baca.scopes(
+    [
         ('PianoMusicVoice', (19, 20)),
         ('PianoMusicVoice', 22),
-        ),
+        ],
     krummzeit.pizzicato_rhythm(masks=[abjad.index([0, 4, 5], 6)]),
     )
 
@@ -237,11 +237,11 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', 2),
         ('ViolaMusicVoice', 2),
         ('CelloMusicVoice', 2),
-        ),
+        ],
     baca.dynamic('ff'),
     baca.stem_tremolo(),
     )
@@ -249,10 +249,10 @@ maker(
 # cymbal
 
 maker(
-    baca.scopes(
+    [
         ('PercussionMusicVoice', (1, 6)),
         ('PercussionMusicVoice', (17, 22)),
-        ),
+        ],
     baca.stem_tremolo(),
     )
 
@@ -271,10 +271,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('OboeMusicVoice', (4, 11)),
         ('ClarinetMusicVoice', (4, 11)),
-        ),
+        ],
     baca.dynamic('ff'),
     baca.map(baca.glissando(), baca.ntruns()),
     krummzeit.color_fingerings(),
@@ -311,10 +311,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('PianoMusicVoice', (8, 15)),
         ('PercussionMusicVoice', (8, 15)),
-        ),
+        ],
     baca.dynamic('p'),
     baca.pitch('F5'),
     baca.staccatissimi(),
@@ -341,11 +341,11 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ClarinetMusicVoice', 13),
         ('ViolaMusicVoice', 13),
         ('CelloMusicVoice', 13),
-        ),
+        ],
     baca.dynamic('ppp'),
     )
 

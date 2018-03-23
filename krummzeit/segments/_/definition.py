@@ -99,11 +99,11 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', 1),
         ('ViolaMusicVoice', 1),
         ('CelloMusicVoice', 1),
-        ),
+        ],
     krummzeit.opening_triplets(),
     )
 
@@ -180,7 +180,7 @@ maker(
     baca.effort_dynamic('ff'),
     baca.markup.boxed('sponges'),
     baca.staff_lines(1),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     krummzeit.instrument('Percussion'),
     krummzeit.markup.accent_changes(),
     krummzeit.sponge_rhythm(),
@@ -202,11 +202,11 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', 1),
         ('ViolaMusicVoice', 1),
         ('CelloMusicVoice', 1),
-        ),
+        ],
     baca.dynamic('fff'),
     baca.stem_tremolo(),
     )
@@ -223,11 +223,11 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', (3, 7)),
         ('ViolaMusicVoice', (3, 7)),
         ('CelloMusicVoice', (3, 7)),
-        ),
+        ],
     baca.map(baca.glissando(), baca.runs()),
     baca.hairpin('pp < ff'),
     baca.markup.molto_flautando(),
@@ -251,12 +251,12 @@ maker(
     )
 
 maker(
-    baca.scopes(
-        ('PercussionMusicVoice', (1, -1)),
-        ('ViolinMusicVoice', (1, -1)),
-        ('ViolaMusicVoice', (1, -1)),
-        ('CelloMusicVoice', (1, -1)),
-        ),
+    [
+        'PercussionMusicVoice',
+        'ViolinMusicVoice',
+        'ViolaMusicVoice',
+        'CelloMusicVoice',
+        ],
     baca.dls_padding(4),
     baca.tuplet_bracket_padding(2),
     )

@@ -69,11 +69,11 @@ maker(
 # vn, va, vc
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', (1, 5)),
         ('ViolaMusicVoice', (1, 3)),
         ('CelloMusicVoice', (1, 5)),
-        ),
+        ],
     krummzeit.right_remainder_quarters(),
     )
 
@@ -198,18 +198,18 @@ maker(
 ### ob, cl [D5-7] & [D10-12] ###
 
 maker(
-    baca.scopes(
+    [
         ('OboeMusicVoice', (5, 7)),
         ('OboeMusicVoice', (10, 12)),
-        ),
+        ],
     krummzeit.color_tuplets(),
     )
 
 maker(
-    baca.scopes(
+    [
         ('ClarinetMusicVoice', 5),
         ('ClarinetMusicVoice', (10, 12)),
-        ),
+        ],
     krummzeit.color_tuplets(
         division_mask=abjad.index([0]),
         rotation=2,
@@ -219,22 +219,22 @@ maker(
 ### vn, va, vc [D11] & vn, va, vc, pf [D13] ###
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', 11),
         ('ViolaMusicVoice', 11),
         ('CelloMusicVoice', 11),
-        ),
+        ],
     krummzeit.incise_chain(),
     )
 
 maker(
-    baca.scopes(
+    [
         ('PianoMusicVoice', 13),
         ('ViolinMusicVoice', 13),
         ('ViolaMusicVoice', 13),
         ('CelloMusicVoice', 13),
-        ),
-        krummzeit.incise_chain_b(),
+        ],
+    krummzeit.incise_chain_b(),
     )
 
 maker(
@@ -277,7 +277,7 @@ maker(
 maker(
     ('PercussionMusicVoice', (1, 7)),
     baca.staff_lines(1),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     )
 
 maker(
@@ -327,7 +327,7 @@ maker(
     baca.accents(),
     baca.effort_dynamic('ff'),
     baca.markup.accent_changes_of_direction(),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
@@ -505,7 +505,7 @@ maker(
     baca.dls_staff_padding(6),
     baca.repeat_ties_up(),
     baca.staff_lines(1),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     baca.stem_tremolo(),
     krummzeit.markup.attackless_roll(),
     krummzeit.markup.suspended_cymbal(),

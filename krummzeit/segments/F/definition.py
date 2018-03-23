@@ -42,10 +42,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolaMusicVoice', (2, 4)),
         ('CelloMusicVoice', (2, 4)),
-        ),
+        ],
     krummzeit.rest_delimited_repeated_duration_notes((1, 4), 32),
     )
 
@@ -58,12 +58,12 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('PercussionMusicVoice', 2),
         ('PercussionMusicVoice', (4, 6)),
         ('PercussionMusicVoice', 9),
         ('PercussionMusicVoice', 11),
-        ),
+        ],
     baca.make_repeat_tied_notes(),
     )
 
@@ -82,11 +82,11 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('PianoMusicVoice', (3, 6)),
         ('PianoMusicVoice', 9),
         ('PianoMusicVoice', 11),
-        ),
+        ],
     krummzeit.silver_points([(1, 2), (2, 1)]),
     )
 
@@ -155,10 +155,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolaMusicVoice', (2, 4)),
         ('CelloMusicVoice', (2, 4)),
-        ),
+        ],
     baca.hairpin('ppp < fff'),
     )
 
@@ -185,11 +185,11 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', (5, 13)),
         ('ViolaMusicVoice', (5, 13)),
         ('CelloMusicVoice', (5, 13)),
-        ),
+        ],
     baca.dynamic('fff'),
     baca.markup.gridato_possibile(),
     )
@@ -200,10 +200,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolaMusicVoice', (9, 10)),
         ('CelloMusicVoice', (9, 10)),
-        ),
+        ],
     krummzeit.markup.grid_poss_to_flaut_poss(),
     )
 
@@ -236,10 +236,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('OboeMusicVoice', (1, 8)),
         ('ClarinetMusicVoice', (1, 8)),
-        ),
+        ],
     krummzeit.displacement(),
     )
 
@@ -276,10 +276,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('OboeMusicVoice', (3, 7)),
         ('ClarinetMusicVoice', (3, 7)),
-        ),
+        ],
     baca.staccati(baca.ptlts()),
     )
 
@@ -317,9 +317,9 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolaMusicVoice', (2, 4)),
         ('CelloMusicVoice', (2, 4)),
-        ),
+        ],
     baca.dls_staff_padding(6),
     )

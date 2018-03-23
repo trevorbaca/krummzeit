@@ -73,38 +73,38 @@ maker(
 # pf
 
 maker(
-    baca.scopes(
+    [
         ('PianoMusicVoice', 1),
         ('PianoMusicVoice', 3),
         ('PianoMusicVoice', 5),
-        ),
+        ],
     krummzeit.silver_points([(2, 3)], [(1, -1, 1, 3), (1, -1, 1, 2, 2)]),
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', 5),
         ('ViolinMusicVoice', 7),
         ('ViolinMusicVoice', 9),
-        ),
+        ],
     krummzeit.silver_points([(5, 4)], [(-1, 1, 1, -1, 2), (-1, 1, 1, 2, 2)]),
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolaMusicVoice', 5),
         ('ViolaMusicVoice', 7),
         ('ViolaMusicVoice', 9),
-        ),
+        ],
     krummzeit.silver_points([(2, 7)], [(-1, 2), (-1, 2, -1, 2, 2)]),
     )
 
 maker(
-    baca.scopes(
+    [
         ('CelloMusicVoice', 5),
         ('CelloMusicVoice', 7),
         ('CelloMusicVoice', 9),
-        ),
+        ],
     krummzeit.silver_points([(7, 2)], [(-1, 2, -1, 2, 2), (-1, 2)]),
     )
 
@@ -227,22 +227,22 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('PianoMusicVoice', (9, 12)),
         ('PianoMusicVoice', (14, 16)),
-        ),
+        ],
     baca.make_tied_notes(),
     )
 
 # vn, va, vc
 
 maker(
-    baca.scopes(
+    [
         ('ViolaMusicVoice', (11, 12)),
         ('ViolaMusicVoice', (14, 16)),
         ('ViolinMusicVoice', (14, 16)),
         ('CelloMusicVoice', (14, 16)),
-        ),
+        ],
     baca.make_repeat_tied_notes(),
     )
 
@@ -320,19 +320,19 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', (14, 16)),
         ('ViolaMusicVoice', (14, 16)),
         ('CelloMusicVoice', (14, 16)),
-        ),
+        ],
     baca.possibile_dynamic('fff'),
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', (14, 16)),
         ('CelloMusicVoice', (14, 16)),
-        ),
+        ],
     baca.markup.arco(),
     )
 
@@ -393,21 +393,21 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', (5, 9)),
         ('ViolaMusicVoice', (5, 9)),
         ('CelloMusicVoice', (5, 9)),
-        ),
+        ],
     baca.beam_positions(-4),
     baca.dls_staff_padding(8),
     baca.tuplet_bracket_staff_padding(4),
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', (11, 16)),
         ('ViolaMusicVoice', (11, 16)),
         ('CelloMusicVoice', (11, 16)),
-        ),
+        ],
     baca.stems_up(),
     )

@@ -35,18 +35,18 @@ class ScoreTemplate(baca.ScoreTemplate):
                 \context WindSectionStaffGroup = "WindSectionStaffGroup"
                 <<
                     \tag Oboe                                                          %! ST4
-                    \context OboeMusicStaff = "OboeMusicStaff"
+                    \context Staff = "OboeMusicStaff"
                     {
-                        \context OboeMusicVoice = "OboeMusicVoice"
+                        \context Voice = "OboeMusicVoice"
                         {
                             \clef "treble"                                             %! ST3
                             s1
                         }
                     }
                     \tag Clarinet                                                      %! ST4
-                    \context ClarinetMusicStaff = "ClarinetMusicStaff"
+                    \context Staff = "ClarinetMusicStaff"
                     {
-                        \context ClarinetMusicVoice = "ClarinetMusicVoice"
+                        \context Voice = "ClarinetMusicVoice"
                         {
                             \clef "treble"                                             %! ST3
                             s1
@@ -56,18 +56,18 @@ class ScoreTemplate(baca.ScoreTemplate):
                 \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup"
                 <<
                     \tag Piano                                                         %! ST4
-                    \context PianoMusicStaff = "PianoMusicStaff"
+                    \context Staff = "PianoMusicStaff"
                     {
-                        \context PianoMusicVoice = "PianoMusicVoice"
+                        \context Voice = "PianoMusicVoice"
                         {
                             \clef "treble"                                             %! ST3
                             s1
                         }
                     }
                     \tag Percussion                                                    %! ST4
-                    \context PercussionMusicStaff = "PercussionMusicStaff"
+                    \context Staff = "PercussionMusicStaff"
                     {
-                        \context PercussionMusicVoice = "PercussionMusicVoice"
+                        \context Voice = "PercussionMusicVoice"
                         {
                             \clef "treble"                                             %! ST3
                             s1
@@ -77,27 +77,27 @@ class ScoreTemplate(baca.ScoreTemplate):
                 \context StringSectionStaffGroup = "StringSectionStaffGroup"
                 <<
                     \tag Violin                                                        %! ST4
-                    \context ViolinMusicStaff = "ViolinMusicStaff"
+                    \context Staff = "ViolinMusicStaff"
                     {
-                        \context ViolinMusicVoice = "ViolinMusicVoice"
+                        \context Voice = "ViolinMusicVoice"
                         {
                             \clef "treble"                                             %! ST3
                             s1
                         }
                     }
                     \tag Viola                                                         %! ST4
-                    \context ViolaMusicStaff = "ViolaMusicStaff"
+                    \context Staff = "ViolaMusicStaff"
                     {
-                        \context ViolaMusicVoice = "ViolaMusicVoice"
+                        \context Voice = "ViolaMusicVoice"
                         {
                             \clef "alto"                                               %! ST3
                             s1
                         }
                     }
                     \tag Cello                                                         %! ST4
-                    \context CelloMusicStaff = "CelloMusicStaff"
+                    \context Staff = "CelloMusicStaff"
                     {
-                        \context CelloMusicVoice = "CelloMusicVoice"
+                        \context Voice = "CelloMusicVoice"
                         {
                             \clef "bass"                                               %! ST3
                             s1
@@ -115,22 +115,15 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     ### SPECIAL METHODS ###
 
-    def __call__(self):
+    def __call__(self) -> abjad.Score:
         r'''Calls score template.
-
-        Returns score.
         '''
         # GLOBAL CONTEXT
         global_context = self._make_global_context()
 
         # OBOE
-        oboe_music_voice = abjad.Voice(
-            lilypond_type='OboeMusicVoice',
-            name='OboeMusicVoice',
-            )
         oboe_music_staff = abjad.Staff(
-            [oboe_music_voice],
-            lilypond_type='OboeMusicStaff',
+            [abjad.Voice(name='OboeMusicVoice')],
             name='OboeMusicStaff',
             )
         self._attach_lilypond_tag('Oboe', oboe_music_staff)
@@ -146,13 +139,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
 
         # CLARINET
-        clarinet_music_voice = abjad.Voice(
-            lilypond_type='ClarinetMusicVoice',
-            name='ClarinetMusicVoice',
-            )
         clarinet_music_staff = abjad.Staff(
-            [clarinet_music_voice],
-            lilypond_type='ClarinetMusicStaff',
+            [abjad.Voice(name='ClarinetMusicVoice')],
             name='ClarinetMusicStaff',
             )
         self._attach_lilypond_tag('Clarinet', clarinet_music_staff)
@@ -175,13 +163,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
 
         # PIANO
-        piano_music_voice = abjad.Voice(
-            lilypond_type='PianoMusicVoice',
-            name='PianoMusicVoice',
-            )
         piano_music_staff = abjad.Staff(
-            [piano_music_voice],
-            lilypond_type='PianoMusicStaff',
+            [abjad.Voice(name='PianoMusicVoice')],
             name='PianoMusicStaff',
             )
         self._attach_lilypond_tag('Piano', piano_music_staff)
@@ -197,13 +180,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
 
         # PERCUSSION
-        percussion_music_voice = abjad.Voice(
-            lilypond_type='PercussionMusicVoice',
-            name='PercussionMusicVoice',
-            )
         percussion_music_staff = abjad.Staff(
-            [percussion_music_voice],
-            lilypond_type='PercussionMusicStaff',
+            [abjad.Voice(name='PercussionMusicVoice')],
             name='PercussionMusicStaff',
             )
         self._attach_lilypond_tag('Percussion', percussion_music_staff)
@@ -226,13 +204,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
 
         # VIOLIN
-        violin_music_voice = abjad.Voice(
-            lilypond_type='ViolinMusicVoice',
-            name='ViolinMusicVoice',
-            )
         violin_music_staff = abjad.Staff(
-            [violin_music_voice],
-            lilypond_type='ViolinMusicStaff',
+            [abjad.Voice(name='ViolinMusicVoice')],
             name='ViolinMusicStaff',
             )
         self._attach_lilypond_tag('Violin', violin_music_staff)
@@ -248,13 +221,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
 
         # VIOLA
-        viola_music_voice = abjad.Voice(
-            lilypond_type='ViolaMusicVoice',
-            name='ViolaMusicVoice',
-            )
         viola_music_staff = abjad.Staff(
-            [viola_music_voice],
-            lilypond_type='ViolaMusicStaff',
+            [abjad.Voice(name='ViolaMusicVoice')],
             name='ViolaMusicStaff',
             )
         self._attach_lilypond_tag('Viola', viola_music_staff)
@@ -270,13 +238,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
 
         # CELLO
-        cello_music_voice = abjad.Voice(
-            lilypond_type='CelloMusicVoice',
-            name='CelloMusicVoice',
-            )
         cello_music_staff = abjad.Staff(
-            [cello_music_voice],
-            lilypond_type='CelloMusicStaff',
+            [abjad.Voice(name='CelloMusicVoice')],
             name='CelloMusicStaff',
             )
         self._attach_lilypond_tag('Cello', cello_music_staff)

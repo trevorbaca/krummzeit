@@ -29,31 +29,31 @@
                 \context WindSectionStaffGroup = "WindSectionStaffGroup"
                 <<
                     \tag Oboe                                                            %! ST4
-                    \context OboeMusicStaff = "OboeMusicStaff"
+                    \context Staff = "OboeMusicStaff"
                     \A_OboeMusicStaff
                     \tag Clarinet                                                        %! ST4
-                    \context ClarinetMusicStaff = "ClarinetMusicStaff"
+                    \context Staff = "ClarinetMusicStaff"
                     \A_ClarinetMusicStaff
                 >>
                 \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup"
                 <<
                     \tag Piano                                                           %! ST4
-                    \context PianoMusicStaff = "PianoMusicStaff"
+                    \context Staff = "PianoMusicStaff"
                     \A_PianoMusicStaff
                     \tag Percussion                                                      %! ST4
-                    \context PercussionMusicStaff = "PercussionMusicStaff"
+                    \context Staff = "PercussionMusicStaff"
                     \A_PercussionMusicStaff
                 >>
                 \context StringSectionStaffGroup = "StringSectionStaffGroup"
                 <<
                     \tag Violin                                                          %! ST4
-                    \context ViolinMusicStaff = "ViolinMusicStaff"
+                    \context Staff = "ViolinMusicStaff"
                     \A_ViolinMusicStaff
                     \tag Viola                                                           %! ST4
-                    \context ViolaMusicStaff = "ViolaMusicStaff"
+                    \context Staff = "ViolaMusicStaff"
                     \A_ViolaMusicStaff
                     \tag Cello                                                           %! ST4
-                    \context CelloMusicStaff = "CelloMusicStaff"
+                    \context Staff = "CelloMusicStaff"
                     \A_CelloMusicStaff
                 >>
             >>

@@ -52,9 +52,6 @@
         \consists Bar_number_engraver
         \consists Mark_engraver
         \consists Metronome_mark_engraver
-        %\consists Script_engraver
-        %\consists Text_engraver
-        %\consists Text_spanner_engraver
         \consists Time_signature_engraver
         \accepts GlobalSkips
         \accepts GlobalRests
@@ -107,77 +104,15 @@
         \remove Forbid_line_break_engraver
     }
 
-%    % OBOE
-%    \context {
-%        \Voice
-%        \name OboeMusicVoice
-%        \type Engraver_group
-%        \alias Voice
-%    }
-%    \context {
-%        \Staff
-%        \name OboeMusicStaff
-%        \type Engraver_group
-%        \alias Staff
-%        \accepts OboeMusicVoice
-%    }
-%
-%    % CLARINET
-%    \context {
-%        \Voice
-%        \name ClarinetMusicVoice
-%        \type Engraver_group
-%        \alias Voice
-%    }
-%    \context {
-%        \Staff
-%        \name ClarinetMusicStaff
-%        \type Engraver_group
-%        \alias Staff
-%        \accepts ClarinetMusicVoice
-%    }
-
     % WIND SECTION STAFF GROUP
     \context {
         \PianoStaff
         \name WindSectionStaffGroup
         \type Engraver_group
         \alias PianoStaff
-%        \accepts OboeMusicStaff
-%        \accepts ClarinetMusicStaff
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 22
         \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 26
     }
-
-%    % PIANO
-%    \context {
-%        \Voice
-%        \name PianoMusicVoice
-%        \type Engraver_group
-%        \alias Voice
-%    }
-%    \context {
-%        \Staff
-%        \name PianoMusicStaff
-%        \type Engraver_group
-%        \alias Staff
-%        \accepts PianoMusicVoice
-%    }
-%
-%    % PERCUSSION
-%    \context {
-%        \Voice
-%        \name PercussionMusicVoice
-%        \type Engraver_group
-%        \alias Voice
-%    }
-%    \context {
-%        \Staff
-%        \name PercussionMusicStaff
-%        \type Engraver_group
-%        \alias Staff
-%        \accepts PercussionMusicVoice
-%    }
 
     % PERCUSSION SECTION STAFF GROUP
     \context {
@@ -185,56 +120,9 @@
         \name PercussionSectionStaffGroup
         \type Engraver_group
         \alias PianoStaff
-%        \accepts PianoMusicStaff
-%        \accepts PercussionMusicStaff
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 22
         \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 26
     }
-
-%    % VIOLIN
-%    \context {
-%        \Voice
-%        \name ViolinMusicVoice
-%        \type Engraver_group
-%        \alias Voice
-%    }
-%    \context {
-%        \Staff
-%        \name ViolinMusicStaff
-%        \type Engraver_group
-%        \alias Staff
-%        \accepts ViolinMusicVoice
-%    }
-%
-%    % VIOLA
-%    \context {
-%        \Voice
-%        \name ViolaMusicVoice
-%        \type Engraver_group
-%        \alias Voice
-%    }
-%    \context {
-%        \Staff
-%        \name ViolaMusicStaff
-%        \type Engraver_group
-%        \alias Staff
-%        \accepts ViolaMusicVoice
-%    }
-%
-%    % CELLO
-%    \context {
-%        \Voice
-%        \name CelloMusicVoice
-%        \type Engraver_group
-%        \alias Voice
-%    }
-%    \context {
-%        \Staff
-%        \name CelloMusicStaff
-%        \type Engraver_group
-%        \alias Staff
-%        \accepts CelloMusicVoice
-%    }
 
     % STRING SECTION STAFF GROUP
     \context {
@@ -242,9 +130,6 @@
         \name StringSectionStaffGroup
         \type Engraver_group
         \alias PianoStaff
-%        \accepts ViolinMusicStaff
-%        \accepts ViolaMusicStaff
-%        \accepts CelloMusicStaff
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 22
         \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 26
     }
@@ -311,9 +196,7 @@
         \override TrillSpanner.bound-details.right.padding = 2
 
         \override TupletBracket.breakable = ##t
-        %\override TupletBracket.direction = #down
         \override TupletBracket.full-length-to-extent = ##f
-        %\override TupletBracket.padding = 0.75
         \override TupletBracket.padding = 2
         \override TupletNumber.font-size = 1
         \override TupletNumber.text = #tuplet-number::calc-fraction-text

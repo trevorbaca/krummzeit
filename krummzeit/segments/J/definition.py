@@ -151,7 +151,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(['ViolinMusicVoice', 'ViolaMusicVoice'], [(1, 10)]),
+    baca.scopes(['ViolinMusicVoice', 'ViolaMusicVoice'], [(1, 10)]),
     baca.dynamic('ff'),
     baca.dls_staff_padding(5),
     baca.markup.pizz(),

@@ -1,7 +1,7 @@
 import abjad
 import baca
 import krummzeit
-from abjad import rhythmmakertools as rhythmos
+import os
 
 
 ###############################################################################
@@ -36,6 +36,7 @@ maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     measures_per_stage=measures_per_stage,
     metronome_mark_measure_map=metronome_mark_measure_map,
+    segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=23,
@@ -47,72 +48,48 @@ maker(
     baca.rehearsal_mark('I'),
     )
 
-# oboe
-
 maker(
-    ('OboeMusicVoice', 1),
+    ('ob', 1),
     krummzeit.hypermeter_tuplets([(3, 2)]),
     )
 
-# clarinet 
-
 maker(
-    ('ClarinetMusicVoice', 1),
+    ('cl', 1),
     krummzeit.hypermeter_tuplets([(1, 4)]),
     )
 
-# piano
-
 maker(
-    ('PianoMusicVoice', 1),
+    ('pf', 1),
     krummzeit.hypermeter_tuplets([(3, 4)]),
     )
 
-# xylophone
-
 maker(
-    ('PercussionMusicVoice', 1),
+    ('perc', 1),
     krummzeit.hypermeter_tuplets([(1, 6)]),
     )
 
-# strings
-
 maker(
-    [
-        ('ViolinMusicVoice', (1, 3)),
-        ('ViolaMusicVoice', (1, 3)),
-        ('CelloMusicVoice', (1, 3)),
-        ],
+    (['vn', 'va', 'vc'], (1, 3)),
     krummzeit.opening_triplets(
         division_masks=[abjad.index([-1])],
         remainder=abjad.Right,
         ),
     )
 
-# harpsichord (11.1)
-
 maker(
-    ('PianoMusicVoice', (3, 4)),
+    ('pf', (3, 4)),
     baca.instrument(krummzeit.instruments['Harpsichord']),
     krummzeit.clusters('harpsichord'),
     krummzeit.opening_triplets(),
     )
 
-# vn, va, vc (3.5)
-
 maker(
-    [
-        ('ViolinMusicVoice', (5, 9)),
-        ('ViolaMusicVoice', (5, 9)),
-        ('CelloMusicVoice', (5, 9)),
-        ],
+    (['vn', 'va', 'vc'], (5, 9)),
     krummzeit.right_remainder_quarters(),
     )
 
-# tam-tam
-
 maker(
-    ('PercussionMusicVoice', (3, 15)),
+    ('perc', (3, 15)),
     baca.not_parts(baca.bar_extent_zero()),
     baca.clef('percussion'),
     baca.staff_lines(1),
@@ -121,120 +98,101 @@ maker(
     krummzeit.markup.tam_tam(),
     )
 
-# pf (8.1)
-
 maker(
-    ('PianoMusicVoice', (8, 15)),
+    ('pf', (8, 15)),
     baca.instrument(krummzeit.instruments['Piano']),
     krummzeit.opening_triplets(),
     )
 
-# bass clarinet (3.1)
-
 maker(
-    ('ClarinetMusicVoice', (3, 11)),
+    ('cl', (3, 11)),
     baca.make_repeat_tied_notes()
     )
 
-# vn, va, vc (9.1)
-
 maker(
-    ('ViolinMusicVoice', 15),
+    ('vn', 15),
     krummzeit.pizzicato_rhythm(split_divisions_by_counts=[6, 18]),
     )
 
 maker(
-    ('ViolaMusicVoice', 15),
+    ('va', 15),
     krummzeit.pizzicato_rhythm(split_divisions_by_counts=[8, 10]),
     )
 
 maker(
-    ('CelloMusicVoice', 15),
+    ('vc', 15),
     krummzeit.pizzicato_rhythm(split_divisions_by_counts=[10, 8]),
     )
 
-# (14) reiteration
-
 maker(
-    ('OboeMusicVoice', 1),
+    ('ob', 1),
     baca.pitch('Eb5'),
     )
 
 maker(
-    ('ClarinetMusicVoice', 1),
+    ('cl', 1),
     baca.pitch('Eb2'),
     )
 
 maker(
-    ('OboeMusicVoice', 1),
+    ('ob', 1),
     baca.dynamic('ff'),
     krummzeit.color_fingerings(),
     )
 
 maker(
-    ('ClarinetMusicVoice', 1),
+    ('cl', 1),
     baca.dynamic('ff'),
     krummzeit.color_fingerings(),
     )
 
 maker(
-    [
-        ('PianoMusicVoice', 1),
-        ('PercussionMusicVoice', 1),
-        ],
+    (['pf', 'perc'], 1),
     baca.dynamic('fff'),
     baca.pitch('F#6'),
     baca.stem_tremolo(),
     )
 
 maker(
-    ('ViolinMusicVoice', (1, 3)),
+    ('vn', (1, 3)),
     baca.dynamic('fff'),
     baca.pitch('Eb5'),
     baca.stem_tremolo(),
     )
 
 maker(
-    ('ViolaMusicVoice', (1, 3)),
+    ('va', (1, 3)),
     baca.dynamic('fff'),
     baca.pitch('A3'),
     baca.stem_tremolo(),
     )
 
 maker(
-    ('CelloMusicVoice', (1, 3)),
+    ('vc', (1, 3)),
     baca.dynamic('fff'),
     baca.pitch('E~2'),
     baca.stem_tremolo(),
     )
 
-# tam-tam
-
 maker(
-    ('PercussionMusicVoice', (3, 15)),
+    ('perc', (3, 15)),
     baca.dynamic('f'),
     baca.laissez_vibrer(),
     )
-
-# (3.5) OB
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
 pcs = pcs.transpose(11)
 maker(
     baca.timeline([
-        ('ViolinMusicVoice', (5, 9)),
-        ('ViolaMusicVoice', (5, 9)),
-        ('CelloMusicVoice', (5, 9)),
+        ('vn', (5, 9)),
+        ('va', (5, 9)),
+        ('vc', (5, 9)),
         ]),
     baca.pitches(pcs),
     )
 
 maker(
-    [
-        ('ViolinMusicVoice', (5, 9)),
-        ('ViolaMusicVoice', (5, 9)),
-        ('CelloMusicVoice', (5, 9)),
-        ],
+    (['vn', 'va', 'vc'], (5, 9)),
     baca.map(baca.glissando(), baca.runs()),
     baca.alternate_bow_strokes(),
     baca.effort_dynamic('f'),
@@ -242,45 +200,37 @@ maker(
     )
 
 maker(
-    [
-        ('ViolaMusicVoice', 5),
-        ('CelloMusicVoice', 5),
-        ],
+    (['va', 'vc'], 5),
     baca.clef('treble'),
     )
 
 maker(
-    ('ViolinMusicVoice', (5, 9)),
+    ('vn', (5, 9)),
     krummzeit.register_narrow(5, 4),
     )
 
 maker(
-    [
-        ('ViolaMusicVoice', (5, 9)),
-        ('CelloMusicVoice', (5, 9)),
-        ],
+    (['va', 'vc'], (5, 9)),
     krummzeit.register_narrow(5, 3),
     )
 
-# bcl
-
 maker(
-    ('ClarinetMusicVoice', (3, 11)),
+    ('cl', (3, 11)),
     baca.pitch('E2'),
     )
 
 maker(
-    ('ClarinetMusicVoice', (3, 4)),
+    ('cl', (3, 4)),
     baca.dynamic('ff', selector=baca.pleaf(0)),
     )
 
 maker(
-    ('ClarinetMusicVoice', (5, 6)),
+    ('cl', (5, 6)),
     baca.hairpin('ff < fff', selector=baca.leaves().rleak()),
     )
 
 maker(
-    ('PianoMusicVoice', (8, 15)),
+    ('pf', (8, 15)),
     baca.clef('bass'),
     baca.ottava_bassa(),
     baca.possibile_dynamic('fff'),
@@ -288,30 +238,28 @@ maker(
     )
 
 maker(
-    ('ClarinetMusicVoice', 9),
+    ('cl', 9),
     baca.possibile_dynamic('fff', selector=baca.pleaf(0)),
     )
 
 maker(
-    ('ClarinetMusicVoice', 11),
+    ('cl', 11),
     baca.hairpin('fff > ppp', selector=baca.leaves()),
     )
-
-# vn, va, vc, (9.1)
 
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
 maker(
     baca.timeline([
-        ('ViolinMusicVoice', 15),
-        ('ViolaMusicVoice', 15),
-        ('CelloMusicVoice', 15),
+        ('vn', 15),
+        ('va', 15),
+        ('vc', 15),
         ]),
     baca.pitches(pcs),
     )
 
 maker(
-    (['ViolinMusicVoice', 'ViolaMusicVoice', 'CelloMusicVoice'], 15),
+    (['vn', 'va', 'vc'], 15),
     baca.dynamic('fff'),
     baca.markup.pizz(),
     baca.staccatissimi(),

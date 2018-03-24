@@ -1,7 +1,7 @@
 import abjad
 import baca
 import krummzeit
-from abjad import rhythmmakertools as rhythmos
+import os
 
 
 ###############################################################################
@@ -9,9 +9,9 @@ from abjad import rhythmmakertools as rhythmos
 ###############################################################################
 
 stage_measure_map = baca.StageMeasureMap([
-    2, 1,               # 1, halt
-    1, 1, 1, 1, 1, 1,   # 2-6, halt
-    1, 3,               # 7-8
+    2, 1,
+    1, 1, 1, 1, 1, 1,
+    1, 3,
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
@@ -35,6 +35,7 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 maker = baca.SegmentMaker(
     measures_per_stage=measures_per_stage,
     metronome_mark_measure_map=metronome_mark_measure_map,
+    segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=13,
@@ -42,7 +43,7 @@ maker = baca.SegmentMaker(
     )
 
 maker(
-    ('OboeMusicVoice', 1),
+    ('ob', 1),
     baca.suite([
         krummzeit.margin_markup('Ob.'),
         baca.start_markup('Oboe', hcenter_in=16),
@@ -50,7 +51,7 @@ maker(
     )
 
 maker(
-    ('ClarinetMusicVoice', 1),
+    ('cl', 1),
     baca.suite([
         krummzeit.margin_markup('B. cl.'),
         baca.start_markup('Bass clarinet', hcenter_in=16),
@@ -58,7 +59,7 @@ maker(
     )
 
 maker(
-    ('PianoMusicVoice', 1),
+    ('pf', 1),
     baca.clef('bass'),
     baca.suite([
         krummzeit.margin_markup('Pf.'),
@@ -67,7 +68,7 @@ maker(
     )
 
 maker(
-    ('PercussionMusicVoice', 1),
+    ('perc', 1),
     baca.suite([
         krummzeit.margin_markup('Perc.'),
         baca.start_markup('Percussion', hcenter_in=16),
@@ -75,7 +76,7 @@ maker(
     )
 
 maker(
-    ('ViolinMusicVoice', 1),
+    ('vn', 1),
     baca.suite([
         krummzeit.margin_markup('Vn.'),
         baca.start_markup('Violin', hcenter_in=16),
@@ -83,7 +84,7 @@ maker(
     )
 
 maker(
-    ('ViolaMusicVoice', 1),
+    ('va', 1),
     baca.suite([
         krummzeit.margin_markup('Va.'),
         baca.start_markup('Viola', hcenter_in=16),
@@ -91,7 +92,7 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', 1),
+    ('vc', 1),
     baca.suite([
         krummzeit.margin_markup('Vc.'),
         baca.start_markup('Cello', hcenter_in=16),
@@ -99,16 +100,12 @@ maker(
     )
 
 maker(
-    [
-        ('ViolinMusicVoice', 1),
-        ('ViolaMusicVoice', 1),
-        ('CelloMusicVoice', 1),
-        ],
+    (['vn', 'va', 'vc'], 1),
     krummzeit.opening_triplets(),
     )
 
 maker(
-    ('ViolinMusicVoice', (3, 7)),
+    ('vn', (3, 7)),
     krummzeit.glissando_rhythm(
         division_ratios=[(2, 1), (2, 1), (1, 1, 1)],
         division_masks=[abjad.index([5, 6], 7)],
@@ -116,7 +113,7 @@ maker(
     )
 
 maker(
-    ('ViolaMusicVoice', (3, 7)),
+    ('va', (3, 7)),
     krummzeit.glissando_rhythm(
         division_ratios=[(2, 1), (1, 1, 1), (2, 1)],
         division_masks=[abjad.index([0, 1], 7)],
@@ -124,7 +121,7 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', (3, 7)),
+    ('vc', (3, 7)),
     krummzeit.glissando_rhythm(
         division_ratios=[(1, 1, 1), (2, 1), (2, 1)],
         division_masks=[abjad.index([2, 3], 7)],
@@ -132,23 +129,23 @@ maker(
     )
 
 maker(
-    ('ClarinetMusicVoice', (3, 4)),
+    ('cl', (3, 4)),
     baca.dynamic('ppp'),
     baca.make_repeat_tied_notes(),
     baca.pitch('B1'),
     )
 
 maker(
-    ('PianoMusicVoice', 3),
+    ('pf', 3),
     baca.dynamic('fff'),
-    # NOTE: clusters() must precede markup() for markup to appear:
+    # TODO: release need for markup to happen after clusters:
     krummzeit.clusters('tenor'),
     krummzeit.markup.catch_resonance(),
     krummzeit.single_cluster_piano_rhythm(),
     )
 
 maker(
-    ('PianoMusicVoice', 6),
+    ('pf', 6),
     baca.clef('treble'),
     baca.dynamic('fff'),
     baca.make_repeat_tied_notes(),
@@ -157,12 +154,12 @@ maker(
     )
 
 maker(
-    ('PianoMusicVoice', 9),
+    ('pf', 9),
     baca.markup.boxed('to harpsichord'),
     )
 
 maker(
-    ('PercussionMusicVoice', 6),
+    ('perc', 6),
     baca.dynamic('fff'),
     baca.make_repeat_tied_notes(),
     baca.markup.boxed('xylophone'),
@@ -171,7 +168,7 @@ maker(
     )
 
 maker(
-    ('PercussionMusicVoice', (9, 10)),
+    ('perc', (9, 10)),
     baca.accents(),
     baca.bar_extent((-2, 2)),
     baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
@@ -187,26 +184,22 @@ maker(
     )
 
 maker(
-    ('ViolinMusicVoice', 1),
+    ('vn', 1),
     baca.pitch('Eb5'),
     )
 
 maker(
-    ('ViolaMusicVoice', 1),
+    ('va', 1),
     baca.pitch('A3'),
     )
 
 maker(
-    ('CelloMusicVoice', 1),
+    ('vc', 1),
     baca.pitch('E~2'),
     )
 
 maker(
-    [
-        ('ViolinMusicVoice', 1),
-        ('ViolaMusicVoice', 1),
-        ('CelloMusicVoice', 1),
-        ],
+    (['vn', 'va', 'vc'], 1),
     baca.dynamic('fff'),
     baca.stem_tremolo(),
     )
@@ -215,19 +208,15 @@ pcs = krummzeit.violet_pitch_classes.get_payload()
 pcs = baca.PitchClassSegment(pcs).rotate(-301).retrograde().transpose(10)
 maker(
     baca.timeline([
-        ('ViolinMusicVoice', (3, 7)),
-        ('ViolaMusicVoice', (3, 7)),
-        ('CelloMusicVoice', (3, 7)),
+        ('vn', (3, 7)),
+        ('va', (3, 7)),
+        ('vc', (3, 7)),
         ]),
     baca.pitches(pcs)
     )
 
 maker(
-    [
-        ('ViolinMusicVoice', (3, 7)),
-        ('ViolaMusicVoice', (3, 7)),
-        ('CelloMusicVoice', (3, 7)),
-        ],
+    (['vn', 'va', 'vc'], (3, 7)),
     baca.map(baca.glissando(), baca.runs()),
     baca.hairpin('pp < ff'),
     baca.markup.molto_flautando(),
@@ -236,27 +225,22 @@ maker(
     )
 
 maker(
-    ('ViolinMusicVoice', (3, 7)),
+    ('vn', (3, 7)),
     krummzeit.register_narrow(5, 4),
     )
 
 maker(
-    ('ViolaMusicVoice', (3, 7)),
+    ('va', (3, 7)),
     krummzeit.register_narrow(4, 3),
     )
 
 maker(
-    ('CelloMusicVoice', (3, 7)),
+    ('vc', (3, 7)),
     krummzeit.register_narrow(4, 3),
     )
 
 maker(
-    [
-        'PercussionMusicVoice',
-        'ViolinMusicVoice',
-        'ViolaMusicVoice',
-        'CelloMusicVoice',
-        ],
+    ['perc', 'vn', 'va', 'vc'],
     baca.dls_padding(4),
     baca.tuplet_bracket_padding(2),
     )

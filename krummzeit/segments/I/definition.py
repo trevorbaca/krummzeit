@@ -311,7 +311,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes([
+    baca.scopes([
         'ViolinMusicVoice', 'ViolaMusicVoice', 'CelloMusicVoice'],
         [15],
         ),

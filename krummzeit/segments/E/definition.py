@@ -283,12 +283,12 @@ maker(
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-301).retrograde().transpose(10)
 maker(
-    baca.make_scopes(strings, [(4, 10)]),
+    baca.scopes(strings, [(4, 10)]),
     baca.pitches(pcs),
     )
 
 maker(
-    baca.make_scopes(strings, [(4, 10)]),
+    baca.scopes(strings, [(4, 10)]),
     baca.map(baca.glissando(), baca.runs()),
     baca.hairpin('p > ppp'),
     baca.markup.molto_flautando(),

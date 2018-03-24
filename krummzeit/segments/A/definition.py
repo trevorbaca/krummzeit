@@ -425,11 +425,12 @@ maker(
     )
 
 maker(
-    baca.scopes(
-        ['PianoMusicVoice',
+    ([
+        'PianoMusicVoice',
         'ViolinMusicVoice',
         'OboeMusicVoice',
-        'ClarinetMusicVoice'], [(1, 13)],
+        'ClarinetMusicVoice'],
+        (1, 13),
         ),
     krummzeit.displacement(),
     )
@@ -440,12 +441,7 @@ maker(
     )
 
 maker(
-    baca.scopes([
-        'ViolinMusicVoice',
-        'OboeMusicVoice',
-        'ClarinetMusicVoice'],
-        [(1, 8)],
-        ),
+    (['ViolinMusicVoice', 'OboeMusicVoice', 'ClarinetMusicVoice'], (1, 8)),
     krummzeit.register_narrow(5),
     )
 
@@ -465,22 +461,18 @@ maker(
     )
 
 maker(
-    baca.scopes([
-        'ViolinMusicVoice',
-        'OboeMusicVoice',
-        'ClarinetMusicVoice'],
-        [(9, 10)],
-        ),
+    (['ViolinMusicVoice', 'OboeMusicVoice', 'ClarinetMusicVoice'], (9, 10)),
     krummzeit.register_narrow(4, 5),
     )
 
 maker(
-    baca.scopes([
+    ([
         'PianoMusicVoice',
         'ViolinMusicVoice',
         'OboeMusicVoice',
-        'ClarinetMusicVoice'],
-        [(11, 13)],
+        'ClarinetMusicVoice',
+        ],
+        (11, 13),
         ),
     krummzeit.register_narrow(5),
     )
@@ -508,22 +500,12 @@ maker(
     )
 
 maker(
-    baca.scopes([
-        'ViolinMusicVoice',
-        'OboeMusicVoice',
-        'ClarinetMusicVoice'],
-        [9],
-        ),
+    (['ViolinMusicVoice', 'OboeMusicVoice', 'ClarinetMusicVoice'], 9),
     baca.hairpin('f < ff'),
     )
 
 maker(
-    baca.scopes([
-        'ViolinMusicVoice',
-        'OboeMusicVoice',
-        'ClarinetMusicVoice'],
-        [(1, 13)],
-        ),
+    (['ViolinMusicVoice', 'OboeMusicVoice', 'ClarinetMusicVoice'], (1, 13)),
     baca.staccati(),
     )
 
@@ -560,24 +542,24 @@ maker(
     )
 
 maker(
-    baca.scopes(['ViolaMusicVoice', 'CelloMusicVoice'], [(1, 9)]),
+    (['ViolaMusicVoice', 'CelloMusicVoice'], (1, 9)),
     baca.map(baca.glissando(), baca.runs()),
     )
 
 maker(
-    baca.scopes(['ViolaMusicVoice', 'CelloMusicVoice'], [(1, 4)]),
+    (['ViolaMusicVoice', 'CelloMusicVoice'], (1, 4)),
     baca.dynamic('mf'),
     baca.markup.molto_flautando(),
     )
 
 maker(
-    baca.scopes(['ViolaMusicVoice', 'CelloMusicVoice'], [(5, 8)]),
+    (['ViolaMusicVoice', 'CelloMusicVoice'], (5, 8)),
     baca.dynamic('f'),
     baca.markup.non_flautando(),
     )
 
 maker(
-    baca.scopes(['ViolaMusicVoice', 'CelloMusicVoice'], [9]),
+    (['ViolaMusicVoice', 'CelloMusicVoice'], 9),
     baca.dynamic('ff'),
     )
 

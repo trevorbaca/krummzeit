@@ -311,10 +311,7 @@ maker(
     )
 
 maker(
-    baca.scopes([
-        'ViolinMusicVoice', 'ViolaMusicVoice', 'CelloMusicVoice'],
-        [15],
-        ),
+    (['ViolinMusicVoice', 'ViolaMusicVoice', 'CelloMusicVoice'], 15),
     baca.dynamic('fff'),
     baca.markup.pizz(),
     baca.staccatissimi(),

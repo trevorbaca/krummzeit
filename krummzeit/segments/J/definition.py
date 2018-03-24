@@ -1,7 +1,7 @@
 import abjad
 import baca
 import krummzeit
-from abjad import rhythmmakertools as rhythmos
+import os
 
 
 ###############################################################################
@@ -25,11 +25,11 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 maker = baca.SegmentMaker(
     final_markup=(['Cambridge, MA.'], ['May', 'August 2014.']),
-    #final_markup_extra_offset=(14.5, 0),
     ignore_repeat_pitch_classes=True,
     last_segment=True,
     measures_per_stage=measures_per_stage,
     metronome_mark_measure_map=metronome_mark_measure_map,
+    segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=48,
@@ -41,39 +41,29 @@ maker(
     baca.rehearsal_mark('J'),
     )
 
-# oboe
-
 maker(
-    ('OboeMusicVoice', (1, 10)),
+    ('ob', (1, 10)),
     baca.make_repeat_tied_notes(),
     )
 
-# bcl
-
 maker(
-    ('ClarinetMusicVoice', (1, 10)),
+    ('cl', (1, 10)),
     baca.make_repeat_tied_notes(),
     )
 
-# piano
-
 maker(
-    ('PianoMusicVoice', (1, -1)),
+    ('pf', (1, -1)),
     baca.make_repeat_tied_notes(),
     )
 
-# xylophone
-
 maker(
-    ('PercussionMusicVoice', (1, -1)),
+    'perc',
     baca.clef('treble'),
     baca.make_repeat_tied_notes(),
     )
 
-# violin
-
 maker(
-    ('ViolinMusicVoice', (1, 10)),
+    ('vn', (1, 10)),
     krummzeit.closing_pizzicati(
         counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
         extra_counts_per_division=[2, 2, 1, 2, 4, 6],
@@ -81,10 +71,8 @@ maker(
         )
     )
 
-# viola
-
 maker(
-    ('ViolaMusicVoice', 1),
+    ('va', 1),
     baca.clef('treble'),
     krummzeit.closing_pizzicati(
         counts=[8, 4, 4, 2, 1, 1, 8, 8, 8, 2, 4, 4],
@@ -93,65 +81,50 @@ maker(
         ),
     )
 
-# cello
-
 maker(
-    [
-        ('CelloMusicVoice', (1, 6)),
-        ('CelloMusicVoice', (7, 12)),
-        ],
+    ('vc', [(1, 6), (7, 12)]),
     baca.make_repeat_tied_notes(),
     )
 
-###############################################################################
-#################################### COLOR ####################################
-###############################################################################
-
-### harpsichord & piano reiteration ###
-
 maker(
-    ('PianoMusicVoice', (1, 12)),
+    ('pf', (1, 12)),
     baca.pitch('C#6'),
     )
 
 maker(
-    ('PianoMusicVoice', (1, 12)),
+    ('pf', (1, 12)),
     baca.stem_tremolo(),
     )
 
 maker(
-    ('PianoMusicVoice', (7, 12)),
+    ('pf', (7, 12)),
     baca.possibile_dynamic('fff', selector=baca.leaf(0)),
     )
 
-### xylophone reiteration ###
-
 maker(
-    ('PercussionMusicVoice', (1, 12)),
+    ('perc', (1, 12)),
     baca.pitch('C#6'),
     )
 
 maker(
-    ('PercussionMusicVoice', (1, 12)),
+    ('perc', (1, 12)),
     baca.dynamic('fff'),
     baca.dls_staff_padding(4),
     baca.stem_tremolo(),
     )
 
-### vn, va points ###
-
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs[42:34:-1].transpose(4).invert()
 maker(
     baca.timeline([
-        ('ViolinMusicVoice', (1, 10)),
-        ('ViolaMusicVoice', (1, 10)),
+        ('vn', (1, 10)),
+        ('va', (1, 10)),
         ]),
     baca.pitches(pcs),
     )
 
 maker(
-    (['ViolinMusicVoice', 'ViolaMusicVoice'], (1, 10)),
+    (['vn', 'va'], (1, 10)),
     baca.dynamic('ff'),
     baca.dls_staff_padding(5),
     baca.markup.pizz(),
@@ -161,20 +134,18 @@ maker(
     krummzeit.register_narrow(6),
     )
 
-### vc ###
-
 maker(
-    ('CelloMusicVoice', (1, 6)),
+    ('vc', (1, 6)),
     baca.pitches('D4 D4 D4 D4 D4 D4 D2'),
     )
 
 maker(
-    ('CelloMusicVoice', (7, 12)),
+    ('vc', (7, 12)),
     baca.pitch('D2'),
     )
 
 maker(
-    ('CelloMusicVoice', (1, 6)),
+    ('vc', (1, 6)),
     baca.dynamic('fff'),
     baca.dls_staff_padding(3),
     baca.map(baca.glissando(), baca.runs()),
@@ -182,33 +153,29 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', (7, 12)),
+    ('vc', (7, 12)),
     baca.dynamic('ff'),
     baca.markup.ordinario(),
     )
 
-### oboe ###
-
 maker(
-    ('OboeMusicVoice', (1, 12)),
+    ('ob', (1, 12)),
     baca.pitch('C#4'),
     )
 
 maker(
-    ('OboeMusicVoice', (1, 12)),
+    ('ob', (1, 12)),
     baca.dynamic('fff'),
     baca.dls_staff_padding(5),
     )
 
-### bass clarinet ###
-
 maker(
-    ('ClarinetMusicVoice', (1, 12)),
+    ('cl', (1, 12)),
     baca.pitch('D2'),
     )
 
 maker(
-    ('ClarinetMusicVoice', (1, 12)),
+    ('cl', (1, 12)),
     baca.dynamic('f'),
     baca.dls_staff_padding(7),
     baca.stems_up(),

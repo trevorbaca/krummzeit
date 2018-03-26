@@ -4430,36 +4430,27 @@ B_ViolinMusicVoice = {
         \stopTrillSpan                                           %! SC
         \startTrillSpan                                          %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [B ViolinMusicVoice measure 111]                       %! SM4
-        a''8
-        
-        aqf''4
-        \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
-        
-        a'8
-        \stopTrillSpan                                           %! SC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        aqs''16
-        [
-        
-        g''16
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [B ViolinMusicVoice measure 112]                       %! SM4
-        af''4
-        ~
-        \startTrillSpan                                          %! SC
-    }
+    
+    % [B ViolinMusicVoice measure 111]                           %! SM4
+    a''8
+    
+    aqf''4
+    \stopTrillSpan                                               %! SC
+    \startTrillSpan                                              %! SC
+    
+    a'8
+    \stopTrillSpan                                               %! SC
+    
+    aqs''16
+    [
+    
+    g''16
+    ]
+    
+    % [B ViolinMusicVoice measure 112]                           %! SM4
+    af''4
+    ~
+    \startTrillSpan                                              %! SC
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/10 {
         
@@ -4494,20 +4485,17 @@ B_ViolinMusicVoice = {
         \stopTrillSpan                                           %! SC
         \startTrillSpan                                          %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        cs''4
-        
-        cqs''4
-        \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
-        
-        cs'''8
-        ~
-        \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
-    }
+    
+    cs''4
+    
+    cqs''4
+    \stopTrillSpan                                               %! SC
+    \startTrillSpan                                              %! SC
+    
+    cs'''8
+    ~
+    \stopTrillSpan                                               %! SC
+    \startTrillSpan                                              %! SC
     \times 4/5 {
         
         % [B ViolinMusicVoice measure 114]                       %! SM4
@@ -4537,16 +4525,13 @@ B_ViolinMusicVoice = {
         \stopTrillSpan                                           %! SC
         \startTrillSpan                                          %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        a''8
-        
-        c'''4
-        ~
-        \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
-    }
+    
+    a''8
+    
+    c'''4
+    ~
+    \stopTrillSpan                                               %! SC
+    \startTrillSpan                                              %! SC
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         

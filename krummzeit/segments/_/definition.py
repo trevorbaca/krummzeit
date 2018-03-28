@@ -43,7 +43,7 @@ maker = baca.SegmentMaker(
     )
 
 maker(
-    ('ob', 1),
+    'ob',
     baca.suite([
         krummzeit.margin_markup('Ob.'),
         baca.start_markup('Oboe', hcenter_in=16),
@@ -51,7 +51,7 @@ maker(
     )
 
 maker(
-    ('cl', 1),
+    'cl',
     baca.suite([
         krummzeit.margin_markup('B. cl.'),
         baca.start_markup('Bass clarinet', hcenter_in=16),
@@ -59,7 +59,7 @@ maker(
     )
 
 maker(
-    ('pf', 1),
+    'pf',
     baca.clef('bass'),
     baca.suite([
         krummzeit.margin_markup('Pf.'),
@@ -68,7 +68,7 @@ maker(
     )
 
 maker(
-    ('perc', 1),
+    'perc',
     baca.suite([
         krummzeit.margin_markup('Perc.'),
         baca.start_markup('Percussion', hcenter_in=16),
@@ -76,7 +76,7 @@ maker(
     )
 
 maker(
-    ('vn', 1),
+    'vn',
     baca.suite([
         krummzeit.margin_markup('Vn.'),
         baca.start_markup('Violin', hcenter_in=16),
@@ -84,7 +84,7 @@ maker(
     )
 
 maker(
-    ('va', 1),
+    'va',
     baca.suite([
         krummzeit.margin_markup('Va.'),
         baca.start_markup('Viola', hcenter_in=16),
@@ -92,7 +92,7 @@ maker(
     )
 
 maker(
-    ('vc', 1),
+    'vc',
     baca.suite([
         krummzeit.margin_markup('Vc.'),
         baca.start_markup('Cello', hcenter_in=16),

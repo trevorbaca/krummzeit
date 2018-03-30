@@ -5,84 +5,43 @@ import baca
 instruments = abjad.OrderedDict([
     (
         'BassClarinet',
-        abjad.BassClarinet(
-            hide=True,
-            markup=baca.markup.instrument('Bass clarinet'),
-            short_markup=baca.markup.short_instrument('Bass cl.'),
-            )
+        abjad.BassClarinet(hide=True),
         ),
     (
         'Cello',
-        abjad.Cello(
-            hide=True,
-            markup=baca.markup.instrument('Cello'),
-            short_markup=baca.markup.short_instrument('Vc.'),
-            )
+        abjad.Cello(hide=True, pitch_range='[A1, +inf]'),
         ),
     (
         'ClarinetInEFlat',
-        abjad.ClarinetInEFlat(
-            hide=True,
-            markup=baca.markup.instrument('Clarinet (Eb)'),
-            short_markup=baca.markup.short_instrument('Cl. (Eb)'),
-            )
+        abjad.ClarinetInEFlat(hide=True),
         ),
     (
         'Harpsichord',
-        abjad.Harpsichord(
-            context='Staff',
-            hide=True,
-            markup=baca.markup.instrument('Harpsichord'),
-            short_markup=baca.markup.short_instrument('Hpschd.'),
-            )
+        abjad.Harpsichord(context='Staff', hide=True),
         ),
     (
         'Oboe',
-        abjad.Oboe(
-            hide=True,
-            markup=baca.markup.instrument('Oboe'),
-            short_markup=baca.markup.short_instrument('Ob.'),
-            )
+        abjad.Oboe(hide=True, pitch_range='[Bb3, Bb6]'),
         ),
     (
         'Percussion',
-        abjad.Percussion(
-            hide=True,
-            markup=baca.markup.instrument('Percussion'),
-            short_markup=baca.markup.short_instrument('Perc.'),
-            )
+        abjad.Percussion(hide=True),
         ),
     (
         'Piano',
-        abjad.Piano(
-            context='Staff',
-            hide=True,
-            markup=baca.markup.instrument('Piano'),
-            short_markup=baca.markup.short_instrument('Pf.'),
-            )
+        abjad.Piano(context='Staff', hide=True),
         ),
     (
         'Viola',
-        abjad.Viola(
-            hide=True,
-            markup=baca.markup.instrument('Viola'),
-            short_markup=baca.markup.short_instrument('Va.'),
-            )
+        abjad.Viola(hide=True, pitch_range='[Bb2, +inf]'),
         ),
     (
         'Violin',
-        abjad.Violin(
-            hide=True,
-            markup=baca.markup.instrument('Violin'),
-            short_markup=baca.markup.short_instrument('Vn.'),
-            )
+        # TODO: F#3 instead of F3
+        abjad.Violin(hide=True, pitch_range='[F3, +inf]'),
         ),
     (
         'Xylophone',
-        abjad.Xylophone(
-            hide=True,
-            markup=baca.markup.instrument('Xylophone'),
-            short_markup=baca.markup.short_instrument('Xyl.'),
-            )
+        abjad.Xylophone(hide=True),
         ),
     ])

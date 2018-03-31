@@ -1525,44 +1525,32 @@ I_ClarinetMusicVoice = {
     ^ \markup { OCTAVE }                                         %! SM12
     
     % [I ClarinetMusicVoice measure 300]                         %! SM4
-    \makeRed                                                     %! SM12
     fs2.
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     fs2
     \repeatTie
     
     % [I ClarinetMusicVoice measure 301]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    \makeRed                                                     %! SM12
     fs1
     \repeatTie
     \>                                                           %! HC1
     \fff                                                         %! HC1
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [I ClarinetMusicVoice measure 302]                         %! SM4
     fs1
     \repeatTie
     
     % [I ClarinetMusicVoice measure 303]                         %! SM4
-    \makeRed                                                     %! SM12
     fs1
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [I ClarinetMusicVoice measure 304]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    \makeRed                                                     %! SM12
     fs1
     \repeatTie
     \ppp                                                         %! HC1
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [I ClarinetMusicVoice measure 305]                         %! SM4
     R1 * 3/4
@@ -2391,11 +2379,8 @@ I_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <c,, e,, g,, b,, d, f, a,>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2412,10 +2397,7 @@ I_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <c,, e,, g,, b,, d, f, a,>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2673,11 +2655,8 @@ I_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <c,, e,, g,, b,, d, f, a,>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2694,10 +2673,7 @@ I_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <c,, e,, g,, b,, d, f, a,>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -3286,11 +3262,8 @@ I_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <c,, e,, g,, b,, d, f, a,>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -3345,11 +3318,8 @@ I_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <c,, e,, g,, b,, d, f, a,>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -3366,10 +3336,7 @@ I_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <c,, e,, g,, b,, d, f, a,>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -3572,11 +3539,8 @@ I_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <c,, e,, g,, b,, d, f, a,>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -3593,10 +3557,7 @@ I_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <c,, e,, g,, b,, d, f, a,>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -4020,11 +3981,8 @@ I_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <c,, e,, g,, b,, d, f, a,>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -4079,11 +4037,8 @@ I_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <c,, e,, g,, b,, d, f, a,>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -4100,10 +4055,7 @@ I_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <c,, e,, g,, b,, d, f, a,>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -4251,11 +4203,8 @@ I_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <c,, e,, g,, b,, d, f, a,>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -4272,10 +4221,7 @@ I_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <c,, e,, g,, b,, d, f, a,>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -4699,11 +4645,8 @@ I_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <c,, e,, g,, b,, d, f, a,>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -5198,22 +5141,16 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 295]                       %! SM4
     r2..
     
-    \makeRed                                                     %! SM12
     c'16
     -\laissezVibrer                                              %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r8.
     
     % [I PercussionMusicVoice measure 296]                       %! SM4
     r16
     
-    \makeRed                                                     %! SM12
     c'16
     -\laissezVibrer                                              %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r8
     
@@ -5237,22 +5174,16 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 299]                       %! SM4
     r2.
     
-    \makeRed                                                     %! SM12
     c'16
     -\laissezVibrer                                              %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r8.
     
     % [I PercussionMusicVoice measure 300]                       %! SM4
     r16
     
-    \makeRed                                                     %! SM12
     c'16
     -\laissezVibrer                                              %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r8
     
@@ -5261,11 +5192,8 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 301]                       %! SM4
     r16
     
-    \makeRed                                                     %! SM12
     c'16
     -\laissezVibrer                                              %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r8
     
@@ -5277,22 +5205,16 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 303]                       %! SM4
     r2.
     
-    \makeRed                                                     %! SM12
     c'16
     -\laissezVibrer                                              %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r8.
     
     % [I PercussionMusicVoice measure 304]                       %! SM4
     r16
     
-    \makeRed                                                     %! SM12
     c'16
     -\laissezVibrer                                              %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r8
     
@@ -5301,11 +5223,8 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 305]                       %! SM4
     r16
     
-    \makeRed                                                     %! SM12
     c'16
     -\laissezVibrer                                              %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r8
     
@@ -5317,22 +5236,16 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 307]                       %! SM4
     r2
     
-    \makeRed                                                     %! SM12
     c'16
     -\laissezVibrer                                              %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r8.
     
     % [I PercussionMusicVoice measure 308]                       %! SM4
     r16
     
-    \makeRed                                                     %! SM12
     c'16
     -\laissezVibrer                                              %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r8
     
@@ -5341,11 +5254,8 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 309]                       %! SM4
     r16
     
-    \makeRed                                                     %! SM12
     c'16
     -\laissezVibrer                                              %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r8
     
@@ -5357,22 +5267,16 @@ I_PercussionMusicVoice = {
     % [I PercussionMusicVoice measure 311]                       %! SM4
     r2
     
-    \makeRed                                                     %! SM12
     c'16
     -\laissezVibrer                                              %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r8.
     
     % [I PercussionMusicVoice measure 312]                       %! SM4
     r16
     
-    \makeRed                                                     %! SM12
     c'16
     -\laissezVibrer                                              %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r8
     

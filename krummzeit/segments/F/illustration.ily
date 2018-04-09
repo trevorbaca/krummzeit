@@ -937,103 +937,61 @@ F_OboeMusicVoice = {
     
     % [F OboeMusicVoice measure 238]                             %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    \makeRed                                                     %! SM12
     a'''4.
     -\staccato                                                   %! IC
     \<                                                           %! HC1
     \p                                                           %! HC1
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/6 {
         
         af'''4
         -\staccato                                               %! IC
         
-        \makeRed                                                 %! SM12
         c'''4
         -\staccato                                               %! IC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         bf'''4
         ~
     }
     
     % [F OboeMusicVoice measure 239]                             %! SM4
-    \makeRed                                                     %! SM12
     bf'''4
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     af'''4
     -\staccato                                                   %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     d'''16
     -\staccato                                                   %! IC
     [
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     cs'''16
     -\staccato                                                   %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     ef'''16
     -\staccato                                                   %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     f'''16
     ~
     ]
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     \times 2/3 {
         
-        \makeRed                                                 %! SM12
         f'''4
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         d'''4
         -\staccato                                               %! IC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         b''4
         ~
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     
     % [F OboeMusicVoice measure 240]                             %! SM4
-    \makeRed                                                     %! SM12
     b''4
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     fs''4
     -\staccato                                                   %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     g''4
     -\staccato                                                   %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     \times 8/12 {
         
         % [F OboeMusicVoice measure 241]                         %! SM4
@@ -1053,11 +1011,8 @@ F_OboeMusicVoice = {
         a''16
         -\staccato                                               %! IC
         
-        \makeRed                                                 %! SM12
         c'''16
         -\staccato                                               %! IC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         d''16
         -\staccato                                               %! IC
@@ -1074,31 +1029,19 @@ F_OboeMusicVoice = {
         a''16
         -\staccato                                               %! IC
         
-        \makeRed                                                 %! SM12
         b'16
         ~
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     
-    \makeRed                                                     %! SM12
     b'4
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [F OboeMusicVoice measure 242]                             %! SM4
-    \makeRed                                                     %! SM12
     f''4.
     ~
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     f''4.
     ~
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     \times 8/12 {
         
         % [F OboeMusicVoice measure 243]                         %! SM4
@@ -1111,11 +1054,8 @@ F_OboeMusicVoice = {
         f''16
         -\staccato                                               %! IC
         
-        \makeRed                                                 %! SM12
         fs''16
         -\staccato                                               %! IC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         cs''16
         -\staccato                                               %! IC
@@ -1132,11 +1072,8 @@ F_OboeMusicVoice = {
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \makeRed                                                 %! SM12
         g''16
         -\staccato                                               %! IC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         a'16
         -\staccato                                               %! IC
@@ -1152,17 +1089,11 @@ F_OboeMusicVoice = {
         ]
     }
     
-    \makeRed                                                     %! SM12
     af'4
     -\staccato                                                   %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     f''4.
     ~
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [F OboeMusicVoice measure 244]                             %! SM4
     f''4
@@ -1176,11 +1107,8 @@ F_OboeMusicVoice = {
         a'16
         -\staccato                                               %! IC
         
-        \makeRed                                                 %! SM12
         f'16
         -\staccato                                               %! IC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         d'16
         -\staccato                                               %! IC
@@ -1194,11 +1122,8 @@ F_OboeMusicVoice = {
         cs''16
         -\staccato                                               %! IC
         
-        \makeRed                                                 %! SM12
         a'16
         -\staccato                                               %! IC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         ef'16
         -\staccato                                               %! IC
@@ -1206,11 +1131,8 @@ F_OboeMusicVoice = {
         f'16
         -\staccato                                               %! IC
         
-        \makeRed                                                 %! SM12
         fs'16
         -\staccato                                               %! IC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         g'16
         -\staccato                                               %! IC
@@ -1340,26 +1262,15 @@ F_ClarinetMusicVoice = {
         
         % [F ClarinetMusicVoice measure 238]                     %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-        \makeRed                                                 %! SM12
         c'4
         -\staccato                                               %! IC
         \<                                                       %! HC1
         \p                                                       %! HC1
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                        {                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                            \with-color                          %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                                #(x11-color 'blue)               %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                                (“ClarinetInEFlat”)              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                        }                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
-                }
-            }
+        ^ \markup {                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            \with-color                                          %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                #(x11-color 'blue)                               %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                (“ClarinetInEFlat”)                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            }                                                    %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
         
         as4
         -\staccato                                               %! IC
@@ -1368,159 +1279,90 @@ F_ClarinetMusicVoice = {
         -\staccato                                               %! IC
     }
     
-    \makeRed                                                     %! SM12
     gs'4
     ~
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     gs'4
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [F ClarinetMusicVoice measure 239]                         %! SM4
-    \makeRed                                                     %! SM12
     fs'8
     -\staccato                                                   %! IC
     [
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     d'8
     ~
     ]
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     \times 2/3 {
         
-        \makeRed                                                 %! SM12
         d'4
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         gs'4
         -\staccato                                               %! IC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         fs'4
         ~
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \times 2/3 {
         
-        \makeRed                                                 %! SM12
         fs'4
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         g'4
         -\staccato                                               %! IC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         a'4
         -\staccato                                               %! IC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     
     % [F ClarinetMusicVoice measure 240]                         %! SM4
-    \makeRed                                                     %! SM12
     as'4
     -\staccato                                                   %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     f''4
     -\staccato                                                   %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     ds''8
     -\staccato                                                   %! IC
     [
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     as'8
     ~
     ]
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [F ClarinetMusicVoice measure 241]                         %! SM4
-    \makeRed                                                     %! SM12
     as'4.
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     f''4.
     ~
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [F ClarinetMusicVoice measure 242]                         %! SM4
-    \makeRed                                                     %! SM12
     f''4
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     fs''4
     ~
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     fs''8
     [
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     a''8
     -\staccato                                                   %! IC
     ]
     
     % [F ClarinetMusicVoice measure 243]                         %! SM4
-    \makeRed                                                     %! SM12
     b''4
     -\staccato                                                   %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     \times 2/3 {
         
-        \makeRed                                                 %! SM12
         d'''4
         -\staccato                                               %! IC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         ds'''4
         -\staccato                                               %! IC
         
-        \makeRed                                                 %! SM12
         fs''4
         ~
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     
-    \makeRed                                                     %! SM12
     fs''4.
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [F ClarinetMusicVoice measure 244]                         %! SM4
     gs''8
@@ -1530,22 +1372,16 @@ F_ClarinetMusicVoice = {
     a''8
     -\staccato                                                   %! IC
     
-    \makeRed                                                     %! SM12
     f'''8
     -\staccato                                                   %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     a''8
     ~
     ]
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    \makeRed                                                     %! SM12
     a''4.
     \ff                                                          %! HC1
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     \revert Beam.positions                                       %! OC2
     \revert TupletBracket.staff-padding                          %! OC2
     \revert DynamicLineSpanner.staff-padding                     %! OC2
@@ -1569,30 +1405,16 @@ F_ClarinetMusicVoice = {
     % [F ClarinetMusicVoice measure 250]                         %! SM4
     \override Stem.direction = #up                               %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    \makeRed                                                     %! SM12
     cs4.
     \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
-    ^ \markup {
-        \column
-            {
-                \line                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                    {                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                        \with-color                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                            #(x11-color 'blue)                   %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                            (“BassClarinet”)                     %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                    }                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                \line                                            %! SM12
-                    {                                            %! SM12
-                        OCTAVE                                   %! SM12
-                    }                                            %! SM12
-            }
-        }
+    ^ \markup {                                                  %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+        \with-color                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            #(x11-color 'blue)                                   %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            (“BassClarinet”)                                     %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+        }                                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
     
-    \makeRed                                                     %! SM12
     cs4
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [F ClarinetMusicVoice measure 251]                         %! SM4
     cs1
@@ -1739,22 +1561,13 @@ F_PianoMusicVoice = {
                 Hpschd.                                          %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
             }                                                    %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
         
-        \makeRed                                                 %! SM12
         f''16
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         fs''16
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         g''8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
@@ -1769,10 +1582,7 @@ F_PianoMusicVoice = {
         
         r4
         
-        \makeRed                                                 %! SM12
         d''4
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -1780,88 +1590,52 @@ F_PianoMusicVoice = {
         % [F PianoMusicVoice measure 239]                        %! SM4
         r4
         
-        \makeRed                                                 %! SM12
         g'4
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         bf'4
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         c''2
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \times 4/7 {
         
         r8
         
-        \makeRed                                                 %! SM12
         fs'8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         g'8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         r4
         
-        \makeRed                                                 %! SM12
         g'4
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \times 4/5 {
         
         % [F PianoMusicVoice measure 240]                        %! SM4
         r16
         
-        \makeRed                                                 %! SM12
         a'16
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         ef'16
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         f'8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \times 4/7 {
         
         r8
         
-        \makeRed                                                 %! SM12
         a'8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         f'8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         r4
         
-        \makeRed                                                 %! SM12
         g'4
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \times 4/5 {
         
@@ -1876,26 +1650,17 @@ F_PianoMusicVoice = {
         g'8
         [
         
-        \makeRed                                                 %! SM12
         f'8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         b4
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \times 4/7 {
         
         r16
         
-        \makeRed                                                 %! SM12
         c'16
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         d'16
         ]
@@ -1909,45 +1674,27 @@ F_PianoMusicVoice = {
         % [F PianoMusicVoice measure 242]                        %! SM4
         r16
         
-        \makeRed                                                 %! SM12
         fs16
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         g16
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         cs'8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \times 4/7 {
         
         r8
         
-        \makeRed                                                 %! SM12
         ef'8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         bf8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         r4
         
-        \makeRed                                                 %! SM12
         b4
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -1955,41 +1702,26 @@ F_PianoMusicVoice = {
         % [F PianoMusicVoice measure 243]                        %! SM4
         r4
         
-        \makeRed                                                 %! SM12
         g4
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         af4
         
-        \makeRed                                                 %! SM12
         g2
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
         r16
         
-        \makeRed                                                 %! SM12
         g16
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         d16
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         r8
         
-        \makeRed                                                 %! SM12
         bf8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     
     % [F PianoMusicVoice measure 244]                            %! SM4
@@ -2010,10 +1742,7 @@ F_PianoMusicVoice = {
         d16
         [
         
-        \makeRed                                                 %! SM12
         bf16
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         g8
         ]
@@ -2025,11 +1754,8 @@ F_PianoMusicVoice = {
         cs8
         [
         
-        \makeRed                                                 %! SM12
         a8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         r4
         
@@ -2049,10 +1775,7 @@ F_PianoMusicVoice = {
         f,16
         [
         
-        \makeRed                                                 %! SM12
         fs,16
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         f,8
         ]
@@ -2070,10 +1793,7 @@ F_PianoMusicVoice = {
         
         r8
         
-        \makeRed                                                 %! SM12
         a,8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     
     % [F PianoMusicVoice measure 251]                            %! SM4
@@ -2175,109 +1895,68 @@ F_PercussionMusicVoice = {
     % [F PercussionMusicVoice measure 236]                       %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
-    \makeRed                                                     %! SM12
     c4.
     :32                                                          %! IC
     \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
-    ^ \markup {
-        \column
-            {
-                \line                                            %! IC
-                    {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                "rapid roll with fingertips: keep speed constant during accelerando" %! IC
-                    }                                            %! IC
-                \line                                            %! SM12
-                    {                                            %! SM12
-                        OCTAVE                                   %! SM12
-                    }                                            %! SM12
-            }
-        }
+    ^ \markup {                                                  %! IC
+        \whiteout                                                %! IC
+            \upright                                             %! IC
+                "rapid roll with fingertips: keep speed constant during accelerando" %! IC
+        }                                                        %! IC
     
-    \makeRed                                                     %! SM12
     c4
     :32                                                          %! IC
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [F PercussionMusicVoice measure 237]                       %! SM4
     \makeBlue                                                    %! SM24
-    \makeRed                                                     %! SM12
     c4.
     :32                                                          %! IC
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     c4
     :32                                                          %! IC
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [F PercussionMusicVoice measure 238]                       %! SM4
     R1 * 1
     
     % [F PercussionMusicVoice measure 239]                       %! SM4
     \makeBlue                                                    %! SM24
-    \makeRed                                                     %! SM12
     c2.
     :32                                                          %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     c2
     :32                                                          %! IC
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [F PercussionMusicVoice measure 240]                       %! SM4
     \makeBlue                                                    %! SM24
-    \makeRed                                                     %! SM12
     c2.
     :32                                                          %! IC
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [F PercussionMusicVoice measure 241]                       %! SM4
     \makeBlue                                                    %! SM24
-    \makeRed                                                     %! SM12
     c2.
     :32                                                          %! IC
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [F PercussionMusicVoice measure 242]                       %! SM4
     \makeBlue                                                    %! SM24
-    \makeRed                                                     %! SM12
     c2.
     :32                                                          %! IC
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [F PercussionMusicVoice measure 243]                       %! SM4
     \makeBlue                                                    %! SM24
-    \makeRed                                                     %! SM12
     c2.
     :32                                                          %! IC
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     c4.
     :32                                                          %! IC
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [F PercussionMusicVoice measure 244]                       %! SM4
     R1 * 7/8
@@ -2290,11 +1969,8 @@ F_PercussionMusicVoice = {
     
     % [F PercussionMusicVoice measure 247]                       %! SM4
     \makeBlue                                                    %! SM24
-    \makeRed                                                     %! SM12
     c2.
     :32                                                          %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [F PercussionMusicVoice measure 248]                       %! SM4
     R1 * 7/4
@@ -2304,18 +1980,12 @@ F_PercussionMusicVoice = {
     
     % [F PercussionMusicVoice measure 250]                       %! SM4
     \makeBlue                                                    %! SM24
-    \makeRed                                                     %! SM12
     c4.
     :32                                                          %! IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     c4
     :32                                                          %! IC
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [F PercussionMusicVoice measure 251]                       %! SM4
     R1 * 1
@@ -2467,43 +2137,23 @@ F_ViolinMusicVoice = {
         
         % [F ViolinMusicVoice measure 241]                       %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                                 %! SM12
         fs4.
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! IC
-                        {                                        %! IC
-                            \whiteout                            %! IC
-                                \upright                         %! IC
-                                    "gridato possibile"          %! IC
-                        }                                        %! IC
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
-                }
-            }
+        ^ \markup {                                              %! IC
+            \whiteout                                            %! IC
+                \upright                                         %! IC
+                    "gridato possibile"                          %! IC
+            }                                                    %! IC
         
-        \makeRed                                                 %! SM12
         fs2
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/7 {
         
         % [F ViolinMusicVoice measure 243]                       %! SM4
-        \makeRed                                                 %! SM12
         fs2.
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         fs1
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 13/7 {
@@ -2542,10 +2192,7 @@ F_ViolinMusicVoice = {
     \times 10/7 {
         
         % [F ViolinMusicVoice measure 247]                       %! SM4
-        \makeRed                                                 %! SM12
         fs2.
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         fs1
     }
@@ -2558,11 +2205,8 @@ F_ViolinMusicVoice = {
         \revert TextSpanner.bound-details                        %! SC
         \revert TextSpanner.dash-fraction                        %! SC
         \revert TextSpanner.dash-period                          %! SC
-        \makeRed                                                 %! SM12
         fs1
         \stopTextSpan                                            %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 13/7 {
@@ -2649,48 +2293,34 @@ F_ViolaMusicVoice = {
     % [F ViolaMusicVoice measure 236]                            %! SM4
     \override DynamicLineSpanner.staff-padding = #'6             %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    \makeRed                                                     %! SM12
     fs8..
     \<                                                           %! HC1
     \ppp                                                         %! HC1
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
-    \makeRed                                                     %! SM12
     fs8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
-    \makeRed                                                     %! SM12
     fs8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
-    \makeRed                                                     %! SM12
     fs8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
-    \makeRed                                                     %! SM12
     fs8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
     % [F ViolaMusicVoice measure 238]                            %! SM4
-    \makeRed                                                     %! SM12
     fs8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
+    
+    r32
+    
+    fs8..
     
     r32
     
@@ -2698,77 +2328,43 @@ F_ViolaMusicVoice = {
     
     r32
     
-    \makeRed                                                     %! SM12
     fs8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
-    
-    r32
-    
-    \makeRed                                                     %! SM12
-    fs8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
     % [F ViolaMusicVoice measure 239]                            %! SM4
-    \makeRed                                                     %! SM12
     fs8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
-    \makeRed                                                     %! SM12
     fs8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
-    \makeRed                                                     %! SM12
     fs8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
-    \makeRed                                                     %! SM12
     fs8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
-    \makeRed                                                     %! SM12
     fs8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
     % [F ViolaMusicVoice measure 240]                            %! SM4
-    \makeRed                                                     %! SM12
     fs8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
-    \makeRed                                                     %! SM12
     fs8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    \makeRed                                                     %! SM12
     fs8..
     \fff                                                         %! HC1
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     \revert DynamicLineSpanner.staff-padding                     %! OC2
@@ -2821,16 +2417,10 @@ F_ViolaMusicVoice = {
             }                                                    %! SC
         \override TextSpanner.dash-fraction = #0.25              %! SC
         \override TextSpanner.dash-period = #1.5                 %! SC
-        \makeRed                                                 %! SM12
         bf,4
         \startTextSpan                                           %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         bf,1.
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/7 {
@@ -2841,11 +2431,8 @@ F_ViolaMusicVoice = {
         \revert TextSpanner.bound-details                        %! SC
         \revert TextSpanner.dash-fraction                        %! SC
         \revert TextSpanner.dash-period                          %! SC
-        \makeRed                                                 %! SM12
         bf,1.
         \stopTextSpan                                            %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 13/7 {
@@ -2932,48 +2519,34 @@ F_CelloMusicVoice = {
     % [F CelloMusicVoice measure 236]                            %! SM4
     \override DynamicLineSpanner.staff-padding = #'6             %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    \makeRed                                                     %! SM12
     c,8..
     \<                                                           %! HC1
     \ppp                                                         %! HC1
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
-    \makeRed                                                     %! SM12
     c,8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
-    \makeRed                                                     %! SM12
     c,8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
-    \makeRed                                                     %! SM12
     c,8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
-    \makeRed                                                     %! SM12
     c,8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
     % [F CelloMusicVoice measure 238]                            %! SM4
-    \makeRed                                                     %! SM12
     c,8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
+    
+    r32
+    
+    c,8..
     
     r32
     
@@ -2981,77 +2554,43 @@ F_CelloMusicVoice = {
     
     r32
     
-    \makeRed                                                     %! SM12
     c,8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
-    
-    r32
-    
-    \makeRed                                                     %! SM12
-    c,8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
     % [F CelloMusicVoice measure 239]                            %! SM4
-    \makeRed                                                     %! SM12
     c,8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
-    \makeRed                                                     %! SM12
     c,8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
-    \makeRed                                                     %! SM12
     c,8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
-    \makeRed                                                     %! SM12
     c,8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
-    \makeRed                                                     %! SM12
     c,8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
     % [F CelloMusicVoice measure 240]                            %! SM4
-    \makeRed                                                     %! SM12
     c,8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
-    \makeRed                                                     %! SM12
     c,8..
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    \makeRed                                                     %! SM12
     c,8..
     \fff                                                         %! HC1
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     r32
     \revert DynamicLineSpanner.staff-padding                     %! OC2
@@ -3104,11 +2643,8 @@ F_CelloMusicVoice = {
             }                                                    %! SC
         \override TextSpanner.dash-fraction = #0.25              %! SC
         \override TextSpanner.dash-period = #1.5                 %! SC
-        \makeRed                                                 %! SM12
         a,,1.
         \startTextSpan                                           %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         a,,4
     }
@@ -3119,16 +2655,10 @@ F_CelloMusicVoice = {
         \revert TextSpanner.bound-details                        %! SC
         \revert TextSpanner.dash-fraction                        %! SC
         \revert TextSpanner.dash-period                          %! SC
-        \makeRed                                                 %! SM12
         a,,1.
         \stopTextSpan                                            %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         a,,4
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 13/7 {

@@ -518,67 +518,40 @@ H_OboeMusicVoice = {
     % [H OboeMusicVoice measure 284]                             %! SM4
     \override DynamicLineSpanner.staff-padding = #'3             %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    \makeRed                                                     %! SM12
     d''1..
     \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     \startTrillSpan                                              %! SC
     
     % [H OboeMusicVoice measure 285]                             %! SM4
-    \makeRed                                                     %! SM12
     d''2.
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [H OboeMusicVoice measure 286]                             %! SM4
-    \makeRed                                                     %! SM12
     d''2..
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     d''4
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     d''4
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [H OboeMusicVoice measure 287]                             %! SM4
-    \makeRed                                                     %! SM12
     d''4.
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     d''4
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
         
         % [H OboeMusicVoice measure 288]                         %! SM4
         \override TupletBracket.staff-padding = #2               %! OC1
-        \makeRed                                                 %! SM12
         ef''2.
         \stopTrillSpan                                           %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         ef''2
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -591,10 +564,7 @@ H_OboeMusicVoice = {
     \times 7/5 {
         
         % [H OboeMusicVoice measure 290]                         %! SM4
-        \makeRed                                                 %! SM12
         ef''2.
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -603,10 +573,7 @@ H_OboeMusicVoice = {
                         2
             }
         
-        \makeRed                                                 %! SM12
         ef''2
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -690,31 +657,17 @@ H_ClarinetMusicVoice = {
     % [H ClarinetMusicVoice measure 284]                         %! SM4
     \override DynamicLineSpanner.staff-padding = #'3             %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \makeRed                                                     %! SM12
     b'1..
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
-    ^ \markup {
-        \column
-            {
-                \line                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                    {                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                        \with-color                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                            #(x11-color 'blue)                   %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                            (“ClarinetInEFlat”)                  %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                    }                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                \line                                            %! SM12
-                    {                                            %! SM12
-                        OCTAVE                                   %! SM12
-                    }                                            %! SM12
-            }
-        }
+    ^ \markup {                                                  %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+        \with-color                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            #(x11-color 'blue)                                   %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            (“ClarinetInEFlat”)                                  %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+        }                                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
     
     % [H ClarinetMusicVoice measure 285]                         %! SM4
-    \makeRed                                                     %! SM12
     b'2.
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [H ClarinetMusicVoice measure 286]                         %! SM4
     R1 * 11/8
@@ -730,29 +683,15 @@ H_ClarinetMusicVoice = {
         \override Stem.direction = #up                           %! OC1
         \override TupletBracket.staff-padding = #5               %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        \makeRed                                                 %! SM12
         f4
         \ff                                                      %! SM8:REDUNDANT_DYNAMIC:IC
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                        {                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                            \with-color                          %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                                #(x11-color 'blue)               %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                                (“BassClarinet”)                 %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                        }                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
-                }
-            }
+        ^ \markup {                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            \with-color                                          %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                #(x11-color 'blue)                               %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                (“BassClarinet”)                                 %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            }                                                    %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
         
-        \makeRed                                                 %! SM12
         f1
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -765,10 +704,7 @@ H_ClarinetMusicVoice = {
     \times 7/5 {
         
         % [H ClarinetMusicVoice measure 290]                     %! SM4
-        \makeRed                                                 %! SM12
         f4
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -777,10 +713,7 @@ H_ClarinetMusicVoice = {
                         2
             }
         
-        \makeRed                                                 %! SM12
         f1
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -832,7 +765,6 @@ H_PianoMusicVoice = {
     %@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
         \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
         \once \override Staff.InstrumentName.color = #(x11-color 'blue) %! SM6:EXPLICIT_MARGIN_MARKUP_COLOR:IC:-PARTS
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         [
         ^ \markup {
@@ -850,10 +782,6 @@ H_PianoMusicVoice = {
                                 #(x11-color 'blue)               %! SM11:EXPLICIT_MARGIN_MARKUP_ALERT:IC:-PARTS
                                 [“Hpschd.”]                      %! SM11:EXPLICIT_MARGIN_MARKUP_ALERT:IC:-PARTS
                         }                                        %! SM11:EXPLICIT_MARGIN_MARKUP_ALERT:IC:-PARTS
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
                 }
             }
         ^ \markup {
@@ -886,964 +814,7 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-    }
-    \times 2/3 {
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-    }
-    \times 2/3 {
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-    }
-    \times 2/3 {
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-    }
-    \times 2/3 {
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-    }
-    \times 2/3 {
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-    }
-    \times 2/3 {
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-    }
-    \times 2/3 {
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-    }
-    \times 2/3 {
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-    }
-    \times 2/3 {
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-    }
-    \times 2/3 {
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <d' f' a' c''>8
-        ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-    }
-    \times 2/3 {
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-    }
-    \times 2/3 {
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-    }
-    \times 2/3 {
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-    }
-    \times 2/3 {
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-    }
-    \times 2/3 {
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        \makeRed                                                 %! SM12
-        <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -1898,10 +869,7 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -1918,11 +886,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -1941,11 +906,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -1962,10 +924,7 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -1982,11 +941,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2005,11 +961,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2026,10 +979,7 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2046,11 +996,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2069,11 +1016,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2090,10 +1034,7 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2110,11 +1051,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2133,11 +1071,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2154,10 +1089,7 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2174,11 +1106,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2197,11 +1126,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2218,10 +1144,7 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2238,11 +1161,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2261,11 +1181,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2282,10 +1199,7 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2302,11 +1216,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2325,11 +1236,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2346,10 +1254,7 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2366,11 +1271,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2389,11 +1291,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2410,10 +1309,7 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2430,11 +1326,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2453,11 +1346,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2474,10 +1364,7 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2494,11 +1381,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2517,11 +1401,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2538,10 +1419,7 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2558,11 +1436,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2581,11 +1456,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2602,10 +1474,7 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2622,11 +1491,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2645,11 +1511,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2666,10 +1529,7 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2686,11 +1546,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2709,11 +1566,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2730,10 +1584,7 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2750,11 +1601,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2773,11 +1621,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2794,10 +1639,7 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2814,11 +1656,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2837,11 +1676,8 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         [
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2858,10 +1694,7 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         ^ \markup {
             \center-align
                 \concat
@@ -2878,11 +1711,833 @@ H_PianoMusicVoice = {
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \makeRed                                                 %! SM12
         <d' f' a' c''>8
         ]
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        [
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ]
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        [
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ]
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        [
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ]
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        [
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ]
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        [
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ]
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        [
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ]
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        [
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ]
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        [
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ]
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        [
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ]
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        [
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ]
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        [
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ]
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        [
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ]
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        [
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ]
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        [
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ]
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+    }
+    \times 2/3 {
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        [
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ]
         ^ \markup {
             \center-align
                 \concat
@@ -2905,31 +2560,17 @@ H_PianoMusicVoice = {
         
         % [H PianoMusicVoice measure 289]                        %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                                 %! SM12
         fs'''2.
         :32                                                      %! IC
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                        {                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                            \with-color                          %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                                #(x11-color 'blue)               %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                                (“Piano”)                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                        }                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
-                }
-            }
+        ^ \markup {                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            \with-color                                          %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                #(x11-color 'blue)                               %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+                (“Piano”)                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+            }                                                    %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
         
-        \makeRed                                                 %! SM12
         fs'''1
         :32                                                      %! IC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
         
@@ -3022,91 +2663,59 @@ H_PercussionMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
-    \makeRed                                                     %! SM12
     c4
     -\accent                                                     %! IC
     \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC
-    ^ \markup {
-        \column
-            {
-                \line                                            %! IC
-                    {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                \override                        %! IC
-                                    #'(box-padding . 0.5)        %! IC
-                                    \box                         %! IC
-                                        crotales                 %! IC
-                    }                                            %! IC
-                \line                                            %! SM12
-                    {                                            %! SM12
-                        OCTAVE                                   %! SM12
-                    }                                            %! SM12
-            }
-        }
+    ^ \markup {                                                  %! IC
+        \whiteout                                                %! IC
+            \upright                                             %! IC
+                \override                                        %! IC
+                    #'(box-padding . 0.5)                        %! IC
+                    \box                                         %! IC
+                        crotales                                 %! IC
+        }                                                        %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
-    \makeRed                                                     %! SM12
     c4
     -\accent                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
-    \makeRed                                                     %! SM12
     c4
     -\accent                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
-    \makeRed                                                     %! SM12
     c4
     -\accent                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
-    \makeRed                                                     %! SM12
     c4
     -\accent                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
-    \makeRed                                                     %! SM12
     c4
     -\accent                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
-    \makeRed                                                     %! SM12
     c4
     -\accent                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
-    \makeRed                                                     %! SM12
     c4
     -\accent                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     
     % [H PercussionMusicVoice measure 287]                       %! SM4
@@ -3124,32 +2733,18 @@ H_PercussionMusicVoice = {
     %@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
         \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                                 %! SM12
         fs''4
         :32                                                      %! IC
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                        {                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                            \with-color                          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                                #(x11-color 'DeepPink1)          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                                (“Xylophone”)                    %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                        }                                        %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
-                }
-            }
+        ^ \markup {                                              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+            \with-color                                          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                #(x11-color 'DeepPink1)                          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+                (“Xylophone”)                                    %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
+            }                                                    %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
-        \makeRed                                                 %! SM12
         fs''1.
         :32                                                      %! IC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         \revert TupletBracket.staff-padding                      %! OC2
         
     }
@@ -3189,7 +2784,6 @@ H_ViolinMusicVoice = {
         \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                                 %! SM12
         df'2.
         :32                                                      %! IC
         \fff_poss                                                %! SM8:EXPLICIT_DYNAMIC:IC
@@ -3208,10 +2802,6 @@ H_ViolinMusicVoice = {
                                 #(x11-color 'green4)             %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                                 [“Vn.”]                          %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                         }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
                 }
             }
         \override Staff.Clef.color = #(x11-color 'OliveDrab)     %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
@@ -3229,11 +2819,8 @@ H_ViolinMusicVoice = {
                 Vn.                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
             }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         
-        \makeRed                                                 %! SM12
         df'2
         :32                                                      %! IC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \times 2/3 {
         
@@ -3241,135 +2828,66 @@ H_ViolinMusicVoice = {
         \override NoteHead.style = #'harmonic                    %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         \makeRed                                                 %! SM14
-        \makeRed                                                 %! SM12
         af'4
         \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
-                }
-            }
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
         
         \makeRed                                                 %! SM14
-        \makeRed                                                 %! SM12
         af'2
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
-                }
-            }
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
     }
     
     \makeRed                                                     %! SM14
-    \makeRed                                                     %! SM12
     af'4
     \glissando                                                   %! SC
-    ^ \markup {
-        \column
-            {
-                \line                                            %! SM14
-                    {                                            %! SM14
-                        @                                        %! SM14
-                    }                                            %! SM14
-                \line                                            %! SM12
-                    {                                            %! SM12
-                        OCTAVE                                   %! SM12
-                    }                                            %! SM12
-            }
-        }
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
     
-    \makeRed                                                     %! SM12
     cs'1
     ~
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/7 {
         
         % [H ViolinMusicVoice measure 284]                       %! SM4
-        \makeRed                                                 %! SM12
         cs'1
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         c'2.
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \times 2/3 {
         
-        \makeRed                                                 %! SM12
         d'4
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         f2
         ~
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \times 4/5 {
         
         % [H ViolinMusicVoice measure 285]                       %! SM4
-        \makeRed                                                 %! SM12
         f16
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         bf'4
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \times 4/7 {
         
-        \makeRed                                                 %! SM12
         fs'4
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         b'8.
         ~
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \times 2/3 {
         
-        \makeRed                                                 %! SM12
         b'8
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         af'4
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         \revert NoteHead.style                                   %! OC2
     }
     
@@ -3382,70 +2900,31 @@ H_ViolinMusicVoice = {
         \override DynamicLineSpanner.staff-padding = #'7         %! OC1
         \override TupletBracket.staff-padding = #3               %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                                 %! SM12
         d''2.
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         \makeRed                                                 %! SM14
-        \makeRed                                                 %! SM12
         ef''2
         :32                                                      %! IC
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
-                }
-            }
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/5 {
         
         % [H ViolinMusicVoice measure 289]                       %! SM4
         \makeRed                                                 %! SM14
-        \makeRed                                                 %! SM12
         ef''2.
         :32                                                      %! IC
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
-                }
-            }
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
         
         \makeRed                                                 %! SM14
-        \makeRed                                                 %! SM12
         ef''2
         :32                                                      %! IC
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
-                }
-            }
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
         
@@ -3482,7 +2961,6 @@ H_ViolaMusicVoice = {
         \set Staff.forceClef = ##t                               %! SM8:REAPPLIED_CLEF:SM33:SM37
         \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                                 %! SM12
         c4
         :32                                                      %! IC
         \fff_poss                                                %! SM8:EXPLICIT_DYNAMIC:IC
@@ -3501,10 +2979,6 @@ H_ViolaMusicVoice = {
                                 #(x11-color 'green4)             %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                                 [“Va.”]                          %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                         }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
                 }
             }
         \override Staff.Clef.color = #(x11-color 'OliveDrab)     %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
@@ -3522,11 +2996,8 @@ H_ViolaMusicVoice = {
                 Va.                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
             }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         
-        \makeRed                                                 %! SM12
         c1
         :32                                                      %! IC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/9 {
@@ -3534,124 +3005,64 @@ H_ViolaMusicVoice = {
         % [H ViolaMusicVoice measure 283]                        %! SM4
         \override NoteHead.style = #'harmonic                    %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                                 %! SM12
         b2.
         \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         \makeRed                                                 %! SM14
-        \makeRed                                                 %! SM12
         c1.
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
-                }
-            }
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
     }
     \times 4/5 {
         
         \makeRed                                                 %! SM14
-        \makeRed                                                 %! SM12
         c8
         \glissando                                               %! SC
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
-                }
-            }
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
         
-        \makeRed                                                 %! SM12
         e2
         ~
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \times 4/7 {
         
         % [H ViolaMusicVoice measure 284]                        %! SM4
-        \makeRed                                                 %! SM12
         e2
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         fs4.
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     
-    \makeRed                                                     %! SM12
     f4
     \glissando                                                   %! SC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     af2
     ~
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     \times 4/5 {
         
-        \makeRed                                                 %! SM12
         af8
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         cs2
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \times 4/7 {
         
         % [H ViolaMusicVoice measure 285]                        %! SM4
-        \makeRed                                                 %! SM12
         e4
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         g8.
         ~
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \times 2/3 {
         
-        \makeRed                                                 %! SM12
         g4
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         a2
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         \revert NoteHead.style                                   %! OC2
     }
     
@@ -3664,70 +3075,31 @@ H_ViolaMusicVoice = {
         \override DynamicLineSpanner.staff-padding = #'9         %! OC1
         \override TupletBracket.staff-padding = #5               %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                                 %! SM12
         d4
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         \makeRed                                                 %! SM14
-        \makeRed                                                 %! SM12
         a1
         :32                                                      %! IC
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
-                }
-            }
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/5 {
         
         % [H ViolaMusicVoice measure 289]                        %! SM4
         \makeRed                                                 %! SM14
-        \makeRed                                                 %! SM12
         a4
         :32                                                      %! IC
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
-                }
-            }
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
         
         \makeRed                                                 %! SM14
-        \makeRed                                                 %! SM12
         a1
         :32                                                      %! IC
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
-                }
-            }
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
         
@@ -3764,7 +3136,6 @@ H_CelloMusicVoice = {
         \set Staff.forceClef = ##t                               %! SM8:REAPPLIED_CLEF:SM33:SM37
         \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                                 %! SM12
         c,2
         :32                                                      %! IC
         \fff_poss                                                %! SM8:EXPLICIT_DYNAMIC:IC
@@ -3783,10 +3154,6 @@ H_CelloMusicVoice = {
                                 #(x11-color 'green4)             %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                                 [“Vc.”]                          %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                         }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
                 }
             }
         \override Staff.Clef.color = #(x11-color 'OliveDrab)     %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
@@ -3804,51 +3171,33 @@ H_CelloMusicVoice = {
                 Vc.                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
             }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         
-        \makeRed                                                 %! SM12
         c,2.
         :32                                                      %! IC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \times 2/3 {
         
         % [H CelloMusicVoice measure 283]                        %! SM4
         \override NoteHead.style = #'harmonic                    %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                                 %! SM12
         a,4
         \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         bf,2
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \times 4/5 {
         
-        \makeRed                                                 %! SM12
         f,8.
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         d,2.
         ~
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \times 4/7 {
         
-        \makeRed                                                 %! SM12
         d,2
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         b,4.
         \glissando                                               %! SC
@@ -3856,57 +3205,33 @@ H_CelloMusicVoice = {
     \times 2/3 {
         
         % [H CelloMusicVoice measure 284]                        %! SM4
-        \makeRed                                                 %! SM12
         bf,4
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         g,2
         ~
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     
-    \makeRed                                                     %! SM12
     g,4
     \glissando                                                   %! SC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
-    \makeRed                                                     %! SM12
     f,1
     \glissando                                                   %! SC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     \times 4/7 {
         
         % [H CelloMusicVoice measure 285]                        %! SM4
-        \makeRed                                                 %! SM12
         b,2
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         c4.
         ~
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
     }
     \times 2/3 {
         
-        \makeRed                                                 %! SM12
         c8
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
-        \makeRed                                                 %! SM12
         bf,4
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         \revert NoteHead.style                                   %! OC2
     }
     
@@ -3919,70 +3244,31 @@ H_CelloMusicVoice = {
         \override DynamicLineSpanner.staff-padding = #'9         %! OC1
         \override TupletBracket.staff-padding = #5               %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                                 %! SM12
         d2
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                               %! SC
-        - \tweak color #red                                      %! SM12
-        ^ \markup { OCTAVE }                                     %! SM12
         
         \makeRed                                                 %! SM14
-        \makeRed                                                 %! SM12
         eqf,2.
         :32                                                      %! IC
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
-                }
-            }
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/5 {
         
         % [H CelloMusicVoice measure 289]                        %! SM4
         \makeRed                                                 %! SM14
-        \makeRed                                                 %! SM12
         eqf,2
         :32                                                      %! IC
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
-                }
-            }
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
         
         \makeRed                                                 %! SM14
-        \makeRed                                                 %! SM12
         eqf,2.
         :32                                                      %! IC
-        ^ \markup {
-            \column
-                {
-                    \line                                        %! SM14
-                        {                                        %! SM14
-                            @                                    %! SM14
-                        }                                        %! SM14
-                    \line                                        %! SM12
-                        {                                        %! SM12
-                            OCTAVE                               %! SM12
-                        }                                        %! SM12
-                }
-            }
+        - \tweak color #red                                      %! SM14
+        ^ \markup { @ }                                          %! SM14
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
         

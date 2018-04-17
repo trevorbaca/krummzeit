@@ -1782,7 +1782,7 @@ C_ClarinetMusicVoice = {
     % [C ClarinetMusicVoice measure 146]                         %! SM4
     \override Stem.direction = #up                               %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    cs1
+    cs!1
     \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                                  %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
         \with-color                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
@@ -1791,35 +1791,35 @@ C_ClarinetMusicVoice = {
         }                                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
     
     % [C ClarinetMusicVoice measure 147]                         %! SM4
-    cs1
+    cs!1
     \repeatTie
     
     % [C ClarinetMusicVoice measure 148]                         %! SM4
-    cs2.
+    cs!2.
     \repeatTie
     
-    cs2
+    cs!2
     \repeatTie
     
     % [C ClarinetMusicVoice measure 149]                         %! SM4
-    cs2.
+    cs!2.
     \repeatTie
     
-    cs2
+    cs!2
     \repeatTie
     
     % [C ClarinetMusicVoice measure 150]                         %! SM4
-    cs2.
+    cs!2.
     \repeatTie
     
-    cs2
+    cs!2
     \repeatTie
     
     % [C ClarinetMusicVoice measure 151]                         %! SM4
-    cs2.
+    cs!2.
     \repeatTie
     
-    cs2
+    cs!2
     \repeatTie
     \revert Stem.direction                                       %! OC2
     
@@ -1893,7 +1893,7 @@ C_PianoMusicVoice = {
         
         r16
         
-        ef''''16
+        ef''''!16
         -\staccatissimo                                          %! IC
         [
         
@@ -1903,7 +1903,7 @@ C_PianoMusicVoice = {
     }
     \times 4/7 {
         
-        cs''''8
+        cs''''!8
         -\staccatissimo                                          %! IC
         
         r8
@@ -1934,7 +1934,7 @@ C_PianoMusicVoice = {
         
         r16
         
-        cs''16
+        cs''!16
         -\staccatissimo                                          %! IC
         [
         
@@ -1945,12 +1945,12 @@ C_PianoMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
-        ef'16
+        ef'!16
         -\staccatissimo                                          %! IC
         
         r16
         
-        bf'16
+        bf'!16
         -\staccatissimo                                          %! IC
         [
         
@@ -1976,7 +1976,7 @@ C_PianoMusicVoice = {
     %@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
         \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-        af8
+        af!8
         -\staccatissimo                                          %! IC
         \>                                                       %! HC1
         \ff                                                      %! HC1
@@ -1998,14 +1998,14 @@ C_PianoMusicVoice = {
         
         r8
         
-        ef,8
+        ef,!8
         -\staccatissimo                                          %! IC
         
         c4
         -\staccatissimo                                          %! IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-        cs,4
+        cs,!4
         -\staccatissimo                                          %! IC
         \pp                                                      %! HC1
     }
@@ -2636,32 +2636,32 @@ C_ViolinMusicVoice = {
                     pizz.                                        %! IC
             }                                                    %! IC
         
-        cs''''8
+        cs''''!8
         -\staccatissimo                                          %! IC
         ]
         
         r8
         
-        bf'''4
+        bf'''!4
         -\staccatissimo                                          %! IC
     }
     \times 4/7 {
         
         r8
         
-        cs'''8
+        cs'''!8
         -\staccatissimo                                          %! IC
         [
         
-        af'''8
+        af'''!8
         -\staccatissimo                                          %! IC
         ]
         
-        bf''4
+        bf''!4
         -\staccatissimo                                          %! IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-        ef''4
+        ef''!4
         -\staccatissimo                                          %! IC
         \pp                                                      %! HC1
         \ottava #0                                               %! SC
@@ -2699,11 +2699,11 @@ C_ViolinMusicVoice = {
         -\staccatissimo                                          %! IC
         [
         
-        ef'8
+        ef'!8
         -\staccatissimo                                          %! IC
         ]
         
-        cs''4
+        cs''!4
         -\staccatissimo                                          %! IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -2733,14 +2733,14 @@ C_ViolinMusicVoice = {
         
         r8
         
-        bf'4
+        bf'!4
         -\staccatissimo                                          %! IC
     }
     \times 4/7 {
         
         r8
         
-        ef'8
+        ef'!8
         -\staccatissimo                                          %! IC
         [
         
@@ -2775,7 +2775,7 @@ C_ViolinMusicVoice = {
     % [C ViolinMusicVoice measure 146]                           %! SM4
     \override Stem.direction = #up                               %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    fs1
+    fs!1
     \fff_poss                                                    %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC
@@ -2784,14 +2784,14 @@ C_ViolinMusicVoice = {
         }                                                        %! IC
     
     % [C ViolinMusicVoice measure 147]                           %! SM4
-    fs1
+    fs!1
     \repeatTie
     
     % [C ViolinMusicVoice measure 148]                           %! SM4
-    fs2.
+    fs!2.
     \repeatTie
     
-    fs2
+    fs!2
     \repeatTie
     \revert Stem.direction                                       %! OC2
     
@@ -2893,7 +2893,7 @@ C_ViolaMusicVoice = {
         
         \ottava #1                                               %! SC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-        ef'''4
+        ef'''!4
         -\staccatissimo                                          %! IC
         \>                                                       %! HC1
         \ff                                                      %! HC1
@@ -2908,7 +2908,7 @@ C_ViolaMusicVoice = {
         
         r8
         
-        af'''4
+        af'''!4
         -\staccatissimo                                          %! IC
         
         r8
@@ -2946,7 +2946,7 @@ C_ViolaMusicVoice = {
         
         r8
         
-        cs''4
+        cs''!4
         -\staccatissimo                                          %! IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -2980,7 +2980,7 @@ C_ViolaMusicVoice = {
         
         r8
         
-        af4
+        af!4
         -\staccatissimo                                          %! IC
         
         r8
@@ -2989,7 +2989,7 @@ C_ViolaMusicVoice = {
         -\staccatissimo                                          %! IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-        bf,4
+        bf,!4
         -\staccatissimo                                          %! IC
         \pp                                                      %! HC1
         \revert Beam.positions                                   %! OC2
@@ -3003,7 +3003,7 @@ C_ViolaMusicVoice = {
     % [C ViolaMusicVoice measure 143]                            %! SM4
     \override Stem.direction = #up                               %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    bf,2.
+    bf,!2.
     \fff_poss                                                    %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC
@@ -3012,7 +3012,7 @@ C_ViolaMusicVoice = {
         }                                                        %! IC
     
     % [C ViolaMusicVoice measure 144]                            %! SM4
-    bf,2.
+    bf,!2.
     \repeatTie
     
     % [C ViolaMusicVoice measure 145]                            %! SM4
@@ -3020,18 +3020,18 @@ C_ViolaMusicVoice = {
     
     % [C ViolaMusicVoice measure 146]                            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    bf,1
+    bf,!1
     \fff_poss                                                    %! SM8:REDUNDANT_DYNAMIC:IC
     
     % [C ViolaMusicVoice measure 147]                            %! SM4
-    bf,1
+    bf,!1
     \repeatTie
     
     % [C ViolaMusicVoice measure 148]                            %! SM4
-    bf,2.
+    bf,!2.
     \repeatTie
     
-    bf,2
+    bf,!2
     \repeatTie
     \revert Stem.direction                                       %! OC2
     
@@ -3177,14 +3177,14 @@ C_CelloMusicVoice = {
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-        ef'4
+        ef'!4
         -\staccatissimo                                          %! IC
         \<                                                       %! HC1
         \pp                                                      %! HC1
         
         r8
         
-        cs'4
+        cs'!4
         -\staccatissimo                                          %! IC
         
         f4
@@ -3195,7 +3195,7 @@ C_CelloMusicVoice = {
         r8
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-        ef4
+        ef!4
         -\staccatissimo                                          %! IC
         \ff                                                      %! HC1
     }
@@ -3219,7 +3219,7 @@ C_CelloMusicVoice = {
         g4
         -\staccatissimo                                          %! IC
         
-        cs4
+        cs!4
         -\staccatissimo                                          %! IC
     }
     \times 2/3 {

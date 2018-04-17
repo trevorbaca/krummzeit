@@ -1250,7 +1250,7 @@ I_OboeMusicVoice = {
         \set Staff.forceClef = ##t                               %! SM8:REAPPLIED_CLEF:SM33:SM37
         \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        ef''4.
+        ef''!4.
         \ff                                                      %! SM8:REDUNDANT_DYNAMIC:IC
         ^ \markup {
             \column
@@ -1284,7 +1284,7 @@ I_OboeMusicVoice = {
                 Ob.                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
             }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         
-        ef''4
+        ef''!4
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1441,80 +1441,80 @@ I_ClarinetMusicVoice = {
     
     % [I ClarinetMusicVoice measure 293]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    fs2.
+    fs!2.
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
     
     % [I ClarinetMusicVoice measure 294]                         %! SM4
-    fs4.
+    fs!4.
     \repeatTie
     
-    fs4
+    fs!4
     \repeatTie
     
     % [I ClarinetMusicVoice measure 295]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    fs2.
+    fs!2.
     \repeatTie
     \<                                                           %! HC1
     \ff                                                          %! HC1
     
-    fs4.
+    fs!4.
     \repeatTie
     
     % [I ClarinetMusicVoice measure 296]                         %! SM4
-    fs2.
+    fs!2.
     \repeatTie
     
-    fs4.
+    fs!4.
     \repeatTie
     
     % [I ClarinetMusicVoice measure 297]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    fs4.
+    fs!4.
     \repeatTie
     \fff                                                         %! HC1
     
-    fs4
+    fs!4
     \repeatTie
     
     % [I ClarinetMusicVoice measure 298]                         %! SM4
-    fs4.
+    fs!4.
     \repeatTie
     
-    fs4
+    fs!4
     \repeatTie
     
     % [I ClarinetMusicVoice measure 299]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    fs1
+    fs!1
     \fff_poss                                                    %! SM8:EXPLICIT_DYNAMIC:IC
     \repeatTie
     
     % [I ClarinetMusicVoice measure 300]                         %! SM4
-    fs2.
+    fs!2.
     \repeatTie
     
-    fs2
+    fs!2
     \repeatTie
     
     % [I ClarinetMusicVoice measure 301]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    fs1
+    fs!1
     \repeatTie
     \>                                                           %! HC1
     \fff                                                         %! HC1
     
     % [I ClarinetMusicVoice measure 302]                         %! SM4
-    fs1
+    fs!1
     \repeatTie
     
     % [I ClarinetMusicVoice measure 303]                         %! SM4
-    fs1
+    fs!1
     \repeatTie
     
     % [I ClarinetMusicVoice measure 304]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    fs1
+    fs!1
     \repeatTie
     \ppp                                                         %! HC1
     
@@ -1577,7 +1577,7 @@ I_PianoMusicVoice = {
         \set Staff.forceClef = ##t                               %! SM8:REAPPLIED_CLEF:SM33:SM37
         \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        fs'''4.
+        fs'''!4.
         :32                                                      %! IC
         \fff                                                     %! SM8:REDUNDANT_DYNAMIC:IC
         ^ \markup {
@@ -1612,7 +1612,7 @@ I_PianoMusicVoice = {
                 Hpschd.                                          %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
             }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         
-        fs'''2
+        fs'''!2
         :32                                                      %! IC
     }
     
@@ -4894,7 +4894,7 @@ I_PercussionMusicVoice = {
         \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        fs''8
+        fs''!8
         :32                                                      %! IC
         \fff                                                     %! SM8:REDUNDANT_DYNAMIC:IC
         ^ \markup {
@@ -4929,7 +4929,7 @@ I_PercussionMusicVoice = {
                 Perc.                                            %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
             }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         
-        fs''2.
+        fs''!2.
         :32                                                      %! IC
     }
     
@@ -5155,7 +5155,7 @@ I_ViolinMusicVoice = {
         \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        ef''8
+        ef''!8
         :32                                                      %! IC
         \fff                                                     %! SM8:REDUNDANT_DYNAMIC:IC
         [
@@ -5191,141 +5191,141 @@ I_ViolinMusicVoice = {
                 Vn.                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
             }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         
-        ef''8
-        :32                                                      %! IC
-        ]
-    }
-    \times 2/3 {
-        
-        ef''8
-        :32                                                      %! IC
-        [
-        
-        ef''8
-        :32                                                      %! IC
-        
-        ef''8
+        ef''!8
         :32                                                      %! IC
         ]
     }
     \times 2/3 {
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         [
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         ]
     }
     \times 2/3 {
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         [
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         
-        ef''8
+        ef''!8
+        :32                                                      %! IC
+        ]
+    }
+    \times 2/3 {
+        
+        ef''!8
+        :32                                                      %! IC
+        [
+        
+        ef''!8
+        :32                                                      %! IC
+        
+        ef''!8
         :32                                                      %! IC
         ]
     }
     \times 2/3 {
         
         % [I ViolinMusicVoice measure 292]                       %! SM4
-        ef''8
+        ef''!8
         :32                                                      %! IC
         [
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         ]
     }
     \times 2/3 {
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         [
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         ]
     }
     \times 2/3 {
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         [
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         ]
     }
     \times 2/3 {
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         [
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         ]
     }
     \times 2/3 {
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         [
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         ]
     }
     \times 2/3 {
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         [
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         ]
     }
     \times 2/3 {
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         [
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         
-        ef''8
+        ef''!8
         :32                                                      %! IC
         ]
     }
@@ -5347,15 +5347,15 @@ I_ViolinMusicVoice = {
                 "directly on bridge: full bow each stroke"       %! IC
         }                                                        %! IC
     
-    cs''4
+    cs''!4
     -\upbow                                                      %! IC
     \glissando                                                   %! SC
     
-    ef''4
+    ef''!4
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
     
-    fs''4
+    fs''!4
     -\upbow                                                      %! IC
     \glissando                                                   %! SC
     
@@ -5368,7 +5368,7 @@ I_ViolinMusicVoice = {
     -\upbow                                                      %! IC
     \glissando                                                   %! SC
     
-    ef''4
+    ef''!4
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
     
@@ -5380,7 +5380,7 @@ I_ViolinMusicVoice = {
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
     
-    bf'8
+    bf'!8
     -\upbow                                                      %! IC
     \glissando                                                   %! SC
     
@@ -5398,7 +5398,7 @@ I_ViolinMusicVoice = {
     \glissando                                                   %! SC
     
     % [I ViolinMusicVoice measure 298]                           %! SM4
-    bf'4
+    bf'!4
     -\upbow                                                      %! IC
     \glissando                                                   %! SC
     
@@ -5428,7 +5428,7 @@ I_ViolinMusicVoice = {
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     
-    ef'4
+    ef'!4
     -\upbow                                                      %! IC
     
     % [I ViolinMusicVoice measure 300]                           %! SM4
@@ -5480,7 +5480,7 @@ I_ViolinMusicVoice = {
                     pizz.                                        %! IC
             }                                                    %! IC
         
-        cs'''4
+        cs'''!4
         -\staccatissimo                                          %! IC
         
         f'''8
@@ -5722,7 +5722,7 @@ I_ViolaMusicVoice = {
     \once \override Staff.Clef.color = #(x11-color 'blue)        %! SM6:EXPLICIT_CLEF_COLOR:IC
 %@% \override Staff.Clef.color = ##f                             %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set Staff.forceClef = ##t                                   %! SM8:EXPLICIT_CLEF:SM33:IC
-    ef''4
+    ef''!4
     -\downbow                                                    %! IC
     \effort_f                                                    %! SM8:EXPLICIT_DYNAMIC:IC
     \glissando                                                   %! SC
@@ -5733,7 +5733,7 @@ I_ViolaMusicVoice = {
         }                                                        %! IC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)      %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
-    bf''4
+    bf''!4
     -\upbow                                                      %! IC
     \glissando                                                   %! SC
     
@@ -5741,7 +5741,7 @@ I_ViolaMusicVoice = {
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
     
-    af''4
+    af''!4
     -\upbow                                                      %! IC
     \glissando                                                   %! SC
     
@@ -5750,7 +5750,7 @@ I_ViolaMusicVoice = {
     \glissando                                                   %! SC
     
     % [I ViolaMusicVoice measure 296]                            %! SM4
-    fs''4
+    fs''!4
     -\upbow                                                      %! IC
     \glissando                                                   %! SC
     
@@ -5758,7 +5758,7 @@ I_ViolaMusicVoice = {
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
     
-    af'4
+    af'!4
     -\upbow                                                      %! IC
     \glissando                                                   %! SC
     
@@ -5771,11 +5771,11 @@ I_ViolaMusicVoice = {
     \glissando                                                   %! SC
     
     % [I ViolaMusicVoice measure 297]                            %! SM4
-    cs'4
+    cs'!4
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
     
-    af'4
+    af'!4
     -\upbow                                                      %! IC
     \glissando                                                   %! SC
     
@@ -5797,20 +5797,20 @@ I_ViolaMusicVoice = {
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     
-    ef'8
+    ef'!8
     -\upbow                                                      %! IC
     \glissando                                                   %! SC
     
     % [I ViolaMusicVoice measure 299]                            %! SM4
-    cs'4
+    cs'!4
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
     
-    ef4
+    ef!4
     -\upbow                                                      %! IC
     \glissando                                                   %! SC
     
-    fs4
+    fs!4
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
     
@@ -5856,7 +5856,7 @@ I_ViolaMusicVoice = {
         
         % [I ViolaMusicVoice measure 312]                        %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        ef'''8
+        ef'''!8
         -\staccatissimo                                          %! IC
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {                                              %! IC
@@ -5874,14 +5874,14 @@ I_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/6 {
         
-        ef'''2
+        ef'''!2
         -\staccatissimo                                          %! IC
         
         b'''4
         -\staccatissimo                                          %! IC
     }
     
-    ef'''8
+    ef'''!8
     -\staccatissimo                                              %! IC
     
     % [I ViolaMusicVoice measure 313]                            %! SM4
@@ -5918,7 +5918,7 @@ I_CelloMusicVoice = {
         \set Staff.forceClef = ##t                               %! SM8:REAPPLIED_CLEF:SM33:SM37
         \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         \fff                                                     %! SM8:REDUNDANT_DYNAMIC:IC
         [
@@ -5954,141 +5954,141 @@ I_CelloMusicVoice = {
                 Vc.                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
             }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         
-        eqf,8
-        :32                                                      %! IC
-        ]
-    }
-    \times 2/3 {
-        
-        eqf,8
-        :32                                                      %! IC
-        [
-        
-        eqf,8
-        :32                                                      %! IC
-        
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         ]
     }
     \times 2/3 {
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         [
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         ]
     }
     \times 2/3 {
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         [
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         
-        eqf,8
+        eqf,!8
+        :32                                                      %! IC
+        ]
+    }
+    \times 2/3 {
+        
+        eqf,!8
+        :32                                                      %! IC
+        [
+        
+        eqf,!8
+        :32                                                      %! IC
+        
+        eqf,!8
         :32                                                      %! IC
         ]
     }
     \times 2/3 {
         
         % [I CelloMusicVoice measure 292]                        %! SM4
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         [
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         ]
     }
     \times 2/3 {
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         [
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         ]
     }
     \times 2/3 {
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         [
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         ]
     }
     \times 2/3 {
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         [
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         ]
     }
     \times 2/3 {
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         [
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         ]
     }
     \times 2/3 {
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         [
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         ]
     }
     \times 2/3 {
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         [
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         
-        eqf,8
+        eqf,!8
         :32                                                      %! IC
         ]
     }
@@ -6127,7 +6127,7 @@ I_CelloMusicVoice = {
     -\upbow                                                      %! IC
     \glissando                                                   %! SC
     
-    bf'8
+    bf'!8
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
     
@@ -6144,16 +6144,16 @@ I_CelloMusicVoice = {
     -\upbow                                                      %! IC
     \glissando                                                   %! SC
     
-    bf'4
+    bf'!4
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
     
-    ef'8
+    ef'!8
     -\upbow                                                      %! IC
     \glissando                                                   %! SC
     
     % [I CelloMusicVoice measure 297]                            %! SM4
-    bf'4
+    bf'!4
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
     
@@ -6161,16 +6161,16 @@ I_CelloMusicVoice = {
     -\upbow                                                      %! IC
     \glissando                                                   %! SC
     
-    cs'8
+    cs'!8
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
     
     % [I CelloMusicVoice measure 298]                            %! SM4
-    ef'4
+    ef'!4
     -\upbow                                                      %! IC
     \glissando                                                   %! SC
     
-    fs'4
+    fs'!4
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
     
@@ -6179,7 +6179,7 @@ I_CelloMusicVoice = {
     \glissando                                                   %! SC
     
     % [I CelloMusicVoice measure 299]                            %! SM4
-    bf4
+    bf!4
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
     
@@ -6191,7 +6191,7 @@ I_CelloMusicVoice = {
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
     
-    bf4
+    bf!4
     -\upbow                                                      %! IC
     
     % [I CelloMusicVoice measure 300]                            %! SM4
@@ -6246,18 +6246,18 @@ I_CelloMusicVoice = {
         e'''4
         -\staccatissimo                                          %! IC
         
-        cs'''4
+        cs'''!4
         -\staccatissimo                                          %! IC
         
-        bf'''8
+        bf'''!8
         -\staccatissimo                                          %! IC
         ~
     }
     \times 4/5 {
         
-        bf'''4.
+        bf'''!4.
         
-        af'''4
+        af'''!4
         -\staccatissimo                                          %! IC
     }
     

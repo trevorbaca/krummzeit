@@ -548,10 +548,10 @@ H_OboeMusicVoice = {
         
         % [H OboeMusicVoice measure 288]                         %! SM4
         \override TupletBracket.staff-padding = #2               %! OC1
-        ef''2.
+        ef''!2.
         \stopTrillSpan                                           %! SC
         
-        ef''2
+        ef''!2
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -564,7 +564,7 @@ H_OboeMusicVoice = {
     \times 7/5 {
         
         % [H OboeMusicVoice measure 290]                         %! SM4
-        ef''2.
+        ef''!2.
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -573,7 +573,7 @@ H_OboeMusicVoice = {
                         2
             }
         
-        ef''2
+        ef''!2
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2560,7 +2560,7 @@ H_PianoMusicVoice = {
         
         % [H PianoMusicVoice measure 289]                        %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        fs'''2.
+        fs'''!2.
         :32                                                      %! IC
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
@@ -2569,7 +2569,7 @@ H_PianoMusicVoice = {
                 (“Piano”)                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
             }                                                    %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
         
-        fs'''1
+        fs'''!1
         :32                                                      %! IC
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
@@ -2733,7 +2733,7 @@ H_PercussionMusicVoice = {
     %@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
         \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        fs''4
+        fs''!4
         :32                                                      %! IC
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {                                              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
@@ -2743,7 +2743,7 @@ H_PercussionMusicVoice = {
             }                                                    %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
-        fs''1.
+        fs''!1.
         :32                                                      %! IC
         \revert TupletBracket.staff-padding                      %! OC2
         
@@ -2784,7 +2784,7 @@ H_ViolinMusicVoice = {
         \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        df'2.
+        df'!2.
         :32                                                      %! IC
         \fff_poss                                                %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {
@@ -2819,7 +2819,7 @@ H_ViolinMusicVoice = {
                 Vn.                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
             }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         
-        df'2
+        df'!2
         :32                                                      %! IC
     }
     \times 2/3 {
@@ -2828,30 +2828,30 @@ H_ViolinMusicVoice = {
         \override NoteHead.style = #'harmonic                    %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         \makeRed                                                 %! SM14
-        af'4
+        af'!4
         \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
         \makeRed                                                 %! SM14
-        af'2
+        af'!2
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
     
     \makeRed                                                     %! SM14
-    af'4
+    af'!4
     \glissando                                                   %! SC
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     
-    cs'1
+    cs'!1
     ~
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/7 {
         
         % [H ViolinMusicVoice measure 284]                       %! SM4
-        cs'1
+        cs'!1
         \glissando                                               %! SC
         
         c'2.
@@ -2871,12 +2871,12 @@ H_ViolinMusicVoice = {
         f16
         \glissando                                               %! SC
         
-        bf'4
+        bf'!4
         \glissando                                               %! SC
     }
     \times 4/7 {
         
-        fs'4
+        fs'!4
         \glissando                                               %! SC
         
         b'8.
@@ -2887,7 +2887,7 @@ H_ViolinMusicVoice = {
         b'8
         \glissando                                               %! SC
         
-        af'4
+        af'!4
         \revert NoteHead.style                                   %! OC2
     }
     
@@ -2905,7 +2905,7 @@ H_ViolinMusicVoice = {
         \glissando                                               %! SC
         
         \makeRed                                                 %! SM14
-        ef''2
+        ef''!2
         :32                                                      %! IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2915,13 +2915,13 @@ H_ViolinMusicVoice = {
         
         % [H ViolinMusicVoice measure 289]                       %! SM4
         \makeRed                                                 %! SM14
-        ef''2.
+        ef''!2.
         :32                                                      %! IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
         \makeRed                                                 %! SM14
-        ef''2
+        ef''!2
         :32                                                      %! IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3031,21 +3031,21 @@ H_ViolaMusicVoice = {
         e2
         \glissando                                               %! SC
         
-        fs4.
+        fs!4.
         \glissando                                               %! SC
     }
     
     f4
     \glissando                                                   %! SC
     
-    af2
+    af!2
     ~
     \times 4/5 {
         
-        af8
+        af!8
         \glissando                                               %! SC
         
-        cs2
+        cs!2
         \glissando                                               %! SC
     }
     \times 4/7 {
@@ -3183,7 +3183,7 @@ H_CelloMusicVoice = {
         \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                               %! SC
         
-        bf,2
+        bf,!2
         \glissando                                               %! SC
     }
     \times 4/5 {
@@ -3205,7 +3205,7 @@ H_CelloMusicVoice = {
     \times 2/3 {
         
         % [H CelloMusicVoice measure 284]                        %! SM4
-        bf,4
+        bf,!4
         \glissando                                               %! SC
         
         g,2
@@ -3231,7 +3231,7 @@ H_CelloMusicVoice = {
         c8
         \glissando                                               %! SC
         
-        bf,4
+        bf,!4
         \revert NoteHead.style                                   %! OC2
     }
     
@@ -3249,7 +3249,7 @@ H_CelloMusicVoice = {
         \glissando                                               %! SC
         
         \makeRed                                                 %! SM14
-        eqf,2.
+        eqf,!2.
         :32                                                      %! IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3259,13 +3259,13 @@ H_CelloMusicVoice = {
         
         % [H CelloMusicVoice measure 289]                        %! SM4
         \makeRed                                                 %! SM14
-        eqf,2
+        eqf,!2
         :32                                                      %! IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
         \makeRed                                                 %! SM14
-        eqf,2.
+        eqf,!2.
         :32                                                      %! IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14

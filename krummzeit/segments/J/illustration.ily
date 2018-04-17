@@ -1569,7 +1569,7 @@ J_OboeMusicVoice = {
     \set Staff.forceClef = ##t                                   %! SM8:REAPPLIED_CLEF:SM33:SM37
     \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    cs'2.
+    cs'!2.
     \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {
         \column
@@ -1603,220 +1603,220 @@ J_OboeMusicVoice = {
             Ob.                                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 315]                             %! SM4
-    cs'2.
+    cs'!2.
     \repeatTie
     
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 316]                             %! SM4
-    cs'1
+    cs'!1
     \repeatTie
     
     % [J OboeMusicVoice measure 317]                             %! SM4
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 318]                             %! SM4
-    cs'2.
+    cs'!2.
     \repeatTie
     
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 319]                             %! SM4
-    cs'2.
+    cs'!2.
     \repeatTie
     
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 320]                             %! SM4
-    cs'1
+    cs'!1
     \repeatTie
     
     % [J OboeMusicVoice measure 321]                             %! SM4
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 322]                             %! SM4
-    cs'2.
+    cs'!2.
     \repeatTie
     
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 323]                             %! SM4
-    cs'2.
+    cs'!2.
     \repeatTie
     
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 324]                             %! SM4
-    cs'1
+    cs'!1
     \repeatTie
     
     % [J OboeMusicVoice measure 325]                             %! SM4
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 326]                             %! SM4
-    cs'2.
+    cs'!2.
     \repeatTie
     
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 327]                             %! SM4
-    cs'2.
+    cs'!2.
     \repeatTie
     
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 328]                             %! SM4
-    cs'1
+    cs'!1
     \repeatTie
     
     % [J OboeMusicVoice measure 329]                             %! SM4
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 330]                             %! SM4
-    cs'2.
+    cs'!2.
     \repeatTie
     
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 331]                             %! SM4
-    cs'2.
+    cs'!2.
     \repeatTie
     
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 332]                             %! SM4
-    cs'1
+    cs'!1
     \repeatTie
     
     % [J OboeMusicVoice measure 333]                             %! SM4
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 334]                             %! SM4
-    cs'2.
+    cs'!2.
     \repeatTie
     
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 335]                             %! SM4
-    cs'2.
+    cs'!2.
     \repeatTie
     
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 336]                             %! SM4
-    cs'1
+    cs'!1
     \repeatTie
     
     % [J OboeMusicVoice measure 337]                             %! SM4
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 338]                             %! SM4
-    cs'2.
+    cs'!2.
     \repeatTie
     
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 339]                             %! SM4
-    cs'2.
+    cs'!2.
     \repeatTie
     
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 340]                             %! SM4
-    cs'1
+    cs'!1
     \repeatTie
     
     % [J OboeMusicVoice measure 341]                             %! SM4
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 342]                             %! SM4
-    cs'2.
+    cs'!2.
     \repeatTie
     
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 343]                             %! SM4
-    cs'2.
+    cs'!2.
     \repeatTie
     
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 344]                             %! SM4
-    cs'1
+    cs'!1
     \repeatTie
     
     % [J OboeMusicVoice measure 345]                             %! SM4
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 346]                             %! SM4
-    cs'2.
+    cs'!2.
     \repeatTie
     
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 347]                             %! SM4
-    cs'2.
+    cs'!2.
     \repeatTie
     
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 348]                             %! SM4
-    cs'1
+    cs'!1
     \repeatTie
     
     % [J OboeMusicVoice measure 349]                             %! SM4
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 350]                             %! SM4
-    cs'2.
+    cs'!2.
     \repeatTie
     
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 351]                             %! SM4
-    cs'2.
+    cs'!2.
     \repeatTie
     
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 352]                             %! SM4
-    cs'1
+    cs'!1
     \repeatTie
     
     % [J OboeMusicVoice measure 353]                             %! SM4
-    cs'2
+    cs'!2
     \repeatTie
     
     % [J OboeMusicVoice measure 354]                             %! SM4
@@ -2182,7 +2182,7 @@ J_PianoMusicVoice = {
     \set Staff.forceClef = ##t                                   %! SM8:REAPPLIED_CLEF:SM33:SM37
     \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \fff                                                         %! SM8:REAPPLIED_DYNAMIC:SM37
     ^ \markup {
@@ -2217,336 +2217,336 @@ J_PianoMusicVoice = {
             Hpschd.                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 315]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 316]                            %! SM4
-    cs'''1
+    cs'''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 317]                            %! SM4
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 318]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 319]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 320]                            %! SM4
-    cs'''1
+    cs'''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 321]                            %! SM4
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 322]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 323]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 324]                            %! SM4
-    cs'''1
+    cs'''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 325]                            %! SM4
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 326]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 327]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 328]                            %! SM4
-    cs'''1
+    cs'''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 329]                            %! SM4
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 330]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 331]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 332]                            %! SM4
-    cs'''1
+    cs'''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 333]                            %! SM4
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 334]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 335]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 336]                            %! SM4
-    cs'''1
+    cs'''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 337]                            %! SM4
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 338]                            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \fff_poss                                                    %! SM8:EXPLICIT_DYNAMIC:IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 339]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 340]                            %! SM4
-    cs'''1
+    cs'''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 341]                            %! SM4
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 342]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 343]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 344]                            %! SM4
-    cs'''1
+    cs'''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 345]                            %! SM4
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 346]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 347]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 348]                            %! SM4
-    cs'''1
+    cs'''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 349]                            %! SM4
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 350]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 351]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 352]                            %! SM4
-    cs'''1
+    cs'''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 353]                            %! SM4
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 354]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 355]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 356]                            %! SM4
-    cs'''1
+    cs'''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 357]                            %! SM4
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 358]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 359]                            %! SM4
-    cs'''2.
+    cs'''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 360]                            %! SM4
-    cs'''1
+    cs'''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PianoMusicVoice measure 361]                            %! SM4
-    cs'''2
+    cs'''!2
     :32                                                          %! IC
     \repeatTie
     
@@ -2587,7 +2587,7 @@ J_PercussionMusicVoice = {
 %@% \override Staff.Clef.color = ##f                             %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set Staff.forceClef = ##t                                   %! SM8:EXPLICIT_CLEF:SM33:IC
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {
@@ -2622,334 +2622,334 @@ J_PercussionMusicVoice = {
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)      %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 315]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 316]                       %! SM4
-    cs''1
+    cs''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 317]                       %! SM4
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 318]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 319]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 320]                       %! SM4
-    cs''1
+    cs''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 321]                       %! SM4
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 322]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 323]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 324]                       %! SM4
-    cs''1
+    cs''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 325]                       %! SM4
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 326]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 327]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 328]                       %! SM4
-    cs''1
+    cs''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 329]                       %! SM4
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 330]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 331]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 332]                       %! SM4
-    cs''1
+    cs''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 333]                       %! SM4
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 334]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 335]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 336]                       %! SM4
-    cs''1
+    cs''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 337]                       %! SM4
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 338]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 339]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 340]                       %! SM4
-    cs''1
+    cs''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 341]                       %! SM4
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 342]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 343]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 344]                       %! SM4
-    cs''1
+    cs''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 345]                       %! SM4
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 346]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 347]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 348]                       %! SM4
-    cs''1
+    cs''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 349]                       %! SM4
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 350]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 351]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 352]                       %! SM4
-    cs''1
+    cs''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 353]                       %! SM4
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 354]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 355]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 356]                       %! SM4
-    cs''1
+    cs''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 357]                       %! SM4
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 358]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 359]                       %! SM4
-    cs''2.
+    cs''!2.
     :32                                                          %! IC
     \repeatTie
     
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 360]                       %! SM4
-    cs''1
+    cs''!1
     :32                                                          %! IC
     \repeatTie
     
     % [J PercussionMusicVoice measure 361]                       %! SM4
-    cs''2
+    cs''!2
     :32                                                          %! IC
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                     %! OC2
@@ -3036,7 +3036,7 @@ J_ViolinMusicVoice = {
         f'''1
         -\staccatissimo                                          %! IC
         
-        cs'''4
+        cs'''!4
         -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -3059,7 +3059,7 @@ J_ViolinMusicVoice = {
         
         r4
         
-        ef'''4
+        ef'''!4
         -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -3105,7 +3105,7 @@ J_ViolinMusicVoice = {
         % [J ViolinMusicVoice measure 320]                       %! SM4
         r1
         
-        ef'''4
+        ef'''!4
         -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -3131,7 +3131,7 @@ J_ViolinMusicVoice = {
         % [J ViolinMusicVoice measure 323]                       %! SM4
         r1
         
-        cs'''2
+        cs'''!2
         -\staccatissimo                                          %! IC
     }
     \times 2/3 {
@@ -3178,7 +3178,7 @@ J_ViolinMusicVoice = {
         e'''1
         -\staccatissimo                                          %! IC
         
-        ef'''4
+        ef'''!4
         -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -3194,7 +3194,7 @@ J_ViolinMusicVoice = {
     \times 5/7 {
         
         % [J ViolinMusicVoice measure 330]                       %! SM4
-        cs'''4
+        cs'''!4
         -\staccatissimo                                          %! IC
         
         d'''1.
@@ -3245,7 +3245,7 @@ J_ViolinMusicVoice = {
         e'''1
         -\staccatissimo                                          %! IC
         
-        ef'''2
+        ef'''!2
         -\staccatissimo                                          %! IC
     }
     \times 4/5 {
@@ -3268,7 +3268,7 @@ J_ViolinMusicVoice = {
         % [J ViolinMusicVoice measure 338]                       %! SM4
         r2.
         
-        cs'''1
+        cs'''!1
         -\staccatissimo                                          %! IC
         
         d'''2
@@ -3306,7 +3306,7 @@ J_ViolinMusicVoice = {
         % [J ViolinMusicVoice measure 341]                       %! SM4
         r4
         
-        ef'''2
+        ef'''!2
         -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -3334,7 +3334,7 @@ J_ViolinMusicVoice = {
         % [J ViolinMusicVoice measure 344]                       %! SM4
         r4
         
-        cs'''2
+        cs'''!2
         -\staccatissimo                                          %! IC
         
         d'''2.
@@ -3388,13 +3388,13 @@ J_ViolinMusicVoice = {
     \times 5/7 {
         
         % [J ViolinMusicVoice measure 350]                       %! SM4
-        ef'''2
+        ef'''!2
         -\staccatissimo                                          %! IC
         
         f'''4
         -\staccatissimo                                          %! IC
         
-        cs'''4
+        cs'''!4
         -\staccatissimo                                          %! IC
         
         d'''2.
@@ -3488,7 +3488,7 @@ J_ViolaMusicVoice = {
     %@% \override Staff.Clef.color = ##f                         %! SM7:REDUNDANT_CLEF_COLOR_CANCELLATION:IC
         \set Staff.forceClef = ##t                               %! SM8:REDUNDANT_CLEF:SM33:IC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        ef'''\breve
+        ef'''!\breve
         -\staccatissimo                                          %! IC
         \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {
@@ -3561,7 +3561,7 @@ J_ViolaMusicVoice = {
     \times 2/3 {
         
         % [J ViolaMusicVoice measure 317]                        %! SM4
-        cs'''2.
+        cs'''!2.
         -\staccatissimo                                          %! IC
     }
     

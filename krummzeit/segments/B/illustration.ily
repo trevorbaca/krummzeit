@@ -2063,7 +2063,7 @@ B_OboeMusicVoice = {
                 Ob.                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
             }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         
-        ef''4
+        ef''!4
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2106,11 +2106,11 @@ B_OboeMusicVoice = {
     % [B OboeMusicVoice measure 90]                              %! SM4
     b''8
     
-    ef''4
+    ef''!4
     \stopTrillSpan                                               %! SC
     \startTrillSpan                                              %! SC
     
-    ef''4
+    ef''!4
     \stopTrillSpan                                               %! SC
     ^ \markup {
         \override
@@ -2121,7 +2121,7 @@ B_OboeMusicVoice = {
         }
     \startTrillSpan                                              %! SC
     
-    ef''8
+    ef''!8
     \stopTrillSpan                                               %! SC
     ^ \markup {
         \override
@@ -2133,7 +2133,7 @@ B_OboeMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
-        ef'''16
+        ef'''!16
         [
         ^ \markup {
             \override
@@ -2179,7 +2179,7 @@ B_OboeMusicVoice = {
         % [B OboeMusicVoice measure 91]                          %! SM4
         d'''4.
         
-        cs''2
+        cs''!2
         \stopTrillSpan                                           %! SC
         ^ \markup {
             \override
@@ -2190,13 +2190,13 @@ B_OboeMusicVoice = {
             }
         \startTrillSpan                                          %! SC
         
-        cs''8
+        cs''!8
         \stopTrillSpan                                           %! SC
     }
     \times 2/3 {
         
         % [B OboeMusicVoice measure 92]                          %! SM4
-        cs''4
+        cs''!4
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2206,7 +2206,7 @@ B_OboeMusicVoice = {
             }
         \startTrillSpan                                          %! SC
         
-        cs''8
+        cs''!8
         ~
         \stopTrillSpan                                           %! SC
         ^ \markup {
@@ -2221,7 +2221,7 @@ B_OboeMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
-        cs''8
+        cs''!8
         
         b''4.
         ~
@@ -2268,7 +2268,7 @@ B_OboeMusicVoice = {
             }
         \startTrillSpan                                          %! SC
         
-        bf''8
+        bf''!8
         ~
         \stopTrillSpan                                           %! SC
         ^ \markup {
@@ -2281,7 +2281,7 @@ B_OboeMusicVoice = {
         \startTrillSpan                                          %! SC
     }
     
-    bf''8
+    bf''!8
     
     % [B OboeMusicVoice measure 95]                              %! SM4
     R1 * 1/4
@@ -2352,7 +2352,7 @@ B_OboeMusicVoice = {
             }
         \startTrillSpan                                          %! SC
         
-        ef'''8
+        ef'''!8
         ~
         \stopTrillSpan                                           %! SC
         ^ \markup {
@@ -2367,7 +2367,7 @@ B_OboeMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
-        ef'''8
+        ef'''!8
         
         c'''2
         \stopTrillSpan                                           %! SC
@@ -2409,7 +2409,7 @@ B_OboeMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
-        cs''16
+        cs''!16
         [
         ^ \markup {
             \override
@@ -2419,7 +2419,7 @@ B_OboeMusicVoice = {
                         1
             }
         
-        ef''16
+        ef''!16
         ]
         
         f'4.
@@ -2537,7 +2537,7 @@ B_OboeMusicVoice = {
                         2
             }
         
-        fs''16
+        fs''!16
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2549,7 +2549,7 @@ B_OboeMusicVoice = {
         f'16
         ]
         
-        cs''4.
+        cs''!4.
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2567,7 +2567,7 @@ B_OboeMusicVoice = {
     \times 3/4 {
         
         % [B OboeMusicVoice measure 118]                         %! SM4
-        bf''8
+        bf''!8
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2576,7 +2576,7 @@ B_OboeMusicVoice = {
                         2
             }
         
-        bf''4
+        bf''!4
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2586,7 +2586,7 @@ B_OboeMusicVoice = {
             }
         \startTrillSpan                                          %! SC
         
-        bf''8
+        bf''!8
         ~
         \stopTrillSpan                                           %! SC
         \startTrillSpan                                          %! SC
@@ -2594,9 +2594,9 @@ B_OboeMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
-        bf''8
+        bf''!8
         
-        bf''4.
+        bf''!4.
         \stopTrillSpan                                           %! SC
         ^ \markup {
             \override
@@ -2624,7 +2624,7 @@ B_OboeMusicVoice = {
                         2
             }
         
-        cs'''4
+        cs'''!4
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2634,7 +2634,7 @@ B_OboeMusicVoice = {
             }
         \startTrillSpan                                          %! SC
         
-        ef'''8
+        ef'''!8
         ~
         \stopTrillSpan                                           %! SC
         \startTrillSpan                                          %! SC
@@ -2642,7 +2642,7 @@ B_OboeMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
         
-        ef'''8
+        ef'''!8
         
         f'''2
         \stopTrillSpan                                           %! SC
@@ -2728,7 +2728,7 @@ B_OboeMusicVoice = {
         \stopTrillSpan                                           %! SC
         \startTrillSpan                                          %! SC
         
-        bf''2
+        bf''!2
         \stopTrillSpan                                           %! SC
         ^ \markup {
             \override
@@ -2751,7 +2751,7 @@ B_OboeMusicVoice = {
     }
     
     % [B OboeMusicVoice measure 122]                             %! SM4
-    fs''8
+    fs''!8
     ~
     ^ \markup {
         \override
@@ -2764,13 +2764,13 @@ B_OboeMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
-        fs''8
+        fs''!8
         
         f'4
         \stopTrillSpan                                           %! SC
         \startTrillSpan                                          %! SC
         
-        cs''8
+        cs''!8
         ~
         \stopTrillSpan                                           %! SC
         ^ \markup {
@@ -2784,11 +2784,11 @@ B_OboeMusicVoice = {
     }
     \times 2/3 {
         
-        cs''4.
+        cs''!4.
     }
     
     % [B OboeMusicVoice measure 123]                             %! SM4
-    cs''4
+    cs''!4
     \stopTrillSpan                                               %! SC
     ^ \markup {
         \override
@@ -2799,7 +2799,7 @@ B_OboeMusicVoice = {
         }
     \startTrillSpan                                              %! SC
     
-    cs'''4
+    cs'''!4
     \stopTrillSpan                                               %! SC
     ^ \markup {
         \override
@@ -2810,7 +2810,7 @@ B_OboeMusicVoice = {
         }
     \startTrillSpan                                              %! SC
     
-    cs'''8
+    cs'''!8
     \stopTrillSpan                                               %! SC
     
     % [B OboeMusicVoice measure 124]                             %! SM4
@@ -2902,7 +2902,7 @@ B_ClarinetMusicVoice = {
     \set Staff.forceClef = ##t                                   %! SM8:REAPPLIED_CLEF:SM33:SM37
     \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-    cs''4.
+    cs''!4.
     \f                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
     \glissando                                                   %! SC
     ^ \markup {
@@ -2965,29 +2965,29 @@ B_ClarinetMusicVoice = {
                 }                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     
-    btqs'4.
+    btqs'!4.
     \glissando                                                   %! SC
     
     % [B ClarinetMusicVoice measure 90]                          %! SM4
     d''4.
     \glissando                                                   %! SC
     
-    ctqs''4.
+    ctqs''!4.
     \glissando                                                   %! SC
     
-    bqs'4.
+    bqs'!4.
     \glissando                                                   %! SC
     
     a'4.
     \glissando                                                   %! SC
     
-    bqs'4.
+    bqs'!4.
     \glissando                                                   %! SC
     
-    cs''4.
+    cs''!4.
     \glissando                                                   %! SC
     
-    btqs'4.
+    btqs'!4.
     \glissando                                                   %! SC
     
     d''4.
@@ -3055,38 +3055,38 @@ B_ClarinetMusicVoice = {
     \f                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     \glissando                                                   %! SC
     
-    ctqs''4.
+    ctqs''!4.
     \glissando                                                   %! SC
     
     e''4.
     \glissando                                                   %! SC
     
     % [B ClarinetMusicVoice measure 113]                         %! SM4
-    dqs''4.
+    dqs''!4.
     \glissando                                                   %! SC
     
-    ctqs''4.
+    ctqs''!4.
     \glissando                                                   %! SC
     
     b'4.
     \glissando                                                   %! SC
     
-    ctqs''4.
+    ctqs''!4.
     \glissando                                                   %! SC
     
     d''4.
     \glissando                                                   %! SC
     
-    ctqs''4.
+    ctqs''!4.
     \glissando                                                   %! SC
     
     e''4.
     \glissando                                                   %! SC
     
-    dqs''4.
+    dqs''!4.
     \glissando                                                   %! SC
     
-    ctqs''4
+    ctqs''!4
     
     % [B ClarinetMusicVoice measure 117]                         %! SM4
     R1 * 1/4
@@ -3095,7 +3095,7 @@ B_ClarinetMusicVoice = {
     b'4.
     \glissando                                                   %! SC
     
-    ctqs''4.
+    ctqs''!4.
     
     % [B ClarinetMusicVoice measure 119]                         %! SM4
     R1 * 1/4
@@ -3104,37 +3104,37 @@ B_ClarinetMusicVoice = {
     e''4.
     \glissando                                                   %! SC
     
-    btqs'4.
+    btqs'!4.
     \glissando                                                   %! SC
     
-    fs''4.
+    fs''!4.
     \glissando                                                   %! SC
     
-    eqs''4.
+    eqs''!4.
     \glissando                                                   %! SC
     
-    dqs''4.
+    dqs''!4.
     \glissando                                                   %! SC
     
-    cs''4.
+    cs''!4.
     \glissando                                                   %! SC
     
-    dqs''4.
+    dqs''!4.
     \glissando                                                   %! SC
     
     e''4.
     \glissando                                                   %! SC
     
-    btqs'4.
+    btqs'!4.
     \glissando                                                   %! SC
     
-    fs''4.
+    fs''!4.
     \glissando                                                   %! SC
     
-    eqs''4.
+    eqs''!4.
     \glissando                                                   %! SC
     
-    dqs''8
+    dqs''!8
     
     % [B ClarinetMusicVoice measure 124]                         %! SM4
     R1 * 9/8
@@ -3272,15 +3272,15 @@ B_PianoMusicVoice = {
         r16
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        cs'''16
+        cs'''!16
         -\staccatissimo                                          %! IC
         \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC
         [
         
-        cs'''16
+        cs'''!16
         -\staccatissimo                                          %! IC
         
-        cs'''8
+        cs'''!8
         -\staccatissimo                                          %! IC
         ]
     }
@@ -3289,17 +3289,17 @@ B_PianoMusicVoice = {
         
         r8
         
-        cs'''8
+        cs'''!8
         -\staccatissimo                                          %! IC
         [
         
-        cs'''8
+        cs'''!8
         -\staccatissimo                                          %! IC
         ]
         
         r4
         
-        cs'''4
+        cs'''!4
         -\staccatissimo                                          %! IC
     }
     
@@ -3309,30 +3309,30 @@ B_PianoMusicVoice = {
     % [B PianoMusicVoice measure 104]                            %! SM4
     r4
     
-    cs'''4
+    cs'''!4
     -\staccatissimo                                              %! IC
     
-    cs'''4
+    cs'''!4
     -\staccatissimo                                              %! IC
     
-    cs'''2
+    cs'''!2
     -\staccatissimo                                              %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
         r8
         
-        cs'''8
+        cs'''!8
         -\staccatissimo                                          %! IC
         [
         
-        cs'''8
+        cs'''!8
         -\staccatissimo                                          %! IC
         ]
         
         r4
         
-        cs'''4
+        cs'''!4
         -\staccatissimo                                          %! IC
     }
     
@@ -3343,14 +3343,14 @@ B_PianoMusicVoice = {
         % [B PianoMusicVoice measure 106]                        %! SM4
         r16
         
-        cs'''16
+        cs'''!16
         -\staccatissimo                                          %! IC
         [
         
-        cs'''16
+        cs'''!16
         -\staccatissimo                                          %! IC
         
-        cs'''8
+        cs'''!8
         -\staccatissimo                                          %! IC
         ]
     }
@@ -3359,17 +3359,17 @@ B_PianoMusicVoice = {
         
         r8
         
-        cs'''8
+        cs'''!8
         -\staccatissimo                                          %! IC
         [
         
-        cs'''8
+        cs'''!8
         -\staccatissimo                                          %! IC
         ]
         
         r4
         
-        cs'''4
+        cs'''!4
         -\staccatissimo                                          %! IC
     }
     
@@ -3380,32 +3380,32 @@ B_PianoMusicVoice = {
         % [B PianoMusicVoice measure 108]                        %! SM4
         r8
         
-        cs'''8
+        cs'''!8
         -\staccatissimo                                          %! IC
         [
         
-        cs'''8
+        cs'''!8
         -\staccatissimo                                          %! IC
         ]
         
-        cs'''4
+        cs'''!4
         -\staccatissimo                                          %! IC
     }
     \times 4/7 {
         
         r16
         
-        cs'''16
+        cs'''!16
         -\staccatissimo                                          %! IC
         [
         
-        cs'''16
+        cs'''!16
         -\staccatissimo                                          %! IC
         ]
         
         r8
         
-        cs'''8
+        cs'''!8
         -\staccatissimo                                          %! IC
     }
     
@@ -3435,28 +3435,28 @@ B_PianoMusicVoice = {
         r16
         
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        cs'''16
+        cs'''!16
         \ff                                                      %! SM8:REDUNDANT_DYNAMIC:IC
         [
         
-        cs'''16
+        cs'''!16
         
-        cs'''8
+        cs'''!8
         ]
     }
     \times 4/7 {
         
         r8
         
-        cs'''8
+        cs'''!8
         [
         
-        cs'''8
+        cs'''!8
         ]
         
         r4
         
-        cs'''4
+        cs'''!4
     }
     
     % [B PianoMusicVoice measure 117]                            %! SM4
@@ -3466,27 +3466,27 @@ B_PianoMusicVoice = {
         % [B PianoMusicVoice measure 118]                        %! SM4
         r8
         
-        cs'''8
+        cs'''!8
         [
         
-        cs'''8
+        cs'''!8
         ]
         
-        cs'''4
+        cs'''!4
     }
     \times 4/7 {
         
         r16
         
-        cs'''16
+        cs'''!16
         [
         
-        cs'''16
+        cs'''!16
         ]
         
         r8
         
-        cs'''8
+        cs'''!8
     }
     
     % [B PianoMusicVoice measure 119]                            %! SM4
@@ -3496,81 +3496,81 @@ B_PianoMusicVoice = {
         % [B PianoMusicVoice measure 120]                        %! SM4
         r8
         
-        cs'''8
+        cs'''!8
         [
         
-        cs'''8
+        cs'''!8
         ]
         
-        cs'''4
+        cs'''!4
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
         r8
         
-        cs'''8
+        cs'''!8
         [
         
-        cs'''8
+        cs'''!8
         ]
         
         r4
         
-        cs'''4
+        cs'''!4
     }
     \times 4/5 {
         
         % [B PianoMusicVoice measure 121]                        %! SM4
         r8
         
-        cs'''8
+        cs'''!8
         [
         
-        cs'''8
+        cs'''!8
         ]
         
-        cs'''4
+        cs'''!4
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/14 {
         
         r4
         
-        cs'''4
+        cs'''!4
         
-        cs'''4
+        cs'''!4
         
         r2
         
-        cs'''2
+        cs'''!2
     }
     \times 4/5 {
         
         % [B PianoMusicVoice measure 122]                        %! SM4
         r8
         
-        cs'''8
+        cs'''!8
         [
         
-        cs'''8
+        cs'''!8
         ]
         
-        cs'''4
+        cs'''!4
     }
     \times 4/7 {
         
         r16
         
-        cs'''16
+        cs'''!16
         [
         
-        cs'''16
+        cs'''!16
         ]
         
         r8
         
-        cs'''8
+        cs'''!8
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -3578,27 +3578,27 @@ B_PianoMusicVoice = {
         % [B PianoMusicVoice measure 123]                        %! SM4
         r8
         
-        cs'''8
+        cs'''!8
         [
         
-        cs'''8
+        cs'''!8
         ]
         
-        cs'''4
+        cs'''!4
     }
     \times 4/7 {
         
         r16
         
-        cs'''16
+        cs'''!16
         [
         
-        cs'''16
+        cs'''!16
         ]
         
         r8
         
-        cs'''8
+        cs'''!8
         \revert Beam.positions                                   %! OC2
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
@@ -3761,32 +3761,32 @@ B_PercussionMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)      %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    cs''8
+    cs''!8
     -\staccatissimo                                              %! IC
     \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC
     [
     
-    cs''8
+    cs''!8
     -\staccatissimo                                              %! IC
     ]
     
-    cs''4
+    cs''!4
     -\staccatissimo                                              %! IC
     \times 4/7 {
         
         r16
         
-        cs''16
+        cs''!16
         -\staccatissimo                                          %! IC
         [
         
-        cs''16
+        cs''!16
         -\staccatissimo                                          %! IC
         ]
         
         r8
         
-        cs''8
+        cs''!8
         -\staccatissimo                                          %! IC
     }
     
@@ -3798,13 +3798,13 @@ B_PercussionMusicVoice = {
         % [B PercussionMusicVoice measure 104]                   %! SM4
         r4
         
-        cs''4
+        cs''!4
         -\staccatissimo                                          %! IC
         
-        cs''4
+        cs''!4
         -\staccatissimo                                          %! IC
         
-        cs''2
+        cs''!2
         -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -3812,15 +3812,15 @@ B_PercussionMusicVoice = {
         
         r4
         
-        cs''4
+        cs''!4
         -\staccatissimo                                          %! IC
         
-        cs''4
+        cs''!4
         -\staccatissimo                                          %! IC
         
         r2
         
-        cs''2
+        cs''!2
         -\staccatissimo                                          %! IC
     }
     
@@ -3832,30 +3832,30 @@ B_PercussionMusicVoice = {
         % [B PercussionMusicVoice measure 106]                   %! SM4
         r4
         
-        cs''4
+        cs''!4
         -\staccatissimo                                          %! IC
         
-        cs''4
+        cs''!4
         -\staccatissimo                                          %! IC
         
-        cs''2
+        cs''!2
         -\staccatissimo                                          %! IC
     }
     \times 4/7 {
         
         r16
         
-        cs''16
+        cs''!16
         -\staccatissimo                                          %! IC
         [
         
-        cs''16
+        cs''!16
         -\staccatissimo                                          %! IC
         ]
         
         r8
         
-        cs''8
+        cs''!8
         -\staccatissimo                                          %! IC
     }
     
@@ -3866,14 +3866,14 @@ B_PercussionMusicVoice = {
         % [B PercussionMusicVoice measure 108]                   %! SM4
         r16
         
-        cs''16
+        cs''!16
         -\staccatissimo                                          %! IC
         [
         
-        cs''16
+        cs''!16
         -\staccatissimo                                          %! IC
         
-        cs''8
+        cs''!8
         -\staccatissimo                                          %! IC
         ]
     }
@@ -3881,17 +3881,17 @@ B_PercussionMusicVoice = {
         
         r8
         
-        cs''8
+        cs''!8
         -\staccatissimo                                          %! IC
         [
         
-        cs''8
+        cs''!8
         -\staccatissimo                                          %! IC
         ]
         
         r4
         
-        cs''4
+        cs''!4
         -\staccatissimo                                          %! IC
         \revert Beam.positions                                   %! OC2
         \revert DynamicLineSpanner.staff-padding                 %! OC2
@@ -3991,28 +3991,28 @@ B_PercussionMusicVoice = {
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        cs''8
+        cs''!8
         \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC
         [
         
-        cs''8
+        cs''!8
         ]
         
-        cs''4
+        cs''!4
     }
     \times 4/7 {
         
         r16
         
-        cs''16
+        cs''!16
         [
         
-        cs''16
+        cs''!16
         ]
         
         r8
         
-        cs''8
+        cs''!8
     }
     
     % [B PercussionMusicVoice measure 117]                       %! SM4
@@ -4022,27 +4022,27 @@ B_PercussionMusicVoice = {
         % [B PercussionMusicVoice measure 118]                   %! SM4
         r16
         
-        cs''16
+        cs''!16
         [
         
-        cs''16
+        cs''!16
         
-        cs''8
+        cs''!8
         ]
     }
     \times 4/7 {
         
         r8
         
-        cs''8
+        cs''!8
         [
         
-        cs''8
+        cs''!8
         ]
         
         r4
         
-        cs''4
+        cs''!4
     }
     
     % [B PercussionMusicVoice measure 119]                       %! SM4
@@ -4053,25 +4053,25 @@ B_PercussionMusicVoice = {
         % [B PercussionMusicVoice measure 120]                   %! SM4
         r4
         
-        cs''4
+        cs''!4
         
-        cs''4
+        cs''!4
         
-        cs''2
+        cs''!2
     }
     \times 4/7 {
         
         r8
         
-        cs''8
+        cs''!8
         [
         
-        cs''8
+        cs''!8
         ]
         
         r4
         
-        cs''4
+        cs''!4
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/10 {
@@ -4079,25 +4079,25 @@ B_PercussionMusicVoice = {
         % [B PercussionMusicVoice measure 121]                   %! SM4
         r4
         
-        cs''4
+        cs''!4
         
-        cs''4
+        cs''!4
         
-        cs''2
+        cs''!2
     }
     \times 4/7 {
         
         r8
         
-        cs''8
+        cs''!8
         [
         
-        cs''8
+        cs''!8
         ]
         
         r4
         
-        cs''4
+        cs''!4
         \revert Beam.positions                                   %! OC2
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
@@ -4399,7 +4399,7 @@ B_ViolinMusicVoice = {
         \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        af''8
+        af''!8
         \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
             \with-color                                          %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
@@ -4421,7 +4421,7 @@ B_ViolinMusicVoice = {
         
         c''8
         
-        cs''2
+        cs''!2
         \stopTrillSpan                                           %! SC
         \startTrillSpan                                          %! SC
         
@@ -4434,29 +4434,29 @@ B_ViolinMusicVoice = {
     % [B ViolinMusicVoice measure 111]                           %! SM4
     a''8
     
-    aqf''4
+    aqf''!4
     \stopTrillSpan                                               %! SC
     \startTrillSpan                                              %! SC
     
     a'8
     \stopTrillSpan                                               %! SC
     
-    aqs''16
+    aqs''!16
     [
     
     g''16
     ]
     
     % [B ViolinMusicVoice measure 112]                           %! SM4
-    af''4
+    af''!4
     ~
     \startTrillSpan                                              %! SC
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/10 {
         
-        af''4
+        af''!4
         
-        bf''2
+        bf''!2
         \stopTrillSpan                                           %! SC
         \startTrillSpan                                          %! SC
         
@@ -4467,7 +4467,7 @@ B_ViolinMusicVoice = {
     \times 2/3 {
         
         % [B ViolinMusicVoice measure 113]                       %! SM4
-        bqs''8
+        bqs''!8
         \stopTrillSpan                                           %! SC
         
         b''4
@@ -4476,41 +4476,41 @@ B_ViolinMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
-        bqf''4
+        bqf''!4
         \stopTrillSpan                                           %! SC
         \startTrillSpan                                          %! SC
         
-        cs''4
+        cs''!4
         ~
         \stopTrillSpan                                           %! SC
         \startTrillSpan                                          %! SC
     }
     
-    cs''4
+    cs''!4
     
-    cqs''4
+    cqs''!4
     \stopTrillSpan                                               %! SC
     \startTrillSpan                                              %! SC
     
-    cs'''8
+    cs'''!8
     ~
     \stopTrillSpan                                               %! SC
     \startTrillSpan                                              %! SC
     \times 4/5 {
         
         % [B ViolinMusicVoice measure 114]                       %! SM4
-        cs'''8
+        cs'''!8
         [
         
-        ctqs'''8
+        ctqs'''!8
         \stopTrillSpan                                           %! SC
         
         d'''16
         
-        ef'''16
+        ef'''!16
         ]
         
-        af''4
+        af''!4
         ~
         \startTrillSpan                                          %! SC
     }
@@ -4518,7 +4518,7 @@ B_ViolinMusicVoice = {
     \times 3/5 {
         
         % [B ViolinMusicVoice measure 115]                       %! SM4
-        af''4
+        af''!4
         
         a''4.
         ~
@@ -4538,13 +4538,13 @@ B_ViolinMusicVoice = {
         % [B ViolinMusicVoice measure 116]                       %! SM4
         c'''4
         
-        cqs''8
+        cqs''!8
         \stopTrillSpan                                           %! SC
         
         c''4
         \startTrillSpan                                          %! SC
         
-        cqf''4
+        cqf''!4
         \stopTrillSpan                                           %! SC
         \startTrillSpan                                          %! SC
         \revert Beam.positions                                   %! OC2
@@ -4577,7 +4577,7 @@ B_ViolinMusicVoice = {
     % [B ViolinMusicVoice measure 124]                           %! SM4
     \override DynamicLineSpanner.staff-padding = #'6             %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    ftqs1.
+    ftqs!1.
     \glissando                                                   %! SC
     \<                                                           %! HC1
     \pp                                                          %! HC1
@@ -4602,14 +4602,14 @@ B_ViolinMusicVoice = {
     g1
     \glissando                                                   %! SC
     
-    ftqs\breve
+    ftqs!\breve
     \glissando                                                   %! SC
     
     g1.
     \glissando                                                   %! SC
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    ftqs2
+    ftqs!2
     \fff                                                         %! HC1
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     
@@ -4712,7 +4712,7 @@ B_ViolaMusicVoice = {
                     "molto flautando"                            %! IC
             }                                                    %! IC
         
-        dtqs8
+        dtqs!8
     }
     
     % [B ViolaMusicVoice measure 95]                             %! SM4
@@ -4724,7 +4724,7 @@ B_ViolaMusicVoice = {
         f4
         \glissando                                               %! SC
         
-        eqs1
+        eqs!1
     }
     
     % [B ViolaMusicVoice measure 97]                             %! SM4
@@ -4733,7 +4733,7 @@ B_ViolaMusicVoice = {
     \times 4/3 {
         
         % [B ViolaMusicVoice measure 98]                         %! SM4
-        dqs2
+        dqs!2
         \glissando                                               %! SC
         
         c4
@@ -4745,7 +4745,7 @@ B_ViolaMusicVoice = {
     \times 7/5 {
         
         % [B ViolaMusicVoice measure 100]                        %! SM4
-        dqs8
+        dqs!8
         \glissando                                               %! SC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -4760,7 +4760,7 @@ B_ViolaMusicVoice = {
         
         % [B ViolaMusicVoice measure 102]                        %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-        dtqs2
+        dtqs!2
         \glissando                                               %! SC
         \>                                                       %! HC1
         \ff                                                      %! HC1
@@ -4784,38 +4784,38 @@ B_ViolaMusicVoice = {
         f4
         \glissando                                               %! SC
         
-        eqs1
+        eqs!1
         ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
         % [B ViolaMusicVoice measure 105]                        %! SM4
-        eqs4
+        eqs!4
         ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/3 {
         
         % [B ViolaMusicVoice measure 106]                        %! SM4
-        eqs2
+        eqs!2
         \glissando                                               %! SC
         
-        dqs4
+        dqs!4
         ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
         % [B ViolaMusicVoice measure 107]                        %! SM4
-        dqs4
+        dqs!4
         ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
         
         % [B ViolaMusicVoice measure 108]                        %! SM4
-        dqs8
+        dqs!8
         \glissando                                               %! SC
         
         c2
@@ -4835,14 +4835,14 @@ B_ViolaMusicVoice = {
         c2
         \glissando                                               %! SC
         
-        dqs4
+        dqs!4
         ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/4 {
         
         % [B ViolaMusicVoice measure 111]                        %! SM4
-        dqs2
+        dqs!2
         \revert Beam.positions                                   %! OC2
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
@@ -4875,7 +4875,7 @@ B_ViolaMusicVoice = {
     % [B ViolaMusicVoice measure 120]                            %! SM4
     \override DynamicLineSpanner.staff-padding = #'5             %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    btqs,1
+    btqs,!1
     \glissando                                                   %! SC
     \<                                                           %! HC1
     \pp                                                          %! HC1
@@ -4900,24 +4900,24 @@ B_ViolaMusicVoice = {
     c\breve
     \glissando                                                   %! SC
     
-    bqs,1.
+    bqs,!1.
     \glissando                                                   %! SC
     
-    cqs1
+    cqs!1
     \glissando                                                   %! SC
     
-    btqs,\breve
+    btqs,!\breve
     \glissando                                                   %! SC
     
     c1.
     \glissando                                                   %! SC
     
     % [B ViolaMusicVoice measure 129]                            %! SM4
-    bqs,1
+    bqs,!1
     \glissando                                                   %! SC
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    cqs2.
+    cqs!2.
     \fff                                                         %! HC1
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     
@@ -5017,7 +5017,7 @@ B_CelloMusicVoice = {
                     "molto flautando"                            %! IC
             }                                                    %! IC
         
-        ctqs,4
+        ctqs,!4
     }
     
     % [B CelloMusicVoice measure 95]                             %! SM4
@@ -5029,7 +5029,7 @@ B_CelloMusicVoice = {
         e,1
         \glissando                                               %! SC
         
-        dqs,2
+        dqs,!2
     }
     
     % [B CelloMusicVoice measure 97]                             %! SM4
@@ -5038,7 +5038,7 @@ B_CelloMusicVoice = {
     \times 8/5 {
         
         % [B CelloMusicVoice measure 98]                         %! SM4
-        cqs,8
+        cqs,!8
         \glissando                                               %! SC
         
         b,,2
@@ -5050,7 +5050,7 @@ B_CelloMusicVoice = {
     \times 7/6 {
         
         % [B CelloMusicVoice measure 100]                        %! SM4
-        dqs,2
+        dqs,!2
         \glissando                                               %! SC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -5065,7 +5065,7 @@ B_CelloMusicVoice = {
         
         % [B CelloMusicVoice measure 102]                        %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-        ctqs,8
+        ctqs,!8
         \glissando                                               %! SC
         \>                                                       %! HC1
         \ff                                                      %! HC1
@@ -5089,38 +5089,38 @@ B_CelloMusicVoice = {
         e,1
         \glissando                                               %! SC
         
-        dqs,2
+        dqs,!2
         ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
         % [B CelloMusicVoice measure 105]                        %! SM4
-        dqs,4
+        dqs,!4
         ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/5 {
         
         % [B CelloMusicVoice measure 106]                        %! SM4
-        dqs,8
+        dqs,!8
         \glissando                                               %! SC
         
-        cqs,2
+        cqs,!2
         ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
         % [B CelloMusicVoice measure 107]                        %! SM4
-        cqs,4
+        cqs,!4
         ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
         % [B CelloMusicVoice measure 108]                        %! SM4
-        cqs,2
+        cqs,!2
         \glissando                                               %! SC
         
         b,,4
@@ -5140,14 +5140,14 @@ B_CelloMusicVoice = {
         b,,8
         \glissando                                               %! SC
         
-        dqs,2
+        dqs,!2
         ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/4 {
         
         % [B CelloMusicVoice measure 111]                        %! SM4
-        dqs,2
+        dqs,!2
     }
     
     % [B CelloMusicVoice measure 112]                            %! SM4
@@ -5199,10 +5199,10 @@ B_CelloMusicVoice = {
             }
         }
     
-    cqs,1.
+    cqs,!1.
     \glissando                                                   %! SC
     
-    bqf,,1
+    bqf,,!1
     \glissando                                                   %! SC
     
     c,\breve
@@ -5212,12 +5212,12 @@ B_CelloMusicVoice = {
     b,,1.
     \glissando                                                   %! SC
     
-    cqs,1
+    cqs,!1
     \glissando                                                   %! SC
     
     % [B CelloMusicVoice measure 129]                            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    bqf,,1..
+    bqf,,!1..
     \fff                                                         %! HC1
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     

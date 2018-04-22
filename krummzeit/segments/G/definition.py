@@ -119,7 +119,7 @@ maker(
     baca.make_repeated_duration_notes(
         [(1, 2)],
         division_mask=abjad.index([-1]),
-        rewrite_meter=False,
+        do_not_rewrite_meter=True,
         ),
     krummzeit.markup.tam_tam(),
     )

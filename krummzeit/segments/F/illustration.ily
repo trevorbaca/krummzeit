@@ -2202,7 +2202,16 @@ F_ViolinMusicVoice = {
         % [F ViolinMusicVoice measure 249]                       %! SM4
         fs!2.
         
-        \revert TextSpanner.bound-details                        %! SC
+        \revert TextSpanner.bound-details.left-broken.text       %! SC
+        \revert TextSpanner.bound-details.left.padding           %! SC
+        \revert TextSpanner.bound-details.left.stencil-align-dir-y %! SC
+        \revert TextSpanner.bound-details.left.text              %! SC
+        \revert TextSpanner.bound-details.right-broken.padding   %! SC
+        \revert TextSpanner.bound-details.right-broken.text      %! SC
+        \revert TextSpanner.bound-details.right.arrow            %! SC
+        \revert TextSpanner.bound-details.right.padding          %! SC
+        \revert TextSpanner.bound-details.right.stencil-align-dir-y %! SC
+        \revert TextSpanner.bound-details.right.text             %! SC
         \revert TextSpanner.dash-fraction                        %! SC
         \revert TextSpanner.dash-period                          %! SC
         fs!1
@@ -2428,7 +2437,16 @@ F_ViolaMusicVoice = {
         % [F ViolaMusicVoice measure 249]                        %! SM4
         bf,!4
         
-        \revert TextSpanner.bound-details                        %! SC
+        \revert TextSpanner.bound-details.left-broken.text       %! SC
+        \revert TextSpanner.bound-details.left.padding           %! SC
+        \revert TextSpanner.bound-details.left.stencil-align-dir-y %! SC
+        \revert TextSpanner.bound-details.left.text              %! SC
+        \revert TextSpanner.bound-details.right-broken.padding   %! SC
+        \revert TextSpanner.bound-details.right-broken.text      %! SC
+        \revert TextSpanner.bound-details.right.arrow            %! SC
+        \revert TextSpanner.bound-details.right.padding          %! SC
+        \revert TextSpanner.bound-details.right.stencil-align-dir-y %! SC
+        \revert TextSpanner.bound-details.right.text             %! SC
         \revert TextSpanner.dash-fraction                        %! SC
         \revert TextSpanner.dash-period                          %! SC
         bf,!1.
@@ -2652,7 +2670,16 @@ F_CelloMusicVoice = {
     \times 8/7 {
         
         % [F CelloMusicVoice measure 249]                        %! SM4
-        \revert TextSpanner.bound-details                        %! SC
+        \revert TextSpanner.bound-details.left-broken.text       %! SC
+        \revert TextSpanner.bound-details.left.padding           %! SC
+        \revert TextSpanner.bound-details.left.stencil-align-dir-y %! SC
+        \revert TextSpanner.bound-details.left.text              %! SC
+        \revert TextSpanner.bound-details.right-broken.padding   %! SC
+        \revert TextSpanner.bound-details.right-broken.text      %! SC
+        \revert TextSpanner.bound-details.right.arrow            %! SC
+        \revert TextSpanner.bound-details.right.padding          %! SC
+        \revert TextSpanner.bound-details.right.stencil-align-dir-y %! SC
+        \revert TextSpanner.bound-details.right.text             %! SC
         \revert TextSpanner.dash-fraction                        %! SC
         \revert TextSpanner.dash-period                          %! SC
         a,,1.

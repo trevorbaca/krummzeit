@@ -2381,10 +2381,10 @@ J_PianoMusicVoice = {
     \repeatTie
     
     % [J PianoMusicVoice measure 338]                            %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     cs'''!2.
     :32                                                          %! IC
-    \fff_poss                                                    %! SM8:EXPLICIT_DYNAMIC:IC
+    \fff_poss                                                    %! SM8:REDUNDANT_DYNAMIC:IC
     \repeatTie
     
     cs'''!2

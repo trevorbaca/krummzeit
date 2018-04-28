@@ -4313,10 +4313,10 @@ D_PercussionMusicVoice = {
         r4
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+        \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
         fs''!4
         -\staccatissimo                                          %! IC
-        \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC
+        \ff                                                      %! SM8:REDUNDANT_DYNAMIC:IC
         
         fs''!4
         -\staccatissimo                                          %! IC
@@ -5060,7 +5060,16 @@ D_ViolinMusicVoice = {
         bf''!8
         \glissando                                               %! SC
         
-        \revert TextSpanner.bound-details                        %! SC
+        \revert TextSpanner.bound-details.left-broken.text       %! SC
+        \revert TextSpanner.bound-details.left.padding           %! SC
+        \revert TextSpanner.bound-details.left.stencil-align-dir-y %! SC
+        \revert TextSpanner.bound-details.left.text              %! SC
+        \revert TextSpanner.bound-details.right-broken.padding   %! SC
+        \revert TextSpanner.bound-details.right-broken.text      %! SC
+        \revert TextSpanner.bound-details.right.arrow            %! SC
+        \revert TextSpanner.bound-details.right.padding          %! SC
+        \revert TextSpanner.bound-details.right.stencil-align-dir-y %! SC
+        \revert TextSpanner.bound-details.right.text             %! SC
         \revert TextSpanner.dash-fraction                        %! SC
         \revert TextSpanner.dash-period                          %! SC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -5918,7 +5927,16 @@ D_ViolaMusicVoice = {
         b''8
         \glissando                                               %! SC
         
-        \revert TextSpanner.bound-details                        %! SC
+        \revert TextSpanner.bound-details.left-broken.text       %! SC
+        \revert TextSpanner.bound-details.left.padding           %! SC
+        \revert TextSpanner.bound-details.left.stencil-align-dir-y %! SC
+        \revert TextSpanner.bound-details.left.text              %! SC
+        \revert TextSpanner.bound-details.right-broken.padding   %! SC
+        \revert TextSpanner.bound-details.right-broken.text      %! SC
+        \revert TextSpanner.bound-details.right.arrow            %! SC
+        \revert TextSpanner.bound-details.right.padding          %! SC
+        \revert TextSpanner.bound-details.right.stencil-align-dir-y %! SC
+        \revert TextSpanner.bound-details.right.text             %! SC
         \revert TextSpanner.dash-fraction                        %! SC
         \revert TextSpanner.dash-period                          %! SC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -6681,7 +6699,16 @@ D_CelloMusicVoice = {
         cs''!4
         \glissando                                               %! SC
         
-        \revert TextSpanner.bound-details                        %! SC
+        \revert TextSpanner.bound-details.left-broken.text       %! SC
+        \revert TextSpanner.bound-details.left.padding           %! SC
+        \revert TextSpanner.bound-details.left.stencil-align-dir-y %! SC
+        \revert TextSpanner.bound-details.left.text              %! SC
+        \revert TextSpanner.bound-details.right-broken.padding   %! SC
+        \revert TextSpanner.bound-details.right-broken.text      %! SC
+        \revert TextSpanner.bound-details.right.arrow            %! SC
+        \revert TextSpanner.bound-details.right.padding          %! SC
+        \revert TextSpanner.bound-details.right.stencil-align-dir-y %! SC
+        \revert TextSpanner.bound-details.right.text             %! SC
         \revert TextSpanner.dash-fraction                        %! SC
         \revert TextSpanner.dash-period                          %! SC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3

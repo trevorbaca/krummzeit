@@ -2260,11 +2260,11 @@ C_PercussionMusicVoice = {
     \once \override Staff.Clef.color = #(x11-color 'DeepPink1)   %! SM6:REDUNDANT_CLEF_COLOR:IC
 %@% \override Staff.Clef.color = ##f                             %! SM7:REDUNDANT_CLEF_COLOR_CANCELLATION:IC
     \set Staff.forceClef = ##t                                   %! SM8:REDUNDANT_CLEF:SM33:IC
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c2.
     :32                                                          %! IC
-    \ppp_ancora                                                  %! SM8:EXPLICIT_DYNAMIC:IC
+    \ppp_ancora                                                  %! SM8:REDUNDANT_DYNAMIC:IC
     ^ \markup {
         \column
             {

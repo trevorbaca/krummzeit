@@ -1485,9 +1485,9 @@ I_ClarinetMusicVoice = {
     \repeatTie
     
     % [I ClarinetMusicVoice measure 299]                         %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     fs!1
-    \fff_poss                                                    %! SM8:EXPLICIT_DYNAMIC:IC
+    \fff_poss                                                    %! SM8:REDUNDANT_DYNAMIC:IC
     \repeatTie
     
     % [I ClarinetMusicVoice measure 300]                         %! SM4

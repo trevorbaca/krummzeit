@@ -273,7 +273,7 @@ maker(
 
 maker(
     ('perc', (3, 6)),
-    baca.accents(),
+    baca.accent(),
     baca.effort_dynamic('ff'),
     baca.markup.accent_changes_of_direction(),
     baca.staff_position(0),
@@ -297,7 +297,7 @@ maker(
         ],
     baca.map(baca.glissando(), baca.runs()),
     krummzeit.register_narrow(5),
-    baca.natural_harmonics(),
+    baca.note_head_style_harmonic(),
     )
 
 maker(
@@ -343,8 +343,8 @@ maker(
     ('pf', [(4, 7), 9]),
     baca.clef('bass'),
     baca.reiterated_dynamic('mp'),
-    baca.natural_harmonics(),
-    baca.tenuti(),
+    baca.note_head_style_harmonic(),
+    baca.tenuto(),
     krummzeit.markup.fifth_harmonic_of_F1(),
     )
 
@@ -368,7 +368,7 @@ maker(
     (['pf', 'perc'], [8, 10, 11]),
     baca.pitch('F#6'),
     baca.dynamic('ff'),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     )
 
 maker(
@@ -432,7 +432,7 @@ maker(
     baca.dynamic('ppp'),
     baca.dls_staff_padding(6),
     baca.make_repeat_tied_notes(),
-    baca.repeat_ties_up(),
+    baca.repeat_tie_up(),
     baca.staff_lines(1),
     baca.staff_position(0),
     baca.stem_tremolo(),

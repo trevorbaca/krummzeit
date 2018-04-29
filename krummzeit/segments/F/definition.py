@@ -249,7 +249,7 @@ maker(
 
 maker(
     (['ob', 'cl'], (3, 7)),
-    baca.staccati(baca.ptlts()),
+    baca.staccato(baca.ptlts()),
     )
 
 ### VERTICAL ALIGNMENT ###
@@ -271,7 +271,7 @@ maker(
 maker(
     ('cl', (8, 14)),
     baca.dls_staff_padding(8),
-    baca.stems_up(),
+    baca.stem_up(),
     )
 
 maker(

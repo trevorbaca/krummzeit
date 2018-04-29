@@ -128,7 +128,7 @@ maker(
     baca.dynamic('ff'),
     baca.dls_staff_padding(5),
     baca.markup.pizz(),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     baca.tuplet_bracket_staff_padding(2),
     krummzeit.displacement(),
     krummzeit.register_narrow(6),
@@ -178,5 +178,5 @@ maker(
     ('cl', (1, 12)),
     baca.dynamic('f'),
     baca.dls_staff_padding(7),
-    baca.stems_up(),
+    baca.stem_up(),
     )

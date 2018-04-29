@@ -249,7 +249,7 @@ maker(
     ('pf', (5, 12)),
     baca.dynamic('pp'),
     baca.markup.leggierissimo(),
-    baca.staccati(),
+    baca.staccato(),
     baca.suite([
         krummzeit.displacement(),
         krummzeit.register_wide(5),
@@ -276,14 +276,14 @@ maker(
     (['ob', 'cl'], (9, 12)),
     baca.dynamic('pp'),
     baca.markup.leggierissimo(),
-    baca.staccati(),
+    baca.staccato(),
     )
 
 maker(
     ('vn', (5, 12)),
     baca.dynamic('pp'),
     baca.markup.leggierissimo_off_string_bowing_on_staccati(),
-    baca.staccati(),
+    baca.staccato(),
     )
 
 maker(
@@ -308,10 +308,10 @@ maker(
 maker(
     ('pf', (14, 20)),
     baca.dls_staff_padding(4),
-    baca.natural_harmonics(),
+    baca.note_head_style_harmonic(),
     baca.pitch('C4'),
     baca.reiterated_dynamic('ff'),
-    baca.tenuti(),
+    baca.tenuto(),
     krummzeit.markup.fifth_harmonic_of_F1(),
     )
 
@@ -329,14 +329,14 @@ maker(
 maker(
     (['vn', 'vc'], (14, 20)),
     baca.markup.molto_gridato(),
-    baca.natural_harmonics(),
+    baca.note_head_style_harmonic(),
     baca.possibile_dynamic('fff'),
     )
 
 maker(
     ('va', (14, 19)),
     baca.markup.molto_gridato(),
-    baca.natural_harmonics(),
+    baca.note_head_style_harmonic(),
     baca.possibile_dynamic('fff'),
     )
 
@@ -415,7 +415,7 @@ maker(
 maker(
     ('ob', (1, 7)),
     baca.dls_staff_padding(5),
-    baca.stems_up(),
+    baca.stem_up(),
     )
 
 maker(
@@ -428,7 +428,7 @@ maker(
 maker(
     ('ob', (18, 21)),
     baca.dls_staff_padding(5),
-    baca.stems_up(),
+    baca.stem_up(),
     baca.tuplet_bracket_staff_padding(3),
     )
 
@@ -442,7 +442,7 @@ maker(
 maker(
     ('cl', (1, 5)),
     baca.dls_staff_padding(8),
-    baca.stems_up(),
+    baca.stem_up(),
     )
 
 maker(
@@ -453,7 +453,7 @@ maker(
 maker(
     ('cl', (18, 21)),
     baca.dls_staff_padding(10),
-    baca.stems_up(),
+    baca.stem_up(),
     baca.tuplet_bracket_staff_padding(6),
     )
 

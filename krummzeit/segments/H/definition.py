@@ -165,7 +165,7 @@ maker(
 
 maker(
     ('perc', (4, 5)),
-    baca.accents(),
+    baca.accent(),
     baca.reiterated_dynamic('ff'),
     )
 
@@ -184,7 +184,7 @@ maker(
     (['vn', 'va', 'vc'], (2, 4)),
     baca.dynamic('ppp'),
     baca.map(baca.glissando(), baca.runs()),
-    baca.natural_harmonics(),
+    baca.note_head_style_harmonic(),
     )
 
 maker(
@@ -284,7 +284,7 @@ maker(
 maker(
     ('cl', (7, 8)),
     baca.dls_staff_padding(9),
-    baca.stems_up(),
+    baca.stem_up(),
     baca.tuplet_bracket_staff_padding(5),
     )
 

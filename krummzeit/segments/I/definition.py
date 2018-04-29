@@ -262,7 +262,7 @@ maker(
     (['vn', 'va', 'vc'], 15),
     baca.dynamic('fff'),
     baca.markup.pizz(),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     krummzeit.displacement(),
     krummzeit.register_narrow(6),
     )

@@ -81,7 +81,7 @@ maker(
     ('vn', (1, 17)),
     baca.make_repeat_tied_notes(),
     baca.not_parts(baca.bar_extent_zero()),
-    baca.repeat_ties_up(),
+    baca.repeat_tie_up(),
     baca.staff_position(0),
     )
 
@@ -91,7 +91,7 @@ maker(
     baca.dynamic('f'),
     baca.instrument(krummzeit.instruments['Percussion']),
     baca.not_parts(baca.bar_extent_zero()),
-    baca.repeat_ties_up(),
+    baca.repeat_tie_up(),
     baca.staff_lines(1),
     baca.staff_position(0),
     krummzeit.markup.scraped_slate(),
@@ -346,7 +346,7 @@ maker(
 maker(
     (['pf', 'perc'], (11, 17)),
     baca.dynamic('ff'),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     )
 
 maker(

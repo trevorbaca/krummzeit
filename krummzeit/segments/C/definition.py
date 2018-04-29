@@ -107,7 +107,7 @@ maker(
     krummzeit.displacement(),
     krummzeit.register_narrow(7, 5),
     baca.ottava(),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     )
 
 maker(
@@ -115,7 +115,7 @@ maker(
     baca.hairpin('pp < ff'),
     krummzeit.displacement(),
     krummzeit.register_narrow(5, 3),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     )
 
 maker(
@@ -124,7 +124,7 @@ maker(
     baca.hairpin('ff > pp'),
     krummzeit.displacement(),
     krummzeit.register_narrow(3, 2),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     )
 
 maker(
@@ -134,7 +134,7 @@ maker(
     krummzeit.register_narrow(7, 5),
     baca.ottava(),
     baca.markup.pizz(),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     )
 
 maker(
@@ -142,7 +142,7 @@ maker(
     baca.hairpin('pp < ff'),
     krummzeit.displacement(),
     krummzeit.register_narrow(5, 4),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     )
 
 maker(
@@ -150,7 +150,7 @@ maker(
     baca.hairpin('ff > pp'),
     krummzeit.displacement(),
     krummzeit.register_narrow(5, 4),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     )
 
 maker(
@@ -161,7 +161,7 @@ maker(
     krummzeit.register_narrow(6, 5),
     baca.ottava(),
     baca.markup.pizz(),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     )
 
 maker(
@@ -169,7 +169,7 @@ maker(
     baca.hairpin('pp < ff'),
     krummzeit.displacement(),
     krummzeit.register_narrow(5, 4),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     )
 
 maker(
@@ -178,7 +178,7 @@ maker(
     baca.hairpin('ff > pp'),
     krummzeit.displacement(),
     krummzeit.register_narrow(4, 2),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     )
 
 maker(
@@ -188,7 +188,7 @@ maker(
     krummzeit.displacement(),
     krummzeit.register_narrow(5, 4),
     baca.markup.pizz(),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     )
 
 maker(
@@ -197,7 +197,7 @@ maker(
     baca.hairpin('pp < ff'),
     krummzeit.displacement(),
     krummzeit.register_narrow(4, 3),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     )
 
 maker(
@@ -240,7 +240,7 @@ maker(
     baca.hairpin('ff > pp'),
     krummzeit.displacement(),
     krummzeit.register_narrow(3, 2),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     )
 
 maker(
@@ -319,18 +319,18 @@ maker(
 maker(
     ('ob', (14, 16)),
     baca.dls_staff_padding(5),
-    baca.stems_up(),
+    baca.stem_up(),
     )
 
 maker(
     ('ob', (14, 16)),
     baca.dls_staff_padding(5),
-    baca.stems_up(),
+    baca.stem_up(),
     )
 
 maker(
     ('cl', (14, 17)),
-    baca.stems_up(),
+    baca.stem_up(),
     )
 
 maker(
@@ -352,5 +352,5 @@ maker(
 
 maker(
     (['vn', 'va', 'vc'], (11, 16)),
-    baca.stems_up(),
+    baca.stem_up(),
     )

@@ -249,7 +249,7 @@ maker(
     baca.map(baca.glissando(), baca.runs()),
     baca.hairpin('p > ppp'),
     baca.markup.molto_flautando(),
-    baca.natural_harmonics(),
+    baca.note_head_style_harmonic(),
     )
 
 maker(
@@ -271,7 +271,7 @@ maker(
     (['pf', 'perc'], (8, 15)),
     baca.dynamic('p'),
     baca.pitch('F5'),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     )
 
 maker(
@@ -340,7 +340,7 @@ maker(
     baca.clef('treble'),
     baca.dynamic('fff'),
     baca.ottava(),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     baca.suite([
         baca.pitches(pcs),
         krummzeit.displacement(),
@@ -365,7 +365,7 @@ maker(
 
 maker(
     ('cl', (1, 2)),
-    baca.stems_up(),
+    baca.stem_up(),
     baca.dls_staff_padding(6),
     )
 
@@ -378,7 +378,7 @@ maker(
 
 maker(
     ('cl', (13, 23)),
-    baca.stems_up(),
+    baca.stem_up(),
     baca.dls_staff_padding(7),
     )
 

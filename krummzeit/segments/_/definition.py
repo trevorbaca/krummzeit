@@ -169,7 +169,7 @@ maker(
 
 maker(
     ('perc', (9, 10)),
-    baca.accents(),
+    baca.accent(),
     baca.bar_extent((-2, 2)),
     baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
     baca.bar_extent((0, 0), after=True, selector=baca.leaf(-1)),
@@ -220,7 +220,7 @@ maker(
     baca.map(baca.glissando(), baca.runs()),
     baca.hairpin('pp < ff'),
     baca.markup.molto_flautando(),
-    baca.natural_harmonics(),
+    baca.note_head_style_harmonic(),
     baca.repeat_tie_repeat_pitches(),
     )
 

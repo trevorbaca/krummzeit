@@ -124,7 +124,7 @@ maker(
 
 maker(
     ('perc', (1, 23)),
-    baca.accents(),
+    baca.accent(),
     baca.not_parts(baca.bar_extent_zero()),
     baca.staff_position(0),
     )
@@ -346,7 +346,7 @@ maker(
     baca.make_repeat_tied_notes(),
     baca.markup.boxed('stonecircle: scrape at moderate speed'),
     baca.not_parts(baca.bar_extent_zero()),
-    baca.repeat_ties_up(),
+    baca.repeat_tie_up(),
     baca.staff_lines(1),
     baca.staff_position(0),
     )
@@ -455,7 +455,7 @@ maker(
 
 maker(
     (['vn', 'ob', 'cl'], (1, 13)),
-    baca.staccati(),
+    baca.staccato(),
     )
 
 maker(
@@ -560,7 +560,7 @@ maker(
 
 maker(
     ('pf', (16, 19)),
-    baca.marcati(),
+    baca.marcato(),
     baca.ottava_bassa(),
     baca.reiterated_dynamic('fff'),
     krummzeit.clusters('low'),
@@ -569,7 +569,7 @@ maker(
 maker(
     ('perc', (16, 20)),
     baca.reiterated_dynamic('p'),
-    baca.tenuti(),
+    baca.tenuto(),
     )
 
 pcs = krummzeit.violet_pitch_classes.get_payload()
@@ -589,7 +589,7 @@ maker(
     baca.clef('treble'),
     baca.dynamic('fff'),
     baca.markup.pizz(),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     krummzeit.register_narrow(5, 6),
     )
 
@@ -598,7 +598,7 @@ maker(
     baca.clef('treble'),
     baca.dynamic('fff'),
     baca.markup.pizz(),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     krummzeit.register_narrow(5, 6),
     )
 
@@ -606,7 +606,7 @@ maker(
     ('vn', (19, 22)),
     baca.dynamic('fff'),
     baca.markup.pizz(),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     krummzeit.register_narrow(5, 6),
     )
 
@@ -614,7 +614,7 @@ maker(
     ('pf', (20, 23)),
     baca.clef('treble'),
     baca.dynamic('fff'),
-    baca.staccatissimi(),
+    baca.staccatissimo(),
     krummzeit.register_narrow(5, 6),
     )
 

@@ -174,7 +174,7 @@ maker(
     baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
     baca.bar_extent((0, 0), after=True, selector=baca.leaf(-1)),
     baca.clef('percussion'),
-    baca.effort_dynamic('ff'),
+    baca.dynamic('"ff"'),
     baca.markup.boxed('sponges'),
     baca.staff_lines(1),
     baca.staff_position(0),

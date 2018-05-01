@@ -249,24 +249,24 @@ maker(
 
 maker(
     ('vn', (1, 5)),
+    baca.dynamic('"mp"'),
     baca.glissando(),
-    baca.effort_dynamic('mp'),
     krummzeit.register_narrow(4),
     krummzeit.markup.on_bridge_slow(),
     )
 
 maker(
     ('va', (1, 3)),
+    baca.dynamic('"mp"'),
     baca.glissando(),
-    baca.effort_dynamic('mp'),
     krummzeit.register_narrow(3),
     krummzeit.markup.on_bridge_slow(),
     )
 
 maker(
     ('vc', (1, 5)),
+    baca.dynamic('"mp"'),
     baca.map(baca.glissando(), baca.runs()),
-    baca.effort_dynamic('mp'),
     krummzeit.register_narrow(2),
     krummzeit.markup.on_bridge_slow(),
     )
@@ -274,7 +274,7 @@ maker(
 maker(
     ('perc', (3, 6)),
     baca.accent(),
-    baca.effort_dynamic('ff'),
+    baca.dynamic('"ff"'),
     baca.markup.accent_changes_of_direction(),
     baca.staff_position(0),
     )

@@ -165,7 +165,7 @@ maker(
 
 maker(
     ('perc', (4, 5)),
-    baca.accent(),
+    baca.accent(baca.pheads()),
     baca.reiterated_dynamic('ff'),
     )
 

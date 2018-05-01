@@ -455,7 +455,7 @@ maker(
 
 maker(
     (['vn', 'ob', 'cl'], (1, 13)),
-    baca.staccato(),
+    baca.staccato(baca.pheads()),
     )
 
 maker(
@@ -569,7 +569,7 @@ maker(
 maker(
     ('perc', (16, 20)),
     baca.reiterated_dynamic('p'),
-    baca.tenuto(),
+    baca.tenuto(baca.pheads()),
     )
 
 pcs = krummzeit.violet_pitch_classes.get_payload()
@@ -589,7 +589,7 @@ maker(
     baca.clef('treble'),
     baca.dynamic('fff'),
     baca.markup.pizz(),
-    baca.staccatissimo(),
+    baca.staccatissimo(baca.pheads()),
     krummzeit.register_narrow(5, 6),
     )
 
@@ -598,7 +598,7 @@ maker(
     baca.clef('treble'),
     baca.dynamic('fff'),
     baca.markup.pizz(),
-    baca.staccatissimo(),
+    baca.staccatissimo(baca.pheads()),
     krummzeit.register_narrow(5, 6),
     )
 
@@ -606,7 +606,7 @@ maker(
     ('vn', (19, 22)),
     baca.dynamic('fff'),
     baca.markup.pizz(),
-    baca.staccatissimo(),
+    baca.staccatissimo(baca.pheads()),
     krummzeit.register_narrow(5, 6),
     )
 
@@ -614,7 +614,7 @@ maker(
     ('pf', (20, 23)),
     baca.clef('treble'),
     baca.dynamic('fff'),
-    baca.staccatissimo(),
+    baca.staccatissimo(baca.pheads()),
     krummzeit.register_narrow(5, 6),
     )
 

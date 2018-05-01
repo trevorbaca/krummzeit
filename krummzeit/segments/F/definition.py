@@ -147,7 +147,7 @@ maker(
 maker(
     ('perc', (2, 11)),
     baca.dynamic('ppp'),
-    baca.stem_tremolo(),
+    baca.stem_tremolo(baca.pleaves()),
     krummzeit.markup.fingertips(),
     )
 

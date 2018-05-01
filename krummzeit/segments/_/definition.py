@@ -150,7 +150,7 @@ maker(
     baca.dynamic('fff'),
     baca.make_repeat_tied_notes(),
     baca.pitch('C#5'),
-    baca.stem_tremolo(),
+    baca.stem_tremolo(baca.pleaves()),
     )
 
 maker(
@@ -164,7 +164,7 @@ maker(
     baca.make_repeat_tied_notes(),
     baca.markup.boxed('xylophone'),
     baca.pitch('C#5'),
-    baca.stem_tremolo(),
+    baca.stem_tremolo(baca.pleaves()),
     )
 
 maker(
@@ -201,7 +201,7 @@ maker(
 maker(
     (['vn', 'va', 'vc'], 1),
     baca.dynamic('fff'),
-    baca.stem_tremolo(),
+    baca.stem_tremolo(baca.pleaves()),
     )
 
 pcs = krummzeit.violet_pitch_classes.get_payload()

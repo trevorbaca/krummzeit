@@ -160,7 +160,7 @@ maker(
 maker(
     (['vn', 'va', 'vc'], 1),
     baca.possibile_dynamic('fff'),
-    baca.stem_tremolo(),
+    baca.stem_tremolo(baca.pleaves()),
     )
 
 maker(
@@ -261,7 +261,7 @@ maker(
     (['pf', 'perc'], 8),
     baca.dynamic('fff'),
     baca.pitch('F#6'),
-    baca.stem_tremolo(),
+    baca.stem_tremolo(baca.pleaves()),
     )
 
 ### VERTICAL ALIGNMENT ###

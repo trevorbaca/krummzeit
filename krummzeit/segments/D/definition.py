@@ -273,7 +273,7 @@ maker(
 
 maker(
     ('perc', (3, 6)),
-    baca.accent(),
+    baca.accent(baca.pheads()),
     baca.dynamic('"ff"'),
     baca.markup.accent_changes_of_direction(),
     baca.staff_position(0),

@@ -124,7 +124,7 @@ maker(
 
 maker(
     ('perc', (1, 23)),
-    baca.accent(),
+    baca.accent(baca.pheads()),
     baca.not_parts(baca.bar_extent_zero()),
     baca.staff_position(0),
     )
@@ -560,7 +560,7 @@ maker(
 
 maker(
     ('pf', (16, 19)),
-    baca.marcato(),
+    baca.marcato(baca.pheads()),
     baca.ottava_bassa(),
     baca.reiterated_dynamic('fff'),
     krummzeit.clusters('low'),

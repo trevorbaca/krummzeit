@@ -169,7 +169,7 @@ maker(
 
 maker(
     ('perc', (9, 10)),
-    baca.accent(),
+    baca.accent(baca.pheads()),
     baca.bar_extent((-2, 2)),
     baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
     baca.bar_extent((0, 0), after=True, selector=baca.leaf(-1)),

@@ -174,12 +174,20 @@ maker(
 
 maker(
     ('vn', (8, 10)),
-    krummzeit.markup.grid_poss_to_flaut_poss(),
+    baca.transition(
+        baca.markup('grid. possibile'),
+        baca.markup('flaut. possibile'),
+        tweaks=[('staff-padding', 5)],
+        ),
     )
 
 maker(
     (['va', 'vc'], (9, 10)),
-    krummzeit.markup.grid_poss_to_flaut_poss(),
+    baca.transition(
+        baca.markup('grid. possibile'),
+        baca.markup('flaut. possibile'),
+        tweaks=[('staff-padding', 5)],
+        ),
     )
 
 maker(

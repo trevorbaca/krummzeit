@@ -319,13 +319,21 @@ maker(
 maker(
     ('va', (5, 6)),
     baca.hairpin('pp < f'),
-    krummzeit.markup.molto_flaut_to_molto_grid(),
+    baca.transition(
+        baca.markup('molto flautando'),
+        baca.markup('molto gridato'),
+        tweaks=[('staff-padding', 6)],
+        ),
     )
 
 maker(
     (['vn', 'vc'], 6),
     baca.hairpin('pp < f'),
-    krummzeit.markup.molto_flaut_to_molto_grid(),
+    baca.transition(
+        baca.markup('molto flautando'),
+        baca.markup('molto gridato'),
+        tweaks=[('staff-padding', 6)],
+        ),
     )
 
 maker(

@@ -4989,36 +4989,45 @@ D_ViolinMusicVoice = {
         \override Beam.positions = #'(-4 . -4)                   %! OC1
         \override DynamicLineSpanner.staff-padding = #'6         %! OC1
         \override TupletBracket.staff-padding = #3               %! OC1
-        \override TextSpanner.bound-details.left-broken.text = #'#f %! SC
-        \override TextSpanner.bound-details.left.padding = #-1   %! SC
-        \override TextSpanner.bound-details.left.stencil-align-dir-y = #0 %! SC
-        \override TextSpanner.bound-details.left.text = \markup {
-            \larger
-                \italic
-                    "molto flautando"
-            \hspace
-                #1
-            }                                                    %! SC
-        \override TextSpanner.bound-details.right-broken.padding = #0 %! SC
-        \override TextSpanner.bound-details.right-broken.text = #'#f %! SC
-        \override TextSpanner.bound-details.right.arrow = ##t    %! SC
-        \override TextSpanner.bound-details.right.padding = #1   %! SC
-        \override TextSpanner.bound-details.right.stencil-align-dir-y = #0 %! SC
-        \override TextSpanner.bound-details.right.text = \markup {
-            \hspace
-                #1
-            \larger
-                \italic
-                    "molto gridato"
-            }                                                    %! SC
-        \override TextSpanner.dash-fraction = #0.25              %! SC
-        \override TextSpanner.dash-period = #1.5                 %! SC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         fs''!4
         \glissando                                               %! SC
         \<                                                       %! HC1
         \pp                                                      %! HC1
-        \startTextSpan                                           %! SC
+        - \tweak staff-padding #'6                               %! PWC1
+        - \tweak Y-extent ##f                                    %! PWC1
+        - \tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \whiteout
+                        \upright
+                            "molto flautando"
+                    \hspace
+                        #0.5
+                }
+            }                                                    %! PWC1
+        - \tweak arrow-width 0.25                                %! PWC1
+        - \tweak dash-fraction 0.25                              %! PWC1
+        - \tweak dash-period 1.5                                 %! PWC1
+        - \tweak bound-details.left-broken.text ##f              %! PWC1
+        - \tweak bound-details.left.stencil-align-dir-y #center  %! PWC1
+        - \tweak bound-details.right.arrow ##t                   %! PWC1
+        - \tweak bound-details.right-broken.arrow ##f            %! PWC1
+        - \tweak bound-details.right-broken.padding 0            %! PWC1
+        - \tweak bound-details.right-broken.text ##f             %! PWC1
+        - \tweak bound-details.right.padding 0.5                 %! PWC1
+        - \tweak bound-details.right.stencil-align-dir-y #center %! PWC1
+        - \tweak bound-details.right.text \markup {
+            \concat
+                {
+                    \hspace
+                        #0.0
+                    \whiteout
+                        \upright
+                            "molto gridato"
+                }
+            }                                                    %! PWC1
+        \startTextSpan                                           %! PWC1
         
         b''2
         \glissando                                               %! SC
@@ -5060,22 +5069,10 @@ D_ViolinMusicVoice = {
         bf''!8
         \glissando                                               %! SC
         
-        \revert TextSpanner.bound-details.left-broken.text       %! SC
-        \revert TextSpanner.bound-details.left.padding           %! SC
-        \revert TextSpanner.bound-details.left.stencil-align-dir-y %! SC
-        \revert TextSpanner.bound-details.left.text              %! SC
-        \revert TextSpanner.bound-details.right-broken.padding   %! SC
-        \revert TextSpanner.bound-details.right-broken.text      %! SC
-        \revert TextSpanner.bound-details.right.arrow            %! SC
-        \revert TextSpanner.bound-details.right.padding          %! SC
-        \revert TextSpanner.bound-details.right.stencil-align-dir-y %! SC
-        \revert TextSpanner.bound-details.right.text             %! SC
-        \revert TextSpanner.dash-fraction                        %! SC
-        \revert TextSpanner.dash-period                          %! SC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         cs''!2
         \f                                                       %! HC1
-        \stopTextSpan                                            %! SC
+        \stopTextSpan                                            %! PWC1
     }
     
     r2
@@ -5779,36 +5776,45 @@ D_ViolaMusicVoice = {
     r2
     \times 4/5 {
         
-        \override TextSpanner.bound-details.left-broken.text = #'#f %! SC
-        \override TextSpanner.bound-details.left.padding = #-1   %! SC
-        \override TextSpanner.bound-details.left.stencil-align-dir-y = #0 %! SC
-        \override TextSpanner.bound-details.left.text = \markup {
-            \larger
-                \italic
-                    "molto flautando"
-            \hspace
-                #1
-            }                                                    %! SC
-        \override TextSpanner.bound-details.right-broken.padding = #0 %! SC
-        \override TextSpanner.bound-details.right-broken.text = #'#f %! SC
-        \override TextSpanner.bound-details.right.arrow = ##t    %! SC
-        \override TextSpanner.bound-details.right.padding = #1   %! SC
-        \override TextSpanner.bound-details.right.stencil-align-dir-y = #0 %! SC
-        \override TextSpanner.bound-details.right.text = \markup {
-            \hspace
-                #1
-            \larger
-                \italic
-                    "molto gridato"
-            }                                                    %! SC
-        \override TextSpanner.dash-fraction = #0.25              %! SC
-        \override TextSpanner.dash-period = #1.5                 %! SC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         cs''!16
         \glissando                                               %! SC
         \<                                                       %! HC1
         \pp                                                      %! HC1
-        \startTextSpan                                           %! SC
+        - \tweak staff-padding #'6                               %! PWC1
+        - \tweak Y-extent ##f                                    %! PWC1
+        - \tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \whiteout
+                        \upright
+                            "molto flautando"
+                    \hspace
+                        #0.5
+                }
+            }                                                    %! PWC1
+        - \tweak arrow-width 0.25                                %! PWC1
+        - \tweak dash-fraction 0.25                              %! PWC1
+        - \tweak dash-period 1.5                                 %! PWC1
+        - \tweak bound-details.left-broken.text ##f              %! PWC1
+        - \tweak bound-details.left.stencil-align-dir-y #center  %! PWC1
+        - \tweak bound-details.right.arrow ##t                   %! PWC1
+        - \tweak bound-details.right-broken.arrow ##f            %! PWC1
+        - \tweak bound-details.right-broken.padding 0            %! PWC1
+        - \tweak bound-details.right-broken.text ##f             %! PWC1
+        - \tweak bound-details.right.padding 0.5                 %! PWC1
+        - \tweak bound-details.right.stencil-align-dir-y #center %! PWC1
+        - \tweak bound-details.right.text \markup {
+            \concat
+                {
+                    \hspace
+                        #0.0
+                    \whiteout
+                        \upright
+                            "molto gridato"
+                }
+            }                                                    %! PWC1
+        \startTextSpan                                           %! PWC1
         
         f''4
         \glissando                                               %! SC
@@ -5927,22 +5933,10 @@ D_ViolaMusicVoice = {
         b''8
         \glissando                                               %! SC
         
-        \revert TextSpanner.bound-details.left-broken.text       %! SC
-        \revert TextSpanner.bound-details.left.padding           %! SC
-        \revert TextSpanner.bound-details.left.stencil-align-dir-y %! SC
-        \revert TextSpanner.bound-details.left.text              %! SC
-        \revert TextSpanner.bound-details.right-broken.padding   %! SC
-        \revert TextSpanner.bound-details.right-broken.text      %! SC
-        \revert TextSpanner.bound-details.right.arrow            %! SC
-        \revert TextSpanner.bound-details.right.padding          %! SC
-        \revert TextSpanner.bound-details.right.stencil-align-dir-y %! SC
-        \revert TextSpanner.bound-details.right.text             %! SC
-        \revert TextSpanner.dash-fraction                        %! SC
-        \revert TextSpanner.dash-period                          %! SC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         c''2
         \f                                                       %! HC1
-        \stopTextSpan                                            %! SC
+        \stopTextSpan                                            %! PWC1
         \glissando                                               %! SC
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -6643,36 +6637,45 @@ D_CelloMusicVoice = {
     \times 2/3 {
         
         \override NoteHead.style = #'harmonic                    %! OC1
-        \override TextSpanner.bound-details.left-broken.text = #'#f %! SC
-        \override TextSpanner.bound-details.left.padding = #-1   %! SC
-        \override TextSpanner.bound-details.left.stencil-align-dir-y = #0 %! SC
-        \override TextSpanner.bound-details.left.text = \markup {
-            \larger
-                \italic
-                    "molto flautando"
-            \hspace
-                #1
-            }                                                    %! SC
-        \override TextSpanner.bound-details.right-broken.padding = #0 %! SC
-        \override TextSpanner.bound-details.right-broken.text = #'#f %! SC
-        \override TextSpanner.bound-details.right.arrow = ##t    %! SC
-        \override TextSpanner.bound-details.right.padding = #1   %! SC
-        \override TextSpanner.bound-details.right.stencil-align-dir-y = #0 %! SC
-        \override TextSpanner.bound-details.right.text = \markup {
-            \hspace
-                #1
-            \larger
-                \italic
-                    "molto gridato"
-            }                                                    %! SC
-        \override TextSpanner.dash-fraction = #0.25              %! SC
-        \override TextSpanner.dash-period = #1.5                 %! SC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         g''4
         \glissando                                               %! SC
         \<                                                       %! HC1
         \pp                                                      %! HC1
-        \startTextSpan                                           %! SC
+        - \tweak staff-padding #'6                               %! PWC1
+        - \tweak Y-extent ##f                                    %! PWC1
+        - \tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \whiteout
+                        \upright
+                            "molto flautando"
+                    \hspace
+                        #0.5
+                }
+            }                                                    %! PWC1
+        - \tweak arrow-width 0.25                                %! PWC1
+        - \tweak dash-fraction 0.25                              %! PWC1
+        - \tweak dash-period 1.5                                 %! PWC1
+        - \tweak bound-details.left-broken.text ##f              %! PWC1
+        - \tweak bound-details.left.stencil-align-dir-y #center  %! PWC1
+        - \tweak bound-details.right.arrow ##t                   %! PWC1
+        - \tweak bound-details.right-broken.arrow ##f            %! PWC1
+        - \tweak bound-details.right-broken.padding 0            %! PWC1
+        - \tweak bound-details.right-broken.text ##f             %! PWC1
+        - \tweak bound-details.right.padding 0.5                 %! PWC1
+        - \tweak bound-details.right.stencil-align-dir-y #center %! PWC1
+        - \tweak bound-details.right.text \markup {
+            \concat
+                {
+                    \hspace
+                        #0.0
+                    \whiteout
+                        \upright
+                            "molto gridato"
+                }
+            }                                                    %! PWC1
+        \startTextSpan                                           %! PWC1
         
         fs''!2
         \glissando                                               %! SC
@@ -6699,22 +6702,10 @@ D_CelloMusicVoice = {
         cs''!4
         \glissando                                               %! SC
         
-        \revert TextSpanner.bound-details.left-broken.text       %! SC
-        \revert TextSpanner.bound-details.left.padding           %! SC
-        \revert TextSpanner.bound-details.left.stencil-align-dir-y %! SC
-        \revert TextSpanner.bound-details.left.text              %! SC
-        \revert TextSpanner.bound-details.right-broken.padding   %! SC
-        \revert TextSpanner.bound-details.right-broken.text      %! SC
-        \revert TextSpanner.bound-details.right.arrow            %! SC
-        \revert TextSpanner.bound-details.right.padding          %! SC
-        \revert TextSpanner.bound-details.right.stencil-align-dir-y %! SC
-        \revert TextSpanner.bound-details.right.text             %! SC
-        \revert TextSpanner.dash-fraction                        %! SC
-        \revert TextSpanner.dash-period                          %! SC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         bf''!2
         \f                                                       %! HC1
-        \stopTextSpan                                            %! SC
+        \stopTextSpan                                            %! PWC1
     }
     
     % [D CelloMusicVoice measure 168]                            %! SM4

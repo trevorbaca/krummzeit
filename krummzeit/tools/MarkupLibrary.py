@@ -45,58 +45,6 @@ class MarkupLibrary(abjad.AbjadObject):
         return baca.markup(string, selector=selector)
 
     @staticmethod
-    def grid_poss_to_flaut_poss(selector='baca.tleaves()'):
-        left_text = abjad.Markup('grid. possibile').italic().larger() + abjad.Markup.hspace(1)
-        right_text = abjad.Markup.hspace(1) + abjad.Markup('flaut. possibile').italic().larger()
-        spanner = abjad.TextSpanner(
-            overrides={
-                'text_spanner__bound_details__left__padding': -1,
-                'text_spanner__bound_details__left__stencil_align_dir_y': 0,
-                'text_spanner__bound_details__left__text': left_text,
-                'text_spanner__bound_details__left_broken__text': None,
-                'text_spanner__bound_details__right__arrow': True,
-                'text_spanner__bound_details__right__padding': 1,
-                'text_spanner__bound_details__right__stencil_align_dir_y': 0,
-                'text_spanner__bound_details__right__text': right_text,
-                'text_spanner__bound_details__right_broken__padding': 0,
-                'text_spanner__bound_details__right_broken__text': None,
-                'text_spanner__dash_fraction': 0.25,
-                'text_spanner__dash_period': 1.5,
-            }
-        )
-        return baca.SpannerCommand(
-            selector=selector,
-            spanner=spanner,
-            )
-
-    @staticmethod
-    def molto_flaut_to_molto_grid(selector='baca.tleaves()'):
-        r'''Makes color transition spanner.
-        '''
-        left_text = abjad.Markup('molto flautando').italic().larger() + abjad.Markup.hspace(1)
-        right_text = abjad.Markup.hspace(1) + abjad.Markup('molto gridato').italic().larger()
-        spanner = abjad.TextSpanner(
-            overrides={
-                'text_spanner__bound_details__left__padding': -1,
-                'text_spanner__bound_details__left__stencil_align_dir_y': 0,
-                'text_spanner__bound_details__left__text': left_text,
-                'text_spanner__bound_details__left_broken__text': None,
-                'text_spanner__bound_details__right__arrow': True,
-                'text_spanner__bound_details__right__padding': 1,
-                'text_spanner__bound_details__right__stencil_align_dir_y': 0,
-                'text_spanner__bound_details__right__text': right_text,
-                'text_spanner__bound_details__right_broken__padding': 0,
-                'text_spanner__bound_details__right_broken__text': None,
-                'text_spanner__dash_fraction': 0.25,
-                'text_spanner__dash_period': 1.5,
-            }
-        )
-        return baca.SpannerCommand(
-            selector=selector,
-            spanner=spanner
-            )
-
-    @staticmethod
     def on_bridge_full_bow(selector='baca.pleaf(0)'):
         string = 'directly on bridge: full bow each stroke'
         return baca.markup(string, selector=selector)

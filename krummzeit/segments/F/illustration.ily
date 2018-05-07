@@ -2159,32 +2159,41 @@ F_ViolinMusicVoice = {
     \times 13/7 {
         
         % [F ViolinMusicVoice measure 245]                       %! SM4
-        \override TextSpanner.bound-details.left-broken.text = #'#f %! SC
-        \override TextSpanner.bound-details.left.padding = #-1   %! SC
-        \override TextSpanner.bound-details.left.stencil-align-dir-y = #0 %! SC
-        \override TextSpanner.bound-details.left.text = \markup {
-            \larger
-                \italic
-                    "grid. possibile"
-            \hspace
-                #1
-            }                                                    %! SC
-        \override TextSpanner.bound-details.right-broken.padding = #0 %! SC
-        \override TextSpanner.bound-details.right-broken.text = #'#f %! SC
-        \override TextSpanner.bound-details.right.arrow = ##t    %! SC
-        \override TextSpanner.bound-details.right.padding = #1   %! SC
-        \override TextSpanner.bound-details.right.stencil-align-dir-y = #0 %! SC
-        \override TextSpanner.bound-details.right.text = \markup {
-            \hspace
-                #1
-            \larger
-                \italic
-                    "flaut. possibile"
-            }                                                    %! SC
-        \override TextSpanner.dash-fraction = #0.25              %! SC
-        \override TextSpanner.dash-period = #1.5                 %! SC
         fs!2.
-        \startTextSpan                                           %! SC
+        - \tweak staff-padding #'5                               %! PWC1
+        - \tweak Y-extent ##f                                    %! PWC1
+        - \tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \whiteout
+                        \upright
+                            "grid. possibile"
+                    \hspace
+                        #0.5
+                }
+            }                                                    %! PWC1
+        - \tweak arrow-width 0.25                                %! PWC1
+        - \tweak dash-fraction 0.25                              %! PWC1
+        - \tweak dash-period 1.5                                 %! PWC1
+        - \tweak bound-details.left-broken.text ##f              %! PWC1
+        - \tweak bound-details.left.stencil-align-dir-y #center  %! PWC1
+        - \tweak bound-details.right.arrow ##t                   %! PWC1
+        - \tweak bound-details.right-broken.arrow ##f            %! PWC1
+        - \tweak bound-details.right-broken.padding 0            %! PWC1
+        - \tweak bound-details.right-broken.text ##f             %! PWC1
+        - \tweak bound-details.right.padding 0.5                 %! PWC1
+        - \tweak bound-details.right.stencil-align-dir-y #center %! PWC1
+        - \tweak bound-details.right.text \markup {
+            \concat
+                {
+                    \hspace
+                        #0.0
+                    \whiteout
+                        \upright
+                            "flaut. possibile"
+                }
+            }                                                    %! PWC1
+        \startTextSpan                                           %! PWC1
         
         fs!1
     }
@@ -2202,20 +2211,8 @@ F_ViolinMusicVoice = {
         % [F ViolinMusicVoice measure 249]                       %! SM4
         fs!2.
         
-        \revert TextSpanner.bound-details.left-broken.text       %! SC
-        \revert TextSpanner.bound-details.left.padding           %! SC
-        \revert TextSpanner.bound-details.left.stencil-align-dir-y %! SC
-        \revert TextSpanner.bound-details.left.text              %! SC
-        \revert TextSpanner.bound-details.right-broken.padding   %! SC
-        \revert TextSpanner.bound-details.right-broken.text      %! SC
-        \revert TextSpanner.bound-details.right.arrow            %! SC
-        \revert TextSpanner.bound-details.right.padding          %! SC
-        \revert TextSpanner.bound-details.right.stencil-align-dir-y %! SC
-        \revert TextSpanner.bound-details.right.text             %! SC
-        \revert TextSpanner.dash-fraction                        %! SC
-        \revert TextSpanner.dash-period                          %! SC
         fs!1
-        \stopTextSpan                                            %! SC
+        \stopTextSpan                                            %! PWC1
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 13/7 {
@@ -2402,32 +2399,41 @@ F_ViolaMusicVoice = {
     \times 10/7 {
         
         % [F ViolaMusicVoice measure 247]                        %! SM4
-        \override TextSpanner.bound-details.left-broken.text = #'#f %! SC
-        \override TextSpanner.bound-details.left.padding = #-1   %! SC
-        \override TextSpanner.bound-details.left.stencil-align-dir-y = #0 %! SC
-        \override TextSpanner.bound-details.left.text = \markup {
-            \larger
-                \italic
-                    "grid. possibile"
-            \hspace
-                #1
-            }                                                    %! SC
-        \override TextSpanner.bound-details.right-broken.padding = #0 %! SC
-        \override TextSpanner.bound-details.right-broken.text = #'#f %! SC
-        \override TextSpanner.bound-details.right.arrow = ##t    %! SC
-        \override TextSpanner.bound-details.right.padding = #1   %! SC
-        \override TextSpanner.bound-details.right.stencil-align-dir-y = #0 %! SC
-        \override TextSpanner.bound-details.right.text = \markup {
-            \hspace
-                #1
-            \larger
-                \italic
-                    "flaut. possibile"
-            }                                                    %! SC
-        \override TextSpanner.dash-fraction = #0.25              %! SC
-        \override TextSpanner.dash-period = #1.5                 %! SC
         bf,!4
-        \startTextSpan                                           %! SC
+        - \tweak staff-padding #'5                               %! PWC1
+        - \tweak Y-extent ##f                                    %! PWC1
+        - \tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \whiteout
+                        \upright
+                            "grid. possibile"
+                    \hspace
+                        #0.5
+                }
+            }                                                    %! PWC1
+        - \tweak arrow-width 0.25                                %! PWC1
+        - \tweak dash-fraction 0.25                              %! PWC1
+        - \tweak dash-period 1.5                                 %! PWC1
+        - \tweak bound-details.left-broken.text ##f              %! PWC1
+        - \tweak bound-details.left.stencil-align-dir-y #center  %! PWC1
+        - \tweak bound-details.right.arrow ##t                   %! PWC1
+        - \tweak bound-details.right-broken.arrow ##f            %! PWC1
+        - \tweak bound-details.right-broken.padding 0            %! PWC1
+        - \tweak bound-details.right-broken.text ##f             %! PWC1
+        - \tweak bound-details.right.padding 0.5                 %! PWC1
+        - \tweak bound-details.right.stencil-align-dir-y #center %! PWC1
+        - \tweak bound-details.right.text \markup {
+            \concat
+                {
+                    \hspace
+                        #0.0
+                    \whiteout
+                        \upright
+                            "flaut. possibile"
+                }
+            }                                                    %! PWC1
+        \startTextSpan                                           %! PWC1
         
         bf,!1.
     }
@@ -2437,20 +2443,8 @@ F_ViolaMusicVoice = {
         % [F ViolaMusicVoice measure 249]                        %! SM4
         bf,!4
         
-        \revert TextSpanner.bound-details.left-broken.text       %! SC
-        \revert TextSpanner.bound-details.left.padding           %! SC
-        \revert TextSpanner.bound-details.left.stencil-align-dir-y %! SC
-        \revert TextSpanner.bound-details.left.text              %! SC
-        \revert TextSpanner.bound-details.right-broken.padding   %! SC
-        \revert TextSpanner.bound-details.right-broken.text      %! SC
-        \revert TextSpanner.bound-details.right.arrow            %! SC
-        \revert TextSpanner.bound-details.right.padding          %! SC
-        \revert TextSpanner.bound-details.right.stencil-align-dir-y %! SC
-        \revert TextSpanner.bound-details.right.text             %! SC
-        \revert TextSpanner.dash-fraction                        %! SC
-        \revert TextSpanner.dash-period                          %! SC
         bf,!1.
-        \stopTextSpan                                            %! SC
+        \stopTextSpan                                            %! PWC1
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 13/7 {
@@ -2637,32 +2631,41 @@ F_CelloMusicVoice = {
     \times 10/7 {
         
         % [F CelloMusicVoice measure 247]                        %! SM4
-        \override TextSpanner.bound-details.left-broken.text = #'#f %! SC
-        \override TextSpanner.bound-details.left.padding = #-1   %! SC
-        \override TextSpanner.bound-details.left.stencil-align-dir-y = #0 %! SC
-        \override TextSpanner.bound-details.left.text = \markup {
-            \larger
-                \italic
-                    "grid. possibile"
-            \hspace
-                #1
-            }                                                    %! SC
-        \override TextSpanner.bound-details.right-broken.padding = #0 %! SC
-        \override TextSpanner.bound-details.right-broken.text = #'#f %! SC
-        \override TextSpanner.bound-details.right.arrow = ##t    %! SC
-        \override TextSpanner.bound-details.right.padding = #1   %! SC
-        \override TextSpanner.bound-details.right.stencil-align-dir-y = #0 %! SC
-        \override TextSpanner.bound-details.right.text = \markup {
-            \hspace
-                #1
-            \larger
-                \italic
-                    "flaut. possibile"
-            }                                                    %! SC
-        \override TextSpanner.dash-fraction = #0.25              %! SC
-        \override TextSpanner.dash-period = #1.5                 %! SC
         a,,1.
-        \startTextSpan                                           %! SC
+        - \tweak staff-padding #'5                               %! PWC1
+        - \tweak Y-extent ##f                                    %! PWC1
+        - \tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \whiteout
+                        \upright
+                            "grid. possibile"
+                    \hspace
+                        #0.5
+                }
+            }                                                    %! PWC1
+        - \tweak arrow-width 0.25                                %! PWC1
+        - \tweak dash-fraction 0.25                              %! PWC1
+        - \tweak dash-period 1.5                                 %! PWC1
+        - \tweak bound-details.left-broken.text ##f              %! PWC1
+        - \tweak bound-details.left.stencil-align-dir-y #center  %! PWC1
+        - \tweak bound-details.right.arrow ##t                   %! PWC1
+        - \tweak bound-details.right-broken.arrow ##f            %! PWC1
+        - \tweak bound-details.right-broken.padding 0            %! PWC1
+        - \tweak bound-details.right-broken.text ##f             %! PWC1
+        - \tweak bound-details.right.padding 0.5                 %! PWC1
+        - \tweak bound-details.right.stencil-align-dir-y #center %! PWC1
+        - \tweak bound-details.right.text \markup {
+            \concat
+                {
+                    \hspace
+                        #0.0
+                    \whiteout
+                        \upright
+                            "flaut. possibile"
+                }
+            }                                                    %! PWC1
+        \startTextSpan                                           %! PWC1
         
         a,,4
     }
@@ -2670,20 +2673,8 @@ F_CelloMusicVoice = {
     \times 8/7 {
         
         % [F CelloMusicVoice measure 249]                        %! SM4
-        \revert TextSpanner.bound-details.left-broken.text       %! SC
-        \revert TextSpanner.bound-details.left.padding           %! SC
-        \revert TextSpanner.bound-details.left.stencil-align-dir-y %! SC
-        \revert TextSpanner.bound-details.left.text              %! SC
-        \revert TextSpanner.bound-details.right-broken.padding   %! SC
-        \revert TextSpanner.bound-details.right-broken.text      %! SC
-        \revert TextSpanner.bound-details.right.arrow            %! SC
-        \revert TextSpanner.bound-details.right.padding          %! SC
-        \revert TextSpanner.bound-details.right.stencil-align-dir-y %! SC
-        \revert TextSpanner.bound-details.right.text             %! SC
-        \revert TextSpanner.dash-fraction                        %! SC
-        \revert TextSpanner.dash-period                          %! SC
         a,,1.
-        \stopTextSpan                                            %! SC
+        \stopTextSpan                                            %! PWC1
         
         a,,4
     }

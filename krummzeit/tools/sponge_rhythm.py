@@ -9,7 +9,7 @@ def sponge_rhythm():
     return baca.RhythmCommand(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
             extra_counts_per_division=[2, 1, 0],
-            talea=rhythmos.Talea([1, 2], 2),
+            talea=rhythmos.Talea(counts=[1, 2], denominator=2),
             tie_specifier=rhythmos.TieSpecifier(
                 repeat_ties=True,
                 ),

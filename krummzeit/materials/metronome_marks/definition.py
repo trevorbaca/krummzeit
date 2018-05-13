@@ -15,7 +15,7 @@ metronome_marks = abjad.OrderedDict(
             '67.5',
             abjad.MetronomeMark(
                 reference_duration=(1, 4),
-                units_per_minute=67.5,
+                units_per_minute=abjad.Fraction(135, 2),
                 custom_markup=abjad.Markup(
                     contents=[
                         abjad.MarkupCommand(

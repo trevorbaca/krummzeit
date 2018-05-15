@@ -4080,8 +4080,8 @@ A_ClarinetMusicVoice = {
     \once \override Staff.InstrumentName.color = #(x11-color 'blue) %! SM6:EXPLICIT_MARGIN_MARKUP_COLOR:IC:-PARTS
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     cs''!4.
-    -\staccato                                                   %! IC
     \mp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
+    -\staccato                                                   %! IC
     ^ \markup {
         \column
             {
@@ -4347,8 +4347,8 @@ A_ClarinetMusicVoice = {
     % [A ClarinetMusicVoice measure 29]                          %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     d''4.
-    -\staccato                                                   %! IC
     \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
+    -\staccato                                                   %! IC
     \times 2/3 {
         
         g''4
@@ -6682,8 +6682,8 @@ A_PianoMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
         \makeRed                                                 %! SM14
         g''16
-        -\staccatissimo                                          %! IC
         \fff                                                     %! SM8:REDUNDANT_DYNAMIC:IC
+        -\staccatissimo                                          %! IC
         [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -7261,8 +7261,8 @@ A_PercussionMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     c'4.
-    -\accent                                                     %! IC
     \effort_ff                                                   %! SM8:REAPPLIED_DYNAMIC:SM37
+    -\accent                                                     %! IC
     ^ \markup {
         \column
             {
@@ -7589,9 +7589,9 @@ A_PercussionMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     c'16
+    \p                                                           %! SM8:EXPLICIT_DYNAMIC:IC
     -\accent                                                     %! IC
     -\tenuto                                                     %! IC
-    \p                                                           %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC
             \upright                                             %! IC
@@ -7613,9 +7613,9 @@ A_PercussionMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                     %! IC
     -\tenuto                                                     %! IC
-    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8.
     
@@ -7624,9 +7624,9 @@ A_PercussionMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                     %! IC
     -\tenuto                                                     %! IC
-    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8
     
@@ -7637,9 +7637,9 @@ A_PercussionMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                     %! IC
     -\tenuto                                                     %! IC
-    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8
     
@@ -7655,9 +7655,9 @@ A_PercussionMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                     %! IC
     -\tenuto                                                     %! IC
-    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8.
     
@@ -7666,9 +7666,9 @@ A_PercussionMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                     %! IC
     -\tenuto                                                     %! IC
-    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8
     
@@ -7679,9 +7679,9 @@ A_PercussionMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                     %! IC
     -\tenuto                                                     %! IC
-    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8
     
@@ -7695,9 +7695,9 @@ A_PercussionMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                     %! IC
     -\tenuto                                                     %! IC
-    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8.
     
@@ -7706,9 +7706,9 @@ A_PercussionMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                     %! IC
     -\tenuto                                                     %! IC
-    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8
     
@@ -7719,9 +7719,9 @@ A_PercussionMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                     %! IC
     -\tenuto                                                     %! IC
-    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8
     
@@ -7737,9 +7737,9 @@ A_PercussionMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                     %! IC
     -\tenuto                                                     %! IC
-    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8.
     
@@ -7748,9 +7748,9 @@ A_PercussionMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'16
+    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                     %! IC
     -\tenuto                                                     %! IC
-    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     r8
     
@@ -7888,8 +7888,8 @@ A_ViolinMusicVoice = {
     % [A ViolinMusicVoice measure 21]                            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     f''4.
-    -\staccato                                                   %! IC
     \mp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
+    -\staccato                                                   %! IC
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC
             \upright                                             %! IC
@@ -8042,8 +8042,8 @@ A_ViolinMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     \makeRed                                                     %! SM14
     fs''!4.
-    -\staccato                                                   %! IC
     \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
+    -\staccato                                                   %! IC
     ^ \markup {
         \column
             {
@@ -8750,8 +8750,8 @@ A_ViolinMusicVoice = {
     % [A ViolinMusicVoice measure 51]                            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     g''4.
-    -\downbow                                                    %! IC
     \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
+    -\downbow                                                    %! IC
     \glissando                                                   %! SC
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC
@@ -9068,8 +9068,8 @@ A_ViolinMusicVoice = {
         % [A ViolinMusicVoice measure 67]                        %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         b''8
-        -\staccatissimo                                          %! IC
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
+        -\staccatissimo                                          %! IC
         ^ \markup {                                              %! IC
             \whiteout                                            %! IC
                 \upright                                         %! IC
@@ -9763,8 +9763,8 @@ A_ViolaMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     af''!4.
-    -\downbow                                                    %! IC
     \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
+    -\downbow                                                    %! IC
     \glissando                                                   %! SC
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC
@@ -10038,8 +10038,8 @@ A_ViolaMusicVoice = {
         \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         b''8
-        -\staccatissimo                                          %! IC
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
+        -\staccatissimo                                          %! IC
         ^ \markup {                                              %! IC
             \whiteout                                            %! IC
                 \upright                                         %! IC
@@ -10753,8 +10753,8 @@ A_CelloMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     e''4.
-    -\downbow                                                    %! IC
     \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
+    -\downbow                                                    %! IC
     \glissando                                                   %! SC
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC
@@ -11114,8 +11114,8 @@ A_CelloMusicVoice = {
         \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         cs''!8
-        -\staccatissimo                                          %! IC
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
+        -\staccatissimo                                          %! IC
         ^ \markup {                                              %! IC
             \whiteout                                            %! IC
                 \upright                                         %! IC

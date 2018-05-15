@@ -3259,8 +3259,8 @@ B_PianoMusicVoice = {
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         cs'''!16
-        -\staccatissimo                                          %! IC
         \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC
+        -\staccatissimo                                          %! IC
         [
         
         cs'''!16
@@ -3748,8 +3748,8 @@ B_PercussionMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     cs''!8
-    -\staccatissimo                                              %! IC
     \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC
+    -\staccatissimo                                              %! IC
     [
     
     cs''!8

@@ -2660,8 +2660,8 @@ H_PercussionMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c4
-    -\accent                                                     %! IC
     \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC
+    -\accent                                                     %! IC
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC
             \upright                                             %! IC
@@ -2674,44 +2674,44 @@ H_PercussionMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c4
-    -\accent                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
+    -\accent                                                     %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c4
-    -\accent                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
+    -\accent                                                     %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c4
-    -\accent                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
+    -\accent                                                     %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c4
-    -\accent                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
+    -\accent                                                     %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c4
-    -\accent                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
+    -\accent                                                     %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c4
-    -\accent                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
+    -\accent                                                     %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \makeBlue                                                    %! SM24
     c4
-    -\accent                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
+    -\accent                                                     %! IC
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     
     % [H PercussionMusicVoice measure 287]                       %! SM4

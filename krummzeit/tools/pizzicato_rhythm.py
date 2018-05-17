@@ -4,8 +4,9 @@ from abjad import rhythmmakertools as rhythmos
 
 
 def pizzicato_rhythm(masks=None, split_divisions_by_counts=(6, 18)):
-    r'''Makes pizzicato rhythm.
-    '''
+    """
+    Makes pizzicato rhythm.
+    """
     return baca.RhythmCommand(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
             extra_counts_per_division=[2, 2, 0, 2, 4, 6],

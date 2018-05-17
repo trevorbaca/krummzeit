@@ -8,8 +8,9 @@ def closing_pizzicati(
     extra_counts_per_division,
     split_divisions_by_counts,
     ):
-    r'''Makes closing pizzicati rhythm.
-    '''
+    """
+    Makes closing pizzicati rhythm.
+    """
     return baca.RhythmCommand(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
             talea=rhythmos.Talea(

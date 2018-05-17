@@ -4,8 +4,9 @@ from abjad import rhythmmakertools as rhythmos
 
 
 def fused_expanse(durations):
-    r'''Makes fused expanse rhythm.
-    '''
+    """
+    Makes fused expanse rhythm.
+    """
     return baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,

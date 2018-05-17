@@ -4,8 +4,9 @@ from abjad import rhythmmakertools as rhythmos
 
 
 def incise_chain_b():
-    r'''Makes incise chain B.
-    '''
+    """
+    Makes incise chain B.
+    """
     return baca.RhythmCommand(
         rhythm_maker=rhythmos.IncisedRhythmMaker(
             beam_specifier=rhythmos.BeamSpecifier(

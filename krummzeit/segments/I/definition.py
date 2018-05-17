@@ -150,34 +150,34 @@ maker(
     (['pf', 'perc'], 1),
     baca.dynamic('fff'),
     baca.pitch('F#6'),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     )
 
 maker(
     ('vn', (1, 3)),
     baca.dynamic('fff'),
     baca.pitch('Eb5'),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     )
 
 maker(
     ('va', (1, 3)),
     baca.dynamic('fff'),
     baca.pitch('A3'),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     )
 
 maker(
     ('vc', (1, 3)),
     baca.dynamic('fff'),
     baca.pitch('E~2'),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     )
 
 maker(
     ('perc', (3, 15)),
     baca.dynamic('f'),
-    baca.laissez_vibrer(baca.ptails()),
+    baca.laissez_vibrer(selector=baca.ptails()),
     )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
@@ -262,7 +262,7 @@ maker(
     (['vn', 'va', 'vc'], 15),
     baca.dynamic('fff'),
     baca.markup.pizz(),
-    baca.staccatissimo(baca.pheads()),
+    baca.staccatissimo(selector=baca.pheads()),
     krummzeit.displacement(),
     krummzeit.register_narrow(6),
     )

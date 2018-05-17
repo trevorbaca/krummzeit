@@ -4,8 +4,9 @@ from abjad import rhythmmakertools as rhythmos
 
 
 def left_remainder_quarters(division_masks=None):
-    r'''Makes left-remainder quarter rhythm.
-    '''
+    """
+    Makes left-remainder quarter rhythm.
+    """
     return baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,

@@ -4,8 +4,9 @@ from abjad import rhythmmakertools as rhythmos
 
 
 def color_tuplets(division_mask=None, rotation=0):
-    r'''Makes color tuplets.
-    '''
+    """
+    Makes color tuplets.
+    """
 
     tuplet_ratios = baca.sequence([
         (-2, 4, 1, 1, 12),

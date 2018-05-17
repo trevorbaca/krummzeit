@@ -2,7 +2,8 @@ import abjad
 
 
 def e_flat_clarinet_markup():
-    r'''Makes e-flat clarinet markup.
+    r"""
+    Makes e-flat clarinet markup.
 
     >>> import krummzeit
 
@@ -30,7 +31,7 @@ def e_flat_clarinet_markup():
                     }
                 }
 
-    '''
+    """
     return abjad.Markup.line([
         abjad.Markup.concat([
             'E',

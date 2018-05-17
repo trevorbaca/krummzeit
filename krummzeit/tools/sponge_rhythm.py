@@ -4,8 +4,9 @@ from abjad import rhythmmakertools as rhythmos
 
 
 def sponge_rhythm():
-    r'''Makes sponge rhythm.
-    '''
+    """
+    Makes sponge rhythm.
+    """
     return baca.RhythmCommand(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
             extra_counts_per_division=[2, 1, 0],

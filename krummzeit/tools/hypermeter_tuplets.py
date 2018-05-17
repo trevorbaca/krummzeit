@@ -8,8 +8,9 @@ def hypermeter_tuplets(
     counts=(2, 3, 1),
     division_mask=None,
     ):
-    r'''Makes hypermeter tuplets.
-    '''
+    """
+    Makes hypermeter tuplets.
+    """
     if division_mask is not None:
         division_masks = [division_mask]
     else:

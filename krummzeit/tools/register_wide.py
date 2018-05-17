@@ -3,8 +3,9 @@ import baca
 
 
 def register_wide(start):
-    r'''Registers wide.
-    '''
+    """
+    Registers wide.
+    """
     if start == 3:
         wide_third_octave = baca.RegisterCommand(
             registration=baca.Registration(

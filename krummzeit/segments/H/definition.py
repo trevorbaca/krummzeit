@@ -160,12 +160,12 @@ maker(
 maker(
     (['vn', 'va', 'vc'], 1),
     baca.possibile_dynamic('fff'),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     )
 
 maker(
     ('perc', (4, 5)),
-    baca.accent(baca.pheads()),
+    baca.accent(selector=baca.pheads()),
     baca.reiterated_dynamic('ff'),
     )
 
@@ -254,14 +254,14 @@ maker(
     (['vn', 'va', 'vc'], (6, 8)),
     baca.dynamic('fff'),
     baca.map(baca.glissando(), baca.runs()),
-    baca.stem_tremolo(baca.plts()[1:]),
+    baca.stem_tremolo(selector=baca.plts()[1:]),
     )
 
 maker(
     (['pf', 'perc'], 8),
     baca.dynamic('fff'),
     baca.pitch('F#6'),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     )
 
 ### VERTICAL ALIGNMENT ###

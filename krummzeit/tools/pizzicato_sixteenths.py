@@ -4,8 +4,9 @@ from abjad import rhythmmakertools as rhythmos
 
 
 def pizzicato_sixteenths(extra_counts, masks=None):
-    r'''Makes pizzicato sixteenths rhythm.
-    '''
+    """
+    Makes pizzicato sixteenths rhythm.
+    """
     return baca.RhythmCommand(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
             burnish_specifier=rhythmos.BurnishSpecifier(

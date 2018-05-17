@@ -1128,8 +1128,8 @@ G_OboeMusicVoice = {
         \override TupletBracket.staff-padding = #3               %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         fs''!8
-        -\staccato                                               %! IC
         \pp                                                      %! SM8:EXPLICIT_DYNAMIC:IC
+        -\staccato                                               %! IC
         [
         ^ \markup {                                              %! IC
             \whiteout                                            %! IC
@@ -1517,8 +1517,8 @@ G_ClarinetMusicVoice = {
     \override DynamicLineSpanner.staff-padding = #'3             %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     f''4.
-    -\staccato                                                   %! IC
     \pp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
+    -\staccato                                                   %! IC
     ^ \markup {
         \column
             {
@@ -1799,8 +1799,8 @@ G_PianoMusicVoice = {
         \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         bf''!8
-        -\staccato                                               %! IC
         \pp                                                      %! SM8:EXPLICIT_DYNAMIC:IC
+        -\staccato                                               %! IC
         [
         ^ \markup {                                              %! IC
             \whiteout                                            %! IC
@@ -2061,8 +2061,8 @@ G_PianoMusicVoice = {
     \set Staff.forceClef = ##t                                   %! SM8:EXPLICIT_CLEF:SM33:IC
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     c'2
-    -\tenuto                                                     %! IC
     \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC
+    -\tenuto                                                     %! IC
     ^ \markup {
         \column
             {
@@ -2084,8 +2084,8 @@ G_PianoMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'4
-    -\tenuto                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
+    -\tenuto                                                     %! IC
     ~
     
     % [G PianoMusicVoice measure 271]                            %! SM4
@@ -2096,8 +2096,8 @@ G_PianoMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'2
-    -\tenuto                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
+    -\tenuto                                                     %! IC
     ~
     
     % [G PianoMusicVoice measure 272]                            %! SM4
@@ -2110,8 +2110,8 @@ G_PianoMusicVoice = {
     % [G PianoMusicVoice measure 273]                            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'4.
-    -\tenuto                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
+    -\tenuto                                                     %! IC
     ~
     
     c'4
@@ -2119,8 +2119,8 @@ G_PianoMusicVoice = {
     % [G PianoMusicVoice measure 274]                            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'2.
-    -\tenuto                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
+    -\tenuto                                                     %! IC
     ~
     
     c'4
@@ -2128,8 +2128,8 @@ G_PianoMusicVoice = {
     % [G PianoMusicVoice measure 275]                            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'2
-    -\tenuto                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
+    -\tenuto                                                     %! IC
     
     r2
     
@@ -2138,13 +2138,13 @@ G_PianoMusicVoice = {
     % [G PianoMusicVoice measure 276]                            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'2
-    -\tenuto                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
+    -\tenuto                                                     %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c'4
-    -\tenuto                                                     %! IC
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
+    -\tenuto                                                     %! IC
     \revert NoteHead.style                                       %! OC2
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     
@@ -2407,8 +2407,8 @@ G_ViolinMusicVoice = {
     \override TupletBracket.staff-padding = #3                   %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     e''8
-    -\staccato                                                   %! IC
     \pp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
+    -\staccato                                                   %! IC
     [
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC

@@ -150,7 +150,7 @@ maker(
     baca.dynamic('fff'),
     baca.make_repeat_tied_notes(),
     baca.pitch('C#5'),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     )
 
 maker(
@@ -164,12 +164,12 @@ maker(
     baca.make_repeat_tied_notes(),
     baca.markup.boxed('xylophone'),
     baca.pitch('C#5'),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     )
 
 maker(
     ('perc', (9, 10)),
-    baca.accent(baca.pheads()),
+    baca.accent(selector=baca.pheads()),
     baca.bar_extent((-2, 2)),
     baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
     baca.bar_extent((0, 0), after=True, selector=baca.leaf(-1)),
@@ -201,7 +201,7 @@ maker(
 maker(
     (['vn', 'va', 'vc'], 1),
     baca.dynamic('fff'),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     )
 
 pcs = krummzeit.violet_pitch_classes.get_payload()
@@ -217,7 +217,10 @@ maker(
 
 maker(
     (['vn', 'va', 'vc'], (3, 7)),
-    baca.map(baca.glissando(), baca.runs()),
+    baca.map(
+        baca.glissando(),
+        baca.runs(),
+        ),
     baca.hairpin('pp < ff'),
     baca.markup.molto_flautando(),
     baca.note_head_style_harmonic(),

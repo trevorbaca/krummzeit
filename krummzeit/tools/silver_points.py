@@ -8,8 +8,9 @@ def silver_points(
     tuplet_ratios=[(-1, 1, 1, 2), (-1, 1, 1, -2, 2)],
     division_mask=None,
     ):
-    r'''Makes silver point rhythm.
-    '''
+    """
+    Makes silver point rhythm.
+    """
     if division_mask is not None:
         division_masks = [division_mask]
     else:

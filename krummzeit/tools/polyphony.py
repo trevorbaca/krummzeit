@@ -12,8 +12,9 @@ def polyphony(
     ties=None,
     rhythm_overwrite=None,
     ):
-    r'''Makes polyphony rhythm.
-    '''
+    """
+    Makes polyphony rhythm.
+    """
 
     if rhythm_overwrite is None:
         rhythm_overwrites = []

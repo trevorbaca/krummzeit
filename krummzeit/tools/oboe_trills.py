@@ -4,8 +4,9 @@ from abjad import rhythmmakertools as rhythmos
 
 
 def oboe_trills():
-    r'''Makes oboe trill rhythm.
-    '''
+    """
+    Makes oboe trill rhythm.
+    """
     return baca.RhythmCommand(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(2, 1), (2, 1), (1, 1, 1)],

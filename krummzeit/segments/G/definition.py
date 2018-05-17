@@ -249,7 +249,7 @@ maker(
     ('pf', (5, 12)),
     baca.dynamic('pp'),
     baca.markup.leggierissimo(),
-    baca.staccato(baca.pheads()),
+    baca.staccato(selector=baca.pheads()),
     baca.suite([
         krummzeit.displacement(),
         krummzeit.register_wide(5),
@@ -276,14 +276,14 @@ maker(
     (['ob', 'cl'], (9, 12)),
     baca.dynamic('pp'),
     baca.markup.leggierissimo(),
-    baca.staccato(baca.pheads()),
+    baca.staccato(selector=baca.pheads()),
     )
 
 maker(
     ('vn', (5, 12)),
     baca.dynamic('pp'),
     baca.markup.leggierissimo_off_string_bowing_on_staccati(),
-    baca.staccato(baca.pheads()),
+    baca.staccato(selector=baca.pheads()),
     )
 
 maker(
@@ -311,7 +311,7 @@ maker(
     baca.note_head_style_harmonic(),
     baca.pitch('C4'),
     baca.reiterated_dynamic('ff'),
-    baca.tenuto(baca.pheads()),
+    baca.tenuto(selector=baca.pheads()),
     krummzeit.markup.fifth_harmonic_of_F1(),
     )
 
@@ -401,13 +401,13 @@ maker(
 maker(
     ('va', (20, 21)),
     baca.markup.subito_ordinario(),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     )
 
 maker(
     (['vn', 'vc'], 21),
     baca.markup.subito_ordinario(),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     )
 
 ### VERTICAL ALIGNMENT ###

@@ -4,8 +4,9 @@ from abjad import rhythmmakertools as rhythmos
 
 
 def single_cluster_piano_rhythm():
-    r'''Makes single-cluster piano rhythm.
-    '''
+    """
+    Makes single-cluster piano rhythm.
+    """
     return baca.RhythmCommand(
         rhythm_maker=rhythmos.IncisedRhythmMaker(
             incise_specifier=rhythmos.InciseSpecifier(

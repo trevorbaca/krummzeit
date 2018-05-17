@@ -4,8 +4,9 @@ from abjad import rhythmmakertools as rhythmos
 
 
 def prolated_quarters(extra_counts):
-    r'''Makes prolated quarters.
-    '''
+    """
+    Makes prolated quarters.
+    """
     return baca.RhythmCommand(
         rhythm_maker=rhythmos.EvenDivisionRhythmMaker(
             denominators=[4],

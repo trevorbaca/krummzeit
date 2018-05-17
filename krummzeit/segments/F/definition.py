@@ -147,7 +147,7 @@ maker(
 maker(
     ('perc', (2, 11)),
     baca.dynamic('ppp'),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     krummzeit.markup.fingertips(),
     )
 
@@ -257,7 +257,7 @@ maker(
 
 maker(
     (['ob', 'cl'], (3, 7)),
-    baca.staccato(baca.ptlts()),
+    baca.staccato(selector=baca.ptlts()),
     )
 
 ### VERTICAL ALIGNMENT ###

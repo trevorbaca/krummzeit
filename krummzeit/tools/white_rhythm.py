@@ -8,8 +8,9 @@ def white_rhythm(
     remainder=abjad.Left,
     do_not_burnish=None,
     ):
-    r'''Makes white rhythm.
-    '''
+    """
+    Makes white rhythm.
+    """
     
     if do_not_burnish:
         burnish_specifier = None

@@ -4,8 +4,9 @@ from abjad import rhythmmakertools as rhythmos
 
 
 def detached_triplets():
-    r'''Makes detached triplets.
-    '''
+    """
+    Makes detached triplets.
+    """
     return baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,

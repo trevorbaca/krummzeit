@@ -4,8 +4,9 @@ import krummzeit
 
 
 def register_narrow(start, stop=None):
-    r'''Registers narrow.
-    '''
+    """
+    Registers narrow.
+    """
 
     narrow_second_octave = baca.RegisterCommand(
         registration=baca.Registration(

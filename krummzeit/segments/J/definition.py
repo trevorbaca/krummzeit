@@ -93,7 +93,7 @@ maker(
 
 maker(
     ('pf', (1, 12)),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     )
 
 maker(
@@ -110,7 +110,7 @@ maker(
     ('perc', (1, 12)),
     baca.dynamic('fff'),
     baca.dls_staff_padding(4),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     )
 
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
@@ -128,7 +128,7 @@ maker(
     baca.dynamic('ff'),
     baca.dls_staff_padding(5),
     baca.markup.pizz(),
-    baca.staccatissimo(baca.pheads()),
+    baca.staccatissimo(selector=baca.pheads()),
     baca.tuplet_bracket_staff_padding(2),
     krummzeit.displacement(),
     krummzeit.register_narrow(6),

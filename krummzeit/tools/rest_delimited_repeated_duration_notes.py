@@ -4,8 +4,9 @@ from abjad import rhythmmakertools as rhythmos
 
 
 def rest_delimited_repeated_duration_notes(duration, suffix_denominator):
-    r'''Makes rest-delimited repeated duration notes.
-    '''
+    """
+    Makes rest-delimited repeated duration notes.
+    """
     return baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,

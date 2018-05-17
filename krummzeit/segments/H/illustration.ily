@@ -1,6 +1,6 @@
 H_GlobalSkips = {
     
-    % [H GlobalSkips measure 281]                                        %! SM4
+    % [H GlobalSkips measure 281 / measure 1]                            %! SM4
     \time 7/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \mark #8                                                             %! IC
     \bar ""                                                              %! SM2:+SEGMENT:EMPTY_START_BAR
@@ -90,7 +90,7 @@ H_GlobalSkips = {
             }
         }
     
-    % [H GlobalSkips measure 282]                                        %! SM4
+    % [H GlobalSkips measure 282 / measure 2]                            %! SM4
     \time 6/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/2
@@ -120,7 +120,7 @@ H_GlobalSkips = {
             }
         }
     
-    % [H GlobalSkips measure 283]                                        %! SM4
+    % [H GlobalSkips measure 283 / measure 3]                            %! SM4
     \time 7/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/4
@@ -155,7 +155,7 @@ H_GlobalSkips = {
             }
         }
     
-    % [H GlobalSkips measure 284]                                        %! SM4
+    % [H GlobalSkips measure 284 / measure 4]                            %! SM4
     \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/4
     ^ \markup {
@@ -189,7 +189,7 @@ H_GlobalSkips = {
             }
         }
     
-    % [H GlobalSkips measure 285]                                        %! SM4
+    % [H GlobalSkips measure 285 / measure 5]                            %! SM4
     \time 3/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
@@ -224,7 +224,7 @@ H_GlobalSkips = {
             }
         }
     
-    % [H GlobalSkips measure 286]                                        %! SM4
+    % [H GlobalSkips measure 286 / measure 6]                            %! SM4
     \time 11/8                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 11/8
@@ -309,7 +309,7 @@ H_GlobalSkips = {
             }
         }
     
-    % [H GlobalSkips measure 287]                                        %! SM4
+    % [H GlobalSkips measure 287 / measure 7]                            %! SM4
     \time 5/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/8
@@ -344,7 +344,7 @@ H_GlobalSkips = {
             }
         }
     
-    % [H GlobalSkips measure 288]                                        %! SM4
+    % [H GlobalSkips measure 288 / measure 8]                            %! SM4
     \time 4/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1
@@ -379,7 +379,7 @@ H_GlobalSkips = {
             }
         }
     
-    % [H GlobalSkips measure 289]                                        %! SM4
+    % [H GlobalSkips measure 289 / measure 9]                            %! SM4
     \time 2/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/2
@@ -414,7 +414,7 @@ H_GlobalSkips = {
             }
         }
     
-    % [H GlobalSkips measure 290]                                        %! SM4
+    % [H GlobalSkips measure 290 / measure 10]                           %! SM4
     \time 7/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/4
@@ -452,7 +452,7 @@ H_GlobalSkips = {
 
 H_OboeMusicVoice = {
     
-    % [H OboeMusicVoice measure 281]                             %! SM4
+    % [H OboeMusicVoice measure 281 / measure 1]                 %! SM4
     \set Staff.instrumentName =                                  %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
     \markup {                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \hcenter-in                                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -505,24 +505,24 @@ H_OboeMusicVoice = {
             Ob.                                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     
-    % [H OboeMusicVoice measure 282]                             %! SM4
+    % [H OboeMusicVoice measure 282 / measure 2]                 %! SM4
     R1 * 3/2
     
-    % [H OboeMusicVoice measure 283]                             %! SM4
+    % [H OboeMusicVoice measure 283 / measure 3]                 %! SM4
     R1 * 7/4
     
-    % [H OboeMusicVoice measure 284]                             %! SM4
+    % [H OboeMusicVoice measure 284 / measure 4]                 %! SM4
     \override DynamicLineSpanner.staff-padding = #'3             %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     d''1..
     \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC
     \startTrillSpan                                              %! SC
     
-    % [H OboeMusicVoice measure 285]                             %! SM4
+    % [H OboeMusicVoice measure 285 / measure 5]                 %! SM4
     d''2.
     \repeatTie
     
-    % [H OboeMusicVoice measure 286]                             %! SM4
+    % [H OboeMusicVoice measure 286 / measure 6]                 %! SM4
     d''2..
     \repeatTie
     
@@ -532,7 +532,7 @@ H_OboeMusicVoice = {
     d''4
     \repeatTie
     
-    % [H OboeMusicVoice measure 287]                             %! SM4
+    % [H OboeMusicVoice measure 287 / measure 7]                 %! SM4
     d''4.
     \repeatTie
     
@@ -542,7 +542,7 @@ H_OboeMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
         
-        % [H OboeMusicVoice measure 288]                         %! SM4
+        % [H OboeMusicVoice measure 288 / measure 8]             %! SM4
         \override TupletBracket.staff-padding = #2               %! OC1
         ef''!2.
         \stopTrillSpan                                           %! SC
@@ -559,7 +559,7 @@ H_OboeMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/5 {
         
-        % [H OboeMusicVoice measure 290]                         %! SM4
+        % [H OboeMusicVoice measure 290 / measure 10]            %! SM4
         ef''!2.
         ^ \markup {
             \override
@@ -591,7 +591,7 @@ H_OboeMusicStaff = {
 
 H_ClarinetMusicVoice = {
     
-    % [H ClarinetMusicVoice measure 281]                         %! SM4
+    % [H ClarinetMusicVoice measure 281 / measure 1]             %! SM4
     \set Staff.instrumentName =                                  %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
     \markup {                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \hcenter-in                                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -644,13 +644,13 @@ H_ClarinetMusicVoice = {
             "B. cl."                                             %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     
-    % [H ClarinetMusicVoice measure 282]                         %! SM4
+    % [H ClarinetMusicVoice measure 282 / measure 2]             %! SM4
     R1 * 3/2
     
-    % [H ClarinetMusicVoice measure 283]                         %! SM4
+    % [H ClarinetMusicVoice measure 283 / measure 3]             %! SM4
     R1 * 7/4
     
-    % [H ClarinetMusicVoice measure 284]                         %! SM4
+    % [H ClarinetMusicVoice measure 284 / measure 4]             %! SM4
     \override DynamicLineSpanner.staff-padding = #'3             %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     b'1..
@@ -661,20 +661,20 @@ H_ClarinetMusicVoice = {
             (“ClarinetInEFlat”)                                  %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
         }                                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
     
-    % [H ClarinetMusicVoice measure 285]                         %! SM4
+    % [H ClarinetMusicVoice measure 285 / measure 5]             %! SM4
     b'2.
     \repeatTie
     
-    % [H ClarinetMusicVoice measure 286]                         %! SM4
+    % [H ClarinetMusicVoice measure 286 / measure 6]             %! SM4
     R1 * 11/8
     
-    % [H ClarinetMusicVoice measure 287]                         %! SM4
+    % [H ClarinetMusicVoice measure 287 / measure 7]             %! SM4
     R1 * 5/8
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
         
-        % [H ClarinetMusicVoice measure 288]                     %! SM4
+        % [H ClarinetMusicVoice measure 288 / measure 8]         %! SM4
         \override DynamicLineSpanner.staff-padding = #'9         %! OC1
         \override Stem.direction = #up                           %! OC1
         \override TupletBracket.staff-padding = #5               %! OC1
@@ -699,7 +699,7 @@ H_ClarinetMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/5 {
         
-        % [H ClarinetMusicVoice measure 290]                     %! SM4
+        % [H ClarinetMusicVoice measure 290 / measure 10]        %! SM4
         f4
         ^ \markup {
             \override
@@ -734,7 +734,7 @@ H_ClarinetMusicStaff = {
 H_PianoMusicVoice = {
     \times 2/3 {
         
-        % [H PianoMusicVoice measure 281]                        %! SM4
+        % [H PianoMusicVoice measure 281 / measure 1]            %! SM4
         \set Staff.instrumentName =                              %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
         \markup {                                                %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
             \hcenter-in                                          %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
@@ -2544,17 +2544,17 @@ H_PianoMusicVoice = {
             }
     }
     
-    % [H PianoMusicVoice measure 287]                            %! SM4
+    % [H PianoMusicVoice measure 287 / measure 7]                %! SM4
     R1 * 5/8
     
-    % [H PianoMusicVoice measure 288]                            %! SM4
+    % [H PianoMusicVoice measure 288 / measure 8]                %! SM4
     \override DynamicLineSpanner.staff-padding = #'6             %! OC1
     \override TupletBracket.staff-padding = #2                   %! OC1
     R1 * 1
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/7 {
         
-        % [H PianoMusicVoice measure 289]                        %! SM4
+        % [H PianoMusicVoice measure 289 / measure 9]            %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         fs'''!2.
         :32                                                      %! IC
@@ -2582,7 +2582,7 @@ H_PianoMusicStaff = {
 
 H_PercussionMusicVoice = {
     
-    % [H PercussionMusicVoice measure 281]                       %! SM4
+    % [H PercussionMusicVoice measure 281 / measure 1]           %! SM4
     \set Staff.instrumentName =                                  %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
     \markup {                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \hcenter-in                                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -2639,16 +2639,16 @@ H_PercussionMusicVoice = {
             Perc.                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     
-    % [H PercussionMusicVoice measure 282]                       %! SM4
+    % [H PercussionMusicVoice measure 282 / measure 2]           %! SM4
     R1 * 3/2
     
-    % [H PercussionMusicVoice measure 283]                       %! SM4
+    % [H PercussionMusicVoice measure 283 / measure 3]           %! SM4
     R1 * 7/4
     
-    % [H PercussionMusicVoice measure 284]                       %! SM4
+    % [H PercussionMusicVoice measure 284 / measure 4]           %! SM4
     R1 * 7/4
     
-    % [H PercussionMusicVoice measure 285]                       %! SM4
+    % [H PercussionMusicVoice measure 285 / measure 5]           %! SM4
     \override DynamicLineSpanner.staff-padding = #'6             %! OC1
     \clef "percussion"                                           %! SM8:REDUNDANT_CLEF:IC
     \once \override Staff.Clef.color = #(x11-color 'DeepPink1)   %! SM6:REDUNDANT_CLEF_COLOR:IC
@@ -2714,16 +2714,16 @@ H_PercussionMusicVoice = {
     -\accent                                                     %! IC
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     
-    % [H PercussionMusicVoice measure 287]                       %! SM4
+    % [H PercussionMusicVoice measure 287 / measure 7]           %! SM4
     R1 * 5/8
     
-    % [H PercussionMusicVoice measure 288]                       %! SM4
+    % [H PercussionMusicVoice measure 288 / measure 8]           %! SM4
     \override TupletBracket.staff-padding = #3                   %! OC1
     R1 * 1
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/7 {
         
-        % [H PercussionMusicVoice measure 289]                   %! SM4
+        % [H PercussionMusicVoice measure 289 / measure 9]       %! SM4
         \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
         \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
     %@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
@@ -2757,7 +2757,7 @@ H_ViolinMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 19/10 {
         
-        % [H ViolinMusicVoice measure 281]                       %! SM4
+        % [H ViolinMusicVoice measure 281 / measure 1]           %! SM4
         \set Staff.instrumentName =                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \markup {                                                %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
             \hcenter-in                                          %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -2820,7 +2820,7 @@ H_ViolinMusicVoice = {
     }
     \times 2/3 {
         
-        % [H ViolinMusicVoice measure 283]                       %! SM4
+        % [H ViolinMusicVoice measure 283 / measure 3]           %! SM4
         \override NoteHead.style = #'harmonic                    %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         \makeRed                                                 %! SM14
@@ -2846,7 +2846,7 @@ H_ViolinMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/7 {
         
-        % [H ViolinMusicVoice measure 284]                       %! SM4
+        % [H ViolinMusicVoice measure 284 / measure 4]           %! SM4
         cs'!1
         \glissando                                               %! SC
         
@@ -2863,7 +2863,7 @@ H_ViolinMusicVoice = {
     }
     \times 4/5 {
         
-        % [H ViolinMusicVoice measure 285]                       %! SM4
+        % [H ViolinMusicVoice measure 285 / measure 5]           %! SM4
         f16
         \glissando                                               %! SC
         
@@ -2887,12 +2887,12 @@ H_ViolinMusicVoice = {
         \revert NoteHead.style                                   %! OC2
     }
     
-    % [H ViolinMusicVoice measure 286]                           %! SM4
+    % [H ViolinMusicVoice measure 286 / measure 6]               %! SM4
     R1 * 11/8
     \tweak text #tuplet-number::calc-fraction-text
     \times 13/10 {
         
-        % [H ViolinMusicVoice measure 287]                       %! SM4
+        % [H ViolinMusicVoice measure 287 / measure 7]           %! SM4
         \override DynamicLineSpanner.staff-padding = #'7         %! OC1
         \override TupletBracket.staff-padding = #3               %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
@@ -2909,7 +2909,7 @@ H_ViolinMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/5 {
         
-        % [H ViolinMusicVoice measure 289]                       %! SM4
+        % [H ViolinMusicVoice measure 289 / measure 9]           %! SM4
         \makeRed                                                 %! SM14
         ef''!2.
         :32                                                      %! IC
@@ -2938,7 +2938,7 @@ H_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 19/10 {
         
-        % [H ViolaMusicVoice measure 281]                        %! SM4
+        % [H ViolaMusicVoice measure 281 / measure 1]            %! SM4
         \set Staff.instrumentName =                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \markup {                                                %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
             \hcenter-in                                          %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -2998,7 +2998,7 @@ H_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/9 {
         
-        % [H ViolaMusicVoice measure 283]                        %! SM4
+        % [H ViolaMusicVoice measure 283 / measure 3]            %! SM4
         \override NoteHead.style = #'harmonic                    %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         b2.
@@ -3023,7 +3023,7 @@ H_ViolaMusicVoice = {
     }
     \times 4/7 {
         
-        % [H ViolaMusicVoice measure 284]                        %! SM4
+        % [H ViolaMusicVoice measure 284 / measure 4]            %! SM4
         e2
         \glissando                                               %! SC
         
@@ -3046,7 +3046,7 @@ H_ViolaMusicVoice = {
     }
     \times 4/7 {
         
-        % [H ViolaMusicVoice measure 285]                        %! SM4
+        % [H ViolaMusicVoice measure 285 / measure 5]            %! SM4
         e4
         \glissando                                               %! SC
         
@@ -3062,12 +3062,12 @@ H_ViolaMusicVoice = {
         \revert NoteHead.style                                   %! OC2
     }
     
-    % [H ViolaMusicVoice measure 286]                            %! SM4
+    % [H ViolaMusicVoice measure 286 / measure 6]                %! SM4
     R1 * 11/8
     \tweak text #tuplet-number::calc-fraction-text
     \times 13/10 {
         
-        % [H ViolaMusicVoice measure 287]                        %! SM4
+        % [H ViolaMusicVoice measure 287 / measure 7]            %! SM4
         \override DynamicLineSpanner.staff-padding = #'9         %! OC1
         \override TupletBracket.staff-padding = #5               %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
@@ -3084,7 +3084,7 @@ H_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/5 {
         
-        % [H ViolaMusicVoice measure 289]                        %! SM4
+        % [H ViolaMusicVoice measure 289 / measure 9]            %! SM4
         \makeRed                                                 %! SM14
         a4
         :32                                                      %! IC
@@ -3113,7 +3113,7 @@ H_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 19/10 {
         
-        % [H CelloMusicVoice measure 281]                        %! SM4
+        % [H CelloMusicVoice measure 281 / measure 1]            %! SM4
         \set Staff.instrumentName =                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \markup {                                                %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
             \hcenter-in                                          %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -3172,7 +3172,7 @@ H_CelloMusicVoice = {
     }
     \times 2/3 {
         
-        % [H CelloMusicVoice measure 283]                        %! SM4
+        % [H CelloMusicVoice measure 283 / measure 3]            %! SM4
         \override NoteHead.style = #'harmonic                    %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         a,4
@@ -3200,7 +3200,7 @@ H_CelloMusicVoice = {
     }
     \times 2/3 {
         
-        % [H CelloMusicVoice measure 284]                        %! SM4
+        % [H CelloMusicVoice measure 284 / measure 4]            %! SM4
         bf,!4
         \glissando                                               %! SC
         
@@ -3215,7 +3215,7 @@ H_CelloMusicVoice = {
     \glissando                                                   %! SC
     \times 4/7 {
         
-        % [H CelloMusicVoice measure 285]                        %! SM4
+        % [H CelloMusicVoice measure 285 / measure 5]            %! SM4
         b,2
         \glissando                                               %! SC
         
@@ -3231,12 +3231,12 @@ H_CelloMusicVoice = {
         \revert NoteHead.style                                   %! OC2
     }
     
-    % [H CelloMusicVoice measure 286]                            %! SM4
+    % [H CelloMusicVoice measure 286 / measure 6]                %! SM4
     R1 * 11/8
     \tweak text #tuplet-number::calc-fraction-text
     \times 13/10 {
         
-        % [H CelloMusicVoice measure 287]                        %! SM4
+        % [H CelloMusicVoice measure 287 / measure 7]            %! SM4
         \override DynamicLineSpanner.staff-padding = #'9         %! OC1
         \override TupletBracket.staff-padding = #5               %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
@@ -3253,7 +3253,7 @@ H_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/5 {
         
-        % [H CelloMusicVoice measure 289]                        %! SM4
+        % [H CelloMusicVoice measure 289 / measure 9]            %! SM4
         \makeRed                                                 %! SM14
         eqf,!2
         :32                                                      %! IC

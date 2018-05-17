@@ -3,7 +3,8 @@ import baca
 
 
 class RegisterTransitionCommand(baca.Command):
-    r'''Register transition command.
+    r"""
+    Register transition command.
 
     >>> import krummzeit
 
@@ -101,7 +102,7 @@ class RegisterTransitionCommand(baca.Command):
                 >>
             >>
 
-    '''
+    """
 
     ### CLASS VARIABLES ###
 
@@ -134,10 +135,11 @@ class RegisterTransitionCommand(baca.Command):
     ### SPECIAL METHODS ###
 
     def __call__(self, argument=None):
-        r'''Calls command on `argument`.
+        """
+        Calls command on ``argument``.
 
         Returns none.
-        '''
+        """
         if argument is None:
             return
         if self.selector:
@@ -206,20 +208,22 @@ class RegisterTransitionCommand(baca.Command):
 
     @property
     def start_registration(self):
-        r'''Gets start registration.
+        """
+        Gets start registration.
 
         Set to registration.
 
         Returns registration.
-        '''
+        """
         return self._start_registration
 
     @property
     def stop_registration(self):
-        r'''Gets stop registration.
+        """
+        Gets stop registration.
 
         Set to registration.
 
         Returns registration.
-        '''
+        """
         return self._stop_registration

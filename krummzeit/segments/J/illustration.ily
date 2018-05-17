@@ -2991,8 +2991,8 @@ J_ViolinMusicVoice = {
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         e'''2
-        -\staccatissimo                                          %! IC
         \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC
+        -\staccatissimo                                          %! IC
         ^ \markup {
             \column
                 {
@@ -3487,8 +3487,8 @@ J_ViolaMusicVoice = {
         \set Staff.forceClef = ##t                               %! SM8:REDUNDANT_CLEF:SM33:IC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         ef'''!\breve
-        -\staccatissimo                                          %! IC
         \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC
+        -\staccatissimo                                          %! IC
         ^ \markup {
             \column
                 {

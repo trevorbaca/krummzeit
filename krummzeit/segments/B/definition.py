@@ -284,7 +284,7 @@ maker(
 
 maker(
     ('va', (10, 19)),
-    baca.hairpin('ff > pp', baca.pleaves()[:2]),
+    baca.hairpin('ff > pp', selector=baca.pleaves()[:2]),
     )
 
 maker(
@@ -306,7 +306,7 @@ maker(
 
 maker(
     ('vc', (10, 19)),
-    baca.hairpin('ff > pp', baca.pleaves()[:2]),
+    baca.hairpin('ff > pp', selector=baca.pleaves()[:2]),
     )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
@@ -346,7 +346,7 @@ maker(
 maker(
     (['pf', 'perc'], (11, 17)),
     baca.dynamic('ff'),
-    baca.staccatissimo(baca.pheads()),
+    baca.staccatissimo(selector=baca.pheads()),
     )
 
 maker(
@@ -357,7 +357,7 @@ maker(
 maker(
     ('perc', (27, 30)),
     baca.dynamic('ppp'),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     krummzeit.markup.fingertips(),
     )
 

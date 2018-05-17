@@ -4934,8 +4934,8 @@ I_PercussionMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     c'16
-    -\laissezVibrer                                              %! IC
     \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
+    -\laissezVibrer                                              %! IC
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC
             \upright                                             %! IC
@@ -5321,8 +5321,8 @@ I_ViolinMusicVoice = {
     % [I ViolinMusicVoice measure 295]                           %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     g''4
-    -\downbow                                                    %! IC
     \effort_f                                                    %! SM8:EXPLICIT_DYNAMIC:IC
+    -\downbow                                                    %! IC
     \glissando                                                   %! SC
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC
@@ -5455,8 +5455,8 @@ I_ViolinMusicVoice = {
         % [I ViolinMusicVoice measure 312]                       %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         e'''8
-        -\staccatissimo                                          %! IC
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
+        -\staccatissimo                                          %! IC
         ^ \markup {                                              %! IC
             \whiteout                                            %! IC
                 \upright                                         %! IC
@@ -5706,8 +5706,8 @@ I_ViolaMusicVoice = {
 %@% \override Staff.Clef.color = ##f                             %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set Staff.forceClef = ##t                                   %! SM8:EXPLICIT_CLEF:SM33:IC
     ef''!4
-    -\downbow                                                    %! IC
     \effort_f                                                    %! SM8:EXPLICIT_DYNAMIC:IC
+    -\downbow                                                    %! IC
     \glissando                                                   %! SC
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC
@@ -5840,8 +5840,8 @@ I_ViolaMusicVoice = {
         % [I ViolaMusicVoice measure 312]                        %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         ef'''!8
-        -\staccatissimo                                          %! IC
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
+        -\staccatissimo                                          %! IC
         ^ \markup {                                              %! IC
             \whiteout                                            %! IC
                 \upright                                         %! IC
@@ -6088,8 +6088,8 @@ I_CelloMusicVoice = {
 %@% \override Staff.Clef.color = ##f                             %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set Staff.forceClef = ##t                                   %! SM8:EXPLICIT_CLEF:SM33:IC
     d''4
-    -\downbow                                                    %! IC
     \effort_f                                                    %! SM8:EXPLICIT_DYNAMIC:IC
+    -\downbow                                                    %! IC
     \glissando                                                   %! SC
     ^ \markup {                                                  %! IC
         \whiteout                                                %! IC
@@ -6218,8 +6218,8 @@ I_CelloMusicVoice = {
         % [I CelloMusicVoice measure 312]                        %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         f'''8
-        -\staccatissimo                                          %! IC
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
+        -\staccatissimo                                          %! IC
         ^ \markup {                                              %! IC
             \whiteout                                            %! IC
                 \upright                                         %! IC

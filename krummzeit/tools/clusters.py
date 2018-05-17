@@ -3,10 +3,11 @@ import baca
 
 
 def clusters(flavor):
-    r'''Makes cluster.
+    """
+    Makes cluster.
 
-    Set `flavor` to 'tenor', 'low' or 'harpsichord'.
-    '''
+    Set ``flavor`` to 'tenor', 'low' or 'harpsichord'.
+    """
     clusters = {
         'harpsichord': baca.clusters([4], start_pitch='D4'),
         'low': baca.clusters([7], start_pitch='C1'),

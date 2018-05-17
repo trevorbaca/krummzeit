@@ -4,8 +4,9 @@ from abjad import rhythmmakertools as rhythmos
 
 
 def incise_chain():
-    r'''Makes incise chain.
-    '''
+    """
+    Makes incise chain.
+    """
     return baca.RhythmCommand(
         rhythm_maker=rhythmos.IncisedRhythmMaker(
             division_masks=[abjad.index([2], 5)],

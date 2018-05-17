@@ -8,8 +8,9 @@ def piano_harmonics(
     division_masks,
     tie_across_divisions,
     ):
-    r'''Makes piano harmonics rhythm.
-    '''
+    """
+    Makes piano harmonics rhythm.
+    """
     assert isinstance(division_ratios, list), repr(division_ratios)
     assert isinstance(division_masks, list), repr(division_masks)
     return baca.RhythmCommand(

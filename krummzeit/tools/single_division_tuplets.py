@@ -4,8 +4,9 @@ from abjad import rhythmmakertools as rhythmos
 
 
 def single_division_tuplets(ratios):
-    r'''Makes single-division tuplet rhythm.
-    '''
+    """
+    Makes single-division tuplet rhythm.
+    """
     return baca.RhythmCommand(
         rhythm_maker=rhythmos.TupletRhythmMaker(
             tuplet_ratios=ratios,

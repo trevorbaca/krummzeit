@@ -7,8 +7,9 @@ def opening_triplets(
     division_masks=[abjad.index([0])],
     remainder=abjad.Left,
     ):
-    r'''Makes opening triplets.
-    '''
+    """
+    Makes opening triplets.
+    """
     return baca.RhythmCommand(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,

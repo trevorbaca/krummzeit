@@ -9,8 +9,9 @@ def glissando_rhythm(
     tuplet_ratios=[(1, 2), (1, 4), (4, 3)],
     tie_across_divisions=None,
     ):
-    r'''Makes glissando rhythm.
-    '''
+    """
+    Makes glissando rhythm.
+    """
     assert isinstance(division_ratios, list), repr(division_ratios)
     assert isinstance(division_masks, list), repr(division_masks)
     return baca.RhythmCommand(

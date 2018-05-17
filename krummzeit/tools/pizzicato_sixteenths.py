@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmmakertools as rhythmos
+from abjad import rhythmos
 
 
 def pizzicato_sixteenths(extra_counts, masks=None):

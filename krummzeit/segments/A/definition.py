@@ -2,7 +2,7 @@ import abjad
 import baca
 import krummzeit
 import os
-from abjad import rhythmmakertools as rhythmos
+from abjad import rhythmos
 
 
 ###############################################################################

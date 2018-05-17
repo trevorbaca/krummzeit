@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmmakertools as rhythmos
+from abjad import rhythmos
 
 
 def right_remainder_quarters(division_masks=None):

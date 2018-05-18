@@ -2186,6 +2186,7 @@ F_ViolinMusicVoice = {
                             "flaut. possibile"                   %! PWC1
                 }                                                %! PWC1
             }                                                    %! PWC1
+        - \tweak staff-padding #5                                %! PWC1
         \startTextSpan                                           %! PWC1
         
         fs!1
@@ -2425,6 +2426,7 @@ F_ViolaMusicVoice = {
                             "flaut. possibile"                   %! PWC1
                 }                                                %! PWC1
             }                                                    %! PWC1
+        - \tweak staff-padding #5                                %! PWC1
         \startTextSpan                                           %! PWC1
         
         bf,!1.
@@ -2656,6 +2658,7 @@ F_CelloMusicVoice = {
                             "flaut. possibile"                   %! PWC1
                 }                                                %! PWC1
             }                                                    %! PWC1
+        - \tweak staff-padding #5                                %! PWC1
         \startTextSpan                                           %! PWC1
         
         a,,4

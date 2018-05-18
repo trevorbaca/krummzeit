@@ -5016,6 +5016,7 @@ D_ViolinMusicVoice = {
                             "molto gridato"                      %! PWC1
                 }                                                %! PWC1
             }                                                    %! PWC1
+        - \tweak staff-padding #6                                %! PWC1
         \startTextSpan                                           %! PWC1
         
         b''2
@@ -5802,6 +5803,7 @@ D_ViolaMusicVoice = {
                             "molto gridato"                      %! PWC1
                 }                                                %! PWC1
             }                                                    %! PWC1
+        - \tweak staff-padding #6                                %! PWC1
         \startTextSpan                                           %! PWC1
         
         f''4
@@ -6662,6 +6664,7 @@ D_CelloMusicVoice = {
                             "molto gridato"                      %! PWC1
                 }                                                %! PWC1
             }                                                    %! PWC1
+        - \tweak staff-padding #6                                %! PWC1
         \startTextSpan                                           %! PWC1
         
         fs''!2

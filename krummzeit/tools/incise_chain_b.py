@@ -7,7 +7,7 @@ def incise_chain_b():
     """
     Makes incise chain B.
     """
-    return baca.RhythmCommand(
+    return baca.rhythm(
         rhythm_maker=rhythmos.IncisedRhythmMaker(
             beam_specifier=rhythmos.BeamSpecifier(
                 beam_each_division=False,

@@ -7,7 +7,7 @@ def pizzicato_rhythm(masks=None, split_divisions_by_counts=(6, 18)):
     """
     Makes pizzicato rhythm.
     """
-    return baca.RhythmCommand(
+    return baca.rhythm(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
             extra_counts_per_division=[2, 2, 0, 2, 4, 6],
             division_masks=masks,

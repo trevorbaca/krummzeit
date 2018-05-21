@@ -7,7 +7,7 @@ def incise_attacks():
     """
     Makes incise attacks.
     """
-    return baca.RhythmCommand(
+    return baca.rhythm(
         rhythm_maker=rhythmos.IncisedRhythmMaker(
             incise_specifier=rhythmos.InciseSpecifier(
                 prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],

@@ -7,7 +7,7 @@ def right_remainder_quarters(division_masks=None):
     """
     Makes right-remainder quarter-note-filled measures.
     """
-    return baca.RhythmCommand(
+    return baca.rhythm(
         division_maker=baca.SplitByDurationsDivisionCallback(
             durations=[(1, 4)],
             ),

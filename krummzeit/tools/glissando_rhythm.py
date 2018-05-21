@@ -14,7 +14,7 @@ def glissando_rhythm(
     """
     assert isinstance(division_ratios, list), repr(division_ratios)
     assert isinstance(division_masks, list), repr(division_masks)
-    return baca.RhythmCommand(
+    return baca.rhythm(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=division_ratios,
             ),

@@ -7,7 +7,7 @@ def rest_delimited_repeated_duration_notes(duration, suffix_denominator):
     """
     Makes rest-delimited repeated duration notes.
     """
-    return baca.RhythmCommand(
+    return baca.rhythm(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(

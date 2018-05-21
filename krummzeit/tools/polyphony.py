@@ -26,7 +26,7 @@ def polyphony(
         rhythm_overwrites = [rhythm_overwrite]
         tuplet_specifier = None
 
-    return baca.RhythmCommand(
+    return baca.rhythm(
         division_maker=baca.SplitByDurationsDivisionCallback(
             durations=durations,
             pattern_rotation_index=rotation,

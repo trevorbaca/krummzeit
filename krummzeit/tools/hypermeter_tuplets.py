@@ -15,7 +15,7 @@ def hypermeter_tuplets(
         division_masks = [division_mask]
     else:
         division_masks = None
-    return baca.RhythmCommand(
+    return baca.rhythm(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=counts,
             ),

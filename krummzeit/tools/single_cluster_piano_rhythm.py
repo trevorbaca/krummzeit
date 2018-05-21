@@ -7,7 +7,7 @@ def single_cluster_piano_rhythm():
     """
     Makes single-cluster piano rhythm.
     """
-    return baca.RhythmCommand(
+    return baca.rhythm(
         rhythm_maker=rhythmos.IncisedRhythmMaker(
             incise_specifier=rhythmos.InciseSpecifier(
                 prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],

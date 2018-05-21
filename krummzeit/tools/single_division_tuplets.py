@@ -7,7 +7,7 @@ def single_division_tuplets(ratios):
     """
     Makes single-division tuplet rhythm.
     """
-    return baca.RhythmCommand(
+    return baca.rhythm(
         rhythm_maker=rhythmos.TupletRhythmMaker(
             tuplet_ratios=ratios,
             tuplet_specifier=rhythmos.TupletSpecifier(

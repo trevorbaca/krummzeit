@@ -7,7 +7,7 @@ def oboe_trills():
     """
     Makes oboe trill rhythm.
     """
-    return baca.RhythmCommand(
+    return baca.rhythm(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(2, 1), (2, 1), (1, 1, 1)],
             ),

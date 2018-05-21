@@ -7,7 +7,7 @@ def fused_expanse(durations):
     """
     Makes fused expanse rhythm.
     """
-    return baca.RhythmCommand(
+    return baca.rhythm(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(

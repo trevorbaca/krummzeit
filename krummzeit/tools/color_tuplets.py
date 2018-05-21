@@ -25,7 +25,7 @@ def color_tuplets(division_mask=None, rotation=0):
         division_masks = [division_mask]
     else:
         division_masks = None
-    return baca.RhythmCommand(
+    return baca.rhythm(
         rhythm_maker=rhythmos.TupletRhythmMaker(
             division_masks=division_masks,
             tuplet_ratios=tuplet_ratios,

@@ -7,7 +7,7 @@ def sponge_rhythm():
     """
     Makes sponge rhythm.
     """
-    return baca.RhythmCommand(
+    return baca.rhythm(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
             extra_counts_per_division=[2, 1, 0],
             talea=rhythmos.Talea(counts=[1, 2], denominator=2),

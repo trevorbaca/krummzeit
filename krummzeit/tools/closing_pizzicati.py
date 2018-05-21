@@ -11,7 +11,7 @@ def closing_pizzicati(
     """
     Makes closing pizzicati rhythm.
     """
-    return baca.RhythmCommand(
+    return baca.rhythm(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
             talea=rhythmos.Talea(
                 counts=counts,

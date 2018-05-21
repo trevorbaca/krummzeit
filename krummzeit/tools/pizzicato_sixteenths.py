@@ -7,7 +7,7 @@ def pizzicato_sixteenths(extra_counts, masks=None):
     """
     Makes pizzicato sixteenths rhythm.
     """
-    return baca.RhythmCommand(
+    return baca.rhythm(
         rhythm_maker=rhythmos.TaleaRhythmMaker(
             burnish_specifier=rhythmos.BurnishSpecifier(
                 left_classes=[abjad.Rest],

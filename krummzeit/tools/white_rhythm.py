@@ -21,7 +21,7 @@ def white_rhythm(
             outer_divisions_only=True,
             )
 
-    return baca.RhythmCommand(
+    return baca.rhythm(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(

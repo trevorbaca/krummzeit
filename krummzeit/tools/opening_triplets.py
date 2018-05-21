@@ -10,7 +10,7 @@ def opening_triplets(
     """
     Makes opening triplets.
     """
-    return baca.RhythmCommand(
+    return baca.rhythm(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(

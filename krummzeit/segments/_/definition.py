@@ -218,8 +218,8 @@ maker(
 maker(
     (['vn', 'va', 'vc'], (3, 7)),
     baca.map(
-        baca.glissando(),
         baca.runs(),
+        baca.glissando(),
         ),
     baca.hairpin('pp < ff'),
     baca.markup.molto_flautando(),

@@ -490,7 +490,10 @@ maker(
 
 maker(
     (['va', 'vc'], (1, 9)),
-    baca.map(baca.glissando(), baca.runs()),
+    baca.map(
+        baca.runs(),
+        baca.glissando(),
+        ),
     )
 
 maker(
@@ -524,7 +527,10 @@ maker(
     baca.alternate_bow_strokes(),
     baca.clef('treble'),
     baca.dynamic('f'),
-    baca.map(baca.glissando(), baca.runs()),
+    baca.map(
+        baca.runs(),
+        baca.glissando(),
+        ),
     baca.markup.OB_full_bow_strokes(),
     krummzeit.register_narrow(5, 3),
     )

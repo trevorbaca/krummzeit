@@ -195,7 +195,10 @@ maker(
     (['vn', 'va', 'vc'], (5, 9)),
     baca.alternate_bow_strokes(),
     baca.dynamic('"f"'),
-    baca.map(baca.glissando(), baca.runs()),
+    baca.map(
+        baca.runs(),
+        baca.glissando(),
+        ),
     krummzeit.markup.on_bridge_full_bow(),
     )
 

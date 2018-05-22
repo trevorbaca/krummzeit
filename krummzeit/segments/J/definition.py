@@ -148,7 +148,10 @@ maker(
     ('vc', (1, 6)),
     baca.dynamic('fff'),
     baca.dls_staff_padding(3),
-    baca.map(baca.glissando(), baca.runs()),
+    baca.map(
+        baca.runs(),
+        baca.glissando(),
+        ),
     baca.markup.gridato_possibile(),
     )
 

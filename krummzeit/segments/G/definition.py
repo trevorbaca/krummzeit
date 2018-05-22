@@ -209,7 +209,10 @@ maker(
     ('vc', (1, 9)),
     baca.dls_staff_padding(6),
     baca.hairpin('ff < fff'),
-    baca.map(baca.glissando(), baca.runs()),
+    baca.map(
+        baca.runs(),
+        baca.glissando(),
+        ),
     baca.markup.subito_ordinario(),
     baca.pitches('A1 B~1 C2 D+2 E+2 F2 Gb2 A~2 B2'),
     )
@@ -221,7 +224,10 @@ maker(
 
 maker(
     ('va', (1, 7)),
-    baca.map(baca.glissando(), baca.runs()),
+    baca.map(
+        baca.runs(),
+        baca.glissando(),
+        ),
     baca.dls_staff_padding(6),
     baca.hairpin('ff < fff'),
     baca.markup.subito_ordinario(),
@@ -300,7 +306,10 @@ maker(
     (['va', 'vc'], (11, 12)),
     baca.dls_staff_padding(7),
     baca.hairpin('ff > pp'),
-    baca.map(baca.glissando(), baca.runs()),
+    baca.map(
+        baca.runs(),
+        baca.glissando(),
+        ),
     baca.markup.molto_flautando(),
     baca.tuplet_bracket_staff_padding(4),
     )
@@ -342,7 +351,10 @@ maker(
 
 maker(
     (['vn', 'va', 'vc'], (14, 21)),
-    baca.map(baca.glissando(), baca.runs()),
+    baca.map(
+        baca.runs(),
+        baca.glissando(),
+        ),
     )
 
 maker(

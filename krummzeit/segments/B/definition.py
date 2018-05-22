@@ -226,8 +226,8 @@ maker(
     ('ob', (1, 27)),
     baca.dynamic('ff'),
     baca.map(
-        baca.trill_spanner(),
         baca.plts().filter_preprolated('>=', (1, 4)),
+        baca.trill_spanner(),
         ),
     krummzeit.color_fingerings(),
     krummzeit.displacement(),
@@ -262,7 +262,10 @@ maker(
 maker(
     ('cl', (20, 27)),
     baca.dynamic('f'),
-    baca.map(baca.glissando(), baca.runs()),
+    baca.map(
+        baca.runs(),
+        baca.glissando(),
+        ),
     )
 
 maker(
@@ -273,7 +276,10 @@ maker(
 maker(
     ('va', (1, 19)),
     baca.clef('bass'),
-    baca.map(baca.glissando(), baca.runs()),
+    baca.map(
+        baca.runs(),
+        baca.glissando(),
+        ),
     baca.markup.molto_flautando(),
     )
 
@@ -295,7 +301,10 @@ maker(
 maker(
     ('vc', (1, 19)),
     baca.clef('bass'),
-    baca.map(baca.glissando(), baca.runs()),
+    baca.map(
+        baca.runs(),
+        baca.glissando(),
+        ),
     baca.markup.molto_flautando(),
     )
 
@@ -321,18 +330,17 @@ maker(
     ('vn', (19, 22)),
     baca.dynamic('ff'),
     baca.map(
-        baca.trill_spanner(),
         baca.plts().filter_preprolated('>=', (1, 4)),
+        baca.trill_spanner(),
         ),
     baca.suite(
         baca.map(
+            baca.ltqruns().filter_length('>', 1)[abjad.index([0], 2)],
             baca.deviation([0, -0.5, 0, 0.5]),
-            selector=baca.ltqruns().filter_length('>', 1)[abjad.index([0], 2)],
             ),
-
         baca.map(
+            baca.ltqruns().filter_length('>', 1),
             baca.deviation([0, 0.5, 0, -0.5]),
-            selector=baca.ltqruns().filter_length('>', 1),
             ),
         krummzeit.displacement(),
         krummzeit.register_wide(5),
@@ -384,7 +392,10 @@ maker(
 
 maker(
     (['vn', 'va', 'vc'], (26, 29)),
-    baca.map(baca.glissando(), baca.runs()),
+    baca.map(
+        baca.runs(),
+        baca.glissando(),
+        ),
     baca.hairpin('pp < fff'),
     baca.markup.non_flautando(),
     krummzeit.markup.show_tempo(),

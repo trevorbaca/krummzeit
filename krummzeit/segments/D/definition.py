@@ -266,7 +266,10 @@ maker(
 maker(
     ('vc', (1, 5)),
     baca.dynamic('"mp"'),
-    baca.map(baca.glissando(), baca.runs()),
+    baca.map(
+        baca.runs(),
+        baca.glissando(),
+        ),
     krummzeit.register_narrow(2),
     krummzeit.markup.on_bridge_slow(),
     )
@@ -295,7 +298,10 @@ maker(
         ('va', (4, 9)),
         (['vn', 'vc'], (6, 9)),
         ],
-    baca.map(baca.glissando(), baca.runs()),
+    baca.map(
+        baca.runs(),
+        baca.glissando(),
+        ),
     krummzeit.register_narrow(5),
     baca.note_head_style_harmonic(),
     )

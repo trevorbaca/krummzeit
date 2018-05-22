@@ -173,8 +173,8 @@ maker(
     ('ob', (1, 2)),
     baca.dynamic('p'),
     baca.map(
-        baca.trill_spanner(),
         baca.plts().filter_preprolated('>=', (1, 4)),
+        baca.trill_spanner(),
         ),
     baca.suite(
         baca.pitches(pcs),
@@ -233,7 +233,10 @@ maker(
 maker(
     (['ob', 'cl'], (4, 11)),
     baca.dynamic('ff'),
-    baca.map(baca.glissando(), baca.ntruns()),
+    baca.map(
+        baca.ntruns(),
+        baca.glissando(),
+        ),
     krummzeit.color_fingerings(),
     )
 
@@ -246,7 +249,10 @@ maker(
 
 maker(
     (strings, (4, 10)),
-    baca.map(baca.glissando(), baca.runs()),
+    baca.map(
+        baca.runs(),
+        baca.glissando(),
+        ),
     baca.hairpin('p > ppp'),
     baca.markup.molto_flautando(),
     baca.note_head_style_harmonic(),
@@ -319,7 +325,10 @@ maker(
 maker(
     ('vn', (18, 22)),
     baca.dynamic('ppp'),
-    baca.map(baca.trill_spanner('A5'), baca.qruns()),
+    baca.map(
+        baca.qruns(),
+        baca.trill_spanner('A5'),
+        ),
     )
 
 maker(
@@ -330,7 +339,10 @@ maker(
 maker(
     ('ob', (18, 22)),
     baca.dynamic('ppp'),
-    baca.map(baca.trill_spanner(), baca.qruns()),
+    baca.map(
+        baca.qruns(),
+        baca.trill_spanner(),
+        ),
     )
 
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())

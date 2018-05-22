@@ -189,26 +189,26 @@ maker(
 
 maker(
     ('vn', (2, 4)),
-    baca.suite([
+    baca.suite(
         krummzeit.displacement(),
         krummzeit.register_wide(4),
-        ]),
+        ),
     )
 
 maker(
     ('va', (2, 4)),
-    baca.suite([
+    baca.suite(
         krummzeit.displacement(),
         krummzeit.register_narrow(3),
-        ]),
+        ),
     )
 
 maker(
     ('vc', (2, 4)),
-    baca.suite([
+    baca.suite(
         krummzeit.displacement(),
         krummzeit.register_narrow(2),
-        ]),
+        ),
     )
 
 maker(

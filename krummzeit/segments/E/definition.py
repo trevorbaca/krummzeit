@@ -176,12 +176,12 @@ maker(
         baca.trill_spanner(),
         baca.plts().filter_preprolated('>=', (1, 4)),
         ),
-    baca.suite([
+    baca.suite(
         baca.pitches(pcs),
         krummzeit.displacement(),
         krummzeit.register_wide(5),
         krummzeit.color_fingerings(),
-        ]),
+        ),
     )
 
 maker(
@@ -341,11 +341,11 @@ maker(
     baca.dynamic('fff'),
     baca.ottava(),
     baca.staccatissimo(selector=baca.pheads()),
-    baca.suite([
+    baca.suite(
         baca.pitches(pcs),
         krummzeit.displacement(),
         krummzeit.register_narrow(7),
-        ]),
+        ),
     )
 
 ### VERTICAL ALIGNMENT ###

@@ -250,26 +250,26 @@ maker(
     baca.dynamic('pp'),
     baca.markup.leggierissimo(),
     baca.staccato(selector=baca.pheads()),
-    baca.suite([
+    baca.suite(
         krummzeit.displacement(),
         krummzeit.register_wide(5),
-        ]),
+        ),
     )
 
 maker(
     ('vn', (5, 12)),
-    baca.suite([
+    baca.suite(
         krummzeit.displacement(),
         krummzeit.register_wide(6),
-        ]),
+        ),
     )
 
 maker(
     (['ob', 'cl'], (5, 12)),
-    baca.suite([
+    baca.suite(
         krummzeit.displacement(),
         krummzeit.register_wide(5),
-        ]),
+        ),
     )
 
 maker(
@@ -347,26 +347,26 @@ maker(
 
 maker(
     ('vn', (14, 20)),
-    baca.suite([
+    baca.suite(
         krummzeit.displacement(),
         krummzeit.register_wide(4),
-        ]),
+        ),
     )
 
 maker(
     ('va', (14, 19)),
-    baca.suite([
+    baca.suite(
         krummzeit.displacement(),
         krummzeit.register_narrow(3),
-        ]),
+        ),
     )
 
 maker(
     ('vc', (14, 20)),
-    baca.suite([
+    baca.suite(
         krummzeit.displacement(),
         krummzeit.register_narrow(2),
-        ]),
+        ),
     )
 
 maker(

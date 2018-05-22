@@ -44,59 +44,59 @@ maker = baca.SegmentMaker(
 
 maker(
     'ob',
-    baca.suite([
+    baca.suite(
         krummzeit.margin_markup('Ob.'),
         baca.start_markup('Oboe', hcenter_in=16),
-        ]),
+        ),
     )
 
 maker(
     'cl',
-    baca.suite([
+    baca.suite(
         krummzeit.margin_markup('B. cl.'),
         baca.start_markup('Bass clarinet', hcenter_in=16),
-        ]),
+        ),
     )
 
 maker(
     'pf',
     baca.clef('bass'),
-    baca.suite([
+    baca.suite(
         krummzeit.margin_markup('Pf.'),
         baca.start_markup('Piano', hcenter_in=16),
-        ]),
+        ),
     )
 
 maker(
     'perc',
-    baca.suite([
+    baca.suite(
         krummzeit.margin_markup('Perc.'),
         baca.start_markup('Percussion', hcenter_in=16),
-        ]),
+        ),
     )
 
 maker(
     'vn',
-    baca.suite([
+    baca.suite(
         krummzeit.margin_markup('Vn.'),
         baca.start_markup('Violin', hcenter_in=16),
-        ]),
+        ),
     )
 
 maker(
     'va',
-    baca.suite([
+    baca.suite(
         krummzeit.margin_markup('Va.'),
         baca.start_markup('Viola', hcenter_in=16),
-        ]),
+        ),
     )
 
 maker(
     'vc',
-    baca.suite([
+    baca.suite(
         krummzeit.margin_markup('Vc.'),
         baca.start_markup('Cello', hcenter_in=16),
-        ]),
+        ),
     )
 
 maker(

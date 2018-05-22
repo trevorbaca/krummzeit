@@ -324,7 +324,7 @@ maker(
         baca.trill_spanner(),
         baca.plts().filter_preprolated('>=', (1, 4)),
         ),
-    baca.suite([
+    baca.suite(
         baca.map(
             baca.deviation([0, -0.5, 0, 0.5]),
             selector=baca.ltqruns().filter_length('>', 1)[abjad.index([0], 2)],
@@ -336,7 +336,7 @@ maker(
             ),
         krummzeit.displacement(),
         krummzeit.register_wide(5),
-        ]),
+        ),
     )
 
 maker(

@@ -320,17 +320,23 @@ maker(
 maker(
     ('vn', (19, 22)),
     baca.dynamic('ff'),
-    baca.map([
-        baca.deviation([0, -0.5, 0, 0.5]),
-        baca.deviation([0, 0.5, 0, -0.5])],
-        baca.ltqruns().filter_length('>', 1),
-        ),
-    krummzeit.displacement(),
-    krummzeit.register_wide(5),
     baca.map(
         baca.trill_spanner(),
         baca.plts().filter_preprolated('>=', (1, 4)),
         ),
+    baca.suite([
+        baca.map(
+            baca.deviation([0, -0.5, 0, 0.5]),
+            selector=baca.ltqruns().filter_length('>', 1)[abjad.index([0], 2)],
+            ),
+
+        baca.map(
+            baca.deviation([0, 0.5, 0, -0.5]),
+            selector=baca.ltqruns().filter_length('>', 1),
+            ),
+        krummzeit.displacement(),
+        krummzeit.register_wide(5),
+        ]),
     )
 
 maker(

@@ -92,18 +92,6 @@ maker(
         ),
     )
 
-#rhythm_overwrite = (
-#    baca.tuplets()[-3:],
-#    baca.SplitByDurationsDivisionCallback(
-#        durations=[(1, 4)],
-#        ),
-#    rhythmos.NoteRhythmMaker(
-#        duration_specifier=rhythmos.DurationSpecifier(
-#            spell_metrically=True,
-#            ),
-#        ),
-#    )
-
 maker(
     ('pf', (5, 8)),
     krummzeit.polyphony(
@@ -112,9 +100,8 @@ maker(
         fuse=(1, 8),
         denominators=[8, 8, 4, 4, 8, 8],
         extra_counts=[3, 1, 0, 4],
-        final_quarter_notes=3,
+        final_quarter_notes=True,
         ties=[0, 1, 0, 1, 1, 0],
-        #rhythm_overwrite=rhythm_overwrite,
         ),
     )
 
@@ -140,26 +127,16 @@ maker(
     krummzeit.hypermeter_tuplets([(1, 3, 1)]),
     )
 
-rhythm_overwrite = (
-    baca.tuplets()[:2],
-    baca.SplitByDurationsDivisionCallback(
-        durations=[(1, 4)],
-        ),
-    rhythmos.EvenDivisionRhythmMaker(
-        denominators=[8],
-        ),
-    )
-
 maker(
     ('pf', (9, 10)),
     krummzeit.polyphony(
         durations=[(4, 16), (3, 16), (4, 16), (2, 16)],
         rotation=-1,
         fuse=(1, 8),
-        denominators=[16, 16, 8, 8, 16, 16],
-        extra_counts=[3, 1, 0, 4],
-        ties=[0, 1, 0, 1, 1, 0],
-        rhythm_overwrite=rhythm_overwrite,
+        denominators=[8, 8, 16, 16, 16, 16],
+        extra_counts=[0, 4, 3, 1],
+        initial_eighth_notes=True,
+        ties=[0, 1, 1, 0, 0, 1],
         ),
     )
 

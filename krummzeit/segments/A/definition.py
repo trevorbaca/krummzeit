@@ -92,17 +92,17 @@ maker(
         ),
     )
 
-rhythm_overwrite = (
-    baca.tuplets()[-3:],
-    baca.SplitByDurationsDivisionCallback(
-        durations=[(1, 4)],
-        ),
-    rhythmos.NoteRhythmMaker(
-        duration_specifier=rhythmos.DurationSpecifier(
-            spell_metrically=True,
-            ),
-        ),
-    )
+#rhythm_overwrite = (
+#    baca.tuplets()[-3:],
+#    baca.SplitByDurationsDivisionCallback(
+#        durations=[(1, 4)],
+#        ),
+#    rhythmos.NoteRhythmMaker(
+#        duration_specifier=rhythmos.DurationSpecifier(
+#            spell_metrically=True,
+#            ),
+#        ),
+#    )
 
 maker(
     ('pf', (5, 8)),
@@ -112,8 +112,9 @@ maker(
         fuse=(1, 8),
         denominators=[8, 8, 4, 4, 8, 8],
         extra_counts=[3, 1, 0, 4],
+        final_quarter_notes=3,
         ties=[0, 1, 0, 1, 1, 0],
-        rhythm_overwrite=rhythm_overwrite,
+        #rhythm_overwrite=rhythm_overwrite,
         ),
     )
 

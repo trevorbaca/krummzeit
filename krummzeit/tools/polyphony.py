@@ -10,6 +10,7 @@ def polyphony(
     denominators=None,
     extra_counts=None,
     final_quarter_notes=None,
+    initial_eighth_notes=None,
     ties=None,
     rhythm_overwrite=None,
     ):
@@ -17,13 +18,13 @@ def polyphony(
     Makes polyphony rhythm.
     """
 
-    if rhythm_overwrite is None and not final_quarter_notes:
+    if rhythm_overwrite is None and not final_quarter_notes and not initial_eighth_notes:
         rhythm_overwrites = None
         tuplet_specifier = rhythmos.TupletSpecifier(
             extract_trivial=True,
             trivialize=True,
             )
-    elif final_quarter_notes:
+    elif final_quarter_notes or initial_eighth_notes:
         rhythm_overwrites = None
         tuplet_specifier = None
     else:
@@ -48,10 +49,19 @@ def polyphony(
                 strip_ties=True,
                 ),
             )
-        indices = list(range(-final_quarter_notes, 0))
+        indices = [-3, -2, -1]
         rhythm_maker = [
             (rhythm_maker, ~abjad.index(indices)),
             (quarters, abjad.index(indices)),
+            ]
+    elif initial_eighth_notes:
+        eighths = rhythmos.EvenDivisionRhythmMaker(
+            denominators=[8],
+            )
+        indices = [0, 1]
+        rhythm_maker = [
+            (rhythm_maker, ~abjad.index(indices)),
+            (eighths, abjad.index(indices)),
             ]
 
     return baca.rhythm(

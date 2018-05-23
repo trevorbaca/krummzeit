@@ -5462,18 +5462,12 @@ A_PianoMusicVoice = {
         ~
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A PianoMusicVoice measure 26 / measure 13]            %! SM4
-        af''!4.
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        bf''!4.
-        ~
-    }
+    
+    % [A PianoMusicVoice measure 26 / measure 13]                %! SM4
+    af''!4.
+    
+    bf''!4.
+    ~
     \times 4/7 {
         
         % [A PianoMusicVoice measure 27 / measure 14]            %! SM4
@@ -5504,28 +5498,22 @@ A_PianoMusicVoice = {
         a''8
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/3 {
-        
-        bf'!8
-        [
-        
-        b'8
-        
-        cs''!8
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        % [A PianoMusicVoice measure 28 / measure 15]            %! SM4
-        c''8
-        [
-        
-        af''!8
-        ~
-        ]
-    }
+    
+    bf'!8
+    [
+    
+    b'8
+    
+    cs''!8
+    ]
+    
+    % [A PianoMusicVoice measure 28 / measure 15]                %! SM4
+    c''8
+    [
+    
+    af''!8
+    ~
+    ]
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/6 {
         
@@ -5545,18 +5533,15 @@ A_PianoMusicVoice = {
         a''4
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/3 {
-        
-        a''8
-        [
-        
-        fs'!8
-        
-        af''!8
-        ~
-        ]
-    }
+    
+    a''8
+    [
+    
+    fs'!8
+    
+    af''!8
+    ~
+    ]
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/9 {
         
@@ -5580,18 +5565,15 @@ A_PianoMusicVoice = {
         d''8
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/3 {
-        
-        % [A PianoMusicVoice measure 30 / measure 17]            %! SM4
-        e'8
-        [
-        
-        fs''!8
-        
-        af''!8
-        ]
-    }
+    
+    % [A PianoMusicVoice measure 30 / measure 17]                %! SM4
+    e'8
+    [
+    
+    fs''!8
+    
+    af''!8
+    ]
     \times 4/5 {
         
         b''8
@@ -5607,11 +5589,8 @@ A_PianoMusicVoice = {
         ~
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        fs''!4
-    }
+    
+    fs''!4
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/4 {
         
@@ -5650,41 +5629,32 @@ A_PianoMusicVoice = {
         e'8
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        % [A PianoMusicVoice measure 32 / measure 19]            %! SM4
-        f'8
-        [
-        
-        c'''8
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        af''!8
-        [
-        
-        e'''8
-        
-        g''8
-        
-        \makeRed                                                 %! SM14
-        e'8
-        ~
-        ]
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        \makeRed                                                 %! SM14
-        e'4.
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-    }
+    
+    % [A PianoMusicVoice measure 32 / measure 19]                %! SM4
+    f'8
+    [
+    
+    c'''8
+    ]
+    
+    af''!8
+    [
+    
+    e'''8
+    
+    g''8
+    
+    \makeRed                                                     %! SM14
+    e'8
+    ~
+    ]
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    \makeRed                                                     %! SM14
+    e'4.
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/6 {
         
@@ -5698,34 +5668,28 @@ A_PianoMusicVoice = {
         c''4
         ~
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        % [A PianoMusicVoice measure 33 / measure 20]            %! SM4
-        c''8
-        [
-        
-        fs''!8
-        
-        b''8
-        
-        fs''!8
-        ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        fs''!8
-        [
-        
-        af''!8
-        
-        e'''8
-        
-        fs''!8
-        ]
-    }
+    
+    % [A PianoMusicVoice measure 33 / measure 20]                %! SM4
+    c''8
+    [
+    
+    fs''!8
+    
+    b''8
+    
+    fs''!8
+    ~
+    ]
+    
+    fs''!16.
+    [
+    
+    af''!16.
+    
+    e'''16.
+    
+    fs''!16.
+    ]
     \times 4/7 {
         
         g''8
@@ -5747,29 +5711,23 @@ A_PianoMusicVoice = {
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        % [A PianoMusicVoice measure 34 / measure 21]            %! SM4
-        \makeRed                                                 %! SM14
-        e'8
-        [
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        a''8
-        
-        b''8
-        
-        g''8
-        ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        g''4
-    }
+    
+    % [A PianoMusicVoice measure 34 / measure 21]                %! SM4
+    \makeRed                                                     %! SM14
+    e'16.
+    [
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    a''16.
+    
+    b''16.
+    
+    g''16.
+    ~
+    ]
+    
+    g''4
     
     % [A PianoMusicVoice measure 35 / measure 22]                %! SM4
     fs''!4
@@ -5782,44 +5740,32 @@ A_PianoMusicVoice = {
     \revert Beam.positions                                       %! OC2
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     \revert TupletBracket.staff-padding                          %! OC2
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        % [A PianoMusicVoice measure 36 / measure 23]            %! SM4
-        \override Beam.positions = #'(-5 . -5)                   %! OC1
-        \override DynamicLineSpanner.staff-padding = #'7         %! OC1
-        \override TupletBracket.staff-padding = #4               %! OC1
-        \clef "bass"                                             %! SM8:EXPLICIT_CLEF:IC
-        \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
-    %@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-        \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
-        b8
-        [
-        \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
-        
-        g8
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        a8.
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        g8
-        [
-        
-        fs!8
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        bf!8
-        ~
-    }
+    
+    % [A PianoMusicVoice measure 36 / measure 23]                %! SM4
+    \override Beam.positions = #'(-5 . -5)                       %! OC1
+    \override DynamicLineSpanner.staff-padding = #'7             %! OC1
+    \override TupletBracket.staff-padding = #4                   %! OC1
+    \clef "bass"                                                 %! SM8:EXPLICIT_CLEF:IC
+    \once \override Staff.Clef.color = #(x11-color 'blue)        %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override Staff.Clef.color = ##f                             %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set Staff.forceClef = ##t                                   %! SM8:EXPLICIT_CLEF:SM33:IC
+    b8
+    [
+    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)      %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+    
+    g8
+    ]
+    
+    a8.
+    
+    g8
+    [
+    
+    fs!8
+    ]
+    
+    bf!8
+    ~
     \times 4/7 {
         
         bf!16
@@ -5839,47 +5785,38 @@ A_PianoMusicVoice = {
         ~
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        cs'!16
-        [
-        
-        d'16
-        
-        e16
-        
-        af!16
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        b16
-        [
-        
-        d16
-        
-        e16
-        
-        a16
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        % [A PianoMusicVoice measure 37 / measure 24]            %! SM4
-        af!16
-        [
-        
-        d16
-        
-        e16
-        
-        af!16
-        ~
-        ]
-    }
+    
+    cs'!32.
+    [
+    
+    d'32.
+    
+    e32.
+    
+    af!32.
+    ]
+    
+    b16
+    [
+    
+    d16
+    
+    e16
+    
+    a16
+    ]
+    
+    % [A PianoMusicVoice measure 37 / measure 24]                %! SM4
+    af!32.
+    [
+    
+    d32.
+    
+    e32.
+    
+    af!32.
+    ~
+    ]
     \times 2/3 {
         
         af!8
@@ -5890,38 +5827,29 @@ A_PianoMusicVoice = {
         af!8
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        c'8
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/3 {
-        
-        c'16
-        [
-        
-        ef!16
-        
-        b16
-        ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        % [A PianoMusicVoice measure 38 / measure 25]            %! SM4
-        b16
-        [
-        
-        af!16
-        
-        bf!16
-        
-        e'16
-        ]
-    }
+    
+    c'8
+    ~
+    
+    c'16
+    [
+    
+    ef!16
+    
+    b16
+    ~
+    ]
+    
+    % [A PianoMusicVoice measure 38 / measure 25]                %! SM4
+    b16
+    [
+    
+    af!16
+    
+    bf!16
+    
+    e'16
+    ]
     \times 2/3 {
         
         cs'!16
@@ -5947,17 +5875,11 @@ A_PianoMusicVoice = {
         ~
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        d'8.
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        b8.
-        ~
-    }
+    
+    d'8.
+    
+    b8.
+    ~
     \times 2/3 {
         
         % [A PianoMusicVoice measure 39 / measure 26]            %! SM4
@@ -5984,17 +5906,14 @@ A_PianoMusicVoice = {
         g16
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/3 {
-        
-        cs'!16
-        [
-        
-        b16
-        
-        d'16
-        ]
-    }
+    
+    cs'!16
+    [
+    
+    b16
+    
+    d'16
+    ]
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/9 {
         
@@ -6036,54 +5955,42 @@ A_PianoMusicVoice = {
         ef'!8
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        fs'!8.
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        fs'!16
-        [
-        
-        d'16
-        
-        ef'!16
-        
-        c'16
-        ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        c'16
-        [
-        
-        d'16
-        
-        af'!16
-        
-        bf'!16
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/3 {
-        
-        % [A PianoMusicVoice measure 41 / measure 28]            %! SM4
-        e'16
-        [
-        
-        g'16
-        
-        \makeRed                                                 %! SM14
-        af'!16
-        ]
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-    }
+    
+    fs'!8.
+    ~
+    
+    fs'!16
+    [
+    
+    d'16
+    
+    ef'!16
+    
+    c'16
+    ~
+    ]
+    
+    c'32.
+    [
+    
+    d'32.
+    
+    af'!32.
+    
+    bf'!32.
+    ]
+    
+    % [A PianoMusicVoice measure 41 / measure 28]                %! SM4
+    e'16
+    [
+    
+    g'16
+    
+    \makeRed                                                     %! SM14
+    af'!16
+    ]
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
     \times 4/5 {
         
         \makeRed                                                 %! SM14
@@ -6102,33 +6009,24 @@ A_PianoMusicVoice = {
         ~
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        b8
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        a'8
-        [
-        
-        cs'!8
-        ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/3 {
-        
-        cs'!16
-        [
-        
-        af'!16
-        
-        c'16
-        ~
-        ]
-    }
+    
+    b8
+    
+    a'8
+    [
+    
+    cs'!8
+    ~
+    ]
+    
+    cs'!16
+    [
+    
+    af'!16
+    
+    c'16
+    ~
+    ]
     \times 4/5 {
         
         % [A PianoMusicVoice measure 42 / measure 29]            %! SM4
@@ -6149,34 +6047,25 @@ A_PianoMusicVoice = {
         fs'!16
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        af'!16
-        [
-        
-        g'16
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        d''16
-        [
-        
-        fs'!16
-        
-        a'16
-        
-        bf'!16
-        ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        bf'!8.
-    }
+    
+    af'!16
+    [
+    
+    g'16
+    ]
+    
+    d''16
+    [
+    
+    fs'!16
+    
+    a'16
+    
+    bf'!16
+    ~
+    ]
+    
+    bf'!8.
     \times 2/3 {
         
         b'8
@@ -6188,40 +6077,31 @@ A_PianoMusicVoice = {
         ~
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        fs'!16
-        [
-        
-        bf'!16
-        ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        bf'!16
-        [
-        
-        g'16
-        
-        d''16
-        
-        c''16
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/3 {
-        
-        fs''!16
-        [
-        
-        d''16
-        
-        fs''!16
-        ]
-    }
+    
+    fs'!16
+    [
+    
+    bf'!16
+    ~
+    ]
+    
+    bf'!16
+    [
+    
+    g'16
+    
+    d''16
+    
+    c''16
+    ]
+    
+    fs''!16
+    [
+    
+    d''16
+    
+    fs''!16
+    ]
     \times 4/5 {
         
         a'16
@@ -6237,18 +6117,12 @@ A_PianoMusicVoice = {
         ~
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        af'!8
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A PianoMusicVoice measure 43 / measure 30]            %! SM4
-        a'8
-        ~
-    }
+    
+    af'!8
+    
+    % [A PianoMusicVoice measure 43 / measure 30]                %! SM4
+    a'8
+    ~
     \times 4/7 {
         
         a'16
@@ -6268,56 +6142,44 @@ A_PianoMusicVoice = {
         ~
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        g'16
-        [
-        
-        af''!16
-        
-        c''16
-        
-        b'16
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/3 {
-        
-        af''!16
-        [
-        
-        d''16
-        
-        bf'!16
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
-        
-        % [A PianoMusicVoice measure 44 / measure 31]            %! SM4
-        \makeRed                                                 %! SM14
-        fs''!16
-        [
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        \makeRed                                                 %! SM14
-        fs''!16
-        - \tweak color #red                                      %! SM14
-        ^ \markup { @ }                                          %! SM14
-        
-        g''16
-        
-        bf''!16
-        ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        bf''!8.
-    }
+    
+    g'32.
+    [
+    
+    af''!32.
+    
+    c''32.
+    
+    b'32.
+    ]
+    
+    af''!16
+    [
+    
+    d''16
+    
+    bf'!16
+    ]
+    
+    % [A PianoMusicVoice measure 44 / measure 31]                %! SM4
+    \makeRed                                                     %! SM14
+    fs''!16
+    [
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    \makeRed                                                     %! SM14
+    fs''!16
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
+    
+    g''16
+    
+    bf''!16
+    ~
+    ]
+    
+    bf''!8.
     \times 2/3 {
         
         cs''!8
@@ -6329,32 +6191,26 @@ A_PianoMusicVoice = {
         ~
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        b''16
-        [
-        
-        af''!16
-        ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        af''!16
-        [
-        
-        ef''!16
-        
-        c''16
-        
-        fs''!16
-        ]
-        \revert Beam.positions                                   %! OC2
-        \revert DynamicLineSpanner.staff-padding                 %! OC2
-        \revert TupletBracket.staff-padding                      %! OC2
-    }
+    
+    b''16
+    [
+    
+    af''!16
+    ~
+    ]
+    
+    af''!32.
+    [
+    
+    ef''!32.
+    
+    c''32.
+    
+    fs''!32.
+    ]
+    \revert Beam.positions                                       %! OC2
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
+    \revert TupletBracket.staff-padding                          %! OC2
     
     % [A PianoMusicVoice measure 45 / measure 32]                %! SM4
     R1 * 5/8

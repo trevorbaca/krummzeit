@@ -17,13 +17,10 @@ def polyphony(
     Makes polyphony rhythm.
     """
 
-    if final_quarter_notes or initial_eighth_notes:
-        tuplet_specifier = None
-    else:
-        tuplet_specifier = rhythmos.TupletSpecifier(
-            extract_trivial=True,
-            trivialize=True,
-            )
+    tuplet_specifier = rhythmos.TupletSpecifier(
+        extract_trivial=True,
+        trivialize=True,
+        )
 
     rhythm_maker = rhythmos.EvenDivisionRhythmMaker(
         denominators=denominators,
@@ -51,6 +48,7 @@ def polyphony(
     elif initial_eighth_notes:
         eighths = rhythmos.EvenDivisionRhythmMaker(
             denominators=[8],
+            tuplet_specifier=tuplet_specifier,
             )
         indices = [0, 1]
         rhythm_maker = [

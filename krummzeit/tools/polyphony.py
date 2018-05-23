@@ -12,24 +12,18 @@ def polyphony(
     final_quarter_notes=None,
     initial_eighth_notes=None,
     ties=None,
-    rhythm_overwrite=None,
     ):
     """
     Makes polyphony rhythm.
     """
 
-    if rhythm_overwrite is None and not final_quarter_notes and not initial_eighth_notes:
-        rhythm_overwrites = None
+    if final_quarter_notes or initial_eighth_notes:
+        tuplet_specifier = None
+    else:
         tuplet_specifier = rhythmos.TupletSpecifier(
             extract_trivial=True,
             trivialize=True,
             )
-    elif final_quarter_notes or initial_eighth_notes:
-        rhythm_overwrites = None
-        tuplet_specifier = None
-    else:
-        rhythm_overwrites = [rhythm_overwrite]
-        tuplet_specifier = None
 
     rhythm_maker = rhythmos.EvenDivisionRhythmMaker(
         denominators=denominators,
@@ -71,5 +65,4 @@ def polyphony(
             remainder_fuse_threshold=fuse,
             ),
         rhythm_maker=rhythm_maker,
-        rhythm_overwrites=rhythm_overwrites,
         )

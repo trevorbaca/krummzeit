@@ -9,6 +9,7 @@ def polyphony(
     fuse=None,
     denominators=None,
     extra_counts=None,
+    final_quarter_notes=None,
     ties=None,
     rhythm_overwrite=None,
     ):
@@ -16,15 +17,42 @@ def polyphony(
     Makes polyphony rhythm.
     """
 
-    if rhythm_overwrite is None:
-        rhythm_overwrites = []
+    if rhythm_overwrite is None and not final_quarter_notes:
+        rhythm_overwrites = None
         tuplet_specifier = rhythmos.TupletSpecifier(
             extract_trivial=True,
             trivialize=True,
             )
+    elif final_quarter_notes:
+        rhythm_overwrites = None
+        tuplet_specifier = None
     else:
         rhythm_overwrites = [rhythm_overwrite]
         tuplet_specifier = None
+
+    rhythm_maker = rhythmos.EvenDivisionRhythmMaker(
+        denominators=denominators,
+        extra_counts_per_division=extra_counts,
+        tie_specifier=rhythmos.TieSpecifier(
+            tie_across_divisions=ties,
+            ),
+        tuplet_specifier=tuplet_specifier,
+        )
+
+    if final_quarter_notes:
+        quarters = rhythmos.NoteRhythmMaker(
+            duration_specifier=rhythmos.DurationSpecifier(
+                forbidden_duration=(1, 2),
+                ),
+            tie_specifier=rhythmos.TieSpecifier(
+                strip_ties=True,
+                ),
+            )
+        indices = list(range(-final_quarter_notes, 0))
+        rhythm_maker = [
+            (rhythm_maker, ~abjad.index(indices)),
+            (quarters, abjad.index(indices)),
+            ]
 
     return baca.rhythm(
         division_maker=baca.SplitByDurationsDivisionCallback(
@@ -32,13 +60,6 @@ def polyphony(
             pattern_rotation_index=rotation,
             remainder_fuse_threshold=fuse,
             ),
-        rhythm_maker=rhythmos.EvenDivisionRhythmMaker(
-            denominators=denominators,
-            extra_counts_per_division=extra_counts,
-            tie_specifier=rhythmos.TieSpecifier(
-                tie_across_divisions=ties,
-                ),
-            tuplet_specifier=tuplet_specifier,
-            ),
+        rhythm_maker=rhythm_maker,
         rhythm_overwrites=rhythm_overwrites,
         )

@@ -1054,13 +1054,13 @@ F_OboeMusicVoice = {
         cs''!16
         -\staccato                                               %! IC
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a'16
         -\staccato                                               %! IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a'16
         -\staccato                                               %! IC
         - \tweak color #red                                      %! SM14
@@ -1888,7 +1888,7 @@ F_PercussionMusicVoice = {
     
     % [F PercussionMusicVoice measure 236 / measure 2]           %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c4.
     :32                                                          %! IC
     \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
@@ -1903,7 +1903,7 @@ F_PercussionMusicVoice = {
     \repeatTie
     
     % [F PercussionMusicVoice measure 237 / measure 3]           %! SM4
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c4.
     :32                                                          %! IC
     \repeatTie
@@ -1916,7 +1916,7 @@ F_PercussionMusicVoice = {
     R1 * 1
     
     % [F PercussionMusicVoice measure 239 / measure 5]           %! SM4
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2.
     :32                                                          %! IC
     
@@ -1925,25 +1925,25 @@ F_PercussionMusicVoice = {
     \repeatTie
     
     % [F PercussionMusicVoice measure 240 / measure 6]           %! SM4
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2.
     :32                                                          %! IC
     \repeatTie
     
     % [F PercussionMusicVoice measure 241 / measure 7]           %! SM4
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2.
     :32                                                          %! IC
     \repeatTie
     
     % [F PercussionMusicVoice measure 242 / measure 8]           %! SM4
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2.
     :32                                                          %! IC
     \repeatTie
     
     % [F PercussionMusicVoice measure 243 / measure 9]           %! SM4
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2.
     :32                                                          %! IC
     \repeatTie
@@ -1962,7 +1962,7 @@ F_PercussionMusicVoice = {
     R1 * 7/4
     
     % [F PercussionMusicVoice measure 247 / measure 13]          %! SM4
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2.
     :32                                                          %! IC
     
@@ -1973,7 +1973,7 @@ F_PercussionMusicVoice = {
     R1 * 11/8
     
     % [F PercussionMusicVoice measure 250 / measure 16]          %! SM4
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c4.
     :32                                                          %! IC
     
@@ -1989,7 +1989,7 @@ F_PercussionMusicVoice = {
     
     % [F PercussionMusicVoice measure 253 / measure 19]          %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     \p                                                           %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {
@@ -2014,32 +2014,32 @@ F_PercussionMusicVoice = {
         }
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC
     \revert DynamicLineSpanner.staff-padding                     %! OC2

@@ -2019,13 +2019,13 @@ D_OboeMusicVoice = {
         r8
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         d''4
         \p                                                       %! SM8:EXPLICIT_DYNAMIC:IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         d''16
         [
         - \tweak color #red                                      %! SM14
@@ -2038,7 +2038,7 @@ D_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         d''16
         ]
         - \tweak color #red                                      %! SM14
@@ -2051,7 +2051,7 @@ D_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         d''2.
         ~
         - \tweak color #red                                      %! SM14
@@ -2068,12 +2068,12 @@ D_OboeMusicVoice = {
     \times 3/5 {
         
         % [D OboeMusicVoice measure 163 / measure 12]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         d''2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         d''2
         ~
         - \tweak color #red                                      %! SM14
@@ -2083,12 +2083,12 @@ D_OboeMusicVoice = {
     \times 6/7 {
         
         % [D OboeMusicVoice measure 164 / measure 13]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         d''2
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         d''4.
         ~
         - \tweak color #red                                      %! SM14
@@ -2105,7 +2105,7 @@ D_OboeMusicVoice = {
     \times 3/5 {
         
         % [D OboeMusicVoice measure 165 / measure 14]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         d''2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2117,7 +2117,7 @@ D_OboeMusicVoice = {
         % [D OboeMusicVoice measure 166 / measure 15]            %! SM4
         r8.
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         d''4
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2129,7 +2129,7 @@ D_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         d''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2141,7 +2141,7 @@ D_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         ef''!2.
         ~
         - \tweak color #red                                      %! SM14
@@ -2151,12 +2151,12 @@ D_OboeMusicVoice = {
     \times 3/5 {
         
         % [D OboeMusicVoice measure 167 / measure 16]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         ef''!1.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         ef''!1
         ~
         - \tweak color #red                                      %! SM14
@@ -2173,12 +2173,12 @@ D_OboeMusicVoice = {
     \times 9/11 {
         
         % [D OboeMusicVoice measure 168 / measure 17]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         ef''!2..
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         ef''!8
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2190,7 +2190,7 @@ D_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         ef''!4.
         ~
         - \tweak color #red                                      %! SM14
@@ -2207,7 +2207,7 @@ D_OboeMusicVoice = {
     \times 3/5 {
         
         % [D OboeMusicVoice measure 169 / measure 18]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         ef''!2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2220,13 +2220,13 @@ D_OboeMusicVoice = {
         % [D OboeMusicVoice measure 170 / measure 19]            %! SM4
         r16
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         ef''!8
         [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         ef''!32
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2238,7 +2238,7 @@ D_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         ef''!32
         ]
         - \tweak color #red                                      %! SM14
@@ -2251,7 +2251,7 @@ D_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         ef''!4.
         ~
         - \tweak color #red                                      %! SM14
@@ -2268,12 +2268,12 @@ D_OboeMusicVoice = {
     \times 9/10 {
         
         % [D OboeMusicVoice measure 171 / measure 20]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         ef''!2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         d''2
         ~
         - \tweak color #red                                      %! SM14
@@ -2283,12 +2283,12 @@ D_OboeMusicVoice = {
     \times 9/14 {
         
         % [D OboeMusicVoice measure 172 / measure 21]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         d''1
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         d''2.
         ~
         - \tweak color #red                                      %! SM14
@@ -2305,7 +2305,7 @@ D_OboeMusicVoice = {
     \times 1/1 {
         
         % [D OboeMusicVoice measure 173 / measure 22]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         d''4.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2318,7 +2318,7 @@ D_OboeMusicVoice = {
         % [D OboeMusicVoice measure 174 / measure 23]            %! SM4
         r16.
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         d''8
         [
         - \tweak color #red                                      %! SM14
@@ -2331,7 +2331,7 @@ D_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         d''32
         ]
         - \tweak color #red                                      %! SM14
@@ -2344,7 +2344,7 @@ D_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         d''4.
         ~
         - \tweak color #red                                      %! SM14
@@ -2354,12 +2354,12 @@ D_OboeMusicVoice = {
     \times 3/5 {
         
         % [D OboeMusicVoice measure 175 / measure 24]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         d''2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         d''2
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2408,13 +2408,13 @@ D_OboeMusicVoice = {
         r8
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         f''4
         \mf                                                      %! SM8:EXPLICIT_DYNAMIC:IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         f''16
         [
         - \tweak color #red                                      %! SM14
@@ -2427,7 +2427,7 @@ D_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         f''16
         ]
         - \tweak color #red                                      %! SM14
@@ -2440,7 +2440,7 @@ D_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         f''2.
         ~
         - \tweak color #red                                      %! SM14
@@ -2457,12 +2457,12 @@ D_OboeMusicVoice = {
     \times 7/10 {
         
         % [D OboeMusicVoice measure 187 / measure 36]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         f''2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs''!2
         ~
         - \tweak color #red                                      %! SM14
@@ -2472,12 +2472,12 @@ D_OboeMusicVoice = {
     \times 9/14 {
         
         % [D OboeMusicVoice measure 188 / measure 37]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs''!1
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs''!2.
         ~
         - \tweak color #red                                      %! SM14
@@ -2494,7 +2494,7 @@ D_OboeMusicVoice = {
     \times 3/5 {
         
         % [D OboeMusicVoice measure 189 / measure 38]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs''!2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2508,13 +2508,13 @@ D_OboeMusicVoice = {
         r8.
         
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         f''4
         \mf                                                      %! SM8:REDUNDANT_DYNAMIC:IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         f''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2526,7 +2526,7 @@ D_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         f''2.
         ~
         - \tweak color #red                                      %! SM14
@@ -2543,12 +2543,12 @@ D_OboeMusicVoice = {
     \times 3/5 {
         
         % [D OboeMusicVoice measure 191 / measure 40]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         f''2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         f''2
         ~
         - \tweak color #red                                      %! SM14
@@ -2565,17 +2565,17 @@ D_OboeMusicVoice = {
     \times 6/11 {
         
         % [D OboeMusicVoice measure 192 / measure 41]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         f''2..
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs''!8
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs''!4.
         ~
         - \tweak color #red                                      %! SM14
@@ -2591,7 +2591,7 @@ D_OboeMusicVoice = {
     \times 4/5 {
         
         % [D OboeMusicVoice measure 193 / measure 42]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs''!2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2605,13 +2605,13 @@ D_OboeMusicVoice = {
         r8
         
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         f''4
         \mf                                                      %! SM8:REDUNDANT_DYNAMIC:IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         f''16
         [
         - \tweak color #red                                      %! SM14
@@ -2624,7 +2624,7 @@ D_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         f''16
         ]
         - \tweak color #red                                      %! SM14
@@ -2637,7 +2637,7 @@ D_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         f''2.
         ~
         - \tweak color #red                                      %! SM14
@@ -2653,7 +2653,7 @@ D_OboeMusicVoice = {
     \times 4/5 {
         
         % [D OboeMusicVoice measure 195 / measure 44]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         f''2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2844,7 +2844,7 @@ D_ClarinetMusicVoice = {
         % [D ClarinetMusicVoice measure 164 / measure 13]        %! SM4
         r8
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs'''!4
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2856,7 +2856,7 @@ D_ClarinetMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs'''!16
         [
         - \tweak color #red                                      %! SM14
@@ -2869,7 +2869,7 @@ D_ClarinetMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs'''!16
         ]
         - \tweak color #red                                      %! SM14
@@ -2968,7 +2968,7 @@ D_ClarinetMusicVoice = {
         % [D ClarinetMusicVoice measure 188 / measure 37]        %! SM4
         r8
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         g'''4
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2980,7 +2980,7 @@ D_ClarinetMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         g'''16
         [
         - \tweak color #red                                      %! SM14
@@ -2993,7 +2993,7 @@ D_ClarinetMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         g'''16
         ]
         - \tweak color #red                                      %! SM14
@@ -3006,7 +3006,7 @@ D_ClarinetMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         gs'''!2.
         ~
         - \tweak color #red                                      %! SM14
@@ -3016,12 +3016,12 @@ D_ClarinetMusicVoice = {
     \times 3/5 {
         
         % [D ClarinetMusicVoice measure 189 / measure 38]        %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         gs'''!2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         gs'''!2
         ~
         - \tweak color #red                                      %! SM14
@@ -3038,7 +3038,7 @@ D_ClarinetMusicVoice = {
     \times 6/7 {
         
         % [D ClarinetMusicVoice measure 190 / measure 39]        %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         gs'''!2
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3062,7 +3062,7 @@ D_ClarinetMusicVoice = {
         % [D ClarinetMusicVoice measure 192 / measure 41]        %! SM4
         r8.
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         g'''4
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3074,7 +3074,7 @@ D_ClarinetMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         g'''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3086,7 +3086,7 @@ D_ClarinetMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         g'''2.
         ~
         - \tweak color #red                                      %! SM14
@@ -3102,7 +3102,7 @@ D_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [D ClarinetMusicVoice measure 193 / measure 42]        %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         g'''2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3117,13 +3117,13 @@ D_ClarinetMusicVoice = {
         gs'''!2..
         
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         g'''8
         \mf                                                      %! SM8:REDUNDANT_DYNAMIC:IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         g'''4.
         ~
         - \tweak color #red                                      %! SM14
@@ -3139,7 +3139,7 @@ D_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [D ClarinetMusicVoice measure 195 / measure 44]        %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         g'''2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -4763,7 +4763,7 @@ D_ViolinMusicVoice = {
     \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     ef'!4
     \effort_mp                                                   %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {
@@ -4808,12 +4808,12 @@ D_ViolinMusicVoice = {
             Vn.                                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     ef'!4
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     ef'!4
     \glissando                                                   %! SC
     - \tweak color #red                                          %! SM14
@@ -4953,12 +4953,12 @@ D_ViolinMusicVoice = {
     b'4
     \glissando                                                   %! SC
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     fs'!4
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     fs'!4
     \glissando                                                   %! SC
     - \tweak color #red                                          %! SM14
@@ -5042,12 +5042,12 @@ D_ViolinMusicVoice = {
     }
     \times 2/3 {
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         c''8
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         c''4
         \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
@@ -5259,7 +5259,7 @@ D_ViolinMusicVoice = {
         g''2
         \glissando                                               %! SC
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         c''4.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -5267,7 +5267,7 @@ D_ViolinMusicVoice = {
     \times 2/3 {
         
         % [D ViolinMusicVoice measure 179 / measure 28]          %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         c''8
         \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
@@ -5298,7 +5298,7 @@ D_ViolinMusicVoice = {
         cs''!8
         \glissando                                               %! SC
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a''4
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -5306,7 +5306,7 @@ D_ViolinMusicVoice = {
     \times 4/5 {
         
         % [D ViolinMusicVoice measure 181 / measure 30]          %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a''16
         \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
@@ -5606,18 +5606,18 @@ D_ViolaMusicVoice = {
     cs!4
     \glissando                                                   %! SC
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     fs!4
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     fs!4
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     
     % [D ViolaMusicVoice measure 154 / measure 3]                %! SM4
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     fs!4
     \glissando                                                   %! SC
     - \tweak color #red                                          %! SM14
@@ -5642,18 +5642,18 @@ D_ViolaMusicVoice = {
     b4
     \glissando                                                   %! SC
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     ef!4
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     
     % [D ViolaMusicVoice measure 156 / measure 5]                %! SM4
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     ef!4
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     ef!4
     \glissando                                                   %! SC
     - \tweak color #red                                          %! SM14
@@ -5666,12 +5666,12 @@ D_ViolaMusicVoice = {
     bf!4
     \glissando                                                   %! SC
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     fs!4
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     fs!4
     \glissando                                                   %! SC
     - \tweak color #red                                          %! SM14
@@ -5879,18 +5879,18 @@ D_ViolaMusicVoice = {
     a''4
     \glissando                                                   %! SC
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     b''2
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     \times 4/5 {
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         b''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         b''4
         \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
@@ -5899,12 +5899,12 @@ D_ViolaMusicVoice = {
     \times 4/7 {
         
         % [D ViolaMusicVoice measure 167 / measure 16]           %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a''2
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a''4.
         \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
@@ -6213,7 +6213,7 @@ D_ViolaMusicVoice = {
         ef''!16
         \glissando                                               %! SC
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a''4
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -6222,7 +6222,7 @@ D_ViolaMusicVoice = {
     \times 6/7 {
         
         % [D ViolaMusicVoice measure 184 / measure 33]           %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a''4
         \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
@@ -6704,7 +6704,7 @@ D_CelloMusicVoice = {
     \times 6/7 {
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs''!4
         \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {
@@ -6723,7 +6723,7 @@ D_CelloMusicVoice = {
                 }
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs''!8.
         \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
@@ -6831,14 +6831,14 @@ D_CelloMusicVoice = {
         fs''!4
         \glissando                                               %! SC
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         b''8.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
     
     % [D CelloMusicVoice measure 174 / measure 23]               %! SM4
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     b''8
     \glissando                                                   %! SC
     - \tweak color #red                                          %! SM14

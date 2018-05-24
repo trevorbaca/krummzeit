@@ -5398,13 +5398,13 @@ I_ViolinMusicVoice = {
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     g'4
     -\upbow                                                      %! IC
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     g'4
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
@@ -5767,13 +5767,13 @@ I_ViolaMusicVoice = {
     \glissando                                                   %! SC
     
     % [I ViolaMusicVoice measure 298 / measure 8]                %! SM4
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     g'4
     -\upbow                                                      %! IC
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     g'4
     -\downbow                                                    %! IC
     \glissando                                                   %! SC

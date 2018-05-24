@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def single_cluster_piano_rhythm():
@@ -8,8 +8,8 @@ def single_cluster_piano_rhythm():
     Makes single-cluster piano rhythm.
     """
     return baca.rhythm(
-        rhythm_maker=rhythmos.IncisedRhythmMaker(
-            incise_specifier=rhythmos.InciseSpecifier(
+        rhythm_maker=rmakers.IncisedRhythmMaker(
+            incise_specifier=rmakers.InciseSpecifier(
                 prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],
                 prefix_counts=[3, 1, 1, 3],
                 suffix_talea=[0, 0, 1, -3, 0],

@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def single_division_tuplets(ratios):
@@ -8,13 +8,13 @@ def single_division_tuplets(ratios):
     Makes single-division tuplet rhythm.
     """
     return baca.rhythm(
-        rhythm_maker=rhythmos.TupletRhythmMaker(
+        rhythm_maker=rmakers.TupletRhythmMaker(
             tuplet_ratios=ratios,
-            tuplet_specifier=rhythmos.TupletSpecifier(
+            tuplet_specifier=rmakers.TupletSpecifier(
                 avoid_dots=True,
                 diminution=False,
                 ),
-            tie_specifier=rhythmos.TieSpecifier(
+            tie_specifier=rmakers.TieSpecifier(
                 tie_across_divisions=True,
                 ),
             ),

@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def glissando_rhythm(
@@ -18,13 +18,13 @@ def glissando_rhythm(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=division_ratios,
             ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
+        rhythm_maker=rmakers.TupletRhythmMaker(
             division_masks=division_masks,
-            tie_specifier=rhythmos.TieSpecifier(
+            tie_specifier=rmakers.TieSpecifier(
                 tie_across_divisions=tie_across_divisions,
                 ),
             tuplet_ratios=tuplet_ratios,
-            tuplet_specifier=rhythmos.TupletSpecifier(
+            tuplet_specifier=rmakers.TupletSpecifier(
                 extract_trivial=True,
                 ),
             ),

@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def white_rhythm(
@@ -15,7 +15,7 @@ def white_rhythm(
     if do_not_burnish:
         burnish_specifier = None
     else:
-        burnish_specifier = rhythmos.BurnishSpecifier(
+        burnish_specifier = rmakers.BurnishSpecifier(
             left_classes=[abjad.Rest],
             left_counts=[1],
             outer_divisions_only=True,
@@ -29,7 +29,7 @@ def white_rhythm(
                 remainder=remainder,
                 ),
             ),
-        rhythm_maker=rhythmos.NoteRhythmMaker(
+        rhythm_maker=rmakers.NoteRhythmMaker(
             burnish_specifier=burnish_specifier,
             ),
         )

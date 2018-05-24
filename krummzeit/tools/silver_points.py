@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def silver_points(
@@ -19,10 +19,10 @@ def silver_points(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=ratios,
             ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
+        rhythm_maker=rmakers.TupletRhythmMaker(
             division_masks=division_masks,
             tuplet_ratios=tuplet_ratios,
-            tuplet_specifier=rhythmos.TupletSpecifier(
+            tuplet_specifier=rmakers.TupletSpecifier(
                 avoid_dots=True,
                 extract_trivial=True,
                 ),

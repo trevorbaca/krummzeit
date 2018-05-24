@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def polyphony(
@@ -17,26 +17,26 @@ def polyphony(
     Makes polyphony rhythm.
     """
 
-    tuplet_specifier = rhythmos.TupletSpecifier(
+    tuplet_specifier = rmakers.TupletSpecifier(
         extract_trivial=True,
         trivialize=True,
         )
 
-    rhythm_maker = rhythmos.EvenDivisionRhythmMaker(
+    rhythm_maker = rmakers.EvenDivisionRhythmMaker(
         denominators=denominators,
         extra_counts_per_division=extra_counts,
-        tie_specifier=rhythmos.TieSpecifier(
+        tie_specifier=rmakers.TieSpecifier(
             tie_across_divisions=ties,
             ),
         tuplet_specifier=tuplet_specifier,
         )
 
     if final_quarter_notes:
-        quarters = rhythmos.NoteRhythmMaker(
-            duration_specifier=rhythmos.DurationSpecifier(
+        quarters = rmakers.NoteRhythmMaker(
+            duration_specifier=rmakers.DurationSpecifier(
                 forbidden_duration=(1, 2),
                 ),
-            tie_specifier=rhythmos.TieSpecifier(
+            tie_specifier=rmakers.TieSpecifier(
                 strip_ties=True,
                 ),
             )
@@ -46,7 +46,7 @@ def polyphony(
             (quarters, abjad.index(indices)),
             ]
     elif initial_eighth_notes:
-        eighths = rhythmos.EvenDivisionRhythmMaker(
+        eighths = rmakers.EvenDivisionRhythmMaker(
             denominators=[8],
             tuplet_specifier=tuplet_specifier,
             )

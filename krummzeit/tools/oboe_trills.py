@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def oboe_trills():
@@ -11,7 +11,7 @@ def oboe_trills():
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=[(2, 1), (2, 1), (1, 1, 1)],
             ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
+        rhythm_maker=rmakers.TupletRhythmMaker(
             tuplet_ratios=[
                 (1, 1, 1, 1, 3, 3),
                 (3, 4, 1, 1),

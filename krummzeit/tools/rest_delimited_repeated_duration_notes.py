@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def rest_delimited_repeated_duration_notes(duration, suffix_denominator):
@@ -15,8 +15,8 @@ def rest_delimited_repeated_duration_notes(duration, suffix_denominator):
                 remainder=abjad.Right,
                 ),
             ),
-        rhythm_maker=rhythmos.IncisedRhythmMaker(
-            incise_specifier=rhythmos.InciseSpecifier(
+        rhythm_maker=rmakers.IncisedRhythmMaker(
+            incise_specifier=rmakers.InciseSpecifier(
                 suffix_talea=[-1],
                 suffix_counts=[1],
                 talea_denominator=suffix_denominator,

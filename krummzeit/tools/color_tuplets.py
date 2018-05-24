@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def color_tuplets(division_mask=None, rotation=0):
@@ -26,13 +26,13 @@ def color_tuplets(division_mask=None, rotation=0):
     else:
         division_masks = None
     return baca.rhythm(
-        rhythm_maker=rhythmos.TupletRhythmMaker(
+        rhythm_maker=rmakers.TupletRhythmMaker(
             division_masks=division_masks,
             tuplet_ratios=tuplet_ratios,
-            tie_specifier=rhythmos.TieSpecifier(
+            tie_specifier=rmakers.TieSpecifier(
                 tie_across_divisions=True,
                 ),
-            tuplet_specifier=rhythmos.TupletSpecifier(
+            tuplet_specifier=rmakers.TupletSpecifier(
                 avoid_dots=True,
                 ),
             ),

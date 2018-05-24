@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def fused_expanse(durations):
@@ -14,5 +14,5 @@ def fused_expanse(durations):
                 durations=durations,
                 ),
             ),
-        rhythm_maker=rhythmos.NoteRhythmMaker()
+        rhythm_maker=rmakers.NoteRhythmMaker()
         )

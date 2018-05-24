@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def hypermeter_tuplets(
@@ -19,11 +19,11 @@ def hypermeter_tuplets(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=counts,
             ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
+        rhythm_maker=rmakers.TupletRhythmMaker(
             denominator=(1, 4),
             division_masks=division_masks,
             tuplet_ratios=tuplet_ratios,
-            tuplet_specifier=rhythmos.TupletSpecifier(
+            tuplet_specifier=rmakers.TupletSpecifier(
                 avoid_dots=True,
                 diminution=False,
                 extract_trivial=True,

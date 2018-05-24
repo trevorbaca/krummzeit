@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def sponge_rhythm():
@@ -8,13 +8,13 @@ def sponge_rhythm():
     Makes sponge rhythm.
     """
     return baca.rhythm(
-        rhythm_maker=rhythmos.TaleaRhythmMaker(
+        rhythm_maker=rmakers.TaleaRhythmMaker(
             extra_counts_per_division=[2, 1, 0],
-            talea=rhythmos.Talea(counts=[1, 2], denominator=2),
-            tie_specifier=rhythmos.TieSpecifier(
+            talea=rmakers.Talea(counts=[1, 2], denominator=2),
+            tie_specifier=rmakers.TieSpecifier(
                 repeat_ties=True,
                 ),
-            tuplet_specifier=rhythmos.TupletSpecifier(
+            tuplet_specifier=rmakers.TupletSpecifier(
                 extract_trivial=True,
                 trivialize=True,
                 ),

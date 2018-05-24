@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def closing_pizzicati(
@@ -12,8 +12,8 @@ def closing_pizzicati(
     Makes closing pizzicati rhythm.
     """
     return baca.rhythm(
-        rhythm_maker=rhythmos.TaleaRhythmMaker(
-            talea=rhythmos.Talea(
+        rhythm_maker=rmakers.TaleaRhythmMaker(
+            talea=rmakers.Talea(
                 counts=counts,
                 denominator=4,
                 ),

@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def opening_triplets(
@@ -18,7 +18,7 @@ def opening_triplets(
                 remainder=remainder,
                 ),
             ),
-        rhythm_maker=rhythmos.TupletRhythmMaker(
+        rhythm_maker=rmakers.TupletRhythmMaker(
             tuplet_ratios=[(1, 1, 1)],
             division_masks=division_masks,
             ),

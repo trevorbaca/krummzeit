@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def incise_chain():
@@ -8,9 +8,9 @@ def incise_chain():
     Makes incise chain.
     """
     return baca.rhythm(
-        rhythm_maker=rhythmos.IncisedRhythmMaker(
+        rhythm_maker=rmakers.IncisedRhythmMaker(
             division_masks=[abjad.index([2], 5)],
-            incise_specifier=rhythmos.InciseSpecifier(
+            incise_specifier=rmakers.InciseSpecifier(
                 prefix_talea=[-2, 2, -2, 2, -2, 2, 0],
                 prefix_counts=[2, 2, 2, 1],
                 suffix_talea=[0, 2, -2, 0, 2, -2],

@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def right_remainder_quarters(division_masks=None):
@@ -11,7 +11,7 @@ def right_remainder_quarters(division_masks=None):
         division_maker=baca.SplitByDurationsDivisionCallback(
             durations=[(1, 4)],
             ),
-        rhythm_maker=rhythmos.NoteRhythmMaker(
+        rhythm_maker=rmakers.NoteRhythmMaker(
             division_masks=division_masks,
             ),
         )

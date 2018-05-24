@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def piano_harmonics(
@@ -17,9 +17,9 @@ def piano_harmonics(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=division_ratios,
             ),
-        rhythm_maker=rhythmos.NoteRhythmMaker(
+        rhythm_maker=rmakers.NoteRhythmMaker(
             division_masks=division_masks,
-            tie_specifier=rhythmos.TieSpecifier(
+            tie_specifier=rmakers.TieSpecifier(
                 tie_across_divisions=tie_across_divisions,
             ),
         ),

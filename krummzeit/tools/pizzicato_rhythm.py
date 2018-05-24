@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def pizzicato_rhythm(masks=None, split_divisions_by_counts=(6, 18)):
@@ -8,15 +8,15 @@ def pizzicato_rhythm(masks=None, split_divisions_by_counts=(6, 18)):
     Makes pizzicato rhythm.
     """
     return baca.rhythm(
-        rhythm_maker=rhythmos.TaleaRhythmMaker(
+        rhythm_maker=rmakers.TaleaRhythmMaker(
             extra_counts_per_division=[2, 2, 0, 2, 4, 6],
             division_masks=masks,
             split_divisions_by_counts=split_divisions_by_counts,
-            talea=rhythmos.Talea(
+            talea=rmakers.Talea(
                 counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
                 denominator=16,
                 ),
-            tuplet_specifier=rhythmos.TupletSpecifier(
+            tuplet_specifier=rmakers.TupletSpecifier(
                 avoid_dots=True,
                 extract_trivial=True,
                 ),

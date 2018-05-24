@@ -2658,7 +2658,7 @@ H_PercussionMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'DeepPink4)         %! SM6:REDUNDANT_CLEF_REDRAW_COLOR:IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c4
     \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC
     -\accent                                                     %! IC
@@ -2672,43 +2672,43 @@ H_PercussionMusicVoice = {
         }                                                        %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c4
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                     %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c4
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                     %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c4
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                     %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c4
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                     %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c4
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                     %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c4
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                     %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c4
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                     %! IC
@@ -2823,19 +2823,19 @@ H_ViolinMusicVoice = {
         % [H ViolinMusicVoice measure 283 / measure 3]           %! SM4
         \override NoteHead.style = #'harmonic                    %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         af'!4
         \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         af'!2
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     af'!4
     \glissando                                                   %! SC
     - \tweak color #red                                          %! SM14
@@ -2900,7 +2900,7 @@ H_ViolinMusicVoice = {
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                               %! SC
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         ef''!2
         :32                                                      %! IC
         - \tweak color #red                                      %! SM14
@@ -2910,13 +2910,13 @@ H_ViolinMusicVoice = {
     \times 9/5 {
         
         % [H ViolinMusicVoice measure 289 / measure 9]           %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         ef''!2.
         :32                                                      %! IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         ef''!2
         :32                                                      %! IC
         - \tweak color #red                                      %! SM14
@@ -3005,14 +3005,14 @@ H_ViolaMusicVoice = {
         \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                               %! SC
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         c1.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
     \times 4/5 {
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         c8
         \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
@@ -3075,7 +3075,7 @@ H_ViolaMusicVoice = {
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                               %! SC
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a1
         :32                                                      %! IC
         - \tweak color #red                                      %! SM14
@@ -3085,13 +3085,13 @@ H_ViolaMusicVoice = {
     \times 9/5 {
         
         % [H ViolaMusicVoice measure 289 / measure 9]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a4
         :32                                                      %! IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a1
         :32                                                      %! IC
         - \tweak color #red                                      %! SM14
@@ -3244,7 +3244,7 @@ H_CelloMusicVoice = {
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                               %! SC
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         eqf,!2.
         :32                                                      %! IC
         - \tweak color #red                                      %! SM14
@@ -3254,13 +3254,13 @@ H_CelloMusicVoice = {
     \times 9/5 {
         
         % [H CelloMusicVoice measure 289 / measure 9]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         eqf,!2
         :32                                                      %! IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         eqf,!2.
         :32                                                      %! IC
         - \tweak color #red                                      %! SM14

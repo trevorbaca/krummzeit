@@ -1249,32 +1249,32 @@ G_OboeMusicVoice = {
     a'4
     
     % [G OboeMusicVoice measure 268 / measure 12]                %! SM4
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     fs''!4
     -\staccato                                                   %! IC
     ~
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     fs''!8
     [
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     fs''!8
     -\staccato                                                   %! IC
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     af''!8
     -\staccato                                                   %! IC
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     af''!8
     -\staccato                                                   %! IC
     ~
@@ -1282,7 +1282,7 @@ G_OboeMusicVoice = {
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     af''!16.
     [
     - \tweak color #red                                          %! SM14
@@ -1857,7 +1857,7 @@ G_PianoMusicVoice = {
     fs''!8
     -\staccato                                                   %! IC
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     af''!8
     -\staccato                                                   %! IC
     ~
@@ -1867,13 +1867,13 @@ G_PianoMusicVoice = {
     \times 4/5 {
         
         % [G PianoMusicVoice measure 263 / measure 7]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         af''!8
         [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         af''!8
         -\staccato                                               %! IC
         - \tweak color #red                                      %! SM14
@@ -1957,7 +1957,7 @@ G_PianoMusicVoice = {
     b''8
     -\staccato                                                   %! IC
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     fs''!8
     -\staccato                                                   %! IC
     ]
@@ -1965,7 +1965,7 @@ G_PianoMusicVoice = {
     ^ \markup { @ }                                              %! SM14
     \times 4/5 {
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs''!8
         -\staccato                                               %! IC
         [
@@ -2007,13 +2007,13 @@ G_PianoMusicVoice = {
         bf''!8
         -\staccato                                               %! IC
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs''!8
         -\staccato                                               %! IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs''!8
         -\staccato                                               %! IC
         - \tweak color #red                                      %! SM14
@@ -2194,7 +2194,7 @@ G_PercussionMusicVoice = {
     \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     \p                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
     ^ \markup {
@@ -2238,37 +2238,37 @@ G_PercussionMusicVoice = {
             Perc.                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     
     r8
@@ -2512,20 +2512,20 @@ G_ViolinMusicVoice = {
     g'''4
     
     % [G ViolinMusicVoice measure 265 / measure 9]               %! SM4
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     bf'''!4.
     -\staccato                                                   %! IC
     ~
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     bf'''!8
     [
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     bf'''!8
     -\staccato                                                   %! IC
     - \tweak color #red                                          %! SM14
@@ -2564,13 +2564,13 @@ G_ViolinMusicVoice = {
         g'''8
         -\staccato                                               %! IC
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         af'''!8
         -\staccato                                               %! IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         af'''!8
         -\staccato                                               %! IC
         ]
@@ -2652,7 +2652,7 @@ G_ViolinMusicVoice = {
     a'''16.
     -\staccato                                                   %! IC
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     bf''!16.
     -\staccato                                                   %! IC
     ~
@@ -2661,12 +2661,12 @@ G_ViolinMusicVoice = {
     ^ \markup { @ }                                              %! SM14
     \times 2/3 {
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         bf''!4
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         bf''!4
         -\staccato                                               %! IC
         - \tweak color #red                                      %! SM14
@@ -2689,7 +2689,7 @@ G_ViolinMusicVoice = {
         % [G ViolinMusicVoice measure 270 / measure 14]          %! SM4
         \override NoteHead.style = #'harmonic                    %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         af'!8
         \fff_poss                                                %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {
@@ -2708,14 +2708,14 @@ G_ViolinMusicVoice = {
                 }
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         af'!4
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
     \times 4/5 {
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         af'!8
         \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
@@ -3004,14 +3004,14 @@ G_ViolaMusicVoice = {
                     "molto gridato ed estr. sul pont."           %! IC
             }                                                    %! IC
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         c2
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
     \times 4/5 {
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         c16
         \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
@@ -3352,7 +3352,7 @@ G_CelloMusicVoice = {
         e,16
         \glissando                                               %! SC
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         bf,!4
         ~
         - \tweak color #red                                      %! SM14
@@ -3360,13 +3360,13 @@ G_CelloMusicVoice = {
     }
     \times 4/7 {
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         bf,!8
         [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         bf,!16.
         ]
         \glissando                                               %! SC
@@ -3387,7 +3387,7 @@ G_CelloMusicVoice = {
         b,16
         \glissando                                               %! SC
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         af,!4
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3395,7 +3395,7 @@ G_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         af,!2
         \glissando                                               %! SC
         - \tweak color #red                                      %! SM14

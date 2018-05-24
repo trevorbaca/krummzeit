@@ -1689,7 +1689,7 @@ E_OboeMusicVoice = {
         \set Staff.forceClef = ##t                               %! SM8:REAPPLIED_CLEF:SM33:SM37
         \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         bf''!16
         \p                                                       %! SM8:EXPLICIT_DYNAMIC:IC
         [
@@ -1729,7 +1729,7 @@ E_OboeMusicVoice = {
                 Ob.                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
             }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         bf''!16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -1741,7 +1741,7 @@ E_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         bf''!16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -1753,7 +1753,7 @@ E_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         bf''!16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -1765,12 +1765,12 @@ E_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a''8.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a''8.
         ]
         - \tweak color #red                                      %! SM14
@@ -1785,7 +1785,7 @@ E_OboeMusicVoice = {
     }
     \times 8/9 {
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a'16.
         [
         - \tweak color #red                                      %! SM14
@@ -1798,7 +1798,7 @@ E_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a''8
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -1845,12 +1845,12 @@ E_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         bf''!8
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         bf''!8
         ]
         - \tweak color #red                                      %! SM14
@@ -1863,7 +1863,7 @@ E_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         bf''!4.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -1876,7 +1876,7 @@ E_OboeMusicVoice = {
             }
         \startTrillSpan                                          %! SC
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         bf''!4.
         \stopTrillSpan                                           %! SC
         - \tweak color #red                                      %! SM14
@@ -1921,7 +1921,7 @@ E_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         e'''16
         ]
         - \tweak color #red                                      %! SM14
@@ -1936,13 +1936,13 @@ E_OboeMusicVoice = {
     }
     \times 4/5 {
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         e'''16
         [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         e'''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -1954,7 +1954,7 @@ E_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         e'''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -1966,7 +1966,7 @@ E_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         ef'''!16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -1978,12 +1978,12 @@ E_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         ef''!8.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         ef''!8.
         ]
         - \tweak color #red                                      %! SM14
@@ -1999,7 +1999,7 @@ E_OboeMusicVoice = {
     \times 2/3 {
         
         % [E OboeMusicVoice measure 203 / measure 4]             %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         ef''!4.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2050,7 +2050,7 @@ E_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2062,12 +2062,12 @@ E_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a''16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2079,7 +2079,7 @@ E_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a'8.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2121,7 +2121,7 @@ E_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         cs'''!32
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2133,7 +2133,7 @@ E_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         cs''!32
         ]
         - \tweak color #red                                      %! SM14
@@ -2148,13 +2148,13 @@ E_OboeMusicVoice = {
     }
     \times 4/5 {
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         cs''!64
         [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         cs''!64
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2166,7 +2166,7 @@ E_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         c''64
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2178,7 +2178,7 @@ E_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         c''64
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2190,12 +2190,12 @@ E_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         c''32.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         c'''32.
         ]
         - \tweak color #red                                      %! SM14
@@ -2245,7 +2245,7 @@ E_OboeMusicVoice = {
     \times 3/5 {
         
         % [E OboeMusicVoice measure 206 / measure 7]             %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         g''8
         [
         - \tweak color #red                                      %! SM14
@@ -2258,7 +2258,7 @@ E_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         g''8
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2270,12 +2270,12 @@ E_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         g'8
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         g'8
         ]
         - \tweak color #red                                      %! SM14
@@ -2319,7 +2319,7 @@ E_OboeMusicVoice = {
         
         bf''!8.
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         e'4
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2332,7 +2332,7 @@ E_OboeMusicVoice = {
             }
         \startTrillSpan                                          %! SC
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         e'16
         \stopTrillSpan                                           %! SC
         [
@@ -2346,7 +2346,7 @@ E_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         e'16
         ]
         - \tweak color #red                                      %! SM14
@@ -2363,13 +2363,13 @@ E_OboeMusicVoice = {
     \times 3/5 {
         
         % [E OboeMusicVoice measure 208 / measure 9]             %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         e'16
         [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         cs''!16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2381,7 +2381,7 @@ E_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         cs''!16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2393,7 +2393,7 @@ E_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         cs'''!16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2405,7 +2405,7 @@ E_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         cs'''!8.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2443,7 +2443,7 @@ E_OboeMusicVoice = {
         
         fs''!32
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         f'32
         ]
         - \tweak color #red                                      %! SM14
@@ -2460,7 +2460,7 @@ E_OboeMusicVoice = {
     \times 3/5 {
         
         % [E OboeMusicVoice measure 209 / measure 10]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         f'16
         [
         - \tweak color #red                                      %! SM14
@@ -2473,7 +2473,7 @@ E_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         f'16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2485,7 +2485,7 @@ E_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         f'16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2529,13 +2529,13 @@ E_OboeMusicVoice = {
         r8
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         c'4
         \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         c'16
         [
         - \tweak color #red                                      %! SM14
@@ -2548,7 +2548,7 @@ E_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         c'16
         ]
         \glissando                                               %! SC
@@ -2562,7 +2562,7 @@ E_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         bqs'!2.
         ~
         - \tweak color #red                                      %! SM14
@@ -2579,12 +2579,12 @@ E_OboeMusicVoice = {
     \times 1/1 {
         
         % [E OboeMusicVoice measure 212 / measure 13]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         bqs'!2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         bqs'!2
         ~
         - \tweak color #red                                      %! SM14
@@ -2594,7 +2594,7 @@ E_OboeMusicVoice = {
     \times 5/7 {
         
         % [E OboeMusicVoice measure 213 / measure 14]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         bqs'!1
         \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
@@ -2624,7 +2624,7 @@ E_OboeMusicVoice = {
         % [E OboeMusicVoice measure 215 / measure 16]            %! SM4
         r8.
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a'4
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2636,7 +2636,7 @@ E_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a'16
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2648,7 +2648,7 @@ E_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a'2.
         ~
         - \tweak color #red                                      %! SM14
@@ -2657,13 +2657,13 @@ E_OboeMusicVoice = {
     \times 4/5 {
         
         % [E OboeMusicVoice measure 216 / measure 17]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a'2.
         \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         gqs'!2
         ~
         - \tweak color #red                                      %! SM14
@@ -2680,12 +2680,12 @@ E_OboeMusicVoice = {
     \times 1/1 {
         
         % [E OboeMusicVoice measure 217 / measure 18]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         gqs'!2..
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         gqs'!8
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2697,7 +2697,7 @@ E_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         gqs'!4.
         ~
         - \tweak color #red                                      %! SM14
@@ -2714,7 +2714,7 @@ E_OboeMusicVoice = {
     \times 3/5 {
         
         % [E OboeMusicVoice measure 218 / measure 19]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         gqs'!2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2727,13 +2727,13 @@ E_OboeMusicVoice = {
         % [E OboeMusicVoice measure 219 / measure 20]            %! SM4
         r16
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fqs'!8
         [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fqs'!32
         \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
@@ -2746,7 +2746,7 @@ E_OboeMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         eqf'!32
         ]
         - \tweak color #red                                      %! SM14
@@ -2759,7 +2759,7 @@ E_OboeMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         eqf'!4.
         ~
         - \tweak color #red                                      %! SM14
@@ -2776,12 +2776,12 @@ E_OboeMusicVoice = {
     \times 9/10 {
         
         % [E OboeMusicVoice measure 220 / measure 21]            %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         eqf'!2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         eqf'!2
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3312,7 +3312,7 @@ E_ClarinetMusicVoice = {
         % [E ClarinetMusicVoice measure 213 / measure 14]        %! SM4
         r8
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a4
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3324,7 +3324,7 @@ E_ClarinetMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         a16
         \glissando                                               %! SC
         [
@@ -3338,7 +3338,7 @@ E_ClarinetMusicVoice = {
                         2
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         gtqs'!16
         ]
         - \tweak color #red                                      %! SM14
@@ -3351,7 +3351,7 @@ E_ClarinetMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         gtqs'!2.
         ~
         - \tweak color #red                                      %! SM14
@@ -3361,13 +3361,13 @@ E_ClarinetMusicVoice = {
     \times 3/5 {
         
         % [E ClarinetMusicVoice measure 214 / measure 15]        %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         gtqs'!2.
         \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs'!2
         ~
         - \tweak color #red                                      %! SM14
@@ -3384,12 +3384,12 @@ E_ClarinetMusicVoice = {
     \times 6/7 {
         
         % [E ClarinetMusicVoice measure 215 / measure 16]        %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs'!2
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs'!4.
         ~
         - \tweak color #red                                      %! SM14
@@ -3405,7 +3405,7 @@ E_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [E ClarinetMusicVoice measure 216 / measure 17]        %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs'!2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3418,7 +3418,7 @@ E_ClarinetMusicVoice = {
         % [E ClarinetMusicVoice measure 217 / measure 18]        %! SM4
         r4.
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs'!2
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -3430,13 +3430,13 @@ E_ClarinetMusicVoice = {
                         1
             }
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         fs'!8
         \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         eqs'!1.
         ~
         - \tweak color #red                                      %! SM14
@@ -3453,12 +3453,12 @@ E_ClarinetMusicVoice = {
     \times 3/5 {
         
         % [E ClarinetMusicVoice measure 218 / measure 19]        %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         eqs'!2.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         eqs'!2
         ~
         - \tweak color #red                                      %! SM14
@@ -3475,12 +3475,12 @@ E_ClarinetMusicVoice = {
     \times 10/11 {
         
         % [E ClarinetMusicVoice measure 219 / measure 20]        %! SM4
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         eqs'!4..
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         eqs'!16
         \glissando                                               %! SC
         [
@@ -4277,7 +4277,7 @@ E_PianoMusicVoice = {
     e''''8
     [
     
-    \baca_red_music                                              %! SM14
+    \baca_repeat_pitch_class_warning                             %! SM14
     c''''8
     -\staccatissimo                                              %! IC
     ]
@@ -4286,7 +4286,7 @@ E_PianoMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
-        \baca_red_music                                          %! SM14
+        \baca_repeat_pitch_class_warning                         %! SM14
         c''''16
         -\staccatissimo                                          %! IC
         [
@@ -4369,7 +4369,7 @@ E_PercussionMusicVoice = {
     \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c4.
     :32                                                          %! IC
     \ppp                                                         %! SM8:REAPPLIED_DYNAMIC:SM37
@@ -4414,57 +4414,57 @@ E_PercussionMusicVoice = {
             Perc.                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c4.
     :32                                                          %! IC
     \times 2/3 {
         
         % [E PercussionMusicVoice measure 201 / measure 2]       %! SM4
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2
         :32                                                      %! IC
         \repeatTie
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2
         :32                                                      %! IC
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2
         :32                                                      %! IC
     }
     
     % [E PercussionMusicVoice measure 202 / measure 3]           %! SM4
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     :32                                                          %! IC
     \repeatTie
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     :32                                                          %! IC
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     :32                                                          %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/17 {
         
         % [E PercussionMusicVoice measure 203 / measure 4]       %! SM4
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2
         :32                                                      %! IC
         \repeatTie
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2
         :32                                                      %! IC
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c1
         :32                                                      %! IC
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c8
         :32                                                      %! IC
     }
@@ -4473,42 +4473,42 @@ E_PercussionMusicVoice = {
         
         % [E PercussionMusicVoice measure 204 / measure 5]       %! SM4
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c4.
         :32                                                      %! IC
         \repeatTie
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2..
         :32                                                      %! IC
     }
     
     % [E PercussionMusicVoice measure 205 / measure 6]           %! SM4
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c8
     :32                                                          %! IC
     \repeatTie
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     :32                                                          %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/17 {
         
         % [E PercussionMusicVoice measure 206 / measure 7]       %! SM4
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c1
         :32                                                      %! IC
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2
         :32                                                      %! IC
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2
         :32                                                      %! IC
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c8
         :32                                                      %! IC
         \repeatTie
@@ -4518,40 +4518,40 @@ E_PercussionMusicVoice = {
         
         % [E PercussionMusicVoice measure 207 / measure 8]       %! SM4
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c4.
         :32                                                      %! IC
         \repeatTie
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2
         :32                                                      %! IC
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2.
         :32                                                      %! IC
     }
     
     % [E PercussionMusicVoice measure 208 / measure 9]           %! SM4
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c4
     :32                                                          %! IC
     \repeatTie
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c4.
     :32                                                          %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/8 {
         
         % [E PercussionMusicVoice measure 209 / measure 10]      %! SM4
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c8
         :32                                                      %! IC
         \repeatTie
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2..
         :32                                                      %! IC
     }
@@ -4559,21 +4559,21 @@ E_PercussionMusicVoice = {
     \times 3/5 {
         
         % [E PercussionMusicVoice measure 210 / measure 11]      %! SM4
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c8
         :32                                                      %! IC
         \repeatTie
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2
         :32                                                      %! IC
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2
         :32                                                      %! IC
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c8
         :32                                                      %! IC
         \repeatTie
@@ -4581,32 +4581,32 @@ E_PercussionMusicVoice = {
     
     % [E PercussionMusicVoice measure 211 / measure 12]          %! SM4
     \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie       %! SM26
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c4.
     :32                                                          %! IC
     \repeatTie
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     :32                                                          %! IC
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c8
     :32                                                          %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/9 {
         
         % [E PercussionMusicVoice measure 212 / measure 13]      %! SM4
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2..
         :32                                                      %! IC
         \repeatTie
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2
         :32                                                      %! IC
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2..
         :32                                                      %! IC
     }
@@ -4614,21 +4614,21 @@ E_PercussionMusicVoice = {
     \times 5/7 {
         
         % [E PercussionMusicVoice measure 213 / measure 14]      %! SM4
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c8
         :32                                                      %! IC
         \repeatTie
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2
         :32                                                      %! IC
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c1
         :32                                                      %! IC
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c8
         :32                                                      %! IC
     }
@@ -4933,7 +4933,7 @@ E_PercussionMusicVoice = {
     
     % [E PercussionMusicVoice measure 227 / measure 28]          %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c4.
     :32                                                          %! IC
     \pp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
@@ -4946,78 +4946,78 @@ E_PercussionMusicVoice = {
                         "suspended cymbal"                       %! IC
         }                                                        %! IC
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c4.
     :32                                                          %! IC
     \times 2/3 {
         
         % [E PercussionMusicVoice measure 228 / measure 29]      %! SM4
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2
         :32                                                      %! IC
         \repeatTie
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2
         :32                                                      %! IC
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2
         :32                                                      %! IC
     }
     
     % [E PercussionMusicVoice measure 229 / measure 30]          %! SM4
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     :32                                                          %! IC
     \repeatTie
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     :32                                                          %! IC
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c4
     :32                                                          %! IC
     
     % [E PercussionMusicVoice measure 230 / measure 31]          %! SM4
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2.
     :32                                                          %! IC
     \repeatTie
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c4
     :32                                                          %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/13 {
         
         % [E PercussionMusicVoice measure 231 / measure 32]      %! SM4
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c4
         :32                                                      %! IC
         \repeatTie
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c1
         :32                                                      %! IC
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c4.
         :32                                                      %! IC
     }
     
     % [E PercussionMusicVoice measure 232 / measure 33]          %! SM4
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c8
     :32                                                          %! IC
     \repeatTie
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c2
     :32                                                          %! IC
     
-    \baca_blue_music                                             %! SM24
+    \baca_unpitched_music_warning                                %! SM24
     c8
     :32                                                          %! IC
     \repeatTie
@@ -5025,16 +5025,16 @@ E_PercussionMusicVoice = {
     \times 5/8 {
         
         % [E PercussionMusicVoice measure 233 / measure 34]      %! SM4
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c4.
         :32                                                      %! IC
         \repeatTie
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c2
         :32                                                      %! IC
         
-        \baca_blue_music                                         %! SM24
+        \baca_unpitched_music_warning                            %! SM24
         c8
         :32                                                      %! IC
     }

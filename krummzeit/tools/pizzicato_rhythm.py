@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rmakers
+from abjadext import rmakers
 
 
 def pizzicato_rhythm(masks=None, split_divisions_by_counts=(6, 18)):

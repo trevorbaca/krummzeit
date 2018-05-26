@@ -4128,6 +4128,7 @@ B_PercussionMusicVoice = {
     :32                                                          %! IC
     \repeatTie
     
+    \baca_unpitched_music_warning                                %! SM24
     c4
     :32                                                          %! IC
     \repeatTie
@@ -4138,6 +4139,7 @@ B_PercussionMusicVoice = {
     :32                                                          %! IC
     \repeatTie
     
+    \baca_unpitched_music_warning                                %! SM24
     c4.
     :32                                                          %! IC
     \repeatTie
@@ -4148,6 +4150,7 @@ B_PercussionMusicVoice = {
     :32                                                          %! IC
     \repeatTie
     
+    \baca_unpitched_music_warning                                %! SM24
     c4.
     :32                                                          %! IC
     \repeatTie
@@ -4158,6 +4161,7 @@ B_PercussionMusicVoice = {
     :32                                                          %! IC
     \repeatTie
     
+    \baca_unpitched_music_warning                                %! SM24
     c4.
     :32                                                          %! IC
     \repeatTie
@@ -4168,6 +4172,7 @@ B_PercussionMusicVoice = {
     :32                                                          %! IC
     \repeatTie
     
+    \baca_unpitched_music_warning                                %! SM24
     c4
     :32                                                          %! IC
     \repeatTie
@@ -4202,6 +4207,7 @@ B_PercussionMusicVoice = {
     :32                                                          %! IC
     \repeatTie
     
+    \baca_unpitched_music_warning                                %! SM24
     c2
     :32                                                          %! IC
     \repeatTie

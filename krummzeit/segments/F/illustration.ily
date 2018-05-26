@@ -1898,6 +1898,7 @@ F_PercussionMusicVoice = {
                 "rapid roll with fingertips: keep speed constant during accelerando" %! IC
         }                                                        %! IC
     
+    \baca_unpitched_music_warning                                %! SM24
     c4
     :32                                                          %! IC
     \repeatTie
@@ -1908,6 +1909,7 @@ F_PercussionMusicVoice = {
     :32                                                          %! IC
     \repeatTie
     
+    \baca_unpitched_music_warning                                %! SM24
     c4
     :32                                                          %! IC
     \repeatTie
@@ -1920,6 +1922,7 @@ F_PercussionMusicVoice = {
     c2.
     :32                                                          %! IC
     
+    \baca_unpitched_music_warning                                %! SM24
     c2
     :32                                                          %! IC
     \repeatTie
@@ -1948,6 +1951,7 @@ F_PercussionMusicVoice = {
     :32                                                          %! IC
     \repeatTie
     
+    \baca_unpitched_music_warning                                %! SM24
     c4.
     :32                                                          %! IC
     \repeatTie
@@ -1977,6 +1981,7 @@ F_PercussionMusicVoice = {
     c4.
     :32                                                          %! IC
     
+    \baca_unpitched_music_warning                                %! SM24
     c4
     :32                                                          %! IC
     \repeatTie

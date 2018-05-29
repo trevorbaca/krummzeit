@@ -75,7 +75,7 @@ segment_time_signatures['D'] = time_signatures
 time_signatures = time_signature_inventory[1:3]
 time_signatures = baca.sequence(time_signatures).flatten()
 assert len(time_signatures) == 33
-'''
+"""
 12 stages:
 1: 4 (1/4)
 2: 1 (1/4) 1 (1/4) 1 (1/4) 1 (1/4)
@@ -90,7 +90,7 @@ assert len(time_signatures) == 33
 11: 3
 12: 2
 total: 33 semantic measures
-'''
+"""
 time_signatures = list(time_signatures)
 time_signatures.insert(-14, abjad.TimeSignature((1, 4)))
 time_signatures.insert(-13, abjad.TimeSignature((1, 4)))

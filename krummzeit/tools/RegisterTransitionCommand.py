@@ -160,7 +160,7 @@ class RegisterTransitionCommand(baca.Command):
     ### PRIVATE METHODS ###
 
     def _make_registration(self, offset, timespan):
-        assert abjad.timespantools.offset_happens_during_timespan(
+        assert abjad.timespans.offset_happens_during_timespan(
             timespan=timespan,
             offset=offset,
             ), repr((timespan, offset))

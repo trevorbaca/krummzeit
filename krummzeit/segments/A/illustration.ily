@@ -10027,12 +10027,10 @@ A_ViolaMusicVoice = {
         e''4
         -\staccatissimo                                          %! IC
     }
-    \times 2/3 {
-        
-        f''4.
-        -\staccatissimo                                          %! IC
-        ~
-    }
+    
+    f''4
+    -\staccatissimo                                              %! IC
+    ~
     
     % [A ViolaMusicVoice measure 69 / measure 56]                %! SM4
     f''8

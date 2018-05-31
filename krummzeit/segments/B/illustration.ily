@@ -2768,10 +2768,8 @@ B_OboeMusicVoice = {
             }
         \startTrillSpan                                          %! SC
     }
-    \times 2/3 {
-        
-        cs''!4.
-    }
+    
+    cs''!4
     
     % [B OboeMusicVoice measure 123 / measure 35]                %! SM4
     cs''!4

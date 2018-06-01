@@ -2773,16 +2773,16 @@ E_OboeMusicVoice = {
             }
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/10 {
+    \times 9/5 {
         
         % [E OboeMusicVoice measure 220 / measure 21]            %! SM4
         \baca_repeat_pitch_class_warning                         %! SM14
-        eqf'!2.
+        eqf'!4.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
         \baca_repeat_pitch_class_warning                         %! SM14
-        eqf'!2
+        eqf'!4
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         \revert Beam.positions                                   %! OC2
@@ -3499,12 +3499,12 @@ E_ClarinetMusicVoice = {
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/10 {
+    \times 9/5 {
         
         % [E ClarinetMusicVoice measure 220 / measure 21]        %! SM4
-        dqs'!2.
+        dqs'!4.
         
-        r2
+        r4
         \revert Beam.positions                                   %! OC2
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
@@ -3988,18 +3988,20 @@ E_PianoMusicVoice = {
         -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 6/5 {
         
         % [E PianoMusicVoice measure 220 / measure 21]           %! SM4
-        r4
+        r8
+        
+        f''8
+        -\staccatissimo                                          %! IC
+        [
+        
+        f''8
+        -\staccatissimo                                          %! IC
+        ]
         
         f''4
-        -\staccatissimo                                          %! IC
-        
-        f''4
-        -\staccatissimo                                          %! IC
-        
-        f''2
         -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -4021,21 +4023,21 @@ E_PianoMusicVoice = {
         -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 6/5 {
         
         % [E PianoMusicVoice measure 221 / measure 22]           %! SM4
-        r8
+        r16
         
-        f''8
+        f''16
         -\staccatissimo                                          %! IC
         [
+        
+        f''16
+        -\staccatissimo                                          %! IC
         
         f''8
         -\staccatissimo                                          %! IC
         ]
-        
-        f''4
-        -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
@@ -4087,21 +4089,21 @@ E_PianoMusicVoice = {
         -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 6/5 {
         
         % [E PianoMusicVoice measure 223 / measure 24]           %! SM4
-        r8
+        r16
         
-        f''8
+        f''16
         -\staccatissimo                                          %! IC
         [
+        
+        f''16
+        -\staccatissimo                                          %! IC
         
         f''8
         -\staccatissimo                                          %! IC
         ]
-        
-        f''4
-        -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
@@ -4639,7 +4641,7 @@ E_PercussionMusicVoice = {
     % [E PercussionMusicVoice measure 215 / measure 16]          %! SM4
     R1 * 3/4
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 6/5 {
         
         % [E PercussionMusicVoice measure 216 / measure 17]      %! SM4
         \stopStaff                                               %! SM8:EXPLICIT_STAFF_LINES:IC
@@ -4650,7 +4652,7 @@ E_PercussionMusicVoice = {
     %@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
         \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
-        r4
+        r8
         ^ \markup {                                              %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
             \with-color                                          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
                 #(x11-color 'DeepPink1)                          %! SM11:REDUNDANT_INSTRUMENT_ALERT:IC
@@ -4659,14 +4661,16 @@ E_PercussionMusicVoice = {
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        f'4
+        f'8
         \p                                                       %! SM8:EXPLICIT_DYNAMIC:IC
         -\staccatissimo                                          %! IC
+        [
+        
+        f'8
+        -\staccatissimo                                          %! IC
+        ]
         
         f'4
-        -\staccatissimo                                          %! IC
-        
-        f'2
         -\staccatissimo                                          %! IC
     }
     \times 4/7 {
@@ -4693,21 +4697,21 @@ E_PercussionMusicVoice = {
     % [E PercussionMusicVoice measure 218 / measure 19]          %! SM4
     R1 * 3/4
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 6/5 {
         
         % [E PercussionMusicVoice measure 219 / measure 20]      %! SM4
-        r8
+        r16
         
-        f'8
+        f'16
         -\staccatissimo                                          %! IC
         [
+        
+        f'16
+        -\staccatissimo                                          %! IC
         
         f'8
         -\staccatissimo                                          %! IC
         ]
-        
-        f'4
-        -\staccatissimo                                          %! IC
     }
     \times 4/7 {
         
@@ -4727,21 +4731,21 @@ E_PercussionMusicVoice = {
         -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 6/5 {
         
         % [E PercussionMusicVoice measure 220 / measure 21]      %! SM4
-        r8
+        r16
         
-        f'8
+        f'16
         -\staccatissimo                                          %! IC
         [
+        
+        f'16
+        -\staccatissimo                                          %! IC
         
         f'8
         -\staccatissimo                                          %! IC
         ]
-        
-        f'4
-        -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
@@ -4762,18 +4766,20 @@ E_PercussionMusicVoice = {
         -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 6/5 {
         
         % [E PercussionMusicVoice measure 221 / measure 22]      %! SM4
-        r4
+        r8
+        
+        f'8
+        -\staccatissimo                                          %! IC
+        [
+        
+        f'8
+        -\staccatissimo                                          %! IC
+        ]
         
         f'4
-        -\staccatissimo                                          %! IC
-        
-        f'4
-        -\staccatissimo                                          %! IC
-        
-        f'2
         -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -4811,8 +4817,27 @@ E_PercussionMusicVoice = {
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/7 {
+    \times 10/7 {
         
+        r16
+        
+        f'16
+        -\staccatissimo                                          %! IC
+        [
+        
+        f'16
+        -\staccatissimo                                          %! IC
+        ]
+        
+        r8
+        
+        f'8
+        -\staccatissimo                                          %! IC
+    }
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 6/5 {
+        
+        % [E PercussionMusicVoice measure 223 / measure 24]      %! SM4
         r8
         
         f'8
@@ -4823,24 +4848,7 @@ E_PercussionMusicVoice = {
         -\staccatissimo                                          %! IC
         ]
         
-        r4
-        
         f'4
-        -\staccatissimo                                          %! IC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
-        
-        % [E PercussionMusicVoice measure 223 / measure 24]      %! SM4
-        r4
-        
-        f'4
-        -\staccatissimo                                          %! IC
-        
-        f'4
-        -\staccatissimo                                          %! IC
-        
-        f'2
         -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text

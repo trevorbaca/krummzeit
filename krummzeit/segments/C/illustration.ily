@@ -1965,23 +1965,25 @@ C_PianoMusicVoice = {
         -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/7 {
+    \times 10/7 {
+        
+        c16
+        -\staccatissimo                                          %! IC
+        
+        r16
+        
+        ef,!16
+        -\staccatissimo                                          %! IC
+        [
         
         c8
         -\staccatissimo                                          %! IC
         
-        r8
-        
-        ef,!8
-        -\staccatissimo                                          %! IC
-        
-        c4
-        -\staccatissimo                                          %! IC
-        
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-        cs,!4
+        cs,!8
         -\staccatissimo                                          %! IC
         \pp                                                      %! HC1
+        ]
     }
     
     % [C PianoMusicVoice measure 138 / measure 6]                %! SM4
@@ -2882,22 +2884,24 @@ C_ViolaMusicVoice = {
             }                                                    %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \times 7/4 {
         
-        r8
+        r16
         
-        af'''!4
+        af'''!8
         -\staccatissimo                                          %! IC
         
-        r8
+        r16
         
-        f''4
+        f''8
         -\staccatissimo                                          %! IC
+        [
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-        b''4
+        b''8
         -\staccatissimo                                          %! IC
         \pp                                                      %! HC1
+        ]
         \ottava #0                                               %! SC
     }
     
@@ -2915,22 +2919,24 @@ C_ViolaMusicVoice = {
         \pp                                                      %! HC1
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \times 7/4 {
         
-        r8
+        r16
         
-        f''4
+        f''8
         -\staccatissimo                                          %! IC
         
-        r8
+        r16
         
-        cs''!4
+        cs''!8
         -\staccatissimo                                          %! IC
+        [
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-        a'4
+        a'8
         -\staccatissimo                                          %! IC
         \ff                                                      %! HC1
+        ]
     }
     
     % [C ViolaMusicVoice measure 140 / measure 8]                %! SM4
@@ -2954,22 +2960,24 @@ C_ViolaMusicVoice = {
         \ff                                                      %! HC1
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \times 7/4 {
         
-        r8
+        r16
         
-        af!4
+        af!8
         -\staccatissimo                                          %! IC
         
-        r8
+        r16
         
-        a4
+        a8
         -\staccatissimo                                          %! IC
+        [
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-        bf,!4
+        bf,!8
         -\staccatissimo                                          %! IC
         \pp                                                      %! HC1
+        ]
         \revert Beam.positions                                   %! OC2
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
@@ -3095,7 +3103,7 @@ C_CelloMusicVoice = {
     % [C CelloMusicVoice measure 136 / measure 4]                %! SM4
     R1 * 1/4
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \times 7/4 {
         
         % [C CelloMusicVoice measure 137 / measure 5]            %! SM4
         \override Beam.positions = #'(-4 . -4)                   %! OC1
@@ -3107,11 +3115,11 @@ C_CelloMusicVoice = {
         \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
     %@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
         \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
-        r8
+        r16
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-        f''4
+        f''8
         -\staccatissimo                                          %! IC
         \>                                                       %! HC1
         \ff                                                      %! HC1
@@ -3121,13 +3129,15 @@ C_CelloMusicVoice = {
                     pizz.                                        %! IC
             }                                                    %! IC
         
-        r8
+        r16
         
-        b'4
+        b'8
         -\staccatissimo                                          %! IC
+        [
         
-        d''4
+        d''8
         -\staccatissimo                                          %! IC
+        ]
     }
     \times 2/3 {
         
@@ -3142,7 +3152,7 @@ C_CelloMusicVoice = {
     % [C CelloMusicVoice measure 138 / measure 6]                %! SM4
     R1 * 1/4
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \times 7/4 {
         
         % [C CelloMusicVoice measure 139 / measure 7]            %! SM4
         \once \override Staff.Clef.X-extent = ##f                %! OC1:MEASURE_139:SHIFTED_CLEF
@@ -3151,22 +3161,24 @@ C_CelloMusicVoice = {
         \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
     %@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
         \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
-        r8
+        r16
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-        ef'!4
+        ef'!8
         -\staccatissimo                                          %! IC
         \<                                                       %! HC1
         \pp                                                      %! HC1
         
-        r8
+        r16
         
-        cs'!4
+        cs'!8
         -\staccatissimo                                          %! IC
+        [
         
-        f4
+        f8
         -\staccatissimo                                          %! IC
+        ]
     }
     \times 2/3 {
         
@@ -3181,24 +3193,26 @@ C_CelloMusicVoice = {
     % [C CelloMusicVoice measure 140 / measure 8]                %! SM4
     R1 * 1/4
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \times 7/4 {
         
         % [C CelloMusicVoice measure 141 / measure 9]            %! SM4
-        r8
+        r16
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-        b4
+        b8
         -\staccatissimo                                          %! IC
         \>                                                       %! HC1
         \ff                                                      %! HC1
         
-        r8
+        r16
         
-        g4
+        g8
         -\staccatissimo                                          %! IC
+        [
         
-        cs!4
+        cs!8
         -\staccatissimo                                          %! IC
+        ]
     }
     \times 2/3 {
         

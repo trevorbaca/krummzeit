@@ -1579,16 +1579,18 @@ F_PianoMusicVoice = {
         d''4
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 6/5 {
         
         % [F PianoMusicVoice measure 239 / measure 5]            %! SM4
-        r4
+        r8
         
-        g'4
+        g'8
+        [
         
-        bf'!4
+        bf'!8
+        ]
         
-        c''2
+        c''4
     }
     \times 4/7 {
         
@@ -1691,16 +1693,18 @@ F_PianoMusicVoice = {
         b4
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 6/5 {
         
         % [F PianoMusicVoice measure 243 / measure 9]            %! SM4
-        r4
+        r8
+        
+        g8
+        [
+        
+        af!8
+        ]
         
         g4
-        
-        af!4
-        
-        g2
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {

@@ -3269,21 +3269,21 @@ B_PianoMusicVoice = {
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/7 {
+    \times 10/7 {
+        
+        r16
+        
+        cs'''!16
+        -\staccatissimo                                          %! IC
+        [
+        
+        cs'''!16
+        -\staccatissimo                                          %! IC
+        ]
         
         r8
         
         cs'''!8
-        -\staccatissimo                                          %! IC
-        [
-        
-        cs'''!8
-        -\staccatissimo                                          %! IC
-        ]
-        
-        r4
-        
-        cs'''!4
         -\staccatissimo                                          %! IC
     }
     
@@ -3517,17 +3517,19 @@ B_PianoMusicVoice = {
         cs'''!4
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/14 {
+    \times 9/7 {
+        
+        r8
+        
+        cs'''!8
+        [
+        
+        cs'''!8
+        ]
         
         r4
         
         cs'''!4
-        
-        cs'''!4
-        
-        r2
-        
-        cs'''!2
     }
     \times 4/5 {
         
@@ -3557,18 +3559,18 @@ B_PianoMusicVoice = {
         cs'''!8
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 6/5 {
         
         % [B PianoMusicVoice measure 123 / measure 35]           %! SM4
-        r8
+        r16
         
-        cs'''!8
+        cs'''!16
         [
+        
+        cs'''!16
         
         cs'''!8
         ]
-        
-        cs'''!4
     }
     \times 4/7 {
         
@@ -3777,52 +3779,58 @@ B_PercussionMusicVoice = {
     % [B PercussionMusicVoice measure 103 / measure 15]          %! SM4
     R1 * 1/4
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 6/5 {
         
         % [B PercussionMusicVoice measure 104 / measure 16]      %! SM4
-        r4
+        r8
+        
+        cs''!8
+        -\staccatissimo                                          %! IC
+        [
+        
+        cs''!8
+        -\staccatissimo                                          %! IC
+        ]
         
         cs''!4
-        -\staccatissimo                                          %! IC
-        
-        cs''!4
-        -\staccatissimo                                          %! IC
-        
-        cs''!2
         -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/7 {
+    \times 10/7 {
+        
+        r8
+        
+        cs''!8
+        -\staccatissimo                                          %! IC
+        [
+        
+        cs''!8
+        -\staccatissimo                                          %! IC
+        ]
         
         r4
         
         cs''!4
-        -\staccatissimo                                          %! IC
-        
-        cs''!4
-        -\staccatissimo                                          %! IC
-        
-        r2
-        
-        cs''!2
         -\staccatissimo                                          %! IC
     }
     
     % [B PercussionMusicVoice measure 105 / measure 17]          %! SM4
     R1 * 1/4
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 6/5 {
         
         % [B PercussionMusicVoice measure 106 / measure 18]      %! SM4
-        r4
+        r8
+        
+        cs''!8
+        -\staccatissimo                                          %! IC
+        [
+        
+        cs''!8
+        -\staccatissimo                                          %! IC
+        ]
         
         cs''!4
-        -\staccatissimo                                          %! IC
-        
-        cs''!4
-        -\staccatissimo                                          %! IC
-        
-        cs''!2
         -\staccatissimo                                          %! IC
     }
     \times 4/7 {
@@ -4032,16 +4040,18 @@ B_PercussionMusicVoice = {
     % [B PercussionMusicVoice measure 119 / measure 31]          %! SM4
     R1 * 1/4
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 6/5 {
         
         % [B PercussionMusicVoice measure 120 / measure 32]      %! SM4
-        r4
+        r8
+        
+        cs''!8
+        [
+        
+        cs''!8
+        ]
         
         cs''!4
-        
-        cs''!4
-        
-        cs''!2
     }
     \times 4/7 {
         

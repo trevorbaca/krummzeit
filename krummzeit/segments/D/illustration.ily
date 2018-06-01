@@ -2265,31 +2265,31 @@ D_OboeMusicVoice = {
             }
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/10 {
+    \times 9/5 {
         
         % [D OboeMusicVoice measure 171 / measure 20]            %! SM4
         \baca_repeat_pitch_class_warning                         %! SM14
-        ef''!2.
+        ef''!4.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
         \baca_repeat_pitch_class_warning                         %! SM14
-        d''2
+        d''4
         ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/14 {
+    \times 9/7 {
         
         % [D OboeMusicVoice measure 172 / measure 21]            %! SM4
         \baca_repeat_pitch_class_warning                         %! SM14
-        d''1
+        d''2
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
         \baca_repeat_pitch_class_warning                         %! SM14
-        d''2.
+        d''4.
         ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2454,31 +2454,31 @@ D_OboeMusicVoice = {
             }
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/10 {
+    \times 7/5 {
         
         % [D OboeMusicVoice measure 187 / measure 36]            %! SM4
         \baca_repeat_pitch_class_warning                         %! SM14
-        f''2.
+        f''4.
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
         \baca_repeat_pitch_class_warning                         %! SM14
-        fs''!2
+        fs''!4
         ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/14 {
+    \times 9/7 {
         
         % [D OboeMusicVoice measure 188 / measure 37]            %! SM4
         \baca_repeat_pitch_class_warning                         %! SM14
-        fs''!1
+        fs''!2
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         
         \baca_repeat_pitch_class_warning                         %! SM14
-        fs''!2.
+        fs''!4.
         ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
@@ -2953,14 +2953,14 @@ D_ClarinetMusicVoice = {
     
     r8
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/10 {
+    \times 7/5 {
         
         % [D ClarinetMusicVoice measure 187 / measure 36]        %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        g'''2.
+        g'''4.
         \mf                                                      %! SM8:EXPLICIT_DYNAMIC:IC
         
-        r2
+        r4
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/10 {
@@ -3395,18 +3395,20 @@ D_PianoMusicVoice = {
         -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 6/5 {
         
         % [D PianoMusicVoice measure 177 / measure 26]           %! SM4
-        r4
+        r8
+        
+        fs'''!8
+        -\staccatissimo                                          %! IC
+        [
+        
+        fs'''!8
+        -\staccatissimo                                          %! IC
+        ]
         
         fs'''!4
-        -\staccatissimo                                          %! IC
-        
-        fs'''!4
-        -\staccatissimo                                          %! IC
-        
-        fs'''!2
         -\staccatissimo                                          %! IC
     }
     \times 4/7 {
@@ -3542,7 +3544,7 @@ D_PianoMusicVoice = {
     \revert NoteHead.style                                       %! OC2
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 6/5 {
         
         % [D PianoMusicVoice measure 186 / measure 35]           %! SM4
         \override Beam.positions = #'(-4 . -4)                   %! OC1
@@ -3552,21 +3554,21 @@ D_PianoMusicVoice = {
         \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
     %@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
         \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
-        r8
+        r16
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        fs'''!8
+        fs'''!16
         \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC
         -\staccatissimo                                          %! IC
         [
         
+        fs'''!16
+        -\staccatissimo                                          %! IC
+        
         fs'''!8
         -\staccatissimo                                          %! IC
         ]
-        
-        fs'''!4
-        -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
@@ -3609,21 +3611,21 @@ D_PianoMusicVoice = {
         -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 6/5 {
         
         % [D PianoMusicVoice measure 188 / measure 37]           %! SM4
-        r8
+        r16
         
-        fs'''!8
+        fs'''!16
         -\staccatissimo                                          %! IC
         [
+        
+        fs'''!16
+        -\staccatissimo                                          %! IC
         
         fs'''!8
         -\staccatissimo                                          %! IC
         ]
-        
-        fs'''!4
-        -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
@@ -3763,18 +3765,20 @@ D_PianoMusicVoice = {
         -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 6/5 {
         
         % [D PianoMusicVoice measure 193 / measure 42]           %! SM4
-        r4
+        r8
+        
+        fs'''!8
+        -\staccatissimo                                          %! IC
+        [
+        
+        fs'''!8
+        -\staccatissimo                                          %! IC
+        ]
         
         fs'''!4
-        -\staccatissimo                                          %! IC
-        
-        fs'''!4
-        -\staccatissimo                                          %! IC
-        
-        fs'''!2
         -\staccatissimo                                          %! IC
     }
     \times 4/7 {
@@ -4286,7 +4290,7 @@ D_PercussionMusicVoice = {
     % [D PercussionMusicVoice measure 175 / measure 24]          %! SM4
     R1 * 3/4
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 6/5 {
         
         % [D PercussionMusicVoice measure 176 / measure 25]      %! SM4
         \stopStaff                                               %! SM8:EXPLICIT_STAFF_LINES:IC
@@ -4300,18 +4304,20 @@ D_PercussionMusicVoice = {
     %@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
         \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
-        r4
+        r8
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        fs''!4
+        fs''!8
         \ff                                                      %! SM8:REDUNDANT_DYNAMIC:IC
         -\staccatissimo                                          %! IC
+        [
+        
+        fs''!8
+        -\staccatissimo                                          %! IC
+        ]
         
         fs''!4
-        -\staccatissimo                                          %! IC
-        
-        fs''!2
         -\staccatissimo                                          %! IC
     }
     \times 4/7 {
@@ -4393,7 +4399,7 @@ D_PercussionMusicVoice = {
     % [D PercussionMusicVoice measure 185 / measure 34]          %! SM4
     R1 * 9/8
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 6/5 {
         
         % [D PercussionMusicVoice measure 186 / measure 35]      %! SM4
         \stopStaff                                               %! SM8:REDUNDANT_STAFF_LINES:IC
@@ -4407,18 +4413,20 @@ D_PercussionMusicVoice = {
     %@% \override Staff.Clef.color = ##f                         %! SM7:REDUNDANT_CLEF_COLOR_CANCELLATION:IC
         \set Staff.forceClef = ##t                               %! SM8:REDUNDANT_CLEF:SM33:IC
         \once \override Staff.StaffSymbol.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_STAFF_LINES_COLOR:IC
-        r4
+        r8
         \override Staff.Clef.color = #(x11-color 'DeepPink4)     %! SM6:REDUNDANT_CLEF_REDRAW_COLOR:IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        fs''!4
+        fs''!8
         \ff                                                      %! SM8:REDUNDANT_DYNAMIC:IC
         -\staccatissimo                                          %! IC
+        [
+        
+        fs''!8
+        -\staccatissimo                                          %! IC
+        ]
         
         fs''!4
-        -\staccatissimo                                          %! IC
-        
-        fs''!2
         -\staccatissimo                                          %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -4456,8 +4464,27 @@ D_PercussionMusicVoice = {
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/7 {
+    \times 10/7 {
         
+        r16
+        
+        fs''!16
+        -\staccatissimo                                          %! IC
+        [
+        
+        fs''!16
+        -\staccatissimo                                          %! IC
+        ]
+        
+        r8
+        
+        fs''!8
+        -\staccatissimo                                          %! IC
+    }
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 6/5 {
+        
+        % [D PercussionMusicVoice measure 188 / measure 37]      %! SM4
         r8
         
         fs''!8
@@ -4468,24 +4495,7 @@ D_PercussionMusicVoice = {
         -\staccatissimo                                          %! IC
         ]
         
-        r4
-        
         fs''!4
-        -\staccatissimo                                          %! IC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
-        
-        % [D PercussionMusicVoice measure 188 / measure 37]      %! SM4
-        r4
-        
-        fs''!4
-        -\staccatissimo                                          %! IC
-        
-        fs''!4
-        -\staccatissimo                                          %! IC
-        
-        fs''!2
         -\staccatissimo                                          %! IC
     }
     

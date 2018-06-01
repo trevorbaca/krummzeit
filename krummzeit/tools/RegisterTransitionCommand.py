@@ -20,7 +20,7 @@ class RegisterTransitionCommand(baca.Command):
         >>> maker(
         ...     baca.scope('MusicVoice', 1),
         ...     baca.pitches('C4 D4 E4 F4'),
-        ...     baca.make_even_runs(),
+        ...     baca.make_even_divisions(),
         ...     krummzeit.RegisterTransitionCommand(
         ...         start_registration=baca.Registration(
         ...             [('[A0, C8]', 0)],
@@ -74,19 +74,17 @@ class RegisterTransitionCommand(baca.Command):
                     {
                         \context Voice = "MusicVoice"
                         {
-                            {
             <BLANKLINE>
-                                % [MusicVoice measure 1]                                   %! SM4
-                                c'8
-                                [
+                            % [MusicVoice measure 1]                                       %! SM4
+                            c'8
+                            [
             <BLANKLINE>
-                                d''8
+                            d''8
             <BLANKLINE>
-                                e''8
+                            e''8
             <BLANKLINE>
-                                f''8
-                                ]
-                            }
+                            f''8
+                            ]
             <BLANKLINE>
                             % [MusicVoice measure 2]                                       %! SM4
                             R1 * 3/8

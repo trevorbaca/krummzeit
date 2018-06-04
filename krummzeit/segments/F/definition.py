@@ -176,8 +176,8 @@ maker(
 maker(
     ('vn', (8, 10)),
     baca.transition(
-        baca.markup('grid. possibile'),
-        baca.markup('flaut. possibile'),
+        baca.markup.markup('grid. possibile'),
+        baca.markup.markup('flaut. possibile'),
         tweaks=[('staff-padding', 5)],
         ),
     )
@@ -185,8 +185,8 @@ maker(
 maker(
     (['va', 'vc'], (9, 10)),
     baca.transition(
-        baca.markup('grid. possibile'),
-        baca.markup('flaut. possibile'),
+        baca.markup.markup('grid. possibile'),
+        baca.markup.markup('flaut. possibile'),
         tweaks=[('staff-padding', 5)],
         ),
     )

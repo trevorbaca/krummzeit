@@ -327,8 +327,8 @@ maker(
     ('va', (5, 6)),
     baca.hairpin('pp < f'),
     baca.transition(
-        baca.markup('molto flautando'),
-        baca.markup('molto gridato'),
+        baca.markup.markup('molto flautando'),
+        baca.markup.markup('molto gridato'),
         tweaks=[('staff-padding', 6)],
         ),
     )
@@ -337,8 +337,8 @@ maker(
     (['vn', 'vc'], 6),
     baca.hairpin('pp < f'),
     baca.transition(
-        baca.markup('molto flautando'),
-        baca.markup('molto gridato'),
+        baca.markup.markup('molto flautando'),
+        baca.markup.markup('molto gridato'),
         tweaks=[('staff-padding', 6)],
         ),
     )

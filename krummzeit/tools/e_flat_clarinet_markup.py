@@ -1,4 +1,5 @@
 import abjad
+import baca
 
 
 def e_flat_clarinet_markup():
@@ -32,10 +33,11 @@ def e_flat_clarinet_markup():
                 }
 
     """
-    return abjad.Markup.line([
+    markup = abjad.Markup.line([
         abjad.Markup.concat([
             'E',
             abjad.Markup.flat().scale((0.65, 0.65)).raise_(0.5),
             ]),
         abjad.Markup('clarinet'),
         ])
+    return baca.Markup(contents=markup.contents)

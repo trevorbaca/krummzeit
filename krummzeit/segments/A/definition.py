@@ -144,7 +144,7 @@ maker(
 maker(
     ('cl', 3),
     baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
-    baca.markups.boxed(krummzeit.e_flat_clarinet_markup()),
+    krummzeit.e_flat_clarinet_markup().boxed(),
     krummzeit.margin_markup('Cl. (Eb)'),
     )
 
@@ -323,11 +323,11 @@ maker(
     baca.dynamic('mf'),
     baca.instrument(krummzeit.instruments['Percussion']),
     baca.make_repeat_tied_notes(),
-    baca.markups.boxed('stonecircle: scrape at moderate speed'),
     baca.not_parts(baca.bar_extent_zero()),
     baca.repeat_tie_up(),
     baca.staff_lines(1),
     baca.staff_position(0),
+    krummzeit.markup.stonecircle_scrape_at_moderate_speed().boxed()
     )
 
 maker(

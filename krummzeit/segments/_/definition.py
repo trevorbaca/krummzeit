@@ -156,14 +156,14 @@ maker(
 
 maker(
     ('pf', 9),
-    baca.markup.boxed('to harpsichord'),
+    baca.markups.boxed('to harpsichord'),
     )
 
 maker(
     ('perc', 6),
     baca.dynamic('fff'),
     baca.make_repeat_tied_notes(),
-    baca.markup.boxed('xylophone'),
+    baca.markups.boxed('xylophone'),
     baca.pitch('C#5'),
     baca.stem_tremolo(selector=baca.pleaves()),
     )
@@ -176,7 +176,7 @@ maker(
     baca.bar_extent((0, 0), after=True, selector=baca.leaf(-1)),
     baca.clef('percussion'),
     baca.dynamic('"ff"'),
-    baca.markup.boxed('sponges'),
+    baca.markups.boxed('sponges'),
     baca.staff_lines(1),
     baca.staff_position(0),
     krummzeit.instrument('Percussion'),
@@ -223,7 +223,7 @@ maker(
         baca.glissando(),
         ),
     baca.hairpin('pp < ff'),
-    baca.markup.molto_flautando(),
+    baca.markups.molto_flautando(),
     baca.note_head_style_harmonic(),
     baca.repeat_tie_repeat_pitches(),
     )

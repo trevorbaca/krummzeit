@@ -181,7 +181,7 @@ maker(
     baca.transition(
         baca.markups.grid_possibile(),
         baca.markups.flaut_possibile(),
-        tweaks=[('staff-padding', 5)],
+        tweaks=[abjad.tweak(5).staff_padding],
         ),
     )
 
@@ -190,7 +190,7 @@ maker(
     baca.transition(
         baca.markups.grid_possibile(),
         baca.markups.flaut_possibile(),
-        tweaks=[('staff-padding', 5)],
+        tweaks=[abjad.tweak(5).staff_padding],
         ),
     )
 

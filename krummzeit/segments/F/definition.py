@@ -51,7 +51,10 @@ maker(
 maker(
     ('perc', 1),
     baca.clef('percussion'),
-    krummzeit.markup.snare_drum(baca.leaf(0)),
+    baca.markup(
+        krummzeit.markup.snare_drum(),
+        selector=baca.leaf(0),
+        ),
     )
 
 maker(

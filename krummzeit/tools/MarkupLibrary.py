@@ -15,35 +15,34 @@ class MarkupLibrary(abjad.AbjadObject):
     ### PUBLIC METHODS ###
 
     @staticmethod
-    def accent_changes(selector=baca.pleaf(0)):
+    def accent_changes():
         string = 'accent changes of direction noticeably at each attack'
-        return baca.markup(string, selector=selector)
+        return baca.Markup(string)
 
     @staticmethod
-    def attackless_roll(selector=baca.pleaf(0)):
+    def attackless_roll():
         string = 'attackless roll with very soft yarn mallets'
-        return baca.markup(string, selector=selector)
+        return baca.Markup(string)
 
     @staticmethod
-    def catch_resonance(selector='baca.pleaf(0)'):
+    def catch_resonance():
         string = 'catch resonance (but not attack) with pedal'
-        return baca.markup(string, selector=selector)
+        return baca.Markup(string)
 
     @staticmethod
-    def crotales(selector='baca.pleaf(0)'):
-        string = 'crotales'
-        return baca.markups.boxed(string, selector=selector)
+    def crotales():
+        return baca.markups.crotales().boxed()
 
     @staticmethod
-    def fifth_harmonic_of_F1(selector='baca.pleaf(0)'):
+    def fifth_harmonic_of_F1():
         string = '5th harmonic of F1'
-        return baca.markup(string, selector=selector)
+        return baca.Markup(string)
 
     @staticmethod
-    def fingertips(selector='baca.pleaf(0)'):
+    def fingertips():
         string = 'rapid roll with fingertips:'
         string += ' keep speed constant during accelerando'
-        return baca.markup(string, selector=selector)
+        return baca.Markup(string)
 
     @staticmethod
     def on_bridge_full_bow(selector='baca.pleaf(0)'):
@@ -51,47 +50,48 @@ class MarkupLibrary(abjad.AbjadObject):
         return baca.markup(string, selector=selector)
 
     @staticmethod
-    def on_bridge_slow(selector='baca.pleaf(0)'):
+    def on_bridge_slow():
         string = 'directly on bridge:'
         string += ' very slow bow, imperceptible bow changes'
-        return baca.markup(string, selector=selector)
+        return baca.Markup(string)
 
     @staticmethod
-    def scrape_moderately(selector='baca.pleaf(0)'):
+    def scrape_moderately():
         string = 'scrape in a circle at moderate speed'
-        return baca.markup(string, selector=selector)
+        return baca.Markup(string)
 
     @staticmethod
-    def scraped_slate(selector='baca.pleaf(0)'):
-        string = 'scraped slate'
-        return baca.markups.boxed(string, selector=selector)
+    def scraped_slate():
+        return baca.markups.scraped_slate().boxed()
 
     @staticmethod
-    def show_tempo(selector='baca.pleaf(0)'):
+    def show_tempo():
         string = 'allow bowing to convey accelerando'
-        return baca.markup(string, selector=selector)
+        return baca.Markup(string)
 
     @staticmethod
-    def snare_drum(selector='baca.pleaf(0)'):
-        string = 'snare drum'
-        return baca.markups.boxed(string, selector=selector)
+    def snare_drum():
+        return baca.markups.snare_drum().boxed()
 
     @staticmethod
-    def sponges(selector='baca.pleaf(0)'):
-        string = 'sponges'
-        return baca.markups.boxed(string, selector=selector)
+    def sponges():
+        return baca.markups.sponges().boxed()
 
     @staticmethod
-    def subito_non_armonichi(selector='baca.pleaf(0)'):
+    def stonecircle_scrape_at_moderate_speed():
+        string = 'stonecircle: scrape at moderate speed'
+        return baca.Markup(string)
+
+    @staticmethod
+    def subito_non_armonichi():
         string = 'subito non armonichi e non gridato'
-        return baca.markup(string, selector=selector)
+        return baca.Markup(string)
 
     @staticmethod
-    def suspended_cymbal(selector='baca.pleaf(0)'):
-        string = 'suspended cymbal'
-        return baca.markups.boxed(string, selector=selector)
+    def suspended_cymbal():
+        return baca.markups.suspended_cymbal().boxed()
 
     @staticmethod
-    def tam_tam(selector='baca.pleaf(0)'):
+    def tam_tam():
         string = 'tam-tam'
-        return baca.markups.boxed(string, selector=selector)
+        return baca.markups.tam_tam().boxed()

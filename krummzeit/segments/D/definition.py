@@ -329,7 +329,7 @@ maker(
     baca.transition(
         baca.markups.molto_flautando(),
         baca.markups.molto_gridato(),
-        tweaks=[('staff-padding', 6)],
+        tweaks=[abjad.tweak(6).staff_padding],
         ),
     )
 
@@ -339,7 +339,7 @@ maker(
     baca.transition(
         baca.markups.molto_flautando(),
         baca.markups.molto_gridato(),
-        tweaks=[('staff-padding', 6)],
+        tweaks=[abjad.tweak(6).staff_padding],
         ),
     )
 

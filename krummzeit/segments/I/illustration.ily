@@ -4937,12 +4937,10 @@ I_PercussionMusicVoice = {
     \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
     -\laissezVibrer                                              %! IC
     ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                \override                                        %! IC
-                    #'(box-padding . 0.5)                        %! IC
-                    \box                                         %! IC
-                        tam-tam                                  %! IC
+        \override                                                %! IC
+            #'(box-padding . 0.5)                                %! IC
+            \box                                                 %! IC
+                tam-tam                                          %! IC
         }                                                        %! IC
     
     r8
@@ -5324,11 +5322,7 @@ I_ViolinMusicVoice = {
     \effort_f                                                    %! SM8:EXPLICIT_DYNAMIC:IC
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                "directly on bridge: full bow each stroke"       %! IC
-        }                                                        %! IC
+    ^ \markup { "directly on bridge: full bow each stroke" }     %! IC
     
     cs''!4
     -\upbow                                                      %! IC
@@ -5457,11 +5451,7 @@ I_ViolinMusicVoice = {
         e'''8
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         -\staccatissimo                                          %! IC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    pizz.                                        %! IC
-            }                                                    %! IC
+        ^ \markup { pizz. }                                      %! IC
         
         cs'''!4
         -\staccatissimo                                          %! IC
@@ -5709,11 +5699,7 @@ I_ViolaMusicVoice = {
     \effort_f                                                    %! SM8:EXPLICIT_DYNAMIC:IC
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                "directly on bridge: full bow each stroke"       %! IC
-        }                                                        %! IC
+    ^ \markup { "directly on bridge: full bow each stroke" }     %! IC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)      %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     bf''!4
@@ -5842,11 +5828,7 @@ I_ViolaMusicVoice = {
         ef'''!8
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         -\staccatissimo                                          %! IC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    pizz.                                        %! IC
-            }                                                    %! IC
+        ^ \markup { pizz. }                                      %! IC
         
         d'''4
         -\staccatissimo                                          %! IC
@@ -6091,11 +6073,7 @@ I_CelloMusicVoice = {
     \effort_f                                                    %! SM8:EXPLICIT_DYNAMIC:IC
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                "directly on bridge: full bow each stroke"       %! IC
-        }                                                        %! IC
+    ^ \markup { "directly on bridge: full bow each stroke" }     %! IC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)      %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     e''4
@@ -6220,11 +6198,7 @@ I_CelloMusicVoice = {
         f'''8
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         -\staccatissimo                                          %! IC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    pizz.                                        %! IC
-            }                                                    %! IC
+        ^ \markup { pizz. }                                      %! IC
         
         e'''4
         -\staccatissimo                                          %! IC

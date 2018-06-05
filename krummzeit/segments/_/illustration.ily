@@ -1044,11 +1044,7 @@ i_PianoMusicVoice = {
     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     }
     <a, c e g>16
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                "catch resonance (but not attack) with pedal"    %! IC
-        }                                                        %! IC
+    ^ \markup { "catch resonance (but not attack) with pedal" }  %! IC
     ^ \markup {
         \center-align
             \concat
@@ -1092,12 +1088,10 @@ i_PianoMusicVoice = {
     % [_ PianoMusicVoice measure 10]                             %! SM4
     R1 * 5/8
     ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                \override                                        %! IC
-                    #'(box-padding . 0.5)                        %! IC
-                    \box                                         %! IC
-                        "to harpsichord"                         %! IC
+        \override                                                %! IC
+            #'(box-padding . 0.5)                                %! IC
+            \box                                                 %! IC
+                "to harpsichord"                                 %! IC
         }                                                        %! IC
     
     % [_ PianoMusicVoice measure 11]                             %! SM4
@@ -1200,12 +1194,10 @@ i_PercussionMusicVoice = {
     :32                                                          %! IC
     \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                \override                                        %! IC
-                    #'(box-padding . 0.5)                        %! IC
-                    \box                                         %! IC
-                        xylophone                                %! IC
+        \override                                                %! IC
+            #'(box-padding . 0.5)                                %! IC
+            \box                                                 %! IC
+                xylophone                                        %! IC
         }                                                        %! IC
     
     cs'!4.
@@ -1241,18 +1233,14 @@ i_PercussionMusicVoice = {
                 {
                     \line                                        %! IC
                         {                                        %! IC
-                            \whiteout                            %! IC
-                                \upright                         %! IC
-                                    \override                    %! IC
-                                        #'(box-padding . 0.5)    %! IC
-                                        \box                     %! IC
-                                            sponges              %! IC
+                            \override                            %! IC
+                                #'(box-padding . 0.5)            %! IC
+                                \box                             %! IC
+                                    sponges                      %! IC
                         }                                        %! IC
                     \line                                        %! IC
                         {                                        %! IC
-                            \whiteout                            %! IC
-                                \upright                         %! IC
-                                    "accent changes of direction noticeably at each attack" %! IC
+                            "accent changes of direction noticeably at each attack" %! IC
                         }                                        %! IC
                     \line                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                         {                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
@@ -1492,11 +1480,7 @@ i_ViolinMusicVoice = {
         \glissando                                               %! SC
         \<                                                       %! HC1
         \pp                                                      %! HC1
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "molto flautando"                            %! IC
-            }                                                    %! IC
+        ^ \markup { "molto flautando" }                          %! IC
         
         d''2
         \glissando                                               %! SC
@@ -1785,11 +1769,7 @@ i_ViolaMusicVoice = {
         \glissando                                               %! SC
         \<                                                       %! HC1
         \pp                                                      %! HC1
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "molto flautando"                            %! IC
-            }                                                    %! IC
+        ^ \markup { "molto flautando" }                          %! IC
         
         a'8.
         \glissando                                               %! SC
@@ -2068,11 +2048,7 @@ i_CelloMusicVoice = {
         \glissando                                               %! SC
         \<                                                       %! HC1
         \pp                                                      %! HC1
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "molto flautando"                            %! IC
-            }                                                    %! IC
+        ^ \markup { "molto flautando" }                          %! IC
         
         g'4
         \glissando                                               %! SC

@@ -4392,12 +4392,10 @@ E_PercussionMusicVoice = {
                     }                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                \override                        %! IC
-                                    #'(box-padding . 0.5)        %! IC
-                                    \box                         %! IC
-                                        "suspended cymbal"       %! IC
+                        \override                                %! IC
+                            #'(box-padding . 0.5)                %! IC
+                            \box                                 %! IC
+                                "suspended cymbal"               %! IC
                     }                                            %! IC
             }
         }
@@ -4946,12 +4944,10 @@ E_PercussionMusicVoice = {
     :32                                                          %! IC
     \pp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                \override                                        %! IC
-                    #'(box-padding . 0.5)                        %! IC
-                    \box                                         %! IC
-                        "suspended cymbal"                       %! IC
+        \override                                                %! IC
+            #'(box-padding . 0.5)                                %! IC
+            \box                                                 %! IC
+                "suspended cymbal"                               %! IC
         }                                                        %! IC
     
     \baca_unpitched_music_warning                                %! SM24
@@ -5182,11 +5178,7 @@ E_ViolinMusicVoice = {
     \glissando                                                   %! SC
     \>                                                           %! HC1
     \p                                                           %! HC1
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                "molto flautando"                                %! IC
-        }                                                        %! IC
+    ^ \markup { "molto flautando" }                              %! IC
     
     e''2
     \glissando                                                   %! SC
@@ -5818,11 +5810,7 @@ E_ViolaMusicVoice = {
         \glissando                                               %! SC
         \>                                                       %! HC1
         \p                                                       %! HC1
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "molto flautando"                            %! IC
-            }                                                    %! IC
+        ^ \markup { "molto flautando" }                          %! IC
         
         e'4.
         \glissando                                               %! SC
@@ -6230,11 +6218,7 @@ E_CelloMusicVoice = {
         \glissando                                               %! SC
         \>                                                       %! HC1
         \p                                                       %! HC1
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "molto flautando"                            %! IC
-            }                                                    %! IC
+        ^ \markup { "molto flautando" }                          %! IC
         
         e'4
         \glissando                                               %! SC

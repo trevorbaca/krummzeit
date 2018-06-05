@@ -1866,12 +1866,10 @@ F_PercussionMusicVoice = {
                     }                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                \override                        %! IC
-                                    #'(box-padding . 0.5)        %! IC
-                                    \box                         %! IC
-                                        "snare drum"             %! IC
+                        \override                                %! IC
+                            #'(box-padding . 0.5)                %! IC
+                            \box                                 %! IC
+                                "snare drum"                     %! IC
                     }                                            %! IC
             }
         }
@@ -1896,11 +1894,7 @@ F_PercussionMusicVoice = {
     c4.
     :32                                                          %! IC
     \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                "rapid roll with fingertips: keep speed constant during accelerando" %! IC
-        }                                                        %! IC
+    ^ \markup { "rapid roll with fingertips: keep speed constant during accelerando" } %! IC
     
     \baca_unpitched_music_warning                                %! SM24
     c4
@@ -2006,18 +2000,14 @@ F_PercussionMusicVoice = {
             {
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                \override                        %! IC
-                                    #'(box-padding . 0.5)        %! IC
-                                    \box                         %! IC
-                                        tam-tam                  %! IC
+                        \override                                %! IC
+                            #'(box-padding . 0.5)                %! IC
+                            \box                                 %! IC
+                                tam-tam                          %! IC
                     }                                            %! IC
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                attackless                       %! IC
+                        attackless                               %! IC
                     }                                            %! IC
             }
         }
@@ -2142,11 +2132,7 @@ F_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         fs!4.
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "gridato possibile"                          %! IC
-            }                                                    %! IC
+        ^ \markup { "gridato possibile" }                        %! IC
         
         fs!2
     }
@@ -2386,11 +2372,7 @@ F_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
         bf,!4
         \fff                                                     %! SM8:REDUNDANT_DYNAMIC:IC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "gridato possibile"                          %! IC
-            }                                                    %! IC
+        ^ \markup { "gridato possibile" }                        %! IC
         
         bf,!1.
     }
@@ -2614,11 +2596,7 @@ F_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
         a,,1.
         \fff                                                     %! SM8:REDUNDANT_DYNAMIC:IC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "gridato possibile"                          %! IC
-            }                                                    %! IC
+        ^ \markup { "gridato possibile" }                        %! IC
         
         a,,4
     }

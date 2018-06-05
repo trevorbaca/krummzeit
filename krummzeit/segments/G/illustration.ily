@@ -1131,11 +1131,7 @@ G_OboeMusicVoice = {
         \pp                                                      %! SM8:EXPLICIT_DYNAMIC:IC
         -\staccato                                               %! IC
         [
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    leggierissimo                                %! IC
-            }                                                    %! IC
+        ^ \markup { leggierissimo }                              %! IC
         
         c''8
         -\staccato                                               %! IC
@@ -1524,9 +1520,7 @@ G_ClarinetMusicVoice = {
             {
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                leggierissimo                    %! IC
+                        leggierissimo                            %! IC
                     }                                            %! IC
                 \line                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                     {                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
@@ -1802,11 +1796,7 @@ G_PianoMusicVoice = {
         \pp                                                      %! SM8:EXPLICIT_DYNAMIC:IC
         -\staccato                                               %! IC
         [
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    leggierissimo                                %! IC
-            }                                                    %! IC
+        ^ \markup { leggierissimo }                              %! IC
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
         fs''!8
@@ -2068,9 +2058,7 @@ G_PianoMusicVoice = {
             {
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                "5th harmonic of F1"             %! IC
+                        "5th harmonic of F1"                     %! IC
                     }                                            %! IC
                 \line                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                     {                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
@@ -2214,12 +2202,10 @@ G_PercussionMusicVoice = {
                     }                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                \override                        %! IC
-                                    #'(box-padding . 0.5)        %! IC
-                                    \box                         %! IC
-                                        tam-tam                  %! IC
+                        \override                                %! IC
+                            #'(box-padding . 0.5)                %! IC
+                            \box                                 %! IC
+                                tam-tam                          %! IC
                     }                                            %! IC
             }
         }
@@ -2410,11 +2396,7 @@ G_ViolinMusicVoice = {
     \pp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
     -\staccato                                                   %! IC
     [
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                "leggierissimo: off-string bowing on staccati"   %! IC
-        }                                                        %! IC
+    ^ \markup { "leggierissimo: off-string bowing on staccati" } %! IC
     
     g'''8
     -\staccato                                                   %! IC
@@ -2697,9 +2679,7 @@ G_ViolinMusicVoice = {
                 {
                     \line                                        %! IC
                         {                                        %! IC
-                            \whiteout                            %! IC
-                                \upright                         %! IC
-                                    "molto gridato ed estr. sul pont." %! IC
+                            "molto gridato ed estr. sul pont."   %! IC
                         }                                        %! IC
                     \line                                        %! SM14
                         {                                        %! SM14
@@ -2851,11 +2831,7 @@ G_ViolinMusicVoice = {
         c'1.
         :32                                                      %! IC
         \glissando                                               %! SC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "subito ordinario"                           %! IC
-            }                                                    %! IC
+        ^ \markup { "subito ordinario" }                         %! IC
         
         df'!1
         :32                                                      %! IC
@@ -2916,9 +2892,7 @@ G_ViolaMusicVoice = {
                     }                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                "subito ordinario"               %! IC
+                        "subito ordinario"                       %! IC
                     }                                            %! IC
             }
         }
@@ -2975,11 +2949,7 @@ G_ViolaMusicVoice = {
         \glissando                                               %! SC
         \>                                                       %! HC1
         \ff                                                      %! HC1
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "molto flautando"                            %! IC
-            }                                                    %! IC
+        ^ \markup { "molto flautando" }                          %! IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         ftqs!\breve
@@ -2998,11 +2968,7 @@ G_ViolaMusicVoice = {
         b4
         \fff_poss                                                %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                               %! SC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "molto gridato ed estr. sul pont."           %! IC
-            }                                                    %! IC
+        ^ \markup { "molto gridato ed estr. sul pont." }         %! IC
         
         \baca_repeat_pitch_class_warning                         %! SM14
         c2
@@ -3127,11 +3093,7 @@ G_ViolaMusicVoice = {
         bqs,!4
         :32                                                      %! IC
         \glissando                                               %! SC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "subito ordinario"                           %! IC
-            }                                                    %! IC
+        ^ \markup { "subito ordinario" }                         %! IC
         
         c1
         :32                                                      %! IC
@@ -3204,9 +3166,7 @@ G_CelloMusicVoice = {
                     }                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                "subito ordinario"               %! IC
+                        "subito ordinario"                       %! IC
                     }                                            %! IC
             }
         }
@@ -3268,11 +3228,7 @@ G_CelloMusicVoice = {
         \glissando                                               %! SC
         \>                                                       %! HC1
         \ff                                                      %! HC1
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "molto flautando"                            %! IC
-            }                                                    %! IC
+        ^ \markup { "molto flautando" }                          %! IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         atqs,!1
@@ -3291,11 +3247,7 @@ G_CelloMusicVoice = {
         a,8
         \fff_poss                                                %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                               %! SC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "molto gridato ed estr. sul pont."           %! IC
-            }                                                    %! IC
+        ^ \markup { "molto gridato ed estr. sul pont." }         %! IC
         
         bf,!4
         \glissando                                               %! SC
@@ -3454,11 +3406,7 @@ G_CelloMusicVoice = {
         b,,2
         :32                                                      %! IC
         \glissando                                               %! SC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "subito ordinario"                           %! IC
-            }                                                    %! IC
+        ^ \markup { "subito ordinario" }                         %! IC
         
         c,\breve
         :32                                                      %! IC

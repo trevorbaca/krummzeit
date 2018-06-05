@@ -3010,9 +3010,7 @@ J_ViolinMusicVoice = {
                         }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                     \line                                        %! IC
                         {                                        %! IC
-                            \whiteout                            %! IC
-                                \upright                         %! IC
-                                    pizz.                        %! IC
+                            pizz.                                %! IC
                         }                                        %! IC
                 }
             }
@@ -3506,9 +3504,7 @@ J_ViolaMusicVoice = {
                         }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                     \line                                        %! IC
                         {                                        %! IC
-                            \whiteout                            %! IC
-                                \upright                         %! IC
-                                    pizz.                        %! IC
+                            pizz.                                %! IC
                         }                                        %! IC
                 }
             }
@@ -3747,9 +3743,7 @@ J_CelloMusicVoice = {
                     }                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                "gridato possibile"              %! IC
+                        "gridato possibile"                      %! IC
                     }                                            %! IC
             }
         }
@@ -3901,11 +3895,7 @@ J_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     d,2.
     \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                ordinario                                        %! IC
-        }                                                        %! IC
+    ^ \markup { ordinario }                                      %! IC
     
     d,2
     \repeatTie
@@ -4035,30 +4025,28 @@ J_CelloMusicVoice = {
     d,2
     \repeatTie
     _ \markup {                                                  %! SCORE2
-        \whiteout                                                %! SCORE2
-            \upright                                             %! SCORE2
-                \override                                        %! SCORE2
-                    #'(font-name . "Palatino")                   %! SCORE2
-                    \with-color                                  %! SCORE2
-                        #black                                   %! SCORE2
-                        \right-column                            %! SCORE2
+        \override                                                %! SCORE2
+            #'(font-name . "Palatino")                           %! SCORE2
+            \with-color                                          %! SCORE2
+                #black                                           %! SCORE2
+                \right-column                                    %! SCORE2
+                    {                                            %! SCORE2
+                        \line                                    %! SCORE2
                             {                                    %! SCORE2
-                                \line                            %! SCORE2
-                                    {                            %! SCORE2
-                                        "Cambridge, MA."         %! SCORE2
-                                    }                            %! SCORE2
-                                \line                            %! SCORE2
-                                    {                            %! SCORE2
-                                        May                      %! SCORE2
-                                        \hspace                  %! SCORE2
-                                            #0.75                %! SCORE2
-                                        –                        %! SCORE2
-                                        \hspace                  %! SCORE2
-                                            #0.75                %! SCORE2
-                                        August                   %! SCORE2
-                                        2014.                    %! SCORE2
-                                    }                            %! SCORE2
+                                "Cambridge, MA."                 %! SCORE2
                             }                                    %! SCORE2
+                        \line                                    %! SCORE2
+                            {                                    %! SCORE2
+                                May                              %! SCORE2
+                                \hspace                          %! SCORE2
+                                    #0.75                        %! SCORE2
+                                –                                %! SCORE2
+                                \hspace                          %! SCORE2
+                                    #0.75                        %! SCORE2
+                                August                           %! SCORE2
+                                2014.                            %! SCORE2
+                            }                                    %! SCORE2
+                    }                                            %! SCORE2
         }                                                        %! SCORE2
     
 }

@@ -4998,9 +4998,7 @@ D_ViolinMusicVoice = {
         - \tweak bound-details.left.text \markup {               %! PWC1
             \concat                                              %! PWC1
                 {                                                %! PWC1
-                    \whiteout                                    %! PWC1
-                        \upright                                 %! PWC1
-                            "molto flautando"                    %! PWC1
+                    "molto flautando"                            %! PWC1
                     \hspace                                      %! PWC1
                         #0.5                                     %! PWC1
                 }                                                %! PWC1
@@ -5021,9 +5019,7 @@ D_ViolinMusicVoice = {
                 {                                                %! PWC1
                     \hspace                                      %! PWC1
                         #0.0                                     %! PWC1
-                    \whiteout                                    %! PWC1
-                        \upright                                 %! PWC1
-                            "molto gridato"                      %! PWC1
+                    "molto gridato ed estr. sul pont."           %! PWC1
                 }                                                %! PWC1
             }                                                    %! PWC1
         - \tweak staff-padding #6                                %! PWC1
@@ -5785,9 +5781,7 @@ D_ViolaMusicVoice = {
         - \tweak bound-details.left.text \markup {               %! PWC1
             \concat                                              %! PWC1
                 {                                                %! PWC1
-                    \whiteout                                    %! PWC1
-                        \upright                                 %! PWC1
-                            "molto flautando"                    %! PWC1
+                    "molto flautando"                            %! PWC1
                     \hspace                                      %! PWC1
                         #0.5                                     %! PWC1
                 }                                                %! PWC1
@@ -5808,9 +5802,7 @@ D_ViolaMusicVoice = {
                 {                                                %! PWC1
                     \hspace                                      %! PWC1
                         #0.0                                     %! PWC1
-                    \whiteout                                    %! PWC1
-                        \upright                                 %! PWC1
-                            "molto gridato"                      %! PWC1
+                    "molto gridato ed estr. sul pont."           %! PWC1
                 }                                                %! PWC1
             }                                                    %! PWC1
         - \tweak staff-padding #6                                %! PWC1
@@ -6646,9 +6638,7 @@ D_CelloMusicVoice = {
         - \tweak bound-details.left.text \markup {               %! PWC1
             \concat                                              %! PWC1
                 {                                                %! PWC1
-                    \whiteout                                    %! PWC1
-                        \upright                                 %! PWC1
-                            "molto flautando"                    %! PWC1
+                    "molto flautando"                            %! PWC1
                     \hspace                                      %! PWC1
                         #0.5                                     %! PWC1
                 }                                                %! PWC1
@@ -6669,9 +6659,7 @@ D_CelloMusicVoice = {
                 {                                                %! PWC1
                     \hspace                                      %! PWC1
                         #0.0                                     %! PWC1
-                    \whiteout                                    %! PWC1
-                        \upright                                 %! PWC1
-                            "molto gridato"                      %! PWC1
+                    "molto gridato ed estr. sul pont."           %! PWC1
                 }                                                %! PWC1
             }                                                    %! PWC1
         - \tweak staff-padding #6                                %! PWC1

@@ -3255,11 +3255,7 @@ D_PianoMusicVoice = {
     c'4.
     \mp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
     -\tenuto                                                     %! IC
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                "5th harmonic of F1"                             %! IC
-        }                                                        %! IC
+    ^ \markup { "5th harmonic of F1" }                           %! IC
     \override Staff.Clef.color = #(x11-color 'DeepPink4)         %! SM6:REDUNDANT_CLEF_REDRAW_COLOR:IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
@@ -3443,11 +3439,7 @@ D_PianoMusicVoice = {
     c'2.
     \mp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
     -\tenuto                                                     %! IC
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                "5th harmonic of F1"                             %! IC
-        }                                                        %! IC
+    ^ \markup { "5th harmonic of F1" }                           %! IC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)      %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
@@ -3827,11 +3819,7 @@ D_PianoMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     <a, c e g>8
     \mp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                "senza pedale"                                   %! IC
-        }                                                        %! IC
+    ^ \markup { "senza pedale" }                                 %! IC
     ^ \markup {
         \center-align
             \concat
@@ -4074,12 +4062,10 @@ D_PercussionMusicVoice = {
     c'16
     \pp                                                          %! SM8:REDUNDANT_DYNAMIC:IC
     ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                \override                                        %! IC
-                    #'(box-padding . 0.5)                        %! IC
-                    \box                                         %! IC
-                        tam-tam                                  %! IC
+        \override                                                %! IC
+            #'(box-padding . 0.5)                                %! IC
+            \box                                                 %! IC
+                tam-tam                                          %! IC
         }                                                        %! IC
     
     r8
@@ -4117,18 +4103,14 @@ D_PercussionMusicVoice = {
                 {
                     \line                                        %! IC
                         {                                        %! IC
-                            \whiteout                            %! IC
-                                \upright                         %! IC
-                                    \override                    %! IC
-                                        #'(box-padding . 0.5)    %! IC
-                                        \box                     %! IC
-                                            sponges              %! IC
+                            \override                            %! IC
+                                #'(box-padding . 0.5)            %! IC
+                                \box                             %! IC
+                                    sponges                      %! IC
                         }                                        %! IC
                     \line                                        %! IC
                         {                                        %! IC
-                            \whiteout                            %! IC
-                                \upright                         %! IC
-                                    "accent changes of direction noticeably at each attack" %! IC
+                            "accent changes of direction noticeably at each attack" %! IC
                         }                                        %! IC
                 }
             }
@@ -4679,18 +4661,14 @@ D_PercussionMusicVoice = {
             {
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                "attackless roll with very soft yarn mallets" %! IC
+                        "attackless roll with very soft yarn mallets" %! IC
                     }                                            %! IC
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                \override                        %! IC
-                                    #'(box-padding . 0.5)        %! IC
-                                    \box                         %! IC
-                                        "suspended cymbal"       %! IC
+                        \override                                %! IC
+                            #'(box-padding . 0.5)                %! IC
+                            \box                                 %! IC
+                                "suspended cymbal"               %! IC
                     }                                            %! IC
             }
         }
@@ -4793,9 +4771,7 @@ D_ViolinMusicVoice = {
                     }                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                "directly on bridge: very slow bow, imperceptible bow changes" %! IC
+                        "directly on bridge: very slow bow, imperceptible bow changes" %! IC
                     }                                            %! IC
                 \line                                            %! SM14
                     {                                            %! SM14
@@ -5083,11 +5059,7 @@ D_ViolinMusicVoice = {
         cs''!16.
         \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                               %! SC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "molto gridato ed estr. sul pont."           %! IC
-            }                                                    %! IC
+        ^ \markup { "molto gridato ed estr. sul pont." }         %! IC
         
         af''!4.
         \glissando                                               %! SC
@@ -5243,11 +5215,7 @@ D_ViolinMusicVoice = {
         f''4
         \ff                                                      %! SM8:REDUNDANT_DYNAMIC:IC
         \glissando                                               %! SC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "molto gridato ed estr. sul pont."           %! IC
-            }                                                    %! IC
+        ^ \markup { "molto gridato ed estr. sul pont." }         %! IC
         
         a''2
         \glissando                                               %! SC
@@ -5436,11 +5404,7 @@ D_ViolinMusicVoice = {
     aqs!8
     :32                                                          %! IC
     \mp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                ordinario                                        %! IC
-        }                                                        %! IC
+    ^ \markup { ordinario }                                      %! IC
     
     r2
     
@@ -5578,9 +5542,7 @@ D_ViolaMusicVoice = {
                     }                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                "directly on bridge: very slow bow, imperceptible bow changes" %! IC
+                        "directly on bridge: very slow bow, imperceptible bow changes" %! IC
                     }                                            %! IC
             }
         }
@@ -5718,11 +5680,7 @@ D_ViolaMusicVoice = {
     \glissando                                                   %! SC
     \<                                                           %! HC1
     \pp                                                          %! HC1
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                "molto flautando ed estr. sul pont."             %! IC
-        }                                                        %! IC
+    ^ \markup { "molto flautando ed estr. sul pont." }           %! IC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)      %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     c''4
@@ -5939,11 +5897,7 @@ D_ViolaMusicVoice = {
         ef''!2
         \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                               %! SC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "molto gridato ed estr. sul pont."           %! IC
-            }                                                    %! IC
+        ^ \markup { "molto gridato ed estr. sul pont." }         %! IC
         
         d''4.
         \glissando                                               %! SC
@@ -6101,11 +6055,7 @@ D_ViolaMusicVoice = {
     c''4
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
     \glissando                                                   %! SC
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                "molto gridato ed estr. sul pont."               %! IC
-        }                                                        %! IC
+    ^ \markup { "molto gridato ed estr. sul pont." }             %! IC
     
     ef''!2
     \glissando                                                   %! SC
@@ -6288,11 +6238,7 @@ D_ViolaMusicVoice = {
     bf,!8
     :32                                                          %! IC
     \mp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                ordinario                                        %! IC
-        }                                                        %! IC
+    ^ \markup { ordinario }                                      %! IC
     
     r2
     
@@ -6435,9 +6381,7 @@ D_CelloMusicVoice = {
                     }                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                "directly on bridge: very slow bow, imperceptible bow changes" %! IC
+                        "directly on bridge: very slow bow, imperceptible bow changes" %! IC
                     }                                            %! IC
             }
         }
@@ -6710,9 +6654,7 @@ D_CelloMusicVoice = {
                 {
                     \line                                        %! IC
                         {                                        %! IC
-                            \whiteout                            %! IC
-                                \upright                         %! IC
-                                    "molto gridato ed estr. sul pont." %! IC
+                            "molto gridato ed estr. sul pont."   %! IC
                         }                                        %! IC
                     \line                                        %! SM14
                         {                                        %! SM14
@@ -6881,11 +6823,7 @@ D_CelloMusicVoice = {
         b''4
         \ff                                                      %! SM8:REDUNDANT_DYNAMIC:IC
         \glissando                                               %! SC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "molto gridato ed estr. sul pont."           %! IC
-            }                                                    %! IC
+        ^ \markup { "molto gridato ed estr. sul pont." }         %! IC
         
         fs''!2
         \glissando                                               %! SC
@@ -7061,11 +6999,7 @@ D_CelloMusicVoice = {
     a,8
     :32                                                          %! IC
     \mp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                ordinario                                        %! IC
-        }                                                        %! IC
+    ^ \markup { ordinario }                                      %! IC
     
     r2
     

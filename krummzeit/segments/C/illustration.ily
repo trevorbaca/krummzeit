@@ -2007,11 +2007,7 @@ C_PianoMusicVoice = {
     }
     <c,, e,, g,, b,, d, f, a,>2.
     ~
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                "senza pedale"                                   %! IC
-        }                                                        %! IC
+    ^ \markup { "senza pedale" }                                 %! IC
     ^ \markup {
         \center-align
             \concat
@@ -2258,12 +2254,10 @@ C_PercussionMusicVoice = {
                     }                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                \override                        %! IC
-                                    #'(box-padding . 0.5)        %! IC
-                                    \box                         %! IC
-                                        "snare drum"             %! IC
+                        \override                                %! IC
+                            #'(box-padding . 0.5)                %! IC
+                            \box                                 %! IC
+                                "snare drum"                     %! IC
                     }                                            %! IC
             }
         }
@@ -2369,12 +2363,10 @@ C_PercussionMusicVoice = {
     c4
     \pp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                \override                                        %! IC
-                    #'(box-padding . 0.5)                        %! IC
-                    \box                                         %! IC
-                        tam-tam                                  %! IC
+        \override                                                %! IC
+            #'(box-padding . 0.5)                                %! IC
+            \box                                                 %! IC
+                tam-tam                                          %! IC
         }                                                        %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
@@ -2610,11 +2602,7 @@ C_ViolinMusicVoice = {
         \>                                                       %! HC1
         \ff                                                      %! HC1
         [
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    pizz.                                        %! IC
-            }                                                    %! IC
+        ^ \markup { pizz. }                                      %! IC
         
         cs''''!8
         -\staccatissimo                                          %! IC
@@ -2757,11 +2745,7 @@ C_ViolinMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     fs!1
     \fff_poss                                                    %! SM8:EXPLICIT_DYNAMIC:IC
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                arco                                             %! IC
-        }                                                        %! IC
+    ^ \markup { arco }                                           %! IC
     
     % [C ViolinMusicVoice measure 147 / measure 15]              %! SM4
     fs!1
@@ -2877,11 +2861,7 @@ C_ViolaMusicVoice = {
         -\staccatissimo                                          %! IC
         \>                                                       %! HC1
         \ff                                                      %! HC1
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    pizz.                                        %! IC
-            }                                                    %! IC
+        ^ \markup { pizz. }                                      %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/4 {
@@ -2991,11 +2971,7 @@ C_ViolaMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     bf,!2.
     \fff_poss                                                    %! SM8:EXPLICIT_DYNAMIC:IC
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                arco                                             %! IC
-        }                                                        %! IC
+    ^ \markup { arco }                                           %! IC
     
     % [C ViolaMusicVoice measure 144 / measure 12]               %! SM4
     bf,!2.
@@ -3123,11 +3099,7 @@ C_CelloMusicVoice = {
         -\staccatissimo                                          %! IC
         \>                                                       %! HC1
         \ff                                                      %! HC1
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    pizz.                                        %! IC
-            }                                                    %! IC
+        ^ \markup { pizz. }                                      %! IC
         
         r16
         
@@ -3244,11 +3216,7 @@ C_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     a,,1
     \fff_poss                                                    %! SM8:EXPLICIT_DYNAMIC:IC
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                arco                                             %! IC
-        }                                                        %! IC
+    ^ \markup { arco }                                           %! IC
     
     % [C CelloMusicVoice measure 147 / measure 15]               %! SM4
     a,,1

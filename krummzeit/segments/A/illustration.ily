@@ -4087,24 +4087,22 @@ A_ClarinetMusicVoice = {
             {
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                \override                        %! IC
-                                    #'(box-padding . 0.5)        %! IC
-                                    \box                         %! IC
-                                        \line                    %! IC
+                        \override                                %! IC
+                            #'(box-padding . 0.5)                %! IC
+                            \box                                 %! IC
+                                \line                            %! IC
+                                    {                            %! IC
+                                        \concat                  %! IC
                                             {                    %! IC
-                                                \concat          %! IC
-                                                    {            %! IC
-                                                        E        %! IC
-                                                        \raise   %! IC
-                                                            #0.5 %! IC
-                                                            \scale %! IC
-                                                                #'(0.65 . 0.65) %! IC
-                                                                \flat %! IC
-                                                    }            %! IC
-                                                clarinet         %! IC
+                                                E                %! IC
+                                                \raise           %! IC
+                                                    #0.5         %! IC
+                                                    \scale       %! IC
+                                                        #'(0.65 . 0.65) %! IC
+                                                        \flat    %! IC
                                             }                    %! IC
+                                        clarinet                 %! IC
+                                    }                            %! IC
                     }                                            %! IC
                 \line                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                     {                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
@@ -7449,12 +7447,10 @@ A_PercussionMusicVoice = {
     -\accent                                                     %! IC
     -\tenuto                                                     %! IC
     ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                \override                                        %! IC
-                    #'(box-padding . 0.5)                        %! IC
-                    \box                                         %! IC
-                        tam-tam                                  %! IC
+        \override                                                %! IC
+            #'(box-padding . 0.5)                                %! IC
+            \box                                                 %! IC
+                tam-tam                                          %! IC
         }                                                        %! IC
     
     r8
@@ -7746,11 +7742,7 @@ A_ViolinMusicVoice = {
     f''4.
     \mp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
     -\staccato                                                   %! IC
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                "off-string bowing on staccati"                  %! IC
-        }                                                        %! IC
+    ^ \markup { "off-string bowing on staccati" }                %! IC
     \times 2/3 {
         
         f''4
@@ -7905,9 +7897,7 @@ A_ViolinMusicVoice = {
             {
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                "off-string bowing on staccati"  %! IC
+                        "off-string bowing on staccati"          %! IC
                     }                                            %! IC
                 \line                                            %! SM14
                     {                                            %! SM14
@@ -8609,11 +8599,7 @@ A_ViolinMusicVoice = {
     \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                "OB + full bow strokes"                          %! IC
-        }                                                        %! IC
+    ^ \markup { "OB + full bow strokes" }                        %! IC
     
     fs''!4.
     -\upbow                                                      %! IC
@@ -8926,11 +8912,7 @@ A_ViolinMusicVoice = {
         b''8
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         -\staccatissimo                                          %! IC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    pizz.                                        %! IC
-            }                                                    %! IC
+        ^ \markup { pizz. }                                      %! IC
         
         a''4
         -\staccatissimo                                          %! IC
@@ -9337,12 +9319,10 @@ A_ViolinMusicVoice = {
             {
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                \override                        %! IC
-                                    #'(box-padding . 0.5)        %! IC
-                                    \box                         %! IC
-                                        "stonecircle: scrape at moderate speed" %! IC
+                        \override                                %! IC
+                            #'(box-padding . 0.5)                %! IC
+                            \box                                 %! IC
+                                "stonecircle: scrape at moderate speed" %! IC
                     }                                            %! IC
                 \line                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                     {                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
@@ -9425,9 +9405,7 @@ A_ViolaMusicVoice = {
                         }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                     \line                                        %! IC
                         {                                        %! IC
-                            \whiteout                            %! IC
-                                \upright                         %! IC
-                                    "molto flautando"            %! IC
+                            "molto flautando"                    %! IC
                         }                                        %! IC
                 }
             }
@@ -9502,9 +9480,7 @@ A_ViolaMusicVoice = {
                 {
                     \line                                        %! IC
                         {                                        %! IC
-                            \whiteout                            %! IC
-                                \upright                         %! IC
-                                    "non flautando"              %! IC
+                            "non flautando"                      %! IC
                         }                                        %! IC
                     \line                                        %! SM14
                         {                                        %! SM14
@@ -9622,11 +9598,7 @@ A_ViolaMusicVoice = {
     \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                "OB + full bow strokes"                          %! IC
-        }                                                        %! IC
+    ^ \markup { "OB + full bow strokes" }                        %! IC
     
     ef''!4.
     -\upbow                                                      %! IC
@@ -9896,11 +9868,7 @@ A_ViolaMusicVoice = {
         b''8
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         -\staccatissimo                                          %! IC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    pizz.                                        %! IC
-            }                                                    %! IC
+        ^ \markup { pizz. }                                      %! IC
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
         bf''!4
@@ -10426,9 +10394,7 @@ A_CelloMusicVoice = {
                         }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                     \line                                        %! IC
                         {                                        %! IC
-                            \whiteout                            %! IC
-                                \upright                         %! IC
-                                    "molto flautando"            %! IC
+                            "molto flautando"                    %! IC
                         }                                        %! IC
                 }
             }
@@ -10495,11 +10461,7 @@ A_CelloMusicVoice = {
         f,2.
         \f                                                       %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                               %! SC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "non flautando"                              %! IC
-            }                                                    %! IC
+        ^ \markup { "non flautando" }                            %! IC
         
         eqs,!2
         \glissando                                               %! SC
@@ -10610,11 +10572,7 @@ A_CelloMusicVoice = {
     \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
     -\downbow                                                    %! IC
     \glissando                                                   %! SC
-    ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                "OB + full bow strokes"                          %! IC
-        }                                                        %! IC
+    ^ \markup { "OB + full bow strokes" }                        %! IC
     
     d''4.
     -\upbow                                                      %! IC
@@ -10970,11 +10928,7 @@ A_CelloMusicVoice = {
         cs''!8
         \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
         -\staccatissimo                                          %! IC
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    pizz.                                        %! IC
-            }                                                    %! IC
+        ^ \markup { pizz. }                                      %! IC
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
         c''4

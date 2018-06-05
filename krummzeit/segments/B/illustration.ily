@@ -3909,12 +3909,10 @@ B_PercussionMusicVoice = {
             {
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                \override                        %! IC
-                                    #'(box-padding . 0.5)        %! IC
-                                    \box                         %! IC
-                                        "scraped slate"          %! IC
+                        \override                                %! IC
+                            #'(box-padding . 0.5)                %! IC
+                            \box                                 %! IC
+                                "scraped slate"                  %! IC
                     }                                            %! IC
                 \line                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                     {                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
@@ -4113,18 +4111,14 @@ B_PercussionMusicVoice = {
             {
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                \override                        %! IC
-                                    #'(box-padding . 0.5)        %! IC
-                                    \box                         %! IC
-                                        "snare drum"             %! IC
+                        \override                                %! IC
+                            #'(box-padding . 0.5)                %! IC
+                            \box                                 %! IC
+                                "snare drum"                     %! IC
                     }                                            %! IC
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                "rapid roll with fingertips: keep speed constant during accelerando" %! IC
+                        "rapid roll with fingertips: keep speed constant during accelerando" %! IC
                     }                                            %! IC
             }
         }
@@ -4586,15 +4580,11 @@ B_ViolinMusicVoice = {
             {
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                "non flautando"                  %! IC
+                        "non flautando"                          %! IC
                     }                                            %! IC
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                "allow bowing to convey accelerando" %! IC
+                        "allow bowing to convey accelerando"     %! IC
                     }                                            %! IC
             }
         }
@@ -4706,11 +4696,7 @@ B_ViolaMusicVoice = {
         \glissando                                               %! SC
         \>                                                       %! HC1
         \ff                                                      %! HC1
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "molto flautando"                            %! IC
-            }                                                    %! IC
+        ^ \markup { "molto flautando" }                          %! IC
         
         dtqs!8
     }
@@ -4884,15 +4870,11 @@ B_ViolaMusicVoice = {
             {
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                "non flautando"                  %! IC
+                        "non flautando"                          %! IC
                     }                                            %! IC
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                "allow bowing to convey accelerando" %! IC
+                        "allow bowing to convey accelerando"     %! IC
                     }                                            %! IC
             }
         }
@@ -5011,11 +4993,7 @@ B_CelloMusicVoice = {
         \glissando                                               %! SC
         \>                                                       %! HC1
         \ff                                                      %! HC1
-        ^ \markup {                                              %! IC
-            \whiteout                                            %! IC
-                \upright                                         %! IC
-                    "molto flautando"                            %! IC
-            }                                                    %! IC
+        ^ \markup { "molto flautando" }                          %! IC
         
         ctqs,!4
     }
@@ -5186,15 +5164,11 @@ B_CelloMusicVoice = {
             {
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                "non flautando"                  %! IC
+                        "non flautando"                          %! IC
                     }                                            %! IC
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                "allow bowing to convey accelerando" %! IC
+                        "allow bowing to convey accelerando"     %! IC
                     }                                            %! IC
             }
         }

@@ -144,7 +144,7 @@ maker(
 maker(
     ('cl', 3),
     baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
-    baca.markup.boxed(krummzeit.e_flat_clarinet_markup()),
+    baca.markups.boxed(krummzeit.e_flat_clarinet_markup()),
     krummzeit.margin_markup('Cl. (Eb)'),
     )
 
@@ -323,7 +323,7 @@ maker(
     baca.dynamic('mf'),
     baca.instrument(krummzeit.instruments['Percussion']),
     baca.make_repeat_tied_notes(),
-    baca.markup.boxed('stonecircle: scrape at moderate speed'),
+    baca.markups.boxed('stonecircle: scrape at moderate speed'),
     baca.not_parts(baca.bar_extent_zero()),
     baca.repeat_tie_up(),
     baca.staff_lines(1),
@@ -413,7 +413,7 @@ maker(
 maker(
     ('vn', 4),
     baca.dynamic('mp'),
-    baca.markup.off_string_bowing_on_staccati(),
+    baca.markups.off_string_bowing_on_staccati(),
     )
 
 maker(
@@ -424,7 +424,7 @@ maker(
 maker(
     ('vn', 8),
     baca.dynamic('f'),
-    baca.markup.off_string_bowing_on_staccati(),
+    baca.markups.off_string_bowing_on_staccati(),
     )
 
 maker(
@@ -478,13 +478,13 @@ maker(
 maker(
     (['va', 'vc'], (1, 4)),
     baca.dynamic('mf'),
-    baca.markup.molto_flautando(),
+    baca.markups.molto_flautando(),
     )
 
 maker(
     (['va', 'vc'], (5, 8)),
     baca.dynamic('f'),
-    baca.markup.non_flautando(),
+    baca.markups.non_flautando(),
     )
 
 maker(
@@ -510,7 +510,7 @@ maker(
         baca.runs(),
         baca.glissando(),
         ),
-    baca.markup.OB_full_bow_strokes(),
+    baca.markups.OB_full_bow_strokes(),
     krummzeit.register_narrow(5, 3),
     )
 
@@ -525,7 +525,7 @@ maker(
     baca.clef('treble'),
     baca.dynamic('f'),
     baca.glissando(),
-    baca.markup.OB_full_bow_strokes(),
+    baca.markups.OB_full_bow_strokes(),
     krummzeit.register_narrow(5, 2),
     )
 
@@ -539,7 +539,7 @@ maker(
     baca.alternate_bow_strokes(),
     baca.dynamic('f'),
     baca.glissando(),
-    baca.markup.OB_full_bow_strokes(),
+    baca.markups.OB_full_bow_strokes(),
     krummzeit.register_narrow(5, 4),
     )
 
@@ -573,7 +573,7 @@ maker(
     ('va', (17, 22)),
     baca.clef('treble'),
     baca.dynamic('fff'),
-    baca.markup.pizz(),
+    baca.markups.pizz(),
     baca.staccatissimo(selector=baca.pheads()),
     krummzeit.register_narrow(5, 6),
     )
@@ -582,7 +582,7 @@ maker(
     ('vc', (18, 22)),
     baca.clef('treble'),
     baca.dynamic('fff'),
-    baca.markup.pizz(),
+    baca.markups.pizz(),
     baca.staccatissimo(selector=baca.pheads()),
     krummzeit.register_narrow(5, 6),
     )
@@ -590,7 +590,7 @@ maker(
 maker(
     ('vn', (19, 22)),
     baca.dynamic('fff'),
-    baca.markup.pizz(),
+    baca.markups.pizz(),
     baca.staccatissimo(selector=baca.pheads()),
     krummzeit.register_narrow(5, 6),
     )

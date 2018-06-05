@@ -170,14 +170,14 @@ maker(
 maker(
     (['vn', 'va', 'vc'], (5, 13)),
     baca.dynamic('fff'),
-    baca.markup.gridato_possibile(),
+    baca.markups.gridato_possibile(),
     )
 
 maker(
     ('vn', (8, 10)),
     baca.transition(
-        baca.markup.markup('grid. possibile'),
-        baca.markup.markup('flaut. possibile'),
+        baca.markups.markup('grid. possibile'),
+        baca.markups.markup('flaut. possibile'),
         tweaks=[('staff-padding', 5)],
         ),
     )
@@ -185,15 +185,15 @@ maker(
 maker(
     (['va', 'vc'], (9, 10)),
     baca.transition(
-        baca.markup.markup('grid. possibile'),
-        baca.markup.markup('flaut. possibile'),
+        baca.markups.markup('grid. possibile'),
+        baca.markups.markup('flaut. possibile'),
         tweaks=[('staff-padding', 5)],
         ),
     )
 
 maker(
     ('perc', (13, 14)),
-    baca.markup.attackless(),
+    baca.markups.attackless(),
     baca.reiterated_dynamic('p'),
     )
 

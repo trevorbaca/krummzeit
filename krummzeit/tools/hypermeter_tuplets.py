@@ -24,9 +24,9 @@ def hypermeter_tuplets(
             division_masks=division_masks,
             tuplet_ratios=tuplet_ratios,
             tuplet_specifier=rmakers.TupletSpecifier(
-                avoid_dots=True,
                 diminution=False,
                 extract_trivial=True,
+                rewrite_dots=True,
                 trivialize=True,
                 ),
             ),

@@ -33,7 +33,7 @@ def color_tuplets(division_mask=None, rotation=0):
                 tie_across_divisions=True,
                 ),
             tuplet_specifier=rmakers.TupletSpecifier(
-                avoid_dots=True,
+                rewrite_dots=True,
                 ),
             ),
         )

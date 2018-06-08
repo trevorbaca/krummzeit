@@ -17,8 +17,8 @@ def pizzicato_rhythm(masks=None, split_divisions_by_counts=(6, 18)):
                 denominator=16,
                 ),
             tuplet_specifier=rmakers.TupletSpecifier(
-                avoid_dots=True,
                 extract_trivial=True,
+                rewrite_dots=True,
                 ),
             ),
         )

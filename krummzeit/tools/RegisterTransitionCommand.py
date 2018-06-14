@@ -18,7 +18,7 @@ class RegisterTransitionCommand(baca.Command):
         ...     )
 
         >>> maker(
-        ...     baca.scope('MusicVoice', 1),
+        ...     ('MusicVoice', 1),
         ...     baca.pitches('C4 D4 E4 F4'),
         ...     baca.make_even_divisions(),
         ...     krummzeit.RegisterTransitionCommand(

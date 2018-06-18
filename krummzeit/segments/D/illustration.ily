@@ -4968,8 +4968,8 @@ D_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         fs''!4
         \glissando                                               %! SC
-        \<                                                       %! HC1
         \pp                                                      %! HC1
+        \<                                                       %! HC1
         - \tweak Y-extent ##f                                    %! PWC1
         - \tweak bound-details.left.text \markup {               %! PWC1
             \concat                                              %! PWC1
@@ -5680,8 +5680,8 @@ D_ViolaMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     a''8
     \glissando                                                   %! SC
-    \<                                                           %! HC1
     \pp                                                          %! HC1
+    \<                                                           %! HC1
     ^ \markup { "molto flautando ed estr. sul pont." }           %! IC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)      %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
@@ -5735,8 +5735,8 @@ D_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         cs''!16
         \glissando                                               %! SC
-        \<                                                       %! HC1
         \pp                                                      %! HC1
+        \<                                                       %! HC1
         - \tweak Y-extent ##f                                    %! PWC1
         - \tweak bound-details.left.text \markup {               %! PWC1
             \concat                                              %! PWC1
@@ -6580,8 +6580,8 @@ D_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         g''4
         \glissando                                               %! SC
-        \<                                                       %! HC1
         \pp                                                      %! HC1
+        \<                                                       %! HC1
         - \tweak Y-extent ##f                                    %! PWC1
         - \tweak bound-details.left.text \markup {               %! PWC1
             \concat                                              %! PWC1

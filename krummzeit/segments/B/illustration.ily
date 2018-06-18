@@ -4573,8 +4573,8 @@ B_ViolinMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     ftqs!1.
     \glissando                                                   %! SC
-    \<                                                           %! HC1
     \pp                                                          %! HC1
+    \<                                                           %! HC1
     ^ \markup {
         \column
             {
@@ -4694,8 +4694,8 @@ B_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         e4
         \glissando                                               %! SC
-        \>                                                       %! HC1
         \ff                                                      %! HC1
+        \>                                                       %! HC1
         ^ \markup { "molto flautando" }                          %! IC
         
         dtqs!8
@@ -4748,8 +4748,8 @@ B_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         dtqs!2
         \glissando                                               %! SC
-        \>                                                       %! HC1
         \ff                                                      %! HC1
+        \>                                                       %! HC1
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         f4
@@ -4863,8 +4863,8 @@ B_ViolaMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     btqs,!1
     \glissando                                                   %! SC
-    \<                                                           %! HC1
     \pp                                                          %! HC1
+    \<                                                           %! HC1
     ^ \markup {
         \column
             {
@@ -4991,8 +4991,8 @@ B_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         d,16
         \glissando                                               %! SC
-        \>                                                       %! HC1
         \ff                                                      %! HC1
+        \>                                                       %! HC1
         ^ \markup { "molto flautando" }                          %! IC
         
         ctqs,!4
@@ -5045,8 +5045,8 @@ B_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         ctqs,!8
         \glissando                                               %! SC
-        \>                                                       %! HC1
         \ff                                                      %! HC1
+        \>                                                       %! HC1
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         e,2
@@ -5157,8 +5157,8 @@ B_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     b,,\breve
     \glissando                                                   %! SC
-    \<                                                           %! HC1
     \pp                                                          %! HC1
+    \<                                                           %! HC1
     ^ \markup {
         \column
             {

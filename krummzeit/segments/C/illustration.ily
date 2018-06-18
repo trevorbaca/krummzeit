@@ -1831,8 +1831,8 @@ C_PianoMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         e''''16
         -\staccatissimo                                          %! IC
-        \>                                                       %! HC1
         \ff                                                      %! HC1
+        \>                                                       %! HC1
         ^ \markup {
             \column
                 {
@@ -1903,8 +1903,8 @@ C_PianoMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         g''16
         -\staccatissimo                                          %! IC
-        \<                                                       %! HC1
         \pp                                                      %! HC1
+        \<                                                       %! HC1
         
         r16
         
@@ -1952,8 +1952,8 @@ C_PianoMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         af!8
         -\staccatissimo                                          %! IC
-        \>                                                       %! HC1
         \ff                                                      %! HC1
+        \>                                                       %! HC1
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
         r8
@@ -2599,8 +2599,8 @@ C_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         e''''8
         -\staccatissimo                                          %! IC
-        \>                                                       %! HC1
         \ff                                                      %! HC1
+        \>                                                       %! HC1
         [
         ^ \markup { pizz. }                                      %! IC
         
@@ -2646,8 +2646,8 @@ C_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         a''8
         -\staccatissimo                                          %! IC
-        \<                                                       %! HC1
         \pp                                                      %! HC1
+        \<                                                       %! HC1
         [
         
         e''8
@@ -2691,8 +2691,8 @@ C_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         g''8
         -\staccatissimo                                          %! IC
-        \>                                                       %! HC1
         \ff                                                      %! HC1
+        \>                                                       %! HC1
         [
         
         c''8
@@ -2859,8 +2859,8 @@ C_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         ef'''!4
         -\staccatissimo                                          %! IC
-        \>                                                       %! HC1
         \ff                                                      %! HC1
+        \>                                                       %! HC1
         ^ \markup { pizz. }                                      %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -2895,8 +2895,8 @@ C_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         f''4
         -\staccatissimo                                          %! IC
-        \<                                                       %! HC1
         \pp                                                      %! HC1
+        \<                                                       %! HC1
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/4 {
@@ -2936,8 +2936,8 @@ C_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         f'4
         -\staccatissimo                                          %! IC
-        \>                                                       %! HC1
         \ff                                                      %! HC1
+        \>                                                       %! HC1
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/4 {
@@ -3097,8 +3097,8 @@ C_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         f''8
         -\staccatissimo                                          %! IC
-        \>                                                       %! HC1
         \ff                                                      %! HC1
+        \>                                                       %! HC1
         ^ \markup { pizz. }                                      %! IC
         
         r16
@@ -3139,8 +3139,8 @@ C_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         ef'!8
         -\staccatissimo                                          %! IC
-        \<                                                       %! HC1
         \pp                                                      %! HC1
+        \<                                                       %! HC1
         
         r16
         
@@ -3173,8 +3173,8 @@ C_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         b8
         -\staccatissimo                                          %! IC
-        \>                                                       %! HC1
         \ff                                                      %! HC1
+        \>                                                       %! HC1
         
         r16
         

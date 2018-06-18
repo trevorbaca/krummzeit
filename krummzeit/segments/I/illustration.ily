@@ -1438,8 +1438,8 @@ I_ClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     fs!2.
     \repeatTie
-    \<                                                           %! HC1
     \ff                                                          %! HC1
+    \<                                                           %! HC1
     
     fs!4.
     \repeatTie
@@ -1484,8 +1484,8 @@ I_ClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     fs!1
     \repeatTie
-    \>                                                           %! HC1
     \fff                                                         %! HC1
+    \>                                                           %! HC1
     
     % [I ClarinetMusicVoice measure 302 / measure 12]            %! SM4
     fs!1

@@ -1434,8 +1434,8 @@ G_ClarinetMusicVoice = {
     \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     cs!2.
-    \<                                                           %! HC1
     \ppp                                                         %! HC1
+    \<                                                           %! HC1
     ^ \markup {
         \column
             {
@@ -1646,8 +1646,8 @@ G_ClarinetMusicVoice = {
         \override TupletBracket.staff-padding = #6               %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         d2
-        \<                                                       %! HC1
         \f                                                       %! HC1
+        \<                                                       %! HC1
         ^ \markup {                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
             \with-color                                          %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                 #(x11-color 'blue)                               %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
@@ -2873,8 +2873,8 @@ G_ViolaMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     bf,!1..
     \glissando                                                   %! SC
-    \<                                                           %! HC1
     \ff                                                          %! HC1
+    \<                                                           %! HC1
     ^ \markup {
         \column
             {
@@ -2947,8 +2947,8 @@ G_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         g2
         \glissando                                               %! SC
-        \>                                                       %! HC1
         \ff                                                      %! HC1
+        \>                                                       %! HC1
         ^ \markup { "molto flautando" }                          %! IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -3147,8 +3147,8 @@ G_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     a,,2.
     \glissando                                                   %! SC
-    \<                                                           %! HC1
     \ff                                                          %! HC1
+    \<                                                           %! HC1
     ^ \markup {
         \column
             {
@@ -3226,8 +3226,8 @@ G_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         b,1.
         \glissando                                               %! SC
-        \>                                                       %! HC1
         \ff                                                      %! HC1
+        \>                                                       %! HC1
         ^ \markup { "molto flautando" }                          %! IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3

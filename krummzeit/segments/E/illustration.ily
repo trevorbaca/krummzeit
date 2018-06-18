@@ -5176,8 +5176,8 @@ E_ViolinMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     ef''!4
     \glissando                                                   %! SC
-    \>                                                           %! HC1
     \p                                                           %! HC1
+    \>                                                           %! HC1
     ^ \markup { "molto flautando" }                              %! IC
     
     e''2
@@ -5808,8 +5808,8 @@ E_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         ef'!2
         \glissando                                               %! SC
-        \>                                                       %! HC1
         \p                                                       %! HC1
+        \>                                                       %! HC1
         ^ \markup { "molto flautando" }                          %! IC
         
         e'4.
@@ -6216,8 +6216,8 @@ E_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         ef'!8
         \glissando                                               %! SC
-        \>                                                       %! HC1
         \p                                                       %! HC1
+        \>                                                       %! HC1
         ^ \markup { "molto flautando" }                          %! IC
         
         e'4

@@ -933,8 +933,8 @@ F_OboeMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     a'''4.
     -\staccato                                                   %! IC
-    \<                                                           %! HC1
     \p                                                           %! HC1
+    \<                                                           %! HC1
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/6 {
         
@@ -1258,8 +1258,8 @@ F_ClarinetMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         c'4
         -\staccato                                               %! IC
-        \<                                                       %! HC1
         \p                                                       %! HC1
+        \<                                                       %! HC1
         ^ \markup {                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
             \with-color                                          %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                 #(x11-color 'blue)                               %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
@@ -2287,8 +2287,8 @@ F_ViolaMusicVoice = {
     \override DynamicLineSpanner.staff-padding = #'6             %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     fs!8..
-    \<                                                           %! HC1
     \ppp                                                         %! HC1
+    \<                                                           %! HC1
     
     r32
     
@@ -2513,8 +2513,8 @@ F_CelloMusicVoice = {
     \override DynamicLineSpanner.staff-padding = #'6             %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     c,8..
-    \<                                                           %! HC1
     \ppp                                                         %! HC1
+    \<                                                           %! HC1
     
     r32
     

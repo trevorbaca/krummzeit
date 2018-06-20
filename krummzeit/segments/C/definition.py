@@ -292,7 +292,7 @@ maker(
 
 maker(
     ('perc', (14, 17)),
-    baca.reiterated_dynamic('pp'),
+    baca.dynamic('pp', selector=baca.pheads()),
     )
 
 maker(

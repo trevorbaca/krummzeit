@@ -545,16 +545,22 @@ maker(
 
 maker(
     ('pf', (16, 19)),
-    baca.marcato(selector=baca.pheads()),
+    baca.map(
+        baca.pheads(),
+        baca.dynamic('fff'),
+        baca.marcato(),
+        ),
     baca.ottava_bassa(),
-    baca.reiterated_dynamic('fff'),
     krummzeit.clusters('low'),
     )
 
 maker(
     ('perc', (16, 20)),
-    baca.reiterated_dynamic('p'),
-    baca.tenuto(selector=baca.pheads()),
+    baca.map(
+        baca.pheads(),
+        baca.dynamic('p'),
+        baca.tenuto(),
+        ),
     )
 
 pcs = krummzeit.violet_pitch_classes.get_payload()

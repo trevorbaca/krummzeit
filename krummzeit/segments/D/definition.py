@@ -234,7 +234,7 @@ maker(
 
 maker(
     ('perc', (1, 2)),
-    baca.reiterated_dynamic('pp'),
+    baca.dynamic('pp', selector=baca.pheads()),
     )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
@@ -357,9 +357,12 @@ maker(
 maker(
     ('pf', [(4, 7), 9]),
     baca.clef('bass'),
-    baca.reiterated_dynamic('mp'),
+    baca.map(
+        baca.pheads(),
+        baca.dynamic('mp'),
+        baca.tenuto(),
+        ),
     baca.note_head_style_harmonic(),
-    baca.tenuto(selector=baca.pheads()),
     krummzeit.markup.fifth_harmonic_of_F1(),
     )
 

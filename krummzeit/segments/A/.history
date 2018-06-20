@@ -1978,3 +1978,18 @@ LilyPond runtime: 7 seconds
  Segment-maker runtime: 31 seconds
  Abjad format time: 3 seconds
  LilyPond runtime: 6 seconds
+
+2018-06-20 11:56:30
+ Segment-maker runtime: 41 seconds
+ Abjad format time: 4 seconds
+ LilyPond runtime: 8 seconds
+
+2018-06-20 11:59:18
+ Segment-maker runtime: 47 seconds
+ Abjad format time: 4 seconds
+ LilyPond runtime: 8 seconds
+
+2018-06-20 12:01:41
+ Segment-maker runtime: 46 seconds
+ Abjad format time: 4 seconds
+ LilyPond runtime: 8 seconds

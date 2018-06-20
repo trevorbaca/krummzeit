@@ -167,7 +167,7 @@ maker(
 maker(
     ('perc', (4, 5)),
     baca.accent(selector=baca.pheads()),
-    baca.reiterated_dynamic('ff'),
+    baca.dynamic('ff', selector=baca.pheads()),
     )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())

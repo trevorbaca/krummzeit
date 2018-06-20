@@ -318,10 +318,13 @@ maker(
 maker(
     ('pf', (14, 20)),
     baca.dls_staff_padding(4),
+    baca.map(
+        baca.pheads(),
+        baca.dynamic('ff'),
+        baca.tenuto(),
+        ),
     baca.note_head_style_harmonic(),
     baca.pitch('C4'),
-    baca.reiterated_dynamic('ff'),
-    baca.tenuto(selector=baca.pheads()),
     krummzeit.markup.fifth_harmonic_of_F1(),
     )
 

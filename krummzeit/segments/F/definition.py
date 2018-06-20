@@ -197,7 +197,7 @@ maker(
 maker(
     ('perc', (13, 14)),
     baca.markups.attackless(),
-    baca.reiterated_dynamic('p'),
+    baca.dynamic('p', selector=baca.pheads()),
     )
 
 maker(

@@ -18,7 +18,7 @@ metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
     (1, krummzeit.metronome_marks['135']),
     (2, abjad.Fermata('shortfermata')),
     (3, krummzeit.metronome_marks['45']),
-    (3, abjad.Accelerando()),
+    (3, baca.Accelerando()),
     (6, krummzeit.metronome_marks['144']),
     (7, krummzeit.metronome_marks['108']),
     (8, abjad.Fermata('shortfermata')),

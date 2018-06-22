@@ -2822,8 +2822,8 @@ A_OboeMusicVoice = {
     b'16
     -\staccato                                                   %! IC
     ~
-    \ff                                                          %! HC1
     ]
+    \ff                                                          %! HC1
     
     % [A OboeMusicVoice measure 42 / measure 29]                 %! SM4
     b'4
@@ -3980,8 +3980,8 @@ A_ClarinetMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         c''8
         -\staccato                                               %! IC
-        \ff                                                      %! HC1
         ]
+        \ff                                                      %! HC1
     }
     \times 2/3 {
         
@@ -7290,9 +7290,9 @@ A_ViolinMusicVoice = {
         % [A ViolinMusicVoice measure 36 / measure 23]           %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         b''16
+        [
         \f                                                       %! HC1
         \<                                                       %! HC1
-        [
         
         c'16
         -\staccato                                               %! IC

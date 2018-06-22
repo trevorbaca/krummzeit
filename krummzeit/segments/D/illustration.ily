@@ -4580,8 +4580,8 @@ D_ViolinMusicVoice = {
     \times 4/7 {
         
         c''8
-        \glissando                                               %! SC
         [
+        \glissando                                               %! SC
         
         fs''!16.
         ]
@@ -4640,8 +4640,8 @@ D_ViolinMusicVoice = {
     \times 2/3 {
         
         af''!16
-        \glissando                                               %! SC
         [
+        \glissando                                               %! SC
         
         c''8
         ]
@@ -4836,8 +4836,8 @@ D_ViolinMusicVoice = {
     \times 2/3 {
         
         ef''!16
-        \glissando                                               %! SC
         [
+        \glissando                                               %! SC
         
         cs''!8
         ]
@@ -5416,8 +5416,8 @@ D_ViolaMusicVoice = {
     \times 4/5 {
         
         c''32
-        \glissando                                               %! SC
         [
+        \glissando                                               %! SC
         
         af''!8
         ]
@@ -5474,8 +5474,8 @@ D_ViolaMusicVoice = {
     \times 4/7 {
         
         g''8
-        \glissando                                               %! SC
         [
+        \glissando                                               %! SC
         
         bf''!16.
         ]
@@ -6159,8 +6159,8 @@ D_CelloMusicVoice = {
     \times 2/3 {
         
         b''16
-        \glissando                                               %! SC
         [
+        \glissando                                               %! SC
         
         g''8
         ]
@@ -6220,8 +6220,8 @@ D_CelloMusicVoice = {
     \times 4/5 {
         
         b''32
-        \glissando                                               %! SC
         [
+        \glissando                                               %! SC
         
         cs''!8
         ]

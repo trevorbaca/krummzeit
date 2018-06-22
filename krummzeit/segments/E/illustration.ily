@@ -2964,8 +2964,8 @@ E_ClarinetMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         a16
-        \glissando                                               %! SC
         [
+        \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -3120,8 +3120,8 @@ E_ClarinetMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         eqs'!16
-        \glissando                                               %! SC
         [
+        \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {

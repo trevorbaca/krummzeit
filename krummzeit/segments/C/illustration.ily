@@ -1720,8 +1720,8 @@ C_PianoMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         c'8
         -\staccatissimo                                          %! IC
-        \ff                                                      %! HC1
         ]
+        \ff                                                      %! HC1
     }
     
     % [C PianoMusicVoice measure 136 / measure 4]                %! SM4
@@ -1768,8 +1768,8 @@ C_PianoMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         cs,!8
         -\staccatissimo                                          %! IC
-        \pp                                                      %! HC1
         ]
+        \pp                                                      %! HC1
     }
     
     % [C PianoMusicVoice measure 138 / measure 6]                %! SM4
@@ -2370,9 +2370,9 @@ C_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         e''''8
         -\staccatissimo                                          %! IC
+        [
         \ff                                                      %! HC1
         \>                                                       %! HC1
-        [
         ^ \markup { pizz. }                                      %! IC
         
         cs''''!8
@@ -2417,9 +2417,9 @@ C_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         a''8
         -\staccatissimo                                          %! IC
+        [
         \pp                                                      %! HC1
         \<                                                       %! HC1
-        [
         
         e''8
         -\staccatissimo                                          %! IC
@@ -2462,9 +2462,9 @@ C_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         g''8
         -\staccatissimo                                          %! IC
+        [
         \ff                                                      %! HC1
         \>                                                       %! HC1
-        [
         
         c''8
         -\staccatissimo                                          %! IC
@@ -2644,8 +2644,8 @@ C_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         b''8
         -\staccatissimo                                          %! IC
-        \pp                                                      %! HC1
         ]
+        \pp                                                      %! HC1
         \ottava #0                                               %! SC
     }
     
@@ -2679,8 +2679,8 @@ C_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         a'8
         -\staccatissimo                                          %! IC
-        \ff                                                      %! HC1
         ]
+        \ff                                                      %! HC1
     }
     
     % [C ViolaMusicVoice measure 140 / measure 8]                %! SM4
@@ -2720,8 +2720,8 @@ C_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         bf,!8
         -\staccatissimo                                          %! IC
-        \pp                                                      %! HC1
         ]
+        \pp                                                      %! HC1
         \revert Beam.positions                                   %! OC2
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2

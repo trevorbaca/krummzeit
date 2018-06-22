@@ -1597,8 +1597,8 @@ i_ViolaMusicVoice = {
     \times 2/3 {
         
         cs'!16
-        \glissando                                               %! SC
         [
+        \glissando                                               %! SC
         
         e'8
         ]
@@ -1644,8 +1644,8 @@ i_ViolaMusicVoice = {
     \times 4/5 {
         
         d32
-        \glissando                                               %! SC
         [
+        \glissando                                               %! SC
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
         ef!8

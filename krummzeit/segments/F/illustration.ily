@@ -914,8 +914,8 @@ F_OboeMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         c'16
         -\staccato                                               %! IC
-        \ff                                                      %! HC1
         ]
+        \ff                                                      %! HC1
     }
     
     % [F OboeMusicVoice measure 245 / measure 11]                %! SM4

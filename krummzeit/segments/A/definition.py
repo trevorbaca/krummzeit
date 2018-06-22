@@ -25,11 +25,11 @@ stage_measure_map = baca.StageMeasureMap([
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
     (9, krummzeit.metronome_marks['67.5']),
     (9, krummzeit.metric_modulations['4=8']),
-    (10, abjad.Accelerando()),
+    (10, baca.Accelerando()),
     (12, krummzeit.metronome_marks['135']),
     (15, krummzeit.metronome_marks['90']),
     (15, krummzeit.metric_modulations['4.=4']),
-    (16, abjad.Accelerando()),
+    (16, baca.Accelerando()),
     (17, krummzeit.metronome_marks['135']),
     (20, krummzeit.metronome_marks['108']),
     (20, krummzeit.metric_modulations['4=4:5(4)']),

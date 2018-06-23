@@ -95,6 +95,26 @@ G_GlobalSkips = {
     \bar ""                                                              %! SM2:+SEGMENT:EMPTY_START_BAR
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 9/8
+%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (257)                                                        %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
+%@%         <0>                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((1))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
+%@%         [G.1]                                                        %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
+%@%         [12'15'']                                                    %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
 %@% - \tweak bound-details.left.text \markup {                           %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
 %@%     \fontsize                                                        %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
@@ -144,26 +164,6 @@ G_GlobalSkips = {
     - \tweak bound-details.right.stencil-align-dir-y #center             %! SM29:METRONOME_MARK_SPANNER
     - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
     \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (257)                                                        %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <0>                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((1))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [G.1]                                                        %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [12'15'']                                                    %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     
     % [G GlobalSkips measure 258 / measure 2]                            %! SM4
     \time 5/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -463,6 +463,26 @@ G_GlobalSkips = {
     \time 3/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
+%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (270)                                                        %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
+%@%         <13>                                                         %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((14))                                                       %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
+%@%         [G.14]                                                       %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
+%@%         [12'35'']                                                    %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
 %@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
@@ -513,26 +533,6 @@ G_GlobalSkips = {
     - \tweak bound-details.right.stencil-align-dir-y #center             %! SM29:METRONOME_MARK_SPANNER
     - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
     \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (270)                                                        %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <13>                                                         %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((14))                                                       %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [G.14]                                                       %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [12'35'']                                                    %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     
     % [G GlobalSkips measure 271 / measure 15]                           %! SM4
     \time 7/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -753,7 +753,6 @@ G_GlobalSkips = {
     \time 1/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/4
-    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
 %@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
 %@%         (280)                                                        %! SM31:MEASURE_NUMBER_MARKUP
@@ -774,6 +773,7 @@ G_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
 %@%         [13'03'']                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
+    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     \override Score.BarLine.transparent = ##f                            %! SM5
     \bar "|"                                                             %! SM5
     
@@ -881,8 +881,8 @@ G_OboeMusicVoice = {
         fs''!8
         \pp                                                      %! SM8:EXPLICIT_DYNAMIC:IC
         -\staccato                                               %! IC
-        [
         ^ \markup { leggierissimo }                              %! IC
+        [
         
         c''8
         -\staccato                                               %! IC
@@ -999,15 +999,15 @@ G_OboeMusicVoice = {
     \baca_repeat_pitch_class_warning                             %! SM14
     fs''!4
     -\staccato                                                   %! IC
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
     ~
-    - \tweak color #red                                          %! SM14
-    ^ \markup { @ }                                              %! SM14
     
     \baca_repeat_pitch_class_warning                             %! SM14
     fs''!8
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
     [
-    - \tweak color #red                                          %! SM14
-    ^ \markup { @ }                                              %! SM14
     
     \baca_repeat_pitch_class_warning                             %! SM14
     fs''!8
@@ -1024,16 +1024,16 @@ G_OboeMusicVoice = {
     \baca_repeat_pitch_class_warning                             %! SM14
     af''!8
     -\staccato                                                   %! IC
+    - \tweak color #red                                          %! SM14
+    ^ \markup { @ }                                              %! SM14
     ~
     ]
-    - \tweak color #red                                          %! SM14
-    ^ \markup { @ }                                              %! SM14
     
     \baca_repeat_pitch_class_warning                             %! SM14
     af''!16.
-    [
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
+    [
     
     c''16.
     -\staccato                                                   %! IC
@@ -1185,8 +1185,6 @@ G_ClarinetMusicVoice = {
     \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     cs!2.
-    \ppp                                                         %! HC1
-    \<                                                           %! HC1
     ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -1197,6 +1195,8 @@ G_ClarinetMusicVoice = {
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
             "[“B. cl.”]"                                         %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
         }                                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
+    \ppp                                                         %! HC1
+    \<                                                           %! HC1
     \override Staff.Clef.color = #(x11-color 'OliveDrab)         %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \set Staff.instrumentName =                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
@@ -1381,13 +1381,13 @@ G_ClarinetMusicVoice = {
         \override TupletBracket.staff-padding = #6               %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         d2
-        \f                                                       %! HC1
-        \<                                                       %! HC1
         ^ \markup {                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
             \with-color                                          %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                 #(x11-color 'blue)                               %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                 (“BassClarinet”)                                 %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
             }                                                    %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
+        \f                                                       %! HC1
+        \<                                                       %! HC1
         
         d1.
         ^ \markup {
@@ -1428,7 +1428,6 @@ G_ClarinetMusicVoice = {
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         d4.
-        \ff                                                      %! HC1
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1436,6 +1435,7 @@ G_ClarinetMusicVoice = {
                     \finger
                         1
             }
+        \ff                                                      %! HC1
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert Stem.direction                                   %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
@@ -1523,8 +1523,8 @@ G_PianoMusicVoice = {
         bf''!8
         \pp                                                      %! SM8:EXPLICIT_DYNAMIC:IC
         -\staccato                                               %! IC
-        [
         ^ \markup { leggierissimo }                              %! IC
+        [
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
         fs''!8
@@ -1578,18 +1578,18 @@ G_PianoMusicVoice = {
     \baca_repeat_pitch_class_warning                             %! SM14
     af''!8
     -\staccato                                                   %! IC
-    ~
-    ]
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
+    ~
+    ]
     \times 4/5 {
         
         % [G PianoMusicVoice measure 263 / measure 7]            %! SM4
         \baca_repeat_pitch_class_warning                         %! SM14
         af''!8
-        [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        [
         
         \baca_repeat_pitch_class_warning                         %! SM14
         af''!8
@@ -1678,17 +1678,17 @@ G_PianoMusicVoice = {
     \baca_repeat_pitch_class_warning                             %! SM14
     fs''!8
     -\staccato                                                   %! IC
-    ]
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
+    ]
     \times 4/5 {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         fs''!8
         -\staccato                                               %! IC
-        [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        [
         
         bf'!8
         -\staccato                                               %! IC
@@ -2099,8 +2099,8 @@ G_ViolinMusicVoice = {
     e''8
     \pp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
     -\staccato                                                   %! IC
-    [
     ^ \markup { "leggierissimo: off-string bowing on staccati" } %! IC
+    [
     
     g'''8
     -\staccato                                                   %! IC
@@ -2201,15 +2201,15 @@ G_ViolinMusicVoice = {
     \baca_repeat_pitch_class_warning                             %! SM14
     bf'''!4.
     -\staccato                                                   %! IC
-    ~
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
+    ~
     
     \baca_repeat_pitch_class_warning                             %! SM14
     bf'''!8
-    [
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
+    [
     
     \baca_repeat_pitch_class_warning                             %! SM14
     bf'''!8
@@ -2259,9 +2259,9 @@ G_ViolinMusicVoice = {
         \baca_repeat_pitch_class_warning                         %! SM14
         af'''!8
         -\staccato                                               %! IC
-        ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        ]
     }
     
     c'''16.
@@ -2341,10 +2341,10 @@ G_ViolinMusicVoice = {
     \baca_repeat_pitch_class_warning                             %! SM14
     bf''!16.
     -\staccato                                                   %! IC
-    ~
-    ]
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
+    ~
+    ]
     \times 2/3 {
         
         \baca_repeat_pitch_class_warning                         %! SM14
@@ -2391,9 +2391,9 @@ G_ViolinMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         af'!8
-        \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        \glissando                                               %! SC
         
         cs'!2
         ~
@@ -2524,8 +2524,8 @@ G_ViolinMusicVoice = {
         % [G ViolinMusicVoice measure 277 / measure 21]          %! SM4
         c'1.
         :32                                                      %! IC
-        \glissando                                               %! SC
         ^ \markup { "subito ordinario" }                         %! IC
+        \glissando                                               %! SC
         
         df'!1
         :32                                                      %! IC
@@ -2566,9 +2566,6 @@ G_ViolaMusicVoice = {
     \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     bf,!1..
-    \glissando                                                   %! SC
-    \ff                                                          %! HC1
-    \<                                                           %! HC1
     ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -2580,6 +2577,9 @@ G_ViolaMusicVoice = {
             [“Va.”]                                              %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
         }                                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
     ^ \markup { "subito ordinario" }                             %! IC
+    \glissando                                                   %! SC
+    \ff                                                          %! HC1
+    \<                                                           %! HC1
     \override Staff.Clef.color = #(x11-color 'OliveDrab)         %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \set Staff.instrumentName =                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
@@ -2630,10 +2630,10 @@ G_ViolaMusicVoice = {
         \override TupletBracket.staff-padding = #4               %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         g2
+        ^ \markup { "molto flautando" }                          %! IC
         \glissando                                               %! SC
         \ff                                                      %! HC1
         \>                                                       %! HC1
-        ^ \markup { "molto flautando" }                          %! IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         ftqs!\breve
@@ -2651,8 +2651,8 @@ G_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         b4
         \fff_poss                                                %! SM8:EXPLICIT_DYNAMIC:IC
-        \glissando                                               %! SC
         ^ \markup { "molto gridato ed estr. sul pont." }         %! IC
+        \glissando                                               %! SC
         
         \baca_repeat_pitch_class_warning                         %! SM14
         c2
@@ -2663,9 +2663,9 @@ G_ViolaMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         c16
-        \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        \glissando                                               %! SC
         
         e4
         ~
@@ -2776,8 +2776,8 @@ G_ViolaMusicVoice = {
         % [G ViolaMusicVoice measure 276 / measure 20]           %! SM4
         bqs,!4
         :32                                                      %! IC
-        \glissando                                               %! SC
         ^ \markup { "subito ordinario" }                         %! IC
+        \glissando                                               %! SC
         
         c1
         :32                                                      %! IC
@@ -2830,9 +2830,6 @@ G_CelloMusicVoice = {
     \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     a,,2.
-    \glissando                                                   %! SC
-    \ff                                                          %! HC1
-    \<                                                           %! HC1
     ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -2844,6 +2841,9 @@ G_CelloMusicVoice = {
             [“Vc.”]                                              %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
         }                                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
     ^ \markup { "subito ordinario" }                             %! IC
+    \glissando                                                   %! SC
+    \ff                                                          %! HC1
+    \<                                                           %! HC1
     \override Staff.Clef.color = #(x11-color 'OliveDrab)         %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \set Staff.instrumentName =                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
@@ -2899,10 +2899,10 @@ G_CelloMusicVoice = {
         \override TupletBracket.staff-padding = #4               %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         b,1.
+        ^ \markup { "molto flautando" }                          %! IC
         \glissando                                               %! SC
         \ff                                                      %! HC1
         \>                                                       %! HC1
-        ^ \markup { "molto flautando" }                          %! IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         atqs,!1
@@ -2920,8 +2920,8 @@ G_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         a,8
         \fff_poss                                                %! SM8:EXPLICIT_DYNAMIC:IC
-        \glissando                                               %! SC
         ^ \markup { "molto gridato ed estr. sul pont." }         %! IC
+        \glissando                                               %! SC
         
         bf,!4
         \glissando                                               %! SC
@@ -2980,24 +2980,24 @@ G_CelloMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         bf,!4
-        ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        ~
     }
     \times 4/7 {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         bf,!8
-        [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        [
         
         \baca_repeat_pitch_class_warning                         %! SM14
         bf,!16.
-        ]
-        \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        ]
+        \glissando                                               %! SC
     }
     \times 2/3 {
         
@@ -3023,9 +3023,9 @@ G_CelloMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         af,!2
-        \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        \glissando                                               %! SC
         
         c4.
         ~
@@ -3079,8 +3079,8 @@ G_CelloMusicVoice = {
         % [G CelloMusicVoice measure 277 / measure 21]           %! SM4
         b,,2
         :32                                                      %! IC
-        \glissando                                               %! SC
         ^ \markup { "subito ordinario" }                         %! IC
+        \glissando                                               %! SC
         
         c,\breve
         :32                                                      %! IC

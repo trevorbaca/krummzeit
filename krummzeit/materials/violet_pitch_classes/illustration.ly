@@ -49,9 +49,9 @@
             {
                 \time 1/8
                 af'8
-                \startGroup
-                \startGroup
                 ^ \markup { 0 }
+                \startGroup
+                \startGroup
                 e'8
                 ef'8
                 d'8
@@ -60,9 +60,9 @@
                 \stopGroup
                 s8
                 f'8
-                \startGroup
-                \startGroup
                 ^ \markup { 1 }
+                \startGroup
+                \startGroup
                 e'8
                 fs'8
                 af'8
@@ -71,9 +71,9 @@
                 \stopGroup
                 s8
                 a'8
-                \startGroup
-                \startGroup
                 ^ \markup { 2 }
+                \startGroup
+                \startGroup
                 fs'8
                 f'8
                 c'8
@@ -82,23 +82,23 @@
                 \stopGroup
                 s8
                 g'8
-                \startGroup
                 ^ \markup { 3 }
+                \startGroup
                 f'8
                 e'8
                 \stopGroup
                 \stopGroup
                 s8
                 fs'8
-                \startGroup
-                \startGroup
                 ^ \markup { 4 }
+                \startGroup
+                \startGroup
                 af'8
                 \stopGroup
                 s8
                 bf'8
-                \startGroup
                 ^ \markup { 5 }
+                \startGroup
                 a'8
                 fs'8
                 f'8
@@ -117,8 +117,8 @@
                 \once \override NoteHead.color = #red
                 \once \override Stem.color = #red
                 b'8
-                \startGroup
                 ^ \markup { 6 }
+                \startGroup
                 af'8
                 e'8
                 ef'8
@@ -127,9 +127,9 @@
                 \stopGroup
                 s8
                 b'8
-                \startGroup
-                \startGroup
                 ^ \markup { 7 }
+                \startGroup
+                \startGroup
                 bf'8
                 a'8
                 fs'8
@@ -139,70 +139,70 @@
                 \stopGroup
                 s8
                 d'8
-                \startGroup
-                \startGroup
                 ^ \markup { 8 }
+                \startGroup
+                \startGroup
                 b'8
                 \stopGroup
                 \stopGroup
                 s8
                 af'8
-                \stopGroup
-                \startGroup
-                \startGroup
                 ^ \markup { 9 }
+                \stopGroup
+                \startGroup
+                \startGroup
                 s8
                 e'8
-                \startGroup
                 ^ \markup { 10 }
+                \startGroup
                 ef'8
                 \stopGroup
                 \stopGroup
                 s8
                 af'8
-                \startGroup
-                \startGroup
                 ^ \markup { 11 }
+                \startGroup
+                \startGroup
                 g'8
                 \stopGroup
                 s8
                 f'8
-                \stopGroup
-                \startGroup
                 ^ \markup { 12 }
+                \stopGroup
+                \startGroup
                 s8
                 e'8
-                \startGroup
                 ^ \markup { 13 }
+                \startGroup
                 fs'8
                 \stopGroup
                 \stopGroup
                 s8
                 ef'8
-                \startGroup
-                \startGroup
                 ^ \markup { 14 }
+                \startGroup
+                \startGroup
                 d'8
                 \stopGroup
                 \stopGroup
                 s8
                 b'8
-                \stopGroup
-                \stopGroup
-                \startGroup
-                \startGroup
                 ^ \markup { 15 }
+                \stopGroup
+                \stopGroup
+                \startGroup
+                \startGroup
                 s8
                 af'8
-                \startGroup
-                \startGroup
                 ^ \markup { 16 }
+                \startGroup
+                \startGroup
                 e'8
                 \stopGroup
                 s8
                 fs'8
-                \startGroup
                 ^ \markup { 17 }
+                \startGroup
                 af'8
                 g'8
                 f'8
@@ -211,9 +211,9 @@
                 \stopGroup
                 s8
                 c'8
-                \startGroup
-                \startGroup
                 ^ \markup { 18 }
+                \startGroup
+                \startGroup
                 b'8
                 bf'8
                 a'8
@@ -222,8 +222,8 @@
                 \stopGroup
                 s8
                 e'8
-                \startGroup
                 ^ \markup { 19 }
+                \startGroup
                 fs'8
                 af'8
                 g'8
@@ -241,47 +241,47 @@
                 \once \override NoteHead.color = #blue
                 \once \override Stem.color = #blue
                 f'8
-                \startGroup
                 ^ \markup { 20 }
+                \startGroup
                 c'8
                 \stopGroup
                 \stopGroup
                 s8
                 b'8
-                \startGroup
-                \startGroup
                 ^ \markup { 21 }
+                \startGroup
+                \startGroup
                 bf'8
                 \stopGroup
                 \stopGroup
                 s8
                 a'8
-                \startGroup
-                \startGroup
                 ^ \markup { 22 }
+                \startGroup
+                \startGroup
                 fs'8
                 \stopGroup
                 \stopGroup
                 s8
                 e'8
-                \startGroup
-                \startGroup
                 ^ \markup { 23 }
+                \startGroup
+                \startGroup
                 ef'8
                 d'8
                 \stopGroup
                 s8
                 b'8
-                \startGroup
                 ^ \markup { 24 }
+                \startGroup
                 af'8
                 \stopGroup
                 \stopGroup
                 s8
                 fs'8
-                \startGroup
-                \startGroup
                 ^ \markup { 25 }
+                \startGroup
+                \startGroup
                 f'8
                 c'8
                 b'8
@@ -290,8 +290,8 @@
                 \stopGroup
                 s8
                 af'8
-                \startGroup
                 ^ \markup { 26 }
+                \startGroup
                 e'8
                 ef'8
                 d'8
@@ -299,8 +299,8 @@
                 \stopGroup
                 s8
                 f'8
-                \startGroup
                 ^ \markup { 27 }
+                \startGroup
                 e'8
                 fs'8
                 af'8
@@ -309,9 +309,9 @@
                 \stopGroup
                 s8
                 b'8
-                \startGroup
-                \startGroup
                 ^ \markup { 28 }
+                \startGroup
+                \startGroup
                 af'8
                 e'8
                 ef'8
@@ -320,24 +320,24 @@
                 \stopGroup
                 s8
                 g'8
-                \startGroup
-                \startGroup
                 ^ \markup { 29 }
+                \startGroup
+                \startGroup
                 f'8
                 e'8
                 \stopGroup
                 \stopGroup
                 s8
                 fs'8
-                \startGroup
-                \startGroup
                 ^ \markup { 30 }
+                \startGroup
+                \startGroup
                 af'8
                 \stopGroup
                 s8
                 a'8
-                \startGroup
                 ^ \markup { 31 }
+                \startGroup
                 fs'8
                 f'8
                 c'8
@@ -347,9 +347,9 @@
                 \stopGroup
                 s8
                 af'8
-                \startGroup
-                \startGroup
                 ^ \markup { 32 }
+                \startGroup
+                \startGroup
                 g'8
                 f'8
                 e'8
@@ -357,51 +357,51 @@
                 \stopGroup
                 s8
                 bf'8
-                \startGroup
                 ^ \markup { 33 }
+                \startGroup
                 a'8
                 \stopGroup
                 s8
                 fs'8
-                \startGroup
                 ^ \markup { 34 }
+                \startGroup
                 f'8
                 \stopGroup
                 \stopGroup
                 s8
                 c'8
-                \startGroup
-                \startGroup
                 ^ \markup { 35 }
+                \startGroup
+                \startGroup
                 b'8
                 \stopGroup
                 \stopGroup
                 s8
                 d'8
-                \startGroup
-                \startGroup
                 ^ \markup { 36 }
+                \startGroup
+                \startGroup
                 b'8
                 \stopGroup
                 \stopGroup
                 s8
                 af'8
-                \stopGroup
-                \startGroup
-                \startGroup
                 ^ \markup { 37 }
+                \stopGroup
+                \startGroup
+                \startGroup
                 s8
                 e'8
-                \startGroup
                 ^ \markup { 38 }
+                \startGroup
                 ef'8
                 \stopGroup
                 \stopGroup
                 s8
                 b'8
-                \startGroup
-                \startGroup
                 ^ \markup { 39 }
+                \startGroup
+                \startGroup
                 bf'8
                 a'8
                 fs'8
@@ -410,8 +410,8 @@
                 \stopGroup
                 s8
                 ef'8
-                \startGroup
                 ^ \markup { 40 }
+                \startGroup
                 d'8
                 b'8
                 af'8
@@ -419,8 +419,8 @@
                 \stopGroup
                 s8
                 fs'8
-                \startGroup
                 ^ \markup { 41 }
+                \startGroup
                 af'8
                 g'8
                 f'8
@@ -439,9 +439,9 @@
                 \once \override NoteHead.color = #red
                 \once \override Stem.color = #red
                 e'8
-                \startGroup
-                \startGroup
                 ^ \markup { 42 }
+                \startGroup
+                \startGroup
                 ef'8
                 d'8
                 b'8
@@ -450,42 +450,42 @@
                 \stopGroup
                 s8
                 e'8
-                \startGroup
-                \startGroup
                 ^ \markup { 43 }
+                \startGroup
+                \startGroup
                 fs'8
                 \stopGroup
                 \stopGroup
                 s8
                 af'8
-                \stopGroup
-                \startGroup
-                \startGroup
                 ^ \markup { 44 }
+                \stopGroup
+                \startGroup
+                \startGroup
                 s8
                 g'8
-                \startGroup
                 ^ \markup { 45 }
+                \startGroup
                 f'8
                 \stopGroup
                 \stopGroup
                 s8
                 c'8
-                \startGroup
-                \startGroup
                 ^ \markup { 46 }
+                \startGroup
+                \startGroup
                 b'8
                 \stopGroup
                 s8
                 bf'8
-                \startGroup
                 ^ \markup { 47 }
+                \startGroup
                 a'8
                 \stopGroup
                 s8
                 fs'8
-                \startGroup
                 ^ \markup { 48 }
+                \startGroup
                 \once \override Accidental.color = #blue
                 \once \override Beam.color = #blue
                 \once \override Dots.color = #blue
@@ -501,9 +501,9 @@
                 \once \override NoteHead.color = #blue
                 \once \override Stem.color = #blue
                 f'8
-                \startGroup
-                \startGroup
                 ^ \markup { 49 }
+                \startGroup
+                \startGroup
                 e'8
                 fs'8
                 af'8
@@ -512,9 +512,9 @@
                 \stopGroup
                 s8
                 f'8
-                \startGroup
-                \startGroup
                 ^ \markup { 50 }
+                \startGroup
+                \startGroup
                 c'8
                 b'8
                 bf'8
@@ -524,9 +524,9 @@
                 \stopGroup
                 s8
                 af'8
-                \startGroup
-                \startGroup
                 ^ \markup { 51 }
+                \startGroup
+                \startGroup
                 e'8
                 ef'8
                 d'8
@@ -534,8 +534,8 @@
                 \stopGroup
                 s8
                 fs'8
-                \startGroup
                 ^ \markup { 52 }
+                \startGroup
                 f'8
                 c'8
                 b'8
@@ -545,22 +545,22 @@
                 \stopGroup
                 s8
                 b'8
-                \startGroup
-                \startGroup
                 ^ \markup { 53 }
+                \startGroup
+                \startGroup
                 af'8
                 e'8
                 \stopGroup
                 s8
                 ef'8
-                \startGroup
                 ^ \markup { 54 }
+                \startGroup
                 d'8
                 \stopGroup
                 s8
                 g'8
-                \startGroup
                 ^ \markup { 55 }
+                \startGroup
                 f'8
                 e'8
                 fs'8
@@ -569,9 +569,9 @@
                 \stopGroup
                 s8
                 d'8
-                \startGroup
-                \startGroup
                 ^ \markup { 56 }
+                \startGroup
+                \startGroup
                 b'8
                 af'8
                 e'8
@@ -580,9 +580,9 @@
                 \stopGroup
                 s8
                 af'8
-                \startGroup
-                \startGroup
                 ^ \markup { 57 }
+                \startGroup
+                \startGroup
                 g'8
                 f'8
                 e'8
@@ -591,9 +591,9 @@
                 \stopGroup
                 s8
                 a'8
-                \startGroup
-                \startGroup
                 ^ \markup { 58 }
+                \startGroup
+                \startGroup
                 fs'8
                 f'8
                 c'8
@@ -602,23 +602,23 @@
                 \stopGroup
                 s8
                 fs'8
-                \startGroup
                 ^ \markup { 59 }
+                \startGroup
                 af'8
                 g'8
                 \stopGroup
                 \stopGroup
                 s8
                 f'8
-                \startGroup
-                \startGroup
                 ^ \markup { 60 }
+                \startGroup
+                \startGroup
                 e'8
                 \stopGroup
                 s8
                 bf'8
-                \startGroup
                 ^ \markup { 61 }
+                \startGroup
                 a'8
                 fs'8
                 f'8
@@ -627,8 +627,8 @@
                 \stopGroup
                 s8
                 ef'8
-                \startGroup
                 ^ \markup { 62 }
+                \startGroup
                 d'8
                 b'8
                 af'8
@@ -637,50 +637,50 @@
                 \stopGroup
                 s8
                 b'8
-                \startGroup
-                \startGroup
                 ^ \markup { 63 }
+                \startGroup
+                \startGroup
                 bf'8
                 \stopGroup
                 \stopGroup
                 s8
                 a'8
-                \startGroup
-                \startGroup
                 ^ \markup { 64 }
+                \startGroup
+                \startGroup
                 fs'8
                 \stopGroup
                 \stopGroup
                 s8
                 f'8
-                \startGroup
-                \startGroup
                 ^ \markup { 65 }
+                \startGroup
+                \startGroup
                 c'8
                 \stopGroup
                 s8
                 e'8
-                \startGroup
                 ^ \markup { 66 }
+                \startGroup
                 ef'8
                 \stopGroup
                 \stopGroup
                 s8
                 d'8
-                \stopGroup
-                \startGroup
-                \startGroup
                 ^ \markup { 67 }
+                \stopGroup
+                \startGroup
+                \startGroup
                 s8
                 b'8
-                \startGroup
                 ^ \markup { 68 }
+                \startGroup
                 af'8
                 \stopGroup
                 s8
                 e'8
-                \startGroup
                 ^ \markup { 69 }
+                \startGroup
                 fs'8
                 af'8
                 g'8
@@ -689,9 +689,9 @@
                 \stopGroup
                 s8
                 af'8
-                \startGroup
-                \startGroup
                 ^ \markup { 70 }
+                \startGroup
+                \startGroup
                 e'8
                 ef'8
                 d'8
@@ -700,9 +700,9 @@
                 \stopGroup
                 s8
                 f'8
-                \startGroup
-                \startGroup
                 ^ \markup { 71 }
+                \startGroup
+                \startGroup
                 e'8
                 fs'8
                 af'8
@@ -711,9 +711,9 @@
                 \stopGroup
                 s8
                 c'8
-                \startGroup
-                \startGroup
                 ^ \markup { 72 }
+                \startGroup
+                \startGroup
                 b'8
                 bf'8
                 a'8
@@ -722,66 +722,66 @@
                 \stopGroup
                 s8
                 g'8
-                \startGroup
                 ^ \markup { 73 }
+                \startGroup
                 f'8
                 \stopGroup
                 \stopGroup
                 s8
                 e'8
-                \stopGroup
-                \startGroup
-                \startGroup
                 ^ \markup { 74 }
+                \stopGroup
+                \startGroup
+                \startGroup
                 s8
                 fs'8
-                \startGroup
                 ^ \markup { 75 }
+                \startGroup
                 af'8
                 \stopGroup
                 s8
                 f'8
-                \startGroup
                 ^ \markup { 76 }
+                \startGroup
                 c'8
                 \stopGroup
                 \stopGroup
                 s8
                 b'8
-                \startGroup
-                \startGroup
                 ^ \markup { 77 }
+                \startGroup
+                \startGroup
                 bf'8
                 \stopGroup
                 \stopGroup
                 s8
                 a'8
-                \startGroup
-                \startGroup
                 ^ \markup { 78 }
+                \startGroup
+                \startGroup
                 fs'8
                 \stopGroup
                 \stopGroup
                 s8
                 b'8
-                \startGroup
-                \startGroup
                 ^ \markup { 79 }
+                \startGroup
+                \startGroup
                 af'8
                 e'8
                 \stopGroup
                 s8
                 ef'8
-                \startGroup
                 ^ \markup { 80 }
+                \startGroup
                 d'8
                 \stopGroup
                 \stopGroup
                 s8
                 fs'8
-                \startGroup
-                \startGroup
                 ^ \markup { 81 }
+                \startGroup
+                \startGroup
                 f'8
                 c'8
                 b'8
@@ -790,8 +790,8 @@
                 \stopGroup
                 s8
                 d'8
-                \startGroup
                 ^ \markup { 82 }
+                \startGroup
                 b'8
                 af'8
                 e'8
@@ -799,8 +799,8 @@
                 \stopGroup
                 s8
                 af'8
-                \startGroup
                 ^ \markup { 83 }
+                \startGroup
                 g'8
                 f'8
                 e'8
@@ -809,9 +809,9 @@
                 \stopGroup
                 s8
                 ef'8
-                \startGroup
-                \startGroup
                 ^ \markup { 84 }
+                \startGroup
+                \startGroup
                 d'8
                 b'8
                 af'8
@@ -820,24 +820,24 @@
                 \stopGroup
                 s8
                 fs'8
-                \startGroup
-                \startGroup
                 ^ \markup { 85 }
+                \startGroup
+                \startGroup
                 af'8
                 g'8
                 \stopGroup
                 \stopGroup
                 s8
                 f'8
-                \startGroup
-                \startGroup
                 ^ \markup { 86 }
+                \startGroup
+                \startGroup
                 e'8
                 \stopGroup
                 s8
                 a'8
-                \startGroup
                 ^ \markup { 87 }
+                \startGroup
                 fs'8
                 f'8
                 c'8
@@ -847,9 +847,9 @@
                 \stopGroup
                 s8
                 e'8
-                \startGroup
-                \startGroup
                 ^ \markup { 88 }
+                \startGroup
+                \startGroup
                 fs'8
                 af'8
                 g'8
@@ -857,30 +857,30 @@
                 \stopGroup
                 s8
                 bf'8
-                \startGroup
                 ^ \markup { 89 }
+                \startGroup
                 a'8
                 \stopGroup
                 s8
                 fs'8
-                \startGroup
                 ^ \markup { 90 }
+                \startGroup
                 f'8
                 \stopGroup
                 \stopGroup
                 s8
                 c'8
-                \startGroup
-                \startGroup
                 ^ \markup { 91 }
+                \startGroup
+                \startGroup
                 b'8
                 \stopGroup
                 \stopGroup
                 s8
                 e'8
-                \startGroup
-                \startGroup
                 ^ \markup { 92 }
+                \startGroup
+                \startGroup
                 ef'8
                 d'8
                 b'8
@@ -889,9 +889,9 @@
                 \stopGroup
                 s8
                 b'8
-                \startGroup
-                \startGroup
                 ^ \markup { 93 }
+                \startGroup
+                \startGroup
                 bf'8
                 a'8
                 fs'8
@@ -900,8 +900,8 @@
                 \stopGroup
                 s8
                 af'8
-                \startGroup
                 ^ \markup { 94 }
+                \startGroup
                 e'8
                 ef'8
                 d'8
@@ -910,68 +910,68 @@
                 \stopGroup
                 s8
                 f'8
-                \startGroup
-                \startGroup
                 ^ \markup { 95 }
+                \startGroup
+                \startGroup
                 e'8
                 \stopGroup
                 s8
                 fs'8
-                \stopGroup
-                \startGroup
                 ^ \markup { 96 }
+                \stopGroup
+                \startGroup
                 s8
                 af'8
-                \startGroup
                 ^ \markup { 97 }
+                \startGroup
                 g'8
                 \stopGroup
                 \stopGroup
                 s8
                 b'8
-                \startGroup
-                \startGroup
                 ^ \markup { 98 }
+                \startGroup
+                \startGroup
                 af'8
                 \stopGroup
                 \stopGroup
                 s8
                 e'8
-                \stopGroup
-                \stopGroup
-                \startGroup
-                \startGroup
                 ^ \markup { 99 }
+                \stopGroup
+                \stopGroup
+                \startGroup
+                \startGroup
                 s8
                 ef'8
-                \startGroup
-                \startGroup
                 ^ \markup { 100 }
+                \startGroup
+                \startGroup
                 d'8
                 \stopGroup
                 s8
                 g'8
-                \startGroup
                 ^ \markup { 101 }
+                \startGroup
                 f'8
                 \stopGroup
                 \stopGroup
                 s8
                 e'8
-                \stopGroup
-                \startGroup
-                \startGroup
                 ^ \markup { 102 }
+                \stopGroup
+                \startGroup
+                \startGroup
                 s8
                 fs'8
-                \startGroup
                 ^ \markup { 103 }
+                \startGroup
                 af'8
                 \stopGroup
                 s8
                 c'8
-                \startGroup
                 ^ \markup { 104 }
+                \startGroup
                 b'8
                 bf'8
                 a'8
@@ -981,9 +981,9 @@
                 \stopGroup
                 s8
                 af'8
-                \startGroup
-                \startGroup
                 ^ \markup { 105 }
+                \startGroup
+                \startGroup
                 g'8
                 f'8
                 e'8
@@ -992,9 +992,9 @@
                 \stopGroup
                 s8
                 f'8
-                \startGroup
-                \startGroup
                 ^ \markup { 106 }
+                \startGroup
+                \startGroup
                 c'8
                 b'8
                 bf'8
@@ -1004,9 +1004,9 @@
                 \stopGroup
                 s8
                 d'8
-                \startGroup
-                \startGroup
                 ^ \markup { 107 }
+                \startGroup
+                \startGroup
                 b'8
                 af'8
                 e'8
@@ -1014,8 +1014,8 @@
                 \stopGroup
                 s8
                 fs'8
-                \startGroup
                 ^ \markup { 108 }
+                \startGroup
                 f'8
                 c'8
                 b'8
@@ -1025,22 +1025,22 @@
                 \stopGroup
                 s8
                 ef'8
-                \startGroup
-                \startGroup
                 ^ \markup { 109 }
+                \startGroup
+                \startGroup
                 d'8
                 b'8
                 \stopGroup
                 s8
                 af'8
-                \startGroup
                 ^ \markup { 110 }
+                \startGroup
                 e'8
                 \stopGroup
                 s8
                 fs'8
-                \startGroup
                 ^ \markup { 111 }
+                \startGroup
                 af'8
                 g'8
                 f'8
@@ -1059,9 +1059,9 @@
                 \once \override NoteHead.color = #red
                 \once \override Stem.color = #red
                 e'8
-                \startGroup
-                \startGroup
                 ^ \markup { 112 }
+                \startGroup
+                \startGroup
                 ef'8
                 d'8
                 b'8
@@ -1070,9 +1070,9 @@
                 \stopGroup
                 s8
                 e'8
-                \startGroup
-                \startGroup
                 ^ \markup { 113 }
+                \startGroup
+                \startGroup
                 fs'8
                 af'8
                 g'8
@@ -1081,9 +1081,9 @@
                 \stopGroup
                 s8
                 a'8
-                \startGroup
-                \startGroup
                 ^ \markup { 114 }
+                \startGroup
+                \startGroup
                 fs'8
                 f'8
                 c'8
@@ -1092,23 +1092,23 @@
                 \stopGroup
                 s8
                 f'8
-                \startGroup
                 ^ \markup { 115 }
+                \startGroup
                 e'8
                 fs'8
                 \stopGroup
                 \stopGroup
                 s8
                 af'8
-                \startGroup
-                \startGroup
                 ^ \markup { 116 }
+                \startGroup
+                \startGroup
                 g'8
                 \stopGroup
                 s8
                 bf'8
-                \startGroup
                 ^ \markup { 117 }
+                \startGroup
                 a'8
                 fs'8
                 f'8
@@ -1117,23 +1117,23 @@
                 \stopGroup
                 s8
                 af'8
-                \startGroup
                 ^ \markup { 118 }
+                \startGroup
                 e'8
                 \stopGroup
                 \stopGroup
                 s8
                 ef'8
-                \stopGroup
-                \stopGroup
-                \startGroup
-                \startGroup
                 ^ \markup { 119 }
+                \stopGroup
+                \stopGroup
+                \startGroup
+                \startGroup
                 s8
                 d'8
-                \startGroup
-                \startGroup
                 ^ \markup { 120 }
+                \startGroup
+                \startGroup
                 \once \override Accidental.color = #blue
                 \once \override Beam.color = #blue
                 \once \override Dots.color = #blue
@@ -1149,29 +1149,29 @@
                 \once \override NoteHead.color = #blue
                 \once \override Stem.color = #blue
                 b'8
-                \startGroup
-                \startGroup
                 ^ \markup { 121 }
+                \startGroup
+                \startGroup
                 bf'8
                 \stopGroup
                 s8
                 a'8
-                \startGroup
                 ^ \markup { 122 }
+                \startGroup
                 fs'8
                 \stopGroup
                 \stopGroup
                 s8
                 f'8
-                \startGroup
-                \startGroup
                 ^ \markup { 123 }
+                \startGroup
+                \startGroup
                 c'8
                 \stopGroup
                 s8
                 b'8
-                \startGroup
                 ^ \markup { 124 }
+                \startGroup
                 af'8
                 e'8
                 ef'8
@@ -1179,8 +1179,8 @@
                 \stopGroup
                 s8
                 g'8
-                \startGroup
                 ^ \markup { 125 }
+                \startGroup
                 f'8
                 e'8
                 fs'8
@@ -1189,9 +1189,9 @@
                 \stopGroup
                 s8
                 d'8
-                \startGroup
-                \startGroup
                 ^ \markup { 126 }
+                \startGroup
+                \startGroup
                 b'8
                 af'8
                 e'8
@@ -1200,9 +1200,9 @@
                 \stopGroup
                 s8
                 af'8
-                \startGroup
-                \startGroup
                 ^ \markup { 127 }
+                \startGroup
+                \startGroup
                 g'8
                 f'8
                 e'8
@@ -1211,50 +1211,50 @@
                 \stopGroup
                 s8
                 c'8
-                \startGroup
-                \startGroup
                 ^ \markup { 128 }
+                \startGroup
+                \startGroup
                 b'8
                 \stopGroup
                 s8
                 bf'8
-                \startGroup
                 ^ \markup { 129 }
+                \startGroup
                 a'8
                 \stopGroup
                 \stopGroup
                 s8
                 fs'8
-                \startGroup
-                \startGroup
                 ^ \markup { 130 }
+                \startGroup
+                \startGroup
                 f'8
                 \stopGroup
                 s8
                 fs'8
-                \startGroup
                 ^ \markup { 131 }
+                \startGroup
                 af'8
                 \stopGroup
                 s8
                 g'8
-                \stopGroup
-                \stopGroup
-                \startGroup
                 ^ \markup { 132 }
+                \stopGroup
+                \stopGroup
+                \startGroup
                 s8
                 f'8
-                \startGroup
-                \startGroup
                 ^ \markup { 133 }
+                \startGroup
+                \startGroup
                 e'8
                 \stopGroup
                 \stopGroup
                 s8
                 f'8
-                \startGroup
-                \startGroup
                 ^ \markup { 134 }
+                \startGroup
+                \startGroup
                 c'8
                 b'8
                 bf'8
@@ -1264,24 +1264,24 @@
                 \stopGroup
                 s8
                 ef'8
-                \startGroup
-                \startGroup
                 ^ \markup { 135 }
+                \startGroup
+                \startGroup
                 d'8
                 b'8
                 \stopGroup
                 s8
                 af'8
-                \startGroup
                 ^ \markup { 136 }
+                \startGroup
                 e'8
                 \stopGroup
                 \stopGroup
                 s8
                 fs'8
-                \startGroup
-                \startGroup
                 ^ \markup { 137 }
+                \startGroup
+                \startGroup
                 f'8
                 c'8
                 b'8
@@ -1290,8 +1290,8 @@
                 \stopGroup
                 s8
                 e'8
-                \startGroup
                 ^ \markup { 138 }
+                \startGroup
                 ef'8
                 d'8
                 b'8
@@ -1299,8 +1299,8 @@
                 \stopGroup
                 s8
                 e'8
-                \startGroup
                 ^ \markup { 139 }
+                \startGroup
                 fs'8
                 af'8
                 g'8

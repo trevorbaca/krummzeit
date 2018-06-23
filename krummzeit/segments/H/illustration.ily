@@ -6,6 +6,26 @@ H_GlobalSkips = {
     \bar ""                                                              %! SM2:+SEGMENT:EMPTY_START_BAR
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/8
+%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (281)                                                        %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
+%@%         <0>                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((1))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
+%@%         [H.1]                                                        %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
+%@%         [13'04'']                                                    %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
 %@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
 %@%     \fontsize                                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
@@ -59,26 +79,6 @@ H_GlobalSkips = {
     - \tweak bound-details.right.stencil-align-dir-y #center             %! SM29:METRONOME_MARK_SPANNER
     - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
     \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (281)                                                        %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <0>                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((1))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [H.1]                                                        %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [13'04'']                                                    %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     
     % [H GlobalSkips measure 282 / measure 2]                            %! SM4
     \time 6/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -178,6 +178,26 @@ H_GlobalSkips = {
     \time 11/8                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 11/8
+%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (286)                                                        %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
+%@%         <5>                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((6))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
+%@%         [H.5]                                                        %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
+%@%         [13'21'']                                                    %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
 %@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
@@ -228,26 +248,6 @@ H_GlobalSkips = {
     - \tweak bound-details.right.stencil-align-dir-y #center             %! SM29:METRONOME_MARK_SPANNER
     - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
     \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (286)                                                        %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <5>                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((6))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [H.5]                                                        %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [13'21'']                                                    %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     
     % [H GlobalSkips measure 287 / measure 7]                            %! SM4
     \time 5/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -328,7 +328,6 @@ H_GlobalSkips = {
     \time 7/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/4
-    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
 %@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
 %@%         (290)                                                        %! SM31:MEASURE_NUMBER_MARKUP
@@ -345,6 +344,7 @@ H_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
 %@%         [13'27'']                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
+    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     \override Score.BarLine.transparent = ##f                            %! SM5
     \bar "|"                                                             %! SM5
     
@@ -649,7 +649,6 @@ H_PianoMusicVoice = {
         \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
         \once \override Staff.InstrumentName.color = #(x11-color 'blue) %! SM6:EXPLICIT_MARGIN_MARKUP_COLOR:IC:-PARTS
         <d' f' a' c''>8
-        [
         ^ \markup {                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
             \with-color                                          %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                 #(x11-color 'blue)                               %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
@@ -668,6 +667,7 @@ H_PianoMusicVoice = {
                         \flat
                     }
             }
+        [
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! SM6:REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR:IC:-PARTS
         \set Staff.instrumentName =                              %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
@@ -708,7 +708,6 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
-        ]
         ^ \markup {
             \center-align
                 \concat
@@ -717,6 +716,7 @@ H_PianoMusicVoice = {
                         \flat
                     }
             }
+        ]
     }
     \times 2/3 {
         
@@ -728,15 +728,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -763,15 +763,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -783,15 +783,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -818,15 +818,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -838,15 +838,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -873,15 +873,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -893,15 +893,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -928,15 +928,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -948,15 +948,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -983,15 +983,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -1003,15 +1003,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1038,15 +1038,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -1058,15 +1058,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1093,15 +1093,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -1113,15 +1113,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1148,15 +1148,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -1168,15 +1168,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1203,15 +1203,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -1223,15 +1223,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1258,15 +1258,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -1278,15 +1278,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1313,15 +1313,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -1333,15 +1333,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1368,15 +1368,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -1388,15 +1388,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1423,15 +1423,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -1443,15 +1443,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1478,15 +1478,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -1498,15 +1498,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1533,15 +1533,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -1553,15 +1553,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1588,15 +1588,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -1608,15 +1608,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1643,15 +1643,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -1663,15 +1663,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1698,15 +1698,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -1718,15 +1718,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1753,15 +1753,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -1773,15 +1773,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1808,15 +1808,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -1828,15 +1828,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1863,15 +1863,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -1883,15 +1883,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1918,15 +1918,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -1938,15 +1938,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1973,15 +1973,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -1993,15 +1993,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2028,15 +2028,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -2048,15 +2048,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2083,15 +2083,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -2103,15 +2103,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2138,15 +2138,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -2158,15 +2158,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2193,15 +2193,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -2213,15 +2213,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2248,15 +2248,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -2268,15 +2268,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2303,15 +2303,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -2323,15 +2323,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2358,15 +2358,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     \times 2/3 {
         
@@ -2378,15 +2378,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         [
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
         
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2413,15 +2413,15 @@ H_PianoMusicVoice = {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
         <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
         ]
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
     }
     
     % [H PianoMusicVoice measure 287 / measure 7]                %! SM4
@@ -2701,9 +2701,9 @@ H_ViolinMusicVoice = {
     
     \baca_repeat_pitch_class_warning                             %! SM14
     af'!4
-    \glissando                                                   %! SC
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
+    \glissando                                                   %! SC
     
     cs'!1
     ~
@@ -2871,9 +2871,9 @@ H_ViolaMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         c8
-        \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        \glissando                                               %! SC
         
         e2
         ~

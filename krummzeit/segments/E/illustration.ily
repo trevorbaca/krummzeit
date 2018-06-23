@@ -6,6 +6,26 @@ E_GlobalSkips = {
     \bar ""                                                              %! SM2:+SEGMENT:EMPTY_START_BAR
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
+%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (200)                                                        %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
+%@%         <0>                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((1))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
+%@%         [E.1]                                                        %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
+%@%         [9'26'']                                                     %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
 %@% - \tweak bound-details.left.text \markup {                           %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
 %@%     \fontsize                                                        %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
@@ -55,26 +75,6 @@ E_GlobalSkips = {
     - \tweak bound-details.right.stencil-align-dir-y #center             %! SM29:METRONOME_MARK_SPANNER
     - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
     \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (200)                                                        %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <0>                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((1))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [E.1]                                                        %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [9'26'']                                                     %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     
     % [E GlobalSkips measure 201 / measure 2]                            %! SM4
     \time 4/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -225,6 +225,26 @@ E_GlobalSkips = {
     \time 5/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/8
+%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (208)                                                        %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
+%@%         <8>                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((9))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
+%@%         [E.2]                                                        %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
+%@%         [9'43'']                                                     %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
 %@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
@@ -275,26 +295,6 @@ E_GlobalSkips = {
     - \tweak bound-details.right.stencil-align-dir-y #center             %! SM29:METRONOME_MARK_SPANNER
     - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
     \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (208)                                                        %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <8>                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((9))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [E.2]                                                        %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [9'43'']                                                     %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     
     % [E GlobalSkips measure 209 / measure 10]                           %! SM4
     s1 * 5/8
@@ -319,6 +319,26 @@ E_GlobalSkips = {
     \time 3/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
+%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (210)                                                        %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
+%@%         <10>                                                         %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((11))                                                       %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
+%@%         [E.3]                                                        %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
+%@%         [9'46'']                                                     %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
 %@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
@@ -369,26 +389,6 @@ E_GlobalSkips = {
     - \tweak bound-details.right.stencil-align-dir-y #center             %! SM29:METRONOME_MARK_SPANNER
     - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
     \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (210)                                                        %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <10>                                                         %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((11))                                                       %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [E.3]                                                        %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [9'46'']                                                     %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     
     % [E GlobalSkips measure 211 / measure 12]                           %! SM4
     \time 4/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -467,6 +467,26 @@ E_GlobalSkips = {
     \time 3/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
+%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (214)                                                        %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
+%@%         <14>                                                         %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((15))                                                       %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
+%@%         [E.7]                                                        %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
+%@%         [10'00'']                                                    %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
 %@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
@@ -517,26 +537,6 @@ E_GlobalSkips = {
     - \tweak bound-details.right.stencil-align-dir-y #center             %! SM29:METRONOME_MARK_SPANNER
     - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
     \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (214)                                                        %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <14>                                                         %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((15))                                                       %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [E.7]                                                        %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [10'00'']                                                    %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     
     % [E GlobalSkips measure 215 / measure 16]                           %! SM4
     s1 * 3/4
@@ -561,6 +561,26 @@ E_GlobalSkips = {
     \time 4/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1
+%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (216)                                                        %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
+%@%         <16>                                                         %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((17))                                                       %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
+%@%         [E.8]                                                        %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
+%@%         [10'03'']                                                    %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
 %@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
@@ -611,31 +631,31 @@ E_GlobalSkips = {
     - \tweak bound-details.right.stencil-align-dir-y #center             %! SM29:METRONOME_MARK_SPANNER
     - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
     \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (216)                                                        %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <16>                                                         %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((17))                                                       %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [E.8]                                                        %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [10'03'']                                                    %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     
     % [E GlobalSkips measure 217 / measure 18]                           %! SM4
     \time 11/8                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 11/8
+%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (217)                                                        %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
+%@%         <17>                                                         %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((18))                                                       %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
+%@%         [E.9]                                                        %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
+%@%         [10'06'']                                                    %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
 %@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
@@ -686,26 +706,6 @@ E_GlobalSkips = {
     - \tweak bound-details.right.stencil-align-dir-y #center             %! SM29:METRONOME_MARK_SPANNER
     - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
     \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (217)                                                        %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <17>                                                         %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((18))                                                       %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [E.9]                                                        %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [10'06'']                                                    %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     
     % [E GlobalSkips measure 218 / measure 19]                           %! SM4
     \time 3/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -732,6 +732,26 @@ E_GlobalSkips = {
     \time 5/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/8
+%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (219)                                                        %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
+%@%         <19>                                                         %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((20))                                                       %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
+%@%         [E.10]                                                       %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
+%@%         [10'10'']                                                    %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
 %@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
@@ -782,26 +802,6 @@ E_GlobalSkips = {
     - \tweak bound-details.right.stencil-align-dir-y #center             %! SM29:METRONOME_MARK_SPANNER
     - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
     \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (219)                                                        %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <19>                                                         %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((20))                                                       %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [E.10]                                                       %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [10'10'']                                                    %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     
     % [E GlobalSkips measure 220 / measure 21]                           %! SM4
     \time 9/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -901,6 +901,26 @@ E_GlobalSkips = {
     \time 3/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
+%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (224)                                                        %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
+%@%         <24>                                                         %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((25))                                                       %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
+%@%         [E.14]                                                       %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
+%@%         [10'23'']                                                    %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
 %@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
@@ -951,26 +971,6 @@ E_GlobalSkips = {
     - \tweak bound-details.right.stencil-align-dir-y #center             %! SM29:METRONOME_MARK_SPANNER
     - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
     \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (224)                                                        %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <24>                                                         %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((25))                                                       %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [E.14]                                                       %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [10'23'']                                                    %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     
     % [E GlobalSkips measure 225 / measure 26]                           %! SM4
     s1 * 3/4
@@ -997,6 +997,26 @@ E_GlobalSkips = {
     
     % [E GlobalSkips measure 226 / measure 27]                           %! SM4
     s1 * 3/4
+%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (226)                                                        %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
+%@%         <26>                                                         %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((27))                                                       %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
+%@%         [E.16]                                                       %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
+%@%         [10'26'']                                                    %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
 %@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
@@ -1047,26 +1067,6 @@ E_GlobalSkips = {
     - \tweak bound-details.right.stencil-align-dir-y #center             %! SM29:METRONOME_MARK_SPANNER
     - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
     \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (226)                                                        %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <26>                                                         %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((27))                                                       %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [E.16]                                                       %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [10'26'']                                                    %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     
     % [E GlobalSkips measure 227 / measure 28]                           %! SM4
     s1 * 3/4
@@ -1195,6 +1195,26 @@ E_GlobalSkips = {
     \time 3/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
+%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (232)                                                        %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
+%@%         <32>                                                         %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((33))                                                       %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
+%@%         [E.22]                                                       %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
+%@%         [10'57'']                                                    %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
 %@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
@@ -1245,26 +1265,6 @@ E_GlobalSkips = {
     - \tweak bound-details.right.stencil-align-dir-y #center             %! SM29:METRONOME_MARK_SPANNER
     - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
     \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (232)                                                        %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <32>                                                         %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((33))                                                       %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [E.22]                                                       %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [10'57'']                                                    %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     
     % [E GlobalSkips measure 233 / measure 34]                           %! SM4
     \time 5/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -1291,7 +1291,6 @@ E_GlobalSkips = {
     \time 9/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 9/8
-    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
 %@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
 %@%         (234)                                                        %! SM31:MEASURE_NUMBER_MARKUP
@@ -1312,6 +1311,7 @@ E_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
 %@%         [11'02'']                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
+    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     \override Score.BarLine.transparent = ##f                            %! SM5
     \bar "|"                                                             %! SM5
     
@@ -1346,7 +1346,6 @@ E_OboeMusicVoice = {
         \baca_repeat_pitch_class_warning                         %! SM14
         bf''!16
         \p                                                       %! SM8:EXPLICIT_DYNAMIC:IC
-        [
         ^ \markup {                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             \with-color                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                 #(x11-color 'green4)                             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -1359,6 +1358,7 @@ E_OboeMusicVoice = {
             }                                                    %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        [
         \override Staff.Clef.color = #(x11-color 'OliveDrab)     %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         \override Staff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
         \set Staff.instrumentName =                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
@@ -1417,7 +1417,6 @@ E_OboeMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         a''8.
-        ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -1427,12 +1426,12 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        ]
     }
     \times 8/9 {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         a'16.
-        [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -1442,6 +1441,7 @@ E_OboeMusicVoice = {
                     \finger
                         2
             }
+        [
         
         \baca_repeat_pitch_class_warning                         %! SM14
         a''8
@@ -1458,7 +1458,6 @@ E_OboeMusicVoice = {
         fs''!32
         
         f'''32
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1466,13 +1465,13 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        ]
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
         
         % [E OboeMusicVoice measure 201 / measure 2]             %! SM4
         a''8
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1480,6 +1479,7 @@ E_OboeMusicVoice = {
                     \finger
                         2
             }
+        [
         
         b''8
         ^ \markup {
@@ -1497,7 +1497,6 @@ E_OboeMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         bf''!8
-        ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -1507,6 +1506,7 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        ]
         
         \baca_repeat_pitch_class_warning                         %! SM14
         bf''!4.
@@ -1523,7 +1523,6 @@ E_OboeMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         bf''!4.
-        \stopTrillSpan                                           %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -1533,6 +1532,7 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        \stopTrillSpan                                           %! SC
         \startTrillSpan                                          %! SC
     }
     
@@ -1556,8 +1556,6 @@ E_OboeMusicVoice = {
         \startTrillSpan                                          %! SC
         
         f'''16
-        \stopTrillSpan                                           %! SC
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1565,10 +1563,11 @@ E_OboeMusicVoice = {
                     \finger
                         2
             }
+        \stopTrillSpan                                           %! SC
+        [
         
         \baca_repeat_pitch_class_warning                         %! SM14
         e'''16
-        ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -1578,14 +1577,15 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        ]
     }
     \times 4/5 {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         e'''16
-        [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        [
         
         \baca_repeat_pitch_class_warning                         %! SM14
         e'''16
@@ -1630,7 +1630,6 @@ E_OboeMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         ef''!8.
-        ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -1640,6 +1639,7 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        ]
     }
     \times 2/3 {
         
@@ -1658,7 +1658,6 @@ E_OboeMusicVoice = {
         \startTrillSpan                                          %! SC
         
         bf'!2
-        \stopTrillSpan                                           %! SC
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1666,6 +1665,7 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        \stopTrillSpan                                           %! SC
         \startTrillSpan                                          %! SC
         
         a''8
@@ -1673,7 +1673,6 @@ E_OboeMusicVoice = {
         [
         
         fs''!8
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1681,12 +1680,12 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        ]
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
         
         g''16
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1694,6 +1693,7 @@ E_OboeMusicVoice = {
                     \finger
                         2
             }
+        [
         
         \baca_repeat_pitch_class_warning                         %! SM14
         a''16
@@ -1737,7 +1737,6 @@ E_OboeMusicVoice = {
             }
         
         b''8.
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1745,6 +1744,7 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        ]
     }
     
     % [E OboeMusicVoice measure 204 / measure 5]                 %! SM4
@@ -1780,7 +1780,6 @@ E_OboeMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         cs''!32
-        ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -1790,14 +1789,15 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        ]
     }
     \times 4/5 {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         cs''!64
-        [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        [
         
         \baca_repeat_pitch_class_warning                         %! SM14
         cs''!64
@@ -1842,7 +1842,6 @@ E_OboeMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         c'''32.
-        ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -1852,11 +1851,11 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        ]
     }
     \times 8/9 {
         
         b''16.
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1864,6 +1863,7 @@ E_OboeMusicVoice = {
                     \finger
                         2
             }
+        [
         
         g''8
         ^ \markup {
@@ -1877,7 +1877,6 @@ E_OboeMusicVoice = {
         e'''32
         
         af''!32
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1885,6 +1884,7 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        ]
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -1892,7 +1892,6 @@ E_OboeMusicVoice = {
         % [E OboeMusicVoice measure 206 / measure 7]             %! SM4
         \baca_repeat_pitch_class_warning                         %! SM14
         g''8
-        [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -1902,6 +1901,7 @@ E_OboeMusicVoice = {
                     \finger
                         2
             }
+        [
         
         \baca_repeat_pitch_class_warning                         %! SM14
         g''8
@@ -1922,7 +1922,6 @@ E_OboeMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         g'8
-        ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -1932,6 +1931,7 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        ]
         
         a'4.
         ^ \markup {
@@ -1944,7 +1944,6 @@ E_OboeMusicVoice = {
         \startTrillSpan                                          %! SC
         
         b'4.
-        \stopTrillSpan                                           %! SC
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1952,6 +1951,7 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        \stopTrillSpan                                           %! SC
         \startTrillSpan                                          %! SC
     }
     
@@ -1979,8 +1979,6 @@ E_OboeMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         e'16
-        \stopTrillSpan                                           %! SC
-        [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -1990,10 +1988,11 @@ E_OboeMusicVoice = {
                     \finger
                         2
             }
+        \stopTrillSpan                                           %! SC
+        [
         
         \baca_repeat_pitch_class_warning                         %! SM14
         e'16
-        ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2003,6 +2002,7 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        ]
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -2010,9 +2010,9 @@ E_OboeMusicVoice = {
         % [E OboeMusicVoice measure 208 / measure 9]             %! SM4
         \baca_repeat_pitch_class_warning                         %! SM14
         e'16
-        [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        [
         
         \baca_repeat_pitch_class_warning                         %! SM14
         cs''!16
@@ -2056,7 +2056,6 @@ E_OboeMusicVoice = {
         ^ \markup { @ }                                          %! SM14
         
         c'''8.
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2064,11 +2063,11 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        ]
     }
     \times 8/9 {
         
         b''16.
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2076,6 +2075,7 @@ E_OboeMusicVoice = {
                     \finger
                         2
             }
+        [
         
         g''8
         ^ \markup {
@@ -2090,7 +2090,6 @@ E_OboeMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         f'32
-        ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2100,6 +2099,7 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        ]
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -2107,7 +2107,6 @@ E_OboeMusicVoice = {
         % [E OboeMusicVoice measure 209 / measure 10]            %! SM4
         \baca_repeat_pitch_class_warning                         %! SM14
         f'16
-        [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2117,6 +2116,7 @@ E_OboeMusicVoice = {
                     \finger
                         2
             }
+        [
         
         \baca_repeat_pitch_class_warning                         %! SM14
         f'16
@@ -2154,7 +2154,6 @@ E_OboeMusicVoice = {
             }
         
         bf''!8.
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2162,6 +2161,7 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        ]
     }
     
     r4
@@ -2182,7 +2182,6 @@ E_OboeMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         c'16
-        [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2192,11 +2191,10 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        [
         
         \baca_repeat_pitch_class_warning                         %! SM14
         c'16
-        ]
-        \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2206,10 +2204,11 @@ E_OboeMusicVoice = {
                     \finger
                         2
             }
+        ]
+        \glissando                                               %! SC
         
         \baca_repeat_pitch_class_warning                         %! SM14
         bqs'!2.
-        ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2219,6 +2218,7 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2231,9 +2231,9 @@ E_OboeMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         bqs'!2
-        ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/7 {
@@ -2241,12 +2241,11 @@ E_OboeMusicVoice = {
         % [E OboeMusicVoice measure 213 / measure 14]            %! SM4
         \baca_repeat_pitch_class_warning                         %! SM14
         bqs'!1
-        \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        \glissando                                               %! SC
         
         a'2.
-        ~
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2254,6 +2253,7 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -2295,22 +2295,21 @@ E_OboeMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         a'2.
-        ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        ~
     }
     \times 4/5 {
         
         % [E OboeMusicVoice measure 216 / measure 17]            %! SM4
         \baca_repeat_pitch_class_warning                         %! SM14
         a'2.
-        \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        \glissando                                               %! SC
         
         \baca_repeat_pitch_class_warning                         %! SM14
         gqs'!2
-        ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2320,6 +2319,7 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2344,7 +2344,6 @@ E_OboeMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         gqs'!4.
-        ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2354,6 +2353,7 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -2374,13 +2374,12 @@ E_OboeMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         fqs'!8
-        [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        [
         
         \baca_repeat_pitch_class_warning                         %! SM14
         fqs'!32
-        \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2390,10 +2389,10 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        \glissando                                               %! SC
         
         \baca_repeat_pitch_class_warning                         %! SM14
         eqf'!32
-        ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2403,10 +2402,10 @@ E_OboeMusicVoice = {
                     \finger
                         2
             }
+        ]
         
         \baca_repeat_pitch_class_warning                         %! SM14
         eqf'!4.
-        ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2416,6 +2415,7 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
+        ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/5 {
@@ -2964,8 +2964,6 @@ E_ClarinetMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         a16
-        [
-        \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2975,10 +2973,11 @@ E_ClarinetMusicVoice = {
                     \finger
                         2
             }
+        [
+        \glissando                                               %! SC
         
         \baca_repeat_pitch_class_warning                         %! SM14
         gtqs'!16
-        ]
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -2988,12 +2987,13 @@ E_ClarinetMusicVoice = {
                     \finger
                         1
             }
+        ]
         
         \baca_repeat_pitch_class_warning                         %! SM14
         gtqs'!2.
-        ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -3001,13 +3001,12 @@ E_ClarinetMusicVoice = {
         % [E ClarinetMusicVoice measure 214 / measure 15]        %! SM4
         \baca_repeat_pitch_class_warning                         %! SM14
         gtqs'!2.
-        \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        \glissando                                               %! SC
         
         \baca_repeat_pitch_class_warning                         %! SM14
         fs'!2
-        ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -3017,6 +3016,7 @@ E_ClarinetMusicVoice = {
                     \finger
                         1
             }
+        ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
@@ -3029,7 +3029,6 @@ E_ClarinetMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         fs'!4.
-        ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -3039,6 +3038,7 @@ E_ClarinetMusicVoice = {
                     \finger
                         2
             }
+        ~
     }
     \times 4/5 {
         
@@ -3070,13 +3070,12 @@ E_ClarinetMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         fs'!8
-        \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        \glissando                                               %! SC
         
         \baca_repeat_pitch_class_warning                         %! SM14
         eqs'!1.
-        ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -3086,6 +3085,7 @@ E_ClarinetMusicVoice = {
                     \finger
                         1
             }
+        ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -3098,7 +3098,6 @@ E_ClarinetMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         eqs'!2
-        ~
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -3108,6 +3107,7 @@ E_ClarinetMusicVoice = {
                     \finger
                         2
             }
+        ~
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 10/11 {
@@ -3120,8 +3120,6 @@ E_ClarinetMusicVoice = {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         eqs'!16
-        [
-        \glissando                                               %! SC
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
         ^ \markup {
@@ -3131,6 +3129,8 @@ E_ClarinetMusicVoice = {
                     \finger
                         1
             }
+        [
+        \glissando                                               %! SC
         
         dqs'!8.
         ~
@@ -3906,18 +3906,18 @@ E_PianoMusicVoice = {
     \baca_repeat_pitch_class_warning                             %! SM14
     c''''8
     -\staccatissimo                                              %! IC
-    ]
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
+    ]
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
         \baca_repeat_pitch_class_warning                         %! SM14
         c''''16
         -\staccatissimo                                          %! IC
-        [
         - \tweak color #red                                      %! SM14
         ^ \markup { @ }                                          %! SM14
+        [
         
         af''''!16
         -\staccatissimo                                          %! IC
@@ -4784,10 +4784,10 @@ E_ViolinMusicVoice = {
     \override TupletBracket.staff-padding = #4                   %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     ef''!4
+    ^ \markup { "molto flautando" }                              %! IC
     \glissando                                                   %! SC
     \p                                                           %! HC1
     \>                                                           %! HC1
-    ^ \markup { "molto flautando" }                              %! IC
     
     e''2
     \glissando                                                   %! SC
@@ -5409,10 +5409,10 @@ E_ViolaMusicVoice = {
         \override NoteHead.style = #'harmonic                    %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         ef'!2
+        ^ \markup { "molto flautando" }                          %! IC
         \glissando                                               %! SC
         \p                                                       %! HC1
         \>                                                       %! HC1
-        ^ \markup { "molto flautando" }                          %! IC
         
         e'4.
         \glissando                                               %! SC
@@ -5810,10 +5810,10 @@ E_CelloMusicVoice = {
         \override TupletBracket.staff-padding = #4               %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         ef'!8
+        ^ \markup { "molto flautando" }                          %! IC
         \glissando                                               %! SC
         \p                                                       %! HC1
         \>                                                       %! HC1
-        ^ \markup { "molto flautando" }                          %! IC
         
         e'4
         \glissando                                               %! SC

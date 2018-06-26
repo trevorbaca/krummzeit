@@ -5,43 +5,43 @@ import baca
 instruments = abjad.OrderedDict([
     (
         'BassClarinet',
-        abjad.BassClarinet(hide=True),
+        abjad.BassClarinet(),
         ),
     (
         'Cello',
-        abjad.Cello(hide=True, pitch_range='[A1, +inf]'),
+        abjad.Cello(pitch_range='[A1, +inf]'),
         ),
     (
         'ClarinetInEFlat',
-        abjad.ClarinetInEFlat(hide=True),
+        abjad.ClarinetInEFlat(),
         ),
     (
         'Harpsichord',
-        abjad.Harpsichord(context='Staff', hide=True),
+        abjad.Harpsichord(context='Staff'),
         ),
     (
         'Oboe',
-        abjad.Oboe(hide=True, pitch_range='[Bb3, Bb6]'),
+        abjad.Oboe(pitch_range='[Bb3, Bb6]'),
         ),
     (
         'Percussion',
-        abjad.Percussion(hide=True),
+        abjad.Percussion(),
         ),
     (
         'Piano',
-        abjad.Piano(context='Staff', hide=True),
+        abjad.Piano(context='Staff'),
         ),
     (
         'Viola',
-        abjad.Viola(hide=True, pitch_range='[Bb2, +inf]'),
+        abjad.Viola(pitch_range='[Bb2, +inf]'),
         ),
     (
         'Violin',
         # TODO: F#3 instead of F3
-        abjad.Violin(hide=True, pitch_range='[F3, +inf]'),
+        abjad.Violin(pitch_range='[F3, +inf]'),
         ),
     (
         'Xylophone',
-        abjad.Xylophone(hide=True),
+        abjad.Xylophone(),
         ),
     ])

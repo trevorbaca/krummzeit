@@ -291,7 +291,7 @@ maker(
 
 maker(
     ('va', (10, 19)),
-    baca.new_hairpin('ff > pp', stop_selector=baca.pleaf(1)),
+    baca.new_hairpin('ff > pp', selector=baca.tleaves()[:2]),
     )
 
 maker(
@@ -316,7 +316,7 @@ maker(
 
 maker(
     ('vc', (10, 19)),
-    baca.new_hairpin('ff > pp', stop_selector=baca.pleaf(1)),
+    baca.new_hairpin('ff > pp', selector=baca.tleaves()[:2]),
     )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())

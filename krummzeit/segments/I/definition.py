@@ -230,7 +230,7 @@ maker(
 
 maker(
     ('cl', (5, 6)),
-    baca.new_hairpin('ff < fff', stop_selector=baca.rleaf(-1)),
+    baca.new_hairpin('ff < fff', selector=baca.rleaves()),
     )
 
 maker(

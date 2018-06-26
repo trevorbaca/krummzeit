@@ -1183,8 +1183,9 @@ G_ClarinetMusicVoice = {
 %@% \override Staff.Clef.color = ##f                             %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
     \set Staff.forceClef = ##t                                   %! SM8:REAPPLIED_CLEF:SM33:SM37
     \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     cs!2.
+    \ppp                                                         %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
     ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -1195,8 +1196,7 @@ G_ClarinetMusicVoice = {
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
             "[“B. cl.”]"                                         %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
         }                                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-    \ppp                                                         %! HC1
-    \<                                                           %! HC1
+    \<                                                           %! IC:BACA_HAIRPIN
     \override Staff.Clef.color = #(x11-color 'OliveDrab)         %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \set Staff.instrumentName =                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
@@ -1237,10 +1237,10 @@ G_ClarinetMusicVoice = {
     cs!2.
     \repeatTie
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     cs!2
+    \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     \repeatTie
-    \ff                                                          %! HC1
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     \revert Stem.direction                                       %! OC2
     
@@ -1379,15 +1379,15 @@ G_ClarinetMusicVoice = {
         \override DynamicLineSpanner.staff-padding = #'10        %! OC1
         \override Stem.direction = #up                           %! OC1
         \override TupletBracket.staff-padding = #6               %! OC1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         d2
+        \f                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         ^ \markup {                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
             \with-color                                          %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                 #(x11-color 'blue)                               %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                 (“BassClarinet”)                                 %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
             }                                                    %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-        \f                                                       %! HC1
-        \<                                                       %! HC1
+        \<                                                       %! IC:BACA_HAIRPIN
         
         d1.
         ^ \markup {
@@ -1426,8 +1426,9 @@ G_ClarinetMusicVoice = {
         % [G ClarinetMusicVoice measure 279 / measure 23]        %! SM4
         d8
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         d4.
+        \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1435,7 +1436,6 @@ G_ClarinetMusicVoice = {
                     \finger
                         1
             }
-        \ff                                                      %! HC1
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert Stem.direction                                   %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
@@ -2564,8 +2564,9 @@ G_ViolaMusicVoice = {
 %@% \override Staff.Clef.color = ##f                             %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
     \set Staff.forceClef = ##t                                   %! SM8:REAPPLIED_CLEF:SM33:SM37
     \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     bf,!1..
+    \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -2578,8 +2579,7 @@ G_ViolaMusicVoice = {
         }                                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
     ^ \markup { "subito ordinario" }                             %! IC
     \glissando                                                   %! SC
-    \ff                                                          %! HC1
-    \<                                                           %! HC1
+    \<                                                           %! IC:BACA_HAIRPIN
     \override Staff.Clef.color = #(x11-color 'OliveDrab)         %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \set Staff.instrumentName =                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
@@ -2609,9 +2609,9 @@ G_ViolaMusicVoice = {
     fqs!1..
     \glissando                                                   %! SC
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     g4
-    \fff                                                         %! HC1
+    \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     
     % [G ViolaMusicVoice measure 264 / measure 8]                %! SM4
@@ -2628,16 +2628,16 @@ G_ViolaMusicVoice = {
         % [G ViolaMusicVoice measure 267 / measure 11]           %! SM4
         \override DynamicLineSpanner.staff-padding = #'7         %! OC1
         \override TupletBracket.staff-padding = #4               %! OC1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         g2
+        \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         ^ \markup { "molto flautando" }                          %! IC
         \glissando                                               %! SC
-        \ff                                                      %! HC1
-        \>                                                       %! HC1
+        \>                                                       %! IC:BACA_HAIRPIN
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         ftqs!\breve
-        \pp                                                      %! HC1
+        \pp                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
     }
@@ -2828,8 +2828,9 @@ G_CelloMusicVoice = {
 %@% \override Staff.Clef.color = ##f                             %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
     \set Staff.forceClef = ##t                                   %! SM8:REAPPLIED_CLEF:SM33:SM37
     \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     a,,2.
+    \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -2842,8 +2843,7 @@ G_CelloMusicVoice = {
         }                                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
     ^ \markup { "subito ordinario" }                             %! IC
     \glissando                                                   %! SC
-    \ff                                                          %! HC1
-    \<                                                           %! HC1
+    \<                                                           %! IC:BACA_HAIRPIN
     \override Staff.Clef.color = #(x11-color 'OliveDrab)         %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \set Staff.instrumentName =                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
@@ -2884,9 +2884,9 @@ G_CelloMusicVoice = {
     aqf,!4.
     \glissando                                                   %! SC
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     b,2.
-    \fff                                                         %! HC1
+    \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     
     % [G CelloMusicVoice measure 266 / measure 10]               %! SM4
@@ -2897,16 +2897,16 @@ G_CelloMusicVoice = {
         % [G CelloMusicVoice measure 267 / measure 11]           %! SM4
         \override DynamicLineSpanner.staff-padding = #'7         %! OC1
         \override TupletBracket.staff-padding = #4               %! OC1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         b,1.
+        \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         ^ \markup { "molto flautando" }                          %! IC
         \glissando                                               %! SC
-        \ff                                                      %! HC1
-        \>                                                       %! HC1
+        \>                                                       %! IC:BACA_HAIRPIN
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         atqs,!1
-        \pp                                                      %! HC1
+        \pp                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
     }

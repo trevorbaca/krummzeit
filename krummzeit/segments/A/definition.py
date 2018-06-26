@@ -429,7 +429,7 @@ maker(
 
 maker(
     (['vn', 'ob', 'cl'], 9),
-    baca.hairpin('f < ff'),
+    baca.new_hairpin('f < ff'),
     )
 
 maker(

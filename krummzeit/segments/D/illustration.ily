@@ -4450,11 +4450,10 @@ D_ViolinMusicVoice = {
         \override Beam.positions = #'(-4 . -4)                   %! OC1
         \override DynamicLineSpanner.staff-padding = #'6         %! OC1
         \override TupletBracket.staff-padding = #3               %! OC1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         fs''!4
+        \pp                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         \glissando                                               %! SC
-        \pp                                                      %! HC1
-        \<                                                       %! HC1
         - \tweak Y-extent ##f                                    %! PWC1
         - \tweak bound-details.left.text \markup {               %! PWC1
             \concat                                              %! PWC1
@@ -4487,6 +4486,7 @@ D_ViolinMusicVoice = {
             }                                                    %! PWC1
         - \tweak staff-padding #6                                %! PWC1
         \startTextSpan                                           %! PWC1
+        \<                                                       %! IC:BACA_HAIRPIN
         
         b''2
         \glissando                                               %! SC
@@ -4528,9 +4528,9 @@ D_ViolinMusicVoice = {
         bf''!8
         \glissando                                               %! SC
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         cs''!2
-        \f                                                       %! HC1
+        \f                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         \stopTextSpan                                            %! PWC1
     }
     
@@ -5152,12 +5152,12 @@ D_ViolaMusicVoice = {
     \once \override Staff.Clef.color = #(x11-color 'blue)        %! SM6:EXPLICIT_CLEF_COLOR:IC
 %@% \override Staff.Clef.color = ##f                             %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set Staff.forceClef = ##t                                   %! SM8:EXPLICIT_CLEF:SM33:IC
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     a''8
+    \pp                                                          %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     ^ \markup { "molto flautando ed estr. sul pont." }           %! IC
     \glissando                                                   %! SC
-    \pp                                                          %! HC1
-    \<                                                           %! HC1
+    \<                                                           %! IC:BACA_HAIRPIN
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)      %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     c''4
@@ -5194,9 +5194,9 @@ D_ViolaMusicVoice = {
         ef''!8
         \glissando                                               %! SC
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         d''2
-        \f                                                       %! HC1
+        \f                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     }
     
     r4
@@ -5207,11 +5207,10 @@ D_ViolaMusicVoice = {
     r2
     \times 4/5 {
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         cs''!16
+        \pp                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         \glissando                                               %! SC
-        \pp                                                      %! HC1
-        \<                                                       %! HC1
         - \tweak Y-extent ##f                                    %! PWC1
         - \tweak bound-details.left.text \markup {               %! PWC1
             \concat                                              %! PWC1
@@ -5244,6 +5243,7 @@ D_ViolaMusicVoice = {
             }                                                    %! PWC1
         - \tweak staff-padding #6                                %! PWC1
         \startTextSpan                                           %! PWC1
+        \<                                                       %! IC:BACA_HAIRPIN
         
         f''4
         \glissando                                               %! SC
@@ -5362,9 +5362,9 @@ D_ViolaMusicVoice = {
         b''8
         \glissando                                               %! SC
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         c''2
-        \f                                                       %! HC1
+        \f                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         \stopTextSpan                                            %! PWC1
         \glissando                                               %! SC
     }
@@ -6042,11 +6042,10 @@ D_CelloMusicVoice = {
     \times 2/3 {
         
         \override NoteHead.style = #'harmonic                    %! OC1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         g''4
+        \pp                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         \glissando                                               %! SC
-        \pp                                                      %! HC1
-        \<                                                       %! HC1
         - \tweak Y-extent ##f                                    %! PWC1
         - \tweak bound-details.left.text \markup {               %! PWC1
             \concat                                              %! PWC1
@@ -6079,6 +6078,7 @@ D_CelloMusicVoice = {
             }                                                    %! PWC1
         - \tweak staff-padding #6                                %! PWC1
         \startTextSpan                                           %! PWC1
+        \<                                                       %! IC:BACA_HAIRPIN
         
         fs''!2
         \glissando                                               %! SC
@@ -6105,9 +6105,9 @@ D_CelloMusicVoice = {
         cs''!4
         \glissando                                               %! SC
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         bf''!2
-        \f                                                       %! HC1
+        \f                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         \stopTextSpan                                            %! PWC1
     }
     

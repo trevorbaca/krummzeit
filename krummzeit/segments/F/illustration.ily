@@ -707,11 +707,11 @@ F_OboeMusicVoice = {
     R1 * 5/8
     
     % [F OboeMusicVoice measure 238 / measure 4]                 %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     a'''4.
+    \p                                                           %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     -\staccato                                                   %! IC
-    \p                                                           %! HC1
-    \<                                                           %! HC1
+    \<                                                           %! IC:BACA_HAIRPIN
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/6 {
         
@@ -911,11 +911,11 @@ F_OboeMusicVoice = {
         b'16
         -\staccato                                               %! IC
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         c'16
+        \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         -\staccato                                               %! IC
         ]
-        \ff                                                      %! HC1
     }
     
     % [F OboeMusicVoice measure 245 / measure 11]                %! SM4
@@ -1025,16 +1025,16 @@ F_ClarinetMusicVoice = {
     \times 2/3 {
         
         % [F ClarinetMusicVoice measure 238 / measure 4]         %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         c'4
+        \p                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         -\staccato                                               %! IC
         ^ \markup {                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
             \with-color                                          %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                 #(x11-color 'blue)                               %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                 (“ClarinetInEFlat”)                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
             }                                                    %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-        \p                                                       %! HC1
-        \<                                                       %! HC1
+        \<                                                       %! IC:BACA_HAIRPIN
         
         as!4
         -\staccato                                               %! IC
@@ -1143,9 +1143,9 @@ F_ClarinetMusicVoice = {
     ~
     ]
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     a''4.
-    \ff                                                          %! HC1
+    \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     \revert Beam.positions                                       %! OC2
     \revert TupletBracket.staff-padding                          %! OC2
     \revert DynamicLineSpanner.staff-padding                     %! OC2
@@ -2010,10 +2010,10 @@ F_ViolaMusicVoice = {
     
     % [F ViolaMusicVoice measure 236 / measure 2]                %! SM4
     \override DynamicLineSpanner.staff-padding = #'6             %! OC1
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     fs!8..
-    \ppp                                                         %! HC1
-    \<                                                           %! HC1
+    \ppp                                                         %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
+    \<                                                           %! IC:BACA_HAIRPIN
     
     r32
     
@@ -2080,9 +2080,9 @@ F_ViolaMusicVoice = {
     
     r32
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     fs!8..
-    \fff                                                         %! HC1
+    \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     
     r32
     \revert DynamicLineSpanner.staff-padding                     %! OC2
@@ -2229,10 +2229,10 @@ F_CelloMusicVoice = {
     
     % [F CelloMusicVoice measure 236 / measure 2]                %! SM4
     \override DynamicLineSpanner.staff-padding = #'6             %! OC1
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     c,8..
-    \ppp                                                         %! HC1
-    \<                                                           %! HC1
+    \ppp                                                         %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
+    \<                                                           %! IC:BACA_HAIRPIN
     
     r32
     
@@ -2299,9 +2299,9 @@ F_CelloMusicVoice = {
     
     r32
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     c,8..
-    \fff                                                         %! HC1
+    \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     
     r32
     \revert DynamicLineSpanner.staff-padding                     %! OC2

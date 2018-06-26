@@ -2372,8 +2372,8 @@ C_ViolinMusicVoice = {
         \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         -\staccatissimo                                          %! IC
         ^ \markup { pizz. }                                      %! IC
-        [
         \>                                                       %! IC:BACA_HAIRPIN
+        [
         
         cs''''!8
         -\staccatissimo                                          %! IC
@@ -2418,8 +2418,8 @@ C_ViolinMusicVoice = {
         a''8
         \pp                                                      %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
         -\staccatissimo                                          %! IC
-        [
         \<                                                       %! IC:BACA_HAIRPIN
+        [
         
         e''8
         -\staccatissimo                                          %! IC
@@ -2463,8 +2463,8 @@ C_ViolinMusicVoice = {
         g''8
         \ff                                                      %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
         -\staccatissimo                                          %! IC
-        [
         \>                                                       %! IC:BACA_HAIRPIN
+        [
         
         c''8
         -\staccatissimo                                          %! IC

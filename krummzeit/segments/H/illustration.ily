@@ -410,7 +410,7 @@ H_OboeMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     d''1..
     \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC
-    \startTrillSpan                                              %! SC
+    \startTrillSpan
     
     % [H OboeMusicVoice measure 285 / measure 5]                 %! SM4
     d''2.

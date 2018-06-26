@@ -1190,8 +1190,8 @@ I_ClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     fs!2.
     \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
-    \repeatTie
     \<                                                           %! IC:BACA_HAIRPIN
+    \repeatTie
     
     fs!4.
     \repeatTie
@@ -1236,8 +1236,8 @@ I_ClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     fs!1
     \fff                                                         %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
-    \repeatTie
     \>                                                           %! IC:BACA_HAIRPIN
+    \repeatTie
     
     % [I ClarinetMusicVoice measure 302 / measure 12]            %! SM4
     fs!1

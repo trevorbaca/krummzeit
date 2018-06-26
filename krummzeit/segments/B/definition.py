@@ -286,12 +286,12 @@ maker(
 
 maker(
     ('va', (1, 9)),
-    baca.hairpin('ff > pp'),
+    baca.new_hairpin('ff > pp'),
     )
 
 maker(
     ('va', (10, 19)),
-    baca.hairpin('ff > pp', selector=baca.pleaves()[:2]),
+    baca.new_hairpin('ff > pp', stop_selector=baca.pleaf(1)),
     )
 
 maker(
@@ -311,12 +311,12 @@ maker(
 
 maker(
     ('vc', (1, 9)),
-    baca.hairpin('ff > pp'),
+    baca.new_hairpin('ff > pp'),
     )
 
 maker(
     ('vc', (10, 19)),
-    baca.hairpin('ff > pp', selector=baca.pleaves()[:2]),
+    baca.new_hairpin('ff > pp', stop_selector=baca.pleaf(1)),
     )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
@@ -397,7 +397,7 @@ maker(
         baca.runs(),
         baca.glissando(),
         ),
-    baca.hairpin('pp < fff'),
+    baca.new_hairpin('pp < fff'),
     baca.markups.non_flautando(),
     krummzeit.markup.show_tempo(),
     )

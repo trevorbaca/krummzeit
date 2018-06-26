@@ -202,14 +202,14 @@ maker(
 
 maker(
     ('cl', (1, 5)),
-    baca.hairpin('ppp < ff'),
+    baca.new_hairpin('ppp < ff'),
     baca.pitch('B1'),
     )
 
 maker(
     ('vc', (1, 9)),
     baca.dls_staff_padding(6),
-    baca.hairpin('ff < fff'),
+    baca.new_hairpin('ff < fff'),
     baca.map(
         baca.runs(),
         baca.glissando(),
@@ -230,7 +230,7 @@ maker(
         baca.glissando(),
         ),
     baca.dls_staff_padding(6),
-    baca.hairpin('ff < fff'),
+    baca.new_hairpin('ff < fff'),
     baca.markups.subito_ordinario(),
     )
 
@@ -306,7 +306,7 @@ maker(
 maker(
     (['va', 'vc'], (11, 12)),
     baca.dls_staff_padding(7),
-    baca.hairpin('ff > pp'),
+    baca.new_hairpin('ff > pp'),
     baca.map(
         baca.runs(),
         baca.glissando(),
@@ -387,7 +387,7 @@ maker(
 
 maker(
     ('cl', (18, 22)),
-    baca.hairpin('f < ff'),
+    baca.new_hairpin('f < ff'),
     baca.pitch('C2'),
     krummzeit.color_fingerings(),
     )

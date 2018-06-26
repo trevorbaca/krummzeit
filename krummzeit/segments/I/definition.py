@@ -230,7 +230,7 @@ maker(
 
 maker(
     ('cl', (5, 6)),
-    baca.hairpin('ff < fff', selector=baca.leaves().rleak()),
+    baca.new_hairpin('ff < fff', stop_selector=baca.rleaf(-1)),
     )
 
 maker(
@@ -248,7 +248,7 @@ maker(
 
 maker(
     ('cl', 11),
-    baca.hairpin('fff > ppp', selector=baca.leaves()),
+    baca.new_hairpin('fff > ppp')
     )
 
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())

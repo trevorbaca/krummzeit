@@ -1306,8 +1306,8 @@ i_ViolinMusicVoice = {
         ef''!4
         \pp                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         ^ \markup { "molto flautando" }                          %! IC
-        \glissando                                               %! SC
         \<                                                       %! IC:BACA_HAIRPIN
+        \glissando                                               %! SC
         
         d''2
         \glissando                                               %! SC
@@ -1588,8 +1588,8 @@ i_ViolaMusicVoice = {
         fs'!4
         \pp                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         ^ \markup { "molto flautando" }                          %! IC
-        \glissando                                               %! SC
         \<                                                       %! IC:BACA_HAIRPIN
+        \glissando                                               %! SC
         
         a'8.
         \glissando                                               %! SC
@@ -1860,8 +1860,8 @@ i_CelloMusicVoice = {
         e'8
         \pp                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         ^ \markup { "molto flautando" }                          %! IC
-        \glissando                                               %! SC
         \<                                                       %! IC:BACA_HAIRPIN
+        \glissando                                               %! SC
         
         g'4
         \glissando                                               %! SC

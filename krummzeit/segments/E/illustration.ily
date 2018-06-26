@@ -1519,7 +1519,7 @@ E_OboeMusicVoice = {
                     \finger
                         2
             }
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         \baca_repeat_pitch_class_warning                         %! SM14
         bf''!4.
@@ -1533,7 +1533,7 @@ E_OboeMusicVoice = {
                         1
             }
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     
     r4
@@ -1553,7 +1553,7 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         f'''16
         ^ \markup {
@@ -1655,7 +1655,7 @@ E_OboeMusicVoice = {
                     \finger
                         2
             }
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         bf'!2
         ^ \markup {
@@ -1666,7 +1666,7 @@ E_OboeMusicVoice = {
                         1
             }
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         a''8
         \stopTrillSpan                                           %! SC
@@ -1941,7 +1941,7 @@ E_OboeMusicVoice = {
                     \finger
                         2
             }
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         b'4.
         ^ \markup {
@@ -1952,7 +1952,7 @@ E_OboeMusicVoice = {
                         1
             }
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     
     r4.
@@ -1975,7 +1975,7 @@ E_OboeMusicVoice = {
                     \finger
                         1
             }
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         \baca_repeat_pitch_class_warning                         %! SM14
         e'16
@@ -2463,14 +2463,14 @@ E_OboeMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         a''8.
         \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:IC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
         
         a''8
         ~
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \times 2/3 {
         
@@ -2480,7 +2480,7 @@ E_OboeMusicVoice = {
         \stopTrillSpan                                           %! SC
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
@@ -2488,14 +2488,14 @@ E_OboeMusicVoice = {
     \times 2/3 {
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
         
         a''8
         ~
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \times 2/3 {
         
@@ -2505,7 +2505,7 @@ E_OboeMusicVoice = {
         \stopTrillSpan                                           %! SC
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
@@ -2514,14 +2514,14 @@ E_OboeMusicVoice = {
         
         % [E OboeMusicVoice measure 229 / measure 30]            %! SM4
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
         
         a''8
         ~
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \times 2/3 {
         
@@ -2531,7 +2531,7 @@ E_OboeMusicVoice = {
         \stopTrillSpan                                           %! SC
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
@@ -2539,14 +2539,14 @@ E_OboeMusicVoice = {
     \times 2/3 {
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
         
         a''8
         ~
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \times 2/3 {
         
@@ -2556,7 +2556,7 @@ E_OboeMusicVoice = {
         \stopTrillSpan                                           %! SC
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
@@ -2564,14 +2564,14 @@ E_OboeMusicVoice = {
     \times 2/3 {
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
         
         a''8
         ~
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \times 2/3 {
         
@@ -2582,7 +2582,7 @@ E_OboeMusicVoice = {
         \stopTrillSpan                                           %! SC
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
@@ -2590,14 +2590,14 @@ E_OboeMusicVoice = {
     \times 2/3 {
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
         
         a''8
         ~
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \times 2/3 {
         
@@ -2607,7 +2607,7 @@ E_OboeMusicVoice = {
         \stopTrillSpan                                           %! SC
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
@@ -2615,14 +2615,14 @@ E_OboeMusicVoice = {
     \times 2/3 {
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
         
         a''8
         ~
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \times 2/3 {
         
@@ -2633,7 +2633,7 @@ E_OboeMusicVoice = {
         \stopTrillSpan                                           %! SC
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
@@ -2641,14 +2641,14 @@ E_OboeMusicVoice = {
     \times 2/3 {
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
         
         a''8
         ~
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \times 2/3 {
         
@@ -2658,7 +2658,7 @@ E_OboeMusicVoice = {
         \stopTrillSpan                                           %! SC
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
@@ -2666,14 +2666,14 @@ E_OboeMusicVoice = {
     \times 2/3 {
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
         
         a''8
         ~
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \times 2/3 {
         
@@ -2683,7 +2683,7 @@ E_OboeMusicVoice = {
         \stopTrillSpan                                           %! SC
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
@@ -2691,14 +2691,14 @@ E_OboeMusicVoice = {
     \times 2/3 {
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
         
         a''8
         ~
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \times 2/3 {
         
@@ -2708,7 +2708,7 @@ E_OboeMusicVoice = {
         \stopTrillSpan                                           %! SC
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
@@ -2716,7 +2716,7 @@ E_OboeMusicVoice = {
     \times 2/3 {
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         % [E OboeMusicVoice measure 233 / measure 34]            %! SM4
         r16
@@ -2724,7 +2724,7 @@ E_OboeMusicVoice = {
         
         a''8
         ~
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \times 2/3 {
         
@@ -2734,7 +2734,7 @@ E_OboeMusicVoice = {
         \stopTrillSpan                                           %! SC
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
@@ -2742,13 +2742,13 @@ E_OboeMusicVoice = {
     \times 2/3 {
         
         a''8.
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         r16
         \stopTrillSpan                                           %! SC
         
         a''8
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
     }
@@ -4786,8 +4786,8 @@ E_ViolinMusicVoice = {
     ef''!4
     \p                                                           %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     ^ \markup { "molto flautando" }                              %! IC
-    \glissando                                                   %! SC
     \>                                                           %! IC:BACA_HAIRPIN
+    \glissando                                                   %! SC
     
     e''2
     \glissando                                                   %! SC
@@ -4957,7 +4957,7 @@ E_ViolinMusicVoice = {
         \pitchedTrill                                            %! SC
         g''8.
         \ppp                                                     %! SM8:REDUNDANT_DYNAMIC:IC
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -4965,7 +4965,7 @@ E_ViolinMusicVoice = {
         \pitchedTrill                                            %! SC
         g''8
         ~
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
     }
     \times 2/3 {
         
@@ -4976,7 +4976,7 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -4985,7 +4985,7 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -4993,7 +4993,7 @@ E_ViolinMusicVoice = {
         \pitchedTrill                                            %! SC
         g''8
         ~
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
     }
     \times 2/3 {
         
@@ -5004,7 +5004,7 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -5014,7 +5014,7 @@ E_ViolinMusicVoice = {
         % [E ViolinMusicVoice measure 229 / measure 30]          %! SM4
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -5022,7 +5022,7 @@ E_ViolinMusicVoice = {
         \pitchedTrill                                            %! SC
         g''8
         ~
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
     }
     \times 2/3 {
         
@@ -5033,7 +5033,7 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -5042,7 +5042,7 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -5050,7 +5050,7 @@ E_ViolinMusicVoice = {
         \pitchedTrill                                            %! SC
         g''8
         ~
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
     }
     \times 2/3 {
         
@@ -5061,7 +5061,7 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -5070,7 +5070,7 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -5078,7 +5078,7 @@ E_ViolinMusicVoice = {
         \pitchedTrill                                            %! SC
         g''8
         ~
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
     }
     \times 2/3 {
         
@@ -5090,7 +5090,7 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -5099,7 +5099,7 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -5107,7 +5107,7 @@ E_ViolinMusicVoice = {
         \pitchedTrill                                            %! SC
         g''8
         ~
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
     }
     \times 2/3 {
         
@@ -5118,7 +5118,7 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -5127,7 +5127,7 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -5135,7 +5135,7 @@ E_ViolinMusicVoice = {
         \pitchedTrill                                            %! SC
         g''8
         ~
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
     }
     \times 2/3 {
         
@@ -5147,7 +5147,7 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -5156,7 +5156,7 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -5164,7 +5164,7 @@ E_ViolinMusicVoice = {
         \pitchedTrill                                            %! SC
         g''8
         ~
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
     }
     \times 2/3 {
         
@@ -5175,7 +5175,7 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -5184,7 +5184,7 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -5192,7 +5192,7 @@ E_ViolinMusicVoice = {
         \pitchedTrill                                            %! SC
         g''8
         ~
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
     }
     \times 2/3 {
         
@@ -5203,7 +5203,7 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -5212,7 +5212,7 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -5220,7 +5220,7 @@ E_ViolinMusicVoice = {
         \pitchedTrill                                            %! SC
         g''8
         ~
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
     }
     \times 2/3 {
         
@@ -5231,7 +5231,7 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -5240,7 +5240,7 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         % [E ViolinMusicVoice measure 233 / measure 34]          %! SM4
         r16
@@ -5249,7 +5249,7 @@ E_ViolinMusicVoice = {
         \pitchedTrill                                            %! SC
         g''8
         ~
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
     }
     \times 2/3 {
         
@@ -5260,7 +5260,7 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
@@ -5269,14 +5269,14 @@ E_ViolinMusicVoice = {
         
         \pitchedTrill                                            %! SC
         g''8.
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         
         r16
         \stopTrillSpan                                           %! SC
         
         \pitchedTrill                                            %! SC
         g''8
-        \startTrillSpan a''                                      %! SC
+        \startTrillSpan a''
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
     }
@@ -5411,8 +5411,8 @@ E_ViolaMusicVoice = {
         ef'!2
         \p                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         ^ \markup { "molto flautando" }                          %! IC
-        \glissando                                               %! SC
         \>                                                       %! IC:BACA_HAIRPIN
+        \glissando                                               %! SC
         
         e'4.
         \glissando                                               %! SC
@@ -5812,8 +5812,8 @@ E_CelloMusicVoice = {
         ef'!8
         \p                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         ^ \markup { "molto flautando" }                          %! IC
-        \glissando                                               %! SC
         \>                                                       %! IC:BACA_HAIRPIN
+        \glissando                                               %! SC
         
         e'4
         \glissando                                               %! SC

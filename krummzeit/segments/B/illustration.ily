@@ -1619,7 +1619,7 @@ B_OboeMusicVoice = {
                     \finger
                         1
             }
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         c''8
         ^ \markup {
@@ -1631,7 +1631,7 @@ B_OboeMusicVoice = {
             }
         ~
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
@@ -1648,7 +1648,7 @@ B_OboeMusicVoice = {
             }
         ~
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     
     % [B OboeMusicVoice measure 90 / measure 2]                  %! SM4
@@ -1656,7 +1656,7 @@ B_OboeMusicVoice = {
     
     ef''!4
     \stopTrillSpan                                               %! SC
-    \startTrillSpan                                              %! SC
+    \startTrillSpan
     
     ef''!4
     ^ \markup {
@@ -1667,7 +1667,7 @@ B_OboeMusicVoice = {
                     1
         }
     \stopTrillSpan                                               %! SC
-    \startTrillSpan                                              %! SC
+    \startTrillSpan
     
     ef''!8
     ^ \markup {
@@ -1703,7 +1703,7 @@ B_OboeMusicVoice = {
                         1
             }
         ~
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     
     e'''8
@@ -1720,7 +1720,7 @@ B_OboeMusicVoice = {
     ~
     ]
     \stopTrillSpan                                               %! SC
-    \startTrillSpan                                              %! SC
+    \startTrillSpan
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/8 {
         
@@ -1736,7 +1736,7 @@ B_OboeMusicVoice = {
                         1
             }
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         cs''!8
         \stopTrillSpan                                           %! SC
@@ -1752,7 +1752,7 @@ B_OboeMusicVoice = {
                     \finger
                         1
             }
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         cs''!8
         ^ \markup {
@@ -1764,7 +1764,7 @@ B_OboeMusicVoice = {
             }
         ~
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
@@ -1781,14 +1781,14 @@ B_OboeMusicVoice = {
             }
         ~
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     
     b''8
     
     b''4
     \stopTrillSpan                                               %! SC
-    \startTrillSpan                                              %! SC
+    \startTrillSpan
     
     % [B OboeMusicVoice measure 93 / measure 5]                  %! SM4
     R1 * 1/4
@@ -1814,7 +1814,7 @@ B_OboeMusicVoice = {
                     \finger
                         2
             }
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         bf''!8
         ^ \markup {
@@ -1826,7 +1826,7 @@ B_OboeMusicVoice = {
             }
         ~
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     
     bf''!8
@@ -1898,7 +1898,7 @@ B_OboeMusicVoice = {
                     \finger
                         1
             }
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         ef'''!8
         ^ \markup {
@@ -1910,7 +1910,7 @@ B_OboeMusicVoice = {
             }
         ~
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
@@ -1926,11 +1926,11 @@ B_OboeMusicVoice = {
                         1
             }
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         c''4
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     
     % [B OboeMusicVoice measure 113 / measure 25]                %! SM4
@@ -1943,7 +1943,7 @@ B_OboeMusicVoice = {
                     1
         }
     \stopTrillSpan                                               %! SC
-    \startTrillSpan                                              %! SC
+    \startTrillSpan
     
     c''8
     ^ \markup {
@@ -1979,7 +1979,7 @@ B_OboeMusicVoice = {
                         1
             }
         ~
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \times 2/3 {
         
@@ -1994,7 +1994,7 @@ B_OboeMusicVoice = {
                         2
             }
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         e'8
         ^ \markup {
@@ -2006,7 +2006,7 @@ B_OboeMusicVoice = {
             }
         ~
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \times 4/7 {
         
@@ -2024,7 +2024,7 @@ B_OboeMusicVoice = {
                     \finger
                         1
             }
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         d''8
         ^ \markup {
@@ -2036,7 +2036,7 @@ B_OboeMusicVoice = {
             }
         ~
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     
     % [B OboeMusicVoice measure 115 / measure 27]                %! SM4
@@ -2053,12 +2053,12 @@ B_OboeMusicVoice = {
                         1
             }
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     
     d'''4
     \stopTrillSpan                                               %! SC
-    \startTrillSpan                                              %! SC
+    \startTrillSpan
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
@@ -2072,7 +2072,7 @@ B_OboeMusicVoice = {
                         1
             }
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         g''8
         ^ \markup {
@@ -2105,7 +2105,7 @@ B_OboeMusicVoice = {
                     \finger
                         1
             }
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     
     % [B OboeMusicVoice measure 117 / measure 29]                %! SM4
@@ -2132,12 +2132,12 @@ B_OboeMusicVoice = {
                     \finger
                         1
             }
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         bf''!8
         ~
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
@@ -2153,7 +2153,7 @@ B_OboeMusicVoice = {
                         1
             }
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     
     % [B OboeMusicVoice measure 119 / measure 31]                %! SM4
@@ -2180,12 +2180,12 @@ B_OboeMusicVoice = {
                     \finger
                         1
             }
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         ef'''!8
         ~
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
@@ -2201,7 +2201,7 @@ B_OboeMusicVoice = {
                         1
             }
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         f'''4
         ^ \markup {
@@ -2212,7 +2212,7 @@ B_OboeMusicVoice = {
                         2
             }
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         f'''8
         ^ \markup {
@@ -2224,7 +2224,7 @@ B_OboeMusicVoice = {
             }
         ~
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     
     % [B OboeMusicVoice measure 121 / measure 33]                %! SM4
@@ -2266,7 +2266,7 @@ B_OboeMusicVoice = {
                         1
             }
         ~
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \times 4/5 {
         
@@ -2274,7 +2274,7 @@ B_OboeMusicVoice = {
         
         e'2
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         bf''!2
         ^ \markup {
@@ -2285,7 +2285,7 @@ B_OboeMusicVoice = {
                         1
             }
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         g''8
         ^ \markup {
@@ -2308,7 +2308,7 @@ B_OboeMusicVoice = {
                     1
         }
     ~
-    \startTrillSpan                                              %! SC
+    \startTrillSpan
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
@@ -2316,7 +2316,7 @@ B_OboeMusicVoice = {
         
         f'4
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         cs''!8
         ^ \markup {
@@ -2328,7 +2328,7 @@ B_OboeMusicVoice = {
             }
         ~
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     
     cs''!4
@@ -2343,7 +2343,7 @@ B_OboeMusicVoice = {
                     2
         }
     \stopTrillSpan                                               %! SC
-    \startTrillSpan                                              %! SC
+    \startTrillSpan
     
     cs'''!4
     ^ \markup {
@@ -2354,7 +2354,7 @@ B_OboeMusicVoice = {
                     1
         }
     \stopTrillSpan                                               %! SC
-    \startTrillSpan                                              %! SC
+    \startTrillSpan
     
     cs'''!8
     \stopTrillSpan                                               %! SC
@@ -3921,12 +3921,12 @@ B_ViolinMusicVoice = {
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
         a''4
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         c''8
         ~
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/6 {
@@ -3935,12 +3935,12 @@ B_ViolinMusicVoice = {
         
         cs''!2
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         a''8
         ~
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     
     % [B ViolinMusicVoice measure 111 / measure 23]              %! SM4
@@ -3948,7 +3948,7 @@ B_ViolinMusicVoice = {
     
     aqf''!4
     \stopTrillSpan                                               %! SC
-    \startTrillSpan                                              %! SC
+    \startTrillSpan
     
     a'8
     \stopTrillSpan                                               %! SC
@@ -3962,7 +3962,7 @@ B_ViolinMusicVoice = {
     % [B ViolinMusicVoice measure 112 / measure 24]              %! SM4
     af''!4
     ~
-    \startTrillSpan                                              %! SC
+    \startTrillSpan
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/10 {
         
@@ -3970,11 +3970,11 @@ B_ViolinMusicVoice = {
         
         bf''!2
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         b''2
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \times 2/3 {
         
@@ -3983,31 +3983,31 @@ B_ViolinMusicVoice = {
         \stopTrillSpan                                           %! SC
         
         b''4
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
         bqf''!4
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         cs''!4
         ~
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     
     cs''!4
     
     cqs''!4
     \stopTrillSpan                                               %! SC
-    \startTrillSpan                                              %! SC
+    \startTrillSpan
     
     cs'''!8
     ~
     \stopTrillSpan                                               %! SC
-    \startTrillSpan                                              %! SC
+    \startTrillSpan
     \times 4/5 {
         
         % [B ViolinMusicVoice measure 114 / measure 26]          %! SM4
@@ -4024,7 +4024,7 @@ B_ViolinMusicVoice = {
         
         af''!4
         ~
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -4035,7 +4035,7 @@ B_ViolinMusicVoice = {
         a''4.
         ~
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
     }
     
     a''8
@@ -4043,7 +4043,7 @@ B_ViolinMusicVoice = {
     c'''4
     ~
     \stopTrillSpan                                               %! SC
-    \startTrillSpan                                              %! SC
+    \startTrillSpan
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
@@ -4054,11 +4054,11 @@ B_ViolinMusicVoice = {
         \stopTrillSpan                                           %! SC
         
         c''4
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         
         cqf''!4
         \stopTrillSpan                                           %! SC
-        \startTrillSpan                                          %! SC
+        \startTrillSpan
         \revert Beam.positions                                   %! OC2
         \revert DynamicLineSpanner.staff-padding                 %! OC2
         \revert TupletBracket.staff-padding                      %! OC2
@@ -4093,8 +4093,8 @@ B_ViolinMusicVoice = {
     \pp                                                          %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     ^ \markup { "non flautando" }                                %! IC
     ^ \markup { "allow bowing to convey accelerando" }           %! IC
-    \glissando                                                   %! SC
     \<                                                           %! IC:BACA_HAIRPIN
+    \glissando                                                   %! SC
     
     g1
     \glissando                                                   %! SC
@@ -4195,8 +4195,8 @@ B_ViolaMusicVoice = {
         e4
         \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         ^ \markup { "molto flautando" }                          %! IC
-        \glissando                                               %! SC
         \>                                                       %! IC:BACA_HAIRPIN
+        \glissando                                               %! SC
         
         dtqs!8
     }
@@ -4248,8 +4248,8 @@ B_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         dtqs!2
         \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
-        \glissando                                               %! SC
         \>                                                       %! IC:BACA_HAIRPIN
+        \glissando                                               %! SC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         f4
@@ -4365,8 +4365,8 @@ B_ViolaMusicVoice = {
     \pp                                                          %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
     ^ \markup { "non flautando" }                                %! IC
     ^ \markup { "allow bowing to convey accelerando" }           %! IC
-    \glissando                                                   %! SC
     \<                                                           %! IC:BACA_HAIRPIN
+    \glissando                                                   %! SC
     
     c\breve
     \glissando                                                   %! SC
@@ -4474,8 +4474,8 @@ B_CelloMusicVoice = {
         d,16
         \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         ^ \markup { "molto flautando" }                          %! IC
-        \glissando                                               %! SC
         \>                                                       %! IC:BACA_HAIRPIN
+        \glissando                                               %! SC
         
         ctqs,!4
     }
@@ -4527,8 +4527,8 @@ B_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         ctqs,!8
         \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
-        \glissando                                               %! SC
         \>                                                       %! IC:BACA_HAIRPIN
+        \glissando                                               %! SC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         e,2
@@ -4641,8 +4641,8 @@ B_CelloMusicVoice = {
     \pp                                                          %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
     ^ \markup { "non flautando" }                                %! IC
     ^ \markup { "allow bowing to convey accelerando" }           %! IC
-    \glissando                                                   %! SC
     \<                                                           %! IC:BACA_HAIRPIN
+    \glissando                                                   %! SC
     
     cqs,!1.
     \glissando                                                   %! SC

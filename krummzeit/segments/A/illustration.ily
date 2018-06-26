@@ -7291,8 +7291,8 @@ A_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         b''16
         \f                                                       %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
-        [
         \<                                                       %! IC:BACA_HAIRPIN
+        [
         
         c'16
         -\staccato                                               %! IC

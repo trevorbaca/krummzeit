@@ -319,13 +319,13 @@ maker(
 
 maker(
     ('va', 4),
-    baca.new_hairpin('pp < f'),
+    baca.hairpin('pp < f'),
     baca.markups.molto_flautando_e_pont(),
     )
 
 maker(
     ('va', (5, 6)),
-    baca.new_hairpin('pp < f'),
+    baca.hairpin('pp < f'),
     baca.transition(
         baca.markups.molto_flautando(),
         baca.markups.molto_gridato(),
@@ -335,7 +335,7 @@ maker(
 
 maker(
     (['vn', 'vc'], 6),
-    baca.new_hairpin('pp < f'),
+    baca.hairpin('pp < f'),
     baca.transition(
         baca.markups.molto_flautando(),
         baca.markups.molto_gridato(),

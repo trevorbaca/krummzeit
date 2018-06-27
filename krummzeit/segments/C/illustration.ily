@@ -1686,9 +1686,9 @@ C_PianoMusicVoice = {
     \times 2/3 {
         
         % [C PianoMusicVoice measure 135 / measure 3]            %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         g''16
-        \pp                                                      %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
+        \pp                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         -\staccatissimo                                          %! IC
         \<                                                       %! IC:BACA_HAIRPIN
         
@@ -1735,9 +1735,9 @@ C_PianoMusicVoice = {
         \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
     %@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
         \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
-        \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         af!8
-        \ff                                                      %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
+        \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         -\staccatissimo                                          %! IC
         \>                                                       %! IC:BACA_HAIRPIN
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
@@ -2414,9 +2414,9 @@ C_ViolinMusicVoice = {
         % [C ViolinMusicVoice measure 139 / measure 7]           %! SM4
         r8
         
-        \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         a''8
-        \pp                                                      %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
+        \pp                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         -\staccatissimo                                          %! IC
         \<                                                       %! IC:BACA_HAIRPIN
         [
@@ -2459,9 +2459,9 @@ C_ViolinMusicVoice = {
         % [C ViolinMusicVoice measure 141 / measure 9]           %! SM4
         r8
         
-        \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         g''8
-        \ff                                                      %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
+        \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         -\staccatissimo                                          %! IC
         \>                                                       %! IC:BACA_HAIRPIN
         [
@@ -2656,9 +2656,9 @@ C_ViolaMusicVoice = {
         % [C ViolaMusicVoice measure 139 / measure 7]            %! SM4
         r8
         
-        \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         f''4
-        \pp                                                      %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
+        \pp                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         -\staccatissimo                                          %! IC
         \<                                                       %! IC:BACA_HAIRPIN
     }
@@ -2697,9 +2697,9 @@ C_ViolaMusicVoice = {
         r8
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
-        \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         f'4
-        \ff                                                      %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
+        \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         -\staccatissimo                                          %! IC
         \>                                                       %! IC:BACA_HAIRPIN
     }
@@ -2893,9 +2893,9 @@ C_CelloMusicVoice = {
         r16
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
-        \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         ef'!8
-        \pp                                                      %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
+        \pp                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         -\staccatissimo                                          %! IC
         \<                                                       %! IC:BACA_HAIRPIN
         
@@ -2927,9 +2927,9 @@ C_CelloMusicVoice = {
         % [C CelloMusicVoice measure 141 / measure 9]            %! SM4
         r16
         
-        \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         b8
-        \ff                                                      %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
+        \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         -\staccatissimo                                          %! IC
         \>                                                       %! IC:BACA_HAIRPIN
         

@@ -3806,10 +3806,10 @@ A_ClarinetMusicVoice = {
     ~
     
     % [A ClarinetMusicVoice measure 36 / measure 23]             %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     \baca_repeat_pitch_class_warning                             %! SM14
     f''4
-    \f                                                           %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
+    \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
     \<                                                           %! IC:BACA_HAIRPIN
@@ -7288,9 +7288,9 @@ A_ViolinMusicVoice = {
     \times 6/10 {
         
         % [A ViolinMusicVoice measure 36 / measure 23]           %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
         b''16
-        \f                                                       %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
+        \f                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         \<                                                       %! IC:BACA_HAIRPIN
         [
         

@@ -2010,9 +2010,9 @@ F_ViolaMusicVoice = {
     
     % [F ViolaMusicVoice measure 236 / measure 2]                %! SM4
     \override DynamicLineSpanner.staff-padding = #'6             %! OC1
-    \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     fs!8..
-    \ppp                                                         %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
+    \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     \<                                                           %! IC:BACA_HAIRPIN
     
     r32
@@ -2229,9 +2229,9 @@ F_CelloMusicVoice = {
     
     % [F CelloMusicVoice measure 236 / measure 2]                %! SM4
     \override DynamicLineSpanner.staff-padding = #'6             %! OC1
-    \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     c,8..
-    \ppp                                                         %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
+    \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     \<                                                           %! IC:BACA_HAIRPIN
     
     r32

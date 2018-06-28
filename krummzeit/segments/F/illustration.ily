@@ -1881,38 +1881,38 @@ F_ViolinMusicVoice = {
         
         % [F ViolinMusicVoice measure 245 / measure 11]          %! SM4
         fs!2.
-        - \tweak Y-extent ##f                                    %! PWC1
-        - \tweak bound-details.left.text \markup {               %! PWC1
-            \concat                                              %! PWC1
-                {                                                %! PWC1
-                    \upright                                     %! PWC1
-                        "grid. possibile"                        %! PWC1
-                    \hspace                                      %! PWC1
-                        #0.5                                     %! PWC1
-                }                                                %! PWC1
-            }                                                    %! PWC1
-        - \tweak arrow-width 0.25                                %! PWC1
-        - \tweak dash-fraction 0.25                              %! PWC1
-        - \tweak dash-period 1.5                                 %! PWC1
-        - \tweak bound-details.left-broken.text ##f              %! PWC1
-        - \tweak bound-details.left.stencil-align-dir-y #center  %! PWC1
-        - \tweak bound-details.right.arrow ##t                   %! PWC1
-        - \tweak bound-details.right-broken.arrow ##f            %! PWC1
-        - \tweak bound-details.right-broken.padding 0            %! PWC1
-        - \tweak bound-details.right-broken.text ##f             %! PWC1
-        - \tweak bound-details.right.padding 0.5                 %! PWC1
-        - \tweak bound-details.right.stencil-align-dir-y #center %! PWC1
-        - \tweak bound-details.right.text \markup {              %! PWC1
-            \concat                                              %! PWC1
-                {                                                %! PWC1
-                    \hspace                                      %! PWC1
-                        #0.0                                     %! PWC1
-                    \upright                                     %! PWC1
-                        "flaut. possibile"                       %! PWC1
-                }                                                %! PWC1
-            }                                                    %! PWC1
-        - \tweak staff-padding #5                                %! PWC1
-        \startTextSpan                                           %! PWC1
+        - \tweak Y-extent ##f                                    %! PSC1
+        - \tweak bound-details.left.text \markup {               %! PSC1
+            \concat                                              %! PSC1
+                {                                                %! PSC1
+                    \upright                                     %! PSC1
+                        "grid. possibile"                        %! PSC1
+                    \hspace                                      %! PSC1
+                        #0.5                                     %! PSC1
+                }                                                %! PSC1
+            }                                                    %! PSC1
+        - \tweak arrow-width 0.25                                %! PSC1
+        - \tweak dash-fraction 0.25                              %! PSC1
+        - \tweak dash-period 1.5                                 %! PSC1
+        - \tweak bound-details.left-broken.text ##f              %! PSC1
+        - \tweak bound-details.left.stencil-align-dir-y #center  %! PSC1
+        - \tweak bound-details.right.arrow ##t                   %! PSC1
+        - \tweak bound-details.right-broken.arrow ##f            %! PSC1
+        - \tweak bound-details.right-broken.padding 0            %! PSC1
+        - \tweak bound-details.right-broken.text ##f             %! PSC1
+        - \tweak bound-details.right.padding 0.5                 %! PSC1
+        - \tweak bound-details.right.stencil-align-dir-y #center %! PSC1
+        - \tweak bound-details.right.text \markup {              %! PSC1
+            \concat                                              %! PSC1
+                {                                                %! PSC1
+                    \hspace                                      %! PSC1
+                        #0.0                                     %! PSC1
+                    \upright                                     %! PSC1
+                        "flaut. possibile"                       %! PSC1
+                }                                                %! PSC1
+            }                                                    %! PSC1
+        - \tweak staff-padding #5                                %! PSC1
+        \startTextSpan                                           %! PSC1
         
         fs!1
     }
@@ -1931,7 +1931,7 @@ F_ViolinMusicVoice = {
         fs!2.
         
         fs!1
-        \stopTextSpan                                            %! PWC1
+        \stopTextSpan                                            %! PSC1
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 13/7 {
@@ -2108,38 +2108,38 @@ F_ViolaMusicVoice = {
         
         % [F ViolaMusicVoice measure 247 / measure 13]           %! SM4
         bf,!4
-        - \tweak Y-extent ##f                                    %! PWC1
-        - \tweak bound-details.left.text \markup {               %! PWC1
-            \concat                                              %! PWC1
-                {                                                %! PWC1
-                    \upright                                     %! PWC1
-                        "grid. possibile"                        %! PWC1
-                    \hspace                                      %! PWC1
-                        #0.5                                     %! PWC1
-                }                                                %! PWC1
-            }                                                    %! PWC1
-        - \tweak arrow-width 0.25                                %! PWC1
-        - \tweak dash-fraction 0.25                              %! PWC1
-        - \tweak dash-period 1.5                                 %! PWC1
-        - \tweak bound-details.left-broken.text ##f              %! PWC1
-        - \tweak bound-details.left.stencil-align-dir-y #center  %! PWC1
-        - \tweak bound-details.right.arrow ##t                   %! PWC1
-        - \tweak bound-details.right-broken.arrow ##f            %! PWC1
-        - \tweak bound-details.right-broken.padding 0            %! PWC1
-        - \tweak bound-details.right-broken.text ##f             %! PWC1
-        - \tweak bound-details.right.padding 0.5                 %! PWC1
-        - \tweak bound-details.right.stencil-align-dir-y #center %! PWC1
-        - \tweak bound-details.right.text \markup {              %! PWC1
-            \concat                                              %! PWC1
-                {                                                %! PWC1
-                    \hspace                                      %! PWC1
-                        #0.0                                     %! PWC1
-                    \upright                                     %! PWC1
-                        "flaut. possibile"                       %! PWC1
-                }                                                %! PWC1
-            }                                                    %! PWC1
-        - \tweak staff-padding #5                                %! PWC1
-        \startTextSpan                                           %! PWC1
+        - \tweak Y-extent ##f                                    %! PSC1
+        - \tweak bound-details.left.text \markup {               %! PSC1
+            \concat                                              %! PSC1
+                {                                                %! PSC1
+                    \upright                                     %! PSC1
+                        "grid. possibile"                        %! PSC1
+                    \hspace                                      %! PSC1
+                        #0.5                                     %! PSC1
+                }                                                %! PSC1
+            }                                                    %! PSC1
+        - \tweak arrow-width 0.25                                %! PSC1
+        - \tweak dash-fraction 0.25                              %! PSC1
+        - \tweak dash-period 1.5                                 %! PSC1
+        - \tweak bound-details.left-broken.text ##f              %! PSC1
+        - \tweak bound-details.left.stencil-align-dir-y #center  %! PSC1
+        - \tweak bound-details.right.arrow ##t                   %! PSC1
+        - \tweak bound-details.right-broken.arrow ##f            %! PSC1
+        - \tweak bound-details.right-broken.padding 0            %! PSC1
+        - \tweak bound-details.right-broken.text ##f             %! PSC1
+        - \tweak bound-details.right.padding 0.5                 %! PSC1
+        - \tweak bound-details.right.stencil-align-dir-y #center %! PSC1
+        - \tweak bound-details.right.text \markup {              %! PSC1
+            \concat                                              %! PSC1
+                {                                                %! PSC1
+                    \hspace                                      %! PSC1
+                        #0.0                                     %! PSC1
+                    \upright                                     %! PSC1
+                        "flaut. possibile"                       %! PSC1
+                }                                                %! PSC1
+            }                                                    %! PSC1
+        - \tweak staff-padding #5                                %! PSC1
+        \startTextSpan                                           %! PSC1
         
         bf,!1.
     }
@@ -2150,7 +2150,7 @@ F_ViolaMusicVoice = {
         bf,!4
         
         bf,!1.
-        \stopTextSpan                                            %! PWC1
+        \stopTextSpan                                            %! PSC1
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 13/7 {
@@ -2327,38 +2327,38 @@ F_CelloMusicVoice = {
         
         % [F CelloMusicVoice measure 247 / measure 13]           %! SM4
         a,,1.
-        - \tweak Y-extent ##f                                    %! PWC1
-        - \tweak bound-details.left.text \markup {               %! PWC1
-            \concat                                              %! PWC1
-                {                                                %! PWC1
-                    \upright                                     %! PWC1
-                        "grid. possibile"                        %! PWC1
-                    \hspace                                      %! PWC1
-                        #0.5                                     %! PWC1
-                }                                                %! PWC1
-            }                                                    %! PWC1
-        - \tweak arrow-width 0.25                                %! PWC1
-        - \tweak dash-fraction 0.25                              %! PWC1
-        - \tweak dash-period 1.5                                 %! PWC1
-        - \tweak bound-details.left-broken.text ##f              %! PWC1
-        - \tweak bound-details.left.stencil-align-dir-y #center  %! PWC1
-        - \tweak bound-details.right.arrow ##t                   %! PWC1
-        - \tweak bound-details.right-broken.arrow ##f            %! PWC1
-        - \tweak bound-details.right-broken.padding 0            %! PWC1
-        - \tweak bound-details.right-broken.text ##f             %! PWC1
-        - \tweak bound-details.right.padding 0.5                 %! PWC1
-        - \tweak bound-details.right.stencil-align-dir-y #center %! PWC1
-        - \tweak bound-details.right.text \markup {              %! PWC1
-            \concat                                              %! PWC1
-                {                                                %! PWC1
-                    \hspace                                      %! PWC1
-                        #0.0                                     %! PWC1
-                    \upright                                     %! PWC1
-                        "flaut. possibile"                       %! PWC1
-                }                                                %! PWC1
-            }                                                    %! PWC1
-        - \tweak staff-padding #5                                %! PWC1
-        \startTextSpan                                           %! PWC1
+        - \tweak Y-extent ##f                                    %! PSC1
+        - \tweak bound-details.left.text \markup {               %! PSC1
+            \concat                                              %! PSC1
+                {                                                %! PSC1
+                    \upright                                     %! PSC1
+                        "grid. possibile"                        %! PSC1
+                    \hspace                                      %! PSC1
+                        #0.5                                     %! PSC1
+                }                                                %! PSC1
+            }                                                    %! PSC1
+        - \tweak arrow-width 0.25                                %! PSC1
+        - \tweak dash-fraction 0.25                              %! PSC1
+        - \tweak dash-period 1.5                                 %! PSC1
+        - \tweak bound-details.left-broken.text ##f              %! PSC1
+        - \tweak bound-details.left.stencil-align-dir-y #center  %! PSC1
+        - \tweak bound-details.right.arrow ##t                   %! PSC1
+        - \tweak bound-details.right-broken.arrow ##f            %! PSC1
+        - \tweak bound-details.right-broken.padding 0            %! PSC1
+        - \tweak bound-details.right-broken.text ##f             %! PSC1
+        - \tweak bound-details.right.padding 0.5                 %! PSC1
+        - \tweak bound-details.right.stencil-align-dir-y #center %! PSC1
+        - \tweak bound-details.right.text \markup {              %! PSC1
+            \concat                                              %! PSC1
+                {                                                %! PSC1
+                    \hspace                                      %! PSC1
+                        #0.0                                     %! PSC1
+                    \upright                                     %! PSC1
+                        "flaut. possibile"                       %! PSC1
+                }                                                %! PSC1
+            }                                                    %! PSC1
+        - \tweak staff-padding #5                                %! PSC1
+        \startTextSpan                                           %! PSC1
         
         a,,4
     }
@@ -2367,7 +2367,7 @@ F_CelloMusicVoice = {
         
         % [F CelloMusicVoice measure 249 / measure 15]           %! SM4
         a,,1.
-        \stopTextSpan                                            %! PWC1
+        \stopTextSpan                                            %! PSC1
         
         a,,4
     }

@@ -2614,11 +2614,11 @@ A_OboeMusicVoice = {
     R1 * 1
     
     % [A OboeMusicVoice measure 36 / measure 23]                 %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     ef'!4.
-    \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    \f                                                           %! SM8:EXPLICIT_DYNAMIC:PIC
     -\staccato                                                   %! IC
-    \<                                                           %! IC:BACA_HAIRPIN
+    \<                                                           %! PIC
     \times 2/3 {
         
         e'4
@@ -2818,9 +2818,9 @@ A_OboeMusicVoice = {
     g''16
     -\staccato                                                   %! IC
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     b'16
-    \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    \ff                                                          %! SM8:EXPLICIT_DYNAMIC:PIC
     -\staccato                                                   %! IC
     ~
     ]
@@ -3806,13 +3806,13 @@ A_ClarinetMusicVoice = {
     ~
     
     % [A ClarinetMusicVoice measure 36 / measure 23]             %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     \baca_repeat_pitch_class_warning                             %! SM14
     f''4
-    \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    \f                                                           %! SM8:EXPLICIT_DYNAMIC:PIC
     - \tweak color #red                                          %! SM14
     ^ \markup { @ }                                              %! SM14
-    \<                                                           %! IC:BACA_HAIRPIN
+    \<                                                           %! PIC
     
     \baca_repeat_pitch_class_warning                             %! SM14
     f'4
@@ -3977,9 +3977,9 @@ A_ClarinetMusicVoice = {
         ds''!8
         -\staccato                                               %! IC
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c''8
-        \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+        \ff                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
         -\staccato                                               %! IC
         ]
     }
@@ -7288,10 +7288,10 @@ A_ViolinMusicVoice = {
     \times 6/10 {
         
         % [A ViolinMusicVoice measure 36 / measure 23]           %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         b''16
-        \f                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
-        \<                                                       %! IC:BACA_HAIRPIN
+        \f                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                       %! PIC
         [
         
         c'16
@@ -7498,9 +7498,9 @@ A_ViolinMusicVoice = {
     -\staccato                                                   %! IC
     ~
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     fs'!4
-    \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    \ff                                                          %! SM8:EXPLICIT_DYNAMIC:PIC
     
     % [A ViolinMusicVoice measure 42 / measure 29]               %! SM4
     af'!16

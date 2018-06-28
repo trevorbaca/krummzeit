@@ -1187,10 +1187,10 @@ I_ClarinetMusicVoice = {
     \repeatTie
     
     % [I ClarinetMusicVoice measure 295 / measure 5]             %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     fs!2.
-    \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
-    \<                                                           %! IC:BACA_HAIRPIN
+    \ff                                                          %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                           %! PIC
     \repeatTie
     
     fs!4.
@@ -1204,9 +1204,9 @@ I_ClarinetMusicVoice = {
     \repeatTie
     
     % [I ClarinetMusicVoice measure 297 / measure 7]             %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     fs!4.
-    \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    \fff                                                         %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     fs!4
@@ -1233,10 +1233,10 @@ I_ClarinetMusicVoice = {
     \repeatTie
     
     % [I ClarinetMusicVoice measure 301 / measure 11]            %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     fs!1
-    \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
-    \>                                                           %! IC:BACA_HAIRPIN
+    \fff                                                         %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                           %! PIC
     \repeatTie
     
     % [I ClarinetMusicVoice measure 302 / measure 12]            %! SM4
@@ -1248,9 +1248,9 @@ I_ClarinetMusicVoice = {
     \repeatTie
     
     % [I ClarinetMusicVoice measure 304 / measure 14]            %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     fs!1
-    \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     % [I ClarinetMusicVoice measure 305 / measure 15]            %! SM4

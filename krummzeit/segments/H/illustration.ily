@@ -2653,7 +2653,7 @@ H_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         df'!2.
         :32                                                      %! IC
-        \fff_poss                                                %! SM8:EXPLICIT_DYNAMIC:IC
+        \baca_fff_poss                                           %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             \with-color                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                 #(x11-color 'green4)                             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -2823,7 +2823,7 @@ H_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         c4
         :32                                                      %! IC
-        \fff_poss                                                %! SM8:EXPLICIT_DYNAMIC:IC
+        \baca_fff_poss                                           %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             \with-color                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                 #(x11-color 'green4)                             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -2991,7 +2991,7 @@ H_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         c,2
         :32                                                      %! IC
-        \fff_poss                                                %! SM8:EXPLICIT_DYNAMIC:IC
+        \baca_fff_poss                                           %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             \with-color                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                 #(x11-color 'green4)                             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37

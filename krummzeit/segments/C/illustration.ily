@@ -2022,7 +2022,7 @@ C_PercussionMusicVoice = {
     \baca_unpitched_music_warning                                %! SM24
     c2.
     :32                                                          %! IC
-    \ppp_ancora                                                  %! SM8:REDUNDANT_DYNAMIC:IC
+    \baca_ppp_ancora                                             %! SM8:REDUNDANT_DYNAMIC:IC
     ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -2515,7 +2515,7 @@ C_ViolinMusicVoice = {
     \override Stem.direction = #up                               %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     fs!1
-    \fff_poss                                                    %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_fff_poss                                               %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup { arco }                                           %! IC
     
     % [C ViolinMusicVoice measure 147 / measure 15]              %! SM4
@@ -2734,7 +2734,7 @@ C_ViolaMusicVoice = {
     \override Stem.direction = #up                               %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     bf,!2.
-    \fff_poss                                                    %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_fff_poss                                               %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup { arco }                                           %! IC
     
     % [C ViolaMusicVoice measure 144 / measure 12]               %! SM4
@@ -2747,7 +2747,7 @@ C_ViolaMusicVoice = {
     % [C ViolaMusicVoice measure 146 / measure 14]               %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     bf,!1
-    \fff_poss                                                    %! SM8:REDUNDANT_DYNAMIC:IC
+    \baca_fff_poss                                               %! SM8:REDUNDANT_DYNAMIC:IC
     
     % [C ViolaMusicVoice measure 147 / measure 15]               %! SM4
     bf,!1
@@ -2972,7 +2972,7 @@ C_CelloMusicVoice = {
     \override Stem.direction = #up                               %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     a,,1
-    \fff_poss                                                    %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_fff_poss                                               %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup { arco }                                           %! IC
     
     % [C CelloMusicVoice measure 147 / measure 15]               %! SM4

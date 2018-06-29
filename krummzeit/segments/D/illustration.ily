@@ -3611,7 +3611,7 @@ D_PercussionMusicVoice = {
         % [D PercussionMusicVoice measure 157 / measure 6]       %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         c'2
-        \effort_ff                                               %! SM8:EXPLICIT_DYNAMIC:IC
+        \baca_effort_ff                                          %! SM8:EXPLICIT_DYNAMIC:IC
         -\accent                                                 %! IC
         ^ \markup {                                              %! IC
             \override                                            %! IC
@@ -4250,7 +4250,7 @@ D_ViolinMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     \baca_repeat_pitch_class_warning                             %! SM14
     ef'!4
-    \effort_mp                                                   %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_mp                                              %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -5010,7 +5010,7 @@ D_ViolaMusicVoice = {
     \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     c4
-    \effort_mp                                                   %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_mp                                              %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -5841,7 +5841,7 @@ D_CelloMusicVoice = {
     \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     d,4
-    \effort_mp                                                   %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_mp                                              %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37

@@ -1222,7 +1222,7 @@ I_ClarinetMusicVoice = {
     % [I ClarinetMusicVoice measure 299 / measure 9]             %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     fs!1
-    \fff_poss                                                    %! SM8:REDUNDANT_DYNAMIC:IC
+    \baca_fff_poss                                               %! SM8:REDUNDANT_DYNAMIC:IC
     \repeatTie
     
     % [I ClarinetMusicVoice measure 300 / measure 10]            %! SM4
@@ -5050,7 +5050,7 @@ I_ViolinMusicVoice = {
     % [I ViolinMusicVoice measure 295 / measure 5]               %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     g''4
-    \effort_f                                                    %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_f                                               %! SM8:EXPLICIT_DYNAMIC:IC
     -\downbow                                                    %! IC
     ^ \markup { "directly on bridge: full bow each stroke" }     %! IC
     \glissando                                                   %! SC
@@ -5420,7 +5420,7 @@ I_ViolaMusicVoice = {
 %@% \override Staff.Clef.color = ##f                             %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set Staff.forceClef = ##t                                   %! SM8:EXPLICIT_CLEF:SM33:IC
     ef''!4
-    \effort_f                                                    %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_f                                               %! SM8:EXPLICIT_DYNAMIC:IC
     -\downbow                                                    %! IC
     ^ \markup { "directly on bridge: full bow each stroke" }     %! IC
     \glissando                                                   %! SC
@@ -5787,7 +5787,7 @@ I_CelloMusicVoice = {
 %@% \override Staff.Clef.color = ##f                             %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set Staff.forceClef = ##t                                   %! SM8:EXPLICIT_CLEF:SM33:IC
     d''4
-    \effort_f                                                    %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_f                                               %! SM8:EXPLICIT_DYNAMIC:IC
     -\downbow                                                    %! IC
     ^ \markup { "directly on bridge: full bow each stroke" }     %! IC
     \glissando                                                   %! SC

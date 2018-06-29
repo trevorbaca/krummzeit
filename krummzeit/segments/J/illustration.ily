@@ -1905,7 +1905,7 @@ J_PianoMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     cs'''!2.
     :32                                                          %! IC
-    \fff_poss                                                    %! SM8:REDUNDANT_DYNAMIC:IC
+    \baca_fff_poss                                               %! SM8:REDUNDANT_DYNAMIC:IC
     \repeatTie
     
     cs'''!2

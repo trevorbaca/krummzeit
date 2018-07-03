@@ -1829,6 +1829,7 @@ F_ViolinMusicVoice = {
             }                                                    %! PIC
         - \tweak bound-details.right.padding #0.5                %! PIC
         - \tweak bound-details.right.stencil-align-dir-y #center %! PIC
+        - \tweak staff-padding #5                                %! PIC
         \startTextSpan                                           %! PIC
         
         fs!1
@@ -2041,6 +2042,7 @@ F_ViolaMusicVoice = {
             }                                                    %! PIC
         - \tweak bound-details.right.padding #0.5                %! PIC
         - \tweak bound-details.right.stencil-align-dir-y #center %! PIC
+        - \tweak staff-padding #5                                %! PIC
         \startTextSpan                                           %! PIC
         
         bf,!1.
@@ -2245,6 +2247,7 @@ F_CelloMusicVoice = {
             }                                                    %! PIC
         - \tweak bound-details.right.padding #0.5                %! PIC
         - \tweak bound-details.right.stencil-align-dir-y #center %! PIC
+        - \tweak staff-padding #5                                %! PIC
         \startTextSpan                                           %! PIC
         
         a,,4

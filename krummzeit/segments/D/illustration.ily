@@ -4348,39 +4348,24 @@ D_ViolinMusicVoice = {
         fs''!4
         \pp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                       %! PIC
+        - \abjad_dashed_line_with_arrow                          %! PIC
+        - \tweak bound-details.left.text \markup {               %! PIC
+            \concat                                              %! PIC
+                {                                                %! PIC
+                    \upright                                     %! PIC
+                        "molto flautando"                        %! PIC
+                    \hspace                                      %! PIC
+                        #0.5                                     %! PIC
+                }                                                %! PIC
+            }                                                    %! PIC
+        - \tweak bound-details.right.text \markup {              %! PIC
+            \upright                                             %! PIC
+                "molto gridato ed estr. sul pont."               %! PIC
+            }                                                    %! PIC
+        - \tweak bound-details.right.padding #0.5                %! PIC
+        - \tweak bound-details.right.stencil-align-dir-y #center %! PIC
+        \startTextSpan                                           %! PIC
         \glissando                                               %! SC
-        - \tweak Y-extent ##f                                    %! PSC1
-        - \tweak bound-details.left.text \markup {               %! PSC1
-            \concat                                              %! PSC1
-                {                                                %! PSC1
-                    \upright                                     %! PSC1
-                        "molto flautando"                        %! PSC1
-                    \hspace                                      %! PSC1
-                        #0.5                                     %! PSC1
-                }                                                %! PSC1
-            }                                                    %! PSC1
-        - \tweak arrow-width 0.25                                %! PSC1
-        - \tweak dash-fraction 0.25                              %! PSC1
-        - \tweak dash-period 1.5                                 %! PSC1
-        - \tweak bound-details.left-broken.text ##f              %! PSC1
-        - \tweak bound-details.left.stencil-align-dir-y #center  %! PSC1
-        - \tweak bound-details.right.arrow ##t                   %! PSC1
-        - \tweak bound-details.right-broken.arrow ##f            %! PSC1
-        - \tweak bound-details.right-broken.padding 0            %! PSC1
-        - \tweak bound-details.right-broken.text ##f             %! PSC1
-        - \tweak bound-details.right.padding 0.5                 %! PSC1
-        - \tweak bound-details.right.stencil-align-dir-y #center %! PSC1
-        - \tweak bound-details.right.text \markup {              %! PSC1
-            \concat                                              %! PSC1
-                {                                                %! PSC1
-                    \hspace                                      %! PSC1
-                        #0.0                                     %! PSC1
-                    \upright                                     %! PSC1
-                        "molto gridato ed estr. sul pont."       %! PSC1
-                }                                                %! PSC1
-            }                                                    %! PSC1
-        - \tweak staff-padding #6                                %! PSC1
-        \startTextSpan                                           %! PSC1
         
         b''2
         \glissando                                               %! SC
@@ -4425,7 +4410,7 @@ D_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         cs''!2
         \f                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
-        \stopTextSpan                                            %! PSC1
+        \stopTextSpan                                            %! PIC
     }
     
     r2
@@ -5105,39 +5090,24 @@ D_ViolaMusicVoice = {
         cs''!16
         \pp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                       %! PIC
+        - \abjad_dashed_line_with_arrow                          %! PIC
+        - \tweak bound-details.left.text \markup {               %! PIC
+            \concat                                              %! PIC
+                {                                                %! PIC
+                    \upright                                     %! PIC
+                        "molto flautando"                        %! PIC
+                    \hspace                                      %! PIC
+                        #0.5                                     %! PIC
+                }                                                %! PIC
+            }                                                    %! PIC
+        - \tweak bound-details.right.text \markup {              %! PIC
+            \upright                                             %! PIC
+                "molto gridato ed estr. sul pont."               %! PIC
+            }                                                    %! PIC
+        - \tweak bound-details.right.padding #0.5                %! PIC
+        - \tweak bound-details.right.stencil-align-dir-y #center %! PIC
+        \startTextSpan                                           %! PIC
         \glissando                                               %! SC
-        - \tweak Y-extent ##f                                    %! PSC1
-        - \tweak bound-details.left.text \markup {               %! PSC1
-            \concat                                              %! PSC1
-                {                                                %! PSC1
-                    \upright                                     %! PSC1
-                        "molto flautando"                        %! PSC1
-                    \hspace                                      %! PSC1
-                        #0.5                                     %! PSC1
-                }                                                %! PSC1
-            }                                                    %! PSC1
-        - \tweak arrow-width 0.25                                %! PSC1
-        - \tweak dash-fraction 0.25                              %! PSC1
-        - \tweak dash-period 1.5                                 %! PSC1
-        - \tweak bound-details.left-broken.text ##f              %! PSC1
-        - \tweak bound-details.left.stencil-align-dir-y #center  %! PSC1
-        - \tweak bound-details.right.arrow ##t                   %! PSC1
-        - \tweak bound-details.right-broken.arrow ##f            %! PSC1
-        - \tweak bound-details.right-broken.padding 0            %! PSC1
-        - \tweak bound-details.right-broken.text ##f             %! PSC1
-        - \tweak bound-details.right.padding 0.5                 %! PSC1
-        - \tweak bound-details.right.stencil-align-dir-y #center %! PSC1
-        - \tweak bound-details.right.text \markup {              %! PSC1
-            \concat                                              %! PSC1
-                {                                                %! PSC1
-                    \hspace                                      %! PSC1
-                        #0.0                                     %! PSC1
-                    \upright                                     %! PSC1
-                        "molto gridato ed estr. sul pont."       %! PSC1
-                }                                                %! PSC1
-            }                                                    %! PSC1
-        - \tweak staff-padding #6                                %! PSC1
-        \startTextSpan                                           %! PSC1
         
         f''4
         \glissando                                               %! SC
@@ -5259,7 +5229,7 @@ D_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c''2
         \f                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
-        \stopTextSpan                                            %! PSC1
+        \stopTextSpan                                            %! PIC
         \glissando                                               %! SC
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -5940,39 +5910,24 @@ D_CelloMusicVoice = {
         g''4
         \pp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                       %! PIC
+        - \abjad_dashed_line_with_arrow                          %! PIC
+        - \tweak bound-details.left.text \markup {               %! PIC
+            \concat                                              %! PIC
+                {                                                %! PIC
+                    \upright                                     %! PIC
+                        "molto flautando"                        %! PIC
+                    \hspace                                      %! PIC
+                        #0.5                                     %! PIC
+                }                                                %! PIC
+            }                                                    %! PIC
+        - \tweak bound-details.right.text \markup {              %! PIC
+            \upright                                             %! PIC
+                "molto gridato ed estr. sul pont."               %! PIC
+            }                                                    %! PIC
+        - \tweak bound-details.right.padding #0.5                %! PIC
+        - \tweak bound-details.right.stencil-align-dir-y #center %! PIC
+        \startTextSpan                                           %! PIC
         \glissando                                               %! SC
-        - \tweak Y-extent ##f                                    %! PSC1
-        - \tweak bound-details.left.text \markup {               %! PSC1
-            \concat                                              %! PSC1
-                {                                                %! PSC1
-                    \upright                                     %! PSC1
-                        "molto flautando"                        %! PSC1
-                    \hspace                                      %! PSC1
-                        #0.5                                     %! PSC1
-                }                                                %! PSC1
-            }                                                    %! PSC1
-        - \tweak arrow-width 0.25                                %! PSC1
-        - \tweak dash-fraction 0.25                              %! PSC1
-        - \tweak dash-period 1.5                                 %! PSC1
-        - \tweak bound-details.left-broken.text ##f              %! PSC1
-        - \tweak bound-details.left.stencil-align-dir-y #center  %! PSC1
-        - \tweak bound-details.right.arrow ##t                   %! PSC1
-        - \tweak bound-details.right-broken.arrow ##f            %! PSC1
-        - \tweak bound-details.right-broken.padding 0            %! PSC1
-        - \tweak bound-details.right-broken.text ##f             %! PSC1
-        - \tweak bound-details.right.padding 0.5                 %! PSC1
-        - \tweak bound-details.right.stencil-align-dir-y #center %! PSC1
-        - \tweak bound-details.right.text \markup {              %! PSC1
-            \concat                                              %! PSC1
-                {                                                %! PSC1
-                    \hspace                                      %! PSC1
-                        #0.0                                     %! PSC1
-                    \upright                                     %! PSC1
-                        "molto gridato ed estr. sul pont."       %! PSC1
-                }                                                %! PSC1
-            }                                                    %! PSC1
-        - \tweak staff-padding #6                                %! PSC1
-        \startTextSpan                                           %! PSC1
         
         fs''!2
         \glissando                                               %! SC
@@ -6002,7 +5957,7 @@ D_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         bf''!2
         \f                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
-        \stopTextSpan                                            %! PSC1
+        \stopTextSpan                                            %! PIC
     }
     
     % [D CelloMusicVoice measure 168 / measure 17]               %! SM4

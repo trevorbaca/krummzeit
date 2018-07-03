@@ -178,7 +178,7 @@ maker(
 
 maker(
     ('vn', (8, 10)),
-    baca.transition(
+    baca.new_transition(
         baca.markups.grid_possibile(),
         baca.markups.flaut_possibile(),
         tweaks=[abjad.tweak(5).staff_padding],
@@ -187,7 +187,7 @@ maker(
 
 maker(
     (['va', 'vc'], (9, 10)),
-    baca.transition(
+    baca.new_transition(
         baca.markups.grid_possibile(),
         baca.markups.flaut_possibile(),
         tweaks=[abjad.tweak(5).staff_padding],

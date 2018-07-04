@@ -26,25 +26,31 @@ A_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
 %@%         [0'27'']                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
-    - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
-%@% - \tweak bound-details.left.text \markup {                           %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
-%@%     \abjad-metronome-mark-markup #2 #0 #1.5 #"135"                   %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
-%@%     \hspace                                                          %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
-%@%         #1                                                           %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
-%@%     }                                                                %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.left.text \markup {                           %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
-        \with-color                                                      %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
-            #(x11-color 'green4)                                         %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
-            {                                                            %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
-                \abjad-metronome-mark-markup #2 #0 #1.5 #"135"           %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
-                \hspace                                                  %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
-                    #1                                                   %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
-            }                                                            %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
-        }                                                                %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
-    - \baca_invisible_line_segment                                       %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.right.padding 0                               %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
-    \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
+    \stopTextSpan                                                        %! MMI1
+%@% - \abjad_invisible_line                                              %! MMI2
+%@% - \tweak bound-details.left.text \markup {                           %! MMI2
+%@%     \concat                                                          %! MMI2
+%@%         {                                                            %! MMI2
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"135"             %! MMI2
+%@%             \hspace                                                  %! MMI2
+%@%                 #0.5                                                 %! MMI2
+%@%         }                                                            %! MMI2
+%@%     }                                                                %! MMI2
+%@% - \tweak bound-details.left-broken.text ##f                          %! MMI2
+%@% \startTextSpan                                                       %! MMI2
+    - \abjad_invisible_line                                              %! MMI3
+    - \tweak bound-details.left.text \markup {                           %! MMI3
+        \concat                                                          %! MMI3
+            {                                                            %! MMI3
+                \with-color                                              %! MMI3
+                    #(x11-color 'green4)                                 %! MMI3
+                    \abjad-metronome-mark-markup #2 #0 #1 #"135"         %! MMI3
+                \hspace                                                  %! MMI3
+                    #0.5                                                 %! MMI3
+            }                                                            %! MMI3
+        }                                                                %! MMI3
+    - \tweak bound-details.left-broken.text ##f                          %! MMI3
+    \startTextSpan                                                       %! MMI3
     
     % [A GlobalSkips measure 15 / measure 2]                             %! SM4
     s1 * 3/4
@@ -535,208 +541,205 @@ A_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
 %@%         [1'10'']                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
-    - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
-%@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \smaller                                                         %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         \general-align                                               %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%             #Y                                                       %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%             #DOWN                                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%             \note-by-number                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                 #2                                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                 #0                                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                 #1                                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \upright                                                         %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         " = 67.5"                                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \hspace                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         #0.5                                                         %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \general-align                                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         #Y                                                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         #DOWN                                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         \override                                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%             #'(padding . 0.5)                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%             \parenthesize                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                 \line                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                     {                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                         \scale                                       %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                             #'(0.5 . 0.5)                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                             \score                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                 {                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     \new Score                       %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     \with                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     {                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         \override SpacingSpanner.spacing-increment = #0.5 %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         proportionalNotationDuration = ##f %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     }                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     <<                               %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         \new RhythmicStaff           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         \with                        %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         {                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \remove Time_signature_engraver %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \remove Staff_symbol_engraver %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override Stem.direction = #up %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override Stem.length = #5 %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.bracket-visibility = ##t %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.direction = #up %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.padding = #1.25 %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletNumber.text = #tuplet-number::calc-fraction-text %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             tupletFullLength = ##t   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         }                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         {                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             c4                       %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         }                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     >>                               %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     \layout {                        %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         indent = #0                  %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         ragged-right = ##t           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     }                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                 }                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                         =                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                         \hspace                                      %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                             #-0.5                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                         \scale                                       %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                             #'(0.5 . 0.5)                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                             \score                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                 {                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     \new Score                       %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     \with                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     {                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         \override SpacingSpanner.spacing-increment = #0.5 %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         proportionalNotationDuration = ##f %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     }                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     <<                               %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         \new RhythmicStaff           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         \with                        %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         {                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \remove Time_signature_engraver %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \remove Staff_symbol_engraver %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override Stem.direction = #up %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override Stem.length = #5 %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.bracket-visibility = ##t %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.direction = #up %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.padding = #1.25 %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletNumber.text = #tuplet-number::calc-fraction-text %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             tupletFullLength = ##t   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         }                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         {                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             c8                       %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         }                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     >>                               %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     \layout {                        %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         indent = #0                  %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         ragged-right = ##t           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     }                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                 }                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                     }                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \hspace                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         #1                                                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     }                                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.left.text \markup {                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-        \with-color                                                      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            #(x11-color 'blue)                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \smaller                                                 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    \general-align                                       %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                        #Y                                               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                        #DOWN                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                        \note-by-number                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                            #2                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                            #0                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                            #1                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \upright                                                 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    " = 67.5"                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \hspace                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    #0.5                                                 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \general-align                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    #Y                                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    #DOWN                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    \override                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                        #'(padding . 0.5)                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                        \parenthesize                                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                            \line                                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                {                                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                    \scale                               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                        #'(0.5 . 0.5)                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                        \score                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                            {                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                \new Score               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                \with                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                {                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    \override SpacingSpanner.spacing-increment = #0.5 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    proportionalNotationDuration = ##f %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                }                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                <<                       %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    \new RhythmicStaff   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    \with                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    {                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \remove Time_signature_engraver %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \remove Staff_symbol_engraver %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override Stem.direction = #up %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override Stem.length = #5 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.bracket-visibility = ##t %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.direction = #up %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.padding = #1.25 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        tupletFullLength = ##t %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    }                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    {                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        c4               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    }                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                >>                       %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                \layout {                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    indent = #0          %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    ragged-right = ##t   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                }                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                            }                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                    =                                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                    \hspace                              %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                        #-0.5                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                    \scale                               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                        #'(0.5 . 0.5)                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                        \score                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                            {                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                \new Score               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                \with                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                {                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    \override SpacingSpanner.spacing-increment = #0.5 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    proportionalNotationDuration = ##f %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                }                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                <<                       %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    \new RhythmicStaff   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    \with                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    {                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \remove Time_signature_engraver %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \remove Staff_symbol_engraver %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override Stem.direction = #up %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override Stem.length = #5 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.bracket-visibility = ##t %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.direction = #up %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.padding = #1.25 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        tupletFullLength = ##t %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    }                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    {                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        c8               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    }                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                >>                       %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                \layout {                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    indent = #0          %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    ragged-right = ##t   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                }                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                            }                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                }                                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \hspace                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    #1                                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            }                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-        }                                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-    - \baca_invisible_line_segment                                       %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.right.padding 0                               %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
-    \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
+    \stopTextSpan                                                        %! MMI1
+%@% - \abjad_invisible_line                                              %! MMI2
+%@% - \tweak bound-details.left.text \markup {                           %! MMI2
+%@%     \concat                                                          %! MMI2
+%@%         {                                                            %! MMI2
+%@%             \concat                                                  %! MMI2
+%@%                 {                                                    %! MMI2
+%@%                     {                                                %! MMI2
+%@%                         \smaller                                     %! MMI2
+%@%                             \general-align                           %! MMI2
+%@%                                 #Y                                   %! MMI2
+%@%                                 #DOWN                                %! MMI2
+%@%                                 \note-by-number                      %! MMI2
+%@%                                     #2                               %! MMI2
+%@%                                     #0                               %! MMI2
+%@%                                     #1                               %! MMI2
+%@%                         \upright                                     %! MMI2
+%@%                             " = 67.5"                                %! MMI2
+%@%                     }                                                %! MMI2
+%@%                     \hspace                                          %! MMI2
+%@%                         #2                                           %! MMI2
+%@%                     \parenthesize                                    %! MMI2
+%@%                         \line                                        %! MMI2
+%@%                             {                                        %! MMI2
+%@%                                 \score                               %! MMI2
+%@%                                     {                                %! MMI2
+%@%                                         \new Score                   %! MMI2
+%@%                                         \with                        %! MMI2
+%@%                                         {                            %! MMI2
+%@%                                             \override SpacingSpanner.spacing-increment = #0.5 %! MMI2
+%@%                                             proportionalNotationDuration = ##f %! MMI2
+%@%                                         }                            %! MMI2
+%@%                                         <<                           %! MMI2
+%@%                                             \new RhythmicStaff       %! MMI2
+%@%                                             \with                    %! MMI2
+%@%                                             {                        %! MMI2
+%@%                                                 \remove Time_signature_engraver %! MMI2
+%@%                                                 \remove Staff_symbol_engraver %! MMI2
+%@%                                                 \override Stem.direction = #up %! MMI2
+%@%                                                 \override Stem.length = #5 %! MMI2
+%@%                                                 \override TupletBracket.bracket-visibility = ##t %! MMI2
+%@%                                                 \override TupletBracket.direction = #up %! MMI2
+%@%                                                 \override TupletBracket.padding = #1.25 %! MMI2
+%@%                                                 \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! MMI2
+%@%                                                 \override TupletNumber.text = #tuplet-number::calc-fraction-text %! MMI2
+%@%                                                 tupletFullLength = ##t %! MMI2
+%@%                                             }                        %! MMI2
+%@%                                             {                        %! MMI2
+%@%                                                 c4                   %! MMI2
+%@%                                             }                        %! MMI2
+%@%                                         >>                           %! MMI2
+%@%                                         \layout {                    %! MMI2
+%@%                                             indent = #0              %! MMI2
+%@%                                             ragged-right = ##t       %! MMI2
+%@%                                         }                            %! MMI2
+%@%                                     }                                %! MMI2
+%@%                                 =                                    %! MMI2
+%@%                                 \hspace                              %! MMI2
+%@%                                     #-0.5                            %! MMI2
+%@%                                 \score                               %! MMI2
+%@%                                     {                                %! MMI2
+%@%                                         \new Score                   %! MMI2
+%@%                                         \with                        %! MMI2
+%@%                                         {                            %! MMI2
+%@%                                             \override SpacingSpanner.spacing-increment = #0.5 %! MMI2
+%@%                                             proportionalNotationDuration = ##f %! MMI2
+%@%                                         }                            %! MMI2
+%@%                                         <<                           %! MMI2
+%@%                                             \new RhythmicStaff       %! MMI2
+%@%                                             \with                    %! MMI2
+%@%                                             {                        %! MMI2
+%@%                                                 \remove Time_signature_engraver %! MMI2
+%@%                                                 \remove Staff_symbol_engraver %! MMI2
+%@%                                                 \override Stem.direction = #up %! MMI2
+%@%                                                 \override Stem.length = #5 %! MMI2
+%@%                                                 \override TupletBracket.bracket-visibility = ##t %! MMI2
+%@%                                                 \override TupletBracket.direction = #up %! MMI2
+%@%                                                 \override TupletBracket.padding = #1.25 %! MMI2
+%@%                                                 \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! MMI2
+%@%                                                 \override TupletNumber.text = #tuplet-number::calc-fraction-text %! MMI2
+%@%                                                 tupletFullLength = ##t %! MMI2
+%@%                                             }                        %! MMI2
+%@%                                             {                        %! MMI2
+%@%                                                 c8                   %! MMI2
+%@%                                             }                        %! MMI2
+%@%                                         >>                           %! MMI2
+%@%                                         \layout {                    %! MMI2
+%@%                                             indent = #0              %! MMI2
+%@%                                             ragged-right = ##t       %! MMI2
+%@%                                         }                            %! MMI2
+%@%                                     }                                %! MMI2
+%@%                             }                                        %! MMI2
+%@%                 }                                                    %! MMI2
+%@%             \hspace                                                  %! MMI2
+%@%                 #0.5                                                 %! MMI2
+%@%         }                                                            %! MMI2
+%@%     }                                                                %! MMI2
+%@% - \tweak bound-details.left-broken.text ##f                          %! MMI2
+%@% \startTextSpan                                                       %! MMI2
+    - \abjad_invisible_line                                              %! MMI3
+    - \tweak bound-details.left.text \markup {                           %! MMI3
+        \concat                                                          %! MMI3
+            {                                                            %! MMI3
+                \with-color                                              %! MMI3
+                    #(x11-color 'blue)                                   %! MMI3
+                    \concat                                              %! MMI3
+                        {                                                %! MMI3
+                            {                                            %! MMI3
+                                \smaller                                 %! MMI3
+                                    \general-align                       %! MMI3
+                                        #Y                               %! MMI3
+                                        #DOWN                            %! MMI3
+                                        \note-by-number                  %! MMI3
+                                            #2                           %! MMI3
+                                            #0                           %! MMI3
+                                            #1                           %! MMI3
+                                \upright                                 %! MMI3
+                                    " = 67.5"                            %! MMI3
+                            }                                            %! MMI3
+                            \hspace                                      %! MMI3
+                                #2                                       %! MMI3
+                            \parenthesize                                %! MMI3
+                                \line                                    %! MMI3
+                                    {                                    %! MMI3
+                                        \score                           %! MMI3
+                                            {                            %! MMI3
+                                                \new Score               %! MMI3
+                                                \with                    %! MMI3
+                                                {                        %! MMI3
+                                                    \override SpacingSpanner.spacing-increment = #0.5 %! MMI3
+                                                    proportionalNotationDuration = ##f %! MMI3
+                                                }                        %! MMI3
+                                                <<                       %! MMI3
+                                                    \new RhythmicStaff   %! MMI3
+                                                    \with                %! MMI3
+                                                    {                    %! MMI3
+                                                        \remove Time_signature_engraver %! MMI3
+                                                        \remove Staff_symbol_engraver %! MMI3
+                                                        \override Stem.direction = #up %! MMI3
+                                                        \override Stem.length = #5 %! MMI3
+                                                        \override TupletBracket.bracket-visibility = ##t %! MMI3
+                                                        \override TupletBracket.direction = #up %! MMI3
+                                                        \override TupletBracket.padding = #1.25 %! MMI3
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! MMI3
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text %! MMI3
+                                                        tupletFullLength = ##t %! MMI3
+                                                    }                    %! MMI3
+                                                    {                    %! MMI3
+                                                        c4               %! MMI3
+                                                    }                    %! MMI3
+                                                >>                       %! MMI3
+                                                \layout {                %! MMI3
+                                                    indent = #0          %! MMI3
+                                                    ragged-right = ##t   %! MMI3
+                                                }                        %! MMI3
+                                            }                            %! MMI3
+                                        =                                %! MMI3
+                                        \hspace                          %! MMI3
+                                            #-0.5                        %! MMI3
+                                        \score                           %! MMI3
+                                            {                            %! MMI3
+                                                \new Score               %! MMI3
+                                                \with                    %! MMI3
+                                                {                        %! MMI3
+                                                    \override SpacingSpanner.spacing-increment = #0.5 %! MMI3
+                                                    proportionalNotationDuration = ##f %! MMI3
+                                                }                        %! MMI3
+                                                <<                       %! MMI3
+                                                    \new RhythmicStaff   %! MMI3
+                                                    \with                %! MMI3
+                                                    {                    %! MMI3
+                                                        \remove Time_signature_engraver %! MMI3
+                                                        \remove Staff_symbol_engraver %! MMI3
+                                                        \override Stem.direction = #up %! MMI3
+                                                        \override Stem.length = #5 %! MMI3
+                                                        \override TupletBracket.bracket-visibility = ##t %! MMI3
+                                                        \override TupletBracket.direction = #up %! MMI3
+                                                        \override TupletBracket.padding = #1.25 %! MMI3
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! MMI3
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text %! MMI3
+                                                        tupletFullLength = ##t %! MMI3
+                                                    }                    %! MMI3
+                                                    {                    %! MMI3
+                                                        c8               %! MMI3
+                                                    }                    %! MMI3
+                                                >>                       %! MMI3
+                                                \layout {                %! MMI3
+                                                    indent = #0          %! MMI3
+                                                    ragged-right = ##t   %! MMI3
+                                                }                        %! MMI3
+                                            }                            %! MMI3
+                                    }                                    %! MMI3
+                        }                                                %! MMI3
+                \hspace                                                  %! MMI3
+                    #0.5                                                 %! MMI3
+            }                                                            %! MMI3
+        }                                                                %! MMI3
+    - \tweak bound-details.left-broken.text ##f                          %! MMI3
+    \startTextSpan                                                       %! MMI3
     
     % [A GlobalSkips measure 37 / measure 24]                            %! SM4
     \time 3/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -865,30 +868,35 @@ A_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
 %@%         [1'31'']                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
-    - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
-%@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \large                                                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         \upright                                                     %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%             accel.                                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \hspace                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         #1                                                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     }                                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.left.text \markup {                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-        \with-color                                                      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            #(x11-color 'blue)                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \large                                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    \upright                                             %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                        accel.                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \hspace                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    #1                                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            }                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-        }                                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-    - \baca_dashed_arrow                                                 %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.right.padding 0                               %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
-    \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
+    \stopTextSpan                                                        %! MMI1
+%@% - \abjad_dashed_line_with_arrow                                      %! MMI2
+%@% - \tweak bound-details.left.text \markup {                           %! MMI2
+%@%     \concat                                                          %! MMI2
+%@%         {                                                            %! MMI2
+%@%             \large                                                   %! MMI2
+%@%                 \upright                                             %! MMI2
+%@%                     accel.                                           %! MMI2
+%@%             \hspace                                                  %! MMI2
+%@%                 #0.5                                                 %! MMI2
+%@%         }                                                            %! MMI2
+%@%     }                                                                %! MMI2
+%@% - \tweak bound-details.left-broken.text ##f                          %! MMI2
+%@% \startTextSpan                                                       %! MMI2
+    - \abjad_dashed_line_with_arrow                                      %! MMI3
+    - \tweak bound-details.left.text \markup {                           %! MMI3
+        \concat                                                          %! MMI3
+            {                                                            %! MMI3
+                \with-color                                              %! MMI3
+                    #(x11-color 'blue)                                   %! MMI3
+                    \large                                               %! MMI3
+                        \upright                                         %! MMI3
+                            accel.                                       %! MMI3
+                \hspace                                                  %! MMI3
+                    #0.5                                                 %! MMI3
+            }                                                            %! MMI3
+        }                                                                %! MMI3
+    - \tweak bound-details.left-broken.text ##f                          %! MMI3
+    \startTextSpan                                                       %! MMI3
     
     % [A GlobalSkips measure 43 / measure 30]                            %! SM4
     \time 3/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -1002,26 +1010,31 @@ A_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
 %@%         [1'51'']                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
-    - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
-%@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \abjad-metronome-mark-markup #2 #0 #1.5 #"135"                   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \hspace                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         #1                                                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     }                                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.left.text \markup {                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-        \with-color                                                      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            #(x11-color 'blue)                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \abjad-metronome-mark-markup #2 #0 #1.5 #"135"           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \hspace                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    #1                                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            }                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-        }                                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-    - \baca_invisible_line_segment                                       %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.right.padding 0                               %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
-    \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
+    \stopTextSpan                                                        %! MMI1
+%@% - \abjad_invisible_line                                              %! MMI2
+%@% - \tweak bound-details.left.text \markup {                           %! MMI2
+%@%     \concat                                                          %! MMI2
+%@%         {                                                            %! MMI2
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"135"             %! MMI2
+%@%             \hspace                                                  %! MMI2
+%@%                 #0.5                                                 %! MMI2
+%@%         }                                                            %! MMI2
+%@%     }                                                                %! MMI2
+%@% - \tweak bound-details.left-broken.text ##f                          %! MMI2
+%@% \startTextSpan                                                       %! MMI2
+    - \abjad_invisible_line                                              %! MMI3
+    - \tweak bound-details.left.text \markup {                           %! MMI3
+        \concat                                                          %! MMI3
+            {                                                            %! MMI3
+                \with-color                                              %! MMI3
+                    #(x11-color 'blue)                                   %! MMI3
+                    \abjad-metronome-mark-markup #2 #0 #1 #"135"         %! MMI3
+                \hspace                                                  %! MMI3
+                    #0.5                                                 %! MMI3
+            }                                                            %! MMI3
+        }                                                                %! MMI3
+    - \tweak bound-details.left-broken.text ##f                          %! MMI3
+    \startTextSpan                                                       %! MMI3
     
     % [A GlobalSkips measure 48 / measure 35]                            %! SM4
     \time 2/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -1137,190 +1150,183 @@ A_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
 %@%         [1'59'']                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
-    - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
-%@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \abjad-metronome-mark-markup #2 #0 #1.5 #"90"                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \hspace                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         #0.5                                                         %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \general-align                                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         #Y                                                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         #DOWN                                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         \override                                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%             #'(padding . 0.5)                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%             \parenthesize                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                 \line                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                     {                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                         \scale                                       %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                             #'(0.5 . 0.5)                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                             \score                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                 {                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     \new Score                       %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     \with                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     {                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         \override SpacingSpanner.spacing-increment = #0.5 %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         proportionalNotationDuration = ##f %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     }                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     <<                               %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         \new RhythmicStaff           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         \with                        %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         {                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \remove Time_signature_engraver %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \remove Staff_symbol_engraver %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override Stem.direction = #up %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override Stem.length = #5 %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.bracket-visibility = ##t %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.direction = #up %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.padding = #1.25 %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletNumber.text = #tuplet-number::calc-fraction-text %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             tupletFullLength = ##t   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         }                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         {                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             c4.                      %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         }                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     >>                               %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     \layout {                        %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         indent = #0                  %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         ragged-right = ##t           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     }                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                 }                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                         =                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                         \hspace                                      %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                             #-0.5                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                         \scale                                       %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                             #'(0.5 . 0.5)                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                             \score                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                 {                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     \new Score                       %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     \with                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     {                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         \override SpacingSpanner.spacing-increment = #0.5 %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         proportionalNotationDuration = ##f %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     }                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     <<                               %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         \new RhythmicStaff           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         \with                        %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         {                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \remove Time_signature_engraver %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \remove Staff_symbol_engraver %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override Stem.direction = #up %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override Stem.length = #5 %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.bracket-visibility = ##t %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.direction = #up %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.padding = #1.25 %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletNumber.text = #tuplet-number::calc-fraction-text %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             tupletFullLength = ##t   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         }                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         {                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             c4                       %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         }                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     >>                               %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     \layout {                        %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         indent = #0                  %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         ragged-right = ##t           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     }                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                 }                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                     }                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \hspace                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         #1                                                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     }                                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.left.text \markup {                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-        \with-color                                                      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            #(x11-color 'blue)                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \abjad-metronome-mark-markup #2 #0 #1.5 #"90"            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \hspace                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    #0.5                                                 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \general-align                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    #Y                                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    #DOWN                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    \override                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                        #'(padding . 0.5)                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                        \parenthesize                                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                            \line                                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                {                                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                    \scale                               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                        #'(0.5 . 0.5)                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                        \score                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                            {                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                \new Score               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                \with                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                {                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    \override SpacingSpanner.spacing-increment = #0.5 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    proportionalNotationDuration = ##f %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                }                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                <<                       %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    \new RhythmicStaff   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    \with                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    {                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \remove Time_signature_engraver %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \remove Staff_symbol_engraver %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override Stem.direction = #up %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override Stem.length = #5 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.bracket-visibility = ##t %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.direction = #up %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.padding = #1.25 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        tupletFullLength = ##t %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    }                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    {                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        c4.              %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    }                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                >>                       %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                \layout {                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    indent = #0          %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    ragged-right = ##t   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                }                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                            }                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                    =                                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                    \hspace                              %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                        #-0.5                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                    \scale                               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                        #'(0.5 . 0.5)                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                        \score                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                            {                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                \new Score               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                \with                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                {                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    \override SpacingSpanner.spacing-increment = #0.5 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    proportionalNotationDuration = ##f %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                }                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                <<                       %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    \new RhythmicStaff   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    \with                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    {                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \remove Time_signature_engraver %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \remove Staff_symbol_engraver %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override Stem.direction = #up %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override Stem.length = #5 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.bracket-visibility = ##t %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.direction = #up %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.padding = #1.25 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        tupletFullLength = ##t %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    }                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    {                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        c4               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    }                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                >>                       %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                \layout {                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    indent = #0          %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    ragged-right = ##t   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                }                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                            }                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                }                                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \hspace                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    #1                                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            }                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-        }                                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-    - \baca_invisible_line_segment                                       %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.right.padding 0                               %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
-    \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
+    \stopTextSpan                                                        %! MMI1
+%@% - \abjad_invisible_line                                              %! MMI2
+%@% - \tweak bound-details.left.text \markup {                           %! MMI2
+%@%     \concat                                                          %! MMI2
+%@%         {                                                            %! MMI2
+%@%             \concat                                                  %! MMI2
+%@%                 {                                                    %! MMI2
+%@%                     \abjad-metronome-mark-markup #2 #0 #1 #"90"      %! MMI2
+%@%                     \hspace                                          %! MMI2
+%@%                         #2                                           %! MMI2
+%@%                     \parenthesize                                    %! MMI2
+%@%                         \line                                        %! MMI2
+%@%                             {                                        %! MMI2
+%@%                                 \score                               %! MMI2
+%@%                                     {                                %! MMI2
+%@%                                         \new Score                   %! MMI2
+%@%                                         \with                        %! MMI2
+%@%                                         {                            %! MMI2
+%@%                                             \override SpacingSpanner.spacing-increment = #0.5 %! MMI2
+%@%                                             proportionalNotationDuration = ##f %! MMI2
+%@%                                         }                            %! MMI2
+%@%                                         <<                           %! MMI2
+%@%                                             \new RhythmicStaff       %! MMI2
+%@%                                             \with                    %! MMI2
+%@%                                             {                        %! MMI2
+%@%                                                 \remove Time_signature_engraver %! MMI2
+%@%                                                 \remove Staff_symbol_engraver %! MMI2
+%@%                                                 \override Stem.direction = #up %! MMI2
+%@%                                                 \override Stem.length = #5 %! MMI2
+%@%                                                 \override TupletBracket.bracket-visibility = ##t %! MMI2
+%@%                                                 \override TupletBracket.direction = #up %! MMI2
+%@%                                                 \override TupletBracket.padding = #1.25 %! MMI2
+%@%                                                 \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! MMI2
+%@%                                                 \override TupletNumber.text = #tuplet-number::calc-fraction-text %! MMI2
+%@%                                                 tupletFullLength = ##t %! MMI2
+%@%                                             }                        %! MMI2
+%@%                                             {                        %! MMI2
+%@%                                                 c4.                  %! MMI2
+%@%                                             }                        %! MMI2
+%@%                                         >>                           %! MMI2
+%@%                                         \layout {                    %! MMI2
+%@%                                             indent = #0              %! MMI2
+%@%                                             ragged-right = ##t       %! MMI2
+%@%                                         }                            %! MMI2
+%@%                                     }                                %! MMI2
+%@%                                 =                                    %! MMI2
+%@%                                 \hspace                              %! MMI2
+%@%                                     #-0.5                            %! MMI2
+%@%                                 \score                               %! MMI2
+%@%                                     {                                %! MMI2
+%@%                                         \new Score                   %! MMI2
+%@%                                         \with                        %! MMI2
+%@%                                         {                            %! MMI2
+%@%                                             \override SpacingSpanner.spacing-increment = #0.5 %! MMI2
+%@%                                             proportionalNotationDuration = ##f %! MMI2
+%@%                                         }                            %! MMI2
+%@%                                         <<                           %! MMI2
+%@%                                             \new RhythmicStaff       %! MMI2
+%@%                                             \with                    %! MMI2
+%@%                                             {                        %! MMI2
+%@%                                                 \remove Time_signature_engraver %! MMI2
+%@%                                                 \remove Staff_symbol_engraver %! MMI2
+%@%                                                 \override Stem.direction = #up %! MMI2
+%@%                                                 \override Stem.length = #5 %! MMI2
+%@%                                                 \override TupletBracket.bracket-visibility = ##t %! MMI2
+%@%                                                 \override TupletBracket.direction = #up %! MMI2
+%@%                                                 \override TupletBracket.padding = #1.25 %! MMI2
+%@%                                                 \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! MMI2
+%@%                                                 \override TupletNumber.text = #tuplet-number::calc-fraction-text %! MMI2
+%@%                                                 tupletFullLength = ##t %! MMI2
+%@%                                             }                        %! MMI2
+%@%                                             {                        %! MMI2
+%@%                                                 c4                   %! MMI2
+%@%                                             }                        %! MMI2
+%@%                                         >>                           %! MMI2
+%@%                                         \layout {                    %! MMI2
+%@%                                             indent = #0              %! MMI2
+%@%                                             ragged-right = ##t       %! MMI2
+%@%                                         }                            %! MMI2
+%@%                                     }                                %! MMI2
+%@%                             }                                        %! MMI2
+%@%                 }                                                    %! MMI2
+%@%             \hspace                                                  %! MMI2
+%@%                 #0.5                                                 %! MMI2
+%@%         }                                                            %! MMI2
+%@%     }                                                                %! MMI2
+%@% - \tweak bound-details.left-broken.text ##f                          %! MMI2
+%@% \startTextSpan                                                       %! MMI2
+    - \abjad_invisible_line                                              %! MMI3
+    - \tweak bound-details.left.text \markup {                           %! MMI3
+        \concat                                                          %! MMI3
+            {                                                            %! MMI3
+                \with-color                                              %! MMI3
+                    #(x11-color 'blue)                                   %! MMI3
+                    \concat                                              %! MMI3
+                        {                                                %! MMI3
+                            \abjad-metronome-mark-markup #2 #0 #1 #"90"  %! MMI3
+                            \hspace                                      %! MMI3
+                                #2                                       %! MMI3
+                            \parenthesize                                %! MMI3
+                                \line                                    %! MMI3
+                                    {                                    %! MMI3
+                                        \score                           %! MMI3
+                                            {                            %! MMI3
+                                                \new Score               %! MMI3
+                                                \with                    %! MMI3
+                                                {                        %! MMI3
+                                                    \override SpacingSpanner.spacing-increment = #0.5 %! MMI3
+                                                    proportionalNotationDuration = ##f %! MMI3
+                                                }                        %! MMI3
+                                                <<                       %! MMI3
+                                                    \new RhythmicStaff   %! MMI3
+                                                    \with                %! MMI3
+                                                    {                    %! MMI3
+                                                        \remove Time_signature_engraver %! MMI3
+                                                        \remove Staff_symbol_engraver %! MMI3
+                                                        \override Stem.direction = #up %! MMI3
+                                                        \override Stem.length = #5 %! MMI3
+                                                        \override TupletBracket.bracket-visibility = ##t %! MMI3
+                                                        \override TupletBracket.direction = #up %! MMI3
+                                                        \override TupletBracket.padding = #1.25 %! MMI3
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! MMI3
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text %! MMI3
+                                                        tupletFullLength = ##t %! MMI3
+                                                    }                    %! MMI3
+                                                    {                    %! MMI3
+                                                        c4.              %! MMI3
+                                                    }                    %! MMI3
+                                                >>                       %! MMI3
+                                                \layout {                %! MMI3
+                                                    indent = #0          %! MMI3
+                                                    ragged-right = ##t   %! MMI3
+                                                }                        %! MMI3
+                                            }                            %! MMI3
+                                        =                                %! MMI3
+                                        \hspace                          %! MMI3
+                                            #-0.5                        %! MMI3
+                                        \score                           %! MMI3
+                                            {                            %! MMI3
+                                                \new Score               %! MMI3
+                                                \with                    %! MMI3
+                                                {                        %! MMI3
+                                                    \override SpacingSpanner.spacing-increment = #0.5 %! MMI3
+                                                    proportionalNotationDuration = ##f %! MMI3
+                                                }                        %! MMI3
+                                                <<                       %! MMI3
+                                                    \new RhythmicStaff   %! MMI3
+                                                    \with                %! MMI3
+                                                    {                    %! MMI3
+                                                        \remove Time_signature_engraver %! MMI3
+                                                        \remove Staff_symbol_engraver %! MMI3
+                                                        \override Stem.direction = #up %! MMI3
+                                                        \override Stem.length = #5 %! MMI3
+                                                        \override TupletBracket.bracket-visibility = ##t %! MMI3
+                                                        \override TupletBracket.direction = #up %! MMI3
+                                                        \override TupletBracket.padding = #1.25 %! MMI3
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! MMI3
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text %! MMI3
+                                                        tupletFullLength = ##t %! MMI3
+                                                    }                    %! MMI3
+                                                    {                    %! MMI3
+                                                        c4               %! MMI3
+                                                    }                    %! MMI3
+                                                >>                       %! MMI3
+                                                \layout {                %! MMI3
+                                                    indent = #0          %! MMI3
+                                                    ragged-right = ##t   %! MMI3
+                                                }                        %! MMI3
+                                            }                            %! MMI3
+                                    }                                    %! MMI3
+                        }                                                %! MMI3
+                \hspace                                                  %! MMI3
+                    #0.5                                                 %! MMI3
+            }                                                            %! MMI3
+        }                                                                %! MMI3
+    - \tweak bound-details.left-broken.text ##f                          %! MMI3
+    \startTextSpan                                                       %! MMI3
     
     % [A GlobalSkips measure 53 / measure 40]                            %! SM4
     \time 6/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -1449,30 +1455,35 @@ A_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
 %@%         [2'20'']                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
-    - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
-%@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \large                                                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         \upright                                                     %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%             accel.                                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \hspace                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         #1                                                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     }                                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.left.text \markup {                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-        \with-color                                                      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            #(x11-color 'blue)                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \large                                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    \upright                                             %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                        accel.                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \hspace                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    #1                                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            }                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-        }                                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-    - \baca_dashed_arrow                                                 %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.right.padding 0                               %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
-    \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
+    \stopTextSpan                                                        %! MMI1
+%@% - \abjad_dashed_line_with_arrow                                      %! MMI2
+%@% - \tweak bound-details.left.text \markup {                           %! MMI2
+%@%     \concat                                                          %! MMI2
+%@%         {                                                            %! MMI2
+%@%             \large                                                   %! MMI2
+%@%                 \upright                                             %! MMI2
+%@%                     accel.                                           %! MMI2
+%@%             \hspace                                                  %! MMI2
+%@%                 #0.5                                                 %! MMI2
+%@%         }                                                            %! MMI2
+%@%     }                                                                %! MMI2
+%@% - \tweak bound-details.left-broken.text ##f                          %! MMI2
+%@% \startTextSpan                                                       %! MMI2
+    - \abjad_dashed_line_with_arrow                                      %! MMI3
+    - \tweak bound-details.left.text \markup {                           %! MMI3
+        \concat                                                          %! MMI3
+            {                                                            %! MMI3
+                \with-color                                              %! MMI3
+                    #(x11-color 'blue)                                   %! MMI3
+                    \large                                               %! MMI3
+                        \upright                                         %! MMI3
+                            accel.                                       %! MMI3
+                \hspace                                                  %! MMI3
+                    #0.5                                                 %! MMI3
+            }                                                            %! MMI3
+        }                                                                %! MMI3
+    - \tweak bound-details.left-broken.text ##f                          %! MMI3
+    \startTextSpan                                                       %! MMI3
     
     % [A GlobalSkips measure 59 / measure 46]                            %! SM4
     \time 4/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -1540,26 +1551,31 @@ A_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
 %@%         [2'26'']                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
-    - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
-%@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \abjad-metronome-mark-markup #2 #0 #1.5 #"135"                   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \hspace                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         #1                                                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     }                                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.left.text \markup {                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-        \with-color                                                      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            #(x11-color 'blue)                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \abjad-metronome-mark-markup #2 #0 #1.5 #"135"           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \hspace                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    #1                                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            }                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-        }                                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-    - \baca_invisible_line_segment                                       %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.right.padding 0                               %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
-    \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
+    \stopTextSpan                                                        %! MMI1
+%@% - \abjad_invisible_line                                              %! MMI2
+%@% - \tweak bound-details.left.text \markup {                           %! MMI2
+%@%     \concat                                                          %! MMI2
+%@%         {                                                            %! MMI2
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"135"             %! MMI2
+%@%             \hspace                                                  %! MMI2
+%@%                 #0.5                                                 %! MMI2
+%@%         }                                                            %! MMI2
+%@%     }                                                                %! MMI2
+%@% - \tweak bound-details.left-broken.text ##f                          %! MMI2
+%@% \startTextSpan                                                       %! MMI2
+    - \abjad_invisible_line                                              %! MMI3
+    - \tweak bound-details.left.text \markup {                           %! MMI3
+        \concat                                                          %! MMI3
+            {                                                            %! MMI3
+                \with-color                                              %! MMI3
+                    #(x11-color 'blue)                                   %! MMI3
+                    \abjad-metronome-mark-markup #2 #0 #1 #"135"         %! MMI3
+                \hspace                                                  %! MMI3
+                    #0.5                                                 %! MMI3
+            }                                                            %! MMI3
+        }                                                                %! MMI3
+    - \tweak bound-details.left-broken.text ##f                          %! MMI3
+    \startTextSpan                                                       %! MMI3
     
     % [A GlobalSkips measure 62 / measure 49]                            %! SM4
     \time 4/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -1759,196 +1775,189 @@ A_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
 %@%         [2'43'']                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
-    - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
-%@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \abjad-metronome-mark-markup #2 #0 #1.5 #"108"                   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \hspace                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         #0.5                                                         %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \general-align                                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         #Y                                                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         #DOWN                                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         \override                                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%             #'(padding . 0.5)                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%             \parenthesize                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                 \line                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                     {                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                         \scale                                       %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                             #'(0.5 . 0.5)                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                             \score                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                 {                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     \new Score                       %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     \with                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     {                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         \override SpacingSpanner.spacing-increment = #0.5 %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         proportionalNotationDuration = ##f %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     }                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     <<                               %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         \new RhythmicStaff           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         \with                        %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         {                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \remove Time_signature_engraver %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \remove Staff_symbol_engraver %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override Stem.direction = #up %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override Stem.length = #5 %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.bracket-visibility = ##t %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.direction = #up %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.padding = #1.25 %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletNumber.text = #tuplet-number::calc-fraction-text %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             tupletFullLength = ##t   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         }                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         {                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             c4                       %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         }                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     >>                               %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     \layout {                        %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         indent = #0                  %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         ragged-right = ##t           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     }                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                 }                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                         =                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                         \hspace                                      %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                             #-0.5                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                         \scale                                       %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                             #'(0.5 . 0.5)                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                             \score                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                 {                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     \new Score                       %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     \with                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     {                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         \override SpacingSpanner.spacing-increment = #0.5 %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         proportionalNotationDuration = ##f %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     }                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     <<                               %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         \new RhythmicStaff           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         \with                        %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         {                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \remove Time_signature_engraver %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \remove Staff_symbol_engraver %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override Stem.direction = #up %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override Stem.length = #5 %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.bracket-visibility = ##t %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.direction = #up %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.padding = #1.25 %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \override TupletNumber.text = #tuplet-number::calc-fraction-text %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             tupletFullLength = ##t   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         }                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         {                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \tweak edge-height #'(0.7 . 0) %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             \times 4/5 {             %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                                 c4                   %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                             }                        %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         }                            %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     >>                               %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     \layout {                        %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         indent = #0                  %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                         ragged-right = ##t           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                     }                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                                 }                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%                     }                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     \hspace                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%         #1                                                           %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-%@%     }                                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.left.text \markup {                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-        \with-color                                                      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            #(x11-color 'blue)                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \abjad-metronome-mark-markup #2 #0 #1.5 #"108"           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \hspace                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    #0.5                                                 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \general-align                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    #Y                                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    #DOWN                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    \override                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                        #'(padding . 0.5)                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                        \parenthesize                                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                            \line                                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                {                                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                    \scale                               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                        #'(0.5 . 0.5)                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                        \score                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                            {                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                \new Score               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                \with                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                {                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    \override SpacingSpanner.spacing-increment = #0.5 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    proportionalNotationDuration = ##f %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                }                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                <<                       %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    \new RhythmicStaff   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    \with                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    {                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \remove Time_signature_engraver %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \remove Staff_symbol_engraver %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override Stem.direction = #up %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override Stem.length = #5 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.bracket-visibility = ##t %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.direction = #up %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.padding = #1.25 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        tupletFullLength = ##t %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    }                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    {                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        c4               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    }                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                >>                       %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                \layout {                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    indent = #0          %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    ragged-right = ##t   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                }                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                            }                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                    =                                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                    \hspace                              %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                        #-0.5                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                    \scale                               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                        #'(0.5 . 0.5)                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                        \score                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                            {                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                \new Score               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                \with                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                {                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    \override SpacingSpanner.spacing-increment = #0.5 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    proportionalNotationDuration = ##f %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                }                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                <<                       %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    \new RhythmicStaff   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    \with                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    {                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \remove Time_signature_engraver %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \remove Staff_symbol_engraver %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override Stem.direction = #up %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override Stem.length = #5 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.bracket-visibility = ##t %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.direction = #up %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.padding = #1.25 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        tupletFullLength = ##t %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    }                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    {                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \tweak edge-height #'(0.7 . 0) %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        \times 4/5 {     %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                            c4           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                        }                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    }                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                >>                       %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                \layout {                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    indent = #0          %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                    ragged-right = ##t   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                                }                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                            }                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                                }                                        %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                \hspace                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-                    #1                                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-            }                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-        }                                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
-    - \baca_invisible_line_segment                                       %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.right.padding 0                               %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
-    \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
+    \stopTextSpan                                                        %! MMI1
+%@% - \abjad_invisible_line                                              %! MMI2
+%@% - \tweak bound-details.left.text \markup {                           %! MMI2
+%@%     \concat                                                          %! MMI2
+%@%         {                                                            %! MMI2
+%@%             \concat                                                  %! MMI2
+%@%                 {                                                    %! MMI2
+%@%                     \abjad-metronome-mark-markup #2 #0 #1 #"108"     %! MMI2
+%@%                     \hspace                                          %! MMI2
+%@%                         #2                                           %! MMI2
+%@%                     \parenthesize                                    %! MMI2
+%@%                         \line                                        %! MMI2
+%@%                             {                                        %! MMI2
+%@%                                 \score                               %! MMI2
+%@%                                     {                                %! MMI2
+%@%                                         \new Score                   %! MMI2
+%@%                                         \with                        %! MMI2
+%@%                                         {                            %! MMI2
+%@%                                             \override SpacingSpanner.spacing-increment = #0.5 %! MMI2
+%@%                                             proportionalNotationDuration = ##f %! MMI2
+%@%                                         }                            %! MMI2
+%@%                                         <<                           %! MMI2
+%@%                                             \new RhythmicStaff       %! MMI2
+%@%                                             \with                    %! MMI2
+%@%                                             {                        %! MMI2
+%@%                                                 \remove Time_signature_engraver %! MMI2
+%@%                                                 \remove Staff_symbol_engraver %! MMI2
+%@%                                                 \override Stem.direction = #up %! MMI2
+%@%                                                 \override Stem.length = #5 %! MMI2
+%@%                                                 \override TupletBracket.bracket-visibility = ##t %! MMI2
+%@%                                                 \override TupletBracket.direction = #up %! MMI2
+%@%                                                 \override TupletBracket.padding = #1.25 %! MMI2
+%@%                                                 \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! MMI2
+%@%                                                 \override TupletNumber.text = #tuplet-number::calc-fraction-text %! MMI2
+%@%                                                 tupletFullLength = ##t %! MMI2
+%@%                                             }                        %! MMI2
+%@%                                             {                        %! MMI2
+%@%                                                 c4                   %! MMI2
+%@%                                             }                        %! MMI2
+%@%                                         >>                           %! MMI2
+%@%                                         \layout {                    %! MMI2
+%@%                                             indent = #0              %! MMI2
+%@%                                             ragged-right = ##t       %! MMI2
+%@%                                         }                            %! MMI2
+%@%                                     }                                %! MMI2
+%@%                                 =                                    %! MMI2
+%@%                                 \hspace                              %! MMI2
+%@%                                     #-0.5                            %! MMI2
+%@%                                 \score                               %! MMI2
+%@%                                     {                                %! MMI2
+%@%                                         \new Score                   %! MMI2
+%@%                                         \with                        %! MMI2
+%@%                                         {                            %! MMI2
+%@%                                             \override SpacingSpanner.spacing-increment = #0.5 %! MMI2
+%@%                                             proportionalNotationDuration = ##f %! MMI2
+%@%                                         }                            %! MMI2
+%@%                                         <<                           %! MMI2
+%@%                                             \new RhythmicStaff       %! MMI2
+%@%                                             \with                    %! MMI2
+%@%                                             {                        %! MMI2
+%@%                                                 \remove Time_signature_engraver %! MMI2
+%@%                                                 \remove Staff_symbol_engraver %! MMI2
+%@%                                                 \override Stem.direction = #up %! MMI2
+%@%                                                 \override Stem.length = #5 %! MMI2
+%@%                                                 \override TupletBracket.bracket-visibility = ##t %! MMI2
+%@%                                                 \override TupletBracket.direction = #up %! MMI2
+%@%                                                 \override TupletBracket.padding = #1.25 %! MMI2
+%@%                                                 \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! MMI2
+%@%                                                 \override TupletNumber.text = #tuplet-number::calc-fraction-text %! MMI2
+%@%                                                 tupletFullLength = ##t %! MMI2
+%@%                                             }                        %! MMI2
+%@%                                             {                        %! MMI2
+%@%                                                 \tweak edge-height #'(0.7 . 0) %! MMI2
+%@%                                                 \times 4/5 {         %! MMI2
+%@%                                                     c4               %! MMI2
+%@%                                                 }                    %! MMI2
+%@%                                             }                        %! MMI2
+%@%                                         >>                           %! MMI2
+%@%                                         \layout {                    %! MMI2
+%@%                                             indent = #0              %! MMI2
+%@%                                             ragged-right = ##t       %! MMI2
+%@%                                         }                            %! MMI2
+%@%                                     }                                %! MMI2
+%@%                             }                                        %! MMI2
+%@%                 }                                                    %! MMI2
+%@%             \hspace                                                  %! MMI2
+%@%                 #0.5                                                 %! MMI2
+%@%         }                                                            %! MMI2
+%@%     }                                                                %! MMI2
+%@% - \tweak bound-details.left-broken.text ##f                          %! MMI2
+%@% \startTextSpan                                                       %! MMI2
+    - \abjad_invisible_line                                              %! MMI3
+    - \tweak bound-details.left.text \markup {                           %! MMI3
+        \concat                                                          %! MMI3
+            {                                                            %! MMI3
+                \with-color                                              %! MMI3
+                    #(x11-color 'blue)                                   %! MMI3
+                    \concat                                              %! MMI3
+                        {                                                %! MMI3
+                            \abjad-metronome-mark-markup #2 #0 #1 #"108" %! MMI3
+                            \hspace                                      %! MMI3
+                                #2                                       %! MMI3
+                            \parenthesize                                %! MMI3
+                                \line                                    %! MMI3
+                                    {                                    %! MMI3
+                                        \score                           %! MMI3
+                                            {                            %! MMI3
+                                                \new Score               %! MMI3
+                                                \with                    %! MMI3
+                                                {                        %! MMI3
+                                                    \override SpacingSpanner.spacing-increment = #0.5 %! MMI3
+                                                    proportionalNotationDuration = ##f %! MMI3
+                                                }                        %! MMI3
+                                                <<                       %! MMI3
+                                                    \new RhythmicStaff   %! MMI3
+                                                    \with                %! MMI3
+                                                    {                    %! MMI3
+                                                        \remove Time_signature_engraver %! MMI3
+                                                        \remove Staff_symbol_engraver %! MMI3
+                                                        \override Stem.direction = #up %! MMI3
+                                                        \override Stem.length = #5 %! MMI3
+                                                        \override TupletBracket.bracket-visibility = ##t %! MMI3
+                                                        \override TupletBracket.direction = #up %! MMI3
+                                                        \override TupletBracket.padding = #1.25 %! MMI3
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! MMI3
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text %! MMI3
+                                                        tupletFullLength = ##t %! MMI3
+                                                    }                    %! MMI3
+                                                    {                    %! MMI3
+                                                        c4               %! MMI3
+                                                    }                    %! MMI3
+                                                >>                       %! MMI3
+                                                \layout {                %! MMI3
+                                                    indent = #0          %! MMI3
+                                                    ragged-right = ##t   %! MMI3
+                                                }                        %! MMI3
+                                            }                            %! MMI3
+                                        =                                %! MMI3
+                                        \hspace                          %! MMI3
+                                            #-0.5                        %! MMI3
+                                        \score                           %! MMI3
+                                            {                            %! MMI3
+                                                \new Score               %! MMI3
+                                                \with                    %! MMI3
+                                                {                        %! MMI3
+                                                    \override SpacingSpanner.spacing-increment = #0.5 %! MMI3
+                                                    proportionalNotationDuration = ##f %! MMI3
+                                                }                        %! MMI3
+                                                <<                       %! MMI3
+                                                    \new RhythmicStaff   %! MMI3
+                                                    \with                %! MMI3
+                                                    {                    %! MMI3
+                                                        \remove Time_signature_engraver %! MMI3
+                                                        \remove Staff_symbol_engraver %! MMI3
+                                                        \override Stem.direction = #up %! MMI3
+                                                        \override Stem.length = #5 %! MMI3
+                                                        \override TupletBracket.bracket-visibility = ##t %! MMI3
+                                                        \override TupletBracket.direction = #up %! MMI3
+                                                        \override TupletBracket.padding = #1.25 %! MMI3
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! MMI3
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text %! MMI3
+                                                        tupletFullLength = ##t %! MMI3
+                                                    }                    %! MMI3
+                                                    {                    %! MMI3
+                                                        \tweak edge-height #'(0.7 . 0) %! MMI3
+                                                        \times 4/5 {     %! MMI3
+                                                            c4           %! MMI3
+                                                        }                %! MMI3
+                                                    }                    %! MMI3
+                                                >>                       %! MMI3
+                                                \layout {                %! MMI3
+                                                    indent = #0          %! MMI3
+                                                    ragged-right = ##t   %! MMI3
+                                                }                        %! MMI3
+                                            }                            %! MMI3
+                                    }                                    %! MMI3
+                        }                                                %! MMI3
+                \hspace                                                  %! MMI3
+                    #0.5                                                 %! MMI3
+            }                                                            %! MMI3
+        }                                                                %! MMI3
+    - \tweak bound-details.left-broken.text ##f                          %! MMI3
+    \startTextSpan                                                       %! MMI3
     
     % [A GlobalSkips measure 71 / measure 58]                            %! SM4
     \time 5/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -2327,7 +2336,7 @@ A_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
 %@%         [3'21'']                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
+    \stopTextSpan                                                        %! MMI4
     \override Score.BarLine.transparent = ##f                            %! SM5
     \bar "|"                                                             %! SM5
     

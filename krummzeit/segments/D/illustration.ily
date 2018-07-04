@@ -605,36 +605,17 @@ D_GlobalSkips = {
 %@% - \tweak bound-details.left.text \markup {                           %! MMI2
 %@%     \concat                                                          %! MMI2
 %@%         {                                                            %! MMI2
-%@%             {                                                        %! MMI2
-%@%                 \override                                            %! MMI2
-%@%                     #'(padding . 0.45)                               %! MMI2
-%@%                     \parenthesize                                    %! MMI2
-%@%                         \line                                        %! MMI2
-%@%                             {                                        %! MMI2
-%@%                                 \smaller                             %! MMI2
-%@%                                     \general-align                   %! MMI2
-%@%                                         #Y                           %! MMI2
-%@%                                         #DOWN                        %! MMI2
-%@%                                         \note-by-number              %! MMI2
-%@%                                             #2                       %! MMI2
-%@%                                             #0                       %! MMI2
-%@%                                             #1                       %! MMI2
-%@%                                 \upright                             %! MMI2
-%@%                                     " = 72"                          %! MMI2
-%@%                             }                                        %! MMI2
-%@%                 \italic                                              %! MMI2
-%@%                     subito                                           %! MMI2
-%@%                 \smaller                                             %! MMI2
-%@%                     \general-align                                   %! MMI2
-%@%                         #Y                                           %! MMI2
-%@%                         #DOWN                                        %! MMI2
-%@%                         \note-by-number                              %! MMI2
-%@%                             #2                                       %! MMI2
-%@%                             #0                                       %! MMI2
-%@%                             #1                                       %! MMI2
-%@%                 \upright                                             %! MMI2
-%@%                     " = 108"                                         %! MMI2
-%@%             }                                                        %! MMI2
+%@%             \line                                                    %! MMI2
+%@%                 {                                                    %! MMI2
+%@%                     \abjad-metronome-mark-markup #2 #0 #1 #"72"      %! MMI2
+%@%                     \hspace                                          %! MMI2
+%@%                         #-1                                          %! MMI2
+%@%                     \upright                                         %! MMI2
+%@%                         !                                            %! MMI2
+%@%                     \hspace                                          %! MMI2
+%@%                         #1.5                                         %! MMI2
+%@%                     \abjad-metronome-mark-markup #2 #0 #1 #"108"     %! MMI2
+%@%                 }                                                    %! MMI2
 %@%             \hspace                                                  %! MMI2
 %@%                 #0.5                                                 %! MMI2
 %@%         }                                                            %! MMI2
@@ -647,36 +628,17 @@ D_GlobalSkips = {
             {                                                            %! MMI3
                 \with-color                                              %! MMI3
                     #(x11-color 'blue)                                   %! MMI3
-                    {                                                    %! MMI3
-                        \override                                        %! MMI3
-                            #'(padding . 0.45)                           %! MMI3
-                            \parenthesize                                %! MMI3
-                                \line                                    %! MMI3
-                                    {                                    %! MMI3
-                                        \smaller                         %! MMI3
-                                            \general-align               %! MMI3
-                                                #Y                       %! MMI3
-                                                #DOWN                    %! MMI3
-                                                \note-by-number          %! MMI3
-                                                    #2                   %! MMI3
-                                                    #0                   %! MMI3
-                                                    #1                   %! MMI3
-                                        \upright                         %! MMI3
-                                            " = 72"                      %! MMI3
-                                    }                                    %! MMI3
-                        \italic                                          %! MMI3
-                            subito                                       %! MMI3
-                        \smaller                                         %! MMI3
-                            \general-align                               %! MMI3
-                                #Y                                       %! MMI3
-                                #DOWN                                    %! MMI3
-                                \note-by-number                          %! MMI3
-                                    #2                                   %! MMI3
-                                    #0                                   %! MMI3
-                                    #1                                   %! MMI3
-                        \upright                                         %! MMI3
-                            " = 108"                                     %! MMI3
-                    }                                                    %! MMI3
+                    \line                                                %! MMI3
+                        {                                                %! MMI3
+                            \abjad-metronome-mark-markup #2 #0 #1 #"72"  %! MMI3
+                            \hspace                                      %! MMI3
+                                #-1                                      %! MMI3
+                            \upright                                     %! MMI3
+                                !                                        %! MMI3
+                            \hspace                                      %! MMI3
+                                #1.5                                     %! MMI3
+                            \abjad-metronome-mark-markup #2 #0 #1 #"108" %! MMI3
+                        }                                                %! MMI3
                 \hspace                                                  %! MMI3
                     #0.5                                                 %! MMI3
             }                                                            %! MMI3
@@ -737,77 +699,88 @@ D_GlobalSkips = {
 %@%                     \abjad-metronome-mark-markup #2 #0 #1 #"72"      %! MMI2
 %@%                     \hspace                                          %! MMI2
 %@%                         #2                                           %! MMI2
-%@%                     \parenthesize                                    %! MMI2
-%@%                         \line                                        %! MMI2
-%@%                             {                                        %! MMI2
-%@%                                 \score                               %! MMI2
+%@%                     \upright                                         %! MMI2
+%@%                         [                                            %! MMI2
+%@%                     \line                                            %! MMI2
+%@%                         {                                            %! MMI2
+%@%                             \score                                   %! MMI2
+%@%                                 {                                    %! MMI2
+%@%                                     \new Score                       %! MMI2
+%@%                                     \with                            %! MMI2
 %@%                                     {                                %! MMI2
-%@%                                         \new Score                   %! MMI2
+%@%                                         \override SpacingSpanner.spacing-increment = #0.5 %! MMI2
+%@%                                         proportionalNotationDuration = ##f %! MMI2
+%@%                                     }                                %! MMI2
+%@%                                     <<                               %! MMI2
+%@%                                         \new RhythmicStaff           %! MMI2
 %@%                                         \with                        %! MMI2
 %@%                                         {                            %! MMI2
-%@%                                             \override SpacingSpanner.spacing-increment = #0.5 %! MMI2
-%@%                                             proportionalNotationDuration = ##f %! MMI2
+%@%                                             \remove Time_signature_engraver %! MMI2
+%@%                                             \remove Staff_symbol_engraver %! MMI2
+%@%                                             \override Stem.direction = #up %! MMI2
+%@%                                             \override Stem.length = #5 %! MMI2
+%@%                                             \override TupletBracket.bracket-visibility = ##t %! MMI2
+%@%                                             \override TupletBracket.direction = #up %! MMI2
+%@%                                             \override TupletBracket.minimum-length = #4 %! MMI2
+%@%                                             \override TupletBracket.padding = #1.25 %! MMI2
+%@%                                             \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! MMI2
+%@%                                             \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods %! MMI2
+%@%                                             \override TupletNumber.font-size = #0 %! MMI2
+%@%                                             \override TupletNumber.text = #tuplet-number::calc-fraction-text %! MMI2
+%@%                                             tupletFullLength = ##t   %! MMI2
 %@%                                         }                            %! MMI2
-%@%                                         <<                           %! MMI2
-%@%                                             \new RhythmicStaff       %! MMI2
-%@%                                             \with                    %! MMI2
-%@%                                             {                        %! MMI2
-%@%                                                 \remove Time_signature_engraver %! MMI2
-%@%                                                 \remove Staff_symbol_engraver %! MMI2
-%@%                                                 \override Stem.direction = #up %! MMI2
-%@%                                                 \override Stem.length = #5 %! MMI2
-%@%                                                 \override TupletBracket.bracket-visibility = ##t %! MMI2
-%@%                                                 \override TupletBracket.direction = #up %! MMI2
-%@%                                                 \override TupletBracket.padding = #1.25 %! MMI2
-%@%                                                 \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! MMI2
-%@%                                                 \override TupletNumber.text = #tuplet-number::calc-fraction-text %! MMI2
-%@%                                                 tupletFullLength = ##t %! MMI2
-%@%                                             }                        %! MMI2
-%@%                                             {                        %! MMI2
-%@%                                                 c4.                  %! MMI2
-%@%                                             }                        %! MMI2
-%@%                                         >>                           %! MMI2
-%@%                                         \layout {                    %! MMI2
-%@%                                             indent = #0              %! MMI2
-%@%                                             ragged-right = ##t       %! MMI2
+%@%                                         {                            %! MMI2
+%@%                                             c4.                      %! MMI2
 %@%                                         }                            %! MMI2
+%@%                                     >>                               %! MMI2
+%@%                                     \layout {                        %! MMI2
+%@%                                         indent = #0                  %! MMI2
+%@%                                         ragged-right = ##t           %! MMI2
 %@%                                     }                                %! MMI2
-%@%                                 =                                    %! MMI2
-%@%                                 \hspace                              %! MMI2
-%@%                                     #-0.5                            %! MMI2
-%@%                                 \score                               %! MMI2
+%@%                                 }                                    %! MMI2
+%@%                             =                                        %! MMI2
+%@%                             \hspace                                  %! MMI2
+%@%                                 #-0.5                                %! MMI2
+%@%                             \score                                   %! MMI2
+%@%                                 {                                    %! MMI2
+%@%                                     \new Score                       %! MMI2
+%@%                                     \with                            %! MMI2
 %@%                                     {                                %! MMI2
-%@%                                         \new Score                   %! MMI2
+%@%                                         \override SpacingSpanner.spacing-increment = #0.5 %! MMI2
+%@%                                         proportionalNotationDuration = ##f %! MMI2
+%@%                                     }                                %! MMI2
+%@%                                     <<                               %! MMI2
+%@%                                         \new RhythmicStaff           %! MMI2
 %@%                                         \with                        %! MMI2
 %@%                                         {                            %! MMI2
-%@%                                             \override SpacingSpanner.spacing-increment = #0.5 %! MMI2
-%@%                                             proportionalNotationDuration = ##f %! MMI2
+%@%                                             \remove Time_signature_engraver %! MMI2
+%@%                                             \remove Staff_symbol_engraver %! MMI2
+%@%                                             \override Stem.direction = #up %! MMI2
+%@%                                             \override Stem.length = #5 %! MMI2
+%@%                                             \override TupletBracket.bracket-visibility = ##t %! MMI2
+%@%                                             \override TupletBracket.direction = #up %! MMI2
+%@%                                             \override TupletBracket.minimum-length = #4 %! MMI2
+%@%                                             \override TupletBracket.padding = #1.25 %! MMI2
+%@%                                             \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! MMI2
+%@%                                             \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods %! MMI2
+%@%                                             \override TupletNumber.font-size = #0 %! MMI2
+%@%                                             \override TupletNumber.text = #tuplet-number::calc-fraction-text %! MMI2
+%@%                                             tupletFullLength = ##t   %! MMI2
 %@%                                         }                            %! MMI2
-%@%                                         <<                           %! MMI2
-%@%                                             \new RhythmicStaff       %! MMI2
-%@%                                             \with                    %! MMI2
-%@%                                             {                        %! MMI2
-%@%                                                 \remove Time_signature_engraver %! MMI2
-%@%                                                 \remove Staff_symbol_engraver %! MMI2
-%@%                                                 \override Stem.direction = #up %! MMI2
-%@%                                                 \override Stem.length = #5 %! MMI2
-%@%                                                 \override TupletBracket.bracket-visibility = ##t %! MMI2
-%@%                                                 \override TupletBracket.direction = #up %! MMI2
-%@%                                                 \override TupletBracket.padding = #1.25 %! MMI2
-%@%                                                 \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! MMI2
-%@%                                                 \override TupletNumber.text = #tuplet-number::calc-fraction-text %! MMI2
-%@%                                                 tupletFullLength = ##t %! MMI2
-%@%                                             }                        %! MMI2
-%@%                                             {                        %! MMI2
-%@%                                                 c4                   %! MMI2
-%@%                                             }                        %! MMI2
-%@%                                         >>                           %! MMI2
-%@%                                         \layout {                    %! MMI2
-%@%                                             indent = #0              %! MMI2
-%@%                                             ragged-right = ##t       %! MMI2
+%@%                                         {                            %! MMI2
+%@%                                             c4                       %! MMI2
 %@%                                         }                            %! MMI2
+%@%                                     >>                               %! MMI2
+%@%                                     \layout {                        %! MMI2
+%@%                                         indent = #0                  %! MMI2
+%@%                                         ragged-right = ##t           %! MMI2
 %@%                                     }                                %! MMI2
-%@%                             }                                        %! MMI2
+%@%                                 }                                    %! MMI2
+%@%                         }                                            %! MMI2
+%@%                     \hspace                                          %! MMI2
+%@%                         #0.5                                         %! MMI2
+%@%                     \upright                                         %! MMI2
+%@%                         ]                                            %! MMI2
 %@%                 }                                                    %! MMI2
 %@%             \hspace                                                  %! MMI2
 %@%                 #0.5                                                 %! MMI2
@@ -826,77 +799,88 @@ D_GlobalSkips = {
                             \abjad-metronome-mark-markup #2 #0 #1 #"72"  %! MMI3
                             \hspace                                      %! MMI3
                                 #2                                       %! MMI3
-                            \parenthesize                                %! MMI3
-                                \line                                    %! MMI3
-                                    {                                    %! MMI3
-                                        \score                           %! MMI3
+                            \upright                                     %! MMI3
+                                [                                        %! MMI3
+                            \line                                        %! MMI3
+                                {                                        %! MMI3
+                                    \score                               %! MMI3
+                                        {                                %! MMI3
+                                            \new Score                   %! MMI3
+                                            \with                        %! MMI3
                                             {                            %! MMI3
-                                                \new Score               %! MMI3
+                                                \override SpacingSpanner.spacing-increment = #0.5 %! MMI3
+                                                proportionalNotationDuration = ##f %! MMI3
+                                            }                            %! MMI3
+                                            <<                           %! MMI3
+                                                \new RhythmicStaff       %! MMI3
                                                 \with                    %! MMI3
                                                 {                        %! MMI3
-                                                    \override SpacingSpanner.spacing-increment = #0.5 %! MMI3
-                                                    proportionalNotationDuration = ##f %! MMI3
+                                                    \remove Time_signature_engraver %! MMI3
+                                                    \remove Staff_symbol_engraver %! MMI3
+                                                    \override Stem.direction = #up %! MMI3
+                                                    \override Stem.length = #5 %! MMI3
+                                                    \override TupletBracket.bracket-visibility = ##t %! MMI3
+                                                    \override TupletBracket.direction = #up %! MMI3
+                                                    \override TupletBracket.minimum-length = #4 %! MMI3
+                                                    \override TupletBracket.padding = #1.25 %! MMI3
+                                                    \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! MMI3
+                                                    \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods %! MMI3
+                                                    \override TupletNumber.font-size = #0 %! MMI3
+                                                    \override TupletNumber.text = #tuplet-number::calc-fraction-text %! MMI3
+                                                    tupletFullLength = ##t %! MMI3
                                                 }                        %! MMI3
-                                                <<                       %! MMI3
-                                                    \new RhythmicStaff   %! MMI3
-                                                    \with                %! MMI3
-                                                    {                    %! MMI3
-                                                        \remove Time_signature_engraver %! MMI3
-                                                        \remove Staff_symbol_engraver %! MMI3
-                                                        \override Stem.direction = #up %! MMI3
-                                                        \override Stem.length = #5 %! MMI3
-                                                        \override TupletBracket.bracket-visibility = ##t %! MMI3
-                                                        \override TupletBracket.direction = #up %! MMI3
-                                                        \override TupletBracket.padding = #1.25 %! MMI3
-                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! MMI3
-                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text %! MMI3
-                                                        tupletFullLength = ##t %! MMI3
-                                                    }                    %! MMI3
-                                                    {                    %! MMI3
-                                                        c4.              %! MMI3
-                                                    }                    %! MMI3
-                                                >>                       %! MMI3
-                                                \layout {                %! MMI3
-                                                    indent = #0          %! MMI3
-                                                    ragged-right = ##t   %! MMI3
+                                                {                        %! MMI3
+                                                    c4.                  %! MMI3
                                                 }                        %! MMI3
+                                            >>                           %! MMI3
+                                            \layout {                    %! MMI3
+                                                indent = #0              %! MMI3
+                                                ragged-right = ##t       %! MMI3
                                             }                            %! MMI3
-                                        =                                %! MMI3
-                                        \hspace                          %! MMI3
-                                            #-0.5                        %! MMI3
-                                        \score                           %! MMI3
+                                        }                                %! MMI3
+                                    =                                    %! MMI3
+                                    \hspace                              %! MMI3
+                                        #-0.5                            %! MMI3
+                                    \score                               %! MMI3
+                                        {                                %! MMI3
+                                            \new Score                   %! MMI3
+                                            \with                        %! MMI3
                                             {                            %! MMI3
-                                                \new Score               %! MMI3
+                                                \override SpacingSpanner.spacing-increment = #0.5 %! MMI3
+                                                proportionalNotationDuration = ##f %! MMI3
+                                            }                            %! MMI3
+                                            <<                           %! MMI3
+                                                \new RhythmicStaff       %! MMI3
                                                 \with                    %! MMI3
                                                 {                        %! MMI3
-                                                    \override SpacingSpanner.spacing-increment = #0.5 %! MMI3
-                                                    proportionalNotationDuration = ##f %! MMI3
+                                                    \remove Time_signature_engraver %! MMI3
+                                                    \remove Staff_symbol_engraver %! MMI3
+                                                    \override Stem.direction = #up %! MMI3
+                                                    \override Stem.length = #5 %! MMI3
+                                                    \override TupletBracket.bracket-visibility = ##t %! MMI3
+                                                    \override TupletBracket.direction = #up %! MMI3
+                                                    \override TupletBracket.minimum-length = #4 %! MMI3
+                                                    \override TupletBracket.padding = #1.25 %! MMI3
+                                                    \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! MMI3
+                                                    \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods %! MMI3
+                                                    \override TupletNumber.font-size = #0 %! MMI3
+                                                    \override TupletNumber.text = #tuplet-number::calc-fraction-text %! MMI3
+                                                    tupletFullLength = ##t %! MMI3
                                                 }                        %! MMI3
-                                                <<                       %! MMI3
-                                                    \new RhythmicStaff   %! MMI3
-                                                    \with                %! MMI3
-                                                    {                    %! MMI3
-                                                        \remove Time_signature_engraver %! MMI3
-                                                        \remove Staff_symbol_engraver %! MMI3
-                                                        \override Stem.direction = #up %! MMI3
-                                                        \override Stem.length = #5 %! MMI3
-                                                        \override TupletBracket.bracket-visibility = ##t %! MMI3
-                                                        \override TupletBracket.direction = #up %! MMI3
-                                                        \override TupletBracket.padding = #1.25 %! MMI3
-                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5) %! MMI3
-                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text %! MMI3
-                                                        tupletFullLength = ##t %! MMI3
-                                                    }                    %! MMI3
-                                                    {                    %! MMI3
-                                                        c4               %! MMI3
-                                                    }                    %! MMI3
-                                                >>                       %! MMI3
-                                                \layout {                %! MMI3
-                                                    indent = #0          %! MMI3
-                                                    ragged-right = ##t   %! MMI3
+                                                {                        %! MMI3
+                                                    c4                   %! MMI3
                                                 }                        %! MMI3
+                                            >>                           %! MMI3
+                                            \layout {                    %! MMI3
+                                                indent = #0              %! MMI3
+                                                ragged-right = ##t       %! MMI3
                                             }                            %! MMI3
-                                    }                                    %! MMI3
+                                        }                                %! MMI3
+                                }                                        %! MMI3
+                            \hspace                                      %! MMI3
+                                #0.5                                     %! MMI3
+                            \upright                                     %! MMI3
+                                ]                                        %! MMI3
                         }                                                %! MMI3
                 \hspace                                                  %! MMI3
                     #0.5                                                 %! MMI3

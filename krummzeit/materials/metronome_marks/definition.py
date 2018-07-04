@@ -1,6 +1,14 @@
 import abjad
 
 
+markups = []
+markups.append(abjad.Markup.abjad_metronome_mark(2, 0, 1, 72))
+markups.append(abjad.Markup.hspace(-1))
+markups.append(abjad.Markup('!').upright())
+markups.append(abjad.Markup.hspace(1.5))
+markups.append(abjad.Markup.abjad_metronome_mark(2, 0, 1, 108))
+custom_72_108_markup = abjad.Markup.line(markups)
+
 metronome_marks = abjad.OrderedDict(
     [
         (
@@ -16,32 +24,7 @@ metronome_marks = abjad.OrderedDict(
             abjad.MetronomeMark(
                 reference_duration=(1, 4),
                 units_per_minute=abjad.Fraction(135, 2),
-                custom_markup=abjad.Markup(
-                    contents=[
-                        abjad.MarkupCommand(
-                            'smaller',
-                            abjad.MarkupCommand(
-                                'general-align',
-                                abjad.Scheme(
-                                    'Y'
-                                    ),
-                                abjad.Scheme(
-                                    'DOWN'
-                                    ),
-                                abjad.MarkupCommand(
-                                    'note-by-number',
-                                    2,
-                                    0,
-                                    1
-                                    )
-                                )
-                            ),
-                        abjad.MarkupCommand(
-                            'upright',
-                            ' = 67.5'
-                            ),
-                        ],
-                    ),
+                custom_markup=abjad.Markup.abjad_metronome_mark(2, 0, 1, 67.5),
                 ),
             ),
         (
@@ -53,70 +36,7 @@ metronome_marks = abjad.OrderedDict(
             abjad.MetronomeMark(
                 reference_duration=(1, 4),
                 units_per_minute=73,
-                custom_markup=abjad.Markup(
-                    contents=[
-                        abjad.MarkupCommand(
-                            'override',
-                            abjad.SchemePair(('padding', 0.45)),
-                            abjad.MarkupCommand(
-                                'parenthesize',
-                                abjad.MarkupCommand(
-                                    'line',
-                                    [
-                                        abjad.MarkupCommand(
-                                            'smaller',
-                                            abjad.MarkupCommand(
-                                                'general-align',
-                                                abjad.Scheme(
-                                                    'Y'
-                                                    ),
-                                                abjad.Scheme(
-                                                    'DOWN'
-                                                    ),
-                                                abjad.MarkupCommand(
-                                                    'note-by-number',
-                                                    2,
-                                                    0,
-                                                    1
-                                                    )
-                                                )
-                                            ),
-                                        abjad.MarkupCommand(
-                                            'upright',
-                                            ' = 72'
-                                            ),
-                                        ]
-                                    )
-                                )
-                            ),
-                        abjad.MarkupCommand(
-                            'italic',
-                            'subito'
-                            ),
-                        abjad.MarkupCommand(
-                            'smaller',
-                            abjad.MarkupCommand(
-                                'general-align',
-                                abjad.Scheme(
-                                    'Y'
-                                    ),
-                                abjad.Scheme(
-                                    'DOWN'
-                                    ),
-                                abjad.MarkupCommand(
-                                    'note-by-number',
-                                    2,
-                                    0,
-                                    1
-                                    )
-                                )
-                            ),
-                        abjad.MarkupCommand(
-                            'upright',
-                            ' = 108'
-                            ),
-                        ],
-                    ),
+                custom_markup=custom_72_108_markup,
                 ),
             ),
         (

@@ -177,7 +177,7 @@ maker(
 
 maker(
     ('vn', (8, 10)),
-    baca.new_text_spanner(
+    baca.text_spanner(
         baca.markups.grid_possibile(),
         '=>',
         baca.markups.flaut_possibile(),
@@ -187,7 +187,7 @@ maker(
 
 maker(
     (['va', 'vc'], (9, 10)),
-    baca.new_text_spanner(
+    baca.text_spanner(
         baca.markups.grid_possibile(),
         '=>',
         baca.markups.flaut_possibile(),

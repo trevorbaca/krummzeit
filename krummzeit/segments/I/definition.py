@@ -236,13 +236,13 @@ maker(
     ('pf', (8, 15)),
     baca.clef('bass'),
     baca.ottava_bassa(),
-    baca.possibile_dynamic('fff'),
+    baca.dynamic('fff_poss'),
     krummzeit.clusters('low'),
     )
 
 maker(
     ('cl', 9),
-    baca.possibile_dynamic('fff', selector=baca.pleaf(0)),
+    baca.dynamic('fff_poss', selector=baca.pleaf(0)),
     )
 
 maker(

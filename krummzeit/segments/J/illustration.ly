@@ -22,31 +22,31 @@
             <<
                 \context WindSectionStaffGroup = "WindSectionStaffGroup"
                 <<
-                    \tag Oboe                                                            %! ST4
+                    \tag Oboe                                                                      %! ST4
                     \context Staff = "OboeMusicStaff"
                     \J_OboeMusicStaff
-                    \tag Clarinet                                                        %! ST4
+                    \tag Clarinet                                                                  %! ST4
                     \context Staff = "ClarinetMusicStaff"
                     \J_ClarinetMusicStaff
                 >>
                 \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup"
                 <<
-                    \tag Piano                                                           %! ST4
+                    \tag Piano                                                                     %! ST4
                     \context Staff = "PianoMusicStaff"
                     \J_PianoMusicStaff
-                    \tag Percussion                                                      %! ST4
+                    \tag Percussion                                                                %! ST4
                     \context Staff = "PercussionMusicStaff"
                     \J_PercussionMusicStaff
                 >>
                 \context StringSectionStaffGroup = "StringSectionStaffGroup"
                 <<
-                    \tag Violin                                                          %! ST4
+                    \tag Violin                                                                    %! ST4
                     \context Staff = "ViolinMusicStaff"
                     \J_ViolinMusicStaff
-                    \tag Viola                                                           %! ST4
+                    \tag Viola                                                                     %! ST4
                     \context Staff = "ViolaMusicStaff"
                     \J_ViolaMusicStaff
-                    \tag Cello                                                           %! ST4
+                    \tag Cello                                                                     %! ST4
                     \context Staff = "CelloMusicStaff"
                     \J_CelloMusicStaff
                 >>

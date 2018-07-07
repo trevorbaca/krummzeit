@@ -159,7 +159,7 @@ maker(
 
 maker(
     (['vn', 'va', 'vc'], 1),
-    baca.possibile_dynamic('fff'),
+    baca.dynamic('fff_poss'),
     baca.stem_tremolo(selector=baca.pleaves()),
     )
 

@@ -342,14 +342,14 @@ maker(
     (['vn', 'vc'], (14, 20)),
     baca.markups.molto_gridato(),
     baca.note_head_style_harmonic(),
-    baca.possibile_dynamic('fff'),
+    baca.dynamic('fff_poss'),
     )
 
 maker(
     ('va', (14, 19)),
     baca.markups.molto_gridato(),
     baca.note_head_style_harmonic(),
-    baca.possibile_dynamic('fff'),
+    baca.dynamic('fff_poss'),
     )
 
 maker(

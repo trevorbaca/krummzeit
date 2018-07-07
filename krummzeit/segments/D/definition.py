@@ -325,7 +325,7 @@ maker(
 maker(
     ('va', (5, 6)),
     baca.hairpin('pp < f'),
-    baca.new_text_spanner(
+    baca.text_spanner(
         baca.markups.molto_flautando(),
         '=>',
         baca.markups.molto_gridato(),
@@ -336,7 +336,7 @@ maker(
 maker(
     (['vn', 'vc'], 6),
     baca.hairpin('pp < f'),
-    baca.new_text_spanner(
+    baca.text_spanner(
         baca.markups.molto_flautando(),
         '=>',
         baca.markups.molto_gridato(),

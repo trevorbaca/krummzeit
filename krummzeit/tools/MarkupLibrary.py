@@ -31,7 +31,7 @@ class MarkupLibrary(abjad.AbjadObject):
 
     @staticmethod
     def crotales():
-        return baca.markups.crotales().boxed()
+        return baca.markuplib.crotales().boxed()
 
     @staticmethod
     def fifth_harmonic_of_F1():
@@ -62,7 +62,7 @@ class MarkupLibrary(abjad.AbjadObject):
 
     @staticmethod
     def scraped_slate():
-        return baca.markups.scraped_slate().boxed()
+        return baca.markuplib.scraped_slate().boxed()
 
     @staticmethod
     def show_tempo():
@@ -71,11 +71,11 @@ class MarkupLibrary(abjad.AbjadObject):
 
     @staticmethod
     def snare_drum():
-        return baca.markups.snare_drum().boxed()
+        return baca.markuplib.snare_drum().boxed()
 
     @staticmethod
     def sponges():
-        return baca.markups.sponges().boxed()
+        return baca.markuplib.sponges().boxed()
 
     @staticmethod
     def stonecircle_scrape_at_moderate_speed():
@@ -89,9 +89,9 @@ class MarkupLibrary(abjad.AbjadObject):
 
     @staticmethod
     def suspended_cymbal():
-        return baca.markups.suspended_cymbal().boxed()
+        return baca.markuplib.suspended_cymbal().boxed()
 
     @staticmethod
     def tam_tam():
         string = 'tam-tam'
-        return baca.markups.tam_tam().boxed()
+        return baca.markuplib.tam_tam().boxed()

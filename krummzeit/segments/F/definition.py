@@ -172,15 +172,15 @@ maker(
 maker(
     (['vn', 'va', 'vc'], (5, 13)),
     baca.dynamic('fff'),
-    baca.markups.gridato_possibile(),
+    baca.markuplib.gridato_possibile(),
     )
 
 maker(
     ('vn', (8, 10)),
     baca.text_spanner(
-        baca.markups.grid_possibile(),
+        baca.markuplib.grid_possibile(),
         '=>',
-        baca.markups.flaut_possibile(),
+        baca.markuplib.flaut_possibile(),
         tweaks=[abjad.tweak(5).staff_padding],
         ),
     )
@@ -188,16 +188,16 @@ maker(
 maker(
     (['va', 'vc'], (9, 10)),
     baca.text_spanner(
-        baca.markups.grid_possibile(),
+        baca.markuplib.grid_possibile(),
         '=>',
-        baca.markups.flaut_possibile(),
+        baca.markuplib.flaut_possibile(),
         tweaks=[abjad.tweak(5).staff_padding],
         ),
     )
 
 maker(
     ('perc', (13, 14)),
-    baca.markups.attackless(),
+    baca.markuplib.attackless(),
     baca.dynamic('p', selector=baca.pheads()),
     )
 

@@ -278,7 +278,7 @@ maker(
     ('perc', (3, 6)),
     baca.accent(selector=baca.pheads()),
     baca.dynamic('"ff"'),
-    baca.markups.accent_changes_of_direction(),
+    baca.markuplib.accent_changes_of_direction(),
     baca.staff_position(0),
     )
 
@@ -319,16 +319,16 @@ maker(
 maker(
     ('va', 4),
     baca.hairpin('pp < f'),
-    baca.markups.molto_flautando_e_pont(),
+    baca.markuplib.molto_flautando_e_pont(),
     )
 
 maker(
     ('va', (5, 6)),
     baca.hairpin('pp < f'),
     baca.text_spanner(
-        baca.markups.molto_flautando(),
+        baca.markuplib.molto_flautando(),
         '=>',
-        baca.markups.molto_gridato(),
+        baca.markuplib.molto_gridato(),
         tweaks=[abjad.tweak(6).staff_padding],
         ),
     )
@@ -337,9 +337,9 @@ maker(
     (['vn', 'vc'], 6),
     baca.hairpin('pp < f'),
     baca.text_spanner(
-        baca.markups.molto_flautando(),
+        baca.markuplib.molto_flautando(),
         '=>',
-        baca.markups.molto_gridato(),
+        baca.markuplib.molto_gridato(),
         tweaks=[abjad.tweak(6).staff_padding],
         ),
     )
@@ -347,7 +347,7 @@ maker(
 maker(
     (['vn', 'va', 'vc'], [7, 9]),
     baca.dynamic('ff'),
-    baca.markups.molto_gridato(),
+    baca.markuplib.molto_gridato(),
     )
 
 maker(
@@ -410,7 +410,7 @@ maker(
 maker(
     ('pf', 13),
     baca.dynamic('mp'),
-    baca.markups.senza_pedale(),
+    baca.markuplib.senza_pedale(),
     )
 
 maker(
@@ -431,7 +431,7 @@ maker(
 maker(
     (['vn', 'va', 'vc'], (11, 13)),
     baca.dynamic('mp'),
-    baca.markups.ordinario(),
+    baca.markuplib.ordinario(),
     baca.stem_tremolo(selector=baca.pleaves()),
     )
 

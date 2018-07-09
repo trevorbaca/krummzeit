@@ -326,9 +326,7 @@ maker(
     ('va', (5, 6)),
     baca.hairpin('pp < f'),
     baca.text_spanner(
-        baca.markuplib.molto_flautando(),
-        '=>',
-        baca.markuplib.molto_gridato(),
+        'molto flautando => molto gridato',
         tweaks=[abjad.tweak(6).staff_padding],
         ),
     )
@@ -337,9 +335,7 @@ maker(
     (['vn', 'vc'], 6),
     baca.hairpin('pp < f'),
     baca.text_spanner(
-        baca.markuplib.molto_flautando(),
-        '=>',
-        baca.markuplib.molto_gridato(),
+        'molto flautando => molto gridato',
         tweaks=[abjad.tweak(6).staff_padding],
         ),
     )

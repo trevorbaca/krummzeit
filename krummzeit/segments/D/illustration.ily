@@ -4341,19 +4341,8 @@ D_ViolinMusicVoice = {
         \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                                 %! PIC
         - \abjad_dashed_line_with_arrow                                    %! PIC
-        - \tweak bound-details.left.text \markup {                         %! PIC
-            \concat                                                        %! PIC
-                {                                                          %! PIC
-                    \upright                                               %! PIC
-                        "molto flautando"                                  %! PIC
-                    \hspace                                                %! PIC
-                        #0.5                                               %! PIC
-                }                                                          %! PIC
-            }                                                              %! PIC
-        - \tweak bound-details.right.text \markup {                        %! PIC
-            \upright                                                       %! PIC
-                "molto gridato ed estr. sul pont."                         %! PIC
-            }                                                              %! PIC
+        - \tweak bound-details.left.text \markup \baca-left "molto flautando" %! PIC
+        - \tweak bound-details.right.text \markup \baca-right "molto gridato" %! PIC
         - \tweak bound-details.right.padding #0.5                          %! PIC
         - \tweak bound-details.right.stencil-align-dir-y #center           %! PIC
         - \tweak staff-padding #6                                          %! PIC
@@ -5084,19 +5073,8 @@ D_ViolaMusicVoice = {
         \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                                 %! PIC
         - \abjad_dashed_line_with_arrow                                    %! PIC
-        - \tweak bound-details.left.text \markup {                         %! PIC
-            \concat                                                        %! PIC
-                {                                                          %! PIC
-                    \upright                                               %! PIC
-                        "molto flautando"                                  %! PIC
-                    \hspace                                                %! PIC
-                        #0.5                                               %! PIC
-                }                                                          %! PIC
-            }                                                              %! PIC
-        - \tweak bound-details.right.text \markup {                        %! PIC
-            \upright                                                       %! PIC
-                "molto gridato ed estr. sul pont."                         %! PIC
-            }                                                              %! PIC
+        - \tweak bound-details.left.text \markup \baca-left "molto flautando" %! PIC
+        - \tweak bound-details.right.text \markup \baca-right "molto gridato" %! PIC
         - \tweak bound-details.right.padding #0.5                          %! PIC
         - \tweak bound-details.right.stencil-align-dir-y #center           %! PIC
         - \tweak staff-padding #6                                          %! PIC
@@ -5905,19 +5883,8 @@ D_CelloMusicVoice = {
         \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                                 %! PIC
         - \abjad_dashed_line_with_arrow                                    %! PIC
-        - \tweak bound-details.left.text \markup {                         %! PIC
-            \concat                                                        %! PIC
-                {                                                          %! PIC
-                    \upright                                               %! PIC
-                        "molto flautando"                                  %! PIC
-                    \hspace                                                %! PIC
-                        #0.5                                               %! PIC
-                }                                                          %! PIC
-            }                                                              %! PIC
-        - \tweak bound-details.right.text \markup {                        %! PIC
-            \upright                                                       %! PIC
-                "molto gridato ed estr. sul pont."                         %! PIC
-            }                                                              %! PIC
+        - \tweak bound-details.left.text \markup \baca-left "molto flautando" %! PIC
+        - \tweak bound-details.right.text \markup \baca-right "molto gridato" %! PIC
         - \tweak bound-details.right.padding #0.5                          %! PIC
         - \tweak bound-details.right.stencil-align-dir-y #center           %! PIC
         - \tweak staff-padding #6                                          %! PIC

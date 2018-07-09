@@ -179,7 +179,7 @@ maker(
     ('vn', (8, 10)),
     baca.text_spanner(
         'grid. possibile => flaut. possibile',
-        tweaks=[abjad.tweak(5).staff_padding],
+        abjad.tweak(5).staff_padding,
         ),
     )
 
@@ -187,7 +187,7 @@ maker(
     (['va', 'vc'], (9, 10)),
     baca.text_spanner(
         'grid. possibile => flaut. possibile',
-        tweaks=[abjad.tweak(5).staff_padding],
+        abjad.tweak(5).staff_padding,
         ),
     )
 

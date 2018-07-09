@@ -133,7 +133,7 @@ maker(
     krummzeit.displacement(),
     krummzeit.register_narrow(7, 5),
     baca.ottava(),
-    baca.markuplib.pizz(),
+    baca.markups.pizz(),
     baca.staccatissimo(selector=baca.pheads()),
     )
 
@@ -160,7 +160,7 @@ maker(
     krummzeit.displacement(),
     krummzeit.register_narrow(6, 5),
     baca.ottava(),
-    baca.markuplib.pizz(),
+    baca.markups.pizz(),
     baca.staccatissimo(selector=baca.pheads()),
     )
 
@@ -187,7 +187,7 @@ maker(
     baca.hairpin('ff > pp'),
     krummzeit.displacement(),
     krummzeit.register_narrow(5, 4),
-    baca.markuplib.pizz(),
+    baca.markups.pizz(),
     baca.staccatissimo(selector=baca.pheads()),
     )
 
@@ -248,7 +248,7 @@ maker(
     baca.dynamic('fff'),
     krummzeit.clusters('low'),
     baca.ottava_bassa(),
-    baca.markuplib.senza_pedale(),
+    baca.markups.senza_pedale(),
     )
 
 maker(
@@ -275,7 +275,7 @@ maker(
 
 maker(
     ('va', (11, 12)),
-    baca.markuplib.arco(),
+    baca.markups.arco(),
     baca.dynamic('fff_poss'),
     )
 
@@ -286,7 +286,7 @@ maker(
 
 maker(
     (['vn', 'vc'], (14, 16)),
-    baca.markuplib.arco(),
+    baca.markups.arco(),
     )
 
 maker(

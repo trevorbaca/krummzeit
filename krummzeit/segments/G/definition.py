@@ -213,7 +213,7 @@ maker(
         baca.runs(),
         baca.glissando(),
         ),
-    baca.markuplib.subito_ordinario(),
+    baca.markups.subito_ordinario(),
     baca.pitches('A1 B~1 C2 D+2 E+2 F2 Gb2 A~2 B2'),
     )
 
@@ -230,7 +230,7 @@ maker(
         ),
     baca.dls_staff_padding(6),
     baca.hairpin('ff < fff'),
-    baca.markuplib.subito_ordinario(),
+    baca.markups.subito_ordinario(),
     )
 
 maker(
@@ -254,7 +254,7 @@ maker(
 maker(
     ('pf', (5, 12)),
     baca.dynamic('pp'),
-    baca.markuplib.leggierissimo(),
+    baca.markups.leggierissimo(),
     baca.staccato(selector=baca.pheads()),
     baca.suite(
         krummzeit.displacement(),
@@ -281,14 +281,14 @@ maker(
 maker(
     (['ob', 'cl'], (9, 12)),
     baca.dynamic('pp'),
-    baca.markuplib.leggierissimo(),
+    baca.markups.leggierissimo(),
     baca.staccato(selector=baca.pheads()),
     )
 
 maker(
     ('vn', (5, 12)),
     baca.dynamic('pp'),
-    baca.markuplib.leggierissimo_off_string_bowing_on_staccati(),
+    baca.markups.leggierissimo_off_string_bowing_on_staccati(),
     baca.staccato(selector=baca.pheads()),
     )
 
@@ -310,7 +310,7 @@ maker(
         baca.runs(),
         baca.glissando(),
         ),
-    baca.markuplib.molto_flautando(),
+    baca.markups.molto_flautando(),
     baca.tuplet_bracket_staff_padding(4),
     )
 
@@ -340,14 +340,14 @@ maker(
 
 maker(
     (['vn', 'vc'], (14, 20)),
-    baca.markuplib.molto_gridato(),
+    baca.markups.molto_gridato(),
     baca.note_head_style_harmonic(),
     baca.dynamic('fff_poss'),
     )
 
 maker(
     ('va', (14, 19)),
-    baca.markuplib.molto_gridato(),
+    baca.markups.molto_gridato(),
     baca.note_head_style_harmonic(),
     baca.dynamic('fff_poss'),
     )
@@ -415,13 +415,13 @@ maker(
 
 maker(
     ('va', (20, 21)),
-    baca.markuplib.subito_ordinario(),
+    baca.markups.subito_ordinario(),
     baca.stem_tremolo(selector=baca.pleaves()),
     )
 
 maker(
     (['vn', 'vc'], 21),
-    baca.markuplib.subito_ordinario(),
+    baca.markups.subito_ordinario(),
     baca.stem_tremolo(selector=baca.pleaves()),
     )
 

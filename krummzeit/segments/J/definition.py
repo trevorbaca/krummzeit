@@ -127,7 +127,7 @@ maker(
     (['vn', 'va'], (1, 10)),
     baca.dynamic('ff'),
     baca.dls_staff_padding(5),
-    baca.markuplib.pizz(),
+    baca.markups.pizz(),
     baca.staccatissimo(selector=baca.pheads()),
     baca.tuplet_bracket_staff_padding(2),
     krummzeit.displacement(),
@@ -152,13 +152,13 @@ maker(
         baca.runs(),
         baca.glissando(),
         ),
-    baca.markuplib.gridato_possibile(),
+    baca.markups.gridato_possibile(),
     )
 
 maker(
     ('vc', (7, 12)),
     baca.dynamic('ff'),
-    baca.markuplib.ordinario(),
+    baca.markups.ordinario(),
     )
 
 maker(

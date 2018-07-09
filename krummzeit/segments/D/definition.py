@@ -327,7 +327,7 @@ maker(
     baca.hairpin('pp < f'),
     baca.text_spanner(
         'molto flautando => molto gridato',
-        tweaks=[abjad.tweak(6).staff_padding],
+        abjad.tweak(6).staff_padding,
         ),
     )
 
@@ -336,7 +336,7 @@ maker(
     baca.hairpin('pp < f'),
     baca.text_spanner(
         'molto flautando => molto gridato',
-        tweaks=[abjad.tweak(6).staff_padding],
+        abjad.tweak(6).staff_padding,
         ),
     )
 

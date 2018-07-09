@@ -1824,19 +1824,8 @@ F_ViolinMusicVoice = {
         % [F ViolinMusicVoice measure 245 / measure 11]                    %! SM4
         fs!2.
         - \abjad_dashed_line_with_arrow                                    %! PIC
-        - \tweak bound-details.left.text \markup {                         %! PIC
-            \concat                                                        %! PIC
-                {                                                          %! PIC
-                    \upright                                               %! PIC
-                        "grid. possibile"                                  %! PIC
-                    \hspace                                                %! PIC
-                        #0.5                                               %! PIC
-                }                                                          %! PIC
-            }                                                              %! PIC
-        - \tweak bound-details.right.text \markup {                        %! PIC
-            \upright                                                       %! PIC
-                "flaut. possibile"                                         %! PIC
-            }                                                              %! PIC
+        - \tweak bound-details.left.text \markup \baca-left "grid. possibile" %! PIC
+        - \tweak bound-details.right.text \markup \baca-right "flaut. possibile" %! PIC
         - \tweak bound-details.right.padding #0.5                          %! PIC
         - \tweak bound-details.right.stencil-align-dir-y #center           %! PIC
         - \tweak staff-padding #5                                          %! PIC
@@ -2037,19 +2026,8 @@ F_ViolaMusicVoice = {
         % [F ViolaMusicVoice measure 247 / measure 13]                     %! SM4
         bf,!4
         - \abjad_dashed_line_with_arrow                                    %! PIC
-        - \tweak bound-details.left.text \markup {                         %! PIC
-            \concat                                                        %! PIC
-                {                                                          %! PIC
-                    \upright                                               %! PIC
-                        "grid. possibile"                                  %! PIC
-                    \hspace                                                %! PIC
-                        #0.5                                               %! PIC
-                }                                                          %! PIC
-            }                                                              %! PIC
-        - \tweak bound-details.right.text \markup {                        %! PIC
-            \upright                                                       %! PIC
-                "flaut. possibile"                                         %! PIC
-            }                                                              %! PIC
+        - \tweak bound-details.left.text \markup \baca-left "grid. possibile" %! PIC
+        - \tweak bound-details.right.text \markup \baca-right "flaut. possibile" %! PIC
         - \tweak bound-details.right.padding #0.5                          %! PIC
         - \tweak bound-details.right.stencil-align-dir-y #center           %! PIC
         - \tweak staff-padding #5                                          %! PIC
@@ -2242,19 +2220,8 @@ F_CelloMusicVoice = {
         % [F CelloMusicVoice measure 247 / measure 13]                     %! SM4
         a,,1.
         - \abjad_dashed_line_with_arrow                                    %! PIC
-        - \tweak bound-details.left.text \markup {                         %! PIC
-            \concat                                                        %! PIC
-                {                                                          %! PIC
-                    \upright                                               %! PIC
-                        "grid. possibile"                                  %! PIC
-                    \hspace                                                %! PIC
-                        #0.5                                               %! PIC
-                }                                                          %! PIC
-            }                                                              %! PIC
-        - \tweak bound-details.right.text \markup {                        %! PIC
-            \upright                                                       %! PIC
-                "flaut. possibile"                                         %! PIC
-            }                                                              %! PIC
+        - \tweak bound-details.left.text \markup \baca-left "grid. possibile" %! PIC
+        - \tweak bound-details.right.text \markup \baca-right "flaut. possibile" %! PIC
         - \tweak bound-details.right.padding #0.5                          %! PIC
         - \tweak bound-details.right.stencil-align-dir-y #center           %! PIC
         - \tweak staff-padding #5                                          %! PIC

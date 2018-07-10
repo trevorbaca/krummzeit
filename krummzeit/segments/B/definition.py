@@ -94,7 +94,9 @@ maker(
     baca.repeat_tie_up(),
     baca.staff_lines(1),
     baca.staff_position(0),
-    krummzeit.markup.scraped_slate(),
+    baca.markup(
+        krummzeit.markup.scraped_slate(),
+        ),
     )
 
 maker(
@@ -188,7 +190,7 @@ maker(
     ('perc', (27, 30)),
     baca.clef('percussion'),
     baca.make_repeat_tied_notes(),
-    krummzeit.markup.snare_drum(),
+    baca.markup('snare drum', boxed=True),
     )
 
 maker(
@@ -372,7 +374,9 @@ maker(
     ('perc', (27, 30)),
     baca.dynamic('ppp'),
     baca.stem_tremolo(selector=baca.pleaves()),
-    krummzeit.markup.fingertips(),
+    baca.markup(
+        krummzeit.markup.fingertips(),
+        ),
     )
 
 maker(
@@ -398,7 +402,9 @@ maker(
         ),
     baca.hairpin('pp < fff'),
     baca.markup('non flautando'),
-    krummzeit.markup.show_tempo(),
+    baca.markup(
+        krummzeit.markup.show_tempo(),
+        ),
     )
 
 ### VERTICAL ALIGNMENT ###

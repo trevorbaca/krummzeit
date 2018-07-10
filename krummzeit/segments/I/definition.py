@@ -92,10 +92,10 @@ maker(
     ('perc', (3, 15)),
     baca.not_parts(baca.bar_extent_zero()),
     baca.clef('percussion'),
+    baca.markup('tam-tam', boxed=True),
     baca.staff_lines(1),
     baca.staff_position(0),
     krummzeit.incise_attacks(),
-    krummzeit.markup.tam_tam(),
     )
 
 maker(

@@ -121,7 +121,7 @@ maker(
         division_mask=abjad.index([-1]),
         do_not_rewrite_meter=True,
         ),
-    krummzeit.markup.tam_tam(),
+    baca.markup('tam-tam', boxed=True),
     )
 
 maker(
@@ -324,7 +324,9 @@ maker(
         ),
     baca.note_head_style_harmonic(),
     baca.pitch('C4'),
-    krummzeit.markup.fifth_harmonic_of_F1(),
+    baca.markup(
+        krummzeit.markup.fifth_harmonic_of_F1(),
+        ),
     )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())

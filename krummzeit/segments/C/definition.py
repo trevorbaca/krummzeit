@@ -66,7 +66,7 @@ maker(
     baca.dynamic('ppp_ancora'),
     baca.make_repeat_tied_notes(),
     baca.stem_tremolo(selector=baca.pleaves()),
-    krummzeit.markup.snare_drum(),
+    baca.markup('snare drum', boxed=True),
     )
 
 maker(
@@ -232,7 +232,7 @@ maker(
 maker(
     ('perc', (14, 17)),
     baca.make_repeated_duration_notes([(1, 4)]),
-    krummzeit.markup.tam_tam(),
+    baca.markup('tam-tam', boxed=True),
     )
 
 maker(

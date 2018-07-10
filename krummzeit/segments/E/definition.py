@@ -73,7 +73,7 @@ maker(
 
 maker(
     ('perc', [(1, 6), (17, 22)]),
-    krummzeit.markup.suspended_cymbal(),
+    baca.markup('suspended cymbal', boxed=True),
     krummzeit.sponge_rhythm(),
     )
 

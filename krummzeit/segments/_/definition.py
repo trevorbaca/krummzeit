@@ -140,7 +140,9 @@ maker(
     baca.dynamic('fff'),
     # TODO: release need for markup to happen after clusters:
     krummzeit.clusters('tenor'),
-    krummzeit.markup.catch_resonance(),
+    baca.markup(
+        krummzeit.markup.catch_resonance(),
+        ),
     krummzeit.single_cluster_piano_rhythm(),
     )
 
@@ -182,7 +184,9 @@ maker(
     baca.staff_lines(1),
     baca.staff_position(0),
     krummzeit.instrument('Percussion'),
-    krummzeit.markup.accent_changes(),
+    baca.markup(
+        krummzeit.markup.accent_changes(),
+        ),
     krummzeit.sponge_rhythm(),
     )
 

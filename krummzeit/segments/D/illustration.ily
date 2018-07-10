@@ -3505,7 +3505,7 @@ D_PercussionMusicVoice = {
                 \box                                                       %! IC
                     sponges                                                %! IC
             }                                                              %! IC
-        ^ \markup { "accent changes of direction noticeably at each attack" } %! IC
+        ^ \markup { "accent changes of direction noticeably on each attack" } %! IC
         
         c'1
         -\accent                                                           %! IC
@@ -4406,7 +4406,7 @@ D_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         cs''!16.
         \ff                                                                %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup { "molto gridato ed estr. sul pont." }                   %! IC
+        ^ \markup { "molto gridato" }                                      %! IC
         \glissando                                                         %! SC
         
         af''!4.
@@ -4562,7 +4562,7 @@ D_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
         f''4
         \ff                                                                %! SM8:REDUNDANT_DYNAMIC:IC
-        ^ \markup { "molto gridato ed estr. sul pont." }                   %! IC
+        ^ \markup { "molto gridato" }                                      %! IC
         \glissando                                                         %! SC
         
         a''2
@@ -5016,7 +5016,7 @@ D_ViolaMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     a''8
     \pp                                                                    %! SM8:EXPLICIT_DYNAMIC:PIC
-    ^ \markup { "molto flautando ed estr. sul pont." }                     %! IC
+    ^ \markup { "molto flautando e pont." }                                %! IC
     \<                                                                     %! PIC
     \glissando                                                             %! SC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
@@ -5211,7 +5211,7 @@ D_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         ef''!2
         \ff                                                                %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup { "molto gridato ed estr. sul pont." }                   %! IC
+        ^ \markup { "molto gridato" }                                      %! IC
         \glissando                                                         %! SC
         
         d''4.
@@ -5369,7 +5369,7 @@ D_ViolaMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     c''4
     \ff                                                                    %! SM8:REDUNDANT_DYNAMIC:IC
-    ^ \markup { "molto gridato ed estr. sul pont." }                       %! IC
+    ^ \markup { "molto gridato" }                                          %! IC
     \glissando                                                             %! SC
     
     ef''!2
@@ -5931,7 +5931,7 @@ D_CelloMusicVoice = {
         \baca_repeat_pitch_class_warning                                   %! SM14
         fs''!4
         \ff                                                                %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup { "molto gridato ed estr. sul pont." }                   %! IC
+        ^ \markup { "molto gridato" }                                      %! IC
         - \tweak color #red                                                %! SM14
         ^ \markup { @ }                                                    %! SM14
         
@@ -6094,7 +6094,7 @@ D_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
         b''4
         \ff                                                                %! SM8:REDUNDANT_DYNAMIC:IC
-        ^ \markup { "molto gridato ed estr. sul pont." }                   %! IC
+        ^ \markup { "molto gridato" }                                      %! IC
         \glissando                                                         %! SC
         
         fs''!2

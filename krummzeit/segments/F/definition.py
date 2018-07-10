@@ -172,7 +172,7 @@ maker(
 maker(
     (['vn', 'va', 'vc'], (5, 13)),
     baca.dynamic('fff'),
-    baca.markups.gridato_possibile(),
+    baca.markup('gridato possibile'),
     )
 
 maker(
@@ -193,7 +193,7 @@ maker(
 
 maker(
     ('perc', (13, 14)),
-    baca.markups.attackless(),
+    baca.markup('attackless'),
     baca.dynamic('p', selector=baca.pheads()),
     )
 

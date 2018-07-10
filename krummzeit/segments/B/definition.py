@@ -280,7 +280,7 @@ maker(
         baca.runs(),
         baca.glissando(),
         ),
-    baca.markups.molto_flautando(),
+    baca.markup('molto flautando'),
     )
 
 maker(
@@ -305,7 +305,7 @@ maker(
         baca.runs(),
         baca.glissando(),
         ),
-    baca.markups.molto_flautando(),
+    baca.markup('molto flautando'),
     )
 
 maker(
@@ -397,7 +397,7 @@ maker(
         baca.glissando(),
         ),
     baca.hairpin('pp < fff'),
-    baca.markups.non_flautando(),
+    baca.markup('non flautando'),
     krummzeit.markup.show_tempo(),
     )
 

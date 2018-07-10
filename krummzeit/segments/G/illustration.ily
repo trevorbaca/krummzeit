@@ -2325,7 +2325,7 @@ G_ViolinMusicVoice = {
         \baca_repeat_pitch_class_warning                                   %! SM14
         af'!8
         \baca_fff_poss                                                     %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup { "molto gridato ed estr. sul pont." }                   %! IC
+        ^ \markup { "molto gridato" }                                      %! IC
         - \tweak color #red                                                %! SM14
         ^ \markup { @ }                                                    %! SM14
         
@@ -2598,7 +2598,7 @@ G_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         b4
         \baca_fff_poss                                                     %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup { "molto gridato ed estr. sul pont." }                   %! IC
+        ^ \markup { "molto gridato" }                                      %! IC
         \glissando                                                         %! SC
         
         \baca_repeat_pitch_class_warning                                   %! SM14
@@ -2867,7 +2867,7 @@ G_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         a,8
         \baca_fff_poss                                                     %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup { "molto gridato ed estr. sul pont." }                   %! IC
+        ^ \markup { "molto gridato" }                                      %! IC
         \glissando                                                         %! SC
         
         bf,!4

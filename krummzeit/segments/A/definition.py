@@ -412,7 +412,7 @@ maker(
 maker(
     ('vn', 4),
     baca.dynamic('mp'),
-    baca.markups.off_string_bowing_on_staccati(),
+    baca.markup('off-string bowing on staccati'),
     )
 
 maker(
@@ -423,7 +423,7 @@ maker(
 maker(
     ('vn', 8),
     baca.dynamic('f'),
-    baca.markups.off_string_bowing_on_staccati(),
+    baca.markup('off-string bowing on staccati'),
     )
 
 maker(
@@ -477,13 +477,13 @@ maker(
 maker(
     (['va', 'vc'], (1, 4)),
     baca.dynamic('mf'),
-    baca.markups.molto_flautando(),
+    baca.markup('molto flautando'),
     )
 
 maker(
     (['va', 'vc'], (5, 8)),
     baca.dynamic('f'),
-    baca.markups.non_flautando(),
+    baca.markup('non flautando'),
     )
 
 maker(
@@ -509,7 +509,7 @@ maker(
         baca.runs(),
         baca.glissando(),
         ),
-    baca.markups.OB_full_bow_strokes(),
+    baca.markup('OB + full bow strokes'),
     krummzeit.register_narrow(5, 3),
     )
 
@@ -524,7 +524,7 @@ maker(
     baca.clef('treble'),
     baca.dynamic('f'),
     baca.glissando(),
-    baca.markups.OB_full_bow_strokes(),
+    baca.markup('OB + full bow strokes'),
     krummzeit.register_narrow(5, 2),
     )
 
@@ -538,7 +538,7 @@ maker(
     baca.alternate_bow_strokes(),
     baca.dynamic('f'),
     baca.glissando(),
-    baca.markups.OB_full_bow_strokes(),
+    baca.markup('OB + full bow strokes'),
     krummzeit.register_narrow(5, 4),
     )
 
@@ -578,7 +578,7 @@ maker(
     ('va', (17, 22)),
     baca.clef('treble'),
     baca.dynamic('fff'),
-    baca.markups.pizz(),
+    baca.markup('pizz.'),
     baca.staccatissimo(selector=baca.pheads()),
     krummzeit.register_narrow(5, 6),
     )
@@ -587,7 +587,7 @@ maker(
     ('vc', (18, 22)),
     baca.clef('treble'),
     baca.dynamic('fff'),
-    baca.markups.pizz(),
+    baca.markup('pizz.'),
     baca.staccatissimo(selector=baca.pheads()),
     krummzeit.register_narrow(5, 6),
     )
@@ -595,7 +595,7 @@ maker(
 maker(
     ('vn', (19, 22)),
     baca.dynamic('fff'),
-    baca.markups.pizz(),
+    baca.markup('pizz.'),
     baca.staccatissimo(selector=baca.pheads()),
     krummzeit.register_narrow(5, 6),
     )

@@ -88,8 +88,8 @@ maker(
 maker(
     ('perc', (4, 5)),
     baca.clef('percussion'),
+    baca.markup('crotales', boxed=True),
     krummzeit.left_remainder_quarters([abjad.index([0])]),
-    krummzeit.markup.crotales(),
     )
 
 maker(

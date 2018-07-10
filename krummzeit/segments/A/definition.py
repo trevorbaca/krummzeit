@@ -143,7 +143,10 @@ maker(
 maker(
     ('cl', 3),
     baca.instrument(krummzeit.instruments['ClarinetInEFlat']),
-    krummzeit.e_flat_clarinet_markup().boxed(),
+    baca.markup(
+        krummzeit.e_flat_clarinet_markup(),
+        boxed=True,
+        ),
     krummzeit.margin_markup('Cl. (Eb)'),
     )
 
@@ -246,8 +249,8 @@ maker(
 
 maker(
     ('perc', (16, 20)),
+    baca.markup('tam-tam', boxed=True),
     krummzeit.incise_attacks(),
-    krummzeit.markup.tam_tam(),
     )
 
 maker(
@@ -326,7 +329,10 @@ maker(
     baca.repeat_tie_up(),
     baca.staff_lines(1),
     baca.staff_position(0),
-    krummzeit.markup.stonecircle_scrape_at_moderate_speed().boxed()
+    baca.markup(
+        krummzeit.markup.stonecircle_scrape_at_moderate_speed(),
+        boxed=True,
+        ),
     )
 
 maker(

@@ -51,7 +51,8 @@ maker(
     ('perc', 1),
     baca.clef('percussion'),
     baca.markup(
-        krummzeit.markup.snare_drum(),
+        'snare drum',
+        boxed=True,
         selector=baca.leaf(0),
         ),
     )
@@ -64,7 +65,7 @@ maker(
 maker(
     ('perc', (13, 14)),
     baca.make_repeated_duration_notes([(1, 2)], do_not_rewrite_meter=True),
-    krummzeit.markup.tam_tam(),
+    baca.markup('tam-tam', boxed=True),
     )
 
 maker(
@@ -151,7 +152,9 @@ maker(
     ('perc', (2, 11)),
     baca.dynamic('ppp'),
     baca.stem_tremolo(selector=baca.pleaves()),
-    krummzeit.markup.fingertips(),
+    baca.markup(
+        krummzeit.markup.fingertips(),
+        ),
     )
 
 maker(

@@ -50,8 +50,8 @@ maker(
 
 maker(
     ('perc', 1),
+    baca.markup('tam-tam', boxed=True),
     krummzeit.incise_attacks(),
-    krummzeit.markup.tam_tam(),
     )
 
 maker(
@@ -65,7 +65,7 @@ maker(
 
 maker(
     ('perc', (3, 6)),
-    krummzeit.markup.sponges(),
+    baca.markup('sponges', boxed=True),
     krummzeit.sponge_rhythm(),
     )
 
@@ -252,7 +252,9 @@ maker(
     baca.dynamic('"mp"'),
     baca.glissando(),
     krummzeit.register_narrow(4),
-    krummzeit.markup.on_bridge_slow(),
+    baca.markup(
+        krummzeit.markup.on_bridge_slow(),
+        ),
     )
 
 maker(
@@ -260,7 +262,9 @@ maker(
     baca.dynamic('"mp"'),
     baca.glissando(),
     krummzeit.register_narrow(3),
-    krummzeit.markup.on_bridge_slow(),
+    baca.markup(
+        krummzeit.markup.on_bridge_slow(),
+        ),
     )
 
 maker(
@@ -271,7 +275,9 @@ maker(
         baca.glissando(),
         ),
     krummzeit.register_narrow(2),
-    krummzeit.markup.on_bridge_slow(),
+    baca.markup(
+        krummzeit.markup.on_bridge_slow(),
+        ),
     )
 
 maker(
@@ -360,7 +366,9 @@ maker(
         baca.tenuto(),
         ),
     baca.note_head_style_harmonic(),
-    krummzeit.markup.fifth_harmonic_of_F1(),
+    baca.markup(
+        krummzeit.markup.fifth_harmonic_of_F1(),
+        ),
     )
 
 maker(
@@ -451,8 +459,10 @@ maker(
     baca.staff_lines(1),
     baca.staff_position(0),
     baca.stem_tremolo(selector=baca.pleaves()),
-    krummzeit.markup.attackless_roll(),
-    krummzeit.markup.suspended_cymbal(),
+    baca.markup(
+        krummzeit.markup.attackless_roll(),
+        ),
+    baca.markup('suspended cymbal', boxed=True),
     )
 
 ### VERTICAL ALIGNMENT ###

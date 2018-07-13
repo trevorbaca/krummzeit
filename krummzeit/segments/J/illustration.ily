@@ -1,3 +1,152 @@
+J_GlobalRests = {
+    
+    % [J GlobalRests measure 314 / measure 1]                                      %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 315 / measure 2]                                      %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 316 / measure 3]                                      %! SM4
+    R1 * 1
+    
+    % [J GlobalRests measure 317 / measure 4]                                      %! SM4
+    R1 * 1/2
+    
+    % [J GlobalRests measure 318 / measure 5]                                      %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 319 / measure 6]                                      %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 320 / measure 7]                                      %! SM4
+    R1 * 1
+    
+    % [J GlobalRests measure 321 / measure 8]                                      %! SM4
+    R1 * 1/2
+    
+    % [J GlobalRests measure 322 / measure 9]                                      %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 323 / measure 10]                                     %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 324 / measure 11]                                     %! SM4
+    R1 * 1
+    
+    % [J GlobalRests measure 325 / measure 12]                                     %! SM4
+    R1 * 1/2
+    
+    % [J GlobalRests measure 326 / measure 13]                                     %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 327 / measure 14]                                     %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 328 / measure 15]                                     %! SM4
+    R1 * 1
+    
+    % [J GlobalRests measure 329 / measure 16]                                     %! SM4
+    R1 * 1/2
+    
+    % [J GlobalRests measure 330 / measure 17]                                     %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 331 / measure 18]                                     %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 332 / measure 19]                                     %! SM4
+    R1 * 1
+    
+    % [J GlobalRests measure 333 / measure 20]                                     %! SM4
+    R1 * 1/2
+    
+    % [J GlobalRests measure 334 / measure 21]                                     %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 335 / measure 22]                                     %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 336 / measure 23]                                     %! SM4
+    R1 * 1
+    
+    % [J GlobalRests measure 337 / measure 24]                                     %! SM4
+    R1 * 1/2
+    
+    % [J GlobalRests measure 338 / measure 25]                                     %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 339 / measure 26]                                     %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 340 / measure 27]                                     %! SM4
+    R1 * 1
+    
+    % [J GlobalRests measure 341 / measure 28]                                     %! SM4
+    R1 * 1/2
+    
+    % [J GlobalRests measure 342 / measure 29]                                     %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 343 / measure 30]                                     %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 344 / measure 31]                                     %! SM4
+    R1 * 1
+    
+    % [J GlobalRests measure 345 / measure 32]                                     %! SM4
+    R1 * 1/2
+    
+    % [J GlobalRests measure 346 / measure 33]                                     %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 347 / measure 34]                                     %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 348 / measure 35]                                     %! SM4
+    R1 * 1
+    
+    % [J GlobalRests measure 349 / measure 36]                                     %! SM4
+    R1 * 1/2
+    
+    % [J GlobalRests measure 350 / measure 37]                                     %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 351 / measure 38]                                     %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 352 / measure 39]                                     %! SM4
+    R1 * 1
+    
+    % [J GlobalRests measure 353 / measure 40]                                     %! SM4
+    R1 * 1/2
+    
+    % [J GlobalRests measure 354 / measure 41]                                     %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 355 / measure 42]                                     %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 356 / measure 43]                                     %! SM4
+    R1 * 1
+    
+    % [J GlobalRests measure 357 / measure 44]                                     %! SM4
+    R1 * 1/2
+    
+    % [J GlobalRests measure 358 / measure 45]                                     %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 359 / measure 46]                                     %! SM4
+    R1 * 5/4
+    
+    % [J GlobalRests measure 360 / measure 47]                                     %! SM4
+    R1 * 1
+    
+    % [J GlobalRests measure 361 / measure 48]                                     %! SM4
+    R1 * 1/2
+    
+}
+
+
 J_GlobalSkips = {
     
     % [J GlobalSkips measure 314 / measure 1]                                      %! SM4

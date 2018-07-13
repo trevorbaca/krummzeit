@@ -8,6 +8,20 @@ import os
 ##################################### [_] #####################################
 ###############################################################################
 
+def stage(n):
+    return {
+        1: (1, 2),
+        2: (3, 3),
+        3: (4, 4),
+        4: (5, 5),
+        5: (6, 6),
+        6: (7, 7),
+        7: (8, 8),
+        8: (9, 9),
+        9: (10, 10),
+        10: (11, 13),
+        }[n]
+
 stage_measure_map = baca.StageMeasureMap([
     2, 1,
     1, 1, 1, 1, 1, 1,
@@ -33,13 +47,25 @@ maker = baca.TimeSignatureMaker(
 measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 maker = baca.SegmentMaker(
-    measures_per_stage=measures_per_stage,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=13,
-    validate_stage_count=10,
+    )
+
+maker(
+    'GlobalSkips',
+    baca.metronome_mark('135', selector=baca.leaf(1 - 1)),
+    baca.metronome_mark('45', selector=baca.leaf(4 - 1)),
+    baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(4 - 1)),
+    baca.metronome_mark('144', selector=baca.leaf(7 - 1)),
+    baca.metronome_mark('108', selector=baca.leaf(8 - 1)),
+    baca.metronome_mark('135', selector=baca.leaf(10 - 1)),
+    )
+
+maker(
+    'GlobalRests',
+    baca.global_fermata('short', selector=baca.leaf(9 - 1)),
     )
 
 maker(
@@ -105,7 +131,7 @@ maker(
     )
 
 maker(
-    ('vn', (3, 7)),
+    ('vn', (4, 8)),
     krummzeit.glissando_rhythm(
         division_ratios=[(2, 1), (2, 1), (1, 1, 1)],
         division_masks=[abjad.index([5, 6], 7)],
@@ -113,7 +139,7 @@ maker(
     )
 
 maker(
-    ('va', (3, 7)),
+    ('va', (4, 8)),
     krummzeit.glissando_rhythm(
         division_ratios=[(2, 1), (1, 1, 1), (2, 1)],
         division_masks=[abjad.index([0, 1], 7)],
@@ -121,7 +147,7 @@ maker(
     )
 
 maker(
-    ('vc', (3, 7)),
+    ('vc', (4, 8)),
     krummzeit.glissando_rhythm(
         division_ratios=[(1, 1, 1), (2, 1), (2, 1)],
         division_masks=[abjad.index([2, 3], 7)],
@@ -129,14 +155,14 @@ maker(
     )
 
 maker(
-    ('cl', (3, 4)),
+    ('cl', (4, 5)),
     baca.dynamic('ppp'),
     baca.make_repeat_tied_notes(),
     baca.pitch('B1'),
     )
 
 maker(
-    ('pf', 3),
+    ('pf', 4),
     baca.dynamic('fff'),
     # TODO: release need for markup to happen after clusters:
     krummzeit.clusters('tenor'),
@@ -147,7 +173,7 @@ maker(
     )
 
 maker(
-    ('pf', 6),
+    ('pf', 7),
     baca.clef('treble'),
     baca.dynamic('fff'),
     baca.make_repeat_tied_notes(),
@@ -156,7 +182,7 @@ maker(
     )
 
 maker(
-    ('pf', 9),
+    ('pf', 10),
     baca.markup(
         baca.Markup('to harpsichord').boxed(),
         selector=baca.leaf(0),
@@ -164,7 +190,7 @@ maker(
     )
 
 maker(
-    ('perc', 6),
+    ('perc', 7),
     baca.dynamic('fff'),
     baca.make_repeat_tied_notes(),
     baca.markup('xylophone', boxed=True),
@@ -173,7 +199,7 @@ maker(
     )
 
 maker(
-    ('perc', (9, 10)),
+    ('perc', (10, 13)),
     baca.accent(selector=baca.pheads()),
     baca.bar_extent((-2, 2)),
     baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
@@ -191,22 +217,22 @@ maker(
     )
 
 maker(
-    ('vn', 1),
+    ('vn', (1, 2)),
     baca.pitch('Eb5'),
     )
 
 maker(
-    ('va', 1),
+    ('va', (1, 2)),
     baca.pitch('A3'),
     )
 
 maker(
-    ('vc', 1),
+    ('vc', (1, 2)),
     baca.pitch('E~2'),
     )
 
 maker(
-    (['vn', 'va', 'vc'], 1),
+    (['vn', 'va', 'vc'], (1, 2)),
     baca.dynamic('fff'),
     baca.stem_tremolo(selector=baca.pleaves()),
     )
@@ -215,15 +241,15 @@ pcs = krummzeit.violet_pitch_classes.get_payload()
 pcs = baca.PitchClassSegment(pcs).rotate(-301).retrograde().transpose(10)
 maker(
     baca.timeline([
-        ('vn', (3, 7)),
-        ('va', (3, 7)),
-        ('vc', (3, 7)),
+        ('vn', (4, 8)),
+        ('va', (4, 8)),
+        ('vc', (4, 8)),
         ]),
     baca.pitches(pcs)
     )
 
 maker(
-    (['vn', 'va', 'vc'], (3, 7)),
+    (['vn', 'va', 'vc'], (4, 8)),
     baca.map(
         baca.runs(),
         baca.glissando(),
@@ -235,17 +261,17 @@ maker(
     )
 
 maker(
-    ('vn', (3, 7)),
+    ('vn', (4, 8)),
     krummzeit.register_narrow(5, 4),
     )
 
 maker(
-    ('va', (3, 7)),
+    ('va', (4, 8)),
     krummzeit.register_narrow(4, 3),
     )
 
 maker(
-    ('vc', (3, 7)),
+    ('vc', (4, 8)),
     krummzeit.register_narrow(4, 3),
     )
 

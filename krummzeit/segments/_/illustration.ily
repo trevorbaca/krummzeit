@@ -7,13 +7,7 @@ i_GlobalRests = {
     R1 * 9/8
     
     % [_ GlobalRests measure 3]                                                    %! SM4
-    \once \override Score.MultiMeasureRest.transparent = ##t                       %! SM19
-    \once \override Score.TimeSignature.stencil = ##f                              %! SM19
     R1 * 1/4
-    ^ \markup {                                                                    %! SM18
-        \musicglyph                                                                %! SM18
-            #"scripts.ushortfermata"                                               %! SM18
-        }                                                                          %! SM18
     
     % [_ GlobalRests measure 4]                                                    %! SM4
     R1 * 3/4
@@ -31,13 +25,13 @@ i_GlobalRests = {
     R1 * 5/8
     
     % [_ GlobalRests measure 9]                                                    %! SM4
-    \once \override Score.MultiMeasureRest.transparent = ##t                       %! SM19
-    \once \override Score.TimeSignature.stencil = ##f                              %! SM19
+    \once \override Score.MultiMeasureRest.transparent = ##t                       %! GFC2
+    \once \override Score.TimeSignature.stencil = ##f                              %! GFC2
     R1 * 1/4
-    ^ \markup {                                                                    %! SM18
-        \musicglyph                                                                %! SM18
-            #"scripts.ushortfermata"                                               %! SM18
-        }                                                                          %! SM18
+    ^ \markup {                                                                    %! GFC1
+        \musicglyph                                                                %! GFC1
+            #"scripts.ushortfermata"                                               %! GFC1
+        }                                                                          %! GFC1
     
     % [_ GlobalRests measure 10]                                                   %! SM4
     R1 * 5/8
@@ -120,6 +114,10 @@ i_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((2))                                                                  %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [_.2]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [0'01'']                                                               %! SM28:CLOCK_TIME_MARKUP
@@ -143,7 +141,7 @@ i_GlobalSkips = {
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
-%@%         [_.2]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%         [_.3]                                                                  %! SM3:STAGE_NUMBER_MARKUP
 %@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
@@ -168,7 +166,7 @@ i_GlobalSkips = {
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
-%@%         [_.3]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%         [_.4]                                                                  %! SM3:STAGE_NUMBER_MARKUP
 %@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
@@ -216,7 +214,7 @@ i_GlobalSkips = {
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
-%@%         [_.4]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%         [_.5]                                                                  %! SM3:STAGE_NUMBER_MARKUP
 %@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
@@ -241,7 +239,7 @@ i_GlobalSkips = {
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
-%@%         [_.5]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%         [_.6]                                                                  %! SM3:STAGE_NUMBER_MARKUP
 %@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
@@ -264,7 +262,7 @@ i_GlobalSkips = {
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
-%@%         [_.6]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%         [_.7]                                                                  %! SM3:STAGE_NUMBER_MARKUP
 %@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
@@ -312,7 +310,7 @@ i_GlobalSkips = {
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
-%@%         [_.7]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%         [_.8]                                                                  %! SM3:STAGE_NUMBER_MARKUP
 %@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
@@ -360,7 +358,7 @@ i_GlobalSkips = {
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
-%@%         [_.8]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%         [_.9]                                                                  %! SM3:STAGE_NUMBER_MARKUP
 %@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
@@ -385,7 +383,7 @@ i_GlobalSkips = {
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
-%@%         [_.9]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%         [_.10]                                                                 %! SM3:STAGE_NUMBER_MARKUP
 %@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
@@ -433,7 +431,7 @@ i_GlobalSkips = {
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
-%@%         [_.10]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%         [_.11]                                                                 %! SM3:STAGE_NUMBER_MARKUP
 %@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
@@ -456,6 +454,10 @@ i_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((12))                                                                 %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [_.12]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [0'24'']                                                               %! SM28:CLOCK_TIME_MARKUP
@@ -477,6 +479,10 @@ i_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((13))                                                                 %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [_.13]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [0'26'']                                                               %! SM28:CLOCK_TIME_MARKUP
@@ -1026,7 +1032,7 @@ i_ViolinMusicVoice = {
 %@% \override Staff.Clef.color = ##f                                       %! SM7:DEFAULT_CLEF_COLOR_CANCELLATION:ST3
     \set Staff.forceClef = ##t                                             %! SM8:DEFAULT_CLEF:SM33:ST3
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)        %! SM6:EXPLICIT_MARGIN_MARKUP_COLOR:IC:-PARTS
-    r8
+    r4
     ^ \markup {                                                            %! SM11:DEFAULT_INSTRUMENT_ALERT:ST1
         \with-color                                                        %! SM11:DEFAULT_INSTRUMENT_ALERT:ST1
             #(x11-color 'DarkViolet)                                       %! SM11:DEFAULT_INSTRUMENT_ALERT:ST1
@@ -1092,71 +1098,9 @@ i_ViolinMusicVoice = {
         :32                                                                %! IC
         ]
     }
-    \times 2/3 {
-        
-        ef''!8
-        :32                                                                %! IC
-        [
-        
-        ef''!8
-        :32                                                                %! IC
-        
-        ef''!8
-        :32                                                                %! IC
-        ]
-    }
-    \times 2/3 {
-        
-        ef''!8
-        :32                                                                %! IC
-        [
-        
-        ef''!8
-        :32                                                                %! IC
-        
-        ef''!8
-        :32                                                                %! IC
-        ]
-    }
-    \times 2/3 {
-        
-        ef''!8
-        :32                                                                %! IC
-        [
-        
-        ef''!8
-        :32                                                                %! IC
-        
-        ef''!8
-        :32                                                                %! IC
-        ]
-    }
-    \times 2/3 {
-        
-        ef''!8
-        :32                                                                %! IC
-        [
-        
-        ef''!8
-        :32                                                                %! IC
-        
-        ef''!8
-        :32                                                                %! IC
-        ]
-    }
-    \times 2/3 {
-        
-        ef''!8
-        :32                                                                %! IC
-        [
-        
-        ef''!8
-        :32                                                                %! IC
-        
-        ef''!8
-        :32                                                                %! IC
-        ]
-    }
+    
+    % [_ ViolinMusicVoice measure 2]                                       %! SM4
+    R1 * 9/8
     
     % [_ ViolinMusicVoice measure 3]                                       %! SM4
     R1 * 1/4
@@ -1303,7 +1247,7 @@ i_ViolaMusicVoice = {
 %@% \override Staff.Clef.color = ##f                                       %! SM7:DEFAULT_CLEF_COLOR_CANCELLATION:ST3
     \set Staff.forceClef = ##t                                             %! SM8:DEFAULT_CLEF:SM33:ST3
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)        %! SM6:EXPLICIT_MARGIN_MARKUP_COLOR:IC:-PARTS
-    r8
+    r4
     ^ \markup {                                                            %! SM11:DEFAULT_INSTRUMENT_ALERT:ST1
         \with-color                                                        %! SM11:DEFAULT_INSTRUMENT_ALERT:ST1
             #(x11-color 'DarkViolet)                                       %! SM11:DEFAULT_INSTRUMENT_ALERT:ST1
@@ -1369,71 +1313,9 @@ i_ViolaMusicVoice = {
         :32                                                                %! IC
         ]
     }
-    \times 2/3 {
-        
-        a8
-        :32                                                                %! IC
-        [
-        
-        a8
-        :32                                                                %! IC
-        
-        a8
-        :32                                                                %! IC
-        ]
-    }
-    \times 2/3 {
-        
-        a8
-        :32                                                                %! IC
-        [
-        
-        a8
-        :32                                                                %! IC
-        
-        a8
-        :32                                                                %! IC
-        ]
-    }
-    \times 2/3 {
-        
-        a8
-        :32                                                                %! IC
-        [
-        
-        a8
-        :32                                                                %! IC
-        
-        a8
-        :32                                                                %! IC
-        ]
-    }
-    \times 2/3 {
-        
-        a8
-        :32                                                                %! IC
-        [
-        
-        a8
-        :32                                                                %! IC
-        
-        a8
-        :32                                                                %! IC
-        ]
-    }
-    \times 2/3 {
-        
-        a8
-        :32                                                                %! IC
-        [
-        
-        a8
-        :32                                                                %! IC
-        
-        a8
-        :32                                                                %! IC
-        ]
-    }
+    
+    % [_ ViolaMusicVoice measure 2]                                        %! SM4
+    R1 * 9/8
     
     % [_ ViolaMusicVoice measure 3]                                        %! SM4
     R1 * 1/4
@@ -1580,7 +1462,7 @@ i_CelloMusicVoice = {
 %@% \override Staff.Clef.color = ##f                                       %! SM7:DEFAULT_CLEF_COLOR_CANCELLATION:ST3
     \set Staff.forceClef = ##t                                             %! SM8:DEFAULT_CLEF:SM33:ST3
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)        %! SM6:EXPLICIT_MARGIN_MARKUP_COLOR:IC:-PARTS
-    r8
+    r4
     ^ \markup {                                                            %! SM11:DEFAULT_INSTRUMENT_ALERT:ST1
         \with-color                                                        %! SM11:DEFAULT_INSTRUMENT_ALERT:ST1
             #(x11-color 'DarkViolet)                                       %! SM11:DEFAULT_INSTRUMENT_ALERT:ST1
@@ -1646,71 +1528,9 @@ i_CelloMusicVoice = {
         :32                                                                %! IC
         ]
     }
-    \times 2/3 {
-        
-        eqf,!8
-        :32                                                                %! IC
-        [
-        
-        eqf,!8
-        :32                                                                %! IC
-        
-        eqf,!8
-        :32                                                                %! IC
-        ]
-    }
-    \times 2/3 {
-        
-        eqf,!8
-        :32                                                                %! IC
-        [
-        
-        eqf,!8
-        :32                                                                %! IC
-        
-        eqf,!8
-        :32                                                                %! IC
-        ]
-    }
-    \times 2/3 {
-        
-        eqf,!8
-        :32                                                                %! IC
-        [
-        
-        eqf,!8
-        :32                                                                %! IC
-        
-        eqf,!8
-        :32                                                                %! IC
-        ]
-    }
-    \times 2/3 {
-        
-        eqf,!8
-        :32                                                                %! IC
-        [
-        
-        eqf,!8
-        :32                                                                %! IC
-        
-        eqf,!8
-        :32                                                                %! IC
-        ]
-    }
-    \times 2/3 {
-        
-        eqf,!8
-        :32                                                                %! IC
-        [
-        
-        eqf,!8
-        :32                                                                %! IC
-        
-        eqf,!8
-        :32                                                                %! IC
-        ]
-    }
+    
+    % [_ CelloMusicVoice measure 2]                                        %! SM4
+    R1 * 9/8
     
     % [_ CelloMusicVoice measure 3]                                        %! SM4
     R1 * 1/4

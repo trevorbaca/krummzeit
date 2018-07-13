@@ -25,10 +25,10 @@
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HSS2:SPACING_MARKUP
             
             % [PageLayout measure 3]                                                     %! SM4
-            \baca_new_spacing_section #1 #4                                              %! HSS1:SPACING
+            \baca_new_spacing_section #1 #32                                             %! HSS1:SPACING
             \noBreak                                                                     %! BMM2:BREAK
             s1 * 1/4
-        %@% ^ \markup { \baca-forest-green-markup "[1/4]" }                              %! HSS2:SPACING_MARKUP
+        %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HSS2:SPACING_MARKUP
             
             % [PageLayout measure 4]                                                     %! SM4
             \baca_new_spacing_section #1 #32                                             %! HSS1:SPACING

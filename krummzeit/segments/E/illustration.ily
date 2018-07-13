@@ -1,3 +1,113 @@
+E_GlobalRests = {
+    
+    % [E GlobalRests measure 200 / measure 1]                                      %! SM4
+    R1 * 3/4
+    
+    % [E GlobalRests measure 201 / measure 2]                                      %! SM4
+    R1 * 1
+    
+    % [E GlobalRests measure 202 / measure 3]                                      %! SM4
+    R1 * 3/2
+    
+    % [E GlobalRests measure 203 / measure 4]                                      %! SM4
+    R1 * 9/8
+    
+    % [E GlobalRests measure 204 / measure 5]                                      %! SM4
+    R1 * 3/4
+    
+    % [E GlobalRests measure 205 / measure 6]                                      %! SM4
+    R1 * 5/8
+    
+    % [E GlobalRests measure 206 / measure 7]                                      %! SM4
+    R1 * 9/8
+    
+    % [E GlobalRests measure 207 / measure 8]                                      %! SM4
+    R1 * 9/8
+    
+    % [E GlobalRests measure 208 / measure 9]                                      %! SM4
+    R1 * 5/8
+    
+    % [E GlobalRests measure 209 / measure 10]                                     %! SM4
+    R1 * 5/8
+    
+    % [E GlobalRests measure 210 / measure 11]                                     %! SM4
+    R1 * 3/4
+    
+    % [E GlobalRests measure 211 / measure 12]                                     %! SM4
+    R1 * 1
+    
+    % [E GlobalRests measure 212 / measure 13]                                     %! SM4
+    R1 * 5/4
+    
+    % [E GlobalRests measure 213 / measure 14]                                     %! SM4
+    R1 * 5/4
+    
+    % [E GlobalRests measure 214 / measure 15]                                     %! SM4
+    R1 * 3/4
+    
+    % [E GlobalRests measure 215 / measure 16]                                     %! SM4
+    R1 * 3/4
+    
+    % [E GlobalRests measure 216 / measure 17]                                     %! SM4
+    R1 * 1
+    
+    % [E GlobalRests measure 217 / measure 18]                                     %! SM4
+    R1 * 11/8
+    
+    % [E GlobalRests measure 218 / measure 19]                                     %! SM4
+    R1 * 3/4
+    
+    % [E GlobalRests measure 219 / measure 20]                                     %! SM4
+    R1 * 5/8
+    
+    % [E GlobalRests measure 220 / measure 21]                                     %! SM4
+    R1 * 9/8
+    
+    % [E GlobalRests measure 221 / measure 22]                                     %! SM4
+    R1 * 9/8
+    
+    % [E GlobalRests measure 222 / measure 23]                                     %! SM4
+    R1 * 7/8
+    
+    % [E GlobalRests measure 223 / measure 24]                                     %! SM4
+    R1 * 9/8
+    
+    % [E GlobalRests measure 224 / measure 25]                                     %! SM4
+    R1 * 3/4
+    
+    % [E GlobalRests measure 225 / measure 26]                                     %! SM4
+    R1 * 3/4
+    
+    % [E GlobalRests measure 226 / measure 27]                                     %! SM4
+    R1 * 3/4
+    
+    % [E GlobalRests measure 227 / measure 28]                                     %! SM4
+    R1 * 3/4
+    
+    % [E GlobalRests measure 228 / measure 29]                                     %! SM4
+    R1 * 1
+    
+    % [E GlobalRests measure 229 / measure 30]                                     %! SM4
+    R1 * 5/4
+    
+    % [E GlobalRests measure 230 / measure 31]                                     %! SM4
+    R1 * 1
+    
+    % [E GlobalRests measure 231 / measure 32]                                     %! SM4
+    R1 * 9/8
+    
+    % [E GlobalRests measure 232 / measure 33]                                     %! SM4
+    R1 * 3/4
+    
+    % [E GlobalRests measure 233 / measure 34]                                     %! SM4
+    R1 * 5/8
+    
+    % [E GlobalRests measure 234 / measure 35]                                     %! SM4
+    R1 * 9/8
+    
+}
+
+
 E_GlobalSkips = {
     
     % [E GlobalSkips measure 200 / measure 1]                                      %! SM4

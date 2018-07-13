@@ -1,3 +1,38 @@
+H_GlobalRests = {
+    
+    % [H GlobalRests measure 281 / measure 1]                                      %! SM4
+    R1 * 7/8
+    
+    % [H GlobalRests measure 282 / measure 2]                                      %! SM4
+    R1 * 3/2
+    
+    % [H GlobalRests measure 283 / measure 3]                                      %! SM4
+    R1 * 7/4
+    
+    % [H GlobalRests measure 284 / measure 4]                                      %! SM4
+    R1 * 7/4
+    
+    % [H GlobalRests measure 285 / measure 5]                                      %! SM4
+    R1 * 3/4
+    
+    % [H GlobalRests measure 286 / measure 6]                                      %! SM4
+    R1 * 11/8
+    
+    % [H GlobalRests measure 287 / measure 7]                                      %! SM4
+    R1 * 5/8
+    
+    % [H GlobalRests measure 288 / measure 8]                                      %! SM4
+    R1 * 1
+    
+    % [H GlobalRests measure 289 / measure 9]                                      %! SM4
+    R1 * 1/2
+    
+    % [H GlobalRests measure 290 / measure 10]                                     %! SM4
+    R1 * 7/4
+    
+}
+
+
 H_GlobalSkips = {
     
     % [H GlobalSkips measure 281 / measure 1]                                      %! SM4

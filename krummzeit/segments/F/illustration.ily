@@ -1,3 +1,74 @@
+F_GlobalRests = {
+    
+    % [F GlobalRests measure 235 / measure 1]                                      %! SM4
+    R1 * 9/8
+    
+    % [F GlobalRests measure 236 / measure 2]                                      %! SM4
+    R1 * 5/8
+    
+    % [F GlobalRests measure 237 / measure 3]                                      %! SM4
+    R1 * 5/8
+    
+    % [F GlobalRests measure 238 / measure 4]                                      %! SM4
+    R1 * 1
+    
+    % [F GlobalRests measure 239 / measure 5]                                      %! SM4
+    R1 * 5/4
+    
+    % [F GlobalRests measure 240 / measure 6]                                      %! SM4
+    R1 * 3/4
+    
+    % [F GlobalRests measure 241 / measure 7]                                      %! SM4
+    R1 * 3/4
+    
+    % [F GlobalRests measure 242 / measure 8]                                      %! SM4
+    R1 * 3/4
+    
+    % [F GlobalRests measure 243 / measure 9]                                      %! SM4
+    R1 * 9/8
+    
+    % [F GlobalRests measure 244 / measure 10]                                     %! SM4
+    R1 * 7/8
+    
+    % [F GlobalRests measure 245 / measure 11]                                     %! SM4
+    R1 * 3/2
+    
+    % [F GlobalRests measure 246 / measure 12]                                     %! SM4
+    R1 * 7/4
+    
+    % [F GlobalRests measure 247 / measure 13]                                     %! SM4
+    R1 * 3/4
+    
+    % [F GlobalRests measure 248 / measure 14]                                     %! SM4
+    R1 * 7/4
+    
+    % [F GlobalRests measure 249 / measure 15]                                     %! SM4
+    R1 * 11/8
+    
+    % [F GlobalRests measure 250 / measure 16]                                     %! SM4
+    R1 * 5/8
+    
+    % [F GlobalRests measure 251 / measure 17]                                     %! SM4
+    R1 * 1
+    
+    % [F GlobalRests measure 252 / measure 18]                                     %! SM4
+    R1 * 3/2
+    
+    % [F GlobalRests measure 253 / measure 19]                                     %! SM4
+    R1 * 3/4
+    
+    % [F GlobalRests measure 254 / measure 20]                                     %! SM4
+    R1 * 1
+    
+    % [F GlobalRests measure 255 / measure 21]                                     %! SM4
+    R1 * 7/8
+    
+    % [F GlobalRests measure 256 / measure 22]                                     %! SM4
+    R1 * 7/8
+    
+}
+
+
 F_GlobalSkips = {
     
     % [F GlobalSkips measure 235 / measure 1]                                      %! SM4

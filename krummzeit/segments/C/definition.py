@@ -67,18 +67,39 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
-    measures_per_stage=measures_per_stage,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=19,
-    validate_stage_count=17,
     )
 
 maker(
     'GlobalSkips',
+    baca.metronome_mark('135', selector=baca.leaf(1 - 1)),
+    baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(1 - 1)),
+    baca.metronome_mark('90', selector=baca.leaf(2 - 1)),
+    baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(3 - 1)),
+    baca.metronome_mark('135', selector=baca.leaf(4 - 1)),
+    baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(5 - 1)),
+    baca.metronome_mark('90', selector=baca.leaf(6 - 1)),
+    baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(7 - 1)),
+    baca.metronome_mark('135', selector=baca.leaf(8 - 1)),
+    baca.metronome_mark('90', selector=baca.leaf(10 - 1)),
+    baca.metronome_mark('4.=4', selector=baca.leaf(10 - 1)),
+    baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(11 - 1)),
+    baca.metronome_mark('45', selector=baca.leaf(13 - 1)),
+    baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(16 - 1)),
+    baca.metronome_mark('36', selector=baca.leaf(17 - 1)),
     baca.rehearsal_mark('C'),
+    )
+
+maker(
+    'GlobalRests',
+    baca.global_fermata('short', selector=baca.leaf(2 - 1)),
+    baca.global_fermata('short', selector=baca.leaf(4 - 1)),
+    baca.global_fermata('short', selector=baca.leaf(6 - 1)),
+    baca.global_fermata('short', selector=baca.leaf(8 - 1)),
+    baca.global_fermata('long', selector=baca.leaf(13 - 1)),
     )
 
 maker(
@@ -245,13 +266,13 @@ maker(
     )
 
 maker(
-    ('cl', (14, 17)),
+    ('cl', (14, 19)),
     baca.instrument(krummzeit.instruments['BassClarinet']),
     baca.make_repeat_tied_notes(),
     )
 
 maker(
-    ('perc', (14, 17)),
+    ('perc', (14, 19)),
     baca.make_repeated_duration_notes([(1, 4)]),
     baca.markup('tam-tam', boxed=True),
     )
@@ -311,7 +332,7 @@ maker(
     )
 
 maker(
-    ('perc', (14, 17)),
+    ('perc', (14, 19)),
     baca.dynamic('pp', selector=baca.pheads()),
     )
 
@@ -326,7 +347,7 @@ maker(
     )
 
 maker(
-    ('cl', (14, 17)),
+    ('cl', (14, 19)),
     baca.pitch('B1'),
     )
 
@@ -350,7 +371,7 @@ maker(
     )
 
 maker(
-    ('cl', (14, 17)),
+    ('cl', (14, 19)),
     baca.stem_up(),
     )
 
@@ -360,7 +381,7 @@ maker(
     )
 
 maker(
-    ('perc', (14, 17)),
+    ('perc', (14, 19)),
     baca.dls_staff_padding(6),
     )
 

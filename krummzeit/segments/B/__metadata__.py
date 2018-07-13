@@ -34,6 +34,7 @@ metadata = abjad.OrderedDict(
         (
             'fermata_measure_numbers',
             [
+                89,
                 93,
                 95,
                 97,

@@ -54,18 +54,27 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
-    measures_per_stage=measures_per_stage,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=23,
-    validate_stage_count=16,
     )
 
 maker(
     'GlobalSkips',
+    baca.metronome_mark('90', selector=baca.leaf(3 - 1)),
+    baca.metronome_mark('108', selector=baca.leaf(5 - 1)),
+    baca.metronome_mark('72', selector=baca.leaf(7 - 1)),
+    baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(9 - 1)),
+    baca.metronome_mark('36', selector=baca.leaf(11 - 1)),
+    baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(19 - 1)),
+    baca.metronome_mark('144', selector=baca.leaf(23 - 1)),
     baca.rehearsal_mark('I'),
+    )
+
+maker(
+    'GlobalRests',
+    baca.global_fermata('very_long', selector=baca.leaf(23 - 1)),
     )
 
 maker(
@@ -109,7 +118,7 @@ maker(
     )
 
 maker(
-    ('perc', (3, 15)),
+    ('perc', (3, 22)),
     baca.not_parts(baca.bar_extent_zero()),
     baca.clef('percussion'),
     baca.markup('tam-tam', boxed=True),
@@ -119,28 +128,28 @@ maker(
     )
 
 maker(
-    ('pf', (8, 15)),
+    ('pf', (8, 22)),
     baca.instrument(krummzeit.instruments['Piano']),
     krummzeit.opening_triplets(),
     )
 
 maker(
-    ('cl', (3, 11)),
+    ('cl', (3, 14)),
     baca.make_repeat_tied_notes()
     )
 
 maker(
-    ('vn', 15),
+    ('vn', 22),
     krummzeit.pizzicato_rhythm(split_divisions_by_counts=[6, 18]),
     )
 
 maker(
-    ('va', 15),
+    ('va', 22),
     krummzeit.pizzicato_rhythm(split_divisions_by_counts=[8, 10]),
     )
 
 maker(
-    ('vc', 15),
+    ('vc', 22),
     krummzeit.pizzicato_rhythm(split_divisions_by_counts=[10, 8]),
     )
 
@@ -195,7 +204,7 @@ maker(
     )
 
 maker(
-    ('perc', (3, 15)),
+    ('perc', (3, 22)),
     baca.dynamic('f'),
     baca.laissez_vibrer(selector=baca.ptails()),
     )
@@ -238,7 +247,7 @@ maker(
     )
 
 maker(
-    ('cl', (3, 11)),
+    ('cl', (3, 14)),
     baca.pitch('E2'),
     )
 
@@ -253,7 +262,7 @@ maker(
     )
 
 maker(
-    ('pf', (8, 15)),
+    ('pf', (8, 22)),
     baca.clef('bass'),
     baca.ottava_bassa(),
     baca.dynamic('fff_poss'),
@@ -266,7 +275,7 @@ maker(
     )
 
 maker(
-    ('cl', 11),
+    ('cl', (11, 14)),
     baca.hairpin('fff > ppp')
     )
 
@@ -274,15 +283,15 @@ pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
 maker(
     baca.timeline([
-        ('vn', 15),
-        ('va', 15),
-        ('vc', 15),
+        ('vn', 22),
+        ('va', 22),
+        ('vc', 22),
         ]),
     baca.pitches(pcs),
     )
 
 maker(
-    (['vn', 'va', 'vc'], 15),
+    (['vn', 'va', 'vc'], 22),
     baca.dynamic('fff'),
     baca.markup('pizz.'),
     baca.staccatissimo(selector=baca.pheads()),

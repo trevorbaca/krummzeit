@@ -43,13 +43,12 @@ maker = baca.SegmentMaker(
     final_markup=(['Cambridge, MA.'], ['May', 'August 2014.']),
     ignore_repeat_pitch_classes=True,
     last_segment=True,
-    measures_per_stage=measures_per_stage,
-    metronome_mark_measure_map=metronome_mark_measure_map,
+    #measures_per_stage=measures_per_stage,
+    #metronome_mark_measure_map=metronome_mark_measure_map,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=48,
-    validate_stage_count=12,
     )
 
 maker(
@@ -58,17 +57,17 @@ maker(
     )
 
 maker(
-    ('ob', (1, 10)),
+    ('ob', (1, 40)),
     baca.make_repeat_tied_notes(),
     )
 
 maker(
-    ('cl', (1, 10)),
+    ('cl', (1, 40)),
     baca.make_repeat_tied_notes(),
     )
 
 maker(
-    ('pf', (1, -1)),
+    'pf',
     baca.make_repeat_tied_notes(),
     )
 
@@ -79,7 +78,7 @@ maker(
     )
 
 maker(
-    ('vn', (1, 10)),
+    ('vn', (1, 40)),
     krummzeit.closing_pizzicati(
         counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
         extra_counts_per_division=[2, 2, 1, 2, 4, 6],
@@ -88,7 +87,7 @@ maker(
     )
 
 maker(
-    ('va', 1),
+    ('va', (1, 4)),
     baca.clef('treble'),
     krummzeit.closing_pizzicati(
         counts=[8, 4, 4, 2, 1, 1, 8, 8, 8, 2, 4, 4],
@@ -98,32 +97,32 @@ maker(
     )
 
 maker(
-    ('vc', [(1, 6), (7, 12)]),
+    ('vc', [(1, 24), (25, 48)]),
     baca.make_repeat_tied_notes(),
     )
 
 maker(
-    ('pf', (1, 12)),
+    'pf',
     baca.pitch('C#6'),
     )
 
 maker(
-    ('pf', (1, 12)),
+    'pf',
     baca.stem_tremolo(selector=baca.pleaves()),
     )
 
 maker(
-    ('pf', (7, 12)),
+    ('pf', (25, 48)),
     baca.dynamic('fff_poss', selector=baca.leaf(0)),
     )
 
 maker(
-    ('perc', (1, 12)),
+    'perc',
     baca.pitch('C#6'),
     )
 
 maker(
-    ('perc', (1, 12)),
+    'perc',
     baca.dynamic('fff'),
     baca.dls_staff_padding(4),
     baca.stem_tremolo(selector=baca.pleaves()),
@@ -133,14 +132,14 @@ pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs[42:34:-1].transpose(4).invert()
 maker(
     baca.timeline([
-        ('vn', (1, 10)),
-        ('va', (1, 10)),
+        ('vn', (1, 40)),
+        ('va', (1, 40)),
         ]),
     baca.pitches(pcs),
     )
 
 maker(
-    (['vn', 'va'], (1, 10)),
+    (['vn', 'va'], (1, 40)),
     baca.dynamic('ff'),
     baca.dls_staff_padding(5),
     baca.markup('pizz.'),
@@ -151,17 +150,17 @@ maker(
     )
 
 maker(
-    ('vc', (1, 6)),
+    ('vc', (1, 24)),
     baca.pitches('D4 D4 D4 D4 D4 D4 D2'),
     )
 
 maker(
-    ('vc', (7, 12)),
+    ('vc', (25, 48)),
     baca.pitch('D2'),
     )
 
 maker(
-    ('vc', (1, 6)),
+    ('vc', (1, 24)),
     baca.dynamic('fff'),
     baca.dls_staff_padding(3),
     baca.map(
@@ -172,29 +171,21 @@ maker(
     )
 
 maker(
-    ('vc', (7, 12)),
+    ('vc', (25, 48)),
     baca.dynamic('ff'),
     baca.markup('ordinario'),
     )
 
 maker(
-    ('ob', (1, 12)),
+    'ob',
     baca.pitch('C#4'),
-    )
-
-maker(
-    ('ob', (1, 12)),
     baca.dynamic('fff'),
     baca.dls_staff_padding(5),
     )
 
 maker(
-    ('cl', (1, 12)),
+    'cl',
     baca.pitch('D2'),
-    )
-
-maker(
-    ('cl', (1, 12)),
     baca.dynamic('f'),
     baca.dls_staff_padding(7),
     baca.stem_up(),

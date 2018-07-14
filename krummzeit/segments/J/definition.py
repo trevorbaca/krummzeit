@@ -33,7 +33,7 @@ maker = baca.TimeSignatureMaker(
     krummzeit.segment_time_signatures['K'],
     stage_measure_map=stage_measure_map,
     )
-measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
+time_signatures = maker()
 
 maker = baca.SegmentMaker(
     final_markup=(['Cambridge, MA.'], ['May', 'August 2014.']),

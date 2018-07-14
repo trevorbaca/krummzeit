@@ -24,16 +24,11 @@ def stage(n):
         12: (45, 48),
         }[n]
 
-stage_measure_map = baca.StageMeasureMap([
-    4, 4, 4, 4, 4, 4,
-    4, 4, 4, 4, 4, 4,
-    ])
-
 maker = baca.TimeSignatureMaker(
     krummzeit.segment_time_signatures['K'],
-    stage_measure_map=stage_measure_map,
+    count=48,
     )
-time_signatures = maker()
+time_signatures = maker.run()
 
 maker = baca.SegmentMaker(
     final_markup=(['Cambridge, MA.'], ['May', 'August 2014.']),

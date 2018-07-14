@@ -22,17 +22,11 @@ def stage(n):
         10: (11, 13),
         }[n]
 
-stage_measure_map = baca.StageMeasureMap([
-    2, 1,
-    1, 1, 1, 1, 1, 1,
-    1, 3,
-    ])
-
 maker = baca.TimeSignatureMaker(
     krummzeit.segment_time_signatures['A'],
-    stage_measure_map=stage_measure_map,
+    count=13,
     )
-time_signatures = maker()
+time_signatures = maker.run()
 
 maker = baca.SegmentMaker(
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,

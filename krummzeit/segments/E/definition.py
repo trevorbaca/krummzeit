@@ -37,20 +37,11 @@ def stage(n):
         23: (35, 35),
         }[n]
 
-stage_measure_map = baca.StageMeasureMap([
-    8,                      # 1
-    2, 1, 1, 1, 1,          # 2-6
-    2, 1, 2, 1, 1, 1, 2,    # 7-13
-    1, 1,                   # 14-15
-    1, 1, 1, 1, 1, 1,       # 16-21
-    2, 1,                   # 22-23
-    ])
-
 maker = baca.TimeSignatureMaker(
     krummzeit.segment_time_signatures['F'],
-    stage_measure_map=stage_measure_map,
+    count=35,
     )
-time_signatures = maker()
+time_signatures = maker.run()
 
 maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,

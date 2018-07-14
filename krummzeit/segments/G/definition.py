@@ -41,16 +41,9 @@ stage_measure_map = baca.StageMeasureMap([
     1,                                  # halt
     ])
 
-metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (13, abjad.Fermata('shortfermata')),
-    (14, krummzeit.metronome_marks['90']),
-    (22, abjad.Fermata('verylongfermata')),
-    ])
-
 maker = baca.TimeSignatureMaker(
     krummzeit.segment_time_signatures['H'],
     stage_measure_map=stage_measure_map,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     )
 measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 

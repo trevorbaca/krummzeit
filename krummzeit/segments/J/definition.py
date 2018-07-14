@@ -29,13 +29,9 @@ stage_measure_map = baca.StageMeasureMap([
     4, 4, 4, 4, 4, 4,
     ])
 
-metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    ])
-
 maker = baca.TimeSignatureMaker(
     krummzeit.segment_time_signatures['K'],
     stage_measure_map=stage_measure_map,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     )
 measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 

@@ -49,23 +49,9 @@ stage_measure_map = baca.StageMeasureMap([
     3, 4,           # 22-23
     ])
 
-metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (9, krummzeit.metronome_marks['67.5']),
-    (9, krummzeit.metric_modulations['4=8']),
-    (10, baca.Accelerando()),
-    (12, krummzeit.metronome_marks['135']),
-    (15, krummzeit.metronome_marks['90']),
-    (15, krummzeit.metric_modulations['4.=4']),
-    (16, baca.Accelerando()),
-    (17, krummzeit.metronome_marks['135']),
-    (20, krummzeit.metronome_marks['108']),
-    (20, krummzeit.metric_modulations['4=4:5(4)']),
-    ])
-
 maker = baca.TimeSignatureMaker(
     krummzeit.segment_time_signatures['B'],
     stage_measure_map=stage_measure_map,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     )
 measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 

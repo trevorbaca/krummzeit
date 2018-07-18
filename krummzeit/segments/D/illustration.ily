@@ -3970,9 +3970,9 @@ D_PercussionMusicVoice = {
         r8
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
-        \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         fs''!8
-        \ff                                                                %! SM8:REDUNDANT_DYNAMIC:IC
+        \ff                                                                %! SM8:EXPLICIT_DYNAMIC:IC
         -\staccatissimo                                                    %! IC
         [
         

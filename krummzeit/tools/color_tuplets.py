@@ -3,7 +3,7 @@ import baca
 from abjadext import rmakers
 
 
-def color_tuplets(division_mask=None, rotation=0):
+def color_tuplets(*, dmask=None, rotation=0):
     """
     Makes color tuplets.
     """
@@ -21,10 +21,11 @@ def color_tuplets(division_mask=None, rotation=0):
     tuplet_ratios = tuplet_ratios.rotate(n=rotation)
 
 
-    if division_mask is not None:
-        division_masks = [division_mask]
-    else:
+    if dmask is None:
         division_masks = None
+    else:
+        division_masks = [dmask]
+
     return baca.rhythm(
         rhythm_maker=rmakers.TupletRhythmMaker(
             division_masks=division_masks,

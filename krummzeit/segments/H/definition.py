@@ -83,14 +83,14 @@ maker(
 
 maker(
     ('pf', (1, 6)),
-    krummzeit.opening_triplets(division_masks=None),
+    krummzeit.opening_triplets(),
     )
 
 maker(
     ('perc', (5, 6)),
     baca.clef('percussion'),
     baca.markup('crotales', boxed=True),
-    krummzeit.left_remainder_quarters([abjad.index([0])]),
+    krummzeit.left_remainder_quarters(dmask=abjad.index([0])),
     )
 
 maker(
@@ -108,7 +108,7 @@ maker(
 
 maker(
     ('ob', (8, 10)),
-    krummzeit.hypermeter_tuplets(counts=[2]),
+    krummzeit.hypermeter_tuplets([(3, 2)], counts=[2]),
     )
 
 maker(

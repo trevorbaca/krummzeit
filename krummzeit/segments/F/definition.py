@@ -94,7 +94,7 @@ maker(
     krummzeit.hypermeter_tuplets(
         [(1, 6)],
         counts=[2, 2, 2, 2, 2, 3],
-        division_mask=abjad.index([0, 1]),
+        dmask=abjad.index([0, 1]),
         ),
     )
 
@@ -103,7 +103,7 @@ maker(
     krummzeit.hypermeter_tuplets(
         [(6, 1)],
         counts=[2, 2, 2, 2, 2, 3],
-        division_mask=abjad.index([0, 1]),
+        dmask=abjad.index([0, 1]),
         ),
     )
 

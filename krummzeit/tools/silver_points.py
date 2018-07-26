@@ -5,22 +5,19 @@ from abjadext import rmakers
 
 def silver_points(
     ratios,
+    *,
+    dmask=None,
     tuplet_ratios=[(-1, 1, 1, 2), (-1, 1, 1, -2, 2)],
-    division_mask=None,
     ):
     """
     Makes silver point rhythm.
     """
-    if division_mask is not None:
-        division_masks = [division_mask]
-    else:
-        division_masks = None
     return baca.rhythm(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=ratios,
             ),
         rhythm_maker=rmakers.TupletRhythmMaker(
-            division_masks=division_masks,
+            division_masks=dmask,
             tuplet_ratios=tuplet_ratios,
             tuplet_specifier=rmakers.TupletSpecifier(
                 extract_trivial=True,

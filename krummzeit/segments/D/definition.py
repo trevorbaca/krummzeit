@@ -75,7 +75,7 @@ maker(
     ('va', (8, 10)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        [abjad.index([5, 6], 7)],
+        dmask=abjad.index([5, 6], 7),
         ),
     )
 
@@ -83,7 +83,7 @@ maker(
     ('va', (11, 24)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        [abjad.index([0])],
+        dmask=abjad.index([0]),
         ),
     )
 
@@ -91,7 +91,7 @@ maker(
     ('vn', (14, 16)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        [abjad.index([5, 6], 7)],
+        dmask=abjad.index([5, 6], 7),
         ),
     )
 
@@ -99,7 +99,7 @@ maker(
     ('vc', (14, 16)),
     krummzeit.glissando_rhythm(
         [(2, 1), (1, 1, 1), (2, 1)],
-        [abjad.index([0, 1, 2])],
+        dmask=abjad.index([0, 1, 2]),
         ),
     )
 
@@ -107,7 +107,7 @@ maker(
     ('vn', (17, 24)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        [abjad.index([0])],
+        dmask=abjad.index([0]),
         ),
     )
 
@@ -115,7 +115,7 @@ maker(
     ('vc', (17, 24)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        [abjad.index([0])],
+        dmask=abjad.index([0]),
         tuplet_ratios=[(1, 4), (4, 3), (1, 2)],
         ),
     )
@@ -157,7 +157,7 @@ maker(
     ('pf', (35, 42)),
     krummzeit.silver_points(
         [(1, 2), (2, 1)],
-        division_mask=abjad.index([2], 7),
+        dmask=abjad.index([2], 7),
         ),
     )
 
@@ -167,7 +167,7 @@ maker(
     baca.staff_lines(5),
     krummzeit.silver_points(
         [(2, 1), (1, 2)],
-        division_mask=abjad.index([5], 7),
+        dmask=abjad.index([5], 7),
         ),
     )
 
@@ -179,7 +179,7 @@ maker(
 maker(
     ('cl', [(11, 13), (35, 44)]),
     krummzeit.color_tuplets(
-        division_mask=abjad.index([0]),
+        dmask=abjad.index([0]),
         rotation=2,
         ),
     )
@@ -204,7 +204,7 @@ maker(
     baca.clef('bass'),
     krummzeit.piano_harmonics(
         [(2, 1), (2, 1), (1, 1, 1)],
-        division_masks=[abjad.index([5, 6], 7)],
+        dmask=abjad.index([5, 6], 7),
         tie_across_divisions=[0, 1],
         ),
     )
@@ -213,7 +213,7 @@ maker(
     ('pf', (11, 13)),
     krummzeit.piano_harmonics(
         [(2, 1), (2, 1), (1, 1, 1)],
-        division_masks=[abjad.index([0])],
+        dmask=abjad.index([0]),
         tie_across_divisions=[0, 1],
         ),
     )
@@ -222,8 +222,6 @@ maker(
     ('pf', (27, 34)),
     krummzeit.piano_harmonics(
         [(2, 1), (2, 1), (1, 1, 1)],
-        division_masks=[],
-        tie_across_divisions=[],
         ),
     )
 

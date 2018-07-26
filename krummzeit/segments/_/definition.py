@@ -236,7 +236,10 @@ maker(
         baca.runs(),
         baca.glissando(),
         ),
-    baca.hairpin('pp < ff'),
+    baca.hairpin(
+        'pp < ff',
+        selector=baca.tleaves(),
+        ),
     baca.markup('molto flautando'),
     baca.note_head_style_harmonic(),
     baca.repeat_tie_repeat_pitches(),

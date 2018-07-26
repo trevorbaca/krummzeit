@@ -153,7 +153,10 @@ maker(
 
 maker(
     ('vn', 5),
-    baca.hairpin('ff > pp'),
+    baca.hairpin(
+        'ff > pp',
+        selector=baca.tleaves(),
+        ),
     krummzeit.displacement(),
     krummzeit.register_narrow(7, 5),
     baca.ottava(),
@@ -163,7 +166,10 @@ maker(
 
 maker(
     ('vn', 7),
-    baca.hairpin('pp < ff'),
+    baca.hairpin(
+        'pp < ff',
+        selector=baca.tleaves(),
+        ),
     krummzeit.displacement(),
     krummzeit.register_narrow(5, 4),
     baca.staccatissimo(selector=baca.pheads()),
@@ -171,7 +177,10 @@ maker(
 
 maker(
     ('vn', 9),
-    baca.hairpin('ff > pp'),
+    baca.hairpin(
+        'ff > pp',
+        selector=baca.tleaves(),
+        ),
     krummzeit.displacement(),
     krummzeit.register_narrow(5, 4),
     baca.staccatissimo(selector=baca.pheads()),
@@ -180,7 +189,10 @@ maker(
 maker(
     ('va', 5),
     baca.clef('treble'),
-    baca.hairpin('ff > pp'),
+    baca.hairpin(
+        'ff > pp',
+        selector=baca.tleaves(),
+        ),
     krummzeit.displacement(),
     krummzeit.register_narrow(6, 5),
     baca.ottava(),
@@ -190,7 +202,10 @@ maker(
 
 maker(
     ('va', 7),
-    baca.hairpin('pp < ff'),
+    baca.hairpin(
+        'pp < ff',
+        selector=baca.tleaves(),
+        ),
     krummzeit.displacement(),
     krummzeit.register_narrow(5, 4),
     baca.staccatissimo(selector=baca.pheads()),
@@ -199,7 +214,10 @@ maker(
 maker(
     ('va', 9),
     baca.clef('alto'),
-    baca.hairpin('ff > pp'),
+    baca.hairpin(
+        'ff > pp',
+        selector=baca.tleaves(),
+        ),
     krummzeit.displacement(),
     krummzeit.register_narrow(4, 2),
     baca.staccatissimo(selector=baca.pheads()),
@@ -208,7 +226,10 @@ maker(
 maker(
     ('vc', 5),
     baca.clef('treble'),
-    baca.hairpin('ff > pp'),
+    baca.hairpin(
+        'ff > pp',
+        selector=baca.tleaves(),
+        ),
     krummzeit.displacement(),
     krummzeit.register_narrow(5, 4),
     baca.markup('pizz.'),
@@ -218,7 +239,10 @@ maker(
 maker(
     ('vc', 7),
     baca.clef('bass'),
-    baca.hairpin('pp < ff'),
+    baca.hairpin(
+        'pp < ff',
+        selector=baca.tleaves(),
+        ),
     krummzeit.displacement(),
     krummzeit.register_narrow(4, 3),
     baca.staccatissimo(selector=baca.pheads()),
@@ -261,7 +285,10 @@ maker(
 
 maker(
     ('vc', 9),
-    baca.hairpin('ff > pp'),
+    baca.hairpin(
+        'ff > pp',
+        selector=baca.tleaves(),
+        ),
     krummzeit.displacement(),
     krummzeit.register_narrow(3, 2),
     baca.staccatissimo(selector=baca.pheads()),

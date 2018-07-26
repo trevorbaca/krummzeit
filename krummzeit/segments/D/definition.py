@@ -324,25 +324,38 @@ maker(
 
 maker(
     ('va', (8, 10)),
-    baca.hairpin('pp < f'),
+    baca.hairpin(
+        'pp < f',
+        selector=baca.tleaves(),
+        ),
     baca.markup('molto flautando e pont.'),
     )
 
 maker(
     ('va', (11, 16)),
-    baca.hairpin('pp < f'),
-    baca.text_spanner(
-        'molto flautando => molto gridato',
-        abjad.tweak(6).staff_padding,
+    baca.apply(
+        baca.tleaves(),
+        baca.hairpin(
+            'pp < f',
+            ),
+        baca.text_spanner(
+            'molto flautando => molto gridato',
+            abjad.tweak(6).staff_padding,
+            ),
         ),
     )
 
 maker(
     (['vn', 'vc'], (14, 16)),
-    baca.hairpin('pp < f'),
-    baca.text_spanner(
-        'molto flautando => molto gridato',
-        abjad.tweak(6).staff_padding,
+    baca.apply(
+        baca.tleaves(),
+        baca.hairpin(
+            'pp < f',
+            ),
+        baca.text_spanner(
+            'molto flautando => molto gridato',
+            abjad.tweak(6).staff_padding,
+            ),
         ),
     )
 

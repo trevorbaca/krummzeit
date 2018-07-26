@@ -303,7 +303,10 @@ maker(
 
 maker(
     ('va', (1, 12)),
-    baca.hairpin('ff > pp'),
+    baca.hairpin(
+        'ff > pp',
+        selector=baca.tleaves(),
+        ),
     )
 
 maker(
@@ -328,7 +331,10 @@ maker(
 
 maker(
     ('vc', (1, 12)),
-    baca.hairpin('ff > pp'),
+    baca.hairpin(
+        'ff > pp',
+        selector=baca.tleaves(),
+        ),
     )
 
 maker(
@@ -416,7 +422,10 @@ maker(
         baca.runs(),
         baca.glissando(),
         ),
-    baca.hairpin('pp < fff'),
+    baca.hairpin(
+        'pp < fff',
+        selector=baca.tleaves(),
+        ),
     baca.markup('non flautando'),
     baca.markup(
         krummzeit.markup.show_tempo(),

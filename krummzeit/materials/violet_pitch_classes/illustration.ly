@@ -1,6 +1,8 @@
 \version "2.19.82"
 \language "english"
 
+\include "/Users/trevorbaca/baca/lilypond/baca.ily"
+
 #(set-global-staff-size 16)
 
 \header {
@@ -103,19 +105,11 @@
                 fs'8
                 f'8
                 c'8
-                \once \override Accidental.color = #red
-                \once \override Beam.color = #red
-                \once \override Dots.color = #red
-                \once \override NoteHead.color = #red
-                \once \override Stem.color = #red
+                \abjad_color_music "red"
                 b'8
                 \stopGroup
                 s8
-                \once \override Accidental.color = #red
-                \once \override Beam.color = #red
-                \once \override Dots.color = #red
-                \once \override NoteHead.color = #red
-                \once \override Stem.color = #red
+                \abjad_color_music "red"
                 b'8
                 ^ \markup { 6 }
                 \startGroup
@@ -227,19 +221,11 @@
                 fs'8
                 af'8
                 g'8
-                \once \override Accidental.color = #blue
-                \once \override Beam.color = #blue
-                \once \override Dots.color = #blue
-                \once \override NoteHead.color = #blue
-                \once \override Stem.color = #blue
+                \abjad_color_music "blue"
                 f'8
                 \stopGroup
                 s8
-                \once \override Accidental.color = #blue
-                \once \override Beam.color = #blue
-                \once \override Dots.color = #blue
-                \once \override NoteHead.color = #blue
-                \once \override Stem.color = #blue
+                \abjad_color_music "blue"
                 f'8
                 ^ \markup { 20 }
                 \startGroup
@@ -424,20 +410,12 @@
                 af'8
                 g'8
                 f'8
-                \once \override Accidental.color = #red
-                \once \override Beam.color = #red
-                \once \override Dots.color = #red
-                \once \override NoteHead.color = #red
-                \once \override Stem.color = #red
+                \abjad_color_music "red"
                 e'8
                 \stopGroup
                 \stopGroup
                 s8
-                \once \override Accidental.color = #red
-                \once \override Beam.color = #red
-                \once \override Dots.color = #red
-                \once \override NoteHead.color = #red
-                \once \override Stem.color = #red
+                \abjad_color_music "red"
                 e'8
                 ^ \markup { 42 }
                 \startGroup
@@ -486,20 +464,12 @@
                 fs'8
                 ^ \markup { 48 }
                 \startGroup
-                \once \override Accidental.color = #blue
-                \once \override Beam.color = #blue
-                \once \override Dots.color = #blue
-                \once \override NoteHead.color = #blue
-                \once \override Stem.color = #blue
+                \abjad_color_music "blue"
                 f'8
                 \stopGroup
                 \stopGroup
                 s8
-                \once \override Accidental.color = #blue
-                \once \override Beam.color = #blue
-                \once \override Dots.color = #blue
-                \once \override NoteHead.color = #blue
-                \once \override Stem.color = #blue
+                \abjad_color_music "blue"
                 f'8
                 ^ \markup { 49 }
                 \startGroup
@@ -1044,20 +1014,12 @@
                 af'8
                 g'8
                 f'8
-                \once \override Accidental.color = #red
-                \once \override Beam.color = #red
-                \once \override Dots.color = #red
-                \once \override NoteHead.color = #red
-                \once \override Stem.color = #red
+                \abjad_color_music "red"
                 e'8
                 \stopGroup
                 \stopGroup
                 s8
-                \once \override Accidental.color = #red
-                \once \override Beam.color = #red
-                \once \override Dots.color = #red
-                \once \override NoteHead.color = #red
-                \once \override Stem.color = #red
+                \abjad_color_music "red"
                 e'8
                 ^ \markup { 112 }
                 \startGroup
@@ -1134,20 +1096,12 @@
                 ^ \markup { 120 }
                 \startGroup
                 \startGroup
-                \once \override Accidental.color = #blue
-                \once \override Beam.color = #blue
-                \once \override Dots.color = #blue
-                \once \override NoteHead.color = #blue
-                \once \override Stem.color = #blue
+                \abjad_color_music "blue"
                 b'8
                 \stopGroup
                 \stopGroup
                 s8
-                \once \override Accidental.color = #blue
-                \once \override Beam.color = #blue
-                \once \override Dots.color = #blue
-                \once \override NoteHead.color = #blue
-                \once \override Stem.color = #blue
+                \abjad_color_music "blue"
                 b'8
                 ^ \markup { 121 }
                 \startGroup

@@ -1,6 +1,8 @@
 \version "2.19.82"
 \language "english"
 
+\include "/Users/trevorbaca/baca/lilypond/baca.ily"
+
 #(set-global-staff-size 16)
 
 \header {
@@ -268,20 +270,12 @@
                 e'8
                 f'8
                 b'8
-                \once \override Accidental.color = #red
-                \once \override Beam.color = #red
-                \once \override Dots.color = #red
-                \once \override NoteHead.color = #red
-                \once \override Stem.color = #red
+                \abjad_color_music "red"
                 g'8
                 \stopGroup
                 \stopGroup
                 s8
-                \once \override Accidental.color = #red
-                \once \override Beam.color = #red
-                \once \override Dots.color = #red
-                \once \override NoteHead.color = #red
-                \once \override Stem.color = #red
+                \abjad_color_music "red"
                 g'8
                 ^ \markup { 27 }
                 \startGroup

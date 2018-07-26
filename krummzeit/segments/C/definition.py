@@ -83,22 +83,34 @@ maker(
 
 maker(
     ('pf', [1, 3, 5]),
-    krummzeit.silver_points([(2, 3)], [(1, -1, 1, 3), (1, -1, 1, 2, 2)]),
+    krummzeit.silver_points(
+        [(2, 3)],
+        tuplet_ratios=[(1, -1, 1, 3), (1, -1, 1, 2, 2)],
+        ),
     )
 
 maker(
     ('vn', [5, 7, 9]),
-    krummzeit.silver_points([(5, 4)], [(-1, 1, 1, -1, 2), (-1, 1, 1, 2, 2)]),
+    krummzeit.silver_points(
+        [(5, 4)],
+        tuplet_ratios=[(-1, 1, 1, -1, 2), (-1, 1, 1, 2, 2)],
+        ),
     )
 
 maker(
     ('va', [5, 7, 9]),
-    krummzeit.silver_points([(2, 7)], [(-1, 2), (-1, 2, -1, 2, 2)]),
+    krummzeit.silver_points(
+        [(2, 7)],
+        tuplet_ratios=[(-1, 2), (-1, 2, -1, 2, 2)],
+        ),
     )
 
 maker(
     ('vc', [5, 7, 9]),
-    krummzeit.silver_points([(7, 2)], [(-1, 2, -1, 2, 2), (-1, 2)]),
+    krummzeit.silver_points(
+        [(7, 2)],
+        tuplet_ratios=[(-1, 2, -1, 2, 2), (-1, 2)],
+        ),
     )
 
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())

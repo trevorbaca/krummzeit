@@ -4,7 +4,9 @@ from abjadext import rmakers
 
 
 def opening_triplets(
-    division_masks=[abjad.index([0])],
+    *,
+    #dmask=abjad.index([0]),
+    dmask=None,
     remainder=abjad.Left,
     ):
     """
@@ -20,6 +22,6 @@ def opening_triplets(
             ),
         rhythm_maker=rmakers.TupletRhythmMaker(
             tuplet_ratios=[(1, 1, 1)],
-            division_masks=division_masks,
+            division_masks=dmask,
             ),
         )

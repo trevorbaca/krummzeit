@@ -67,12 +67,12 @@ maker(
 
 maker(
     ('vc', (1, 11)),
-    krummzeit.hypermeter_tuplets(),
+    krummzeit.hypermeter_tuplets([(3, 2)]),
     )
 
 maker(
     ('vc', (12, 22)),
-    krummzeit.hypermeter_tuplets(),
+    krummzeit.hypermeter_tuplets([(3, 2)]),
     )
 
 maker(
@@ -263,53 +263,53 @@ maker(
 maker(
     ('va', (48, 56)),
     krummzeit.pizzicato_rhythm(
-        masks=[abjad.index([1, 2, 3], 6)],
+        dmask=abjad.index([1, 2, 3], 6),
         ),
     )
 
 maker(
     ('vc', (52, 56)),
     krummzeit.pizzicato_rhythm(
-        masks=[abjad.index([2, 3, 4], 6)],
+        dmask=abjad.index([2, 3, 4], 6),
         ),
     )
 
 maker(
     ('vn', (54, 56)),
     krummzeit.pizzicato_rhythm(
-        masks=[abjad.index([3, 4, 5], 6)],
+        dmask=abjad.index([3, 4, 5], 6),
         ),
     )
 
 maker(
     ('va', (57, 71)),
     krummzeit.pizzicato_sixteenths(
+        dmask=abjad.index([2, 3], 6),
         extra_counts=[2, 2, 0, 2, 4, 6],
-        masks=[abjad.index([2, 3], 6)],
         ),
     )
 
 maker(
     ('vc', (57, 71)),
     krummzeit.pizzicato_sixteenths(
+        dmask=abjad.index([0, 2], 7),
         extra_counts=[4, 4, 2, 0, 2, 4],
-        masks=[abjad.index([0, 2], 7)],
         ),
     )
 
 maker(
     ('vn', (57, 71)),
     krummzeit.pizzicato_sixteenths(
+        dmask=abjad.index([3, 6], 8),
         extra_counts=[6, 0, 4, 4, 0, 2],
-        masks=[abjad.index([3, 6], 8)],
         ),
     )
 
 maker(
     ('pf', (57, 71)),
     krummzeit.pizzicato_sixteenths(
+        dmask=abjad.index([1, 5], 7),
         extra_counts=[4, 0, 2, 4, 6],
-        masks=[abjad.index([1, 5], 7)],
         ),
     )
 

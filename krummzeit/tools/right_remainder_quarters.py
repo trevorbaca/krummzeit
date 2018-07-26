@@ -3,7 +3,7 @@ import baca
 from abjadext import rmakers
 
 
-def right_remainder_quarters(division_masks=None):
+def right_remainder_quarters(*, dmask=None):
     """
     Makes right-remainder quarter-note-filled measures.
     """
@@ -12,6 +12,6 @@ def right_remainder_quarters(division_masks=None):
             durations=[(1, 4)],
             ),
         rhythm_maker=rmakers.NoteRhythmMaker(
-            division_masks=division_masks,
+            division_masks=dmask,
             ),
         )

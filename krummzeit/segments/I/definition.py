@@ -82,7 +82,7 @@ maker(
 maker(
     (['vn', 'va', 'vc'], (1, 3)),
     krummzeit.opening_triplets(
-        division_masks=[abjad.index([-1])],
+        dmask=abjad.index([-1]),
         remainder=abjad.Right,
         ),
     )
@@ -91,7 +91,7 @@ maker(
     ('pf', (3, 4)),
     baca.instrument(krummzeit.instruments['Harpsichord']),
     krummzeit.clusters('harpsichord'),
-    krummzeit.opening_triplets(),
+    krummzeit.opening_triplets(dmask=abjad.index([0])),
     )
 
 maker(
@@ -112,7 +112,7 @@ maker(
 maker(
     ('pf', (8, 22)),
     baca.instrument(krummzeit.instruments['Piano']),
-    krummzeit.opening_triplets(),
+    krummzeit.opening_triplets(dmask=abjad.index([0])),
     )
 
 maker(

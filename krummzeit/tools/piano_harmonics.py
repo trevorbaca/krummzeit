@@ -5,20 +5,20 @@ from abjadext import rmakers
 
 def piano_harmonics(
     division_ratios,
-    division_masks,
-    tie_across_divisions,
+    *,
+    dmask=None,
+    tie_across_divisions=None,
     ):
     """
     Makes piano harmonics rhythm.
     """
     assert isinstance(division_ratios, list), repr(division_ratios)
-    assert isinstance(division_masks, list), repr(division_masks)
     return baca.rhythm(
         division_maker=baca.SplitByRoundedRatiosDivisionCallback(
             ratios=division_ratios,
             ),
         rhythm_maker=rmakers.NoteRhythmMaker(
-            division_masks=division_masks,
+            division_masks=dmask,
             tie_specifier=rmakers.TieSpecifier(
                 tie_across_divisions=tie_across_divisions,
             ),

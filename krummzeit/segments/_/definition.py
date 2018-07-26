@@ -109,30 +109,30 @@ maker(
 
 maker(
     (['vn', 'va', 'vc'], 1),
-    krummzeit.opening_triplets(),
+    krummzeit.opening_triplets(dmask=abjad.index([0])),
     )
 
 maker(
     ('vn', (4, 8)),
     krummzeit.glissando_rhythm(
-        division_ratios=[(2, 1), (2, 1), (1, 1, 1)],
-        division_masks=[abjad.index([5, 6], 7)],
+        [(2, 1), (2, 1), (1, 1, 1)],
+        dmask=abjad.index([5, 6], 7),
         )
     )
 
 maker(
     ('va', (4, 8)),
     krummzeit.glissando_rhythm(
-        division_ratios=[(2, 1), (1, 1, 1), (2, 1)],
-        division_masks=[abjad.index([0, 1], 7)],
+        [(2, 1), (1, 1, 1), (2, 1)],
+        dmask=abjad.index([0, 1], 7),
         )
     )
 
 maker(
     ('vc', (4, 8)),
     krummzeit.glissando_rhythm(
-        division_ratios=[(1, 1, 1), (2, 1), (2, 1)],
-        division_masks=[abjad.index([2, 3], 7)],
+        [(1, 1, 1), (2, 1), (2, 1)],
+        dmask=abjad.index([2, 3], 7),
         ),
     )
 

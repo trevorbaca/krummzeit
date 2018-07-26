@@ -20,15 +20,9 @@ def color_tuplets(*, dmask=None, rotation=0):
         ])
     tuplet_ratios = tuplet_ratios.rotate(n=rotation)
 
-
-    if dmask is None:
-        division_masks = None
-    else:
-        division_masks = [dmask]
-
     return baca.rhythm(
         rhythm_maker=rmakers.TupletRhythmMaker(
-            division_masks=division_masks,
+            division_masks=dmask,
             tuplet_ratios=tuplet_ratios,
             tie_specifier=rmakers.TieSpecifier(
                 tie_across_divisions=True,

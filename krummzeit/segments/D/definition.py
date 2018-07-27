@@ -468,7 +468,6 @@ maker(
     baca.dynamic('ppp'),
     baca.dls_staff_padding(6),
     baca.make_repeat_tied_notes(),
-    baca.repeat_tie_up(),
     baca.staff_lines(1),
     baca.staff_position(0),
     baca.stem_tremolo(selector=baca.pleaves()),

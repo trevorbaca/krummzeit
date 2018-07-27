@@ -3607,7 +3607,6 @@ D_PercussionMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 1                       %! SM8:EXPLICIT_STAFF_LINES:IC
     \startStaff                                                            %! SM8:EXPLICIT_STAFF_LINES:IC
     \override DynamicLineSpanner.staff-padding = #'6                       %! OC1
-    \override RepeatTie.direction = #up                                    %! OC1
     \clef "percussion"                                                     %! SM8:EXPLICIT_CLEF:IC
     \once \override Staff.Clef.color = #(x11-color 'blue)                  %! SM6:EXPLICIT_CLEF_COLOR:IC
 %@% \override Staff.Clef.color = ##f                                       %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
@@ -3633,6 +3632,7 @@ D_PercussionMusicVoice = {
     % [D PercussionMusicVoice measure 195 / measure 44]                    %! SM4
     c'1
     :32                                                                    %! IC
+    - \tweak direction #up
     \repeatTie
     
     % [D PercussionMusicVoice measure 196 / measure 45]                    %! SM4
@@ -3667,7 +3667,6 @@ D_PercussionMusicVoice = {
     :32                                                                    %! IC
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                               %! OC2
-    \revert RepeatTie.direction                                            %! OC2
     
 }
 

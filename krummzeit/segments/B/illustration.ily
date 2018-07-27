@@ -2692,7 +2692,6 @@ B_PercussionMusicVoice = {
     \stopStaff                                                             %! SM8:EXPLICIT_STAFF_LINES:IC
     \once \override Staff.StaffSymbol.line-count = 1                       %! SM8:EXPLICIT_STAFF_LINES:IC
     \startStaff                                                            %! SM8:EXPLICIT_STAFF_LINES:IC
-    \override RepeatTie.direction = #up                                    %! OC1
     \once \override DynamicLineSpanner.staff-padding = #'3                 %! OC1
     \clef "percussion"                                                     %! SM8:EXPLICIT_CLEF:IC
     \once \override Staff.Clef.color = #(x11-color 'blue)                  %! SM6:EXPLICIT_CLEF_COLOR:IC
@@ -2718,6 +2717,7 @@ B_PercussionMusicVoice = {
     
     % [B PercussionMusicVoice measure 110 / measure 22]                    %! SM4
     c'1
+    - \tweak direction #up
     \repeatTie
     
     % [B PercussionMusicVoice measure 111 / measure 23]                    %! SM4
@@ -2740,7 +2740,6 @@ B_PercussionMusicVoice = {
     
     c'2
     \repeatTie
-    \revert RepeatTie.direction                                            %! OC2
     
     % [B PercussionMusicVoice measure 114 / measure 26]                    %! SM4
     R1 * 1/2
@@ -3024,7 +3023,6 @@ B_ViolinMusicVoice = {
     \stopStaff                                                             %! SM8:REAPPLIED_STAFF_LINES:SM37
     \once \override Staff.StaffSymbol.line-count = 1                       %! SM8:REAPPLIED_STAFF_LINES:SM37
     \startStaff                                                            %! SM8:REAPPLIED_STAFF_LINES:SM37
-    \override RepeatTie.direction = #up                                    %! OC1
     \clef "percussion"                                                     %! SM8:REAPPLIED_CLEF:SM37
     \once \override Staff.Clef.color = #(x11-color 'green4)                %! SM6:REAPPLIED_CLEF_COLOR:SM37
 %@% \override Staff.Clef.color = ##f                                       %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
@@ -3079,6 +3077,7 @@ B_ViolinMusicVoice = {
     
     % [B ViolinMusicVoice measure 92 / measure 4]                          %! SM4
     c'1
+    - \tweak direction #up
     \repeatTie
     
     % [B ViolinMusicVoice measure 93 / measure 5]                          %! SM4
@@ -3095,6 +3094,7 @@ B_ViolinMusicVoice = {
     
     % [B ViolinMusicVoice measure 96 / measure 8]                          %! SM4
     c'1..
+    - \tweak direction #up
     \repeatTie
     
     % [B ViolinMusicVoice measure 97 / measure 9]                          %! SM4
@@ -3103,6 +3103,7 @@ B_ViolinMusicVoice = {
     
     % [B ViolinMusicVoice measure 98 / measure 10]                         %! SM4
     c'1
+    - \tweak direction #up
     \repeatTie
     
     % [B ViolinMusicVoice measure 99 / measure 11]                         %! SM4
@@ -3127,6 +3128,7 @@ B_ViolinMusicVoice = {
     
     % [B ViolinMusicVoice measure 104 / measure 16]                        %! SM4
     c'\breve
+    - \tweak direction #up
     \repeatTie
     
     % [B ViolinMusicVoice measure 105 / measure 17]                        %! SM4
@@ -3135,6 +3137,7 @@ B_ViolinMusicVoice = {
     
     % [B ViolinMusicVoice measure 106 / measure 18]                        %! SM4
     c'1
+    - \tweak direction #up
     \repeatTie
     
     % [B ViolinMusicVoice measure 107 / measure 19]                        %! SM4
@@ -3146,7 +3149,6 @@ B_ViolinMusicVoice = {
     \repeatTie
     \revert Staff.BarLine.bar-extent                                       %! OC2:-PARTS
     \once \override Staff.BarLine.bar-extent = #'(0 . 0)                   %! OC1:-PARTS
-    \revert RepeatTie.direction                                            %! OC2
     
     % [B ViolinMusicVoice measure 109 / measure 21]                        %! SM4
     R1 * 1/4

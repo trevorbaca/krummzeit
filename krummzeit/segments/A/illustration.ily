@@ -7715,7 +7715,6 @@ A_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 1                       %! SM8:EXPLICIT_STAFF_LINES:IC
     \startStaff                                                            %! SM8:EXPLICIT_STAFF_LINES:IC
     \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                  %! OC1
-    \override RepeatTie.direction = #up                                    %! OC1
     \clef "percussion"                                                     %! SM8:EXPLICIT_CLEF:IC
     \once \override Staff.Clef.color = #(x11-color 'blue)                  %! SM6:EXPLICIT_CLEF_COLOR:IC
 %@% \override Staff.Clef.color = ##f                                       %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
@@ -7740,10 +7739,12 @@ A_ViolinMusicVoice = {
     
     % [A ViolinMusicVoice measure 86 / measure 73]                         %! SM4
     c'1
+    - \tweak direction #up
     \repeatTie
     
     % [A ViolinMusicVoice measure 87 / measure 74]                         %! SM4
     c'1
+    - \tweak direction #up
     \repeatTie
     
     % [A ViolinMusicVoice measure 88 / measure 75]                         %! SM4
@@ -7754,7 +7755,6 @@ A_ViolinMusicVoice = {
     \repeatTie
     \revert Staff.BarLine.bar-extent                                       %! OC2:-PARTS
     \once \override Staff.BarLine.bar-extent = #'(0 . 0)                   %! OC1:-PARTS
-    \revert RepeatTie.direction                                            %! OC2
     
 }
 

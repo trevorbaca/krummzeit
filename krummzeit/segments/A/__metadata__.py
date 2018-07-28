@@ -63,19 +63,19 @@ metadata = abjad.OrderedDict(
                         [
                             abjad.Momento(
                                 context='CelloMusicVoice',
-                                prototype='abjad.Clef',
-                                value='treble',
+                                edition=abjad.Tag('-PARTS'),
+                                manifest='margin_markups',
+                                value='Vc.',
                                 ),
                             abjad.Momento(
                                 context='CelloMusicVoice',
-                                prototype='abjad.Instrument',
+                                manifest='instruments',
                                 value='Cello',
                                 ),
                             abjad.Momento(
                                 context='CelloMusicVoice',
-                                edition=abjad.Tag('-PARTS'),
-                                prototype='abjad.MarginMarkup',
-                                value='Vc.',
+                                prototype='abjad.Clef',
+                                value='treble',
                                 ),
                             ],
                         ),
@@ -94,19 +94,19 @@ metadata = abjad.OrderedDict(
                         [
                             abjad.Momento(
                                 context='ClarinetMusicVoice',
-                                prototype='abjad.Clef',
-                                value='treble',
+                                edition=abjad.Tag('-PARTS'),
+                                manifest='margin_markups',
+                                value='Cl. (Eb)',
                                 ),
                             abjad.Momento(
                                 context='ClarinetMusicVoice',
-                                prototype='abjad.Instrument',
+                                manifest='instruments',
                                 value='ClarinetInEFlat',
                                 ),
                             abjad.Momento(
                                 context='ClarinetMusicVoice',
-                                edition=abjad.Tag('-PARTS'),
-                                prototype='abjad.MarginMarkup',
-                                value='Cl. (Eb)',
+                                prototype='abjad.Clef',
+                                value='treble',
                                 ),
                             ],
                         ),
@@ -125,19 +125,19 @@ metadata = abjad.OrderedDict(
                         [
                             abjad.Momento(
                                 context='OboeMusicVoice',
-                                prototype='abjad.Clef',
-                                value='treble',
+                                edition=abjad.Tag('-PARTS'),
+                                manifest='margin_markups',
+                                value='Ob.',
                                 ),
                             abjad.Momento(
                                 context='OboeMusicVoice',
-                                prototype='abjad.Instrument',
+                                manifest='instruments',
                                 value='Oboe',
                                 ),
                             abjad.Momento(
                                 context='OboeMusicVoice',
-                                edition=abjad.Tag('-PARTS'),
-                                prototype='abjad.MarginMarkup',
-                                value='Ob.',
+                                prototype='abjad.Clef',
+                                value='treble',
                                 ),
                             ],
                         ),
@@ -156,19 +156,19 @@ metadata = abjad.OrderedDict(
                         [
                             abjad.Momento(
                                 context='PercussionMusicVoice',
-                                prototype='abjad.Clef',
-                                value='percussion',
+                                edition=abjad.Tag('-PARTS'),
+                                manifest='margin_markups',
+                                value='Perc.',
                                 ),
                             abjad.Momento(
                                 context='PercussionMusicVoice',
-                                prototype='abjad.Instrument',
+                                manifest='instruments',
                                 value='Percussion',
                                 ),
                             abjad.Momento(
                                 context='PercussionMusicVoice',
-                                edition=abjad.Tag('-PARTS'),
-                                prototype='abjad.MarginMarkup',
-                                value='Perc.',
+                                prototype='abjad.Clef',
+                                value='percussion',
                                 ),
                             abjad.Momento(
                                 context='PercussionMusicVoice',
@@ -192,19 +192,19 @@ metadata = abjad.OrderedDict(
                         [
                             abjad.Momento(
                                 context='PianoMusicVoice',
-                                prototype='abjad.Clef',
-                                value='treble',
+                                edition=abjad.Tag('-PARTS'),
+                                manifest='margin_markups',
+                                value='Pf.',
                                 ),
                             abjad.Momento(
                                 context='PianoMusicVoice',
-                                prototype='abjad.Instrument',
+                                manifest='instruments',
                                 value='Piano',
                                 ),
                             abjad.Momento(
                                 context='PianoMusicVoice',
-                                edition=abjad.Tag('-PARTS'),
-                                prototype='abjad.MarginMarkup',
-                                value='Pf.',
+                                prototype='abjad.Clef',
+                                value='treble',
                                 ),
                             ],
                         ),
@@ -223,8 +223,8 @@ metadata = abjad.OrderedDict(
                         [
                             abjad.Momento(
                                 context='GlobalSkips',
-                                prototype='abjad.MetronomeMark',
-                                value="\\markup {\n    \\score\n        {\n            \\new Score\n            \\with\n            {\n                \\override SpacingSpanner.spacing-increment = #0.5\n                proportionalNotationDuration = ##f\n            }\n            <<\n                \\new RhythmicStaff\n                \\with\n                {\n                    \\remove Time_signature_engraver\n                    \\remove Staff_symbol_engraver\n                    \\override Stem.direction = #up\n                    \\override Stem.length = #5\n                    \\override TupletBracket.bracket-visibility = ##t\n                    \\override TupletBracket.direction = #up\n                    \\override TupletBracket.minimum-length = #4\n                    \\override TupletBracket.padding = #1.25\n                    \\override TupletBracket.shorten-pair = #'(-1 . -1.5)\n                    \\override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods\n                    \\override TupletNumber.font-size = #0\n                    \\override TupletNumber.text = #tuplet-number::calc-fraction-text\n                    tupletFullLength = ##t\n                }\n                {\n                    c4\n                }\n            >>\n            \\layout {\n                indent = #0\n                ragged-right = ##t\n            }\n        }\n    =\n    \\hspace\n        #-0.5\n    \\score\n        {\n            \\new Score\n            \\with\n            {\n                \\override SpacingSpanner.spacing-increment = #0.5\n                proportionalNotationDuration = ##f\n            }\n            <<\n                \\new RhythmicStaff\n                \\with\n                {\n                    \\remove Time_signature_engraver\n                    \\remove Staff_symbol_engraver\n                    \\override Stem.direction = #up\n                    \\override Stem.length = #5\n                    \\override TupletBracket.bracket-visibility = ##t\n                    \\override TupletBracket.direction = #up\n                    \\override TupletBracket.minimum-length = #4\n                    \\override TupletBracket.padding = #1.25\n                    \\override TupletBracket.shorten-pair = #'(-1 . -1.5)\n                    \\override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods\n                    \\override TupletNumber.font-size = #0\n                    \\override TupletNumber.text = #tuplet-number::calc-fraction-text\n                    tupletFullLength = ##t\n                }\n                {\n                    \\tweak edge-height #'(0.7 . 0)\n                    \\times 4/5 {\n                        c4\n                    }\n                }\n            >>\n            \\layout {\n                indent = #0\n                ragged-right = ##t\n            }\n        }\n    }",
+                                manifest='metronome_marks',
+                                value='108',
                                 ),
                             abjad.Momento(
                                 context='GlobalSkips',
@@ -238,19 +238,19 @@ metadata = abjad.OrderedDict(
                         [
                             abjad.Momento(
                                 context='ViolaMusicVoice',
-                                prototype='abjad.Clef',
-                                value='treble',
+                                edition=abjad.Tag('-PARTS'),
+                                manifest='margin_markups',
+                                value='Va.',
                                 ),
                             abjad.Momento(
                                 context='ViolaMusicVoice',
-                                prototype='abjad.Instrument',
+                                manifest='instruments',
                                 value='Viola',
                                 ),
                             abjad.Momento(
                                 context='ViolaMusicVoice',
-                                edition=abjad.Tag('-PARTS'),
-                                prototype='abjad.MarginMarkup',
-                                value='Va.',
+                                prototype='abjad.Clef',
+                                value='treble',
                                 ),
                             ],
                         ),
@@ -269,19 +269,19 @@ metadata = abjad.OrderedDict(
                         [
                             abjad.Momento(
                                 context='ViolinMusicVoice',
-                                prototype='abjad.Clef',
-                                value='percussion',
+                                edition=abjad.Tag('-PARTS'),
+                                manifest='margin_markups',
+                                value='Vn.',
                                 ),
                             abjad.Momento(
                                 context='ViolinMusicVoice',
-                                prototype='abjad.Instrument',
+                                manifest='instruments',
                                 value='Percussion',
                                 ),
                             abjad.Momento(
                                 context='ViolinMusicVoice',
-                                edition=abjad.Tag('-PARTS'),
-                                prototype='abjad.MarginMarkup',
-                                value='Vn.',
+                                prototype='abjad.Clef',
+                                value='percussion',
                                 ),
                             abjad.Momento(
                                 context='ViolinMusicVoice',

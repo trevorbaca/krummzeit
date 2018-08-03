@@ -1124,7 +1124,7 @@ C_PianoMusicVoice = {
                 #(x11-color 'green4)                                       %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                 (“Piano”)                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             }                                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        - \tweak color #blue                                               %! SM43 %! SM8:EXPLICIT_DYNAMIC:PIC
         \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)     %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
         \set Staff.instrumentName =                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
@@ -1180,7 +1180,7 @@ C_PianoMusicVoice = {
         g''16
         \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
         -\staccatissimo                                                    %! IC
-        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        - \tweak color #blue                                               %! SM43 %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         
         r16
@@ -1230,7 +1230,7 @@ C_PianoMusicVoice = {
         af!8
         \ff                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
         -\staccatissimo                                                    %! IC
-        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        - \tweak color #blue                                               %! SM43 %! SM8:EXPLICIT_DYNAMIC:PIC
         \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
@@ -1864,7 +1864,7 @@ C_ViolinMusicVoice = {
         \ff                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
         -\staccatissimo                                                    %! IC
         ^ \markup { pizz. }                                                %! IC
-        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        - \tweak color #blue                                               %! SM43 %! SM8:EXPLICIT_DYNAMIC:PIC
         \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         [
         
@@ -1911,7 +1911,7 @@ C_ViolinMusicVoice = {
         a''8
         \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
         -\staccatissimo                                                    %! IC
-        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        - \tweak color #blue                                               %! SM43 %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         [
         
@@ -1957,7 +1957,7 @@ C_ViolinMusicVoice = {
         g''8
         \ff                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
         -\staccatissimo                                                    %! IC
-        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        - \tweak color #blue                                               %! SM43 %! SM8:EXPLICIT_DYNAMIC:PIC
         \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         [
         
@@ -2120,7 +2120,7 @@ C_ViolaMusicVoice = {
         \ff                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
         -\staccatissimo                                                    %! IC
         ^ \markup { pizz. }                                                %! IC
-        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        - \tweak color #blue                                               %! SM43 %! SM8:EXPLICIT_DYNAMIC:PIC
         \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -2156,7 +2156,7 @@ C_ViolaMusicVoice = {
         f''4
         \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
         -\staccatissimo                                                    %! IC
-        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        - \tweak color #blue                                               %! SM43 %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -2198,7 +2198,7 @@ C_ViolaMusicVoice = {
         f'4
         \ff                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
         -\staccatissimo                                                    %! IC
-        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        - \tweak color #blue                                               %! SM43 %! SM8:EXPLICIT_DYNAMIC:PIC
         \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -2354,7 +2354,7 @@ C_CelloMusicVoice = {
         \ff                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
         -\staccatissimo                                                    %! IC
         ^ \markup { pizz. }                                                %! IC
-        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        - \tweak color #blue                                               %! SM43 %! SM8:EXPLICIT_DYNAMIC:PIC
         \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         
         r16
@@ -2396,7 +2396,7 @@ C_CelloMusicVoice = {
         ef'!8
         \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
         -\staccatissimo                                                    %! IC
-        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        - \tweak color #blue                                               %! SM43 %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         
         r16
@@ -2431,7 +2431,7 @@ C_CelloMusicVoice = {
         b8
         \ff                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
         -\staccatissimo                                                    %! IC
-        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        - \tweak color #blue                                               %! SM43 %! SM8:EXPLICIT_DYNAMIC:PIC
         \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         
         r16

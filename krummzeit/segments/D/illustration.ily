@@ -4586,7 +4586,7 @@ D_ViolaMusicVoice = {
     a''8
     \pp                                                                    %! SM8:EXPLICIT_DYNAMIC:PIC
     ^ \markup { "molto flautando e pont." }                                %! IC
-    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak color #blue                                                   %! SM43 %! SM8:EXPLICIT_DYNAMIC:PIC
     \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                             %! SC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
@@ -4641,7 +4641,7 @@ D_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         cs''!16
         \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        - \tweak color #blue                                               %! SM43 %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         - \abjad_dashed_line_with_arrow                                    %! PIC
         - \tweak bound-details.left.text \markup \baca-left "molto flautando" %! PIC

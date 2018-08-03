@@ -426,7 +426,7 @@ F_OboeMusicVoice = {
     a'''4.
     \p                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     -\staccato                                                             %! IC
-    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak color #blue                                                   %! SM43 %! SM8:EXPLICIT_DYNAMIC:PIC
     \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/6 {
@@ -750,7 +750,7 @@ F_ClarinetMusicVoice = {
                 #(x11-color 'blue)                                         %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                 (“ClarinetInEFlat”)                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
             }                                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        - \tweak color #blue                                               %! SM43 %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         
         as!4

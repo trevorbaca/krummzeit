@@ -3352,7 +3352,8 @@ B_ViolinMusicVoice = {
     \pp                                                                    %! SM8:EXPLICIT_DYNAMIC:PIC
     ^ \markup { "non flautando" }                                          %! IC
     ^ \markup { "allow bowing to convey accelerando" }                     %! IC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                             %! SC
     
     g1
@@ -3454,7 +3455,8 @@ B_ViolaMusicVoice = {
         e4
         \ff                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
         ^ \markup { "molto flautando" }                                    %! IC
-        \>                                                                 %! PIC
+        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         \glissando                                                         %! SC
         
         dtqs!8
@@ -3507,7 +3509,8 @@ B_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         dtqs!2
         \ff                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                                 %! PIC
+        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         \glissando                                                         %! SC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3624,7 +3627,8 @@ B_ViolaMusicVoice = {
     \pp                                                                    %! SM8:EXPLICIT_DYNAMIC:PIC
     ^ \markup { "non flautando" }                                          %! IC
     ^ \markup { "allow bowing to convey accelerando" }                     %! IC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                             %! SC
     
     c\breve
@@ -3733,7 +3737,8 @@ B_CelloMusicVoice = {
         d,16
         \ff                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
         ^ \markup { "molto flautando" }                                    %! IC
-        \>                                                                 %! PIC
+        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         \glissando                                                         %! SC
         
         ctqs,!4
@@ -3786,7 +3791,8 @@ B_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         ctqs,!8
         \ff                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                                 %! PIC
+        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         \glissando                                                         %! SC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3900,7 +3906,8 @@ B_CelloMusicVoice = {
     \pp                                                                    %! SM8:EXPLICIT_DYNAMIC:PIC
     ^ \markup { "non flautando" }                                          %! IC
     ^ \markup { "allow bowing to convey accelerando" }                     %! IC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                             %! SC
     
     cqs,!1.

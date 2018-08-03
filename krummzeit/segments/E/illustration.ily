@@ -4150,7 +4150,8 @@ E_ViolinMusicVoice = {
     ef''!4
     \p                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     ^ \markup { "molto flautando" }                                        %! IC
-    \>                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                             %! SC
     
     e''2
@@ -4775,7 +4776,8 @@ E_ViolaMusicVoice = {
         ef'!2
         \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         ^ \markup { "molto flautando" }                                    %! IC
-        \>                                                                 %! PIC
+        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         \glissando                                                         %! SC
         
         e'4.
@@ -5176,7 +5178,8 @@ E_CelloMusicVoice = {
         ef'!8
         \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         ^ \markup { "molto flautando" }                                    %! IC
-        \>                                                                 %! PIC
+        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         \glissando                                                         %! SC
         
         e'4

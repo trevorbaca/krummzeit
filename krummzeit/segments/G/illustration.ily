@@ -791,7 +791,8 @@ G_ClarinetMusicVoice = {
             #(x11-color 'green4)                                           %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             (“BassClarinet”)                                               %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         }                                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)         %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \set Staff.instrumentName =                                            %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \markup {                                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
@@ -982,7 +983,8 @@ G_ClarinetMusicVoice = {
                 #(x11-color 'blue)                                         %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                 (“BassClarinet”)                                           %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
             }                                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-        \<                                                                 %! PIC
+        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         
         d1.
         ^ \markup {
@@ -2173,7 +2175,8 @@ G_ViolaMusicVoice = {
             (“Viola”)                                                      %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         }                                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
     ^ \markup { "subito ordinario" }                                       %! IC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                             %! SC
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)         %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \set Staff.instrumentName =                                            %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
@@ -2227,7 +2230,8 @@ G_ViolaMusicVoice = {
         g2
         \ff                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
         ^ \markup { "molto flautando" }                                    %! IC
-        \>                                                                 %! PIC
+        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         \glissando                                                         %! SC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2437,7 +2441,8 @@ G_CelloMusicVoice = {
             (“Cello”)                                                      %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         }                                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
     ^ \markup { "subito ordinario" }                                       %! IC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                             %! SC
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)         %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \set Staff.instrumentName =                                            %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
@@ -2496,7 +2501,8 @@ G_CelloMusicVoice = {
         b,1.
         \ff                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
         ^ \markup { "molto flautando" }                                    %! IC
-        \>                                                                 %! PIC
+        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         \glissando                                                         %! SC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC

@@ -426,7 +426,8 @@ F_OboeMusicVoice = {
     a'''4.
     \p                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     -\staccato                                                             %! IC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/6 {
         
@@ -749,7 +750,8 @@ F_ClarinetMusicVoice = {
                 #(x11-color 'blue)                                         %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
                 (“ClarinetInEFlat”)                                        %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
             }                                                              %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
-        \<                                                                 %! PIC
+        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         
         as!4
         -\staccato                                                         %! IC
@@ -1703,7 +1705,8 @@ F_ViolaMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     fs!8..
     \ppp                                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     
     r32
     
@@ -1897,7 +1900,8 @@ F_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c,8..
     \ppp                                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     
     r32
     

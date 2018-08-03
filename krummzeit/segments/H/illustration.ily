@@ -1,33 +1,33 @@
 H_GlobalRests = {
     
-    % [H GlobalRests measure 281 / measure 1]                                      %! SM4
+    % [H GlobalRests measure 281 / measure 1]                                      %! SM_4
     R1 * 7/8
     
-    % [H GlobalRests measure 282 / measure 2]                                      %! SM4
+    % [H GlobalRests measure 282 / measure 2]                                      %! SM_4
     R1 * 3/2
     
-    % [H GlobalRests measure 283 / measure 3]                                      %! SM4
+    % [H GlobalRests measure 283 / measure 3]                                      %! SM_4
     R1 * 7/4
     
-    % [H GlobalRests measure 284 / measure 4]                                      %! SM4
+    % [H GlobalRests measure 284 / measure 4]                                      %! SM_4
     R1 * 7/4
     
-    % [H GlobalRests measure 285 / measure 5]                                      %! SM4
+    % [H GlobalRests measure 285 / measure 5]                                      %! SM_4
     R1 * 3/4
     
-    % [H GlobalRests measure 286 / measure 6]                                      %! SM4
+    % [H GlobalRests measure 286 / measure 6]                                      %! SM_4
     R1 * 11/8
     
-    % [H GlobalRests measure 287 / measure 7]                                      %! SM4
+    % [H GlobalRests measure 287 / measure 7]                                      %! SM_4
     R1 * 5/8
     
-    % [H GlobalRests measure 288 / measure 8]                                      %! SM4
+    % [H GlobalRests measure 288 / measure 8]                                      %! SM_4
     R1 * 1
     
-    % [H GlobalRests measure 289 / measure 9]                                      %! SM4
+    % [H GlobalRests measure 289 / measure 9]                                      %! SM_4
     R1 * 1/2
     
-    % [H GlobalRests measure 290 / measure 10]                                     %! SM4
+    % [H GlobalRests measure 290 / measure 10]                                     %! SM_4
     R1 * 7/4
     
 }
@@ -35,44 +35,44 @@ H_GlobalRests = {
 
 H_GlobalSkips = {
     
-    % [H GlobalSkips measure 281 / measure 1]                                      %! SM4
-    \time 7/8                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    % [H GlobalSkips measure 281 / measure 1]                                      %! SM_4
+    \time 7/8                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
     \mark #8                                                                       %! IC
     \bar ""                                                                        %! SM2:+SEGMENT:EMPTY_START_BAR
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 7/8
 %@% ^ \markup \baca-dark-cyan-markup (281)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <0>                                           %! SM32:MEASURE_INDEX_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup ((1))                                         %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup [H.1]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[13'04'']"                                   %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                                  %! MMI1
-%@% - \abjad_dashed_line_with_arrow                                                %! MMI2
-%@% - \tweak bound-details.left.text \markup {                                     %! MMI2
-%@%     \concat                                                                    %! MMI2
-%@%         {                                                                      %! MMI2
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"90"                        %! MMI2
-%@%             \hspace                                                            %! MMI2
-%@%                 #0.5                                                           %! MMI2
-%@%         }                                                                      %! MMI2
-%@%     }                                                                          %! MMI2
-%@% \startTextSpan                                                                 %! MMI2
-    - \abjad_dashed_line_with_arrow                                                %! MMI3
-    - \tweak bound-details.left.text \markup {                                     %! MMI3
-        \concat                                                                    %! MMI3
-            {                                                                      %! MMI3
-                \with-color                                                        %! MMI3
-                    #(x11-color 'DeepPink1)                                        %! MMI3
-                    \abjad-metronome-mark-markup #2 #0 #1 #"90"                    %! MMI3
-                \hspace                                                            %! MMI3
-                    #0.5                                                           %! MMI3
-            }                                                                      %! MMI3
-        }                                                                          %! MMI3
-    \startTextSpan                                                                 %! MMI3
+    \stopTextSpan                                                                  %! MMI_1
+%@% - \abjad_dashed_line_with_arrow                                                %! MMI_2
+%@% - \tweak bound-details.left.text \markup {                                     %! MMI_2
+%@%     \concat                                                                    %! MMI_2
+%@%         {                                                                      %! MMI_2
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"90"                        %! MMI_2
+%@%             \hspace                                                            %! MMI_2
+%@%                 #0.5                                                           %! MMI_2
+%@%         }                                                                      %! MMI_2
+%@%     }                                                                          %! MMI_2
+%@% \startTextSpan                                                                 %! MMI_2
+    - \abjad_dashed_line_with_arrow                                                %! MMI_3
+    - \tweak bound-details.left.text \markup {                                     %! MMI_3
+        \concat                                                                    %! MMI_3
+            {                                                                      %! MMI_3
+                \with-color                                                        %! MMI_3
+                    #(x11-color 'DeepPink1)                                        %! MMI_3
+                    \abjad-metronome-mark-markup #2 #0 #1 #"90"                    %! MMI_3
+                \hspace                                                            %! MMI_3
+                    #0.5                                                           %! MMI_3
+            }                                                                      %! MMI_3
+        }                                                                          %! MMI_3
+    \startTextSpan                                                                 %! MMI_3
     
-    % [H GlobalSkips measure 282 / measure 2]                                      %! SM4
-    \time 6/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [H GlobalSkips measure 282 / measure 2]                                      %! SM_4
+    \time 6/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 3/2
 %@% ^ \markup \baca-dark-cyan-markup (282)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <1>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -80,9 +80,9 @@ H_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [H.2]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[13'06'']"                                   %! SM28:CLOCK_TIME_MARKUP
     
-    % [H GlobalSkips measure 283 / measure 3]                                      %! SM4
-    \time 7/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [H GlobalSkips measure 283 / measure 3]                                      %! SM_4
+    \time 7/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 7/4
 %@% ^ \markup \baca-dark-cyan-markup (283)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <2>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -90,7 +90,7 @@ H_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [H.3]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[13'10'']"                                   %! SM28:CLOCK_TIME_MARKUP
     
-    % [H GlobalSkips measure 284 / measure 4]                                      %! SM4
+    % [H GlobalSkips measure 284 / measure 4]                                      %! SM_4
     s1 * 7/4
 %@% ^ \markup \baca-dark-cyan-markup (284)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <3>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -98,9 +98,9 @@ H_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [H.4]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[13'15'']"                                   %! SM28:CLOCK_TIME_MARKUP
     
-    % [H GlobalSkips measure 285 / measure 5]                                      %! SM4
-    \time 3/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [H GlobalSkips measure 285 / measure 5]                                      %! SM_4
+    \time 3/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 3/4
 %@% ^ \markup \baca-dark-cyan-markup (285)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <4>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -108,42 +108,42 @@ H_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [H.5]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[13'19'']"                                   %! SM28:CLOCK_TIME_MARKUP
     
-    % [H GlobalSkips measure 286 / measure 6]                                      %! SM4
-    \time 11/8                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [H GlobalSkips measure 286 / measure 6]                                      %! SM_4
+    \time 11/8                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 11/8
 %@% ^ \markup \baca-dark-cyan-markup (286)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <5>                                           %! SM32:MEASURE_INDEX_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup ((6))                                         %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup [H.6]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[13'21'']"                                   %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                                  %! MMI1
-%@% - \abjad_invisible_line                                                        %! MMI2
-%@% - \tweak bound-details.left.text \markup {                                     %! MMI2
-%@%     \concat                                                                    %! MMI2
-%@%         {                                                                      %! MMI2
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"135"                       %! MMI2
-%@%             \hspace                                                            %! MMI2
-%@%                 #0.5                                                           %! MMI2
-%@%         }                                                                      %! MMI2
-%@%     }                                                                          %! MMI2
-%@% \startTextSpan                                                                 %! MMI2
-    - \abjad_invisible_line                                                        %! MMI3
-    - \tweak bound-details.left.text \markup {                                     %! MMI3
-        \concat                                                                    %! MMI3
-            {                                                                      %! MMI3
-                \with-color                                                        %! MMI3
-                    #(x11-color 'blue)                                             %! MMI3
-                    \abjad-metronome-mark-markup #2 #0 #1 #"135"                   %! MMI3
-                \hspace                                                            %! MMI3
-                    #0.5                                                           %! MMI3
-            }                                                                      %! MMI3
-        }                                                                          %! MMI3
-    \startTextSpan                                                                 %! MMI3
+    \stopTextSpan                                                                  %! MMI_1
+%@% - \abjad_invisible_line                                                        %! MMI_2
+%@% - \tweak bound-details.left.text \markup {                                     %! MMI_2
+%@%     \concat                                                                    %! MMI_2
+%@%         {                                                                      %! MMI_2
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"135"                       %! MMI_2
+%@%             \hspace                                                            %! MMI_2
+%@%                 #0.5                                                           %! MMI_2
+%@%         }                                                                      %! MMI_2
+%@%     }                                                                          %! MMI_2
+%@% \startTextSpan                                                                 %! MMI_2
+    - \abjad_invisible_line                                                        %! MMI_3
+    - \tweak bound-details.left.text \markup {                                     %! MMI_3
+        \concat                                                                    %! MMI_3
+            {                                                                      %! MMI_3
+                \with-color                                                        %! MMI_3
+                    #(x11-color 'blue)                                             %! MMI_3
+                    \abjad-metronome-mark-markup #2 #0 #1 #"135"                   %! MMI_3
+                \hspace                                                            %! MMI_3
+                    #0.5                                                           %! MMI_3
+            }                                                                      %! MMI_3
+        }                                                                          %! MMI_3
+    \startTextSpan                                                                 %! MMI_3
     
-    % [H GlobalSkips measure 287 / measure 7]                                      %! SM4
-    \time 5/8                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [H GlobalSkips measure 287 / measure 7]                                      %! SM_4
+    \time 5/8                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 5/8
 %@% ^ \markup \baca-dark-cyan-markup (287)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <6>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -151,9 +151,9 @@ H_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [H.7]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[13'24'']"                                   %! SM28:CLOCK_TIME_MARKUP
     
-    % [H GlobalSkips measure 288 / measure 8]                                      %! SM4
-    \time 4/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [H GlobalSkips measure 288 / measure 8]                                      %! SM_4
+    \time 4/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 1
 %@% ^ \markup \baca-dark-cyan-markup (288)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <7>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -161,9 +161,9 @@ H_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [H.8]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[13'25'']"                                   %! SM28:CLOCK_TIME_MARKUP
     
-    % [H GlobalSkips measure 289 / measure 9]                                      %! SM4
-    \time 2/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [H GlobalSkips measure 289 / measure 9]                                      %! SM_4
+    \time 2/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 1/2
 %@% ^ \markup \baca-dark-cyan-markup (289)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <8>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -171,25 +171,25 @@ H_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [H.9]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[13'27'']"                                   %! SM28:CLOCK_TIME_MARKUP
     
-    % [H GlobalSkips measure 290 / measure 10]                                     %! SM4
-    \time 7/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [H GlobalSkips measure 290 / measure 10]                                     %! SM_4
+    \time 7/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 7/4
 %@% ^ \markup \baca-dark-cyan-markup (290)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <9>                                           %! SM32:MEASURE_INDEX_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup ((10))                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup [H.10]                                        %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[13'27'']"                                   %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                                  %! MMI4
-    \baca_bar_line_visible                                                         %! SM5
-    \bar "|"                                                                       %! SM5
+    \stopTextSpan                                                                  %! MMI_4
+    \baca_bar_line_visible                                                         %! SM_5
+    \bar "|"                                                                       %! SM_5
     
 }
 
 
 H_OboeMusicVoice = {
     
-    % [H OboeMusicVoice measure 281 / measure 1]                           %! SM4
+    % [H OboeMusicVoice measure 281 / measure 1]                           %! SM_4
     \set Staff.instrumentName =                                            %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
     \markup {                                                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \hcenter-in                                                        %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -235,24 +235,24 @@ H_OboeMusicVoice = {
         }                                                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    % [H OboeMusicVoice measure 282 / measure 2]                           %! SM4
+    % [H OboeMusicVoice measure 282 / measure 2]                           %! SM_4
     R1 * 3/2
     
-    % [H OboeMusicVoice measure 283 / measure 3]                           %! SM4
+    % [H OboeMusicVoice measure 283 / measure 3]                           %! SM_4
     R1 * 7/4
     
-    % [H OboeMusicVoice measure 284 / measure 4]                           %! SM4
+    % [H OboeMusicVoice measure 284 / measure 4]                           %! SM_4
     \override DynamicLineSpanner.staff-padding = #'3                       %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     d''1..
     \ff                                                                    %! SM8:EXPLICIT_DYNAMIC:IC
     \startTrillSpan
     
-    % [H OboeMusicVoice measure 285 / measure 5]                           %! SM4
+    % [H OboeMusicVoice measure 285 / measure 5]                           %! SM_4
     d''2.
     \repeatTie
     
-    % [H OboeMusicVoice measure 286 / measure 6]                           %! SM4
+    % [H OboeMusicVoice measure 286 / measure 6]                           %! SM_4
     d''2..
     \repeatTie
     
@@ -262,7 +262,7 @@ H_OboeMusicVoice = {
     d''4
     \repeatTie
     
-    % [H OboeMusicVoice measure 287 / measure 7]                           %! SM4
+    % [H OboeMusicVoice measure 287 / measure 7]                           %! SM_4
     d''4.
     \repeatTie
     
@@ -272,7 +272,7 @@ H_OboeMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
         
-        % [H OboeMusicVoice measure 288 / measure 8]                       %! SM4
+        % [H OboeMusicVoice measure 288 / measure 8]                       %! SM_4
         \override TupletBracket.staff-padding = #2                         %! OC1
         ef''!2.
         \stopTrillSpan                                                     %! SC
@@ -289,7 +289,7 @@ H_OboeMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/5 {
         
-        % [H OboeMusicVoice measure 290 / measure 10]                      %! SM4
+        % [H OboeMusicVoice measure 290 / measure 10]                      %! SM_4
         ef''!2.
         ^ \markup {
             \override
@@ -321,7 +321,7 @@ H_OboeMusicStaff = {
 
 H_ClarinetMusicVoice = {
     
-    % [H ClarinetMusicVoice measure 281 / measure 1]                       %! SM4
+    % [H ClarinetMusicVoice measure 281 / measure 1]                       %! SM_4
     \set Staff.instrumentName =                                            %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
     \markup {                                                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \hcenter-in                                                        %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -367,13 +367,13 @@ H_ClarinetMusicVoice = {
         }                                                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    % [H ClarinetMusicVoice measure 282 / measure 2]                       %! SM4
+    % [H ClarinetMusicVoice measure 282 / measure 2]                       %! SM_4
     R1 * 3/2
     
-    % [H ClarinetMusicVoice measure 283 / measure 3]                       %! SM4
+    % [H ClarinetMusicVoice measure 283 / measure 3]                       %! SM_4
     R1 * 7/4
     
-    % [H ClarinetMusicVoice measure 284 / measure 4]                       %! SM4
+    % [H ClarinetMusicVoice measure 284 / measure 4]                       %! SM_4
     \override DynamicLineSpanner.staff-padding = #'3                       %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     b'1..
@@ -384,20 +384,20 @@ H_ClarinetMusicVoice = {
             (“ClarinetInEFlat”)                                            %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
         }                                                                  %! SM11:EXPLICIT_INSTRUMENT_ALERT:IC
     
-    % [H ClarinetMusicVoice measure 285 / measure 5]                       %! SM4
+    % [H ClarinetMusicVoice measure 285 / measure 5]                       %! SM_4
     b'2.
     \repeatTie
     
-    % [H ClarinetMusicVoice measure 286 / measure 6]                       %! SM4
+    % [H ClarinetMusicVoice measure 286 / measure 6]                       %! SM_4
     R1 * 11/8
     
-    % [H ClarinetMusicVoice measure 287 / measure 7]                       %! SM4
+    % [H ClarinetMusicVoice measure 287 / measure 7]                       %! SM_4
     R1 * 5/8
     \revert DynamicLineSpanner.staff-padding                               %! OC2
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
         
-        % [H ClarinetMusicVoice measure 288 / measure 8]                   %! SM4
+        % [H ClarinetMusicVoice measure 288 / measure 8]                   %! SM_4
         \override DynamicLineSpanner.staff-padding = #'9                   %! OC1
         \override Stem.direction = #up                                     %! OC1
         \override TupletBracket.staff-padding = #5                         %! OC1
@@ -422,7 +422,7 @@ H_ClarinetMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/5 {
         
-        % [H ClarinetMusicVoice measure 290 / measure 10]                  %! SM4
+        % [H ClarinetMusicVoice measure 290 / measure 10]                  %! SM_4
         f4
         ^ \markup {
             \override
@@ -457,7 +457,7 @@ H_ClarinetMusicStaff = {
 H_PianoMusicVoice = {
     \times 2/3 {
         
-        % [H PianoMusicVoice measure 281 / measure 1]                      %! SM4
+        % [H PianoMusicVoice measure 281 / measure 1]                      %! SM_4
         \set Staff.instrumentName =                                        %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
         \markup {                                                          %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
             \hcenter-in                                                    %! SM8:EXPLICIT_MARGIN_MARKUP:IC:-PARTS
@@ -2260,17 +2260,17 @@ H_PianoMusicVoice = {
         ]
     }
     
-    % [H PianoMusicVoice measure 287 / measure 7]                          %! SM4
+    % [H PianoMusicVoice measure 287 / measure 7]                          %! SM_4
     R1 * 5/8
     
-    % [H PianoMusicVoice measure 288 / measure 8]                          %! SM4
+    % [H PianoMusicVoice measure 288 / measure 8]                          %! SM_4
     \override DynamicLineSpanner.staff-padding = #'6                       %! OC1
     \override TupletBracket.staff-padding = #2                             %! OC1
     R1 * 1
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/7 {
         
-        % [H PianoMusicVoice measure 289 / measure 9]                      %! SM4
+        % [H PianoMusicVoice measure 289 / measure 9]                      %! SM_4
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         fs'''!2.
         :32                                                                %! IC
@@ -2298,7 +2298,7 @@ H_PianoMusicStaff = {
 
 H_PercussionMusicVoice = {
     
-    % [H PercussionMusicVoice measure 281 / measure 1]                     %! SM4
+    % [H PercussionMusicVoice measure 281 / measure 1]                     %! SM_4
     \set Staff.instrumentName =                                            %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
     \markup {                                                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \hcenter-in                                                        %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -2348,16 +2348,16 @@ H_PercussionMusicVoice = {
         }                                                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    % [H PercussionMusicVoice measure 282 / measure 2]                     %! SM4
+    % [H PercussionMusicVoice measure 282 / measure 2]                     %! SM_4
     R1 * 3/2
     
-    % [H PercussionMusicVoice measure 283 / measure 3]                     %! SM4
+    % [H PercussionMusicVoice measure 283 / measure 3]                     %! SM_4
     R1 * 7/4
     
-    % [H PercussionMusicVoice measure 284 / measure 4]                     %! SM4
+    % [H PercussionMusicVoice measure 284 / measure 4]                     %! SM_4
     R1 * 7/4
     
-    % [H PercussionMusicVoice measure 285 / measure 5]                     %! SM4
+    % [H PercussionMusicVoice measure 285 / measure 5]                     %! SM_4
     \override DynamicLineSpanner.staff-padding = #'6                       %! OC1
     \clef "percussion"                                                     %! SM8:REDUNDANT_CLEF:IC
     \once \override Staff.Clef.color = #(x11-color 'DeepPink1)             %! SM6:REDUNDANT_CLEF_COLOR:IC
@@ -2367,7 +2367,7 @@ H_PercussionMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'DeepPink4)                   %! SM6:REDUNDANT_CLEF_REDRAW_COLOR:IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    \baca_unpitched_music_warning                                          %! SM24
+    \baca_unpitched_music_warning                                          %! SM_24
     c4
     \ff                                                                    %! SM8:EXPLICIT_DYNAMIC:IC
     -\accent                                                               %! IC
@@ -2379,58 +2379,58 @@ H_PercussionMusicVoice = {
         }                                                                  %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \baca_unpitched_music_warning                                          %! SM24
+    \baca_unpitched_music_warning                                          %! SM_24
     c4
     \ff                                                                    %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                               %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \baca_unpitched_music_warning                                          %! SM24
+    \baca_unpitched_music_warning                                          %! SM_24
     c4
     \ff                                                                    %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                               %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \baca_unpitched_music_warning                                          %! SM24
+    \baca_unpitched_music_warning                                          %! SM_24
     c4
     \ff                                                                    %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                               %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \baca_unpitched_music_warning                                          %! SM24
+    \baca_unpitched_music_warning                                          %! SM_24
     c4
     \ff                                                                    %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                               %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \baca_unpitched_music_warning                                          %! SM24
+    \baca_unpitched_music_warning                                          %! SM_24
     c4
     \ff                                                                    %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                               %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \baca_unpitched_music_warning                                          %! SM24
+    \baca_unpitched_music_warning                                          %! SM_24
     c4
     \ff                                                                    %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                               %! IC
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    \baca_unpitched_music_warning                                          %! SM24
+    \baca_unpitched_music_warning                                          %! SM_24
     c4
     \ff                                                                    %! SM8:REDUNDANT_DYNAMIC:IC
     -\accent                                                               %! IC
     \revert DynamicLineSpanner.staff-padding                               %! OC2
     
-    % [H PercussionMusicVoice measure 287 / measure 7]                     %! SM4
+    % [H PercussionMusicVoice measure 287 / measure 7]                     %! SM_4
     R1 * 5/8
     
-    % [H PercussionMusicVoice measure 288 / measure 8]                     %! SM4
+    % [H PercussionMusicVoice measure 288 / measure 8]                     %! SM_4
     \override TupletBracket.staff-padding = #3                             %! OC1
     R1 * 1
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/7 {
         
-        % [H PercussionMusicVoice measure 289 / measure 9]                 %! SM4
+        % [H PercussionMusicVoice measure 289 / measure 9]                 %! SM_4
         \clef "treble"                                                     %! SM8:EXPLICIT_CLEF:IC
         \once \override Staff.Clef.color = #(x11-color 'blue)              %! SM6:EXPLICIT_CLEF_COLOR:IC
     %@% \override Staff.Clef.color = ##f                                   %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
@@ -2464,7 +2464,7 @@ H_ViolinMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 19/10 {
         
-        % [H ViolinMusicVoice measure 281 / measure 1]                     %! SM4
+        % [H ViolinMusicVoice measure 281 / measure 1]                     %! SM_4
         \set Staff.instrumentName =                                        %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \markup {                                                          %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
             \hcenter-in                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -2520,25 +2520,25 @@ H_ViolinMusicVoice = {
     }
     \times 2/3 {
         
-        % [H ViolinMusicVoice measure 283 / measure 3]                     %! SM4
+        % [H ViolinMusicVoice measure 283 / measure 3]                     %! SM_4
         \override NoteHead.style = #'harmonic                              %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \baca_repeat_pitch_class_warning                                   %! SM14
+        \baca_repeat_pitch_class_warning                                   %! SM_14
         af'!4
         \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:IC
-        - \tweak color #red                                                %! SM14
-        ^ \markup { @ }                                                    %! SM14
+        - \tweak color #red                                                %! SM_14
+        ^ \markup { @ }                                                    %! SM_14
         
-        \baca_repeat_pitch_class_warning                                   %! SM14
+        \baca_repeat_pitch_class_warning                                   %! SM_14
         af'!2
-        - \tweak color #red                                                %! SM14
-        ^ \markup { @ }                                                    %! SM14
+        - \tweak color #red                                                %! SM_14
+        ^ \markup { @ }                                                    %! SM_14
     }
     
-    \baca_repeat_pitch_class_warning                                       %! SM14
+    \baca_repeat_pitch_class_warning                                       %! SM_14
     af'!4
-    - \tweak color #red                                                    %! SM14
-    ^ \markup { @ }                                                        %! SM14
+    - \tweak color #red                                                    %! SM_14
+    ^ \markup { @ }                                                        %! SM_14
     \glissando                                                             %! SC
     
     cs'!1
@@ -2546,7 +2546,7 @@ H_ViolinMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/7 {
         
-        % [H ViolinMusicVoice measure 284 / measure 4]                     %! SM4
+        % [H ViolinMusicVoice measure 284 / measure 4]                     %! SM_4
         cs'!1
         \glissando                                                         %! SC
         
@@ -2563,7 +2563,7 @@ H_ViolinMusicVoice = {
     }
     \times 4/5 {
         
-        % [H ViolinMusicVoice measure 285 / measure 5]                     %! SM4
+        % [H ViolinMusicVoice measure 285 / measure 5]                     %! SM_4
         f16
         \glissando                                                         %! SC
         
@@ -2587,12 +2587,12 @@ H_ViolinMusicVoice = {
         \revert NoteHead.style                                             %! OC2
     }
     
-    % [H ViolinMusicVoice measure 286 / measure 6]                         %! SM4
+    % [H ViolinMusicVoice measure 286 / measure 6]                         %! SM_4
     R1 * 11/8
     \tweak text #tuplet-number::calc-fraction-text
     \times 13/10 {
         
-        % [H ViolinMusicVoice measure 287 / measure 7]                     %! SM4
+        % [H ViolinMusicVoice measure 287 / measure 7]                     %! SM_4
         \override DynamicLineSpanner.staff-padding = #'7                   %! OC1
         \override TupletBracket.staff-padding = #3                         %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
@@ -2600,27 +2600,27 @@ H_ViolinMusicVoice = {
         \fff                                                               %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                                         %! SC
         
-        \baca_repeat_pitch_class_warning                                   %! SM14
+        \baca_repeat_pitch_class_warning                                   %! SM_14
         ef''!2
         :32                                                                %! IC
-        - \tweak color #red                                                %! SM14
-        ^ \markup { @ }                                                    %! SM14
+        - \tweak color #red                                                %! SM_14
+        ^ \markup { @ }                                                    %! SM_14
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/5 {
         
-        % [H ViolinMusicVoice measure 289 / measure 9]                     %! SM4
-        \baca_repeat_pitch_class_warning                                   %! SM14
+        % [H ViolinMusicVoice measure 289 / measure 9]                     %! SM_4
+        \baca_repeat_pitch_class_warning                                   %! SM_14
         ef''!2.
         :32                                                                %! IC
-        - \tweak color #red                                                %! SM14
-        ^ \markup { @ }                                                    %! SM14
+        - \tweak color #red                                                %! SM_14
+        ^ \markup { @ }                                                    %! SM_14
         
-        \baca_repeat_pitch_class_warning                                   %! SM14
+        \baca_repeat_pitch_class_warning                                   %! SM_14
         ef''!2
         :32                                                                %! IC
-        - \tweak color #red                                                %! SM14
-        ^ \markup { @ }                                                    %! SM14
+        - \tweak color #red                                                %! SM_14
+        ^ \markup { @ }                                                    %! SM_14
         \revert DynamicLineSpanner.staff-padding                           %! OC2
         \revert TupletBracket.staff-padding                                %! OC2
         
@@ -2638,7 +2638,7 @@ H_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 19/10 {
         
-        % [H ViolaMusicVoice measure 281 / measure 1]                      %! SM4
+        % [H ViolaMusicVoice measure 281 / measure 1]                      %! SM_4
         \set Staff.instrumentName =                                        %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \markup {                                                          %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
             \hcenter-in                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -2691,24 +2691,24 @@ H_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/9 {
         
-        % [H ViolaMusicVoice measure 283 / measure 3]                      %! SM4
+        % [H ViolaMusicVoice measure 283 / measure 3]                      %! SM_4
         \override NoteHead.style = #'harmonic                              %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         b2.
         \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                                         %! SC
         
-        \baca_repeat_pitch_class_warning                                   %! SM14
+        \baca_repeat_pitch_class_warning                                   %! SM_14
         c1.
-        - \tweak color #red                                                %! SM14
-        ^ \markup { @ }                                                    %! SM14
+        - \tweak color #red                                                %! SM_14
+        ^ \markup { @ }                                                    %! SM_14
     }
     \times 4/5 {
         
-        \baca_repeat_pitch_class_warning                                   %! SM14
+        \baca_repeat_pitch_class_warning                                   %! SM_14
         c8
-        - \tweak color #red                                                %! SM14
-        ^ \markup { @ }                                                    %! SM14
+        - \tweak color #red                                                %! SM_14
+        ^ \markup { @ }                                                    %! SM_14
         \glissando                                                         %! SC
         
         e2
@@ -2716,7 +2716,7 @@ H_ViolaMusicVoice = {
     }
     \times 4/7 {
         
-        % [H ViolaMusicVoice measure 284 / measure 4]                      %! SM4
+        % [H ViolaMusicVoice measure 284 / measure 4]                      %! SM_4
         e2
         \glissando                                                         %! SC
         
@@ -2739,7 +2739,7 @@ H_ViolaMusicVoice = {
     }
     \times 4/7 {
         
-        % [H ViolaMusicVoice measure 285 / measure 5]                      %! SM4
+        % [H ViolaMusicVoice measure 285 / measure 5]                      %! SM_4
         e4
         \glissando                                                         %! SC
         
@@ -2755,12 +2755,12 @@ H_ViolaMusicVoice = {
         \revert NoteHead.style                                             %! OC2
     }
     
-    % [H ViolaMusicVoice measure 286 / measure 6]                          %! SM4
+    % [H ViolaMusicVoice measure 286 / measure 6]                          %! SM_4
     R1 * 11/8
     \tweak text #tuplet-number::calc-fraction-text
     \times 13/10 {
         
-        % [H ViolaMusicVoice measure 287 / measure 7]                      %! SM4
+        % [H ViolaMusicVoice measure 287 / measure 7]                      %! SM_4
         \override DynamicLineSpanner.staff-padding = #'9                   %! OC1
         \override TupletBracket.staff-padding = #5                         %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
@@ -2768,27 +2768,27 @@ H_ViolaMusicVoice = {
         \fff                                                               %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                                         %! SC
         
-        \baca_repeat_pitch_class_warning                                   %! SM14
+        \baca_repeat_pitch_class_warning                                   %! SM_14
         a1
         :32                                                                %! IC
-        - \tweak color #red                                                %! SM14
-        ^ \markup { @ }                                                    %! SM14
+        - \tweak color #red                                                %! SM_14
+        ^ \markup { @ }                                                    %! SM_14
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/5 {
         
-        % [H ViolaMusicVoice measure 289 / measure 9]                      %! SM4
-        \baca_repeat_pitch_class_warning                                   %! SM14
+        % [H ViolaMusicVoice measure 289 / measure 9]                      %! SM_4
+        \baca_repeat_pitch_class_warning                                   %! SM_14
         a4
         :32                                                                %! IC
-        - \tweak color #red                                                %! SM14
-        ^ \markup { @ }                                                    %! SM14
+        - \tweak color #red                                                %! SM_14
+        ^ \markup { @ }                                                    %! SM_14
         
-        \baca_repeat_pitch_class_warning                                   %! SM14
+        \baca_repeat_pitch_class_warning                                   %! SM_14
         a1
         :32                                                                %! IC
-        - \tweak color #red                                                %! SM14
-        ^ \markup { @ }                                                    %! SM14
+        - \tweak color #red                                                %! SM_14
+        ^ \markup { @ }                                                    %! SM_14
         \revert DynamicLineSpanner.staff-padding                           %! OC2
         \revert TupletBracket.staff-padding                                %! OC2
         
@@ -2806,7 +2806,7 @@ H_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 19/10 {
         
-        % [H CelloMusicVoice measure 281 / measure 1]                      %! SM4
+        % [H CelloMusicVoice measure 281 / measure 1]                      %! SM_4
         \set Staff.instrumentName =                                        %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \markup {                                                          %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
             \hcenter-in                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -2858,7 +2858,7 @@ H_CelloMusicVoice = {
     }
     \times 2/3 {
         
-        % [H CelloMusicVoice measure 283 / measure 3]                      %! SM4
+        % [H CelloMusicVoice measure 283 / measure 3]                      %! SM_4
         \override NoteHead.style = #'harmonic                              %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         a,4
@@ -2886,7 +2886,7 @@ H_CelloMusicVoice = {
     }
     \times 2/3 {
         
-        % [H CelloMusicVoice measure 284 / measure 4]                      %! SM4
+        % [H CelloMusicVoice measure 284 / measure 4]                      %! SM_4
         bf,!4
         \glissando                                                         %! SC
         
@@ -2901,7 +2901,7 @@ H_CelloMusicVoice = {
     \glissando                                                             %! SC
     \times 4/7 {
         
-        % [H CelloMusicVoice measure 285 / measure 5]                      %! SM4
+        % [H CelloMusicVoice measure 285 / measure 5]                      %! SM_4
         b,2
         \glissando                                                         %! SC
         
@@ -2917,12 +2917,12 @@ H_CelloMusicVoice = {
         \revert NoteHead.style                                             %! OC2
     }
     
-    % [H CelloMusicVoice measure 286 / measure 6]                          %! SM4
+    % [H CelloMusicVoice measure 286 / measure 6]                          %! SM_4
     R1 * 11/8
     \tweak text #tuplet-number::calc-fraction-text
     \times 13/10 {
         
-        % [H CelloMusicVoice measure 287 / measure 7]                      %! SM4
+        % [H CelloMusicVoice measure 287 / measure 7]                      %! SM_4
         \override DynamicLineSpanner.staff-padding = #'9                   %! OC1
         \override TupletBracket.staff-padding = #5                         %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
@@ -2930,27 +2930,27 @@ H_CelloMusicVoice = {
         \fff                                                               %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                                         %! SC
         
-        \baca_repeat_pitch_class_warning                                   %! SM14
+        \baca_repeat_pitch_class_warning                                   %! SM_14
         eqf,!2.
         :32                                                                %! IC
-        - \tweak color #red                                                %! SM14
-        ^ \markup { @ }                                                    %! SM14
+        - \tweak color #red                                                %! SM_14
+        ^ \markup { @ }                                                    %! SM_14
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/5 {
         
-        % [H CelloMusicVoice measure 289 / measure 9]                      %! SM4
-        \baca_repeat_pitch_class_warning                                   %! SM14
+        % [H CelloMusicVoice measure 289 / measure 9]                      %! SM_4
+        \baca_repeat_pitch_class_warning                                   %! SM_14
         eqf,!2
         :32                                                                %! IC
-        - \tweak color #red                                                %! SM14
-        ^ \markup { @ }                                                    %! SM14
+        - \tweak color #red                                                %! SM_14
+        ^ \markup { @ }                                                    %! SM_14
         
-        \baca_repeat_pitch_class_warning                                   %! SM14
+        \baca_repeat_pitch_class_warning                                   %! SM_14
         eqf,!2.
         :32                                                                %! IC
-        - \tweak color #red                                                %! SM14
-        ^ \markup { @ }                                                    %! SM14
+        - \tweak color #red                                                %! SM_14
+        ^ \markup { @ }                                                    %! SM_14
         \revert DynamicLineSpanner.staff-padding                           %! OC2
         \revert TupletBracket.staff-padding                                %! OC2
         

@@ -3907,7 +3907,8 @@ D_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         fs''!4
         \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-        \<                                                                 %! PIC
+        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         - \abjad_dashed_line_with_arrow                                    %! PIC
         - \tweak bound-details.left.text \markup \baca-left "molto flautando" %! PIC
         - \tweak bound-details.right.text \markup \baca-right "molto gridato" %! PIC
@@ -4585,7 +4586,8 @@ D_ViolaMusicVoice = {
     a''8
     \pp                                                                    %! SM8:EXPLICIT_DYNAMIC:PIC
     ^ \markup { "molto flautando e pont." }                                %! IC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                             %! SC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
@@ -4639,7 +4641,8 @@ D_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         cs''!16
         \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-        \<                                                                 %! PIC
+        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         - \abjad_dashed_line_with_arrow                                    %! PIC
         - \tweak bound-details.left.text \markup \baca-left "molto flautando" %! PIC
         - \tweak bound-details.right.text \markup \baca-right "molto gridato" %! PIC
@@ -5449,7 +5452,8 @@ D_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         g''4
         \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-        \<                                                                 %! PIC
+        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         - \abjad_dashed_line_with_arrow                                    %! PIC
         - \tweak bound-details.left.text \markup \baca-left "molto flautando" %! PIC
         - \tweak bound-details.right.text \markup \baca-right "molto gridato" %! PIC

@@ -687,7 +687,8 @@ I_ClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     fs!2.
     \ff                                                                    %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     fs!4.
@@ -733,7 +734,8 @@ I_ClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     fs!1
     \fff                                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     % [I ClarinetMusicVoice measure 302 / measure 12]                      %! SM4

@@ -1798,7 +1798,8 @@ A_OboeMusicVoice = {
     ef'!4.
     \f                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     -\staccato                                                             %! IC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \times 2/3 {
         
         e'4
@@ -2992,7 +2993,8 @@ A_ClarinetMusicVoice = {
     \f                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     - \tweak color #red                                                    %! SM14
     ^ \markup { @ }                                                        %! SM14
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     
     \baca_repeat_pitch_class_warning                                       %! SM14
     f'4
@@ -6471,7 +6473,8 @@ A_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         b''16
         \f                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-        \<                                                                 %! PIC
+        - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         [
         
         c'16

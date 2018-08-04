@@ -3521,7 +3521,7 @@ D_PercussionMusicVoice = {
     \repeatTie
     
     % [D PercussionMusicVoice measure 195 / measure 44]                    %! _comment_measure_numbers
-    c'1
+    c'1                                                                    %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     - \tweak direction #up
     \repeatTie
@@ -3536,7 +3536,7 @@ D_PercussionMusicVoice = {
     \repeatTie
     
     % [D PercussionMusicVoice measure 197 / measure 46]                    %! _comment_measure_numbers
-    c'2.
+    c'2.                                                                   %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     

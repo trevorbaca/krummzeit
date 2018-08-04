@@ -76,15 +76,15 @@ class RegisterTransitionCommand(baca.Command):
                         {
             <BLANKLINE>
                             % [MusicVoice measure 1]                                       %! _comment_measure_numbers
-                            c'8
-                            [
+                            c'8                                                            %! baca_make_even_divisions
+                            [                                                              %! baca_make_even_divisions
             <BLANKLINE>
-                            d''8
+                            d''8                                                           %! baca_make_even_divisions
             <BLANKLINE>
-                            e''8
+                            e''8                                                           %! baca_make_even_divisions
             <BLANKLINE>
-                            f''8
-                            ]
+                            f''8                                                           %! baca_make_even_divisions
+                            ]                                                              %! baca_make_even_divisions
             <BLANKLINE>
                             % [MusicVoice measure 2]                                       %! _comment_measure_numbers
                             R1 * 3/8

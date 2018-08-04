@@ -632,7 +632,7 @@ I_ClarinetMusicVoice = {
     
     % [I ClarinetMusicVoice measure 293 / measure 3]                       %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    fs!2.
+    fs!2.                                                                  %! baca_make_repeat_tied_notes
     \ff                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     % [I ClarinetMusicVoice measure 294 / measure 4]                       %! _comment_measure_numbers
@@ -678,7 +678,7 @@ I_ClarinetMusicVoice = {
     
     % [I ClarinetMusicVoice measure 299 / measure 9]                       %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    fs!1
+    fs!1                                                                   %! baca_make_repeat_tied_notes
     \baca_fff_poss                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     \repeatTie
     
@@ -691,23 +691,23 @@ I_ClarinetMusicVoice = {
     
     % [I ClarinetMusicVoice measure 301 / measure 11]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    fs!1
+    fs!1                                                                   %! baca_make_repeat_tied_notes
     \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                   %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \repeatTie
     
     % [I ClarinetMusicVoice measure 302 / measure 12]                      %! _comment_measure_numbers
-    fs!1
+    fs!1                                                                   %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [I ClarinetMusicVoice measure 303 / measure 13]                      %! _comment_measure_numbers
-    fs!1
+    fs!1                                                                   %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [I ClarinetMusicVoice measure 304 / measure 14]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    fs!1
+    fs!1                                                                   %! baca_make_repeat_tied_notes
     \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     

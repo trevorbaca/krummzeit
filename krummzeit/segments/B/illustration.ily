@@ -2586,7 +2586,7 @@ B_PercussionMusicVoice = {
     \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)           %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                    %! baca_make_repeat_tied_notes
     \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                            %! IndicatorCommand
         \override                                                          %! IndicatorCommand
@@ -2599,7 +2599,7 @@ B_PercussionMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [B PercussionMusicVoice measure 110 / measure 22]                    %! _comment_measure_numbers
-    c'1
+    c'1                                                                    %! baca_make_repeat_tied_notes
     - \tweak direction #up
     \repeatTie
     
@@ -2772,7 +2772,7 @@ B_PercussionMusicVoice = {
     \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2.
+    c2.                                                                    %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                            %! IndicatorCommand
@@ -2841,25 +2841,25 @@ B_PercussionMusicVoice = {
     
     % [B PercussionMusicVoice measure 128 / measure 40]                    %! _comment_measure_numbers
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2.
+    c2.                                                                    %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [B PercussionMusicVoice measure 129 / measure 41]                    %! _comment_measure_numbers
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2.
+    c2.                                                                    %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [B PercussionMusicVoice measure 130 / measure 42]                    %! _comment_measure_numbers
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c1
+    c1                                                                     %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [B PercussionMusicVoice measure 131 / measure 43]                    %! _comment_measure_numbers
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c1
+    c1                                                                     %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -2903,7 +2903,7 @@ B_ViolinMusicVoice = {
     \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)         %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'green4)         %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'2.
+    c'2.                                                                   %! baca_make_repeat_tied_notes
     \mf                                                                    %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     ^ \markup \baca-reapplied-indicator-markup "[“Vn.”]"                   %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“Percussion”)"            %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
@@ -2935,76 +2935,76 @@ B_ViolinMusicVoice = {
     \repeatTie
     
     % [B ViolinMusicVoice measure 92 / measure 4]                          %! _comment_measure_numbers
-    c'1
+    c'1                                                                    %! baca_make_repeat_tied_notes
     - \tweak direction #up
     \repeatTie
     
     % [B ViolinMusicVoice measure 93 / measure 5]                          %! _comment_measure_numbers
-    c'4
+    c'4                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [B ViolinMusicVoice measure 94 / measure 6]                          %! _comment_measure_numbers
-    c'2
+    c'2                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [B ViolinMusicVoice measure 95 / measure 7]                          %! _comment_measure_numbers
-    c'4
+    c'4                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [B ViolinMusicVoice measure 96 / measure 8]                          %! _comment_measure_numbers
-    c'1..
+    c'1..                                                                  %! baca_make_repeat_tied_notes
     - \tweak direction #up
     \repeatTie
     
     % [B ViolinMusicVoice measure 97 / measure 9]                          %! _comment_measure_numbers
-    c'4
+    c'4                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [B ViolinMusicVoice measure 98 / measure 10]                         %! _comment_measure_numbers
-    c'1
+    c'1                                                                    %! baca_make_repeat_tied_notes
     - \tweak direction #up
     \repeatTie
     
     % [B ViolinMusicVoice measure 99 / measure 11]                         %! _comment_measure_numbers
-    c'4
+    c'4                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [B ViolinMusicVoice measure 100 / measure 12]                        %! _comment_measure_numbers
-    c'2..
+    c'2..                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [B ViolinMusicVoice measure 101 / measure 13]                        %! _comment_measure_numbers
-    c'4
+    c'4                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [B ViolinMusicVoice measure 102 / measure 14]                        %! _comment_measure_numbers
-    c'2..
+    c'2..                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [B ViolinMusicVoice measure 103 / measure 15]                        %! _comment_measure_numbers
-    c'4
+    c'4                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [B ViolinMusicVoice measure 104 / measure 16]                        %! _comment_measure_numbers
-    c'\breve
+    c'\breve                                                               %! baca_make_repeat_tied_notes
     - \tweak direction #up
     \repeatTie
     
     % [B ViolinMusicVoice measure 105 / measure 17]                        %! _comment_measure_numbers
-    c'4
+    c'4                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [B ViolinMusicVoice measure 106 / measure 18]                        %! _comment_measure_numbers
-    c'1
+    c'1                                                                    %! baca_make_repeat_tied_notes
     - \tweak direction #up
     \repeatTie
     
     % [B ViolinMusicVoice measure 107 / measure 19]                        %! _comment_measure_numbers
-    c'4
+    c'4                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [B ViolinMusicVoice measure 108 / measure 20]                        %! _comment_measure_numbers
-    c'2.
+    c'2.                                                                   %! baca_make_repeat_tied_notes
     \repeatTie
     \revert Staff.BarLine.bar-extent                                       %! OverrideCommand(2):-PARTS
     \once \override Staff.BarLine.bar-extent = #'(0 . 0)                   %! OverrideCommand(1):-PARTS

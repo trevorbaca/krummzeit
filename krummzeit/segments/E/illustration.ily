@@ -2216,7 +2216,7 @@ E_ClarinetMusicVoice = {
     gs!4.
     \repeatTie
     
-    gs!4
+    gs!4                                                                   %! baca_make_repeated_duration_notes
     \repeatTie
     \revert Stem.direction                                                 %! OverrideCommand(2)
     \revert DynamicLineSpanner.staff-padding                               %! OverrideCommand(2)

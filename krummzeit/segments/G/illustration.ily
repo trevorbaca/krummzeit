@@ -422,7 +422,7 @@ G_OboeMusicVoice = {
     \repeatTie
     
     % [G OboeMusicVoice measure 260 / measure 4]                           %! _comment_measure_numbers
-    b1
+    b1                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [G OboeMusicVoice measure 261 / measure 5]                           %! _comment_measure_numbers
@@ -433,11 +433,11 @@ G_OboeMusicVoice = {
     \repeatTie
     
     % [G OboeMusicVoice measure 262 / measure 6]                           %! _comment_measure_numbers
-    b2.
+    b2.                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [G OboeMusicVoice measure 263 / measure 7]                           %! _comment_measure_numbers
-    b2.
+    b2.                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                               %! OverrideCommand(2)
     \revert Stem.direction                                                 %! OverrideCommand(2)
@@ -785,7 +785,7 @@ G_ClarinetMusicVoice = {
     \repeatTie
     
     % [G ClarinetMusicVoice measure 260 / measure 4]                       %! _comment_measure_numbers
-    cs!1
+    cs!1                                                                   %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [G ClarinetMusicVoice measure 261 / measure 5]                       %! _comment_measure_numbers
@@ -1420,7 +1420,7 @@ G_PercussionMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)         %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'green4)         %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2
+    c2                                                                     %! baca_make_repeated_duration_notes
     \p                                                                     %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     ^ \markup \baca-reapplied-indicator-markup "[“Perc.”]"                 %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“Xylophone”)"             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
@@ -1440,37 +1440,37 @@ G_PercussionMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2
+    c2                                                                     %! baca_make_repeated_duration_notes
     
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2
+    c2                                                                     %! baca_make_repeated_duration_notes
     
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2
+    c2                                                                     %! baca_make_repeated_duration_notes
     
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2
+    c2                                                                     %! baca_make_repeated_duration_notes
     
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2
+    c2                                                                     %! baca_make_repeated_duration_notes
     
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2
+    c2                                                                     %! baca_make_repeated_duration_notes
     
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2
+    c2                                                                     %! baca_make_repeated_duration_notes
     
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2
+    c2                                                                     %! baca_make_repeated_duration_notes
     
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2
+    c2                                                                     %! baca_make_repeated_duration_notes
     
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2
+    c2                                                                     %! baca_make_repeated_duration_notes
     
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2
+    c2                                                                     %! baca_make_repeated_duration_notes
     
     r8
     

@@ -415,7 +415,7 @@ i_ClarinetMusicVoice = {
     
     % [_ ClarinetMusicVoice measure 4]                                     %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    cs!2.
+    cs!2.                                                                  %! baca_make_repeat_tied_notes
     \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     % [_ ClarinetMusicVoice measure 5]                                     %! _comment_measure_numbers

@@ -44,27 +44,27 @@ class RegisterTransitionCommand(baca.Command):
                     \context GlobalSkips = "GlobalSkips"
                     {
             <BLANKLINE>
-                        % [GlobalSkips measure 1]                                          %! SM_4
-                        \time 4/8                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
-                        \baca_time_signature_color "blue"                                  %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
+                        % [GlobalSkips measure 1]                                          %! COMMENT_MEASURE_NUMBERS
+                        \time 4/8                                                          %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
+                        \baca_time_signature_color "blue"                                  %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
                         s1 * 1/2                                                           %! MAKE_GLOBAL_SKIPS_1
             <BLANKLINE>
-                        % [GlobalSkips measure 2]                                          %! SM_4
-                        \time 3/8                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
-                        \baca_time_signature_color "blue"                                  %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
+                        % [GlobalSkips measure 2]                                          %! COMMENT_MEASURE_NUMBERS
+                        \time 3/8                                                          %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
+                        \baca_time_signature_color "blue"                                  %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
                         s1 * 3/8                                                           %! MAKE_GLOBAL_SKIPS_1
             <BLANKLINE>
-                        % [GlobalSkips measure 3]                                          %! SM_4
-                        \time 4/8                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
-                        \baca_time_signature_color "blue"                                  %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
+                        % [GlobalSkips measure 3]                                          %! COMMENT_MEASURE_NUMBERS
+                        \time 4/8                                                          %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
+                        \baca_time_signature_color "blue"                                  %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
                         s1 * 1/2                                                           %! MAKE_GLOBAL_SKIPS_1
             <BLANKLINE>
-                        % [GlobalSkips measure 4]                                          %! SM_4
-                        \time 3/8                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
-                        \baca_time_signature_color "blue"                                  %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
+                        % [GlobalSkips measure 4]                                          %! COMMENT_MEASURE_NUMBERS
+                        \time 3/8                                                          %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
+                        \baca_time_signature_color "blue"                                  %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
                         s1 * 3/8                                                           %! MAKE_GLOBAL_SKIPS_1
-                        \baca_bar_line_visible                                             %! SM_5
-                        \bar "|"                                                           %! SM_5
+                        \baca_bar_line_visible                                             %! ATTACH_FINAL_BAR_LINE
+                        \bar "|"                                                           %! ATTACH_FINAL_BAR_LINE
             <BLANKLINE>
                     }
                 >>
@@ -75,7 +75,7 @@ class RegisterTransitionCommand(baca.Command):
                         \context Voice = "MusicVoice"
                         {
             <BLANKLINE>
-                            % [MusicVoice measure 1]                                       %! SM_4
+                            % [MusicVoice measure 1]                                       %! COMMENT_MEASURE_NUMBERS
                             c'8
                             [
             <BLANKLINE>
@@ -86,13 +86,13 @@ class RegisterTransitionCommand(baca.Command):
                             f''8
                             ]
             <BLANKLINE>
-                            % [MusicVoice measure 2]                                       %! SM_4
+                            % [MusicVoice measure 2]                                       %! COMMENT_MEASURE_NUMBERS
                             R1 * 3/8
             <BLANKLINE>
-                            % [MusicVoice measure 3]                                       %! SM_4
+                            % [MusicVoice measure 3]                                       %! COMMENT_MEASURE_NUMBERS
                             R1 * 1/2
             <BLANKLINE>
-                            % [MusicVoice measure 4]                                       %! SM_4
+                            % [MusicVoice measure 4]                                       %! COMMENT_MEASURE_NUMBERS
                             R1 * 3/8
             <BLANKLINE>
                         }

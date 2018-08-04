@@ -44,27 +44,27 @@ class RegisterTransitionCommand(baca.Command):
                     \context GlobalSkips = "GlobalSkips"
                     {
             <BLANKLINE>
-                        % [GlobalSkips measure 1]                                          %! COMMENT_MEASURE_NUMBERS
-                        \time 4/8                                                          %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
-                        \baca_time_signature_color "blue"                                  %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
-                        s1 * 1/2                                                           %! MAKE_GLOBAL_SKIPS_1
+                        % [GlobalSkips measure 1]                                          %! _comment_measure_numbers
+                        \time 4/8                                                          %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+                        \baca_time_signature_color "blue"                                  %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+                        s1 * 1/2                                                           %! _make_global_skips(1)
             <BLANKLINE>
-                        % [GlobalSkips measure 2]                                          %! COMMENT_MEASURE_NUMBERS
-                        \time 3/8                                                          %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
-                        \baca_time_signature_color "blue"                                  %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
-                        s1 * 3/8                                                           %! MAKE_GLOBAL_SKIPS_1
+                        % [GlobalSkips measure 2]                                          %! _comment_measure_numbers
+                        \time 3/8                                                          %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+                        \baca_time_signature_color "blue"                                  %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+                        s1 * 3/8                                                           %! _make_global_skips(1)
             <BLANKLINE>
-                        % [GlobalSkips measure 3]                                          %! COMMENT_MEASURE_NUMBERS
-                        \time 4/8                                                          %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
-                        \baca_time_signature_color "blue"                                  %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
-                        s1 * 1/2                                                           %! MAKE_GLOBAL_SKIPS_1
+                        % [GlobalSkips measure 3]                                          %! _comment_measure_numbers
+                        \time 4/8                                                          %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+                        \baca_time_signature_color "blue"                                  %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+                        s1 * 1/2                                                           %! _make_global_skips(1)
             <BLANKLINE>
-                        % [GlobalSkips measure 4]                                          %! COMMENT_MEASURE_NUMBERS
-                        \time 3/8                                                          %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
-                        \baca_time_signature_color "blue"                                  %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
-                        s1 * 3/8                                                           %! MAKE_GLOBAL_SKIPS_1
-                        \baca_bar_line_visible                                             %! ATTACH_FINAL_BAR_LINE
-                        \bar "|"                                                           %! ATTACH_FINAL_BAR_LINE
+                        % [GlobalSkips measure 4]                                          %! _comment_measure_numbers
+                        \time 3/8                                                          %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+                        \baca_time_signature_color "blue"                                  %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+                        s1 * 3/8                                                           %! _make_global_skips(1)
+                        \baca_bar_line_visible                                             %! _attach_final_bar_line
+                        \bar "|"                                                           %! _attach_final_bar_line
             <BLANKLINE>
                     }
                 >>
@@ -75,7 +75,7 @@ class RegisterTransitionCommand(baca.Command):
                         \context Voice = "MusicVoice"
                         {
             <BLANKLINE>
-                            % [MusicVoice measure 1]                                       %! COMMENT_MEASURE_NUMBERS
+                            % [MusicVoice measure 1]                                       %! _comment_measure_numbers
                             c'8
                             [
             <BLANKLINE>
@@ -86,13 +86,13 @@ class RegisterTransitionCommand(baca.Command):
                             f''8
                             ]
             <BLANKLINE>
-                            % [MusicVoice measure 2]                                       %! COMMENT_MEASURE_NUMBERS
+                            % [MusicVoice measure 2]                                       %! _comment_measure_numbers
                             R1 * 3/8
             <BLANKLINE>
-                            % [MusicVoice measure 3]                                       %! COMMENT_MEASURE_NUMBERS
+                            % [MusicVoice measure 3]                                       %! _comment_measure_numbers
                             R1 * 1/2
             <BLANKLINE>
-                            % [MusicVoice measure 4]                                       %! COMMENT_MEASURE_NUMBERS
+                            % [MusicVoice measure 4]                                       %! _comment_measure_numbers
                             R1 * 3/8
             <BLANKLINE>
                         }

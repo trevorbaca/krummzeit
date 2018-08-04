@@ -675,11 +675,11 @@ J_OboeMusicVoice = {
     \repeatTie
     
     % [J OboeMusicVoice measure 316 / measure 3]                           %! _comment_measure_numbers
-    cs'!1
+    cs'!1                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J OboeMusicVoice measure 317 / measure 4]                           %! _comment_measure_numbers
-    cs'!2
+    cs'!2                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J OboeMusicVoice measure 318 / measure 5]                           %! _comment_measure_numbers
@@ -697,11 +697,11 @@ J_OboeMusicVoice = {
     \repeatTie
     
     % [J OboeMusicVoice measure 320 / measure 7]                           %! _comment_measure_numbers
-    cs'!1
+    cs'!1                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J OboeMusicVoice measure 321 / measure 8]                           %! _comment_measure_numbers
-    cs'!2
+    cs'!2                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J OboeMusicVoice measure 322 / measure 9]                           %! _comment_measure_numbers
@@ -719,11 +719,11 @@ J_OboeMusicVoice = {
     \repeatTie
     
     % [J OboeMusicVoice measure 324 / measure 11]                          %! _comment_measure_numbers
-    cs'!1
+    cs'!1                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J OboeMusicVoice measure 325 / measure 12]                          %! _comment_measure_numbers
-    cs'!2
+    cs'!2                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J OboeMusicVoice measure 326 / measure 13]                          %! _comment_measure_numbers
@@ -741,11 +741,11 @@ J_OboeMusicVoice = {
     \repeatTie
     
     % [J OboeMusicVoice measure 328 / measure 15]                          %! _comment_measure_numbers
-    cs'!1
+    cs'!1                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J OboeMusicVoice measure 329 / measure 16]                          %! _comment_measure_numbers
-    cs'!2
+    cs'!2                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J OboeMusicVoice measure 330 / measure 17]                          %! _comment_measure_numbers
@@ -763,11 +763,11 @@ J_OboeMusicVoice = {
     \repeatTie
     
     % [J OboeMusicVoice measure 332 / measure 19]                          %! _comment_measure_numbers
-    cs'!1
+    cs'!1                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J OboeMusicVoice measure 333 / measure 20]                          %! _comment_measure_numbers
-    cs'!2
+    cs'!2                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J OboeMusicVoice measure 334 / measure 21]                          %! _comment_measure_numbers
@@ -785,11 +785,11 @@ J_OboeMusicVoice = {
     \repeatTie
     
     % [J OboeMusicVoice measure 336 / measure 23]                          %! _comment_measure_numbers
-    cs'!1
+    cs'!1                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J OboeMusicVoice measure 337 / measure 24]                          %! _comment_measure_numbers
-    cs'!2
+    cs'!2                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J OboeMusicVoice measure 338 / measure 25]                          %! _comment_measure_numbers
@@ -807,11 +807,11 @@ J_OboeMusicVoice = {
     \repeatTie
     
     % [J OboeMusicVoice measure 340 / measure 27]                          %! _comment_measure_numbers
-    cs'!1
+    cs'!1                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J OboeMusicVoice measure 341 / measure 28]                          %! _comment_measure_numbers
-    cs'!2
+    cs'!2                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J OboeMusicVoice measure 342 / measure 29]                          %! _comment_measure_numbers
@@ -829,11 +829,11 @@ J_OboeMusicVoice = {
     \repeatTie
     
     % [J OboeMusicVoice measure 344 / measure 31]                          %! _comment_measure_numbers
-    cs'!1
+    cs'!1                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J OboeMusicVoice measure 345 / measure 32]                          %! _comment_measure_numbers
-    cs'!2
+    cs'!2                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J OboeMusicVoice measure 346 / measure 33]                          %! _comment_measure_numbers
@@ -851,11 +851,11 @@ J_OboeMusicVoice = {
     \repeatTie
     
     % [J OboeMusicVoice measure 348 / measure 35]                          %! _comment_measure_numbers
-    cs'!1
+    cs'!1                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J OboeMusicVoice measure 349 / measure 36]                          %! _comment_measure_numbers
-    cs'!2
+    cs'!2                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J OboeMusicVoice measure 350 / measure 37]                          %! _comment_measure_numbers
@@ -873,11 +873,11 @@ J_OboeMusicVoice = {
     \repeatTie
     
     % [J OboeMusicVoice measure 352 / measure 39]                          %! _comment_measure_numbers
-    cs'!1
+    cs'!1                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J OboeMusicVoice measure 353 / measure 40]                          %! _comment_measure_numbers
-    cs'!2
+    cs'!2                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J OboeMusicVoice measure 354 / measure 41]                          %! _comment_measure_numbers
@@ -955,11 +955,11 @@ J_ClarinetMusicVoice = {
     \repeatTie
     
     % [J ClarinetMusicVoice measure 316 / measure 3]                       %! _comment_measure_numbers
-    e1
+    e1                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J ClarinetMusicVoice measure 317 / measure 4]                       %! _comment_measure_numbers
-    e2
+    e2                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J ClarinetMusicVoice measure 318 / measure 5]                       %! _comment_measure_numbers
@@ -977,11 +977,11 @@ J_ClarinetMusicVoice = {
     \repeatTie
     
     % [J ClarinetMusicVoice measure 320 / measure 7]                       %! _comment_measure_numbers
-    e1
+    e1                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J ClarinetMusicVoice measure 321 / measure 8]                       %! _comment_measure_numbers
-    e2
+    e2                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J ClarinetMusicVoice measure 322 / measure 9]                       %! _comment_measure_numbers
@@ -999,11 +999,11 @@ J_ClarinetMusicVoice = {
     \repeatTie
     
     % [J ClarinetMusicVoice measure 324 / measure 11]                      %! _comment_measure_numbers
-    e1
+    e1                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J ClarinetMusicVoice measure 325 / measure 12]                      %! _comment_measure_numbers
-    e2
+    e2                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J ClarinetMusicVoice measure 326 / measure 13]                      %! _comment_measure_numbers
@@ -1021,11 +1021,11 @@ J_ClarinetMusicVoice = {
     \repeatTie
     
     % [J ClarinetMusicVoice measure 328 / measure 15]                      %! _comment_measure_numbers
-    e1
+    e1                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J ClarinetMusicVoice measure 329 / measure 16]                      %! _comment_measure_numbers
-    e2
+    e2                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J ClarinetMusicVoice measure 330 / measure 17]                      %! _comment_measure_numbers
@@ -1043,11 +1043,11 @@ J_ClarinetMusicVoice = {
     \repeatTie
     
     % [J ClarinetMusicVoice measure 332 / measure 19]                      %! _comment_measure_numbers
-    e1
+    e1                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J ClarinetMusicVoice measure 333 / measure 20]                      %! _comment_measure_numbers
-    e2
+    e2                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J ClarinetMusicVoice measure 334 / measure 21]                      %! _comment_measure_numbers
@@ -1065,11 +1065,11 @@ J_ClarinetMusicVoice = {
     \repeatTie
     
     % [J ClarinetMusicVoice measure 336 / measure 23]                      %! _comment_measure_numbers
-    e1
+    e1                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J ClarinetMusicVoice measure 337 / measure 24]                      %! _comment_measure_numbers
-    e2
+    e2                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J ClarinetMusicVoice measure 338 / measure 25]                      %! _comment_measure_numbers
@@ -1087,11 +1087,11 @@ J_ClarinetMusicVoice = {
     \repeatTie
     
     % [J ClarinetMusicVoice measure 340 / measure 27]                      %! _comment_measure_numbers
-    e1
+    e1                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J ClarinetMusicVoice measure 341 / measure 28]                      %! _comment_measure_numbers
-    e2
+    e2                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J ClarinetMusicVoice measure 342 / measure 29]                      %! _comment_measure_numbers
@@ -1109,11 +1109,11 @@ J_ClarinetMusicVoice = {
     \repeatTie
     
     % [J ClarinetMusicVoice measure 344 / measure 31]                      %! _comment_measure_numbers
-    e1
+    e1                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J ClarinetMusicVoice measure 345 / measure 32]                      %! _comment_measure_numbers
-    e2
+    e2                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J ClarinetMusicVoice measure 346 / measure 33]                      %! _comment_measure_numbers
@@ -1131,11 +1131,11 @@ J_ClarinetMusicVoice = {
     \repeatTie
     
     % [J ClarinetMusicVoice measure 348 / measure 35]                      %! _comment_measure_numbers
-    e1
+    e1                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J ClarinetMusicVoice measure 349 / measure 36]                      %! _comment_measure_numbers
-    e2
+    e2                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J ClarinetMusicVoice measure 350 / measure 37]                      %! _comment_measure_numbers
@@ -1153,11 +1153,11 @@ J_ClarinetMusicVoice = {
     \repeatTie
     
     % [J ClarinetMusicVoice measure 352 / measure 39]                      %! _comment_measure_numbers
-    e1
+    e1                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J ClarinetMusicVoice measure 353 / measure 40]                      %! _comment_measure_numbers
-    e2
+    e2                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     \revert Stem.direction                                                 %! OverrideCommand(2)
     
@@ -1238,12 +1238,12 @@ J_PianoMusicVoice = {
     \repeatTie
     
     % [J PianoMusicVoice measure 316 / measure 3]                          %! _comment_measure_numbers
-    cs'''!1
+    cs'''!1                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PianoMusicVoice measure 317 / measure 4]                          %! _comment_measure_numbers
-    cs'''!2
+    cs'''!2                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1266,12 +1266,12 @@ J_PianoMusicVoice = {
     \repeatTie
     
     % [J PianoMusicVoice measure 320 / measure 7]                          %! _comment_measure_numbers
-    cs'''!1
+    cs'''!1                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PianoMusicVoice measure 321 / measure 8]                          %! _comment_measure_numbers
-    cs'''!2
+    cs'''!2                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1294,12 +1294,12 @@ J_PianoMusicVoice = {
     \repeatTie
     
     % [J PianoMusicVoice measure 324 / measure 11]                         %! _comment_measure_numbers
-    cs'''!1
+    cs'''!1                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PianoMusicVoice measure 325 / measure 12]                         %! _comment_measure_numbers
-    cs'''!2
+    cs'''!2                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1322,12 +1322,12 @@ J_PianoMusicVoice = {
     \repeatTie
     
     % [J PianoMusicVoice measure 328 / measure 15]                         %! _comment_measure_numbers
-    cs'''!1
+    cs'''!1                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PianoMusicVoice measure 329 / measure 16]                         %! _comment_measure_numbers
-    cs'''!2
+    cs'''!2                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1350,12 +1350,12 @@ J_PianoMusicVoice = {
     \repeatTie
     
     % [J PianoMusicVoice measure 332 / measure 19]                         %! _comment_measure_numbers
-    cs'''!1
+    cs'''!1                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PianoMusicVoice measure 333 / measure 20]                         %! _comment_measure_numbers
-    cs'''!2
+    cs'''!2                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1378,12 +1378,12 @@ J_PianoMusicVoice = {
     \repeatTie
     
     % [J PianoMusicVoice measure 336 / measure 23]                         %! _comment_measure_numbers
-    cs'''!1
+    cs'''!1                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PianoMusicVoice measure 337 / measure 24]                         %! _comment_measure_numbers
-    cs'''!2
+    cs'''!2                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1408,12 +1408,12 @@ J_PianoMusicVoice = {
     \repeatTie
     
     % [J PianoMusicVoice measure 340 / measure 27]                         %! _comment_measure_numbers
-    cs'''!1
+    cs'''!1                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PianoMusicVoice measure 341 / measure 28]                         %! _comment_measure_numbers
-    cs'''!2
+    cs'''!2                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1436,12 +1436,12 @@ J_PianoMusicVoice = {
     \repeatTie
     
     % [J PianoMusicVoice measure 344 / measure 31]                         %! _comment_measure_numbers
-    cs'''!1
+    cs'''!1                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PianoMusicVoice measure 345 / measure 32]                         %! _comment_measure_numbers
-    cs'''!2
+    cs'''!2                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1464,12 +1464,12 @@ J_PianoMusicVoice = {
     \repeatTie
     
     % [J PianoMusicVoice measure 348 / measure 35]                         %! _comment_measure_numbers
-    cs'''!1
+    cs'''!1                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PianoMusicVoice measure 349 / measure 36]                         %! _comment_measure_numbers
-    cs'''!2
+    cs'''!2                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1492,12 +1492,12 @@ J_PianoMusicVoice = {
     \repeatTie
     
     % [J PianoMusicVoice measure 352 / measure 39]                         %! _comment_measure_numbers
-    cs'''!1
+    cs'''!1                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PianoMusicVoice measure 353 / measure 40]                         %! _comment_measure_numbers
-    cs'''!2
+    cs'''!2                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1520,12 +1520,12 @@ J_PianoMusicVoice = {
     \repeatTie
     
     % [J PianoMusicVoice measure 356 / measure 43]                         %! _comment_measure_numbers
-    cs'''!1
+    cs'''!1                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PianoMusicVoice measure 357 / measure 44]                         %! _comment_measure_numbers
-    cs'''!2
+    cs'''!2                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1548,12 +1548,12 @@ J_PianoMusicVoice = {
     \repeatTie
     
     % [J PianoMusicVoice measure 360 / measure 47]                         %! _comment_measure_numbers
-    cs'''!1
+    cs'''!1                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PianoMusicVoice measure 361 / measure 48]                         %! _comment_measure_numbers
-    cs'''!2
+    cs'''!2                                                                %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1616,12 +1616,12 @@ J_PercussionMusicVoice = {
     \repeatTie
     
     % [J PercussionMusicVoice measure 316 / measure 3]                     %! _comment_measure_numbers
-    cs''!1
+    cs''!1                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PercussionMusicVoice measure 317 / measure 4]                     %! _comment_measure_numbers
-    cs''!2
+    cs''!2                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1644,12 +1644,12 @@ J_PercussionMusicVoice = {
     \repeatTie
     
     % [J PercussionMusicVoice measure 320 / measure 7]                     %! _comment_measure_numbers
-    cs''!1
+    cs''!1                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PercussionMusicVoice measure 321 / measure 8]                     %! _comment_measure_numbers
-    cs''!2
+    cs''!2                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1672,12 +1672,12 @@ J_PercussionMusicVoice = {
     \repeatTie
     
     % [J PercussionMusicVoice measure 324 / measure 11]                    %! _comment_measure_numbers
-    cs''!1
+    cs''!1                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PercussionMusicVoice measure 325 / measure 12]                    %! _comment_measure_numbers
-    cs''!2
+    cs''!2                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1700,12 +1700,12 @@ J_PercussionMusicVoice = {
     \repeatTie
     
     % [J PercussionMusicVoice measure 328 / measure 15]                    %! _comment_measure_numbers
-    cs''!1
+    cs''!1                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PercussionMusicVoice measure 329 / measure 16]                    %! _comment_measure_numbers
-    cs''!2
+    cs''!2                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1728,12 +1728,12 @@ J_PercussionMusicVoice = {
     \repeatTie
     
     % [J PercussionMusicVoice measure 332 / measure 19]                    %! _comment_measure_numbers
-    cs''!1
+    cs''!1                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PercussionMusicVoice measure 333 / measure 20]                    %! _comment_measure_numbers
-    cs''!2
+    cs''!2                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1756,12 +1756,12 @@ J_PercussionMusicVoice = {
     \repeatTie
     
     % [J PercussionMusicVoice measure 336 / measure 23]                    %! _comment_measure_numbers
-    cs''!1
+    cs''!1                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PercussionMusicVoice measure 337 / measure 24]                    %! _comment_measure_numbers
-    cs''!2
+    cs''!2                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1784,12 +1784,12 @@ J_PercussionMusicVoice = {
     \repeatTie
     
     % [J PercussionMusicVoice measure 340 / measure 27]                    %! _comment_measure_numbers
-    cs''!1
+    cs''!1                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PercussionMusicVoice measure 341 / measure 28]                    %! _comment_measure_numbers
-    cs''!2
+    cs''!2                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1812,12 +1812,12 @@ J_PercussionMusicVoice = {
     \repeatTie
     
     % [J PercussionMusicVoice measure 344 / measure 31]                    %! _comment_measure_numbers
-    cs''!1
+    cs''!1                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PercussionMusicVoice measure 345 / measure 32]                    %! _comment_measure_numbers
-    cs''!2
+    cs''!2                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1840,12 +1840,12 @@ J_PercussionMusicVoice = {
     \repeatTie
     
     % [J PercussionMusicVoice measure 348 / measure 35]                    %! _comment_measure_numbers
-    cs''!1
+    cs''!1                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PercussionMusicVoice measure 349 / measure 36]                    %! _comment_measure_numbers
-    cs''!2
+    cs''!2                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1868,12 +1868,12 @@ J_PercussionMusicVoice = {
     \repeatTie
     
     % [J PercussionMusicVoice measure 352 / measure 39]                    %! _comment_measure_numbers
-    cs''!1
+    cs''!1                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PercussionMusicVoice measure 353 / measure 40]                    %! _comment_measure_numbers
-    cs''!2
+    cs''!2                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1896,12 +1896,12 @@ J_PercussionMusicVoice = {
     \repeatTie
     
     % [J PercussionMusicVoice measure 356 / measure 43]                    %! _comment_measure_numbers
-    cs''!1
+    cs''!1                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PercussionMusicVoice measure 357 / measure 44]                    %! _comment_measure_numbers
-    cs''!2
+    cs''!2                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1924,12 +1924,12 @@ J_PercussionMusicVoice = {
     \repeatTie
     
     % [J PercussionMusicVoice measure 360 / measure 47]                    %! _comment_measure_numbers
-    cs''!1
+    cs''!1                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [J PercussionMusicVoice measure 361 / measure 48]                    %! _comment_measure_numbers
-    cs''!2
+    cs''!2                                                                 %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                               %! OverrideCommand(2)
@@ -2665,11 +2665,11 @@ J_CelloMusicVoice = {
     \repeatTie
     
     % [J CelloMusicVoice measure 316 / measure 3]                          %! _comment_measure_numbers
-    d'1
+    d'1                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 317 / measure 4]                          %! _comment_measure_numbers
-    d'2
+    d'2                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 318 / measure 5]                          %! _comment_measure_numbers
@@ -2687,11 +2687,11 @@ J_CelloMusicVoice = {
     \repeatTie
     
     % [J CelloMusicVoice measure 320 / measure 7]                          %! _comment_measure_numbers
-    d'1
+    d'1                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 321 / measure 8]                          %! _comment_measure_numbers
-    d'2
+    d'2                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 322 / measure 9]                          %! _comment_measure_numbers
@@ -2709,11 +2709,11 @@ J_CelloMusicVoice = {
     \repeatTie
     
     % [J CelloMusicVoice measure 324 / measure 11]                         %! _comment_measure_numbers
-    d'1
+    d'1                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 325 / measure 12]                         %! _comment_measure_numbers
-    d'2
+    d'2                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 326 / measure 13]                         %! _comment_measure_numbers
@@ -2731,11 +2731,11 @@ J_CelloMusicVoice = {
     \repeatTie
     
     % [J CelloMusicVoice measure 328 / measure 15]                         %! _comment_measure_numbers
-    d'1
+    d'1                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 329 / measure 16]                         %! _comment_measure_numbers
-    d'2
+    d'2                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 330 / measure 17]                         %! _comment_measure_numbers
@@ -2753,11 +2753,11 @@ J_CelloMusicVoice = {
     \repeatTie
     
     % [J CelloMusicVoice measure 332 / measure 19]                         %! _comment_measure_numbers
-    d'1
+    d'1                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 333 / measure 20]                         %! _comment_measure_numbers
-    d'2
+    d'2                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 334 / measure 21]                         %! _comment_measure_numbers
@@ -2775,11 +2775,11 @@ J_CelloMusicVoice = {
     \repeatTie
     
     % [J CelloMusicVoice measure 336 / measure 23]                         %! _comment_measure_numbers
-    d'1
+    d'1                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 337 / measure 24]                         %! _comment_measure_numbers
-    d'2
+    d'2                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                               %! OverrideCommand(2)
     
@@ -2800,11 +2800,11 @@ J_CelloMusicVoice = {
     \repeatTie
     
     % [J CelloMusicVoice measure 340 / measure 27]                         %! _comment_measure_numbers
-    d,1
+    d,1                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 341 / measure 28]                         %! _comment_measure_numbers
-    d,2
+    d,2                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 342 / measure 29]                         %! _comment_measure_numbers
@@ -2822,11 +2822,11 @@ J_CelloMusicVoice = {
     \repeatTie
     
     % [J CelloMusicVoice measure 344 / measure 31]                         %! _comment_measure_numbers
-    d,1
+    d,1                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 345 / measure 32]                         %! _comment_measure_numbers
-    d,2
+    d,2                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 346 / measure 33]                         %! _comment_measure_numbers
@@ -2844,11 +2844,11 @@ J_CelloMusicVoice = {
     \repeatTie
     
     % [J CelloMusicVoice measure 348 / measure 35]                         %! _comment_measure_numbers
-    d,1
+    d,1                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 349 / measure 36]                         %! _comment_measure_numbers
-    d,2
+    d,2                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 350 / measure 37]                         %! _comment_measure_numbers
@@ -2866,11 +2866,11 @@ J_CelloMusicVoice = {
     \repeatTie
     
     % [J CelloMusicVoice measure 352 / measure 39]                         %! _comment_measure_numbers
-    d,1
+    d,1                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 353 / measure 40]                         %! _comment_measure_numbers
-    d,2
+    d,2                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 354 / measure 41]                         %! _comment_measure_numbers
@@ -2888,11 +2888,11 @@ J_CelloMusicVoice = {
     \repeatTie
     
     % [J CelloMusicVoice measure 356 / measure 43]                         %! _comment_measure_numbers
-    d,1
+    d,1                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 357 / measure 44]                         %! _comment_measure_numbers
-    d,2
+    d,2                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 358 / measure 45]                         %! _comment_measure_numbers
@@ -2910,11 +2910,11 @@ J_CelloMusicVoice = {
     \repeatTie
     
     % [J CelloMusicVoice measure 360 / measure 47]                         %! _comment_measure_numbers
-    d,1
+    d,1                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [J CelloMusicVoice measure 361 / measure 48]                         %! _comment_measure_numbers
-    d,2
+    d,2                                                                    %! baca_make_repeat_tied_notes
     _ \markup {                                                            %! SCORE_2
         \override                                                          %! SCORE_2
             #'(font-name . "Palatino")                                     %! SCORE_2

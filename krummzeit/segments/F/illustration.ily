@@ -849,27 +849,27 @@ F_ClarinetMusicVoice = {
     \repeatTie
     
     % [F ClarinetMusicVoice measure 251 / measure 17]                      %! _comment_measure_numbers
-    cs!1
+    cs!1                                                                   %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [F ClarinetMusicVoice measure 252 / measure 18]                      %! _comment_measure_numbers
-    cs!1.
+    cs!1.                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [F ClarinetMusicVoice measure 253 / measure 19]                      %! _comment_measure_numbers
-    cs!2.
+    cs!2.                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [F ClarinetMusicVoice measure 254 / measure 20]                      %! _comment_measure_numbers
-    cs!1
+    cs!1                                                                   %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [F ClarinetMusicVoice measure 255 / measure 21]                      %! _comment_measure_numbers
-    cs!2..
+    cs!2..                                                                 %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [F ClarinetMusicVoice measure 256 / measure 22]                      %! _comment_measure_numbers
-    cs!2..
+    cs!2..                                                                 %! baca_make_repeat_tied_notes
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                               %! OverrideCommand(2)
     \revert Stem.direction                                                 %! OverrideCommand(2)
@@ -1283,19 +1283,19 @@ F_PercussionMusicVoice = {
     
     % [F PercussionMusicVoice measure 240 / measure 6]                     %! _comment_measure_numbers
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2.
+    c2.                                                                    %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [F PercussionMusicVoice measure 241 / measure 7]                     %! _comment_measure_numbers
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2.
+    c2.                                                                    %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
     % [F PercussionMusicVoice measure 242 / measure 8]                     %! _comment_measure_numbers
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2.
+    c2.                                                                    %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1321,7 +1321,7 @@ F_PercussionMusicVoice = {
     
     % [F PercussionMusicVoice measure 247 / measure 13]                    %! _comment_measure_numbers
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2.
+    c2.                                                                    %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     
     % [F PercussionMusicVoice measure 248 / measure 14]                    %! _comment_measure_numbers
@@ -1349,7 +1349,7 @@ F_PercussionMusicVoice = {
     % [F PercussionMusicVoice measure 253 / measure 19]                    %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2
+    c2                                                                     %! baca_make_repeated_duration_notes
     \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                            %! IndicatorCommand
         \override                                                          %! IndicatorCommand
@@ -1361,32 +1361,32 @@ F_PercussionMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2
+    c2                                                                     %! baca_make_repeated_duration_notes
     \p                                                                     %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2
+    c2                                                                     %! baca_make_repeated_duration_notes
     \p                                                                     %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2
+    c2                                                                     %! baca_make_repeated_duration_notes
     \p                                                                     %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2
+    c2                                                                     %! baca_make_repeated_duration_notes
     \p                                                                     %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2
+    c2                                                                     %! baca_make_repeated_duration_notes
     \p                                                                     %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2
+    c2                                                                     %! baca_make_repeated_duration_notes
     \p                                                                     %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     \revert DynamicLineSpanner.staff-padding                               %! OverrideCommand(2)
     

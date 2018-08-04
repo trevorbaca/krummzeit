@@ -840,11 +840,11 @@ C_OboeMusicVoice = {
     \override DynamicLineSpanner.staff-padding = #'5                       %! OverrideCommand(1)
     \override Stem.direction = #up                                         %! OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    b1
+    b1                                                                     %! baca_make_repeat_tied_notes
     \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     % [C OboeMusicVoice measure 147 / measure 15]                          %! _comment_measure_numbers
-    b1
+    b1                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [C OboeMusicVoice measure 148 / measure 16]                          %! _comment_measure_numbers
@@ -969,12 +969,12 @@ C_ClarinetMusicVoice = {
     % [C ClarinetMusicVoice measure 146 / measure 14]                      %! _comment_measure_numbers
     \override Stem.direction = #up                                         %! OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    cs!1
+    cs!1                                                                   %! baca_make_repeat_tied_notes
     \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup \baca-explicit-indicator-markup "(“BassClarinet”)"           %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     
     % [C ClarinetMusicVoice measure 147 / measure 15]                      %! _comment_measure_numbers
-    cs!1
+    cs!1                                                                   %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [C ClarinetMusicVoice measure 148 / measure 16]                      %! _comment_measure_numbers
@@ -1413,7 +1413,7 @@ C_PercussionMusicVoice = {
     \set Staff.forceClef = ##t                                             %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c2.
+    c2.                                                                    %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \baca_ppp_ancora                                                       %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup \baca-reapplied-indicator-markup "[“Perc.”]"                 %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -1435,7 +1435,7 @@ C_PercussionMusicVoice = {
     
     % [C PercussionMusicVoice measure 134 / measure 2]                     %! _comment_measure_numbers
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1452,7 +1452,7 @@ C_PercussionMusicVoice = {
     
     % [C PercussionMusicVoice measure 136 / measure 4]                     %! _comment_measure_numbers
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1469,7 +1469,7 @@ C_PercussionMusicVoice = {
     
     % [C PercussionMusicVoice measure 138 / measure 6]                     %! _comment_measure_numbers
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1486,7 +1486,7 @@ C_PercussionMusicVoice = {
     
     % [C PercussionMusicVoice measure 140 / measure 8]                     %! _comment_measure_numbers
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeat_tied_notes
     :32                                                                    %! IndicatorCommand
     \repeatTie
     
@@ -1517,7 +1517,7 @@ C_PercussionMusicVoice = {
     \override DynamicLineSpanner.staff-padding = #'6                       %! OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                            %! IndicatorCommand
         \override                                                          %! IndicatorCommand
@@ -1528,142 +1528,142 @@ C_PercussionMusicVoice = {
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     % [C PercussionMusicVoice measure 147 / measure 15]                    %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     % [C PercussionMusicVoice measure 148 / measure 16]                    %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     % [C PercussionMusicVoice measure 149 / measure 17]                    %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     % [C PercussionMusicVoice measure 150 / measure 18]                    %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     % [C PercussionMusicVoice measure 151 / measure 19]                    %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                          %! _color_unpitched_notes
-    c4
+    c4                                                                     %! baca_make_repeated_duration_notes
     \pp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     \revert DynamicLineSpanner.staff-padding                               %! OverrideCommand(2)
     
@@ -1876,12 +1876,12 @@ C_ViolinMusicVoice = {
     % [C ViolinMusicVoice measure 146 / measure 14]                        %! _comment_measure_numbers
     \override Stem.direction = #up                                         %! OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    fs!1
+    fs!1                                                                   %! baca_make_repeat_tied_notes
     \baca_fff_poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup { arco }                                                     %! IndicatorCommand
     
     % [C ViolinMusicVoice measure 147 / measure 15]                        %! _comment_measure_numbers
-    fs!1
+    fs!1                                                                   %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [C ViolinMusicVoice measure 148 / measure 16]                        %! _comment_measure_numbers
@@ -2078,12 +2078,12 @@ C_ViolaMusicVoice = {
     % [C ViolaMusicVoice measure 143 / measure 11]                         %! _comment_measure_numbers
     \override Stem.direction = #up                                         %! OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    bf,!2.
+    bf,!2.                                                                 %! baca_make_repeat_tied_notes
     \baca_fff_poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup { arco }                                                     %! IndicatorCommand
     
     % [C ViolaMusicVoice measure 144 / measure 12]                         %! _comment_measure_numbers
-    bf,!2.
+    bf,!2.                                                                 %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [C ViolaMusicVoice measure 145 / measure 13]                         %! _comment_measure_numbers
@@ -2091,11 +2091,11 @@ C_ViolaMusicVoice = {
     
     % [C ViolaMusicVoice measure 146 / measure 14]                         %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    bf,!1
+    bf,!1                                                                  %! baca_make_repeat_tied_notes
     \baca_fff_poss                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     % [C ViolaMusicVoice measure 147 / measure 15]                         %! _comment_measure_numbers
-    bf,!1
+    bf,!1                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [C ViolaMusicVoice measure 148 / measure 16]                         %! _comment_measure_numbers
@@ -2299,12 +2299,12 @@ C_CelloMusicVoice = {
     % [C CelloMusicVoice measure 146 / measure 14]                         %! _comment_measure_numbers
     \override Stem.direction = #up                                         %! OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    a,,1
+    a,,1                                                                   %! baca_make_repeat_tied_notes
     \baca_fff_poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup { arco }                                                     %! IndicatorCommand
     
     % [C CelloMusicVoice measure 147 / measure 15]                         %! _comment_measure_numbers
-    a,,1
+    a,,1                                                                   %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [C CelloMusicVoice measure 148 / measure 16]                         %! _comment_measure_numbers

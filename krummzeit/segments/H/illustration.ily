@@ -223,12 +223,12 @@ H_OboeMusicVoice = {
     % [H OboeMusicVoice measure 284 / measure 4]                           %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'3                       %! OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    d''1..
+    d''1..                                                                 %! baca_make_repeat_tied_notes
     \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     \startTrillSpan
     
     % [H OboeMusicVoice measure 285 / measure 5]                           %! _comment_measure_numbers
-    d''2.
+    d''2.                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [H OboeMusicVoice measure 286 / measure 6]                           %! _comment_measure_numbers
@@ -335,12 +335,12 @@ H_ClarinetMusicVoice = {
     % [H ClarinetMusicVoice measure 284 / measure 4]                       %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'3                       %! OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    b'1..
+    b'1..                                                                  %! baca_make_repeat_tied_notes
     \ff                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup \baca-explicit-indicator-markup "(“ClarinetInEFlat”)"        %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     
     % [H ClarinetMusicVoice measure 285 / measure 5]                       %! _comment_measure_numbers
-    b'2.
+    b'2.                                                                   %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [H ClarinetMusicVoice measure 286 / measure 6]                       %! _comment_measure_numbers
